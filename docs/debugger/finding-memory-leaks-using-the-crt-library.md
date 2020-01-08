@@ -3,9 +3,6 @@ title: Individuare le perdite di memoria con la libreria CRT | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - breakpoints, on memory allocation
@@ -29,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2729dcaf0da41c0adac24b0e1909a6d2697eb6
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829939"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404989"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Individuare le perdite di memoria con la libreria CRT
 
 Le perdite di memoria sono tra i bug più complessi e difficili da rilevare in C/C++ Apps. Le perdite di memoria derivano dall'errore di deallocare correttamente la memoria allocata in precedenza. Una piccola perdita di memoria potrebbe non essere nota prima, ma nel corso del tempo può causare sintomi che variano da prestazioni ridotte a interruzioni anomale quando l'app esaurisce la memoria. Un'app che si sta perdendo che usa tutta la memoria disponibile può causare l'arresto anomalo di altre app, creando confusione in merito a quale app è responsabile. Anche le perdite di memoria innocue potrebbero indicare altri problemi che devono essere corretti.
 
- Il debugger [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e la libreria di runtime C (CRT) consentono di rilevare e identificare le perdite di memoria.
+Il debugger [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e la libreria di runtime C (CRT) consentono di rilevare e identificare le perdite di memoria.
 
 ## <a name="enable-memory-leak-detection"></a>Abilita rilevamento delle perdite di memoria
 
@@ -216,7 +213,8 @@ _CrtSetBreakAlloc(18);
 ```
 
 ## <a name="compare-memory-states"></a>Confrontare gli Stati della memoria
- Un'altra tecnica per l'individuazione delle perdite di memoria comporta l'esecuzione di snapshot dello stato della memoria dell'applicazione in corrispondenza di punti chiave. Per eseguire uno snapshot dello stato della memoria in un determinato punto dell'applicazione, creare una struttura di `_CrtMemState` e passarla alla funzione di `_CrtMemCheckpoint`.
+
+Un'altra tecnica per l'individuazione delle perdite di memoria comporta l'esecuzione di snapshot dello stato della memoria dell'applicazione in corrispondenza di punti chiave. Per eseguire uno snapshot dello stato della memoria in un determinato punto dell'applicazione, creare una struttura di `_CrtMemState` e passarla alla funzione di `_CrtMemCheckpoint`.
 
 ```cpp
 _CrtMemState s1;
@@ -259,9 +257,11 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 Una tecnica per individuare le perdite di memoria inizia inserendo `_CrtMemCheckpoint` chiamate all'inizio e alla fine dell'applicazione, quindi usando `_CrtMemDifference` per confrontare i risultati. Se `_CrtMemDifference` Mostra una perdita di memoria, è possibile aggiungere altre chiamate di `_CrtMemCheckpoint` per dividere il programma usando una ricerca binaria, fino a quando non si è isolata l'origine della perdita.
 
 ## <a name="false-positives"></a>Falsi positivi
+
  `_CrtDumpMemoryLeaks` possibile fornire false indicazioni di perdite di memoria se una libreria contrassegna le allocazioni interne come blocchi normali anziché come blocchi CRT o client. In questo caso, `_CrtDumpMemoryLeaks` non è in grado di indicare la differenza tra allocazioni utente e allocazioni interne della libreria. Se i distruttori globali relativi alle allocazioni della libreria vengono eseguiti dopo il punto in cui viene chiamato `_CrtDumpMemoryLeaks`, ogni allocazione interna della libreria viene segnalata come perdita di memoria. Le versioni della libreria di modelli standard precedenti a Visual Studio .NET possono causare la segnalazione di falsi positivi da parte `_CrtDumpMemoryLeaks`.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni dettagliate sull'heap di debug CRT](../debugger/crt-debug-heap-details.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CPP
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 33c91a7c21a04624d71692d12b7a7f15a16e1d67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be19729b61831e6f15ff40b6b4e1d7b4b0bb541
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639509"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586055"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools per C++
 
@@ -39,9 +39,9 @@ Per sfruttare i vantaggi della funzionalità personalizzata in SQL Server 2005 e
 
    ![Database di connessione SSMS](../data-tools/media/raddata-ssms-attach-database.png)
 
-4. Scaricare l'esempio ODBC Windows SDK e decomprimerlo in una nuova posizione. In questo esempio vengono illustrati i comandi ODBC di base utilizzati per connettersi a un database ed eseguire query e comandi. Per ulteriori informazioni su tali funzioni, vedere [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Quando si carica la soluzione per la prima volta (si C++ trova nella cartella), Visual Studio offrirà l'aggiornamento della soluzione alla versione corrente di Visual Studio. Scegliere **Sì**.
+4. Scaricare l'esempio ODBC Windows SDK e decomprimerlo in una nuova posizione. In questo esempio vengono illustrati i comandi ODBC di base utilizzati per connettersi a un database ed eseguire query e comandi. Per ulteriori informazioni su tali funzioni, vedere [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Quando si carica la soluzione per la prima volta (si C++ trova nella cartella), Visual Studio offrirà l'aggiornamento della soluzione alla versione corrente di Visual Studio. Fai clic su **Sì**.
 
-5. Per usare native client, sono necessari il file di *intestazione* e il file *lib* . Questi file contengono funzioni e definizioni specifiche per SQL Server, oltre alle funzioni ODBC definite in SQL. h. Nelle**Proprietà** di **Project**  >   > **directory di VC + +** aggiungere la directory di inclusione seguente:
+5. Per usare native client, sono necessari il file di *intestazione* e il file *lib* . Questi file contengono funzioni e definizioni specifiche per SQL Server, oltre alle funzioni ODBC definite in SQL. h. Nelle **Proprietà** di **Project** >  > **directory di VC + +** aggiungere la directory di inclusione seguente:
 
    **%Programmi%\Microsoft SQL Server\110\SDK\Include**
 
@@ -58,13 +58,13 @@ Per sfruttare i vantaggi della funzionalità personalizzata in SQL Server 2005 e
 
     Si noti che l'esempio non usa effettivamente alcuna funzionalità client nativa, quindi i passaggi precedenti non sono necessari per la compilazione e l'esecuzione. Il progetto è ora configurato per l'uso di questa funzionalità. Per altre informazioni, vedere [Programmazione in SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client).
 
-7. Consente di specificare il driver da utilizzare nel sottosistema ODBC. L'esempio passa l'attributo della stringa di connessione del DRIVER in come argomento della riga di comando. In **Project**  > **Properties**  > **debug**aggiungere questo argomento del comando:
+7. Consente di specificare il driver da utilizzare nel sottosistema ODBC. L'esempio passa l'attributo della stringa di connessione del DRIVER in come argomento della riga di comando. In **Project** > **Properties** > **debug**aggiungere questo argomento del comando:
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. Premere **F5** per compilare ed eseguire l'applicazione. Verrà visualizzata una finestra di dialogo dal driver che richiede di immettere un database. Immettere `(localdb)\MSSQLLocalDB` e selezionare **Usa connessione trusted**. Fare clic su **OK**. Verrà visualizzata una console con messaggi che indicano una connessione riuscita. Dovrebbe essere visualizzato anche un prompt dei comandi in cui è possibile digitare un'istruzione SQL. La schermata seguente mostra una query di esempio e i risultati:
+8. Premere **F5** per compilare ed eseguire l'applicazione. Verrà visualizzata una finestra di dialogo dal driver che richiede di immettere un database. Immettere `(localdb)\MSSQLLocalDB`e selezionare **Usa connessione trusted**. Fare clic su **OK**. Verrà visualizzata una console con messaggi che indicano una connessione riuscita. Dovrebbe essere visualizzato anche un prompt dei comandi in cui è possibile digitare un'istruzione SQL. La schermata seguente mostra una query di esempio e i risultati:
 
    ![Output della query di esempio ODBC](../data-tools/media/raddata-odbc-sample-query-output.png)
 

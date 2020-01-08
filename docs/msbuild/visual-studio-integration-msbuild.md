@@ -15,17 +15,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913280"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594422"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrazione di Visual Studio (MSBuild)
 Visual Studio ospita [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per caricare e compilare progetti gestiti. Poiché [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è responsabile del progetto, in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile usare efficacemente praticamente qualsiasi progetto nel formato di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], anche se il progetto è stato creato da uno strumento diverso e presenta un processo di compilazione personalizzato.
@@ -66,9 +66,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > Alcuni nomi di tipi di elementi sono specifici di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ma non sono inclusi in questo elenco a discesa.
 
 ## <a name="in-process-compilers"></a>Compilatori In-Process
- Quando possibile, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene eseguito un tentativo di usare la versione in-process del compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] per offrire prestazioni migliori. Non si applica a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Affinché questo tentativo abbia esito positivo, è necessario che siano soddisfatte le condizioni riportate di seguito:
+ Quando possibile, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene eseguito un tentativo di usare la versione in-process del compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] per offrire prestazioni migliori. (Non applicabile a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Per il corretto funzionamento, è necessario che siano soddisfatte le condizioni seguenti:
 
-- In una destinazione del progetto, deve essere presente un'attività denominata `Vbc` per i progetti di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
+- In una destinazione del progetto, deve essere presente un'attività denominata `Vbc` per i progetti di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] .
 
 - Il parametro `UseHostCompilerIfAvailable` dell'attività deve essere impostato su true.
 
@@ -176,12 +176,12 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    Il sistema di progetto chiama una destinazione con il nome noto `ResolveNativeReferences`. Tale destinazione deve produrre elementi con il nome di tipi di elementi `NativeReferenceFile`. Gli elementi devono disporre di tutti i metadati derivati dagli elementi di input passati, oltre a un nuovo metadato singolo denominato `OriginalItemSpec`, che contiene la specifica dell'elemento originale del riferimento.
 
 ## <a name="performance-shortcuts"></a>Collegamenti alle prestazioni
- Se si usa l'IDE di Visual Studio per avviare il debug (scegliendo il tasto F5 o scegliendo **debug** > **Avvia debug** sulla barra dei menu) o per compilare il progetto, ad esempio **Compila** > **soluzione** compila ), il processo di compilazione usa un controllo di aggiornamento rapido per migliorare le prestazioni. In alcuni casi in cui le compilazioni personalizzate consentono di creare file che vengono a loro volta compilati, il controllo di aggiornamento rapido non identifica correttamente i file modificati. Per i progetti che necessitano di controlli di aggiornamento più approfonditi, è possibile disattivare il controllo rapido impostando la variabile di ambiente `DISABLEFASTUPTODATECHECK=1`. In alternativa, questo oggetto può essere impostato come proprietà MSBuild nel progetto o in un file importato dal progetto.
+ Se si usa l'IDE di Visual Studio per avviare il debug (scegliendo il tasto F5 o scegliendo **debug** > **Avvia debug** sulla barra dei menu) o per compilare il progetto (ad esempio, **Build** > **Build Solution**), il processo di compilazione usa un controllo di aggiornamento rapido per migliorare le prestazioni. In alcuni casi in cui le compilazioni personalizzate consentono di creare file che vengono a loro volta compilati, il controllo di aggiornamento rapido non identifica correttamente i file modificati. Per i progetti che necessitano di controlli di aggiornamento più approfonditi, è possibile disattivare il controllo rapido impostando la variabile di ambiente `DISABLEFASTUPTODATECHECK=1`. In alternativa, questo oggetto può essere impostato come proprietà MSBuild nel progetto o in un file importato dal progetto.
 
  Per le compilazioni normali in Visual Studio, il controllo di aggiornamento rapido non viene applicato e il progetto viene compilato come se la compilazione fosse richiamata a un prompt dei comandi.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Estendere il processo di compilazione di Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
+- [Procedura: estendere il processo di compilazione di Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [Avviare una compilazione all'interno dell'IDE](../msbuild/starting-a-build-from-within-the-ide.md)
 - [Registrare estensioni di .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

@@ -9,15 +9,15 @@ f1_keywords:
 - VS.DocumentOutline
 - Blend.Start.Dev12
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0facc87df720af8376561ae7599fe20afeab1a12
-ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
+ms.openlocfilehash: 912468cf95b7b5a4b611fb568048c2ba62cc635d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73925971"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593001"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML
 
@@ -33,7 +33,7 @@ La finestra di progettazione XAML include una visualizzazione XAML e una visuali
 
 ### <a name="design-view"></a>Progettazione (visualizzazione)
 
-Nella visualizzazione Progettazione la finestra che include la tavola da disegno è la finestra attiva ed è possibile usarla come area di lavoro principale. Permette di progettare visivamente una pagina nell'app aggiungendo, disegnando o modificando elementi. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
+Nella visualizzazione Progettazione, la finestra che contiene la tavola da disegno è la finestra attiva e può essere utilizzata come area di lavoro primaria. Permette di progettare visivamente una pagina nell'app aggiungendo, disegnando o modificando elementi. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
 
 ![Visualizzazione Progettazione della finestra di progettazione XAML](media/xaml-artboard.png)
 
@@ -140,7 +140,7 @@ L'opzione nella parte superiore della finestra Struttura documento/Oggetti e seq
 
 ## <a name="properties-window"></a>Finestra Proprietà
 
-La finestra **Proprietà** consente di impostare valori di proprietà sui controlli. e ha l'aspetto seguente:
+La finestra **Proprietà** consente di impostare valori di proprietà sui controlli. Di seguito è riportata un'immagine di tale finestra:
 
 ![Finestra Proprietà](media/xaml-designer-properties-window.png)
 

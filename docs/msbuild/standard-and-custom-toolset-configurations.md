@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 76596d752ae2e552088fff607142abb215e9147b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440029"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595072"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurazioni standard e personalizzate del set di strumenti
 Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e strumenti che è possibile usare per compilare un progetto di applicazione. MSBuild include un set di strumenti standard, ma è anche possibile creare set di strumenti personalizzati. Per informazioni su come specificare un set di strumenti, vedere [Set di strumenti (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
@@ -52,7 +52,7 @@ Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e
 
 Visual Studio 2017 e versioni successive non usano una chiave del Registro di sistema per il percorso di MSBuild. Per le versioni di MSBuild precedenti alla 15.0 installate con Visual Studio 2017, le seguenti chiavi del Registro di sistema specificano il percorso di installazione di MSBuild.exe.
 
-|Chiave del Registro di sistema|Nome della chiave|Valore della chiave della stringa|
+|Chiave del Registro di sistema|Nome chiave|Valore della chiave della stringa|
 |------------------|--------------|----------------------|
 |**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 2.0**|
 |**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 3.5**|
@@ -108,7 +108,7 @@ Visual Studio 2017 e versioni successive non usano una chiave del Registro di si
 
 - **$(MSBuildBinPath)** è impostato sul valore `ToolsPath` specificato nel Registro di sistema o nel file di configurazione in cui è definito `ToolsVersion`. L'impostazione `$(MSBuildToolsPath)` nel Registro di sistema o nel file di configurazione specifica la posizione delle attività e delle destinazioni principali. Nel file di progetto viene eseguito il mapping alla proprietà $(MSBuildBinPath) e anche alla proprietà $(MSBuildToolsPath).
 
-- `$(MSBuildToolsPath)` è una proprietà riservata definita dalla proprietà MSBuildToolsPath specificata nel file di configurazione. Questa proprietà sostituisce `$(MSBuildBinPath)`. Tuttavia, `$(MSBuildBinPath)` viene mantenuta per garantire la compatibilità. Un set di strumenti personalizzato deve definire `$(MSBuildToolsPath)` o `$(MSBuildBinPath)` ma non entrambe, a meno che non abbiano lo stesso valore.
+- `$(MSBuildToolsPath)` è una proprietà riservata definita dalla proprietà MSBuildToolsPath specificata nel file di configurazione. Questa proprietà sostituisce `$(MSBuildBinPath)`. Tuttavia, `$(MSBuildBinPath)` viene mantenuto per la compatibilità. Un set di strumenti personalizzato deve definire `$(MSBuildToolsPath)` o `$(MSBuildBinPath)`, ma non entrambi, a meno che entrambi non abbiano lo stesso valore.
 
   Si possono anche aggiungere al file di configurazione proprietà personalizzate specifiche di ToolsVersion, usando la stessa sintassi usata per aggiungere la proprietà MSBuildToolsPath. Per rendere disponibili per il file di progetto queste proprietà personalizzate, usare lo stesso nome del valore specificato nel file di configurazione. È possibile definire i set di strumenti ma non i subset di strumenti nel file di configurazione.
 

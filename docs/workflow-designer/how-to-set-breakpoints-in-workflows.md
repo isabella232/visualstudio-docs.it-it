@@ -3,17 +3,17 @@ title: 'Progettazione flussi di lavoro-procedura: impostare punti di interruzion
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d2806a8757f00924d51c76aea82cfc8c6a5673
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4ebebd0efe689c2f3f83e776c0cb3889ee64add2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650323"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593889"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Procedura: impostare punti di interruzione nei flussi di lavoro
 
@@ -25,10 +25,10 @@ Un punto di interruzione ha tre stati: *Pending*, *Bound*ed *Error*. Quando vien
 > L'impostazione dei punti di interruzione sui flussi di lavoro richiamati non è supportata.
 
 > [!NOTE]
-> Assicurarsi di selezionare l'opzione **abilita Just My Code (solo gestito)** dal menu **strumenti**  > **Opzioni**  > **debug** prima di eseguire il debug. Se l'opzione non è selezionata e si hanno due sequenze annidate all'interno di un'altra sequenza e si imposta un punto di rottura sulla prima sequenza interna, la pressione di **F11** non esegue il debug nella seconda sequenza interna.
+> Assicurarsi di selezionare l'opzione **abilita Just My Code (solo gestito)** dal menu **strumenti** > **Opzioni** > **debug** prima di eseguire il debug. Se l'opzione non è selezionata e si hanno due sequenze annidate all'interno di un'altra sequenza e si imposta un punto di rottura sulla prima sequenza interna, la pressione di **F11** non esegue il debug nella seconda sequenza interna.
 
 > [!NOTE]
-> I punti di interruzione in un flusso di lavoro non vengono raggiunti se il percorso completo della proprietà del file XAML non è accurato. Il percorso completo del file XAML non è accurato dopo aver spostato il progetto o la soluzione in un'altra cartella o in un altro computer. Premere **Ctrl** +**S** per salvare e aggiornare la proprietà percorso completo.
+> I punti di interruzione in un flusso di lavoro non vengono raggiunti se il percorso completo della proprietà del file XAML non è accurato. Il percorso completo del file XAML non è accurato dopo aver spostato il progetto o la soluzione in un'altra cartella o in un altro computer. Premere **Ctrl**+**S** per salvare e aggiornare la proprietà percorso completo.
 
 ## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Per impostare un punto di interruzione su un'attività nella visualizzazione Progettazione
 
@@ -36,7 +36,7 @@ Un punto di interruzione ha tre stati: *Pending*, *Bound*ed *Error*. Quando vien
 
 2. Scegliere **Imposta/Rimuovi**punto di interruzione dal menu **debug** . Verrà visualizzata un'icona rossa sul bordo superiore sinistro dell'attività.
 
-   In alternativa, è possibile premere **F9** dopo aver selezionato l'attività oppure fare clic con il pulsante destro del mouse sull'attività e scegliere punto di **interruzione**  >  Inserisci punto di**interruzione** dal menu di scelta rapida.
+   In alternativa, è possibile premere **F9** dopo aver selezionato l'attività oppure fare clic con il pulsante destro del mouse sull'attività e scegliere punto di **interruzione** > Inserisci punto di **interruzione** dal menu di scelta rapida.
 
 ## <a name="see-also"></a>Vedere anche
 

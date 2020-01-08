@@ -14,17 +14,17 @@ helpviewer_keywords:
 - data [Visual Studio], retrieving
 - data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fcecafaa36aabf3249bacf0788c2d19f945ad1b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a79f7b781944bb93a60794e748eefb9375723384
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648480"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586627"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
 
@@ -52,18 +52,18 @@ Gli oggetti TableAdapter sono componenti generati dalla finestra di progettazion
 
 ![Flusso dei dati in un'applicazione client](../data-tools/media/clientdatadiagram.gif)
 
-Sebbene gli oggetti TableAdapter siano progettati con la **Progettazione DataSet**, le classi TableAdapter non vengono generate come classi annidate di <xref:System.Data.DataSet>. Si trovano in spazi dei nomi distinti specifici di ogni set di dati. Se, ad esempio, si dispone di un set di dati denominato `NorthwindDataSet`, gli oggetti TableAdapter associati <xref:System.Data.DataTable>s nel `NorthwindDataSet` sarebbero inclusi nello spazio dei nomi `NorthwindDataSetTableAdapters`. Per accedere a un determinato TableAdapter a livello di codice, è necessario dichiarare una nuova istanza del TableAdapter. Esempio:
+Sebbene gli oggetti TableAdapter siano progettati con la **Progettazione DataSet**, le classi TableAdapter non vengono generate come classi annidate di <xref:System.Data.DataSet>. Si trovano in spazi dei nomi distinti specifici di ogni set di dati. Se, ad esempio, si dispone di un set di dati denominato `NorthwindDataSet`, gli oggetti TableAdapter associati a <xref:System.Data.DataTable>s nel `NorthwindDataSet` si trovano nello spazio dei nomi `NorthwindDataSetTableAdapters`. Per accedere a un determinato TableAdapter a livello di codice, è necessario dichiarare una nuova istanza del TableAdapter. Ad esempio:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
 
 ## <a name="associated-datatable-schema"></a>Schema DataTable associato
 
-Quando si crea un TableAdapter, si utilizza la query iniziale o stored procedure per definire lo schema del <xref:System.Data.DataTable> associato del TableAdapter. Questa query iniziale o stored procedure viene eseguita chiamando il metodo di `Fill` del TableAdapter, che compila il <xref:System.Data.DataTable> associato del TableAdapter. Tutte le modifiche apportate alla query principale del TableAdapter vengono riflesse nello schema della tabella di dati associata. Se, ad esempio, si rimuove una colonna dalla query principale, viene rimossa anche la colonna dalla tabella di dati associata. Se query aggiuntive sul TableAdapter utilizzano istruzioni SQL che restituiscono colonne che non sono incluse nella query principale, la finestra di progettazione tenta di sincronizzare le modifiche delle colonne tra la query principale e le query aggiuntive.
+Quando si crea un TableAdapter, si utilizza la query iniziale o stored procedure per definire lo schema del <xref:System.Data.DataTable>associato del TableAdapter. Questa query iniziale o stored procedure viene eseguita chiamando il metodo di `Fill` del TableAdapter, che compila il <xref:System.Data.DataTable>associato del TableAdapter. Tutte le modifiche apportate alla query principale del TableAdapter vengono riflesse nello schema della tabella di dati associata. Se, ad esempio, si rimuove una colonna dalla query principale, viene rimossa anche la colonna dalla tabella di dati associata. Se query aggiuntive sul TableAdapter utilizzano istruzioni SQL che restituiscono colonne che non sono incluse nella query principale, la finestra di progettazione tenta di sincronizzare le modifiche delle colonne tra la query principale e le query aggiuntive.
 
 ## <a name="tableadapter-update-commands"></a>Comandi di aggiornamento TableAdapter
 
-La funzionalità di aggiornamento di un TableAdapter dipende dalla quantità di informazioni disponibili nella query principale della **procedura guidata TableAdapter**. Ad esempio, gli oggetti TableAdapter configurati per recuperare valori da più tabelle (utilizzando un `JOIN`), valori scalari, viste o i risultati di funzioni di aggregazione non vengono inizialmente creati con la possibilità di inviare aggiornamenti al database sottostante. Tuttavia, è possibile configurare manualmente i comandi di `INSERT`, `UPDATE` e `DELETE` nella finestra **Proprietà** .
+La funzionalità di aggiornamento di un TableAdapter dipende dalla quantità di informazioni disponibili nella query principale della **procedura guidata TableAdapter**. Ad esempio, gli oggetti TableAdapter configurati per recuperare valori da più tabelle (utilizzando un `JOIN`), valori scalari, viste o i risultati di funzioni di aggregazione non vengono inizialmente creati con la possibilità di inviare aggiornamenti al database sottostante. Tuttavia, è possibile configurare manualmente i comandi di `INSERT`, `UPDATE`e `DELETE` nella finestra **Proprietà** .
 
 ## <a name="tableadapter-queries"></a>TableAdapter (query)
 
@@ -99,16 +99,16 @@ Di seguito sono riportati i metodi e le proprietà di uso comune degli oggetti T
 
 ## <a name="tableadapter-update-method"></a>Metodo di aggiornamento TableAdapter
 
-I TableAdapter utilizzano i comandi di dati per leggere e scrivere dal database. Utilizzare la query iniziale `Fill` (Main) del TableAdapter come base per la creazione dello schema della tabella dati associata, nonché i comandi `InsertCommand`, `UpdateCommand` e `DeleteCommand` associati al metodo `TableAdapter.Update`. La chiamata al metodo `Update` di un TableAdapter esegue le istruzioni create durante la configurazione originale del TableAdapter, non una delle query aggiuntive aggiunte con la **Configurazione guidata query TableAdapter**.
+I TableAdapter utilizzano i comandi di dati per leggere e scrivere dal database. Utilizzare la query iniziale `Fill` (Main) del TableAdapter come base per la creazione dello schema della tabella dati associata, nonché i comandi `InsertCommand`, `UpdateCommand`e `DeleteCommand` associati al metodo `TableAdapter.Update`. La chiamata al metodo `Update` di un TableAdapter esegue le istruzioni create durante la configurazione originale del TableAdapter, non una delle query aggiuntive aggiunte con la **Configurazione guidata query TableAdapter**.
 
-Quando si usa un TableAdapter, esegue efficacemente le stesse operazioni con i comandi che si eseguono in genere. Ad esempio, quando si chiama il metodo `Fill` dell'adapter, l'adapter esegue il comando dati nella relativa proprietà `SelectCommand` e utilizza un lettore dati (ad esempio, <xref:System.Data.SqlClient.SqlDataReader>) per caricare il set di risultati nella tabella dati. Analogamente, quando si chiama il metodo `Update` dell'adapter, viene eseguito il comando appropriato (nelle proprietà `UpdateCommand`, `InsertCommand` e `DeleteCommand`) per ogni record modificato nella tabella dati.
+Quando si usa un TableAdapter, esegue efficacemente le stesse operazioni con i comandi che si eseguono in genere. Ad esempio, quando si chiama il metodo `Fill` dell'adapter, l'adapter esegue il comando dati nella relativa proprietà `SelectCommand` e utilizza un lettore dati (ad esempio, <xref:System.Data.SqlClient.SqlDataReader>) per caricare il set di risultati nella tabella dati. Analogamente, quando si chiama il metodo `Update` dell'adapter, viene eseguito il comando appropriato (nelle proprietà `UpdateCommand`, `InsertCommand`e `DeleteCommand`) per ogni record modificato nella tabella dati.
 
 > [!NOTE]
-> Se nella query principale sono presenti informazioni sufficienti, i comandi `InsertCommand`, `UpdateCommand` e `DeleteCommand` vengono creati per impostazione predefinita al momento della generazione del TableAdapter. Se la query principale del TableAdapter è più di una singola tabella `SELECT` istruzione, è possibile che la finestra di progettazione non sia in grado di generare `InsertCommand`, `UpdateCommand` e `DeleteCommand`. Se questi comandi non vengono generati, è possibile che venga visualizzato un errore durante l'esecuzione del metodo `TableAdapter.Update`.
+> Se nella query principale sono presenti informazioni sufficienti, i comandi `InsertCommand`, `UpdateCommand`e `DeleteCommand` vengono creati per impostazione predefinita al momento della generazione del TableAdapter. Se la query principale del TableAdapter è più di una singola tabella `SELECT` istruzione, è possibile che la finestra di progettazione non sia in grado di generare `InsertCommand`, `UpdateCommand`e `DeleteCommand`. Se questi comandi non vengono generati, è possibile che venga visualizzato un errore durante l'esecuzione del metodo `TableAdapter.Update`.
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>GenerateDbDirectMethods TableAdapter
 
-Oltre ai `InsertCommand`, `UpdateCommand` e `DeleteCommand`, gli oggetti TableAdapter vengono creati con i metodi che è possibile eseguire direttamente sul database. È possibile chiamare direttamente questi metodi (`TableAdapter.Insert`, `TableAdapter.Update` e `TableAdapter.Delete`) per modificare i dati nel database. Ciò significa che è possibile chiamare questi singoli metodi dal codice anziché chiamare `TableAdapter.Update` per gestire gli inserimenti, gli aggiornamenti e le eliminazioni in sospeso per la tabella di dati associata.
+Oltre ai `InsertCommand`, `UpdateCommand`e `DeleteCommand`, gli oggetti TableAdapter vengono creati con i metodi che è possibile eseguire direttamente sul database. È possibile chiamare direttamente questi metodi (`TableAdapter.Insert`, `TableAdapter.Update`e `TableAdapter.Delete`) per modificare i dati nel database. Ciò significa che è possibile chiamare questi singoli metodi dal codice anziché chiamare `TableAdapter.Update` per gestire gli inserimenti, gli aggiornamenti e le eliminazioni in sospeso per la tabella di dati associata.
 
 Se non si desidera creare questi metodi diretti, impostare la proprietà **GenerateDBDirectMethods** del TableAdapter su `false` (nella finestra **Proprietà** ). Le query aggiuntive aggiunte al TableAdapter sono query autonome, che non generano questi metodi.
 
@@ -133,7 +133,7 @@ Di seguito sono riportati i metodi e le proprietà di uso frequente della classe
 |proprietà *tablename* `TableAdapter`|Rappresenta un TableAdapter. Il TableAdapterManager generato contiene una proprietà per ogni `TableAdapter` gestito. Ad esempio, un set di dati con una tabella Customers e Orders genera con un TableAdapterManager che contiene `CustomersTableAdapter` e `OrdersTableAdapter` proprietà.|
 |Proprietà`UpdateOrder`|Controlla l'ordine dei singoli comandi INSERT, Update e DELETE. Impostare questa impostazione su uno dei valori nell'enumerazione `TableAdapterManager.UpdateOrderOption`.<br /><br /> Per impostazione predefinita, la `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che gli inserimenti, gli aggiornamenti e le eliminazioni vengono eseguiti per tutte le tabelle nel set di dati.|
 
-## <a name="security"></a>Sicurezza
+## <a name="security"></a>Sicurezza -
 
 Quando si usano i comandi dati con una proprietà CommandType impostata su <xref:System.Data.CommandType.Text>, controllare attentamente le informazioni inviate da un client prima di passarle al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire l'input dell'utente in un database, verificare sempre che le informazioni siano valide. Una procedura consigliata consiste nell'utilizzare sempre query con parametri o stored procedure, quando possibile.
 

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1757c687ea48ee1f2770fa320a18da5662f43e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665317"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591203"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Composizione di un test codificato dell'interfaccia utente
 
@@ -26,11 +26,11 @@ Quando si crea un test codificato dell'interfaccia utente in un progetto di test
 
 Quando si crea un test codificato dell'interfaccia utente, il **Generatore di test codificati dell'interfaccia utente** crea una mappa dell'interfaccia utente sottoposta a test, oltre ai metodi di test, ai parametri e alle asserzioni per tutti i test. Crea anche un file di classe per ogni test.
 
-|File|Contenuti|Modificabile?|
+|File|Contenuto|Modificabile?|
 |-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sezione delle dichiarazioni](#UIMapDesignerFile)<br /><br /> [Classe UIMap](#UIMapClass) (parziale, generata automaticamente)<br /><br /> [Metodi](#UIMapMethods)<br /><br /> [Proprietà](#UIMapProperties)|No|
-|[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parziale)|Yes|
-|[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Metodi](#CodedUITestMethods)<br /><br /> [Proprietà](#CodedUITestProperties)|Yes|
+|[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parziale)|Sì|
+|[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Metodi](#CodedUITestMethods)<br /><br /> [Proprietà](#CodedUITestProperties)|Sì|
 |[UIMap.uitest](#UIMapuitest)|Mappa XML dell'interfaccia utente per il test.|No|
 
 ### <a name="UIMapDesignerFile"></a> UIMap.Designer.cs

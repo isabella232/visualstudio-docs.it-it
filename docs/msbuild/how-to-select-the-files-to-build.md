@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, including files
 - Include attribute [MSBuild]
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386181"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574613"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
 Quando si compila un progetto che contiene molti file, è possibile elencare separatamente ogni file nel file di progetto oppure è possibile usare caratteri jolly per includere tutti i file contenuti in una directory o in un set nidificato di directory.
@@ -170,5 +170,5 @@ L'esempio di codice seguente usa un carattere jolly per includere tutti i file c
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Elementi](../msbuild/msbuild-items.md)

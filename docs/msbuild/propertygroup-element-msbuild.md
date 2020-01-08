@@ -13,17 +13,17 @@ helpviewer_keywords:
 - <PropertyGroup> element [MSBuild]
 - PropertyGroup element [MSBuild]
 ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607c5f2c3cda64e7407203b0c45287a58342b807
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f7497578b977b66c83a8b5f9f37f03743f864bcd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974683"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597373"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
 Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) definiti dall'utente. Ogni elemento `Property` usato in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere figlio di un elemento `PropertyGroup`.
@@ -40,23 +40,23 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+ Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |Condizione|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Elemento|Description|
+|Elemento|Descrizione|
 |-------------|-----------------|
 |[Property](../msbuild/property-element-msbuild.md)|Elemento facoltativo.<br /><br /> Nome proprietà definito dall'utente, che contiene il valore della proprietà. Possono esistere zero o più elementi *Property* in un elemento `PropertyGroup`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
-| Elemento | Description |
+| Elemento | Descrizione |
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 

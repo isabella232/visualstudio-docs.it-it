@@ -8,17 +8,17 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-author: jillre
-ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659663"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590709"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -28,13 +28,13 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 ::: moniker range="vs-2017"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
-2. Nel menu **File** scegliere **Nuovo** > **Progetto**.
+2. Scegliere **nuovo** > **progetto**dal menu **file** .
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
 
-3. Nell categoria **Visual C#** > **.NET Core** scegliere il modello di progetto **App console (.NET Core)** .
+3. Nella categoria **Visual C#**  > **.NET Core** scegliere il modello di progetto **app console (.NET Core)** .
 
 4. Denominare il progetto **Bank**, quindi fare clic su **OK**.
 
@@ -47,7 +47,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 ::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
@@ -138,7 +138,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 È ora disponibile un progetto che include metodi da testare. In questo articolo i test sono incentrati sul metodo `Debit`. Il metodo `Debit` viene chiamato quando si preleva denaro da un conto.
 
-## <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
+## <a name="create-a-unit-test-project"></a>Crea progetto unit test
 
 1. Nel menu **File** selezionare **Aggiungi** > **Nuovo progetto**.
 
@@ -323,7 +323,7 @@ In **Esplora test** scegliere **Esegui tutto** per rieseguire il test. La barra 
 
 ![Esplora test in Visual Studio 2019 che indica che il test è stato superato](media/test-explorer-banktests-passed.png)
 
-## <a name="use-unit-tests-to-improve-your-code"></a>Usare gli unit test per migliorare il codice
+## <a name="use-unit-tests-to-improve-your-code"></a>Utilizzare gli unit test per migliorare il codice
 
 In questa sezione viene descritto come un processo iterativo di analisi, di sviluppo di unit test e di refactoring può aiutare a rendere il codice di produzione più affidabile ed efficace.
 

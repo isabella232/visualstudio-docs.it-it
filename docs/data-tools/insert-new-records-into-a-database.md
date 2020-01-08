@@ -12,17 +12,17 @@ helpviewer_keywords:
 - records, inserting
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaca23e6aa81fab958fc813fa5e2331f8906a562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3a3830c9dd1921939ced3577b7bafa22772b49f6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648311"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586419"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserire nuovi record in un database
 
@@ -73,7 +73,7 @@ Nella procedura riportata di seguito viene illustrato l'utilizzo del metodo `Tab
 
 ### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Per inserire nuovi record in un database tramite oggetti Command
 
-- Creare un nuovo oggetto Command, quindi impostarne le proprietà `Connection`, `CommandType` e `CommandText`.
+- Creare un nuovo oggetto Command, quindi impostarne le proprietà `Connection`, `CommandType`e `CommandText`.
 
 Nell'esempio seguente viene illustrato l'inserimento di record in un database utilizzando l'oggetto Command. Inserisce i dati nella tabella `Region` del database Northwind.
 

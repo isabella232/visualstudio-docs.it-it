@@ -3,20 +3,20 @@ title: Azioni rapide comuni
 description: Azioni rapide più diffuse C# per e Visual Basic inclusa la correzione di parole chiave o simboli non digitati, la risoluzione di conflitti di merge, la rimozione delle importazioni necessarie, la generazione di tipi, l'introduzione di variabili locali
 ms.date: 03/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652253"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585522"
 ---
 # <a name="common-quick-actions"></a>Azioni rapide comuni
 
@@ -30,7 +30,7 @@ Le Azioni rapide in questa sezione consentono di correggere gli errori nel codic
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Correggere errori di ortografia in simboli o parole chiave
 
-Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi vengono visualizzati nel menu lampadina come **"modifica \<misspelled word >" in "\<correct word >'"** . Esempio:
+Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi vengono visualizzati nel menu lampadina come **"modifica"\<parola errata >' a'\<parola corretta >' "** . Ad esempio:
 
 ```csharp
 // Before

@@ -2,8 +2,8 @@
 title: Generare una classe o un tipo
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d561a77006b83d366506b48d3a164ada380b1a24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660068"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595631"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
 
@@ -25,7 +25,7 @@ Questa generazione di codice si applica a:
 
 - C#
 
-- Visual Basic
+- Visual Basic -
 
 **Cosa:** consente di generare immediatamente il codice per una classe o un tipo.
 
@@ -52,7 +52,7 @@ Questa generazione di codice si applica a:
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione della classe](media/class-preview-cs.png)
 
@@ -72,10 +72,10 @@ Questa generazione di codice si applica a:
 
    Selection | Descrizione
    --- | ---
-   Accesso | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
+   condizionale | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
    Tipo | Può essere impostato come *classe* o *struct*.
    Name | Questo non può essere modificato e sarà il nome già digitato.
-   Progetto | Se sono presenti più progetti nella soluzione, è possibile scegliere il progetto in cui aggiungere la classe/lo struct.
+   Progetto di | Se sono presenti più progetti nella soluzione, è possibile scegliere il progetto in cui aggiungere la classe/lo struct.
    Nome file | È possibile creare un nuovo file oppure è possibile aggiungere il tipo a un file esistente.
 
 Vengono creati la classe o lo struct. Per C# viene creato anche un costruttore.
@@ -84,11 +84,11 @@ Vengono creati la classe o lo struct. Per C# viene creato anche un costruttore.
 
    ![Risultato della generazione della classe C#](media/class-result-cs.png)
 
-- Visual Basic
+- Visual Basic -
 
    ![Risultato della generazione della classe VB](media/class-result-vb.png)
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Generazione codice](../code-generation-in-visual-studio.md)
-- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
+- [Anteprima modifiche](../../ide/preview-changes.md)

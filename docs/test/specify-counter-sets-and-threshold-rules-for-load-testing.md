@@ -10,15 +10,15 @@ helpviewer_keywords:
 - load tests, counter sets
 - load tests, threshold rules
 ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 493295bdbcd1b4906aedf6dca54e264e8ae5e8c6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 440bc01b52269c477d9d2f2194fd831041f1d20d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659957"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596320"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Specificare insiemi di contatori e regole di soglia per i computer in un test di carico
 
@@ -37,7 +37,7 @@ Per impostazione predefinita i contatori di prestazioni sono raccolti sul contro
 
 ## <a name="tasks"></a>Attività
 
-|Attività|Argomenti correlati|
+|Attività|Argomenti associati|
 |-|-----------------------|
 |**Gestire gli insiemi di contatori per il test di carico:** dopo aver creato un test di carico, è possibile modificare l'insieme di contatori nell'Editor test di carico. La gestione degli insiemi di contatori implica la scelta del gruppo di computer da cui raccogliere i dati sulle prestazioni e l'assegnazione di una serie di insiemi di contatori da raccogliere da ogni singolo computer. I contatori vengono gestiti nell'Editor test di carico.|-   [Procedura: Gestire insiemi di contatori](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Aggiungere insiemi di contatori al test di carico:** quando si crea un test di carico con la **Creazione guidata test di carico** si aggiunge un insieme di contatori iniziale. Ciò offre una serie di insiemi di contatori predefiniti per il test di carico. Dopo aver creato un test di carico, è possibile aggiungere i nuovi contatori agli insiemi di contatori esistenti utilizzando l'Editor test di carico.|-   [Procedura: Aggiungere contatori agli insiemi di contatori](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Procedura: Aggiungere insiemi di contatori personalizzati](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|

@@ -1,5 +1,5 @@
 ---
-title: Casella degli strumenti, scheda Dati
+title: Casella degli strumenti, Scheda Dati
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Data tab, Toolbox
 - data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34707c39a14650023c9caa701813de65999010ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644608"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590254"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
 

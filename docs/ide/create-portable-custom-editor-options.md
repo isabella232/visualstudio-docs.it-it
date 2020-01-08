@@ -4,15 +4,15 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7cbb8c9be8ed56294d865d2612a8d79fcdb39df8
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919123"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589786"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
@@ -24,14 +24,14 @@ Le impostazioni di EditorConfig sono supportate da numerosi editor di codice e m
 
 Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non si esegua uno dei comandi seguenti:
 
- - [Pulizia del codice](../ide/code-styles-and-code-cleanup.md) (**CTRL** +**K**, **CTRL** +**E**), che applica le impostazioni dello spazio vuoto, ad esempio lo stile di rientro e le impostazioni di stile del codice selezionate, ad esempio come ordinare `using` direttive.
- - **Modificare** > **documento formato** **avanzato** > (o **CTRL** +**K**, **CTRL** +**D** nel profilo predefinito), che applica solo le impostazioni dello spazio vuoto, ad esempio lo stile di rientro.
+ - [Pulizia del codice](../ide/code-styles-and-code-cleanup.md) (**CTRL**+**K**, **CTRL**+**E**), che applica le impostazioni dello spazio vuoto, ad esempio lo stile di rientro e le impostazioni di stile del codice selezionate, ad esempio come ordinare `using` direttive.
+ - **Modificare** > **documento formato** **avanzato** > (o **CTRL**+**K**, **CTRL**+**D** nel profilo predefinito), che applica solo le impostazioni dello spazio vuoto, ad esempio lo stile di rientro.
 
  ::: moniker-end
 
 ::: moniker range="=vs-2017"
 
-Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non venga eseguita, a meno che non si formatti il documento (**modificare**  > **documento formato**  > **avanzato** o **CTRL** +**K**, **CTRL** +**D** nel profilo predefinito). La formattazione del documento influiscono solo sulle impostazioni dello spazio vuoto, ad esempio lo stile di rientro, a meno che non sia stato configurato il formato documento per [eseguire la pulizia del codice](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
+Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non venga eseguita, a meno che non si formatti il documento (**modificare** > **documento > formato** **avanzato** o **CTRL**+**K**, **CTRL**+**D** nel profilo predefinito). La formattazione del documento influiscono solo sulle impostazioni dello spazio vuoto, ad esempio lo stile di rientro, a meno che non sia stato configurato il formato documento per [eseguire la pulizia del codice](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
 
  ::: moniker-end
 
@@ -72,7 +72,7 @@ Le impostazioni dell'editor EditorConfig sono supportate in tutti i linguaggi su
 
 ## <a name="add-and-remove-editorconfig-files"></a>Aggiungere e rimuovere i file EditorConfig
 
-Quando si aggiunge un file EditorConfig al progetto o alla codebase, le nuove righe di codice scritte vengono formattate in base al file EditorConfig. Tuttavia, l'aggiunta di un file EditorConfig non converte gli stili esistenti in quelli nuovi fino a quando non si formatta il documento o si esegue la [pulizia del codice](../ide/code-styles-and-code-cleanup.md). Se, ad esempio, il file contiene rientri formattati con tabulazioni e si aggiunge un file EditorConfig che imposta rientri con spazi, i caratteri di rientro non vengono convertiti automaticamente in spazi. Quando si formatta il documento (**modificare**  > **documento formato** **avanzato**  >  o **CTRL** +**K**, **CTRL** +**D**), le impostazioni dello spazio vuoto nel file EditorConfig vengono applicate a existing righe di codice.
+Quando si aggiunge un file EditorConfig al progetto o alla codebase, le nuove righe di codice scritte vengono formattate in base al file EditorConfig. Tuttavia, l'aggiunta di un file EditorConfig non converte gli stili esistenti in quelli nuovi fino a quando non si formatta il documento o si esegue la [pulizia del codice](../ide/code-styles-and-code-cleanup.md). Se, ad esempio, il file contiene rientri formattati con tabulazioni e si aggiunge un file EditorConfig che imposta rientri con spazi, i caratteri di rientro non vengono convertiti automaticamente in spazi. Quando si formatta il documento (**modificare** > **documento formato** **avanzato** > o **CTRL**+**K**, **CTRL**+**D**), le impostazioni dello spazio vuoto nel file EditorConfig vengono applicate alle righe di codice esistenti.
 
 Se il file EditorConfig viene rimosso dal progetto o dalla codebase e si vuole che le nuove righe di codice siano formattate in base alle impostazioni globali dell'editor, sarà necessario chiudere e riaprire i file di codice aperti.
 

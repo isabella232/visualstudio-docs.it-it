@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747969"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589747"
 ---
 # <a name="create-solutions-and-projects"></a>Creare soluzioni e progetti
 
@@ -92,7 +92,7 @@ Per specificare una versione di .NET Framework, scegliere il menu a discesa **Fr
 
 ::: moniker range="vs-2017"
 
-2. Nel riquadro a sinistra (**Modelli**) scegliere **Altri tipi di progetto** > **Soluzioni di Visual Studio** nell'elenco espanso.
+2. Nel riquadro sinistro (**modelli**) scegliere **altri tipi di progetto** > **soluzioni di Visual Studio** nell'elenco espanso.
 
 3. Nel riquadro centrale scegliere **Soluzione vuota**.
 

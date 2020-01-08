@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
 - rule sets
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b904fd484135943228b2d8ac21e2df0d1c02e34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9f23b2badb40effd4222e21ab9e67b2907513c2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649514"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587550"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
@@ -24,7 +24,7 @@ ms.locfileid: "72649514"
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Creare un set di regole personalizzato da un set di regole esistente
 
-Per creare un set di regole personalizzato, è possibile aprire un set di regole incorporato nell' **Editor del set di regole**. Da qui è possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando viene violata una regola &mdash;for esempio, viene visualizzato un avviso o un errore.
+Per creare un set di regole personalizzato, è possibile aprire un set di regole incorporato nell' **Editor del set di regole**. Da qui è possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando una regola viene violata&mdash;ad esempio, viene visualizzato un avviso o un errore.
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
@@ -46,7 +46,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
      \- oppure -
 
-   - Selezionare **\<Browse >** per specificare un set di regole esistente non presente nell'elenco.
+   - Selezionare **\<sfoglia >** per specificare un set di regole esistente non presente nell'elenco.
 
 4. Selezionare **Apri** per visualizzare le regole nell'Editor set di regole.
 
@@ -76,13 +76,13 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 ::: moniker range="vs-2017"
 
-3. Selezionare **\<Scegli più set di regole >** da **Esegui questo set di regole**.
+3. Selezionare **\<scegliere più set di regole >** da **Esegui questo set di regole**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Selezionare **\<Scegli più set di regole >** da **regole attive**.
+3. Selezionare **\<scegliere più set di regole >** da **regole attive**.
 
 ::: moniker-end
 
@@ -98,7 +98,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 ## <a name="rule-precedence"></a>Precedenza della regola
 
-- Se la stessa regola è elencata due o più volte in un set di regole con diversi livelli di gravità, il compilatore genera un errore. Esempio:
+- Se la stessa regola è elencata due o più volte in un set di regole con diversi livelli di gravità, il compilatore genera un errore. Ad esempio:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -111,9 +111,9 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 - Se la stessa regola è elencata due o più volte in un set di regole con lo *stesso* livello di gravità, è possibile che venga visualizzato il seguente avviso nel **Elenco errori**:
 
-   **CA0063: non è stato possibile caricare il file del set di regole ' \[your]. RuleSet ' o uno dei file del set di regole dipendenti. Il file non è conforme allo schema del set di regole.**
+   **CA0063: non è stato possibile caricare il file del set di regole '\[il file]. RuleSet ' o uno dei file del set di regole dipendenti. Il file non è conforme allo schema del set di regole.**
 
-- Se il set di regole include un set di regole figlio utilizzando un tag di **inclusione** e i set di regole figlio e padre entrambi elencano la stessa regola ma con livelli di gravità diversi, la gravità nel set di regole padre avrà la precedenza. Esempio:
+- Se il set di regole include un set di regole figlio utilizzando un tag di **inclusione** e i set di regole figlio e padre entrambi elencano la stessa regola ma con livelli di gravità diversi, la gravità nel set di regole padre avrà la precedenza. Ad esempio:
 
    ```xml
    <!-- Parent rule set -->
@@ -136,7 +136,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 ## <a name="name-and-description"></a>Nome e descrizione
 
-Per modificare il nome visualizzato di un set di regole aperto nell'editor, aprire la finestra **Proprietà** selezionando **Visualizza** **finestra delle proprietà**  >  sulla barra dei menu. Immettere il nome visualizzato nella casella **nome** . È anche possibile immettere una descrizione per il set di regole.
+Per modificare il nome visualizzato di un set di regole aperto nell'editor, aprire la finestra **Proprietà** selezionando **Visualizza** > **finestra Proprietà** sulla barra dei menu. Immettere il nome visualizzato nella casella **nome** . È anche possibile immettere una descrizione per il set di regole.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

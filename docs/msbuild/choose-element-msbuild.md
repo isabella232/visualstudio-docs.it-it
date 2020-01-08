@@ -14,22 +14,22 @@ helpviewer_keywords:
 - <Choose> Element [MSBuild]
 - Choose Element [MSBuild]
 ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 316343e355f9cf3070f04660d89f9fbfd15484d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 966e942fbd32841bbfe0a429c8623da09dcbbd0f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954869"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593369"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di elementi `PropertyGroup` da valutare.
 
- \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
+ \<progetto > \<scegliere > \<quando > \<scegliere >... \<in caso contrario > \<scegliere >...
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,27 +41,27 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+ Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Elemento|Description|
+|Elemento|Descrizione|
 |-------------|-----------------|
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Elemento facoltativo.<br /><br /> Specifica gli elementi `PropertyGroup` e `ItemGroup` del blocco di codice da valutare se le condizioni di tutti gli elementi `When` restituiscono `false`. In un elemento `Otherwise` può essere presente al massimo un elemento `Choose` ed è necessario che sia l'ultimo.|
 |[When](../msbuild/when-element-msbuild.md)|Elemento obbligatorio.<br /><br /> Specifica un blocco di codice selezionabile dall'elemento `Choose`. In un elemento `When` possono essere presenti uno o più elementi `Choose`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
-| Elemento | Description |
+| Elemento | Descrizione |
 | - | - |
 | [Otherwise](../msbuild/otherwise-element-msbuild.md) | Specifica il blocco di codice da eseguire se le condizioni di tutti gli elementi `When` restituiscono `false`. |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 | [When](../msbuild/when-element-msbuild.md) | Specifica un blocco di codice selezionabile dall'elemento `Choose`. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Esempio

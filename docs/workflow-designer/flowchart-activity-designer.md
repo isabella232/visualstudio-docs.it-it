@@ -7,17 +7,17 @@ f1_keywords:
 - System.Activities.Statements.FlowStep.UI
 - System.Activities.Core.Presentation.FlowStart.UI
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f56c7eac56572d8a3be1f8b478feb0543390481
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d786e9acfa99d2b106b72822a0106e2161724790
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650451"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597035"
 ---
 # <a name="flowchart-activity-designer"></a>ActivityDesigner Diagramma di flusso
 
@@ -29,7 +29,7 @@ L'attività <xref:System.Activities.Statements.Flowchart> viene usata per creare
 
 ### <a name="using-the-flowchart-activity-designer"></a>Utilizzo dell'ActivityDesigner Flowchart
 
-L'ActivityDesigner **Flowchart** è disponibile nella categoria diagramma di **flusso** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** nella progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** oppure premere **CTRL** +**ALT** +**X**.
+L'ActivityDesigner **Flowchart** è disponibile nella categoria diagramma di **flusso** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** nella progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** oppure premere **CTRL**+**ALT**+**X**.
 
 È possibile trascinare l'ActivityDesigner del **diagramma di flusso** dalla **casella degli strumenti** e rilasciarlo nell'area di progettazione flussi di lavoro, laddove gli ActivityDesigner vengono in genere posizionati, come attività radice o come elemento figlio di un'altra attività del flusso di controllo. Se l'ActivityDesigner **Flowchart** viene rilasciato su una superficie progettazione flussi di lavoro vuota, viene creata un'attività <xref:System.Activities.Statements.Flowchart>, che per impostazione predefinita si presenta in una visualizzazione espansa in cui il nodo iniziale che avvia l'esecuzione è rappresentato come una palla verde. Se l'ActivityDesigner **Flowchart** viene rilasciato in un'altra attività del flusso di controllo, si presenta in una visualizzazione ridotta a icona che può essere espansa facendo doppio clic sull'ActivityDesigner **Flowchart** . Tutte le attività nella **casella degli strumenti** possono essere trascinate direttamente nell'ActivityDesigner **Flowchart** , incluse altre attività del flusso di controllo.
 
@@ -39,12 +39,12 @@ Dopo aver trascinato diversi ActivityDesigner nell'area di disegno Progettazione
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Flowchart> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.
 
-|Nome proprietà|Richiesto|Utilizzo|
+|Nome proprietà:|Richiesto|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome visualizzato nell'intestazione dell'ActivityDesigner. Il valore predefinito è Flowchart. Il valore può essere modificato nella finestra **Proprietà** o direttamente nell'intestazione Activity Designer.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
-|<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|Raccolta di variabili incluse nell'ambito di questa attività <xref:System.Activities.Statements.Flowchart> per condividere lo stato tra le relative attività figlio.|
-|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|<xref:System.Activities.Statements.FlowNode> eseguito all'avvio di <xref:System.Activities.Statements.Flowchart>.|
-|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Contiene la raccolta di oggetti <xref:System.Activities.Statements.FlowNode> inclusi nell'attività <xref:System.Activities.Statements.Flowchart>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome visualizzato nell'intestazione dell'ActivityDesigner. Il valore predefinito è Flowchart. Il valore può essere modificato nella finestra **Proprietà** o direttamente nell'intestazione Activity Designer.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
+|<xref:System.Activities.Statements.Flowchart.Variables%2A>|Falso|Raccolta di variabili incluse nell'ambito di questa attività <xref:System.Activities.Statements.Flowchart> per condividere lo stato tra le relative attività figlio.|
+|<xref:System.Activities.Statements.Flowchart.StartNode%2A>|Falso|<xref:System.Activities.Statements.FlowNode> eseguito all'avvio di <xref:System.Activities.Statements.Flowchart>.|
+|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|Falso|Contiene la raccolta di oggetti <xref:System.Activities.Statements.FlowNode> inclusi nell'attività <xref:System.Activities.Statements.Flowchart>.|
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -3,17 +3,17 @@ title: Cache dello schema dell'editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aae5749d57dd1c9aaca8748ed02bdbb5587cade6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668735"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592490"
 ---
 # <a name="schema-cache"></a>Cache dello schema
 
@@ -25,23 +25,23 @@ Nella tabella seguente vengono descritti gli schemi installati con l'editor XML.
 
 | Nomefile | Descrizione |
 |-| - |
-| *Catalog. xsd* | Schema per i file del catalogo schemi dell'editor XML. Per informazioni sui cataloghi degli schemi, vedere di seguito. |
-| *File DotNetConfig. xsd* | Schema per i file Web. config, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
-| *MSBuild. xsd* | Schema per MSBuild creare file, "<http://schemas.microsoft.com/developer/msbuild/2003>". |
-| *msdata. xsd* | Schema per le annotazioni XSD aggiunte dalla classe <xref:System.Data.DataSet>, "urn:schemas-microsoft-com:xml-msdata". |
-| *msxsl. xsd* | Schema per le estensioni del blocco di script Microsoft XSLT, urn:schemas-microsoft-com:xslt. |
-| *SnippetFormat. xsd* | Schema per i file XML del frammento di codice. Per esempi, vedere *% VSInstallDir% \VC#\Expansions*. |
-| *SOAP 1.1. xsd* | Schema per Simple Object Access Protocol (SOAP) 1,1, http://schemas.xmlsoap.org/soap/envelope/. |
+| *catalog.xsd* | Schema per i file del catalogo schemi dell'editor XML. Per informazioni sui cataloghi degli schemi, vedere di seguito. |
+| *DotNetConfig.xsd* | Schema per i file Web. config `http://schemas.microsoft.com/.NETConfiguration/v2.0`. |
+| *msbuild.xsd* | Schema per MSBuild creare file, `http://schemas.microsoft.com/developer/msbuild/2003`. |
+| *msdata.xsd* | Schema per le annotazioni XSD aggiunte dalla classe <xref:System.Data.DataSet>, "urn:schemas-microsoft-com:xml-msdata". |
+| *msxsl.xsd* | Schema per le estensioni del blocco di script Microsoft XSLT, urn:schemas-microsoft-com:xslt. |
+| *SnippetFormat.xsd* | Schema per i file XML del frammento di codice. Per esempi, vedere *% VSInstallDir% \VC#\Expansions*. |
+| *Soap1.1.xsd* | Schema per Simple Object Access Protocol (SOAP) 1,1, `http://schemas.xmlsoap.org/soap/envelope/`. |
 | *SOAP 1.2. xsd* | Schema per il protocollo SOAP (Simple Object Access Protocol) 1.2. |
-| *SiteMapSchema. xsd* | Schema per il file XML della Sitemap ASP.NET, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
-| *WSDL. xsd* | Schema per il linguaggio di descrizione del servizio Web, http://schemas.xmlsoap.org/wsdl/. |
-| *xenc. xsd* | Schema per la crittografia XML, http://www.w3.org/2000/09/xmldsig#. |
-| *XHTML. xsd* | Schema per http://www.w3.org/1999/xhtml XHTML. |
-| *XLink. xsd* | Schema per XLink 1.0, http://www.w3.org/1999/xlink. |
-| *XML. xsd* | Schema che descrive gli attributi XML: Space e XML: lang http://www.w3.org/XML/1998/namespace. |
-| *xmlsig. xsd* | Schema per le firme digitali XML, http://www.w3.org/2000/09/xmldsig#. |
-| *XSDSchema. xsd* | Schema che descrive lo stesso XSD, http://www.w3.org/2001/XMLSchema. |
-| *XSLT. xsd* | Schema per le trasformazioni XML, http://www.w3.org/1999/XSL/Transform. |
+| *SiteMapSchema.xsd* | Schema per il file XML della Sitemap ASP.NET, `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`. |
+| *wsdl.xsd* | Schema per il linguaggio di descrizione del servizio Web, `http://schemas.xmlsoap.org/wsdl/`. |
+| *xenc.xsd* | Schema per la crittografia XML, `http://www.w3.org/2000/09/xmldsig#`. |
+| *xhtml.xsd* | Schema per `http://www.w3.org/1999/xhtml`XHTML. |
+| *xlink.xsd* | Schema per XLink 1.0, `http://www.w3.org/1999/xlink`. |
+| *xml.xsd* | Schema che descrive gli attributi XML: Space e XML: lang `http://www.w3.org/XML/1998/namespace`. |
+| *xmlsig.xsd* | Schema per le firme digitali XML, `http://www.w3.org/2000/09/xmldsig#`. |
+| *xsdschema.xsd* | Schema che descrive lo stesso XSD, `http://www.w3.org/2001/XMLSchema`. |
+| *xslt.xsd* | Schema per le trasformazioni XML, `http://www.w3.org/1999/XSL/Transform`. |
 
 ## <a name="update-schemas-in-the-cache"></a>Aggiornare gli schemi nella cache
 
@@ -110,7 +110,7 @@ Nell'esempio seguente è stato creato un nuovo elemento `Schema` che usa la vari
 
 ### <a name="to-change-the-schema-cache-location"></a>Per modificare il percorso della cache degli schemi
 
-1. Scegliere **Opzioni**dal menu **strumenti** .
+1. Scegliere **Opzioni** dal menu **Strumenti**.
 
 2. Espandere **editor di testo**, espandere **XML**, quindi fare clic su **varie**.
 
@@ -124,7 +124,7 @@ Nell'esempio seguente è stato creato un nuovo elemento `Schema` che usa la vari
 
 2. Aggiungere un nuovo elemento `<Catalog href="..."/>` che fa riferimento alla directory degli schemi aggiuntivi.
 
-3. Salvare le modifiche.
+3. Fare clic su Salva per salvare le modifiche.
 
    Il catalogo viene ricaricato automaticamente.
 

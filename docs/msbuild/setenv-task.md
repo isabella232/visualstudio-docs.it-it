@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild (C++), tasks
 - SetEnv task (MSBuild (C++))
 ms.assetid: fd9e4225-68cb-4608-8b27-468b0218c936
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ec3170c9662cd9ef67521addfdf0d0095bd23b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 59523e3f6b12eb5921235efcf15d7937a14e7247
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747206"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595098"
 ---
 # <a name="setenv-task"></a>Attività SetEnv
 Imposta o elimina il valore di una variabile di ambiente specificata.
@@ -34,7 +34,7 @@ Imposta o elimina il valore di una variabile di ambiente specificata.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|**Nome**|Parametro **String** obbligatorio.<br /><br /> Nome di una variabile di ambiente.|
+|**Name**|Parametro **String** obbligatorio.<br /><br /> Nome di una variabile di ambiente.|
 |**OutputEnvironmentVariable**|Parametro di output **String** facoltativo.<br /><br /> Contiene il valore assegnato alla variabile di ambiente specificata dal parametro **Name**.|
 |**Prefix**|Parametro `Boolean` obbligatorio.<br /><br /> Se `true`, concatena il valore del parametro **Value** prima del valore della variabile di ambiente specificato dal parametro **Name** e quindi assegna il risultato alla variabile di ambiente. Se `false`, assegna solo il valore del parametro **Value** alla variabile di ambiente.|
 |**Destinazione**|Parametro **String** facoltativo.<br /><br /> Specifica il percorso di archiviazione di una variabile di ambiente. Specificare "Utene" o "Computer".<br /><br /> Per altre informazioni, vedere [Enumerazione EnvironmentVariableTarget](xref:System.EnvironmentVariableTarget).|

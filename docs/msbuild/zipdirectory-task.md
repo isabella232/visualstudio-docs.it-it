@@ -17,17 +17,17 @@ helpviewer_keywords:
 - MSBuild, ZipDirectory task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
-author: Mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2188ef3026e36d5c97cf35cd29362411c473973e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dd4bf72509610e9d397e4b208294112fcc0975b4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777476"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588330"
 ---
 # <a name="zipdirectory-task"></a>Attività ZipDirectory
 Crea un archivio con estensione *zip* dal contenuto di una directory.
@@ -38,14 +38,14 @@ Crea un archivio con estensione *zip* dal contenuto di una directory.
 ## <a name="parameters"></a>Parametri
  Nella tabella che segue vengono descritti i parametri dell'attività `ZipDirectory` .
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`DestinationFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio<br /><br /> Percorso completo del primo file con estensione *zip* da creare.|
 |`Overwrite`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il file di destinazione, se disponibile, verrà sovrascritto. Il valore predefinito è `false`.|
 |`SourceDirectory`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica la directory da cui creare un archivio con estensione *zip*.|
 
-## <a name="remarks"></a>Osservazioni
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Note
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
  L'esempio seguente crea un archivio con estensione *zip* dalla directory di output dopo la compilazione di un progetto.
@@ -64,4 +64,4 @@ Crea un archivio con estensione *zip* dal contenuto di una directory.
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

@@ -2,17 +2,17 @@
 title: 'Procedura: aggiungere un gestore di trascinamento della selezione'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc0124df648dbc5ecfbcf60ce0cca2fdc974e7e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985086"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594695"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: aggiungere un gestore di trascinamento della selezione
 
@@ -22,7 +22,7 @@ Questo argomento illustra i movimenti di trascinamento della selezione originati
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>Definizione di gestori movimenti con l'override dei metodi ShapeElement
 
-È possibile eseguire l'override di `OnDragDrop`, `OnDoubleClick`, `OnDragOver` e di altri metodi.
+è possibile eseguire l'override di `OnDragDrop`, `OnDoubleClick`, `OnDragOver`e altri metodi.
 
 Aggiungere un nuovo file di codice al progetto DSL. Per un gestore movimenti, in genere è necessario avere almeno le direttive `using` seguenti:
 
@@ -34,7 +34,7 @@ using System.Linq;
 
 Nel nuovo file definire una classe parziale per la forma o la classe del diagramma che deve rispondere all'operazione di trascinamento. Eseguire l'override dei metodi seguenti:
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A> - Questo metodo viene chiamato quando il puntatore del mouse viene immesso nella forma durante un'operazione di trascinamento. Il metodo deve esaminare l'elemento che l'utente sta trascinando e impostare la proprietà Effect per indicare se l'utente può rilasciare l'elemento su questa forma. La proprietà Effect determina l'aspetto del cursore mentre è sopra la forma e determina anche se verrà chiamato `OnDragDrop()` quando l'utente rilascerà il pulsante del mouse.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>: questo metodo viene chiamato quando il puntatore del mouse entra nella forma durante un'operazione di trascinamento. Il metodo deve esaminare l'elemento che l'utente sta trascinando e impostare la proprietà Effect per indicare se l'utente può rilasciare l'elemento su questa forma. La proprietà Effect determina l'aspetto del cursore mentre è sopra la forma e determina anche se verrà chiamato `OnDragDrop()` quando l'utente rilascerà il pulsante del mouse.
 
     ```csharp
     partial class MyShape // MyShape generated from DSL Definition.
@@ -124,11 +124,11 @@ Quando l'utente trascina un elemento sul diagramma o da una parte del diagramma 
 
 Per individuare i formati in cui sono disponibili le informazioni sull'origine del trascinamento, eseguire il codice in modalità di debug, impostando un punto di interruzione all'inizio su `OnDragOver()` o `CanDragDrop()`. Esaminare i valori del parametro `DiagramDragEventArgs`. Le informazioni sono disponibili in due formati:
 
-- <xref:System.Windows.Forms.IDataObject> `Data`-questa proprietà contiene le versioni serializzate degli oggetti di origine, in genere in più di un formato. Le funzioni più utili sono:
+- <xref:System.Windows.Forms.IDataObject>`Data`-questa proprietà contiene le versioni serializzate degli oggetti di origine, in genere in più di un formato. Le funzioni più utili sono:
 
   - diagramEventArgs. Data. GetDataFormats (): elenca i formati in cui è possibile decodificare l'oggetto trascinato. Se, ad esempio, l'utente trascina un file dal desktop, i formati disponibili includono il nome file ("`FileNameW`").
 
-  - `diagramEventArgs.Data.GetData(format)` decodifica l'oggetto trascinato nel formato specificato. Eseguire il cast dell'oggetto al tipo appropriato. Esempio:
+  - `diagramEventArgs.Data.GetData(format)` decodifica l'oggetto trascinato nel formato specificato. Eseguire il cast dell'oggetto al tipo appropriato. Ad esempio:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -148,7 +148,7 @@ Per individuare i formati in cui sono disponibili le informazioni sull'origine d
 
      Per accettare forme UML, determinare i GUID delle classi di forme UML per esperimento. Tenere presente che in genere in ogni diagramma ci sono più tipi di elemento. Tenere anche presente che un oggetto trascinato da un diagramma DSL o UML è la forma, non l'elemento del modello.
 
-`DiagramDragEventArgs` ha anche proprietà che indicano la posizione corrente del puntatore del mouse e se l'utente sta premendo CTRL, ALT o MAIUSC.
+`DiagramDragEventArgs` dispone anche di proprietà che indicano la posizione corrente del puntatore del mouse e se l'utente preme i tasti CTRL, ALT o MAIUSC.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>Come ottenere l'originale di un elemento trascinato
 
@@ -160,7 +160,7 @@ Le proprietà `Data` e `Prototype` degli argomenti dell'evento contengono solo u
 
 Rendere accessibile il DSL di origine tramite il bus di modello di Visual Studio:
 
-1. Aprire il file di definizione DSL del linguaggio DSL di origine in Progettazione DSL. Fare clic con il pulsante destro del mouse sull'area di progettazione e quindi scegliere **Abilita ModelBus**. Nella finestra di dialogo scegliere una o entrambe le opzioni.  Fare clic su **OK**. Un nuovo progetto "ModelBus" viene aggiunto alla soluzione DSL.
+1. Aprire il file di definizione DSL del linguaggio DSL di origine in Progettazione DSL. Fare doppio clic nell'area di progettazione e quindi fare clic su **Abilita Modelbus**. Nella finestra di dialogo scegliere una o entrambe le opzioni.  Fare clic su **OK**. Un nuovo progetto "ModelBus" viene aggiunto alla soluzione DSL.
 
 2. Fare clic su **trasforma tutti i modelli** e ricompilare la soluzione.
 

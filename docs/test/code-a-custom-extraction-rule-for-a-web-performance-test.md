@@ -10,15 +10,15 @@ ms.assetid: 6bcc5712-6cc6-4f59-8933-6e8078318c45
 dev_langs:
 - CSharp
 - VB
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9aeb80d348e31de0934d515754c59346fac3c2ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665266"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591177"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificare una regola di estrazione personalizzata per un test delle prestazioni Web
 

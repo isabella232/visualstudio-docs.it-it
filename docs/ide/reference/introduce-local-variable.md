@@ -3,17 +3,17 @@ title: Introdurre una variabile locale
 description: Generare una variabile locale per sostituire un'espressione esistente. Selezionare l'espressione, fare clic con il pulsante destro del mouse e scegliere Azioni rapide e refactoring, quindi selezionare Introduce l'elemento locale per tutte le occorrenze di 'expression'.
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6407810b4143d5edacecf42990ae5b6d63497be2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668748"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568815"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introdurre una variabile locale in Visual Studiio
 
@@ -21,7 +21,7 @@ Questa generazione di codice si applica a:
 
 - C#
 
-- Visual Basic
+- Visual Basic -
 
 **Cosa:** consente di generare immediatamente una variabile locale per sostituire un'espressione esistente.
 

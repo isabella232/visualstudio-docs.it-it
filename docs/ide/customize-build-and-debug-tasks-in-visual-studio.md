@@ -8,17 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9101db18c8c61f249d9f0b818a75024270a079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d10b02908c63d177149f9113c37f71813ee09dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652567"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567437"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizzare le attività di compilazione e debug per lo sviluppo con "Apri cartella"
 
@@ -28,7 +28,7 @@ Se la codebase usa strumenti di compilazione personalizzati non riconosciuti da 
 
 Personalizzare la codebase senza progetto con i seguenti file *json*:
 
-|Nome del file|Scopo|
+|Nome file|Scopo|
 |-|-|
 |*tasks.vs.json*|Specificare i comandi di compilazione e le opzioni del compilatore personalizzati, nonché le attività arbitrarie (non correlate alla compilazione).<br>Accessibile tramite il comando **Configura attività** nel menu di scelta rapida di **Esplora soluzioni**.|
 |*launch.vs.json*|Specificare gli argomenti della riga di comando per il debug.<br>Accessibile tramite il comando **Impostazioni per debug e avvio** nel menu di scelta rapida di **Esplora soluzioni**.|

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Text Editor Options dialog box, formatting
 - ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: mikeblome
-ms.author: mblome
+author: TerryGLee
+ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b866d09dbd448950a641ebb59501c13c3bf35188
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461814"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596255"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opzioni, Editor di testo, C/C++, Formattazione
 
@@ -32,9 +32,9 @@ Usare queste pagine delle proprietà per modificare il comportamento predefinito
 Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++** , quindi fare clic su **Formattazione**.
 
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="general-page"></a>Pagina Generale
+## <a name="general-page"></a>Pagina generale
 
 Questa pagina include opzioni di formattazione di istruzioni e blocchi durante la digitazione.
 
@@ -44,7 +44,7 @@ Questa pagina include opzioni di formattazione di istruzioni e blocchi durante l
 
 ::: moniker-end
 
-la pagina include anche opzioni per la configurazione del supporto di [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versione 5.0. ClangFormat è un'utilità che semplifica l'applicazione di stili e la formattazione del codice in base a un set di regole che è possibile configurare in un file con estensione clang-format o _clang-format.
+La pagina include anche opzioni per la configurazione del supporto per [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versione 5,0. ClangFormat è un'utilità che semplifica l'applicazione di stili e la formattazione del codice in base a un set di regole che è possibile configurare in un file con estensione clang-format o _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Configurazione delle opzioni di ClangFormat
 
@@ -65,4 +65,4 @@ Queste pagine consentono di personalizzare la formattazione in vari modi, ma ven
 ## <a name="see-also"></a>Vedere anche
 
 - [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-- [Utilizzo di IntelliSense](../../ide/using-intellisense.md)
+- [Uso di IntelliSense](../../ide/using-intellisense.md)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962689"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75679000"
 ---
 # <a name="debug-python-and-c-together"></a>Debug contemporaneo di codice Python e C++
 
@@ -38,7 +38,7 @@ Le funzionalità di debug in modalità mista includono le seguenti, come illustr
 
 |   |   |
 |---|---|
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | Per un'introduzione alle attività di compilazione, test e debug di moduli C nativi con Visual Studio, vedere [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Approfondimento: creazione di moduli nativi), youtube.com, 9 minuti e 09 secondi. Il video è applicabile sia a Visual Studio 2015 che a Visual Studio 2017. |
+| ![icona della telecamera per un video](../install/media/video-icon.png "Guarda un video") | Per un'introduzione a compilazione, test e debug dei moduli C nativi con Visual Studio, vedere [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Approfondimento: creazione di moduli nativi) (youtube.com, 9m 09s). Il video è applicabile sia a Visual Studio 2015 che a Visual Studio 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Abilitare il debug in modalità mista in un progetto Python
 
@@ -69,6 +69,9 @@ Visual Studio (2017 versione 15.5 e successive) supporta il debug in modalità m
 1. Selezionare la scheda **Debug**, selezionare **Debug Python/nativo** in **Debugger da avviare** e selezionare **OK**.
 
     ![Selezione del debugger Python/nativo in un progetto C/C++](media/mixed-mode-debugging-select-cpp-debugger.png)
+
+> [!Note]
+> Se non si ha la possibilità di selezionare il **debug Python/nativo** , è necessario prima installare gli **strumenti di sviluppo nativi Python** usando il programma di installazione di Visual Studio. È possibile trovarlo come opzione nel carico di lavoro sviluppo Python. Per ulteriori informazioni, vedere [come installare il supporto di Python in Visual Studio in Windows](installing-python-support-in-visual-studio.md).
 
 Quando si usa questo metodo, tenere presente che non è possibile eseguire il debug dell'utilità di avvio di *py.exe* stessa poiché genera un processo figlio *python.exe* a cui non verrà collegato il debugger. Se si vuole avviare *python.exe* direttamente con argomenti, modificare l'opzione **Comando** nelle proprietà **Debug Python/nativo** (illustrate nella figura precedente) per specificare il percorso completo di *python.exe*, quindi specificare gli argomenti in **Argomenti del comando**.
 
@@ -168,9 +171,9 @@ Il debugger in modalità mista è diverso dal [debugger Python standard](debuggi
 
 - Funzionalità non supportate: punti di interruzione condizionali, finestra **Debug interattivo** e debug remoto multipiattaforma.
 - Finestra **Controllo immediato**: è disponibile ma con un sottoinsieme limitato di funzionalità, tra cui tutte le limitazioni qui elencate.
-- Versioni di Python supportate: solo CPython 2.7 e 3.3+.
+- Versioni di Python supportate: solo CPython 2.7 e versioni successive alla 3.3.
 - Visual Studio Shell: quando si usa Python con Visual Studio Shell, ad esempio se è stato installato con il programma di installazione integrato, Visual Studio non è in grado di aprire i progetti C++ e l'esperienza di modifica per i file di C++ è limitata a un semplice editor di testo. Il debug di C/C++ e il debug in modalità mista sono tuttavia supporti completamente nella shell con il codice sorgente, l'esecuzione istruzione per istruzione del codice nativo e la valutazione delle espressioni C++ nelle finestre del debugger.
-- Visualizzazione ed espansione di oggetti: durante la visualizzazione di oggetti Python nelle finestre del debugger **Variabili locali** ed **Espressione di controllo**, il debugger in modalità mista visualizza solo la struttura degli oggetti. Non valuta automaticamente le proprietà, né mostra gli attributi calcolati. Per le raccolte, mostra solo gli elementi per i tipi di raccolta predefiniti (`tuple`, `list`, `dict`, `set`). I tipi di raccolta personalizzati non vengono visualizzati come raccolte, a meno che non siano ereditati da un tipo di raccolta predefinito.
+- Visualizzazione ed espansione degli oggetti: durante la visualizzazione di oggetti Python nelle finestre del debugger **Variabili locali** ed **Espressioni di controllo**, il debugger in modalità mista mostra solo la struttura degli oggetti. Non valuta automaticamente le proprietà, né mostra gli attributi calcolati. Per le raccolte, mostra solo gli elementi per i tipi di raccolta predefiniti (`tuple`, `list`, `dict`, `set`). I tipi di raccolta personalizzati non vengono visualizzati come raccolte, a meno che non siano ereditati da un tipo di raccolta predefinito.
 - Valutazione delle espressioni: vedere di seguito.
 
 ### <a name="expression-evaluation"></a>Valutazione delle espressioni

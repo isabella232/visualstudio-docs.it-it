@@ -3,20 +3,20 @@ title: Refactoring con spostamento di un tipo in un file corrispondente
 description: Spostare un tipo in un file separato con lo stesso nome. Fare clic con il pulsante destro del mouse sul tipo, scegliere Azioni rapide e refactoring e quindi Sposta il tipo in <TypeName>.cs.
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba822981ade5ebdc191732e0a32b02a9a4005fb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666484"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585271"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refactoring con spostamento di un tipo in un file corrispondente
 
@@ -24,7 +24,7 @@ Questo refactoring si applica a:
 
 - C#
 
-- Visual Basic
+- Visual Basic -
 
 **Cosa:** consente di spostare il tipo selezionato in un file distinto con lo stesso nome.
 
@@ -34,7 +34,7 @@ Questo refactoring si applica a:
 
 ## <a name="how-to"></a>Procedura
 
-1. Posizionare il cursore all'interno del nome del tipo in cui è definito. Esempio:
+1. Posizionare il cursore all'interno del nome del tipo in cui è definito. Ad esempio:
 
    ```csharp
    class Person

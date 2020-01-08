@@ -4,17 +4,17 @@ ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 923e8bb50b1caa323c602334c1d9a28b072043bd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154817"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591320"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: Visualizzare, salvare e configurare file di log di compilazione
 
@@ -52,7 +52,7 @@ Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un 
 
 3. Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere uno dei valori seguenti e quindi scegliere il pulsante **OK**.
 
-    |Livello di dettaglio|DESCRIZIONE|
+    |Livello di dettaglio|Descrizione|
     | - |-----------------|
     |**Quiet**|Visualizza solo un riepilogo della compilazione.|
     |**Minimo**|Visualizza un riepilogo della compilazione e gli errori, gli avvisi e i messaggi classificati con priorità elevata.|

@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 276eff442891f70b9eea76e9167b07f798af2d6a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974239"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591463"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Disabilitare o spostare la cache dei pacchetti
 
@@ -46,18 +46,18 @@ Se si vuole abilitare nuovamente la cache, passare invece `--cache`. Verranno me
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
-È possibile anche impostare i [criteri del Registro di sistema](set-defaults-for-enterprise-deployments.md) `KeepDownloadedPayloads` per disabilitare la cache prima di installare, modificare o ripristinare Visual Studio.
+È anche possibile impostare i [criteri del registro di sistema](set-defaults-for-enterprise-deployments.md) `KeepDownloadedPayloads` per disabilitare la cache prima di installare, modificare o ripristinare Visual Studio.
 
 ## <a name="move-the-package-cache"></a>Spostare la cache dei pacchetti
 
 Una configurazione di sistema comune prevede Windows installato in un'unità SSD con un disco rigido più grande (o più dischi rigidi) riservato per le esigenze di sviluppo, ad esempio per codice sorgente, file binari del programma e altro ancora. Se si preferisce lavorare offline è invece possibile spostare la cache dei pacchetti.
 
-Attualmente è possibile eseguire questa operazione solo se si impostano i [criteri del Registro di sistema](set-defaults-for-enterprise-deployments.md) `CachePath` prima di installare, modificare o ripristinare Visual Studio.
+Attualmente, è possibile eseguire questa operazione solo se si impostano i [criteri del registro di sistema](set-defaults-for-enterprise-deployments.md) `CachePath` prima di installare, modificare o ripristinare Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
 * [Impostare i valori predefiniti per le distribuzioni aziendali](set-defaults-for-enterprise-deployments.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

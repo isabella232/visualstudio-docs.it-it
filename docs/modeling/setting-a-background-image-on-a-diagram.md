@@ -2,17 +2,17 @@
 title: Impostazione di un'immagine di sfondo in un diagramma
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f8806571939cb057852ddd9cca971f9415339ca
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1bdf30636a6c7fee1463cbe554058f0802a5f6f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748244"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591957"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Impostazione di un'immagine di sfondo in un diagramma
 In Visual Studio Visualization and Modeling SDK è possibile impostare l'immagine di sfondo per una finestra di progettazione generata usando codice personalizzato.
@@ -53,7 +53,7 @@ In Visual Studio Visualization and Modeling SDK è possibile impostare l'immagin
 
 16. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **file di codice**nell'elenco **modelli** .
 
-17. Nella casella **nome** Digitare `BackgroundImage.cs` e fare clic su **Aggiungi**.
+17. Nella casella **nome** Digitare `BackgroundImage.cs`e fare clic su **Aggiungi**.
 
 18. Copiare il codice seguente nel file BackgroundImage.cs, usando lo spazio dei nomi, il nome della classe del diagramma e il nome della risorsa del file di immagine corretti.
 

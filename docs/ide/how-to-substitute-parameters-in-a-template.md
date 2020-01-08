@@ -6,15 +6,15 @@ helpviewer_keywords:
 - template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 09d86c52fcd9ddce3c986e0bfa6c9c96f746c663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ddfe065d30b958e52e22f30f946d01d626fcf0e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656569"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591411"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Procedura: Sostituire i parametri di un modello
 
@@ -26,7 +26,7 @@ Nella sezione seguente viene illustrato come modificare un modello in modo da so
 
 ## <a name="example---namespace-name"></a>Esempio - nome dello spazio dei nomi
 
-1. Inserire il parametro in uno o più dei file di codice nel modello. Esempio:
+1. Inserire il parametro in uno o più dei file di codice nel modello. Ad esempio:
 
     ```csharp
     namespace $safeprojectname$

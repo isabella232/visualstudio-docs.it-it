@@ -4,17 +4,17 @@ description: Questo articolo descrive alcune modalità di base in cui Visual Stu
 ms.date: 05/02/2018
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0be3965ea8343317cf570ae752109b50fa80dd4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650860"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588616"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -160,7 +160,7 @@ Visual Studio visualizza anche la finestra **Strumenti di diagnostica**, in cui 
 
 ## <a name="run-unit-tests"></a>Eseguire unit test
 
-Gli unit test sono il primo elemento di difesa contro i bug nel codice perché, se eseguiti correttamente, testano una singola "unità" di codice, in genere una singola funzione, ed è più semplice eseguirne il debug rispetto all'intero programma. Visual Studio installa i framework degli unit test di Microsoft sia per il codice gestito e che per quello nativo. Usare un framework di testing unità per creare unit test, eseguirli e riportare i risultati dei test. Eseguire nuovamente gli unit test quando si apportano modifiche per verificare che il codice funzioni ancora correttamente. Con Visual Studio Enterprise è possibile eseguire automaticamente i test dopo ogni compilazione.
+Gli unit test sono il primo elemento di difesa contro i bug nel codice perché, se eseguiti correttamente, testano una singola "unità" di codice, in genere una singola funzione, ed è più semplice eseguirne il debug rispetto all'intero programma. Visual Studio installa i framework degli unit test di Microsoft sia per il codice gestito e che per quello nativo. Usare un framework di testing unità per creare unit test, eseguirli e creare report con i relativi risultati. Eseguire nuovamente gli unit test quando si apportano modifiche per verificare che il codice funzioni ancora correttamente. Con Visual Studio Enterprise è possibile eseguire automaticamente i test dopo ogni compilazione.
 
 Per iniziare, vedere [Generate unit tests for your code with IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) (Generare unit test per il codice con IntelliTest).
 

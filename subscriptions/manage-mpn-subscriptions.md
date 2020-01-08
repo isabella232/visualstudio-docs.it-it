@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Come assegnare le sottoscrizioni di Visual Studio agli utenti finali per i partner MPN.
-ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
+ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605458"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492914"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestire le sottoscrizioni di Visual Studio offerte tramite Microsoft Partner Network (MPN)
 I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono idonei per usare le sottoscrizioni di Visual Studio. Queste sottoscrizioni sono concesse in licenza per singolo utente e sono valide solo quando vengono assegnate a un utente denominato specifico che lavora per la società partner.
@@ -26,7 +26,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 4. Selezionare il primo, secondo e terzo **contatto tecnico** e **salvare**
 5. Selezionare **Requirements and Assets** (Requisiti e risorse)
 6. Selezionare **Privileges** (Privilegi)
-7. Selezionare **Sottoscrizioni di Visual Studio** (Nota: l'aggiornamento della sottoscrizione a Visual Studio è in sospeso)
+7. Selezionare **Sottoscrizioni di Visual Studio** (Nota: aggiornamento della sottoscrizione di Visual Studio in sospeso)
 8. Selezionare il **singolo** desiderato
 9. Fare clic su **Submit** (Invia)
 10. L'utente riceverà un messaggio di posta elettronica
@@ -34,7 +34,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 12. Potrebbe essere visualizzata una pagina del profilo di Visual Studio che include:
     - Nome
     - Cognome
-    - Indirizzo di posta elettronica del contatto
+    - Indirizzo di posta elettronica contatto
 13. L'accesso è a questo punto completo e il sottoscrittore dovrebbe avere accesso ai vantaggi
 
 ## <a name="competency-partners"></a>Partner con competenze
@@ -48,12 +48,12 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 8. Potrebbe essere visualizzata una pagina del profilo di Visual Studio
     - Nome
     - Cognome
-    - Indirizzo di posta elettronica del contatto
+    - Indirizzo di posta elettronica contatto
 9. L'accesso è a questo punto completo e il sottoscrittore dovrebbe avere accesso ai vantaggi
 
 ## <a name="resources-and-references"></a>Risorse e riferimenti
 - Informazioni dettagliate sulle [sottoscrizioni di Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions) di Microsoft Partner Network
-- [Program Administrator Guide to Software and Online Services Benefits](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) (Guida ai vantaggi software e dei servizi online per l'amministratore del programma) di Microsoft Partner Network
+- [Program Administrator Guide to Software and Online Services Benefits](https://assetsprod.microsoft.com/mpn/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits) (Guida ai vantaggi software e dei servizi online per l'amministratore del programma) di Microsoft Partner Network
   - Pagina 6: Assigning Contact Roles and Visual Studio Professional Subscriptions for Action Pack subscribers (Assegnazione di ruoli di contatto e sottoscrizioni di Visual Studio Professional per i sottoscrittori di Action Pack)
   > [!NOTE]
   > Il ruolo di contatto tecnico è obbligatorio per le sottoscrizioni di Visual Studio
@@ -61,3 +61,5 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 
 ## <a name="next-steps"></a>Passaggi successivi
 I sottoscrittori e gli amministratori del programma devono collaborare direttamente con il team di supporto di Microsoft Partner Network per risolvere eventuali problemi di accesso alle sottoscrizioni da parte dei sottoscrittori. Per assistenza, visitare la pagina del [supporto per i partner](https://partner.microsoft.com/support). (Verranno richieste le credenziali di accesso di MPN.)
+
+https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt.; _ylu = X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV = 2/RE = 1577405628/RO = 10/UR = HTTPS %3 a %2 f %2 f assetsprod. Microsoft. com% 2fmpn% 2fProgram-Administrator-Guide-to-software-and-Online-Services-benefits/RK = 2/RS = xsA5OL. 9t6QqJlvFYZ3OPnZkC_k-

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1856d6421dc61ada2f3040e4fdeed880a6ab201
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652477"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596268"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
@@ -82,7 +82,7 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
 
 > [!NOTE]
 > I file di log, le schermate e i dati di registrazione vengono inviati a Microsoft solo quando si fornisce l'autorizzazione inviando il report sul problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "segnala un problema" (vedere la schermata inclusa in questa nota). I log e i file raccolti vengono archiviati nella cartella% Temp% e vengono puliti regolarmente e dopo ogni caricamento. Se non si desidera includere un log nel report del problema, eliminare il file dalla cartella% Temp% prima di inviare il report.
-  > ![Report un problema: riepilogo dei log raccolti ](media/report-a-problem-logs-collected.png)
+  > ![segnalare un problema: riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
 
 
 ## <a name="see-also"></a>Vedere anche

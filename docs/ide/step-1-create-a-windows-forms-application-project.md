@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 0a1c0184c11b745ef6c83c35b524884a139bc3d8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516705"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588785"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Passaggio 1: creare un progetto di app Windows Forms
 
@@ -27,7 +27,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**. La finestra di dialogo avrà un aspetto simile allo screenshot seguente.
 
-     ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)<br/>***Finestra di dialogo*** *Nuovo progetto*
+     ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)<br/>Finestra di *dialogo* ***nuovo progetto***
 
 2. Sul lato sinistro della finestra di dialogo **nuovo progetto** scegliere **Visual C#**  o **Visual Basic**, quindi scegliere **desktop di Windows**.
 
@@ -44,7 +44,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-   ![Visualizzare la finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **tipo di progetto** .
 
@@ -61,7 +61,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
+   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *PictureViewer* nella casella **Nome del progetto**. Scegliere **Crea**.
 
@@ -73,7 +73,7 @@ Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore p
 
 1. L'ambiente di sviluppo include tre finestre: una finestra principale, **Esplora soluzioni** e **Proprietà**.
 
-     Se una di queste finestre non è presente, è possibile ripristinare il layout predefinito della finestra. Nella barra dei menu scegliere **finestra**  > **Reimposta layout finestra**.
+     Se una di queste finestre non è presente, è possibile ripristinare il layout predefinito della finestra. Nella barra dei menu scegliere **finestra** > **Reimposta layout finestra**.
 
      È inoltre possibile visualizzare le finestre tramite i comandi di menu. Sulla barra dei menu scegliere **Visualizza** > **Finestra Proprietà** o **Esplora soluzioni**.
 

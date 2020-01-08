@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, tool task base class
 - tool task base class [MSBuild]
 ms.assetid: 08bb8059-b7e2-4565-89ba-d9034d4f0e16
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e39b6a785b6542d95477dec761c1857c4222be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 58410d1a2dbb2fc477915ac78e30a67b525e59f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938979"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594955"
 ---
 # <a name="taskextension-base-class"></a>Classe di base TaskExtension
 Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Questa catena di ereditarietà aggiunge diversi parametri alle attività che ne derivano. Questi parametri sono elencati in questo documento.
@@ -29,7 +29,7 @@ Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.TaskExtension
 ## <a name="parameters"></a>Parametri
  Nella tabella seguente vengono descritti i parametri delle classi di base.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Parametro <xref:Microsoft.Build.Framework.IBuildEngine> facoltativo.<br /><br /> Specifica l'interfaccia del motore di compilazione disponibile per le attività. Il motore di compilazione imposta automaticamente questo parametro per consentire alle attività di richiamarlo.|
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Parametro <xref:Microsoft.Build.Framework.IBuildEngine2> facoltativo.<br /><br /> Specifica l'interfaccia del motore di compilazione disponibile per le attività. Il motore di compilazione imposta automaticamente questo parametro per consentire alle attività di richiamarlo.<br /><br /> Questa è una proprietà che consente agli autori di attività che ereditano da questa classe di non dovere eseguire il cast da `IBuildEngine` a `IBuildEngine2`.|
@@ -38,5 +38,5 @@ Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.TaskExtension
 |<xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>|Parametro di sola lettura <xref:Microsoft.Build.Utilities.TaskLoggingHelper> facoltativo.<br /><br /> Ottiene un oggetto `TaskLoggingHelperExtension` che contiene metodi di registrazione delle attività.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

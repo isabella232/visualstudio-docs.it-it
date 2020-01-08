@@ -10,17 +10,17 @@ helpviewer_keywords:
 - LookupBindingPropertiesAttribute class, examples
 - user controls [Visual Basic], creating
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2c6542ac89f82443cbe4245862473861c94da3cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642665"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586796"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding di ricerca
 
@@ -54,7 +54,7 @@ Durante questa procedura dettagliata si apprenderà come:
 
 - Creare un form per visualizzare i dati nel controllo.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
@@ -76,7 +76,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 Il primo passaggio consiste nel creare un progetto di **applicazione Windows Forms** .
 
-1. In Visual Studio scegliere **nuovo**  > **progetto**dal menu **file** .
+1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
 2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 

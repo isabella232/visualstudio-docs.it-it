@@ -10,19 +10,19 @@ helpviewer_keywords:
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
-ms.translationtype: HT
+ms.openlocfilehash: 0508715637a3ac03c1377d3a337a6ded41a906de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026477"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590930"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guida di Visual Studio Administrator
 
@@ -40,7 +40,7 @@ Prima di distribuire Visual Studio all'interno dell'organizzazione, è necessari
 
 * Definire le esigenze di manutenzione.
 
-  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per altre informazioni, vedere la sezione ***Opzioni di supporto per i clienti Enterprise e Professional*** nella pagina [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) e l'articolo [Procedura: Aggiornare Visual Studio secondo una baseline di manutenzione](update-servicing-baseline.md).
+  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per altre informazioni, vedere la sezione ***Opzioni di supporto per clienti aziendali e professionisti*** della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , oltre alla pagina [procedura: aggiornare Visual Studio in una](update-servicing-baseline.md) pagina di base di manutenzione.
 
   Se si prevede di applicare gli aggiornamenti di manutenzione insieme agli aggiornamenti delle funzionalità cumulativi, è possibile scegliere gli elementi più recenti.
 
@@ -62,7 +62,7 @@ Prima di distribuire Visual Studio all'interno dell'organizzazione, è necessari
 
 * Definire le esigenze di manutenzione.
 
-  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per altre informazioni, vedere la sezione ***Supporto per le versioni precedenti di Visual Studio*** nella pagina [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) e l'articolo [Procedura: Aggiornare Visual Studio secondo una baseline di manutenzione](update-servicing-baseline.md).
+  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per altre informazioni, vedere la sezione ***supporto per le versioni precedenti di Visual Studio*** della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , oltre alla pagina [procedura: aggiornare Visual Studio in una](update-servicing-baseline.md) pagina di base di manutenzione.
 
   Se si prevede di applicare gli aggiornamenti di manutenzione insieme agli aggiornamenti delle funzionalità cumulativi, è possibile scegliere gli elementi più recenti.
 

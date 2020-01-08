@@ -6,17 +6,17 @@ f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
 - Call Hierarchy
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a03a286d8b097fbd208a828411728aaa7a54690
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668201"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595800"
 ---
 # <a name="view-call-hierarchy"></a>Visualizzare la gerarchia di chiamata
 
@@ -28,7 +28,7 @@ In Visual Studio, è possibile visualizzare una gerarchia di chiamata in fase di
 
 Per visualizzare la finestra **Gerarchia di chiamata**, fare clic con il pulsante destro del mouse nell'editor del codice sul nome di una chiamata a un metodo, una proprietà o un costruttore e quindi scegliere **Visualizza gerarchia delle chiamate**.
 
-Il nome del membro viene visualizzato in un riquadro con visualizzazione struttura ad albero nella finestra **Gerarchia di chiamata**. Se si espande il nodo del membro, vengono visualizzati i sottonodi **Chiamate a** *nome membro* e per C++ **Chiamate da** *nome membro*.
+Il nome del membro viene visualizzato in un riquadro con visualizzazione struttura ad albero nella finestra **Gerarchia di chiamata**. Se si espande il nodo membro, vengono visualizzate le **chiamate al** *nome*del C++membro e per le **chiamate dal nome del** *membro*.
 
 Per il codice C++, è possibile visualizzare le chiamate da e verso un membro:
 

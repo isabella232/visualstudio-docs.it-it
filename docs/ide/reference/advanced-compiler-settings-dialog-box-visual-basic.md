@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 9ebc2da5e71dbdee13df4cf658f3681804879f58
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919354"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596931"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)
 
@@ -30,7 +30,7 @@ Per specificare le proprietà di configurazione avanzate della build del progett
 
 2. Scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti**, fare clic sulla scheda **Compilazione**.
 
-3. Nella [Pagina Compilazione, Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) selezionare la **configurazione** e la **piattaforma**. Nelle configurazioni della build semplificate gli elenchi **Configurazione** e **Piattaforma** non vengono visualizzati. Per altre informazioni, vedere [Procedura: Impostare configurazioni di debug e di rilascio](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. Nella [Pagina Compilazione, Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) selezionare la **configurazione** e la **piattaforma**. Nelle configurazioni della build semplificate gli elenchi **Configurazione** e **Piattaforma** non vengono visualizzati. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 4. Fare clic su **Opzioni di compilazione avanzate**.
 
@@ -78,7 +78,7 @@ Immettere le costanti personalizzate per l'applicazione in questa casella di tes
 
 **Genera assembly di serializzazione**
 
-Questa impostazione specifica se il compilatore creerà assembly di serializzazione XML. Gli assembly di serializzazione possono migliorare le prestazioni di avvio della classe <xref:System.Xml.Serialization.XmlSerializer>, se è stata usata per serializzare i tipi nel codice. Il valore predefinito per questa opzione è **Auto**. **Auto** specifica che saranno generati assembly di serializzazione solo se è stata usata la classe <xref:System.Xml.Serialization.XmlSerializer> per codificare i tipi nel codice in XML. **Off** specifica che non saranno mai generati assembly di serializzazione, indipendentemente dal fatto che il codice usi o meno la classe <xref:System.Xml.Serialization.XmlSerializer>. **On** specifica che saranno sempre generati assembly di serializzazione. Gli assembly di serializzazione sono denominati `TypeName`.XmlSerializers.dll.
+Questa impostazione specifica se il compilatore creerà assembly di serializzazione XML. Gli assembly di serializzazione possono migliorare le prestazioni di avvio della classe <xref:System.Xml.Serialization.XmlSerializer>, se è stata usata per serializzare i tipi nel codice. Il valore predefinito per questa opzione è **auto**. **Auto** specifica che gli assembly di serializzazione devono essere generati solo se si è usato <xref:System.Xml.Serialization.XmlSerializer> per codificare i tipi nel codice in XML. **Off** specifica che non saranno mai generati assembly di serializzazione, indipendentemente dal fatto che il codice usi o meno la classe <xref:System.Xml.Serialization.XmlSerializer>. **On** specifica che saranno sempre generati assembly di serializzazione. Gli assembly di serializzazione sono denominati `TypeName`.XmlSerializers.dll.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 9040e65d3e9acce101ee6b481c2cd27d24285169
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984275"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597165"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Personalizzare ed estendere un linguaggio specifico di dominio
 
@@ -41,7 +41,7 @@ Visual Studio Modeling and Visualization SDK (VMSDK) offre diversi livelli in cu
 |Imposta un'immagine di sfondo in qualsiasi forma|Eseguire l'override di InitializeInstanceResources () per aggiungere un ImageField ancorato.|
 |Annidare forme a qualsiasi profondità|Configurare un albero di incorporamento ricorsivo. Definire BoundsRules per contenere le forme.|
 |Alleghi i connettori nei punti fissi sul limite di un elemento.|Definisce gli elementi terminali incorporati, rappresentati da porte di piccole dimensioni nel diagramma. Usare BoundsRules per correggere le porte sul posto. Vedere l'esempio di diagramma di circuito nell' [SDK di visualizzazione e modellazione](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).|
-|Campo di testo Visualizza un valore derivato da altri valori.|Eseguire il mapping dell'elemento Decorator del testo a una proprietà del dominio di archiviazione calcolata o personalizzata. Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).|
+|Campo di testo Visualizza un valore derivato da altri valori.|Eseguire il mapping dell'elemento Decorator del testo a una proprietà del dominio di archiviazione calcolata o personalizzata. Per altre informazioni, vedere [calcolate e le proprietà di archiviazione personalizzate](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagazione delle modifiche tra gli elementi del modello o tra forme|Vedere [convalida in un Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).|
 |Propagare le modifiche alle risorse, ad esempio altre estensioni di Visual Studio all'esterno dello Store.|Vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |Finestra delle proprietà Visualizza le proprietà di un elemento correlato.|Configurare l'invio della proprietà. Vedere [personalizzazione della finestra delle proprietà](../modeling/customizing-the-properties-window.md).|
@@ -51,9 +51,9 @@ Visual Studio Modeling and Visualization SDK (VMSDK) offre diversi livelli in cu
 |Abilita copia, taglia e incolla|Impostare la proprietà **Abilita copia incolla** del nodo **Editor** in DSL Explorer.|
 |Copia i collegamenti di riferimento e le relative destinazioni ogni volta che viene copiato un elemento. Ad esempio, copiare i commenti allegati a un elemento.|Impostare la proprietà **propaga copia** del ruolo di origine, rappresentata dalla riga su un lato della relazione di dominio nel diagramma di definizione DSL.<br /><br /> Scrivere codice per eseguire l'override di ProcessOnCopy per ottenere effetti più complessi.<br /><br /> Vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|
 |Elimina, ripadre o ricollega gli elementi correlati quando viene eliminato un elemento.|Imposta il valore per la **propagazione dell'eliminazione** di un ruolo di relazione. Per gli effetti più complessi, eseguire l'override dei metodi `ShouldVisitRelationship` e `ShouldVisitRolePlayer` nella classe `MyDslDeleteClosure`, definita in **DomainModel.cs**.|
-|Mantiene il layout e l'aspetto delle forme in copia e trascinamento della selezione.|Aggiungere le forme e i connettori al `ElementGroupPrototype` copiato. Il metodo più pratico per eseguire l'override è `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|
+|Mantiene il layout e l'aspetto delle forme in copia e trascinamento della selezione.|Aggiungere le forme e i connettori al `ElementGroupPrototype`copiato. Il metodo più pratico per eseguire l'override è `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|
 |Incollare le forme in una posizione prescelta, ad esempio la posizione del cursore attuale.|Eseguire l'override `ClipboardCommandSet.ProcessOnCopy()` per usare la versione specifica del percorso di `ElementOperations.Merge().` vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|
-|Crea collegamenti aggiuntivi all'incolla|Eseguire l'override di ClipboardCommandSet. ProcessOnPasteCommand ()|
+|Crea collegamenti aggiuntivi all'incolla|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |Abilita il trascinamento della selezione da questo diagramma, altri elementi DSLs e Windows|Vedere [procedura: aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Consentire il trascinamento di una forma o di uno strumento su una forma figlio, ad esempio una porta, come se fosse stato trascinato nell'elemento padre.|Definire una direttiva di Unione elementi nella classe dell'oggetto di destinazione per l'invio dell'oggetto rilasciato all'elemento padre. Vedere [personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md).|
 |Consente di trascinare una forma o uno strumento su una forma e di creare collegamenti o oggetti aggiuntivi. Ad esempio, per consentire l'eliminazione di un commento su un elemento a cui deve essere collegato.|Definire una direttiva di Unione elementi nella classe di dominio di destinazione e definire i collegamenti da generare. In casi complessi, è possibile aggiungere codice personalizzato. Vedere [personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md).|

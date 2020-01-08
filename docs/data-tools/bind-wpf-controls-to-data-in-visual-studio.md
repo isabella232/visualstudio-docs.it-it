@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5c9136b5047f835ecbf56df71bb226b5f56a6e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924532"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586952"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associare controlli WPF ai dati in Visual Studio
 
@@ -52,12 +52,12 @@ Nella tabella seguente sono elencati i [!INCLUDE[TLA#tla_titlexaml](../data-tool
 
 | Origine dati | Generazione di XAML per l'associazione di un controllo all'origine dati | Generazione di codice per l'inserimento dei dati nell'origine dati |
 | - | - | - |
-| Set di dati | Yes | Yes |
-| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Yes | Yes |
-| Service | Yes | No |
-| Oggetto | Yes | No |
+| Set di dati | Sì | Sì |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Sì | Sì |
+| Servizio | Sì | No |
+| Oggetto di | Sì | No |
 
-### <a name="datasets"></a>Dataset
+### <a name="datasets"></a>Set di dati
 
 Quando si trascina una tabella o una colonna dalla finestra **origini dati** alla finestra di progettazione, Visual Studio genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] che esegue le operazioni seguenti:
 
@@ -93,7 +93,7 @@ Visual Studio genera XAML che esegue le operazioni seguenti:
 
 - Crea un data binding per un controllo. Se si trascina l'elemento in un controllo esistente della finestra di progettazione, [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] associa il controllo all'elemento. Se si trascina l'elemento in un contenitore, il [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] crea il controllo selezionato per l'elemento trascinato e associa il controllo all'elemento. Il controllo viene creato all'interno di un nuovo oggetto <xref:System.Windows.Controls.Grid>.
 
-### <a name="objects"></a>Oggetti
+### <a name="objects"></a>Oggetti di
 
 Quando si trascina un oggetto o una proprietà dalla finestra **origini dati** alla finestra di progettazione, Visual Studio genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] che crea un controllo associato a dati (o associa un controllo esistente all'oggetto o alla proprietà). Tuttavia, Visual Studio non genera codice per riempire l'oggetto con i dati. È necessario scrivere questo codice manualmente.
 

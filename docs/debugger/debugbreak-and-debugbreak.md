@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce99cd360d75472df6326cfaf6a3f4ddb198b6d2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 097405f98d1a80b8605b6773bdc675ff2c4ab773
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738358"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404660"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak e __debugbreak
-È possibile chiamare la funzione Win32 DebugBreak o la funzione intrinseca [__debugbreak](/cpp/intrinsics/debugbreak) in qualunque punto del codice. `DebugBreak` e `__debugbreak` hanno lo spesso effetto dell'impostazione di un punto di interruzione nella stessa posizione.
+È possibile chiamare la funzione Win32 [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) o il [__debugbreak](/cpp/intrinsics/debugbreak) intrinseco in qualsiasi punto del codice. `DebugBreak` e `__debugbreak` hanno lo stesso effetto dell'impostazione di un punto di interruzione nella stessa posizione.
 
  Poiché `DebugBreak` è una chiamata a una funzione di sistema, è necessario che siano installati i simboli di debug del sistema per garantire che vengano visualizzate le informazioni corrette sullo stack di chiamate dopo l'interruzione. In alternativa, le informazioni sullo stack di chiamate visualizzate dal debugger possono essere spostate di un frame. Se si usa `__debugbreak`, i simboli non sono obbligatori.
 

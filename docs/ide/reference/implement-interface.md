@@ -2,17 +2,17 @@
 title: Implementare un'interfaccia
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45265c10677b8d3eadc27eb3b6e22c69bb5299be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7d420bd0d42e89476696966f7eda94a19893fc23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658923"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595553"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementare un'interfaccia in Visual Studio
 
@@ -20,7 +20,7 @@ Questa generazione di codice si applica a:
 
 - C#
 
-- Visual Basic
+- Visual Basic -
 
 **Cosa:** consente di generare immediatamente il codice necessario per implementare un'interfaccia.
 
@@ -47,7 +47,7 @@ Questa generazione di codice si applica a:
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
 3. Scegliere **Implementa interfaccia** dal menu a discesa.
 
@@ -75,4 +75,4 @@ Questa generazione di codice si applica a:
 ## <a name="see-also"></a>Vedere anche
 
 - [Generazione codice](../code-generation-in-visual-studio.md)
-- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
+- [Anteprima modifiche](../../ide/preview-changes.md)

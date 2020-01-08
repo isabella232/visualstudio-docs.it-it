@@ -4,19 +4,19 @@ ms.date: 11/15/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 554311f7b7af5c104b48f5a4901677595d60ab41
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647831"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596047"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Benvenuti all'IDE di Visual Studio | Visual Basic
 
@@ -221,13 +221,13 @@ Per modificare il tema **Scuro**:
 
 ::: moniker range="vs-2017"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio. Nella finestra iniziale scegliere **Continua senza codice**.
+1. Apri Visual Studio. Nella finestra iniziale scegliere **Continua senza codice**.
 
    ![Finestra iniziale in Visual Studio 2019](media/vs-2019/continue-without-code.png)
 
@@ -277,7 +277,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 ::: moniker range="vs-2017"
 
-1. Nella barra dei menu di Visual Studio scegliere **File** > **Nuovo progetto**.
+1. Sulla barra dei menu di Visual Studio scegliere **File** > **nuovo progetto**.
 
    ![File > Nuovo progetto sulla barra dei menu](media/file-new-project-menu.png)
 
@@ -341,7 +341,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 ::: moniker range=">=vs-2019"
 
-1. Nella barra dei menu di Visual Studio scegliere **File** > **Nuovo progetto**.
+1. Sulla barra dei menu di Visual Studio scegliere **File** > **nuovo progetto**.
 
    ![File > Nuovo progetto sulla barra dei menu](media/vs-2019/file-new-project.png)
 
@@ -507,7 +507,7 @@ Esplorare più approfonditamente Visual Studio seguendo uno di questi articoli i
 > [Informazioni su come usare l'editor del codice](tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Introduzione a progetti e soluzioni](tutorial-projects-solutions.md)
+> [Guida introduttiva: progetti e soluzioni](tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

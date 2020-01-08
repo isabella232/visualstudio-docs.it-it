@@ -5,17 +5,17 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c5d872462b4397078231eed2a9bec56131dec0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646638"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585444"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -23,12 +23,12 @@ Usare Esplora test per eseguire unit test da Visual Studio o da progetti di unit
 
 Visual Studio include i framework di unit test Microsoft sia per il codice gestito sia per quello nativo. Esplora test può tuttavia eseguire anche qualsiasi framework di unit test in cui sia implementato un adattatore di Esplora test. Per altre informazioni sull'installazione di framework di unit test di terze parti, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
-**Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++. Per altre informazioni, vedere [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md).
+**Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET, indipendentemente dal linguaggio del codice di destinazione. I progetti di codice C/C++ nativo devono essere testati tramite il framework di unit test C++. Per altre informazioni, vedere [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
 
-Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.
+Quando compili il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.
 
 
 ::: moniker range="vs-2017"
@@ -57,7 +57,7 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 ### <a name="run-tests"></a>Esegui test
 
 ::: moniker range="vs-2017"
-È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Effettuare una delle operazioni riportate di seguito:
+Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionato. Effettuare una delle seguenti operazioni:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
 
@@ -70,7 +70,7 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte superiore della finestra **Esplora test** visualizza un'animazione. Al termine dell'esecuzione del test, la barra **Superato/Non superato** diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Effettuare una delle operazioni riportate di seguito:
+Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionato. Effettuare una delle seguenti operazioni:
 
 - Per eseguire tutti i test in una soluzione, scegliere l'icona **Esegui tutto**.
 
@@ -121,7 +121,7 @@ Se il test non viene superato, il riquadro dei dettagli mostra anche le informaz
 
 - Messaggio restituito dal framework di unit test per il test.
 
-- Analisi dello stack al momento del mancato superamento del test.
+- Analisi dello stack nel momento in cui il test non è riuscito.
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Visualizzare il codice sorgente di un metodo di test
 
@@ -134,12 +134,12 @@ Esplora test consente di raggruppare i test in categorie predefinite. La maggior
 ### <a name="group-tests-in-the-test-list"></a>Raggruppare i test nell'elenco di test
 
 ::: moniker range="vs-2017"
-Per modificare la modalità di organizzazione dei test, scegliere la freccia rivolta verso il basso accanto al pulsante **Raggruppamento** ![Pulsante Raggruppamento di Esplora test](../test/media/ute_groupby_btn.png) e selezionare un nuovo criterio di raggruppamento.
+Per modificare la modalità di organizzazione dei test, scegliere la freccia rivolta verso il basso accanto al pulsante **Raggruppamento**![Pulsante Raggruppamento di Esplora test](../test/media/ute_groupby_btn.png) e selezionare un nuovo criterio di raggruppamento.
 
 ![Raggruppare i test per categoria in Esplora test](../test/media/ute_groupbycategory.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento predefinito della gerarchia è **Progetto**, **Spazio dei nomi** e quindi **Classe**. Per cambiare il modo in cui sono organizzati i test, scegliere il pulsante **Raggruppa per** ![Pulsante Raggruppa per di Esplora test](../test/media/ute_groupby_btn.png) e selezionare un nuovo criterio di raggruppamento.
+Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento predefinito della gerarchia è **Progetto**, **Spazio dei nomi** e quindi **Classe**. Per cambiare il modo in cui sono organizzati i test, scegliere il pulsante **Raggruppa per**![Pulsante Raggruppa per di Esplora test](../test/media/ute_groupby_btn.png) e selezionare un nuovo criterio di raggruppamento.
 
 ![Raggruppare i test per categoria in Esplora test](../test/media/vs-2019/test-explorer-groupby-162.png)
 
@@ -151,7 +151,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
 
 ::: moniker range="vs-2017"
-|Raggruppa|Descrizione|
+|Gruppo|Descrizione|
 |-|-----------------|
 |**Durata**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio**e **Lento**.|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
@@ -159,7 +159,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 |**Progetto**|Raggruppa i test in base al nome dei progetti.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Raggruppa|Descrizione|
+|Gruppo|Descrizione|
 |-|-----------------|
 |**Durata**|Raggruppa i test in base al tempo di esecuzione: **veloce**, **medio**e **lento**.|
 |**Stato**|Raggruppa i test per risultati di esecuzione: **test non**superati, **test ignorati**, **test superati**, **non eseguiti**|
@@ -169,7 +169,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 |**Classe**|Raggruppa i test in base alla classe contenitore.|
 ::: moniker-end
 
-### <a name="traits"></a>Tratti
+### <a name="traits"></a>Caratteristiche
 
 Una tratto è in genere una coppia nome/valore di una categoria, ma può anche essere una singola categoria. I tratti possono essere assegnati ai metodi identificati come metodi di test dal framework di unit test. Un framework di unit test può definire le categorie dei tratti. È possibile aggiungere valori alle categorie dei tratti per definire coppie nome/valore personalizzate per le categorie. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.
 
@@ -192,7 +192,7 @@ Vedere [Come usare il framework di testing unità Microsoft per C++](how-to-use-
 ## <a name="create-custom-playlists"></a>Creare playlist personalizzate
 
 ::: moniker range="vs-2017"
-È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco vengono visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test** .
+È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco vengono visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test**.
 
 ![Scegliere una playlist](../test/media/ute_playlist.png)
 
@@ -200,7 +200,7 @@ Vedere [Come usare il framework di testing unità Microsoft per C++](how-to-use-
 
 **Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** dal menu di scelta rapida e quindi scegliere la playlist a cui aggiungere i test.
 
-**Per aprire una playlist**, scegliere **Test** > **Playlist** dal menu di Visual Studio e quindi scegliere una voce dell'elenco di playlist usate di recente oppure scegliere **Apri playlist** per specificare il nome e il percorso della playlist.
+**Per aprire una playlist**, scegliere **test** > **playlist** dal menu di Visual Studio e scegliere nell'elenco delle playlist usate di recente oppure scegliere **Apri playlist** per specificare il nome e il percorso della playlist.
 
 Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 ::: moniker-end
@@ -298,12 +298,12 @@ Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test 
 
 ## <a name="debug-and-analyze-unit-tests"></a>Eseguire il debug e l'analisi di unit test
 
-È possibile usare Esplora test per avviare una sessione di debug per i test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:
+Puoi usare Espora test per avviare una sessione di debug dei test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:
 
-1. Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.
+1. Nell'editor di Visual Studio imposta un punto di interruzione in uno o più metodi di test di cui vuoi eseguire il debug.
 
     > [!NOTE]
-    > Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.
+    > Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, imposta i punti di interruzione in tutti i metodi di test di cui vuoi eseguire il debug.
 
 2. In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
 

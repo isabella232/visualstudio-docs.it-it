@@ -1,20 +1,20 @@
 ---
-title: Creare un progetto di unit test
+title: Crea progetto unit test
 ms.date: 01/29/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 30edc1a894a64fb7b9d8b988cafaed14aeaebfdd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 313083090c94c94f4e196e87f3bf6cf6df36e118
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665114"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565253"
 ---
-# <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
+# <a name="create-a-unit-test-project"></a>Crea progetto unit test
 
 Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esempio, si crea un progetto unit test per ogni progetto di codice del prodotto. Il progetto test può essere nella stessa soluzione del codice di produzione o in una soluzione separata. È possibile avere più progetti unit test in una soluzione.
 

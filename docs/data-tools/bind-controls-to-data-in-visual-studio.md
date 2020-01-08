@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Data Sources window
 - displaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7257bd25adf32b7529d2c5e1dc6d2a753d9b2458
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e0746de34a16dc181baff3c8b843b123c2ae434
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648850"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587030"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare controlli ai dati in Visual Studio
 
@@ -32,12 +32,12 @@ Nel contesto di data binding, un'origine dati rappresenta i dati in memoria che 
 
 | Origine dati | Supporto del trascinamento della selezione in **Progettazione Windows Form** | Supporto del trascinamento della selezione in **WPF Designer** | Supporto del trascinamento della selezione in **Silverlight Designer** |
 | - | - | - | - |
-| Set di dati | Yes | Yes | No |
-| Entity Data Model | Sì<sup>1</sup> | Yes | Yes |
+| Set di dati | Sì | Sì | No |
+| Entity Data Model | Sì<sup>1</sup> | Sì | Sì |
 | Classi LINQ to SQL | Non<sup>2</sup> | Non<sup>2</sup> | Non<sup>2</sup> |
-| Servizi (inclusi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], servizi WCF e servizi Web) | Yes | Yes | Yes |
-| Oggetto | Yes | Yes | Yes |
-| SharePoint | Yes | Yes | Yes |
+| Servizi (inclusi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], servizi WCF e servizi Web) | Sì | Sì | Sì |
+| Oggetto di | Sì | Sì | Sì |
+| SharePoint | Sì | Sì | Sì |
 
 1. Generare il modello utilizzando la procedura guidata **Entity Data Model** , quindi trascinare tali oggetti nella finestra di progettazione.
 
@@ -45,7 +45,7 @@ Nel contesto di data binding, un'origine dati rappresenta i dati in memoria che 
 
 ## <a name="data-sources-window"></a>Finestra Origini dati
 
-Nella finestra **Origini dati** sono visualizzate le voci relative alle origini dati disponibili per il progetto. Questa finestra è visibile quando un'area di progettazione del modulo è la finestra attiva nel progetto oppure è possibile aprirla (quando un progetto è aperto) scegliendo **visualizza**  >  altre**origini dati**di**Windows**  > . È possibile trascinare elementi da questa finestra per creare controlli associati ai dati sottostanti ed è inoltre possibile configurare le origini dati facendo clic con il pulsante destro del mouse.
+Nella finestra **Origini dati** sono visualizzate le voci relative alle origini dati disponibili per il progetto. Questa finestra è visibile quando un'area di progettazione del modulo è la finestra attiva nel progetto oppure è possibile aprirla (quando un progetto è aperto) scegliendo **visualizza** > altre **origini dati**di **Windows** > . È possibile trascinare elementi da questa finestra per creare controlli associati ai dati sottostanti ed è inoltre possibile configurare le origini dati facendo clic con il pulsante destro del mouse.
 
 ![Finestra Origini dati](../data-tools/media/raddata-data-sources-window.png)
 
@@ -57,7 +57,7 @@ Nella tabella seguente sono elencate alcune delle attività più comuni eseguite
 
 |Attività|Altre informazioni|
 |----------| - |
-|Aprire la finestra **Origini dati**.|Aprire un'area di progettazione nell'editor e scegliere **visualizza**  > **origini dati**.|
+|Aprire la finestra **Origini dati**.|Aprire un'area di progettazione nell'editor e scegliere **visualizza** > **origini dati**.|
 |Aggiungere un'origine dati al progetto.|[Aggiungi nuova origine dati](../data-tools/add-new-data-sources.md)|
 |Impostare il controllo che viene creato quando si trascina un elemento dalla finestra **Origini dati** alla finestra di progettazione.|[Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Modificare l'elenco dei controlli associati agli elementi nella finestra **Origini dati**.|[Aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

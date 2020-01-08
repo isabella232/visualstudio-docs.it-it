@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text searches, replacing text
 - find and replace
 - replace in files
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a30fdbc13222ac23146595af1984b27aeed0f758
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621843"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585626"
 ---
 # <a name="replace-in-files"></a>Sostituisci nei file
 
@@ -90,7 +90,7 @@ Finestra **Risultati ricerca 2**
 
 Quando questa opzione è selezionata, i risultati della ricerca corrente sostituiranno il contenuto della finestra **Risultati ricerca 2**. Questa finestra viene visualizzata automaticamente per mostrare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Altre finestre** dal menu **Visualizza** e quindi **Risultati ricerca 2**.
 
-**Mostra solo nomi file**
+**Visualizza solo nomi file**
 
 Quando questa casella di controllo è selezionata, le finestre **Risultati ricerca** elencano i nomi completi e i percorsi di tutti i file che contengono la stringa di ricerca. Tuttavia, i risultati non includono la riga di codice in cui viene visualizzata la stringa. Questa casella di controllo è disponibile solo per **Cerca nei file**.
 

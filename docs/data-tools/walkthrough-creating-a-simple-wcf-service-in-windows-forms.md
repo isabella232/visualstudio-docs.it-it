@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e2954d333ae3fe0dc6ff1c221d1e450eb9bf51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639464"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586016"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Procedura dettagliata: creare un servizio WCF semplice in Windows Forms
 
@@ -31,11 +31,11 @@ In questa procedura dettagliata viene illustrato come creare un semplice servizi
 
 ## <a name="create-a-service"></a>Creare un servizio
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 ::: moniker range="vs-2017"
 
-2. Nel menu **File**, scegliere **Nuovo** > **Progetto**.
+2. Scegliere **nuovo** > **progetto**dal menu **file** .
 
 3. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **oggetto C# visivo** e scegliere **WCF**, quindi **libreria del servizio WCF**.
 

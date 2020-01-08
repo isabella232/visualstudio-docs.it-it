@@ -6,17 +6,17 @@ f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3f8216bb0dfe3813e4852151c351b865128d0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2903c69e3cf50f3ed0392239ee8848a79eb50e20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650283"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584556"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Procedura: utilizzare la finestra di progettazione argomenti
 
@@ -28,7 +28,7 @@ La finestra di progettazione degli argomenti semplifica l'accesso ai dati in ent
 
 2. Aprire la finestra di progettazione degli argomenti facendo clic sul pulsante **argomenti** nell'angolo inferiore sinistro dell'area di progettazione. Verrà visualizzata la finestra di progettazione argomenti.
 
-3. Fare clic sulla riga vuota con etichetta **Crea argomento**. Verrà aggiunta una nuova riga con un nuovo argomento usando i valori predefiniti seguenti: argomentox per il **nome** dove x è un numero intero con un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di argomento univoci, **in** per la **direzione**, e **stringa** per il **tipo di argomento**. Per il **valore predefinito**non viene aggiunto alcun valore. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
+3. Fare clic sulla riga vuota con etichetta **Crea argomento**. Verrà aggiunta una nuova riga con un nuovo argomento usando i valori predefiniti seguenti: argomentox per il **nome** dove x è un numero intero con un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di argomento univoci, **in** per la **direzione**e **stringa** per il **tipo di argomento**. Per il **valore predefinito**non viene aggiunto alcun valore. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
 
     > [!NOTE]
     > Per eliminare un argomento, selezionarlo facendo clic su di esso e quindi premere il tasto **Canc** .

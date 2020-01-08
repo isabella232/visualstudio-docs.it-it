@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Find command
 - Edit.Find command
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab914d62053b5cbefe92ee0ce8356c10dad82e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 288fb294ab712713d6be116f46ca159ea40a6e67
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748752"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595644"
 ---
 # <a name="find-command"></a>Comando Trova
 Esegue la ricerca di testo nei file usando un subset delle opzioni disponibili nella scheda **Cerca nei file** della finestra **Trova e sostituisci**.
@@ -30,7 +30,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `findwhat` Obbligatorio. Testo da cercare.
 
 ## <a name="switches"></a>Opzioni
@@ -79,7 +79,7 @@ In questo esempio viene eseguita una ricerca con distinzione tra maiuscole e min
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Finestra di comando](../../ide/reference/command-window.md)
+- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

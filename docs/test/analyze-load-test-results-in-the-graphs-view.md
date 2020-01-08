@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load tests, using graphs
 - load test results, graphs
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4efedd7fc7672331f04440f09d49b9339d90bdb2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665383"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591268"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
 
@@ -45,7 +45,7 @@ Nella tabella seguente sono riportati i grafici incorporati disponibili per l'an
 |Tempo di risposta per pagina|Tempo di risposta medio per le pagine Web a cui si accede durante il test di carico.|
 |Sistema sotto test|Informazioni sui computer in cui viene eseguita l'applicazione da sottoporre a test, ovvero i dati relativi a utilizzo della memoria, processore, disco fisico e processi.<br /><br /> Per impostazione predefinita, vengono raccolti solo i contatori per i MB disponibili e il tempo processore.|
 |Controller e agente|Informazioni sui computer in cui vengono eseguiti i test di carico, ovvero i dati relativi a utilizzo della memoria, processore, disco fisico e processi.<br /><br /> Per impostazione predefinita, vengono raccolti solo i contatori per i MB disponibili e il tempo processore.|
-|Tempo di risposta per transazione|Tempo di risposta medio per le transazioni che si verificano durante il test di carico.|
+|Tempi di risposta transazione|Tempo di risposta medio per le transazioni che si verificano durante il test di carico.|
 
 Sul grafico è possibile visualizzare diversi contatori sia durante il runtime che dopo l'esecuzione di un test.
 
@@ -65,13 +65,13 @@ Nella legenda sono presenti le seguenti colonne:
 |Counter|Nome del contatore|
 |-|-|
 |Istanza|Il nome dell'istanza del contatore.|
-|Category|Il nome della categoria del contatore.|
+|Categoria|Il nome della categoria del contatore.|
 |Computer|Il nome del computer in cui viene raccolto il contatore.|
 |Colore|Il colore della riga nel grafico.|
 |Intervallo|Indica il numero rappresentato da 100 nel grafico per quel contatore. Ad esempio, per un intervallo il cui valore superiore è 10.000, l'etichetta 100 all'inizio del grafico rappresenta 10.000.|
 |Min|Indica il valore minimo in millisecondi per il contatore.|
 |Max|Indica il valore massimo in millisecondi per il contatore.|
-|Avg|Indica il valore medio in millisecondi per il contatore.|
+|Medio|Indica il valore medio in millisecondi per il contatore.|
 |Ultimo|Mostra il valore in millisecondi del contatore durante l'intervallo di campionamento più recente.|
 
 ## <a name="tasks"></a>Attività

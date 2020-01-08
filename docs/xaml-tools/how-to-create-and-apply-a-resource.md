@@ -6,17 +6,17 @@ f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7648772c8ac1657f4c650b38d9f0fc22e8653022
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ac633f94c237bdff418375903e99f6f2da9e776
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650923"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592966"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
 
@@ -52,7 +52,7 @@ Quando si crea una nuova risorsa da una proprietà, una classe [Style](xref:Wind
 
 1. Nella finestra Struttura documento scegliere l'elemento a cui si vuole applicare una risorsa.
 
-2. Effettuare una delle operazioni riportate di seguito:
+2. Effettuare una delle seguenti operazioni:
 
    - Applicare una risorsa a una proprietà. Nella finestra **Proprietà** scegliere il marcatore della proprietà accanto al valore della proprietà, quindi scegliere **Risorsa locale** o **Risorsa di sistema** e infine selezionare una risorsa disponibile nell'elenco visualizzato.
 

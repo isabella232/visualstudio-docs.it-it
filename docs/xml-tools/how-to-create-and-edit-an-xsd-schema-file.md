@@ -3,17 +3,17 @@ title: Creare e modificare un file di schema XSD
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2df904b4f5351611e4d15775f68d94db4cc876e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 976448709f7ecf9eaff0a563b867f12b3d9fa770
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645955"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592763"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Procedura: creare e modificare un file di schema XSD
 
@@ -21,7 +21,7 @@ In questo argomento viene descritto come creare un nuovo file XML Schema (XSD) e
 
 ## <a name="to-create-a-new-xml-schema-file"></a>Per creare un nuovo file XML Schema
 
-1. In Visual Studio aprire il menu **file** e selezionare **nuovo**  > **file**. In alternativa, usare il tasto di scelta rapida **Ctrl** +**N** .
+1. In Visual Studio aprire il menu **file** e selezionare **nuovo** > **file**. In alternativa, usare il tasto di scelta rapida **Ctrl**+**N** .
 
 2. Nella finestra di dialogo **nuovo file** selezionare **XML Schema** , quindi selezionare **Apri**.
 

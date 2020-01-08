@@ -2,17 +2,17 @@
 title: Personalizzazione dell'analisi code coverage
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: d90292d339c87c74892d715f2a376b5159226dd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665069"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590332"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizzare l'analisi code coverage
 
@@ -51,7 +51,7 @@ Per personalizzare il code coverage, seguire questa procedura:
 
 ::: moniker range="vs-2017"
 
-Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test** > **Impostazioni test**.
+Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **test** > **impostazioni test** .
 
 ![Menu Impostazioni test con file di impostazioni personalizzato in Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -110,7 +110,7 @@ La tabella seguente illustra i diversi modi in cui è possibile trovare una corr
 | ModulePath | Corrisponde agli assembly specificati in base al nome dell'assembly o al percorso del file. |
 | CompanyName | Corrisponde agli assembly in base all'attributo **Company** . |
 | PublicKeyToken | Corrisponde agli assembly firmati dal token di chiave pubblica. |
-| Origine | Corrisponde agli elementi in base al nome del percorso del file di origine in cui sono definiti. |
+| Source | Corrisponde agli elementi in base al nome del percorso del file di origine in cui sono definiti. |
 | Attributo | Corrisponde a elementi con l'attributo specificato. Specificare il nome completo dell'attributo, ad esempio `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Se si esclude l'attributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, il codice che usa funzionalità del linguaggio come `async`, `await`, `yield return` e le proprietà implementate automaticamente viene escluso dall'analisi code coverage. Per escludere il codice effettivamente generato, escludere solo l'attributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
 | Funzione | Corrisponde a procedure, funzioni o metodi in base al nome completo, incluso l'elenco di parametri. È inoltre possibile far corrispondere parte del nome utilizzando un' [espressione regolare](#regular-expressions).<br/><br/>Esempi:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 

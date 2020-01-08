@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, AspNetCompiler task
 - AspNetCompiler task [MSBuild]
 ms.assetid: f811c019-a67b-4d54-82e6-e29549496f6e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 90b9111d8d8ae78e5b937942df32fb84c97355fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a6535dbec7c09f0888d0fb29a2e6b801632da22f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945427"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593460"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler (attività)
 L'attività `AspNetCompiler` esegue il wrapping di *aspnet_compiler.exe*, un'utilità per la precompilazione di applicazioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
@@ -31,14 +31,14 @@ L'attività `AspNetCompiler` esegue il wrapping di *aspnet_compiler.exe*, un'uti
 ## <a name="task-parameters"></a>Parametri dell'attività
 Nella tabella che segue vengono descritti i parametri dell'attività `AspNetCompiler` .
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`AllowPartiallyTrustedCallers`|Parametro `Boolean` facoltativo.<br /><br /> Se questo parametro è `true`, l'assembly con nome sicuro consentirà chiamanti parzialmente attendibili.|
 |`Clean`|Parametro `Boolean` facoltativo<br /><br /> Se questo parametro è `true`, verrà eseguita una precompilazione pulita dell'applicazione. I componenti compilati in precedenza verranno ricompilati. Il valore predefinito è `false`. Questo campo corrisponde all'opzione **-c** in *aspnet_compiler.exe*.|
 |`Debug`|Parametro `Boolean` facoltativo.<br /><br /> Se questo parametro è `true`, durante la compilazione verranno restituite informazioni di debug (file con estensione pdb). Il valore predefinito è `false`. Questo campo corrisponde all'opzione **-d** in *aspnet_compiler.exe*.|
 |`DelaySign`|Parametro `Boolean` facoltativo.<br /><br /> Se questo parametro è `true`, al momento della creazione l'assembly verrà firmato solo parzialmente.|
 |`FixedNames`|Parametro `Boolean` facoltativo.<br /><br /> Se questo parametro è `true`, agli assembly compilati verranno assegnati nomi fissi.|
-|`Force`|Parametro `Boolean` facoltativo.<br /><br /> Se questo parametro è `true`, l'attività sovrascriverà la directory di destinazione, se già esistente. Il contenuto esistente andrà perso. Il valore predefinito è `false`. Questo campo corrisponde all'opzione **-f** in *aspnet_compiler.exe*.|
+|`Force`|Parametro `Boolean` facoltativo<br /><br /> Se questo parametro è `true`, l'attività sovrascriverà la directory di destinazione, se già esistente. Il contenuto esistente andrà perso. Il valore predefinito è `false`. Questo campo corrisponde all'opzione **-f** in *aspnet_compiler.exe*.|
 |`KeyContainer`|Parametro `String` facoltativo.<br /><br /> Specifica un contenitore di chiavi con nome sicuro.|
 |`KeyFile`|Parametro `String` facoltativo.<br /><br /> Specifica il percorso fisico del file di chiave con nome sicuro.|
 |`MetabasePath`|Parametro `String` facoltativo.<br /><br /> Specifica il percorso completo della metabase IIS dell'applicazione. Questo parametro non può essere combinato con il parametro `VirtualPath` o `PhysicalPath`. Questo campo corrisponde all'opzione **-m** in *aspnet_compiler.exe*.|
@@ -48,8 +48,8 @@ Nella tabella che segue vengono descritti i parametri dell'attività `AspNetComp
 |`Updateable`|Parametro `Boolean` facoltativo.<br /><br /> Se questo parametro è `true`, l'applicazione precompilata sarà aggiornabile.  Il valore predefinito è `false`. Questo campo corrisponde all'opzione **-u** in *aspnet_compiler.exe*.|
 |`VirtualPath`|Parametro `String` facoltativo.<br /><br /> Percorso virtuale dell'applicazione da compilare. Se `PhysicalPath` è specificato, per individuare l'applicazione verrà usato il percorso fisico. In caso contrario verrà usata la metabase IIS, presupponendo che l'applicazione si trovi nel sito predefinito. Questo campo corrisponde all'opzione **-v** in *aspnet_compiler.exe*.|
 
-## <a name="remarks"></a>Osservazioni
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+## <a name="remarks"></a>Note
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 Nell'esempio di codice seguente l'attività `AspNetCompiler` viene usata per precompilare un'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
@@ -70,4 +70,4 @@ Nell'esempio di codice seguente l'attività `AspNetCompiler` viene usata per pre
 
 ## <a name="see-also"></a>Vedere anche
 * [Attività](../msbuild/msbuild-tasks.md)
-* [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+* [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

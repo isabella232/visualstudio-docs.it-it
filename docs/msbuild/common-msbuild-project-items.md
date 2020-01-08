@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
-ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
+ms.openlocfilehash: b10768d5ab291981dc77af650de61eb9496dfda5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73956141"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596151"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hanno molti elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd*.
@@ -28,7 +28,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ## <a name="common-items"></a>Elementi comuni
  Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 
-### <a name="reference"></a>Reference
+### <a name="reference"></a>Riferimenti
  Rappresenta un riferimento all'assembly (gestito) nel progetto.
 
 |Nome metadati degli elementi|Descrizione|
@@ -74,7 +74,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Nome metadati degli elementi|Descrizione|
 |---------------|-----------------|
 |Name|Stringa facoltativa. Nome visualizzato del riferimento.|
-|Progetto|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|
+|Progetto di|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|
 |Pacchetto|Stringa facoltativa. Il percorso del file di progetto a cui viene fatto riferimento.|
 |ReferenceOutputAssembly|Valore booleano facoltativo. Se impostato su `false`, non include l'output del progetto a cui si fa riferimento come [riferimento](#reference) del progetto, ma assicura che l'altro progetto venga compilato prima di questo. Il valore predefinito è `true`.|
 
@@ -118,7 +118,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | Visibile | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
 
-### <a name="none"></a>Nessuno
+### <a name="none"></a>nessuna
  Rappresenta i file che non hanno un ruolo nel processo di compilazione.
 
 | Nome metadati degli elementi | Descrizione |
@@ -137,7 +137,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | Includi | Diventa il primo parametro (chiave) nel costruttore dell'attributo `AssemblyMetadataAttribute`. |
-| Value | Stringa obbligatoria. Diventa il secondo parametro (valore) nel costruttore dell'attributo `AssemblyMetadataAttribute`. |
+| Valore | Stringa obbligatoria. Diventa il secondo parametro (valore) nel costruttore dell'attributo `AssemblyMetadataAttribute`. |
 
 > [!NOTE]
 > Questo vale per i progetti che usano solo la .NET Core SDK.
@@ -148,7 +148,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport
  Rappresenta il progetto FxCop da importare.
 
-### <a name="import"></a>Import
+### <a name="import"></a>Importa
  Rappresenta gli assembly i cui spazi dei nomi devono essere importati dal compilatore [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
 
 ## <a name="see-also"></a>Vedere anche

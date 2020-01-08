@@ -1,5 +1,5 @@
 ---
-title: Finestra Elenco errori
+title: finestra Elenco errori
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654450"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569663"
 ---
-# <a name="error-list-window"></a>Finestra Elenco errori
+# <a name="error-list-window"></a>finestra Elenco errori
 
 > [!NOTE]
 > L'**elenco errori** consente di visualizzare informazioni su un messaggio di errore specifico. È possibile copiare il testo della stringa di errore o il numero di errore nella finestra **Output**. Per visualizzare la finestra **Output**, premere **Ctrl**+**Alt**+**O**. Vedere [Finestra di output](../../ide/reference/output-window.md).
@@ -74,9 +74,9 @@ Usare la casella di testo **Elenco errori di ricerca** sul lato destro della bar
 
 È possibile copiare l'elenco errori e salvarlo in un file. Selezionare gli errori da copiare e fare clic con il pulsante destro del mouse sulla selezione, quindi nel menu di scelta rapida selezionare **Copia**. È quindi possibile incollare gli errori in un file. Se si incollano gli errori in un foglio di calcolo di Excel, i campi vengono visualizzati come diverse colonne.
 
-## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente
+## <a name="ui-element-list"></a>Elenco di elementi dell'interfaccia utente
 
-Gravità
+Severity
 
 Consente di visualizzare i diversi tipi di voci dell'**Elenco errori** (**Errore**, **Messaggio**, **Avviso**, **Avviso (attivo)** , **Avviso (inattivo)** .
 
@@ -88,7 +88,7 @@ Descrizione
 
 Visualizza il testo della voce.
 
-Progetto
+Progetto di
 
 Visualizza il nome del progetto corrente.
 
@@ -96,6 +96,6 @@ File
 
 Visualizza il nome del file.
 
-Linea
+Riga
 
 Visualizza la riga in cui si è verificato l'errore.

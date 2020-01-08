@@ -12,17 +12,17 @@ helpviewer_keywords:
 - application architecture
 - architecture [Visual Studio ALM], modeling
 - application modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f669b8e0b737aa945641d1e7a32c7c05bee3c711
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0c9bbb0e98fe717e696aa974f4af5ba29de498e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654335"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590579"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizzare e modellare l'architettura
 
@@ -51,7 +51,7 @@ Per informazioni sulle edizioni di Visual Studio che supportano ogni funzionalit
 
 ## <a name="types-of-models-and-typical-uses"></a>Tipi di modelli e usi tipici
 
-### <a name="code-maps"></a>Mappe codice
+### <a name="code-maps"></a>Mappe codici
 
 Le mappe codice consentono di visualizzare l'organizzazione e le relazioni nel codice.
 
@@ -59,7 +59,7 @@ Le mappe codice consentono di visualizzare l'organizzazione e le relazioni nel c
 
 - Esaminare il codice programma in modo da poterne comprendere meglio la struttura e le relative dipendenze, come aggiornarlo e come stimare il costo delle modifiche proposte.
 
-**Vedere**
+**Vedere:**
 
 - [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)
 - [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)
@@ -74,7 +74,7 @@ I diagrammi di dipendenza consentono di definire la struttura di un'applicazione
 - Stabilizzare la struttura dell'applicazione apportando diverse modifiche durante il relativo ciclo di vita.
 - Prima di archiviare le modifiche apportate al codice, individuare i conflitti di dipendenza non intenzionali.
 
-**Vedere**
+**Vedere:**
 
 - [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
 - [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
@@ -89,7 +89,7 @@ Un linguaggio DSL è una notazione progettata per uno scopo specifico. In Visual
 - Generare o configurare parti dell'applicazione. Per sviluppare la notazione e gli strumenti sono necessarie alcune operazioni. Il risultato può essere più adatto al dominio rispetto alla personalizzazione di un modello UML.
 - Per progetti di grandi dimensioni o nelle linee di prodotto in cui il ritorno sull'investimento associato allo sviluppo del linguaggio DSL e dei relativi strumenti è dato dall'uso in più progetti.
 
-**Vedere**
+**Vedere:**
 
 - [SDK di modellazione per Visual Studio (linguaggi specifici di dominio)](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 

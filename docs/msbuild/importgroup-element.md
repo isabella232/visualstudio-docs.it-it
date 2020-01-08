@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <ImportGroup> element [MSBuild]
 - ImportGroup element [MSBuild]
 ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd0b9fc5ef9441e867d5103bbb722a3628ffc78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a4480442577ccb321d66ad65f94a7c86cdae62ae
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997526"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574006"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
 Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa. Per altre informazioni, vedere [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
@@ -38,23 +38,23 @@ Contiene una raccolta di elementi `Import` raggruppati in una condizione facolta
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+ Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Elemento|Description|
+|Elemento|Descrizione|
 |-------------|-----------------|
 |[Import](../msbuild/import-element-msbuild.md)|Importa il contenuto di un file di progetto in un altro file di progetto.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
-| Elemento | Description |
+| Elemento | Descrizione |
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 

@@ -3,17 +3,17 @@ title: "Procedura: spostarsi tra le visualizzazioni e l'editor XML"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8049806d14abc8e22154a763e982ce5c86304b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e43b00c877f5453d1dc28bbc9d5546fcef056f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601882"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592627"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procedura: spostarsi tra le visualizzazioni e l'editor XML
 
@@ -33,6 +33,6 @@ In questo argomento viene illustrato come passare tra le visualizzazioni di prog
 
 5. Per passare alla visualizzazione iniziale dalla visualizzazione modello di contenuto tramite la barra degli strumenti, fare clic sul pulsante **Avvia visualizzazione** sulla barra degli strumenti XSD.
 
-6. Per spostarsi tra le visualizzazioni utilizzando i tasti di scelta rapida, premere **ctrl** +**1** per la visualizzazione iniziale, **CTRL** +**2** per la visualizzazione grafico e **CTRL** +**3** per la visualizzazione modello di contenuto.
+6. Per spostarsi tra le visualizzazioni utilizzando i tasti di scelta rapida, premere **ctrl**+**1** per la visualizzazione iniziale, **CTRL**+**2** per la visualizzazione grafico e **CTRL**+**3** per la visualizzazione modello di contenuto.
 
 7. Per passare all'editor XML dalla visualizzazione modello di contenuto, fare clic con il pulsante destro del mouse sul nodo e scegliere **Visualizza codice** nel menu di scelta rapida.

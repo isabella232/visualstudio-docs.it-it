@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ToggleBreakPoint command
 - Toggle Breakpoint command
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8294c25bcf3b62f9d6480e170d4693a9be85079
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5d393890e6166b4a4ef53c9520a556e9a9edd64d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748570"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597321"
 ---
 # <a name="toggle-breakpoint-command"></a>Comando Imposta/Rimuovi punto di interruzione
 Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nella posizione corrente all'interno del file.
@@ -30,7 +30,7 @@ Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nell
 Debug.ToggleBreakpoint [text]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 
 `text`\
 Parametro facoltativo. Se il testo viene specificato, la riga viene contrassegnata come punto di interruzione con nome. In caso contrario, la riga viene contrassegnata come punto di interruzione senza nome, analogamente a quanto accade quando si preme F9.
@@ -45,6 +45,6 @@ Nell'esempio seguente il punto di interruzione corrente viene impostato/rimosso.
 ## <a name="see-also"></a>Vedere anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Finestra di comando](../../ide/reference/command-window.md)
+- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: c3c6eed20fc1f2b76c02865c2a5f6b21cde1ae51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562569"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589994"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Passaggio 6: Aggiungere un problema di sottrazione
 Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazione e si apprenderà come eseguire le attività seguenti:
@@ -61,7 +61,7 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 
      È possibile chiamare in più modi il metodo `Next()` della classe Random, a cui in precedenza in questa esercitazione è stato assegnato il nome "randomizer". I metodi che è possibile chiamare in più modi sono denominati metodi di overload ed è possibile utilizzare IntelliSense per esplorarli. Esaminare nuovamente la descrizione comando della finestra di IntelliSense per il metodo `Next()`.
 
-     Descrizione comando finestra ![IntelliSense ](../ide/media/express_overloads.png)<br/>
+     ![descrizione comando della finestra IntelliSense](../ide/media/express_overloads.png)<br/>
 *Descrizione comando della finestra* di IntelliSense
 
      La dicitura **(+ 2 overload(s))** della descrizione comando indica che è possibile chiamare il metodo `Next()` in altri due modi. Gli overload contengono numeri o tipi di argomenti diversi, pertanto funzionano in modo leggermente diverso l'uno dall'altro. Ad esempio, un metodo potrebbe accettare un singolo argomento Integer, mentre uno degli overload potrebbe accettare un Integer e una stringa. Scegliere l'overload corretto in base all'operazione da eseguire. Quando si aggiunge codice al metodo `StartTheQuiz()`, nella finestra di IntelliSense vengono visualizzate altre informazioni non appena si immette `randomizer.Next(`. Per scorrere gli overload, usare i tasti **freccia SU** e **freccia GIÙ**, come illustrato nella figura seguente:

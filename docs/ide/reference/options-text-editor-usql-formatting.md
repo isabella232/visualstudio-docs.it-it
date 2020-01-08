@@ -8,23 +8,23 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.Indentation
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.General
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e57470c1afa0fad97265bdcebff4fd9a2a0a43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666670"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568269"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>Opzioni, Editor di testo, U-SQL, Formattazione
 
 Usare la pagina di opzioni **Formattazione** per impostare le opzioni di formattazione del codice nell'editor del codice. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni**. Nella finestra di dialogo **Opzioni** scegliere **Editor di testo** > **U-SQL** > **Formattazione**.
 
-## <a name="general-page"></a>Pagina Generale
+## <a name="general-page"></a>Pagina generale
 
 ### <a name="general-settings"></a>Impostazioni generali
 

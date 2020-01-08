@@ -1,19 +1,19 @@
 ---
-title: Visualizzazione iniziale di Progettazione XML Schema
+title: Visualizzazione iniziale (Progettazione XML Schema)
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1978760aba90b884099085c995372f9612be3c8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608497"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592529"
 ---
 # <a name="start-view"></a>Visualizzazione iniziale
 
@@ -21,9 +21,9 @@ La visualizzazione iniziale è il punto di avvio per Progettazione XML Schema (X
 
 La visualizzazione iniziale contiene due sezioni principali, la *filigrana* e il riquadro dei **Dettagli del set di schemi** . Include anche la barra degli strumenti, disponibile in tutte le visualizzazioni di Progettazione XSD.
 
-![Visualizzazione iniziale di Progettazione XML Schema](../xml-tools/media/xsddesigner_startview.gif)
+![Visualizzazione iniziale (Progettazione XML Schema)](../xml-tools/media/xsddesigner_startview.gif)
 
-## <a name="watermark"></a>Filigrana
+## <a name="watermark"></a>Soglia
 
 Il riquadro filigrana contiene un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD, all'editor XML e a **XML Schema Explorer**. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".
 
@@ -35,15 +35,15 @@ Il riquadro **Dettagli set di schemi** elenca i tipi di nodo dello schema global
 
 È possibile spostarsi tra la visualizzazione iniziale, la [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) e la [visualizzazione grafico](../xml-tools/graph-view.md) dalla barra degli strumenti di progettazione XML Schema.
 
-![Barra degli strumenti di Progettazione XML Schema](../xml-tools/media/xsdstartviewtoolbar.gif)
+![Barra degli strumenti Progettazione XML Schema](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 I seguenti pulsanti sono abilitati nella barra degli strumenti di Progettazione XSD quando è attiva la visualizzazione iniziale:
 
 |Opzione|Descrizione|
 |-|-----------------|
-|**Mostra visualizzazione iniziale**|Passa alla visualizzazione iniziale. È possibile accedere a questa visualizzazione tramite i tasti di scelta rapida: **Ctrl** +**1**.|
-|**Mostra visualizzazione modello di contenuto**|Passa alla visualizzazione modello di contenuto. È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **Ctrl** +**2**.|
-|**Mostra visualizzazione grafico**|Passa alla visualizzazione grafico. È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **Ctrl** +**3**.|
+|**Mostra visualizzazione iniziale**|Passa alla visualizzazione iniziale. È possibile accedere a questa visualizzazione tramite i tasti di scelta rapida: **Ctrl**+**1**.|
+|**Mostra visualizzazione modello di contenuto**|Passa alla visualizzazione modello di contenuto. È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **Ctrl**+**2**.|
+|**Mostra visualizzazione grafico**|Passa alla visualizzazione grafico. È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Vedere anche
 

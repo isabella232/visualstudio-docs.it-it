@@ -4,21 +4,21 @@ ms.date: 10/05/2015
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: cd808e23fbb94259df0805125e7d6f3e27dbaeac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664891"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589591"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Procedura: generare unit test usando IntelliTest
 
-IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni branch condizionale nel codice. Vengono ad esempio analizzate le istruzioni `if`, le asserzioni e tutte le operazioni che possono generare eccezioni. Questa analisi viene usata per generare dati di test per uno unit test con parametri per ognuno dei metodi, creando unit test con un elevato code coverage.
+IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni ramo condizionale nel codice. Vengono ad esempio analizzate le istruzioni `if`, le asserzioni e tutte le operazioni che possono generare eccezioni. Questa analisi viene usata per generare dati di test per uno unit test con parametri per ognuno dei metodi, creando unit test con un elevato code coverage.
 
 Quando si esegue IntelliTest, è possibile visualizzare facilmente i test non superati e aggiungere l'eventuale codice necessario per correggerli. È possibile scegliere quali dei test generati salvare in un progetto di test per fornire un gruppo di regressione. Quando si modifica il codice, eseguire nuovamente IntelliTest per mantenere i test generati sincronizzati con le modifiche apportate al codice.
 
@@ -114,7 +114,7 @@ Se un test può essere considerato superato se vengono generate determinate ecce
 
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>D: È possibile aggiungere presupposti allo unit test con parametri?
 
-**R:** Sì, usare i presupposti per specificare quali dati di test non sono obbligatori per lo unit test relativo a un metodo specifico. Per aggiungere presupposti, usare la classe <xref:Microsoft.Pex.Framework.PexAssume>. Ad esempio, è possibile aggiungere un presupposto per indicare che la variabile `lengths` è non Null, come nell'esempio seguente:
+**R:** Sì, usare i presupposti per specificare quali dati di test non sono obbligatori per lo unit test relativo a un metodo specifico. Per aggiungere presupposti, usare la classe <xref:Microsoft.Pex.Framework.PexAssume> . Ad esempio, è possibile aggiungere un presupposto per indicare che la variabile `lengths` è non Null, come nell'esempio seguente:
 
 `PexAssume.IsNotNull(lengths);`
 

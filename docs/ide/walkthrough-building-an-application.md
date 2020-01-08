@@ -3,17 +3,17 @@ title: "Procedura dettagliata: Compilare un'applicazione"
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 570dd2044346ace8a51096a04842ea88de0a8803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647165"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594149"
 ---
 # <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Compilare un'applicazione
 
@@ -47,7 +47,7 @@ Quando si crea una soluzione, le configurazioni della build di versione e di deb
 
    ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk_newsolutionplatform.png)
 
-1. Fare clic sul pulsante **OK**.
+1. Fare clic sul pulsante **OK** .
 
    La configurazione della soluzione attiva è stata modificata in **Test** con la piattaforma della soluzione attiva impostata su x64.
 
@@ -65,7 +65,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
 ### <a name="build-the-solution"></a>Compilare la soluzione
 
-- Nella barra dei menu scegliere **compila**  > **Compila soluzione**oppure premere **CTRL** +**MAIUSC** +**B**.
+- Nella barra dei menu scegliere **compila** > **Compila soluzione**oppure premere **CTRL**+**MAIUSC**+**B**.
 
     Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione è stata completata.
 
@@ -75,11 +75,11 @@ A questo punto viene presentata la parte del codice che determina un avviso gene
 
 1. Nel progetto C# aprire il file *ExpenseReportPage.xaml.cs*. Nel metodo **ExpenseReportPage** aggiungere il codice seguente: `int i;`.
 
-    OR
+    OPPURE
 
     Nel progetto Visual Basic aprire il file *ExpenseReportPage.xaml.vb*. Nel costruttore personalizzato **Public Sub New...**  aggiungere il codice seguente: `Dim i`.
 
-1. Compilare la soluzione.
+1. Compila la soluzione.
 
 Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione è stata completata, ma sono stati generati avvisi:
 
@@ -103,7 +103,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
      Per altre informazioni, vedere [Pagina Compilazione, Creazione progetti (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
-1. Compilare la soluzione.
+1. Compila la soluzione.
 
      Nella finestra **Output** vengono visualizzate solo le informazioni di riepilogo per la compilazione.
 
@@ -123,7 +123,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
      Per altre informazioni, vedere [Configurare gli avvisi in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
-4. Compilare la soluzione.
+4. Compila la soluzione.
 
    Nella finestra **Output** vengono visualizzate solo le informazioni di riepilogo per la compilazione.
 
@@ -154,7 +154,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
      Le informazioni sulla compilazione includono l'ora di inizio della compilazione (indicata all'inizio) e l'ordine in cui i file sono stati elaborati. Queste informazioni includono anche la sintassi del compilatore effettiva che Visual Studio esegue durante la compilazione.
 
-     Nella compilazione di C#, ad esempio, l'opzione [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) elenca il codice di avviso **1762** specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
+     Ad esempio, nella C# compilazione, l'opzione [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) elenca il codice di avviso, **0168**, specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
 
      Nella compilazione di Visual Basic [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) non include avvisi specifici da escludere, pertanto non viene visualizzato alcun avviso.
 

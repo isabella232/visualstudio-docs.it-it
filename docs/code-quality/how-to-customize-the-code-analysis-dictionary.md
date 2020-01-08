@@ -7,17 +7,17 @@ helpviewer_keywords:
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26629ed099eea9a1d0c73a2eaa1105525d05dcf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649463"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587524"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procedura: Personalizzare il dizionario di analisi del codice
 
@@ -64,15 +64,15 @@ Definire le parole personalizzate utilizzando la struttura XML seguente:
 
 - [Dizionario/parole/riconosciute/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 
-- [Dizionario/parole/non riconosciuto/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
+- [Dictionary/Words/Unrecognized/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [Dizionario/parole/deprecato/termine [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
 - [Dictionary/Words/Compound/Term [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
-- [Dizionario/parole/DiscreteExceptions/termine](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
-- [Dizionario/acronimi/CasingExceptions/acronimo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ### <a name="BKMK_DictionaryWordsRecognizedWord"></a>Dizionario/parole/riconosciute/Word
 
@@ -109,7 +109,7 @@ I termini in dizionario/parole/nodi riconosciuti vengono applicati alle seguenti
 
 - [CA2204: I valori letterali devono essere digitati in modo corretto](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Dizionario/parole/non riconosciuto/Word
+### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Dictionary/Words/Unrecognized/Word
 
 Per escludere un termine dall'elenco dei termini identificati correttamente dall'analisi codice, aggiungere il termine da escludere come testo interno di un elemento Dictionary/Words/Unrecognized/Word. I termini negli elementi Dictionary/Words/Unrecognized/Word non fanno distinzione tra maiuscole e minuscole.
 
@@ -144,7 +144,7 @@ I termini del nodo dizionario/parole/non riconosciuto vengono applicati alle seg
 
 - [CA2204: I valori letterali devono essere digitati in modo corretto](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dizionario/parole/deprecato/termine [@PreferredAlternate]
+### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionary/Words/Deprecated/Term[@PreferredAlternate]
 
 Per includere un termine nell'elenco di termini che l'analisi del codice identifica come deprecata, aggiungere il termine come testo interno di un elemento Dictionary/Words/Deprecated/Term. Un termine deprecato è una parola che è stata digitata correttamente, ma non deve essere utilizzata.
 
@@ -214,7 +214,7 @@ I termini nel nodo Dictionary/Words/Compound vengono applicati alle seguenti reg
 
 - [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704.md)
 
-### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dizionario/parole/DiscreteExceptions/termine
+### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dictionary/Words/DiscreteExceptions/Term
 
 Per escludere un termine nell'elenco di termini che l'analisi del codice identifica come una singola parola discreta quando il termine viene controllato dalle regole di combinazione di maiuscole e minuscole per le parole composte, aggiungere il termine come testo interno di un elemento Dictionary/Words/DiscreteExceptions/Term. Il termine nell'elemento Dictionary/Words/DiscreteExceptions/Term non fa distinzione tra maiuscole e minuscole.
 
@@ -239,9 +239,9 @@ Le condizioni nel nodo Dictionary/Words/DiscreteExceptions vengono applicate all
 
 - [CA1702: Le parole composte devono essere digitate correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1702.md)
 
-### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dizionario/acronimi/CasingExceptions/acronimo
+### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dictionary/Acronyms/CasingExceptions/Acronym
 
-Per includere un acronimo nell'elenco di termini che l'analisi del codice identifica come digitato correttamente e per indicare in che modo l'acronimo viene controllato dalle regole di combinazione di maiuscole e minuscole per le parole composte, aggiungere il termine come testo interno di un dizionario/acronimi/CasingExceptions/ Elemento acronimo. Per l'acronimo nell'elemento Dictionary/Acronims/CasingExceptions/acronimo viene fatta distinzione tra maiuscole e minuscole.
+Per includere un acronimo nell'elenco di termini che l'analisi del codice identifica come digitato correttamente e per indicare in che modo l'acronimo viene controllato dalle regole per la combinazione di maiuscole e minuscole per le parole composte, aggiungere il termine come testo interno di un elemento Dictionary/Acronims/CasingExceptions/acronimo. Per l'acronimo nell'elemento Dictionary/Acronims/CasingExceptions/acronimo viene fatta distinzione tra maiuscole e minuscole.
 
 **Esempio**
 

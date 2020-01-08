@@ -3,17 +3,17 @@ title: 'File XSD di esempio: schema di ordine di acquisto'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a81cae6bc91e480fb619afd647e8285b6efc410
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d841b75b58dc977b5141dce0b8c7275e4a3ced8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601802"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592568"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>File XSD di esempio: Schema di ordine di acquisto
 
@@ -88,4 +88,4 @@ Il file XSD seguente viene usato in vari esempi nella documentazione relativa al
 ```
 
 > [!NOTE]
-> Le società, le organizzazioni, i prodotti, i nomi di dominio, gli indirizzi di posta elettronica, i loghi, le persone, i luoghi e gli eventi di esempio qui riportati sono fittizi. Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo di posta elettronica, logo, persona, luogo o evento è intenzionale o può essere presupposta.
+> Ogni riferimento a società, organizzazioni, prodotti, nomi di dominio, indirizzi di posta elettronica, logo, persone, luoghi ed eventi è puramente casuale. Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo e-mail, logo, persona, luogo o evento è intenzionale o può essere presupposta.

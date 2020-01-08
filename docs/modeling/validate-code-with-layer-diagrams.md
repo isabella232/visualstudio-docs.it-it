@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 36320daf91380d0b04333b228a1d4b9d58c6693c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981126"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594019"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -218,7 +218,7 @@ Nella sezione seguente viene descritta la sintassi usata negli errori, viene ill
 
 |**Sintassi**|**Descrizione**|
 |-|-|
-|*Artefatto*(*tipoelementon*)|*Artefatto* è un artefatto associato a un livello nel diagramma delle dipendenze.<br /><br /> *Tipoelementon* è il tipo di *artefatto*, ad esempio una **classe** o un **Metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|
+|*ArtifactN*(*ArtifactTypeN*)|*Artefatto* è un artefatto associato a un livello nel diagramma delle dipendenze.<br /><br /> *Tipoelementon* è il tipo di *artefatto*, ad esempio una **classe** o un **Metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|
 |*NamespaceNameN*|Nome di uno spazio dei nomi.|
 |*LayerNameN*|Nome di un livello nel diagramma delle dipendenze.|
 |*DependencyType*|Tipo di relazione di dipendenza tra *elemento1* e *Artifact2*. Ad esempio, *elemento1* ha una relazione **calls** con *Artifact2*.|
@@ -229,6 +229,8 @@ Nella sezione seguente viene descritta la sintassi usata negli errori, viene ill
 | DV1001: **nome dello spazio dei nomi non valido** | Questo problema viene segnalato su un elemento di codice associato a un livello che la proprietà "Allowed namespace names" non contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione di vincolo di denominazione. Si noti che la sintassi dei nomi degli spazi dei nomi consentiti è costituita da un elenco di spazi dei nomi con un punto e virgola in cui è consentito definire gli elementi di codice associati al livello. |
 | DV1002: **dipendenza dallo spazio dei nomi non referenziabile** | Questo problema viene segnalato su un elemento di codice associato a un livello e fa riferimento a un altro elemento di codice definito in uno spazio dei nomi definito nella proprietà "spazio dei nomi non referenziabile" del livello. Si tratta di una violazione di vincolo di denominazione. Si noti che la proprietà "spazi dei nomi non referenziabili" è definita come un elenco separato da punti e virgola di spazi dei nomi a cui non è necessario fare riferimento negli elementi di codice associati a questo livello. |
 | DV1003: **nome dello spazio dei nomi non consentito** | Questo problema viene segnalato su un elemento di codice associato a un livello che contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione di vincolo di denominazione. Si noti che la proprietà "nome spazio dei nomi non consentito" è definita come un elenco di spazi dei nomi separati da punto e virgola in cui gli elementi di codice associati a questo livello non devono essere definiti. |
+| DV2001: **presenza diagramma livello** | Questo problema viene segnalato in un progetto che non include un file di diagramma delle dipendenze, ma si riferisce agli analizzatori di convalida delle dipendenze. Se non è stata usata la convalida delle dipendenze, è possibile rimuovere "Microsoft. DependencyValidation. Analyzers" direttamente da Esplora soluzioni o eliminare questo avviso. Per aggiungere un diagramma delle dipendenze, vedere [creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md). |
+| DV2002: **base tipi non mappati** | Questo problema viene segnalato quando un elemento di codice non è mappato a un livello. |
 | DV3001: **collegamento mancante** | Il livello '*LayerName*' si collega a'*artefatto*' che non è stato trovato. Probabilmente manca un riferimento a un assembly. |
 | DV9001: l' **analisi dell'architettura ha rilevato errori interni** | I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output. |
 

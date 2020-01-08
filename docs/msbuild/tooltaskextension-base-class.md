@@ -8,17 +8,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7734f852da997836cf2f42fd3f6b96e9decdf8dd
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+ms.openlocfilehash: 947a1df101a169b7bdad4efda74cab1ae042964a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720563"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594968"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe di base ToolTaskExtension
 Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> che eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Questa catena di ereditarietà aggiunge diversi parametri alle attività che ne derivano. Questi parametri sono elencati in questo documento.
@@ -46,5 +46,5 @@ Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExten
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, questa attività restituisce il nodo quando l'attività è in esecuzione. |
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

@@ -7,12 +7,12 @@ ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: b25285ff3060734ee18085d7a9e89cd0d0c43439
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2ccef07a2889f66df3e7f217ea292b61ffc0008f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984413"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405470"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Risoluzione dei problemi: l'aggiornamento contiene errori durante il recupero delle informazioni
 
@@ -24,4 +24,5 @@ In rare occasioni può essere visualizzato il messaggio di errore "Si è verific
 - Se si continua a visualizzare questo messaggio di errore, è anche possibile provare a eseguire l'aggiornamento usando il programma di installazione, se il file con estensione **dmg** è ancora disponibile nel computer, oppure è possibile scaricarlo da [visualstudio.com](https://visualstudio.microsoft.com/vs/mac/)
   - Il programma di installazione aggiornerà i componenti installati nel computer.
   - Eseguendo di nuovo il programma di installazione sarà anche possibile installare eventuali componenti mancanti, non installati in precedenza.
-- È inoltre possibile provare a cancellare i download memorizzati nella cache eliminando il file che si trova in `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml`.
+- È inoltre possibile provare a cancellare i download memorizzati nella cache eliminando il file che si trova in `~/Library/Caches/VisualStudio/8.0/TempDownload/index.xml`.
+- Se si utilizza una versione precedente di Visual Studio per Mac, è possibile che nella directory `VisualStudio` siano presenti altri numeri di versione. Eliminare anche il file di `index.xml` in questi percorsi.

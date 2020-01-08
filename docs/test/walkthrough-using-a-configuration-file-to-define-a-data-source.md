@@ -6,17 +6,17 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba7ee908a96675a77997902fc96cea72309b747
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c76d71c106dbd2b5cbe63ab2f36defdfbd6cf127
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659589"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590722"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 
@@ -32,7 +32,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
 - Accesso alle origini dati tramite la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per completare questa procedura dettagliata, è necessario:
 

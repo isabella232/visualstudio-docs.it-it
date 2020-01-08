@@ -2,17 +2,17 @@
 title: Distribuzione MSI e VSIX di un linguaggio DSL
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 96922848adf053e3b728196a445407f3d5f86428
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984444"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590189"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Distribuzione MSI e VSIX di un linguaggio DSL
 È possibile installare un linguaggio specifico di dominio nel computer in uso o in altri computer. Visual Studio deve essere già installato nel computer di destinazione.
@@ -35,7 +35,7 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
    1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **DslPackage** , quindi scegliere **Apri cartella in Esplora file**.
 
-   2. Individuare il file **bin \\ \* \\** _progettoutente_ **. DslPackage. vsix**
+   2. Individuare il file **bin\\\*\\** _progettoutente_ **. DslPackage. vsix**
 
 2. Copiare il file **VSIX** nel computer di destinazione in cui si vuole installare il linguaggio DSL. Può trattarsi del computer in uso o di un altro computer.
 
@@ -74,7 +74,7 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
 1. Impostare `InstalledByMsi` nel manifesto dell'estensione. In questo modo si impedisce l'installazione e la disinstallazione di VSX, ad eccezione di MSI. Questo è importante se si includeranno altri componenti nell'identità del servizio gestito.
 
-   1. Apri DslPackage source.Extension.TT
+   1. Open DslPackage\source.extension.tt
 
    2. Inserire la riga seguente prima di `<SupportedProducts>`:
 
@@ -102,11 +102,11 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
     Visual Studio creerà un file denominato **CreateMsiSetupProject. vdproj**.
 
-6. In Esplora risorse copiare DSL \\ *. vdproj in una nuova cartella denominata setup.
+6. In Esplora risorse, la copia Dsl\\\*.vdproj in una nuova cartella denominata il programma di installazione.
 
     Se lo si desidera, è ora possibile escludere CreateMsiSetupProject.tt dal progetto DSL.
 
-7. In **Esplora soluzioni**aggiungere il **programma di installazione \\ \*. vdproj** come progetto esistente.
+7. In **Esplora soluzioni**aggiungere il **programma di installazione\\\*. vdproj** come progetto esistente.
 
 8. Scegliere **Dipendenze progetto**dal menu **progetto** .
 
@@ -118,9 +118,9 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
 10. In Esplora risorse individuare il file MSI compilato nel progetto di installazione.
 
-     Copiare il file MSI in un computer in cui si vuole installare il linguaggio DSL. Fare doppio clic sul file MSI. Viene eseguito il programma di installazione.
+     Copiare il file MSI in un computer in cui si vuole installare il linguaggio DSL. Fare doppio clic sul file MSI. Il programma di installazione verrà eseguito.
 
-11. Nel computer di destinazione, creare un nuovo file con l'estensione di file del linguaggio DSL. Verificare che:
+11. Nel computer di destinazione, creare un nuovo file con l'estensione di file del linguaggio DSL. l'elenco di controllo seguente.
 
     - In visualizzazione elenco di Esplora risorse il file viene visualizzato con l'icona e la descrizione definiti.
 

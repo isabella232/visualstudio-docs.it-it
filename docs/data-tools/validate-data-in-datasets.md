@@ -16,26 +16,26 @@ helpviewer_keywords:
 - validating data, datasets
 - updating datasets, validating data
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f370e55c600baa3f017f6bbb58feab38c23e51ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed115e851e9c2291dfc9d00f4bb36f670a7f3e00
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648102"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586068"
 ---
 # <a name="validate-data-in-datasets"></a>Convalidare i dati nei set di dati
 La convalida dei dati è il processo di conferma che i valori immessi negli oggetti dati sono conformi ai vincoli all'interno dello schema di un set di dati. Il processo di convalida conferma inoltre che questi valori seguono le regole stabilite per l'applicazione. È consigliabile convalidare i dati prima di inviare gli aggiornamenti al database sottostante. In questo modo si riducono gli errori, nonché il numero potenziale di round trip tra un'applicazione e il database.
 
 È possibile verificare che i dati scritti in un set di dati siano validi compilando i controlli di convalida nel set di dati stesso. Il set di dati può controllare i dati indipendentemente dal modo in cui viene eseguito l'aggiornamento, direttamente dai controlli in un modulo, all'interno di un componente o in altro modo. Poiché il set di dati fa parte dell'applicazione (a differenza del back-end del database), si tratta di una posizione logica per compilare la convalida specifica dell'applicazione.
 
-Il posto migliore per aggiungere la convalida all'applicazione si trova nel file di classe parziale del set di dati. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aprire la **Progettazione DataSet** , quindi fare doppio clic sulla colonna o sulla tabella per la quale si desidera creare la convalida. Questa azione crea automaticamente un gestore eventi <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging>.
+Il posto migliore per aggiungere la convalida all'applicazione si trova nel file di classe parziale del set di dati. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]aprire la **Progettazione DataSet** , quindi fare doppio clic sulla colonna o sulla tabella per la quale si desidera creare la convalida. Questa azione crea automaticamente un gestore eventi <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging>.
 
-## <a name="validate-data"></a>Convalida dati
+## <a name="validate-data"></a>Convalidare i dati
 La convalida all'interno di un set di dati viene eseguita nei modi seguenti:
 
 - Creando una convalida specifica dell'applicazione in grado di controllare i valori in una singola colonna di dati durante le modifiche. Per altre informazioni, vedere [procedura: convalidare i dati durante le modifiche alle colonne](validate-data-in-datasets.md).
@@ -44,7 +44,7 @@ La convalida all'interno di un set di dati viene eseguita nei modi seguenti:
 
 - Creando chiavi, vincoli univoci e così via come parte della definizione dello schema effettiva del set di dati.
 
-- Impostando le proprietà dell'oggetto <xref:System.Data.DataColumn>, ad esempio <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A> e <xref:System.Data.DataColumn.Unique%2A>.
+- Impostando le proprietà dell'oggetto <xref:System.Data.DataColumn>, ad esempio <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>e <xref:System.Data.DataColumn.Unique%2A>.
 
 Quando si verifica una modifica in un record, i <xref:System.Data.DataTable> oggetto generano diversi eventi:
 
@@ -60,11 +60,11 @@ L'evento scelto dipende dalla granularità desiderata per la convalida. Se è im
 
 Quando vengono aggiornati i record, l'oggetto <xref:System.Data.DataTable> genera eventi a cui è possibile rispondere quando si verificano modifiche e dopo che sono state apportate modifiche.
 
-Se l'applicazione usa un DataSet tipizzato, è possibile creare gestori di eventi fortemente tipizzati. In questo modo vengono aggiunti quattro eventi tipizzati aggiuntivi per i quali è possibile creare gestori: `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting` e `dataTableNameRowDeleted`. Questi gestori di eventi tipizzati passano un argomento che include i nomi di colonna della tabella che semplificano la scrittura e la lettura del codice.
+Se l'applicazione usa un DataSet tipizzato, è possibile creare gestori di eventi fortemente tipizzati. In questo modo vengono aggiunti quattro eventi tipizzati aggiuntivi per i quali è possibile creare gestori: `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting`e `dataTableNameRowDeleted`. Questi gestori di eventi tipizzati passano un argomento che include i nomi di colonna della tabella che semplificano la scrittura e la lettura del codice.
 
 ## <a name="data-update-events"></a>Eventi di aggiornamento dati
 
-|event|Descrizione|
+|Event|Descrizione|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|È in corso la modifica del valore di una colonna. L'evento passa la riga e la colonna all'utente, insieme al nuovo valore proposto.|
 |<xref:System.Data.DataTable.ColumnChanged>|Il valore in una colonna è stato modificato. L'evento passa la riga e la colonna all'utente, insieme al valore proposto.|
@@ -73,7 +73,7 @@ Se l'applicazione usa un DataSet tipizzato, è possibile creare gestori di event
 |<xref:System.Data.DataTable.RowDeleting>|È in corso l'eliminazione di una riga. L'evento passa la riga all'utente, insieme a un valore che indica il tipo di azione (Delete) eseguito.|
 |<xref:System.Data.DataTable.RowDeleted>|Una riga è stata eliminata. L'evento passa la riga all'utente, insieme a un valore che indica il tipo di azione (Delete) eseguito.|
 
-Gli eventi <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowDeleting> vengono generati durante il processo di aggiornamento. È possibile utilizzare questi eventi per convalidare i dati o eseguire altri tipi di elaborazione. Poiché l'aggiornamento è in corso durante questi eventi, è possibile annullarlo generando un'eccezione, che impedisce il completamento dell'aggiornamento.
+Gli eventi <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging>e <xref:System.Data.DataTable.RowDeleting> vengono generati durante il processo di aggiornamento. È possibile utilizzare questi eventi per convalidare i dati o eseguire altri tipi di elaborazione. Poiché l'aggiornamento è in corso durante questi eventi, è possibile annullarlo generando un'eccezione, che impedisce il completamento dell'aggiornamento.
 
 Gli eventi <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowChanged> e <xref:System.Data.DataTable.RowDeleted> sono eventi di notifica generati quando l'aggiornamento è stato completato correttamente. Questi eventi sono utili quando si desidera eseguire ulteriori azioni in base a un aggiornamento riuscito.
 

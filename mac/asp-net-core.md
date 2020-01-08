@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913321"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405013"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
@@ -29,7 +29,7 @@ Aprire Visual Studio per Mac. Nella schermata iniziale selezionare **Nuovo proge
 
 Verrà visualizzata la finestra di dialogo Nuovo progetto, che consente di selezionare un modello per la creazione dell'applicazione.
 
-Alcuni progetti offrono un modello predefinito utilizzabile per iniziare a creare l'applicazione ASP.NET Core. Si tratta di:
+Alcuni progetti offrono un modello predefinito utilizzabile per iniziare a creare l'applicazione ASP.NET Core. ovvero:
 
 - **.NET Core > Vuoto**
 - **.NET Core > API**
@@ -42,7 +42,7 @@ Selezionare **Progetto ASP.NET Core vuoto** e premere **Avanti**. Assegnare un n
 
 ![Vista del nuovo progetto ASP.NET Core vuoto](media/asp-net-core-2019-empty-project.png)
 
-Il modello vuoto per ASP.NET Core crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs**, spiegati di seguito. Crea anche una cartella Dependencies (Dipendenze), che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il framework .NET Core e le destinazioni di MSBuild per la compilazione del progetto:
+Il ASP.NET Core modello vuoto crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs**, illustrati di seguito. Crea anche una cartella Dependencies (Dipendenze), che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il framework .NET Core e le destinazioni di MSBuild per la compilazione del progetto:
 
 ![Riquadro della soluzione che visualizza le dipendenze](media/asp-net-core-2019-solution-dependencies.png)
 
@@ -64,7 +64,7 @@ Aprire ed esaminare il file **Program.cs** nel progetto. Si noti che nel metodo 
     }
 ```
 
-Un'app ASP.NET Core crea un server Web nel metodo Main configurando e avviando un host tramite un'istanza di [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
+Un'app ASP.NET Core crea un server Web nel metodo Main configurando e avviando un host tramite un'istanza di [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
 
 * `.UseStartup<Startup>()`: specifica la classe di avvio.
 
@@ -118,9 +118,9 @@ Il metodo `Configure` consente di comporre pipeline delle richieste tramite [mid
 
 Il metodo `Configure` del modello predefinito è destinato all'esecuzione di alcune operazioni. Prima configura una pagina di gestione delle eccezioni da usare durante lo sviluppo. Quindi invia una risposta alla pagina Web di richiesta con la semplice frase "Hello World".
 
-Questo semplice progetto "Hello World"può ora essere eseguito senza l'aggiunta di altro codice. Per eseguire l'app e visualizzarla nel browser, fare clic sul pulsante Esegui (il triangolo) sulla barra degli strumenti:
+Questo semplice progetto "Hello World"può ora essere eseguito senza l'aggiunta di altro codice. Per eseguire l'app, è possibile selezionare il browser in cui si vuole eseguire l'app nell'app usando l'elenco a discesa a destra del pulsante Riproduci o semplicemente premere il pulsante Riproduci (triangolare) per usare il browser predefinito:
 
-![Esegui l'app](media/asp-net-core-2019-run-debug.png)
+![Esecuzione del browser](media/asp-net-web-picker.png)
 
 Per avviare il progetto Web, Visual Studio per Mac usa una porta casuale. Per individuare la porta usata, aprire Output applicazione, disponibile in **Vista > Riquadri**. L'output dovrebbe essere simile a quello illustrato di seguito:
 
@@ -135,7 +135,7 @@ Quando il progetto è in esecuzione, il Web browser predefinito viene avviato e 
 Le app ASP.NET Core usano lo schema progettuale Model-View-Controller (MVC) per stabilire una separazione logica delle responsabilità di ogni parte dell'app. Lo schema MVC è costituito come segue:
 
 - **Model** (Modello): classe che rappresenta i dati dell'app.
-- **Visualizza**: visualizza l'interfaccia utente dell'app. Spesso corrisponde ai dati del modello.
+- **View** (Vista): visualizza l'interfaccia utente dell'app. Spesso corrisponde ai dati del modello.
 - **Controller**: classe che gestisce le richieste del browser e risponde all'input e all'interazione dell'utente.
 
 Per altre informazioni sull'uso dello schema MVC, vedere la guida [Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview) (Panoramica di MVC ASP.NET Core).

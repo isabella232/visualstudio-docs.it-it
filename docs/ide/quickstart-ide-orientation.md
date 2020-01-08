@@ -3,17 +3,17 @@ title: Presentazione dell'IDE di Visual Studio
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 072233bde233712024d01fa315e11c679d39e9e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667799"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596970"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -103,7 +103,7 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 
 ![Esplora soluzioni di Visual Studio](media/quickstart-IDE-solution-explorer.png)
 
-## <a name="menus"></a>Menu
+## <a name="menus"></a>Menus
 
 La barra dei menu nella parte superiore di Visual Studio raggruppa i comandi in categorie. Ad esempio, il menu **Progetto** contiene i comandi correlati al progetto in uso. Dal menu **Strumenti** è possibile personalizzare Visual Studio selezionando **Opzioni** oppure aggiungere funzionalità all'installazione selezionando **Ottieni strumenti e funzionalità**.
 
@@ -127,7 +127,7 @@ Nell'**Elenco errori** sono visualizzati gli errori, gli avvisi e i messaggi rig
 
 ![Elenco errori in Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Output (finestra)
+## <a name="output-window"></a>finestra Output
 
 Nella finestra **Output** vengono visualizzati i messaggi di output generati dalla compilazione del progetto e dal provider di controllo del codice sorgente.
 
@@ -195,7 +195,7 @@ Sono state presentate solo alcune delle funzionalità di Visual Studio per inizi
 > [Informazioni sull'editor del codice](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
+> [Guida introduttiva: progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

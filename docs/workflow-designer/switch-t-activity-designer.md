@@ -1,49 +1,49 @@
 ---
-title: Progettazione flussi di lavoro-switch <T> Activity Designer
+title: Progettazione flussi di lavoro-switch<T> Activity Designer
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.ModelItemKeyValuePair.UI
 - System.Activities.Statements.Switch`1.UI
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1afda542dd3f45e5be723ce35b2546626f3679e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a39e8c1e789c1c448e30962789d1a9ab7f3e65c5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649889"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593122"
 ---
-# <a name="switcht-activity-designer"></a>Passare \<T ActivityDesigner >
+# <a name="switcht-activity-designer"></a>Passare\<ActivityDesigner > T
 
 L'attività <xref:System.Activities.Statements.Switch%601> valuta un'espressione specificata e viene eseguita da una raccolta di attività la cui chiave associata corrisponde al valore ottenuto dalla valutazione.
 
-L'ActivityDesigner **Switch < T \>** viene utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.Switch%601> nel Progettazione flussi di lavoro.
+L'ActivityDesigner **Switch < T\>** viene utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.Switch%601> nel Progettazione flussi di lavoro.
 
-## <a name="the-switchtactivity"></a>Opzione \<T attività >
+## <a name="the-switchtactivity"></a>L'opzione\<attività > T
 
 Un'attività <xref:System.Activities.Statements.Switch%601> contiene un oggetto <xref:System.Activities.Statements.Switch%601.Expression%2A> e un dizionario di <xref:System.Activities.Statements.Switch%601.Cases%2A>. Ogni case del dizionario è costituito da una coppia che contiene una *chiave* e un'attività che funge da *valore*corrispondente. L'attività <xref:System.Activities.Statements.Switch%601> valuta <xref:System.Activities.Statements.Switch%601.Expression%2A> e lo confronta con ogni chiave. Se viene rilevata una corrispondenza, viene eseguita l'attività corrispondente. È consentita una sola corrispondenza in quanto le chiavi del dizionario devono essere univoche in base al tipo di uguaglianza definito dall'operatore di confronto di uguaglianza del dizionario. Se non vengono rilevate corrispondenze, viene eseguita l'attività <xref:System.Activities.Statements.Switch%601.Default%2A>.
 
-## <a name="how-to-use-the-switcht-activity-designer"></a>Come usare l'ActivityDesigner Switch \<T >
+## <a name="how-to-use-the-switcht-activity-designer"></a>Come usare l'ActivityDesigner Switch\<T >
 
-Accedere al **Commuter \<T >** ActivityDesigner nella categoria **flusso di controllo** della **casella degli strumenti**. Dopo averla rilasciata nel Progettazione flussi di lavoro, viene visualizzata la finestra di dialogo **Seleziona tipi** per consentire all'utente di specificare il tipo generico *T* usato nell'attività <xref:System.Activities.Statements.Switch%601>. Il valore predefinito è **Int32**. Una volta selezionato il tipo generico *t* , nella finestra di progettazione del flusso di lavoro viene aggiunta un' **opzione < t \>** designer.
+Accedere al **parametro\<t >** ActivityDesigner nella categoria **flusso di controllo** della **casella degli strumenti**. Dopo averla rilasciata nel Progettazione flussi di lavoro, viene visualizzata la finestra di dialogo **Seleziona tipi** per consentire all'utente di specificare il tipo generico *T* usato nell'attività <xref:System.Activities.Statements.Switch%601>. Il valore predefinito è **Int32**. Una volta selezionato il tipo generico *t* , nella finestra di progettazione del flusso di lavoro viene aggiunta un' **opzione < t\>** designer.
 
-Di seguito sono riportate le proprietà di **Switch < T \>** designer. Tutte le proprietà possono essere modificate nella griglia delle proprietà. Alcune di esse possono anche essere modificate nell'area della finestra di progettazione.
+Di seguito sono riportate le proprietà di **Switch < T\>** designer. Tutte le proprietà possono essere modificate nella griglia delle proprietà. Alcune di esse possono anche essere modificate nell'area della finestra di progettazione.
 
 La tabella seguente mostra le proprietà <xref:System.Activities.Statements.Switch%601> più utili e viene illustrato come usarle nella finestra di progettazione.
 
-|Nome proprietà|Richiesto|Utilizzo|
+|Nome proprietà:|Richiesto|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Switch%601>. Il valore predefinito è switch < Int32 \>. Il valore può essere modificato nella finestra **Proprietà** o direttamente nell'intestazione della finestra di progettazione.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Switch%601>. Il valore predefinito è switch < Int32\>. Il valore può essere modificato nella finestra **Proprietà** o direttamente nell'intestazione della finestra di progettazione.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 |<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|Specifica l'espressione usata per confrontare le chiavi presenti nella raccolta di case al fine da identificare il case da eseguire.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Se non vengono rilevate corrispondenze, specifica l'attività eseguita. Fare clic sul pulsante **Aggiungi attività** nella finestra di progettazione per aprire la casella **predefinita** in cui è possibile eliminare l'attività.|
-|<xref:System.Activities.Statements.Switch%601.Cases%2A>||Specifica i case da valutare. Per aggiungere un case, fare clic sul pulsante **Aggiungi nuovo case** nella parte inferiore di **Switch \<T >** designer. Il pulsante viene modificato in una casella di testo (casella combinata se il tipo generico selezionato quando si aggiunge l'opzione \<T > è String o enum). Dopo aver aggiunto una chiave nella casella **valore case** , l'area del case si espande ed è possibile eliminare un'attività in cui il testo del suggerimento "rilasciare l'attività" per definire la logica di esecuzione del case.|
+|<xref:System.Activities.Statements.Switch%601.Cases%2A>||Specifica i case da valutare. Per aggiungere un case, fare clic sul pulsante **Aggiungi nuovo case** nella parte inferiore della finestra di progettazione di **Switch\<t >** . Il pulsante viene modificato in una casella di testo (casella combinata se il tipo generico selezionato quando si aggiunge l'opzione\<T > è String o enum). Dopo aver aggiunto una chiave nella casella **valore case** , l'area del case si espande ed è possibile eliminare un'attività in cui il testo del suggerimento "rilasciare l'attività" per definire la logica di esecuzione del case.|
 
-È possibile aggiungere più case, purché le relative chiavi non siano duplicate. In caso contrario, viene visualizzata una finestra di dialogo di errore in cui viene segnalato che la chiave del case specificata esiste già e che è necessario sceglierne un'altra. Nel **Commuter \<T >** designer, una sola area del case può essere in visualizzazione espansa alla volta. Se l'area di un case si trova in modalità compressa, fare clic su di essa per espanderla. Si noti che, per un case compresso, nella finestra di progettazione viene mostrato l'eventuale nome visualizzato dell'attività a destra all'interno del case. In caso contrario, viene visualizzato il pulsante **Aggiungi un'attività** che espande il case facendo clic su di esso e consente di aggiungere un'attività.
+È possibile aggiungere più case, purché le relative chiavi non siano duplicate. In caso contrario, viene visualizzata una finestra di dialogo di errore in cui viene segnalato che la chiave del case specificata esiste già e che è necessario sceglierne un'altra. Nella finestra di progettazione **Switch\<t >** , solo un'area del case può essere in visualizzazione espansa alla volta. Se l'area di un case si trova in modalità compressa, fare clic su di essa per espanderla. Si noti che, per un case compresso, nella finestra di progettazione viene mostrato l'eventuale nome visualizzato dell'attività a destra all'interno del case. In caso contrario, viene visualizzato il pulsante **Aggiungi un'attività** che espande il case facendo clic su di esso e consente di aggiungere un'attività.
 
 Fare clic sulla chiave del case esistente per trasformarla da etichetta in casella di testo in modo che sia possibile modificarla.
 

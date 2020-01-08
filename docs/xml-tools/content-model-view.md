@@ -1,27 +1,27 @@
 ---
-title: Visualizzazione del modello di contenuto di Progettazione XML Schema
+title: Visualizzazione modello di contenuto (Progettazione XML Schema)
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67453571963ae22910842be0021e008632942de5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661534"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592913"
 ---
 # <a name="content-model-view"></a>Visualizzazione modello di contenuto
 
-La visualizzazione modello di contenuto fornisce una rappresentazione grafica di nodi dello schema locali e globali e dei relativi componenti, inclusi tipi semplici e complessi, elementi, gruppi di modelli, attributi e gruppi di attributi. Non è possibile visualizzare commenti XML e istruzioni di elaborazione nella visualizzazione modello di contenuto. La visualizzazione modello di contenuto contiene due pannelli: un pannello dell' **area di lavoro** che contiene un elenco dei nodi nell'area di [lavoro di XML Schema Designer](../xml-tools/xml-schema-designer-workspace.md)e l'area di progettazione in cui è possibile visualizzare il modello di contenuto dei nodi dello schema selezionati nell' **area di lavoro.** pannello. La visualizzazione modello di contenuto include anche la barra degli strumenti di Progettazione XML Schema e la barra di navigazione.
+La visualizzazione modello di contenuto fornisce una rappresentazione grafica di nodi dello schema locali e globali e dei relativi componenti, inclusi tipi semplici e complessi, elementi, gruppi di modelli, attributi e gruppi di attributi. Non è possibile visualizzare commenti XML e istruzioni di elaborazione nella visualizzazione modello di contenuto. La visualizzazione modello di contenuto contiene due pannelli: un pannello dell' **area di lavoro** che contiene un elenco dei nodi nell'area di [lavoro di XML Schema Designer](../xml-tools/xml-schema-designer-workspace.md)e l'area di progettazione in cui è possibile visualizzare il modello di contenuto dei nodi dello schema selezionati nel pannello dell' **area di lavoro** . La visualizzazione modello di contenuto include anche la barra degli strumenti di Progettazione XML Schema e la barra di navigazione.
 
 Nell'immagine seguente il pannello dell' **area di lavoro** contiene sei nodi dello schema. Il nodo `purchaseOrder` viene selezionato nel pannello dell' **area di lavoro** e viene visualizzato nell'area di progettazione.
 
-![Visualizzazione del modello di contenuto di Progettazione XML Schema](../xml-tools/media/xsddesigner_contentmodelview.gif)
+![Visualizzazione modello di contenuto (Progettazione XML Schema)](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Pannello dell'area di lavoro
 
@@ -77,13 +77,13 @@ Utilizzare il menu di scelta rapida per aprire inizialmente la finestra **Propri
 
 I seguenti pulsanti della barra degli strumenti di Progettazione XSD sono abilitati quando la visualizzazione modello di contenuto è attiva.
 
-![Barra degli strumenti di Progettazione XML Schema](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
+![Barra degli strumenti Progettazione XML Schema](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Opzione|Descrizione|
 |-|-----------------|
-|**Mostra visualizzazione iniziale**|Passa alla [visualizzazione iniziale](../xml-tools/start-view.md). È possibile accedere a questa visualizzazione tramite i tasti di scelta rapida: **Ctrl** +**1**.|
-|**Mostra visualizzazione modello di contenuto**|Passa alla [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **Ctrl** +**2**.|
-|**Mostra visualizzazione grafico**|Passa alla [visualizzazione grafico](../xml-tools/graph-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **Ctrl** +**3**.|
+|**Mostra visualizzazione iniziale**|Passa alla [visualizzazione iniziale](../xml-tools/start-view.md). È possibile accedere a questa visualizzazione tramite i tasti di scelta rapida: **Ctrl**+**1**.|
+|**Mostra visualizzazione modello di contenuto**|Passa alla [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **Ctrl**+**2**.|
+|**Mostra visualizzazione grafico**|Passa alla [visualizzazione grafico](../xml-tools/graph-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **Ctrl**+**3**.|
 |**Cancella area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|
 |**Rimuovi dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Rimuovi tutto tranne la selezione dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|

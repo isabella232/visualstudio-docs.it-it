@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, CombinePath task
 - CombinePath task [MSBuild]
 ms.assetid: c20edbf4-3d4f-4f66-b1d5-753a0d858ed8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b73ddd4715d3abd29f87d7ef38a269d821733ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a52e0d770a535b0fa7d29a379a7f6aba63e62d78
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569725"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593343"
 ---
 # <a name="combinepath-task"></a>attività CombinePath
 Combina i percorsi specificati in un singolo percorso.
@@ -29,15 +29,15 @@ Combina i percorsi specificati in un singolo percorso.
 ## <a name="task-parameters"></a>Parametri dell'attività
  La tabella seguente descrive i parametri dell'[attività CombinePath](../msbuild/combinepath-task.md).
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`BasePath`|Parametro `String` obbligatorio.<br /><br /> Percorso base da combinare con gli altri percorsi. Può essere un percorso relativo, assoluto o vuoto.|
 |`Paths`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Elenco di singoli percorsi da combinare con l'oggetto BasePath per formare il percorso combinato. I percorsi possono essere relativi o assoluti.|
 |`CombinedPaths`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Percorso combinato creato da questa attività.|
 
-## <a name="remarks"></a>Osservazioni
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Note
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

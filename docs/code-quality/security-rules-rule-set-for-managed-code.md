@@ -3,17 +3,17 @@ title: Set di regole di sicurezza per codice gestito
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea23186ff03ccdb0ff7678380eadc866b63654f2
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: babfc00dfadc6b26f8338faf37b5b4a1f7c1d8e5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918919"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587225"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Set di regole di sicurezza per codice gestito
 
@@ -64,7 +64,7 @@ Usare il set di regole di sicurezza Microsoft per l'analisi del codice legacy pe
 |[CA2147](../code-quality/ca2147.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|
 |[CA2210](../code-quality/ca2210.md)|Gli assembly devono avere nomi sicuri validi|
-|[Ca2300](ca2300.md)|Non usare il deserializzatore non sicuro BinaryFormatter|
+|[CA2300](ca2300.md)|Non usare il deserializzatore non sicuro BinaryFormatter|
 |[CA2301](ca2301.md)|Non chiamare BinaryFormatter.Deserialize senza aver prima impostato BinaryFormatter.Binder|
 |[CA2302](ca2302.md)|Assicurarsi che BinaryFormatter.Binder sia impostato prima di chiamare BinaryFormatter.Deserialize|
 |[CA2305](ca2305.md)|Non usare il deserializzatore non sicuro LosFormatter|
@@ -76,8 +76,8 @@ Usare il set di regole di sicurezza Microsoft per l'analisi del codice legacy pe
 |[CA2322](ca2322.md)|Verificare che l'oggetto JavaScriptSerializer non sia inizializzato con SimpleTypeResolver prima di eseguire la deserializzazione|
 |[CA3001](../code-quality/ca3001.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo SQL injection|
 |[CA3002](../code-quality/ca3002.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo XSS|
-|[Ca3003](../code-quality/ca3003.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo file path injection|
-|[Ca3004](../code-quality/ca3004.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo diffusione di informazioni|
+|[CA3003](../code-quality/ca3003.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo file path injection|
+|[CA3004](../code-quality/ca3004.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo diffusione di informazioni|
 |[CA3005](../code-quality/ca3005.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo LDAP injection|
 |[CA3006](../code-quality/ca3006.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo process command injection|
 |[CA3007](../code-quality/ca3007.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo reindirizzamento aperto|
@@ -86,4 +86,4 @@ Usare il set di regole di sicurezza Microsoft per l'analisi del codice legacy pe
 |[CA3010](../code-quality/ca3010.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo XAML injection|
 |[CA3011](../code-quality/ca3011.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo DLL injection|
 |[CA3012](../code-quality/ca3012.md)|Esaminare il codice per verificare la presenza di vulnerabilità di tipo regex injection|
-|[CA5403](../code-quality/ca5403.md)|Non impostare come hardcoded il certificato|
+|[CA5403](../code-quality/ca5403.md)|Non impostare il certificato come hardcoded|

@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653044"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591541"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Domande frequenti su Live Unit Testing
 
@@ -39,7 +39,7 @@ In alcuni casi, per consentire il funzionamento di Live Unit Testing, potrebbe e
 
 Sì. Live Unit Testing funziona con .NET Core e .NET Framework.
 
-## <a name="configuration"></a>Configurazione
+## <a name="configuration"></a>Configurazione di
 
 **Perché Live Unit Testing non funziona quando viene attivato?**
 
@@ -85,15 +85,26 @@ Ad esempio, potrebbe essere presente una destinazione che produce pacchetti NuGe
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>Messaggi di errore con \<OutputPath > o \<OutDir >
+## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>Messaggi di errore con \<OutputPath >, \<OutDir > o \<IntermediateOutputPath >
 
 **Perché viene generato l'errore seguente quando Live Unit Testing tenta di compilare la soluzione: "... sembra impostare in modo non condizionale `<OutputPath>` o `<OutDir>`. Live Unit Testing non eseguirà i test dall'assembly di output "?**
 
-Questo errore può verificarsi se il processo di compilazione per la soluzione esegue in modo incondizionato l'override di `<OutputPath>` o `<OutDir>` in modo tale che non sia una sottodirectory di `<BaseOutputPath>`. In tali casi Live Unit Testing non funziona, perché esegue anche l'override di questi elementi per assicurarsi che gli artefatti di compilazione vengano rilasciati in una cartella in `<BaseOutputPath>`. Se è necessario eseguire l'override del percorso devono essere rilasciati gli artefatti di compilazione in una compilazione normale, eseguire l'override di `<OutputPath>` in modo condizionale in base a `<BaseOutputPath>`.
+Questo errore può essere generato se il processo di compilazione per la soluzione ha una logica personalizzata che specifica dove devono essere generati i file binari. Per impostazione predefinita, il percorso dei file binari dipende da `<OutputPath>`, `<OutDir>` o `<IntermediateOutputPath>`, nonché `<BaseOutputPath>` o `<BaseIntermediateOutputPath>`.
 
-Se ad esempio la compilazione esegue l'override di `<OutputPath>` come illustrato di seguito:
+Live Unit Testing esegue l'override di tali variabili per assicurarsi che gli artefatti di compilazione vengano rilasciati in una cartella Live Unit Testing artefatti e non riusciranno se il processo di compilazione esegue l'override anche di queste variabili.
 
-```xml 
+Ci sono due approcci principali per rendere Live Unit Testing la compilazione corretta. Per semplificare le configurazioni di compilazione, è possibile basare i percorsi di output su `<BaseIntermediateOutputPath>`. Per configurazioni più complesse, è possibile basare i percorsi di output su `<LiveUnitTestingBuildRootPath>`.
+
+### <a name="overriding-outputpathintermediateoutputpath-conditionally-based-on-baseoutputpath-baseintermediateoutputpath"></a>L'override di `<OutputPath>`/`<IntermediateOutputPath>` in modo condizionale in base a `<BaseOutputPath>`/ `<BaseIntermediateOutputPath>`.
+
+> [!NOTE]
+> Per utilizzare questo approccio, è necessario che ogni progetto sia in grado di compilare in modo indipendente l'uno dall'altro. Non dispone di un elemento di riferimento del progetto da un altro progetto durante la compilazione. Non è necessario che un progetto carichi dinamicamente assembly da un altro progetto durante il runtime (ad esempio, chiamare `Assembly.Loadfile("..\..\Project2\Release\Project2.dll")`).
+
+Durante la compilazione, Live Unit Testing sostituisce automaticamente le variabili `<BaseOutputPath>`/`<BaseIntermediateOutputPath>` per la cartella degli elementi Live Unit Testing.
+
+Se ad esempio la compilazione esegue l'override di <OutputPath> come illustrato di seguito:
+
+```xml
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -103,7 +114,7 @@ Se ad esempio la compilazione esegue l'override di `<OutputPath>` come illustrat
 
 è possibile sostituirla con il codice XML seguente:
 
-```xml 
+```xml
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -115,6 +126,46 @@ Se ad esempio la compilazione esegue l'override di `<OutputPath>` come illustrat
 In tal modo verrà garantita la presenza di `<OutputPath>` nella cartella `<BaseOutputPath>`.
 
 Non eseguire l'override di `<OutDir>` direttamente nel processo di compilazione, ma eseguire l'override `<OutputPath>` per rilasciare gli artefatti di compilazione in un percorso specifico.
+
+### <a name="overriding-your-properties-based-on-the-liveunittestingbuildrootpath-property"></a>Override delle proprietà in base alla proprietà `<LiveUnitTestingBuildRootPath>`.
+
+> [!NOTE]
+> Con questo approccio è necessario prestare attenzione ai file aggiunti nella cartella artefatti che non vengono generati durante la compilazione. Nell'esempio seguente vengono illustrate le operazioni da eseguire quando si posiziona la cartella Packages in artefatti. Poiché il contenuto di questa cartella non viene generato durante la compilazione, la proprietà MSBuild **non deve essere modificata**.
+
+Durante una Live Unit Testing Build, la proprietà `<LiveUnitTestingBuildRootPath>` viene impostata sul percorso della cartella Live Unit Testing artefatti.
+
+Si supponga, ad esempio, che il progetto abbia la struttura mostrata qui.
+
+```
+.vs\...\lut\0\b
+artifacts\{binlog,obj,bin,nupkg,testresults,packages}
+src\{proj1,proj2,proj3}
+tests\{testproj1,testproj2}
+Solution.sln
+```
+Durante la compilazione Live Unit Testing la proprietà `<LiveUnitTestingBuildRootPath>` è impostata sul percorso completo di `.vs\...\lut\0\b`. Se il progetto definisce `<ArtifactsRoot>` proprietà che esegue il mapping alla directory della soluzione, è possibile aggiornare il progetto MSBuild come indicato di seguito:
+
+```xml
+<Project>
+    <PropertyGroup Condition="'$(LiveUnitTestingBuildRootPath)' == ''">
+        <SolutionDir>$([MSBuild]::GetDirectoryNameOfFileAbove(`$(MSBuildProjectDirectory)`, `YOUR_SOLUTION_NAME.sln`))\</SolutionDir>
+
+        <ArtifactsRoot>Artifacts\</ArtifactsRoot>
+        <ArtifactsRoot Condition="'$(LiveUnitTestingBuildRootPath)' != ''">$(LiveUnitTestingBuildRootPath)</ArtifactsRoot>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BinLogPath>$(ArtifactsRoot)\BinLog</BinLogPath>
+        <ObjPath>$(ArtifactsRoot)\Obj</ObjPath>
+        <BinPath>$(ArtifactsRoot)\Bin</BinPath>
+        <NupkgPath>$(ArtifactsRoot)\Nupkg</NupkgPath>
+        <TestResultsPath>$(ArtifactsRoot)\TestResults</TestResultsPath>
+
+        <!-- Note: Given that a build doesn't generate packages, the path should be relative to the solution dir, rather than artifacts root, which will change during a Live Unit Testing build. -->
+        <PackagesPath>$(SolutionDir)\artifacts\packages</PackagesPath>
+    </PropertyGroup>
+</Project>
+```
 
 ## <a name="build-artifact-location"></a>Percorso artefatto di compilazione
 
@@ -133,8 +184,6 @@ Esistono numerose differenze:
 - Live Unit Testing non crea un nuovo dominio applicazione per eseguire i test, ma i test vengono eseguiti dalla finestra **Esplora test** per creare un nuovo dominio applicazione.
 
 - Live Unit Testing esegue i test di ogni assembly di test in modo sequenziale. In **Esplora test**è possibile scegliere di eseguire più test in parallelo.
-
-- Per l'individuazione e l'esecuzione di test in Live Unit Testing viene usata la versione 2 di `TestPlatform`, mentre nella finestra **Esplora test** viene usata la versione 1. Nella maggior parte dei casi non si dovrebbero notare differenze.
 
 - **Esplora test** esegue i test in un Apartment a thread singolo (sta) per impostazione predefinita, mentre Live unit testing esegue i test in un Apartment a thread multipli (MTA). Per eseguire test MSTest nell'apartment a thread singolo in Live Unit Testing, decorare il metodo di test o la classe contenitore con l'attributo `<STATestMethod>` o `<STATestClass>` reperibili nel pacchetto NuGet `MSTest.STAExtensions 1.0.3-beta`. Per NUnit e xUnit decorare il metodo di test rispettivamente con l'attributo `<RequiresThread(ApartmentState.STA)>` e con l'attributo `<STAFact>`.
 
@@ -217,4 +266,4 @@ Per raccogliere log più dettagliati, è possibile eseguire diverse operazioni:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Live Unit Testing](live-unit-testing.md)
+- [Testing unità in tempo reale](live-unit-testing.md)

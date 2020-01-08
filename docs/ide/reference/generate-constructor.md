@@ -2,17 +2,17 @@
 title: Generare un'azione rapida costruttore
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41bb9a0e3921495629a10d6783432e8b4999a117
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661735"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569504"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 
@@ -20,7 +20,7 @@ Questa generazione di codice si applica a:
 
 - C#
 
-- Visual Basic
+- Visual Basic -
 
 **Cosa:** consente di generare immediatamente il codice per un nuovo costruttore in una classe.
 
@@ -108,7 +108,7 @@ Questa generazione di codice si applica a:
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione di un costruttore](media/constructor-preview-cs.png)
 
@@ -142,7 +142,7 @@ Questa generazione di codice si applica a:
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione di un costruttore](media/constructor4-preview-cs.png)
 

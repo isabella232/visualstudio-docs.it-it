@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Complete word
 - List members
 - IntelliSense [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011542bc45680f6fb5b7bd2b83283605922189ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647361"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565344"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
 

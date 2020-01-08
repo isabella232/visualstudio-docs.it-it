@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f020de0c08d8869a8ee9e6f807201303a46b2a0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653008"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588889"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Come configurare e usare Live Unit Testing
 
@@ -36,14 +36,14 @@ Live Unit Testing è compatibile con i tre framework di unit test elencati nella
 
 Se sono presenti progetti di test basati su MSTest precedenti che fanno riferimento a Microsoft. VisualStudio. QualityTools. UnitTestFramework e non si vuole passare ai pacchetti NuGet di MSTest più recenti, eseguire l'aggiornamento a Visual Studio 2019 o Visual Studio 2017.
 
-In alcuni casi, potrebbe essere necessario ripristinare in modo esplicito i pacchetti NuGet a cui fa riferimento un progetto per consentire il funzionamento del Live Unit Testing. Questa operazione può essere eseguita eseguendo una compilazione esplicita della soluzione (selezionare **compila**  > **Ricompila soluzione** dal menu di primo livello di Visual Studio) o ripristinando i pacchetti nella soluzione (fare clic con il pulsante destro del mouse sulla soluzione e selezionare **Ripristina NuGet Pacchetti**).
+In alcuni casi, potrebbe essere necessario ripristinare in modo esplicito i pacchetti NuGet a cui fa riferimento un progetto per consentire il funzionamento del Live Unit Testing. Questa operazione può essere eseguita eseguendo una compilazione esplicita della soluzione (selezionare **compila** > **Ricompila soluzione** dal menu di primo livello di Visual Studio) o ripristinando i pacchetti nella soluzione (fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Ripristina pacchetti NuGet**).
 
 ## <a name="configure"></a>Configurazione
 
-Configurare Live Unit Testing selezionando **strumenti**  > **Opzioni** dalla barra dei menu di primo livello di Visual Studio, quindi selezionando **Live unit testing** nel riquadro sinistro della finestra di dialogo **Opzioni** .
+Configurare Live Unit Testing selezionando **strumenti** > **Opzioni** dalla barra dei menu di primo livello di Visual Studio, quindi selezionando **Live unit testing** nel riquadro sinistro della finestra di dialogo **Opzioni** .
 
 > [!TIP]
-> Dopo l'abilitazione di Live Unit Testing (vedere la sezione successiva, [avviare, sospendere e arrestare Live unit testing](#start-pause-and-stop)), è anche possibile aprire la finestra di dialogo **Opzioni** selezionando **Test**  > **Live unit testing** **Opzioni**di  > .
+> Dopo l'abilitazione di Live Unit Testing (vedere la sezione successiva, [avviare, sospendere e arrestare Live unit testing](#start-pause-and-stop)), è anche possibile aprire la finestra di dialogo **Opzioni** selezionando **Test** > **Live unit testing** **Opzioni**di > .
 
 Nella figura seguente sono illustrate le opzioni di configurazione Live Unit Testing disponibili nella finestra di dialogo:
 
@@ -79,7 +79,7 @@ Le opzioni configurabili includono:
 
 ## <a name="start-pause-and-stop"></a>Avvio, sospensione e arresto
 
-Per abilitare Live Unit Testing, selezionare **Test**  > **Live unit testing**  > **Avvia** dal menu di primo livello di Visual Studio. Quando Live Unit Testing è abilitato, le opzioni disponibili nel menu **Live unit testing** cambiano da un singolo elemento, **Start**, per **sospendere**, **arrestare**e **reimpostare clean**:
+Per abilitare Live Unit Testing, selezionare **Test** > **Live unit testing** > **Avvia** dal menu di primo livello di Visual Studio. Quando Live Unit Testing è abilitato, le opzioni disponibili nel menu **Live unit testing** cambiano da un singolo elemento, **Start**, per **sospendere** e **arrestare**:
 
 - **Sospendi sospende temporaneamente Live unit testing** .
 
@@ -87,10 +87,8 @@ Per abilitare Live Unit Testing, selezionare **Test**  > **Live unit testing**  
 
 - **Arresta completamente Live unit testing** . Con questa opzione tutti i dati raccolti vengono rimossi.
 
-- **Reimposta** Live unit testing Elimina i dati salvati in modo permanente, quindi riavvia Live unit testing.
-
 > [!NOTE]
-> Se si avvia Live Unit Testing in una soluzione che non include un progetto di unit test, le opzioni **Pausa**, **Interrompi**, e **Reset Clean** (Reimposta e pulisci) vengono visualizzate nel menu **Live Unit Testing**, ma Live Unit Testing non viene avviato. Nella finestra **output** viene visualizzato un messaggio che inizia con "nessun adattatore di test supportato a cui fa riferimento questa soluzione...".
+> Se si avvia Live Unit Testing in una soluzione che non include un progetto unit test, le opzioni **Sospendi** e **Arresta** vengono visualizzate nel menu **Live unit testing** , ma Live unit testing non viene avviato. Nella finestra **output** viene visualizzato un messaggio che inizia con "nessun adattatore di test supportato a cui fa riferimento questa soluzione...".
 
 È possibile sospendere temporaneamente o arrestare completamente Live Unit Testing in qualsiasi momento. Questa operazione può essere eseguita, ad esempio, se si sta eseguendo il refactoring e si è certi che i test verranno interrotti per un periodo di tempo.
 
@@ -137,7 +135,7 @@ Ad esempio, l'errore di test illustrato nell'immagine precedente è stato causat
 **Esplora test** fornisce un'interfaccia che consente di eseguire ed eseguire il debug dei test e analizzare i risultati dei test. Live Unit Testing si integra con **Esplora test**. Quando Live Unit Testing non è abilitato o è stato arrestato, **Esplora Test** visualizza lo stato degli unit test durante l'ultima esecuzione di un test. Se si apportano modifiche al codice sorgente, è necessario eseguire di nuovo i test. Quando invece è abilitato Live Unit Testing, lo stato degli unit test in **Esplora test** viene aggiornato immediatamente. Non è necessario eseguire gli unit test in modo esplicito.
 
 > [!TIP]
-> Aprire **Esplora test** selezionando **test**  > **Windows**  > **Esplora test** dal menu di primo livello di Visual Studio.
+> Aprire **Esplora test** selezionando **test** > **Windows** > **Esplora test** dal menu di primo livello di Visual Studio.
 
 Nella finestra **Esplora test** è possibile notare che alcuni test sono stati sbiaditi. Ad esempio, quando si Abilita Live Unit Testing dopo l'apertura di un progetto salvato in precedenza, la finestra **Esplora test** ha eliminato tutti i test, tranne quelli non superati, come illustrato nella figura seguente. In questo caso, Live Unit Testing ha rieseguito il test non riuscito, ma non ha eseguito nuovamente i test riusciti. Ciò è dovuto al fatto che Live Unit Testing dati salvati in precedenza indicano che non sono state apportate modifiche dopo l'ultima esecuzione dei test.
 
@@ -156,7 +154,7 @@ Esistono alcune differenze tra l'esecuzione automatica di Live Unit Testing e l'
 Se la soluzione contiene 10 o più progetti, Visual Studio Visualizza la finestra di dialogo seguente quando:
 
 - avvia Live Unit Testing e non sono presenti dati salvati in permanenza
-- Selezionare **Test**  > **Live unit testing**  > **Reimposta Pulisci**
+- Selezionare **strumenti** > **opzioni** > **Live unit testing** > **Elimina dati salvati**
 
 ![Finestra di dialogo di Live Unit Testing per progetti di grandi dimensioni](media/lut-large-project.png)
 
@@ -177,9 +175,9 @@ Per selezionare i singoli progetti negli unit test, eseguire le operazioni segue
 
 Per includere o escludere singoli metodi di test, è possibile usare la finestra dell'editor del codice. Fare clic con il pulsante destro del mouse sulla firma del metodo di test nella finestra dell'editor di codice e quindi selezionare una delle opzioni seguenti:
 
-- I **test dinamici**  > **includono \<selected metodo >**
-- **Test dinamici**  > **escludere \<selected metodo >**
-- **Test dinamici**  > **escludere tutti i \<selected metodo >**
+- I **test dinamici** > **includono \<metodo selezionato >**
+- **Test dinamici** > **escludere \<metodo selezionato >**
+- **Test dinamici** > **escludere tutti i \<metodo selezionato >**
 
 ### <a name="exclude-tests-programmatically"></a>Escludi i test a livello di codice
 

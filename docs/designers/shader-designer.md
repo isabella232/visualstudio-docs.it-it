@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd82a5c8bee50c778b87927f1074d71a38a21e9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85ce7b0f270f0da8728b17610a683dcc17d06189
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635048"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589929"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 
@@ -31,11 +31,11 @@ La **finestra di progettazione shader** supporta questi formati di shader:
 |Nome del formato|Estensione nome del file|Operazioni supportate (visualizzazione, modifica, esportazione)|
 |-----------------| - | - |
 |Directed Graph Shader Language|*.dgsl*|Visualizzazione, modifica|
-|Shader HLSL (codice sorgente)|*.hlsl*|Esporta|
-|Shader HLSL (bytecode)|*.cso*|Esporta|
-|Intestazione C++ (matrice di bytecode HLSL)|*.h*|Esporta|
+|Shader HLSL (codice sorgente)|*.hlsl*|Export|
+|Shader HLSL (bytecode)|*.cso*|Export|
+|Intestazione C++ (matrice di bytecode HLSL)|*.h*|Export|
 
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Attività iniziali
 
 In questa sezione viene descritto come aggiungere uno shader DGSL al progetto Visual Studio C++ e vengono fornite informazioni introduttive di base.
 
@@ -46,7 +46,7 @@ In questa sezione viene descritto come aggiungere uno shader DGSL al progetto Vi
 
 1. Assicurarsi di avere a disposizione il componente di Visual Studio richiesto installato necessario per usare gli elementi grafici. Questo componente è denominato **Editor di immagini e modelli 3D**.
 
-   Per installarlo, aprire Programma di installazione di Visual Studio selezionando **strumenti**  > **ottenere strumenti e funzionalità** dalla barra dei menu, quindi selezionare la scheda **singoli componenti** . Selezionare il componente **editor di immagini e modelli 3D** nel  **Giochi e categoria grafica** , quindi selezionare **modifica**.
+   Per installarlo, aprire Programma di installazione di Visual Studio selezionando **strumenti** > **ottenere strumenti e funzionalità** dalla barra dei menu, quindi selezionare la scheda **singoli componenti** . Selezionare il componente **editor di immagini e modelli 3D** nella categoria **giochi e grafica** e quindi selezionare **Modifica**.
 
    ![Componente Editor di immagini e modelli 3D](media/image-3d-model-editors-component.png)
 
@@ -59,7 +59,7 @@ In questa sezione viene descritto come aggiungere uno shader DGSL al progetto Vi
 
 4. Specificare il **Nome** del file shader e il **percorso** in cui crearlo.
 
-5. Scegliere il pulsante **Aggiungi** .
+5. Scegliere il pulsante **Aggiungi**.
 
 ### <a name="the-default-shader"></a>Shader predefinito
 
@@ -83,7 +83,7 @@ Questa tabella descrive gli elementi disponibili nella barra degli strumenti **M
 
 |Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
-|**Selezione**|Consente l'interazione con i nodi e i bordi nel grafico. In questa modalità è possibile selezionare nodi per spostarli o eliminarli, nonché definire bordi o interromperli.|
+|**Seleziona**|Consente l'interazione con i nodi e i bordi nel grafico. In questa modalità è possibile selezionare nodi per spostarli o eliminarli, nonché definire bordi o interromperli.|
 |**Panoramica**|Consente lo spostamento di un grafico shader relativo alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nell'area di progettazione e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
 |**Zoom**|Consente la visualizzazione di un numero maggiore o minore di dettagli del grafico shader relativo alla cornice della finestra. In modalità **Zoom** selezionare un punto nell'area di progettazione e spostarlo a destra o in basso per eseguire lo zoom avanti oppure a sinistra o in alto per eseguire lo zoom indietro.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per eseguire lo zoom avanti o indietro usando la rotellina del mouse.|
 |**Adatta alla finestra**|Consente di visualizzare il grafico shader completo nella cornice della finestra.|
@@ -176,14 +176,14 @@ Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportar
 
 |Comando|Scelte rapide da tastiera|
 |-------------| - |
-|Passare alla modalità **Selezione**|**CTRL**+**G**, **CTRL**+**Q**<br /><br /> **S**|
+|Passare alla modalità **Seleziona**|**CTRL**+**G**, **CTRL**+**Q**<br /><br /> **S**|
 |Passare alla modalità **Zoom**|**CTRL**+**G**, **CTRL**+**Z**<br /><br /> **Z**|
 |Passare alla modalità **Panoramica**|**CTRL**+**G**, **CTRL**+**P**<br /><br /> **K**|
 |Selezionare tutto|**Ctrl**+**A**|
 |Eliminare la selezione corrente|**Eliminazione**|
 |Annullare la selezione corrente|**ESCAPE** (**ESC**)|
-|Fare zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> Segno più ( **+** )|
-|Fare zoom indietro|**CTRL**+**Rotellina del mouse indietro**<br /><br /> Segno meno ( **-** )|
+|Eseguire lo zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> Segno più ( **+** )|
+|Eseguire lo zoom indietro|**CTRL**+**Rotellina del mouse indietro**<br /><br /> Segno meno ( **-** )|
 |Fare una panoramica dell'area di progettazione verso l'alto|**Rotellina del mouse indietro**<br /><br /> **PGGIÙ**|
 |Fare una panoramica dell'area di progettazione verso il basso|**Rotellina del mouse avanti**<br /><br /> **PGSU**|
 |Fare una panoramica dell'area di progettazione verso sinistra|**MAIUSC**+**Rotellina del mouse indietro**<br /><br /> **Rotellina del mouse a sinistra**<br /><br /> **MAIUSC**+**PGGIÙ**|

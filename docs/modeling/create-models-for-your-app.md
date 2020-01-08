@@ -16,17 +16,17 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95df70a3458c758fb886cbe2bc5d52d3192ba7cc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984436"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590527"
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
 
@@ -39,12 +39,12 @@ Per visualizzare l'architettura di un sistema o codice esistente, creare i diagr
 |**Diagramma**|**Mostra**|
 |-|-|
 |[Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)|Architettura di alto livello del sistema|
-|Mappe codice<br /><br /> [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dipendenze e altre relazioni nel codice esistente|
+|Mappe codici<br /><br /> [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dipendenze e altre relazioni nel codice esistente|
 |Diagrammi classi generati dal codice<br /><br /> [Uso dei diagrammi classi (Progettazione classi)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Tipi e relative relazioni nel codice .NET|
 
 ## <a name="related-tasks"></a>Attività correlate
 
-|**Argomento**|**Attività**|
+|**Argomento**|**Task**|
 |-|-|
 |[Visualizzare il codice](../modeling/visualize-code.md)|Creare mappe del codice e diagrammi di dipendenza per comprendere meglio il codice non noto.|
 |[Modellare i requisiti utente](../modeling/model-user-requirements.md)|Usare modelli per chiarire e comunicare le esigenze degli utenti.|

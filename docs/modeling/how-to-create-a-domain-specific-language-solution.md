@@ -8,22 +8,22 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools], creating domain-specific language
 - Domain-Specific Language Tools, creating solutions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d4a19143ccde160a455a8247d10e5cc391e78c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 175da19782927f8c84b9fae0e6d9820a22bd891a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985118"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594669"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
 Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione specializzata di Visual Studio.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Prima di iniziare questa procedura, installare i componenti seguenti:
 

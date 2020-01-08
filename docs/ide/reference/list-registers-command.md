@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ListRegisters command
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0e52f42e495c2bac5e80195d360096947210980
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748689"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568685"
 ---
 # <a name="list-registers-command"></a>Comando Elenca registri
 Consente di visualizzare il valore dei registri selezionati e di modificare l'elenco dei registri da visualizzare.
@@ -35,7 +35,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="switches"></a>Opzioni
 /Display [{`register`&#124;`registerGroup`}...]
 
-Consente di visualizzare i valori dell'oggetto `register` o `registerGroup` specificato. Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Esempio:
+Consente di visualizzare i valori dell'oggetto `register` o `registerGroup` specificato. Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Ad esempio:
 
 `Debug.ListRegisters /Display eax`
 
@@ -59,7 +59,7 @@ Rimuove uno o più valori `register` o `registerGroup` dall'elenco.
 L'alias `r` può essere usato al posto di `Debug.ListRegisters`.
 
 ## <a name="example"></a>Esempio
-In questo esempio viene usato l'alias di `Debug.ListRegisters` `r` per visualizzare i valori del gruppo di registri `Flags`.
+In questo esempio viene usato l'alias di `Debug.ListRegisters``r` per visualizzare i valori del gruppo di registri `Flags`.
 
 ```cmd
 r /Display Flags

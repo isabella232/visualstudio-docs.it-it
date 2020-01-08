@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: a6d0eee97ddf2d3a5a35af60ba6c6daf8bcc8425
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810049"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405280"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il tuo [credito mensile Azure DevTest individual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure è la tua sandbox personale per sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
@@ -23,19 +23,23 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
    > [!div class="mx-imgBorder"]
    > ![Riquadro Azure](_img/vs-azure/vs-azure-tile.png)
 
-3. Se non si ha una sottoscrizione di Azure esistente, verrà chiesto di compilare le informazioni necessarie per creare la sottoscrizione di Azure. Selezionare la casella di controllo per accettare termini e condizioni e fare clic su **Iscriviti**:
+3. Se non si ha una sottoscrizione di Azure esistente, verrà richiesto di immettere le informazioni necessarie per creare la sottoscrizione di Azure.  Il primo passaggio consiste nel fornire le informazioni personali e quindi fare clic su **Avanti**.
    > [!div class="mx-imgBorder"]
-   > ![Registrazione di Azure](_img/vs-azure/vs-azure-sign-up-cropped.png) Se si ha una sottoscrizione di Azure esistente, fare clic sulla casella di controllo per accettare il contratto e fare clic su **Iscriviti**.
+   > ![Registrazione di Azure](_img/vs-azure/vs-azure-about-you.png)
 
-4. Quando l'account è pronto, è possibile scegliere un piano di supporto di Azure (venduto separatamente) o iniziare la sottoscrizione di Azure.
+4. Successivamente, sarà necessario verificare l'identità usando un semplice codice di verifica. Specificare il numero di telefono e scegliere se si desidera ricevere il codice in base a testo o telefono.  Immettere il codice ricevuto e fare clic su **Verifica codice**.   
    > [!div class="mx-imgBorder"]
-   > ![Preparazione di Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+   > ![Preparazione di Azure](_img/vs-azure/vs-azure-identity.png)
 
-5. Il centro di avvio rapido del dashboard di Azure viene caricato.  
+5. Per il passaggio finale, fare clic sulla casella di controllo per accettare le condizioni e quindi fare clic su **Iscriviti**.  Questo è tutto.
    > [!div class="mx-imgBorder"]
-   > ![Dashboard di Azure](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+   > ![Preparazione di Azure](_img/vs-azure/vs-azure-agreement.png)
 
-6. Creare un segnalibro per il [portale di Azure](https://portal.azure.com) per facilitare l'accesso in futuro.
+0. Il centro di avvio rapido del dashboard di Azure viene caricato.  
+   > [!div class="mx-imgBorder"]
+   > ![Dashboard di Azure](_img/vs-azure/vs-azure-quick-start.png) 
+
+0. Aggiungere un segnalibro al [portale di Azure](https://portal.azure.com) per facilitarne l'accesso in futuro.
 
 
 ## <a name="eligibility"></a>Eligibility

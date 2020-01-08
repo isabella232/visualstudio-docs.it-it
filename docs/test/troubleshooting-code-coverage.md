@@ -2,17 +2,17 @@
 title: Risoluzione dei problemi di code coverage
 ms.date: 11/04/2016
 ms.topic: troubleshooting
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: bd70394262a2dd19ebf32f57549b9d2b3e8ee92a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659885"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565975"
 ---
 # <a name="troubleshoot-code-coverage"></a>Risolvere i problemi di code coverage
 
@@ -58,7 +58,7 @@ Il file con estensione *pdb* deve essere generato dalla stessa compilazione dei 
 
 Risoluzione&mdash;Verificare che le impostazioni di compilazione generino il file con estensione *pdb*. Se i file con estensione *pdb* non vengono aggiornati quando viene compilato il progetto, aprire le proprietà del progetto, selezionare la pagina **Compila**, scegliere **Avanzate** e controllare **Informazioni di debug**.
 
-Per C++ i progetti, verificare che i file con estensione pdb generati dispongano di informazioni di debug complete. Aprire le proprietà del progetto e verificare che il**debug** del  >  del **linker**  > **genera informazioni di debug** sia impostato su **genera informazioni di debug ottimizzate per la condivisione e la pubblicazione (/debug: Full)** .
+Per C++ i progetti, verificare che i file con estensione pdb generati dispongano di informazioni di debug complete. Aprire le proprietà del progetto e verificare che il **debug** del > del **linker** > **genera informazioni di debug** sia impostato su **genera informazioni di debug ottimizzate per la condivisione e la pubblicazione (/debug: Full)** .
 
 Se i file con estensione *pdb* e *dll* o *exe* sono in posizioni diverse, copiare il file con estensione *pdb* nella stessa directory. È inoltre possibile configurare il motore di code coverage per cercare i file con estensione *pdb* in un'altra posizione. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListModules command
 - list modules command
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e479879051d38df1da3ed2677303a76ea2d289
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747907"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595501"
 ---
 # <a name="list-modules-command"></a>Comando Elenca moduli
 Elenca i moduli disponibili per il processo corrente.
@@ -79,5 +79,5 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 ## <a name="see-also"></a>Vedere anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Finestra di comando](../../ide/reference/command-window.md)
+- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
 - [Procedura: Usare la finestra Moduli](../../debugger/how-to-use-the-modules-window.md)

@@ -3,17 +3,17 @@ title: Metodi DataContext (Object Relational Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0e81f2337931f565e0068a852bf9b8284350690c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b9d322ea9c805b7fc1ce55dbf93b72b29958af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648534"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586705"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metodi DataContext (O/R Designer)
 
@@ -26,7 +26,7 @@ La classe <xref:System.Data.Linq.DataContext> rappresenta una classe [!INCLUDE[v
 <xref:System.Data.Linq.DataContext> metodi che eseguono il mapping a stored procedure e funzioni vengono visualizzati nel riquadro dei **Metodi** di **O/R Designer**. Il riquadro **Metodi** rappresenta il riquadro situato a lato del riquadro **Entità** (l'area di progettazione principale). Il riquadro dei **Metodi** elenca tutti i metodi di <xref:System.Data.Linq.DataContext> creati usando la **finestra di progettazione di O/R**. Per impostazione predefinita, il riquadro dei **Metodi** è vuoto; trascinare le stored procedure o le funzioni da **Esplora server** o **Esplora database** nella finestra di **progettazione di o/R** per creare <xref:System.Data.Linq.DataContext> metodi e popolare il riquadro dei **Metodi** . Per altre informazioni, vedere [procedura: creare metodi DataContext mappati a stored procedure e funzioni (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md).
 
 > [!NOTE]
-> Aprire e chiudere il riquadro dei metodi facendo clic con il pulsante destro del mouse su **o/R Designer** , quindi facendo clic sul riquadro **Nascondi metodi** o **Mostra riquadro Metodi**oppure utilizzare il tasto di scelta rapida **CTRL** +**1**.
+> Aprire e chiudere il riquadro dei metodi facendo clic con il pulsante destro del mouse su **o/R Designer** , quindi facendo clic sul riquadro **Nascondi metodi** o **Mostra riquadro Metodi**oppure utilizzare il tasto di scelta rapida **CTRL**+**1**.
 
 ## <a name="two-types-of-datacontext-methods"></a>Due tipi di metodi DataContext
 
@@ -34,7 +34,7 @@ I metodi DataContext sono metodi con mapping a stored procedure e funzioni nel d
 
 - Metodi <xref:System.Data.Linq.DataContext> che restituiscono uno o più set di risultati:
 
-   Creare questo tipo di metodo <xref:System.Data.Linq.DataContext> quando l'applicazione deve eseguire stored procedure e funzioni nel database e restituire i risultati. Per altre informazioni, vedere [procedura: creare metodi DataContext mappati a stored procedure e funzioni (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System. Data. Linq. ISingleResult \<T > e <xref:System.Data.Linq.IMultipleResults>.
+   Creare questo tipo di metodo <xref:System.Data.Linq.DataContext> quando l'applicazione deve eseguire stored procedure e funzioni nel database e restituire i risultati. Per altre informazioni, vedere [procedura: creare metodi DataContext mappati a stored procedure e funzioni (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System. Data. Linq. ISingleResult\<t > e <xref:System.Data.Linq.IMultipleResults>.
 
 - Metodi <xref:System.Data.Linq.DataContext> che non restituiscono set di risultati, ad esempio inserimenti, aggiornamenti ed eliminazioni per una classe di entità specifica.
 

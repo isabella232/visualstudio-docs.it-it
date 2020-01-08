@@ -4,28 +4,28 @@ titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8245790cb1a5f5211828b2feaa2fd862c83bfe9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c72795b80ebb176b3dcfb4fe26b633946e3bb98
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666834"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592945"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Scelte rapide da tastiera in Blend per Visual Studio
 
 ## <a name="project-shortcuts"></a>Tasti di scelta rapida per i progetti
 
-|Per eseguire questa operazione|Seguire questa procedura|
+|Operazione da eseguire|Eseguire questa operazione|
 |----------------|-------------|
 |Creare un nuovo progetto|**Ctrl**+**Maiusc**+**N**|
 |Aprire un progetto o una soluzione (non un sito)|**Ctrl**+**Maiusc**+**O**|
 |Chiudere una soluzione|**CTRL**+**MAIUSC**+**C**|
-|Salvare una copia della soluzione o del sito|**Ctrl**+**Maiusc**+**P**|
+|Salvare una copia della soluzione o del sito|**CTRL**+**MAIUSC**+**P**|
 |Aggiungere un elemento esistente al progetto|**Ctrl**+**I**|
 |Aggiungere un riferimento a una DLL (WPF)|**Alt**+**Maiusc**+**R**|
 |Compilare il progetto|**Ctrl**+**Maiusc**+**B**|
@@ -33,29 +33,29 @@ ms.locfileid: "72666834"
 
 ## <a name="document-shortcuts"></a>Tasti di scelta rapida per i documenti
 
-|Per eseguire questa operazione|Seguire questa procedura|
+|Operazione da eseguire|Eseguire questa operazione|
 |----------------|-------------|
 |Spostarsi tra i documenti aperti|**CTRL**+**TAB**|
 |Salvare il documento attivo|**CTRL**+**S**|
 |Salvare tutti i documenti|**CTRL**+**MAIUSC**+**S**|
 |Chiudere il documento attivo|**CTRL**+**W**|
 |Chiudere tutti i documenti aperti|**CTRL**+**MAIUSC**+**W**|
-|Annullare l'ultima operazione|**Ctrl**+Z|
+|Annullare l'ultima azione|**Ctrl**+Z|
 |Ripetere l'ultima operazione annullata|**Ctrl**+Y o **Ctrl**+**Maiusc**+**Z**|
 |Creare un'annotazione in fase di progettazione|**Ctrl**+**Maiusc**+**T**|
 |Taglia|**Ctrl**+**X**|
 |Copia|**Ctrl**+**C**|
 |Incolla|**Ctrl**+**V**|
-|Eliminazione|**Eliminazione**|
+|Elimina|**Eliminazione**|
 |Trovare testo (solo visualizzazione XAML o editor JavaScript)|**CTRL**+**F**|
 |Trovare l'occorrenza successiva del testo (solo visualizzazione XAML o editor JavaScript)|**F3** o **Ctrl**+**H**|
 
 ## <a name="object-shortcuts"></a>Tasti di scelta rapida per gli oggetti
 
-|Per eseguire questa operazione|Seguire questa procedura|
+|Operazione da eseguire|Eseguire questa operazione|
 |----------------|-------------|
 |Creare un nuovo elemento|**CTRL**+**N**|
-|Duplicare un oggetto|Tenere premuto **Alt** e trascinare l'oggetto|
+|Duplicare un oggetto|Tenere premuto **ALT** e trascinare l'oggetto|
 |Assegnare un nuovo elemento padre a un oggetto|Trascinare l'oggetto su un pannello di layout e premere **Alt**|
 |Modificare il testo in un controllo|**F2** (**Esc** per uscire)|
 |Modificare un controllo (WPF)|**CTRL**+**E**|
@@ -64,8 +64,8 @@ ms.locfileid: "72666834"
 |Impostare dimensioni uguali per gli oggetti selezionati|**Ctrl**+**Maiusc**+**9**|
 |Capovolgere orizzontalmente l'oggetto selezionato|**Ctrl**+**Maiusc**+**3**|
 |Capovolgere verticalmente l'oggetto selezionato|**Ctrl**+**Maiusc**+**4**|
-|Selezionare più oggetti|Tenere premuto **Ctrl**|
-|Selezionare più oggetti adiacenti|Tenere premuto **Maiusc**|
+|Selezionare più oggetti|Tenere premuto **CTRL**|
+|Selezionare più oggetti adiacenti|Tenere premuto **MAIUSC**|
 |Adattare la selezione alle dimensioni dello schermo|**Ctrl**+**9**|
 |Bloccare il contenitore attivo|**Ctrl**+**Maiusc**+**D**|
 |Spostare gli oggetti selezionati|Tasti di **direzione**|
@@ -93,7 +93,7 @@ ms.locfileid: "72666834"
 
 ## <a name="view-shortcuts"></a>Tasti di scelta rapida per le visualizzazioni
 
-|Per eseguire questa operazione|Seguire questa procedura|
+|Operazione da eseguire|Eseguire questa operazione|
 |----------------|-------------|
 |Spostarsi tra le visualizzazioni **Progettazione**, **Codice** e **Doppia visualizzazione**|**F11**|
 |Ingrandire la tavola da disegno|**Ctrl**+**segno di uguale** ( **=** )|
@@ -109,7 +109,7 @@ ms.locfileid: "72666834"
 
 ## <a name="workspace-shortcuts"></a>Tasti di scelta rapida per l'area di lavoro
 
-|Per eseguire questa operazione|Seguire questa procedura|
+|Operazione da eseguire|Eseguire questa operazione|
 |----------------|-------------|
 |Spostarsi tra le aree di lavoro **Animazione** e **Progettazione**|**Ctrl**+**F11**|
 |Visualizzare o nascondere il pannello **Asset**|**Ctrl**+**punto**|
@@ -117,4 +117,4 @@ ms.locfileid: "72666834"
 |Mostrare o nascondere tutti i pannelli|**F4**|
 |Reimpostare il layout area di lavoro attiva|**Ctrl**+**Maiusc**+**R**|
 |Scorrere l'area di lavoro|Tenere premuta la **barra spaziatrice**|
-|Usare temporaneamente lo strumento **Seleziona** (mentre è selezionato un altro strumento)|Tenere premuto **Ctrl**|
+|Usare temporaneamente lo strumento **Seleziona** (mentre è selezionato un altro strumento)|Tenere premuto **CTRL**|

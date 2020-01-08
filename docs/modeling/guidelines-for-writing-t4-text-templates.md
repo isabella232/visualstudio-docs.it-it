@@ -2,17 +2,17 @@
 title: Linee guida per la scrittura di modelli di testo T4
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b1a8c70a0e7ec95e0545ecf3caf932f582b3c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667283"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596541"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Linee guida per la scrittura di modelli di testo T4
 
@@ -115,7 +115,7 @@ In **MyReportText-methods.cs**:
 
 Consenti codice personalizzato: specificare i punti di estensione.
 
-Provare a generare metodi virtuali nei blocchi di funzionalità \< # + Class # >. In questo modo, è possibile usare un singolo modello in molti contesti senza alcuna modifica. Anziché modificare il modello, è possibile costruire una classe derivata che fornisca la logica aggiuntiva minima. La classe derivata può essere di codice normale oppure può essere un modello in fase di esecuzione.
+Provare a generare metodi virtuali nei blocchi di funzionalità \<# + Class # >. In questo modo, è possibile usare un singolo modello in molti contesti senza alcuna modifica. Anziché modificare il modello, è possibile costruire una classe derivata che fornisca la logica aggiuntiva minima. La classe derivata può essere di codice normale oppure può essere un modello in fase di esecuzione.
 
 Ad esempio, in MyStandardRunTimeTemplate.tt:
 
@@ -139,7 +139,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Raccolta dati separata dalla generazione del testo.
 
-Provare a evitare di combinare i blocchi di calcolo e di testo. In ogni modello di testo usare il primo \< # blocco di codice # > per impostare le variabili ed eseguire calcoli complessi. Dal primo blocco di testo fino alla fine del modello o il primo \< # + classe blocco di funzionalità # >, evitare espressioni lunghe ed evitare cicli e condizionali a meno che non contengano blocchi di testo. Questa procedura rende il modello più semplice da leggere e gestire.
+Provare a evitare di combinare i blocchi di calcolo e di testo. In ogni modello di testo usare il primo \<# blocco di codice # > per impostare le variabili ed eseguire calcoli complessi. Dal primo blocco di testo fino alla fine del modello o il primo \<# + classe blocco di funzionalità # >, evitare espressioni lunghe ed evitare cicli e condizionali a meno che non contengano blocchi di testo. Questa procedura rende il modello più semplice da leggere e gestire.
 
 Non usare `.tt` per i file di inclusione.
 
@@ -151,7 +151,7 @@ Scrivere un esempio del codice o del testo che si desidera generare e verificare
 
 Provare a usare i modelli tipizzati.
 
-Sebbene sia possibile creare uno schema di database o XML per i modelli, può essere utile creare un linguaggio specifico di dominio (DSL). Un linguaggio DSL presenta il vantaggio di generare una classe per rappresentare ogni nodo nello schema e le proprietà per rappresentare gli attributi. Ciò significa che è possibile programmare in termini di modello di business. Esempio:
+Sebbene sia possibile creare uno schema di database o XML per i modelli, può essere utile creare un linguaggio specifico di dominio (DSL). Un linguaggio DSL presenta il vantaggio di generare una classe per rappresentare ogni nodo nello schema e le proprietà per rappresentare gli attributi. Ciò significa che è possibile programmare in termini di modello di business. Ad esempio:
 
 ```
 Team Members:

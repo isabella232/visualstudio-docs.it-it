@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648892"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587056"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 
@@ -37,7 +37,7 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *data source
 > [!NOTE]
 > Se non si utilizzano funzionalità di data binding, set di dati, Entity Framework, LINQ to SQL, WCF o SharePoint, il concetto di "origine dati" non è applicabile. È sufficiente connettersi direttamente al database usando gli oggetti SqlCommand e comunicare direttamente con il database.
 
-Per creare e modificare origini dati, è possibile utilizzare la **Configurazione guidata origine dati** in un'applicazione Windows Forms o Windows Presentation Foundation. Per Entity Framework, creare innanzitutto le classi di entità e quindi avviare la procedura guidata selezionando **progetto**  > **Aggiungi nuova origine dati** , descritta più dettagliatamente più avanti in questo articolo.
+Per creare e modificare origini dati, è possibile utilizzare la **Configurazione guidata origine dati** in un'applicazione Windows Forms o Windows Presentation Foundation. Per Entity Framework, creare innanzitutto le classi di entità e quindi avviare la procedura guidata selezionando **progetto** > **Aggiungi nuova origine dati** , descritta più dettagliatamente più avanti in questo articolo.
 
 ![Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -60,13 +60,13 @@ Nella figura seguente viene illustrato un set di dati che è stato rilasciato in
 
 ### <a name="dataset"></a>Set di dati
 
-Per creare un set di dati come origine dati, eseguire la **Configurazione guidata origine dati** selezionando **progetto**  > **Aggiungi nuova origine dati**. Scegliere il tipo di origine dati del **database** e seguire le istruzioni per specificare una connessione al database nuova o esistente o un file di database.
+Per creare un set di dati come origine dati, eseguire la **Configurazione guidata origine dati** selezionando **progetto** > **Aggiungi nuova origine dati**. Scegliere il tipo di origine dati del **database** e seguire le istruzioni per specificare una connessione al database nuova o esistente o un file di database.
 
 ### <a name="entity-classes"></a>Classi di entità
 
 Per creare un modello di Entity Framework come origine dati:
 
-1. Eseguire la **procedura guidata Entity Data Model** per creare le classi di entità. Selezionare **progetto**  > **aggiungi nuovo elemento**  > **Entity Data Model ADO.NET**.
+1. Eseguire la **procedura guidata Entity Data Model** per creare le classi di entità. Selezionare **progetto** > **aggiungi nuovo elemento** > **Entity Data Model ADO.NET**.
 
    ![Nuovo elemento del progetto del modello di Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
@@ -90,7 +90,7 @@ Quando si crea un'origine dati da un servizio, Visual Studio aggiunge un riferim
 
 - [Servizi WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- Servizi Web
+- servizi Web
 
     > [!NOTE]
     > Gli elementi visualizzati nei **Data source** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, viene visualizzato alcun elemento nel **Data source** finestra una volta completata la procedura guidata. Questo perché i set di dati non tipizzati non forniscono uno schema e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.

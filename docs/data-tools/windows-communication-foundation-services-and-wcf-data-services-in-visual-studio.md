@@ -30,17 +30,17 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8654e42db8ec2a285c9104c6f43bc34beb22ad22
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: abcfde777223ada130e06ab7766319e1d982258c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806964"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585938"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servizi Windows Communication Foundation e dati WCF in Visual Studio
 
@@ -52,13 +52,13 @@ Windows Communication Foundation (WCF) è un framework unificato per la creazion
 
 ### <a name="what-are-wcf-data-services"></a>Che cosa sono WCF Data Services
 
-WCF Data Services è un'implementazione dello standard del protocollo OData (Open Data).  WCF Data Services consente di esporre i dati tabulari come un set di API REST, consentendo di restituire i dati usando verbi HTTP standard come GET, POST, PUT o DELETE. Sul lato server, WCF Data Services verranno sostituiti da [API Web ASP.NET](https://dotnet.microsoft.com/apps/aspnet/apis) per la creazione di nuovi servizi OData. La libreria client di WCF Data Services continua a essere una scelta ottimale per l'utilizzo di servizi OData in un'applicazione .NET da Visual Studio (**Project**  > **Aggiungi riferimento al servizio**). Per altre informazioni, vedere [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).
+WCF Data Services è un'implementazione dello standard del protocollo OData (Open Data).  WCF Data Services consente di esporre i dati tabulari come un set di API REST, consentendo di restituire i dati usando verbi HTTP standard come GET, POST, PUT o DELETE. Sul lato server, WCF Data Services verranno sostituiti da [API Web ASP.NET](https://dotnet.microsoft.com/apps/aspnet/apis) per la creazione di nuovi servizi OData. La libreria client di WCF Data Services continua a essere una scelta ottimale per l'utilizzo di servizi OData in un'applicazione .NET da Visual Studio (**Project** > **Aggiungi riferimento al servizio**). Per altre informazioni, vedere [WCF Data Services 4.5](/dotnet/framework/data/wcf).
 
 ### <a name="wcf-programming-model"></a>Modello di programmazione WCF
 
 Il modello di programmazione WCF è basato sulla comunicazione tra due entità, ovvero un servizio WCF e un client WCF. Il modello di programmazione è incapsulato nello spazio dei nomi <xref:System.ServiceModel> in .NET.
 
-### <a name="wcf-service"></a>Servizio WCF
+### <a name="wcf-service"></a>back-end
 
 Un servizio WCF si basa su un'interfaccia che definisce un contratto tra il servizio e il client. È contrassegnato con un attributo <xref:System.ServiceModel.ServiceContractAttribute>, come illustrato nel codice seguente:
 
@@ -171,7 +171,7 @@ In tal caso, è possibile specificare il `endpointConfigurationName` come parame
 
      Se il riferimento al servizio fornisce più endpoint, saranno presenti due o più tag `<Endpoint`.
 
-4. All'interno del tag `<EndPoint>` è presente un parametro di `"` `name="`*nomeservizio* (dove *nomeservizio* rappresenta il nome di un endpoint). Si tratta del nome dell'endpoint che può essere passato all'overload `endpointConfigurationName As String` di un costruttore per un riferimento al servizio.
+4. All'interno del tag `<EndPoint>` è presente un parametro di`"` `name="`*nomeservizio* (dove *nomeservizio* rappresenta il nome di un endpoint). Si tratta del nome dell'endpoint che può essere passato all'overload `endpointConfigurationName As String` di un costruttore per un riferimento al servizio.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Procedura: chiamare un metodo di servizio in modo asincrono
 
@@ -263,7 +263,7 @@ Per evitare questo problema, i tipi negli assembly a cui si fa riferimento vengo
 | [Procedura dettagliata: Creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fornisce istruzioni dettagliate per la creazione di un dataset tipizzato e la separazione del codice degli elementi TableAdapter e dataset in più progetti. |
 | [Finestra di dialogo Configura riferimento al servizio](../data-tools/configure-service-reference-dialog-box.md) | Vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Configura riferimento al servizio** . |
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Riferimenti
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>

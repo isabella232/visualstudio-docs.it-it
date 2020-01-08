@@ -13,18 +13,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c38ff2fcc762ccc202e2a02ecd36e942db75ad3d
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061076"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405204"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Creare visualizzazioni personalizzate di C++ oggetti nel debugger usando il Framework natvis
 
 Il Framework *natvis* di Visual Studio Personalizza la modalità di visualizzazione dei tipi nativi nelle finestre delle variabili del debugger, ad esempio le finestre variabili **locali** e **espressioni di controllo** e nei **suggerimenti**dati. Le visualizzazioni di natvis consentono di rendere più visibili i tipi creati durante il debug.
 
 Natvis sostituisce il file *autoexp. dat* nelle versioni precedenti di Visual Studio con sintassi XML, migliore diagnostica, controllo delle versioni e supporto di più file.
+
+> [!NOTE]
+> Le personalizzazioni di natvis funzionano con classi e struct, ma non con typedef.
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Visualizzazioni di natvis
 
@@ -69,9 +72,9 @@ Visual Studio fornisce alcuni file *natvis* nella cartella *%VSInstallDir%\Commo
 
 **Per aggiungere un nuovo file con *estensione natvis* :**
 
-1. Selezionare il C++ nodo del progetto in **Esplora soluzioni**e selezionare **progetto**  > **Aggiungi nuovo elemento**oppure fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi**  > **nuovo elemento**.
+1. Selezionare il C++ nodo del progetto in **Esplora soluzioni**e selezionare **progetto** > **Aggiungi nuovo elemento**oppure fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi** > **nuovo elemento**.
 
-1. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Visual C++**   > **Utility**  > **file di visualizzazione debugger (. natvis)** .
+1. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Visual C++**  > **Utility** > **file di visualizzazione debugger (. natvis)** .
 
 1. Assegnare un nome al file e selezionare **Aggiungi**.
 
@@ -164,7 +167,7 @@ Quando il debugger rileva errori in una voce di visualizzazione, li ignora. Visu
 
 **Per attivare la diagnostica natvis:**
 
-- In **strumenti**  > **Opzioni** (o**Opzioni** **debug**  > ) > **debug**  > **finestra di output**, impostare **i messaggi di diagnosticaC++ natvis (solo)** su **errore**, **avviso** , o **verbose**, quindi selezionare **OK**.
+- In **strumenti** > **Opzioni** (o **Opzioni** **debug** > ) > **debug** > **finestra di output**, impostare **i messaggi di diagnosticaC++ natvis (solo)** su **errore**, **avviso**o **dettagliato**, quindi selezionare **OK**.
 
 Gli errori vengono visualizzati nella finestra **output** .
 
@@ -233,7 +236,7 @@ Nell'esempio seguente la visualizzazione si applica solo al tipo di `BaseClass`:
 
 #### <a name="priority-attribute"></a>Attributo Priority
 
-L'attributo facoltativo `Priority` specifica l'ordine in cui utilizzare le definizioni alternative, se l'analisi di una definizione ha esito negativo. I valori possibili di `Priority` sono: `Low`, `MediumLow`, `Medium`, `MediumHigh` e `High`. Il valore predefinito è `Medium`. L'attributo `Priority` distingue solo tra le priorità incluse nello stesso file con *estensione natvis* .
+L'attributo facoltativo `Priority` specifica l'ordine in cui utilizzare le definizioni alternative, se l'analisi di una definizione ha esito negativo. I valori possibili di `Priority` sono: `Low`, `MediumLow`,`Medium`, `MediumHigh`e `High`. Il valore predefinito è `Medium`. L'attributo `Priority` distingue solo tra le priorità incluse nello stesso file con *estensione natvis* .
 
 Nell'esempio seguente viene prima di tutto analizzata la voce che corrisponde a 2015 STL. Se l'analisi non riesce, usa la voce alternativa per la versione 2013 di STL:
 
@@ -269,7 +272,7 @@ Nell'esempio seguente viene prima di tutto analizzata la voce che corrisponde a 
 
 ### <a name="BKMK_Condition_attribute"></a> Attributo Condition
 
-L'attributo `Condition` facoltativo è disponibile per molti elementi di visualizzazione e specifica quando usare una regola di visualizzazione. Se l'espressione all'interno dell'attributo Condition viene risolta in `false`, la regola di visualizzazione non è applicabile. Se restituisce `true` o non esiste alcun attributo `Condition`, viene applicata la visualizzazione. È possibile usare questo attributo per la logica if-else nelle voci di visualizzazione.
+L'attributo `Condition` facoltativo è disponibile per molti elementi di visualizzazione e specifica quando usare una regola di visualizzazione. Se l'espressione all'interno dell'attributo Condition viene risolta in `false`, la regola di visualizzazione non è applicabile. Se restituisce `true`o non esiste alcun attributo `Condition`, viene applicata la visualizzazione. È possibile usare questo attributo per la logica if-else nelle voci di visualizzazione.
 
 La visualizzazione seguente, ad esempio, include due elementi `DisplayString` per un tipo di puntatore intelligente. Quando il membro `_Myptr` è vuoto, la condizione del primo elemento `DisplayString` viene risolta in `true`, in modo da visualizzare il form. Quando il membro `_Myptr` non è vuoto, la condizione restituisce `false`e viene visualizzato il secondo elemento `DisplayString`.
 
@@ -381,7 +384,7 @@ Il nodo `Expand` facoltativo Personalizza gli elementi figlio di un tipo visuali
 
 #### <a name="BKMK_Item_expansion"></a> Espansione di Item
 
- L'elemento `Item` è l'elemento più semplice e comune in un nodo `Expand`. `Item` definisce un singolo elemento figlio. Ad esempio, una classe `CRect` con i campi `top`, `left`, `right` e `bottom` presenta la seguente voce di visualizzazione:
+ L'elemento `Item` è l'elemento più semplice e comune in un nodo `Expand`. `Item` definisce un singolo elemento figlio. Ad esempio, una classe `CRect` con i campi `top`, `left`, `right`e `bottom` presenta la seguente voce di visualizzazione:
 
 ```xml
 <Type Name="CRect">
@@ -508,7 +511,7 @@ Il debugger valuta le espressioni `NextPointer` e `ValueNode` nel contesto dell'
 `ValueNode` possono essere lasciati vuoti o usare `this` per fare riferimento al nodo `LinkedListItems` stesso.
 
 #### <a name="customlistitems-expansion"></a>Espansione CustomListItems
-L'espansione `CustomListItems` consente di scrivere una logica personalizzata per attraversare una struttura dei dati, ad esempio una tabella hash. Usare `CustomListItems` per visualizzare le strutture dei dati in grado C++ di usare espressioni per tutti gli elementi necessari per la valutazione, ma non è sufficiente adattare lo stamp per `ArrayItems`, `IndexListItems` o `LinkedListItems`.
+L'espansione `CustomListItems` consente di scrivere una logica personalizzata per attraversare una struttura dei dati, ad esempio una tabella hash. Usare `CustomListItems` per visualizzare le strutture dei dati in grado C++ di usare espressioni per tutti gli elementi necessari per la valutazione, ma non è sufficiente adattare lo stamp per `ArrayItems`, `IndexListItems`o `LinkedListItems`.
 
 Il Visualizzatore seguente per `CAtlMap` è un ottimo esempio in cui `CustomListItems` è appropriato.
 
@@ -579,7 +582,7 @@ Il Visualizzatore seguente per `CAtlMap` è un ottimo esempio in cui `CustomList
 </Type>
 ```
 
-La sintassi è simile al nodo `LinkedListItems`. `LeftPointer`, `RightPointer` e `ValueNode` vengono valutati nel contesto della classe del nodo della struttura ad albero. `ValueNode` possono essere lasciati vuoti o usare `this` per fare riferimento al nodo `TreeItems` stesso.
+La sintassi è simile al nodo `LinkedListItems`. `LeftPointer`, `RightPointer`e `ValueNode` vengono valutati nel contesto della classe del nodo della struttura ad albero. `ValueNode` possono essere lasciati vuoti o usare `this` per fare riferimento al nodo `TreeItems` stesso.
 
 #### <a name="BKMK_ExpandedItem_expansion"></a> Espansione di ExpandedItem
  L'elemento `ExpandedItem` genera una visualizzazione figlio aggregata visualizzando le proprietà delle classi base o dei membri dati come se fossero figli del tipo visualizzato. Il debugger valuta l'espressione specificata e accoda i nodi figlio del risultato all'elenco figlio del tipo visualizzato.
@@ -665,9 +668,9 @@ Il seguente è un esempio di elemento UIVisualizer:
 </AutoVisualizer>
 ```
 
-- Una coppia `ServiceId`  -  `Id` attributo identifica un `UIVisualizer`. Il `ServiceId` è il GUID del servizio esposto dal pacchetto del visualizzatore. `Id` è un identificatore univoco che distingue i visualizzatori, se un servizio ne fornisce più di uno. Nell'esempio precedente, lo stesso servizio del visualizzatore fornisce due visualizzatori.
+- Una coppia `ServiceId` - `Id` attributo identifica un `UIVisualizer`. Il `ServiceId` è il GUID del servizio esposto dal pacchetto del visualizzatore. `Id` è un identificatore univoco che distingue i visualizzatori, se un servizio ne fornisce più di uno. Nell'esempio precedente, lo stesso servizio del visualizzatore fornisce due visualizzatori.
 
-- L'attributo `MenuName` definisce il nome di un visualizzatore da visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Esempio:
+- L'attributo `MenuName` definisce il nome di un visualizzatore da visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Ad esempio:
 
   ![Menu di scelta rapida del menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Menu di scelta rapida UIVisualizer")
 
@@ -686,4 +689,4 @@ Ogni tipo definito nel file *natvis* deve elencare in modo esplicito tutti i vis
 
 È molto più lavoro scrivere un visualizzatore personalizzato rispetto a una definizione natvis XML, ma non sono disponibili vincoli sui vincoli che natvis o non supporta. I visualizzatori personalizzati hanno accesso al set completo di API di estendibilità del debugger, che possono eseguire query e modificare il processo del debug o comunicare con altre parti di Visual Studio.
 
- È possibile utilizzare gli attributi `Condition`, `IncludeView` e `ExcludeView` negli elementi `CustomVisualizer`.
+ È possibile utilizzare gli attributi `Condition`, `IncludeView`e `ExcludeView` negli elementi `CustomVisualizer`.

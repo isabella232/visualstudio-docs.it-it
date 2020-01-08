@@ -4,15 +4,15 @@ ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - load testing, quickstart
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8d74072c506c4ce48ee93b759ba24aff23aa9419
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646675"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566410"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Guida introduttiva: Creare un progetto di test di carico
 
@@ -44,9 +44,9 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
 ::: moniker range="vs-2017"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
-2. Scegliere **File** > **Nuovo** > **Progetto** dalla barra dei menu.
+2. Scegliere **File** > **nuovo** **progetto** > dalla barra dei menu.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -60,7 +60,7 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
 ::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
@@ -82,11 +82,11 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
    ![Prima pagina della Creazione guidata test di carico](media/load-test-wizard-page-1.png)
 
-1. Scegliere **Avanti** per eseguire la procedura guidata fino a raggiungere la pagina **Aggiungere i test a uno scenario di test di carico e modificare la combinazione di test**. Scegliere il pulsante **Aggiungi** .
+1. Scegliere **Avanti** per eseguire la procedura guidata fino a raggiungere la pagina **Aggiungere i test a uno scenario di test di carico e modificare la combinazione di test**. Scegliere il pulsante **Aggiungi**.
 
    Si apre la finestra di dialogo **Aggiungi test**.
 
-1. Sotto **Test disponibili** selezionare **WebTest1** e quindi scegliere la freccia destra per spostarlo nella finestra **Test selezionati**. Fare clic sul pulsante **OK**.
+1. Sotto **Test disponibili** selezionare **WebTest1** e quindi scegliere la freccia destra per spostarlo nella finestra **Test selezionati**. Fare clic sul pulsante **OK** .
 
    ![Finestra di dialogo Aggiungi test](media/add-tests-dialog-box.png)
 

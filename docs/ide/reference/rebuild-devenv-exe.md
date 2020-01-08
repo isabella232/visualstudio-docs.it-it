@@ -9,17 +9,17 @@ helpviewer_keywords:
 - /Rebuild Devenv switch
 - applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da73d37542bbdd7babd956a64ed78c714be7101
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 76fe4bcf3441163604d93e9264ed6f78fcf0224b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655630"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565617"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
@@ -31,11 +31,11 @@ Pulisce e quindi compila la configurazione della soluzione specificata.
 devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 
 - *SolutionName*
 
-  Obbligatorio. Il percorso completo e il nome del file della soluzione.
+  Richiesto. Il percorso completo e il nome del file della soluzione.
 
 - *SolnConfigName*
 
@@ -45,11 +45,11 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
   Parametro facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il nome visualizzato del progetto o un percorso relativo dalla cartella *SolutionName* al file di progetto. È anche possibile immettere il percorso completo e il nome del file di progetto.
 
-- `/ProjectConfig` *ProjConfigName*
+- `/ProjectConfig` *projnameconfig*
 
   Parametro facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da usare per la ricompilazione del `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se si specifica questa opzione, viene eseguito l'override dell'argomento *SolnConfigName*.
 
-- `/Out` *OutputFilename*
+- `/Out` *OutputFileName*
 
   Parametro facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ce0a8030253e69b35deda379cffcf7475dc8bb62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6e57f92a3f45983321a866f3524974ea99dba82
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653628"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589153"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Procedura: Creare un plug-in a livello di richiesta
 
@@ -65,16 +65,16 @@ Ogni plug-in delle richieste test prestazioni web dispone di un metodo PreReques
 13. Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 
     > [!NOTE]
-    > È possibile esporre il numero di proprietà desiderato dai plug-in; è sufficiente renderle pubbliche, impostabili e di un tipo di base quale Integer, Boolean o String. È anche possibile modificare le proprietà del plug-in di test delle prestazioni Web in un secondo momento utilizzando la finestra Proprietà.
+    > È possibile esporre il numero di proprietà desiderato dai plug-in; è sufficiente renderle pubbliche, impostabili e di un tipo di base quale Integer, Boolean o String. È anche possibile modificare le proprietà del plug-in di test delle prestazioni web in un secondo momento utilizzando la finestra Proprietà.
 
 14. Scegliere **OK**.
 
      Il plug-in viene aggiunto alla cartella **Plug-in richieste** che è una cartella figlio della richiesta HTTP.
 
     > [!WARNING]
-    > Quando si esegue un test delle prestazioni web o un test di carico in cui viene utilizzato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
+    > Quando si esegue un test delle prestazioni Web o un test di carico in cui viene usato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
     >
-    > **Richiesta non riuscita: eccezione nell'evento > \<plug: non è stato possibile caricare il nome del plug-in del file o dell'assembly ' \<' ". file dll >, Version = \<n. n. n. n >, Culture = neutral, PublicKeyToken = null ' o una delle relative dipendenze. Il sistema non è in grado di trovare il file specificato.**
+    > **Richiesta non riuscita: eccezione nel plug-in \<> evento: non è stato possibile caricare il nome del plug-in del file o dell'assembly '\<' ". file dll >, Version =\<n. n. n. n >, Culture = neutral, PublicKeyToken = null ' o una delle relative dipendenze. Il sistema non è in grado di trovare il file specificato.**
     >
     > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)** , ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
     >

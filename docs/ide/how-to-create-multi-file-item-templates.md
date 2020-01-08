@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655934"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593733"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedura: Creare modelli di elementi a più file
 
@@ -36,7 +36,7 @@ Per i modelli di elementi a più file è necessario specificare i parametri per 
 
 1. Creare il modello di elemento come se si creasse manualmente un modello di elemento a file singolo, ma includere ogni file che costituisce l'elemento a più file.
 
-1. Nel file XML con estensione *vstemplate*, aggiungere un elemento `ProjectItem` per ogni singolo file, quindi aggiungere un attributo `TargetFileName` a questo elemento. Impostare il valore dell'attributo `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Esempio:
+1. Nel file XML con estensione *vstemplate*, aggiungere un elemento `ProjectItem` per ogni singolo file, quindi aggiungere un attributo `TargetFileName` a questo elemento. Impostare il valore dell'attributo `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Ad esempio:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">

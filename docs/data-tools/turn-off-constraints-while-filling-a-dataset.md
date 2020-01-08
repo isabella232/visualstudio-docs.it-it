@@ -15,23 +15,23 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - constraints [Visual Basic], suspending during dataset update
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8ab7bb827c478360a64d65f44af6770c77ebf77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13cde04c3a10833c25fdc351d730b866f876e8da
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648128"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586133"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Disattivare i vincoli durante il riempimento di un set di dati
 
 Se un set di dati contiene vincoli, ad esempio vincoli di chiave esterna, può generare errori correlati all'ordine delle operazioni eseguite sul set di dati. Ad esempio, il caricamento di record figlio prima del caricamento dei record padre correlati può violare un vincolo e causare un errore. Non appena si carica un record figlio, il vincolo controlla il record padre correlato e genera un errore.
 
-Se non è disponibile alcun meccanismo per consentire la sospensione temporanea dei vincoli, viene generato un errore ogni volta che si tenta di caricare un record nella tabella figlio. Un altro modo per sospendere tutti i vincoli in un set di dati consiste nell'<xref:System.Data.DataRow.BeginEdit%2A> e <xref:System.Data.DataRow.EndEdit%2A> proprietà.
+Se non è disponibile alcun meccanismo per consentire la sospensione temporanea dei vincoli, viene generato un errore ogni volta che si tenta di caricare un record nella tabella figlio. Un altro modo per sospendere tutti i vincoli in un set di dati consiste nell'<xref:System.Data.DataRow.BeginEdit%2A>e <xref:System.Data.DataRow.EndEdit%2A> proprietà.
 
 > [!NOTE]
 > Gli eventi di convalida, ad esempio <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging>, non verranno generati quando i vincoli sono spenti.

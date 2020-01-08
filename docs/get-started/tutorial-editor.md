@@ -4,19 +4,19 @@ ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f78c3dcb8cadadd103eb6a09f956bff97a4a8f03
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647843"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595267"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
@@ -44,13 +44,13 @@ Per iniziare si crea un nuovo file e si aggiunge codice al file.
 
 ::: moniker range="vs-2017"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio. Premere **ESC** oppure fare clic su **Continua senza codice** nella finestra iniziale per aprire l'ambiente di sviluppo.
+1. Apri Visual Studio. Premere **ESC** oppure fare clic su **Continua senza codice** nella finestra iniziale per aprire l'ambiente di sviluppo.
 
 ::: moniker-end
 
@@ -182,7 +182,7 @@ Quando si inizia a creare codice è facile commettere errori e quindi dover modi
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
+> [Guida introduttiva: progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

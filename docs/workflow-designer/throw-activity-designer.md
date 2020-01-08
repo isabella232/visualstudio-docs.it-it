@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Throw.UI
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6a530888c7c28c5c1556114db03a6cd7369fe6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 650082ab0e4f8576b7028b8011c88bf5d93b2afd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649855"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593096"
 ---
 # <a name="throw-activity-designer"></a>ActivityDesigner Throw
 
@@ -35,9 +35,9 @@ Accedere all'ActivityDesigner **throw** nella categoria **Gestione errori** dell
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Throw> e ne viene descritta la modalità di uso nella finestra di progettazione.
 
-|Nome proprietà|Richiesto|Utilizzo|
+|Nome proprietà:|Richiesto|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.Throw>. Il valore predefinito è Throw.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.Throw>. Il valore predefinito è Throw.|
 |<xref:System.Activities.Statements.Throw.Exception%2A>|True|Eccezione da generare. Questa eccezione deve derivare da <xref:System.Exception>. Per specificare l'eccezione, digitare un'espressione Visual Basic nella griglia delle proprietà.|
 
 ## <a name="see-also"></a>Vedere anche

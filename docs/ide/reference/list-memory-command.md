@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListMemory command
 - list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bb92f3ac3420f146fdcd39b5925f7b3a517959a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748711"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568711"
 ---
 # <a name="list-memory-command"></a>Comando Elenca memoria
 Visualizza il contenuto dell'intervallo di memoria specificato.
@@ -31,7 +31,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 [/Hex|Signed|Unsigned] [expression]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `expression`
 
 Parametro facoltativo. L'indirizzo di memoria da cui iniziare la visualizzazione della memoria.
@@ -90,6 +90,6 @@ Di seguito viene riportato un elenco degli alias disponibili per il comando **De
 - [Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)
 - [Comando Elenca thread](../../ide/reference/list-threads-command.md)
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Finestra di comando](../../ide/reference/command-window.md)
+- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

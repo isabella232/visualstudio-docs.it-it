@@ -2,17 +2,17 @@
 title: Uso di Visualizza definizione
 ms.date: 01/10/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d4d9dd4fb7364ddadd5e7568a2f34255c393ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9eac5c8c47c208f39f74f542fbbff89c8340a93f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656519"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591346"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
 
@@ -75,7 +75,7 @@ Nella finestra **Visualizza definizione** è possibile usare questi tasti di sce
 |Consente di aprire la finestra di definizione|**ALT**+**F12**|
 |Consente di chiudere la finestra di definizione|**ESC**|
 |Consente di alzare di livello la finestra di definizione in una scheda documento normale|**MAIUSC**+**ALT**+**Home**|
-|Consente di spostarsi tra le finestre di definizione|**CTRL**+**ALT** + **-** e **CTRL**+**ALT**+ **=**|
+|Consente di spostarsi tra le finestre di definizione|**CTRL**+**ALT**+ **-** e **CTRL**+**ALT**+ **=**|
 |Consente di spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
 |Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|**MAIUSC**+**ESC**|
 

@@ -6,23 +6,23 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14b44a16f6652fe8d94669f99107ebe59b790a0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639163"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585951"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procedura dettagliata: personalizzare il comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità
 
 Gli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) forniscono un'area di progettazione visiva per la creazione e la modifica di classi LINQ to SQL (classi di entità) basate sugli oggetti in un database. Utilizzando [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), è possibile utilizzare la tecnologia LINQ per accedere ai database SQL. Per altre informazioni, vedere [LINQ (Language Integrated Query)](/dotnet/csharp/linq/).
 
-Per impostazione predefinita, la logica per eseguire gli aggiornamenti viene fornita dalla LINQ to SQL Runtime. Il runtime crea istruzioni predefinite di `Insert`, `Update` e `Delete` in base allo schema della tabella, ovvero le definizioni delle colonne e le informazioni sulla chiave primaria. Quando non si vuole usare il comportamento predefinito, è possibile configurare il comportamento di aggiornamento e definire stored procedure specifiche per eseguire i comandi di inserimento, aggiornamento ed eliminazione necessari per l'uso dei dati nel database. Questa operazione può essere eseguita anche quando non viene generato il comportamento predefinito, ad esempio quando viene eseguito il mapping delle classi di entità alle visualizzazioni. Inoltre, è possibile eseguire l'override del comportamento di aggiornamento predefinito quando il database richiede l'accesso alla tabella tramite stored procedure. Per ulteriori informazioni, vedere [personalizzazione di operazioni utilizzando stored procedure](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+Per impostazione predefinita, la logica per eseguire gli aggiornamenti viene fornita dalla LINQ to SQL Runtime. Il runtime crea istruzioni predefinite di `Insert`, `Update`e `Delete` in base allo schema della tabella, ovvero le definizioni delle colonne e le informazioni sulla chiave primaria. Quando non si vuole usare il comportamento predefinito, è possibile configurare il comportamento di aggiornamento e definire stored procedure specifiche per eseguire i comandi di inserimento, aggiornamento ed eliminazione necessari per l'uso dei dati nel database. Questa operazione può essere eseguita anche quando non viene generato il comportamento predefinito, ad esempio quando viene eseguito il mapping delle classi di entità alle visualizzazioni. Inoltre, è possibile eseguire l'override del comportamento di aggiornamento predefinito quando il database richiede l'accesso alla tabella tramite stored procedure. Per ulteriori informazioni, vedere [personalizzazione di operazioni utilizzando stored procedure](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
 > In questa procedura dettagliata è richiesta la disponibilità delle stored procedure **InsertCustomer**, **UpdateCustomer** e **DeleteCustomer** per il database Northwind.
@@ -45,7 +45,7 @@ Durante questa procedura dettagliata si apprenderà come eseguire le attività s
 
 - Configurare la classe `Customer` per l'utilizzo di stored procedure per l'esecuzione di inserimenti, aggiornamenti ed eliminazioni.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
@@ -71,7 +71,7 @@ Poiché si utilizzano classi LINQ to SQL e si visualizzano i dati in un Windows 
 
 ### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Per creare un nuovo progetto di applicazione Windows Forms che contiene LINQ to SQL classi
 
-1. In Visual Studio scegliere **nuovo**  > **progetto**dal menu **file** .
+1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
 2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 

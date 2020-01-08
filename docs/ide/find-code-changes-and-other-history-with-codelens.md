@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538948"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588655"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -250,7 +250,7 @@ Per usare la tastiera per selezionare gli indicatori, premere e tenere premuto i
 
 ### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>D: Ricerca per categorie attivare o disattivare CodeLens o scegliere gli indicatori da visualizzare?
 
-**R:**  È possibile attivare o disattivare tutti gli indicatori, ad eccezione di Riferimenti. Passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**  >  **CodeLens**.
+**R:**  È possibile attivare o disattivare tutti gli indicatori, ad eccezione di Riferimenti. Passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **CodeLens**.
 
 Quando gli indicatori sono attivati, è possibile anche aprire le opzioni CodeLens dagli indicatori.
 
@@ -264,7 +264,7 @@ Attivare gli indicatori CodeLens a livello di file e disattivare l’utilizzo de
 
 **R:** CodeLens viene visualizzato nel codice C# e Visual Basic a livello di metodo, classe, indicizzatore e proprietà. CodeLens viene visualizzato a livello di file per tutti gli altri tipi di file.
 
-- Assicurarsi che CodeLens sia attivato. Passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**  >  **CodeLens**.
+- Assicurarsi che CodeLens sia attivato. Passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **CodeLens**.
 
 - Se il codice è archiviato in TFS, assicurarsi che l'indicizzazione del codice sia attivata usando il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](/azure/devops/server/command-line/tfsconfig-cmd).
 

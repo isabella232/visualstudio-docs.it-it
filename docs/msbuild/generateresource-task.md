@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, GenerateResource task
 - GenerateResource task [MSBuild]
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007093"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594800"
 ---
 # <a name="generateresource-task"></a>GenerateResource (attività)
 Converte file *TXT* e *RESX* (formato di risorsa basato su XML) in file binari *RESOURCES* di Common Language Runtime, che è possibile incorporare in un eseguibile binario di runtime o compilare in assembly satellite. In genere, questa attività viene usata per convertire file *TXT* o *RESX* in file *RESOURCES*. Dal punto di vista funzionale, l'attività `GenerateResource` è simile a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
@@ -31,11 +31,11 @@ Converte file *TXT* e *RESX* (formato di risorsa basato su XML) in file binari *
 ## <a name="parameters"></a>Parametri
 Nella tabella che segue vengono descritti i parametri dell'attività `GenerateResource` .
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
-|`AdditionalInputs`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene input aggiuntivi per il controllo delle dipendenze eseguito da questa attività. Ad esempio, è in genere opportuno inserire come input i file di progetto e di destinazione, in modo da consentire la rigenerazione di tutte le risorse in caso di aggiornamento.|
+|`AdditionalInputs`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Contiene input aggiuntivi per il controllo delle dipendenze eseguito da questa attività. Ad esempio, è in genere opportuno inserire come input i file di progetto e di destinazione, in modo da consentire la rigenerazione di tutte le risorse in caso di aggiornamento.|
 |`EnvironmentVariables`|Parametro `String[]` facoltativo.<br /><br /> Specifica una matrice di coppie nome/valore di variabili di ambiente che devono essere passate al file *resgen.exe* generato, oltre al normale blocco di ambiente (o all'esecuzione selettiva dell'override).|
-|`ExcludedInputPaths`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica una matrice di elementi che indicano i percorsi dai quali gli input tracciati verranno ignorati durante la verifica dell'aggiornamento.|
+|`ExcludedInputPaths`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica una matrice di elementi che indicano i percorsi dai quali gli input tracciati verranno ignorati durante la verifica dell'aggiornamento.|
 |`ExecuteAsTool`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, esegue i file *tlbimp.exe* e *aximp.exe* dal framework di destinazione appropriato in modalità out-of-process per generare gli assembly wrapper necessari. Questo parametro consente il multitargeting di `ResolveComReferences`.|
 |`FilesWritten`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene i nomi di tutti i file scritti nel disco, incluso, se presente, il file di cache. Questo parametro è particolarmente utile per le implementazioni di Clean.|
 |`MinimalRebuildFromTracking`|Parametro `Boolean` facoltativo.<br /><br /> Ottiene o imposta un'opzione che specifica se verrà usata la compilazione incrementale tracciata. Se `true`, viene attivata la compilazione incrementale. In caso contrario, verrà forzata una ricompilazione.|
@@ -44,7 +44,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GenerateRe
 |`PublicClass`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, crea una classe di risorse fortemente tipizzata come classe pubblica.|
 |`References`|Parametro `String[]` facoltativo.<br /><br /> Specifica i riferimenti per il caricamento dei tipi nei file *RESX*. Gli elementi dati dei file *RESX* possono essere di tipo .NET. Se il file *RESX* viene letto, deve essere risolto. In genere, è possibile risolverlo correttamente usando le regole di caricamento dei tipi standard. Hanno la precedenza eventuali assembly specificati in `References`.<br /><br /> Questo parametro non è obbligatorio per le risorse fortemente tipizzate.|
 |`SdkToolsPath`|Parametro `String` facoltativo.<br /><br /> Specifica il percorso degli strumenti SDK, ad esempio *resgen.exe*.|
-|`Sources`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica gli elementi da convertire. Gli elementi passati a questo parametro devono avere una delle estensioni di file seguenti:<br /><br /> -   *txt*: specifica l'estensione di un file di testo da convertire. I file di testo possono contenere solo risorse di tipo stringa.<br />-   *.resx*: specifica l'estensione di un file di risorse basato su XML da convertire.<br />-   *.restext*: specifica lo stesso formato dell'estensione *.txt*. Questa diversa estensione consente di distinguere chiaramente i file di origine che contengono risorse dagli altri file di origine nel processo di compilazione.<br />-   *.resources*: specifica l'estensione di un file di risorse da convertire.|
+|`Sources`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica gli elementi da convertire. Gli elementi passati a questo parametro devono avere una delle estensioni di file seguenti:<br /><br /> -   *TXT*: specifica l'estensione di un file di testo da convertire. I file di testo possono contenere solo risorse di tipo stringa.<br />-   *RESX*: specifica l'estensione di un file di risorse basato su XML da convertire.<br />-   *RESTEXT*: specifica lo stesso formato di *TXT*. Questa diversa estensione consente di distinguere chiaramente i file di origine che contengono risorse dagli altri file di origine nel processo di compilazione.<br />-   *RESOURCES*: specifica l'estensione di un file di risorse da convertire.|
 |`StateFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il percorso di un file di cache facoltativo usato per accelerare il controllo delle dipendenze dei collegamenti nei file di input *RESX*.|
 |`StronglyTypedClassName`|Parametro `String` facoltativo.<br /><br /> Specifica il nome della classe di risorse fortemente tipizzata. Se questo parametro non è specificato, viene usato il nome base del file di risorse.|
 |`StronglyTypedFilename`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il nome del file di origine. Se questo parametro non è specificato, viene usato il nome della classe come nome base e l'estensione viene determinata dal linguaggio. Ad esempio: *MyClass.cs*.|
@@ -60,10 +60,10 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GenerateRe
 |`TrackFileAccess`|Parametro <xref:System.Boolean> facoltativo.<br /><br /> Se true, la directory del file di input viene usata per risolvere i percorsi di file relativi.|
 |`UseSourcePath`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che è necessario usare la directory del file di input per risolvere i percorsi di file relativi.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Poiché i file *RESX* possono contenere collegamenti ad altri file di risorse, non è sufficiente confrontare i timestamp dei file *RESX* e *RESOURCES* per verificare che gli output siano aggiornati. Per questo motivo, l'attività `GenerateResource` segue i collegamenti nei file *RESX* e al tempo stesso controlla i timestamp dei file collegati. Ne consegue che, in genere, non è consigliabile usare gli attributi `Inputs` e `Outputs` nella destinazione che contiene l'attività `GenerateResource`. In questo modo, infatti, è possibile che l'attività venga ignorata anziché essere eseguita.
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 Se si usa MSBuild 4.0 come destinazione di progetti .NET 3.5, è possibile che la compilazione sulle risorse x86 non riesca. Per risolvere questo problema, è possibile compilare la destinazione come assembly AnyCPU.
 
@@ -96,4 +96,4 @@ Senza i metadati \<LogicalName>, la risorsa sarebbe denominata *myAssembly.myRes
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

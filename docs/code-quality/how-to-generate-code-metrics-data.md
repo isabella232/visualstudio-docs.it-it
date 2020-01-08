@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568846"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587472"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica del codice
 
@@ -48,7 +48,7 @@ Queste regole sono disabilitate per impostazione predefinita, ma è possibile ab
 </RuleSet>
 ```
 
-### <a name="configuration"></a>Configurazione
+### <a name="configuration"></a>Configurazione di
 
 È possibile configurare le soglie in base alle quali vengono attivate le regole di metrica del codice nel pacchetto degli analizzatori FxCop.
 
@@ -213,7 +213,7 @@ L'output XML generato assume il formato seguente:
 </CodeMetricsReport>
 ```
 
-### <a name="metricsexe"></a>Metrica. exe
+### <a name="metricsexe"></a>Metrics.exe
 
 Se non si vuole installare il pacchetto NuGet, è possibile generare e usare direttamente il file eseguibile *metrics. exe* . Per generare il file eseguibile *metrica. exe* :
 
@@ -265,5 +265,5 @@ Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` utili
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Usare la finestra Risultati metrica codice](../code-quality/working-with-code-metrics-data.md)
+- [Utilizzare la finestra Risultati metrica codice](../code-quality/working-with-code-metrics-data.md)
 - [Valori della metrica del codice](../code-quality/code-metrics-values.md)

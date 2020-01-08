@@ -10,17 +10,17 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08451c679f372cb376c6baf97a9a4d06282ba45f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 06c6244f59482825ed435226f79437da9e2c0df0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748413"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589630"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 
@@ -41,7 +41,7 @@ Un modello di testo include una combinazione del testo da generare e di codice p
 
 2. Aggiungere un file di modello di testo al progetto e assegnargli un nome con estensione **TT**.
 
-    A tale scopo, in **Esplora soluzioni**scegliere **Aggiungi**  > **nuovo elemento**dal menu di scelta rapida del progetto. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **modello di testo** dal riquadro centrale.
+    A tale scopo, in **Esplora soluzioni**scegliere **Aggiungi** > **nuovo elemento**dal menu di scelta rapida del progetto. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **modello di testo** dal riquadro centrale.
 
     Si noti che la proprietà **strumento personalizzato** del file è **TextTemplatingFileGenerator**.
 
@@ -54,7 +54,7 @@ Un modello di testo include una combinazione del testo da generare e di codice p
 
     Se il modello è stato aggiunto a un progetto di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], l'attributo relativo al linguaggio sarà "`VB`".
 
-4. Aggiungere testo alla fine del file. Esempio:
+4. Aggiungere testo alla fine del file. Ad esempio:
 
    ```
    Hello, world!
@@ -123,7 +123,7 @@ I modelli di testo permettono di usare il codice programma per variare il conten
 
 Per eseguire il debug di un modello di testo:
 
-- Inserire `debug="true"` nella direttiva `template`. Esempio:
+- Inserire `debug="true"` nella direttiva `template`. Ad esempio:
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -134,7 +134,7 @@ Per eseguire il debug di un modello di testo:
    Il modello viene eseguito e si arresta in corrispondenza dei punti di interruzione. È possibile esaminare le variabili ed eseguire il codice un'istruzione alla volta usando le procedure normali.
 
 > [!TIP]
-> `debug="true"` permette il mapping più preciso del codice generato al modello, tramite l'inserimento di più direttive di numerazione di riga nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.
+> `debug="true"` rende il mapping del codice generato in modo più accurato al modello di testo, inserendo più direttive di numerazione delle righe nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.
 >
 > È comunque possibile lasciare la clausola nella direttiva del modello anche quando non si esegue il debug. Ciò provoca solo un minimo calo nelle prestazioni.
 
@@ -272,7 +272,7 @@ Il tipo di `this.Host` (in VB `Me.Host`) è `Microsoft.VisualStudio.TextTemplati
 
 ### <a name="getting-data-from-visual-studio"></a>Recupero di dati da Visual Studio
 
-Per usare i servizi forniti in Visual Studio, impostare l'attributo `hostSpecific` e caricare il `EnvDTE` assembly. Import `Microsoft.VisualStudio.TextTemplating`, che contiene il metodo di estensione `GetCOMService()`.  Sarà quindi possibile usare IServiceProvider.GetCOMService() per accedere a DTE e ad altri servizi. Esempio:
+Per usare i servizi forniti in Visual Studio, impostare l'attributo `hostSpecific` e caricare il `EnvDTE` assembly. Import `Microsoft.VisualStudio.TextTemplating`, che contiene il metodo di estensione `GetCOMService()`.  Sarà quindi possibile usare IServiceProvider.GetCOMService() per accedere a DTE e ad altri servizi. Ad esempio:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -299,7 +299,7 @@ In caso di modifica al modello di origine, è consigliabile eseguire di nuovo tu
 Se è stato installato Visual Studio Modeling SDK, è possibile trasformare automaticamente tutti i modelli ogni volta che si esegue una compilazione. A tale scopo, modificare il file di progetto (con estensione csproj o vbproj) in un editor di testo e quindi aggiungere le righe seguenti vicino alla fine del file, dopo eventuali altre istruzioni `<import>`:
 
 > [!NOTE]
-> L'SDK per la trasformazione del modello di testo e l'SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano funzionalità specifiche di Visual Studio. Per altri dettagli, vedere [questo post di Blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> L'SDK per la trasformazione del modello di testo e l'SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano funzionalità specifiche di Visual Studio. Per altre informazioni, vedere [questo post di blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ::: moniker range="vs-2017"
 
@@ -342,7 +342,7 @@ Una funzionalità utile dei modelli consiste nel fatto che il loro aspetto è mo
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Per convertire un file esistente in un modello in fase di esecuzione
 
-1. Per il progetto di Visual Studio, aggiungere un file del tipo che si vuole generare, ad esempio un file di `.cs`, `.vb` o `.resx`.
+1. Per il progetto di Visual Studio, aggiungere un file del tipo che si vuole generare, ad esempio un file di `.cs`, `.vb`o `.resx`.
 
 2. Testare il nuovo file per assicurarsi che funzioni correttamente.
 

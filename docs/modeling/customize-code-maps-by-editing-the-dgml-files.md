@@ -1,5 +1,5 @@
 ---
-title: Personalizzare le mappe del codice modificando i file DGML
+title: Personalizzare le mappe codice modificando i file DGML
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ace7da233f135aa795d73d43a5e10e411c0d646f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2b79fd73713de535c11062fd6396abde6b1a0131
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748473"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590514"
 ---
-# <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe del codice modificando i file DGML
+# <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe codice modificando i file DGML
 
 Per personalizzare una mappa codice, è possibile modificare il file con estensione dgml (Directed Graph Markup Language). È ad esempio possibile modificare elementi per specificare stili personalizzati, assegnare proprietà e categorie a collegamenti e elementi di codice o collegare documenti o URL a elementi di codice o a collegamenti. Per ulteriori informazioni sugli elementi DGML, vedere Guida di [riferimento a DGML (Directed Graph Markup Language)](../modeling/directed-graph-markup-language-dgml-reference.md).
 
@@ -47,7 +47,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
     Per aggiungere un nuovo gruppo, individuare la sezione `<Nodes>`. Aggiungere un nuovo elemento `<Node/>`.
 
-3. Nell'elemento `<Node/>` aggiungere un attributo `Group` per specificare se il gruppo viene visualizzato espanso o compresso. Esempio:
+3. Nell'elemento `<Node/>` aggiungere un attributo `Group` per specificare se il gruppo viene visualizzato espanso o compresso. Ad esempio:
 
    ```xml
    <Nodes>
@@ -64,7 +64,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
    - Un attributo `Category` che specifica una relazione `Contains` tra l'elemento di codice di gruppo e il relativo elemento figlio
 
-     Esempio:
+     Ad esempio:
 
    ```xml
    <Links>
@@ -96,7 +96,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     Stroke="StrokeValue"
     ```
 
-     Esempio:
+     Ad esempio:
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -201,7 +201,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     Shape="ShapeFilePathLocation"
     ```
 
-     Esempio:
+     Ad esempio:
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     Esempio:
+     Ad esempio:
 
     ```xml
     <Links>
@@ -266,7 +266,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 2. Nell'elemento `<Style/>` aggiungere un elemento `<Condition/>` contenente un attributo `Expression` per specificare un'espressione che restituisca un valore booleano.
 
-    Esempio:
+    Ad esempio:
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -286,35 +286,35 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
     Questa espressione utilizza la notazione BNF (Backus-Naur Form) seguente:
 
-    \<Expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "(" \<Expression > ")" &#124; \<MemberBindings &#124; &#124; > \<Literal > 1Number >
+    \<Expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "(" espressione\<> ")" &#124; \<MemberBindings &#124; > \<valore letterale &#124; > numero \<
 
-    \<BinaryExpression >:: = \<Expression > \<Operator > \<Expression >
+    \<BinaryExpression >:: = \<Expression > operatore \<> espressione \<
 
-    \<UnaryExpression >:: = "!"  \<Expression > &#124; "+" \<Expression > &#124; "-" \<Expression >
+    \<UnaryExpression >:: = "!" \<espressione > &#124; "+" \<espressione > &#124; "-" \<espressione >
 
-    \<Operator >:: = "<" &#124; "\< =" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "o" &#124; "e" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > "."  \<MemberBinding >
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<membro > "." \<membro >
 
-    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >
+    \<Membering >:: = \<MethodCall > &#124; \<PropertyGet (>
 
     \<MethodCall >:: = \<Identifier > "(" \<MethodArgs > ")"
 
-    Identificatore \<PropertyGet >:: =
+    \<PropertyGet (>:: = Identifier
 
-    \<MethodArgs >:: = \<Expression > &#124; \<Expression > "," &#124; \<MethodArgs > \<empty >
+    \<MethodArgs >:: = \<Expression > &#124; \<espressione > "," \<MethodArgs > &#124; \<Empty >
 
-    \<Identifier >:: = [^. ]*
+    \<Identifier> ::= [^. ]*
 
-    \<Literal >:: = valore letterale stringa con virgolette singole o doppie
+    \<valore letterale >:: = valore letterale stringa con virgolette singole o doppie
 
-    \<Number >:: = stringa di cifre con separatore decimale facoltativo
+    Numero \<>:: = stringa di cifre con separatore decimale facoltativo
 
     È possibile specificare più elementi `<Condition/>`, che devono essere tutti true per applicare lo stile.
 
 3. Sulla riga successiva dopo l'elemento `<Condition/>`, aggiungere uno o più elementi `<Setter/>` per specificare un attributo `Property` e un attributo fisso `Value` o un attributo `Expression` calcolato da applicare alla mappa, agli elementi di codice o ai collegamenti che soddisfano la condizione.
 
-    Esempio:
+    Ad esempio:
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -442,7 +442,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 1. Aprire il file con estensione dgml in un editor di testo o XML.
 
-2. Individuare l'elemento `<Node/>` per tale elemento di codice. Specificare il nome della proprietà e il relativo valore. Esempio:
+2. Individuare l'elemento `<Node/>` per tale elemento di codice. Specificare il nome della proprietà e il relativo valore. Ad esempio:
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 2. Individuare l'elemento `<Link/>` che contiene i nomi dell'elemento di codice sorgente e di quello di destinazione.
 
-3. Nell'elemento `<Node/>` specificare il nome della proprietà e il relativo valore. Esempio:
+3. Nell'elemento `<Node/>` specificare il nome della proprietà e il relativo valore. Ad esempio:
 
     ```xml
     <Links>
@@ -489,7 +489,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 - Individuare l'elemento `<Node/>` per l'elemento di codice desiderato.
 
-- Nell'elemento `<Node/>` aggiungere un attributo `Category` per specificare il nome della categoria. Esempio:
+- Nell'elemento `<Node/>` aggiungere un attributo `Category` per specificare il nome della categoria. Ad esempio:
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 2. Individuare l'elemento `<Link/>` che contiene i nomi dell'elemento di codice sorgente e di quello di destinazione.
 
-3. Nell'elemento `<Link/>` aggiungere un attributo `Category` per specificare il nome della categoria. Esempio:
+3. Nell'elemento `<Link/>` aggiungere un attributo `Category` per specificare il nome della categoria. Ad esempio:
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 2. Aggiungere un elemento `<Category/>` per la categoria padre, quindi aggiungere l'attributo `BasedOn` all'elemento `<Category/>` della categoria figlio.
 
-     Esempio:
+     Ad esempio:
 
     ```xml
     <Nodes>
@@ -582,7 +582,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
      > [!NOTE]
      > È possibile specificare un solo attributo `Reference` per elemento.
 
-     Esempio:
+     Ad esempio:
 
    ```xml
    <Nodes>
@@ -607,7 +607,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
       4. Usare l'attributo `Label` per specificare il testo visualizzato nel menu di scelta rapida **Vai a riferimento** dell'elemento di codice.
 
-      Esempio:
+      Ad esempio:
 
    ```xml
    <Nodes>

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - tasks, creating for MSBuild
 - MSBuild, creating tasks
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 369584a815f671c8b7b4f8a99a5280626b493104
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238201"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594994"
 ---
 # <a name="task-writing"></a>Scrittura di attività
 Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività sono contenute nelle destinazioni. In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è inclusa una raccolta di attività tipiche ed è anche possibile creare le proprie attività. Per altre informazioni sulla raccolta di attività inclusa in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vedere il [riferimento alle attività](../msbuild/msbuild-task-reference.md).
@@ -143,7 +143,7 @@ public string RequiredProperty { get; set; }
 
 ## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>Come [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] richiama un'attività
 
-Quando si richiama un'attività, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] innanzitutto crea un'istanza della classe di attività, quindi chiama i metodi di impostazione delle proprietà dell'oggetto per i parametri di attività impostati nell'elemento attività nel file di progetto. Se l'elemento Task non specifica un parametro o se l'espressione specificata nell'elemento restituisce una stringa vuota, il metodo di impostazione della proprietà non viene chiamato.
+Quando si richiama un'attività, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] crea prima un'istanza della classe di attività, quindi chiama i metodi di impostazione delle proprietà dell'oggetto per i parametri delle attività impostati nell'elemento attività nel file di progetto. Se l'elemento Task non specifica un parametro o se l'espressione specificata nell'elemento restituisce una stringa vuota, il metodo di impostazione della proprietà non viene chiamato.
 
 Ad esempio, nel progetto
 
@@ -157,13 +157,13 @@ Ad esempio, nel progetto
 </Project>
 ```
 
-viene chiamato solo l' `Input3` impostazione per.
+viene chiamato solo l'impostazione per `Input3`.
 
 Un'attività non deve dipendere da un ordine relativo della chiamata al setter di proprietà del parametro.
 
 ### <a name="task-parameter-types"></a>Tipi di parametro dell'attività
 
-Gestisce [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in modo nativo le proprietà di `string`tipo `bool`, `ITaskItem` e `ITaskItem[]`. Se un'attività accetta un parametro di un tipo diverso, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] <xref:System.Convert.ChangeType%2A> richiama per eseguire la conversione `string` da (con tutti i riferimenti a proprietà e elementi espansi) al tipo di destinazione. Se la conversione non riesce per un parametro di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] input, genera un errore e non chiama il `Execute()` metodo dell'attività.
+Il [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gestisce in modo nativo le proprietà di tipo `string`, `bool`, `ITaskItem` e `ITaskItem[]`. Se un'attività accetta un parametro di un tipo diverso, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] richiama <xref:System.Convert.ChangeType%2A> per eseguire la conversione da `string` (con tutti i riferimenti a proprietà e elementi espansi) al tipo di destinazione. Se la conversione non riesce per un parametro di input, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] genera un errore e non chiama il metodo di `Execute()` dell'attività.
 
 ## <a name="example"></a>Esempio
 
@@ -257,4 +257,4 @@ L'esempio seguente illustra un file di progetto che richiama l'attività dell'es
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

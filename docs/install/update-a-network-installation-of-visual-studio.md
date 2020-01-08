@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 990b9541e22040b53a5f509fc358013dca777906
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018819"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594435"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aggiornare un'installazione di rete di Visual Studio
 
@@ -32,7 +32,7 @@ Per aggiornare la condivisione di installazione di rete in modo che includa gli 
 
 ::: moniker range="vs-2017"
 
-**Novità nella versione 15.3**: Se si seleziona un layout parziale al momento della creazione del layout di rete, tali impostazioni vengono salvate. Gli eventuali comandi relativi al layout future usano le opzioni precedenti più eventuali nuove opzioni specificate. Se tuttavia si usa un layout di una versione precedente, per aggiornarne il contenuto usare gli stessi parametri della riga di comando adottati durante la prima creazione del layout di installazione di rete (ad esempio gli stessi carichi di lavoro e le stesse lingue).
+**Novità in 15,3**: se è stato selezionato un layout parziale al momento della creazione del layout di rete, queste impostazioni vengono salvate. Gli eventuali comandi relativi al layout future usano le opzioni precedenti più eventuali nuove opzioni specificate. Se tuttavia si usa un layout di una versione precedente, per aggiornarne il contenuto usare gli stessi parametri della riga di comando adottati durante la prima creazione del layout di installazione di rete (ad esempio gli stessi carichi di lavoro e le stesse lingue).
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ Se si seleziona un layout parziale al momento della creazione del layout di rete
 
 ::: moniker-end
 
-Se si ospita un layout in una condivisione file, è necessario aggiornare una copia privata del layout (ad esempio, c:\VSLayout) e quindi, dopo aver scaricato tutto il contenuto aggiornato, copiarlo nella condivisione file (ad esempio, \\server \ Products \ VS). In caso contrario, se un utente esegue l'installazione durante l'aggiornamento del layout, è probabile che non sia in grado di ottenere tutto il contenuto del layout perché non è ancora stato interamente aggiornato.
+Se si ospita un layout in una condivisione file, è necessario aggiornare una copia privata del layout (ad esempio, c:\VSLayout) e quindi, dopo aver scaricato tutto il contenuto aggiornato, copiarlo nella condivisione file (ad esempio, \\server\products\VS). In caso contrario, se un utente esegue l'installazione durante l'aggiornamento del layout, è probabile che non sia in grado di ottenere tutto il contenuto del layout perché non è ancora stato interamente aggiornato.
 
 Ora si prendono in esame alcuni esempi di creazione e aggiornamento di un layout:
 
@@ -64,7 +64,7 @@ Ora si prendono in esame alcuni esempi di creazione e aggiornamento di un layout
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* Ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata.  Questo comando aggiunge il carico di lavoro *Sviluppo di Azure*.  Il Desktop gestito e Azure sono ora inclusi in questo layout.  Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per l'inglese e tedesco.  E il layout viene aggiornato all'ultima versione disponibile.
+* Ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata.  Questo comando aggiunge il carico di lavoro *sviluppo di Azure* .  Il desktop gestito e Azure sono ora inclusi in questo layout.  Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per l'inglese e tedesco.  E il layout viene aggiornato all'ultima versione disponibile.
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
@@ -75,7 +75,7 @@ Ora si prendono in esame alcuni esempi di creazione e aggiornamento di un layout
     >
     > **Soluzione temporanea**: eseguire un'operazione di modifica separata dopo un aggiornamento per installare i componenti mancanti.
 
-* E infine, ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata senza aggiornare la versione. Questo comando aggiunge il carico di lavoro *Sviluppo ASP.NET e Web*.  I carichi di lavoro di Desktop gestito, Azure e Sviluppo ASP.NET e Web sono ora inclusi in questo layout. Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per inglese, tedesco e francese.  Tuttavia, il layout non è stato aggiornato all'ultima versione disponibile durante l'esecuzione di questo comando. Rimane alla versione esistente.
+* E infine, ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata senza aggiornare la versione. Questo comando aggiunge il carico *di lavoro di sviluppo ASP.NET e Web* .  I carichi di lavoro di sviluppo per desktop, Azure e ASP.NET & Web sono ora inclusi in questo layout. Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per inglese, tedesco e francese.  Tuttavia, il layout non è stato aggiornato all'ultima versione disponibile durante l'esecuzione di questo comando. Rimane alla versione esistente.
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
@@ -169,7 +169,7 @@ Quando si esegue questo comando, il programma di installazione analizza la carte
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)

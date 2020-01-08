@@ -2,24 +2,24 @@
 title: Introduzione ai linguaggi specifici del dominio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985057"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596567"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici di dominio
 
 In questo argomento vengono illustrati i concetti di base per la definizione e l'utilizzo di un linguaggio specifico di dominio (DSL) creato con l'SDK di modellazione per Visual Studio.
 
 > [!NOTE]
-> L'SDK per la trasformazione del modello di testo e l'SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano funzionalità specifiche di Visual Studio. Per altri dettagli, vedere [questo post di Blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> L'SDK per la trasformazione del modello di testo e l'SDK di modellazione di Visual Studio vengono installati automaticamente quando si installano funzionalità specifiche di Visual Studio. Per altre informazioni, vedere [questo post di blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Se non si ha familiarità con DSLs, è consigliabile usare il **Lab strumenti DSL**, disponibile in questo sito: [SDK di visualizzazione e modellazione](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
@@ -37,7 +37,7 @@ Una delle principali applicazioni di DSLs è la generazione di codice programma,
 
 Il resto di questa panoramica è una procedura dettagliata in cui vengono introdotte le operazioni di base per la creazione e l'utilizzo di un linguaggio specifico di dominio in Visual Studio.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
 
@@ -147,7 +147,7 @@ La definizione DSL può specificare il modo in cui il modello viene visualizzato
 
 È possibile visualizzare un modello come albero nella visualizzazione di **esplorazione** durante la modifica di un modello. Quando si aggiungono forme al diagramma, gli elementi del modello vengono visualizzati anche nella finestra di esplorazione. La finestra di esplorazione può essere utilizzata anche se non è presente alcun diagramma.
 
-Se la finestra di esplorazione non è visibile nell'istanza di debug di Visual Studio, scegliere **altre finestre**dal menu **Visualizza** , quindi fare clic su *\<Your Language >* **Explorer**.
+Se la finestra di esplorazione non è visibile nell'istanza di debug di Visual Studio, scegliere **altre finestre**dal menu **Visualizza** , quindi fare clic su *\<lingua >* **Explorer**.
 
 ### <a name="the-api-of-your-dsl"></a>API del linguaggio DSL
 
@@ -209,7 +209,7 @@ Rinominare le classi e le relazioni di dominio esistenti. Ad esempio, a partire 
 
     2. Aprire il Finestra Proprietà e posizionarlo in modo che sia possibile visualizzare le proprietà e la finestra di esplorazione DSL nello stesso momento.
 
-    3. In DSL Explorer espandere **Editor**, **schede della casella degli strumenti**, *\<your DSL >* , quindi **strumenti**.
+    3. In DSL Explorer espandere **Editor**, **schede della casella degli strumenti**, *\<il > DSL*, quindi **strumenti**.
 
     4. Fare clic su **ExampleElement**. Si tratta dell'elemento della casella degli strumenti utilizzato per creare gli elementi.
 
@@ -225,7 +225,7 @@ Rinominare le classi e le relazioni di dominio esistenti. Ad esempio, a partire 
 
     2. Fare clic su **trasforma tutti i modelli** nella barra degli strumenti di Esplora soluzioni
 
-    3. Premere F5. Attendere fino a quando non viene visualizzata l'istanza sperimentale di Visual Studio.
+    3. Premi F5. Attendere fino a quando non viene visualizzata l'istanza sperimentale di Visual Studio.
 
 4. Nella soluzione di debug nell'istanza sperimentale di Visual Studio aprire un file del modello di test. Trascinare gli elementi nella casella degli strumenti. Si noti che le didascalie degli strumenti e i nomi dei tipi in DSL Explorer sono stati modificati.
 
@@ -333,7 +333,7 @@ Rinominare le classi e le relazioni di dominio esistenti. Ad esempio, a partire 
 
     1. In **DSL Explorer**espandere **Editor** e quindi **schede della casella degli strumenti**.
 
-    2. Fare clic con il pulsante destro del mouse su *\<your > DSL* , quindi scegliere **Aggiungi nuovo elemento strumento**.
+    2. Fare clic con il pulsante destro del mouse su *\<> DSL* , quindi scegliere **Aggiungi nuovo elemento strumento**.
 
     3. Impostare la proprietà **Name** del nuovo strumento e impostare la relativa proprietà **Class** su Town.
 
@@ -341,7 +341,7 @@ Rinominare le classi e le relazioni di dominio esistenti. Ad esempio, a partire 
 
 7. Creazione di uno strumento di connessione per la creazione di un collegamento tra città e persone.
 
-    1. Fare clic con il pulsante destro del mouse su *\<your > DSL* , quindi scegliere **Aggiungi nuovo strumento connettore**.
+    1. Fare clic con il pulsante destro del mouse su *\<> DSL* , quindi scegliere **Aggiungi nuovo strumento connettore**.
 
     2. Impostare la proprietà Name del nuovo strumento.
 

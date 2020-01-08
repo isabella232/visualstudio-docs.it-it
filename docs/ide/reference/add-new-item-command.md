@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add New Item command
 - File.AddNewItem command
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 683a65ab0c25a5daeb002a4eb3106006655a1b00
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 38be691ae7c49ffbd6c98c9e4beb25b6ebb021b6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748816"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585691"
 ---
 # <a name="add-new-item-command"></a>Comando Aggiungi nuovo elemento
 Aggiunge un nuovo elemento, ad esempio un file con estensione htm, css o txt o una pagina con frame, alla soluzione corrente e lo apre.
@@ -29,7 +29,7 @@ Aggiunge un nuovo elemento, ad esempio un file con estensione htm, css o txt o u
 File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `filename`\
 Parametro facoltativo. Percorso e nome file dell'elemento da aggiungere alla soluzione.
 
@@ -66,6 +66,6 @@ In questo esempio un nuovo elemento di soluzione, denominato MyHTMLpg, viene agg
 ## <a name="see-also"></a>Vedere anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Finestra di comando](../../ide/reference/command-window.md)
+- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

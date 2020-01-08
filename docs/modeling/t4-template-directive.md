@@ -2,17 +2,17 @@
 title: Direttiva template T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983696"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591840"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 
@@ -96,7 +96,7 @@ Se si imposta il valore di questo attributo su `true`, viene aggiunta una propri
 
 Poiché il tipo di questa proprietà dipende dal tipo di host, è utile solo se si scrive un modello di testo che funziona solo con un host specifico. È applicabile ai [modelli della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), ma non ai modelli in fase di [esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Quando `hostspecific` viene `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Esempio:
+Quando `hostspecific` viene `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -134,7 +134,7 @@ Valori validi:
 
 L'attributo `language` specifica la lingua ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) da usare per il codice sorgente nei blocchi di istruzione e di espressione. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
 
-Esempio:
+Ad esempio:
 
 ```vb
 <#@ template language="VB" #>

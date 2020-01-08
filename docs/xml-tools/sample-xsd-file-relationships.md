@@ -3,17 +3,17 @@ title: 'File XSD di esempio: relazioni'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5342bece15fff25ba970270456aed96c5dc7f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5a52d152a78ee585cc2724d8504feff1e72558cf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601758"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592555"
 ---
 # <a name="sample-xsd-file-relationships"></a>File XSD di esempio: relazioni
 
@@ -65,4 +65,4 @@ Il file XSD seguente viene usato in vari esempi nella documentazione relativa al
 ```
 
 > [!NOTE]
-> Le società, le organizzazioni, i prodotti, i nomi di dominio, gli indirizzi di posta elettronica, i loghi, le persone, i luoghi e gli eventi di esempio qui riportati sono fittizi. Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo di posta elettronica, logo, persona, luogo o evento è intenzionale o può essere presupposta.
+> Ogni riferimento a società, organizzazioni, prodotti, nomi di dominio, indirizzi di posta elettronica, logo, persone, luoghi ed eventi è puramente casuale. Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo e-mail, logo, persona, luogo o evento è intenzionale o può essere presupposta.

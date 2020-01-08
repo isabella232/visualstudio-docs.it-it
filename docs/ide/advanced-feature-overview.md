@@ -2,17 +2,17 @@
 title: Funzionalità avanzate
 ms.date: 06/01/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2283da7c212102ac948ea368bb95315344d2274e
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919107"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591736"
 ---
 # <a name="features-of-visual-studio"></a>Funzionalità di Visual Studio
 
@@ -138,6 +138,6 @@ Per altre informazioni sull'estensione di Visual Studio, vedere [Estendi Visual 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)
+- [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Novità di Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
 - [Novità di Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

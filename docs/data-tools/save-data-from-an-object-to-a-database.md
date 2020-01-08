@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 509910730d4da095b6db622212716a8f958495d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648205"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586263"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvare dati da un oggetto in un database
 
@@ -36,7 +36,7 @@ Per impostazione predefinita, i metodi `DBDirect` vengono creati in un TableAdap
 |Metodo DBDirect di TableAdapter|Descrizione|
 | - |-----------------|
 |`TableAdapter.Insert`|Aggiunge nuovi record a un database e consente di passare i singoli valori di colonna come parametri del metodo.|
-|`TableAdapter.Update`|Aggiorna i record esistenti in un database. Il metodo `Update` accetta i valori di colonna originali e nuovi come parametri del metodo. I valori originali vengono usati per individuare il record originale e i nuovi valori vengono usati per aggiornare il record.<br /><br /> Il metodo `TableAdapter.Update` viene inoltre utilizzato per riconciliare le modifiche in un set di dati al database di utilizzando una <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> o una matrice di <xref:System.Data.DataRow>s come parametri del metodo.|
+|`TableAdapter.Update`|Aggiorna i record esistenti in un database. Il metodo `Update` accetta i valori di colonna originali e nuovi come parametri del metodo. I valori originali vengono usati per individuare il record originale e i nuovi valori vengono usati per aggiornare il record.<br /><br /> Il metodo `TableAdapter.Update` viene inoltre utilizzato per riconciliare le modifiche in un set di dati al database mediante l'acquisizione di un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>o una matrice di <xref:System.Data.DataRow>s come parametri del metodo.|
 |`TableAdapter.Delete`|Elimina i record esistenti dal database in base ai valori di colonna originali passati come parametri del metodo.|
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Per salvare nuovi record da un oggetto in un database
@@ -74,7 +74,7 @@ Per impostazione predefinita, i metodi `DBDirect` vengono creati in un TableAdap
 
 ## <a name="net-security"></a>Protezione .NET
 
-È necessario disporre dell'autorizzazione per eseguire il `INSERT`, `UPDATE` o `DELETE` selezionati nella tabella del database.
+È necessario disporre dell'autorizzazione per eseguire il `INSERT`, `UPDATE`o `DELETE` selezionati nella tabella del database.
 
 ## <a name="see-also"></a>Vedere anche
 

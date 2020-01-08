@@ -2,17 +2,17 @@
 title: Aggiornamento di un'applicazione esistente per MSBuild 15 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a891f6d18657bad65a1cf087da975849642b7aec
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 8d4e7d84768307964b495e8c5e97e7731b0622a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912041"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597139"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aggiornamento di un'applicazione esistente per MSBuild 15
 

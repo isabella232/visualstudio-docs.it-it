@@ -2,17 +2,17 @@
 title: Tasti di scelta rapida predefiniti per i comandi usati di frequente
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eda902db03d7211a4025663088cf8bf3718e4a2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652523"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596723"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Tasti di scelta rapida più comuni per Visual Studio
 
@@ -23,7 +23,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 > [!NOTE]
 > È possibile [cercare il tasto di scelta rapida](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e quindi scegliendo **Tastiera**.
 
-## <a name="build"></a>Compilazione
+## <a name="build"></a>Compila
 
 |Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
@@ -119,7 +119,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 |File.SaveSelectedItems|**CTRL+S** [Globale]|
 |File.ViewinBrowser|**CTRL+MAIUSC+W** [Globale]|
 
-## <a name="project"></a>Progetto
+## <a name="project"></a>Progetto di
 
 |Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
@@ -132,7 +132,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 |-------------| - |
 |Refactor.ExtractMethod|**CTRL+R, CTRL+M** [Globale]|
 
-## <a name="tools"></a>Strumenti
+## <a name="tools"></a>Strumenti di
 
 |Comando|Tasto di scelta rapida [Contesto]|
 |-------------| - |

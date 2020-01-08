@@ -3,17 +3,17 @@ title: Debug di fogli di stile XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1f774757acc293091f19a783ed93f34647d494
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604603"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592477"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: eseguire il debug di un foglio di stile XSLT
 
@@ -26,7 +26,7 @@ Per preparare questa procedura dettagliata, copiare prima i due [file di esempio
 
 ## <a name="start-debugging"></a>Avvia debug
 
-1. Scegliere **apri**  > **file**dal menu **file** .
+1. Scegliere **apri** > **file**dal menu **file** .
 
 2. Individuare il file *below-average. xsl* e scegliere **Apri**.
 
@@ -44,11 +44,11 @@ Per preparare questa procedura dettagliata, copiare prima i due [file di esempio
 
    - Fare clic in un punto qualsiasi della riga 12, quindi premere **F9**.
 
-   - Fare clic con il pulsante destro del mouse sul tag di inizio `xsl:if` e scegliere punto di **interruzione**  >  Inserisci punto di**interruzione**.
+   - Fare clic con il pulsante destro del mouse sul tag di inizio `xsl:if` e scegliere punto di **interruzione** > Inserisci punto di **interruzione**.
 
       ![Inserisci punto di interruzione nel file XSL in Visual Studio](media/insert-breakpoint.PNG)
 
-6. Nella barra dei menu scegliere **XML**  > **avviare il debug XSLT** oppure premere **ALT** +**F5**.
+6. Nella barra dei menu scegliere **XML** > **avviare il debug XSLT** oppure premere **ALT**+**F5**.
 
    Viene avviato il processo di debug.
 
@@ -56,11 +56,11 @@ Per preparare questa procedura dettagliata, copiare prima i due [file di esempio
 
    Le finestre **auto**, **variabili locali**e **espressioni di controllo 1** vengono visualizzate nella parte inferiore della finestra di Visual Studio. Nella finestra variabili **locali** vengono visualizzate tutte le variabili locali e i relativi valori correnti. incluse le variabili definite nel foglio di stile e quelle usate dal debugger per tenere traccia dei nodi presenti nel contesto.
 
-## <a name="watch-window"></a>Finestra Espressioni di controllo
+## <a name="watch-window"></a>Finestra di controllo
 
 Verranno aggiunte due variabili alla finestra espressione di **controllo 1** , in modo che sia possibile esaminarne i valori durante l'elaborazione del file di input. È anche possibile usare la finestra variabili **locali** per esaminare i valori se le variabili che si vuole controllare sono già presenti.
 
-1. Dal menu **debug** scegliere **Windows**  > **Watch**  >  espressione di**controllo 1**.
+1. Dal menu **debug** scegliere **Windows** > **Watch** > espressione di **controllo 1**.
 
    La finestra espressione di **controllo 1** diventa visibile.
 

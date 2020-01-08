@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: 305b0398550a64722f6029a3d50082e6397643cb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551185"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594526"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Impostare i valori predefiniti per le distribuzioni aziendali di Visual Studio
 
@@ -65,6 +65,6 @@ Se non sono ancora impostati, alcuni valori del Registro di sistema vengono impo
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Installare Visual Studio](install-visual-studio.md)
+- [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
 - [Disabilitare o spostare la cache dei pacchetti](disable-or-move-the-package-cache.md)
 - [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

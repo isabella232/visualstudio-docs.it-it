@@ -25,17 +25,17 @@ helpviewer_keywords:
 - MSBuild (C++), Link task
 - Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911253"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592204"
 ---
 # <a name="link-task"></a>Link (attività)
 Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options).
@@ -497,7 +497,7 @@ Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumen
 
   - **PGUpdate**
 
-    \- **/LTCG:PGUpdate**
+    \- **/LTCG: PGUPDATE**
 
   Per altre informazioni, vedere [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation).
 
@@ -763,7 +763,7 @@ Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumen
 
   - **POSIX** -  **/SUBSYSTEM:POSIX**
 
-  Per altre informazioni, vedere [/SUBSYSTEM (specifica il sottosistema)](/cpp/build/reference/subsystem-specify-subsystem).
+  Per altre informazioni, vedere [/SUBSYSTEM (Specifica il sottosistema)](/cpp/build/reference/subsystem-specify-subsystem).
 
 - **SupportNobindOfDelayLoadedDLL**
 
@@ -837,7 +837,7 @@ Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumen
 
   - **MachineX86** -  **/MACHINE:X86**
 
-  Per altre informazioni, vedere [/MACHINE (specifica la piattaforma di destinazione)](/cpp/build/reference/machine-specify-target-platform).
+  Per altre informazioni, vedere [/MACHINE (Specifica la piattaforma di destinazione)](/cpp/build/reference/machine-specify-target-platform).
 
 - **TerminalServerAware**
 

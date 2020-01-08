@@ -7,17 +7,17 @@ helpviewer_keywords:
 - database compatibility
 - databases for Visual Studio
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: dd469f955a24c6d3c2fb5e438d81e6b8a2db8458
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: cfc3b6c3adc5c51cbbc4bc7d91338fd3595ec372
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807004"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586406"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Sistemi di database compatibili per Visual Studio
 
@@ -39,15 +39,15 @@ SQL Server è l'offerta di database Microsoft Flagship. SQL Server 2016 offre pr
 
 ## <a name="mysql"></a>MySQL
 
-MySQL è un diffuso sistema di database open source ampiamente usato in aziende e siti Web. I download per MySQL, MySQL per Visual Studio e i prodotti correlati si trovano in [MySQL in Windows](https://www.mysql.com/why-mysql/windows/). Le terze parti offrono varie estensioni di Visual Studio e applicazioni di gestione autonoma per MySQL. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**).
+MySQL è un diffuso sistema di database open source ampiamente usato in aziende e siti Web. I download per MySQL, MySQL per Visual Studio e i prodotti correlati si trovano in [MySQL in Windows](https://www.mysql.com/why-mysql/windows/). Le terze parti offrono varie estensioni di Visual Studio e applicazioni di gestione autonoma per MySQL. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti** > **gestione pacchetti NuGet** > **gestire i pacchetti NuGet per la soluzione**).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL è un sistema di database relazionale a oggetti open source gratuito. Per installarlo in Windows, è possibile scaricarlo dalla [pagina di download di PostgreSQL](https://www.postgresql.org/download/windows/). È anche possibile compilare PostgreSQL dal codice sorgente. Il sistema di base PostgreSQL include un'interfaccia del linguaggio C. Molte terze parti forniscono pacchetti NuGet per l'uso di PostgreSQL dalle applicazioni .NET. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**). Il pacchetto più diffuso è probabilmente fornito da [npgsql.org](http://www.npgsql.org).
+PostgreSQL è un sistema di database relazionale a oggetti open source gratuito. Per installarlo in Windows, è possibile scaricarlo dalla [pagina di download di PostgreSQL](https://www.postgresql.org/download/windows/). È anche possibile compilare PostgreSQL dal codice sorgente. Il sistema di base PostgreSQL include un'interfaccia del linguaggio C. Molte terze parti forniscono pacchetti NuGet per l'uso di PostgreSQL dalle applicazioni .NET. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti** > **gestione pacchetti NuGet** > **gestire i pacchetti NuGet per la soluzione**). Il pacchetto più diffuso è probabilmente fornito da [npgsql.org](http://www.npgsql.org).
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite è un motore di database SQL incorporato che viene eseguito nel processo dell'applicazione. È possibile scaricarlo dalla [pagina di download di SQLite](https://www.sqlite.org/download.html). Sono disponibili anche molti pacchetti NuGet di terze parti per SQLite. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**).
+SQLite è un motore di database SQL incorporato che viene eseguito nel processo dell'applicazione. È possibile scaricarlo dalla [pagina di download di SQLite](https://www.sqlite.org/download.html). Sono disponibili anche molti pacchetti NuGet di terze parti per SQLite. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti** > **gestione pacchetti NuGet** > **gestire i pacchetti NuGet per la soluzione**).
 
 ## <a name="firebird"></a>Firebird
 

@@ -1,21 +1,21 @@
 ---
-title: Editor di immagini
+title: Editor immagini
 ms.date: 08/10/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2430dddb4fe7de0d050ce26fc94e54c13a7779
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fd7d9aed75876b47a6574d46b226f5baec336883
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635311"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589318"
 ---
 # <a name="image-editor"></a>Editor immagini
 
@@ -37,7 +37,7 @@ L'**editor di immagini** supporta i formati di immagine seguenti:
 |TIFF (Tagged Image File Format)|*.tif*, *.tiff*|
 |TGA (Targa)|*.tga*|
 
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Attività iniziali
 
 Questa sezione descrive come aggiungere un'immagine al progetto Visual Studio e configurarla in base ai propri requisiti.
 
@@ -56,7 +56,7 @@ Questa sezione descrive come aggiungere un'immagine al progetto Visual Studio e 
 
 3. Specificare il **Nome** e la **Posizione** in cui si desidera creare il file di immagine.
 
-4. Scegliere il pulsante **Aggiungi** .
+4. Scegliere il pulsante **Aggiungi**.
 
 ### <a name="choose-the-image-format"></a>Scelta del formato dell'immagine
 
@@ -113,7 +113,7 @@ La tabella seguente descrive gli elementi nella barra degli strumenti della **mo
 
 |Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
-|**Selezione**|Consente di selezionare un'area rettangolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
+|**Seleziona**|Consente di selezionare un'area rettangolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
 |**Selezione irregolare**|Consente di selezionare un'area non regolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
 |**Selezione con bacchetta magica**|Consente di selezionare un'area con colori simili all'interno di un'immagine. È possibile configurare la *tolleranza*, ovvero la differenza massima tra colori adiacenti entro la quale sono considerati simili, per includere una gamma più ampia o più ristretta di colori simili. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
 |**Panoramica**|Consente di spostare l'immagine in relazione alla cornice della finestra. In modalità **Panoramica** selezionare un punto nell'immagine e quindi spostarlo in qualsiasi direzione.<br /><br /> È possibile attivare temporaneamente la modalità **Panoramica** tenendo premuto **CTRL**.|
@@ -144,7 +144,7 @@ La tabella seguente descrive gli elementi nella barra degli strumenti dell'**edi
 |**Riempimento**|Usa la selezione di colore attiva per riempire un'area dell'immagine. L'area interessata include il pixel a cui viene applicato il riempimento e ogni pixel dello stesso colore che sia connesso al primo tramite pixel dello stesso colore. Se il riempimento viene applicato all'interno di una selezione attiva, l'area interessata sarà vincolata dalla selezione.<br /><br /> Per impostazione predefinita, la selezione di colore attiva viene fusa insieme all'area interessata dell'immagine in base alla componente alfa. Per usare la selezione di colore attiva per sovrascrivere l'area interessata, tenere premuto **MAIUSC** quando si usa lo strumento di riempimento.|
 |**Gomma**|Imposta i pixel sul colore completamente trasparente se l'immagine supporta un canale alfa. In caso contrario, imposta i pixel sul colore di sfondo attivo.|
 |**Linea**, **Rettangolo**, **Rettangolo arrotondato**, **Ellisse**|Disegna una forma in un'immagine. È possibile impostare il colore e lo spessore del contorno nella finestra **Proprietà**.<br /><br /> Per disegnare una primitiva con larghezza e altezza uguali, tenere premuto **MAIUSC** mentre si esegue il disegno.|
-|**Testo**|Usa la selezione del colore di primo piano per tracciare del testo. Il colore di sfondo è determinato dalla selezione del colore di sfondo. Per uno sfondo trasparente, il valore alfa della selezione del colore di sfondo deve essere 0. Mentre l'area di testo è attiva, è possibile specificare se il testo viene tracciato usando un tratto con anti-aliasing ed è possibile impostare per il testo le opzioni **Valore**, **Tipo di carattere** e **Dimensione** e lo stile **Grassetto**, **Corsivo** o **Sottolineato** nella finestra **Proprietà**. Il contenuto e l'aspetto del testo viene completato quando l'area di testo non è più attiva.|
+|**per**|Usa la selezione del colore di primo piano per tracciare del testo. Il colore di sfondo è determinato dalla selezione del colore di sfondo. Per uno sfondo trasparente, il valore alfa della selezione del colore di sfondo deve essere 0. Mentre l'area di testo è attiva, è possibile specificare se il testo viene tracciato usando un tratto con anti-aliasing ed è possibile impostare per il testo le opzioni **Valore**, **Tipo di carattere** e **Dimensione** e lo stile **Grassetto**, **Corsivo** o **Sottolineato** nella finestra **Proprietà**. Il contenuto e l'aspetto del testo viene completato quando l'area di testo non è più attiva.|
 |**Ruota**|Ruota l'immagine di 90 gradi in senso orario.|
 |**Taglia**|Taglia l'immagine in base alla selezione attiva.|
 
@@ -169,7 +169,7 @@ La tabella seguente descrive come i diversi tipi di strumenti controllano la mod
 
 La tabella seguente descrive le proprietà dell'immagine:
 
-|proprietà|Descrizione|
+|Gli|Descrizione|
 |--------------|-----------------|
 |Larghezza|Larghezza dell'immagine.|
 |Altezza|Altezza dell'immagine.|
@@ -214,7 +214,7 @@ Dopo aver selezionato un'area, è possibile ridimensionarla o ridimensionarne i 
 
 La tabella seguente illustra le combinazioni di tasti di modifica valide:
 
-|CTRL|Shift|ALT|Descrizione|
+|CTRL|Shift|Alt|Descrizione|
 |----------|-----------|---------|-----------------|
 ||||Ridimensiona il contenuto dell'area selezionata.|
 ||**MAIUSC**||Ridimensiona in modo proporzionale il contenuto dell'area selezionata.|
@@ -235,7 +235,7 @@ La tabella seguente descrive le proprietà degli strumenti:
 |----------|----------------|
 |Tutti gli strumenti e le selezioni|**Rotazione di**<br /> Definisce il numero di gradi, in senso orario, in base al quale viene ruotato lo strumento o la selezione.|
 |**Matita**, **Pennello**, **Aerografo**, **Gomma**|**Spessore**<br /> Definisce le dimensioni dell'area interessata dallo strumento.|
-|**Testo**|**Anti-alias**<br /> Traccia il testo usando bordi con anti-aliasing. In questo modo il testo assume un aspetto più uniforme.<br /><br /> **Valore**<br /> Testo da tracciare.<br /><br /> **Tipo di carattere**<br /> Tipo di carattere usato per tracciare il testo.<br /><br /> **Size**<br /> Dimensione del testo.<br /><br /> **Grassetto**<br /> Applica il grassetto.<br /><br /> **Corsivo**<br /> Applica il corsivo.<br /><br /> **Sottolineato**<br /> Applica la sottolineatura.|
+|**per**|**Anti-alias**<br /> Traccia il testo usando bordi con anti-aliasing. In questo modo il testo assume un aspetto più uniforme.<br /><br /> **Valore**<br /> Testo da tracciare.<br /><br /> **Tipo di carattere**<br /> Tipo di carattere usato per tracciare il testo.<br /><br /> **Size**<br /> Dimensione del testo.<br /><br /> **Grassetto**<br /> Applica il grassetto.<br /><br /> **Corsivo**<br /> Applica il corsivo.<br /><br /> **Sottolineato**<br /> Applica la sottolineatura.|
 |**Primitiva 2D**|**Anti-alias**<br /> Disegna le primitive usando bordi con anti-aliasing. In questo modo, le primitive assumono un aspetto più uniforme.<br /><br /> **Spessore**<br /> Definisce lo spessore della linea che forma il contorno della primitiva.<br /><br /> **Raggio X**<br /> (Solo rettangolo arrotondato) Definisce il raggio di arrotondamento per i bordi superiore e inferiore della primitiva.<br /><br /> **Raggio Y**<br /> (Solo rettangolo arrotondato) Definisce il raggio di arrotondamento per i bordi destro e sinistro della primitiva.|
 |**Matita**, **Pennello**, **Aerografo**, **Primitiva 2D**|**Canali**<br /> Abilita o disabilita i canali di colore specifici per la visualizzazione e il disegno. Se per un canale di colore specifico è impostata l'opzione **Visualizzazione**, tale canale è visibile nell'immagine. In caso contrario, non è visibile. Se per un canale di colore specifico è impostata l'opzione **Disegno**, tale canale è interessato dalle operazioni di disegno. In caso contrario, non lo è.|
 |**Selezione con bacchetta magica**, **Riempimento**|**Tolleranza**<br /> Definisce la differenza massima tra i colori adiacenti considerati simili, in modo da includere un numero minore o maggiore di colori simili nell'area interessata o selezionata. Per impostazione predefinita, il valore è 32. In questo modo, i pixel adiacenti in 32 tonalità (più chiare o più scure) del colore originale vengono considerati come parte dell'area.|
@@ -244,14 +244,14 @@ La tabella seguente descrive le proprietà degli strumenti:
 
 |Comando|Scelte rapide da tastiera|
 |-------------| - |
-|Passare alla modalità **Selezione**|**S**|
+|Passare alla modalità **Seleziona**|**S**|
 |Passare alla modalità **Zoom**|**Z**|
 |Passare alla modalità **Panoramica**|**K**|
 |Selezionare tutto|**Ctrl**+**A**|
 |Eliminare la selezione corrente|**Eliminazione**|
 |Annullare la selezione corrente|**ESC** (Escape)|
-|Fare zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> **CTRL**+**PGSU**<br /><br /> Segno più ( **+** )|
-|Fare zoom indietro|**CTRL**-**Rotellina del mouse indietro**<br /><br /> **CTRL**-**PGGIÙ**<br /><br /> Segno meno ( **-** )|
+|Eseguire lo zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> **CTRL**+**PGSU**<br /><br /> Segno più ( **+** )|
+|Eseguire lo zoom indietro|**CTRL**-**Rotellina del mouse indietro**<br /><br /> **CTRL**-**PGGIÙ**<br /><br /> Segno meno ( **-** )|
 |Fare una panoramica dell'immagine verso l'alto|**Rotellina del mouse indietro**<br /><br /> **PGGIÙ**|
 |Fare una panoramica dell'immagine verso il basso|**Rotellina del mouse avanti**<br /><br /> **PGSU**|
 |Fare una panoramica dell'immagine verso sinistra|**MAIUSC**+**Rotellina del mouse indietro**<br /><br /> **Rotellina del mouse a sinistra**<br /><br /> **MAIUSC**+**PGGIÙ**|

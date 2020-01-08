@@ -3,17 +3,17 @@ title: 'Procedura: creare un documento XML in base allo schema XSD'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645970"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592802"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: creare un documento XML in base a uno schema XSD
 
@@ -31,11 +31,11 @@ Questa funzionalità genera di norma documenti XML validi. Tuttavia, se lo schem
 
 - I vincoli di identità `xs:key`, `xs:keyref` e `xs:unique`.
 
-- Facet `xs:pattern`.
+- `xs:pattern` facet.
 
 - Enumerazioni di tipo `xs:QName`.
 
-- I tipi `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.
+- tipi di `xs:ENTITY`, `xs:ENTITIES`e `xs:NOTATION`.
 
 Si noti inoltre che il contenuto `xs:base64Binary` sarà generato solo se le enumerazioni si verificano nello schema per il tipo specificato.
 

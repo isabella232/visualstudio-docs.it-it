@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Diagnostic Data Adapter [Visual Studio ALM]
 - Diagnostic Data Adapter
 ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d518f911f076481e710176924036c6e3f37625e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91e5f9b3cee9cdfc2ca85c39c701b87028ad949a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665133"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585206"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Creare un adattatore dati di diagnostica per raccogliere dati personalizzati o influire su un computer di test
 
@@ -30,7 +30,7 @@ Se i test vengono eseguiti da Visual Studio, è necessario impostare come attive
 
 Utilizzare gli argomenti seguenti per creare adattatori dati di diagnostica:
 
-|Attività|Argomenti correlati|
+|Attività|Argomenti associati|
 |-|-----------------------|
 |**Creazione di un adattatore dati di diagnostica:** si crea un adattatore dati di diagnostica creando una libreria di classi, quindi si usano le API dell'adattatore dati di diagnostica per raccogliere le informazioni necessarie o per influire su un sistema di test usato per eseguire i test.|-   [Procedura: Creare un adattatore dati di diagnostica](../test/how-to-create-a-diagnostic-data-adapter.md)|
 |**Selezione di un adattatore dati di diagnostica personalizzato da usare durante l'esecuzione dei test:** è possibile stabilire quale adattatore dati di diagnostica usare per le impostazioni test, in modo che venga usato quando si eseguono i test.|-   [Raccogliere dati di diagnostica durante i test (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|

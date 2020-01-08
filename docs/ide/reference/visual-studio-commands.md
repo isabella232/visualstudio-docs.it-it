@@ -7,19 +7,19 @@ helpviewer_keywords:
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af3685288c00e27bb63cd45c682ab8b6354f4e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622111"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596372"
 ---
-# <a name="visual-studio-commands"></a>comandi di Visual Studio
+# <a name="visual-studio-commands"></a>Comandi di Visual Studio
 
 È possibile immettere i comandi di Visual Studio nella finestra **Comando**, nella finestra **Comando immediato** o nella casella **Trova/Comando**. In ogni caso, per indicare che deve essere eseguito un comando anziché un'operazione di ricerca o di debug, viene usato il segno di maggiore (`>`).
 
@@ -29,9 +29,9 @@ Nelle versioni localizzate dell'IDE, i nomi di comandi possono essere immessi si
 
 A molti comandi sono associati alias. Per un elenco di alias dei comandi, vedere [Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md). Per i tasti di scelta rapida dei comandi, vedere [Tasti di scelta rapida predefiniti in Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="escape-character"></a>Carattere di escape
+## <a name="escape-character"></a>Carattere escape
 
-Il carattere di escape per i comandi di Visual Studio è l'accento circonflesso (^). Il carattere di escape indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Esempio:
+Il carattere di escape per i comandi di Visual Studio è l'accento circonflesso (^). Il carattere di escape indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
 
 ```
 >Edit.Find ^^t /regex
@@ -52,7 +52,7 @@ I comandi seguenti accettano opzioni o argomenti:
 | [Valuta istruzione](../../ide/reference/evaluate-statement-command.md) | Valuta e visualizza l'istruzione specificata. |
 | [Find](../../ide/reference/find-command.md) | Ricerca il testo nei file usando un subset delle opzioni disponibili nel comando **Trova e sostituisci** . |
 | [Cerca nei file](../../ide/reference/find-in-files-command.md) | Ricerca il testo nei file usando un subset delle opzioni disponibili nel comando [Cerca nei file](../../ide/find-in-files.md). |
-| [Vai a](../../ide/reference/go-to-command.md) | Sposta il cursore sulla riga specificata. |
+| [Vai](../../ide/reference/go-to-command.md) | Sposta il cursore sulla riga specificata. |
 | [Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md) | Visualizza lo stack di chiamate corrente. |
 | [Elenca disassembly](../../ide/reference/list-disassembly-command.md) | Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori. |
 | [Elenca memoria](../../ide/reference/list-memory-command.md) | Visualizza il contenuto dell'intervallo di memoria specificato. |
@@ -73,7 +73,7 @@ I comandi seguenti accettano opzioni o argomenti:
 | [Imposta radice](../../ide/reference/set-radix-command.md) | Determina il numero di byte da visualizzare. |
 | [Shell](../../ide/reference/shell-command.md) | Avvia i programmi da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] come se il comando venisse eseguito dal prompt dei comandi. |
 | [Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md) | Visualizza l'URL specificato in una finestra del Web browser all'interno o all'esterno dell'ambiente di sviluppo integrato (IDE). |
-| [Inizio](../../ide/reference/start-command.md) | Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori. |
+| [Start](../../ide/reference/start-command.md) | Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori. |
 | [Path](../../ide/reference/symbol-path-command.md) | Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli. |
 | [Attiva/disattiva punto di interruzione](../../ide/reference/toggle-breakpoint-command.md) | Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nella posizione corrente all'interno del file. |
 | [Comando Espressioni di controllo](../../ide/reference/watch-command.md) | Crea e apre un'istanza specificata di una finestra **Espressione di controllo** . |

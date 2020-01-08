@@ -4,17 +4,17 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, faq
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdc30d0299e83423474c673b9d32e019885c2d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603883"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573248"
 ---
 # <a name="code-analysis-faq"></a>Domande frequenti sull'analisi del codice
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 131cc61614c9f3e814cca5bcbc0ff6db303414cf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: d46b2042755df9f9f0e1abcb43c07a5318c92593
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253752"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595150"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Risoluzione di assembly in fase di progettazione
 Quando si aggiunge un riferimento a un assembly tramite la scheda **.NET** della finestra di dialogo **Aggiungi riferimento**, il riferimento punta a un riferimento assembly intermedio, vale a dire un assembly in cui sono contenute tutte le informazioni sul tipo e sulla firma, ma in cui non è incluso necessariamente del codice. Nella scheda **.NET** sono elencati gli assembly di riferimento corrispondenti agli assembly di runtime in .NET Framework. Sono elencati anche gli assembly di riferimento corrispondenti agli assembly di runtime nelle cartelle AssemblyFoldersEx registrate usate da terzi.

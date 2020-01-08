@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 101b678606febd7cc2a7e2f9cee0c8c281289c9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665092"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595358"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Creare un test codificato dell'interfaccia utente basato sui dati
 
@@ -38,7 +38,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
     ![Creare un progetto di test codificato dell'interfaccia utente](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > Se non viene visualizzato il modello **Progetto di test codificato dell'interfaccia utente**, è necessario [installare il componente di test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Se il modello **Progetto di test codificato dell'interfaccia utente** non è visualizzato, è necessario [installare il componente Test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 2. Scegliere di **registrare le azioni**.
 
@@ -106,7 +106,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
 
     |Num1|Num2|Sum|
     |-|-|-|
-    |3\.|4|7|
+    |3.|4|7|
     |5|6|11|
     |6|8|14|
 

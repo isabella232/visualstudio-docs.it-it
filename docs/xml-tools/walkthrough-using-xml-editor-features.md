@@ -3,17 +3,17 @@ title: "Procedura dettagliata: utilizzo delle funzionalità dell'editor XML"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604452"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592464"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procedura dettagliata: usare le funzionalità dell'editor XML
 
@@ -64,7 +64,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 3. Digitare il **file XML di test**.
 
-4. In una nuova riga digitare `<` e selezionare **Employee** dall'elenco dei membri.
+4. In una nuova riga digitare `<`e selezionare **Employee** dall'elenco dei membri.
 
      L'editor aggiunge l'inizio di un elemento XML, `<employee`. A questo punto è possibile aggiungere attributi all'elemento o chiudere il tag di inizio digitando `>`.
 
@@ -96,7 +96,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 ## <a name="to-format-the-xml-document"></a>Per formattare il documento XML
 
-- Selezionare il pulsante **Formatta documento** sulla barra degli strumenti dell'editor XML oppure premere **CTRL** +**E**,**D**.
+- Selezionare il pulsante **Formatta documento** sulla barra degli strumenti dell'editor XML oppure premere **CTRL**+**E**,**D**.
 
    ![Pulsante Formatta documento XML in Visual Studio](media/format-xml-document.png)
 
@@ -104,7 +104,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 ## <a name="to-save-the-xml-document"></a>Per salvare il documento XML
 
-1. Scegliere **Salva con nome**dal menu **file** .
+1. Dal menu **File** selezionare **Salva con nome**.
 
      Viene visualizzata la finestra **di dialogo Salva file con nome** . Il nome file predefinito è *"XMLFile1"* .
 

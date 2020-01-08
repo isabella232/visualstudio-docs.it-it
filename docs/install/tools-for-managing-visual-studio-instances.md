@@ -9,19 +9,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e90eb90f79d717e45e558fe5151d9e27534bee95
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935412"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594500"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Strumenti per il rilevamento e la gestione di istanze di Visual Studio
 
@@ -32,7 +32,7 @@ Sono disponibili diversi strumenti che è possibile usare per rilevare le instal
 Sono stati resi disponibili diversi strumenti che consentono di rilevare e gestire le istanze installate di Visual Studio nei computer client:
 
 * [vswhere](https://github.com/microsoft/vswhere): file eseguibile incorporato in Visual Studio o disponibile per una distribuzione separata che consente di trovare il percorso di tutte le istanze di Visual Studio in un computer specifico.
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): script PowerShell che usano l'API di configurazione del programma di installazione per identificare le istanze di Visual Studio installate.
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): script PowerShell che usano l'API di configurazione del programma di installazione per identificare le istanze installate di Visual Studio.
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): esempi C# e C++ che illustrano come usare l'API di configurazione del programma di installazione per eseguire query su un'installazione esistente.
 
 L'[API di configurazione del programma di installazione](<xref:Microsoft.VisualStudio.Setup.Configuration>) include inoltre interfacce per gli sviluppatori che intendono creare utilità personalizzate per eseguire interrogazioni sulle istanze di Visual Studio.

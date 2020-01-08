@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d4ce4621fc2fa32f2730c0ce6cdd0618a44386b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2cdf4d4e6fb90b18c8141d1d176629539a0a4f8b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974190"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570583"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio
 
@@ -30,7 +30,7 @@ In molti casi, gli amministratori aziendali creano un layout e lo inseriscono in
 
 Per impostazione predefinita, Visual Studio continua a cercare gli aggiornamenti online anche se l'installazione è stata distribuita da una condivisione di rete. Se è disponibile un aggiornamento, l'utente può installarlo. Eventuali contenuti aggiornati non disponibili nel layout offline sono scaricati dal Web.
 
-Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiornamenti, è possibile modificare il percorso in cui avviene la ricerca. È inoltre possibile controllare la versione dell’aggiornamento degli utenti. A tale scopo, attenersi alla seguente procedura:
+Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiornamenti, è possibile modificare il percorso in cui avviene la ricerca. È inoltre possibile controllare la versione dell’aggiornamento degli utenti. A tale scopo, eseguire la procedura seguente:
 
 1. Creare un layout offline:
 
@@ -125,7 +125,7 @@ Accertarsi di sostituire la directory in modo che coincida con l'istanza install
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)

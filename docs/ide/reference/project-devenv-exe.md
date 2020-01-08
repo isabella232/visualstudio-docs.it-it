@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Devenv, /Project switch
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9be8cd5107b109e084fcd75bc30ae0f32ab43a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655749"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567775"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -33,15 +33,15 @@ Identifica un singolo progetto all'interno della configurazione della soluzione 
 devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 
 - *SolutionName*
 
-  Obbligatorio. Il percorso completo e il nome del file della soluzione.
+  Richiesto. Il percorso completo e il nome del file della soluzione.
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  Obbligatorio. [Compila](build-devenv-exe.md), [pulisce](clean-devenv-exe.md), [distribuisce](deploy-devenv-exe.md) o [ridistribuisce](rebuild-devenv-exe.md) il progetto.
+  Richiesto. [Compila](build-devenv-exe.md), [pulisce](clean-devenv-exe.md), [distribuisce](deploy-devenv-exe.md) o [ridistribuisce](rebuild-devenv-exe.md) il progetto.
 
 - *SolnConfigName*
 
@@ -51,17 +51,17 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   Parametro facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il nome visualizzato del progetto o un percorso relativo dalla cartella *SolutionName* al file di progetto. È anche possibile immettere il percorso completo e il nome del file di progetto.
 
-- `/ProjectConfig` *ProjConfigName*
+- `/ProjectConfig` *projnameconfig*
 
   Parametro facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da applicare al `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`).
 
-- `/Out` *OutputFilename*
+- `/Out` *OutputFileName*
 
   Parametro facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
 ## <a name="remarks"></a>Note
 
-- Deve essere usata come parte di un comando `devenv` `/Build`, `/Clean`, `/Rebuild` o `/Deploy`.
+- Deve essere usato come parte di un comando `devenv` `/Build`, `/Clean`, `/Rebuild`o `/Deploy`.
 
 - Racchiudere le stringhe che includono spazi tra virgolette doppie.
 

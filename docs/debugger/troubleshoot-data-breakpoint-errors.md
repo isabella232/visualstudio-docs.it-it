@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: a61a3181f47af4a660641ef02ce4ba1b31eedc46
-ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
+ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74951942"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404082"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Risoluzione degli errori dei punti di interruzione dei dati
 In questa pagina viene illustrata la risoluzione degli errori comuni riscontrati durante l'utilizzo di "Interrompi in caso di modifica del valore"
@@ -83,5 +83,5 @@ L'architettura (configurazione della piattaforma) in cui viene eseguito il progr
 Per eventuali problemi o suggerimenti relativi a questa funzionalità, inviare commenti tramite la Guida > inviare commenti e suggerimenti > [segnalare un problema](../ide/how-to-report-a-problem-with-visual-studio.md) nell'IDE o nella [community degli sviluppatori](https://developercommunity.visualstudio.com/).
 
 ## <a name="see-also"></a>Vedere anche
-- [Uso di "break when value changes" in .NET Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+- [Uso di "break when value changes" in .NET Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 - [DevBlog: Interrompi quando viene modificato il valore: punti di interruzione dei dati per .NET Core in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

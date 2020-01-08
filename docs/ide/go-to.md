@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654645"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593785"
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a
 
@@ -52,7 +52,7 @@ Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli 
 
 Per limitare la ricerca a un tipo specifico di elemento di codice, è possibile specificare un prefisso nella casella di ricerca o selezionare una delle cinque icone di filtro:
 
-Prefisso | Icona | Metodo rapido | Descrizione
+Prefisso | Icona | Collegamento | Descrizione
 :-: | - | - | -
 :| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL**+**G** | Consente di passare al numero di riga specificato
 f| ![Icona File](media/gotoall-files-icon.png) | **CTRL**+**1**, **CTRL**+**F** | Consente di passare al file specificato
@@ -80,7 +80,7 @@ Se si usa la [notazione Camel](https://en.wikipedia.org/wiki/Camel_case) nel cod
 
 Se si seleziona l'icona a forma di ingranaggio ![Icona Ingranaggio](media/gotoall_gear.png) è possibile modificare il comportamento di questa funzionalità:
 
-Impostazioni | Descrizione
+Impostazione di | Descrizione
 ------- | ---
 Utilizza scheda anteprima | Visualizza immediatamente l'elemento selezionato nella scheda anteprima dell'IDE
 Mostra dettagli | Visualizza informazioni relative a progetto, file, riga e riepilogo recuperando i commenti della documentazione nella finestra

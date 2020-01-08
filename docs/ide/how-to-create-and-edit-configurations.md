@@ -14,17 +14,17 @@ helpviewer_keywords:
 - project build configurations, creating
 - project build configurations, editing
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fdf3fa790a29f94a5bf3b40bc0d2ada703bc5b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bb47a1b136f4f1e584b9b1b6f99fde7008ecc902
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925770"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595293"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procedura: Creare e modificare le configurazioni
 
@@ -122,5 +122,5 @@ Per altre informazioni sulle impostazioni della pagina delle proprietà, vedere 
 
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Gestione delle proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)
+- [Gestire le proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)
 - [Creazione e modifica di configurazioni della build](/visualstudio/mac/create-and-edit-configurations)

@@ -2,22 +2,22 @@
 title: Uso di shim per isolare l'applicazione per il testing unità
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-author: jillre
+author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e4a59cb4e3372e16634cddde2a163ac94ca73d24
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982805"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585535"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usare gli shim per isolare l'app per il testing unità
 
-I **tipi shim** sono una delle due tecnologie che il Framework Microsoft Fakes usa per consentire l'isolamento dei componenti sottoposti a test dall'ambiente. Gli shim deviano le chiamate ai metodi specifici al codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. Questo rende più semplice scrivere i test.
+I **tipi shim** sono una delle due tecnologie che il Framework Microsoft Fakes usa per consentire l'isolamento dei componenti sottoposti a test dall'ambiente. Gli shim deviano le chiamate a metodi specifici verso il codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. Questo rende più semplice scrivere i test.
 
 Usare gli *shim* per isolare il codice dagli assembly che non fanno parte della soluzione. Per isolare i componenti della soluzione, utilizzare gli *Stub*.
 
@@ -62,7 +62,7 @@ using (ShimsContext.Create()) {
 }
 ```
 
-## <a name="how-to-use-shims"></a>Come utilizzare gli shim
+## <a name="how-to-use-shims"></a>Come usare gli shim
 
 Aggiungere prima di tutto un assembly Fakes:
 
@@ -92,7 +92,7 @@ public void Y2kCheckerTest() {
 
 ### <a name="write-a-test-with-shims"></a>Scrivere un test con shim
 
-Nel codice di test inserire una *deviazione* per il metodo da simulare. Esempio:
+Nel codice di test inserire una *deviazione* per il metodo da simulare. Ad esempio:
 
 ```csharp
 [TestClass]
@@ -501,7 +501,7 @@ shim = (fileName, content) => {
 ShimFile.WriteAllTextStringString = shim;
 ```
 
-## <a name="systemenvironment"></a>System. Environment
+## <a name="systemenvironment"></a>System.Environment
 
 Per shim <xref:System.Environment?displayProperty=fullName>, aggiungere il contenuto seguente al file mscorlib. Fakes dopo l'elemento **assembly** :
 

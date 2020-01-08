@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, RemoveDuplicates task
 - RemoveDuplicates task [MSBuild]
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 027e1f4894660b0198ed8a6df862e66e41cde409
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 235f96b3d67b0ad2e3c3bd1c486c5c9f2eeb86c2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811615"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596008"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (attività)
 Rimuove gli elementi duplicati dalla raccolta di elementi specificata.
@@ -31,15 +31,15 @@ Rimuove gli elementi duplicati dalla raccolta di elementi specificata.
 ## <a name="parameters"></a>Parametri
  Nella tabella che segue vengono descritti i parametri dell'attività `RemoveDuplicates` .
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`Filtered`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene una raccolta di elementi con tutti gli elementi duplicati rimossi. Viene rispettato l'ordine degli elementi di input, mantenendo la prima istanza di ogni elemento duplicato.|
-|`Inputs`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Raccolta di elementi da cui rimuovere gli elementi duplicati.|
+|`Inputs`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Raccolta di elementi da cui rimuovere gli elementi duplicati.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  In questa attività non viene fatta distinzione tra maiuscole e minuscole e non vengono confrontati i metadati quando si determinano i duplicati.
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
  L'esempio seguente usa l'attività `RemoveDuplicates` per rimuovere gli elementi duplicati dalla raccolta di elementi `MyItems`. Quando l'attività viene completata, la raccolta di elementi `FilteredItems` contiene un elemento.
@@ -90,6 +90,6 @@ Rimuove gli elementi duplicati dalla raccolta di elementi specificata.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [Attività](../msbuild/msbuild-tasks.md)

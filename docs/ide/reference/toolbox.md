@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5311c9a910c3140d5a5053a42befe7ed7f5b1278
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651119"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596450"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 
@@ -61,7 +61,7 @@ Per impostazione predefinita, la **casella degli strumenti** viene compressa lun
 
 ## <a name="create-and-distribute-custom-toolbox-controls"></a>Creare e distribuire controlli della casella degli strumenti personalizzati
 
-È possibile creare controlli della **casella degli strumenti** personalizzati partendo da un modello di progetto basato su [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) o [Windows Form](../../extensibility/creating-a-windows-forms-toolbox-control.md). È quindi possibile distribuire il controllo personalizzato ai colleghi del team o pubblicarlo sul Web usando il [programma di installazione dei controlli della casella degli strumenti ](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+È possibile creare controlli della **casella degli strumenti** personalizzati partendo da un modello di progetto basato su [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) o [Windows Form](../../extensibility/creating-a-windows-forms-toolbox-control.md). È quindi possibile distribuire il controllo personalizzato ai colleghi del team o pubblicarlo sul Web usando il [programma di installazione dei controlli della casella degli strumenti ](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
 
 ## <a name="help-on-toolbox-tabs"></a>Guida sulle schede della casella degli strumenti
 

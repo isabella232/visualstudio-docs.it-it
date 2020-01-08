@@ -3,17 +3,17 @@ title: Framework e piattaforma di destinazione di MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 837e07518ff9d4be875a52b4f1eb2929d10ff9df
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189434"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596775"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework e piattaforma di destinazione di MSBuild
 È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile impostare un'applicazione come destinazione per eseguirla in .NET Framework 2.0 su una piattaforma a 32 bit compatibile con la famiglia di processori 802x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*.
@@ -69,7 +69,7 @@ Il framework di destinazione viene specificato nella proprietà `TargetFramework
 ```
 
 ## <a name="target-platform"></a>Piattaforma di destinazione
- Una *piattaforma* è una combinazione di hardware e software che definisce un particolare ambiente di runtime. Di seguito è riportato un esempio:
+ Una *piattaforma* è una combinazione di hardware e software che definisce un particolare ambiente di runtime. Ad esempio:
 
 - `x86` definisce un sistema operativo Windows a 32 bit che è in esecuzione su un processore 80x86 Intel o un suo equivalente.
 

@@ -2,17 +2,17 @@
 title: Direttiva output T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606220"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591814"
 ---
 # <a name="t4-output-directive"></a>Direttiva output T4
 
@@ -50,7 +50,7 @@ Nei modelli di testo di Visual Studio, la direttiva `output` viene utilizzata pe
  Valori accettabili: qualsiasi estensione di file valida.
 
 ## <a name="encoding-attribute"></a>attributo di codifica
- Specifica la codifica da usare quando viene generato il file di output. Esempio:
+ Specifica la codifica da usare quando viene generato il file di output. Ad esempio:
 
  `<#@ output encoding="utf-8"#>`
 
@@ -68,6 +68,6 @@ Nei modelli di testo di Visual Studio, la direttiva `output` viene utilizzata pe
 
  `utf-32`
 
- `0` (valore predefinito del sistema)
+ `0` (impostazione predefinita di sistema)
 
  In generale, è possibile usare la stringa WebName o il numero CodePage di tutte le codifiche restituite da <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

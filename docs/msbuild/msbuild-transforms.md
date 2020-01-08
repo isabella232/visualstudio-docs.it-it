@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3875e508105bbe23b1d5cbdcd863a058592537
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
-ms.translationtype: HT
+ms.openlocfilehash: 5c4262ed1a7b92170565f7006c9ed06ed884f928
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852178"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593772"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Questo argomento descrive le trasformazioni e il relativo uso in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per compilare progetti in modo più efficiente.
@@ -63,7 +63,7 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 
 ## <a name="example"></a>Esempio
 
-### <a name="description"></a>DESCRIZIONE
+### <a name="description"></a>Descrizione
  L'esempio seguente illustra un file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in cui vengono usate le trasformazioni. In questo esempio si presuppone che vi sia un solo file con estensione *xsd* nella directory *c:\sub0\sub1\sub2\sub3* e che la directory di lavoro sia *c:\sub0*.
 
 ### <a name="code"></a>Codice
@@ -87,7 +87,7 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 </Project>
 ```
 
-### <a name="comments"></a>Commenti
+### <a name="comments"></a>Comments
  Questo esempio produce il seguente output:
 
 ```

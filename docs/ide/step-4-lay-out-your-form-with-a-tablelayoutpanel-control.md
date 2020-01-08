@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb9ba985867895b5ba19f8049e20fd31ccef191
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: b3f4ca58506e99331c48b33717903d1925874912
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118811"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590020"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel
 
@@ -23,17 +23,17 @@ In questo passaggio si aggiunge un controllo <xref:System.Windows.Forms.TableLay
 
 ## <a name="how-to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Come definire il layout del form con un controllo TableLayoutPanel
 
-1. Sul lato sinistro dell'IDE di Visual Studio scegliere la scheda **casella degli strumenti** . In alternativa, scegliere **Visualizza** > **casella degli strumenti** dalla barra dei menu o premere **CTRL**+**ALT**+**X**.
+1. Sul lato sinistro dell'IDE di Visual Studio scegliere la scheda **casella degli strumenti** . in alternativa, scegliere **Visualizza** > **casella degli strumenti** dalla barra dei menu o premere **CTRL**+**ALT**+**X**.
 
 1. Scegliere il piccolo simbolo del triangolo accanto al gruppo **contenitori** per aprirlo, come illustrato nello screenshot seguente.
 
      ![Gruppo Contenitori](../ide/media/express_toolbox.png)<br>
-***Contenitori*** *gruppo* di
+*Gruppo* di contenitori
 
-1. È possibile aggiungere al form controlli quali pulsanti, caselle di controllo ed etichette. Fare doppio clic sul controllo TableLayoutPanel nella **casella degli strumenti**. In alternativa, è possibile trascinare il controllo dalla casella degli strumenti al form. Quando si esegue questa operazione, l'IDE aggiunge un controllo TableLayoutPanel al form, come illustrato nello screenshot seguente.
+1. È possibile aggiungere al form controlli quali pulsanti, caselle di controllo ed etichette. Fare doppio clic sul controllo TableLayoutPanel nella **casella degli strumenti**. In alternativa, è possibile trascinare il controllo dalla casella degli strumenti nel form. Quando si esegue questa operazione, l'IDE aggiunge un controllo TableLayoutPanel al form, come illustrato nello screenshot seguente.
 
      ![Controllo TableLayoutPanel](../ide/media/express_formtablelayout.png)<br>
-***TableLayoutPanel*** *controllo* di
+*Controllo* TableLayoutPanel
 
     > [!NOTE]
     > Dopo aver aggiunto il controllo TableLayoutPanel, se nel form viene visualizzata una finestra con il titolo **Attività di TableLayoutPanel**, fare clic in qualsiasi punto all'interno del form per chiuderla. Verranno fornite ulteriori informazioni su questa finestra più avanti nell'esercitazione.
@@ -41,12 +41,12 @@ In questo passaggio si aggiunge un controllo <xref:System.Windows.Forms.TableLay
      Si noti che la **casella degli strumenti** si espande per coprire il modulo quando si fa clic sulla relativa scheda e si chiude quando si fa clic in un punto esterno. Si tratta della funzionalità Nascondi automaticamente nell'IDE. È possibile attivarla o disattivarla per qualsiasi finestra scegliendo l'icona a forma di puntina da disegno nell'angolo superiore destro della finestra per attivare o disattivare Nascondi automaticamente e bloccarla sul posto. L'icona a forma di puntina da disegno ha l'aspetto seguente.
 
      ![Icona della puntina da disegno](../ide/media/express_pushpintoolbox.png)<br>
-***Puntina da disegno*** *icona* di
+*Icona* puntina da disegno
 
 1. Verificare che sia selezionato il controllo TableLayoutPanel facendo clic su di esso. È possibile verificare quale controllo è selezionato osservando l'elenco a discesa nella parte superiore della finestra **Proprietà** , come illustrato nello screenshot seguente.
 
      ![Finestra Proprietà con il controllo TableLayoutPanel](../ide/media/express_controlspropwin.png)<br>
-***Proprietà*** di *visualizzazione della finestra* ***TableLayoutPanel*** *controllo* di
+*Finestra* proprietà con il *controllo* ***TableLayoutPanel***
 
 1. Scegliere il pulsante **Alfabetico** nella barra degli strumenti nella finestra **Proprietà**. In questo modo, l'elenco delle proprietà nella finestra **Proprietà** viene ordinato in ordine alfabetico, semplificando l'individuazione delle proprietà in questa esercitazione.
 
@@ -55,46 +55,46 @@ In questo passaggio si aggiunge un controllo <xref:System.Windows.Forms.TableLay
    Dopo aver selezionato TableLayoutPanel, individuare la relativa proprietà **Dock** e scegliere **Dock**, il cui valore dovrebbe essere impostato su **Nessuno**. Si noti che viene visualizzata una freccia a discesa accanto al valore. Scegliere la freccia, quindi selezionare il pulsante **riempimento** (il pulsante grande al centro), come illustrato nello screenshot seguente.
 
      ![Finestra Proprietà con Riempimento selezionato](../ide/media/express_docktable.png)<br>
-***Proprietà*** di *finestra con* ***Riempimento*** *selezionato*
+Finestra ***Proprietà*** *con* ***riempimento*** *selezionato*
 
-     Il termine *ancoraggio* in Visual Studio indica l'associazione di una finestra un'altra finestra o area nell'IDE. Ad esempio, la finestra **Proprietà** può essere non ancorata&mdash;, ovvero non collegata e mobile all'interno di Visual Studio&mdash;, oppure può essere ancorata a **Esplora soluzioni**.
+     Il termine *ancoraggio* in Visual Studio indica l'associazione di una finestra un'altra finestra o area nell'IDE. Ad esempio, la finestra **Proprietà** può essere non ancorata&mdash;, ovvero scollegato e a virgola mobile all'interno di Visual Studio&mdash;oppure può essere ancorato rispetto a **Esplora soluzioni**.
 
 1. Dopo aver impostato la proprietà **Dock** di TableLayoutPanel su **Fill**, si noti che il pannello riempie l'intero form. Se si ridimensiona nuovamente il form, TableLayoutPanel resta ancorato e viene ridimensionato correttamente.
 
     > [!NOTE]
-    > Un controllo TableLayoutPanel funziona come una tabella di Microsoft Office Word: dispone di righe e colonne e una singola cella può estendersi su più righe e colonne. Ogni cella può contenere un controllo (come un pulsante, una casella di controllo o un'etichetta). TableLayoutPanel deve disporre di un <xref:System.Windows.Forms.PictureBox> controllo che si estende sull'intera riga superiore, <xref:System.Windows.Forms.CheckBox> un controllo nella cella inferiore sinistra e quattro <xref:System.Windows.Forms.Button> controlli nella cella inferiore destra.
+    > Un controllo TableLayoutPanel funziona come una tabella di Microsoft Office Word: dispone di righe e colonne e una singola cella può estendersi su più righe e colonne. Ogni cella può contenere un controllo (come un pulsante, una casella di controllo o un'etichetta). TableLayoutPanel deve disporre di un controllo <xref:System.Windows.Forms.PictureBox> che si estende sull'intera riga superiore, un controllo <xref:System.Windows.Forms.CheckBox> nella cella inferiore sinistra e quattro controlli <xref:System.Windows.Forms.Button> nella cella inferiore destra.
 
 1. Attualmente, TableLayoutPanel dispone di due righe delle stesse dimensioni e di due colonne delle stesse dimensioni. Ridimensionarle in modo che la riga superiore e la colonna destra siano entrambe molto più grandi. In **Progettazione Windows Form** selezionare il controllo TableLayoutPanel. Nell'angolo superiore destro si trova un piccolo pulsante a forma di triangolo nero, illustrato di seguito.
 
      ![Pulsante triangolare](../ide/media/express_iconblacktriangle.gif)<br>
-***Triangolo*** *pulsante*
+*Pulsante* triangolo
 
      Questo pulsante indica che il controllo dispone di attività che consentono di impostare automaticamente le proprietà.
 
 1. Scegliere il triangolo per visualizzare l'elenco attività del controllo, come illustrato nella schermata seguente.
 
      ![Attività di TableLayoutPanel](../ide/media/express_tablepanel.png)<br>
-***TableLayoutPanel*** *attività*
+*Attività* di TableLayoutPanel
 
-1. Scegliere l'attività **Modifica righe e colonne** per visualizzare la finestra **Stili di riga e colonna**. Scegliere **Column1** e impostarne le dimensioni sul 15%, assicurandosi che il pulsante **Percentuale** sia selezionato e immettendo **15** nella casella **Percentuale**. Si tratta di un <xref:System.Windows.Forms.NumericUpDown> controllo, che verrà usato in un'esercitazione successiva. Scegliere **Column2** e impostarla su 85%. Non scegliere ancora il pulsante **OK** per non chiudere la finestra. In caso contrario, è possibile riaprirlo utilizzando l'elenco attività.
+1. Scegliere l'attività **Modifica righe e colonne** per visualizzare la finestra **Stili di riga e colonna**. Scegliere **Column1** e impostarne le dimensioni sul 15%, assicurandosi che il pulsante **Percentuale** sia selezionato e immettendo **15** nella casella **Percentuale**. Si tratta di un controllo <xref:System.Windows.Forms.NumericUpDown>, che verrà usato in un'esercitazione successiva. Scegliere **Column2** e impostarlo su 85 percent. Non scegliere ancora il pulsante **OK** per non chiudere la finestra. In caso contrario, è possibile riaprirlo utilizzando l'elenco attività.
 
      ![Stili di riga e colonna di TableLayoutPanel](../ide/media/vs_tablelayoutpanel_setup.png)<br>
-***TableLayoutPanel*** *stili di righe e colonne*
+*Stili di riga e colonna di* TableLayoutPanel
 
 1. Dall'elenco a discesa **Mostra** nella parte superiore della finestra Stili di **riga e colonna** scegliere **righe**. Impostare **Row1** su 90% e **Row2** su 10%.
 
 1. Fare clic sul pulsante **OK** . Il controllo TableLayoutPanel dispone ora di una riga grande nella parte superiore, una riga piccola nella parte inferiore, una colonna piccola a sinistra e una colonna grande a destra. È possibile ridimensionare le righe e le colonne in TableLayoutPanel scegliendo **tableLayoutPanel1** nel form e trascinando i bordi di riga e colonna.
 
      ![Form1 con TableLayoutPanel ridimensionato](../ide/media/vs_formafterlayoutpanel.png)<br>
-***Form1*** *(Visualizzatore immagini) con ridimensionato* ***TableLayoutPanel***
+***Form1*** *(Visualizzatore immagini) con TableLayoutPanel ridimensionato*
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 5: Aggiungere i controlli al form](../ide/step-5-add-controls-to-your-form.md).**
+* Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 5: aggiungere controlli al form](../ide/step-5-add-controls-to-your-form.md)** .
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Esercitazione 2: Creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
-* [Esercitazione 3: Creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)
+* [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
+* [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
-ms.openlocfilehash: 7f1d3654aa49b53a1bb8543c28f6edb517c265bf
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
+ms.sourcegitcommit: 36e874928f2933762d2fc6888a46236e376455d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74705820"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75546226"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del portale per i sottoscrittori - my.visualstudio.com
 
 Il portale delle sottoscrizioni di Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), è la risorsa centralizzata da cui è possibile accedere all'intera gamma di vantaggi disponibili tramite la sottoscrizione di Visual Studio.
 
-Per usare il portale, è necessario accedere con l'identità associata alla sottoscrizione.  Può trattarsi dell'account Microsoft o di un indirizzo di posta elettronica fornito da un'organizzazione, ad esempio il datore di lavoro o l'istituto di istruzione.  Informazioni sull'[accesso](signing-in.md).
+Per usare il portale, è necessario accedere con l'identità associata alla sottoscrizione.  Potrebbe trattarsi dell'account Microsoft (MSA) o di un indirizzo di posta elettronica fornito da un'organizzazione, ad esempio il datore di lavoro o l'Istituto di istruzione.  Informazioni sull'[accesso](signing-in.md).
 
 Il portale è organizzato in sei pagine.  Ogni pagina consente di accedere a diversi prodotti o servizi inclusi nella sottoscrizione.  Le sei pagine sono Vantaggi, Download, Codici Product Key, Abbonamenti, Supporto e Marketplace.
 

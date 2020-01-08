@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
 - command-line tests
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e46cd6f3589e50959ee521552bb66878147cf604
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1d4c44719854714658c1c15bf7059e49f4e668bd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659705"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590423"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opzioni della riga di comando di VSTest.Console.exe
 
@@ -44,7 +44,7 @@ Nella tabella seguente vengono illustrate tutte le opzioni di *VSTest.Console.ex
 |**/Framework: [*versione framework*]**|Versione .NET di destinazione da usare per l'esecuzione dei test.<br />Esempi di valori sono `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`.<br />Se il framework di destinazione è specificato come **Framework35**, i test vengono eseguiti in "modalità di compatibilità" CLR 4.0.<br />Esempio: `/Framework:framework40`|
 |**/TestCaseFilter:[*espressione*]**|Esegue test corrispondenti all'espressione specificata.<br /><Expression\> è nel formato <property\>=<value\>[\|<Expression\>].<br />Esempio: `/TestCaseFilter:"Priority=1"`<br />Esempio: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Non è possibile usare l'opzione della riga di comando **/TestCaseFilter** con l'opzione della riga di comando **/Tests**. <br />Per informazioni sulla creazione e sull'uso delle espressioni, vedere il [filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Visualizza informazioni sull'utilizzo.|
-|**/Logger:[*uri/nome descrittivo*]**|Specifica un logger per i risultati dei test.<br />Ad esempio, per registrare i risultati in un file di Risultati test di Visual Studio (TRX), usare **/Logger:trx**.<br />Ad esempio, per pubblicare i risultati dei test in Team Foundation Server, usare TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<nome build\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=\<Il valore predefinito è "Any CPU">]**<br />**[;Flavor=\<Il valore predefinito è "Debug">]**<br />**[;RunTitle=<titolo\>]**|
+|**/Logger:[*uri/nome descrittivo*]**|Specifica un logger per i risultati di test.<br />Ad esempio, per registrare i risultati in un file di Risultati test di Visual Studio (TRX), usare **/Logger:trx**.<br />Ad esempio, per pubblicare i risultati dei test in Team Foundation Server, usare TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<nome build\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=\<Il valore predefinito è "Any CPU">]**<br />**[;Flavor=\<Il valore predefinito è "Debug">]**<br />**[;RunTitle=<titolo\>]**|
 |**/ListTests:[*nome file*]**|Elenca i test individuati dal contenitore di test specificato.|
 |**/ListDiscoverers**|Elenca gli agenti di individuazione test installati.|
 |**/ListExecutors**|Elenca gli executor di test installati.|

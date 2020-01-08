@@ -13,17 +13,17 @@ helpviewer_keywords:
 - <ProjectExtensions> element [MSBuild]
 - ProjectExtensions element [MSBuild]
 ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 318ca02899632fb4499010cc348f73379a2a562d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1057743732c8dfc7ebb05bc9cbc108d61b2e234c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002421"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597412"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 Consente ai file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] di contenere informazioni non di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Tutto ciò che è contenuto in un elemento `ProjectExtensions` verrà ignorato da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -39,21 +39,21 @@ Consente ai file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/interna
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+ Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- nessuno
+ nessuna
 
 ### <a name="child-elements"></a>Elementi figlio
- nessuno
+ nessuna
 
 ### <a name="parent-elements"></a>Elementi padre
 
-| Elemento | Description |
+| Elemento | Descrizione |
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  È possibile usare un solo elemento `ProjectExtensions` in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 ## <a name="example"></a>Esempio

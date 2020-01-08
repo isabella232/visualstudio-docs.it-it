@@ -10,17 +10,17 @@ helpviewer_keywords:
 - managed code analysis warnings
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8fbc5bbb596cc7b790ea456b22a24b582e1b609a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d18763f3638442de4e0142204d696ee13b1bdb19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622455"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587771"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analisi del codice per gli avvisi del codice gestito
 Lo strumento di analisi del codice gestito fornisce avvisi che indicano le violazioni delle regole nelle librerie del codice gestito. Gli avvisi sono organizzati in aree di regole, ad esempio progettazione, localizzazione, prestazioni e sicurezza. Ogni avviso indica una violazione di una regola di analisi del codice gestito. Questa sezione fornisce descrizioni dettagliate ed esempi per ogni avviso di analisi del codice gestito.
@@ -29,9 +29,9 @@ Lo strumento di analisi del codice gestito fornisce avvisi che indicano le viola
 
 |Elemento|Descrizione|
 |----------|-----------------|
-|Digitare|TypeName per la regola.|
+|Tipo di|TypeName per la regola.|
 |CheckId|Identificatore univoco per la regola. CheckId e Category vengono usati per l'eliminazione di un avviso nell'origine.|
-|Category|Categoria dell'avviso.|
+|Categoria|Categoria dell'avviso.|
 |Modifica|Indica se la correzione di una violazione della regola è una modifica importante. Per modifica importante si intende che un assembly che presenta una dipendenza dalla destinazione che ha causato la violazione non verrà ricompilato con la nuova versione corretta o potrebbe non riuscire in fase di esecuzione a causa della modifica. Quando sono disponibili più correzioni e almeno una correzione è una modifica di rilievo e una correzione non è, vengono specificati sia ' interruzioni ' che ' non-interruzioni '.|
 |Causa|Codice gestito specifico che ha fatto sì che la regola generasse un avviso.|
 |Descrizione|Descrive i problemi alla base dell'avviso.|
@@ -40,7 +40,7 @@ Lo strumento di analisi del codice gestito fornisce avvisi che indicano le viola
 |Codice di esempio|Esempi che violano la regola ed esempi corretti che soddisfano la regola.|
 |Avvisi correlati|Avvisi correlati.|
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 
 |||
 |-|-|
@@ -51,11 +51,11 @@ Lo strumento di analisi del codice gestito fornisce avvisi che indicano le viola
 |[Avvisi di globalizzazione](../code-quality/globalization-warnings.md)|Avvisi che supportano applicazioni e librerie internazionalizzate.|
 |[Avvisi di interoperabilità](../code-quality/interoperability-warnings.md)|Avvisi che supportano l'interazione con i client COM.|
 |[Avvisi di manutenibilità](../code-quality/maintainability-warnings.md)|Avvisi che supportano la manutenzione di applicazioni e librerie.|
-|[Mobility Warnings](../code-quality/mobility-warnings.md)|Avvisi che supportano l'utilizzo efficiente dell'energia.|
+|[Avvisi di mobilità](../code-quality/mobility-warnings.md)|Avvisi che supportano l'utilizzo efficiente dell'energia.|
 |[Avvisi di denominazione](../code-quality/naming-warnings.md)|Avvisi che supportano la conformità alle convenzioni di denominazione delle linee guida di progettazione .NET.|
 |[Avvisi di prestazioni](../code-quality/performance-warnings.md)|Avvisi che supportano applicazioni e librerie ad alte prestazioni.|
-|[Avvisi di portabilità](../code-quality/portability-warnings.md)|Avvisi che supportano la portabilità tra piattaforme diverse.|
+|[Portability Warnings](../code-quality/portability-warnings.md)|Avvisi che supportano la portabilità tra piattaforme diverse.|
 |[Avvisi di affidabilità](../code-quality/reliability-warnings.md)|Avvisi che supportano l'affidabilità di applicazioni e librerie, ad esempio il corretto utilizzo di memoria e thread.|
 |[Avvisi di sicurezza](../code-quality/security-warnings.md)|Avvisi che supportano applicazioni e librerie più sicure.|
 |[Avvisi di utilizzo](../code-quality/usage-warnings.md)|Avvisi che supportano l'utilizzo appropriato di .NET.|
-|[Errori dei criteri per l'analisi del codice](../code-quality/code-analysis-policy-errors.md)|Errori che si verificano se i criteri di analisi del codice non sono soddisfatti al momento dell'archiviazione.|
+|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Errori che si verificano se i criteri di analisi del codice non sono soddisfatti al momento dell'archiviazione.|

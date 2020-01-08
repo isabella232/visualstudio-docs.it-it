@@ -3,17 +3,17 @@ title: Finestre del debugger XSLT
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646082"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592880"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
 
@@ -25,7 +25,7 @@ Per ulteriori informazioni, vedere la Guida di [riferimento all'interfaccia uten
 
 Nella finestra Variabili locali vengono visualizzate le informazioni sulle variabili definite nel foglio di stile. La finestra Variabili locali contiene tre colonne di informazioni:
 
-**Nome**
+**Name**
 
 Questa colonna contiene i nomi di tutte le variabili locali nell'ambito corrente. I set di nodi hanno un controllo albero di cui è possibile eseguire il drill-down per visualizzare le relative sottocartelle.
 
@@ -45,7 +45,7 @@ Nella finestra Variabili locali vengono inoltre visualizzate le variabili di con
 |`position()`|Posizione, ossia il numero di indice, del nodo di contesto, in base alla dimensione del contesto.|
 |`self::node()`|Il valore del nodo di contesto.|
 
-## <a name="output-window"></a>Output (finestra)
+## <a name="output-window"></a>finestra Output
 
 Nella finestra di output vengono visualizzati eventuali messaggi di errore o eccezioni di sicurezza che si verificano durante il debug. Viene inoltre visualizzato l'output del debugger.
 
@@ -58,13 +58,13 @@ Il **elenco attività** include tutti gli errori che si verificano nei blocchi d
 > [!NOTE]
 > Il debugger XSLT non contiene avvisi, quindi non vengono mai visualizzati nella **elenco attività**.
 
-## <a name="breakpoints-window"></a>finestra Punti di interruzione
+## <a name="breakpoints-window"></a>Finestra Punti di interruzione
 
 Nella finestra Punti di interruzione vengono visualizzati tutti i punti di interruzione impostati nel progetto corrente. Se si aggiunge un punto di interruzione mentre la finestra è visualizzata, la finestra viene aggiornata automaticamente per mostrare il nuovo punto di interruzione.
 
 La finestra Punto di interruzione dovrebbe comportarsi allo stesso modo degli altri debugger di Visual Studio.
 
-## <a name="watch-window"></a>Finestra Espressioni di controllo
+## <a name="watch-window"></a>Finestra di controllo
 
 La finestra Espressioni di controllo viene usata per valutare le variabili. È anche possibile modificare i valori delle variabili.
 

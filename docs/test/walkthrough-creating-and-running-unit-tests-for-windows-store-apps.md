@@ -7,17 +7,17 @@ helpviewer_keywords:
 - unit tests
 - unit tests, UWP apps
 - unit tests, running
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-author: jillre
-ms.openlocfilehash: aa3b4b06fa1a1a1dfe21ec690e158bb955f416c0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659665"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568880"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Procedura dettagliata: Creare ed eseguire unit test per le app UWP
 
@@ -32,7 +32,7 @@ Le procedure seguenti descrivono i passaggi per creare, eseguire ed eseguire il 
 
 ::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+1. Apri Visual Studio. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
 2. Nella casella di ricerca della pagina **Crea un nuovo progetto** immettere **unit test**.
 

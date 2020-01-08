@@ -5,24 +5,24 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 - VS.ToolsOptionsPages.XAML_Designer.General
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6a08358e8e82abf00a133edab876dc45626bf500
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9a925e7f3c31b8347148c15b050692fcee26fcb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621902"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585613"
 ---
 # <a name="xaml-designer-options-page"></a>Pagina delle opzioni della finestra di progettazione XAML
 
 Usare la pagina delle opzioni della **finestra di progettazione XAML** per specificare le modalità di formattazione di elementi e attributi nei documenti XAML. Per aprire questa pagina, scegliere **Opzioni** dal menu **Strumenti**. Per accedere alla pagina delle proprietà della **finestra di progettazione XAML**, scegliere il nodo **Finestra di progettazione XAML**. Le impostazioni della finestra di progettazione XAML vengono applicate quando si apre il documento. Quindi, se si apportano modifiche alle impostazioni, è necessario chiudere e riaprire Visual Studio per visualizzare le modifiche.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
 
 ## <a name="enable-xaml-designer"></a>Abilita finestra di progettazione XAML
 

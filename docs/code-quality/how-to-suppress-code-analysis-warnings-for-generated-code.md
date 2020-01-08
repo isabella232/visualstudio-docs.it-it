@@ -3,17 +3,17 @@ title: Non visualizzare le violazioni dell'analisi codice per il codice generato
 ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39daa50254f2d1b69514d4065e582154e9ceb6b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ab2ffce28103059414cef8f1b556152485a12ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649396"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587433"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procedura: non visualizzare gli avvisi di analisi codice per il codice generato
 
@@ -32,5 +32,5 @@ La casella di controllo non **visualizzare i risultati del codice generato** nel
 
 3. Selezionare la casella di controllo non **visualizzare i risultati del codice generato** .
 
-> [!NOTE]
-> È possibile escludere solo gli avvisi dall'analisi legacy. Attualmente, non è possibile escludere gli avvisi di analisi del codice dagli [analizzatori](roslyn-analyzers-overview.md).
+> [!IMPORTANT]
+> È possibile escludere solo gli avvisi dall'analisi legacy. La pagina delle proprietà con l'impostazione è stata deprecata e verrà rimossa in una versione futura del prodotto. Attualmente, non è possibile escludere gli avvisi di analisi del codice dagli [analizzatori](roslyn-analyzers-overview.md).

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658404"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590241"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 
@@ -60,7 +60,7 @@ La maggior parte dei tipi di diagrammi può essere usata per altri scopi. Per un
 
 Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.
 
-Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *regole di business statiche* come commenti associati alle classi pertinenti in un diagramma classi concettuali. Esempio:
+Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *regole di business statiche* come commenti associati alle classi pertinenti in un diagramma classi concettuali. Ad esempio:
 
 ![Regola nel commento associato alla classe Order.](../modeling/media/uml_reqmcd2.png)
 
@@ -72,17 +72,17 @@ Si noti che la scelta in questo caso riguarda la modalità di definizione dei re
 
 Per altre informazioni, vedere gli argomenti seguenti:
 
-|Informazioni|Lettura|
+|Per ulteriori informazioni su|Lettura|
 |-|-|
 |Come sviluppare codice che soddisfi le regole di business|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
-Esistono diverse categorie di requisiti per la qualità del servizio. Di seguito vengono forniti alcuni esempi:
+Esistono diverse categorie di requisiti per la qualità del servizio. Essi includono quanto segue:
 
 - Prestazioni
 
-- Sicurezza
+- Sicurezza -
 
 - Usabilità
 

@@ -2,22 +2,22 @@
 title: Numeri di build e date di rilascio di Visual Studio
 titleSuffix: ''
 description: Elenco aggiornato delle versioni rilasciate e dei numeri di build per Visual Studio, in ordine di data.
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.date: 12/10/2019
+ms.date: 12/17/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 752e1a73686a5932682642555089988f49c0eb1a
-ms.sourcegitcommit: 2485f597d909e8176622af25678bc3764fcd860c
+ms.openlocfilehash: ceb37a57910676f6e64bdd4c8d9390bd385bf0f7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000264"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590896"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -29,6 +29,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.2 | Versione | 17 dicembre 2019 | 16.4.29613.14 |
 | 16.4.1 | Versione | 10 dicembre 2019 | 16.4.29609.76 |
 | 16.0.10 | Versione | 10 dicembre 2019 | 16.0.28803.631 |
 | 16.5.0 | Preview 1 | 3 dicembre 2019 | 16.5.29521.150 |
@@ -118,6 +119,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.0.28 | Versione | 11 dicembre 2019 | 15.0.26228.102 |
 | 15.9.18 | Versione | 10 dicembre 2019 | 15.9.28307.960 |
 | 15.9.17 | Versione | 15 ottobre 2019 | 15.9.28307.905 |
 | 15.9.16 | Versione | 10 settembre 2019 | 15.9.28307.858 |

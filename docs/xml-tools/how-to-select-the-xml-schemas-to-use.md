@@ -3,17 +3,17 @@ title: 'Procedura: selezionare gli schemi XML da utilizzare'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275def786a93d42e6b8e110d3b3d785a24e948b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2acafe0c782b39bb7aa345b5456df7238703cb20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601904"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592646"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da utilizzare
 
@@ -34,7 +34,7 @@ Gli schemi specificati vengono salvati in un file di opzioni utente della soluzi
 
    ![Proprietà Schemas per un file XML](media/properties-schemas.png)
 
-   Verrà visualizzata la finestra di [dialogo schemi XML](xml-schemas-dialog-box.md) . Nella finestra di dialogo sono elencati tutti gli schemi con un. estensione *xsd* nella cache degli schemi (inclusi gli schemi a cui si fa riferimento nel file *Catalog. XML* ) e anche qualsiasi schema incluso nella soluzione corrente, aperto in Visual Studio, a cui si fa riferimento in un attributo `xsd:schemaLocation` o a cui si fa riferimento negli **schemi** Proprietà.
+   Verrà visualizzata la finestra di [dialogo schemi XML](xml-schemas-dialog-box.md) . Nella finestra di dialogo sono elencati tutti gli schemi con un. estensione *xsd* nella cache degli schemi (inclusi gli schemi a cui si fa riferimento nel file *Catalog. XML* ) e anche qualsiasi schema incluso nella soluzione corrente, aperto in Visual Studio, a cui si fa riferimento in un attributo `xsd:schemaLocation` o a cui viene fatto riferimento nella proprietà **schemas** .
 
 3. Selezionare gli schemi da usare per la convalida eseguendo una delle seguenti operazioni:
 

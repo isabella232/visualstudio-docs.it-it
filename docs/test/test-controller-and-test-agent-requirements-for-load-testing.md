@@ -6,15 +6,15 @@ helpviewer_keywords:
 - agents, requirements
 - controllers, requirements
 ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d33fb01bf931a2f7f3585197151f167c79575da6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659926"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588642"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisiti del controller e dell'agente di test per il test di carico
 
@@ -35,8 +35,8 @@ Nella tabella seguente sono riportati i requisiti hardware consigliati per la di
 |< 500 utenti virtuali|Agente di test|2,6 GHz|10 GB|2 GB|
 |< 1000 utenti virtuali|Agente di test|Processore doppio, 2,6 GHz|10 GB|2 GB|
 |N x 1000 utenti virtuali|Agente di test|Scalabilità orizzontale fino a N agenti, ognuno con processore doppio a 2,6 Ghz|10GB|2GB|
-|\< 30 computer nell'ambiente di test. Include agenti e server sottoposti a test.|Test Controller|2,6 GHz|||
-|N x 30 computer nell'ambiente di test. Include agenti e server sottoposti a test.|Test Controller|N processori a 2,6 GHz|||
+|\< 30 computer nell'ambiente di test. Include agenti e server sottoposti a test.|Controller di test|2,6 GHz|||
+|N x 30 computer nell'ambiente di test. Include agenti e server sottoposti a test.|Controller di test|N processori a 2,6 GHz|||
 
 > [!NOTE]
 > Il numero di utenti virtuali varia notevolmente da test a test. Una delle cause principali di questa varianza è attribuibile ai *tempi interazione utente* o ritardi utente. Per altre informazioni, vedere [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md). In un test di carico i test Web sono generalmente più efficienti e generano un carico maggiore rispetto agli unit test. I numeri nella tabella precedente sono validi per l'esecuzione di test Web con tempi interazione utente di 3-5 secondi in una tipica applicazione Web.

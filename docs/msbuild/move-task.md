@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, Move task
 - Move task [MSBuild]
 ms.assetid: d1405347-1309-4f18-b565-905408093d59
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2e11a1466f359cebb60505f498c0df3ae6c45b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8adfa75964959e2cce61779914a52f03319ed314
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817522"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592139"
 ---
 # <a name="move-task"></a>Move (attività)
 Sposta i file in una nuova posizione.
@@ -29,7 +29,7 @@ Sposta i file in una nuova posizione.
 ## <a name="parameters"></a>Parametri
  Nella tabella che segue vengono descritti i parametri dell'attività `Move`.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`DestinationFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica l'elenco di file in cui spostare i file di origine. Si presume che esista un mapping uno-a-uno tra questo elenco e quello specificato nel parametro `SourceFiles`. In altri termini, il primo file specificato in `SourceFiles` verrà spostato nel primo percorso specificato in `DestinationFiles` e così via.|
 |`DestinationFolder`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica la directory in cui spostare i file.|
@@ -37,7 +37,7 @@ Sposta i file in una nuova posizione.
 |`OverwriteReadOnlyFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, sovrascrive i file anche se sono contrassegnati come di sola lettura.|
 |`SourceFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da spostare.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  È necessario specificare il parametro `DestinationFolder` o `DestinationFiles`, ma non entrambi. Se vengono specificati entrambi, l'attività avrà esito negativo e verrà registrato un errore.
 
  L'attività `Move` crea le cartelle necessarie per i file di destinazione desiderati.
@@ -46,4 +46,4 @@ Sposta i file in una nuova posizione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

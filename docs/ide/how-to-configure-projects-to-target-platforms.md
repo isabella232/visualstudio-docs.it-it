@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15799ff8b181ddcfff97f7fb7338897c6f23fee2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9ba79bb199bba6c606ac603816cadc2dd2042057
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188945"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595319"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Procedura: configurare progetti per le piattaforme di destinazione
 
@@ -56,7 +56,7 @@ Le proprietà per tutti i progetti destinati alla piattaforma a 64 bit vengono a
 
 Anche **Progettazione progetti** consente di creare diverse piattaforme di destinazione per il progetto. Se la selezione di una delle piattaforme incluse nell'elenco della finestra di dialogo **Nuova piattaforma soluzione** non è applicabile alla soluzione, è possibile creare un nome di configurazione personalizzato e modificare le impostazioni in **Creazione progetti** per la piattaforma di destinazione corretta.
 
-L'esecuzione di questa attività varia in base al linguaggio di programmazione usato. Per altre informazioni, vedere i collegamenti che seguono:
+L'esecuzione di questa attività varia in base al linguaggio di programmazione usato. Per altre informazioni, accedere ai collegamenti seguenti:
 
 - Per i progetti [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], vedere [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 

@@ -8,23 +8,23 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b6c91e6074e34a8207325e25f4a48b94dd037ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639448"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586029"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: creare un set di dati con l'Progettazione DataSet
 
 In questa procedura dettagliata viene creato un set di dati usando il **Progettazione DataSet**. Questo articolo illustra il processo di creazione di un nuovo progetto e di aggiunta di un nuovo elemento del **set di dati** . Verrà illustrato come creare tabelle basate su tabelle in un database senza utilizzare una procedura guidata.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
@@ -44,7 +44,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 ## <a name="create-a-new-windows-forms-application-project"></a>Creare un nuovo progetto di applicazione Windows Form
 
-1. In Visual Studio scegliere **nuovo**  > **progetto**dal menu **file** .
+1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
 2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
@@ -113,4 +113,4 @@ In questa sezione viene illustrato come aggiungere tabelle al set di dati.
 - [Creare e configurare i set di dati in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Convalida dati](../data-tools/validate-data-in-datasets.md)
+- [Convalidare i dati](../data-tools/validate-data-in-datasets.md)

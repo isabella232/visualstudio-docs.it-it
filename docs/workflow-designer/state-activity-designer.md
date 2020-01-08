@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: c0e4657f8d3fde29c49c4505c8512726c60f1593
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: f1a95808ec19edba01b266ccd280603bcc4321dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649934"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593148"
 ---
 # <a name="state-activity-designer"></a>ActivityDesigner State
 
@@ -29,12 +29,12 @@ Per aggiungere un <xref:System.Activities.Statements.State> a un flusso di lavor
 
 Nella tabella seguente vengono elencate le proprietà di <xref:System.Activities.Statements.State> che possono essere impostate usando la finestra di progettazione flussi di lavoro e viene descritta la modalità di utilizzo nella finestra di progettazione. Alcune di queste proprietà possono essere modificate nella griglia delle proprietà, mentre altre possono essere modificate nell'area di progettazione.
 
-|Nome proprietà|Richiesto|Utilizzo|
+|Nome proprietà:|Richiesto|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|False|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.State> nell'intestazione. Il valore predefinito è **state**. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner. <xref:System.Activities.Statements.State.DisplayName%2A> è usato per l'esplorazione tramite la barra di navigazione visualizzata nella parte superiore della Progettazione flussi di lavoro.<br /><br /> Sebbene la proprietà <xref:System.Activities.Statements.State.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
-|<xref:System.Activities.Statements.State.Entry%2A>|False|Specifica l'azione che si verifica quando viene eseguita la transizione di questo stato. Quando l'attività <xref:System.Activities.Statements.State> viene espansa, questo valore può essere impostato trascinando un'attività dalla **casella degli strumenti** e rilasciandola nella sezione **entry** dello stato.|
-|<xref:System.Activities.Statements.State.Exit%2A>|False|Specifica l'azione che si verifica quando viene eseguita la transizione da questo stato. Quando l'attività <xref:System.Activities.Statements.State> viene espansa, questo valore può essere impostato trascinando un'attività dalla **casella degli strumenti** e rilasciandola nella sezione di **uscita** dello stato.|
-|<xref:System.Activities.Statements.State.Transitions%2A>|False|Vengono elencate le transizioni possibili originate da <xref:System.Activities.Statements.State>. Ogni elemento nell'elenco ha un collegamento a <xref:System.Activities.Statements.Transition> collegato e a <xref:System.Activities.Statements.State> di destinazione. Una volta fatto clic sul collegamento la finestra di progettazione passerà a una visualizzazione espansa di <xref:System.Activities.Statements.Transition> o di <xref:System.Activities.Statements.State>.|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.State> nell'intestazione. Il valore predefinito è **state**. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner. <xref:System.Activities.Statements.State.DisplayName%2A> è usato per l'esplorazione tramite la barra di navigazione visualizzata nella parte superiore della Progettazione flussi di lavoro.<br /><br /> Sebbene la proprietà <xref:System.Activities.Statements.State.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
+|<xref:System.Activities.Statements.State.Entry%2A>|Falso|Specifica l'azione che si verifica quando viene eseguita la transizione di questo stato. Quando l'attività <xref:System.Activities.Statements.State> viene espansa, questo valore può essere impostato trascinando un'attività dalla **casella degli strumenti** e rilasciandola nella sezione **entry** dello stato.|
+|<xref:System.Activities.Statements.State.Exit%2A>|Falso|Specifica l'azione che si verifica quando viene eseguita la transizione da questo stato. Quando l'attività <xref:System.Activities.Statements.State> viene espansa, questo valore può essere impostato trascinando un'attività dalla **casella degli strumenti** e rilasciandola nella sezione di **uscita** dello stato.|
+|<xref:System.Activities.Statements.State.Transitions%2A>|Falso|Vengono elencate le transizioni possibili originate da <xref:System.Activities.Statements.State>. Ogni elemento nell'elenco ha un collegamento a <xref:System.Activities.Statements.Transition> collegato e a <xref:System.Activities.Statements.State> di destinazione. Una volta fatto clic sul collegamento la finestra di progettazione passerà a una visualizzazione espansa di <xref:System.Activities.Statements.Transition> o di <xref:System.Activities.Statements.State>.|
 
 ## <a name="see-also"></a>Vedere anche
 

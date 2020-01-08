@@ -3,17 +3,17 @@ title: 'Procedura: salvare e modificare stringhe di connessione'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a78194ae6e4f462ec732e1ae2a1981aa8d857978
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed0f0105383667e1122d6636a3baab3aa925a742
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641810"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586458"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Procedura: Salvare e modificare stringhe di connessione
 Le stringhe di connessione nelle applicazioni di Visual Studio vengono salvate nel file di configurazione dell'applicazione (noto anche come impostazioni dell'applicazione) o hardcoded direttamente nell'applicazione. Il salvataggio delle stringhe di connessione nel file di configurazione dell'applicazione semplifica la gestione dell'applicazione. Se la stringa di connessione richiede modifiche, infatti, è possibile aggiornarla all'interno di tale file invece di modificarla nel codice sorgente e poi ricompilare l'applicazione.
@@ -52,7 +52,7 @@ Per modificare le informazioni sulla connessione salvate nelle impostazioni dell
 1. Nella finestra **Proprietà** espandere il **nodo connessione**.
 1. Per modificare rapidamente la stringa di connessione, modificare la proprietà **ConnectionString** oppure fare clic sulla freccia verso il basso nella proprietà di **connessione** e scegliere **nuova connessione**.
 
-## <a name="security"></a>Sicurezza
+## <a name="security"></a>Sicurezza -
 L'archiviazione delle informazioni riservate, ad esempio la password, nella stringa di connessione può avere implicazioni sulla sicurezza dell'applicazione. La sicurezza integrata di Windows consente di controllare l'accesso a un database in modo più sicuro.
 Per altre informazioni, vedere [Protezione delle informazioni di connessione](/dotnet/framework/data/adonet/protecting-connection-information).
 

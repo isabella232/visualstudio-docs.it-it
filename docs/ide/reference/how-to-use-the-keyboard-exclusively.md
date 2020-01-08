@@ -11,17 +11,17 @@ helpviewer_keywords:
 - dialog boxes [Visual Studio], shortcut keys
 - accessibility [Visual Studio]
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15cb030bc8be30d147a7d2e73dbeee6d3fca046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650798"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569023"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Come usare esclusivamente la tastiera
 
@@ -37,7 +37,7 @@ Per un elenco completo delle combinazioni di tasti di scelta rapida dei comandi 
 ::: moniker-end
 
 > [!NOTE]
-> A seconda delle impostazioni o dell'edizione di Visual Studio usata, le finestre di dialogo e i comandi di menu visualizzati possono non corrispondere a quelli descritti nella Guida. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
+> A seconda delle impostazioni o dell'edizione di Visual Studio usata, le finestre di dialogo e i comandi di menu visualizzati possono non corrispondere a quelli descritti nella Guida. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Controlli della casella degli strumenti
 

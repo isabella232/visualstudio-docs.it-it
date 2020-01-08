@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d9c678f1ec5cc984bff8e7f77d3ed95c9d579bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 62c817a2df6c56f70ab2217292feeb545cf66c85
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644450"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593213"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modificare i modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test
 
@@ -36,7 +36,7 @@ Il *modello di combinazione di test* specifica la probabilità che un utente vir
 
 ## <a name="tasks"></a>Attività
 
-|Attività|Argomenti correlati|
+|Attività|Argomenti associati|
 |-|-----------------------|
 |**Specifica della combinazione di test per il test di carico:** quando si crea un test di carico è possibile specificarne le impostazioni nella **Creazione guidata test di carico**. La **Creazione guidata test di carico** consente anche di scegliere test Web e unit test esistenti da aggiungere allo scenario iniziale. Dopo aver aggiunto test allo scenario, si specifica la combinazione di test per lo scenario.<br /><br /> È possibile usare le opzioni di modellazione del carico per prevedere più accuratamente l'uso reale di un sito Web o un'applicazione sottoposti a test di carico. Tale procedura è importante perché un test di carico che non si basa su un modello di carico accurato può generare risultati fuorvianti.|-   [Emulazione dell'uso reale previsto di un'applicazione o un sito Web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Modifica del modello di combinazione di test:** tramite l'**Editor test di carico** è possibile modificare lo scenario di un test di carico in modo da usare uno dei modelli di combinazione di test.||
@@ -44,7 +44,7 @@ Il *modello di combinazione di test* specifica la probabilità che un utente vir
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>Modificare il modello di combinazione di test in uno scenario
 
-Dopo aver creato il test di carico usando la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test specifici.
+Dopo aver creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test specifici.
 
 > [!NOTE]
 > Per un elenco completo delle proprietà delle impostazioni di carico e le relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).

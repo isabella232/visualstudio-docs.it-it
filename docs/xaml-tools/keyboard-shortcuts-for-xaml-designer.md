@@ -3,15 +3,15 @@ title: Tasti di scelta rapida per la finestra di progettazione XAML
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fededb6127c306c9cecfca5bde479b0b80972212
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f9f30dd3eaeb6905088e7eec9db1fa9cc2b0f32c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650913"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592959"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Tasti di scelta rapida per la finestra di progettazione XAML
 
@@ -29,12 +29,12 @@ Questa tabella elenca i tasti di scelta rapida disponibili per lavorare con gli 
 |Selezionare un singolo elemento|Premere **Tab** per selezionare gli elementi nell'ordine in cui vengono visualizzati nel documento. È anche possibile selezionare gli elementi usando i tasti di direzione.|
 |Selezionare più elementi|Tenere premuto **Maiusc** e selezionare gli elementi uno per uno|
 |Selezionare più elementi non adiacenti|Tenere premuto **Ctrl** e selezionare il primo e l'ultimo elemento|
-|Spostare gli elementi selezionati|Premere i tasti di direzione (è possibile tenere premuto **MAIUSC** per aumentare la distanza di spostamento per ogni pressione).|
+|Spostare gli elementi selezionati|Premere i tasti di direzione. (è possibile tenere premuto **MAIUSC** per aumentare la distanza di spostamento per ogni pressione).|
 |Ruotare un elemento con incrementi di 15 gradi|Tenere premuto **Maiusc** e ruotare l'elemento|
 |Selezionare tutti gli elementi|Premere **Ctrl**+**A**|
 |Annullare la selezione di tutti gli elementi|Premere **Ctrl**+**Maiusc**+**A**|
 |Mostrare o nascondere i punti di controllo degli elementi|Premere **F9**|
-|Selezionare una proprietà per un elemento|Con un elemento selezionato e lo stato attivo sulla Finestra Proprietà, premere **Tab**. Premere **Ctrl**+ per impostare lo stato**attivo sulla finestra Proprietà** . È possibile utilizzare i tasti di direzione per selezionare i valori delle proprietà dagli elenchi a discesa.|
+|Selezionare una proprietà per un elemento|Con un elemento selezionato e lo stato attivo sulla Finestra Proprietà, premere **Tab**. Premere **Ctrl**+**Tab** per impostare lo stato attivo sulla finestra Proprietà. È possibile utilizzare i tasti di direzione per selezionare i valori delle proprietà dagli elenchi a discesa.|
 
 ## <a name="document-outline-window-shortcuts"></a>Tasti di scelta rapida della finestra Struttura documento
 

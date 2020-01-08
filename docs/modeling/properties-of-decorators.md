@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, decorators
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567cba4be2d225985b5a6d690f0d8264f24190f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3374c07cac01104354b2ce41abddbeabbec0a373
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747497"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566137"
 ---
 # <a name="properties-of-decorators"></a>Proprietà degli elementi Decorator
 Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che possono essere visualizzate su forme o connettori nel diagramma. Nelle tabelle seguenti sono illustrate le proprietà dei tre tipi di elemento Decorator. Alcune delle proprietà vengono visualizzate solo negli elementi Decorator di forma o solo negli elementi Decorator del connettore.
@@ -23,7 +23,7 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 
 ## <a name="expandcollapse-decorator"></a>Espandi/Comprimi elemento Decorator
 
-|proprietà|Descrizione|Impostazione predefinita|
+|Gli|Descrizione|Default|
 |-|-|-|
 |DisplayName|Nome dell'elemento Decorator che verrà visualizzato nella finestra di progettazione generata.|Espandi elemento Decorator compresso|
 |Name|Nome dell'elemento Decorator.|ExpandCollapseDecorator|
@@ -36,7 +36,7 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 
 ## <a name="icon-decorator"></a>Elemento Decorator icona
 
-|proprietà|Descrizione|Impostazione predefinita|
+|Gli|Descrizione|Default|
 |-|-|-|
 |DefaultIcon|Percorso dell'icona o del file di immagine da visualizzare.|\<nessuno>|
 |DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Elemento Decorator icona|
@@ -50,7 +50,7 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|proprietà|Descrizione|Impostazione predefinita|
+|Gli|Descrizione|Default|
 |-|-|-|
 |DefaultText|Testo predefinito da visualizzare.|Label|
 |DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Label|

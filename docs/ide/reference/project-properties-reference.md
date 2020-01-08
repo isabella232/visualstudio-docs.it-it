@@ -6,17 +6,17 @@ helpviewer_keywords:
 - user interface [Visual Studio], projects
 - projects [Visual Studio], user interface
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3b5c5f79b4ecfcac3e70b6be125c57bcc738199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655798"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567723"
 ---
 # <a name="project-properties-reference"></a>Informazioni di riferimento sulle proprietà del progetto
 
@@ -34,7 +34,7 @@ Altre informazioni su come configurare e personalizzare le proprietà del proget
 | [Pagina Debug, Creazione progetti](../../ide/reference/debug-page-project-designer.md) | Usare questa pagina per specificare le proprietà di debug di un progetto. |
 | [Analisi del codice, Creazione progetti](../../ide/reference/code-analysis-project-designer.md) | Usare questa pagina per configurare lo strumento di analisi del codice. |
 | [Pagina Pubblica, Creazione progetti](../../ide/reference/publish-page-project-designer.md) | Usare questa pagina per configurare le proprietà per [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. |
-| [Pagina Riferimenti, Creazione progetti (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md) | Usare questa pagina per gestire i riferimenti usati da un progetto. |
+| [Riferimenti (pagina), Creazione progetti (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md) | Usare questa pagina per gestire i riferimenti usati da un progetto. |
 | [Pagina Sicurezza, Creazione progetti](../../ide/reference/security-page-project-designer.md) | Usare questa pagina per configurare le impostazioni di sicurezza per l'accesso al codice per le applicazioni distribuite usando la distribuzione [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. |
 | [Pagina Firma, Creazione progetti](../../ide/reference/signing-page-project-designer.md) | Usare questa pagina per firmare manifesti di distribuzione e dell'applicazione, nonché per firmare l'assembly. |
 

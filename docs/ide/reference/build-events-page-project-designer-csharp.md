@@ -11,21 +11,21 @@ helpviewer_keywords:
 - pre-build events
 - post-build events
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4842a5a08de96cd40a45d0765d427cc74cbf5432
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 6629f41657a546ffb5fb48e0b6efb5f4f0dd50cb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714385"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596879"
 ---
 # <a name="build-events-page-project-designer-c"></a>Pagina Eventi di compilazione, Progettazione progetti (C#)
 
-Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specificare le istruzioni di configurazione della build. È anche possibile specificare le condizioni in cui vengono eseguiti gli eventi di post-compilazione. Per ulteriori informazioni, vedere [procedura: specificare gli eventi di compilazioneC#()](../../ide/how-to-specify-build-events-csharp.md) e [procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specificare le istruzioni di configurazione della build. È inoltre possibile specificare le condizioni in cui sono generati gli eventi di post-compilazione. Per ulteriori informazioni, vedere [procedura: specificare gli eventi di compilazioneC#()](../../ide/how-to-specify-build-events-csharp.md) e [procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="uielement-list"></a>Elenco UIElement
 

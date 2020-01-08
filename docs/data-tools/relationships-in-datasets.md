@@ -10,17 +10,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9fab55c020894fe87ec4dc1c31137fb7e38c204
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9d733892b3bc62c272f31b0d7cc1aa10fbf229d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648251"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586315"
 ---
 # <a name="create-relationships-between-datasets"></a>Creare relazioni tra set di dati
 I set di dati contenenti tabelle di dati correlate utilizzano oggetti <xref:System.Data.DataRelation> per rappresentare una relazione padre/figlio tra le tabelle e per restituire record correlati l'uno dall'altro. L'aggiunta di tabelle correlate ai set di dati tramite la **Configurazione guidata origine dati**o la **Progettazione DataSet**crea e configura automaticamente l'oggetto <xref:System.Data.DataRelation>.
@@ -55,7 +55,7 @@ Come parte del vincolo FOREIGN KEY, è possibile specificare le regole di integr
 
 Le regole che è possibile apportare sono specificate nell'enumerazione <xref:System.Data.Rule> e sono elencate nella tabella seguente.
 
-|Regola vincolo di chiave esterna|Operazione|
+|Regola vincolo di chiave esterna|Azione|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|La modifica (aggiornamento o eliminazione) apportata al record padre viene inoltre apportata in record correlati nella tabella figlio.|
 |<xref:System.Data.Rule.SetNull>|I record figlio non vengono eliminati, ma la chiave esterna nei record figlio è impostata su <xref:System.DBNull>. Con questa impostazione, i record figlio possono essere lasciati come "orfani", ovvero non hanno alcuna relazione con i record padre. **Nota:** L'utilizzo di questa regola può generare dati non validi nella tabella figlio.|
@@ -92,7 +92,7 @@ Le relazioni tra le tabelle di dati vengono visualizzate come righe nel **Proget
 
 7. Consente di scegliere se creare una relazione, un vincolo o entrambi.
 
-8. Selezionare o deselezionare la casella **relazione nidificata** . Se si seleziona questa opzione, la proprietà <xref:System.Data.DataRelation.Nested%2A> viene impostata su `true` e le righe figlio della relazione vengono annidate all'interno della colonna padre quando tali righe vengono scritte come dati XML o sincronizzate con <xref:System.Xml.XmlDataDocument>. Per ulteriori informazioni, vedere [nidificazione di oggetti DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
+8. Selezionare o deselezionare la casella **relazione nidificata** . Se si seleziona questa opzione, la proprietà <xref:System.Data.DataRelation.Nested%2A> viene impostata su `true`e le righe figlio della relazione vengono annidate all'interno della colonna padre quando tali righe vengono scritte come dati XML o sincronizzate con <xref:System.Xml.XmlDataDocument>. Per ulteriori informazioni, vedere [nidificazione di oggetti DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
 
 9. Impostare le regole da applicare quando si apportano modifiche ai record in queste tabelle. Per ulteriori informazioni, vedere <xref:System.Data.Rule>.
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2a2179a759bc11a9466361d3c8cc2df45c12f20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a14209d895b461c64b30d0f1690b68484f09d970
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648586"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586757"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca in applicazioni WPF
 
@@ -81,7 +81,7 @@ Si consideri, ad esempio, una tabella di `Orders` in un database Sales. Ogni rec
 
      Visual Studio imposta alcune proprietà nel controllo per configurare l'associazione di ricerca. La tabella seguente elenca le proprietà modificate da Visual Studio. Se necessario, è possibile modificare queste proprietà in XAML o nella finestra **Proprietà** .
 
-    |proprietà|Spiegazione dell'impostazione|
+    |Gli|Spiegazione dell'impostazione|
     |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Questa proprietà specifica la raccolta o l'associazione utilizzata per ottenere i dati visualizzati nel controllo. Visual Studio imposta questa proprietà sul <xref:System.Windows.Data.CollectionViewSource> per i dati padre trascinati nel controllo.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Questa proprietà specifica il percorso dell'elemento di dati visualizzato nel controllo. Visual Studio imposta questa proprietà sulla prima colonna o proprietà nei dati padre, dopo la chiave primaria, che ha un tipo di dati String.<br /><br /> Se si desidera visualizzare una colonna o una proprietà diversa nei dati padre, impostare questa proprietà sul percorso di un'altra proprietà.|

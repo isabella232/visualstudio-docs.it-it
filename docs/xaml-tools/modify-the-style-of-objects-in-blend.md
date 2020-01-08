@@ -3,17 +3,17 @@ title: Modificare lo stile degli oggetti
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 225a9e85493711a1e2903c1f6a632ae68f31136f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668830"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592952"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modificare lo stile degli oggetti in Blend per Visual Studio
 
@@ -75,7 +75,7 @@ Nella finestra di dialogo **Create Style Resource** (Crea risorsa di stile) è p
 
 > [!NOTE]
 > Non è possibile creare stili o modelli per ogni tipo di controllo. Se questi non sono supportati in un controllo, il pulsante di navigazione non verrà visualizzato sopra la tavola da disegno.
-> Per tornare all'ambito di modifica del documento principale, fare clic su **Reimposta l'ambito** ![Icona Reimposta l'ambito](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Per tornare all'ambito di modifica del documento principale, fare clic su **Reimposta ambito per** ![reimposta ambito](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png)icona.
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Applicare uno stile o un modello a un controllo
 
@@ -93,7 +93,7 @@ Gli stati di visualizzazione consentono di cambiare l'aspetto di un controllo in
 
 ![Stato di passaggio del mouse](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Breve video:** ![Pulsante Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gestire lo stato dei controlli WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Breve video:** pulsante ![Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [gestire lo stato dei controlli WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Risorse: creare colori, stili e modelli e riutilizzarli in seguito
 

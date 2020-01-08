@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - databases, managing change
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11e60c43e2b9935f4aaf2ffcc5d5c7e3683665d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648584"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586731"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Progetti di database e applicazioni livello dati
 
@@ -28,8 +28,8 @@ Per un elenco delle funzionalità di database supportate dalle applicazioni live
 | Attività di alto livello | Contenuto di supporto |
 | - | - |
 | **Avviare lo sviluppo di un'applicazione livello dati:** Il concetto di applicazione livello dati (DAC) è stato introdotto con SQL Server 2008. Un'applicazione livello dati contiene la definizione per un database di SQL Server e gli oggetti istanza di supporto utilizzati da un'applicazione client-server o a tre livelli. Un'applicazione livello dati include oggetti di database, ad esempio tabelle e viste, insieme a entità di istanza quali gli account di accesso. È possibile utilizzare Visual Studio per creare un progetto DAC, compilare un file di pacchetto di applicazione livello dati e inviare il file del pacchetto di applicazione livello dati a un amministratore di database per la distribuzione in un'istanza del motore di database SQL Server. | - [Applicazioni livello dati](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Esecuzione dello sviluppo iterativo di database:** Gli sviluppatori possono estrarre parti del progetto e aggiornarle in un ambiente di sviluppo isolato. Utilizzando questo tipo di ambiente, è possibile testare le modifiche senza influire sugli altri membri del team. Una volta completate le modifiche, è possibile archiviare nuovamente i file nel controllo della versione, in modo che gli altri membri del team possano ottenere le modifiche e compilarle e distribuirle in un server di prova. | [sviluppo di database offline orientato ai progetti -  (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [debugger Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **Prototipi, verifica dei risultati dei test e modifica degli script e degli oggetti di database:** È possibile utilizzare l'editor Transact-SQL per eseguire una di queste attività comuni. | [editor di query e di testo -  (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **Esecuzione dello sviluppo iterativo di database:** Gli sviluppatori possono estrarre parti del progetto e aggiornarle in un ambiente di sviluppo isolato. Utilizzando questo tipo di ambiente, è possibile testare le modifiche senza influire sugli altri membri del team. Una volta completate le modifiche, è possibile archiviare nuovamente i file nel controllo della versione, in modo che gli altri membri del team possano ottenere le modifiche e compilarle e distribuirle in un server di prova. | [sviluppo di database offline orientato ai progetti - (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [debugger Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **Prototipi, verifica dei risultati dei test e modifica degli script e degli oggetti di database:** È possibile utilizzare l'editor Transact-SQL per eseguire una di queste attività comuni. | [editor di query e di testo - (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>Vedere anche
 

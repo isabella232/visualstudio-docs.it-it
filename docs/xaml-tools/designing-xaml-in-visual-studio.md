@@ -4,15 +4,15 @@ titleSuffix: ''
 ms.date: 08/05/2019
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d9cfa2d216baf89d4b7a886ff9d7b56b8b946b8b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 97946fc2ed79b83fbc7d3ce3c3dc4960934eb5ab
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73569053"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592980"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Progettare XAML in Visual Studio e Blend per Visual Studio
 
@@ -20,7 +20,7 @@ Visual Studio e Blend per Visual Studio offrono entrambi strumenti visivi per la
 
 È possibile spostarsi tra Visual Studio e Blend per Visual Studio e persino aprire lo stesso progetto in entrambi gli IDE contemporaneamente. Le modifiche salvate in file XAML in un IDE possono essere applicate tramite ricaricamento automatico quando si passa all'altro IDE. È possibile controllare il comportamento di ricaricamento passando a **Strumenti** > **Opzioni** > **Ambiente** > **Documenti** in uno degli IDE.
 
-## <a name="installation"></a>Installazione
+## <a name="installation"></a>Installazione di
 
 - Per creare app WPF, installare il carico di lavoro **Sviluppo per desktop .NET** in Visual Studio. Verrà installato anche Blend per Visual Studio.
 - Per creare app UWP, installare il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)**  in Visual Studio. Verrà installato anche Blend per Visual Studio.

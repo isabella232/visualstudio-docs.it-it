@@ -42,24 +42,24 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3796a9b7a1d37911601574e02c89e8ccebb684ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642110"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586718"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 
 > [!NOTE]
 > I set di dati e le classi correlate sono tecnologie .NET legacy dei primi 2000 che consentono alle applicazioni di utilizzare i dati in memoria mentre le applicazioni sono disconnesse dal database. Sono particolarmente utili per le applicazioni che consentono agli utenti di modificare i dati e salvare nuovamente le modifiche nel database. Sebbene i set di risultati abbiano dimostrato una tecnologia molto efficace, è consigliabile che le nuove applicazioni .NET usino Entity Framework. Entity Framework offre un metodo più naturale per lavorare con i dati tabulari come modelli a oggetti e dispone di un'interfaccia di programmazione più semplice.
 
-Un oggetto `DataSet` è un oggetto in memoria che essenzialmente è un mini-database. Contiene gli oggetti `DataTable`, `DataColumn` e `DataRow` in cui è possibile archiviare e modificare i dati da uno o più database senza dover gestire una connessione aperta. Il set di dati mantiene le informazioni sulle modifiche apportate ai dati, quindi gli aggiornamenti possono essere rilevati e restituiti al database quando l'applicazione viene riconnessa.
+Un oggetto `DataSet` è un oggetto in memoria che essenzialmente è un mini-database. Contiene gli oggetti `DataTable`, `DataColumn`e `DataRow` in cui è possibile archiviare e modificare i dati da uno o più database senza dover gestire una connessione aperta. Il set di dati mantiene le informazioni sulle modifiche apportate ai dati, quindi gli aggiornamenti possono essere rilevati e restituiti al database quando l'applicazione viene riconnessa.
 
 I set di impostazioni e le classi correlate sono definiti nello spazio dei nomi <xref:System.Data?displayProperty=fullName> nell'API .NET. È possibile creare e modificare i set di impostazioni in modo dinamico nel codice usando ADO.NET. La documentazione in questa sezione illustra come usare i set di impostazioni usando le finestre di progettazione di Visual Studio. I set di dati creati mediante le finestre di progettazione utilizzano oggetti **TableAdapter** per interagire con il database. I set di impostazioni creati a livello di codice utilizzano oggetti **DataAdapter** . Per informazioni sulla creazione di set di dati a livello di codice, vedere [DataAdapters e DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 

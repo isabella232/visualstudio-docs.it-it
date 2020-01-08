@@ -11,17 +11,17 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 589ec840b49d250591e2c477989d4422273cac31
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6589d40d8f897eb8df7f108f53973af268d1edc9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647633"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588395"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
@@ -30,15 +30,15 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |Icona|Descrizione|Icona|Descrizione|
 |----------|-----------------|----------|-----------------|
 |![Simbolo dello spazio dei nomi](../ide/media/vxnamespace_icon.gif)|Spazio dei nomi|![Simbolo Dichiarazione](../ide/media/vxmethod_icon.gif)|Metodo o funzione|
-|![Icona Classe](../ide/media/vxclass_icon.gif)|Class|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|??|
-|![Simbolo interfaccia cerchio-linea](../ide/media/vxinterface_icon.gif)|Interfaccia|![Simbolo della proprietà](../ide/media/vxproperty_icon.gif)|proprietà|
+|![Icona Classe](../ide/media/vxclass_icon.gif)|Classe|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|??|
+|![Simbolo interfaccia cerchio-linea](../ide/media/vxinterface_icon.gif)|Interfaccia|![Simbolo della proprietà](../ide/media/vxproperty_icon.gif)|Gli|
 |![Simbolo struttura](../ide/media/vxstruct_icon.gif)|Struttura|![Icona Campo](../ide/media/vxfield_icon.gif)|Campo o variabile|
-|![Simbolo unione](../ide/media/vxunion_icon.gif)|Unione|![Simbolo Evento](../ide/media/vxevent_icon.gif)|event|
+|![Simbolo unione](../ide/media/vxunion_icon.gif)|Unione|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Event|
 |![Simbolo di enumerazione](../ide/media/vxenum_icon.gif)|Enum|![Icona Costante](../ide/media/vxconstant_icon.gif)|Costante|
 |![Simbolo definizione dei tipi](../ide/media/vxtypedef_icon.gif)|TypeDef|![Simbolo di enumerazione elementi](../ide/media/vxenumitem_icon.gif)|Elemento di enumerazione|
-|![Simbolo dei moduli di Visual Studio](../ide/media/vxmodule_icon.gif)|Modulo|![Simbolo elemento mappa](../ide/media/vxmapitem_icon.gif)|Elemento mappa|
+|![Simbolo dei moduli di Visual Studio](../ide/media/vxmodule_icon.gif)|Module|![Simbolo elemento mappa](../ide/media/vxmapitem_icon.gif)|Elemento mappa|
 |![Simbolo del metodo di estensione](../ide/media/extensionmethod.gif)|Metodo di estensione|![Simbolo Dichiarazione](../ide/media/vxmethod_icon.gif)|Dichiarazione esterna|
-|![Simbolo delegato](../ide/media/vxdelegate_icon.gif)|delegato|![Icona di errore per Visualizzazione classi e Visualizzatore oggetti](../ide/media/erroricon.gif)|Error|
+|![Simbolo delegato](../ide/media/vxdelegate_icon.gif)|Delegato|![Icona di errore per Visualizzazione classi e Visualizzatore oggetti](../ide/media/erroricon.gif)|Errore di|
 |![Simbolo Eccezione](../ide/media/vxexception_icon.gif)|Eccezione|![Simbolo modello](../ide/media/vxtemplate_icon.gif)|Modello|
 |![Simbolo Mappa](../ide/media/vxmap_icon.gif)|Mappa|![Simbolo di errore con punto esclamativo](../ide/media/vxerror_icon.gif)|Sconosciuto|
 |![Simbolo Inoltro dei tipi](../ide/media/ob_type_forward.gif)|Inoltro del tipo|||

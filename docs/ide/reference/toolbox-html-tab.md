@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Toolbox, HTML tab
 - HTML Designer, setting options
 - HTML tab in Toolbox
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed46bdb9b5562b38f37129d69e7f075e425588b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644776"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596437"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, scheda HTML
 
@@ -50,7 +50,7 @@ Quando si trascina **Input (Pulsante)** nell'area di visualizzazione Progettazio
 
 **Input (Reimposta)**
 
-![Schermata HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
+![Schermata di HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
 
 Consente di inserire un elemento `input` di `type="reset"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di reimpostazione viene inserito `id="Reset1"`, come secondo `id="Reset2"` e così via.
 
@@ -62,7 +62,7 @@ Quando si trascina **Input (Reimposta)** nell'area di visualizzazione Progettazi
 
 **Input (Invia)**
 
-![Schermata HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
+![Schermata di HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
 
 Consente di inserire un elemento `input` di `type="submit"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di invio viene inserito `id="Submit1"`, come secondo `id="Submit2"` e così via.
 
@@ -74,7 +74,7 @@ Quando si trascina **Input (Invia)** nell'area di visualizzazione Progettazione,
 
 **Input (Testo)**
 
-![Schermata HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
+![Schermata di HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
 
 Consente di inserire un elemento `input` di `type="text"` nel documento. Per modificare il testo predefinito visualizzato, modificare l'attributo `value`. Per impostazione predefinita, come primo campo di testo viene inserito `id="Text1"`, come secondo `id="Text2"` e così via.
 
@@ -85,7 +85,7 @@ Quando si trascina **Input (Testo)** nell'area di visualizzazione Progettazione,
 ```
 
 > [!IMPORTANT]
->È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nei siti di pagine Web ASP.NET (Razor)).
+>È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).
 
 **Input (File)**
 
@@ -100,7 +100,7 @@ Quando si trascina **Input (File)** nell'area di visualizzazione Progettazione, 
 ```
 
 > [!IMPORTANT]
-> È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nei siti di pagine Web ASP.NET (Razor)).
+> È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).
 
 **Input (Password)**
 
@@ -115,7 +115,7 @@ Quando si trascina **Input (Password)** nell'area di visualizzazione Progettazio
 ```
 
 > [!IMPORTANT]
-> Se l'applicazione trasmette nomi utente e password, è necessario configurare il sito Web per usare SSL (Secure Sockets Layer) per la crittografia della trasmissione. Per altre informazioni, vedere [Protezione delle connessioni](/previous-versions/tn-archive/bb418917(v=technet.10)). È poi consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nei siti di pagine Web ASP.NET (Razor)).
+> Se l'applicazione trasmette nomi utente e password, è necessario configurare il sito Web per usare SSL (Secure Sockets Layer) per la crittografia della trasmissione. Per altre informazioni, vedere [Protezione delle connessioni](/previous-versions/tn-archive/bb418917(v=technet.10)). È poi consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).
 
 **Input (Casella di controllo)**
 
@@ -131,7 +131,7 @@ Quando si trascina **Input (Casella di controllo)** nell'area di visualizzazione
 
 **Input (Pulsante di opzione)**
 
-![Schermata VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
+![Schermata di VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
 
 Consente di inserire un elemento `input` di `type="radio"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di opzione viene inserito `id="Radio1"`, come secondo `id="Radio2"` e così via.
 
@@ -166,11 +166,11 @@ Quando si trascina **Area di testo** nell'area di visualizzazione Progettazione,
 ```
 
 > [!IMPORTANT]
-> È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nei siti di pagine Web ASP.NET (Razor)).
+> È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).
 
 **Tabella**
 
-![Schermata HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
+![Schermata di HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
 Consente di inserire un elemento `table`.
 
@@ -192,7 +192,7 @@ Quando si trascina **Immagine** nell'area di visualizzazione Progettazione, nel 
 <img alt="" src="">
 ```
 
-**Selezione**
+**Seleziona**
 
 ![Controllo Dropdown della casella degli strumenti di una pagina HTML](../../ide/reference/media/vxdropdown.gif)
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98b19d889ab9afc651939b27120ad132d8332c14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b51b5b4be12f76e2237ff93659617e1c1843722a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648503"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586653"
 ---
 # <a name="edit-data-in-datasets"></a>Modifica di dati nei set di dati
 È possibile modificare i dati nelle tabelle dati in modo analogo a come si modificano i dati in una tabella di qualsiasi database. Il processo può includere l'inserimento, l'aggiornamento e l'eliminazione di record nella tabella. In un form con associazione a dati è possibile specificare i campi modificabili dall'utente. In questi casi, l'infrastruttura di data binding gestisce tutti i rilevamento delle modifiche in modo che le modifiche possano essere inviate nuovamente al database in un secondo momento. Se si apportano modifiche ai dati a livello di codice e si desidera inviare le modifiche al database, è necessario utilizzare gli oggetti e i metodi che eseguono il rilevamento delle modifiche.
@@ -70,7 +70,7 @@ Quando vengono apportate modifiche ai record in un set di dati, le informazioni 
 
 Le modifiche vengono rilevate in due modi in ogni riga di dati:
 
-- Ogni riga di dati contiene informazioni correlate alla relativa <xref:System.Data.DataRow.RowState%2A> (ad esempio, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted> o <xref:System.Data.DataRowState.Unchanged>).
+- Ogni riga di dati contiene informazioni correlate alla relativa <xref:System.Data.DataRow.RowState%2A> (ad esempio, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>o <xref:System.Data.DataRowState.Unchanged>).
 
 - Ogni riga di dati modificata contiene più versioni di tale riga (<xref:System.Data.DataRowVersion>), la versione originale (prima delle modifiche) e la versione corrente (dopo le modifiche). Durante il periodo in cui è in sospeso una modifica (il momento in cui è possibile rispondere all'evento <xref:System.Data.DataTable.RowChanging>), è disponibile anche una terza versione, ovvero la versione proposta.
 
@@ -98,7 +98,7 @@ Nell'esempio seguente viene illustrato come controllare un set di dati denominat
 [!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
 
 ## <a name="to-locate-rows-that-have-errors"></a>Per individuare le righe che contengono errori
-Quando si utilizzano singole colonne e righe di dati, è possibile che si verifichino errori. È possibile controllare la proprietà `HasErrors` per determinare se sono presenti errori in un <xref:System.Data.DataSet>, <xref:System.Data.DataTable> o <xref:System.Data.DataRow>.
+Quando si utilizzano singole colonne e righe di dati, è possibile che si verifichino errori. È possibile controllare la proprietà `HasErrors` per determinare se sono presenti errori in un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>o <xref:System.Data.DataRow>.
 
 1. Controllare la proprietà `HasErrors` per verificare la presenza di errori nel set di dati.
 

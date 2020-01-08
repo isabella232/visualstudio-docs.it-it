@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: ef13f400ff762818eb97396c51330d755c0203c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924562"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586965"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 
@@ -40,7 +40,7 @@ Questa procedura dettagliata illustra le attività seguenti:
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
@@ -98,7 +98,7 @@ Creare un servizio dati WCF per esporre i dati nel Entity Data Model a un'applic
 
 2. Nell'elenco **Modelli installati** fare clic su **Web**, quindi selezionare l'elemento di progetto **WCF Data Services**.
 
-3. Nella casella **nome** Digitare `AdventureWorksService.svc` e fare clic su **Aggiungi**.
+3. Nella casella **nome** Digitare `AdventureWorksService.svc`e fare clic su **Aggiungi**.
 
      Visual Studio aggiunge il `AdventureWorksService.svc` al progetto.
 
@@ -173,7 +173,7 @@ Aggiungere alcuni pulsanti alla finestra modificando il codice XAML in WPF Desig
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. Compilare il progetto.
+3. Compilazione del progetto.
 
 ## <a name="create-the-data-bound-controls"></a>Creare i controlli associati a dati
 
@@ -265,7 +265,7 @@ Compilare ed eseguire l'applicazione per verificare che sia possibile visualizza
 
 1. Scegliere **Compila soluzione**dal menu **Compila** . Verificare che la soluzione venga compilata senza errori.
 
-2. Premere **Ctrl** +**F5**.
+2. Premere **Ctrl**+**F5**.
 
      Visual Studio avvia il progetto **AdventureWorksService** senza eseguirne il debug.
 

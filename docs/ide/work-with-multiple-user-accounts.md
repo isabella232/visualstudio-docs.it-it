@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5993d550d85cdc0bd1c9ce6b72553eda6fc280e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f757489f26ae41319316fcfc9cdc957dbb7d94a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647074"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590657"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 

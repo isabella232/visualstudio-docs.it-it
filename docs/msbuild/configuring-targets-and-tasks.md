@@ -3,22 +3,22 @@ title: Configurazione di destinazioni e attività | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3dedf051bf9b9d60f659d8b8ad22535a4eccb4c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: bb305e1c8a50c8f452ce4ee2d78620314c5d6a1f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912087"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596112"
 ---
 # <a name="configure-targets-and-tasks"></a>Configurare destinazioni e attività
 È possibile configurare le destinazioni e le attività di MSBuild per l'esecuzione out-of-process con MSBuild, in modo che sia possibile specificare come destinazione contesti che differiscono da quello corrente in cui è in esecuzione l'applicazione. Ad esempio, è possibile specificare come destinazione un'applicazione .NET Framework 2.0 a 32 bit mentre nel computer di sviluppo è in esecuzione un sistema operativo .NET Framework 4.5 a 64 bit. Inoltre, è possibile specificare come destinazione computer in cui viene eseguito .NET Framework 4 o versione precedente. La combinazione tra 32 o 64 bit e la versione specifica di .NET Framework viene definita *contesto di destinazione*.
 
-## <a name="installation"></a>Installazione
+## <a name="installation"></a>Installazione di
  In .NET Framework 4.5 e 4.5.1 il Common Language Runtime (CLR), le destinazioni, le attività e gli strumenti di .NET Framework 4 vengono sostituiti senza relativa ridenominazione. .NET Framework 4.5.1 viene installato come parte di [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)].
 
  Per installare MSBuild separatamente da Visual Studio, è possibile scaricare il pacchetto di installazione dalla pagina di [download di MSBuild](https://www.microsoft.com/download/details.aspx?id=40760). È inoltre necessario installare le versioni di .NET Framework che si prevede di usare.

@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 73473a549c774cd0f4302404e2ca3a450cc2e6d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e280f64cc23dc2e949e5aa896a8e20673a3f293
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666986"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596489"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procedura dettagliata: Creare un processore di direttiva personalizzato
 
@@ -84,9 +84,9 @@ End Property
 
 2. Aggiungere riferimenti a questi assembly:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
 3. Sostituire il codice in **Class1** con il codice seguente. Questo codice definisce una classe CustomDirectiveProcessor che eredita dalla classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa i metodi necessari.
 
@@ -607,7 +607,7 @@ End Property
 
 ### <a name="build-the-project"></a>Compilare il progetto
 
-Compilare il progetto. Scegliere **Compila soluzione** dal menu **Compila**.
+Compilazione del progetto. Scegliere **Compila soluzione** dal menu **Compila**.
 
 ## <a name="register-the-directive-processor"></a>Registrare il processore di direttiva
 
@@ -637,9 +637,9 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
 1. Eseguire il comando `regedit` usando il menu Start o la riga di comando.
 
-2. Passare al percorso **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**, quindi fare clic sul nodo.
+2. Passare al percorso **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\\\*. 0 \ TextTemplating\DirectiveProcessors**, quindi fare clic sul nodo.
 
-   Nei sistemi a 64 bit usare **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**
+   Nei sistemi a 64 bit usare **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio\\\*. 0 \ TextTemplating\DirectiveProcessors**
 
 3. Aggiungere una nuova chiave denominata CustomDirectiveProcessor.
 
@@ -654,18 +654,18 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
      La chiave del Registro di sistema deve contenere i valori seguenti:
 
-   | Name | Digitare | Dati |
+   | Name | Tipo di | Data |
    |-|-|-|
-   | (Predefinito) | REG_SZ | (valore non impostato) |
-   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | CodeBase | REG_SZ | <strong>\<Path alla soluzione ></strong> CustomDP\bin\Debug\CustomDP.dll |
+   | (predefinita) | REG_SZ | (valore non impostato) |
+   | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | CodeBase | REG_SZ | <strong>\<percorso della soluzione ></strong> CustomDP\bin\Debug\CustomDP.dll |
 
      Se si è inserito l'assembly nella GAC, i valori appariranno come indicato di seguito:
 
-   | Name | Digitare | Dati |
+   | Name | Tipo di | Data |
    |-|-|-|
-   | (Predefinito) | REG_SZ | (valore non impostato) |
-   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | (predefinita) | REG_SZ | (valore non impostato) |
+   | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
 
 6. Riavviare Visual Studio.
@@ -877,7 +877,7 @@ Dopo avere testato il processore di direttiva personalizzato, è possibile che s
 1. Sostituire il codice in *TestDP.TT* con il codice seguente. Il codice HTML è evidenziato. Assicurarsi di sostituire la stringa `YOUR PATH` con il percorso del file *DocFile. XML* .
 
     > [!NOTE]
-    > Altri tag open \< # e Close # > separano il codice dell'istruzione dai tag HTML.
+    > Altri tag open \<# e Close # > separano il codice dell'istruzione dai tag HTML.
 
     ```csharp
     <#@ assembly name="System.Xml" #>

@@ -1,22 +1,22 @@
 ---
-title: 'Procedura: aggiungere diagrammi classi ai progetti (Progettazione classi)'
+title: 'Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)'
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f7a909196a3b345b39c006e9bf7cd6a52c9bde
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 87a6c1e996d820724138b6bf38c6440193a4c26b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188979"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588837"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Procedura: Aggiungere diagrammi classi ai progetti
 

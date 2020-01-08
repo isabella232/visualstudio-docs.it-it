@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f12aafa8296914461e647dddc3400e399770c0
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919175"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594539"
 ---
 # <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 
@@ -62,13 +62,13 @@ A meno che non esegua la disconnessione, l'utente viene automaticamente connesso
 
 1. Al termine, scegliere il pulsante **Salva modifiche**.
 
-## <a name="troubleshooting"></a>Troubleshooting
+## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 Se si verificano problemi durante l'accesso, vedere la pagina [per ricevere assistenza](https://visualstudio.microsoft.com/subscriptions/support/).
 
 ## <a name="see-also"></a>Vedere anche
 
 * [Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)
+* [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
 * [Accesso (Visual Studio per Mac)](/visualstudio/mac/signing-in)
 * [Attivazione (Visual Studio per Mac)](/visualstudio/mac/activation)

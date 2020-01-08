@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, security
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab987d406d6a2c05c8350aaac9dd1ecfc13e4a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 25815bcb7f027501fb849dcd29d14b040c24d7fa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660082"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591970"
 ---
 # <a name="security-of-text-templates"></a>Sicurezza dei modelli di testo
 I modelli di testo presentano i seguenti problemi di sicurezza:
@@ -24,7 +24,7 @@ I modelli di testo presentano i seguenti problemi di sicurezza:
 - Se il meccanismo usato dall'host per trovare un processore di direttiva non è sicuro, è possibile eseguire un processore di direttive dannose.
 
 ## <a name="arbitrary-code"></a>Codice arbitrario
- Quando si scrive un modello, è possibile inserire qualsiasi codice all'interno dei tag \< # # >. Questo consente l'esecuzione di codice arbitrario dall'interno di un modello di testo.
+ Quando si scrive un modello, è possibile inserire qualsiasi codice all'interno dei tag \<# # >. Questo consente l'esecuzione di codice arbitrario dall'interno di un modello di testo.
 
  Assicurarsi di ottenere modelli da origini attendibili. Assicurarsi di avvisare gli utenti finali dell'applicazione in modo che non eseguano modelli che non provengono da origini attendibili.
 

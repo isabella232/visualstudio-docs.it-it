@@ -3,8 +3,8 @@ title: Estrarre un metodo
 description: Trasformare un frammento di codice nel metodo corrispondente selezionando il codice e immettendo CTRL+R, CTRL+M.
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1ec6ca273f873c82a1bb2c730a9288b5e2ae4ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654389"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569699"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring con estrazione di un metodo
 
@@ -26,7 +26,7 @@ Questo refactoring si applica a:
 
 - C#
 
-- Visual Basic
+- Visual Basic -
 
 **Cosa:** consente di trasformare un frammento di codice in un metodo.
 
@@ -74,4 +74,4 @@ Questo refactoring si applica a:
 ## <a name="see-also"></a>Vedere anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
-- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
+- [Anteprima modifiche](../../ide/preview-changes.md)

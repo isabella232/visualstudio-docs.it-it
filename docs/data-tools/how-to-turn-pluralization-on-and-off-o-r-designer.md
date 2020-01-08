@@ -3,17 +3,17 @@ title: 'Procedura: Attivare e disattivare la pluralizzazione (Object Relational 
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 578a6333d1206553db50ce81f2f499da0481456d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54b3376f9388116f179e2b09bcd136a37f3029f5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648335"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586445"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedura: Attivare e disattivare la pluralizzazione (Object Relational Designer)
 Per impostazione predefinita, quando si trascinano oggetti di database con nomi che terminano in s o IES da **Esplora server** o **Esplora database** sugli [strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), i nomi delle classi di entità generate vengono modificati dal plurale al singolare. Questa modifica viene apportata per rappresentare in modo più preciso il fatto che viene eseguito il mapping della classe di entità, di cui è stata creata un'istanza, a un singolo record di dati. Ad esempio, se si aggiunge una tabella `Customers` a **Progettazione relazionale O/R** , viene generata una classe di entità denominata `Customer` perché la classe conterrà i dati per un singolo cliente.
@@ -34,9 +34,9 @@ Per impostazione predefinita, quando si trascinano oggetti di database con nomi 
 
 3. Fare clic su **Object Relational Designer**.
 
-4. Impostare la **pluralità dei nomi** su **Enabled**  = **false** per impostare la **finestra di progettazione O/R** in modo che non modifichi i nomi delle classi.
+4. Impostare la **pluralità dei nomi** su **Enabled** = **false** per impostare la **finestra di progettazione O/R** in modo che non modifichi i nomi delle classi.
 
-5. Impostare la **pluralità dei nomi** su **Enabled**  = **true** per applicare regole di pluralità ai nomi di classe degli oggetti aggiunti a **Progettazione relazionale**oggetti.
+5. Impostare la **pluralità dei nomi** su **Enabled** = **true** per applicare regole di pluralità ai nomi di classe degli oggetti aggiunti a **Progettazione relazionale**oggetti.
 
 ## <a name="see-also"></a>Vedere anche
 

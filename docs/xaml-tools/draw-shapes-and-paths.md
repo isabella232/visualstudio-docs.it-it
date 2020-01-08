@@ -4,17 +4,17 @@ titleSuffix: Blend for Visual Studio
 ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd722e6b8690ef5ff059b69db1fbc467eec7ca3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650928"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592987"
 ---
 # <a name="draw-shapes-and-paths"></a>Disegnare forme e tracciati
 
@@ -88,7 +88,7 @@ Usare lo strumento **Selezione** per selezionare il tracciato. Usare lo strument
 
 Per modificare una forma in modo analogo alla modifica di un tracciato, convertire la forma in tracciato. Selezionare la forma e quindi selezionare **Formato** > **Tracciato** > **Converti in tracciato**.
 
-**Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (Uso di tracciati: convertire una forma in un tracciato).
+**Guarda un breve video:** ![configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [uso dei percorsi: convertire una forma in un tracciato](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 > [!NOTE]
 > **Converti in tracciato** non è attualmente disponibile per le app UWP con `TargetPlatformVersion` minima 10.0.16299.0 o successiva.
@@ -103,9 +103,9 @@ Per modificare una forma in modo analogo alla modifica di un tracciato, converti
 |-|-|-|-|
 |![Due forme prima della combinazione](../designers/media/b1_1.png)|Due forme prima della combinazione|![Interseca](../designers/media/b1_4.png)|Interseca|
 |![Unisci](../designers/media/b1_2.png)|Unisci|![Escludi sovrapposizione](../designers/media/b1_5.png)|Escludi sovrapposizione|
-|![Dividi](../designers/media/b1_3.png)|Dividi|![Sottrai](../designers/media/b1_6.png)|Sottrai|
+|![Divisione](../designers/media/b1_3.png)|Divisione|![Sottrazione](../designers/media/b1_6.png)|Sottrazione|
 
-**Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Combine paths](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) (Uso di tracciati: combinare tracciati).
+**Guarda un breve video:** ![configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [uso dei percorsi: combinare i percorsi](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ## <a name="create-a-compound-path"></a>Creare un tracciato composto
 
@@ -115,7 +115,7 @@ Quando si crea un tracciato composto, eventuali parti del tracciato che si inter
 
 ![Interrompere un tracciato composto](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-**Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a compound path](https://www.youtube.com/watch?v=Io5bC0-nH6Q) (Uso di tracciati: creare un tracciato composto).
+**Guarda un breve video:** ![configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [uso dei percorsi: creare un tracciato composto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ## <a name="create-a-clipping-path"></a>Creare un tracciato di ritaglio
 
@@ -123,4 +123,4 @@ Un tracciato di ritaglio è un tracciato o una forma applicato a un altro oggett
 
 ![Tracciato di ritaglio](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-**Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Create a clipping path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) (Uso di tracciati: creare un tracciato di ritaglio).
+**Guarda un breve video:** ![configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [uso dei percorsi: creare un tracciato di ritaglio](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).

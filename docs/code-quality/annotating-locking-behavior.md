@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 25978ae5fa76afc7cd43c9ccc243f25712495ddd
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879282"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402037"
 ---
 # <a name="annotating-locking-behavior"></a>Annotazione del comportamento di blocco
 Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'appropriata disciplina di blocco e utilizzare le annotazioni SAL.
@@ -73,7 +73,7 @@ Nella tabella seguente sono elencate le annotazioni di blocco.
 |`_Create_lock_level_(name)`|Un'istruzione che dichiara il simbolo `name` come un livello di blocco in modo che possa essere utilizzato nelle annotazioni `_Has_Lock_level_` e `_Lock_level_order_`.|
 |`_Has_lock_kind_(kind)`|Annota qualsiasi oggetto per perfezionare le informazioni sul tipo di un oggetto risorsa. A volte viene usato un tipo comune per diversi tipi di risorse e il tipo di overload non è sufficiente per distinguere i requisiti semantici tra le varie risorse. Di seguito è riportato un elenco di parametri `kind` predefiniti:<br /><br /> `_Lock_kind_mutex_`<br /> ID del tipo di blocco per mutex.<br /><br /> `_Lock_kind_event_`<br /> ID del tipo di blocco per gli eventi.<br /><br /> `_Lock_kind_semaphore_`<br /> ID del tipo di blocco per i semafori.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID del tipo di blocco per i blocchi di rotazione.<br /><br /> `_Lock_kind_critical_section_`<br /> ID del tipo di blocco per le sezioni critiche.|
 |`_Has_lock_level_(name)`|Annota un oggetto di blocco e lo fornisce al livello di blocco `name`.|
-|`_Lock_level_order_(name1, name2)`|Istruzione che fornisce l'ordinamento dei blocchi tra `name1` e `name2`.  I blocchi con `name1` di livello devono essere acquisiti prima di quelli con livello `name2`|
+|`_Lock_level_order_(name1, name2)`|Istruzione che fornisce l'ordinamento dei blocchi tra `name1` e `name2`.  I blocchi con `name1` di livello devono essere acquisiti prima di quelli con `name2`di livello.|
 |`_Post_same_lock_(expr1, expr2)`|Annota una funzione e indica che lo stato successivo dei due blocchi `expr1` e `expr2`, verrà considerato come se fosse lo stesso oggetto di blocco.|
 |`_Releases_exclusive_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione riducendo di uno il conteggio dei blocchi esclusivi dell'oggetto di blocco denominato da `expr`.|
 |`_Releases_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione riducendo di uno il conteggio dei blocchi dell'oggetto di blocco denominato da `expr`.|

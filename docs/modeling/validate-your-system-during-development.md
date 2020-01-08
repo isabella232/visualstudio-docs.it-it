@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 328b600a21adf274d1d016f595438eb5622ee853
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae2b7d81b1f166e6cc97debc3291661d59ee6960
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663740"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594032"
 ---
 # <a name="validate-your-system-during-development"></a>Convalidare il sistema durante lo sviluppo
 
@@ -35,7 +35,7 @@ Per convalidare il software, utilizzare le seguenti attività:
 
 |**Categoria**|**Links**|
 |-|-|
-|**Video**|![link a video ](../data-tools/media/playvideo.gif) [Channel 9: Doug Seven: comprensione del codice e progettazione di sistemi con Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![link a video ](../data-tools/media/playvideo.gif) [Channel 9: architettura di un'applicazione](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
+|**Video**|![collegamento a video](../data-tools/media/playvideo.gif) [Channel 9: Doug Seven: comprensione del codice e progettazione di sistemi con Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> collegamento ![a video](../data-tools/media/playvideo.gif) [Channel 9: progettazione di un'applicazione](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)|
 |**Forum**|- [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [estensibilità di Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
 ## <a name="see-also"></a>Vedere anche

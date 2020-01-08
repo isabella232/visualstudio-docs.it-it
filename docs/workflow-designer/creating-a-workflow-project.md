@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f793e6ff468bdec6df499c5e5eb6b8524e9e4d5a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650568"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597074"
 ---
 # <a name="workflow-project-templates"></a>Modelli di progetto flusso di lavoro
 
@@ -36,14 +36,14 @@ Visual Studio fornisce quattro diversi modelli di progetto del flusso di lavoro:
 
 Per accedere a questi modelli, installare prima il componente **Windows Workflow Foundation** di Visual Studio. Per istruzioni dettagliate, vedere [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Dopo aver installato il componente **Windows Workflow Foundation** , selezionare **File**  > **nuovo**  > **progetto**.
+1. Dopo aver installato il componente **Windows Workflow Foundation** , selezionare **File** > **nuovo** > **progetto**.
 
 1. Cercare e selezionare un modello di progetto flusso di lavoro, ad esempio il modello **applicazione console flusso** di lavoro.
 
 1. Continuare con per creare il progetto.
 
    > [!NOTE]
-   > Se si desidera aggiungere un nuovo progetto a una soluzione esistente, aprire la soluzione in Visual Studio, fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e selezionare **Aggiungi**  > **nuovo progetto**.
+   > Se si desidera aggiungere un nuovo progetto a una soluzione esistente, aprire la soluzione in Visual Studio, fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e selezionare **Aggiungi** > **nuovo progetto**.
 
 ## <a name="workflow-console-app"></a>App console flusso di lavoro
 

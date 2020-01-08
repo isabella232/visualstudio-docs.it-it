@@ -12,17 +12,17 @@ helpviewer_keywords:
 - displaying data, Windows Forms
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24c3549cf98e49f3419ef0e7387a6c236c15e9e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 244829edb30bbd43384ba445852f0a9ceafafb3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648848"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587017"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associare controlli Windows Form ai dati in Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "72648848"
 ![Operazione di trascinamento dell'origine dati](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Se la finestra **origini dati** non è visibile, è possibile aprirla scegliendo **Visualizza**  >  altre**origini dati**di**Windows**  >  o premendo **MAIUSC** +**ALT** +**D**. Per visualizzare la finestra **origini dati** , è necessario aprire un progetto in Visual Studio.
+> Se la finestra **origini dati** non è visibile, è possibile aprirla scegliendo **Visualizza** > altre **origini dati**di **Windows** > o premendo **MAIUSC**+**ALT**+**D**. Per visualizzare la finestra **origini dati** , è necessario aprire un progetto in Visual Studio.
 
 Prima di trascinare gli elementi, è possibile impostare il tipo di controllo a cui si desidera eseguire l'associazione. Vengono visualizzati valori diversi a seconda che si scelga la tabella o una singola colonna.  È anche possibile impostare valori personalizzati. Per una tabella, **Dettagli** indica che ogni colonna è associata a un controllo separato.
 
@@ -53,7 +53,7 @@ Il [controllo BindingNavigator](/dotnet/framework/winforms/controls/bindingnavig
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Eseguire l'associazione ai dati in un controllo DataGridView
 
-Per un [controllo DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), l'intera tabella viene associata a tale controllo. Quando si trascina un **oggetto DataGridView** nel form, viene visualizzata anche una striscia di strumenti per spostarsi tra i record (<xref:System.Windows.Forms.BindingNavigator>). Un [set di dati](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti. Nell'illustrazione seguente viene aggiunto anche un [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) perché la tabella Customers ha una relazione con la tabella Orders. Queste variabili sono tutte dichiarate nel codice generato automaticamente come membri privati nella classe del modulo. Il codice generato automaticamente per il riempimento del **DataGridView** si trova nel gestore dell'evento `Form_Load`. Il codice per il salvataggio dei dati per aggiornare il database si trova nel gestore dell'evento `Save` per **BindingNavigator**. È possibile spostare o modificare il codice in base alle esigenze.
+Per un [controllo DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), l'intera tabella viene associata a tale controllo. Quando si trascina un **oggetto DataGridView** nel form, viene visualizzata anche una striscia di strumenti per spostarsi tra i record (<xref:System.Windows.Forms.BindingNavigator>). Un [set di dati](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti. Nell'illustrazione seguente viene aggiunto anche un [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) perché la tabella Customers ha una relazione con la tabella Orders. Queste variabili sono tutte dichiarate nel codice generato automaticamente come membri privati nella classe del modulo. Il codice generato automaticamente per il riempimento del **DataGridView** si trova nel gestore dell'evento `Form_Load`. Il codice per il salvataggio dei dati per aggiornare il database si trova nel gestore dell'evento `Save` per **BindingNavigator**. È possibile spostare o modificare il codice in base alle esigenze.
 
 ![GridView con BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 

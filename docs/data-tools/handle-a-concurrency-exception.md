@@ -13,17 +13,17 @@ helpviewer_keywords:
 - updating datasets, errors
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6096e8919d21a93af0dbf6beea2f263bd500d26c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648436"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586601"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 
@@ -45,7 +45,7 @@ Questa procedura dettagliata illustra il processo seguente:
 
 7. Rilevare l'errore, quindi visualizzare le diverse versioni del record, consentendo all'utente di determinare se continuare e aggiornare il database o di annullare l'aggiornamento.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
@@ -67,7 +67,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 Per iniziare, creare un nuovo Windows Forms Application:
 
-1. In Visual Studio scegliere **nuovo**  > **progetto**dal menu **file** .
+1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
 2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
@@ -83,7 +83,7 @@ Successivamente, creare un set di dati denominato **NorthwindDataSet**:
 
 1. Scegliere **Aggiungi nuova origine dati**dal menu **dati** .
 
-   Viene avviata la Configurazione guidata origine dati.
+   Verrà avviata la Configurazione guidata origine dati.
 
 2. Nella schermata **scegliere un tipo di origine dati** selezionare **database**.
 
@@ -122,7 +122,7 @@ In questa sezione viene creato un <xref:System.Windows.Forms.DataGridView?displa
 
      Il form viene visualizzato con un <xref:System.Windows.Forms.DataGridView> controllo che viene compilato con i dati della tabella Customers.
 
-2. Scegliere **Interrompi debug**dal menu **debug** .
+2. Selezionare **Arresta debug** dal menu **Debug**.
 
 ## <a name="handle-concurrency-errors"></a>Gestione degli errori di concorrenza
 
@@ -191,7 +191,7 @@ Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
 
 2. Una volta visualizzato il modulo, lasciarlo in esecuzione e passare all'IDE di Visual Studio.
 
-3. Scegliere **Esplora server**dal menu **Visualizza** .
+3. Scegliere **Esplora server** dal menu **Visualizza**.
 
 4. In **Esplora server**espandere la connessione usata dall'applicazione, quindi espandere il nodo **tabelle** .
 

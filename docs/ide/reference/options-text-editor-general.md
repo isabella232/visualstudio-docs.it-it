@@ -28,17 +28,17 @@ helpviewer_keywords:
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7d7ebab51a3edfeb84a95609c6bdad581b6753
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666215"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568412"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo Opzioni: editor di testo \> generale
 
@@ -72,7 +72,7 @@ Se selezionata, è possibile premere **CTRL** e passare il mouse su un elemento 
 
 Selezionare la casella di controllo **Apri definizione in visualizzazione rapida** per visualizzare la definizione dell'elemento selezionato in una finestra senza spostarsi dalla posizione corrente nell'editor del codice.
 
-## <a name="display"></a>Visualizzazione
+## <a name="display"></a>Schermo
 
 ### <a name="selection-margin"></a>Margine selezione
 
@@ -80,7 +80,7 @@ Quando questa opzione è selezionata, viene visualizzato un margine verticale lu
 
 |Margine di selezione attivato|Margine di selezione disattivato|
 | - | - |
-|![Schermata HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Schermata HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
+|![Schermata di HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Schermata di HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Margine indicatore
 
@@ -101,4 +101,4 @@ Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai bl
 - [Opzioni, Editor di testo, Estensione file](../../ide/reference/options-text-editor-file-extension.md)
 - [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Personalizzazione dell'editor](../how-to-change-text-case-in-the-editor.md)
-- [Utilizzo di IntelliSense](../../ide/using-intellisense.md)
+- [Uso di IntelliSense](../../ide/using-intellisense.md)

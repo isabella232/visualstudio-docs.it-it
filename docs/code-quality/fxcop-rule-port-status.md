@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a33286ffb678bf37cf684bb603d81ec8091e7405
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568821"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587589"
 ---
 # <a name="fxcop-rule-port-status"></a>Stato della porta della regola FxCop
 
@@ -67,10 +67,10 @@ ID regola | Titolo
 [CA1063](ca1063-implement-idisposable-correctly.md) | Implementare IDisposable correttamente
 [CA1064](ca1064-exceptions-should-be-public.md) | Le eccezioni devono essere pubbliche
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Non generare eccezioni in posizioni non previste
-Ca1066 | Il tipo {0} deve implementare IEquatable\<T > perché esegue l'override di Equals
+CA1066 | Il tipo {0} deve implementare IEquatable\<T > perché esegue l'override di Equals
 CA1067 | Eseguire l'override di Object. Equals (Object) quando si implementa IEquatable\<T >
 [CA1068](ca1068.md) | I parametri CancellationToken devono essere indicati per ultimi
-Ca1200 | Evitare l'uso di tag cref con un prefisso
+CA1200 | Evitare l'uso di tag cref con un prefisso
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Non passare valori letterali come parametri localizzati
 [CA1304](ca1304-specify-cultureinfo.md) | Specificare CultureInfo
 [CA1305](ca1305-specify-iformatprovider.md) | Specificare IFormatProvider
@@ -82,9 +82,9 @@ Ca1200 | Evitare l'uso di tag cref con un prefisso
 [CA1502](ca1502-avoid-excessive-complexity.md) | Evitare complessità eccessiva
 [CA1505](ca1505-avoid-unmaintainable-code.md) | Evitare codice non gestibile
 [CA1506](ca1506-avoid-excessive-class-coupling.md) | Evitare un numero eccessivo di accoppiamenti tra classi
-[Ca1507](ca1507.md) | Usare NameOf per esprimere i nomi dei simboli
-Ca1508 | Evitare codice condizionale non attivo
-Ca1509 | Voce non valida nel file di specifica della regola della metrica del codice
+[CA1507](ca1507.md) | Usare NameOf per esprimere i nomi dei simboli
+CA1508 | Evitare codice condizionale non attivo
+CA1509 | Voce non valida nel file di specifica della regola della metrica del codice
 [CA1707](ca1707-identifiers-should-not-contain-underscores.md) | Gli identificatori non devono contenere caratteri di sottolineatura
 [CA1708](ca1708-identifiers-should-differ-by-more-than-case.md) | Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole
 [CA1710](ca1710-identifiers-should-have-correct-suffix.md) | Gli identificatori devono contenere il suffisso corretto
@@ -113,13 +113,13 @@ Ca1509 | Voce non valida nel file di specifica della regola della metrica del co
 [CA1822](ca1822.md) | Contrassegna i membri come statici
 [CA1823](ca1823.md) | Evitare campi privati non usati
 [CA1824](ca1824.md) | Contrassegnare gli assembly con NeutralResourcesLanguageAttribute
-Ca1825 | Evitare allocazioni di matrici di lunghezza zero.
-Ca1826 | Non usare metodi enumerabili sulle raccolte indicizzabili. Usare invece direttamente la raccolta
+CA1825 | Evitare allocazioni di matrici di lunghezza zero.
+CA1826 | Non usare metodi enumerabili sulle raccolte indicizzabili. Usare invece direttamente la raccolta
 [CA2000](ca2000.md) | Eliminare gli oggetti prima che siano esterni all'ambito
 [CA2002](ca2002.md) | Non bloccare oggetti con identità debole
-[Ca2007](ca2007.md) | Prendere in considerazione la chiamata a ConfigureAwait sull'attività attesa
-Ca2008 | Non creare attività senza passare un oggetto TaskScheduler
-Ca2009 | Non chiamare ToImmutableCollection su un valore non modificabile
+[CA2007](ca2007.md) | Prendere in considerazione la chiamata a ConfigureAwait sull'attività attesa
+CA2008 | Non creare attività senza passare un oggetto TaskScheduler
+CA2009 | Non chiamare ToImmutableCollection su un valore non modificabile
 CA2010 | Utilizzare sempre il valore restituito dai metodi contrassegnati con PreserveSigAttribute
 [CA2100](ca2100.md) | Controllare la vulnerabilità della sicurezza nelle query SQL
 [CA2101](ca2101.md) | Specificare il marshalling per gli argomenti di stringa P/Invoke
@@ -149,7 +149,7 @@ CA2010 | Utilizzare sempre il valore restituito dai metodi contrassegnati con Pr
 [CA2242](ca2242.md) | Testare i valori NaN in modo corretto
 [CA2243](ca2243.md) | I valori letterali stringa di attributo devono essere analizzati correttamente
 CA2244 | Non duplicare le inizializzazioni di elementi indicizzati
-[Ca2300](ca2300.md) | Non usare il deserializzatore non sicuro BinaryFormatter
+[CA2300](ca2300.md) | Non usare il deserializzatore non sicuro BinaryFormatter
 [CA2301](ca2301.md) | Non chiamare BinaryFormatter.Deserialize senza aver prima impostato BinaryFormatter.Binder
 [CA2302](ca2302.md) | Assicurarsi che BinaryFormatter.Binder sia impostato prima di chiamare BinaryFormatter.Deserialize
 [CA2305](ca2305.md) | Non usare il deserializzatore non sicuro LosFormatter
@@ -161,8 +161,8 @@ CA2244 | Non duplicare le inizializzazioni di elementi indicizzati
 [CA2322](ca2322.md) | Verificare che l'oggetto JavaScriptSerializer non sia inizializzato con SimpleTypeResolver prima di eseguire la deserializzazione
 [CA3001](ca3001.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo SQL injection
 [CA3002](ca3002.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo XSS
-[Ca3003](ca3003.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo file path injection
-[Ca3004](ca3004.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo diffusione di informazioni
+[CA3003](ca3003.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo file path injection
+[CA3004](ca3004.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo diffusione di informazioni
 [CA3005](ca3005.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo LDAP injection
 [CA3006](ca3006.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo process command injection
 [CA3007](ca3007.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo reindirizzamento aperto
@@ -177,7 +177,7 @@ CA3061 | Non aggiungere lo schema in base all'URL
 [CA3077](ca3077.md) | Elaborazione non sicura in progettazione API, XmlDocument e XmlTextReader
 [CA3147](ca3147.md) | Contrassegnare i gestori dei verbi con il token antifalsificazione Validate
 [CA5350](ca5350.md) | Non usare algoritmi di crittografia vulnerabili
-[CA5351:](ca5351.md) | Non usare algoritmi di crittografia interrotti
+[CA5351](ca5351.md) | Non usare algoritmi di crittografia interrotti
 CA5358 | Non usare modalità di crittografia non sicure
 CA5359 | Non disabilitare la convalida del certificato
 CA5360 | Non chiamare metodi pericolosi nella deserializzazione
@@ -200,11 +200,11 @@ CA5376 | Usare SharedAccessProtocol HttpsOnly
 CA5377 | Usare i criteri di accesso a livello di contenitore
 CA5378 | Non disabilitare ServicePointManagerSecurityProtocols
 CA5379 | Non usare l'algoritmo della funzione di derivazione della chiave debole
-Ca9999 | Versione analizzatore non corrispondente
+CA9999 | Versione analizzatore non corrispondente
 
 ## <a name="unported-rules"></a>Regole non portate
 
-Il set di regole che non sono state trasferite agli [analizzatori FxCop](install-fxcop-analyzers.md) è costituito da regole che ancora non sono ancora state [trasferite](#rules-that-may-be-ported)e da quelle deprecate e [non verranno trasferite](#deprecated-rules).
+Il set di regole che non sono state trasferite agli [analizzatori FxCop](install-fxcop-analyzers.md) è costituito da regole che ancora [non sono ancora state trasferite](#rules-that-may-be-ported) e da quelle deprecate e [non verranno trasferite](#deprecated-rules).
 
 ### <a name="rules-that-may-be-ported"></a>Regole che possono essere trasferite
 

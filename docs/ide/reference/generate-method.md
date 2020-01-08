@@ -2,17 +2,17 @@
 title: Generare un metodo
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c85e3f849d7d74f326c1cf330b0e2c338d78fc6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f166c31a1615c951170367223a5b19ab93811b5d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668337"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595592"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Generare un metodo in Visual Studio
 
@@ -20,7 +20,7 @@ Questa generazione di codice si applica a:
 
 - C#
 
-- Visual Basic
+- Visual Basic -
 
 **Cosa:** consente di aggiungere immediatamente un metodo a una classe.
 
@@ -47,7 +47,7 @@ Questa generazione di codice si applica a:
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione del metodo](media/method-preview-cs.png)
 
@@ -69,4 +69,4 @@ Questa generazione di codice si applica a:
 ## <a name="see-also"></a>Vedere anche
 
 - [Generazione codice](../code-generation-in-visual-studio.md)
-- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
+- [Anteprima modifiche](../../ide/preview-changes.md)

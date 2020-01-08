@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], structures
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65fb4738b3124daf48b501c6db416d3803da32ec
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748911"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590684"
 ---
 # <a name="c-structures-in-class-designer"></a>C++strutture in Progettazione classi
 
-**Progettazione Classi** supporta le strutture C++, che vengono dichiarate con la parola chiave `struct`. Di seguito è riportato un esempio:
+**Progettazione Classi** supporta le strutture C++, che vengono dichiarate con la parola chiave `struct`. come nell'esempio seguente:
 
 ```cpp
 struct MyStructure
@@ -34,7 +34,7 @@ Per altre informazioni sull'uso del tipo `struct`, vedere [struct](/cpp/cpp/stru
 
 Una forma struttura C++ in un diagramma classi è simile per aspetto e funzionamento a una forma classe, ad eccezione del fatto che l'etichetta della forma struttura è **Struct** ed è contraddistinta da angoli squadrati anziché arrotondati.
 
-|Elemento del codice|Visualizzazione di Progettazione classi|
+|Code - elemento|Visualizzazione di Progettazione classi|
 |------------------| - |
 |`struct StructureName {};`|**NomeStruttura**<br /><br /> Struct|
 

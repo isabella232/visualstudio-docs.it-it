@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 8de276bfb6d7ec8bc36380ee41d86de07fc8dd74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924538"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586978"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare controlli WPF a un set di dati
 
@@ -38,7 +38,7 @@ Questa procedura dettagliata illustra le attività seguenti:
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
@@ -58,9 +58,9 @@ Creare un nuovo progetto WPF per visualizzare i record di prodotto.
 
 ::: moniker range="vs-2017"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
-2. Nel menu **File** scegliere **Nuovo** > **Progetto**.
+2. Scegliere **nuovo** > **progetto**dal menu **file** .
 
 3. Espandere **Visual Basic** o **Visual C#** , quindi selezionare **Finestre**.
 
@@ -72,7 +72,7 @@ Creare un nuovo progetto WPF per visualizzare i record di prodotto.
 
 ::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
@@ -112,7 +112,7 @@ Prima di poter creare i controlli associati a dati, è necessario definire un mo
 
    Visual Studio aggiunge un nuovo file di `AdventureWorksLTDataSet.xsd` al progetto e aggiunge un elemento **AdventureWorksLTDataSet** corrispondente alla finestra **origini dati** . Il file di `AdventureWorksLTDataSet.xsd` definisce un set di dati tipizzato denominato `AdventureWorksLTDataSet` e un TableAdapter denominato `ProductTableAdapter`. Più avanti in questa procedura dettagliata, l'oggetto `ProductTableAdapter` verrà usato per riempire il set di dati con i dati e salvare nuovamente le modifiche nel database.
 
-9. Compilare il progetto.
+9. Compilazione del progetto.
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Modificare il metodo Fill predefinito del TableAdapter
 
@@ -154,7 +154,7 @@ Aggiungere alcuni pulsanti alla finestra modificando il codice XAML in WPF Desig
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. Compilare il progetto.
+3. Compilazione del progetto.
 
 ## <a name="create-data-bound-controls"></a>Creare controlli associati a dati
 
@@ -262,4 +262,4 @@ Al termine di questa procedura dettagliata, è possibile provare le seguenti att
 
 - [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Panoramica sul data binding](/dotnet/desktop-wpf/data/data-binding-overview)
+- [Cenni preliminari sull'associazione dati](/dotnet/desktop-wpf/data/data-binding-overview)

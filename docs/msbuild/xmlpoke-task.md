@@ -11,17 +11,17 @@ helpviewer_keywords:
 - XmlPoke task [MSBuild]
 - MSBuild, XmlPoke task
 ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777616"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588382"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke (attività)
 
@@ -31,14 +31,14 @@ Imposta i valori come specificato da una query XPath in un file XML.
 
  Nella tabella che segue vengono descritti i parametri dell'attività `XmlPoke` .
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`Namespaces`|Parametro `String` facoltativo.<br /><br /> Specifica gli spazi dei nomi per i prefissi della query XPath. `Namespaces` è un frammento XML costituito da elementi `Namespace` con attributi `Prefix` e `Uri`. L'attributo `Prefix` specifica il prefisso da associare allo spazio dei nomi specificato nell'attributo `Uri`. Non usare un elemento `Prefix` vuoto.|
 |`Query`|Parametro `String` facoltativo.<br /><br /> Specifica la query XPath.|
 |`Value`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica il valore da inserire nel percorso specificato.|
 |`XmlInputPath`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica l'input XML come percorso di file.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
  Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -82,4 +82,4 @@ In questo esempio, se si vuole modificare `/Package/mp:PhoneIdentity/PhonePublis
 ## <a name="see-also"></a>Vedere anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

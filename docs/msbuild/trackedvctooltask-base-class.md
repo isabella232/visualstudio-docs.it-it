@@ -7,16 +7,16 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4044416131a27ca313d10d02404094c5f5e219
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938869"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594929"
 ---
 # <a name="trackedvctooltask-base-class"></a>Classe di base TrackedVCToolTask
 
@@ -26,7 +26,7 @@ Molte attività ereditano dalla classe <xref:Microsoft.Build.Utilities.Task> e d
 
 Nella tabella seguente vengono descritti i parametri della classe di base **TrackedVCToolTask**.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|Parametro **bool** facoltativo.|
 |**EnableExecuteTool**|Parametro **bool** facoltativo.|
@@ -36,7 +36,7 @@ Nella tabella seguente vengono descritti i parametri della classe di base **Trac
 |**PostBuildTrackingCleanup**|Parametro **bool** facoltativo.|
 |**RootSource**|Parametro **string** facoltativo.|
 |**SkippedExecution**|Parametro di output **bool** facoltativo.|
-|**SourcesCompiled**|Parametro di output **ITaskItem[]** facoltativo.|
+|**SourcesCompiled**|Parametro di output facoltativo **ITaskItem[]** .|
 |**TLogCommandFile**|Parametro **ITaskItem** facoltativo.|
 |**TLogReadFiles**|Parametro **ITaskItem[]** facoltativo.|
 |**TLogWriteFiles**|Parametro **ITaskItem[]** facoltativo.|
@@ -50,5 +50,5 @@ Nella tabella seguente vengono descritti i parametri della classe di base **Trac
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)<br/>
+[Riferimento alle attività](../msbuild/msbuild-task-reference.md)<br/>
 [Attività](../msbuild/msbuild-tasks.md)

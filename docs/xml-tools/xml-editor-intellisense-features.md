@@ -3,17 +3,17 @@ title: Funzionalità IntelliSense dell'editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603956"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592386"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
 
@@ -87,7 +87,7 @@ Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in c
 
 ## <a name="brace-matching"></a>Corrispondenza parentesi graffe
 
-Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È anche possibile usare il tasto di scelta rapida (**Ctrl** + **]** ) per passare da una parentesi graffa alla parentesi graffa corrispondente.
+Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È anche possibile usare il tasto di scelta rapida (**Ctrl**+ **]** ) per passare da una parentesi graffa alla parentesi graffa corrispondente.
 
 L'editor XML effettua tale operazione per i seguenti elementi:
 
@@ -107,7 +107,7 @@ L'editor XML effettua tale operazione per i seguenti elementi:
 
 ## <a name="modify-the-intellisense-options"></a>Modificare le opzioni di IntelliSense
 
-Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificarlo modificando gli **strumenti**  >  impostazioni delle**Opzioni** .
+Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificarlo modificando gli **strumenti** > impostazioni delle **Opzioni** .
 
 La sezione **inserimento automatico** della pagina **varie** controlla il comportamento seguente:
 
@@ -128,5 +128,5 @@ La sezione **inserimento automatico** della pagina **varie** controlla il compor
 ## <a name="see-also"></a>Vedere anche
 
 - [Editor XML](../xml-tools/xml-editor.md)
-- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Uso di IntelliSense](../ide/using-intellisense.md)
 - [Procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

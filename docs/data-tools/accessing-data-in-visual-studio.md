@@ -2,24 +2,22 @@
 title: Strumenti e accesso ai dati
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- "80025080"
 helpviewer_keywords:
 - data [Visual Studio]
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807056"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587095"
 ---
 # <a name="access-data-in-visual-studio"></a>Accedere ai dati in Visual Studio
 
@@ -67,13 +65,13 @@ La maggior parte degli altri prodotti di database SQL e NoSQL elencati qui può 
 
 ::: moniker range="vs-2017"
 
-Molti fornitori di database e terze parti supportano l'integrazione di Visual Studio da pacchetti NuGet. È possibile esplorare le offerte in nuget.org o tramite Gestione pacchetti NuGet in Visual Studio (**strumenti**  >  gestione pacchetti**NuGet**  > **gestire i pacchetti NuGet per la soluzione**). Altri prodotti di database si integrano con Visual Studio come estensione. È possibile esplorare queste offerte nella [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o passare a **strumenti**  > **estensioni e aggiornamenti** e quindi selezionare **online** nel riquadro sinistro della finestra di dialogo. Per ulteriori informazioni, vedere [sistemi di database compatibili per Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Molti fornitori di database e terze parti supportano l'integrazione di Visual Studio da pacchetti NuGet. È possibile esplorare le offerte in nuget.org o tramite Gestione pacchetti NuGet in Visual Studio (**strumenti** > gestione pacchetti **NuGet** > **gestire i pacchetti NuGet per la soluzione**). Altri prodotti di database si integrano con Visual Studio come estensione. È possibile esplorare queste offerte nella [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o passare a **strumenti** > **estensioni e aggiornamenti** e quindi selezionare **online** nel riquadro sinistro della finestra di dialogo. Per ulteriori informazioni, vedere [sistemi di database compatibili per Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Molti fornitori di database e terze parti supportano l'integrazione di Visual Studio da pacchetti NuGet. È possibile esplorare le offerte in nuget.org o tramite Gestione pacchetti NuGet in Visual Studio (**strumenti**  >  gestione pacchetti**NuGet**  > **gestire i pacchetti NuGet per la soluzione**). Altri prodotti di database si integrano con Visual Studio come estensione. È possibile esplorare queste offerte nella [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o passare a **estensioni**  > **Gestisci estensioni** e quindi selezionare **online** nel riquadro sinistro della finestra di dialogo. Per ulteriori informazioni, vedere [sistemi di database compatibili per Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Molti fornitori di database e terze parti supportano l'integrazione di Visual Studio da pacchetti NuGet. È possibile esplorare le offerte in nuget.org o tramite Gestione pacchetti NuGet in Visual Studio (**strumenti** > gestione pacchetti **NuGet** > **gestire i pacchetti NuGet per la soluzione**). Altri prodotti di database si integrano con Visual Studio come estensione. È possibile esplorare queste offerte nella [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o passare a **estensioni** > **Gestisci estensioni** e quindi selezionare **online** nel riquadro sinistro della finestra di dialogo. Per ulteriori informazioni, vedere [sistemi di database compatibili per Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
@@ -106,7 +104,7 @@ In .NET sono disponibili tre opzioni per la modellazione e la modifica dei dati 
 
 [Set di impostazioni](../data-tools/dataset-tools-in-visual-studio.md) Il meno recente delle tre tecnologie di modellazione. È progettato principalmente per lo sviluppo rapido di applicazioni "form su dati" in cui non si elaborano grandi quantità di dati o si eseguono query o trasformazioni complesse. Un oggetto DataSet è costituito da oggetti DataTable e DataRow che sono logicamente simili a oggetti di database SQL molto più di oggetti .NET. Per le applicazioni relativamente semplici basate sulle origini dati SQL, è possibile che i set di dati siano ancora una scelta ottimale.
 
-Non è necessario usare nessuna di queste tecnologie. In alcuni scenari, soprattutto se le prestazioni sono fondamentali, è possibile usare semplicemente un oggetto DataReader per leggere dal database e copiare i valori necessari in un oggetto raccolta, ad esempio List \<T >.
+Non è necessario usare nessuna di queste tecnologie. In alcuni scenari, soprattutto se le prestazioni sono fondamentali, è possibile usare semplicemente un oggetto DataReader per leggere dal database e copiare i valori necessari in un oggetto raccolta, ad esempio List\<T >.
 
 ## <a name="native-c"></a>C++ nativo
 
@@ -116,7 +114,7 @@ C++i programmi che utilizzano servizi REST possono usare l' [ C++ SDK Rest](http
 
 C++i programmi che funzionano con Archiviazione di Microsoft Azure possono usare il [client di archiviazione di Microsoft Azure](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP).
 
-La modellazione dei dati &mdash;Visual Studio non fornisce un livello C++ORM per. [ODB](https://www.codesynthesis.com/products/odb/) è un noto ORM open source per C++.
+La modellazione dei dati&mdash;Visual Studio non fornisce un livello C++ORM per. [ODB](https://www.codesynthesis.com/products/odb/) è un noto ORM open source per C++.
 
 Per altre informazioni sulla connessione a database da C++ app, vedere [Visual Studio Data Tools per C++ ](../data-tools/visual-studio-data-tools-for-cpp.md). Per ulteriori informazioni sulle tecnologie di C++ accesso ai dati visivi legacy, vedere [accesso ai dati](/cpp/data/data-access-in-cpp).
 
@@ -134,24 +132,24 @@ Installare il [supporto di Python in Visual Studio](../python/overview-of-python
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Piattaforma di intelligenza artificiale microsoft](https://azure.microsoft.com/overview/ai-platform/?v=17.42w) &mdash;Provides un'introduzione a Microsoft Intelligent cloud, tra cui Cortanana Analytics suite e il supporto per Internet delle cose.
+[Microsoft ai platform](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;offre un'introduzione a Microsoft Intelligent cloud, tra cui Cortanana Analytics suite e il supporto per Internet delle cose.
 
-[Archiviazione di Microsoft Azure](/azure/storage/) &mdash;Describes archiviazione di Azure e come creare applicazioni usando BLOB, tabelle, code e file di Azure.
+[Archiviazione di Microsoft Azure](/azure/storage/)&mdash;descrive archiviazione di Azure e come creare applicazioni usando BLOB, tabelle, code e file di Azure.
 
-Il [database SQL di azure](/azure/sql-database/) &mdash;Describes come connettersi al database SQL di Azure, un database relazionale come servizio.
+Il [database SQL di azure](/azure/sql-database/)&mdash;descrive come connettersi al database SQL di Azure, un database relazionale come servizio.
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) &mdash;Describes gli strumenti che semplificano la progettazione, l'esplorazione, il test e la distribuzione di applicazioni e database connessi ai dati.
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;vengono descritti gli strumenti che semplificano la progettazione, l'esplorazione, il test e la distribuzione di applicazioni e database connessi ai dati.
 
-[ADO.NET](/dotnet/framework/data/adonet/index) &mdash;Describes l'architettura ADO.NET e come usare le classi ADO.NET per gestire i dati dell'applicazione e interagire con le origini dati e il codice XML.
+[ADO.NET](/dotnet/framework/data/adonet/index)&mdash;descrive l'architettura ADO.NET e come usare le classi ADO.NET per gestire i dati dell'applicazione e interagire con le origini dati e il codice XML.
 
-[ADO.NET Entity Framework](/ef/ef6/) &mdash;Describes come creare applicazioni di dati che consentono agli sviluppatori di programmare in base a un modello concettuale anziché direttamente a un database relazionale.
+[ADO.NET Entity Framework](/ef/ef6/)&mdash;viene descritto come creare applicazioni di dati che consentono agli sviluppatori di programmare in base a un modello concettuale anziché direttamente a un database relazionale.
 
 [WCF Data Services 4,5](/dotnet/framework/data/wcf/index)&mdash;viene descritto come utilizzare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] per distribuire servizi dati sul Web o in una rete Intranet che implementano il [Open Data Protocol (OData)](https://www.odata.org/).
 
-[I dati nelle soluzioni office](../vsto/data-in-office-solutions.md) &mdash;Contains collegamenti ad argomenti che illustrano il funzionamento dei dati nelle soluzioni Office. Sono incluse informazioni sulla programmazione orientata agli schemi, sulla memorizzazione dei dati nella cache e sull'accesso ai dati sul lato server.
+[I dati nelle soluzioni office](../vsto/data-in-office-solutions.md)&mdash;contengono collegamenti ad argomenti che illustrano il funzionamento dei dati nelle soluzioni Office. Sono incluse informazioni sulla programmazione orientata agli schemi, sulla memorizzazione dei dati nella cache e sull'accesso ai dati sul lato server.
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) &mdash;Describes le funzionalità di query incorporate in C# e Visual Basic e il modello comune per l'esecuzione di query su database relazionali, documenti XML, set di dati e raccolte in memoria.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;descrive le funzionalità di query incorporate in C# e Visual Basic e il modello comune per l'esecuzione di query su database relazionali, documenti XML, set di dati e raccolte in memoria.
 
-[Gli strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) &mdash;Discussesno l'utilizzo di dati XML, il debug di XSLT, le funzionalità XML .NET e l'architettura di XML query.
+[Gli strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;illustrano l'utilizzo di dati XML, il debug di XSLT, le funzionalità XML .NET e l'architettura di XML query.
 
-[Documenti e dati xml](/dotnet/standard/data/xml/index) &mdash;Provides una panoramica di un set completo e integrato di classi che funzionano con documenti e dati XML in .NET.
+[Documenti e dati xml](/dotnet/standard/data/xml/index)&mdash;offre una panoramica di un set completo e integrato di classi che funzionano con documenti e dati XML in .NET.

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - directories [.NET Framework], for output items
 - output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977301"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585219"
 ---
 # <a name="how-to-clean-a-build"></a>Procedura: Pulire una compilazione
 Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file intermedi e di output, lasciando solo i file di progetto e di componente. È quindi possibile compilare nuove istanze di file intermedi e di output dai file di progetto e di componente. La libreria di attività comuni fornita con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] include un'attività [Exec](../msbuild/exec-task.md) che è possibile usare per eseguire i comandi di sistema. Per altre informazioni sulla libreria di attività, vedere [Attività MSBuild](../msbuild/msbuild-task-reference.md).

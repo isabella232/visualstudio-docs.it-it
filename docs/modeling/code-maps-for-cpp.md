@@ -2,17 +2,17 @@
 title: Visualizzare le dipendenze tra C++ i file di origine e i file di intestazione
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbba97f47c3ac0686bad15c3a1882e1e9bd85057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654187"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597243"
 ---
 # <a name="code-maps-for-c-projects"></a>Mappe del codice C++ per i progetti
 
@@ -20,7 +20,7 @@ Per creare mappe più complete per i progetti C++, impostare l'opzione del compi
 
 Quando si apre una soluzione che contiene progetti Visual C++, l'aggiornamento del database di IntelliSense potrebbe richiedere del tempo. Durante questo periodo, potrebbe non essere possibile creare mappe codice per file di intestazione ( *. h* o `#include`) fino al termine dell'aggiornamento del database IntelliSense. È possibile monitorare lo stato di avanzamento dell'aggiornamento nella barra di stato di Visual Studio.
 
-- Per visualizzare le dipendenze tra tutti i file di origine e i file di intestazione nella soluzione, selezionare **architettura**  > **Genera grafico dei file di inclusione**.
+- Per visualizzare le dipendenze tra tutti i file di origine e i file di intestazione nella soluzione, selezionare **architettura** > **Genera grafico dei file di inclusione**.
 
    ![Grafico delle dipendenze per il codice nativo](../modeling/media/dependencygraphgeneral_nativecode.png)
 

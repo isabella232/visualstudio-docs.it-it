@@ -3,17 +3,17 @@ title: Eliminare gli avvisi del compilatore per progetti e pacchetti NuGet
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cbcef86187ad03545066f3c595d00b56f83be5c5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747957"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591424"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: Non visualizzare gli avvisi del compilatore
 
@@ -87,7 +87,7 @@ Questo esempio mostra come modificare il file *vbproj* per escludere avvisi spec
     ```
 
    > [!NOTE]
-   > I progetti .NET Core non contengono gruppi di proprietà di configurazione della build per impostazione predefinita. Per escludere avvisi in un progetto .NET Core, aggiungere la sezione della configurazione della build manualmente al file. Esempio:
+   > I progetti .NET Core non contengono gruppi di proprietà di configurazione della build per impostazione predefinita. Per escludere avvisi in un progetto .NET Core, aggiungere la sezione della configurazione della build manualmente al file. Ad esempio:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">

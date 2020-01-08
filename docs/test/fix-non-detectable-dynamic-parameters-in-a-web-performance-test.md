@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, walkthroughs
 - load tests, correlating dynamic parameters
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 265d1510cd4c8a47478344ba06efcf5e4f43f946
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664971"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589643"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Correggere parametri dinamici non rilevabili in un test delle prestazioni Web
 
@@ -25,7 +25,7 @@ In alcuni siti Web vengono utilizzati parametri dinamici per elaborare alcune ri
 
 - Valori di parametri dinamici che sono impostati nei campi nascosti delle pagine HTML, ad esempio lo stato di visualizzazione ASP.NET. Vengono gestiti automaticamente dal registratore, il quale aggiunge regole di estrazione dai campi nascosti al test.
 
-- Valori di parametri dinamici che sono impostati come stringa di query o parametri Post per i form. Vengono gestiti usando il rilevamento dei parametri dinamici dopo la registrazione di un test delle prestazioni Web.
+- Valori di parametri dinamici che sono impostati come stringa di query o parametri Post per i form. Vengono gestiti tramite il rilevamento dei parametri dinamici dopo la registrazione di un test delle prestazioni Web.
 
 Alcuni tipi di parametri dinamici non vengono rilevati. Un parametro dinamico non rilevato impedisce la riuscita dell'esecuzione del test delle prestazioni Web perché il valore dinamico cambia a ogni esecuzione del test. Per gestire correttamente questi parametri, è possibile aggiungere manualmente regole di estrazione ai parametri dinamici nei test delle prestazioni Web.
 
@@ -265,4 +265,4 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>D. È necessario configurare Visual Studio per rilevare i parametri dinamici?
 
-**R.** La configurazione predefinita di Visual Studio prevede il rilevamento dei parametri dinamici quando si registra un test delle prestazioni Web. Se tuttavia le opzioni di Visual Studio sono configurate in modo da non rilevare i parametri dinamici o se l'applicazione Web testata viene modificata con parametri dinamici aggiuntivi, è comunque possibile eseguire il rilevamento dei parametri dinamici dall'Editor test prestazioni Web.
+**R.** La configurazione predefinita di Visual Studio prevede il rilevamento dei parametri dinamici quando si registra un test delle prestazioni Web. Tuttavia, se le opzioni di Visual Studio sono configurate per non rilevare i parametri dinamici o se l'applicazione Web testata viene modificata con parametri dinamici aggiuntivi, è comunque possibile eseguire il rilevamento dei parametri dinamici dall'Editor test prestazioni Web.

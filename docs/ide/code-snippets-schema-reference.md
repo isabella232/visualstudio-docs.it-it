@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631109"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585431"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -58,7 +58,7 @@ Specifica il nome dell'autore del frammento di codice. In **Gestione frammenti d
 
 È necessario specificare un valore di testo. Questo testo specifica l'autore del frammento di codice.
 
-## <a name="code-element"></a>Elemento del codice
+## <a name="code-element"></a>Code - elemento
 
 Fornisce un contenitore per i blocchi di codice.
 
@@ -110,7 +110,7 @@ Sono disponibili tre attributi per l'elemento Code:
 
 - L'attributo **Language** -  _(obbligatorio)_ specifica il linguaggio del frammento di codice. Il valore può essere uno dei seguenti:
 
-   |Value|Descrizione|
+   |Valore|Descrizione|
    |-----|-----------|
    |`VB`|Identifica un frammento di codice di Visual Basic.|
    |`CSharp`|Identifica un frammento di codice di C#.|
@@ -123,7 +123,7 @@ Sono disponibili tre attributi per l'elemento Code:
 
 - L'attributo **Kind** - _facoltativo_ specifica il tipo di codice contenuto nel frammento. Il valore può essere uno dei seguenti:
 
-   |Value|Descrizione|
+   |Valore|Descrizione|
    |-----|-----------|
    |`method body`|Specifica che il frammento di codice è il corpo di un metodo e deve pertanto essere inserito all'interno di una dichiarazione di metodo.|
    |`method decl`|Specifica che il frammento di codice è un metodo e deve pertanto essere inserito all'interno di una classe o un modulo.|
@@ -197,7 +197,7 @@ Specifica i valori letterali e gli oggetti che costituiscono le parti modificabi
 | - |-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
 
-## <a name="default-element"></a>Elemento Default
+## <a name="default-element"></a>Default - elemento
 
 Specifica il valore predefinito del valore letterale o dell'oggetto di un frammento di codice IntelliSense.
 
@@ -299,7 +299,7 @@ Specifica un URL nel quale sono presenti altre informazioni su un frammento di c
 
 Il valore di testo è facoltativo. Tale testo specifica l'URL da visitare per ottenere altre informazioni su un frammento di codice.
 
-## <a name="id-element"></a>Elemento ID
+## <a name="id-element"></a>ID - elemento
 
 Specifica un identificatore univoco per un elemento `Literal` o `Object`. Due oggetti o due valori letterali nello stesso frammento non possono avere lo stesso valore di testo nei loro elementi `ID`. I valori letterali e gli oggetti non possono contenere un elemento `ID` con un valore end. `$end$` è un valore riservato e viene usato per contrassegnare il punto in cui posizionare il cursore dopo l'inserimento del frammento di codice.
 
@@ -433,7 +433,7 @@ Specifica lo spazio dei nomi che deve essere importato per la compilazione e l'e
 
 È necessario specificare un valore di testo. Questo testo specifica uno spazio dei nomi di cui il frammento di codice presuppone l'importazione.
 
-## <a name="object-element"></a>Elemento Object
+## <a name="object-element"></a>Object - elemento
 
 Definisce gli oggetti modificabili del frammento di codice. L'elemento `Object` viene usato per identificare un elemento richiesto dal frammento di codice ma che viene probabilmente definito al di fuori del frammento stesso. È ad esempio opportuno dichiarare come oggetti i controlli Windows Form, i controlli ASP.NET, le istanze di oggetti e le istanze di tipi. Per le dichiarazioni di oggetti è necessario specificare un tipo, usando l'elemento `Type`.
 
@@ -503,10 +503,10 @@ Raggruppa singoli elementi `Reference`.
 
 ## <a name="shortcut-element"></a>Elemento Shortcut
 
-Specifica il testo del collegamento usato per inserire il frammento di codice. Il valore di testo di un elemento `Shortcut` può contenere solo caratteri alfanumerici, trattini (-) e caratteri di sottolineatura (_).
+Specifica il testo del collegamento usato per inserire il frammento di codice. Il valore di testo di un elemento `Shortcut` può contenere solo caratteri alfanumerici e caratteri di sottolineatura (_).
 
 > [!CAUTION]
-> I caratteri di sottolineatura (_) e i trattini (-) non sono supportati nei collegamenti dei frammenti di C++.
+> Il carattere di sottolineatura (_) non C++ è supportato nei collegamenti dei frammenti di codice.
 
 ```xml
 <Shortcut>
@@ -618,7 +618,7 @@ Descrive la sintassi e il valore previsto di un oggetto o di un valore letterale
 
 È necessario specificare un valore di testo. Tale testo specifica la descrizione della Descrizione comando da associare all'oggetto o al valore letterale nel frammento di codice.
 
-## <a name="type-element"></a>Elemento Type
+## <a name="type-element"></a>Type - elemento
 
 Specifica il tipo di oggetto. L'elemento `Object` viene usato per identificare un elemento richiesto dal frammento di codice ma che viene probabilmente definito al di fuori del frammento stesso. È ad esempio opportuno dichiarare come oggetti i controlli Windows Form, i controlli ASP.NET, le istanze di oggetti e le istanze di tipi. Per le dichiarazioni di oggetti è necessario specificare un tipo, usando l'elemento `Type`.
 
@@ -632,7 +632,7 @@ Specifica il tipo di oggetto. L'elemento `Object` viene usato per identificare u
 | - |-----------------|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
 
-È necessario specificare un valore di testo. Tale testo specifica il tipo dell'oggetto. Esempio:
+È necessario specificare un valore di testo. Tale testo specifica il tipo dell'oggetto. Ad esempio:
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>

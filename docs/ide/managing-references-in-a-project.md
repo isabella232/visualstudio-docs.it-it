@@ -16,17 +16,17 @@ helpviewer_keywords:
 - namespaces [Visual Studio], referencing
 - COM components, referencing
 - objects [Visual Studio], referencing
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06235439fdff952225fe3aafea9f5354a27cb0a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9623e8ffb6a315851d26cd06defb62899e429f44
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658427"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591255"
 ---
 # <a name="manage-references-in-a-project"></a>Gestire i riferimenti in un progetto
 
@@ -97,7 +97,7 @@ Quando si fa riferimento a un assembly nel progetto, Visual Studio cerca l'assem
 
 ## <a name="references-to-shared-components-at-run-time"></a>Riferimenti a componenti condivisi in fase di esecuzione
 
-In fase di esecuzione i componenti devono trovarsi nel percorso di output del progetto o nella Global Assembly Cache (GAC). Se il progetto contiene un riferimento a un oggetto che non è in uno di questi percorsi, è necessario copiare il riferimento al percorso di output del progetto quando si compila il progetto. La <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> proprietà indica se la copia deve essere eseguita. Se il valore è **True**, il riferimento viene copiato nella directory del progetto quando si compila quest'ultimo. Se il valore è **False**, il riferimento non viene copiato.
+In fase di esecuzione i componenti devono trovarsi nel percorso di output del progetto o nella Global Assembly Cache(GAC). Se il progetto contiene un riferimento a un oggetto che non è in uno di questi percorsi, è necessario copiare il riferimento al percorso di output del progetto quando si compila il progetto. La <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> proprietà indica se la copia deve essere eseguita. Se il valore è **True**, il riferimento viene copiato nella directory del progetto quando si compila quest'ultimo. Se il valore è **False**, il riferimento non viene copiato.
 
 Se si distribuisce un'applicazione che contiene un riferimento a un componente personalizzato registrato nella GAC (Global Assembly Cache), tale componente non verrà distribuito con l'applicazione, indipendentemente dall'impostazione di <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> . Nelle versioni precedenti di Visual Studio era possibile impostare la proprietà <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> su un riferimento per garantire che l'assembly venisse distribuito. A questo punto, è necessario aggiungere manualmente l'assembly nella cartella \Bin. Con questa operazione è possibile mettere tutto il codice personalizzato sotto controllo, riducendo il rischio di pubblicare codice personalizzato con cui non si ha familiarità.
 

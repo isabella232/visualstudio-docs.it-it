@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92d5a593c67f54b50649a48b8f973bbfbff8958
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694939"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597386"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 
@@ -149,7 +149,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 Di seguito è riportato un elenco di funzioni di proprietà MSBuild:
 
-|Firma funzione|Description|
+|Firma funzione|Descrizione|
 |------------------------|-----------------|
 |double Add(double a, double b)|Esegue l'addizione di due valori Double.|
 |long Add(long a, long b)|Esegue l'addizione di due valori Long.|

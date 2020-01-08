@@ -11,17 +11,17 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcb551cdcd5b2505c6ac536a440fcc3e70464bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648204"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586250"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 
@@ -41,7 +41,7 @@ Le attività illustrate nella procedura dettagliata sono le seguenti:
 
 - Modifica del codice per inviare nuovamente al database i dati aggiornati nel set di dati.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
@@ -109,7 +109,7 @@ Per questa procedura dettagliata, i dati nella tabella `Customers` si trova in u
 
 1. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.
 
-     Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
+     Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
 
 2. Trascinare il nodo **Orders** correlato dalla finestra **Origini dati** in **Form1**.
 
@@ -120,7 +120,7 @@ Per questa procedura dettagliata, i dati nella tabella `Customers` si trova in u
 
 ## <a name="add-code-to-update-the-database"></a>Aggiungere il codice per aggiornare il database
 
-È possibile aggiornare il database chiamando i metodi `Update` degli oggetti TableAdapter **Customers** e **Orders**. Per impostazione predefinita, un gestore eventi per il pulsante **Salva** del <xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del form per inviare gli aggiornamenti al database. Questa procedura modifica il codice per inviare gli aggiornamenti nell'ordine corretto. In questo modo si elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.
+È possibile aggiornare il database chiamando i metodi `Update` degli oggetti TableAdapter **Customers** e **Orders**. Per impostazione predefinita, un gestore eventi per il pulsante **Salva** del<xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del form per inviare gli aggiornamenti al database. Questa procedura modifica il codice per inviare gli aggiornamenti nell'ordine corretto. In questo modo si elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.
 
 > [!NOTE]
 > Per maggiore chiarezza, in questa procedura dettagliata non viene utilizzata alcuna transazione. Tuttavia, se si stanno aggiornando due o più tabelle correlate, includere tutta la logica di aggiornamento all'interno di una transazione. Una transazione è un processo che garantisce che tutte le modifiche correlate a un database abbiano esito positivo prima del commit delle modifiche. Per ulteriori informazioni, vedere [transazioni e concorrenza](/dotnet/framework/data/adonet/transactions-and-concurrency).

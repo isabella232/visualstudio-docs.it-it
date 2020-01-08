@@ -3,23 +3,23 @@ title: 'Procedura dettagliata: Creazione di una palla da biliardo tridimensional
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95125e2f808dde634435e4eeb2254e397fceb140
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 866f91303c224f8330a4d2be76f3d29331fcb346
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634549"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589916"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procedura dettagliata: Creazione di una palla da biliardo tridimensionale realistica
 
 In questa procedura dettagliata viene illustrato come creare una palla da biliardo tridimensionale realistica usando la Modalità progettazione shader e l'editor di immagini in Visual Studio. L'aspetto tridimensionale della palla da biliardo viene raggiunto combinando diverse tecniche di shader con le risorse appropriate di trama.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per completare questa procedura dettagliata, è necessario disporre dei componenti e delle abilità seguenti:
 
@@ -53,7 +53,7 @@ Assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella deg
 
 3. Disegnare una trama per la palla da biliardo, tenendo presente il modo in cui la trama viene mappata su una sfera.
 
-    La trama dovrebbe essere simile alla seguente:
+    La trama dovrebbe essere simile a quella seguente:
 
     ![Trama per la palla da biliardo](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png)
 
@@ -147,13 +147,13 @@ Il primo passaggio consiste nella creazione della trama della mappa cubo. In mol
 
 3. Utilizzare una tinta unita per riempire la trama. Questa trama sarà la parte inferiore della mappa cubo, che corrisponde alla superficie del tavolo da biliardo. Ricordare il colore utilizzato per la trama successiva.
 
-4. Creare una seconda trama con la stessa dimensione della prima. La trama verrà ripetuta sui quattro lati della mappa cubo, che corrispondono alla superficie e ai lati di un tavolo da biliardo e all'area intorno al tavolo da biliardo. Assicurarsi di disegnare la superficie del tavolo da biliardo in questa trama utilizzando lo stesso colore della trama inferiore. La trama dovrebbe essere simile alla seguente:
+4. Creare una seconda trama con la stessa dimensione della prima. La trama verrà ripetuta sui quattro lati della mappa cubo, che corrispondono alla superficie e ai lati di un tavolo da biliardo e all'area intorno al tavolo da biliardo. Assicurarsi di disegnare la superficie del tavolo da biliardo in questa trama utilizzando lo stesso colore della trama inferiore. La trama dovrebbe essere simile a quella seguente:
 
     ![Trama per i lati della mappa cubi](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png)
 
     Tenere presente che una mappa di reflection non deve essere fotorealistica per essere efficace; ad esempio, la mappa cubo utilizzata per creare le immagini di questo articolo contiene esattamente quattro caselle invece di sei.
 
-5. Creare una terza trama con la stessa dimensione delle altre. Questa trama sarà la parte superiore della mappa cubo, che corrisponde all'area sopra il tavolo da biliardo. Per rendere questa parte della reflection più interessante, è possibile disegnare una luce sopraelevata per aumentare le evidenziazioni speculari aggiunte allo shader nella procedura precedente. La trama dovrebbe essere simile alla seguente:
+5. Creare una terza trama con la stessa dimensione delle altre. Questa trama sarà la parte superiore della mappa cubo, che corrisponde all'area sopra il tavolo da biliardo. Per rendere questa parte della reflection più interessante, è possibile disegnare una luce sopraelevata per aumentare le evidenziazioni speculari aggiunte allo shader nella procedura precedente. La trama dovrebbe essere simile a quella seguente:
 
     ![Trama per la parte superiore della mappa cubi](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 

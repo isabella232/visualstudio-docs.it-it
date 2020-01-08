@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7273019d837a9cc13f6ffb306946372f11ec1f7f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658354"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566176"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Esplorare e aggiornare i modelli nel codice del programma
 
@@ -55,7 +55,7 @@ ms.locfileid: "72658354"
 
  `henry.Name = "Henry VIII";`
 
- Se nella definizione DSL viene **calcolato**il **tipo** di una proprietà, non è possibile impostarlo. Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).
+ Se nella definizione DSL viene **calcolato**il **tipo** di una proprietà, non è possibile impostarlo. Per altre informazioni, vedere [calcolate e le proprietà di archiviazione personalizzate](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Relazioni
  Le relazioni di dominio definite nella definizione DSL diventano coppie di proprietà, una per la classe in ogni entità finale della relazione. I nomi delle proprietà vengono visualizzati nel diagramma di DslDefinition come etichette nei ruoli a ogni lato della relazione. A seconda della molteplicità del ruolo, il tipo della proprietà è la classe nell'altra entità finale della relazione o una raccolta di tale classe.
@@ -84,7 +84,7 @@ ms.locfileid: "72658354"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Sono disponibili anche altri metodi per accedere ai collegamenti. Esempio:
+ Sono disponibili anche altri metodi per accedere ai collegamenti. Ad esempio:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +108,7 @@ ms.locfileid: "72658354"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="metadata"></a>Accesso alle informazioni sulle classi
- È possibile ottenere informazioni sulle classi, le relazioni e altri aspetti della definizione DSL. Esempio:
+ È possibile ottenere informazioni sulle classi, le relazioni e altri aspetti della definizione DSL. Ad esempio:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -199,13 +199,13 @@ using (Transaction t =
 
  È possibile creare un'istanza di una relazione in tre modi. Ognuno di questi tre metodi ha lo stesso effetto:
 
-- Impostare la proprietà dell'assegnatario del ruolo di origine. Esempio:
+- Impostare la proprietà dell'assegnatario del ruolo di origine. Ad esempio:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- Impostare la proprietà dell'assegnatario del ruolo di destinazione. Esempio:
+- Impostare la proprietà dell'assegnatario del ruolo di destinazione. Ad esempio:
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +215,7 @@ using (Transaction t =
 
        La molteplicità di questo ruolo è `0..*`, quindi si aggiunge alla raccolta.
 
-- Costruire un'istanza della relazione in modo esplicito. Esempio:
+- Costruire un'istanza della relazione in modo esplicito. Ad esempio:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -262,7 +262,7 @@ In alcuni casi, l'eliminazione viene impedita dall'esistenza di un blocco, sull'
 
  Questi tre metodi hanno tutti lo stesso effetto. È sufficiente utilizzarne solo uno.
 
- Se il ruolo ha una molteplicità 0.. 1 o 1.. 1, è possibile impostarlo su `null` o su un altro valore:
+ Se il ruolo ha una molteplicità 0.. 1 o 1.. 1, è possibile impostarlo su `null`o su un altro valore:
 
  `edward.FamilyTreeModel = null;`//o:
 
@@ -285,7 +285,7 @@ In alcuni casi, l'eliminazione viene impedita dall'esistenza di un blocco, sull'
 
  `link.MoveBefore(role, nextLink);`
 
-## <a name="locks"></a>Serrature
+## <a name="locks"></a> Locks
  Le modifiche potrebbero essere impedite da un blocco. I blocchi possono essere impostati sui singoli elementi, sulle partizioni e sull'archivio. Se uno di questi livelli ha un blocco che impedisce il tipo di modifica che si desidera apportare, è possibile che venga generata un'eccezione quando si tenta di eseguire questa operazione. È possibile individuare se i blocchi vengono impostati tramite l'elemento. GetLocks (), che è un metodo di estensione definito nello spazio dei nomi <xref:Microsoft.VisualStudio.Modeling.Immutability>.
 
  Per ulteriori informazioni, vedere [definizione di un criterio di blocco per creare segmenti di sola lettura](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
@@ -428,7 +428,7 @@ FamilyTreeDiagram diagram =
 
 Quando si crea un elemento e lo si collega all'albero delle relazioni di incorporamento, viene automaticamente creata e associata una forma. Questa operazione viene eseguita dalle regole di correzione eseguite alla fine della transazione. Tuttavia, la forma verrà visualizzata in una posizione assegnata automaticamente e la relativa forma, il colore e altre funzionalità includeranno valori predefiniti. Per controllare la modalità di creazione della forma, è possibile utilizzare la funzione Merge. È innanzitutto necessario aggiungere gli elementi che si desidera aggiungere in un ElementGroup, quindi unire il gruppo nel diagramma.
 
-Questo metodo:
+Il seguente metodo:
 
 - Imposta il nome, se è stata assegnata una proprietà come nome dell'elemento.
 

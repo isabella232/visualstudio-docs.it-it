@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - data [Visual Studio], creating table adapters
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1403d61dd7a0d36401e449806fdafa6adc533b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e5a557aeeee3fca2bef0367a630dfaca04b3a74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648609"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586783"
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare oggetti TableAdapter
 
@@ -82,7 +82,7 @@ Nell'esempio seguente viene illustrato come chiamare una query aggiuntiva denomi
 
 1. Aprire il set di dati in **Progettazione DataSet**.
 
-2. Se si sta creando una nuova query, trascinare un oggetto **query** dalla scheda **DataSet** della **casella degli strumenti** in un <xref:System.Data.DataTable> oppure selezionare **Aggiungi query** dal menu di scelta rapida del TableAdapter. È anche possibile trascinare un oggetto **query** su un'area vuota del **Progettazione DataSet**, che crea un TableAdapter senza una <xref:System.Data.DataTable> associata. Queste query possono restituire solo valori singoli (scalari) o eseguire comandi di aggiornamento, inserimento o eliminazione sul database.
+2. Se si sta creando una nuova query, trascinare un oggetto **query** dalla scheda **DataSet** della **casella degli strumenti** in un <xref:System.Data.DataTable>oppure selezionare **Aggiungi query** dal menu di scelta rapida del TableAdapter. È anche possibile trascinare un oggetto **query** su un'area vuota del **Progettazione DataSet**, che crea un TableAdapter senza una <xref:System.Data.DataTable>associata. Queste query possono restituire solo valori singoli (scalari) o eseguire comandi di aggiornamento, inserimento o eliminazione sul database.
 
 3. Nella schermata **Seleziona connessione dati** selezionare o creare la connessione che viene utilizzata dalla query.
 

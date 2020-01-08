@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73717265"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398273"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Creazione di applicazioni ASP.NET Core in Visual Studio per Mac
 
@@ -25,7 +25,7 @@ In questo lab si creerà ed esplorerà un'applicazione ASP.NET Core con Visual S
 > * Esplorare il modello di hosting, configurazione e middleware di ASP.NET Core
 > * Eseguire il debug di un'app Web ASP.NET Core
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 - [Visual Studio per Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
@@ -73,9 +73,9 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image8.png)
 
-7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. È tuttavia possibile ignorare alcune di queste impostazioni, oppure ignorarle tutte, a seconda dell'ambiente, ad esempio tramite un file **appsettings.Development.json** per l'ambiente **Development**.
+7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. Annidato sotto il file appSettings. JSON è **appSettings. File Development. JSON** . Qui è possibile eseguire l'override di alcune o tutte queste impostazioni in base all'ambiente. Visual Studio per Mac annidare i file in questo modo utilizzando la stessa logica di Visual Studio per Windows, in modo che i file a cui è necessario accedere più spesso siano in primo piano. 
 
-    ![](media/netcore-image9.png)
+    ![](media/netcore-build-nested.png)
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>Attività 3: informazioni sul modo in cui è ospitata l'applicazione
 

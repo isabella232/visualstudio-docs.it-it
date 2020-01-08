@@ -12,17 +12,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, GenerateDeploymentManifest task
 - GenerateDeploymentManifest task [MSBuild]
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8a2f4810c8a485d6b9013f658e221db39d8071f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fc953298241ec7c48bbf5ea87c902aa28b349ce0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003350"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588304"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (attività)
 
@@ -32,7 +32,7 @@ Genera un manifesto di distribuzione [!INCLUDE[ndptecclick](../deployment/includ
 
 La tabella seguente descrive i parametri dell'attività `GenerateDeploymentManifest`.
 
-| Parametro | Description |
+| Parametro | Descrizione |
 |--------------------------| - |
 | `AssemblyName` | Parametro `String` facoltativo.<br /><br /> Specifica il campo `Name` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non è specificato, il nome viene dedotto dal parametro `EntryPoint` o `InputManifest`. Se non è possibile dedurre il nome, viene generato un errore. |
 | `AssemblyVersion` | Parametro `String` facoltativo.<br /><br /> Specifica il campo `Version` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non è specificato, l'attività usa il valore "1.0.0.0". |
@@ -40,7 +40,7 @@ La tabella seguente descrive i parametri dell'attività `GenerateDeploymentManif
 | `DeploymentUrl` | Parametro `String` facoltativo.<br /><br /> Specifica il percorso di aggiornamento per l'applicazione. Se questo parametro non è specificato, non viene definito alcun percorso di aggiornamento per l'applicazione. Se tuttavia il parametro `UpdateEnabled` è impostato su `true`, è necessario specificare il percorso di aggiornamento. Il valore specificato deve essere un percorso URL o UNC completo. |
 | `Description` | Parametro `String` facoltativo.<br /><br /> Specifica una descrizione facoltativa per l'applicazione. |
 | `DisallowUrlActivation` | Parametro `Boolean` facoltativo.<br /><br /> Specifica se l'applicazione deve essere eseguita automaticamente quando viene aperta tramite un URL. Se questo parametro è impostato su `true`, è possibile avviare l'applicazione solo dal menu **Start**. Il valore predefinito di questo parametro è `false`. Questo input è applicabile solo quando il valore del parametro `Install` è impostato su `true`. |
-| `EntryPoint` | Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica il punto di ingresso per l'assembly del manifesto generato. Per un manifesto di distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] questo input specifica il manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].<br /><br />Se non viene specificato il parametro attività `EntryPoint`, il tag `<customHostSpecified>` viene inserito come figlio del tag `<entryPoint>`, ad esempio:<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> È possibile aggiungere dipendenze DLL al manifesto dell'applicazione seguendo questa procedura:<br /><br /> 1.  Risolvere i riferimenti all'assembly con una chiamata a <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Passare l'output dell'attività precedente e l'assembly stesso a <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Passare le dipendenze usando il parametro `Dependencies` a <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>. |
+| `EntryPoint` | Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica il punto di ingresso per l'assembly del manifesto generato. Per un manifesto di distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] questo input specifica il manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].<br /><br />Se non viene specificato il parametro attività `EntryPoint`, il tag `<customHostSpecified>` viene inserito come figlio del tag `<entryPoint>`, ad esempio:<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> È possibile aggiungere dipendenze DLL al manifesto dell'applicazione seguendo questa procedura:<br /><br /> 1. risolvere i riferimenti ad assembly con una chiamata a <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2. passare l'output dell'attività precedente e l'assembly stesso a <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3. passare le dipendenze usando il parametro `Dependencies` per <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>. |
 | `ErrorReportUrl` | Parametro <xref:System.String?displayProperty=fullName> facoltativo.<br /><br /> Specifica l'URL della pagina Web visualizzata nelle finestre di dialogo durante le installazioni ClickOnce. |
 | `InputManifest` | Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Indica un documento XML di input da usare come base per il generatore del manifesto. In questo modo è possibile applicare nel manifesto di output dati strutturati, ad esempio definizioni del manifesto personalizzate. L'elemento radice del documento XML deve essere un nodo assembly nello spazio dei nomi asmv1. |
 | `Install` | Parametro `Boolean` facoltativo.<br /><br /> Specifica se si tratta di un'applicazione installata o di un'applicazione disponibile solo online. Se il parametro è impostato su `true`, l'applicazione verrà installata nel menu **Start** dell'utente e potrà essere rimossa usando la finestra di dialogo **Installazione applicazioni**. Se questo parametro è `false`, l'applicazione è destinata all'uso online da una pagina Web. Il valore predefinito di questo parametro è `true`. |
@@ -60,13 +60,13 @@ La tabella seguente descrive i parametri dell'attività `GenerateDeploymentManif
 | `UpdateMode` | Parametro `String` facoltativo.<br /><br /> Specifica se è necessario verificare gli aggiornamenti in primo piano prima dell'avvio dell'applicazione o in background durante l'esecuzione dell'applicazione. Per il parametro è possibile specificare i valori seguenti:<br /><br /> -   `Foreground`<br />-   `Background`<br /><br /> Il valore predefinito di questo parametro è `Background`. Questo parametro è applicabile solo quando i parametri `Install` e `UpdateEnabled` sono entrambi impostati su `true`. |
 | `UpdateUnit` | Parametro `String` facoltativo.<br /><br /> Specifica le unità per il parametro `UpdateInterval`. Per il parametro è possibile specificare i valori seguenti:<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> Questo parametro è applicabile solo quando i parametri `Install` e `UpdateEnabled` sono entrambi impostati su `true`. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco dei parametri della classe Task, vedere [Classe di base Task](../msbuild/task-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.GenerateManifestBase> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco dei parametri della classe Task, vedere [Classe di base Task](../msbuild/task-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Attività GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)
 - [Attività SignFile](../msbuild/signfile-task.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

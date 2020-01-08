@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare e rimuovere dipendenze del progetto'
+title: 'Procedura: Creare e rimuovere dipendenze di progetto'
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - projects [Visual Studio], dependencies
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 ms.technology: vs-ide-compile
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce26c74aced2dd979f9f9847d5c56ead30f897ce
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 2c10ea49dfd1398b8271f959cb498c311d98a4ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415600"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595280"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Procedura: Creare e rimuovere dipendenze del progetto
+# <a name="how-to-create-and-remove-project-dependencies"></a>Procedura: Creare e rimuovere dipendenze di progetto
 
 Quando si compila una soluzione che contiene più progetti, può essere necessario prima compilare alcuni progetti, per generare il codice usato da altri progetti. Quando un progetto usa codice eseguibile generato da un altro progetto, il progetto che genera il codice viene definito come dipendenza del progetto che usa il codice. Tali relazioni di dipendenza possono essere definite nella finestra di dialogo **Dipendenze progetto**.
 
@@ -66,4 +66,4 @@ Quando si compila una soluzione che contiene più progetti, può essere necessar
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
-- [Gestione delle proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)
+- [Gestire le proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)

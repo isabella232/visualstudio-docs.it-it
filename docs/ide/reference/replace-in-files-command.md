@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Replace In Files command
 - ReplaceInFiles command
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fccfe696da2d38ff03ffb2f9b91de481e924a514
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748671"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565474"
 ---
 # <a name="replace-in-files-command"></a>Comando Sostituisci nei file
 Sostituisce il testo nei file usando un subset delle opzioni disponibili nella scheda **Sostituisci nei file** della finestra **Trova e sostituisci**.
@@ -32,14 +32,14 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 [/reset] [/stop] [/sub] [/text2] [/wild] [/word]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `findwhat`
 
-Obbligatorio. Testo da cercare.
+Richiesto. Testo da cercare.
 
 `replacewith`
 
-Obbligatorio. Il testo di sostituzione per il testo corrispondente.
+Richiesto. Il testo di sostituzione per il testo corrispondente.
 
 ## <a name="switches"></a>Opzioni
 /all o /a
@@ -109,7 +109,7 @@ In questo esempio `btnCancel` viene cercato e sostituito con `btnReset` in tutti
 
 - [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)
 - [Sostituisci nei file](../../ide/replace-in-files.md)
-- [Finestra di comando](../../ide/reference/command-window.md)
+- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

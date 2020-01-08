@@ -3,15 +3,15 @@ title: Utilizzo di elementi in XAML Designer
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bae8f676a009ef9e5b3560feff15b74410cc52ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668617"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592924"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Usare gli elementi nella finestra di progettazione XAML
 
@@ -107,7 +107,7 @@ Per separare gli elementi ed eliminare il layout, fare clic con il pulsante dest
 
 È possibile ripristinare i valori predefiniti per le proprietà di layout specifiche di un elemento usando i comandi di reimpostazione del layout. Questo comando consente di reimpostare il margine, l'allineamento, la larghezza, l'altezza e la dimensione di un elemento, separatamente o contemporaneamente.
 
-Per reimpostare il layout dell'elemento, fare clic con il pulsante destro del mouse sull'elemento nella finestra Struttura documento o nella tavola da disegno e quindi scegliere **Layout** > **Reimposta** *NomeProprietà*, dove *NomeProprietà* è la proprietà che si vuole reimpostare (oppure scegliere **Layout** > **Reimposta tutto** per reimpostare tutte le proprietà di layout dell'elemento).
+Per reimpostare il layout dell'elemento, fare clic con il pulsante destro del mouse sull'elemento nella finestra Struttura documento o nella tavola da disegno, quindi scegliere **layout** > **Reimposta** *PropertyName*, dove *PropertyName* è la proprietà che si desidera reimpostare o scegliere **layout** > **Reimposta tutto** per reimpostare tutte le proprietà di layout per l'elemento.
 
 ## <a name="see-also"></a>Vedere anche
 

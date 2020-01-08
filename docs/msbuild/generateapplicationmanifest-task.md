@@ -14,17 +14,17 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 446f4728f92d5a486afea1a7c03c8d5006690bfc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003631"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589305"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (attività)
 Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifesto nativo. Un manifesto nativo descrive un componente definendo un'identità univoca per il componente e identificando tutti gli assembly e i file che costituiscono il componente. Un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estende un manifesto nativo indicando il punto di ingresso dell'applicazione e specificando il livello di sicurezza dell'applicazione.
@@ -32,22 +32,22 @@ Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/inclu
 ## <a name="parameters"></a>Parametri
 La tabella seguente descrive i parametri dell'attività `GenerateApplicationManifest`.
 
-| Parametro | Description |
+| Parametro | Descrizione |
 |---------------------------------| - |
 | `AssemblyName` | Parametro `String` facoltativo.<br /><br /> Specifica il campo `Name` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non è specificato, il nome viene dedotto dal parametro `EntryPoint` o `InputManifest`. Se non è possibile creare alcun nome, l'attività genera un errore. |
 | `AssemblyVersion` | Parametro `String` facoltativo.<br /><br /> Specifica il campo `Version` relativo all'identità dell'assembly per il manifesto generato. Se questo parametro non è specificato, viene usato il valore predefinito "1.0.0.0". |
 | `ClrVersion` | Parametro `String` facoltativo.<br /><br /> Specifica la versione minima di Common Language Runtime (CLR) richiesta dall'applicazione. Il valore predefinito è la versione di CLR usata dal sistema di compilazione. Se l'attività genera un manifesto nativo, questo parametro viene ignorato. |
-| `ConfigFile` | Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica l'elemento che contiene il file di configurazione dell'applicazione. Se l'attività genera un manifesto nativo, questo parametro viene ignorato. |
-| `Dependencies` | Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica un elenco di elementi che definisce il set di assembly dipendenti per il manifesto generato. Ogni elemento può essere ulteriormente descritto dai metadati dell'elemento per indicare informazioni aggiuntive sullo stato della distribuzione e il tipo di dipendenza. Per altre informazioni, vedere [Metadati degli elementi](#item-metadata). |
+| `ConfigFile` | Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica l'elemento che contiene il file di configurazione dell'applicazione. Se l'attività genera un manifesto nativo, questo parametro viene ignorato. |
+| `Dependencies` | Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica un elenco di elementi che definisce il set di assembly dipendenti per il manifesto generato. Ogni elemento può essere ulteriormente descritto dai metadati dell'elemento per indicare informazioni aggiuntive sullo stato della distribuzione e il tipo di dipendenza. Per altre informazioni, vedere [Metadati degli elementi](#item-metadata). |
 | `Description` | Parametro `String` facoltativo.<br /><br /> Specifica la descrizione per l'applicazione o il componente. |
-| `EntryPoint` | Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica un singolo elemento che indica il punto di ingresso per l'assembly del manifesto generato.<br /><br /> Per un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], questo parametro specifica l'assembly avviato quando si esegue l'applicazione. |
+| `EntryPoint` | Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica un singolo elemento che indica il punto di ingresso per l'assembly del manifesto generato.<br /><br /> Per un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], questo parametro specifica l'assembly avviato quando si esegue l'applicazione. |
 | `ErrorReportUrl` | Parametro <xref:System.String?displayProperty=fullName> facoltativo.<br /><br /> Specifica l'URL della pagina Web visualizzata nelle finestre di dialogo durante le segnalazioni di errori nelle installazioni ClickOnce. |
-| `FileAssociations` | Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica un elenco di uno o più tipi di file associati al manifesto della distribuzione ClickOnce.<br /><br /> Le associazioni di file sono valide solo quando la destinazione è .NET Framework 3.5 o versione successiva. |
-| `Files` | Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> I file da includere nel manifesto. Specificare il percorso completo per ogni file. |
+| `FileAssociations` | Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica un elenco di uno o più tipi di file associati al manifesto della distribuzione ClickOnce.<br /><br /> Le associazioni di file sono valide solo quando la destinazione è .NET Framework 3.5 o versione successiva. |
+| `Files` | Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> I file da includere nel manifesto. Specificare il percorso completo per ogni file. |
 | `HostInBrowser` | Parametro <xref:System.Boolean> facoltativo.<br /><br /> Se `true`, l'applicazione è ospitata in un browser (come le applicazioni Web Browser WPF). |
-| `IconFile` | Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Indica il file dell'icona dell'applicazione. L'icona dell'applicazione è espressa nel manifesto dell'applicazione generato e viene usata per il menu **Start** e la finestra di dialogo **Installazione applicazioni**. Se questo input non viene specificato, viene usata un'icona predefinita. Se l'attività genera un manifesto nativo, questo parametro viene ignorato. |
+| `IconFile` | Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica il file dell'icona dell'applicazione. L'icona dell'applicazione è espressa nel manifesto dell'applicazione generato e viene usata per il menu **Start** e la finestra di dialogo **Installazione applicazioni**. Se questo input non viene specificato, viene usata un'icona predefinita. Se l'attività genera un manifesto nativo, questo parametro viene ignorato. |
 | `InputManifest` | Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Indica un documento XML di input da usare come base per il generatore del manifesto. In questo modo è possibile applicare nel manifesto di output dati strutturati, ad esempio definizioni della protezione dell'applicazione o definizioni del manifesto personalizzate. L'elemento radice del documento XML deve essere un nodo assembly nello spazio dei nomi asmv1. |
-| `IsolatedComReferences` | Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i componenti COM da isolare nel manifesto generato. Questo parametro supporta la possibilità di isolare i componenti COM per la distribuzione di "COM senza registrazione". Funziona generando automaticamente un manifesto con definizioni di registrazione COM standard. Tuttavia, i componenti COM devono essere registrati nel computer di compilazione per garantire il funzionamento corretto. |
+| `IsolatedComReferences` | Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica i componenti COM da isolare nel manifesto generato. Questo parametro supporta la possibilità di isolare i componenti COM per la distribuzione di "COM senza registrazione". Funziona generando automaticamente un manifesto con definizioni di registrazione COM standard. Tuttavia, i componenti COM devono essere registrati nel computer di compilazione per garantire il funzionamento corretto. |
 | `ManifestType` | Parametro `String` facoltativo.<br /><br /> Specifica il tipo di manifesto da generare. Per il parametro è possibile specificare i valori seguenti:<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> Se questo parametro non è specificato, l'attività usa il valore predefinito `ClickOnce`. |
 | `MaxTargetPath` | Parametro `String` facoltativo.<br /><br /> Specifica la lunghezza massima consentita di un percorso di file nella distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Se questo valore è specificato, viene verificata la lunghezza di ogni percorso di file nell'applicazione rispetto a questo limite. Per tutti gli elementi che superano il limite verrà generato un avviso di compilazione. Se questo input non è specificato o è uguale a zero, non viene eseguita alcuna verifica. Se l'attività genera un manifesto nativo, questo parametro viene ignorato. |
 | `OSVersion` | Parametro `String` facoltativo.<br /><br /> Specifica la versione minima del sistema operativo richiesta dall'applicazione. Ad esempio, il valore "5.1.2600.0" indica che il sistema operativo è Windows XP. Se questo parametro viene omesso, viene usato il valore "4.10.0.0", che indica Windows 98 Second Edition, la versione minima di sistema operativo supportata per .NET Framework. Se l'attività genera un manifesto nativo, questo input viene ignorato. |
@@ -64,8 +64,8 @@ La tabella seguente descrive i parametri dell'attività `GenerateApplicationMani
 | `TrustInfoFile` | Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Indica un documento XML che specifica la sicurezza dell'applicazione. L'elemento radice del documento XML deve essere un nodo trustInfo nello spazio dei nomi asmv2. Se l'attività genera un manifesto nativo, questo parametro viene ignorato. |
 | `UseApplicationTrust` | Parametro `Boolean` facoltativo.<br /><br /> Se true, le proprietà `Product`, `Publisher` e `SupportUrl` vengono scritte nel manifesto dell'applicazione. |
 
-## <a name="remarks"></a>Osservazioni
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco dei parametri della classe Task, vedere [Classe di base Task](../msbuild/task-base-class.md).
+## <a name="remarks"></a>Note
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.GenerateManifestBase> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco dei parametri della classe Task, vedere [Classe di base Task](../msbuild/task-base-class.md).
 
 Per informazioni sull'uso dell'attività `GenerateDeploymentManifest`, vedere [Attività GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md).
 
@@ -73,7 +73,7 @@ Gli input per i file e le dipendenze possono essere ulteriormente decorati con i
 
 ## <a name="item-metadata"></a>Metadati degli elementi
 
-|Nome dei metadati|Description|
+|Nome dei metadati|Descrizione|
 |-------------------|-----------------|
 |`DependencyType`|Indica se la dipendenza è pubblicata e installata con l'applicazione o un prerequisito. Questi metadati sono validi per tutte le dipendenze, ma non vengono usati per i file. I valori disponibili per questi metadati sono:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install è il valore predefinito.|
 |`AssemblyType`|Indica se la dipendenza è un assembly gestito o nativo. Questi metadati sono validi per tutte le dipendenze, ma non vengono usati per i file. I valori disponibili per questi metadati sono:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` è il valore predefinito, che indica che il generatore del manifesto determina automaticamente il tipo di assembly.|
@@ -353,4 +353,4 @@ L'esempio produce l'oggetto *Test.exe.manifest*, che rende l'applicazione XCOPY 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Attività GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
 - [Attività SignFile](../msbuild/signfile-task.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

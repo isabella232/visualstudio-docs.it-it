@@ -6,23 +6,23 @@ f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 024491180528dd4b8335c88623e7d261c0a2bbe2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653736"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591528"
 ---
 # <a name="findcommand-box"></a>Trova/Comando (casella)
 
 È possibile cercare testo ed eseguire i comandi di Visual Studio dalla casella **Trova/Comando**. La casella **Trova/Comando** è ancora disponibile nella barra degli strumenti, ma non è più visibile per impostazione predefinita. È possibile visualizzare la casella **Trova/Comando** scegliendo **Aggiungi o rimuovi pulsanti** nella barra degli strumenti **Standard** e scegliendo **Trova**.
 
-Per eseguire un comando di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], anteporre il segno di maggiore di ( **>** ).
+Per eseguire un comando di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], anteporre il segno di maggiore di (**>**).
 
 La casella **Trova/Comando** memorizza gli ultimi 20 elementi immessi e li visualizza in un elenco a discesa. È possibile spostarsi nell'elenco usando i **tasti di direzione**.
 
@@ -34,7 +34,7 @@ Per impostazione predefinita, quando si specifica il testo nella casella **Trova
 
 ## <a name="entering-commands"></a>Immissione di comandi
 
-Per usare la casella **Trova/Comando** per eseguire un singolo comando o alias di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] invece che per cercare il testo, anteporre il comando con un simbolo di maggiore di ( **>** ). Esempio:
+Per usare la casella **Trova/Comando** per eseguire un singolo comando o alias di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] invece che per cercare il testo, anteporre il comando con un simbolo di maggiore di (**>**). Ad esempio:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -44,7 +44,7 @@ In alternativa, è anche possibile usare la finestra di **comando** per immetter
 
 ## <a name="escape-characters"></a>Caratteri di escape
 
-Un accento circonflesso ( **^** ) in un comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ( **"** ), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Esempio:
+Un accento circonflesso (**^**) in un comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte (**"**), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
 
 ```
 >Edit.Find ^^t /regex

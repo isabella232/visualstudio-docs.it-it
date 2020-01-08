@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, user activities
 - load tests, modeling scenarios
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 944b0bf52cd6a7c3459f0be2a06b437796f57b37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665034"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593239"
 ---
 # <a name="edit-load-test-scenarios"></a>Modificare gli scenari di test di carico
 
@@ -45,7 +45,7 @@ Uno scenario è costituito anche da molte altre proprietà che è possibile modi
 
 ## <a name="tasks"></a>Attività
 
-|Attività|Argomenti correlati|
+|Attività|Argomenti associati|
 |-|-----------------------|
 |**Aggiungere pause di interazione umana artificiali nello scenario:** il tempo interazione utente consente di simulare il comportamento umano rispetto alle attese tra le interazioni con un sito Web. I tempi interazione utente intercorrono tra le richieste in un test delle prestazioni Web e tra le iterazioni del test in uno scenario di test di carico. L'uso dei tempi interazione utente in un test di carico può essere utile per creare simulazioni di carico più accurate.|-   [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Specificare il numero di utenti virtuali per lo scenario:** è possibile configurare le proprietà del modello di carico per specificare come viene regolato il carico utente simulato durante un test di carico. Sono disponibili tre modelli di carico incorporati: costante, per passaggio e basato su obiettivo. La scelta del modello di carico e la regolazione delle proprietà avvengono per ottenere livelli appropriati in base agli obiettivi del test di carico.|-   [Modificare i modelli di carico per definire le attività di utenti virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)|

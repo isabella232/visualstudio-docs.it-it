@@ -3,17 +3,17 @@ title: La stringa di connessione contiene credenziali con una password in testo 
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a8cb18e84263d7b7144764d007a2928956fc77b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9c807266182b419dc0967288715a187042f83b1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641030"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586172"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>La stringa di connessione contiene credenziali con una password in testo non crittografato e non utilizza la sicurezza integrata
 
@@ -24,7 +24,7 @@ Quando si usano connessioni dati in cui sono contenute informazioni riservate, a
 > [!WARNING]
 > Se si imposta in modo esplicito la proprietà **Impostazioni applicazione** presente nelle proprietà **Connessione** su **False**, la password verrà aggiunta nel file DBML.
 
-## <a name="save-options"></a>Opzioni di salvataggio
+## <a name="save-options"></a>Opzioni per il salvataggio
 
 - Per salvare la stringa di connessione con le informazioni riservate, scegliere **Sì**.
 

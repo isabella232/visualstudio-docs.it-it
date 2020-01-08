@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a765bcdd6eefbb5c256603bb73c0684c8782f803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649379"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587407"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedura: sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto DevOps di Azure
 
@@ -31,9 +31,9 @@ Sincronizzare le impostazioni di analisi del codice per i progetti di codice con
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Per specificare un set di regole standard Microsoft
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
+1. Nelle **Esplora soluzioni**, fare clic sul progetto codice e quindi fare clic su **proprietà**.
 
-2. Fare clic su **analisi codice**.
+2. Fare clic su **Analisi codice**.
 
 ::: moniker range="vs-2017"
 
@@ -51,19 +51,19 @@ Sincronizzare le impostazioni di analisi del codice per i progetti di codice con
 
 1. Se necessario, eseguire un'operazione Get sul file del set di regole che specifica i criteri di archiviazione.
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
+2. Nelle **Esplora soluzioni**, fare clic sul progetto codice e quindi fare clic su **proprietà**.
 
-3. Fare clic su **analisi codice**.
+3. Fare clic su **Analisi codice**.
 
 ::: moniker range="vs-2017"
 
-4. Nell'elenco **Esegui questo set di regole** fare clic su **\<Browse >** .
+4. Nell'elenco **Esegui questo set di regole** fare clic su **\<Sfoglia >** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Nell'elenco **regole attive** fare clic su **\<Browse >** .
+4. Nell'elenco **regole attive** fare clic su **\<Sfoglia >** .
 
 ::: moniker-end
 
