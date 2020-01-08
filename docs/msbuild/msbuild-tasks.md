@@ -6,17 +6,17 @@ helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90b6731cf75a1825139aba57fe8491cd7cb0253f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3a6bc01ee1f692a4da0cf1921de757236651a177
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004554"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593798"
 ---
 # <a name="msbuild-tasks"></a>MSBuild (attività)
 Una piattaforma di compilazione deve poter eseguire un numero illimitato di azioni durante il processo di compilazione. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa le *attività* per eseguire queste azioni. Un'attività è un'unità di codice eseguibile usata da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per eseguire operazioni di compilazione atomiche.
@@ -59,7 +59,7 @@ Una piattaforma di compilazione deve poter eseguire un numero illimitato di azio
 ```
 
 ## <a name="included-tasks"></a>Attività incluse
- In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sono disponibili diverse attività, ad esempio [Copy](../msbuild/copy-task.md) per eseguire la copia dei file, [MakeDir](../msbuild/makedir-task.md) per creare le directory e [Csc](../msbuild/csc-task.md) per compilare i file di codice sorgente di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Per un elenco completo delle attività disponibili e informazioni sull'uso, vedere [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md).
+ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sono disponibili diverse attività, ad esempio [Copy](../msbuild/copy-task.md) per eseguire la copia dei file, [MakeDir](../msbuild/makedir-task.md) per creare le directory e [Csc](../msbuild/csc-task.md) per compilare i file di codice sorgente di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Per un elenco completo delle attività disponibili e per informazioni sull'utilizzo, vedere [Informazioni di riferimento sull'attività](../msbuild/msbuild-task-reference.md).
 
 ## <a name="overridden-tasks"></a>Attività sottoposte a override
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] cerca le attività in più posizioni. La prima posizione sono i file con estensione *OverrideTasks* archiviati nelle directory di .NET Framework. Le attività in questi file eseguono l'override delle altre attività con gli stessi nomi, incluse le attività nel file di progetto. La seconda posizione sono i file con estensione *Tasks* archiviati nelle directory di .NET Framework. Se l'attività non è presente in nessuna di queste posizioni, viene usata l'attività nel file di progetto.

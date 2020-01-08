@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985200"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678961"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Flask con visualizzazioni e modelli di pagina
 
@@ -204,10 +204,6 @@ Risposta: Anche se i modelli vengono in genere mantenuti in file HTML separati, 
 Risposta: L'estensione *html* per i file di modello di pagina è del tutto facoltativa, perché il percorso relativo esatto del file viene sempre identificato nel primo argomento della funzione `render_template`. Per i file con estensione *html*, tuttavia, Visual Studio e altri editor offrono in genere funzionalità quali il completamento del codice e la colorazione della sintassi, che compensano il fatto che i modelli di pagina non siano rigorosamente HTML.
 
 In realtà, quando si lavora a un progetto Flask, Visual Studio rileva automaticamente se il file HTML che si sta modificando è un modello Flask e offre alcune funzionalità di completamento automatico. Ad esempio, quando si inizia a digitare un commento in un modello di pagina Flask, `{#`, Visual Studio suggerisce automaticamente i caratteri di chiusura `#}`. Anche i comandi **Commenta selezione** e **Rimuovi commento selezione** (nel menu **Modifica** > **Avanzate** e sulla barra degli strumenti) usano i commenti dei modelli anziché i commenti HTML.
-
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Domanda: Quando si esegue il progetto, viene visualizzato un errore che indica che non è possibile trovare il modello. Qual è il problema?
-
-Risposta: Se vengono visualizzati errori che indicano che non è possibile trovare il modello, verificare di aver aggiunto l'app al file *settings.py* del progetto Flask nell'elenco `INSTALLED_APPS`. Senza questa voce, Flask non sa di dover cercare nella cartella *templates* dell'app.
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Domanda: I modelli possono essere organizzati in ulteriori sottocartelle?
 
