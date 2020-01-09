@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6baaf22b0a57cf669fbe0ffc4fe75cf1c72baa3b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666113"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568282"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Opzioni, Editor di testo, HTML (Web Form), Convalida
 
@@ -27,7 +27,7 @@ Usare la pagina di opzioni **Convalida** per impostare le preferenze relative al
 
    Uno schema determina gli elementi, gli attributi e la combinazione di maiuscole e minuscole validi nello schema in questione. Inoltre, vengono stabiliti i tag e gli attributi che sono disponibili in IntelliSense.
 
-   Selezionare questa opzione se si vuole che in Visual Studio venga usata il contenuto della dichiarazione **<!DOCTYPE>** e dell'elemento **html** della pagina per determinare lo schema. Ad esempio, se si seleziona questa opzione e nella pagina è contenuta la dichiarazione `<!DOCTYPE html>`, Visual Studio usa lo schema HTML5. Tuttavia, se per il tag **html** è presente un attributo **xmlns**, ad esempio `<html xmlns="http://www.w3.org/1999/xhtml">`, Visual Studio usa lo schema XHTML5.
+   Selezionare questa opzione se si vuole che in Visual Studio venga usata il contenuto della dichiarazione **<!DOCTYPE>** e dell'elemento **html** della pagina per determinare lo schema. Ad esempio, se si seleziona questa opzione e nella pagina è contenuta la dichiarazione `<!DOCTYPE html>`, Visual Studio usa lo schema HTML5. Tuttavia, se per il tag **html** è presente un attributo **xmlns**, ad esempio `<html>`, Visual Studio usa lo schema XHTML5.
 
 - **Destinazione se doctype non viene trovato**
 
