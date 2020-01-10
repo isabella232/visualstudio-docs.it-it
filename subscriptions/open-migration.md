@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: Informazioni su come i partner gestiscono le sottoscrizioni di Visual Studio per i clienti.
-ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
-ms.translationtype: HT
+ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000907"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850551"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partner che gestiscono le sottoscrizioni per conto dei clienti
 Per gestire le sottoscrizioni nel [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com) di Visual Studio, i partner devono seguire alcuni passaggi. Il processo sarà il seguente:
@@ -41,7 +41,7 @@ Questo scenario si applica ai nuovi partner che effettuano nuovi ordini Open Lic
 
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nuovi partner che visitano direttamente il portale di amministrazione delle sottoscrizioni di Visual Studio
-Questo scenario si applica ai nuovi partner, che hanno già effettuato nuovi ordini Open License, ma che non si sono registrati in [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e passano direttamente al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).  Attenersi ai passaggi riportati di seguito.
+Questo scenario si applica ai nuovi partner, che hanno già effettuato nuovi ordini Open License, ma che non si sono registrati in [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e passano direttamente al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).  Esegui questi passaggi:
 - Visitare https://manage.visualstudio.com.
 - Viene visualizzato un errore di utente non riconosciuto.
 - Selezionare l'opzione di registrazione per **partner OLP** e immettere il numero di autorizzazione, il numero di licenza e l'indirizzo di posta elettronica del cliente usato nell'ordine, selezionare la casella di controllo e quindi fare clic su **Invia**.
@@ -50,7 +50,7 @@ Questo scenario si applica ai nuovi partner, che hanno già effettuato nuovi ord
 > Il cliente riceverà un messaggio di posta elettronica di notifica per informarlo che un partner è stato aggiunto a Open License. Il cliente potrà scegliere di rimuovere l'accesso del partner.
 
 ## <a name="resources"></a>Risorse
-- [White paper sulle licenze di Visual Studio](https://aka.ms/vslicensing)
+- [White paper sulle licenze di Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Condizioni dei contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

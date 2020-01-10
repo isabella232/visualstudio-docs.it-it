@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb8da704832031d69156eee8863b689e7956f025
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: faa0cf18bfd9810d84e01028b3f787b3b2c99578
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295951"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844750"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Utilizzare StringBuilder per le concatenazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Per la documentazione più recente su Visual Studio, vedere [DA0001: usare Strin
 |ID regola|DA0001|  
 |Categoria|Uso di .NET Framework|  
 |Metodi di profilatura|Campionamento<br /><br /> Strumentazione|  
-|Message|Si consiglia di utilizzare StringBuilder per le concatenazioni di stringa.|  
+|Messaggio|Si consiglia di utilizzare StringBuilder per le concatenazioni di stringa.|  
 |Tipo messaggio|Avviso|  
   
 ## <a name="cause"></a>Causa  
@@ -45,4 +45,4 @@ Per la documentazione più recente su Visual Studio, vedere [DA0001: usare Strin
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso  
  Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla [visualizzazione Dettagli funzione](../profiling/function-details-view.md) dei dati di profilo di campionamento. Trovare le sezioni del programma che fanno maggior uso della concatenazione di stringhe. Usare la classe StringBuilder per le modifiche di stringa complesse, comprese le operazioni frequenti di concatenazione di stringhe.  
   
- Per altre informazioni sull'uso delle stringhe, vedere la sezione [String Operations](https://go.microsoft.com/fwlink/?LinkId=177816) (Operazioni sulle stringhe) in [Chapter 5 - Improving Managed Code Performance](https://go.microsoft.com/fwlink/?LinkId=177817) (Capitolo 5 - Miglioramento delle prestazioni del codice gestito) nella libreria Microsoft Patterns and Practices.
+ Per altre informazioni sull'uso delle stringhe, vedere la sezione [String Operations](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic26) (Operazioni sulle stringhe) in [Chapter 5 - Improving Managed Code Performance](https://msdn.microsoft.com/library/ms998547.aspx) (Capitolo 5 - Miglioramento delle prestazioni del codice gestito) nella libreria Microsoft Patterns and Practices.

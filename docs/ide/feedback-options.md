@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853490"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847456"
 ---
 # <a name="visual-studio-feedback-options"></a>Opzioni per commenti e suggerimenti in Visual Studio
 
@@ -75,12 +75,12 @@ Successivamente, Visual Studio apre la pagina della [community degli sviluppator
 
 ## <a name="contact-microsoft-support"></a>Contattare il supporto tecnico Microsoft
 
-Per informazioni sul supporto per Visual Studio, vedere la pagina [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing/). Per altri prodotti e servizi Microsoft, vedere [Supporto Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) per assistenza online.
+Per informazioni sul supporto per Visual Studio, vedere la pagina [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing/). Per altri prodotti e servizi Microsoft, vedere [Supporto Microsoft](https://support.microsoft.com/) per assistenza online.
 
 > [!NOTE]
 > Il supporto al di fuori di Stati Uniti e Canada potrebbe variare. Per un elenco di contatti internazionali, vedere [Siti Microsoft nel mondo](https://www.microsoft.com/worldwide/).
 
-Per le organizzazioni di grandi dimensioni che richiedono supporto gestito direttamente da Microsoft sono disponibili contratti tramite diverse offerte di supporto tecnico Enterprise. Per altre informazioni, vedere le [soluzioni di supporto tecnico Microsoft Enterprise](https://go.microsoft.com/fwlink/?LinkId=258223).
+Per le organizzazioni di grandi dimensioni che richiedono supporto gestito direttamente da Microsoft sono disponibili contratti tramite diverse offerte di supporto tecnico Enterprise. Per altre informazioni, vedere le [soluzioni di supporto tecnico Microsoft Enterprise](https://www.microsoft.com/industry/services/support).
 
 Se il prodotto è stato installato in un nuovo computer o dispositivo, il produttore dell'hardware fornisce supporto tecnico e assistenza per questo software. Contattare direttamente il produttore per ottenere supporto.
 

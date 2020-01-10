@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a95392525826fcfb2595e1bac7d45ebea20317fc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294690"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847712"
 ---
 # <a name="trusted-application-deployment-overview"></a>Panoramica della distribuzione di applicazioni attendibili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
   
 |Oggetto o ruolo|Descrizione|  
 |--------------------|-----------------|  
-|amministratore|Entità dell'organizzazione responsabile dell'aggiornamento e della gestione dei computer client|  
+|Amministratori di|Entità dell'organizzazione responsabile dell'aggiornamento e della gestione dei computer client|  
 |gestore di attendibilità|Sottosistema all'interno di Common Language Runtime (CLR) responsabile dell'applicazione della sicurezza delle applicazioni client.|  
 |publisher|Entità che scrive e gestisce l'applicazione.|  
 |deployer|Entità che crea pacchetti e distribuisce l'applicazione agli utenti.|  
@@ -74,7 +74,7 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Aggiungere l'editore all'archivio Editori attendibili  
  Affinché l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] riceva un livello di attendibilità superiore, è necessario aggiungere il certificato come editore attendibile a ogni computer client in cui verrà eseguita l'applicazione. Si tratta di una configurazione che si esegue una sola volta. Dopo il completamento, è possibile distribuire tutte le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] firmate con il certificato editore desiderate, che verranno eseguite con un livello di attendibilità elevato.  
   
- Se si distribuisce l'applicazione in un ambiente desktop gestito, ad esempio una Intranet aziendale che esegue il sistema operativo Windows, è possibile aggiungere gli editori attendibili a un archivio del client creando un nuovo elenco scopi consentiti ai certificati (CTL) con Criteri di gruppo. Per altre informazioni, vedere [Create a certificate trust list for a Group Policy object](https://go.microsoft.com/fwlink/?LinkId=102576)(Creare un elenco scopi consentiti ai certificati per un oggetto Criteri di gruppo).  
+ Se si distribuisce l'applicazione in un ambiente desktop gestito, ad esempio una Intranet aziendale che esegue il sistema operativo Windows, è possibile aggiungere gli editori attendibili a un archivio del client creando un nuovo elenco scopi consentiti ai certificati (CTL) con Criteri di gruppo. Per altre informazioni, vedere [Create a certificate trust list for a Group Policy object](https://technet.microsoft.com/library/2c03582f-00b2-43e5-ae1d-493894ad0fd7)(Creare un elenco scopi consentiti ai certificati per un oggetto Criteri di gruppo).  
   
  Se non si distribuisce l'applicazione in un ambiente desktop gestito, sono disponibili le seguenti opzioni per aggiungere un certificato all'archivio Editori attendibili:  
   

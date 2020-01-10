@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 937e28e923c26a72940b0181da16cf34199bb9aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299420"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852148"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare controlli WPF a un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](https://codeplex.com/SqlServerSamples).
 
   Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:
 
@@ -70,7 +70,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 4. Selezionare il modello di progetto **Applicazione WPF**.
 
-5. Nella casella **nome** Digitare `AdventureWorksProductsEditor` e fare clic su **OK**.
+5. Digitare `AdventureWorksProductsEditor` nella casella **Nome** e quindi fare clic su **OK**.
 
      Visual Studio crea il progetto `AdventureWorksProductsEditor`.
 
@@ -101,7 +101,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 7. Nella pagina **Seleziona oggetti di database** espandere **Tables**, quindi selezionare la tabella **Product (SalesLT)** .
 
-8. Fare clic su **Fine**.
+8. Scegliere **Fine**.
 
      Visual Studio aggiunge un nuovo file AdventureWorksLTDataSet. xsd al progetto e aggiunge un elemento **AdventureWorksLTDataSet** corrispondente alla finestra **origini dati** . Il file AdventureWorksLTDataSet.xsd definisce un set di dati tipizzato denominato `AdventureWorksLTDataSet` e un oggetto TableAdapter denominato `ProductTableAdapter`. Più avanti in questa procedura dettagliata, l'oggetto `ProductTableAdapter` verrà usato per riempire il set di dati con i dati e salvare nuovamente le modifiche nel database.
 
@@ -126,7 +126,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. Fare clic su **Fine**.
+4. Scegliere **Fine**.
 
 ## <a name="define-the-user-interface"></a>Definire l'interfaccia utente
  Aggiungere alcuni pulsanti alla finestra modificando il codice XAML in WPF Designer. Più avanti in questa procedura dettagliata, verrà aggiunto il codice che consente agli utenti di scorrere e salvare le modifiche ai record di prodotti con questi pulsanti.
@@ -228,7 +228,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
     > [!NOTE]
     > Questo esempio usa il metodo `Save` di `TableAdapter` per salvare le modifiche. Tale approccio è appropriato a questa procedura dettagliata, in quanto viene modificata una sola tabella dati. Se è necessario salvare modifiche a più tabelle dati, è possibile usare in alternativa il metodo `UpdateAll` di `TableAdapterManager` generato da Visual Studio con il set di dati. Per altre informazioni, vedere [Panoramica di TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  Compilare ed eseguire l'applicazione. Verificare che sia possibile visualizzare e aggiornare i record di prodotto.
 
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione

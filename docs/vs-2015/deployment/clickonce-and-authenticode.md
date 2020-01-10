@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06edf9954134a6110f9285fc744c87c2696b19d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298265"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847782"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
 ## <a name="authenticode-and-code-signing"></a>Firma del codice e Authenticode  
  Un *certificato digitale* è un file che contiene una coppia di chiavi di crittografia pubblica/privata, nonché i metadati relativi all'editore a cui è stato rilasciato il certificato e all'autorità di certificazione.  
   
- Esistono vari tipi di certificati Authenticode. Ogni certificato viene configurato per diversi tipi di firma. Per le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è necessario avere un certificato Authenticode valido per la firma del codice. Se si prova a firmare un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un altro tipo di certificato, ad esempio un certificato di posta elettronica digitale, l'applicazione non funzionerà. Per altre informazioni, vedere [Introduction to Code Signing](https://go.microsoft.com/fwlink/?LinkId=179452)(Introduzione alla firma del codice).  
+ Esistono vari tipi di certificati Authenticode. Ogni certificato viene configurato per diversi tipi di firma. Per le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è necessario avere un certificato Authenticode valido per la firma del codice. Se si prova a firmare un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un altro tipo di certificato, ad esempio un certificato di posta elettronica digitale, l'applicazione non funzionerà. Per altre informazioni, vedere [Introduction to Code Signing](https://msdn.microsoft.com/library/ms537361.aspx)(Introduzione alla firma del codice).  
   
  È possibile ottenere un certificato per la firma del codice in uno dei tre modi seguenti:  
   
@@ -65,7 +65,7 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
   
 - Disinstallare l'applicazione e reinstallare una nuova versione con un certificato valido.  
   
-- Creare un assembly della riga di comando che aggiorna il certificato. Nell' [articolo del Supporto tecnico Microsoft 925521](https://go.microsoft.com/fwlink/?LinkId=179454)sono disponibili informazioni dettagliate su questa procedura.  
+- Creare un assembly della riga di comando che aggiorna il certificato. Nell' [articolo del Supporto tecnico Microsoft 925521](https://support.microsoft.com/kb/925521)sono disponibili informazioni dettagliate su questa procedura.  
   
 ### <a name="storing-certificates"></a>Archiviazione dei certificati  
   
@@ -74,5 +74,5 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Panoramica della distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)   
+ [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (Strumento per la generazione e la modifica di manifesti)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

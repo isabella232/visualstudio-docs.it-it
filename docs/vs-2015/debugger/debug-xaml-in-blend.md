@@ -14,14 +14,14 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eeda91dad54cc189fba6f23ce6d21e6aa9a6c5da
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298319"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850514"
 ---
-# <a name="debug-xaml-in-blend"></a>Debug XAML in Blend
+# <a name="debug-xaml-in-blend"></a>Eseguire il debug di XAML in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../includes/blend-first-md.md)] per eseguire il debug del codice XAML nell'app. Quando compili un progetto, eventuali errori vengono visualizzati nel pannello **Risultati**. Fai doppio clic su un errore per trovare il markup correlato all'errore. Se desideri avere più spazio per lavorare, puoi nascondere il pannello **Risultati** premendo F12.  
@@ -42,7 +42,7 @@ Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../includes/blend
   
 - È presente un elemento XAML in una posizione non consentita.  
   
-  Per ulteriori informazioni sulla sintassi XAML comune, vedi [Guida alla sintassi XAML di base](https://go.microsoft.com/fwlink/?LinkId=329942).  
+  Per ulteriori informazioni sulla sintassi XAML comune, vedi [Guida alla sintassi XAML di base](https://msdn.microsoft.com/library/windows/apps/hh700351.aspx).  
   
   Puoi anche identificare e risolvere semplici errori di sintassi code-behind, errori di compilazione ed errori di runtime in [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Ricorda, tuttavia, che gli errori code-behind sono più facilmente individuabili e risolvibili in Visual Studio.  
   
@@ -123,7 +123,7 @@ Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../includes/blend
 ## <a name="debugging-in-visual-studio"></a>Debug in Visual Studio  
  Puoi aprire progetti [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] in Visual Studio per eseguire più facilmente il debug del codice nell'app. Per aprire un progetto di [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] in Visual Studio, fai clic con il pulsante destro del mouse sul progetto nel pannello **Progetti**, quindi scegli **Modifica in Visual Studio**. Una volta completata la sessione di debug in Visual Studio, premi CTRL+MAIUSC+S per salvare tutte le modifiche e poi torna a [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Ti verrà chiesto di ricaricare il progetto. Fai clic su **Sì tutti** per continuare a lavorare in [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
- Per altre informazioni sul debug dell'app, vedere [eseguire il debug di app di Windows Store in Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
+ Per altre informazioni sul debug dell'app, vedere [eseguire il debug di app di Windows Store in Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx).  
   
 ## <a name="getting-help"></a>Per ulteriori informazioni  
- Per ulteriori informazioni sul debug dell'app [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], è possibile cercare nei [Forum della community di app di Windows Store](https://go.microsoft.com/fwlink/?LinkId=280308) i post correlati al problema o pubblicare una domanda.
+ Per ulteriori informazioni sul debug dell'app [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], è possibile cercare nei [Forum della community di app di Windows Store](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) i post correlati al problema o pubblicare una domanda.

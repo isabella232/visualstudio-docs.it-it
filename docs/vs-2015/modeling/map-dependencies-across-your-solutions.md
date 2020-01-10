@@ -29,14 +29,14 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4395dbc212514a71f8c4119d8f0778280dee81aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296336"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847636"
 ---
-# <a name="map-dependencies-across-your-solutions"></a>Mappare le dipendenze delle soluzioni
+# <a name="map-dependencies-across-your-solutions"></a>Eseguire il mapping delle dipendenze nelle soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe codice. In questo modo è possibile vedere il funzionamento complessivo del codice senza leggere file e righe di codice.
@@ -45,11 +45,11 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
  **Ecco alcuni video**:
 
-- [Comprensione delle dipendenze del codice tramite la visualizzazione](https://go.microsoft.com/fwlink/?LinkID=252065)
+- [Comprensione delle dipendenze del codice tramite la visualizzazione](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
 
-- [Visualizza l'impatto di una modifica](https://go.microsoft.com/fwlink/?LinkID=252068)
+- [Visualizza l'impatto di una modifica](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
 
-- [Informazioni sul codice complesso con mappe codice](https://go.microsoft.com/fwlink/?LinkID=259869)
+- [Informazioni sul codice complesso con mappe codice](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
 ## <a name="GetStarted"></a> Introduzione all'uso delle mappe codice
  **Per usare le mappe codice saranno necessari**:
@@ -185,7 +185,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
 - [Cercare e ridisporre le mappe del codice](../modeling/browse-and-rearrange-code-maps.md)
 
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 
 - Trovare potenziali problemi nel codice [eseguendo un analizzatore](../modeling/find-potential-problems-using-code-map-analyzers.md).
 
@@ -344,9 +344,9 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Condividere la mappa con altri utenti di Visual Studio
  Usare il menu **File** per salvare la mappa.
 
- -oppure-
+ oppure
 
- Per salvare la mappa come parte del progetto specifico, nella barra degli strumenti della mappa scegliere **Condividi**, **Sposta** \<*Nome mappa codice*> **.dgml in**, quindi scegliere il progetto in cui si vuole salvare la mappa.
+ Per salvare la mappa come parte di un progetto specifico, sulla barra degli strumenti della mappa scegliere **Condividi**, **sposta** \<*nome mappa codice*> **. dgml in**, quindi scegliere il progetto in cui si desidera salvare la mappa.
 
  ![Spostare una mappa in un altro progetto](../modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")
 
@@ -385,4 +385,4 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
 - [Cercare e ridisporre le mappe del codice](../modeling/browse-and-rearrange-code-maps.md)
 
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

@@ -18,28 +18,28 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b4bcd1f1f023c9e439fb870c9e31f07aa5be215d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299550"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850693"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.
 
- Se non si ha familiarità con DSLs, è consigliabile usare il **Lab strumenti DSL**, che è possibile trovare in questo sito: [VISUALIZATON e l'SDK di modellazione](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Se non si ha familiarità con DSLs, è consigliabile usare il **Lab strumenti DSL**, che è possibile trovare in questo sito: [VISUALIZATON e l'SDK di modellazione](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="templates"></a>Selezione di una soluzione modello
  Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK di visualizzazione e modellazione di Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|SDK di visualizzazione e modellazione di Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
  Per creare un nuovo linguaggio specifico di dominio, si crea una nuova soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con il modello di progetto Linguaggio specifico di dominio.
 
@@ -68,7 +68,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
        > [!NOTE]
        > Per creare un diagramma classi o un diagramma componenti, prendere in considerazione l'uso dei modelli UML. Gli strumenti di modellazione UML forniscono un set di diagrammi integrati attorno a un solo modello. Sono estensibili e possono essere integrati con il linguaggio DSL con ModelBus. Per altre informazioni, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md).
 
-   - Selezionare **minimal WinForm designer** o la **finestra di progettazione WPF minima** per creare un linguaggio DSL che viene visualizzato in una Windows Forms o in una superficie WPF. Sarà necessario scrivere il codice per definire l'editor. Per altre informazioni, vedere gli argomenti seguenti:
+   - Selezionare **minimal WinForm designer** o la **finestra di progettazione WPF minima** per creare un linguaggio DSL che viene visualizzato in una Windows Forms o in una superficie WPF. Sarà necessario scrivere il codice per definire l'editor. Per altre informazioni, vedere i seguenti argomenti:
 
         [Creazione di un linguaggio specifico di dominio basato su Windows Form](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
@@ -82,7 +82,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 
 4. È possibile modificare le impostazioni nelle altre pagine o lasciare i valori predefiniti.
 
-5. Fare clic su **Fine**.
+5. Scegliere **Fine**.
 
     La procedura guidata crea una soluzione contenente due o tre progetti e genera il codice dalla definizione DSL.
 
@@ -192,7 +192,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 
  Fare clic su **Proprietà dominio** nella classe, premere il tasto invio e quindi digitare il nome di una proprietà. Il tipo predefinito di una proprietà di dominio è String. Se si desidera modificare il tipo, selezionare la proprietà del dominio e impostare il **tipo** nella finestra **Proprietà** . Se il tipo desiderato non è presente nell'elenco a discesa, vedere [aggiunta di tipi di proprietà](#addTypes).
 
- **Impostare una proprietà nome elemento.** Selezionare una proprietà di dominio che può essere utilizzata per identificare gli elementi in Esplora linguaggio. Ad esempio, nella classe di dominio Brano è possibile selezionare la proprietà di dominio Titolo. Nella finestra **Proprietà** impostare il **nome dell'elemento** su `true`.
+ **Impostare una proprietà nome elemento.** Selezionare una proprietà di dominio che possa essere usata per identificare gli elementi nella finestra di esplorazione linguaggio. Ad esempio, nella classe di dominio Brano è possibile selezionare la proprietà di dominio Titolo. Nella finestra **Proprietà** impostare il **nome dell'elemento** su `true`.
 
 ### <a name="create-derived-domain-classes"></a>Creare classi di dominio derivate
  Per fare in modo che una classe di dominio abbia varianti che ne ereditano le proprietà e le relazioni, creare classi derivanti da essa. Ad esempio, Album potrebbe avere le classi derivate WMA e MP3.
@@ -346,7 +346,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 
  **Modificare il molteplicità di ogni ruolo**, se necessario. Se si vuole che ogni persona abbia almeno un manager, impostare la molteplicità visualizzata sotto l'etichetta Manager nel diagramma su 0..1.
 
- **Aggiungere le proprietà del dominio alla relazione.** Nella figura la relazione Artist-album ha una proprietà di Role.
+ **Aggiungere le proprietà del dominio alla relazione.** Nella figura, la relazione artista-album ha una proprietà di ruolo.
 
  **Impostare la proprietà consente i duplicati della relazione,** se tra la stessa coppia di elementi del modello può esistere più di un collegamento della stessa classe. Ad esempio, è possibile consentire a un insegnante di insegnare più di una materia allo stesso studente.
 
@@ -398,7 +398,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 
 5. **Creare connessioni** tra le forme. Fare clic sullo strumento connettore, quindi su una forma e infine su un'altra forma.
 
-6. **Verificare che non sia possibile creare connessioni tra le classi non appropriate.** Se ad esempio la relazione è tra gli album e gli artisti, verificare che non sia possibile collegare gli artisti agli artisti.
+6. **Verificare che non sia possibile creare connessioni tra le classi non appropriate.** Se, ad esempio, la relazione è tra gli album e gli artisti, verificare che non sia possibile collegare gli artisti tra loro.
 
 7. **Verificare che molteplicità siano corretti. Ad esempio, verificare che non sia possibile connettere una persona a più di un responsabile.**
 
@@ -417,7 +417,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 
  Il metodo più semplice per ottenere questo effetto in una definizione DSL è definire una classe di dominio per il contenitore e una classe di dominio per ogni elenco. La classe contenitore è mappata alla forma raggruppamento.
 
- ![Mappa forme](../modeling/media/music-mapcomp.png "Music_MapComp")
+ ![Forme mappa](../modeling/media/music-mapcomp.png "Music_MapComp")
 
  Per altre informazioni, vedere [proprietà delle forme di raggruppamento](../modeling/properties-of-compartment-shapes.md).
 
@@ -608,8 +608,8 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 
  Vedere anche [procedura: modificare lo spazio dei nomi di un Domain-Specific Language](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Risoluzione dei problemi
- La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altre informazioni sono disponibili nel [Forum sugli strumenti di visualizzazione degli](https://go.microsoft.com/fwlink/?LinkId=186074).
+## <a name="trouble"></a> Risoluzione dei problemi
+ La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altre informazioni sono disponibili nel [Forum sugli strumenti di visualizzazione degli](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 |Problema|Suggerimento|
 |-------------|----------------|
@@ -618,7 +618,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 |In Esplora DSL, non è possibile aggiungere un elemento a una raccolta. Ad esempio, quando si fa clic con il pulsante destro del mouse su Strumenti, nel menu manca un comando "Aggiungi strumento".<br /><br /> Nella finestra di esplorazione del linguaggio DSL, non è possibile aggiungere un elemento a un elenco.|Fare clic con il pulsante destro del mouse sull'elemento sopra il nodo con cui si sta provando. Quando si vuole aggiungere un elemento a un elenco, il comando Aggiungi non è nel nodo dell'elenco, ma nel proprietario.|
 |È stata creata una classe di dominio, ma non è possibile creare le istanze nella finestra di esplorazione linguaggio.|Ogni classe di dominio, tranne quella radice, deve essere la destinazione di una relazione di incorporamento.|
 |Nella finestra di esplorazione del linguaggio DSL, gli elementi vengono mostrati solo con i nomi di tipo.|Nella definizione DSL selezionare una proprietà di dominio della classe e nella Finestra Proprietà impostare è il nome dell' **elemento** su true.|
-|Il linguaggio DSL si apre sempre nell'editor XML.|Ciò può verificarsi a causa di un errore durante la lettura del file. Tuttavia, anche dopo aver corretto l'errore, è necessario reimpostare in modo esplicito l'editor come finestra di progettazione DSL.<br /><br /> Fare clic con il pulsante destro del mouse sull'elemento del progetto, scegliere **Apri con** e selezionare _Linguaggioutente_**Designer (impostazione predefinita)** .|
+|Il linguaggio DSL si apre sempre nell'editor XML.|Ciò può verificarsi a causa di un errore durante la lettura del file. Tuttavia, anche dopo aver corretto l'errore, è necessario reimpostare in modo esplicito l'editor come finestra di progettazione DSL.<br /><br /> Fare clic sull'elemento del progetto, fare clic su **Apri con** e selezionare _Linguaggioutente_ **progettazione (impostazione predefinita)** .|
 |La casella degli strumenti del linguaggio DSL non viene visualizzata dopo aver cambiato i nomi degli assembly.|Esaminare e aggiornare **DslPackage\GeneratedCode\Package.TT** per altre informazioni, vedere [procedura: modificare lo spazio dei nomi di un Domain-Specific Language](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|
 |La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione.|Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1. dal menu Start di Windows, in **tutti i programmi**espandere [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)], quindi **strumenti**, quindi fare clic su **Reimposta l'istanza sperimentale di Microsoft Visual Studio**.<br />2. dal menu **compilazione** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]fare clic su **Ricompila soluzione**.|
 

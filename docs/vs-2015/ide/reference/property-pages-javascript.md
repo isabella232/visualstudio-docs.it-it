@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ffb1298981481bde063de898dc81c02dad548888
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e9fa22a4ed52c3e0a1afdda0105716c0de9b3316
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297835"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851817"
 ---
 # <a name="property-pages-javascript"></a>Pagine proprietà, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ L'opzione **Pagine delle proprietà** consente di accedere alle impostazioni del
 
  **Debugger da avviare** Specifica l'host predefinito per il debugger.
 
-- Selezionare **Computer locale** per avviare l'applicazione nel computer host di Visual Studio. Per altre informazioni, vedere [Esecuzione di app nel computer locale](https://go.microsoft.com/fwlink/?LinkId=234912).
+- Selezionare **Computer locale** per avviare l'applicazione nel computer host di Visual Studio. Per altre informazioni, vedere [Esecuzione di app nel computer locale](https://msdn.microsoft.com/library/windows/apps/hh441483(v=VS.85).aspx).
 
-- Selezionare **Simulatore** per avviare l'applicazione nel simulatore. Per altre informazioni, vedere [Esecuzione di app nel simulatore](https://go.microsoft.com/fwlink/?LinkId=234913).
+- Selezionare **Simulatore** per avviare l'applicazione nel simulatore. Per altre informazioni, vedere [Esecuzione di app nel simulatore](https://msdn.microsoft.com/library/windows/apps/hh441475(v=VS.85).aspx).
 
-- Selezionare **Computer remoto** per avviare l'applicazione in un computer remoto. Per altre informazioni sul debug remoto, vedere [Esecuzione di app in un computer remoto](https://go.microsoft.com/fwlink/?LinkId=234914).
+- Selezionare **Computer remoto** per avviare l'applicazione in un computer remoto. Per altre informazioni sul debug remoto, vedere [Esecuzione di app in un computer remoto](https://msdn.microsoft.com/library/windows/apps/hh441469(v=VS.85).aspx).
 
   **Avvia applicazione** Specifica se avviare l'applicazione quando si preme F5 o si fa clic su **debug**, **Avvia debug**. Selezionare **Sì** per avviare l'applicazione, altrimenti selezionare **No**. Se si seleziona **No**, è comunque possibile eseguire il debug dell'applicazione usando un metodo diverso per avviarla.
 

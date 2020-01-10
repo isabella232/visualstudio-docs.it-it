@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 128be69d356b371cc34f5e089df25546428bc83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606080"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591788"
 ---
 # <a name="text-template-control-blocks"></a>Blocchi di controllo del modello di testo
 I blocchi di controllo consentono di scrivere codice nel modello di testo per variare l'output. Esistono tre tipi di blocchi di controllo, distinguibili dalla parentesi di apertura:
@@ -117,7 +117,7 @@ Some text.
 > [!NOTE]
 > Un blocco di controllo della funzionalità di classe non deve essere seguito da blocchi di controllo standard nello stesso file modello. Questa restrizione, tuttavia, non si applica al risultato dell'uso di direttive `<#@include#>`. Ogni file incluso può contenere blocchi standard seguiti da blocchi della funzionalità di classe.
 
- È possibile creare una funzione che genera output incorporando testo e blocchi espressione all'interno di un blocco di controllo delle funzionalità di classe. Esempio:
+ È possibile creare una funzione che genera output incorporando testo e blocchi espressione all'interno di un blocco di controllo delle funzionalità di classe. Ad esempio:
 
 ```
 <#+

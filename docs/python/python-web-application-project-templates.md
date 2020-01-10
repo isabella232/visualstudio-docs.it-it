@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b8c70b3c1b8282f87c8eb5aff5d8dde769c613d4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954819"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848560"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -39,17 +39,17 @@ Tutti gli altri modelli sono basati su framework Web Bottle, Flask o Django e ri
 
 Tutti i modelli **Progetto Web \<framework> vuoto** creano un progetto con una quantità minima più o meno grande di codice boilerplate e le dipendenze necessarie dichiarate in un file *requirements.txt*.
 
-| Modello | Description |
+| Modello | Descrizione |
 | --- | --- |
 | **Progetto Web Bottle vuoto** | Genera un'app minima in *app.py* con una home page per `/` e una pagina `/hello/<name>` che restituisce `<name>` usando un modello di pagina inline molto breve. |
 | **Progetto Web Django vuoto** | Genera un progetto Django con la struttura fondamentale del sito Django ma nessuna app Django. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 1 dell'esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Progetto Web Flask vuoto** | Genera un'app minima con un'unica pagina "Hello World!" per `/`. Questa app è simile al risultato dei passaggi dettagliati in [Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Vedere anche [Informazioni su Flask, passaggio 1](learn-flask-visual-studio-step-01-project-solution.md).
+| **Progetto Web Flask vuoto** | Genera un'app minima con un'unica pagina "Hello World!" per `/`. Questa app è simile al risultato che si ottiene seguendo i passaggi dettagliati nella [Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Vedere anche [Informazioni su Flask, passaggio 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Gruppo Web
 
 Tutti i modelli **Progetto Web \<framework>** creano un'app Web di base con una struttura identica indipendentemente dal framework scelto. L'app prevede le pagine Home, Informazioni e Contatti, una barra di navigazione e una struttura reattiva basata su bootstrap. Ogni app è configurata in modo appropriato per i file statici (CSS, JavaScript e i tipi di carattere) e usa un meccanismo per il modello di pagina appropriato per il framework.
 
-| Modello | Description |
+| Modello | Descrizione |
 | --- | --- |
 | **Progetto Web Bottle** | Genera un'app i cui file statici sono contenuti nella cartella *static* e gestiti tramite codice in *app.py*. Il routing per le singole pagine è specificato in *routes.py* e la cartella *views* contiene i modelli di pagina.|
 | **Progetto Web Django** | Genera un progetto Django e un'app Django con tre pagine, il supporto dell'autenticazione e un database SQLite (ma nessun modello dati). Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 4 dell'esercitazione su Django](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
@@ -60,7 +60,7 @@ Tutti i modelli **Progetto Web \<framework>** creano un'app Web di base con una 
 
 I modelli **Progetto Web \<framework> di sondaggi** creano un'app Web di base attraverso la quale gli utenti possono votare domande di sondaggi diversi. Ogni app si basa sulla struttura dei modelli progetto **Web** per usare un database per gestire i sondaggi e le risposte dell'utente. Le app includono modelli di dati appropriati e una speciale pagina dell'app (/seed) che carica i sondaggi da un file *samples.json*.
 
-| Modello | Description |
+| Modello | Descrizione |
 | --- | --- |
 | **Progetto Web Bottle di sondaggi** | Genera un'app che può essere eseguita su un database in memoria, MongoDB o un archivio tabelle di Azure, che viene configurato tramite la variabile di ambiente `REPOSITORY_NAME`. I modelli di dati e il codice dell'archivio dati sono contenuti nella cartella *models* e il file *settings.py* contiene codice per determinare l'archivio dati usato. |
 | **Progetto Web Django di sondaggi** | Genera un progetto Django e un'app Django con tre pagine e un database SQLite. Include le personalizzazioni per l'interfaccia amministrativa Django che consentono a un amministratore autenticato di creare e gestire i sondaggi. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 6 dell'esercitazione su Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
@@ -75,7 +75,7 @@ Quando si crea un progetto da un modello specifico del framework, viene visualiz
 
 Se si usa il controllo del codice sorgente, è pratica comune omettere la cartella dell'ambiente virtuale poiché l'ambiente può essere ricreato usando solo *requirements.txt*. Il modo migliore per escludere la cartella consiste innanzitutto nel selezionare **Installazione manuale** nel messaggio visualizzato sopra, quindi disabilitare il commit automatico prima di creare l'ambiente virtuale. Per informazioni dettagliate, vedere [Esercitazione su Django, passaggi 1-2 e 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) e [Esercitazione su Flask, passaggi 1-2 e 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
-Durante la distribuzione nel servizio app di Microsoft Azure, selezionare una versione di Python come [estensione sito](https://aka.ms/PythonOnAppService) e installare manualmente i pacchetti. Inoltre, poiché il servizio app di Azure **non** installa automaticamente i pacchetti da un file *requirements.txt* quando viene distribuito da Visual Studio, attenersi ai dettagli di configurazione indicati in [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
+Durante la distribuzione nel servizio app di Microsoft Azure, selezionare una versione di Python come [estensione sito](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019) e installare manualmente i pacchetti. Inoltre, poiché il servizio app di Azure **non** installa automaticamente i pacchetti da un file *requirements.txt* quando viene distribuito da Visual Studio, attenersi ai dettagli di configurazione indicati in [aka.ms/PythonOnAppService](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019).
 
 I servizi cloud di Microsoft Azure invece *supportano* il file *requirements.txt*. Vedere [Progetti servizio cloud di Azure per Python](python-azure-cloud-service-project-template.md) per informazioni più dettagliate.
 
@@ -113,7 +113,7 @@ Il modello **Progetto Web Bottle** include codice boilerplate che esegue la conf
 
 - Gruppo **Comando debug server**:
   - **Comando**: `bottle` (modulo)
-  - **Argomenti**: `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Argomenti** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 L'opzione `--reload` è sconsigliata quando si usa Visual Studio per il debug.
 
@@ -122,7 +122,7 @@ L'opzione `--reload` è sconsigliata quando si usa Visual Studio per il debug.
 Per la creazione di app Pyramid è attualmente preferibile usare lo strumento da riga di comando `pcreate`. L'app creata può quindi essere importata usando il modello [**Da codice Python esistente**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files). Successivamente, selezionare la personalizzazione **Progetto Web generico** per configurare le opzioni. In queste impostazioni si presuppone che Pyramid sia installato in un ambiente virtuale nel percorso `..\env`.
 
 - Gruppo **Debug**:
-  - **Porta server**: 6543 (o qualunque altra porta configurata nei file con estensione *ini*)
+  - **Porta server**: 6543 (o qualunque altra sia configurata nei file con estensione *ini*)
 
 - Gruppo **Comando esegui server**:
   - Comando: `..\env\scripts\pserve-script.py` (script)

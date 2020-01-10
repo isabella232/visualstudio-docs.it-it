@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2be61a066157b203e4d09ff5f5dff5340dc0ec67
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d2916bd43571ddade68e3e642b5d006c26269670
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298338"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850500"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Eseguire il debug di app dello Store in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ Il debugger di Visual Studio consente di controllare l'esecuzione di un programm
 |[Attivare eventi di sospensione, di ripresa e in background per Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|Il debugger disabilita gli eventi di gestione del ciclo di vita dei processi Windows che sospendono, riprendono e terminano le app. Puoi attivare questi eventi dalla barra degli strumenti del debugger.<br /><br /> Le attività in background ti permettono di eseguire operazioni importanti anche quando l'app è stata sospesa. Il debugger consente di avviare queste attività in background ed eseguirne il debug.|
 
 ## <a name="see-also"></a>Vedere anche
- [Debug in Visual Studio (in MSDN Library)](https://go.microsoft.com/fwlink/?LinkID=226896)
+ [Debug in Visual Studio (in MSDN Library)](https://msdn.microsoft.com/library/sc65sadd(VS.110).aspx)

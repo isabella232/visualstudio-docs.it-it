@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4fec3595ba7886f5ba979c35e9441ab108174726
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3de5cb1cc62d159567eee804c1aadef865e500a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301345"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845391"
 ---
 # <a name="validate-your-system-during-development"></a>Convalidare il sistema durante lo sviluppo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ Visual Studio consente di mantenere la coerenza del software con i requisiti deg
 
 |**Categoria**|**Links**|
 |------------------|---------------|
-|**Video**|![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug Seven: comprensione del codice e progettazione del sistema con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: progettazione di un'applicazione tramite un diagramma livello](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") sulle serie di informazioni su [MSDN: come convalidare il codice con diagrammi livello](https://go.microsoft.com/fwlink/?LinkID=214405)|
-|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blog**|-   [Blog di Visual Studi ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Video**|![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug Seven: comprensione del codice e progettazione del sistema con Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: progettazione di un'applicazione tramite un diagramma livello](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-5-Architecting-an-Application)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") sulle serie di informazioni su [MSDN: come convalidare il codice con diagrammi livello](https://msdn.microsoft.com/vstudio/gg501755)|
+|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blog**|-   [Blog di Visual Studi ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>Vedere anche
  [Test dell'applicazione](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [modellare i requisiti degli utenti](../modeling/model-user-requirements.md) [analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md)

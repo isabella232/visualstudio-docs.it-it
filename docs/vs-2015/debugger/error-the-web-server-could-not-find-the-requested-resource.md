@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 904d628b09c7add48460273ecaff7d8ac288cbc3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 555bb56ee84b7bc48f6b6453c11daef366f97e49
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297420"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845127"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Errore: il server Web non è in grado di trovare la risorsa richiesta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Ai fini della sicurezza, IIS ha restituito un errore generico.
   
  Questo errore può essere avere numerose cause. Alcune delle cause più comuni includono un problema di installazione o configurazione di IIS, di configurazione del sito Web o di autorizzazioni nel file system. È possibile provare ad accedere alla risorsa con un browser. A seconda della configurazione di IIS, potrebbe essere necessario utilizzare un browser locale nel server o analizzare il log degli errori di IIS per ottenere un messaggio di errore dettagliato.  
   
- Per altre informazioni sulla risoluzione dei problemi di IIS, vedere [Gestione e amministrazione di IIS](https://go.microsoft.com/fwlink/?LinkId=255872).  
+ Per altre informazioni sulla risoluzione dei problemi di IIS, vedere [Gestione e amministrazione di IIS](https://www.iis.net/learn/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumento di sicurezza UrlScan](/iis/extensions/working-with-urlscan/urlscan-3-reference)   

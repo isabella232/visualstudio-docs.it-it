@@ -10,19 +10,19 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3aec055c0fb0253f0b233f51e50485ccb4ee3382
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1db35e1eb98ad23a4414a48389092a3b05485527
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302597"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851859"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Creazione di un test codificati dell'interfaccia utente basato sui dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per testare condizioni diverse, è possibile eseguire il test più volte con valori di parametro diversi. I test codificati dell'interfaccia utente basati sui dati offrono un modo conveniente per effettuare questa operazione. È possibile definire i valori dei parametri in un'origine dati e ogni riga nell'origine dati è un'iterazione del test codificato dell'interfaccia utente. Il risultato complessivo del test si baserà sul risultato di tutte le iterazioni. Se, ad esempio, un'iterazione test non riesce, il risultato complessivo del test sarà errato.
 
- **Requisiti**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -104,7 +104,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
     |Num1|Num2|Sum|
     |----------|----------|---------|
-    |3|4|7|
+    |3\.|4|7|
     |5|6|11|
     |6|8|14|
 
@@ -205,7 +205,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
    **Linee guida**
 
-   Per altre informazioni, vedere [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](https://go.microsoft.com/fwlink/?LinkID=255188) (Test per la distribuzione continua con Visual Studio 2012 - Capitolo 2: Unit test: test interni) e [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196) (Test per la distribuzione continua con Visual Studio 2012 - Capitolo 5: Automazione dei test di sistema)
+   Per altre informazioni, vedere [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](https://msdn.microsoft.com/library/jj159340.aspx) (Test per la distribuzione continua con Visual Studio 2012 - Capitolo 2: Unit test: test interni) e [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://msdn.microsoft.com/library/jj159335.aspx) (Test per la distribuzione continua con Visual Studio 2012 - Capitolo 5: Automazione dei test di sistema)
 
 ## <a name="q--a"></a>Domande e risposte
 

@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db7430d03bbce065b75e890736253c6ba05752d0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7bc1e36f6d5dea12a8c46e88a3e1f450cc30caa6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298922"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847214"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +136,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
 - **Eventi delle applicazioni SharePoint 2010 e SharePoint 2013**  
   
-   È possibile registrare eventi di profili utente e un subset di eventi del sistema di registrazione unificato per le applicazioni SharePoint 2010 e 2013 in esecuzione all'esterno di Visual Studio. È possibile salvare questi eventi in un file .iTrace. Richiede Visual Studio Enterprise 2015, una versione precedente di Visual Studio Ultimate o [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384) in esecuzione in modalità **Trace** .  
+   È possibile registrare eventi di profili utente e un subset di eventi del sistema di registrazione unificato per le applicazioni SharePoint 2010 e 2013 in esecuzione all'esterno di Visual Studio. È possibile salvare questi eventi in un file .iTrace. Richiede Visual Studio Enterprise 2015, una versione precedente di Visual Studio Ultimate o [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkID=309771) in esecuzione in modalità **Trace** .  
   
    Quando si apre il file .iTrace, immettere un ID di correlazione SharePoint per trovare la richiesta Web corrispondente, visualizzare gli eventi registrati e avviare il debug da un evento specifico. Se il file contiene eccezioni non gestite, è possibile scegliere un ID di correlazione per avviare il debug di un'eccezione.  
   
@@ -186,7 +186,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
  [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Blog  
- [Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)  
   
 ### <a name="forums"></a>Forums  
- [Diagnostica di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Diagnostica di Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)

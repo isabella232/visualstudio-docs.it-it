@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 54c2ec423653d1649e7bac9dd302c5f272731477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594058"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845816"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni
 
@@ -54,7 +54,7 @@ La tabella seguente riporta le configurazioni e le piattaforme supportate per i 
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | Non supportato. |
 | Chrome<br /><br /> Firefox | La registrazione dei passaggi delle azioni non è supportata. I test codificati dell'interfaccia utente possono essere riprodotti nei browser Chrome e Firefox con Visual Studio 2012 Update 4 o versioni successive. Per altre informazioni, fare clic [qui](using-different-web-browsers-with-coded-ui-tests.md) . |
 | Opera<br /><br /> Safari | Non supportato. |
-| Silverlight | Non supportato.<br /><br /> Per Visual Studo 2013 è tuttavia possibile scaricare il [plug-in del test codificato dell'interfaccia utente Microsoft Visual Studio 2013 per Silverlight](https://go.microsoft.com/fwlink/?LinkId=691026) da Visual Studio Gallery. |
+| Silverlight | Non supportato.<br /><br /> Per Visual Studo 2013 è tuttavia possibile scaricare il [plug-in del test codificato dell'interfaccia utente Microsoft Visual Studio 2013 per Silverlight](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve) da Visual Studio Gallery. |
 | Flash/Java | Non supportato. |
 | Windows Form 2.0 e versioni successive | Completamente supportato. **Nota:** i controlli NetFx sono completamente supportati, ma non tutti i controlli di terze parti sono supportati. |
 | WPF 3.5 e versioni successive | Completamente supportato.<br /><br /> **Nota** I controlli NetFx sono completamente supportati, ma non tutti i controlli di terze parti sono supportati. |

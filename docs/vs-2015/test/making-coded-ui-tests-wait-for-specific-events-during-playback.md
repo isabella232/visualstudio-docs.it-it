@@ -8,19 +8,19 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 266c4fd418b71c61391ac3b9b20ac93e5c77428c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbc83731cfc1c04f33fc4de05f28ffd1a54f3e4d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302545"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851777"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata finestra, venga nascosto l'indicatore di stato e così via. A tale scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato, come descritto nella tabella seguente. Per un esempio di test codificato dell'interfaccia utente in cui si attende che un controllo venga abilitato usando il metodo <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, vedere [Procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Requisiti**
+ **Requirements**
 
  Visual Studio Enterprise
 
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  **Linee guida**
 
- Per altre informazioni, vedere [Test per la distribuzione continua con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema](https://go.microsoft.com/fwlink/?LinkID=255196).
+ Per altre informazioni, vedere [Test per la distribuzione continua con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema](https://msdn.microsoft.com/library/jj159335.aspx).
 
 ## <a name="see-also"></a>Vedere anche
  [Usare automazione interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) [creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [procedura dettagliata: creazione, modifica e gestione di un'anatomia del test codificato](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) [dell'interfaccia utente di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md) [configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [procedura: inserire un ritardo prima di un'azione dell'interfaccia utente con l'editor di test codifica](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

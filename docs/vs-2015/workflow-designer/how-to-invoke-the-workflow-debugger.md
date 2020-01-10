@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 13fd54eeebf0323fcb9b8cad6a8cd8b75ae11fb3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292891"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849275"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Procedura: richiamare il debugger del flusso di lavoro.
 Generalmente si esegue il debug dei flussi di lavoro nello stesso modo in cui si esegue il debug di programmi scritti negli altri linguaggi di programmazione di Visual Studio. È possibile avviare il debugger del flusso di lavoro nei modi seguenti:
@@ -23,7 +23,7 @@ Generalmente si esegue il debug dei flussi di lavoro nello stesso modo in cui si
 
 - Premere **F5** per avviare l'esecuzione di un'istanza del flusso di lavoro o per continuare l'esecuzione dopo che è stato raggiunto un punto di interruzione.
 
-- Usare debug remoto. Per informazioni sull'uso del debug remoto, vedere [procedura: abilitare il debug remoto](https://go.microsoft.com/fwlink/?LinkId=196257).
+- Usare debug remoto. Per informazioni sull'uso del debug remoto, vedere [procedura: abilitare il debug remoto](https://msdn.microsoft.com/library/febz73k0.aspx).
 
     > [!NOTE]
     > Se l'applicazione del flusso di lavoro è destinata all'architettura x86 ed è ospitata in un computer che esegue un sistema operativo a 64 bit, il debug remoto non funzionerà a meno che [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] non sia installato nel computer remoto o la destinazione dell'applicazione del flusso di lavoro venga modificata in **qualsiasi CPU**.

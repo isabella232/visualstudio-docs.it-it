@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 75ebee68bf76a4dd5419942f79a3207c29673134
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645372"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565240"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Sviluppare con F# in Visual Studio
 
@@ -72,7 +72,7 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 
 La tabella seguente riepiloga le impostazioni specifiche di F#:
 
-|Pagina Creazione progetti|Impostazioni|Descrizione|
+|Pagina Creazione progetti|Impostazione|Descrizione|
 | - |-------|-----------|
 |Compilazione|Genera chiamate tail|Se selezionata, abilita l'uso delle istruzioni tail MSIL (Microsoft Intermediate Language). In questo modo lo stack frame viene riutilizzato per le funzioni tail ricorsive. Equivalente all'opzione del compilatore `--tailcalls`.|
 |Compilazione|Altri flag|Consente di specificare opzioni da riga di comando del compilatore aggiuntive.|

@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ae28c59f9c5f19e87b833c90e7dbc6bf3b7497ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297936"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850706"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generazione di codice in un processo di compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -284,5 +284,5 @@ Se si aggiorna un file incluso oppure un altro file letto dal modello, Visual St
 Esiste materiale sussidiario nel modello MSbuild di T4, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)
-- [SDK di visualizzazione e modellazione di Visual Studio](https://go.microsoft.com/fwlink/?LinkID=185579)
+- [SDK di visualizzazione e modellazione di Visual Studio](https://www.visualstudio.com/)
 - [Oleg Sych: informazioni su T4: integrazione di MSBuild](https://github.com/olegsych/T4Toolbox)

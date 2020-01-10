@@ -5,16 +5,16 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: bce4fa8c824b6a4f1332145c1383131eb6488b6c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406098"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847389"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 
-Lo strumento "[segnala un problema](https://aka.ms/vs-rap)" è ampiamente usato dagli utenti di Visual Studio per segnalare una serie di problemi. Il team di Visual Studio individua tendenze di arresto anomalo e lentezza nei commenti degli utenti e risolve problemi che influiscano su una vasta gamma di utenti. Il ticket di feedback specifico è più praticabile, più probabilmente verrà diagnosticato e risolto rapidamente dal team del prodotto. Questo documento descrive le procedure consigliate durante la segnalazione di problemi di arresto anomalo o lentezza per renderli più interoperabili.
+Lo strumento "[segnala un problema](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)" è ampiamente usato dagli utenti di Visual Studio per segnalare una serie di problemi. Il team di Visual Studio individua tendenze di arresto anomalo e lentezza nei commenti degli utenti e risolve problemi che influiscano su una vasta gamma di utenti. Il ticket di feedback specifico è più praticabile, più probabilmente verrà diagnosticato e risolto rapidamente dal team del prodotto. Questo documento descrive le procedure consigliate durante la segnalazione di problemi di arresto anomalo o lentezza per renderli più interoperabili.
 
 ## <a name="general-best-practices"></a>Procedure consigliate generali
 
@@ -188,7 +188,7 @@ Ciò che rende più praticabile questi tipi di problemi consiste nel fornire log
     -   Imposta la variabile di ambiente globale **ServiceHubTraceLevel** su **All**
     -   Riprodurre il problema.
 
-2.  Scaricare lo strumento di raccolta dei log Microsoft Visual Studio e .NET Framework [qui](https://aka.ms/vscollect).
+2.  Scaricare lo strumento di raccolta dei log Microsoft Visual Studio e .NET Framework [qui](https://www.microsoft.com/download/details.aspx?id=12493).
 3.  Esegui lo strumento. Viene restituito un file zip a **% Temp%/vslogs.zip**. Alleghi il file ai tuoi commenti.
 
 ## <a name="see-also"></a>Vedere anche

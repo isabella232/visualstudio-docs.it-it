@@ -12,19 +12,19 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298720"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850457"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definire e installare un'estensione di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazione. In questo modo, è possibile adattare i modelli e diagrammi alle proprie esigenze. Ad esempio, è possibile definire comandi di menu, profili UML, vincoli di convalida ed elementi della casella degli strumenti. È possibile definire diversi componenti in un'unica estensione. È anche possibile distribuire queste estensioni ad altri utenti di Visual Studio in formato [VSIX (Visual Studio Integration Extension)](https://go.microsoft.com/fwlink/?LinkId=160780). È possibile creare un'estensione VSIX tramite un progetto VSIX in Visual Studio.
+In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazione. In questo modo, è possibile adattare i modelli e diagrammi alle proprie esigenze. Ad esempio, è possibile definire comandi di menu, profili UML, vincoli di convalida ed elementi della casella degli strumenti. È possibile definire diversi componenti in un'unica estensione. È anche possibile distribuire queste estensioni ad altri utenti di Visual Studio in formato [VSIX (Visual Studio Integration Extension)](https://msdn.microsoft.com/library/dd393694(VS.100).aspx). È possibile creare un'estensione VSIX tramite un progetto VSIX in Visual Studio.
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -42,7 +42,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Per creare un progetto di libreria di classi per comandi di menu, gestori di movimento o convalida
 
-1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
+1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
 
 2. In **Modelli installati**selezionare **Visual C#** o **Visual Basic**, quindi scegliere **Libreria di classi**.
 
@@ -74,10 +74,10 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
         |||
         |-|-|
-        |**Digitare** =|**Microsoft. VisualStudio. MefComponent**|
+        |**Tipo** =|**Microsoft.VisualStudio.MefComponent**|
         |**Source** =|**Progetto nella soluzione corrente**|
-        | = di **progetto**|*Progetto di libreria di classi*|
-        |**Incorpora in questa cartella** =|*vuoto*|
+        |**Project** =|*Progetto di libreria di classi*|
+        |**Incorpora in questa cartella** =|*(empty)*|
 
          Per altri tipi di componente, vedere i collegamenti nella sezione successiva.
 
@@ -97,7 +97,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
 #### <a name="to-run-an-extension-during-its-development"></a>Per eseguire un'estensione durante lo sviluppo
 
-1. Nel menu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debug** scegliere **Avvia debug**.
+1. Scegliere **Avvia debug**dal menu **debug** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
      Il progetto viene compilato e viene avviata una nuova istanza di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] in modalità sperimentale.
 

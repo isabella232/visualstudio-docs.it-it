@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 879d8457a0f5fd4bf63a2d69a4f3f026ce4c6fe1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d230d9a4719e1757820de87b60bcc7566a785f99
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294661"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844011"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  **Guide di allineamento** Le guide di allineamento sono *limiti di allineamento*, visualizzati sotto forma di linee tratteggiate rosse, per indicare quando i bordi dei controlli sono allineati o quando le linee di base del testo sono allineate. I limiti di allineamento vengono visualizzati solo quando è abilitato l' **allineamento alle guide di allineamento** .
 
- **Sbarre della griglia** Le sbarre di tipo `Grid` consentono di gestire righe e colonne in un pannello [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). È possibile creare ed eliminare righe e colonne e modificare le rispettive larghezze e altezze. La sbarra verticale della griglia, visualizzata nel lato sinistro della tavola da disegno, viene usata per le righe, mentre la sbarra orizzontale, visualizzata in alto, viene usata per le colonne.
+ **Rails** `Grid` Rails vengono usati per gestire righe e colonne in un pannello [griglia](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) . È possibile creare ed eliminare righe e colonne e modificare le rispettive larghezze e altezze. La sbarra verticale della griglia, visualizzata nel lato sinistro della tavola da disegno, viene usata per le righe, mentre la sbarra orizzontale, visualizzata in alto, viene usata per le colonne.
 
  **Strumenti decorativi griglia** Uno strumento decorativo `Grid` viene visualizzato sotto forma di triangolo a cui è collegata una linea verticale oppure orizzontale sulla sbarra `Grid`. Quando si trascina uno strumento decorativo `Grid` , le larghezze o altezze delle colonne o righe adiacenti vengono aggiornate in base allo spostamento del mouse.
 
@@ -133,7 +133,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  ![Finestra Proprietà](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
- Nella parte superiore della finestra Proprietà sono disponibili varie opzioni. È possibile modificare il nome dell'elemento selezionato usando la casella **Nome** . Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato. Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** . Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi** , al quale è associato il simbolo di un fulmine. Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella **Proprietà di ricerca** . La finestra Proprietà mostra le proprietà corrispondenti alla ricerca durante la digitazione. In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ. Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Guida introduttiva: Aggiunta di controlli e gestione di eventi](https://go.microsoft.com/fwlink/?LinkID=247983).
+ Nella parte superiore della finestra Proprietà sono disponibili varie opzioni. È possibile modificare il nome dell'elemento selezionato usando la casella **Nome** . Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato. Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** . Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi** , al quale è associato il simbolo di un fulmine. Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella **Proprietà di ricerca** . La finestra Proprietà mostra le proprietà corrispondenti alla ricerca durante la digitazione. In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ. Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Guida introduttiva: Aggiunta di controlli e gestione di eventi](https://msdn.microsoft.com/library/windows/apps/xaml/hh465336.aspx).
 
  A destra di ogni valore di proprietà è presente un *marcatore della proprietà* , visualizzato sotto forma di simbolo di casella. L'aspetto del marcatore della proprietà indica se è presente un data binding o una risorsa applicata alla proprietà. Ad esempio, una casella bianca indica un valore predefinito, una casella nera indica che è stata applicata una risorsa locale e una casella arancione indica che è stato applicato un data binding. Quando si fa clic su questo marcatore, è possibile passare alla definizione di uno stile, aprire il generatore di data binding oppure aprire il selettore risorse.
 

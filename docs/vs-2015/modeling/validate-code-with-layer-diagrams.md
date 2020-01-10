@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301360"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845433"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Convalidare il codice con diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 
    Trovare codice o dipendenze che richiedono azioni quando si sposta il codice in un'architettura diversa.
 
-  **Requisiti**
+  **Requirements**
 
 - Visual Studio
 
@@ -53,7 +53,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 
   Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-  È possibile convalidare manualmente il codice da un diagramma livello aperto in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare il codice automaticamente quando sono in esecuzione compilazioni locali o Team Foundation Build. Vedere [video di Channel 9: progettare e convalidare l'architettura usando i diagrammi livello](https://go.microsoft.com/fwlink/?LinkID=252073).
+  È possibile convalidare manualmente il codice da un diagramma livello aperto in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare il codice automaticamente quando sono in esecuzione compilazioni locali o Team Foundation Build. Vedere [video di Channel 9: progettare e convalidare l'architettura usando i diagrammi livello](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 > [!IMPORTANT]
 > Se si desidera eseguire la convalida dei livelli in Team Foundation Build, è inoltre necessario installare la stessa versione di Visual Studio nel server di compilazione.
@@ -227,7 +227,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 
 |**Sintassi**|**Descrizione**|
 |----------------|---------------------|
-|*Artefatto*(*tipoelementon*)|*Artefatto* è un artefatto associato a un livello nel diagramma livello.<br /><br /> *Tipoelementon* è il tipo di *artefatto*, ad esempio una **classe** o un **Metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|
+|*ArtifactN*(*ArtifactTypeN*)|*Artefatto* è un artefatto associato a un livello nel diagramma livello.<br /><br /> *Tipoelementon* è il tipo di *artefatto*, ad esempio una **classe** o un **Metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|
 |*NamespaceNameN*|Nome di uno spazio dei nomi.|
 |*LayerNameN*|Nome di un livello nel diagramma livello.|
 |*DependencyType*|Tipo di relazione di dipendenza tra *elemento1* e *Artifact2*. Ad esempio, *elemento1* ha una relazione **calls** con *Artifact2*.|
@@ -241,7 +241,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 |AV3001: collegamento mancante: il livello '*LayerName*' si collega a'*artefatto*' che non è stato trovato. Probabilmente manca un riferimento a un assembly.|*LayerName* si collega a un elemento che non è stato trovato. Ad esempio, è possibile che manchi un collegamento a una classe perché nel progetto di modellazione manca un riferimento all'assembly che contiene la classe.|
 |AV9001: errori interni durante l'analisi dell'architettura. I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output.|Per altre informazioni, vedere il log degli eventi di compilazione o la finestra di output.|
 
-## <a name="security"></a>Sicurezza
+## <a name="security"></a>Sicurezza -
 
 ## <a name="see-also"></a>Vedere anche
  [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 383331e8fee2b009282aa38a8eb20af8b181f7e5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594539"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845896"
 ---
 # <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 
@@ -30,7 +30,7 @@ Quando si accede si migliorano le proprie esperienze di Visual Studio. Ad esempi
 
 Di seguito è riportato un elenco completo dei vantaggi di cui usufruire e delle operazioni che si possono eseguire dopo aver effettuato l'accesso:
 
-- **Accedere al programma Visual Studio Dev Essentials**: il programma comprende un software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
+- **Accedere al programma Visual Studio Dev Essentials**: il programma comprende un software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
 - **Sincronizzare le impostazioni di Visual Studio**: le impostazioni personalizzate, ad esempio le combinazioni di tasti, il layout della finestra e il tema colori, vengono applicate immediatamente quando si accede a Visual Studio da qualsiasi dispositivo. Vedere [Impostazioni sincronizzate in Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 

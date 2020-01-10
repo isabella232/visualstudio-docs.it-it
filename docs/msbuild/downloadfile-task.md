@@ -17,17 +17,17 @@ helpviewer_keywords:
 - MSBuild, DownloadFile task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
-author: Mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821430"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590475"
 ---
 # <a name="downloadfile-task"></a>Attività DownloadFile
 Consente di scaricare i file specificati usando Hypertext Transfer Protocol (HTTP).
@@ -36,20 +36,20 @@ Consente di scaricare i file specificati usando Hypertext Transfer Protocol (HTT
 >L'attività DownloadFile è disponibile solo in MSBuild 15.8 e versioni successive.
 
 ## <a name="parameters"></a>Parametri
-Nella tabella che segue vengono descritti i parametri dell'attività `DownloadFile` .
+Nella tabella che segue vengono descritti i parametri dell'attività `DownloadFile`.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`DestinationFileName`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Nome da usare per il file scaricato.  Per impostazione predefinita, il nome del file è derivato dall'elemento `SourceUrl` o server remoto.|
 |`DestinationFolder`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica la cartella di destinazione in cui scaricare il file.  Se non esiste, la cartella viene creata.|
 |`DownloadedFile`|Parametro di ouput facoltativo <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Specifica il file scaricato.|
 |`Retries`|Parametro `Int32` facoltativo.<br /><br /> Specifica il numero di tentativi da eseguire per il download, se tutti i tentativi precedenti hanno avuto esito negativo. Il valore predefinito è zero.|
 |`RetryDelayMilliseconds`|Parametro `Int32` facoltativo.<br /><br /> Specifica il ritardo in millisecondi tra eventuali nuovi tentativi necessari. Il valore predefinito è 5000.|
-|`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, ignora il download dei file invariati. Il valore predefinito è `true`. L'attività `DownloadFile` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica secondo il server remoto. <br /><br />**Nota:**  se non tutti i server HTTP indicano la data dell'ultima modifica dei file, il file verrà scaricato nuovamente.|
+|`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, ignora il download dei file invariati. Il valore predefinito è `true`. L'attività `DownloadFile` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica secondo il server remoto. <br /><br />**Nota:** se non tutti i server HTTP indicano la data dell'ultima modifica dei file, il file verrà scaricato nuovamente.|
 |`SourceUrl`|Parametro `String` obbligatorio.<br /><br /> Specifica l'URL da scaricare.|
 
-## <a name="remarks"></a>Osservazioni
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Note
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente viene scaricato un file e incluso negli elementi `Content` prima della compilazione del progetto.
@@ -74,4 +74,4 @@ Nell'esempio seguente viene scaricato un file e incluso negli elementi `Content`
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

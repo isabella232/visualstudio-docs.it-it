@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298165"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850796"
 ---
 # <a name="structure-your-modeling-solution"></a>Strutturare la soluzione di modellazione
 
@@ -34,7 +34,7 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
 #### <a name="to-divide-an-application-into-layers"></a>Per suddividere un'applicazione in livelli
 
-1. Basare la struttura delle soluzioni sulla struttura dell'applicazione, ad esempio applicazione Web, applicazione di servizio o applicazione desktop. Un'ampia gamma di architetture comuni è illustrata in [archetipi delle applicazioni nella Guida all'architettura delle applicazioni Microsoft](https://go.microsoft.com/fwlink/?LinkId=196681).
+1. Basare la struttura delle soluzioni sulla struttura dell'applicazione, ad esempio applicazione Web, applicazione di servizio o applicazione desktop. Un'ampia gamma di architetture comuni è illustrata in [archetipi delle applicazioni nella Guida all'architettura delle applicazioni Microsoft](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN).
 
 2. Creare una soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], che verrà denominata soluzione Architecture. Questa soluzione verrà usata per creare la progettazione complessiva del sistema. Conterrà modelli ma non il codice.
 
@@ -100,7 +100,7 @@ Ad esempio, se si usano spesso soluzioni con livelli presentazione, aziendale e 
 
 #### <a name="to-create-a-solution-template"></a>Per creare un modello di soluzione
 
-1. [Scaricare e installare l'esportazione guidata modelli](https://go.microsoft.com/fwlink/?LinkId=196686), se non è già stato fatto.
+1. [Scaricare e installare l'esportazione guidata modelli](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard), se non è già stato fatto.
 
 2. Creare la struttura della soluzione da usare come punto di partenza per i progetti futuri.
 
@@ -109,7 +109,7 @@ Ad esempio, se si usano spesso soluzioni con livelli presentazione, aziendale e 
 4. Seguendo le istruzioni della procedura guidata, selezionare i progetti da includere nel modello, fornire un nome e una descrizione per il modello e specificare un percorso di output.
 
 > [!NOTE]
-> Il materiale contenuto in questo argomento è tratto e adattato dalla documentazione Visual Studio Architecture Tooling Guidance, redatta dai membri del gruppo Visual Studio ALM Rangers, una collaborazione tra Most Valued Professional (MVP), Microsoft Services e i team e i writer del prodotto Visual Studio. [Fare clic qui per scaricare il pacchetto completo della guida.](https://go.microsoft.com/fwlink/?LinkID=191984)
+> Il materiale contenuto in questo argomento è tratto e adattato dalla documentazione Visual Studio Architecture Tooling Guidance, redatta dai membri del gruppo Visual Studio ALM Rangers, una collaborazione tra Most Valued Professional (MVP), Microsoft Services e i team e i writer del prodotto Visual Studio. [Fare clic qui per scaricare il pacchetto completo della guida.](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>Materiali correlati
 

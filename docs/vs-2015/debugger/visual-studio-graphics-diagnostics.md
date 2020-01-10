@@ -11,12 +11,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ca0a1613f46f8542a3ede4ce2053b3584824590e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296895"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847820"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostica della grafica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Visual Studio*diagnostica della grafica* è un set di strumenti per la registraz
   
  Per ulteriori informazioni sulle funzionalità offerte da Visual Studio Diagnostica della grafica, continuare con la [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md) .  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
  Viene fornita un'introduzione agli strumenti di diagnostica della grafica e al relativo flusso di lavoro.  
   
@@ -84,4 +84,4 @@ Visual Studio*diagnostica della grafica* è un set di strumenti per la registraz
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)|Introduce le funzionalità di debug in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Grafica e giochi DirectX](https://go.microsoft.com/fwlink/?LinkId=256498)|Include articoli che illustrano le tecnologie grafiche DirectX.|
+|[Grafica e giochi DirectX](https://msdn.microsoft.com/library/ee663274(v=vs.85).aspx)|Include articoli che illustrano le tecnologie grafiche DirectX.|

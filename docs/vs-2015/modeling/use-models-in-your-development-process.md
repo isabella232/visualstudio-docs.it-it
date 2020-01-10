@@ -11,17 +11,17 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5d5284bb163f474d67324c395a4342ccef6f8561
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5952a65881a84ab131703db630f5f3b257683e45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298260"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852174"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio è possibile usare un modello che consenta di comprendere e modificare un sistema, un'applicazione o un componente. Un modello consente di visualizzare l'ambiente in cui opera il sistema, chiarire le esigenze degli utenti, definire l'architettura del sistema, analizzare il codice e assicurarsi che soddisfi i requisiti. Vedere [video di Channel 9: migliorare l'architettura tramite la modellazione](https://go.microsoft.com/fwlink/?LinkID=252078).
+In Visual Studio è possibile usare un modello che consenta di comprendere e modificare un sistema, un'applicazione o un componente. Un modello consente di visualizzare l'ambiente in cui opera il sistema, chiarire le esigenze degli utenti, definire l'architettura del sistema, analizzare il codice e assicurarsi che soddisfi i requisiti. Vedere [video di Channel 9: migliorare l'architettura tramite la modellazione](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
  Per vedere quali versioni di Visual Studio supportano ogni tipo di modello, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -132,10 +132,10 @@ In Visual Studio è possibile usare un modello che consenta di comprendere e mod
 
 |**Categoria**|**Links**|
 |------------------|---------------|
-|**Video**|![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") video sulle procedure per I video su [MSDN: come creare e usare I modelli e I diagrammi UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![collegamento a video sulle serie di informazioni su](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: strumenti ed estendibilità UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Documentazione Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Video**|![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") video sulle procedure per I video su [MSDN: come creare e usare I modelli e I diagrammi UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/gg418384)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio 2010](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-1-Brainstorming-a-Project/)<br /><br /> ![collegamento a video sulle serie di informazioni su](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: strumenti ed estendibilità UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/ff859492)|
+|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Documentazione Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Vedere anche
  [Usare i modelli nello sviluppo agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [creare modelli per i](../modeling/create-models-for-your-app.md) [requisiti degli utenti del modello](../modeling/model-user-requirements.md) di app [modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md) [sviluppare test da una](../modeling/develop-tests-from-a-model.md) [struttura di modello la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)
