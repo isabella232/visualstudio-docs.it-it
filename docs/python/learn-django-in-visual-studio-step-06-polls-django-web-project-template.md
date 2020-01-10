@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
+ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254373"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755572"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Passaggio 6: Usare il modello Progetto Web Django di sondaggi
 
@@ -33,7 +33,7 @@ In questo passaggio viene descritto come:
 > - Comprendere le visualizzazioni e i modelli di pagina creati dal modello di progetto (passaggio 6-4)
 > - Creare un'interfaccia di amministrazione personalizzata (passaggio 6-5)
 
-Un progetto creato con questo modello è simile a quelli ottenuti seguendo l'esercitazione [Writing your first Django app](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (Scrittura della prima app Django) nella documentazione di Django. L'app Web è costituita da un sito pubblico che consente di visualizzare i sondaggi e votare, oltre che un'interfaccia di amministrazione personalizzata tramite cui è possibile gestire i sondaggi. Viene usato lo stesso sistema di autenticazione usato per il modello "Progetto Web Django" e viene usato in modo più estensivo il database mediante l'implementazione di modelli Django come illustrato nelle sezioni seguenti.
+Un progetto creato con questo modello è simile a quello ottenuto seguendo l'esercitazione [scrivere la prima app Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) nella documentazione di Django. L'app Web è costituita da un sito pubblico che consente agli utenti di visualizzare i sondaggi e di votarli, insieme a un'interfaccia amministrativa personalizzata tramite la quale è possibile gestire i polling. Viene usato lo stesso sistema di autenticazione usato per il modello "Progetto Web Django" e viene usato in modo più estensivo il database mediante l'implementazione di modelli Django come illustrato nelle sezioni seguenti.
 
 ## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Passaggio 6-1: Creare il progetto e inizializzare il database
 
@@ -61,7 +61,7 @@ Un progetto creato con questo modello è simile a quelli ottenuti seguendo l'ese
 
 1. È possibile lasciare l'app in esecuzione per le sezioni seguenti.
 
-    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (in genere **env**) e scegliere **Ignora questi elementi locali**.
+    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (generalmente **env**) e scegliere **Ignora questi elementi locali**.
 
 ### <a name="examine-the-project-contents"></a>Esaminare i contenuti del progetto
 
@@ -112,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-Come si può notare, un modello Poll include una descrizione nel campo `text` e una data di pubblicazione in `pub_date`. Questi campi sono gli unici esistenti per il polling nel database. il `total_votes` campo viene calcolato in fase di esecuzione.
+Come si può notare, un modello Poll include una descrizione nel campo `text` e una data di pubblicazione in `pub_date`. Questi campi sono gli unici esistenti per il polling nel database. il campo `total_votes` viene calcolato in fase di esecuzione.
 
-Un modello Choice è correlato a un modello Poll tramite il campo `poll`, contiene una descrizione in `text` e conserva un conteggio per l'opzione specifica in `votes`. Il `votes_percentage` campo viene calcolato in fase di esecuzione e non viene trovato nel database.
+Un modello Choice è correlato a un modello Poll tramite il campo `poll`, contiene una descrizione in `text` e conserva un conteggio per l'opzione specifica in `votes`. Il campo `votes_percentage` viene calcolato in fase di esecuzione e non viene trovato nel database.
 
 L'elenco completo di tipi di campo è `CharField` (testo limitato) `TextField` (testo illimitato), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` e `ManyToMany`. Ogni campo accetta alcuni attributi, ad esempio `max_length`. L'attributo `blank=True` indica che il campo è facoltativo. `null=true` indica che un valore è facoltativo. C'è anche un attributo `choices` che limita i valori a quelli inclusi in una matrice di tuple valore dati/valore visualizzato. Vedere [Model field reference](https://docs.djangoproject.com/en/2.0/ref/models/fields/) (Informazioni di riferimento sui campi dei modelli) nella documentazione di Django.
 
@@ -160,7 +160,7 @@ Per vedere l'effetto, eseguire prima di tutto l'app per vedere che non sono anco
 
 ### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Domanda: È possibile inizializzare il database usando l'utilità di amministrazione Django?
 
-Risposta: Sì, è possibile usare il [comando loaddata di django-admin](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) per eseguire la stessa attività della pagina di seeding nell'app. Quando si usa un'app Web completa, è possibile usare una combinazione dei due metodi: inizializzare un database dalla riga di comando, quindi convertire la pagina con i valori di inizializzazione in un'API a cui è possibile inviare qualsiasi altro file JSON arbitrario, invece di ricorrere a un file hardcoded.
+Risposta: Sì, è possibile usare il [comando loaddata di django-admin](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata) per eseguire la stessa attività della pagina di seeding nell'app. Quando si usa un'app Web completa, è possibile usare una combinazione dei due metodi: inizializzare un database dalla riga di comando, quindi convertire la pagina con i valori di inizializzazione in un'API a cui è possibile inviare qualsiasi altro file JSON arbitrario, invece di ricorrere a un file hardcoded.
 
 ## <a name="step-6-3-use-migrations"></a>Passaggio 6-3: Usare le migrazioni
 
@@ -192,13 +192,13 @@ In generale, grazie alla funzionalità di migrazione di Django non è mai necess
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Domanda: Cosa accade se si dimentica di eseguire il comando di migrazione dopo aver apportato modifiche ai modelli?
 
-Risposta: Se i modelli non corrispondono a quelli presenti nel database, Django non riesce in fase di esecuzione con le eccezioni appropriate. Se, ad esempio, si dimentica di eseguire la migrazione della modifica del modello illustrata nella sezione precedente, viene visualizzato l'errore **no such column: app_poll.author** (impossibile trovare la colonna app_poll.author):
+Risposta: se i modelli non corrispondono a quelli presenti nel database, Django non riesce in fase di esecuzione con le eccezioni appropriate. Se, ad esempio, si dimentica di eseguire la migrazione della modifica del modello illustrata nella sezione precedente, viene visualizzato l'errore **no such column: app_poll.author** (impossibile trovare la colonna app_poll.author):
 
 ![Errore visualizzato quando non è stata eseguita la migrazione di una modifica del modello](media/django/step06-exception-when-forgetting-to-migrate.png).
 
-### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Domanda: Perché Esplora soluzioni non visualizza gli script appena generati dopo l'esecuzione del comando Django Make Migrations (Crea migrazioni Django)?
+### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Domanda: Perché Esplora soluzioni non mostra gli script appena generati dopo l'esecuzione del comando Creazione migrazioni Django?
 
-Risposta: Anche se gli script appena generati sono presenti nella cartella *app/migrations* e vengono applicati quando si esegue il comando **Django Migrate** (Migrazione Django), non vengono visualizzati automaticamente in **Esplora soluzioni** perché non sono stati aggiunti al progetto di Visual Studio. Per renderli visibili, selezionare prima il comando di menu **Progetto** > **Mostra tutti i file** oppure il pulsante della barra degli strumenti evidenziato nella figura seguente. Questo comando determina la visualizzazione in **Esplora soluzioni** di tutti i file nella cartella di progetto, con un'icona con contorno punteggiato per gli elementi che non sono stati aggiunti al progetto. Fare clic con il pulsante destro del mouse sui file da aggiungere e scegliere **Includi nel progetto** per includerli anche nel controllo del codice sorgente al successivo commit.
+Risposta: Anche se gli script appena generati sono presenti nella cartella *app/migrations* e vengono applicati quando si esegue il comando **Migrazione Django**, non vengono visualizzati automaticamente in **Esplora soluzioni** perché non sono stati aggiunti al progetto di Visual Studio. Per renderli visibili, selezionare prima il comando di menu **Progetto** > **Mostra tutti i file** oppure il pulsante della barra degli strumenti evidenziato nella figura seguente. Questo comando determina la visualizzazione in **Esplora soluzioni** di tutti i file nella cartella di progetto, con un'icona con contorno punteggiato per gli elementi che non sono stati aggiunti al progetto. Fare clic con il pulsante destro del mouse sui file da aggiungere e scegliere **Includi nel progetto** per includerli anche nel controllo del codice sorgente al successivo commit.
 
 ![Comando Includi nel progetto in Esplora soluzioni](media/django/step06-include-migrations-script-in-project.png)
 

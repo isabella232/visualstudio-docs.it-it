@@ -1,18 +1,19 @@
 ---
 title: Usare il framework di testing unità Microsoft per C++
-ms.date: 06/13/2019
+description: Usare il Framework di testing unità C++ Microsoft per creare unit test per C++ il codice.
+ms.date: 01/08/2020
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: fd5780479da10da43c270bbf4ffc5a215cb86ad6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+author: corob-msft
+ms.openlocfilehash: 5c8cb794ce7891e74610f1a73164ce403d294925
+ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926684"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755561"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usare il framework di testing unità Microsoft per C++ in Visual Studio
 
@@ -28,24 +29,44 @@ In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL,
 
 1. Modificare le proprietà del progetto per includere le intestazioni e i file di libreria necessari per il testing unità.
 
-   1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo di progetto del programma che si sta testando, quindi scegliere **Proprietà** > **Proprietà di configurazione** > **Directory di VC++** .
+   1. In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto che si sta testando. Verrà visualizzata la finestra delle proprietà del progetto.
 
-   2. Fare clic sulla freccia GIÙ nelle righe seguenti e scegliere **\<Modifica>** . Aggiungere questi percorsi:
+   1. Nella finestra di dialogo Pagine delle proprietà selezionare **proprietà di configurazione** > directory di **VC + +** .
 
-      | Directory | Proprietà |
+   1. Fare clic sulla freccia GIÙ nelle righe seguenti e scegliere **\<Modifica>** . Aggiungere questi percorsi:
+
+      | Directory | Gli |
       |-| - |
       | **Directory di inclusione** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
       | **Directory delle librerie** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
-2. Aggiungere un file di unit test C++:
+1. Aggiungere un file di unit test C++:
 
    - Fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo elemento** > **File di C++ (.cpp)** .
 
+## <a name="object_files"></a> Per collegare i test all'oggetto o a file di libreria
+
+Se il codice sottoposto a test non Esporta le funzioni che si desidera testare, è possibile aggiungere il file con **estensione obj** o **lib** di output alle dipendenze del progetto di test. Modificare le proprietà del progetto di test per includere le intestazioni e i file di libreria o oggetto necessari per il testing unità.
+
+1. In Esplora soluzioni scegliere **Proprietà** dal menu di scelta rapida del progetto di test. Verrà visualizzata la finestra delle proprietà del progetto.
+
+1. Selezionare le **proprietà di configurazione** > pagina di **input** del **linker** > , quindi selezionare **dipendenze aggiuntive**.
+
+   Scegliere **Modifica** e aggiungere i nomi dei file con estensione **obj** o **lib**. Non usare i nomi di percorso completi.
+
+1. Selezionare la **pagina proprietà di configurazione** > **linker** > **generale** , quindi selezionare **Directory librerie aggiuntive**.
+
+   Scegliere **Modifica** e aggiungere il percorso della directory dei file con estensione **obj** o **lib**. Il percorso è in genere contenuto nella cartella di compilazione del progetto sottoposto a test.
+
+1. Selezionare le **proprietà di configurazione** > pagina **directory di VC + +** e quindi selezionare **directory di inclusione**.
+
+   Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
+
 ## <a name="write-the-tests"></a>Scrivere i test
 
-Tutti i file *CPP* con classi di test devono includere "CppUnitTest.h" e avere un'istruzione using per `using namespace Microsoft::VisualStudio::CppUnitTestFramework`. Il progetto di test è già configurato. Include anche una definizione dello spazio dei nomi e una TEST_CLASS con un TEST_METHOD per iniziare. È possibile modificare il nome dello spazio dei nomi e i nomi tra parentesi nelle macro della classe e del metodo.
+Tutti i file *CPP* con classi di test devono includere "CppUnitTest.h" e avere un'istruzione using per `using namespace Microsoft::VisualStudio::CppUnitTestFramework`. Il progetto di test è già configurato. Include anche una definizione dello spazio dei nomi e una TEST_CLASS con un TEST_METHOD per iniziare. È possibile modificare il nome dello spazio dei nomi e i nomi tra parentesi nelle macro di classi e metodi.
 
-Sono disponibili macro speciali per l'inizializzazione di moduli di test, classi e metodi e per la pulizia delle risorse al termine dei test. Queste macro generano codice che viene eseguito prima del primo accesso a una classe o un metodo e dopo l'esecuzione dell'ultimo test. Per altre informazioni, vedere [Initialize and cleanup](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup) (Inizializzare ed eseguire la pulizia).
+Il Framework di test definisce macro speciali per l'inizializzazione di moduli, classi e metodi di test e per la pulizia delle risorse dopo il completamento dei test. Queste macro generano il codice da eseguire prima che venga eseguito il primo accesso a una classe o a un metodo e dopo l'esecuzione dell'ultimo test. Per altre informazioni, vedere [Initialize and cleanup](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup) (Inizializzare ed eseguire la pulizia).
 
 Usare i metodi statici nella classe [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) per definire le condizioni di test. Usare la classe [Logger](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) per scrivere messaggi nella **finestra di output**. Aggiungere attributi ai metodi di test
 
@@ -53,17 +74,17 @@ Usare i metodi statici nella classe [Assert](microsoft-visualstudio-testtools-cp
 
 1. Nel menu **Test** scegliere **Finestre** > **Esplora test**.
 
-1. Se non è visibile alcun test nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul relativo nodo in **Esplora soluzioni** e scegliendo **Compila** o **Ricompila**.
+1. Se non tutti i test sono visibili nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul nodo in **Esplora soluzioni** e scegliendo **Compila** o **ricompila**.
 
 1. In **Esplora test** scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
 
-1. Nel **finestra di output** scegliere **Test** nel menu a discesa per visualizzare i messaggi scritti dalla classe `Logger`:
+1. Nella **finestra di output** scegliere **test** nell'elenco a discesa per visualizzare i messaggi scritti dalla classe `Logger`:
 
    ![Finestra di output di C++ con messaggi di test](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definire i tratti per abilitare il raggruppamento
 
-È possibile definire i tratti nei metodi di test che consentono di classificare e raggruppare i test in **Esplora test**. Per definire un tratto, usare la macro `TEST_METHOD_ATTRIBUTE`. Ad esempio, per definire un tratto denominato `TEST_MY_TRAIT`:
+È possibile definire i tratti nei metodi di test, che consentono di categorizzare e raggruppare i test in **Esplora test**. Per definire un tratto, usare la macro `TEST_METHOD_ATTRIBUTE`. Ad esempio, per definire un tratto denominato `TEST_MY_TRAIT`:
 
 ```cpp
 #define TEST_MY_TRAIT(traitValue) TEST_METHOD_ATTRIBUTE(L"MyTrait", traitValue)
@@ -89,7 +110,7 @@ TEST_METHOD(Method1)
 
 I tratti predefiniti seguenti sono disponibili in `CppUnitTest.h`. Per altre informazioni, vedere le [informazioni di riferimento sulle API del framework di testing unità Microsoft per C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Macro|DESCRIZIONE|
+|Macro|Descrizione|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Usare la macro TEST_METHOD_ATTRIBUTE per definire un tratto.|
 |`TEST_OWNER(ownerAlias)`|Usare il tratto Owner predefinito per specificare un proprietario del metodo di test.|
@@ -97,4 +118,4 @@ I tratti predefiniti seguenti sono disponibili in `CppUnitTest.h`. Per altre inf
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Avvio rapido: Sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
