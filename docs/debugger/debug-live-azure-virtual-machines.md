@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 52ce973f1521f3ca9ba83513f6711287c49db7bb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: ef314cf78c685251496274309af91e3bb2108a1b
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415767"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776115"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Eseguire il debug di app ASP.NET attive in macchine virtuali di Azure e set di scalabilità di macchine virtuali di Azure con Snapshot Debugger
 
@@ -43,6 +43,9 @@ In questa esercitazione si eseguono le attività seguenti:
   * Applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
   * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
 
+  > [!NOTE]
+  >  Visual Studio Enterprise eseguiti in Windows a 32 bit non saranno in grado di visualizzare gli snapshot.
+
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Aprire il progetto e avviare Snapshot Debugger
 
 1. Aprire il progetto di cui si vuole eseguire il debug di snapshot.
@@ -50,7 +53,7 @@ In questa esercitazione si eseguono le attività seguenti:
     > [!IMPORTANT]
     > Per eseguire il debug dello snapshot, è necessario aprire la *stessa versione del codice sorgente* pubblicata nel servizio del set di scalabilità di macchine virtuali Machine\Virtual di Azure.
 
-1. Scegliere **Debug > Collega Snapshot Debugger**. Selezionare il set di scalabilità di macchine virtuali Machine\Virtual di Azure in cui è distribuita l'app Web e un account di archiviazione di Azure e quindi fare clic su **Connetti**. Snapshot Debugger supporta anche il servizio [Azure Kubernetes](debug-live-azure-kubernetes.md) e il [servizio app Azure](debug-live-azure-applications.md).
+1. Scegliere **Debug > connetti snapshot debugger...** . Selezionare il set di scalabilità di macchine virtuali Machine\Virtual di Azure in cui è distribuita l'app Web e un account di archiviazione di Azure e quindi fare clic su **Connetti**. Snapshot Debugger supporta anche il servizio [Azure Kubernetes](debug-live-azure-kubernetes.md) e il [servizio app Azure](debug-live-azure-applications.md).
 
     ![Avviare Snapshot Debugger dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -87,7 +90,7 @@ In questa esercitazione si eseguono le attività seguenti:
     > [!TIP]
     > Non è possibile eseguire il codice passaggio per passaggio quando si visualizza uno snapshot, ma è possibile inserire più punti di acquisizione snapshot nel codice per seguire l'esecuzione in corrispondenza di righe diverse del codice. Se il codice include più punti di acquisizione snapshot, Snapshot Debugger si assicura che gli snapshot corrispondenti provengano dalla stessa sessione dell'utente finale. Snapshot Debugger esegue questa verifica anche se l'app è usata da molti utenti.
 
-## <a name="take-a-snapshot"></a>Creare uno snapshot
+## <a name="take-a-snapshot"></a>Acquisire uno snapshot
 
 Una volta impostato un ancoraggio, è possibile generare manualmente uno snapshot selezionando la visualizzazione del sito Web e eseguendo la riga di codice contrassegnata o attendendo che gli utenti ne generino uno dall'utilizzo del sito.
 
