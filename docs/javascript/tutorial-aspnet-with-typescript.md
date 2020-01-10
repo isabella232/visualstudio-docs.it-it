@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8d733c41e2833eeca2a8bf8c68f5e329f0af723c
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.openlocfilehash: 40011b035afdf4a04eb760d13c001e39d9c578c4
+ms.sourcegitcommit: 91a054beb6b3a16ed5140f9f829239ec31bbbec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75685307"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75810583"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Esercitazione: creare un'app ASP.NET Core con TypeScript in Visual Studio
 
@@ -68,7 +68,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene il codic
     Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **ASP.NET**, quindi scegliere **ASP.NET Core applicazione Web C#-** . Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi selezionare **Node.js**. Nel riquadro centrale scegliere **ASP.NET Core applicazione C#Web** , quindi scegliere **OK**.
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** espandere oggetto **C#visivo**, quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **ASP.NET Core applicazione C#Web** , quindi scegliere **OK**.
     ::: moniker-end
     Se non viene visualizzato il modello di progetto **applicazione Web di ASP.NET Core** , è necessario aggiungere il carico di lavoro **sviluppo di ASP.NET e Web** . Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596268"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75775879"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
@@ -81,7 +81,7 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
   - File dump
 
 > [!NOTE]
-> I file di log, le schermate e i dati di registrazione vengono inviati a Microsoft solo quando si fornisce l'autorizzazione inviando il report sul problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "segnala un problema" (vedere la schermata inclusa in questa nota). I log e i file raccolti vengono archiviati nella cartella% Temp% e vengono puliti regolarmente e dopo ogni caricamento. Se non si desidera includere un log nel report del problema, eliminare il file dalla cartella% Temp% prima di inviare il report.
+> I file di log, le schermate e la registrazione dei dati inviati possono aumentare significativamente la capacità di Microsoft di comprendere e rispondere al problema.  Quindi, è consigliabile includerli. Per proteggere la privacy, tutti i file di log allegati, le schermate e i dati di registrazione vengono inviati a Microsoft solo quando si fornisce l'autorizzazione inviando il report di problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "segnala un problema" prima di inviare il report. È possibile escludere dal report i file di registro di sistema deselezionando "Connetti registri di sistema" nel passaggio "Riepilogo". Per riferimento, vedere la schermata seguente. 
   > ![segnalare un problema: riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
 
 
