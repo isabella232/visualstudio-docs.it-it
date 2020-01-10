@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b535737860b846aadecb6b73b4bd26659db37b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 296aec3b2b5cd307400b230375a7171f158fee60
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289709"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847700"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procedura: Aggiungere un autore attendibile a un computer client per applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
   
 1. Ottenere un certificato digitale da un'autorità di certificazione.  
   
-2. Esportare il certificato nel formato Base64 X.509 (.cer). Per altre informazioni sui formati di certificato, vedere [Esportare un certificato](https://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Esportare il certificato nel formato Base64 X.509 (.cer). Per altre informazioni sui formati di certificato, vedere [Esportare un certificato](https://technet.microsoft.com/library/cc730988(WS.10).aspx).  
   
 3. Dal prompt dei comandi nei computer client eseguire il comando seguente:  
   
@@ -51,7 +51,7 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
   
 1. Ottenere un certificato digitale da un'autorità di certificazione.  
   
-2. Esportare il certificato nel formato Base64 X.509 (.cer). Per altre informazioni sui formati di certificato, vedere [Esportare un certificato](https://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Esportare il certificato nel formato Base64 X.509 (.cer). Per altre informazioni sui formati di certificato, vedere [Esportare un certificato](https://technet.microsoft.com/library/cc730988(WS.10).aspx).  
   
 3. Dal prompt dei comandi nei computer client eseguire il comando seguente:  
   
@@ -64,11 +64,11 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
  [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)   
- [Panoramica della distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)   
+ [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [How to: Enable ClickOnce Security Settings](../deployment/how-to-enable-clickonce-security-settings.md)  (Procedura: Abilitare le impostazioni di sicurezza ClickOnce)  
- [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Procedura: impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Procedura: impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Procedura: eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Procedura: aggiungere un autore attendibile a un computer client per applicazioni ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Procedura: ripetere la firma dei manifesti dell'applicazione e della distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   
  [Procedura: Configurare il comportamento di richiesta di attendibilità di ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

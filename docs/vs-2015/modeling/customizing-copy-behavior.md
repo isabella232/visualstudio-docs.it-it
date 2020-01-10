@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301184"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845293"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ In un linguaggio specifico di dominio (DSL, Domain-Specific Language) creato con
  **Abilita o Disabilita copia, taglia e incolla.**
 In DSL Explorer impostare la proprietà **Enable copy paste** del nodo **Editor** .
 
- **Copiare i collegamenti alla stessa destinazione.** Ad esempio, per avere una casella di commento copiato collegata allo stesso elemento Subject.
+ **Copiare i collegamenti alla stessa destinazione.** ad esempio per avere una casella per i commenti collegata all'elemento dello stesso soggetto.
 Impostare la proprietà **propaga copia** del ruolo su **propaga copia solo a collegamento**. Per ulteriori informazioni, vedere [personalizzazione del comportamento di copia dei collegamenti](#customizeLinks).
 
  Copiare elementi collegati. Ad esempio, quando si copia un nuovo elemento, vengono eseguite le copie anche di eventuali caselle per i commenti collegate.
 Imposta la proprietà **propaga copia** del ruolo in modo da **propagare copia al collegamento e assegnatario di ruolo opposto**. Per ulteriori informazioni, vedere [personalizzazione del comportamento di copia dei collegamenti](#customizeLinks).
 
- **Duplicare rapidamente elementi copiando e incollando.** In genere, l'elemento appena copiato è ancora selezionato e non è possibile incollare lo stesso tipo di elemento su di esso.
+ **Duplicare rapidamente elementi copiando e incollando.** In genere, l'elemento appena copiato resta selezionato e non è possibile incollare lo stesso tipo di elemento su di esso.
 Aggiungere una direttiva di unione degli elementi alla classe di dominio e impostarla per inoltrare le unioni alla classe padre. Questo avrà lo stesso effetto sulle operazioni di trascinamento. Per altre informazioni, vedere [personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md).
 
  \- oppure -
@@ -77,7 +77,7 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **Crea collegamenti aggiuntivi quando l'utente incolla su una destinazione selezionata.** Ad esempio, quando una casella di commento viene incollata su un elemento, viene creato un collegamento tra di essi.
+ **Crea collegamenti aggiuntivi quando l'utente incolla su una destinazione selezionata.** Ad esempio, quando una casella per i commenti viene incollata su un elemento, viene creato un collegamento tra i due.
 Aggiungere una direttiva di unione degli elementi alla classe di dominio di destinazione e impostarla per elaborare l'unione mediante l'aggiunta di collegamenti. Questo avrà lo stesso effetto sulle operazioni di trascinamento. Per altre informazioni, vedere [personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md).
 
  \- oppure -
@@ -91,7 +91,7 @@ Eseguire l'override di *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` n
 Eseguire l'override di *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` nel progetto DslPackage.
 
  **Mantieni il layout delle forme tramite copia e incolla.**
-Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è illustrata nell'esempio in [VMSDK: Circuit Diagrams Sample](https://go.microsoft.com/fwlink/?LinkId=213879).
+Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è illustrata nell'esempio in [VMSDK: Circuit Diagrams Sample](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
  Per ottenere questo effetto, aggiungere le forme e i connettori all'elemento ElementGroupPrototype copiato. Il metodo più conveniente per l'override è ElementOperations.CreateElementGroupPrototype(). Per eseguire questa operazione, aggiungere il codice seguente al progetto DSL:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Incollare le forme in una posizione scelta, ad esempio la posizione del cursore corrente.**
-Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è illustrata nell'esempio in [VMSDK: Circuit Diagrams Sample](https://go.microsoft.com/fwlink/?LinkId=213879).
+Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è illustrata nell'esempio in [VMSDK: Circuit Diagrams Sample](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
  Per ottenere questo effetto, eseguire l'override di `ClipboardCommandSet.ProcessOnMenuPasteCommand()` per usare la versione di `ElementOperations.Merge()` specifica per il percorso. Per eseguire questa operazione, aggiungere il codice seguente al progetto DslPackage:
 
@@ -248,7 +248,7 @@ Vedere [procedura: aggiungere un gestore di trascinamento della selezione](../mo
 
 1. In un nuovo file del progetto DSL creare una classe derivata da <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2. Aggiungere una definizione di classe parziale per la propria classe diagramma. Il nome di questa classe è disponibile in **Dsl\GeneratedCode\Diagrams.cs**.
+2. Aggiungere una definizione di classe parziale per la propria classe diagramma. Il nome di questa classe è reperibile nel **dsl\generatedcode\diagrams.cs**.
 
     Nella classe diagramma sovrascrivere <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> per restituire un'istanza della sottoclasse ElementOperations. È necessario restituire la stessa istanza ad ogni chiamata.
 
@@ -564,4 +564,4 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md) [procedura: aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md) [personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md) [esempio: VMSDK Circuit Diagrams Sample](https://go.microsoft.com/fwlink/?LinkId=213879)
+ [Personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md) [procedura: aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md) [personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md) [esempio: VMSDK Circuit Diagrams Sample](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

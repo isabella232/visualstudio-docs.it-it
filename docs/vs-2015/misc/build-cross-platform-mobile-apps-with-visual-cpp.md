@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 60dbeacbbb4b4e169dd84d0018a0c078ccca7def
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c3afe4d310e659fd63580bc7e298c0a50ba7891e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299352"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845730"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Crea app per dispositivi mobili multipiattaforma con VisualC++
 Per compilare codice multipiattaforma per dispositivi Android, iOS e Windows è possibile usare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma, Una funzionalità facoltativa disponibile in Visual Studio 2015 che consente lo sviluppo di codice multipiattaforma per iOS, Android e Windows usando Visual C++.  
@@ -22,4 +22,4 @@ Per compilare codice multipiattaforma per dispositivi Android, iOS e Windows è 
  Per istruzioni di installazione ed esempi di codice, vedere [Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Scarica Visual Studio 2015](https://go.microsoft.com/fwlink/?linkid=517106)
+ [Download di Visual Studio 2015](https://visualstudio.microsoft.com/downloads/)

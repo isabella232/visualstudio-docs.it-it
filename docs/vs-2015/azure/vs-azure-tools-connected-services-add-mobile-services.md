@@ -1,6 +1,6 @@
 ---
 title: Aggiunta di servizi mobili tramite Servizi connessi
-description: Aggiungere servizi mobili tramite la finestra di dialogo Aggiungi Servizi connessi di Visual Studio
+description: Aggiungere servizi mobili tramite la finestra di dialogo Aggiungi servizi connessi di Visual Studio
 documentationcenter: na
 author: ghogen
 manager: jillfra
@@ -12,65 +12,65 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
-ms.openlocfilehash: 4f84970daea03904d4642317cf6097beb07be7f1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 83f908876b2e0de774443084d830f20d121e33d0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300188"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844854"
 ---
-# <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Aggiunta di servizi mobili con Visual Studio Servizi connessi
-Con Visual Studio 2015 è possibile connettersi a servizi mobili di Azure usando la finestra di dialogo **Aggiungi servizio connesso** . È possibile connettersi da qualsiasi C# app client, qualsiasi app JavaScript o app Cordova multipiattaforma. Una volta stabilita la connessione, è possibile creare e accedere ai dati, creare API personalizzate e processi pianificati o aggiungere il supporto per le notifiche push.  L'operazione relativa ai servizi connessi aggiunge tutti i riferimenti appropriati e il codice di connessione. Puoi anche sfruttare il supporto integrato per l'autenticazione con diversi schemi di identità comuni, come Azure AD, Facebook, Twitter e account Microsoft.
+# <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Aggiunta di servizi mobili tramite Servizi connessi di Visual Studio
+Con Visual Studio 2015, è possibile connettersi a Servizi mobili di Azure usando la finestra di dialogo **Aggiungi servizio connesso** . È possibile connettersi da qualsiasi app client C#, app JavaScript o app Cordova multipiattaforma. Dopo avere effettuato la connessione, è possibile creare i dati e accedervi, creare API personalizzate e processi pianificati o aggiungere supporto per le notifiche push.  L'operazione di servizi connessi aggiunge tutti i riferimenti appropriati e il codice di connessione. È anche possibile usare il supporto predefinito per l'autenticazione con numerosi schemi di identità comuni, come Azure AD, Facebook, Twitter e account Microsoft.
 
 ## <a name="supported-project-types"></a>Tipi di progetto supportati
 > [!NOTE]
-> In Visual Studio 2015, l'aggiunta di servizi mobili di Azure a un progetto di Windows universale (Windows 10) tramite la finestra di dialogo Aggiungi Servizi connessi non è supportata. È possibile aggiungere servizi mobili di Azure installando i pacchetti appropriati usando Gestione pacchetti NuGet per il progetto.
+> In Visual Studio 2015, l'aggiunta di Servizi mobili di Azure a progetti di Windows Universal (Windows 10) mediante la finestra di dialogo Aggiungi servizi connessi non è supportata. È possibile aggiungere servizi mobili di Azure installando i pacchetti appropriati usando Gestione pacchetti NuGet per il progetto.
 >
 >
 
-È possibile usare la finestra di dialogo Servizi connessi per connettersi a servizi mobili di Azure nei tipi di progetto seguenti.
+È possibile usare la finestra di dialogo Servizi connessi per connettersi a Servizi mobili di Azure nei tipi di progetto seguenti.
 
-* Progetti .NET Windows 8.1 Store, Phone e Universal app
-* Progetti di Windows 8.1 JavaScript Store, Phone e Universal app
-* Progetti creati con Strumenti di Visual Studio per Apache Cordova
+* Progetti .NET Windows 8.1 Store, Phone e Universal App
+* Progetti JavaScript Windows 8.1 Store, Phone e Universal App
+* Progetti creati usando Strumenti di Visual Studio per Apache Cordova
 
-## <a name="connect-to-azure-mobile-services-using-the-add-connected-services-dialog"></a>Connettersi a servizi mobili di Azure usando la finestra di dialogo Aggiungi Servizi connessi
-1. Assicurarsi di avere un account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita](https://go.microsoft.com/fwlink/?LinkId=518146).
-2. Aprire la finestra di dialogo **aggiungi servizi connessi** .
+## <a name="connect-to-azure-mobile-services-using-the-add-connected-services-dialog"></a>Connettersi a Servizi mobili di Azure usando la finestra di dialogo Aggiungi servizi connessi
+1. Verificare di disporre di un account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita](https://azure.microsoft.com/pricing/free-trial/).
+2. Aprire la finestra di dialogo **Aggiungi servizi connessi** .
 
-   * Per le app .NET, aprire il progetto in Visual Studio, aprire il menu di scelta rapida per il nodo **riferimenti** in Esplora soluzioni, quindi scegliere **Aggiungi servizio connesso** .
+   * Per le applicazioni .NET, aprire il progetto in Visual Studio, aprire il menu di scelta rapida del nodo **Riferimenti** in Esplora soluzioni, quindi scegliere **Aggiungi servizio connesso**
 
-        ![Connessione al servizio mobile di Azure](./media/vs-azure-tools-connected-services-add-mobile-services/IC797635.png)
-   * Per Apache Cordova progetti di app, aprire il progetto in Visual Studio, aprire il menu di scelta rapida per il nodo del progetto in Esplora soluzioni, quindi scegliere **Aggiungi servizio connesso**.
-3. Nella finestra di dialogo **Aggiungi servizio connesso** scegliere **Servizi mobili di Azure** e quindi il pulsante **Configura**. È possibile che venga richiesto di accedere ad Azure, se non è già stato fatto.
+        ![Connessione al Servizio mobile di Azure](./media/vs-azure-tools-connected-services-add-mobile-services/IC797635.png)
+   * Per i progetti di app Apache Cordova, aprire il progetto in Visual Studio, aprire il menu di scelta rapida del nodo del progetto in Esplora soluzioni e quindi scegliere **Aggiungi servizio connesso**.
+3. Nella finestra di dialogo **Aggiungi servizio connesso** scegliere **Servizi mobili di Azure**, quindi fare clic su **Configura**. Se non è già stato effettuato, potrebbe essere richiesto l'accesso ad Azure.
 
-    ![Aggiunta di un servizio mobile di Azure](./media/vs-azure-tools-connected-services-add-mobile-services/IC797636.png)
-4. Nella finestra di dialogo **Servizi mobili di Azure** scegliere un servizio mobile esistente se presente. Se è necessario creare un nuovo servizio mobile di Azure, seguire la procedura riportata di seguito. In caso contrario, andare al passaggio successivo.
+    ![Aggiunta di un servizio Mobile di Azure](./media/vs-azure-tools-connected-services-add-mobile-services/IC797636.png)
+4. Nella finestra di dialogo **Servizi mobili di Azure** scegliere un servizio mobile esistente, se disponibile. Se è necessario creare un nuovo servizio mobile di Azure, eseguire la procedura seguente. In caso contrario, andare al passaggio successivo.
 
     Per creare un nuovo account di servizio mobile:
 
-   1. Scegliere il collegamento per creare il servizio nella parte inferiore della finestra di dialogo.
-       ![aggiungere un nuovo servizio mobile connesso](./media/vs-azure-tools-connected-services-add-mobile-services/IC797637.png)
-   2. Nella finestra di dialogo **Crea servizio mobile** è possibile scegliere un servizio mobile back-end JavaScript o un servizio mobile back-end .NET dall'elenco a discesa **Runtime** .
+   1. Scegliere il collegamento **Crea servizio** nella parte inferiore della finestra di dialogo.
+       ![Aggiungere un nuovo servizio connesso mobile](./media/vs-azure-tools-connected-services-add-mobile-services/IC797637.png)
+   2. Nella finestra di dialogo **Crea servizio mobile** è possibile scegliere un servizio mobile back-end JavaScript o un servizio mobile back-end .NET nell'elenco a discesa **Runtime**.
 
        ![Creazione di un servizio mobile](./media/vs-azure-tools-connected-services-add-mobile-services/IC797638.png)
 
-       Un servizio back-end JavaScript è semplice e potente. Se si crea un servizio mobile back-end JavaScript, il codice JavaScript sul lato server viene archiviato nel cloud, ma è possibile modificare gli script server tramite Esplora server o il portale di gestione di Azure.
+       Un servizio back-end di JavaScript è semplice ed efficiente. Se si crea un servizio mobile back-end JavaScript, il codice JavaScript sul lato server viene archiviato nel cloud, ma è possibile modificare gli script server tramite Esplora server o il portale di gestione di Azure.
 
-       Un servizio mobile back-end .NET offre tutta la potenza e la flessibilità dell'API Web e Entity Framework. Se si crea un servizio mobile back-end .NET, viene creato un progetto e viene aggiunto alla soluzione.
-   3. Scegliere l'areain cui si vuole creare il servizio mobile e quindi immettere un nome utente e una password per il server.
-   4. Dopo aver immesso tutte le informazioni necessarie, scegliere il pulsante **Crea** per creare il servizio mobile.
-   5. Il nuovo servizio mobile dovrebbe essere visualizzato nell'elenco dei servizi nella finestra di dialogo **servizi mobili di Azure** . Scegliere il nuovo servizio mobile nell'elenco e quindi scegliere il pulsante **Aggiungi** per aggiungere il servizio al progetto.
-5. Esaminare la pagina introduttiva visualizzata e scoprire come è stato modificato il progetto. Nel browser viene visualizzata una pagina di introduzione ogni volta che si aggiunge un servizio connesso. È possibile esaminare i passaggi successivi suggeriti e gli esempi di codice oppure passare alla pagina delle modifiche per informazioni sui riferimenti che sono stati aggiunti al progetto e sulle modifiche che sono state apportate al codice e ai file di configurazione.
+       Un servizio mobile back-end di .NET offre la potenza e flessibilità dell'API Web e di Entity Framework. Se si crea un servizio mobile back-end di .NET, un progetto viene creato e aggiunto alla soluzione.
+   3. Scegliere l' **Area** in cui si vuole il servizio mobile e quindi immettere un nome utente e una password per il server.
+   4. Dopo aver immesso tutte le informazioni necessarie, fare clic su **Crea** per creare il servizio mobile.
+   5. Il nuovo servizio mobile dovrebbe essere visualizzato nell'elenco dei servizi nella finestra di dialogo **Servizi mobili di Azure** . Scegliere il nuovo servizio mobile dall'elenco, quindi fare clic su **Aggiungi** per aggiungere il servizio al progetto.
+5. Esaminare la pagina introduttiva visualizzata e verificare in che modo è stato modificato il progetto. Nel browser viene visualizzata una pagina di introduzione ogni volta che si aggiunge un servizio connesso. È possibile esaminare i passaggi successivi suggeriti e gli esempi di codice oppure passare alla pagina delle modifiche per informazioni sui riferimenti che sono stati aggiunti al progetto e sulle modifiche che sono state apportate al codice e ai file di configurazione.
 6. Usando gli esempi di codice come guida, iniziare a scrivere il codice per accedere al servizio mobile.
 
 ## <a name="how-your-project-is-modified"></a>Come viene modificato il progetto
-Il modo in cui Visual Studio modifica il progetto dipende dal tipo di progetto. Per C# le app client, vedere [cosa è C# successo – progetti](https://go.microsoft.com/fwlink/p/?LinkId=513119). Per le app client JavaScript, vedere [cosa è successo – progetti JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=513120). Per le app Cordova, vedere [cosa è successo – progetti Cordova](https://go.microsoft.com/fwlink/p/?LinkId=513116).
+La modalità di modifica del progetto di Visual Studio dipende dal tipo di progetto. Per le app client C#, vedere [Informazioni sull’evento – Progetti C#](https://docs.microsoft.com/azure/). Per le applicazioni client JavaScript, vedere [Risultati - Progetti JavaScript](https://docs.microsoft.com/azure/). Per le applicazioni Cordova, vedere [Risultati - Progetti Cordova](https://docs.microsoft.com/azure/).
 
 ## <a name="next-steps"></a>Passaggi successivi
-Porre domande e ottenere assistenza:
+Domande e assistenza:
 
 * [Forum MSDN: Servizi mobili di Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=azuremobile)
-* [Servizi mobili di Azure nel Blog del team di Microsoft Azure](https://azure.microsoft.com/blog/topics/mobile/)
+* [Servizi mobili di Azure nel blog del Team di Microsoft Azure](https://azure.microsoft.com/blog/topics/mobile/)
 * [Servizi mobili di Azure in azure.microsoft.com](https://azure.microsoft.com/services/mobile-services/)
-* [Documentazione di servizi mobili di Azure in azure.microsoft.com](https://azure.microsoft.com/documentation/services/mobile-services/)
+* [Documentazione dei servizi mobili di Azure sul sito azure.microsoft.com](https://azure.microsoft.com/documentation/services/mobile-services/)

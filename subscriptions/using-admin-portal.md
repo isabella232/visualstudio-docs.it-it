@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: Informazioni su come iniziare a gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale di amministrazione delle sottoscrizioni.
-ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: b7a6d93e3c284e3778d9574eb86c4e998324c559
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879308"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850547"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Panoramica del portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -47,7 +47,7 @@ Per ulteriori informazioni sul contratto visualizzato, selezionare la scheda Det
 > ![Pagina relativa ai dettagli del portale di amministrazione delle sottoscrizioni di Visual Studio](_img/using-admin-portal/details-page.png)
 
 ## <a name="resources"></a>Risorse
-- [White paper sulle licenze per Visual Studio](https://aka.ms/vslicensing)
+- [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Confrontare le opzioni e i prezzi delle sottoscrizioni](https://visualstudio.microsoft.com/vs/pricing)
 - [Confrontare le funzionalità dell'IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

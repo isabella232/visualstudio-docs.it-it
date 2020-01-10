@@ -14,17 +14,17 @@ caps.latest.revision: 57
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51cb71d4bc2f66377b677d5be292c4eafa1dbd18
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 21376668eef88d3d8ce42ff73785b972be045cb2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299461"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850628"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrammi livello: linee guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livello* in Visual Studio. Assicurarsi che il codice rimanga coerente con la progettazione convalidando il codice con un diagramma livello. È anche possibile includere la convalida dei livelli nel processo di compilazione. Vedere [video di Channel 9: progettare e convalidare l'architettura usando i diagrammi livello](https://go.microsoft.com/fwlink/?LinkID=252073).
+Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livello* in Visual Studio. Assicurarsi che il codice rimanga coerente con la progettazione convalidando il codice con un diagramma livello. È anche possibile includere la convalida dei livelli nel processo di compilazione. Vedere [video di Channel 9: progettare e convalidare l'architettura usando i diagrammi livello](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -66,7 +66,7 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 ## <a name="CreateLayers"></a>Definire i livelli per rappresentare aree funzionali o componenti
  I livelli rappresentano gruppi logici di *artefatti*, ad esempio progetti, file di codice, spazi dei nomi, classi e metodi. È possibile creare livelli da artefatti da progetti Visual C# .NET e Visual Basic .NET oppure collegare specifiche o piani a un livello collegando documenti, quali file di Word o presentazioni di PowerPoint. Ogni livello viene visualizzato come un rettangolo nel diagramma e viene indicato il numero di artefatti collegati a ogni livello. Un livello può contenere livelli annidati che descrivono attività più specifiche.
 
- È in genere consigliabile assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se gli artefatti sono strettamente interdipendenti, posizionarli nello stesso livello. Se gli artefatti possono essere aggiornati separatamente o possono essere usati in applicazioni distinte, posizionarli in livelli diversi. Per informazioni sui modelli di livello, visitare il sito modelli & Practices [http://go.microsoft.com/fwlink/?LinkId=145794](https://go.microsoft.com/fwlink/?LinkId=145794).
+ È in genere consigliabile assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se gli artefatti sono strettamente interdipendenti, posizionarli nello stesso livello. Se gli artefatti possono essere aggiornati separatamente o possono essere usati in applicazioni distinte, posizionarli in livelli diversi. Per informazioni sui modelli di livello, visitare il sito modelli & Practices [http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
 > [!TIP]
 > Alcuni tipi di artefatti possono essere collegati ai livelli ma non supportano la convalida rispetto al diagramma livello. Per verificare se l'artefatto supporta la convalida, aprire **Esplora livello** per esaminare la proprietà **convalida supportata** del collegamento dell'elemento. Vedere [individuare le dipendenze esistenti tra i livelli](#Generate).
@@ -115,7 +115,7 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 ## <a name="NewAreas"></a>Progettare nuove aree dell'applicazione
  Quando si inizia a sviluppare un nuovo progetto o una nuova area in un nuovo progetto, è possibile tracciare livelli e dipendenze per semplificare l'identificazione dei componenti principali prima di iniziare a sviluppare il codice.
 
-- **Mostra i modelli di architettura identificabili** nei diagrammi livello, se possibile. Ad esempio, un diagramma livello che descrive un'applicazione desktop può includere livelli quali Presentazione, Logica di dominio e Archivio dati. Un diagramma livello che riguarda una singola funzionalità in un'applicazione può includere livelli quali Modello, Visualizzazione e Controller. Per ulteriori informazioni su tali modelli, vedere [patterns & Practices: Application Architecture](https://go.microsoft.com/fwlink/?LinkId=145794).
+- **Mostra i modelli di architettura identificabili** nei diagrammi livello, se possibile. Ad esempio, un diagramma livello che descrive un'applicazione desktop può includere livelli quali Presentazione, Logica di dominio e Archivio dati. Un diagramma livello che riguarda una singola funzionalità in un'applicazione può includere livelli quali Modello, Visualizzazione e Controller. Per ulteriori informazioni su tali modelli, vedere [patterns & Practices: Application Architecture](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
      Se si creano spesso modelli di questo tipo, creare uno strumento personalizzato. Vedere [definire un elemento personalizzato della casella degli strumenti di modellazione](../modeling/define-a-custom-modeling-toolbox-item.md).
 

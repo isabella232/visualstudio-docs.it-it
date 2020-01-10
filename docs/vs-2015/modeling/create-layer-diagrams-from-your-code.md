@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eea557035ef4e5f1ffa2585e620a331fb6b5cce2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300282"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852070"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Creare diagrammi livello dal codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Per visualizzare l'architettura logica di alto livello del sistema software, cre
 
 4. In **Aggiungi a progetto di modello**individuare e selezionare un progetto di modello esistente nella soluzione.
 
-     -oppure-
+     oppure
 
      Scegliere **Crea un nuovo progetto di modello** per aggiungere un nuovo progetto di modello alla soluzione.
 
@@ -66,7 +66,7 @@ Per visualizzare l'architettura logica di alto livello del sistema software, cre
 
 |**Per**|**Attenersi alla seguente procedura**|
 |------------|----------------------------|
-|Creare un livello per un solo elemento|<ol><li>Trascinare l'elemento nel diagramma livello da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codice<br /><br />         Vedere eseguire il [mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) e [usare le mappe codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'elemento.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:**  Il trascinamento dei file binari nel diagramma livello non aggiunge automaticamente i riferimenti al progetto di modello. ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modello. **Per aggiungere file binari al progetto di modello** <ol><li>In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto di modello, quindi scegliere **Aggiungi elemento esistente**.</li><li>Nella finestra di dialogo **Aggiungi elemento esistente** individuare i file binari, selezionarli, quindi scegliere **OK**.     I file binari verranno visualizzati nel progetto di modellazione.</li><li>In **Esplora soluzioni**scegliere un file binario aggiunto, quindi premere **F4** per aprire la finestra **proprietà** .</li><li>Per ogni file binario, impostare la proprietà **azione di compilazione** su **convalida**.</li></ol>|
+|Creare un livello per un solo elemento|<ol><li>Trascinare l'elemento nel diagramma livello da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codici<br /><br />         Vedere eseguire il [mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) e [usare le mappe codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'elemento.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:**  Il trascinamento dei file binari nel diagramma livello non aggiunge automaticamente i riferimenti al progetto di modello. ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modello. **Per aggiungere file binari al progetto di modello** <ol><li>In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto di modello, quindi scegliere **Aggiungi elemento esistente**.</li><li>Nella finestra di dialogo **Aggiungi elemento esistente** individuare i file binari, selezionarli, quindi scegliere **OK**.     I file binari verranno visualizzati nel progetto di modellazione.</li><li>In **Esplora soluzioni**scegliere un file binario aggiunto, quindi premere **F4** per aprire la finestra **proprietà** .</li><li>Per ogni file binario, impostare la proprietà **azione di compilazione** su **convalida**.</li></ol>|
 |Creare un solo livello per tutti gli artefatti selezionati|Trascinare contemporaneamente tutti gli elementi sul diagramma livello.<br /><br /> Nel diagramma viene visualizzato un livello collegato a tutti gli elementi.|
 |Creare un livello per ogni elemento selezionato|Premere e tenere premuto **MAIUSC** mentre si trascinano tutti gli elementi nel diagramma livello nello stesso momento. **Nota:**  Se si usa il tasto **MAIUSC** per selezionare un intervallo di elementi, rilasciare il tasto dopo avere selezionato gli elementi. Premerlo e tenerlo premuto nuovamente quando si trascinano gli elementi nel diagramma. <br /><br /> Per ogni elemento nel diagramma viene visualizzato un livello collegato a ciascun elemento.|
 |Aggiungere un artefatto a un livello|Trascinare l'elemento sul livello.|
@@ -136,4 +136,4 @@ Per visualizzare l'architettura logica di alto livello del sistema software, cre
 - [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Video di Channel 9: progettare e convalidare l'architettura usando i](https://go.microsoft.com/fwlink/?LinkID=252073) diagrammi livello diagrammi livello [: riferimento](../modeling/layer-diagrams-reference.md) [diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md) [convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md) [visualizzare il codice](../modeling/visualize-code.md)
+ [Video di Channel 9: progettare e convalidare l'architettura usando i](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture) diagrammi livello diagrammi livello [: riferimento](../modeling/layer-diagrams-reference.md) [diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md) [convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md) [visualizzare il codice](../modeling/visualize-code.md)

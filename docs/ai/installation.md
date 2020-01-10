@@ -1,7 +1,7 @@
 ---
 title: Installare strumenti di intelligenza artificiale
 description: Descrive come installare strumenti di intelligenza artificiale per Visual Studio
-keywords: ia, visual studio
+keywords: ai, visual studio
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -9,14 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 54239b49344a5e29e7f837d22840f997c4b9fbe2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777479"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845063"
 ---
-# <a name="installation"></a>Installazione
+# <a name="installation"></a>Installazione di
 
 È possibile installare gli strumenti di Visual Studio per IA nei sistemi operativi Windows a 64 bit.
 
@@ -24,7 +24,7 @@ ms.locfileid: "72777479"
 
 Questa estensione può essere usata con Visual Studio 2015 e con Visual Studio 2017 Community Edition o versioni successive.
 
-È possibile scaricare gli strumenti da [Visual Studio Marketplace](https://aka.ms/vstoolsforai) o direttamente da Visual Studio:
+È possibile scaricare gli strumenti da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) o direttamente da Visual Studio:
 
 1. Scegliere **Strumenti** > **Estensioni e aggiornamenti**.
 
@@ -33,7 +33,7 @@ Questa estensione può essere usata con Visual Studio 2015 e con Visual Studio 2
 2. Nella finestra di dialogo **Estensioni e aggiornamenti** selezionare **Online** sul lato sinistro.
 3. Nella casella di ricerca nell'angolo in alto a destra digitare o immettere "tools for ai".
 4. Selezionare **Visual Studio Tools for AI** dai risultati.
-5. Fare clic su **Scarica**.
+5. Scegliere **Download**.
 
 ## <a name="prepare-your-local-machine"></a>Preparare il computer locale
 
@@ -156,7 +156,7 @@ Visitare [questo sito](https://caffe2.ai/docs/getting-started.html) per eseguire
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) è un framework di apprendimento profondo progettato per efficienza e flessibilità. Consente di **combinare** [programmazione simbolica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) per ottimizzare efficienza e produttività.
+[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) è un framework di apprendimento profondo progettato per efficienza e flessibilità. Consente di combinare la [programmazione simbolica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) per ottimizzare l'efficienza e la produttività.
 
 Per installare MXNet, eseguire il comando seguente in un terminale:
 

@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d3247fb421800f87740a911563880b70abf3eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301109"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844726"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ID regola | DA0018 |
   
 - ottimizzazione dell'utilizzo delle risorse di memoria gestita da parte dell'applicazione  
   
-   -oppure-  
+   oppure  
   
 - esecuzione di procedure per limitare i vincoli architettonici alla dimensione massima della memoria virtuale per un processo a 32 bit  
   
@@ -64,7 +64,7 @@ ID regola | DA0018 |
   
   Usare la [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md) per determinare il percorso di esecuzione che ha comportato queste allocazioni.  
   
-  Per altre informazioni su come migliorare le prestazioni di Garbage Collection, vedere l'articolo tecnico di .NET Framework, [Garbage Collector Basics and Performance Hints](https://go.microsoft.com/fwlink/?LinkId=177946) (Nozioni fondamentali su Garbage Collector e suggerimenti sulle prestazioni) sul sito Web MSDN.  
+  Per altre informazioni su come migliorare le prestazioni di Garbage Collection, vedere l'articolo tecnico di .NET Framework, [Garbage Collector Basics and Performance Hints](https://msdn.microsoft.com/library/ms973837.aspx) (Nozioni fondamentali su Garbage Collector e suggerimenti sulle prestazioni) sul sito Web MSDN.  
   
   Per limitare i vincoli della memoria virtuale sull'architettura alla dimensione della parte privata di uno spazio degli indirizzi del processo, provare a eseguire questo processo a 32 bit su un computer a 64 bit.  Un processo a 32 bit su un computer a 64 bit può acquisire fino a 4 GB di memoria virtuale privata.  
   

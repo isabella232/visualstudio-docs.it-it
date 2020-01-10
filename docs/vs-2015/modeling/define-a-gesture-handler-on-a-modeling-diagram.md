@@ -12,21 +12,21 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299302"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850484"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definire un gestore modelli in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio è possibile definire i comandi eseguiti quando l'utente trascina o fa doppio clic sugli elementi in un diagramma UML. È possibile creare un pacchetto di queste estensioni in un progetto[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
+In Visual Studio è possibile definire i comandi eseguiti quando l'utente trascina o fa doppio clic sugli elementi in un diagramma UML. È possibile creare un pacchetto di queste estensioni in un progetto[VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
 
  Se esiste già un comportamento predefinito per il tipo di diagramma e il tipo di elemento che si vuole trascinare, potrebbe non essere possibile aggiungere o modificare questo comportamento.
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -56,7 +56,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
 1. Creare un progetto Libreria di classi in una nuova soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o in una soluzione esistente.
 
-   1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
+   1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
 
    2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.
 
@@ -280,7 +280,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
  I parametri di questi metodi sono i seguenti:
 
-- `ShapeElement target` Forma o diagramma in cui l'utente ha trascinato un elemento.
+- `ShapeElement target`. Forma o diagramma in cui l'utente ha trascinato un elemento.
 
     `ShapeElement` è una classe nell'implementazione sottostante gli strumenti di modellazione UML. Per ridurre il rischio di porre il modello UML e i diagrammi in uno stato non coerente, evitare di usare i metodi di questa classe direttamente. Eseguire invece il wrapping dell'elemento in un `IShape`e quindi usare i metodi descritti in [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).
 
@@ -311,7 +311,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
       target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE
       ```
 
-- `DiagramDragEventArgs eventArgs` Questo parametro contiene il formato serializzato dell'oggetto di origine di un'operazione di trascinamento:
+- `DiagramDragEventArgs eventArgs`. Questo parametro contiene il formato serializzato dell'oggetto di origine di un'operazione di trascinamento:
 
     ```
     System.Windows.Forms.IDataObject data = eventArgs.Data;

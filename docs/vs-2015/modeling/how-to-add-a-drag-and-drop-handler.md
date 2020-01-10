@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ca68005f71d642650a2d9b024a16883de5eaddf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3bbb4500eb4792f77a7011bd95dd06d05d0ff8d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298944"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850430"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: aggiungere un gestore di trascinamento della selezione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,9 +170,9 @@ using System.Linq;
 
 1. Rendere il linguaggio DSL di origine accessibile da ModelBus di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
 
-    1. Scaricare e installare l'estensione di ModelBus di Visual Studio, se non è già installata. Per altre informazioni, vedere [SDK di visualizzazione e modellazione](https://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Scaricare e installare l'estensione di ModelBus di Visual Studio, se non è già installata. Per altre informazioni, vedere [Visualization and Modeling SDK](https://www.visualstudio.com/).
 
-    2. Aprire il file di definizione DSL del linguaggio DSL di origine in Progettazione DSL. Fare clic con il pulsante destro del mouse sull'area di progettazione e quindi scegliere **Abilita ModelBus**. Nella finestra di dialogo scegliere una o entrambe le opzioni.  fare clic su **OK**. Un nuovo progetto "ModelBus" viene aggiunto alla soluzione DSL.
+    2. Aprire il file di definizione DSL del linguaggio DSL di origine in Progettazione DSL. Fare doppio clic nell'area di progettazione e quindi fare clic su **Abilita Modelbus**. Nella finestra di dialogo scegliere una o entrambe le opzioni.  Fare clic su **OK**. Un nuovo progetto "ModelBus" viene aggiunto alla soluzione DSL.
 
     3. Fare clic su **trasforma tutti i modelli** e ricompilare la soluzione.
 

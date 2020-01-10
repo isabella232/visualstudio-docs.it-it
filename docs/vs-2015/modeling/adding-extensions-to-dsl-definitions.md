@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aeeac82b27b4b5bb71ed05ba658bf9ee048bd85d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 72c5968fccb55a265639ff05c600bd5f97a9f90a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292145"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852097"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Aggiunta di estensioni alle definizioni DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ L'estensione di definizione DSL consente di creare un pacchetto di estensioni a 
 
   Un utente di un linguaggio DSL esteso può creare e salvare un modello che contiene istanze delle funzionalità aggiuntive, che possono essere lette da altri utenti che hanno installato l'estensione appropriata. Gli utenti che non hanno installato l'estensione non possono usare le funzionalità aggiuntive, ma possono aggiornare e salvare un modello senza perdere le funzionalità aggiuntive.
 
-  Per il codice di esempio e altre informazioni su questa funzionalità, vedere il sito Web dell' [SDK di visualizzazione e modellazione di Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186128) .
+  Per il codice di esempio e altre informazioni su questa funzionalità, vedere il sito Web dell' [SDK di visualizzazione e modellazione di Visual Studio](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
 
 ## <a name="see-also"></a>Vedere anche
- [SDK di visualizzazione e modellazione di Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186128)
+ [SDK di visualizzazione e modellazione di Visual Studio](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

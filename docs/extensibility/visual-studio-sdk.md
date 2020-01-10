@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 5949a651c99c0ce45f963b5f2042cdfe6cb40b87
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568829"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848584"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di integrare nuove funzionalità in Visual Studio. È possibile distribuire le estensioni ad altri utenti e al Visual Studio Marketplace. Di seguito sono illustrati alcuni dei modi in cui si può estendere Visual Studio:
@@ -60,7 +60,7 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di i
  Informazioni di riferimento sulle API di Visual Studio SDK sono disponibili in [riferimenti a Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 
 ## <a name="visual-studio-sdk-samples"></a>Esempi di Visual Studio SDK
- È possibile trovare esempi Open Source di estensioni di Visual Studio SDK in GitHub in [Visual Studio Samples](https://aka.ms/vs2015sdksamples). Questo repository GitHub contiene esempi che illustrano varie funzionalità estendibili in Visual Studio.
+ È possibile trovare esempi Open Source di estensioni di Visual Studio SDK in GitHub in [Visual Studio Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Questo repository GitHub contiene esempi che illustrano varie funzionalità estendibili in Visual Studio.
 
 ## <a name="other-visual-studio-sdk-resources"></a>Altre risorse di Visual Studio SDK
  In caso di domande su VSSDK o se si vuole condividere le proprie esperienze sviluppando estensioni, è possibile usare il [Forum di estendibilità di Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) o la [chat di ExtendVS](https://gitter.im/Microsoft/extendvs).

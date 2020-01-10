@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7452e8394b6397b79c49b9b706db5ba8899351e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 40806f988bec184f2cf880fc373d8fda0634dda1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291174"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850852"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Byte privati massimi allocati per il processo sottoposto a profilatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ ID regola | DA0506 |
 ## <a name="rule-description"></a>Descrizione della regola  
  Questo messaggio indica la quantità massima di memoria virtuale che il processo ha attualmente allocato in byte (byte privati). I byte privati rappresentano percorsi di memoria virtuale allocati dal processo al quale possono accedere solo thread in esecuzione all'interno del processo.  
   
- Per i processi a 32 bit in esecuzione in un computer a 32 bit, il limite superiore della parte privata dello spazio degli indirizzi del processo è di 2 GB. Tramite l'opzione di Boot.ini [/3 GB](https://go.microsoft.com/fwlink/?LinkId=177831) i processi a 3 bit possono acquisire fino a 32 GB di memoria virtuale. Un processo a 32 bit in esecuzione su un computer a 64 bit può acquisire fino a 4 GB di memoria virtuale privata.  
+ Per i processi a 32 bit in esecuzione in un computer a 32 bit, il limite superiore della parte privata dello spazio degli indirizzi del processo è di 2 GB. Tramite l'opzione di Boot.ini [/3 GB](https://msdn.microsoft.com/library/ff556232.aspx) i processi a 3 bit possono acquisire fino a 32 GB di memoria virtuale. Un processo a 32 bit in esecuzione su un computer a 64 bit può acquisire fino a 4 GB di memoria virtuale privata.  
   
  Un processo a 64 bit in esecuzione su un computer a 64 bit può acquisire fino a 8 TB di memoria virtuale privata.  
   
  Il valore indicato è il valore massimo fra tutti gli intervalli di misurazione nei quali il processo sottoposto a profilatura era attivo.  
   
- Per altre informazioni sugli spazi degli indirizzi del processo, vedere [Virtual Address Space](https://go.microsoft.com/fwlink/?LinkId=177832) (Spazio degli indirizzi virtuali) nella documentazione relativa alla gestione della memoria di Windows.  
+ Per altre informazioni sugli spazi degli indirizzi del processo, vedere [Virtual Address Space](https://msdn.microsoft.com/library/aa366912.aspx) (Spazio degli indirizzi virtuali) nella documentazione relativa alla gestione della memoria di Windows.  
   
 ## <a name="how-to-use-rule-data"></a>Come usare i dati della regola  
  Usare il valore indicato per confrontare le prestazioni di versioni o compilazioni diverse del programma o per ottenere informazioni sulle prestazioni dell'applicazione in scenari di profilatura diversi.  
   
- Un valore massimo di byte privati di processo quasi al limite architettonico in base al quale vengono definite le dimensioni massime di uno spazio degli indirizzi di processo può determinare eccezioni di memoria insufficiente. Per altre informazioni, vedere [Investigating Memory Issues](https://go.microsoft.com/fwlink/?LinkID=177833) (Analisi dei problemi di memoria) in MSDN Magazine.
+ Un valore massimo di byte privati di processo quasi al limite architettonico in base al quale vengono definite le dimensioni massime di uno spazio degli indirizzi di processo può determinare eccezioni di memoria insufficiente. Per altre informazioni, vedere [Investigating Memory Issues](https://msdn.microsoft.com/magazine/cc163528.aspx) (Analisi dei problemi di memoria) in MSDN Magazine.

@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d5ddea477aa7295c41097177265b43483b7aa45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300887"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850407"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedura: aggiungere un comando al menu di scelta rapida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300887"
 
 3. [Scrivere i metodi nella classe commandt](#CommandSet) per rendere visibile il comando e definire quello che si vuole eseguire per il comando.
 
-   Per esempi, vedere il [sito Web SDK di visualizzazione e modellazione](https://go.microsoft.com/fwlink/?LinkID=185579).
+   Per esempi, vedere il [sito Web SDK di visualizzazione e modellazione](https://www.visualstudio.com/).
 
 > [!NOTE]
 > È inoltre possibile modificare il comportamento di alcuni comandi esistenti quali Taglia, Incolla, Seleziona tutto e Stampa eseguendo l'override dei metodi in CommandSet.cs. Per altre informazioni, vedere [procedura: modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -223,7 +223,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  I frammenti seguenti sono spesso utili nei metodi OnStatus:
 
-- `this.CurrentSelection` La forma su cui l'utente ha fatto clic con il pulsante destro del mouse è sempre inclusa in questo elenco. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
+- `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse è sempre inclusa in questo elenco. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
 
 - `this.IsDiagramSelected()` - `true` se l'utente ha fatto clic su una parte vuota del diagramma.
 

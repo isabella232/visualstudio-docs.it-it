@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299619"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844279"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un'istanza di WCF Data Services con WPF ed Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 - Il database di esempio Northwind.
 
-     Se questo database non è presente nel computer di sviluppo, è possibile scaricarlo dall' [Area download Microsoft](https://go.microsoft.com/fwlink/?LinkID=98088). Per istruzioni, vedere [download di database di esempio](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
+     Se questo database non è presente nel computer di sviluppo, è possibile scaricarlo dall' [Area download Microsoft](https://www.microsoft.com/downloads). Per istruzioni, vedere [download di database di esempio](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
 
 ## <a name="creating-the-service"></a>Creazione del servizio
  Per creare un servizio [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], è necessario aggiungere un progetto Web, creare un modello [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)], quindi creare il servizio dal modello.
@@ -82,7 +82,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
    - Nell'elenco a discesa scegliere una connessione dati al database di esempio Northwind, se disponibile.
 
-        -oppure-
+        oppure
 
    - Scegliere il pulsante **Nuova connessione** per configurare una nuova connessione dati. Per altre informazioni, vedere [aggiungere nuove connessioni](../data-tools/add-new-connections.md).
 

@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8f6047e6104467b5b0516fba26fc39f402dfaac9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297126"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845652"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso dei dati di IntelliTrace salvati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 - Un file .iTrace da una di queste origini:  
   
-    |**Origine**|**Vedere**|  
+    |**Source**|**Vedere**|  
     |----------------|-------------|  
     |Una sessione di IntelliTrace in Visual Studio Visual Studio Enterprise (ma non edizioni Professional o Community)|[Funzionalità IntelliTrace](../debugger/intellitrace-features.md)|  
     |Una sessione di test in Microsoft Test Manager. Ciò consente di associare un file .iTrace a un elemento di lavoro Team Foundation Server.|[Raccogliere un maggior numero di dati di diagnostica durante i test manuali](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -71,7 +71,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 ## <a name="Understand"></a> Leggere il log IntelliTrace  
  Alcune delle seguenti sezioni del file .iTrace vengono visualizzate solo se si raccolgono dati da una determinata origine, ad esempio applicazioni Test Manager o SharePoint.  
   
-|**Sezione**|**Contiene**|**Origine della raccolta**|  
+|**Section**|**Contiene**|**Origine della raccolta**|  
 |-----------------|------------------|---------------------------|  
 |[Violazioni di prestazioni](#Performance)|Eventi di prestazioni con chiamate di funzione che superano la soglia configurata|Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012 R2 Operations Manager, per app Web ASP.NET ospitate in IIS|  
 |[Dati eccezione](#ExceptionData)|Eccezioni, incluso lo stack di chiamate completo per ogni eccezione|Tutte le origini|  
@@ -225,7 +225,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |**Colonna**|**Mostra**|  
 |----------------|-------------------|  
 |**ID**|Numero ID del thread|  
-|**Nome**|Nome del thread. I thread senza nome vengono visualizzati come "\<Nessun nome>".|  
+|**Name**|Nome del thread. I thread senza nome vengono visualizzati come "\<Nessun nome>".|  
 |**Ora di inizio**|Ora di creazione del thread|  
 |**Ora di fine**|Ora di completamento del thread|  
   
@@ -270,7 +270,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Forums  
- [Debugger di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Debugger di Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)  
   
-#### <a name="guidance"></a>Materiale sussidiario  
- [Test per una distribuzione continua con Visual Studio 2012 – Capitolo 6: Casella degli strumenti per test](https://go.microsoft.com/fwlink/?LinkID=255203)
+#### <a name="guidance"></a>Informazioni aggiuntive  
+ [Test per una distribuzione continua con Visual Studio 2012 – Capitolo 6: Casella degli strumenti per test](https://msdn.microsoft.com/library/jj159337.aspx)

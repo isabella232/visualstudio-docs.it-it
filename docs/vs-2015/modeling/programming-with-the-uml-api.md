@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcb179ae80e60654c981da8c76e9a57e6fb8ed66
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bdf1111198c7f874d03596382372fe25851e37d3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296060"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852122"
 ---
 # <a name="programming-with-the-uml-api"></a>Programmazione con l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ L'API UML di Visual Studio consente di scrivere codice per creare, leggere e agg
 
 |Argomento|Tipi e i metodi di esempio descritti|Funzionalità descritte|
 |-----------|-----------------------------------------|------------------------|
-|[Esplorare relazioni con l'API UML](../modeling/navigate-relationships-with-the-uml-api.md)|Elementi UML e relative proprietà e associazioni. Ad esempio, IElement e relativi discendenti tra cui: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|In Visual Studio i modelli UML sono conformi alla specifica UML versione 2.1.2, che può essere ottenuta nella [pagina delle risorse UML](https://go.microsoft.com/fwlink/?LinkId=160796). Ogni tipo è un'interfaccia avente lo stesso nome del tipo UML, preceduto da "I".|
+|[Esplorare relazioni con l'API UML](../modeling/navigate-relationships-with-the-uml-api.md)|Elementi UML e relative proprietà e associazioni. Ad esempio, IElement e relativi discendenti tra cui: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|In Visual Studio i modelli UML sono conformi alla specifica UML versione 2.1.2, che può essere ottenuta nella [pagina delle risorse UML](https://www.uml.org/). Ogni tipo è un'interfaccia avente lo stesso nome del tipo UML, preceduto da "I".|
 |[Creare elementi e relazioni nei modelli UML](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Ogni tipo di elemento dispone di metodi per la creazione dei relativi elementi figlio.|
 |[Visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Ogni elemento in un modello può essere rappresentato come una forma in un diagramma. In alcuni casi è possibile creare nuove forme per ogni oggetto. È possibile spostare, ridimensionare, colorare, comprimere o espandere queste forme.|
 |[Esplorare il modello UML](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|L'archivio modelli archivia il modello.<br /><br /> Il contesto del diagramma consente di accedere al diagramma e all'archivio correnti.|

@@ -18,17 +18,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 65059e285777e48633da5eb7e8723e3997f37dfa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300352"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844443"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procedura: Risolvere i problemi relativi agli aggiornamenti di progetti Visual Studio con esito negativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In alcuni casi Visual Studio non è in grado di convertire completamente un progetto da una versione precedente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se i suggerimenti nelle sezioni seguenti non consentono di risolvere il problema specifico, è possibile trovare ulteriori informazioni su TechNet [wiki: portale di sviluppo](https://go.microsoft.com/fwlink/?LinkId=254808).
+In alcuni casi Visual Studio non è in grado di convertire completamente un progetto da una versione precedente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se i suggerimenti nelle sezioni seguenti non consentono di risolvere il problema specifico, è possibile trovare ulteriori informazioni su TechNet [wiki: portale di sviluppo](https://social.technet.microsoft.com/wiki/contents/articles/706.wiki-development-portal.aspx#Visual_Studio).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>Il progetto non viene eseguito perché i file non sono stati trovati
  Un file di progetto contiene percorsi di file hardcoded che [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizza per eseguire il progetto quando si preme F5. Questi percorsi possono includere il percorso di devenv. exe e gli altri file necessari. In una versione aggiornata di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile che i percorsi di questi file siano stati modificati.

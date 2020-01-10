@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b103c2611216a5024d600aafba212919592ff3b3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 414b5ea6a6cf6bf0277ad8d2df51b20c39f558e1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300667"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852172"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelli comuni per applicazioni multithreading con comportamenti non validi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Il visualizzatore di concorrenza consente agli sviluppatori di visualizzare il c
   
  Come illustrato nella figura seguente, il visualizzatore di concorrenza può esporre questo sintomo anche nella visualizzazione Utilizzo CPU, dove è evidente che, nonostante la presenza di più thread, l'applicazione utilizza un solo core logico.  
   
- Per altre informazioni, vedere "Performance Pattern 1: Identifying Lock Contention" (Modello di prestazioni 1: identificazione dei conflitti di blocco) nel blog di Hazim Shafi [Parallel Performance Tools For Windows](https://go.microsoft.com/fwlink/?LinkID=160569) (Strumenti per le prestazioni in parallelo per Windows) nel sito Web dei blog di MSDN.  
+ Per altre informazioni, vedere "Performance Pattern 1: Identifying Lock Contention" (Modello di prestazioni 1: identificazione dei conflitti di blocco) nel blog di Hazim Shafi [Parallel Performance Tools For Windows](https://blogs.msdn.com/hshafi) (Strumenti per le prestazioni in parallelo per Windows) nel sito Web dei blog di MSDN.  
   
  ![Contesa di blocco](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -67,4 +67,4 @@ Il visualizzatore di concorrenza consente agli sviluppatori di visualizzare il c
  Le serie di istruzioni di blocco si verificano quando l'applicazione acquisisce blocchi in base al principio del primo arrivato e la frequenza di arrivo in corrispondenza del blocco è maggiore della frequenza di acquisizione. A causa della combinazione di queste due condizioni le richieste per il blocco iniziano ad accumularsi. Per opporsi a questo problema è possibile fare uso di blocchi "non equi", ovvero blocchi che danno accesso al primo thread che li trova in stato sbloccato. L'illustrazione precedente mostra questo tipo di comportamento delle serie di istruzioni. Per risolvere il problema, ridurre i conflitti tra gli oggetti di sincronizzazione e usare blocchi non equi.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+ [Threads View](../profiling/threads-view-parallel-performance.md) (Visualizzazione thread)

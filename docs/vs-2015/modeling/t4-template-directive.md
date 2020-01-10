@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298141"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850786"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Un modello di testo T4 di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di solito
 
  Valori validi: "", le impostazioni cultura invarianti, che è l'impostazione predefinita.
 
- Impostazioni cultura espresse come una stringa nel formato xx-XX. Ad esempio, it-IT, en-US, ja-JP, de-CH e de-DE. Per altre informazioni, vedere <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+ Impostazioni cultura espresse come una stringa nel formato xx-XX. Ad esempio, it-IT, en-US, ja-JP, de-CH e de-DE. Per ulteriori informazioni, vedere <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
  L'attributo Culture specifica le impostazioni cultura da utilizzare quando un blocco di espressione viene convertito in testo.
 
@@ -211,7 +211,7 @@ This is the common footer.
 
  Per un modello di testo della fase di progettazione, è possibile specificare qualsiasi classe di base derivata da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilizzare la direttiva `<#@assembly#>` per caricare l'assembly o il progetto contenente la classe di base.
 
- Per ulteriori informazioni, vedere ["ereditarietà nei modelli di testo" nel Blog di Gareth Jones](https://go.microsoft.com/fwlink/?LinkId=208373).
+ Per ulteriori informazioni, vedere ["ereditarietà nei modelli di testo" nel Blog di Gareth Jones](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
 
 ## <a name="linepragmas-attribute"></a>Attributo LinePragmas
  Esempio: `linePragmas="false"`

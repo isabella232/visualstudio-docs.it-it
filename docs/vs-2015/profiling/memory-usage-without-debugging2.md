@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37db8a095e8f7b420f14df29de30f265aee49bb6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295701"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850812"
 ---
 # <a name="memory-usage-without-debugging"></a>Utilizzo memoria senza debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,9 +81,9 @@ ms.locfileid: "74295701"
   
 |||  
 |-|-|  
-|![Passaggio 1](../profiling/media/procguid-1.png "ProcGuid_1")|Il testo del link indica il numero totale di byte in memoria quando è stato creato lo snapshot.<br /><br /> Scegli questo link per visualizzare un report dettagli dello snapshot, ordinato in base alla dimensione totale delle istanze di tipo.|  
-|![Passaggio 2](../profiling/media/procguid-2.png "ProcGuid_2")|Il testo del link indica il numero totale di oggetti in memoria quando è stato creato lo snapshot.<br /><br /> Scegli questo link per visualizzare un report dettagli dello snapshot, ordinato in base al numero di istanze dei tipi.|  
-|![Passaggio 3](../profiling/media/procguid-3.png "ProcGuid_3")|Il testo del link indica la differenza tra la dimensione totale degli oggetti in memoria al momento dello snapshot e la dimensione totale dello snapshot precedente.<br /><br /> Il testo del link è un numero positivo quando la dimensione della memoria dello snapshot è maggiore rispetto allo snapshot precedente e un numero negativo quando la dimensione è minore. Il testo del link **Alla linea di base** indica che lo snapshot è il primo della sessione di diagnostica, mentre il testo **Nessuna differenza** indica che la differenza è zero.<br /><br /> Scegli questo link per visualizzare un report delle differenze degli snapshot, ordinato in base alla differenza riguardo alla dimensione totale delle istanze dei tipi.|  
+|![Passaggio 1:](../profiling/media/procguid-1.png "ProcGuid_1")|Il testo del link indica il numero totale di byte in memoria quando è stato creato lo snapshot.<br /><br /> Scegli questo link per visualizzare un report dettagli dello snapshot, ordinato in base alla dimensione totale delle istanze di tipo.|  
+|![Passaggio 2:](../profiling/media/procguid-2.png "ProcGuid_2")|Il testo del link indica il numero totale di oggetti in memoria quando è stato creato lo snapshot.<br /><br /> Scegli questo link per visualizzare un report dettagli dello snapshot, ordinato in base al numero di istanze dei tipi.|  
+|![Passaggio 3:](../profiling/media/procguid-3.png "ProcGuid_3")|Il testo del link indica la differenza tra la dimensione totale degli oggetti in memoria al momento dello snapshot e la dimensione totale dello snapshot precedente.<br /><br /> Il testo del link è un numero positivo quando la dimensione della memoria dello snapshot è maggiore rispetto allo snapshot precedente e un numero negativo quando la dimensione è minore. Il testo del link **Alla linea di base** indica che lo snapshot è il primo della sessione di diagnostica, mentre il testo **Nessuna differenza** indica che la differenza è zero.<br /><br /> Scegli questo link per visualizzare un report delle differenze degli snapshot, ordinato in base alla differenza riguardo alla dimensione totale delle istanze dei tipi.|  
 |![Passaggio 4](../profiling/media/procguid-4.png "ProcGuid_4")|Il testo del link mostra la differenza tra il numero totale di oggetti di memoria nello snapshot e il numero di oggetti nello snapshot precedente.<br /><br /> Scegli questo link per visualizzare un report delle differenze degli snapshot, ordinato in base alla differenza riguardo al numero totale di istanze dei tipi.|  
   
 ## <a name="BKMK_Snapshot_reports"></a> Rapporti degli snapshot  
@@ -207,4 +207,4 @@ ms.locfileid: "74295701"
  [Analizzare le prestazioni delle applicazioni](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [Eseguire strumenti di prestazioni e diagnostica](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [Procedure consigliate per app di Windows Store scritte in C++, C# e Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=394706) (Diagnostica dei problemi di memoria con il nuovo strumento Utilizzo memoria in Visual Studio)
+ [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](https://blogs.msdn.com/b/visualstudioalm/archive/2014/04/02/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio.aspx) (Diagnostica dei problemi di memoria con il nuovo strumento Utilizzo memoria in Visual Studio)

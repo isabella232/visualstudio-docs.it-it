@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299843"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844364"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Sviluppare app per la piattaforma UWP (Universal Windows Platform)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Window
 
  È possibile eseguire le app su telefoni Windows 10, computer desktop Windows 10 o Xbox. Il pacchetto di app non cambia. Con l'introduzione del singolo core unificato Windows 10, un unico pacchetto di app può essere eseguito su tutte le piattaforme. Diverse piattaforme hanno SDK di estensione che è possibile aggiungere alla app per sfruttare i comportamenti specifici di piattaforma. Ad esempio, un SDK di estensione per dispositivi mobili gestisce la pressione del pulsante Indietro su un telefono Windows. Se si fa riferimento a un SDK di estensione nel progetto, è sufficiente aggiungere i controlli di runtime per verificare se tale SDK è disponibile nella piattaforma. In questo modo è possibile avere lo stesso pacchetto di app per ogni piattaforma.
 
- **Che cos'è il core Windows?**
+ **Informazioni sul core di Windows**
 
  Per la prima volta, è stato eseguito il refactoring di Windows per avere a disposizione un core comune a tutte le piattaforme Windows 10. Esiste una sola origine comune, un unico kernel di Windows comune, un unico stack I/O di file e un solo modello di applicazione. Per l'interfaccia utente, esiste un unico framework dell'interfaccia utente XAML e un unico framework dell'interfaccia utente HTML. L'esecuzione delle app su diversi dispositivi Windows 10 è stata semplificata per permettere di concentrarsi sulla creazione di app eccezionali.
 
@@ -33,14 +33,14 @@ Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Window
 
  È semplicemente una raccolta di contratti e versioni che consente di scegliere la destinazione in cui eseguire l'app. La destinazione non è più un sistema operativo, bensì una o più famiglie di dispositivi. Altre informazioni sono disponibili nella [Guida della piattaforma](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
  Gli strumenti di sviluppo di app di Windows universale sono dotati di emulatori che permettono di visualizzare l'aspetto della app in dispositivi diversi. Per usare gli emulatori, è necessario installare questo software in un computer fisico in cui sia in esecuzione Windows 8.1 (x64) Professional o versioni successive e dotato di un processore che supporti Client Hyper-V e Second Level Address Translation (SLAT). Non è possibile eseguire gli emulatori quando Visual Studio è installato in una macchina virtuale.
 
  Elenco del software necessario:
 
 - [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). Assicurarsi che gli strumenti per lo sviluppo di app di Windows universale siano selezionati nell'elenco di funzionalità facoltative. Senza questi strumenti, non sarà possibile creare app universali.
+- [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/). Assicurarsi che gli strumenti per lo sviluppo di app di Windows universale siano selezionati nell'elenco di funzionalità facoltative. Senza questi strumenti, non sarà possibile creare app universali.
 
   Dopo aver installato il software, è necessario [abilitare il dispositivo Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) per lo sviluppo (non è più necessaria una licenza per sviluppatori per ogni dispositivo Windows 10).
 

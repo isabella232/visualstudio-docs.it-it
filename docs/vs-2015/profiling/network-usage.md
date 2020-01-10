@@ -9,14 +9,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297906"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850755"
 ---
-# <a name="network-usage"></a>Utilizzo rete
+# <a name="network-usage"></a>Utilizzo della rete
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere dati sulle operazioni di rete eseguite con l'[API Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). L'analisi dei dati può essere utile nella risoluzione di problemi di accesso e autenticazione, di uso errato della cache, nonché in caso di problemi di prestazioni relativi a visualizzazione e download.  
@@ -75,5 +75,5 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
   
 ## <a name="see-also"></a>Vedere anche  
  [Esegui gli strumenti di profilatura senza debug](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog di Visual Studio: Introduzione al controllo di rete di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Blog di Visual Studio: Introduzione al controllo di rete di Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
  [Video di Channel 9: Strumenti di diagnostica di Visual Studio - Nuovo Profiler di rete](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

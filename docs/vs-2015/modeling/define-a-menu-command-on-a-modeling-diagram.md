@@ -11,19 +11,19 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299261"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850466"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definire un comando di menu in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio è possibile definire altre voci di menu nei menu di scelta rapida di un diagramma UML. È possibile controllare se il comando di menu viene visualizzato ed è abilitato nel menu di scelta rapida di tutti gli elementi del diagramma ed è possibile scrivere codice che viene eseguito quando l'utente sceglie la voce di menu. È possibile creare un pacchetto di queste estensioni in un progetto[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
+In Visual Studio è possibile definire altre voci di menu nei menu di scelta rapida di un diagramma UML. È possibile controllare se il comando di menu viene visualizzato ed è abilitato nel menu di scelta rapida di tutti gli elementi del diagramma ed è possibile scrivere codice che viene eseguito quando l'utente sceglie la voce di menu. È possibile creare un pacchetto di queste estensioni in un progetto[VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -55,7 +55,7 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 
 1. Creare un progetto di libreria di classi in una soluzione di Visual Studio nuova o esistente.
 
-   1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
+   1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
 
    2. In **Modelli installati**selezionare **Visual C#** o **Visual Basic**. Nella colonna centrale scegliere **Libreria di classi**.
 
@@ -65,7 +65,7 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 
 2. Aggiungere i riferimenti seguenti al progetto.
 
-   |                                                                                                    Riferimento                                                                                                    |                                                                                                  Operazioni consentite                                                                                                  |
+   |                                                                                                    Riferimenti                                                                                                    |                                                                                                  Operazioni consentite                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Definire i componenti usando [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Leggere e modificare le proprietà degli elementi del modello.                                                                                         |
@@ -363,4 +363,4 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md) [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definire un elemento della casella degli strumenti di modellazione personalizzato](../modeling/define-a-custom-modeling-toolbox-item.md) [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md) [modificare i diagrammi di sequenza UML usando l'API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) UML [programmazione con l'esempio di API UML](../modeling/programming-with-the-uml-api.md) [: comando per allineare le forme in un diagramma UML](https://go.microsoft.com/fwlink/?LinkID=213809)
+ [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md) [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definire un elemento della casella degli strumenti di modellazione personalizzato](../modeling/define-a-custom-modeling-toolbox-item.md) [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md) [modificare i diagrammi di sequenza UML usando l'API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) UML [programmazione con l'esempio di API UML](../modeling/programming-with-the-uml-api.md) [: comando per allineare le forme in un diagramma UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300250"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852016"
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le idee sul codice e i requisiti dell'utente che devono supportare il sistema software. Ad esempio, per descrivere e comunicare i requisiti utente, è possibile usare caso di utilizzo, attività, classe e diagrammi di sequenza UML (Unified Modeling Language). Per descrivere e comunicare le funzionalità del sistema, è possibile usare il componente, la classe, l'attività e i diagrammi di sequenza UML.
 
- Vedere [video di Channel 9: migliorare l'architettura tramite la modellazione](https://go.microsoft.com/fwlink/?LinkID=252078).
+ Vedere [video di Channel 9: migliorare l'architettura tramite la modellazione](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
  In questa versione è possibile creare i diagrammi UML seguenti:
 
@@ -68,12 +68,12 @@ I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le 
 |**Diagramma**|**Mostra**|
 |-----------------|---------------|
 |[Diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md)|Architettura di alto livello del sistema|
-|Mappe codice<br /><br /> [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dipendenze e altre relazioni nel codice esistente|
+|Mappe codici<br /><br /> [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dipendenze e altre relazioni nel codice esistente|
 |Diagrammi classi generati dal codice<br /><br /> [Uso dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md)|Tipi e relative relazioni nel codice .NET|
 
 ## <a name="common-tasks"></a>Attività comuni
 
-|**Argomento**|**Attività**|
+|**Argomento**|**Task**|
 |---------------|--------------|
 |[Creare diagrammi e progetti di modellazione UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Creare modelli** e aggiungere diagrammi.|
 |[Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)|**Creare diagrammi** per modificare il modello.|
@@ -85,7 +85,7 @@ I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le 
 
 ## <a name="related-tasks"></a>Attività correlate
 
-|**Argomento**|**Attività**|
+|**Argomento**|**Task**|
 |---------------|--------------|
 |[Visualizzare il codice](../modeling/visualize-code.md)|Creare mappe codice e diagrammi livello per meglio comprendere il codice non conosciuto.|
 |[Modellare i requisiti utente](../modeling/model-user-requirements.md)|Usare modelli per chiarire e comunicare le esigenze degli utenti.|
@@ -98,4 +98,4 @@ I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le 
 
 |**Categoria**|**Links**|
 |------------------|---------------|
-|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

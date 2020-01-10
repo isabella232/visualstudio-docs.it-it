@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590501"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846923"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -91,13 +91,16 @@ Spesso è più rapido generare il progetto di unit test e gli stub di unit test 
 
    ::: moniker range="vs-2017"
    ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/createunittestsrightclick.png)
-   ::: moniker-end
-   ::: moniker range=">=vs-2019"
-   ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/vs-2019/basics-create-unit-tests.png)
-   ::: moniker-end
 
    > [!NOTE]
    > Il comando di menu **Crea unit test** è disponibile solo per il codice gestito destinato a .NET Framework (ma non a .NET Core).
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > Il comando di menu **Crea unit test** è disponibile solo per il codice gestito.
+   ::: moniker-end
 
 2. Fare clic su **OK** per accettare le impostazioni predefinite per creare gli unit test oppure modificare i valori usati per creare e denominare il progetto di unit test e gli unit test. È possibile selezionare il codice aggiunto per impostazione predefinita ai metodi di unit test.
 

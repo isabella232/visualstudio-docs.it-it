@@ -7,25 +7,25 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188718"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846936"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Come visualizzare e diagnosticare contenitori e immagini in Visual Studio
 
 È possibile visualizzare gli elementi in corso all'interno dei contenitori che ospitano l'app usando la finestra **contenitori** . Se si è abituati a usare il prompt dei comandi per eseguire comandi di Docker per visualizzare e diagnosticare ciò che accade nei contenitori, questa finestra offre un modo più pratico per monitorare i contenitori senza uscire dall'IDE di Visual Studio.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual studio 2019 versione 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) o successiva o se si usa una versione precedente di visual studio 2019, installare l'estensione della [finestra contenitori](https://aka.ms/vscontainerspreview).
+- [Visual studio 2019 versione 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) o successiva o se si usa una versione precedente di visual studio 2019, installare l'estensione della [finestra contenitori](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions).
 
 ## <a name="view-information-about-your-containers"></a>Visualizzare le informazioni sui contenitori
 
-La finestra **contenitori** viene visualizzata automaticamente quando si avvia un progetto .NET in contenitori. Per visualizzare i contenitori in Visual Studio in qualsiasi momento, usare **Ctrl** +**Q** per attivare la casella di ricerca di visual studio e digitare `Containers` e scegliere il primo elemento. È anche possibile aprire la finestra **contenitori** dal menu principale. Utilizzare la **visualizzazione** percorso menu  > **altri** **contenitori** >  Windows.  
+La finestra **contenitori** viene visualizzata automaticamente quando si avvia un progetto .NET in contenitori. Per visualizzare i contenitori in Visual Studio in qualsiasi momento, usare **Ctrl**+**Q** per attivare la casella di ricerca di visual studio e digitare `Containers` e scegliere il primo elemento. È anche possibile aprire la finestra **contenitori** dal menu principale. Utilizzare la **visualizzazione** percorso menu > **altri** **contenitori** > Windows.  
 
 ![Screenshot della scheda ambiente nella finestra contenitori](media/view-and-diagnose-containers/container-window.png)
 
@@ -60,7 +60,7 @@ La scheda **logs** Mostra i risultati del comando `docker logs`. Per impostazion
 Per cancellare i log, usare il pulsante **Cancella** nella scheda **logs** .  Per ottenere tutti i log, usare il pulsante **Aggiorna** .
 
 > [!NOTE]
-> Visual Studio reindirizza automaticamente stdout e stderr alla finestra di **output** quando si esegue senza eseguire il debug con i contenitori di Windows, quindi i contenitori di Windows avviati da Visual Studio con **CTRL** +**F5** non visualizzeranno i log in Questa scheda; usare invece la finestra **output** .
+> Visual Studio reindirizza automaticamente stdout e stderr alla finestra di **output** quando si esegue senza eseguire il debug con i contenitori di Windows, quindi i contenitori di Windows avviati da Visual Studio con **CTRL**+**F5** non visualizzeranno i log in questa scheda. usare invece la finestra **output** .
 
 ## <a name="view-the-filesystem"></a>Visualizzare il file System
 

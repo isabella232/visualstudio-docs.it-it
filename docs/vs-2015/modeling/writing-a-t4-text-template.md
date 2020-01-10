@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bcd5a4996db4a5e374baabe4f52d5fd1dbac2e5e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e590af12e8979d16a946339cae530fd5ccc1b08d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301121"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850732"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +242,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Caricare un file come modello esplorabile**. Un metodo più efficace è leggere i dati come un modello, in cui è possibile spostarsi con il codice del modello di testo. Ad esempio, è possibile caricare un file XML e spostarsi al suo interno con espressioni XPath. È inoltre possibile utilizzare [xsd. exe](https://go.microsoft.com/fwlink/?LinkId=178765) per creare un set di classi con cui è possibile leggere i dati XML.
+ **Caricare un file come modello esplorabile**. Un metodo più efficace è leggere i dati come un modello, in cui è possibile spostarsi con il codice del modello di testo. Ad esempio, è possibile caricare un file XML e spostarsi al suo interno con espressioni XPath. È inoltre possibile utilizzare [xsd. exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) per creare un set di classi con cui è possibile leggere i dati XML.
 
  **Modificare il file del modello in un diagramma o in un form.** [!INCLUDE[dsl](../includes/dsl-md.md)] fornisce strumenti che consentono di modificare un modello come diagramma o Windows Form. In questo modo diventa più semplice illustrare il modello agli utenti dell'applicazione generata. [!INCLUDE[dsl](../includes/dsl-md.md)] crea anche un set di classi fortemente tipizzate che riflettono la struttura del modello. Per ulteriori informazioni, vedere [generazione di codice da un Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 

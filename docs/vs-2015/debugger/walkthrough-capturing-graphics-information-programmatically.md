@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296918"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847814"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: cattura programmatica delle informazioni grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Preparazione del computer per usare l'acquisizione a livello di codice  
  L'API di acquisizione a livello di codice usa Remote Tools per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per rendere disponibili funzionalità di acquisizione. Nel computer in cui verrà eseguita l'app devono essere installati gli strumenti remoti, anche se si usa l'acquisizione a livello di codice nel computer locale. Quando si usa l'acquisizione a livello di codice nel computer locale, non è necessario che[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sia in esecuzione.  
   
- Per usare le API di acquisizione remota in un'app in esecuzione in un computer, è prima di tutto necessario installare Remote Tools per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nel computer. Versioni diverse degli strumenti remoti supportano piattaforme hardware diverse. Per informazioni su come installare gli strumenti remoti, vedere la pagina di [download di Remote Tools](https://go.microsoft.com/fwlink/p/?LinkId=246691) nel sito Web dei download Microsoft.  
+ Per usare le API di acquisizione remota in un'app in esecuzione in un computer, è prima di tutto necessario installare Remote Tools per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nel computer. Versioni diverse degli strumenti remoti supportano piattaforme hardware diverse. Per informazioni su come installare gli strumenti remoti, vedere la pagina di [download di Remote Tools](https://visualstudio.microsoft.com/downloads#remote-tools) nel sito Web dei download Microsoft.  
   
  In alternativa, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installa i componenti necessari per eseguire l'acquisizione remota per app a 32 bit.  
   
@@ -182,7 +182,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
    Se non si esegue questo passaggio, il file verrà denominato default.vsglog. Se `DONT_SAVE_VSGLOG_TO_TEMP`non è stato definito, il percorso del file è relativo alla directory temporanea. In caso contrario, è relativo alla directory di lavoro o a un'altra posizione se è stato specificato un nome file assoluto.  
   
-  Per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app, il percorso della directory temporanea è specifico per ogni utente e app e si trova in genere in un percorso come C:\Users\\*nomeutente*\AppData\Local\Packages\\nome della *famiglia di pacchetti*\TempState\\. Per le applicazioni desktop, il percorso della directory temporanea è specifico per ogni utente e in genere si trova in un percorso, ad esempio C:\Users\\*nomeutente*\AppData\Local\Temp\\.  
+  Per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app, il percorso della directory temporanea è specifico per ogni utente e app e si trova in genere in un percorso come C:\Users\\*nomeutente*\AppData\Local\Packages\\nome della *famiglia di pacchetti*\TempState\\. Per le app desktop, il percorso della directory temporanea è specifico per ogni utente e si trova in genere in un percorso, ad esempio C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 > Per scrivere in una posizione specifica è necessario disporre delle autorizzazioni per la scrittura in quella posizione. In caso contrario, si verificherà un errore. Tenere presente che le app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] hanno più restrizioni rispetto alle app desktop sui percorsi in cui è possibile scrivere dati e che per scrivere in determinati percorsi può essere necessario eseguire operazioni di configurazione aggiuntive.  

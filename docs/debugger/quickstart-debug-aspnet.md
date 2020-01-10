@@ -1,6 +1,6 @@
 ---
-title: Debug di ASP.NET
-description: Eseguire il debug di ASP.NET usando il debugger di Visual Studio
+title: ASP.NET Core di debug
+description: Eseguire il debug di ASP.NET Core usando il debugger di Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 932c8331b7b706b783868a52e47afc5ead25ef9c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679251"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847880"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug di ASP.NET con il debugger di Visual Studio
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Guida introduttiva: eseguire il debug di ASP.NET Core con il debugger di Visual Studio
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
     ::: moniker range=">=vs-2019"
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **asp.net**, scegliere **Modelli**, quindi scegliere **Crea una nuova applicazione Web ASP.NET Core**. Nella finestra di dialogo visualizzata scegliere **Crea**.
@@ -76,7 +76,7 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
 
 ## <a name="set-a-breakpoint"></a>Imposta punto di interruzione
 
-Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice. È la più semplice funzionalità di debug.
+Un *punto di interruzione* indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice. È la più semplice funzionalità di debug.
 
 1. Per impostare il punto di interruzione, fare clic nella barra di navigazione a sinistra della funzione `doWork` o selezionare la riga di codice e premere **F9**.
 
@@ -99,7 +99,7 @@ Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual S
 
 Sono disponibili diversi comandi per indicare al debugger di continuare. Viene illustrato un utile comando di esplorazione del codice disponibile a partire da Visual Studio 2017.
 
-Mentre l'elaborazione è ferma al punto di interruzione, passare il mouse sopra l'istruzione `return c2` finché appare il pulsante verde **Esegui fino alla riga selezionata** ![Esegui fino alla riga selezionata](../debugger/media/dbg-tour-run-to-click.png) quindi premere il pulsante **Esegui fino alla riga selezionata**.
+Mentre l'elaborazione è ferma al punto di interruzione, passare il mouse sopra l'istruzione `return c2` finché appare il pulsante verde **Esegui fino alla riga selezionata**![Esegui fino alla riga selezionata](../debugger/media/dbg-tour-run-to-click.png) quindi premere il pulsante **Esegui fino alla riga selezionata**.
 
 ![Esegui fino alla riga selezionata](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
@@ -127,7 +127,7 @@ Se durante una sessione di debug, nel codice si rileva una modifica che si desid
 
 1. Premere **F10** (o selezionare **Debug > Esegui istruzione/routine**) alcune volte per far avanzare il debugger ed eseguire il codice modificato.
 
-    ![Modifica e continua](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Modifica e continua")
+    ![Modifica e continuazione](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Modifica e continuazione")
 
     **F10** fa avanzare il debugger un'istruzione alla volta, ma ignora le funzioni anziché fermarsi. Il codice ignorato viene comunque eseguito.
 

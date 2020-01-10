@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295623"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852224"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Associazione di scelte rapide da tastiera a voci di menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Per associare un tasto di scelta rapida a un comando di menu personalizzato, è 
   
    Nella maggior parte dei casi, lo **spostamento** non deve essere usato senza un secondo modificatore perché la pressione della maggior parte delle chiavi alfanumeriche consente di digitare una lettera maiuscola o un simbolo.  
   
-   I codici a chiave virtuale consentono di accedere a tasti speciali a cui non è associato alcun carattere, ad esempio i tasti funzione e il tasto **BACKSPACE** . Per ulteriori informazioni, vedere [codici chiave virtuale](https://go.microsoft.com/fwlink/?LinkID=105932).  
+   I codici a chiave virtuale consentono di accedere a tasti speciali a cui non è associato alcun carattere, ad esempio i tasti funzione e il tasto **BACKSPACE** . Per ulteriori informazioni, vedere [codici chiave virtuale](https://msdn2.microsoft.com/library/ms645540.aspx).  
   
    Per rendere il comando disponibile nell'editor di Visual Studio, impostare l'attributo `editor` su `guidVSStd97`.  
   

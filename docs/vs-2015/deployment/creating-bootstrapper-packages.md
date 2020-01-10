@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300726"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845526"
 ---
 # <a name="creating-bootstrapper-packages"></a>Creazione di programmi di avvio automatico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  La tabella seguente illustra le proprietà popolate automaticamente dal programma di avvio automatico.  
   
-|Proprietà|Descrizione|  
+|Gli|Descrizione|  
 |--------------|-----------------|  
 |ApplicationName|Nome dell'applicazione.|  
 |ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
@@ -128,4 +128,4 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
  [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Prerequisiti (finestra di dialogo)](../ide/reference/prerequisites-dialog-box.md)   
  [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)   
- [Usare il programma di avvio automatico di Visual Studio 2005 per avviare l'installazione](https://go.microsoft.com/fwlink/?LinkId=107537)
+ [Usare il programma di avvio automatico di Visual Studio 2005 per avviare l'installazione](https://msdn.microsoft.com/magazine/cc163899.aspx)

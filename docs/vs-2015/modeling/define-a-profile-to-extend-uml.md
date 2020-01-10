@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295671"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850479"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definire un profilo per estendere UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "74295671"
 6. Inviare il file dell'estensione ad altri utenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che lo installeranno nei rispettivi computer.
 
 ## <a name="AddProfile"></a>Come aggiungere un profilo a un'estensione di Visual Studio
- Per installare un profilo e poterlo inviare ad altri utenti, è necessario aggiungerlo a un'estensione di Visual Studio. Per ulteriori informazioni, vedere [distribuzione delle estensioni di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Per installare un profilo e poterlo inviare ad altri utenti, è necessario aggiungerlo a un'estensione di Visual Studio. Per ulteriori informazioni, vedere [distribuzione delle estensioni di Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Per definire un profilo in una nuova estensione di Visual Studio
 
@@ -105,7 +105,7 @@ ms.locfileid: "74295671"
 
 5. Nella pagina **Asset** aggiungere una riga che descrive il profilo:
 
-   - Fare clic su **New**. Impostare i campi nella finestra di dialogo **Aggiungi nuovo asset** come indicato di seguito.
+   - Fare clic su **Nuovo**. Impostare i campi nella finestra di dialogo **Aggiungi nuovo asset** come indicato di seguito.
 
    - Imposta il **tipo** su `Microsoft.VisualStudio.UmlProfile`
 
@@ -196,7 +196,7 @@ ms.locfileid: "74295671"
     > [!NOTE]
     > Se si sta compilando l'estensione usando un progetto di estensione di Visual Studio, usare Esplora soluzioni per aggiungere una nuova cartella al progetto.
 
-3. Sostituire il nome della nuova directory con il codice breve ISO delle impostazioni cultura localizzate, ad esempio `bg` per il bulgaro o `fr` per il francese. È consigliabile usare un codice indipendente dalle impostazioni cultura, in genere costituito da due lettere, non il codice delle impostazioni cultura specifiche come ad esempio `fr-CA`. Per ulteriori informazioni sui codici delle impostazioni cultura, vedere [Metodo CultureInfo. GetCultures](https://go.microsoft.com/fwlink/?LinkId=160782), che fornisce un elenco completo di codici delle impostazioni cultura.
+3. Sostituire il nome della nuova directory con il codice breve ISO delle impostazioni cultura localizzate, ad esempio `bg` per il bulgaro o `fr` per il francese. È consigliabile usare un codice indipendente dalle impostazioni cultura, in genere costituito da due lettere, non il codice delle impostazioni cultura specifiche come ad esempio `fr-CA`. Per ulteriori informazioni sui codici delle impostazioni cultura, vedere [Metodo CultureInfo. GetCultures](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), che fornisce un elenco completo di codici delle impostazioni cultura.
 
 4. Aggiungere una copia del profilo predefinito alla nuova directory. Non modificare il nome file.
 
@@ -220,7 +220,7 @@ ms.locfileid: "74295671"
 7. Compilare l'estensione di Visual Studio, compilando il progetto di estensione o comprimendo tutti i file, come spiegato nelle precedenti sezioni.
 
 ## <a name="Schema"></a>Struttura di un profilo
- Il file XSD per i profili UML è disponibile nell'esempio seguente: [impostazione di stereotipi e profili XSD](https://go.microsoft.com/fwlink/?LinkID=213811). Per facilitare la modifica dei file di profilo, installare il file `.xsd` in:
+ Il file XSD per i profili UML è disponibile nell'esempio seguente: [impostazione di stereotipi e profili XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Per facilitare la modifica dei file di profilo, installare il file `.xsd` in:
 
  **%Programmi%\Microsoft Visual Studio [versione] \Xml\schemas.**
 
@@ -365,4 +365,4 @@ ms.locfileid: "74295671"
 6. Riavvia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>Vedere anche
- [Aggiungere stereotipi agli elementi del modello UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md) stereotipi [standard per i modelli UML](../modeling/standard-stereotypes-for-uml-models.md) [esempio: color UML elementi per stereotipo](https://go.microsoft.com/fwlink/?LinkID=213841) [esempio: impostazione di stereotipi, profili XSD](https://go.microsoft.com/fwlink/?LinkID=213811)
+ [Aggiungere stereotipi agli elementi del modello UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md) stereotipi [standard per i modelli UML](../modeling/standard-stereotypes-for-uml-models.md) [esempio: color UML elementi per stereotipo](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [esempio: impostazione di stereotipi, profili XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

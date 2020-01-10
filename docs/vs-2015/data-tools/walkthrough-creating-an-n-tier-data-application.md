@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 195a3a36b53e5f84f6052a15e01007bb5ed77fac
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299589"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844193"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procedura dettagliata: creazione di un'applicazione dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Le applicazioni dati a più livelli * sono applicazioni che accedono ai dati e s
 
 - Scrivere il codice per popolare le tabelle dati.
 
-  ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [procedura: creazione di un'applicazione dati a più livelli](https://go.microsoft.com/fwlink/?LinkId=115188).
+  ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [procedura: creazione di un'applicazione dati a più livelli](https://msdn2.microsoft.com/library/cc178916.aspx).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare questa procedura dettagliata, è necessario:
@@ -81,7 +81,7 @@ Le applicazioni dati a più livelli * sono applicazioni che accedono ai dati e s
 
 5. Assegnare alla soluzione il nome **NTierWalkthrough**.
 
-6. fare clic su **OK**.
+6. Fare clic su **OK**.
 
      Una soluzione NTierWalkthrough che contiene il progetto DataEntityTier viene creata e aggiunta a **Esplora soluzioni**.
 
@@ -118,7 +118,7 @@ Le applicazioni dati a più livelli * sono applicazioni che accedono ai dati e s
 
      Se disponibile nell'elenco a discesa, scegliere la connessione dati al database di esempio Northwind.
 
-     -oppure-
+     oppure
 
      Fare clic su **nuova connessione** per aprire la finestra di dialogo **Aggiungi connessione** .
 
@@ -185,7 +185,7 @@ Le applicazioni dati a più livelli * sono applicazioni che accedono ai dati e s
 
 6. Nella sezione **Restituisci un DataTable** della pagina **Scegliere i metodi per generare** digitare **GetCustomers** in **Nome metodo**.
 
-7. Fare clic su **Fine**.
+7. Scegliere **Fine**.
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Per creare un metodo nel livello di accesso ai dati per restituire la tabella Orders
 
@@ -199,7 +199,7 @@ Le applicazioni dati a più livelli * sono applicazioni che accedono ai dati e s
 
 5. Nella sezione **Restituisci un DataTable** della pagina **Scegliere i metodi** per generare digitare **GetOrders** in **Nome metodo**.
 
-6. Fare clic su **Fine**.
+6. Scegliere **Fine**.
 
 7. Scegliere **Compila soluzione** dal menu **Compila**.
 
@@ -214,7 +214,7 @@ Le applicazioni dati a più livelli * sono applicazioni che accedono ai dati e s
 
 3. Selezionare entrambi i progetti **DataAccessTier** e **DataEntityTier**.
 
-4. fare clic su **OK**.
+4. Fare clic su **OK**.
 
 ## <a name="adding-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>Aggiunta di funzioni al servizio per chiamare i metodi GetCustomers e GetOrders nel livello di accesso ai dati
  Ora che il livello di accesso ai dati contiene i metodi per restituire i dati, creare i metodi nel servizio dati per chiamare i metodi nel livello di accesso ai dati.
@@ -361,7 +361,7 @@ Le applicazioni dati a più livelli * sono applicazioni che accedono ai dati e s
  Dal momento che il servizio restituisce i dati dalle tabelle Customers e Orders, il valore predefinito per maxReceivedMessageSize non è sufficiente per contenere i dati e deve essere aumentato. Per questa procedura dettagliata si imposterà il valore su 6553600. Il valore verrà cambiato nel client e il riferimento al servizio verrà aggiornato automaticamente.
 
 > [!NOTE]
-> La dimensione predefinita più bassa è usata per limitare l'esposizione ad attacchi Denial of Service (DoS). Per altre informazioni, vedere <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> La dimensione predefinita più bassa è usata per limitare l'esposizione ad attacchi Denial of Service (DoS). Per ulteriori informazioni, vedere <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Per aumentare il valore di maxReceivedMessageSize
 
@@ -369,12 +369,12 @@ Le applicazioni dati a più livelli * sono applicazioni che accedono ai dati e s
 
 2. Trovare l'attributo di dimensione **maxReceivedMessage** e impostare il valore su `6553600`.
 
-## <a name="testing-the-application"></a>Test dell'applicazione
+## <a name="testing-the-application"></a>Verifica dell'applicazione
  Eseguire l'applicazione. I dati vengono recuperati dal servizio dati e visualizzati nel form.
 
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione
 
-1. Premere F5.
+1. Premi F5.
 
 2. I dati delle tabelle Customers e Orders vengono recuperati dal servizio dati e visualizzati nel form.
 

@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0763f2cf86d94f96f6f9c907ee306c731994f22
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300155"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852095"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti mediante Gestione riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "74300155"
 - Visualizzazione, con il sottogruppo Recenti.
 
 ## <a name="assemblies-tab"></a>Scheda Assembly
- La scheda **Assembly** elenca tutti gli assembly di .NET Framework disponibili per riferimento. Nella scheda **Assembly** non vengono elencati gli assembly della Global Assembly Cache (GAC) in quanto questi assembly fanno parte dell'ambiente di runtime. Se si distribuisce o si copia un'applicazione che contiene un riferimento a un assembly registrato nella Global Assembly Cache, tale assembly non verrà distribuito o copiato con l'applicazione, indipendentemente dall'impostazione dell'opzione Copia localmente. Per altre informazioni, vedere [Riferimenti a progetti](https://go.microsoft.com/fwlink/?LinkId=238512).
+ La scheda **Assembly** elenca tutti gli assembly di .NET Framework disponibili per riferimento. Nella scheda **Assembly** non vengono elencati gli assembly della Global Assembly Cache (GAC) in quanto questi assembly fanno parte dell'ambiente di runtime. Se si distribuisce o si copia un'applicazione che contiene un riferimento a un assembly registrato nella Global Assembly Cache, tale assembly non verrà distribuito o copiato con l'applicazione, indipendentemente dall'impostazione dell'opzione Copia localmente. Per altre informazioni, vedere [Riferimenti a progetti](https://msdn.microsoft.com/library/ez524kew.aspx).
 
  Quando si aggiunge manualmente un riferimento a uno qualsiasi degli spazi dei nomi (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a, or EnvDTE100), impostare la proprietà Incorpora tipi di interoperabilità del riferimento su False nella finestra Proprietà. L'impostazione di questa proprietà su True può causare problemi di compilazione a causa di determinate proprietà che non possono essere incorporate.
 

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 102b03caf2880d9b1311bb757eaf92aad84f8c81
-ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
-ms.translationtype: HT
+ms.openlocfilehash: 30826f68be1ef2f29940c8f9c95b2b79435e0a2a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75735831"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852042"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estensione di Visual Studio per Mac
 
@@ -161,7 +161,7 @@ Per informazioni sull'ambito delle aree disponibili per lo sviluppo, vedere le [
 
 ## <a name="extending-the-new-editor"></a>Estensione del nuovo editor
 
-Visual Studio per Mac [introduce l'interfaccia utente del nuovo editor di testo Cocoa](https://aka.ms/vs/mac/editor/learn-more) basato sugli stessi livelli di editor di Visual Studio in Windows.
+Visual Studio per Mac [introduce l'interfaccia utente del nuovo editor di testo Cocoa](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes#RTW) basato sugli stessi livelli di editor di Visual Studio in Windows.
 
 La condivisione dell'editor di testo tra Visual Studio e Visual Studio per Mac offre numerosi vantaggi, tra cui la possibilità di adattare a Visual Studio per Mac codice destinato all'editor di Visual Studio.
 
@@ -191,7 +191,7 @@ Per un oggetto [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#M
 ## <a name="additional-information"></a>Informazioni aggiuntive
 
 > [!NOTE]
-> Microsoft sta attualmente lavorando al miglioramento degli scenari di estendibilità per Visual Studio per Mac. Se si stanno creando estensioni e sono necessarie altre informazioni o maggiore supporto oppure si vuole fornire commenti e suggerimenti, compilare il modulo [Visual Studio for Mac Extension Authoring](https://aka.ms/vsmac-extensions-survey) (Creazione di estensioni per Visual Studio per Mac).
+> Microsoft sta attualmente lavorando al miglioramento degli scenari di estendibilità per Visual Studio per Mac. Se si stanno creando estensioni e sono necessarie altre informazioni o maggiore supporto oppure si vuole fornire commenti e suggerimenti, compilare il modulo [Visual Studio for Mac Extension Authoring](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u) (Creazione di estensioni per Visual Studio per Mac).
 
 ## <a name="see-also"></a>Vedere anche
 
