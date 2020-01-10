@@ -2,7 +2,7 @@
 # [Novità](whats-new-in-subscriptions.md)
 # Sottoscrizioni
 ## Acquistare sottoscrizioni
-### [Retail](https://visualstudio.microsoft.com/vs/pricing) (Vendita)
+### [Retail](https://visualstudio.microsoft.com/vs/pricing)
 ### Cloud 
 #### [Panoramica](vscloud-overview.md)
 #### [Domande frequenti sulla fatturazione](vscloud-billing-faq.md)
@@ -88,7 +88,7 @@
 ### [Sottoscrittori con accesso tramite posta elettronica personale](personal-email-sign-ins.md)
 ### [Gestione di Visual Studio con GitHub Enterprise](assign-github.md)
 # Risorse
-## [White paper sulle licenze per Visual Studio](https://aka.ms/vslicensing)
+## [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 ## [Confrontare le opzioni e i prezzi delle sottoscrizioni](https://visualstudio.microsoft.com/vs/pricing)
 ## [Confrontare le funzionalità dell'IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ## [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
