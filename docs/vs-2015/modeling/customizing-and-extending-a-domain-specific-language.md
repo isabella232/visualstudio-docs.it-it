@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8de964bebb59507da06bb4444ffd6067ffc43b63
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37ac181c2e2182dc8ff57931fbbb51a4f7fc9fc4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299348"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852420"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizzazione ed estensione di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +45,8 @@ Visual Studio Modeling and Visualization SDK (VMSDK) offre diversi livelli in cu
 |L'icona di forma cambia per indicare lo stato.|Imposta la visibilità del mapping dell'elemento Decorator nella finestra Dettagli DSL. Individuare diversi elementi Decorator immagine nella stessa posizione. Vedere [aggiornamento di forme e connettori per riflettere il modello](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> In alternativa, eseguire l'override di `ImageField.GetDisplayImage()`. Vedere l'esempio in <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Imposta un'immagine di sfondo in qualsiasi forma|Eseguire l'override di InitializeInstanceResources () per aggiungere un ImageField ancorato. Vedere [personalizzazione della presentazione nel diagramma](../modeling/customizing-presentation-on-the-diagram.md).|
 |Annidare forme a qualsiasi profondità|Configurare un albero di incorporamento ricorsivo. Definire BoundsRules per contenere le forme. Vedere [personalizzazione della presentazione nel diagramma](../modeling/customizing-presentation-on-the-diagram.md).|
-|Alleghi i connettori nei punti fissi sul limite di un elemento.|Definisce gli elementi terminali incorporati, rappresentati da porte di piccole dimensioni nel diagramma. Usare BoundsRules per correggere le porte sul posto. Vedere l'esempio di diagramma di circuito nell' [SDK di visualizzazione e modellazione](https://go.microsoft.com/fwlink/?LinkID=186128).|
-|Campo di testo Visualizza un valore derivato da altri valori.|Eseguire il mapping dell'elemento Decorator del testo a una proprietà del dominio di archiviazione calcolata o personalizzata. Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).|
+|Alleghi i connettori nei punti fissi sul limite di un elemento.|Definisce gli elementi terminali incorporati, rappresentati da porte di piccole dimensioni nel diagramma. Usare BoundsRules per correggere le porte sul posto. Vedere l'esempio di diagramma di circuito nell' [SDK di visualizzazione e modellazione](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).|
+|Campo di testo Visualizza un valore derivato da altri valori.|Eseguire il mapping dell'elemento Decorator del testo a una proprietà del dominio di archiviazione calcolata o personalizzata. Per altre informazioni, vedere [calcolate e le proprietà di archiviazione personalizzate](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagazione delle modifiche tra gli elementi del modello o tra forme|Vedere [convalida in un Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).|
 |Propagare le modifiche alle risorse, ad esempio le altre estensioni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] all'esterno dell'archivio.|Vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |Finestra delle proprietà Visualizza le proprietà di un elemento correlato.|Configurare l'invio della proprietà. Vedere [personalizzazione della finestra delle proprietà](../modeling/customizing-the-properties-window.md).|

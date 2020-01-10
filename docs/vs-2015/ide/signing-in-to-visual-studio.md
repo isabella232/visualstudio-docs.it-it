@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8457dde4a447b3b49349ee7f9a979479abe4aaf8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301242"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851617"
 ---
 # <a name="signing-in-to-visual-studio"></a>Accesso a Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "74301242"
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Perché accedere a Visual Studio?
  Accedendo a Visual Studio si otterranno i seguenti vantaggi:
 
-- **Concede l'accesso a una vasta gamma di vantaggi** del programma Visual Studio Dev Essentials, compresi software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
+- **Concede l'accesso a una vasta gamma di vantaggi** del programma Visual Studio Dev Essentials, compresi software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
 - **Sincronizza le impostazioni di Visual Studio** : le impostazioni personalizzate, ad esempio le combinazioni di tasti, il layout della finestra e il tema colori, vengono applicati immediatamente quando si accede a Visual Studio da qualsiasi dispositivo. Vedere [Impostazioni sincronizzate in Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 

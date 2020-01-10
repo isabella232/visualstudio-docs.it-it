@@ -3,15 +3,15 @@ title: Vantaggio WhiteSource Bolt | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 11/18/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 description: Informazioni su come attivare la sottoscrizione di WhiteSource Bolt inclusa nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: fb403053d101cf2edf8677c7bcce494ae4e2d21e
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 8db777135e9f78321ccbc7cc9d40bf657da97589
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174134"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75866162"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt nelle sottoscrizioni di Visual Studio
 
@@ -38,7 +38,22 @@ ms.locfileid: "74174134"
 9. Per altre informazioni, visita la [pagina delle domande frequenti](https://bolt.whitesourcesoftware.com/azure/faq/) su WhiteSource Bolt. 
 
 ## <a name="eligibility"></a>Eligibility
-Il [Bolt WhiteSource](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) è ora disponibile gratuitamente nell'[Visual Studio Marketplace. 
+
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  Sì       |
+| Visual Studio Enterprise con GitHub Enterprise | VL | 6 mesi       |  Sì       |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
+| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |N/D         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |N/D         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |N/D         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+||
+
+<sup>1</sup>  *include: Microsoft Partner Network (Enterprise).  Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), ETP, MCT software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT software & Services.*
+
+> [!NOTE]
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con WhiteSource Bolt?  Chat con un rappresentante WhiteSource Bolt in tempo reale all'indirizzo https://www.whitesourcesoftware.com/vse_whitesource_bolt/
@@ -50,3 +65,9 @@ Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la s
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Credito individuale per Azure DevTest](vs-azure.md)
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)

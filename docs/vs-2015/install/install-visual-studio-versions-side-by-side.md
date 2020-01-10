@@ -13,17 +13,17 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a146872561c4be5fe48016c17eb64ad6f854106a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298030"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851017"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installare le versioni Visual Studio Side-by-Side
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile installare questa versione di Visual Studio in un computer in cui è già installata una versione precedente. Se si verifica un errore di installazione, è possibile usare lo [strumento di raccolta dei log](https://go.microsoft.com/fwlink/?LinkId=262077) per raccogliere informazioni sugli errori per poter eseguire il debug dei problemi manualmente.
+È possibile installare questa versione di Visual Studio in un computer in cui è già installata una versione precedente. Se si verifica un errore di installazione, è possibile usare lo [strumento di raccolta dei log](https://www.microsoft.com/download/details.aspx?id=12493) per raccogliere informazioni sugli errori per poter eseguire il debug dei problemi manualmente.
 
 > [!NOTE]
 > Si consiglia di installare le versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nell'ordine nel quale vengono rilasciate. Ad esempio, installare Visual Studio 2013 prima di installare Visual Studio 2015.
@@ -36,7 +36,7 @@ ms.locfileid: "74298030"
 
 - Se si disinstalla una versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] da un computer in cui sono installate più versioni, le associazioni di file per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verranno rimosse per tutte le versioni. È possibile eseguire di nuovo il mapping di queste associazioni di file tramite il pulsante **Ripristina associazioni file** in **Ambiente**nella pagina **Generale** della finestra di dialogo [Opzioni](../ide/reference/general-environment-options-dialog-box.md) .
 
-- Visual Studio non aggiorna automaticamente le estensioni, perché non tutte le estensioni sono compatibili. È necessario reinstallare le estensioni da [Visual Studio Marketplace](https://go.microsoft.com/fwlink/?LinkId=178891) o dall'autore del software.
+- Visual Studio non aggiorna automaticamente le estensioni, perché non tutte le estensioni sono compatibili. È necessario reinstallare le estensioni da [Visual Studio Marketplace](https://visualstudiogallery.msdn.microsoft.com/) o dall'autore del software.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Versioni di .NET Framework e installazioni affiancate
 

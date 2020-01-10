@@ -8,24 +8,24 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 73dd0e406e8e0a00260d922e38dee70135c3645d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b44e921a8e1ba13d3f0786d4633f942f94f3eaaa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298009"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851280"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Includendo i test codificati dell'interfaccia utente in un'applicazione SharePoint è possibile verificare che l'intera applicazione, inclusi i controlli per l'interfaccia utente, siano correttamente funzionanti. I test codificati dell'interfaccia utente possono inoltre convalidare i valori e la logica dell'interfaccia utente.
 
- **Requisiti**
+ **Requirements**
 
 - Visual Studio Enterprise
 
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Ulteriori informazioni sui test codificati dell'interfaccia utente
- Per altre informazioni sui vantaggi associati all'uso dei test codificati dell'interfaccia utente, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) e [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196) (Test per il recapito continuo con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema).
+ Per altre informazioni sui vantaggi associati all'uso dei test codificati dell'interfaccia utente, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) e [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests](https://msdn.microsoft.com/library/jj159335.aspx) (Test per il recapito continuo con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema).
 
  **Note**
 
@@ -137,11 +137,11 @@ uiGridKeyboardInputEdit.Text=value;
 
  [Indice del contenuto per il test codificato dell'interfaccia utente](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
-### <a name="guidance"></a>Materiale sussidiario
- [capitolo 5 sull'automazione dei test di sistema nell'articolo relativo ai test per il recapito continuo con Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkID=255196)
+### <a name="guidance"></a>Informazioni aggiuntive
+ [capitolo 5 sull'automazione dei test di sistema nell'articolo relativo ai test per il recapito continuo con Visual Studio 2012](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="forum"></a>Forum
- [Blog di Visual Studi ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=254496)
+ [Blog di Visual Studi ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm/)
 
 ## <a name="see-also"></a>Vedere anche
  [Usare l'automazione dell'interfaccia utente per testare le prestazioni Web del codice e i](../test/use-ui-automation-to-test-your-code.md) [test di carico per le applicazioni sharepoint 2010 e 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [creare soluzioni SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Verifica e debug di codice SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [compilazione e debug di soluzioni SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [profilatura delle prestazioni delle applicazioni SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

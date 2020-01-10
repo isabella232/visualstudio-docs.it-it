@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297974"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851244"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Uso di code coverage per determinare la quantità di codice testato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Per determinare quale percentuale del codice del progetto viene effettivamente t
 
  ![Risultati del code coverage con colorazione](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Requisiti**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -36,7 +36,7 @@ Per determinare quale percentuale del codice del progetto viene effettivamente t
 
 1. Scegliere **Analizza code coverage** dal menu **Test**.
 
-2. Per vedere quali righe sono state eseguite, scegliere ![Mostra icona colorazione code coverage](../test/media/codecoverage-showcoloringicon.png "Codecover-ShowColoringIcon")**Mostra colorazione code coverage**.
+2. Per vedere quali righe sono state eseguite, scegliere ![icona Mostra colorazione code coverage](../test/media/codecoverage-showcoloringicon.png "Codecover-ShowColoringIcon")**Mostra colorazione code coverage**.
 
      Per modificare i colori o per usare il grassetto, scegliere **Strumenti**, **Opzioni**, **Ambiente**, **Tipi di carattere e colori**, **Visualizza impostazioni per: Editor di testo**. In **Elementi visualizzati** regolare gli elementi di code coverage.
 
@@ -81,7 +81,7 @@ Per determinare quale percentuale del codice del progetto viene effettivamente t
 
  Ad esempio, si supponga che quando si esegue un test con input "2 ", si rileva che viene analizzato il 50% di una particolare funzione e quando si esegue il test una seconda volta con l'input "- 2 ", si rileva nella visualizzazione della colorazione di code coverage che viene analizzato l'altro 50% della funzione. A questo punto viene eseguito il merge dei risultati delle due esecuzioni dei test e nel report e nella visualizzazione della colorazione di code coverage viene indicato che il 100% della funzione è stato analizzato.
 
- Usare l' ![icona per il pulsante Unisci nella finestra di code coverage](../test/media/codecoverage-mergeicon.png "Codecover-MergeIcon")**unire i risultati del code coverage** a tale scopo. È possibile scegliere qualsiasi combinazione di esecuzioni recenti o risultati importati. Per combinare i risultati esportati, è necessario prima importarli.
+ A questo scopo, usare l'![icona per il pulsante di esecuzione del merge nella finestra Code coverage](../test/media/codecoverage-mergeicon.png "Codecover-MergeIcon")**icona per il merge dei risultati di code coverage**. È possibile scegliere qualsiasi combinazione di esecuzioni recenti o risultati importati. Per combinare i risultati esportati, è necessario prima importarli.
 
  Usare **Export Code Coverage Results** (Esporta risultati di code coverage) per salvare i risultati di un'operazione di merge.
 
@@ -221,9 +221,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  Utilizzare le seguenti macro:
 
- `ExcludeFromCodeCoverage(` *NomeEsclusione* `, L"` *NomeFunzione* `");`
+ `ExcludeFromCodeCoverage(` *esclusionname* `, L"` *funzionename* `");`
 
- `ExcludeSourceFromCodeCoverage(` *NomeEsclusione* `, L"` *PercorsoFileOrigine* `");`
+ `ExcludeSourceFromCodeCoverage(` *esclusionname* `, L"` *percorsofileorigine* `");`
 
 - *NomeEsclusione* è un nome univoco.
 
@@ -280,8 +280,8 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="guidance"></a>Materiale sussidiario
- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Informazioni aggiuntive
+ [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Vedere anche
  [Personalizzazione dell'analisi del code coverage](../test/customizing-code-coverage-analysis.md) [risoluzione dei problemi di code coverage](../test/troubleshooting-code-coverage.md) [unit test del codice](../test/unit-test-your-code.md)

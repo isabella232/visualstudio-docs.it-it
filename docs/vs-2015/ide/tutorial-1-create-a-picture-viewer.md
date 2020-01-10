@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 66988fa88ae347a2db08bf2f6d1b79ba3bcd80b8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299903"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851328"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: creare un visualizzatore immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ In questa esercitazione si compila un programma che carica un'immagine da un fil
 
   ![Immagine che si creerà in questa esercitazione](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Immagine che si creerà in questa esercitazione
 
-  ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere la procedura relativa alla [creazione di un visualizzatore di immagini in Visual Basic](https://go.microsoft.com/fwlink/?LinkId=205207) o [procedura: creare un visualizzatore di immagini in C#](https://go.microsoft.com/fwlink/?LinkId=205198).
+  ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere la procedura relativa alla [creazione di un visualizzatore di immagini in Visual Basic](https://msdn.microsoft.com/vstudio/gg315352) o [procedura: creare un visualizzatore di immagini in C#](https://msdn.microsoft.com/vcsharp/gg278960.aspx).
 
 > [!NOTE]
 > In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio. In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.

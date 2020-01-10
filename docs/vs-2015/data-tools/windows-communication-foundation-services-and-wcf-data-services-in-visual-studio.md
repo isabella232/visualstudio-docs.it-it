@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e988c8818cdee756310b73d0d214deda43226f2b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299571"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850220"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servizi Windows Communication Foundation e dati WCF in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] è un framework unificato per la creazione di applicazioni distribuite sicure, affidabili, transazionali e interoperabili. Sostituisce le tecnologie di comunicazione interprocesso precedenti, ad esempio i servizi Web ASMX, .NET Remoting, Enterprise Services (DCOM) e MSMQ. WCF combina le funzionalità di tutte le tecnologie in un modello di programmazione unificato. Questo semplifica l'esperienza di sviluppo di applicazioni distribuite.
 
 #### <a name="what-are-wcf-data-services"></a>Che cosa sono WCF Data Services
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] è un'implementazione dello standard del protocollo OData (Open Data).  WCF Data Services consente di esporre i dati tabulari come un set di API REST, consentendo di restituire i dati usando verbi HTTP standard come GET, POST, PUT o DELETE. Sul lato server, WCF Data Services verranno sostituiti da [API Web ASP.NET](https://dotnet.microsoft.com/apps/aspnet/apis) per la creazione di nuovi servizi OData. La libreria client di WCF Data Services continua a essere una scelta ottimale per l'utilizzo di servizi OData in un'applicazione .NET da Visual Studio (**progetto &#124; Aggiungi riferimento al servizio**). Per altre informazioni, vedere [WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952).
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] è un'implementazione dello standard del protocollo OData (Open Data).  WCF Data Services consente di esporre i dati tabulari come un set di API REST, consentendo di restituire i dati usando verbi HTTP standard come GET, POST, PUT o DELETE. Sul lato server, WCF Data Services verranno sostituiti da [API Web ASP.NET](https://dotnet.microsoft.com/apps/aspnet/apis) per la creazione di nuovi servizi OData. La libreria client di WCF Data Services continua a essere una scelta ottimale per l'utilizzo di servizi OData in un'applicazione .NET da Visual Studio (**progetto &#124; Aggiungi riferimento al servizio**). Per altre informazioni, vedere [WCF Data Services 4.5](https://msdn.microsoft.com/library/cc668792.aspx).
 
 ### <a name="wcf-programming-model"></a>Modello di programmazione WCF
  Il modello di programmazione WCF è basato sulla comunicazione tra due entità, ovvero un servizio WCF e un client WCF. Il modello di programmazione viene incapsulato nello spazio dei nomi <xref:System.ServiceModel> nel [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
@@ -245,7 +245,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
 |[Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Fornisce istruzioni dettagliate per la creazione di un dataset tipizzato e la separazione del codice degli elementi TableAdapter e dataset in più progetti.|
 |[Configura riferimento a servizio (finestra di dialogo)](../data-tools/configure-service-reference-dialog-box.md)|Vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Configura riferimento al servizio** .|
 
-## <a name="reference"></a>Riferimento
+## <a name="reference"></a>Riferimenti
  <xref:System.ServiceModel>
 
  <xref:System.Data.Services>

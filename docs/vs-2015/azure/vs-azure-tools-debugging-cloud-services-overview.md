@@ -10,12 +10,12 @@ ms.date: 03/18/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c64ef6d998143aa7e20cbacc9a811fbabc8f332c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0a07be18af7f38beb44ec18f04470bc739e0a0b6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294170"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850027"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Informazioni sui vari modi disponibili per eseguire il debug di un servizio cloud di Azure
 Questo articolo include collegamenti ai vari modi per eseguire il debug di un servizio cloud di Azure. 
@@ -24,7 +24,7 @@ Questo articolo include collegamenti ai vari modi per eseguire il debug di un se
 È possibile risparmiare tempo e denaro usando l'emulatore di calcolo di Azure per il debug del servizio cloud su un computer locale. Eseguendo il debug di un servizio in locale prima della distribuzione, è possibile migliorare l'affidabilità e le prestazioni senza pagare per il tempo di calcolo. È tuttavia possibile che si verifichino alcuni errori solo quando si esegue un servizio cloud in Azure. Gli errori che si verificano solo quando si esegue un servizio cloud in Azure possono essere sottoposti a debug abilitando il debug remoto in fase di pubblicazione del servizio e quindi collegando il debugger a un'istanza del ruolo. Per ulteriori informazioni, vedere il [Debug del servizio cloud nel computer locale](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-your-cloud-service-on-your-local-computer).
 
 ## <a name="using-intellitrace"></a>Utilizzo di IntelliTrace 
-Se si usa Visual Studio Enterprise per scrivere ruoli destinati a .NET Framework 4.5, è possibile abilitare IntelliTrace nel momento in cui si distribuisce un servizio cloud di Azure da Visual Studio. IntelliTrace fornisce un log che è possibile usare con Visual Studio per il debug dell'applicazione come se fosse in esecuzione in Azure. Per altre informazioni, vedere [Debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=623016).
+Se si usa Visual Studio Enterprise per scrivere ruoli destinati a .NET Framework 4.5, è possibile abilitare IntelliTrace nel momento in cui si distribuisce un servizio cloud di Azure da Visual Studio. IntelliTrace fornisce un log che è possibile usare con Visual Studio per il debug dell'applicazione come se fosse in esecuzione in Azure. Per altre informazioni, vedere [Debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
 
 ## <a name="remote-debugging"></a>Debug remoto 
 È possibile abilitare il debug remoto nei servizi cloud nel momento in cui si distribuisce il servizio cloud da Visual Studio. Se si sceglie di abilitare il debug remoto per una distribuzione, i servizi di debug remoto vengono installati nelle macchine virtuali che eseguono ogni istanza del ruolo. Questi servizi, ad esempio `msvsmon.exe`, non influiscono sulle prestazioni né producono costi aggiuntivi. Per ulteriori informazioni, vedere [il Debug di un servizio cloud in Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure).

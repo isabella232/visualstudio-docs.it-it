@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 05611b74049307fc0d7c038ecdb275f70c983501
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: b0b461fa812d6fff8c4d6a258cb9dabf8b04f6db
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74778921"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852300"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Procedura: Installare il profiler autonomo
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offre un profiler autonomo basato sulla riga di comando che può essere eseguito senza installare l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questa situazione si verifica quando un computer non ha o non può avere un ambiente di sviluppo installato. È consigliabile, ad esempio, non installare un ambiente di sviluppo in un server Web di produzione.
@@ -31,7 +31,7 @@ ms.locfileid: "74778921"
 
 1. Individuare il programma di installazione del profiler autonomo (*vs_standaloneprofiler.exe*) nel percorso in cui sono stati scaricati gli strumenti per le prestazioni ed eseguirlo.
 
-2. Aggiungere i percorsi per *vsintr.exe* e *msdis150.dll* al percorso di sistema.
+2. Aggiungere il percorso di *VSInstr. exe* al percorso di sistema.
 
    > [!NOTE]
    > Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
@@ -41,7 +41,7 @@ ms.locfileid: "74778921"
    > [!NOTE]
    > Se vengono visualizzate le informazioni di utilizzo per vsinstr.exe, significa che tutti gli elementi sono configurati correttamente. Se viene visualizzato un errore in cui viene comunicato che vsinstr.exe o una delle relative dipendenze non è stata trovata, verificare di aver specificato correttamente i percorsi come descritto nel passaggio 2.
 
-4. Specificare il server dei simboli impostando la variabile **_NT_SYMBOL_PATH** su **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**
+4. Specificare il server dei simboli impostando la variabile **_NT_SYMBOL_PATH** su **symsrv\*symsrv.dll\*c:\localcache\*https://msdl.microsoft.com/download/symbols**
 
 5. Dopo aver impostato il server dei simboli usando le variabili di ambiente di sistema, eseguire gli strumenti del profiler da riga di comando in un nuovo prompt dei comandi. In questo modo le nuove variabili di ambiente vengono rese effettive. Digitare il comando seguente nella finestra del prompt dei comandi:
 

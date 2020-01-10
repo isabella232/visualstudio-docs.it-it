@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1e30be26c40834d3122d491f8d150f02b6f3b776
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4512867f636e2362aa28d52c5af28bf8eb9697f9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300687"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851155"
 ---
 # <a name="options-and-options-pages"></a>Opzioni e pagine di opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Fare clic su **Opzioni** nel menu **strumenti** per aprire la finestra di dialog
 - <xref:System.ComponentModel.DescriptionAttribute> determina la descrizione dell'opzione.  
   
   > [!NOTE]
-  > Gli attributi equivalenti, SRCategory, LocDisplayName e SRDescription, usano le risorse di stringa per la localizzazione e sono definiti nell' [esempio di progetto gestito](https://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Gli attributi equivalenti, SRCategory, LocDisplayName e SRDescription, usano le risorse di stringa per la localizzazione e sono definiti nell' [esempio di progetto gestito](https://msdn.com/vsx).  
   
   Si consideri il frammento di codice riportato di seguito.  
   

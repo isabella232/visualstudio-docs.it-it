@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9f2e62766f919c9f3379d59c4528a32739ef73ac
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b77a088fc144df8c7305098e48c45f672733a7c9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301400"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851194"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Uso di stub per isolare tra loro le diverse parti dell'applicazione per l'esecuzione dello unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ I tipi stub* costituiscono una delle due tecnologie offerte dal framework Micros
 
  Poiché gli stub si basano sulla possibilità di strutturare il codice in questo modo, in genere si usano gli stub per isolare una parte dell'applicazione da un'altra. Per isolarlo da altri assembly che non sono sotto controllo, ad esempio System.dll, è di solito consigliabile usare gli shim. Vedere [Uso di shim per isolare l'applicazione da altri assembly per gli unit test](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
- **Requisiti**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -471,8 +471,8 @@ StubBehaviors.Current =
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="guidance"></a>Materiale sussidiario
- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Informazioni aggiuntive
+ [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Vedere anche
  [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

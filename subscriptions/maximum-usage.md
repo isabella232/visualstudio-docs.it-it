@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Informazioni su come visualizzare il numero massimo di sottoscrizioni assegnate nel portale di amministrazione
-ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 76360c9843d82350a2b9929b8debfdb4aa4cde82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491728"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852333"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Usare la funzionalità Utilizzo massimo per tenere traccia del numero di sottoscrizioni assegnate
 Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia di quante sottoscrizioni sono state acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnate, sia nell'ultimo anno che per l'intera durata dei contratti. 
@@ -42,7 +42,7 @@ Ad esempio, nella tabella precedente, è possibile notare che il 13/12/2018 nel 
 R: le informazioni contenute nella panoramica mostrano le assegnazioni *correnti* e le sottoscrizioni disponibili per ogni livello di sottoscrizione.  Queste informazioni possono essere molto diverse dal numero massimo di sottoscrizioni assegnate per il contratto durante l'anno corrente o per la durata del contratto.  La funzionalità di utilizzo massimo consente di visualizzare quando sono stati raggiunti i livelli di assegnazione massimi e quali sono i livelli.  Si tratta di una distinzione importante, poiché la fatturazione per le sottoscrizioni durante il conteggio true-up si basa sul numero massimo di sottoscrizioni assegnate in qualsiasi momento nel corso dell'anno. 
 
 ## <a name="resources"></a>Risorse
-- [White paper sulle licenze per Visual Studio](https://aka.ms/vslicensing)
+- [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Condizioni dei contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

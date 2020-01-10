@@ -13,17 +13,17 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 451544a84237bc6fa4e069df9dd1e17feccf86f7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f88d7ebe714fcdc9bf404e1cf58c4c86cf37047d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301012"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851459"
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Finestra di dialogo associa&#39;a una proprietà dell'attività (legacy)
 In questo argomento viene descritto come utilizzare la finestra di dialogo **associa a proprietà di un'attività** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)]legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Un tipo di istanza di proprietà di dipendenza può essere associato alla proprietà pubblica di un'altra attività o evento. Per ulteriori informazioni sull'associazione di attività, vedere [utilizzo delle proprietà di dipendenza](https://go.microsoft.com/fwlink?LinkID=65007).
+ Un tipo di istanza di proprietà di dipendenza può essere associato alla proprietà pubblica di un'altra attività o evento. Per ulteriori informazioni sull'associazione di attività, vedere [utilizzo delle proprietà di dipendenza](https://msdn2.microsoft.com/library/bb675255.aspx).
 
  È possibile selezionare una proprietà da associare utilizzando la finestra di dialogo **associa a una proprietà dell'attività** . Per aprire questa finestra di dialogo, fare clic sui puntini di sospensione **[...]** alla fine della casella di testo della proprietà selezionata nella finestra **Proprietà** oppure fare clic sull'icona del punto esclamativo blu visualizzato accanto al nome della proprietà nel Visualizzatore proprietà.
 
@@ -35,4 +35,4 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **ass
 |**Associa a un nuovo membro**|Creare un campo o una proprietà per il membro nuovo da associare. Immettere un **nuovo nome di membro**. Scegliere se si desidera creare una proprietà di dipendenza o un campo pubblico selezionando **Crea campo** o **Crea proprietà**. Fare clic su **OK** per creare il nuovo membro.|
 
 ## <a name="see-also"></a>Vedere anche
- [Uso](https://go.microsoft.com/fwlink?LinkID=65013) delle proprietà delle attività [con le proprietà di dipendenza](https://go.microsoft.com/fwlink?LinkID=65007) [progettazione legacy per Windows Workflow Foundation Guida dell'interfaccia utente](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Uso](https://msdn2.microsoft.com/library/bb628510.aspx) delle proprietà delle attività [con le proprietà di dipendenza](https://msdn2.microsoft.com/library/bb675255.aspx) [progettazione legacy per Windows Workflow Foundation Guida dell'interfaccia utente](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

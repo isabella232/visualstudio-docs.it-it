@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299495"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852433"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Eseguire il debug di stili CSS tramite DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png 
     > [!TIP]
     > Dopo che l'app viene visualizzata nel simulatore, posizionare il simulatore proprio accanto alla finestra di Visual Studio in modo che sia possibile osservare immediatamente i risultati delle selezioni e le modifiche apportate agli stili CSS.  
   
-6. Passare a Visual Studio e fare clic su **Seleziona elemento** in DOM Explorer (o premere CTRL+B). In questo modo la modalità di selezione cambia per consentire la selezione di un elemento facendovi clic sopra e l'applicazione viene portata in primo piano. La modalità viene ripristinata dopo un singolo clic. Ecco il pulsante **Seleziona elemento** . ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
+6. Passare a Visual Studio e fare clic su **Seleziona elemento** in DOM Explorer (o premere CTRL+B). In questo modo la modalità di selezione cambia per consentire la selezione di un elemento facendovi clic sopra e l'applicazione viene portata in primo piano. La modalità viene ripristinata dopo un singolo clic. Ecco il pulsante **Seleziona elemento** . ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     > È anche possibile selezionare elementi HTML direttamente in DOM Explorer. Per altre informazioni sulla selezione di elementi, vedere [Guida introduttiva: eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
@@ -160,4 +160,4 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png 
  [Guida introduttiva: eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Eseguire il debug del layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
  [Visualizza listener di eventi DOM](../debugger/view-dom-event-listeners.md)   
- [Supporto tecnico e accessibilità](https://go.microsoft.com/fwlink/?LinkId=253502)
+ [Supporto tecnico e accessibilità](https://msdn.microsoft.com/library/tzbxw1af(VS.110).aspx)
