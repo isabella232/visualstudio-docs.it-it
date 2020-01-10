@@ -1,6 +1,6 @@
 ---
 title: Esegui come amministratore
-ms.date: 06/05/2018
+ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -12,25 +12,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00bc1912991992a2aeb966680c7777c47df0549
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: HT
+ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
+ms.sourcegitcommit: 5421999c9ff05b3242d33e4b0465f8bc29c7c643
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565227"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75718636"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
 
-Per motivi di sicurezza, è consigliabile eseguire Visual Studio come utente normale ogni volta che ciò è possibile.
+Per motivi di sicurezza, è consigliabile eseguire Visual Studio come utente tipico quando possibile.
 
 > [!WARNING]
 > Accertarsi inoltre di non compilare, avviare o eseguire il debug di una soluzione di Visual Studio che non provenga da una persona o un percorso attendibile.
 
-Un account utente normale consente di possibile eseguire quasi tutte le funzioni dell'IDE di Visual Studio. Sono necessarie autorizzazioni di amministratore per completare le attività seguenti:
+È possibile eseguire praticamente tutte le operazioni nell'IDE di Visual Studio come utente tipico. Sono necessarie autorizzazioni di amministratore per completare le attività seguenti:
 
 |Area|Attività|Per altre informazioni|
 |----------|----------| - |
-|Installazione di|Installare Visual Studio.|[Install Visual Studio](../install/install-visual-studio.md) (Installare Visual Studio)|
+|Installazione di|Installare o modificare Visual Studio.|[Installare Visual Studio](../install/install-visual-studio.md), [modificare Visual Studio](../install/modify-visual-studio.md)|
 ||Installare, aggiornare o rimuovere contenuto della Guida locale.|[Installare e gestire il contenuto della Guida locale](../help-viewer/install-manage-local-content.md)|
 |Casella degli strumenti|Aggiungere controlli COM classici alla **casella degli strumenti**.|[Casella degli strumenti](../ide/reference/toolbox.md)|
 |Compilazione|Usare eventi di post-compilazione che registrano un componente.|[Informazioni sulle istruzioni di compilazione personalizzate e sugli eventi di compilazione](/cpp/build/understanding-custom-build-steps-and-build-events)|
