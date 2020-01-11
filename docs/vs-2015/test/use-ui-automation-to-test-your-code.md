@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6478de1573a90c0a7171285df1d04675f77435e2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297984"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851273"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
 
  L'editor specializzato e il Generatore di test codificati dell'interfaccia utente agevolano la creazione e la modifica di test codificati dell'interfaccia utente, anche se proprie competenze principali sono orientate al testing piuttosto che alla scrittura di codice. Per gli sviluppatori che vogliono estendere i test in modo più avanzato, tuttavia, il codice è strutturato in modo da essere estremamente semplice da copiare e adattare. Ad esempio, si può registrare un test per l'acquisto di un articolo in un sito Web e quindi modificare il codice generato per aggiungere un ciclo che acquista molti articoli.
 
- **Requisiti**
+ **Requirements**
 
 - Visual Studio Enterprise
 
   Per altre informazioni sulle piattaforme e sulle configurazioni supportate dai test codificati dell'interfaccia utente, vedere [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
-  **Contenuto dell'argomento**
+  **In questo argomento**
 
 - [Creazione di test codificati dell'interfaccia utente](#VerifyingCodeUsingCUITCreate)
 
@@ -465,22 +465,22 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Estensione di test codificati dell'interfaccia utente e registrazioni delle azioni per supportare Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altre istruzioni, vedere [Test per la distribuzione continua con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema](https://go.microsoft.com/fwlink/?LinkID=255196). Per altre informazioni sui test manuali, vedere [&#91;ritirato&#93; Creazione di test case manuali mediante Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Per altre informazioni sui test di sistema automatizzati, vedere [Creazione di test automatizzati mediante Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altre istruzioni, vedere [Test per la distribuzione continua con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema](https://msdn.microsoft.com/library/jj159335.aspx). Per altre informazioni sui test manuali, vedere [&#91;ritirato&#93; Creazione di test case manuali mediante Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Per altre informazioni sui test di sistema automatizzati, vedere [Creazione di test automatizzati mediante Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="guidance"></a>Materiale sussidiario
-- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Informazioni aggiuntive
+- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://msdn.microsoft.com/library/jj159340.aspx)
 
-- [Test per il recapito continuo con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
+- [Test per il recapito continuo con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
-### <a name="faq"></a>DOMANDE FREQUENTI
-- [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Domande frequenti
+- [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
-- [Domande frequenti sui test codificati dell'interfaccia utente - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+- [Domande frequenti sui test codificati dell'interfaccia utente - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
-- [Test di automazione dell'interfaccia utente di Visual Studio (include CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+- [Test di automazione dell'interfaccia utente di Visual Studio (include CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Vedere anche
 

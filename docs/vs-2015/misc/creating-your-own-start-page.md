@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299320"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850985"
 ---
 # <a name="creating-your-own-start-page"></a>Creazione di una pagina iniziale personalizzata
 È possibile creare una pagina iniziale personalizzata usando il modello di progetto di pagina iniziale o creando una pagina iniziale vuota.  
@@ -28,7 +28,7 @@ ms.locfileid: "74299320"
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Per creare una pagina iniziale personalizzata con il modello di progetto di pagina iniziale  
   
-1. Scaricare e installare il [modello di progetto di pagina iniziale](https://go.microsoft.com/fwlink/?LinkId=186204) da Visual Studio Gallery.  
+1. Scaricare e installare il [modello di progetto di pagina iniziale](https://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) da Visual Studio Gallery.  
   
     > [!WARNING]
     > A questo punto il modello di progetto di pagina iniziale di Visual Studio 2010 non è ancora aggiornato. Per informazioni su come aggiornare questo modello, vedere [procedura: aggiornare una pagina iniziale personalizzata di Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
@@ -85,7 +85,7 @@ ms.locfileid: "74299320"
   
 #### <a name="to-test-a-custom-start-page"></a>Per testare una pagina iniziale personalizzata  
   
-1. Premere F5.  
+1. Premi F5.  
   
     L'istanza sperimentale di Visual Studio viene aperta con la nuova pagina iniziale installata, ma non selezionata.  
   

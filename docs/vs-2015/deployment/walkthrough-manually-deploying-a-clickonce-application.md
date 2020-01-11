@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cba55c9f4a8f7436b97099b6b548b916ea6e5ecb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294680"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844934"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Se non è possibile usare Visual Studio per distribuire l'applicazione [!INCLUDE
   
 - Installare Mage. exe e MageUI. exe.  
   
-     Mage. exe e MageUI. exe fanno parte del [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. È necessario che il [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] sia installato o che la versione del [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] inclusa in Visual Studio. Per ulteriori informazioni, vedere [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=158044) su MSDN.  
+     Mage. exe e MageUI. exe fanno parte del [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. È necessario che il [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] sia installato o che la versione del [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] inclusa in Visual Studio. Per ulteriori informazioni, vedere [Windows SDK](https://msdn.microsoft.com/windowsserver/bb980924.aspx) su MSDN.  
   
 - Fornire un'applicazione da distribuire.  
   
@@ -61,7 +61,7 @@ Se non è possibile usare Visual Studio per distribuire l'applicazione [!INCLUDE
   
 - Assicurarsi che l'applicazione non disponga di un manifesto con informazioni sul controllo dell'account utente.  
   
-     È necessario determinare se l'applicazione contiene un manifesto con informazioni sul controllo dell'account utente, ad esempio un elemento `<dependentAssembly>`. Per esaminare un manifesto dell'applicazione, è possibile usare l'utilità [sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035) di Windows Sysinternals.  
+     È necessario determinare se l'applicazione contiene un manifesto con informazioni sul controllo dell'account utente, ad esempio un elemento `<dependentAssembly>`. Per esaminare un manifesto dell'applicazione, è possibile usare l'utilità [sigcheck](https://technet.microsoft.com/sysinternals/bb897441.aspx) di Windows Sysinternals.  
   
      Se l'applicazione contiene un manifesto con i dettagli dell'account utente, è necessario ricompilarlo senza le informazioni sul controllo dell'account utente. Per un C# progetto in Visual Studio, aprire le proprietà del progetto e selezionare la scheda applicazione. Nell'elenco a discesa **manifesto** selezionare **Crea applicazione senza un manifesto**. Per un progetto Visual Basic in Visual Studio, aprire le proprietà del progetto, selezionare la scheda applicazione e fare clic su **Visualizza impostazioni UAC**. Nel file manifesto aperto rimuovere tutti gli elementi all'interno del singolo elemento `<asmv1:assembly>`.  
   
@@ -162,11 +162,11 @@ Se non è possibile usare Visual Studio per distribuire l'applicazione [!INCLUDE
   
 13. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione **firma con file di certificato** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione ( **...** ). Digitare quindi la password del certificato.  
   
-     -oppure-  
+     oppure  
   
      Se il certificato viene mantenuto in un archivio certificati accessibile dal computer, selezionare l'opzione **firma con certificato archiviato** e selezionare il certificato dall'elenco fornito.  
   
-14. Fare clic su **OK** per firmare il manifesto dell'applicazione. Verrà visualizzata la finestra di dialogo Salva con nome.  
+14. Fare clic su **OK** per firmare il manifesto dell'applicazione. Viene visualizzata la finestra di dialogo Salva con nome.  
   
 15. Nella finestra di dialogo Salva con nome specificare la directory della versione, quindi fare clic su **Salva**.  
   
@@ -190,11 +190,11 @@ Se non è possibile usare Visual Studio per distribuire l'applicazione [!INCLUDE
   
 25. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione **firma con file di certificato** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione ( **...** ). Digitare quindi la password del certificato.  
   
-     -oppure-  
+     oppure  
   
      Se il certificato viene mantenuto in un archivio certificati accessibile dal computer, selezionare l'opzione **firma con certificato archiviato** e selezionare il certificato dall'elenco fornito.  
   
-26. Fare clic su **OK** per firmare il manifesto della distribuzione. Verrà visualizzata la finestra di dialogo Salva con nome.  
+26. Fare clic su **OK** per firmare il manifesto della distribuzione. Viene visualizzata la finestra di dialogo Salva con nome.  
   
 27. Nella finestra di dialogo **Salva con nome** spostare verso l'alto di una directory nella radice della distribuzione e quindi fare clic su **Salva**.  
   
@@ -207,7 +207,7 @@ Se non è possibile usare Visual Studio per distribuire l'applicazione [!INCLUDE
   
 ## <a name="see-also"></a>Vedere anche  
  [Mage.exe (Strumento per la generazione e la modifica di manifesti)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [MageUI.exe (Manifest Generation and Editing Tool, client grafico)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
    [manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)  
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)

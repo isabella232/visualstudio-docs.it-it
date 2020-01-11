@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297139"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850129"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagrammi di sequenza UML: linee guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ In Visual Studio è possibile creare un *diagramma di sequenza* per mostrare un'
 #### <a name="lifelines-and-types"></a>Linee di vita e tipi
  Le linee di vita disegnate in un diagramma di sequenza possono rappresentare delle istanze tipiche di componenti o classi nel sistema. È possibile creare linee di vita da tipi e tipi da linee di vita e visualizzare i tipi nei diagrammi classi UML e nei diagrammi dei componenti UML. Per altre informazioni, vedere [classi e linee di](#ClassesAndLifelines)vita.
 
-#### <a name="parameter-types"></a>Tipi di parametro
+#### <a name="parameter-types"></a>Tipi di parametro.
  È anche possibile descrivere in un diagramma classi UML i tipi di parametri e i valori restituiti usati nei messaggi inviati tra le linee di vita.
 
 #### <a name="use-case-details"></a>Dettagli relativi al caso di utilizzo
@@ -144,7 +144,7 @@ In Visual Studio è possibile creare un *diagramma di sequenza* per mostrare un'
 
   - Fare clic con il pulsante destro del mouse sulla linea di vita, quindi scegliere **Crea classe**.
 
-     -oppure-
+     oppure
 
   - Selezionare la linea di vita, premere **F4**, quindi nella finestra **Proprietà** impostare la proprietà **Type** su un tipo esistente o specificare il nome per un nuovo tipo. Fare clic con il pulsante destro del mouse sull'etichetta del messaggio, quindi scegliere **Crea operazione**.
 
@@ -262,7 +262,7 @@ In Visual Studio è possibile creare un *diagramma di sequenza* per mostrare un'
 |**A questo scopo**|**Usa questo formato**|
 |--------------------------|-------------------------|
 |Istanza anonima di un tipo.<br /><br /> Usare questo metodo se si ha una sola linea di vita di ogni tipo.|*typeName*|
-|Istanza denominata di un tipo.<br /><br /> Usare questo metodo per visualizzare una sequenza costituita da più istanze dello stesso tipo.|*ObjectName*:*typeName*|
+|Istanza denominata di un tipo.<br /><br /> Usare questo metodo per visualizzare una sequenza costituita da più istanze dello stesso tipo.|*objectName*:*typeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Creazione di linee di vita dai tipi
  È possibile creare nuove linee di vita dalle classi già definite, ad esempio in un diagramma classi.
@@ -443,4 +443,4 @@ In Visual Studio è possibile creare un *diagramma di sequenza* per mostrare un'
 5. Per aggiungere nuovi messaggi a un frammento, usare gli strumenti del messaggio o le funzioni di copia e incolla.
 
 ## <a name="see-also"></a>Vedere anche
- [Diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md) [modificare modelli UML e](../modeling/edit-uml-models-and-diagrams.md) diagrammi [caso d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md) diagrammi [classi UML: riferimento](../modeling/uml-class-diagrams-reference.md) [diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md) [diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md) [video: sketch di interazioni usando diagrammi di sequenza](https://go.microsoft.com/fwlink/?LinkId=201113)
+ [Diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md) [modificare modelli UML e](../modeling/edit-uml-models-and-diagrams.md) diagrammi [caso d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md) diagrammi [classi UML: riferimento](../modeling/uml-class-diagrams-reference.md) [diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md) [diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md) [video: sketch di interazioni usando diagrammi di sequenza](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)

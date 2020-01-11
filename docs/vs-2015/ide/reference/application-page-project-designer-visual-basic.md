@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca14cead3b632cb70b817c79fce797078c7069b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 893647303b493ea633caf076658edbdcf0664ccc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299379"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850844"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,20 +56,20 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
 > [!NOTE]
 > I pacchetti prerequisiti elencati nella [finestra di dialogo Prerequisiti](../../ide/reference/prerequisites-dialog-box.md) vengono installati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario specificare manualmente i prerequisiti in modo che vi sia corrispondenza.
 
- Per altre informazioni, vedere [How to: Target a Version of the .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) (Procedura: Destinare una versione di .NET Framework) e [Visual Studio Multi-Targeting Overview](../../ide/visual-studio-multi-targeting-overview.md) (Cenni preliminari sul multitargeting di Visual Studio).
+ Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Panoramica del multitargeting di Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
  **Tipo di applicazione** Specifica il tipo di applicazione da compilare. Per app di [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] è possibile specificare **App di Windows Store**, **Libreria di classi** o **File WinMD**. Per la maggior parte degli altri tipi di applicazione, è possibile specificare **Applicazione Windows**, **Applicazione console**, **Libreria di classi**, **Servizio Windows** o **Libreria di controlli Web**.
 
  Per il progetto di un'applicazione Web è necessario specificare **Libreria di classi**.
 
- Se si specifica l'opzione **File WinMD**, i tipi possono essere inseriti nel progetto in un qualsiasi linguaggio di programmazione Windows Runtime. Creando un pacchetto dell'output del progetto nel formato File WinMD, è possibile codificare un'applicazione in più linguaggi e fare in modo che il codice interagisca come se fosse stato scritto tutto nello stesso linguaggio. È possibile usare l'opzione **File WinMD** per le soluzioni destinate alle librerie Windows Runtime, tra cui le app di [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]. Per altre informazioni, vedere [Creazione di componenti Windows Runtime in C# e Visual Basic](https://go.microsoft.com/fwlink/?LinkId=231895).
+ Se si specifica l'opzione **File WinMD**, i tipi possono essere inseriti nel progetto in un qualsiasi linguaggio di programmazione Windows Runtime. Creando un pacchetto dell'output del progetto nel formato File WinMD, è possibile codificare un'applicazione in più linguaggi e fare in modo che il codice interagisca come se fosse stato scritto tutto nello stesso linguaggio. È possibile usare l'opzione **File WinMD** per le soluzioni destinate alle librerie Windows Runtime, tra cui le app di [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]. Per altre informazioni, vedere [Creazione di componenti Windows Runtime in C# e Visual Basic](https://msdn.microsoft.com/library/windows/apps/br230301(v=VS.85).aspx).
 
 > [!NOTE]
 > Windows Runtime può fare in modo che i tipi appaiano come oggetti nativi in qualsiasi linguaggio siano usati. Ad esempio, le applicazioni JavaScript che interagiscono con Windows Runtime usano quest'ultimo come un set di oggetti JavaScript, mentre le applicazioni C# usano la libreria come una raccolta di oggetti .NET. Creando un pacchetto dell'output del progetto nel formato File WinMD, è possibile sfruttare la stessa tecnologia usata da Windows Runtime.
 
  Per altre informazioni sulla proprietà **Tipo di applicazione**, vedere [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Per informazioni su come accedere a tale proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.OutputType%2A>.
 
- **Icona** Imposta il file con estensione ico che si vuole usare come icona di programma. Selezionare  **\<Sfoglia...>** per individuare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) o [/win32icon (C# Compiler Options)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+ **Icona** Imposta il file con estensione ico che si vuole usare come icona di programma. Selezionare **\<Sfoglia...>** per individuare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) o [/win32icon (C# Compiler Options)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
  **Form di avvio/oggetto di avvio/URI di avvio** Specifica il form di avvio o il punto di ingresso dell'applicazione.
 
@@ -140,4 +140,4 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
  L'oggetto <xref:System.Windows.Application> genera eventi quando si verificano determinate modifiche di stato dell'applicazione (ad esempio, all'avvio o all'arresto dell'applicazione). Per un elenco completo degli eventi esposti da questa classe, vedere <xref:System.Windows.Application>. Questi eventi vengono gestiti nella sezione del codice utente della classe parziale `Application`.
 
 ## <a name="see-also"></a>Vedere anche
-[Gestione delle proprietà delle applicazioni](../../ide/application-properties.md) [Scrittura di codice nelle soluzioni Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Gestione delle proprietà dell'applicazione](../../ide/application-properties.md) [scrittura di codice nelle soluzioni Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

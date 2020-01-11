@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Domande sulla fatturazione per sottoscrizioni cloud.
-ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491267"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851414"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio
 Assicurarsi di [confrontare i vantaggi e i prezzi delle sottoscrizioni cloud](https://visualstudio.microsoft.com/vs/pricing/) per comprendere i vantaggi di ogni sottoscrizione di Visual Studio, esaminando le differenze tra le sottoscrizioni cloud e standard di Visual Studio, i dettagli dei vantaggi per i sottoscrittori e altri aspetti.
@@ -37,7 +37,7 @@ R: l'approccio più semplice per determinare se sono disponibili i privilegi app
 È necessario selezionare una sottoscrizione di Azure (ovvero un account di fatturazione) dall'elenco presentato di sottoscrizioni di Azure attualmente collegate all'account di accesso.
 Dato che il nome della sottoscrizione di Azure include per impostazione predefinita il tipo di account di fatturazione ("Pagamento a consumo", "Contratto Enterprise Agreement" e così via), spesso è chiaro se la sottoscrizione di Azure fa parte del contratto Enterprise Agreement.
 
-Un altro approccio consiste nel provare a visitare [Azure Enterprise Portal](https://ea.azure.com).  Se è possibile accedere a questo portale, si ha già il ruolo di amministratore dell'organizzazione o di proprietario dell'account. Solo i proprietari di account possono configurare nuovi account di fatturazione Azure in un contratto Enterprise Agreement. Se non si ha accesso ad Azure Enterprise Portal, scoprire chi è l'amministratore dell'organizzazione e chiedere a tale persona di essere aggiunti come proprietario dell'account in Azure Enterprise Portal.  Se non si riesce a trovare questa persona, è possibile [inviare un ticket di supporto](https://aka.ms/AzureEntSupport) e richiedere le informazioni di contatto.  Per il ticket di supporto sono necessari il nome dell'organizzazione e il numero di registrazione del contratto Enterprise Agreement.
+Un altro approccio consiste nel provare a visitare [Azure Enterprise Portal](https://ea.azure.com).  Se è possibile accedere a questo portale, si ha già il ruolo di amministratore dell'organizzazione o di proprietario dell'account. Solo i proprietari di account possono configurare nuovi account di fatturazione Azure in un contratto Enterprise Agreement. Se non si ha accesso ad Azure Enterprise Portal, scoprire chi è l'amministratore dell'organizzazione e chiedere a tale persona di essere aggiunti come proprietario dell'account in Azure Enterprise Portal.  Se non si riesce a trovare questa persona, è possibile [inviare un ticket di supporto](https://support.microsoft.com/supportrequestform/cf791efa-485b-95a3-6fad-3daf9cd4027c) e richiedere le informazioni di contatto.  Per il ticket di supporto sono necessari il nome dell'organizzazione e il numero di registrazione del contratto Enterprise Agreement.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>R: è possibile usare i fondi degli impegni monetari di Azure dal contratto Enterprise Agreement per acquistare sottoscrizioni cloud di Visual Studio?
 R: no, questi fondi prepagati non sono idonei per l'acquisto di sottoscrizioni cloud di Visual Studio. Quando si sceglie una sottoscrizione di Azure creata per il contratto Enterprise Agreement per l'acquisto di sottoscrizioni cloud di Visual Studio, i costi compariranno nella fattura successiva per le "eccedenze". In genere questo accade ogni mese, ma a causa di regole storiche per alcuni clienti Enterprise Agreement, è possibile che la fattura per le eccedenze non venga emessa per diversi mesi. Consultare un esperto di gestione delle licenze per il contratto EA se è necessario conoscere la quantità di acquisti aggiuntivi (acquisti non idonei per i fondi degli impegni monetari di Azure) che causerà l'emissione di una fattura per le eccedenze.

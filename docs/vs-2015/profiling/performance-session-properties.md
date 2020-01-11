@@ -13,19 +13,19 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af214f6a29e12dcdf2fe8bd2de75e05283894922
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290107"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848168"
 ---
 # <a name="performance-session-properties"></a>Proprietà della sessione di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Una **sessione di prestazioni** consente di configurare le impostazioni che determinano la modalità di profilatura dell'applicazione. Include inoltre i rapporti generati per la sessione di profilatura.  
   
- **Requisiti**  
+ **Requirements**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -44,7 +44,7 @@ Una **sessione di prestazioni** consente di configurare le impostazioni che dete
   
  [Raccolta di dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [Procedura: Impostare le opzioni relative ai nomi file dei dati di profilatura](../profiling/how-to-set-performance-data-file-name-options.md)  
+ [Procedura: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni](../profiling/how-to-set-performance-data-file-name-options.md)  
   
 ## <a name="launch"></a>Avvio  
  Queste impostazioni consentono di effettuare una selezione da un elenco di file binari e specificare il relativo ordine di avvio.  
@@ -66,7 +66,7 @@ Una **sessione di prestazioni** consente di configurare le impostazioni che dete
   
   Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).  
   
-## <a name="binary"></a>Binary  
+## <a name="binary"></a>Binario  
  Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Ad esempio, se si esegue la profilatura di My.DLL e si sceglie di non rilocare il file binario instrumentato, viene creata una copia di backup di My.DLL denominata My.Orig.DLL. Successivamente, My.DLL viene modificato con l'inserimento di probe per la raccolta dei dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.  
   
  Per altre informazioni, vedere [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md).  
@@ -89,7 +89,7 @@ Una **sessione di prestazioni** consente di configurare le impostazioni che dete
  Per altre informazioni, vedere [Procedura: Raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md).  
   
 ## <a name="windows-events"></a>Windows Events  
- Durante la profilatura, è possibile raccogliere i dati dai provider di traccia eventi. I dati possono essere visualizzati usando l'opzione `/calltrace` dello strumento da riga di comando VSPerfReport.exe. Per altre informazioni su Event Tracing for Windows (ETW), vedere [About Event Tracing](https://go.microsoft.com/fwlink/?linkid=90752) (Informazioni su Event Tracing).  
+ Durante la profilatura, è possibile raccogliere i dati dai provider di traccia eventi. I dati possono essere visualizzati usando l'opzione `/calltrace` dello strumento da riga di comando VSPerfReport.exe. Per altre informazioni su Event Tracing for Windows (ETW), vedere [About Event Tracing](https://msdn2.microsoft.com/library/aa363668.aspx) (Informazioni su Event Tracing).  
   
  Per altre informazioni, vedere:  
   
@@ -112,6 +112,6 @@ Una **sessione di prestazioni** consente di configurare le impostazioni che dete
  [Procedura: Specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
+ [Panoramiche](../profiling/overviews-performance-tools.md)   
  [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
- [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)
+ [Controlling Data Collection](../profiling/controlling-data-collection.md) (Controllo della raccolta di dati)

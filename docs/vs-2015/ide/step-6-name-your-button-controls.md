@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ebe3813ad01566e2994b0a16b4a3fdc735de8c8c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d4d703dbe28776cd93c7a438fc457d9f50ac4f7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295707"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851122"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: assegnare un nome ai pulsanti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Nel form esiste un solo controllo PictureBox. Quando è stato aggiunto, l'IDE lo
 
  Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button2**, **button3**e **button4**. Da un semplice sguardo ai nomi correnti non è possibile capire quale pulsante corrisponda al pulsante **Chiudi** e quale corrisponda al pulsante **Visualizza immagine** . È questo il motivo per cui è utile assegnare nomi più descrittivi ai pulsanti.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 3](https://go.microsoft.com/fwlink/?LinkId=205213) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 3](https://go.microsoft.com/fwlink/?LinkId=205202). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-name-your-button-controls"></a>Per assegnare un nome ai pulsanti
 
@@ -77,4 +77,4 @@ Nel form esiste un solo controllo PictureBox. Quando è stato aggiunto, l'IDE lo
 
 - Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 7: aggiungere componenti della finestra di dialogo al form](../ide/step-7-add-dialog-components-to-your-form.md).
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Step 5: Add Controls to Your Form](../ide/step-5-add-controls-to-your-form.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 5: aggiungere controlli al form](../ide/step-5-add-controls-to-your-form.md).

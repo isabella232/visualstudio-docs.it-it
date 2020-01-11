@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 96224b522b17ff9da520386d56d4fae7a04bd981
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: d072f54dfe351d54e3e115dca7a91bec77fbb9e6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144770"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844921"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Eseguire applicazioni Windows Store nel simulatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
   
  Il simulatore offre un ambiente in cui progettare, sviluppare, eseguire il debug e testare le app di Windows Store. Tuttavia, prima di pubblicare l'app in Windows Store, ti consigliamo di testare l'app in un dispositivo reale.  
   
- Il simulatore di Visual Studio per le app di Windows Store non viene eseguito in un ambiente isolato nel computer locale. Di conseguenza, gli errori che si verificano nel simulatore, ad esempio un errore irreversibile a livello di sistema, può influenzare l'intero computer.  
+ Il simulatore di Visual Studio per le app di Windows Store non viene eseguito in un ambiente isolato nel computer locale. Di conseguenza, gli errori che si verificano nel simulatore, ad esempio un errore irreversibile a livello di sistema, possono influire anche sull'intero computer.  
   
  Per altre informazioni su Windows Phone vedi [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) .  
   
@@ -86,10 +86,10 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
  Puoi modificare l'orientamento verticale e orizzontale del dispositivo ruotando il simulatore di 90 gradi in qualsiasi direzione.  
   
 > [!NOTE]
-> Il simulatore non rispetta la proprietà [DisplayProperties.AutoRotationPreferences](https://go.microsoft.com/fwlink/?LinkId=249460) di un progetto. Ad esempio, se il progetto imposta l'orientamento su `Landscape`e quindi ruoti il simulatore sull'orientamento verticale, anche l'immagine visualizzata dal simulatore sarà ruotata e ridimensionata. Verifica queste impostazioni su un dispositivo reale.  
+> Il simulatore non rispetta la proprietà [DisplayProperties.AutoRotationPreferences](https://msdn.microsoft.com/library/windows/apps/windows.graphics.display.displayproperties.autorotationpreferences.aspx) di un progetto. Ad esempio, se il progetto imposta l'orientamento su `Landscape`e quindi ruoti il simulatore sull'orientamento verticale, anche l'immagine visualizzata dal simulatore sarà ruotata e ridimensionata. Verifica queste impostazioni su un dispositivo reale.  
   
 > [!NOTE]
-> Se ruoti il simulatore in modo che un suo bordo sia più largo dello schermo su cui viene visualizzato, il simulatore verrà ridimensionato automaticamente alle dimensioni dello schermo. Il simulatore non viene ripristinato alla dimensione originale se lo ruoti di nuovo.  
+> Se ruoti il simulatore in modo che un suo bordo sia più largo dello schermo su cui viene visualizzato, il simulatore verrà ridimensionato automaticamente in base alle dimensioni dello schermo. Le dimensioni originali non vengono ripristinate se ruoti di nuovo il simulatore.  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Modificare le dimensioni e la risoluzione dello schermo simulate  
  Per modificare le dimensioni e la risoluzione dello schermo simulate, scegliere il pulsante **Cambia risoluzione** nella tavolozza e scegliere una nuova dimensione e una nuova risoluzione dall'elenco.  
@@ -103,7 +103,7 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
  Quando si invia un'applicazione all'archivio applicazioni di Windows, è necessario includere alcune schermate dell'app.  
   
 > [!NOTE]
-> La schermata viene salvato con la risoluzione corrente del simulatore. Per modificare la risoluzione, scegli il pulsante **Cambia risoluzione** .  
+> La schermata viene salvata con la risoluzione corrente del simulatore. Per modificare la risoluzione, scegli il pulsante **Cambia risoluzione** .  
   
 - Per creare schermate dell'app dal simulatore, scegli il pulsante **Acquisisce la schermata negli Appunti** .  
   

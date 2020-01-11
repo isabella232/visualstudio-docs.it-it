@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299406"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850137"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,11 +49,11 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](https://codeplex.com/SqlServerSamples).
 
   Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:
 
-- WCF Data Services. Per ulteriori informazioni, vedere [Panoramica](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
+- WCF Data Services. Per altre informazioni, vedere la [panoramica](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
 
 - Modelli di dati in [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].
 
@@ -76,7 +76,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 4. Selezionare il modello di progetto **Applicazione Web ASP.NET**.
 
-5. Nella casella **nome** Digitare `AdventureWorksService` e fare clic su **OK**.
+5. Digitare `AdventureWorksService` nella casella **Nome** e quindi fare clic su **OK**.
 
      Visual Studio crea il progetto `AdventureWorksService`.
 
@@ -107,7 +107,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 7. Nella pagina **Seleziona oggetti di database** espandere **Tabelle**, quindi selezionare la tabella **SalesOrderHeader**.
 
-8. Fare clic su **Fine**.
+8. Scegliere **Fine**.
 
 ## <a name="create-the-service"></a>Creare il servizio
  Creare una [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] per esporre i dati nel Entity Data Model a un'applicazione WPF.

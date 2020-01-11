@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fa11cd0b29f3b8ee6008b8c0b3369b16812f0e5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 72c92b4431c21c27bc1fe2ff86b24c850cc34694
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302791"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846086"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Utilizzo di Progettazione flussi di lavoro legacy
 La [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy fornita da [!INCLUDE[vs2010](../includes/vs2010-md.md)] può essere usata per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o a [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
@@ -36,7 +36,7 @@ La [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy fornita da [!INCLUDE[vs2010](
 |Scorrimento automatico|Se si ha un grande flusso di lavoro, è necessario posizionare un'attività oltre la visualizzazione visibile dell'area di progettazione. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consente di trascinare un'attività verso il bordo dell'area di progettazione nel punto più vicino a dove si desidera inserire l'attività. La visualizzazione dell'area di progettazione scorre automaticamente in quella direzione.|
 |Smart tag|Le attività la cui configurazione non è completa o valida sono contrassegnate da un'icona di punto esclamativo. È possibile fare clic sull'icona e visualizzare un elenco a discesa di richieste di configurazione esistenti sull'attività. È quindi possibile usare la finestra **Proprietà** per configurare l'attività in modo appropriato. Quando tutte le proprietà sono valide per l'attività, l'icona di punto esclamativo scompare.|
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
  [Finestre del flusso di lavoro di Visual Studio (legacy)](../workflow-designer/visual-studio-workflow-windows-legacy.md)
 
  [Creazione di progetti flusso di lavoro legacy](../workflow-designer/creating-legacy-workflow-projects.md)
@@ -54,4 +54,4 @@ La [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy fornita da [!INCLUDE[vs2010](
  [Finestra di progettazione legacy per la Guida interfaccia utente di Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Sviluppo di flussi di lavoro](https://go.microsoft.com/fwlink?LinkID=65010)
+ [Sviluppo di flussi di lavoro](https://msdn2.microsoft.com/library/bb628448.aspx)

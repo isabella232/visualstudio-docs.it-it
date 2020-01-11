@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7b7ec05e8d849f7e802ab1c1ff4464e0552ab6d6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291227"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849862"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Esplorare e gestire le risorse di archiviazione usando Esplora server
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>Panoramica
+## <a name="overview"></a>Panoramica di
 
 Se sono stati installati gli Strumenti di Azure per Microsoft Visual Studio, è possibile visualizzare i dati BLOB, della coda e della tabella dagli account di archiviazione per Azure. Il nodo **Archiviazione** di Azure in Esplora server mostra i dati presenti nell'account dell'emulatore di archiviazione locale e negli altri account di archiviazione di Azure.
 
@@ -110,7 +110,7 @@ In Cloud Explorer usare una delle procedure seguenti:
 * Selezionare il nome del BLOB e quindi scegliere il pulsante **Apri**.
 * Fare doppio clic sul nome del BLOB.
 
-Lo stato di un download del BLOB viene visualizzato nella finestra **Log attività di Azure**.
+Lo stato di avanzamento di un download di BLOB viene visualizzato nella finestra **Log attività di Azure** .
 
 Il BLOB viene aperto nell'editor predefinito per il tipo di file. Se il sistema operativo riconosce il tipo di file, il file viene aperto in un'applicazione installata in locale. In caso contrario, viene richiesto di scegliere un'applicazione appropriata per il tipo di file del BLOB. Il file locale creato durante il download di un BLOB è contrassegnato come di sola lettura.
 
@@ -122,7 +122,7 @@ Per impostazione predefinita, un BLOB viene scaricato in una directory temporane
 
 Per caricare i BLOB, selezionare il pulsante **Carica BLOB** quando il contenitore è aperto nella relativa visualizzazione.
 
-È possibile scegliere di caricare uno o più file ed è possibile caricare file di qualsiasi tipo. La finestra **Log attività di Azure** mostra lo stato del caricamento. Per altre informazioni su come usare i dati BLOB, vedere [Come usare il servizio Archiviazione BLOB di Azure in .NET](https://go.microsoft.com/fwlink/p/?LinkId=267911).
+È possibile scegliere di caricare uno o più file ed è possibile caricare file di qualsiasi tipo. La finestra **Log attività di Azure** mostra lo stato del caricamento. Per altre informazioni su come usare i dati BLOB, vedere [Come usare il servizio Archiviazione BLOB di Azure in .NET](https://www.windowsazure.com/develop/net/how-to-guides/blob-storage/).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Per visualizzare i log trasferiti nei BLOB
 
@@ -157,7 +157,7 @@ La figura seguente mostra una coda contenente due messaggi:
 
 ![Visualizzazione di una coda](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Per altre informazioni sulle code dei servizi di archiviazione, vedere [Introduzione all'archiviazione code di Azure con .NET](https://go.microsoft.com/fwlink/?LinkID=264702). Per informazioni sul servizio Web per le code dei servizi di archiviazione, vedere [Concetti relativi al servizio di accodamento](https://go.microsoft.com/fwlink/?LinkId=264788). Per informazioni su come inviare messaggi a una coda dei servizi di archiviazione usando Visual Studio, vedere [Invio di messaggi a una coda di servizi di archiviazione](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Per altre informazioni sulle code dei servizi di archiviazione, vedere [Introduzione all'archiviazione code di Azure con .NET](https://www.windowsazure.com/develop/net/how-to-guides/queue-service/). Per informazioni sul servizio Web per le code dei servizi di archiviazione, vedere [Concetti relativi al servizio di accodamento](https://msdn.microsoft.com/library/windowsazure/dd179353.aspx). Per informazioni su come inviare messaggi a una coda dei servizi di archiviazione usando Visual Studio, vedere [Invio di messaggi a una coda di servizi di archiviazione](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
 > Le code dei servizi di archiviazione sono diverse dalle code del bus di servizio di Azure. Per altre informazioni sulle code del bus di servizio, vedere[Code, argomenti e sottoscrizioni del bus di servizio](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
@@ -200,7 +200,7 @@ Le entità di una tabella non devono avere lo stesso set di proprietà (colonne)
 
     ![Pulsante Aggiungi entità](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. Nella finestra di dialogo **Aggiungi entità** immettere i valori per le proprietà **PartitionKey** e **RowKey**.
+1. Nella finestra di dialogo **Aggiungi entità** immettere i valori delle proprietà **PartitionKey** e **RowKey**.
 
     ![Finestra di dialogo Aggiungi entità](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -213,7 +213,7 @@ Se si usa il generatore di query, è possibile personalizzare il set di entità 
 1. Per aprire il generatore di query, visualizzare prima una tabella.
 1. Scegliere il pulsante **Generatore di query** nella barra degli strumenti della visualizzazione tabella.
 
-    Verrà visualizzata la finestra di dialogo **Generatore di query**. La figura seguente mostra una query compilata nel generatore di query.
+    Viene visualizzata la finestra di dialogo **Generatore di query** . La figura seguente mostra una query compilata nel generatore di query.
 
     ![Generatore di query](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Una volta compilata la query, chiudere la finestra di dialogo. La query risultante in formato testo viene visualizzata in una casella di testo come filtro di WCF Data Services.
@@ -264,7 +264,7 @@ Sono disponibili due modi per aggiungere gli account di archiviazione mediante E
 
    ![Creare un account di archiviazione di Azure](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Selezionare **Crea**.
+1. Scegliere **Crea**.
 
 Il nuovo account di archiviazione viene visualizzato nell'elenco **Archiviazione** di Esplora soluzioni.
 

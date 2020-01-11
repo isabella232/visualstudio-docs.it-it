@@ -11,23 +11,23 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295839"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849732"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definire vincoli di convalida per i modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile definire vincoli di convalida che verificano se il modello soddisfa una condizione specificata. Ad esempio, si può definire un vincolo che assicura che un utente non crei un ciclo di relazioni di ereditarietà. Il vincolo viene richiamato quando l'utente cerca di aprire o di salvare il modello e può essere richiamato anche manualmente. Se il vincolo non riesce, alla finestra di errore viene aggiunto un messaggio definito dall'utente. È possibile creare un pacchetto di questi vincoli in un progetto[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
+È possibile definire vincoli di convalida che verificano se il modello soddisfa una condizione specificata. Ad esempio, si può definire un vincolo che assicura che un utente non crei un ciclo di relazioni di ereditarietà. Il vincolo viene richiamato quando l'utente cerca di aprire o di salvare il modello e può essere richiamato anche manualmente. Se il vincolo non riesce, alla finestra di errore viene aggiunto un messaggio definito dall'utente. È possibile creare un pacchetto di questi vincoli in un progetto[VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
 
  Si possono definire anche vincoli che convalidano il modello a fronte di risorse esterne, ad esempio un database. Se si vuole convalidare il codice del programma rispetto a un diagramma livello, vedere [aggiungere la convalida dell'architettura personalizzata ai diagrammi livello](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
  Per individuare le versioni di Visual Studio che supportano i modelli UML, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. Creare un progetto di libreria di classi, aggiungendolo a una soluzione VSIX esistente oppure creando una nuova soluzione.
 
-    1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
+    1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
 
     2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.
 

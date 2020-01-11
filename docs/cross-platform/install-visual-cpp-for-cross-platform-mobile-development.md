@@ -12,18 +12,18 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 25bd88886b6bed447ec7d091543fccdb478db9c5
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bda6d8e20064ab2197408db6b9a55a86325515e8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588874"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846731"
 ---
-# <a name="install-cross-platform-mobile-development-with-c"></a>Installare lo sviluppo di app per dispositivi mobili multipiattaforma conC++
+# <a name="install-cross-platform-mobile-development-with-c"></a>Installare lo sviluppo di app per dispositivi mobili multipiattaforma con C++
 
 È possibile usare C++ in Visual Studio per compilare app desktop di Windows, app UWP (Universal Windows Platform), app di Linux e ora anche app per Android e iOS. Il carico di lavoro **Sviluppo di applicazioni per dispositivi mobili con C++** è un set di componenti installabili in Visual Studio che include modelli di Visual Studio multipiattaforma per iOS, Android e UWP. Questo carico di lavoro installa gli SDK e gli strumenti multipiattaforma necessari per iniziare rapidamente, senza doverli individuare, scaricare e configurare manualmente. Con questi strumenti di Visual Studio è possibile creare, modificare, eseguire il debug e testare facilmente i progetti multipiattaforma. Questo articolo descrive come installare gli strumenti e il software di terze parti necessari per sviluppare app multipiattaforma in C++ usando Visual Studio. Per una panoramica, vedere [Visual C++ per lo sviluppo di codice per dispositivi mobili multipiattaforma](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
 
 ::: moniker range="vs-2017"
 
@@ -48,7 +48,7 @@ Per compilare le app per specifiche piattaforme del dispositivo sono necessari a
 
 - La compilazione di codice per iOS richiede un ID Apple, un account iOS Developer Program e un computer Mac in grado di eseguire [Xcode](https://developer.apple.com/xcode/) versione 10,2 o successiva in OS X Mavericks (versione 10,9) o versioni successive. Per un collegamento alla procedura di installazione, vedere [Installare gli strumenti per iOS](#install-tools-for-ios).
 
-- Gli emulatori Windows Phone richiedono un computer in grado di eseguire Hyper-V. Per poter installare ed eseguire gli emulatori, è prima necessario abilitare la funzionalità Hyper-V in Windows. Per altre informazioni, vedere i [requisiti di sistema](system-requirements-for-the-visual-studio-emulator-for-android.md)dell'emulatore.
+- Gli emulatori Windows Phone richiedono un computer in grado di eseguire Hyper-V. Per poter installare ed eseguire gli emulatori, è prima necessario abilitare la funzionalità Hyper-V in Windows. Per altre informazioni, vedere i [requisiti di sistema](system-requirements-for-the-visual-studio-emulator-for-android.md) dell'emulatore.
 
 ## <a name="get-the-tools"></a>Ottenere gli strumenti
 
@@ -86,7 +86,7 @@ Il programma di installazione di Visual Studio include uno **sviluppo per dispos
    > [!IMPORTANT]
    > Il riavvio è necessario per assicurare la corretta installazione di tutti i componenti.
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 
@@ -117,4 +117,4 @@ Nella maggior parte dei casi, Visual Studio è in grado di rilevare le configura
 ## <a name="see-also"></a>Vedere anche
 
 - [Install And Configure Tools to Build using iOS](install-and-configure-tools-to-build-using-ios.md) (Installare e configurare strumenti per compilare con iOS)
-- [Visual C++ per lo sviluppo di codice per dispositivi mobili multipiattaforma](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+- [Visual C++ per lo sviluppo di codice per dispositivi mobili multipiattaforma](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)

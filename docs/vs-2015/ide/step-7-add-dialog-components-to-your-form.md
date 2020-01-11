@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f734c818265d32f6895c09ab01fd2468e0f5a247
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 40b90096f768a7dd836507c83dff935261a99a25
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295688"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851134"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Passaggio 7: aggiungere componenti di finestra di dialogo al form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Per consentire al programma di aprire i file di immagine e scegliere un colore d
 
  Un componente è per alcuni aspetti simile a un controllo. Si usa la Casella degli strumenti per aggiungere un componente al form e si impostano le relative proprietà usando la finestra **Proprietà**. A differenza di un controllo, tuttavia, l'aggiunta di un componente al form non aggiunge un elemento visibile da parte dell'utente sul form. Vengono invece forniti determinati comportamenti che è possibile attivare tramite codice. L'apertura della finestra di dialogo **Apri file** viene eseguita da un componente.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 3](https://go.microsoft.com/fwlink/?LinkId=205213) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 3](https://go.microsoft.com/fwlink/?LinkId=205202). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-add-dialog-components-to-your-form"></a>Per aggiungere componenti di finestra di dialogo al form
 

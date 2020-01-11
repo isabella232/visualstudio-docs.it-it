@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 505c17635c80a165a7a094d3ce2bec3c32bd7101
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0673f7511276799804dc327bab67637f3fc450b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297680"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850102"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ Utilizzando l'SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 ## <a name="samples-and-the-latest-information"></a>Esempi e informazioni più recenti
  [Scaricare l'SDK di modellazione per Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- [Esempi](https://go.microsoft.com/fwlink/?LinkId=186128) per l'SDK di modellazione per Visual Studio.
+ [Esempi](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) per l'SDK di modellazione per Visual Studio.
 
- Per informazioni aggiuntive sulle tecniche avanzate e sulla risoluzione dei problemi, visitare il [Forum di estendibilità degli strumenti di modellazione di Visual Studio & DSL](https://go.microsoft.com/fwlink/?LinkID=186074).
+ Per indicazioni sulla risoluzione dei problemi e alle tecniche più avanzate, visitare [forum di estendibilità degli strumenti di modellazione e DSL di Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
  [Introduzione ai linguaggi specifici del dominio](../modeling/getting-started-with-domain-specific-languages.md)
 
  [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)

@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302051"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851227"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 1. Nel menu **FILE** scegliere **Nuovo** e quindi selezionare **Progetto**.
 
-     Viene visualizzata la finestra di dialogo **Nuovo progetto**.
+     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
 
 2. Nel riquadro **Installato** espandere **Visual C#** e quindi selezionare **Windows Desktop**.
 
@@ -224,7 +224,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
      Gli aggiornamenti al metodo di test vengono salvati nel file UIMap.Designer.
 
     > [!CAUTION]
-    > Una volta che è stato spostato il metodo, non è più possibile modificarlo tramite l'Editor test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor di codice.
+    > Una volta che è stato spostato il metodo, non è più possibile modificarlo tramite l'Editor test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor del codice.
 
 10. Rinominare il metodo `SimpleAppTest()` in `ModifiedSimpleAppTest()`.
 
@@ -369,22 +369,22 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 ## <a name="external-resources"></a>Risorse esterne
 
 ### <a name="videos"></a>Videos
- ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
+ ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-Episode1-GettingStarted](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
- ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-episode2-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
+ ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-episode2-MaintainenceAndDebugging](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
 
- ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-Episode3-HandCoding](https://go.microsoft.com/fwlink/?LinkID=230575)
+ ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-Episode3-HandCoding](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21117)
 
 ### <a name="hands-on-lab"></a>Lab pratico
- [Lab virtuale MSDN: Introduzione alla creazione di test codificati dell'interfaccia utente con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
+ [Lab virtuale MSDN: Introduzione alla creazione di test codificati dell'interfaccia utente con Visual Studio 2010](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
-### <a name="faq"></a>DOMANDE FREQUENTI
- [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Domande frequenti
+ [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Domande frequenti sui test codificati dell'interfaccia utente - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Domande frequenti sui test codificati dell'interfaccia utente - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
- [Test di automazione dell'interfaccia utente di Visual Studio (include CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Test di automazione dell'interfaccia utente di Visual Studio (include CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Vedere anche
  [Usare automazione interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) [Introduzione con le](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [configurazioni e le piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [modifica dei test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
