@@ -8,12 +8,12 @@ author: frozenpandaman
 ms.author: efessler
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e226ac6c83839474b9d8ac6be7fb57e376de4a4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 25320da07249abee0ab0cddd48662585a7a809dd
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745985"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846741"
 ---
 # <a name="using-clang-tidy-in-visual-studio"></a>Uso di Clang-tidy in Visual Studio
 
@@ -28,7 +28,7 @@ Clang-tidy viene eseguito dopo la compilazione riuscita. potrebbe essere necessa
 
 ## <a name="msbuild"></a>MSBuild
 
-È possibile configurare Clang-tidy affinché venga eseguito come parte dell'analisi del codice e compilata nella pagina**generale** dell' **analisi codice**  >  nel finestra proprietà del progetto. Le opzioni per la configurazione dello strumento sono disponibili nel sottomenu Clang-tidy.
+È possibile configurare Clang-tidy affinché venga eseguito come parte dell'analisi del codice e compilata nella pagina **generale** dell' **analisi codice** > nel finestra proprietà del progetto. Le opzioni per la configurazione dello strumento sono disponibili nel sottomenu Clang-tidy.
 
 Per altre informazioni, vedere [procedura: impostare le proprietà di analisi del codice perC++ C/progetti](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
@@ -44,7 +44,7 @@ Se non viene specificata alcuna opzione "Enable", Visual Studio selezionerà lo 
 
 ## <a name="warning-display"></a>Visualizzazione avviso
 
-Le esecuzioni Clang-tidy generano avvisi visualizzati nel Elenco errori e come controllo ortografia durante nell'editor sotto le sezioni pertinenti di codice. Usare la colonna "Category" nel Elenco errori per ordinare e organizzare gli avvisi Clang-tidy. È possibile configurare gli avvisi in-Editor attivando l'impostazione "Disabilita controllo ortografia durante analisi codice" in **strumenti**  > **Opzioni**.
+Le esecuzioni Clang-tidy generano avvisi visualizzati nel Elenco errori e come controllo ortografia durante nell'editor sotto le sezioni pertinenti di codice. Usare la colonna "Category" nel Elenco errori per ordinare e organizzare gli avvisi Clang-tidy. È possibile configurare gli avvisi in-Editor attivando l'impostazione "Disabilita controllo ortografia durante analisi codice" in **strumenti** > **Opzioni**.
 
 ## <a name="clang-tidy-configuration"></a>Configurazione Clang-tidy
 
@@ -52,5 +52,5 @@ Le esecuzioni Clang-tidy generano avvisi visualizzati nel Elenco errori e come c
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Supporto Clang/LLVM per i progetti MSBuild](https://aka.ms/cpp/clangmsbuild)
-- [Supporto Clang/LLVM per i progetti CMake](https://aka.ms/cpp/clangcmake)
+- [Supporto Clang/LLVM per i progetti MSBuild](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)
+- [Supporto Clang/LLVM per i progetti CMake](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)

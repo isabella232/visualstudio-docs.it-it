@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cafdfacec24e906569d0f2b0d1a334511a75e30a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 96647f362566f0687cb04b7da4459331ac56b031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300719"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851909"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Questo articolo contiene le attività seguenti per gli integratori del Visualizz
 
   Controlli supportati del pacchetto di personalizzazione di Visual Studio:
 
-- Collegamenti
+- collegamenti
 
 - CodeSnippet
 
@@ -67,7 +67,7 @@ Questo articolo contiene le attività seguenti per gli integratori del Visualizz
 
 - cplusplus o VisualC + + o c++
 
-- JScript
+- jscript
 
 - VisualBasic o VB
 
@@ -312,13 +312,13 @@ some F# code
 
    - Per i sistemi operativi a 32 bit:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< spazio dei nomi\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "location" = "offline"
 
    - Per i sistemi operativi a 64 bit:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< spazio dei nomi\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "location" = "offline"
 
@@ -352,10 +352,10 @@ some F# code
 
 |Proprietà (rappresentazione HTML)|Descrizione|
 |--------------------------------------|-----------------|
-|\< meta Name = "Microsoft. Help. locale" Content = "[Language-Code]"/>|Imposta le impostazioni locali per questo argomento. Se questo tag viene usato in un argomento, deve essere usato una sola volta e deve essere inserito sopra qualsiasi altro tag della Guida Microsoft. Se questo tag non viene utilizzato, il testo del corpo dell'argomento viene indicizzato utilizzando il Word breaker associato alle impostazioni locali del prodotto, se specificato. in caso contrario, viene usato il Word breaker en-US. Questo tag è conforme a ISOC RFC 4646. Per assicurarsi che la Guida Microsoft funzioni correttamente, utilizzare questa proprietà anziché l'attributo generale del linguaggio.|
-|\< meta Name = "Microsoft. Help. TopicLocale" Content = "[Language-Code]"/>|Imposta le impostazioni locali per questo argomento quando vengono utilizzate anche altre impostazioni locali. Se questo tag viene usato in un argomento, deve essere usato una sola volta. Utilizzare questo tag quando il catalogo contiene contenuto in più di una lingua. Più argomenti in un catalogo possono avere lo stesso ID, ma ognuno deve specificare un TopicLocale univoco. L'argomento che specifica una TopicLocale che corrisponde alle impostazioni locali del catalogo è quello visualizzato nel sommario. Tuttavia, tutte le versioni in lingua dell'argomento vengono visualizzate nei risultati della ricerca.|
+|\< meta name="Microsoft.Help.Locale" content="[language-code]" />|Imposta le impostazioni locali per questo argomento. Se questo tag viene usato in un argomento, deve essere usato una sola volta e deve essere inserito sopra qualsiasi altro tag della Guida Microsoft. Se questo tag non viene utilizzato, il testo del corpo dell'argomento viene indicizzato utilizzando il Word breaker associato alle impostazioni locali del prodotto, se specificato. in caso contrario, viene usato il Word breaker en-US. Questo tag è conforme a ISOC RFC 4646. Per assicurarsi che la Guida Microsoft funzioni correttamente, utilizzare questa proprietà anziché l'attributo generale del linguaggio.|
+|\< meta name="Microsoft.Help.TopicLocale" content="[language-code]" />|Imposta le impostazioni locali per questo argomento quando vengono utilizzate anche altre impostazioni locali. Se questo tag viene usato in un argomento, deve essere usato una sola volta. Utilizzare questo tag quando il catalogo contiene contenuto in più di una lingua. Più argomenti in un catalogo possono avere lo stesso ID, ma ognuno deve specificare un TopicLocale univoco. L'argomento che specifica una TopicLocale che corrisponde alle impostazioni locali del catalogo è quello visualizzato nel sommario. Tuttavia, tutte le versioni in lingua dell'argomento vengono visualizzate nei risultati della ricerca.|
 |titolo \< > [title]\</title >|Specifica il titolo di questo argomento. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. Se il corpo dell'argomento non contiene un titolo \<sezione div >, questo titolo viene visualizzato nell'argomento e nel sommario.|
-|\< meta Name = "Microsoft. Help. Keywords" Content = "[aKeywordPhrase]"/>|Specifica il testo di un collegamento visualizzato nel riquadro indice del Visualizzatore della guida. Quando si fa clic sul collegamento, viene visualizzato l'argomento. È possibile specificare più parole chiave di indice per un argomento oppure omettere questo tag se non si desidera che i collegamenti a questo argomento vengano visualizzati nell'indice. Le parole chiave "K" di versioni precedenti della guida possono essere convertite in questa proprietà.|
+|\< meta name=" Microsoft.Help.Keywords" content="[aKeywordPhrase]"/>|Specifica il testo di un collegamento visualizzato nel riquadro indice del Visualizzatore della guida. Quando si fa clic sul collegamento, viene visualizzato l'argomento. È possibile specificare più parole chiave di indice per un argomento oppure omettere questo tag se non si desidera che i collegamenti a questo argomento vengano visualizzati nell'indice. Le parole chiave "K" di versioni precedenti della guida possono essere convertite in questa proprietà.|
 |\< meta Name = "Microsoft. Help. ID" Content = "[TopicID]"/>|Imposta l'identificatore per questo argomento. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. L'ID deve essere univoco tra gli argomenti del catalogo con le stesse impostazioni locali. In un altro argomento è possibile creare un collegamento a questo argomento usando questo ID.|
 |\< meta Name = "Microsoft. Help. F1" Content = "[System. Windows. Controls. Primitives. IRecyclingItemContainerGenerator]"/>|Specifica la parola chiave F1 per questo argomento. È possibile specificare più parole chiave F1 per un argomento oppure omettere questo tag se non si desidera che questo argomento venga visualizzato quando un utente dell'applicazione preme F1. In genere, per un argomento viene specificata solo una parola chiave F1. Le parole chiave "F" di versioni precedenti della guida possono essere convertite in questa proprietà.|
 |\< meta Name = "Description" Content = "[Descrizione argomento]"/>|Fornisce un breve riepilogo del contenuto di questo argomento. Se questo tag viene usato in un argomento, deve essere usato una sola volta. A questa proprietà è possibile accedere direttamente dalla libreria di query; non è archiviato nel file di indice.|
@@ -432,41 +432,41 @@ some F# code
 
   Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozione o la modifica di questi valori provocherà errori ed eventualmente arresti anomali dell'applicazione. Gli identificatori di localizzazione (ad esempio _locID = "CodeSnippet. n") sono inclusi nel pacchetto di personalizzazione di Visual Studio.
 
-  **Personalizzazione. XML**
+  **Branding.xml**
 
 |||
 |-|-|
 |Funzionalità:|**CollapsibleArea**|
 |Utilizzare:|Espandi Comprimi testo controllo contenuto|
 |**Elemento**|**Valore**|
-|ExpandText|Espandi|
+|ExpandText|Expand|
 |CollapseText|Comprimi|
 |Funzionalità:|**CodeSnippet**|
 |Utilizzare:|Testo del controllo frammento di codice.  Nota: il contenuto dei frammenti di codice con spazio "senza interruzioni" verrà modificato in spazio.|
 |**Elemento**|**Valore**|
 |CopyToClipboard|Copia negli Appunti|
-|ViewColorizedText|Visualizza colori|
+|ViewColorizedText|Visualizza testo a colori|
 |CombinedVBTabDisplayLanguage|Visual Basic (esempio)|
 |VBDeclaration|Dichiarazione|
-|VBUsage|Utilizzo|
+|VBUsage|Usage|
 |Funzionalità:|**Feedback, piè di pagina e logo**|
 |Utilizzare:|Fornire un controllo feedback per il cliente per fornire commenti e suggerimenti sull'argomento corrente tramite posta elettronica.  Testo del copyright per il contenuto.  Definizione del logo.|
 |**Elemento**|**Valore (queste stringhe possono essere modificate per soddisfare le esigenze di adozione del contenuto).**|
-|CopyRight|© 2013 Microsoft Corporation. Tutti i diritti sono riservati.|
+|CopyRight|© 2013 Microsoft Corporation. Tutti i diritti riservati.|
 |SendFeedback|\<a href = "{0}" {1}> inviare commenti e suggerimenti\</a > in questo argomento a Microsoft.|
 |FeedbackLink||
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
 |LogoFileName|vs_logo_bk.gif|
 |LogoFileNameHC|vs_logo_wh.gif|
-|Funzionalità:|**Non responsabilità**|
+|Funzionalità:|**Dichiarazione di non responsabilità**|
 |Utilizzare:|Set di dichiarazioni di non responsabilità del case specifiche per il contenuto tradotto dal computer.|
 |**Elemento**|**Valore**|
-|MT_Editable|Questo articolo è stato tradotto dal computer. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
-|MT_NonEditable|Questo articolo è stato tradotto dal computer. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
-|MT_QualityEditable|Questo articolo è stato tradotto manualmente. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
-|MT_QualityNonEditable|Questo articolo è stato tradotto manualmente. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
-|MT_BetaContents|Questo articolo è stato tradotto per un rilascio preliminare. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
-|MT_BetaRecycledContents|Questo articolo è stato tradotto manualmente per una versione preliminare. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
+|MT_Editable|Il presente articolo è stato tradotto automaticamente. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
+|MT_NonEditable|Il presente articolo è stato tradotto automaticamente. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
+|MT_QualityEditable|Il presente articolo è stato tradotto manualmente. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
+|MT_QualityNonEditable|Il presente articolo è stato tradotto manualmente. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
+|MT_BetaContents|Il presente articolo è stato tradotto automaticamente per una versione non definitiva. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
+|MT_BetaRecycledContents|Il presente articolo è stato tradotto manualmente per una versione non definitiva. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
 |Funzionalità:|**LinkTable**|
 |Utilizzare:|Supporto per i collegamenti agli argomenti online|
 |**Elemento**|**Valore**|
@@ -512,7 +512,7 @@ some F# code
 |HomePageHelpSettingsText|\<p > l'impostazione corrente è la guida locale. Il Visualizzatore della Guida Visualizza il contenuto installato nel computer.\<br/> per modificare l'origine del contenuto della guida, sulla barra dei menu di Visual Studio scegliere \<span style = "{0}" > Guida, impostare preferenza guida\</span >.\<br/>\</p >|
 |MegaByte|MB|
 
- **personalizzazione. js**
+ **branding.js**
 
  Il file Branding. js contiene JavaScript usato dagli elementi di personalizzazione del Visualizzatore della Guida di Visual Studio.  Di seguito è riportato un elenco degli elementi di personalizzazione e della funzione JavaScript di supporto.  Tutte le stringhe da localizzare per questo file sono definite nella sezione "stringhe localizzabili" all'inizio del file.  Il file ICL è stato creato per le stringhe loc all'interno del file Branding. js.
 
@@ -567,7 +567,7 @@ some F# code
 ||< TOPIC_CORRUPTED_SECTION_ADD/>|Branding. XML, tag \<TopicCorruptedViewOnlineText >|
 |topicnotfound. htm|Quando un argomento non viene trovato nel set di contenuto locale, né disponibile online||
 ||< META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding. XML, tag \<TopicNotFoundTitle >|
-||< META_TOPIC_NOT_FOUND_ID_ADD/>|Branding. XML, tag \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
+||< META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
 ||< TOPIC_NOT_FOUND_SECTION_ADD/>|Branding. XML, tag \<TopicNotFoundText >|
 |contentnotinstalled.htm|Quando non è installato alcun contenuto locale per il prodotto.||
 ||< META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding. XML, tag \<ContentNotInstalledTitle >|
@@ -690,7 +690,7 @@ some F# code
 
  Questa procedura dettagliata illustra come incorporare il contenuto della Guida in un'applicazione shell di Visual Studio e quindi distribuirlo.
 
- **Requisiti**
+ **Requirements**
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 
@@ -824,4 +824,4 @@ Per l'API di runtime, vedere [API della Guida di Windows](https://msdn.microsoft
 
 Per altre informazioni su come sfruttare l'API della guida, vedere [esempi di codice del Visualizzatore della Guida](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-Per gli aggiornamenti sui problemi di rilievo, vedere il [file Leggimi del Visualizzatore della Guida](https://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409).
+Per gli aggiornamenti sui problemi di rilievo, vedere il [file Leggimi del Visualizzatore della Guida](https://go.microsoft.com/fwlink/?LinkId=255960).

@@ -9,19 +9,19 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef28781252181dbf765db52dbe6fed1b286516b2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2ddec4c7327aa9799ae8a12a04b3940d690205cb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295773"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851563"
 ---
 # <a name="step-2-run-your-program"></a>Passaggio 2: eseguire il programma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando è stata creata una nuova soluzione, si è effettivamente compilato un programma che è possibile eseguire. Il programma non fa ancora molto: visualizza semplicemente una finestra vuota con **Form1** nella barra del titolo. È tuttavia possibile eseguirlo, come illustrato di seguito.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 1](https://go.microsoft.com/fwlink/?LinkId=205209) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 1](https://go.microsoft.com/fwlink/?LinkId=205199). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-run-your-program"></a>Per eseguire il programma
 
@@ -45,7 +45,7 @@ Quando è stata creata una nuova soluzione, si è effettivamente compilato un pr
 
 4. Utilizzare uno dei metodi seguenti per arrestare il programma.
 
-    - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
+    - Sulla barra degli strumenti scegliere il pulsante**Termina debug**.
 
     - Sulla barra del menu scegliere **Debug**, **Termina debug**.
 

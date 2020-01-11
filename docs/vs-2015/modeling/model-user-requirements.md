@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302801"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844909"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 |Elementi in un diagramma classi concettuali|[Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)|
 |Come sviluppare codice dalle classi concettuali|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
- In un diagramma classi concettuali non è in genere utile posizionare le frecce sulle associazioni per rappresentare l'esplorabilità. Ciò è dovuto al fatto che il diagramma non rappresenta un'implementazione. Le associazioni rappresentano le relazioni tra oggetti reali. Nell'estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seguente le frecce sono non direzionali per impostazione predefinita: [Esempio: funzionalità di modellazione di un dominio UML](https://go.microsoft.com/fwlink/?LinkId=213849).
+ In un diagramma classi concettuali non è in genere utile posizionare le frecce sulle associazioni per rappresentare l'esplorabilità. Ciò è dovuto al fatto che il diagramma non rappresenta un'implementazione. Le associazioni rappresentano le relazioni tra oggetti reali. Nell'estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seguente le frecce sono non direzionali per impostazione predefinita: [Esempio: funzionalità di modellazione di un dominio UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.
@@ -166,13 +166,13 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
 - Prestazioni
 
-- Sicurezza
+- Sicurezza -
 
 - Usabilità
 
 - Affidabilità
 
-- Affidabilità
+- Efficienza
 
   È possibile includere alcuni di questi requisiti nelle descrizioni di casi di utilizzo specifici. Gli altri requisiti non sono specifici dei casi di utilizzo e vengono scritti più efficacemente in un documento separato. Quando possibile, è utile rispettare il vocabolario definito dal modello di requisiti. Nell'esempio seguente le parole principali usate nel requisito sono i titoli di attori, casi di utilizzo e classi delle illustrazioni precedenti:
 
@@ -239,4 +239,4 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
   Esaminando le relazioni tra le visualizzazioni fornite dai diversi diagrammi, è possibile comprendere rapidamente i concetti principali usati dagli utenti e aiutarli a comprendere ciò che hanno l'esigenza di ottenere dal sistema. È anche possibile ottenere una migliore comprensione dei requisiti di cui le parti interessate sono meno sicure. È possibile pianificare lo sviluppo di queste funzionalità, almeno in formato semplice nella fase iniziale del progetto, per permettere agli utenti di sperimentarle.
 
 ## <a name="see-also"></a>Vedere anche
- [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md) [sviluppare test da un modello](../modeling/develop-tests-from-a-model.md) [usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md) [modellare l'esempio di architettura dell'app e l'](../modeling/model-your-app-s-architecture.md) [estensione: modellazione del dominio UML](https://go.microsoft.com/fwlink/?LinkId=213849) [esempio di Visual Studio Extension: color UML elementi by stereotipo](https://go.microsoft.com/fwlink/?LinkID=213841) [esempio vs estensione: collegare elementi UML a diagrammi, file e altri elementi](https://go.microsoft.com/fwlink/?LinkID=213813) [esempio di Visual Studio: allineare forme in un diagramma UML](https://go.microsoft.com/fwlink/?LinkID=213809) [video: modellazione del dominio aziendale](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md) [sviluppare test da un modello](../modeling/develop-tests-from-a-model.md) [usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md) [modellare l'esempio di architettura dell'app e l'](../modeling/model-your-app-s-architecture.md) [estensione: modellazione del dominio UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [esempio di Visual Studio Extension: color UML elementi by stereotipo](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [esempio vs estensione: collegare elementi UML a diagrammi, file e altri elementi](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [esempio di Visual Studio: allineare forme in un diagramma UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [video: modellazione del dominio aziendale](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

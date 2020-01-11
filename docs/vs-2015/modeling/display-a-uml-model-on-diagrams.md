@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b43d4353e325bb81a29fe39106ac13e1ddcf96a9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296003"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849478"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Visualizzare un modello UML nei diagrammi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nel codice programma per un'estensione a Visual Studio, è possibile controllare come vengono visualizzati gli elementi modello nei diagrammi. Per individuare le versioni di Visual Studio che supportano i modelli UML, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Contenuto dell'argomento:
+In questo argomento:
 - [Per visualizzare un elemento in un diagramma](#Display)
 
 - [Accesso alle forme che rappresentano un elemento](#GetShapes)
@@ -43,9 +43,9 @@ Contenuto dell'argomento:
 |---------------------|-----------------|-------------------------------------|
 |Classificatore|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Creare forme associate nei diagrammi specificati. È possibile creare un numero qualsiasi di forme per ogni classificatore.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Impostare `parentShape` su `null` per una forma di livello superiore del diagramma.<br /><br /> Per visualizzare una forma all'interno di un'altra:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Nota:** se si esegue la visualizzazione all'interno di una transazione **ILinkedUndo** , il metodo a volte non restituisce alcun `IShape`. La forma viene tuttavia creata correttamente ed è accessibile mediante `IElement.Shapes().`|
 |Elemento figlio del classificatore|Attributo, Operazione,<br /><br /> Parte, Porta|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato come parte dell'elemento padre.|
-|Comportamento|Interazione (sequenza)<br /><br /> Attività|Associare il comportamento a un diagramma appropriato.<br /><br /> Ogni comportamento può essere associato a più diagrammi alla volta.<br /><br /> Ad esempio:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
+|Comportamento di|Interazione (sequenza)<br /><br /> Attività|Associare il comportamento a un diagramma appropriato.<br /><br /> Ogni comportamento può essere associato a più diagrammi alla volta.<br /><br /> Ad esempio:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |Elemento figlio del comportamento|Linee di vita, messaggi, azioni, nodi oggetto|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato se l'elemento padre è associato a un diagramma.|
-|Relazione|Associazione, generalizzazione, flusso, dipendenza|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato in ogni diagramma in cui vengono visualizzate entrambe le estremità.|
+|Relationship|Associazione, generalizzazione, flusso, dipendenza|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato in ogni diagramma in cui vengono visualizzate entrambe le estremità.|
 
 ## <a name="GetShapes"></a>Accesso alle forme che rappresentano un elemento
  La forma che rappresenta un elemento appartiene ai tipi:
@@ -379,4 +379,4 @@ namespace AlignCommand
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [esplorare il modello UML](../modeling/navigate-the-uml-model.md) [esempio: allineare le forme in un esempio di comando di menu Diagramma](https://go.microsoft.com/fwlink/?LinkId=213809) [: creazione di elementi, forme e stereotipi](https://go.microsoft.com/fwlink/?LinkId=213811)
+ [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [esplorare il modello UML](../modeling/navigate-the-uml-model.md) [esempio: allineare le forme in un esempio di comando di menu Diagramma](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [: creazione di elementi, forme e stereotipi](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

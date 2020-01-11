@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 48754834295a552e3b189ff05ff2d1c12cd221a3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: b04f0e7dad4847e654560139f9a3978a4d85685b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400912"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846909"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Eseguire il debug di app in un contenitore Docker locale
 
@@ -138,6 +138,6 @@ Per ulteriori informazioni, vedere la pagina relativa alla [compilazione di app 
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Altre informazioni su Docker con Visual Studio, Windows e Azure
 
 * Scopri di più sullo [sviluppo di contenitori con Visual Studio](/visualstudio/containers).
-* Per compilare e distribuire un contenitore Docker, vedere [integrazione di Docker per Azure Pipelines](https://aka.ms/dockertoolsforvsts).
-* Per un indice degli articoli su Windows Server e nano server, vedere [informazioni sui contenitori di Windows](https://aka.ms/containers).
+* Per compilare e distribuire un contenitore Docker, vedere [integrazione di Docker per Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
+* Per un indice degli articoli su Windows Server e nano server, vedere [informazioni sui contenitori di Windows](https://docs.microsoft.com/virtualization/windowscontainers/).
 * Informazioni sul [servizio Azure Kubernetes](https://azure.microsoft.com/services/kubernetes-service/) e sulla [documentazione del servizio Kubernetes di Azure](/azure/aks).

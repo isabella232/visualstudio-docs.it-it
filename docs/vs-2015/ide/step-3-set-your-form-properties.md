@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90fab2724c3d392db7824222da2450a8a4d585c3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f05e91c13b1a9c52b5afad6942e5847643aa9490
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295753"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851557"
 ---
 # <a name="step-3-set-your-form-properties"></a>Passaggio 3: impostare le proprietà del form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto del form.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 1](https://go.microsoft.com/fwlink/?LinkId=205209) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 1](https://go.microsoft.com/fwlink/?LinkId=205199). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-set-your-form-properties"></a>Per impostare le proprietà del form
 
@@ -61,7 +61,7 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 
 7. Prima di andare al passaggio successivo, arrestare il programma, perché l'IDE non consente di modificare il programma mentre è in esecuzione. È possibile utilizzare uno qualsiasi dei seguenti metodi per arrestare il programma.
 
-   - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
+   - Sulla barra degli strumenti scegliere il pulsante**Termina debug**.
 
    - Sulla barra del menu scegliere **Debug**, **Termina debug**.
 

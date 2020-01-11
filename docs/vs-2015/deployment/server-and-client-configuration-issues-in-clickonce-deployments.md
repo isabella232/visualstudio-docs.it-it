@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a78fab1986c7fae50bbb4c8149e8f2c89ec4873
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295203"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844992"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 ## <a name="clickonce-and-proxy-authentication"></a>Autenticazione ClickOnce e proxy  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fornisce il supporto per l'autenticazione proxy integrata di Windows a partire da .NET Framework 3,5. Non sono necessarie direttive machine. config specifiche. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] non fornisce supporto per altri protocolli di autenticazione, ad esempio di base o digest.  
   
- Per abilitare questa funzionalità, è anche possibile applicare un hotfix a .NET Framework 2,0. Per altre informazioni, vedere https://go.microsoft.com/fwlink/?LinkId=158730.  
+ Per abilitare questa funzionalità, è anche possibile applicare un hotfix a .NET Framework 2,0. Per ulteriori informazioni, vedere https://go.microsoft.com/fwlink/?LinkId=158730.  
   
  Per ulteriori informazioni, vedere [\<elemento > defaultProxy (impostazioni di rete)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
@@ -133,7 +133,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
   
  Se si utilizza IIS, è possibile abilitare facilmente la compressione HTTP. Tuttavia, quando si Abilita la compressione HTTP, questa viene abilitata solo per determinati tipi di file, ovvero file HTML e di testo. Per abilitare la compressione per gli assembly (con estensione dll), i file XML (XML), i manifesti della distribuzione (. Application) e i manifesti dell'applicazione (. manifest), è necessario aggiungere questi tipi di file all'elenco dei tipi per comprimere IIS. Fino a quando non si aggiungono i tipi di file alla distribuzione, verranno compressi solo i file di testo e HTML.  
   
- Per istruzioni dettagliate su IIS, vedere [come specificare tipi di documenti aggiuntivi per la compressione HTTP](https://go.microsoft.com/fwlink/?LinkId=178459).  
+ Per istruzioni dettagliate su IIS, vedere [come specificare tipi di documenti aggiuntivi per la compressione HTTP](https://support.microsoft.com/kb/234497).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

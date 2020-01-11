@@ -231,33 +231,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 005f1d1edd1c0a6127c150922cdaab2aef439634
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dcf8f67e240476ad75ab5b0b7b0c446be32ad816
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299455"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846528"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Risorse aggiuntive per la risoluzione degli errori di accesso ai dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Nella tabella seguente sono elencati i forum relativi ai dati disponibili in MSDN.
 
- [Windows Forms i controlli dati e l'associazione dati](https://go.microsoft.com/fwlink/?LinkId=160179) Forum dedicato a domande e discussioni generali sull'accesso ai dati in Windows Forms.
+ [Windows Forms i controlli dati e l'associazione dati](https://social.msdn.microsoft.com/Forums/en-US/winformsdatacontrols/threads) Forum dedicato a domande e discussioni generali sull'accesso ai dati in Windows Forms.
 
- [Forum del set di dati ADO.NET](https://go.microsoft.com/fwlink/?LinkId=160180) Forum dedicato a domande e discussioni generali sui set di impostazioni.
+ [Forum del set di dati ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataset/threads) Forum dedicato a domande e discussioni generali sui set di impostazioni.
 
- [ADO.NET Entity Framework e LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Forum dedicato a domande e discussioni generali sulle applicazioni Entity Framework e sul linguaggio LINQ to Entities.
+ [ADO.NET Entity Framework e LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/adodotnetentityframework/) Forum dedicato a domande e discussioni generali sulle applicazioni Entity Framework e sul linguaggio LINQ to Entities.
 
- [Forum WCF Data Services](https://go.microsoft.com/fwlink/?LinkId=160181) Forum dedicato a domande e discussioni generali sui servizi dati.
+ [Forum WCF Data Services](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataservices/threads) Forum dedicato a domande e discussioni generali sui servizi dati.
 
- [Forum di accesso ai dati SQL Server](https://go.microsoft.com/fwlink/?LinkID=160184) Forum dedicato a domande e discussioni generali sull'accesso ai dati in Microsoft SQL Server.
+ [Forum di accesso ai dati SQL Server](https://social.msdn.microsoft.com/Forums/en-US/sqldataaccess/threads) Forum dedicato a domande e discussioni generali sull'accesso ai dati in Microsoft SQL Server.
 
- [Forum su LINQ to SQL](https://go.microsoft.com/fwlink/?LinkId=160183) Forum dedicato a domande e discussioni generali su LINQ to SQL.
+ [Forum su LINQ to SQL](https://social.msdn.microsoft.com/Forums/en-US/linqtosql/threads) Forum dedicato a domande e discussioni generali su LINQ to SQL.
 
- [Forum sui provider di dati ADO.NET](https://go.microsoft.com/fwlink/?LinkId=160182) Forum dedicato a domande e discussioni generali sui diversi provider di dati .NET Framework.
+ [Forum sui provider di dati ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataproviders/threads) Forum dedicato a domande e discussioni generali sui diversi provider di dati .NET Framework.
 
- Per informazioni su come risolvere i problemi di connettività ai SQL Server, vedere [come risolvere i problemi di connessione al motore di database di SQL Server](https://go.microsoft.com/fwlink/?LinkID=246151).
+ Per informazioni su come risolvere i problemi di connettività ai SQL Server, vedere [come risolvere i problemi di connessione al motore di database di SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Vedere anche
  [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

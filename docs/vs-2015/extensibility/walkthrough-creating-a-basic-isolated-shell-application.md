@@ -12,12 +12,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b6dc84dd8d9f19012c4d09ba9bfd974ec181b9f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291272"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850342"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procedura dettagliata: creazione di un'applicazione shell isolata di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 2. Rimuovere il commento dalla riga seguente:  
   
-     [$RootKey $ \Packages\\{87569308-4813-40A0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. Ricompilare la soluzione e avviare il debug della shell isolata. Aprire un file XML, ad esempio \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Verificare che le parole chiave XML nel file non siano colorate e che digitando "<" in una riga non vengano visualizzate le descrizioni comandi XML.  
   
@@ -163,7 +163,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
 6. Ricompilare la soluzione e avviare il debug della shell isolata. La casella Guida/informazioni deve essere approssimativamente quadrata.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>Prima di distribuire l'applicazione shell isolata  
- L'applicazione shell isolata può essere installata in qualsiasi computer in cui è presente il pacchetto ridistribuibile di Visual Studio Shell (isolated). Per ulteriori informazioni sul pacchetto ridistribuibile, vedere il sito Web relativo ai [download di estendibilità di Visual Studio](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ L'applicazione shell isolata può essere installata in qualsiasi computer in cui è presente il pacchetto ridistribuibile di Visual Studio Shell (isolated). Per ulteriori informazioni sul pacchetto ridistribuibile, vedere il sito Web relativo ai [download di estendibilità di Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="deploying-the-isolated-shell-application"></a>Distribuzione dell'applicazione shell isolata  
  Per distribuire l'applicazione shell isolata in un computer di destinazione, è necessario creare un progetto di installazione. È necessario specificare gli elementi seguenti:  
@@ -216,7 +216,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
     7. Splash. bmp  
   
-5. Fare clic sul pulsante **Aggiungi output progetto** e aggiungere **MyVSShellStub/output primario**. fare clic su **OK**.  
+5. Fare clic sul pulsante **Aggiungi output progetto** e aggiungere **MyVSShellStub/output primario**. Fare clic su **OK**.  
   
 6. Nel riquadro sinistro, in **computer di destinazione**, fare clic con il pulsante destro del mouse sul nodo **Fabrikam Music Editor [INSTALLDIR]** e aggiungere una **nuova cartella** denominata **Extensions**.  
   
@@ -248,7 +248,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 18. Nel riquadro **che si desidera trovare?** scegliere **voce del registro di sistema** nell'elenco a discesa e fare clic su **Avanti**.  
   
-19. Nel riquadro **come si desidera cercarlo** selezionare **HKEY_LOCAL_MACHINE** come radice del registro di sistema. Immettere **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** per i sistemi a 64 bit o **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** per i sistemi a 32 bit, quindi immettere **Install** come valore del registro di sistema. Fare clic su **Avanti**.  
+19. Nel riquadro **come si desidera cercarlo** selezionare **HKEY_LOCAL_MACHINE** come radice del registro di sistema. Immettere **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** per i sistemi a 64 bit o **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** per i sistemi a 32 bit, quindi immettere **Install** come valore del registro di sistema. Scegliere **Avanti**.  
   
 20. Nel riquadro **che cosa si vuole fare con il valore?** immettere **questo prodotto richiede l'installazione di Visual Studio 2015 isolated shell Redistributable.** come testo visualizzato e fare clic su **fine**.  
   

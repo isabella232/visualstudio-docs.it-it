@@ -13,29 +13,29 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a632b90e89e58c26ec72083fe3f4ed9223826dae
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 00df917b05f5073634b0956a0b44e5b0fc6026a6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302849"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846328"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Finestra di dialogo Editor condizione della regola (legacy)
 In questo argomento viene descritto come utilizzare la finestra di dialogo **Editor condizione della regola** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)]legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Per creare e modificare condizioni della regola dichiarativa, utilizzare la finestra di dialogo **Editor condizione della regola** . Queste condizioni della regola sono esposte come proprietà nelle attività predefinite di Windows Workflow Foundation seguenti:
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [Dell'WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
-- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
   Per accedere alla finestra di dialogo **Editor condizione della regola** , utilizzare la finestra di [dialogo Seleziona condizione (legacy)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
@@ -44,7 +44,7 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Edi
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
 |**Condizione**|Immettere l'espressione per la condizione della regola.|
-|**Ok**|Fare clic per salvare la condizione della regola.|
+|**OK**|Fare clic per salvare la condizione della regola.|
 
 ## <a name="entering-condition-expressions"></a>Immissione delle espressioni della condizione.
  Le espressioni della condizione vengono immesse in formato testo. È possibile digitare **questo.** nell'editor per fare riferimento a campi, proprietà e metodi usati nel flusso di lavoro usando un menu di tipo IntelliSense. In alternativa, è possibile digitare direttamente il nome di un membro del flusso di lavoro. È possibile aggiungere operatori logici alla condizione, ad esempio E, O e NON. È anche possibile aggiungere predicati. Un predicato è composto da un operatore binario e due operandi. Gli operatori binari supportati sono **==** , **>** , **\<** , **>=** e **<=** . Gli operandi supportati sono membri pubblici ai quali è stato assegnato un valore costante, una funzione aritmetica e un ambito.
@@ -79,7 +79,7 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Edi
 
   i == 1U dà come risultato un unsigned int
 
-  Per ulteriori informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](https://go.microsoft.com/fwlink?LinkID=65009).
+  Per ulteriori informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](https://msdn2.microsoft.com/library/bb628447.aspx).
 
 ## <a name="see-also"></a>Vedere anche
- Finestra di dialogo [IfElseActivity](https://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039) [dell'WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049) [Seleziona condizione (legacy)](../workflow-designer/select-condition-dialog-box-legacy.md) [utilizzo di condizioni nella finestra di](https://go.microsoft.com/fwlink?LinkID=65009) [progettazione legacy dei flussi di lavoro per Windows Workflow Foundation Guida dell'interfaccia utente](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ Finestra di dialogo [IfElseActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelseactivity.aspx) [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx) [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx) [dell'WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx) [Seleziona condizione (legacy)](../workflow-designer/select-condition-dialog-box-legacy.md) [utilizzo di condizioni nella finestra di](https://msdn2.microsoft.com/library/bb628447.aspx) [progettazione legacy dei flussi di lavoro per Windows Workflow Foundation Guida dell'interfaccia utente](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

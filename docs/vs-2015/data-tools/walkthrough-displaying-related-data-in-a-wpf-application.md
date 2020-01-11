@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299578"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850246"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procedura dettagliata: visualizzazione dei dati correlati in un'applicazione WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](https://codeplex.com/SqlServerSamples).
 
   Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:
 
@@ -73,7 +73,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
 6. Nella casella **Nome** digitare `AdventureWorksOrdersViewer`.
 
-7. fare clic su **OK**.
+7. Fare clic su **OK**.
 
      Visual Studio crea il progetto `AdventureWorksOrdersViewer`.
 
@@ -94,7 +94,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    - Selezionare la connessione dati al database di esempio AdventureWorksLT nell'elenco a discesa, se presente.
 
-      -oppure-
+      oppure
 
    - Fare clic su **nuova connessione** e creare una connessione al database AdventureWorksLT.
 
@@ -106,7 +106,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    - **SalesOrderHeader**
 
-7. Fare clic su **Fine**.
+7. Scegliere **Fine**.
 
 8. Compilazione del progetto.
 
@@ -139,7 +139,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    - **CreditCardApprovalCode**
 
-   - **Subtotale**
+   - **SubTotal**
 
    - **TaxAmt**
 
@@ -187,7 +187,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
     Visual Studio genera XAML per definire un nuovo controllo <xref:System.Windows.Controls.DataGrid> associato a dati e il controllo viene visualizzato nella finestra di progettazione. Visual Studio aggiorna anche il metodo di `GetSalesOrderHeadersQuery` generato nel file code-behind per includere i dati nell'entità **SalesOrderDetails** .
 
-## <a name="testing-the-application"></a>Test dell'applicazione
+## <a name="testing-the-application"></a>Verifica dell'applicazione
  Compilare ed eseguire l'applicazione per verificare che vengano visualizzati i record degli ordini.
 
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione

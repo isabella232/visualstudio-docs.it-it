@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0f509ca93b6802fc99a21143360227d64f8db319
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42c42a845ef98fb3a6ebe9b5e017ae2783365f1b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301174"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851356"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 </ImageManifest>  
 ```  
 
- **Simboli**  
+ **Symbols**  
 
  Per facilitare la leggibilità e la manutenzione, il manifesto dell'immagine può utilizzare i simboli per i valori di attributo. I simboli sono definiti come segue:  
 
@@ -105,10 +105,10 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |||  
 |-|-|  
 |**Sottoelemento**|**Definizione**|  
-|Import|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente|  
-|Guid|Il simbolo rappresenta un GUID e deve corrispondere alla formattazione del GUID|  
-|ID|Il simbolo rappresenta un ID e deve essere un numero intero non negativo|  
-|String|Il simbolo rappresenta un valore stringa arbitrario|  
+|Importa|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente|  
+|GUID|Il simbolo rappresenta un GUID e deve corrispondere alla formattazione del GUID|  
+|Id|Il simbolo rappresenta un ID e deve essere un numero intero non negativo|  
+|Stringa|Il simbolo rappresenta un valore stringa arbitrario|  
 
  Per i simboli viene fatta distinzione tra maiuscole e minuscole e viene fatto riferimento tramite la sintassi $ (symbol-name):  
 
@@ -147,11 +147,11 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Guid|Necessaria Parte GUID del moniker dell'immagine|  
-|ID|Necessaria Parte relativa all'ID del moniker dell'immagine|  
+|GUID|Necessaria Parte GUID del moniker dell'immagine|  
+|Id|Necessaria Parte relativa all'ID del moniker dell'immagine|  
 |AllowColorInversion|[Facoltativo, valore predefinito true] Indica se i colori dell'immagine possono essere invertiti a livello di codice quando vengono utilizzati in uno sfondo scuro.|  
 
- **Origine**  
+ **Source**  
 
  L'elemento \<Source > definisce un'unica risorsa di origine dell'immagine (XAML e PNG).  
 
@@ -164,8 +164,8 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Attributo** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      URI      |                                                                                                                                                                                                                                                                                                               Necessaria URI che definisce dove è possibile caricare l'immagine. Può essere uno dei seguenti:<br /><br /> : [URI di pacchetto](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) che usa l'autorità Application:///<br />-Riferimento a una risorsa componente assoluto<br />: Percorso di un file che contiene una risorsa nativa                                                                                                                                                                                                                                                                                                               |
-|  Background   | Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> Può essere uno dei seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> <em>Scuro:</em> L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine. |
+|      URI      |                                                                                                                                                                                                                                                                                                               Necessaria URI che definisce dove è possibile caricare l'immagine. I possibili valori sono i seguenti:<br /><br /> : [URI di pacchetto](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) che usa l'autorità Application:///<br />-Riferimento a una risorsa componente assoluto<br />: Percorso di un file che contiene una risorsa nativa                                                                                                                                                                                                                                                                                                               |
+|  Informazioni di background sul   | Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> <em>Scuro:</em> L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Un elemento \<> source può avere esattamente uno dei seguenti sottoelementi facoltativi:  
@@ -173,9 +173,9 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 ||||  
 |-|-|-|  
 |**Elemento**|**Attributi (tutti necessari)**|**Definizione**|  
-|Dimensioni \<>|Valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|  
-|\<SizeRange >|MinSize, MaxSize|L'origine verrà usata per le immagini da MinSize a MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrata.|  
-|Dimensioni \<>|Width, Height|L'origine verrà usata per le immagini della larghezza e dell'altezza specificate (in unità dispositivo).|  
+|Dimensioni \<|Valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|  
+|\<SizeRange>|MinSize, MaxSize|L'origine verrà usata per le immagini da MinSize a MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrata.|  
+|Dimensioni \<|Width, Height|L'origine verrà usata per le immagini della larghezza e dell'altezza specificate (in unità dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà usata per le immagini dalla larghezza/altezza minima alla larghezza/altezza massima (in unità dispositivo), inclusi.|  
 
  Un elemento \<Source > può anche avere un sottoelemento \<NativeResource > facoltativo, che definisce un \<origine > caricato da un assembly nativo anziché da un assembly gestito.  
@@ -187,8 +187,8 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Type|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|  
-|ID|Necessaria Parte relativa all'ID integer della risorsa nativa|  
+|Tipo di|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|  
+|Id|Necessaria Parte relativa all'ID integer della risorsa nativa|  
 
  **ImageList**  
 
@@ -204,9 +204,9 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Guid|Necessaria Parte GUID del moniker dell'immagine|  
-|ID|Necessaria Parte relativa all'ID del moniker dell'immagine|  
-|Altre informazioni|[Facoltativo, valore predefinito false] Indica se il moniker dell'immagine fa riferimento a un'immagine nel manifesto corrente.|  
+|GUID|Necessaria Parte GUID del moniker dell'immagine|  
+|Id|Necessaria Parte relativa all'ID del moniker dell'immagine|  
+|Esterna|[Facoltativo, valore predefinito false] Indica se il moniker dell'immagine fa riferimento a un'immagine nel manifesto corrente.|  
 
  Il moniker per l'immagine contenuta non deve fare riferimento a un'immagine definita nel manifesto corrente. Se non è possibile trovare l'immagine contenuta nella libreria di immagini, al suo posto verrà utilizzata un'immagine segnaposto vuota.  
 
@@ -215,35 +215,35 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 ### <a name="first-steps-managed"></a>Primi passaggi (gestiti)  
  Per usare il servizio immagini, è necessario aggiungere al progetto i riferimenti ad alcuni o a tutti gli assembly seguenti:  
 
-- **Microsoft. VisualStudio. ImageCatalog. dll**  
+- **Microsoft.VisualStudio.ImageCatalog.dll**  
 
   - Obbligatorio se si usa il catalogo immagini predefinito KnownMonikers  
 
-- **Microsoft. VisualStudio. Imaging. dll**  
+- **Microsoft.VisualStudio.Imaging.dll**  
 
   - Obbligatorio se si usano **CrispImage** e **ImageThemingUtilities** nell'interfaccia utente di WPF  
 
-- **Microsoft. VisualStudio. Imaging. Interop. 14.0. DesignTime. dll**  
+- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
 
   - Obbligatorio se si usano i tipi **ImageMoniker** e **ImageAttributes**  
 
   - **EmbedInteropTypes** deve essere impostato su true  
 
-- **Microsoft. VisualStudio. Shell. Interop. 14.0. DesignTime**  
+- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
 
   - Obbligatorio se si usa il tipo **IVsImageService2**  
 
   - **EmbedInteropTypes** deve essere impostato su true  
 
-- **Microsoft. VisualStudio. Utilities. dll**  
+- **Microsoft.VisualStudio.Utilities.dll**  
 
   - Obbligatorio se si usa **BrushToColorConverter** per ImageThemingUtilities. **ImageBackgroundColor** nell'interfaccia utente di WPF  
 
-- **Microsoft. VisualStudio. Shell.\<VSVersion >. 0**  
+- **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
   - Obbligatorio se si usa il tipo **IVsUIObject**  
 
-- **Microsoft. VisualStudio. Shell. Interop. 10.0. dll**  
+- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
 
   - Obbligatorio se si usano gli helper dell'interfaccia utente correlati a WinForms  
 
@@ -252,29 +252,29 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 ### <a name="first-steps-native"></a>Primi passaggi (nativi)  
  Per usare il servizio immagini, è necessario includere nel progetto alcune o tutte le intestazioni seguenti:  
 
-- **KnownImageIds. h**  
+- **KnownImageIds.h**  
 
   - Obbligatorio se si usa il catalogo immagini predefinito **KnownMonikers**, ma non è possibile usare il tipo **ImageMoniker** , ad esempio quando si restituiscono valori da **IVsHierarchy GetGuidProperty** o chiamate **GetProperty** .  
 
-- **KnownMonikers. h**  
+- **KnownMonikers.h**  
 
   - Obbligatorio se si usa il catalogo immagini predefinito **KnownMonikers**.  
 
-- **ImageParameters140. h**  
+- **ImageParameters140.h**  
 
   - Obbligatorio se si usano i tipi **ImageMoniker** e **ImageAttributes** .  
 
-- **VSShell140. h**  
+- **VSShell140.h**  
 
   - Obbligatorio se si usa il tipo **IVsImageService2** .  
 
-- **ImageThemingUtilities. h**  
+- **ImageThemingUtilities.h**  
 
   - Obbligatorio se non si è in grado di consentire al servizio immagini di gestire l'utente.  
 
   - Non usare questa intestazione se il servizio immagini è in grado di gestire le immagini.  
 
-- **VSUIDPIHelper. h**  
+- **VSUIDPIHelper.h**  
 
   - Obbligatorio se si usano gli helper DPI per ottenere il valore DPI corrente.  
 
@@ -650,11 +650,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Aggiornare il codice per usare il servizio immagini per richiedere moniker tramite il mapping aggiornato. Questo potrebbe significare l'aggiornamento a **CrispImages** per il codice gestito o la richiesta di HBITMAPs o HICONs dal servizio immagini e il relativo passaggio per il codice nativo.  
 
 ## <a name="testing-your-images"></a>Test delle immagini  
- È possibile utilizzare lo strumento Visualizzatore libreria immagini per testare i manifesti dell'immagine per assicurarsi che tutti gli elementi vengano creati correttamente. È possibile trovare lo strumento in [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx). La documentazione per questo strumento e altre informazioni sono disponibili [qui](https://aka.ms/VSImageThemeTools).  
+ È possibile utilizzare lo strumento Visualizzatore libreria immagini per testare i manifesti dell'immagine per assicurarsi che tutti gli elementi vengano creati correttamente. È possibile trovare lo strumento in [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx). La documentazione per questo strumento e altre informazioni sono disponibili [qui](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN).  
 
 ## <a name="additional-resources"></a>Risorse aggiuntive  
 
-### <a name="samples"></a>Samples  
+### <a name="samples"></a>Esempi di  
  Molti degli esempi di Visual Studio su GitHub sono stati aggiornati per illustrare come usare il servizio immagini come parte dei diversi punti di estendibilità di Visual Studio.  
 
  Controllare [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) per gli esempi più recenti.  
@@ -674,7 +674,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  Lo strumento Visualizzatore libreria immagini consente di caricare manifesti di immagini e di modificarli nello stesso modo in cui Visual Studio può verificare che il manifesto venga creato correttamente. L'utente può modificare sfondo, dimensioni, impostazioni DPI, Contrasto elevato e altre impostazioni. Vengono inoltre visualizzate le informazioni di caricamento per individuare gli errori nei manifesti e vengono visualizzate le informazioni sull'origine per ogni immagine nel manifesto.  
 
-## <a name="faq"></a>DOMANDE FREQUENTI  
+## <a name="faq"></a>Domande frequenti  
 
 - Sono presenti dipendenze che è necessario includere durante il caricamento di \<riferimento include = "Microsoft. VisualStudio. *. Interop. 14.0. DesignTime "/>?  
 
@@ -948,17 +948,17 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
     |GlyphGroupError||StatusError|  
     |GlyphBscFile||ClassFile|  
-    |GlyphAssembly||Riferimento|  
+    |GlyphAssembly||Riferimenti|  
     |GlyphLibrary||Libreria|  
     |GlyphVBProject||VBProjectNode|  
     |GlyphCoolProject||CSProjectNode|  
     |GlyphCppProject||CPPProjectNode|  
-    |GlyphDialogId||Dialogo|  
+    |GlyphDialogId||Finestra di dialogo|  
     |GlyphOpenFolder||FolderOpened|  
     |GlyphClosedFolder||FolderClosed|  
     |GlyphArrow||GoToNext|  
     |GlyphCSharpFile||CSFileNode|  
-    |GlyphCSharpExpansion||Frammento|  
+    |GlyphCSharpExpansion||Frammento di codice|  
     |GlyphKeyword||IntellisenseKeyword|  
     |GlyphInformation||StatusInformation|  
     |GlyphReference||ClassMethodReference|  

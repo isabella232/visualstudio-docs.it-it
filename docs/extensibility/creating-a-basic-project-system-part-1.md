@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73bacf2c5d1650da91093c92c67e6b67bbbc73a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f0dee8364ac16becc538fa6fc8c6f90d955c078
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633510"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848134"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Creazione di un sistema di progetto di base, parte 1
 In Visual Studio i progetti sono i contenitori usati dagli sviluppatori per organizzare i file del codice sorgente e altri asset. I progetti vengono visualizzati come elementi figlio di soluzioni nel **Esplora soluzioni**. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire codice sorgente e creare riferimenti a servizi Web, database e altre risorse.
@@ -35,7 +35,7 @@ In Visual Studio i progetti sono i contenitori usati dagli sviluppatori per orga
  Questa procedura dettagliata illustra come creare un tipo di progetto con estensione del nome file di progetto *. PROG*. Questa procedura dettagliata prende in prestito dal sistema C# di progetto visuale esistente.
 
 > [!NOTE]
-> Per altri esempi di progetti di estensione, vedere [esempi di VSSDK](https://aka.ms/vs2015sdksamples).
+> Per altri esempi di progetti di estensione, vedere [esempi di VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
  Questa procedura dettagliata illustra come eseguire queste attività:
 
@@ -55,13 +55,13 @@ In Visual Studio i progetti sono i contenitori usati dagli sviluppatori per orga
 
 - Implementare la sostituzione del parametro di modello di base.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
  È inoltre necessario scaricare il codice sorgente per il [Framework di pacchetto gestito per i progetti](https://github.com/tunnelvisionlabs/MPFProj10). Estrarre il file in un percorso accessibile alla soluzione che si vuole creare.
 
 ## <a name="create-a-basic-project-type"></a>Creare un tipo di progetto di base
- Creare un C# progetto VSIX denominato **SimpleProject**. (**File**  > **nuovo** **progetto**  >  e quindi**Extensibility**  **C# Visual**  >   > **progetto VSIX**). Aggiungere un modello di elemento di progetto di pacchetto di Visual Studio (nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  > **nuovo elemento**, quindi passare a **estendibilità**  > **pacchetto di Visual Studio**). Denominare il file *SimpleProjectPackage*.
+ Creare un C# progetto VSIX denominato **SimpleProject**. (**File** > **nuovo** **progetto** > e quindi **Extensibility**  **C# Visual** >  > **progetto VSIX**). Aggiungere un modello di elemento di progetto di pacchetto di Visual Studio (nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi** > **nuovo elemento**, quindi passare a **estendibilità** > **pacchetto di Visual Studio**). Denominare il file *SimpleProjectPackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Creazione di un modello di progetto di base
  A questo punto, è possibile modificare questo pacchetto VSPackage di base per implementare il nuovo tipo di progetto *. PROG* . Per creare un progetto basato sul tipo di progetto *. PROG* , è necessario che Visual Studio conosca i file, le risorse e i riferimenti da aggiungere al nuovo progetto. Per fornire queste informazioni, inserire i file di progetto in una cartella del modello di progetto. Quando un utente usa il progetto *. PROG* per creare un progetto, i file vengono copiati nel nuovo progetto.
@@ -154,7 +154,7 @@ In Visual Studio i progetti sono i contenitori usati dagli sviluppatori per orga
 
 11. Salvare il file.
 
-12. Nella finestra **Proprietà** impostare l'azione di **compilazione** di *AssemblyInfo.cs*, *Program.cs*, *SimpleProject. ico*e *SimpleProject. PROG* sul **contenuto**e impostare le proprietà **Includi in VSIX** su **true**.
+12. Nella finestra **Proprietà** impostare l'azione di **compilazione** *AssemblyInfo.cs*, *Program.cs*, *SimpleProject. ico*e *SimpleProject. PROG* sul **contenuto**e impostare le proprietà **Includi in VSIX** su **true**.
 
     Questo modello di progetto descrive un progetto C# visivo di base che include una configurazione di debug e una configurazione di rilascio. Il progetto include due file di origine, *AssemblyInfo.cs* e *Program.cs*, e diversi riferimenti ad assembly. Quando viene creato un progetto dal modello, il valore ProjectGuid viene sostituito automaticamente da un nuovo GUID.
 
@@ -175,7 +175,7 @@ Templates
 
 ### <a name="to-create-a-basic-project-factory"></a>Per creare una factory di progetto di base
 
-1. Creare GUID per la factory del progetto (dal menu **strumenti** , fare clic su **Crea GUID**) o usare quello nell'esempio seguente. Aggiungere i GUID alla classe `SimpleProjectPackage` accanto alla sezione con l'`PackageGuidString` già definito. I GUID devono essere in formato GUID e stringa. Il codice risultante dovrebbe essere simile all'esempio seguente.
+1. Creare GUID per la factory del progetto (dal menu **strumenti** , fare clic su **Crea GUID**) o usare quello nell'esempio seguente. Aggiungere i GUID alla classe `SimpleProjectPackage` accanto alla sezione con l'`PackageGuidString`già definito. I GUID devono essere in formato GUID e stringa. Il codice risultante dovrebbe essere simile all'esempio seguente.
 
    ```csharp
        public sealed class SimpleProjectPackage : Package
@@ -190,7 +190,7 @@ Templates
 
 2. Aggiungere una classe alla cartella Top *SimpleProject* denominata *SimpleProjectFactory.cs*.
 
-3. Aggiungere le direttive using seguenti:
+3. Aggiungere le seguenti direttive using:
 
    ```csharp
    using System.Runtime.InteropServices;
@@ -244,7 +244,7 @@ Templates
 
     1. Scaricare il progetto SimpleProject (in **Esplora soluzioni**, selezionare il nodo del progetto e scegliere **Scarica progetto**dal menu di scelta rapida e aprire il file di progetto nell'editor XML.
 
-    2. Aggiungere i blocchi seguenti al file di progetto (appena sopra i blocchi di > \<Import). Impostare `ProjectBasePath` sul percorso del file *ProjectBase. files* nel codice del Framework del pacchetto gestito appena scaricato. Potrebbe essere necessario aggiungere una barra rovesciata al percorso. In caso contrario, il progetto potrebbe non riuscire a trovare il codice sorgente del Framework del pacchetto gestito.
+    2. Aggiungere i blocchi seguenti al file di progetto (appena sopra il \<importare > blocchi). Impostare `ProjectBasePath` sul percorso del file *ProjectBase. files* nel codice del Framework del pacchetto gestito appena scaricato. Potrebbe essere necessario aggiungere una barra rovesciata al percorso. In caso contrario, il progetto potrebbe non riuscire a trovare il codice sorgente del Framework del pacchetto gestito.
 
         ```
         <PropertyGroup>
@@ -506,19 +506,19 @@ Templates
 
    Durante la costruzione statica, `SimpleProjectNode` recupera la bitmap del nodo del progetto dalle risorse del manifesto dell'assembly e la memorizza nella cache in un campo privato per un uso successivo. Si noti la sintassi del percorso dell'immagine del <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>. Per visualizzare i nomi delle risorse del manifesto incorporate in un assembly, usare il metodo <xref:System.Reflection.Assembly.GetManifestResourceNames%2A>. Quando questo metodo viene applicato all'assembly `SimpleProject`, i risultati devono essere i seguenti:
 
-- *SimpleProject. resources. resources*
+- *SimpleProject.Resources.resources*
 
-- *VisualStudio. Project. resources*
+- *VisualStudio.Project.resources*
 
-- *SimpleProject. VSPackage. resources*
+- *SimpleProject.VSPackage.resources*
 
-- *Risorse. imagels. bmp*
+- *Resources.imagelis.bmp*
 
-- *Microsoft. VisualStudio. Project. DontShowAgainDialog. resources*
+- *Microsoft.VisualStudio.Project.DontShowAgainDialog.resources*
 
-- *Microsoft. VisualStudio. Project. SecurityWarningDialog. resources*
+- *Microsoft.VisualStudio.Project.SecurityWarningDialog.resources*
 
-- *SimpleProject. resources. SimpleProjectNode. bmp*
+- *SimpleProject.Resources.SimpleProjectNode.bmp*
 
   Durante la costruzione dell'istanza, la classe di base `ProjectNode` carica *le risorse. imagelis. bmp*, in cui sono incorporate comunemente utilizzate 16 bitmap di 16 x 16 da *Resources\imagelis.bmp*. Questo elenco bitmap viene reso disponibile per `SimpleProjectNode` come `ImageHandler.ImageList`. `SimpleProjectNode` aggiunge all'elenco la bitmap del nodo del progetto. L'offset della mappa di bit del nodo di progetto nell'elenco immagini viene memorizzato nella cache per un uso successivo come valore della proprietà Public `ImageIndex`. Visual Studio usa questa proprietà per determinare quale bitmap visualizzare come icona del nodo del progetto.
 
@@ -601,7 +601,7 @@ Templates
 
 3. Esaminare i valori per i parametri `nameSpace` e `className`.
 
-   - al `nameSpace` viene assegnato il valore dell'elemento \<RootNamespace > nel file del modello di progetto *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . In questo caso il valore è `MyRootNamespace`.
+   - al `nameSpace` viene assegnato il valore dell'elemento > \<RootNamespace nel file del modello di progetto *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . In questo caso il valore è `MyRootNamespace`.
 
    - a `className` viene assegnato il valore del nome del file di origine della classe, senza l'estensione del nome file. In questo caso, il primo file da copiare nella cartella di destinazione è *AssemblyInfo.cs*; il valore di NomeClasse viene pertanto `AssemblyInfo`.
 

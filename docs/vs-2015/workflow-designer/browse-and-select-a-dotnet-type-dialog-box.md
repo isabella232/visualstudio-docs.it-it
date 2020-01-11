@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297618"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851432"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Finestra di dialogo Cerca e seleziona un tipo .NET
 Nella finestra **Proprietà** , finestre di dialogo o finestre di progettazione, ad esempio la finestra di progettazione variabili, quando si seleziona **Cerca tipi...** da un elenco di tipi di dati, è la finestra di dialogo **Cerca e seleziona un tipo .NET** (a cui si fa riferimento in un formato abbreviato come "browser dei tipi"). In questa finestra di dialogo è possibile scegliere un tipo dalla visualizzazione albero di assembly e progetti.
@@ -31,7 +31,7 @@ Nella finestra **Proprietà** , finestre di dialogo o finestre di progettazione,
 - Quando si aggiunge un oggetto catch all'attività <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
-> Il browser del tipo può visualizzare i tipi di matrice irregolari, ma non i tipi di matrice multidimensionale. Per informazioni dettagliate, vedere [matrici frastagliate](https://go.microsoft.com/fwlink/?LinkId=195226) e [matrici multidimensionali](https://go.microsoft.com/fwlink/?LinkId=195227) .
+> Il browser del tipo può visualizzare i tipi di matrice irregolari, ma non i tipi di matrice multidimensionale. Per informazioni dettagliate, vedere [matrici frastagliate](https://msdn.microsoft.com/library/hkhhsz9t(VS.90).aspx) e [matrici multidimensionali](https://msdn.microsoft.com/library/d2de1t93(VS.90).aspx) .
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selezione di un tipo di riferimento o di valore da Browser tipi.
 
@@ -39,7 +39,7 @@ Nella finestra **Proprietà** , finestre di dialogo o finestre di progettazione,
 
 1. Nella casella **nome tipo** immettere il nome del tipo che si desidera utilizzare.
 
-2. Esegui una delle operazioni seguenti:
+2. Effettuare una delle seguenti operazioni:
 
     - Una volta visualizzato il nome del tipo che si desidera utilizzare nell'albero nella casella **nome tipo** , fare doppio clic sul tipo per selezionarlo.
 

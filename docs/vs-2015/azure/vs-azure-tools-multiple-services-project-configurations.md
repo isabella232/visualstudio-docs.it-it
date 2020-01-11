@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a151e16537eb143f27e9fd518cdc2495ac954563
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299021"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851377"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto di Azure in Visual Studio per l'uso di più configurazioni del servizio
 
@@ -37,7 +37,7 @@ Per informazioni sugli schemi sottostanti per i file di definizione e di configu
 
 Consente di selezionare il file `ServiceConfiguration.*.cscfg` interessato dalle modifiche. Per impostazione predefinita, sono disponibili le varianti Local e Cloud ed è possibile usare il comando **Gestisci** per copiare, rinominare e rimuovere i file di configurazione. Questi file vengono aggiunti al progetto di servizio cloud e vengono visualizzati in **Esplora soluzioni**. Tuttavia, la ridenominazione o la rimozione di configurazioni può essere eseguita solo da questo controllo.
 
-### <a name="instances"></a>Istanze
+### <a name="instances"></a>Istanze di
 
 Impostare la proprietà **Conteggio istanze** sul numero di istanze che il servizio deve eseguire per questo ruolo.
 
@@ -57,7 +57,7 @@ Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il p
 
 ## <a name="settings-page"></a>Pagina Impostazioni
 
-Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla [libreria gestita di Azure](https://go.microsoft.com/fwlink?LinkID=171026), in particolare il metodo [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
+Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla [libreria gestita di Azure](https://msdn.microsoft.com/library/azure/dn602775(v=azure.11).aspx), in particolare il metodo [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configurazione di una stringa di connessione per un account di archiviazione
 

@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03cd890802e5563ce2daeb78438c56f4452d74f0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b30e171756527352976dcb03abb0d1c32370c442
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299519"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849897"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Connessione a processi in esecuzione con il debugger di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "74299519"
 
     2. Nella finestra di dialogo **Seleziona tipo di codice** fare clic su **Esegui il debug di questi tipi di codice** e selezionare i tipi da sottoporre a debug.
 
-    3. fare clic su **OK**.
+    3. Fare clic su **OK**.
 
 4. Scegliere **Connetti**.
 
@@ -105,13 +105,13 @@ ms.locfileid: "74299519"
 
 6. Scegliere **Connetti**.
 
-## <a name="additional-info"></a>Informazioni aggiuntive
+## <a name="additional-info"></a>Info aggiuntive
 
 Durante l'esecuzione del debug è possibile essere connessi a più di un programma, ma in un dato momento solo uno di tali programmi potrà essere attivo nel debugger. È possibile impostare il programma attivo nella barra degli strumenti **Posizione di debug** o nella finestra **Processi** . Per altre informazioni, vedere [Procedura: Impostare il processo corrente](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
 Se si tenta di connettersi a un processo appartenente a un account utente non attendibile, verrà visualizzata una finestra di dialogo contenente un avviso di sicurezza per chiedere conferma dell'operazione. Per altre informazioni vedere [avviso di sicurezza: Connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
-In alcuni casi, quando viene eseguito il debug in una sessione di Desktop remoto (Servizi terminal), nell'elenco **Processi disponibili** non vengono visualizzati tutti i processi disponibili. Se si esegue Visual Studio con un account utente limitato, nell'elenco **Processi disponibili** non verranno visualizzati i processi in esecuzione nella Sessione 0 utilizzata per i servizi e gli altri processi del server, incluso w3wp.exe. È possibile risolvere il problema eseguendo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con un account amministratore o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dalla console del server invece di una sessione di Servizi Terminal. Se non è possibile adottare una di queste soluzioni alternative, una terza opzione consiste nel connettersi al processo eseguendo `vsjitdebugger.exe -p` *ProcessId* dalla riga di comando di Windows. È possibile determinare l'ID processo usando tlist.exe. Per ottenere tlist.exe, scaricare e installare gli strumenti di debug per Windows disponibili in  [Download di WDK e WinDbg](https://go.microsoft.com/fwlink/?LinkId=168279).
+In alcuni casi, quando viene eseguito il debug in una sessione di Desktop remoto (Servizi terminal), nell'elenco **Processi disponibili** non vengono visualizzati tutti i processi disponibili. Se si esegue Visual Studio con un account utente limitato, nell'elenco **Processi disponibili** non verranno visualizzati i processi in esecuzione nella Sessione 0 utilizzata per i servizi e gli altri processi del server, incluso w3wp.exe. È possibile risolvere il problema eseguendo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con un account amministratore o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dalla console del server invece di una sessione di Servizi Terminal. Se nessuna di queste soluzioni alternative è possibile, una terza opzione consiste nel connettersi al processo eseguendo `vsjitdebugger.exe -p` *ProcessID* dalla riga di comando di Windows. È possibile determinare l'ID processo usando tlist.exe. Per ottenere tlist.exe, scaricare e installare gli strumenti di debug per Windows disponibili in  [Download di WDK e WinDbg](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
 
 ## <a name="BKMK_Scenarios"></a>Scenari di debug comuni
 
@@ -124,10 +124,10 @@ Per alcuni tipi di app, ad esempio le app di Windows Store, non è possibile con
 
 |Scenario|Metodo Debug|Nome processo|Note e collegamenti|
 |-|-|-|-|
-|Eseguire il debug di un'app gestita o nativa nel computer locale|Usare Connetti a processo o [debug standard](../debugger/getting-started-with-the-debugger.md)|*appname*. exe|Per accedere rapidamente alla finestra di dialogo, premere **CTRL + ALT + P** , quindi digitare la prima lettera del nome del processo.|
+|Eseguire il debug di un'app gestita o nativa nel computer locale|Usare Connetti a processo o [debug standard](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|Per accedere rapidamente alla finestra di dialogo, premere **CTRL + ALT + P** , quindi digitare la prima lettera del nome del processo.|
 |Eseguire il debug di app ASP.NET nel computer locale dopo l'avvio dell'app senza il debugger|Usare Connetti a processo|iiexpress.exe|Questa operazione può essere utile per velocizzare il caricamento dell'app, ad esempio quando si esegue la profilatura. |
 |Debug remoto ASP.NET 4 o 4,5 su un server IIS|USA Remote Tools e Connetti a processo|w3wp.exe|Vedere [Remote Debugging ASP.NET on a Remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|ASP.NET Core di debug remoto in un server IIS|USA Remote Tools e Connetti a processo|DNX. exe|Per la distribuzione di app, vedere [pubblicare in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per il debug, vedere [Remote Debugging ASP.NET on a Remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|ASP.NET Core di debug remoto in un server IIS|USA Remote Tools e Connetti a processo|dnx.exe|Per la distribuzione di app, vedere [pubblicare in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per il debug, vedere [Remote Debugging ASP.NET on a Remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Eseguire il debug di altri tipi di app supportati in un processo server|USA Remote Tools (se il server è remoto) e Connetti a processo|iexplore. exe o altri processi|Se necessario, utilizzare Gestione attività per identificare il processo. Vedere [debug remoto](../debugger/remote-debugging.md) e sezioni successive in questo argomento|
 |Eseguire il debug remoto di un'app desktop di Windows|Strumenti remoti e F5|N/D| Vedere [debug remoto](../debugger/remote-debugging.md)|
 |Eseguire il debug remoto di un'app di Windows universale (UWP), OneCore, HoloLens o Internet.|Debug pacchetto dell'app installato|N/D|USA **debug/altre destinazioni di debug/Esegui debug del pacchetto dell'app installata** anziché **Connetti a processo**|
@@ -170,7 +170,7 @@ In alcuni scenari di debug locale è possibile eseguire il debug in Visual Studi
 
    3. Nella finestra di dialogo **Seleziona tipo di codice** selezionare il pulsante di opzione **Esegui il debug di questi tipi di codice** e il tipo di codice per cui si è verificato il problema di connessione. Deselezionare tutti gli altri codici.
 
-   4. fare clic su **OK**. La finestra di dialogo **Seleziona tipo di codice** verrà chiusa.
+   4. Fare clic su **OK**. La finestra di dialogo **Seleziona tipo di codice** verrà chiusa.
 
    5. Nella finestra di dialogo **Connetti a processo** scegliere **Connetti**.
 

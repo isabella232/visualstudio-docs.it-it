@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9b1fd98b3812fbeca2597534a7177ba2f81ab138
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3185b70f74478a9a55c4fb918c1535c86d154c76
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301230"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846374"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Struttura del file [Content_types].xml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "74301230"
 Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio usa il file [Content_Types]. XML per installare il pacchetto, ma non installa il file stesso.  
   
 > [!NOTE]
-> Sebbene questo argomento si riferisca solo ai file [Content_Type]. XML usati nei pacchetti VSIX, il tipo di file [Content_Types]. XML fa parte dello standard *OPC (Open Packaging Conventions)* . Per ulteriori informazioni, vedere [OPC: nuovo standard per la creazione di pacchetti di dati](https://go.microsoft.com/fwlink/?LinkID=148207) nel sito Web MSDN.  
+> Sebbene questo argomento si riferisca solo ai file [Content_Type]. XML usati nei pacchetti VSIX, il tipo di file [Content_Types]. XML fa parte dello standard *OPC (Open Packaging Conventions)* . Per ulteriori informazioni, vedere [OPC: nuovo standard per la creazione di pacchetti di dati](https://msdn.microsoft.com/magazine/cc163372.aspx) nel sito Web MSDN.  
   
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
  Nelle sezioni seguenti vengono descritti l'elemento radice e i relativi attributi ed elementi figlio.  
@@ -72,12 +72,12 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 |pkgdef|text/plain|  
 |xml|text/xml|  
 |vsixmanifest|text/xml|  
-|htm o HTML|testo/HTML|  
+|htm o HTML|testo/html|  
 |RTF|applicazione/RTF|  
 |pdf|applicazione/PDF|  
 |gif|image/gif|  
 |jpg o JPEG|immagine/jpg|  
-|TIFF|immagine/TIFF|  
+|tiff|image/tiff|  
 |vsix|applicazione/zip|  
 |zip|applicazione/zip|  
 |dll|application/octet-stream|  
@@ -104,4 +104,4 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 ## <a name="see-also"></a>Vedere anche  
  [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
  [Riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC: nuovo standard per il packaging dei dati](https://go.microsoft.com/fwlink/?LinkID=148207)
+ [OPC: nuovo standard per il packaging dei dati](https://msdn.microsoft.com/magazine/cc163372.aspx)

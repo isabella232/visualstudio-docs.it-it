@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299894"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851075"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Risoluzione dei problemi relativi al visualizzatore della Guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ In questo argomento vengono illustrati i problemi che potrebbero verificarsi con
 ## <a name="additional-resources"></a>Risorse aggiuntive
  È possibile ottenere altre informazioni e offrire commenti e suggerimenti sul visualizzatore della Guida mediante le risorse seguenti:
 
-- Per offrire commenti e suggerimenti, vedere [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) dal sito Microsoft o inviare un messaggio di posta elettronica a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
+- Per offrire commenti e suggerimenti, vedere [Microsoft Connect](https://connect.microsoft.com/) dal sito Microsoft o inviare un messaggio di posta elettronica a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- Per ulteriori informazioni, vedere la [documentazione per gli sviluppatori e](https://go.microsoft.com/fwlink/?LinkId=232741) il forum [del sistema della guida e il Blog del supporto](https://go.microsoft.com/fwlink/?LinkId=232743) .
+- Per ulteriori informazioni, vedere la [documentazione per gli sviluppatori e](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) il forum [del sistema della guida e il Blog del supporto](https://blogs.msdn.com/b/thehelpguy/) .
 
 ## <a name="see-also"></a>Vedere anche
- [Guida dell'amministratore di Help Viewer 2.1](https://go.microsoft.com/fwlink/?LinkId=243985)
+ [Guida dell'amministratore di Help Viewer 2.1](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

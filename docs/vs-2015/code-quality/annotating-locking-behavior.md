@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295825"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850164"
 ---
 # <a name="annotating-locking-behavior"></a>Annotazione del comportamento di blocco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,4 +117,4 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
  [Specificare quando e dove si applica un'Annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funzioni intrinseche](../code-quality/intrinsic-functions.md)   
  [Procedure consigliate ed esempi](../code-quality/best-practices-and-examples-sal.md)   
- [Blog del team di analisi del codice](https://go.microsoft.com/fwlink/p/?LinkId=251197)
+ [Blog del team di analisi del codice](https://blogs.msdn.com/b/codeanalysis/)

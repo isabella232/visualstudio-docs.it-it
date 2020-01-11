@@ -18,19 +18,19 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298388"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850070"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Eseguire il debug del layout usando DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png "windows_and_phone_content")  
   
- La scheda **Layout** di DOM Explorer mostra il [modello di riquadro CSS](https://go.microsoft.com/fwlink/?LinkID=238778) per l'elemento selezionato in un'app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , un'app di Windows Phone Store o un'applicazione creata con Strumenti di Visual Studio per Apache Cordova. È possibile usare questa rappresentazione visiva del modello di riquadro per identificare e modificare i valori correlati al layout che hanno effetto sull'aspetto degli elementi.  
+ La scheda **Layout** di DOM Explorer mostra il [modello di riquadro CSS](https://www.w3.org/TR/CSS2/box.html) per l'elemento selezionato in un'app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , un'app di Windows Phone Store o un'applicazione creata con Strumenti di Visual Studio per Apache Cordova. È possibile usare questa rappresentazione visiva del modello di riquadro per identificare e modificare i valori correlati al layout che hanno effetto sull'aspetto degli elementi.  
   
 > [!TIP]
 > Le modifiche apportate nella scheda **Layout** non sono permanenti. È possibile apportare modifiche permanenti al codice sorgente e quindi aggiornare l'app con il pulsante **Aggiorna applicazione Windows** sulla barra degli strumenti Debug (solo per app di Windows Store e Windows Phone Store). In questo modo, si può evitare di riavviare il debugger.  

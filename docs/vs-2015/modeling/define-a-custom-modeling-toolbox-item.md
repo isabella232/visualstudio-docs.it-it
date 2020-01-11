@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299293"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851513"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definire un elemento della casella degli strumenti di modellazione personalizzata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,7 +129,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 |---------------|-------------|
 |displayName|Il nome dell'elemento della casella degli strumenti.|
 |tabName|La scheda casella degli strumenti in cui l'elemento verrà visualizzato. È possibile specificare il nome della scheda standard per questo tipo di diagramma o un nome distinto.|
-|image|Il percorso del file bitmap ( **. bmp**), che deve avere altezza e larghezza pari a 16 e una profondità di colore di 24 bit.|
+|immagine|Il percorso del file bitmap ( **. bmp**), che deve avere altezza e larghezza pari a 16 e una profondità di colore di 24 bit.|
 |f1Keyword|La parola chiave che individua un argomento della Guida.|
 |descrizione comandi|Una descrizione comandi per questo strumento.|
 
@@ -139,7 +139,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 > Se si inizia a usare un file con estensione tbxinfo dopo qualche esperimento con l'utilizzo dei file diagramma in modo autonomo, si noterà che la casella degli strumenti contiene le versioni vecchie e nuove di un elemento della casella degli strumenti. È possibile che ciò si verifichi anche se il nome del file diagramma è stato digitato in modo errato nel file con estensione tbxinfo. In tal caso, scegliere **Reimposta casella**degli strumenti dal menu di scelta rapida della casella degli strumenti. Gli elementi della casella degli strumenti personalizzata verranno rimossi. Riavviare Visual Studio e verranno visualizzati gli elementi personalizzati corretti.
 
 ## <a name="Extension"></a>Come distribuire elementi della casella degli strumenti in un'estensione di Visual Studio
- È possibile distribuire gli elementi della casella degli strumenti ad altri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utenti creandone un pacchetto in un'estensione di Visual Studio (VSIX). È possibile comprimere comandi, profili e altre estensioni nello stesso file VSIX. Per ulteriori informazioni, vedere [distribuzione delle estensioni di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
+ È possibile distribuire gli elementi della casella degli strumenti ad altri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utenti creandone un pacchetto in un'estensione di Visual Studio (VSIX). È possibile comprimere comandi, profili e altre estensioni nello stesso file VSIX. Per ulteriori informazioni, vedere [distribuzione delle estensioni di Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
  Il modo consueto per compilare un'estensione di Visual Studio consiste nell'usare il modello di progetto VSIX. A tale scopo, è necessario avere installato [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
 
@@ -155,7 +155,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
      Aprire un nuovo progetto di estensione di Visual Studio.
 
-    1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
+    1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
 
     2. Nella finestra di dialogo **nuovo progetto** , in **modelli installati**, scegliere **Visual C#** , **Extensibility**, **progetto VSIX**.
 
@@ -170,7 +170,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
      **Copia nella directory di Output** = **copia sempre**
 
-     **Azione di compilazione** = **contenuto**
+     **Azione di compilazione** = **Contenuto**
 
      **Includi in VSIX** = **true**
 
@@ -220,7 +220,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
 3. Posizionare ogni assembly aggiuntivo in una cartella il cui nome sia il codice delle impostazioni cultura per la lingua. Inserire, ad esempio, una versione francese dell'assembly all'interno di una cartella denominata **fr**.
 
-4. È consigliabile usare un codice indipendente dalle impostazioni cultura, in genere costituito da due lettere, non il codice delle impostazioni cultura specifiche come ad esempio `fr-CA`. Per ulteriori informazioni sui codici delle impostazioni cultura, vedere [Metodo CultureInfo. GetCultures](https://go.microsoft.com/fwlink/?LinkId=160782), che fornisce un elenco completo di codici delle impostazioni cultura.
+4. È consigliabile usare un codice indipendente dalle impostazioni cultura, in genere costituito da due lettere, non il codice delle impostazioni cultura specifiche come ad esempio `fr-CA`. Per ulteriori informazioni sui codici delle impostazioni cultura, vedere [Metodo CultureInfo. GetCultures](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), che fornisce un elenco completo di codici delle impostazioni cultura.
 
 5. Compilare progetto Visual Studio Extension e distribuirlo.
 

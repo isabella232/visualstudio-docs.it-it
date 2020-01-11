@@ -1,5 +1,5 @@
 ---
-title: 'Procedure consigliate per lo sviluppo: COM, VSTO, & componenti aggiuntivi VBA in Office'
+title: 'Procedure consigliate di sviluppo: COM, VSTO, & componenti aggiuntivi VBA in Office'
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,27 +11,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35b39aef2865f0438e6165bd6bf2c5418e8fbcb0
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254637"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846353"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Procedure consigliate per lo sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
-  Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure consigliate per lo sviluppo descritte in questo articolo.   Ciò consentirà di garantire quanto segue:
+  Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure consigliate per lo sviluppo descritte in questo articolo.   In modo da garantire:
 
 - Compatibilità dei componenti aggiuntivi in versioni e distribuzioni diverse di Office.
 - Riduzione della complessità della distribuzione dei componenti aggiuntivi per gli utenti e gli amministratori IT.
 - Non si verificano errori di installazione o Runtime non intenzionali del componente aggiuntivo.
 
->Nota: L'uso di [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) per preparare il componente aggiuntivo com, VSTO o VBA per Windows Store non è supportato. I componenti aggiuntivi COM, VSTO e VBA non possono essere distribuiti in Windows Store o in Office Store.
+>Nota: l'uso di [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) per preparare il componente aggiuntivo com, VSTO o VBA per Windows Store non è supportato. I componenti aggiuntivi COM, VSTO e VBA non possono essere distribuiti in Windows Store o in Office Store.
 
 ## <a name="do-not-check-for-office-during-installation"></a>Non controllare Office durante l'installazione
  Non è consigliabile che il componente aggiuntivo rilevi se Office è installato durante il processo di installazione del componente aggiuntivo. Se Office non è installato, è possibile installare il componente aggiuntivo e l'utente sarà in grado di accedervi dopo l'installazione di Office.
 
 ## <a name="use-embedded-interop-types-nopia"></a>Usare i tipi di interoperabilità incorporati (NoPIA)
-Se la soluzione USA .NET 4,0 o versione successiva, usare i tipi di interoperabilità incorporati (NoPIA) anziché a seconda degli assembly di interoperabilità primari di Office (PIA) ridistribuibili. L'uso dell'incorporamento dei tipi riduce le dimensioni di installazione della soluzione e garantisce la compatibilità futura. Office 2010 è stata l'ultima versione di Office che ha fornito l'assembly di interoperabilità primario ridistribuibile. Per altre informazioni, vedere [Procedura dettagliata: Incorporamento di informazioni sui tipi da](https://msdn.microsoft.com/library/ee317478.aspx) assembly Microsoft Office ed [equivalenza del tipo e tipi di interoperabilità incorporati](/windows/uwp/porting/desktop-to-uwp-root).
+Se la soluzione USA .NET 4,0 o versione successiva, usare i tipi di interoperabilità incorporati (NoPIA) anziché a seconda degli assembly di interoperabilità primari di Office (PIA) ridistribuibili. L'uso dell'incorporamento dei tipi riduce le dimensioni di installazione della soluzione e garantisce la compatibilità futura. Office 2010 è stata l'ultima versione di Office che ha fornito l'assembly di interoperabilità primario ridistribuibile. Per altre informazioni, vedere [procedura dettagliata: incorporamento delle informazioni sui tipi da assembly Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) e [equivalenza del tipo e tipi di interoperabilità incorporati](/windows/uwp/porting/desktop-to-uwp-root).
 
 Se la soluzione USA una versione precedente di .NET, è consigliabile aggiornare la soluzione per l'uso di .NET 4,0 o versione successiva. L'uso di .NET 4,0 o versione successiva riduce i prerequisiti di runtime nelle versioni più recenti di Windows.
 
@@ -46,7 +46,7 @@ Quando si scrive codice VBA, usare le istruzioni Declare sicure a 64 bit e conve
 ## <a name="support-restricted-environments"></a>Supportare ambienti con restrizioni
 La soluzione non deve richiedere privilegi di privilegi di amministratore o di elevazione degli account utente. Inoltre, la soluzione non deve dipendere dall'impostazione o dalla modifica:
 
-- Directory di lavoro corrente.
+- Directory di lavoro corrente
 - Directory di caricamento della DLL.
 - Variabile di percorso.
 
@@ -61,7 +61,7 @@ I clienti chiedono agli ISV di fornire istruzioni di supporto per i relativi com
 
 Per fornire le istruzioni di supporto per le applicazioni client di Office, ad esempio Word o Excel, verificare innanzitutto che i componenti aggiuntivi vengano eseguiti nella versione corrente di Office e quindi eseguire il commit per fornire gli aggiornamenti se il componente aggiuntivo si interrompe in una versione futura. Non è necessario testare i componenti aggiuntivi quando Microsoft rilascia una nuova compilazione o un aggiornamento a Office. Microsoft raramente modifica la piattaforma di estensibilità COM, VSTO e VBA in Office e queste modifiche saranno ben documentate.
 
->Importante: Microsoft gestisce un elenco dei componenti aggiuntivi supportati per i report di conformità e le informazioni di contatto ISV. Per ottenere l'elenco dei componenti aggiuntivi, vedere [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Importante: Microsoft gestisce un elenco dei componenti aggiuntivi supportati per i report di conformità e le informazioni di contatto ISV. Per ottenere l'elenco dei componenti aggiuntivi, vedere [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Usare Process Monitor per facilitare il debug di problemi di installazione o caricamento
 Se il componente aggiuntivo presenta problemi di compatibilità durante l'installazione o il caricamento, potrebbero essere correlati a problemi di accesso al file o al registro di sistema. Usare [Process Monitor](/sysinternals/downloads/procmon) o uno strumento di debug simile per registrare e confrontare il comportamento con un ambiente funzionante per identificare il problema.

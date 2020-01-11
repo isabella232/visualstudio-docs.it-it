@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47bcda57d4446b69096405a54e238e696df24d50
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3582dd63b2324b061684f1f6ad446d84734e2d3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300809"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850149"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Tasti di scelta rapida e tasti di modifica in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ I tasti di scelta rapida consentono di velocizzare il lavoro riducendo un'azione
 
    ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Tasti di scelta rapida visualizzati accanto alle voci di menu con collegamenti
 
-  Per altre informazioni sull'accessibilità e le funzionalità, vedere [Accessibilità in Microsoft](https://go.microsoft.com/fwlink/?LinkId=75069).
+  Per altre informazioni sull'accessibilità e le funzionalità, vedere [Accessibilità in Microsoft](https://www.microsoft.com/enable).
 
 ## <a name="modifier-keys"></a>Tasti di modifica
  Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertanto non è possibile usare l'interfaccia utente [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] per individuarli. Nelle sezioni seguenti vengono elencati i tasti di scelta rapida che consentono di modificare il comportamento di strumenti o un'azione, ad esempio il ridimensionamento di un oggetto:

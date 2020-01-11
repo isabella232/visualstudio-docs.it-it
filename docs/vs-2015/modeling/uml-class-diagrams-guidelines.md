@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297281"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850193"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagrammi classi UML: linee guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ In Visual Studio è possibile usare un *diagramma classi UML* per descrivere i t
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> In questo argomento vengono illustrati i diagrammi classi UML. Esiste un altro tipo di diagramma classi, che è possibile creare e usare per visualizzare il codice programma. Vedere [progettazione e visualizzazione di classi e tipi](https://go.microsoft.com/fwlink/?LinkId=142231).
+> In questo argomento vengono illustrati i diagrammi classi UML. Esiste un altro tipo di diagramma classi, che è possibile creare e usare per visualizzare il codice programma. Vedere [progettazione e visualizzazione di classi e tipi](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
 ## <a name="Using"></a>Uso di diagrammi classi UML
  È possibile usare un diagramma classi UML per vari scopi:
@@ -194,7 +194,7 @@ In Visual Studio è possibile usare un *diagramma classi UML* per descrivere i t
 
  `[1]`
 
- Un valore del tipo specificato. Questa è l'impostazione predefinita.
+ Un valore del tipo specificato. Questo è il valore predefinito.
 
  `[0..1]`
 
@@ -218,7 +218,7 @@ In Visual Studio è possibile usare un *diagramma classi UML* per descrivere i t
 
 - **Univoco** : Se true, non sono presenti valori duplicati nella raccolta.
 
-### <a name="visibility"></a>Visibilità
+### <a name="visibility"></a>Visibility
  *Visibility* indica se è possibile accedere all'attributo o all'operazione all'esterno della definizione della classe. I valori consentiti sono:
 
  **Public**

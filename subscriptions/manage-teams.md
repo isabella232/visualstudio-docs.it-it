@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Informazioni sulla responsabilità degli amministratori per gestire le sottoscrizioni per i team di grandi dimensioni e per i collaboratori esterni.
-ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491702"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850042"
 ---
 # <a name="large-teams-and-external-contractors"></a>Team di grandi dimensioni e collaboratori esterni
 Gli amministratori delle sottoscrizioni di Visual Studio sono responsabili di assicurarsi che ogni utente che interagisce con software di Visual Studio concesso in licenza disponga della licenza appropriata con la propria sottoscrizione di Visual Studio.
@@ -29,13 +29,13 @@ Ogni organizzazione è diversa, ma un elenco dei team di sviluppo tipico potrebb
 I collaboratori esterni possono disporre di licenze per interagire con l'ambiente di Visual Studio concesso in licenza. I Microsoft Certified Partner potrebbero ricevere alcune sottoscrizioni gratuite di Visual Studio per uso interno. Queste sottoscrizioni, tuttavia, non includono la copertura per attività che generano reddito, come lo sviluppo di software personalizzato per un cliente. Chiedere ai partner di inviare una lettera certificata con informazioni sulle licenze da loro fornite e quelle che occorre ottenere.
 
 ## <a name="resources"></a>Risorse
-- [White paper sulle licenze per Visual Studio](https://aka.ms/vslicensing)
+- [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Condizioni dei contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle responsabilità degli amministratori:
 - [Responsabilità degli amministratori](admin-responsibilities.md)
-- [Inventario dell'ambiente di preproduzione](admin-inventory.md)
+- [Inventario dell'ambiente di pre-produzione](admin-inventory.md)
 - [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)
 - Usare [Utilizzo massimo](maximum-usage.md) per tenere traccia degli impegni di acquisto

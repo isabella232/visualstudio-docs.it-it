@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d4e45ade24ce792999d1f9b0f52d9c82703fc5a0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291201"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849876"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ In questa sezione si [analizza la qualità del codice gestito](../code-quality/a
 
  [Analisi della qualità dei driver tramite gli strumenti di analisi del codice](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) L'analisi del codice per i driver è uno strumento di verifica statica in fase di compilazione che rileva gli C++ errori di codifica di base in C e programmi e include un modulo specializzato progettato per rilevare gli errori in (principalmente) codice driver in modalità kernel. Static Driver Verifier (SDV) è uno strumento di verifica statica che analizza sistematicamente il codice sorgente dei driver in modalità kernel Windows. SDV stabilisce se il driver interagisce correttamente con il kernel del sistema operativo Windows.
 
- [Avvisi di analisi del codice per i driver](https://go.microsoft.com/fwlink/?LinkId=225920) Vengono descritti gli avvisi segnalati dall'analisi del codice per i driver quando viene rilevato un possibile errore nel codice del driver.
+ [Avvisi di analisi del codice per i driver](https://msdn.microsoft.com/library/windows/hardware/ff550572(v=VS.85).aspx) Vengono descritti gli avvisi segnalati dall'analisi del codice per i driver quando viene rilevato un possibile errore nel codice del driver.
 
 ## <a name="related-tasks"></a>Attività correlate
  [Misurazione della complessità e della gestibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Inserire qui la descrizione.

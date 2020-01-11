@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd26e3d37779337ee39a1afa68aa3ba9ab56d376
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298128"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846549"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script di Windows PowerShell)
 ## <a name="syntax"></a>Sintassi
@@ -32,15 +32,15 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Configurazione
+## <a name="configuration"></a>Configurazione di
 Percorso del file di configurazione JSON che descrive i dettagli della distribuzione.
 
 | Parametro | Valore predefinito |
 | --- | --- |
-| Alias |none |
-| Obbligatorio? |true |
-| Position |denominato |
-| Valore predefinito |none |
+| Alias |nessuno |
+| Necessario? |true |
+| Posizione |denominato |
+| Valore predefinito |nessuno |
 | Input pipeline accettato? |false |
 | Caratteri jolly accettati? |false |
 
@@ -49,22 +49,22 @@ Nome della sottoscrizione di Azure in cui si vuole creare il sito Web.
 
 | Parametro | Valore predefinito |
 | --- | --- |
-| Alias |none |
-| Obbligatorio? |false |
-| Position |denominato |
-| Valore predefinito |none |
+| Alias |nessuno |
+| Necessario? |false |
+| Posizione |denominato |
+| Valore predefinito |nessuno |
 | Input pipeline accettato? |false |
 | Caratteri jolly accettati? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Percorso al pacchetto di distribuzione Web da pubblicare nel sito Web. È possibile creare questo pacchetto usando la pubblicazione Web guidata di Visual Studio. Per ulteriori informazioni, vedere [Introduzione a Servizi cloud di Azure e ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
+Percorso al pacchetto di distribuzione Web da pubblicare nel sito Web. È possibile creare questo pacchetto usando la pubblicazione Web guidata di Visual Studio. Per ulteriori informazioni, vedere [Introduzione a Servizi cloud di Azure e ASP.NET](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script?view=vs-2019).
 
 | Parametro | Valore predefinito |
 | --- | --- |
-| Alias |none |
-| Obbligatorio? |false |
-| Position |denominato |
-| Valore predefinito |none |
+| Alias |nessuno |
+| Necessario? |false |
+| Posizione |denominato |
+| Valore predefinito |nessuno |
 | Input pipeline accettato? |false |
 | Caratteri jolly accettati? |false |
 
@@ -73,10 +73,10 @@ Nome utente e password per il database SQL di Azure.
 
 | Parametro | Valore predefinito |
 | --- | --- |
-| Alias |none |
-| Obbligatorio? |false |
-| Position |denominato |
-| Valore predefinito |none |
+| Alias |nessuno |
+| Necessario? |false |
+| Posizione |denominato |
+| Valore predefinito |nessuno |
 | Input pipeline accettato? |false |
 | Caratteri jolly accettati? |false |
 
@@ -85,9 +85,9 @@ Se impostato su true, stampa i messaggi dallo script al flusso di output.
 
 | Parametro | Valore predefinito |
 | --- | --- |
-| Alias |none |
-| Obbligatorio? |false |
-| Position |denominato |
+| Alias |nessuno |
+| Necessario? |false |
+| Posizione |denominato |
 | Valore predefinito |false |
 | Input pipeline accettato? |false |
 | Caratteri jolly accettati? |false |

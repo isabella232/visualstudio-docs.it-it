@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dd2b2d19e55cbaf9af63ddeafdbdf9f6d677c5bc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 448a74b739bbb339d5f3b3e56c0ba59072994109
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301617"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850622"
 ---
 # <a name="layer-diagrams-reference"></a>Diagrammi livello: riferimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ In Visual Studio è possibile usare un *diagramma livello* per visualizzare l'ar
 
 - Rafforzare l'architettura desiderata durante lo sviluppo e la manutenzione del codice includendo la convalida con le operazioni di archiviazione e compilazione.
 
-  Questo argomento descrive gli elementi che è possibile usare in un diagramma livello. Per informazioni più dettagliate su come creare e creare diagrammi livello, vedere [diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md). Per ulteriori informazioni sui modelli di livello, visitare il [sito modelli & procedure](https://go.microsoft.com/fwlink/?LinkId=145794).
+  Questo argomento descrive gli elementi che è possibile usare in un diagramma livello. Per informazioni più dettagliate su come creare e creare diagrammi livello, vedere [diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md). Per ulteriori informazioni sui modelli di livello, visitare il [sito modelli & procedure](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
 ## <a name="reading-layer-diagrams"></a>Lettura di diagrammi livello
  ![Elementi nei diagrammi livello](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
@@ -59,7 +59,7 @@ In Visual Studio è possibile usare un *diagramma livello* per visualizzare l'ar
 |---------------|-----------------|---------------------|
 |1|**Livello**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli elementi collegati a un livello, aprire il menu di scelta rapida per il livello, quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.<br /><br /> Per altre informazioni, vedere [Esplora livello](#Explorer).<br /><br /> -   **dipendenze dello spazio dei nomi non consentito** : specifica che gli artefatti associati a questo livello non possono dipendere dagli spazi dei nomi specificati.<br />-   gli **spazi dei nomi** non consentiti: specifica che gli artefatti associati a questo livello non devono appartenere agli spazi dei nomi specificati.<br />-   gli **spazi dei nomi richiesti** : specifica che gli artefatti associati a questo livello devono appartenere a uno degli spazi dei nomi specificati.|
 |2|**Dipendenza**|Indica che un livello può usare la funzionalità di un altro livello, ma non viceversa.<br /><br /> **direzione** -   -specifica la direzione della dipendenza.|
-|3|**Dipendenza bidirezionale**|Indica che un livello può usare la funzionalità di un altro livello e viceversa.<br /><br /> **direzione** -   -specifica la direzione della dipendenza.|
+|3\.|**Dipendenza bidirezionale**|Indica che un livello può usare la funzionalità di un altro livello e viceversa.<br /><br /> **direzione** -   -specifica la direzione della dipendenza.|
 |4|**Commentoo**|Usato per aggiungere note generali al diagramma o elementi nel diagramma.|
 |5|**Collegamento commento**|Usato per collegare commenti a elementi nel diagramma.|
 
@@ -89,7 +89,7 @@ In Visual Studio è possibile usare un *diagramma livello* per visualizzare l'ar
 
     |**Colonna in Esplora livello**|**Descrizione**|
     |----------------------------------|---------------------|
-    |**Categorie**|Tipo di elemento, ad esempio una classe, uno spazio dei nomi, un file di origine e così via|
+    |**Categories** (Categorie)|Tipo di elemento, ad esempio una classe, uno spazio dei nomi, un file di origine e così via|
     |**Livello**|Livello collegato all'elemento|
     |**Supporta la convalida**|Se **true**, il processo di convalida dei livelli può verificare che il progetto sia conforme alle dipendenze da o verso questo elemento.<br /><br /> Se **false**, il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md).|
     |**Identificatore**|Riferimento all'elemento collegato|

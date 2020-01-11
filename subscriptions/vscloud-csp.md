@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Informazioni sulle modalità di acquisto e di gestione delle sottoscrizioni cloud di Visual Studio per Cloud Solution Provider.
-ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787741"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851397"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) possono acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional per i loro clienti.
@@ -68,28 +68,28 @@ Per visualizzare i prezzi di Visual Studio per i partner CSP, accedere al [Centr
 
 Di seguito viene illustrato come interpretare le informazioni disponibili in questo foglio di calcolo:
 
-| Categoria misuratore    |   nome                 |  Unità                                |           Contenuto                          |
+| Categoria misuratore    |   Name                 |  Unità                                |           Contenuto                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Sottoscrizione                         | Sottoscrizione mensile di Visual Studio Enterprise   |
-| Visual Studio     | Professionale           |  Sottoscrizione                         | Sottoscrizione mensile di Visual Studio Professional |
+| Visual Studio     | Professional           |  Sottoscrizione                         | Sottoscrizione mensile di Visual Studio Professional |
 
 Offriamo uno sconto del 5% per la sesta unità acquistata (per un determinato cliente) mensilmente di ogni sottoscrizione di Visual Studio. Questo è il motivo per cui sono visualizzate due righe per ogni opzione di sottoscrizione. Una riga mostra un valore minimo pari a 0, da interpretare come prezzo di base per le unità da 1 a 5. L'altra riga mostra un valore minimo pari a 5, ovvero il prezzo scontato del % 5 che si applica dalle 6 unità in poi.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>D: Come vengono elaborati gli addebiti per le sottoscrizioni cloud **mensili**?
-R: Al momento del primo acquisto, viene fatturata una quantità ripartita in base ai giorni rimanenti del mese corrente. Ad esempio, se si acquistano 10 sottoscrizioni cloud mensili di Visual Studio Professional il 15 aprile, vengono addebitate 5 unità perché rimangono 15 giorni del mese di 30 giorni, ovvero il 50%, quindi l'addebito delle unità viene ripartito al 50%. Il primo del mese di maggio e per ogni mese successivo fino all'annullamento, verranno fatturate tutte e 10 le unità.
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>D: come vengono elaborati gli addebiti per le sottoscrizioni cloud **mensili**?
+R: al momento del primo acquisto, viene fatturata una quantità ripartita in base ai giorni rimanenti del mese corrente. Ad esempio, se si acquistano 10 sottoscrizioni cloud mensili di Visual Studio Professional il 15 aprile, vengono addebitate 5 unità perché rimangono 15 giorni del mese di 30 giorni, ovvero il 50%, quindi l'addebito delle unità viene ripartito al 50%. Il primo del mese di maggio e per ogni mese successivo fino all'annullamento, verranno fatturate tutte e 10 le unità.
 
 Quando si aumenta la quantità a pagamento in un secondo momento, anche le unità aggiunte verranno ripartite in base ai giorni rimanenti del mese corrente. Pertanto, se si acquista un'altra sottoscrizione cloud mensile di Visual Studio Professional il 10 maggio, verranno fatturate approssimativamente 0,677 unità (21 giorni rimanenti nel mese di maggio di 31 giorni).
 
-### <a name="q-how-do-cancellations-work"></a>D: Come funzionano gli annullamenti?
-R: Quando si annulla una sottoscrizione cloud di Visual Studio, il rinnovo automatico viene annullato. La sottoscrizione continua fino alla relativa data di rinnovo normale e poi semplicemente scade. Alla scadenza, il sottoscrittore di Visual Studio non può più usare Visual Studio o qualsiasi altro vantaggio dalla sottoscrizione.
+### <a name="q-how-do-cancellations-work"></a>D: come funzionano gli annullamenti?
+R: quando si annulla una sottoscrizione cloud di Visual Studio, si annulla il rinnovo automatico. La sottoscrizione continua fino alla relativa data di rinnovo normale e poi semplicemente scade. Alla scadenza, il sottoscrittore di Visual Studio non può più usare Visual Studio o qualsiasi altro vantaggio dalla sottoscrizione.
 
 Con le sottoscrizioni cloud mensili, gli annullamenti diventano effettivi a partire dal primo giorno del mese successivo. Se si annullano solo alcune delle sottoscrizioni cloud mensili del cliente, assicurarsi di rimuovere gli utenti il primo del mese successivo per assicurarsi che rimangano assegnate sottoscrizioni attive alle persone corrette.
 
 Per le sottoscrizioni cloud annuali, gli annullamenti diventano effettivi il primo giorno del mese successivo a 12 mesi dall'acquisto originale o a 12 mesi dall'ultimo addebito per il rinnovo annuale. Ad esempio, se si acquista una sottoscrizione cloud annuale di Visual Studio Enterprise il 3 gennaio 2018, questa rimane attiva fino al 1 febbraio 2019 quando viene rinnovata automaticamente per un altro anno. Se si annulla la sottoscrizione in qualsiasi momento tra tale data e il 1 febbraio 2020, la scadenza sarà il 1 febbraio 2020. Non è previsto alcuno sconto in caso di annullamento di sottoscrizioni cloud annuali prima del termine dell'anno di validità.
 
-### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>D: Quali tipi di sconti per volume sono disponibili per le sottoscrizioni di Visual Studio?
-R:  Viene offerto uno sconto del 5% a partire dalla sesta sottoscrizione e per quelle successive *per ogni tipo* di sottoscrizione:
+### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>D: quali tipi di sconti per volume sono disponibili per le sottoscrizioni di Visual Studio?
+R: viene offerto uno sconto del 5% oltre le 6 sottoscrizioni *per ogni tipo* di sottoscrizione:
 - Visual Studio Professional (mensile)
 - Visual Studio Enterprise (mensile)
 
@@ -99,9 +99,9 @@ Inoltre, lo sconto è valido solo per gli addebiti in un determinato periodo di 
 
 Questi sconti sono indicati nei dati sui prezzi all'interno del [Centro per i partner](https://partnercenter.microsoft.com).
 
-### <a name="q-are-there-renewal-discounts"></a>D: Sono previsti sconti per il rinnovo?
-R:  No, i prezzi per le sottoscrizioni di Visual Studio sono fissi. Lo stesso prezzo viene applicato per le nuove sottoscrizioni e per i rinnovi.
+### <a name="q-are-there-renewal-discounts"></a>D: sono previsti sconti per il rinnovo?
+R: no, i prezzi per le sottoscrizioni di Visual Studio sono fissi. Lo stesso prezzo viene applicato per le nuove sottoscrizioni e per i rinnovi.
 
-### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>D: Esistono opzioni per i prezzi di Azure per sviluppo/test per i CSP?
-R: Non attualmente. I clienti possono sfruttare i [Prezzi di Azure per sviluppo/test](https://aka.ms/azuredevtestpricing), ma non è disponibile alcuna offerta specifica per i CSP.
+### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>D: esistono opzioni per i prezzi di Azure per sviluppo/test per i CSP?
+R: Non attualmente. I clienti possono sfruttare i [Prezzi di Azure per sviluppo/test](https://azure.microsoft.com/pricing/dev-test/), ma non è disponibile alcuna offerta specifica per i CSP.
 

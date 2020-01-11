@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 6d7bf7901ab33dc6dba50013ebdfa05c3188cd6c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8b03d1e698108fac2f81d1e3263d7b38ff82b1dc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300172"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852345"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Aggiunta dell’archiviazione di Azure tramite Servizi connessi di Visual Studio
 Con Visual Studio è possibile connettere uno dei servizi seguenti ad Archiviazione di Azure tramite la finestra di dialogo **Add Connected Services** (Aggiungi servizi connessi):
@@ -63,12 +63,12 @@ Dopo il completamento, la finestra di dialogo **Add Connected Services** (Aggiun
 ## <a name="how-your-project-is-modified"></a>Come viene modificato il progetto
 Una volta terminata la finestra di dialogo, Visual Studio aggiunge riferimenti e modifica di alcuni file di configurazione. Le modifiche specifiche dipendono dal tipo di progetto.
 
-- Progetti ASP.NET - [Risultati – Progetti ASP.NET](https://go.microsoft.com/fwlink/p/?LinkId=513126).
-- Progetti ASP.NET 5 - [Risultati – Progetti ASP.NET 5](https://go.microsoft.com/fwlink/p/?LinkId=513124).
-- Progetti del servizio cloud (ruoli Web e ruoli di lavoro) [Risultati - Progetti del servizio cloud](https://go.microsoft.com/fwlink/p/?LinkId=516965).
+- Progetti ASP.NET - [Risultati – Progetti ASP.NET](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet-getting-started-blobs).
+- Progetti ASP.NET 5 - [Risultati – Progetti ASP.NET 5](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs).
+- Progetti del servizio cloud (ruoli Web e ruoli di lavoro) [Risultati - Progetti del servizio cloud](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs).
 - Progetti di tipo processo Web - [Risultati - Progetti di tipo processo Web](/azure/visual-studio/vs-storage-webjobs-what-happened).
 
 ## <a name="next-steps"></a>Passaggi successivi
-- [Forum MSDN: archiviazione di Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Forum MSDN: Archiviazione di Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Blog del team di Archiviazione di Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/).
 - [Documentazione di Archiviazione di Azure](https://docs.microsoft.com/azure/storage/)

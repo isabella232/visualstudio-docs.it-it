@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888538"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850063"
 ---
 # <a name="set-up-remote-workspaces"></a>Impostare aree di lavoro remote
 
@@ -143,7 +143,7 @@ Per eseguire codice R, il computer remoto deve avere un interprete R installato 
 
      Le funzionalità dei programmi sono identiche ma Microsoft R Open dispone di librerie aggiuntive di algebra lineare con accelerazione hardware, per gentile concessione di [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
 
-2. Eseguire il [programma di installazione di R Services](https://aka.ms/rtvs-services) e riavviare quando richiesto. Il programma di installazione esegue le operazioni seguenti:
+2. Eseguire il [programma di installazione di R Services](https://github.com/Microsoft/RTVS/blob/master/doc/rtvsd/rtvs-remote-downloads.md) e riavviare quando richiesto. Il programma di installazione esegue le operazioni seguenti:
 
     - Creare una cartella in *%PROGRAMFILES%\R Tools per Visual Studio\1.0\\* e copiare tutti i file binari necessari.
     - Installa `RHostBrokerService` e `RUserProfileService` e ne configura l'avvio automatico.
@@ -197,7 +197,7 @@ Per l'esecuzione dei servizi R nel computer remoto è anche necessario creare ac
 
     Salvare il file e riavviare il computer per applicare le modifiche.
 
-## <a name="troubleshooting"></a>Troubleshooting
+## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 **D. il computer server R non risponde, cosa devo fare?**
 

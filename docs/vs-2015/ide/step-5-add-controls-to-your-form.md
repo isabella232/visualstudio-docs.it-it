@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a6e66c8192b1fa409482bd33287cec04f74c1304
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295717"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851526"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Passaggio 5: aggiungere controlli al form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo passaggio si aggiungono controlli, ad esempio un controllo `PictureBox` e un controllo `CheckBox`, al form. Si aggiungeranno quindi pulsanti al form.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 2](https://go.microsoft.com/fwlink/?LinkId=205211) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 2](https://go.microsoft.com/fwlink/?LinkId=205200). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Per aggiungere controlli al form
 
