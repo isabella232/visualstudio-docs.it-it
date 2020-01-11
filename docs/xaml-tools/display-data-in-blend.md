@@ -9,16 +9,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f273294d9da0c0cf71f96ae3bde8e5e0457259c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0614552bbbadd9a472e0780db6f277d423446966
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592973"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886454"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Visualizzare dati in Blend per Visual Studio
 
 È possibile visualizzare dati di esempio nella finestra di progettazione durante la personalizzazione del layout delle pagine. È possibile generare dati di esempio da zero o usando una classe esistente. È inoltre possibile connettersi a *dati dinamici* che vengono visualizzati nell'app durante l'esecuzione.
+
+> [!NOTE]
+> Il pannello **dati** in Blend è supportato solo per i progetti destinati a .NET Framework. Non è supportato per progetti UWP o progetti destinati a .NET Core. 
 
 ## <a name="generate-sample-data"></a>Generare dati di esempio
 
