@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6caf63b2d1fb6b9206fe43da5c7a63818fd299f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ece5c08ca3aa4a9f5e5329dbf6d5fd6c9087d085
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587700"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886408"
 ---
 # <a name="code-metrics-values"></a>Valori della metrica del codice
 
@@ -36,10 +36,19 @@ L'elenco seguente mostra il codice di risultati di metrica per il calcolo di Vis
 
 - **Accoppiamento di classe** -misura l'accoppiamento di classi univoche tramite i parametri, variabili locali, tipi restituiti, chiamate al metodo, creazioni di istanza generica o modello, le classi di base, le implementazioni dell'interfaccia, i campi definiti nei tipi esterni, e decorazione di attributo. Progettazione software di qualità impone che i tipi e metodi devono avere un'elevata coesione e accoppiamento basso. Accoppiamento elevato indica una progettazione che è difficile da riutilizzare e gestire a causa delle molte interdipendenze con altri tipi. Per ulteriori informazioni, vedere il post di Blog relativo all' [accoppiamento della classe](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) .
 
+::: moniker range=">=vs-2019"
+
+- **Righe di codice sorgente** : indica il numero esatto di righe del codice sorgente presenti nel file di origine, incluse le righe vuote. Questa metrica è disponibile a partire da Visual Studio 2019 versione 16,4 e Microsoft. CodeAnalysis. metriche (2.9.5).
+
+- **Righe di codice eseguibile** : indica il numero approssimativo di righe o operazioni del codice eseguibile. Si tratta di un conteggio del numero di operazioni nel codice eseguibile. Questa metrica è disponibile a partire da Visual Studio 2019 versione 16,4 e Microsoft. CodeAnalysis. metriche (2.9.5). Il valore è in genere una corrispondenza di chiusura con la metrica precedente, **righe di codice**, ovvero la metrica basata sull'istruzione MSIL utilizzata in modalità legacy.
+::: moniker-end
+::: moniker range="vs-2017"
+
 - **Righe di codice** -indica il numero approssimativo di righe di codice. Il conteggio è basato sul codice IL e non è pertanto il numero esatto di righe nel file del codice sorgente. Un conteggio elevato potrebbe indicare che un tipo o un metodo sta provando a eseguire troppe operazioni e deve essere suddiviso. Può anche indicare che il tipo o metodo potrebbe essere difficile da gestire.
 
    > [!NOTE]
    > Il [versione della riga di comando](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) del codice strumento metriche conta le righe effettive di codice perché analizza il codice sorgente anziché IL.
+::: moniker-end
 
 ## <a name="anonymous-methods"></a>Metodi anonimi
 
