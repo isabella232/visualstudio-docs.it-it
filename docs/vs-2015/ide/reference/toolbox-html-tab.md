@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4474f2a0823b5599da30706daedff6e5cd1fc0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297771"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851666"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, Scheda HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 ## <a name="ui-elements"></a>Elementi dell'interfaccia utente
  Per impostazione predefinita, nella scheda HTML sono disponibili i seguenti strumenti.
 
- **Puntatore**  ![ASP puntatore pagina HTML di progettazione mobile .NET](../../ide/reference/media/vxpointer.gif "|::ref1::|")
+ **Puntatore** ![puntatore pagina HTML di ASP.NET Mobile Designer](../../ide/reference/media/vxpointer.gif "|::ref1::|")
 
  Questo strumento viene selezionato per impostazione predefinita quando si fa clic su una delle schede della casella degli strumenti e non è possibile eliminarlo. Il puntatore consente di trascinare oggetti nell'area di visualizzazione Progettazione, ridimensionarli e riposizionarli nella pagina o nel form. Per altre informazioni, vedere [Procedura: gestire la finestra Casella degli strumenti](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Procedura: modificare le schede della Casella degli strumenti](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
 
@@ -52,7 +52,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Button1" type="button" value="Button" name="Button1">
 ```
 
- Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputButton](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [Procedura: creare script e modificare gestori eventi](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sui controlli server Web pulsante](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> e <xref:System.Web.UI.WebControls.Button>.
+ Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputButton](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa) e [NIB: Procedura: creare script e modificare gestori eventi](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sui controlli server Web pulsante](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> e <xref:System.Web.UI.WebControls.Button>.
 
  Schermata di **input (reset)** ![HTMLpageResetButton](../../ide/reference/media/vxreset.gif "|::ref3::|")
 
@@ -118,10 +118,10 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Password1" type="password" name="Password1">
 ```
 
- Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Procedura: impostare un controllo server Web TextBox per l'immissione di una password](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) e [Procedura dettagliata: convalida dell'input dell'utente in una pagina Web Form](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
+ Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f) e [Procedura: impostare un controllo server Web TextBox per l'immissione di una password](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) e [Procedura dettagliata: convalida dell'input dell'utente in una pagina Web Form](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
 
 > [!IMPORTANT]
-> Se l'applicazione trasmette nomi utente e password, è necessario configurare il sito Web per usare SSL (Secure Sockets Layer) per la crittografia della trasmissione. Per altre informazioni, vedere "Securing Connections with SSL" (Protezione delle connessioni con SSL) in [IIS Operations Guide](https://go.microsoft.com/fwlink/?linkid=47856) (Guida operativa di IIS). È poi consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
+> Se l'applicazione trasmette nomi utente e password, è necessario configurare il sito Web per usare SSL (Secure Sockets Layer) per la crittografia della trasmissione. Per altre informazioni, vedere "Securing Connections with SSL" (Protezione delle connessioni con SSL) in [IIS Operations Guide](https://technet.microsoft.com/library/cc732976(v=WS.10).aspx) (Guida operativa di IIS). È poi consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
  Opzione casella di controllo casella ![degli strumenti pagina Web HTML](../../ide/reference/media/vxcheckbox.gif "|::ref8::|") **input (casella di controllo)**
 
@@ -210,7 +210,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  È possibile creare un elemento `select` aumentando il valore della proprietà Size.
 
- Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [Procedura: creare script e modificare gestori eventi](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sul controllo server Web DropDownList](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Cenni preliminari sul controllo server Web ListBox](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect> e <xref:System.Web.UI.WebControls.DropDownList>.
+ Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Procedura: creare script e modificare gestori eventi](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sul controllo server Web DropDownList](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Cenni preliminari sul controllo server Web ListBox](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect> e <xref:System.Web.UI.WebControls.DropDownList>.
 
  ![Elemento regola orizzontale della pagina HTML](../../ide/reference/media/vxhorizontal.gif "|::ref15::|") della **regola orizzontale**
 
