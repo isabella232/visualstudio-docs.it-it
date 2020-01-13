@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844992"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918807"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,8 +132,6 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
  Con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], è possibile eseguire download che usano la compressione HTTP, una tecnologia server Web che usa l'algoritmo GZIP per comprimere un flusso di dati prima di inviare il flusso al client. Il client, in questo caso [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], decomprime il flusso prima di leggere i file.  
   
  Se si utilizza IIS, è possibile abilitare facilmente la compressione HTTP. Tuttavia, quando si Abilita la compressione HTTP, questa viene abilitata solo per determinati tipi di file, ovvero file HTML e di testo. Per abilitare la compressione per gli assembly (con estensione dll), i file XML (XML), i manifesti della distribuzione (. Application) e i manifesti dell'applicazione (. manifest), è necessario aggiungere questi tipi di file all'elenco dei tipi per comprimere IIS. Fino a quando non si aggiungono i tipi di file alla distribuzione, verranno compressi solo i file di testo e HTML.  
-  
- Per istruzioni dettagliate su IIS, vedere [come specificare tipi di documenti aggiuntivi per la compressione HTTP](https://support.microsoft.com/kb/234497).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: b04f0e7dad4847e654560139f9a3978a4d85685b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846909"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916530"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Eseguire il debug di app in un contenitore Docker locale
 
@@ -60,6 +60,28 @@ Se si dispone di un progetto e si aggiunge il supporto per Docker come descritto
 Per eseguire rapidamente l'iterazione delle modifiche, è possibile avviare l'applicazione in un contenitore. Quindi, continuare a apportare le modifiche, visualizzandole come si farebbe con IIS Express.
 
 1. Assicurarsi che Docker sia configurato in modo da usare il tipo di contenitore (Linux o Windows) in uso. Fare clic con il pulsante destro del mouse sull'icona Docker sulla barra delle applicazioni e scegliere **passa a contenitori Linux** o **passa a contenitori Windows** in base alle esigenze.
+
+1. (Solo .NET Core 3 e versioni successive) Modificare il codice e aggiornare il sito in esecuzione come descritto in questa sezione non è abilitato nei modelli predefiniti in .NET Core > = 3,0. Per abilitarla, aggiungere il pacchetto NuGet [Microsoft. AspNetCore. Mvc. Razor. RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). In *Startup.cs*aggiungere una chiamata al metodo di estensione `IMvcBuilder.AddRazorRuntimeCompilation` al codice nel metodo `ConfigureServices`. Questa operazione è necessaria solo per abilitare la modalità di DEBUG, quindi scrivere il codice seguente:
+
+    ```csharp
+    public IWebHostEnvironment Env { get; set; }
+    
+    public void ConfigureServices(IServiceCollection services)
+    {
+        IMvcBuilder builder = services.AddRazorPages();
+    
+    #if DEBUG
+        if (Env.IsDevelopment())
+        {
+            builder.AddRazorRuntimeCompilation();
+        }
+    #endif
+    
+        // code omitted for brevity
+    }
+    ```
+
+   Per ulteriori informazioni, vedere la pagina relativa [alla compilazione di file Razor in ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1).
 
 1. Impostare la **configurazione della soluzione** di cui eseguire il **debug**. Premere quindi **Ctrl**+**F5** per compilare l'immagine Docker ed eseguirla localmente.
 
@@ -139,5 +161,5 @@ Per ulteriori informazioni, vedere la pagina relativa alla [compilazione di app 
 
 * Scopri di più sullo [sviluppo di contenitori con Visual Studio](/visualstudio/containers).
 * Per compilare e distribuire un contenitore Docker, vedere [integrazione di Docker per Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
-* Per un indice degli articoli su Windows Server e nano server, vedere [informazioni sui contenitori di Windows](https://docs.microsoft.com/virtualization/windowscontainers/).
+* Per un indice degli articoli su Windows Server e nano server, vedere [informazioni sui contenitori di Windows](/virtualization/windowscontainers/).
 * Informazioni sul [servizio Azure Kubernetes](https://azure.microsoft.com/services/kubernetes-service/) e sulla [documentazione del servizio Kubernetes di Azure](/azure/aks).

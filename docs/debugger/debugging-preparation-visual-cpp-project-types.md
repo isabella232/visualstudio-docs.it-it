@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c7d223b9ea542177176045c9abd103958e5ae33
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738104"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916314"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Preparazione al debug C++ : tipi di progetto
 In questa sezione viene descritto come eseguire il debug dei tipi di progetto di base creati mediante i modelli di progetto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
@@ -47,13 +47,13 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
 
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Proprietà &#124; di configurazione CC++ &#124; /nodo di ottimizzazione
 
-|Nome proprietà|Impostazioni|
+|Nome proprietà:|Impostazione di|
 |-------------------|-------------|
 |**Optimization**|Impostare su **Disabilitato (/0d).** L'esecuzione del debug di codice ottimizzato è più complessa perché le istruzioni generate non corrispondono direttamente al codice sorgente. Se si nota un bug presente solo nel codice ottimizzato del programma, è possibile attivare questa impostazione, tenendo però presente che il codice riportato nella finestra **Disassembly** è generato da codice sorgente ottimizzato che potrebbe non corrispondere a quanto visualizzato nelle finestre del codice sorgente. È possibile che altre funzionalità, ad esempio il debug passo a passo, non funzionino come previsto.|
 
 ### <a name="configuration-properties-124-linker-124-debugging-node"></a>Nodo di &#124; &#124; debug del linker delle proprietà di configurazione
 
-|Nome proprietà|Impostazioni|
+|Nome proprietà:|Impostazione di|
 |-------------------|-------------|
 |**Genera informazioni di debug**|Si consiglia di impostare questa opzione sempre su **Sì (/DEBUG)** per creare i simboli di debug e i file necessari per il debug. Quando l'applicazione passa alla fase di produzione, è possibile disattivare questa opzione.|
 
@@ -68,7 +68,7 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
 
 ### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Per eseguire il debug di un'applicazione Win32 in C o C++
 
-1. Aprire il progetto in Visual Studio.
+1. Apri il progetto in Visual Studio.
 
 2. Scegliere **Avvia** dal menu **Debug**.
 
@@ -97,7 +97,7 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
    [In questo argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Applicazioni Windows Forms (.NET)
- Il modello **Windows Forms Application (.NET)** consente di creare un'applicazione Windows Forms in [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Per altre informazioni, vedere [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+ Il modello **Windows Forms Application (.NET)** consente di creare un'applicazione Windows Forms in [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Per altre informazioni, vedere [Procedura: Creare un nuovo progetto di applicazione Windows Form](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  Il debug di questo tipo di applicazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è simile a quello delle applicazioni Windows Form gestite.
 
@@ -114,4 +114,4 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
 - [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Connessione a uno o più programmi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Configurazioni versioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Procedura: Creare un progetto Applicazione Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
+- [Procedura: Creare un progetto Applicazione Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

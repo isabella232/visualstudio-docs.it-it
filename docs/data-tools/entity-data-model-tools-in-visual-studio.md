@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4af96ad0f76414468fd194b7079b3c4dbdaf2a4c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586666"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916731"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools in Visual Studio
 
@@ -43,7 +43,7 @@ Questi sono gli strumenti specifici che compongono Entity Framework strumenti in
 
 Gli strumenti generano o modificano un file con estensione *edmx* . Questo file con *estensione edmx* contiene informazioni che descrivono il modello concettuale, il modello di archiviazione e i mapping tra di essi. Per ulteriori informazioni, vedere [edmx](/ef/ef6/).
 
-[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) consentono di creare applicazioni che usano l'Entity Data Model. Power Tools consente di generare un modello concettuale, convalidare un modello esistente, produrre file del codice sorgente contenenti classi di oggetti basate sul modello concettuale e produrre file del codice sorgente contenenti visualizzazioni generate dal modello. Per informazioni dettagliate, vedere [viste di mapping pre-generate](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views).
+[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) consentono di creare applicazioni che usano l'Entity Data Model. Power Tools consente di generare un modello concettuale, convalidare un modello esistente, produrre file del codice sorgente contenenti classi di oggetti basate sul modello concettuale e produrre file del codice sorgente contenenti visualizzazioni generate dal modello. Per informazioni dettagliate, vedere [viste di mapping pre-generate](/ef/ef6/fundamentals/performance/pre-generated-views).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

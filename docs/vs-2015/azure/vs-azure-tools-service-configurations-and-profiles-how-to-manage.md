@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 2d7081fc7531c8c1c1fcf13564f9f90bc9964f17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 008dd927f38c7fd79996bde39531e256314f2e24
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849992"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917351"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Come gestire le configurazioni e i profili dei servizi
 ## <a name="overview"></a>Panoramica di
@@ -80,7 +80,7 @@ Quando si esegue la procedura guidata per la prima volta, viene creato un profil
    
     Il nuovo profilo compare nell'elenco Profilo di destinazione.
 6. Nell'elenco **Profilo di destinazione** , selezionare il profilo appena creato. Le impostazioni della pubblicazione guidata vengono popolate in base alle opzioni relative al profilo selezionato.
-7. Selezionare i pulsanti **Indietro** e **Avanti** per visualizzare ogni pagina della pubblicazione guidata, quindi personalizzare le impostazioni per il profilo. Per altre informazioni, vedere [Procedura guidata per la pubblicazione dell'applicazione Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
+7. Selezionare i pulsanti **Indietro** e **Avanti** per visualizzare ogni pagina della pubblicazione guidata, quindi personalizzare le impostazioni per il profilo. Per altre informazioni, vedere [Procedura guidata per la pubblicazione dell'applicazione Azure](vs-azure-tools-publish-azure-application-wizard.md) .
 8. Dopo avere personalizzato le impostazioni, selezionare **Avanti** per tornare alla pagina Impostazioni. Il profilo viene salvato quando si pubblica il servizio con queste impostazioni o se si seleziona **Salva** accanto all'elenco dei profili.
 
 ### <a name="to-rename-or-delete-a-profile"></a>Per rinominare o eliminare un profilo
@@ -93,9 +93,9 @@ Quando si esegue la procedura guidata per la prima volta, viene creato un profil
 ### <a name="to-change-a-profile"></a>Per modificare un profilo
 1. Aprire il menu di scelta rapida per il progetto Azure e quindi selezionare **Pubblica**.
 2. Nell'elenco **Profilo di destinazione** , selezionare il profilo da modificare.
-3. Selezionare i pulsanti **Indietro** e **Avanti** per visualizzare ogni pagina della pubblicazione guidata, quindi modificare le impostazioni desiderate. Per altre informazioni, vedere [Procedura guidata per la pubblicazione dell'applicazione Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
+3. Selezionare i pulsanti **Indietro** e **Avanti** per visualizzare ogni pagina della pubblicazione guidata, quindi modificare le impostazioni desiderate. Per altre informazioni, vedere [Procedura guidata per la pubblicazione dell'applicazione Azure](vs-azure-tools-publish-azure-application-wizard.md) .
 4. Dopo avere modificato le impostazioni, selezionare **Avanti** per tornare alla pagina **Impostazioni**.
 5. (Facoltativo) Selezionare **Pubblica** per pubblicare il servizio cloud usando le nuove impostazioni. Se per il momento non si vuole pubblicare il servizio cloud e si chiude la pubblicazione guidata, Visual Studio richiede se si vogliono salvare le modifiche apportate al profilo.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per informazioni sulla configurazione di altre parti del progetto Azure da Visual Studio, vedere [Configurazione di un progetto Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address?view=vs-2019)
+Per informazioni sulla configurazione di altre parti del progetto Azure da Visual Studio, vedere [Configurazione di un progetto Azure](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)

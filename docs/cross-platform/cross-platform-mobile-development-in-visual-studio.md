@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3df97bf8e180eae99e6ba27466fbde7a8466ad
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777773"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916870"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo per dispositivi mobili multipiattaforma in Visual Studio
 
@@ -168,6 +168,6 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Aggiungere le API di Office 365 a un progetto di Visual Studio](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
+- [Aggiungere le API di Office 365 a un progetto di Visual Studio](/office/developer-program/office-365-developer-program)
 - [Servizi app di Azure: app per dispositivi mobili](https://azure.microsoft.com/services/app-service/mobile/)
-- [Visual Studio App Center](https://docs.microsoft.com/appcenter)
+- [Visual Studio App Center](/appcenter)

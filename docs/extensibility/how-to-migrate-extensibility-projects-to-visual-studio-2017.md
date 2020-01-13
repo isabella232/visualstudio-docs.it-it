@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5d32a7efa050d04c848ec8add761d0d235e95304
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 01c0c8613ec2e4fe72613867d623d510d9734e45
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849120"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917660"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio 2017
 
@@ -179,7 +179,7 @@ Debugger | Debugger JIT | Microsoft.VisualStudio.Component.Debugger.JustInTime
 
 ## <a name="find-component-ids"></a>Trova ID componente
 
-L'elenco dei componenti ordinati per prodotto Visual Studio si trova in ID del carico di lavoro e dei componenti di [Visual studio 2017](https://docs.microsoft.com/visualstudio/install/workload-and-component-ids?view=vs-2019). Usare questi ID di componenti per gli ID dei prerequisiti nel manifesto.
+L'elenco dei componenti ordinati per prodotto Visual Studio si trova in ID del carico di lavoro e dei componenti di [Visual studio 2017](/visualstudio/install/workload-and-component-ids?view=vs-2019). Usare questi ID di componenti per gli ID dei prerequisiti nel manifesto.
 
 Se non si è certi di quale componente contenga un file binario specifico, scaricare il [foglio di calcolo di mapping binario > componente](https://aka.ms/vs2017componentid-binaries).
 

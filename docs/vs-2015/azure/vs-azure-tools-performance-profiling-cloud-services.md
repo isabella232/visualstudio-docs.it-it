@@ -11,18 +11,18 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b1e5a5d4d5312968571965df8c9e28d31379720d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851888"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915596"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Test delle prestazioni di un servizio cloud
 ## <a name="overview"></a>Panoramica di
 È possibile testare le prestazioni di un servizio cloud nei modi seguenti:
 
-* Usare la diagnostica di Azure per raccogliere informazioni su connessioni e richieste e per esaminare le statistiche del sito che mostrano le prestazioni del servizio dalla prospettiva del cliente. Per iniziare, consultare [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019).
+* Usare la diagnostica di Azure per raccogliere informazioni su connessioni e richieste e per esaminare le statistiche del sito che mostrano le prestazioni del servizio dalla prospettiva del cliente. Per iniziare, consultare [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 * Usare il profiler di Visual Studio per ottenere un'analisi approfondita degli aspetti computazionali dell'esecuzione del servizio. Come descritto in questo argomento, è possibile usare il profiler per misurare le prestazioni durante l'esecuzione di un servizio in Azure. Per informazioni su come usare il profiler per misurare le prestazioni durante l'esecuzione di un servizio localmente in un emulatore di calcolo, vedere [Test delle prestazioni di un servizio cloud di Azure in locale nell'emulatore di calcolo tramite Visual Studio Profiler](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/).
 
 ## <a name="choosing-a-performance-testing-method"></a>Scelta di un metodo di test delle prestazioni
@@ -84,7 +84,7 @@ Nella seguente illustrazione viene mostrato come configurare le impostazioni di 
 > 
 
 ### <a name="to-configure-profiling-settings"></a>Per configurare le impostazioni di profilatura
-1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e quindi scegliere **Pubblica**. Per altre informazioni su come pubblicare un servizio cloud, vedere [Pubblicazione di un servizio cloud con gli strumenti di Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019).
+1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e quindi scegliere **Pubblica**. Per altre informazioni su come pubblicare un servizio cloud, vedere [Pubblicazione di un servizio cloud con gli strumenti di Azure](vs-azure-tools-publishing-a-cloud-service.md).
 2. Nella finestra di dialogo **Pubblica l'applicazione Azure** scegliere la scheda **Impostazioni avanzate**.
 3. Per abilitare la profilatura, selezionare la casella di controllo **Abilita profilatura** .
 4. Per configurare le impostazioni di profilatura, scegliere il collegamento ipertestuale **Impostazioni** . Viene visualizzata la finestra di dialogo Impostazioni profilatura.

@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 96df8bbf1c991b98571a427a5118374cd6f3ba3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d7099eb47007b1fc657164d085e8a5bb6f09e1db
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851450"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915647"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
 Per risolvere gli errori di un servizio cloud o di una macchina virtuale di Azure, è possibile usare Visual Studio per configurare con maggiore facilità Diagnostica di Azure. Diagnostica di Azure acquisisce i dati di sistema e i dati di registrazione nelle macchine virtuali e nelle istanze di macchine virtuali che eseguono il servizio cloud. I dati di diagnostica vengono trasferiti all'account di archiviazione scelto. Per altre informazioni sulla registrazione diagnostica in Azure, vedere [Abilitare la registrazione diagnostica per le app Web nel servizio app di Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -110,7 +110,7 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per le macchine 
     ![Installare un'estensione di macchina virtuale di Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > Sono disponibili altre estensioni di diagnostica per le macchine virtuali. Per altre informazioni, vedere [Estensioni e funzionalità della macchina virtuale per Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features).
+   > Sono disponibili altre estensioni di diagnostica per le macchine virtuali. Per altre informazioni, vedere [Estensioni e funzionalità della macchina virtuale per Windows](/azure/virtual-machines/windows/extensions-features).
    >
    >
 5. Per aggiungere l'estensione e visualizzare la rispettiva finestra di dialogo **Configurazione di diagnostica** selezionare **Aggiungi**.

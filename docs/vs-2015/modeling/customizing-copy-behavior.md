@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845293"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918912"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ Eseguire l'override di *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` n
 Eseguire l'override di *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` nel progetto DslPackage.
 
  **Mantieni il layout delle forme tramite copia e incolla.**
-Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è illustrata nell'esempio in [VMSDK: Circuit Diagrams Sample](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. 
 
  Per ottenere questo effetto, aggiungere le forme e i connettori all'elemento ElementGroupPrototype copiato. Il metodo più conveniente per l'override è ElementOperations.CreateElementGroupPrototype(). Per eseguire questa operazione, aggiungere il codice seguente al progetto DSL:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Incollare le forme in una posizione scelta, ad esempio la posizione del cursore corrente.**
-Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è illustrata nell'esempio in [VMSDK: Circuit Diagrams Sample](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate.
 
  Per ottenere questo effetto, eseguire l'override di `ClipboardCommandSet.ProcessOnMenuPasteCommand()` per usare la versione di `ElementOperations.Merge()` specifica per il percorso. Per eseguire questa operazione, aggiungere il codice seguente al progetto DslPackage:
 
@@ -564,4 +564,5 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md) [procedura: aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md) [personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md) [esempio: VMSDK Circuit Diagrams Sample](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md) [procedura: aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md) [personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md)
+ 

@@ -15,23 +15,23 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57e735db68d90130b537f9f5f4b220bd688c7675
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5239ca22a30b171c53c96f3be33062b860f78b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666680"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918754"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementare correttamente i metodi di serializzazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente su Visual Studio, vedere [CA2238: implementare correttamente i metodi di serializzazione](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
+Per la documentazione più recente su Visual Studio, vedere [CA2238: implementare correttamente i metodi di serializzazione](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
 
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|Category|Microsoft. Usage|
+|Categoria|Microsoft.Usage|
 |Modifica importante|Interruzioni: se il metodo è visibile all'esterno dell'assembly.<br /><br /> Senza interruzioni: se il metodo non è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
@@ -48,7 +48,7 @@ Per la documentazione più recente su Visual Studio, vedere [CA2238: implementar
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  I gestori eventi di serializzazione accettano un solo parametro di tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, restituiscono `void` e hanno visibilità `private`.
+  I gestori eventi di serializzazione accettano un solo parametro di tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, restituiscono `void`e hanno `private` visibilità.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, correggere la firma, il tipo restituito o la visibilità del gestore eventi di serializzazione.

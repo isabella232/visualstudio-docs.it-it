@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4db5de36e9982ac3d708f8826f441751c2fd0891
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 840ea8f701bbc602292bd7c0cf602a24944ed74a
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594071"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918522"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installare i certificati necessari per l'installazione offline di Visual Studio
 
@@ -50,7 +50,7 @@ Quando si crea un layout di rete, i certificati necessari vengono scaricati nell
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Opzione 2: distribuire certificati radice trusted in un ambiente aziendale
 
-Per le aziende con computer offline che non hanno i certificati radice più recenti, un amministratore può usare le istruzioni riportate alla pagina [Configurazione di radici attendibili e di certificati non consentiti](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) per eseguire l'aggiornamento.
+Per le aziende con computer offline che non hanno i certificati radice più recenti, un amministratore può usare le istruzioni riportate alla pagina [Configurazione di radici attendibili e di certificati non consentiti](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) per eseguire l'aggiornamento.
 
 ### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>Opzione 3: installare i certificati come parte di una distribuzione con script di Visual Studio
 

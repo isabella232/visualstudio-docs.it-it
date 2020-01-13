@@ -10,12 +10,12 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46b48370847cbb2cf8b171342aff9baf38c40a22
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295556"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915976"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Ecco come eseguire l'aggiornamento dell'estensione.
   
 4. Compila la soluzione. I file compilati vengono distribuiti in:  
   
-     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< nome dell'autore\>\\< nome del progetto** \>\\<\>versione del progetto \\.  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< nome dell'autore\>\\< nome del progetto** \>\\\>versione del progetto \\.  
   
 #### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Per aggiornare un progetto di estendibilità agli assembly di riferimento NuGet VS SDK  
   
@@ -45,7 +45,7 @@ Ecco come eseguire l'aggiornamento dell'estensione.
   
 2. Rimuovere gli assembly di riferimento di Visual Studio SDK dal progetto selezionandoli, fare clic con il pulsante destro del mouse e **rimuovere**.  
   
-3. Aggiungere le versioni NuGet degli assembly di riferimento di Visual Studio SDK.  Nel nodo **Esplora soluzioni References** aprire la pagina **Gestisci pacchetti NuGet...** dialogo.  Per altre informazioni su questa finestra di dialogo, vedere [gestire i pacchetti NuGet usando la finestra di dialogo](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio). Gli assembly di riferimento di Visual Studio SDK sono pubblicati in [NuGet.org](https://www.nuget.org/) da [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility).  
+3. Aggiungere le versioni NuGet degli assembly di riferimento di Visual Studio SDK.  Nel nodo **Esplora soluzioni References** aprire la pagina **Gestisci pacchetti NuGet...** dialogo.  Per altre informazioni su questa finestra di dialogo, vedere [gestire i pacchetti NuGet usando la finestra di dialogo](/nuget/consume-packages/install-use-packages-visual-studio). Gli assembly di riferimento di Visual Studio SDK sono pubblicati in [NuGet.org](https://www.nuget.org/) da [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4. Usando **NuGet.org** come **origine del pacchetto**, cercare il nome del pacchetto NuGet che corrisponde all'assembly di riferimento desiderato (ad esempio: Microsoft. VisualStudio. Shell. 14.0) e installarlo nel progetto.  NuGet può aggiungere più assembly di riferimento per soddisfare le dipendenze dell'assembly iniziale.  
   

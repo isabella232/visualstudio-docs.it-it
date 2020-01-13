@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0692efefcc92e3316ccf725c586fc6566b09a6ef
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 227c2871f68545c9f9fe5fa1ea3ceee827ccdc6a
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850770"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917298"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Edizioni di Visual Studio supportate per la visualizzazione &amp; Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,10 +28,9 @@ Di seguito sono riportati gli elenchi delle versioni di Visual Studio che sono s
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|SDK di visualizzazione e modellazione di Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
-
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|SDK di visualizzazione e modellazione di Visual Studio|[Download dell'SDK di modellazione](https://www.microsoft.com/download/details.aspx?id=48148)|
 ## <a name="deployment-editions"></a>Edizioni per la distribuzione
  [!INCLUDE[dsl](../includes/dsl-md.md)] supporta le configurazioni seguenti per la distribuzione dei linguaggi specifici di dominio compilati:
 

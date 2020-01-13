@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427574"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915836"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Eseguire il training di un modello TensorFlow nel cloud
 
-Questa esercitazione illustra le procedure per il training di un modello TensorFlow usando il [set di dati MNIST](http://yann.lecun.com/exdb/mnist/) in una macchina virtuale per l'[apprendimento avanzato](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) (DLVM, Deep Learning Virtual Machine) di Azure.
+Questa esercitazione illustra le procedure per il training di un modello TensorFlow usando il [set di dati MNIST](http://yann.lecun.com/exdb/mnist/) in una macchina virtuale per l'[apprendimento avanzato](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) (DLVM, Deep Learning Virtual Machine) di Azure.
 
 Il database MNIST include un set di training di 60.000 esempi e un set di test di 10.000 esempi di cifre scritte a mano.
 
@@ -31,7 +31,7 @@ Prima di iniziare, assicurarsi di aver installato e configurato quanto segue:
 > [!NOTE]
 > Impostare **Tipo di sistema operativo** su Linux.
 
-È possibile trovare [qui](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm) istruzioni per la configurazione di una macchina virtuale per l'apprendimento avanzato.
+È possibile trovare [qui](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm) istruzioni per la configurazione di una macchina virtuale per l'apprendimento avanzato.
 
 ### <a name="remove-comment-in-parens"></a>Rimuovere il commento tra parentesi
 
@@ -43,13 +43,13 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 Scaricare questo [repository di GitHub](https://github.com/Microsoft/samples-for-ai) contenente esempi per iniziare ad approfondire TensorFlow, CNTK, Theano e altro ancora.
 
-## <a name="open-project"></a>Apertura del progetto
+## <a name="open-project"></a>Apri progetto
 
 - Avviare Visual Studio e selezionare **File > Apri > Progetto/Soluzione**.
 
 - Selezionare la cartella **TensorflowExamples** dal repository degli esempi scaricato e aprire il file **TensorflowExamples.sln**.
 
-   ![Apertura del progetto](media/tensorflow-local/open-project.png)
+   ![Apri progetto](media/tensorflow-local/open-project.png)
 
    ![Apertura della soluzione](media/tensorflow-local/open-solution.png)
 

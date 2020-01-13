@@ -16,23 +16,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: caf1ec865d604545940b0a5442947ef61bd60f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671536"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918177"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Rivedere i parametri inutilizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente su Visual Studio, vedere [CA1801: rivedere i parametri inutilizzati](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).
+Per la documentazione più recente su Visual Studio, vedere [CA1801: rivedere i parametri inutilizzati](/visualstudio/code-quality/ca1801-review-unused-parameters).
 
 |||
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|Category|Microsoft. Usage|
+|Categoria|Microsoft.Usage|
 |Modifica importante|Senza interruzioni: se il membro non è visibile all'esterno dell'assembly, indipendentemente dalla modifica apportata.<br /><br /> Senza interruzioni: se si modifica il membro per usare il parametro all'interno del corpo.<br /><br /> Suddivisione: se si rimuove il parametro ed è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa

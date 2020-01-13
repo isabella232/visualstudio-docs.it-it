@@ -9,19 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850686"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916792"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile creare estensioni per la finestra di progettazione utilizzata per modificare le definizioni DSL. I tipi di estensione che è possibile apportare includono l'aggiunta di comandi di menu, l'aggiunta di gestori per i movimenti di trascinamento e doppio clic e le regole attivate quando vengono modificati determinati tipi di valori o relazioni. Le estensioni possono essere assemblate come estensione VSIX (Visual Studio Integration Extension) e distribuite ad altri utenti.
-
- Per il codice di esempio e ulteriori informazioni su questa funzionalità, vedere il [sito Web di Visual Studio Visualization and Modeling SDK (VMSDK)](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="setting-up-the-solution"></a>Configurazione della soluzione
  Configurare un progetto che contiene il codice dell'estensione e un progetto VSIX che esporta il progetto. La soluzione può contenere altri progetti incorporati nello stesso progetto VSIX.

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 775c68b433073931f7f6a1b73fae89fcce6ca2b2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573313"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916012"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test
 
@@ -26,7 +26,7 @@ Utilizzando questi script, è possibile eseguire il provisioning (noto anche com
 
 * Visual Studio 2015 o versione successiva con il **carico di lavoro di Azure** installato oppure Visual Studio 2013 e Azure SDK 2.3 o versioni successive. Vedere [Download di Visual Studio](https://visualstudio.microsoft.com/downloads). Non è necessario Azure SDK per generare script per i progetti Web. Questa funzionalità è riservata ai progetti Web, non ai ruoli Web nei servizi cloud.
 * Azure PowerShell 0.7.4 o versioni successive. Vedere [Come installare e configurare Azure PowerShell](/powershell/azure/overview).
-* [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) o versione successiva.
+* [Windows PowerShell 3.0](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) o versione successiva.
 
 ## <a name="additional-tools"></a>Altri strumenti
 

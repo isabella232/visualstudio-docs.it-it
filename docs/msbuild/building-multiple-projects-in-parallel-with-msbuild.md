@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee3cace6940b4fe402595cfba7b316a273c1d50
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a0f63ac8fa782dcb504b8bd00ad7e32ce96e1eab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593395"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917816"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Compilare più progetti in parallelo con MSBuild
 È possibile utilizzare MSBuild per compilare più progetti più velocemente eseguendoli in parallelo. Per eseguire compilazioni in parallelo, è possibile utilizzare le impostazioni seguenti in un computer multicore o con più processori:
@@ -43,7 +43,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>Parametro dell'attività BuildInParallel
-`BuildInParallel` è un parametro booleano facoltativo di un'attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando `BuildInParallel` è impostato su `true` (il valore predefinito è `false`), vengono generati più processi di lavoro per compilare contemporaneamente il maggior numero possibile di progetti. Affinché questo approccio funzioni, è necessario che l'opzione `-maxcpucount` sia impostata su un valore maggiore di 1 e che il sistema sia almeno di tipo dual-core o che disponga di due o più processori.
+`BuildInParallel` è un parametro booleano facoltativo di un'attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando `BuildInParallel` è impostato su `true` (il valore predefinito è `true`), vengono generati più processi di lavoro per compilare contemporaneamente il maggior numero possibile di progetti. Affinché questo approccio funzioni, è necessario che l'opzione `-maxcpucount` sia impostata su un valore maggiore di 1 e che il sistema sia almeno di tipo dual-core o che disponga di due o più processori.
 
 Di seguito è riportato un esempio, tratto da *microsoft.common.targets*, che descrive come impostare il parametro `BuildInParallel`.
 
