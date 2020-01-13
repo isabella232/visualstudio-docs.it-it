@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846353"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918634"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Procedure consigliate per lo sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
   Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure consigliate per lo sviluppo descritte in questo articolo.   In modo da garantire:
@@ -61,7 +61,7 @@ I clienti chiedono agli ISV di fornire istruzioni di supporto per i relativi com
 
 Per fornire le istruzioni di supporto per le applicazioni client di Office, ad esempio Word o Excel, verificare innanzitutto che i componenti aggiuntivi vengano eseguiti nella versione corrente di Office e quindi eseguire il commit per fornire gli aggiornamenti se il componente aggiuntivo si interrompe in una versione futura. Non è necessario testare i componenti aggiuntivi quando Microsoft rilascia una nuova compilazione o un aggiornamento a Office. Microsoft raramente modifica la piattaforma di estensibilità COM, VSTO e VBA in Office e queste modifiche saranno ben documentate.
 
->Importante: Microsoft gestisce un elenco dei componenti aggiuntivi supportati per i report di conformità e le informazioni di contatto ISV. Per ottenere l'elenco dei componenti aggiuntivi, vedere [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows).
+>Importante: Microsoft gestisce un elenco dei componenti aggiuntivi supportati per i report di conformità e le informazioni di contatto ISV. Per ottenere l'elenco dei componenti aggiuntivi, vedere [/ConfigMgr/desktop-Analytics/Ready-for-Windows](/configmgr/desktop-analytics/ready-for-windows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Usare Process Monitor per facilitare il debug di problemi di installazione o caricamento
 Se il componente aggiuntivo presenta problemi di compatibilità durante l'installazione o il caricamento, potrebbero essere correlati a problemi di accesso al file o al registro di sistema. Usare [Process Monitor](/sysinternals/downloads/procmon) o uno strumento di debug simile per registrare e confrontare il comportamento con un ambiente funzionante per identificare il problema.

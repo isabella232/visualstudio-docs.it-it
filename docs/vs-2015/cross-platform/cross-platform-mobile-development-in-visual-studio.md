@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 27f6ee12d7404c77e4994a4e89cf23c9b3cdef0f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1efc8ea7f40c3098e681cc80ac90789b629630a9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297898"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918286"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo di app per dispositivi mobili multipiattaforma in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "74297898"
 
 |**Altre informazioni**|
 |--------------------|
-|Scegliere se condividere il codice usando i progetti condivisi, i progetti della Libreria di classi portabile o entrambi.<br /><br /> [Condivisione del codice tra piattaforme diverse](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (blog di .NET Framework)<br /><br /> [Opzioni di condivisione del codice](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Opzioni di condivisione del codice con .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
+|Scegliere se condividere il codice usando i progetti condivisi, i progetti della Libreria di classi portabile o entrambi.<br /><br /> [Condivisione del codice tra piattaforme diverse](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (blog di .NET Framework)<br /><br /> [Opzioni di condivisione del codice](/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Opzioni di condivisione del codice con .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ### <a name="WindowsHTML"></a>Sviluppare per dispositivi Windows 10
  ![Dispositivi Windows](../cross-platform/media/windowsdevices.png "DispositiviWindows")
@@ -116,7 +116,7 @@ ms.locfileid: "74297898"
 |**Altre informazioni**|
 |--------------------|
 |[Installare Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Introduzione a Visual Studio Tools per Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
+|[Introduzione a Visual Studio Tools per Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
 |[Informazioni sull'emulatore di Visual Studio per Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ## <a name="CPP"></a>Compilare un'app per Android e Windows (C++)

@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301097"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918949"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestione delle eccezioni con il Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +150,7 @@ Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l�
   
 3. È possibile modificare questa impostazione per una determinata eccezione (selezionare l'eccezione, fare clic con il pulsante destro del mouse e selezionare/deselezionare **Continua se non gestita nel codice utente**) o per un'intera categoria di eccezioni (ad esempio, tutte le eccezioni Common Language Runtime).  
   
-   Ad esempio, le applicazioni Web ASP.NET gestiscono le eccezioni convertendole in un codice di stato HTTP 500 ([Gestione delle eccezioni nell'API ASP.NET](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling)), che potrebbe non aiutare a determinare l'origine dell'eccezione. Nell'esempio seguente, il codice utente effettua una chiamata a `String.Format()` che genera un’eccezione <xref:System.FormatException>. L'esecuzione si interrompe come segue:  
+   Ad esempio, le applicazioni Web ASP.NET gestiscono le eccezioni convertendole in un codice di stato HTTP 500 ([Gestione delle eccezioni nell'API ASP.NET](/aspnet/web-api/overview/error-handling/exception-handling)), che potrebbe non aiutare a determinare l'origine dell'eccezione. Nell'esempio seguente, il codice utente effettua una chiamata a `String.Format()` che genera un’eccezione <xref:System.FormatException>. L'esecuzione si interrompe come segue:  
   
    ![interruzioni sull'&#45;eccezione unhanlded utente](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
@@ -187,4 +187,4 @@ public class GenericException<T> : Exception
  [Procedura: utilizzare i controlli runtime nativi](../debugger/how-to-use-native-run-time-checks.md)   
  [Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
    informazioni sulle [eccezioni](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)  
- [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)
+ [Nozioni di base sul debugger](../debugger/debugger-basics.md)

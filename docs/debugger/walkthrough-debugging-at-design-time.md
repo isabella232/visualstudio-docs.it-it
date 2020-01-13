@@ -1,7 +1,7 @@
 ---
-title: Eseguire il debug in fase di progettazione | Microsoft Docs
-ms.custom: seodec18
-ms.date: 11/21/2018
+title: Esegui il debug in fase di progettazione | Microsoft Docs
+ms.custom: ''
+ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,26 +16,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: beb16ae52f880e31bd19a185d47b13c02026752f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901059"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916149"
 ---
-# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Eseguire il debug in fase di progettazione in Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Eseguire il debug in fase di progettazione inC#Visual C++Studio (,/CLI F#, Visual Basic,)
 
-Eseguire il debug di codice in fase di progettazione anziché durante un'app è in esecuzione, è possibile usare la **Immediate** finestra.
+Per eseguire il debug del codice in fase di progettazione anziché durante l'esecuzione di un'app, è possibile usare la finestra **controllo immediato** .
 
-Per eseguire il debug di codice XAML sottostante un'app dalla finestra di progettazione XAML, ad esempio il codice di associazione dati, è possibile usare **Debug** > **Connetti a processo**.
+Per eseguire il debug del codice XAML dietro un'app dalla finestra di progettazione XAML, ad esempio scenari dichiarativi data binding, è possibile usare **debug** > **Connetti a processo**.
 
-## <a name="use-the-immediate-window"></a>Utilizzare la finestra controllo immediata
+## <a name="use-the-immediate-window"></a>Utilizzare la finestra controllo immediato
 
-È possibile usare Visual Studio **Immediate** finestra per eseguire una funzione o subroutine senza eseguire l'app. Se la funzione o subroutine contiene un punto di interruzione, Visual Studio si interromperà nel punto di interruzione. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Questa funzionalità è detta *debug in fase di progettazione*.
+È possibile usare la finestra **controllo immediato** di Visual Studio per eseguire una funzione o una subroutine senza eseguire l'app. Se la funzione o subroutine contiene un punto di interruzione, Visual Studio si interrompe in corrispondenza del punto di interruzione. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Questa funzionalità è denominata *debug in fase di progettazione*.
 
-Nell'esempio seguente è in Visual Basic. È anche possibile usare la **controllo immediato** in fase di progettazione nella finestra C#, F#, e C++ app.
+Nell'esempio seguente viene Visual Basic. È anche possibile usare la finestra **controllo immediato** in fase di C#progettazione F#nelle app C++, e/cli.
 
-1. Incollare il codice seguente in un'app console di Visual Basic vuota:
+1. Incollare il codice seguente in un'app console Visual Basic vuota:
 
    ```vb
    Module Module1
@@ -57,53 +57,55 @@ Nell'esempio seguente è in Visual Basic. È anche possibile usare la **controll
    End Module
    ```
 
-1. Impostare un punto di interruzione sulla riga **funzione End**.
+1. Impostare un punto di interruzione nella **funzione di fine**riga.
 
-1. Aprire il **controllo immediato** finestra selezionando **Debug** > **Windows** > **immediato**. Tipo di `?MyFunction` nella finestra e quindi premere **invio**.
+1. Aprire la finestra di **controllo immediato** selezionando **Debug** > **Windows** > **immediate**. Digitare `?MyFunction` nella finestra, quindi premere **invio**.
 
-   Il punto di interruzione viene raggiunto e il valore della **MyFunction** nel **variabili locali** finestra è **1**. È possibile esaminare lo stack di chiamate e altre finestre di debug mentre l'app è in modalità di interruzione.
+   Il punto di interruzione viene raggiunto e il valore di **funzione** nella finestra **variabili locali** è **1**. È possibile esaminare lo stack di chiamate e altre finestre di debug mentre l'app è in modalità di interruzioni.
 
-1. Selezionare **continuazione** sulla barra degli strumenti di Visual Studio. L'app termina, e **1** viene restituito nel **immediato** finestra. Assicurarsi che si è ancora in modalità progettazione.
+1. Selezionare **continua** sulla barra degli strumenti di Visual Studio. L'app termina e viene restituito **1** nella finestra di **controllo immediato** . Assicurarsi di essere ancora in modalità progettazione.
 
-1. Tipo di `?MyFunction` nella **controllo immediato** finestra nuovamente, quindi premere **invio**. Il punto di interruzione viene raggiunto e il valore della **MyFunction** nel **variabili locali** finestra è **2**.
+1. Digitare di nuovo `?MyFunction` nella finestra di **controllo immediato** e premere **invio**. Il punto di interruzione viene raggiunto e il valore di **funzione** nella finestra **variabili locali** è **2**.
 
-1. Senza selezionare **continuazione**, digitare `?MySub()` nel **immediato** finestra e quindi premere **invio**. Il punto di interruzione viene raggiunto e il valore della **MyFunction** nel **variabili locali** finestra è **3**. È possibile esaminare lo stato dell'app mentre l'app è in modalità di interruzione.
+1. Senza selezionare **continua**, digitare `?MySub()` nella finestra di **controllo immediato** , quindi premere **invio**. Il punto di interruzione viene raggiunto e il valore di **funzione** nella finestra **variabili locali** è **3**. È possibile esaminare lo stato dell'app mentre l'app è in modalità di interruzioni.
 
-1. Selezionare **continuare**. Il punto di interruzione viene nuovamente hit testing e il valore di **MyFunction** nel **variabili locali** finestra è ora **2**. Il **controllo immediato** finestra restituisce **espressione è stata valutata e non ha alcun valore**.
+1. Selezionare **continuare**. Il punto di interruzione viene nuovamente raggiunto e il valore di **funzione** nella finestra **variabili locali** è ora **2**. La finestra **controllo immediato** restituisce l' **espressione è stata valutata e non ha alcun valore**.
 
-1. Selezionare **continuazione** nuovamente. L'app termina, e **2** viene restituito nel **immediato** finestra. Assicurarsi che sono ancora in modalità progettazione.
+1. Selezionare di nuovo **continua** . L'app termina e **2** viene restituita nella finestra di **controllo immediato** . Assicurarsi di essere ancora in modalità progettazione.
 
-1. Per cancellare il contenuto del **controllo immediato** finestra, pulsante destro del mouse nella finestra e selezionare **Clear All**.
+1. Per cancellare il contenuto della finestra di **controllo immediato** , fare clic con il pulsante destro del mouse nella finestra e scegliere **Cancella tutto**.
 
-## <a name="attach-to-an-app-from-the-xaml-designer"></a>Collega a un'app dalla finestra di progettazione XAML
+## <a name="debug-a-custom-xaml-control-at-design-time-by-attaching-to-xaml-designer"></a>Eseguire il debug di un controllo XAML personalizzato in fase di progettazione tramite la connessione alla finestra di progettazione XAML
 
-In alcuni scenari di associazione dichiarativa dei dati, consente di eseguire il debug di code-behind nella finestra di progettazione XAML.
+1. Aprire la soluzione o il progetto in Visual Studio.
 
-1. Nel progetto di Visual Studio, aggiungere una nuova pagina XAML, ad esempio *temp.xaml*. Lasciare vuota la nuova pagina XAML.
+1. Compilare la soluzione o il progetto.
 
-1. Compilare la soluzione.
+1. Aprire la pagina XAML contenente il controllo personalizzato di cui si desidera eseguire il debug.
 
-1. Aprire *temp.xaml*, che carica la finestra di progettazione, XAML *XDesProc.exe*, o *UwpSurface.exe* in un'app UWP.
+   Per i progetti UWP destinati a Windows Build 16299 o versione successiva, questo passaggio avvierà il processo *UwpSurface. exe* . Per le versioni WPF o UWP precedenti a Windows Build 16299, questo passaggio avvierà il processo *XDesProc. exe* .
 
-1. Aprire una nuova istanza di Visual Studio. Nella nuova istanza, selezionare **Debug** > **Connetti a processo**.
+1. Aprire una seconda istanza di Visual Studio. Non aprire una soluzione o un progetto nella seconda istanza.
 
-1. Nel **Connetti a processo** finestra di dialogo, seleziona la finestra di progettazione processo dalle **processi disponibili** elenco.
+1. Nella seconda istanza di Visual Studio aprire il menu **debug** e scegliere **Connetti a processo...** .
 
-   Per la piattaforma UWP progetti destinati a Windows build 16299 o versione successiva, il processo di progettazione *UwpSurface.exe*. Per WPF o UWP le versioni precedenti a 16299, è il processo di progettazione *XDesProc.exe*.
+1. A seconda del tipo di progetto (vedere passaggi precedenti), selezionare il processo *UwpSurface. exe* o *XDesProc. exe* dall'elenco dei processi disponibili.
 
-1. Assicurarsi che il **collegare** campo è impostato per il tipo di codice corretto per la versione di .NET, ad esempio **Managed Code (CoreCLR)**.
+1. Nel campo **Connetti a** della finestra di dialogo **Connetti a processo** scegliere il tipo di codice corretto per il controllo personalizzato di cui si vuole eseguire il debug.
 
-1. Selezionare **collegare**.
+   Se il controllo personalizzato è stato scritto in un linguaggio .NET, scegliere il tipo di codice .NET appropriato, ad esempio **Managed (CoreCLR)** . Se il controllo personalizzato è stato scritto in C++, scegliere **nativo**.
 
-1. Durante la connessione al processo, passare a altra istanza di Visual Studio e impostare i punti di interruzione in cui si desidera eseguire il debug di code-behind l'app.
+1. Per aggiungere la seconda istanza di Visual Studio, fare clic sul pulsante **Connetti** .
 
-   Ad esempio, è possibile impostare un punto di interruzione nel codice del convertitore di tipo per il seguente XAML, che associa un elemento TextBlock in fase di progettazione.
+1. Nella seconda istanza di Visual Studio aprire i file di codice associati al controllo personalizzato di cui si vuole eseguire il debug. Assicurarsi di aprire solo i file, non l'intera soluzione o progetto.
 
-    ```xaml
-    <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
-    ```
+1. Inserire i punti di interruzione necessari nei file aperti in precedenza.
 
-   Quando la pagina viene caricata, viene raggiunto il punto di interruzione.
+1. Nella prima istanza di Visual Studio, chiudere la pagina XAML contenente il controllo personalizzato di cui si vuole eseguire il debug (la stessa pagina aperta nei passaggi precedenti).
+
+1. Nella prima istanza di Visual Studio aprire la pagina XAML chiusa nel passaggio precedente. Il debugger verrà arrestato in corrispondenza del primo punto di interruzione impostato nella seconda istanza di Visual Studio.
+
+1. Eseguire il debug del codice nella seconda istanza di Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d4e45ade24ce792999d1f9b0f52d9c82703fc5a0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f8ec0706530cd61653d44533654cf453d25eb42e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849876"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919068"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ In questa sezione si [analizza la qualità del codice gestito](../code-quality/a
 
  [Analisi della qualità dei driver tramite gli strumenti di analisi del codice](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) L'analisi del codice per i driver è uno strumento di verifica statica in fase di compilazione che rileva gli C++ errori di codifica di base in C e programmi e include un modulo specializzato progettato per rilevare gli errori in (principalmente) codice driver in modalità kernel. Static Driver Verifier (SDV) è uno strumento di verifica statica che analizza sistematicamente il codice sorgente dei driver in modalità kernel Windows. SDV stabilisce se il driver interagisce correttamente con il kernel del sistema operativo Windows.
 
- [Avvisi di analisi del codice per i driver](https://msdn.microsoft.com/library/windows/hardware/ff550572(v=VS.85).aspx) Vengono descritti gli avvisi segnalati dall'analisi del codice per i driver quando viene rilevato un possibile errore nel codice del driver.
+ [Avvisi di analisi del codice per i driver](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings) Vengono descritti gli avvisi segnalati dall'analisi del codice per i driver quando viene rilevato un possibile errore nel codice del driver.
 
 ## <a name="related-tasks"></a>Attività correlate
  [Misurazione della complessità e della gestibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Inserire qui la descrizione.

@@ -14,22 +14,22 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 86d41a2717eb3ef7bd49f8d34b85198a55e5101c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ed433612498a6b7d4b87291311d7fd6efcb0974
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158643"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918381"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011: Funzione CompareTo dispendiosa
+# <a name="da0011-expensive-compareto"></a>DA0011: Funzione compareTo dispendiosa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio, vedere [DA0011 funzione: CompareTo dispendiosa](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto).  
+Per la documentazione più recente su Visual Studio, vedere [DA0011: CompareTo costoso](/visualstudio/profiling/da0011-expensive-compareto).  
   
 |||  
 |-|-|  
 |ID regola|DA0011|  
-|Category|Uso di .NET Framework|  
+|Categoria|Uso di .NET Framework|  
 |Metodi di profilatura|Campionamento<br /><br /> Memoria .NET|  
 |Messaggio|Le funzioni CompareTo dovrebbero essere semplici e non allocare memoria. Se possibile, ridurre la complessità della funzione CompareTo.|  
 |Tipo regola|Avviso|  

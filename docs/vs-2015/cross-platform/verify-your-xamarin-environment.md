@@ -6,12 +6,12 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 134ed47d26fb7afb50bb50ac18418b436a563eb6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 98925402b91bea62e10b47312e7834ed92a1a178
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297585"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918747"
 ---
 # <a name="verify-your-xamarin-environment"></a>Verificare l'ambiente Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,16 +50,16 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
     - Selezionare l'emulatore appropriato in base al sistema Android di destinazione. Se è disponibile un dispositivo di sviluppo Android collegato al computer, sarà incluso nell'elenco insieme agli emulatori:  
   
-        - Windows 8 e versioni successive: selezionare una destinazione **VS Emulator** dall'elenco a discesa di debug di Visual Studio, come illustrato di seguito, e avviare il debugger premendo **F5**. Per altre informazioni, vedere l' [introduzione a Visual Studio Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (blog di Visual Studio ALM). In caso di problemi di funzionamento dell'emulatore, vedere [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). È anche possibile creare nuovi profili di dispositivo per l'emulatore selezionando **Strumenti > Visual Studio Emulator for Android**.  
+        - Windows 8 e versioni successive: selezionare una destinazione **VS Emulator** dall'elenco a discesa di debug di Visual Studio, come illustrato di seguito, e avviare il debugger premendo **F5**. Per altre informazioni, vedere l' [introduzione a Visual Studio Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (blog di Visual Studio ALM). In caso di problemi di funzionamento dell'emulatore, vedere [Risoluzione dei problemi di Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). È anche possibile creare nuovi profili di dispositivo per l'emulatore selezionando **Strumenti > Visual Studio Emulator for Android**.  
   
              ![Selezione dell'emulatore di Visual Studio per Android come destinazione di debug](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Novell verifica 3")  
   
              Nota: se non viene visualizzata l'opzione di menu **Strumenti > Visual Studio Emulator for Android**, è possibile che l'emulatore stesso non sia installato. Passare a **Pannello di controllo > Programmi e funzionalità**, selezionare **Microsoft Visual Studio**, quindi fare clic su **Cambia** per eseguire nuovamente il programma di installazione. Fare clic su **Modifica** nel programma di installazione, selezionare la casella **Sviluppo di app per dispositivi mobili multipiattaforma > Microsoft Visual Studio Emulator for Android**, quindi fare clic su **Aggiorna**.  
   
-        - Per Windows 7 e versioni precedenti: selezionare invece Xamarin Player per Android nell'elenco a discesa e premere F5 per eseguire. Per informazioni dettagliate sul Xamarin Player, il relativo gestore dei dispositivi e suggerimenti per la risoluzione dei problemi, leggere [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
+        - Per Windows 7 e versioni precedenti: selezionare invece Xamarin Player per Android nell'elenco a discesa e premere F5 per eseguire. Per informazioni dettagliate sul Xamarin Player, il relativo gestore dei dispositivi e suggerimenti per la risoluzione dei problemi, leggere [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
   
 > [!NOTE]
-> In Visual Studio è possibile che sia presente il pulsante Android Emulator Manager (AVD) sulla barra degli strumenti (illustrato di seguito), che consente di aprire il gestore dei dispositivi usato specificatamente per la configurazione dell'emulatore Android di Google.  Ciò non ha alcun impatto su Visual Studio Emulator for Android o Xamarin Player, perché per ognuno esiste un gestore dei dispositivi specifico per la configurazione dei profili.  Per altri dettagli, vedere l' [introduzione a Visual Studio Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (blog di Visual Studio ALM) e [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
+> In Visual Studio è possibile che sia presente il pulsante Android Emulator Manager (AVD) sulla barra degli strumenti (illustrato di seguito), che consente di aprire il gestore dei dispositivi usato specificatamente per la configurazione dell'emulatore Android di Google.  Ciò non ha alcun impatto su Visual Studio Emulator for Android o Xamarin Player, perché per ognuno esiste un gestore dei dispositivi specifico per la configurazione dei profili.  Per altri dettagli, vedere l' [introduzione a Visual Studio Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (blog di Visual Studio ALM) e [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
 > ![CrossPlat Xamarin Verify 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin Verify 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  
@@ -78,7 +78,7 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
 ## <a name="ios"></a>iOS  
   
-1. Assicurarsi che il Mac sia disponibile in rete e associato a Visual Studio, come descritto nella pagina relativa alla [connessione al Mac](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com).  
+1. Assicurarsi che il Mac sia disponibile in rete e associato a Visual Studio, come descritto nella pagina relativa alla [connessione al Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com).  
   
 2. Convalidare la finestra di progettazione dello storyboard: nel progetto iOS in Esplora soluzioni aprire il file **Main.storyboard** . In questo caso, Visual Studio ospita la finestra di progettazione, che è in esecuzione in remoto sul Mac.  
   
@@ -94,7 +94,7 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
          ![Selezione di una destinazione di debug iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Novell verifica 6")  
   
-    4. Se si verificano problemi di connessione al Mac, leggere la pagina dedicata alla [risoluzione dei problemi di connessione](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting) (xamarin.com).  
+    4. Se si verificano problemi di connessione al Mac, leggere la pagina dedicata alla [risoluzione dei problemi di connessione](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting) (xamarin.com).  
   
     5. Se viene visualizzato un errore che segnala che non è disponibile alcun profilo di provisioning installato corrispondente alle chiavi di firma iOS installate, eseguire queste operazioni:  
   

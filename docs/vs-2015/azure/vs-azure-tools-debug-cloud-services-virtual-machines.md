@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ac1f47d3daabf800a308d73727f750f971ace4e6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850402"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919158"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debug di un servizio cloud o di una macchina virtuale di Azure in Visual Studio
 
@@ -50,7 +50,7 @@ Per eseguire il debug di un servizio cloud da un computer remoto, è necessario 
 Se si abilita il debug remoto per un servizio cloud, esso non produce una riduzione delle prestazioni o costi aggiuntivi. Non usare il debug remoto in un servizio di produzione, poiché i client che usano il servizio potrebbero essere compromessi.
 
 > [!NOTE]
-> Quando si pubblica un servizio cloud da Visual Studio, è possibile abilitare **IntelliTrace** per qualsiasi ruolo del servizio destinato a .NET Framework 4 o .NET Framework 4.5. Tramite **IntelliTrace**è possibile esaminare gli eventi verificatisi in un'istanza del ruolo in passato e riprodurre il contesto da quel momento. Vedere [Debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019) e [Uso di IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
+> Quando si pubblica un servizio cloud da Visual Studio, è possibile abilitare **IntelliTrace** per qualsiasi ruolo del servizio destinato a .NET Framework 4 o .NET Framework 4.5. Tramite **IntelliTrace**è possibile esaminare gli eventi verificatisi in un'istanza del ruolo in passato e riprodurre il contesto da quel momento. Vedere [Debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md) e [Uso di IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Per abilitare il debug remoto per un servizio cloud
 
@@ -150,7 +150,7 @@ I progetti ASP.NET di Visual Studio offrono un'opzione per creare una macchina v
     > [!NOTE]
     > Se non è ancora stato eseguito l'accesso, verrà chiesto di accedere al proprio account Azure.
 
-3. Selezionare le varie impostazioni per la macchina virtuale e quindi scegliere **OK**. Per altre informazioni, vedere [Macchine virtuali](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN) .
+3. Selezionare le varie impostazioni per la macchina virtuale e quindi scegliere **OK**. Per altre informazioni, vedere [Macchine virtuali](/previous-versions/azure/jj156003(v=azure.100)) .
 
     Il nome immesso come Nome DNS sarà il nome della macchina virtuale.
 
@@ -188,6 +188,6 @@ I progetti ASP.NET di Visual Studio offrono un'opzione per creare una macchina v
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Usare **IntelliTrace** per raccogliere un registro degli eventi e delle chiamate da un server di rilascio. Vedere [Debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
+* Usare **IntelliTrace** per raccogliere un registro degli eventi e delle chiamate da un server di rilascio. Vedere [Debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 * Usare **Diagnostica di Azure** per registrare informazioni dettagliate dal codice eseguito all'interno dei ruoli, sia che essi siano eseguiti nell'ambiente di sviluppo o in Azure. Vedere [Raccogliere dati di registrazione usando Diagnostica di Azure](https://msdn.microsoft.com/library/gg433048.aspx).

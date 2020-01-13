@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
-ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
+ms.openlocfilehash: 6f814aabc4a6de4806fd419f16599758799c7538
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955049"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919125"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Voci del registro di sistema per i componenti aggiuntivi VSTO
   È necessario creare un set specifico di voci del Registro di sistema quando si distribuiscono componenti aggiuntivi VSTO creati con Visual Studio. Queste voci del Registro di sistema forniscono informazioni che consentono all'applicazione di Microsoft Office di individuare e caricare il componente aggiuntivo VSTO.
@@ -62,7 +62,7 @@ ms.locfileid: "74955049"
 >
 >Se il programma di installazione è destinato all'utente corrente, non è necessario installarlo in WOW6432Node perché il percorso di \SOFTWARE HKEY_CURRENT_USER è condiviso.
 >
->Per ulteriori informazioni, vedere la pagina relativa ai [dati delle applicazioni a 32 bit e a 64 bit nel registro di sistema.](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
+>Per ulteriori informazioni, vedere la pagina relativa ai [dati delle applicazioni a 32 bit e a 64 bit nel registro di sistema.](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 
  Nella tabella seguente sono elencate le voci presenti in questa chiave del Registro di sistema.
 
