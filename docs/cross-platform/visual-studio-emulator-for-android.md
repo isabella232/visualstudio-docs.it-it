@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: d7bda9882a8f46f3b32c658db952a2eaf73d3fb7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777715"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916477"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulatore di Visual Studio per Android
 
@@ -25,21 +25,21 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
 > Nella maggior parte degli scenari è consigliabile usare l'emulatore Android di Google anziché Visual Studio Emulator for Android:
 > - L'emulatore di Visual Studio per Android non è supportato dopo Visual Studio 2015.
 > - Le immagini dell'emulatore successive alla versione 6.0 di Android non sono disponibili per Visual Studio Emulator for Android.
-> - L'emulatore Android di Google ora supporta [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
+> - L'emulatore Android di Google ora supporta [Hyper-V](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
 > - Strumenti di Visual Studio per Apache Cordova funziona con l'emulatore Android di Google. Per altre informazioni, vedere [Eseguire l'app Apache Cordova in Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator). Si noti che non è più necessario disabilitare Hyper-V, come illustrato in questo articolo.
 >
-> Per altre informazioni sulla configurazione e sull'uso dell'emulatore Android di Google, vedere [Configurazione dell'emulatore Android](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
+> Per altre informazioni sulla configurazione e sull'uso dell'emulatore Android di Google, vedere [Configurazione dell'emulatore Android](/xamarin/android/get-started/installation/android-emulator/).
 
  Emulatore di Visual Studio per Android è progettato per fornire prestazioni paragonabili a un dispositivo reale. Prima di pubblicare l'applicazione, tuttavia, è consigliabile testare l'applicazione in un dispositivo fisico.
 
  È possibile testare l'applicazione in un profilo univoco del dispositivo per ognuna delle piattaforme Android, risoluzioni dello schermo e altre proprietà di hardware supportate dall'emulatore di Visual Studio per Android.
 
 ## <a name="Installing"></a> Installazione e disinstallazione
- Installazione di
+ Installazione del
 
  Visual Studio l'emulatore di Android è un componente di strumenti multipiattaforma disponibili in Visual Studio e verrà installato durante un'installazione personalizzata di Visual Studio quando si seleziona lo sviluppo di piattaforme mobili, quindi strumenti comuni e Software Development Kit e quindi emulatore di Visual Studio per Android.
 
- Disinstallazione
+ Disinstallazione di
 
  È possibile installare l'emulatore di Visual Studio per Android usando la funzionalità Installazione applicazioni del Pannello di controllo.
 
@@ -105,4 +105,4 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
 - Segnalare un problema usando lo strumento Invia smile in Visual Studio o in Gestione emulatori.
 
 ## <a name="see-also"></a>Vedere anche
- [Requisiti di sistema per Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) [Risolvere i problemi di Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Requisiti di sistema per Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) [risoluzione dei problemi di Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

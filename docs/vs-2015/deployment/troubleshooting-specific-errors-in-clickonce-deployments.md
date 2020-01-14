@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a27a2fc17f9d3450a20596d53695070bd84f0f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 81bb9bcecf37d2ed3fca29a4edc57738732de1a5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850606"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917284"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Risoluzione di errori specifici nelle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ In questo argomento vengono elencati gli errori comuni seguenti che possono veri
  Se si sta pubblicando con un URL, verificare che nel computer di destinazione sia abilitato Estensioni del server di FrontPage.  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Messaggio di errore: Impossibile creare il sito Web '\<sito >'. I componenti per la comunicazione con Estensioni del server di FrontPage non sono installati.  
- Verificare che il Microsoft Visual Studio Web Authoring Component sia installato nel computer da cui si esegue la pubblicazione. Per gli utenti Express, questo componente non è installato per impostazione predefinita. Per altre informazioni, vedere [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/kb/945358/en-us).  
+ Verificare che il Microsoft Visual Studio Web Authoring Component sia installato nel computer da cui si esegue la pubblicazione. Per gli utenti Express, questo componente non è installato per impostazione predefinita.  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Messaggio di errore: Impossibile trovare il file ' Microsoft. Windows. Common-Controls, Version = 6.0.0.0, culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = Win32'  
  Questo messaggio di errore viene visualizzato quando si tenta di pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati. Per risolvere questo problema, vedere [procedura: pubblicare un'applicazione WPF con stili di visualizzazione abilitati](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  

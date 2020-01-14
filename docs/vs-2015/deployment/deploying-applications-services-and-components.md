@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42e3a4afec71b90a087ac927f5cbbbc0b181fadd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289813"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917547"
 ---
 # <a name="deploying-applications-services-and-components"></a>Distribuzione di applicazioni, servizi e componenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,14 +36,14 @@ Mediante la distribuzione, un'applicazione, un servizio o un componente viene di
   
  Nella tabella seguente sono riportate descrizioni di diversi scenari di distribuzione e collegamenti a informazioni aggiuntive sulla corretta attuazione di questi scenari.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
   
 |Scenario di distribuzione|Contenuto di supporto|  
 |-------------------------|------------------------|  
 |**Pubblica nel cloud:** È possibile rendere disponibili applicazioni, servizi e dati da qualsiasi luogo usando Visual Studio per distribuirli in Microsoft Azure.|[Pubblicazione di applicazioni in Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
 |**Pubblicare un'app di Windows Store:** Puoi creare, inviare e vendere con facilità le tue app da Windows Store ai clienti di tutto il mondo.|[Creazione di pacchetti, distribuzione e query delle app di Windows Store](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**Pubblicare un'app Windows Phone:** È possibile inviare una nuova app o un aggiornamento a un'app esistente per la certificazione in Windows Phone Dev Center.|[Pubblicare un'app Windows Phone](https://developer.microsoft.com/)|  
-|**Distribuire un'applicazione o un servizio ASP.NET:** È possibile distribuire applicazioni e servizi ASP.NET in diversi modi.|[Distribuzione di servizi e applicazioni Web ASP.NET](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**Distribuire un'applicazione o un servizio ASP.NET:** È possibile distribuire applicazioni e servizi ASP.NET in diversi modi.|[Distribuzione di servizi e applicazioni Web ASP.NET](/aspnet/mvc/overview/deployment/)|  
 |**Distribuire un'applicazione o un servizio LightSwitch:** Dopo aver creato applicazioni e servizi OData utilizzando LightSwitch, è possibile distribuirli in un server Web o in Microsoft Azure.|[Deploying LightSwitch Applications](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) (Distribuzione di applicazioni LightSwitch)|  
 |**Pubblicare un'app per SharePoint:** È possibile pubblicare un'app per SharePoint in Office Store o in un catalogo di app per un'organizzazione interna.|[Pubblicare un'app per SharePoint tramite Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
 |**Pubblicare un'app per Office:** È possibile pubblicare un'app per Office in Office Store o in un catalogo di app per un'organizzazione interna.|[Pubblicazione dell'app per Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  

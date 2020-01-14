@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5456ef4935feb2ad6f08e2a0b7ff24ad58089e1f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 90da4845ca5edcf68a977ea79a73e06fa4c4455b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297870"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917664"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,6 +29,6 @@ Imposta il server Web che i progetti Web useranno per lo sviluppo all'interno di
 > Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questa pagina della Guida è stata creata tenendo presenti le **Impostazioni Web**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="settings"></a>Impostazioni
- **Usare la versione a 64 bit di IIS Express per i siti Web e i progetti** Selezionare questa opzione per utilizzare IIS Express anziché l'Server di sviluppo Visual Studio. Per altre informazioni, vedere [Introducing IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express) (Presentazione di IIS Express) e [IIS Express Overview](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview) (Panoramica di IIS Express). L'opzione è disabilitata per impostazione predefinita.
+ **Usare la versione a 64 bit di IIS Express per i siti Web e i progetti** Selezionare questa opzione per utilizzare IIS Express anziché l'Server di sviluppo Visual Studio. Per altre informazioni, vedere [Introducing IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express) (Presentazione di IIS Express) e [IIS Express Overview](/iis/extensions/introduction-to-iis-express/iis-express-overview) (Panoramica di IIS Express). L'opzione è disabilitata per impostazione predefinita.
 
  **Avvisa prima di eseguire applicazioni Web quando sono presenti errori nell'elenco** errori Se questa casella è selezionata, verrà visualizzato un avviso se si tenta di eseguire l'applicazione Web quando questa non viene compilata senza errori.

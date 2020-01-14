@@ -2,7 +2,7 @@
 title: Visual Studio Tools for AI
 titleSuffix: ''
 description: Panoramica di Visual Studio Tools for AI
-keywords: ia, visual studio
+keywords: ai, visual studio
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777455"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915964"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools per AI
 
 Visual Studio Tools for AI è un'estensione per compilare, testare e distribuire soluzioni per l'apprendimento avanzato o di intelligenza artificiale. Si integra perfettamente con Azure Machine Learning per offrire funzionalità di sperimentazione avanzate, ad esempio l'invio di processi di preparazione dei dati e training di modelli in modo trasparente a destinazioni di calcolo diverse. Supporta inoltre metriche personalizzate e la registrazione della cronologia di esecuzione, consentendo la riproducibilità e il controllo di operazioni di data science. Sono disponibili funzionalità per la collaborazione in ambiente aziendale, che consentono di lavorare in modo sicuro a un progetto con altri utenti.
 
-È possibile iniziare sin da oggi a lavorare con l'apprendimento avanzato con [Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org) o altri framework per l'apprendimento avanzato.
+È possibile iniziare sin da oggi a lavorare con l'apprendimento avanzato con [Microsoft Cognitive Toolkit (CNTK)](/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org) o altri framework per l'apprendimento avanzato.
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Sviluppare, eseguire il debug e distribuire modelli di Deep Learning e soluzioni di intelligenza artificiale
 Usare le funzionalità di produttività di Visual Studio per promuovere sin da subito l'innovazione nel settore dell'intelligenza artificiale. Usare le funzionalità predefinite dell'editor del codice come evidenziazione della sintassi, IntelliSense e formattazione automatica. È possibile testare in modo interattivo l'applicazione completa per l'apprendimento avanzato nell'ambiente locale usando il debug passo-passo per variabili e modelli locali.

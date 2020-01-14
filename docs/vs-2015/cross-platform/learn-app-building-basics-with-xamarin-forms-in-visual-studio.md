@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: bc7e46af7e29ef554b80bd9244910e0c67d373af
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 09da3bd59163cbef8b33b1d5ece732330e32eac7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299765"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918923"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Nozioni di base sulla compilazione di app con Xamarin.Forms in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Dopo aver eseguito i passaggi [Setup and install](../cross-platform/setup-and-in
 
     - Aggiornare il campo **Versione** all' **Ultima versione stabile** disponibile.
 
-    - Fare clic su **Update**.
+    - Fare clic su **Aggiorna**.
 
          ![Aggiornamento del pacchetto NuGet Novell. Forms](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Novell FormsGuide 4")
 
@@ -94,7 +94,7 @@ Dopo aver eseguito i passaggi [Setup and install](../cross-platform/setup-and-in
 6. Compilare la soluzione e verificare che non ci siano errori di compilazione.
 
 ## <a name="dataservice"></a> Scrivere un codice di servizio dati condiviso
- **WeatherApp (Portable)** è il progetto di destinazione del codice per la libreria di classi portabile (PCL) condiviso tra le piattaforme. La libreria di classi portabile (PCL) viene inclusa automaticamente nei pacchetti di app compilati dai progetti iOS, Android e Windows Phone.
+ **WeatherApp (portabile)** è il progetto di destinazione del codice per la libreria di classi portabile (PCL) condiviso tra le piattaforme. La libreria di classi portabile (PCL) viene inclusa automaticamente nei pacchetti di app compilati dai progetti iOS, Android e Windows Phone.
 
  Per eseguire questo esempio, è prima di tutto necessario iscriversi per una chiave API gratuita all'indirizzo [http://openweathermap.org/appid](https://openweathermap.org/appid).
 
@@ -290,7 +290,7 @@ Dopo aver eseguito i passaggi [Setup and install](../cross-platform/setup-and-in
 ## <a name="finish"></a> Terminare l'interfaccia utente con un aspetto nativo tra le piattaforme
  Xamarin.Forms esegue il rendering dei controlli dell'interfaccia utente nativi per ciascuna piattaforma, in modo da conferire un aspetto nativo all'app. Per maggiore chiarezza, completare l'interfaccia utente con un campo di input per il codice postale, quindi visualizzare i dati meteo restituiti dal servizio.
 
-1. Sostituire il contenuto di **WeatherPage.xaml** con il codice seguente. Ogni elemento viene denominato usando l'attributo **x:Name** come descritto in precedenza, in modo che si possa fare riferimento all'elemento dal codice. Xamarin.Forms fornisce anche diverse [opzioni di layout](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com). In questo caso, WeatherPage usa [StackLayout](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com).
+1. Sostituire il contenuto di **WeatherPage.xaml** con il codice seguente. Ogni elemento viene denominato usando l'attributo **x:Name** come descritto in precedenza, in modo che si possa fare riferimento all'elemento dal codice. Xamarin.Forms fornisce anche diverse [opzioni di layout](/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com). In questo caso, WeatherPage usa [StackLayout](/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com).
 
    ```xaml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -380,7 +380,7 @@ Dopo aver eseguito i passaggi [Setup and install](../cross-platform/setup-and-in
    </ContentPage>
    ```
 
-    Si noti l'uso del tag **OnPlatform** in Xamarin.Forms. Il tag**OnPlatform** seleziona un valore della proprietà specifico per la piattaforma corrente in cui è in esecuzione l'app (vedere la sezione relativa alla [sintassi XAML esterna](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com). In questo caso, viene usato per impostare un colore del testo diverso per i campi dati: bianco in Android e Windows Phone, nero in iOS. **OnPlatform** può essere usato per qualsiasi proprietà e tipo di dati per apportare modifiche specifiche per la piattaforma in qualsiasi punto del file XAML. Nel file code-behind è possibile usare [Device.OnPlatform API](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) per lo stesso scopo.
+    Si noti l'uso del tag **OnPlatform** in Xamarin.Forms. Il tag**OnPlatform** seleziona un valore della proprietà specifico per la piattaforma corrente in cui è in esecuzione l'app (vedere la sezione relativa alla [sintassi XAML esterna](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com). In questo caso, viene usato per impostare un colore del testo diverso per i campi dati: bianco in Android e Windows Phone, nero in iOS. **OnPlatform** può essere usato per qualsiasi proprietà e tipo di dati per apportare modifiche specifiche per la piattaforma in qualsiasi punto del file XAML. Nel file code-behind è possibile usare [Device.OnPlatform API](/xamarin/xamarin-forms/platform/device) per lo stesso scopo.
 
 2. In **WeatherPage.xaml.cs**sostituire il gestore eventi **GetWeatherBtn_Clicked** con il codice seguente. Questo codice verifica che sia presente un codice postale nel campo di immissione, recupera i dati da tale codice, imposta il contesto di associazione dell'intera schermata sull'istanza Weather risultante, quindi imposta il testo del pulsante su "Cerca di nuovo". Ogni etichetta nell'interfaccia utente viene associata a una proprietà della classe Weather, quindi, quando si imposta il contesto di associazione della schermata su un'istanza **Weather** , le etichette vengono aggiornate automaticamente.
 

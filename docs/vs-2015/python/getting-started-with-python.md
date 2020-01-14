@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 21e724e585f2a5bf0e1fe2a6b70f89c1bd5f5eec
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 960511fcfb83dfc6ac3c58a806d8a23f1ff61597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298192"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918770"
 ---
 # <a name="getting-started-with-python"></a>Introduzione a Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Per altre informazioni sul linguaggio, iniziare a usare [Python per principianti
 
 Per installare Python, visitare [https://www.python.org/download/](https://www.python.org/download/).
 
-## <a name="python-tools-for-visual-studio"></a>Python Tools per Visual Studio
+## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
 Il Python Tools for Visual Studio, che è possibile installare da [VisualStudio.com](https://www.visualstudio.com/explore/python-vs), fornisce le funzionalità seguenti:  
   
@@ -73,7 +73,7 @@ L'offerta principale per la creazione di un'interfaccia utente con Python è il 
   
 Azure SDK per Python, che supporta Windows, Mac e Linux, semplifica l'uso e la gestione dei servizi di Microsoft Azure. Per informazioni dettagliate, fare riferimento alle risorse seguenti: 
 
-- Per installare l'SDK, usare l'[indice dei pacchetti Python](https://pypi.python.org/pypi/azure) o consultare la pagina sull'[installazione di Python e dell'SDK](https://docs.microsoft.com/azure/python/python-sdk-azure-install) nella documentazione di Azure. 
+- Per installare l'SDK, usare l'[indice dei pacchetti Python](https://pypi.python.org/pypi/azure) o consultare la pagina sull'[installazione di Python e dell'SDK](/azure/python/python-sdk-azure-install) nella documentazione di Azure. 
 - Il [centro per sviluppatori Azure SDK per Python](https://azure.microsoft.com/develop/python/) offre moltissime guide dall'installazione alla documentazione con esercitazioni.  Seguono alcune delle principali caratteristiche:  
 - Guide pratiche:
   - [BLOB di archiviazione](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  

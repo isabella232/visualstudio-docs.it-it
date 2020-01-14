@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516436"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916741"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Guida introduttiva: usare Docker con un'app a singola pagina React in Visual Studio
 
 Con Visual Studio è possibile compilare, eseguire il debug ed eseguire app ASP.NET Core aggiunte a contenitori, incluse quelle con JavaScript sul lato cliente come le app a pagina singola React.js, e pubblicarle nel Registro Azure Container, in Docker Hub, in Servizio app di Azure o nel proprio registro contenitori. In questo articolo viene eseguita la pubblicazione nel Registro Azure Container (ACR).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -47,9 +47,9 @@ Per l'installazione di Docker, prima di tutto esaminare le informazioni in [Dock
 
    ![Screenshot del nuovo progetto React.js](media/container-tools-react/vs2017/new-react-project.png)
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi** > **Supporto Docker** per aggiungere un Dockerfile al progetto.
+1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **aggiungi** > **supporto Docker** per aggiungere un Dockerfile al progetto.
 
-   ![Aggiungere il supporto per Docker](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Aggiungere il supporto di Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. Selezionare il tipo di contenitore e fare clic su **OK**.
 ::: moniker-end
@@ -59,9 +59,9 @@ Per l'installazione di Docker, prima di tutto esaminare le informazioni in [Dock
 
    ![Screenshot del nuovo progetto React.js](media/container-tools-react/vs2019/new-react-project.png)
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi** > **Supporto Docker** per aggiungere un Dockerfile al progetto.
+1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **aggiungi** > **supporto Docker** per aggiungere un Dockerfile al progetto.
 
-   ![Aggiungere il supporto per Docker](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Aggiungere il supporto di Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. Selezionare il tipo di contenitore.
 ::: moniker-end
@@ -222,12 +222,12 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 1. Scegliere **Crea nuovo Registro Azure Container** e fare clic su **Pubblica**.
 1. Inserire i valori desiderati in **Creare un nuovo Registro Azure Container**.
 
-    | Impostazioni      | Valore consigliato  | Descrizione                                |
+    | Impostazione di      | Valore consigliato  | Descrizione                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **Prefisso DNS** | Nome globalmente univoco | Nome che identifica in modo univoco il registro contenitori. |
     | **Sottoscrizione** | Scegliere la sottoscrizione | La sottoscrizione di Azure da usare. |
     | **[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome del gruppo di risorse in cui creare il registro contenitori. Per creare un nuovo gruppo di risorse scegliere **Nuovo**.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | Livello di servizio del registro contenitori  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Livello di servizio del registro contenitori  |
     | **Percorso del registro** | Un percorso vicino | Scegliere un Percorso in una [regione](https://azure.microsoft.com/regions/) nelle vicinanze o vicino ad altri servizi usati nel registro contenitori. |
 
     ![Finestra di dialogo Creare un'istanza di Registro Azure Container di Visual Studio][0]

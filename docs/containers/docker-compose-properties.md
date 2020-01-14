@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072729"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916924"
 ---
 # <a name="docker-compose-build-properties"></a>Proprietà di compilazione Docker Compose
 
-Oltre alle proprietà che controllano singoli progetti Docker, descritti in [strumenti contenitore proprietà di compilazione](container-msbuild-properties.md), è anche possibile personalizzare il modo in cui Visual Studio compila i progetti di Docker compose impostando le proprietà Docker compose che MSBuild USA per compilare la soluzione. È anche possibile controllare il modo in cui il debugger di Visual Studio esegue le app Docker Compose impostando le etichette dei file nei file di configurazione Docker Compose.
+Oltre alle proprietà che controllano singoli progetti Docker, descritti in [strumenti contenitore proprietà di compilazione](container-msbuild-properties.md), è anche possibile personalizzare il modo in cui Visual Studio compila i progetti di Docker compose impostando le proprietà Docker compose utilizzate da MSBuild per compilare la soluzione. È anche possibile controllare il modo in cui il debugger di Visual Studio esegue le app Docker Compose impostando le etichette dei file nei file di configurazione Docker Compose.
 
 ## <a name="how-to-set-the-msbuild-properties"></a>Come impostare le proprietà di MSBuild
 
@@ -29,20 +29,20 @@ Per impostare il valore di una proprietà, modificare il file di progetto. Per D
 
 È possibile aggiungere l'impostazione della proprietà a un elemento `PropertyGroup` esistente o, se non ne esiste uno, creare un nuovo elemento `PropertyGroup`.
 
-## <a name="docker-compose-msbuild-properties"></a>Proprietà di Docker Compose MSBuild
+## <a name="docker-compose-msbuild-properties"></a>Proprietà d MSBuild per Docker Compose
 
 Nella tabella seguente vengono illustrate le proprietà MSBuild disponibili per i progetti Docker Compose.
 
 | Nome della proprietà | Percorso | Descrizione | Valore predefinito  |
 |---------------|----------|-------------|----------------|
-|AdditionalComposeFiles|dcproj|Specifica i file di composizione aggiuntivi in un elenco delimitato da punti e virgola da inviare a Docker-compose. exe per tutti i comandi. Sono consentiti percorsi relativi dal file di progetto Docker-compose (dcproj).|-|
-|DockerComposeBaseFilePath|dcproj|Specifica la prima parte dei nomi file dei file Docker-compose, senza l'estensione *yml* . Esempio: <br>1. DockerComposeBaseFilePath = null/undefined: usare il percorso del file di base *Docker-compose*e i file verranno denominati *Docker-compose. yml* e *Docker-compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: i file verranno denominati *mydockercompose. yml* e *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: i file saranno di un livello superiore. |Docker-compose|
+|AdditionalComposeFilePaths|dcproj|Specifica i file di composizione aggiuntivi in un elenco delimitato da punti e virgola da inviare a Docker-compose. exe per tutti i comandi. Sono consentiti percorsi relativi dal file di progetto Docker-compose (dcproj).|-|
+|DockerComposeBaseFilePath|dcproj|Specifica la prima parte dei nomi file dei file Docker-compose, senza l'estensione *yml* . Ad esempio: <br>1. DockerComposeBaseFilePath = null/undefined: usare il percorso del file di base *Docker-compose*e i file verranno denominati *Docker-compose. yml* e *Docker-compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: i file verranno denominati *mydockercompose. yml* e *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: i file saranno di un livello superiore. |Docker-compose|
 |DockerComposeBuildArguments|dcproj|Specifica i parametri aggiuntivi da passare al comando `docker-compose build`. Ad esempio, `--parallel --pull`. |
 |DockerComposeDownArguments|dcproj|Specifica i parametri aggiuntivi da passare al comando `docker-compose down`. Ad esempio, `--timeout 500`.|-|  
 |DockerComposeProjectPath|csproj o vbproj|Percorso relativo del file del progetto Docker-compose (dcproj). Impostare questa proprietà quando si pubblica il progetto di servizio per trovare le impostazioni di compilazione dell'immagine associate archiviate nel file Docker-compose. yml.|-|
 |DockerComposeUpArguments|dcproj|Specifica i parametri aggiuntivi da passare al comando `docker-compose up`. Ad esempio, `--timeout 500`.|-|
-|DockerLaunchAction| dcproj | Specifica l'azione di avvio da eseguire in F5 o CTRL + F5.  I valori consentiti sono None, LaunchBrowser e LaunchWCFTestClient|Nessuno|
-|DockerLaunchBrowser| dcproj | Indica se avviare il browser. Viene ignorato se viene specificato DockerLaunchAction. | False |
+|DockerLaunchAction| dcproj | Specifica l'azione di avvio da eseguire in F5 o CTRL + F5.  I valori consentiti sono None, LaunchBrowser e LaunchWCFTestClient|nessuna|
+|DockerLaunchBrowser| dcproj | Indica se avviare il browser. Viene ignorato se viene specificato DockerLaunchAction. | Falso |
 |DockerServiceName| dcproj|Se vengono specificati DockerLaunchAction o DockerLaunchBrowser, DockerServiceName è il nome del servizio che deve essere avviato.  Usare questa proprietà per determinare il numero potenzialmente elevato di progetti a cui può fare riferimento un file Docker-compose.|-|
 |DockerServiceUrl| dcproj | URL da utilizzare all'avvio del browser.  I token di sostituzione validi sono "{ServiceIPAddress}", "{ServicePort}" e "{Scheme}".  Ad esempio: {Scheme}://{ServiceIPAddress}: {ServicePort}|-|
 |DockerTargetOS| dcproj | Sistema operativo di destinazione usato durante la compilazione dell'immagine docker.|-|
@@ -92,7 +92,7 @@ services:
 
 ## <a name="docker-compose-file-labels"></a>Etichette file Docker Compose
 
-È anche possibile eseguire l'override di determinate impostazioni inserendo un file denominato *Docker-compose. vs. debug. yml* (per la configurazione di **debug** ) o *Docker-compose. vs. Release. yml* (per la configurazione della **versione** ) nella stessa directory *del file Docker-compose. yml* .  In questo file è possibile specificare le impostazioni come segue:
+È anche possibile eseguire l'override di determinate impostazioni inserendo un file denominato *Docker-compose. vs. debug. yml* (per la configurazione di **debug** ) o *Docker-compose. vs. Release. yml* (per la configurazione della **versione** ) nella stessa directory del file *Docker-compose. yml* .  In questo file è possibile specificare le impostazioni come segue:
 
 ```yml
 services:
@@ -120,4 +120,4 @@ Per informazioni sulle proprietà di MSBuild in genere, vedere [proprietà di MS
 
 [Impostazioni di avvio degli strumenti contenitore](container-launch-settings.md)
 
-[Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[Proprietà di MSBuild riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md)

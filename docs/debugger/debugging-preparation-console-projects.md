@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738139"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916279"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparazione al debug: progetti consoleC#( C++,, Visual Basic F#,)
 
-Preparare il debug di un progetto console è simile alla preparazione per il debug di un progetto Windows, con alcune considerazioni aggiuntive, ad esempio l'impostazione degli argomenti della riga di comando e la modalità di sospensione dell'app per il debug. Per altre informazioni, vedere [Windows Forms Application](../debugger/debugging-preparation-windows-forms-applications.md), e [preparazione al debug:  Applicazioni Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). A causa delle similitudini esistenti tra tutte le applicazioni console, in questo argomento vengono trattati i seguenti tipi di progetto:
+Preparare il debug di un progetto console è simile alla preparazione per il debug di un progetto Windows, con alcune considerazioni aggiuntive, ad esempio l'impostazione degli argomenti della riga di comando e la modalità di sospensione dell'app per il debug. Per altre informazioni, vedere [Windows Forms Application](../debugger/debugging-preparation-windows-forms-applications.md), e [preparazione al debug:  Applicazioni Windows Forms (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). A causa delle similitudini esistenti tra tutte le applicazioni console, in questo argomento vengono trattati i seguenti tipi di progetto:
 
 - C#, Visual Basic e F# applicazione console
 
@@ -49,7 +49,7 @@ Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le s
 
 - Impostare un punto di interruzione nel codice e avviare l'applicazione.
 
-- Avviare l'applicazione con **F10** (**debug** > **Esegui istruzione**/routine) o **F11** (**debug** > **Esegui istruzione**), quindi esplorare il codice usando altre opzioni, ad esempio **Esegui fino a fare clic su**.
+- Avviare l'applicazione tramite **F10** (**debug** > Esegui **istruzione**/routine) o **F11** (**debug** > **Esegui istruzione**), quindi spostarsi nel codice utilizzando altre opzioni, ad esempio **Esegui fino a fare clic su**.
 
 - Nell'editor di codice fare clic con il pulsante destro del mouse su una riga e scegliere **Esegui fino al cursore**.
 

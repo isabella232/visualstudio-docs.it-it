@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f4c1ff547d9d550cbbc2e77435b159543fc16bf6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849948"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917090"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accesso a macchine virtuali di Azure da Esplora server
 
@@ -31,7 +31,7 @@ Se si dispone di macchine virtuali ospitate da Azure, è possibile accedervi in 
    | DNS Name |URL con l'indirizzo Internet della macchina virtuale. |
    | Ambiente |Per una macchina virtuale, il valore di questa proprietà è sempre Produzione. |
    | Name |Nome della macchina virtuale. |
-   | Dimensioni |Dimensioni della macchina virtuale corrispondenti alla quantità di memoria e spazio su disco disponibili. Per altre informazioni vedere [Dimensioni delle macchine virtuali](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
+   | Dimensioni |Dimensioni della macchina virtuale corrispondenti alla quantità di memoria e spazio su disco disponibili. Per altre informazioni vedere [Dimensioni delle macchine virtuali](/azure/cloud-services/cloud-services-sizes-specs). |
    | Status |I valori includono Avvio in corso, Avviato, Arresto, Arrestato e Recupero dello stato. Se viene visualizzato Recupero dello stato, lo stato corrente è sconosciuto. I valori di questa proprietà differiscono da quelli usati nel [portale di Azure](https://portal.azure.com/). |
    | ID sottoscrizione |ID sottoscrizione dell'account Azure. È possibile vedere queste informazioni nel [portale di Azure](https://portal.azure.com/) visualizzando le proprietà di una sottoscrizione. |
 2. Scegliere un nodo di endpoint e quindi visualizzare la finestra **Proprietà** .

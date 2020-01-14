@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: bda6d8e20064ab2197408db6b9a55a86325515e8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c3ea8c91c54586cf54b82566a4803b464e01750c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846731"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916486"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Installare lo sviluppo di app per dispositivi mobili multipiattaforma con C++
 
@@ -98,7 +98,7 @@ Se si decide di non installare una o più dipendenze di terze parti con il progr
 
 È possibile eseguire di nuovo l'app SDK Manager nella directory Android SDK per aggiornare l'SDK e installare strumenti facoltativi e livelli API aggiuntivi. L'installazione degli aggiornamenti potrebbe non riuscire se non si usa **Esegui come amministratore** per eseguire l'app SDK Manager. In caso di problemi durante la compilazione di un'app Android, in SDK Manager verificare la disponibilità di aggiornamenti per gli SDK installati.
 
-Per usare alcuni degli emulatori Android disponibili con il Android SDK, potrebbe essere necessario configurare l'accelerazione hardware. Per ulteriori informazioni, vedere [accelerazione hardware per le prestazioni dell'emulatore (Hyper-V & HAXM)](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+Per usare alcuni degli emulatori Android disponibili con il Android SDK, potrebbe essere necessario configurare l'accelerazione hardware. Per ulteriori informazioni, vedere [accelerazione hardware per le prestazioni dell'emulatore (Hyper-V & HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
 Nella maggior parte dei casi, Visual Studio è in grado di rilevare le configurazioni per il software di terze parti installato e mantiene i percorsi di installazione in variabili di ambiente interne. È possibile eseguire l'override dei percorsi predefiniti di questi strumenti di sviluppo multipiattaforma nell'IDE di Visual Studio.
 

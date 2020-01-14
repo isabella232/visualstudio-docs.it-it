@@ -15,23 +15,23 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7dec130e4a4704bea347f94ff57d354a4465ddd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604971"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917819"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Utilizzare solo API della versione di .NET Framework di destinazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente su Visual Studio, vedere [CA1903: usare solo l'API del Framework di destinazione](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
+Per la documentazione più recente su Visual Studio, vedere [CA1903: usare solo l'API del Framework di destinazione](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
 
 |||
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Category|Microsoft. portabilità|
+|Categoria|Microsoft. portabilità|
 |Modifica importante|Suddivisione: quando viene attivato in base alla firma di un membro o di un tipo visibile esternamente.<br /><br /> Senza interruzioni: quando viene attivato nel corpo di un metodo.|
 
 ## <a name="cause"></a>Causa
@@ -47,8 +47,8 @@ Per la documentazione più recente su Visual Studio, vedere [CA1903: usare solo 
 |Quando il Framework di destinazione è|Generato per gli utilizzi dei membri introdotti in|
 |.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
-|.NET Framework 3.5|.NET Framework 3.5 SP1|
-|.NET Framework 4|N/D|
+|.NET Framework 3.5|.NET Framework 3.5 SP1|
+|.NET Framework 4|N/D|
 
  Per modificare il Framework di destinazione di un progetto, vedere [targeting a Specific .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md).
 

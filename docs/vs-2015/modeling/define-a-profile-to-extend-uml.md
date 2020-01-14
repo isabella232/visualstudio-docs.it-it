@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850479"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918871"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definire un profilo per estendere UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,8 @@ ms.locfileid: "75850479"
 7. Compilare l'estensione di Visual Studio, compilando il progetto di estensione o comprimendo tutti i file, come spiegato nelle precedenti sezioni.
 
 ## <a name="Schema"></a>Struttura di un profilo
- Il file XSD per i profili UML è disponibile nell'esempio seguente: [impostazione di stereotipi e profili XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Per facilitare la modifica dei file di profilo, installare il file `.xsd` in:
+
+ Per facilitare la modifica dei file di profilo, installare il file `.xsd` in:
 
  **%Programmi%\Microsoft Visual Studio [versione] \Xml\schemas.**
 
@@ -365,4 +366,5 @@ ms.locfileid: "75850479"
 6. Riavvia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>Vedere anche
- [Aggiungere stereotipi agli elementi del modello UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md) stereotipi [standard per i modelli UML](../modeling/standard-stereotypes-for-uml-models.md) [esempio: color UML elementi per stereotipo](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [esempio: impostazione di stereotipi, profili XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Aggiungere stereotipi agli elementi del modello UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md) stereotipi [standard per i modelli UML](../modeling/standard-stereotypes-for-uml-models.md)
+ 

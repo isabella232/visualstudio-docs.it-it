@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253047"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916574"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Usare Visual Studio Tools per Unity
 
@@ -45,7 +45,7 @@ Ciò semplifica l'implementazione di messaggi dell'API Unity negli script MonoBe
 
 3. Dopo aver digitato le lettere "**ontri**", viene visualizzato un elenco di suggerimenti di IntelliSense.
 
-   ![Using IntelliSense](media/vstu_intellisense1.png)
+   ![Utilizzo di IntelliSense](media/vstu_intellisense1.png)
 
 4. La selezione nell'elenco può essere modificata in tre modi:
 
@@ -83,15 +83,15 @@ Per creare definizioni vuote di metodi MonoBehaviour con la procedura guidata Mo
 
 6. Fare clic su **OK** per chiudere la procedura guidata e inserire i metodi nel codice.
 
-   ![Finestra di dialogo della procedura guidata MonoBehavior.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![Finestra di dialogo della procedura guidata monobehavior.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Esplora progetti Unity
 
-![Finestra di Esplora progetti Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+![Finestra Esplora progetti Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
 Esplora progetti Unity visualizza tutti i file di progetto Unity e tutte le directory nella stessa gerarchia usata dall'editor di Unity. Si differenzia dall'esplorazione degli script Unity con Esplora soluzioni Visual Studio standard, che li organizza in progetti e in una soluzione generata da Visual Studio.
 
-- Nel menu principale di Visual Studio scegliere **Visualizza > Esplora progetti Unity**. Tasto di scelta rapida: **ALT**+**MAIUSC**+**E**
+- Nel menu principale di Visual Studio scegliere **Visualizza > Esplora progetti Unity**. Tasti di scelta rapida: **ALT**+**MAIUSC**+**E**
 
    ![Visualizzare la finestra Esplora progetti Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -151,7 +151,7 @@ Fare clic sul pulsante **Interrompi** in Visual Studio o usare i tasti di scelta
 
 - Nel menu principale di Visual Studio scegliere **Debug > Collega debugger Unity**.
 
-   ![Collegare il debugger di Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+   ![Alleghi il debugger di Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
    Nella finestra di dialogo **Seleziona istanza di Unity** sono visualizzate alcune informazioni sulle singole istanze di Unity a cui è possibile connettersi.
 
@@ -163,7 +163,7 @@ Fare clic sul pulsante **Interrompi** in Visual Studio o usare i tasti di scelta
 
    **Computer** Nome del computer o del dispositivo in cui è in esecuzione questa istanza di Unity.
 
-   **Tipo** **Editor** se questa istanza di Unity viene eseguita nell'editor di Unity; **Lettore** se questa istanza di Unity è un lettore autonomo.
+   **Editor** dei tipi se questa istanza di Unity viene eseguita nell'editor di Unity; **Lettore** se questa istanza di Unity è un lettore autonomo.
 
    **Porta** Numero di porta del socket UDP usata da questa istanza di Unity per comunicare.
 
@@ -183,7 +183,7 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 
 1. Aggiungere il progetto di DLL esistente alla soluzione di Visual Studio generata da Visual Studio Tools per Unity. Può capitare meno frequentemente di avviare un nuovo progetto di DLL gestita per contenere i componenti di codice nel progetto Unity. In questo caso, è possibile aggiungere un nuovo progetto di DLL gestita alla soluzione Visual Studio. Per altre informazioni sull'aggiunta di un progetto nuovo o esistente a una soluzione, vedere [Procedura: Aggiungere progetti a una soluzione](https://msdn.microsoft.com/library/ff460187.aspx).
 
-   ![Aggiungere il progetto esistente per una DLL alla soluzione.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
+   ![Aggiungere il progetto di DLL esistente alla soluzione.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
    In entrambi i casi, Visual Studio Tools per Unity mantiene il riferimento al progetto, anche se deve rigenerare nuovamente i file di progetto e soluzione, di conseguenza è necessario eseguire questi passaggi una sola volta.
 
@@ -192,7 +192,7 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 > [!NOTE]
 > Quanto segue è richiesto solo se si usa il runtime legacy di Unity. Se si usa il nuovo runtime di Unity, non è più necessario usare tali profili dedicati per la versione 3.5. Usare un profilo di .NET 4.x compatibile con la versione di Unity in uso.
 
-   ![Impostare il framework di destinazione della DLL sul framework Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+   ![Impostare il Framework di destinazione della DLL sul framework Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. Copiare la DLL nella cartella Assets del progetto Unity. In Unity gli asset sono file che vengono inseriti nel pacchetto dell'app Unity e distribuiti con questa per consentirne il caricamento al runtime. Poiché le dll sono collegate in fase di esecuzione, le dll devono essere distribuite come asset. Per distribuire le DLL come asset, l'editor di Unity richiede che vengano inserite nella cartella Assets del progetto Unity. Questa operazione può essere eseguita nei due modi seguenti:
 
@@ -202,7 +202,7 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 
    I file PDB sono necessari per il debug perché contengono i simboli di debug della DLL e consentono di eseguire il mapping del codice della DLL al formato del relativo codice sorgente. Se si specifica come destinazione il runtime legacy, Visual Studio Tools per Unity userà le informazioni della DLL e dei file PDB per creare un file DLL.MDB, che corrisponde al formato dei simboli di debug usato dal motore di scripting legacy di Unity. Se si specifica come destinazione il nuovo runtime e si usa PDB portatile, Visual Studio Tools per Unity non tenterà di eseguire alcuna conversione dei simboli, poiché il nuovo runtime di Unity è in grado di usare in modo nativo i file PDB portatili.
 
-   Altre informazioni sulla generazione dei PDB sono disponibili [qui](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Se si specifica come destinazione il nuovo runtime, assicurarsi che "Informazioni di debug" sia impostato su "Portatile" per generare correttamente il file PDB portatile. Se si specifica come destinazione il runtime legacy, è necessario usare "Completo".
+   Altre informazioni sulla generazione dei PDB sono disponibili [qui](/visualstudio/debugger/how-to-set-debug-and-release-configurations). Se si specifica come destinazione il nuovo runtime, assicurarsi che "Informazioni di debug" sia impostato su "Portatile" per generare correttamente il file PDB portatile. Se si specifica come destinazione il runtime legacy, è necessario usare "Completo".
 
 4. Eseguire il debug del codice. È ora possibile eseguire il debug del codice sorgente della DLL con il codice sorgente del progetto Unity e usare tutte le funzionalità di debug a cui si è abituati, ad esempio punti di interruzione ed esecuzione del codice un'istruzione alla volta.
 

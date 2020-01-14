@@ -14,23 +14,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f5d184684a6ec30c216b7274313905781843071b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671570"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918232"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizzare termini preferiti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente su Visual Studio, vedere [CA1726: usare i termini preferiti](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).
+Per la documentazione più recente su Visual Studio, vedere [CA1726: usare i termini preferiti](/visualstudio/code-quality/ca1726-use-preferred-terms).
 
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|Category|Microsoft. Naming|
+|Categoria|Microsoft.Naming|
 |Modifica importante|Interruzioni durante l'attivazione degli assembly<br /><br /> Senza interruzioni-quando viene attivato sui parametri di tipo|
 
 ## <a name="cause"></a>Causa
@@ -49,7 +49,7 @@ Per la documentazione più recente su Visual Studio, vedere [CA1726: usare i ter
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` o `Flags`|Non esiste alcun termine di sostituzione. Non usare.|
+|`Flag` o `Flags`|Non esiste alcun termine di sostituzione. Non utilizzare.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

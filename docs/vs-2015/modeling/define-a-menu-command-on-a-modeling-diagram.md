@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: fc633c0cad752203b8dadca81de0f18f4e9b1b3e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850466"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918841"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definire un comando di menu in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -363,4 +363,5 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md) [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definire un elemento della casella degli strumenti di modellazione personalizzato](../modeling/define-a-custom-modeling-toolbox-item.md) [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md) [modificare i diagrammi di sequenza UML usando l'API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) UML [programmazione con l'esempio di API UML](../modeling/programming-with-the-uml-api.md) [: comando per allineare le forme in un diagramma UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md) [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definire un elemento della casella degli strumenti di modellazione personalizzato](../modeling/define-a-custom-modeling-toolbox-item.md) [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md) [modificare diagrammi di sequenza UML usando la programmazione dell'API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [con l'API UML](../modeling/programming-with-the-uml-api.md)
+ 

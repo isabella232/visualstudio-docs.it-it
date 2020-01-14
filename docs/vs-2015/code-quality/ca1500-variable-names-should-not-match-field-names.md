@@ -15,23 +15,23 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b46594a53e6562c2c6a069a9a25d58b3e32865eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5753cc660d626098d234fbce93c0bf0269e52bb3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607932"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919043"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: I nomi delle variabili non devono corrispondere ai nomi dei campi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente su Visual Studio, vedere [CA1500: i nomi delle variabili non devono corrispondere ai nomi dei campi](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
+Per la documentazione più recente su Visual Studio, vedere [CA1500: i nomi delle variabili non devono corrispondere ai nomi dei campi](/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
 
 |||
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
-|Category|Microsoft. gestibilità|
+|Categoria|Microsoft.Maintainability|
 |Modifica importante|Quando viene attivato in un parametro con lo stesso nome di un campo:<br /><br /> -Senza interruzioni: se il campo e il metodo che dichiara il parametro non possono essere visualizzati all'esterno dell'assembly, indipendentemente dalla modifica apportata.<br />-Overstarting: se si modifica il nome del campo e può essere visualizzato al di fuori dell'assembly.<br />-Overstarting: se si modifica il nome del parametro e il metodo che lo dichiara può essere visualizzato all'esterno dell'assembly.<br /><br /> Quando viene generato in una variabile locale con lo stesso nome di un campo:<br /><br /> -Senza interruzioni: se non è possibile visualizzare il campo all'esterno dell'assembly, indipendentemente dalla modifica apportata.<br />-Senza interruzioni: se si modifica il nome della variabile locale e non si modifica il nome del campo.<br />-Overstarting: se si modifica il nome del campo e questo può essere visualizzato al di fuori dell'assembly.|
 
 ## <a name="cause"></a>Causa

@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c56e6fdb6d841f32a056fc77f4928b09d386e036
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886424"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919015"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opzioni della riga di comando di VSTest.Console.exe
 
@@ -25,6 +25,8 @@ ms.locfileid: "75886424"
 > Per la compatibilità, l'adapter MSTest in Visual Studio funziona anche in modalità legacy (equivalente all'esecuzione di test con *mstest.exe*). In modalità legacy non può usufruire della funzionalità TestCaseFilter. L'adapter può passare alla modalità legacy quando è specificato un file *testsettings*, **forcelegacymode** è impostato su **true** in un file *runsettings* oppure usando attributi quali **HostType**.
 >
 > Per eseguire test automatizzati in un computer basato su architettura ARM è necessario usare *VSTest.Console.exe*.
+
+Aprire una [prompt dei comandi per gli sviluppatori](/dotnet/framework/tools/developer-command-prompt-for-vs) per utilizzare lo strumento da riga di comando oppure è possibile trovare lo strumento in *% Program Files (x86)% \ Microsoft Visual Studio\\< version\>\\< edition\>\Common7\ide\CommonExtensions\\< Platform | Microsoft >* .
 
 ## <a name="general-command-line-options"></a>Opzioni generali della riga di comando
 

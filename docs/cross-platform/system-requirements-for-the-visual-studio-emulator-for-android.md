@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815472"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916815"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator per Android
 
@@ -87,7 +87,7 @@ La rete deve soddisfare i seguenti requisiti:
 
   Per risolvere i problemi di rete nell'emulatore, vedere gli argomenti seguenti:
 
-- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+- [Risoluzione dei problemi di Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
 ## <a name="hyper-v-requirements"></a>Requisiti di Hyper-V
 
@@ -105,9 +105,9 @@ Requisiti di Hyper-V in Windows
 
 Se le impostazioni del computer e del BIOS sono già configurate per supportare Hyper-V, il programma di installazione abilita e avvia Hyper-V. In caso contrario potrebbe essere necessario abilitare i requisiti manualmente.
 
-|Requisito|Come controllare e abilitare questo requisito|
+|Requisiti|Come controllare e abilitare questo requisito|
 |-----------------|----------------------------------------------|
-|Hyper-V deve essere installato|Seguire le stesse istruzioni usate per [abilitare Hyper-V per l'emulatore di Windows Phone](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Controllare lo stato del servizio **Hyper-V Virtual Machine Management** nello snap-in Servizi.|
+|Hyper-V deve essere installato|Seguire le stesse istruzioni usate per [abilitare Hyper-V per l'emulatore di Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Controllare lo stato del servizio **Hyper-V Virtual Machine Management** nello snap-in Servizi.|
 |Hyper-V deve essere in esecuzione.|Per altre informazioni sulla gestione dei servizi, vedere gli argomenti seguenti:<br /><br /> -   [Avviare, arrestare, sospendere, riprendere o riavviare un servizio](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configurare la modalità di avvio di un servizio](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  È necessario essere un membro del gruppo di amministratori di Hyper-V locali.
@@ -119,14 +119,14 @@ Se le impostazioni del computer e del BIOS sono già configurate per supportare 
 > [!IMPORTANT]
 > Dopo aver partecipato al gruppo, disconnettersi o riavviare il computer per rendere effettiva la modifica.
 
- ![Aggiunta al gruppo di sicurezza Amministratori Hyper&#45;V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Aggiunta al gruppo&#45;di sicurezza Amministratori Hyper-V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  Per aggiungersi manualmente a un gruppo, aprire lo snap-in Utenti e gruppi locali.
 
-## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>L'esecuzione dell'emulatore da un VHD di avvio non è supportata
- Se si tenta di eseguire un'applicazione in Visual Studio Emulator per Android durante l'esecuzione di Windows da un VHD di avvio, l'emulatore in genere richiede alcuni minuti per l'avvio o non viene avviato. Se l'emulatore non viene avviato, viene visualizzato il messaggio seguente: Distribuzione dell'app non riuscita. Riprovare.
+## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>L’esecuzione dell'emulatore da un VHD di avvio non è supportata
+ Se si tenta di eseguire un'applicazione in Visual Studio Emulator per Android durante l'esecuzione di Windows da un VHD di avvio, l'emulatore in genere richiede alcuni minuti per l'avvio o non viene avviato. Se l'emulatore non viene avviato, viene visualizzato il seguente messaggio: Distribuzione dell'applicazione non riuscita. Riprovare.
 
- Questa configurazione non è supportata. Per informazioni sui problemi correlati, vedere [Risoluzione dei problemi di Visual Studio Emulatore per Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
+ (Questa configurazione non è supportata.) Per informazioni sui problemi correlati, vedere [Risoluzione dei problemi di Visual Studio Emulatore per Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
 ## <a name="hyper-v-requires-uncompressed-and-unencrypted-files"></a>Hyper-V richiede file non compressi e non crittografati
  Su un disco rigido configurato con il file system NTFS, i file del disco rigido virtuale usati da Hyper-V devono essere non compressi e non crittografati. Assicurarsi che le seguenti directory non siano compresse o crittografate:

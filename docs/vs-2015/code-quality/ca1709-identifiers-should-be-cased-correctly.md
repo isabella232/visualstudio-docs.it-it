@@ -15,23 +15,23 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3c8022a9dfba3012e8c81523b076b7bbfbb6ee8d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669191"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919225"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente su Visual Studio, vedere [CA1709: gli identificatori devono essere configurati correttamente](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
+Per la documentazione più recente su Visual Studio, vedere [CA1709: gli identificatori devono essere configurati correttamente](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Category|Microsoft. Naming|
+|Categoria|Microsoft.Naming|
 |Modifica importante|Quando vengono generati gli assembly, gli spazi dei nomi, i tipi, i membri e i parametri.<br /><br /> Senza interruzioni: quando viene attivato su parametri di tipo generico.|
 
 ## <a name="cause"></a>Causa
