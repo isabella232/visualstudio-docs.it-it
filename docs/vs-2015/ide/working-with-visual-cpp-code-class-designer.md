@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 020535ac73c48be74e56100c7b6f9c49b69e50dc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296215"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851307"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilizzo del codice Visual C++ (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
 - Typedef
 
 > [!NOTE]
-> Non corrisponde al diagramma classi UML, che è possibile creare in un progetto di modellazione. Per altre informazioni, vedere [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) (Diagrammi classi UML: riferimenti)
+> Non corrisponde al diagramma classi UML, che è possibile creare in un progetto di modellazione. Per altre informazioni, vedere [Diagrammi classi UML: informazioni di riferimento](../modeling/uml-class-diagrams-reference.md).
 
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Risoluzione dei problemi relativi al tipo e alla visualizzazione
 
@@ -63,7 +63,7 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
 ### <a name="type-resolution-issues"></a>Problemi di risoluzione del tipo
  Progettazione classi potrebbe non essere in grado di risolvere i tipi per i motivi seguenti:
 
-- Il tipo si trova in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [NIB Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Il tipo si trova in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 - Il tipo non si trova nell'ambito corretto, di conseguenza Progettazione classi non è in grado di trovarlo. Verificare che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
 
@@ -77,12 +77,12 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
 
 - Verificare che Progettazione classi supporti il tipo inserito. Vedere [Limitazioni per gli elementi di codice C++](#limitations).
 
-- Provare a risolvere il tipo. Il tipo potrebbe trovarsi in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [NIB Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Provare a risolvere il tipo. Il tipo potrebbe trovarsi in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 - Verificare che il tipo si trovi nell'ambito corretto in modo che Progettazione classi possa trovarlo. Assicurarsi che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
 
 ### <a name="troubleshooting-other-error-messages"></a>Risoluzione di altri messaggi di errore
- È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Vedere il [forum dedicato a Progettazione classi di Visual Studio](https://go.microsoft.com/fwlink/?linkid=160754).
+ È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Vedere il [forum dedicato a Progettazione classi di Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1).
 
 ## <a name="limitations"></a> Limitazioni per gli elementi di codice C++
 
