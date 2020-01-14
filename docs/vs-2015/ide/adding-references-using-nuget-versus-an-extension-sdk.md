@@ -12,19 +12,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9cdc597bcbdb79c7040f040084493fe015ee1c08
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 95927385ce3218d73ba6b94819429163178bb65b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852234"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917339"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Aggiunta di riferimenti utilizzando NuGet o SDK di estensione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per offrire un pacchetto destinato al consumo all'interno di progetti di Visual Studio, è possibile usare l'estensione NuGet di Visual Studio o un SDK (Software Development Kit). Questo argomento semplifica la scelta dell'estensione più adatta all'attività in corso descrivendo le analogie e le differenze tra i due meccanismi.
 
-- NuGet è un sistema open source di gestione dei pacchetti che semplifica il processo di incorporazione di librerie nella soluzione di un progetto. Per altre informazioni, vedere [NuGet Overview](https://docs.microsoft.com/nuget/what-is-nuget) (Panoramica di NuGet).
+- NuGet è un sistema open source di gestione dei pacchetti che semplifica il processo di incorporazione di librerie nella soluzione di un progetto. Per altre informazioni, vedere [NuGet Overview](/nuget/what-is-nuget) (Panoramica di NuGet).
 
 - Un SDK è una raccolta di file che in Visual Studio vengono trattati come un unico elemento di riferimento. Nella finestra di dialogo **Gestione riferimenti** sono elencati tutti gli SDK pertinenti al progetto che risulta aperto quando si visualizza la finestra di dialogo. Se si aggiunge un SDK a un progetto, è possibile accedere a tutti i contenuti dell'SDK stesso tramite IntelliSense, la **casella degli strumenti**, le finestre di progettazione, il **Visualizzatore oggetti** e MSBuild, nonché tramite le funzioni di distribuzione, debug e creazione dei pacchetti. Per altre informazioni sugli SDK, vedere [Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md) (Creazione di un SDK).
 
