@@ -16,17 +16,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: de27d99d6bccab46734399e524f70a731a36aa1b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c9a9ec5f83a6df3dab262e24aac5c36b2d65ef00
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297875"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852370"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: utilizzare esclusivamente la tastiera
+# <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: Usare esclusivamente la tastiera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prevede molte combinazioni di tasti predefinite per semplificare lo spostamento e la programmazione all'interno dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment). Per un elenco completo delle combinazioni di tasti usate in Visual Studio, vedere [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Per informazioni sui tasti di scelta rapida disponibili per altri prodotti Microsoft, vedere [http://www.microsoft.com/enable/products/keyboard.aspx](https://go.microsoft.com/fwlink/?LinkID=40400).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prevede molte combinazioni di tasti predefinite per semplificare lo spostamento e la programmazione all'interno dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment). Per un elenco completo delle combinazioni di tasti usate in Visual Studio, vedere [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Per informazioni sui tasti di scelta rapida disponibili per altri prodotti Microsoft, vedere [http://www.microsoft.com/enable/products/keyboard.aspx](https://www.microsoft.com/enable/products/keyboard.aspx).
 
 > [!NOTE]
 > Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
