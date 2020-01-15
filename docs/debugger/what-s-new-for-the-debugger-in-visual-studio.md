@@ -20,12 +20,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 130387fedce065948ebe09ea605e32cf89ad820b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71210596"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944225"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novità relative al debugger di Visual Studio 2017
 
@@ -44,9 +44,9 @@ Il debugger include le nuove funzionalità seguenti:
 
     È possibile esplorare e visualizzare gli snapshot tramite i pulsanti **Vai indietro** e **Vai avanti** sulla barra degli strumenti di Debug. Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**.
 
-    ![Pulsanti Passo indietro e Passo avanti](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti Passo indietro e Passo avanti")
+    ![Pulsanti avanti e indietro passaggio](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti avanti e indietro passaggio")
 
-    Per altre informazioni, vedere la pagina [Visualizzare lo stato precedente dell'applicazione con IntelliTrace](../debugger/view-historical-application-state.md).
+    Per altre informazioni, vedere la pagina [Visualizzare lo stato precedente dell'applicazione con IntelliTrace](view-historical-application-state.md).
 
 - L' **Helper eccezioni** sostituisce le informazioni sulle eccezioni e viene visualizzato in una finestra di dialogo non modale in cui si è verificato l'errore. L' **Helper eccezioni** fornisce un accesso più rapido a eventuali eccezioni interne, ulteriori analisi da parte del debugger (se disponibili) e accesso immediato alle **impostazioni delle eccezioni** per l'eccezione. L'helper eccezioni può essere trascinato anche in una visualizzazione a virgola mobile se blocca qualcosa che è necessario visualizzare.
 
@@ -54,7 +54,7 @@ Il debugger include le nuove funzionalità seguenti:
 
     ![Helper eccezioni del debugger](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
 
-    Per altre informazioni, vedere il post del blog relativo all'[uso del nuovo supporto eccezione in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/).
+    Per altre informazioni, vedere il post del blog relativo all'[uso del nuovo supporto eccezione in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/).
 
 - È ora possibile eseguire fino a una riga di codice mentre viene sospesa nel debugger selezionando l'icona della freccia **su Esegui esecuzione fino a qui** (l'icona viene visualizzata al passaggio del mouse su una riga di codice). In questo modo si elimina la necessità di impostare punti di interruzione temporanei.
 
@@ -68,7 +68,7 @@ Il debugger include le nuove funzionalità seguenti:
 
     ![Cerca in Connetti a processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Per ulteriori informazioni su queste nuove funzionalità, vedere le [Note sulla versione [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]di ](/visualstudio/releasenotes/vs2017-relnotes).
+Per ulteriori informazioni su queste nuove funzionalità, vedere le [Note sulla versione per [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Vedere anche
 
