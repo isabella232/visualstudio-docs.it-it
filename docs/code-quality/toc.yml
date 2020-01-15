@@ -157,7 +157,7 @@
           href: how-to-generate-code-metrics-data.md
         - name: Usare dati di metrica del codice
           href: working-with-code-metrics-data.md
-    - name: Riferimenti
+    - name: Riferimento
       items:
         - name: Set di regole
           items:
@@ -721,6 +721,8 @@
                   href: ca3077.md
                 - name: 'CA3147: Contrassegnare i gestori di verbi con ValidateAntiForgeryToken'
                   href: ca3147.md
+                - name: 'CA5358: Non usare modalità crittografia non sicure'
+                  href: ca5358.md
                 - name: 'CA5361: Non disabilitare l''uso della crittografia avanzata in Schannel'
                   href: ca5361.md
                 - name: 'CA5363: Non disabilitare la convalida delle richieste'
