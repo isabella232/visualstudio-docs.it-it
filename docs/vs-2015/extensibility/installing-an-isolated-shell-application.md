@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851717"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944259"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installazione di un'applicazione di shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
   
 - L'SDK di Visual Studio  
   
-- Il [set di strumenti XML Windows Installer](http://wix.sourceforge.net/) versione 3,6  
+- Il [set di strumenti XML Windows Installer](https://documentation.help/WiX-Toolset/index.html/) versione 3,6  
   
   L'esempio richiede anche l'SDK di visualizzazione e modellazione di Microsoft, che non è necessario per tutte le shell.  
   
@@ -54,7 +54,7 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
 2. Per ogni progetto che contiene un manifesto VSIX, modificare le attività di compilazione per restituire il contenuto al percorso da cui viene installato il file MSI. Includere il manifesto VSIX nell'output di compilazione, ma non compilare un file con estensione VSIX.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Creazione di un file MSI per la shell  
- Per compilare il pacchetto MSI, è consigliabile usare il set di [strumenti Windows Installer XML](http://wix.sourceforge.net/) perché offre una maggiore flessibilità rispetto a un progetto di installazione standard.  
+ Per compilare il pacchetto MSI, è consigliabile usare il set di [strumenti Windows Installer XML](https://documentation.help/WiX-Toolset/index.html) perché offre una maggiore flessibilità rispetto a un progetto di installazione standard.  
   
  Nel file Product. wxs impostare i blocchi di rilevamento e il layout dei componenti della shell.  
   

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Informazioni su come accedere alle sottoscrizioni di Visual Studio con l'account GitHub.
-ms.openlocfilehash: 8a1c2884dbc5570ab18cf7496c699774702b5b62
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850523"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944190"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Accesso alle sottoscrizioni di Visual Studio con l'account GitHub 
 
@@ -49,7 +49,7 @@ R: non tutti i prodotti Microsoft possono accedere a GitHub.com dalla propria pa
 R: non è affatto. Questo non modifica la password di GitHub, è semplicemente disponibile un altro modo per accedere all'account Microsoft. Ogni volta che si accede usando l'indirizzo e-mail, sarà possibile scegliere se accedere con la password dell'account Microsoft o andare a GitHub per l'accesso. Se è necessario aggiungere una password, è consigliabile che sia diversa dalla password per l'account GitHub.
 
 #### <a name="q-i-want-to-add-the-authenticator-app-to-the-account-i-created-using-github--can-i-do-that"></a>D: si vuole aggiungere l'app Authenticator all'account creato con GitHub.  È possibile procedere in questo modo?
-R: non è sufficiente scaricare l'app ed accedere con l'indirizzo di posta elettronica. Quando si accede con l'indirizzo di posta elettronica viene richiesto di scegliere come credenziali l'[app Authenticator](https://www.microsoft.com/account/authenticator#getapp) o GitHub.
+R: non è sufficiente scaricare l'app ed accedere con l'indirizzo di posta elettronica. Quando si accede con l'indirizzo di posta elettronica viene richiesto di scegliere come credenziali l'[app Authenticator](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6) o GitHub.
 
 #### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>D: è stata abilitata l'autenticazione a due fattori per gli account GitHub e Microsoft (MSA), ma quando si accede al servizio MSA, viene comunque chiesto di eseguire l'autenticazione due volte.  Perché?
 R: a causa delle restrizioni di sicurezza, Microsoft conta l'accesso con GitHub come verifica a fattore singolo, anche se è stata abilitata la verifica in due passaggi. Pertanto, è necessario eseguire nuovamente l'autenticazione per l'account Microsoft. 

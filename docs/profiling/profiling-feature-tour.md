@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189419"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929242"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Avvio rapido: Presentazione degli strumenti di profilatura
 
@@ -38,7 +38,7 @@ La finestra **Strumenti di diagnostica** è spesso il modo migliore per profilar
 
 ## <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 
-L'uso dello strumento Utilizzo CPU è consigliabile per iniziare ad analizzare le prestazioni dell'applicazione. Lo strumento offre maggiori informazioni sulle risorse della CPU consumate dall'applicazione. Per una descrizione più dettagliata dello strumento Utilizzo CPU, vedere la [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md).
+L'uso dello strumento Utilizzo CPU è consigliabile per iniziare ad analizzare le prestazioni dell'applicazione. Lo strumento offre maggiori informazioni sulle risorse della CPU consumate dall'applicazione. Per una procedura dettagliata più dettagliata dello strumento utilizzo CPU, vedere [misurare le prestazioni dell'applicazione analizzando l'utilizzo della CPU](../profiling/beginners-guide-to-performance-profiling.md).
 
 Dalla visualizzazione **Riepilogo** di Strumenti di diagnostica scegliere **Abilita profilatura CPU** (è necessario essere in una sessione di debug).
 
@@ -109,7 +109,7 @@ Nella visualizzazione Dettagli sequenza temporale è possibile trovare informazi
 
 Per altre informazioni, vedere [Sequenza temporale dell'applicazione](../profiling/application-timeline.md).
 
-## <a name="analyze-gpu-usage-direct3d"></a>Analizza l'utilizzo della GPU (Direct3D)
+## <a name="analyze-gpu-usage-direct3d"></a>Analizzare l'uso della GPU (Direct3D)
 
 Nelle applicazioni Direct3D (i componenti Direct3D devono essere in C++) è possibile esaminare l'attività sulla GPU e analizzare i problemi di prestazioni. Per altre informazioni, vedere l'articolo relativo all'[uso della GPU](/visualstudio/debugger/graphics/gpu-usage). Per usare lo strumento, scegliere **Utilizzo GPU** nel profiler delle prestazioni e quindi scegliere **Inizia**. Nell'applicazione seguire lo scenario che interessa per la profilatura e quindi scegliere **Arresta raccolta** per generare un report.
 

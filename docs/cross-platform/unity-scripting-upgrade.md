@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 01f604de756ca86e40426a97776f1a1d43b024f1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916847"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944240"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso di .NET 4.x in Unity
 
@@ -346,6 +346,6 @@ L'esempio contiene esempi di diverse funzionalità di .NET 4.x. È possibile sca
 * [Blog di Unity - Miglioramenti del runtime di scripting in Unity 2018.2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
 * [Storia di C#](/dotnet/csharp/whats-new/csharp-version-history)
 * [Novità di C# 6](/dotnet/csharp/whats-new/csharp-6)
-* [Programmazione asincrona in Unity con coroutine e TAP](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap)
+* [Programmazione asincrona in Unity con coroutine e TAP](/archive/blogs/appconsult/unity-coroutine-tap-en-us)
 * [Async-Await invece di coroutine in Unity 2017](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/)
 * [Forum su Unity - Anteprime di scripting sperimentali](https://forum.unity.com/forums/experimental-scripting-previews.107/)
