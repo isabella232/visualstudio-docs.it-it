@@ -12,17 +12,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 83794267cbd13b0bde0b1ba6217d08275fe12e05
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 60ba1ad7f1ed467cb1a396f80228b8915bd62a31
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850329"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918796"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procedura: Aggiornare i progetti Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente su Visual Studio 2017, vedere [Guida al porting e aggiornamento in Visual C++](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
+Per la documentazione più recente su Visual Studio 2017, vedere [Guida al porting e aggiornamento in Visual C++](/cpp/porting/visual-cpp-porting-and-upgrading-guide).
 
 Quando si apre per la prima volta un progetto Visual C++ creato in una versione precedente di Visual Studio, è possibile che venga richiesto di aggiornare il progetto. Nel messaggio viene chiesto se si desidera eseguire l'aggiornamento alla versione più recente del compilatore e delle librerie di Visual C++. Le opzioni per l'aggiornamento dipendono dalla versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usata per creare il progetto.
 
@@ -54,4 +54,4 @@ Quando si apre per la prima volta un progetto Visual C++ creato in una versione 
  Se si desidera continuare a usare un set di strumenti della piattaforma personalizzato in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], il set di strumenti deve trovarsi in %Programmi%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ in un computer x86 o in %Programmi (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ in un computer x64. Per informazioni su come creare un set di strumenti della piattaforma personalizzato, vedere il post relativo al [multitargeting nativo per C++](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) nel blog del team di Visual C++.
 
 ## <a name="see-also"></a>Vedere anche
- [Guida C++ all'aggiornamento e alla portabilità visiva](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [porting, migrazione e aggiornamento dei progetti di Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Guida a portabilità e aggiornamento in Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
