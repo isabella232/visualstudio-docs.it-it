@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30efd450f18832caadcc9a0008facc4388cd70a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986286"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115049"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 
@@ -122,7 +122,7 @@ Diversi tipi di diagramma sono utili per descrivere la progettazione a diversi l
 
 |Livello di progettazione|Tipi di diagramma|
 |-|-|
-|Processo aziendale<br /><br /> Le informazioni sul contesto in cui verrà usato il sistema consentono di comprendere quali sono le esigenze degli utenti.|-I diagrammi classi concettuali descrivono i concetti aziendali utilizzati all'interno del processo di business.|
+|Processo di business<br /><br /> Le informazioni sul contesto in cui verrà usato il sistema consentono di comprendere quali sono le esigenze degli utenti.|-I diagrammi classi concettuali descrivono i concetti aziendali utilizzati all'interno del processo di business.|
 |Requisiti utente<br /><br /> La definizione di ciò che gli utenti richiedono al sistema.|-Le regole di business e i requisiti di qualità del servizio possono essere descritti in documenti distinti.|
 |Progettazione ad alto livello<br /><br /> La struttura generale del sistema: i componenti principali e la modalità con cui vengono accoppiati.|-I diagrammi delle dipendenze descrivono come il sistema è strutturato in parti interdipendenti. È possibile convalidare il codice del programma in base ai diagrammi di dipendenza per assicurarsi che sia conforme all'architettura.|
 |Analisi codice<br /><br /> I diagrammi possono essere generati dal codice.|-I diagrammi di dipendenza mostrano le dipendenze tra le classi. Il codice aggiornato può essere convalidato in base a un diagramma delle dipendenze.<br />-I diagrammi classi mostrano le classi nel codice.|

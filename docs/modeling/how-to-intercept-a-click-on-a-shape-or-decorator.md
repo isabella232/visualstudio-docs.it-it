@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4923a858d9d46c477f50df2a08440a10e9309ef
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748375"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114516"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedura: intercettare un clic su una forma o su un elemento Decorator
 Nelle procedure riportate di seguito viene illustrato come intercettare un clic su una forma o su un elemento Decorator di icona. È possibile intercettare clic, fare doppio clic, trascinare e altri movimenti e fare in modo che l'elemento risponda.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Per intercettare i clic sulle forme
- Nel progetto DSL, in un file di codice separato dai file di codice generati, scrivere una definizione di classe parziale per la classe Shape. Eseguire l'override `OnDoubleClick()` o uno degli altri metodi il cui nome inizia con `On...`. Esempio:
+ Nel progetto DSL, in un file di codice separato dai file di codice generati, scrivere una definizione di classe parziale per la classe Shape. Eseguire l'override `OnDoubleClick()` o uno degli altri metodi con un nome che inizia con `On...`. Ad esempio:
 
 ```csharp
 public partial class MyShape // change
@@ -37,7 +37,7 @@ public partial class MyShape // change
 > Impostare `e.Handled` su `true`, a meno che non si desideri che l'evento venga passato alla forma o al diagramma che lo contiene.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Per intercettare i clic sugli elementi Decorator
- Gli elementi Decorator di immagini vengono trasportati in un'istanza della classe ImageField, che ha un metodo OnDoubleClick. È possibile intercettare i clic se si scrive una sottoclasse ImageField. I campi vengono impostati nel Metodo InitializeShapeFields. Pertanto, è necessario modificare il metodo per creare un'istanza della sottoclasse anziché l'oggetto ImageField normale. Il metodo InitializeShapeFields è presente nel codice generato della classe Shape. È possibile eseguire l'override della classe Shape se si imposta la proprietà `Generates Double Derived`, come descritto nella procedura seguente.
+ Gli elementi Decorator di immagini vengono trasportati in un'istanza della classe ImageField, che ha un metodo OnDoubleClick. È possibile intercettare i clic se si scrive una sottoclasse ImageField. I campi vengono impostati nel Metodo InitializeShapeFields. Pertanto, è necessario modificare il metodo per creare un'istanza della sottoclasse anziché l'oggetto ImageField normale. Il metodo InitializeShapeFields è presente nel codice generato della classe Shape. È possibile eseguire l'override della classe Shape se si imposta la relativa proprietà `Generates Double Derived` come descritto nella procedura seguente.
 
  Sebbene InitializeShapeFields sia un metodo di istanza, viene chiamato una sola volta per ogni classe. Pertanto, per ogni campo di ogni classe esiste una sola istanza di ClickableImageField, non un'istanza per ogni forma nel diagramma. Quando l'utente fa doppio clic su un'istanza, è necessario identificare l'istanza che è stata raggiunta, come illustrato nel codice dell'esempio.
 

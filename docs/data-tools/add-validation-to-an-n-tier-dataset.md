@@ -10,17 +10,17 @@ helpviewer_keywords:
 - validation [Visual Basic], n-tier data applications
 - validating n-tier data applications
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ff9b2bab755a341d512669578c40ae71f554c235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 426399022c2484dca28bb4f4e1f26c14783a3d19
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648876"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113304"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un set di dati a più livelli
 L'aggiunta della convalida a un set di dati separato in una soluzione a più livelli è fondamentalmente uguale all'aggiunta della convalida a un set di dati a file singolo (un set di dati in un singolo progetto). Il percorso suggerito per eseguire la convalida dei dati è durante l'<xref:System.Data.DataTable.ColumnChanging> e/o <xref:System.Data.DataTable.RowChanging> eventi di una tabella dati.

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99145768ef4e0c37f729477ee598628a3b8d0e9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605981"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114926"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
@@ -26,9 +26,9 @@ Gli esempi riportati in questo argomento provengono dal modello di soluzione Dia
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Sezioni del file DslDefinition.dsl
 
-L'elemento radice è \<Dsl > e i relativi attributi identificano il nome del linguaggio specifico di dominio, lo spazio dei nomi e i numeri di versione principale e secondario per il controllo delle versioni. Lo schema `DslDefinitionModel` definisce il contenuto e la struttura di un file DslDefinition.dsl valido.
+L'elemento radice è \<> DSL e i relativi attributi identificano il nome del linguaggio specifico di dominio, lo spazio dei nomi e i numeri di versione principale e secondario per il controllo delle versioni. Lo schema `DslDefinitionModel` definisce il contenuto e la struttura di un file DslDefinition.dsl valido.
 
-Gli elementi figlio della \<Dsl > elemento radice sono i seguenti:
+Gli elementi figlio dell'elemento \<DSL > radice sono i seguenti:
 
 ### <a name="classes"></a>Classi
 
@@ -40,7 +40,7 @@ Questa sezione definisce le relazioni incluse nel modello. L'origine e la destin
 
 ### <a name="types"></a>Tipi
 
-Questa sezione definisce i tipi ed elenca i relativi spazi dei nomi. Le proprietà di dominio sono di due tipi. `DomainEnumerations` sono definite nel modello e generano i tipi in DomainModel.cs. `ExternalTypes` fanno riferimento ai tipi definiti in altre posizioni, ad esempio `String` o `Int32`, e non generano nulla.
+Questa sezione definisce i tipi ed elenca i relativi spazi dei nomi. Le proprietà di dominio sono di due tipi. `DomainEnumerations` sono definiti nel modello e generano i tipi in DomainModel.cs. `ExternalTypes` fanno riferimento a tipi definiti altrove (ad esempio `String` o `Int32`) e non generano nulla.
 
 ### <a name="shapes"></a>Forme
 
@@ -148,7 +148,7 @@ Ogni classe ha un set di proprietà e può avere una classe base. Nell'esempio D
 </DomainClass>
 ```
 
-`NamedElement` è la classe base di altre classi come `Component`, che ha proprietà specifiche, oltre alla proprietà `Name` ereditata da `NamedElement`. Il nodo figlio BaseClass contiene un riferimento a un moniker. Poiché la classe di riferimento si trova nello stesso spazio dei nomi, nel moniker è necessario solo il suo nome:
+`NamedElement` è la base di molte altre classi, ad esempio `Component`, che ha proprietà proprie oltre alla proprietà `Name`, ereditata da `NamedElement`. Il nodo figlio BaseClass contiene un riferimento a un moniker. Poiché la classe di riferimento si trova nello stesso spazio dei nomi, nel moniker è necessario solo il suo nome:
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -170,11 +170,11 @@ Ogni classe di dominio, incluse le relazioni, le forme, i connettori e i diagram
 
 - **Nome e spazio dei nomi.** Questi attributi specificano il nome e lo spazio dei nomi della classe nel codice generato. Entrambi devono essere be univoci nel linguaggio specifico di dominio.
 
-- **InheritanceModifier.** Questo attributo è "abstract", "sealed" o None.
+- **InheritanceModifier.** Questo attributo è "abstract", "sealed" o non specificato.
 
 - **DisplayName.** Questo attributo è il nome visualizzato nella finestra **Proprietà** . L'attributo DisplayName può contenere spazi e altri segni di punteggiatura.
 
-- **GeneratesDoubleDerived.** Se questo attributo è impostato su true, vengono generate due classi e una è una sottoclasse dell'altra. Tutti i metodi generati si trovano nella classe base e i costruttori nella sottoclasse. Impostando questo attributo, è possibile eseguire l'override di qualsiasi metodo generato nel codice personalizzato.
+- **GeneratesDoubleDerived.** Se questo attributo è impostato su True, vengono generate due classi, di cui una è una sottoclasse dell'altra. Tutti i metodi generati si trovano nella classe base e i costruttori nella sottoclasse. Impostando questo attributo, è possibile eseguire l'override di qualsiasi metodo generato nel codice personalizzato.
 
 - **HasCustomConstructor**. Se questo attributo è impostato su True, il costruttore viene omesso dal codice generato per poter scrivere una versione personalizzata.
 
@@ -212,7 +212,7 @@ Ogni proprietà di dominio può anche avere i seguenti attributi:
 
 - **Elemento**. Se questo attributo è impostato su True, il suo valore viene impostato automaticamente su un valore univoco quando viene creata un'istanza della classe padre. Questo attributo può essere impostato su True solo per una proprietà in ogni classe, che deve essere di tipo String. Nell'esempio Diagramma dei componenti, la proprietà `Name` in `NamedElement` ha `IsElementName` impostato su True. Quando un utente crea un elemento `Component` (che eredita da `NamedElement`), il nome viene inizializzato automaticamente con un valore simile a "Component6".
 
-- `DefaultValue` Se questo attributo è stato specificato, il valore indicato viene assegnato all'attributo per le nuove istanze di questa classe. Se `IsElementName` è impostato, l'attributo DefaultValue specifica la parte iniziale della nuova stringa.
+- `DefaultValue`. Se questo attributo è stato specificato, il valore indicato viene assegnato all'attributo per le nuove istanze di questa classe. Se `IsElementName` è impostato, l'attributo DefaultValue specifica la parte iniziale della nuova stringa.
 
 - **Category** è l'intestazione in cui la proprietà verrà visualizzata nella finestra **Proprietà** .
 
@@ -261,7 +261,7 @@ Ogni relazione contiene ruoli di origine e di destinazione con i seguenti attrib
 
 Oltre agli attributi e ai nodi figlio disponibili per tutte le classi, ogni relazione ha i seguenti attributi:
 
-- **Incorporamento**. Questo attributo booleano specifica se la relazione fa parte dell'albero di incorporamento. Ogni modello deve formare un albero con le relative relazioni di incorporamento. Ogni classe di dominio deve quindi essere la destinazione di almeno una relazione di incorporamento, a meno che non sia la radice di un modello.
+- **IsEmbedding**. Questo attributo booleano specifica se la relazione fa parte dell'albero di incorporamento. Ogni modello deve formare un albero con le relative relazioni di incorporamento. Ogni classe di dominio deve quindi essere la destinazione di almeno una relazione di incorporamento, a meno che non sia la radice di un modello.
 
 - **AllowsDuplicates**. Questo attributo booleano, impostato su False per impostazione predefinita, si applica solo alle relazioni con una molteplicità "molti" sia come origine che come destinazione. Determina se gli utenti del linguaggio possono connettere una coppia di elementi di origine e destinazione con più collegamenti della stessa relazione.
 
@@ -465,7 +465,7 @@ Il file serializzato contiene:
 
 La relazione di connessione include dati della classe XML propri che forniscono i nomi degli elementi e degli attributi della classe.
 
-Se l'attributo **ometteelement** è impostato su true, il nome del ruolo della relazione viene omesso, che abbrevia il file serializzato e non è ambiguo se le due classi non hanno più di una relazione. Esempio:
+Se l'attributo **ometteelement** è impostato su true, il nome del ruolo della relazione viene omesso, che abbrevia il file serializzato e non è ambiguo se le due classi non hanno più di una relazione. Ad esempio:
 
 ```xml
 <component name="Component3">
@@ -498,7 +498,7 @@ Il file DslDefinition.dsl è un file serializzato e risulta conforme a una defin
       <XmlClassData ...>...</XmlClassData>
 ```
 
-- ConnectorHasDecorators è la relazione di incorporamento tra `Connector` e `Decorator`. `UseFullForm` è stato impostato in modo che il nome della relazione venga visualizzato con il relativo elenco di proprietà per ogni collegamento all'oggetto Connector. `OmitElement` è però anche stato impostato in modo che nessun elemento `RoleElementName` includa i vari collegamenti incorporati in `Connector`:
+- ConnectorHasDecorators è la relazione di incorporamento tra `Connector` e `Decorator`. `UseFullForm` è stato impostato in modo che il nome della relazione venga visualizzato con l'elenco di proprietà per ogni collegamento dall'oggetto connettore. `OmitElement` è però anche stato impostato in modo che nessun elemento `RoleElementName` includa i vari collegamenti incorporati in `Connector`:
 
 ```xml
 <Connector Name="AssociationLink" ...>

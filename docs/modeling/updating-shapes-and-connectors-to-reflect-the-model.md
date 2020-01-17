@@ -2,17 +2,17 @@
 title: Aggiornamento di forme e di connettori per riflettere il modello
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c26295461fa062faf88872dbc043048c26479a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663786"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115031"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aggiornare forme e connettori per riflettere il modello
 
@@ -84,7 +84,7 @@ Se si desidera rendere la variabile della proprietà solo sotto il controllo del
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Usare OnChildConfigured per inizializzare le proprietà di una forma
 
-Per impostare le proprietà di una forma quando viene creata per la prima volta, l'override `OnChildConfigured()` in una definizione parziale della classe del diagramma. La classe Diagram è specificata nella definizione DSL e il codice generato è in **Dsl\Generated Code\Diagram.cs**. Esempio:
+Per impostare le proprietà di una forma quando viene creata per la prima volta, l'override `OnChildConfigured()` in una definizione parziale della classe del diagramma. La classe Diagram è specificata nella definizione DSL e il codice generato è in **Dsl\Generated Code\Diagram.cs**. Ad esempio:
 
 ```csharp
 partial class MyLanguageDiagram

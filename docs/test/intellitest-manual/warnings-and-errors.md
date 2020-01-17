@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: b9349e2c1c9ebb52e6172cc37ab1113aff95d511
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653137"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112535"
 ---
 # <a name="warnings-and-errors"></a>Avvisi ed errori
 
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-È possibile modificare l'opzione **MaxConditions** di un attributo derivato da **PexSettingsAttributeBase**, ad esempio [PexClass](attribute-glossary.md#pexclass) o [PexMethod](attribute-glossary.md#pexmethod). Esempio:
+È possibile modificare l'opzione **MaxConditions** di un attributo derivato da **PexSettingsAttributeBase**, ad esempio [PexClass](attribute-glossary.md#pexclass) o [PexMethod](attribute-glossary.md#pexmethod). Ad esempio:
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -209,7 +209,7 @@ public void MyTest(...) {
 <a name="cannot-concretize-solution"></a>
 ## <a name="cannot-concretize-solution"></a>Non è possibile concretizzare la soluzione
 
-Questo errore è spesso la conseguenza di un errore precedente. IntelliTest usa un [risolutore di vincoli](input-generation.md#constraint-solver) per determinare nuovi input di test. In alcuni casi, gli input di test proposti dal [risolutore di vincoli](input-generation.md#constraint-solver) non sono validi. Questa situazione può verificarsi quando:
+Questo errore è spesso la conseguenza di un errore precedente. IntelliTest usa un [risolutore di vincoli](input-generation.md#constraint-solver) per determinare nuovi input di test. In alcuni casi, gli input di test proposti dal [risolutore di vincoli](input-generation.md#constraint-solver) non sono validi. Ciò può verificarsi nei seguenti casi:
 
 * alcuni vincoli non sono noti
 * i valori vengono creati in modo definito dall'utente, causando errori nel codice utente

@@ -4,24 +4,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, commands
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a303fc3ddb880402e3f998b2360122f6f056b757
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 32c01401eda8fb1bbe2bdcfc2950a51b968e98b7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605936"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114910"
 ---
 # <a name="the-dsltexttransform-command"></a>Comando DslTextTransform
 DslTextTransform. cmd è uno script che chiama TextTransform. exe e lo esegue con le opzioni comuni. È possibile usare DslTextTransformation. cmd per automatizzare una compilazione notturna dei progetti [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Per altre informazioni, vedere [generazione di file con l'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
  DslTextTransform. cmd si trova nella directory seguente:
 
- **Percorso di installazione di \<Visual Studio SDK > \VisualStudioIntegration\Tools\Bin**
+ **\<percorso di installazione di Visual Studio SDK > \VisualStudioIntegration\Tools\Bin**
 
  È possibile specificare gli argomenti seguenti come input per DslTextTransform. cmd:
 
