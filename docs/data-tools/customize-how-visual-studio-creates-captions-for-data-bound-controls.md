@@ -8,17 +8,17 @@ helpviewer_keywords:
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 932d50d44fbfaa810225ef90c2f5361bc26d9b72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648562"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113667"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 
@@ -26,13 +26,13 @@ Quando si trascinano elementi dalla [finestra Origini dati](add-new-data-sources
 
 ::: moniker range="vs-2017"
 
-È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** in **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0** Chiave del registro di sistema \Data designer.
+È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** nella chiave del registro di sistema **HKEY_CURRENT_USER \software\microsoft\visualstudio\15.0\Data designer** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** in **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0** Chiave del registro di sistema \Data designer.
+È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** nella chiave del registro di sistema **HKEY_CURRENT_USER \software\microsoft\visualstudio\16.0\Data designer** .
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ Nella tabella seguente sono elencate le impostazioni predefinite interne per que
 
 2. Digitare `regedit` nella finestra di dialogo **Esegui** , quindi fare clic su **OK**.
 
-3. Espandere il  >  HKEY_CURRENT_USER**software**  >  nodo**Microsoft**  > **VisualStudio** .
+3. Espandere il **HKEY_CURRENT_USER** > **software** > nodo **Microsoft** > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
@@ -108,7 +108,7 @@ Nella tabella seguente sono elencate le impostazioni predefinite interne per que
 
 2. Digitare `regedit` nella finestra di dialogo **Esegui** , quindi fare clic su **OK**.
 
-3. Espandere il  >  HKEY_CURRENT_USER**software**  >  nodo**Microsoft**  > **VisualStudio** .
+3. Espandere il **HKEY_CURRENT_USER** > **software** > nodo **Microsoft** > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 

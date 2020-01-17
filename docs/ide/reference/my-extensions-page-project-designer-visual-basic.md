@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Project Designer, My Extensions page
 - My Extensions page in Project Designer
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 894d425d934043b7ed06b29bc3d6fa19115ccf17
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748676"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114226"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Pagina Estensioni My, Progettazione progetti (Visual Basic)
 Usare la pagina **Estensioni My** di **Progettazione progetti** per gestire le estensioni dello spazio dei nomi `My` nel progetto. Le estensioni dello spazio dei nomi `My` consentono di personalizzare lo spazio dei nomi `My` per aggiungere i propri membri personalizzati. Per informazioni sulla creazione di estensioni personalizzate dello spazio dei nomi `My`, vedere [Estensione dello spazio dei nomi My in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).

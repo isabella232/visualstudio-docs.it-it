@@ -6,23 +6,23 @@ f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
 - Domain-Specific Language, element merge directives
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192bde210d7188e54576453dc04654e970df27f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 45131ff231e34cf769ac3665344e340f38b9380d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747618"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114249"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 
 È possibile consentire il trascinamento di un elemento su un altro, dalla casella degli strumenti o in un'operazione di Incolla o spostamento. È possibile fare in modo che gli elementi spostati siano collegati agli elementi di destinazione usando le relazioni specificate.
 
-Una direttiva di Unione elementi (EMD) specifica cosa accade quando un elemento del modello viene *Unito* a un altro elemento del modello. Questo problema si verifica nei casi seguenti:
+Una direttiva di Unione elementi (EMD) specifica cosa accade quando un elemento del modello viene *Unito* a un altro elemento del modello. Ciò può verificarsi quando:
 
 - L'utente trascina dalla casella degli strumenti sul diagramma o su una forma.
 
@@ -38,7 +38,7 @@ Sebbene le operazioni di creazione possano sembrare diverse dalle operazioni di 
 
 La responsabilità di un EMD consiste nel decidere come un oggetto o un gruppo di oggetti deve essere unito in una determinata posizione nel modello. In particolare, decide le relazioni di cui deve essere creata un'istanza per collegare il gruppo unito al modello. È anche possibile personalizzarlo per impostare le proprietà e creare oggetti aggiuntivi.
 
-![Unione&#45;EMD&#95;DSL](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 Un EMD viene generato automaticamente quando si definisce una relazione di incorporamento. Questo EMD predefinito crea un'istanza della relazione quando gli utenti aggiungono nuove istanze figlio all'elemento padre. È possibile modificare questi EMDs predefiniti, ad esempio aggiungendo codice personalizzato.
 
@@ -48,7 +48,7 @@ Un EMD viene generato automaticamente quando si definisce una relazione di incor
 
 È possibile aggiungere direttive di Unione elementi a classi di dominio, relazioni di dominio, forme, connettori e diagrammi. È possibile aggiungerli o trovarli in DSL Explorer sotto la classe di dominio ricevente. La classe ricevente è la classe di dominio dell'elemento già presente nel modello e su cui verrà eseguito il merge dell'elemento nuovo o copiato.
 
-![Dettagli&#45;EMD&#95;DSL](../modeling/media/dsl-emd_details.png)
+![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
 
 La **classe di indicizzazione** è la classe di dominio di elementi che possono essere Uniti in membri della classe ricevente. Anche le istanze delle sottoclassi della classe di indicizzazione verranno unite da questo EMD, a meno che non si imposti le **sottoclassi** su false.
 
@@ -71,7 +71,7 @@ Esistono due tipi di direttiva di Unione:
 > [!NOTE]
 > Se si scrive codice di merge personalizzato, influiscono solo sulle unioni eseguite utilizzando questo EMD. Se sono presenti altri EMDs che uniscono lo stesso tipo di oggetto o se è presente altro codice personalizzato che crea questi oggetti senza usare EMD, non saranno interessati dal codice di merge personalizzato.
 >
-> Per assicurarsi che un nuovo elemento o una nuova relazione venga sempre elaborata dal codice personalizzato, valutare la possibilità di definire un `AddRule` sulla relazione di incorporamento e una `DeleteRule` sulla classe di dominio dell'elemento. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+> Per assicurarsi che un nuovo elemento o una nuova relazione venga sempre elaborata dal codice personalizzato, valutare la possibilità di definire un `AddRule` sulla relazione di incorporamento e una `DeleteRule` sulla classe di dominio dell'elemento. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>Esempio: definizione di un EMD senza codice personalizzato
 
@@ -109,7 +109,7 @@ Gli utenti possono anche incollare elementi su altri elementi.
 
       È possibile utilizzare lo strumento di navigazione percorso per creare ogni percorso:
 
-      1. In **processo Unione creando collegamenti nei percorsi**fare clic su **\<add percorso >** .
+      1. In **processo Unione creando collegamenti nei percorsi**fare clic su **\<Aggiungi percorso >** .
 
       2. Fare clic sulla freccia a discesa a destra della voce dell'elenco. Viene visualizzata una visualizzazione struttura ad albero.
 
@@ -214,7 +214,7 @@ Nel codice di merge personalizzato è possibile definire cosa accade quando l'ut
 
 2. Eseguire l'override del metodo `MergeRelate` e, facoltativamente, il metodo `MergeDisconnect`. A tale scopo, è necessario impostare la proprietà **generata doppia derivata** della classe di dominio. Il codice può chiamare il codice di merge generato nella classe di base. Utilizzare questa opzione se si desidera eseguire operazioni aggiuntive dopo l'esecuzione del merge.
 
-   Questi approcci influiscono solo sulle unioni eseguite utilizzando questo EMD. Se si desidera influire su tutti i modi in cui è possibile creare l'elemento Unito, un'alternativa consiste nel definire un `AddRule` sulla relazione di incorporamento e una `DeleteRule` sulla classe di dominio unita. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+   Questi approcci influiscono solo sulle unioni eseguite utilizzando questo EMD. Se si desidera influire su tutti i modi in cui è possibile creare l'elemento Unito, un'alternativa consiste nel definire un `AddRule` sulla relazione di incorporamento e una `DeleteRule` sulla classe di dominio unita. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="to-override-mergerelate"></a>Per eseguire l'override di MergeRelate
 
@@ -230,7 +230,7 @@ Nel codice di merge personalizzato è possibile definire cosa accade quando l'ut
 
 5. Esaminare il contenuto di **Dsl\Generated Files\DomainClasses.cs**. Cercare i metodi denominati `MergeRelate` ed esaminarne il contenuto. Ciò consentirà di scrivere versioni personalizzate.
 
-6. In un nuovo file di codice scrivere una classe parziale per la classe ricevente ed eseguire l'override del metodo `MergeRelate`. Ricordarsi di chiamare il metodo di base. Esempio:
+6. In un nuovo file di codice scrivere una classe parziale per la classe ricevente ed eseguire l'override del metodo `MergeRelate`. Ricordarsi di chiamare il metodo di base. Ad esempio:
 
     ```csharp
     partial class ExampleModel
@@ -272,7 +272,7 @@ Nel codice di merge personalizzato è possibile definire cosa accade quando l'ut
 
 4. Scrivere i metodi in una definizione di classe parziale in un file di codice separato. Gli esempi esaminati in precedenza dovrebbero suggerire gli elementi necessari.
 
-   Il codice di merge personalizzato non avrà alcun effetto sul codice che crea direttamente oggetti e relazioni e non influirà sugli altri EMDs. Per assicurarsi che le modifiche aggiuntive vengano implementate indipendentemente dalla modalità di creazione dell'elemento, prendere in considerazione la scrittura di un `AddRule` e di un `DeleteRule`. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+   Il codice di merge personalizzato non avrà alcun effetto sul codice che crea direttamente oggetti e relazioni e non influirà sugli altri EMDs. Per assicurarsi che le modifiche aggiuntive vengano implementate indipendentemente dalla modalità di creazione dell'elemento, prendere in considerazione la scrittura di un `AddRule` e di un `DeleteRule`. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="redirecting-a-merge-operation"></a>Reindirizzamento di un'operazione di Unione
 
@@ -304,7 +304,7 @@ Ad esempio, in un linguaggio DSL creato con il modello di diagramma dei componen
 
     Il nuovo percorso sarà simile a quello riportato di seguito:
 
-    **Componente ComponentHasPorts. Component/!**
+    **ComponentHasPorts.Component/!Component**
 
 9. Salvare la soluzione, quindi trasformare i modelli facendo clic sul pulsante all'estrema destra sulla barra degli strumenti **Esplora soluzioni** .
 
