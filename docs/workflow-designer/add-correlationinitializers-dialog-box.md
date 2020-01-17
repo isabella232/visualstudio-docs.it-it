@@ -5,26 +5,26 @@ ms.topic: reference
 f1_keywords:
 - AddCorrelationInitializers.UI
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d69b53e21d11cba99a9e897871c6f9e0320352f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d2a0b0f7c76b392d5d2d0135c3ab6e370f8678e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650765"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114292"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Finestra di dialogo Aggiungi inizializzatori di correlazione
 
-La finestra di dialogo **Aggiungi inizializzatori di correlazione** viene utilizzata in Progettazione flussi di lavoro per configurare le proprietà **CorrelationInitializers** delle attività <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply> e <xref:System.ServiceModel.Activities.ReceiveReply>. Per ulteriori informazioni sull'ActivityDesigner che utilizza questa casella, vedere gli argomenti [Send](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)e [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) .
+La finestra di dialogo **Aggiungi inizializzatori di correlazione** viene utilizzata in Progettazione flussi di lavoro per configurare le proprietà **CorrelationInitializers** delle attività <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>e <xref:System.ServiceModel.Activities.ReceiveReply>. Per ulteriori informazioni sull'ActivityDesigner che utilizza questa casella, vedere gli argomenti [Send](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)e [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) .
 
 Gli inizializzatori di correlazione nella raccolta specificata con questa finestra di dialogo possono inizializzare le seguenti correlazioni tra le attività di messaggistica:
 
 - basata su query
-- contesto
+- context
 - contesto di callback
 - Request/Reply
 
@@ -33,7 +33,7 @@ Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente (U
 |Elemento dell'interfaccia utente|Descrizione|
 |-|-----------------|
 |**Aggiungi inizializzatore**|Fare clic sulla casella **Aggiungi inizializzazione** per aggiungere un inizializzatore aggiuntivo alla raccolta.|
-|**Tipo di correlazione**|Consente di specificare il tipo di inizializzatore di correlazione. Sono disponibili quattro tipi:<br /><br /> 1. inizializzatore di correlazione di callback per specificare un <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>.<br />2. inizializzatore di correlazione del contesto per specificare un <xref:System.ServiceModel.Activities.CorrelationInitializer>.<br />3. inizializzatore di correlazione Request/Reply per specificare un <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>.<br />4. inizializzatore di correlazione di query per specificare un <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.<br /><br /> Per modificare il **CorrelationType**<br /><br /> 1. Tab per la riga specifica nel DataGrid **Aggiungi inizializzatore** .<br />2. per impostare lo stato attivo su **CorrelationTypeComboBox**, premere **CTRL** +**scheda**.<br />3. Premere ALT + freccia giù per visualizzare la **casella combinata** e modificarla.|
+|**Tipo di correlazione**|Consente di specificare il tipo di inizializzatore di correlazione. Sono disponibili quattro tipi:<br /><br /> 1. inizializzatore di correlazione di callback per specificare un <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>.<br />2. inizializzatore di correlazione del contesto per specificare un <xref:System.ServiceModel.Activities.CorrelationInitializer>.<br />3. inizializzatore di correlazione Request/Reply per specificare un <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>.<br />4. inizializzatore di correlazione di query per specificare un <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.<br /><br /> Per modificare il **CorrelationType**<br /><br /> 1. Tab per la riga specifica nel DataGrid **Aggiungi inizializzatore** .<br />2. per impostare lo stato attivo su **CorrelationTypeComboBox**, premere **CTRL**+**scheda**.<br />3. Premere ALT + freccia giù per visualizzare la **casella combinata** e modificarla.|
 |**Query XPath**|Una coppia chiave/valore che contiene le query usate per estrarre dati di correlazione dai messaggi in ingresso e in uscita. Questo elenco è valido solo in caso di utilizzo di tipi <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.|
 
 ## <a name="to-launch-the-add-correlation-initializers-dialog-box"></a>Per avviare la finestra di dialogo Aggiungi inizializzatori di correlazione

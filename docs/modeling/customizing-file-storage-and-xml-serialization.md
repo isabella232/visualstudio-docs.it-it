@@ -6,17 +6,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27d8672ea94cf2a1547904f313ac36509f111462
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d8fe9fb5086b93861c7ca12a208affe7aa979df2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748452"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114431"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizzare l'archiviazione dei file e la serializzazione XML
 
@@ -101,7 +101,7 @@ Si notino i seguenti punti relativi al modello serializzato:
 
 I moniker vengono utilizzati per rappresentare riferimenti incrociati tra parti diverse dei file di modello e di diagramma. Vengono inoltre utilizzati nel file di `.diagram` per fare riferimento ai nodi nel file di modello. Esistono due forme di moniker:
 
-- I *moniker ID* citano il GUID dell'elemento di destinazione. Esempio:
+- I *moniker ID* citano il GUID dell'elemento di destinazione. Ad esempio:
 
     ```xml
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -124,13 +124,13 @@ I moniker di chiave qualificati sono più facili da leggere rispetto ai moniker 
 
 1. Assicurarsi che la **chiave del moniker** sia `false` per ogni proprietà di dominio nella classe e nelle relative classi di base.
 
-    1. In DSL Explorer espandere **XML Serialization comportamento \Class data \\ \<the classe di dominio > i dati \Element**.
+    1. In DSL Explorer espandere **XML Serialization comportamento \Class data\\\<la classe di dominio > i dati \Element**.
 
     2. Verificare che la **chiave del moniker** sia `false` per ogni proprietà di dominio.
 
     3. Se la classe di dominio dispone di una classe di base, ripetere la procedura in tale classe.
 
-2. Impostare l' **ID di serializzazione**  =  `true` per la classe di dominio.
+2. Impostare l' **ID di serializzazione** = `true` per la classe di dominio.
 
      Questa proprietà è disponibile in **comportamento di serializzazione XML**.
 
@@ -138,7 +138,7 @@ I moniker di chiave qualificati sono più facili da leggere rispetto ai moniker 
 
 - Set **è la chiave del moniker** per una proprietà di dominio di una classe di dominio esistente. Il tipo della proprietà deve essere `string`.
 
-    1. In DSL Explorer espandere **XML Serialization comportamento \Class data \\ \<the classe di dominio > dati \Element**, quindi selezionare la proprietà di dominio.
+    1. In DSL Explorer espandere **XML Serialization comportamento \Class data\\\<la classe di dominio > \Element data**, quindi selezionare la proprietà di dominio.
 
     2. Nel Finestra Proprietà impostare **è la chiave del moniker** su `true`.
 
@@ -158,7 +158,7 @@ Se si usano moniker di chiave qualificati, è possibile che due elementi nel mod
 
 Sono disponibili diversi metodi che consentono di evitare questa situazione:
 
-- Set **è il nome dell'elemento**  =  `true` per la proprietà del dominio chiave. Selezionare la proprietà di dominio nel diagramma di definizione DSL, quindi impostare il valore nell'Finestra Proprietà.
+- Set **è il nome dell'elemento** = `true` per la proprietà del dominio chiave. Selezionare la proprietà di dominio nel diagramma di definizione DSL, quindi impostare il valore nell'Finestra Proprietà.
 
      Quando l'utente crea una nuova istanza della classe, questo valore determina l'assegnazione automatica di un valore diverso alla proprietà del dominio. Il comportamento predefinito aggiunge un numero alla fine del nome della classe. Ciò non impedisce all'utente di modificare il nome in un duplicato, ma è utile nel caso in cui l'utente non imposti il valore prima di salvare il modello.
 
@@ -230,7 +230,7 @@ Per apportare le seguenti personalizzazioni, espandere il nodo **comportamento d
     </familyTreeModel>
     ```
 
-- Impostare la **rappresentazione**  = **elemento** in modo che una proprietà di dominio venga salvata come elemento anziché come valore di attributo.
+- Impostare la **rappresentazione** = **elemento** in modo che una proprietà di dominio venga salvata come elemento anziché come valore di attributo.
 
     ```xml
     <person name="Elizabeth I" birthYear="1533">
@@ -268,14 +268,14 @@ Questi elementi sono disponibili in Esplora DSL in **dati di serializzazione XML
 
 |||
 |-|-|
-|proprietà|Descrizione|
+|Gli|Descrizione|
 |Con schema di elemento personalizzato|Se true, indica che la classe di dominio ha uno schema di elemento personalizzato|
 |Personalizzato|Impostare su **true** se si desidera scrivere codice di serializzazione e deserializzazione personalizzato per questa classe di dominio.<br /><br /> Compilare la soluzione ed esaminare gli errori per individuare istruzioni dettagliate.|
 |Classe di dominio|Classe di dominio a cui si applica questo nodo dati della classe. Sola lettura.|
 |Nome elemento|Nome del nodo XML per gli elementi di questa classe. Il valore predefinito è una versione minuscola del nome della classe di dominio.|
-|Nome dell'attributo del moniker|Nome dell'attributo utilizzato negli elementi del moniker per contenere il riferimento. Se è vuoto, viene usato il nome della proprietà o dell'ID della chiave.<br /><br /> In questo esempio è "Name": `<personMoniker name="/Mike Nash"/>`|
+|Nome dell'attributo del moniker|Nome dell'attributo utilizzato negli elementi del moniker per contenere il riferimento. Se vuoto, viene utilizzato il nome o l'ID della proprietà chiave.<br /><br /> In questo esempio è "Name": `<personMoniker name="/Mike Nash"/>`|
 |Nome dell'elemento moniker|Nome dell'elemento XML usato per i moniker che fanno riferimento agli elementi di questa classe.<br /><br /> Il valore predefinito è una versione minuscola del nome della classe con suffisso "moniker". Ad esempio `personMoniker`.|
-|Nome del tipo di moniker|Nome del tipo XSD generato per i moniker degli elementi di questa classe. XSD è presente nel **codice Dsl\Generated \\ \*Schema. xsd**|
+|Nome del tipo di moniker|Nome del tipo XSD generato per i moniker a elementi di questa classe. XSD è presente nel **codice Dsl\Generated\\\*schema. xsd**|
 |ID serializzazione|Se true, il GUID dell'elemento è incluso nel file. Questo deve essere true se non è presente alcuna proprietà contrassegnata come **chiave del moniker** e il DSL definisce le relazioni di riferimento a questa classe.|
 |Nome tipo|Nome del tipo XML generato in XSD dalla classe di dominio designata.|
 |Note|Note informali associate a questo elemento|
@@ -286,19 +286,19 @@ I nodi di proprietà XML si trovano nei nodi della classe.
 
 |||
 |-|-|
-|proprietà|Descrizione|
+|Gli|Descrizione|
 |Proprietà di dominio|Proprietà a cui si applicano i dati di configurazione della serializzazione XML. Sola lettura.|
 |Chiave moniker|Se true, la proprietà viene utilizzata come chiave per la creazione di moniker che fanno riferimento a istanze di questa classe di dominio.|
-|Qualificatore del moniker|Se true, la proprietà viene utilizzata per la creazione del qualificatore nei moniker. Se false e se SerializeId non è true per questa classe di dominio, i moniker vengono qualificati dal moniker dell'elemento padre nell'albero di incorporamento.|
-|Rappresentazione|Se attribute, la proprietà viene serializzata come attributo XML; Se element, viene serializzato come elemento; Se ignore, non viene serializzato.|
-|Nome XML|Nome usato per l'attributo o l'elemento XML che rappresenta la proprietà. Per impostazione predefinita, si tratta di una versione minuscola del nome della proprietà di dominio.|
+|Qualificatore del moniker|Se True, la proprietà viene utilizzata per la creazione del qualificatore nei moniker. Se false e se SerializeId non è true per questa classe di dominio, i moniker vengono qualificati dal moniker dell'elemento padre nell'albero di incorporamento.|
+|Rappresentazione|Se Attribute, la proprietà viene serializzata come attributo XML, se Element, viene serializzata come elemento; se Ignore, non viene serializzata.|
+|Nome XML|Nome utilizzato per l'attributo o l'elemento XML che rappresenta la proprietà. Per impostazione predefinita, si tratta di una versione minuscola del nome della proprietà di dominio.|
 |Note|Note informali associate a questo elemento|
 
 ### <a name="xml-role-data"></a>Dati del ruolo XML
 
 I nodi dati del ruolo si trovano nei nodi della classe di origine.
 
-|proprietà|Descrizione|
+|Gli|Descrizione|
 |-|-|
 |Con moniker personalizzato|Impostare su true se si desidera fornire il proprio codice per la generazione e la risoluzione dei moniker che attraversano questa relazione.<br /><br /> Per istruzioni dettagliate, compilare la soluzione, quindi fare doppio clic sui messaggi di errore.|
 |Relazione di dominio|Specifica la relazione a cui si applicano queste opzioni. Sola lettura.|

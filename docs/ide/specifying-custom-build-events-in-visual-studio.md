@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918901"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115337"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Specificare gli eventi di compilazione personalizzati in Visual Studio
 
@@ -24,9 +24,9 @@ Se si specifica un evento di compilazione personalizzato, sarà possibile esegui
 
 Per informazioni specifiche sul linguaggio di programmazione in uso, vedere gli argomenti seguenti:
 
-- Visual Basic: [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic: [Procedura: specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- C# e F#: [Procedura: Specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C# e F#: [Procedura: Specificare eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++: [Specificare gli eventi di compilazione](/cpp/build/specifying-build-events).
 
@@ -60,4 +60,4 @@ Per ottenere risultati ottimali, seguire questi suggerimenti di formattazione:
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)
 - [Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md)
-- [Procedura dettagliata: Creare un'applicazione](../ide/walkthrough-building-an-application.md)
+- [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md) (Procedura dettagliata: Compilare un'applicazione)

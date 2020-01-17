@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4281315c8d18388cfbd4cf9bbe6b321e9e07c32b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416722"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114459"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedura: Configurare progetti per più piattaforme di destinazione
 
@@ -51,7 +51,7 @@ Poiché è possibile modificare le impostazioni in base alla combinazione di con
 
 2. Selezionare la piattaforma di destinazione dall'elenco **Piattaforma soluzione attiva**.
 
-3. Compilare la soluzione.
+3. Compila la soluzione.
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>Per creare più configurazioni di soluzione contemporaneamente
 

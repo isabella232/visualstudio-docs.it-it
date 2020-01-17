@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3241017a381370f215ed4f9211ae646dc6c80b65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 953c1ac4cb6e0f87d2a36080cc751ea26f66d63e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664838"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114499"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Procedura: Applicare la distribuzione al ritardo velocità per un modello di combinazione di test basato sulla velocità dell'utente
 
@@ -24,15 +24,15 @@ Dopo aver creato il test di carico mediante la **Creazione guidata test di caric
 La proprietà **Applica distribuzione a ritardo velocità** viene impostata tramite la finestra **Proprietà**. Le proprietà degli scenari dei test di carico vengono modificate tramite l'Editor test di carico.
 
 > [!NOTE]
-> La proprietà **Applica distribuzione a ritardo velocità** si applica solo se la *combinazione di test di carico* viene configurata in base alla velocità dell'utente. Per altre informazioni, vedere [Modificare modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+> La proprietà **Applica distribuzione a ritardo velocità** si applica solo se la *combinazione di test di carico* viene configurata in base alla velocità dell'utente. Per altre informazioni, vedere [Modifica di modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
 È possibile impostare il valore della proprietà **Applica distribuzione a ritardo velocità** su True o False:
 
-- **True**: lo scenario applicherà ritardi di distribuzione statistici normali specificati dal valore nella colonna **Test per utente all'ora** nella finestra di dialogo **Modifica combinazione di test**. Per altre informazioni, vedere [Modificare modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **True**: lo scenario applicherà ritardi di distribuzione statistici normali specificati dal valore nella colonna **Test per utente all'ora** nella finestra di dialogo **Modifica combinazione di test**. Per altre informazioni, vedere [Modifica di modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
      Si supponga ad esempio di avere il valore **Test per utente all'ora** nella finestra di dialogo **Modifica combinazione di test** impostato su 2 utenti all'ora. Se la proprietà **Applica distribuzione a ritardo velocità** è impostata su **True**, una distribuzione statistica normale viene applicata al tempo di attesa tra i test. I test verranno ancora eseguiti in numero di 2 all'ora, ma non trascorrerà necessariamente un ritardo di 30 minuti tra le esecuzioni. Il primo test potrebbe venire eseguito dopo 4 minuti e il secondo test dopo 45 minuti.
 
-- **False**: i test verranno eseguiti con la velocità specificata con il valore della colonna **Test per utente all'ora** della finestra di dialogo **Modifica combinazione di test**. Per altre informazioni, vedere [Modificare modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **False**: i test verranno eseguiti con la velocità specificata con il valore della colonna **Test per utente all'ora** della finestra di dialogo **Modifica combinazione di test**. Per altre informazioni, vedere [Modifica di modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
      Si supponga ad esempio di avere il valore **Test per utente all'ora** nella finestra di dialogo **Modifica combinazione di test** impostato su 2 utenti all'ora. Se la proprietà **Applica distribuzione a ritardo velocità** è impostata su **False**, non si prevede alcun intervallo di tolleranza nell'esecuzione dei test. Il test verrà eseguito ogni 30 minuti. In questo modo si è certi che verranno eseguiti 2 test all'ora.
 

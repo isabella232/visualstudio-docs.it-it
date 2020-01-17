@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748530"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115189"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Proprietà di archiviazione calcolate e personalizzate
 Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) possono essere visualizzate all'utente nel diagramma e in Esplora linguaggio ed è possibile accedervi tramite codice programma. Tuttavia, le proprietà differiscono in base alla modalità di archiviazione dei relativi valori.
@@ -26,7 +26,7 @@ Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) poss
 |-|-|
 |**Standard** (impostazione predefinita)|Proprietà di dominio salvata nell' *Archivio* e serializzata in un file.|
 |**Calcolato**|Proprietà di dominio di sola lettura che non viene salvata nell'archivio, ma viene calcolata da altri valori.<br /><br /> È ad esempio possibile calcolare `Person.Age` da `Person.BirthDate`.<br /><br /> È necessario fornire il codice per eseguire il calcolo. In genere, il valore viene calcolato dalle altre proprietà del dominio. Tuttavia, è anche possibile usare le risorse esterne.|
-|**Archiviazione personalizzata**|Proprietà di dominio che non viene salvata direttamente nell'archivio, ma che può essere Get e set.<br /><br /> È necessario fornire i metodi che ottengono e impostano il valore.<br /><br /> Ad esempio, `Person.FullAddress` possibile archiviare in `Person.StreetAddress`, `Person.City` e `Person.PostalCode`.<br /><br /> È anche possibile accedere alle risorse esterne, ad esempio per ottenere e impostare i valori da un database.<br /><br /> Il codice non deve impostare i valori nell'archivio quando `Store.InUndoRedoOrRollback` è true. Vedere [transazioni e setter personalizzati](#setters).|
+|**Archiviazione personalizzata**|Proprietà di dominio che non viene salvata direttamente nell'archivio, ma che può essere Get e set.<br /><br /> È necessario fornire i metodi che ottengono e impostano il valore.<br /><br /> Ad esempio, `Person.FullAddress` possibile archiviare in `Person.StreetAddress`, `Person.City`e `Person.PostalCode`.<br /><br /> È anche possibile accedere alle risorse esterne, ad esempio per ottenere e impostare i valori da un database.<br /><br /> Il codice non deve impostare i valori nell'archivio quando `Store.InUndoRedoOrRollback` è true. Vedere [transazioni e setter personalizzati](#setters).|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Fornire il codice per una proprietà di archiviazione calcolata o personalizzata
  Se si imposta il tipo di una proprietà di dominio su un archivio calcolato o personalizzato, è necessario fornire i metodi di accesso. Quando si compila la soluzione, una segnalazione errori indica gli elementi necessari.
@@ -52,7 +52,7 @@ Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) poss
     > [!NOTE]
     > Questo file viene generato da DslDefinition. DSL. Se si modifica questo file, le modifiche andranno perse la volta successiva che si fa clic su **trasforma tutti i modelli**. Aggiungere invece il metodo richiesto in un file separato.
 
-6. Creare o aprire un file di classe in una cartella separata, ad esempio CustomCoded \\*YourDomainClass*. cs.
+6. Creare o aprire un file di classe in una cartella separata, ad esempio CustomCoded\\*YourDomainClass*. cs.
 
      Verificare che lo spazio dei nomi corrisponda a quello del codice generato.
 
@@ -66,7 +66,7 @@ Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) poss
     }  }
     ```
 
-8. Se si imposta **Kind** sull' **archiviazione personalizzata**, sarà necessario fornire anche un `Set` metodo. Esempio:
+8. Se si imposta **Kind** sull' **archiviazione personalizzata**, sarà necessario fornire anche un `Set` metodo. Ad esempio:
 
     ```
     void SetAgeValue(int value)
@@ -90,7 +90,7 @@ Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) poss
 
 - Tuttavia, deve aggiornare tutte le risorse esterne, ad esempio il contenuto di un database o di un file, o oggetti all'esterno dell'archivio. In questo modo verranno mantenuti sincronizzati con i valori nell'archivio.
 
-  Esempio:
+  Ad esempio:
 
 ```
 void SetAgeValue(int value)
