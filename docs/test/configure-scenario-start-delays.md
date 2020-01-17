@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, start delays
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d6144312741b2ef75d0b06979495571d97baf0b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665178"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111472"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurare ritardi di avvio di uno scenario nei test di carico
 
@@ -43,7 +43,7 @@ Un altro esempio è costituito da uno scenario eseguito solo a una determinata o
 
 1. Aprire un test di carico.
 
-     Verrà visualizzato l'Editor test di carico. Verrà visualizzata la struttura ad albero del test di carico.
+     Viene visualizzato l'Editor test di carico. Verrà visualizzata la struttura ad albero del test di carico.
 
 2. Nella cartella **Scenari** dell'albero del test di carico scegliere il nodo dello scenario per il quale si desidera specificare il ritardo per l'ora di inizio.
 
@@ -81,7 +81,7 @@ La proprietà **Disabilita durante riscaldamento** viene usata per indicare se e
 
      Nella proprietà **Disabilita durante riscaldamento** selezionare **True** o **False.**
 
-4. Dopo avere modificato la proprietà scegliere **Salva** nel menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Disabilita durante riscaldamento**.
+4. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Disabilita durante riscaldamento**.
 
 ## <a name="see-also"></a>Vedere anche
 

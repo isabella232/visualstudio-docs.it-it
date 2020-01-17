@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2274333de9255ff818b4ee6952bfa1b2a99c59b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650435"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111441"
 ---
 # <a name="flowdecision-activity-designer"></a>ActivityDesigner FlowDecision
 
@@ -27,7 +27,7 @@ Usare <xref:System.Activities.Statements.FlowDecision> quando per il flusso è p
 
 ### <a name="using-the-flowdecision-designer"></a>Utilizzo dell'ActivityDesigner FlowDecision
 
-**FlowDecision** designer è disponibile nella categoria diagramma di **flusso** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** nella progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** oppure premere **CTRL** +**ALT** +**X**.
+**FlowDecision** designer è disponibile nella categoria diagramma di **flusso** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** nella progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** oppure premere **CTRL**+**ALT**+**X**.
 
 La finestra di progettazione **FlowDecision** può essere trascinata dalla **casella degli strumenti** e rilasciata nell'area Progettazione flussi di lavoro all'interno di un ActivityDesigner **Flowchart** . Viene creata una <xref:System.Activities.Statements.FlowDecision> **decisione** denominata nell'attività <xref:System.Activities.Statements.Flowchart>. Passare il mouse sulla finestra di progettazione e visualizzare gli handle quadrati **veri** e **falsi** per i due rami.
 
@@ -39,11 +39,11 @@ L'espressione che dichiara la <xref:System.Activities.Statements.FlowDecision.Co
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.FlowDecision> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.
 
-|Nome proprietà|Richiesto|Utilizzo|
+|Nome proprietà:|Richiesto|Usage|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|Condizione che determina il percorso seguito dal controllo di flusso.|
-|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Percorso seguito dal controllo di flusso se viene soddisfatta <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
-|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Percorso seguito dal controllo di flusso se non viene soddisfatta <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
+|<xref:System.Activities.Statements.FlowDecision.True%2A>|Falso|Percorso seguito dal controllo di flusso se viene soddisfatta <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
+|<xref:System.Activities.Statements.FlowDecision.False%2A>|Falso|Percorso seguito dal controllo di flusso se non viene soddisfatta <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|
 
 ## <a name="see-also"></a>Vedere anche
 

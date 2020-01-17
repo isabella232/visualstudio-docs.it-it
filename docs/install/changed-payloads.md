@@ -3,19 +3,19 @@ title: Quando i payload dei pacchetti cambiano dopo un rilascio
 description: Quando si crea un layout, scoprire come determinare se i payload dei pacchetti sono cambiati dopo il rilascio di una versione.
 ms.date: 05/22/2019
 ms.topic: conceptual
-author: et13
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a4eb286344b6dce7a4814089db013965eb34c98
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: HT
+ms.openlocfilehash: dec1478314e752ddace8fae822747e7c8e328b70
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402261"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114584"
 ---
 # <a name="package-payload-changes"></a>Modifiche al payload del pacchetto
 

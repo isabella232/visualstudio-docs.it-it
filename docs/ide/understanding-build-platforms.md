@@ -17,27 +17,27 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925836"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115071"
 ---
 # <a name="understand-build-platforms"></a>Informazioni sulle piattaforme di compilazione
 
 È possibile archiviare versioni diverse delle proprietà di soluzione e progetto che si applicano a piattaforme di destinazione diverse. Ad esempio, è possibile creare una configurazione di debug che ha come destinazione una piattaforma x86 e una configurazione di debug che ha come destinazione una piattaforma x64. È possibile modificare rapidamente la piattaforma attiva in modo da creare con facilità più configurazioni.
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 
-[Procedura: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Procedura: configurare progetti per piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md)\
 Viene illustrato come configurare un progetto per una determinata piattaforma di destinazione.
 
-[Procedura: Configurare progetti per più piattaforme di destinazione](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Procedura: configurare progetti per più piattaforme di destinazione](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Viene illustrato come configurare un progetto per più piattaforme di destinazione.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Creare un'applicazione](../ide/walkthrough-building-an-application.md)
+- [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md) (Procedura dettagliata: Compilare un'applicazione)
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)

@@ -3,17 +3,17 @@ title: È stato selezionato un oggetto di database da un provider di database no
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b1dd14c428b90b87e665aa41681b5a9e68eb00e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b7e24604f965a7f518ee7802e2eeb6a84e74ddb
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648017"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113270"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>È stato selezionato un oggetto di database da un provider di database non supportato
 
@@ -22,7 +22,7 @@ La **finestra di progettazione O/R** supporta solo i provider di dati .NET Frame
 > [!NOTE]
 > Sono supportate solo connessioni dati che usano il provider di dati .NET Framework per SQL Server.
 
-## <a name="options"></a>Opzioni
+## <a name="options"></a>Options
 
 - Fare clic su **OK** per continuare a progettare le classi di entità con mapping alla connessione che usa il provider del database non supportato. Quando si usano provider del database non supportati, potrebbe verificarsi un comportamento imprevisto.
 
