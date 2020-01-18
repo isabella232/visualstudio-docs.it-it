@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82ce8a1b9cbc79925ff2f4a1c1df9d832bb96f7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78cbcc9b2efd37aa99906d7ed7708621ec213b2e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632520"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269076"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Procedura dettagliata: visualizzare il completamento delle istruzioni
 È possibile implementare il completamento delle istruzioni basate sul linguaggio definendo gli identificatori per i quali si desidera fornire il completamento e quindi attivare una sessione di completamento. È possibile definire il completamento delle istruzioni nel contesto di un servizio di linguaggio, definire l'estensione del nome di file e il tipo di contenuto e quindi visualizzare il completamento solo per quel tipo. In alternativa, è possibile attivare il completamento per un tipo di contenuto esistente, ad esempio "testo normale". In questa procedura dettagliata viene illustrato come attivare il completamento delle istruzioni per il tipo di contenuto "testo normale", che è il tipo di contenuto dei file di testo. Il tipo di contenuto "Text" è il predecessore di tutti gli altri tipi di contenuto, inclusi il codice e i file XML.
@@ -27,7 +27,7 @@ ms.locfileid: "72632520"
 
  In questa procedura dettagliata viene illustrato come implementare il completamento delle istruzioni per un set hardcoded di identificatori. Nelle implementazioni complete, il servizio di linguaggio e la documentazione della lingua sono responsabili di fornire tale contenuto.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Creare un progetto MEF
@@ -42,17 +42,17 @@ ms.locfileid: "72632520"
 
 4. Aggiungere i riferimenti seguenti al progetto e assicurarsi che **CopyLocal** sia impostato su `false`:
 
-     Microsoft. VisualStudio. Editor
+     Microsoft.VisualStudio.Editor
 
      Microsoft.VisualStudio.Language.Intellisense
 
-     Microsoft. VisualStudio. OLE. Interop
+     Microsoft.VisualStudio.OLE.Interop
 
-     Microsoft. VisualStudio. Shell. 14.0
+     Microsoft. VisualStudio. Shell. 15.0
 
-     Microsoft. VisualStudio. Shell. Immutable. 10.0
+     Microsoft.VisualStudio.Shell.Immutable.10.0
 
-     Microsoft. VisualStudio. TextManager. Interop
+     Microsoft.VisualStudio.TextManager.Interop
 
 ## <a name="implement-the-completion-source"></a>Implementare l'origine di completamento
  L'origine di completamento è responsabile della raccolta del set di identificatori e dell'aggiunta del contenuto alla finestra di completamento quando un utente digita un trigger di completamento, ad esempio le prime lettere di un identificatore. In questo esempio, gli identificatori e le relative descrizioni sono hardcoded nel metodo <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>. Nella maggior parte degli usi reali, si userà il parser del linguaggio per ottenere i token per popolare l'elenco di completamento.
@@ -133,7 +133,7 @@ ms.locfileid: "72632520"
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
 
-4. Importare la <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, che consente la conversione da un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> a un <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> e un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> che consente l'accesso ai servizi standard di Visual Studio.
+4. Importare la <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, che consente la conversione da un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> a un <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>e un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> che consente l'accesso ai servizi standard di Visual Studio.
 
      [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
      [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]
@@ -196,7 +196,7 @@ ms.locfileid: "72632520"
 
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Per compilare e testare la soluzione CompletionTest
 
-1. Compilare la soluzione.
+1. Compila la soluzione.
 
 2. Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
 

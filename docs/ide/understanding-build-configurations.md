@@ -26,24 +26,34 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0b1bff60cb30546d28cd68007ffc6f059d8d02f
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 47a76c054a71d88800bf1af225c332c9df3d2035
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115121"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269169"
 ---
 # <a name="understand-build-configurations"></a>Informazioni sulle configurazioni della build
 
-È possibile memorizzare diverse configurazioni di proprietà per soluzioni e progetti da usare in tipi di compilazioni differenti. Per creare, selezionare, modificare o eliminare una configurazione, è possibile usare **Gestione configurazione**. Per aprirlo, nella barra dei menu scegliere **Compilazione** > **Gestione configurazione** oppure digitare **configurazione** nella casella di ricerca. È inoltre possibile usare l'elenco **Configurazioni soluzione** sulla barra degli strumenti **Standard** per selezionare una configurazione o aprire **Gestione configurazione**.
+Sono necessarie configurazioni di compilazione quando è necessario compilare i progetti con impostazioni diverse. Ad esempio, il **debug** e il **rilascio** sono configurazioni e le diverse opzioni del compilatore vengono usate di conseguenza durante la compilazione.  Una configurazione è attiva ed è indicata nella barra dei comandi nella parte superiore dell'IDE.
+
+![Configurazione attiva](media/understanding-build-configurations/active-config.png)
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Build configurations in Visual Studio for Mac](/visualstudio/mac/configurations) (Compilazione di configurazioni in Visual Studio for Mac).
 
+La configurazione e il controllo della piattaforma in cui vengono archiviati i file di output compilati. In genere, quando Visual Studio compila il progetto, l'output viene inserito in una sottocartella del progetto denominata con la configurazione attiva (ad esempio *bin/debug/x86*), ma è possibile modificarla.
+
+È possibile creare configurazioni di compilazione personalizzate a livello di soluzione e di progetto. La configurazione della soluzione determina i progetti inclusi nella compilazione quando tale configurazione è attiva. Verranno compilati solo i progetti specificati nella configurazione della soluzione attiva. La configurazione del progetto determina le impostazioni di compilazione e le opzioni del compilatore utilizzate quando si compila il progetto.
+
+Per creare, selezionare, modificare o eliminare una configurazione, è possibile usare **Gestione configurazione**. Per aprirlo, nella barra dei menu scegliere **Compilazione** > **Gestione configurazione** oppure digitare **configurazione** nella casella di ricerca. È inoltre possibile usare l'elenco **Configurazioni soluzione** sulla barra degli strumenti **Standard** per selezionare una configurazione o aprire **Gestione configurazione**.
+
+![Configuration Manager](media/understanding-build-configurations/config-manager.png)
+
 > [!NOTE]
 > Se le impostazioni di configurazione della soluzione non vengono trovate sulla barra degli strumenti oppure se non è possibile accedere a **Gestione configurazione**, è possibile che siano applicate le impostazioni di sviluppo di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Per altre informazioni, vedere [Procedura: Gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Per impostazione predefinita, le configurazioni per il debug e il rilascio sono incluse nei progetti creati mediante i modelli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Una configurazione per il debug supporta il debug di un'applicazione, mentre una configurazione per il rilascio consente di compilare una versione dll'applicazione che può essere distribuita. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). È inoltre possibile creare configurazioni personalizzate per progetti e soluzioni. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
+Per impostazione predefinita, le configurazioni di **debug** e **rilascio** sono incluse nei progetti creati tramite modelli di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Una configurazione di **debug** supporta il debug di un'app e una **configurazione di versione compila** una versione dell'app che può essere distribuita. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). È inoltre possibile creare configurazioni personalizzate per progetti e soluzioni. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Configurazioni di soluzioni
 
@@ -51,34 +61,28 @@ In una configurazione per la soluzione viene specificato il modo in cui i proget
 
 Ogni voce nella casella **Contesti progetto** di una configurazione per la soluzione rappresenta un progetto nella soluzione. Per ogni combinazione di **Configurazione soluzione attiva** e **Piattaforma soluzione attiva**, è possibile definire il modo in cui ogni progetto viene usato. Per altre informazioni sulle piattaforme per la soluzione, vedere [Informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md).
 
-> [!NOTE]
-> Quando si definisce una nuova configurazione per la soluzione e si seleziona la casella di controllo **Crea nuove configurazioni progetto**, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene assegnata automaticamente la nuova configurazione a tutti i progetti. In modo analogo, quando si definisce una nuova configurazione per la soluzione e si seleziona la casella di controllo **Crea nuove piattaforme progetto**, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene assegnata automaticamente la nuova configurazione a tutti i progetti. Inoltre, se si aggiunge un progetto destinato a una nuova piattaforma, in Visual Studio tale piattaforma viene aggiunta all'elenco delle piattaforme per la soluzione e assegnata a tutti i progetti.
->
-> È ancora possibile modificare le impostazioni per ogni progetto.
+Quando si definisce una nuova configurazione per la soluzione e si seleziona la casella di controllo **Crea nuove configurazioni progetto**, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene assegnata automaticamente la nuova configurazione a tutti i progetti. In modo analogo, quando si definisce una nuova configurazione per la soluzione e si seleziona la casella di controllo **Crea nuove piattaforme progetto**, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene assegnata automaticamente la nuova configurazione a tutti i progetti. Inoltre, se si aggiunge un progetto destinato a una nuova piattaforma, in Visual Studio tale piattaforma viene aggiunta all'elenco delle piattaforme per la soluzione e assegnata a tutti i progetti. È ancora possibile modificare le impostazioni per ogni progetto.
 
 La configurazione per la soluzione attiva fornisce anche il contesto all'IDE. Se, ad esempio, si sta lavorando a un progetto e nella configurazione per la soluzione attiva viene specificata la compilazione per un dispositivo mobile, nella **Casella degli strumenti** verranno visualizzati solo gli elementi del progetto che possono essere usati in un progetto per un dispositivo mobile.
 
 ## <a name="project-configurations"></a>Configurazioni di progetto
-La piattaforma e la configurazione correlate a un progetto vengono usate congiuntamente per specificare le proprietà da usare durante le compilazione. A un progetto può essere associato un set di definizioni di proprietà diverso per ogni combinazione di configurazione e piattaforma. Per modificare le proprietà di un progetto, è possibile usare le pagine delle proprietà. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e scegliere **Proprietà**.
 
-Per ogni configurazione di progetto, possono essere definite le proprietà dipendenti dalla configurazione in base alle esigenze. Per una determinata compilazione, ad esempio, è possibile impostare gli elementi del progetto che verranno inclusi, i file di output che verranno creati, la posizione in cui saranno collocati e il modo in cui verranno ottimizzati.
+La configurazione e la piattaforma di destinazione di un progetto vengono utilizzate insieme per specificare le impostazioni di compilazione e le opzioni del compilatore da utilizzare durante la compilazione. Un progetto può avere impostazioni diverse per ogni combinazione di configurazione e piattaforma. Per modificare le proprietà di un progetto, aprire il menu di scelta rapida del progetto in **Esplora soluzioni**, quindi scegliere **Proprietà**.  Nella parte superiore della scheda **compilazione** di progettazione progetti scegliere una configurazione attiva per modificare le impostazioni di compilazione.
 
-Le configurazioni di progetto possono variare notevolmente. Nelle proprietà di una configurazione di progetto può ad esempio essere specificata l'ottimizzazione del file di output, in modo che il file binario che ne risulta occupi uno spazio minimo, mentre un altro progetto può essere ottimizzato in modo che l'esecuzione avvenga alla velocità massima possibile.
-
-Le configurazioni di progetto non vengono archiviate per utente bensì per soluzione, in modo che possano essere condivise.
-
-Nonostante le dipendenze dei progetti siano indipendenti dalla configurazione, verranno compilati solo i progetti specificati nella configurazione di soluzione attiva.
+![Configurazioni di progettazione progetti](media/understanding-build-configurations/project-designer-configuration.png)
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Modalità di assegnazione delle configurazioni di progetto in Visual Studio
+
 Quando si definisce una nuova configurazione di soluzione e non la si copia da una già esistente, in Visual Studio vengono usati i criteri seguenti per assegnare configurazioni di progetto predefinite. I criteri vengono valutati nell'ordine indicato.
 
 1. Se il nome di configurazione ( *\<nome configurazione> \<nome piattaforma>* ) di un progetto corrisponde esattamente al nome della nuova configurazione per la soluzione, viene assegnata la configurazione specifica. I nomi delle configurazioni non rispettano la distinzione tra maiuscole e minuscole.
 
-2. Se il progetto include un nome di configurazione in cui la parte del nome corrisponde alla nuova configurazione per la soluzione, tale configurazione viene assegnata, anche se le piattaforme non coincidono.
+1. Se il progetto include un nome di configurazione in cui la parte del nome corrisponde alla nuova configurazione per la soluzione, tale configurazione viene assegnata, anche se le piattaforme non coincidono.
 
-3. Se non esiste alcuna corrispondenza, viene assegnata la prima configurazione elencata nel progetto.
+1. Se non esiste alcuna corrispondenza, viene assegnata la prima configurazione elencata nel progetto.
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Modalità di assegnazione delle configurazioni per le soluzioni in Visual Studio
+
 Quando si crea una configurazione per il progetto (in **Gestione configurazione** scegliere **Nuovo** nel menu a discesa nella colonna **Configurazione** del progetto) e si seleziona la casella di controllo **Crea nuove configurazioni soluzione**, in Visual Studio viene cercata una configurazione con lo stesso nome per compilare il progetto per ogni piattaforma supportata. In alcuni casi, le configurazioni di soluzione esistenti vengono rinominate o ne vengono definite di nuove.
 
 In Visual Studio vengono usati i criteri seguenti per assegnare configurazioni di soluzione.
@@ -93,5 +97,5 @@ In Visual Studio vengono usati i criteri seguenti per assegnare configurazioni d
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)
 - [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)
 - [Riferimenti alla compilazione in C/C++](/cpp/build/reference/c-cpp-building-reference)
-- [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md)
+- [Informazioni sulle piattaforme di compilazione](understanding-build-platforms.md)
 - [Build configurations (Visual Studio per Mac)](/visualstudio/mac/configurations) (Compilare configurazioni)
