@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcd9b9d5e336bfa0595ddd6d70032f7ba7fe780a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2bf9c64a55f6f3b49cb1e0a50fa532f276394dac
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299403"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851994"
 ---
 # <a name="application-page-project-designer-c"></a>Applicazione (pagina), Creazione progetti (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
 > [!NOTE]
 > I pacchetti dei prerequisiti elencati nella [finestra di dialogo Prerequisiti](../../ide/reference/prerequisites-dialog-box.md) vengono impostati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario selezionare manualmente i prerequisiti in modo che vi sia corrispondenza.
 
- Per altre informazioni, vedere [How to: Target a Version of the .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) (Procedura: Destinare una versione di .NET Framework) e [Visual Studio Multi-Targeting Overview](../../ide/visual-studio-multi-targeting-overview.md) (Cenni preliminari sul multitargeting di Visual Studio).
+ Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Panoramica del multitargeting di Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
  **Tipo di applicazione** Specifica il tipo di applicazione da compilare. Per app di [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] è possibile specificare **App di Windows Store**, **Libreria di classi** o **File WinMD**. Per la maggior parte degli altri tipi di applicazione, è possibile specificare **Applicazione Windows**, **Applicazione console**, **Libreria di classi**, **Servizio Windows** o **Libreria di controlli Web**.
 
  Per il progetto di un'applicazione Web è necessario specificare **Libreria di classi**.
 
- Se si specifica l'opzione **File WinMD**, i tipi possono essere inseriti nel progetto in un qualsiasi linguaggio di programmazione Windows Runtime. Creando un pacchetto dell'output del progetto nel formato File WinMD, è possibile codificare un'applicazione in più linguaggi e fare in modo che il codice interagisca come se fosse stato scritto tutto nello stesso linguaggio. È possibile specificare questa opzione per le soluzioni destinate alle librerie Windows Runtime, tra cui le app di [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]. Per altre informazioni, vedere [Creazione di componenti Windows Runtime in C# e Visual Basic](https://go.microsoft.com/fwlink/?LinkId=231895).
+ Se si specifica l'opzione **File WinMD**, i tipi possono essere inseriti nel progetto in un qualsiasi linguaggio di programmazione Windows Runtime. Creando un pacchetto dell'output del progetto nel formato File WinMD, è possibile codificare un'applicazione in più linguaggi e fare in modo che il codice interagisca come se fosse stato scritto tutto nello stesso linguaggio. È possibile specificare questa opzione per le soluzioni destinate alle librerie Windows Runtime, tra cui le app di [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]. Per altre informazioni, vedere [Creazione di componenti Windows Runtime in C# e Visual Basic](https://msdn.microsoft.com/library/windows/apps/br230301(v=VS.85).aspx).
 
 > [!NOTE]
 > Windows Runtime può fare in modo che i tipi appaiano come oggetti nativi in qualsiasi linguaggio siano usati. Ad esempio, le applicazioni JavaScript che interagiscono con Windows Runtime usano quest'ultimo come un set di oggetti JavaScript, mentre le applicazioni C# usano la libreria come una raccolta di oggetti .NET. Creando un pacchetto dell'output del progetto nel formato File WinMD, è possibile sfruttare la stessa tecnologia usata da Windows Runtime.
@@ -90,4 +90,4 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
   Immettere un nome di percorso o usare il pulsante Sfoglia ( **...** ) per aggiungere un file di risorse Win32 al progetto.
 
 ## <a name="see-also"></a>Vedere anche
-[Gestione delle proprietà delle applicazioni](../../ide/application-properties.md) [Scrittura di codice nelle soluzioni Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Gestione delle proprietà delle applicazioni](../../ide/application-properties.md)[Scrittura di codice nelle soluzioni Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

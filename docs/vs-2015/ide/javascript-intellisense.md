@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300746"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848389"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense consente di scrivere codice più velocemente e con meno errori forn
 ### <a name="UserDefined"></a> Variabili definite dall'utente, funzioni e oggetti
  Quando si modifica un file JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] analizza i documenti aperti e quelli a cui viene fatto riferimento per determinare tutte le risorse di codice disponibili, ad esempio le variabili, le funzioni e gli oggetti creati. Queste risorse diventano quindi disponibili per JavaScript IntelliSense.
 
- Per altre informazioni su variabili, funzioni e oggetti definiti dall'utente, vedere [Creazione di oggetti](https://go.microsoft.com/fwlink/?LinkId=108671) nel sito Web MSDN.
+ Per altre informazioni su variabili, funzioni e oggetti definiti dall'utente, vedere [Creazione di oggetti](https://msdn.microsoft.com/library/202863ha.aspx) nel sito Web MSDN.
 
 ### <a name="External"></a> Riferimenti a file esterni
  È possibile includere vari tipi di riferimenti a file esterni per ottenere il supporto IntelliSense nel codice. Può trattarsi di riferimenti di script, direttive reference oppure possono essere specificati mediante gruppi di riferimenti.
@@ -283,6 +283,6 @@ IntelliSense consente di scrivere codice più velocemente e con meno errori forn
 - [Estensione di IntelliSense in JavaScript](../ide/extending-javascript-intellisense.md)
 - [Completamento delle istruzioni per gli identificativi](../ide/statement-completion-for-identifiers.md)
 - [Commenti relativi alla documentazione XML](../ide/xml-documentation-comments-javascript.md)
-- [Informazioni sul modello a oggetti DHTML](https://go.microsoft.com/fwlink/?LinkID=92344)
+- [Informazioni sul modello a oggetti DHTML](https://msdn2.microsoft.com/library/ms533022.aspx)
 - [Elenca membri](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [Attributo SRC &#124; Proprietà src](https://go.microsoft.com/fwlink/?LinkId=92345)
+- [Attributo SRC &#124; Proprietà src](https://msdn2.microsoft.com/library/ms534642.aspx)
