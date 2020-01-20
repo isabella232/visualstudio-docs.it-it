@@ -26,12 +26,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f394cca9a248b5304a165f68a60b966d8e3684b2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d57cee8591196d12e51e58fb0e5e6a4a2cdf94a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291365"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848371"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introduzione alle applicazioni internazionali basate su .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la creazione di applicazioni pr
 
  Il modello di localizzazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] è costituito da un assembly principale che contiene il codice dell'applicazione e le risorse di fallback, ovvero stringhe, immagini e altri oggetti per il linguaggio in cui è sviluppata l'applicazione originale. Ogni applicazione localizzata avrà assembly satellite o assembly che contengono solo le risorse localizzate. Poiché l'assembly principale contiene sempre le risorse di fallback, se la risorsa non viene trovata nell'assembly satellite localizzato, <xref:System.Resources.ResourceManager> proverà a caricarlo in maniera gerarchica, usando la risorsa dell'assembly principale. Il sistema di fallback delle risorse è illustrato più dettagliatamente in [Organizzazione gerarchica di risorse per la localizzazione](../ide/hierarchical-organization-of-resources-for-localization.md).
 
- Una risorsa di localizzazione da considerare è il glossario di tutti i prodotti Microsoft localizzati. Questo file CSV contiene più di 12.000 termini inglesi e le traduzioni dei termini in 59 lingue diverse. Il glossario è disponibile per il download nella pagina Web [Microsoft Terminology Translations](https://go.microsoft.com/fwlink/?LinkId=128146).
+ Una risorsa di localizzazione da considerare è il glossario di tutti i prodotti Microsoft localizzati. Questo file CSV contiene più di 12.000 termini inglesi e le traduzioni dei termini in 59 lingue diverse. Il glossario è disponibile per il download nella pagina Web [Microsoft Terminology Translations](https://msdn.microsoft.com/goglobal/bb688105.aspx).
 
  Il sistema di progetto per applicazioni Windows Form può generare file di risorse per il fallback e per le impostazioni cultura dell'interfaccia utente aggiuntive. Il file di risorse di fallback viene compilato nell'assembly principale e i file di risorse specifiche delle impostazioni cultura vengono quindi compilati in assembly satellite, separati individualmente per impostazioni cultura dell'interfaccia utente. Quando si compila un progetto, i file di risorse vengono compilati dal formato XML di Visual Studio (con estensione RESX) in un formato binario intermedio (con estensione resources) e incorporati in assembly satellite.
 
@@ -50,4 +50,4 @@ In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la creazione di applicazioni pr
 
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Globalization> <xref:System.Resources>
- [Globalizzazione e localizzazione](../ide/globalizing-and-localizing-applications.md) della protezione delle applicazioni [e degli assembly satellite localizzati](../ide/security-and-localized-satellite-assemblies.md)
+ [Globalizzazione e localizzazione di applicazioni](../ide/globalizing-and-localizing-applications.md) [Sicurezza e assembly satellite localizzati](../ide/security-and-localized-satellite-assemblies.md)

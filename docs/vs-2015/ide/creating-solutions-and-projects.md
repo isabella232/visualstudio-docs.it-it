@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 10375e00eb850691e88d01c56a87bb967c40e9ea
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300605"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850573"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ I progetti sono i contenitori logici di tutti gli elementi necessari per compila
  È necessario disporre di .NET Framework 3.5 installato nel sistema peri accedere alle versioni di framework precedenti alla 4.0.
 
 ## <a name="downloading-sample-solutions"></a>Download di soluzioni di esempio
- È possibile usare Visual Studio per scaricare e installare esempi di soluzioni dalla [raccolta di codici MSDN](https://go.microsoft.com/fwlink/?LinkId=254185).
+ È possibile usare Visual Studio per scaricare e installare esempi di soluzioni dalla [raccolta di codici MSDN](https://code.msdn.microsoft.com/).
 
  È possibile scaricare esempi individualmente oppure scaricare un Pacchetto di esempi contenente gli esempi correlati che condividono una tecnologia o un argomento. Si riceverà una notifica al momento della pubblicazione delle modifiche apportate al codice sorgente per ogni esempio scaricato.
 
@@ -94,4 +94,4 @@ I progetti sono i contenitori logici di tutti gli elementi necessari per compila
 3. Selezionare la directory contenente la soluzione e premere CANC.
 
 ## <a name="see-also"></a>Vedere anche
- [Soluzioni e progetti ](../ide/solutions-and-projects-in-visual-studio.md) [NIB procedura: creare soluzioni multiprogetto](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md) [NIB Procedura: Creare soluzioni basate su più progetti](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
