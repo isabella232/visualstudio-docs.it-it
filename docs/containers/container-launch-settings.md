@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: b8c732fb847e4d9944e0d6a5405a29e7879cbdc9
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400869"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542594"
 ---
 # <a name="container-tools-launch-settings"></a>Impostazioni di avvio degli strumenti contenitore
 
@@ -53,7 +53,7 @@ L'impostazione CommandName indica che questa sezione si applica agli strumenti c
 |Nome impostazione|Versione|Esempio|Descrizione|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|"launchBrowser": true|Indica se avviare il browser dopo aver avviato correttamente il progetto.|
-|launchUrl|Visual Studio 2017|"launchUrl": "schema\<>://\<serviceHost >:\<servicePort >"|Questo URL viene usato quando si avvia il browser.  I token di sostituzione supportati per questa stringa sono:<br>   \<schema > sostituito con "http" o "https", a seconda che venga utilizzato SSL.<br>   \<serviceHost >, in genere sostituita con "localhost". Quando si fa riferimento a contenitori Windows in Windows 10 RS3 o versioni precedenti, tuttavia, viene sostituito con l'IP del contenitore.<br>   \<servicePort >, in genere sostituita da sslPort o httpPort, a seconda che venga utilizzato SSL.  Quando si fa riferimento a contenitori di Windows in Windows 10 RS3 o versioni precedenti, tuttavia, viene sostituito con "443" o "80", a seconda che venga usato SSL.|
+|launchUrl|Visual Studio 2017|"launchUrl": "{Scheme}://{ServiceHost}: {ServicePort}"|Questo URL viene usato quando si avvia il browser.  I token di sostituzione supportati per questa stringa sono:<br>   {Scheme}: sostituito con "http" o "https" a seconda che si stia usando SSL.<br>   {ServiceHost}-generalmente sostituito con "localhost". Quando si fa riferimento a contenitori Windows in Windows 10 RS3 o versioni precedenti, tuttavia, viene sostituito con l'IP del contenitore.<br>   {ServicePort}: in genere sostituito con sslPort o httpPort, a seconda che venga usato SSL.  Quando si fa riferimento a contenitori di Windows in Windows 10 RS3 o versioni precedenti, tuttavia, viene sostituito con "443" o "80", a seconda che venga usato SSL.|
 
 ::: moniker-end
 
@@ -69,11 +69,11 @@ L'impostazione CommandName indica che questa sezione si applica agli strumenti c
 | httpPort             | "httpPort": 24051                                     | Questa porta sull'host viene mappata alla porta 80 del contenitore all'avvio del contenitore.                                |
 |                      |                                                       | Se non è specificato, il valore viene ricavato dal valore iisSettings.                                                          |
 | launchBrowser        | "launchBrowser": true                                 | Indica se avviare il browser dopo aver avviato correttamente il progetto.                                       |
-| launchUrl            | "launchUrl": "<scheme>://<serviceHost>:<servicePort>" | Questo URL viene usato quando si avvia il browser. I token di sostituzione supportati per questa stringa sono:                          |
-|                      |                                                       | - <scheme>-sostituito con "http" o "https", a seconda che venga utilizzato SSL.                                   |
-|                      |                                                       | - <serviceHost>, in genere sostituita con "localhost".                                                                    |
+| launchUrl            | "launchUrl": "{Scheme}://{ServiceHost}: {ServicePort}" | Questo URL viene usato quando si avvia il browser. I token di sostituzione supportati per questa stringa sono:                          |
+|                      |                                                       | -{Scheme}-sostituito con "http" o "https" a seconda che si stia usando SSL.                                   |
+|                      |                                                       | -{ServiceHost}-generalmente sostituito con "localhost".                                                                    |
 |                      |                                                       | Quando si fa riferimento a contenitori Windows in Windows 10 RS3 o versioni precedenti, tuttavia, viene sostituito con l'IP del contenitore.           |
-|                      |                                                       | - <servicePort>, in genere sostituita da sslPort o httpPort, a seconda che venga utilizzato SSL.                   |
+|                      |                                                       | -{ServicePort}-generalmente sostituito con sslPort o httpPort, a seconda che venga usato SSL.                   |
 |                      |                                                       | Quando si fa riferimento a contenitori di Windows in Windows 10 RS3 o versioni precedenti, tuttavia, viene sostituito con "443" o "80",         |
 |                      |                                                       | a seconda se viene utilizzato SSL.                                                                                       |
 | sslPort              | "sslPort": 44381                                      | Questa porta sull'host viene mappata alla porta 443 del contenitore all'avvio del contenitore.                               |

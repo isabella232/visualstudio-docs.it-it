@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392afc210798611442a12d5f51f150ddc79f85ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 293e7dd99ea2c4d440153797fcc5e9a15083e93c
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408369"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542607"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procedura dettagliata: scrittura di un visualizzatore in Visual Basic
 In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] per scrivere un visualizzatore semplice che consente di visualizzare il contenuto di una stringa in una finestra di messaggio di Windows Form. Questo visualizzatore semplice di stringhe è un esempio base per illustrare la creazione di visualizzatori per altri tipi di dati più applicabili ai progetti.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, passare al menu **Strumenti** e scegliere **Importa/Esporta**. Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, passare al menu **Strumenti** e scegliere **Importa/Esporta**. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta dal debugger. La prima operazione da effettuare consiste nel creare un progetto Libreria di classi per la DLL.
 
@@ -36,16 +36,16 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 ### <a name="to-create-a-class-library-project"></a>Per creare un progetto Libreria di classi
 
-1. Creare un nuovo progetto Libreria di classi.
+1. Creare un nuovo progetto di libreria di classi.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **visual basic**, scegliere **modelli**, quindi scegliere **creare una nuova libreria di classi (.NET Standard)**. Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **Visual Basic**, scegliere **modelli**, quindi scegliere **crea una nuova libreria di classi (.NET Framework)** . Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di **nuovo progetto** nella finestra di dialogo **Visual Basic**, scegliere **.NET Standard**, quindi nel riquadro centrale scegliere **libreria di classi (.NET Standard)**.
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** , in **Visual Basic**, scegliere **.NET standard**, quindi nel riquadro centrale scegliere **libreria di classi (.NET standard)** .
     ::: moniker-end
 
-2. Digitare un nome appropriato per la libreria di classi, ad esempio `MyFirstVisualizer`, quindi fare clic su **Create** oppure **OK**.
+2. Digitare un nome appropriato per la libreria di classi, ad esempio `MyFirstVisualizer`, quindi fare clic su **Crea** o **OK**.
 
    Dopo avere creato la libreria di classi, è necessario aggiungere un riferimento a Microsoft.VisualStudio.DebuggerVisualizers.DLL in modo da poter utilizzare le classi definite in questa DLL. Innanzitutto è opportuno assegnare al progetto un nome significativo.
 
@@ -56,13 +56,13 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 2. Sostituire Class1.vb con un nome significativo, ad esempio DebuggerSide.vb.
 
    > [!NOTE]
-   > In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la dichiarazione di classe viene modificata automaticamente in base al nuovo nome di file DebuggerSide.vb.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifica automaticamente la dichiarazione di classe in DebuggerSide. vb in modo che corrisponda al nuovo nome file.
 
 3. In **Esplora soluzioni** fare clic son il pulsante destro del mouse su **My First Visualizer** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-4. Nel **Aggiungi riferimento** finestra di dialogo il **Sfoglia** scheda, seleziona **Sfoglia** e trovare la DLL.
+4. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia** e individuare Microsoft. VisualStudio. DebuggerVisualizers. dll.
 
-    È possibile trovare la DLL nella  *\<Directory di installazione di Visual Studio > \Common7\IDE\PublicAssemblies.* sottodirectory della directory di installazione di Visual Studio.
+    È possibile trovare la DLL in *\<directory di installazione di Visual studio >* sottodirectory \Common7\IDE\PublicAssemblies. della directory di installazione di Visual Studio.
 
 5. Fare clic su **OK**.
 
@@ -108,9 +108,9 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-2. Nel **Aggiungi riferimento** finestra di dialogo il **Sfoglia** scheda, seleziona **Sfoglia**e trovare il Forms.
+2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia**e individuare il file System. Windows. Forms. dll.
 
-    È possibile trovare la DLL nella *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
+    È possibile trovare la DLL in *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
 3. Fare clic su **OK**.
 
@@ -168,16 +168,16 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>Per aggiungere un progetto applicazione console alla soluzione
 
-1. In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**.
 
     ::: moniker range=">=vs-2019"
-    Nella casella di ricerca, digitare **visual basic**, scegliere **modelli**, quindi scegliere **creare una nuova App Console (.NET Framework)**. Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Nella casella di ricerca digitare **Visual Basic**, scegliere **modelli**, quindi fare clic su **Crea una nuova app console (.NET Framework)** . Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual Basic** scegliere **Windows Desktop**, quindi scegliere **App console (.NET Framework)** nel riquadro centrale.
     ::: moniker-end
 
-2. Digitare un nome appropriato per la libreria di classi, ad esempio `MyTestConsole`, quindi fare clic su **Create** oppure **OK**.
+2. Digitare un nome appropriato per la libreria di classi, ad esempio `MyTestConsole`, quindi fare clic su **Crea** o **OK**.
 
    A questo punto è necessario aggiungere i riferimenti appropriati affinché MyTestConsole possa chiamare MyFirstVisualizer.
 
@@ -185,7 +185,7 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyTestConsole**, quindi scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-2. Nel **Aggiungi riferimento** finestra di dialogo il **Sfoglia** scheda, fare clic su DebuggerVisualizers.
+2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** fare clic su Microsoft. VisualStudio. DebuggerVisualizers.
 
 3. Fare clic su **OK**.
 
@@ -206,7 +206,7 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
     Si noti che in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la dichiarazione di classe viene modificata automaticamente in TestConsole.vb in base al nuovo nome file.
 
-3. In TestConsole. vb, aggiungere il codice seguente `Imports` istruzione:
+3. In TestConsole. vb aggiungere l'istruzione `Imports` seguente:
 
    ```vb
    Imports MyFirstVisualizer
@@ -231,7 +231,7 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
    Il visualizzatore è stato compilato e sottoposto a test.
 
-   Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per altre informazioni, vedere [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).
+   Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per altre informazioni, vedere [procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).
 
 ## <a name="see-also"></a>Vedere anche
 
