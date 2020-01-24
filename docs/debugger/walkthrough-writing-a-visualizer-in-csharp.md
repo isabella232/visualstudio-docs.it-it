@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 995508380fd551af33d98ebd48ab02a8287d0284
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a46967d5f46c4f495a07d80e5f73cfc9f9d60c1a
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637949"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542633"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: scrittura di un visualizzatore in C\#
 In questa procedura dettagliata viene descritto come usare C# per creare un visualizzatore semplice che consente di visualizzare il contenuto di una stringa in una finestra di messaggio di Windows Form. Questo semplice visualizzatore di stringhe non è particolarmente utile, ma mostra i passaggi di base che è necessario seguire per creare visualizzatori più utili per altri tipi di dati.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni**dal menu **strumenti** . Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni**dal menu **strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta dal debugger. Pertanto, il primo passaggio consiste nel creare un progetto di libreria di classi per la DLL.
 
@@ -35,13 +35,13 @@ Per creare un visualizzatore, seguire le attività riportate di seguito.
 
 ### <a name="to-create-a-class-library-project"></a>Per creare un progetto Libreria di classi
 
-1. Creare un nuovo progetto Libreria di classi.
+1. Creare un nuovo progetto di libreria di classi.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, **digitare libreria di classi**, scegliere **modelli**, quindi scegliere **crea una nuova libreria di classi (.NET standard)** . Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, **digitare libreria di classi**, scegliere **modelli**, quindi scegliere **crea una nuova libreria di classi (.NET Framework)** . Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** , in oggetto **visivo C#** , scegliere **.NET standard**, quindi nel riquadro centrale scegliere Libreria di **classi (.NET standard)** .
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** , in oggetto **visivo C#** , scegliere **.NET Framework**, quindi nel riquadro centrale scegliere Libreria di **classi (.NET Framework)** .
     ::: moniker-end
 
 2. Digitare un nome appropriato per la libreria di classi, ad esempio `MyFirstVisualizer`, quindi fare clic su **Crea** o **OK**.
@@ -61,7 +61,7 @@ Per creare un visualizzatore, seguire le attività riportate di seguito.
 
 4. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia** e individuare Microsoft. VisualStudio. DebuggerVisualizers. dll.
 
-    È possibile trovare la DLL nella directory di installazione di *\<Visual Studio >* sottodirectory \Common7\IDE\PublicAssemblies. della directory di installazione di Visual Studio.
+    È possibile trovare la DLL in *\<directory di installazione di Visual studio >* sottodirectory \Common7\IDE\PublicAssemblies. della directory di installazione di Visual Studio.
 
 5. Fare clic su **OK**.
 
@@ -242,7 +242,7 @@ Prima di tutto, è necessario creare un nuovo progetto libreria di classi.
 
 1. Nel menu **File** scegliere **Nuovo > Progetto**.
 
-2. Nella finestra di dialogo **nuovo progetto** , in **oggetto C#visivo** , selezionare **.NET standard**.
+2. Nella finestra di dialogo **nuovo progetto** , in **oggetto C#visivo** , selezionare **.NET Framework**.
 
 3. Nel riquadro centrale scegliere Libreria di **classi**.
 
