@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 070cbcc79a79aea16e37f17ea775ce7838b41d59
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: aeef905b2372b22be7aee157c4d0249109ea3749
+ms.sourcegitcommit: 0c3c4bd38455f7046c5c5a448eaaa5e407ad5bf4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179814"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76725865"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C++ tramite Visual Studio
 
-Questo articolo descrive le funzionalità del debugger di Visual Studio con una procedura dettagliata. Per una panoramica di alto livello delle funzionalità del debugger, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md). Quando si esegue il *debug dell'app* in genere si esegue l'applicazione con il debugger collegato. Durante il debug, il debugger offre diversi modi per conoscere le operazioni eseguite dal codice durante l'esecuzione. È possibile rivedere il codice ed esaminare i valori archiviati nelle variabili, impostare espressioni di controllo nelle variabili per rilevare le modifiche dei valori, esaminare il percorso di esecuzione del codice, verificare l'esecuzione di un ramo del codice e così via. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
+Questo articolo descrive le funzionalità del debugger di Visual Studio con una procedura dettagliata. Per una panoramica di alto livello delle funzionalità del debugger, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md). Quando si esegue il *debug dell'app* in genere si esegue l'applicazione con il debugger collegato. Durante il debug, il debugger offre diversi modi per vedere le operazioni eseguite dal codice durante l'esecuzione. È possibile rivedere il codice ed esaminare i valori archiviati nelle variabili, impostare espressioni di controllo nelle variabili per rilevare le modifiche dei valori, esaminare il percorso di esecuzione del codice, verificare l'esecuzione di un ramo del codice e così via. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
 
 In questa esercitazione si eseguono le attività seguenti:
 
@@ -52,18 +52,43 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 
 ## <a name="create-a-project"></a>Creare un progetto
 
-1. Aprire Visual Studio.
+::: moniker range="vs-2017"
 
-    ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **c++** , scegliere **Modelli** e quindi scegliere **Create new Console App project** (Crea nuovo progetto app console). Nella finestra di dialogo visualizzata digitare un nome come **get-started-debugging**, quindi scegliere **Crea**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C++** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **Applicazione console di Windows**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
-    ::: moniker-end
+1. Aprire Visual Studio 2017.
 
-    Se il modello di progetto **Applicazione console di Windows** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, aprendo così il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
+2. Dalla barra dei menu in alto scegliere **File** > **nuovo** > **progetto**.
 
-    Visual Studio crea il progetto.
+3. Nella finestra di dialogo **nuovo progetto** nel riquadro sinistro espandere oggetto **C++visivo**, quindi scegliere desktop di **Windows**. Nel riquadro centrale scegliere **applicazione console di Windows**. Quindi denominare il progetto *Get-Started-Debugging*.
+
+   > [!NOTE]
+   > Se il modello di progetto **Applicazione console di Windows** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, aprendo così il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Aprire Visual Studio 2019.
+
+   Se la finestra di avvio non è aperta, scegliere **File** > **finestra Start**.
+
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere **C++** quindi dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma. 
+
+   Dopo aver applicato la lingua e i filtri della piattaforma, scegliere il modello **applicazione console** e quindi fare clic su **Avanti**.
+
+   ![Scegliere il C# modello per l'app console (.NET Core)](../debugger/media/vs-2019/get-started-create-console-project-cpp.png)
+
+   > [!NOTE]
+   > Se il modello di **applicazione console** non è visibile, è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Quindi, nella programma di installazione di Visual Studio scegliere lo **sviluppo di applicazioni desktop con C++**  carico di lavoro.
+
+1. Nella finestra **Configura nuovo progetto** Digitare o immettere *Get-Started-Debugging* nella casella **nome progetto** . Scegliere **Crea**.
+
+   Visual Studio aprirà il nuovo progetto.
+
+::: moniker-end
+
+## <a name="create-the-application"></a>Creare l'applicazione
 
 1. In *get-started-debugging.cpp* sostituire il codice seguente
 
@@ -170,7 +195,7 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 
 ## <a name="start-the-debugger"></a>Avviare il debugger.
 
-1. Premere **F5** (**Debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") nella barra degli strumenti Debug.
+1. Premere **F5** (**debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvio del debug") debug sulla barra degli strumenti Debug.
 
      **F5** avvia l'app con il debugger collegato al processo dell'app. Fino ad ora, tuttavia, non è stata eseguita alcuna operazione per esaminare il codice. Di conseguenza, viene semplicemente avviata l'app e viene visualizzato l'output della console.
 
@@ -185,7 +210,9 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 
      In questa esercitazione viene esaminata l'app usando il debugger e vengono descritte le funzionalità del debugger.
 
-2. Arrestare il debugger premendo il pulsante di arresto rosso ![Termina debug](../debugger/media/dbg-tour-stop-debugging.png "Termina debug").
+2. Arrestare il debugger premendo il pulsante di arresto del ![debug](../debugger/media/dbg-tour-stop-debugging.png "Arresta debug") rosso.
+
+3. Chiudere la finestra della console.
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Impostare un punto di interruzione e avviare il debugger
 
@@ -201,7 +228,7 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 
     ![Impostare e raggiungere un punto di interruzione](../debugger/media/get-started-set-breakpoint-cpp.gif)
 
-    La freccia gialla rappresenta l'istruzione in cui il debugger è in pausa e in cui viene anche sospesa l'esecuzione di app (l'istruzione non è ancora stata eseguita).
+    La freccia gialla rappresenta l'istruzione in corrispondenza della quale il debugger si è interrotto e il punto in cui anche l'esecuzione dell'app viene sospesa (l'istruzione non è ancora stata eseguita).
 
      Se l'app non è ancora in esecuzione, **F5** avvia il debugger e lo arresta in corrispondenza del primo punto di interruzione. In caso contrario, **F5** continua l'esecuzione dell'app fino al punto di interruzione successivo.
 
@@ -213,26 +240,28 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 1. Mentre l'esecuzione è in pausa nella chiamata al metodo `shape->Draw` nella funzione `main`, premere **F11** (oppure scegliere **Debug > Esegui istruzione**) per avanzare nel codice per la classe `Rectangle`.
 
-     ![Usare F11 per eseguire l'istruzione nel codice](../debugger/media/get-started-f11-cpp.png "F11 Esegui istruzione")
+     ![Usare F11 per eseguire un'istruzione nel codice](../debugger/media/get-started-f11-cpp.png "Esegui istruzione F11")
 
-     F11 corrisponde al comando **Esegui istruzione** e consente di eseguire l'app un'istruzione alla volta. F11 è un buon metodo per esaminare il flusso di esecuzione nel dettaglio. (Per avanzare più rapidamente nel codice, vengono illustrate anche altre opzioni). Per impostazione predefinita, il debugger ignora il codice non utente (per informazioni dettagliate, vedere [Just My Code](../debugger/just-my-code.md)).
+     F11 corrisponde al comando **Esegui istruzione** e consente di eseguire l'app un'istruzione alla volta. F11 è un buon metodo per esaminare il flusso di esecuzione nel dettaglio. (Per spostarsi più rapidamente tramite codice, vengono mostrate anche altre opzioni). Per impostazione predefinita, il debugger ignora il codice non utente (se si desiderano maggiori dettagli, vedere [Just My Code](../debugger/just-my-code.md)).
 
 2. Premere **F10** (oppure scegliere **Debug > Esegui istruzione/routine**) alcune volte fino a quando il debugger non si arresta nella chiamata al metodo `Shape::Draw` e quindi premere **F10** ancora una volta.
 
-     ![Usare F10 per eseguire l'istruzione/routine nel codice](../debugger/media/get-started-step-over-cpp.png "F10 Esegui istruzione/routine")
+     ![Usare F10 per eseguire un'istruzione/routine del codice](../debugger/media/get-started-step-over-cpp.png "Istruzione/routine F10")
 
      Si noti che questa volta il debugger non esegue l'istruzione nel metodo `Draw` della classe di base (`Shape`). **F10** fa avanzare il debugger senza eseguire le istruzioni nelle funzioni o nei metodi del codice dell'app (il codice rimane in esecuzione). Premendo F10 nella chiamata al metodo `Shape::Draw` anziché **F11**, è stato ignorato il codice di implementazione per `Draw` nella classe di base (non d'interesse ai fini dell'esercitazione).
 
 ## <a name="navigate-code-using-run-to-click"></a>Esplorare il codice con il pulsante per l'esecuzione fino alla riga selezionata dall'utente
 
-1. Nell'editor del codice scorrere verso il basso e passare il mouse su `std::cout` nella classe `Triangle` fino a quando non viene visualizzato sulla sinistra il pulsante verde per l'**esecuzione fino alla riga selezionata dall'utente** ![Esecuzione fino alla riga selezionata dall'utente](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Fare clic con il pulsante destro del mouse sul punto di interruzione impostato in precedenza e scegliere Elimina punto di **interruzione** oppure premere **Ctrl** + **MAIUSC** + **F9** per eliminare tutti i punti di interruzione.
 
-     ![Usare la funzionalità di esecuzione fino alla riga selezionata dall'utente](../debugger/media/get-started-run-to-click-cpp.png "Esecuzione fino alla riga selezionata dall'utente")
+1. Nell'editor di codice scorrere verso il basso e passare il puntatore del mouse sul `std::cout` nella classe `Triangle` fino a quando non si fa clic sul pulsante verde Esegui **per** fare clic su Visualizza ![a](../debugger/media/dbg-tour-run-to-click.png "RunToClick") sinistra.
+
+     ![Utilizzare la funzionalità Esegui fino al clic](../debugger/media/get-started-run-to-click-cpp.png "Esegui fino alla riga selezionata")
 
    > [!NOTE]
    > Il pulsante **Esegui fino alla riga selezionata** è disponibile a partire da [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se non viene visualizzato il pulsante freccia verde, usare **F11** in questo esempio invece di far avanzare il debugger fino alla posizione corretta.
 
-2. Fare clic sul pulsante per l'**esecuzione fino alla riga selezionata dall'utente** ![Esecuzione fino alla riga selezionata dall'utente](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Fare clic sul pulsante **Esegui fino a fare** clic su ![Esegui](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     L'uso di questo pulsante è simile all'impostazione di un punto di interruzione temporaneo. Il pulsante per l'**esecuzione fino alla riga selezionata dall'utente** è uno strumento pratico per l'esplorazione rapida all'interno di un'area visibile del codice dell'app (è possibile fare clic in qualsiasi file aperto).
 
@@ -259,11 +288,13 @@ Si supponga di aver completato l'esame del metodo `Draw` nella classe `Triangle`
 
      L'esecuzione dovrebbe tornare al ciclo `for` nel metodo `main`.
 
+1. Fare clic sul margine sinistro per aggiungere un nuovo punto di interruzione nel ciclo `for`.
+
 ## <a name="restart-your-app-quickly"></a>Riavviare rapidamente l'app
 
-Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") nella barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
+Fare clic sul pulsante **Riavvia** ![app riavvia](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
 
-Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene sospeso in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
+Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene messo in pausa in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
 
 Il debugger si arresta nuovamente nel punto di interruzione impostato, nel metodo `shape->Draw()`.
 
@@ -287,7 +318,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Osservare la finestra **Auto** nella parte inferiore dell'editor di codice.
 
-     ![Esaminare le variabili nella finestra Auto](../debugger/media/get-started-autos-window-cpp.png "Finestra Auto")
+     ![Esaminare le variabili nella finestra auto](../debugger/media/get-started-autos-window-cpp.png "Finestra auto")
 
     Nella finestra **Auto** vengono visualizzate le variabili e i relativi valori correnti. Per C++, la finestra **Auto** mostra le variabili nelle tre righe di codice precedenti.
 
@@ -320,7 +351,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
     È possibile fare doppio clic su una riga di codice per visualizzare il codice sorgente e modificare anche l'ambito corrente controllato dal debugger. Questa azione non fa avanzare il debugger.
 
-    È anche possibile usare i menu di scelta rapida dalla finestra **Stack di chiamate** per eseguire altre operazioni. Ad esempio, è possibile inserire i punti di interruzione nelle funzioni specificate, far avanzare il debugger usando **Esegui fino al cursore** e passare a esaminare il codice sorgente. Per altre informazioni, vedere [Procedura: Esaminare lo stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
+    È anche possibile usare i menu di scelta rapida nella finestra **Stack di chiamate** per eseguire altre operazioni. Ad esempio, è possibile inserire i punti di interruzione nelle funzioni specificate, far avanzare il debugger usando **Esegui fino al cursore** e passare a esaminare il codice sorgente. Per altre informazioni, vedere [Procedura: Esaminare lo stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="change-the-execution-flow"></a>Modificare il flusso di esecuzione
 

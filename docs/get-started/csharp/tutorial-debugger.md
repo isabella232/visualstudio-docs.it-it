@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c7237d8d8bf66273078049a41a3193af0026792
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 1e19672ccc13b94f93bd21fc02701aa54648199e
+ms.sourcegitcommit: 0c3c4bd38455f7046c5c5a448eaaa5e407ad5bf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830016"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726080"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C# tramite Visual Studio
 
@@ -36,16 +36,16 @@ In questa esercitazione si eseguono le attività seguenti:
 > * Ispezione delle variabili nelle finestre dei suggerimenti dati e del debugger
 > * Esaminare lo stack di chiamate
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 ::: moniker range=">=vs-2019"
 
-È necessario che siano installati Visual Studio 2019 e il carico di lavoro **Sviluppo per desktop .NET**.
+È necessario che Visual Studio 2019 sia installato e che il carico di lavoro **sviluppo multipiattaforma .NET Core** .
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-È necessario che siano installati Visual Studio 2017 e il carico di lavoro **Sviluppo per desktop .NET**.
+È necessario che Visual Studio 2017 sia installato e che il carico di lavoro **sviluppo multipiattaforma .NET Core** .
 
 ::: moniker-end
 
@@ -61,24 +61,52 @@ Se non è ancora stato installato Visual Studio, accedere alla pagina [Download 
 
 ::: moniker-end
 
-Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, che apre il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
+Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, che apre il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **sviluppo multipiattaforma .NET Core** , quindi scegliere **modifica**.
 
 ## <a name="create-a-project"></a>Creare un progetto
 
-1. Apri Visual Studio.
+In primo luogo, verrà creato un progetto di applicazione console .NET Core. Il tipo di progetto include fin dall'inizio tutti i file modello necessari.
 
-    ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **console**, scegliere **modelli**, quindi scegliere **Crea nuovo progetto console app (.NET Core)** o **Crea nuovo progetto app console (.NET Framework)** . Nella finestra di dialogo visualizzata digitare un nome come **get-started-debugging**, quindi scegliere **Crea**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App console (.NET Framework)** . Digitare quindi un nome come **get-started-debugging** e fare clic su **OK**.
-    ::: moniker-end
+::: moniker range="vs-2017"
 
-    Se il modello di progetto **App console (.NET Framework)** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** . Si aprirà il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
+1. Aprire Visual Studio 2017.
 
-    Visual Studio crea il progetto.
+2. Dalla barra dei menu in alto scegliere **File** > **nuovo** > **progetto**.
 
-1. In *Program.cs*sostituire tutto il codice predefinito
+3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **C#** e quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi denominare il progetto *Get-Started-Debugging*.
+
+     Se non viene visualizzato il modello di progetto **Applicazione console (.NET Core)** , fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**.
+
+     Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Aprire Visual Studio 2019.
+
+   Se la finestra di avvio non è aperta, scegliere **File** > **finestra Start**.
+
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C#**  dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
+
+   Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App console (.NET Core)** e **Avanti**.
+
+   ![Scegliere il C# modello per l'app console (.NET Core)](../../debugger/media/vs-2019/get-started-create-console-project.png)
+
+   > [!NOTE]
+   > Se il modello **App console (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
+
+1. Nella finestra **Configura nuovo progetto** Digitare o immettere *Get-Started-Debugging* nella casella **nome progetto** . Scegliere **Crea**.
+
+   Visual Studio aprirà il nuovo progetto.
+   
+::: moniker-end
+
+## <a name="create-the-application"></a>Creare l'applicazione
+
+1. In *Program.cs*sostituire tutto il codice predefinito, illustrato di seguito:
 
     ```csharp
     using System;
@@ -199,6 +227,8 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 
 2. Arrestare il debugger premendo il pulsante di arresto del ![debug](../../debugger/media/dbg-tour-stop-debugging.png "Arresta debug") rosso.
 
+3. Chiudere la finestra della console.
+
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Impostare un punto di interruzione e avviare il debugger
 
 1. Nel ciclo `foreach` della funzione `Main` impostare un punto di interruzione facendo clic sul margine sinistro della riga di codice seguente:
@@ -237,6 +267,8 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 ## <a name="navigate-code-using-run-to-click"></a>Esplorare il codice con il pulsante per l'esecuzione fino alla riga selezionata dall'utente
 
+1. Fare clic con il pulsante destro del mouse sul punto di interruzione impostato in precedenza e scegliere Elimina punto di **interruzione** oppure premere **Ctrl** + **MAIUSC** + **F9** per eliminare tutti i punti di interruzione.
+
 1. Nell'editor di codice scorrere verso il basso e passare il puntatore del mouse sul metodo `Console.WriteLine` nella classe `Triangle` fino a quando non si fa clic **sul pulsante verde Run (** Esegui) per fare ![clic](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") su a sinistra. La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
 
      ![Utilizzare la funzionalità Esegui fino al clic](../csharp/media/get-started-run-to-click.png "Esegui fino alla riga selezionata")
@@ -271,11 +303,13 @@ Si supponga di aver completato l'esame del metodo `Draw` nella classe `Triangle`
 
      L'esecuzione dovrebbe tornare al ciclo `foreach` nel metodo `Main`. In caso contrario, premere **maiusc** + **F11** una seconda volta.
 
+1. Fare clic sul margine sinistro per aggiungere un nuovo punto di interruzione nel ciclo `for`.
+
 ## <a name="restart-your-app-quickly"></a>Riavviare rapidamente l'app
 
 Fare clic sul pulsante **Riavvia** ![app riavvia](../../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
 
-Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene sospeso in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
+Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene messo in pausa in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
 
 Il debugger si arresta nuovamente nel punto di interruzione impostato, nel metodo `shape.Draw()`.
 
