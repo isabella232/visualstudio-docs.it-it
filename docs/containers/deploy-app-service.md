@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9952ade8cae70b7e542b9de0b9ca36967f3bd8bb
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188786"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826561"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Distribuire un contenitore ASP.NET Core al servizio app Azure con Visual Studio
 
@@ -21,7 +21,7 @@ Questa esercitazione illustra l'uso di Visual Studio per pubblicare l'applicazio
 
 Se non si ha una sottoscrizione di Azure, creare un [account gratuito](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) prima di iniziare.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per completare questa esercitazione:
 
@@ -53,13 +53,13 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 1. Scegliere **Applicazione Web**.
 1. Scegliere se si vuole il supporto SSL tramite la casella di controllo **Configura per HTTPS**.
 1. Spuntare la casella di controllo **Abilita Supporto Docker**.
-1. Selezionare il tipo di contenitore **Linux** e fare clic su **Crea**. I contenitori di Windows non sono supportati per la distribuzione nel servizio app Azure come contenitore.
+1. Selezionare il tipo di contenitore e fare clic su **Crea**. I contenitori di Windows non sono supportati per la distribuzione nel servizio app Azure come contenitore.
 ::: moniker-end
 
 ## <a name="deploy-the-container-to-azure"></a>Distribuire il contenitore in Azure
 
 1. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Pubblica**.
-1. Nella finestra di dialogo pubblica destinazione scegliere **servizio app Linux**.
+1. Nella finestra di dialogo pubblica destinazione scegliere **servizio app Linux** o **servizio app**. Si tratta del sistema operativo in cui verrà ospitato il server Web.
 1. È possibile pubblicare solo nel servizio app oppure pubblicare sia nel servizio app che in Azure Container Registry (ACR). Per pubblicare il contenitore in un Container Registry di Azure (ACR), scegliere **Crea nuovo servizio app per contenitori**, quindi fare clic su **pubblica**.
 
    ![Screenshot della finestra di dialogo di pubblicazione](media/deploy-app-service/publish-app-service-linux.PNG)
@@ -79,7 +79,18 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
    ![Screenshot dell'applicazione Web](media/deploy-app-service/web-application-running.png)
 
 1. Il profilo di pubblicazione viene salvato con tutti i dettagli selezionati, ad esempio il gruppo di risorse e il registro contenitori.
-1. Per eseguire di nuovo la distribuzione con lo stesso profilo di pubblicazione, usare il pulsante **pubblica** , il pulsante **pubblica** nella finestra **attività di pubblicazione Web** oppure fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere l'elemento **Publish (pubblica** ) nel menu di scelta rapida.
+
+1. Per eseguire di nuovo la distribuzione con lo stesso profilo di pubblicazione, usare il pulsante **pubblica** , il pulsante **pubblica** nella finestra **attività di pubblicazione Web** oppure fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere l'elemento **Publish (pubblica** ) dal menu di scelta rapida.
+
+## <a name="view-container-settings"></a>Visualizzare le impostazioni del contenitore
+
+Nel [portale di Azure](https://portal.azure.com)è possibile aprire il servizio app distribuito.
+
+È possibile visualizzare le impostazioni per il servizio app distribuito aprendo il menu **Impostazioni contenitore* (quando si usa Visual Studio 2019 versione 16,4 o successiva).
+
+![Screenshot del menu delle impostazioni del contenitore nel portale di Azure](media/deploy-app-service/container-settings-menu.png)
+
+Da qui è possibile visualizzare le informazioni sul contenitore, visualizzare o scaricare i log o configurare la distribuzione continua. Vedere [app Azure ci/CD per la distribuzione continua del servizio](/azure/app-service/containers/app-service-linux-ci-cd).
 
 ## <a name="clean-up-resources"></a>Pulire le risorse
 
@@ -89,7 +100,7 @@ Nella portale di Azure scegliere gruppi di **risorse**, selezionare il gruppo di
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Configurare l'integrazione e il recapito continui con [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops).
+Scopri di più sul [servizio app Azure Linux](/azure/app-service/containers/app-service-linux-intro).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -8,23 +8,23 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c34995a49a785061c67f1324c9c9cd5b5316178
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d486aac8e990fef6b139bca989a51d74146ecb67
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633112"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826406"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Procedura: fornire un servizio di Visual Studio asincrono
-Se si desidera ottenere un servizio senza bloccare il thread dell'interfaccia utente, è necessario creare un servizio asincrono e caricare il pacchetto in un thread in background. A questo scopo è possibile usare un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> anziché un <xref:Microsoft.VisualStudio.Shell.Package> e aggiungere il servizio con i metodi asincroni speciali del pacchetto asincrono.
+Se si desidera ottenere un servizio senza bloccare il thread dell'interfaccia utente, è necessario creare un servizio asincrono e caricare il pacchetto in un thread in background. A questo scopo è possibile usare un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> anziché un <xref:Microsoft.VisualStudio.Shell.Package>e aggiungere il servizio con i metodi asincroni speciali del pacchetto asincrono.
 
  Per informazioni su come fornire servizi sincroni di Visual Studio, vedere [procedura: fornire un servizio](../extensibility/how-to-provide-a-service.md).
 
 ## <a name="implement-an-asynchronous-service"></a>Implementare un servizio asincrono
 
-1. Creare un progetto VSIX (**file**  > **nuovo** **progetto**  >   > **Visual C#**   > **estendibilità** 0**progetto VSIX**). Denominare il progetto **TestAsync**.
+1. Creare un progetto VSIX (**file** > **nuovo** **progetto** >  > **Visual C#**  > **estendibilità** > **progetto VSIX**). Denominare il progetto **TestAsync**.
 
-2. Aggiungere un pacchetto VSPackage al progetto. Selezionare il nodo del progetto nella **Esplora soluzioni** e fare clic su **Aggiungi**  > **nuovo elemento**  >  **C# elementi visivi**  > **Extensibility**  > **pacchetto di Visual Studio**. Assegnare al file il nome *TestAsyncPackage.cs*.
+2. Aggiungere un pacchetto VSPackage al progetto. Selezionare il nodo del progetto nella **Esplora soluzioni** e fare clic su **Aggiungi** > **nuovo elemento** >  **C# elementi visivi** > **Extensibility** > **pacchetto di Visual Studio**. Assegnare al file il nome *TestAsyncPackage.cs*.
 
 3. In *TestAsyncPackage.cs*modificare il pacchetto in modo da ereditare da `AsyncPackage` anziché `Package`:
 
@@ -130,6 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
+    Per rendere visibile questo servizio all'esterno del pacchetto, impostare il valore di innalzamento di livello su *true* come ultimo parametro: `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. Aggiungere un riferimento a *Microsoft. VisualStudio. Shell. Interop. 14.0. DesignTime. dll*.
 
@@ -170,7 +171,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>Usare un servizio asincrono in un gestore di comandi
  Di seguito è riportato un esempio di come usare un servizio asincrono in un comando di menu. È possibile utilizzare la procedura illustrata di seguito per utilizzare il servizio in altri metodi non asincroni.
 
-1. Aggiungere un comando di menu al progetto. Nella **Esplora soluzioni**selezionare il nodo del progetto, fare clic con il pulsante destro del mouse e scegliere **Aggiungi**  > **nuovo elemento**  > **estendibilità**  > **comando personalizzato**. Denominare il file di comando *TestAsyncCommand.cs*.
+1. Aggiungere un comando di menu al progetto. Nella **Esplora soluzioni**selezionare il nodo del progetto, fare clic con il pulsante destro del mouse e scegliere **Aggiungi** > **nuovo elemento** > **estendibilità** > **comando personalizzato**. Denominare il file di comando *TestAsyncCommand.cs*.
 
 2. Il modello di comando personalizzato aggiunge nuovamente il metodo `Initialize()` al file *TestAsyncPackage.cs* per inizializzare il comando. Nel metodo `Initialize()` copiare la riga che inizializza il comando. Il codice dovrebbe essere simile al seguente:
 

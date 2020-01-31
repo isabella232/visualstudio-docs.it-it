@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916924"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826458"
 ---
 # <a name="docker-compose-build-properties"></a>Proprietà di compilazione Docker Compose
 
@@ -109,6 +109,20 @@ Utilizzare le virgolette doppie intorno ai valori, come nell'esempio precedente,
 |com. Microsoft. VisualStudio. debuggingee. killprogram|Questo comando viene usato per arrestare il programma sottoposto a debug in esecuzione all'interno del contenitore, se necessario.|
 |com. Microsoft. VisualStudio. debuggingee. Program|Programma avviato all'avvio del debug. Per le app .NET Core questa impostazione è in genere **DotNet**.|
 |com. Microsoft. VisualStudio. debuggingee. WorkingDirectory|Directory utilizzata come directory iniziale all'avvio del debug. Questa impostazione è in genere */app* per i contenitori Linux o *C:\app* per i contenitori di Windows.|
+
+## <a name="customize-the-app-startup-process"></a>Personalizzare il processo di avvio dell'app
+
+È possibile eseguire un comando o uno script personalizzato prima di avviare l'app usando l'impostazione `entrypoint` e rendendola dipendente dalla configurazione. Se, ad esempio, è necessario configurare un certificato solo in modalità di **debug** eseguendo `update-ca-certificates`, ma non in modalità **versione** , è possibile aggiungere il codice seguente solo in *Docker-compose. vs. debug. yml*:
+
+```yml
+services:
+  webapplication1:
+    entrypoint: "sh -c 'update-ca-certificates && tail -f /dev/null'"
+    labels:
+      ...
+```
+
+Se si omette *Docker-compose. vs. Release. yml* o *Docker-compose. vs. debug. yml* , Visual Studio ne genera uno in base alle impostazioni predefinite.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

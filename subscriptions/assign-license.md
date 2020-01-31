@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare licenze ai sottoscrittori
-ms.openlocfilehash: 8785d4d4253fa3217341c8200a94dab923ae4a5f
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 4ebec96f488a480ccd9b96387f2656aadd6ba2f9
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797378"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892181"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 In qualità di amministratore delle sottoscrizioni di Visual Studio, è possibile usare il portale di amministrazione per assegnare sottoscrizioni a singoli utenti e gruppi di utenti.
@@ -33,7 +33,7 @@ Di seguito viene descritto come assegnare una licenza di sottoscrizione di Visua
    > [!div class="mx-imgBorder"]
    > ![Accedere ai download](media/access-to-downloads.png)
 
-       If you'd like to add your own reference notes to the subscription, you can do so in the **Add reference** section.
+    Se si vuole aggiungere le proprie note di riferimento alla sottoscrizione, è possibile aggiungerle nella sezione **Aggiungi riferimento**.
    > [!div class="mx-imgBorder"]
    > ![Aggiungere le proprie note di riferimento a ogni sottoscrizione](media/add-subscriber-reference-notes.png)
 
@@ -46,5 +46,5 @@ Dopo l'aggiunta di un Sottoscrittore, un messaggio di posta elettronica di asseg
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Se è necessario aggiungere molti utenti,  vedere le informazioni su come assegnare sottoscrizioni a [più sottoscrittori](assign-license-bulk.md).
-- Per ulteriori informazioni, vedere  contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Per ulteriori informazioni, vedere  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 
