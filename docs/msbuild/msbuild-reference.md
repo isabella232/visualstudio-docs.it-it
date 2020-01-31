@@ -15,69 +15,59 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9418143c9d93d960d3123868b89f24a97e1afafd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 92d8db803dd6e20a9a1d954847b63d3a02ddd257
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593967"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826536"
 ---
 # <a name="msbuild-reference"></a>Riferimenti a MSBuild
+
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è il sistema di compilazione per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I seguenti sono collegamenti ad argomenti che contengono informazioni di riferimento su [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 ## <a name="in-this-section"></a>In questa sezione
-- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 
+- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)\
  Descrive gli elementi XML che costituiscono il formato di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)\
  Descrive alcune attività tipiche incluse in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Condizioni](../msbuild/msbuild-conditions.md)
-
+- [Condizioni](../msbuild/msbuild-conditions.md)\
  Descrive le condizioni disponibili nei file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
-
+- [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md)\
  Descrive come usare gli elementi `Choose`, `When` e `Otherwise`.
 
-- [Proprietà di MSBuild riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md)
-
+- [Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)\
  Descrive le proprietà riservate [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Proprietà di progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md)
-
+- [Proprietà del progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md)\
  Descrive le proprietà di progetto comuni a tutti i tipi di progetto e anche le proprietà usate spesso da determinati tipi di progetto.
 
-- [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)
-
+- [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)\
  Descrive gli elementi di progetto comuni a tutti i tipi di progetto e anche gli elementi usati spesso da determinati tipi di progetto.
 
-- [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md)
-
+- [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md)\
  Descrive gli argomenti e le opzioni che possono essere usati con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.
 
-- [File con estensione targets](../msbuild/msbuild-dot-targets-files.md)
-
+- [. File di destinazioni](../msbuild/msbuild-dot-targets-files.md)\
  Descrive il file con estensione *targets* incluso in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md)
-
+- [Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md)\
  Elenca i metadati creati con ogni elemento.
 
-- [File di risposta](../msbuild/msbuild-response-files.md)
-
+- [File di risposta](../msbuild/msbuild-response-files.md)\
  Illustra i file con estensione *rsp* contenenti opzioni della riga di comando.
 
-- [Risorse aggiuntive](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) Contiene i collegamenti ai siti Web e ai newsgroup [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+- [Risorse aggiuntive](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
+ Contiene i collegamenti ai siti Web e ai newsgroup [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-- [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
-
+- [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)\
  Contiene un riferimento alle destinazioni e alle attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per Windows Presentation Foundation (WPF).
 
-- [Caratteri speciali di escape](../msbuild/special-characters-to-escape.md)
-
+- [Caratteri speciali di escape](../msbuild/special-characters-to-escape.md)\
  Elenca i caratteri che possono essere preceduti da un carattere di escape per essere interpretati correttamente. Una sequenza di escape è una serie di caratteri indicante che ciò che segue è un'interpretazione alternativa.
 
 ## <a name="see-also"></a>Vedere anche

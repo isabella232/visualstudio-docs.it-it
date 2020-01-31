@@ -6,20 +6,18 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 78bf7fce98f2a77e05a3fbbd31afcf3f20d97a9f
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: ad0be8546b88fbd01f54faf7eb00f71ddd6aa632
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74985133"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892155"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Disinstallazione di Visual Studio per Mac
 
 Vi sono diversi prodotti Xamarin che consentono lo sviluppo di applicazioni multipiattaforma, incluse app autonome come Visual Studio per Mac.
 
 È possibile usare questa guida per disinstallare ogni prodotto singolarmente passando alla sezione pertinente oppure usare gli script disponibili nella sezione [Script di disinstallazione](#uninstall-script) per disinstallare tutti i prodotti.
-
-Se in precedenza è stato installato Xamarin Studio, può essere necessario seguire anche le istruzioni della guida di [disinstallazione di Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac), oltre alla procedura seguente.
 
 ## <a name="uninstall-script"></a>Script di disinstallazione
 
