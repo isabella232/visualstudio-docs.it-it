@@ -52,6 +52,8 @@
       items:
         - name: Esaminare i dati nelle finestre del debugger
           href: debugger-windows.md
+        - name: Esaminare le eccezioni
+          href: exception-helper.md
         - name: Esame delle variabili
           href: autos-and-locals-windows.md
         - name: Variabili delle espressioni di controllo
@@ -680,7 +682,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: Sicurezza del debugger
       href: debugger-security.md
-- name: Riferimenti
+- name: Riferimento
   items:
     - name: Riferimenti dell'interfaccia utente di debug
       items:
