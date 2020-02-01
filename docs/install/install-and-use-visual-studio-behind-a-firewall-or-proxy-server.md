@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d74cb5b1594c0e4d347e2f8a4e1924cf68d64eed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ba3ca41fe1bf675bc4f17e9932525921060aaa9
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114934"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922862"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -76,6 +76,10 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 | www\.incredibuild.com | Sviluppo di giochi con C++ (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | Sviluppo di giochi con C++ (IncrediBuild) |
 | www\.python.org | Sviluppo Python (Python) <br /><br />Applicazioni analitiche e di analisi scientifica dei dati (Python) |
+| developerservices2.apple.com | Provisioning di Novell. iOS |
+| developer.apple.com | Provisioning di Novell. iOS |
+| appstoreconnect.apple.com | Provisioning di Novell. iOS |
+| idmsa.apple.com | Provisioning di Novell. iOS |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Usare Visual Studio e i servizi di Azure

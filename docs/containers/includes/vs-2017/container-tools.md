@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 63d2f021aabc3d9152900ad62f072ec1a35a8e5b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: ae6548892010035564bf29a8eda25b736db97d2a
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75927908"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922993"
 ---
 Con Visual Studio è possibile creare, eseguire il debug ed eseguire facilmente app ASP.NET Core in contenitori e pubblicarle in Azure Container Registry (ACR), nell'hub Docker, nel servizio app Azure o nel registro contenitori. In questo articolo viene eseguita la pubblicazione nel Registro Azure Container (ACR).
 
@@ -29,12 +29,14 @@ Per l'installazione di Docker, prima di tutto esaminare le informazioni in [Dock
 
 1. Nel menu di Visual Studio selezionare **File > Nuovo > Progetto**.
 1. Nella sezione **Modelli** della finestra di dialogo **Nuovo progetto** selezionare **Visual C# > Web**.
-1. Selezionare **Applicazione Web ASP.NET Core**.
+1. Selezionare **ASP.NET Core applicazione Web** o se si vuole usare il .NET Framework invece di .NET Core, selezionare **applicazione Web ASP.NET**.
 1. Assegnare un nome alla nuova applicazione (o accettare quello predefinito), quindi selezionare **OK**.
 1. Selezionare **Applicazione Web**.
 1. Spuntare la casella di controllo **Abilita Supporto Docker**.
 
    ![Casella di controllo Abilita supporto Docker](../../media/container-tools/enable-docker-support.PNG)
+
+   Lo screenshot mostra .NET Core; Se si usa .NET Framework, il suo aspetto è leggermente diverso.
 
 1. Selezionare il tipo di contenitore appropriato (Windows o Linux) e fare clic su **OK**.
 
@@ -65,7 +67,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Il *Dockerfile* precedente è basato sull'immagine [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e include le istruzioni per modificare l'immagine di base compilando il progetto e aggiungendolo al contenitore.
+Il *Dockerfile* precedente è basato sull'immagine [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e include le istruzioni per modificare l'immagine di base compilando il progetto e aggiungendolo al contenitore. Se si usa il .NET Framework, l'immagine di base sarà diversa.
 
 Se la casella di controllo **Configura per HTTPS** della finestra di dialogo Nuovo progetto è selezionata, il *Dockerfile* espone due porte. Una porta viene usata per il traffico HTTP e l'altra viene usata per il traffico HTTPS. Se la casella di controllo non è selezionata, viene esposta una sola porta (80) per il traffico HTTP.
 

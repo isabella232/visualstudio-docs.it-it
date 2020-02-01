@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools per Docker con ASP.NET Core
+title: Visual Studio Tools per Docker con ASP.NET
 author: ghogen
 description: Informazioni su come usare gli strumenti di Visual Studio 2019 e Docker per Windows
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d0da02773913a610c77d7165fdb0f9becfc59e9c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75928204"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922978"
 ---
 Con Visual Studio è possibile creare, eseguire il debug ed eseguire app .NET, ASP.NET e ASP.NET Core in contenitori e pubblicarli in Azure Container Registry (ACR), nell'hub Docker, nel servizio app Azure o nel registro contenitori. In questo articolo verrà pubblicata un'app ASP.NET Core in ACR.
 
@@ -20,7 +20,7 @@ Con Visual Studio è possibile creare, eseguire il debug ed eseguire app .NET, A
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con il carico di lavoro **Sviluppo Web**, **Strumenti di Azure** e/o **Sviluppo multipiattaforma .NET Core** installato
-* [Strumenti di sviluppo per .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) per lo sviluppo con .NET Core 2.2
+* [Strumenti di sviluppo .NET Core](https://dotnet.microsoft.com/download/dotnet-core/) per lo sviluppo con .NET Core
 * Per pubblicare in Registro Azure Container, una sottoscrizione di Azure. [Iscriversi per ottenere una versione di valutazione gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="installation-and-setup"></a>Installazione e configurazione
@@ -29,10 +29,12 @@ Per l'installazione di Docker, prima di tutto esaminare le informazioni in [Dock
 
 ## <a name="add-a-project-to-a-docker-container"></a>Aggiungere un progetto in un contenitore Docker
 
-1. Creare un nuovo progetto usando il modello **Applicazione Web ASP.NET Core**.
+1. Creare un nuovo progetto usando il modello di **applicazione web ASP.NET Core** o se si vuole usare il .NET Framework invece di .NET Core, scegliere **ASP.NET Web Application (.NET Framework)** .
 1. Selezionare **applicazione Web**e verificare che sia selezionata la casella di controllo **Abilita supporto Docker** .
 
    ![Casella di controllo Abilita supporto Docker](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+
+   Lo screenshot mostra .NET Core; Se si usa .NET Framework, il suo aspetto è leggermente diverso.
 
 1. Selezionare il tipo di contenitore appropriato (Windows o Linux) e fare clic su **Crea**.
 
@@ -63,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Il *Dockerfile* precedente è basato sull'immagine [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e include le istruzioni per modificare l'immagine di base compilando il progetto e aggiungendolo al contenitore.
+Il *Dockerfile* precedente è basato sull'immagine [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e include le istruzioni per modificare l'immagine di base compilando il progetto e aggiungendolo al contenitore. Se si usa il .NET Framework, l'immagine di base sarà diversa.
 
 Se la casella di controllo **Configura per HTTPS** della finestra di dialogo Nuovo progetto è selezionata, il *Dockerfile* espone due porte. Una porta viene usata per il traffico HTTP e l'altra viene usata per il traffico HTTPS. Se la casella di controllo non è selezionata, viene esposta una sola porta (80) per il traffico HTTP.
 
@@ -71,7 +73,7 @@ Se la casella di controllo **Configura per HTTPS** della finestra di dialogo Nuo
 
 Selezionare **Docker** nell'elenco a discesa Debug nella barra degli strumenti e avviare il debug dell'app. È possibile che venga visualizzato un messaggio in cui viene richiesto di considerare attendibile un certificato; scegliere di considerare attendibile il certificato per continuare.
 
-L'opzione **Strumenti contenitore** nella finestra **Output** mostra le azioni in corso.
+L'opzione **Strumenti contenitore** nella finestra **Output** mostra le azioni in corso. Per la prima volta, il download dell'immagine di base potrebbe richiedere del tempo, ma è molto più veloce nelle esecuzioni successive.
 
 ## <a name="containers-window"></a>Finestra contenitori
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: ghogen
-ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
-ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
+ms.openlocfilehash: ce7645b8b4f71cf94d7320a0072d15b2b8083dec
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "70312278"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923019"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Risolvere i problemi di sviluppo di Visual Studio con Docker
 
@@ -73,13 +73,25 @@ Add yourself to the 'docker-users' group and then log out of Windows.
 1. Aggiungere l'account utente o gli account.
 1. Disconnettersi ed eseguire nuovamente l'accesso per rendere effettive le modifiche.
 
-È inoltre possibile utilizzare il `net localgroup` comando al prompt dei comandi dell'amministratore per aggiungere utenti a gruppi specifici.
+È inoltre possibile utilizzare il comando `net localgroup` al prompt dei comandi dell'amministratore per aggiungere utenti a gruppi specifici.
 
 ```cmd
 net localgroup docker-users DOMAIN\username /add
 ```
 
 In PowerShell usare la funzione [Add-LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) .
+
+## <a name="low-disk-space"></a>Spazio su disco insufficiente
+
+Per impostazione predefinita, Docker archivia le immagini nella cartella *% ProgramData%/Docker/* , che in genere si trova nell'unità di sistema * C:\ProgramData\Docker\*. Per evitare che immagini occupano spazio prezioso nell'unità di sistema, è possibile modificare il percorso della cartella immagini.  Dall'icona Docker sulla barra delle applicazioni, aprire Docker Settings, scegliere **daemon**e passare da **Basic** a **Advanced**. Nel riquadro di modifica aggiungere l'impostazione della proprietà `graph` con il valore della posizione desiderata per le immagini docker:
+
+```json
+    "graph": "D:\\mypath\\images"
+```
+
+![Screenshot dell'impostazione del percorso dell'immagine Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+
+Fare clic su **applica** per riavviare docker. Questa procedura modifica il file di configurazione in *%ProgramData%\docker\config\daemon.JSON*. Le immagini compilate in precedenza non vengono spostate.
 
 ## <a name="microsoftdockertools-github-repo"></a>Repository GitHub Microsoft/DockerTools
 
