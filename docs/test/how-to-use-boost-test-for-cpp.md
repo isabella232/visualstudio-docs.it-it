@@ -1,23 +1,23 @@
 ---
 title: Come usare Boost.Test per C++
 description: Usare Boost.Test per creare unit test in Visual Studio.
-ms.date: 05/06/2019
+ms.date: 01/29/2020
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
-manager: jillfra
+author: corob-msft
+ms.author: corob
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 966983fa15b60db33f11645b25561a74ad5fadbe
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 0a1a621c7ee7175d86b2cbcf9a6e2c02c0aecbb3
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983443"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922916"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Come usare Boost.Test per C++ in Visual Studio
 
-In Visual Studio 2017 e nelle versioni successive l'adattatore di test Boost.Test è integrato nell'IDE di Visual Studio come componente del carico di lavoro **Sviluppo di applicazioni desktop con C++** .
+In Visual Studio 2017 e versioni successive, l'adattatore di test Boost. test è integrato nell'IDE di Visual Studio. Si tratta di un componente dello **sviluppo di applicazioni C++ desktop con** carico di lavoro.
 
 ![Adattatore di test per Boost.Test](media/cpp-boost-component.png)
 
@@ -25,43 +25,71 @@ Se il carico di lavoro **Sviluppo di applicazioni desktop con C++** non è insta
 
 ## <a name="install-boost"></a>Installare Boost
 
-Per usare Boost.Test è necessario installare [Boost](https://www.boost.org/). Se Boost non è stato installato, è consigliabile usare il sistema di gestione pacchetti Vcpkg.
+Per usare Boost.Test è necessario installare [Boost](https://www.boost.org/). Se Boost non è installato, è consigliabile usare Gestione pacchetti vcpkg.
 
 1. Seguire le istruzioni in [vcpkg: gestione pacchetti per C++ per Windows](/cpp/vcpkg) per installare vcpkg, se non è già stato installato.
 
 1. Installare la libreria statica o dinamica Boost.Test:
 
-    - Eseguire **vcpkg install boost-test** per installare la libreria dinamica Boost.Test.
+    - Eseguire `vcpkg install boost-test` per installare la libreria dinamica Boost.Test.
 
        OPPURE
 
-    - Eseguire **vcpkg install boost-test:x86-windows-static** per installare la libreria statica Boost.Test.
+    - Eseguire `vcpkg install boost-test:x86-windows-static` per installare la libreria statica Boost.Test.
 
-1. Eseguire **vcpkg integrate install** per configurare Visual Studio con la libreria e includere i percorsi delle intestazioni e dei file binari di Boost.
+1. Eseguire `vcpkg integrate install` per configurare Visual Studio con la libreria e includere i percorsi delle intestazioni e dei file binari di Boost.
 
-## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Aggiungere il modello di elemento (Visual Studio 2017 versione 15.6 e versioni successive)
+È possibile scegliere come configurare i test all'interno della soluzione in Visual Studio: è possibile includere il codice di test nel progetto sottoposto a test oppure è possibile creare un progetto di test separato per i test. Entrambe le opzioni presentano vantaggi e svantaggi.
 
-1. Per creare un file *CPP* per i test, fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi nuovo elemento**.
+## <a name="add-tests-inside-your-project"></a>Aggiungere test all'interno del progetto
+
+In Visual Studio 2017 versione 15,6 e successive è possibile aggiungere un modello di elemento per i test nel progetto. Sia i test che il codice risiedono nello stesso progetto. È necessario creare una configurazione di compilazione separata per generare una compilazione di test. Sarà quindi necessario lasciare i test dalle build di debug e di rilascio.
+
+In Visual Studio 2017 versione 15.5 non sono disponibili progetti di test preconfigurati o modelli di elementi per Boost.Test. Utilizzare le istruzioni per creare e configurare un progetto di test separato.
+
+### <a name="create-a-boosttest-item"></a>Creare un elemento Boost. test
+
+1. Per creare un file con *estensione cpp* per i test, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **nuovo elemento**.
+
+1. Nella finestra di dialogo **Aggiungi nuovo elemento** espandere **installato** > **Visual C++**  > **test**. Selezionare **Boost. test**, quindi scegliere **Aggiungi** per aggiungere *test. cpp* al progetto.
 
    ![Modello di elemento Boost.Test](media/boost_test_item_template.png)
 
-1. Il nuovo file contiene un metodo di test di esempio. Compilare il progetto per consentire a **Esplora test** di individuare il metodo.
+Il nuovo file *test. cpp* contiene un metodo di test di esempio. In questo file è possibile includere file di intestazione personalizzati e scrivere test per l'app.
+
+Il file di test USA anche macro per definire una nuova routine `main` per le configurazioni di test. Se si compila il progetto ora, verrà visualizzato un errore LNK2005, ad esempio "_main già definito in Main. obj".
+
+### <a name="create-and-update-build-configurations"></a>Creare e aggiornare le configurazioni di compilazione
+
+1. Per creare una configurazione di test, nella barra dei menu selezionare **compila** > **Configuration Manager**. Nella finestra di dialogo **Configuration Manager** aprire l'elenco a discesa in **Configurazione soluzione attiva** e scegliere **nuovo**. Nella finestra di dialogo **nuova configurazione soluzione** immettere un nome, ad esempio "debug UnitTests". In **Copia impostazioni da** selezionare **debug**, quindi scegliere **OK**.
+
+1. Escludere il codice di test dalle configurazioni di debug e rilascio: in **Esplora soluzioni**, fare clic con il pulsante destro del mouse su test. cpp e scegliere **Proprietà**. Nella finestra di dialogo **pagine delle proprietà** selezionare **tutte le configurazioni** nell'elenco a discesa **configurazione** . Selezionare **proprietà di configurazione** > **generale** e aprire l'elenco a discesa per la proprietà **esclusa da compilazione** . Selezionare **Sì**, quindi scegliere **applica** per salvare le modifiche.
+
+1. Per includere il codice di test nella configurazione debug UnitTests, nella finestra di dialogo **pagine delle proprietà** selezionare **debug UnitTests** nell'elenco a discesa **configurazione** . Selezionare **No** nella proprietà **escluso dalla compilazione** , quindi scegliere **OK** per salvare le modifiche.
+
+1. Escludere il codice principale dalla configurazione UnitTests di debug. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file che contiene la funzione `main` e scegliere **Proprietà**. Nella finestra di dialogo **pagine delle proprietà** selezionare **debug UnitTests** nell'elenco a discesa **configurazione** . Selezionare **proprietà di configurazione** > **generale** e aprire l'elenco a discesa per la proprietà **esclusa da compilazione** . Selezionare **Sì**, quindi scegliere **OK** per salvare le modifiche.
+
+1. Impostare la configurazione della soluzione per **eseguire il debug di UnitTests**, quindi compilare il progetto per consentire a **Esplora test** di individuare il metodo.
+
+Fino a quando il nome della configurazione creato inizia con le parole "debug" o "release", le librerie Boost. test corrispondenti vengono prelevate automaticamente.
 
 Il modello di elemento usa la variante con singola intestazione di Boost.Test, ma è possibile modificare il percorso #include per usare la variante con libreria autonoma. Per altre informazioni vedere [Aggiungere direttive include](#add-include-directives).
 
-## <a name="create-a-test-project"></a>Creare un progetto di test
+## <a name="create-a-separate-test-project"></a>Creare un progetto di test separato
 
-In Visual Studio 2017 versione 15.5 non sono disponibili progetti di test preconfigurati o modelli di elementi per Boost.Test. Pertanto, è necessario creare e configurare un progetto di applicazione console per contenere i test.
+In molti casi, è più semplice usare un progetto separato per i test. Non sarà necessario creare una configurazione di test speciale per il progetto. In alternativa, escludere i file di test dalle build di debug e di rilascio.
+
+### <a name="to-create-a-separate-test-project"></a>Per creare un progetto di test separato
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **Aggiungi** > **Nuovo progetto**.
 
-1. Nel riquadro sinistro scegliere **Visual C++**  > **Desktop di Windows** e quindi scegliere il modello **Applicazione console di Windows**.
+1. Nella finestra di dialogo **Aggiungi nuovo progetto** scegliere **C++** , **Windows**e **console** nell'elenco a discesa filtro. Selezionare il modello **applicazione console** , quindi fare clic su **Avanti**.
 
-1. Specificare un nome per il progetto e scegliere **OK**.
+1. Specificare un nome per il progetto e scegliere **Crea**.
 
 1. Eliminare la funzione `main` nel file *CPP*.
 
-1. Se si usa la versione della libreria con singola intestazione o dinamica di Boost.Test, passare ad [Aggiungere direttive include](#add-include-directives). Se si usa la versione della libreria statica, è necessario eseguire un'ulteriore configurazione:
+1. Se si usa la versione con intestazione singola o libreria dinamica di Boost. test, passare a [Aggiungi direttive di inclusione](#add-include-directives). Se si usa la versione della libreria statica, è necessario eseguire alcune operazioni di configurazione aggiuntive:
 
    a. Per modificare il file di progetto, per prima cosa scaricarlo. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Scarica progetto**. Quindi, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Modifica <nome\>.vcxproj**.
 
@@ -79,15 +107,15 @@ In Visual Studio 2017 versione 15.5 non sono disponibili progetti di test precon
 
    d. Per aprire le **pagine delle proprietà**, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**.
 
-   d. Espandere **C/C++**  > **Generazione di codice**, quindi selezionare **Libreria di Runtime**. Selezionare **/MTd** per la libreria di runtime statica di debug o **/MT** per la libreria di runtime statica di versione.
+   e. Espandere **C/C++**  > **Generazione di codice**, quindi selezionare **Libreria di Runtime**. Selezionare **/MTd** per la libreria di runtime statica di debug o **/MT** per la libreria di runtime statica di versione.
 
-   f. Espandere **Linker** > **System**. Verificare che **SubSystem** sia impostato su **Console**.
+   f. Espandere **Linker** > **System**. Verificare che il **sottosistema** sia impostato su **console**.
 
    g. Scegliere **OK** per chiudere le pagine delle proprietà.
 
 ## <a name="add-include-directives"></a>Aggiungere direttive include
 
-1. Nel file *CPP* del test aggiungere le direttive `#include` necessarie per rendere visibili al codice di test i tipi e le funzioni del programma. Il programma si trova in genere al livello superiore della gerarchia di cartelle. Se si digita `#include "../"`, viene visualizzata una finestra di IntelliSense che consente di selezionare il percorso completo del file di intestazione.
+1. Nel file *CPP* del test aggiungere le direttive `#include` necessarie per rendere visibili al codice di test i tipi e le funzioni del programma. Se si usa un progetto di test separato, in genere il programma si trova in un livello di pari livello nella gerarchia di cartelle. Se si digita `#include "../"`, viene visualizzata una finestra di IntelliSense che consente di selezionare il percorso completo del file di intestazione.
 
    ![Aggiungere direttive #include](media/cpp-gtest-includes.png)
 
