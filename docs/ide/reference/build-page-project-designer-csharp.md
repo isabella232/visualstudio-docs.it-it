@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596866"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923273"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
 
@@ -65,6 +65,12 @@ Definisce TRACE come simbolo in tutti i file di codice sorgente dell'app. La sel
 Specifica il processore da impostare come destinazione del file di output. Scegliere **x86** per qualsiasi processore compatibile con Intel a 32 bit, scegliere **x64** per qualsiasi processore compatibile con Intel a 64 bit, scegliere **ARM** per processori ARM oppure scegliere **Any CPU** (Qualsiasi CPU) per specificare che qualsiasi processore è accettabile. **Any CPU** (Qualsiasi CPU) è il valore predefinito per i progetti, in quanto consente all'applicazione di essere eseguita su una vasta gamma di hardware.
 
 Per altre informazioni, vedere [/platform (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+
+**Nullable**
+
+Specifica il contesto Nullable a C# livello di progetto. Questa opzione di interfaccia utente è stata introdotta in Visual Studio 16,5 ed è abilitata solo C# per i progetti che usano 8,0 o versioni successive.
+
+Per altre informazioni, vedere [contesti Nullable](/dotnet/csharp/nullable-references#nullable-contexts).
 
 **Preferisci 32 bit**
 
