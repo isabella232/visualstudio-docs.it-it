@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2890ee9879d3cab2ff134fdbfcd4edabb36d512
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: e81d1c50f66925064dc008d7d50bcdbe69606914
+ms.sourcegitcommit: 4a4eed115525c6d34a1fbdf87b793893cd43b70d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923217"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77001525"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C# tramite Visual Studio
 
@@ -187,7 +187,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
      `SendMessage(name, a[i]);`
 
-2. Premere **F11** più volte per eseguire un'istruzione nel metodo `SendMessage`.
+1. Premere **F11** più volte per eseguire un'istruzione nel metodo `SendMessage`.
 
      Il puntatore giallo avanza nel metodo `SendMessage`.
 
@@ -203,7 +203,9 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
      È necessario tornare al ciclo `for` nel metodo `Main`, sospeso in corrispondenza della chiamata al metodo `SendMessage`.
 
-3. Quando la chiamata al metodo è sospesa, premere **F10** (oppure scegliere **debug > Esegui istruzione/** routine) una volta sola.
+1. Premere l'ora **F11** fino a tornare alla chiamata al metodo `SendMessage`.
+
+1. Quando la chiamata al metodo è sospesa, premere **F10** (oppure scegliere **debug > Esegui istruzione/** routine) una volta sola.
 
      ![Usare F10 per eseguire un'istruzione/routine del codice](../csharp/media/get-started-step-over.png "Istruzione/routine F10")
 
@@ -262,7 +264,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Espandere la variabile `letters` per visualizzare gli elementi che contiene.
 
-     ![Esaminare le variabili nella finestra auto](../csharp/media/get-started-locals-window.png "Finestra auto")
+     ![Esaminare le variabili nella finestra variabili locali](../csharp/media/get-started-locals-window.png "Finestra Variabili locali")
 
     La finestra **Variabili locali** mostra le variabili presenti nell'[ambito](https://www.wikipedia.org/wiki/Scope_(computer_science)) corrente, ovvero il contesto di esecuzione corrente.
 
