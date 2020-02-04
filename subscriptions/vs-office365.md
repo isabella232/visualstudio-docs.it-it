@@ -6,29 +6,29 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio Office 365 incluso in alcune sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: b9834411c4b951fb7cdb09ac48dad651d109d618
+ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099607"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76967345"
 ---
-# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus nelle sottoscrizioni di Visual Studio
+# <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 nelle sottoscrizioni di Visual Studio
 
-Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Office 365 ProPlus è una sottoscrizione che include app di alto livello, come Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponibili solo su PC). Le app possono essere installate in più dispositivi, inclusi PC, Mac, iPad, iPhone, tablet Android e telefoni Android. Con una sottoscrizione si ottengono le versioni più recenti delle app e si ricevono automaticamente gli aggiornamenti, quando sono disponibili.
+Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Office 365 è una sottoscrizione che include app di alto livello, come Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponibili solo su PC). Le app possono essere installate in più dispositivi, inclusi PC, Mac, iPad, iPhone, tablet Android e telefoni Android. Con una sottoscrizione si ottengono le versioni più recenti delle app e si ricevono automaticamente gli aggiornamenti, quando sono disponibili.
 
 > [!NOTE]
 > La sottoscrizione di Visual Studio consente di usare Office 365 per l'uso in ambiente di produzione.  
 
-## <a name="getting-started-with-office-365-proplus"></a>Introduzione a Office 365 ProPlus
+## <a name="getting-started-with-office-365"></a>Introduzione a Office 365 
 
-Seguire questa procedura per il download e l'attivazione di Office 365 ProPlus:
+Attenersi alla procedura seguente per il download e l'attivazione di Office 365:
 1. Accedere alla sottoscrizione di Visual Studio Enterprise.
 2. Fare clic sulla scheda **Download**.
 3. Verrà visualizzato un elenco di download consigliati. Nell'elenco di Office scegliere **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Download per Office 365](_img/vs-office365/vs-office365-downloads.png)
-0. Per installare Office 365 ProPlus, sarà necessario un codice Product Key.  Fare clic sul collegamento **Recupera codice** nell'elenco di Office 365.
+0. Per installare Office 365, è necessario un codice Product Key.  Fare clic sul collegamento **Recupera codice** nell'elenco di Office 365.
    > [!div class="mx-imgBorder"]
    > ![Recupera codice di Office 365](_img/vs-office365/vs-office365-get-key.png)
 0. Una finestra visualizza i codici già recuperati e quelli disponibili.  Per ottenere un nuovo codice, fare clic su **Claim key** (Richiedi codice) sotto la voce di elenco **Office Professional Plus 2019**.
@@ -46,12 +46,12 @@ Seguire questa procedura per il download e l'attivazione di Office 365 ProPlus:
 0. Fare di nuovo clic su **Avanti**.
 0. Fare clic su **Installa** per installare le applicazioni di Office.
 
-## <a name="eligibility"></a>Idoneità
+## <a name="eligibility"></a>Eligibility
 
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponibile       |  Yes          |
-| Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile       |  Yes          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponibile       |  Sì          |
+| Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile       |  Sì          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Non disponibile       |  N/D          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                            |  N/D          |
 | Visual Studio Professional con GitHub Enterprise | VL | Non disponibile         |  N/D          |
@@ -60,7 +60,7 @@ Seguire questa procedura per il download e l'attivazione di Office 365 ProPlus:
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 |  |
 
-<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, BizSpark, most VALUABLE Professional (MVP), Regional Director (Rd), MCT software & Servizi, Imagine Microsoft Partner Network.*
+<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, BizSpark, most VALUABLE Professional (MVP), Regional Director (Rd), MCT software & Services, imagine, Microsoft Partner Network.*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
