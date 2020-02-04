@@ -7,7 +7,7 @@
     - name: Guida rapida
       expanded: true
       items:
-        - name: App ASP.NET Core in un contenitore
+        - name: App ASP.NET in un contenitore
           href: container-tools.md
         - name: App a pagina singola React.js in un contenitore
           href: container-tools-react.md
@@ -40,7 +40,7 @@
           href: container-build.md
     - name: Risoluzione dei problemi
       href: troubleshooting-docker-errors.md
-    - name: Riferimenti
+    - name: Riferimento
       items:
         - name: Proprietà di MSBuild per i progetti di contenitori
           href: container-msbuild-properties.md
