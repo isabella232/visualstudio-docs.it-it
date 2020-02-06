@@ -2,17 +2,17 @@
 title: Gestire più account utente
 ms.date: 07/23/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd265d24fad683e031436d7cc81fa7fa74034ddc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115257"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027599"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -25,7 +25,7 @@ Dopo aver aggiunto più account in un computer, tale set di account effettua il 
 
 Questo articolo illustra come aggiungere più account a Visual Studio. Spiega anche come visualizzare le risorse accessibili da tali account da alcune posizioni, come ad esempio dalla finestra di dialogo **Aggiungi servizio connesso**, da **Esplora server** e **Team Explorer**.
 
-## <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
+## <a name="sign-in-to-visual-studio"></a>Accesso a Visual Studio
 
 Accedere a Visual Studio con un account Microsoft o un account aziendale. Il nome utente dovrebbe essere visualizzato nell'angolo superiore della finestra, come illustrato nella figura seguente:
 

@@ -4,21 +4,21 @@ description: Viene descritto come migliorare la capacità di eseguire il debug e
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846936"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027298"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Come visualizzare e diagnosticare contenitori e immagini in Visual Studio
 
 È possibile visualizzare gli elementi in corso all'interno dei contenitori che ospitano l'app usando la finestra **contenitori** . Se si è abituati a usare il prompt dei comandi per eseguire comandi di Docker per visualizzare e diagnosticare ciò che accade nei contenitori, questa finestra offre un modo più pratico per monitorare i contenitori senza uscire dall'IDE di Visual Studio.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 - [Visual studio 2019 versione 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) o successiva o se si usa una versione precedente di visual studio 2019, installare l'estensione della [finestra contenitori](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions).

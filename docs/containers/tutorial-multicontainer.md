@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 5d6b867c2f237f20747628533af055e5c4900ceb
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: b9e1a2fc7c9027c34aeb8a0e0d1d44fdb0211e65
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916508"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027323"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Esercitazione: creare un'app a più contenitori con Docker Compose
 
 In questa esercitazione si apprenderà come gestire più di un contenitore e comunicare tra loro quando si usano gli strumenti contenitore in Visual Studio.  La gestione di più contenitori richiede l' *orchestrazione del contenitore* e richiede un agente di orchestrazione, ad esempio Docker compose, Kubernetes o Service Fabric. In questo caso verrà usato Docker Compose. Docker Compose è ideale per il debug e il test locali nel corso del ciclo di sviluppo.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -84,6 +84,9 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI*. Selezionare
        }
     }
    ```
+   
+    > [!NOTE]
+    > Nel codice del mondo reale non è necessario eliminare `HttpClient` dopo ogni richiesta. Per le procedure consigliate, vedere [usare HttpClientFactory per implementare richieste http resilienti](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
    Per .NET Core 3,1 in Visual Studio 2019 o versioni successive, il modello di API Web usa un'API WeatherForecast, quindi rimuovere il commento dalla riga e impostare come commento la riga per ASP.NET 2. x.
 
