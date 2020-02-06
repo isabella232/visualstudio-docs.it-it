@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596190"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027623"
 ---
 # <a name="common-msbuild-project-properties"></a>Proprietà di progetto MSBuild comuni
 Nella tabella seguente sono elencate le proprietà usate di frequente definite nei file di progetto di Visual Studio o incluse nei file con estensione *targets* compresi con MSBuild.
@@ -50,7 +50,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | CleanFile | Nome del file che verrà usato come "cache pulita". Per "cache pulita" si intende un elenco di file generati da eliminare durante l'operazione di pulizia. Il file è inserito nel percorso di output intermedio dal processo di compilazione.<br /><br /> Questa proprietà specifica solo i nomi di file privi delle informazioni sul percorso. |
 | CodePage | Specifica la tabella codici da usare per tutti i file del codice sorgente nella compilazione. Questa proprietà è equivalente all'opzione del compilatore `/codepage`. |
 | CompilerResponseFile | File di risposta facoltativo che può essere passato alle attività del compilatore. |
-| Configurazione di | Configurazione in corso di compilazione, "debug" o "rilascio". |
+| Configurazione | Configurazione in corso di compilazione, "debug" o "rilascio". |
 | CscToolPath | Percorso di *csc.exe*, il compilatore di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | Nome di un file di progetto o file delle destinazioni che deve essere importato automaticamente prima dell'importazione delle destinazioni comuni. |
 | DebugSymbols | Valore booleano che indica se i simboli sono generati dalla compilazione.<br /><br /> L'impostazione di **-p:DebugSymbols=false** nella riga di comando disabilita la generazione di file di simboli (con estensione *pdb*) del database di programma. |
@@ -78,17 +78,18 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | NoStdLib | Valore booleano che indica se evitare il riferimento alla libreria standard (*mscorlib.dll*). Il valore predefinito è `false`. |
 | NoVBRuntimeReference | Valore booleano che indica se il runtime di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (*Microsoft.VisualBasic.dll*) deve essere incluso come riferimento nel progetto. |
 | NoWin32Manifest | Valore booleano che indica se le informazioni sul manifesto del controllo dell'account utente verranno incorporate nel file eseguibile dell'applicazione. Questa proprietà si applica solo ai progetti Visual Studio destinati a [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Nei progetti distribuiti tramite [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e mediante componenti COM senza registrazione, questo elemento viene ignorato. `False` (valore predefinito) specifica che le informazioni sul manifesto del controllo dell'account utente verranno incorporate nel file eseguibile dell'applicazione. `True` specifica che le informazioni sul manifesto del controllo dell'account utente non verranno incorporate.<br /><br /> Questa proprietà si applica solo ai progetti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] destinati a [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Nei progetti distribuiti tramite [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e mediante componenti COM senza registrazione, questa proprietà viene ignorata.<br /><br /> La proprietà NoWin32Manifest deve essere aggiunta solo per evitare che [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] incorpori informazioni sul manifesto nel file eseguibile dell'applicazione. Questo processo è detto *virtualizzazione*. Per usare la virtualizzazione, impostare `<ApplicationManifest>` insieme a `<NoWin32Manifest>` nel modo seguente:<br /><br /> -   Nei progetti [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] rimuovere il nodo `<ApplicationManifest>`. Nei progetti [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]`<NoWin32Manifest>` viene ignorato se esiste un nodo `<ApplicationManifest>`.<br />-   Nei progetti [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] impostare `<ApplicationManifest>` su `False` e `<NoWin32Manifest>` su `True`. Nei progetti [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]`<ApplicationManifest>` esegue l'override di `<NoWin32Manifest>`.<br /> Questa proprietà è equivalente all'opzione `/nowin32manifest` del compilatore *vbc.exe*. |
-| Optimize | Valore booleano che, se impostato su `true`, abilita le ottimizzazioni del compilatore. Questa proprietà è equivalente all'opzione del compilatore `/optimize`. |
+| Ottimizzazione | Valore booleano che, se impostato su `true`, abilita le ottimizzazioni del compilatore. Questa proprietà è equivalente all'opzione del compilatore `/optimize`. |
 | OptionCompare | Specifica la modalità con cui vengono confrontate le stringhe. I valori validi sono "binary" o "text". Questa proprietà è equivalente all'opzione `/optioncompare` del compilatore *vbc.exe*. |
 | OptionExplicit | Valore booleano che, se impostato su `true`, richiede la dichiarazione esplicita delle variabili nel codice sorgente. Questa proprietà è equivalente all'opzione del compilatore `/optionexplicit`. |
 | OptionInfer | Valore booleano che, se impostato su `true`, abilita l'inferenza dei tipi delle variabili. Questa proprietà è equivalente all'opzione del compilatore `/optioninfer`. |
 | OptionStrict | Valore booleano che, se impostato su `true`, fa sì che l'attività di compilazione applichi la semantica dei tipi rigida per limitare le conversioni dei tipi impliciti. Questa proprietà è equivalente all'opzione `/optionstrict` del compilatore *vbc.exe*. |
-| OutputPath | Specifica il percorso della directory di output, relativo alla directory del progetto, ad esempio *bin\Debug*. |
+| OutDir | Indica il percorso di output finale per il progetto o la soluzione. Quando si compila una soluzione, è possibile usare OutDir per raccogliere più output di progetto in un'unica posizione. Inoltre, OutDir è incluso in AssemblySearchPaths usato per la risoluzione dei riferimenti. Ad esempio, *bin\Debug*. |
+| Percorso output | Specifica il percorso della directory di output, relativo alla directory del progetto, ad esempio *bin\Debug*. |
 | OutputType | Specifica il formato del file di output. Per il parametro è possibile specificare uno dei valori riportati di seguito:<br /><br /> -   Libreria. Crea una libreria di codici. È il valore predefinito.<br />-   Exe. Crea un'applicazione console.<br />-   Modulo. Crea un modulo.<br />-   Winexe. Crea un programma per Windows.<br /><br /> Questa proprietà è equivalente all'opzione `/target` del compilatore *vbc.exe*. |
 | OverwriteReadOnlyFiles | Valore booleano che indica se si desidera configurare la compilazione per sovrascrivere i file di sola lettura o attivare un errore. |
 | PathMap | Specifica come eseguire il mapping di percorsi fisici ai nomi di percorso di origine restituiti dal compilatore. Questa proprietà è equivalente all'opzione `/pathmap` del compilatore *csc.exe*. |
 | PdbFile | Nome del file con estensione *pdp* che si sta generando. Questa proprietà è equivalente all'opzione `/pdb` del compilatore *csc.exe*. |
-| Platform | Sistema operativo a cui è destinata la compilazione. I valori validi sono "Any CPU", "x86" e "x64". |
+| Piattaforma | Sistema operativo a cui è destinata la compilazione. I valori validi sono "Any CPU", "x86" e "x64". |
 | ProduceReferenceAssembly | Un valore booleano che, se impostato su `true`, consente la produzione di [assembly di riferimento](/dotnet/standard/assembly/reference-assemblies) per l'assembly corrente. `Deterministic` deve essere `true` quando si usa questa funzionalità. Questa proprietà corrisponde all'opzione `/refout` dei compilatori *vbc.exe* e *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Valore booleano che indica al compilatore di generare solo un assembly di riferimento piuttosto che codice compilato. Non può essere usato in combinazione con `ProduceReferenceAssembly`.  Questa proprietà corrisponde all'opzione `/refonly` dei compilatori *vbc.exe* e *csc.exe*. |
 | RemoveIntegerChecks | Valore booleano che indica se disabilitare i controlli degli errori di overflow di intero. Il valore predefinito è `false`. Questa proprietà è equivalente all'opzione `/removeintchecks` del compilatore *vbc.exe*. |
@@ -124,7 +125,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | Utf8Output | Parametro booleano che, se impostato su `true`, registra l'output del compilatore usando la codifica UTF-8. Questo parametro è equivalente all'opzione del compilatore `/utf8Output`. |
 | VbcToolPath | Percorso facoltativo che indica un altro percorso di *vbc.exe* quando viene eseguito l'override della versione corrente di *vbc.exe*. |
 | VbcVerbosity | Specifica il livello di dettaglio dell'output del compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. I valori validi sono "Non interattivo", "Normale" (valore predefinito) o "Dettagliato". |
-| VisualStudioVersion | Specifica in quale versione di Visual Studio deve essere considerato in esecuzione questo progetto. Se non si specifica questa proprietà, MSBuild la imposta su un valore predefinito appropriato.<br /><br /> Questa proprietà viene usata in diversi tipi di progetto per specificare il set di destinazioni usate per la compilazione. Se `ToolsVersion` è impostato su 4.0 o un valore superiore per un progetto, la proprietà `VisualStudioVersion` viene usata per specificare quale set di strumenti secondario usare. Per altre informazioni, vedere [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md). |
+| VisualStudioVersion | Specifica in quale versione di Visual Studio deve essere considerato in esecuzione questo progetto. Se non si specifica questa proprietà, MSBuild la imposta su un valore predefinito appropriato.<br /><br /> Questa proprietà viene usata in diversi tipi di progetto per specificare il set di destinazioni usate per la compilazione. Se `ToolsVersion` è impostato su 4.0 o un valore superiore per un progetto, la proprietà `VisualStudioVersion` viene usata per specificare quale set di strumenti secondario usare. Per altre informazioni, vedere [Set di strumenti MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md). |
 | WarningsAsErrors | Specifica un elenco di avvisi da considerare come errori. Questo parametro è equivalente all'opzione del compilatore `/warnaserror`. |
 | WarningsNotAsErrors | Specifica un elenco di avvisi che non vengono considerati errori. Questo parametro è equivalente all'opzione del compilatore `/warnaserror`. |
 | Win32Manifest | Nome del file manifesto che deve essere incorporato nell'assembly finale. Questo parametro è equivalente all'opzione del compilatore `/win32Manifest`. |

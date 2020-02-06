@@ -1,23 +1,23 @@
 ---
-title: Accedi a Visual Studio
+title: Accesso a Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 383331e8fee2b009282aa38a8eb20af8b181f7e5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: adda66bbccafa3c1d7f20d60a3f8ee0a4995353c
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845896"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027589"
 ---
-# <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
+# <a name="sign-in-to-visual-studio"></a>Accesso a Visual Studio
 
 È possibile personalizzare e ottimizzare l'esperienza di sviluppo di Visual Studio se si imposta l'account di personalizzazione eseguendo l'accesso all'IDE.
 
@@ -62,13 +62,13 @@ A meno che non esegua la disconnessione, l'utente viene automaticamente connesso
 
 1. Al termine, scegliere il pulsante **Salva modifiche**.
 
-## <a name="troubleshooting"></a>Risoluzione dei problemi
+## <a name="troubleshooting"></a>risoluzione dei problemi
 
 Se si verificano problemi durante l'accesso, vedere la pagina [per ricevere assistenza](https://visualstudio.microsoft.com/subscriptions/support/).
 
 ## <a name="see-also"></a>Vedere anche
 
 * [Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
+* [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)
 * [Accesso (Visual Studio per Mac)](/visualstudio/mac/signing-in)
 * [Attivazione (Visual Studio per Mac)](/visualstudio/mac/activation)
