@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916945"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027267"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Modalità di compilazione delle app aggiunte a contenitori in Visual Studio
 
@@ -32,7 +32,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Le righe in Dockerfile iniziano con l'immagine di nano server da Microsoft Container Registry (mcr.microsoft.com) e creano un'immagine intermedia `base` che espone le porte 80 e 443 e imposta la directory di lavoro su `/app`.
+Le righe nel Dockerfile iniziano con l'immagine Debian da Microsoft Container Registry (mcr.microsoft.com) e creano un'immagine intermedia `base` che espone le porte 80 e 443 e imposta la directory di lavoro su `/app`.
 
 La fase successiva è `build`, che viene visualizzata come segue:
 
@@ -64,7 +64,7 @@ La fase finale inizia di nuovo da `base`e include il `COPY --from=publish` per c
 
 Se si vuole compilare all'esterno di Visual Studio, è possibile usare `docker build` o `MSBuild` per eseguire la compilazione dalla riga di comando.
 
-### <a name="docker-build"></a>docker build
+### <a name="docker-build"></a>compilazione Docker
 
 Per compilare una soluzione in contenitori dalla riga di comando, in genere è possibile usare il comando `docker build <context>` per ogni progetto nella soluzione. Specificare l'argomento del *contesto di compilazione* . Il *contesto di compilazione* per un Dockerfile è la cartella nel computer locale utilizzata come cartella di lavoro per generare l'immagine. Ad esempio, si tratta della cartella da cui vengono copiati i file quando si esegue la copia nel contenitore.  Nei progetti .NET Core utilizzare la cartella che contiene il file di soluzione (con estensione sln).  Espresso come percorso relativo, questo argomento è in genere ".." per un Dockerfile in una cartella di progetto e il file della soluzione nella cartella padre.  Per .NET Framework progetti, il contesto di compilazione è la cartella del progetto, non la cartella della soluzione.
 
@@ -192,5 +192,5 @@ Informazioni su come personalizzare ulteriormente le compilazioni impostando ult
 ## <a name="see-also"></a>Vedere anche
 
 [MSBuild](../msbuild/msbuild.md)
-[Dockerfile nei](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
-[contenitori Windows Linux in Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)
+[Dockerfile nei contenitori Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
+[Linux in Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)

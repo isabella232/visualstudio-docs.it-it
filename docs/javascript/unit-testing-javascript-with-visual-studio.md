@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
+ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888635"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77071947"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testing unità di codice JavaScript e TypeScript in Visual Studio
 
@@ -77,7 +77,7 @@ Dopo aver aperto Esplora test (scegliere **Test** > **Finestre** > **Esplora tes
 > [!NOTE]
 > Non usare l'opzione `outdir` o `outfile` in *tsconfig.json* perché Esplora test non riuscirebbe a trovare gli unit test nei file TypeScript.
 
-## <a name="run-tests"></a>Esegui test
+## <a name="run-tests"></a>Esecuzione dei test
 
 È possibile eseguire i test in Visual Studio 2017 o dalla riga di comando.
 
@@ -99,7 +99,7 @@ Dopo aver aperto Esplora test (scegliere **Test** > **Finestre** > **Esplora tes
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-Questo comando restituisce un output simile a quello illustrato di seguito:
+Questo comando ha un output simile al seguente:
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0
@@ -173,3 +173,5 @@ Oltre alle proprietà sopra riportate, sarà necessario installare anche il pacc
     <GenerateProgramFile>false</GenerateProgramFile>
 </PropertyGroup>
 ```
+
+Alcuni framework di test possono richiedere pacchetti NPM aggiuntivi per il rilevamento dei test. Per scherzo, ad esempio, è necessario il pacchetto NPM di jest-editor-support. Se necessario, consultare la documentazione relativa al Framework specifico.
