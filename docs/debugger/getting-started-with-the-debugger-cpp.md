@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c928606c0fbc306a72347f85841677d0f69ec8
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027437"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091808"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C++ tramite Visual Studio
 
@@ -27,7 +27,7 @@ Questo articolo descrive le funzionalità del debugger di Visual Studio con una 
 
 Anche se l'app demo C++è, la maggior parte delle funzionalità è C#applicabile a, F#Visual Basic,, Python, JavaScript e altri linguaggi supportati da Visual StudioF# (non supporta modifica e continuazione). F# e JavaScript non supportano la finestra **Auto**). Le schermate si trovano C++in.
 
-In questa esercitazione si apprenderà come:
+In questa esercitazione si eseguono le attività seguenti:
 
 > [!div class="checklist"]
 > * Avvio del debugger e raggiungimento dei punti di interruzione
@@ -35,7 +35,7 @@ In questa esercitazione si apprenderà come:
 > * Ispezione delle variabili nelle finestre dei suggerimenti dati e del debugger
 > * Analisi dello stack di chiamate
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 ::: moniker range=">=vs-2019"
 
@@ -50,13 +50,13 @@ In questa esercitazione si apprenderà come:
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -74,9 +74,11 @@ In primo luogo, verrà creato C++ un progetto di applicazione console. Il tipo d
 
 3. Nella finestra di dialogo **nuovo progetto** nel riquadro sinistro espandere oggetto  **C++ visivo** , quindi scegliere **desktop di Windows**. Nel riquadro centrale scegliere **applicazione console di Windows**. Quindi denominare il progetto *Get-Started-Debugging*.
 
-     Se il modello di progetto **applicazione console** non è visualizzato, scegliere il collegamento **Apri programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **nuovo progetto** .
+     Se il modello di progetto **applicazione console** non è visualizzato, scegliere il collegamento **Apri programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **nuovo progetto** . Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
-     Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
+4. Fare clic su **OK**.
+
+   Visual Studio aprirà il nuovo progetto.
 
 ::: moniker-end
 
@@ -103,7 +105,7 @@ In primo luogo, verrà creato C++ un progetto di applicazione console. Il tipo d
 
 ::: moniker-end
 
-## <a name="create-the-application"></a>Creazione dell'applicazione
+## <a name="create-the-application"></a>Creare l'applicazione
 
 1. In *Get-Started-debugging. cpp*sostituire tutto il codice predefinito con il codice seguente:
 
@@ -137,7 +139,7 @@ In primo luogo, verrà creato C++ un progetto di applicazione console. Il tipo d
 
 ## <a name="start-the-debugger"></a>Avviare il debugger.
 
-1. Premere **F5** (**debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug sulla barra degli strumenti Debug.
+1. Premere **F5** (**debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvio del debug") debug sulla barra degli strumenti Debug.
 
      **F5** avvia l'app con il debugger collegato al processo dell'app. Fino ad ora, tuttavia, non è stata eseguita alcuna operazione per esaminare il codice. Di conseguenza, viene semplicemente avviata l'app e viene visualizzato l'output della console.
 
@@ -156,7 +158,7 @@ In primo luogo, verrà creato C++ un progetto di applicazione console. Il tipo d
 
      In questa esercitazione viene esaminata l'app usando il debugger e vengono descritte le funzionalità del debugger.
 
-2. Arrestare il debugger premendo il pulsante di arresto del ![debug](../debugger/media/dbg-tour-stop-debugging.png "Debug") rosso (**MAIUSC** + **F5**).
+2. Arrestare il debugger premendo il pulsante di arresto del ![debug](../debugger/media/dbg-tour-stop-debugging.png "Arresta debug") rosso (**MAIUSC** + **F5**).
 
 3. Nella finestra della console premere un tasto e **immettere** per chiudere la finestra della console.
 
@@ -170,7 +172,7 @@ In primo luogo, verrà creato C++ un progetto di applicazione console. Il tipo d
 
     I punti di interruzione sono una delle funzionalità più semplici ed essenziali del debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice.
 
-2. Premere **F5** o il pulsante **Avvia debug** per ![avviare il debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug"), l'app viene avviata e il debugger viene eseguito fino alla riga di codice in cui è stato impostato il punto di interruzione.
+2. Premere **F5** o il pulsante **Avvia debug** per ![avviare il debug](../debugger/media/dbg-tour-start-debugging.png "Avvio del debug"), l'app viene avviata e il debugger viene eseguito fino alla riga di codice in cui è stato impostato il punto di interruzione.
 
     ![Impostare e raggiungere un punto di interruzione](../debugger/media/get-started-set-breakpoint-cpp.png)
 
@@ -269,7 +271,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Espandere la variabile `letters` per visualizzare gli elementi che contiene.
 
-     ![Esaminare le variabili nella finestra variabili locali](../debugger/media/get-started-locals-window-cpp.png "finestra Variabili locali")
+     ![Esaminare le variabili nella finestra variabili locali](../debugger/media/get-started-locals-window-cpp.png "Finestra Variabili locali")
 
     La finestra **Variabili locali** mostra le variabili presenti nell'[ambito](https://www.wikipedia.org/wiki/Scope_(computer_science)) corrente, ovvero il contesto di esecuzione corrente.
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405204"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091782"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Creare visualizzazioni personalizzate di C++ oggetti nel debugger usando il Framework natvis
 
@@ -670,7 +670,7 @@ Il seguente è un esempio di elemento UIVisualizer:
 
 - Una coppia `ServiceId` - `Id` attributo identifica un `UIVisualizer`. Il `ServiceId` è il GUID del servizio esposto dal pacchetto del visualizzatore. `Id` è un identificatore univoco che distingue i visualizzatori, se un servizio ne fornisce più di uno. Nell'esempio precedente, lo stesso servizio del visualizzatore fornisce due visualizzatori.
 
-- L'attributo `MenuName` definisce il nome di un visualizzatore da visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Ad esempio:
+- L'attributo `MenuName` definisce il nome di un visualizzatore da visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Ad esempio,
 
   ![Menu di scelta rapida del menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Menu di scelta rapida UIVisualizer")
 
@@ -690,3 +690,9 @@ Ogni tipo definito nel file *natvis* deve elencare in modo esplicito tutti i vis
 È molto più lavoro scrivere un visualizzatore personalizzato rispetto a una definizione natvis XML, ma non sono disponibili vincoli sui vincoli che natvis o non supporta. I visualizzatori personalizzati hanno accesso al set completo di API di estendibilità del debugger, che possono eseguire query e modificare il processo del debug o comunicare con altre parti di Visual Studio.
 
  È possibile utilizzare gli attributi `Condition`, `IncludeView`e `ExcludeView` negli elementi `CustomVisualizer`.
+
+ ## <a name="limitations"></a>Limitazioni
+
+Le personalizzazioni di natvis funzionano con classi e struct, ma non con typedef.
+
+Natvis non supporta i visualizzatori per i tipi primitivi (ad esempio `int`, `bool`) o per i puntatori ai tipi primitivi. In questo scenario, un'opzione consiste nell'usare l' [identificatore di formato](../debugger/format-specifiers-in-cpp.md) appropriato per il caso d'uso. Se ad esempio si usa `double* mydoublearray` nel codice, è possibile usare un identificatore di formato di matrice nella finestra **espressioni di controllo** del debugger, ad esempio l'espressione `mydoublearray, [100]`, che mostra i primi 100 elementi.

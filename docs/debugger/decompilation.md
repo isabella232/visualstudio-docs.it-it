@@ -1,0 +1,95 @@
+---
+title: Decompilare il codice .NET durante il debug | Microsoft Docs
+ms.date: 2/2/2020
+ms.topic: conceptual
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- decompilation, debugger, exception
+- debugging [Visual Studio], decompilation, source not found
+author: mikejo5000
+ms.author: mikejo
+manager: jillfra
+ms.workload:
+- multiple
+monikerRange: '>= vs-2019'
+ms.openlocfilehash: ffd5f2e4bfc13f79b519fbdf9b3cf517793cd324
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091933"
+---
+# <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Genera codice sorgente da assembly .NET durante il debug
+
+Quando si esegue il debug di un'applicazione .NET, è possibile che si desideri visualizzare il codice sorgente che non è presente. Ad esempio, è possibile suddividere in un'eccezione o usare lo stack di chiamate per passare a un percorso di origine.
+
+> [!NOTE]
+> * La generazione del codice sorgente (decompilazione) è disponibile solo per le applicazioni .NET ed è basata sul progetto open source [ILSpy](https://github.com/icsharpcode/ILSpy) .
+> * La decompilazione è disponibile solo in Visual Studio 2019 16,5 e versioni successive.
+
+## <a name="generate-source-code"></a>Genera codice sorgente
+
+Quando si esegue il debug e non è disponibile codice sorgente, Visual Studio Mostra il documento di **origine non trovato** o, se non sono presenti simboli per l'assembly, il documento **Nessun simbolo** è stato caricato. In entrambi i documenti è presente un'opzione di **codice sorgente decompilata** che genera C# il codice per il percorso corrente. Il codice C# generato può quindi essere usato in modo analogo a qualsiasi altro codice sorgente. È possibile visualizzare il codice, controllare le variabili, impostare i punti di interruzione e così via.
+
+### <a name="no-symbols-loaded"></a>Nessun simbolo caricato
+
+Nella figura seguente viene mostrato il messaggio **Nessun simbolo caricato** .
+
+![Screenshot del documento nessun simbolo caricato](media/decompilation-no-symbol-found.png)
+
+### <a name="source-not-found"></a>Origine non trovata
+
+Nella figura seguente viene illustrato il messaggio di **origine non trovato** .
+
+![Screenshot del documento di origine non trovato](media/decompilation-no-source-found.png)
+
+## <a name="generate-and-embed-sources-for-an-assembly"></a>Generare e incorporare origini per un assembly
+
+Oltre a generare codice sorgente per un percorso specifico, è possibile generare tutto il codice sorgente per un determinato assembly .NET. A tale scopo, passare alla finestra **moduli** e dal menu di scelta rapida di un assembly .NET, quindi selezionare il comando **Decompila codice sorgente** . Visual Studio genera un file di simboli per l'assembly, quindi incorpora l'origine nel file di simboli. In un passaggio successivo è possibile [estrarre](#extract-and-view-the-embedded-source-code) il codice sorgente incorporato.
+
+![Screenshot del menu di scelta rapida dell'assembly nella finestra moduli con comando Decompila origine.](media/decompilation-decompile-source-code.png)
+
+## <a name="extract-and-view-the-embedded-source-code"></a>Estrarre e visualizzare il codice sorgente incorporato
+
+È possibile estrarre i file di origine incorporati in un file di simboli usando il comando **Estrai codice sorgente** nel menu di scelta rapida della finestra **moduli** .
+
+![Screenshot del menu di scelta rapida dell'assembly nella finestra moduli con il comando Estrai origini.](media/decompilation-extract-source-code.png)
+
+I file di origine estratti vengono aggiunti alla soluzione come [file esterni](../ide/reference/miscellaneous-files.md). La funzionalità file esterni è disattivata per impostazione predefinita in Visual Studio. Per abilitare questa funzionalità, è possibile scegliere **strumenti** > **opzioni** > **ambiente** > **documenti** > **Mostra file esterni in Esplora soluzioni casella di** controllo. Senza abilitare questa funzionalità, non sarà possibile aprire il codice sorgente estratto.
+
+![Screenshot della pagina delle opzioni degli strumenti con l'opzione file esterni abilitata.](media/decompilation-tools-options-misc-files.png)
+
+I file di origine estratti vengono visualizzati nei file esterni in **Esplora soluzioni**.
+
+![Screenshot di Esplora soluzioni con file esterni.](media/decompilation-solution-explorer.png)
+
+## <a name="known-limitations"></a>Limitazioni note
+
+### <a name="requires-break-mode"></a>Richiede la modalità di interruzioni
+
+La generazione di codice sorgente tramite la decompilazione è possibile solo quando il debugger è in modalità di interruzione e l'applicazione viene sospesa. Ad esempio, in Visual Studio viene attivata la modalità di interruzione quando viene raggiunto un punto di interruzione o un'eccezione. È possibile attivare facilmente Visual Studio per interrompere la volta successiva in cui viene eseguito il codice usando il comando **Interrompi tutto** (![icona interrompi tutto](media/decompilation-break-all.png)).
+
+### <a name="decompilation-limitations"></a>Limitazioni della decompilazione
+
+La generazione di codice sorgente dal formato intermedio (IL) utilizzato negli assembly .NET presenta alcune limitazioni intrinseche. Di conseguenza, il codice sorgente generato non ha un aspetto simile al codice sorgente originale. La maggior parte delle differenze si trova in posizioni in cui le informazioni nel codice sorgente originale non sono necessarie in fase di esecuzione. Ad esempio, le informazioni quali spazi vuoti, commenti e nomi di variabili locali non sono necessarie in fase di esecuzione. Si consiglia di utilizzare l'origine generata per comprendere il modo in cui il programma è in esecuzione e non come sostituzione del codice sorgente originale.
+
+### <a name="debug-optimized-or-release-assemblies"></a>Debug di assembly ottimizzati o versione
+
+Quando si esegue il debug di codice decompilato da un assembly compilato con ottimizzazioni del compilatore, è possibile che si verifichino i problemi seguenti:
+- I punti di interruzione potrebbero non essere sempre associati al percorso di origine corrispondente.
+- L'esecuzione di istruzioni potrebbe non sempre passare alla posizione corretta.
+- Le variabili locali non possono avere nomi accurati.
+
+Per altri dettagli, vedere il problema GitHub: [integrazione di IChsarpCompiler. Decompiler nel debugger di Visual](https://github.com/icsharpcode/ILSpy/issues/1901)Studio.
+
+### <a name="extracted-sources"></a>Origini estratte
+
+Il codice sorgente Estratto da un assembly presenta le limitazioni seguenti:
+- Il nome e il percorso dei file generati non sono configurabili.
+- I file sono temporanei e verranno eliminati da Visual Studio.
+- I file si trovano in una singola cartella e in qualsiasi gerarchia di cartelle utilizzata dalle origini originali.
+- Il nome file di ogni file contiene un hash di checksum del file.
+
+### <a name="generated-code-is-c-only"></a>Il codice generato C# è solo
+La decompilazione genera solo file di codice C#sorgente in. Non è possibile generare file in altre lingue.

@@ -268,6 +268,10 @@
                   href: visualizer-api-reference.md
         - name: Ripristinare comandi nascosti del debugger
           href: how-to-restore-hidden-debugger-commands.md
+    - name: Codice sorgente
+      items:
+        - name: Decompilare assembly .NET
+          href: decompilation.md
     - name: Debug remoto
       items:
         - name: Debug remoto
