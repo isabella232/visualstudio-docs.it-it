@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ffd5f2e4bfc13f79b519fbdf9b3cf517793cd324
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091933"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144779"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Genera codice sorgente da assembly .NET durante il debug
 
@@ -80,8 +80,27 @@ Quando si esegue il debug di codice decompilato da un assembly compilato con ott
 - I punti di interruzione potrebbero non essere sempre associati al percorso di origine corrispondente.
 - L'esecuzione di istruzioni potrebbe non sempre passare alla posizione corretta.
 - Le variabili locali non possono avere nomi accurati.
+- Alcune variabili potrebbero non essere disponibili per la valutazione.
 
 Per altri dettagli, vedere il problema GitHub: [integrazione di IChsarpCompiler. Decompiler nel debugger di Visual](https://github.com/icsharpcode/ILSpy/issues/1901)Studio.
+
+### <a name="decompilation-reliability"></a>Affidabilità della decompilazione
+
+Una percentuale relativamente ridotta dei tentativi di decompilazione può causare un errore. Ciò è dovuto a un errore di riferimento null del punto di sequenza in ILSpy.  L'errore è stato mitigato intercettando questi problemi e il tentativo di decompilazione non riesce correttamente.
+
+Per altri dettagli, vedere il problema GitHub: [integrazione di IChsarpCompiler. Decompiler nel debugger di Visual](https://github.com/icsharpcode/ILSpy/issues/1901)Studio.
+
+### <a name="limitations-with-async-code"></a>Limitazioni con codice asincrono
+
+I risultati della decompilazione dei moduli con i modelli di codice async/await potrebbero essere incompleti o non riuscire completamente. L'implementazione ILSpy di async/await e yield state-machines è implementata solo parzialmente. 
+
+Per altri dettagli, vedere il problema [relativo al generatore PDB](https://github.com/icsharpcode/ILSpy/issues/1422)di GitHub.
+
+### <a name="just-my-code"></a>Just My Code
+
+Le impostazioni di [Just My Code (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) consentono a Visual Studio di eseguire un'istruzione/routine di sistema, Framework, libreria e altre chiamate non utente. Durante una sessione di debug, nella finestra **moduli** vengono visualizzati i moduli di codice che il debugger sta trattando come codice utente (codice utente).
+
+La decompilazione di moduli ottimizzati o versione produce codice non utente. Se il debugger si interrompe nel codice non utente decompilato, ad esempio, non viene visualizzata **alcuna** finestra di origine. Per disabilitare Just My Code, passare a **strumenti** > **Opzioni** (oppure **debug** **Opzioni**di > ) > **debug** > **generale**, quindi deselezionare **Abilita Just My Code**.
 
 ### <a name="extracted-sources"></a>Origini estratte
 

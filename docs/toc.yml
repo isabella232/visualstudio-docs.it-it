@@ -92,7 +92,7 @@
           items:
             - name: 'Sottoscrizioni di Visual Studio: Panoramica dell''amministratore'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Riferimenti
+        - name: Riferimento
           items:
             - name: ID dei carichi di lavoro e dei componenti di Visual Studio
               items:
@@ -382,6 +382,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: Istruzione Invert if
                   href: ide/reference/invert-if-statement.md
+                - name: Opzioni di refactoring delle funzioni locali statiche
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Spostare la dichiarazione vicino al riferimento
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Spostare un tipo nel file corrispondente
@@ -591,7 +593,7 @@
               href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
             - name: Disabilitare la compatibilità con DPI per Progettazione Windows Form
               href: designers/disable-dpi-awareness.md
-            - name: Riferimenti
+            - name: Riferimento
               items:
                 - name: API System.Windows.Forms >>
                   href: /dotnet/api/system.windows.forms
@@ -916,7 +918,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Prodotti e servizi Microsoft per l'accessibilità
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Riferimenti
+- name: Riferimento
   items:
     - name: Scelte rapide da tastiera
       items:
@@ -928,7 +930,7 @@
           href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Comandi di Visual Studio
       items:
-        - name: Riferimenti
+        - name: Riferimento
           displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: Alias dei comandi
@@ -1182,7 +1184,7 @@
           href: ide/reference/output-window.md
         - name: Proprietà progetto
           items:
-            - name: Riferimenti
+            - name: Riferimento
               displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: 'Pagina Applicazione, Creazione progetti (piattaforma UWP)'
@@ -1253,7 +1255,7 @@
           href: ide/reference/team-explorer-reference.md
         - name: Casella degli strumenti
           items:
-            - name: Riferimenti
+            - name: Riferimento
               displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 'Casella degli strumenti, Scheda Componenti'
@@ -1264,7 +1266,7 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Opzioni della riga di comando devenv
       items:
-        - name: Riferimenti
+        - name: Riferimento
           displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
