@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a9d8babb55a615e12c575f30426c8e73aa1c6e1
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406711"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125364"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
@@ -39,7 +39,7 @@ Ecco un riepilogo generale delle novità:
 
 Per un elenco completo di tutte le novità in questa versione, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes/).
 
-## <a name="develop"></a>Sviluppa
+## <a name="develop"></a>Sviluppo
 
 Vedere il video seguente per altre informazioni su come è possibile risparmiare tempo con le nuove funzionalità. <br><br>*Lunghezza video: 3,00 minuti*
 
@@ -120,7 +120,7 @@ Vedere il video seguente per altre informazioni su come è possibile lavorare in
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
-### <a name="cloud-first-workflow"></a>Flusso di lavoro cloud-first
+### <a name="git-first-workflow"></a>Primo flusso di lavoro git
 
 La nuova finestra iniziale non passa di certo inosservata alla prima apertura di Visual Studio 2019.
 

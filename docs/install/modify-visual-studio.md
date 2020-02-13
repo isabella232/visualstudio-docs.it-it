@@ -2,7 +2,7 @@
 title: Modificare Visual Studio
 titleSuffix: ''
 description: Informazioni dettagliate su come modificare Visual Studio.
-ms.date: 12/29/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922883"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125351"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificare Visual Studio aggiungendo o rimuovendo carichi di lavoro e componenti
 
@@ -123,6 +123,9 @@ Ecco come fare.
 ::: moniker range="vs-2019"
 
  I carichi di lavoro contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
+
+ > [!TIP]
+>Per altre informazioni sugli strumenti e sui bundle di componenti necessari per lo sviluppo, vedere [carichi di lavoro di Visual Studio](https://visualstudio.microsoft.com/vs/#workloads).
 
 1. Nella Programma di installazione di Visual Studio scegliere la scheda carichi di **lavoro** , quindi selezionare o deselezionare i carichi di lavoro desiderati.
 
