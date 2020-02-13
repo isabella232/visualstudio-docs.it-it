@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706995"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192416"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -50,20 +50,20 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
 
 7. Immettere il nome utente specificato nel messaggio di benvenuto e la password appena creata e fare clic su **Accedi**.
 
-8. La procedura è terminata.  A questo punto è possibile iniziare a imparare usando i numerosi corsi Pluralsight.
+8. L'operazione è terminata.  A questo punto è possibile iniziare a imparare usando i numerosi corsi Pluralsight.
 
 ## <a name="eligibility"></a>Eligibility
 
-|                          Livello di sottoscrizione                          |     Canali      |    Vantaggio di    |   Rinnovabile?   |
+|                          Livello di sottoscrizione                          |     Canali      |    Vantaggi    |   Rinnovabile?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   6 mesi    | Sì<sup>2</sup> |
 |          Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 mesi    | Sì<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 mesi    | Sì<sup>2</sup> |
 |         Visual Studio Professional con GitHub Enterprise          | VL  |   3 mesi    | Sì<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   3 mesi    | Sì<sup>2</sup>  |
-|                      MSDN Platforms (Standard)                       |    VL, Retail     |   3 mesi    | Sì<sup>2</sup>  |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       N/D       |
-|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Program      | Non disponibile |       N/D       |
+|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Non disponibile    | ND  |
+|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Non disponibile    | ND  |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       ND       |
+|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       ND       |
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), ETP, Imagine.*
