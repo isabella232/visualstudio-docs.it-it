@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114397"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173085"
 ---
 # <a name="application-property-page-uwp-projects"></a>Pagina delle proprietà dell'applicazione (progetti UWP)
 
@@ -38,7 +38,7 @@ Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLan
 
 **Informazioni assembly**&mdash;Se si sceglie questo pulsante viene visualizzata la [finestra di dialogo Informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifesto del pacchetto**&mdash;Scegliendo questo pulsante viene aperta la finestra di progettazione del manifesto. Per accedere alla finestra di progettazione del manifesto, è anche possibile scegliere il file _Package.appxmanifest_ in **Esplora soluzioni**. Per altre informazioni, vedere [Configurare un pacchetto con Progettazione manifesto](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package).
+**Manifesto del pacchetto**&mdash;Scegliendo questo pulsante viene aperta la finestra di progettazione del manifesto. Per accedere alla finestra di progettazione del manifesto, è anche possibile scegliere il file _Package.appxmanifest_ in **Esplora soluzioni**. Per altre informazioni, vedere [Configurare un pacchetto con Progettazione manifesto](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 
 ## <a name="targeting-section"></a>Sezione Destinazione
 
