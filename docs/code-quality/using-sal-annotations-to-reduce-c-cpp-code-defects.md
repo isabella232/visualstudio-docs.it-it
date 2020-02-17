@@ -7,17 +7,17 @@ helpviewer_keywords:
 - SAL annotations
 - code analysis, annotation
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 506e8516c7a7bbc0ccc610b843763017ae90f547
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4d227ca8c88770548a1d53a4f40eb1ce62d5919c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807069"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271731"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Uso delle annotazioni SAL per ridurre gli errori del codice C/C++
 SAL è il linguaggio di annotazione del codice sorgente Microsoft. Usando le annotazioni del codice sorgente, è possibile eseguire l'intento dietro il codice in modo esplicito. Queste annotazioni consentono inoltre agli strumenti di analisi statica automatizzati di analizzare il codice in modo più accurato, con un minor numero di falsi positivi e falsi negativi.

@@ -2,17 +2,17 @@
 title: Uso dei correttori Linee guida di base di C++
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 95b3af7db7fc0e4c71d78716714031fd07dbdab5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807080"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271779"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Usare i controlli delle Linee guida di base di C++
 
@@ -174,7 +174,7 @@ Talvolta può essere utile eseguire analisi del codice mirate e continuare a usa
 3. Caricare il progetto e aprirne le proprietà.
 4. Abilitare l'analisi del codice, selezionare i set di regole appropriati, ma non abilitare le estensioni dell'analisi codice.
 5. Passare al file che si vuole analizzare con il controllo C++ delle linee guida di base e aprirne le proprietà.
-6. Scegliere le **OpzioniC++della riga C/\command** e aggiungere `/analyze:plugin EspXEngine.dll`
+6. Scegliere **Opzioni rigaC++C/\command** e Aggiungi `/analyze:plugin EspXEngine.dll`
 7. Disabilitare l'utilizzo dell'intestazione precompilata (**intestazioni CC++/\Precompiled**). Questa operazione è necessaria perché il motore delle estensioni può tentare di leggere le informazioni interne dall'intestazione precompilata (PCH); Se il PCH compilato con le opzioni del progetto predefinite, non sarà compatibile.
 8. Ricompilare il progetto. I controlli prerapidi comuni devono essere eseguiti in tutti i file. Poiché il C++ controllo delle linee guida di base non è abilitato per impostazione predefinita, deve essere eseguito solo nel file configurato per usarlo.
 
@@ -227,15 +227,15 @@ Se si usa un sistema di compilazione che non si basa su MSBuild, è ancora possi
    - `set esp.annotationbuildlevel=ignore` Disabilita la logica che elabora le annotazioni SAL. Le annotazioni non influiscono sull' C++ analisi del codice nel controllo delle linee guida di base, ma la loro elaborazione richiede tempo (a volte molto tempo). Questa impostazione è facoltativa, ma altamente consigliata.
    - `set caexcludepath=%include%` si consiglia di disabilitare gli avvisi generati sulle intestazioni standard. È possibile aggiungere altri percorsi, ad esempio il percorso delle intestazioni comuni nel progetto.
 2. **Opzioni della riga di comando**
-   - `/analyze` Abilita l'analisi del codice (considerare anche l'uso di/analyze: only e/analyze: quiet).
+   - `/analyze` Abilita l'analisi del codice (si consiglia anche di usare/analyze: only e/analyze: quiet).
    - `/analyze:plugin EspXEngine.dll` questa opzione carica il motore delle estensioni di analisi del codice in PREfast. Questo motore, a sua volta, carica C++ il controllo delle linee guida di base.
 
 ## <a name="use-the-guideline-support-library"></a>Usare la libreria di supporto per le linee guida
-La libreria del supporto per le linee guida è stata progettata per consentire di seguire le linee guida di base. Il GSL include definizioni che consentono di sostituire costrutti soggetti a errori con alternative più sicure. È ad esempio possibile sostituire una coppia `T*, length` di parametri con il tipo `span<T>`. GSL è disponibile in [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). La libreria è open source ed è quindi possibile visualizzare le origini, creare commenti o contribuire. Il progetto è disponibile in [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+La libreria del supporto per le linee guida è stata progettata per consentire di seguire le linee guida di base. Il GSL include definizioni che consentono di sostituire costrutti soggetti a errori con alternative più sicure. È ad esempio possibile sostituire un `T*, length` coppia di parametri con il tipo di `span<T>`. GSL è disponibile in [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). La libreria è open source ed è quindi possibile visualizzare le origini, creare commenti o contribuire. Il progetto è disponibile in [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Usare le C++ linee guida per il controllo principale nei progetti di Visual Studio 2015
 
-Se si usa Visual Studio 2015, i C++ set di regole di analisi del codice di base non sono installati per impostazione predefinita. È necessario eseguire alcuni passaggi aggiuntivi prima di poter abilitare gli C++ strumenti di analisi del codice per il controllo principale in Visual Studio 2015. Microsoft fornisce supporto per i progetti Visual Studio 2015 usando un pacchetto NuGet. Il pacchetto è denominato Microsoft. CppCoreCheck ed è disponibile all' [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). Per questo pacchetto è necessario avere almeno Visual Studio 2015 con Update 1 installato.
+Se si usa Visual Studio 2015, i C++ set di regole di analisi del codice di base non sono installati per impostazione predefinita. È necessario eseguire alcuni passaggi aggiuntivi prima di poter abilitare gli C++ strumenti di analisi del codice per il controllo principale in Visual Studio 2015. Microsoft fornisce supporto per i progetti Visual Studio 2015 usando un pacchetto NuGet. Il pacchetto è denominato Microsoft. CppCoreCheck ed è disponibile in [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). Per questo pacchetto è necessario avere almeno Visual Studio 2015 con Update 1 installato.
 
 Il pacchetto installa anche un altro pacchetto come dipendenza, una libreria di supporto per le linee guida solo intestazione (GSL). GSL è disponibile anche in GitHub all' [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 

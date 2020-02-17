@@ -1,5 +1,5 @@
 ---
-title: Annotazioni di struct e classi | Microsoft Docs
+title: Annotazione di struct e classi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -21,32 +21,32 @@ f1_keywords:
 - _Field_size_full_opt_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: df2e75bb3dd01d051d8fed29748e499f8f620128
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157072"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271577"
 ---
 # <a name="annotating-structs-and-classes"></a>Annotazioni di struct e classi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile annotare i membri struct e di classe utilizzando le annotazioni che operano come invarianti, si presume che siano true per qualsiasi chiamata di funzione o entrata/uscita di funzione che include la struttura contenitore come parametro o valore restituito.  
   
-## <a name="struct-and-class-annotations"></a>Annotazioni di classi e struct  
+## <a name="struct-and-class-annotations"></a>Annotazioni di struct e classi  
   
 - `_Field_range_(low, high)`  
   
-     Il campo è compreso nell'intervallo (inclusivo) dal `low` a `high`.  Equivalente ad applicare `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` all'oggetto annotato utilizzando le pre/postcondizioni appropriate.  
+     Il campo si trova nell'intervallo (inclusivo) da `low` a `high`.  Equivalente ad applicare `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` all'oggetto annotato utilizzando le pre/postcondizioni appropriate.  
   
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
      Campo con una dimensione scrivibile in elementi (o byte) come specificato da `size`.  
   
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
      Campo con una dimensione scrivibile in elementi (o byte) come specificato da `size` e `count` degli elementi (byte) che sono leggibili.  
   
@@ -58,7 +58,7 @@ ms.locfileid: "68157072"
   
      Campo che contiene sia dimensione leggibile che modificabile in elementi (o byte) come specificato da `size`.  
   
-     Si applica alla dichiarazione di classe o struct.  Indica che un oggetto valido di tale tipo può essere maggiore rispetto al tipo dichiarato, con il numero di byte specificati da `size`.  Ad esempio:  
+     Si applica a struct o a una dichiarazione di classe.  Indica che un oggetto valido di tale tipo può essere maggiore rispetto al tipo dichiarato, con il numero di byte specificati da `size`.  Ad esempio,  
   
     ```cpp  
   
@@ -70,18 +70,18 @@ ms.locfileid: "68157072"
   
     ```  
   
-     Le dimensioni del buffer in byte di un parametro `pM` di tipo `MyStruct *` viene quindi considerato:  
+     Le dimensioni del buffer, in byte, di un parametro `pM` di tipo `MyStruct *` vengono quindi considerate:  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Uso delle annotazioni SAL per ridurre i difetti del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Uso delle annotazioni SAL per ridurreC++ i difetti di C/codice](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Informazioni su SAL](../code-quality/understanding-sal.md)   
  [Annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Annotazione del comportamento (funzione)](../code-quality/annotating-function-behavior.md)   
+ [Annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)   
  [Annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md)   
- [Specificare quando e dove applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Specificare quando e dove si applica un'Annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funzioni intrinseche](../code-quality/intrinsic-functions.md)   
  [Suggerimenti ed esempi](../code-quality/best-practices-and-examples-sal.md)

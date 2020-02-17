@@ -1,5 +1,5 @@
 ---
-title: Strumenti e accesso ai dati
+title: Usare i dati in Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916724"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272084"
 ---
-# <a name="access-data-in-visual-studio"></a>Accedere ai dati in Visual Studio
+# <a name="work-with-data-in-visual-studio"></a>Usare i dati in Visual Studio
 
 In Visual Studio è possibile creare applicazioni che si connettono ai dati praticamente in qualsiasi prodotto o servizio del database, in qualsiasi formato, in qualsiasi posizione, in un computer locale, in una rete locale o in un cloud pubblico, privato o ibrido.
 
 Per le applicazioni in JavaScript, Python, PHP, Ruby o C++, è possibile connettersi ai dati, come per qualsiasi altra operazione, ottenendo le librerie e scrivendo il codice. Per le applicazioni .NET, Visual Studio fornisce strumenti che è possibile usare per esplorare le origini dati, creare modelli a oggetti per archiviare e modificare i dati in memoria e associare dati all'interfaccia utente. Microsoft Azure offre SDK per .NET, Java, node. js, PHP, Python, Ruby e app per dispositivi mobili e strumenti in Visual Studio per la connessione ad archiviazione di Azure.
 
+::: moniker range="vs-2017"
 Negli elenchi seguenti vengono illustrati solo alcuni dei numerosi sistemi di database e di archiviazione che possono essere utilizzati da Visual Studio. Le offerte di [Microsoft Azure](https://azure.microsoft.com/) sono servizi dati che includono tutto il provisioning e l'amministrazione dell'archivio dati sottostante. Il carico di lavoro di **sviluppo di Azure** in [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) consente di usare gli archivi dati di Azure direttamente da Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Negli elenchi seguenti vengono illustrati solo alcuni dei numerosi sistemi di database e di archiviazione che possono essere utilizzati da Visual Studio. Le offerte di [Microsoft Azure](https://azure.microsoft.com/) sono servizi dati che includono tutto il provisioning e l'amministrazione dell'archivio dati sottostante. Il carico di lavoro di **sviluppo di Azure** in [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) consente di usare gli archivi dati di Azure direttamente da Visual Studio.
+::: moniker-end
 
 ![Carico di lavoro Sviluppo di Azure](media/azure-development-workload.png)
 

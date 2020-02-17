@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 41d5c5a5ea966d1e092e7038d2fc3734c9bd9f15
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445639"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272327"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Guida introduttiva: Analisi codice per C/C++
 
@@ -83,7 +83,7 @@ Per eliminare un avviso:
 
 3. Scegliere non **visualizzare il messaggio** , quindi scegliere **nell'origine**.
 
-   L'eliminazione di un messaggio inserisce `#pragma warning (disable:[warning ID])` che consente di disattivare l'avviso per la riga di codice.
+   L'eliminazione di un messaggio inserisce `#pragma warning (disable:[warning ID])` che evita l'avviso per la riga di codice.
 
 ## <a name="create-work-items-for-code-analysis-warnings"></a>Creare elementi di lavoro per gli avvisi di analisi del codice
 
