@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 095fbcf35337ff2a619b6f3dcc6d5c28773ae975
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 8fc43cef8526b2ca79bb0b88a1d56ef4f4a2a65a
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542646"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275261"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Esempi di parametri della riga di comando per l'installazione di Visual Studio
 
@@ -51,7 +51,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
    ```
 
   > [!NOTE]
-  > Entrambi i comandi sono necessari. Il primo comando aggiorna il programma di installazione di Visual Studio. Il secondo comando aggiorna l'istanza di Visual Studio. Per evitare una finestra di dialogo di Controllo dell'account utente, eseguire il prompt dei comandi come amministratore.
+  > Entrambi i comandi sono consigliati. Il primo comando aggiorna il programma di installazione di Visual Studio. Il secondo comando aggiorna l'istanza di Visual Studio. Per evitare una finestra di dialogo di Controllo dell'account utente, eseguire il prompt dei comandi come amministratore.
 
 * Per installare automaticamente un'istanza desktop di Visual Studio, unitamente al Language Pack per la lingua francese, senza indicazione dello stato di avanzamento dell'operazione fino al completamento dell'installazione del prodotto.
 
@@ -75,7 +75,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
    $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
    ```
 
-   oppure
+   o
 
    ```powershell
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo
@@ -223,7 +223,7 @@ Questo parametro della riga di comando è una **novità della versione 15.9**. P
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Visual Studio Administrator Guide](visual-studio-administrator-guide.md) (Guida di Visual Studio Administrator)
-* [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
+* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md) (Usare i parametri della riga di comando per installare Visual Studio)
 * [Creare un'installazione offline di Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)

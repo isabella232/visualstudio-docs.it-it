@@ -1,5 +1,5 @@
 ---
-title: Specificare quando e dove applicare un'annotazione | Microsoft Docs
+title: Specificare quando e dove si applica un'annotazione | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,37 +11,37 @@ f1_keywords:
 - _At_buffer_
 ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
 caps.latest.revision: 9
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: ba14fdbc23968fcaf10355f73517ab6cd54f8797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1eb32aa7d87da75ebf37b27aa1d425adb85f8c9b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142178"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278461"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Specificare dove e quando applicare un'annotazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando un'annotazione condizionale, potrebbe essere necessario altre annotazioni per specificare che per l'analizzatore.  Ad esempio, se una funzione dispone di una variabile che può essere sincrone o asincrone, il comportamento della funzione come indicato di seguito: Nel caso sincrono sempre alla fine ha esito positivo, ma nel caso asincrono segnala un errore se potrebbe non riuscire immediatamente. Quando la funzione viene chiamata in modo sincrono, controllando il valore di risultato non fornisce alcun valore per l'analizzatore di codice perché potrebbe non avere restituita.  Tuttavia, quando la funzione viene chiamata in modo asincrono e il risultato della funzione non è selezionato, può verificarsi un errore grave. In questo esempio illustra una situazione in cui è possibile usare il `_When_` annotazione, descritto più avanti in questo articolo, abilitare il controllo.  
+Quando un'annotazione è condizionale, potrebbe essere necessario specificare altre annotazioni per l'analizzatore.  Se, ad esempio, una funzione dispone di una variabile che può essere sincrona o asincrona, la funzione funziona nel modo seguente: nel caso sincrono viene sempre completata correttamente, ma nel caso asincrono viene segnalato un errore se non riesce immediatamente. Quando la funzione viene chiamata in modo sincrono, il controllo del valore del risultato non fornisce alcun valore all'analizzatore del codice perché non sarebbe stato restituito.  Tuttavia, quando la funzione viene chiamata in modo asincrono e il risultato della funzione non è selezionato, potrebbe verificarsi un errore grave. In questo esempio viene illustrata una situazione in cui è possibile utilizzare l'annotazione `_When_`, descritta più avanti in questo articolo, per abilitare il controllo.  
   
 ## <a name="structural-annotations"></a>Annotazioni strutturali  
- Per controllare quando e dove applicano le annotazioni, utilizzare le seguenti annotazioni strutturale.  
+ Per controllare quando e dove si applicano le annotazioni, utilizzare le seguenti annotazioni strutturali.  
   
-|Annotazione|Descrizione|  
+|Annotation|Descrizione|  
 |----------------|-----------------|  
-|`_At_(expr, anno-list)`|`expr` è un'espressione che produce un lvalue. Le annotazioni in `anno-list` vengono applicati all'oggetto denominato da `expr`. Per ciascuna annotazione in `anno-list`, `expr` viene interpretato nelle precondizioni se l'annotazione viene interpretata nella condizione preliminare, e nella postcondizione se l'annotazione nella post condizione.|  
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` è un'espressione che produce un lvalue. Le annotazioni in `anno-list` vengono applicati all'oggetto denominato da `expr`. Per ciascuna annotazione in `anno-list`, `expr` viene interpretato nelle precondizioni se l'annotazione viene interpretata nella precondizione, e nella postcondizione se l'annotazione nella post condizione.<br /><br /> `iter` è il nome di una variabile con ambito di annotazione (comprende `anno-list`). `iter` tipo implicito è `long`. Le variabili denominate in modo identico in qualsiasi ambito di inclusione sono nascosti dalla versione di valutazione.<br /><br /> `elem-count` è un'espressione che restituisce un numero intero.|  
-|`_Group_(anno-list)`|Le annotazioni in `anno-list` sono tutti considerati per avere qualsiasi qualificatore di cui si applica l'annotazione di gruppo che viene applicata a ciascuna annotazione.|  
-|`_When_(expr, anno-list)`|`expr` è un'espressione che può essere convertita in `bool`. Quando è diverso da zero (`true`), le annotazioni vengono specificate in `anno-list` sono considerati applicabile.<br /><br /> Per impostazione predefinita, per ciascuna annotazione in `anno-list`, `expr` viene interpretato come utilizza i valori di input se l'annotazione è una precondizione, usando i valori di output se l'annotazione è una post-condizione. Per ignorare l'impostazione predefinita, è possibile usare il `_Old_` intrinseco quando si valuta una post-condizione di per indicare che i valori di input devono essere utilizzati. **Nota:**  Diverse annotazioni potrebbero essere abilitate come conseguenza usando `_When_` se si specifica un valore modificabile, ad esempio, `*pLength`, ovvero è complessa, poiché il risultato valutato del `expr` in precondizione può differire dal relativo risultato valutato nella post condizione.|  
+|`_At_(expr, anno-list)`|`expr` è un'espressione che restituisce un lvalue. Le annotazioni in `anno-list` vengono applicate all'oggetto denominato da `expr`. Per ogni annotazione in `anno-list`, `expr` viene interpretato in una condizione preliminare se l'annotazione viene interpretata in una condizione preliminare e in una condizione successiva se l'annotazione viene interpretata in una condizione post-condizione.|  
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` è un'espressione che restituisce un lvalue. Le annotazioni in `anno-list` vengono applicate all'oggetto denominato da `expr`. Per ogni annotazione in `anno-list`, `expr` viene interpretato nella pre-condizione se l'annotazione viene interpretata nella precondizione e in una condizione successiva se l'annotazione viene interpretata in post-condizione.<br /><br /> `iter` è il nome di una variabile che ha come ambito l'annotazione (incluso `anno-list`). `iter` dispone di un `long`di tipo implicito. Le variabili denominate in modo identico in qualsiasi ambito di inclusione sono nascoste dalla valutazione.<br /><br /> `elem-count` è un'espressione che restituisce un Integer.|  
+|`_Group_(anno-list)`|Le annotazioni in `anno-list` sono tutte considerate con qualsiasi qualificatore applicabile all'annotazione di gruppo applicata a ogni annotazione.|  
+|`_When_(expr, anno-list)`|`expr` è un'espressione che può essere convertita in `bool`. Quando è diverso da zero (`true`), le annotazioni specificate in `anno-list` sono considerate applicabili.<br /><br /> Per impostazione predefinita, per ogni annotazione in `anno-list`, `expr` viene interpretato come utilizzando i valori di input se l'annotazione è una precondizione e come se si utilizzasse i valori di output se l'annotazione è una post-condizione. Per eseguire l'override dell'impostazione predefinita, è possibile usare la funzione intrinseca `_Old_` quando si valuta una post-condizione per indicare che devono essere usati i valori di input. **Nota:**  È possibile che vengano abilitate annotazioni diverse come conseguenza dell'utilizzo di `_When_` se è necessario un valore modificabile, ad esempio `*pLength`, perché il risultato valutato di `expr` nella precondizione può essere diverso dal risultato valutato in post-condizione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Uso delle annotazioni SAL per ridurre i difetti del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Uso delle annotazioni SAL per ridurreC++ i difetti di C/codice](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Informazioni su SAL](../code-quality/understanding-sal.md)   
  [Annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Annotazione del comportamento (funzione)](../code-quality/annotating-function-behavior.md)   
- [Annotazioni di struct e classi](../code-quality/annotating-structs-and-classes.md)   
+ [Annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)   
+ [Annotazione di struct e classi](../code-quality/annotating-structs-and-classes.md)   
  [Annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md)   
  [Funzioni intrinseche](../code-quality/intrinsic-functions.md)   
  [Suggerimenti ed esempi](../code-quality/best-practices-and-examples-sal.md)

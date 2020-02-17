@@ -1,7 +1,7 @@
 ---
 title: Analizzare i dati d'uso della CPU (C++)
 description: Misurare le prestazioni delle app in C++ con lo strumento di diagnostica Utilizzo CPU
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f2587d621715e6e04edade779116e22d021072c
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 5912e433f4d2bc05dc4e460456c8858af82183f6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128177"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279227"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Guida introduttiva: Analizzare i dati d'uso della CPU in Visual Studio (C++)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Avvio rapido: Analizzare i dati d'uso della CPU in Visual Studio (C++)
 
 Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi di prestazioni nell'applicazione. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base. In questo caso si esamina lo strumento che identifica eventuali colli di bottiglia delle prestazioni dovuti a un uso intensivo della CPU. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
 
@@ -30,17 +30,34 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 ## <a name="create-a-project"></a>Creare un progetto
 
-1. In Visual Studio scegliere **File** > **Nuovo progetto**.
+1. Aprire Visual Studio e creare il progetto.
 
-2. In **Visual C++** scegliere **Desktop di Windows** e nel riquadro al centro scegliere **Applicazione console di Windows**.
+   ::: moniker range="vs-2017"
+   Dalla barra dei menu in alto scegliere **File** > **nuovo** > **progetto**.
 
-    Se il modello di progetto **Applicazione console di Windows** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
+   Nella finestra di dialogo **nuovo progetto** nel riquadro sinistro espandere oggetto **C++visivo**, quindi scegliere desktop di **Windows**. Nel riquadro centrale scegliere **applicazione console di Windows**. Assegnare al progetto il nome *Diagnostics_Get_Started_Native*.
 
-3. Digitare un nome come **Diagnostics_Get_Started_Native** e fare clic su **OK**.
+   Se il modello di progetto **applicazione console di Windows** non è visualizzato, scegliere il collegamento **Apri programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **nuovo progetto** . Verrà avviato il Programma di installazione di Visual Studio. Scegliere lo **sviluppo desktop con C++**  carico di lavoro, quindi scegliere **modifica**.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   Se la finestra di avvio non è aperta, scegliere **File** > **finestra Start**.
 
-    Visual Studio crea il progetto.
+   Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-4. In *MyDbgApp.cpp* sostituire il codice seguente
+   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere **C++** quindi dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma.
+
+   Dopo aver applicato la lingua e i filtri della piattaforma, scegliere il modello **applicazione console** e quindi fare clic su **Avanti**.
+
+   > [!NOTE]
+   > Se il modello di **applicazione console** non è visibile, è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Quindi, nella programma di installazione di Visual Studio scegliere lo **sviluppo di applicazioni desktop con C++**  carico di lavoro.
+
+   Nella finestra **Configura nuovo progetto** Digitare o immettere *Diagnostics_Get_Started_Native* nella casella **nome progetto** . Scegliere **Crea**.
+
+   ::: moniker-end
+
+   Visual Studio aprirà il nuovo progetto.
+
+1. In *Diagnostics_Get_Started_Native*sostituire il codice seguente
 
     ```c++
     int main()
@@ -123,7 +140,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 2. Impostare quindi un secondo punto di interruzione sulla parentesi graffa di chiusura alla fine della funzione `main`:
 
-     ![Impostare punti di interruzione per la profilatura](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Impostare punti di interruzione per la profilatura")
+     ![Imposta punti di interruzione per la profilatura](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Impostare i punti di interruzione per la profilatura")
 
     > [!TIP]
     > Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
@@ -136,7 +153,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 5. Quando il debugger è in pausa, abilitare la raccolta dei dati relativi all'utilizzo della CPU scegliendo **Registra profilo CPU**, quindi aprire la scheda **Utilizzo CPU**.
 
-     ![Abilitazione profilatura CPU in Strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-summary.png "Abilitazione profilatura CPU in Strumenti di diagnostica")
+     ![Strumenti di diagnostica Abilita profilatura CPU](../profiling/media/quickstart-cpu-usage-summary.png "Abilitazione profilatura CPU in Strumenti di diagnostica")
 
      Quando la raccolta dei dati è abilitata, il pulsante di registrazione visualizza un cerchio rosso.
 
@@ -152,13 +169,13 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
      A questo punto, è possibile iniziare ad analizzare i dati.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Passaggio 2: Analizzare i dati d'uso della CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Passaggio 2: Analizzare i dati di utilizzo della CPU
 
 È consigliabile iniziare ad analizzare i dati esaminando l'elenco di funzioni in Utilizzo CPU, identificando le funzioni che svolgono la maggior parte del lavoro e quindi concentrandosi su ognuna di esse.
 
 1. Nell'elenco delle funzioni esaminare le funzioni che eseguono il maggior numero di operazioni.
 
-     ![Strumenti di diagnostica - Scheda Utilizzo CPU](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUsageTab")
+     ![Scheda utilizzo CPU strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUsageTab")
 
     > [!TIP]
     > Le funzioni sono elencate in ordine a partire da quelle che svolgono la maggior parte del lavoro (non sono in ordine di chiamata). Ciò consente di identificare rapidamente le funzioni in esecuzione da più tempo.
@@ -167,7 +184,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
     Quando si fa doppio clic su una funzione viene aperta la visualizzazione **Chiamante/chiamato** nel riquadro a sinistra.
 
-    ![Strumenti di diagnostica Visualizzazione Chiamante Chiamato](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
+    ![Visualizzazione chiamata del chiamante degli strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
     In questa visualizzazione la funzione selezionata viene visualizzata nell'intestazione e nella casella **Funzione corrente** (in questo esempio `getNumber`). La funzione che ha chiamato la funzione corrente viene visualizzata a sinistra, sotto **Funzioni chiamanti**, e tutte le funzioni chiamate dalla funzione corrente sono riportate nella casella **Funzioni chiamate** sulla destra. Selezionare una delle due caselle per modificare la funzione corrente.
 

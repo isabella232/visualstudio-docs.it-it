@@ -20,17 +20,17 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9a48725c0877110e969a98deb8c03b3181d31153
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594422"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277707"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrazione di Visual Studio (MSBuild)
 Visual Studio ospita [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per caricare e compilare progetti gestiti. Poiché [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è responsabile del progetto, in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile usare efficacemente praticamente qualsiasi progetto nel formato di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], anche se il progetto è stato creato da uno strumento diverso e presenta un processo di compilazione personalizzato.
 
- Questo articolo descrive aspetti specifici dell'hosting di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Tali aspetti devono essere tenuti in considerazione quando si esegue la personalizzazione di progetti e file con estensione *targets* da caricare e compilare in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Queste considerazioni consentono di assicurarsi che funzionalità di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] come IntelliSense e il debug funzionino con un progetto personalizzato.
+ Questo articolo descrive aspetti specifici dell'hosting di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Tali aspetti devono essere tenuti in considerazione quando si esegue la personalizzazione di progetti e file con estensione *targets* da caricare e compilare in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Queste considerazioni consentono di assicurarsi che funzionalità di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] come IntelliSense e il debug funzionino con un progetto personalizzato.
 
  Per informazioni sui progetti C++, vedere [File di progetto](/cpp/build/reference/project-files).
 
@@ -68,7 +68,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Compilatori In-Process
  Quando possibile, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene eseguito un tentativo di usare la versione in-process del compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] per offrire prestazioni migliori. (Non applicabile a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Per il corretto funzionamento, è necessario che siano soddisfatte le condizioni seguenti:
 
-- In una destinazione del progetto, deve essere presente un'attività denominata `Vbc` per i progetti di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] .
+- In una destinazione del progetto, deve essere presente un'attività denominata `Vbc` per i progetti di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
 
 - Il parametro `UseHostCompilerIfAvailable` dell'attività deve essere impostato su true.
 
@@ -111,6 +111,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 </ItemGroup>
 ```
 
+> [!NOTE]
+> I metadati del `Visible` vengono ignorati da C++ **Esplora soluzioni** per i progetti. Gli elementi verranno sempre visualizzati anche se `Visible` è impostato su false.
+
  Per impostazione predefinita, gli elementi dichiarati nei file importati nel progetto non vengono visualizzati. Gli elementi creati nel corso del processo di compilazione non vengono mai visualizzati in **Esplora soluzioni**.
 
 ## <a name="conditions-on-items-and-properties"></a>Condizioni per elementi e proprietà
@@ -124,7 +127,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Per trovare e avviare l'assembly di output e connettere il debugger, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è necessario che le proprietà `OutputPath`, `AssemblyName`e `OutputType` siano definite correttamente. La connessione del debugger non riesce se con il processo di compilazione il compilatore non ha generato un file con estensione *pdb*.
 
 ## <a name="design-time-target-execution"></a>Esecuzione delle destinazioni in fase di progettazione
- In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene effettuato un tentativo di eseguire le destinazioni con determinati nomi al momento del caricamento di un progetto. Tali destinazioni includono `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` e `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] esegue tali destinazioni in modo da consentire l'inizializzazione del compilatore per fornire IntelliSense, l'inizializzazione del debugger e la risoluzione dei riferimenti visualizzati in Esplora soluzioni. Se tali destinazioni non sono presenti, il progetto verrà caricato e compilato correttamente, ma la fase di progettazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non sarà completamente funzionale.
+ In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene effettuato un tentativo di eseguire le destinazioni con determinati nomi al momento del caricamento di un progetto. Tali destinazioni includono `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`e `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] esegue tali destinazioni in modo da consentire l'inizializzazione del compilatore per fornire IntelliSense, l'inizializzazione del debugger e la risoluzione dei riferimenti visualizzati in Esplora soluzioni. Se tali destinazioni non sono presenti, il progetto verrà caricato e compilato correttamente, ma la fase di progettazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non sarà completamente funzionale.
 
 ## <a name="edit-project-files-in-visual-studio"></a>Modificare file di progetto in Visual Studio
  Per modificare direttamente un progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , è possibile aprire il file di progetto nell'editor XML di Visual Studio.
@@ -144,7 +147,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto non disponibile e scegliere **Ricarica progetto**.
 
 ## <a name="intellisense-and-validation"></a>IntelliSense e convalida
- Quando si usa l'editor XML per modificare i file di progetto, IntelliSense e la convalida si basano sui file di schema di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . Tali file vengono installati nella cache dello schema, che si trova in *\<Directory di installazione di Visual Studio>Xml\Schemas\1040\MSBuild*.
+ Quando si usa l'editor XML per modificare i file di progetto, IntelliSense e la convalida si basano sui file di schema di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Tali file vengono installati nella cache dello schema, che si trova in *\<Directory di installazione di Visual Studio>Xml\Schemas\1040\MSBuild*.
 
  I tipi di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] principali sono definiti in *Microsoft.Build.Core.xsd* e i tipi comuni usati da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sono definiti in *Microsoft.Build.CommonTypes.xsd*. Per personalizzare gli schemi in modo da avere IntelliSense e la funzionalità di convalida per attività, proprietà e nomi di tipi di elementi personalizzati, è possibile modificare *Microsoft.Build.xsd* oppure creare uno schema personalizzato che includa lo schema CommonTypes o Core. Se viene creato uno schema personalizzato, è necessario indicare all'editor XML come individuarlo tramite la finestra **Proprietà** .
 

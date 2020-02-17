@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189131"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277644"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: profilare un'applicazione SharePoint
   In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più costosa (con prestazioni più lente) del progetto, nota anche come *percorso critico*.
 
  In questa procedura dettagliata vengono descritte le attività seguenti:
 
-- [Addg un ricevitore di eventi di funzionalità e funzionalità](#add-a-feature-and-feature-event-receiver).
+- [Aggiungere un ricevitore di eventi funzionalità e funzionalità](#add-a-feature-and-feature-event-receiver).
 
 - [Configurare e distribuire l'applicazione SharePoint](#configure-and-deploy-the-sharepoint-application).
 
@@ -37,7 +37,7 @@ ms.locfileid: "73189131"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Edizioni supportate di Microsoft Windows e SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "73189131"
 
 ### <a name="to-create-a-sharepoint-project"></a>Per creare un progetto SharePoint
 
-1. Nella barra dei menu scegliere **File**  > **nuovo** **progetto**  >  per visualizzare la finestra di dialogo **nuovo progetto** .
+1. Nella barra dei menu scegliere **File** > **nuovo** **progetto** > per visualizzare la finestra di dialogo **nuovo progetto** .
 
 2. Espandere il nodo **SharePoint** sotto **Visual C#**  o **Visual Basic**, quindi scegliere il nodo **2010** .
 
@@ -65,7 +65,7 @@ ms.locfileid: "73189131"
 
     Attualmente, è possibile profilare solo soluzioni farm. Per ulteriori informazioni sulle soluzioni create mediante sandbox e sulle soluzioni farm, vedere Considerazioni sulle soluzioni [create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Scegliere il pulsante **fine** . Il progetto viene visualizzato in **Esplora soluzioni**.
+7. Fare clic sul pulsante **Fine**. Il progetto viene visualizzato in **Esplora soluzioni**.
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Aggiungere un ricevitore di eventi funzionalità e funzionalità
  Successivamente, aggiungere una funzionalità al progetto insieme a un ricevitore di eventi per la funzionalità. In questo ricevitore di eventi sarà incluso il codice da profilare.
@@ -273,7 +273,6 @@ ms.locfileid: "73189131"
      L'attivazione della funzionalità dovrebbe essere molto più veloce una volta che è stata eliminata la chiamata al ciclo inattivo. Il Rapporto sulla profilatura dei campioni dovrebbe riflettere questa situazione.
 
 ## <a name="see-also"></a>Vedere anche
-- [Esplora prestazioni](../profiling/performance-explorer.md)
 - [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)
 - [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)
 - [Trovare colli di bottiglia delle applicazioni con Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

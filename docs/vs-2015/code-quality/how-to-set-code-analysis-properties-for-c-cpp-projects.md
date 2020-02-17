@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Impostare le proprietà di analisi codice per C -C++ progetti | Microsoft Docs'
+title: 'Procedura: impostare le proprietà di analisi del codice perC++ progetti C | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,41 +16,41 @@ helpviewer_keywords:
 - C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
 caps.latest.revision: 19
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 4ebed266924861dac4bfc9e316a56907dbd11534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2fb3cb81b49fd4b8cc83e0548110d2025c7488d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201310"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277993"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedura: Impostare le proprietà di analisi codice per progetti C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedura: impostare le proprietà di analisi del codice per progetti C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile configurare le regole utilizza lo strumento di analisi codice per analizzare il codice in ogni configurazione del progetto. Inoltre, è possibile indirizzare analisi del codice per eliminare gli avvisi del codice che è stato generato e aggiunto al progetto da uno strumento di terze parti.  
+È possibile configurare le regole utilizzate dallo strumento di analisi del codice per analizzare il codice in ogni configurazione del progetto. Inoltre, è possibile indirizzare l'analisi del codice in modo da non visualizzare gli avvisi dal codice generato e aggiunto al progetto da uno strumento di terze parti.  
   
-## <a name="code-analysis-property-page"></a>Pagina proprietà dell'analisi codice  
- Il **analisi del codice** pagina delle proprietà contiene tutte le impostazioni di configurazione di analisi di codice per un progetto. Per aprire la pagina proprietà di analisi codice per un progetto in **Esplora soluzioni**, fare clic sul progetto e quindi fare clic su **proprietà**. Successivamente, espandere **le proprietà di configurazione** e selezionare il **analisi del codice** scheda.  
+## <a name="code-analysis-property-page"></a>Pagina delle proprietà dell'analisi del codice  
+ Nella pagina delle proprietà **analisi codice** sono contenute tutte le impostazioni di configurazione dell'analisi del codice per un progetto. Per aprire la pagina delle proprietà analisi codice per un progetto in **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**. Successivamente, espandere **proprietà di configurazione** e selezionare la scheda **analisi codice** .  
   
-## <a name="project-configuration-and-platform"></a>Piattaforma e configurazione del progetto  
- Il **Configuration** elenco e **piattaforma** elenco consente di applicare le impostazioni di analisi di codice diversi in base a combinazioni di configurazione e piattaforma di progetto diverso. Ad esempio, è possibile indirizzare compilazioni di analisi del codice per applicare un set di regole per il progetto per il debug e compila un set diverso per il rilascio.  
+## <a name="project-configuration-and-platform"></a>Configurazione e piattaforma del progetto  
+ L'elenco di **configurazione** e l'elenco di **piattaforme** consentono di applicare diverse impostazioni di analisi del codice a diverse combinazioni di configurazioni di progetto e piattaforme. Ad esempio, è possibile indirizzare l'analisi del codice per applicare un set di regole al progetto per le compilazioni di debug e un set diverso per le build di rilascio.  
   
-## <a name="enabling-code-analysis"></a>Abilitazione dell'analisi del codice  
- È possibile decidere se abilitare l'analisi del codice per il progetto selezionando **Abilita analisi codice per C/C++ in fase di compilazione**. In combinazione con il **configurazione** elenco, è possibile, ad esempio, decidere disabilitare l'analisi codice per le compilazioni di debug e abilitare per versione le compilazioni.  
+## <a name="enabling-code-analysis"></a>Abilitazione dell'analisi codice  
+ È possibile decidere se abilitare l'analisi del codice per il progetto selezionando **Abilita analisi codice per CC++ /on compilazione**. In combinazione con l'elenco di **configurazione** , è possibile, ad esempio, decidere di disabilitare l'analisi del codice per le compilazioni di debug e abilitarla per le build di rilascio.  
   
- Se il progetto contiene codice gestito, è possibile decidere se abilitare o disabilitare l'analisi codice selezionando **Abilita analisi codice su compilazione**.  
+ Se il progetto contiene codice gestito, è possibile decidere se abilitare o disabilitare l'analisi del codice selezionando **Abilita analisi codice durante la compilazione**.  
   
- Analisi del codice è progettato per aiutarti a migliorare la qualità del codice ed evitare errori comuni. Pertanto, valutare attentamente se disabilitare l'analisi del codice. È in genere preferibile disabilitare il set di regole o regole singole che non si desidera applicare al progetto.  
+ L'analisi del codice è progettata per contribuire a migliorare la qualità del codice ed evitare problemi comuni. Pertanto, valutare attentamente se disabilitare l'analisi del codice. È in genere preferibile disabilitare i set di regole o le singole regole che non si desidera applicare al progetto.  
   
 ## <a name="generated-code"></a>Codice generato  
- Gli sviluppatori spesso utilizzano strumenti che consentono di sviluppare rapidamente applicazioni. Questi strumenti è possono generare codice che viene aggiunto al progetto. Si potrebbe voler visualizzare le violazioni delle regole di analisi del codice consente di individuare il codice generato. Tuttavia, si potrebbe non si desidera visualizzarli se non si desidera mantenere il codice.  
+ Gli sviluppatori utilizzano spesso strumenti che consentono di sviluppare rapidamente applicazioni. Questi strumenti possono generare codice aggiunto al progetto. È possibile che si desideri visualizzare le violazioni della regola individuate dall'analisi del codice nel codice generato. Tuttavia, è possibile che non si desideri visualizzarli se non si desidera gestire il codice.  
   
- Il **eliminare i risultati del codice generato** casella di controllo la **generali** pagina delle proprietà consente di specificare se si desidera visualizzare gli avvisi dell'analisi codice dal codice gestito che viene generato da uno strumento di terze parti .  
+ La casella di controllo non **visualizzare i risultati del codice generato** nella pagina delle proprietà **generale** consente di specificare se si desidera visualizzare gli avvisi di analisi del codice dal codice gestito generato da uno strumento di terze parti.  
   
 ## <a name="rule-sets"></a>Set di regole  
- Se il progetto contiene codice gestito, è possibile selezionare le regole da applicare in un'analisi del codice tramite la selezione di una set di regole dal **eseguire questo set di regole** elenco.  
+ Se il progetto contiene codice gestito, è possibile selezionare le regole da applicare in un'analisi del codice selezionando un set di regole nell'elenco **Esegui questo set di regole** .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   

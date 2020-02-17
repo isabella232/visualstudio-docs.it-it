@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585444"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278525"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -57,7 +57,7 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 ### <a name="run-tests"></a>Esegui test
 
 ::: moniker range="vs-2017"
-Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionato. Effettuare una delle seguenti operazioni:
+Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionato. Esegui una delle operazioni seguenti:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
 
@@ -70,7 +70,7 @@ Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set d
 Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte superiore della finestra **Esplora test** visualizza un'animazione. Al termine dell'esecuzione del test, la barra **Superato/Non superato** diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionato. Effettuare una delle seguenti operazioni:
+Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionato. Esegui una delle operazioni seguenti:
 
 - Per eseguire tutti i test in una soluzione, scegliere l'icona **Esegui tutto**.
 
@@ -83,7 +83,7 @@ Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set d
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 ::: moniker range="vs-2017"
-|Button|Descrizione|
+|Pulsante|Descrizione|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
 
@@ -300,7 +300,7 @@ Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test 
 
 Puoi usare Espora test per avviare una sessione di debug dei test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:
 
-1. Nell'editor di Visual Studio imposta un punto di interruzione in uno o più metodi di test di cui vuoi eseguire il debug.
+1. Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.
 
     > [!NOTE]
     > Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, imposta i punti di interruzione in tutti i metodi di test di cui vuoi eseguire il debug.
@@ -311,7 +311,7 @@ Puoi usare Espora test per avviare una sessione di debug dei test. Esaminando co
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticare i problemi di prestazioni dei metodi di test
 
-Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, selezionare il metodo in Esplora test e quindi scegliere **Esegui profilatura del test selezionato** dal menu di scelta rapida. Vedere [Esplora prestazioni](../profiling/performance-explorer.md).
+Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, selezionare il metodo in Esplora test e quindi scegliere **Esegui profilatura del test selezionato** dal menu di scelta rapida. Vedere [report sulla profilatura della strumentazione](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizzare il code coverage di unit test
 

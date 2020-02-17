@@ -2,19 +2,19 @@
 title: Frammenti di codice Visual C++
 ms.date: 11/04/2016
 ms.topic: reference
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461628"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277837"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C++
 
@@ -50,7 +50,7 @@ Per usare un frammento di codice per racchiudere il codice selezionato, selezion
 
 - Nel menu **Modifica** > **IntelliSense** selezionare **Racchiudi tra**
 
-- Se si usa la tastiera, premere: **CTRL**+**K**+**S**
+- Premere **CTRL**+**K**+**S** sulla tastiera
 
 Selezionare **#if**. Viene visualizzato un output simile al seguente:
 

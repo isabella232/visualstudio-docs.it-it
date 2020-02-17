@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112535"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275445"
 ---
 # <a name="warnings-and-errors"></a>Avvisi ed errori
 
@@ -32,7 +32,7 @@ ms.locfileid: "76112535"
 * **Risoluzione di vincoli**
   * [Non è possibile concretizzare la soluzione](#cannot-concretize-solution)
 
-* **Domini**
+* **Domini o Runtime**
   * [Serve aiuto per costruire l'oggetto](#help-construct)
   * [Serve aiuto per trovare i tipi](#help-types)
   * [Tipo utilizzabile ipotizzato](#usable-type-guessed)
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-È possibile modificare l'opzione **MaxConditions** di un attributo derivato da **PexSettingsAttributeBase**, ad esempio [PexClass](attribute-glossary.md#pexclass) o [PexMethod](attribute-glossary.md#pexmethod). Ad esempio:
+È possibile modificare l'opzione **MaxConditions** di un attributo derivato da **PexSettingsAttributeBase**, ad esempio [PexClass](attribute-glossary.md#pexclass) o [PexMethod](attribute-glossary.md#pexmethod). Ad esempio,
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -254,7 +254,7 @@ IntelliTest [genera input di test](input-generation.md) per qualsiasi tipo .NET.
 
 IntelliTest [genera input di test](input-generation.md) per qualsiasi tipo .NET. Quando un tipo è astratto o è un'interfaccia, IntelliTest deve scegliere una particolare implementazione del tipo. Per effettuare questa scelta, deve conoscere i tipi esistenti.
 
-La visualizzazione di questo avviso indica che IntelliTest ha esaminato alcune delle assembly di riferimento e ha trovato un tipo di implementazione, ma non ha indicazioni in merito all'uso di questo tipo o di tipi più appropriati che potrebbero essere disponibili altrove. IntelliTest ha semplicemente scelto un tipo che sembrava promettente.
+Quando viene visualizzato questo avviso, viene indicato che IntelliTest ha esaminato alcuni degli assembly a cui si fa riferimento ed è stato trovato un tipo di implementazione, ma non è certo che debba utilizzare quel tipo o se sono disponibili altri tipi appropriati altrove. IntelliTest ha semplicemente scelto un tipo che sembrava promettente.
 
 Per evitare questo avviso, è possibile accettare la scelta di IntelliTest o indicare a IntelliTest di usare altri tipi aggiungendo un attributo [PexUseType](attribute-glossary.md#pexusetype) corrispondente.
 

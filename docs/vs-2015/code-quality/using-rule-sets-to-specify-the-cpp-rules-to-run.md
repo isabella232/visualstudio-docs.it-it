@@ -1,78 +1,78 @@
 ---
-title: Regola di utilizzo di set per specificare le regole C++ da eseguire | Microsoft Docs
+title: Utilizzo di set di regole per C++ specificare le regole da eseguire | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: ac3877e6-5349-4c03-9541-3d5be259f1e8
 caps.latest.revision: 7
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff105af1d817613b324e1158130457eb906c753f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142138"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277860"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Utilizzo di set di regole per specificare le regole C++ da eseguire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nelle [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], è possibile creare e modificare un oggetto personalizzato *set di regole* per soddisfare specifiche esigenze del progetto associate con l'analisi del codice. Per creare una regola di C++ personalizzata impostato, un progetto C/C++ deve essere aperto nell'IDE di Visual Studio. Quindi aprire un set di regole standard in editor set di regole e quindi aggiungere o rimuovere regole specifiche e, facoltativamente, modificare l'azione che si verifica quando l'analisi del codice determina che è stata violata una regola.  
+In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]è possibile creare e modificare un set di *regole* personalizzate per soddisfare specifiche esigenze di progetto associate all'analisi del codice. Per creare un set C++ di regole personalizzato, è necessarioC++ aprire un progetto C/progetto nell'IDE di Visual Studio. Si apre quindi un set di regole standard nell'editor del set di regole e quindi si aggiungono o rimuovono regole specifiche e, facoltativamente, si modifica l'azione che si verifica quando l'analisi del codice determina che una regola è stata violata.  
   
- Per creare una nuova regola personalizzata impostata, è necessario salvarlo con un nuovo nome file. Il set di regole personalizzato viene assegnato automaticamente al progetto.  
+ Per creare un nuovo set di regole personalizzate, salvarlo con un nuovo nome file. Il set di regole personalizzate viene assegnato automaticamente al progetto.  
   
-## <a name="opening-the-rule-set-editor"></a>Editor set di apertura della regola  
+## <a name="opening-the-rule-set-editor"></a>Apertura dell'editor set di regole  
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Per creare una regola personalizzata da un singolo set di regole esistente  
   
-1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto e quindi scegliere **proprietà**.  
+1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto, quindi scegliere **Proprietà**.  
   
-2. Nel **delle proprietà** scheda, scegliere **analisi del codice**.  
+2. Nella scheda **Proprietà** scegliere **analisi codice**.  
   
-3. Nel **del Set di regole** riepilogo, effettuare una delle operazioni seguenti:  
+3. Nell'elenco a discesa **set di regole** effettuare una delle operazioni seguenti:  
   
    - Scegliere il set di regole che si desidera personalizzare.  
   
      \- oppure -  
   
-   - Scegli  **\<Sfoglia >** per specificare set di una regola esistente non incluso nell'elenco.  
+   - Scegliere **\<Sfoglia... >** per specificare un set di regole esistente non presente nell'elenco.  
   
-4. Scegli **aperto** per visualizzare le regole nell'editor set di regole.  
+4. Scegliere **Apri** per visualizzare le regole nell'Editor set di regole.  
   
-#### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Per modificare una regola impostata nell'editor set di regole  
+#### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Per modificare un set di regole nell'Editor set di regole  
   
-- Per modificare il nome visualizzato del set di regole, scegliere il **View** menu, scegliere **finestra proprietà**. Immettere il nome visualizzato nei **nome** casella. Si noti che il nome visualizzato può essere diverso dal nome del file.  
+- Per modificare il nome visualizzato del set di regole, scegliere **finestra Proprietà**dal menu **Visualizza** . Immettere il nome visualizzato nella casella **nome** . Si noti che il nome visualizzato può essere diverso dal nome del file.  
   
 - Per aggiungere tutte le regole del gruppo a un set di regole personalizzate, selezionare la casella di controllo del gruppo. Per rimuovere tutte le regole del gruppo, deselezionare la casella di controllo.  
   
-- Per aggiungere una regola specifica per il set di regole personalizzate, selezionare la casella di controllo della regola. Per rimuovere la regola dal set di regole, deselezionare la casella di controllo.  
+- Per aggiungere una regola specifica al set di regole personalizzate, selezionare la casella di controllo relativa alla regola. Per rimuovere la regola dal set di regole, deselezionare la casella di controllo.  
   
-- Per modificare l'azione eseguita quando viene violata una regola in un'analisi del codice, scegliere il **azione** campo per la regola e quindi scegliere uno dei valori seguenti:  
+- Per modificare l'azione eseguita quando una regola viene violata in un'analisi del codice, scegliere il campo **azione** per la regola, quindi scegliere uno dei valori seguenti:  
   
-     **Avvisa** -genera un avviso.  
+     **Warn** : genera un avviso.  
   
-     **Errore** -verrà generato un errore.  
+     **Errore** : genera un errore.  
   
-     **Nessuno** -disabilita la regola. Questa azione è quello utilizzato per la rimozione della regola dal set di regole.  
+     **None** : Disabilita la regola. Questa azione equivale a rimuovere la regola dal set di regole.  
   
-#### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Per raggruppare, filtrare o modificare i campi nell'editor set di regole utilizzando la barra degli strumenti editor set di regole  
+#### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Per raggruppare, filtrare o modificare i campi nell'editor del set di regole tramite la barra degli strumenti Editor set di regole  
   
 - Per espandere le regole in tutti i gruppi, scegliere **Espandi tutto**.  
   
 - Per comprimere le regole in tutti i gruppi, scegliere **Comprimi tutto**.  
   
-- Per modificare il campo che le regole vengono raggruppate, scegliere il campo dal **Group By** elenco. Per visualizzare le regole separate, scegli  **\<None >** .  
+- Per modificare il campo in base al quale vengono raggruppate le regole, scegliere il campo dall'elenco **Raggruppa per** . Per visualizzare le regole non raggruppate, scegliere **\<nessuna >** .  
   
-- Per aggiungere o rimuovere i campi nelle colonne della regola, scegliere **opzioni di colonna**.  
+- Per aggiungere o rimuovere campi nelle colonne della regola, scegliere **Opzioni colonne**.  
   
-- Per nascondere le regole che non si applicano alla soluzione corrente, scegliere **nascondere le regole che non si applicano alla soluzione corrente**.  
+- Per nascondere le regole che non si applicano alla soluzione corrente, scegliere **Nascondi regole che non si applicano alla soluzione corrente**.  
   
-- Per passare da visualizzare e nascondere le regole che vengono assegnate l'azione di errore, scegliere **Mostra regole che possono generare errori di analisi codice**.  
+- Per passare tra le regole di visualizzazione e di occultamento a cui è stata assegnata l'azione di errore, scegliere **Mostra regole che possono generare errori di analisi del codice**.  
   
-- Per passare da visualizzare e nascondere le regole di cui sono assegnate l'azione di avviso, scegliere **Mostra regole che possono generare avvisi di analisi codice**.  
+- Per passare tra le regole di visualizzazione e di occultamento a cui è stata assegnata l'azione di avviso, scegliere **Mostra regole che possono generare avvisi di analisi del codice**.  
   
-- Per alternare mostrando e nascondendo le regole che vengono assegnate le **None** azione, scegliere **Mostra regole che non sono abilitate**.  
+- Per passare tra le regole di visualizzazione e di occultamento a cui è stata assegnata l'azione **Nessuna** , scegliere **Mostra regole non abilitate**.  
   
-- Per aggiungere o rimuovere set di regole predefinito per il set di regole corrente di Microsoft, scegli **Aggiungi o Rimuovi set di regole figlio**.
+- Per aggiungere o rimuovere set di regole predefinite di Microsoft sul set di regole corrente, scegliere **Aggiungi o Rimuovi set di regole figlio**.

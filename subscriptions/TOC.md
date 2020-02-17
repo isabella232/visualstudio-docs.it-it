@@ -27,7 +27,7 @@
 ### Strumenti
 #### [Credito individuale per Azure DevTest](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
-#### [Azure con pagamento in base al consumo](vs-azure-payg.md)
+#### [Azure DevTest con pagamento in base al consumo](vs-azure-payg.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility + Security](vs-ems.md)
@@ -84,7 +84,7 @@
 ### [Sovrassegnazioni](handle-overclaimed-license.md)
 ### [Utilizzo massimo](maximum-usage.md)
 ### [Sottoscrizioni scadute](handle-expired-license.md)
-### [Sottoscrittori che usano alias](aliasing.md)
+### [Scenari di accesso del sottoscrittore ](aliasing.md)
 ### [Sottoscrittori con accesso tramite posta elettronica personale](personal-email-sign-ins.md)
 ### [Gestione di Visual Studio con GitHub Enterprise](assign-github.md)
 # Risorse
