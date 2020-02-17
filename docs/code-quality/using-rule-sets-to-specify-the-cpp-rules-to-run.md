@@ -4,17 +4,17 @@ ms.date: 04/28/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: ec2d9c812de9ec6be5ba5f42ca2a4484703d0b84
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445619"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271787"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usare set di regole per specificare C++ le regole da eseguire
 
@@ -38,7 +38,7 @@ Per creare un nuovo set di regole personalizzate, salvarlo con un nuovo nome fil
 
      \- oppure -
 
-   - Scegliere **\<Browse... >** per specificare un set di regole esistente non presente nell'elenco.
+   - Scegliere **\<Sfoglia... >** per specificare un set di regole esistente non presente nell'elenco.
 
 4. Scegliere **Apri** per visualizzare le regole nell'Editor set di regole.
 
@@ -66,7 +66,7 @@ Per creare un nuovo set di regole personalizzate, salvarlo con un nuovo nome fil
 
 - Per comprimere le regole in tutti i gruppi, scegliere **Comprimi tutto**.
 
-- Per modificare il campo in base al quale vengono raggruppate le regole, scegliere il campo dall'elenco **Raggruppa per** . Per visualizzare le regole non raggruppate, scegliere **\<None >** .
+- Per modificare il campo in base al quale vengono raggruppate le regole, scegliere il campo dall'elenco **Raggruppa per** . Per visualizzare le regole non raggruppate, scegliere **\<nessuna >** .
 
 - Per aggiungere o rimuovere campi nelle colonne della regola, scegliere **Opzioni colonne**.
 

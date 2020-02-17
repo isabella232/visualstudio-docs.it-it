@@ -3,17 +3,17 @@ title: Informazioni su SAL
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: e2cb2cb263344e45d83a2b143f6c56f138f77bf5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807095"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271832"
 ---
 # <a name="understanding-sal"></a>Informazioni su SAL
 
@@ -45,11 +45,11 @@ void * memcpy(
 
 La documentazione contiene un paio di informazioni che indicano che il codice deve mantenere determinate proprietà per garantire la correttezza del programma:
 
-- `memcpy` copia `count` di byte dal buffer di origine al buffer di destinazione.
+- `memcpy` copia il `count` di byte dal buffer di origine nel buffer di destinazione.
 
 - Il buffer di destinazione deve avere una dimensione almeno uguale al buffer di origine.
 
-Tuttavia, il compilatore non è in grado di leggere la documentazione o i commenti informali. Non sa che esiste una relazione tra i due buffer e `count` e non può indovinare effettivamente una relazione. SAL può fornire maggiore chiarezza sulle proprietà e sull'implementazione della funzione, come illustrato di seguito:
+Tuttavia, il compilatore non è in grado di leggere la documentazione o i commenti informali. Non sa che esiste una relazione tra i due buffer e `count`e non è possibile indovinare in modo efficace una relazione. SAL può fornire maggiore chiarezza sulle proprietà e sull'implementazione della funzione, come illustrato di seguito:
 
 ```cpp
 
@@ -154,7 +154,7 @@ void BadInCaller()
 }
 ```
 
-Se si usa Visual Studio Code analisi in questo esempio, viene convalidato che i chiamanti passano un puntatore non null a un buffer inizializzato per `pInt`. In questo caso, il puntatore `pInt` non può essere NULL.
+Se si usa Visual Studio Code analisi in questo esempio, viene convalidato che i chiamanti passano un puntatore non null a un buffer inizializzato per `pInt`. In questo caso, `pInt` puntatore non può essere NULL.
 
 ### <a name="example-the-_in_opt_-annotation"></a>Esempio: \_in\_opt\_ annotazione
 
@@ -235,7 +235,7 @@ void OutOptCaller()
 }
 ```
 
-Visual Studio Code analisi verifica che questa funzione verifichi la presenza di valori NULL prima che venga dereferenziato `pInt` e se `pInt` non è NULL, il buffer viene inizializzato dalla funzione prima che venga restituito.
+Visual Studio Code analisi convalida che questa funzione verifica la presenza di valori NULL prima che venga dereferenziata `pInt` e se `pInt` non è NULL, il buffer viene inizializzato dalla funzione prima che venga restituito.
 
 ### <a name="example-the-_inout_-annotation"></a>Esempio: l'annotazione \_InOut\_
 
@@ -266,7 +266,7 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Code analisi convalida che i chiamanti passano un puntatore non NULL a un buffer inizializzato per `pInt` e che, prima della restituzione, `pInt` è ancora non NULL e il buffer viene inizializzato.
+Visual Studio Code analisi convalida che i chiamanti passano un puntatore non NULL a un buffer inizializzato per `pInt`e che, prima della restituzione, `pInt` è ancora non NULL e il buffer viene inizializzato.
 
 ### <a name="example-the-_inout_opt_-annotation"></a>Esempio: l'annotazione\_ di \_InOut\_opt
 
@@ -325,7 +325,7 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio Code analisi verifica che il chiamante passi un puntatore non NULL per `*pInt` e che il buffer venga inizializzato dalla funzione prima che venga restituito.
+Visual Studio Code analisi verifica che il chiamante passi un puntatore non NULL per `*pInt`e che il buffer venga inizializzato dalla funzione prima che venga restituito.
 
 ### <a name="example-the-_outptr_opt_-annotation"></a>Esempio: \_Outptr\_opt\_ Annotation
 
@@ -357,7 +357,7 @@ void OutPtrOptCaller()
 }
 ```
 
-Visual Studio Code analisi convalida che questa funzione verifica la presenza di valori NULL prima che venga dereferenziato `*pInt` e che il buffer venga inizializzato dalla funzione prima che venga restituito.
+Visual Studio Code analisi verifica che questa funzione controlli la presenza di valori NULL prima che venga dereferenziata `*pInt` e che il buffer venga inizializzato dalla funzione prima che venga restituito.
 
 ### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Esempio: l'annotazione \_Success\_ in combinazione con \_out\_
 
