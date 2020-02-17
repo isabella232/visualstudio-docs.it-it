@@ -2,27 +2,27 @@
 title: API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 ms.date: 09/27/2019
 ms.topic: reference
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - multiple
-author: mikeblome
-ms.openlocfilehash: 327aa6f79f7eda6ecc3f1c0a7b2576a87287b1c0
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+author: corob-msft
+ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720519"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278656"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 In questo argomento sono elencati i membri pubblici dello spazio dei nomi `Microsoft::VisualStudio::CppUnitTestFramework`. Usare queste API per scrivere unit test C++ in base a Microsoft Native Unit Test Framework. È disponibile un [esempio di utilizzo](#example) alla fine dell'argomento.
 
-I file di intestazione e lib si trovano nella *cartella di installazione di \<Visual Studio > \VC\Auxiliary\VS\UnitTest*.
+I file di intestazione e lib si trovano in *\<cartella di installazione di Visual Studio > \VC\Auxiliary\VS\UnitTest*.
 
 I percorsi dei file di intestazione e lib vengono configurati automaticamente in un progetto di test nativo.
 
-## <a name="In_this_topic"></a> Contenuto dell'argomento
+## <a name="In_this_topic"></a> In questo argomento
 
 [CppUnitTest.h](#cppUnitTest_h)
 

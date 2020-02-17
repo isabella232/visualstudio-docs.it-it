@@ -3,15 +3,15 @@ title: Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio | Micro
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/02/2019
+ms.date: 02/12/2020
 ms.topic: conceptual
 description: Altre informazioni sul vantaggio LinkedIn Learning incluso come parte della sottoscrizione LinkedIn Premium inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: b91db8c5b8ec27e947e2c73ac59ab3b07502f9d2
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: f6c5206055835605ae529f1f07159611bcd6bf7d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099643"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278844"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio
 
@@ -66,7 +66,7 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
    > [!div class="mx-imgBorder"]
    > ![Home page di LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png)
 
-## <a name="eligibility"></a>Idoneità
+## <a name="eligibility"></a>Eligibility
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
@@ -74,8 +74,8 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
 | Visual Studio Enterprise con GitHub Enterprise   | VL | 6 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 mesi                                                            |No.  Disponibile solo per i nuovi sottoscrittori         |
 | Visual Studio Professional con GitHub Enterprise | VL | 3 mesi      | No.  Disponibile solo per i nuovi sottoscrittori         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 mesi                                             |  No.  Disponibile solo per i nuovi sottoscrittori         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 mesi                                              | No.  Disponibile solo per i nuovi sottoscrittori         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  N/D         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              | N/D         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 
 <sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Escludi: Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT software & Services.*

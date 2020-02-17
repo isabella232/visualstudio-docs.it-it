@@ -6,15 +6,15 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1c0129c6832c347e989b482acb2cf6ab9b80e60d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848457"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278448"
 ---
 # <a name="understanding-sal"></a>Informazioni su SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Nozioni fondamentali su SAL  
  SAL definisce quattro tipi di parametri di base, classificati in base al modello di utilizzo.  
   
-|Categoria|Annotazione parametro|Descrizione|  
+|Category|Annotazione parametro|Descrizione|  
 |--------------|--------------------------|-----------------|  
 |**Input per la funzione chiamata**|`_In_`|I dati vengono passati alla funzione chiamata e vengono considerati di sola lettura.|  
 |**Input della funzione chiamata e output al chiamante**|`_Inout_`|I dati utilizzabili vengono passati nella funzione e potenzialmente modificati.|  
@@ -108,7 +108,7 @@ wchar_t * wmemcpy(
  In questa sezione vengono illustrati esempi di codice per le annotazioni SAL di base.  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Utilizzo dello strumento di analisi Visual Studio Code per individuare i difetti  
- Negli esempi, lo strumento di analisi Visual Studio Code viene usato insieme alle annotazioni SAL per individuare i difetti del codice. Ecco come farlo.  
+ Negli esempi, lo strumento di analisi Visual Studio Code viene usato insieme alle annotazioni SAL per individuare i difetti del codice. Ecco come eseguire questa operazione.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Per usare gli strumenti di analisi del codice di Visual Studio e SAL  
   

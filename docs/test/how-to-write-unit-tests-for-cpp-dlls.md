@@ -2,37 +2,37 @@
 title: Scrivere unit test per DLL C++
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+author: corob-msft
+ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926661"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279280"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Scrivere unit test per le DLL C++ in Visual Studio
 
 È possibile eseguire test del codice DLL in modi diversi, a seconda che vengano esportate o meno le funzioni da testare. Scegliere uno dei modi seguenti:
 
-**Gli unit test chiamano solo le funzioni esportate dalla DLL:** Aggiungere un progetto di test separato, come descritto in [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md). Nel progetto di test aggiungere un riferimento al progetto della DLL.
+**Gli unit test chiamano solo le funzioni esportate dalla DLL:** aggiungere un progetto di test separato come descritto in [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md). Nel progetto di test aggiungere un riferimento al progetto della DLL.
 
 Passare alla procedura [Per fare riferimento a funzioni della DLL esportate dal progetto di test](#projectRef).
 
-**La DLL è compilata come file con estensione exe:** Aggiungere un progetto di test separato. Collegarlo al file oggetto di output.
+**La DLL è compilata come file con estensione exe:** aggiungere un progetto di test separato. Collegarlo al file oggetto di output.
 
 Passare alla procedura [Per collegare i test all'oggetto o ai file di libreria](#objectRef).
 
-**Gli unit test chiamano funzioni non membro che non vengono esportate dalla DLL e la DLL può essere compilata come libreria statica:** Modificare il progetto della DLL in modo da consentirne la compilazione in un file con estensione *lib*. Aggiungere un progetto di test separato che fa riferimento al progetto incluso nel test.
+**Gli unit test chiamano funzioni non membro che non vengono esportate dalla DLL e la DLL può essere compilata come libreria statica:** modificare il progetto della DLL in modo che venga compilato in un file *LIB*. Aggiungere un progetto di test separato che fa riferimento al progetto incluso nel test.
 
 Questo approccio presenta il vantaggio di consentire ai test l'uso di membri non esportati, mantenendo i test in un progetto separato.
 
 Passare alla procedura [Per modificare la DLL in una libreria statica](#staticLink).
 
-**Gli unit test devono chiamare funzioni non membro che non vengono esportate e il codice deve essere compilato come DLL (libreria di collegamento dinamico):** Aggiungere gli unit test nello stesso progetto del codice prodotto.
+**Gli unit test devono chiamare funzioni non membro che non vengono esportate e il codice deve essere compilato come DLL (libreria di collegamento dinamico):** aggiungere gli unit test nello stesso progetto del codice prodotto.
 
 Passare alla procedura [Per aggiungere unit test nello stesso progetto](#sameProject).
 
@@ -64,7 +64,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
       ::: moniker range="vs-2017"
 
-      1. Dal menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test C++** .
+      1. Nel menu **file** scegliere **nuovo** > **progetto** > **Visual C++**  > **test** >  **C++ progetto unit test**.
 
       ::: moniker-end
 
@@ -72,7 +72,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
   1. Selezionare **Progetti** e quindi il progetto da testare.
 
-       Scegliere il pulsante **Aggiungi**.
+       Fare clic sul pulsante **Aggiungi**.
 
   1. Nelle proprietà del progetto di test, aggiungere il percorso del progetto incluso nel test a Directory di inclusione.
 
@@ -96,7 +96,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
       ::: moniker range="vs-2017"
 
-      1. Dal menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test C++** .
+      1. Nel menu **file** scegliere **nuovo** > **progetto** > **Visual C++**  > **test** >  **C++ progetto unit test**.
 
       ::: moniker-end
 
@@ -141,7 +141,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
 1. In ogni file di codice dello unit test, aggiungere un'istruzione `#include` per le intestazioni del progetto sottoposto a test.
 
-2. Aggiungere le classi e i metodi di test ai file di codice dello unit test. Ad esempio:
+2. Aggiungere le classi e i metodi di test ai file di codice dello unit test. Ad esempio,
 
     ```cpp
     #include "stdafx.h"
@@ -176,4 +176,4 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 - [Eseguire il debug di codice nativo](../debugger/debugging-native-code.md)
 - [Procedura dettagliata: Creare e usare la propria libreria a collegamento dinamico (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importazione ed esportazione](/cpp/build/importing-and-exporting)
-- [Avvio rapido: Sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)

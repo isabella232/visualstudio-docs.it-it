@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588118bf31c5d310e947b02fda476a63d0d9df7a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cd21d7da710a82d9396766971244aa5f7f9bbd4d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573443"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278798"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Ogni elemento usato in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere specificato come figlio di un elemento `ItemGroup`.
@@ -33,7 +33,8 @@ Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti 
 ## <a name="syntax"></a>Sintassi
 
 ```xml
-<ItemGroup Condition="'String A' == 'String B'">
+<ItemGroup Condition="'String A' == 'String B'"
+           Label="Label">
     <Item1>... </Item1>
     <Item2>... </Item2>
 </ItemGroup>
@@ -47,8 +48,9 @@ Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`Condition`|Attributo facoltativo. Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
+|`Label`|Attributo facoltativo. Identifica l'oggetto `ItemGroup`.|
 
-### <a name="child-elements"></a>Elementi figlio
+### <a name="child-elements"></a>Elemento figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
@@ -58,7 +60,7 @@ Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 | [Destinazione](../msbuild/target-element-msbuild.md) | A partire da .NET Framework 3.5, l'elemento `ItemGroup` può essere visualizzato in un elemento `Target`. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md). |
 
 ## <a name="example"></a>Esempio

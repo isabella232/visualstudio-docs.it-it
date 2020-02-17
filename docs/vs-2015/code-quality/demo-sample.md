@@ -1,5 +1,5 @@
 ---
-title: Demo di esempio | Microsoft Docs
+title: Esempio demo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,28 +9,28 @@ helpviewer_keywords:
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a49859a8cd1c4ffb01f93bf2539fc16c42f8c4c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201426"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277878"
 ---
 # <a name="demo-sample"></a>Esempio dimostrativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le procedure seguenti illustrano come creare un esempio per la [Procedura dettagliata: Analisi del codice C/C++ per i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Le procedure creano:  
+Nelle procedure seguenti viene illustrato come creare l'esempio per la [procedura dettagliata: analisi del codiceC++ C/per i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Le procedure creano:  
   
-- Oggetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soluzione denominata CppDemo.  
+- Una soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] denominata CppDemo.  
   
 - Un progetto di libreria statica con nome CodeDefects.  
   
 - Un progetto di libreria statica con nome Annotations.  
   
-  Le procedure forniscono inoltre il codice per i file di intestazione e. cpp per librerie statiche.  
+  Le procedure forniscono inoltre il codice per i file header e cpp per le librerie statiche.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Creare la soluzione CppDemo e il progetto CodeDefects  
   
@@ -56,7 +56,7 @@ Le procedure seguenti illustrano come creare un esempio per la [Procedura dettag
   
 3. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.  
   
-4. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)** .  
+4. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e quindi fare clic su **Libreria statica (.lib)** .  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Aggiungere l'intestazione e il file di origine al progetto CodeDefects  
   
@@ -66,7 +66,7 @@ Le procedure seguenti illustrano come creare un esempio per la [Procedura dettag
   
 3. Nella casella **Nome** digitare **Bug.cpp** e quindi fare clic su **Aggiungi**.  
   
-4. Copiare il codice seguente e incollarlo nella **bug. cpp** del file nei [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+4. Copiare il codice seguente e incollarlo nel file **bug. cpp** nell'editor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <windows.h>  
@@ -94,7 +94,7 @@ Le procedure seguenti illustrano come creare un esempio per la [Procedura dettag
   
 7. Nella casella **Nome** digitare **Bug.cpp** e quindi fare clic su **Aggiungi**.  
   
-8. Copiare il codice seguente e incollarlo nel file Bug.h nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+8. Copiare il codice seguente e incollarlo nel file bug. h nell'editor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <stdlib.h>  
@@ -180,7 +180,7 @@ Le procedure seguenti illustrano come creare un esempio per la [Procedura dettag
   
 3. Nella casella di testo **Nome** digitare **annotations.h** e quindi fare clic su **Aggiungi**.  
   
-4. Copiare il codice seguente e incollarlo nella **Annotations. h** del file nei [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+4. Copiare il codice seguente e incollarlo nel file **Annotations. h** nell'editor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -203,7 +203,7 @@ Le procedure seguenti illustrano come creare un esempio per la [Procedura dettag
   
 7. Nella casella di testo **Nome** digitare **annotations.cpp** e quindi fare clic su **Aggiungi**.  
   
-8. Copiare il codice seguente e incollarlo nella **Annotations. cpp** del file nei [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+8. Copiare il codice seguente e incollarlo nel file **Annotations. cpp** nell'editor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  

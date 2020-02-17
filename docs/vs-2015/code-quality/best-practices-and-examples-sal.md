@@ -6,23 +6,23 @@ ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 666276fb-99c2-4dc9-8bac-d74861c203ea
 caps.latest.revision: 14
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 56e57d182a21429d73b8eae0b79f96532732ae7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a03d2f64e3facba434de03bb18dbb2ac5bd809b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428573"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275250"
 ---
 # <a name="best-practices-and-examples-sal"></a>Suggerimenti ed esempi (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ecco alcuni modi per ottenere il massimo da origine codice Annotation Language (SAL) ed evitare problemi comuni.  
+Ecco alcuni modi per sfruttare al meglio il linguaggio di annotazione del codice sorgente (SAL) ed evitare alcuni problemi comuni.  
   
-## <a name="in"></a>\_In\_
- Se la funzione deve per scrivere l'elemento, usare `_Inout_` invece di `_In_`. Ciò è particolarmente importante nei casi di conversione automatica dalle precedenti macro a SAL. Prima SAL, molti programmatori utilizzavano le macro come commenti, le macro che erano denominate `IN`, `OUT`, `IN_OUT`, o varianti di questi nomi. Sebbene sia consigliabile convertire queste macro SAL, è anche consigliabile prestare attenzione quando si converte li perché il codice è state modificate poiché è stato scritto il prototipo originale e la macro precedente potrebbe non riflettere più operazioni eseguite dal codice. Prestare particolare attenzione sul `OPTIONAL` commento (macro), in quanto spesso viene posizionato in modo non corretto, ad esempio, sul lato non corretto di una virgola.  
+## <a name="_in_"></a>\_In\_
+ Se si suppone che la funzione scriva nell'elemento, utilizzare `_Inout_` anziché `_In_`. Questa operazione è particolarmente importante in caso di conversione automatica da macro precedenti a SAL. Prima di SAL, molti programmatori usavano le macro come commenti, ovvero le macro denominate `IN`, `OUT`, `IN_OUT`o varianti di questi nomi. Anche se si consiglia di convertire queste macro in SAL, è necessario prestare attenzione quando si esegue la conversione perché il codice potrebbe essere stato modificato dopo che il prototipo originale è stato scritto e la macro precedente potrebbe non riflettere più le operazioni del codice. Prestare particolare attenzione alla macro del commento `OPTIONAL` perché spesso viene posizionata in modo errato, ad esempio sul lato errato di una virgola.  
   
 ```cpp  
   
@@ -45,8 +45,8 @@ void Func2(_Inout_ PCHAR p1)
 }  
 ```  
   
-## <a name="opt"></a>\_opt\_  
- Se il chiamante non può passare un puntatore null, usare `_In_` oppure `_Out_` invece di `_In_opt_` o `_Out_opt_`. Questo vale anche per una funzione che controlla i relativi parametri e restituisce un errore se è NULL quando non deve essere. Anche se con una funzione di controllare il relativo parametro valore null imprevisto e restituire normalmente è buona norma di sviluppo difensiva, non significa che l'annotazione del parametro può essere di tipo facoltativo (\_*Xxx*OPT\_).  
+## <a name="_opt_"></a>\_opt\_  
+ Se il chiamante non è autorizzato a passare un puntatore null, utilizzare `_In_` o `_Out_` invece di `_In_opt_` o `_Out_opt_`. Si applica anche a una funzione che controlla i relativi parametri e restituisce un errore se è NULL se non deve essere. Sebbene la presenza di una funzione per il controllo del parametro per un valore NULL imprevisto e la restituzione di una normale procedura di codifica, non significa che l'annotazione del parametro può essere di tipo facoltativo (\_*Xxx*_opt\_).  
   
 ```cpp  
   
@@ -64,11 +64,11 @@ void Func2(_Out_ int *p1)
   
 ```  
   
-## <a name="predefensive-and-postdefensive"></a>\_Pre_defensive\_ e \_Post_defensive\_  
- Se in una funzione è presente un limite di attendibilità, si consiglia di utilizzare l'annotazione `_Pre_defensive_`.  Il modificatore di "difesa" modifica alcune annotazioni per indicare che, al momento della chiamata, l'interfaccia deve essere verificata rigorosamente, ma nel corpo di implementazione deve presupporre che potrebbero essere passati parametri non corretti. In tal caso, `_In_ _Pre_defensive_` viene preferito ad un limite di attendibilità per indicare che sebbene un chiamante otterrà un errore se tenta di passare NULL, il corpo della funzione verrà analizzato come se il parametro fosse NULL e verranno contrassegnati tutti i tentativi di de referenziare il puntatore senza prima controllare che non sia NULL.  Un'annotazione `_Post_defensive_` può inoltre essere utilizzata nei callback, dove si assume che la parte attendibile sia il chiamante e il codice non attendibile sia il codice chiamato.  
+## <a name="_pre_defensive_-and-_post_defensive_"></a>\_Pre_defensive\_ e \_Post_defensive\_  
+ Se in una funzione è presente un limite di attendibilità, si consiglia di utilizzare l'annotazione `_Pre_defensive_`.  Il modificatore "difensivo" modifica alcune annotazioni per indicare che, al momento della chiamata, l'interfaccia deve essere controllata rigorosamente, ma nel corpo di implementazione deve presumere che potrebbero essere passati parametri non corretti. In tal caso, `_In_ _Pre_defensive_` viene preferito ad un limite di attendibilità per indicare che sebbene un chiamante otterrà un errore se tenta di passare NULL, il corpo della funzione verrà analizzato come se il parametro fosse NULL e verranno contrassegnati tutti i tentativi di de referenziare il puntatore senza prima controllare che non sia NULL.  Un'annotazione `_Post_defensive_` può inoltre essere utilizzata nei callback, dove si assume che la parte attendibile sia il chiamante e il codice non attendibile sia il codice chiamato.  
   
-## <a name="outwrites"></a>\_Out_writes\_  
- L'esempio seguente illustra un uso improprio comune del `_Out_writes_`.  
+## <a name="_out_writes_"></a>\_Out_writes\_  
+ Nell'esempio seguente viene illustrato un utilizzo comune dei `_Out_writes_`.  
   
 ```cpp  
   
@@ -79,9 +79,9 @@ void Func1(_Out_writes_(size) CHAR *pb,
   
 ```  
   
- L'annotazione `_Out_writes_` indica che si dispone di un buffer. Ha `cb` byte allocati, con il primo byte inizializzato all'uscita. Questa annotazione non è necessariamente errata ed è utile esprimere la dimensione allocata. Tuttavia, non indica quanti elementi vengono inizializzati dalla funzione.  
+ L'annotazione `_Out_writes_` indica che è presente un buffer. Ha `cb` byte allocati, con il primo byte inizializzato all'uscita. Questa annotazione non è strettamente sbagliata ed è utile per esprimere le dimensioni allocate. Tuttavia, non indica il numero di elementi inizializzati dalla funzione.  
   
- L'esempio seguente mostra tre modi di specificare completamente la dimensione esatta della parte del buffer inizializzata correttamente.  
+ Nell'esempio riportato di seguito vengono illustrati tre modi corretti per specificare completamente le dimensioni esatte della parte inizializzata del buffer.  
   
 ```cpp  
   
@@ -101,8 +101,8 @@ void Func3(_Out_writes_(size) PSTR pb,
   
 ```  
   
-## <a name="out-pstr"></a>\_Out\_ PSTR  
- L'uso di `_Out_ PSTR` è quasi sempre errato. Tale valore viene interpretato come se avessero un parametro di output che punta a un buffer di caratteri ed è con terminazione NULL.  
+## <a name="_out_-pstr"></a>\_\_ PSTR  
+ L'uso di `_Out_ PSTR` è quasi sempre errato. Viene interpretato come avente un parametro di output che punta a un buffer di caratteri e con terminazione NULL.  
   
 ```cpp  
   
@@ -114,10 +114,10 @@ void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
   
 ```  
   
- Ad esempio un'annotazione `_In_ PCSTR` è comune e utile. Punta a una stringa di input con terminazione NULL poiché la precondizione del `_In_` consente il riconoscimento di una stringa con terminazione NULL.  
+ Un'annotazione come `_In_ PCSTR` è comune e utile. Punta a una stringa di input con terminazione NULL perché la precondizione di `_In_` consente il riconoscimento di una stringa con terminazione NULL.  
   
-## <a name="in-wchar-p"></a>\_In\_ WCHAR * p  
- `_In_ WCHAR* p` indica che vi sia un puntatore di input `p` che punta a un carattere. Tuttavia, nella maggior parte dei casi, non si tratta probabilmente della specifica che è destinata. Al contrario, probabilmente ciò che serve è la specifica di una matrice con terminazione NULL; a tale scopo, usare `_In_ PWSTR`.  
+## <a name="_in_-wchar-p"></a>\_in\_ WCHAR * p  
+ `_In_ WCHAR* p` indica che è presente un puntatore di input `p` che punta a un carattere. Nella maggior parte dei casi, tuttavia, probabilmente non è la specifica desiderata. È invece probabile che sia la specifica di una matrice con terminazione NULL. a tale scopo, utilizzare `_In_ PWSTR`.  
   
 ```cpp  
   
@@ -129,7 +129,7 @@ void Func2(_In_ PWSTR wszFileName);
   
 ```  
   
- Manca la specifica corretta di terminazione NULL è comune. Utilizzare l'oggetto appropriato `STR` versione per sostituire il tipo, come illustrato nell'esempio seguente.  
+ Manca la specifica corretta della terminazione NULL è comune. Usare la versione di `STR` appropriata per sostituire il tipo, come illustrato nell'esempio seguente.  
   
 ```cpp  
   
@@ -147,8 +147,8 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
   
 ```  
   
-## <a name="outrange"></a>\_Out_range\_  
- Se il parametro è un puntatore e si desidera esprimere l'intervallo del valore dell'elemento che viene puntato dal puntatore, utilizzare `_Deref_out_range_` invece di `_Out_range_`. Nell'esempio seguente, l'intervallo di * pcbFilled viene espresso, non pcbFilled.  
+## <a name="_out_range_"></a>\_Out_range\_  
+ Se il parametro è un puntatore e si desidera esprimere l'intervallo del valore dell'elemento a cui punta il puntatore, utilizzare `_Deref_out_range_` anziché `_Out_range_`. Nell'esempio seguente viene espresso l'intervallo di * pcbFilled, non pcbFilled.  
   
 ```cpp  
   
@@ -168,10 +168,10 @@ void Func2(
   
 ```  
   
- `_Deref_out_range_(0, cbSize)` non è strettamente necessaria per alcuni strumenti in quanto può essere dedotto da `_Out_writes_to_(cbSize,*pcbFilled)`, ma viene incluso qui per completezza.  
+ `_Deref_out_range_(0, cbSize)` non è strettamente necessario per alcuni strumenti perché può essere dedotto da `_Out_writes_to_(cbSize,*pcbFilled)`, ma viene visualizzato qui per completezza.  
   
-## <a name="wrong-context-in-when"></a>Nel contesto errato \_quando\_  
- Un altro errore comune consiste nell'usare valutazione dello post-stato le precondizioni. Nell'esempio seguente, `_Requires_lock_held_` è una precondizione.  
+## <a name="wrong-context-in-_when_"></a>Contesto errato in \_quando\_  
+ Un altro errore comune è quello di usare la valutazione post-stato per le precondizioni. Nell'esempio seguente `_Requires_lock_held_` è una condizione preliminare.  
   
 ```cpp  
   
@@ -185,10 +185,10 @@ int Func2(_In_ MyData *p, int flag);
   
 ```  
   
- L'espressione `result` fa riferimento a un valore di post-stato che non è disponibile in pre stato di.  
+ L'espressione `result` fa riferimento a un valore di post-stato non disponibile in pre-stato.  
   
-## <a name="true-in-success"></a>TRUE in \_esito positivo\_  
- Se la funzione ha esito positivo quando il valore restituito è diverso da zero, usare `return != 0` come condizione di esito positivo anziché `return == TRUE`. Diverso da zero non implica necessariamente che il valore effettivo che il compilatore fornisce per l'equivalenza `TRUE`. Il parametro `_Success_` è un'espressione e le seguenti espressioni vengono valutate come equivalenti: `return != 0`, `return != false`, `return != FALSE` e `return` senza parametri o confronti.  
+## <a name="true-in-_success_"></a>TRUE in \_esito positivo\_  
+ Se la funzione ha esito positivo quando il valore restituito è diverso da zero, utilizzare `return != 0` come condizione di esito positivo anziché `return == TRUE`. Il valore diverso da zero non significa necessariamente l'equivalenza al valore effettivo fornito dal compilatore per `TRUE`. Il parametro `_Success_` è un'espressione e le seguenti espressioni vengono valutate come equivalenti: `return != 0`, `return != false`, `return != FALSE` e `return` senza parametri o confronti.  
   
 ```cpp  
   
@@ -207,7 +207,7 @@ BOOL WINAPI TryEnterCriticalSection(
 ```  
   
 ## <a name="reference-variable"></a>Variabile di riferimento  
- Per una variabile di riferimento, la versione precedente di SAL utilizzato il puntatore del mouse impliciti come destinazione dell'annotazione e necessaria l'aggiunta di un `__deref` alle annotazioni che è collegato a una variabile di riferimento. Questa versione Usa l'oggetto stesso e non richiede altro `_Deref_`.  
+ Per una variabile di riferimento, la versione precedente di SAL usava il puntatore implicito come destinazione dell'annotazione e richiedeva l'aggiunta di un `__deref` alle annotazioni associate a una variabile di riferimento. Questa versione USA l'oggetto stesso e non richiede la `_Deref_`aggiuntiva.  
   
 ```cpp  
   
@@ -225,8 +225,8 @@ void Func2(
   
 ```  
   
-## <a name="annotations-on-return-values"></a>Annotazioni sui valori restituiti  
- L'esempio seguente illustra un problema comune nelle annotazioni di valore restituito.  
+## <a name="annotations-on-return-values"></a>Annotazioni nei valori restituiti  
+ Nell'esempio seguente viene illustrato un problema comune nelle annotazioni del valore restituito.  
   
 ```cpp  
   
@@ -238,14 +238,14 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
   
 ```  
   
- In questo esempio `_Out_opt_` afferma che il puntatore potrebbe essere NULL durante la precondizione. Tuttavia, le precondizioni non è possibile applicare al valore restituito. In questo caso, l'annotazione corretto è `_Ret_maybenull_`.  
+ In questo esempio `_Out_opt_` indica che il puntatore potrebbe essere NULL come parte della precondizione. Tuttavia, non è possibile applicare le precondizioni al valore restituito. In questo caso, l'annotazione corretta viene `_Ret_maybenull_`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Uso delle annotazioni SAL per ridurre i difetti del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Uso delle annotazioni SAL per ridurreC++ i difetti di C/codice](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Informazioni su SAL](../code-quality/understanding-sal.md)   
  [Annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Annotazione del comportamento (funzione)](../code-quality/annotating-function-behavior.md)   
- [Annotazioni di struct e classi](../code-quality/annotating-structs-and-classes.md)   
+ [Annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)   
+ [Annotazione di struct e classi](../code-quality/annotating-structs-and-classes.md)   
  [Annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md)   
- [Specificare quando e dove applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Specificare quando e dove si applica un'Annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funzioni intrinseche](../code-quality/intrinsic-functions.md)

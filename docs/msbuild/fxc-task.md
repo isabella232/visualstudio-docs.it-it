@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), FXC task
 - FXC task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 67958a1a1ebb2ff382d0896e2fbaec6105c0c785
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747330"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279293"
 ---
 # <a name="fxc-task"></a>Attività FXC
 
@@ -53,7 +53,7 @@ Nella tabella seguente vengono descritti i parametri dell'attività **FXC**.
 |**SetRootSignature**|Parametro **string** facoltativo.<br/><br/>Associa la firma radice al bytecode dello shader. Disponibile per Modello shader 5.0 e versioni successive.<br/><br/>Usare `/setrootsignature`.|
 |**ShaderModel**|Parametro **string** facoltativo.<br/><br/>Specifica il modello di shader. Alcuni tipi di shader possono essere usati solo con modelli di shader recenti.<br/><br/>Usare `/T [type]_[model]`.|
 |**ShaderType**|Parametro **string** facoltativo.<br/><br/>Specifica il tipo di shader.<br/><br/>Usare `/T [type]_[model]`.<br/><br/>**Effect**, usare `fx`.<br/>**Vertex**, usare `vs`.<br/>**Pixel**, usare `ps`.<br/>**Geometry**, usare `gs`.<br/>**Hull**, usare `hs`.<br/>**Domain**, usare `ds`.<br/>**Compute**, usare `cs`.<br/>**Library**, usare `lib`.<br/>**RootSignature**, genera oggetto firma radice.|
-|**Source**|Parametro **ITaskItem** obbligatorio.|
+|**Origine**|Parametro **ITaskItem** obbligatorio.|
 |**SuppressStartupBanner**|Parametro **bool** facoltativo.<br/><br/>Evita la visualizzazione del messaggio di avvio e dei messaggi informativi.<br/><br/>Usare `/nologo`.|
 |**TrackerLogDirectory**|Parametro **string** facoltativo.|
 |**TreatWarningAsError**|Parametro **bool** facoltativo.<br/><br/>Considera tutti gli avvisi del compilatore come errori.<br/><br/>Per un nuovo progetto, potrebbe essere preferibile usare `/WX` in tutte le compilazioni. La risoluzione degli avvisi garantirà il minor numero possibile di errori del codice di difficile individuazione.|
@@ -61,4 +61,4 @@ Nella tabella seguente vengono descritti i parametri dell'attività **FXC**.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

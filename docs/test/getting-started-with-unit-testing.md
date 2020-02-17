@@ -1,6 +1,6 @@
 ---
 title: Introduzione agli unit test
-ms.date: 04/01/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ab0a6664740f2d772d79f9c77fddfbc12fb82f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596476"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279327"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
@@ -26,16 +26,18 @@ Questa sezione descrive a livello generale come creare un progetto di unit test.
 
 1. Aprire il progetto da testare in Visual Studio.
 
-   Ai fini della dimostrazione di uno unit test di esempio, in questo articolo viene testato un semplice progetto "Hello World". Il codice di esempio per questo tipo di progetto è il seguente:
+   Per illustrare un esempio unit test, in questo articolo viene testato un semplice progetto "Hello World" denominato **HelloWorldCore**. Il codice di esempio per questo tipo di progetto è il seguente:
 
    ```csharp
-   public class Program
-   {
-       public static void Main()
-       {
-           Console.WriteLine("Hello World!");
-       }
-   }
+   namespace HelloWorldCore
+
+      public class Program
+      {
+         public static void Main()
+         {
+            Console.WriteLine("Hello World!");
+         }
+      }
    ```
 
 1. Selezionare il nodo della soluzione in **Esplora soluzioni**. Dalla barra dei menu superiore selezionare **File** > **Aggiungi** > **Nuovo progetto**.
@@ -70,14 +72,48 @@ Questa sezione descrive a livello generale come creare un progetto di unit test.
 
 1. Aggiungere codice al metodo di unit test.
 
-   ![Aggiungere codice al metodo di unit test in Visual Studio](media/vs-2019/unit-test-method.png)
+   Per un progetto di test MSTest o NUnit, ad esempio, è possibile usare il codice seguente.
+
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class UnitTest1
+      {
+         private const string Expected = "Hello World!";
+         [TestMethod]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
 
 > [!TIP]
 > Per una procedura più dettagliata per la creazione di unit test, vedere [Creare ed eseguire unit test per codice gestito](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Eseguire unit test
 
-1. Aprire [Esplora test](../test/run-unit-tests-with-test-explorer.md) scegliendo **Test** > **Finestre** > **Esplora test** dalla barra dei menu in alto.
+1. Aprire [Esplora test](../test/run-unit-tests-with-test-explorer.md).
+
+   ::: moniker range=">=vs-2019"
+   Per aprire Esplora test, scegliere **test** > **Esplora test** dalla barra dei menu superiore.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Per aprire Esplora test, scegliere **test** > **Windows** > **Esplora test** dalla barra dei menu superiore.
+   ::: moniker-end
 
 1. Eseguire gli unit test facendo clic su **Esegui tutto**.
 
