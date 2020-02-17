@@ -15,17 +15,17 @@ f1_keywords:
 - _Check_return_
 - _Use_decl_annotations_
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: b77379d0bb9dbd80f01eadf5209353b3fd12eb1c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 48a8e8fb123f13753266939b6d0e8c5b19a582f8
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446303"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265164"
 ---
 # <a name="annotating-function-behavior"></a>Annotazione del comportamento delle funzioni
 Oltre ad annotare [i parametri della funzione e i valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md), è possibile annotare le proprietà dell'intera funzione.
@@ -41,7 +41,7 @@ Le seguenti annotazioni si applicano all'intera funzione e descrivono come si co
 |`_Raises_SEH_exception_`|Annota una funzione che genera sempre un'eccezione del gestore eccezioni strutturate soggetta alle condizioni `_When_` e `_On_failure_`. Per ulteriori informazioni, vedere [specifica di quando e dove si applica un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
 |`_Maybe_raises_SEH_exception_`|Annota una funzione che può facoltativamente generare un'eccezione del gestore eccezioni strutturate soggetta alle condizioni `_When_` e `_On_failure_`.|
 |`_Must_inspect_result_`|Annota qualsiasi valore di output, inclusi il valore restituito, i parametri e le variabili globali.  L'analizzatore segnala un errore se il valore dell'oggetto annotato non è controllato in seguito. "L'ispezione" include se viene utilizzata in un'espressione condizionale, viene assegnata a un parametro di output o globale o viene passata come parametro.  Per i valori restituiti, `_Must_inspect_result_` implica `_Check_return_`.|
-|`_Use_decl_annotations_`|Può essere utilizzato in una definizione di funzione, nota anche come corpo della funzione, al posto dell'elenco di annotazioni nell'intestazione.  Quando si usa `_Use_decl_annotations_`, le annotazioni visualizzate in un'intestazione nell'ambito per la stessa funzione vengono usate come se fossero presenti anche nella definizione con l'annotazione `_Use_decl_annotations_`.|
+|`_Use_decl_annotations_`|Può essere utilizzato in una definizione di funzione, nota anche come corpo della funzione, al posto dell'elenco di annotazioni nell'intestazione.  Quando si utilizza `_Use_decl_annotations_`, le annotazioni visualizzate in un'intestazione nell'ambito per la stessa funzione vengono utilizzate come se fossero presenti anche nella definizione con l'annotazione `_Use_decl_annotations_`.|
 
 ## <a name="successfailure-annotations"></a>Annotazioni di esito positivo/negativo
 Una funzione può non riuscire e, quando questo accade, i risultati possono essere incompleti o differire dai risultati della funzione con ha esito positivo.  Le annotazioni nell'elenco seguente forniscono le modalità per esprimere il comportamento dell'errore.  Per utilizzare ognuna di queste annotazioni, è necessario consentire loro di determinare l'esito positivo; pertanto è necessaria un'annotazione `_Success_`.  Si noti che `NTSTATUS` e `HRESULT` già includono un'annotazione `_Success_` compilata. Tuttavia, se si specifica un'annotazione `_Success_` in `NTSTATUS` o `HRESULT`, viene eseguito l'override dell'annotazione incorporata.

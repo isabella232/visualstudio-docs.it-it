@@ -2,24 +2,24 @@
 title: Suggerimenti ed esempi (SAL)
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: eb95e793421ecede6d4583d8d7f4730eb56df1a0
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 601d90ed7e310f058fbf816469fef7374363951f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789787"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265145"
 ---
 # <a name="best-practices-and-examples-sal"></a>Suggerimenti ed esempi (SAL)
 Ecco alcuni modi per sfruttare al meglio il linguaggio di annotazione del codice sorgente (SAL) ed evitare alcuni problemi comuni.
 
 ## <a name="_in_"></a>\_In\_
 
-Se si suppone che la funzione scriva nell'elemento, utilizzare `_Inout_` anziché `_In_`. Questa operazione è particolarmente importante in caso di conversione automatica da macro precedenti a SAL. Prima di SAL, molti programmatori usavano le macro come commenti, ovvero le macro denominate `IN`, `OUT`, `IN_OUT`o varianti di questi nomi. Anche se si consiglia di convertire queste macro in SAL, è necessario prestare attenzione quando si esegue la conversione perché il codice potrebbe essere stato modificato dopo che il prototipo originale è stato scritto e la macro precedente potrebbe non riflettere più le operazioni del codice. Prestare particolare attenzione alla macro di commento `OPTIONAL`, in quanto spesso non viene posizionata correttamente, ad esempio sul lato errato di una virgola.
+Se si suppone che la funzione scriva nell'elemento, utilizzare `_Inout_` anziché `_In_`. Questa operazione è particolarmente importante in caso di conversione automatica da macro precedenti a SAL. Prima di SAL, molti programmatori usavano le macro come commenti, ovvero le macro denominate `IN`, `OUT`, `IN_OUT`o varianti di questi nomi. Anche se si consiglia di convertire queste macro in SAL, è necessario prestare attenzione quando si esegue la conversione perché il codice potrebbe essere stato modificato dopo che il prototipo originale è stato scritto e la macro precedente potrebbe non riflettere più le operazioni del codice. Prestare particolare attenzione alla macro del commento `OPTIONAL` perché spesso viene posizionata in modo errato, ad esempio sul lato errato di una virgola.
 
 ```cpp
 
@@ -77,7 +77,7 @@ void Func1(_Out_writes_(size) CHAR *pb,
 );
 ```
 
-L'annotazione `_Out_writes_` indica che è presente un buffer. Dispone di `cb` byte allocati, con il primo byte inizializzato all'uscita. Questa annotazione non è strettamente sbagliata ed è utile per esprimere le dimensioni allocate. Tuttavia, non indica il numero di elementi inizializzati dalla funzione.
+L'annotazione `_Out_writes_` indica che è presente un buffer. Ha `cb` byte allocati, con il primo byte inizializzato all'uscita. Questa annotazione non è strettamente sbagliata ed è utile per esprimere le dimensioni allocate. Tuttavia, non indica il numero di elementi inizializzati dalla funzione.
 
 Nell'esempio riportato di seguito vengono illustrati tre modi corretti per specificare completamente le dimensioni esatte della parte inizializzata del buffer.
 
@@ -126,7 +126,7 @@ void Func1(_In_ WCHAR* wszFileName);
 void Func2(_In_ PWSTR wszFileName);
 ```
 
-Manca la specifica corretta della terminazione NULL è comune. Usare la versione `STR` appropriata per sostituire il tipo, come illustrato nell'esempio seguente.
+Manca la specifica corretta della terminazione NULL è comune. Usare la versione di `STR` appropriata per sostituire il tipo, come illustrato nell'esempio seguente.
 
 ```cpp
 
@@ -181,7 +181,7 @@ _When_(flag == 0, _Requires_lock_held_(p->cs))
 int Func2(_In_ MyData *p, int flag);
 ```
 
-L'espressione `result` fa riferimento a un valore di post-stato che non è disponibile in pre-stato.
+L'espressione `result` fa riferimento a un valore di post-stato non disponibile in pre-stato.
 
 ## <a name="true-in-_success_"></a>TRUE in \_esito positivo\_
 
