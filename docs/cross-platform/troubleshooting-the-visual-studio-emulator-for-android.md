@@ -25,7 +25,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 > [!WARNING]
 > Quando l'emulatore è installato, il programma di installazione verifica i prerequisiti per l'esecuzione del software. Se i prerequisiti non sono presenti, visualizza degli avvisi ma non richiede i prerequisiti per l’installazione.
 
- In questo argomento sono contenute le seguenti sezioni.
+ In questo argomento sono contenute le sezioni seguenti.
 
 - [Prima di iniziare](#BeforeYouStart)
 
@@ -105,7 +105,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 ## <a name="SlowStart"></a> L'emulatore viene avviato lentamente, non viene avviato a causa di un timeout o si verifica un errore di distribuzione dell'app
  In determinate condizioni, l'emulatore richiede alcuni minuti per avviare o non viene avviato a causa di un timeout. Se l'emulatore non viene avviato, viene visualizzato il seguente messaggio: Distribuzione dell’applicazione non riuscita:`App deployment failed. Please try again` Le condizioni seguenti possono causare questo errore.
 
-- Attivare l’emulatore di Visual Studio per Android da un VHD bootable. (Questa configurazione non è supportata.)
+- Attivare l’emulatore di Visual Studio per Android da un VHD bootable. Questa configurazione non è supportata.
 
 - Un disco rigido difettoso. Si consiglia di eseguire il programma chkdsk.
 
@@ -239,7 +239,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 
      Lo svantaggio di questa tecnica è che ogni volta che un nuovo prodotto di terze parti installa i driver non supportati o ogni volta che viene installato l'emulatore, questi passaggi dovrà essere ripetuta.
 
-     Dopo la disinstallazione di prodotti di terze parti potrebbe essere necessario ripristinare lo Switch interno di Windows Phone emulatore. Operazione da eseguire:
+     Dopo la disinstallazione di prodotti di terze parti potrebbe essere necessario ripristinare lo Switch interno di Windows Phone emulatore. A tale scopo, eseguire queste operazioni:
 
   - Aprire Hyper V e andare in Gestione commutatori virtuali. Creare un commutatore virtuale denominato "Windows Phone emulatore interna Switch" e impostarne il tipo di connessione **rete interna**.
 

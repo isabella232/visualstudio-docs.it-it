@@ -36,7 +36,7 @@ Oltre ad annotare [i parametri della funzione e i valori restituiti](../code-qua
 ## <a name="function-annotations"></a>Annotazioni funzione  
  Le seguenti annotazioni si applicano all'intera funzione e descrivono come si comporta o il valore previsto per restituire true.  
   
-|Annotazione|Description|  
+|Annotazione|Descrizione|  
 |----------------|-----------------|  
 |`_Called_from_function_class_(name)`|Non inteso singolarmente; è un predicato da utilizzare con l'annotazione `_When_`. Per ulteriori informazioni, vedere [specifica di quando e dove si applica un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Il parametro `name` è una stringa arbitraria che viene visualizzata anche in un'annotazione `_Function_class_` nella dichiarazione di alcune funzioni.  `_Called_from_function_class_` restituisce un valore diverso da zero se la funzione attualmente analizzata viene annotata utilizzando `_Function_class_` con lo stesso valore di `name`; in caso contrario, restituisce zero.|  
 |`_Check_return_`|Annota un valore restituito e dichiara che il chiamante deve esaminarlo. La verifica restituisce un errore se la funzione viene chiamata in un contesto void.|  
@@ -49,7 +49,7 @@ Oltre ad annotare [i parametri della funzione e i valori restituiti](../code-qua
 ## <a name="successfailure-annotations"></a>Annotazioni di esito positivo/negativo  
  Una funzione può non riuscire e, quando questo accade, i risultati possono essere incompleti o differire dai risultati della funzione con ha esito positivo.  Le annotazioni nell'elenco seguente forniscono le modalità per esprimere il comportamento dell'errore.  Per utilizzare ognuna di queste annotazioni, è necessario consentire loro di determinare l'esito positivo; pertanto è necessaria un'annotazione `_Success_`.  Si noti che `NTSTATUS` e `HRESULT` già includono un'annotazione `_Success_` compilata. Tuttavia, se si specifica un'annotazione `_Success_` in `NTSTATUS` o `HRESULT`, viene eseguito l'override dell'annotazione incorporata.  
   
-|Annotazione|Description|  
+|Annotazione|Descrizione|  
 |----------------|-----------------|  
 |`_Always_(anno_list)`|Analogamente a `anno_list _On_failure_(anno_list)`, le annotazioni in `anno_list` si applicano indipendentemente dall'esito della funzione.|  
 |`_On_failure_(anno_list)`|Da utilizzare solo quando si usa anche `_Success_` per annotare la funzione, esplicitamente o implicitamente, mediante `_Return_type_success_` in un typedef. Quando l'annotazione `_On_failure_` è presente in un parametro di funzione o un valore restituito, ciascuna annotazione in `anno_list` (anno) si comporta come se fosse codificata come `_When_(!expr, anno)`, dove `expr` è il parametro dell'annotazione `_Success_` richiesta. Ciò significa che l'applicazione implicita di `_Success_` per tutte le post-condizioni non è applicabile per `_On_failure_`.|  

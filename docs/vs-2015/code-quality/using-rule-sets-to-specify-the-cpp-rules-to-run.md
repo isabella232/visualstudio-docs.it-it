@@ -35,7 +35,7 @@ In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
   
    - Scegliere il set di regole che si desidera personalizzare.  
   
-     \- oppure -  
+     \- - oppure -  
   
    - Scegliere **\<Sfoglia... >** per specificare un set di regole esistente non presente nell'elenco.  
   

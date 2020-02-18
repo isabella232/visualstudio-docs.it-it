@@ -28,7 +28,7 @@ Un'espressione in SAL può essere un'espressione C/C++ a condizione che sia un'e
 ## <a name="general-purpose"></a>Utilizzo generico
 Le seguenti annotazioni di funzioni intrinseche forniscono l'utilità generale per SAL.
 
-|Annotation|Descrizione|
+|Annotazione|Descrizione|
 |----------------|-----------------|
 |`_Curr_`|Sinonimo dell'oggetto attualmente annotato.  Quando viene utilizzata l'annotazione `_At_`, `_Curr_` è identica al primo parametro di `_At_`.  In caso contrario, è il parametro o l'intera funzione/valore restituito con cui l'annotazione è lessicalmente associata.|
 |`_Inexpressible_(expr)`|Esprime una situazione in cui la dimensione di un buffer è troppo complessa per essere rappresentata con un'espressione di annotazione, ad esempio quando viene calcolata esaminando un set di dati di input e successivamente contando i membri selezionati.|
@@ -40,7 +40,7 @@ Le seguenti annotazioni di funzioni intrinseche forniscono l'utilità generale p
 ## <a name="string-specific"></a>Specifica della stringa
 Le seguenti annotazioni di funzioni intrinseche abilitano la modifica delle stringhe. Tutte e quattro queste funzioni presentano lo stesso scopo: restituire il numero di elementi del tipo trovati prima di un terminatore null. Le differenze sono i tipi di dati negli elementi a cui fanno riferimento. Si noti che se si desidera specificare la lunghezza del buffer con terminazione null che non è composto da caratteri, utilizzare l'annotazione di `_Nullterm_length_(param)` dalla sezione precedente.
 
-|Annotation|Descrizione|
+|Annotazione|Descrizione|
 |----------------|-----------------|
 |`_String_length_(param)`|`param` è il numero di elementi nella stringa che non include un carattere di terminazione null. Questa annotazione è riservata ai tipi di stringa di caratteri.|
 |`strlen(param)`|`param` è il numero di elementi nella stringa che non include un carattere di terminazione null. Questa annotazione è riservata per l'utilizzo su matrici di caratteri ed è simile alla funzione di runtime C [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|

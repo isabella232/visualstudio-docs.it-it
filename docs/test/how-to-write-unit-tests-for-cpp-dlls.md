@@ -141,7 +141,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
 1. In ogni file di codice dello unit test, aggiungere un'istruzione `#include` per le intestazioni del progetto sottoposto a test.
 
-2. Aggiungere le classi e i metodi di test ai file di codice dello unit test. Ad esempio,
+2. Aggiungere le classi e i metodi di test ai file di codice dello unit test. Ad esempio:
 
     ```cpp
     #include "stdafx.h"
@@ -175,5 +175,5 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 - [Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Eseguire il debug di codice nativo](../debugger/debugging-native-code.md)
 - [Procedura dettagliata: Creare e usare la propria libreria a collegamento dinamico (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
-- [Importazione ed esportazione](/cpp/build/importing-and-exporting)
+- [Importare ed esportare](/cpp/build/importing-and-exporting)
 - [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
