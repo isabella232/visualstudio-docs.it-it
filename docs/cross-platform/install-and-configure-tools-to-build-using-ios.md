@@ -28,7 +28,7 @@ ms.locfileid: "77272276"
 
 Dopo aver installato gli strumenti per la compilazione con iOS, fare riferimento a questo articolo per i modi per configurare e aggiornare rapidamente l'agente remoto per lo sviluppo di iOS in Visual Studio e sul Mac.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 Per installare e usare l'agente remoto per sviluppare il codice per iOS, è necessario prima di tutto avere questi prerequisiti:
 

@@ -37,7 +37,7 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
  È possibile testare l'applicazione in un profilo univoco del dispositivo per ognuna delle piattaforme Android, risoluzioni dello schermo e altre proprietà di hardware supportate dall'emulatore di Visual Studio per Android.
 
 ## <a name="Installing"></a> Installazione e disinstallazione
- Installazione di
+ Installazione
 
  Visual Studio l'emulatore di Android è un componente di strumenti multipiattaforma disponibili in Visual Studio e verrà installato durante un'installazione personalizzata di Visual Studio quando si seleziona lo sviluppo di piattaforme mobili, quindi strumenti comuni e Software Development Kit e quindi emulatore di Visual Studio per Android.
 

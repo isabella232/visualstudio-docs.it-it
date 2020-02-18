@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-È possibile modificare l'opzione **MaxConditions** di un attributo derivato da **PexSettingsAttributeBase**, ad esempio [PexClass](attribute-glossary.md#pexclass) o [PexMethod](attribute-glossary.md#pexmethod). Ad esempio,
+È possibile modificare l'opzione **MaxConditions** di un attributo derivato da **PexSettingsAttributeBase**, ad esempio [PexClass](attribute-glossary.md#pexclass) o [PexMethod](attribute-glossary.md#pexmethod). Ad esempio:
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -342,6 +342,6 @@ In alcuni casi la modifica di un campo statico è accettabile:
 
 <a name="report-bug"></a>
 
-## <a name="got-feedback"></a>Commenti?
+## <a name="got-feedback"></a>Per eventuali commenti,
 
 Pubblicare idee e richieste di funzionalità nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

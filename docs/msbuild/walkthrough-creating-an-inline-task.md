@@ -259,4 +259,4 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 ## <a name="see-also"></a>Vedere anche
 - [Attività inline](../msbuild/msbuild-inline-tasks.md)
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Destinazioni](../msbuild/msbuild-targets.md)
+- [Server di destinazione](../msbuild/msbuild-targets.md)

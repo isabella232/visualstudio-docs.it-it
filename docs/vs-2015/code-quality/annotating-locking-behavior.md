@@ -51,7 +51,7 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
   
  Le annotazioni di concorrenza SAL sono progettate per specificare gli effetti collaterali del blocco, la responsabilità del blocco, la tutela di dati, la gerarchia d'ordine e altri comportamenti previsti del blocco. Creando regole implicite esplicite, le annotazioni di concorrenza SAL forniscono un metodo coerente per documentare come il codice utilizza le regole di blocco. Le annotazioni di concorrenza migliorano anche la capacità degli strumenti di analisi del codice di trovare race condition, deadlock, operazioni di sincronizzazione non corrispondenti e altri difficili errori di concorrenza.  
   
-## <a name="general-guidelines"></a>Indicazioni generali  
+## <a name="general-guidelines"></a>Linee guida generali  
  Utilizzando le annotazioni è possibile indicare i contratti impliciti nelle definizioni di funzione tra le implementazioni (chiamati) e i client (chiamanti) ed esprimere invarianti e altre proprietà del programma che possono migliorare ulteriormente l'analisi.  
   
  SAL supporta molti tipi diversi di primitive di blocco, come ad esempio le sezioni critiche, i mutex, gli spinlock e altri oggetti risorsa. Molte annotazioni di concorrenza accettano un'espressione di blocco come parametro. Per convenzione, un blocco è indicato dall'espressione di percorso dell'oggetto blocco sottostante.  
@@ -67,7 +67,7 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
 ## <a name="locking-annotations"></a>Annotazioni di blocco  
  Nella tabella seguente sono elencate le annotazioni di blocco.  
   
-|Annotation|Descrizione|  
+|Annotazione|Descrizione|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi esclusivi dell'oggetto di blocco denominato da `expr`.|  
 |`_Acquires_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi dell'oggetto di blocco denominato da `expr`.|  
@@ -91,7 +91,7 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Intrinseci SAL per oggetti di blocco non esposti  
  Determinati oggetti Lock non vengono esposti dall'implementazione delle funzioni di blocco associate.  Nella tabella seguente sono elencate le variabili intrinseche SAL che abilitano le annotazioni sulle funzioni che operano sugli oggetti di blocco non esposti.  
   
-|Annotation|Descrizione|  
+|Annotazione|Descrizione|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|Viene descritto lo spin lock di annullamento.|  
 |`_Global_critical_region_`|Viene descritta l'area critica.|  
@@ -101,7 +101,7 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
 ## <a name="shared-data-access-annotations"></a>Annotazioni di accesso ai dati condivise  
  Nella tabella seguente sono elencate le annotazioni per l'accesso ai dati condivisi.  
   
-|Annotation|Descrizione|  
+|Annotazione|Descrizione|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Annota una variabile e indica se la variabile è accessibile, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|  
 |`_Interlocked_`|Annota una variabile ed è equivalente a `_Guarded_by_(_Global_interlock_)`.|  

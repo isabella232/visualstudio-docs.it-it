@@ -83,7 +83,7 @@ int main()
   
 - C26485 è associato alle regole. 3: nessun decadimento da matrice a puntatore.  
   
-- C26481 è associato alle regole. 1: non usare l'aritmetica dei puntatori. In alternativa, utilizzare `span`.  
+- C26481 è associato alle regole. 1: non usare l'aritmetica dei puntatori. Usare invece `span`.  
   
   Se i C++ set di regole di analisi del codice di base del controllo vengono installati e abilitati quando si compila il codice, i primi due avvisi vengono restituiti, ma il terzo viene eliminato. Ecco l'output di compilazione del codice di esempio:  
   
