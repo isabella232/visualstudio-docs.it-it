@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di un'applicazione parallela | Microsoft Docs
 description: Eseguire il debug usando le finestre attività in parallelo e stack in parallelo in Visual Studio
-ms.date: 03/22/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728593"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416425"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procedura dettagliata: debug di un'applicazione parallela inC#Visual Studio ( C++, Visual Basic,)
 
@@ -45,10 +45,10 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 - Come le finestre affrontano il ridimensionamento tramite il raggruppamento, lo zoom e altre funzionalità correlate.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  In questa procedura dettagliata si presuppone che **Just My Code** sia abilitata per impostazione predefinita nelle versioni più recenti di Visual Studio. Nel menu **Strumenti** fare clic su **Opzioni**, espandere il nodo **Debug**, selezionare **Generale**, quindi **Abilita Just My Code (solo gestito)** . Se non si imposta questa funzionalità, si può comunque utilizzare la procedura dettagliata, ma è possibile che i risultati differiscano dalle illustrazioni.
 
-## <a name="c-sample"></a>Esempio in C#
+## <a name="c-sample"></a>Esempio C#
  Se si utilizza l'esempio in C#, la procedura dettagliata presuppone inoltre che il codice esterno sia nascosto. Per attivare o disattivare la visualizzazione del codice esterno, fare clic con il pulsante destro del mouse sull'intestazione della tabella **Nome** nella finestra **Stack di chiamate**, quindi selezionare o deselezionare **Mostra codice esterno**. Se non si imposta questa funzionalità, si può comunque utilizzare la procedura dettagliata, ma è possibile che i risultati differiscano dalle illustrazioni.
 
 ## <a name="c-sample"></a>Esempio in C++
@@ -64,25 +64,37 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 1. Aprire Visual Studio e creare un nuovo progetto.
 
-    ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **console** (o **c++** ), scegliere **modelli**, quindi:
+   ::: moniker range=">=vs-2019"
 
-    - Per C# o Visual Basic, scegliere **Crea nuovo progetto App Console (.NET Framework)** per C# o Visual Basic. Nella finestra di dialogo visualizzata scegliere **Crea**.
-    - Per C++, scegliere **Crea nuovo progetto di applicazione console** per C++. Nella finestra di dialogo visualizzata scegliere **Crea**.
+   Se la finestra di avvio non è aperta, scegliere **File** > **finestra Start**.
 
-    Quindi, digitare un nome o utilizzare il nome predefinito e fare clic su **Crea**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** scegliere le opzioni seguenti:
+   Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-    - Per un' C# app, in **Visual C#** scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)** .
-    - Per un'app Visual Basic, in **Visual Basic**scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)** .
-    - Per un' C++ app, in **Visual C++** scegliere **desktop di Windows**, quindi scegliere **applicazione console Windows**.
+   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Successivamente, scegliere **C#** , **C++** o **Visual Basic** dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma. 
 
-    Quindi, digitare un nome o utilizzare il nome predefinito e fare clic su **OK**.
-    ::: moniker-end
+   Dopo aver applicato la lingua e i filtri della piattaforma, scegliere l' **app console (.NET Core)** o C++, per, modello **applicazione console** , quindi scegliere **Avanti**.
 
-    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** , aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
+   > [!NOTE]
+   > Se non viene visualizzato il modello corretto, passare a **strumenti** > **ottenere strumenti e funzionalità...** , che consente di aprire il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
+
+   Nella finestra **Configura nuovo progetto** Digitare un nome o usare il nome predefinito nella casella **nome progetto** . Scegliere **Crea**.
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** scegliere le opzioni seguenti:
+
+   - Per un' C# app, in **Visual C#** scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)** .
+   - Per un'app Visual Basic, in **Visual Basic**scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)** .
+   - Per un' C++ app, in **Visual C++** scegliere **desktop di Windows**, quindi scegliere **applicazione console Windows**.
+
+   Se non viene visualizzata l' **app console (.NET Core)** o, per C++il modello di progetto di **applicazione console** , passare a **strumenti** > **ottenere strumenti e funzionalità...** , che consente di aprire il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
+
+   Quindi, digitare un nome o utilizzare il nome predefinito e fare clic su **OK**.
+
+   Scegliere **OK**.
+   ::: moniker-end
+
+   Verrà visualizzato un nuovo progetto console. Una volta creato il progetto, viene visualizzato un file di origine.
 
 1. Aprire il file di codice con estensione CPP, CS o VB nel progetto. Eliminarne il contenuto per creare un file di codice vuoto.
 
@@ -92,7 +104,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-1. Nel menu **File** fare clic su **Salva tutto**.
+1. Scegliere **Salva tutti** dal menu **File**.
 
 1. Nel menu **Compila** fare clic su **Ricompila soluzione**.
 
@@ -244,7 +256,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      ![Due attività in attesa nella finestra attività](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     L'attività 4, a sua volta, è in attesa di un monitoraggio di proprietà del thread assegnato all'attività 2. (Fare clic con il pulsante destro del mouse sulla riga di intestazione e scegliere **colonne**  > **assegnazione thread** per visualizzare il valore di assegnazione thread per l'attività 2).
+     L'attività 4, a sua volta, è in attesa di un monitoraggio di proprietà del thread assegnato all'attività 2. (Fare clic con il pulsante destro del mouse sulla riga di intestazione e scegliere **colonne** > **assegnazione thread** per visualizzare il valore di assegnazione thread per l'attività 2).
 
      ![Attività in attesa e descrizione comando nella finestra attività](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
