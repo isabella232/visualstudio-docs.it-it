@@ -37,12 +37,12 @@ ms.locfileid: "77277644"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+## <a name="prerequisites"></a>Prerequisites
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Edizioni supportate di Microsoft Windows e SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>Creazione di un progetto SharePoint
  Creare innanzitutto un progetto SharePoint.
@@ -65,7 +65,7 @@ ms.locfileid: "77277644"
 
     Attualmente, è possibile profilare solo soluzioni farm. Per ulteriori informazioni sulle soluzioni create mediante sandbox e sulle soluzioni farm, vedere Considerazioni sulle soluzioni [create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Fare clic sul pulsante **Fine**. Il progetto viene visualizzato in **Esplora soluzioni**.
+7. Fare clic sul pulsante **Finish** . Il progetto viene visualizzato in **Esplora soluzioni**.
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Aggiungere un ricevitore di eventi funzionalità e funzionalità
  Successivamente, aggiungere una funzionalità al progetto insieme a un ricevitore di eventi per la funzionalità. In questo ricevitore di eventi sarà incluso il codice da profilare.

@@ -28,7 +28,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 - Considera l'avviso come un errore.
 - Annotare il codice sorgente per migliorare l'analisi del difetto del codice.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - Una copia dell' [esempio di demo](../code-quality/demo-sample.md).
 - Conoscenza di base di CC++/.

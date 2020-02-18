@@ -28,7 +28,7 @@ Questo refactoring si applica a:
 
 **Motivo:** Se si usa un'istruzione `if`, questo refactoring consente una semplice transizione a istruzioni `switch` o `switch` espressioni.
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore nella parola chiave `if`.
 2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.

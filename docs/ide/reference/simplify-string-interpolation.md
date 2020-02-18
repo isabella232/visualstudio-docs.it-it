@@ -28,7 +28,7 @@ Questo refactoring si applica a:
 
 **Motivo:** La semplificazione di un'interpolazione di stringhe può fornire maggiore chiarezza e sintassi concisa. Questo strumento di refactoring eseguirà automaticamente l'attività invece di eseguirla manualmente.
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore sull'interpolazione di stringhe:
 
