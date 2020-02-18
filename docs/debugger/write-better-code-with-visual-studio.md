@@ -4,7 +4,7 @@ description: Scrivi codice migliore con meno bug usando Visual Studio per correg
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 01/24/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fe0a9bb1e966bd1451bb5d816eaab814071fb5
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000170"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416386"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Tecniche e strumenti di debug che consentono di scrivere codice migliore
 
@@ -42,14 +42,26 @@ Il codice seguente presenta alcuni bug che è possibile correggere usando l'IDE 
 
 Per creare l'app:
 
-1. Aprire Visual Studio e scegliere **File** > **nuovo** **progetto** > . In **visuale C#** scegliere **desktop di Windows** o **.NET Core**, quindi nel riquadro centrale scegliere un' **app console**.
+1. È necessario che Visual Studio sia installato e che sia installato lo **sviluppo multipiattaforma .NET Core** o il carico di lavoro sviluppo di applicazioni **desktop .NET** , a seconda del tipo di app che si vuole creare.
 
-    > [!NOTE]
-    > Se il modello di progetto **Applicazione console** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo multipiattaforma .NET Core** e quindi **Modifica**.
+    Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
 
-2. Nel campo **nome** Digitare **Console_Parse_JSON** e fare clic su **OK**. Visual Studio crea il progetto.
+    Per installare il carico di lavoro avendo già Visual Studio, fare clic su **Strumenti** > **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere lo **sviluppo multipiattaforma .NET Core** o il carico di lavoro sviluppo di applicazioni **desktop .NET** , quindi scegliere **modifica**.
 
-3. Sostituire il codice predefinito nel file *Program.cs* del progetto con il codice di esempio seguente.
+1. Apri Visual Studio.
+
+    ::: moniker range=">=vs-2019"
+    Nella finestra iniziale scegliere **Crea un nuovo progetto**. Digitare **console** nella casella di ricerca e quindi scegliere **app console (.NET Core)** o **app console (.NET Framework)** . Scegliere **Avanti**. Digitare un nome di progetto come **Console_Parse_JSON** e fare clic su **Crea**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** , in oggetto **visivo C#** , scegliere **app console**, quindi nel riquadro centrale scegliere app **Console (.NET Core)** o **app console (.NET Framework)** . Digitare un nome come **Console_Parse_JSON** e fare clic su **OK**.
+    ::: moniker-end
+
+    Se non viene visualizzato il modello di progetto **app console (.NET Core)** o **app console (.NET Framework)** , passare a **strumenti** > **ottenere strumenti e funzionalità**, che consente di aprire il programma di installazione di Visual Studio. Scegliere lo **sviluppo multipiattaforma .NET Core** o il carico di lavoro sviluppo di applicazioni **desktop .NET** , quindi scegliere **modifica**.
+
+    Visual Studio crea il progetto della console che viene visualizzato nel riquadro destro di Esplora soluzioni.
+
+1. Sostituire il codice predefinito nel file *Program.cs* del progetto con il codice di esempio seguente.
 
 ```csharp
 using System;
@@ -209,7 +221,7 @@ Per correggere l'errore, modificare il membro `points` della classe `User` da qu
 internal string points;
 ```
 
-a questo:
+con questo:
 
 ```csharp
 [DataMember]
@@ -241,7 +253,7 @@ Il zigzag verde va fuori.
 
 Quando sono state corrette tutte le controllo ortografia durante rosse e risolte, o almeno esaminate, tutte le controllo ortografia durante verdi, si è pronti per avviare il debugger ed eseguire l'app.
 
-Premere **F5** (**Debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") nella barra degli strumenti Debug.
+Premere **F5** (**debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvio del debug") debug sulla barra degli strumenti Debug.
 
 A questo punto, l'app di esempio genera un'eccezione `SerializationException` (un errore di Runtime). Ovvero, l'app viene soffocata sui dati che sta provando a serializzare. Poiché l'app è stata avviata in modalità di debug (debugger collegato), l'helper eccezioni del debugger consente di eseguire direttamente il codice che ha generato l'eccezione e fornisce un messaggio di errore utile.
 
@@ -300,7 +312,7 @@ Per l'app di esempio, correggere il `SerializationException` nel metodo `GetJson
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Chiarire l'intenzione del codice tramite Assert
 
-Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") nella barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**). Questa operazione riavvia l'app in un minor numero di passaggi. Nella finestra della console viene visualizzato l'output seguente.
+Fare clic sul pulsante **Riavvia** ![app riavvia](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**). Questa operazione riavvia l'app in un minor numero di passaggi. Nella finestra della console viene visualizzato l'output seguente.
 
 ![Valore null nell'output](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -336,7 +348,7 @@ Con l'aggiunta di `assert` istruzioni come questa alle funzioni durante il proce
 
 Specificando Intent in questo modo, si applicano le proprie esigenze. Si tratta di un metodo semplice e pratico che è possibile utilizzare per la superficie dei bug durante lo sviluppo. (le istruzioni`assert` vengono utilizzate anche come elemento principale negli unit test.)
 
-Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") nella barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
+Fare clic sul pulsante **Riavvia** ![app riavvia](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
 
 > [!NOTE]
 > Il codice `assert` è attivo solo in una build di debug.

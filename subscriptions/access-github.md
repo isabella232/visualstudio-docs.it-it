@@ -3,15 +3,15 @@ title: Offerta di Visual Studio + GitHub | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/17/2020
 ms.topic: conceptual
 description: Scopri la nuova offerta di Visual Studio + GitHub
-ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d8507667f214430513ba2ad84bbe787e5a042899
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238138"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439140"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introduzione alle sottoscrizioni di Visual Studio con GitHub Enterprise  
 
@@ -32,7 +32,7 @@ Se l'organizzazione dispone di un contratto Enterprise che non è prossimo al ri
 
 Gli SKU esistenti per Visual Studio Enterprise, Visual Studio Professional e GitHub Enterprise continueranno a essere disponibili separatamente. 
 
-Per altre informazioni sui vantaggi e sulle opzioni, https://visualstudio.microsoft.com/subscriptions/visual-studio-github visitare. 
+Per altre informazioni sui vantaggi e sulle opzioni, vedere https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
 
 ## <a name="getting-your-subscriptions"></a>Ottenere le sottoscrizioni
 
@@ -61,14 +61,14 @@ Se non si ha familiarità con GitHub, ecco alcune risorse che possono risultare 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-### <a name="q--where-is-my-github-subscription"></a>D:  Dove si trova la sottoscrizione di GitHub?
-R:  Il processo di configurazione della sottoscrizione di GitHub può richiedere un po' di tempo.  Se l'attesa si protrae, è possibile contattare l'amministratore di GitHub.  È possibile che l'amministratore ci stia ancora lavorando o che abbia scelto di non assegnare una sottoscrizione di GitHub all'utente. 
+### <a name="q--where-is-my-github-subscription"></a>D: dove si trova la sottoscrizione GitHub?
+R: il processo per la configurazione della sottoscrizione di GitHub può richiedere qualche minuto.  Se l'attesa si protrae, è possibile contattare l'amministratore di GitHub.  È possibile che l'amministratore ci stia ancora lavorando o che abbia scelto di non assegnare una sottoscrizione di GitHub all'utente. 
 
-### <a name="q--how-do-i-reach-my-github-administrator"></a>D:  Come si contatta l'amministratore di GitHub?
-R:  Se si usa GitHub Enterprise Server, selezionare il collegamento **Supporto** in fondo al client per essere messi in contatto con l'amministratore.
+### <a name="q--how-do-i-reach-my-github-administrator"></a>D: Ricerca per categorie raggiungere l'amministratore di GitHub?
+R: se si usa GitHub Enterprise Server, è possibile fare clic sul collegamento di **supporto** visibile nella parte inferiore del client per la connessione con l'amministratore.
 
-### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>D: Con questa offerta si ottiene l'intera sottoscrizione di Visual Studio (Professional o Enterprise) oppure solo l'IDE?
-R:  Insieme a una sottoscrizione di GitHub Enterprise si riceve una sottoscrizione completa di Visual Studio  che offre tutti i vantaggi inclusi in tali sottoscrizioni, ad esempio download di software, servizi cloud, supporto tecnico e vantaggi per i partner, esattamente come se la sottoscrizione fosse stata acquistata separatamente.
+### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>D: si ottiene la sottoscrizione completa di Visual Studio (Professional o Enterprise) o si ottiene solo l'IDE con questa offerta?
+R: insieme a una sottoscrizione di GitHub Enterprise, si riceve una sottoscrizione completa di Visual Studio.  che offre tutti i vantaggi inclusi in tali sottoscrizioni, ad esempio download di software, servizi cloud, supporto tecnico e vantaggi per i partner, esattamente come se la sottoscrizione fosse stata acquistata separatamente.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - È possibile trovare risposte a domande su un'ampia gamma di argomenti relativi a GitHub in [GitHub Help](https://help.github.com/en) (Guida di GitHub).
@@ -79,3 +79,10 @@ R:  Insieme a una sottoscrizione di GitHub Enterprise si riceve una sottoscrizio
 
 ## <a name="next-steps"></a>Passaggi successivi
 Se non si ha familiarità con GitHub, consultare i progetti divertenti e pratici del [GitHub Learning Lab](https://lab.github.com/) e gli utili suggerimenti proposti.
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
+
