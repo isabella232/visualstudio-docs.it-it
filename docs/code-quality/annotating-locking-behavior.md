@@ -48,7 +48,7 @@ Sfortunatamente, queste regole di blocco in apparenza semplici sono sorprendente
 
 Le annotazioni di concorrenza SAL sono progettate per specificare gli effetti collaterali del blocco, la responsabilità del blocco, la tutela di dati, la gerarchia d'ordine e altri comportamenti previsti del blocco. Creando regole implicite esplicite, le annotazioni di concorrenza SAL forniscono un metodo coerente per documentare come il codice utilizza le regole di blocco. Le annotazioni di concorrenza migliorano anche la capacità degli strumenti di analisi del codice di trovare race condition, deadlock, operazioni di sincronizzazione non corrispondenti e altri difficili errori di concorrenza.
 
-## <a name="general-guidelines"></a>Linee guida generali
+## <a name="general-guidelines"></a>Indicazioni generali
 Utilizzando le annotazioni è possibile indicare i contratti impliciti nelle definizioni di funzione tra le implementazioni (chiamati) e i client (chiamanti) ed esprimere invarianti e altre proprietà del programma che possono migliorare ulteriormente l'analisi.
 
 SAL supporta molti tipi diversi di primitive di blocco, come ad esempio le sezioni critiche, i mutex, gli spinlock e altri oggetti risorsa. Molte annotazioni di concorrenza accettano un'espressione di blocco come parametro. Per convenzione, un blocco è indicato dall'espressione di percorso dell'oggetto blocco sottostante.
@@ -64,7 +64,7 @@ Alcune regole sulla proprietà dei thread da tenere in considerazione:
 ## <a name="locking-annotations"></a>Annotazioni di blocco
 Nella tabella seguente sono elencate le annotazioni di blocco.
 
-|Annotazione|Descrizione|
+|Annotation|Descrizione|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi esclusivi dell'oggetto di blocco denominato da `expr`.|
 |`_Acquires_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi dell'oggetto di blocco denominato da `expr`.|
@@ -88,7 +88,7 @@ Nella tabella seguente sono elencate le annotazioni di blocco.
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Intrinseci SAL per oggetti di blocco non esposti
 Determinati oggetti Lock non vengono esposti dall'implementazione delle funzioni di blocco associate.  Nella tabella seguente sono elencate le variabili intrinseche SAL che abilitano le annotazioni sulle funzioni che operano sugli oggetti di blocco non esposti.
 
-|Annotazione|Descrizione|
+|Annotation|Descrizione|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|Viene descritto lo spin lock di annullamento.|
 |`_Global_critical_region_`|Viene descritta l'area critica.|
@@ -98,7 +98,7 @@ Determinati oggetti Lock non vengono esposti dall'implementazione delle funzioni
 ## <a name="shared-data-access-annotations"></a>Annotazioni di accesso ai dati condivise
 Nella tabella seguente sono elencate le annotazioni per l'accesso ai dati condivisi.
 
-|Annotazione|Descrizione|
+|Annotation|Descrizione|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|Annota una variabile e indica se la variabile è accessibile, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|
 |`_Interlocked_`|Annota una variabile ed è equivalente a `_Guarded_by_(_Global_interlock_)`.|
@@ -108,7 +108,7 @@ Nella tabella seguente sono elencate le annotazioni per l'accesso ai dati condiv
 ## <a name="smart-lock-and-raii-annotations"></a>Annotazioni Smart Lock e RAII
 I blocchi intelligenti in genere avvolgono i blocchi nativi e ne gestiscono la durata. Nella tabella seguente sono elencate le annotazioni che è possibile usare con i blocchi intelligenti e i modelli di codifica RAII con supporto per la semantica di `move`.
 
-|Annotazione|Descrizione|
+|Annotation|Descrizione|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Indica all'analizzatore di presumere che sia stato acquisito uno Smart Lock. Questa annotazione prevede un tipo di blocco di riferimento come parametro.|
 |`_Analysis_assume_smart_lock_released_`|Indica all'analizzatore di presumere che sia stato rilasciato uno Smart Lock. Questa annotazione prevede un tipo di blocco di riferimento come parametro.|

@@ -1,5 +1,5 @@
 ---
-title: 'Esercitazione: eseguire il debug di codice C# e C++ (modalità mista)'
+title: 'Esercitazione: debug C# e C++ codice (modalità mista)'
 description: Informazioni su come eseguire il debug di una DLL nativa da un'app .NET Core o .NET Framework con il debug in modalità mista
 ms.custom: seodec18
 ms.date: 11/02/2018
@@ -15,20 +15,20 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 8e62b9a99f178a45466ff8afa46753981be61424
-ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
-ms.translationtype: HT
+ms.openlocfilehash: 06f68962eb7cdb6e4fc0290ee5c6559721afb52b
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67342375"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416360"
 ---
-# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug di C# e C++ nella stessa sessione di debug
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug C# e C++ nella stessa sessione di debug
 
 Visual Studio consente di abilitare più di un tipo di debugger in una sessione di debug, chiamata debug in modalità mista. In questa esercitazione viene illustrato come eseguire il debug di codice nativo e gestito in una singola sessione di debug.
 
 Questa esercitazione illustra come eseguire il debug di codice nativo da un'app gestita, ma è anche possibile [eseguire il debug di codice gestito da un'app nativa](../debugger/how-to-debug-in-mixed-mode.md). Il debugger supporta anche altri tipi di debug in modalità mista, ad esempio il debug [di codice Python e nativo](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) e l'uso del debugger di script in tipi di app come ad esempio ASP.NET.
 
-In questa esercitazione si eseguono le attività seguenti:
+In questa esercitazione si apprenderà come:
 
 > [!div class="checklist"]
 > * Creare una semplice DLL nativa
@@ -55,21 +55,15 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 1. Aprire Visual Studio e creare un progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL + Q** per aprire la casella di ricerca, digitare **Progetto vuoto**, scegliere **Modelli**, quindi **Crea nuovo progetto Progetto vuoto** per C++. Nella finestra di dialogo visualizzata scegliere **Crea**. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **progetto vuoto**, scegliere **modelli**, quindi scegliere **progetto vuoto** per. C++ Nella finestra di dialogo visualizzata scegliere **Crea**. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual C++** selezionare **Altro** e quindi **Progetto vuoto** nel riquadro centrale. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **OK**.
+    Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual C++** selezionare **Altro** e quindi **Progetto vuoto** nel riquadro centrale. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **OK**.
     ::: moniker-end
 
     Se il modello di progetto **Progetto vuoto** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** per aprire il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
 
     Visual Studio crea il progetto.
-
-1. Nella finestra di dialogo **Nuovo progetto** in **Visual C++** selezionare **Altro** e **Progetto vuoto** nel riquadro centrale.
-
-1. Nel campo **Nome** digitare **Mixed_Mode_Debugging** e selezionare **OK**.
-
-   Visual Studio crea il progetto vuoto e lo visualizza in **Esplora soluzioni**.
 
 1. In **Esplora soluzioni** selezionare **File di origine** e in seguito **Progetto** > **Aggiungi nuovo elemento**. In alternativa, fare clic con il pulsante destro del mouse su **File di origine** e selezionare **Aggiungi** > **Nuovo elemento**.
 
@@ -119,7 +113,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 1. In **Proprietà di configurazione** nel riquadro a sinistra selezionare **Linker** > **Avanzate** e nell'elenco a discesa accanto a **Nessun punto di ingresso** selezionare **No**. Se è necessario apportare una modifica per impostare il campo su **No**, selezionare **Applica**.
 
-1. In **Proprietà di configurazione** selezionare **Generale** e nell'elenco a discesa accanto a **Tipo di configurazione** selezionare **Libreria dinamica (.dll)** . Selezionare **Applica** e quindi **OK**.
+1. In **Proprietà di configurazione** selezionare **Generale** e nell'elenco a discesa accanto a **Tipo di configurazione** selezionare **Libreria dinamica (.dll)** . Selezionare **Apply** (Applica) e quindi **OK**.
 
    ![Passare a una DLL nativa](../debugger/media/mixed-mode-set-as-native-dll.png)
 
@@ -132,12 +126,12 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **console**, scegliere **Modelli** e quindi scegliere **Create new Console App (.NET Framework)** (Crea nuova app console - .NET Framework) per C#. Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **console**, scegliere **modelli**, quindi scegliere **app console (.net core)** o **app console (.NET Framework)** per C#. Nella finestra di dialogo visualizzata scegliere **Crea**.
 
     Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)** .
+    Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)** .
 
     Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **OK**.
     ::: moniker-end
@@ -255,7 +249,7 @@ Nella maggior parte delle versioni di Visual Studio a partire da Visual Studio 2
 
 1. Premere **F5** o selezionare la freccia verde per continuare il debug dell'app.
 
-La procedura è stata completata. L'esercitazione sull'esecuzione del debug in modalità mista è stata completata.
+Congratulazioni! L'esercitazione sull'esecuzione del debug in modalità mista è stata completata.
 
 ## <a name="next-step"></a>Passaggio successivo
 

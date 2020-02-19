@@ -38,7 +38,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
   
 - Annotare il codice sorgente per migliorare l'analisi del difetto del codice.  
   
-## <a name="prerequisites"></a>Prerequisiti  
+## <a name="prerequisites"></a>Prerequisites  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
   

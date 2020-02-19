@@ -83,7 +83,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 - È necessario soddisfare le condizioni elencate nella sezione [Compilatori in-process](#in-process-compilers).
 
-## <a name="build-solutions"></a>Compilare soluzioni
+## <a name="build-solutions"></a>Creare soluzioni
  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]il file di soluzione e l'ordine di compilazione dei progetti sono controllati dallo stesso [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Quando si compila una soluzione con *msbuild.exe* dalla riga di comando, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] analizza il file di soluzione e dispone la compilazione dei progetti nell'ordine corretto. In entrambi i casi i progetti vengono compilati singolarmente in ordine di dipendenza, senza attraversare i riferimenti progetto per progetto. Al contrario, quando si esegue la compilazione di progetti singoli con *msbuild.exe*, i riferimenti da progetto a progetto vengono attraversati.
 
  Quando si esegue le compilazione all'interno di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la proprietà `$(BuildingInsideVisualStudio)` è impostata su `true`. Questa impostazione può essere usata nel progetto o nei file con estensione *targets* per modificare il comportamento della compilazione.

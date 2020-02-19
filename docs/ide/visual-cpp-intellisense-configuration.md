@@ -76,7 +76,7 @@ Gli errori del parser di tag vengono visualizzati nella finestra **Elenco errori
 
 Per verificare se il compilatore di IntelliSense usa opzioni del compilatore corrette, tra cui percorsi di inclusione e macro del preprocessore, attivare le righe di comando della registrazione diagnostica di IntelliSense in **Strumenti > Opzioni > Editor di testo > C/C++ > Avanzate > Registrazione diagnostica**. Impostare **Abilita registrazione** su True, **Livello di registrazione** su 5 (più dettagliato) e **Filtro di registrazione** su 8 (registrazione di IntelliSense).
 
-La finestra di output mostrerà ora le righe di comando passate al compilatore di IntelliSense. Ecco un esempio di output:
+La finestra di output mostrerà ora le righe di comando passate al compilatore di IntelliSense. Di seguito è riportato un output di esempio:
 
 ```output
 [IntelliSense] Configuration Name: Debug|Win32

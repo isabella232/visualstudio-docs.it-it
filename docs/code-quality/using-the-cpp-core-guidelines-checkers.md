@@ -59,7 +59,7 @@ Questo esempio illustra alcuni degli avvisi che possono essere trovati C++ dalle
 
 - C26485 è associato alle regole. 3: nessun decadimento da matrice a puntatore.
 
-- C26481 è associato alle regole. 1: non usare l'aritmetica dei puntatori. In alternativa, utilizzare `span`.
+- C26481 è associato alle regole. 1: non usare l'aritmetica dei puntatori. Usare invece `span`.
 
 Se i C++ set di regole di analisi del codice di base del controllo vengono installati e abilitati quando si compila il codice, i primi due avvisi vengono restituiti, ma il terzo viene eliminato. Ecco l'output di compilazione del codice di esempio:
 
@@ -129,7 +129,7 @@ Queste macro corrispondono ai set di regole e si espandono in un elenco separato
 #pragma warning(default: CPPCORECHECK_CONST_WARNINGS)
 ```
 
-## <a name="attributes"></a>Attributi
+## <a name="attributes"></a>Attributes
 
 Il compilatore C++ Microsoft dispone di un supporto limitato per l'attributo di eliminazione GSL. Può essere usato per disattivare gli avvisi sulle istruzioni Expression e Block all'interno di una funzione.
 

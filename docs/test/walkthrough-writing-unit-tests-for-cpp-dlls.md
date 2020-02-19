@@ -16,7 +16,7 @@ ms.locfileid: "77275433"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedura: Scrivere unit test per DLL C/C++
 
-Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando la metodologia dei test preventivi. I passaggi di base sono descritti di seguito:
+Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando la metodologia dei test preventivi. I passaggi di base sono i seguenti:
 
 1. [Creare un progetto di test nativo](#create_test_project). Il progetto di test si trova nella stessa soluzione del progetto DLL.
 
@@ -92,7 +92,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2019
 
      In questa procedura dettagliata, il progetto viene denominato `RootFinder`.
 
-2. Premere **Crea**. Nella finestra di dialogo successiva, in **Tipo di applicazione** scegliere **DLL (libreria a collegamento dinamico)** e selezionare **Esporta simboli**.
+2. Fare clic su **Crea**. Nella finestra di dialogo successiva, in **Tipo di applicazione** scegliere **DLL (libreria a collegamento dinamico)** e selezionare **Esporta simboli**.
 
      L'opzione **Esporta simboli** genera una semplice macro che è possibile usare per dichiarare i metodi esportati.
 
@@ -184,7 +184,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
    }
    ```
 
-4. Compila la soluzione.
+4. Compilare la soluzione.
 
     Il nuovo test viene visualizzato in **Esplora test**.
 
@@ -372,4 +372,4 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 - [Uso di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Eseguire il debug di codice nativo](../debugger/debugging-native-code.md)
 - [Procedura dettagliata: Creare e usare la propria libreria a collegamento dinamico (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
-- [Importazione ed esportazione](/cpp/build/importing-and-exporting)
+- [Importare ed esportare](/cpp/build/importing-and-exporting)

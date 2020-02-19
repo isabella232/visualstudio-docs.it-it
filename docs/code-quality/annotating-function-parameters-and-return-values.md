@@ -220,7 +220,7 @@ Per le annotazioni nella tabella seguente, quando un parametro puntatore viene a
 
      Puntatore a una matrice di elementi `s`.  Gli elementi non devono essere validi in pre-stato.  In post-stato, gli elementi fino all'elemento `c`-esimo devono essere validi.  È possibile utilizzare il `_bytes_` VARIANT se le dimensioni sono note in byte anziché come numero di elementi.
      
-     Ad esempio,
+     Ad esempio:
 
      ```cpp
      void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s); 
@@ -251,7 +251,7 @@ Per le annotazioni nella tabella seguente, quando un parametro puntatore viene a
 
      Puntatore a una matrice per la quale `p - _Curr_`, ovvero `p` meno `_Curr_`, è un'espressione valida.  Gli elementi precedenti a `p` devono essere validi in pre-stato.
 
-    Di seguito è riportato un esempio:
+    Ad esempio:
     ```cpp
     int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
     ```
@@ -516,7 +516,7 @@ Il valore restituito di una funzione è simile a un parametro di `_Out_` ma è a
 
 - `_Struct_size_bytes_(size)`
 
-     Si applica a una dichiarazione di classe o struct.  Indica che un oggetto valido di quel tipo può essere più grande del tipo dichiarato, con il numero di byte fornito dal `size`.  Ad esempio,
+     Si applica a una dichiarazione di classe o struct.  Indica che un oggetto valido di quel tipo può essere più grande del tipo dichiarato, con il numero di byte fornito dal `size`.  Ad esempio:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 

@@ -32,7 +32,7 @@ Negli elenchi seguenti vengono illustrati solo alcuni dei numerosi sistemi di da
 Negli elenchi seguenti vengono illustrati solo alcuni dei numerosi sistemi di database e di archiviazione che possono essere utilizzati da Visual Studio. Le offerte di [Microsoft Azure](https://azure.microsoft.com/) sono servizi dati che includono tutto il provisioning e l'amministrazione dell'archivio dati sottostante. Il carico di lavoro di **sviluppo di Azure** in [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) consente di usare gli archivi dati di Azure direttamente da Visual Studio.
 ::: moniker-end
 
-![Carico di lavoro Sviluppo di Azure](media/azure-development-workload.png)
+![Carico Sviluppo di Azure](media/azure-development-workload.png)
 
 La maggior parte degli altri prodotti di database SQL e NoSQL elencati qui può essere ospitata in un computer locale, in una rete locale o in Microsoft Azure in una macchina virtuale. Se si ospita il database in una macchina virtuale Microsoft Azure, si è responsabili della gestione del database stesso.
 
@@ -99,7 +99,7 @@ Se ci si connette ai servizi di Azure, assicurarsi di scaricare gli strumenti pi
 
 Affinché un database sia utilizzabile in ADO.NET, è necessario che disponga di un *provider di dati ADO.NET* personalizzato. in caso contrario, deve esporre un'interfaccia ODBC o OLE DB. Microsoft fornisce un [elenco di provider di dati ADO.NET](/dotnet/framework/data/adonet/ado-net-overview) per i prodotti SQL Server, nonché per i provider ODBC e OLE DB.
 
-### <a name="data-modeling"></a>Modellazione dei dati
+### <a name="data-modeling"></a>Modellazione dati
 
 In .NET sono disponibili tre opzioni per la modellazione e la modifica dei dati in memoria dopo che è stato recuperato da un'origine dati:
 

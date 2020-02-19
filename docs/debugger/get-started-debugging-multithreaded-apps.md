@@ -2,7 +2,7 @@
 title: Informazioni su come eseguire il debug di applicazioni multithreading
 description: Eseguire il debug usando le finestre Stack in parallelo e espressioni di controllo in parallelo in Visual Studio
 ms.custom: ''
-ms.date: 11/16/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e21d5174c9a909e9ad8031dfb7585abc52a7e78
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: f280a93022342fd9ca4dcae5cdac1de919fe1657
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091795"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416407"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Inizia a eseguire il debug di applicazioni multithreadC#(, Visual Basic C++)
 
@@ -34,7 +34,7 @@ Questi due argomenti forniscono informazioni aggiuntive sull'uso di altri strume
 
 - Per un esempio che usa <xref:System.Threading.Tasks.Task> (codice gestito) e il runtime di concorrenza (C++), vedere [procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md). Per suggerimenti generali per il debug che si applicano alla maggior parte dei tipi di applicazioni multithread, leggere l'argomento e questo argomento.
 
-Per prima cosa è necessario un progetto di applicazione multithreading. Vedere l'esempio seguente:
+Per prima cosa è necessario un progetto di applicazione multithreading. Di seguito è riportato un esempio.
 
 ## <a name="create-a-multithreaded-app-project"></a>Creare un progetto di app multithread
 

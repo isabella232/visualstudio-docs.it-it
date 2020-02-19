@@ -52,7 +52,7 @@ Per usare un frammento di codice per racchiudere il codice selezionato, selezion
 
 - Premere **CTRL**+**K**+**S** sulla tastiera
 
-Selezionare **#if**. Viene visualizzato un output simile al seguente:
+Selezionare **#if**. Verrà visualizzata una schermata analoga alla seguente:
 
 ```cpp
 #if 0

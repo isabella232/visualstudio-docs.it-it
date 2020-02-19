@@ -77,7 +77,7 @@ Determina tutti gli assembly che dipendono dall'assembly specificato, incluse di
 |`TargetFrameworkVersion`|Parametro `String` facoltativo.<br /><br /> Versione del framework di destinazione del progetto. Il valore predefinito è vuoto, ovvero non esiste alcun filtro per i riferimenti basati sul framework di destinazione.|
 |`TargetProcessorArchitecture`|Parametro `String` facoltativo.<br /><br /> Architettura del processore di destinazione preferita. Usato per la risoluzione dei riferimenti alla Global Assembly Cache (GAC).<br /><br /> Il valore di questo parametro può essere `x86`, `IA64` o `AMD64`.<br /><br /> Se questo parametro è assente, l'attività considera prima di tutto gli assembly che corrispondono all'architettura del processo attualmente in esecuzione. Se non viene trovato alcun assembly, l'attività considera gli assembly nella GAC il cui valore di `ProcessorArchitecture` è `MSIL` o senza alcun valore per `ProcessorArchitecture` .|
 
-## <a name="warnings"></a>Warnings
+## <a name="warnings"></a>Avvisi
  Vengono registrati gli avvisi seguenti:
 
 - `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
@@ -100,7 +100,7 @@ Determina tutti gli assembly che dipendono dall'assembly specificato, incluse di
 
 - `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche

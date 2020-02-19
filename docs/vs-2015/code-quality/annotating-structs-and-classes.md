@@ -58,7 +58,7 @@ ms.locfileid: "77271577"
   
      Campo che contiene sia dimensione leggibile che modificabile in elementi (o byte) come specificato da `size`.  
   
-     Si applica a struct o a una dichiarazione di classe.  Indica che un oggetto valido di tale tipo può essere maggiore rispetto al tipo dichiarato, con il numero di byte specificati da `size`.  Ad esempio,  
+     Si applica a struct o a una dichiarazione di classe.  Indica che un oggetto valido di tale tipo può essere maggiore rispetto al tipo dichiarato, con il numero di byte specificati da `size`.  Ad esempio:  
   
     ```cpp  
   

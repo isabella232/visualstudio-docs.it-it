@@ -26,7 +26,7 @@ Quando un'annotazione è condizionale, potrebbe essere necessario specificare al
 ## <a name="structural-annotations"></a>Annotazioni strutturali
 Per controllare quando e dove si applicano le annotazioni, utilizzare le seguenti annotazioni strutturali.
 
-|Annotation|Descrizione|
+|Annotazione|Descrizione|
 |----------------|-----------------|
 |`_At_(expr, anno-list)`|`expr` è un'espressione che restituisce un lvalue. Le annotazioni in `anno-list` vengono applicate all'oggetto denominato da `expr`. Per ogni annotazione in `anno-list`, `expr` viene interpretato in una condizione preliminare se l'annotazione viene interpretata in una condizione preliminare e in una condizione successiva se l'annotazione viene interpretata in una condizione post-condizione.|
 |`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` è un'espressione che restituisce un lvalue. Le annotazioni in `anno-list` vengono applicate all'oggetto denominato da `expr`. Per ogni annotazione in `anno-list`, `expr` viene interpretato nella pre-condizione se l'annotazione viene interpretata nella precondizione e in una condizione successiva se l'annotazione viene interpretata in post-condizione.<br /><br /> `iter` è il nome di una variabile che ha come ambito l'annotazione (incluso `anno-list`). `iter` dispone di un `long`di tipo implicito. Le variabili denominate in modo identico in qualsiasi ambito di inclusione sono nascoste dalla valutazione.<br /><br /> `elem-count` è un'espressione che restituisce un Integer.|

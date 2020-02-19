@@ -79,7 +79,7 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 |**UndefineAllPreprocessorDefinitions**|Parametro **bool** facoltativo.<br/><br/>Rimuove tutti i valori precedentemente definiti per il preprocessore.<br/><br/>Usare `-undef`.|
 |**UseMultiToolTask**|Parametro **bool** facoltativo.<br/><br/>Compilazione a più processori.|
 |**UseShortEnums**|Parametro **bool** facoltativo.<br/><br/>Il tipo enum usa solo il numero di byte richiesti dall'insieme di possibili valori di input.|
-|**Verbose**|Parametro **bool** facoltativo.<br/><br/>Visualizza i comandi da eseguire e usa l'output dettagliato.|
+|**Dettagliato**|Parametro **bool** facoltativo.<br/><br/>Visualizza i comandi da eseguire e usa l'output dettagliato.|
 |**WarningLevel**|Parametro **string** facoltativo.<br/><br/>Specifica il grado di severità del controllo effettuato dal compilatore per trovare gli errori del codice. È possibile contrassegnare altre opzioni direttamente da **Opzioni aggiuntive** (usare `/w`, `/Weverything`).<br/><br/>**TurnOffAllWarnings**, disabilita tutti gli avvisi del compilatore (usare `w`).<br/>**EnableAllWarnings**, abilita tutti gli avvisi, inclusi quelli disabilitati per impostazione predefinita (usare `Wall`).|
 
 ## <a name="see-also"></a>Vedere anche

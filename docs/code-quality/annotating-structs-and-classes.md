@@ -59,7 +59,7 @@ ms.locfileid: "77271041"
 
 - `_Struct_size_bytes_(size)`
 
-     Si applica a struct o a una dichiarazione di classe.  Indica che un oggetto valido di tale tipo può essere maggiore rispetto al tipo dichiarato, con il numero di byte specificati da `size`.  Ad esempio,
+     Si applica a struct o a una dichiarazione di classe.  Indica che un oggetto valido di tale tipo può essere maggiore rispetto al tipo dichiarato, con il numero di byte specificati da `size`.  Ad esempio:
 
     ```cpp
 
@@ -105,7 +105,7 @@ struct MyBuffer
 
 Note per questo esempio:
 
-- `_Field_z_` è equivalente a `_Null_terminated_`.  `_Field_z_` per il campo nome specifica che il campo nome è una stringa con terminazione null.
+- `_Field_z_` equivale a: `_Null_terminated_`.  `_Field_z_` per il campo nome specifica che il campo nome è una stringa con terminazione null.
 - `_Field_range_` per `bufferSize` specifica che il valore di `bufferSize` deve essere compreso tra 1 e `MaxBufferSize` (inclusi).
 - I risultati finali delle annotazioni `_Struct_size_bytes_` e `_Field_size_` sono equivalenti. Per le strutture o le classi che presentano un layout simile, `_Field_size_` è più facile da leggere e gestire, perché contiene meno riferimenti e calcoli rispetto all'annotazione `_Struct_size_bytes_` equivalente. `_Field_size_` non richiede la conversione alle dimensioni in byte. Se le dimensioni in byte sono l'unica opzione, ad esempio per un campo puntatore void, è possibile usare `_Field_size_bytes_`. Se sono presenti sia `_Struct_size_bytes_` che `_Field_size_`, entrambi saranno disponibili per gli strumenti di. Se le due annotazioni non sono consentite, è possibile utilizzare lo strumento.
 
