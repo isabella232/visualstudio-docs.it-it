@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588616"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476867"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -78,7 +78,7 @@ Visual Studio include un set predefinito di [analizzatori .NET Compiler Platform
 
 ### <a name="c-code-analysis"></a>Analisi del codice C++
 
-Per analizzare il codice C++, eseguire l'[analisi del codice statico](../code-quality/quick-start-code-analysis-for-c-cpp.md). È consigliabile eseguire questa analisi dopo aver rimosso gli errori più semplici che impediscono una corretta compilazione e di dedicare del tempo alla risoluzione degli eventuali avvisi restituiti. In questo modo si prevengono altri problemi in futuro e si possono apprendere alcune tecniche relative allo stile del codice.
+Per analizzare il codice C++, eseguire l'[analisi del codice statico](/cpp/code-quality/quick-start-code-analysis-for-c-cpp). È consigliabile eseguire questa analisi dopo aver rimosso gli errori più semplici che impediscono una corretta compilazione e di dedicare del tempo alla risoluzione degli eventuali avvisi restituiti. In questo modo si prevengono altri problemi in futuro e si possono apprendere alcune tecniche relative allo stile del codice.
 
 Per avviare l'analisi del codice statico, premere **ALT**+**F11** o selezionare **Analizza** > **Esegui analisi del codice sulla soluzione** dal menu principale.
 
@@ -160,7 +160,7 @@ Visual Studio visualizza anche la finestra **Strumenti di diagnostica**, in cui 
 
 ## <a name="run-unit-tests"></a>Eseguire unit test
 
-Gli unit test sono il primo elemento di difesa contro i bug nel codice perché, se eseguiti correttamente, testano una singola "unità" di codice, in genere una singola funzione, ed è più semplice eseguirne il debug rispetto all'intero programma. Visual Studio installa i framework degli unit test di Microsoft sia per il codice gestito e che per quello nativo. Usare un framework di testing unità per creare unit test, eseguirli e creare report con i relativi risultati. Eseguire nuovamente gli unit test quando si apportano modifiche per verificare che il codice funzioni ancora correttamente. Con Visual Studio Enterprise è possibile eseguire automaticamente i test dopo ogni compilazione.
+Gli unit test sono il primo elemento di difesa contro i bug nel codice perché, se eseguiti correttamente, testano una singola "unità" di codice, in genere una singola funzione, ed è più semplice eseguirne il debug rispetto all'intero programma. Visual Studio installa i framework degli unit test di Microsoft sia per il codice gestito e che per quello nativo. Usare un framework di unit test per creare unit test, eseguirli e creare report con i relativi risultati. Eseguire nuovamente gli unit test quando si apportano modifiche per verificare che il codice funzioni ancora correttamente. Con Visual Studio Enterprise è possibile eseguire automaticamente i test dopo ogni compilazione.
 
 Per iniziare, vedere [Generate unit tests for your code with IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) (Generare unit test per il codice con IntelliTest).
 

@@ -1,5 +1,5 @@
 ---
-title: Limitazioni del debug degli Script | Microsoft Docs
+title: Limitazioni per il debug di script | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,12 +18,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ea088eadc09d45d576dd3c9cd33e5d9e2d79fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f4f8f1e2fb014dc812bb5980d333e0a851f9222
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160635"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476809"
 ---
 # <a name="limitations-on-script-debugging"></a>Limitazioni del debug di script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "68160635"
   
 - I punti di interruzione devono essere impostati all'interno di blocchi `<script>`. Non è possibile eseguire il mapping di punti di interruzione in script inline o blocchi `<% %>`.  
   
-- L'URL del browser per la pagina deve contenere il nome della pagina. Ad esempio http://microsoft.com/default.apsx. I punti di interruzione in grado di riconoscere un reindirizzamento da un indirizzo, ad esempio http://microsoft.com alla pagina predefinita.  
+- L'URL del browser per la pagina deve contenere il nome della pagina. Ad esempio, `http://microsoft.com/default.apsx`. Il mapping dei punti di interruzione non è in grado di riconoscere un Reindirizzamento da un indirizzo, ad esempio `http://microsoft.com` alla pagina predefinita.  
   
 - Il punto di interruzione deve essere impostato nella pagina specificata nell'URL del browser, non in un file di controllo (ascx) ASPX, in una pagina master o in un altro file incluso dalla pagina. Non è possibile eseguire il mapping dei punti di interruzione impostati nelle pagine incluse.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "68160635"
 - Per i punti di interruzione impostati nei blocchi `<script id="">`, l'attributo `id` viene ignorato dal mapping dei punti di interruzione.  
   
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>Mapping dei punti di interruzione e righe duplicate  
- Per trovare la posizione corrispondente negli script lato server e lato client, l'algoritmo di mapping dei punti di interruzione esamina il codice su ogni riga. L'algoritmo presuppone che ogni riga sia univoca. Se due o più righe contengono lo stesso codice e si imposta un punto di interruzione su una delle righe duplicate, l'algoritmo di mapping dei punti di interruzione potrebbe selezionare il duplicato errato nel file lato client. Per evitare questo problema, aggiungere un commento alla riga in cui è stato impostato il punto di interruzione. Ad esempio:  
+ Per trovare la posizione corrispondente negli script lato server e lato client, l'algoritmo di mapping dei punti di interruzione esamina il codice su ogni riga. L'algoritmo presuppone che ogni riga sia univoca. Se due o più righe contengono lo stesso codice e si imposta un punto di interruzione su una delle righe duplicate, l'algoritmo di mapping dei punti di interruzione potrebbe selezionare il duplicato errato nel file lato client. Per evitare questo problema, aggiungere un commento alla riga in cui è stato impostato il punto di interruzione. Ad esempio,  
   
 ```  
 i++ ;  

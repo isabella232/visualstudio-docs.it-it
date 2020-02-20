@@ -7,17 +7,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b8c8d611e1c3e509c16f7adda2a059d81b98ae
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d791ec2d75ff070672714626698e162a6c57f355
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584400"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506375"
 ---
 # <a name="all-rules-rule-set"></a>Set di regole Tutte le regole
 
 Il set di regole tutte le regole contiene tutte le regole per il codice nativo e quello gestito. Il set di regole include tutte le regole descritte negli argomenti seguenti:
 
-- [Avvisi dell'analisi codice per C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
+- [Avvisi dell'analisi codice per C/C++](/cpp/code-quality/code-analysis-for-c-cpp-warnings)
 
 - [Analisi del codice per gli avvisi del codice gestito](../code-quality/code-analysis-for-managed-code-warnings.md)

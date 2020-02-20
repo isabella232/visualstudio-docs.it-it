@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4c4230ca2539b55f57990b90ae33d1f53726dc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 604863cbef5e42b31450ea09dffa56a1a00ae992
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74778726"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476898"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: Specificare percorsi dei file di simboli tramite la riga di comando
 Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, lo strumento da riga di comando VSPerfReport richiede l'accesso ai file di simboli (con estensione *pdb*) dei componenti profilati e ai file di sistema di Windows. I file di simboli vengono creati quando viene compilato un componente. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport esegue automaticamente la ricerca dei file di simboli nei percorsi seguenti:
@@ -46,9 +46,9 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
 
 2. Usare la sintassi seguente per impostare la variabile di ambiente **_NT_SYMBOL_PATH** o l'opzione /SymbolPath di VSPerfReport:
 
-    **SRV\\** * *LocalStore* **\*http://msdl.microsoft.com/download/symbols**
+    `srv*<LocalStore>*https://msdl.microsoft.com/download/symbols`
 
-    dove *ArchivioLocale* è il percorso della directory locale creata.
+    dove *<LocalStore>* è il percorso della directory locale creata.
 
 ## <a name="specify-component-symbol-files"></a>Specificare i file di simboli dei componenti
  Gli strumenti di profilatura eseguono la ricerca di file con estensione *pdb* dei componenti da profilare nei rispettivi percorsi originali archiviati nei componenti o nella cartella contenente il file di dati di profilatura. È possibile specificare altri percorsi per la ricerca aggiungendo uno o più percorsi a **_NT_SYMBOL_PATH** o all'opzione **/SymbolPath**. Separare i percorsi con punti e virgola.
@@ -56,8 +56,10 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
 ## <a name="example"></a>Esempio
  La riga di comando seguente imposta la variabile di ambiente **_NT_SYMBOL_PATH** sul server di simboli Windows e la directory locale su **C:\Symbols**.
 
- **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/download/symbols**
+ ```cmd
+  set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
+ ```
 
  La riga di comando VSPerfReport seguente aggiunge la directory *C:\Projects\Symbols* al percorso di ricerca tramite l'opzione **/SymbolPath**.
 
- **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
+ **VSPerfReport**  *MyApp* **. exe/SymbolPath: C:\Projects\Symbols/Summary: All**

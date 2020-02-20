@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e08a2f8fc93f91cafe40d2dc5e9bdb8b49770b3b
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 5ed6ddc11a998d97a193c2ab01ff69d386ed4ffe
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692829"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476972"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: Specificare i percorsi dei file di simboli dalla riga di comando
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: specificare percorsi dei file di simboli tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, lo strumento da riga di comando VSPerfReport richiede l'accesso ai file di simboli (con estensione pdb) dei componenti profilati e ai file di sistema di Windows. I file di simboli vengono creati quando viene compilato un componente. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport esegue automaticamente la ricerca dei file di simboli nei percorsi seguenti:  
@@ -38,7 +38,7 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
   È anche possibile usare entrambi questi metodi.  
   
 > [!NOTE]
-> Se [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è installato nel computer locale, probabilmente è già stato specificato un percorso per i file di simboli Windows. Per altre informazioni, vedere [Procedura: Informazioni sui simboli di riferimento Windows](../profiling/how-to-reference-windows-symbol-information.md). È comunque necessario configurare VSPerfReport per usare il percorso e il server come descritto più avanti in questo argomento.  
+> Se [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è installato nel computer locale, probabilmente è già stato specificato un percorso per i file di simboli Windows. Per altre informazioni, vedere [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md). È comunque necessario configurare VSPerfReport per usare il percorso e il server come descritto più avanti in questo argomento.  
   
 ## <a name="specifying-windows-symbol-files"></a>Specifica di file di simboli Windows  
   
@@ -48,9 +48,9 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
   
 2. Usare la sintassi seguente per impostare la variabile di ambiente **_NT_SYMBOL_PATH** o l'opzione /SymbolPath di VSPerfReport:  
   
-    **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    `srv*<LocalStore>*https://msdl.microsoft.com/downloads/symbols`  
   
-    dove *ArchivioLocale* è il percorso della directory locale creata.  
+    dove *<LocalStore>* è il percorso della directory locale creata.  
   
 ## <a name="specifying-component-symbol-files"></a>Specifica di file di simboli dei componenti  
  Gli strumenti di profilatura eseguono la ricerca di file con estensione pdb dei componenti da profilare nei rispettivi percorsi originali archiviati nei componenti o nella cartella contenente il file di dati di profilatura. È possibile specificare altri percorsi per la ricerca aggiungendo uno o più percorsi a **_NT_SYMBOL_PATH** o all'opzione **/SymbolPath**. Separare i percorsi con punti e virgola.  
@@ -58,8 +58,10 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
 ## <a name="example"></a>Esempio  
  La riga di comando seguente imposta la variabile di ambiente **_NT_SYMBOL_PATH** sul server di simboli Windows e la directory locale su **C:\Symbols**.  
   
- **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
+ ```cmd
+ set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/downloads/symbols`  
+ ```
   
  La riga di comando VSPerfReport seguente aggiunge la directory C:\Projects\Symbols al percorso di ricerca tramite l'opzione **/SymbolPath**.  
   
- **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
+ **VSPerfReport**  *MyApp* **. exe/SymbolPath: C:\Projects\Symbols/Summary: All**

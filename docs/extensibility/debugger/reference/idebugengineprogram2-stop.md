@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::Stop | Microsoft Docs
+title: 'IDebugEngineProgram2:: Stop | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba93c88eb3d7e996b2a5f19dda605653af090c94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9d7213dcd2484ba69caf51fdc21f52bba5bb3361
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345211"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506455"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 Arresta tutti i thread in esecuzione in questo programma.
@@ -38,12 +38,12 @@ int Stop();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Note
- Questo metodo viene chiamato quando questo programma viene eseguito il debug in un ambiente multi-programma. Quando viene ricevuto un evento di arresto da un altro programma, questo metodo viene chiamato su questo programma. L'implementazione di questo metodo deve essere asincrono; vale a dire, non tutti i thread deve essere obbligatorio deve essere arrestato prima di questo metodo restituisce. L'implementazione di questo metodo potrebbe essere semplice come chiamare le [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) metodo su questo programma.
+ Questo metodo viene chiamato quando viene eseguito il debug di questo programma in un ambiente con più programmi. Quando viene ricevuto un evento di arresto da un altro programma, questo metodo viene chiamato su questo programma. L'implementazione di questo metodo deve essere asincrona. ovvero, non è necessario arrestare tutti i thread prima che questo metodo venga restituito. L'implementazione di questo metodo può essere semplice quanto la chiamata al metodo [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) su questo programma.
 
- Nessun evento di debug viene inviato in risposta a questo metodo.
+ Gli implementatori devono inviare un [IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) quando il programma si interrompe.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

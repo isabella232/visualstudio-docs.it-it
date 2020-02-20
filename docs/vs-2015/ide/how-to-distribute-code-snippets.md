@@ -11,19 +11,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2c080f1b5d4b36093cca44daaac644276039718e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667957"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476978"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedura: distribuire i frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È sufficiente fornire i frammenti di codice ad altri utenti, che dovranno installarli nei computer con Gestione frammenti di codice. Se si hanno diversi frammenti da distribuire o si vuole distribuirli più ampiamente, tuttavia, è possibile includere il file di frammento in un'estensione di Visual Studio, che gli utenti di Visual Studio possono installare.
 
- Per creare estensioni di Visual Studio, è necessario installare Visual Studio SDK. Trovare la versione di VSSDK che corrisponde all'installazione di Visual Studio in [Visual studio 2015 downloads](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).
+ Per creare estensioni di Visual Studio, è necessario installare Visual Studio SDK. Trovare la versione di VSSDK che corrisponde all'installazione di Visual Studio in [Visual studio 2015 downloads](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ## <a name="setting-up-the-extension"></a>Configurazione dell'estensione
  In questa procedura si userà lo stesso frammento di codice Hello World creato in [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Il testo .snippet verrà fornito in modo che non sia necessario tornare indietro e crearlo.

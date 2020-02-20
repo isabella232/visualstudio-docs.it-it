@@ -2,7 +2,7 @@
 title: 'Esercitazione: creare una semplice C# app console'
 description: Informazioni dettagliate su come creare un'app console C# in Visual Studio.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 02/18/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: e72cba384d3780c738c29698f74cbc3b4898bb04
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830004"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476719"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: creare una semplice C# app console in Visual Studio
 
@@ -46,7 +46,7 @@ Per prima cosa, si creerà un progetto di applicazione C#. Il tipo di progetto i
 
 1. Aprire Visual Studio 2017.
 
-2. Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
+2. Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
    In alternativa premere **CTRL**+**MAIUSC**+**N**).
 
 3. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **C#** e scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al file il nome ***CalculateThis***.
@@ -69,7 +69,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
 
-1. Chiudere la finestra di dialogo **Nuovo progetto** e nella barra dei menu in alto scegliere **Strumenti** > **Ottieni strumenti e funzionalità**.
+1. Annullare la finestra di dialogo **nuovo progetto** e dalla barra dei menu superiore scegliere **strumenti** > **ottenere strumenti e funzionalità**.
 
 1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
@@ -134,6 +134,9 @@ Si inizierà con alcune operazioni matematiche di base su interi in C#.
 
     Sarà quindi possibile notare che la funzionalità IntelliSense in Visual Studio offrirà l'opzione per completare automaticamente l'inserimento.
 
+    > [!NOTE]
+    > L'animazione seguente non è progettata per duplicare il codice precedente. È solo per illustrare il funzionamento della funzionalità di completamento automatico.
+
     ![Animazione del codice matematico su un intero che illustra la funzionalità di completamento automatico di IntelliSense nell'IDE di Visual Studio](./media/integer-math-intellisense.gif)
 
 1. Scegliere il pulsante **Start** verde accanto a **calcolatore** per compilare ed eseguire il programma oppure premere **F5**.
@@ -144,7 +147,7 @@ Si inizierà con alcune operazioni matematiche di base su interi in C#.
 
     ![Finestra della console con visualizzati i risultati dell'operazione matematica sull'intero](./media/csharp-console-integer-math.png)
 
-1. **(Facoltativo)**  È possibile modificare l'operatore per modificare il risultato. Nella riga di codice `int c = a + b;` è ad esempio possibile modificare l'operatore `+` in `-` per la sottrazione, `*` per la moltiplicazione o `/` per la divisione. A questo punto, quando il programma sarà eseguito, il risultato cambierà.
+1. **(Facoltativo)**  È possibile modificare l'operatore per modificare il risultato. Nella riga di codice `+` è ad esempio possibile modificare l'operatore `int c = a + b;` in `-` per la sottrazione, `*` per la moltiplicazione o `/` per la divisione. A questo punto, quando il programma sarà eseguito, il risultato cambierà.
 
 1. Chiudere la finestra della console.
 
@@ -242,7 +245,7 @@ Come illustrato nello screenshot seguente, se si esegue l'app e si divide il num
 
 1. Sostituire ogni istanza della variabile `int` con `float`.
 
-   Assicurarsi di aver attivato/disattivato **Maiuscole/minuscole** (**Alt**+**C**) e **Parola intera** (**Alt** + **W**) nel controllo **Trova e sostituisci**.
+   Assicurarsi di aver attivato/disattivato **Maiuscole/minuscole** (**Alt**+**C**) e **Parola intera** (**Alt**+**W**) nel controllo **Trova e sostituisci**.
 
     ![Animazione del controllo Trova e sostituisci che illustra come modificare la variabile di tipo int in float](./media/find-replace-control-animation.gif)
 
@@ -268,18 +271,21 @@ Tuttavia, l'app genera solo un risultato decimale. Modificando ancora il codice,
 
 L'app Calculator di base è stata migliorata, ma non comprende ancora funzioni di sicurezza che consentono di gestire le eccezioni, ad esempio gli errori di input dell'utente.
 
-Ad esempio, se si tenta di dividere un numero per zero oppure di immettere un carattere alfabetico quando l'app si aspetta un carattere numerico (o viceversa), l'app smette di funzionare e restituisce un errore.
+Se ad esempio si prova a dividere un numero per zero o si immette un carattere alfa quando l'app prevede un carattere numerico (o viceversa), l'app potrebbe smettere di funzionare, restituire un errore o restituire un risultato imprevisto non numerico.
 
-Si procederà ora a esaminare alcuni errori di input comuni degli utenti, individuandoli nel debugger e risolvendoli nel codice.
+Verranno esaminati alcuni errori comuni di input dell'utente, che verranno individuati nel debugger se sono presenti e corretti nel codice.
 
->[!TIP]
->Per altre informazioni sul debugger e sul suo funzionamento, vedere la pagina [Presentazione del debugger di Visual Studio](../../debugger/debugger-feature-tour.md).
+> [!TIP]
+> Per altre informazioni sul debugger e sul suo funzionamento, vedere la pagina [Presentazione del debugger di Visual Studio](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Correggere l'errore di divisione per zero
 
-Quando si tenta di dividere un numero per zero, l'app console si blocca. Visual Studio mostra quindi qual è il problema nell'editor del codice.
+Quando si prova a dividere un numero per zero, l'app console potrebbe bloccarsi e quindi visualizzare l'errore nell'editor di codice.
 
    ![L'editor del codice di Visual Studio mostra l'errore di divisione per zero](./media/csharp-console-calculator-dividebyzero-error.png)
+
+> [!NOTE]
+> In alcuni casi l'app non si blocca e il debugger non visualizzerà un errore di divisione per zero. L'app potrebbe invece restituire un risultato imprevisto non numerico, ad esempio un simbolo di infinito. Viene comunque applicata la correzione del codice seguente.
 
 Ora il codice verrà modificato per gestire questo errore.
 

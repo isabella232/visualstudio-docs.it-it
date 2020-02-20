@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cb575969f232c9b4d60e7ddc93f9f727132951
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a231d8d02ce7432188053293684d09c7243dfd5e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718705"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506393"
 ---
 # <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage
 Di seguito sono riportati i problemi comuni che potrebbero verificarsi con il pacchetto VSPackage e suggerimenti per risolvere i problemi.
@@ -66,7 +66,7 @@ Di seguito sono riportati i problemi comuni che potrebbero verificarsi con il pa
 
    1. Trovare il CLSID del pacchetto VSPackage nella sezione pacchetti del registro di sistema:
 
-        HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<versione >* \Packages
 
    2. Verificare che il percorso specificato dalla sottochiave SatelliteDll sia corretto.
 
@@ -99,7 +99,7 @@ Di seguito sono riportati i problemi comuni che potrebbero verificarsi con il pa
 
     2. Aggiungere il **percorso del file di simboli (con estensione pdb)** :
 
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
+         `https://msdl.microsoft.com/download/symbols`
 
     3. Per migliorare le prestazioni, specificare una cartella della cache dei simboli, ad esempio:
 
@@ -119,7 +119,7 @@ Di seguito sono riportati i problemi comuni che potrebbero verificarsi con il pa
 
 2. Per il codice non gestito, trovare il CLSID del pacchetto VSPackage nel nodo del registro di sistema [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID:
 
-    HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<versione >* \CLSID
 
    Verificare che la voce InprocServer32 abbia il percorso corretto della dll del pacchetto VSPackage.
 

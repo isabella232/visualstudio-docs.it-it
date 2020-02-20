@@ -20,17 +20,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04f32fa0426039f50c0a0352ef0b04900d705a98
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0e54f68ab7e34f1cfb6abb228f552cc3792a8b7
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657435"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476923"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando si trascinano elementi dalla [finestra Origini dati](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) nel Progettazione Windows Form, viene rilevata una particolare considerazione: i nomi delle colonne nelle etichette di didascalia vengono riformattati in una stringa più leggibile quando vengono rilevate due o più parole da concatenare insieme. È possibile personalizzare la modalità di creazione di queste etichette, impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** in **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\ 10.0 \** chiave del registro di sistema Data Designer.
+Quando si trascinano elementi dalla [finestra Origini dati](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) nel Progettazione Windows Form, si verifica una particolare considerazione: i nomi delle colonne nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando vengono rilevate due o più parole da concatenare insieme. È possibile personalizzare la modalità di creazione di queste etichette, impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** nella chiave del registro di sistema **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\10.0\Data designer** .
 
 > [!NOTE]
 > Questa chiave del registro di sistema non esiste fino a quando non viene creata.
@@ -47,16 +47,14 @@ Quando si trascinano elementi dalla [finestra Origini dati](https://msdn.microso
 
  Nella tabella seguente sono elencate le impostazioni predefinite interne per questi valori del registro di sistema.
 
-|Elemento del registro di sistema|Valore predefinito|Descrizione|
+|Elemento del registro di sistema|Valore predefinito|Spiegazione|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\ \p{Ll}) (\\ \p{Lu}) &#124;_+|Corrisponde a un carattere minuscolo seguito da un carattere maiuscolo o un carattere di sottolineatura.|
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124;_+|Corrisponde a un carattere minuscolo seguito da un carattere maiuscolo o un carattere di sottolineatura.|
 |**SmartCaptionReplacement**|$1 $2|$1 rappresenta tutti i caratteri corrispondenti nelle prime parentesi dell'espressione e il $2 rappresenta tutti i caratteri corrispondenti nella seconda parentesi. La sostituzione è la prima corrispondenza, uno spazio e quindi la seconda corrispondenza.|
 |**SmartCaptionSuffix**|:|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name`, il suffisso lo rende `Company Name:`|
 
 > [!CAUTION]
 > È necessario prestare molta attenzione quando si esegue qualsiasi operazione nell'editor del registro di sistema. Eseguire il backup del registro di sistema prima di modificarlo. Se si utilizza l'editor del registro di sistema in modo errato, è possibile che si verifichino gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che i problemi causati dall'utilizzo errato dell'editor del registro di sistema possano essere risolti. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
->
-> Nell'articolo della Knowledge Base seguente sono contenute le istruzioni per eseguire il backup, la modifica e il ripristino del registro di sistema: [Descrizione del registro di sistema di Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-US; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Per modificare il comportamento di Smart Caption della finestra Origini dati
 

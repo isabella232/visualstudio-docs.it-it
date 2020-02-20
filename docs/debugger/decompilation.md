@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 46c6110cb977e3a309f27fc5a014522494f18c9a
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144779"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506522"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Genera codice sorgente da assembly .NET durante il debug
 
@@ -82,13 +82,13 @@ Quando si esegue il debug di codice decompilato da un assembly compilato con ott
 - Le variabili locali non possono avere nomi accurati.
 - Alcune variabili potrebbero non essere disponibili per la valutazione.
 
-Per altri dettagli, vedere il problema GitHub: [integrazione di IChsarpCompiler. Decompiler nel debugger di Visual](https://github.com/icsharpcode/ILSpy/issues/1901)Studio.
+Per altri dettagli, vedere il problema relativo a GitHub: [integrazione di icsharpcode. Decompiler nel debugger di Visual](https://github.com/icsharpcode/ILSpy/issues/1901)Studio.
 
 ### <a name="decompilation-reliability"></a>Affidabilità della decompilazione
 
 Una percentuale relativamente ridotta dei tentativi di decompilazione può causare un errore. Ciò è dovuto a un errore di riferimento null del punto di sequenza in ILSpy.  L'errore è stato mitigato intercettando questi problemi e il tentativo di decompilazione non riesce correttamente.
 
-Per altri dettagli, vedere il problema GitHub: [integrazione di IChsarpCompiler. Decompiler nel debugger di Visual](https://github.com/icsharpcode/ILSpy/issues/1901)Studio.
+Per altri dettagli, vedere il problema relativo a GitHub: [integrazione di icsharpcode. Decompiler nel debugger di Visual](https://github.com/icsharpcode/ILSpy/issues/1901)Studio.
 
 ### <a name="limitations-with-async-code"></a>Limitazioni con codice asincrono
 

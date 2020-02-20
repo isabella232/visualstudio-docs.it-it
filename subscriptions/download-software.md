@@ -6,18 +6,21 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Informazioni su come individuare e scaricare titoli software Microsoft inclusi nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: d6ce32b0478b145b7d1814efa3738664ee622cf5
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439166"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476830"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Download di titoli software nelle sottoscrizioni di Visual Studio
 A seconda della sottoscrizione di Visual Studio, può essere disponibile un'ampia gamma di titoli software Microsoft.  Questo articolo descrive come individuare e scaricare il software necessario per sfruttare al meglio la sottoscrizione. 
 
 > [!NOTE]
 > Solo i download inclusi con la sottoscrizione vengono visualizzati automaticamente nella pagina [Download](https://my.visualstudio.com/downloads/featured).  Se si possiede più di una sottoscrizione o appartenenza al programma, i download visualizzati saranno riferiti alla **sottoscrizione più elevata** di cui si è titolari, anche se si sta visualizzando una sottoscrizione diversa.  Ad esempio, se si dispone di una sottoscrizione di Visual Studio Enterprise e di una sottoscrizione di Visual Studio Professional associata allo stesso ID di accesso, i download visualizzati saranno quelli inclusi nella sottoscrizione dell'organizzazione, anche se attualmente si sta visualizzando vantaggi dell'abbonamento professionale.
+
+> [!NOTE]
+> Microsoft è a conoscenza di un problema relativo alla disponibilità dei codici Product Key di Office 365.  Si sta esaminando la causa e questo articolo verrà aggiornato quando il problema viene risolto. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Come trovare i download nel portale sottoscrittore?
 Quando si visita la pagina [Download](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) è possibile osservare i download popolari organizzati in gruppi per tipo di prodotto.  È possibile selezionare uno dei download popolari visualizzati o cercare qualsiasi prodotto tramite la barra di ricerca nella parte superiore della pagina.
@@ -53,7 +56,8 @@ Per altre informazioni sull'individuazione, sulla richiesta e sull'esportazione 
 - [Individuare e richiedere codici Product Key](find-keys.md)
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](/visualstudio/)
-- [Documentazione di Azure DevOps](/azure/devops/)
-- [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
