@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2be648703964328f9d678570137173429d84ed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 19da163c76724ae56c0e3d83f1ed795333d081d5
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115073"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77453395"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aggiornare Visual Studio alla versione più recente
 
@@ -94,7 +94,7 @@ Come nelle versioni precedenti di Visual Studio, è possibile usare il programma
 1. Aprire il programma di installazione. Il programma di installazione di Visual Studio potrebbe richiedere l'aggiornamento prima di continuare.
 
    > [!NOTE]
-   > In un computer che esegue Windows 10, il programma di installazione compare sotto la lettera **P** come **Programma di installazione di Visual Studio** ocome **Programma di installazione di Microsoft Visual Studio**.
+   > In un computer che esegue Windows 10, il programma di installazione si trova sotto la lettera **V** come il **Programma di installazione di Visual Studio** o sotto la lettera **M** come il **Programma di installazione di Microsoft Visual Studio**.
 
 1. Nella pagina **Prodotto** del programma di installazione cercare l'edizione di Visual Studio precedentemente installata.
 
@@ -150,7 +150,7 @@ Se si sceglie di ignorare una notifica, questa non viene più visualizzata da Vi
 1. Aprire il programma di installazione. Prima di continuare, potrebbe essere necessario aggiornare il programma di installazione. In questo caso, viene richiesto di effettuare questa operazione.
 
    > [!NOTE]
-   > In un computer che esegue Windows 10, il programma di installazione compare sotto la lettera **P** come **Programma di installazione di Visual Studio** ocome **Programma di installazione di Microsoft Visual Studio**.
+   > In un computer che esegue Windows 10, il programma di installazione si trova sotto la lettera **V** come il **Programma di installazione di Visual Studio** o sotto la lettera **M** come il **Programma di installazione di Microsoft Visual Studio**.
 
 1. Nella pagina **Prodotto** del programma di installazione cercare l'edizione di Visual Studio precedentemente installata.
 
@@ -166,7 +166,7 @@ Se si sceglie di ignorare una notifica, questa non viene più visualizzata da Vi
 
 È consigliabile eseguire l'aggiornamento alla [versione più recente](/visualstudio/releases/2019/release-notes/) di Visual Studio 2019, in modo da avere sempre a disposizione le funzionalità, le correzioni e i miglioramenti più recenti.
 
-Se Visual Studio 2019 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio 2019 non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente. Se attualmente si usa una versione diversa di Visual Studio, è possibile installare le [versioni affiancate di Visual Studio](../install/install-visual-studio-versions-side-by-side.md)o [disinstallare le versioni precedenti di Visual Studio](../install/uninstall-visual-studio.md).
 
 > [!IMPORTANT]
 > Per installare, aggiornare o modificare Visual Studio, è necessario accedere con un account con autorizzazioni amministrative. Per altre informazioni, vedere [Autorizzazioni utente e Visual Studio](../ide/user-permissions-and-visual-studio.md).
