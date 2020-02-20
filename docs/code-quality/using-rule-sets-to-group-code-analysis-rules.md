@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a49f208fe3c60dfb8b9e20c83675cc43f1efb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587173"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506461"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usare set di regole per raggruppare le regole di analisi del codice
 
@@ -24,7 +24,7 @@ Quando si configura l'analisi del codice in Visual Studio, è possibile sceglier
 
 È possibile personalizzare un set di regole aggiungendo o eliminando regole o modificando i livelli di gravità delle regole in modo che vengano visualizzati come avvisi o errori nel **Elenco errori**. I set di regole personalizzati possono soddisfare la necessità di un ambiente di sviluppo specifico. Quando si personalizza un set di regole, l'editor dei set di regole fornisce strumenti di ricerca e filtro che consentono di semplificare il processo.
 
-I set di regole sono disponibili per l' [analisi del codice gestito](analyzer-rule-sets.md), l' [analisi legacy del codice gestito](how-to-configure-code-analysis-for-a-managed-code-project.md)e [ C++ l'analisi del codice](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+I set di regole sono disponibili per l' [analisi del codice gestito](analyzer-rule-sets.md), l' [analisi legacy del codice gestito](how-to-configure-code-analysis-for-a-managed-code-project.md)e [ C++ l'analisi del codice](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 ## <a name="rule-set-format"></a>Formato set di regole
 
@@ -58,7 +58,7 @@ Il contenuto di un file con *estensione ruleset* è simile al codice XML seguent
 
 ## <a name="specify-a-rule-set-for-a-project"></a>Specificare un set di regole per un progetto
 
-Il set di regole per un progetto viene specificato dalla proprietà **CodeAnalysisRuleSet** nel file di progetto di Visual Studio. Ad esempio:
+Il set di regole per un progetto viene specificato dalla proprietà **CodeAnalysisRuleSet** nel file di progetto di Visual Studio. Ad esempio,
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

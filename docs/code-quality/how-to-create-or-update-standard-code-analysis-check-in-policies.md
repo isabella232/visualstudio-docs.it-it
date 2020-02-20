@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587537"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506500"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 
@@ -29,7 +29,7 @@ I criteri di archiviazione dell'analisi del codice vengono impostati nelle impos
 
 - Per il codice gestito, è possibile impostare i criteri di archiviazione specificando un *set* di regole contenente un subset delle regole di analisi del codice.
 
-- Per C/C++ code, in Visual Studio 2017 versione 15,6 e precedenti, i criteri di archiviazione richiedono l'esecuzione di tutte le regole di analisi del codice. È possibile aggiungere direttive del pre-processore per disabilitare regole specifiche per i singoli progetti di codice nel progetto DevOps di Azure. In 15,7 e versioni successive è possibile usare **/analyze: RuleSet** per specificare le regole da eseguire. Per ulteriori informazioni, vedere [utilizzo di set di regole per C++ specificare le regole da eseguire](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- Per C/C++ code, in Visual Studio 2017 versione 15,6 e precedenti, i criteri di archiviazione richiedono l'esecuzione di tutte le regole di analisi del codice. È possibile aggiungere direttive del pre-processore per disabilitare regole specifiche per i singoli progetti di codice nel progetto DevOps di Azure. In 15,7 e versioni successive è possibile usare **/analyze: RuleSet** per specificare le regole da eseguire. Per ulteriori informazioni, vedere [utilizzo di set di regole per C++ specificare le regole da eseguire](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 Dopo aver specificato i criteri di archiviazione per il codice gestito, i membri del team possono sincronizzare le impostazioni di analisi del codice per i progetti di codice nelle impostazioni dei criteri del progetto DevOps di Azure.
 
@@ -39,7 +39,7 @@ Dopo aver specificato i criteri di archiviazione per il codice gestito, i membri
 
 1. Nella finestra di dialogo **controllo del codice sorgente** selezionare la scheda **criteri di archiviazione** .
 
-1. Effettuare una delle seguenti operazioni:
+1. Esegui una delle operazioni seguenti:
 
     - Fare clic su **Aggiungi** per creare nuovi criteri di archiviazione.
 

@@ -1,5 +1,5 @@
 ---
-title: Element (Schema VSIX Language Pack) di licenza | Microsoft Docs
+title: Elemento License (schema del Language Pack VSIX) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,17 +8,17 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a079dee3fc01995d70f77a9fa9791a5ab0f42561
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680589"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477068"
 ---
-# <a name="license-element-vsix-language-pack-schema"></a>Elemento License (Schema del progetto VSIX Language Pack)
+# <a name="license-element-vsix-language-pack-schema"></a>Elemento License (schema del Language Pack VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Facoltativo. Il percorso di una versione localizzata del file di licenza per l'estensione.  
+Facoltativa. Percorso di una versione localizzata del file di licenza per l'estensione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -27,42 +27,42 @@ Facoltativo. Il percorso di una versione localizzata del file di licenza per l'e
 ```  
   
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
+ Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.  
   
 ### <a name="attributes"></a>Attributi  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|nessuno||  
+|None||  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|nessuno||  
+|None||  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obbligatorio. Fornisce l'elemento radice per un language pack VSIX.|  
+|[Elemento LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obbligatoria. Fornisce l'elemento radice per un Language Pack VSIX.|  
   
 ## <a name="text-value"></a>Valore di testo  
- Il percorso relativo del file di licenza localizzato da visualizzare.  
+ Percorso relativo del file di licenza localizzato da visualizzare.  
   
 ## <a name="remarks"></a>Note  
- Se il `License` elemento è definito, quindi il testo del file di licenza designato viene visualizzato durante l'installazione e l'utente deve accettare la licenza per continuare.  
+ Se viene definito l'elemento `License`, il testo del file di licenza designato viene visualizzato durante l'installazione e l'utente deve accettare la licenza per continuare.  
   
 ## <a name="element-information"></a>Informazioni sull'elemento  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    Spazio dei nomi    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
-|   Nome di schema   |                 Schema del Language Pack VSIX                 |
+|    Spazio dei nomi    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nome schema   |                 Schema del Language Pack VSIX                 |
 | File di convalida |                VSIXLanguagePackSchema.xsd                 |
 |  Può essere vuoto   |                      Non applicabile                       |
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento allo Schema VSX Language Pack](../extensibility/vsx-language-pack-schema-reference.md)   
- [Localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md)   
- [Riferimenti su VSIX Extension Schema 1.0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ Informazioni di [riferimento sullo schema del Language Pack VSX](../extensibility/vsx-language-pack-schema-reference.md)   
+ [Localizzazione dei pacchetti VSIX](../extensibility/localizing-vsix-packages.md)   
+ [Riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110))

@@ -1,5 +1,5 @@
 ---
-title: Impossibile connettersi a Microsoft Visual Studio Remote Debugging Monitor | Microsoft Docs
+title: Non è possibile connettersi al Microsoft Visual Studio Remote Debugging Monitor | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d62e7ce1c419a9c53e40e1ecf2f71497d60d7a23
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684826"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477055"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "65684826"
 Questo messaggio di errore viene visualizzato quando si immette un nome non valido per Visual Studio Remote Debugging Monitor nella finestra di dialogo **Connetti a processo** . Il nome di Remote Debugging Monitor in genere coincide con il nome del computer con il quale si desidera stabilire la connessione per il debug remoto. Questo messaggio può venire visualizzato se il computer remoto non esiste nella rete, Remote Debugging Monitor non è configurato correttamente nel computer remoto o il computer remoto non è accessibile a causa di problemi di rete o della presenza di un firewall.  
   
 > [!IMPORTANT]
-> Se si ritiene di aver ricevuto il messaggio a causa di un bug del prodotto, segnalare il problema a [Invia smile](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)di Visual Studio. Per ottenere ulteriore assistenza, vedere [Talk to Us](../ide/talk-to-us.md) per le modalità di contatto di Microsoft.  
+> Per ottenere ulteriore assistenza, vedere [Talk to Us](../ide/talk-to-us.md) per le modalità di contatto di Microsoft.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Il messaggio è stato visualizzato durante un debug locale  
  Se si riceve questo messaggio durante un debug locale, il problema potrebbe essere causato dal software antivirus o da un firewall di terze parti. Visual Studio è un'applicazione a 32 bit, quindi usa la versione a 64 bit del debugger remoto per eseguire il debug delle applicazioni a 64 bit. I due processi comunicano usando la rete locale nel computer locale. Il traffico di rete resta all'interno del computer, ma è possibile che un software per la sicurezza di terze parti blocchi la comunicazione.  
@@ -38,7 +38,7 @@ Questo messaggio di errore viene visualizzato quando si immette un nome non vali
   
 ## <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Assicurarsi che Visual Studio Remote Debugging Monitor sia installato e in esecuzione nel computer remoto. Per informazioni su come installarlo e il debugger remoto, vedere [debug remoto](../debugger/remote-debugging.md).  
+- Assicurarsi che Visual Studio Remote Debugging Monitor sia installato e in esecuzione nel computer remoto. Per informazioni sul debugger remoto e su come installarlo, vedere [Remote Debugging](../debugger/remote-debugging.md).  
   
 - In Visual Studio esaminare le proprietà del progetto (**Progetto/Proprietà/Debug**). Verificare che il nome indicato in **Nome server remoto** sia corretto.  
   
@@ -48,9 +48,10 @@ Questo messaggio di errore viene visualizzato quando si immette un nome non vali
  Provare a eseguire il [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) del computer remoto. Se non risponde al ping, neanche gli strumenti remoti potranno connettersi. Provare a riavviare il computer remoto, altrimenti assicurarsi che sia configurato correttamente sulla rete.  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>La versione del debugger remoto non corrisponde alla versione di Visual Studio  
- La versione di Visual Studio in esecuzione in locale deve corrispondere alla versione di Remote Debugging Monitor in esecuzione nel computer remoto. Per risolvere questo problema, scaricare e installare la versione corrispondente di Remote Debugging Monitor. Andare nell' [Area download](http://www.microsoft.com/download) per trovare la versione corretta per il debugger remoto.  
-  
+ La versione di Visual Studio in esecuzione in locale deve corrispondere alla versione di Remote Debugging Monitor in esecuzione nel computer remoto. Per risolvere questo problema, scaricare e installare la versione corrispondente di Remote Debugging Monitor. Passare alle [sottoscrizioni di Visual Studio](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) per trovare la versione corretta del debugger remoto per la versione di Visual Studio.
+
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Il computer locale e quello remoto hanno modalità di autenticazione diverse  
+
  Il computer locale e quello remoto devono usare la stessa modalità di autenticazione. Per risolvere questo problema, assicurarsi che entrambi i computer usino la stessa modalità di autenticazione. È possibile modificare la modalità di autenticazione nel debugger remoto nella finestra di dialogo **Strumenti/Opzioni** .  
   
  Per altre informazioni sulle modalità di autenticazione, vedere [Panoramica di Autenticazione di Windows](https://technet.microsoft.com/library/hh831472.aspx).  
@@ -60,7 +61,7 @@ Questo messaggio di errore viene visualizzato quando si immette un nome non vali
   
 - Arrestare il debugger remoto e riavviarlo con l'account in uso nel computer locale.  
   
-- Avviare il debugger remoto dalla riga di comando con il parametro **/allow \<nomeutente>**: `msvsmon /allow <username@computer>`  
+- Avviare il debugger remoto dalla riga di comando con il parametro **/allow \<nomeutente>** : `msvsmon /allow <username@computer>`  
   
 - È possibile aggiungere l'utente alle autorizzazioni del debugger remoto, nella finestra del debugger remoto, **Strumenti/Autorizzazioni**.  
   
@@ -84,4 +85,4 @@ Questo messaggio di errore viene visualizzato quando si immette un nome non vali
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
 ## <a name="see-also"></a>Vedere anche  
- [Remote Debugging](../debugger/remote-debugging.md)
+ [Debug remoto](../debugger/remote-debugging.md)

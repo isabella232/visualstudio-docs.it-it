@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: feae3dbc18f0b009b88872c05d43e9a6c280aef5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d590bf618693a5ced1aa17969b888c0fff130c4c
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656175"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476951"
 ---
 # <a name="schema-cache"></a>Cache degli schemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,25 +25,25 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoo
 
  Nella tabella seguente vengono descritti gli schemi installati con l'editor XML.
 
-|     Nomefile      |                                                      Descrizione                                                      |
+|     Nome file      |                                                      Descrizione                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
 |    catalog.xsd    |             Schema per i file del catalogo schemi dell'editor XML. Per informazioni sui cataloghi degli schemi, vedere di seguito.             |
-| DotNetConfig.xsd  |                 Schema per i file Web. config, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>".                 |
-|    msbuild.xsd    |              Schema per MSBuild creare file, "<http://schemas.microsoft.com/developer/msbuild/2003>".              |
+| DotNetConfig.xsd  |                 Schema per i file Web. config `http://schemas.microsoft.com/.NETConfiguration/v2.0`.                 |
+|    msbuild.xsd    |              Schema per MSBuild creare file, `http://schemas.microsoft.com/developer/msbuild/2003`.              |
 |    msdata.xsd     | Schema per le annotazioni XSD aggiunte dalla classe <xref:System.Data.DataSet>, "urn:schemas-microsoft-com:xml-msdata". |
 |     msxsl.xsd     |                  Schema per le estensioni del blocco di script Microsoft XSLT, urn:schemas-microsoft-com:xslt.                   |
 | SnippetFormat.xsd |                 Schema per i file XML del frammento di codice. Per esempi di schema, vedere %InstallDir%\VC#\Expansions.                 |
-|    Soap1.1.xsd    |            Schema per Simple Object Access Protocol (SOAP) 1,1, http://schemas.xmlsoap.org/soap/envelope/.            |
+|    Soap1.1.xsd    |            Schema per Simple Object Access Protocol (SOAP) 1,1, `http://schemas.xmlsoap.org/soap/envelope/`.            |
 |    Soap1.2.xsd    |                                     Schema per il protocollo SOAP (Simple Object Access Protocol) 1.2.                                     |
-| SiteMapSchema.xsd |            Schema per il file XML della Sitemap ASP.NET, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>".             |
-|     wsdl.xsd      |                    Schema per il linguaggio di descrizione del servizio Web, http://schemas.xmlsoap.org/wsdl/.                     |
-|     xenc.xsd      |                            Schema per la crittografia XML, http://www.w3.org/2000/09/xmldsig#.                             |
-|     xhtml.xsd     |                                    Schema per http://www.w3.org/1999/xhtml XHTML.                                     |
-|     xlink.xsd     |                                  Schema per XLink 1.0, http://www.w3.org/1999/xlink.                                   |
-|      xml.xsd      |              Schema che descrive gli attributi XML: Space e XML: lang http://www.w3.org/XML/1998/namespace.               |
-|    xmlsig.xsd     |                        Schema per le firme digitali XML, http://www.w3.org/2000/09/xmldsig#.                         |
-|   xsdschema.xsd   |                            Schema che descrive lo stesso XSD, http://www.w3.org/2001/XMLSchema.                            |
-|     xslt.xsd      |                           Schema per le trasformazioni XML, http://www.w3.org/1999/XSL/Transform.                            |
+| SiteMapSchema.xsd |            Schema per il file XML della Sitemap ASP.NET, `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`.             |
+|     wsdl.xsd      |                    Schema per il linguaggio di descrizione del servizio Web, `http://schemas.xmlsoap.org/wsdl/`.                     |
+|     xenc.xsd      |                            Schema per la crittografia XML, `http://www.w3.org/2000/09/xmldsig#`.                             |
+|     xhtml.xsd     |                                    Schema per `http://www.w3.org/1999/xhtml`XHTML.                                     |
+|     xlink.xsd     |                                  Schema per XLink 1.0, `http://www.w3.org/1999/xlink`.                                   |
+|      xml.xsd      |              Schema che descrive gli attributi XML: Space e XML: lang `http://www.w3.org/XML/1998/namespace`.               |
+|    xmlsig.xsd     |                        Schema per le firme digitali XML, `http://www.w3.org/2000/09/xmldsig#`.                         |
+|   xsdschema.xsd   |                            Schema che descrive lo stesso XSD, `http://www.w3.org/2001/XMLSchema`.                            |
+|     xslt.xsd      |                           Schema per le trasformazioni XML, `http://www.w3.org/1999/XSL/Transform`.                            |
 
 ## <a name="updating-schemas-in-the-cache"></a>Aggiornamento degli schemi nella cache
  L'editor carica la directory della cache di schema quando il package editor XML viene caricato e verifica le eventuali modifiche durante l'esecuzione. Se è stato aggiunto uno schema, esso viene caricato automaticamente in un indice di schemi noti in memoria. Se è stato rimosso uno schema, esso viene automaticamente rimosso dall'indice in memoria. Se è stato aggiornato uno schema, esso invalida automaticamente la cache degli schemi in memoria.
@@ -69,7 +69,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoo
 
 - ProgramFiles
 
-- Programs
+- Programmi
 
 - CommonProgramFiles
 
@@ -96,7 +96,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoo
 
  Nell'esempio seguente è stato creato un nuovo elemento `Schema` che usa la variabile % LCID% per fare riferimento allo schema localizzato.
 
-```
+```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"
   targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema"/>
 ```
@@ -109,7 +109,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoo
 
 #### <a name="to-change-the-schema-cache-location"></a>Per modificare il percorso della cache degli schemi
 
-1. Scegliere **Opzioni**dal menu **strumenti** .
+1. Nel menu **Strumenti**, selezionare **Opzioni**.
 
 2. Espandere **editor di testo**, espandere **XML**, quindi fare clic su **varie**.
 
@@ -123,7 +123,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoo
 
 2. Aggiungere un nuovo elemento `<Catalog href="…"/>` che fa riferimento alla directory degli schemi aggiuntivi.
 
-3. Salvare le modifiche.
+3. Fare clic su Salva per salvare le modifiche.
 
      Il catalogo viene ricaricato automaticamente.
 
