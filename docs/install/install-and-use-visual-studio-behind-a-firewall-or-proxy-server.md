@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 129a5551d04e8e9552b6d788f066c7c9df636f67
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
-ms.translationtype: HT
+ms.openlocfilehash: 4058c75b2282b6fb77c3026c3667a470d6b9fd92
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77453369"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476880"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -135,7 +135,7 @@ Per assicurarsi di avere accesso a tutti gli elementi desiderati quando si usano
 | Visual Studio Online | \*. online.visualstudio.com | https | 443 | Usato per chiamare le API di Visual Studio online |
 | Acquisizione di tipi automatici JavaScript | registry.npmjs.org | https | 443 | Usato per installare le definizioni dei tipi TypeScript per fornire IntelliSense per le librerie JavaScript più diffuse |
 | Servizio licenze per sottoscrizioni di Visual Studio | app.vssps.visualstudio.com/apis/Licensing/ClientRights | https | 443 | Licenze per l'attivazione online |
-| Debugger | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.commsdl.microsoft.com/download/symbols | https | 443 | 1. <br>Usato per il download dei bit del debugger per il debug di .NET Core in UNIX/MacOS tramite SSH <br><br>2. <br>Usato per il download dei bit del debugger per il debug del contenitore Docker di Windows remoto<br><br> 3. utilizzata per l'esecuzione di un'istruzione di origine .NET Framework <br><br> 4. <br>(Se l'utente sceglie di partecipare) Usato per il download dei simboli pubblicati nel server di simboli nuget.org.<br><br> 5. Se si sceglie di usare per scaricare i simboli e i file binari MS, potrebbe essere necessario anche per il debug del codice gestito nei dump |
+| Debugger | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https | 443 | 1. <br>Usato per il download dei bit del debugger per il debug di .NET Core in UNIX/MacOS tramite SSH <br><br>2. <br>Usato per il download dei bit del debugger per il debug del contenitore Docker di Windows remoto<br><br> 3. utilizzata per l'esecuzione di un'istruzione di origine .NET Framework <br><br> 4. <br>(Se l'utente sceglie di partecipare) Usato per il download dei simboli pubblicati nel server di simboli nuget.org.<br><br> 5. Se si sceglie di usare per scaricare i simboli e i file binari MS, potrebbe essere necessario anche per il debug del codice gestito nei dump |
 | Visual Studio Online| \*. online.visualstudio.com | https | 443 | Usato per chiamare le API di Visual Studio online |
 | Pubblicazione di app Android Novell | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | https | 443 | Usato per interagire con il servizio Google Play Store per pubblicare/caricare applicazioni Android Novell direttamente da Visual Studio. |
 | Registro Azure Container | *. azurecr.io | https | 443 | Accedere ai registri contenitori ospitati in Azure per la configurazione di pipeline CICD |
