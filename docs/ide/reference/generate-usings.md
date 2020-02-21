@@ -1,5 +1,5 @@
 ---
-title: Generare direttive using
+title: Generare istruzioni using
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -11,12 +11,12 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: 78786e6e6e7a8e5d8a8766138cb1a54a49416f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3b3435e10d6bb9a71fd16b9286759b136c167f4
+ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610883"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77544550"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Aggiungere istruzioni using mancanti in Visual Studio
 
@@ -26,7 +26,7 @@ Questa generazione di codice si applica a:
 
 **Cosa:** Consente di aggiungere immediatamente le [direttive](/dotnet/csharp/language-reference/keywords/using-directive) Import o using necessarie per il codice di copia e incolla.
 
-**Quando:** È pratica comune copiare il codice da diverse posizioni nel progetto o in altre origini e incollarlo in un nuovo codice. Questa azione rapida trova le direttive Import mancanti per il codice di copia e incolla e quindi richiede di aggiungerle.
+**Quando:** È pratica comune copiare il codice da diverse posizioni nel progetto o in altre origini e incollarlo in un nuovo codice. Questa azione rapida trova le direttive Import mancanti per il codice di copia e incolla e quindi richiede di aggiungerle. Questa correzione del codice può anche aggiungere riferimenti da progetto a progetto.
 
 **Motivo:** Poiché l'azione rapida aggiunge automaticamente le importazioni necessarie, non è necessario copiare manualmente le direttive `using` richieste dal codice.
 
@@ -39,7 +39,7 @@ Questa generazione di codice si applica a:
 
 2. Selezionare CTRL+. per aprire il menu **Azioni rapide e refactoring**.
 
-    ![Generare direttive using](media/generate-using-codefix.png)
+    ![Generare istruzioni using](media/generate-using-codefix.png)
 
 3. Selezionare **con \<riferimento\>;** per aggiungere il riferimento mancante.
 
