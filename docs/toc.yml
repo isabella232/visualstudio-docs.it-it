@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: Aggiungere un parametro a un metodo
                   href: ide/reference/add-parameter.md
+                - name: Generare un campo privato dal costruttore
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: Generare un override
                   href: ide/reference/generate-override.md
                 - name: Generare override dei metodi Equals e GetHashCode
@@ -374,7 +376,9 @@
                   href: ide/reference/extract-interface.md
                 - name: Estrai metodo
                   href: ide/reference/extract-method.md
-                - name: Generazione di un parametro
+                - name: Estrai funzione locale
+                  href: ide/reference/extract-local-function.md
+                - name: Generare un parametro
                   href: ide/reference/generate-parameter.md
                 - name: Variabile temporanea inline
                   href: ide/reference/inline-temporary-variable.md
@@ -386,6 +390,8 @@
                   href: ide/reference/invert-if-statement.md
                 - name: Opzioni di refactoring delle funzioni locali statiche
                   href: ide/reference/static-local-function-refactor-options.md
+                - name: Rendere il membro statico
+                  href: ide/reference/make-member-static.md
                 - name: Spostare la dichiarazione vicino al riferimento
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Spostare un tipo nel file corrispondente
@@ -416,10 +422,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: 'Assegnazioni, variabili e parametri di valori non usati'
                   href: ide/reference/unused-values-parameters.md
-                - name: Wrapping e allineamento delle catene di chiamate
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: 'Impostare il ritorno a capo automatico, il rientro e l''allineamento dei parametri'
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: 'Impostare il ritorno a capo automatico, il rientro e l''allineamento dei refactoring'
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: 'Procedura dettagliata: Generare codice dall''utilizzo'
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense
