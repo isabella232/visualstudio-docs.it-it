@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b53a71a0a8215ae6bc9af47f9fe2a0ff911b5
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: b1d2512c14c0630d2268adfa465e092555150943
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806885"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557876"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 Se si usa Internet Information Services (IIS) in Windows Server e la distribuzione contiene un tipo di file non riconosciuto da Windows, ad esempio un file di Microsoft Word, IIS rifiuterà di trasmettere tale file e la distribuzione avrà esito negativo.
@@ -49,7 +49,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 ## <a name="clickonce-and-proxy-authentication"></a>Autenticazione ClickOnce e proxy
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fornisce il supporto per l'autenticazione proxy integrata di Windows a partire da .NET Framework 3,5. Non sono necessarie direttive machine. config specifiche. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non fornisce supporto per altri protocolli di autenticazione, ad esempio di base o digest.
 
- Per abilitare questa funzionalità, è anche possibile applicare un hotfix a .NET Framework 2,0. Per ulteriori informazioni, vedere http://go.microsoft.com/fwlink/?LinkId=158730.
+ Per abilitare questa funzionalità, è anche possibile applicare un hotfix a .NET Framework 2,0. Per ulteriori informazioni, vedere [correzione: messaggio di errore quando si tenta di installare un'applicazione ClickOnce creata nel .NET Framework 2,0 in un computer client configurato per l'utilizzo di un server proxy: "autenticazione proxy obbligatoria"](https://support.microsoft.com/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that).
 
  Per ulteriori informazioni, vedere [\<elemento > defaultProxy (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
@@ -75,12 +75,12 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 ```
 
 > [!NOTE]
-> È possibile eseguire l'autenticazione NTLM (NT Challenge-Response) se il sito richiede credenziali diverse dalle credenziali predefinite e, nella finestra di dialogo sicurezza, si fa clic su **OK** quando viene richiesto se si desidera salvare le credenziali fornite per sessioni future. Questa soluzione alternativa non funzionerà tuttavia per l'autenticazione di base.
+> È possibile eseguire l'autenticazione NTLM (NT Challenge-Response) se il sito richiede credenziali diverse da quelle predefinite e, nella finestra di dialogo sicurezza, si fa clic su **OK** quando viene richiesto se si desidera salvare le credenziali fornite per le sessioni future. Questa soluzione alternativa non funzionerà tuttavia per l'autenticazione di base.
 
 ## <a name="use-third-party-web-servers"></a>Usare server Web di terze parti
  Se si distribuisce un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da un server Web diverso da IIS, potrebbe verificarsi un problema se il server restituisce il tipo di contenuto non corretto per i file [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] chiave, ad esempio il manifesto di distribuzione e il manifesto dell'applicazione. Per risolvere questo problema, vedere la documentazione della guida del server Web per informazioni su come aggiungere nuovi tipi di contenuto al server e assicurarsi che tutti i mapping dell'estensione di file elencati nella tabella seguente siano disponibili.
 
-|Estensione del file|Tipo di contenuto|
+|Estensione del nome di file|Tipo di contenuto|
 |-------------------------|------------------|
 |`.application`|`application/x-ms-application`|
 |`.manifest`|`application/x-ms-manifest`|
@@ -118,7 +118,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 
 - Se si crea un tipo MIME con estensione "<em>" e il tipo MIME "Application/ottetto-Stream", sarà possibile scaricare i file del tipo di file non bloccato. Tuttavia, i tipi di file bloccati, ad esempio *. aspx</em> e *. asmx* , non possono essere scaricati.
 
-  Per istruzioni specifiche sulla configurazione dei tipi MIME in Windows Server, vedere l'articolo della Microsoft Knowledge base KB326965, "IIS 6,0 non serve tipi MIME sconosciuti" in [http://support.microsoft.com/default.aspx?scid=kb; en-US; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
+  Per istruzioni specifiche sulla configurazione dei tipi MIME in Windows Server, vedere [come aggiungere un tipo MIME a un sito Web o a un'applicazione](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application).
 
 ## <a name="content-type-mappings"></a>Mapping dei tipi di contenuto
  Quando si pubblica su HTTP, il tipo di contenuto (noto anche come tipo MIME) per il file *. Application* deve essere "Application/x-ms-application". Se nel server è installato .NET Framework 2,0, questo verrà impostato automaticamente. Se questo non è installato, è necessario creare un'associazione di tipo MIME per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione vroot (o intero server).

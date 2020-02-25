@@ -1,8 +1,8 @@
 ---
-title: Misurare l'utilizzo della CPU dalla riga di comando
-description: Misurare le prestazioni della CPU nell'applicazione dalla riga di comando.
+title: Misurare le prestazioni dalla riga di comando
+description: Misurare le prestazioni della CPU e managed memory l'utilizzo nell'applicazione dalla riga di comando.
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, command-line
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972418"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558129"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Misurare le prestazioni dell'applicazione dalla riga di comando
 
@@ -27,7 +27,7 @@ ms.locfileid: "62972418"
 
 Nell'esempio descritto in questo articolo si raccolgono informazioni sulle prestazioni di Blocco note, ma lo stesso metodo può essere usato per profilare qualsiasi processo.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 * Visual Studio 2019 Preview 3 o versioni successive
 
@@ -74,7 +74,7 @@ Per praticità, è possibile archiviare le informazioni in un file di configuraz
 ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
 * Configurazioni CpuUsage (Base/Alto/Basso) che corrispondono ai dati raccolti per lo strumento di profilatura [Utilizzo CPU](../profiling/cpu-usage.md).
-* Configurazioni DotNetObjectAlloc (Base/Basso) che corrispondono ai dati raccolti per lo [strumento di allocazione degli oggetti .NET](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-version-15-8-preview-3/#tooling).
+* Configurazioni DotNetObjectAlloc (Base/Basso) che corrispondono ai dati raccolti per lo [strumento di allocazione degli oggetti .NET](../profiling/dotnet-alloc-tool.md).
 
 Le configurazioni Base/Basso/Alto fanno riferimento alla frequenza di campionamento. Ad esempio, il valore Basso corrisponde a 100 campioni al secondo e Alto corrisponde a 4.000 campioni al secondo.
 

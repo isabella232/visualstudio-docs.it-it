@@ -21,23 +21,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed57982fb177a49ed89bbe601d753fe155aba22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596086"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558160"
 ---
 # <a name="copy-task"></a>Copy (attività)
 Copia i file in un nuovo percorso del file system.
 
 ## <a name="parameters"></a>Parametri
-Nella tabella che segue vengono descritti i parametri dell'attività `Copy` .
+Nella tabella che segue vengono descritti i parametri dell'attività `Copy`.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|`CopiedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene gli elementi copiati correttamente.|
-|`DestinationFiles`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica l'elenco di file in cui copiare i file di origine. Dovrebbe esistere un mapping uno-a-uno tra questo elenco e quello specificato nel parametro `SourceFiles`. In altri termini, il primo file specificato in `SourceFiles` verrà copiato nel primo percorso specificato in `DestinationFiles`e così via.|
+|`CopiedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene gli elementi copiati correttamente, *inclusi* quelli che non sono stati effettivamente copiati, ma sono stati ignorati perché sono già aggiornati e `SkipUnchangedFiles` è stato `true`.|
+|`DestinationFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica l'elenco di file in cui copiare i file di origine. Dovrebbe esistere un mapping uno-a-uno tra questo elenco e quello specificato nel parametro `SourceFiles`. In altri termini, il primo file specificato in `SourceFiles` verrà copiato nel primo percorso specificato in `DestinationFiles`e così via.|
 |`DestinationFolder`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica la directory in cui si vogliono copiare i file. Deve trattarsi di una directory, non di un file. Se la directory non esiste, viene creata automaticamente.|
 |`OverwriteReadOnlyFiles`|Parametro `Boolean` facoltativo.<br /><br /> Sovrascrivi file anche se sono contrassegnati come file di sola lettura|
 |`Retries`|Parametro `Int32` facoltativo.<br /><br /> Specifica il numero di tentativi da eseguire per la copia, se tutti i tentativi precedenti hanno avuto esito negativo. Il valore predefinito è zero.<br /><br /> **Nota:** La ripetizione dei tentativi può nascondere un problema di sincronizzazione nel processo di compilazione.|
@@ -46,7 +46,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Copy` .
 |`SourceFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da copiare.|
 |`UseHardlinksIfPossible`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, vengono creati dei collegamenti reali per i file copiati invece di copiare i file.|
 
-## <a name="warnings"></a>Warnings
+## <a name="warnings"></a>Avvisi
 Gli avvisi vengono registrati, inclusi:
 
 - `Copy.DestinationIsDirectory`
@@ -65,10 +65,10 @@ Gli avvisi vengono registrati, inclusi:
 
 - `Copy.RemovingReadOnlyAttribute`
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 È necessario specificare il parametro `DestinationFolder` o `DestinationFiles`, ma non entrambi. Se vengono specificati entrambi, l'attività avrà esito negativo e verrà registrato un errore.
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` vengono copiati nella cartella *c:\MyProject\Destination*.
