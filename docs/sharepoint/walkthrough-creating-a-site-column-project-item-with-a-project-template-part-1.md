@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 843d56482a82c2a8210de50455753c9703698503
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189164"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557838"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Procedura dettagliata: creare un elemento di progetto colonna del sito con un modello di progetto, parte 1
   I progetti SharePoint sono contenitori per uno o più elementi del progetto SharePoint. Per estendere il sistema del progetto SharePoint in Visual Studio, è possibile creare tipi di elemento di progetto SharePoint personalizzati e quindi associarli a un modello di progetto. In questa procedura dettagliata verrà definito un tipo di elemento di progetto per la creazione di una colonna del sito, quindi verrà creato un modello di progetto che può essere utilizzato per creare un nuovo progetto che contiene un elemento di progetto colonna del sito.
@@ -45,7 +45,7 @@ ms.locfileid: "73189164"
 
 - Edizioni supportate di Microsoft Windows, SharePoint e [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-- Oggetto [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Questa procedura dettagliata usa il modello di **progetto VSIX** nell'SDK per creare un pacchetto VSIX per distribuire l'elemento di progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Questa procedura dettagliata usa il modello di **progetto VSIX** nell'SDK per creare un pacchetto VSIX per distribuire l'elemento di progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   Per completare la procedura dettagliata, è utile, ma non necessario, conoscere il concetto seguente:
 
@@ -431,7 +431,7 @@ ms.locfileid: "73189164"
 
    - Aggiunge `ProjectItem` elementi per ogni Fileche è incluso in ogni istanza del progetto.
 
-   - USA lo spazio dei nomi "<http://schemas.microsoft.com/developer/vstemplate/2005>". Altri file di progetto in questa soluzione usano lo spazio dei nomi "<http://schemas.microsoft.com/developer/msbuild/2003>". Di conseguenza, verranno generati XML Schema messaggi di avviso, ma è possibile ignorarli in questa procedura dettagliata.
+   - USA lo spazio dei nomi `http://schemas.microsoft.com/developer/vstemplate/2005`. Gli altri file di progetto in questa soluzione utilizzano lo spazio dei nomi `http://schemas.microsoft.com/developer/msbuild/2003`. Di conseguenza, verranno generati XML Schema messaggi di avviso, ma è possibile ignorarli in questa procedura dettagliata.
 
      Per ulteriori informazioni sul contenuto dei file con *estensione vstemplate* , vedere [riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
@@ -702,7 +702,7 @@ ms.locfileid: "73189164"
 
 6. In **Esplora soluzioni**scegliere il nodo **Field1** , quindi premere il tasto **F4** .
 
-     Verrà visualizzata la finestra **Proprietà** .
+     Si aprirà la finestra **Proprietà**.
 
 7. Nell'elenco proprietà verificare che la proprietà **esempio** di proprietà sia visualizzata.
 

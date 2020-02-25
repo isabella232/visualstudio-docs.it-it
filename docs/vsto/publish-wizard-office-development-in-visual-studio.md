@@ -18,50 +18,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7879ad7cf18c3d09fddbab3923296e0896688af9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447064"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558182"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Pubblicazione guidata (sviluppo per Office in Visual Studio)
-  Usare la **pubblicazione guidata** per copiare i file della soluzione in una posizione specificata, creare i file manifesto e creare un programma di installazione.
+  Usare la **pubblicazione guidata** per copiare i file di soluzione in un percorso specificato, creare i file manifesto e creare un programma di installazione.
 
- Per accedere a questa procedura guidata, scegliere il **compilare** menu, scegliere **Publish** *SolutionName*. È possibile accedere anche il **pubblicazione guidata** dalla **Esplora soluzioni**. Aprire il menu di scelta rapida per il nodo del progetto e quindi scegliere **pubblica**.
+ Per accedere a questa procedura guidata, scegliere **pubblica** *soluzione*dal menu **Compila** . È inoltre possibile accedere alla **pubblicazione guidata** da **Esplora soluzioni**. Aprire il menu di scelta rapida per il nodo del progetto, quindi scegliere **pubblica**.
 
  Ogni sezione seguente descrive una pagina della procedura guidata.
 
-## <a name="where-do-you-want-to-publish-the-application"></a>In cui si desidera pubblicare l'applicazione?
- **Specificare il percorso per pubblicare l'applicazione** necessari. Percorso di pubblicazione è la directory in cui il **pubblicazione guidata** copia i file della soluzione, ad esempio i manifesti, gli assembly, il certificato temporaneo e altri file dalla compilazione. È necessario l'accesso in scrittura a questa directory.
+## <a name="where-do-you-want-to-publish-the-application"></a>Scegliere la posizione in cui pubblicare l'applicazione.
+ **Specificare il percorso in cui pubblicare l'applicazione** Obbligatorio. Il percorso di pubblicazione è la directory in cui la **pubblicazione guidata** copia i file della soluzione, ad esempio manifesti, assembly, certificati temporanei e altri file dalla compilazione. È necessario l'accesso in scrittura a questa directory.
 
- Digitare il percorso come un percorso su disco, una condivisione file, un sito FTP o URL del sito web o il **esplorare** per cercare il percorso. Il percorso può essere nei seguenti formati:
+ Digitare il percorso come percorso del disco, condivisione file, sito FTP o URL del sito Web oppure fare clic sul pulsante **Sfoglia** per cercare il percorso. Il percorso può essere in questi formati:
 
-- Percorso relativo o assoluto nello standard Windows formato, ad esempio *C:\Deploy\MyApplication* oppure *\MyApplication*.
+- Percorso relativo o assoluto in formato Windows standard, ad esempio *c:\distribuzione\applicazione* o *\applicazione*.
 
-- Un percorso Universal Naming Convention (UNC), ad esempio  *\\\ServerName\MyApplication\\* .
+- Un percorso di Universal Naming Convention (UNC), ad esempio *\\\ServerName\MyApplication\\* .
 
-- Un URL di un sito web del sito, ad esempio http://www.microsoft.com/MyApplication.
+- URL di un sito Web, ad esempio `http://www.contoso.com/MyApplication`.
 
-  Per impostazione predefinita, è il percorso di pubblicazione *http://localhost/projectname/* se è installato IIS o la directory Publish \ se IIS non è installato.
+  Per impostazione predefinita, il percorso di pubblicazione viene *http://localhost/projectname/* se IIS è installato o la directory publish \ se IIS non è installato.
 
 > [!NOTE]
-> Se il computer di destinazione è in esecuzione Windows Vista, esistono ulteriori considerazioni. È necessario essere un amministratore nel computer Windows Vista per utilizzare l'opzione di pubblicazione locale. Inoltre, il percorso predefinito è sempre il *pubblicare\\*  directory, indipendentemente dal fatto che è installato IIS.
+> Se nel computer di destinazione è in esecuzione Windows Vista, sono presenti ulteriori considerazioni. Per utilizzare l'opzione di pubblicazione locale, è necessario essere un amministratore del computer con Windows Vista. Inoltre, il percorso predefinito è sempre la directory *\\di pubblicazione* , indipendentemente dal fatto che sia installato IIS.
 
-## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Che cos'è il percorso di installazione predefinito sul computer degli utenti finali?
- Il percorso di installazione è facoltativo. Se si preferisce, è possibile impostare il percorso di installazione in un secondo momento. Per informazioni dettagliate, vedere [Procedura: Modificare il percorso di installazione di una soluzione Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Qual è il percorso di installazione predefinito nei computer degli utenti finali?
+ Il percorso di installazione è facoltativo. Se si preferisce, è possibile impostare il percorso di installazione in un secondo momento. Per informazioni dettagliate, vedere [procedura: modificare il percorso di installazione di una soluzione Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
 
- Il percorso di installazione è la directory da cui l'utente finale installerà la personalizzazione. È anche il percorso usato dalla soluzione per controllare la disponibilità di aggiornamenti. Il **pubblicazione guidata** distribuisce la soluzione in questa posizione, a meno che il percorso è identico a quello immesso nella **specificare il percorso per pubblicare l'applicazione** casella sulla pagina precedente.
+ Il percorso di installazione è la directory da cui l'utente finale installerà la personalizzazione. È anche il percorso usato dalla soluzione per controllare la disponibilità di aggiornamenti. La **pubblicazione guidata** non distribuisce la soluzione in questo percorso, a meno che il percorso non corrisponda a quello immesso nella casella **specificare il percorso di pubblicazione dell'applicazione** nella pagina precedente.
 
- **Da un sito Web** specificare l'URL che gli utenti finali deve seguire per installare la soluzione.
+ **Da un sito Web** Specificare l'URL che gli utenti finali seguiranno per installare la soluzione.
 
- **Da una condivisione di file o percorso UNC** specificare il percorso UNC che gli utenti finali deve seguire per installare la soluzione.
+ **Da un percorso UNC o da una condivisione file** Specificare il percorso UNC che gli utenti finali seguiranno per installare la soluzione.
 
- **Da un CD-ROM o DVD-ROM** questa opzione non richiede un percorso di installazione.
+ **Da CD-ROM o DVD-ROM** Questa opzione non richiede un percorso di installazione.
 
- Visual Studio non masterizzare il CD o DVD. È necessario copiare manualmente l'output su un CD o DVD.
+ Visual Studio non Masterizza il CD o il DVD. È necessario copiare manualmente l'output in un CD o DVD.
 
 ## <a name="see-also"></a>Vedere anche
-- [Distribuire una soluzione Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Pagina pubblica, creazione progetti &#40;sviluppo per Office in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+- [Pagina pubblica, sviluppo per &#40;Office Progettazione progetti in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)

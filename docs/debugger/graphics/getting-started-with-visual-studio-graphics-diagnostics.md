@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735700"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557926"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guida introduttiva a Diagnostica grafica di Visual Studio
 In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, quindi si acquisisce un frame da un'app Direct3D e lo si esamina in Analizzatore grafica.
@@ -35,11 +35,11 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 
 1. In Cerca digitare **app e funzionalità** e quindi aprire le **app &** le impostazioni delle funzionalità.
 
-2. Sul lato destro della finestra di dialogo **app & funzionalità** scegliere **Gestisci funzionalità facoltative** (in **app & funzionalità**).
+2. Sul lato destro delle impostazioni delle funzionalità delle **app &** scegliere **funzionalità facoltative** (in **app & funzionalità**).
 
-   Viene visualizzata la finestra di dialogo **Gestisci funzionalità facoltative**.
+   Verranno visualizzate le impostazioni delle **funzionalità facoltative** .
 
-3. Nella finestra di dialogo **Gestisci funzionalità facoltative** scegliere **Aggiungi una funzionalità**. Viene visualizzato un elenco di funzionalità facoltative che è possibile installare.
+3. Nelle impostazioni delle **funzionalità facoltative** scegliere **Aggiungi una funzionalità**. Viene visualizzato un elenco di funzionalità facoltative che è possibile installare.
 
 4. Selezionare **Strumenti di grafica** nell'elenco di funzionalità e quindi scegliere **Installa**.
 
@@ -49,7 +49,7 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 > La funzionalità facoltativa di Windows 10 Strumenti di grafica offre funzionalità leggere di acquisizione e riproduzione, ad esempio il programma di acquisizione da riga di comando **dxcap.exe**, che può essere usato in scenari di supporto, testing e diagnostica nei computer in cui non sono installati gli strumenti di sviluppo. Per altre informazioni, vedere l'argomento [Strumento di acquisizione da riga di comando](command-line-capture-tool.md).
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Primo utilizzo di Diagnostica della grafica
- Ora che si dispone di tutto il necessario, è possibile iniziare a usare Diagnostica della grafica eseguendo le operazioni descritte nei passaggi seguenti.
+ Ora che si dispone di tutto il necessario, è possibile iniziare a usare Diagnostica della grafica seguendo questa procedura.
 
 ### <a name="1---create-a-direct3d-app"></a>1 - Creare un'app Direct3D
  Se si dispone già di un'app Direct3D per esplorare Diagnostica della grafica con, ottimo! In caso contrario, usare uno dei seguenti elementi:

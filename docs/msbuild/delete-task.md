@@ -18,27 +18,30 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b89e7238be3440e260e95f305274304e31fe20e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f6be4c80519b023d3f11c28f3d5f5b2bf8f8e1
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567463"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557960"
 ---
 # <a name="delete-task"></a>Delete (attività)
 Elimina i file specificati.
 
 ## <a name="parameters"></a>Parametri
-Nella tabella che segue vengono descritti i parametri dell'attività `Delete` .
+Nella tabella che segue vengono descritti i parametri dell'attività `Delete`.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
 |`DeletedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i file che sono stati eliminati correttamente.|
 |`Files`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da eliminare.|
-|`TreatErrorsAsWarnings`|Parametro `Boolean` facoltativo<br /><br /> Se `true`, gli errori vengono registrati come avvisi. Il valore predefinito è `false`.|
+|`TreatErrorsAsWarnings`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, gli errori vengono registrati come avvisi. Il valore predefinito è `false`.|
 
-## <a name="remarks"></a>Note
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Osservazioni
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+
+> [!WARNING]
+> Prestare attenzione quando si usano caratteri jolly con l'attività `Delete`. È possibile eliminare facilmente i file non corretti con espressioni come `$(SomeProperty)\**\*.*` o `$(SomeProperty)/**/*.*`, soprattutto se la proprietà restituisce una stringa vuota, nel qual caso il parametro `Files` può restituire la radice dell'unità ed eliminare molto più di quanto si vuole eliminare.
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente viene eliminato il file *MyApp.pdb*.

@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476997"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557979"
 ---
 # <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,13 +101,11 @@ Di seguito sono riportati i problemi comuni che potrebbero verificarsi con il pa
   
     2. Aggiungere il **percorso del file di simboli (con estensione pdb)** :  
   
-         `https://msdl.microsoft.com/download/symbols`  
+       `https://msdl.microsoft.com/download/symbols`  
   
     3. Per migliorare le prestazioni, specificare una cartella della cache dei simboli, ad esempio:  
-  
-        ```  
-        C:\symbols  
-        ```  
+
+       `C:\symbols`  
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Per risolvere i problemi relativi a un VSPackage mancante o a una delle relative dipendenze  
   
@@ -117,7 +115,7 @@ Di seguito sono riportati i problemi comuni che potrebbero verificarsi con il pa
   
    2. Selezionare la scheda **riferimenti** nella finestra di dialogo **pagine delle proprietà** e verificare che tutti i percorsi siano corretti. In alternativa, è possibile utilizzare il **Visualizzatore oggetti** per cercare gli oggetti a cui si fa riferimento.  
   
-        Per il codice gestito, è possibile usare [Fuslogvw. exe (Visualizzatore log binding assembly)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) per visualizzare i dettagli dei caricamenti di assembly non riusciti.  
+        Per il codice gestito, è possibile usare [Fuslogvw. exe (Visualizzatore log binding assembly)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) per visualizzare i dettagli dei caricamenti di assembly non riusciti.  
   
 2. Per il codice non gestito, trovare il CLSID del pacchetto VSPackage nel nodo del registro di sistema [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID:  
   

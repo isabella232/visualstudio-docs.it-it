@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f8e5054b4da0122c40c3ad62cfebcace973f7b20
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918807"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558016"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
   
 - .application  
   
-- .manifest  
+- manifest  
   
 - .deploy  
   
@@ -52,7 +52,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 ## <a name="clickonce-and-proxy-authentication"></a>Autenticazione ClickOnce e proxy  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fornisce il supporto per l'autenticazione proxy integrata di Windows a partire da .NET Framework 3,5. Non sono necessarie direttive machine. config specifiche. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] non fornisce supporto per altri protocolli di autenticazione, ad esempio di base o digest.  
   
- Per abilitare questa funzionalità, è anche possibile applicare un hotfix a .NET Framework 2,0. Per ulteriori informazioni, vedere https://go.microsoft.com/fwlink/?LinkId=158730.  
+ Per abilitare questa funzionalità, è anche possibile applicare un hotfix a .NET Framework 2,0. Per ulteriori informazioni, vedere [correzione: messaggio di errore quando si tenta di installare un'applicazione ClickOnce creata nel .NET Framework 2,0 in un computer client configurato per l'utilizzo di un server proxy: "autenticazione proxy obbligatoria"](https://support.microsoft.com/en-in/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that). 
   
  Per ulteriori informazioni, vedere [\<elemento > defaultProxy (impostazioni di rete)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
@@ -121,7 +121,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
   
 - Se si crea un tipo MIME con estensione "*" e il tipo MIME "Application/ottetto-Stream", sarà possibile scaricare i file del tipo di file non bloccato. Tuttavia, non è possibile scaricare i tipi di file bloccati, ad esempio. aspx e. asmx.  
   
-  Per istruzioni specifiche sulla configurazione dei tipi MIME in Windows Server, vedere l'articolo della Microsoft Knowledge base KB326965, "IIS 6,0 non serve tipi MIME sconosciuti" in [https://support.microsoft.com/default.aspx?scid=kb; en-US; 326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Per istruzioni specifiche sulla configurazione dei tipi MIME in Windows Server, vedere [come aggiungere un tipo MIME a un sito Web o a un'applicazione](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application).  
   
 ## <a name="content-type-mappings"></a>Mapping dei tipi di contenuto  
  Quando si pubblica su HTTP, il tipo di contenuto (noto anche come tipo MIME) per il file. Application deve essere "Application/x-ms-application". Se nel server è installato [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], questo verrà impostato automaticamente. Se questo non è installato, è necessario creare un'associazione di tipo MIME per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione vroot (o intero server).  

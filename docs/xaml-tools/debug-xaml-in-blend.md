@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 5d6f0e54c37c394fce464b07440daa99b4dd7d5e
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9ac692c756aaa29b2b13f20eecd039154a28d80b
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188899"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558185"
 ---
 # <a name="debug-xaml-in-blend"></a>Debug XAML in Blend
 
@@ -109,18 +109,18 @@ Quando vengono rilevati errori XAML, nell'area di progettazione viene visualizza
 
 4. Fai doppio clic su "Membro 'content' non riconosciuto o non accessibile". `c` in `content` deve essere maiuscolo. Sostituisci la lettera "c" minuscola con una "c" maiuscola.
 
-5. Fare doppio clic su "la proprietà' MAME ' non esiste nello spazio dei nomi ' <http://schemas.microsoft.com/winfx/2006/xaml>'". La "M" di "Mame" dovrebbe essere una "N". Sostituisci la lettera "M" con una "N". Ora che il codice XAML può essere analizzato, l'app compare nell'area di progettazione.
+5. Fare doppio clic su "la proprietà' MAME ' non esiste nello spazio dei nomi `http://schemas.microsoft.com/winfx/2006/xaml`". La "M" di "Mame" dovrebbe essere una "N". Sostituisci la lettera "M" con una "N". Ora che il codice XAML può essere analizzato, l'app compare nell'area di progettazione.
 
     ![Debug di XAML in Blend per Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
     Premere **Ctrl**+**MAIUSC**+**B** per compilare il progetto e verificare che non siano presenti errori rimanenti.
 
-## <a name="debug-in-visual-studio"></a>Debug in Visual Studio
+## <a name="debug-in-visual-studio"></a>Eseguire il debug in Visual Studio
 
 È possibile aprire i progetti Blend in Visual Studio per eseguire più facilmente il debug del codice nell'app. Per aprire un progetto di Blend in Visual Studio, fare clic con il pulsante destro del mouse sul progetto nel pannello **progetti** , quindi scegliere **modifica in Visual Studio**. Al termine della sessione di debug in Visual Studio, premere CTRL + MAIUSC + S per salvare tutte le modifiche e quindi tornare a Blend. Ti verrà chiesto di ricaricare il progetto. Fare clic su **Sì per** continuare a lavorare in Blend.
 
 Per altre informazioni sul debug dell'app, vedere [eseguire il debug di app UWP in Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="get-help"></a>Ottenere assistenza
+## <a name="get-help"></a>Ottenere aiuto
 
 Per ulteriori informazioni sul debug dell'app Blend, è possibile cercare i post correlati al problema o pubblicare una domanda nei [Forum della community delle app UWP](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) .

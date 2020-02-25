@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Specificare il percorso in cui gli utenti finali eseguiranno l'installazione da | Microsoft Docs"
+title: 'Procedura: specificare il percorso da cui gli utenti finali installeranno | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3ce7e405a69dccd759e4c52bac84c28e431a4a
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 993c654ccd16f2d51d86a46a716edd611ae154dd
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890553"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557608"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Procedura: Specificare il percorso da cui gli utenti finali eseguiranno l'installazione
-Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione, la posizione in cui gli utenti potranno scaricare e installare l'applicazione non è necessariamente la posizione in cui inizialmente l'applicazione viene pubblicata. Ad esempio, in alcune organizzazioni lo sviluppatore può pubblicare un'applicazione in un server di gestione temporanea e quindi un amministratore potrebbe spostare l'applicazione in un server Web.
+Quando si pubblica un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], la posizione in cui gli utenti accedono per scaricare e installare l'applicazione non è necessariamente la posizione in cui viene inizialmente pubblicata l'applicazione. In alcune organizzazioni, ad esempio, uno sviluppatore potrebbe pubblicare un'applicazione in un server di staging e quindi un amministratore sposta l'applicazione in un server Web.
 
-In questo caso, è possibile usare il `Installation URL` proprietà per specificare il server Web cui accederanno gli utenti di scaricare l'applicazione. Ciò è necessario in modo che il manifesto dell'applicazione sappia dove cercare gli aggiornamenti.
+In questo caso, è possibile usare la proprietà `Installation URL` per specificare il server Web in cui gli utenti useranno per scaricare l'applicazione. Questa operazione è necessaria affinché il manifesto dell'applicazione sappia dove cercare gli aggiornamenti.
 
-Il `Installation URL` può impostare la proprietà il **Publish** pagina del **creazione progetti**.
+È possibile impostare la proprietà `Installation URL` nella pagina **pubblica** di **Progettazione progetti**.
 
 > [!NOTE]
-> Il `Installation URL` proprietà può essere impostata inoltre mediante il **pubblicazione guidata**. Per altre informazioni, vedere [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+> È inoltre possibile impostare la proprietà `Installation URL` utilizzando **pubblicazione guidata**. Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-specify-an-installation-url"></a>Per specificare un URL di installazione
 
@@ -40,7 +40,7 @@ Il `Installation URL` può impostare la proprietà il **Publish** pagina del **c
 
 2. Fare clic sulla scheda **Pubblica**.
 
-3. Nel campo URL di installazione, immettere il percorso di installazione tramite un URL completo nel formato *http://www.microsoft.com/ApplicationName* , o un percorso UNC nel formato  *\\ \Server\ApplicationName*.
+3. Nel campo URL di installazione immettere il percorso di installazione utilizzando un URL completo utilizzando il formato `https://www.contoso.com/ApplicationName`o un percorso UNC utilizzando il formato `\Server\ApplicationName`.
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Specificare il percorso in cui vengono copiati i file in Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
