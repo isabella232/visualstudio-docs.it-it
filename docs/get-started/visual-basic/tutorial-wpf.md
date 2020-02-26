@@ -9,19 +9,19 @@ ms.topic: conceptual
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864706"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579945"
 ---
-# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: Creare un'applicazione semplice con Visual Basic
+# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: creare un'applicazione semplice con Visual Basic
 
 Completando questa esercitazione, si acquisirà familiarità con molti strumenti, finestre di dialogo e finestre di progettazione che è possibile usare quando si sviluppano applicazioni con Visual Studio. Si creerà un' applicazione "Hello, World", si progetterà l'interfaccia utente, si aggiungerà il codice e si eseguirà il debug degli errori, apprendendo l'uso dell'ambiente di sviluppo integrato ([IDE](visual-studio-ide.md)).
 
@@ -45,7 +45,7 @@ Quando si apre per la prima volta, Visual Studio richiede di eseguire l'accesso.
 
 ![Finestra di dialogo Selezionare le impostazioni](../media/exploreide-settings.png)
 
-Dopo aver avviato Visual Studio, saranno visualizzati le finestre degli strumenti, i menu, le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con **Avvio veloce**, la barra dei menu e la barra degli strumenti standard nella parte superiore. Al centro della finestra dell'applicazione si trova **Pagina iniziale**. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nello spazio in cui si trova la **pagina iniziale** . Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
+Dopo aver avviato Visual Studio, saranno visualizzati le finestre degli strumenti, i menu, le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con **Avvio veloce**, la barra dei menu e la barra degli strumenti standard nella parte superiore. Al centro della finestra dell'applicazione si trova **Pagina iniziale**. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nello spazio in cui si trova la **pagina iniziale** . Quando si sviluppa un'applicazione, la maggior parte del tempo verrà dedicata a questa area centrale.
 
 ![Visual Studio 2017 IDE con impostazioni generali applicate](../media/exploreide-idewithgeneralsettings.png)
 
@@ -53,7 +53,7 @@ Dopo aver avviato Visual Studio, saranno visualizzati le finestre degli strument
 
 ::: moniker range=">=vs-2019"
 
-Quando si avvia Visual Studio, si apre la finestra iniziale. Selezionare **Continua senza codice** per aprire l'ambiente di sviluppo. Saranno visualizzate le finestre degli strumenti, i menu, barre degli strumenti e lo spazio della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con una casella di ricerca, la barra dei menu e la barra degli strumenti standard nella parte superiore. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nell'area al centro della finestra dell'applicazione. Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
+Quando si avvia Visual Studio, si apre la finestra iniziale. Selezionare **Continua senza codice** per aprire l'ambiente di sviluppo. Saranno visualizzate le finestre degli strumenti, i menu, barre degli strumenti e lo spazio della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con una casella di ricerca, la barra dei menu e la barra degli strumenti standard nella parte superiore. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nell'area al centro della finestra dell'applicazione. Quando si sviluppa un'applicazione, la maggior parte del tempo verrà dedicata a questa area centrale.
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:Sys
 
 ### <a name="add-a-textblock-control"></a>Aggiungere un controllo TextBlock
 
-1. Premere **CTRL**+**Q** per attivare la casella di ricerca e digitare **casella degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
+1. Premere **Ctrl**+**Q** per attivare la casella di ricerca e digitare **casella degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
 
 2. Nella **casella degli strumenti** espandere il nodo **Controlli WPF comuni** per visualizzare il controllo TextBlock.
 
@@ -162,7 +162,7 @@ Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/
 
 ### <a name="add-display-text-for-each-radio-button"></a>Aggiungere testo visualizzato per ogni pulsante di opzione
 
-Aggiornare l' **attributo content** per `HelloButton` e `GoodbyeButton` a `"Hello"` e `"Goodbye"` in XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
+Aggiornare l'attributo **Content** per la `HelloButton` e `GoodbyeButton` a `"Hello"` e `"Goodbye"` in XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
 
    ```xaml
    <Grid>

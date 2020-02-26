@@ -13,25 +13,25 @@ helpviewer_keywords:
 - MSBuild, AssignCulture task
 - AssignCulture task [MSBuild]
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf6627b23f7421dc164cf13bbaab46e8d7a2577
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 393077d6391a5c1f5f4088773013538efbedc9f7
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823289"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578701"
 ---
 # <a name="assignculture-task"></a>AssignCulture (attività)
 Questa attività accetta un elenco di elementi che possono contenere una stringa dell'identificatore di impostazioni cultura .NET valida come parte del nome file e genera elementi con metadati denominati `Culture` che contengono l'identificatore di impostazioni cultura corrispondente. Ad esempio, il nome di file *Form1.fr-fr.resx* contiene un identificatore di impostazioni cultura incorporato, "fr-fr", quindi questa attività genera un elemento con lo stesso nome di file con i metadati `Culture` uguali a `fr-fr`. L'attività genera inoltre un elenco di nomi di file con le impostazioni cultura rimosse dal nome del file.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
-Nella tabella che segue vengono descritti i parametri dell'attività `AssignCulture` .
+Nella tabella che segue vengono descritti i parametri dell'attività `AssignCulture`.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`AssignedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene l'elenco di elementi ricevuti nel parametro `Files`, con una voce di metadati `Culture` aggiunta a ogni elemento.<br /><br /> Se l'elemento proveniente dal parametro `Files` contiene già una voce di metadati `Culture`, viene usata la voce di metadati originale.<br /><br /> L'attività assegna una voce di metadati `Culture` solo se il nome del file contiene un identificatore di impostazioni cultura valido. L'identificatore di impostazioni cultura deve essere compreso tra gli ultimi due punti nel nome file.|
 |`AssignedFilesWithCulture`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene il subset degli elementi del parametro `AssignedFiles` che hanno una voce di metadati `Culture`.|
@@ -39,8 +39,8 @@ Nella tabella che segue vengono descritti i parametri dell'attività `AssignCult
 |`CultureNeutralAssignedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene lo stesso elenco di elementi generato nel parametro `AssignedFiles`, eccetto le impostazioni cultura rimosse dal nome del file.<br /><br /> L'attività rimuove le impostazioni cultura dal nome del file solo se viene usato un identificatore di impostazioni cultura valido.|
 |`Files`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica l'elenco di file con nomi di impostazioni cultura incorporati a cui assegnare le impostazioni cultura.|
 
-## <a name="remarks"></a>Osservazioni
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Note
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene eseguita l'attività `AssignCulture` con la raccolta di elementi `ResourceFiles`.
@@ -79,4 +79,4 @@ La tabella seguente descrive il valore degli elementi di output dopo l'esecuzion
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

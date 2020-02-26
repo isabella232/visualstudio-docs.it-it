@@ -11,25 +11,25 @@ helpviewer_keywords:
 - RequiresFramework35SP1Assembly task [MSBuild]
 - MSBuild, RequiresFramework35SP1Assembly task
 ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c1e640c3b6f7a285c10b2487f9758520facf11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d94d6ab4840163e8379e53da435a97a69381aed
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974618"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578476"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly (attività)
 Determina se l'applicazione richiede .NET Framework 3.5 SP1.
 
 ## <a name="parameters"></a>Parametri
- Nella tabella che segue vengono descritti i parametri dell'attività `RequiresFramework35SP1Assembly` .
+ Nella tabella che segue vengono descritti i parametri dell'attività `RequiresFramework35SP1Assembly`.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`Assemblies`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica gli assembly a cui si fa riferimento nell'applicazione.|
 |`CreateDesktopShortcut`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, crea un'icona di collegamento sul desktop durante l'installazione.|
@@ -43,9 +43,9 @@ Determina se l'applicazione richiede .NET Framework 3.5 SP1.
 |`SuiteName`|Parametro `String` facoltativo.<br /><br /> Specifica il nome della cartella del menu **Start** in cui verrà installata l'applicazione.|
 |`TargetFrameworkVersion`|Parametro `String` facoltativo.<br /><br /> Specifica la versione di .NET Framework a cui è destinata l'applicazione.|
 
-## <a name="remarks"></a>Osservazioni
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Note
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

@@ -5,17 +5,17 @@ ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a1c0184c11b745ef6c83c35b524884a139bc3d8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588785"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579908"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Passaggio 1: creare un progetto di app Windows Forms
 
@@ -44,7 +44,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-   ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Visualizzare la finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **tipo di progetto** .
 
@@ -61,7 +61,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
+   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *PictureViewer* nella casella **Nome del progetto**. Scegliere **Crea**.
 

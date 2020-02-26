@@ -5,17 +5,17 @@ ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 82dbef4baee72be8ff96f83e436b2587e9a020ea
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591749"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579862"
 ---
 # <a name="step-3-set-your-form-properties"></a>Passaggio 3: Impostare le proprietà del modulo
 
@@ -62,7 +62,7 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 
 1. Prima di andare al passaggio successivo, arrestare l'app, perché l'IDE non consente di modificare l'app mentre è in esecuzione. Tenere presente che è possibile usare uno dei metodi seguenti per arrestare l'app.
 
-   - Sulla barra degli strumenti scegliere il pulsante**Termina debug**.
+   - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
 
    - Sulla barra dei menu scegliere **Debug** > **Termina debug**.
 

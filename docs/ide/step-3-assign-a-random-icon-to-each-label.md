@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 366f6d7a07d2f30b5b8110fb7dae7a2311fcce23
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621550"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579391"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Passaggio 3: Assegnare un'icona casuale a ogni etichetta
 
@@ -32,7 +32,7 @@ Non sarebbe particolarmente impegnativo visualizzare le icone sempre nelle stess
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
 
       > [!IMPORTANT]
-      > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo della lingua ![Programming per Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+      > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo del linguaggio di programmazione ![per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
 2. Aggiungere il metodo `AssignIconsToSquares()` come illustrato nel passaggio precedente. È possibile inserirlo immediatamente dopo il codice aggiunto in [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
@@ -44,7 +44,7 @@ Non sarebbe particolarmente impegnativo visualizzare le icone sempre nelle stess
     > [!NOTE]
     > I nomi "iconLabel" e "control" vengono utilizzati in quanto nomi descrittivi. È possibile sostituirli con altri nomi senza che il codice ne risulti pregiudicato, a condizione che si modifichi il nome in ogni istruzione all'interno del ciclo.
 
-     Il metodo `AssignIconsToSquares()` scorre ogni controllo etichetta in TableLayoutPanel ed esegue le stesse istruzioni per ognuno di essi. Tali istruzioni prendono un'icona casuale dall'elenco aggiunto in [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). Nell'elenco sono state incluse due icone di ogni tipo, in modo tale da poter assegnare una coppia di icone ai controlli Label casuali.
+     Il metodo `AssignIconsToSquares()` scorre ogni controllo etichetta in TableLayoutPanel ed esegue le stesse istruzioni per ognuno di essi. Tali istruzioni prendono un'icona casuale dall'elenco aggiunto in [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). Nell'elenco sono state incluse coppie di icone, in modo tale da poter assegnare una coppia di icone ai controlli Label casuali.
 
      Analizzare attentamente il codice eseguito all'interno del ciclo `foreach` o `For Each`. Questo codice viene riprodotto di seguito.
 

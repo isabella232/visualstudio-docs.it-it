@@ -5,17 +5,17 @@ ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f4ca58506e99331c48b33717903d1925874912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590020"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579386"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel
 
@@ -83,7 +83,7 @@ Finestra ***Proprietà*** *con* ***riempimento*** *selezionato*
 
 1. Dall'elenco a discesa **Mostra** nella parte superiore della finestra Stili di **riga e colonna** scegliere **righe**. Impostare **Row1** su 90% e **Row2** su 10%.
 
-1. Fare clic sul pulsante **OK** . Il controllo TableLayoutPanel dispone ora di una riga grande nella parte superiore, una riga piccola nella parte inferiore, una colonna piccola a sinistra e una colonna grande a destra. È possibile ridimensionare le righe e le colonne in TableLayoutPanel scegliendo **tableLayoutPanel1** nel form e trascinando i bordi di riga e colonna.
+1. Fare clic sul pulsante **OK**. Il controllo TableLayoutPanel dispone ora di una riga grande nella parte superiore, una riga piccola nella parte inferiore, una colonna piccola a sinistra e una colonna grande a destra. È possibile ridimensionare le righe e le colonne in TableLayoutPanel scegliendo **tableLayoutPanel1** nel form e trascinando i bordi di riga e colonna.
 
      ![Form1 con TableLayoutPanel ridimensionato](../ide/media/vs_formafterlayoutpanel.png)<br>
 ***Form1*** *(Visualizzatore immagini) con TableLayoutPanel ridimensionato*

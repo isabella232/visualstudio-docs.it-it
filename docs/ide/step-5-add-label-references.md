@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1fe8f4e8003da2db0e8a599c3eca504945f3e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647512"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579336"
 ---
 # <a name="step-5-add-label-references"></a>Passaggio 5: Aggiungere riferimenti alle etichette
 Il programma deve tenere traccia dei controlli Label scelti dal giocatore. Al momento il programma mostra tutte le etichette scelte dal giocatore, ma è possibile modificare questa impostazione. Una volta scelta la prima etichetta, il programma dovrebbe visualizzarne l'icona. Una volta scelta la seconda etichetta, il programma dovrebbe visualizzare entrambe le icone per un istante, quindi renderle nuovamente invisibili. Il programma terrà ora traccia del controllo Label scelto per primo e di quello scelto per secondo usando *variabili di riferimento*.
@@ -31,7 +31,7 @@ Il programma deve tenere traccia dei controlli Label scelti dal giocatore. Al mo
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
 
      > [!IMPORTANT]
-     > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo della lingua ![Programming per Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+     > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo del linguaggio di programmazione ![per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Queste variabili di riferimento sono simili alle istruzioni utilizzate in precedenza per aggiungere oggetti (ad esempio oggetti <xref:System.Windows.Forms.Timer>, <xref:System.Collections.Generic.List%601> e <xref:System.Random>) al form. Queste istruzioni, tuttavia, non comportano la visualizzazione di due controlli Label aggiuntivi nel modulo, perché in nessuna delle due istruzioni è usata la parola chiave `new`. Senza la parola chiave `new` non viene creato alcun oggetto. Per questo motivo gli oggetti `firstClicked` e `secondClicked` sono detti variabili di riferimento: tengono semplicemente traccia degli oggetti Label o vi fanno riferimento.
 

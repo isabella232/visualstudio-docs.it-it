@@ -2,16 +2,16 @@
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632439"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77590806"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -166,9 +166,9 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 ::: moniker range="vs-2017"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
-1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+1. Nella barra dei menu scegliere **File** > **nuovo** **progetto**>.
 
    ![File > Nuovo progetto sulla barra dei menu](../media/file-new-project-menu.png)
 
@@ -218,7 +218,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Eseguire nuovamente l'app selezionando **Debug** > **Avvia senza eseguire debug** o premendo **CTRL**+**F5**.
+1. Eseguire di nuovo l'app selezionando **debug** > **Avvia senza eseguire debug** o premendo **CTRL**+**F5**.
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
@@ -232,7 +232,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 ::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
    Viene visualizzata la finestra iniziale con varie opzioni per clonare un repository, aprire un progetto recente o creare un nuovo progetto.
 
@@ -287,7 +287,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Eseguire nuovamente l'app selezionando **Debug** > **Avvia senza eseguire debug** o premendo **CTRL**+**F5**.
+1. Eseguire di nuovo l'app selezionando **debug** > **Avvia senza eseguire debug** o premendo **CTRL**+**F5**.
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
@@ -413,7 +413,7 @@ Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità 
 
 ::: moniker range="vs-2017"
 
-2. Nella pagina delle opzioni **Ambiente** > **Generale** modificare la selezione del **Tema colori** in **Scuro** e quindi scegliere **OK**.
+2. Nella pagina Opzioni **ambiente** > **generale** modificare la selezione del **tema colori** in **scuro**, quindi scegliere **OK**.
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 
@@ -423,7 +423,7 @@ Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità 
 
 ::: moniker range=">=vs-2019"
 
-2. Nella pagina delle opzioni **Ambiente** > **Generale** modificare la selezione del **Tema colori** in **Scuro** e quindi scegliere **OK**.
+2. Nella pagina Opzioni **ambiente** > **generale** modificare la selezione del **tema colori** in **scuro**, quindi scegliere **OK**.
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 

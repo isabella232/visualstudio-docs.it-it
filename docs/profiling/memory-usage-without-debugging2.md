@@ -13,22 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910351"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578339"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger
 
 Lo strumento **Utilizzo memoria** monitora l'utilizzo della memoria dell'app. È possibile utilizzare lo strumento per studiare gli effetti in tempo reale sulla memoria degli scenari in corso di sviluppo attivo in Visual Studio. Creare snapshot dettagliati degli stati di memoria dell'app e confrontare gli snapshot per individuare le cause principali dei problemi di memoria.
 
 Lo strumento **Utilizzo memoria** può essere eseguito con o senza debugger. Le istruzioni seguenti illustrano come usare lo strumento **Utilizzo memoria** senza il debugger, con **Profiler prestazioni** di Visual Studio.
-
->[!NOTE]
->- Per misurare l'utilizzo della memoria da parte di un'app .NET Core, è necessario utilizzare lo strumento **Utilizzo memoria** con il debugger. Per istruzioni, vedere [Profilare l'utilizzo della memoria in Visual Studio](memory-usage.md).
->- Per analizzare il consumo di memoria nelle app JavaScript o HTML UWP, usare lo strumento [Memoria JavaScript](../profiling/javascript-memory.md) in **Profiler prestazioni**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sessioni di diagnostica con lo strumento Utilizzo memoria
 

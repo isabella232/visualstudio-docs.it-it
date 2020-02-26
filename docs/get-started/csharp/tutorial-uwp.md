@@ -7,21 +7,21 @@ ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186850"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580007"
 ---
-# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Esercitazione: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C&#35;
+# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Esercitazione: creare la prima applicazione piattaforma UWP (Universal Windows Platform) in Visual Studio con XAML e C&#35;
 
 In questa introduzione all'ambiente di sviluppo integrato (IDE) di Visual Studio verrà creata una semplice app "Hello World" eseguibile in qualsiasi dispositivo Windows 10. A tale scopo, verranno usati un modello di progetto della piattaforma UWP (Universal Windows Platform), Extensible Application Markup Language (XAML) e il linguaggio di programmazione C#.
 
@@ -37,9 +37,9 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal Windows Platform). Il tipo di progetto include fin dall'inizio tutti i file di modello necessari.
 
 ::: moniker range="vs-2017"
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
-1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+1. Dalla barra dei menu in alto scegliere **File** > **nuovo** > **progetto**.
 
 1. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e scegliere **Universale di Windows**. Nel riquadro centrale scegliere **App vuota (Windows universale)** . Assegnare al progetto il nome *HelloWorld* e scegliere **OK**.
 
@@ -91,7 +91,7 @@ A questo punto è possibile iniziare a sviluppare l'app. Verrà aggiunto un puls
    ![Aprire MainPage.xaml da Esplora soluzioni](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
    ::: moniker-end
 
-   Sono disponibili due riquadri: la **finestra di progettazione XAML**, che include un'area di progettazione, e l'**editor XAML**, dove è possibile aggiungere o cambiare il codice.
+   Sono disponibili due riquadri: **Finestra di progettazione XAML**, che include un'area di progettazione, ed **Editor XAML**, dove è possibile aggiungere o modificare il codice.
 
    ![Il riquadro Finestra di progettazione XAML dell'Editor XAML](media/uwp-xaml-editor.png)
 

@@ -5,17 +5,17 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abaae887e39b85e4f2d363a63ef6cde5845e3fa2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597399"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579929"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -42,7 +42,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-   ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Visualizzare la finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **tipo di progetto** .
 
@@ -59,7 +59,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
+   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *MatchingGame* nella casella **Nome del progetto**. Scegliere **Crea**.
 
@@ -90,7 +90,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
    5. Nel menu delle attività scegliere **Aggiungi riga** due volte per aggiungere altre due righe, quindi scegliere **Aggiungi colonna** due volte per aggiungere altre due colonne.
 
-   6. Nel menu delle attività scegliere **Modifica righe e colonne** per aprire la finestra **Stili di riga e colonna**. Scegliere ognuna delle colonne, fare clic sul pulsante di opzione **%** e quindi impostare la larghezza di ogni colonna sul 25% della larghezza totale. Selezionare quindi **Righe** dalla casella a discesa nella parte superiore della finestra e impostare l'altezza di ogni riga su 25%. Al termine, scegliere il pulsante **OK**.
+   6. Nel menu delle attività scegliere **Modifica righe e colonne** per aprire la finestra **Stili di riga e colonna**. Scegliere ognuna delle colonne, fare clic sul pulsante di opzione **%** e quindi impostare la larghezza di ogni colonna sul 25% della larghezza totale. Selezionare quindi **Righe** dalla casella a discesa nella parte superiore della finestra e impostare l'altezza di ogni riga su 25%. Al termine dell'operazione, fare clic su **OK**.
 
       TableLayoutPanel dovrebbe essere ora costituito da una griglia 4x4 con sedici celle quadrate di dimensioni uguali. In queste righe e colonne appariranno in un secondo momento le immagini icona.
 

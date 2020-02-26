@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - vb
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0699faebfd210390eea11f8ad11b48d4c4bbd980
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7049271dddb4e763bf5ecb3760358bdd63e38df5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621432"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579339"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Passaggio 4: Aggiungere un gestore dell'evento Click a ogni etichetta
 
@@ -50,7 +50,7 @@ Il gioco delle coppie funziona come segue:
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
 
      > [!IMPORTANT]
-     > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo della lingua ![Programming per Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+     > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo del linguaggio di programmazione ![per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
     > [!NOTE]
     > Se si sceglie di copiare e incollare il blocco di codice `label_Click()` anziché immetterlo manualmente, è necessario verificare di sostituire il codice `label_Click()` esistente. In caso contrario, verrà generato un blocco di codice duplicato.

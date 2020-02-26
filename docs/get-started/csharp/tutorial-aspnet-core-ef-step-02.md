@@ -9,19 +9,19 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061116"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580081"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Passaggio 2: creare la prima app Web ASP.NET Core
 
@@ -33,7 +33,7 @@ _Guardare questo video e seguire le indicazioni per creare la prima app ASP.NET 
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Avviare Visual Studio 2019 e creare un nuovo progetto
 
-Avviare Visual Studio 2019 e fare clic su **Crea nuovo progetto**. Scegliere **Applicazione Web ASP.NET Core**. Scegliere il modello **Applicazione Web** e mantenere il nome e il percorso del progetto predefiniti. Nell'elenco a discesa con la versione ASP.NET Core scegliere **ASP.NET Core 2,1** o **ASP.NET Core 2,2**. Scegliere **Crea**. Per istruzioni più dettagliate, vedere [il video precedente in questa serie di esercitazioni](tutorial-aspnet-core-ef-step-01.md).
+Avviare Visual Studio 2019 e fare clic su **Crea nuovo progetto**. Scegliere **Applicazione Web ASP.NET Core**. Scegliere il modello **Applicazione Web** e mantenere il nome e il percorso del progetto predefiniti. Nell'elenco a discesa con la versione ASP.NET Core scegliere **ASP.NET Core 2,1** o **ASP.NET Core 2,2**. Fare clic su **Crea**. Per istruzioni più dettagliate, vedere [il video precedente in questa serie di esercitazioni](tutorial-aspnet-core-ef-step-01.md).
 
 ![Visual Studio 2019 - Scegliere le opzioni per il progetto ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -50,7 +50,7 @@ Nella finestra Esplora soluzioni a destra è possibile visualizzare il contenuto
 
 La cartella *wwwroot* contiene i file statici che saranno pubblicamente accessibili dall'applicazione Web. In genere contiene fogli di stile, file di script lato client e immagini.
 
-### <a name="pages"></a>Pages
+### <a name="pages"></a>Pagine
 
 La cartella *Pages* contiene le pagine Razor del sito. Il modello predefinito offre diverse pagine, tra cui la pagina *Index.cshtml* che è la home page dell'applicazione, nonché le pagine About, Contact e così via.
 

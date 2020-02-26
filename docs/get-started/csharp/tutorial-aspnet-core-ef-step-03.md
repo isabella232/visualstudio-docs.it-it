@@ -1,5 +1,5 @@
 ---
-title: "Passaggio 3: Uso dei dati nell'app ASP.NET Core"
+title: "Passaggio 3: uso dei dati nell'app ASP.NET Core"
 description: Iniziare a usare i dati con Entity Framework Core nell'app Web ASP.NET Core con questa esercitazione video e istruzioni dettagliate.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -9,21 +9,21 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
-ms.translationtype: HT
+ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300582"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580062"
 ---
-# <a name="step-3-work-with-data-using-entity-framework"></a>Passaggio 3: Usare i dati con Entity Framework
+# <a name="step-3-work-with-data-using-entity-framework"></a>Passaggio 3: utilizzare i dati utilizzando Entity Framework
 
 Seguire questi passaggi per iniziare a usare i dati con Entity Framework Core nell'app Web ASP.NET Core.
 
@@ -131,7 +131,7 @@ Questo è tutto per iniziare a usare i dati in un'app ASP.NET Core con EF Core e
 
 Nel prossimo video si apprenderà come aggiungere il supporto dell'API Web per l'app.
 
-[Passaggio 4: Esposizione di un'API Web dall'app ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+[Passaggio 4: esposizione di un'API Web dall'app ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
 
 ## <a name="see-also"></a>Vedere anche
 

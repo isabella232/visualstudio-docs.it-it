@@ -10,17 +10,17 @@ apitype: COM
 helpviewer_keywords:
 - ResumeTracking
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2ff32a4eb2218a8b3d09188c787156e484147f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6bb4663013a73d88ed7c2118816007705834162c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996693"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578444"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Riprende la verifica nel contesto corrente.
@@ -35,7 +35,7 @@ HRESULT WINAPI ResumeTracking();
  **HRESULT** con il bit **SUCCEEDED** impostato se la verifica è ripresa. Se non è possibile riprendere la verifica perché il contesto non è disponibile viene restituito **E_FAIL**.
 
 ## <a name="requirements"></a>Requisiti
- **Intestazione:** *FileTracker.h*
+ **Intestazione:** *FileTracker. h*
 
 ## <a name="see-also"></a>Vedere anche
 - [SuspendTracking](../msbuild/suspendtracking.md)

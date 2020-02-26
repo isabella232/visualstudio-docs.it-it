@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aeb28fe7fbfbaa6e2d120fe58fdc39f188367b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23d050df688d4d1efec75245e6f48d748464170c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647499"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579319"
 ---
 # <a name="step-6-add-a-timer"></a>Passaggio 6: Aggiungere un timer
 Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbinamenti. Un timer resta in attesa per un determinato numero di millisecondi prima di generare un evento, detto *tick*. Si tratta di una condizione utile per avviare un'azione o ripeterne una a intervalli regolari. In questo caso, verrà utilizzato un timer per consentire ai giocatori di scegliere due icone e, se non corrispondono, nasconderle di nuovo dopo un breve periodo di tempo.
@@ -41,7 +41,7 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
 
       > [!IMPORTANT]
-      > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo della lingua ![Programming per Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+      > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo del linguaggio di programmazione ![per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Il gestore eventi Tick effettua tre operazioni: in primo luogo verifica che il timer non sia in esecuzione chiamando il metodo <xref:System.Windows.Forms.Timer.Stop>. In seconda istanza, utilizza le due variabili di riferimento, `firstClicked` e `secondClicked`, per rendere nuovamente invisibili le due etichette scelte dal giocatore. Infine, Reimposta le variabili di riferimento `firstClicked` e `secondClicked` per `null` in C# e `Nothing` in Visual Basic. Questo passaggio è importante, poiché è così che il programma si reimposta. Ora non sta tenendo traccia di alcun controllo <xref:System.Windows.Forms.Label> ed è nuovamente pronto per la scelta di un'etichetta da parte del giocatore.
 
@@ -53,7 +53,7 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
      [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
      [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]
 
-     Il codice all'inizio del metodo controlla se il timer è stato avviato controllando il valore della proprietà **Enabled**. In questo modo, se il giocatore sceglie il primo e il secondo controllo Label e il timer si avvia, l'eventuale scelta di una terza etichetta non genera alcuna azione.
+     Il codice all'inizio del metodo controlla se il timer è stato avviato controllando il valore della proprietà **Enabled**. In tal modo, se il giocatore sceglie il primo e il secondo controllo Label e il timer si avvia, l'eventuale scelta di una terza etichetta non genera alcuna azione.
 
      Il codice alla fine del metodo imposta la variabile di riferimento `secondClicked` in modo da tenere traccia del secondo controllo Label scelto dal giocatore e quindi imposta il colore dell'icona di tale etichetta su nero per renderla visibile. Quindi avvia il timer in modalità scatto unico, in modo che attenda 750 millisecondi prima di generare un singolo evento Tick. Il gestore dell'evento Tick del timer nasconde le due icone e reimposta le variabili di riferimento `firstClicked` e `secondClicked`. Il giocatore potrà così scegliere un'altra coppia di icone nel form.
 
