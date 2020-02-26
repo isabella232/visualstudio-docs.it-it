@@ -1,25 +1,25 @@
 ---
-title: "Passaggio 11: Eseguire l'app visualizzatore immagini e provare altre funzionalità"
+title: "Passaggio 11: eseguire l'app visualizzatore immagini e provare altre funzionalità"
 ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0489cce76642df0dd069e0a05e1e50b55d5d8f
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118799"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579897"
 ---
-# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Passaggio 11: Eseguire l'app visualizzatore immagini e provare altre funzionalità
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Passaggio 11: eseguire l'app visualizzatore immagini e provare altre funzionalità
 
-L'app visualizzatore immagini è stata completata e pronta per l'esecuzione. È possibile eseguire l'app e impostare il colore di sfondo dell' <xref:System.Windows.Forms.PictureBox>oggetto. Per ulteriori informazioni, provare a migliorare l'applicazione modificando il colore del form, personalizzando i pulsanti e la casella di controllo e modificando le proprietà del form.
+L'app visualizzatore immagini è stata completata e pronta per l'esecuzione. È possibile eseguire l'app e impostare il colore di sfondo della <xref:System.Windows.Forms.PictureBox>. Per ulteriori informazioni, provare a migliorare l'applicazione modificando il colore del form, personalizzando i pulsanti e la casella di controllo e modificando le proprietà del form.
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>Come eseguire l'app e impostare il colore di sfondo
 
@@ -28,9 +28,9 @@ L'app visualizzatore immagini è stata completata e pronta per l'esecuzione. È 
 1. Prima di aprire un'immagine, scegliere il pulsante **Imposta colore di sfondo**. Verrà visualizzata la finestra di dialogo **Colore**.
 
      ![Finestra di dialogo Colore](../ide/media/express_colordialog.png)<br/>
-***Colore*** finestra di *dialogo*
+Finestra di *dialogo* ***colore***
 
-1. Scegliere un colore per impostare il colore di sfondo di PictureBox. Osservare attentamente il metodo `backgroundButton_Click()` (o, `BackgroundButton_Click()`) per comprenderne il funzionamento.
+1. Scegliere un colore per impostare il colore di sfondo di PictureBox. Esaminare attentamente il metodo `backgroundButton_Click()` (o `BackgroundButton_Click()`) per comprenderne il funzionamento.
 
     > [!NOTE]
     > È possibile caricare un'immagine da Internet incollando il relativo URL nella finestra di dialogo **Apri file**. Tentare di trovare un'immagine con uno sfondo trasparente, in modo da visualizzare il colore di sfondo scelto.
@@ -52,9 +52,9 @@ L'app visualizzatore immagini è stata completata e pronta per l'esecuzione. È 
 Per altre informazioni, continuare con l'esercitazione seguente:
 
 > [!div class="nextstepaction"]
-> [Esercitazione 2: Creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md)
+> [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
-Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 10: Scrivere codice per una casella di controllo e pulsanti aggiuntivi](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 10: Scrivere codice per pulsanti aggiuntivi e una casella di controllo](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
 ## <a name="see-also"></a>Vedere anche
 

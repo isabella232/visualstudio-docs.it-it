@@ -14,17 +14,17 @@ helpviewer_keywords:
 - XDCMake task (MSBuild (C++))
 - MSBuild (C++), XDCMake task
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1ae0fbbcdb36c13a8c0ee91011f2b7d6fba9f5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747153"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578126"
 ---
 # <a name="xdcmake-task"></a>attività XDCMake
 Esegue il wrapping dello strumento Documentazione XML (*xdcmake.exe*) che unisce i file di commento (con estensione *xdc*) del documento XML in un file con estensione *xml*.

@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572478"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579752"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: Esaminare, commentare e testare il codice
 
@@ -60,12 +60,12 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
-    Il gestore dell'evento <xref:System.Windows.Forms.Control.Click> del pulsante **showButton** è ora completato e funziona. Si è iniziato a scrivere codice, iniziando con l'istruzione `if`. Un'istruzione `if` è il modo in cui si indica all'app, "controllare questa cosa e, se è vero, eseguire queste azioni". In questo caso, si indica all'app di aprire la finestra di dialogo **Apri file** e se l'utente seleziona un file e sceglie il pulsante **OK** , caricare il file in **PictureBox**.
+    Il gestore dell'evento **del pulsante**showButton<xref:System.Windows.Forms.Control.Click> è ora completato e funziona. Si è iniziato a scrivere codice, iniziando con l'istruzione `if`. Un'istruzione `if` è il modo in cui si indica all'app, "controllare questa cosa e, se è vero, eseguire queste azioni". In questo caso, si indica all'app di aprire la finestra di dialogo **Apri file** e se l'utente seleziona un file e sceglie il pulsante **OK** , caricare il file in **PictureBox**.
 
     > [!TIP]
     > L'IDE è compilato in modo da semplificare la scrittura del codice anche tramite i *frammenti di codice*. Un frammento è un collegamento che viene espanso in un piccolo blocco di codice.
     >
-    >  È possibile visualizzare tutti i frammenti disponibili. Sulla barra dei menu scegliere **Strumenti** > **Gestione frammenti di codice**. Per C#, il frammento di `if` è in **Visual C#**  . Per Visual Basic, i frammenti di `if` si trovano in **modelli di codice**  > **condizionali e cicli**. È possibile utilizzare questo strumento di gestione per esplorare frammenti esistenti o aggiungere frammenti personalizzati.
+    >  È possibile visualizzare tutti i frammenti disponibili. Sulla barra dei menu scegliere **Strumenti** > **Gestione frammenti di codice**. Per C#, il frammento di `if` è in **Visual C#**  . Per Visual Basic, i frammenti di `if` si trovano in **modelli di codice** > **condizionali e cicli**. È possibile utilizzare questo strumento di gestione per esplorare frammenti esistenti o aggiungere frammenti personalizzati.
     >
     >  Per attivare un frammento quando si digita il codice, digitarlo e premere **TAB**. Molti frammenti di codice vengono visualizzati nella finestra di **IntelliSense** ed è per questo motivo che è necessario premere **TAB** due volte: prima per selezionare il frammento di codice nella finestra di **IntelliSense** e poi per indicare all'IDE di usare il frammento di codice. Si noti che IntelliSense supporta il frammento `if`, ma non il frammento `ifelse`.
 
@@ -74,7 +74,7 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
      ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png)<br>
 *Pulsante* ***Salva tutto***
 
-     In alternativa, per salvare l'app, scegliere **File**  > **Salva tutto** dalla barra dei menu oppure premere **CTRL** +**MAIUSC** +**S**. Una procedura consigliata consiste nel salvare presto e spesso.
+     In alternativa, per salvare l'app, scegliere **File** > **Salva tutto** dalla barra dei menu oppure premere **CTRL**+**MAIUSC**+**S**. Una procedura consigliata consiste nel salvare presto e spesso.
 
      Quando è in esecuzione, il programma dovrebbe essere simile all'immagine seguente.
 

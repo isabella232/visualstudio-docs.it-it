@@ -13,30 +13,30 @@ helpviewer_keywords:
 - GetWinFXPath task [WPF MSBuild]
 - obtaining the path to the current .NET Framework runtime [WPF MSBuild]
 ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95e5ad882d7021b597d7ba0ad8c38177f4a5136
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 894cfe9fd6e116e983a5290e5817211182b073c7
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996335"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578611"
 ---
 # <a name="getwinfxpath-task"></a>Attività GetWinFXPath
 L'attività <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> restituisce la directory del runtime [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] corrente.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
-| Parametro | Description |
+| Parametro | Descrizione |
 |-------------------| - |
 | `WinFXPath` | Parametro di output **String** facoltativo.<br /><br /> Specifica il percorso reale del runtime [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)]. |
 | `WinFXNativePath` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso del runtime [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] nativo. |
 | `WinFXWowPath` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso degli assembly [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] nel modulo **Windows on Windows** a 32 bit nei sistemi a 64 bit. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Se l'attività <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> viene eseguita su un processore a 64 bit, il parametro **WinFXPath** viene impostato sul percorso archiviato nel parametro **WinFXWowPath**. In caso contrario, il parametro **WinFXPath** viene impostato sul percorso archiviato nel parametro **WinFXNativePath**.
 
 ## <a name="example"></a>Esempio
@@ -58,7 +58,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> restituisce la dir
 
 ## <a name="see-also"></a>Vedere anche
 - [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
-- [Riferimenti delle attività MSBuild](../msbuild/wpf-msbuild-task-reference.md)
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Creazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829999"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579939"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: introduzione a Visual Basic in Visual Studio
 
@@ -27,13 +27,13 @@ In questa esercitazione per Visual Basic (VB) si userà Visual Studio per creare
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+2. Dalla barra dei menu in alto scegliere **File** > **nuovo** > **progetto**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi denominare il progetto *WhatIsYourName*.
 
@@ -67,7 +67,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
 
-1. Chiudere la finestra di dialogo **Nuovo progetto** e nella barra dei menu in alto scegliere **Strumenti** > **Ottieni strumenti e funzionalità**.
+1. Annullare la finestra di dialogo **nuovo progetto** e dalla barra dei menu superiore scegliere **strumenti** > **ottenere strumenti e funzionalità**.
 
 1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
@@ -173,7 +173,7 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
 ::: moniker range="vs-2017"
 
-1. Aprire Visual Studio 2017, quindi scegliere **File** > **Nuovo** > **Progetto** nella barra dei menu in alto.
+1. Aprire Visual Studio 2017, quindi dalla barra dei menu superiore scegliere **File** > **nuovo** > **progetto**.
 
 1. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al file il nome *CalculateThis*.
 

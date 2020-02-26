@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, multi-processor logging
 - MSBuild, logging
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 65f0558e26583961d94ce380b59a60ecca45987b
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856017"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578530"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrazione in un ambiente a più processori
 La possibilità di MSBuild di utilizzare più processori può ridurre notevolmente i tempi di compilazione del progetto, ma aggiunge complessità alla registrazione. In un ambiente a processore singolo, il logger può gestire eventi, messaggi, avvisi ed errori in ingresso in modo prevedibile e sequenziale. Tuttavia, in un ambiente a più processori gli eventi di diverse origini possono arrivare contemporaneamente o fuori sequenza. MSBuild offre un nuovo logger compatibile con più processori e consente la creazione di "logger di inoltro" personalizzati.

@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e249f2ad765063c54df08466bef15b8e443af1bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591723"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579802"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere codice per il gestore dell'evento del pulsante Mostra immagine
 
@@ -69,14 +69,14 @@ Viene quindi usato IntelliSense per immettere altro codice per aprire una finest
  1. Quando si usa un metodo in un controllo o un componente, ovvero si effettua una *chiamata a un metodo*, è necessario aggiungere le parentesi. Immettere quindi le parentesi di apertura e chiusura immediatamente dopo la "g" di `ShowDialog`: `()` Viene visualizzato "openFileDialog1.ShowDialog()".
 
     > [!NOTE]
-    > I metodi sono una parte importante di qualsiasi app e in questa esercitazione sono stati illustrati diversi modi per usare i metodi. È possibile chiamare un metodo di un componente per indicare l'esecuzione di un'operazione, come è stato fatto quando si è chiamato il metodo `ShowDialog()` del componente **OpenFileDialog**. È possibile creare metodi personalizzati per fare in modo che l'app esegua operazioni, come quella che si sta compilando adesso, denominata metodo `showButton_Click()`, che apre una finestra di dialogo e un'immagine quando un utente sceglie un pulsante.
+    > I metodi sono una parte importante di qualsiasi app e in questa esercitazione sono stati illustrati diversi modi per usare i metodi. È possibile chiamare un metodo di un componente per indicare l'esecuzione di un'operazione, come è stato fatto quando si è chiamato il metodo **del componente**OpenFileDialog`ShowDialog()`. È possibile creare metodi personalizzati per fare in modo che l'app esegua operazioni, come quella che si sta compilando adesso, denominata metodo `showButton_Click()`, che apre una finestra di dialogo e un'immagine quando un utente sceglie un pulsante.
 
  1. Per C#, aggiungere uno spazio, quindi aggiungere due segni di uguale (`==`). Per Visual Basic, aggiungere uno spazio e quindi usare un solo segno di uguale (`=`). (C# e Visual Basic utilizzano operatori di uguaglianza diversi).
 
  1. Aggiungere un altro spazio. Viene immediatamente visualizzata un'altra finestra di **IntelliSense**. Iniziare a digitare `DialogResult` e premere **TAB** per aggiungerlo.
 
     > [!NOTE]
-    > Quando si scrive codice per chiamare un metodo, a volte viene restituito un valore. In questo caso il metodo <xref:System.Windows.Forms.CommonDialog.ShowDialog> del componente **OpenFileDialog** restituisce un valore <xref:System.Windows.Forms.DialogResult>. DialogResult è un valore speciale che fornisce informazioni sulle operazioni eseguite in una finestra di dialogo. Un componente **OpenFileDialog** può far sì che l'utente scelga **OK** o **Annulla**, quindi il relativo metodo `ShowDialog()` restituisce `DialogResult.OK` o `DialogResult.Cancel`.
+    > Quando si scrive codice per chiamare un metodo, a volte viene restituito un valore. In questo caso il metodo **del componente**OpenFileDialog<xref:System.Windows.Forms.CommonDialog.ShowDialog> restituisce un valore <xref:System.Windows.Forms.DialogResult>. DialogResult è un valore speciale che fornisce informazioni sulle operazioni eseguite in una finestra di dialogo. Un componente **OpenFileDialog** può far sì che l'utente scelga **OK** o **Annulla**, quindi il relativo metodo `ShowDialog()` restituisce `DialogResult.OK` o `DialogResult.Cancel`.
 
  1. Digitare un punto per aprire la finestra di **IntelliSense** del valore DialogResult. Immettere la lettera `O` e premere **TAB** per inserire **OK**.
 

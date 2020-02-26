@@ -5,17 +5,17 @@ ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588746"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579409"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Passaggio 2: eseguire l'app visualizzatore immagini
 
@@ -46,7 +46,7 @@ Ecco come eseguire l'app.
 
 1. Per arrestare l'app, usare uno dei metodi seguenti:
 
-    - Sulla barra degli strumenti scegliere il pulsante**Termina debug**.
+    - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
 
     - Sulla barra dei menu scegliere **Debug** > **Termina debug**.
 

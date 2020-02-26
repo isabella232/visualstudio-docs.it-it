@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - VerifyFileHash task [MSBuild]
 - MSBuild, VerifyFileHash task
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9340657704900feb5ebdc188103109872ee39f5d
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439122"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579531"
 ---
 # <a name="verifyfilehash-task"></a>Attività VerifyFileHash
 
@@ -37,7 +37,7 @@ Questa attività è stata aggiunta nella versione 15.8. È tuttavia necessaria u
 |`File`|Parametro `String` obbligatorio.<br /><br />File di cui eseguire l'hashing e la convalida.|
 |`Hash`|Parametro `String` obbligatorio.<br /><br />Hash file previsto.|
 |`Algorithm`|Parametro `String` facoltativo.<br /><br />Algoritmo. Valori consentiti: `SHA256`, `SHA384`, `SHA512`. Valore predefinito = `SHA256`.|
-|`HashEncoding`|Parametro `String` facoltativo.<br /><br />Codifica da usare per gli hash generati. L'impostazione predefinita è `hex`. Valori consentiti = `hex`, `base64`.|
+|`HashEncoding`|Parametro `String` facoltativo.<br /><br />Codifica da usare per gli hash generati. Il valore predefinito è `hex`. Valori consentiti = `hex`, `base64`.|
 
 ## <a name="example"></a>Esempio
 
@@ -88,4 +88,4 @@ In MSBuild 16,5 e versioni successive, se non si vuole che la compilazione abbia
 ## <a name="see-also"></a>Vedere anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

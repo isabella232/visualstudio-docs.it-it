@@ -12,24 +12,24 @@ helpviewer_keywords:
 - non-localizable resources [WPF MSBuild], classifying to embed in an assembly
 - FileClassifier task [WPF MSBuild]
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d9dd845a69243cd8bedb095c63f75670f39afff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830171"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579677"
 ---
 # <a name="fileclassifier-task"></a>Attività FileClassifier
 L'attività <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica un insieme di risorse di origine come quelle che verranno incorporate in un assembly. Se una risorsa non è localizzabile, viene incorporata nell'assembly dell'applicazione principale. In caso contrario, viene incorporata in un assembly satellite.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`CLREmbeddedResource`|Non usato.|
 |`CLRResourceFiles`|Non usato.|
@@ -40,7 +40,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica un in
 |`SatelliteEmbeddedFiles`|Parametro di output **ITaskItem[]** facoltativo.<br /><br /> Specifica i file localizzabili incorporati nell'assembly satellite per le impostazioni cultura specificate dal parametro **Culture**.|
 |`SourceFiles`|Parametro **ITaskItem []** obbligatorio.<br /><br /> Specifica l'elenco di file da classificare.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Se il parametro **Culture** non è impostato, tutte le risorse specificate usando il parametro **SourceFiles** non sono localizzabili. In caso contrario, sono localizzabili a meno che non vengano associate a un attributo **Localizable** impostato su **false**.
 
 ## <a name="example"></a>Esempio
@@ -65,7 +65,7 @@ Nell'esempio seguente un singolo file di origine viene classificato come risorsa
 
 ## <a name="see-also"></a>Vedere anche
 - [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
-- [Riferimenti delle attività MSBuild](../msbuild/wpf-msbuild-task-reference.md)
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Creazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

@@ -13,25 +13,25 @@ helpviewer_keywords:
 - GetFrameworkPath task [MSBuild]
 - MSBuild, GetFrameworkPath task
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 65a96b59837d04deb0517d3ab79b3b668e036a20
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747549"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579648"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (attività)
 Recupera il percorso degli assembly di .NET Framework.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
-Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkPath` .
+Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkPath`.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`FrameworkVersion11Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso agli assembly della versione 1.1 del framework, se presenti. In caso contrario restituisce `null`.|
 |`FrameworkVersion20Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso agli assembly della versione 2.0 del framework, se presenti. In caso contrario restituisce `null`.|
@@ -40,10 +40,10 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GetFramewo
 |`FrameworkVersion40Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso agli assembly della versione 4.0 del framework, se presenti. In caso contrario restituisce `null`.|
 |`Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso agli assembly del framework più recente, se disponibili. In caso contrario restituisce `null`.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Se sono installate diverse versioni di .NET Framework, l'attività restituisce la versione in cui deve essere eseguito [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in base alla progettazione.
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente viene usata l'attività `GetFrameworkPath` per archiviare il percorso a .NET Framework nella proprietà `FrameworkPath`.
@@ -62,4 +62,4 @@ Nell'esempio seguente viene usata l'attività `GetFrameworkPath` per archiviare 
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

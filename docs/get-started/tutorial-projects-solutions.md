@@ -1,6 +1,6 @@
 ---
 title: Introduzione a progetti e soluzioni
-ms.date: 07/22/2019
+ms.date: 02/24/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c130f7f55409bd24520dd55e949d20e8d5bbb97
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: da2fc196f687e2335933794a578f507dafbc6de3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567268"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579980"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informazioni su progetti e soluzioni
 
@@ -22,13 +22,13 @@ Questa articolo introduttivo spiega che cosa significa creare una *soluzione* e 
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
    Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
    > [!NOTE]
-   > Se **Visual C#** non viene visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il **carico di lavoro***Sviluppo per desktop .NET* di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo facile per installare un nuovo carico di lavoro consiste nello scegliere il collegamento **Apri il programma di installazione di Visual Studio** nell'angolo in basso a sinistra della finestra di dialogo **Aggiungi nuovo progetto**. Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
+   > Se l'oggetto **visivo C#**  non è visibile nel riquadro sinistro della finestra di dialogo, è necessario installare il carico di lavoro di Visual Studio per **lo sviluppo di applicazioni desktop .NET** . Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo. Un modo facile per installare un nuovo carico di lavoro consiste nello scegliere il collegamento **Apri il programma di installazione di Visual Studio** nell'angolo in basso a sinistra della finestra di dialogo **Aggiungi nuovo progetto**. Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
    >
    > ![Collegamento Apri il programma di installazione di Visual Studio](media/tutorial-projects-open-installer.png)
 
@@ -113,7 +113,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
    Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
    > [!NOTE]
-   > Se non viene visualizzato il modello **Progetto vuoto (.NET Framework)** , è necessario installare il *carico di lavoro***Sviluppo per desktop .NET** di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo semplice per installare un nuovo carico di lavoro quando si crea un nuovo progetto è scegliere il collegamento **Installa altri strumenti e funzionalità** visualizzato sotto **L'elemento cercato non è stato trovato?** . Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
+   > Se non viene visualizzato il modello di **progetto vuoto (.NET Framework)** , è necessario installare il carico di lavoro di Visual Studio per **lo sviluppo di applicazioni desktop .NET** . Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo. Un modo semplice per installare un nuovo carico di lavoro quando si crea un nuovo progetto è scegliere il collegamento **Installa altri strumenti e funzionalità** visualizzato sotto **L'elemento cercato non è stato trovato?** . Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
    >
    > ![Collegamento Apri il programma di installazione di Visual Studio](media/vs-2019/tutorial-projects-open-installer.png)
 
@@ -127,7 +127,7 @@ Ora il progetto è vuoto. Aggiungiamo un file di codice.
 
    Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
 
-1. Espandere **Elementi di Visual C#** , quindi scegliere **Codice**. Nel riquadro centrale scegliere il modello dell'elemento **Classe**. Assegnare il nome **Calendar** alla classe e scegliere il pulsante **Aggiungi**.
+1. Espandere **Elementi di Visual C#** , quindi scegliere **Codice**. Nel riquadro centrale scegliere il modello elemento **classe** . Assegnare il nome **Calendar** alla classe e scegliere il pulsante **Aggiungi**.
 
    Il file *Calendar.cs* viene aggiunto al progetto. Il valore *cs* finale è l'estensione del nome file assegnata ai file di codice C#. Il file appare nella gerarchia visuale del progetto in **Esplora soluzioni** e il suo contenuto viene aperto nell'editor.
 
@@ -163,7 +163,7 @@ Molto spesso le soluzioni contengono più di un progetto e spesso tali progetti 
 
 Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizierà con un modello di progetto, pertanto non sarà necessario inserire un file di codice aggiuntivo nel progetto.
 
-1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
+1. Nel menu di scelta rapida o nel menu a comparsa **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
    Viene visualizzata la finestra di dialogo **Gestione riferimenti**.
 
-1. Nel riquadro sinistro espandere **Progetti** e scegliere **Soluzione**. Nel riquadro centrale selezionare la casella di controllo accanto a **QuickDate** e quindi scegliere **OK.
+1. Nel riquadro sinistro espandere **Progetti** e scegliere **Soluzione**. Nel riquadro centrale scegliere la casella di controllo accanto a **QuickDate**, quindi scegliere **OK**.
 
    Viene aggiunto un riferimento al progetto **QuickDate**.
 
@@ -245,7 +245,7 @@ La riga del file *Calendar.cs* contenente l'attributo <xref:System.Runtime.Compi
 
 1. In **Esplora soluzioni** selezionare il progetto **QuickTest**. Nel menu di scelta rapida o nel menu a comparsa selezionare **Proprietà** oppure premere semplicemente **ALT**+**INVIO**.
 
-   Le *pagine delle proprietà* per il progetto vengono aperte nella scheda **applicazione** . Le pagine delle proprietà contengono diverse impostazioni per il progetto. Si noti che il nome dell'assembly del progetto **QuickTest** è effettivamente "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
+   Le *pagine delle proprietà* per il progetto vengono aperte nella scheda **applicazione** . Le pagine delle proprietà contengono diverse impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
 
    ![Proprietà di progetti](media/tutorial-projects-netcore-properties.png)
 
@@ -257,13 +257,24 @@ Per verificare che l'unit test funzioni scegliere **Test** > **Esegui** > **Tutt
 
 ![Esplora test in Visual Studio mostra che il test è stato superato](media/tutorial-projects-test-explorer.png)
 
+::: moniker range="vs-2017"
+
 > [!TIP]
 > Se **Esplora Test** non si apre automaticamente, aprirlo scegliendo **Test** > **Windows** > **Esplora Test** dalla barra dei menu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Se **Esplora test** non viene aperto automaticamente, aprirlo scegliendo **test** > **Esplora test** dalla barra dei menu.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Creare soluzioni e progetti](../ide/creating-solutions-and-projects.md)
-- [Gestire le proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
+- [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
 - [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)
 - [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
+- [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)

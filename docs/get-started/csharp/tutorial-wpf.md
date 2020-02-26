@@ -9,19 +9,19 @@ ms.topic: conceptual
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: ba8a29a75b21351d94c818837f07ff22785a07b5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864778"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579989"
 ---
-# <a name="tutorial-create-a-simple-application-with-c"></a>Esercitazione: Creare una semplice applicazione con C\#
+# <a name="tutorial-create-a-simple-application-with-c"></a>Esercitazione: creare un'applicazione semplice con C\#
 
 Completando questa esercitazione, si acquisirà familiarità con molti strumenti, finestre di dialogo e finestre di progettazione che è possibile usare quando si sviluppano applicazioni con Visual Studio. Si creerà un' applicazione "Hello, World", si progetterà l'interfaccia utente, si aggiungerà il codice e si eseguirà il debug degli errori, apprendendo l'uso dell'ambiente di sviluppo integrato ([IDE](visual-studio-ide.md)).
 
@@ -44,15 +44,15 @@ Quando si apre per la prima volta, Visual Studio richiede di eseguire l'accesso.
 
 ![Finestra di dialogo Selezionare le impostazioni](../media/exploreide-settings.png)
 
-Dopo aver avviato Visual Studio, saranno visualizzati le finestre degli strumenti, i menu, le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con **Avvio veloce**, la barra dei menu e la barra degli strumenti standard nella parte superiore. Al centro della finestra dell'applicazione si trova **Pagina iniziale**. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nello spazio in cui si trova la **pagina iniziale** . Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
+Dopo aver avviato Visual Studio, saranno visualizzati le finestre degli strumenti, i menu, le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con **Avvio veloce**, la barra dei menu e la barra degli strumenti standard nella parte superiore. Al centro della finestra dell'applicazione si trova **Pagina iniziale**. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nello spazio in cui si trova la **pagina iniziale** . Quando si sviluppa un'applicazione, la maggior parte del tempo verrà dedicata a questa area centrale.
 
-![Visual Studio 2017 IDE con impostazioni generali applicate](../media/exploreide-idewithgeneralsettings.png "Screenshot dell'IDE di Visual Studio 2017 con le impostazioni generali applicate")
+![Visual Studio 2017 IDE con impostazioni generali applicate](../media/exploreide-idewithgeneralsettings.png "Screenshot dell'IDE di Visual Studio 2017 con impostazioni generali applicate")
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Quando si avvia Visual Studio, si apre la finestra iniziale. Selezionare **Continua senza codice** per aprire l'ambiente di sviluppo. Saranno visualizzate le finestre degli strumenti, i menu, barre degli strumenti e lo spazio della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con una casella di ricerca, la barra dei menu e la barra degli strumenti standard nella parte superiore. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nell'area al centro della finestra dell'applicazione. Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
+Quando si avvia Visual Studio, si apre la finestra iniziale. Selezionare **Continua senza codice** per aprire l'ambiente di sviluppo. Saranno visualizzate le finestre degli strumenti, i menu, barre degli strumenti e lo spazio della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con una casella di ricerca, la barra dei menu e la barra degli strumenti standard nella parte superiore. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nell'area al centro della finestra dell'applicazione. Quando si sviluppa un'applicazione, la maggior parte del tempo verrà dedicata a questa area centrale.
 
 ::: moniker-end
 
@@ -64,11 +64,11 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 1. Creare un nuovo progetto. Nella barra dei menu selezionare **File** > **Nuovo** > **Progetto**.
 
-     ![Nella barra dei menu scegliere file, Nuovo, Progetto](../media/exploreide-filenewproject.png "Screenshot della barra dei menu in cui è possibile scegliere File, Nuovo, Progetto")
+     ![Nella barra dei menu scegliere File, Nuovo, Progetto](../media/exploreide-filenewproject.png "Screenshot della barra dei menu in cui è possibile scegliere file, nuovo, progetto")
 
 1. Nella finestra di dialogo **Nuovo progetto** selezionare la categoria **Installati** > **Visual C#**  > **Windows Desktop** e quindi selezionare il modello **App WPF (.NET Framework)** . Assegnare al progetto il nome **HelloWPFApp** e scegliere **OK**.
 
-     ![Modello di app WPF nella finestra Nuovo progetto di Visual Studio](media/exploreide-newprojectcsharp.png "Screenshot del modello di app WPF nella finestra di dialogo Nuovo progetto")
+     ![Modello di applicazione WPF nella finestra di dialogo nuovo progetto di Visual Studio](media/exploreide-newprojectcsharp.png "Screenshot del modello di applicazione WPF nella finestra di dialogo nuovo progetto")
 
 ::: moniker-end
 
@@ -78,18 +78,18 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 1. Nella finestra iniziale scegliere **Crea nuovo progetto**.
 
-   ![Visualizzare la finestra 'Crea un nuovo progetto'](../../get-started/media/vs-2019/start-window-create-new-project.png "Screenshot della finestra 'Crea un nuovo progetto'")
+   ![Visualizzare la finestra ' Crea nuovo progetto '](../../get-started/media/vs-2019/start-window-create-new-project.png "Screenshot della finestra ' Crea nuovo progetto '")
 
 1. Nella schermata **Crea un nuovo progetto** cercare "WPF", scegliere **app WPF (.NET Core)** , quindi fare clic su **Avanti**.
 
-   ![Modello di app WPF nella finestra di dialogo 'Crea un nuovo progetto'](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Screenshot del modello di app WPF nella finestra di dialogo 'Crea un nuovo progetto'")
+   ![Modello di applicazione WPF nella finestra di dialogo ' Crea nuovo progetto '](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Screenshot del modello di applicazione WPF nella finestra di dialogo "Crea nuovo progetto"")
 
    > [!NOTE]
    > È possibile trovare due modelli desktop WPF, uno per .NET Framework e un altro per .NET Core. Il modello di .NET Core è disponibile in Visual Studio 2019 versione 16,3 e successive. È possibile usarli per questa esercitazione, ma è consigliabile usare .NET Core per il nuovo sviluppo.
 
 1. Nella schermata successiva assegnare al progetto il nome **HelloWPFApp** e scegliere **Crea**.
 
-   ![Assegnare al progetto il nome 'HelloWPFApp'](./media/vs-2019/exploreide-nameproject.png "Screenshot della finestra in cui si assegna un nome al progetto")
+   ![Denominare il progetto ' HelloWPFApp '](./media/vs-2019/exploreide-nameproject.png "Screenshot della finestra in cui si rinomina il progetto")
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzio
 
 Dopo aver creato il progetto, sarà possibile personalizzarlo. A tale scopo, scegliere **Finestra Proprietà** dal menu **Visualizza** o premere **F4**. È quindi possibile visualizzare e modificare le opzioni per elementi di progetto, controlli e altri elementi in un'applicazione.
 
-   ![Finestra Proprietà](../media/exploreide-hellowpfappfiles.png "Screenshot della finestra Proprietà con i nomi delle app di file WPF")   
+   ![Finestra Proprietà](../media/exploreide-hellowpfappfiles.png "Screenshot della Finestra Proprietà con i nomi delle app file WPF")   
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
@@ -116,7 +116,7 @@ Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:Sys
 
 ### <a name="add-a-textblock-control"></a>Aggiungere un controllo TextBlock
 
-1. Premere **CTRL**+**Q** per attivare la casella di ricerca e digitare **casella degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
+1. Premere **Ctrl**+**Q** per attivare la casella di ricerca e digitare **casella degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
 
 1. Nella **casella degli strumenti** espandere il nodo **Controlli WPF comuni** per visualizzare il controllo TextBlock.
 
@@ -126,7 +126,7 @@ Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:Sys
 
     La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
 
-    ![Controllo TextBlock nel form Greetings](../media/exploreide-greetingswithtextblockonly.png "Screenshot del controllo TextBlock nel form Greetings")
+    ![Controllo TextBlock nel modulo di messaggi di apertura](../media/exploreide-greetingswithtextblockonly.png "Screenshot del controllo TextBlock nel modulo Greetings")
 
    Il markup XAML sarà simile all'esempio seguente:
 
@@ -156,17 +156,17 @@ Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/
 
 1. Nella **casella degli strumenti** cercare il controllo **RadioButton**.
 
-     ![Finestra casella degli strumenti con il controllo RadioButton selezionato](../media/exploreide-radiobuttontoolbox.png "Screenshot della finestra casella degli strumenti con il controllo RadioButton selezionato")
+     ![Finestra Casella degli strumenti con il controllo RadioButton selezionato](../media/exploreide-radiobuttontoolbox.png "Screenshot della finestra casella degli strumenti con il controllo RadioButton selezionato")
 
 1. Aggiungere due controlli RadioButton all'area di progettazione scegliendo l'elemento **RadioButton** e trascinandolo nell'area di progettazione nella finestra. Selezionare i pulsanti e usare i tasti di direzione per spostare i pulsanti in modo che vengano visualizzati affiancati sotto il controllo TextBlock. Usare le linee guida rosse per allineare i controlli.
 
    La finestra dovrebbe risultare simile alla seguente:
 
-   ![Form Greetings con TextBlock e due pulsanti di opzione](../media/exploreide-greetingswithradiobuttons.png "Screenshot del form Greetings con TextBlock e due pulsanti di opzione")
+   ![Modulo Greetings con TextBlock e due pulsanti di opzione](../media/exploreide-greetingswithradiobuttons.png "Screenshot del modulo Greetings con TextBlock e due pulsanti di opzione")
 
 1. Nella finestra **Proprietà** per il controllo RadioButton sinistro modificare la proprietà **Nome** (la proprietà nella parte superiore della finestra **Proprietà** ) in `HelloButton`.
 
-    ![Finestra Proprietà RadioButton](../media/exploreide-buttonproperties.png "Screenshot della finestra Proprietà RadioButton")
+    ![Finestra Proprietà RadioButton](../media/exploreide-buttonproperties.png "Screenshot della finestra delle proprietà di RadioButton")
 
 1. Nella finestra **Proprietà** per il controllo RadioButton destro modificare la proprietà **Nome** in `GoodbyeButton`, quindi salvare le modifiche.
 
@@ -174,7 +174,7 @@ Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/
 
 ### <a name="add-display-text-for-each-radio-button"></a>Aggiungere testo visualizzato per ogni pulsante di opzione
 
-1. Aggiornare l' **attributo content** per `HelloButton` e `GoodbyeButton` a `"Hello"` e `"Goodbye"` in XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
+1. Aggiornare l'attributo **Content** per la `HelloButton` e `GoodbyeButton` a `"Hello"` e `"Goodbye"` in XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
 
    ```xaml
    <Grid>
@@ -212,7 +212,7 @@ L'elemento finale dell'interfaccia utente da aggiungere è un controllo [Button]
 
      La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
 
-     ![Form Greetings con etichette di controllo](media/exploreide-greetingswithcontrollabels-cs.png "Screenshot del form Greetings con etichette di controllo")
+     ![Modulo Greetings con etichette del controllo](media/exploreide-greetingswithcontrollabels-cs.png "Screenshot del modulo Greetings con le etichette dei controlli")
 
    Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
 

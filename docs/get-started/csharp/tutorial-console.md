@@ -7,20 +7,20 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e72cba384d3780c738c29698f74cbc3b4898bb04
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 6e4bb97cc510ceb580b28a05eb6f3b27acdd451a
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476719"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580019"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: creare una semplice C# app console in Visual Studio
 
@@ -28,13 +28,13 @@ In questa esercitazione per C# si userà Visual Studio per creare ed eseguire un
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Per prima cosa, si creerà un progetto di applicazione C#. Il tipo di progetto i
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
+2. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
    In alternativa premere **CTRL**+**MAIUSC**+**N**).
 
 3. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **C#** e scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al file il nome ***CalculateThis***.

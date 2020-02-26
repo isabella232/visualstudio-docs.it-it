@@ -13,17 +13,17 @@ helpviewer_keywords:
 - build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
 - WPF MSBuild task reference [WPF MSBuild]
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 84aeae06a5440bfc82eb9590919800ebcdd425d5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778302"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578184"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Informazioni di riferimento sulle attività MSBuild WPF
 Il processo di compilazione di Windows Presentation Foundation (WPF) estende Microsoft Build Engine (MSBuild) con un set aggiuntivo di attività di compilazione, tra cui attività di compilazione del markup ed elaborazione di risorse.
@@ -63,7 +63,7 @@ Il processo di compilazione di Windows Presentation Foundation (WPF) estende Mic
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Aggiunge l'elemento **\<hostInBrowser />** al manifesto dell'applicazione (*\<nomeprogetto>.exe.manifest*) quando viene compilato un progetto [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
+ Aggiunge l'elemento **\<hostInBrowser />** al manifesto dell'applicazione ( *\<nomeprogetto>.exe.manifest*) quando viene compilato un progetto [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
 
 ## <a name="see-also"></a>Vedere anche
 - [MSBuild](../msbuild/msbuild.md)

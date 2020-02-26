@@ -1,5 +1,5 @@
 ---
-title: "Passaggio 5: Distribuzione dell'app ASP.NET Core in Azure"
+title: "Passaggio 5: distribuzione dell'app ASP.NET Core in Azure"
 description: Distribuire l'App Web di ASP.NET Core in Azure con questo video di esercitazione e per istruzioni dettagliate.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -9,21 +9,21 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970934"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580025"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Passaggio 5: Distribuire l'app ASP.NET Core in Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Passaggio 5: distribuire l'app ASP.NET Core in Azure
 
 Seguire questi passaggi per distribuire l'app ASP.NET Core e il relativo database in Azure.
 
@@ -57,7 +57,7 @@ Dopo aver creato il servizio app, il sito verrà avviato in un browser. Durante 
 
 ### <a name="scalability"></a>Scalabilità
 
-È possibile esaminare le opzioni per la scalabilità dell'app. È possibile aumentare le risorse assegnate a ogni istanza che ospita l'app oppure aumentare il numero di istanze che ospitano l'app. Si può anche configurare la scalabilità automatica per l'app, in modo da aumentare automaticamente il numero di istanze usate per ospitare l'app in risposta al carico, per poi ridurle quando il carico diminuisce.
+È possibile esaminare le opzioni per la scalabilità dell'app e così via. La scalabilità verticale si riferisce all'aumento delle risorse assegnate a ogni istanza che ospita l'app. oppure aumentare il numero di istanze che ospitano l'app. Si può anche configurare la scalabilità automatica per l'app, in modo da aumentare automaticamente il numero di istanze usate per ospitare l'app in risposta al carico, per poi ridurle quando il carico diminuisce.
 
 ### <a name="security-and-compliance"></a>Sicurezza e conformità
 

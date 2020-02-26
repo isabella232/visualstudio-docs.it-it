@@ -1,5 +1,5 @@
 ---
-title: 'Esercitazione: Introduzione a C# e ad ASP.NET Core'
+title: 'Esercitazione: Introduzione a C# e ASP.NET Core'
 titleSuffix: ''
 description: Informazioni dettagliate su come creare un'app web ASP.NET Core in Visual Studio con C#.
 ms.custom: seodec18, get-started
@@ -8,22 +8,22 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252465"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580054"
 ---
-# <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: Introduzione a C# e ad ASP.NET Core in Visual Studio
+# <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: introduzione a C# e ad ASP.NET Core in Visual Studio
 
 In questa esercitazione per lo sviluppo in C# con ASP.NET Core tramite Visual Studio si creerà un'app Web ASP.NET Core in C#, si apporteranno modifiche, si esploreranno alcune funzionalità dell'ambiente IDE e quindi si eseguirà l'app.
 
@@ -59,7 +59,7 @@ Prima di tutto è necessario creare un progetto ASP.NET Core. Il tipo di progett
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+2. Dalla barra dei menu in alto scegliere **File** > **nuovo** > **progetto**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual C#** , espandere **Web** e quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Quindi denominare il file *MyCoreApp* e scegliere **OK**.
 
@@ -106,7 +106,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-   ![Visualizzare la finestra Crea un nuovo progetto](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Visualizzare la finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Nella finestra **Crea un nuovo progetto** immettere o digitare *ASP.NET* nella casella di ricerca. Scegliere quindi **C#**  dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
 
@@ -123,7 +123,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
    >
    > ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](../../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Se viene chiesto di salvare, procedere. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
+   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Se viene chiesto di salvare, procedere. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura "[Creare un progetto](#create-a-project)".
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *MyCoreApp* nella casella **Nome del progetto**. Scegliere **Crea**.
 
@@ -298,7 +298,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
 1. Tornare a Visual Studio e quindi premere **MAIUSC+F5** per interrompere la modalità di debug. Verrà anche chiuso il progetto nella finestra del browser.
 
-1. In Visual Studio aprire **privacy. cshtml** per la modifica. Eliminare quindi le parole _usare questa pagina per illustrare in dettaglio l'informativa sulla privacy del sito_ e al suo posto aggiungere le parole _che questa pagina @ViewDataè in fase di costruzione a partire da ["timestamp"]_ .
+1. In Visual Studio aprire **privacy. cshtml** per la modifica. Quindi, eliminare le parole _usare questa pagina per illustrare in dettaglio l'informativa sulla privacy del sito_ e al suo posto aggiungere le parole _che questa pagina è in fase di creazione a partire da @ViewData["timestamp"]_ .
 
     ![Modificare il testo nel file privacy. cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
@@ -312,7 +312,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
    ![Anteprima modifiche](media/vs-2019/csharp-aspnet-preview-changes.png)
 
-   Scegliere **applica**. Visual Studio elimina le direttive `using` non necessarie dal file.
+   Scegliere **Applica**. Visual Studio elimina le direttive `using` non necessarie dal file.
 
 1. Nel metodo `OnGet()` modificare quindi il corpo con il codice seguente:
 
