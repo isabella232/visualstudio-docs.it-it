@@ -1,7 +1,7 @@
 ---
 title: Problemi noti dei contenitori
 description: I problemi noti seguenti possono verificarsi quando si installa Visual Studio Build Tools in un contenitore di Windows.
-ms.date: 07/03/2019
+ms.date: 02/18/2020
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a281113f75484940544e5cbd53292207114d21c0
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
+ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77453382"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77611132"
 ---
 # <a name="known-issues-for-containers"></a>Problemi noti dei contenitori
 
 Esistono alcuni problemi durante l'installazione di Visual Studio in un contenitore Docker.
 
-## <a name="windows-container"></a>Contenitore di Windows
+## <a name="windows-container"></a>Contenitore Windows
 
 I problemi noti seguenti si verificano quando si installa Visual Studio Build Tools in un contenitore di Windows.
 
@@ -40,7 +40,7 @@ I problemi noti seguenti si verificano quando si installa Visual Studio Build To
 * Passare `--norestart` sulla riga di comando. Alla data di redazione di questo articolo, qualsiasi tentativo di riavviare un contenitore di Windows dall'interno del contenitore restituisce `ERROR_TOO_MANY_OPEN_FILES` all'host.
 * Se si basa l'immagine direttamente su microsoft/windowsservercore, .NET Framework potrebbe non essere installato correttamente e non viene segnalato nessun errore di installazione. Il codice gestito potrebbe non essere eseguito dopo il completamento dell'installazione. Basare invece l'immagine su [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) o versione successiva. Ad esempio, durante la compilazione con MSBuild potrebbe essere visualizzato un errore simile al seguente:
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): errore MSB6003: non è stato possibile eseguire l'eseguibile dell'attività specificato "csc.exe". Impossibile caricare il file o l'assembly 'System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' o una delle relative dipendenze. Il sistema non riesce a trovare il file specificato.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): errore MSB6003: non è stato possibile eseguire l'eseguibile dell'attività specificato "csc.exe". Impossibile caricare il file o l'assembly 'System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' o una delle relative dipendenze. Non è possibile trovare il file specificato.
 
 ::: moniker range="vs-2017"
 
