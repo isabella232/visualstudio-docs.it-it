@@ -13,18 +13,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41a32b914cab8626df513994a3d68c2aac3d7cb7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e2d825c0c08ffeba1449954ed310644dd4437840
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593434"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634539"
 ---
 # <a name="assigntargetpath-task"></a>Attività AssignTargetPath
+
 Questa attività accetta un elenco di file e aggiunge gli attributi `<TargetPath>`, se non sono già specificati.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
-Nella tabella che segue vengono descritti i parametri dell'attività `AssignTargetPath` .
+
+Nella tabella che segue vengono descritti i parametri dell'attività `AssignTargetPath`.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
@@ -33,9 +35,11 @@ Nella tabella che segue vengono descritti i parametri dell'attività `AssignTarg
 |`AssignedFiles`|Facoltativa<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametro di output.<br /><br /> Contiene l'elenco di file risultante.|
 
 ## <a name="remarks"></a>Note
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
+
 Nell'esempio seguente viene eseguita l'attività `AssignTargetPath` per configurare un progetto.
 
 ```xml
@@ -52,5 +56,6 @@ RootFolder="Resources"
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

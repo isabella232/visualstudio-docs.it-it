@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c64f0079a03b730fb700cfbc6320c5dffa05d7a
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 7eadb30ee25b1182be5deb12feebd5ef280ebf4b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579509"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630678"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
+
 Scrive i log di rilevamento per tutti i thread e contesti.
 
 ## <a name="syntax"></a>Sintassi
@@ -32,6 +33,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 ```
 
 #### <a name="parameters"></a>Parametri
+
 [in] `intermediateDirectory`
 
  Directory in cui archiviare il log di rilevamento.
@@ -41,10 +43,13 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
  Nome radice del nome file di log.
 
 ## <a name="return-value"></a>Valore restituito
+
  **HRESULT** con il bit **SUCCEEDED** impostato se il contesto di rilevamento è stato creato.
 
 ## <a name="requirements"></a>Requisiti
+
  **Intestazione:** *FileTracker. h*
 
 ## <a name="see-also"></a>Vedere anche
+
 - [WriteContextTLogs](../msbuild/writecontexttlogs.md)

@@ -15,24 +15,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a0ef3fc6fe446ccda5479c95301d71efa84be4
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 4f8a59349540492cd441f1eb3fa63ed520c0e8cd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557800"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633278"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Informazioni di riferimento sullo schema del file di progetto di MSBuild
 
-Fornisce una tabella di tutti gli elementi di XML Schema di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con gli attributi e gli elementi figlio disponibili.
+Fornisce una tabella di tutti gli elementi di XML Schema di MSBuild con i relativi attributi ed elementi figlio disponibili.
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa i file di progetto per indicare al motore di compilazione che cosa compilare e come compilarlo. I file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sono file XML che rispettano l'XML Schema di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Questa sezione illustra il file di definizione di XML Schema (con estensione *csd*) per [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ MSBuild utilizza i file di progetto per indicare al motore di compilazione cosa compilare e come compilarlo. I file di progetto MSBuild sono file XML che rispettano il XML Schema MSBuild. Questa sezione illustra il file di definizione XML Schema (*xsd*) per MSBuild.
 
 Il collegamento allo schema in un file di progetto MSBuild non è necessario in Visual Studio 2017 e versioni successive. Se presente, deve essere ` http://schemas.microsoft.com/developer/msbuild/2003` indipendentemente dalla versione di Visual Studio.
 
 ## <a name="msbuild-xml-schema-elements"></a>Elementi di XML Schema di MSBuild
 
- La tabella seguente elenca tutti gli elementi di XML Schema di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con gli elementi figlio e gli attributi.
+ Nella tabella seguente sono elencati tutti gli elementi di MSBuild XML Schema insieme ai relativi attributi e elementi figlio.
 
 |Elemento|Elementi figlio|Attributes|
 |-------------|--------------------|----------------|

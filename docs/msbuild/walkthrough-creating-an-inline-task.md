@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77271180"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631159"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Procedura dettagliata: Creare un'attività inline
+
 Le attività di MSBuild in genere vengono create compilando una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. Per altre informazioni, vedere [Inline Tasks](../msbuild/msbuild-inline-tasks.md) (Attività inline).
 
  Questa procedura dettagliata mostra come creare ed eseguire le attività inline seguenti:
@@ -40,13 +41,12 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 3. Usare la **finestra del prompt dei comandi**  per compilare il progetto ed esaminare i risultati.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Creare e modificare un progetto MSBuild
+
  Il sistema dei progetti di Visual Studio si basa su MSBuild. È pertanto possibile creare un file di progetto di compilazione usando Visual Studio. In questa sezione si crea un file di progetto Visual C#. In alternativa, è possibile creare un file di progetto di Visual Basic. Nel contesto di questa esercitazione, le differenze tra i due file di progetto sono trascurabili.
 
 #### <a name="to-create-and-modify-a-project-file"></a>Per creare e modificare un file di progetto
 
-1. In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
-
-2. Nella finestra di dialogo **Nuovo progetto** selezionare il tipo di progetto **Visual C#** e quindi selezionare il modello **Applicazione Windows Form**. Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio *D:\\* . Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia **InlineTasks**.
+1. In Visual Studio creare un nuovo progetto usando il C# modello di **applicazione Windows Forms** . Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio *D:\\* . Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia **InlineTasks**.
 
 3. Scegliere **OK** per creare il file di progetto.
 
@@ -57,6 +57,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
      Il file di progetto verrà visualizzato nell'editor del codice.
 
 ## <a name="add-a-basic-hello-task"></a>Aggiungere un'attività di base denominata Hello
+
  A questo punto, aggiungere al file di progetto un'attività di base che visualizza il messaggio "Hello, world!". Aggiungere anche una destinazione TestBuild predefinita per richiamare l'attività.
 
 #### <a name="to-add-a-basic-hello-task"></a>Per aggiungere un'attività di base denominata Hello
@@ -88,6 +89,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
    Questo codice consente di creare un'attività inline denominata Hello e senza parametri, riferimenti o direttive `Using`. L'attività Hello contiene un'unica riga di codice. Tale riga visualizza un messaggio di saluto nel dispositivo di registrazione predefinito, in genere la finestra della console.
 
 ### <a name="run-the-hello-task"></a>Eseguire l'attività Hello
+
  Eseguire MSBuild tramite la **finestra del prompt dei comandi** per costruire l'attività Hello ed elaborare la destinazione TestBuild che la richiama.
 
 ##### <a name="to-run-the-hello-task"></a>Per eseguire l'attività Hello
@@ -108,6 +110,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
    Alternando l'editor del codice e la **finestra del prompt dei comandi**, è possibile modificare il file di progetto e visualizzare velocemente i risultati.
 
 ## <a name="define-the-echo-task"></a>Definire l'attività Echo
+
  Creare un'attività inline che accetta un parametro stringa e visualizza la stringa nel dispositivo di registrazione predefinito.
 
 #### <a name="to-define-the-echo-task"></a>Per definire l'attività Echo
@@ -139,6 +142,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
    Questo codice definisce un'attività inline denominata Echo che presenta un unico parametro di input obbligatorio denominato Text. Per impostazione predefinita, i parametri sono di tipo System.String. Il valore del parametro Text viene impostato quando la destinazione TestBuild richiama l'attività Echo.
 
 ## <a name="define-the-adder-task"></a>Definire l'attività Adder
+
  Creare un'attività inline che aggiunge due parametri Integer e ne genera la somma come proprietà MSBuild.
 
 #### <a name="to-define-the-adder-task"></a>Per definire l'attività Adder
@@ -175,6 +179,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
    Questo codice definisce un'attività inline denominata Adder che presenta due parametri di input Integer obbligatori, A e B, e un parametro di output Integer, C. L'attività Adder aggiunge i due parametri di input e restituisce la somma nel parametro di output. La somma viene generata come proprietà MSBuild denominata `Sum`. I valori dei parametri di input vengono impostati quando la destinazione TestBuild richiama l'attività Adder.
 
 ## <a name="define-the-regx-task"></a>Definire l'attività RegX
+
  Creare un'attività inline che accetta un gruppo di elementi e un'espressione regolare e restituisce un elenco di tutti gli elementi il cui contenuto di file corrisponde all'espressione.
 
 #### <a name="to-define-the-regx-task"></a>Per definire l'attività RegX
@@ -244,6 +249,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
   I valori dei parametri di input vengono impostati quando la destinazione TestBuild richiama l'attività RegX. L'attività RegX legge tutti i file e restituisce l'elenco di quelli che corrispondono all'espressione regolare. Questo elenco viene restituito tramite il parametro di output `Result`, che viene generato come elemento MSBuild denominato `MatchedFiles`.
 
 ### <a name="handle-reserved-characters"></a>Gestire caratteri riservati
+
  Il parser di MSBuild elabora le attività inline come codice XML. I caratteri con un significato riservato in XML, ad esempio "\<" e ">", vengono rilevati e gestiti come se fossero codice XML e non come codice sorgente .NET. Per includere i caratteri riservati nelle espressioni di codice, ad esempio `Files.Length > 0`, scrivere l'elemento `Code` in modo che il relativo contenuto si trovi in un'espressione CDATA, come indicato di seguito:
 
  ```xml
@@ -257,6 +263,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività inline](../msbuild/msbuild-inline-tasks.md)
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Server di destinazione](../msbuild/msbuild-targets.md)

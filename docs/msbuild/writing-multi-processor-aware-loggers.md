@@ -12,25 +12,29 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3611a98a55d25e1ac31b8c8e0370a68b858441c9
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 886e012b026ef17b512a7e134d080382744783ef
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579468"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630747"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Scrivere logger compatibili con più processori
-La possibilità di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] di sfruttare più processori può ridurre i tempi di compilazione del progetto, ma aggiunge complessità alla registrazione dell'evento di compilazione. In un ambiente a processore singolo gli eventi, i messaggi, gli avvisi e gli errori arrivano al logger in modo prevedibile e sequenziale. Tuttavia, in un ambiente a più processori gli eventi di diverse origini possono arrivare contemporaneamente o fuori sequenza. A tale scopo, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] offre un logger compatibile con più processori e un nuovo modello di registrazione e consente di creare "logger di inoltro" personalizzati.
+
+La capacità di MSBuild di sfruttare i vantaggi di più processori può ridurre i tempi di compilazione del progetto, ma aggiunge anche complessità per la registrazione degli eventi di compilazione. In un ambiente a processore singolo gli eventi, i messaggi, gli avvisi e gli errori arrivano al logger in modo prevedibile e sequenziale. Tuttavia, in un ambiente a più processori gli eventi di diverse origini possono arrivare contemporaneamente o fuori sequenza. A tale fine, MSBuild fornisce un logger compatibile con più processori e un nuovo modello di registrazione e consente di creare "logger di inoltri" personalizzati.
 
 ## <a name="multi-processor-logging-challenges"></a>Sfide della registrazione con più processori
- Quando si compilano uno o più progetti in un sistema a più processori o multicore, gli eventi di compilazione di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per tutti i progetti vengono generati contemporaneamente. Al logger può arrivare una grande quantità di messaggi sugli eventi contemporaneamente o fuori sequenza. Poiché un logger di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 non è stato progettato in modo da gestire questa situazione, si può avere un sovraccarico del logger e, di conseguenza, un aumento dei tempi di compilazione, output del logger non corretti o una compilazione non funzionante. Per risolvere questi problemi, il logger, a partire da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, è in grado di elaborare gli eventi fuori sequenza e correlare gli eventi e le relative origini.
+
+ Quando si compilano uno o più progetti in un sistema a più processori o multicore, gli eventi di compilazione di MSBuild per tutti i progetti vengono generati nello stesso momento. Al logger può arrivare una grande quantità di messaggi sugli eventi contemporaneamente o fuori sequenza. Poiché un logger 2,0 di MSBuild non è progettato per gestire questa situazione, può sovraccaricare il logger e causare un aumento dei tempi di compilazione, dell'output del logger errato o anche di una compilazione interrotta. Per risolvere questi problemi, il logger (a partire da MSBuild 3,5) può elaborare gli eventi fuori sequenza e correlare gli eventi e le relative origini.
 
  È possibile migliorare ulteriormente l'efficienza della registrazione creando un logger di inoltro personalizzato. Un logger di inoltro personalizzato funziona come un filtro e consente di scegliere, prima della compilazione, solo gli eventi da monitorare. Quando si usa un logger di inoltro personalizzato, si evita che eventi indesiderati sovraccarichino il logger, creando confusione nei log e rallentando i tempi di compilazione.
 
 ## <a name="multi-processor-logging-models"></a>Modelli di registrazione con più processori
- Per affrontare i problemi di compilazione correlati a più processori, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] supporta due modelli di registrazione, centrale e distribuito.
+
+ Per consentire problemi di compilazione correlati a più processori, MSBuild supporta due modelli di registrazione, centrale e distribuito.
 
 ### <a name="central-logging-model"></a>Modello di registrazione centrale
+
  Nel modello di registrazione centrale, una singola istanza di *MSBuild.exe* agisce come "nodo centrale" e le istanze figlio del nodo centrale ("nodi secondari") vengono allegate al nodo centrale per agevolare le attività di compilazione.
 
  ![Modello di logger centrale](../msbuild/media/centralnode.png "CentralNode")
@@ -51,13 +55,15 @@ public interface INodeLogger: ILogger
  Eventuali logger preesistenti basati su <xref:Microsoft.Build.Framework.ILogger>possono fungere da logger centrali ed essere allegati alla compilazione. Tuttavia, i logger centrali scritti senza supporto esplicito per gli scenari di registrazione con più processori e gli eventi in ordine non corretto possono interrompere una compilazione o produrre output non significativo.
 
 ### <a name="distributed-logging-model"></a>Modello di registrazione distribuita
- Nel modello di registrazione centrale una quantità eccessiva di traffico di messaggi in ingresso può sovraccaricare il nodo centrale, ad esempio quando si compilano molti progetti contemporaneamente. Questo può comportare un'eccessiva sollecitazione delle risorse di sistema e un peggioramento delle prestazioni di compilazione. Per attenuare questo problema, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] supporta un modello di registrazione distribuito.
+
+ Nel modello di registrazione centrale una quantità eccessiva di traffico di messaggi in ingresso può sovraccaricare il nodo centrale, ad esempio quando si compilano molti progetti contemporaneamente. Questo può comportare un'eccessiva sollecitazione delle risorse di sistema e un peggioramento delle prestazioni di compilazione. Per semplificare questo problema, MSBuild supporta un modello di registrazione distribuita.
 
  ![Modello di registrazione distribuita](../msbuild/media/distnode.png "DistNode")
 
  Il modello di registrazione distribuita estende il modello di registrazione centrale consentendo la creazione di un logger di inoltro.
 
 #### <a name="forwarding-loggers"></a>Logger di inoltro
+
  Un logger di inoltro è un logger secondario e leggero con un filtro eventi che viene allegato a un nodo secondario e riceve gli eventi di compilazione in ingresso da quel nodo. Filtra gli eventi in ingresso e inoltra al nodo centrale solo quelli specificati dall'utente. Questo riduce il traffico di messaggi inviato al nodo centrale e migliora complessivamente le prestazioni di compilazione.
 
  Esistono due modi per usare la registrazione distribuita, come indicato di seguito:
@@ -71,6 +77,7 @@ public interface INodeLogger: ILogger
 In alternativa, è possibile creare un logger di inoltro personalizzato. Creando un logger di inoltro personalizzato, è possibile ottimizzare il comportamento del logger. Tuttavia, la creazione di un logger di inoltro personalizzato è più complessa rispetto alla personalizzazione di ConfigurableForwardingLogger. Per altre informazioni, vedere [Creazione di logger di inoltro](../msbuild/creating-forwarding-loggers.md).
 
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Uso di ConfigurableForwardingLogger per la registrazione distribuita semplice
+
  Per allegare un oggetto ConfigurableForwardingLogger o un logger di inoltro personalizzato, usare l'opzione `-distributedlogger` (`-dl` per brevità) in una compilazione da riga di comando di *MSBuild.exe*. Il formato da usare per specificare i nomi dei tipi e delle classi del logger è identico a quello usato per l'opzione `-logger`, ad eccezione del fatto che un logger distribuito ha sempre due classi di registrazione anziché una sola, il logger di inoltro e il logger centrale. Di seguito è riportato un esempio di come allegare un logger di inoltro personalizzato denominato XMLForwardingLogger.
 
 ```cmd
@@ -80,7 +87,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 > [!NOTE]
 > I due nomi di logger nell'opzione `-dl` devono essere separati da un asterisco (*).
 
- L'uso di ConfigurableForwardingLogger è simile a quello di qualsiasi altro logger, come descritto in [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md), ad eccezione del fatto che si allega il logger ConfigurableForwardingLogger anziché il tipico logger [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e si specificano come parametri gli eventi che ConfigurableForwardingLogger deve passare al nodo centrale.
+ L'uso di ConfigurableForwardingLogger è simile all'uso di qualsiasi altro logger (come descritto in [recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)), ad eccezione del fatto che il logger ConfigurableForwardingLogger viene collegato al posto del logger di MSBuild tipico e si specifica come parametri gli eventi che si desidera che il ConfigurableForwardingLogger passi al nodo centrale.
 
  Ad esempio, per ricevere una notifica solo all'inizio e alla fine di una compilazione e quando si verifica un errore, è necessario passare `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` e `ERROREVENT` come parametri. Per passare più parametri, separarli con punti e virgola. L'esempio che segue spiega come usare ConfigurableForwardingLogger per inoltrare solo gli eventi `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` e `ERROREVENT`.
 
@@ -112,4 +119,5 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |SHOWCOMMANDLINE|
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Creazione di logger di inoltro](../msbuild/creating-forwarding-loggers.md)

@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c65bafd9183c97efa7595c10d7bdb3641c5f75f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595137"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632472"
 ---
 # <a name="sdk-element-msbuild"></a>Elemento Sdk (MSBuild)
-Fa riferimento a un SDK di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+Fa riferimento a un SDK di progetto MSBuild.
 
  \<Project> \<Sdk>
 
@@ -37,6 +38,7 @@ Fa riferimento a un SDK di progetto [!INCLUDE[vstecmsbuild](../extensibility/int
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
@@ -46,16 +48,18 @@ Fa riferimento a un SDK di progetto [!INCLUDE[vstecmsbuild](../extensibility/int
 |`Name`|Attributo obbligatorio.<br /><br /> Nome dell'SDK di progetto.|
 |`Version`|Attributo facoltativo.<br /><br /> Versione dell'SDK di progetto|
 
-### <a name="child-elements"></a>Elementi figlio
- nessuna.
+### <a name="child-elements"></a>Elemento figlio
+
+ Nessuno
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Procedura: fare riferimento a un SDK di progetto MSBuild](../msbuild/how-to-use-project-sdk.md)
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

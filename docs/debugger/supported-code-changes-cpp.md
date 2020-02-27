@@ -1,6 +1,6 @@
 ---
 title: Modifiche al codice supportateC++() | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -20,20 +20,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b93c9cfa6767aea83d941cbc8684b27517c8f911
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729557"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629586"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C++)
 Modifica e continuazione C++ per i progetti gestisce la maggior parte dei tipi di modifiche del codice. Alcune modifiche non possono tuttavia essere applicate durante l'esecuzione del programma. Per applicare tali modifiche, è necessario arrestare l'esecuzione e compilare una versione aggiornata del codice.
 
  Per informazioni sull'uso di modifica e continuazione per C++ in Visual Studio, vedere [modifica e continuazione (C++)](../debugger/edit-and-continue-visual-cpp.md) .
 
+## <a name="BKMK_Requirements"></a> Requisiti
+### <a name="build-settings-project--properties"></a>Impostazioni di compilazione (Proprietà progetto >):
+  1. **C/C++ > Generale > formato delle informazioni di debug**: database di programma per modifica e continuazione (`/ZI`)
+  2. **Generazione delC++ codice C/> > Abilita ricompilazione minima**: Sì (`/Gm`)
+  3. **Linker > generale > Abilita collegamento incrementale**: sì (`/INCREMENTAL`)
+
+     Eventuali impostazioni del linker non compatibili, ad esempio `/SAFESEH`o `/OPT:`..., devono causare _LNK4075_ di avviso durante la compilazione.  
+     Esempio: `LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification`
+
+### <a name="debugger-settings-debug--options--general"></a>Impostazioni del debugger (opzioni di debug > > generale):
+  - Abilita Modifica e continuazione nativo
+
+     Eventuali impostazioni del compilatore o del linker non compatibili generano un errore durante la modifica e la continuazione.  
+     Esempio: `Edit and Continue : error  : ‘file.cpp’ in ‘MyApp.exe’ was not compiled with Edit and Continue enabled. Ensure that the file is compiled with the Program Database for Edit and Continue (/ZI) option.`
+
 ## <a name="BKMK_Unsupported_changes"></a> Modifiche non supportate
- Le seguenti modifiche del codice C/C++ non possono essere applicate durante una sessione di debug:
+ Non è possibile applicareC++ le modifiche C/seguenti durante una sessione di debug. Se si apportano queste modifiche e si tenta di applicare le modifiche al codice, nella finestra di **output** verrà visualizzato un messaggio di errore o di avviso.
 
 - La maggior parte delle modifiche a dati globali o statici.
 
@@ -57,7 +72,9 @@ Modifica e continuazione C++ per i progetti gestisce la maggior parte dei tipi d
 
 - Modifiche del codice privo di un file oggetto.
 
-  Se si apporta una di queste modifiche e si tenta quindi di applicare le modifiche al codice, viene visualizzato un messaggio di errore o di avviso nella finestra **Output** .
+* Modifica delle espressioni lambda che:
+  - Hanno un membro statico o globale.
+  - Vengono passati a una funzione std::. In questo modo viene generata una violazione ODR genuina e viene restituito C1092.
 
 - Le librerie statiche non vengono aggiornate con la funzionalità Modifica e continuazione. Se si apporta una modifica in una libreria statica, l'esecuzione continua con la versione precedente e non viene visualizzato alcun avviso.
 
@@ -66,13 +83,15 @@ Modifica e continuazione C++ per i progetti gestisce la maggior parte dei tipi d
 
 - Debug di applicazioni native compilate con [/Zo (Ottimizzare il debug)](/cpp/build/reference/zo-enhance-optimized-debugging)
 
-- Nelle versioni di Visual Studio precedenti a Visual Studio 2015 Update 1, debug di app o componenti di UWP. A partire da Visual Studio 2015 Update 1, è possibile usare modifica e continuazione C++ nelle app UWP e nelle app DirectX, perché ora supporta l'opzione del compilatore `/ZI` con l'opzione `/bigobj`. È anche possibile usare Modifica e continuazione con file binari compilati con l'opzione `/FASTLINK` .
+- Nelle versioni di Visual Studio precedenti a Visual Studio 2015 Update 1, debug di app o componenti di UWP. A partire da Visual Studio 2015 Update 1, è possibile usare modifica e continuazione C++ nelle app UWP e nelle app DirectX, perché ora supporta l'opzione del compilatore `/ZI` con l'opzione di `/bigobj`. È anche possibile usare Modifica e continuazione con file binari compilati con l'opzione `/FASTLINK` .
+
+- Debug di app dello Store 8/8.1. Questi progetti usano il set di strumenti VC 120 e l'C++ opzione C/`/bigobj`. La funzionalità modifica e continuazione con `/bigobj` è supportata solo nel set di strumenti VC 140.
 
 - Debug in Windows 98.
 
 - Debug in modalità mista (nativo/gestito).
 
-- Debug di JavaScript.
+- Debug JavaScript.
 
 - Debug SQL.
 
@@ -86,22 +105,22 @@ Modifica e continuazione C++ per i progetti gestisce la maggior parte dei tipi d
 
 - Debug di una versione precedente del codice dopo l'esito negativo della compilazione di una nuova versione a causa di errori di compilazione.
 
+- Utilizzando un percorso del compilatore personalizzato (*CL. exe*). Per motivi di sicurezza, per la ricompilazione di un file durante la modifica e la continuazione, Visual Studio usa sempre il compilatore installato. Se si usa un percorso del compilatore personalizzato (ad esempio, tramite una variabile di `$(ExecutablePath)` personalizzata nel file di `*.props`), viene visualizzato un avviso e Visual Studio esegue il fallback all'uso del compilatore installato della stessa versione/architettura.
+
+- Sistema di compilazione FASTBuild. FASTBuild non è attualmente compatibile con l'opzione del compilatore "Enable Minimal Rebuild (`/Gm`)" e quindi la funzionalità modifica e continuazione non è supportata.
+
+- Architetture legacy/set di strumenti VC. Con il set di strumenti VC 140, il debugger predefinito supporta modifica e continuazione con le applicazioni x86 e x64. I set di strumenti legacy supportano solo applicazioni x86. I set di strumenti più vecchi di VC 120 devono usare il debugger legacy selezionando "_Opzioni di Debug > > generale >_ usare la modalità di compatibilità nativa" per usare modifica e continuazione.
+
 ## <a name="BKMK_Linking_limitations"></a> Limitazioni di collegamento
 
 ### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Opzioni dei linker che disabilitano Modifica e continuazione
  La funzionalità Modifica e continuazione viene disabilitata dalle seguenti opzioni dei linker:
 
-- L'impostazione di **/OPT:REF**, **/OPT:ICF**o **/INCREMENTAL:NO** provoca la disattivazione di Modifica e continuazione con la visualizzazione del seguente messaggio di avviso:
+- L'impostazione di **/OPT:REF**, **/OPT:ICF**o **/INCREMENTAL:NO** provoca la disattivazione di Modifica e continuazione con la visualizzazione del seguente messaggio di avviso:  
+     `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-     LINK : avviso LNK4075: /EDITANDCONTINUE ignorato a causa
-
-     specification
-
-- L'impostazione di **/ORDER**, **/RELEASE**o **/FORCE** provoca la disattivazione di Modifica e continuazione con la visualizzazione del seguente messaggio di avviso:
-
-     LINK : avviso LNK4075: /INCREMENTAL ignorato a causa
-
-     specification
+- L'impostazione di **/Order**, **/Release**o **/Force** Disabilita la modifica e continua con l'avviso seguente:  
+     `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - L'impostazione di qualsiasi opzione che impedisce la creazione di un file di database di programma con estensione pdb provoca la disattivazione di Modifica e continuazione senza la visualizzazione di un messaggio di avviso specifico.
 
@@ -122,7 +141,7 @@ Modifica e continuazione C++ per i progetti gestisce la maggior parte dei tipi d
 
 3. Deselezionare la casella di controllo **Ricollega modifiche del codice dopo il debug** .
 
-## <a name="BKMK_Precompiled_Header_Limitations"></a> Limitazioni dei file di intestazione precompilati
+## <a name="BKMK_Precompiled_header_limitations"></a>Limitazioni dell'intestazione precompilata
  Per impostazione predefinita, in Modifica e continuazione le intestazioni precompilate vengono caricate ed elaborate in background per velocizzare l'elaborazione delle modifiche al codice. Il caricamento delle intestazioni precompilate richiede l'allocazione di memoria fisica, il che può rappresentare un problema se si effettua la compilazione usando un computer che dispone di una quantità limitata di RAM. È possibile determinare se ciò può costituire un problema usando Gestione attività di Windows per verificare la quantità di memoria fisica disponibile durante il debug. Se la quantità di memoria supera le dimensioni delle intestazioni precompilate, Modifica e continuazione non dovrebbe presentare alcun problema. Se tale quantità è inferiore alle dimensioni delle intestazioni precompilate, è possibile configurare Modifica e continuazione in modo da evitare che le intestazioni precompilate vengano caricate in background.
 
  **Per disabilitare il caricamento in background delle intestazioni precompilate da parte di Modifica e continuazione**
@@ -133,8 +152,16 @@ Modifica e continuazione C++ per i progetti gestisce la maggior parte dei tipi d
 
 3. Deselezionare la casella di controllo **Consenti precompilazione** .
 
-## <a name="BKMK_IDL_Attribute_Limitations"></a> Limitazioni degli attributi IDL
+## <a name="BKMK_IDL_attribute_limitations"></a>Limitazioni degli attributi IDL
  Modifica e Continua non consentono di rigenerare file di definizione di interfaccia (IDL). Le modifiche agli attributi IDL non verranno pertanto riflesse mentre si esegue il debug. Per visualizzare il risultato delle modifiche agli attributi IDL è necessario interrompere il debug e ricompilare l'app. Se gli attributi IDL sono stati modificati, non verrà generato alcun errore o avviso. Per altre informazioni, vedere [Attributi IDL](/cpp/windows/idl-attributes).
+
+## <a name="BKMK_Diagnosing_issues"></a>Diagnosi dei problemi
+ Se lo scenario non rientra nelle condizioni indicate in precedenza, è possibile raccogliere ulteriori dettagli impostando il valore DWORD del registro di sistema seguente:
+ 1. Aprire un Prompt dei comandi per gli sviluppatori.
+ 2. Eseguire il comando seguente:  
+     `VsRegEdit.exe set “C:\Program Files (x86)\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
+
+ Se si imposta questo valore all'inizio di una sessione di debug, i vari componenti di modifica e continuazione generano una registrazione dettagliata nel riquadro **Finestra di output** > **debug** .
 
 ## <a name="see-also"></a>Vedere anche
 - [Modifica e continuazioneC++()](../debugger/edit-and-continue-visual-cpp.md)

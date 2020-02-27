@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c19dbd74176babbf9e26030a68a6095992b660
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589370"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633616"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Elemento ItemMetadata (MSBuild)
+
 Contiene una chiave dei metadati di elemento definita dall'utente che contiene il valore dei metadati dell'elemento. Un elemento può avere un numero qualsiasi di coppie chiave-valore dei metadati.
 
  \<Project> \<ItemGroup> \<Item>
@@ -35,6 +36,7 @@ Contiene una chiave dei metadati di elemento definita dall'utente che contiene i
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
@@ -43,21 +45,24 @@ Contiene una chiave dei metadati di elemento definita dall'utente che contiene i
 |---------------|-----------------|
 |`Condition`|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Elementi figlio
- nessuna.
+### <a name="child-elements"></a>Elemento figlio
+
+ Nessuno
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Item](../msbuild/item-element-msbuild.md)|Elemento definito dall'utente che definisce gli input per il processo di compilazione.|
+|[Elemento](../msbuild/item-element-msbuild.md)|Elemento definito dall'utente che definisce gli input per il processo di compilazione.|
 
 ## <a name="text-value"></a>Valore di testo
+
  Il valore di testo è facoltativo.
 
  Questo testo specifica il valore dei metadati dell'elemento, che può essere testo o XML.
 
 ## <a name="example"></a>Esempio
+
  L'esempio di codice seguente mostra come aggiungere metadati `Culture` con il valore `fr` all'elemento `CSFile`.
 
 ```xml
@@ -69,5 +74,6 @@ Contiene una chiave dei metadati di elemento definita dall'utente che contiene i
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
-- [Elementi](../msbuild/msbuild-items.md)
+- [Items](../msbuild/msbuild-items.md)

@@ -25,17 +25,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578536"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633590"
 ---
 # <a name="lib-task"></a>LIB (attività)
+
 Esegue il wrapping dello strumento di gestione librerie Microsoft a 32 bit, *lib.exe*. Gestione librerie crea e gestisce una libreria di file oggetto COFF (Common Object File Format). Gestione librerie può inoltre creare file di esportazione e librerie di importazione per fare riferimento a definizioni esportate. Per altre informazioni, vedere [Riferimenti a LIB](/cpp/build/reference/lib-reference) ed [Esecuzione di LIB](/cpp/build/reference/running-lib).
 
 ## <a name="parameters"></a>Parametri
+
  La tabella seguente descrive i parametri dell'attività **LIB**. La maggior parte dei parametri attività corrisponde a un'opzione della riga di comando.
 
 |Parametro|Descrizione|
@@ -53,7 +55,7 @@ Esegue il wrapping dello strumento di gestione librerie Microsoft a 32 bit, *lib
 |**LinkTimeCodeGeneration**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica la generazione del codice in fase di collegamento.<br /><br /> Questo parametro corrisponde all'opzione **/LCTG** di *lib.exe*.|
 |**MinimumRequiredVersion**|Parametro **String** facoltativo.<br /><br /> Specifica la versione minima richiesta del sottosistema. Specificare un elenco delimitato da virgole di numeri decimali nell'intervallo compreso tra 0 e 65535.|
 |**ModuleDefinitionFile**|Parametro **String** facoltativo.<br /><br /> Specifica il nome del file di definizione moduli (con estensione *def*).<br /><br /> Questo parametro corrisponde all'opzione **/DEF** di *lib.exe* che accetta un argomento `filename`.|
-|**Name**|Parametro **String** facoltativo.<br /><br /> Quando si compila una libreria di importazione, è necessario specificare il nome della DLL per la quale compilare la libreria di importazione.<br /><br /> Questo parametro corrisponde all'opzione **/NAME** di *lib.exe* che accetta un argomento `filename`.|
+|**Nome**|Parametro **String** facoltativo.<br /><br /> Quando si compila una libreria di importazione, è necessario specificare il nome della DLL per la quale compilare la libreria di importazione.<br /><br /> Questo parametro corrisponde all'opzione **/NAME** di *lib.exe* che accetta un argomento `filename`.|
 |**OutputFile**|Parametro **String** facoltativo.<br /><br /> Sostituisce il nome e il percorso predefiniti del programma creato da *lib.exe*.<br /><br /> Questo parametro corrisponde all'opzione **/OUT** di *lib.exe* che accetta un argomento `filename`.|
 |**RemoveObjects**|Parametro **String[]** facoltativo.<br /><br /> Omette l'oggetto specificato dalla libreria di output. *Lib.exe* crea una libreria di output combinando tutti gli oggetti, in file oggetto o in librerie, quindi eliminando tutti gli oggetti specificati con questa opzione.<br /><br /> Questo parametro corrisponde all'opzione **/REMOVE** di *lib.exe* che accetta un argomento `membername`.|
 |**Sources**|Parametro `ITaskItem[]` obbligatorio.<br /><br /> Specifica un elenco dei file di origine separati da spazi.|
@@ -63,7 +65,8 @@ Esegue il wrapping dello strumento di gestione librerie Microsoft a 32 bit, *lib
 |**TrackerLogDirectory**|Parametro **String** facoltativo.<br /><br /> Specifica la directory del log di Tracker.|
 |**TreatLibWarningAsErrors**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, non consente all'attività **LIB** di generare un file di output se *lib.exe* genera un avviso. Se `false`, viene generato un file di output.<br /><br /> Per altre informazioni, vedere l'opzione **/WX** in [Esecuzione di LIB](/cpp/build/reference/running-lib).|
 |**UseUnicodeResponseFiles**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, consente al sistema di progetto di generare file di risposta UNICODE quando viene generata la Gestione di librerie. Specificare `true` quando i percorsi dei file nel progetto sono UNICODE.|
-|**Verbose**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, vengono visualizzati i dettagli sullo stato di avanzamento della sessione, inclusi i nomi dei file con estensione *obj* da aggiungere. Le informazioni vengono inviate all'output standard e possono essere reindirizzate a un file.<br /><br /> Per altre informazioni, vedere l'opzione **/VERBOSE** in [Esecuzione di LIB](/cpp/build/reference/running-lib).|
+|**Dettagliato**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, vengono visualizzati i dettagli sullo stato di avanzamento della sessione, inclusi i nomi dei file con estensione *obj* da aggiungere. Le informazioni vengono inviate all'output standard e possono essere reindirizzate a un file.<br /><br /> Per altre informazioni, vedere l'opzione **/VERBOSE** in [Esecuzione di LIB](/cpp/build/reference/running-lib).|
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f6be4c80519b023d3f11c28f3d5f5b2bf8f8e1
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557960"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634279"
 ---
 # <a name="delete-task"></a>Delete (attività)
+
 Elimina i file specificati.
 
 ## <a name="parameters"></a>Parametri
+
 Nella tabella che segue vengono descritti i parametri dell'attività `Delete`.
 
 |Parametro|Descrizione|
@@ -37,13 +39,15 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Delete`.
 |`Files`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da eliminare.|
 |`TreatErrorsAsWarnings`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, gli errori vengono registrati come avvisi. Il valore predefinito è `false`.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
+
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 > [!WARNING]
 > Prestare attenzione quando si usano caratteri jolly con l'attività `Delete`. È possibile eliminare facilmente i file non corretti con espressioni come `$(SomeProperty)\**\*.*` o `$(SomeProperty)/**/*.*`, soprattutto se la proprietà restituisce una stringa vuota, nel qual caso il parametro `Files` può restituire la radice dell'unità ed eliminare molto più di quanto si vuole eliminare.
 
 ## <a name="example"></a>Esempio
+
 Nell'esempio seguente viene eliminato il file *MyApp.pdb*.
 
 ```xml
@@ -60,5 +64,6 @@ Nell'esempio seguente viene eliminato il file *MyApp.pdb*.
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

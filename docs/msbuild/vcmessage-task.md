@@ -19,27 +19,31 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b1bf1eb222d70c18bfb94c65dddd2903864c68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2247240ae0992c8275520ec5d7bf94d98ae1053
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591112"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631211"
 ---
 # <a name="vcmessage-task"></a>attività VCMessage
+
 Registra gli avvisi e i messaggi di errore durante una compilazione.
 
 ## <a name="remarks"></a>Note
- Questa attività consente di implementare MSBuild C++ per i progetti e non può essere chiamata dall'utente. Per ulteriori informazioni, vedere <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
+
+ Questa attività consente di implementare MSBuild C++ per i progetti e non può essere chiamata dall'utente. Per altre informazioni, vedere <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
 
 ## <a name="parameters"></a>Parametri
+
  Nella tabella che segue vengono descritti i parametri dell'attività **VCMessage**.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
 |**Argomenti**|Parametro **String** facoltativo.<br /><br /> Elenco delimitato da punto e virgola dei messaggi da visualizzare.|
 |**Codice**|Parametro **String** obbligatorio.<br /><br /> Un numero di errore che qualifica il messaggio.|
-|**Type**|Parametro **String** facoltativo.<br /><br /> Specifica il tipo di messaggio da generare. Specifica "Warning" per generare un messaggio di avviso o "Error" per generare un messaggio di errore.|
+|**Tipo**|Parametro **String** facoltativo.<br /><br /> Specifica il tipo di messaggio da generare. Specifica "Warning" per generare un messaggio di avviso o "Error" per generare un messaggio di errore.|
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebea7356e81cb5924919f213327816dbd69e0c7b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: bb95da599e6362ad32c0ef94dcf9c184269ddedf
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278410"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633408"
 ---
 # <a name="msbuild-command-line-reference"></a>Riferimenti alla riga di comando di MSBuild
 
@@ -76,7 +76,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |Opzione|Forma breve|Descrizione|
 |------------|----------------|-----------------|
 |-binaryLogger [: [LogFile =]`output.binlog`<br/>[; ProjectImports = [None, embed, ZipFile]]]|-bl|Serializza tutti gli eventi di compilazione in un file binario compresso. Per impostazione predefinita il file si trova nella directory corrente ed è denominato *msbuild.binlog*. Il registro binario è una descrizione dettagliata del processo di compilazione che in un secondo momento può essere usata per ricostruire i registri di testo e da altri strumenti di analisi. Un registro binario è in genere 10-20 volte inferiore rispetto a quello più dettagliato di diagnostica a livello di testo, ma sono incluse informazioni aggiuntive.<br /><br />Per impostazione predefinita, il logger binario raccoglie il testo di origine dei file di progetto, inclusi tutti i progetti importati e i file di destinazione durante la compilazione. Il commutatore facoltativo `ProjectImports` controlla questo comportamento:<br /><br /> -   **ProjectImports = None**. Non raccogliere le importazioni del progetto.<br /> -   **ProjectImports=Embed**. Il progetto Embed importa il file di log (impostazione predefinita).<br /> -   **ProjectImports=ZipFile**. Salvare il file di progetto in *\<output>.projectimports.zip* dove \<output> è lo stesso nome del nome del file di log binario.<br /><br />L'impostazione predefinita per ProjectImports è Embed.<br />**Nota**: il logger non raccoglie file di origine non MSBuild come *.cs*, *.cpp* e così via.<br />Un file *.binlog* può essere "riprodotto" passandolo a *msbuild.exe* come argomento anziché progetto o soluzione. Altri logger riceveranno le informazioni contenute nel file di log, come se si stesse verificando la compilazione originale. Altre informazioni sul registro binario e relativo utilizzo sono disponibili all'indirizzo: https://github.com/Microsoft/msbuild/wiki/Binary-Log <br /><br />**Esempi**:<br /> -   `-bl`<br /> -    `-bl:output.binlog`<br /> -   `-bl:output.binlog;ProjectImports=None`<br /> -   `-bl:output.binlog;ProjectImports=ZipFile`<br /> -   `-bl:..\..\custom.binlog`<br /> -   `-binaryLogger`|
-|-consoleLoggerParameters:<br /><br /> `parameters`|-clp:`parameters`|Passa i parametri specificati al logger di console tramite cui le informazioni sulla compilazione vengono visualizzate nella finestra della console. È possibile specificare i parametri riportati di seguito:<br /><br /> -   **PerformanceSummary**. Visualizza il tempo necessario per attività, destinazioni e progetti.<br />-   **Summary**. Mostra il riepilogo di avvisi ed errori alla fine.<br />-   **NoSummary**. Non mostra il riepilogo di avvisi ed errori alla fine.<br />-   **ErrorsOnly**. Mostra solo gli errori.<br />-   **WarningsOnly**. Mostra solo gli avvisi.<br />-   **NoItemAndPropertyList**. Non mostra l'elenco degli elementi e delle proprietà che verrebbero visualizzati all'inizio di ogni compilazione del progetto se il livello di dettaglio fosse stato impostato su `diagnostic`.<br />-   **ShowCommandLine**. Mostra i messaggi `TaskCommandLineEvent`.<br />-   **ShowTimestamp**. Mostra il timestamp come prefisso di ogni messaggio.<br />-   **ShowEventId**. Mostra l'ID evento per ogni evento avviato, completato e per ogni messaggio.<br />-   **ForceNoAlign**. Non allinea il testo alla dimensione del buffer della console.<br />-   **DisableConsoleColor**. Usa i colori predefiniti della console per tutti i messaggi di registrazione.<br />-   **DisableMPLogging**. Disabilita lo stile di registrazione del multiprocessore dell'output quando è in esecuzione in modalità non multiprocessore.<br />-   **EnableMPLogging**. Abilita lo stile di registrazione del multiprocessore anche quando è in esecuzione in modalità non multiprocessore. Questo stile di registrazione è attivato per impostazione predefinita.<br />-   **Verbosity**. Esegue l'override dell'impostazione **-verbosity** per questo logger.<br /><br /> Usare un punto e virgola per separare più parametri, come illustrato nell'esempio seguente:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`<br/><br/> Il logger della console predefinito è al livello di dettaglio normale e include un `Summary`.|
+|-consoleLoggerParameters:<br /><br /> `parameters`|-clp:`parameters`|Passa i parametri specificati al logger di console tramite cui le informazioni sulla compilazione vengono visualizzate nella finestra della console. È possibile specificare i parametri seguenti:<br /><br /> -   **PerformanceSummary**. Visualizza il tempo necessario per attività, destinazioni e progetti.<br />-   **Summary**. Mostra il riepilogo di avvisi ed errori alla fine.<br />-   **NoSummary**. Non mostra il riepilogo di avvisi ed errori alla fine.<br />-   **ErrorsOnly**. Mostra solo gli errori.<br />-   **WarningsOnly**. Mostra solo gli avvisi.<br />-   **NoItemAndPropertyList**. Non mostra l'elenco degli elementi e delle proprietà che verrebbero visualizzati all'inizio di ogni compilazione del progetto se il livello di dettaglio fosse stato impostato su `diagnostic`.<br />-   **ShowCommandLine**. Mostra i messaggi `TaskCommandLineEvent`.<br />-   **ShowTimestamp**. Mostra il timestamp come prefisso di ogni messaggio.<br />-   **ShowEventId**. Mostra l'ID evento per ogni evento avviato, completato e per ogni messaggio.<br />-   **ForceNoAlign**. Non allinea il testo alla dimensione del buffer della console.<br />-   **DisableConsoleColor**. Usa i colori predefiniti della console per tutti i messaggi di registrazione.<br />-   **DisableMPLogging**. Disabilita lo stile di registrazione del multiprocessore dell'output quando è in esecuzione in modalità non multiprocessore.<br />-   **EnableMPLogging**. Abilita lo stile di registrazione del multiprocessore anche quando è in esecuzione in modalità non multiprocessore. Questo stile di registrazione è attivato per impostazione predefinita.<br />-   **Verbosity**. Esegue l'override dell'impostazione **-verbosity** per questo logger.<br /><br /> Usare un punto e virgola per separare più parametri, come illustrato nell'esempio seguente:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`<br/><br/> Il logger della console predefinito è al livello di dettaglio normale e include un `Summary`.|
 |-distributedFileLogger|-dfl|Registra l'output di compilazione di ogni nodo MSBuild nel relativo file. Il percorso iniziale per questi file è la directory attuale. Per impostazione predefinita, i file vengono denominati *MSBuild\<NodeId>.log*. È possibile usare l'opzione **-fileLoggerParameters** per specificare la posizione dei file e altri parametri per fileLogger.<br /><br /> Se un file di log viene denominato usando l'opzione **-fileLoggerParameters**, nel logger distribuito questo nome verrà usato come modello e l'ID nodo verrà aggiunto a questo nome durante la creazione di un file di log per ogni nodo.|
 |-distributedLogger:<br /><br /> `central logger`*<br /><br /> `forwarding logger`|-dl:`central logger`*`forwarding logger`|Registra gli eventi di MSBuild, associando un'istanza di logger diversa a ogni nodo. Per specificare più logger, specificare ciascun logger separatamente.<br /><br /> Usare la sintassi del logger per specificare un logger. Per la sintassi del logger, vedere l'opzione **-logger** di seguito.<br /><br /> Negli esempi seguenti viene illustrato l'utilizzo di questa opzione:<br /><br /> `-dl:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-dl:MyLogger,C:\My.dll*ForwardingLogger,C:\Logger.dll`|
 |-fileLogger<br /><br /> *[number]*|-fl[`number`]|Registra l'output di compilazione in un singolo file nella directory corrente. Se non si specifica `number`, il file di output viene denominato *msbuild.log*. Se si specifica `number`, il file di output viene denominato *msbuild\<n>.log*, dove \<n> è `number`. `Number` può essere una cifra compresa tra 1 e 9.<br /><br /> È possibile usare l'opzione **-fileLoggerParameters** per specificare la posizione dei file e altri parametri per fileLogger.|
@@ -85,6 +85,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-noConsoleLogger|-noconlog|Disabilita il logger della console predefinito e non registra gli eventi nella console.|
 
 ## <a name="example"></a>Esempio
+
  L'esempio seguente compila la destinazione `rebuild` del progetto *MyProject.proj*.
 
 ```cmd
@@ -92,6 +93,7 @@ MSBuild.exe MyProject.proj -t:rebuild
 ```
 
 ## <a name="example"></a>Esempio
+
  È possibile usare *MSBuild.exe* per eseguire compilazioni più complesse. Ad esempio, è possibile compilare destinazioni specifiche di progetti specifici in una soluzione. Nell'esempio seguente viene ricompilato il progetto `NotInSolutionFolder` e pulito il progetto `InSolutionFolder` che si trova nella cartella della soluzione *NewFolder*.
 
 ```cmd
@@ -99,5 +101,6 @@ msbuild SlnFolders.sln -t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
 - [Proprietà di progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md)

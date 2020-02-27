@@ -11,20 +11,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d62e1824d72933d8cb5c3c345ed8788435a6f20
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 78aeef8ea651aac1fe2a780207474399f4bbcf09
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592100"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633434"
 ---
 # <a name="msbuild-batching"></a>Batch MSBuild
-In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire una destinazione o un'attività una sola volta per ogni batch.
+
+MSBuild è in grado di dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire una destinazione o un'attività una volta per ogni batch.
 
 ## <a name="task-batching"></a>Suddivisione in batch delle attività
+
 Suddividere le attività in batch consente di semplificare i file di progetto, dividendo gli elenchi di elementi in diversi batch che vengono poi passati separatamente in un'attività. Ciò significa che per un file di progetto è necessario dichiarare l'attività e i relativi attributi solo una volta, anche se può essere eseguito più volte.
 
-Per specificare che [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve eseguire la suddivisione in batch con un'attività, usare la notazione %(\<ItemMetaDataName>) in uno degli attributi dell'attività. L'esempio seguente suddivide l'elenco di elementi `Example` in batch in base al valore dei metadati degli elementi `Color` e passa ogni batch all'attività `MyTask` separatamente.
+Si specifica che MSBuild deve eseguire l'invio in batch con un'attività usando la notazione%(\<ItemMetaDataName >) in uno degli attributi dell'attività. L'esempio seguente suddivide l'elenco di elementi `Example` in batch in base al valore dei metadati degli elementi `Color` e passa ogni batch all'attività `MyTask` separatamente.
 
 > [!NOTE]
 > Se non viene fatto riferimento all'elenco di elementi altrove negli attributi dell'attività o il nome dei metadati è ambiguo, è possibile usare la notazione %(\<ItemCollection.ItemMetaDataName>) per qualificare completamente il valore dei metadati degli elementi da usare per la suddivisione in batch.
@@ -54,9 +56,10 @@ Per specificare che [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/
 Per esempi più specifici della suddivisione in batch, vedere [Metadati degli elementi nella suddivisione in batch delle attività](../msbuild/item-metadata-in-task-batching.md).
 
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verifica se gli input e output di una destinazione sono aggiornati prima di eseguire la destinazione. Se sia gli input che gli output sono aggiornati, la destinazione viene ignorata. Se un'attività all'interno di una destinazione usa la suddivisione in batch, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve determinare se gli input e gli output per ogni batch di elementi sono aggiornati. In caso contrario, la destinazione viene eseguita ogni volta che viene raggiunta.
 
-L'esempio seguente illustra un elemento `Target` che contiene un attributo `Outputs` con la notazione %(\<ItemMetaDataName>). [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] suddivide l'elenco di elementi `Example` in batch in base ai metadati degli elementi `Color` e analizza i timestamp dei file di output per ogni batch. Se gli output di un batch non sono aggiornati, la destinazione viene eseguita. In caso contrario, la destinazione viene ignorata.
+MSBuild verifica se gli input e gli output di una destinazione sono aggiornati prima di eseguire la destinazione. Se sia gli input che gli output sono aggiornati, la destinazione viene ignorata. Se un'attività all'interno di una destinazione usa l'invio in batch, MSBuild deve determinare se gli input e gli output per ogni batch di elementi sono aggiornati. In caso contrario, la destinazione viene eseguita ogni volta che viene raggiunta.
+
+L'esempio seguente illustra un elemento `Target` che contiene un attributo `Outputs` con la notazione %(\<ItemMetaDataName>). MSBuild suddividerà l'elenco di elementi `Example` in batch in base ai metadati dell'elemento `Color` e analizzerà i timestamp dei file di output per ogni batch. Se gli output di un batch non sono aggiornati, la destinazione viene eseguita. In caso contrario, la destinazione viene ignorata.
 
 ```xml
 <Project
@@ -85,13 +88,14 @@ L'esempio seguente illustra un elemento `Target` che contiene un attributo `Outp
 Per un altro esempio di suddivisione in batch della destinazione, vedere [Metadati degli elementi nell'esecuzione in batch delle destinazioni](../msbuild/item-metadata-in-target-batching.md).
 
 ## <a name="property-functions-using-metadata"></a>Funzioni delle proprietà che usano i metadati
-La suddivisione in batch può essere controllata usando funzioni delle proprietà che includono i metadati. Ad esempio:
+
+La suddivisione in batch può essere controllata usando funzioni delle proprietà che includono i metadati. Ad esempio,
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
 usa <xref:System.IO.Path.Combine%2A> per combinare un percorso di cartella radice con un percorso di elemento Compile.
 
-Le funzioni delle proprietà possono non apparire all'interno dei valori dei metadati. Ad esempio:
+Le funzioni delle proprietà possono non apparire all'interno dei valori dei metadati. Ad esempio,
 
 `%(Compile.FullPath.Substring(0,3))`
 
@@ -100,7 +104,8 @@ non è consentito.
 Per altre informazioni sulle funzioni delle proprietà, vedere [Funzioni delle proprietà](../msbuild/property-functions.md).
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
 - [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

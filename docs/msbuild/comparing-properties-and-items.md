@@ -10,24 +10,27 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51f7f65dd4e4d1922663ea020e55f551245a7444
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596125"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634409"
 ---
 # <a name="compare-properties-and-items"></a>Confrontare proprietà ed elementi
+
 Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.
 
 - Le proprietà sono coppie nome-valore. Per altre informazioni, vedere [Proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
-- Gli elementi sono oggetti che rappresentano in genere i file. Agli oggetti elemento possono essere associate raccolte di metadati. I metadati sono coppie nome-valore. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
+- Gli elementi sono oggetti che rappresentano in genere i file. Agli oggetti elemento possono essere associate raccolte di metadati. I metadati sono coppie nome-valore. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
 
 ## <a name="scalars-and-vectors"></a>Valori scalari e vettori
+
 Poiché le proprietà MSBuild sono coppie nome-valore con un solo valore di stringa, sono spesso descritte come *valori scalari*. I tipi di elemento MSBuild sono invece elenchi di elementi e sono pertanto spesso descritti come *vettori*. In realtà le proprietà possono comunque rappresentare più valori, mentre i tipi di elemento possono non avere elementi o aver uno.
 
 ### <a name="target-dependency-injection"></a>Inserimento delle dipendenze di destinazione
+
 Per comprendere come le proprietà possono rappresentare più valori, considerare un modello di utilizzo comune per aggiungere una destinazione a un elenco di destinazioni da compilare. Questo elenco è in genere rappresentato da un valore della proprietà, con i nomi di destinazione separati da punti e virgola.
 
 ```xml
@@ -40,7 +43,7 @@ Per comprendere come le proprietà possono rappresentare più valori, considerar
 </PropertyGroup>
 ```
 
-La proprietà `BuildDependsOn` viene in genere usata come argomento di un attributo di destinazione `DependsOnTargets` che lo converte in modo efficace in un elenco di elementi. Questa proprietà può essere sottoposta a override per aggiungere una destinazione o per modificare l'ordine di esecuzione della destinazione. Ad esempio:
+La proprietà `BuildDependsOn` viene in genere usata come argomento di un attributo di destinazione `DependsOnTargets` che lo converte in modo efficace in un elenco di elementi. Questa proprietà può essere sottoposta a override per aggiungere una destinazione o per modificare l'ordine di esecuzione della destinazione. Ad esempio,
 
 ```xml
 <PropertyGroup>
@@ -56,6 +59,7 @@ La destinazione CustomBuild viene aggiunta all'elenco di destinazione, attribuen
 A partire da MSBuild 4.0, l'inserimento delle dipendenze di destinazione è deprecato. Al suo posto usare gli attributi `AfterTargets` e `BeforeTargets`. Per altre informazioni, vedere [Ordine di compilazione delle destinazioni](../msbuild/target-build-order.md).
 
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversioni fra stringhe ed elenchi di elementi
+
 Se necessario MSBuild esegue la conversione da e in tipi di elemento e valori stringa. Per vedere come un elenco di elementi può diventare un valore stringa, considerare cosa succede quando un tipo di elemento viene usato come valore di una proprietà MSBuild:
 
 ```xml
@@ -70,6 +74,7 @@ Se necessario MSBuild esegue la conversione da e in tipi di elemento e valori st
 Il tipo di elemento OutputDir presenta un attributo `Include` con il valore "KeyFiles\\;Certificates\\". MSBuild analizza questa stringa suddividendola in due elementi, KeyFiles\ e Certificates\\. Quando il tipo di elemento OutputDir viene usato come valore della proprietà OutputDirList, MSBuild converte o "rende flat" il tipo di elemento nella stringa "KeyFiles\\;Certificates\\" con elementi separati da punto e virgola.
 
 ## <a name="properties-and-items-in-tasks"></a>Proprietà ed elementi in attività
+
 Le proprietà e gli elementi vengono usati come input e output nelle attività MSBuild. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
 Le proprietà vengono passate alle attività sotto forma di attributi. All'interno dell'attività una proprietà MSBuild viene rappresentata da un tipo di proprietà il cui valore può essere convertito in e da una stringa. I tipi di proprietà supportati sono `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` e qualsiasi altro tipo che <xref:System.Convert.ChangeType%2A> è in grado di gestire.
@@ -79,6 +84,7 @@ Gli elementi vengono passati alle attività come oggetti <xref:Microsoft.Build.F
 È possibile passare l'elenco di elementi di un tipo di elemento sotto forma di matrice di oggetti `ITaskItem`. A partire da .NET Framework 3.5, gli elementi possono essere rimossi da un elenco di elementi in una destinazione usando l'attributo `Remove`. Poiché gli elementi possono essere rimossi da un elenco di elementi, è possibile che un tipo di elemento non contenta elementi. Se un elenco di elementi viene passato a un'attività, il codice dell'attività deve verificare questa possibilità.
 
 ## <a name="property-and-item-evaluation-order"></a>Ordine di valutazione di proprietà ed elementi
+
 Durante la fase di valutazione di una build, i file importati vengono incorporati nella build nell'ordine in cui vengono visualizzati. Le proprietà e gli elementi sono definiti in tre passaggi nell'ordine seguente:
 
 - Le proprietà vengono definite e modificate nell'ordine in cui vengono visualizzate.
@@ -104,6 +110,7 @@ Non è tuttavia l'unico approccio. Quando si definisce una proprietà, una defin
   - Le proprietà e gli elementi definiti all'interno di destinazione vengono valutati insieme nell'ordine in cui vengono visualizzati. Vengono eseguite le funzioni di proprietà e i valori della proprietà vengono espansi all'interno di espressioni. Anche i valori e le trasformazioni degli elementi vengono espansi. I valori di proprietà, i valori del tipo di elemento e i valori di metadati vengono impostati sulle espressioni espanse.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Effetti meno evidenti dell'ordine di valutazione
+
 Nella fase di valutazione di una build la valutazione delle proprietà precede la valutazione degli elementi. È tuttavia possibile che le proprietà abbiano valori visualizzati che devono dipendere da valori elemento. Considerare lo script seguente.
 
 ```xml
@@ -120,7 +127,7 @@ Nella fase di valutazione di una build la valutazione delle proprietà precede l
 </Target>
 ```
 
-Eseguendo l'attività Message viene visualizzato il messaggio seguente:
+Eseguendo l'attività Messaggio viene visualizzato il messaggio seguente:
 
 ```
 KeyFileVersion: 1.0.0.3
@@ -148,7 +155,7 @@ Come secondo esempio considerare cosa può accadere quando i gruppi di propriet�
 </Target>
 ```
 
-L'attività Message visualizza il messaggio seguente:
+L'attività Messaggio visualizza il messaggio seguente:
 
 ```
 KeyFileVersion:
@@ -172,11 +179,12 @@ In questo caso, invertendo l'ordine dei gruppi di proprietà ed elemento è poss
 </Target>
 ```
 
-Il valore di `KeyFileVersion` è impostato su "1.0.0.3" e non su "\@(KeyFile->'%(Version)')". L'attività Message visualizza il messaggio seguente:
+Il valore di `KeyFileVersion` è impostato su "1.0.0.3" e non su "\@(KeyFile->'%(Version)')". L'attività Messaggio visualizza il messaggio seguente:
 
 ```
 KeyFileVersion: 1.0.0.3
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

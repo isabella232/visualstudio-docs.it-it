@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573794"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633681"
 ---
 # <a name="item-functions"></a>funzioni Item
-A partire da MSBuild 4.0, il codice nelle attività e nelle destinazioni è in grado di chiamare le funzioni di elementi per ottenere informazioni sugli elementi del progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi.
+
+Il codice in attività e destinazioni può chiamare funzioni di elemento per ottenere informazioni sugli elementi del progetto (in MSBuild 4,0 e versioni successive). Queste funzioni semplificano l'ottenimento di elementi distinti e sono più veloci del ciclo tra gli elementi.
 
 ## <a name="string-item-functions"></a>Funzioni degli elementi per i valori stringa
+
 È anche possibile usare metodi e proprietà di stringa in .NET Framework per operare su qualsiasi valore dell'elemento. Per i metodi <xref:System.String>, specificare il nome del metodo. Per le proprietà <xref:System.String>, specificare il nome della proprietà dopo "get_".
 
 Per gli elementi con più stringhe, è necessario eseguire il metodo o la proprietà di stringa per ogni stringa.
@@ -49,6 +51,7 @@ Nell'esempio seguente viene illustrato come usare le funzioni degli elementi per
 ```
 
 ## <a name="intrinsic-item-functions"></a>Funzioni intrinseche degli elementi
+
 Nella tabella seguente sono elencate le funzioni intrinseche disponibili per gli elementi.
 
 |Funzione|Esempio|Descrizione|
@@ -100,4 +103,5 @@ Nell'esempio seguente viene illustrato come usare le funzioni intrinseche degli 
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Elementi](../msbuild/msbuild-items.md)
+
+- [Items](../msbuild/msbuild-items.md)

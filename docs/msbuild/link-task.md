@@ -30,17 +30,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592204"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633577"
 ---
 # <a name="link-task"></a>Link (attività)
+
 Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options).
 
 ## <a name="parameters"></a>Parametri
+
  Di seguito vengono descritti i parametri dell'attività **Link**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
 
 - **AdditionalDependencies**
@@ -497,7 +499,7 @@ Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumen
 
   - **PGUpdate**
 
-    \- **/LTCG: PGUPDATE**
+    \- **/LTCG:PGUpdate**
 
   Per altre informazioni, vedere [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation).
 
@@ -619,7 +621,7 @@ Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumen
 
   Per altre informazioni, vedere [/ALLOWBIND (prevenzione dell'associazione di DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
-- **Profile**
+- **Profilo**
 
   Parametro **Boolean** facoltativo.
 
@@ -763,7 +765,7 @@ Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumen
 
   - **POSIX** -  **/SUBSYSTEM:POSIX**
 
-  Per altre informazioni, vedere [/SUBSYSTEM (Specifica il sottosistema)](/cpp/build/reference/subsystem-specify-subsystem).
+  Per altre informazioni, vedere [/SUBSYSTEM (specifica il sottosistema)](/cpp/build/reference/subsystem-specify-subsystem).
 
 - **SupportNobindOfDelayLoadedDLL**
 
@@ -837,7 +839,7 @@ Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumen
 
   - **MachineX86** -  **/MACHINE:X86**
 
-  Per altre informazioni, vedere [/MACHINE (Specifica la piattaforma di destinazione)](/cpp/build/reference/machine-specify-target-platform).
+  Per altre informazioni, vedere [/MACHINE (specifica la piattaforma di destinazione)](/cpp/build/reference/machine-specify-target-platform).
 
 - **TerminalServerAware**
 
@@ -924,4 +926,5 @@ Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumen
   Per altre informazioni, vedere [/VERSION (informazioni sulla versione)](/cpp/build/reference/version-version-information).
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

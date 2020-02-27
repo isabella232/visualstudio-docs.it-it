@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593850"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633187"
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
 
@@ -31,7 +31,7 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 </Target>
 ```
 
- Come le proprietà di MSBuild, le destinazioni possono essere ridefinite. Ad esempio:
+ Come le proprietà di MSBuild, le destinazioni possono essere ridefinite. Ad esempio,
 
 ```xml
 <Target Name="AfterBuild" >
@@ -68,7 +68,7 @@ Per dettagli e altre informazioni sull'ordine di compilazione delle destinazioni
 
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione
 
-Un elemento di destinazione può avere un attributo `Outputs` che specifica i metadati nel formato %(\<Metadata>). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio:
+Un elemento di destinazione può avere un attributo `Outputs` che specifica i metadati nel formato %(\<Metadata>). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio,
 
 ```xml
 <ItemGroup>
@@ -105,6 +105,7 @@ Reference: 4.0
  Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione e questo migliora notevolmente la velocità di compilazione. Questa operazione è definita compilazione incrementale della destinazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione senza gli elementi aggiornati. Questa operazione è definita compilazione incrementale parziale della destinazione. Per altre informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Destinazioni di compilazione predefinite
+
 Di seguito sono elencate le destinazioni pubbliche in Microsoft. Common. CurrentVersion. targets.
 
 ```

@@ -24,17 +24,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595030"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633057"
 ---
 # <a name="mt-task"></a>attività MT
+
 Esegue il wrapping dello strumento manifesto Microsoft, *mt.exe*. Per altre informazioni, vedere [Mt.exe](/windows/desktop/SbsCs/mt-exe).
 
 ## <a name="parameters"></a>Parametri
+
  Nella tabella che segue vengono descritti i parametri dell'attività **MT**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
 
 > [!NOTE]
@@ -69,4 +71,5 @@ Esegue il wrapping dello strumento manifesto Microsoft, *mt.exe*. Per altre info
 |**VerboseOutput**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, visualizza informazioni dettagliate sul debug.<br /><br /> Per altre informazioni, vedere l'opzione **/verbose** in [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

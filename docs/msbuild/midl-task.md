@@ -26,17 +26,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592152"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633473"
 ---
 # <a name="midl-task"></a>MIDL (attività)
+
 Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definition Language), *midl.exe*. Per altre informazioni, vedere [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
 
 ## <a name="parameters"></a>Parametri
+
  Di seguito sono descritti i parametri dell'attività **MIDL**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
 
 - **AdditionalIncludeDirectories**
@@ -113,9 +115,9 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
     |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
-    |**None**|**/error none**|
+    |**Nessuno**|**/error none**|
     |**EnableCustom**|**/error**|
-    |**All**|**/error all**|
+    |**Tutto**|**/error all**|
 
      Per altre informazioni, vedere l'opzione **/error** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
 
@@ -169,7 +171,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
     |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
-    |**None**|**/client none**|
+    |**Nessuno**|**/client none**|
     |**Stub**|**/client stub**|
 
      Per altre informazioni, vedere l'opzione **/client** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
@@ -184,7 +186,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
     |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
-    |**None**|**/server none**|
+    |**Nessuno**|**/server none**|
     |**Stub**|**/server stub**|
 
      Per altre informazioni, vedere l'opzione **/server** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
@@ -285,7 +287,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Per altre informazioni, vedere l'opzione **/sstub** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **ClientStubFile** in questa tabella.
 
-- **Source**
+- **Origine**
 
      Parametro `ITaskItem[]` obbligatorio.
 
@@ -416,4 +418,5 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
      Per altre informazioni, vedere l'opzione **/W** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **WarnAsError** in questa tabella.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

@@ -19,14 +19,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 966e942fbd32841bbfe0a429c8623da09dcbbd0f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593369"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634474"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
+
 Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di elementi `PropertyGroup` da valutare.
 
  \<progetto > \<scegliere > \<quando > \<scegliere >... \<in caso contrario > \<scegliere >...
@@ -41,12 +42,14 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- nessuna.
 
-### <a name="child-elements"></a>Elementi figlio
+ Nessuno
+
+### <a name="child-elements"></a>Elemento figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
@@ -58,13 +61,15 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 | Elemento | Descrizione |
 | - | - |
 | [Otherwise](../msbuild/otherwise-element-msbuild.md) | Specifica il blocco di codice da eseguire se le condizioni di tutti gli elementi `When` restituiscono `false`. |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 | [When](../msbuild/when-element-msbuild.md) | Specifica un blocco di codice selezionabile dall'elemento `Choose`. |
 
 ## <a name="remarks"></a>Note
+
  Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Esempio
+
  Nel progetto riportato di seguito l'elemento `Choose` viene usato per selezionare il set di valori delle proprietà da impostare negli elementi `When`. Se gli attributi `Condition` di entrambi gli elementi `When` restituiscono `false`, vengono impostati i valori delle proprietà dell'elemento `Otherwise`.
 
 ```xml
@@ -113,5 +118,6 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

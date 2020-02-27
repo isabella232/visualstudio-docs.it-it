@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bb4c44b4e642ff1137df7f0afe02502224060a64
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597386"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632940"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 
-In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usate per valutare gli script MSBuild. Le funzioni di proprietà possono essere usate ovunque siano presenti le proprietà. A differenza delle attività, le funzioni di proprietà possono essere usate all'esterno delle destinazioni e vengono valutate prima dell'esecuzione delle destinazioni.
+Le funzioni di proprietà sono chiamate a .NET Framework metodi visualizzati nelle definizioni delle proprietà di MSBuild. A differenza delle attività, le funzioni di proprietà possono essere usate all'esterno delle destinazioni e vengono valutate prima dell'esecuzione delle destinazioni.
 
- Senza usare le attività MSBuild, è possibile leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni nello script di compilazione. MSBuild tenterà di convertire le stringhe in numeri e i numeri in stringhe nonché di eseguire altre conversioni secondo le esigenze.
- 
+Senza usare le attività MSBuild, è possibile leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni nello script di compilazione. MSBuild tenterà di convertire le stringhe in numeri e i numeri in stringhe nonché di eseguire altre conversioni secondo le esigenze.
+
 Nei valori stringa restituiti da funzioni di proprietà i [caratteri speciali](msbuild-special-characters.md) sono sottoposti a escape. Se si vuole che il valore venga trattato come se fosse stato inserito direttamente nel file di progetto, usare `$([MSBuild]::Unescape())` per rimuovere gli escape dai caratteri speciali.
+
+Le funzioni di proprietà sono disponibili con .NET Framework 4 e versioni successive.
 
 ## <a name="property-function-syntax"></a>Sintassi delle funzioni di proprietà
 
@@ -37,7 +39,7 @@ Di seguito sono elencati tre tipi di funzioni di proprietà. Ogni funzione prese
 
 Tutti i valori delle proprietà di compilazione sono soltanto valori stringa. Per agire su qualsiasi valore di proprietà è possibile usare i metodi stringa (istanza). Ad esempio, è possibile estrarre il nome di unità, ovvero i primi tre caratteri, da una proprietà di compilazione che rappresenta un percorso completo con questo codice:
 
-```fundamental
+```
 $(ProjectOutputFolder.Substring(0,3))
 ```
 
@@ -45,7 +47,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 Nello script di compilazione è possibile accedere alle proprietà e ai metodi statici di molte classi di sistema. Per ottenere il valore di una proprietà statica, usare la sintassi seguente, dove \<Class> è il nome della classe di sistema e \<Property> è il nome della proprietà.
 
-```fundamental
+```
 $([Class]::Property)
 ```
 
@@ -57,7 +59,7 @@ Ad esempio, è possibile usare il codice seguente per impostare una proprietà d
 
 Per chiamare un metodo statico, usare la sintassi seguente, dove \<Class> è il nome della classe di sistema, \<Method> è il nome del metodo e (\<Parameters>) è l'elenco di parametri del metodo:
 
-```fundamental
+```
 $([Class]::Method(Parameters))
 ```
 
@@ -121,7 +123,7 @@ Inoltre, è possibile usare le proprietà e i metodi statici seguenti:
 
 Se si accede a una proprietà statica che restituisce un'istanza di un oggetto, è possibile richiamare i metodi di istanza di tale oggetto. Per richiamare un metodo di istanza usare la sintassi seguente, dove \<Class> è il nome della classe di sistema, \<Property> è il nome della proprietà, \<Method> è il nome del metodo e (\<Parameters>) è l'elenco di parametri del metodo:
 
-```fundamental
+```
 $([Class]::Property.Method(Parameters))
 ```
 
@@ -137,13 +139,13 @@ Ad esempio, è possibile usare il codice seguente per impostare una proprietà d
 
 È possibile accedere a diversi metodi statici nella compilazione per supportare funzionalità aritmetiche, operazioni logiche bit per bit nonché la gestione dei caratteri di escape. Per accedere a questi metodi usare la sintassi seguente, dove \<Method> è il nome del metodo e (\<Parameters>) è l'elenco di parametri del metodo.
 
-```fundamental
+```
 $([MSBuild]::Method(Parameters))
 ```
 
 Ad esempio, per sommare due proprietà che presentano valori numerici, usare il codice seguente.
 
-```fundamental
+```
 $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
@@ -172,8 +174,8 @@ Di seguito è riportato un elenco di funzioni di proprietà MSBuild:
 |string NormalizePath(params string[] path)|Ottiene il percorso completo in forma canonica corrispondente al percorso specificato e garantisce che contenga i separatori di directory corretti per il sistema operativo corrente.|
 |string NormalizeDirectory(params string[] path)|Ottiene il percorso completo in forma canonica della directory specificata e garantisce che contenga i separatori di directory corretti per il sistema operativo corrente e una barra rovesciata finale.|
 |string EnsureTrailingSlash(string path)|Se il percorso specificato non dispone di una barra rovesciata, la aggiunge al percorso. Se il percorso è una stringa vuota non lo modifica.|
-|string GetPathOfFileAbove(string file, string startingDirectory)|Cerca un file in base alla posizione di compilazione corrente del file o a `startingDirectory` se specificato.|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Trova un file nella directory specificata o in un percorso nella struttura di directory a monte di tale directory.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Cerca e restituisce il percorso completo di un file nella struttura di directory sopra il percorso del file di compilazione corrente o in base a `startingDirectory`, se specificato.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Individuare e restituire la directory di un file nella directory specificata o in una posizione nella struttura di directory sopra quella directory.|
 |string MakeRelative(string basePath, string path)|Rende `path` relativo a `basePath`. `basePath` deve essere una directory assoluta. Se `path` non può essere reso relativo, viene restituito letteralmente. Simile a `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Restituisce la stringa nel parametro 'defaultValue' solo se il parametro 'conditionValue' è vuoto. In caso contrario, restituisce il valore conditionValue.|
 
@@ -181,7 +183,7 @@ Di seguito è riportato un elenco di funzioni di proprietà MSBuild:
 
 È possibile combinare le funzioni di proprietà per formare funzioni più complesse, come mostrato nell'esempio seguente.
 
-```fundamental
+```
 $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
 ```
 
@@ -195,7 +197,7 @@ La funzione di proprietà `DoesTaskHostExist` in MSBuild restituisce un valore c
 
 Questa funzione di proprietà presenta la seguente sintassi:
 
-```fundamental
+```
 $([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```
 
@@ -205,7 +207,7 @@ La funzione di proprietà `EnsureTrailingSlash` in MSBuild aggiunge una barra fi
 
 Questa funzione di proprietà presenta la seguente sintassi:
 
-```fundamental
+```
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 ```
 
@@ -215,7 +217,7 @@ La funzione di proprietà MSBuild `GetDirectoryNameOfFileAbove` cerca un file ne
 
  Questa funzione di proprietà presenta la seguente sintassi:
 
-```fundamental
+```
 $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```
 
@@ -227,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>GetPathOfFileAbove di MSBuild
 
-La funzione di proprietà `GetPathOfFileAbove` in MSBuild restituisce il percorso del file immediatamente precedente a questo. Dal punto di vista funzionale è equivalente alla chiamata
+La `GetPathOfFileAbove` funzione di proprietà in MSBuild restituisce il percorso del file specificato, se si trova nella struttura di directory al di sopra della directory corrente. Dal punto di vista funzionale è equivalente alla chiamata
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -235,7 +237,7 @@ La funzione di proprietà `GetPathOfFileAbove` in MSBuild restituisce il percors
 
 Questa funzione di proprietà presenta la seguente sintassi:
 
-```fundamental
+```
 $([MSBuild]::GetPathOfFileAbove(dir.props))
 ```
 
@@ -245,7 +247,7 @@ La funzione di proprietà MSBuild `GetRegistryValue` restituisce il valore di un
 
 Gli esempi seguenti mostrano come viene usata questa funzione:
 
-```fundamental
+```
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
 $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
@@ -257,7 +259,7 @@ La funzione di proprietà MSBuild `GetRegistryValueFromView` ottiene i dati del 
 
 Di seguito è indicata la sintassi per la funzione della proprietà:
 
-```fundamental
+```
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
@@ -275,7 +277,7 @@ Sono disponibili le visualizzazioni del Registro di sistema seguenti:
 
 Di seguito è riportato un esempio.
 
- ```fundamental
+ ```
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
@@ -287,7 +289,7 @@ La funzione di proprietà MSBuild `MakeRelative` restituisce il percorso relativ
 
 Questa funzione di proprietà presenta la seguente sintassi:
 
-```fundamental
+```
 $([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```
 

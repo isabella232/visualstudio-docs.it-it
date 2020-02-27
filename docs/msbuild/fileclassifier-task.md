@@ -17,23 +17,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579677"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634188"
 ---
 # <a name="fileclassifier-task"></a>Attività FileClassifier
+
 L'attività <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica un insieme di risorse di origine come quelle che verranno incorporate in un assembly. Se una risorsa non è localizzabile, viene incorporata nell'assembly dell'applicazione principale. In caso contrario, viene incorporata in un assembly satellite.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|`CLREmbeddedResource`|Non usato.|
-|`CLRResourceFiles`|Non usato.|
-|`CLRSatelliteEmbeddedResource`|Non usato.|
+|`CLREmbeddedResource`|Non utilizzato.|
+|`CLRResourceFiles`|Non utilizzato.|
+|`CLRSatelliteEmbeddedResource`|Non utilizzato.|
 |`Culture`|Parametro **String** facoltativo.<br /><br /> Specifica le impostazioni cultura per la compilazione. Questo valore può essere **null** se la compilazione non è localizzabile. Se **null**, il valore predefinito corrisponde al valore minuscolo restituito da **CultureInfo.InvariantCulture**.|
 |`MainEmbeddedFiles`|Parametro di output **ITaskItem[]** facoltativo.<br /><br /> Specifica le risorse non localizzabili incorporate nell'assembly principale.|
 |`OutputType`|Parametro **String** obbligatorio.<br /><br /> Specifica il tipo di file in cui incorporare i file di origine specificati. I valori validi sono **exe**, **winexe** e **library**.|
@@ -41,9 +42,11 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica un in
 |`SourceFiles`|Parametro **ITaskItem []** obbligatorio.<br /><br /> Specifica l'elenco di file da classificare.|
 
 ## <a name="remarks"></a>Note
+
 Se il parametro **Culture** non è impostato, tutte le risorse specificate usando il parametro **SourceFiles** non sono localizzabili. In caso contrario, sono localizzabili a meno che non vengano associate a un attributo **Localizable** impostato su **false**.
 
 ## <a name="example"></a>Esempio
+
 Nell'esempio seguente un singolo file di origine viene classificato come risorsa e incorporato in un assembly satellite per le impostazioni cultura Francese-Canadese (fr-CA).
 
 ```xml
@@ -64,6 +67,7 @@ Nell'esempio seguente un singolo file di origine viene classificato come risorsa
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
 - [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)
 - [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)

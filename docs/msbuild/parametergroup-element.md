@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d7e77e56196d23a5563c60d5b8251c8f26a00ff
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 28d6def203a819d41a420899663d1a974612c631
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596736"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632992"
 ---
 # <a name="parametergroup-element"></a>Elemento ParameterGroup
+
 Contiene un elenco facoltativo di parametri che saranno presenti nell'attività generata da un `UsingTask` `TaskFactory`. Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup>
@@ -35,12 +36,14 @@ Contiene un elenco facoltativo di parametri che saranno presenti nell'attività 
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- nessuna.
 
-### <a name="child-elements"></a>Elementi figlio
+ Nessuno
+
+### <a name="child-elements"></a>Elemento figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
@@ -50,9 +53,10 @@ Contiene un elenco facoltativo di parametri che saranno presenti nell'attività 
 
 | Elemento | Descrizione |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Consente di registrare attività in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Possono esistere zero o più elementi `UsingTask` in un progetto. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Fornisce un modo per registrare le attività in MSBuild. Possono esistere zero o più elementi `UsingTask` in un progetto. |
 
 ## <a name="example"></a>Esempio
+
  L'esempio seguente illustra come usare l'elemento `ParameterGroup`.
 
 ```xml
@@ -69,6 +73,7 @@ Contiene un elenco facoltativo di parametri che saranno presenti nell'attività 
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

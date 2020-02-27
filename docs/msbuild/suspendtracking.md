@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d48c29b9dcca477c5a5470c443be08d5060b413d
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 950c6a07a46f7f4b970912e576257a577021367e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578107"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632010"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
+
 Sospende la verifica nel contesto corrente.
 
 ## <a name="syntax"></a>Sintassi
@@ -32,10 +33,13 @@ HRESULT WINAPI SuspendTracking(void);
 ```
 
 ## <a name="return-value"></a>Valore restituito
+
  **HRESULT** con il bit **SUCCEEDED** impostato se la verifica è stata sospesa.
 
 ## <a name="requirements"></a>Requisiti
+
  **Intestazione:** *FileTracker. h*
 
 ## <a name="see-also"></a>Vedere anche
+
 - [ResumeTracking](../msbuild/resumetracking.md)

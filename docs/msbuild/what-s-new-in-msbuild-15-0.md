@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 49e248ee0e5537ae54957695ca698b041fc1ce8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567280"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631029"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novità di MSBuild 15
 
@@ -39,6 +39,7 @@ MSBuild è ora incluso in [.NET Core SDK](https://www.microsoft.com/net/download
 - Le proprietà `SDK35ToolsPath` e `SDK40ToolsPath` puntano a .NET Framework SDK, incluso in un pacchetto con questa versione di Visual Studio, ad esempio 10.0A per gli strumenti 4.X.
 
 ## <a name="updates"></a>Aggiornamenti
+
 - Per l'[elemento Project](../msbuild/project-element-msbuild.md) è disponibile un nuovo attributo `SDK`. L'attributo `Xmlns` è ora facoltativo. Per altre informazioni sull'attributo `SDK`, vedere [Procedura: Usare SDK di progetto MSBuild](../msbuild/how-to-use-project-sdk.md), [Pacchetti, metapacchetti e framework](/dotnet/core/packages) e [Aggiunte al formato csproj per .NET Core](/dotnet/core/tools/csproj).
 - Per l'[elemento Item](../msbuild/item-element-msbuild.md) esterno alle destinazioni è disponibile un nuovo attributo `Update`. È stata inoltre eliminata la restrizione relativa all'attributo `Remove`.
 - *Directory.Build.props* è un file definito dall'utente che specifica le personalizzazioni dei progetti in una directory. Questo file viene importato automaticamente da *Microsoft.Common.props*, a meno che la proprietà `ImportDirectoryBuildTargets` non sia impostata su **false**. *Directory.Build.targets* viene importato da *Microsoft.Common.targets*.
@@ -52,4 +53,5 @@ MSBuild è ora incluso in [.NET Core SDK](https://www.microsoft.com/net/download
 - `GetPathOfFileAbove` restituisce il percorso del file che precede quello corrente. Dal punto di vista funzionale equivale a una chiamata a `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [MSBuild](../msbuild/msbuild.md)

@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660f63f68435f4c4eba8d1c3dfb2438541da4841
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589292"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634084"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (attività)
+
 Consente di rilevare, scaricare e installare automaticamente un'applicazione e i relativi prerequisiti. Funge da programma di installazione singolo che integra i programmi di installazione separati per tutti i componenti che costituiscono un'applicazione.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
+
 Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.
 
 - `ApplicationFile`
@@ -63,7 +65,7 @@ Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.
 
 - `BootstrapperItems`
 
-   Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.
+   Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.
 
    Specifica i prodotti da compilare nel programma di avvio automatico. Gli elementi passati a questo parametro devono avere la sintassi seguente:
 
@@ -76,7 +78,7 @@ Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.
   </BootstrapperItem>
   ```
 
-   L'attributo `Include` rappresenta il nome di un prerequisito che deve essere installato. I metadati dell'elemento `ProductName` sono facoltativi e vengono usati dal motore di compilazione come nome descrittivo se non è possibile trovare il pacchetto. Questi elementi non sono parametri di input [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obbligatori a meno che non sia stato specificato alcun `ApplicationFile`. È consigliabile includere un elemento per ogni prerequisito che deve essere installato per l'applicazione.
+   L'attributo `Include` rappresenta il nome di un prerequisito che deve essere installato. I metadati dell'elemento `ProductName` sono facoltativi e vengono usati dal motore di compilazione come nome descrittivo se non è possibile trovare il pacchetto. Questi elementi non sono parametri di input MSBuild necessari, a meno che non sia specificata nessuna `ApplicationFile`. È consigliabile includere un elemento per ogni prerequisito che deve essere installato per l'applicazione.
 
    Se non si specifica il parametro `BootstrapperItems` o `ApplicationFile`, si verificherà un errore di compilazione.
 
@@ -149,9 +151,11 @@ Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.
    Se `true`, il programma di avvio automatico esegue la convalida XSD sugli elementi del programma di avvio automatico di input specificati. Il valore predefinito di questo parametro è `false`.
 
 ## <a name="remarks"></a>Note
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
+
 L'esempio seguente usa l'attività `GenerateBootstrapper` per installare un'applicazione che deve avere .NET Framework 2.0 installato come prerequisito.
 
 ```xml
@@ -176,5 +180,6 @@ L'esempio seguente usa l'attività `GenerateBootstrapper` per installare un'appl
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

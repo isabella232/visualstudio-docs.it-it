@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1aee1a6ae3abc06846523df9470ad75d316a50b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d3605109519dccaafa1367464bd8c2385df5e93e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592087"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633421"
 ---
 # <a name="msbuild-best-practices"></a>Procedure consigliate per MSBuild
+
 Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni riportate di seguito:
 
 - I valori di proprietà predefiniti vengono gestiti meglio con l'attributo `Condition` e non dichiarando una proprietà il cui valore predefinito può essere sottoposto a override nella riga di comando. Ad esempio, usare
@@ -32,4 +33,5 @@ Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni
 - Evitare i caratteri jolly quando si selezionano elementi. Al contrario, specificare i file in modo esplicito. Ciò semplifica l'individuazione degli errori che possono verificarsi quando si aggiungono o si eliminano file.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

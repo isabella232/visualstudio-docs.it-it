@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567294"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631081"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
 
@@ -43,7 +43,7 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
     Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\* . Accettare le impostazioni predefinite per **Soluzione**, **Nome soluzione** (**BuildApp**) e **Framework**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#**  > **Windows Desktop** e quindi scegliere **App Windows Forms (.NET Framework)** . Scegliere quindi **OK**.
+    Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#**  > **Windows Desktop** e quindi scegliere **App Windows Forms (.NET Framework)** . Scegliere quindi **OK**.
 
     Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\* . Accettare le impostazioni predefinite per **Crea directory per soluzione** (selezionata), **Aggiungi al controllo del codice sorgente** (non selezionata) e **Nome soluzione** (**BuildApp**).
     ::: moniker-end
@@ -121,7 +121,7 @@ MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che og
 
 3. Salvare il file di progetto.
 
-L'attività Message è una delle tante disponibili in MSBuild. Per un elenco completo delle attività disponibili e per informazioni sull'utilizzo, vedere [Informazioni di riferimento sull'attività](../msbuild/msbuild-task-reference.md).
+L'attività Message è una delle tante disponibili in MSBuild. Per un elenco completo delle attività disponibili e informazioni sull'uso, vedere [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md).
 
 L'attività Message accetta il valore stringa dell'attributo Text come input e lo visualizza nel dispositivo di output. La destinazione HelloWorld esegue l'attività Message due volte: prima per visualizzare "Hello" e quindi per visualizzare "World".
 
@@ -175,7 +175,7 @@ L'attività Message accetta il valore stringa dell'attributo Text come input e l
 </PropertyGroup>
 ```
 
- Tutte le proprietà sono elementi figlio degli elementi PropertyGroup. Il nome della proprietà è il nome dell'elemento figlio e il valore della proprietà è l'elemento testo dell'elemento figlio. Ad esempio:
+ Tutte le proprietà sono elementi figlio degli elementi PropertyGroup. Il nome della proprietà è il nome dell'elemento figlio e il valore della proprietà è l'elemento testo dell'elemento figlio. Ad esempio,
 
 ```xml
 <TargetFrameworkVersion>v15.0</TargetFrameworkVersion>
@@ -192,6 +192,7 @@ L'attività Message accetta il valore stringa dell'attributo Text come input e l
  viene visualizzato in un secondo momento nel file di progetto o in un file importato in un secondo momento nel file di progetto, TargetFrameworkVersion accetta il nuovo valore "v3.5".
 
 ## <a name="examine-a-property-value"></a>Esaminare il valore di una proprietà
+
  Per ottenere il valore di una proprietà, usare la sintassi seguente, dove PropertyName è il nome della proprietà:
 
 ```xml
@@ -243,7 +244,7 @@ $(PropertyName)
 
 ### <a name="conditional-properties"></a>Proprietà condizionali
 
- Diverse proprietà, ad esempio Configuration, sono definite in modo condizionale, vale a dire che l'attributo Condition è presente nell'elemento della proprietà. Le proprietà condizionali vengono definite o ridefinite solo se la condizione restituisce "true". Si noti che alle proprietà non definite viene assegnato il valore predefinito di una stringa vuota. Ad esempio:
+ Diverse proprietà, ad esempio Configuration, sono definite in modo condizionale, vale a dire che l'attributo Condition è presente nell'elemento della proprietà. Le proprietà condizionali vengono definite o ridefinite solo se la condizione restituisce "true". Si noti che alle proprietà non definite viene assegnato il valore predefinito di una stringa vuota. Ad esempio,
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -315,7 +316,7 @@ Per altre informazioni, vedere [Caratteri speciali di MSBuild](../msbuild/msbuil
 
  Un elemento è un'informazione, in genere un nome file, usata come input per il sistema di compilazione. Ad esempio, una raccolta di elementi che rappresentano file di origine potrebbe venire passata a un'attività denominata Compile per compilarli in un assembly.
 
- Tutti gli elementi sono elementi figlio degli elementi ItemGroup. Il nome dell'elemento è il nome dell'elemento figlio e il valore dell'elemento è il valore dell'attributo Include dell'elemento figlio. I valori degli elementi con lo stesso nome vengono raccolti in tipi di elemento con tale nome.  Ad esempio:
+ Tutti gli elementi sono elementi figlio degli elementi ItemGroup. Il nome dell'elemento è il nome dell'elemento figlio e il valore dell'elemento è il valore dell'attributo Include dell'elemento figlio. I valori degli elementi con lo stesso nome vengono raccolti in tipi di elemento con tale nome.  Ad esempio,
 
 ```xml
 <ItemGroup>
@@ -334,7 +335,7 @@ Per altre informazioni, vedere [Caratteri speciali di MSBuild](../msbuild/msbuil
 </ItemGroup>
 ```
 
-Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
+Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
 
 > [!NOTE]
 > Percorsi dei file sono relativi alla cartella contenente il file di progetto MSBuild.
@@ -411,7 +412,8 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
     ```
 
 ### <a name="include-exclude-and-wildcards"></a>Include, Exclude e caratteri jolly
- È possibile usare i caratteri jolly "*", "\*\*" e "?" con l'attributo Include per aggiungere elementi a un tipo di elemento. Ad esempio:
+
+ È possibile usare i caratteri jolly "*", "\*\*" e "?" con l'attributo Include per aggiungere elementi a un tipo di elemento. Ad esempio,
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -425,7 +427,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 
  aggiunge tutti i file con estensione *jpeg* nella cartella *images* e in tutte le relative sottocartelle al tipo di elemento Photos. Per altri esempi, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).
 
- Si noti che gli elementi, quando vengono dichiarati, vengono aggiunti al tipo di elemento. Ad esempio:
+ Si noti che gli elementi, quando vengono dichiarati, vengono aggiunti al tipo di elemento. Ad esempio,
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -438,7 +440,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- È possibile escludere un elemento da un tipo di elemento con l'attributo Exclude. Ad esempio:
+ È possibile escludere un elemento da un tipo di elemento con l'attributo Exclude. Ad esempio,
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
@@ -446,7 +448,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 
  aggiunge tutti i file con estensione *cs* al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa *Designer*. Per altri esempi, vedere [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).
 
-L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Ad esempio:
+L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Ad esempio,
 
 ```xml
 <Compile Include="*.cs" />
@@ -486,6 +488,7 @@ non esclude il file *Form1.cs*, aggiunto nell'elemento item precedente.
     ```
 
 ## <a name="item-metadata"></a>Metadati degli elementi
+
  Gli elementi possono contenere metadati oltre alle informazioni raccolte dagli attributi Include ed Exclude. Questi metadati possono essere usati dalle attività che richiedono altre informazioni sugli elementi oltre al valore dell'elemento.
 
  Per dichiarare i metadati degli elementi nel file di progetto, è necessario creare un elemento con il nome dei metadati come elemento figlio dell'elemento. Un elemento può avere zero o più valori di metadati. Ad esempio, l'elemento CSFile seguente contiene metadati Culture con il valore "Fr":
@@ -598,11 +601,11 @@ Ad esempio, un elenco di file di origine può essere trasformato in una raccolta
 
 Si noti che i metadati espressi in questa sintassi non causano la divisione in batch.
 
-## <a name="whats-next"></a>Argomenti successivi
+## <a name="whats-next"></a>Quali sono le operazioni successive?
 
  Per informazioni su come creare un file di progetto semplice passaggio per passaggio, vedere [Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica di MSBuild](../msbuild/msbuild.md)
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)

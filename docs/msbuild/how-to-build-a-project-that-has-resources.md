@@ -13,18 +13,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 626db2638912c9eaa49ea74e702c9ba24f6fd33f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75576342"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633954"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Procedura: Compilare un progetto con risorse
+
 Se si stanno compilando le versioni localizzate di un progetto, tutti gli elementi dell'interfaccia utente devono essere separati in file di risorse per le diverse lingue. Se il progetto usa solo stringhe, i file di risorse possono usare file di testo. In alternativa, è possibile usare i file con estensione *resx* come file di risorse.
 
 ## <a name="compile-resources-with-msbuild"></a>Compilare le risorse con MSBuild
-La raccolta di attività comuni specificata con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] include un'attività `GenerateResource` che è possibile usare per compilare le risorse in file di testo o con estensione *resx*. Questa attività include il parametro `Sources` per specificare i file di risorse da compilare e il parametro `OutputResources` per specificare i nomi dei file di risorse di output. Per altre informazioni sull'attività `GenerateResource`, vedere [Attività GenerateResource](../msbuild/generateresource-task.md).
+
+La libreria di attività comuni fornita con MSBuild include un'attività `GenerateResource` che è possibile utilizzare per compilare risorse nei file con *estensione resx* o di testo. Questa attività include il parametro `Sources` per specificare i file di risorse da compilare e il parametro `OutputResources` per specificare i nomi dei file di risorse di output. Per altre informazioni sull'attività `GenerateResource`, vedere [Attività GenerateResource](../msbuild/generateresource-task.md).
 
 #### <a name="to-compile-resources-with-msbuild"></a>Per compilare le risorse con MSBuild
 
@@ -37,6 +39,7 @@ La raccolta di attività comuni specificata con [!INCLUDE[vstecmsbuild](../exten
 4. Usare l'elemento creato dall'elemento `Output` come input per un'altra attività.
 
 ## <a name="example"></a>Esempio
+
 L'esempio di codice seguente illustra come l'elemento `Output` specifica che l'attributo `OutputResources` dell'attività `GenerateResource` conterrà i file di risorse compilati *alpah.resources* e *beta.resources* e che questi due file verranno inseriti nell'elenco di elementi `Resources`. Identificando tali file con estensione *resources* come raccolta di elementi con lo stesso nome, è possibile usarli facilmente come input per un'altra attività, ad esempio l'attività [Csc](../msbuild/csc-task.md).
 
 Questa attività equivale a usare l'opzione **/compile** per [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator):
@@ -53,6 +56,7 @@ Questa attività equivale a usare l'opzione **/compile** per [Resgen.exe](/dotne
 ```
 
 ## <a name="example"></a>Esempio
+
 Il progetto di esempio seguente contiene due attività: l'attività `GenerateResource` per compilare le risorse e l'attività `Csc` per compilare sia i file di codice sorgente che i file di risorse compilati. I file di risorse compilati dall'attività `GenerateResource` vengono archiviati nell'elemento `Resources` e passati all'attività `Csc`.
 
 ```xml
@@ -77,6 +81,7 @@ Il progetto di esempio seguente contiene due attività: l'attività `GenerateRes
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Attività GenerateResource](../msbuild/generateresource-task.md)
 - [Attività Csc](../msbuild/csc-task.md)

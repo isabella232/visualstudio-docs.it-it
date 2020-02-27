@@ -11,17 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c4262ed1a7b92170565f7006c9ed06ed884f928
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593772"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633109"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
-Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Questo argomento descrive le trasformazioni e il relativo uso in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per compilare progetti in modo più efficiente.
+
+Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. In questo argomento vengono illustrate le trasformazioni e il modo in cui MSBuild le utilizza per compilare progetti in modo più efficiente.
 
 ## <a name="transform-modifiers"></a>Modificatori di comandi
+
 Le trasformazioni non sono arbitrarie, ma sono limitate da una sintassi speciale in cui tutti i modificatori di trasformazione devono essere nel formato %(\<NomeMetadatiElementi). I metadati degli elementi possono essere usati come modificatori della trasformazione. Sono inclusi i metadati noti degli elementi, assegnati a ogni elemento al momento della creazione. Per un elenco di tutti i metadati noti degli elementi, vedere [Metadati noti degli elementi di MSBuild](../msbuild/msbuild-well-known-item-metadata.md).
 
 Nell'esempio seguente un elenco di file con estensione *resx* viene trasformato in un elenco di file con estensione *resources*. Il modificatore di trasformazione %(filename) specifica che ogni file con estensione *resources* ha lo stesso nome del file con estensione *resx* corrispondente.
@@ -36,6 +38,7 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 > Per un elenco di elementi trasformato è possibile specificare un separatore personalizzato, in modo analogo a quanto accade con un elenco di elementi standard. Per separare, ad esempio, un elenco di elementi trasformato usando una virgola (,) anziché il punto e virgola predefinito (;), usare il codice XML seguente: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>Uso di più modificatori
+
  Un'espressione di trasformazione può contenere più modificatori, che possono essere combinati in qualsiasi ordine e ripetuti. Nell'esempio seguente il nome della directory che contiene il file viene modificato, ma i file mantengono il nome e l'estensione originali.
 
 ```xml
@@ -45,7 +48,8 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
  Se, ad esempio, gli elementi contenuti nell'elenco `RESXFile` sono *Project1\Form1.resx*, *Project1\Form2.resx* e *Project1\Form3.text*, gli output nell'elenco trasformato saranno *Toolset\Form1.resx*, *Toolset\Form2.resx* e *Toolset\Form3.text*.
 
 ## <a name="dependency-analysis"></a>Analisi delle dipendenze
- Le trasformazioni garantiscono un mapping uno-a-uno tra l'elenco di elementi trasformato e l'elenco di elementi originale. Se pertanto una destinazione crea output che sono trasformazioni degli input, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può analizzare i timestamp degli input e output e decidere se ignorare, compilare o ricompilare parzialmente una destinazione.
+
+ Le trasformazioni garantiscono un mapping uno-a-uno tra l'elenco di elementi trasformato e l'elenco di elementi originale. Se pertanto una destinazione crea output che sono trasformazioni degli input, MSBuild può analizzare i timestamp degli input e degli output e decidere se ignorare, compilare o ricompilare parzialmente una destinazione.
 
  Nell'[attività Copy](../msbuild/copy-task.md) dell'esempio seguente, ogni file dell'elenco di elementi `BuiltAssemblies` è associato a un file nella cartella di destinazione dell'attività, specificata con una trasformazione nell'attributo `Outputs`. Se viene modificato un file dell'elenco di elementi `BuiltAssemblies`, l'attività `Copy` viene eseguita solo per il file modificato e tutti gli altri file vengono ignorati. Per altre informazioni sulle analisi delle dipendenze e su come usare le trasformazioni, vedere [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md).
 
@@ -64,7 +68,8 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 ## <a name="example"></a>Esempio
 
 ### <a name="description"></a>Descrizione
- L'esempio seguente illustra un file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in cui vengono usate le trasformazioni. In questo esempio si presuppone che vi sia un solo file con estensione *xsd* nella directory *c:\sub0\sub1\sub2\sub3* e che la directory di lavoro sia *c:\sub0*.
+
+ Nell'esempio seguente viene illustrato un file di progetto MSBuild che utilizza le trasformazioni. In questo esempio si presuppone che vi sia un solo file con estensione *xsd* nella directory *c:\sub0\sub1\sub2\sub3* e che la directory di lavoro sia *c:\sub0*.
 
 ### <a name="code"></a>Codice
 
@@ -87,8 +92,9 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 </Project>
 ```
 
-### <a name="comments"></a>Comments
- Questo esempio produce il seguente output:
+### <a name="comments"></a>Commenti
+
+ Nell'esempio viene prodotto l'output seguente:
 
 ```
 rootdir: C:\
@@ -102,6 +108,7 @@ extension: .xsd
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
 - [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md)

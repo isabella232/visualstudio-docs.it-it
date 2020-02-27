@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b48529f82a908ea765151561a71c58cd2c7bc5
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 68d585361b9797bf1df9c8b0b31f8a089e9de025
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578423"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632095"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
+
 Avvia un contesto di verifica usando un file di risposta che specifica un marcatore radice.
 
 ## <a name="syntax"></a>Sintassi
@@ -32,6 +33,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ```
 
 #### <a name="parameters"></a>Parametri
+
 [in] `intermediateDirectory`
 
  Directory in cui archiviare il log di rilevamento.
@@ -45,10 +47,13 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
  Percorso di un file di risposta che contiene un marcatore radice. Il nome radice viene usato per raggruppare tutte le verifiche relative a un contesto.
 
 ## <a name="return-value"></a>Valore restituito
+
  **HRESULT** con il bit **SUCCEEDED** impostato se il contesto di rilevamento è stato creato.
 
 ## <a name="requirements"></a>Requisiti
+
  **Intestazione:** *FileTracker. h*
 
 ## <a name="see-also"></a>Vedere anche
+
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

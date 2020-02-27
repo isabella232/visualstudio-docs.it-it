@@ -18,24 +18,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594800"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634058"
 ---
 # <a name="generateresource-task"></a>GenerateResource (attività)
+
 Converte file *TXT* e *RESX* (formato di risorsa basato su XML) in file binari *RESOURCES* di Common Language Runtime, che è possibile incorporare in un eseguibile binario di runtime o compilare in assembly satellite. In genere, questa attività viene usata per convertire file *TXT* o *RESX* in file *RESOURCES*. Dal punto di vista funzionale, l'attività `GenerateResource` è simile a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
 
 ## <a name="parameters"></a>Parametri
-Nella tabella che segue vengono descritti i parametri dell'attività `GenerateResource` .
+
+Nella tabella che segue vengono descritti i parametri dell'attività `GenerateResource`.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|`AdditionalInputs`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Contiene input aggiuntivi per il controllo delle dipendenze eseguito da questa attività. Ad esempio, è in genere opportuno inserire come input i file di progetto e di destinazione, in modo da consentire la rigenerazione di tutte le risorse in caso di aggiornamento.|
+|`AdditionalInputs`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene input aggiuntivi per il controllo delle dipendenze eseguito da questa attività. Ad esempio, è in genere opportuno inserire come input i file di progetto e di destinazione, in modo da consentire la rigenerazione di tutte le risorse in caso di aggiornamento.|
 |`EnvironmentVariables`|Parametro `String[]` facoltativo.<br /><br /> Specifica una matrice di coppie nome/valore di variabili di ambiente che devono essere passate al file *resgen.exe* generato, oltre al normale blocco di ambiente (o all'esecuzione selettiva dell'override).|
-|`ExcludedInputPaths`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica una matrice di elementi che indicano i percorsi dai quali gli input tracciati verranno ignorati durante la verifica dell'aggiornamento.|
+|`ExcludedInputPaths`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica una matrice di elementi che indicano i percorsi dai quali gli input tracciati verranno ignorati durante la verifica dell'aggiornamento.|
 |`ExecuteAsTool`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, esegue i file *tlbimp.exe* e *aximp.exe* dal framework di destinazione appropriato in modalità out-of-process per generare gli assembly wrapper necessari. Questo parametro consente il multitargeting di `ResolveComReferences`.|
 |`FilesWritten`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene i nomi di tutti i file scritti nel disco, incluso, se presente, il file di cache. Questo parametro è particolarmente utile per le implementazioni di Clean.|
 |`MinimalRebuildFromTracking`|Parametro `Boolean` facoltativo.<br /><br /> Ottiene o imposta un'opzione che specifica se verrà usata la compilazione incrementale tracciata. Se `true`, viene attivata la compilazione incrementale. In caso contrario, verrà forzata una ricompilazione.|
@@ -48,7 +50,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GenerateRe
 |`StateFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il percorso di un file di cache facoltativo usato per accelerare il controllo delle dipendenze dei collegamenti nei file di input *RESX*.|
 |`StronglyTypedClassName`|Parametro `String` facoltativo.<br /><br /> Specifica il nome della classe di risorse fortemente tipizzata. Se questo parametro non è specificato, viene usato il nome base del file di risorse.|
 |`StronglyTypedFilename`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il nome del file di origine. Se questo parametro non è specificato, viene usato il nome della classe come nome base e l'estensione viene determinata dal linguaggio. Ad esempio: *MyClass.cs*.|
-|`StronglyTypedLanguage`|Parametro `String` facoltativo.<br /><br /> Specifica il linguaggio da usare per generare l'origine della classe per la risorsa fortemente tipizzata. Questo parametro deve corrispondere esattamente a uno dei linguaggi usati da CodeDomProvider. Ad esempio: `VB` o `C#`.<br /><br /> Il passaggio di un valore a questo parametro determina la generazione di risorse fortemente tipizzate.|
+|`StronglyTypedLanguage`|Parametro `String` facoltativo.<br /><br /> Specifica il linguaggio da usare per generare l'origine della classe per la risorsa fortemente tipizzata. Questo parametro deve corrispondere esattamente a uno dei linguaggi usati da CodeDomProvider. Ad esempio, `VB` o `C#`.<br /><br /> Il passaggio di un valore a questo parametro determina la generazione di risorse fortemente tipizzate.|
 |`StronglyTypedManifestPrefix`|Parametro `String` facoltativo.<br /><br /> Specifica lo spazio dei nomi della risorsa o il prefisso del manifesto da usare nell'origine della classe generata per la risorsa fortemente tipizzata.|
 |`StronglyTypedNamespace`|Parametro `String` facoltativo.<br /><br /> Specifica lo spazio dei nomi da usare per l'origine della classe generata per la risorsa fortemente tipizzata. Se questo parametro non è specificato, tutte le risorse fortemente tipizzate vengono incluse nello spazio dei nomi globale.|
 |`TLogReadFiles`|Parametro di sola lettura <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene una matrice di elementi che rappresentano i log di rilevamento delle operazioni di lettura.|
@@ -61,13 +63,15 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GenerateRe
 |`UseSourcePath`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che è necessario usare la directory del file di input per risolvere i percorsi di file relativi.|
 
 ## <a name="remarks"></a>Note
+
 Poiché i file *RESX* possono contenere collegamenti ad altri file di risorse, non è sufficiente confrontare i timestamp dei file *RESX* e *RESOURCES* per verificare che gli output siano aggiornati. Per questo motivo, l'attività `GenerateResource` segue i collegamenti nei file *RESX* e al tempo stesso controlla i timestamp dei file collegati. Ne consegue che, in genere, non è consigliabile usare gli attributi `Inputs` e `Outputs` nella destinazione che contiene l'attività `GenerateResource`. In questo modo, infatti, è possibile che l'attività venga ignorata anziché essere eseguita.
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 Se si usa MSBuild 4.0 come destinazione di progetti .NET 3.5, è possibile che la compilazione sulle risorse x86 non riesca. Per risolvere questo problema, è possibile compilare la destinazione come assembly AnyCPU.
 
 ## <a name="example"></a>Esempio
+
 Nell'esempio seguente viene usata l'attività `GenerateResource` per generare file *RESOURCES* dai file specificati dalla raccolta di elementi `Resx`.
 
 ```xml
@@ -95,5 +99,6 @@ Supponendo che l'assembly si chiami myAssembly, il codice seguente genera una ri
 Senza i metadati \<LogicalName>, la risorsa sarebbe denominata *myAssembly.myResource.resources*.  Questo esempio si applica solo a Visual Basic e al processo di compilazione di Visual C#.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

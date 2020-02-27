@@ -11,17 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f60b7d2c0de74743c021feee56a3d9f3c8f3eb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574327"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633772"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procedura: Usare caratteri XML riservati nei file di progetto
+
 Quando si creano file di progetto, potrebbe essere necessario usare caratteri XML riservati, ad esempio, nei valori della proprietà o nei valori del parametro di un'attività. Alcuni caratteri riservati tuttavia devono essere sostituiti da un'entità denominata in modo che il file di progetto possa essere analizzato.
 
 ## <a name="use-reserved-characters"></a>Usare caratteri riservati
+
  La tabella seguente descrive i caratteri XML riservati che devono essere sostituiti dall'entità denominata corrispondente in modo che il file di progetto possa essere analizzato.
 
 |Carattere riservato|Entità denominata|
@@ -41,6 +43,7 @@ Quando si creano file di progetto, potrebbe essere necessario usare caratteri XM
     ```
 
 ## <a name="example"></a>Esempio
+
  Nell'esempio di codice seguente le virgolette doppie vengono usate per evidenziare il nome file nel messaggio restituito dal file di progetto.
 
 ```xml
@@ -71,5 +74,6 @@ Quando si creano file di progetto, potrebbe essere necessario usare caratteri XM
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

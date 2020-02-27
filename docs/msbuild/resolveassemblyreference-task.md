@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fcd289f5258fde7ae8f17a9e19a25427fe6885
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b79bd8eb3f7d813e3acd091ce5f2ffbc7b3eeb49
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278349"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632758"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference (attività)
+
 Determina tutti gli assembly che dipendono dall'assembly specificato, incluse dipendenze di secondo e `n` ordine.
 
 ## <a name="parameters"></a>Parametri
+
  Nella tabella che segue vengono descritti i parametri dell'attività `ResolveAssemblyReference`.
 
 |Parametro|Descrizione|
@@ -77,7 +79,8 @@ Determina tutti gli assembly che dipendono dall'assembly specificato, incluse di
 |`TargetFrameworkVersion`|Parametro `String` facoltativo.<br /><br /> Versione del framework di destinazione del progetto. Il valore predefinito è vuoto, ovvero non esiste alcun filtro per i riferimenti basati sul framework di destinazione.|
 |`TargetProcessorArchitecture`|Parametro `String` facoltativo.<br /><br /> Architettura del processore di destinazione preferita. Usato per la risoluzione dei riferimenti alla Global Assembly Cache (GAC).<br /><br /> Il valore di questo parametro può essere `x86`, `IA64` o `AMD64`.<br /><br /> Se questo parametro è assente, l'attività considera prima di tutto gli assembly che corrispondono all'architettura del processo attualmente in esecuzione. Se non viene trovato alcun assembly, l'attività considera gli assembly nella GAC il cui valore di `ProcessorArchitecture` è `MSIL` o senza alcun valore per `ProcessorArchitecture` .|
 
-## <a name="warnings"></a>Avvisi
+## <a name="warnings"></a>Warnings
+
  Vengono registrati gli avvisi seguenti:
 
 - `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
@@ -100,9 +103,11 @@ Determina tutti gli assembly che dipendono dall'assembly specificato, incluse di
 
 - `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
+
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

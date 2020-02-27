@@ -10,22 +10,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ce9401174a26d58b7ef88d536a24bfb9017154
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595085"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632121"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Avvio di una compilazione all'interno dell'IDE
+
 I sistemi di progetto personalizzati devono usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> per avviare le compilazioni. In questo argomento vengono descritti i motivi dei requisiti e la procedura da seguire.
 
 ## <a name="parallel-builds-and-threads"></a>Compilazioni parallele e thread
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente le compilazioni parallele per cui è richiesta la mediazione per l'accesso alle risorse comuni. I sistemi di progetto sono in grado di eseguire le compilazioni in modo asincrono, ma non devono chiamare le funzioni di compilazione dall'interno di callback.
+
+ Visual Studio consente le compilazioni parallele, che richiedono la mediazione per l'accesso alle risorse comuni. I sistemi di progetto sono in grado di eseguire le compilazioni in modo asincrono, ma non devono chiamare le funzioni di compilazione dall'interno di callback.
 
  Se il sistema di progetto modifica le variabili di ambiente, è necessario impostare il valore NodeAffinity della compilazione su OutOfProc. Il requisito implica che non è possibile usare oggetti host, poiché richiedono il nodo in-process.
 
 ## <a name="use-ivsbuildmanageraccessor"></a>Uso di IVSBuildManagerAccessor
+
  Il codice riportato di seguito illustra un metodo che può essere usato da un sistema di progetto per avviare una compilazione:
 
 ```csharp
