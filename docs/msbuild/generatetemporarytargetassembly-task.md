@@ -18,24 +18,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 634cf365c0cd42e3eb146b74a137a66f742a8730
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69333b87720513244e90c131f052d11099b62e35
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594812"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634045"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Attività GenerateTemporaryTargetAssembly
-L'attività <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> genera un assembly se in un progetto almeno una pagina [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] fa riferimento a un tipo dichiarato localmente nel progetto. L'assembly generato viene rimosso dopo il completamento del processo di compilazione o in caso di esito negativo del processo.
+
+L'attività <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> genera un assembly se almeno una pagina XAML in un progetto fa riferimento a un tipo dichiarato localmente nel progetto. L'assembly generato viene rimosso dopo il completamento del processo di compilazione o in caso di esito negativo del processo.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
 | Parametro | Descrizione |
 |--------------------------| - |
-| `AssemblyName` | Parametro **String** obbligatorio.<br /><br /> Specifica il nome breve dell'assembly generato per un progetto ed è anche il nome dell'assembly di destinazione generato temporaneamente. Se, ad esempio, un progetto genera un eseguibile [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] il cui nome è *WinExeAssembly.exe*, il parametro **AssemblyName** presenterà il valore **WinExeAssembly**. |
-| `CompileTargetName` | Parametro **String** obbligatorio.<br /><br /> Specifica il nome della destinazione [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] usata per generare assembly dai file di codice sorgente. Il valore tipico per **CompileTargetName** è **CoreCompile**. |
+| `AssemblyName` | Parametro **String** obbligatorio.<br /><br /> Specifica il nome breve dell'assembly generato per un progetto ed è anche il nome dell'assembly di destinazione generato temporaneamente. Se, ad esempio, un progetto genera un eseguibile Windows il cui nome è *WinExeAssembly. exe*, il parametro **AssemblyName** avrà il valore **WinExeAssembly**. |
+| `CompileTargetName` | Parametro **String** obbligatorio.<br /><br /> Specifica il nome della destinazione MSBuild utilizzata per generare assembly dai file di codice sorgente. Il valore tipico per **CompileTargetName** è **CoreCompile**. |
 | `CompileTypeName` | Parametro **String** obbligatorio.<br /><br /> Specifica il tipo di compilazione eseguito dalla destinazione specificata dal parametro **CompileTargetName**. Per la destinazione **CoreCompile** questo valore è **Compile**. |
-| `CurrentProject` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso completo del file di progetto [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] per il progetto che richiede un assembly di destinazione temporaneo. |
+| `CurrentProject` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso completo del file di progetto MSBuild per il progetto che richiede un assembly di destinazione temporaneo. |
 | `GeneratedCodeFiles` | Parametro **ITaskItem[]** facoltativo.<br /><br /> Specifica l'elenco di file di codice gestito specifici del linguaggio generati dall'attività [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md). |
 | `IntermediateOutputPath` | Parametro **String** obbligatorio.<br /><br /> Specifica la directory in cui viene generato l'assembly di destinazione temporaneo. |
 | `MSBuildBinPath` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso di *MSBuild.exe*, necessario per compilare l'assembly di destinazione temporaneo. |
@@ -43,11 +44,13 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>
 | `ReferencePathTypeName` | Parametro **String** obbligatorio.<br /><br /> Specifica il parametro usato dal parametro di destinazione della compilazione (**CompileTargetName**), che specifica l'elenco di riferimenti ad assembly (**ReferencePath**). Il valore appropriato è **ReferencePath**. |
 
 ## <a name="remarks"></a>Note
-Il primo passaggio di compilazione del markup, eseguito da [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), compila i file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] in formato binario. Il compilatore necessita quindi dell'elenco degli assembly a cui si fa riferimento in cui sono contenuti i tipi usati dai file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. Se tuttavia un file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] usa un tipo definito nello stesso progetto, non viene creato un assembly corrispondente per il progetto fino a quando quest'ultimo non viene compilato. Pertanto, non è possibile fornire un riferimento all'assembly durante il primo passaggio di compilazione del markup.
 
-**MarkupCompilePass1** rinvia la conversione dei file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] che contengono riferimenti a tipi dello stesso progetto a un secondo passaggio di compilazione del markup, eseguito da [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md). Prima dell'esecuzione di **MarkupCompilePass2**, viene generato un assembly temporaneo contenente i tipi usati dai file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] di cui è stato rinviato il passaggio di compilazione del markup. Un riferimento all'assembly generato viene fornito a **MarkupCompilePass2** mentre viene eseguito, in modo da consentire la conversione in formato binario dei file [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] con compilazione rinviata.
+Il primo passaggio di compilazione del markup, eseguito da [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), compila i file XAML in formato binario. Di conseguenza, il compilatore necessita di un elenco degli assembly a cui si fa riferimento che contengono i tipi utilizzati dai file XAML. Tuttavia, se un file XAML usa un tipo definito nello stesso progetto, un assembly corrispondente per quel progetto non viene creato fino a quando non viene compilato il progetto. Pertanto, non è possibile fornire un riferimento all'assembly durante il primo passaggio di compilazione del markup.
+
+Al contrario, **MarkupCompilePass1** rinvia la conversione dei file XAML che contengono riferimenti ai tipi nello stesso progetto a un secondo passaggio di compilazione del markup, che viene eseguito dal [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md). Prima dell'esecuzione di **MarkupCompilePass2**, viene generato un assembly temporaneo Questo assembly contiene i tipi utilizzati dai file XAML il cui passaggio di compilazione del markup è stato posticipato. Un riferimento all'assembly generato viene fornito a **MarkupCompilePass2** quando viene eseguito per consentire la conversione dei file XAML di compilazione posticipata in formato binario.
 
 ## <a name="example"></a>Esempio
+
 Nell'esempio seguente viene generato un assembly temporaneo poiché *Page1.xaml* contiene un riferimento a un tipo che si trova nello stesso progetto.
 
 ```xml
@@ -71,9 +74,10 @@ Nell'esempio seguente viene generato un assembly temporaneo poiché *Page1.xaml*
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
 - [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Creazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
 - [Panoramica delle applicazioni browser XAML di WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

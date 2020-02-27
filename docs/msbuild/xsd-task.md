@@ -20,20 +20,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c256e02901d4f7dd7de6f14e9f650626feac25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565786"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630782"
 ---
 # <a name="xsd-task"></a>XSD (attività)
-Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera file di schema o di classe da un'origine.
+
+Esegue il wrapping dello strumento XML Schema Definition, *xsd.exe*, che genera file di schema o di classe da un'origine.
 
 > [!NOTE]
 > A partire da Visual Studio 2017, il supporto dei progetti C++ per *xsd.exe* è deprecato. È comunque possibile usare le API **Microsoft.VisualC.CppCodeProvider** aggiungendo manualmente *CppCodeProvider.dll* alla Global Assembly Cache.
 
 ## <a name="parameters"></a>Parametri
+
  La tabella seguente descrive i parametri dell'attività **XSD**.
 
 - **AdditionalOptions**
@@ -54,7 +56,7 @@ Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera
 
   - **dataset** -  **/dataset**
 
-- **Linguaggio**
+- **Lingua**
 
      Parametro **String** facoltativo.
 
@@ -62,7 +64,7 @@ Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera
 
      È possibile scegliere tra **CS** (C#, il linguaggio predefinito), **VB** (Visual Basic) o **JS** (JScript). È anche possibile specificare un nome completo per una classe che implementa `System.CodeDom.Compiler.CodeDomProvider Class`.
 
-- **Namespace**
+- **Spazio dei nomi**
 
      Parametro **String** facoltativo.
 
@@ -87,4 +89,5 @@ Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera
      Specifica la directory per il log di Tracker.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd62738a89b38adb6cd01d6a33d661e95144d34
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bc50379563a85ce9c76f3d45b9d70c1f784eaf5a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565266"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631250"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
+
 Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/task-element-msbuild.md) all'assembly che contiene l'implementazione dell'attività.
 
  \<Project> \<UsingTask>
@@ -43,6 +44,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 > A differenza di proprietà ed elementi, verrà usato il *primo* elemento `UsingTask` che si applica a un `TaskName`. per eseguire l'override delle attività è necessario definire un nuovo `UsingTask` *prima* di quello esistente.
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
@@ -55,20 +57,21 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 |`TaskName`|Attributo obbligatorio.<br /><br /> Il nome dell'attività a cui fare riferimento da un assembly. In caso di ambiguità, questo attributo deve specificare sempre gli spazi dei nomi completi. In caso di ambiguità, MSBuild sceglie una corrispondenza arbitraria, con potenziali risultati imprevisti.|
 |`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Elementi figlio
+### <a name="child-elements"></a>Elemento figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Il set di parametri visualizzati nell'attività generata dall'elemento `TaskFactory` specificato.|
-|[Task](../msbuild/task-element-msbuild.md)|I dati che vengono passati all'elemento `TaskFactory` per generare un'istanza dell'attività.|
+|[Attività](../msbuild/task-element-msbuild.md)|I dati che vengono passati all'elemento `TaskFactory` per generare un'istanza dell'attività.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
 ## <a name="remarks"></a>Note
+
  È possibile fare riferimento alle variabili di ambiente, alle proprietà della riga di comando, alle proprietà a livello di progetto e agli elementi a livello di progetto negli elementi `UsingTask` inclusi nel file di progetto sia direttamente che tramite un file di progetto importato. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
 > [!NOTE]
@@ -77,6 +80,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
  In MSBuild 4.0 è possibile caricare gli elementi UsingTask dai file con estensione *overridetask*.
 
 ## <a name="example"></a>Esempio
+
  L'esempio seguente illustra come usare l'elemento `UsingTask` con un attributo `AssemblyName`.
 
 ```xml
@@ -93,6 +97,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 ```
 
 ## <a name="example"></a>Esempio
+
  L'esempio seguente illustra come usare l'elemento `UsingTask` con un attributo `AssemblyFile`.
 
 ```xml
@@ -101,6 +106,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56e3526f130a8717dec2dafeef794375ceffc37c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: d2ca532e37fa2f70800416539a7de2ff5e9978e2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579616"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633980"
 ---
 # <a name="getreferenceassemblypaths-task"></a>Attività GetReferenceAssemblyPaths
+
 Restituisce i percorsi degli assembly di riferimento dei vari framework.
 
 ## <a name="parameters"></a>Parametri
+
  Nella tabella che segue vengono descritti i parametri dell'attività `GetReferenceAssemblyPaths`.
 
 |Parametro|Descrizione|
@@ -36,8 +38,10 @@ Restituisce i percorsi degli assembly di riferimento dei vari framework.
 |`TargetFrameworkMonikerDisplayName`|Parametro di ouput facoltativo `String`.<br /><br /> Specifica il nome visualizzato per il moniker del framework di destinazione.|
 
 ## <a name="remarks"></a>Note
+
  Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

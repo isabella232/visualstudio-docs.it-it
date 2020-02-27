@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2ddf970225d96291f76935838a743ba358eff0f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594877"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633083"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
+
 Fa in modo che vengano eseguite una o più destinazioni se l'attributo `ContinueOnError` è `false` per un'attività non riuscita.
 
  \<Project> \<Target> \<OnError>
@@ -38,9 +39,10 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -48,21 +50,24 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 |`ExecuteTargets`|Attributo obbligatorio.<br /><br /> Le destinazioni da eseguire se un'attività non riesce. Se si specificano più destinazioni, separarle con punto e virgola. Le destinazioni vengono eseguite nell'ordine specificato.|
 
 ### <a name="child-elements"></a>Elementi figlio
- nessuna.
+
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [Destinazione](../msbuild/target-element-msbuild.md) | Elemento contenitore per le attività [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Destinazione](../msbuild/target-element-msbuild.md) | Elemento contenitore per le attività di MSBuild. |
 
-## <a name="remarks"></a>Note
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] esegue l'elemento `OnError` se una delle attività dell'elemento `Target` ha esito negativo con l'attributo `ContinueOnError` impostato su `ErrorAndStop` (o `false`). Quando l'attività ha esito negativo, vengono eseguite le destinazioni specificate nell'attributo `ExecuteTargets`. Se la destinazione include più di un elemento `OnError`, gli elementi `OnError` vengono eseguiti in sequenza quando l'attività ha esito negativo.
+## <a name="remarks"></a>Osservazioni
+
+ MSBuild esegue l'elemento `OnError` se una delle attività dell'elemento `Target` ha esito negativo con l'attributo `ContinueOnError` impostato su `ErrorAndStop` (o `false`). Quando l'attività ha esito negativo, vengono eseguite le destinazioni specificate nell'attributo `ExecuteTargets`. Se la destinazione include più di un elemento `OnError`, gli elementi `OnError` vengono eseguiti in sequenza quando l'attività ha esito negativo.
 
  Per altre informazioni sull'attributo `ContinueOnError`, vedere [Elemento Task (MSBuild)](../msbuild/task-element-msbuild.md). Per informazioni sulle destinazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md).
 
 ## <a name="example"></a>Esempio
- Il codice seguente esegue le attività `TaskOne` e `TaskTwo`. Se `TaskOne` ha esito negativo, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] valuta l'elemento `OnError` ed esegue la destinazione `OtherTarget`.
+
+ Il codice seguente esegue le attività `TaskOne` e `TaskTwo`. Se `TaskOne` ha esito negativo, MSBuild valuta l'elemento `OnError` ed esegue la destinazione `OtherTarget`.
 
 ```xml
 <Target Name="ThisTarget">
@@ -75,5 +80,6 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
-- [Destinazioni](../msbuild/msbuild-targets.md)
+- [Server di destinazione](../msbuild/msbuild-targets.md)

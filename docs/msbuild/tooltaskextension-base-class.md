@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 947a1df101a169b7bdad4efda74cab1ae042964a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594968"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631692"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe di base ToolTaskExtension
+
 Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> che eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Questa catena di ereditarietà aggiunge diversi parametri alle attività che ne derivano. Questi parametri sono elencati in questo documento.
 
 ## <a name="parameters"></a>Parametri
+
  Nella tabella seguente vengono descritti i parametri delle classi di base.
 
 | Parametro | Descrizione |
@@ -41,10 +43,11 @@ Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExten
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | Parametro `String` facoltativo.<br /><br /> Importanza con cui registrare il testo dal flusso di output standard. |
 | <xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A> | Parametro virtuale `Int32` facoltativo.<br /><br /> Specifica la quantità di tempo, in millisecondi, dopo i quali l'eseguibile dell'attività viene terminato. Il valore predefinito è `Int.MaxValue`, con cui si indica che non esiste alcun periodo di timeout. Il timeout è espresso in millisecondi. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A> | Parametro virtuale `string` facoltativo.<br /><br /> I progetti possono implementarlo per eseguire l'override di un ToolName. Le attività possono eseguirne l'override per conservare il ToolName. |
-| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | Parametro `string` facoltativo.<br /><br /> Specifica la posizione da cui l'attività carica il file eseguibile sottostante. Se questo parametro viene omesso, l'attività usa il percorso di installazione SDK corrispondente alla versione del framework che esegue [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | Parametro `string` facoltativo.<br /><br /> Specifica la posizione da cui l'attività carica il file eseguibile sottostante. Se questo parametro non viene specificato, l'attività usa il percorso di installazione SDK corrispondente alla versione del Framework che esegue MSBuild. |
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, questa attività crea un file batch per la riga di comando e lo esegue mediante il processore dei comandi anziché eseguire direttamente il comando. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, questa attività restituisce il nodo quando l'attività è in esecuzione. |
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

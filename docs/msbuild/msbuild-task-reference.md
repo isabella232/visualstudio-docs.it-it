@@ -15,25 +15,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593876"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633161"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 
-Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività riportate nell'elenco seguente sono incluse in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] è installato, sono disponibili attività aggiuntive usate per compilare progetti [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Per ulteriori informazioni, vedere [ C++ attività](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività nell'elenco seguente sono incluse in MSBuild. Quando si C++ installa il carico di lavoro, sono disponibili attività aggiuntive che vengono usate C++ per compilare i progetti. Per ulteriori informazioni, vedere [ C++ attività](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
 
 Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività dispone anche dei parametri seguenti:
 
 | Parametro | Descrizione |
 |-------------------| - |
-| `Condition` | Parametro `String` facoltativo.<br /><br /> Espressione `Boolean` usata dal motore di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per determinare se l'attività verrà eseguita. Per altre informazioni sulle condizioni supportate da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vedere [Condizioni](../msbuild/msbuild-conditions.md). |
+| `Condition` | Parametro `String` facoltativo.<br /><br /> Espressione `Boolean` utilizzata dal motore MSBuild per determinare se questa attività verrà eseguita. Per informazioni sulle condizioni supportate da MSBuild, vedere [condizioni](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [Target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori delle attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [Procedura: Ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Classe di base Task](../msbuild/task-base-class.md)
 
@@ -85,7 +85,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)
 
- Crea un nome di manifesto nello stile di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] da un nome file con estensione *resx* specifico o da un'altra risorsa.
+ Crea un C#nome di manifesto di tipo da un nome di file con *estensione resx* specificato o da un'altra risorsa.
 
 - [Attività CreateItem](../msbuild/createitem-task.md)
 
@@ -97,7 +97,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- Crea un nome di manifesto nello stile di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] da un nome file con estensione *resx* specifico o da un'altra risorsa.
+ Crea un nome di manifesto di tipo Visual Basic da un nome di file con *estensione resx* specificato o da un'altra risorsa.
 
 - [Attività Csc](../msbuild/csc-task.md)
 
@@ -141,7 +141,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)
 
- Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifesto nativo.
+ Genera un manifesto dell'applicazione ClickOnce o un manifesto nativo.
 
 - [Attività GenerateBootstrapper](../msbuild/generatebootstrapper-task.md)
 
@@ -149,7 +149,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
 
- Genera un manifesto di distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
+ Genera un manifesto di distribuzione ClickOnce.
 
 - [Attività GenerateResource](../msbuild/generateresource-task.md)
 
@@ -173,7 +173,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)
 
- Recupera il percorso di [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
+ Recupera il percorso di Windows Software Development Kit (SDK).
 
 - [Attività GetReferenceAssemblyPaths](../msbuild/getreferenceassemblypaths-task.md)
 
@@ -197,7 +197,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività MSBuild](../msbuild/msbuild-task.md)
 
- Compila progetti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] da un altro progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Compila i progetti MSBuild da un altro progetto MSBuild.
 
 - [Attività ReadLinesFromFile](../msbuild/readlinesfromfile-task.md)
 
@@ -221,7 +221,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - Attività ResGen
 
- Obsoleta. Usare l'[attività GenerateResource](../msbuild/generateresource-task.md) per convertire i file con estensione *txt* e *resx* in file binari di Common Language Runtime con estensione *resources* e viceversa.
+ Obsoleto. Usare l'[attività GenerateResource](../msbuild/generateresource-task.md) per convertire i file con estensione *txt* e *resx* in file binari di Common Language Runtime con estensione *resources* e viceversa.
 
 - [Attività ResolveAssemblyReference](../msbuild/resolveassemblyreference-task.md)
 
@@ -309,6 +309,6 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
 - [Scrittura di attività](../msbuild/task-writing.md)
 - [Attività](../msbuild/msbuild-tasks.md)

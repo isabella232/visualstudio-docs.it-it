@@ -9,17 +9,19 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: be8b4a6845e8fd14a0649f4134bcc26d8e1ad08e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574951"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633824"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Procedura: Ignorare gli errori nelle attività
+
 A volte è necessario che una compilazione sia a tolleranza di errore in determinate attività. Se tali attività non critiche hanno esito negativo, si vuole che la compilazione prosegua perché può ugualmente produrre l'output necessario. Se, ad esempio, un progetto usa un'attività `SendMail` per inviare un messaggio di posta elettronica dopo che ogni componente è stato compilato, si può considerare accettabile che la compilazione continui fino al completamento anche quando i server di posta non sono disponibili e i messaggi di stato non possono essere inviati. O anche, ad esempio, se di solito i file intermedi vengono eliminati durante la compilazione, si può considerare accettabile che la compilazione continui fino al completamento anche quando tali file non possono essere eliminati.
 
 ## <a name="use-the-continueonerror-attribute"></a>Usare l'attributo ContinueOnError
+
 L'attributo `ContinueOnError` dell'elemento `Task` controlla se una compilazione si arresta o continua quando si verifica un errore dell'attività. Questo attributo controlla anche se gli errori vengono considerati errori o avvisi quando la compilazione continua.
 
 L'attributo `ContinueOnError` può contenere uno dei valori seguenti:
@@ -36,13 +38,14 @@ Il valore predefinito di `ContinueOnError` è `ErrorAndStop`. Se si imposta l'at
 
 #### <a name="to-ignore-an-error-in-a-task"></a>Per ignorare un errore in un'attività
 
-Usare l'attributo `ContinueOnError` dell'attività. Ad esempio:
+Usare l'attributo `ContinueOnError` dell'attività. Ad esempio,
 
 ```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
 ```
 
 ## <a name="example"></a>Esempio
+
 L'esempio di codice seguente mostra che la destinazione `Build` è ancora in esecuzione e che la compilazione è considerata riuscita, anche se l'attività `Delete` ha esito negativo.
 
 ```xml
@@ -62,6 +65,7 @@ L'esempio di codice seguente mostra che la destinazione `Build` è ancora in ese
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

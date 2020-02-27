@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585899"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633226"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Attività inline di MSBuild con RoslynCodeTaskFactory
+
 Analogamente all'attività [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), l'attività RoslynCodeTaskFactory usa i compilatori Roslyn multipiattaforma per generare assembly di attività in memoria da usare come attività inline.  Le attività RoslynCodeTaskFactory, destinate a .NET Standard, possono funzionare nei runtime di .NET Framework e .NET Core, nonché in altre piattaforme quali Linux e Mac OS.
 
 >[!NOTE]
 >RoslynCodeTaskFactory è disponibile solo in MSBuild 15.8 e versioni successive.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Struttura di un'attività inline con RoslynCodeTaskFactory
+
  Le attività inline RoslynCodeTaskFactory vengono dichiarate nello stesso modo delle attività [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md). L'unica differenza è che le prime sono destinate a .NET Standard.  L'attività inline e l'elemento `UsingTask` che la contiene sono generalmente inclusi in un file con estensione *targets* e all'occorrenza vengono importati in altri file di progetto. Di seguito è riportata un'attività inline di base. Si noti che non esegue alcuna operazione.
 
 ```xml
@@ -68,6 +70,7 @@ Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programma
 > Gli elementi contenuti in `Task` sono specifici della factory dell'attività, in questo caso la factory dell'attività del codice.
 
 ### <a name="code-element"></a>Code - elemento
+
 L'ultimo elemento figlio visualizzato all'interno dell'elemento `Task` è l'elemento `Code`. L'elemento `Code` contiene o individua il codice che deve essere compilato in un'attività. Ciò che si inserisce nell'elemento `Code` dipende da come si vuole scrivere l'attività.
 
 L'attributo `Language` specifica il linguaggio di programmazione in cui è scritto il codice. I valori accettabili sono `cs` per C#, `vb` per Visual Basic.
@@ -88,6 +91,7 @@ In alternativa, è possibile usare l'attributo `Source` dell'elemento `Code` per
 > Quando si definisce la classe dell'attività nel file di origine il nome della classe deve concordare con l'attributo `TaskName` dell'elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) corrispondente.
 
 ## <a name="hello-world"></a>Hello World
+
  Di seguito è riportata un'attività inline più efficiente con RoslynCodeTaskFactory. L'attività HelloWorld visualizza "Hello, world!" nel dispositivo di registrazione degli errori predefinito, in genere la console del sistema o la finestra **Output** di Visual Studio. L'elemento `Reference` dell'esempio è incluso solo ai fini della spiegazione.
 
 ```xml
@@ -125,6 +129,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>Parametri di input e output
+
  I parametri dell'attività inline sono elementi figlio di un elemento `ParameterGroup`. Ogni parametro accetta il nome dell'elemento che lo definisce. Il codice seguente definisce il parametro `Text`.
 
 ```xml
@@ -141,7 +146,7 @@ I parametri possono avere uno o più degli attributi seguenti:
 
 - `Output` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro deve avere un valore assegnato prima della restituzione da parte del metodo Execute.
 
-Ad esempio:
+Ad esempio,
 
 ```xml
 <ParameterGroup>
@@ -162,6 +167,7 @@ definisce questi tre parametri:
 Se l'elemento `Code` ha come attributo `Type``Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro. In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.
 
 ## <a name="example"></a>Esempio
+
  L'attività inline seguente registra alcuni messaggi e restituisce una stringa.
 
 ```xml
@@ -254,5 +260,6 @@ Queste attività inline possono combinare i percorsi e ottenere il nome del file
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Procedura dettagliata: Creare un'attività inline](../msbuild/walkthrough-creating-an-inline-task.md)

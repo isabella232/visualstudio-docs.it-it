@@ -18,18 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeb6e43e315aceef5028e77480b2817cd8edb030
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7c926c131fab101563841bea3362e88e27674226
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597360"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632901"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile (attività)
+
 Legge un elenco di elementi da un file di testo.
 
 ## <a name="parameters"></a>Parametri
- Nella tabella che segue vengono descritti i parametri dell'attività `ReadLinesFromFile` .
+
+ Nella tabella che segue vengono descritti i parametri dell'attività `ReadLinesFromFile`.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
@@ -37,9 +39,11 @@ Legge un elenco di elementi da un file di testo.
 |`Lines`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene le righe lette dal file.|
 
 ## <a name="remarks"></a>Note
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
+
  L'esempio seguente usa l'attività `ReadLinesFromFile` per creare gli elementi da un elenco in un file di testo. Gli elementi letti dal file vengono archiviati nella raccolta di elementi `ItemsFromFile`.
 
 ```xml
@@ -62,6 +66,7 @@ Legge un elenco di elementi da un file di testo.
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [Attività](../msbuild/msbuild-tasks.md)

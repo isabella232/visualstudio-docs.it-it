@@ -18,34 +18,38 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e09fa38f9f160728c3ca353164e87c9f3f6fa82
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596359"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634227"
 ---
 # <a name="error-task"></a>attività Error
+
 Interrompe una compilazione e registra un errore in base a un'istruzione condizionale valutata.
 
 ## <a name="parameters"></a>Parametri
-Nella tabella che segue vengono descritti i parametri dell'attività `Error` .
+
+Nella tabella che segue vengono descritti i parametri dell'attività `Error`.
 
 | Parametro | Descrizione |
 |---------------| - |
 | `Code` | Parametro `String` facoltativo.<br /><br /> Codice errore da associare all'errore. |
 | `File` | Parametro `String` facoltativo.<br /><br /> Il nome del file che contiene l'errore. Se non viene indicato alcun nome file, verrà usato il file contenente l'attività di errore. |
 | `HelpKeyword` | Parametro `String` facoltativo.<br /><br /> Parola chiave della Guida da associare all'errore. |
-| `Text` | Parametro `String` facoltativo.<br /><br /> Il testo dell'errore caricato da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se il parametro `Condition` restituisce `true`. |
+| `Text` | Parametro `String` facoltativo.<br /><br /> Testo dell'errore registrato da MSBuild se il parametro `Condition` restituisce `true`. |
 
 ## <a name="remarks"></a>Note
-L'attività `Error` consente ai progetti [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] di inviare il testo dell'errore ai logger e di arrestare l'esecuzione della compilazione.
+
+Il `Error` attività consente ai progetti MSBuild di rilasciare il testo dell'errore ai logger e arrestare l'esecuzione della compilazione.
 
 Se il parametro `Condition` restituisce `true`, la compilazione viene interrotta e viene registrato un errore. Se non esiste un parametro `Condition`, l'errore viene registrato e l'esecuzione della compilazione viene arrestata. Per altre informazioni sulla registrazione, vedere [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md).
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
+
 L'esempio di codice seguente verifica che siano impostate tutte le proprietà richieste. In caso contrario, il progetto genera un evento di errore e registra il valore del parametro `Text` sull'attività `Error`.
 
 ```xml
@@ -63,5 +67,6 @@ L'esempio di codice seguente verifica che siano impostate tutte le proprietà ri
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)

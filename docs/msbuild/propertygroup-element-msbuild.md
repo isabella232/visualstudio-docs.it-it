@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7497578b977b66c83a8b5f9f37f03743f864bcd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597373"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632927"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
-Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) definiti dall'utente. Ogni elemento `Property` usato in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere figlio di un elemento `PropertyGroup`.
+
+Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) definiti dall'utente. Ogni elemento `Property` usato in un progetto MSBuild deve essere figlio di un elemento `PropertyGroup`.
 
  \<Project> \<PropertyGroup>
 
@@ -40,6 +41,7 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
@@ -48,19 +50,20 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 |---------------|-----------------|
 |Condizione|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Elementi figlio
+### <a name="child-elements"></a>Elemento figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Property](../msbuild/property-element-msbuild.md)|Elemento facoltativo.<br /><br /> Nome proprietà definito dall'utente, che contiene il valore della proprietà. Possono esistere zero o più elementi *Property* in un elemento `PropertyGroup`.|
+|[Proprietà](../msbuild/property-element-msbuild.md)|Elemento facoltativo.<br /><br /> Nome proprietà definito dall'utente, che contiene il valore della proprietà. Possono esistere zero o più elementi *Property* in un elemento `PropertyGroup`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
 ## <a name="example"></a>Esempio
+
  L'esempio di codice seguente illustra come impostare le proprietà in base a una condizione. In questo esempio, se il valore della proprietà `CompileConfig` è `DEBUG`, vengono impostate le proprietà `Optimization`, `Obfuscate` e `OutputPath` nell'elemento `PropertyGroup`.
 
 ```xml
@@ -72,5 +75,6 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Proprietà di MSBuild](../msbuild/msbuild-properties.md)

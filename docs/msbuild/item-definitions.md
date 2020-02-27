@@ -10,15 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95275f90af0fbf6f002a7e3a127e7d7ca7d08a39
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573781"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633707"
 ---
 # <a name="item-definitions"></a>Definizioni degli elementi
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 consente la dichiarazione statica di elementi nei file di progetto mediante l'elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). I metadati possono essere tuttavia aggiunti solo al livello dell'elemento, anche se sono identici per tutti gli elementi. A partire da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, è stato introdotto un elemento di progetto denominato [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) che consente di superare questa limitazione. *ItemDefinitionGroup* consente di definire un set di definizioni degli elementi che aggiungono i valori dei metadati predefiniti a tutti gli elementi del tipo di elemento denominato.
+
+MSBuild 2,0 Abilita la dichiarazione statica degli elementi nei file di progetto usando l'elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md) . I metadati possono essere tuttavia aggiunti solo al livello dell'elemento, anche se sono identici per tutti gli elementi. A partire da MSBuild 3,5, un elemento di progetto denominato [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) viene sottoposto a questa limitazione. *ItemDefinitionGroup* consente di definire un set di definizioni degli elementi che aggiungono i valori dei metadati predefiniti a tutti gli elementi del tipo di elemento denominato.
 
 L'elemento *ItemDefinitionGroup* viene visualizzato immediatamente dopo l'elemento [Project](../msbuild/project-element-msbuild.md) nel file di progetto. Le definizioni degli elementi offrono le funzionalità seguenti:
 
@@ -26,19 +27,20 @@ L'elemento *ItemDefinitionGroup* viene visualizzato immediatamente dopo l'elemen
 
 - I tipi di elemento possono presentare più definizioni. Quando al tipo vengono aggiunte altre specifiche di metadati, l'ultima ha la precedenza. \(I metadati seguono lo stesso ordine di importazione delle proprietà.\)
 
-- I metadati possono essere additivi. Ad esempio, i valori CDefines vengono accumulati in modo condizionale, a seconda delle proprietà impostate. Ad esempio `MT;STD_CALL;DEBUG;UNICODE`.
+- I metadati possono essere additivi. Ad esempio, i valori CDefines vengono accumulati in modo condizionale, a seconda delle proprietà impostate. Ad esempio: `MT;STD_CALL;DEBUG;UNICODE`.
 
 - I metadati possono essere rimossi.
 
 - È possibile usare condizioni per controllare l'inclusione di metadati.
 
 ## <a name="item-metadata-default-values"></a>Valori predefiniti dei metadati degli elementi
+
 I metadati degli elementi definiti in un ItemDefinitionGroup sono solo una dichiarazione di metadati predefiniti. I metadati non vengono applicati a meno che non sia definito un elemento che usa un ItemGroup per contenere i valori dei metadati.
 
 > [!NOTE]
 > In molti degli esempi riportati in questo argomento viene illustrato un elemento ItemDefinitionGroup, ma la definizione di ItemGroup corrispondente viene omessa per chiarezza.
 
-I metadati definiti in modo esplicito in un ItemGroup hanno la precedenza su quelli presenti in ItemDefinitionGroup. I metadati presenti in ItemDefinitionGroup vengono applicati solo per i metadati non definiti in un ItemGroup. Ad esempio:
+I metadati definiti in modo esplicito in un ItemGroup hanno la precedenza su quelli presenti in ItemDefinitionGroup. I metadati presenti in ItemDefinitionGroup vengono applicati solo per i metadati non definiti in un ItemGroup. Ad esempio,
 
 ```xml
 <ItemDefinitionGroup>
@@ -58,9 +60,10 @@ I metadati definiti in modo esplicito in un ItemGroup hanno la precedenza su que
 In questo esempio il metadato predefinito "m" viene applicato all'elemento "i" perché non è definito in modo esplicito dall'elemento "i". Al contrario, il metadato predefinito "n" non viene applicato all'elemento "i" perché è già definito dall'elemento "i".
 
 > [!NOTE]
-> I nomi di parametri ed elementi XML prevedono la distinzione tra maiuscole e \-minuscole. I metadati degli elementi e i \/nomi di proprietà o elementi non prevedono tale \-distinzione. Di conseguenza, gli elementi ItemDefinitionGroup i cui nomi differiscono solo per l'uso di maiuscole o minuscole devono essere considerati come lo stesso ItemGroup.
+> I nomi di parametri ed elementi XML prevedono la distinzione tra maiuscole e \-minuscole. I metadati degli elementi e i \/nomi di proprietà o elementi non prevedono tale distinzione. Di conseguenza, gli elementi ItemDefinitionGroup i cui nomi differiscono solo per l'uso di maiuscole o minuscole devono essere considerati come lo stesso ItemGroup.
 
 ## <a name="value-sources"></a>Origini dei valori
+
 I valori per i metadati definiti in un ItemDefinitionGroup possono provenire da molte origini diverse, come indicato di seguito:
 
 - Proprietà PropertyGroup
@@ -83,13 +86,14 @@ I valori per i metadati definiti in un ItemDefinitionGroup possono provenire da 
 > I metadati degli elementi di un ItemGroup non sono utili in una dichiarazione di metadati di un ItemDefinitionGroup perché gli elementi dell'ItemDefinitionGroup vengono elaborati prima di quelli dell'ItemGroup.
 
 ## <a name="additive-and-multiple-definitions"></a>Definizioni additive e multiple
+
 Quando si aggiungono definizioni o si usano più ItemDefinitionGroup, tenere presente quanto segue:
 
 - Eventuali altre specifiche dei metadati vengono aggiunte al tipo.
 
 - L'ultima specifica ha la precedenza.
 
-In presenza di più ItemDefinitionGroup, ogni specifica successiva aggiunge i metadati alla definizione precedente. Ad esempio:
+In presenza di più ItemDefinitionGroup, ogni specifica successiva aggiunge i metadati alla definizione precedente. Ad esempio,
 
 ```xml
 <ItemDefinitionGroup>
@@ -107,7 +111,7 @@ In presenza di più ItemDefinitionGroup, ogni specifica successiva aggiunge i me
 
 In questo esempio il metadato "o" viene aggiunto a "m" e "n".
 
-È anche possibile aggiungere i valori dei metadati definiti in precedenza. Ad esempio:
+È anche possibile aggiungere i valori dei metadati definiti in precedenza. Ad esempio,
 
 ```xml
 <ItemDefinitionGroup>
@@ -143,7 +147,8 @@ Quando si esegue l'override dei metadati definiti in precedenza, l'ultima specif
 ```
 
 ## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Usare condizioni in un ItemDefinitionGroup
-È possibile usare condizioni in un ItemDefinitionGroup per controllare l'inclusione dei metadati. Ad esempio:
+
+È possibile usare condizioni in un ItemDefinitionGroup per controllare l'inclusione dei metadati. Ad esempio,
 
 ```xml
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
@@ -158,7 +163,7 @@ In questo caso, il metadato predefinito "m1" dell'elemento "i" viene incluso sol
 > [!NOTE]
 > Nelle condizioni sono supportati solo i riferimenti ai metadati locali.
 
-I riferimenti ai metadati definiti in un ItemDefinitionGroup precedente sono locali per l'elemento, non per il gruppo di definizione. In altre parole, l'ambito dei riferimenti è specifico dell'elemento. Ad esempio:
+I riferimenti ai metadati definiti in un ItemDefinitionGroup precedente sono locali per l'elemento, non per il gruppo di definizione. In altre parole, l'ambito dei riferimenti è specifico dell'elemento. Ad esempio,
 
 ```xml
 <ItemDefinitionGroup>
@@ -189,7 +194,8 @@ Nell'esempio precedente l'elemento "i" fa riferimento all'elemento "test" nella 
 Nell'esempio precedente "m" verrebbe impostato sul valore "m1" perché la condizione fa riferimento al valore del metadato dell'elemento "i" per l'elemento "yes".
 
 ## <a name="override-and-delete-metadata"></a>Eseguire l'override dei metadati ed eliminarli
-È possibile eseguire l'override dei metadati definiti in un elemento ItemDefinitionGroup in un elemento ItemDefinitionGroup successivo lasciando vuoto il valore dei metadati. È anche possibile eliminare un elemento dei metadati impostandolo su un valore vuoto. Ad esempio:
+
+I metadati definiti in un elemento ItemDefinitionGroup possono essere sottoposti a override in un elemento ItemDefinitionGroup successivo impostando il valore dei metadati su un altro valore. È anche possibile eliminare un elemento dei metadati impostandolo su un valore vuoto. Ad esempio,
 
 ```xml
 <ItemDefinitionGroup>
@@ -207,6 +213,7 @@ Nell'esempio precedente "m" verrebbe impostato sul valore "m1" perché la condiz
 L'elemento "i" contiene ancora il metadato "m", ma ora il valore è vuoto.
 
 ## <a name="scope-of-metadata"></a>Ambito dei metadati
+
 Gli ItemDefinitionGroup hanno un ambito globale su proprietà definite e globali, ovunque siano definite. Le definizioni dei metadati predefiniti in un ItemDefinitionGroup possono essere autoreferenziali. Ad esempio, di seguito viene usato un riferimento ai metadati semplice:
 
 ```xml
@@ -240,7 +247,7 @@ Quanto segue, tuttavia, non è valido:
 </ItemDefinitionGroup>
 ```
 
-A partire da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, anche gli ItemGroup possono essere autoreferenziali. Ad esempio:
+A partire da MSBuild 3,5, ItemGroup può anche essere autoreferenziale. Ad esempio,
 
 ```xml
 <ItemGroup>
@@ -252,4 +259,5 @@ A partire da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecms
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Batch MSBuild](../msbuild/msbuild-batching.md)
+
+- [Batch](../msbuild/msbuild-batching.md)

@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 703cd7bc3d0dd0e2229365dde39418ff32ad0a3e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579599"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632511"
 ---
 # <a name="resourcesgenerator-task"></a>Attività ResourcesGenerator
-L'attività <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpora una o più risorse (con estensione *jpg*, *ico*, *bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] in formato binario e altri tipi di estensione) in un file con estensione *resources*.
+
+L'attività <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpora una o più risorse (*jpg*, *ico*, *BMP*, XAML in formato binario e altri tipi di estensione) in un file con estensione *Resources* .
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
@@ -36,6 +37,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpora un
 |`ResourcesFiles`|Parametro **ITaskItem []** obbligatorio.<br /><br /> Specifica una o più risorse da incorporare nel file con estensione *resources* generato.|
 
 ## <a name="example"></a>Esempio
+
  L'esempio seguente illustra come generare un file con estensione *resources* con una sola risorsa con estensione *bmp*. La risorsa con estensione *bmp* viene generata in una directory relativa alla directory radice del progetto.
 
 ```xml
@@ -53,6 +55,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpora un
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
 - [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)
 - [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)

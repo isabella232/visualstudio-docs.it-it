@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594842"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633044"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
+
 Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gli elementi `When` restituiscono `false`.
 
  \<progetto > \<scegliere > \<quando > \<scegliere >... \<in caso contrario > \<scegliere >...
@@ -41,10 +42,12 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
- nessuna.
+### <a name="attributes"></a>Attributes
+
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -60,12 +63,14 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 |-------------|-----------------|
 |[Choose](../msbuild/choose-element-msbuild.md)|Valuta gli elementi figlio per selezionare una sezione del codice da eseguire.|
 
-## <a name="remarks"></a>Note
- In un elemento `Choose` può esistere un solo un elemento `Otherwise` ed è necessario che sia l'ultimo.
+## <a name="remarks"></a>Osservazioni
+
+ In un elemento `Otherwise` può esistere un solo un elemento `Choose` ed è necessario che sia l'ultimo.
 
  Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Esempio
+
  Nel progetto riportato di seguito l'elemento `Choose` viene usato per selezionare il set di valori delle proprietà da impostare negli elementi `When`. Se gli attributi `Condition` di entrambi gli elementi `When` restituiscono `false`, vengono impostati i valori delle proprietà dell'elemento `Otherwise`.
 
 ```xml
@@ -114,5 +119,6 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

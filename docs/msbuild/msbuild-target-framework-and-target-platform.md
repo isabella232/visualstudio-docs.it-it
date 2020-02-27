@@ -8,33 +8,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596775"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633200"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework e piattaforma di destinazione di MSBuild
-È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile impostare un'applicazione come destinazione per eseguirla in .NET Framework 2.0 su una piattaforma a 32 bit compatibile con la famiglia di processori 802x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*.
+
+È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile impostare un'applicazione come destinazione per eseguirla in .NET Framework 2.0 su una piattaforma a 32 bit compatibile con la famiglia di processori 802x86 ("x86"). La combinazione del framework e della piattaforma di destinazione è nota come *contesto di destinazione*.
 
 > [!IMPORTANT]
 > Questo articolo descrive il metodo precedente per specificare un framework di destinazione. I progetti in stile SDK abilitano framework di destinazione diversi, ad esempio netstandard. Per altre informazioni, vedere [Framework di destinazione](/dotnet/standard/frameworks).
 
 ## <a name="target-framework-and-profile"></a>Profilo e framework di destinazione
+
  Un framework di destinazione è una versione particolare di .NET Framework in cui il proprio progetto è compilato per essere eseguito. La specifica di un framework di destinazione è necessaria perché abilita le funzionalità del compilatore e i riferimenti dell'assembly che sono esclusivi di quella versione di framework.
 
  Le versioni seguenti di .NET Framework sono attualmente disponibili per l'uso:
 
 - .NET Framework 2.0 (incluso in Visual Studio 2005)
 
-- .NET Framework 3.0 (incluso in [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- Il .NET Framework 3,0 (incluso in Windows Vista)
 
-- .NET Framework 3.5 (incluso in [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- Il .NET Framework 3,5 (incluso in Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 (incluso in [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- Il .NET Framework 4,6 (incluso in Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
@@ -69,7 +71,8 @@ Il framework di destinazione viene specificato nella proprietà `TargetFramework
 ```
 
 ## <a name="target-platform"></a>Piattaforma di destinazione
- Una *piattaforma* è una combinazione di hardware e software che definisce un particolare ambiente di runtime. Ad esempio:
+
+ Una *piattaforma* è una combinazione di hardware e software che definisce un particolare ambiente di runtime. Ad esempio,
 
 - `x86` definisce un sistema operativo Windows a 32 bit che è in esecuzione su un processore 80x86 Intel o un suo equivalente.
 
@@ -97,4 +100,5 @@ Una *configurazione di destinazione* è un subset di una piattaforma di destinaz
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

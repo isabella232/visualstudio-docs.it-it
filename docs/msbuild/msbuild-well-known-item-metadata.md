@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93bbd0ab4ce0d27a270f3672e55173a1488e5910
-ms.sourcegitcommit: f28172c78745d14570e733db5d424f5fae98d139
+ms.openlocfilehash: 6e9320525d770344f131d9e3f04b357de43b5e73
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606658"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633096"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadati noti degli elementi di MSBuild
+
 La tabella seguente descrive i metadati assegnati a ogni elemento durante la fase di creazione. In ogni esempio è stata usata la dichiarazione di elemento riportata di seguito per includere il file *C:\MyProject\Source\Program.cs* nel progetto.
 
 ```xml
@@ -38,7 +39,7 @@ La tabella seguente descrive i metadati assegnati a ogni elemento durante la fas
 |%(RootDir)|Contiene la directory radice dell'elemento. Ad esempio:<br /><br /> *C:\\*|
 |%(Filename)|Contiene il nome file dell'elemento, senza estensione. Ad esempio:<br /><br /> *Program*|
 |%(Extension)|Contiene l'estensione del nome file dell'elemento. Ad esempio:<br /><br /> *.cs*|
-|%(RelativeDir)|Contiene il percorso specificato nell'attributo `Include`, fino alla barra rovesciata (\\) finale. Ad esempio:<br /><br /> *Source\\*<br /><br /> Se l'attributo `Include` è un percorso completo, `%(RelativeDir)` inizia con la directory radice `%(RootDir)`.  Ad esempio: <br /><br /> *\\ C:\MyProject\Source*|
+|%(RelativeDir)|Contiene il percorso specificato nell'attributo `Include`, fino alla barra rovesciata (\\) finale. Ad esempio:<br /><br /> *Origine\\*<br /><br /> Se l'attributo `Include` è un percorso completo, `%(RelativeDir)` inizia con la directory radice `%(RootDir)`.  Ad esempio: <br /><br /> *\\ C:\MyProject\Source*|
 |%(Directory)|Contiene la directory dell'elemento, senza la directory radice. Ad esempio:<br /><br /> *MyProject\\Source\\*|
 |%(RecursiveDir)|Se l'attributo `Include` contiene il carattere jolly \*\*, questi metadati specificano la parte del percorso che sostituisce il carattere jolly. Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Se la cartella *C:\MySolution\MyProject\Source\\* contiene il file *Program.cs* e se il file di progetto contiene l'elemento seguente:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> il valore di `%(MyItem.RecursiveDir)` sarà *MySolution\MyProject\Source\\* .|
 |%(Identity)|Elemento specificato nell'attributo `Include`. Ad esempio:<br /><br /> *Source\Program.cs*|
@@ -47,6 +48,7 @@ La tabella seguente descrive i metadati assegnati a ogni elemento durante la fas
 |%(AccessedTime)|Contiene il timestamp relativo all'ora dell'ultimo accesso all'elemento.<br /><br /> `2004-08-14 16:52:36.3168743`|
 
 ## <a name="see-also"></a>Vedere anche
-- [Elementi](../msbuild/msbuild-items.md)
-- [Batch MSBuild](../msbuild/msbuild-batching.md)
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+
+- [Items](../msbuild/msbuild-items.md)
+- [Batch](../msbuild/msbuild-batching.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)

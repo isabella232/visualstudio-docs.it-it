@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 891b0f1197ad178a705de5d64026beebc62615dd
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: b6a8b380791cbb8adcc43b363e5f0a332935e131
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826497"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631107"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: Creare un nuovo file di progetto MSBuild
+
 I linguaggi di programmazione destinati a .NET Framework usano i file di progetto MSBuild per descrivere e controllare il processo di compilazione dell'applicazione. Quando si usa Visual Studio per creare un file di progetto MSBuild, il codice XML appropriato viene aggiunto automaticamente al file. Può tuttavia risultare utile comprendere l'organizzazione del codice XML e come è possibile modificarlo per controllare una compilazione.
 
  Per informazioni sulla creazione di un file di progetto C++ per un progetto, vedere [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
@@ -47,6 +48,7 @@ Questa procedura dettagliata mostra come compilare il progetto tramite il prompt
 Per completare la procedura dettagliata, è necessario avere installato il .NET Framework (versione 2,0, 3,5, 4,0, 4,5 o successiva) perché include MSBuild e il compilatore visivo C# , necessari per la procedura dettagliata.
 
 ## <a name="create-a-minimal-application"></a>Creare un'applicazione minima
+
  Questa sezione illustra come creare un file di C# origine dell'applicazione minimo usando un editor di testo.
 
 1. Al prompt dei comandi, passare alla cartella in cui si vuole creare l'applicazione, ad esempio *\Documenti\\* o *\Desktop\\* .
@@ -84,6 +86,7 @@ Per completare la procedura dettagliata, è necessario avere installato il .NET 
 8. Eliminare l'applicazione digitando **del helloworld.exe** al prompt dei comandi.
 
 ## <a name="create-a-minimal-msbuild-project-file"></a>Creare un file di progetto MSBuild minimo
+
  Ora che si dispone di un file di origine di applicazione minimo, è possibile creare un file di progetto minimo per compilare l'applicazione. Questo file di progetto contiene gli elementi seguenti:
 
 - Il nodo radice `Project` obbligatorio.
@@ -165,6 +168,7 @@ Al prompt dei comandi digitare **set PATH=%PATH%;%ProgramFiles%\MSBuild** o **se
 In alternativa, se Visual Studio è installato, è possibile usare il **prompt dei comandi per gli sviluppatori per Visual Studio**, che include un percorso che include la cartella *MSBuild* .
 
 ## <a name="build-the-application"></a>Compilare l'applicazione
+
  A questo punto, usare il file di progetto appena creato per compilare l'applicazione.
 
 1. Al prompt dei comandi digitare **msbuild helloworld.csproj -t:Build**.
@@ -181,6 +185,7 @@ In alternativa, se Visual Studio è installato, è possibile usare il **prompt d
 > **msbuild helloworld.csproj -t:Build -verbosity:detailed**
 
 ## <a name="add-build-properties"></a>Aggiungere proprietà di compilazione
+
  Per aumentare il controllo della compilazione è possibile aggiungere proprietà di compilazione al file di progetto. Aggiungere le proprietà seguenti:
 
 - Una proprietà `AssemblyName` per specificare il nome dell'applicazione.
@@ -237,7 +242,7 @@ Il file di progetto sarà ora simile al codice seguente:
 ```
 
 > [!NOTE]
-> Invece di aggiungere il delimitatore di percorso di barra rovesciata (\\) nell'attributo `OutputAssembly` dell'attività `Csc` è consigliabile aggiungerlo alla fine del nome della cartella quando la si specifica nell'elemento `OutputPath`. Quindi,
+> Invece di aggiungere il delimitatore di percorso di barra rovesciata (\\) nell'attributo `OutputPath` dell'attività `OutputAssembly` è consigliabile aggiungerlo alla fine del nome della cartella quando la si specifica nell'elemento `Csc`. Di conseguenza:
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
@@ -250,6 +255,7 @@ Il file di progetto sarà ora simile al codice seguente:
 > `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>Testare le proprietà di compilazione
+
  Ora è possibile compilare l'applicazione tramite il file di progetto in cui sono state usate le proprietà di compilazione per specificare la cartella di output e il nome dell'applicazione.
 
 1. Al prompt dei comandi digitare **msbuild helloworld.csproj -t:Build**.
@@ -263,6 +269,7 @@ Il file di progetto sarà ora simile al codice seguente:
      Dovrebbe essere visualizzato il messaggio **Hello, world!** .
 
 ## <a name="add-build-targets"></a>Aggiungere destinazioni di compilazione
+
  A questo punto, aggiungere altre due destinazioni al file di progetto, come segue:
 
 - Una destinazione Clean che elimina i file meno recenti.
@@ -315,6 +322,7 @@ Il file di progetto sarà ora simile al codice seguente:
 ```
 
 ## <a name="test-the-build-targets"></a>Testare le destinazioni di compilazione
+
  È possibile usare le nuove destinazioni di compilazione per testare le funzionalità seguenti del file di progetto:
 
 - Compilazione della build predefinita.
@@ -354,6 +362,7 @@ Il file di progetto sarà ora simile al codice seguente:
      Per verificare che la cartella *\Bin\\* contenga l'applicazione *MSBuildSample*, digitare **dir Bin**.
 
 ## <a name="build-incrementally"></a>Compilazione incrementale
+
  È possibile configurare MSBuild affinché compili una destinazione solo in caso di modifica dei file di origine o dei file di destinazione da cui la destinazione dipende. MSBuild usa il timestamp di un file per determinare se è stato modificato.
 
 ### <a name="to-build-incrementally"></a>Per eseguire la compilazione incrementale
@@ -465,7 +474,8 @@ Nell'esempio seguente viene illustrato un file di progetto che compila un'applic
 </Project>
 ```
 
-## <a name="whats-next"></a>Argomenti successivi
+## <a name="whats-next"></a>Quali sono le operazioni successive?
+
  Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per informazioni su come usare Visual Studio per creare, modificare, compilare e testare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ## <a name="see-also"></a>Vedere anche

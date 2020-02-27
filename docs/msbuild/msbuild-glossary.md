@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593668"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633343"
 ---
 # <a name="msbuild-glossary"></a>Glossario di MSBuild
 
@@ -58,7 +58,7 @@ funzione, elemento\
 Vedere funzione Item.
 
 elemento\
-Gli elementi sono input nel sistema di compilazione e vengono raggruppati in tipi di elemento in base ai nomi degli elementi. Gli elementi rappresentano in genere file. Poiché gli elementi vengono denominati in base al tipo di elemento a cui appartengono, i termini *elemento* e *valore dell'elemento* sono interscambiabili. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
+Gli elementi sono input nel sistema di compilazione e vengono raggruppati in tipi di elemento in base ai nomi degli elementi. Gli elementi rappresentano in genere file. Poiché gli elementi vengono denominati in base al tipo di elemento a cui appartengono, i termini *elemento* e *valore dell'elemento* sono interscambiabili. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
 
 definizione di un elemento\
 I gruppi di definizioni di elementi contengono definizioni di elementi che aggiungono metadati predefiniti a qualsiasi tipo di elemento. Come i metadati noti, i metadati predefiniti sono associati a tutti gli elementi del tipo di elemento specificato. È possibile eseguire l'override esplicito dei metadati predefiniti nella definizione di un elemento. Per altre informazioni, vedere [Definizioni degli elementi](../msbuild/item-definitions.md).
@@ -70,13 +70,13 @@ metadati degli elementi\
 Vedere *metadati, elemento*.
 
 tipo di elemento\
-I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
+I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
 
 metadati, elemento\
-I metadati di un elemento sono una raccolta di coppie nome-valore associate a un elemento. I metadati forniscono informazioni descrittive per l'elemento e sono facoltativi, eccetto i metadati noti. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
+I metadati di un elemento sono una raccolta di coppie nome-valore associate a un elemento. I metadati forniscono informazioni descrittive per l'elemento e sono facoltativi, eccetto i metadati noti. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
 
 metadati, noti\
-I metadati noti sono i metadati degli elementi di sola lettura che vengono inizializzati usando un valore predefinito. I metadati noti forniscono informazioni descrittive per un elemento che fa riferimento a un file. Ad esempio, il valore dei metadati noti denominati `FullPath` è il percorso completo del file di riferimento. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
+I metadati noti sono i metadati degli elementi di sola lettura che vengono inizializzati usando un valore predefinito. I metadati noti forniscono informazioni descrittive per un elemento che fa riferimento a un file. Ad esempio, il valore dei metadati noti denominati `FullPath` è il percorso completo del file di riferimento. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
 
 multitargeting\
 Possibilità per un progetto di applicazione o assembly di specificare come destinazione più CLR e framework diversi da MSBuild e da Visual Studio.
@@ -100,7 +100,7 @@ proprietà, funzione\
 Una funzione di proprietà è una proprietà di sistema o un metodo che si può usare per valutare gli script di MSBuild. I metodi di proprietà possono essere usati per leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni. Per altre informazioni, vedere [Funzioni delle proprietà](../msbuild/property-functions.md).
 
 funzione di proprietà, annidata\
-Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio:
+Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio,
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
@@ -161,7 +161,7 @@ file di destinazioni\
 Un file di destinazioni è un file di progetto contenente principalmente destinazioni e attività che forniscono indicazioni per la compilazione. Per convenzione, l'estensione di file è *targets*. I file di destinazione vengono in genere importati alla fine dei file di progetto associati.
 
 attività\
-Le attività sono unità di codice eseguibile usate dai progetti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per eseguire operazioni di compilazione. Ad esempio, un'attività potrebbe compilare file di input o eseguire uno strumento esterno. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
+Le attività sono unità di codice eseguibile usate dai progetti MSBuild per eseguire operazioni di compilazione. Ad esempio, un'attività potrebbe compilare file di input o eseguire uno strumento esterno. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
 trasformazione\
 Una trasformazione è una conversione uno a uno di una raccolta di elementi in un'altra. Oltre a consentire a un progetto di convertire le raccolte di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).

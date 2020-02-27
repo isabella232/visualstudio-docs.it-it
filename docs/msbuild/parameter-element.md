@@ -17,14 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1351f47ec8acc5aa5a510ede9c2284ec97c248
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e7c4fa5d093952eefc870aded3d3e14a1f5983a7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590462"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633005"
 ---
 # <a name="parameter-element"></a>Parameter - elemento
+
 Contiene informazioni su un parametro specifico per un'attività generata da un `UsingTask` `TaskFactory`.  Il nome dell'elemento è il nome del parametro.  Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
@@ -38,9 +39,10 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -49,7 +51,8 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 |`Required`|Attributo booleano facoltativo.<br /><br /> Se `true`, il parametro è un parametro obbligatorio per l'attività. Per impostazione predefinita, il valore è `false`.|
 
 ### <a name="child-elements"></a>Elementi figlio
- nessuna.
+
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -58,6 +61,7 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene un elenco facoltativo di parametri che saranno presenti nell'attività generata da un `UsingTask` `TaskFactory`.|
 
 ## <a name="example"></a>Esempio
+
  L'esempio seguente illustra come usare l'elemento `Parameter`.
 
 ```xml
@@ -74,6 +78,7 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -18,18 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d34d8edca64987f9b6c4648bef1f239aca4d5ba
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 873783196a3eebdaca9cc4278b091e084c1488b0
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594942"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631653"
 ---
 # <a name="touch-task"></a>Touch (attività)
+
 Imposta l'ora di accesso e di modifica dei file.
 
 ## <a name="parameters"></a>Parametri
- Nella tabella che segue vengono descritti i parametri dell'attività `Touch` .
+
+ Nella tabella che segue vengono descritti i parametri dell'attività `Touch`.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
@@ -40,9 +42,11 @@ Imposta l'ora di accesso e di modifica dei file.
 |`TouchedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene la raccolta di elementi di cui è stato eseguito l'aggiornamento del timestamp.|
 
 ## <a name="remarks"></a>Note
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
+
  Nell'esempio seguente l'attività `Touch` viene usata per modificare l'ora di accesso e di modifica dei file specificati nella raccolta di elementi `Files` e per inserire l'elenco dei file di cui è stato eseguito l'aggiornamento del timestamp nella raccolta di elementi `FilesTouched`.
 
 ```xml
@@ -64,5 +68,6 @@ Imposta l'ora di accesso e di modifica dei file.
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

@@ -18,18 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011cc16dd965b952aa382c46f01d09fcc41bc02e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3cc2e97a3024d768861a1967705137415a0d3aa2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592165"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633538"
 ---
 # <a name="makedir-task"></a>MakeDir (attività)
+
 Crea directory e, se necessario, eventuali directory padre.
 
 ## <a name="parameters"></a>Parametri
-Nella tabella che segue vengono descritti i parametri dell'attività `MakeDir` .
+
+Nella tabella che segue vengono descritti i parametri dell'attività `MakeDir`.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
@@ -37,9 +39,11 @@ Nella tabella che segue vengono descritti i parametri dell'attività `MakeDir` .
 |`DirectoriesCreated`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Le directory create dall'attività. Se non è stato possibile creare alcune directory, può non contenere tutti gli elementi passati al parametro `Directories`.|
 
 ## <a name="remarks"></a>Note
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
+
 Nell'esempio di codice seguente viene usata l'attività `MakeDir` per creare la directory specificata dalla proprietà `OutputDirectory`.
 
 ```xml
@@ -58,5 +62,6 @@ Nell'esempio di codice seguente viene usata l'attività `MakeDir` per creare la 
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

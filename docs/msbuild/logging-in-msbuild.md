@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a769f6d0b9aa847899c02c951921dc77bac21a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592191"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633551"
 ---
 # <a name="logging-in-msbuild"></a>Registrazione a MSBuild
+
 La registrazione consente di monitorare lo stato di avanzamento di una compilazione. La registrazione acquisisce eventi di compilazione, messaggi, avvisi ed errori in un file di log.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
+
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
 
- Descrive i diversi aspetti della registrazione in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Vengono descritti i vari aspetti della registrazione in MSBuild.
 
 - [Logger di compilazione](../msbuild/build-loggers.md)
 
@@ -42,4 +44,5 @@ La registrazione consente di monitorare lo stato di avanzamento di una compilazi
  Illustra come creare logger di inoltro personalizzati.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Compilare più progetti in parallelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) Descrive come compilare più progetti più velocemente eseguendoli in parallelo.

@@ -12,22 +12,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 949ec0622dd19ef906d4c3a40a2ddadac2b75065
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e4911bb131f5c5c878b82865b3dee61fd7bedbe1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75575900"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634162"
 ---
 # <a name="how-to-build-incrementally"></a>Procedura: Eseguire la compilazione incrementale
-Quando si compila un progetto di grandi dimensioni, è importante che i componenti compilati precedentemente e ancora aggiornati non vengano ricompilati. Se vengono ricompilate tutte le destinazioni, ogni compilazione impiegherà molto tempo. Per abilitare le compilazioni incrementali, in cui vengono compilate solo le destinazioni che non sono state compilate precedentemente o le destinazioni non aggiornate, [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) può confrontare i timestamp dei file di input con i timestamp dei file di output e stabilire se ignorare, compilare o ricompilare parzialmente una destinazione. Per questa operazione di confronto, è necessario un mapping uno a uno tra input e output. È possibile usare le trasformazioni per consentire alle destinazioni di identificare tale mapping diretto. Per altre informazioni sulle trasformazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).
+
+Quando si compila un progetto di grandi dimensioni, è importante che i componenti compilati precedentemente e ancora aggiornati non vengano ricompilati. Se vengono ricompilate tutte le destinazioni, ogni compilazione impiegherà molto tempo. Per abilitare le compilazioni incrementali (compilazioni in cui vengono ricompilate solo le destinazioni che non sono state compilate prima di o destinazioni non aggiornate), il Microsoft Build Engine (MSBuild) può confrontare i timestamp dei file di input con i timestamp dei file di output e determinare se ignorare, compilare o ricompilare parzialmente una destinazione. Per questa operazione di confronto, è necessario un mapping uno a uno tra input e output. È possibile usare le trasformazioni per consentire alle destinazioni di identificare tale mapping diretto. Per altre informazioni sulle trasformazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).
 
 ## <a name="specify-inputs-and-outputs"></a>Specifica di input e output
+
 Una destinazione può essere compilata in modo incrementale se gli input e gli output sono specificati nel file di progetto.
 
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Per specificare input e output per una destinazione
 
-- Usare gli attributi `Inputs` e `Outputs` dell'elemento `Target`. Ad esempio:
+- Usare gli attributi `Inputs` e `Outputs` dell'elemento `Target`. Ad esempio,
 
   ```xml
   <Target Name="Build"
@@ -35,7 +37,7 @@ Una destinazione può essere compilata in modo incrementale se gli input e gli o
       Outputs="hello.exe">
   ```
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può confrontare i timestamp dei file di input con i timestamps dei file di output e determinare se ignorare, compilare o ricompilare parzialmente una destinazione. Nell'esempio seguente se un file dell'elenco di elementi `@(CSFile)` è più recente del file *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compilerà la destinazione; in caso contrario il file verrà ignorato:
+MSBuild può confrontare i timestamp dei file di input con i timestamp dei file di output e determinare se ignorare, compilare o ricompilare parzialmente una destinazione. Nell'esempio seguente, se un file nell'elenco `@(CSFile)` elemento è più recente del file *Hello. exe* , MSBuild eseguirà la destinazione; in caso contrario, verrà ignorato:
 
 ```xml
 <Target Name="Build"
@@ -51,11 +53,12 @@ Una destinazione può essere compilata in modo incrementale se gli input e gli o
 Quando gli input e gli output sono specificati in una destinazione, ogni output può essere mappato solo a un input oppure potrebbe non esserci alcun mapping diretto tra gli output e gli input. Nell'[attività Csc](../msbuild/csc-task.md) precedente, ad esempio, l'output *hello.exe* non può essere mappato a un singolo input, ma dipende da tutti gli elementi.
 
 > [!NOTE]
-> Una destinazione senza mapping diretto tra input e output verrà sempre compilata con maggiore frequenza rispetto a una destinazione in cui ogni output corrisponde a un solo input perché [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] non può determinare quali output debbano essere ricompilati se alcuni input sono stati modificati.
+> Una destinazione in cui non esiste alcun mapping diretto tra gli input e gli output viene sempre compilata più spesso rispetto a una destinazione in cui ogni output può essere mappato a un solo input perché MSBuild non è in grado di determinare quali output devono essere ricompilati se alcuni input sono stati modificati.
 
 Le attività in cui è possibile identificare un mapping diretto tra output e input, ad esempio l'[attività LC](../msbuild/lc-task.md), sono più adatte per le compilazioni incrementali, a differenza delle attività [Csc](../msbuild/csc-task.md) e [Vbc](../msbuild/vbc-task.md), che producono un assembly di output da un numero di input.
 
 ## <a name="example"></a>Esempio
+
 Nell'esempio seguente viene usato un progetto che compila file della Guida per un ipotetico sistema di Guida. Il progetto converte i file di origine con estensione *txt* in file con estensione *content* intermedi, che vengono quindi combinati con i file di metadati XML per generare il file con estensione *help* finale usato dal sistema della Guida. Il progetto usa le attività ipotetiche seguenti:
 
 - `GenerateContentFiles`: converte file *txt* in file *content*.
@@ -67,7 +70,7 @@ Il progetto usa trasformazioni per creare un mapping uno a uno tra input e outpu
 Questo file di progetto contiene le destinazioni `Convert` e `Build`. Le attività `GenerateContentFiles` e `BuildHelp` vengono inserite rispettivamente nelle destinazioni `Convert` e `Build` in modo che ogni destinazione possa essere compilata in modo incrementale. Tramite l'elemento `Output`, gli output dell'attività `GenerateContentFiles` vengono inseriti nell'elenco di elementi `ContentFile` dove possono essere usati come input per l'attività `BuildHelp`. L'uso dell'elemento `Output` in questo modo offre automaticamente gli output da un'attività come input per un'altra attività in modo che non sia necessario elencare manualmente i singoli elementi o elenchi di elementi in ogni attività.
 
 > [!NOTE]
-> Sebbene la destinazione `GenerateContentFiles` possa essere compilata in modo incrementale, tutti gli output di tale destinazione sono sempre necessari come input per la destinazione `BuildHelp`. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] offre automaticamente tutti gli output da una sola destinazione come input per un'altra destinazione quando si usa l'elemento `Output`.
+> Sebbene la destinazione `GenerateContentFiles` possa essere compilata in modo incrementale, tutti gli output di tale destinazione sono sempre necessari come input per la destinazione `BuildHelp`. MSBuild fornisce automaticamente tutti gli output di una destinazione come input per un'altra destinazione quando si usa l'elemento `Output`.
 
 ```xml
 <Project DefaultTargets="Build"
@@ -102,7 +105,8 @@ Questo file di progetto contiene le destinazioni `Convert` e `Build`. Le attivit
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Destinazioni](../msbuild/msbuild-targets.md)
+
+- [Server di destinazione](../msbuild/msbuild-targets.md)
 - [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)
 - [Trasformazioni](../msbuild/msbuild-transforms.md)
 - [Attività Csc](../msbuild/csc-task.md)

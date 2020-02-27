@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b71f214a745222956c7dc9d582cc7fb2f1cfc427
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: bf982200b8e65e404325bdbd189ff3b0f2daebac
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579694"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634240"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
+
 Consente di terminare il contesto di verifica corrente.
 
 ## <a name="syntax"></a>Sintassi
@@ -32,10 +33,13 @@ HRESULT WINAPI EndTrackingContext();
 ```
 
 ## <a name="return-value"></a>Valore restituito
+
 **HRESULT** con il bit **SUCCEEDED** impostato se il contesto di verifica è terminato.
 
 ## <a name="requirements"></a>Requisiti
+
 **Intestazione:** *FileTracker. h*
 
 ## <a name="see-also"></a>Vedere anche
+
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

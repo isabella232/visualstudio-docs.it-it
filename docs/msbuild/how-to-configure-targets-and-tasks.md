@@ -8,20 +8,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596346"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633889"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Procedura: Configurare destinazioni e attività
+
+Alcune attività MSBuild possono essere impostate in modo da essere eseguite nell'ambiente a cui sono destinate, indipendentemente dall'ambiente del computer di sviluppo. Se ad esempio si usa un computer a 64 bit per creare un'applicazione destinata a un'architettura a 32 bit, le attività selezionate vengono eseguite in un processo a 32 bit.
 Alcune attività MSBuild possono essere impostate in modo da essere eseguite nell'ambiente a cui sono destinate, indipendentemente dall'ambiente del computer di sviluppo. Se ad esempio si usa un computer a 64 bit per creare un'applicazione destinata a un'architettura a 32 bit, le attività selezionate vengono eseguite in un processo a 32 bit.
 
 > [!NOTE]
 > Se un'attività di compilazione è scritta in un linguaggio .NET, ad esempio in Visual C# o Visual Basic, e non usa strumenti o risorse native, potrà essere eseguita in qualsiasi contesto di destinazione senza adattamento.
 
 ## <a name="usingtask-attributes-and-task-parameters"></a>Attributi UsingTask e parametri dell'attività
+
 Gli attributi `UsingTask` seguenti interessano tutte le operazioni di un'attività in un determinato processo di compilazione:
 
 - L'attributo `Runtime`, se presente, imposta la versione CLR (Common Language Runtime) e può assumere uno dei valori seguenti: `CLR2`, `CLR4`, `CurrentRuntime` o `*` (qualsiasi runtime).
@@ -74,6 +77,7 @@ Prima di eseguire un'attività, MSBuild cerca un attributo `UsingTask` corrispon
 ```
 
 ## <a name="task-factories"></a>Factory di attività
+
 Prima di eseguire un'attività, MSBuild verifica di essere stato designato per l'esecuzione nel contesto software corrente. In questo caso, MSBuild passa l'attività a AssemblyTaskFactory, che la esegue nel processo corrente; in caso contrario, MSBuild passa l'attività a TaskHostFactory, che la esegue in un processo corrispondente al contesto di destinazione. Anche se il contesto corrente e il contesto di destinazione corrispondono, è possibile imporre l'esecuzione out-of-process di un'attività (per motivi di isolamento, sicurezza o di altri tipo) impostando `TaskFactory` su `TaskHostFactory`.
 
 ```xml
@@ -84,6 +88,7 @@ Prima di eseguire un'attività, MSBuild verifica di essere stato designato per l
 ```
 
 ## <a name="phantom-task-parameters"></a>Parametri fantasma dell'attività
+
 Come qualsiasi altro parametro dell'attività, `MSBuildRuntime` e `MSBuildArchitecture` possono essere impostati dalle proprietà di compilazione.
 
 ```xml
@@ -108,4 +113,5 @@ I parametri `MSBuildRuntime` e `MSBuildArchitecture` offrono il metodo più fles
 > I parametri dell'attività vengono valutati nel contesto del nodo padre, non nel contesto dell'host dell'attività. Le variabili di ambiente dipendenti dal runtime o dall'architettura, come ad esempio, il percorso di *Programmi*, restituiranno il valore che corrisponde al nodo padre. Tuttavia, se la stessa variabile di ambiente viene letta direttamente dall'attività, verrà valutata correttamente nel contesto dell'host di attività.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Configure targets and tasks](../msbuild/configuring-targets-and-tasks.md) (Configurare destinazioni e attività)

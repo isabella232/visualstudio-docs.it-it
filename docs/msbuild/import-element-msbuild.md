@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ffaff052e672eb900d5ed3a1ce5ae7c2a370df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 044c531432de987fc7f3d34ce5344ad0374bcd00
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573993"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633746"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
+
 Importa il contenuto di un file di progetto in un altro file di progetto.
 
 \<Project> \<Import>
@@ -38,6 +39,7 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
@@ -48,30 +50,33 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 |`Condition`|Attributo facoltativo.<br /><br /> Una condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 |`Sdk`| Attributo facoltativo.<br /><br /> Fa riferimento a un SDK di progetto.|
 
-### <a name="child-elements"></a>Elementi figlio
- nessuna
+### <a name="child-elements"></a>Elemento figlio
+
+ None
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 | [ImportGroup](../msbuild/importgroup-element.md) | Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa. |
 
 ## <a name="remarks"></a>Note
+
  Tramite l'elemento `Import` , è possibile riutilizzare codice comune a più file di progetto. Ciò semplifica la gestione del codice, poiché tutti gli aggiornamenti apportati al codice condiviso vengono propagati a tutti i progetti che lo importano.
 
- Per convenzione i file di progetto condivisi importati vengono salvati come file con estensione *targets* ma sono file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] standard. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] non impedisce di importare un progetto con una diversa estensione del nome del file, ma è consigliabile usare l'estensione *targets* per coerenza.
+ Per convenzione, i file di progetto condivisi importati vengono salvati come file con *estensione targets* , ma sono file di progetto MSBuild standard. MSBuild non impedisce l'importazione di un progetto con una diversa estensione del nome di file, ma è consigliabile usare l'estensione *. targets* per coerenza.
 
  I percorsi relativi dei progetti importati vengono interpretati rispetto alla directory del progetto in cui sono importati. Pertanto, se uno stesso file di progetto viene importato in vari file di progetto che si trovano in posizioni diverse, i percorsi relativi nel file di progetto importato vengano interpretati in modo diverso per ogni progetto importato.
 
- A tutte le proprietà riservate di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] relative al file di progetto, ad esempio `MSBuildProjectDirectory` e `MSBuildProjectFile`, cui viene fatto riferimento in un progetto importato vengono assegnati valori basati sul file di progetto di destinazione.
+ A tutte le proprietà riservate di MSBuild correlate al file di progetto, ad esempio `MSBuildProjectDirectory` e `MSBuildProjectFile`, a cui viene fatto riferimento in un progetto importato vengono assegnati valori basati sul file di progetto che esegue l'importazione.
 
- Se il progetto importato non ha un attributo `DefaultTargets` , i progetti importati vengono esaminati nell'ordine in cui sono importati e viene usato il valore del primo attributo `DefaultTargets` individuato. Ad esempio, se ProjectA importa ProjectB e ProjectC (in questo ordine), e ProjectB importa ProjectD, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] cerca il valore `DefaultTargets` specificato prima in ProjectA, poi in ProjectB, quindi in ProjectD e infine in ProjectC.
+ Se il progetto importato non ha un attributo `DefaultTargets` , i progetti importati vengono esaminati nell'ordine in cui sono importati e viene usato il valore del primo attributo `DefaultTargets` individuato. Se, ad esempio, Projecta importa ProjectB e ProjectC (in questo ordine) e ProjectB Imports proiettati, MSBuild cerca innanzitutto `DefaultTargets` specificati in ProjectA, quindi ProjectB, quindi proiettato e infine ProjectC.
 
- Lo schema di un progetto importato è identico a quello di un progetto standard. Sebbene [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] potrebbe essere in grado di creare un progetto importato, ciò è improbabile perché in genere un progetto importato contiene informazioni sulle proprietà da impostare o sull'ordine in cui eseguire le destinazioni. Il progetto importato dipende dal progetto in cui viene importato per fornire tali informazioni.
+ Lo schema di un progetto importato è identico a quello di un progetto standard. Sebbene MSBuild possa essere in grado di compilare un progetto importato, è improbabile che un progetto importato non contenga informazioni sulle proprietà da impostare o sull'ordine in cui eseguire le destinazioni. Il progetto importato dipende dal progetto in cui viene importato per fornire tali informazioni.
 
 ## <a name="wildcards"></a>Caratteri jolly
+
  In .NET Framework 4, MSBuild consente l'uso di caratteri jolly nell'attributo Project. Quando sono presenti caratteri jolly, tutte le corrispondenze trovate vengono ordinate (per riproducibilità) e quindi vengono importate nell'ordine specificato come se l'ordine fosse stato impostato in modo esplicito.
 
  Ciò è utile se si desidera offrire un punto di estensibilità in modo che un altro utente possa importare un file senza che sia necessario aggiungere esplicitamente il nome del file al file di importazione. A questo scopo, *Microsoft.Common.Targets* contiene la riga seguente all'inizio del file.
@@ -81,6 +86,7 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 ```
 
 ## <a name="example"></a>Esempio
+
  L'esempio seguente illustra un progetto con diversi elementi e proprietà che importa un file di progetto generale.
 
 ```xml
@@ -107,5 +113,6 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Procedura: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

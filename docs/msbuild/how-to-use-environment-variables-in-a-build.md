@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d66fb73972a81e421b6e7343e549b0ef3069001
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574418"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633785"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: Usare le variabili di ambiente in una compilazione
+
 Quando si compilano i progetti, spesso è necessario impostare le opzioni di compilazione usando informazioni non incluse nel file di progetto o nei file che costituiscono il progetto. Queste informazioni sono in genere archiviate nelle variabili di ambiente.
 
 ## <a name="reference-environment-variables"></a>Fare riferimento alle variabili di ambiente
- Tutte le variabili di ambiente sono disponibili per il file di progetto [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) come proprietà.
+
+ Tutte le variabili di ambiente sono disponibili per il file di progetto Microsoft Build Engine (MSBuild) come proprietà.
 
 > [!NOTE]
 > Se il file di progetto contiene una definizione esplicita di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel file di progetto esegue l'override del valore della variabile di ambiente.
@@ -46,6 +48,7 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
     > Per i nomi delle proprietà non viene rilevata la distinzione tra maiuscole e minuscole, quindi sia `$(ToolsPath)` che `$(TOOLSPATH)` fanno riferimento alla stessa proprietà o variabile di ambiente.
 
 ## <a name="example"></a>Esempio
+
  Il file di progetto seguente usa variabili di ambiente per specificare il percorso delle directory.
 
 ```xml
@@ -63,6 +66,7 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Proprietà di MSBuild](../msbuild/msbuild-properties.md)
 - [Procedura: Compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

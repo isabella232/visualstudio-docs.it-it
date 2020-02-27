@@ -13,26 +13,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585219"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633915"
 ---
 # <a name="how-to-clean-a-build"></a>Procedura: Pulire una compilazione
-Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file intermedi e di output, lasciando solo i file di progetto e di componente. È quindi possibile compilare nuove istanze di file intermedi e di output dai file di progetto e di componente. La libreria di attività comuni fornita con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] include un'attività [Exec](../msbuild/exec-task.md) che è possibile usare per eseguire i comandi di sistema. Per altre informazioni sulla libreria di attività, vedere [Attività MSBuild](../msbuild/msbuild-task-reference.md).
+
+Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file intermedi e di output, lasciando solo i file di progetto e di componente. È quindi possibile compilare nuove istanze di file intermedi e di output dai file di progetto e di componente. 
 
 ## <a name="create-a-directory-for-output-items"></a>Creare una directory per gli elementi di output
+
  Per impostazione predefinita, il file con estensione *exe* creato quando si compila un progetto viene inserito nella stessa directory dei file di progetto e di origine. Gli elementi di output invece vengono in genere creati in una directory distinta.
 
-#### <a name="to-create-a-directory-for-output-items"></a>Per creare una directory per gli elementi di output
+### <a name="to-create-a-directory-for-output-items"></a>Per creare una directory per gli elementi di output
 
 1. Usare l'elemento `Property` per definire il percorso e il nome della directory. Ad esempio, creare una directory denominata *BuiltApp* nella directory che contiene i file di progetto e di origine:
 
      `<builtdir>BuiltApp</builtdir>`
 
-2. Usare l'attività [MakeDir](../msbuild/makedir-task.md) per creare la directory se la directory non esiste. Ad esempio:
+2. Usare l'attività [MakeDir](../msbuild/makedir-task.md) per creare la directory se la directory non esiste. Ad esempio,
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -40,18 +42,20 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
      ```
 
 ## <a name="remove-the-output-items"></a>Rimuovere gli elementi di output
+
  Prima di creare nuove istanze dei file intermedi e di output, è possibile cancellare tutte le istanze precedenti dei file intermedi e di output. Usare l'attività [RemoveDir](../msbuild/removedir-task.md) per eliminare una directory e tutti i file e le directory in essa contenuti da un disco.
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Per rimuovere una directory e tutti i file contenuti nella directory
 
-- Usare l'attività `RemoveDir` per rimuovere la directory. Ad esempio:
+- Usare l'attività `RemoveDir` per rimuovere la directory. Ad esempio,
 
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>Esempio
+
  Il progetto di esempio di codice seguente contiene una nuova destinazione, `Clean`, che usa l'attività `RemoveDir` per eliminare una directory e tutti i file e le directory in essa contenute. Anche in questo esempio, la destinazione `Compile` crea una directory distinta per gli elementi di output che vengono eliminati durante la pulizia della compilazione.
 
- `Compile` è definito come destinazione predefinita che viene usata automaticamente se non vengono specificate una o più destinazioni diverse. Usare l'opzione della riga di comando **-target** per specificare una destinazione diversa. Ad esempio:
+ `Compile` è definito come destinazione predefinita che viene usata automaticamente se non vengono specificate una o più destinazioni diverse. Usare l'opzione della riga di comando **-target** per specificare una destinazione diversa. Ad esempio,
 
  `msbuild <file name>.proj -target:Clean`
 
@@ -100,8 +104,8 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Attività Exec](../msbuild/exec-task.md)
+
 - [Attività MakeDir](../msbuild/makedir-task.md)
 - [Attività RemoveDir](../msbuild/removedir-task.md)
 - [Attività Csc](../msbuild/csc-task.md)
-- [Destinazioni](../msbuild/msbuild-targets.md)
+- [Server di destinazione](../msbuild/msbuild-targets.md)

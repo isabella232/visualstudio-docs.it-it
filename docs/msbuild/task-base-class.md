@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b3aaef85c53dfacf592251c95772d17b1a6ff96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d7d6e0870f809a30bc3feb7ecb7a7302b7729124
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566397"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631952"
 ---
 # <a name="task-base-class"></a>Classe di base Task
+
 Molte attività ereditano dalla classe <xref:Microsoft.Build.Utilities.Task>. Questa classe aggiunge diversi parametri alle attività che ne derivano. Questi parametri sono elencati in questo documento.
 
 ## <a name="parameters"></a>Parametri
+
  Nella tabella seguente vengono descritti i parametri di questa classe di base.
 
 |Parametro|Descrizione|
@@ -35,5 +37,6 @@ Molte attività ereditano dalla classe <xref:Microsoft.Build.Utilities.Task>. Qu
 |<xref:Microsoft.Build.Utilities.Task.Log%2A>|Parametro di sola lettura <xref:Microsoft.Build.Utilities.TaskLoggingHelper> facoltativo.<br /><br /> Oggetto helper della registrazione.|
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

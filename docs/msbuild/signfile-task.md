@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 397366a7dac601cd11dc1c70efc352edf303a92e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 133048a5bb8103c681d8e2b84e68033c486109e1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579575"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632290"
 ---
 # <a name="signfile-task"></a>SignFile (attività)
 
@@ -74,5 +74,6 @@ Consente di firmare il file specificato usando il certificato specificato.
 > L'identificazione personale del certificato è l'hash SHA-1 del certificato. Per altre informazioni, vedere [Ottenere l'hash SHA-1 di un certificato CA radice attendibile](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Se si copia e incolla l'identificazione personale presente nei dettagli del certificato, assicurarsi di non includere il carattere invisibile (3F) aggiuntivo, che può impedire a `SignFile` di trovare il certificato.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

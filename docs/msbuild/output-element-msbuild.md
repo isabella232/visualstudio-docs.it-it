@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd27951390cf86712f846fada2835c4d87ec7fe
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594851"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633031"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
+
 Archivia i valori di output dell'attività in elementi e proprietà.
 
  \<Project> \<Target> \<Task> \<Output>
@@ -39,9 +40,10 @@ Archivia i valori di output dell'attività in elementi e proprietà.
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
+
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -51,15 +53,17 @@ Archivia i valori di output dell'attività in elementi e proprietà.
 |`Condition`|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
- nessuna.
+
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [Task](../msbuild/task-element-msbuild.md) | Crea ed esegue un'istanza di un'attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Attività](../msbuild/task-element-msbuild.md) | Crea ed esegue un'istanza di un'attività MSBuild. |
 
 ## <a name="example"></a>Esempio
+
  L'esempio di codice seguente mostra l'attività `Csc` eseguita all'interno di un elemento `Target`. Gli elementi e le proprietà passati ai parametri dell'attività vengono dichiarati al di fuori dell'ambito di questo esempio. Il valore dal parametro di output `OutputAssembly` viene archiviato nell'elemento `FinalAssemblyName` e il valore del parametro di output `BuildSucceeded` viene archiviato nella proprietà `BuildWorked`. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
 ```xml
@@ -80,5 +84,6 @@ Archivia i valori di output dell'attività in elementi e proprietà.
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

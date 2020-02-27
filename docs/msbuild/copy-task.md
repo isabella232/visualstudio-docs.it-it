@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558160"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634370"
 ---
 # <a name="copy-task"></a>Copy (attività)
+
 Copia i file in un nuovo percorso del file system.
 
 ## <a name="parameters"></a>Parametri
+
 Nella tabella che segue vengono descritti i parametri dell'attività `Copy`.
 
 |Parametro|Descrizione|
@@ -46,7 +48,8 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Copy`.
 |`SourceFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da copiare.|
 |`UseHardlinksIfPossible`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, vengono creati dei collegamenti reali per i file copiati invece di copiare i file.|
 
-## <a name="warnings"></a>Avvisi
+## <a name="warnings"></a>Warnings
+
 Gli avvisi vengono registrati, inclusi:
 
 - `Copy.DestinationIsDirectory`
@@ -65,12 +68,14 @@ Gli avvisi vengono registrati, inclusi:
 
 - `Copy.RemovingReadOnlyAttribute`
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
+
 È necessario specificare il parametro `DestinationFolder` o `DestinationFiles`, ma non entrambi. Se vengono specificati entrambi, l'attività avrà esito negativo e verrà registrato un errore.
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
+
 Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` vengono copiati nella cartella *c:\MyProject\Destination*.
 
 ```xml
@@ -91,6 +96,7 @@ Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` ve
 ```
 
 ## <a name="example"></a>Esempio
+
 Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsiva. Tutti i file del progetto vengono copiati in modo ricorsivo da *c:\MySourceTree* a *c:\MyDestinationTree*, mantenendo al tempo stesso la struttura di directory.
 
 ```xml
@@ -111,5 +117,6 @@ Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsi
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

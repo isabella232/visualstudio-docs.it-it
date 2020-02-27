@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22be291184ebf02ae0455f5b4656b1dec976dc89
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578297"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631497"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly (attività)
+
 Annulla la registrazione degli assembly specificati ai fini dell'interoperabilità COM. Esegue operazioni inverse rispetto all'[attività RegisterAssembly](../msbuild/registerassembly-task.md).
 
 ## <a name="parameters"></a>Parametri
+
  Nella tabella che segue vengono descritti i parametri dell'attività `UnregisterAssembly`.
 
 |Parametro|Descrizione|
@@ -38,11 +40,13 @@ Annulla la registrazione degli assembly specificati ai fini dell'interoperabilit
 |`TypeLibFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Annulla la registrazione della libreria dei tipi indicata dall'assembly specificato. **Nota:** questo parametro è necessario solo se il nome dei file della libreria dei tipi non corrisponde a quello dell'assembly.|
 
 ## <a name="remarks"></a>Note
+
  Per la corretta esecuzione dell'attività non è necessario che l'assembly sia presente. Se si prova ad annullare la registrazione di un assembly inesistente, l'attività verrà comunque eseguita correttamente e verrà visualizzato un avviso. Questa situazione si verifica perché l'attività ha la funzione di rimuovere la registrazione dell'assembly dal Registro di sistema. Se l'assembly non esiste, non si trova nel Registro di sistema e l'attività viene pertanto eseguita correttamente.
 
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension>, che a sua volta eredita dalla classe <xref:System.MarshalByRefObject>. La classe `MarshalByRefObject` offre la stessa funzionalità della classe <xref:Microsoft.Build.Utilities.Task>, ma è possibile crearne un'istanza nel relativo dominio dell'applicazione.
 
 ## <a name="example"></a>Esempio
+
  Nell'esempio seguente l'attività `UnregisterAssembly` viene usata per annullare la registrazione dell'assembly eventualmente presente nel percorso specificato dalle proprietà `OutputPath` e `FileName`.
 
 ```xml
@@ -61,6 +65,7 @@ Annulla la registrazione degli assembly specificati ai fini dell'interoperabilit
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Attività RegisterAssembly](../msbuild/registerassembly-task.md)
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

@@ -12,20 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574613"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633811"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
+
 Quando si compila un progetto che contiene molti file, è possibile elencare separatamente ogni file nel file di progetto oppure è possibile usare caratteri jolly per includere tutti i file contenuti in una directory o in un set nidificato di directory.
 
 ## <a name="specify-inputs"></a>Specificare gli input
+
 Gli elementi rappresentano gli input di una compilazione. Per altre informazioni sugli elementi, vedere [Elementi](../msbuild/msbuild-items.md).
 
-I file di una compilazione devono essere inclusi in un elenco di elementi nel file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.
+Per includere i file per una compilazione, è necessario includerli in un elenco di elementi nel file di progetto MSBuild. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.
 
 #### <a name="to-declare-items-individually"></a>Per dichiarare gli elementi uno alla volta
 
@@ -33,7 +35,7 @@ I file di una compilazione devono essere inclusi in un elenco di elementi nel fi
 
     `<CSFile Include="form1.cs"/>`
 
-    oppure
+    o
 
     `<VBFile Include="form1.vb"/>`
 
@@ -46,11 +48,12 @@ I file di una compilazione devono essere inclusi in un elenco di elementi nel fi
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
-    oppure
+    o
 
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Specificare gli input con caratteri jolly
+
 È anche possibile usare caratteri jolly per includere in modo ricorsivo tutti i file o solo file specifici dalle sottodirectory come input per una compilazione. Per altre informazioni sui caratteri jolly, vedere [Elementi](../msbuild/msbuild-items.md)
 
 Gli esempi seguenti si basano su un progetto che contiene file grafici nelle directory e sottodirectory seguenti. Il file di progetto si trova nella directory *Project*:
@@ -79,11 +82,12 @@ Gli esempi seguenti si basano su un progetto che contiene file grafici nelle dir
 
     `Include="Images\**\*jpgs\*.*"`
 
-    oppure
+    o
 
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Passare elementi a un'attività
+
 In un file di progetto, è possibile usare la notazione @() nelle attività per specificare un intero elenco di elementi come input per una compilazione. È possibile usare questa notazione se si elencano tutti i file separatamente, altrimenti usare i caratteri jolly.
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Per usare tutti i file Visual C# o Visual Basic come input
@@ -92,16 +96,17 @@ In un file di progetto, è possibile usare la notazione @() nelle attività per 
 
     `<CSC Sources="@(CSFile)">...</CSC>`
 
-    oppure
+    o
 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> È necessario usare caratteri jolly con gli elementi per specificare gli input per una compilazione. Non è possibile specificare gli input tramite l'attributo `Sources` in attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], ad esempio [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
+> È necessario utilizzare caratteri jolly con elementi per specificare gli input per una compilazione. non è possibile specificare gli input usando l'attributo `Sources` nelle attività di MSBuild, ad esempio [CSC](../msbuild/csc-task.md) o [vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Esempio
+
 L'esempio di codice seguente illustra un progetto che include tutti i file di input separatamente.
 
 ```xml
@@ -136,6 +141,7 @@ L'esempio di codice seguente illustra un progetto che include tutti i file di in
 ```
 
 ## <a name="example"></a>Esempio
+
 L'esempio di codice seguente usa un carattere jolly per includere tutti i file con estensione *cs*.
 
 ```xml
@@ -170,5 +176,6 @@ L'esempio di codice seguente usa un carattere jolly per includere tutti i file c
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)
-- [Elementi](../msbuild/msbuild-items.md)
+- [Items](../msbuild/msbuild-items.md)
