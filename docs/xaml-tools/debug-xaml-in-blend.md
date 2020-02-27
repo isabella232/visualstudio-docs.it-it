@@ -3,18 +3,18 @@ title: Eseguire il debug di XAML in Blend | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 9ac692c756aaa29b2b13f20eecd039154a28d80b
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 04bd4540de47ec8a9da86069acb33770f9c800b8
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558185"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706371"
 ---
 # <a name="debug-xaml-in-blend"></a>Debug XAML in Blend
 
@@ -115,12 +115,12 @@ Quando vengono rilevati errori XAML, nell'area di progettazione viene visualizza
 
     Premere **Ctrl**+**MAIUSC**+**B** per compilare il progetto e verificare che non siano presenti errori rimanenti.
 
-## <a name="debug-in-visual-studio"></a>Eseguire il debug in Visual Studio
+## <a name="debug-in-visual-studio"></a>Debug in Visual Studio
 
 È possibile aprire i progetti Blend in Visual Studio per eseguire più facilmente il debug del codice nell'app. Per aprire un progetto di Blend in Visual Studio, fare clic con il pulsante destro del mouse sul progetto nel pannello **progetti** , quindi scegliere **modifica in Visual Studio**. Al termine della sessione di debug in Visual Studio, premere CTRL + MAIUSC + S per salvare tutte le modifiche e quindi tornare a Blend. Ti verrà chiesto di ricaricare il progetto. Fare clic su **Sì per** continuare a lavorare in Blend.
 
 Per altre informazioni sul debug dell'app, vedere [eseguire il debug di app UWP in Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="get-help"></a>Ottenere aiuto
+## <a name="get-help"></a>Guida in linea
 
 Per ulteriori informazioni sul debug dell'app Blend, è possibile cercare i post correlati al problema o pubblicare una domanda nei [Forum della community delle app UWP](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) .
