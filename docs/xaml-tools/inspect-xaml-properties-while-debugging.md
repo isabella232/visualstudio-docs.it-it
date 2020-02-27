@@ -3,18 +3,18 @@ title: Controllare le proprietà XAML durante il debug | Microsoft Docs
 ms.date: 11/12/2019
 ms.topic: conceptual
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 61893e06f79b14b95ebb5b923eca581b047d979b
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: 36246f959aa49e49aa84defc203075f163c67118
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072776"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706411"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug 
 
@@ -110,7 +110,7 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
 
 1. Verranno ora esaminate le proprietà di uno degli elementi della casella di riepilogo.
 
-   Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il campo **contenuto** è "Item1" e il campo**colore**  >  in **background**è **#FFFFFFE0**.
+   Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il campo **contenuto** è "Item1" e il campo **colore** > **sfondo** è **#FFFFFFE0**.
    
 1. Tornare alla finestra **Struttura ad albero visuale attiva** e selezionare il secondo elemento casella di riepilogo. **Esplora proprietà attive** dovrebbe indicare che il campo **contenuto** è "Item2" e che il campo **colore** > **sfondo** è **#FFD3D3D3** (a seconda del tema).
 

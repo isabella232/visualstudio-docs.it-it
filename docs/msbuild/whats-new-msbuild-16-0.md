@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: abd8ba039f9f6a19f5c028e05c03151c090e304c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 69c576f34b73ec99edd231d39e8bfa8ea661f2ff
+ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631003"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652807"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Novità di MSBuild 16.0
 
@@ -21,7 +21,7 @@ Questo articolo descrive le funzionalità e le proprietà aggiornate in MSBuild 
 
 ## <a name="changed-path"></a>Percorso modificato
 
- MSBuild viene installato nella cartella *\Current* in ogni versione di Visual Studio. Ad esempio, *C:\Programmi (x86)\Microsoft Visual Studio\Current\Enterprise\MSBuild*. Per individuare MSBuild, è anche possibile usare il modulo di PowerShell [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
+ MSBuild viene installato nella cartella *\Larghezza* in ogni versione di Visual Studio e i file eseguibili si trovano nella sottocartella *\bin* . Ad esempio, il percorso di *MSBuild. exe* installato con la community di visual studio 2019 è *c:\Programmi (x86) \Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe* è anche possibile usare il modulo di PowerShell seguente per individuare MSBuild: [vssetup. PowerShell](https://github.com/Microsoft/vssetup.powershell).
 
 ## <a name="changed-properties"></a>Proprietà modificate
 

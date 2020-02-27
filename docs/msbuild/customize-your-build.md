@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1b0e774d70c5787a7221aa0dfa7b0834dac7e3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e7ddf87f5fa9f937c0272e37f3a6b4aba29f2d6c
+ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588291"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652794"
 ---
 # <a name="customize-your-build"></a>Personalizzare la compilazione
 
@@ -189,8 +189,74 @@ Ad esempio, è possibile definire una nuova destinazione per scrivere un messagg
 </Project>
 ```
 
+## <a name="customize-all-net-builds"></a>Personalizzare tutte le compilazioni .NET
+
+Quando si gestisce un server di compilazione, potrebbe essere necessario configurare le impostazioni di MSBuild globalmente per tutte le compilazioni nel server.  In linea di principio, è possibile modificare i file Global *Microsoft. Common. targets* o *Microsoft. Common. props* , ma esiste un modo migliore. È possibile influire su tutte le compilazioni di un determinato tipo C# di progetto, ad esempio tutti i progetti, usando determinate proprietà di MSBuild e aggiungendo alcuni `.targets` personalizzati e file di `.props`.
+
+Per influire C# su tutte le compilazioni o Visual Basic gestite da un'installazione di MSBuild o Visual Studio, creare un file *Custom. before. Microsoft. Common. targets* o *Custom. after. Microsoft. Common. targets* con destinazioni che verranno eseguite prima o dopo *Microsoft. Common. targets*oppure un file *Custom. before. Microsoft. Common* . props o *Custom. after. Microsoft.* Common. props con proprietà che verranno elaborate prima o dopo Microsoft. Common *.* Props
+
+È possibile specificare i percorsi di questi file usando le proprietà MSBuild seguenti:
+
+- CustomBeforeMicrosoftCommonProps
+- CustomBeforeMicrosoftCommonTargets
+- CustomAfterMicrosoftCommonProps
+- CustomAfterMicrosoftCommonTargets
+- CustomBeforeMicrosoftCSharpProps
+- CustomBeforeMicrosoftVisualBasicProps
+- CustomAfterMicrosoftCSharpProps
+- CustomAfterMicrosoftVisualBasicProps
+- CustomBeforeMicrosoftCSharpTargets
+- CustomBeforeMicrosoftVisualBasicTargets
+- CustomAfterMicrosoftCSharpTargets
+- CustomAfterMicrosoftVisualBasicTargets
+
+Le versioni *comuni* di queste proprietà influiscono C# sui progetti e Visual Basic. È possibile impostare queste proprietà nella riga di comando di MSBuild.
+
+```cmd
+msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Microsoft.Common.Targets" MyProject.csproj
+```
+
+L'approccio migliore dipende dallo scenario. Se si dispone di un server di compilazione dedicato e si desidera assicurarsi che determinate destinazioni vengano sempre eseguite su tutte le compilazioni del tipo di progetto appropriato eseguite su tale server, è consigliabile utilizzare un file di `.props` o `.targets` personalizzato globale.  Se si desidera che le destinazioni personalizzate vengano eseguite solo quando si applicano determinate condizioni, utilizzare un altro percorso di file e impostare il percorso di tale file impostando la proprietà MSBuild appropriata nella riga di comando di MSBuild solo quando necessario.
+
+> [!WARNING]
+> Visual Studio USA i file di `.props` o `.targets` personalizzati se li trova nella cartella MSBuild ogni volta che compila qualsiasi progetto del tipo corrispondente. Questa operazione può avere conseguenze impreviste e, se eseguita in modo non corretto, può disabilitare la capacità di Visual Studio di essere compilata nel computer.
+
+## <a name="customize-all-c-builds"></a>Personalizzare tutte C++ le compilazioni
+
+Per C++ i progetti, i file di `.props` e `.targets` personalizzati indicati in precedenza vengono ignorati. Per C++ i progetti, è possibile creare file di `.targets` per ogni piattaforma e inserirli nelle cartelle di importazione appropriate per tali piattaforme.
+
+Il file di `.targets` per la piattaforma Win32, *Microsoft. cpp. Win32. targets*, contiene l'elemento `Import` seguente:
+
+```xml
+<Import Project="$(VCTargetsPath)\Platforms\Win32\ImportBefore\*.targets"
+        Condition="Exists('$(VCTargetsPath)\Platforms\Win32\ImportBefore')"
+/>
+```
+
+È presente un elemento analogo alla fine dello stesso file:
+
+```xml
+<Import Project="$(VCTargetsPath)\Platforms\Win32\ImportAfter\*.targets"
+        Condition="Exists('$(VCTargetsPath)\Platforms\Win32\ImportAfter')"
+/>
+```
+
+Sono presenti elementi di importazione simili per altre piattaforme di destinazione in *%ProgramFiles32%\MSBuild\Microsoft.Cpp\v {Version} \ Platforms\*.
+
+Una volta inserito il file di `.targets` nella cartella appropriata in base alla piattaforma, MSBuild importa il file in ogni C++ compilazione per la piattaforma. Se necessario, è possibile inserire più file di `.targets`.
+
+### <a name="specify-a-custom-import-on-the-command-line"></a>Specificare un'importazione personalizzata nella riga di comando
+
+Per `.targets` personalizzati che si desidera includere per una compilazione specifica di un C++ progetto, impostare una o entrambe le proprietà `ForceImportBeforeCppTargets` e `ForceImportAfterCppTargets` nella riga di comando.
+
+```cmd
+msbuild /p:ForceImportBeforeCppTargets="C:\build\config\Custom.Before.Microsoft.Cpp.Targets" MyCppProject.vcxproj
+```
+
+Per un'impostazione globale (per avere effetto su tutte le C++ compilazioni per una piattaforma in un server di compilazione), sono disponibili due metodi. In primo luogo, è possibile impostare queste proprietà usando una variabile di ambiente di sistema sempre impostata. Questa operazione funziona perché MSBuild legge sempre l'ambiente e crea o esegue l'override delle proprietà per tutte le variabili di ambiente.
+
 ## <a name="see-also"></a>Vedere anche
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
