@@ -1,6 +1,6 @@
 - name: MSBuild
   items:
-    - name: MsBuild
+    - name: MSBuild
       href: msbuild.md
     - name: Novità di MSBuild 16.0
       href: whats-new-msbuild-16-0.md
@@ -13,7 +13,7 @@
           href: msbuild-concepts.md
         - name: Proprietà
           items:
-            - name: Proprietà di MSBuild
+            - name: proprietà di MSBuild
               href: msbuild-properties.md
             - name: Usare le variabili di ambiente in una compilazione
               href: how-to-use-environment-variables-in-a-build.md
@@ -35,7 +35,7 @@
               href: how-to-display-an-item-list-separated-with-commas.md
             - name: Definizioni degli elementi
               href: item-definitions.md
-            - name: Funzioni degli elementi
+            - name: funzioni Item
               href: item-functions.md
         - name: Destinazioni
           items:
@@ -59,7 +59,7 @@
               href: how-to-use-project-sdk.md
         - name: Attività
           items:
-            - name: Attività MSBuild
+            - name: MSBuild (attività)
               href: msbuild-tasks.md
             - name: Scrittura di attività
               href: task-writing.md
@@ -81,11 +81,11 @@
           items:
             - name: Caratteri speciali di MSBuild
               href: msbuild-special-characters.md
-            - name: Caratteri di escape speciali in MSBuild
+            - name: Usare caratteri di escape speciali in MSBuild
               href: how-to-escape-special-characters-in-msbuild.md
             - name: Usare caratteri XML riservati nei file di progetto
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: Concetti avanzati relativi
+    - name: Concetti avanzati
       items:
         - name: Concetti avanzati relativi a MSBuild
           href: msbuild-advanced-concepts.md
@@ -95,11 +95,11 @@
               href: msbuild-batching.md
             - name: Metadati degli elementi nella suddivisione in batch delle attività
               href: item-metadata-in-task-batching.md
-            - name: Metadati degli elementi nell'esecuzione in batch delle destinazioni
+            - name: Metadati degli elementi nella suddivisione in batch delle destinazioni
               href: item-metadata-in-target-batching.md
         - name: Trasformazioni di MSBuild
           href: msbuild-transforms.md
-        - name: Integrazione con Visual Studio
+        - name: integrazione con Visual Studio
           items:
             - name: Integrazione di Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -113,13 +113,13 @@
           items:
             - name: Compilazione di più progetti in parallelo con MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
-            - name: Utilizzo di più processori per la compilazione di progetti
+            - name: Uso di più processori per la compilazione di progetti
               href: using-multiple-processors-to-build-projects.md
-            - name: Utilizzo efficiente della memoria nella compilazione di progetti di grandi dimensioni
+            - name: Uso efficiente della memoria nella compilazione di progetti di grandi dimensioni
               href: using-memory-efficiently-when-you-build-large-projects.md
         - name: Multitargeting
           items:
-            - name: Cenni preliminari sul multitargeting di MSBuild
+            - name: Panoramica del multitargeting di MSBuild
               href: msbuild-multitargeting-overview.md
             - name: Set di strumenti (ToolsVersion)
               items:
@@ -141,7 +141,7 @@
                   href: how-to-configure-targets-and-tasks.md
             - name: Risolvere i problemi relativi agli errori di impostazione di .NET Framework come destinazione
               href: troubleshooting-dotnet-framework-targeting-errors.md
-        - name: Rilevamento di file
+        - name: Rilevamento file
           items:
             - name: Panoramica
               displayName: file tracking
@@ -166,7 +166,7 @@
               href: writecontexttlogs.md
         - name: Personalizzare la compilazione
           href: customize-your-build.md
-        - name: Procedure consigliate di MSBuild
+        - name: Procedure consigliate per MSBuild
           href: msbuild-best-practices.md
     - name: Registrazione
       items:
@@ -185,14 +185,14 @@
           href: creating-forwarding-loggers.md
     - name: 'Procedura dettagliata: Uso di MSBuild'
       href: walkthrough-using-msbuild.md
-    - name: 'Procedura dettagliata: Creazione da zero di un file di progetto MSBuild'
+    - name: 'Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild'
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: Riferimenti a MSBuild
       items:
         - name: Panoramica
           displayName: msbuild reference
           href: msbuild-reference.md
-        - name: Riferimenti dello schema del file di progetto MSBuild
+        - name: Informazioni di riferimento sullo schema del file di progetto di MSBuild
           items:
             - name: Panoramica
               displayName: Project File Schema Reference
@@ -241,10 +241,10 @@
               href: usingtask-element-msbuild.md
             - name: Elemento When
               href: when-element-msbuild.md
-        - name: Riferimenti alle attività
+        - name: Informazioni di riferimento sulle attività
           items:
             - name: Panoramica
-              displayName: Task Reference
+              displayName: task reference
               href: msbuild-task-reference.md
             - name: Attività specifiche di C++
               items:
@@ -253,7 +253,7 @@
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: Attività BscMake
                   href: bscmake-task.md
-                - name: Attività CL
+                - name: attività CL
                   href: cl-task.md
                 - name: Attività CPPClean
                   href: cppclean-task.md
@@ -267,31 +267,31 @@
                   href: getoutofdateitems-task.md
                 - name: Attività GetOutputFileName
                   href: getoutputfilename-task.md
-                - name: Attività LIB
+                - name: LIB (attività)
                   href: lib-task.md
-                - name: Attività Link
+                - name: Link (attività)
                   href: link-task.md
-                - name: Attività MIDL
+                - name: MIDL (attività)
                   href: midl-task.md
-                - name: Attività MT
+                - name: attività MT
                   href: mt-task.md
                 - name: Attività MultiTool
                   href: multitooltask-task.md
                 - name: Attività ParallelCustomBuild
                   href: parallelcustombuild-task.md
-                - name: Attività RC
+                - name: RC (attività)
                   href: rc-task.md
                 - name: Attività SetEnv
                   href: setenv-task.md
                 - name: Classe di base TrackedVCToolTask
                   href: trackedvctooltask-base-class.md
-                - name: Attività VCMessage
+                - name: attività VCMessage
                   href: vcmessage-task.md
                 - name: Classe di base VCToolTask
                   href: vctooltask-base-class.md
-                - name: Attività XDCMake
+                - name: attività XDCMake
                   href: xdcmake-task.md
-                - name: Attività XSD
+                - name: XSD (attività)
                   href: xsd-task.md
             - name: Classe di base Task
               href: task-base-class.md
@@ -303,129 +303,129 @@
               href: diagnosing-task-failures.md
             - name: Attività AL (Assembly Linker)
               href: al-assembly-linker-task.md
-            - name: Attività AspNetCompiler
+            - name: AspNetCompiler (attività)
               href: aspnetcompiler-task.md
-            - name: Attività AssignCulture
+            - name: AssignCulture (attività)
               href: assignculture-task.md
             - name: Attività AssignProjectConfiguration
               href: assignprojectconfiguration-task.md
             - name: Attività AssignTargetPath
               href: assigntargetpath-task.md
-            - name: Attività CallTarget
+            - name: attività CallTarget
               href: calltarget-task.md
-            - name: Attività CombinePath
+            - name: attività CombinePath
               href: combinepath-task.md
-            - name: Attività ConvertToAbsolutePath
+            - name: attività ConvertToAbsolutePath
               href: converttoabsolutepath-task.md
-            - name: Attività Copy
+            - name: Copy (attività)
               href: copy-task.md
-            - name: Attività CreateCSharpManifestResourceName
+            - name: attività CreateCSharpManifestResourceName
               href: createcsharpmanifestresourcename-task.md
-            - name: Attività CreateItem
+            - name: CreateItem (attività)
               href: createitem-task.md
-            - name: Attività CreateProperty
+            - name: CreateProperty (attività)
               href: createproperty-task.md
-            - name: Attività CreateVisualBasicManifestResourceName
+            - name: Crea attività VisualBasicManifestResourceName
               href: createvisualbasicmanifestresourcename-task.md
-            - name: Attività Csc
+            - name: Csc (attività)
               href: csc-task.md
-            - name: Attività Delete
+            - name: Delete (attività)
               href: delete-task.md
             - name: Attività DownloadFile
               href: downloadfile-task.md
-            - name: Attività Error
+            - name: attività Error
               href: error-task.md
-            - name: Attività Exec
+            - name: Exec (attività)
               href: exec-task.md
-            - name: Attività FindAppConfigFile
+            - name: FindAppConfigFile (attività)
               href: findappconfigfile-task.md
-            - name: Attività FindInList
+            - name: FindInList (attività)
               href: findinlist-task.md
-            - name: Attività FindUnderPath
+            - name: FindUnderPath (attività)
               href: findunderpath-task.md
-            - name: Attività FormatUrl
+            - name: FormatUrl task (attività)
               href: formaturl-task.md
             - name: Attività FormatVersion
               href: formatversion-task.md
-            - name: Attività GenerateApplicationManifest
+            - name: GenerateApplicationManifest (attività)
               href: generateapplicationmanifest-task.md
-            - name: Attività GenerateBootstrapper
+            - name: GenerateBootstrapper (attività)
               href: generatebootstrapper-task.md
-            - name: Attività GenerateDeploymentManifest
+            - name: GenerateDeploymentManifest (attività)
               href: generatedeploymentmanifest-task.md
-            - name: Attività GenerateResource
+            - name: GenerateResource (attività)
               href: generateresource-task.md
-            - name: Attività GenerateTrustInfo
+            - name: GenerateTrustInfo (attività)
               href: generatetrustinfo-task.md
-            - name: Attività GetAssemblyIdentity
+            - name: GetAssemblyIdentity (attività)
               href: getassemblyidentity-task.md
             - name: Attività GetFileHash
               href: getfilehash-task.md
-            - name: Attività GetFrameworkPath
+            - name: GetFrameworkPath (attività)
               href: getframeworkpath-task.md
-            - name: Attività GetFrameworkSdkPath
+            - name: GetFrameworkSdkPath (attività)
               href: getframeworksdkpath-task.md
             - name: Attività GetReferenceAssemblyPaths
               href: getreferenceassemblypaths-task.md
-            - name: Attività LC
+            - name: LC (attività)
               href: lc-task.md
-            - name: Attività MakeDir
+            - name: MakeDir (attività)
               href: makedir-task.md
-            - name: Attività Message
+            - name: attività Message
               href: message-task.md
-            - name: Attività Move
+            - name: Move (attività)
               href: move-task.md
-            - name: Attività MSBuild
+            - name: MSBuild (attività)
               href: msbuild-task.md
-            - name: Attività ReadLinesFromFile
+            - name: ReadLinesFromFile (attività)
               href: readlinesfromfile-task.md
-            - name: Attività RegisterAssembly
+            - name: RegisterAssembly (attività)
               href: registerassembly-task.md
-            - name: Attività RemoveDir
+            - name: RemoveDir (attività)
               href: removedir-task.md
-            - name: Attività RemoveDuplicates
+            - name: RemoveDuplicates (attività)
               href: removeduplicates-task.md
-            - name: Attività RequiresFramework35SP1Assembly
+            - name: RequiresFramework35SP1Assembly (attività)
               href: requiresframework35sp1assembly-task.md
-            - name: Attività ResolveAssemblyReference
+            - name: ResolveAssemblyReference (attività)
               href: resolveassemblyreference-task.md
             - name: Attività ResolveComReference
               href: resolvecomreference-task.md
-            - name: Attività ResolveKeySource
+            - name: ResolveKeySource (attività)
               href: resolvekeysource-task.md
-            - name: Attività ResolveManifestFiles
+            - name: ResolveManifestFiles (attività)
               href: resolvemanifestfiles-task.md
-            - name: Attività ResolveNativeReference
+            - name: ResolveNativeReference (attività)
               href: resolvenativereference-task.md
-            - name: Attività ResolveNonMSBuildProjectOutput
+            - name: ResolveNonMSBuildProjectOutput (attività)
               href: resolvenonmsbuildprojectoutput-task.md
-            - name: Attività SGen
+            - name: SGen (attività)
               href: sgen-task.md
-            - name: Attività SignFile
+            - name: SignFile (attività)
               href: signfile-task.md
-            - name: Attività Touch
+            - name: Touch (attività)
               href: touch-task.md
-            - name: Attività UnregisterAssembly
+            - name: UnregisterAssembly (attività)
               href: unregisterassembly-task.md
             - name: Attività Unzip
               href: unzip-task.md
             - name: Attività UpdateManifest
               href: updatemanifest-task.md
-            - name: Attività Vbc
+            - name: Vbc (attività)
               href: vbc-task.md
             - name: Attività VerifyFileHash
               href: verifyfilehash-task.md
-            - name: Attività Warning
+            - name: attività Warning
               href: warning-task.md
             - name: Attività WriteCodeFragment
               href: writecodefragment-task.md
-            - name: Attività WriteLinesToFile
+            - name: WriteLinesToFile (attività)
               href: writelinestofile-task.md
             - name: Attività XmlPeek
               href: xmlpeek-task.md
-            - name: Attività XmlPoke
+            - name: XmlPoke (attività)
               href: xmlpoke-task.md
-            - name: Attività XslTransformation
+            - name: XslTransformation (attività)
               href: xsltransformation-task.md
             - name: Attività ZipDirectory
               href: zipdirectory-task.md
@@ -450,14 +450,14 @@
         - name: Informazioni di riferimento su WPF
           items:
             - name: Panoramica
-              displayName: WPF MSBuild Reference
+              displayName: WPF MSBuild reference
               href: wpf-msbuild-reference.md
             - name: File WPF con estensione targets
               href: wpf-dot-targets-files.md
             - name: Informazioni di riferimento sulle attività WPF
               items:
                 - name: Panoramica
-                  displayName: WPF MSBuild Task Reference
+                  displayName: WPF MSBuild task reference
                   href: wpf-msbuild-task-reference.md
                 - name: Attività FileClassifier
                   href: fileclassifier-task.md
@@ -467,7 +467,7 @@
                   href: getwinfxpath-task.md
                 - name: Attività MarkupCompilePass1
                   href: markupcompilepass1-task.md
-                - name: Attività MarkupCompilePass2
+                - name: MarkupCompilePass2 (attività)
                   href: markupcompilepass2-task.md
                 - name: Attività MergeLocalizationDirectives
                   href: mergelocalizationdirectives-task.md
@@ -482,7 +482,7 @@
     - name: Usare MSBuild a livello di codice
       items:
         - name: Panoramica
-          displayName: Use MSBuild Programmatically
+          displayName: Use MSBuild programmatically
           href: msbuild-api.md
         - name: Aggiornamento a MSBuild 15
           href: updating-an-existing-application.md
