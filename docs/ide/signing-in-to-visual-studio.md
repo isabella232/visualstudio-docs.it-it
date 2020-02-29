@@ -10,16 +10,16 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adda66bbccafa3c1d7f20d60a3f8ee0a4995353c
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 48c3ad98043947d9153c1fb9c406a60e5ae8839a
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027589"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904120"
 ---
 # <a name="sign-in-to-visual-studio"></a>Accesso a Visual Studio
 
-È possibile personalizzare e ottimizzare l'esperienza di sviluppo di Visual Studio se si imposta l'account di personalizzazione eseguendo l'accesso all'IDE.
+È possibile personalizzare e ottimizzare l'esperienza di sviluppo in Visual Studio effettuando l'accesso all'account di personalizzazione.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Accesso a Visual Studio per Mac](/visualstudio/mac/signing-in).
@@ -29,30 +29,37 @@ ms.locfileid: "77027589"
 Quando si accede si migliorano le proprie esperienze di Visual Studio. Ad esempio, dopo aver eseguito l'accesso, tra le tante funzionalità, è possibile [sincronizzare le impostazioni](synchronized-settings-in-visual-studio.md) tra i dispositivi, estendere una versione di prova e connettersi automaticamente a un servizio di Azure.
 
 Di seguito è riportato un elenco completo dei vantaggi di cui usufruire e delle operazioni che si possono eseguire dopo aver effettuato l'accesso:
-
-- **Accedere al programma Visual Studio Dev Essentials**: il programma comprende un software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
-
-- **Sincronizzare le impostazioni di Visual Studio**: le impostazioni personalizzate, ad esempio le combinazioni di tasti, il layout della finestra e il tema colori, vengono applicate immediatamente quando si accede a Visual Studio da qualsiasi dispositivo. Vedere [Impostazioni sincronizzate in Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
+- **Estendere il periodo di valutazione per Visual Studio**: è possibile usare Visual Studio Professional o Visual Studio Enterprise per 90 giorni, anziché essere vincolati al periodo di valutazione di 30 giorni. Per altre informazioni, vedere [estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md).
 
 - **Sbloccare l'edizione Visual Studio Community**: se l'installazione dell'edizione Community richiede una licenza, accedere all'IDE per annullare il blocco.
 
-- **Estendere il periodo di valutazione per Visual Studio**: è possibile usare Visual Studio Professional o Visual Studio Enterprise per 90 giorni, anziché essere vincolati al periodo di valutazione di 30 giorni.
+- **Sbloccare Visual Studio se si utilizza un account associato a una sottoscrizione di Visual Studio o a un'organizzazione di Azure DevOps**. Per istruzioni dettagliate, vedere [estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md).
 
-- **Sbloccare Visual Studio se si utilizza un account associato a una sottoscrizione di Visual Studio o a un'organizzazione di Azure DevOps**. Vedere [Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Accedere al programma Visual Studio Dev Essentials**: il programma comprende un software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
+
+- **Sincronizzare le impostazioni di Visual Studio**: le impostazioni personalizzate, ad esempio le combinazioni di tasti, il layout della finestra e il tema colori, vengono applicate immediatamente quando si accede a Visual Studio da qualsiasi dispositivo. Vedere [sincronizzare le impostazioni in Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Collegarsi automaticamente a servizi come Azure e Azure DevOps Services** nell'IDE senza richiedere di nuovo le credenziali per lo stesso account.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Come accedere a Visual Studio
 
-Quando si apre Visual Studio per la prima volta, viene richiesto di accedere e fornire alcune informazioni di registrazione di base. Si deve scegliere un account Microsoft o un account aziendale o dell'istituto di istruzione che è più rappresentativo. Se non si hanno questi account Microsoft, è possibile crearne uno Microsoft gratuitamente. Vedere [Come posso iscrivermi a un account Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
+Quando si apre Visual Studio per la prima volta, viene richiesto di accedere e fornire alcune informazioni di registrazione di base. 
+
+![Richiesta di accesso](../ide/media/vs2019_signinpopup.png)
+
+Si deve scegliere un account Microsoft o un account aziendale o dell'istituto di istruzione che è più rappresentativo. Se non si dispone di questi account, è possibile creare una account Microsoft gratuitamente facendo clic sul collegamento sotto il pulsante Accedi. In caso di problemi, vedere [ricerca per categorie iscriversi per ottenere un account Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
 Selezionare quindi le impostazioni dell'interfaccia utente e il tema colori che si desidera usare in Visual Studio. Visual Studio memorizza queste impostazioni e le sincronizza tra tutti gli ambienti Visual Studio a cui si è eseguito l'accesso. Per un elenco delle impostazioni sincronizzate, vedere [Impostazioni sincronizzate](../ide/synchronized-settings-in-visual-studio.md). È possibile modificare in seguito le impostazioni nel menu **Strumenti** > **Opzioni** in Visual Studio.
 
 Dopo aver fornito le impostazioni, viene avviato Visual Studio e viene eseguito l'accesso dell'utente in modo da poter subito iniziare a usare l'applicazione. Per verificare se è stato eseguito l'accesso, cercare il nome nell'angolo superiore destro dell'ambiente Visual Studio.
 
-![Utente attualmente connesso in VS2017](../ide/media/vs2017_username.png)
+![Utente attualmente connesso in VS2019](../ide/media/vs2019_username.png)
 
-A meno che non esegua la disconnessione, l'utente viene automaticamente connesso a Visual Studio a ogni avvio e tutte le modifiche apportate alle impostazioni sincronizzate vengono applicate automaticamente. Per disconnettersi, selezionare la freccia in giù accanto al nome del profilo nell'angolo superiore destro dell'ambiente Visual Studio, scegliere il comando **Impostazioni account** e quindi il collegamento **Esci**. Per accedere di nuovo, scegliere il comando **Accedi** nell'angolo superiore destro dell'ambiente Visual Studio.
+Se si sceglie di non accedere alla prima apertura di Visual Studio, è facile eseguire questa operazione in un secondo momento. Cercare il collegamento **Accedi** nell'angolo superiore destro dell'ambiente Visual Studio. 
+
+![Utente non connesso](../ide/media/vs2019_usernotsignedin.png)
+
+A meno che non esegua la disconnessione, l'utente viene automaticamente connesso a Visual Studio a ogni avvio e tutte le modifiche apportate alle impostazioni sincronizzate vengono applicate automaticamente. Per disconnettersi, fare clic sull'icona con il nome del profilo nell'angolo superiore destro dell'ambiente Visual Studio, scegliere il comando **Impostazioni account** , quindi scegliere il collegamento per la **disconnessione** . Per accedere di nuovo, scegliere il comando **Accedi** nell'angolo superiore destro dell'ambiente Visual Studio.
 
 ## <a name="to-change-your-profile-information"></a>Per modificare le informazioni sul profilo
 
@@ -64,11 +71,11 @@ A meno che non esegua la disconnessione, l'utente viene automaticamente connesso
 
 ## <a name="troubleshooting"></a>risoluzione dei problemi
 
-Se si verificano problemi durante l'accesso, vedere la pagina [per ricevere assistenza](https://visualstudio.microsoft.com/subscriptions/support/).
+Se si verificano problemi durante l'accesso, vedere la pagina relativa al supporto per le [sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ottenere assistenza.
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md)
+* [Estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md)
 * [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)
 * [Accesso (Visual Studio per Mac)](/visualstudio/mac/signing-in)
 * [Attivazione (Visual Studio per Mac)](/visualstudio/mac/activation)

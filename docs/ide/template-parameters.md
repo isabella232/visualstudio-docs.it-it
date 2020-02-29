@@ -10,14 +10,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585886"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169365"
 ---
-# <a name="template-parameters"></a>Parametri modello
+# <a name="template-parameters"></a>Parametri del modello
 
 Quando viene creata un'istanza di modello, è possibile sostituire i valori nel modello. Per configurare questa funzionalità, usare *parametri del modello*. Parametri del modello è utilizzabile per sostituire i valori, ad esempio i nomi della classe e gli spazi dei nomi nel modello. La creazione guidata del modello che viene eseguito in background quando un utente aggiunge un nuovo elemento o progetto sostituisce questi parametri.
 
@@ -50,7 +50,7 @@ La tabella seguente elenca i parametri di modello riservati che possono essere u
 |Parametro|Descrizione|
 |---------------|-----------------|
 |clrversion|Versione corrente di Common Language Runtime (CLR).|
-|ext_*|Aggiungere il prefisso `ext_` a tutti i parametri per fare riferimento alle variabili del modello padre. Ad esempio `ext_safeprojectname`.|
+|ext_*|Aggiungere il prefisso `ext_` a tutti i parametri per fare riferimento alle variabili del modello padre. Ad esempio: `ext_safeprojectname`.|
 |guid[1-10]|GUID usato per sostituire il GUID del progetto in un file di progetto. È possibile specificare fino a 10 GUID univoci, ad esempio `guid1`.|
 |itemname|Nome del file in cui viene usato il parametro.|
 |machinename|Nome del computer corrente, ad esempio Computer01.|
@@ -58,14 +58,14 @@ La tabella seguente elenca i parametri di modello riservati che possono essere u
 |registeredorganization|Valore della chiave del Registro di sistema da HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Spazio dei nomi radice del progetto corrente. Questo parametro è valido solo per i modelli di elemento.|
 |safeitemname|Uguale a `itemname` ma con tutti i caratteri e gli spazi non sicuri sostituiti da caratteri di sottolineatura.|
-|safeitemrootname|Uguale a `safeitemname`.|
+|safeitemrootname|Come per `safeitemname`.|
 |safeprojectname|Nome specificato dall'utente quando è stato creato il progetto con tutti i caratteri non sicuri e gli spazi rimossi.|
 |time|L'ora corrente nel formato GG/MM/AAAA 00:00:00.|
-|specifiedSolutionName|Nome della soluzione. Quando l'opzione per creare una directory di soluzione è selezionata, `specifiedSolutionName` è il nome della soluzione. Quando l'opzione per creare una directory di soluzione non è selezionata, `specifiedSolutionName` è vuoto.|
+|specifiedsolutionname|Nome della soluzione. Quando l'opzione per creare una directory di soluzione è selezionata, `specifiedsolutionname` è il nome della soluzione. Quando l'opzione per creare una directory di soluzione non è selezionata, `specifiedsolutionname` è vuoto.|
 |userdomain|Dominio dell'utente corrente.|
-|nomeutente|Nome dell'utente corrente.|
+|username|Nome dell'utente corrente.|
 |webnamespace|Nome del sito Web corrente. Questo parametro viene usato nel modello di modulo Web per garantire che i nomi delle classi siano univoci. Se il sito Web si trova nella directory radice del server Web, questo parametro di modello viene risolto nella directory radice del server Web.|
-|anno|L'anno corrente nel formato AAAA.|
+|year|L'anno corrente nel formato AAAA.|
 
 > [!NOTE]
 > I parametri di modello fanno distinzione tra maiuscole e minuscole.

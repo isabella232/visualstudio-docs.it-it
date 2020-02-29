@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091782"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167754"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Creare visualizzazioni personalizzate di C++ oggetti nel debugger usando il Framework natvis
 
@@ -94,6 +94,30 @@ Il debugger di Visual Studio carica automaticamente i file C++ con *estensione n
 >[!NOTE]
 >Le regole natvis caricate da un file *PDB* si applicano solo ai tipi nei moduli a cui fa riferimento il file *PDB* . Ad esempio, se *Module1. pdb* contiene una voce natvis per un tipo denominato `Test`, si applica solo alla classe `Test` in *Module1. dll*. Se un altro modulo definisce anche una classe denominata `Test`, la voce natvis di *Module1. pdb* non si applica a tale classe.
 
+**Per installare e registrare un file con *estensione natvis* tramite un pacchetto VSIX:**
+
+Un pacchetto VSIX può installare e registrare i file con *estensione natvis* . Indipendentemente dalla posizione in cui sono installati, tutti i file con *estensione natvis* registrati vengono selezionati automaticamente durante il debug.
+
+1. Includere il file con *estensione natvis* nel pacchetto VSIX. Ad esempio, per il file di progetto seguente:
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+     <ItemGroup>
+       <VSIXSourceItem Include="Visualizer.natvis" />
+     </ItemGroup>
+   </Project>
+   ```
+
+2. Registrare il file *natvis* nel file *source. Extension. vsixmanifest* :
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+     <Assets>
+       <Asset Type="NativeVisualizer" Path="Visualizer.natvis"  />
+     </Assets>
+   </PackageManifest>
+   ```
+
 ### <a name="BKMK_natvis_location"></a>Percorsi file natvis
 
 È possibile aggiungere i file *natvis* alla directory utente o a una directory di sistema, se si desidera che vengano applicati a più progetti.
@@ -104,19 +128,21 @@ I file con *estensione natvis* vengono valutati nell'ordine seguente:
 
 2. Tutti i file con *estensione natvis* che si trovano C++ in un progetto caricato o in una soluzione di primo livello. Questo gruppo include tutti i C++ progetti caricati, incluse le librerie di classi, ma non i progetti in altre lingue.
 
+3. Tutti i file con *estensione natvis* installati e registrati tramite un pacchetto VSIX.
+
 ::: moniker range="vs-2017"
 
-3. La directory natvis specifica dell'utente (ad esempio, *%USERPROFILE%\Documents\Visual Studio 2017 \ Visualizers*).
+4. La directory natvis specifica dell'utente (ad esempio, *%USERPROFILE%\Documents\Visual Studio 2017 \ Visualizers*).
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-3. La directory natvis specifica dell'utente (ad esempio, *%USERPROFILE%\Documents\Visual Studio 2019 \ Visualizers*).
+4. La directory natvis specifica dell'utente (ad esempio, *%USERPROFILE%\Documents\Visual Studio 2019 \ Visualizers*).
 
 ::: moniker-end
 
-4. La directory Natvis a livello di sistema ( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Questa directory contiene i file *natvis* installati con Visual Studio. Se si dispone di autorizzazioni di amministratore, è possibile aggiungere file a questa directory.
+5. La directory Natvis a livello di sistema ( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Questa directory contiene i file *natvis* installati con Visual Studio. Se si dispone di autorizzazioni di amministratore, è possibile aggiungere file a questa directory.
 
 ## <a name="modify-natvis-files-while-debugging"></a>Modificare i file natvis durante il debug
 
@@ -670,7 +696,7 @@ Il seguente è un esempio di elemento UIVisualizer:
 
 - Una coppia `ServiceId` - `Id` attributo identifica un `UIVisualizer`. Il `ServiceId` è il GUID del servizio esposto dal pacchetto del visualizzatore. `Id` è un identificatore univoco che distingue i visualizzatori, se un servizio ne fornisce più di uno. Nell'esempio precedente, lo stesso servizio del visualizzatore fornisce due visualizzatori.
 
-- L'attributo `MenuName` definisce il nome di un visualizzatore da visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Ad esempio,
+- L'attributo `MenuName` definisce il nome di un visualizzatore da visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Ad esempio:
 
   ![Menu di scelta rapida del menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Menu di scelta rapida UIVisualizer")
 
@@ -682,7 +708,7 @@ Ogni tipo definito nel file *natvis* deve elencare in modo esplicito tutti i vis
 </Type>
 ```
 
- È possibile vedere un esempio di `UIVisualizer` nell'estensione [Image Watch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017) utilizzata per visualizzare le bitmap in memoria.
+ È possibile vedere un esempio di `UIVisualizer` nell'estensione [Image Watch](https://marketplace.visualstudio.com/search?term=%22Image%20Watch%22&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance) utilizzata per visualizzare le bitmap in memoria.
 
 ### <a name="BKMK_CustomVisualizer"></a>Elemento CustomVisualizer
  `CustomVisualizer` è un punto di estendibilità che specifica un'estensione VSIX che è possibile scrivere per controllare le visualizzazioni in Visual Studio Code. Per ulteriori informazioni sulla scrittura di estensioni VSIX, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
