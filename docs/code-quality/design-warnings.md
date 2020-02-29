@@ -14,24 +14,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301b829341eeb859030afabbf2225ea833e99a22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ec257d67530692fc885d971e21136c10e7a271f6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587680"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167794"
 ---
 # <a name="design-warnings"></a>Avvisi di progettazione
 
-Gli avvisi di progettazione supportano la conformità alle [linee guida di progettazione .NET](/dotnet/standard/design-guidelines/).
+Gli avvisi di progettazione supportano la conformità alle [linee guida di progettazione .NET Framework](/dotnet/standard/design-guidelines/).
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 | Regola | Descrizione |
 | - | - |
 | [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000.md) | Quando viene chiamato un membro statico di un tipo generico, è necessario specificare l'argomento di tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. In questi due casi, la sintassi necessaria per specificare l'argomento di tipo è diversa e può generare confusione. |
 | [CA1001: I tipi proprietari di campi Disposable devono essere Disposable](../code-quality/ca1001.md) | Una classe dichiara e implementa un campo di istanza che è un tipo System. IDisposable e la classe non implementa IDisposable. Una classe che dichiara un campo IDisposable è indirettamente proprietaria di una risorsa non gestita e deve implementare l'interfaccia IDisposable. |
-| [CA1002: Non esporre elenchi generici](../code-quality/ca1002.md) | Collections < (di \<(T >) >) è una raccolta generica che è progettata per prestazioni ottimali, non per l'ereditarietà. List, pertanto, non contiene membri virtuali. Devono invece essere esposte le raccolte generiche che sono state progettate per l'ereditarietà. |
+| [CA1002: Non esporre elenchi generici](../code-quality/ca1002.md) | System. Collections. Generic. List < (of \<(T >) >) è una raccolta generica progettata per le prestazioni, non per l'ereditarietà. List, pertanto, non contiene membri virtuali. Devono invece essere esposte le raccolte generiche che sono state progettate per l'ereditarietà. |
 | [CA1003: Usare istanze di gestori eventi generici](../code-quality/ca1003.md) | Un tipo contiene un delegato che restituisce void, la cui firma contiene due parametri (il primo oggetto e il secondo un tipo assegnabile a EventArgs) e l'assembly contenitore ha come destinazione .NET Framework 2,0. |
 | [CA1004: I metodi generici devono specificare parametri di tipo](../code-quality/ca1004.md) | Per inferenza si intende la procedura con cui viene determinato l'argomento di tipo di un metodo generico in base al tipo di argomento passato al metodo, piuttosto che in base alla specifica esplicita dell'argomento di tipo. Per consentire l'inferenza, la firma di parametro di un metodo generico deve includere un parametro dello stesso tipo del parametro di tipo relativo al metodo. In tal caso non è necessario specificare l'argomento tipo. Quando si usa l'inferenza per tutti i parametri di tipo, la sintassi per la chiamata di metodi di istanza generici e non generici è identica; in questo modo si semplifica l'usabilità dei metodi generici. |
 | [CA1005: Evitare un uso eccessivo di parametri nei tipi generici](../code-quality/ca1005.md) | Quanto più è alto il numero di parametri di tipo contenuti, maggiore è la difficoltà di sapere e ricordare cosa rappresenta ciascun parametro. È in genere ovvio con un parametro di tipo, come nell'elenco\<T > e in alcuni casi con due parametri di tipo, come in dictionary\<TKey, TValue >. Tuttavia, se il numero dei parametri di tipo è superiore a due, il livello di difficoltà sarà troppo elevato per la maggior parte degli utenti. |
@@ -88,7 +88,7 @@ Gli avvisi di progettazione supportano la conformità alle [linee guida di proge
 | [CA1061: Non nascondere i metodi di una classe base](../code-quality/ca1061.md) | Un metodo di un tipo di base è nascosto da un metodo denominato in modo identico in un tipo derivato, quando la firma del parametro del metodo derivato differisce solo per i tipi che presentano una derivazione più debole rispetto ai tipi corrispondenti nella firma del parametro del metodo di base. |
 | [CA1062: Convalidare gli argomenti di metodi pubblici](../code-quality/ca1062.md) | È necessario che tutti gli argomenti di riferimento passati a metodi visibili esternamente vengano sottoposti a verifica per accertarsi che non corrispondano a valori Null. |
 | [CA1063: Implementare IDisposable correttamente](../code-quality/ca1063.md) | È necessario che tutti i tipi IDisposable implementino correttamente il modello Dispose. |
-| [CA1064: Le eccezioni devono essere pubbliche](../code-quality/ca1064.md) | Un'eccezione interna è visibile solo nel relativo ambito interno. Se l'eccezione si verifica al di fuori dell'ambito interno, può essere rilevata solo tramite l'eccezione di base. Se l'eccezione interna è ereditata da <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, o <xref:System.ApplicationException?displayProperty=fullName>, il codice esterno non avrà informazioni sufficienti per sapere cosa fare con l'eccezione. |
+| [CA1064: Le eccezioni devono essere pubbliche](../code-quality/ca1064.md) | Un'eccezione interna è visibile solo nel relativo ambito interno. Se l'eccezione si verifica al di fuori dell'ambito interno, può essere rilevata solo tramite l'eccezione di base. Se l'eccezione interna viene ereditata da <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>o <xref:System.ApplicationException?displayProperty=fullName>, il codice esterno non disporrà di informazioni sufficienti per sapere cosa fare con l'eccezione. |
 | [CA1065: Non generare eccezioni in posizioni impreviste](../code-quality/ca1065.md) | Un metodo che normalmente non genera eccezioni genera un'eccezione. |
 | [CA1068: i parametri CancellationToken devono essere gli ultimi](../code-quality/ca1068.md) | Un metodo ha un parametro CancellationToken che non è l'ultimo parametro. |
 | [CA2210: Gli assembly devono avere nomi sicuri validi](../code-quality/ca2210.md) | Il nome sicuro protegge i client dal caricamento involontario di un assembly alterato. Gli assembly con nomi sicuri non devono essere distribuiti al di fuori di scenari molto limitati. Se si condividono o distribuiscono assembly non firmati correttamente, l'assembly può essere alterato, non essere caricato in Common Language Runtime oppure l'utente potrebbe avere la necessità di disabilitare la verifica nel proprio computer. |

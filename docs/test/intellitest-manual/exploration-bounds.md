@@ -8,13 +8,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 03f23aacbe95615b565dfcee54d2b620c0ae1cd9
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+author: mikejo5000
+ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091834"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169417"
 ---
 # <a name="exploration-bounds"></a>Limiti di esplorazione
 
@@ -184,6 +184,6 @@ L'impostazione **TestEmissionBranchHits** determina se IntelliTest deve solo con
 
 Il valore predefinito per questa opzione è **TestEmissionBranchHits=2**, che genera un gruppo di test più espressivo e più adatto per rilevare i futuri errori di regressione.
 
-## <a name="got-feedback"></a>Commenti?
+## <a name="got-feedback"></a>Per eventuali commenti,
 
 Pubblicare idee e richieste di funzionalità nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

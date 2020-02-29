@@ -11,12 +11,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 ms.author: zorio
 author: zoeyr
 manager: jillfra
-ms.openlocfilehash: fe6d4bd9e82950d77925dda1560b5c204633d392
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739335"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169339"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Informazioni di riferimento sullo schema del Language Pack VSIX 2,0
 
@@ -24,11 +24,11 @@ Lo schema del Language Pack VSIX fornisce informazioni di installazione localizz
 
 ## <a name="language-pack-schema"></a>Schema Language Pack
 
-L'elemento radice del file di Language Pack è `<PackageLanguagePackManifest>`, con un attributo di `Version`, che è la versione del formato Language Pack. Questo articolo descrive la versione 2,0 del formato Language Pack, specificato nel manifesto impostando l' `Version` attributo sul valore. `Version="2.0.0"` L'elemento radice contiene esattamente un elemento `<Metadata>` figlio.
+L'elemento radice del file di Language Pack è `<PackageLanguagePackManifest>`, con un attributo di `Version`, ovvero la versione del formato Language Pack. Questo articolo descrive la versione 2,0 del formato Language Pack, specificato nel manifesto impostando l'attributo `Version` sul valore `Version="2.0.0"`. L'elemento radice contiene esattamente un elemento `<Metadata>` figlio.
 
 ### <a name="packagelanguagepackmanifest-element"></a>Elemento packagelanguagepackmanifest
 
-All'interno `<PackageLanguagePackManifest>` dell'elemento deve esistere l'elemento seguente:
+All'interno dell'elemento `<PackageLanguagePackManifest>` deve esistere l'elemento seguente:
 
 |Titolo|Descrizione|
 |-----------|-----------------|
@@ -36,7 +36,7 @@ All'interno `<PackageLanguagePackManifest>` dell'elemento deve esistere l'elemen
 
 ### <a name="metadata-element"></a>Elemento Metadata
 
-All'interno `<Metadata>` dell'elemento è possibile avere gli elementi seguenti:
+All'interno dell'elemento `<Metadata>` è possibile avere gli elementi seguenti:
 
 |Titolo|Descrizione|
 |-----------|-----------------|
@@ -53,7 +53,7 @@ All'interno `<Metadata>` dell'elemento è possibile avere gli elementi seguenti:
 <?xml version="1.0" encoding="utf-8"?>
 <PackageLanguagePackManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <DisplayName>Arbol de Familia</LocalizedName>
+    <DisplayName>Arbol de Familia</DisplayName>
     <Description> Esta extensión pone control personalizado en la caja de herramientas por manejar información de familia.</Description>
     <MoreInfo> http://www.contoso.com/products/es/ArbolDeFamilia.htm</MoreInfo>
     <License>Eula.rtf</License>
@@ -65,7 +65,7 @@ All'interno `<Metadata>` dell'elemento è possibile avere gli elementi seguenti:
 
 ## <a name="see-also"></a>Vedere anche
 
-|Titolo|DESCRIZIONE|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md)|Viene illustrato come fornire supporto per l'installazione localizzata per un pacchetto VSIX.|
 |[Riferimento allo schema di estensione VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifesto VSIX descrive il contenuto di un file di distribuzione con *estensione VSIX* . Il file di distribuzione consente di installare un'estensione di Visual Studio tramite la finestra di dialogo **estensioni e aggiornamenti** .|

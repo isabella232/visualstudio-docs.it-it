@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio Office 365 Pro Plus incluso in alcune sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 4ff521651e25fd1ad73bd629a111c7f8378fbfe3
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 4f8ad514cae626e824171937cd627b110980dbca
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036737"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904152"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus nelle sottoscrizioni di Visual Studio
 
@@ -76,14 +76,15 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 - Per domande sull'IDE di Visual Studio, su Azure DevOps o su altri prodotti o servizi di Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Passaggi successivi
 Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la sottoscrizione di Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Credito singolo di Azure DevTest](vs-azure.md) Se si prevede di sviluppare applicazioni per Office, è necessario attivare la [sottoscrizione per sviluppatori di Office](vs-office-dev.md)
 
-## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](/visualstudio/)
-- [Documentazione di Azure DevOps](/azure/devops/)
-- [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)

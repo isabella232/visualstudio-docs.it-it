@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3da51c16645d0c44128b0a5fe1b19053062673c1
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: ff7e446c319a08004260125580cdace43412cdba
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633694"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169352"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 
@@ -34,8 +34,7 @@ Contiene un elemento definito dall'utente e i relativi metadati. Ogni elemento u
 ```xml
 <Item Include="*.cs"
         Exclude="MyFile.cs"
-        Remove="RemoveFile.cs"
-        Condition="'String A'=='String B'" >
+        Condition="'String A'=='String B'">
     <ItemMetadata1>...</ItemMetadata1>
     <ItemMetadata2>...</ItemMetadata2>
 </Item>
@@ -67,7 +66,7 @@ Ora è tuttavia possibile passare il metadato `Version` come un attributo, come 
 
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -80,7 +79,7 @@ Ora è tuttavia possibile passare il metadato `Version` come un attributo, come 
 |`RemoveMetadata`|Attributo facoltativo.<br /><br /> I metadati per gli elementi di origine da non trasferire agli elementi di destinazione. Tutti i metadati vengono trasferiti da un elemento di origine a un elemento di destinazione, ad eccezione dei metadati i cui nomi sono contenuti nell'elenco di nomi separati da punto e virgola. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).<br /><br /> Questo attributo è valido solo se è stato specificato per un elemento in un `ItemGroup` che si trova in un `Target`.|
 |`Update`|Attributo facoltativo. È disponibile solo per i progetti .NET Core in Visual Studio 2017 o versioni successive.<br /><br /> Consente di modificare i metadati di un file che è stato incluso usando un criterio GLOB.<br /><br /> Questo attributo è valido solo se è stato specificato per un elemento in un `ItemGroup` che non si trova in un `Target`.|
 
-### <a name="child-elements"></a>Elemento figlio
+### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
@@ -92,7 +91,7 @@ Ora è tuttavia possibile passare il metadato `Version` come un attributo, come 
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento di raggruppamento per elementi.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Gli elementi `Item` definiscono gli input nel sistema di compilazione e vengono raggruppati in raccolte di elementi in base ai relativi nomi definiti dall'utente. Queste raccolte di elementi possono essere usate come parametri per le [attività](../msbuild/msbuild-tasks.md), che a loro volta usano i singoli elementi nelle raccolte per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
 

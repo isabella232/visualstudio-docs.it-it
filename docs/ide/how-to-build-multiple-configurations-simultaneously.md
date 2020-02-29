@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4abd95c2a37366b4f6dfabe141e6418d23301d
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416767"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904087"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Procedura: Compilare più configurazioni contemporaneamente
 
@@ -24,11 +24,13 @@ ms.locfileid: "68416767"
 
 2. Tutti i progetti di Visual Basic
 
+Se una soluzione contiene un progetto di questi due tipi di progetto, la **compilazione batch** non è disponibile per tale soluzione. In tal caso, il comando non viene visualizzato nel menu **Compila** .
+
    Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>Per compilare un progetto in più configurazioni della build
 
-1. Nella barra dei menu scegliere **Compilazione** > **Compilazione batch**.
+1. Nella barra dei menu scegliere **Compilazione** > **Compilazione batch**. In alternativa, premere **Ctrl**+**Q** per aprire la casella di ricerca e cercare `Batch Build`.
 
 2. Nella colonna **Compila** selezionare le caselle di controllo per le configurazioni in cui si vuole compilare un progetto.
 

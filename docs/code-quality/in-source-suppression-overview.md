@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587446"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167624"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Non visualizzare gli avvisi di analisi codice
 
@@ -78,7 +78,7 @@ Le proprietà dell'attributo includono:
 
 - **Ambito** : destinazione in cui viene eliminato l'avviso. Se la destinazione non è specificata, viene impostata sulla destinazione dell'attributo. Gli [ambiti](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) supportati sono i seguenti:
 
-  - `module`-questo ambito evita gli avvisi rispetto a un assembly. Si tratta di un'eliminazione globale che si applica all'intero progetto.
+  - [`module`](#module-suppression-scope) -questo ambito evita gli avvisi rispetto a un assembly. Si tratta di un'eliminazione globale che si applica all'intero progetto.
 
   - `resource`-(solo[FxCop legacy](../code-quality/static-code-analysis-for-managed-code-overview.md) ) questo ambito evita gli avvisi nelle informazioni di diagnostica scritte nei file di risorse che fanno parte del modulo (assembly). Questo ambito non è letto/rispettato C#nei compilatori/VB per la diagnostica di Roslyn Analyzer, che analizza solo i file di origine.
 
@@ -174,9 +174,17 @@ Le evitazioni a livello globale sono l'unico modo per non visualizzare i messagg
 > [!NOTE]
 > `Target` contiene sempre il nome completo dell'elemento.
 
-## <a name="global-suppression-file"></a>File di eliminazione globale
+### <a name="global-suppression-file"></a>File di eliminazione globale
 
 Il file di eliminazione globale mantiene le eliminazioni che sono eliminazioni a livello globale o eliminazioni che non specificano alcuna destinazione. Ad esempio, le evitazioni per le violazioni a livello di assembly vengono archiviate in questo file. Inoltre, alcune ASP.NET vengono archiviate in questo file perché le impostazioni a livello di progetto non sono disponibili per il code-behind di un form. Un file di eliminazione globale viene creato e aggiunto al progetto la prima volta che si seleziona l'opzione **nel file di eliminazione** del progetto **del comando di eliminazione nella** finestra di **Elenco errori** .
+
+### <a name="module-suppression-scope"></a>Ambito di eliminazione del modulo
+
+È possibile disattivare le violazioni della qualità del codice per l'intero assembly usando l'ambito del **modulo** .
+
+L'attributo seguente nel file di progetto _GlobalSuppressions_ , ad esempio, eliminerà la violazione ConfigureAwait per un progetto ASP.NET Core:
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
 
 ## <a name="see-also"></a>Vedere anche
 
