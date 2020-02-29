@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a41667592b6965497f9b87514719f7d8a5a442
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
+ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776007"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181126"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Al termine dell'esecuzione del processo, **selezionare Debug** > **Connetti a processo** oppure premere **CTRL**+**ALT**+**P** in Visual Studio e usare la finestra di dialogo **Connetti a processo** per aggiungere il debugger al processo.
@@ -76,7 +76,7 @@ Per eseguire il debug di un processo .NET Core in un contenitore Docker Linux, v
    1. Fare clic su **Seleziona**.
    1. Nella finestra di dialogo **Seleziona tipo di codice** selezionare **Esegui il debug di questi tipi di codice**.
    1. Selezionare i tipi di codice di cui si vuole eseguire il debug.
-   1. Scegliere **OK**.
+   1. Selezionare **OK**.
 
 4. Selezionare **Allega**.
 
@@ -140,7 +140,7 @@ Per istruzioni più complete sul debug di applicazioni ASP.NET distribuite in II
    1. Fare clic su **Seleziona**.
    1. Nella finestra di dialogo **Seleziona tipo di codice** selezionare **Esegui il debug di questi tipi di codice**.
    1. Selezionare i tipi di codice di cui si vuole eseguire il debug.
-   1. Scegliere **OK**.
+   1. Selezionare **OK**.
 
 6. Selezionare **Allega**.
 
@@ -152,6 +152,10 @@ In alcuni casi, quando si esegue il debug in una sessione di Desktop remoto (Ser
 Se non è possibile adottare una di queste soluzioni alternative, una terza opzione consiste nel connettersi al processo eseguendo `vsjitdebugger.exe -p <ProcessId>` dalla riga di comando di Windows. È possibile determinare l'ID processo utilizzando *Tlist. exe*. Per ottenere *tlist.exe*, scaricare e installare gli strumenti di debug per Windows disponibili in [Download di WDK e WinDbg](/windows-hardware/drivers/download-the-wdk).
 
 ::: moniker range=">= vs-2019"
+
+## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>Connettersi a un processo .NET Core in esecuzione su Linux tramite SSH
+
+Per altre informazioni, vedere [eseguire il debug remoto di .NET Core in esecuzione su Linux tramite SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
 
 ## <a name="BKMK_Docker_Attach"></a>Connettersi a un processo in esecuzione in un contenitore Docker Linux
 
@@ -218,13 +222,14 @@ Per il debug di script sul lato client, è necessario abilitare il debug degli s
 
 Per selezionare rapidamente un processo in esecuzione a cui connettersi, in Visual Studio digitare **Ctrl**+**ALT**+**P**, quindi digitare la prima lettera del nome del processo.
 
-|Scenario|Metodo Debug|Nome processo|Note e collegamenti|
+|Scenario|Metodo Debug|Nome del processo|Note e collegamenti|
 |-|-|-|-|
 |Debug remoto ASP.NET 4 o 4,5 su un server IIS|USA Remote Tools e **Connetti a processo**|*w3wp.exe*|Vedere [Remote Debugging ASP.NET on a Remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|ASP.NET Core di debug remoto in un server IIS|USA Remote Tools e **Connetti a processo**|*dotnet.exe*|Per la distribuzione di app, vedere [pubblicare in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per il debug, vedere [Remote Debugging ASP.NET Core in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
+|ASP.NET Core di debug remoto in un server IIS|USA Remote Tools e **Connetti a processo**|*dotnet. exe* o *appname. exe*|Per la distribuzione di app, vedere [pubblicare in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per il debug, vedere [Remote Debugging ASP.NET Core in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Eseguire il debug di script lato client in un server IIS locale, per i tipi di app supportati |Usare **Connetti a processo**|*Chrome. exe*, *MicrosoftEdgeCP. exe*o *iexplore. exe*|È necessario abilitare il debug degli script. Per Chrome, è anche necessario eseguire Chrome in modalità di debug e selezionare il **codice Webkit** nel campo **Connetti a** .|
 |Eseguire il C#debug di un'app C++ , Visual Basic o nel computer locale|Usare il debug standard (**F5**) o **Connetti a processo**|*\<appname>.exe*|Nella maggior parte degli scenari, utilizzare il debug standard e non la **connessione al processo**.|
 |Eseguire il debug remoto di un'app desktop di Windows|Remote tools|N/D| Vedere [eseguire il debug C# remoto di un'](../debugger/remote-debugging-csharp.md) app o Visual Basic o [eseguire il debug remoto di un' C++ app](../debugger/remote-debugging-cpp.md)|
+|Eseguire il debug di .NET Core in Linux|Usare **Connetti a processo**|*dotnet.exe*|Per usare SSH, vedere [eseguire il debug remoto di .NET Core in esecuzione su Linux tramite SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Per usare un contenitore Docker Linux, vedere [connettersi a un processo in esecuzione in un contenitore Docker Linux](#BKMK_Docker_Attach).|
 |Eseguire il debug di un'app ASP.NET nel computer locale dopo avere avviato l'app senza il debugger|Usare **Connetti a processo**|*iiexpress.exe*|Questa operazione può essere utile per velocizzare il caricamento dell'app, ad esempio quando si esegue la profilatura. |
 |Eseguire il debug di altri tipi di app supportati in un processo server|Se il server è remoto, utilizzare Remote Tools e **Connetti a processo**|*Chrome. exe*, *iexplore. exe*o altri processi|Se necessario, utilizzare Monitoraggio risorse per facilitare l'identificazione del processo. Vedere [Debug remoto](../debugger/remote-debugging.md).|
 |Eseguire il debug remoto di un'app di Windows universale (UWP), OneCore, HoloLens o Internet.|Debug pacchetto dell'app installato|N/D|Vedere [eseguire il debug di un pacchetto dell'app installato](debug-installed-app-package.md) invece di usare **Connetti a processo**|
@@ -257,11 +262,11 @@ In alcuni scenari di debug locale è possibile eseguire il debug in Visual Studi
 
     1. Nella finestra di dialogo **Connetti a processo** selezionare il processo nell'elenco **Processi disponibili**.
 
-    2. Selezionare **Seleziona**.
+    2. Scegliere **Seleziona**.
 
     3. Nella finestra di dialogo **Seleziona tipo di codice** selezionare il pulsante di opzione **Esegui il debug di questi tipi di codice** e il tipo di codice per cui si è verificato il problema di connessione. Deselezionare gli altri tipi di codice.
 
-    4. Scegliere **OK**.
+    4. Selezionare **OK**.
 
     5. Nella finestra di dialogo **Connetti a processo** selezionare **Connetti**.
 
