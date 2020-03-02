@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6e4bb97cc510ceb580b28a05eb6f3b27acdd451a
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
+ms.sourcegitcommit: 2f6c6434419ac25ef166b1ccc409527cf69e6674
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580019"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78215427"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: creare una semplice C# app console in Visual Studio
 
@@ -55,7 +55,7 @@ Per prima cosa, si creerà un progetto di applicazione C#. Il tipo di progetto i
 
 ### <a name="add-a-workload-optional"></a>Aggiungere un carico di lavoro (facoltativo)
 
-Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è possibile ottenerlo aggiungendo il carico di lavoro **Sviluppo multipiattaforma .NET Core**. Ecco come fare.
+Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è possibile ottenerlo aggiungendo il carico di lavoro **Sviluppo multipiattaforma .NET Core**. Ecco come.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Opzione 1: usare la finestra di dialogo Nuovo progetto
 
@@ -327,17 +327,17 @@ Anziché affidare la gestione dell'intero codice alla classe `program`, si divid
 
 La classe `Calculator` si occuperà di gestire la maggior parte del lavoro di calcolo mentre la classe `Program` gestirà l'interfaccia utente e il lavoro di acquisizione degli errori.
 
-Ma veniamo al dunque.
+È ora possibile iniziare.
 
-1. Eliminare tutto quanto compare *dopo* il blocco di codice seguente:
+1. Eliminare tutti gli elementi nello spazio dei nomi `Calculator` tra le parentesi graffe di apertura e di chiusura:
 
     ```csharp
-
     using System;
 
     namespace Calculator
     {
-
+        
+    }
     ```
 
 1. Successivamente, aggiungere una nuova classe `Calculator`, come indicato di seguito:
