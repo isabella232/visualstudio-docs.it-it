@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: Eseguire il debug remoto di ASP.NET in un computer IIS
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: Eseguire il debug remoto di ASP.NET in Azure
+        - name: Eseguire il debug remoto di ASP.NET Core in Azure
           href: remote-debugging-azure.md
         - name: 'Eseguire il debug remoto di un progetto C# o Visual Basic'
           href: remote-debugging-csharp.md
         - name: Eseguire il debug remoto di un progetto C++
           href: remote-debugging-cpp.md
+        - name: Eseguire il debug remoto di .NET Core in Linux
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Assegnazioni delle porte del debugger remoto
           href: remote-debugger-port-assignments.md
         - name: Configurare Windows Firewall per il debug remoto
