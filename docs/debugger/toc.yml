@@ -590,9 +590,7 @@
                   items:
                     - name: Debug dei server e dei contenitori COM
                       href: com-server-and-container-debugging.md
-                    - name: Eseguire il debug di client e server COM usando il debug RPC
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
-                - name: Controllo ActiveX
+                - name: ActiveX (controllo)
                   items:
                     - name: Eseguire il debug di un controllo ActiveX
                       href: how-to-debug-an-activex-control.md
