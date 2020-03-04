@@ -3,23 +3,23 @@ title: Ruoli di amministratore con privilegi avanzati e amministratore nel porta
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Informazioni sui ruoli di amministratore con privilegi avanzati e amministratore e su come assegnare gli amministratori.
-ms.openlocfilehash: 1beda505008815b87a0de98ee597d7b5ec97693d
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
-ms.translationtype: HT
+ms.openlocfilehash: ef0ba479c099bf1e34fe871386984297b130ffd6
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000941"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234827"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Amministratori con privilegi avanzati e amministratori per i contratti di sottoscrizione di Visual Studio
 
 Esistono due diversi ruoli nel nuovo portale di amministrazione delle sottoscrizioni di Visual Studio per i clienti con contratti multilicenza. Questi ruoli sono, ad esempio, il ruolo di contatto principale/per le comunicazioni e il ruolo di gestione delle sottoscrizioni che esisteva già in VLSC.
 
-**Amministratori con privilegi elevati:** durante la configurazione iniziale di un'organizzazione il contatto principale o per le comunicazioni diventa amministratore con privilegi elevati per impostazione predefinita. Il contatto principale o per le comunicazioni può scegliere di assegnare altri amministratori con privilegi avanzati o amministratori. Un amministratore con privilegi elevati può aggiungere e rimuovere altri amministratori e sottoscrittori. Se nel sistema sono presenti più di due amministratori con privilegi elevati, è possibile eliminarli tutti tranne gli ultimi due per motivi di sicurezza.
+**Amministratori con privilegi avanzati:** Quando un'organizzazione viene configurata inizialmente, per impostazione predefinita il contatto principale o per le comunicazioni diventa un amministratore con privilegi avanzati. Il contatto principale o per le comunicazioni può scegliere di assegnare altri amministratori con privilegi avanzati o amministratori. Un amministratore con privilegi elevati può aggiungere e rimuovere altri amministratori e sottoscrittori. Se nel sistema sono presenti più di due amministratori con privilegi elevati, è possibile eliminarli tutti tranne gli ultimi due per motivi di sicurezza.
 
-**Amministratori:** un amministratore può essere assegnato solo da un amministratore con privilegi avanzati. Un amministratore può solo gestire i sottoscrittori nei contratti a lui assegnati dall'amministratore con privilegi avanzati.
+**Amministratori:** Un amministratore può essere assegnato solo da un amministratore con privilegi avanzati. Un amministratore può gestire solo i sottoscrittori nei contratti assegnati dall'amministratore con privilegi avanzati.
 
 ## <a name="assigning-administrators"></a>Assegnazione di amministratori
 Per assegnare nuovi amministratori:
@@ -27,7 +27,7 @@ Per assegnare nuovi amministratori:
 2. Fare clic sulla scheda **Manage Administrators** (Gestisci amministratori).
 3. Fare clic su **Aggiungi**.
    > [!div class="mx-imgBorder"]
-   > ![Aggiungere gli amministratori](_img/admin-roles/add-admins.png)
+   > ![Aggiungere amministratori](_img/admin-roles/add-admins.png)
 4. Completare il modulo con le informazioni del nuovo amministratore.  
    > [!div class="mx-imgBorder"]
    > ![Modulo per aggiungere un amministratore](_img/admin-roles/add-form.png)
@@ -39,6 +39,13 @@ Per assegnare nuovi amministratori:
 
 ## <a name="resources"></a>Risorse
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Vedere come [assegnare le sottoscrizioni](assign-license.md)

@@ -5,18 +5,18 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 02/25/2020
+ms.date: 03/02/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5af5f9bb35f3f98061e84201eb6d7b80478f50cc
-ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
-ms.translationtype: HT
+ms.openlocfilehash: 3e82ab35143a4987df1340fd75f0125c955e6c3d
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77611136"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235067"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -26,8 +26,9 @@ ms.locfileid: "77611136"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Version**| **Canale** | **Data di rilascio** | **Versione build** |
+| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.0 | Preview 5 | 2 marzo 2020 | 16.5.29827.131 |
 | 16.5.0 | Preview 4 | 25 febbraio 2020 | 16.5.29820.132 |
 | 16.5.0 | Preview 3 | 19 febbraio 2020 | 16.5.29814.53 |
 | 16.4.5 | Versione | 11 febbraio 2020 | 16.4.29806.167 |
@@ -46,7 +47,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 16.3.9 | Versione | 12 novembre 2019 | 16.3.29509.3 |
 | 16.4.0 | Preview 4 | 6 novembre 2019 | 16.4.29505.145 |
 | 16.3.8 | Versione | 5 novembre 2019 | 16.3.29503.13 |
-| 16.4.0 | Preview 3 | 04 novembre 2019 | 16.4.29430.225 |
+| 16.4.0 | Preview 3 | 4 novembre 2019 | 16.4.29430.225 |
 | 16.3.7 | Versione | 29 ottobre 2019 | 16.3.29424.173 |
 | 16.3.6 | Versione | 22 ottobre 2019 | 16.3.29418.71 |
 | 16.3.5 | Versione | 15 ottobre 2019 | 16.3.29411.108 |
@@ -123,7 +124,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Version**| **Canale** | **Data di rilascio** | **Versione build** |
+| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.20 | Versione | 11 febbraio 2020 | 15.9.28307.1033 |
 | 15.9.19 | Versione | 14 gennaio 2020 | 15.9.28307.1000 |
@@ -207,7 +208,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.0.11 | Versione | 13 marzo 2018 | 15.0.26228.29 |
 | 15.6.1 | Versione | 8 marzo 2018 | 15.6.27428.2002 |
 | 15.6.1 Preview 1 | Anteprima | 8 marzo 2018 | 15.6.27428.2002 |
-| 15.6.0 | Versione | 5 marzo 2018 | 15.6.27428.1 |
+| 15.6.0 | Versione | March 5, 2018 | 15.6.27428.1 |
 | 15.6.0 Preview 7 | Anteprima | 2 marzo 2018 | 15.6.27428.1 |
 | 15.6.0 Preview 6 | Anteprima | 23 febbraio 2018 | 15.6.27421.1 |
 | 15.0.10 | Versione | 21 febbraio 2018 | 15.0.26228.28 |
@@ -300,5 +301,5 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 * [Frequenza di rilascio di Visual Studio](/visualstudio/productinfo/release-rhythm/)
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
-* [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md) (Usare i parametri della riga di comando per installare Visual Studio)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
