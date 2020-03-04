@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591736"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235199"
 ---
 # <a name="features-of-visual-studio"></a>Funzionalità di Visual Studio
 
@@ -24,13 +24,13 @@ Il programma di installazione modulare di Visual Studio consente di scegliere e 
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ Per altre informazioni sull'installazione di Visual Studio nel sistema, vedere [
 
 Visual Studio offre un gruppo di strumenti che consentono di creare facilmente applicazioni abilitate per il cloud con tecnologia Microsoft Azure. È possibile gestire la configurazione, la compilazione, il debug, l'inserimento in pacchetti e la distribuzione di applicazioni e servizi in Microsoft Azure direttamente dall'IDE. Per ottenere gli strumenti e i modelli di progetto di Azure, selezionare il carico di lavoro **Sviluppo di Azure** quando si installa Visual Studio.
 
-![Carico di lavoro Sviluppo di Azure](../data-tools/media/azure-development-workload.png)
+![Carico Sviluppo di Azure](../data-tools/media/azure-development-workload.png)
 
 ::: moniker range="vs-2017"
 
@@ -84,7 +84,7 @@ Per altre informazioni, vedere [Strumenti Web moderni](https://visualstudio.micr
 
 - Compilare giochi 2D e 3D in C# tramite [Visual Studio Tools per Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
-- Compilare app C++ native per dispositivi iOS, Android e Windows. Condividere il codice comune nelle librerie create per iOS, Android e Windows usando [C++ per lo sviluppo multipiattaforma](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
+- Compilare app C++ native per dispositivi iOS, Android e Windows. Condividere il codice comune nelle librerie create per iOS, Android e Windows usando [C++ per lo sviluppo multipiattaforma](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
 - Distribuire, testare ed eseguire il debug di app Android con l'[emulatore Android](../cross-platform/visual-studio-emulator-for-android.md).
 
@@ -138,6 +138,6 @@ Per altre informazioni sull'estensione di Visual Studio, vedere [Estendi Visual 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
+- [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Novità di Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
 - [Novità di Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

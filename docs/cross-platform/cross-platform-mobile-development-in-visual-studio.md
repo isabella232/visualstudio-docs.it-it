@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c7f40f656b533949748a7eb2ab88ea3d2b1d5923
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916870"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234982"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo per dispositivi mobili multipiattaforma in Visual Studio
 
@@ -56,11 +56,11 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  A seconda della complessità della progettazione delle app, è possibile provare a compilare l'app con i modelli *Xamarin.Forms* nel gruppo di modelli di progetto **App per dispositivi mobili** . Xamarin.Forms è un Toolkit dell'interfaccia utente che consente di creare un'unica interfaccia da condividere tra Android, iOS e Windows Phone.  Quando si compila una soluzione Xamarin.Forms, si otterrà un'app per Android, un'app per iOS e un'app per Windows. Per altri dettagli, vedere [Informazioni sullo sviluppo per dispositivi mobili con Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) e la [documentazione di Xamarin.Forms](/xamarin/xamarin-forms/).
 
-#### <a name="ShareHTML"></a> Condividere il codice tra app Android, iOS e Windows
+#### <a name="ShareHTML"></a>Condividere il codice tra app per Android, iOS e Windows
 
  Se non si usa Xamarin.Forms e si sceglie di progettare singolarmente per ogni piattaforma, è possibile condividere la maggior parte del codice non di interfaccia utente tra progetti di piattaforma (Android, iOS e Windows). Sono incluse le logiche di business, l'integrazione cloud, l'accesso ai database e qualsiasi altro codice che faccia riferimento a .NET Framework. L'unico codice che non è possibile condividere è quello che fa riferimento a una specifica piattaforma.
 
- ![Condividi il codice tra l'interfaccia utente di Windows, iOs e Android](../cross-platform/media/sharecode.png "ShareCode")
+ ![Condividere il codice tra le interfacce utente di Windows, iOS e Android](../cross-platform/media/sharecode.png "ShareCode")
 
  È possibile condividere il codice usando un progetto condiviso, un progetto della Libreria di classi portabile o entrambi. Alcuni codici potrebbero essere più adatti a un progetto condiviso, mentre altri a un progetto della Libreria di classi portabile.
 
@@ -140,12 +140,12 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 |**Altre informazioni**|
 |--------------------|
-|[Scarica Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Installare lo sviluppo di app per dispositivi mobili multipiattaforma conC++](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[Scarica Visual Studio](https://visualstudio.microsoft.com/downloads/) (VisualStudio.com)|
+|[Installare lo sviluppo di app per dispositivi mobili multipiattaforma conC++](/cpp/cross-platform/install-visual-cpp-for-cross-platform-mobile-development)|
 |[Altre informazioni sull'uso C++ di per la destinazione di più piattaforme](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Installare gli elementi necessari, quindi creare un'applicazione di attività nativa per Android](create-an-android-native-activity-app.md)|
+|[Installare gli elementi necessari, quindi creare un' C++ applicazione di attività nativa per Android](/cpp/cross-platform/create-an-android-native-activity-app)|
 |[Informazioni sulla condivisione del codice C++ con le app Android e Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Esempi di sviluppo di app per dispositivi mobili multipiattaforma perC++](cross-platform-mobile-development-examples.md)|
+|[Esempi di sviluppo di app per dispositivi mobili multipiattaforma perC++](/cpp/cross-platform/cross-platform-mobile-development-examples)|
 
 <a name="Unity"></a>
 
