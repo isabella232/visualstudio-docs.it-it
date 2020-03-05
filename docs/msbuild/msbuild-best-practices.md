@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3605109519dccaafa1367464bd8c2385df5e93e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633421"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263149"
 ---
 # <a name="msbuild-best-practices"></a>Procedure consigliate per MSBuild
 
@@ -30,7 +30,7 @@ Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni
 </MyProperty>
 ```
 
-- Evitare i caratteri jolly quando si selezionano elementi. Al contrario, specificare i file in modo esplicito. Ciò semplifica l'individuazione degli errori che possono verificarsi quando si aggiungono o si eliminano file.
+- In generale, evitare l'uso di caratteri jolly quando si selezionano gli elementi. Al contrario, specificare i file in modo esplicito. Questo perché nella maggior parte dei tipi di progetto, MSBuild espande i caratteri jolly in diversi momenti, ad esempio quando si aggiungono o rimuovono elementi, il che può causare un comportamento imprevisto. Un'eccezione a questo si verifica nei progetti di tipo .NET Core SDK, che consentono di elaborare correttamente i caratteri jolly.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc50379563a85ce9c76f3d45b9d70c1f784eaf5a
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631250"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263123"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -47,17 +47,17 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 
  Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`AssemblyName`|Sono obbligatori sia l'attributo `AssemblyName` che l'attributo `AssemblyFile`.<br /><br /> Nome dell'assembly da caricare. L'attributo `AssemblyName` accetta assembly con nome sicuro, anche se non è obbligatorio un nome sicuro. L'uso di questo attributo equivale a caricare un assembly usando il metodo <xref:System.Reflection.Assembly.Load%2A> in .NET.<br /><br /> Non è possibile usare questo attributo se viene usato l'attributo `AssemblyFile`.|
 |`AssemblyFile`|È obbligatorio l'attributo `AssemblyName` o l'attributo `AssemblyFile`.<br /><br /> Percorso del file dell'assembly. Questo attributo accetta percorsi completi o percorsi relativi. I percorsi relativi sono relativi alla directory del file di progetto o file di destinazioni in cui viene dichiarato l'elemento `UsingTask`. L'uso di questo attributo equivale a caricare un assembly usando il metodo <xref:System.Reflection.Assembly.LoadFrom%2A> in .NET.<br /><br /> Non è possibile usare questo attributo se viene usato l'attributo `AssemblyName`.|
-|`TaskFactory`|Attributo facoltativo.<br /><br /> Specifica la classe nell'assembly responsabile della generazione di istanze del nome `Task` specificato.  L'utente può specificare anche un elemento figlio `TaskBody` che la factory delle attività riceve e usa per generare l'attività. I contenuti dell'elemento `TaskBody` sono specifici per la factory delle attività.|
+|`TaskFactory`|Attributo facoltativo.<br /><br /> Specifica la classe nell'assembly responsabile della generazione di istanze del nome `Task` specificato.  L'utente può specificare anche un elemento figlio `Task` che la factory delle attività riceve e usa per generare l'attività. I contenuti dell'elemento `Task` sono specifici per la factory delle attività.|
 |`TaskName`|Attributo obbligatorio.<br /><br /> Il nome dell'attività a cui fare riferimento da un assembly. In caso di ambiguità, questo attributo deve specificare sempre gli spazi dei nomi completi. In caso di ambiguità, MSBuild sceglie una corrispondenza arbitraria, con potenziali risultati imprevisti.|
 |`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Elemento figlio
+### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
@@ -70,7 +70,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
  È possibile fare riferimento alle variabili di ambiente, alle proprietà della riga di comando, alle proprietà a livello di progetto e agli elementi a livello di progetto negli elementi `UsingTask` inclusi nel file di progetto sia direttamente che tramite un file di progetto importato. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
@@ -90,9 +90,9 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
               ...
 </ParameterGroup>
-       <TaskBody>
+       <Task>
       ... Task factory-specific data ...
-       </TaskBody>
+       </Task>
 </UsingTask>
 ```
 

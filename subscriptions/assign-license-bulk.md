@@ -3,21 +3,20 @@ title: Assegnare licenze a gruppi di utenti per sottoscrizioni di Visual Studio 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/26/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o i gruppi di Microsoft Azure Active Directory
-ms.openlocfilehash: ae16c64f90f90b820332e0ee7f1753a8dd6e5c32
-ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
+ms.openlocfilehash: c8ea294f0e4b2b4deae18e2f5644bf08fff0dfc2
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77652820"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263344"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
 
 Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la funzionalità di aggiunta in blocco o, se l'organizzazione utilizza Microsoft Azure Active Directory (Azure AD), è possibile utilizzare Azure AD gruppi. In questo articolo viene illustrato il processo per entrambe le opzioni. 
-
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Utilizzare Aggiunta bulk per assegnare sottoscrizioni
 1. Accedere al portale di amministrazione delle sottoscrizioni di Visual Studio all'https://manage.visualstudio.com.
@@ -59,19 +58,16 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
    > [!div class="mx-imgBorder"]
    > ![Messaggio di conferma se il caricamento di più sottoscrittori ha esito positivo](media/bulk-add-template-success.png)
 
-## <a name="use-azure-ad-groups-to-assign-subscriptions"></a>Usare gruppi di Azure AD per assegnare sottoscrizioni 
-L'uso di questa funzionalità consente di mantenere più facilmente le assegnazioni di sottoscrizione. È possibile aggiungere Azure AD gruppi di sicurezza nel portale di amministrazione delle sottoscrizioni, in modo da garantire che a tutti gli utenti del gruppo venga assegnata una sottoscrizione. Per semplificare, quando gli utenti lasciano l'organizzazione e vengono rimossi dalla Azure AD, viene rimosso anche l'accesso alle sottoscrizioni.
-
-> [!NOTE]
-> Questa funzionalità viene distribuita in fasi, quindi potrebbe non essere disponibile immediatamente per l'organizzazione.   
+## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Usare gruppi di Azure Active Directory per assegnare sottoscrizioni 
+L'uso di questa funzionalità consente di mantenere più facilmente le assegnazioni di sottoscrizione. È possibile aggiungere Azure Active Directory gruppi di sicurezza nel portale di amministrazione delle sottoscrizioni, in modo da garantire che a tutti gli utenti del gruppo venga assegnata una sottoscrizione. Per semplificare, quando gli utenti lasciano l'organizzazione e vengono rimossi dalla Azure Active Directory, viene rimosso anche l'accesso alle sottoscrizioni. 
 
 > [!IMPORTANT]
 > Per l'utilizzo di gruppi di Azure AD per l'aggiunta di sottoscrittori, si applicano le limitazioni seguenti:
 > - I gruppi devono contenere almeno un membro.  I gruppi vuoti non sono supportati.
-> - I gruppi devono avere meno di 1.000 utenti.
-> - Tutti gli utenti devono trovarsi nel primo livello del gruppo.  I gruppi annidati non sono supportati.
-> - Sono supportati solo i contratti attendibili.
-> - Tutti i membri del gruppo devono avere un indirizzo di posta elettronica associato all'account Azure AD.
+> - I gruppi devono avere meno di 1.000 utenti 
+> - Tutti gli utenti devono trovarsi nel primo livello del gruppo.  I gruppi annidati non sono supportati
+> - Sono supportati solo i contratti Trusted
+> - Tutti i membri del gruppo devono avere un indirizzo di posta elettronica associato all'account di Azure AD
 
 
 1. Accedere al portale di amministrazione delle sottoscrizioni di Visual Studio all' [https://manage.visualstudio.com](https://manage.visualstudio.com).
@@ -104,7 +100,7 @@ R: No, tutti gli utenti del gruppo ricevono la stessa sottoscrizione.
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>D: è possibile modificare i dettagli del Sottoscrittore dei singoli utenti aggiunti in un gruppo di Azure AD?  
 R: No. per modificare le informazioni per un singolo Sottoscrittore, è necessario rimuoverle dal gruppo di sicurezza Azure AD e assegnare loro una sottoscrizione singolarmente.  
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>D: è stato aggiunto un utente al gruppo di sicurezza Azure AD, ma non è stato aggiunto nel portale di amministrazione delle sottoscrizioni e non è presente una sottoscrizione. non vengono visualizzati?  
+### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>D: è stato aggiunto un utente al gruppo di sicurezza Azure AD, ma non è stato aggiunto nel portale di amministrazione delle sottoscrizioni e non è presente una sottoscrizione. relativa ricerca  
 R: a seconda del modo in cui l'organizzazione ha configurato Azure AD, è possibile che vengano visualizzati ritardi fino a 24 ore prima che l'utente venga aggiunto. Se la durata è superiore a 24 ore, [contattare il supporto tecnico](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
 
@@ -116,7 +112,5 @@ R: a seconda del modo in cui l'organizzazione ha configurato Azure AD, è possib
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Se è necessario aggiungere solo uno o due sottoscrittori,  vedere [Aggiungere singoli utenti](assign-license.md)
-- Per ulteriori informazioni, vedere contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-
+- Richiesta di assistenza contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 

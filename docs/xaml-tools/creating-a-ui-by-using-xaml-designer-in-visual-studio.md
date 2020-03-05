@@ -1,6 +1,6 @@
 ---
 title: Panoramica della finestra di progettazione XAML
-ms.date: 07/31/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -12,12 +12,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 912468cf95b7b5a4b611fb568048c2ba62cc635d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2a0e25779df1e0b91a69518dc2257119e33cca4
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593001"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263355"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML
 
@@ -25,13 +25,16 @@ La finestra di progettazione XAML in Visual Studio e Blend per Visual Studio for
 
 Per gli utenti avanzati è anche possibile [personalizzare la finestra di progettazione XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
+> [!NOTE]
+> Novell. Forms non supporta una finestra di progettazione XAML. Per visualizzare le interfacce utente XAML di Novell. Forms e modificarle mentre l'app è in esecuzione, usare il ricaricamento a caldo di XAML per Novell. Forms. Per ulteriori informazioni, vedere la pagina [relativa al ricaricamento a caldo di XAML per Novell. Forms (anteprima)](/xamarin/xamarin-forms/xaml/hot-reload/) .
+
 ## <a name="xaml-designer-workspace"></a>Area di lavoro della finestra di progettazione XAML
 
 L'area di lavoro della finestra di progettazione XAML è costituita da alcuni elementi dell'interfaccia visiva, tra cui la *tavola da disegno* (ovvero l'area di progettazione visiva), l'editor XAML, la finestra Struttura documento (finestra Oggetti e sequenza temporale in Blend per Visual Studio) e la finestra Proprietà. Per aprire la finestra di progettazione XAML, fare clic con il pulsante destro del mouse su un file XAML in **Esplora soluzioni** , quindi scegliere **Progettazione visualizzazioni**.
 
 La finestra di progettazione XAML include una visualizzazione XAML e una visualizzazione Progettazione sincronizzata del markup XAML dell'app sottoposto a rendering. Con un file XAML aperto in Visual Studio o Blend per Visual Studio, è possibile spostarsi tra la visualizzazione Progettazione e la visualizzazione XAML mediante le schede **Progettazione** e **XAML**. È possibile usare il pulsante **Scambia riquadri** nella ![finestra di progettazione XAML](media/swap-panes.PNG) per visualizzare in primo piano alternativamente la tavola da disegno o l'editor XAML.
 
-### <a name="design-view"></a>Progettazione (visualizzazione)
+### <a name="design-view"></a>Visualizzazione progettazione
 
 Nella visualizzazione Progettazione, la finestra che contiene la tavola da disegno è la finestra attiva e può essere utilizzata come area di lavoro primaria. Permette di progettare visivamente una pagina nell'app aggiungendo, disegnando o modificando elementi. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
 
@@ -87,7 +90,7 @@ Visualizza o nasconde la griglia di allineamento che mostra le griglie. Le grigl
 
 **Attiva/Disattiva allineamento alla griglia**
 
-Se è abilitato l'**allineamento alla griglia**, quando si trascina un elemento sulla tavola da disegno l'elemento tende ad allinearsi alle linee orizzontali e verticali più vicine.
+Se il **blocco sulla griglia** è abilitato, un elemento tende a allinearsi con le griglie orizzontali e verticali più vicine quando lo si trascina sulla tavola da disegno.
 
 **Attiva/Disattiva sfondo tavola da disegno**
 
@@ -113,7 +116,7 @@ La finestra Struttura documento in Visual Studio è simile alla finestra [Oggett
 
 - Visualizzare la struttura gerarchica di tutti gli elementi sulla tavola da disegno.
 
-- Selezionare gli elementi in modo da poterli modificare, ad esempio spostarli nella gerarchia o impostarne le proprietà nella finestra Proprietà. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+- Selezionare gli elementi in modo da poterli modificare. Ad esempio, è possibile spostarli nella gerarchia o impostarne le proprietà nella Finestra Proprietà. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 - Creare e modificare modelli per gli elementi che sono controlli.
 
@@ -124,7 +127,7 @@ Per visualizzare la finestra Oggetti e sequenza temporale in Blend per Visual St
 
 ![Finestra Struttura documento in Visual Studio](media/document-outline-window.png)
 
-La visualizzazione principale nella finestra Struttura documento/Oggetti e sequenza temporale mostra la gerarchia di un documento in una struttura ad albero. È possibile usare la natura gerarchica della struttura documento per esaminare il documento con diversi livelli di dettaglio e per bloccare e nascondere gli elementi singolarmente o in gruppo. Le opzioni della finestra Struttura documento/Oggetti e sequenza temporale sono le seguenti:
+La visualizzazione principale nella finestra Struttura documento/Oggetti e sequenza temporale mostra la gerarchia di un documento in una struttura ad albero. È possibile usare la natura gerarchica della struttura documento per esaminare il documento con diversi livelli di dettaglio e per bloccare e nascondere gli elementi singolarmente o in gruppo. Nella finestra Struttura documento/Oggetti e sequenza temporale sono disponibili le opzioni seguenti:
 
 **Mostra/Nascondi**
 
