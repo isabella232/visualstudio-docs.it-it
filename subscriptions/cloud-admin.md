@@ -3,15 +3,15 @@ title: Configurazione degli amministratori per le sottoscrizioni mensili | Micro
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/02/2020
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Configurazione degli amministratori per le sottoscrizioni mensili
-ms.openlocfilehash: d9ae6f8aac48b9d54b851d543a72fd98854c1131
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: a5d7c6e9442efd70ea3e7c2b7e7da4239e226aa2
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235212"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78289841"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configurare gli amministratori per le sottoscrizioni mensili di Visual Studio
 
@@ -27,20 +27,28 @@ Dopo aver acquistato le sottoscrizioni, è possibile visitare il [portale di amm
 
 Il proprietario della sottoscrizione di Azure usato per acquistare le sottoscrizioni mensili può anche assegnare altri amministratori.
 
-## <a name="add-administrators"></a>Aggiungere amministratori
+## <a name="add-administrators"></a>Aggiungi amministratori
 
 Per aggiungere gli amministratori:
 
 1. Connettersi al portale di Azure all'indirizzo [portal.azure.com](https://portal.azure.com).
 2. Accedere con l'account usato per acquistare le sottoscrizioni mensili di Visual Studio.
-3. Nel riquadro di spostamento di sinistra scorrere verso il basso su **Gestione costi + Fatturazione**.
+3. In **servizi di Azure**scegliere **Gestione costi e fatturazione**.
+   > [!div class="mx-imgBorder"]
+   > ![scegliere Gestione costi e fatturazione in servizi di Azure](_img/cloud-admin/azure-cost-billing.png)
 4. Nell'elenco **Sottoscrizioni personali** scegliere la sottoscrizione di Azure usata per effettuare l'acquisto.
-5. Fare clic su **Controllo dell'accesso** nella parte superiore dell'elenco nel riquadro di spostamento di sinistra.
+   > [!div class="mx-imgBorder"]
+   > ![scegliere la sottoscrizione](_img/cloud-admin/subscription-list.png)
+5. Fare clic su **controllo di accesso (IAM)** , che si trova nella parte superiore dell'elenco nel riquadro di spostamento a sinistra.
 6. Fare clic sulla scheda **Aggiungi** nella parte superiore della pagina.
 7. Fare clic su **Aggiungi assegnazione ruolo**.
+   > [!div class="mx-imgBorder"]
+   > ![scegliere controllo di accesso, Aggiungi, Aggiungi assegnazione ruolo](_img/cloud-admin/access-control-add.png)
 8. Nel riquadro a destra fare clic sull'elenco a discesa **Ruolo** nella parte superiore del riquadro, scorrere verso il basso e selezionare **Amministratore Accesso utenti**.
 9. Nell'elenco di utenti scorrere verso il basso fino all'utente che si vuole impostare come amministratore e selezionarlo. 
-10. Fare clic su **Salva**.
+   > [!div class="mx-imgBorder"]
+   > ![scegliere ruolo, amministratore accesso utenti](_img/cloud-admin/add-role-user-access-admin.png)
+10. Fare clic su **Save**.
 11. Fare clic sulla scheda **Assegnazioni ruolo** per verificare che l'utente selezionato sia ora visualizzato come Amministratore Accesso utenti.
 
 Il nuovo amministratore può ora accedere al portale di [Amministrazione](https://manage.visualstudio.com), selezionare la stessa sottoscrizione di Azure usata per acquistare le sottoscrizioni mensili dall'elenco nell'angolo superiore sinistro della pagina e iniziare a gestire tali sottoscrizioni.
