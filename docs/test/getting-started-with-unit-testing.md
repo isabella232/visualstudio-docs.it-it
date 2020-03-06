@@ -1,6 +1,6 @@
 ---
 title: Introduzione agli unit test
-ms.date: 02/13/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 90c3cbdee722c4cf12c515f06659cc03f3179e1e
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279327"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78289854"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
@@ -22,7 +22,7 @@ Visual Studio consente di definire ed eseguire unit test per mantenere l'integri
 
 ## <a name="create-unit-tests"></a>Creare unit test
 
-Questa sezione descrive a livello generale come creare un progetto di unit test.
+In questa sezione viene descritto come creare un progetto unit test.
 
 1. Aprire il progetto da testare in Visual Studio.
 
@@ -72,7 +72,7 @@ Questa sezione descrive a livello generale come creare un progetto di unit test.
 
 1. Aggiungere codice al metodo di unit test.
 
-   Per un progetto di test MSTest o NUnit, ad esempio, è possibile usare il codice seguente.
+   Per un progetto MSTest, ad esempio, è possibile usare il codice seguente.
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,8 +101,42 @@ Questa sezione descrive a livello generale come creare un progetto di unit test.
    }
    ```
 
+   In alternativa, per un progetto NUnit, è possibile usare il codice seguente.
+
+   ```csharp
+   using using NUnit.Framework;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class Tests
+      {
+         private const string Expected = "Hello World!";
+
+         [SetUp]
+         public void Setup()
+         {
+         }
+         [Test]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
+
 > [!TIP]
-> Per una procedura più dettagliata per la creazione di unit test, vedere [Creare ed eseguire unit test per codice gestito](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> Per altri dettagli sulla creazione di unit test, vedere [creare ed eseguire unit test per codice gestito](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Eseguire unit test
 
