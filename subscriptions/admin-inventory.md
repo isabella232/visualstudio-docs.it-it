@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Informazioni sulla responsabilità degli amministratori di eseguire gli inventari di pre-produzione
-ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 4dec93101cb7399da3cd493af38c0559f0ed9dee
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476735"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894370"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario dell'ambiente di preproduzione
 Le sottoscrizioni di Visual Studio semplificano la gestione degli asset basandosi sul conteggio degli utenti piuttosto che dei dispositivi.
@@ -29,6 +29,12 @@ Ecco alcuni modi per semplificare la creazione dell'inventario dell'ambiente di 
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Condizioni dei contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle responsabilità degli amministratori:
 - [Responsabilità degli amministratori](admin-responsibilities.md)
@@ -36,9 +42,5 @@ Altre informazioni sulle responsabilità degli amministratori:
 - [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)
 - Usare [Utilizzo massimo](maximum-usage.md) per tenere traccia degli impegni di acquisto
 
-## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 
