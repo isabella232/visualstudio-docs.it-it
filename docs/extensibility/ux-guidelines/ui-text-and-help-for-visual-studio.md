@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c0477a0e1994e9c3b94df13ace4c1f3b4df51039
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748959"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409099"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Testo dell'interfaccia utente e guida per Visual Studio
 ## <a name="BKMK_UITextAndTerminology"></a>Testo e terminologia dell'interfaccia utente
@@ -35,7 +35,7 @@ ms.locfileid: "72748959"
 
 ### <a name="usage-patterns-for-ui-text"></a>Modelli di utilizzo per il testo dell'interfaccia utente
 
-#### <a name="title-bar-text"></a>Testo della barra del titolo
+#### <a name="title-bar-text"></a>Testo per la barra del titolo
  Il testo della barra del titolo deve corrispondere al comando che ha generato l'interfaccia utente.
 
 #### <a name="instructional-text-helper-text"></a>Testo istruttivo (testo Helper)
@@ -155,14 +155,14 @@ ms.locfileid: "72748959"
 
 ### <a name="common-terminology"></a>Terminologia comune
 
-|Termine|Descrizione|Commento|
+|Termine|Spiegazione|Comment|
 |----------|-----------------|-------------|
 |Accesso/disconnessione|Verbi usati in sinonimo con il Web per la rappresentazione dell'autenticazione in una proprietà Web. Nei client viene usata una sola volta come concetto di primo livello per l'accesso e la disconnessione dell'IDE, che rappresenta un'identità di primo livello che fornisce funzionalità di livello superiore, ad esempio roaming e licenze che non sono disponibili con tutte le altre connessioni.|L'utente IDE è l'unica funzionalità che deve rappresentare un verbo di accesso/disconnessione, perché rappresenta l'utente IDE di primo livello.|
 |Connetti/Disconnetti|Usare in posizioni in cui una funzionalità gestisce una singola connessione a un servizio online.|Esplora server, in cui è possibile avere una sola connessione di Azure attiva alla volta, è un esempio di connessione/disconnessione.|
 |Aggiungi/Rimuovi|Non distruttivo. Usare quando si aggiunge o si rimuove un elemento da un elenco.|La finestra di dialogo elenco Server gestione connessione TFS è un esempio di aggiunta/rimozione.|
-|Eliminazione|Distruttiva. Utilizzare solo quando l'elemento da rimuovere verrà rimosso definitivamente o eliminato dal disco.|"Delete" richiede in genere un prompt se il risultato è l'eliminazione di un file dal disco.|
+|Delete|Distruttiva. Utilizzare solo quando l'elemento da rimuovere verrà rimosso definitivamente o eliminato dal disco.|"Delete" richiede in genere un prompt se il risultato è l'eliminazione di un file dal disco.|
 
-## <a name="error-messages"></a>Messaggi di errore
+## <a name="error-messages"></a>messaggi di errore
 
 ### <a name="overview"></a>Panoramica
  Si verificano errori. L'impostazione di limitazioni sulle operazioni che l'utente può eseguire è un primo passaggio ragionevole nella prevenzione dei messaggi di errore evitabili. Tuttavia, quando si verifica un errore, un messaggio di errore ben scritto può andare a lungo per attenuare il problema. I messaggi di errore sono probabilmente uno dei tipi più importanti di notifica che l'utente vede, perché sono sincroni e indicano un problema che deve essere risolto. I messaggi di errore scritti in modo non corretto lasciano gli utenti da soli a decidere la cause degli errori e le possibili soluzioni.
@@ -253,11 +253,11 @@ ms.locfileid: "72748959"
 
 ### <a name="error-message-examples"></a>Esempi di messaggi di errore
 
-|Good|Non valido|
+|Buone|Cattivo|
 |----------|---------|
-|"Il numero di chiamate non è più disponibile nel servizio. Verificare il numero e la connessione o la connessione 0 per l'operatore ".|-"Errore (449): numero non valido"<br />-"Errore di eccezione non gestita indica che l'operazione è stata completata correttamente".<br /><br /> ![Messaggio di errore non valido in Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog ")|
+|"Il numero di chiamate non è più disponibile nel servizio. Verificare il numero e la connessione o la connessione 0 per l'operatore ".|-"Errore (449): numero non valido"<br />-"Errore di eccezione non gestita indica che l'operazione è stata completata correttamente".<br /><br /> ![Messaggio di errore non valido in Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog")|
 
-## <a name="accessing-help"></a>Accesso alla guida
+## <a name="accessing-help"></a>Accesso alla Guida
 
 ### <a name="overview"></a>Panoramica
  Oltre alla documentazione di MSDN, un utente di Visual Studio dispone di diversi punti di accesso che assistono l'utente nell'interfaccia utente. Per assicurarsi che questi punti di accesso siano costantemente disponibili, i team di funzionalità devono avvalersi del sistema di guida offerto dall'ambiente. Questi punti di accesso sono:
@@ -272,7 +272,7 @@ ms.locfileid: "72748959"
 
 - **Pulsanti della Guida dell'interfaccia utente** (deprecato). Indicatore visibile nella barra del titolo che consente di accedere all'argomento della Guida sensibile al contesto.
 
-### <a name="text"></a>Testo
+### <a name="text"></a>Text
 
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>Testo didattico e supplementare nelle finestre di dialogo
  Nelle finestre di dialogo che supportano attività complesse, potrebbe essere necessario fornire il testo di istruzioni all'interno dell'interfaccia utente, spesso nella parte superiore della finestra di dialogo o nei controlli complessi. Per informazioni dettagliate sulla scrittura dello stile, vedere [testo e terminologia dell'interfaccia utente](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) .
@@ -288,7 +288,7 @@ ms.locfileid: "72748959"
 
 ### <a name="interactive-help-mechanisms"></a>Meccanismi di guida interattiva
 
-#### <a name="f1-help"></a>F1 Guida
+#### <a name="f1-help"></a>Guida sensibile al contesto
  La Guida sensibile al contesto è obbligatoria in un editor o in un'area di progettazione, ma non in un'altra posizione nell'ambiente Visual Studio.
 
 #### <a name="hyperlinks-to-help-topics"></a>Collegamenti ipertestuali per gli argomenti della Guida
@@ -300,9 +300,9 @@ ms.locfileid: "72748959"
 ##### <a name="dialogs-created-through-the-environment"></a>Finestre di dialogo create tramite l'ambiente
  Molte finestre di dialogo della shell vengono create tramite la funzione **VBDialogBoxParam** . Questa funzione condivisa è stata aggiornata per **facilitare lo stato** di trasferimento del pulsante? dalla finestra di dialogo alla **?** mantenendo un'architettura con compatibilità con le versioni precedenti ed estendibile.
 
- In particolare, la funzione **VBDialogBoxParam** esamina il modello di finestra di dialogo per un pulsante il cui ID è **IDHELP** (9) o label è **Help** o **& Help**. Se viene trovato un pulsante della guida, questo viene nascosto e lo stile **WS_EX_CONTEXTHELP** viene aggiunto alla finestra di dialogo, che inserisce il **?** pulsante nella barra del titolo della finestra di dialogo.
+ In particolare, la funzione **VBDialogBoxParam** esamina il modello di finestra di dialogo per un pulsante il cui ID è **IDHELP** (9) o label è **Help** o **& Help**. Se viene trovato un pulsante della guida, questo viene nascosto e lo stile del **WS_EX_CONTEXTHELP** viene aggiunto alla finestra di dialogo, che inserisce il **?** pulsante nella barra del titolo della finestra di dialogo.
 
- Quando viene creata, la finestra di dialogo viene spostata su uno stack e viene richiamata la finestra di dialogo con una procedura di finestra di dialogo di pre-elaborazione denominata **DialogPreProc**. Quando **?** si fa clic sul pulsante, viene inviato un **WM_SYSCOMMAND** di **SC_CONTEXTHELP** alla finestra di dialogo. Il **DialogPreProc** acquisisce questo comando e lo modifica in un messaggio **WM_HELP** , che viene passato al processo originale della finestra di dialogo.
+ Quando viene creata, la finestra di dialogo viene spostata su uno stack e viene richiamata la finestra di dialogo con una procedura di finestra di dialogo di pre-elaborazione denominata **DialogPreProc**. Quando **?** si fa clic sul pulsante, viene inviato un **WM_SYSCOMMAND** di **SC_CONTEXTHELP** alla finestra di dialogo. Il **DialogPreProc** acquisisce questo comando e lo modifica in un messaggio di **WM_HELP** , che viene passato alla procedura originale della finestra di dialogo.
 
  Per la maggior parte delle finestre di dialogo create dall'ambiente è presente un pulsante? nella finestra di dialogo. Quando viene visualizzata la finestra di dialogo, il pulsante? è nascosto automaticamente e solo il **?** il pulsante funziona. Se il **?** il pulsante viene mai rimosso o modificato in Windows. questa soluzione consente di tornare rapidamente ai pulsanti della guida originali.
 
@@ -376,7 +376,7 @@ INT_PTR CALLBACK DialogPreProc(HWND hwndDlg, UINT uMsg,
 ```
 
 ##### <a name="help-buttons-in-managed-code"></a>Pulsanti della guida nel codice gestito
- L'override del comportamento predefinito del pulsante della guida della barra del titolo della finestra è facile nel codice gestito. Di seguito è riportata un'applicazione demo completa che illustra questo comportamento. In sostanza, è necessario eseguire l'override del metodo **WndProc** del modulo e quindi attivare le richieste di supporto F1 quando viene intercettato un messaggio **SC_CONTEXTHELP** .
+ L'override del comportamento predefinito del pulsante della guida della barra del titolo della finestra è facile nel codice gestito. Di seguito è riportata un'applicazione demo completa che illustra questo comportamento. In sostanza, è necessario eseguire l'override del metodo **WndProc** del modulo e quindi attivare le richieste di supporto F1 quando viene intercettato un messaggio di **SC_CONTEXTHELP** .
 
 ```
 using System;
