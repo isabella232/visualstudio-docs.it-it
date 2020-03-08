@@ -1,5 +1,5 @@
 ---
-title: Espressioni nel Debugger | Microsoft Docs
+title: Espressioni nel debugger | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158487"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78406324"
 ---
 # <a name="expressions-in-the-debugger"></a>Espressioni nel debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
