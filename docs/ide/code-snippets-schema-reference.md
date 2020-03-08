@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585431"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410139"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -104,13 +104,13 @@ Di seguito è riportata la struttura dell'elemento Code:
 
 È necessario specificare un valore di testo. Il testo specifica il codice, insieme ai valori letterali e agli oggetti, che è possibile usare in caso di inserimento di questo frammento di codice in un file di codice.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 Sono disponibili tre attributi per l'elemento Code:
 
-- L'attributo **Language** -  _(obbligatorio)_ specifica il linguaggio del frammento di codice. Il valore può essere uno dei seguenti:
+- L'attributo **Language** -  _(obbligatorio)_ specifica il linguaggio del frammento di codice. I possibili valori sono i seguenti:
 
-   |Valore|Descrizione|
+   |valore|Descrizione|
    |-----|-----------|
    |`VB`|Identifica un frammento di codice di Visual Basic.|
    |`CSharp`|Identifica un frammento di codice di C#.|
@@ -121,9 +121,9 @@ Sono disponibili tre attributi per l'elemento Code:
    |`SQL`|Identifica un frammento di codice SQL.|
    |`HTML`|Identifica un frammento di codice HTML.|
 
-- L'attributo **Kind** - _facoltativo_ specifica il tipo di codice contenuto nel frammento. Il valore può essere uno dei seguenti:
+- L'attributo **Kind** - _facoltativo_ specifica il tipo di codice contenuto nel frammento. I possibili valori sono i seguenti:
 
-   |Valore|Descrizione|
+   |valore|Descrizione|
    |-----|-----------|
    |`method body`|Specifica che il frammento di codice è il corpo di un metodo e deve pertanto essere inserito all'interno di una dichiarazione di metodo.|
    |`method decl`|Specifica che il frammento di codice è un metodo e deve pertanto essere inserito all'interno di una classe o un modulo.|

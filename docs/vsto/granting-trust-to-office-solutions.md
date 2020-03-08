@@ -1,5 +1,5 @@
 ---
-title: Concedere l'attendibilità alle soluzioni Office
+title: Concedi attendibilità alle soluzioni Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,38 +16,38 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826934"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410009"
 ---
-# <a name="grant-trust-to-office-solutions"></a>Concedere l'attendibilità alle soluzioni Office
-  Concedere l'attendibilità Office solutions significa che modifica i criteri di sicurezza di ogni computer di destinazione per considerare attendibile l'assembly della soluzione, manifesto dell'applicazione, manifesto della distribuzione e documenti. È possibile concedere attendibilità alla soluzione Office per l'utente o l'utente finale.
+# <a name="grant-trust-to-office-solutions"></a>Concedi attendibilità alle soluzioni Office
+  Concedi attendibilità alle soluzioni Office significa modificare i criteri di sicurezza di ogni computer di destinazione in modo da considerare attendibile l'assembly della soluzione, il manifesto dell'applicazione, il manifesto di distribuzione e il documento. È possibile concedere l'attendibilità alla soluzione Office da parte dell'utente o dell'utente finale.
 
- È possibile concedere l'attendibilità alla soluzione Office firmando i manifesti dell'applicazione e distribuzione.
+ Per concedere l'attendibilità totale alla soluzione Office, è possibile firmare i manifesti dell'applicazione e della distribuzione.
 
- Gli utenti finali possono concedere l'attendibilità alla soluzione Office per prendere una decisione di attendibilità nel [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità.
+ Gli utenti finali possono concedere l'attendibilità alla soluzione Office prendendo una decisione di attendibilità nella richiesta di attendibilità del [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)].
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="Signing"></a> Concedere l'attendibilità alla soluzione firmando i manifesti dell'applicazione e distribuzione
- Tutte le applicazioni e distribuzione manifests for Office solutions devono essere firmate con un certificato che identifica il server di pubblicazione. I certificati forniscono una base per prendere decisioni di attendibilità.
+## <a name="Signing"></a>Attendibilità della soluzione mediante la firma dei manifesti dell'applicazione e della distribuzione
+ Tutti i manifesti dell'applicazione e della distribuzione per le soluzioni Office devono essere firmati con un certificato che identifica il server di pubblicazione. I certificati costituiscono una base per prendere decisioni di attendibilità.
 
- Un certificato temporaneo viene creato e concessa l'attendibilità in fase di compilazione in modo che la soluzione verrà eseguita durante il debug. Se si pubblica una soluzione che viene firmata con un certificato temporaneo, all'utente finale verrà richiesto di prendere una decisione di attendibilità.
+ Viene creato automaticamente un certificato temporaneo e viene concessa la relazione di trust in fase di compilazione, in modo che la soluzione venga eseguita mentre viene eseguito il debug. Se si pubblica una soluzione firmata con un certificato temporaneo, all'utente finale verrà richiesto di prendere una decisione di attendibilità.
 
- Se si effettua la soluzione con un certificato noto e attendibile, la soluzione verrà automaticamente installata senza chiedere conferma all'utente finale di prendere una decisione di attendibilità. Per altre informazioni su come ottenere un certificato per la firma, vedere [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md). Dopo aver ottenuto un certificato, il certificato deve essere attendibile in modo esplicito per aggiungerlo all'elenco degli autori attendibili. Per altre informazioni, vedere [Procedura: Aggiungere un autore attendibile a un computer client per applicazioni ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).
+ Se si firma la soluzione con un certificato noto e attendibile, la soluzione verrà installata automaticamente senza richiedere all'utente finale di prendere una decisione di attendibilità. Per ulteriori informazioni su come ottenere un certificato per la firma, vedere [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md). Una volta ottenuto un certificato, il certificato deve essere considerato attendibile in modo esplicito aggiungendolo all'elenco Autori attendibili. Per ulteriori informazioni, vedere [procedura: aggiungere un autore attendibile a un computer client per applicazioni ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).
 
- Se uno sviluppatore esegue la soluzione con un certificato temporaneo, un amministratore può firmare nuovamente la personalizzazione con un certificato attendibile e noto con il Manifest Generation and Editing Tool (*mage.exe*), ovvero una del Strumenti di Microsoft .NET Framework. Per altre informazioni sulla firma delle soluzioni, vedere [come: Firmare soluzioni Office](../vsto/how-to-sign-office-solutions.md) e [come: Firmare manifesti dell'applicazione e di distribuzione](../ide/how-to-sign-application-and-deployment-manifests.md).
+ Se uno sviluppatore firma la soluzione con un certificato temporaneo, un amministratore può firmare nuovamente la personalizzazione con un certificato noto e attendibile usando il Strumento per la generazione e la modifica di manifesti (*Mage. exe*), che è uno degli strumenti di Microsoft .NET Framework. Per altre informazioni sulla firma di soluzioni, vedere [procedura: firmare soluzioni Office](../vsto/how-to-sign-office-solutions.md) e [procedura: firmare manifesti dell'applicazione e di distribuzione](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-## <a name="TrustPrompt"></a>Concedere l'attendibilità alla soluzione tramite la richiesta di attendibilità di ClickOnce
- [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chiede all'utente finale per prendere la decisione di attendibilità, se non sono presenti criteri a livello di organizzazione che considera attendibile il certificato della soluzione. Se l'utente concede l'attendibilità alla soluzione, viene creata una voce di elenco di inclusione che contiene un URL e una chiave pubblica per archiviare questa decisione di attendibilità. Quando una personalizzazione trusted viene eseguita in un secondo momento, è possibile che l'utente finale non viene richiesto anche in questo caso.
+## <a name="TrustPrompt"></a>Attendibilità della soluzione tramite la richiesta di attendibilità ClickOnce
+ [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chiede all'utente finale di prendere la decisione di attendibilità se non sono presenti criteri a livello di organizzazione che considerano attendibile il certificato della soluzione. Se l'utente finale concede l'attendibilità alla soluzione, viene creata una voce dell'elenco di inclusione contenente un URL e una chiave pubblica per archiviare questa decisione di attendibilità. Quando una personalizzazione attendibile viene eseguita in un secondo momento, l'utente finale non viene più richiesto.
 
- Gli amministratori possono disabilitare la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità o richiedono che il prompt dei comandi si verificano solo per le soluzioni che sono firmate con un certificato Authenticode. Per altre informazioni su come modificare queste impostazioni per le zone di siti non attendibili, siti attendibili, Internet, LocalIntranet e risorse del computer, vedere [come: Configurare il comportamento di richiesta di attendibilità di ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
+ Gli amministratori possono disabilitare la richiesta di attendibilità [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] o richiedere che la richiesta venga eseguita solo per le soluzioni firmate con un certificato Authenticode. Per ulteriori informazioni su come modificare queste impostazioni per le zone computer, LocalIntranet, Internet, TrustedSites e UntrustedSites, vedere [procedura: configurare il comportamento della richiesta di attendibilità ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)
-- [Concedere l'attendibilità ai documenti](../vsto/granting-trust-to-documents.md)
-- [Risolvere i problemi di sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)
-- [Considerazioni sulla sicurezza specifiche per le soluzioni Office](../vsto/specific-security-considerations-for-office-solutions.md)
+- [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
+- [Concedi attendibilità ai documenti](../vsto/granting-trust-to-documents.md)
+- [Risolvere i problemi relativi alla sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)
+- [Considerazioni specifiche sulla sicurezza per le soluzioni Office](../vsto/specific-security-considerations-for-office-solutions.md)

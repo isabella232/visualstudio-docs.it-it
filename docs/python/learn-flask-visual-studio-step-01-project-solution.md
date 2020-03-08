@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985207"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409837"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Flask in Visual Studio
 
@@ -24,7 +24,7 @@ ms.locfileid: "72985207"
 
 Flask è definito un framework "micro" perché non mette direttamente a disposizione funzionalità come la convalida del modulo, l'astrazione di database, l'autenticazione e così via. Tali funzionalità sono invece contenute in speciali pacchetti Python denominati *estensioni* di Flask. Le estensioni si integrano perfettamente con Flask, come se facessero parte del framework. Ad esempio, lo stesso Flask non offre un motore del modello di pagina. La creazione dei modelli è possibile grazie alle estensioni, ad esempio Jinja e Jade, come illustrato in questa esercitazione.
 
-In questa esercitazione si imparerà a:
+In questa esercitazione verranno illustrate le procedure per:
 
 > [!div class="checklist"]
 > - Creare un progetto Flask di base in un repository Git tramite il modello "Progetto Web Flask vuoto" (passaggio 1)

@@ -1,5 +1,5 @@
 ---
-title: Installare Visual Studio
+title: Installazione di Visual Studio
 titleSuffix: ''
 description: Informazioni dettagliate sull'installazione di Visual Studio.
 ms.date: 12/13/2019
@@ -21,13 +21,13 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d8e6e3a857c9bbf5577cf395f698f64cfb11bddc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114566"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409761"
 ---
-# <a name="install-visual-studio"></a>Installare Visual Studio
+# <a name="install-visual-studio"></a>Installazione di Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -113,7 +113,7 @@ Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la 
 A tale scopo, fare clic sul pulsante seguente, scegliere l'edizione di Visual Studio da scaricare, scegliere **Salva** e quindi scegliere **Apri cartella**.
 
  > [!div class="button"]
- > [Download di Visual Studio](https://visualstudio.microsoft.com/downloads)
+ > [Scaricare Visual Studio](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -135,7 +135,7 @@ Eseguire il file del programma di avvio automatico per installare il programma d
 
 ## <a name="step-4---choose-workloads"></a>Passaggio 4: Scegliere i carichi di lavoro
 
-Dopo aver installato il programma di installazione, è possibile usarlo per personalizzare l'installazione selezionando i set di funzionalità o carichi di lavoro desiderati. Ecco come fare.
+Dopo aver installato il programma di installazione, è possibile usarlo per personalizzare l'installazione selezionando i set di funzionalità o carichi di lavoro desiderati. Ecco come.
 
  ::: moniker range="vs-2017"
 
@@ -265,5 +265,5 @@ Per altre informazioni, vedere la pagina [Selezionare i percorsi di installazion
 * [Modificare Visual Studio](modify-visual-studio.md)
 * [Disinstallare Visual Studio](uninstall-visual-studio.md)
 * [Creare un'installazione offline di Visual Studio](create-an-offline-installation-of-visual-studio.md)
-* [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md) (Usare i parametri della riga di comando per installare Visual Studio)
 * [Installare Visual Studio per Mac](/visualstudio/mac/installation)

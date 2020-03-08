@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822385"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409958"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Usare la finestra interattiva di Python
 
@@ -25,7 +25,7 @@ In Visual Studio è disponibile una finestra REPL (Read-Evaluate-Print Loop) per
 
 In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 
-| REPL | DESCRIZIONE | Modifica | Debug | Immagini |
+| REPL | Descrizione | Modifica | Debug | Immagini |
 | --- | --- | --- | --- | --- |
 | Standard | REPL predefinito, comunica direttamente con Python | Modifica standard (su più righe e così via). | Sì, tramite `$attach` | No |
 | Debug | REPL predefinito, comunica con il processo Python di cui è in corso il debug | Modifica standard | Solo debug | No |
@@ -34,7 +34,7 @@ In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 
 Questo articolo descrive le modalità REPL **Standard** e **Debug**. Per informazioni dettagliate sulle modalità IPython, vedere [Usare la finestra REPL in modalità IPython](interactive-repl-ipython.md).
 
-Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come **CTRL**+**INVIO**, vedere [Esercitazione, passaggio 3: usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
+Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come **CTRL**+**INVIO**, vedere [Esercitazione - Passaggio 3: Uso della finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 ## <a name="open-an-interactive-window"></a>Aprire una finestra interattiva
 
@@ -73,7 +73,7 @@ L'eccezione si verifica quando sono necessarie righe di codice aggiuntivo per cr
 
 <a name="meta-commands"></a> La finestra **interattiva** supporta anche diversi metacomandi. Tutti i metacomandi iniziano con `$` ed è possibile digitare `$help` per ottenere un elenco dei metacomandi oppure `$help <command>` per ottenere i dettagli relativi all'utilizzo di un comando specifico.
 
-| Metacomando | DESCRIZIONE |
+| Metacomando | Descrizione |
 | --- | --- |
 | `$$` | Inserisce un commento ed è quindi utile per aggiungere commenti al codice durante la sessione. |
 | `$attach` | Collega il debugger di Visual Studio al processo della finestra REPL per abilitare il debug. |
@@ -104,10 +104,10 @@ Oltre a lavorare direttamente nella finestra **interattiva**, è possibile selez
 
 ![Comando di menu Invia a finestra interattiva](media/interactive-send-to.png)
 
-Questo comando è utile per lo sviluppo di codice iterativo o evolutivo, tra cui il test del codice durante lo sviluppo. Dopo aver inviato una parte di codice alla finestra **interattiva** e averne visualizzato l'output, è ad esempio possibile premere il tasto freccia SU per visualizzare di nuovo il codice, modificarlo e testarlo rapidamente premendo **CTRL**+**INVIO**. Se si preme **INVIO** alla fine dell'input, si esegue il codice, mentre se lo si preme durante la digitazione viene inserito un carattere di nuova riga **.** Dopo aver creato il codice desiderato, è possibile copiarlo nuovamente nel file di progetto.
+Questo comando è utile per lo sviluppo di codice iterativo o evolutivo, tra cui il test del codice durante lo sviluppo. Dopo aver inviato una parte di codice alla finestra **interattiva** e averne visualizzato l'output, è ad esempio possibile premere il tasto freccia SU per visualizzare di nuovo il codice, modificarlo e testarlo rapidamente premendo **CTRL**+**INVIO**. (Premendo **invio** alla fine dell'input viene eseguito, ma premendo **invio** al centro di input viene inserita una nuova riga). Una volta ottenuto il codice desiderato, è possibile copiarlo di nuovo nel file di progetto.
 
 > [!Tip]
-> Per impostazione predefinita, Visual Studio rimuove i prompt **>>>** e **...** REPL quando si incolla il codice dalla finestra **interattiva** nell'editor. È possibile modificare questo comportamento nella scheda **Strumenti** > **Opzioni** > **Editor di testo** > **Python** > **Avanzate** usando l'opzione **L'operazione Incolla rimuove i prompt REPL**. Vedere [Opzioni - Miscellaneous options (Opzioni varie)](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Per impostazione predefinita, Visual Studio rimuove **>>>** e **...** REPL richiede quando si incolla il codice dalla finestra **interattiva** nell'editor. È possibile modificare questo comportamento nella scheda **Strumenti** > **Opzioni** > **Editor di testo** > **Python** > **Avanzate** usando l'opzione **L'operazione Incolla rimuove i prompt REPL**. Vedere [Opzioni - Miscellaneous options (Opzioni varie)](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 

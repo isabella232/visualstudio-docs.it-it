@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263307"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409366"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Panoramica della distribuzione in Visual Studio
 
@@ -79,7 +79,7 @@ Per altre informazioni, vedere il [confronto dettagliato](https://azure.microsof
 
 Effettuare la distribuzione nel file system significa semplicemente copiare i file dell'applicazione in una cartella specifica del proprio computer. Questo sistema viene spesso usato a scopo di test o per distribuire l'applicazione per l'uso da parte di un numero limitato di persone, se il computer esegue anche un server. Se la cartella di destinazione è condivisa in rete, la distribuzione nel file system può rendere disponibili i file dell'applicazione Web per altri utenti che possono distribuirli a loro volta a server specifici.
 
-Qualsiasi computer locale che esegue un server è in grado di rendere l'applicazione disponibile su Internet o Intranet, in base al tipo di configurazione e alle reti a cui è connesso. Se si connette un computer direttamente a Internet, prestare particolare attenzione a proteggerlo dalle minacce esterne per la sicurezza. Poiché l'utente gestisce questi computer, ha il controllo completo delle configurazioni hardware e software.
+Qualsiasi computer locale che esegue un server è in grado di rendere l'applicazione disponibile su Internet o Intranet, in base al tipo di configurazione e alle reti a cui è connesso. Se si connette un computer direttamente a Internet, prestare particolare attenzione a proteggerlo dalle minacce alla sicurezza esterna. Poiché si gestiscono questi computer, si ha il controllo completo delle configurazioni software e hardware.
 
 Si noti che se per qualsiasi motivo (ad esempio, l'accesso al computer) non si è in grado di usare servizi cloud come Servizio app di Azure o Macchine virtuali di Azure, è possibile usare [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) nel proprio centro dati. Azure Stack consente di gestire e usare le risorse di elaborazione con Servizio app di Azure e Macchine virtuali di Azure, mantenendo tutti gli elementi in locale.
 
