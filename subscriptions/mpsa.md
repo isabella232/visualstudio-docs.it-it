@@ -3,20 +3,20 @@ title: Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Products 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Product and Services Agreement)
-ms.openlocfilehash: f87a77cdc19244ca24da1685c0b05372f6cc76d7
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: e4416bfab95bd7d1c38c392bfbf9efee9a06fc7f
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605854"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410251"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Product and Services Agreement)
 Se sono state acquistate sottoscrizioni di Visual Studio tramite il programma MPSA, è necessario tenere presente alcuni aspetti prima di poter diventare un amministratore di sottoscrizioni di Visual Studio e assegnare le sottoscrizioni agli utenti. Se il proprio account è già stato configurato come amministratore, è possibile passare direttamente al [portale di amministrazione](https://manage.visualstudio.com/) delle sottoscrizioni di Visual Studio.
 
-I clienti con contratto MPSA gestiscono ora le risorse acquistate tramite MPSA in un nuovo portale denominato [Business Center](https://businessaccount.microsoft.com/Customer), che supporta funzionalità simili a quelle di Volume Licensing Service Center (VLSC). Queste funzionalità includono la visualizzazione di Riepilogo licenze, Ordini, Download, Chiavi, Utenti e così via. Tuttavia, le sottoscrizioni di Visual Studio in MPSA sono simili ai Servizi cloud. Il portale Business Center usa anche account aziendali per l'accesso invece di account Microsoft (MSA). Se l'organizzazione usa servizi cloud come Office 365 o Azure Active Directory e l'indirizzo di posta elettronica è incluso in uno di questi due servizi, l'account è già un account aziendale. Di conseguenza, è possibile eseguire la registrazione in Business Center con la password esistente. Se l'organizzazione non usa servizi cloud e l'indirizzo di posta elettronica non è un account aziendale, è possibile usarlo per eseguire la registrazione in Business Center.
+I clienti con contratto MPSA gestiscono ora le risorse acquistate tramite MPSA in un nuovo portale denominato [Business Center](https://businessaccount.microsoft.com/Customer), che supporta funzionalità simili a quelle di Volume Licensing Service Center (VLSC). Sono incluse la visualizzazione del riepilogo delle licenze, degli ordini, dei download, delle chiavi, degli utenti e così via. Tuttavia, le sottoscrizioni di Visual Studio in MPSA si comportano in modo simile ai servizi cloud. Il portale Business Center usa anche account aziendali per l'accesso invece di account Microsoft (MSA). Se l'organizzazione usa servizi cloud come Office 365 o Azure Active Directory e l'indirizzo di posta elettronica è incluso in uno di questi due servizi, l'account è già un account aziendale. Di conseguenza, è possibile eseguire la registrazione in Business Center con la password esistente. Se l'organizzazione non usa servizi cloud e l'indirizzo di posta elettronica non è un account aziendale, è possibile usarlo per eseguire la registrazione in Business Center.
 
 Inoltre, il [portale di amministrazione](https://manage.visualstudio.com/) delle sottoscrizioni di Visual Studio è il punto in cui vengono assegnate le sottoscrizioni ai sottoscrittori quando si diventa un amministratore delle sottoscrizioni di Visual Studio. In MPSA è necessario effettuare il provisioning delle sottoscrizioni di Visual Studio nel portale di gestione corrispondente, ovvero nel portale di amministrazione delle sottoscrizioni di Visual Studio. A tale scopo, associare l'account di acquisto a un tenant, ad esempio contoso.onmicrosoft.com.
 
@@ -43,7 +43,12 @@ Dopo aver soddisfatto i criteri indicati sopra, è possibile procedere all'assoc
 4. Selezionare il **tenant**, ad esempio contoso.onmicrosoft.com.
 5. Fare clic su **Associa dominio**.
 
-Durante l'associazione, tutti gli utenti che soddisfano i criteri effettuano generalmente il provisioning come amministratori delle sottoscrizioni di Visual Studio entro pochi minuti. In alcuni casi, tuttavia, potrebbe essere necessario attendere fino a 24 ore. Al termine del provisioning del tenant, sarà possibile accedere al portale di amministrazione delle sottoscrizioni di Visual Studio. Se l'operazione richiede più di 24 ore, contattare il supporto MPSA.
+Durante l'associazione, tutti gli utenti che soddisfano i criteri effettuano generalmente il provisioning come amministratori delle sottoscrizioni di Visual Studio entro pochi minuti. In alcuni casi, tuttavia, potrebbe essere necessario attendere fino a 24 ore. Al termine del provisioning del tenant, sarà possibile accedere al portale di amministrazione delle sottoscrizioni di Visual Studio. Se il tempo necessario per più di 24 ore, contattare il supporto di MPSA seguendo questa procedura:
+1. Connetti a https://www.microsoft.com/licensing/mpsa/default
+2. Fare clic sul menu **altro** nella parte superiore della pagina. 
+3. Scegli **supporto**
+4. Scegli **supporto licenze**
+5. Selezionare l'opzione di supporto più adatta alle proprie esigenze. 
 
 > [!NOTE]
 > Se sono presenti nuovi utenti che dopo l'associazione soddisfano i criteri indicati nei passaggi 2 e 5, è necessario contattare il supporto MPSA. Il supporto MPSA offrirà assistenza per eseguire il provisioning dei nuovi amministratori delle sottoscrizioni di Visual Studio.
@@ -51,7 +56,21 @@ Durante l'associazione, tutti gli utenti che soddisfano i criteri effettuano gen
 ## <a name="tenant-association-unmanaged"></a>Associazione del tenant (non gestito)
 Se è stata eseguita la registrazione in Business Center con un indirizzo di posta elettronica che non è un account aziendale (non registrato in Azure Active Directory, "Azure AD"), come descritto sopra, l'associazione del tenant sarà leggermente diversa. Sarà necessario eseguire un "take-over del dominio". Durante questo processo sarà necessario configurare se stessi come amministratore globale e modificare il tenant da non gestito a gestito.
 
-Per una descrizione più dettagliata di questo processo,vedere le [guide rapide](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx). Scaricare la guida denominata *"Setup and Use Your Online Services"* (Configurare e usare i servizi online) per istruzioni su come eseguire il take-over di un dominio. Al termine, anche l'account di acquisto risulterà associato al tenant.
+Per una descrizione più dettagliata di questo processo,vedere le [guide rapide](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx). Scaricare la guida denominata *"Setup and Use Your Online Services"* (Configurare e usare i servizi online) per istruzioni su come eseguire il take-over di un dominio. Al termine, anche l'account di acquisto risulterà associato al tenant.
 
 > [!NOTE]
 > Dopo aver completato il processo di take-over del dominio, è necessario soddisfare i criteri dei cinque passaggi della sezione Associazione pre-tenant (tenant gestito). Dopo aver soddisfatto i criteri, sarà necessario contattare il supporto MPSA per eseguire il provisioning di altri amministratori delle sottoscrizioni di Visual Studio.
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Passaggi successivi
+Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio.
+- [Assegna singole sottoscrizioni](assign-license.md)
+- [Assegna più sottoscrizioni](assign-license-bulk.md)
+- [Modificare sottoscrizioni](edit-license.md)
+- [Eliminare sottoscrizioni](delete-license.md)
+- [Determinare l'utilizzo massimo](maximum-usage.md)

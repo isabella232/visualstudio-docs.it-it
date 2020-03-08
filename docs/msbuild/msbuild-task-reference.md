@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633161"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865323"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 
@@ -37,15 +37,15 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Classe di base Task](../msbuild/task-base-class.md)
 
- Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Utilities.Task>.
+ Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Utilities.Task>. Non può essere utilizzato direttamente.
 
 - [Classe di base TaskExtension](../msbuild/taskextension-base-class.md)
 
- Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>.
+ Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>. Non può essere utilizzato direttamente.
 
 - [Classe di base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md)
 
- Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>.
+ Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>. Non può essere utilizzato direttamente.
 
 - [Attività AL (Assembly Linker)](../msbuild/al-assembly-linker-task.md)
 
