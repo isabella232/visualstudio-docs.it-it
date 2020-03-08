@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938785"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409634"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modificare il codice R in Visual Studio
 
@@ -93,7 +93,7 @@ Per modificare la formattazione dell'intero file, selezionare **Modifica** > **A
 
 La formattazione automatica è un'operazione distinta che può essere annullata. Ad esempio, se si incolla il codice nell'editor e si applica la formattazione, selezionando **Modifica** > **Annulla** o premendo **CTRL**+**Z** una volta, la formattazione viene annullata. Selezionando di nuovo **Annulla**, viene invertita l'operazione d'incollamento.
 
-Le opzioni di formattazione, inclusa la disattivazione della formattazione, vengono impostate usando **Strumenti** > **Opzioni** nella scheda **Editor di testo** > **R** > **Avanzate**. È possibile passare direttamente a questa pagina usando il comando **R Tools** > **Opzioni editor** o facendo clic con il pulsante destro del mouse nell'editor e selezionando **Opzioni di formattazione**. Vedere la sezione relativa alle [opzioni dell'editor](#editor-options) per informazioni dettagliate.
+Le opzioni di formattazione, inclusa la disattivazione della formattazione, vengono impostate tramite **strumenti** > **Opzioni** nell' **Editor di testo** > **R** > scheda **Avanzate** . È possibile passare direttamente a questa pagina usando il comando **R Tools** > **Editor Options** oppure facendo clic con il pulsante destro del mouse nell'editor e selezionando **Opzioni di formattazione**. Vedere la sezione relativa alle [opzioni dell'editor](#editor-options) per informazioni dettagliate.
 
 ## <a name="inserting-roxygen-comments"></a>Inserimento di commenti Roxygen
 
@@ -113,7 +113,7 @@ Le opzioni contenute nelle schede **Generale**, **Barre di scorrimento** e **Tab
 
 Le opzioni nella scheda **R** > **Avanzate** sono specifiche di RTVS:
 
-| Gruppo | Opzione | Impostazione predefinita | Description |
+| Gruppo | Opzione | Predefinito | Descrizione |
 | --- | --- | --- | --- |
 | Formattazione | Formattazione automatica | Attivato | Riformatta il codice durante la digitazione. Non condiziona i comandi **Formatta selezione** o **Formatta documento**. |
 | | Parentesi graffe espanse | Disattivato | Inserisce una { aperta in una nuova riga. |
@@ -129,5 +129,5 @@ Le opzioni nella scheda **R** > **Avanzate** sono specifiche di RTVS:
 | | Elenco di completamento con il tasto **TAB** | Disattivato | Richiama l'elenco di completamento digitando uno o più caratteri e premendo **TAB**. |
 | | Corrispondenza con nomi di argomento parzialmente digitati | Disattivato | Durante la digitazione dei nomi di un argomento in una chiamata di funzione, la firma visualizza una descrizione che meglio corrisponde all'argomento. |
 | Finestra interattiva | Controllo della sintassi nella console R | Disattivato | Applica il controllo della sintassi nella finestra interattiva. Il controllo della sintassi non funziona correttamente se viene applicato a istruzioni su più righe. |
-| struttura | Struttura del codice | Attivato | Crea automaticamente aree comprimibili in caso di istruzioni su più righe. |
+| Struttura | Struttura del codice | Attivato | Crea automaticamente aree comprimibili in caso di istruzioni su più righe. |
 | Controllo della sintassi | Mostra errori di sintassi | Attivato | Abilita il controllo automatico della sintassi del codice. |
