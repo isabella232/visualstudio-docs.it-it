@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Informazioni sull'anonimizzazione dei dati dei sottoscrittori quando viene perso l'accesso alle sottoscrizioni.
-ms.openlocfilehash: f3a35448dd0befbbb91f1657dd62b2b99ff37a2a
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: 439e53b1c67fde0fbda0666652e29bf396abfee2
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77520839"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894411"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimizzazione dei dati del sottoscrittore di Visual Studio
 Quando si verifica un evento che blocca l'uso di un sottoscrittore di una sottoscrizione, ad esempio la scadenza di una sottoscrizione o l'eliminazione dell'account di accesso di un sottoscrittore, le informazioni personali dell'utente, ad esempio il nome e l'account di accesso, vengono criptate per renderle inutilizzabili.  Questa operazione viene eseguita per proteggere le informazioni personali del sottoscrittore.
@@ -31,7 +31,7 @@ Gli eventi che rendono inutilizzabile una sottoscrizione per un sottoscrittore a
 
 ## <a name="faq"></a>Domande frequenti
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>D: L'anonimizzazione delle informazioni personali del sottoscrittore comporta la perdita dell'accesso alla sottoscrizione?
-R: no.  L'anonimizzazione è la risposta a un evento che causa la perdita dell'accesso alla sottoscrizione ma non causa la mancanza di accesso.
+R: No.  L'anonimizzazione è la risposta a un evento che causa la perdita dell'accesso alla sottoscrizione ma non causa la mancanza di accesso.
 
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Q: Sono amministratore delle sottoscrizioni dell'organizzazione.  Se le informazioni di un sottoscrittore vengono rese anonime, è possibile riassegnare la sottoscrizione a un altro utente?
 A: Sì, a condizione che la sottoscrizione non sia scaduta, è possibile riassegnarla a un altro sottoscrittore.
@@ -41,11 +41,13 @@ R: è possibile evitare il problema in due modi:
 - Distribuire un solo sistema di gestione delle identità, MSA o AAD, ma non entrambi.  
 - Associare le identità AAD e MSA tramite il tenant. 
 
-## <a name="next-steps"></a>Passaggi successivi
-Informazioni su come impedire anonimato dei [associando le identità di MSA e AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
-
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Passaggi successivi
+Informazioni su come impedire anonimato dei [associando le identità di MSA e AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+
+
