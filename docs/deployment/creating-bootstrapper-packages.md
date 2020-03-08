@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f84f91ebedd47df8c0804adee35dcbec18d8551
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806936"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409583"
 ---
 # <a name="create-bootstrapper-packages"></a>Creare pacchetti del programma di avvio automatico personalizzati
 Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili quali file di Windows Installer ( *.msi*) e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  Ogni componente ridistribuibile, o prerequisito, visualizzato nella finestra di dialogo **prerequisiti** per ClickOnce è un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file che contengono i file manifesto in cui è descritto come deve essere installato il prerequisito.
@@ -70,7 +70,7 @@ oppure, per le versioni precedenti di Visual Studio
 *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
 ```
 
-Oppure
+o
 
 ```
 *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
@@ -94,9 +94,9 @@ Dopo aver copiato i file nella cartella del programma di avvio automatico, il re
 
 La tabella seguente illustra le proprietà popolate automaticamente dal programma di avvio automatico.
 
-|proprietà|Descrizione|
+|Proprietà|Descrizione|
 |--------------|-----------------|
-|ApplicationName|Nome dell'applicazione.|
+|ApplicationName|Il nome dell'applicazione.|
 |ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|
 |[Version9x](/windows/desktop/Msi/version9x)|Numero di versione per i sistemi operativi Microsoft Windows 95, Windows 98 o Windows ME. La sintassi della versione è Principale.Secondario.ServicePack.|
 |[VersionNT](/windows/desktop/Msi/versionnt)|Numero di versione per i sistemi operativi Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintassi della versione è Principale.Secondario.ServicePack.|

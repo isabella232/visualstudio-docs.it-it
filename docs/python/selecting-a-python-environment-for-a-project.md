@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 34ceb2ec7cc923f6642977cf4c70fbfae07bf523
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848429"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409620"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Come selezionare un ambiente Python per un progetto
 
@@ -26,7 +26,7 @@ Tutti i nuovi progetti Python in Visual Studio sono configurati inizialmente per
 ![Ambiente di Python globale predefinito visualizzato in Esplora soluzioni](media/environments/environments-project.png)
 
 ::: moniker range="vs-2017"
-Per modificare l'ambiente per un progetto, fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** e selezionare **Aggiungi/Rimuovi ambienti Python**. Dall'elenco visualizzato, che include gli ambienti globali, virtuali e conda, selezionare tutti quelli che si desidera visualizzare nel nodo **ambienti Python** :
+Per modificare l'ambiente per un progetto, fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** e selezionare **Aggiungi/Rimuovi ambienti Python**. Nell'elenco visualizzato, che include gli ambienti globali, virtuali e Conda, selezionare tutti quelli che devono apparire sotto il nodo **Ambienti Python**:
 
 ![Finestra Aggiungi/Rimuovi ambienti Python](media/environments/environments-add-remove.png)
 
