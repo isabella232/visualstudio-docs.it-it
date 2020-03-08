@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998786"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409637"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Controllare la posizione di esecuzione del codice R con le aree di lavoro
 
@@ -35,7 +35,7 @@ Anche il comando **R Tools** > **Sessione** > **Reimposta** e il pulsante di rei
 
 Nell'elenco delle aree di lavoro locali vengono visualizzati tutti gli interpreti R installati nel computer in uso.
 
-All'avvio, Visual Studio tenta di rilevare automaticamente tutte le versioni di R installate, esaminando la chiave del Registro di sistema **HKEY_LOCAL_MACHINE\Software\R-Core\\**. Poiché questo controllo viene effettuato solo all'avvio, se si installa un nuovo interprete R è necessario riavviare Visual Studio.
+All'avvio, Visual Studio tenta di rilevare automaticamente tutte le versioni di R installate, esaminando la chiave del Registro di sistema **HKEY_LOCAL_MACHINE\Software\R-Core\\** . Poiché questo controllo viene effettuato solo all'avvio, se si installa un nuovo interprete R è necessario riavviare Visual Studio.
 
 È possibile che un interprete R installato in modo non standard (ad esempio copiando direttamente i file in una cartella invece di eseguire un programma di installazione) non venga rilevato. In questo caso creare manualmente una nuova area di lavoro R locale come segue:
 

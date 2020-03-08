@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661947"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408411"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -33,7 +33,7 @@ In Visual Studio in Windows la finestra **Ambienti Python**, descritta in questo
 Se non si ha familiarità con Python in Visual Studio, vedere gli articoli seguenti per le informazioni di base necessarie:
 
 - [Usare Python in Visual Studio](overview-of-python-tools-for-visual-studio.md)
-- [Come installare il supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md)
+- [Installare il supporto per Python in Visual Studio](installing-python-support-in-visual-studio.md)
 
 ::: moniker range="vs-2017"
 > [!Note]
@@ -159,8 +159,8 @@ Un ambiente Conda è un ambiente creato usando lo strumento `conda` o con la ges
 
     | Campo | Descrizione |
     | --- | --- |
-    | Progetto | Progetto in cui creare l'ambiente (in presenza di più progetti nella stessa soluzione di Visual Studio). |
-    | Name | Nome per l'ambiente Conda. |
+    | Project | Progetto in cui creare l'ambiente (in presenza di più progetti nella stessa soluzione di Visual Studio). |
+    | Nome | Nome per l'ambiente Conda. |
     | Aggiungi pacchetti da | Scegliere **File di ambiente** se è disponibile un file *environment.yml* che descrive le dipendenze oppure scegliere **Uno o più nomi di pacchetto Anaconda** ed elencare almeno un pacchetto Python o una versione di Python nel campo sottostante. L'elenco dei pacchetti indica a Conda di creare un ambiente Python. Per installare la versione più recente di Python, usare `python`. Per installare una versione specifica, usare `python=,major>.<minor>` come in `python=3.7`. È anche possibile usare il pulsante Pacchetto per selezionare le versioni e i pacchetti comuni di Python da una serie di menu. |
     | Imposta come ambiente corrente | Dopo aver creato l'ambiente, attiva il nuovo ambiente nel progetto selezionato. |
     | Imposta come ambiente predefinito per i nuovi progetti | Imposta e attiva automaticamente l'ambiente Conda in tutti i nuovi progetti creati in Visual Studio. Questa opzione equivale a selezionare **Imposta come ambiente predefinito per i nuovi progetti** nella finestra **Ambienti Python**. |

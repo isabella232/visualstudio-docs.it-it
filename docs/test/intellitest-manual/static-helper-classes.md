@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591567"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409572"
 ---
 # <a name="static-helper-classes"></a>Classi helper statiche
 
@@ -48,7 +48,7 @@ public void TestSomething(int i, int j) {
 }
 ```
 
-**Note**
+**Osservazioni:**
 
 Il codice sopra riportato è quasi equivalente a:
 
@@ -95,7 +95,7 @@ La classe **PexChoose** può funzionare in due modi:
 
 * Il codice generato per determinati test case imposta il provider scelto in un modo specifico, per far sì che la nuova esecuzione di questo test case applichi scelte specifiche in modo da attivare un percorso di esecuzione particolare.
 
-**Uso**
+**Utilizzo**
 
 * Chiamata semplice di **PexChoose.Value** per generare un nuovo valore:
 
@@ -141,7 +141,7 @@ public partial class MathExTests {
 
 Classe statica usata per ignorare i vincoli sui parametri e per stampare le informazioni simboliche associate a valori.
 
-**Uso**
+**Utilizzo**
 
 In genere IntelliTest prova a raggiungere tutti i percorsi di esecuzione del codice durante l'esecuzione. Tuttavia, specie per il calcolo di condizioni di presupposto e asserzione, è opportuno che non esplori tutti i casi possibili.
 
@@ -170,6 +170,6 @@ public static void AreElementsNotNull<T>(T[] value)
 }
 ```
 
-## <a name="got-feedback"></a>Commenti?
+## <a name="got-feedback"></a>Per eventuali commenti,
 
 Pubblicare idee e richieste di funzionalità nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

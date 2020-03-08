@@ -14,11 +14,11 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542659"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408517"
 ---
 # <a name="language-conventions"></a>Convenzioni del linguaggio
 
@@ -50,7 +50,7 @@ Per ogni convenzione del linguaggio, si specifica un valore che definisce se o q
 
 La gravità di una convenzione del linguaggio specifica il livello in cui applicare lo stile selezionato. Nella tabella seguente sono elencati i valori di gravità possibili e i relativi effetti:
 
-Severity | Effetto
+Gravità | Effetto
 :------- | ------
 `error` | Quando questa regola di stile viene violata, viene visualizzato un errore del compilatore.
 `warning` | Quando questa regola di stile viene violata, viene visualizzato un avviso del compilatore.
@@ -392,7 +392,7 @@ class MyClass
 |-|-|
 | **Nome regola** | visual_basic_preferred_modifier_order |
 | **ID regola** | IDE0036 |
-| **Linguaggi applicabili** | Visual Basic - |
+| **Linguaggi applicabili** | Visual Basic |
 | **Valori** | Uno o più modificatori Visual Basic, come `Partial`, `Private` e `Public` |
 | **Impostazione predefinita di Visual Studio** | `Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:silent` |
 | **Versione introdotta** | Visual Studio 2017 versione 15.5 |
@@ -1364,7 +1364,7 @@ void M()
 }
 ```
 
-### <a name="pattern-matching"></a>Criteri di ricerca
+### <a name="pattern-matching"></a>Corrispondenza dei criteri
 
 Le regole di stile illustrate in questa sezione riguardano l'uso dei [criteri di ricerca](/dotnet/csharp/pattern-matching) in C#.
 

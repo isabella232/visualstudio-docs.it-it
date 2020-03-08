@@ -8,11 +8,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589786"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408500"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
@@ -66,7 +66,7 @@ L'editor in Visual Studio supporta il set di base delle [proprietà di EditorCon
 - charset
 - trim\_trailing_whitespace
 - insert\_final_newline
-- radice
+- root
 
 Le impostazioni dell'editor EditorConfig sono supportate in tutti i linguaggi supportati da Visual Studio, ad eccezione di XML. EditorConfig supporta inoltre le convenzioni di [stile del codice](../ide/editorconfig-code-style-settings-reference.md), incluse le convenzioni di [linguaggio](../ide/editorconfig-language-conventions.md), [formattazione](../ide/editorconfig-formatting-conventions.md) e [denominazione](../ide/editorconfig-naming-conventions.md) per C# e Visual Basic.
 
@@ -82,7 +82,7 @@ Se il file EditorConfig viene rimosso dal progetto o dalla codebase e si vuole c
 
 1. Dalla barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento** oppure premere **CTRL**+**MAIUSC**+**A**.
 
-   Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
+   Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
 1. Nella casella di ricerca cercare **editorconfig**.
 

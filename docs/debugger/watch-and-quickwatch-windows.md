@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74904047"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409351"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Osservare le variabili con le finestre espressioni di controllo e controllo immediato
 

@@ -1,5 +1,5 @@
 ---
-title: Usando i punti di interruzione | Microsoft Docs
+title: Utilizzo di punti di interruzione | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -42,11 +42,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684522"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408762"
 ---
 # <a name="using-breakpoints"></a>Uso di punti di interruzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ ms.locfileid: "65684522"
 ## <a name="BKMK_Overview"></a> Impostazione di un punto di interruzione di funzione nel codice sorgente  
  È possibile impostare un punto di interruzione di funzione nel codice sorgente facendo clic sul margine sinistro di un file di codice sorgente o posizionando il cursore su una riga di codice e premendo F9. Il punto di interruzione viene visualizzato come un punto rosso nel margine sinistro ed anche la riga di codice risulta colorata:  
   
- ![Impostare un punto di interruzione](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
+ ![Imposta un punto di interruzione](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
   
  Quando si esegue questo codice nel debugger, l'esecuzione viene interrotta ogni volta che viene raggiunto il punto di interruzione, prima che venga eseguito il codice su tale riga. La riga di codice sorgente è di colore giallo:  
   
- ![Esecuzione punto di interruzione arrestata](../debugger/media/breakpointexecution.png "BreakpointExecution")  
+ ![Esecuzione del punto di interruzione arrestata](../debugger/media/breakpointexecution.png "BreakpointExecution")  
   
  A questo punto il valore di `testInt` è ancora 1.  
   
- È possibile esaminare lo stato corrente dell'applicazione, inclusi i valori delle variabili e lo stack di chiamate. Per altre informazioni sullo stack di chiamate, vedere [come: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).  
+ È possibile esaminare lo stato corrente dell'applicazione, inclusi i valori delle variabili e lo stack di chiamate. Per altre informazioni sullo stack di chiamate, vedere [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md).  
   
  È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile. Ad esempio, nel codice C# sopra riportato è possibile impostare un punto di interruzione nella dichiarazione di variabile, nel ciclo `for` o in qualsiasi codice all'interno del ciclo `for` , ma non è possibile impostare un punto di interruzione nello spazio dei nomi, nelle dichiarazioni di classe o nella firma del metodo.  
   
@@ -71,7 +71,7 @@ ms.locfileid: "65684522"
  È possibile anche impostare i punti di interruzione nello stack di chiamate, nella finestra Disassembly e nel codice C++ nativo, in una condizione dati o in un indirizzo di memoria.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Impostazione di un punto di interruzione nella finestra Stack di chiamate  
- È possibile interrompere l'esecuzione in corrispondenza dell'istruzione o della riga restituita da una funzione chiamante impostando un punto di interruzione nella finestra **Stack di chiamate** . Per altre informazioni sullo stack di chiamate, vedere [come: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md). L'esecuzione del debugger deve essere stata interrotta.  
+ È possibile interrompere l'esecuzione in corrispondenza dell'istruzione o della riga restituita da una funzione chiamante impostando un punto di interruzione nella finestra **Stack di chiamate** . Per altre informazioni sullo stack di chiamate, vedere [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md). L'esecuzione del debugger deve essere stata interrotta.  
   
 1. Avviare il debug dell'applicazione e attendere che l'esecuzione venga interrotta (ad esempio, in un punto di interruzione). Aprire la finestra **Stack di chiamate** (**Debug/Windows/Stack di chiamate**o **CTRL+ALT+C**).  
   
@@ -81,7 +81,7 @@ ms.locfileid: "65684522"
   
    Nella finestra **Punti di interruzione** , il punto di interruzione dello stack di chiamate viene visualizzato come indirizzo con una posizione di memoria corrispondente alla successiva istruzione eseguibile nella funzione. Il debugger interrompe l'esecuzione in corrispondenza dell'istruzione.  
   
-   Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, vedere [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+   Per tracciare visivamente i punti di interruzione durante l'esecuzione del codice, vedere [eseguire il mapping dei metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Impostazione di un punto di interruzione nella finestra Disassembly  
  Per impostare un punto di interruzione in corrispondenza di un'istruzione di assembly, è necessario che il debugger sia in modalità di interruzione.  
@@ -90,7 +90,7 @@ ms.locfileid: "65684522"
   
 2. Fare clic sul margine sinistro dell'istruzione che si desidera interrompere o impostare il cursore nell'istruzione e premere **F9**.  
   
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> Impostare un punto di interruzione dei dati (solo C++ nativo)  
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Impostazione di un punto di interruzione C++ dei dati (solo nativo)  
  I punti di interruzione dei dati interrompono l'esecuzione quando un valore archiviato in un indirizzo di memoria specificato viene modificato. Se il valore viene letto ma non modificato, l'esecuzione non viene interrotta. Per impostare i punti di interruzione dei dati, è necessario che il debugger sia in modalità di interruzione.  
   
 1. Avviare il debug dell'applicazione e attendere che venga raggiunto un punto di interruzione. Nel menu **Debug** scegliere **Nuovo punto di interruzione/Punto di interruzione dei dati** (o aprire la finestra **Punti di interruzione** e scegliere **Nuovo/Punto di interruzione dei dati**.  
@@ -114,7 +114,7 @@ ms.locfileid: "65684522"
 - La posizione di memoria viene aggiornata all'interno del kernel. Ad esempio, se passata alla funzione `ReadFile` di Windows a 32 bit, la memoria viene aggiornata dalla modalità kernel e il debugger non viene interrotto durante la scrittura nella memoria.  
   
 ## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Impostazione di un punto di interruzione con un indirizzo di memoria (solo C++ nativo)  
- È possibile anche usare l'indirizzo di un oggetto per impostare un punto di interruzione in un metodo chiamato per un'istanza specifica di una classe.  Di seguito è riportato un esempio:  
+ È possibile anche usare l'indirizzo di un oggetto per impostare un punto di interruzione in un metodo chiamato per un'istanza specifica di una classe.  Ad esempio:  
   
  Si consideri ad esempio un oggetto di tipo `my_class` con l'indirizzo, è possibile impostare un punto di interruzione della funzione in un metodo denominato `my_method` chiamato da tale istanza.  
   
@@ -150,19 +150,19 @@ ms.locfileid: "65684522"
   
    Quando si seleziona la casella **Condizioni** , la finestra si espande per visualizzare i diversi tipi di condizioni.  
   
-   **Espressione condizionale:** Quando si seleziona espressione condizionale, è possibile scegliere due condizioni: **Vale** e **quando modificato**. Scegliere **È true** se si desidera interrompere l'esecuzione quando l'espressione viene soddisfatta, oppure scegliere **Se modificato** se si desidera interrompere l'esecuzione quando il valore dell'espressione è cambiato.  
+   **Espressione condizionale:** quando si seleziona Espressione condizionale, è possibile scegliere due condizioni: **È true** e **Se modificato**. Scegliere **È true** se si desidera interrompere l'esecuzione quando l'espressione viene soddisfatta, oppure scegliere **Se modificato** se si desidera interrompere l'esecuzione quando il valore dell'espressione è cambiato.  
   
    Nell'esempio seguente il punto di interruzione viene impostato in modo che venga raggiunto solo quando il valore di `testInt` è **4**:  
   
-   ![Condizione punto di interruzione è true](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
+   ![La condizione del punto di interruzione è true](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
   
    Nell'esempio seguente il punto di interruzione viene impostato in modo che venga raggiunto solo quando il valore di `testInt` viene modificato:  
   
-   ![Punto di interruzione quando modificato](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
+   ![Punto di interruzione quando viene modificato](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
   
    Il comportamento del campo Se modificato è diverso per i diversi linguaggi di programmazione. Se si sceglie **Se modificato** per il codice nativo, la prima valutazione della condizione non viene considerata una modifica dal debugger, pertanto il punto di interruzione non viene raggiunto alla prima valutazione. Se si sceglie **Se modificato** per il codice gestito, il punto di interruzione viene raggiunto alla prima valutazione dopo la selezione di **Se modificato** .  
   
-   Se si imposta una condizione del punto di interruzione con sintassi non valida, viene visualizzato un messaggio di avviso. Se viene specificata una condizione del punto di interruzione con sintassi valida ma con semantica non valida, viene visualizzato un messaggio di avviso la prima volta che si raggiunge il punto di interruzione. In entrambi i casi, il debugger interrompe l'esecuzione quando si raggiunge il punto di interruzione non valido. Il punto di interruzione viene ignorato solo se la condizione è valida e restituisce `false`.  
+   Se si imposta una condizione del punto di interruzione con sintassi non valida, viene visualizzato un messaggio di avviso. Se viene specificata una condizione del punto di interruzione con sintassi valida ma con semantica non valida, viene visualizzato un messaggio di avviso la prima volta che si raggiunge il punto di interruzione. In entrambi i casi, il debugger interrompe l'esecuzione al raggiungimento del punto di interruzione non valido. Il punto di interruzione viene ignorato solo se la condizione è valida e restituisce `false`.  
   
    La condizione può essere una qualsiasi espressione valida riconosciuta dal debugger. Per altre informazioni sulle espressioni valide, vedere [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
   
@@ -185,12 +185,12 @@ ms.locfileid: "65684522"
   
    Notare che gli ID oggetto creano riferimenti deboli e non impediscono all'oggetto di essere sottoposto a Garbage Collection. Sono validi solo per la sessione di debug corrente.  
   
-## <a name="hit-count"></a>Numero di passaggi  
+## <a name="hit-count"></a>Passaggi  
  Se si ritiene che un ciclo nel codice inizi a presentare un comportamento errato dopo alcune iterazioni, è possibile impostare un punto di interruzione per arrestare l'esecuzione dopo un numero specificato di passaggi alla riga di codice associata, anziché premere ripetutamente **F5** per raggiungere il livello di iterazione.  
   
  Nella finestra **Impostazioni del punto di interruzione** impostare la condizione su **Numero di passaggi**. È quindi possibile specificare il numero di iterazioni. Nell'esempio seguente il punto di interruzione viene impostato in modo che venga raggiunto con qualsiasi altra iterazione:  
   
- ![Numero di passaggi punto di interruzione](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
+ ![Numero di passaggi del punto di interruzione](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
   
 ## <a name="filter"></a>Filtro  
  È possibile limitare un punto di interruzione da attivare solo su dispositivi specificati o in thread e processi specificati.  
@@ -225,9 +225,9 @@ ms.locfileid: "65684522"
 |**$CALLSTACK**|Stack di chiamate|  
 |**$FUNCTION**|Nome della funzione corrente|  
 |**$PID**|ID processo|  
-|**$PNAME**|Nome processo|  
+|**$PNAME**|Nome del processo|  
 |**$TID**|ID thread|  
-|**$TNAME**|Nome thread|  
+|**$TNAME**|Nome del thread|  
 |**$TICK**||  
 |**$TNAME**||  
   
@@ -250,7 +250,7 @@ ms.locfileid: "65684522"
 2. È inoltre possibile associare il punto di interruzione al file di origine. Selezionare il punto di interruzione e scegliere **Condizioni** dal menu di scelta rapida. Selezionare **Il codice sorgente può essere diverso dalla versione originale** nella finestra di dialogo **Impostazioni del punto di interruzione** .  
   
 ### <a name="breakpoints-dont-work-in-a-dll"></a>I punti di interruzione non funzionano in una DLL  
- Non è possibile impostare un punto di interruzione in un file di origine se le informazioni di debug per il modulo in cui si trova il codice non sono state caricate dal debugger. Uno dei sintomi è la visualizzazione di messaggi quali **Impossibile impostare il punto di interruzione**. Nella posizione relativa al punto di interruzione appare un'icona di interruzione di avviso. Tali punti di interruzioni di avviso, tuttavia, si trasformano in punti di interruzione effettivi al caricamento del codice. Per altre informazioni sul caricamento dei simboli, vedere [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Non è possibile impostare un punto di interruzione in un file di origine se le informazioni di debug per il modulo in cui si trova il codice non sono state caricate dal debugger. Uno dei sintomi è la visualizzazione di messaggi quali **Impossibile impostare il punto di interruzione**. Nella posizione relativa al punto di interruzione appare un'icona di interruzione di avviso. Tali punti di interruzioni di avviso, tuttavia, si trasformano in punti di interruzione effettivi al caricamento del codice. Per ulteriori informazioni sul caricamento dei simboli, vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md)

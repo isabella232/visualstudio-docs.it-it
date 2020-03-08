@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594201"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409932"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualizzare la struttura del codice usando diverse finestre degli strumenti
 
@@ -200,7 +200,7 @@ Il menu di scelta rapida (o clic con il pulsante destro del mouse) nella finestr
 |||
 |-|-|
 |**Azioni rapide e refactoring**||
-|**Rinomina**||
+|**Rinominare**||
 |**Genera grafico dei file di inclusione**||
 |**Visualizza definizione**||
 |**Vai a definizione**|Trova la definizione (o le definizioni per le classi parziali) e le visualizza in una finestra **Risultati ricerca**.|
