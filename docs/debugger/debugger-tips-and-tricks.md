@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188624"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409352"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni sui suggerimenti per la produttività per il debugger in Visual Studio
 
@@ -177,4 +177,4 @@ Per ulteriori suggerimenti e consigli e informazioni più dettagliate, vedere i 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Tasti di scelta rapida](../ide/productivity-shortcuts.md)
+[Keyboard Shortcuts](../ide/productivity-shortcuts.md) (Tasti di scelta rapida)

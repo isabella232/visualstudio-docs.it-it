@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911497"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409329"
 ---
 # <a name="graphics-event-list"></a>Elenco eventi grafici
 Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per esplorare gli eventi Direct3D registrati durante il rendering di un frame del gioco o dell'app.
@@ -34,7 +34,7 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 
 |Coda Direct3D 12|Colore|
 |-----------------------|-----------|
-|Coda di rendering|Verde|
+|Coda di rendering|Green|
 |Coda di calcolo|Giallo|
 |Coda di copia|Arancione|
 
@@ -107,8 +107,8 @@ Questa finestra consente di visualizzare la cronologia dell'elemento selezionato
 
 | Colonna | Descrizione |
 |-----------| - |
-| **Type** | Mostra il tipo di voce, in genere *creazione*, *lettura* e *scrittura*. |
-| **Visualizzazione** | Mostra un'anteprima della risorsa in un momento specifico.  Fare doppio clic sull'anteprima per aprire una visualizzazione dettagli della risorsa in quel momento. |
+| **Tipo** | Mostra il tipo di voce, in genere *creazione*, *lettura* e *scrittura*. |
+| **Visualizza** | Mostra un'anteprima della risorsa in un momento specifico.  Fare doppio clic sull'anteprima per aprire una visualizzazione dettagli della risorsa in quel momento. |
 | **Event** | Mostra la chiamata al metodo che ha generato l'evento.  È possibile visualizzare qualsiasi cronologia aggiuntiva sui singoli elementi selezionando l'icona a espressioni di controllo ![icona espressioni di controllo](media/gfx_watch.png) nella riga appropriata.  Per ulteriori informazioni, è inoltre possibile selezionare qualsiasi elemento disegnato con testo blu, ad esempio `m_commandList` nella schermata precedente. |
 
 <!-- /VERSIONLESS -->

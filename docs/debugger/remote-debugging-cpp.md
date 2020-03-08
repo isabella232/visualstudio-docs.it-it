@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730317"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409408"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Debug remoto di C++ un progetto in Visual Studio
 Per eseguire il debug di un'applicazione di Visual Studio in un computer diverso, installare ed eseguire Remote Tools nel computer in cui verrà distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi distribuire ed eseguire l'app.
@@ -67,7 +67,7 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non telefon
 
 5. Apportare le seguenti modifiche alle proprietà:
 
-   |Impostazioni|Value|
+   |Impostazione|valore|
    |-|-|
    |Comando remoto|C:\remotetemp\mymfc.exe|
    |Directory di lavoro|C:\remotetemp|
@@ -110,6 +110,6 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non telefon
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Configurare Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Assegnazioni delle porte del debugger remoto](../debugger/remote-debugger-port-assignments.md)
+- [Assegnazioni di porta del debugger remoto](../debugger/remote-debugger-port-assignments.md)
 - [Debug remoto di ASP.NET in un computer remoto con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
