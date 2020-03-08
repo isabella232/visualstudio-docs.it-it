@@ -30,16 +30,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633577"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865349"
 ---
 # <a name="link-task"></a>Link (attività)
 
-Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options).
+Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per ulteriori informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options) e [utilizzare MSBuild dalla riga di comando](/cpp/build/msbuild-visual-cpp) e [utilizzare il C++ set di strumenti Microsoft dalla riga di comando](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parametri
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/23/2020
 ms.topic: conceptual
 description: Scopri come sfruttare i prezzi speciali di Azure DevTest disponibili per i clienti con contratti Enterprise
-ms.openlocfilehash: 53ff651d0e0de8bbff4d1bc75597a6824957e8e8
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 81075a5e692f610424c60cb38f0a660dfe9c939c
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580104"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410424"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Offerta Azure Enterprise Agreement DevTest
 
@@ -25,17 +25,17 @@ Per illustrare il processo, è disponibile anche un [video dell'esercitazione](h
 
 ## <a name="enable-offers-in-the-ea-portal"></a>Abilitare le offerte nel portale EA
 Per abilitare le offerte:
-1. Accedere a https://ea.azure.com/manage.
+1. Accedere a [https://ea.azure.com/manage](https://ea.azure.com/manage).
 0. Fare clic sul menu **account** .
 0. Individuare l'account per il quale si desidera abilitare le offerte.  Se si dispone di numerosi account, è possibile utilizzare la **ricerca** per individuare rapidamente l'account. 
 0. Passare il puntatore del mouse sul nome dell'account. 
 0. Fare clic sull'icona di **modifica** (matita) all'estrema destra. 
 0. Fare clic sulla casella di **controllo sviluppo/test** .
-0. Fare clic su **Save**.
+0. Fare clic su **Salva**.
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Creare singole sottoscrizioni all'interno dell'account
 Ogni sottoscrittore dell'account può creare una sottoscrizione attenendosi alla procedura seguente:
-1. Accedere a https://account.windowsazure.com/signup?showCatalogs=True.
+1. Accedere a [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True).
 0. Scegliere l'offerta **sviluppo/test Enterprise** .
 0. Fare clic sulla casella di controllo per confermare che la sottoscrizione è regolata dal Enterprise Agreement. 
 0. Fare clic su **Acquista**.  (Con questa offerta, non si sta effettivamente acquistando nulla).

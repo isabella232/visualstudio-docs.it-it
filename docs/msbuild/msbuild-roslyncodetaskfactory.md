@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633226"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865375"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Attività inline di MSBuild con RoslynCodeTaskFactory
 
 Analogamente all'attività [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), l'attività RoslynCodeTaskFactory usa i compilatori Roslyn multipiattaforma per generare assembly di attività in memoria da usare come attività inline.  Le attività RoslynCodeTaskFactory, destinate a .NET Standard, possono funzionare nei runtime di .NET Framework e .NET Core, nonché in altre piattaforme quali Linux e Mac OS.
 
 >[!NOTE]
->RoslynCodeTaskFactory è disponibile solo in MSBuild 15.8 e versioni successive.
+>RoslynCodeTaskFactory è disponibile solo in MSBuild 15.8 e versioni successive. Le versioni di MSBuild seguono le versioni di Visual Studio, quindi RoslynCodeTaskFactory è disponibile in Visual Studio 15,8 e versioni successive.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Struttura di un'attività inline con RoslynCodeTaskFactory
 
@@ -164,7 +164,7 @@ definisce questi tre parametri:
 
 - `Tally` è un parametro di output del tipo System.Int32.
 
-Se l'elemento `Code` ha come attributo `Type``Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro. In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.
+Se l'elemento `Code` ha come attributo `Type``Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro.  In RoslynCodeTaskFactory, se l'elemento `Code` dispone dell'attributo `Type` di `Class`, non è necessario specificare il `ParameterGroup`, perché viene dedotto dal codice sorgente (si tratta di una differenza rispetto a `CodeTaskFactory`). In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.
 
 ## <a name="example"></a>Esempio
 
