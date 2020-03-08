@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824778"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408797"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Introduzione a Visual Studio Tools per Unity
 
@@ -71,7 +71,7 @@ A partire da Unity 2018.1, Visual Studio deve essere l'editor di script esterno 
 
    ![Selezionare Visual Studio](media/vstu_unity-external-tools.png)
 
-4. Se è stato selezionato **Browse**, aprire la directory **Common7/IDE** all'interno della directory di installazione di Visual Studio e selezionare **devenv.exe**. Fare clic su **Open**.
+4. Se è stato selezionato **Browse**, aprire la directory **Common7/IDE** all'interno della directory di installazione di Visual Studio e selezionare **devenv.exe**. Fare quindi clic su **Apri**.
 
    ![Selezionare Open](media/vstu_browse-for-application.png)
 
