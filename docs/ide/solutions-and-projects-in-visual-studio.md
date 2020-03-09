@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590085"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408823"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -56,7 +56,7 @@ Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di fi
 |Estensione|Name|Descrizione|
 |---------------|----------|-----------------|
 |sln|Soluzione Visual Studio|Organizza progetti, elementi del progetto ed elementi della soluzione nella soluzione.|
-|suo|Opzioni utente della soluzione|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
+|suo|Solution User Options|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
 
 ## <a name="create-new-projects"></a>Crea nuovi progetti
 

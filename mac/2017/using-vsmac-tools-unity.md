@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987230"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408533"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Uso di Visual Studio per Mac Tools per Unity
 
@@ -26,10 +26,10 @@ In alternativa, Visual Studio per Mac può essere aperto senza aprire alcuno scr
 
 ## <a name="unity-documentation-access"></a>Accesso della documentazione di Unity
 
-Visual Studio per Mac Tools per Unity include un collegamento per accedere alla documentazione dell'API Unity. Per accedere alla documentazione dell'API Unity da Visual Studio per Mac, posizionare il cursore sull'API Unity per cui si desiderano informazioni e premere **command ⌘ + ‘**.
+Visual Studio per Mac Tools per Unity include un collegamento per accedere alla documentazione dell'API Unity. Per accedere alla documentazione dell'API Unity da Visual Studio per Mac, posizionare il cursore sull'API Unity per cui si desiderano informazioni e premere **command ⌘ + ‘** .
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense per messaggi di Unity
-Il motore Unity trasmette i messaggi agli script MonoBehaviour, consentendo agli sviluppatori di scrivere codice che reagisce a messaggi quali OnMouseDown, OnTriggerEnter e così via. Poiché questi non sono metodi virtuali nella classe base MonoBehaviour, alcuni IDE quali MonoDevelop non dispongono della funzionalità di completamento del codice per i messaggi Unity.
+Il motore Unity trasmette i messaggi agli script monobehavior, consentendo agli sviluppatori di scrivere codice che reagisce ai messaggi, ad esempio OnMouseDown, OnTriggerEnter e così via. Poiché non si tratta di metodi virtuali nella classe monobehavior di base, alcuni IDE come MonoDevelop non hanno funzionalità di completamento del codice per i messaggi di Unity.
 
 Tuttavia, Visual Studio per Mac Tools per Unity estende la propria funzionalità IntelliSense ai messaggi Unity. Ciò semplifica l'implementazione di messaggi Unity negli script MonoBehaviour e assiste nell'apprendimento dell'API Unity. Per usare IntelliSense per i messaggi Unity:
 
@@ -39,7 +39,7 @@ Tuttavia, Visual Studio per Mac Tools per Unity estende la propria funzionalità
 
 3. Dopo che le lettere "**ont**" sono state digitate, viene visualizzato un elenco di suggerimenti di IntelliSense.
 
-   ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Uso di IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
 4. La selezione nell'elenco può essere modificata in tre modi:
 
@@ -80,7 +80,7 @@ Per aggiungere una nuova cartella, **fare clic con il pulsante destro del mouse 
 Queste aggiunte vengono riflesse nella finestra del progetto dell'editor di Unity.
 
 ### <a name="to-rename-a-file-or-folder"></a>Per rinominare un file o una cartella
-**Fare clic con il pulsante destro del mouse** sull'elemento da rinominare nel riquadro Soluzione e selezionare **Rinomina...**.
+**Fare clic con il pulsante destro del mouse** sull'elemento da rinominare nel riquadro Soluzione e selezionare **Rinomina...** .
 
 > [!NOTE]
 > Se è presente un nuovo progetto Unity senza script e la cartella Assets non viene visualizzata nel riquadro Soluzione in Visual Studio per Mac, aggiungere uno script C# iniziale nell'editor di Unity.
@@ -89,7 +89,7 @@ Queste aggiunte vengono riflesse nella finestra del progetto dell'editor di Unit
 
 È possibile eseguire il debug dei progetti Unity con Visual Studio per Mac.
 
-### <a name="start-debugging"></a>Avvia debug
+### <a name="start-debugging"></a>Consente di iniziare il debug
 
 Per avviare il debug:
 
@@ -103,7 +103,7 @@ Per avviare il debug:
 
 3. Quando il gioco è in esecuzione nell'editor di Unity mentre è connesso a Visual Studio, qualsiasi punto di interruzione incontrato causa la sospensione dell'esecuzione del gioco e la visualizzazione della riga di codice dove il gioco ha incontrato il punto di interruzione in Visual Studio per Mac.
 
-### <a name="stop-debugging"></a>Arrestare il debug
+### <a name="stop-debugging"></a>Arrestare l'esecuzione del debug
 
 Per arrestare il debug:
 

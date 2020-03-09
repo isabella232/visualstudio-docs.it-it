@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597087"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409160"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Sviluppare app con Progettazione flussi di lavoro
 

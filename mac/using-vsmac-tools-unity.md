@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 12/13/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: 4247e5cfb936d79c2b2bea5ac68a16164f0c0ef0
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406681"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410509"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Uso di Visual Studio per Mac Tools per Unity
 
@@ -39,7 +39,7 @@ Tuttavia, Visual Studio per Mac Tools per Unity estende la propria funzionalità
 
 3. Dopo che le lettere "**ont**" sono state digitate, viene visualizzato un elenco di suggerimenti di IntelliSense.
 
-   ![Utilizzo di IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Uso di IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
 4. La selezione nell'elenco può essere modificata in tre modi:
 
@@ -89,7 +89,7 @@ Queste aggiunte vengono riflesse nella finestra del progetto dell'editor di Unit
 
 È possibile eseguire il debug dei progetti Unity con Visual Studio per Mac.
 
-### <a name="start-debugging"></a>Avvia debug
+### <a name="start-debugging"></a>Consente di iniziare il debug
 
 Per avviare il debug:
 
@@ -109,7 +109,7 @@ Per avviare il debug:
 
 ![Selezionare Collega a Unity e gioca](media/using-vsmac-tools-unity-image8.png)
 
-### <a name="stop-debugging"></a>Arrestare il debug
+### <a name="stop-debugging"></a>Arrestare l'esecuzione del debug
 
 Per arrestare il debug:
 
