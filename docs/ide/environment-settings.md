@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588577"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408366"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Impostazioni dell'ambiente per Visual Studio
 
@@ -22,9 +22,9 @@ Sono disponibili le raccolte di impostazioni seguenti:
 
 - Generale
 - JavaScript
-- Visual Basic -
+- Visual Basic
 - Visual C#
-- Visual C++ -
+- Visual C++
 - Sviluppo Web
 - Sviluppo Web (solo codice)
 
