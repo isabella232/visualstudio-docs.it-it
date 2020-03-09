@@ -14,11 +14,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 6f81cc32604abe6d90ac0d263574e97df35c63bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593499"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409009"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Novità relative alla progettazione in Visual Studio 2017
 
@@ -30,7 +30,7 @@ Rimozione delle dipendenze indesiderate è una parte importante della gestione d
 
 L'esperienza di creazione è cambiata per rendere la convalida delle dipendenze più individuabile e più accessibile. La terminologia è cambiata da "diagramma livello" a "diagramma delle dipendenze".
 
-Il **architettura** menu contiene ora un comando per creare direttamente un diagramma delle dipendenze:
+Il menu **architettura** contiene ora un comando per creare direttamente un diagramma delle dipendenze:
 
 ![Elemento di dipendenza in tempo reale del menu architettura](media/dep-validation-whatsnew-02.png)
 
@@ -40,7 +40,7 @@ I nomi e le descrizioni delle proprietà del livello sono stati modificati per r
 
 Si noterà immediatamente l'effetto delle modifiche nei risultati dell'analisi per il codice corrente della soluzione ogni volta che si salva il diagramma. Non è necessario attendere il completamento del comando **convalida dipendenze** .
 
-Per altre informazioni, vedere [questo post di blog](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Per altri dettagli, vedere [questo post di Blog](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Sono state rimosse le finestre di progettazione UML
 
@@ -61,17 +61,17 @@ Il supporto per la visualizzazione dell'architettura di .NET C++ e del codice è
 
 Se sei un utente significative delle finestre di progettazione UML, è possibile continuare a usare Visual Studio 2015 o versioni precedenti, anche se si decide in uno strumento alternativo per le esigenze di UML.
 
-Per altre informazioni, vedere [questo post di blog](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Per altri dettagli, vedere [questo post di Blog](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Supporto di edizione per un'architettura e strumenti di modellazione
+## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a>supporto di <a name="VersionSupport" />Edition per gli strumenti di architettura e modellazione
 
 Visual Studio è disponibile in diverse edizioni. Non tutte le forniscono il supporto per l'architettura e strumenti di modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
 
-|**Funzionalità**|**Edizione Enterprise**|**Professional edition**|**Edizione community**|
+|**Funzionalità**|**Enterprise Edition**|**Edizione Professional**|**Edizione community**|
 |-|-|-|-|
 |**Mappe codice**|Sì|Solo supporta la lettura di mappe codice, il filtro di codice viene eseguito il mapping, aggiunta di nuovi nodi generici e la creazione di un grafico diretto da una selezione.|-|
 |**Diagrammi delle dipendenze**|Sì|Supporta solo la lettura di diagrammi delle dipendenze.|Supporta solo la lettura di diagrammi delle dipendenze.|
 |**Grafici diretti** (diagrammi DGML)|Sì|Sì|Sì|
-|**Clone di codice**|Sì|-|-|
+|**Clone del codice**|Sì|-|-|

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare un oggetto. File vsct | Microsoft Docs'
+title: 'Procedura: creare un oggetto. File vsct | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c3155ff69db461e652b11ff6e8ec6d405000244f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924176"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409098"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Procedura: Creare un file con estensione vsct
+# <a name="how-to-create-a-vsct-file"></a>Procedura: creare un file con estensione vsct
 
 Esistono diversi modi per creare un file di configurazione tabella comandi di Visual Studio (con*estensione vsct*) basato su XML.
 
-- È possibile creare un nuovo VSPackage nel modello [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di pacchetto.
+- È possibile creare un nuovo pacchetto VSPackage nel modello [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pacchetto.
 
 - Per generare un file da un file con *estensione CTC* esistente, è possibile utilizzare il compilatore di configurazione della tabella dei comandi basato su XML, *vsct. exe*.
 
@@ -35,7 +35,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
 1. Avviare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-2. Nel **File** dal menu **New**, quindi fare clic su **File**.
+2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **File**.
 
 3. Nel riquadro **modelli** fare clic su **file XML** e quindi su **Apri**.
 
@@ -53,7 +53,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: Creare un file con estensione vsct da un file CTC esistente
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: creare un file con estensione vsct da un file CTC esistente
 
 È possibile creare un file con *estensione vsct* basato su XML da un file di origine *CTC* esistente della tabella dei comandi. In questo modo, si può sfruttare il nuovo formato basato su XML del compilatore della tabella comandi di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (VSCT).
 
@@ -61,13 +61,13 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
 1. Ottenere una copia del linguaggio Perl.
 
-2. Ottenere una copia dello script Perl *ConvertCTCToVSCT.pl*, che in genere si trova nel  *\<percorso di installazione di Visual Studio SDK > cartella \VisualStudioIntegration\Tools\bin* .
+2. Ottenere una copia dello script Perl *ConvertCTCToVSCT.pl*, che in genere si trova nel *percorso di installazione di\<Visual Studio SDK > cartella \VisualStudioIntegration\Tools\bin* .
 
 3. Ottenere una copia del file di origine con *estensione CTC* che si desidera convertire.
 
 4. Inserire i file nella stessa directory.
 
-5. Nella finestra [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] del prompt dei comandi passare alla directory.
+5. Nella finestra del prompt dei comandi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] passare alla directory.
 
 6. Type
 
@@ -84,7 +84,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Procedura: Creare un file con estensione vsct da un file CTO esistente
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Procedura: creare un file con estensione vsct da un file CTO esistente
 
 È possibile creare un file con estensione *vsct* basato su XML da un file *CTO* binario esistente. Questa operazione consente di sfruttare il nuovo formato di compilatore della tabella comandi. Questo processo funziona anche se il file *CTO* è stato compilato da un file *CTC* . È possibile modificare e compilare il file con estensione *vsct* in un altro file CTO.
 
@@ -102,7 +102,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
     ```
 
-     dove \<ctofilename\> \<\> \< è il nome del file CTO, vsctfilename è il nome del file con estensione vsct che si vuole creare e symfilename è il nome di\> il file con *estensione ctsym* .
+     dove \<ctofilename\> è il nome del file *cto* \<vsctfilename\> è il nome del file con *estensione vsct* che si vuole creare e \<symfilename\> è il nome del file con *estensione ctsym* .
 
      Questo processo crea un nuovo file del compilatore della tabella comandi XML *. vsct* . È possibile modificare e compilare il file con *vsct. exe*, il compilatore vsct, come qualsiasi altro file con *estensione vsct* .
 
@@ -113,7 +113,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
 1. Aprire il file di progetto nell'editor. Se il progetto viene caricato, è necessario scaricarlo per primo.
 
-2. Aggiungere un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) che contiene un `VSCTCompile` elemento, come illustrato nell'esempio seguente.
+2. Aggiungere un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) che contiene un elemento `VSCTCompile`, come illustrato nell'esempio seguente.
 
     ```xml
     <ItemGroup>
@@ -124,9 +124,9 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
     ```
 
-     L' `ResourceName` elemento deve essere sempre impostato su `Menus.ctmenu`.
+     L'elemento `ResourceName` deve essere sempre impostato su `Menus.ctmenu`.
 
-3. Se il progetto contiene un file con *estensione resx* , aggiungere `EmbeddedResource` un elemento che contiene `MergeWithCTO` un elemento, come illustrato nell'esempio seguente:
+3. Se il progetto contiene un file con *estensione resx* , aggiungere un elemento `EmbeddedResource` che contenga un elemento `MergeWithCTO`, come illustrato nell'esempio seguente:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -136,9 +136,9 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
     ```
 
-     Questo markup deve entrare nell' `ItemGroup` elemento che contiene risorse incorporate.
+     Questo markup dovrebbe andare all'interno dell'elemento `ItemGroup` che contiene risorse incorporate.
 
-4. Aprire il file del pacchetto, in genere denominato  *\<\>NomeProgetto Package.cs* o  *\<NomeProgetto\>Package. vb*, nell'editor.
+4. Aprire il file del pacchetto, in genere denominato *\<nomeprogetto\>Package.cs* o *\<NomeProgetto\>Package. vb*nell'editor.
 
 5. Aggiungere un `ProvideMenuResource` attributo alla classe del pacchetto, come illustrato nell'esempio seguente.
 
@@ -146,7 +146,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
     [ProvideMenuResource("Menus.ctmenu", 1)]
     ```
 
-     Il primo valore del parametro deve corrispondere al valore dell' `ResourceName` attributo definito nel file di progetto.
+     Il primo valore del parametro deve corrispondere al valore dell'attributo `ResourceName` definito nel file di progetto.
 
 ## <a name="see-also"></a>Vedere anche
 - [Crea file con estensione vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
