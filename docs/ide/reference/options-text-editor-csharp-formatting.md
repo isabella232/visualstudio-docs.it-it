@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1176232eb3354a9b425e9432eb83037367ee7706
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596242"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408466"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Finestra di dialogo Opzioni: editor di C# testo \> \> stile di codice \> formattazione
 
@@ -40,7 +40,7 @@ Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** d
 
 Queste impostazioni influenzano *il momento in cui* l'editor del codice applica le opzioni di formattazione al codice.
 
-|Label|Descrizione|
+|Etichetta|Descrizione|
 |-----------|-----------------|
 |**Formatta automaticamente durante la digitazione**|Quando questa opzione è deselezionata, le opzioni **Formatta automaticamente istruzione dopo :** e **Formatta automaticamente blocco dopo }** sono disabilitate.|
 |**Formatta automaticamente istruzione dopo ;**|Quando questa opzione è selezionata, le istruzioni vengono formattate al completamento in base alle opzioni di formattazione selezionate per l'editor.|
@@ -60,7 +60,7 @@ Se si è già utilizzato il comando **Formatta documento** per applicare imposta
 
 Queste impostazioni configurano il comando **Formatta documento** per eseguire una pulizia del codice aggiuntiva in un file. Per altre informazioni su come applicare queste impostazioni, vedere [Format Document command](../code-styles-and-code-cleanup.md#apply-code-styles) (Comando Formatta documento).
 
-|Label|Descrizione|Regole di EditorConfig e Strumenti > Opzioni corrispondenti|
+|Etichetta|Descrizione|Regole di EditorConfig e Strumenti > Opzioni corrispondenti|
 |-----------|-----------------|-----------------|-----------------|
 |**Applica tutte le regole di formattazione di C# (rientro, ritorno a capo, spaziatura)**|Il comando **Formatta documento** corregge sempre i problemi di formattazione. Questa impostazione non può essere modificata.| [Opzioni di base di EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opzioni di formattazione di EditorConfig .NET](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#**  > **Formattazione**  > [**Rientro** oppure **Nuove righe** oppure **Spaziatura** oppure **Ritorno a capo**]|
 |**Esegui la pulizia aggiuntiva del codice durante la formattazione**|Se selezionata, applica le correzioni alle regole specificate di seguito nel comando **Edit.FormatDocument**.| N/D |
