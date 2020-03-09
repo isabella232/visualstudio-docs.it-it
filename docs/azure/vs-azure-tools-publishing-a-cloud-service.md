@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915948"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408676"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Pubblicazione di un servizio cloud con Visual Studio
 
@@ -33,11 +33,11 @@ Quando si pubblica l'applicazione Azure, è possibile eseguire una delle seguent
 
 - Creare un pacchetto del servizio: è possibile usare questo pacchetto e il file di configurazione del servizio per pubblicare l'applicazione in un ambiente di distribuzione dal [portale di Azure](https://portal.azure.com).
 
-- Pubblicare il progetto Azure da Visual Studio: per pubblicare un'applicazione direttamente in Azure, è possibile utilizzare la Pubblicazione guidata. Per altre informazioni, vedere [Procedura guidata Pubblica l'applicazione Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Pubblicare il progetto Azure da Visual Studio: per pubblicare l'applicazione direttamente in Azure, si utilizza la Pubblicazione guidata. Per altre informazioni, vedere [Procedura guidata Pubblica l'applicazione Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Per creare un pacchetto del servizio da Visual Studio
 
-1. Quando l'applicazione è pronta per la pubblicazione, aprire Esplora soluzioni, aprire il menu di scelta rapida per il progetto Azure contenente i ruoli e scegliere Pubblica.
+1. Quando si è pronti per pubblicare l'applicazione, aprire Esplora soluzioni, aprire il menu di scelta rapida per il progetto Azure contenente i ruoli e scegliere Pubblica.
 
 1. Per creare un pacchetto del servizio, attenersi alla procedura seguente:
 
@@ -79,7 +79,7 @@ La procedura seguente presuppone che si stia utilizzando la procedura guidata **
 
 ### <a name="enable-web-deploy-when-you-publish-your-application"></a>Abilitare Distribuzione Web quando si pubblica l'applicazione
 
-1. Per abilitare l'opzione **Abilita Distribuzione Web per tutti i ruoli Web**, è prima necessario configurare le connessioni di Desktop remoto. Selezionare **Abilita Desktop remoto per tutti i ruoli** e quindi specificare le credenziali usate per connettersi in remoto nella casella **Configurazione Desktop remoto** visualizzata. Vedere [Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+1. Per abilitare l'opzione **Abilita Distribuzione Web per tutti i ruoli Web** , è prima necessario configurare le connessioni di Desktop remoto. Selezionare **Abilita Desktop remoto per tutti i ruoli** e quindi specificare le credenziali usate per connettersi in remoto nella casella **Configurazione Desktop remoto** visualizzata. Vedere [Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
 1. Per abilitare Distribuzione Web per tutti i ruoli web nell'applicazione, selezionare **Abilita Distribuzione Web per tutti i ruoli web**.
 
@@ -145,7 +145,7 @@ Potrebbe essere necessario includere file specifici nel pacchetto di servizio in
 
     Il riferimento viene aggiunto all'elenco sotto la cartella **Riferimenti** .
 
-1. Aprire il menu di scelta rapida per l'assembly aggiunto e scegliere **Proprietà**. Verrà visualizzata la finestra Proprietà.
+1. Aprire il menu di scelta rapida per l'assembly aggiunto e scegliere **Proprietà**. La finestra Proprietà verrà visualizzata.
 
 1. Per includere questo assembly nel pacchetto del servizio, nell'elenco **Copia locale** scegliere **True**.
 

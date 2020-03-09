@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416386"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409228"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Tecniche e strumenti di debug che consentono di scrivere codice migliore
 
@@ -48,13 +48,13 @@ Per creare l'app:
 
     Per installare il carico di lavoro avendo già Visual Studio, fare clic su **Strumenti** > **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere lo **sviluppo multipiattaforma .NET Core** o il carico di lavoro sviluppo di applicazioni **desktop .NET** , quindi scegliere **modifica**.
 
-1. Apri Visual Studio.
+1. Aprire Visual Studio.
 
     ::: moniker range=">=vs-2019"
     Nella finestra iniziale scegliere **Crea un nuovo progetto**. Digitare **console** nella casella di ricerca e quindi scegliere **app console (.NET Core)** o **app console (.NET Framework)** . Scegliere **Avanti**. Digitare un nome di progetto come **Console_Parse_JSON** e fare clic su **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** , in oggetto **visivo C#** , scegliere **app console**, quindi nel riquadro centrale scegliere app **Console (.NET Core)** o **app console (.NET Framework)** . Digitare un nome come **Console_Parse_JSON** e fare clic su **OK**.
+    Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** , in oggetto **visivo C#** , scegliere **app console**, quindi nel riquadro centrale scegliere app **Console (.NET Core)** o **app console (.NET Framework)** . Digitare un nome come **Console_Parse_JSON** e fare clic su **OK**.
     ::: moniker-end
 
     Se non viene visualizzato il modello di progetto **app console (.NET Core)** o **app console (.NET Framework)** , passare a **strumenti** > **ottenere strumenti e funzionalità**, che consente di aprire il programma di installazione di Visual Studio. Scegliere lo **sviluppo multipiattaforma .NET Core** o il carico di lavoro sviluppo di applicazioni **desktop .NET** , quindi scegliere **modifica**.
@@ -253,7 +253,7 @@ Il zigzag verde va fuori.
 
 Quando sono state corrette tutte le controllo ortografia durante rosse e risolte, o almeno esaminate, tutte le controllo ortografia durante verdi, si è pronti per avviare il debugger ed eseguire l'app.
 
-Premere **F5** (**debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvio del debug") debug sulla barra degli strumenti Debug.
+Premere **F5** (**debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug sulla barra degli strumenti Debug.
 
 A questo punto, l'app di esempio genera un'eccezione `SerializationException` (un errore di Runtime). Ovvero, l'app viene soffocata sui dati che sta provando a serializzare. Poiché l'app è stata avviata in modalità di debug (debugger collegato), l'helper eccezioni del debugger consente di eseguire direttamente il codice che ha generato l'eccezione e fornisce un messaggio di errore utile.
 
