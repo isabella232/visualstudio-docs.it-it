@@ -7,29 +7,29 @@ ms.date: 07/30/2019
 ms.topic: conceptual
 description: Informazioni su come usare Azure DevOps come sottoscrittore di Visual Studio.
 ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983683"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408868"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Vantaggi Azure DevOps per i sottoscrittori di Visual Studio
 I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia gamma di funzionalità in Azure DevOps, incluse nella sottoscrizione come vantaggi. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.
 
-## <a name="sign-in"></a>Accedi
+## <a name="sign-in"></a>Accesso
 Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottoscrizione di Visual Studio o l'[identità alternativa](vs-alternate-identity.md), il riconoscimento avviene automaticamente.  In questo modo è possibile aggiungere anche un account aziendale o dell'istituto di istruzione (usato per l'accesso a Visual Studio, Office 365 o alla rete aziendale o dell'istituto di istruzione), in modo che sia possibile accedere ad Azure DevOps sia tramite l'account personale che tramite l'account aziendale o dell'istituto di istruzione.
 
 [Iscriversi per avere diritto a un'organizzazione gratuita di Azure DevOps](https://visualstudio.microsoft.com/team-services/)
 
-## <a name="eligibility"></a>Idoneità
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+## <a name="eligibility"></a>Eligibility
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato  | Repository Azure Boards & (Basic), Azure Test Plans, Azure Pipelines (self-hosted)       |  Yes          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL| Repository Azure Boards & (Basic), Azure Test Plans, Azure Pipelines (self-hosted)       |  Yes          |
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                        | Azure Boards e Repos (Basic)                                                            |  Yes          |
-| Visual Studio Professional con GitHub Enterprise | VL| Azure Boards e Repos (Basic)                                                            |  Yes          |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Yes          |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Yes          |
+| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato  | Repository Azure Boards & (Basic), Azure Test Plans, Azure Pipelines (self-hosted)       |  Sì          |
+| Visual Studio Enterprise con GitHub Enterprise   | VL| Repository Azure Boards & (Basic), Azure Test Plans, Azure Pipelines (self-hosted)       |  Sì          |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                        | Azure Boards e Repos (Basic)                                                            |  Sì          |
+| Visual Studio Professional con GitHub Enterprise | VL| Azure Boards e Repos (Basic)                                                            |  Sì          |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Sì          |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Sì          |
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), most VALUABLE Professional (MVP), Regional Director (Rd), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT software & Services Developer, ETP. Esclude: MCT software & Services, Imagine.*

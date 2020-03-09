@@ -16,11 +16,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115382"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410098"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -41,7 +41,7 @@ Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la 
 
 Il file eseguibile di installazione&mdash;o più specifico, il file del programma di avvio automatico&mdash;deve corrispondere o essere simile a uno dei seguenti.
 
-| Edizione | Nomefile |
+| Edizione | Nome file |
 |-------------|-----------------------|
 |Visual Studio Enterprise | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
@@ -70,7 +70,7 @@ Altri programmi di avvio automatico supportati includono [vs_TeamExplorer. exe](
 
 ## <a name="create-an-offline-installation-folder"></a>Creare una cartella di installazione offline
 
-Per completare questo passaggio è necessario avere una connessione Internet. Per creare un'installazione offline con tutte le lingue e tutte le funzionalità, usare un comando simile a uno degli esempi seguenti.
+Per completare questo passaggio è necessaria una connessione Internet. Per creare un'installazione offline con tutte le lingue e tutte le funzionalità, usare un comando simile a uno degli esempi seguenti.
 
    > [!IMPORTANT]
    > Un layout di Visual Studio completo richiede almeno 35 GB di spazio su disco e, pertanto, può essere necessario molto tempo per scaricarlo. Vedere la sezione [Personalizzare del layout di rete](#customize-the-network-layout) per informazioni su come creare un layout contenente solo i componenti che si vogliono installare.
@@ -292,5 +292,5 @@ Sono disponibili anche altre opzioni per il supporto. Per un elenco, vedere la p
 - [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 - [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing/)
 - [Aggiornare Visual Studio secondo una baseline di manutenzione](update-servicing-baseline.md)
-- [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md) (Usare i parametri della riga di comando per installare Visual Studio)
 - [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
