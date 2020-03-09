@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596047"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410483"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Benvenuti all'IDE di Visual Studio | Visual Basic
 
@@ -102,7 +102,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ::: moniker-end
 
-- Casella di ricerca
+- Casella Cerca
 
    La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La casella di ricerca è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. Quando si inizia a digitare il nome di un elemento da cercare, Visual Studio visualizza risultati che consentono di passare esattamente all'elemento desiderato. Se si vuole aggiungere una funzionalità a Visual Studio, ad esempio il supporto di un altro linguaggio di programmazione, la casella di ricerca fornisce risultati che consentono di aprire il programma di installazione di Visual Studio per installare un carico di lavoro o un singolo componente.
 
@@ -271,7 +271,7 @@ Visual Studio verrà quindi configurato per usare impostazioni di ambiente su mi
 
 Per informazioni su altri modi per personalizzare l'IDE, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="create-a-program"></a>Creare un programma
+## <a name="create-a-program"></a>Creare un programma.
 
 In questa sezione viene descritta in dettaglio la procedura per creare un programma semplice.
 
@@ -507,7 +507,7 @@ Esplorare più approfonditamente Visual Studio seguendo uno di questi articoli i
 > [Informazioni su come usare l'editor del codice](tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: progetti e soluzioni](tutorial-projects-solutions.md)
+> [Introduzione a progetti e soluzioni](tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

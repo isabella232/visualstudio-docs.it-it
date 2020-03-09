@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568957"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409002"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colori e stile per Visual Studio
 
@@ -311,7 +311,7 @@ Molti elementi dell'interfaccia utente comuni dispongono già di colori Contrast
 | --- | --- |
 | ActiveCaption | -Icone dell'IDE attivo e del pulsante della finestra con rafting al passaggio del mouse e premere<br />-Sfondo della barra del titolo per l'IDE e le finestre con rafting<br />-Sfondo della barra di stato predefinita |
 | ActiveCaptionText | -IDE attivo e finestre con rafting per il primo piano della barra del titolo (testo e glifi)<br />-Sfondo e bordo dei pulsanti della finestra attiva al passaggio del mouse e premere |
-| Controllo | -Casella combinata, elenco a discesa e controllo di ricerca predefinito e disabilitato sfondo, incluso il pulsante a discesa<br />-Sfondo del pulsante di destinazione di ancoraggio<br />-Sfondo della barra comandi<br />-Sfondo della finestra degli strumenti |
+| Control | -Casella combinata, elenco a discesa e controllo di ricerca predefinito e disabilitato sfondo, incluso il pulsante a discesa<br />-Sfondo del pulsante di destinazione di ancoraggio<br />-Sfondo della barra comandi<br />-Sfondo della finestra degli strumenti |
 | ControlDark | -Sfondo IDE<br />-Separatori dei menu e della barra dei comandi<br />-Bordo barra del comando<br />-Ombreggiature dei menu<br />-Scheda della finestra degli strumenti predefinita e bordo e separatore del passaggio del mouse<br />-Sfondo del pulsante di overflow del documento<br />-Bordo del glifo di destinazione dell'ancoraggio |
 | ControlDarkDark |-Non attivo, finestra scheda documento selezionata |
 | ControlLight |-Nascondi automaticamente bordo scheda<br />-Casella combinata e bordo dell'elenco a discesa<br />-Ancoraggio dello sfondo e del bordo della destinazione |
@@ -358,9 +358,9 @@ Costruire un tipo speciale di voce del registro di sistema Category in `[HKLM\SO
 
 Popolare il registro di sistema con due valori:
 
-| Nome | Tipo | Dati | Descrizione |
+| Name | Type | Data | Descrizione |
 | --- | --- | --- | --- |
-| Categoria | REG_SZ | GUID | GUID creato per identificare la categoria |
+| Category | REG_SZ | GUID | GUID creato per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | GUID del servizio VSPackage che supporta la categoria |
 
  Il servizio specificato nel registro di sistema deve fornire un'implementazione di [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) per la categoria corrispondente.
@@ -371,9 +371,9 @@ Costruire un tipo speciale di voce del registro di sistema Category in `[HKLM\SO
 
 Popolare il registro di sistema con due valori:
 
-| Nome | Tipo | Dati | Descrizione |
+| Name | Type | Data | Descrizione |
 |--- | --- | --- | --- |
-| Categoria | REG_SZ | GUID | GUID creato per identificare la categoria |
+| Category | REG_SZ | GUID | GUID creato per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | GUID del servizio VSPackage che supporta la categoria |
 
 Il servizio specificato nel registro di sistema deve fornire un'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> per il gruppo corrispondente.
@@ -421,7 +421,7 @@ A tale scopo, un pacchetto VSPackage deve:
 
 - **gestire gli eventi generati dall'IDE** implementando l'interfaccia [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) . L'IDE chiama il metodo appropriato che segue le modifiche dell'utente della pagina tipi di carattere e colori. Ad esempio, chiama il metodo [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) se è selezionato un nuovo tipo di carattere.
 
-  **OPPURE**
+  **OR**
 
 - eseguire **il polling dell'IDE per le modifiche**. Questa operazione può essere eseguita tramite l'interfaccia [errore IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementata dal sistema. Sebbene principalmente per il supporto della persistenza, il metodo [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) può ottenere informazioni relative al tipo di carattere e al colore per gli elementi visualizzati. Per ulteriori informazioni sulle impostazioni relative a tipi di carattere e colori, vedere l'articolo di MSDN [accesso alle impostazioni dei tipi di carattere e colori archiviati](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015).
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592477"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410116"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: eseguire il debug di un foglio di stile XSLT
 
@@ -24,7 +24,7 @@ Per preparare questa procedura dettagliata, copiare prima i due [file di esempio
 > [!NOTE]
 > Il debugger XSLT è disponibile solo nell'edizione Enterprise di Visual Studio.
 
-## <a name="start-debugging"></a>Avvia debug
+## <a name="start-debugging"></a>Consente di iniziare il debug
 
 1. Scegliere **apri** > **file**dal menu **file** .
 
