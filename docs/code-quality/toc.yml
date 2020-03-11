@@ -10,9 +10,9 @@
         - name: Panoramica
           displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
-        - name: Installazione
+        - name: Installare gli analizzatori del codice sorgente
           href: install-roslyn-analyzers.md
-        - name: Configurazione
+        - name: Configurare gli analizzatori del codice sorgente
           href: use-roslyn-analyzers.md
         - name: Disabilitare l'analisi codice
           href: disable-code-analysis.md
@@ -22,27 +22,24 @@
           href: analyzers-faq.md
         - name: Analizzatori FXCop
           items:
-            - name: Panoramica
-              displayName: fxcop analyzers
-              href: fxcop-analyzers.yml
-            - name: Installazione
+            - name: Installare gli analizzatori FXCop
               href: install-fxcop-analyzers.md
-            - name: Configurazione
+            - name: Eseguire la migrazione agli analizzatori FxCop
               items:
-                - name: Panoramica
+                - name: Eseguire la migrazione dall'analisi legacy agli analizzatori FxCop
+                  href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
+                - name: Domande frequenti
+                  href: fxcop-analyzers-faq.md
+                - name: Regole trasferite
+                  href: fxcop-rule-port-status.md
+            - name: Configurare gli analizzatori FxCop
+              items:
+                - name: Configurare regole e progetti
                   href: configure-fxcop-analyzers.md
                 - name: Opzioni ambito
                   href: fxcop-analyzer-options.md
                 - name: Abilitare una categoria di regole
                   href: analyzer-rule-sets.md
-            - name: Domande frequenti
-              href: fxcop-analyzers-faq.md
-        - name: Eseguire la migrazione dall'analisi legacy agli analizzatori FxCop
-          items:
-            - name: Panoramica
-              href: fxcop-analyzers.yml
-            - name: Regole trasferite
-              href: fxcop-rule-port-status.md
     - name: Analisi legacy
       items:
         - name: Panoramica
@@ -50,8 +47,8 @@
           href: static-code-analysis-for-managed-code-overview.md
         - name: Procedura dettagliata di analisi legacy
           href: walkthrough-analyzing-managed-code-for-code-defects.md
-        - name: Migrazione
-          href: fxcop-analyzers.yml
+        - name: Eseguire la migrazione agli analizzatori FxCop
+          href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: Eseguire manualmente l'analisi legacy
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Configurazione
@@ -157,7 +154,7 @@
           href: how-to-generate-code-metrics-data.md
         - name: Usare dati di metrica del codice
           href: working-with-code-metrics-data.md
-    - name: Riferimento
+    - name: Informazioni di riferimento
       items:
         - name: Set di regole
           items:
