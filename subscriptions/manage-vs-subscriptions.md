@@ -3,15 +3,15 @@ title: Gestire le sottoscrizioni di Visual Studio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706975"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78967912"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -99,7 +99,7 @@ Dopo aver aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>D: Se non si rinnova la sottoscrizione, per quanto tempo Microsoft mantiene i dati?
 R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per diversi periodi di tempo.
 
-| Canale                                                | Durata (giorni) |
+| Channel                                                | Durata (giorni) |
 |--------------------------------------------------------|-----------------|
 |    Vendita al dettaglio (ad esempio, tramite Microsoft Store)               |    360          |
 |    Volume Licensing Service Center (VLSC)              |    180          |
@@ -112,3 +112,17 @@ R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per d
 > [!NOTE]
 > - Se si sceglie di chiudere l'account Microsoft o di Azure AD, i dati personali verranno resi anonimi immediatamente.
 > - Se si hanno sottoscrizioni attive, i dati personali non verranno rimossi totalmente.
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Passaggi successivi
+Gestisci le sottoscrizioni per la tua organizzazione?  Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio:
+- [Assegna singole sottoscrizioni](assign-license.md)
+- [Assegna più sottoscrizioni](assign-license-bulk.md)
+- [Modificare sottoscrizioni](edit-license.md)
+- [Eliminare sottoscrizioni](delete-license.md)
+- [Determinare l'utilizzo massimo](maximum-usage.md)

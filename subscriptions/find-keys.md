@@ -3,15 +3,15 @@ title: Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come trovare, richiedere ed esportare codici Product Key nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 4efdc118961b6e773e33eb16e40c6e0f09a13dc7
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 984a89f5085867ea7b23735d05d0e22ef51dcfdb
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378015"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937502"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual Studio
 Questo articolo illustra come individuare, richiedere ed esportare codici Product Key da https://my.visualstudio.com/productkeys.  Per altre informazioni sull'attivazione di un prodotto con un codice Product Key, sulle versioni per attivazione singola e per contratti multilicenza dei codici Product Key e sui limiti giornalieri per la richiesta di tali codici, vedere la [panoramica dei codici Product Key](product-keys.md).
@@ -28,10 +28,10 @@ Alcuni codici vengono specificati automaticamente, ad esempio quelli "statici", 
 
 ### <a name="product-key-types"></a>Tipi di codici Product Key
 
-|    Tipo di codice           |    DESCRIZIONE                                                                                                                                                                                                           |
+|    Tipo chiave           |    Descrizione                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Non applicabile                    |    Per installare questo prodotto non è necessario alcun codice.                                                       |
-|    Attivazione singola                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |
+|    Vendita al dettaglio                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |
 |    Attivazione multipla        |    Un codice ad attivazione multipla (MAK) consente di attivare più installazioni di un prodotto con lo stesso codice. I codici MAK vengono generalmente usati con le versioni dei prodotti destinate a contratti multilicenza. Viene generalmente offerto un solo codice MAK per sottoscrizione.    |
 |    Codice per attivazione statica    |    I codici per attivazione statica vengono offerti per i prodotti che non richiedono attivazione e possono essere usati per un numero qualsiasi di installazioni.                                                                                                                  |
 |    Codice personalizzato                 |    I codici personalizzati offrono azioni o informazioni speciali per attivare o installare il prodotto.                                                                                                                                                                |
@@ -64,6 +64,12 @@ Come si può osservare, sono elencate diverse versioni.  Un codice Product Key �
 > Se la sottoscrizione scade, non sarà più possibile richiedere nuovi codici o esportare i codici richiesti.
 
 Per esportare i codici, è sufficiente fare clic sul collegamento **Export all keys** (Esporta tutti i codici Product Key) all'estrema destra della pagina Codici "Product Key".  Verrà creato un file con estensione xml intitolato KeysExport.xml e si potrà scegliere se aprire o salvare il file.  Sarà necessario aprire il file con un'applicazione in grado di gestire file con estensione xml.  Ad esempio, è possibile aprire il file come una cartella di lavoro di sola lettura in Excel.
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Quando è il momento di scaricare il software e di usare i codici Product Key, visitare la pagina https://my.visualstudio.com/downloads.  Per altre informazioni sul download del software, vedere la [panoramica sul download](download-software.md).

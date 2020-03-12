@@ -3,15 +3,15 @@ title: Download di titoli software nelle sottoscrizioni di Visual Studio | Micro
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/17/2020
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Informazioni su come individuare e scaricare titoli software Microsoft inclusi nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 062454a6f5af4a0452b55bd632986f426347eab5
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476830"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937487"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Download di titoli software nelle sottoscrizioni di Visual Studio
 A seconda della sottoscrizione di Visual Studio, può essere disponibile un'ampia gamma di titoli software Microsoft.  Questo articolo descrive come individuare e scaricare il software necessario per sfruttare al meglio la sottoscrizione. 
@@ -50,14 +50,22 @@ Per ottenere un codice Product Key per il download, è possibile selezionare la 
 > [!div class="mx-imgBorder"]
 > ![Richiedere codici Product Key di Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
 
-## <a name="next-steps"></a>Passaggi successivi
-Per altre informazioni sull'individuazione, sulla richiesta e sull'esportazione di codici Product Key, vedere la documentazione relativa ai codici Product Key:
-- [Panoramica dei codici Product Key](product-keys.md)
-- [Individuare e richiedere codici Product Key](find-keys.md)
-
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Passaggi successivi
+Per ulteriori informazioni sull'individuazione, la richiesta e l'esportazione dei codici Product Key, consultare la documentazione relativa ai codici "Product Key":
+- [Panoramica dei codici Product Key](product-keys.md)
+- [Individuare e richiedere codici Product Key](find-keys.md)
+
+Scopri come sfruttare i vantaggi di altri eccezionali vantaggi, ad esempio:
+- [Credito individuale per Azure DevTest](vs-azure.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [IDE di Visual Studio](vs-ide-benefit.md)
+
+
+
 

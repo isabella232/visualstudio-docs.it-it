@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
-ms.translationtype: MT
+ms.openlocfilehash: d6ecbfc3917898de1b55a6a1e1edc411d8b01234
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590806"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78968355"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -47,7 +47,7 @@ Questa immagine presenta Visual Studio con un progetto aperto e varie finestre d
 
 Visual Studio è disponibile per Windows e Mac. [Visual Studio per Mac](/visualstudio/mac/) include numerose funzionalità di Visual Studio 2017 ed è ottimizzato per lo sviluppo di app multipiattaforma e per dispositivi mobili. Questo articolo è incentrato sulla versione Windows di Visual Studio 2017.
 
-Sono disponibili tre edizioni di Visual Studio 2017: Community, Professional ed Enterprise. Vedere [Confronta gli IDE di Visual Studio2017](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
+Sono disponibili tre edizioni di Visual Studio 2017: Community, Professional ed Enterprise. Vedere [confrontare le edizioni di Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Sono disponibili tre edizioni di Visual Studio 2017: Community, Professional ed 
 
 Visual Studio è disponibile per Windows e Mac. [Visual Studio per Mac](/visualstudio/mac/) include numerose funzionalità di Visual Studio 2019 ed è ottimizzato per lo sviluppo di app multipiattaforma e per dispositivi mobili. Questo articolo è incentrato sulla versione Windows di Visual Studio 2019.
 
-Sono disponibili tre edizioni di Visual Studio 2019: community, Professional ed Enterprise. Vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
+Sono disponibili tre edizioni di Visual Studio 2019: community, Professional ed Enterprise. Per informazioni sulle funzionalità supportate in ogni edizione, vedere [confrontare le edizioni di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) .
 
 ::: moniker-end
 
@@ -91,7 +91,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ![Elenco dei membri di Visual Studio](../media/intellisense-list-members.png)
 
-- Casella di ricerca
+- Casella Cerca
 
    La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La casella di ricerca è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. Quando si inizia a digitare il nome di un elemento da cercare, Visual Studio visualizza risultati che consentono di passare esattamente all'elemento desiderato. Se si vuole aggiungere una funzionalità a Visual Studio, ad esempio il supporto di un altro linguaggio di programmazione, la casella di ricerca fornisce risultati che consentono di aprire il programma di installazione di Visual Studio per installare un carico di lavoro o un singolo componente.
 
@@ -160,13 +160,13 @@ Per iniziare, [scaricare Visual Studio](https://visualstudio.microsoft.com/downl
 
 Quando si apre per la prima volta Visual Studio, è possibile scegliere facoltativamente di [accedere](../../ide/signing-in-to-visual-studio.md) con l'account Microsoft o con l'account aziendale o dell'istituto di istruzione.
 
-## <a name="create-a-program"></a>Creare un programma
+## <a name="create-a-program"></a>Creare un programma.
 
 In questa sezione viene descritta in dettaglio la procedura per creare un programma semplice.
 
 ::: moniker range="vs-2017"
 
-1. Apri Visual Studio.
+1. Aprire Visual Studio.
 
 1. Nella barra dei menu scegliere **File** > **nuovo** **progetto**>.
 
@@ -232,7 +232,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 ::: moniker range=">=vs-2019"
 
-1. Apri Visual Studio.
+1. Aprire Visual Studio.
 
    Viene visualizzata la finestra iniziale con varie opzioni per clonare un repository, aprire un progetto recente o creare un nuovo progetto.
 

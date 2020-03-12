@@ -1,19 +1,19 @@
 ---
 title: Scrivere unit test per C/C++
 description: Scrivi C++ unit test in Visual Studio usando vari Framework di test, tra cui CTest, Boost. test e Google test.
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755593"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937548"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Scrivere unit test per C/C++ in Visual Studio
 
@@ -41,7 +41,7 @@ I progetti di unit test C++ supportano [CodeLens](../ide/find-code-changes-and-o
 
 - **Boost.Test** è incluso come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++** . È integrato con **Esplora test**, ma attualmente non dispone di un modello di progetto. Deve essere configurata manualmente. Per altre informazioni, vedere [procedura: usare boost. test in Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- Il supporto per **CTest** è incluso nel componente **CMake Tools per C++** , che fa parte del carico di lavoro **Sviluppo di applicazioni desktop con C++** . Tuttavia, CTest non è ancora completamente integrato con **Esplora test** . Per altre informazioni, vedere [procedura: usare CTest in Visual Studio](how-to-use-ctest-for-cpp.md).
+- Il supporto per **CTest** è incluso nel componente **CMake Tools per C++** , che fa parte del carico di lavoro **Sviluppo di applicazioni desktop con C++** . Per altre informazioni, vedere [procedura: usare CTest in Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 e versioni precedenti**
 

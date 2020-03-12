@@ -3,15 +3,15 @@ title: Gestione di team di grandi dimensioni e collaboratori esterni | Visual St
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni sulla responsabilità degli amministratori per gestire le sottoscrizioni per i team di grandi dimensioni e per i collaboratori esterni.
-ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850042"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947053"
 ---
 # <a name="large-teams-and-external-contractors"></a>Team di grandi dimensioni e collaboratori esterni
 Gli amministratori delle sottoscrizioni di Visual Studio sono responsabili di assicurarsi che ogni utente che interagisce con software di Visual Studio concesso in licenza disponga della licenza appropriata con la propria sottoscrizione di Visual Studio.
@@ -33,9 +33,15 @@ I collaboratori esterni possono disporre di licenze per interagire con l'ambient
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Condizioni dei contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle responsabilità degli amministratori:
 - [Responsabilità degli amministratori](admin-responsibilities.md)
-- [Inventario dell'ambiente di pre-produzione](admin-inventory.md)
+- [Inventario dell'ambiente di preproduzione](admin-inventory.md)
 - [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)
 - Usare [Utilizzo massimo](maximum-usage.md) per tenere traccia degli impegni di acquisto
