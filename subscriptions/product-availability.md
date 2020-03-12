@@ -3,15 +3,15 @@ title: Disponibilità dei prodotti per i download di software nelle sottoscrizio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni sulla disponibilità dei prodotti nei download di software per le sottoscrizioni di Visual Studio
-ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 30dd3a216274e189d4d1afe2321bd1db7b66fb94
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706817"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947095"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilità dei prodotti per i download di software nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.
@@ -36,6 +36,12 @@ Il numero e il tipo di download dipendono dal livello di sottoscrizione e dall'a
 > Se sono presenti più sottoscrizioni associate allo stesso indirizzo di posta elettronica, i titoli dei software disponibili sono determinati dalla sottoscrizione di livello **più elevato** disponibile.  Ad esempio, se si ha una sottoscrizione Visual Studio Enterprise e una sottoscrizione Visual Studio Test Professional, si avrà accesso ai titoli di software inclusi nella sottoscrizione Visual Studio Enterprise, indipendentemente dalla sottoscrizione attualmente in uso nel portale delle sottoscrizioni. 
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Alcuni download di software potrebbero richiedere un codice Product Key per l'installazione e l'attivazione.  Per informazioni dettagliate su come ottenere e gestire i codici Product Key, vedere l'articolo [Uso di codici Product Key in sottoscrizioni di Visual Studio](product-keys.md). 

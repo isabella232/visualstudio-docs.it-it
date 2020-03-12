@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2019
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità di Visual Studio 2019.
-ms.date: 12/10/2019
+ms.date: 02/28/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 9e506a2a0101449ef598734cece5b1330bcd2655
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125364"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947038"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
@@ -114,7 +114,7 @@ Per altre informazioni, vedere il post di blog [Better multi-monitor experience 
 
 Per altre informazioni, vedere il post di Blog relativo all' [annuncio di .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Collaborazione
+## <a name="collaborate"></a>Collaborare
 
 Vedere il video seguente per altre informazioni su come è possibile lavorare in team per risolvere i problemi. <br><br>*Lunghezza video: 4,22 minuti*
 
@@ -204,9 +204,9 @@ Per altre informazioni, vedere la pagina [Eseguire il debug di app di Azure ASP.
 
 Per altre informazioni, vedere il post di Blog relativo alle [proprietà di aggiungibili: Debug & Visualizza oggetti gestiti](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) .
 
-## <a name="whats-next"></a>Argomenti successivi
+## <a name="whats-next"></a>Passaggi successivi
 
-Visual Studio 2019 viene aggiornato spesso con nuove funzionalità in grado di migliorare ulteriormente l'esperienza di sviluppo. Per altre informazioni sulle innovazioni più recenti, consultare il [blog di Visual Studio](https://devblogs.microsoft.com/visualstudio/). Per saperne di più sulle funzionalità rilasciate finora in anteprima, vedere le [note sulla versione di anteprima](/visualstudio/releases/2019/release-notes-preview/).
+Visual Studio 2019 viene aggiornato spesso con nuove funzionalità in grado di migliorare ulteriormente l'esperienza di sviluppo. Per altre informazioni sulle innovazioni più recenti, consultare il [blog di Visual Studio](https://devblogs.microsoft.com/visualstudio/). Per un resoconto di quanto è stato rilasciato in anteprima, vedere le note sulla versione di [Anteprima](/visualstudio/releases/2019/release-notes-preview/). Per un elenco degli elementi che si prevede di rilasciare successivamente, vedere la [Roadmap di Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
 Per altri dettagli sulle funzionalità in corso di sviluppo per Visual Studio 2019, vedere la pagina [Visual Studio Roadmap](/visualstudio/productinfo/vs-roadmap/).
 
@@ -221,7 +221,6 @@ Per altri dettagli sulle funzionalità in corso di sviluppo per Visual Studio 20
 ## <a name="see-also"></a>Vedere anche
 
 * [Note sulla versione di Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
-* [Novità di Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Note sulla versione di Visual Studio 2019 per Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
-* [Microsoft Build 2019 conference](https://www.microsoft.com/build)
-* [Microsoft Connect(); 2018 conference](https://www.microsoft.com/connectevent)
+* [Novità di Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Microsoft Build Conference](https://www.microsoft.com/build)

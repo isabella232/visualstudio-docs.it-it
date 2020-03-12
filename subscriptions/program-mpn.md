@@ -3,15 +3,15 @@ title: Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner N
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
-ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ddafa2daef34d4a23de448235ffa186c1bb27319
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281698"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947049"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
 
@@ -31,9 +31,9 @@ Quando un partner ottiene una competenza, sia di livello Silver che Gold, ottien
 
 | Competenza                                  | Sottoscrizioni aggiuntive ottenute per la competenza **Silver** | Sottoscrizioni aggiuntive ottenute per la competenza **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
-| Sviluppo di applicazioni                     | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
+| Sviluppo applicazioni                     | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
 | Cloud Customer Relationship Management      | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
-| Cloud Platform                              | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
+| Piattaforma cloud                              | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
 | Cloud Productivity                          | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
 | DevOps                                      | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise                |
 
@@ -74,6 +74,13 @@ Con le sottoscrizioni di Visual Studio offerte tramite MPN, l'utente con licenza
 - [MPN Program Administrator Guide](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) (Manuale dell'amministratore del programma MPN) - Include istruzioni su come assegnare sottoscrizioni di Visual Studio ai dipendenti MPN.
 - [Gestione delle sottoscrizioni di Visual Studio incluse nelle appartenenze Microsoft Partner Network (MPN)](manage-mpn-subscriptions.md)
 - [Condizioni di licenza](https://www.microsoft.com/useterms/) -Le sottoscrizioni di Visual Studio offerte tramite MPN sono soggette al contratto di licenza con l'utente finale per le sottoscrizioni di Visual Studio non destinate alla rivendita.
+
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

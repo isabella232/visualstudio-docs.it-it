@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 06362bcf00bc35fdef701e26fe03694b038e88b1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 78935673dbf57f75988d4c0a9e862b11e2fe855f
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587459"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937523"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installare gli analizzatori FxCop in Visual Studio
 
@@ -72,7 +72,7 @@ Usare le linee guida seguenti per determinare la versione del pacchetto di anali
 
 | Versione di Visual Studio | Versione del pacchetto dell'analizzatore FxCop |
 | - | - |
-| Visual Studio 2019 (tutte le versioni)<br />Visual Studio 2017 versione 15,8 e successive | [latest](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
+| Visual Studio 2019 (tutte le versioni)<br />Visual Studio 2017 versione 15,8 e successive | [Ultima](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 versione 15,5 a 15,7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Visual Studio 2017 versione 15,3 a 15,4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 versione 15,0 a 15,2 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -156,4 +156,4 @@ Se si vuole verificare se l'estensione è installata, selezionare **estensioni**
 
 - [Panoramica degli analizzatori di codice in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Usare gli analizzatori del codice in Visual Studio](../code-quality/use-roslyn-analyzers.md)
-- [Eseguire la migrazione dall'analisi legacy agli analizzatori di codice](../code-quality/fxcop-analyzers.yml)
+- [Eseguire la migrazione dall'analisi legacy agli analizzatori di codice](../code-quality/migrate-from-legacy-analysis-to-fxcop-analyzers.md)
