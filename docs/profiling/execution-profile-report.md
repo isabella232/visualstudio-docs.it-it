@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969992"
 ---
 # <a name="execution-profile-report"></a>Report del profilo di esecuzione
@@ -28,16 +28,16 @@ Il rapporto del profilo di esecuzione è un profilo di campionamento tradizional
 
   Nella tabella seguente vengono illustrate le colonne del rapporto.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
-|nome|Nome della funzione per ogni livello dello stack di chiamate.|
+|Nome|Nome della funzione per ogni livello dello stack di chiamate.|
 |Campioni inclusivi|Numero totale di campioni raccolti per tutti gli stack accumulati nel livello dell'albero dello stack di chiamate. Il numero inclusivo è la somma dei campioni esclusivi per questa funzione e dei contatori inclusivi per tutti i nodi figlio.|
 |Campioni esclusivi|Numero totale di campioni raccolti per cui questa funzione è il livello più basso dello stack di chiamate.|
 |% inclusivi|La percentuale di campioni totali visualizzata nella colonna dei campioni inclusivi. Le percentuali vengono arrotondate a due cifre decimali.|
 |% esclusivi|La percentuale di campioni totali visualizzata nella colonna dei campioni esclusivi. Le percentuali vengono arrotondate a due cifre decimali.|
 |Dettagli|Nome completo della funzione. Include il conteggio delle righe, se disponibile.|
 
- Questa tabella di report è illustrata in [Tempo di esecuzione (visualizzazione Thread)](../profiling/execution-time-threads-view.md).
+ Questa tabella del report può essere visualizzata nella visualizzazione Tempo di [esecuzione (visualizzazione Thread).](../profiling/execution-time-threads-view.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

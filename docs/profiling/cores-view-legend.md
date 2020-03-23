@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553163"
 ---
 # <a name="cores-view-legend"></a>Legenda della visualizzazione Core
@@ -36,4 +36,4 @@ La legenda della visualizzazione Core identifica ogni thread in base al colore e
 |Percentuale di scambi di contesto tra core diversi|Calcolata come percentuale dividendo il numero di scambi di contesto tra core diversi per il numero di scambi di contesto totali. Maggiore sarà questa percentuale, maggiore sarà l'effetto complessivo del sovraccarico degli scambi di contesto tra core diversi sulle prestazioni di questo particolare thread.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Cores View](../profiling/cores-view.md) (Visualizzazione Core)
+- [Visualizzazione Core](../profiling/cores-view.md)

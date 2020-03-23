@@ -13,19 +13,19 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772162"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Visualizzazioni dei dati del metodo di campionamento del profiler
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di campionamento.
 
 > [!NOTE]
-> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 - [Visualizzazione Riepilogo](../profiling/summary-view-sampling-data.md)
 
  Elenca le funzioni eseguite più di frequente al momento della raccolta dei campioni e le funzioni che eseguivano la maggior parte del lavoro individuale.
@@ -38,7 +38,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Organizza i dati di profilatura in base al modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni in esecuzione al momento della raccolta dei campioni.
 
-- [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
+- [Visualizzazione Chiamante/chiamato - Dati di campionamentoCaller / Callee view - Sampling Data](../profiling/caller-callee-view-sampling-data.md)
 
  Visualizza i dati di profilatura per una funzione selezionata e le funzioni che hanno chiamato e sono state chiamate dalla funzione selezionata.
 
@@ -50,12 +50,12 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.
 
-- [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Visualizzazione Puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
 
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.
 
-## <a name="reference"></a>Reference
-- [Visualizzazione Processo](../profiling/process-view.md)
+## <a name="reference"></a>Informazioni di riferimento
+- [Visualizzazione processo](../profiling/process-view.md)
 
  Elenca l'ora di inizio e di fine di processi e thread.
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23877f9b94b498d87a89ae8e657aa2fe52984953
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72634918"
 ---
 # <a name="shader-designer-nodes"></a>Nodi della finestra di progettazione shader
@@ -44,8 +44,8 @@ Poiché la finestra di progettazione shader deve alla fine generare codice sorge
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Nodi costanti](../designers/constant-nodes.md)|Vengono descritti i nodi che è possibile usare per rappresentare i valori letterali e le informazioni di stato vertex interpolate nei calcoli dello shader. Poiché lo stato vertex è interpolato e quindi diverso per ogni pixel, a ogni istanza di pixel shader viene assegnata una versione diversa della costante.|
-|[Nodi Parameter](../designers/parameter-nodes.md)|Descrive i nodi che è possibile usare per rappresentare posizione della fotocamera, proprietà del materiale, parametri di illuminazione, ora e altre informazioni sullo stato dell'app nei calcoli dello shader.|
+|[Nodi parametro](../designers/parameter-nodes.md)|Descrive i nodi che è possibile usare per rappresentare posizione della fotocamera, proprietà del materiale, parametri di illuminazione, ora e altre informazioni sullo stato dell'app nei calcoli dello shader.|
 |[Nodi di trama](../designers/texture-nodes.md)|Descrive i nodi che è possibile usare per effettuare il campionamento di più geometrie e tipi di trama e i modi comuni per produrre o trasformare le coordinate di trama.|
 |[Nodi di matematica](../designers/math-nodes.md)|Descrive i nodi che è possibile usare per eseguire operazioni algebriche, logiche, trigonometriche e altre operazioni matematiche che eseguono il mapping direttamente alle istruzioni di HLSL.|
 |[Nodi di utilità](../designers/utility-nodes.md)|Descrive i nodi che è possibile usare per eseguire calcoli di illuminazione comuni e altre operazioni comuni che non eseguono il mapping direttamente alle istruzioni di HLSL.|
-|[Nodi del filtro](../designers/filter-nodes.md)|Descrivei i nodi che è possibile usare per eseguire il filtraggio della trama e del colore.|
+|[Filtrare i nodi](../designers/filter-nodes.md)|Descrivei i nodi che è possibile usare per eseguire il filtraggio della trama e del colore.|

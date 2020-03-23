@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71693006"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Analisi utilizzo software di Visual Studio
@@ -21,13 +21,13 @@ Analisi utilizzo software di Visual Studio è stato pensato per aiutare Microsof
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 > [!NOTE]
-> Le impostazioni di consenso esplicito per la telemetria VSCEIP non si applicano a "segnala un problema" in Visual Studio. Quando si segnala un problema, i log vengono raccolti e inviati a Microsoft solo quando si fornisce l'autorizzazione facendo clic su "Invia". Se si è interessati a gestire i log prima di inviare a "segnala un problema", vedere la pagina relativa alla [privacy dei dati di feedback](./developer-community-privacy.md) per ulteriori dettagli.
+> Le impostazioni di telemetria VSCEIP non si applicano a 'Segnala un problema' in Visual Studio.VSCEIP telemetry telemetry sopt in or out settings do not apply to 'Report a Problem' in Visual Studio. Quando si segnalano i registri di un problema vengono raccolti e inviati a Microsoft solo quando si fornisce l'autorizzazione facendo clic su 'Invia'. Se sei interessato a gestire i log prima di inviarlo a "Segnala un problema", consulta [Privacy dei dati](./developer-community-privacy.md) di feedback per ulteriori dettagli.
 
 ## <a name="opt-in-or-out"></a>Acconsentire o rifiutare
 
 Analisi utilizzo software di Visual Studio è attivato per impostazione predefinita. È possibile disattivarlo o riattivarlo seguendo queste istruzioni:
 
-1. In Visual Studio scegliere **Guida** > **Invia commenti e suggerimenti**, quindi selezionare **Impostazioni**.
+1. In Visual Studio scegliere Invia**commenti**e suggerimenti della **Guida** > e quindi selezionare **Impostazioni**.
 
    Verrà aperta la finestra di dialogo **Analisi utilizzo software di Visual Studio**.
 
@@ -39,13 +39,13 @@ Analisi utilizzo software di Visual Studio è attivato per impostazione predefin
 
 Se si installa [Build Tools per Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017), sarà necessario aggiornare il Registro di sistema per configurare Analisi utilizzo software di Visual Studio. I clienti aziendali possono creare criteri di gruppo per partecipare o meno ad Analisi utilizzo software di Visual Studio impostando criteri basati sul Registro di sistema.
 
-Le chiavi e le impostazioni del Registro di sistema sono le seguenti:
+Le relative impostazioni e chiavi del Registro di sistema sono le seguenti:
 
 ::: moniker range="vs-2017"
 
 - In un sistema operativo a 64 bit, chiave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
 - In un sistema operativo a 32 bit, chiave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
-- Quando Criteri di gruppo è abilitato, chiave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+- Quando in Criteri di gruppo è attivata, Chiave HKEY_LOCAL_MACHINE **software**
 
 ::: moniker-end
 
@@ -53,26 +53,26 @@ Le chiavi e le impostazioni del Registro di sistema sono le seguenti:
 
 - In un sistema operativo a 64 bit, chiave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
 - In un sistema operativo a 32 bit, chiave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
-- Quando Criteri di gruppo è abilitato, chiave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+- Quando in Criteri di gruppo è attivata, Chiave HKEY_LOCAL_MACHINE **software**
 
 ::: moniker-end
 
-Voce = **OptIn**
+Immissione : **Optin**
 
 Valore = (DWORD)
 
-- **0** indica il rifiuto (disattiva Analisi utilizzo software di Visual Studio)
-- **1** indica il consenso (attiva Analisi utilizzo software di Visual Studio)
+- **0** è stato disattivato (disattivare VSCEIP)
+- **1** ha attivato (attivare VSCEIP)
 
 > [!CAUTION]
-> Modifiche non corrette al Registro di sistema potrebbero danneggiare gravemente il sistema. Prima di modificare il Registro di sistema, è necessario eseguire il backup dei dati importanti sul computer. Se si riscontrano problemi dopo l'applicazione di modifiche manuali, è anche possibile usare l'opzione di avvio **Ultima configurazione valida nota**.
+> Se il Registro di sistema viene modificato in modo non appropriato, il sistema potrebbe venire gravemente danneggiato. Prima di modificare il Registro di sistema, è consigliabile eseguire il backup di tutti i dati importanti disponibili nel computer. È inoltre possibile utilizzare l'opzione di avvio **Ultima configurazione sicura** mente sicura se si verificano problemi dopo l'applicazione di modifiche manuali.
 
 Per altre informazioni sui dati raccolti, elaborati o trasmessi da Analisi utilizzo software di Visual Studio, leggere l'[Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="see-also"></a>Vedere anche
 
 * [Diagnostic information collected by Visual Studio](diagnostic-data-collection.md) (Informazioni di diagnostica raccolte da Visual Studio)
-* [Opzioni commenti e suggerimenti su Visual Studio](../ide/feedback-options.md)
+* [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)
 * [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Community di sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/)
-* [Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement)
+* [Community per sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/)
+* [Informativa sulla privacy Microsoft](https://privacy.microsoft.com/privacystatement)

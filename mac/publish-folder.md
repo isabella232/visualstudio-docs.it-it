@@ -9,24 +9,24 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73715902"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Pubblicare in una cartella usando Visual Studio per Mac
 
-È possibile usare lo strumento di pubblicazione per pubblicare la console di .NET Core o ASP.NET Core le app in una cartella.
+È possibile usare lo strumento pubblica per pubblicare .NET Core Console o ASP.NET app Core in una cartella.
 
 ## <a name="prerequisites"></a>Prerequisites
 
 - [Visual Studio 2019 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installato con .NET Core abilitato.
-- Una console di .NET Core o un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- Una console .NET Core o un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Pubblicare in una cartella
 
-Con Visual Studio per Mac è possibile pubblicare i progetti .NET Core in una cartella usando lo strumento di pubblicazione. Dopo la pubblicazione in una cartella è possibile trasferire i file in un altro ambiente. Per eseguire la pubblicazione in una cartella attenersi alla procedura seguente.
+Con Visual Studio per Mac è possibile pubblicare i progetti .NET Core in una cartella usando lo strumento pubblica. Dopo la pubblicazione in una cartella è possibile trasferire i file in un ambiente diverso. Per eseguire la pubblicazione in una cartella attenersi alla procedura seguente.
 
  1. Nel riquadro della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
 

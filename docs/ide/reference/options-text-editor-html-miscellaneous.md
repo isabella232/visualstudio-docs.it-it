@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666186"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opzioni, Editor di testo, HTML (Web Form), Varie
 
-Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere alla pagina, nella barra dei menu scegliere **Strumenti** > **Opzioni** e quindi espandere **Editor di testo** > **HTML (Web Form)**  > **Varie**.
+Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere a questa pagina, sulla barra dei menu scegliere**Opzioni** **degli strumenti** > , quindi espandere Editor di **testo** > **HTML (Web Form)** > **Varie**.
 
 ## <a name="miscellaneous-html-options"></a>Altre opzioni HTML
 

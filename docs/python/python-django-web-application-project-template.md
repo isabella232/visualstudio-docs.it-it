@@ -11,15 +11,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784842"
 ---
 # <a name="django-web-project-template"></a>Modello di progetto Web Django
 
-[Django](https://www.djangoproject.com/) è un framework Python di alto livello progettato per lo sviluppo rapido, sicuro e scalabile di applicazioni Web. Il supporto di Python in Visual Studio include vari modelli di progetto per configurare la struttura di un'applicazione Web basata su Django. Per usare un modello in Visual Studio, selezionare **File** > **Nuovo** > **Progetto**, cercare "Django" e scegliere tra i modelli **Progetto Web Django vuoto**, **Progetto Web Django** e **Progetto Web Django di sondaggi**. Vedere l'[Esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md) per una guida su tutti i modelli.
+[Django](https://www.djangoproject.com/) è un framework Python di alto livello progettato per lo sviluppo rapido, sicuro e scalabile di applicazioni Web. Il supporto di Python in Visual Studio include vari modelli di progetto per configurare la struttura di un'applicazione Web basata su Django. Per utilizzare un modello in Visual Studio, selezionare **File** > **nuovo** > **progetto**, cercare "Django" e selezionare i modelli Progetto Web **Django vuoto**, **Django Web Project**e Poll **Django Web Project.** Vedere l'[Esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md) per una guida su tutti i modelli.
 
 Visual Studio offre il supporto IntelliSense completo per i progetti Django:
 
@@ -66,4 +66,4 @@ Visual Studio offre anche [supporto completo per il debug](debugging-python-in-v
 ## <a name="see-also"></a>Vedere anche
 
 - [Esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md)
-- [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Pubblicare in Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)

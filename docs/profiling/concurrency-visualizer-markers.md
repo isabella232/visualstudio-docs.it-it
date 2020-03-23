@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63001059"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcatori del visualizzatore di concorrenza
@@ -49,7 +49,7 @@ I marcatori del visualizzatore di concorrenza sono icone che rappresentano event
 
 - [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)
 
-- [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime)
+- [Runtime di concorrenzaConcurrency Runtime](/cpp/parallel/concrt/concurrency-runtime)
 
 - [Supporto per marcatori di scenario](/previous-versions/visualstudio/visual-studio-2010/dd984115\(v\=vs.100\))
 
@@ -61,7 +61,7 @@ I marcatori del visualizzatore di concorrenza sono icone che rappresentano event
  Il visualizzatore di concorrenza può visualizzare anche eventi EventSource.  Per altre informazioni, vedere [Visualizzazione di eventi EventSource come marcatori](../profiling/visualizing-eventsource-events-as-markers.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Marcatori flag](../profiling/flag-markers.md)
+- [Marcatori di flag](../profiling/flag-markers.md)
 - [Marcatori di messaggio](../profiling/message-markers.md)
-- [Marcatori span](../profiling/span-markers.md)
+- [Marcatori di span](../profiling/span-markers.md)
 - [Visualizzare eventi EventSource come marcatori](../profiling/visualizing-eventsource-events-as-markers.md)

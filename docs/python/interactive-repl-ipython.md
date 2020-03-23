@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957738"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Usare IPython nella finestra interattiva
@@ -51,7 +51,7 @@ Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaco
 
     ![Grafico inline nella finestra interattiva](media/ipython-repl-04.png)
 
-7. Invece di digitare in REPL, è possibile scrivere codice nell'editor, selezionarlo, fare clic con il pulsante destro del mouse e scegliere il comando **Invia a finestra interattiva** o premere **CTRL**+**INVIO**. Provare a incollare il codice seguente in un nuovo file nell'editor, selezionandolo con **CTRL**+**A** e quindi inviandolo alla finestra **interattiva**. Visual Studio invia il codice alla finestra in un unico blocco per evitare che vengano visualizzati grafici intermedi o parziali. Se non è aperto un progetto Python con un altro ambiente selezionato, Visual Studio apre una finestra **interattiva** per qualsiasi ambiente sia selezionato come predefinito nella finestra **Ambienti Python**.
+7. Invece di digitare in REPL, è possibile scrivere codice nell'editor, selezionarlo, fare clic con il pulsante destro del mouse e scegliere il comando **Invia a finestra interattiva** o premere **CTRL**+**INVIO**. Provare a incollare il codice riportato di seguito in un nuovo file nell'editor, selezionandolo con **Ctrl**+**A**, quindi inviandolo alla finestra **interattiva.** Visual Studio invia il codice alla finestra in un unico blocco per evitare che vengano visualizzati grafici intermedi o parziali. Se non è aperto un progetto Python con un altro ambiente selezionato, Visual Studio apre una finestra **interattiva** per qualsiasi ambiente sia selezionato come predefinito nella finestra **Ambienti Python**.
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -78,7 +78,7 @@ Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaco
 
 8. Per visualizzare i grafici all'esterno della finestra **interattiva**, eseguire il codice invece di usare il comando **Debug** > **Avvia senza eseguire debug**.
 
-In IPython sono disponibili molte altre funzionalità utili, ad esempio l'escape alla shell di sistema, la sostituzione delle variabili, l'acquisizione di output e così via. Per altre informazioni, vedere la [documentazione di IPython](https://ipython.org/documentation.html).
+IPython ha molte altre caratteristiche utili come l'escloazione alla shell di sistema, la sostituzione delle variabili, l'acquisizione dell'output, ecc. Per ulteriori informazioni, fare riferimento alla [documentazione di IPython.](https://ipython.org/documentation.html)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -10,21 +10,21 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: aacc2b6aa47f7a250b161187146accc51736b586
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72668938"
 ---
 # <a name="options-text-editor-f-advanced"></a>Opzioni, Editor di testo, F#, Avanzate
 
-Usare la pagina delle opzioni **Avanzate** per modificare alcune impostazioni dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** e quindi scegliere **Editor di testo** > **F#**  > **Avanzate**.
+Usare la pagina delle opzioni **Avanzate** per modificare alcune impostazioni dell'editor di testo per F#. Per accedere a questa pagina delle opzioni, scegliere**Opzioni** **degli strumenti** > , quindi Scegliere Editor **di** > testo**F e** > **Avanzate**.
 
 ## <a name="block-structure-guides"></a>Guide per strutture a blocchi
 
 Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai blocchi di codice strutturato, che consentono di identificare facilmente i singoli blocchi di codice.
 
-## <a name="outlining"></a>struttura
+## <a name="outlining"></a>Struttura
 
 Selezionare questa casella di controllo per delineare automaticamente la struttura del file di codice, creando blocchi comprimibili del codice.
 

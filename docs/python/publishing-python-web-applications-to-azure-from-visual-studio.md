@@ -12,13 +12,13 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784115"
 ---
-# <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
+# <a name="publish-to-azure-app-service"></a>Pubblicare in Servizio app di Azure
 
 Al momento, Python è supportato in Servizio app di Azure per Linux ed è possibile pubblicare app usando la [distribuzione Git](#publish-to-app-service-on-linux-using-git-deploy) e i [contenitori](#publish-to-app-service-on-linux-using-containers), come descritto in questo articolo.
 
@@ -33,7 +33,7 @@ La distribuzione Git connette un servizio app in Linux a un ramo specifico di un
 
 Per altre informazioni, vedere gli articoli seguenti nella documentazione di Azure:
 
-- [Guida introduttiva: Creare un'app Web Python in Servizio app](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) contiene un breve procedura dettagliata del processo di distribuzione GIT usando una semplice app Flask e la distribuzione da un repository GIT locale.
+- [Guida introduttiva: Creare un'app Web Python nel servizio app](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) fornisce un breve procedura dettagliata del processo di distribuzione Git usando una semplice app Flask e la distribuzione da un repository Git locale.
 - [Come configurare Python](/azure/app-service/containers/how-to-configure-python) descrive le caratteristiche del servizio app nel contenitore Linux e come personalizzare il comando di avvio Gunicorn per l'app.
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>Eseguire la pubblicazione nel servizio app in Linux tramite contenitori

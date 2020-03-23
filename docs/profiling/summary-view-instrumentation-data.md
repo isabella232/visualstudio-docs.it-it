@@ -12,17 +12,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f52f80cad4ce7678a832a7b76a75d8f2fd4460e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778219"
 ---
 # <a name="summary-view---instrumentation-data"></a>Visualizzazione Riepilogo: dati di strumentazione
-La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Per altre informazioni, inclusa una descrizione dei collegamenti di notifica e degli elenchi di report, vedere [Visualizzazione Riepilogo](../profiling/summary-view.md).
+La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Per ulteriori informazioni, inclusa una descrizione degli elenchi Collegamenti notifica e Report, vedere [Visualizzazione Riepilogo.](../profiling/summary-view.md)
 
 ## <a name="timeline-graph"></a>Grafico della sequenza temporale
- Il grafico della sequenza temporale nella visualizzazione Riepilogo mostra l'utilizzo del processore (CPU) per l'applicazione profilata nel periodo di profilatura. È possibile usare il grafico della sequenza temporale per filtrare la visualizzazione in base a un intervallo di tempo selezionato. Per altre informazioni, vedere [Procedura: Filtrare le visualizzazioni dei report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ Il grafico della sequenza temporale nella visualizzazione Riepilogo mostra l'utilizzo del processore (CPU) per l'applicazione profilata nel periodo di profilatura. È possibile usare il grafico della sequenza temporale per filtrare la visualizzazione in base a un intervallo di tempo selezionato. Per ulteriori informazioni, vedere [Procedura: Filtrare le visualizzazioni dei report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
 ## <a name="hot-path"></a>Percorso critico
  In **Percorso critico** viene visualizzato il percorso di esecuzione che ha richiesto la quantità di tempo maggiore. È possibile fare clic su una funzione per attivare la visualizzazione Dettagli funzione per la funzione. Per visualizzare altre visualizzazioni per la funzione, fare clic con il pulsante destro del mouse sulla funzione e scegliere una visualizzazione nell'elenco.
@@ -47,4 +47,4 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzazione Riepilogo: dati di campionamento](../profiling/summary-view-sampling-data.md)
-- [Visualizzazione Riepilogo: dati di memoria .NET](../profiling/summary-view-dotnet-memory-data.md)
+- [Visualizzazione Riepilogo - Dati di memoria .NET](../profiling/summary-view-dotnet-memory-data.md)

@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 821e915a0b66f25c5b89a83b31e93b01aea6f400
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67292695"
 ---
 # <a name="move-type-to-namespace"></a>Spostare un tipo in uno spazio dei nomi
@@ -22,16 +22,16 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** spostare un tipo in uno spazio dei nomi.
+**Cosa:** Spostare il tipo nello spazio dei nomi.
 
-**Quando:** si vuole spostare un tipo in una cartella o in uno spazio dei nomi diverso. 
+**Quando:** Si desidera spostare un tipo in uno spazio dei nomi o in una cartella diversa. 
 
-**Perché?:** si vuole effettuare il refactoring della soluzione e si può sfruttare un modo rapido per spostare un tipo in una cartella o in uno spazio dei nomi diverso. 
+**Perché:** Si desidera eseguire il refactoring di parti della soluzione e disporre di un modo rapido per spostare un tipo in uno spazio dei nomi o in una cartella diversa. 
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore nel nome della classe.
-2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare **Move to namespace** (Sposta in spazio dei nomi).
 
    ![Spostare in uno spazio dei nomi - Refactoring](media/move-to-namespace.png)

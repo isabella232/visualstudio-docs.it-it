@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b7174418267a77cc668ab0a79092fc7daefbf58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62979666"
 ---
 # <a name="spanspan-destructor"></a>Distruttore span::~span
@@ -37,4 +37,4 @@ Elimina l'oggetto `span` e ne rilascia le risorse.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Classe span](../profiling/span-class.md)
+- [span (classe)](../profiling/span-class.md)

@@ -11,10 +11,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72777436"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Eseguire il training di un modello TensorFlow in locale
@@ -47,13 +47,13 @@ Scaricare questo [repository di GitHub](https://github.com/Microsoft/samples-for
 
 - Selezionare la cartella **TensorflowExamples** dal repository degli esempi scaricato e aprire il file **TensorflowExamples.sln**.
 
-   ![Apertura del progetto](media/tensorflow-local/open-project.png)
+   ![Aprire il progetto](media/tensorflow-local/open-project.png)
 
    ![Apertura della soluzione](media/tensorflow-local/open-solution.png)
 
-- Trovare il progetto MNIST in **Esplora soluzioni**, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**.
+- Individuare il progetto MNIST in **Esplora soluzioni**, fare clic con il pulsante destro del mouse e scegliere Imposta come progetto di **avvio**.
 
-- Fare clic su **Avvia**.
+- Fare clic su **Start**.
 
 - L'output viene stampato nella console.
 

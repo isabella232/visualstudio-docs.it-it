@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: de6d6325b1e518146768798c773754c091861aa8
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775914"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Procedura: Escludere o includere funzioni brevi nella strumentazione
@@ -27,13 +27,13 @@ Per impostazione predefinita, gli strumenti di profilatura escludono le *funzion
 
 1. In **Esplora prestazioni** selezionare **Sessione prestazioni** e quindi fare clic con il pulsante destro del mouse e selezionare **Proprietà**.
 
-     Verrà visualizzata la finestra di dialogo **Pagine delle proprietà**.
+     Viene visualizzata la finestra di dialogo **Pagine delle proprietà**.
 
 2. In **Pagine delle proprietà** fare clic sulle proprietà di **Strumentazione**.
 
-3. Per escludere le funzioni brevi dalla strumentazione, selezionare **Escludi funzioni brevi da strumentazione**. Questa è l'impostazione predefinita.
+3. Per escludere le funzioni brevi dalla strumentazione, selezionare **Escludi funzioni brevi da strumentazione**. Si tratta dell'impostazione predefinita.
 
-     oppure
+     -oppure-
 
      Per includere le funzioni brevi nella strumentazione, deselezionare **Escludi funzioni brevi da strumentazione**.
 

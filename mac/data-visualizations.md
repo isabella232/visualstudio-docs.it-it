@@ -7,13 +7,13 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691738"
 ---
-# <a name="data-visualizations"></a>Visualizzazioni dati
+# <a name="data-visualizations"></a>Visualizzazioni di dati
 
 Visual Studio per Mac include il supporto dell'interfaccia utente per il debugger, consentendo visualizzazioni dei valori di una variabile, un campo o una proprietà durante il debug. Questi visualizzatori dei dati mostrano una versione estesa dei dati e permettono agli sviluppatori di esaminare strutture note, ad esempio visualizzando il colore di uno struct di colore.
 
@@ -23,7 +23,7 @@ I visualizzatori nel riquadro **Locale** per il debug possono essere avviati fac
 
 L'elenco seguente presenta molte delle nuove visualizzazioni per il debug in Visual Studio per Mac.
 
-## <a name="point"></a>Punto
+## <a name="point"></a>Point
 Un oggetto Point/PointF o CGPoint in iOS e Mac viene visualizzato come tupla che mostra i valori X e Y nel riquadro del debug:
 
 ![Visualizzazione dei punti](media/data-visualizations-image10.png)
@@ -33,7 +33,7 @@ Un oggetto Size/SizeF CGSize in iOS e Mac viene visualizzato come rettangolo. L'
 
 [Visualizzazione delle dimensioni](media/data-visualizations-image11.png)
 
-## <a name="rectangle"></a>Rettangolo
+## <a name="rectangle"></a>Rectangle
 Un oggetto Rectangle/RectangleF o CGRect in iOS e Mac mostra le dimensioni e l'origine. Come per gli oggetti Size, l'oggetto viene disegnato in modo da ridimensionarsi, fino a 250 px:
 
 ![Visualizzazione dei rettangoli](media/data-visualizations-image12.png)
@@ -60,7 +60,7 @@ Il visualizzatore mostra un oggetto `NSBezierPath`:
 
 ![Visualizzazione delle curve di Bézier](media/data-visualizations-image16.png)
 
-## <a name="string"></a>Stringa
+## <a name="string"></a>string
 
 Una stringa di meno di 100 caratteri viene visualizzata completamente, senza anteprima. Le stringhe più lunghe verranno visualizzate completamente nell'anteprima. Le stringhe sono modificabili e il visualizzatore include un pulsante di modifica, che permette la modifica del valore della stringa nell'anteprima o nell'editor dei valori delle stringhe, mostrato di seguito:
 
@@ -88,15 +88,15 @@ Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
 
 ![Altre visualizzazioni](media/data-visualizations-image23.png)
 
-* **Primitives**
+* **Primitive**
   * Visualizza il valore non elaborato del tipo primitivo.
 * **Enum**
   * Visualizza il valore del campo senza il qualificatore di tipo enum.
-* **Tuple**
+* **Tupla**
   * Usa il formato (,) per la visualizzazione.
 * **Null**
   * Mostra i valori "null".
-* **URL**
+* **Url**
   * Mostra un collegamento ipertestuale su cui è possibile fare clic.
 * **IntPtr**
   * Visualizza una rappresentazione esadecimale di un oggetto IntPtr.

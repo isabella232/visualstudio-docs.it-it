@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d782a507d57e459aa5735cf34717f13e41d4cde
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72748609"
 ---
 # <a name="set-current-thread-command"></a>Comando Imposta thread corrente
@@ -29,7 +29,7 @@ Imposta il thread specificato come thread corrente.
 Debug.SetCurrentThread index
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `index`
 
 Obbligatorio. Seleziona un thread in base al relativo indice.
@@ -42,7 +42,7 @@ Obbligatorio. Seleziona un thread in base al relativo indice.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

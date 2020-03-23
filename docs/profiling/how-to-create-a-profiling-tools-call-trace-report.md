@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b184310d837193679a1a5eacf2fbae4ecf29caa
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778986"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedura: Creare un report calltrace degli strumenti di profilatura
@@ -27,18 +27,18 @@ Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../c
 
 ### <a name="to-create-a-call-trace-report"></a>Per creare un report calltrace
 
-1. Aprire una finestra **Prompt dei comandi**.
+1. Aprire una finestra **del prompt dei comandi.**
 
-2. Al prompt dei comandi digitare quanto segue:
+2. Al prompt dei comandi digitare il comando seguente:
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 
     |||
     |-|-|
     |*ToolsPath*|Percorso degli strumenti da riga di comando disponibili negli strumenti di profilatura. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
-    |*VSPFile*|File con estensione *vsp* o *vsps* dei dati di profilatura. Sono accettati percorsi completi e parziali.|
+    |*File VSP*|Dati di profilatura (.* vsp* o . *vsps*) ﬁle. Sono accettati percorsi completi e parziali.|
     |Xml|Genera un report in formato XML.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: raccogliere dati di Event Tracing for Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+- [Procedura: raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 - [API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)

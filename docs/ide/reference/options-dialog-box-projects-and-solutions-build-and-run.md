@@ -16,19 +16,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68461389"
 ---
-# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Finestra di dialogo Opzioni: Progetti e soluzioni \> Compila ed esegui
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Finestra di dialogo \> Opzioni: Compilazione ed esecuzione di progetti e soluzioni
 
-In questa finestra di dialogo è possibile specificare il numero massimo di progetti C++ o C# che è possibile compilare allo stesso tempo, determinati comportamenti di compilazione predefiniti e alcune impostazioni del log di compilazione. Per accedere a queste opzioni, selezionare **Strumenti** > **Opzioni**, espandere **Progetti e soluzioni** e quindi selezionare **Compila ed esegui**.
+In questa finestra di dialogo è possibile specificare il numero massimo di progetti C++ o C# che è possibile compilare allo stesso tempo, determinati comportamenti di compilazione predefiniti e alcune impostazioni del log di compilazione. Per accedere a queste opzioni, selezionare**Opzioni** **degli strumenti** > espandi **Progetti e soluzioni**, quindi selezionare **Compila ed esegui**.
 
 **Numero massimo di compilazioni di progetto parallele**
 
-Specifica il numero massimo di progetti C++ e C# che è possibile compilare contemporaneamente. Per ottimizzare il processo di compilazione, il numero massimo di compilazioni di progetti in parallelo viene impostato automaticamente sul numero di CPU del computer. Il numero massimo è 32.
+Specifica il numero massimo di progetti C++ e C# che è possibile compilare contemporaneamente. Per ottimizzare il processo di compilazione, il numero massimo di compilazioni di progetti in parallelo viene impostato automaticamente sul numero di CPU del computer. Il valore massimo è 32.
 
 **Compila progetti di avvio e dipendenze solo in fase di esecuzione**
 
@@ -58,10 +58,10 @@ Determina la quantità di informazioni del processo di compilazione che viene vi
 
 *Si applica solo ai progetti C++.*
 
-Determina la quantità di informazioni scritta nel file di log di compilazione che si trova in *\\\<NomeProgetto>\Debug\\\<NomeProgetto>.log*.
+Determina la quantità di informazioni che vengono scritte nel file di log di compilazione, che si trova in * \\ \<NomeProgetto> , NomeProgetto\\\<debug>.log*.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Compiling and Building](../../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)
+- [Compilazione ed edificio](../../ide/compiling-and-building-in-visual-studio.md)
 - [Finestra di dialogo Opzioni, Progetti e soluzioni](projects-and-solutions-options-dialog-box.md)
-- [Finestra di dialogo Opzioni, Progetti e soluzioni, Progetti Web](options-dialog-box-projects-and-solutions-web-projects.md)
+- [Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web](options-dialog-box-projects-and-solutions-web-projects.md)

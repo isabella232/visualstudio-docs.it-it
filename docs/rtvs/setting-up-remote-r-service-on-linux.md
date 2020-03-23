@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62809557"
 ---
 # <a name="remote-r-service-for-linux"></a>Remote R Service per Linux
@@ -22,7 +22,7 @@ Remote R Service per Linux è attualmente disponibile in un pacchetto come rtvs-
 
 Dopo aver configurato il computer remoto, i passaggi seguenti consentono di connettere R Tools for Visual Studio (RTVS) a tale servizio:
 
-1. Selezionare **R Tools** > **Finestre** > **Aree di lavoro** per aprire la finestra **Aree di lavoro**.
+1. Selezionare **R Tools** > **Windows** > **Workspaces** per aprire la finestra **Aree di lavoro.**
 1. Selezionare **Aggiungi connessione**.
 1. Assegnare un nome alla connessione e specificare l'URL, ad esempio `https://localhost:5444` (sottosistema Windows per Linux) o `https://public-ip:5444` (contenitore di Azure). Selezionare **Salva** al termine.
 1. Selezionare l'icona della connessione o fare doppio clic sull'elemento della connessione.
@@ -87,7 +87,7 @@ In ogni caso, nel computer remoto deve essere installato uno degli interpreti R 
 
 #### <a name="create-a-vm"></a>Creare una macchina virtuale
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
+1. Accedere al [portale](https://portal.azure.com)di Azure .
 1. Passare a Macchine virtuali e quindi selezionare **Aggiungi**.
 1. Nell'elenco delle immagini di macchine virtuali disponibili cercare e selezionare una delle voci seguenti:
     - Server Ubuntu: `Ubuntu Server 16.04 LTS`
@@ -97,7 +97,7 @@ In ogni caso, nel computer remoto deve essere installato uno degli interpreti R 
 1. Apportare le altre modifiche eventualmente desiderate alla configurazione della macchina virtuale.
 1. Scegliere una dimensione di macchina virtuale, verificare la configurazione e selezionare **Crea**. Dopo aver creato la macchina virtuale, procedere alla sezione successiva.
 
-#### <a name="configure-the-vm"></a>Configurare la macchina virtuale
+#### <a name="configure-the-vm"></a>Configurare la VM
 
 1. Nella sezione **Rete** della macchina virtuale aggiungere 5444 come porta in ingresso consentita. Per usare una porta diversa, modificare l'impostazione nel file di configurazione del daemon RTVS (*/etc/rtvs/rtvsd.config.json*).
 1. (Facoltativo) Impostare un nome DNS. È anche possibile usare l'indirizzo IP.

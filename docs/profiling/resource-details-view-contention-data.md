@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771603"
 ---
 # <a name="resource-details-view---contention-data"></a>Visualizzazione Dettagli risorsa: dati sui conflitti
@@ -55,7 +55,7 @@ La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale
 
 - Nel grafico della sequenza temporale fare clic su **Totale**.
 
-     Viene visualizzata la visualizzazione Conflitti per la risorsa. Per altre informazioni, vedere [Visualizzazione conflitti tra risorse](../profiling/resource-contentions-view-contention-data.md).
+     Viene visualizzata la visualizzazione Conflitti per la risorsa. Per ulteriori informazioni, vedere [Visualizzazione Conflitti di](../profiling/resource-contentions-view-contention-data.md)risorse .
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Per visualizzare tutti gli eventi di conflitto di un thread
 

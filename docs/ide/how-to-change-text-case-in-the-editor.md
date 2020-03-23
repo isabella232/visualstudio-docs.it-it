@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 894590501f3855d0f363275415ff02194f682dda
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588720"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Procedura: Modificare maiuscole/minuscole nell'editor
@@ -23,15 +23,15 @@ ms.locfileid: "75588720"
 È possibile usare i comandi di menu o i tasti di scelta rapida per convertire tutti i caratteri del testo selezionato in lettere maiuscole o minuscole.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati possono essere diversi da quelli descritti in questo articolo, basati sulle impostazioni di ambiente **Generale**. Per cambiare le impostazioni di ambiente, scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
+> Le finestre di dialogo e i comandi di menu visualizzati possono essere diversi da quelli descritti in questo articolo, basati sulle impostazioni di ambiente **Generale**. Per modificare le impostazioni dell'ambiente, scegliere **Strumenti** > **importa/esporta impostazioni**, quindi scegliere **Reimposta tutte le impostazioni.**
 
 ## <a name="to-change-text-case"></a>Per cambiare maiuscole/minuscole del testo
 
-1. Selezionare il testo da convertire.
+1. Selezionare il testo che si desidera convertire.
 
-2. Per convertire tutti i caratteri del testo in lettere maiuscole, scegliere **Modifica** > **Avanzate** > **Maiuscole** oppure premere **CTRL**+**MAIUSC**+**U**.
+2. Per convertire il testo in**maiuscolo,** scegliete **Modifica** > modifica maiuscole**avanzate** > o premete **Ctrl**+**Maiusc**+**U**.
 
-   Per convertire tutti i caratteri del testo in lettere minuscole, scegliere **Modifica** > **Avanzate** > **Minuscole** oppure premere **CTRL**+**U**. Se è stato installato il carico di lavoro di sviluppo C++, questo tasto di scelta può essere usato da un altro comando.
+   Per convertire il testo in lettere minuscole, scegliete **Modifica** > **modifica maiuscole/minuscole** **avanzate** > o premete **Ctrl**+**U**. Se è stato installato il carico di lavoro di sviluppo C++, questo tasto di scelta può essere usato da un altro comando.
 
 > [!TIP]
 > Per ripristinare l'uso di maiuscole e minuscole precedente la modifica, scegliere **Annulla** dal menu **Modifica**.

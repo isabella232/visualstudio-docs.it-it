@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i processi recenti
+title: Visualizzazione dei processi recenti
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 79b396946666077dcdedb3ee2a5ab891c2bb4fb8
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72777400"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Visualizzare le prestazioni e i dettagli di processi recenti
 
 Dopo l'invio dei processi è possibile visualizzare l'elenco dei processi per controllare il relativo stato, la durata e altri dettagli.
 
-1. In **Esplora server** espandere il contesto di calcolo specifico.
+1. In **Esplora server**espandere il contesto di calcolo specifico.
 2. Fare doppio clic su **Processi**.
 3. Verrà visualizzato l'elenco dei processi inviati a tale contesto di calcolo.
-4. Selezionare un **processo** specifico dall'elenco per visualizzare i dettagli.
+4. Selezionare un **lavoro** specifico nell'elenco per visualizzare i dettagli.
 
 ![Monitorare i processi](media/job-details/monitor-jobs.png)
 

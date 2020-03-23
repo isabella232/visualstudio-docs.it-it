@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: ba5447301c3a5581d35825ed91c17b3c9f50015f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74298752"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Panoramica di Visual Studio Tools per Unity
@@ -20,7 +20,7 @@ ms.locfileid: "74298752"
 
 Questa sezione contiene altre informazioni sulle funzionalità offerte da Visual Studio Tools per Unity e su come usarle per incrementare la produttività con Unity.  
   
- Con Visual Studio Tools per Unity (*VSTU*) è possibile usare Visual Studio per scrivere script di giochi ed editor in C# e quindi usare il debugger avanzato per individuare e correggere gli errori. La versione più recente di VSTU include la colorazione della sintassi per il linguaggio ShaderLab di Unity, un'ottimizzazione delle visualizzazioni del debugger e un miglioramento nella generazione del codice per la procedura guidata MonoBehavior. VSTU integra anche i file di progetto Unity, i messaggi della console e la possibilità di iniziare il gioco in Visual Studio evitando in tal modo di dover passare dall'editor di Unity a Visual Studio e viceversa durante la scrittura del codice.  
+ Con Visual Studio Tools per Unity *(VSTU*), è possibile utilizzare Visual Studio per scrivere script di gioco ed editor in C , quindi utilizzare il potente debugger per individuare e correggere gli errori. La versione più recente di VSTU include la colorazione della sintassi per il linguaggio ShaderLab di Unity, un'ottimizzazione delle visualizzazioni del debugger e un miglioramento nella generazione del codice per la procedura guidata MonoBehavior. VSTU integra anche i file di progetto Unity, i messaggi della console e la possibilità di iniziare il gioco in Visual Studio evitando in tal modo di dover passare dall'editor di Unity a Visual Studio e viceversa durante la scrittura del codice.  
   
  Per altre informazioni su queste funzionalità, continuare a leggere questa pagina.  
   

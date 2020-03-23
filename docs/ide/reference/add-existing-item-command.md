@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585704"
 ---
 # <a name="add-existing-item-command"></a>Comando Aggiungi elemento esistente
@@ -31,11 +31,11 @@ File.AddExistingItem filename [/e:editorname]
 
 ## <a name="arguments"></a>Argomenti
 `filename`\
-Richiesto. Percorso completo e nome del file con estensione dell'elemento da aggiungere alla soluzione corrente. Se il percorso o il nome del file contiene spazi, racchiudere l'intero percorso tra virgolette.
+Obbligatorio. Percorso completo e nome del file con estensione dell'elemento da aggiungere alla soluzione corrente. Se il percorso o il nome del file contiene spazi, racchiudere l'intero percorso tra virgolette.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Switch
 /e: `editorname`\
-Parametro facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
+Facoltativa. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
 
 La sintassi dell'argomento `editorname` usa i nomi degli editor così come visualizzati nella **finestra di dialogo Apri con**, racchiusi tra virgolette. Ad esempio, per aprire un foglio di stile nell'editor del codice sorgente, per l'argomento /e:`editorname` è necessario immettere quanto segue.
 
@@ -43,7 +43,7 @@ La sintassi dell'argomento `editorname` usa i nomi degli editor così come visua
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
 
 ## <a name="example"></a>Esempio
@@ -55,7 +55,7 @@ In questo esempio viene aggiunto il file Form1.frm alla soluzione corrente.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
+- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

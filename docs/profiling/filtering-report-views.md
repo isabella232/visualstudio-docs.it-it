@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779246"
 ---
 # <a name="filter-report-views"></a>Filtrare le visualizzazioni report
@@ -37,9 +37,9 @@ ms.locfileid: "74779246"
 
     |Campo|Descrizione|
     |-----------|-----------------|
-    |**And/Or**|Scegliere **And** se questa clausola e la successiva devono essere entrambe vere (true) per restituire un risultato. Scegliere **Or** se questa clausola o la successiva può essere vera (true) per restituire un risultato.|
+    |**O**|Scegliere **And** se questa clausola e la successiva devono essere entrambe vere (true) per restituire un risultato. Scegliere **Or** se questa clausola o la successiva può essere vera (true) per restituire un risultato.|
     |**Campo**|Selezionare il campo del report da usare nella clausola del filtro dall'elenco di campi dati visualizzato.|
-    |**Operator**|Selezionare l'operatore che specifica la relazione da impostare nella clausola tra il campo e il valore.<br /><br /> =    Uguale a<br /><br /> <>  Non uguale a<br /><br /> <    Minore di<br /><br /> >    Maggiore di<br /><br /> <=  Minore o uguale a<br /><br /> >=  Maggiore o uguale a|
+    |**Operatore**|Selezionare l'operatore che specifica la relazione da impostare nella clausola tra il campo e il valore.<br /><br /> =    Uguale a<br /><br /> <>  Non uguale a<br /><br /> <    Minore di<br /><br /> >    Maggiore di<br /><br /> <=  Minore o uguale a<br /><br /> >=  Maggiore o uguale a|
     |**Valore**|Selezionare o immettere il valore da cercare. Per alcuni campi è presente l'elenco dei valori disponibili.|
 
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Per creare un filtro report del profiler dalla visualizzazione report Contrassegni

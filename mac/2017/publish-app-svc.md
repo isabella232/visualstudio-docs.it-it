@@ -1,5 +1,5 @@
 ---
-title: Eseguire la pubblicazione nel servizio app di Azure
+title: Pubblicare in Servizio app di Azure
 ms.date: 01/17/2019
 helpviewer_keywords:
 - deployment, website
@@ -12,10 +12,10 @@ ms.custom: video
 ms.workload:
 - azure
 ms.openlocfilehash: 97964589b832b05f4d528a801a1899eeb8385883
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714470"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Pubblicare un'app Web in Servizio app di Azure usando Visual Studio per Mac
@@ -28,7 +28,7 @@ ms.locfileid: "73714470"
 - Una sottoscrizione di Azure. Se non si ha già una sottoscrizione, [iscriversi gratuitamente](https://azure.microsoft.com/free/dotnet/) per ottenere un credito di $200 per 30 giorni e 12 mesi di accesso ai servizi gratuiti più diffusi.
 - Un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
-## <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
+## <a name="publish-to-azure-app-service"></a>Pubblicare in Servizio app di Azure
 
  1. Nel riquadro della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
 
@@ -56,7 +56,7 @@ ms.locfileid: "73714470"
 
     È possibile modificare la sottoscrizione cui il servizio app sarà associato usando l'elenco a discesa **Sottoscrizione**.
 
-    È possibile selezionare un **Gruppo di risorse** esistente usando l'elenco a discesa oppure è possibile crearne uno nuovo con il pulsante **+** .
+    È possibile selezionare un **Gruppo di risorse** esistente usando l'elenco a discesa oppure è possibile crearne uno nuovo con il pulsante **+**.
 
     Per il piano di servizio app, selezionarne uno esistente o crearne uno nuovo selezionando il pulsante di opzione **Person.**
 

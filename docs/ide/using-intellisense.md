@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565344"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
@@ -32,7 +32,7 @@ Molti aspetti di IntelliSense sono specifici del linguaggio. Per altre informazi
 
 Un elenco di membri validi di un tipo (o dello spazio dei nomi) viene visualizzato dopo avere digitato un carattere del trigger, ad esempio un punto (`.`) nel codice gestito o `::` in C++. Se si continua a digitare caratteri, l'elenco viene filtrato per includere solo i membri o una *qualsiasi* parola all'interno del nome che iniziano con tali caratteri. IntelliSense esegue anche la corrispondenza con notazione Camel, pertanto è possibile digitare solo la prima lettera di ogni parola con notazione Camel nel nome del membro per visualizzare le corrispondenze.
 
-Dopo avere selezionato un elemento, è possibile inserirlo nel codice premendo **Tab** o digitando uno spazio. Se si seleziona un elemento e si digita un punto, l'elemento viene visualizzato seguito dal punto; questa condizione comporta la visualizzazione di un altro elenco di membri. Quando si seleziona un elemento ma prima di inserirlo, vengono visualizzate informazioni rapide per l'elemento.
+Dopo aver selezionato un elemento, è possibile inserirlo nel codice premendo **TAB** o digitando uno spazio. Se si seleziona un elemento e si digita un punto, l'elemento viene visualizzato seguito dal punto; questa condizione comporta la visualizzazione di un altro elenco di membri. Quando si seleziona un elemento ma prima di inserirlo, vengono visualizzate informazioni rapide per l'elemento.
 
 Nell'elenco dei membri, l'icona a sinistra rappresenta il tipo del membro, ad esempio spazio dei nomi, classe, funzione o variabile. Per un elenco di icone, vedere [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md). L'elenco può essere piuttosto lungo, pertanto è possibile premere **PGSU** e **PGGIÙ** per spostarsi rispettivamente verso l'alto o verso il basso nell'elenco.
 
@@ -40,9 +40,9 @@ Nell'elenco dei membri, l'icona a sinistra rappresenta il tipo del membro, ad es
 
 È possibile richiamare la funzionalità **Elenca membri** manualmente digitando **CTRL**+**J**, scegliendo **Modifica** > **IntelliSense** > **Elenca membri** o il pulsante **Elenca membri** sulla barra degli strumenti dell'editor. Se richiamato in una riga vuota o al di fuori di un ambito riconoscibile, l'elenco conterrà simboli dello spazio dei nomi globale.
 
-Per disattivare la funzionalità Elenca membri per impostazione predefinita, in modo che sia presente solo se specificamente chiamata, passare a **Strumenti** > **Opzioni** > **Tutti i linguaggi** e deselezionare **Elenco membri automatico**. Se si vuole disattivare la funzionalità Elenca membri solo per un linguaggio specifico, andare sulle impostazioni **Generali** per quel linguaggio.
+Per disattivare L'opzione Elenca membri per impostazione predefinita (in modo che non venga visualizzato a meno che non venga noto in modo specifico), passare a **Strumenti** > **Opzioni** > **tutte le lingue** e deselezionare Membri elenco **automatico**. Se si vuole disattivare la funzionalità Elenca membri solo per un linguaggio specifico, andare sulle impostazioni **Generali** per quel linguaggio.
 
-È inoltre possibile modificare la modalità di suggerimento, in cui solo il testo digitato viene inserito nel codice. Ad esempio, se si immette un identificatore non presente nell'elenco e si preme **Tab**, in modalità di completamento la voce sostituisce l'identificatore digitato. Per passare dalla modalità di completamento alla modalità di suggerimento e viceversa, premere **CTRL**+**ALT**+**BARRA SPAZIATRICE** o scegliere **Modifica** > **IntelliSense** > **Attiva/disattiva modalità di terminazione**.
+È inoltre possibile modificare la modalità di suggerimento, in cui solo il testo digitato viene inserito nel codice. Ad esempio, se si immette un identificatore non presente nell'elenco e si preme **TAB**, in modalità di completamento, la voce sostituirà l'identificatore tipizzato. Per passare dalla modalità di completamento alla modalità di suggerimento e viceversa, premere **CTRL**+**ALT**+**Space**oppure scegliere **Modifica** > **modalità** > **di attivazione/disattivazione IntelliSense**.
 
 ## <a name="parameter-info"></a>Informazioni sul parametro
 
@@ -54,7 +54,7 @@ Il parametro in grassetto indica il parametro successivo richiesto durante la di
 
 Se si annotano funzioni e parametri con commenti relativi alla documentazione XML, i commenti verranno visualizzati come informazioni sui parametri. Per altre informazioni, vedere [Inserire commenti XML per la generazione di documentazione](reference/generate-xml-documentation-comments.md).
 
-È possibile richiamare manualmente le informazioni sul parametro scegliendo **Modifica** > **IntelliSense** > **Informazioni sul parametro**, premendo **CTRL**+**MAIUSC**+**BARRA SPAZIATRICE** oppure scegliendo il pulsante **Informazioni sul parametro** sulla barra degli strumenti dell'editor.
+È possibile richiamare manualmente informazioni sui parametri scegliendo **Modifica** > **informazioni parametro****IntelliSense** > , premendo **CTRL**+**Maiusc**+**spazio**o scegliendo il pulsante **Informazioni parametro** sulla barra degli strumenti dell'editor.
 
 ## <a name="quick-info"></a>Informazioni rapide
 
@@ -66,19 +66,19 @@ Quando si seleziona un membro nella casella **Elenca membri**, vengono visualizz
 
 ![Informazioni sui parametri in un file di codice C&#35;](../ide/media/vs2015_paraminfo.png)
 
-È possibile chiamare manualmente le informazioni rapide scegliendo **Modifica** > **IntelliSense** > **Informazioni rapide**, premendo **CTRL**+**I** o scegliendo il pulsante **Informazioni rapide** sulla barra degli strumenti dell'editor.
+È possibile richiamare manualmente informazioni rapide scegliendo **Modifica** > **informazioni rapide****IntelliSense** > , premendo **CTRL**+**I**o scegliendo il pulsante **Informazioni rapide** sulla barra degli strumenti dell'editor.
 
 Se una funzione è sottoposta a overload, è possibile che IntelliSense non visualizzi le informazioni per tutte le forme di overload.
 
-È possibile disattivare le informazioni rapide per il codice C++ tramite **Strumenti** > **Opzioni** > **Editor di testo** > **C/C++**  > **Avanzate**, impostando **Informazioni rapide automatiche** su `false`.
+È possibile disattivare le informazioni rapide per **Tools** > il codice in C, passando a**Strumenti Opzioni** >  `false`**Editor** > di testo**C/C,** > **Avanzate**di C e impostando Informazioni **rapide automatiche** su .
 
 ## <a name="complete-word"></a>Completa parola
 
-Completa parola completa la digitazione del nome di una variabile, di un comando o di una funzione dopo che sono stati immessi caratteri sufficienti a identificare il termine in modo univoco. È possibile richiamare Completa parola scegliendo **Modifica** > **IntelliSense** > **Completa parola**, premendo **CTRL**+**BARRA SPAZIATRICE** oppure scegliendo il pulsante **Completa parola** sulla barra degli strumenti dell'editor.
+Completa parola completa la digitazione del nome di una variabile, di un comando o di una funzione dopo che sono stati immessi caratteri sufficienti a identificare il termine in modo univoco. È possibile richiamare Complete Word scegliendo **Edit** > **AIntelliSense** > **Complete Word**, premendo **CTRL**+**Space**o scegliendo il pulsante Completa **parola** sulla barra degli strumenti dell'editor.
 
 ## <a name="intellisense-options"></a>Opzioni IntelliSense
 
-Le opzioni IntelliSense sono attive per impostazione predefinita. Per disattivarle, scegliere **Strumenti** > **Opzioni** > **Editor di testo** e deselezionare **Informazioni parametri** o **Elenco membri automatico** se non si vuole usare la funzionalità Elenca membri.
+Le opzioni IntelliSense sono attive per impostazione predefinita. Per disattivarli, scegliere **Opzioni** > **opzioni** > **Editor di testo** e deselezionare Informazioni **parametro** o **Elenca automaticamente membri** se non si desidera la funzionalità Elenca membri.
 
 ## <a name="intellisense-icons"></a>Icone di IntelliSense
 Le icone in IntelliSense possono trasmettere un significato aggiuntivo con i modificatori di icona. Si tratta di stelle, cuori e lucchetti sovrapposti all'icona dell'oggetto per indicare, rispettivamente, che l'oggetto è protetto, interno o privato.
@@ -110,7 +110,7 @@ MessageBox( hWnd, "String literal|")
 ## <a name="see-also"></a>Vedere anche
 
 - [IntelliSense per Visual Basic](../ide/visual-basic-specific-intellisense.md)
-- [IntelliSense per C#](../ide/visual-csharp-intellisense.md)
+- [IntelliSense di C](../ide/visual-csharp-intellisense.md)
 - [IntelliSense per JavaScript](../ide/javascript-intellisense.md)
 - [Codice di scrittura e refactoring (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [Inserire commenti XML per la generazione di documentazione](reference/generate-xml-documentation-comments.md)

@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ce982c7a98fd12749c66c89e47bd895d2fb6a5d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777686"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Funzione GetHashCode dispendiosa
@@ -27,9 +27,9 @@ ms.locfileid: "74777686"
 |-|-|
 |ID regola|DA0010|
 |Category|Uso di .NET Framework|
-|Metodi di profilatura|Campionamento<br /><br /> Memoria .NET|
+|Metodi di profilatura|campionamento<br /><br /> Memoria .NET|
 |Message|Le funzioni GetHashCode dovrebbero essere semplici e non allocare memoria. Se possibile, ridurre la complessità della funzione di codice hash.|
-|Tipo messaggio|Avviso|
+|Tipo di messaggio|Avviso|
 
 ## <a name="cause"></a>Causa
  Le chiamate al metodo GetHashCode del tipo rappresentano una percentuale significativa dei dati di profilatura o il metodo alloca memoria.

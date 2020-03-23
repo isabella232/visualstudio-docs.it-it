@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771543"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro modifiche (Visual Studio Tools per Unity, Mac)
@@ -23,119 +23,119 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="2420"></a>2.4.2.0
 
-Rilasciata il 3 dicembre 2019
+Rilasciato il 3 dicembre 2019
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-  - Correzione della diagnostica con le interfacce definite dall'utente.
+  - Diagnostica fissa con interfacce definite dall'utente.
 
-  - Correzione delle descrizioni rapide con espressioni in formato non valido.
+  - Correzione delle descrizioni comandi rapide con espressioni in formato non corretto.
   
 ## <a name="2410"></a>2.4.1.0
 
-Rilasciata il 6 novembre 2019
+Rilasciato il 6 novembre 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-  - Aggiunta del supporto per i processi in background di Unity. Il debugger è in grado di connettersi automaticamente al processo principale invece che a un processo figlio.
+  - Aggiunto il supporto per i processi in background Unity. (Il debugger è in grado di connettersi automaticamente al processo principale anziché a un processo figlio).
 
-  - Aggiunta di una descrizione comando rapida per i messaggi Unity, che visualizza la documentazione associata.
+  - Aggiunta una descrizione rapida per i messaggi Unity, visualizzando la documentazione associata.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-  - Correzione dell'analizzatore del confronto dei tag `UNT0002` con espressioni di chiamata e binarie avanzate.
+  - Corretto l'analizzatore `UNT0002` di confronto di tag con espressioni binarie e di chiamata avanzate.
 
-### <a name="deprecated-features"></a>Funzionalità deprecate
+### <a name="deprecated-features"></a>Caratteristiche deprecate
 
 - **Integrazione:**
 
-  - In futuro, Visual Studio Tools per Unity supporterà solo Visual Studio 2017 +.
+  - In futuro, Visual Studio Tools per Unity supporterà solo Visual Studio 2017.
 
 ## <a name="2400"></a>2.4.0.0
 
-Rilasciata il 15 ottobre 2019
+Rilasciato il 15 ottobre 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-  - È stato aggiunto un silenziatore per `IDE0060` (parametro non usato) per tutti i messaggi Unity.
+  - Aggiunto un soppressore per `IDE0060` (parametro inutilizzato) per tutti i messaggi Unity.
 
-  - Aggiunta di una descrizione comando rapida per i campi contrassegnati con `TooltipAttribute`. Questa operazione funzionerà anche per una semplice funzione di accesso get usando questo campo.
+  - Aggiunta una descrizione rapida per `TooltipAttribute`i campi contrassegnati con . (Questo funzionerà per una semplice funzione di accesso get utilizzando anche questo campo).
 
 ## <a name="2330"></a>2.3.3.0
 
-Rilasciata il 23 settembre 2019
+Rilasciato il 23 settembre 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-  - È stato aggiunto un nuovo silenziatore per IDE0060, per impedire che l'IDE visualizzi una correzione rapida per rimuovere i parametri non usati.
-    - `USP0005` per `IDE0060`: i messaggi Unity vengono richiamati dal runtime di Unity.
+  - È stato aggiunto un nuovo soppressore per IDE0060, per impedire all'IDE di visualizzare una correzione rapida per rimuovere i parametri inutilizzati.
+    - `USP0005`for `IDE0060`: I messaggi Unity vengono richiamati dal runtime Unity.
 
 ## <a name="2320"></a>2.3.2.0
 
-Rilasciata il 16 settembre 2019
+Rilasciato il 16 settembre 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-  - È stata approfondita la comprensione di Visual Studio per i progetti Unity con l'aggiunta di una nuova diagnostica specifica di Unity. Inoltre, l'IDE è stata resa più intelligente eliminando la diagnostica C# generale non applicabile ai progetti Unity. Ad esempio, l'IDE non visualizzerà una correzione rapida per modificare una variabile di controllo in `readonly` che impedisce di modificare la variabile nell'editor di Unity.
-    - `UNT0001`: i messaggi Unity vengono chiamati dal runtime anche se sono vuoti, non dichiararli per evitare l'elaborazione del uncesseray da parte del runtime di Unity.
-    - `UNT0002`: il confronto dei tag con l'uguaglianza delle stringhe è più lento del metodo CompareTag incorporato.
-    - `UNT0003`: l'utilizzo del formato generico di getComponent è preferibile per l'indipendenza dai tipi.
-    - `UNT0004`: il messaggio di aggiornamento è dipendente dalla frequenza dei frame e deve usare Time. deltaTime anziché time. fixedDeltaTime.
-    - `UNT0005`: il messaggio FixedUpdate è indipendente dalla frequenza dei frame e deve usare Time. fixedDeltaTime anziché time. deltaTime.
+  - Abbiamo approfondito la comprensione che Visual Studio ha per I progetti Unity aggiungendo una nuova diagnostica specifica per Unity.We've deepened the understanding that Visual Studio has for Unity projects by adding new diagnostics specific to Unity. Inoltre, l'IDE è stata resa più intelligente eliminando la diagnostica C# generale non applicabile ai progetti Unity. Ad esempio, l'IDE non mostrerà una correzione rapida `readonly` per modificare una variabile di controllo in cui si impedirà di modificare la variabile nell'Editor di Unity.
+    - `UNT0001`: i messaggi Unity vengono chiamati dal runtime anche se sono vuoti, non dichiararli per evitare uncesseray processing dal runtime Unity.
+    - `UNT0002`: il confronto dei tag che utilizza l'uguaglianza delle stringhe è più lento del metodo CompareTag incorporato.
+    - `UNT0003`: l'utilizzo della forma generica di GetComponent è preferibile per l'indipendenza dai tipi.
+    - `UNT0004`: il messaggio di aggiornamento dipende dalla frequenza dei fotogrammi e deve utilizzare Time.deltaTime anziché Time.fixedDeltaTime.
+    - `UNT0005`: il messaggio FixedUpdate è indipendente dalla frequenza dei fotogrammi e deve utilizzare Time.fixedDeltaTime anziché Time.deltaTime.
     - `UNT0006`: è stata rilevata una firma del metodo non corretta per questo messaggio Unity.
-    - `UNT0007`: Unity esegue l'override dell'operatore di confronto null per gli oggetti Unity, che non è compatibile con la coalescenza null.
-    - `UNT0008`: Unity esegue l'override dell'operatore di confronto null per gli oggetti Unity che non è compatibile con la propagazione Null.
+    - `UNT0007`: Unity esegue l'override dell'operatore di confronto null per gli oggetti Unity che non è compatibile con il coalescing null.
+    - `UNT0008`: Unity esegue l'override dell'operatore di confronto null per gli oggetti Unity, incompatibile con la propagazione null.
     - `UNT0009`: quando si applica l'attributo InitializeOnLoad a una classe, è necessario fornire un costruttore statico. L'attributo InitializeOnLoad garantisce che verrà chiamato all'avvio dell'editor.
-    - `UNT0010`: la creazione di monobehaviors deve essere realizzata solo tramite AddComponent (). un MonoBehaviour è un componente e deve essere associato a un GameObject.
-    - `UNT0011`: ScriptableObject deve essere creato solo con CreateInstance (). Gli ScriptableObject devono essere creati dal motore di Unity per gestire i metodi relativi ai messaggi di Unity.
-    - `USP0001` per `IDE0029`: gli oggetti Unity non devono usare la coalesone null.
-    - `USP0002` per `IDE0031`: gli oggetti Unity non devono usare la propagazione Null.
-    - `USP0003` per `IDE0051`: i messaggi Unity vengono richiamati dal runtime di Unity.
-    - `USP0004` per `IDE0044`: i campi con un attributo SerializeField non devono essere resi di sola lettura.
+    - `UNT0010`: MonoBehaviours deve essere creato solo utilizzando AddComponent(). un MonoBehaviour è un componente e deve essere associato a un GameObject.
+    - `UNT0011`: ScriptableObject deve essere creato solo utilizzando CreateInstance(). Gli ScriptableObject devono essere creati dal motore di Unity per gestire i metodi relativi ai messaggi di Unity.
+    - `USP0001`for `IDE0029`: Gli oggetti Unity non devono utilizzare il coalescing nullo.
+    - `USP0002`for `IDE0031`: gli oggetti Unity non devono utilizzare la propagazione null.
+    - `USP0003`for `IDE0051`: I messaggi Unity vengono richiamati dal runtime Unity.
+    - `USP0004`for `IDE0044`: I campi con un attributo SerializeField non devono essere resi di sola lettura.
 
 ## <a name="2310"></a>2.3.1.0
 
-Rilasciata il 4 settembre 2019
+Rilasciato il 4 settembre 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Valutazione:**
 
-  - Aggiunta del supporto per una visualizzazione dei tipi migliore, ad esempio `List<object>` anziché `List'1[[System.Object, <corlib...>]]`.
+  - Aggiunto il supporto per una migliore `List<object>` visualizzazione `List'1[[System.Object, <corlib...>]]`del tipo, cioè invece di .
 
-  - Aggiunta del supporto per l'accesso ai membri del puntatore, ad esempio `p->data->member`.
+  - Aggiunto il supporto per l'accesso `p->data->member`ai membri del puntatore, ad esempio .
 
-  - Aggiunto il supporto per le conversioni implicite negli inizializzatori di matrice, ad esempio `new byte [] {1,2,3,4}`.
+  - Aggiunto il supporto per le conversioni implicite `new byte [] {1,2,3,4}`negli inizializzatori di matrice, ad esempio .
 
-  - Aggiunta del supporto per l'editor esadecimale quando si esaminano le matrici di byte e le stringhe.
+  - Aggiunto il supporto per l'editor esadecimale durante l'ispezione di stringhe e matrici di byte.
 
 ## <a name="2300"></a>2.3.0.0
 
-Rilasciata il 13 agosto 2019
+Rilasciato il 13 agosto 2019
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Valutazione:**
 
-  - Correzione dei problemi di esecuzione delle eccezioni.
+  - Risolti i problemi di esecuzione delle azioni con le eccezioni.
 
-  - Correzione della valutazione di pseudo-identificatori (ad esempio $exception).
+  - Correzione della valutazione degli pseudoidentificatori (ad esempio $exception).
 
-  - Impedisci arresto anomalo quando si dereferenziano indirizzi non validi.  
+  - Prevenire l'arresto anomalo durante la dereferetratura di indirizzi non validi.  
 
-  - Correzione del problema relativo agli AppDomain scaricati.
+  - Risolto il problema relativo ai domini applicazione scaricati.
 
 ## <a name="2200"></a>2.2.0.0
 
@@ -155,7 +155,7 @@ Data di rilascio: 25 luglio 2019
 
 Data di rilascio: 9 luglio 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Debugger:**
 
@@ -193,7 +193,7 @@ Data di rilascio: 2 luglio 2019
 
 Data di rilascio: 27 giugno 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
@@ -213,7 +213,7 @@ Data di rilascio: 27 giugno 2019
 
 Data di rilascio: 20 giugno 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
@@ -225,7 +225,7 @@ Data di rilascio: 20 giugno 2019
 
 Data di rilascio: 30 maggio 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
@@ -235,7 +235,7 @@ Data di rilascio: 30 maggio 2019
 
 Data di rilascio: 2 aprile 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
@@ -265,7 +265,7 @@ Data di rilascio: 2 aprile 2019
 
 Data di rilascio: 26 marzo 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
@@ -275,7 +275,7 @@ Data di rilascio: 26 marzo 2019
 
 Data di rilascio: 20 marzo 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Generazione del progetto:**
 
@@ -291,11 +291,11 @@ Data di rilascio: 20 marzo 2019
 
 Data di rilascio: 5 marzo 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-  - Aggiornamento dell'API `ScriptableObject`.
+  - L'API `ScriptableObject` è stata aggiornata.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -307,11 +307,11 @@ Data di rilascio: 5 marzo 2019
  
  Data di rilascio: 5 marzo 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Generazione del progetto:**
 
-  - I campi pubblici e serializzati non causeranno più avvisi. Gli avvisi del compilatore `CS0649` e `IDE0051` sono stati eliminati automaticamente nei progetti Unity che hanno creato questi messaggi.
+  - I campi pubblici e serializzati non causeranno più avvisi. Abbiamo automaticamente soppresso `CS0649` gli `IDE0051` avvisi e del compilatore nei progetti Unity che hanno creato questi messaggi.
 
 - **Integrazione:**
 
@@ -331,7 +331,7 @@ Data di rilascio: 5 marzo 2019
 
 Data di rilascio: 4 febbraio 2019
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
@@ -356,7 +356,7 @@ Data di rilascio: 4 dicembre 2018
 ## <a name="2000"></a>2.0.0.0
  Data di rilascio: 4 dicembre 2018
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Debugger:**
 
@@ -382,7 +382,7 @@ Data di rilascio: 4 dicembre 2018
 
 Data di rilascio: 13 novembre 2018
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Debugger:**
 
@@ -440,7 +440,7 @@ Data di rilascio: 26 giugno 2018
 
 Data di rilascio: 18 aprile 2018
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
@@ -452,7 +452,7 @@ Data di rilascio: 18 aprile 2018
 
 Data di rilascio: 28 marzo 2018
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
@@ -462,7 +462,7 @@ Data di rilascio: 28 marzo 2018
 
 Data di rilascio: 21 marzo 2018
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
@@ -472,7 +472,7 @@ Data di rilascio: 21 marzo 2018
 
 Data di rilascio: 5 marzo 2018
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Generazione del progetto:**
 
@@ -512,7 +512,7 @@ Data di rilascio: 23 gennaio 2018
 
 Data di rilascio: 13 dicembre 2017
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Generazione del progetto:**
 
@@ -542,7 +542,7 @@ Data di rilascio: 12 dicembre 2017
 
 Data di rilascio: 20 novembre 2017
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Procedure guidate:**
 
@@ -554,7 +554,7 @@ Data di rilascio: 20 novembre 2017
 
 Data di rilascio: 23 ottobre 2017
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Debugger:**
 
@@ -572,7 +572,7 @@ Data di rilascio: 23 ottobre 2017
 
 Data di rilascio: 23 ottobre 2017
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Generazione del progetto:**
 
@@ -582,7 +582,7 @@ Data di rilascio: 23 ottobre 2017
 
 Data di rilascio: 8 agosto 2017
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Debugger:**
 
@@ -596,7 +596,7 @@ Data di rilascio: 8 agosto 2017
 
 Data di rilascio: 20 luglio 2017
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
@@ -606,7 +606,7 @@ Data di rilascio: 20 luglio 2017
 
 Data di rilascio: 12 luglio 2017
 
-### <a name="new-features"></a>Nuove funzioni e caratteristiche
+### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 

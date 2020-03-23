@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772667"
 ---
 # <a name="overviews-performance-tools"></a>Panoramiche (strumenti per le prestazioni)
 Questa sezione fornisce una panoramica dei concetti e della terminologia per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], utilizzabili per misurare le caratteristiche delle prestazioni di un'applicazione in fase di sviluppo.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 - [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)
 
  Vengono fornite informazioni di base sulla profilatura delle prestazioni con gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

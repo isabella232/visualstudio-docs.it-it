@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: aa90262081a693227b4594a4e5b7fe22c8fb1627
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778661"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Visualizzazione dei puntatori all'istruzione: dati di campionamento di memoria .NET
@@ -25,9 +25,9 @@ La visualizzazione IP dei dati di profilatura sull'allocazione di memoria .NET r
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Nome processo**|nome del processo.|
-|**Nome modulo**|Nome del modulo contenente l'istruzione.|
+|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Process Name**|Nome del processo.|
+|**Nome del modulo**|Nome del modulo contenente l'istruzione.|
 |**Percorso modulo**|Percorso del modulo contenente l'istruzione.|
 |**File di origine**|File di origine che contiene l'istruzione.|
 |**Nome funzione**|Nome della funzione.|
@@ -44,4 +44,4 @@ La visualizzazione IP dei dati di profilatura sull'allocazione di memoria .NET r
 |**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che sono stati allocati dall'istruzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazione puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)

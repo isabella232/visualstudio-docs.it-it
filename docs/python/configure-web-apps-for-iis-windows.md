@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957373"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configurare app Web Python per IIS
@@ -31,7 +31,7 @@ Per eseguire un'app Web, installare prima di tutto la versione di Python necessa
 
 Registrare il percorso dell'interprete `python.exe` per i passaggi successivi. Per comodità, aggiungere quindi tale percorso alla variabile di ambiente PATH.
 
-## <a name="install-packages"></a>Installazione di pacchetti
+## <a name="install-packages"></a>Installare i pacchetti
 
 Quando si usa un host dedicato, è possibile usare l'ambiente Python globale per eseguire l'app invece di un ambiente virtuale. Di conseguenza, è possibile installare tutti i requisiti dell'app nell'ambiente globale semplicemente eseguendo `pip install -r requirements.txt` a un prompt dei comandi.
 
@@ -86,7 +86,7 @@ Modificare quindi il file *web.config* dell'app per includere i percorsi complet
     </system.webServer>
     ```
 
-1. Nella sezione `<appSettings>` di *web.config*, aggiungere le chiavi per `WSGI_HANDLER`, `WSGI_LOG` (facoltativo) e `PYTHONPATH`:
+1. `<appSettings>` All'interno della sezione di *web.config*, aggiungere chiavi per `WSGI_HANDLER`, `WSGI_LOG` (facoltativo) e `PYTHONPATH`:
 
     ```xml
     <appSettings>
@@ -139,7 +139,7 @@ Modificare quindi il file *web.config* dell'app per includere i percorsi complet
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    Se l'URL non viene aggiunto alla matrice si verifica l'errore **DisallowedHost at/Invalid HTTP_HOST header: '\<URL sito\>'. Potrebbe essere necessario aggiungere l''\<URL sito\>' in ALLOWED_HOSTS.**
+    Se non si aggiunge l'URL all'array, viene generato l'errore **DisallowedHost at / Invalid HTTP_HOST header: '\<site URL\>'. Potrebbe essere necessario\<aggiungere\>l'URL del sito allALLOWED_HOSTS.**
 
     Si noti che, quando la matrice è vuota, Django autorizza automaticamente "localhost" e "127.0.0.1", ma se si aggiunge l'URL di produzione questa funzionalità viene rimossa. Per questo motivo è consigliabile mantenere copie separate di *settings.py* per sviluppo e produzione, oppure usare le variabili di ambiente per controllare i valori della fase di esecuzione.
 

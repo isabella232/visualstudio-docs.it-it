@@ -7,10 +7,10 @@ ms.date: 11/13/2019
 ms.topic: conceptual
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74706873"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
@@ -28,7 +28,7 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
    > [!NOTE]
    > Quando si inizia a creare l'account, è possibile che venga visualizzato il messaggio di errore seguente: "OOPS!  Your promo code is invalid or expired" (Il codice promozionale non è valido o è scaduto").  Ciò accade perché, quando viene creato, il codice promozionale scade dopo alcuni minuti.  Se si riceve questo messaggio, è sufficiente tornare alla pagina [Vantaggi](https://my.visualstudio.com/benefits) e fare clic sul collegamento **Attivalo** nel riquadro del vantaggio DataCamp.
 
-4. Dopo aver creato l'account, è possibile scegliere un percorso di apprendimento.  Di seguito sono descritte le opzioni disponibili.
+4. Dopo aver creato l'account, è possibile scegliere un percorso di apprendimento.  Le opzioni includono:
     - R per data science
     - Python per data science
     - Sviluppo dell'insieme di competenze di data science
@@ -37,7 +37,7 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
    > [!div class="mx-imgBorder"]
    > ![Scelta del percorso DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
-5. Dopo aver selezionato il percorso, è possibile affinare maggiormente il percorso di apprendimento selezionando un obiettivo.  Se ad esempio si è scelto il percorso "Develop your Data Science Skillset" (Sviluppo dell'insieme di competenze di data science), vengono visualizzate le opzioni seguenti. Scegliere un'opzione oppure fare clic su non è **certo.  Mostra tutti i percorsi di carriera** per creare un percorso più ampio.
+5. Dopo aver selezionato il percorso, è possibile affinare maggiormente il percorso di apprendimento selezionando un obiettivo.  Se ad esempio si è scelto il percorso "Develop your Data Science Skillset" (Sviluppo dell'insieme di competenze di data science), vengono visualizzate le opzioni seguenti. Scegli un'opzione o fai clic su **Non sono sicuro.  Mostrami tutti i percorsi di carriera** per creare un percorso più ampio.
    > [!div class="mx-imgBorder"]
    > ![Insieme di competenze di data science di DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
 
@@ -50,37 +50,37 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
    > [!div class="mx-imgBorder"]
    > ![Introduzione a DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-È possibile interrompere il training in qualsiasi momento e riprenderlo nella sessione successiva.  Visitare [https://www.datacamp.com](https://www.datacamp.com) e accedere.  Verrà visualizzato il dashboard e sarà possibile riprendere il training dal punto in cui era stato sospeso. È sufficiente fare clic su **Continue Track** (Continua il percorso).
+È possibile interrompere il training in qualsiasi momento e riprenderlo nella sessione successiva.  Basta [https://www.datacamp.com](https://www.datacamp.com)visitare , e accedere.  Verrà visualizzato il dashboard e sarà possibile riprendere il training dal punto in cui era stato sospeso. È sufficiente fare clic su **Continue Track** (Continua il percorso).
 
 > [!div class="mx-imgBorder"]
-> Formazione continua ![datacamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![Continuazione del training su DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
-## <a name="eligibility"></a>Eligibility
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
+## <a name="eligibility"></a>Idoneità
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 3 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL | 3 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Visual Studio Enterprise con GitHub Enterprise   | Vl | 3 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
-| Visual Studio Professional con GitHub Enterprise| VL | 3 mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
+| Visual Studio Professional con GitHub Enterprise| Vl | 3 mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 mesi                                             |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 mesi                                              |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 
-<sup>1</sup>  *include: not for Resale (NFR), ETP, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *Include: Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) invitati a passare a esplorare diverse opzioni per l'acquisto di Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con DataCamp?  Vedere queste risorse:
   - [Community di DataCamp](https://www.datacamp.com/community/tutorials) con forum ed esercitazioni.
   - [Centro assistenza DataCamp](https://support.datacamp.com/hc), in cui cercare negli argomenti di supporto e vedere le domande e le richieste degli utenti.
-  - [Inviare una richiesta di supporto](https://support.datacamp.com/hc/requests/new)
-- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+  - [Inviare una richiesta di supporto.](https://support.datacamp.com/hc/requests/new)
+- Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [il supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
 Esplorare altre opportunità di sviluppo professionale nella propria sottoscrizione:
@@ -88,4 +88,4 @@ Esplorare altre opportunità di sviluppo professionale nella propria sottoscrizi
 - [LinkedIn Learning](vs-linkedin-learning.md)
 
 
-Se non è già stato attivato il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione, visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul riquadro Azure nella categoria strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale Azure DevTest.
+Se non è già stato attivato il vantaggio del credito individuale [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) DevTest di Azure fornito con la sottoscrizione, visitare e fare clic sul riquadro Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale di Azure DevTest.If you haven't already activated the Azure DevTest individual credit that comes with your subscription, visit and click on the Azure tile in the Tools category to set up your Azure subscription and redeem your Azure DevTest individual credit.

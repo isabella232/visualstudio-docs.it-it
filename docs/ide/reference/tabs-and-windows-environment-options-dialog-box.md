@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bd6358189c3bd39bad57332f87dfe8c43894cd0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72645035"
 ---
-# <a name="options-dialog-box-environment--tabs-and-windows"></a>Finestra di dialogo Opzioni: ambiente \> schede e finestre
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>Finestra di dialogo Opzioni: Schede ambiente \> e finestre
 
-Usare questa pagina per impostare le opzioni per le modalità di comportamento di finestre a schede in un riquadro dell'editor e la modalità di comportamento delle finestre degli strumenti. Per altre informazioni, vedere [Personalizzazione del layout delle finestre in Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
+Usare questa pagina per impostare le opzioni per le modalità di comportamento di finestre a schede in un riquadro dell'editor e la modalità di comportamento delle finestre degli strumenti. Per altre informazioni, vedere [Personalizzare i layout di finestra in Visual StudioFor more](../../ide/customizing-window-layouts-in-visual-studio.md) information, see Customize window layouts in Visual Studio

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 051c983920ddc80909d721e569c5efb5ecd33a7c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779935"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -32,8 +32,8 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |-|-|
 |**/app:{AppName}**|Avvia il profiler e attende che l'app specificata venga avviata dal menu Start.<br /><br /> Eseguire `vsperf /listapps` per visualizzare i valori Name e PackageFullName delle app installate.|
 |**/package:{PackageFullName}**|Avvia il profiler e attende che l'app specificata venga avviata dal menu Start.<br /><br /> Eseguire `vsperf /listapps` per visualizzare i valori Name e PackageFullName delle app installate.|
-|**/js**|Obbligatorio per la profilatura delle app JavaScript.<br /><br /> Raccogliere dati sulle prestazioni dalle app JavaScript.<br /><br /> Usare solo con /package o /attach.|
-|**/noclr**|Parametro facoltativo. Non raccogliere dati CLR.<br /><br /> Usare solo con /package o /attach.<br /><br /> Ottimizzazione, non verrà eseguita la risoluzione di simboli gestiti.|
+|**/js (informazioni in inglese)**|Obbligatorio per la profilatura delle app JavaScript.<br /><br /> Raccogliere dati sulle prestazioni dalle app JavaScript.<br /><br /> Usare solo con /package o /attach.|
+|**/noclr**|Facoltativa. Non raccogliere dati CLR.<br /><br /> Usare solo con /package o /attach.<br /><br /> Ottimizzazione, non verrà eseguita la risoluzione di simboli gestiti.|
 |**/listapps**|Elencare i valori Name e PackageFullName delle app installate.|
 
 ## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Solo applicazioni desktop Windows 8 e applicazioni Windows Server 2012
@@ -51,13 +51,13 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |||
 |-|-|
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Raccoglie dati dai processi specificati.<br /><br /> Usare Gestione attività per visualizzare l'ID processo (PID) e i nomi dei processi delle app in esecuzione.|
-|**/file:{ReportName}**|Parametro facoltativo. Specifica il file di output (sovrascrive il file esistente).<br /><br /> Usare solo con /package o /attach.|
-|**/pause**|Sospendere la raccolta dei dati.|
-|**/resume**|Riprendere la raccolta dei dati.|
-|**/stop**|Interrompere la raccolta dei dati e terminare i processi di destinazione.|
-|**/detach**|Interrompere la raccolta dei dati, senza arrestare l'esecuzione dei processi di destinazione.|
+|**/file:{ReportName}**|Facoltativa. Specifica il file di output (sovrascrive il file esistente).<br /><br /> Usare solo con /package o /attach.|
+|**/pausa**|Sospendere la raccolta dei dati.|
+|**/resume (ripresa)**|Riprendere la raccolta dei dati.|
+|**/stop (arresta)**|Interrompere la raccolta dei dati e terminare i processi di destinazione.|
+|**/detach (Opzione /Detach)**|Interrompere la raccolta dei dati, senza arrestare l'esecuzione dei processi di destinazione.|
 |**/status**|Visualizzare lo stato del profiler.|
 
 ## <a name="see-also"></a>Vedere anche
 - [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
-- [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+- [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 63bba4e8defcd727f05dbc209aa2f48f7d5f2c92
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70107774"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Procedura: Impostare le opzioni di accessibilità IDE
@@ -27,7 +27,7 @@ Visual Studio offre funzionalità che facilitano la lettura e la scrittura per g
 Visual Studio supporta anche i layout di tastiera Dvorak, che consentono di accedere più facilmente ai caratteri usati con maggiore frequenza. È anche possibile personalizzare i tasti di scelta rapida predefiniti disponibili in Visual Studio. Per altre informazioni, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella presente Guida e possono variare a seconda delle impostazioni attive o dell'edizione. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella presente Guida e possono variare a seconda delle impostazioni attive o dell'edizione. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
 
 ::: moniker range="vs-2017"
 
@@ -38,7 +38,7 @@ Visual Studio supporta anche i layout di tastiera Dvorak, che consentono di acce
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editor, finestre di dialogo e finestre degli strumenti
 
-Per impostazione predefinita, le finestre di dialogo e le finestre degli strumenti in Visual Studio usano le stesse dimensioni di carattere e gli stessi colori del sistema operativo. Le impostazioni relative ai colori per il frame dell'IDE, le finestre di dialogo, le barre degli strumenti e le finestre degli strumenti si basano su una combinazione di colori: chiara o scura. È possibile modificare il tema colori corrente nella [finestra di dialogo Opzioni: Ambiente > Generale](../../ide/reference/general-environment-options-dialog-box.md).
+Per impostazione predefinita, le finestre di dialogo e le finestre degli strumenti in Visual Studio usano le stesse dimensioni di carattere e gli stessi colori del sistema operativo. Le impostazioni relative ai colori per il frame dell'IDE, le finestre di dialogo, le barre degli strumenti e le finestre degli strumenti si basano su una combinazione di colori: chiara o scura. È possibile modificare il tema di colore corrente nella finestra di [dialogo Opzioni: Ambiente > Generale](../../ide/reference/general-environment-options-dialog-box.md).
 
 È anche possibile visualizzare finestre popup nella visualizzazione Codice dell'editor. Queste finestre possono indicare i membri disponibili per l'oggetto corrente e i parametri necessari per completare una funzione o un'istruzione e possono essere utili se l'utente ha difficoltà di digitazione, ma interferiscono con lo stato attivo nell'editor del codice, creando problemi per alcuni utenti.
 
@@ -46,7 +46,7 @@ Di seguito viene descritto come disattivare le finestre popup:
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-1. Scegliere **Editor di testo** > **Tutti i linguaggi** > **Generale**.
+1. Scegliere **Editor di** > testo**Tutti i linguaggi** > **Generale**.
 
 1. Deselezionare le caselle di controllo **Elenco membri automatico** e **Informazioni parametri**.
 
@@ -54,21 +54,21 @@ Di seguito viene descritto come disattivare le finestre popup:
 
 ### <a name="change-the-size-of-text"></a>Modificare le dimensioni del testo
 
-È possibile modificare le impostazioni per le finestre degli strumenti basate su testo, ad esempio le finestre **Comando**, **Immediato** e **Output** usando  **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori**.
+È possibile modificare le impostazioni per le finestre degli strumenti basate su testo, ad esempio le finestre **Comando**, **Immediato** e **Output** usando ** Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori**.
 
 Quando si seleziona **[Tutte le finestre degli strumenti di testo]** nell'elenco a discesa **Mostra impostazioni per**, l'impostazione predefinita viene indicata come **Predefinita** negli elenchi a discesa **Primo piano elemento** e **Sfondo elemento**. Per modificare queste impostazioni, scegliere il pulsante **Personalizza**.
 
-È anche possibile modificare le impostazioni di visualizzazione del testo nell'editor. Ecco come fare.
+È anche possibile modificare le impostazioni di visualizzazione del testo nell'editor. Ecco come.
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-1. Scegliere **Ambiente** > **Tipi di carattere e colori**.
+1. Scegliere**Colori e colori** **ambiente** > .
 
 1. Selezionare un'opzione nel menu a discesa **Mostra impostazioni per**.
 
     Per modificare le dimensioni dei caratteri del testo in un editor, scegliere **Editor di testo**.
 
-    Per modificare le dimensioni dei caratteri del testo nelle finestre degli strumenti basate su testo, scegliere **[Tutte le finestre degli strumenti di testo]** .
+    Per modificare le dimensioni dei caratteri del testo nelle finestre degli strumenti basate su testo, scegliere **[Tutte le finestre degli strumenti di testo]**.
 
     Per modificare le dimensioni dei caratteri del testo delle descrizioni comandi in un editor, scegliere **Descrizione comando editor**.
 
@@ -87,7 +87,7 @@ Quando si seleziona **[Tutte le finestre degli strumenti di testo]** nell'elenco
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Modificare i colori usati nell'ambiente IDE
 
-È possibile modificare i colori predefiniti per il testo, gli indicatori di margine, lo spazio e gli elementi di codice nell'editor. Ecco come fare.
+È possibile modificare i colori predefiniti per il testo, gli indicatori di margine, lo spazio e gli elementi di codice nell'editor. Ecco come.
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
@@ -102,7 +102,7 @@ Quando si seleziona **[Tutte le finestre degli strumenti di testo]** nell'elenco
 1. Scegliere **OK**.
 
 > [!TIP]
-> Per usare colori a contrasto elevato per tutte le finestre delle applicazioni del sistema operativo, premere **ALT di sinistra**+**MAIUSC di sinistra**+**PrtScn**. Se Visual Studio è aperto, chiuderlo e riaprirlo per implementare correttamente i colori a contrasto elevato.
+> Per utilizzare colori a contrasto elevato per tutte le finestre dell'applicazione nel sistema operativo, premere **Alt**+sinistro**Maiusc**+**di Sinistra Di Stamp.** Se Visual Studio è aperto, chiuderlo e riaprirlo per implementare correttamente i colori a contrasto elevato.
 
 ## <a name="toolbars"></a>Barre degli strumenti
 

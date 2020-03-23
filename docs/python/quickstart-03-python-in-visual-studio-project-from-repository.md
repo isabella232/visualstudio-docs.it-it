@@ -10,14 +10,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5d0363626748588b6f4058e197f0d6796ece51ee
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430641"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "64543148"
 ---
-# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Guida introduttiva: Clonare un repository del codice Python in Visual Studio
+# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Guida introduttiva: Clonare un repository di codice Python in Visual Studio
 
 Dopo aver [installato il supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md), è possibile aggiungere l'estensione GitHub per Visual Studio. L'estensione consente di clonare facilmente un repository di codice Python e di creare un progetto da quest'ultimo dall'interno dell'IDE. Rimane comunque possibile clonare i repository dalla riga di comando e utilizzarli in Visual Studio.
 
@@ -29,14 +29,14 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 
 1. Avviare Visual Studio.
 
-1. Selezionare **Visualizza** > **Team Explorer** per aprire la finestra **Team Explorer** in cui è possibile connettersi a GitHub o Azure Repos oppure clonare un repository. Se la pagina **Connetti** illustrata di seguito non viene visualizzata, selezionare l'icona della spina sulla barra degli strumenti superiore.
+1. Selezionare **Visualizza** > **Team Explorer** per aprire la finestra Team **Explorer** in cui è possibile connettersi a GitHub o Azure Repos o clonare un repository. Se la pagina **Connetti** illustrata di seguito non viene visualizzata, selezionare l'icona della spina sulla barra degli strumenti superiore.
 
     ![Finestra Team Explorer con Azure Repos, GitHub e la clonazione di un repository](media/team-explorer.png)
 
 1. In **Repository Git locali** selezionare il comando **Clona** e quindi immettere `https://github.com/gregmalcolm/python_koans` nel campo URL, immettere una cartella per i file clonati e selezionare il pulsante **Clona**.
 
     > [!Tip]
-    > La cartella indicata in **Team Explorer** corrisponde esattamente alla cartella in cui ricevere i file clonati. A differenza del comando `git clone`, la creazione di un clone in **Team Explorer** non crea automaticamente una sottocartella con il nome del repository.
+    > La cartella specificata in **Team Explorer** è la cartella esatta in cui ricevere i file clonati. A differenza del comando `git clone`, la creazione di un clone in **Team Explorer** non crea automaticamente una sottocartella con il nome del repository.
 
 1. Al termine della clonazione, viene visualizzato il nome del repository nell'elenco **Repository Git locali**. Fare doppio clic su questo nome per passare al dashboard del repository in **Team Explorer**.
 
@@ -44,23 +44,23 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 
     ![Finestra Team Explorer, creazione di un nuovo progetto da un clone](media/team-explorer-new-project.png)
 
-1. Nella finestra di dialogo **Nuovo progetto** visualizzata passare al linguaggio **Python** (o cercare "Python"), selezionare **Da codice Python esistente**, specificare un nome per il progetto, impostare il **Percorso** sulla stessa cartella del repository e scegliere **OK**. Nella procedura guidata visualizzata selezionare **Fine**.
+1. Nella finestra di dialogo **Nuovo progetto** visualizzata, passare al linguaggio **Python** (o cercare in "Python"), selezionare Da codice **Python esistente**, specificare un nome per il progetto, impostare **Percorso** sulla stessa cartella del repository e selezionare **OK**. Nella procedura guidata visualizzata, selezionare **Fine**.
 
 1. Selezionare **Visualizza** > **Esplora soluzioni** dal menu.
 
 1. In **Esplora soluzioni** espandere il nodo **python3**, fare clic con il pulsante destro del mouse su **contemplate_koans.py** e scegliere **Imposta come file di avvio**. Questo passaggio indica quale file deve essere usato da Visual Studio per l'esecuzione del progetto.
 
-1. Selezionare **Progetto** > **Proprietà Koans** dal menu, selezionare la scheda **Generale** e impostare **Directory di lavoro** su "python3". Questo passaggio è necessario perché, per impostazione predefinita, Visual Studio imposta la directory di lavoro sulla radice del progetto anziché sul percorso del file di avvio (*python3\contemplate_koans.py*, che è possibile visualizzare nelle proprietà del progetto). Il codice del programma cerca un file *koans.txt* nella cartella di lavoro, di conseguenza, se non si modifica questo valore viene visualizzato un errore di runtime.
+1. Selezionate**Proprietà koans** **progetto** > dal menu, selezionate la scheda **Generale** e impostate Directory **di lavoro** su "python3". Questo passaggio è necessario perché, per impostazione predefinita, Visual Studio imposta la directory di lavoro sulla radice del progetto anziché sul percorso del file di avvio (*python3\contemplate_koans.py*, che è possibile visualizzare nelle proprietà del progetto). Il codice del programma cerca un file *koans.txt* nella cartella di lavoro, di conseguenza, se non si modifica questo valore viene visualizzato un errore di runtime.
 
     ![Impostazione della cartella di lavoro per un progetto di Python](media/projects-set-working-directory.png)
 
-1. Premere **CTRL**+**F5** o selezionare **Debug** > **Avvia senza eseguire debug** per eseguire il programma. Se viene visualizzato un errore **FileNotFoundError** per il file *koans.txt*, controllare l'impostazione della directory di lavoro come descritto nel passaggio precedente.
+1. Premere **CTRL**+**F5** o selezionare **Avvio debug** > **senza eseguire il debug** per eseguire il programma. Se viene visualizzato un errore **FileNotFoundError** per il file *koans.txt*, controllare l'impostazione della directory di lavoro come descritto nel passaggio precedente.
 
 1. Quando il programma viene eseguito correttamente, viene visualizzato un errore di asserzione alla riga 17 del file *python3/koans/about_asserts.py*. È intenzionale: il programma è progettato per fare in modo che gli errori intenzionali siano corretti. (Per altri dettagli, vedere [Ruby Koans](https://rubykoans.com/) da cui è stato ideato Python Koans.)
 
     ![Primo output del programma di Python koans](media/koans-output.png)
 
-1. Aprire *python3/koans/about_asserts.py* da **Esplora soluzioni** e fare doppio clic sul file. Si noti che i numeri di riga non vengono visualizzati nell'editor per impostazione predefinita. Per modificare questa impostazione, selezionare **Strumenti** > **Opzioni**, selezionare **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo, quindi passare a **Editor di testo** > **Python** > **Generale** e selezionare **Numeri di riga**:
+1. Aprire *python3/koans/about_asserts.py* da **Esplora soluzioni** e fare doppio clic sul file. Si noti che i numeri di riga non vengono visualizzati nell'editor per impostazione predefinita. Per modificare questa impostazione, selezionare **Opzioni degli strumenti** > **Options**, selezionare Mostra tutte **le impostazioni** nella parte inferiore della finestra di dialogo, quindi passare a Editor di testo **Text Editor** > **Python** > **Generale** e selezionare Numeri di **riga**:
 
     ![Accensione del numero di riga per i file di Python](media/options-general-line-numbers.png)
 
@@ -83,5 +83,5 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 ## <a name="see-also"></a>Vedere anche
 
 - [Identificare manualmente un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Installare il supporto di Python in Visual Studio 2015 e versioni precedenti](installing-python-support-in-visual-studio.md)
+- [Come installare il supporto di Python in Visual Studio in Windows](installing-python-support-in-visual-studio.md)
 - [Percorsi di installazione](installing-python-support-in-visual-studio.md#install-locations)

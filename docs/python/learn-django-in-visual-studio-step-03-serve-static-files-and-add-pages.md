@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62958243"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
@@ -63,9 +63,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 È possibile organizzare i file usando qualsiasi struttura di cartelle in *static* e quindi usare percorsi relativi all'interno di tale cartella per fare riferimento ai file. Per illustrare questo processo, i passaggi seguenti aggiungono un file CSS all'app. Il foglio di stile viene quindi usato nel modello *index.html*:
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **HelloDjangoApp** nel progetto di Visual Studio, selezionare **Aggiungi** > **Nuova cartella** e assegnare alla cartella il nome `static`.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla cartella **HelloDjangoApp** nel progetto di Visual Studio, scegliere **Aggiungi** > **nuova cartella**e denominarla . `static`
 
-1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata selezionare il modello **Foglio di stile**, assegnare al file il nome `site.css` e selezionare **OK**. Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
+1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata, selezionare `site.css`il modello Foglio di **stile,** assegnare un nome al file e scegliere **OK**. Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
 
     ![Struttura di file statici come visualizzato in Esplora soluzioni](media/django/step03-static-file-structure.png)
 
@@ -101,7 +101,7 @@ Risposta: La riga `{% load staticfiles %}` è necessaria prima di fare riferimen
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Domanda: Ci sono convenzioni per organizzare i file statici?
 
-Risposta: È possibile aggiungere altri file CSS, JavaScript e HTML nella cartella *static* a propria discrezione. Un modo tipico per organizzare i file statici consiste nel creare sottocartelle denominate *fonts*, *scripts* e *content* (per i fogli di stile e qualsiasi altro file). In ogni caso, ricordarsi di includere tali sottocartelle nel percorso relativo del file nei riferimenti `{% static %}`.
+Risposta: È possibile aggiungere altri file CSS, JavaScript e HTML nella cartella *static* come si vuole. Un modo tipico per organizzare i file statici consiste nel creare sottocartelle denominate *fonts*, *scripts* e *content* (per i fogli di stile e qualsiasi altro file). In ogni caso, ricordarsi di includere tali sottocartelle nel percorso relativo del file nei riferimenti `{% static %}`.
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Passaggio 3-3: Aggiungere una pagina all'app
 
@@ -160,11 +160,11 @@ I passaggi seguenti aggiungono una pagina "About" al progetto "HelloDjangoApp", 
     <div><a href="about">About</a></div>
     ```
 
-1. Salvare tutti i file con il comando di menu **File** > **Salva tutto** oppure premere **CTRL**+**MAIUSC**+**S**. Tecnicamente, questo passaggio non è necessario in quanto eseguendo il progetto in Visual Studio i file vengono salvati automaticamente. Ciononostante, si tratta di un comando utile da conoscere.
+1. Salvare tutti i file utilizzando il comando di menu **Salva** > **tutto** file o semplicemente premere **CTRL**+**Maiusc**+**S**. Tecnicamente, questo passaggio non è necessario in quanto eseguendo il progetto in Visual Studio i file vengono salvati automaticamente. Ciononostante, si tratta di un comando utile da conoscere.
 
 1. Eseguire il progetto per osservare i risultati e controllare lo spostamento tra le pagine. Al termine, arrestare il server.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Domanda: Se si cerca di usare "index" per il collegamento alla home page, non funziona. Perché?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Domanda: Se si cerca usare "index" per il collegamento alla home page, non funziona. Perché?
 
 Risposta: Anche se la funzione di visualizzazione in *views.py* è denominata `index`, i modelli di routing degli URL nel file *urls.py* del progetto Django non contengono un'espressione regolare che trova la corrispondenza con la stringa "index". Per trovare la corrispondenza con tale stringa, è necessario aggiungere un'altra voce per il modello `^index$`.
 
@@ -283,4 +283,4 @@ I passaggi seguenti illustrano l'ereditarietà:
 - [Writing your first Django app, part 3 (views)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (Scrittura della prima app Django, parte 3 - visualizzazioni) (docs.djangoproject.com)
 - Per altre funzionalità dei modelli Django, ad esempio il flusso di controllo, vedere [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (Linguaggio dei modelli Django) (docs.djangoproject.com)
 - Per informazioni dettagliate sull'uso del tag `{% url %}`, vedere la sezione [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) in [Built-in template tags and filters for Django templates reference](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (Filtri e tag dei modelli predefiniti per i riferimenti dei modelli Django) (docs.djangoproject.com)
-- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

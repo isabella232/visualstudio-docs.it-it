@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773309"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Visualizzazione Chiamante-chiamato: dati di campionamento di memoria .NET
@@ -31,15 +31,15 @@ La visualizzazione Chiamante/chiamato consente di visualizzare i dati di profila
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Nome processo**|nome del processo.|
-|**Nome modulo**|Nome del modulo che contiene la funzione.|
+|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Process Name**|Nome del processo.|
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 |**Nome funzione**|Nome completo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
-|**Type**|Il contesto della funzione:<br /><br /> **0**: la funzione corrente<br /><br /> **1**: una funzione che chiama la funzione corrente<br /><br /> **2**: una funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
+|**Tipo**|Il contesto della funzione:<br /><br /> **0**: la funzione corrente<br /><br /> **1**: una funzione che chiama la funzione corrente<br /><br /> **2**: una funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**Livello**|Profondità della funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**Allocazioni inclusive**|- Per la funzione corrente, il numero di oggetti allocati dalla funzione nell'esecuzione della profilatura. Il numero include gli oggetti creati nelle funzioni chiamate.<br />- Per una funzione chiamante, il numero delle allocazioni inclusive della funzione corrente generate da chiamate da questa funzione.<br />- Per una funzione chiamata, il numero di oggetti allocati dalle istanze di questa funzione chiamate dalla funzione corrente. Il numero include le allocazioni effettuate dalle funzioni chiamate dalla funzione chiamata.|
 |**% allocazioni inclusive**|Percentuale di tutti gli oggetti creati nell'esecuzione della profilatura che rappresentavano allocazioni inclusive di questa funzione.|
@@ -51,7 +51,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare i dati di profila
 |**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che rappresentavano allocazioni esclusive di questa funzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
-- [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Procedura: personalizzare le colonne della visualizzazione reportHow to: Customize report view columns](../profiling/how-to-customize-report-view-columns.md)
+- [Visualizzazione Chiamante/chiamato - Dati di strumentazione di memoria .NETCaller/Callee view - .NET memory instrumentation data](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
-- [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
+- [Visualizzazione Chiamante/chiamato - dati di strumentazioneCaller/Callee view - instrumentation data](../profiling/caller-callee-view-instrumentation-data.md)

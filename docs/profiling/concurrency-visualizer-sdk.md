@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911188"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
@@ -123,7 +123,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Riferimento alla libreria C++](../profiling/cpp-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C++.|
+|[Informazioni di riferimento sulla libreria in C](../profiling/cpp-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C++.|
 |[Riferimento alla libreria C](../profiling/c-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C.|
 |[Strumentazione](/previous-versions/hh694104(v=vs.140))|Viene descritta l'API del visualizzatore di concorrenza per il codice gestito.|
-|[Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)|Informazioni di riferimento sulle visualizzazioni e sui rapporti dei file di dati di profilatura che sono generati tramite il metodo di concorrenza e che includono dati di esecuzione thread.|
+|[Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)|Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati di profilatura generati tramite il metodo di concorrenza che includono dati di esecuzione di thread.|

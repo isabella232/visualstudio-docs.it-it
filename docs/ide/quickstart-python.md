@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180351"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
@@ -23,13 +23,13 @@ In questa introduzione di 5-10 minuti a Visual Studio come ambiente di sviluppo 
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente. Verificare di selezionare il carico di lavoro **Sviluppo Python** nel programma di installazione.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente. Verificare di selezionare il carico di lavoro **Sviluppo Python** nel programma di installazione.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente. Verificare di selezionare il carico di lavoro **Sviluppo Python** nel programma di installazione.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente. Verificare di selezionare il carico di lavoro **Sviluppo Python** nel programma di installazione.
 
 ::: moniker-end
 
@@ -75,13 +75,13 @@ La procedura seguente crea un progetto vuoto che funge da contenitore per l'appl
     ![Esplora soluzioni con il progetto vuoto appena creato](media/quickstart-python-01-empty-project-2019.png)
 ::: moniker-end
 
-**Domanda: qual è il vantaggio di creare un progetto in Visual Studio per un'applicazione Python?**
+**Domanda: Qual è il vantaggio della creazione di un progetto in Visual Studio per un'applicazione Python?**
 
-**Risposta:** per definire le applicazioni Python, si usano in genere solo file e cartelle, ma questa semplice struttura può diventare complessa se le dimensioni delle applicazioni aumentano e interessano magari anche file generati automaticamente, JavaScript per le applicazioni Web e così via. Un progetto di Visual Studio aiuta a gestire questa complessità. Il progetto, un file con estensione *pyproj*, identifica tutti i file di origine e di contenuto associati al progetto, contiene le informazioni di compilazione relative a ogni file, gestisce le informazioni per l'integrazione con sistemi di controllo del codice sorgente e consente di organizzare l'applicazione in componenti logici.
+**Risposta**: per definire le applicazioni Python, si usano in genere solo file e cartelle, ma questa semplice struttura può diventare complessa se le dimensioni delle applicazioni aumentano e interessano magari anche file generati automaticamente, JavaScript per le applicazioni Web e così via. Un progetto di Visual Studio aiuta a gestire questa complessità. Il progetto, un file con estensione *pyproj*, identifica tutti i file di origine e di contenuto associati al progetto, contiene le informazioni di compilazione relative a ogni file, gestisce le informazioni per l'integrazione con sistemi di controllo del codice sorgente e consente di organizzare l'applicazione in componenti logici.
 
 **Domanda: qual è la "soluzione" visualizzata in Esplora soluzioni?**
 
-**Risposta:** la soluzione di Visual Studio è un contenitore che consente di gestire uno o più progetti correlati come gruppo e archivia le impostazioni di configurazione non specifiche di un solo progetto. I progetti in una soluzione possono anche fare riferimento l'uno all'altro, facendo sì che l'esecuzione di un progetto (un'app Python) compili automaticamente un secondo progetto (ad esempio, un'estensione C++ usata nell'app Python).
+**Risposta**: la soluzione di Visual Studio è un contenitore che consente di gestire uno o più progetti correlati come gruppo e archivia le impostazioni di configurazione non specifiche di un solo progetto. I progetti in una soluzione possono anche fare riferimento l'uno all'altro, facendo sì che l'esecuzione di un progetto (un'app Python) compili automaticamente un secondo progetto (ad esempio, un'estensione C++ usata nell'app Python).
 
 ## <a name="install-the-flask-library"></a>Installare la libreria Flask
 
@@ -105,7 +105,7 @@ Con la procedura seguente verrà installata la libreria Flask nell'"ambiente glo
 
     ![Ambiente predefinito visualizzato in Esplora soluzioni](media/quickstart-python-02-default-environment-2019.png)
 
-2. Fare clic con il pulsante destro del mouse sull'ambiente e selezionare **Gestisci pacchetti Python...** . Questo comando aprirà la finestra **Ambienti Python** nella scheda **Pacchetti (PyPI)** .
+2. Fare clic con il pulsante destro del mouse sull'ambiente e selezionare **Gestisci pacchetti Python...**. Questo comando apre la finestra **Ambienti Python** nella scheda **Pacchetti (PyPI).**
 
 3. Immettere "flask" nel campo di ricerca. Se **Flask** viene visualizzato sotto la casella di ricerca, è possibile ignorare questo passaggio. In caso contrario, selezionare **Esegui comando: pip install flask**. Accettare le richieste relative ai privilegi di amministratore e osservare nella finestra **Output** di Visual Studio lo stato dell'operazione. (Un prompt dei comandi per l'elevazione dei privilegi viene visualizzato quando la cartella dei pacchetti per l'ambiente globale si trova all'interno di un'area protetta come *C:\Programmi*.)
 
@@ -126,7 +126,7 @@ Con la procedura seguente verrà installata la libreria Flask nell'"ambiente glo
 
 **Domanda: dove è possibile trovare altre informazioni su altri pacchetti Python disponibili?**
 
-**Risposta:** visitare la pagina dell'[indice dei pacchetti Python](https://pypi.org/).
+**Risposta**: visitare la pagina [Python Package Index](https://pypi.org/) (Indice dei pacchetti Python).
 
 ## <a name="add-a-code-file"></a>Aggiungere un file di codice
 
@@ -165,9 +165,9 @@ A questo punto si aggiunge un frammento di codice Python per implementare un'app
 
 **Domanda: dove si possono trovare altre informazioni su Flask?**
 
-**Risposta:** fare riferimento alla documentazione di Flask, iniziando dalla [guida introduttiva di Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart).
+**Risposta**: fare riferimento alla documentazione di Flask, iniziando dalla [guida introduttiva di Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart).
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
 1. Fare clic con il pulsante destro del mouse su *app.py* in **Esplora soluzioni** e selezionare **Imposta come file di avvio**. Questo comando identifica il file di codice da avviare in Python quando si esegue l'app.
 
@@ -178,7 +178,7 @@ A questo punto si aggiunge un frammento di codice Python per implementare un'app
     ![Impostazione del file di avvio per un progetto in Esplora soluzioni](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
 
-2. Fare clic con il pulsante destro del mouse in **Esplora soluzioni** e scegliere **Proprietà**. Selezionare quindi la scheda **Debug** e impostare la proprietà **Numero porta** su `4449`. Questo passaggio garantisce che Visual Studio avvii un browser con `localhost:4449` per creare una corrispondenza con gli argomenti `app.run` nel codice.
+2. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Proprietà**. Selezionare quindi la scheda **Debug** e impostare la proprietà **Numero porta** su `4449`. Questo passaggio garantisce che Visual Studio avvii un browser con `localhost:4449` per creare una corrispondenza con gli argomenti `app.run` nel codice.
 
 3. Selezionare **Debug > Avvia senza eseguire debug** (**CTRL**+**F5**) che consente di salvare le modifiche ai file ed esegue l'app.
 
@@ -194,18 +194,18 @@ A questo punto si aggiunge un frammento di codice Python per implementare un'app
 
 **Domanda: qual è la differenza tra i comandi Avvia senza eseguire debug e Avvia debug?**
 
-**Risposta:** **Avvia debug** si usa per eseguire l'app nel contesto del [debugger di Visual Studio](../python/debugging-python-in-visual-studio.md), che consente di impostare punti di interruzione, esaminare le variabili ed eseguire il codice riga per riga. Nel debugger le app possono essere più lente a causa dei vari hook che rendono possibile il debug. **Avvia senza eseguire debug**, al contrario, esegue l'app direttamente come se la si eseguisse dalla riga di comando, senza alcun contesto di debug, avviando anche automaticamente un browser e passando all'URL specificato nella scheda  **Debug** delle proprietà del progetto.
+**Risposta**: **Avvia debug** si usa per eseguire l'app nel contesto del [debugger di Visual Studio](../python/debugging-python-in-visual-studio.md), che consente di impostare punti di interruzione, esaminare le variabili ed eseguire il codice riga per riga. Nel debugger le app possono essere più lente a causa dei vari hook che rendono possibile il debug. **Avvia senza eseguire debug**, al contrario, esegue l'app direttamente come se la si eseguisse dalla riga di comando, senza alcun contesto di debug, avviando anche automaticamente un browser e passando all'URL specificato nella scheda ** Debug** delle proprietà del progetto.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 È stata eseguita la prima app Python in Visual Studio. In questo modo si sono apprese alcune informazioni sull'uso di Visual Studio come ambiente di sviluppo integrato per Python.
 
 > [!div class="nextstepaction"]
-> [Distribuire l'app nel Servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
+> [Deploy the app to Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) (Pubblicare un'app nel servizio App di Azure)
 
 I passaggi eseguiti in questa guida introduttiva sono piuttosto generici e si è probabilmente capito che questi passaggi possono e devono essere automatizzati. Tale automazione è il ruolo dei modelli di progetto di Visual Studio. Scegliere la [Guida introduttiva: Creare un progetto Python da un modello](../python/quickstart-02-python-in-visual-studio-project-from-template.md) per una dimostrazione in cui viene creata un'app Web simile a quella creata in questo articolo, ma con un numero minore di passaggi.
 
-Per continuare con un'esercitazione completa relativa a Python in Visual Studio, che include l'uso della finestra interattiva, il debug, la visualizzazione dei dati e l'uso di Git, vedere [Esercitazione: Introduzione a Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
+Per proseguire con un'esercitazione completa relativa a Python in Visual Studio, che include l'uso della finestra interattiva, il debug, la visualizzazione dei dati e l'uso di Git, scegliere l'esercitazione [Uso di Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 Per esplorare in modo più approfondito ciò che Visual Studio può offrire, selezionare i collegamenti seguenti.
 

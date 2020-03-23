@@ -10,13 +10,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e2f1684257ed39560fa0ea049d3296a6e45cdd7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779480"
 ---
-# <a name="counter"></a>Counter
+# <a name="counter"></a>Contatore
 L'opzione **Counter** raccoglie i dati dai contatori delle prestazioni del processore (hardware).
 
 - Quando si usa il metodo di profilatura basato sul campionamento, l'opzione **Counter** consente di specificare il contatore delle prestazioni del chip e il numero di eventi del contatore da usare come intervallo di campionamento. Quando si usa il campionamento, è possibile specificare un solo contatore.
@@ -45,11 +45,11 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione Counter può essere usata solo con una delle opzioni seguenti:
 
- **Start:** `Trace` Inizializza il profiler per usare il metodo di strumentazione.
+ **Start:** `Trace` inizializza il profiler per l'utilizzo del metodo di strumentazione.
 
- **Launch:** `AppName` avvia l'applicazione specificata e il profiler. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
+ **Avvia:** `AppName` avvia l'applicazione e il profiler specificati. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
 
- **Connetti:** `PID` avvia il profiler e lo connette al processo specificato dall'ID del processo. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
+ **Connetti:** `PID` avvia il profiler e lo connette al processo specificato dall'ID processo. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
 
 ## <a name="example"></a>Esempio
  Nell'esempio del metodo basato sul campionamento viene illustrato come campionare un'applicazione ogni 1000 occorrenze del contatore del profiler generico NonHaltedCycles.

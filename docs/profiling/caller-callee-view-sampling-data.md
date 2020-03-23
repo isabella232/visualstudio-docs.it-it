@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 008aa6bd9402cde760ffc61a613aba778c8ec96f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773270"
 ---
 # <a name="callercallee-view---sampling-data"></a>Visualizzazione Chiamante/chiamato: dati di campionamento
@@ -33,22 +33,22 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Nome processo**|nome del processo.|
-|**Nome modulo**|Nome del modulo che contiene la funzione.|
+|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Process Name**|Nome del processo.|
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 |**Nome funzione**|Nome completo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
-|**Type**|Il contesto della funzione:<br /><br /> -   **0**: la funzione corrente<br />-   **1**: una funzione che chiama la funzione corrente<br />-   **2**: una funzione chiamata dalla funzione corrente|
+|**Tipo**|Il contesto della funzione:<br /><br /> -   **0** - la funzione corrente<br />-   **1** - una funzione che chiama la funzione corrente<br />-   **2** - una funzione chiamata dalla funzione corrente|
 |**Nome funzione radice**|Nome della funzione corrente.|
 |**Esempi inclusivi**|- Per la funzione corrente, il numero di esempi raccolti anche se era in esecuzione questa funzione o una delle relative funzioni figlio.<br />- Per una funzione chiamante, il numero di esempi inclusivi della funzione corrente raccolti quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il numero di esempi inclusivi di questa funzione raccolti quando la funzione corrente ha chiamato questa funzione.|
-|**% esempi inclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che costituivano esempi inclusivi di questa funzione.|
-|**Esempi esclusivi**|- Per la funzione corrente, il numero di esempi nell'esecuzione della profilatura raccolti quando era in corso l'esecuzione diretta di questa funzione, ovvero quando questa funzione era in cima allo stack di chiamate. Gli esempi raccolti durante l'esecuzione di funzioni figlio di questa funzione non sono inclusi nei conteggi esclusivi.<br />- Per una funzione chiamante, il numero di esempi esclusivi della funzione corrente raccolti quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il numero di esempi esclusivi di questa funzione raccolti quando la funzione corrente ha chiamato questa funzione.|
-|**% campioni esclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che costituivano esempi esclusivi di questa funzione.|
+|**% campioni inclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che costituivano esempi inclusivi di questa funzione.|
+|**Campioni esclusivi**|- Per la funzione corrente, il numero di esempi nell'esecuzione della profilatura raccolti quando era in corso l'esecuzione diretta di questa funzione, ovvero quando questa funzione era in cima allo stack di chiamate. Gli esempi raccolti durante l'esecuzione di funzioni figlio di questa funzione non sono inclusi nei conteggi esclusivi.<br />- Per una funzione chiamante, il numero di esempi esclusivi della funzione corrente raccolti quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il numero di esempi esclusivi di questa funzione raccolti quando la funzione corrente ha chiamato questa funzione.|
+|**% esempi esclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che costituivano esempi esclusivi di questa funzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-- [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
+- [Visualizzazione Chiamante/chiamato - Dati di campionamento della memoria .NETCaller/Callee view - .NET memory sampling data](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Chiamante/chiamato - Dati di strumentazione di memoria .NETCaller/Callee view - .NET memory instrumentation data](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Visualizzazione Chiamante/chiamato - dati di strumentazioneCaller/Callee view - instrumentation data](../profiling/caller-callee-view-instrumentation-data.md)

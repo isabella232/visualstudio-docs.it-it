@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778050"
 ---
 # <a name="understand-sampling-data-values"></a>Informazioni sui valori dei dati di campionamento
@@ -53,4 +53,4 @@ Percentuale del numero totale di campioni esclusivi nell'esecuzione della profil
 ## <a name="see-also"></a>Vedere anche
 
 [Procedura: scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
-[analizzare i dati degli strumenti](../profiling/analyzing-performance-tools-data.md) per le prestazioni
+Analizzare i dati degli strumenti di prestazioniHow to: Choose collection methods[Analyze performance tools data](../profiling/analyzing-performance-tools-data.md)

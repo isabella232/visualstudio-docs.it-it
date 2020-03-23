@@ -6,10 +6,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74538580"
 ---
 # <a name="team-explorer-reference"></a>Informazioni di riferimento su Team Explorer
@@ -18,7 +18,7 @@ Questo articolo contiene collegamenti ad articoli di Azure DevOps sulle varie fu
 
 Usare le finestra degli strumenti di **Team Explorer** per coordinare le attività relative al codice con altri membri del team per sviluppare un progetto e gestire il lavoro assegnato all'utente, al team o ai progetti. **Team Explorer** connette Visual Studio ai repository GIT e GitHub, ai repository del controllo della versione di Team Foundation e ai progetti ospitati su [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) o su un'istanza di [Azure DevOps Server](/azure/devops/index-all) (precedentemente denominato TFS). È possibile gestire codice sorgente, elementi di lavoro e compilazioni.
 
-## <a name="home-page"></a>Pagina iniziale
+## <a name="home-page"></a>Home page
 
 Dopo essersi [connessi a un progetto](../connect-team-project.md) in **Team Explorer**, nella sezione **Progetto** vengono visualizzati i collegamenti seguenti:
 
@@ -102,7 +102,7 @@ Vedere:
 
 La pagina **Impostazioni** consente di configurare le funzionalità amministrative per un progetto o una raccolta di progetti. Vedere gli articoli seguenti:
 
-| Progetto di | Raccolta di progetti | Altro |
+| Project | Raccolta di progetti | Altri |
 | - | - | - |
 | [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Sicurezza, Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Aree elementi di lavoro](/azure/devops/organizations/settings/set-area-paths)<br/>[Iterazioni elementi di lavoro](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Impostazioni portale](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Avvisi di progetto](/azure/devops/notifications/howto-manage-team-notifications) | [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gestione modelli di processo](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Impostazioni globali GIT](/azure/devops/repos/git/git-config)<br/>[Impostazioni del repository GIT](/azure/devops/repos/git/git-config) |
 

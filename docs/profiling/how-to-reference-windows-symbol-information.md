@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774913"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Procedura: Fare riferimento alle informazioni sui simboli di Windows
@@ -27,7 +27,7 @@ Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensi
 > [!NOTE]
 > Questa impostazione non influisce sui rapporti esistenti. Le informazioni sui simboli saranno presenti solo nei rapporti creati dopo aver specificato il server di simboli.
 
- Per altre informazioni, vedere [Specifica di file di simboli (con estensione *pdb*) e di file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+ Per ulteriori informazioni, vedere [Specificare il simbolo (.* pdb*) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ### <a name="to-use-the-microsoft-symbol-server"></a>Per usare il server dei simboli Microsoft
 
@@ -35,7 +35,7 @@ Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensi
 
 2. Scegliere **Opzioni** dal menu **Strumenti**.
 
-     Verrà visualizzata la finestra di dialogo **Opzioni** .
+     Viene visualizzata la finestra di dialogo **Opzioni.**
 
 3. Espandere l'albero **Debug** e quindi fare clic su **Simboli**.
 
@@ -45,8 +45,8 @@ Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensi
 
      **C:\SymbolCache**
 
-     È anche possibile fare clic sul pulsante con i puntini di sospensione ( **...** ) e quindi selezionare una directory dalla finestra di dialogo **Sfoglia per cartelle**.
+     È anche possibile fare clic sul pulsante con i puntini di sospensione (**... **) e quindi selezionare una directory dalla finestra di dialogo **Sfoglia per cartelle**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-- [Procedura: Serializzare le informazioni sui simboli](../profiling/how-to-serialize-symbol-information.md)
+- [Procedura: serializzare informazioni sui simboliHow to: Serialize symbol information](../profiling/how-to-serialize-symbol-information.md)

@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63001075"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Spazio dei nomi Concurrency (visualizzatore di concorrenza)
-Lo spazio dei nomi `Concurrency` fornisce classi e funzioni che consentono l'accesso al runtime di concorrenza, un framework di programmazione simultanea per C++. Per altre informazioni, vedere [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime) (Runtime di concorrenza).
+Lo spazio dei nomi `Concurrency` fornisce classi e funzioni che consentono l'accesso al runtime di concorrenza, un framework di programmazione simultanea per C++. Per altre informazioni, vedere [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -28,13 +28,13 @@ Lo spazio dei nomi `Concurrency` fornisce classi e funzioni che consentono l'acc
 namespace Concurrency;
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 
-### <a name="namespaces"></a>Namespaces
+### <a name="namespaces"></a>Spazi dei nomi
 
-|nome|Description|
+|Nome|Descrizione|
 |----------|-----------------|
-|[Spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)|Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcatori del visualizzatore di concorrenza.|
+|[Spazio dei nomi diagnostico](../profiling/diagnostic-namespace.md)|Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcatori del visualizzatore di concorrenza.|
 
 ## <a name="requirements"></a>Requisiti
  **Intestazione:** cvmarkersobj.h

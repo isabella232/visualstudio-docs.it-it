@@ -10,23 +10,23 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ce7b02be682d825205fc5fa50d07c1ca817a24d7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776401"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Procedura: Creare un report ETW degli strumenti di profilatura
-Il report ETW (Event Tracing for Windows) elenca gli eventi ETW registrati in una sessione di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I dati ETW vengono raccolti in un file binario con estensione *etl*. Per altre informazioni sul report, vedere [Report Event Tracing for Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).
+Il report ETW (Event Tracing for Windows) elenca gli eventi ETW registrati in una sessione di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I dati ETW vengono raccolti in un file binario (.* etl*(). Per ulteriori informazioni su questo report, vedere [Report ETW (Event Tracing for Windows).](../profiling/event-tracing-for-windows-etw-report.md)
 
 > [!NOTE]
 > Non è possibile visualizzare i report ETW nell'interfaccia di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-- Per informazioni su come raccogliere dati ETW usando l'interfaccia di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vedere [Procedura: Raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).
+- Per informazioni su come raccogliere dati ETW [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]utilizzando l'interfaccia per , vedere [Procedura: raccogliere dati ETW (Event Tracing for Windows).](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
 - Per informazioni su come raccogliere dati ETW da un prompt dei comandi, vedere [VSPerfCmd](../profiling/vsperfcmd.md) ed [Eventi](../profiling/events-vsperfcmd.md).
 
-  Per generare il report ETW, usare il comando **VSReport/summary:etw**. Il file con estensione *etl* contenente i dati ETW deve trovarsi nella stessa directory del file dei dati di profilatura, con estensione *vsp* o *vsps*. Per impostazione predefinita, il report viene generato come file con valori delimitati da virgole, con estensione *csv*. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md).
+  Generare il report ETW utilizzando il comando **VSReport/summary:etw** . Le. *Etl* che contiene i dati ETW deve trovarsi nella stessa directory dei dati di profilatura (.* vsp* o . *vsps*) ﬁle. Per impostazione predefinita, il report viene generato come file con valori delimitati da virgole, con estensione *csv*. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md).
 
 ### <a name="to-generate-an-etw-report"></a>Per generare un report ETW
 
@@ -37,5 +37,5 @@ Il report ETW (Event Tracing for Windows) elenca gli eventi ETW registrati in un
     |||
     |-|-|
     |*ToolsPath*|Percorso dell'utilità degli strumenti di profilatura. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
-    |*VSPFile*|File con estensione *vsp* o *vsps* dei dati di profilatura. Sono accettati percorsi completi e parziali.|
+    |*File VSP*|Dati di profilatura (.* vsp* o . *vsps*) ﬁle. Sono accettati percorsi completi e parziali.|
     |Xml|Genera un report in formato XML.|

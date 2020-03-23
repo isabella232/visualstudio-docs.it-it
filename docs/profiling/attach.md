@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773739"
 ---
-# <a name="attach"></a>Attach
-L'opzione *Attach* di **VSPerfCmd.exe** avvia una profilatura campione del processo in esecuzione specificato dall'ID processo (PID).
+# <a name="attach"></a>Collegamento
+L'opzione *Attach di * **VSPerfCmd.exe** avvia una profilatura campione del processo in esecuzione specificato dall'ID processo (PID).
 
  Per usare l'opzione **Attach**, è necessario specificare il metodo **Sample** nell'opzione Start.
 
@@ -38,22 +38,22 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Crosssession** Consente la profilatura delle applicazioni in sessioni diverse da quella di accesso. Obbligatoria se l'opzione **Start** è stata specificata con l'opzione **Crosssession**.
 
- **Start:** `Method` Inizializza la sessione del profiler da riga di comando e imposta il metodo di profilatura specificato.
+ **Start:** `Method` inizializza la sessione del profiler della riga di comando e imposta il metodo di profilatura specificato.
 
  **TargetCLR** Specifica la versione di Common Language Runtime (CLR) di .NET Framework da sottoporre a profilatura quando in una sessione di profilatura è caricata più di una versione. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.
 
  **GlobalOn GlobalOff** Riprende (**GlobalOn**) o sospende (**GlobalOff**) la profilatura, ma non termina la sessione di profilatura.
 
- ProcessOn **:** `PID` **ProcessOff:** `PID` riprende (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.
+ **ProcessOn:** `PID` **ProcessOff:** `PID` riprende (**ProcessOn**) o sospende la profilatura (**ProcessOff**) per il processo specificato.
 
 ## <a name="interval-options"></a>Opzioni di intervallo
  È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di Attach. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.
 
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`] Specifica il numero e il tipo di intervallo di campionamento.
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`] Sys`Reload``FriendlyName`<strong>[</strong>**]** Eventi]**Contatore**[**:**`Name`, ] Specifica il numero e il tipo dell'intervallo di campionamento.
 
 - **Timer**: esegue il campionamento ogni `Cycles` cicli di clock del processore. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
 
-- **PF**: esegue il campionamento ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.
+- **PF**: esegue il campionamento di ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.
 
 - **Sys**: esegue il campionamento ogni `Events` chiamate al sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.
 

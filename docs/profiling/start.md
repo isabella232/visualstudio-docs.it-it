@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778271"
 ---
-# <a name="start"></a>Inizio
-L'opzione **Start** è un'opzione di *VSPerfCmd.exe* che consente di inizializzare il profiler con il metodo di profilatura specificato.
+# <a name="start"></a>Inizia
+L'opzione **Start** è *un'opzione di VSPerfCmd.exe* che inizializza il profiler sul metodo di profilatura specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **CrossSession**&#124;**CS** Abilita la profilatura tra processi. Sono supportati entrambi i nomi dell'opzione **CrossSession** e **CS**.
 
- **User:** [`domain\`]`username` Consente l'accesso client al monitor con l'account specificato.
+ **Utente:**`domain\`[`username` ] Abilita l'accesso client al monitor dall'account specificato.
 
  **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** specifica un contatore delle prestazioni di Windows da includere come contrassegno nel file di dati di profilatura. **AutoMark** specifica l'intervallo in millisecondi tra le raccolte del file di dati.
 
@@ -55,10 +55,10 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **Status** **Status** si applica ai processi profilati. Questa opzione elenca i processi e i thread insieme al relativo stato di profilatura corrente (On/Off). Ad esempio, se un processo viene arrestato, **Status** non indica questo stato nel rapporto. **Status** mostra che il processo è profilato o non profilato.
 
- **Shutdown**[ **:** `Timeout`] Disattiva il profiler.
+ **Shutdown**[**]**`Timeout`] Disattiva il profiler.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra come usare l'opzione *Start* di **VSPerfCmd.exe** per inizializzare il profiler.
+ L'esempio seguente illustra come usare l'opzione *Start di * **VSPerfCmd.exe** per inizializzare il profiler.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp

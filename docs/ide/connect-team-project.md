@@ -6,10 +6,10 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 ms.openlocfilehash: 936fcb598ccb7919eca0a35a1191732bce1c8e23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585483"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Connettersi a progetti in Team Explorer
@@ -42,5 +42,5 @@ Per connettersi a un progetto:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Team Explorer reference](reference/team-explorer-reference.md) (Informazioni di riferimento su Team Explorer)
+- [Informazioni di riferimento su Team Explorer](reference/team-explorer-reference.md)
 - [Connect to a project (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects) (Connettersi a un progetto (Azure DevOps))

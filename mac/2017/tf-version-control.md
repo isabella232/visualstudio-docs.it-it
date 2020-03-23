@@ -7,10 +7,10 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: b7b160d58cead031a0eece2a522501d8c2060bd2
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985195"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation
@@ -20,17 +20,17 @@ ms.locfileid: "74985195"
 >
 > Se è stata usata in precedenza la versione di anteprima dell'estensione TFVC per Visual Studio per Mac, non è più supportata in caso di aggiornamento a Visual Studio 2019 per Mac.
 
-Azure Repos fornisce due modelli di controllo della versione: [git](/azure/devops/repos/git/?view=azure-devops), un sistema di controllo della versione distribuito e [controllo della versione di Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un sistema di controllo della versione centralizzato.
+Azure Repos offre due modelli di controllo della versione: [Git](/azure/devops/repos/git/?view=azure-devops), un sistema di controllo della versione distribuito, e [Team Foundation Version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un sistema di controllo della versione centralizzato.
 
 Visual Studio per Mac offre il supporto completo per i repository Git, ma richiede alcune soluzioni alternative per usare il controllo della versione di Team Foundation. Se attualmente si usa il controllo della versione di Team Foundation, ecco alcune soluzioni che è possibile adottare per accedere al codice sorgente ospitato nel controllo della versione di Team Foundation:
 
-* [Usare Visual Studio Code e l'estensione Azure Repos per un'interfaccia utente grafica](#use-visual-studio-code-and-the-azure-repos-extension)
+* [Usare Visual Studio Code e l'estensione Azure Repos, per un'interfaccia utente grafica](#use-visual-studio-code-and-the-azure-repos-extension)
 * [Connettersi al repository usando il client della riga di comando Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
 * [Connettersi al controllo della versione di Team Foundation usando l'estensione di controllo della versione di Team Foundation (non supportata) per Visual Studio per Mac](#connect-to-tfvc-using-the-team-foundation-version-control-extension)
 
 Il resto di questo articolo illustra le opzioni elencate in precedenza.
 
-## <a name="requirements"></a>Requisiti di
+## <a name="requirements"></a>Requisiti
 
 * Visual Studio Community, Professional o Enterprise per Mac versione 7.8 e successive.
 * Azure DevOps Services, Team Foundation Server 2013 e versioni successive o Azure DevOps Server 2018 e versioni successive.
@@ -124,7 +124,7 @@ Seguire i prompt per installare l'estensione. Al termine dell'installazione, ria
 
 ### <a name="updating-the-extension"></a>Aggiornamento dell'estensione
 
-Periodicamente vengono rilasciati aggiornamenti per l'estensione TFVC. Per accedere agli aggiornamenti, scegliere **Visual Studio > Extensions** dal menu e selezionare la scheda **aggiornamenti** . Selezionare l'estensione nell'elenco e premere il pulsante **Aggiorna** :
+Periodicamente vengono rilasciati aggiornamenti per l'estensione TFVC. Per accedere agli aggiornamenti, scegliere **Estensioni di Visual Studio >...** dal menu e selezionare la scheda **Aggiornamenti.** Selezionare l'estensione nell'elenco e premere il pulsante **Aggiorna:**
 
 Scegliere **Installa** nella finestra di dialogo successiva per disinstallare il pacchetto precedente e installare quello nuovo.
 
@@ -196,7 +196,7 @@ Esplora controllo codice sorgente consente di esplorare tutti i progetti mappati
 - Archiviare ed estrarre file
 - Bloccare e sbloccare i file
 - Aggiungere, eliminare e rinominare i file
-- Visualizza cronologia
+- Visualizzare la cronologia
 - Confronto delle modifiche.
 
 Molte di queste azioni sono disponibili tramite i menu di scelta rapida del progetto:
@@ -213,7 +213,7 @@ Per configurare il progetto remoto con un'area di lavoro locale, seguire questa 
 
 1. Selezionare il **Server** dalla casella combinata.
 1. Si noti che non sono presenti aree di lavoro e che il percorso locale non è mappato. Selezionare il collegamento **Non mappato** per visualizzare la finestra di dialogo **Crea nuova area di lavoro**.
-1. Specificare un nome per l'area di lavoro e quindi fare clic su **Aggiungi Cartella di lavoro**  per eseguire il mapping del progetto in una cartella locale nel computer:
+1. Specificare un nome per l'area di lavoro e quindi fare clic su **Aggiungi Cartella di lavoro ** per eseguire il mapping del progetto in una cartella locale nel computer:
 
     ![Creare una nuova finestra dell'area di lavoro con le opzioni predefinite](media/tfvc-workspace1.png)
 
@@ -274,4 +274,4 @@ Quando si tenta di [creare una nuova area di lavoro](#creating-a-new-workspace),
 
 ### <a name="see-also"></a>Vedere anche
 
-- [Sviluppare e condividere il codice in TFVC usando Visual Studio (in Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [Sviluppare e condividere il codice nel controllo della versione di Team Foundation usando Visual Studio (in Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

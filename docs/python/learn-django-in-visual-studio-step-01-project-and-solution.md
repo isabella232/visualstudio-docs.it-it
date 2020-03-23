@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62962259"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Django in Visual Studio
 
 [Django](https://www.djangoproject.com/) è un framework Python di alto livello progettato per lo sviluppo rapido, sicuro e scalabile di applicazioni Web. Questa esercitazione esplora il framework Django nel contesto dei modelli di progetto forniti da Visual Studio per semplificare la creazione di app Web basate su Django.
 
-In questa esercitazione si imparerà a:
+In questa esercitazione verranno illustrate le procedure per:
 
 > [!div class="checklist"]
 > - Creare un progetto Django di base in un repository Git tramite il modello "Progetto Web Django vuoto" (passaggio 1)
@@ -32,7 +32,7 @@ In questa esercitazione si imparerà a:
 > - Autenticare gli utenti (passaggio 5)
 > - Usare il modello di progetto Web Django per le votazioni per creare un'app che usa modelli, migrazioni di database e personalizzazioni per l'interfaccia amministrativa (passaggio 6)
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - Visual Studio 2017 o versioni successive in Windows con le opzioni seguenti:
   - Carico di lavoro **Sviluppo Python** (scheda **Carico di lavoro** nel programma di installazione). Per istruzioni, vedere [Installare il supporto Python in Visual Studio](installing-python-support-in-visual-studio.md).
@@ -54,7 +54,7 @@ Durante questa esercitazione si creerà un'unica soluzione di Visual Studio cont
 
 Quando si usa Django dalla riga di comando, generalmente si avvia un progetto eseguendo il comando `django-admin startproject <project_name>`. In Visual Studio l'uso del modello Progetto Web Django vuoto fornisce la stessa struttura che in un progetto e una soluzione di Visual Studio.
 
-1. In Visual Studio selezionare **File** > **Nuovo** > **Progetto**, cercare "Django" e quindi selezionare il modello **Progetto Web Django vuoto**. Il modello è anche disponibile in **Python** > **Web** nell'elenco a sinistra.
+1. In Visual Studio selezionare **File** > **nuovo** > **progetto**, cercare "Django" e selezionare il modello Progetto **Web Django vuoto.** (Il modello si trova anche sotto **Python** > **Web** nell'elenco a sinistra.)
 
     ![Finestra di dialogo Nuovo progetto in Visual Studio per il modello Progetto Web Django vuoto](media/django/step01-new-blank-project.png)
 
@@ -62,18 +62,18 @@ Quando si usa Django dalla riga di comando, generalmente si avvia un progetto es
 
     - **Nome**: impostare il nome del progetto di Visual Studio su **BasicProject**. Questo nome verrà usato anche per il progetto Django.
     - **Percorso**: specificare un percorso in cui creare la soluzione e il progetto di Visual Studio.
-    - **Soluzione**: per questa impostazione lasciare il valore predefinito **Crea nuova soluzione**.
-    - **Nome della soluzione**: impostare su **LearningDjango**, un nome appropriato per la soluzione come contenitore per più progetti in questa esercitazione.
-    - **Crea directory per soluzione**: Lasciare i valori predefiniti impostati.
-    - **Crea nuovo repository GIT**: Selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository GIT locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
+    - **Soluzione**: lasciare questo controllo impostato sull'opzione predefinita **Crea nuova soluzione.**
+    - **Nome soluzione**: impostare **su LearningDjango**, appropriato per la soluzione come contenitore per più progetti in questa esercitazione.
+    - **Crea directory per soluzione**: lasciare impostato il valore predefinito.
+    - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
 
-1. Dopo un istante, Visual Studio visualizza una finestra di dialogo con il messaggio **Questo progetto richiede pacchetti esterni**, riportata di seguito. Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Django 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
+1. Dopo qualche istante, Visual Studio ti chiede con una finestra di dialogo che dice che **questo progetto richiede pacchetti esterni** (mostrato di seguito). Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Django 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
 
     ![Messaggio che indica che il progetto richiede pacchetti esterni](media/django/step01-requirements-prompt-install-myself.png)
 
 1. Selezionare l'opzione **Installazione manuale**. A breve si creerà l'ambiente virtuale per assicurarsi che venga escluso dal controllo del codice sorgente. L'ambiente può sempre essere creato da *requirements.txt*.
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Passaggio 1-2: Esaminare i controlli GIT e pubblicare il progetto in un repository remoto
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Passaggio 1-2: Esaminare i controlli Git e pubblicare il progetto in un repository remoto
 
 Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dialogo **Nuovo progetto**, il progetto è già stato sottoposto a commit nel controllo del codice sorgente subito dopo il completamento del processo di creazione. In questo passaggio si acquisirà familiarità con i controlli Git di Visual Studio e la finestra **Team Explorer**, in cui viene usato il controllo del codice sorgente.
 
@@ -90,7 +90,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 
     ![Finestra di Team Explorer, pagina Modifiche](media/django/step01-team-explorer-changes.png)
 
-1. Nella barra di stato di Visual Studio selezionare il pulsante dei commit di cui è stato annullato il push (freccia in su con **2**) per aprire la pagina **Sincronizzazione** in **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
+1. Nella barra di stato di Visual Studio selezionare il pulsante commit non premuti (la freccia verso l'alto con **2**) per aprire la pagina **Sincronizzazione** in **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
 
     ![Finestra di Team Explorer che mostra le opzioni relative ai repository Git per il controllo del codice sorgente](media/django/step01-team-explorer.png)
 
@@ -105,13 +105,13 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 1. Durante lo svolgimento di questa esercitazione, abituarsi a usare periodicamente i controlli in Visual Studio per il commit e il push delle modifiche. Questa esercitazione ricorda di eseguire queste operazioni nei momenti appropriati.
 
 > [!Tip]
-> Per spostarsi rapidamente all'interno di **Team Explorer**, selezionare l'intestazione (che indica **Modifiche** o **Push** nelle immagini precedenti) per visualizzare un menu di scelta rapida delle pagine disponibili.
+> Per spostarsi rapidamente all'interno di **Team Explorer,** selezionare l'intestazione (che legge **Changes** o **Push** nelle immagini precedenti) per visualizzare un menu a comparsa delle pagine disponibili.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Domanda: Quali sono alcuni dei vantaggi dell'uso del controllo del codice sorgente sin dall'inizio di un progetto?
 
-Risposta: Prima di tutto, l'uso del controllo del codice sorgente sin dall'inizio, in particolare con un repository remoto, offre un backup regolare del progetto in un'altra posizione. A differenza della situazione in cui si mantiene un progetto solo in un file system locale, il controllo del codice sorgente fornisce anche una cronologia delle modifiche completa e la possibilità di ripristinare un singolo file o l'intero progetto in base a uno stato precedente in tutta semplicità. La cronologia delle modifiche permette di determinare la causa delle regressioni (errori di test). Inoltre, il controllo del codice sorgente è essenziale se più persone lavorano su un progetto, perché gestisce le sovrascritture ed esegue la risoluzione dei conflitti. Infine, il controllo del codice sorgente, che è sostanzialmente una forma di automazione, offre tutti gli strumenti necessari per l'automazione delle compilazioni, dei test e della gestione del rilascio. Si tratta davvero del primo passaggio quando si usa DevOps per un progetto e poiché le limitazioni preliminari sono minime, non vi è alcun motivo per non usare il controllo del codice sorgente sin dall'inizio.
+Risposta: Prima di tutto, l'uso del controllo del codice sorgente sin dall'inizio, in particolare con un repository remoto, garantisce un backup regolare del progetto in un'altra posizione. A differenza della situazione in cui si mantiene un progetto solo in un file system locale, il controllo del codice sorgente fornisce anche una cronologia delle modifiche completa e la possibilità di ripristinare un singolo file o l'intero progetto in base a uno stato precedente in tutta semplicità. La cronologia delle modifiche permette di determinare la causa delle regressioni (errori di test). Inoltre, il controllo del codice sorgente è essenziale se più persone lavorano su un progetto, perché gestisce le sovrascritture ed esegue la risoluzione dei conflitti. Infine, il controllo del codice sorgente, che è sostanzialmente una forma di automazione, offre tutti gli strumenti necessari per l'automazione delle compilazioni, dei test e della gestione del rilascio. Si tratta davvero del primo passaggio quando si usa DevOps per un progetto e poiché le limitazioni preliminari sono minime, non vi è alcun motivo per non usare il controllo del codice sorgente sin dall'inizio.
 
-Per altre informazioni sul controllo del codice sorgente come automazione, vedere [The Source of Truth: il ruolo dei repository in DevOps](https://msdn.microsoft.com/magazine/mt763232), un articolo di MSDN Magazine scritto per app per dispositivi mobili che si applica anche alle app Web.
+Per altre informazioni sul controllo del codice sorgente come strumento di automazione, vedere [ Source of Truth: il ruolo dei repository in DevOps](https://msdn.microsoft.com/magazine/mt763232), un articolo in MSDN Magazine scritto per le app per dispositivi mobili, ma valido anche per le app Web.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Domanda: È possibile impedire a Visual Studio di eseguire il commit automatico di un nuovo progetto?
 
@@ -125,7 +125,7 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
     ![Comando Aggiungi ambiente virtuale in Esplora soluzioni](media/django/step01-add-virtual-environment-command.png)
 
-1. Verrà visualizzata la finestra di dialogo **Aggiungi ambiente virtuale** con il messaggio **È stato trovato il file requirements.txt.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
+1. Viene visualizzata la finestra di dialogo **Aggiungi ambiente virtuale** con il messaggio Che indica che è stato trovato un file **requirements.txt.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
 
     ![Finestra di dialogo Aggiungi ambiente virtuale con il messaggio sul file requirements.txt](media/django/step01-add-virtual-environment-found-requirements.png)
 
@@ -147,7 +147,7 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Domanda: Perché è utile creare un ambiente virtuale?
 
-Risposta: Un ambiente virtuale è un ottimo strumento per isolare le dipendenze esatte dell'app. Questo isolamento evita i conflitti all'interno di un ambiente Python globale e semplifica i test e la collaborazione. Quando si sviluppa un'app, si finisce per introdurre nel tempo molti utili pacchetti Python. Inserendo questi pacchetti in un ambiente virtuale specifico del progetto, è possibile aggiornare facilmente il file *requirements.txt* del progetto che descrive l'ambiente e che è incluso nel controllo del codice sorgente. Quando il progetto viene copiato in altri computer, tra cui server di compilazione, server di distribuzione e altri computer di sviluppo, è facile ricreare l'ambiente usando solo *requirements.txt*, che è il motivo per cui non è necessario includere l'ambiente nel controllo del codice sorgente. Per altre informazioni, vedere [Uso di ambienti virtuali](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
+Risposta: Un ambiente virtuale è un ottimo strumento per isolare le dipendenze esatte dell'app. Questo isolamento evita i conflitti all'interno di un ambiente Python globale e semplifica i test e la collaborazione. Quando si sviluppa un'app, si finisce per introdurre nel tempo molti utili pacchetti Python. Inserendo questi pacchetti in un ambiente virtuale specifico del progetto, è possibile aggiornare facilmente il file *requirements.txt* del progetto che descrive l'ambiente e che è incluso nel controllo del codice sorgente. Quando il progetto viene copiato in altri computer, tra cui server di compilazione, server di distribuzione e altri computer di sviluppo, è facile ricreare l'ambiente usando solo *requirements.txt*, che è il motivo per cui non è necessario includere l'ambiente nel controllo del codice sorgente. Per altre informazioni, vedere [Usare ambienti virtuali](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Domanda: Come si rimuove un ambiente virtuale di cui è già stato eseguito il commit nel controllo del codice sorgente?
 
@@ -180,7 +180,7 @@ Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante 
 
 ## <a name="step-1-5-run-the-empty-django-project"></a>Passaggio 1-5: Eseguire il progetto Django vuoto
 
-1. In Visual Studio selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti (il browser visualizzato può variare):
+1. In Visual Studio selezionare **Debug debug** > **(** **F5**) o utilizzare il pulsante **Server Web** sulla barra degli strumenti (il browser visualizzato può variare):
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -190,7 +190,7 @@ Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante 
 
     ![Visualizzazione predefinita del progetto Django](media/django/step01-first-run-success.png)
 
-1. Al termine, arrestare il server chiudendo la finestra della console o usando il comando **Debug** > **Interrompi debug** in Visual Studio.
+1. Al termine, arrestare il server chiudendo la finestra della console o utilizzando il comando **Debug** > **Stop Debugging** in Visual Studio.
 
 ### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>Domanda: Django è un server Web e anche un framework?
 
@@ -198,7 +198,7 @@ Risposta: Sì e no. Django ha un server Web integrato, usato per scopi di svilup
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Domanda: Qual è la differenza tra l'uso dei comandi del menu Debug e dei comandi del server nel sottomenu Python del progetto?
 
-Risposta: Oltre ai comandi del menu **Debug** e ai pulsanti della barra degli strumenti, è possibile avviare il server anche usando i comandi **Python** > **Run server** (Avvia server) o **Python** > **Run debug server** (Avvia server di debug) del menu di scelta rapida del progetto. Entrambi i comandi aprono una finestra della console in cui viene visualizzato l'URL locale (localhost:port) per il server in esecuzione. Tuttavia, è necessario aprire manualmente un browser con l'URL e l'esecuzione del server di debug non avvia automaticamente il debugger di Visual Studio. È possibile collegare un debugger al processo in esecuzione in un secondo momento, se necessario, usando il comando **Debug** > **Associa a processo**.
+Risposta: Oltre ai comandi del menu **Debug** e ai pulsanti della barra degli strumenti, è possibile avviare il server anche usando i comandi **Python** > **Avvia server** o **Python** > **Avvia il server di debug** del menu di scelta rapida del progetto. Entrambi i comandi aprono una finestra della console in cui viene visualizzato l'URL locale (localhost:port) per il server in esecuzione. Tuttavia, è necessario aprire manualmente un browser con l'URL e l'esecuzione del server di debug non avvia automaticamente il debugger di Visual Studio. È possibile connettere un debugger al processo in esecuzione in un secondo momento, se lo si desidera, utilizzando il comando **Debug** > **connessione a processo.**
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -209,6 +209,6 @@ A questo punto, il progetto Django di base non contiene alcuna app. L'app verrà
 
 ## <a name="go-deeper"></a>Approfondimento
 
-- Codice del progetto Django: [Writing your first Django app, part 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (Scrittura della prima app Django) (docs.djangoproject.com)
+- Codice del progetto Django: [Writing your first Django app, part 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (Scrittura della prima app Django, parte 1) (docs.djangoproject.com)
 - Utilità di amministrazione: [django-admin and manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
