@@ -13,21 +13,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62794326"
 ---
 # <a name="per-thread-summary-report"></a>Report di riepilogo per thread
 Questo grafico a barre mostra la percentuale di tempo usata da ogni thread non nascosto per ciascuna categoria di attività durante l'intervallo di tempo attualmente visibile. "Esecuzione" indica che il thread è in esecuzione; tutte le altre categorie indicano che il thread è in attesa.
 
 ## <a name="see-also"></a>Vedere anche
-- [Tempo di esecuzione (visualizzazione Thread)](../profiling/execution-time-threads-view.md)
+- [Tempo di esecuzione (visualizzazione Thread)Execution time (Threads View)](../profiling/execution-time-threads-view.md)
 - [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md)
 - [Tempo di gestione della memoria](../profiling/memory-management-time.md)
 - [Periodo di precedenza](../profiling/preemption-time.md)
-- [Periodo di sospensione](../profiling/sleep-time.md)
-- [Periodo di sincronizzazione](../profiling/synchronization-time.md)
-- [Periodo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)
+- [Tempo di sonno](../profiling/sleep-time.md)
+- [Tempo di sincronizzazione](../profiling/synchronization-time.md)
+- [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

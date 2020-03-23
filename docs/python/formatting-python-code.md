@@ -11,20 +11,20 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957535"
 ---
 # <a name="format-python-code"></a>Formattare il codice Python
 
 Visual Studio consente di riformattare rapidamente il codice in base a opzioni di formattazione preconfigurate.
 
-- Per formattare una selezione, selezionare **Modifica** > **Avanzate** > **Formatta selezione** o premere **CTRL**+**E** > **F**.
-- Per formattare l'intero file, selezionare **Modifica** > **Avanzate** > **Formatta documento** o premere **CTRL**+**E** > **D**.
+- Per formattare una selezione: selezionare **Modifica** > **selezione formato** **avanzato** > o premere **Ctrl**+**E** > **F**.
+- Per formattare l'intero file: selezionare **Ctrl**+ **Modifica** > documento in > **formato** **avanzato**o premere Ctrl**E** > **D**.
 
-Le opzioni vengono impostate tramite **Strumenti** > **Opzioni** > **Editor di testo** > **Python** >  **Formattazione** e le relative schede annidate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
+Le opzioni sono impostate tramite**Opzioni** >  **Opzioni** > Testo**Editor** > **Python** > **Formattazione** e le relative schede nidificate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
 
 ![Opzioni di formattazione di Python in Visual Studio](media/options-editor-formatting.png)
 
@@ -42,32 +42,32 @@ La scheda **Spacing** (Spaziatura) consente di controllare la posizione in cui i
 
 Le tabelle seguenti includono esempi per le varie opzioni:
 
-| Opzione Definizioni di classe | Selezionato con segno di spunta | Deselezionato |
+| Opzione Definizioni di classe | Selezionato | Cancellato |
 | --- | --- | --- |
-| **Inserisci spazio tra il nome della classe e l'elenco basi** | `class X (object): pass` | `class X(object): pass` |
-| **Inserisci spazio tra le parentesi dell'elenco basi** | `class X( object ): pass` | `class X(object): pass` |
-| **Inserisci spazio tra le parentesi dell'elenco basi vuoto** | `class X( ): pass` | `class X(): pass` |
+| **Insert space between a class declaration's name and bases list (Inserisci spazio tra il nome della dichiarazione di classe e l'elenco di basi)** | `class X (object): pass` | `class X(object): pass` |
+| **Insert space within bases list parentheses (Inserisci spazio tra le parentesi dell'elenco di basi)** | `class X( object ): pass` | `class X(object): pass` |
+| **Insert space within empty bases list parentheses (Inserisci spazio tra le parentesi dell'elenco di basi vuoto)** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
-| Opzione Definizioni di funzioni | Selezionato con segno di spunta | Deselezionato |
+| Opzione Definizioni di funzioni | Selezionato | Cancellato |
 | --- | --- | --- |
-| **Inserisci spazio tra il nome della funzione e l'elenco parametri nelle dichiarazioni** | `def X (): pass` | `def X(): pass` |
-| **Inserisci spazio tra le parentesi dell'elenco parametri** | `def X( a, b ): pass` | `def X(a, b): pass` |
-| **Inserisci spazio tra le parentesi dell'elenco parametri vuoto** | `def X( ): pass` | `def X(): pass` |
-| **Inserisci spazio prima e dopo '=' nei valori dei parametri predefiniti** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| **Inserisci spazio prima e dopo gli operatori di restituzione annotazione** | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **Insert space between a function declaration's name and parameter list (Inserisci spazio tra il nome della dichiarazione di funzione e l'elenco di parametri)** | `def X (): pass` | `def X(): pass` |
+| **Insert space within parameter list parentheses (Inserisci spazio tra le parentesi dell'elenco di parametri)** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **Insert space within empty parameter list parentheses (Inserisci spazio tra le parentesi dell'elenco di parametri vuoto)** | `def X( ): pass` | `def X(): pass` |
+| **Insert spaces around '=' in default parameter values (Inserisci spazi intorno a '=' nei valori di parametri predefiniti)** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Insert space before and after return annotation operators (Inserisci spazio prima e dopo gli operatori di annotazione di restituzione)** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
-| Opzione Operators (Operatori) | Selezionato con segno di spunta | Deselezionato |
+| Opzione Operators (Operatori) | Selezionato | Cancellato |
 | --- | --- | --- |
 | **Inserisci spazio tra gli operatori binari** | `a + b` | `a+b` |
 | **Inserisci gli spazi intorno agli operatori di assegnazione** | `a = b` | `a=b` |
 
 <br/>
 
-| Opzione Expression spacing (Spaziatura espressioni) | Selezionato con segno di spunta | Deselezionato |
+| Opzione Expression spacing (Spaziatura espressioni) | Selezionato | Cancellato |
 | --- | --- | --- |
 | **Inserisci spazio tra il nome della funzione e l'elenco argomenti nelle chiamate** | `X ()` | `X()` |
 | **Inserisci spazio tra le parentesi dell'elenco di argomenti vuoto** | `X( )` | `X()` |
@@ -109,7 +109,7 @@ Le opzioni relative alle **istruzioni** consentono di controllare la riscrittura
 
 ## <a name="fill-comment-paragraph-command"></a>Comando Fill Comment Paragraph (Riempi paragrafo commenti)
 
-Il comando **Modifica** > **Avanzate** > **Riempi paragrafo di commento** (**CTRL**+**E** > **P**) ridefinisce il flusso e la formattazione del testo dei commenti, riunendo le righe brevi e suddividendo quelle lunghe.
+**Modifica** > **paragrafo commento di riempimento** **avanzato** > (**Ctrl**+**E** > **P**) ridispone e formatta il testo del commento, combinando le righe brevi e suddividendo quelle lunghe.
 
 Ad esempio:
 

@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531930"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Usare il corpo dell'espressione o il corpo del blocco per le espressioni lambda
@@ -22,11 +22,11 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** consente di effettuare il refactoring di un'espressione lambda per usare un corpo dell'espressione o un corpo del blocco.
+**Cosa:** Consente di effettuare il refactoring di un'espressione lambda per usare un corpo dell'espressione o un corpo del blocco.
 
-**Quando:** si preferiscono le espressioni lambda per usare un corpo dell'espressione o un corpo del blocco.
+**Quando:** È preferibile che le espressioni lambda utilizzino un corpo dell'espressione o un corpo del blocco.
 
-**Perché?:** è possibile effettuare il refactoring delle espressioni lambda per migliorare la leggibilità in base alle preferenze dell'utente.
+**Perché:** È possibile eseguire il refactoring delle espressioni lambda per migliorare la leggibilità in base alle preferenze dell'utente.
 
 ## <a name="lambda-expression-body-or-block-body-refactoring"></a>Refactoring del corpo dell'espressione lambda o del corpo del blocco
 

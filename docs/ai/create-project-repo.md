@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 73f1595e0e6c8f182f0bedcece51011390964ed2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62539658"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Clonare un repository del codice Python in Visual Studio
 
 Dopo aver [installato Visual Studio Tools for AI](installation.md), è possibile clonare facilmente un repository di codice Python e creare un progetto a partire da questo.
 
-1. Per connettersi ai repository di GitHub, eseguire il programma di installazione di Visual Studio, selezionare **Cambia** e quindi la scheda **Singoli componenti**. Scorrere verso il basso fino alla sezione **Strumenti per il codice**, selezionare **Estensione GitHub per Visual Studio** e quindi **Modifica**.
+1. Per connettersi ai repository GitHub, eseguire il programma di installazione di Visual Studio, **Code tools** selezionare **Modifica**e selezionare la scheda **Modify** **Singoli componenti** . **GitHub extension for Visual Studio**
 
     ![Selezione dell'estensione GitHub nel programma di installazione di Visual Studio](media/create-project-repo/installation-github-extension.png)
 
@@ -37,13 +37,13 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md), è possibile
 
     ![Finestra Team Explorer, creazione di un nuovo progetto da un clone](media/create-project-repo/team-explorer-new-project.png)
 
-6. Nella finestra di dialogo **Nuovo progetto** visualizzata selezionare "**Da codice Python esistente**", specificare un nome per il progetto, impostare **Percorso** nella stessa cartella del repository e quindi selezionare **OK**. Nella procedura guidata visualizzata selezionare **Fine**.
+6. Nella finestra di dialogo **Nuovo progetto** visualizzata, selezionare " Dal codice**Python esistente**", specificare un nome per il progetto, impostare **Posizione** sulla stessa cartella del repository e selezionare **OK**. Nella procedura guidata visualizzata, selezionare **Fine**.
 
 7. Selezionare **Visualizza > Esplora soluzioni** dal menu.
 
-8. In Esplora soluzioni espandere il nodo `TensorFlow Examples> MNIST`, fare clic con il pulsante destro del mouse su `convolutional.py` e scegliere **Imposta come file di avvio**. Questo passaggio indica quale file deve essere usato da Visual Studio per l'esecuzione del progetto.
+8. In Esplora soluzioni `TensorFlow Examples> MNIST` espandere il `convolutional.py`nodo , fare clic con il pulsante destro del mouse su e scegliere Imposta come file di **avvio**. Questo passaggio indica quale file deve essere usato da Visual Studio per l'esecuzione del progetto.
 
-9. Premere **CTRL**+**F5** o selezionare **Debug > Avvia senza eseguire debug** per eseguire il programma. Se viene visualizzato un errore, ricontrollare l'impostazione relativa alla directory di lavoro nel passaggio precedente.
+9. Premere **CTRL**+**F5** o selezionare **Debug > Avvia senza eseguire il debug** per eseguire il programma. Se viene visualizzato un errore, ricontrollare l'impostazione relativa alla directory di lavoro nel passaggio precedente.
 
 10. Quando il programma viene eseguito correttamente, si noterà che viene avviato il download del set di dati per training e test, quindi viene eseguito il training del modello e viene infine restituita la frequenza degli errori. Si vuole ridurre la frequenza degli errori nel tempo
 

@@ -12,13 +12,13 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430030"
 ---
-# <a name="step-2-write-and-run-code"></a>Passaggio 2: scrivere ed eseguire codice
+# <a name="step-2-write-and-run-code"></a>Passaggio 2: Scrittura ed esecuzione del codice
 
 **Passaggio precedente: [Creare un nuovo progetto Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
@@ -26,7 +26,7 @@ Anche se **Esplora soluzioni** si trova nell'area di gestione dei file di proget
 
 1. Dopo aver creato un nuovo progetto "Python Application" (Applicazione Python), nell'editor di Visual Studio viene aperto un file vuoto predefinito denominato *PythonApplication1.py*.
 
-1. Nell'editor iniziare a digitare `print("Hello, Visual Studio")`. Si noti che IntelliSense di Visual Studio visualizza le opzioni di completamento automatico durante la digitazione. L'opzione con contorno nell'elenco a discesa è il completamento predefinito usato quando si preme **TAB**. Il completamento è utile soprattutto in presenza di istruzioni o identificatori più lunghi.
+1. Nell'editor iniziare a digitare `print("Hello, Visual Studio")`. Si noti che IntelliSense di Visual Studio visualizza le opzioni di completamento automatico durante la digitazione. L'opzione descritta nell'elenco a discesa è il completamento predefinito che viene utilizzato quando si preme il tasto **Tab.** Il completamento è utile soprattutto in presenza di istruzioni o identificatori più lunghi.
 
     ![Popup di completamento automatico IntelliSense](media/vs-getting-started-python-04-IntelliSense1b.png)
 
@@ -45,9 +45,9 @@ Anche se **Esplora soluzioni** si trova nell'area di gestione dei file di proget
     ![Colorazione della sintassi ed evidenziazione degli errori di IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Poiché l'ambiente di sviluppo è molto personale, Visual Studio offre un controllo completo sull'aspetto e sul comportamento di Visual Studio. Selezionare il comando del menu **Strumenti** > **Opzioni** ed esplorare le impostazioni nelle schede **Ambiente** ed **Editor di testo**. Per impostazione predefinita viene visualizzato solo un numero limitato di opzioni. Per visualizzare tutte le opzioni per ogni linguaggio di programmazione, selezionare **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo.
+    > Poiché l'ambiente di sviluppo è molto personale, Visual Studio offre un controllo completo sull'aspetto e sul comportamento di Visual Studio. Selezionare il comando di menu**Opzioni** **degli strumenti** > ed esplorare le impostazioni nelle schede **Ambiente** e Editor **di testo.** Per impostazione predefinita viene visualizzato solo un numero limitato di opzioni. Per visualizzare tutte le opzioni per ogni linguaggio di programmazione, selezionare **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo.
 
-1. Eseguire il codice scritto fino a questo punto premendo **CTRL**+**F5** o selezionando la voce di menu **Debug** > **Avvia senza eseguire debug**. Se sono ancora presenti errori nel codice Visual Studio genera degli avvisi.
+1. Eseguire il codice scritto fino a questo punto premendo **Ctrl**+**F5** o selezionando **Debug** > **Avvio senza Eseguire il debug.** Se sono ancora presenti errori nel codice Visual Studio genera degli avvisi.
 
 1. Quando si esegue il programma, viene visualizzata una finestra di console con i risultati, come se fosse stato eseguito un interprete Python con *PythonApplication1.py* dalla riga di comando. Premere un tasto per chiudere la finestra e tornare all'editor di Visual Studio.
 
@@ -84,16 +84,16 @@ Anche se **Esplora soluzioni** si trova nell'area di gestione dei file di proget
         print(cos(radians(i)))
     ```
 
-1. Eseguire ancora il programma premendo **CTRL**+**F5** o scegliendo **Debug** > **Avvia senza eseguire debug**. Al termine, chiudere la finestra di output.
+1. Eseguire nuovamente il programma con **Ctrl**+**F5** o **Avvio di debug** > **senza eseguire il debug**. Al termine, chiudere la finestra di output.
 
 ## <a name="next-step"></a>Passaggio successivo
 
 > [!div class="nextstepaction"]
-> [Usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+> [Utilizzare la finestra REPL interattiva](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
 ## <a name="go-deeper"></a>Approfondimento
 
 - [Modifica codice](editing-python-code-in-visual-studio.md)
 - [Codice formato](formatting-python-code.md)
-- [Effettuare il refactoring del codice](refactoring-python-code.md)
+- [Refactoring del codiceRefactor code](refactoring-python-code.md)
 - [Usare PyLint](linting-python-code.md)

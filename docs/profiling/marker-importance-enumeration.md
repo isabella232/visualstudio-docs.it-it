@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3f5cfb583ec4fceb9fb7428b08c00f6ca8e26b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999956"
 ---
-# <a name="markerimportance-enumeration"></a>Enumerazione marker_importance
+# <a name="marker_importance-enumeration"></a>Enumerazione marker_importance
 Rappresenta il livello di importanza di un marcatore del visualizzatore di concorrenza.
 
 ## <a name="syntax"></a>Sintassi
@@ -28,11 +28,11 @@ Rappresenta il livello di importanza di un marcatore del visualizzatore di conco
 enum marker_importance;
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 
 ### <a name="values"></a>Valori
 
-|nome|Description|
+|Nome|Descrizione|
 |----------|-----------------|
 |`critical_importance`|Specifica che il marcatore è di importanza critica.|
 |`high_importance`|Specifica che il marcatore è di elevata importanza.|
@@ -45,4 +45,4 @@ enum marker_importance;
  **Spazio dei nomi:** Concurrency::diagnostic
 
 ## <a name="see-also"></a>Vedere anche
-- [Spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)
+- [spazio dei nomi diagnostico](../profiling/diagnostic-namespace.md)

@@ -1,5 +1,5 @@
 ---
-title: Eseguire la pubblicazione nel servizio app di Azure
+title: Pubblicare in Servizio app di Azure
 ms.date: 04/02/2019
 helpviewer_keywords:
 - deployment, website
@@ -12,23 +12,23 @@ ms.custom: video
 ms.workload:
 - azure
 ms.openlocfilehash: e4ce4273b72a57a2b9456974a108809dcd73b4e0
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70222729"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Pubblicare un'app Web in Servizio app di Azure usando Visual Studio per Mac
 
 È possibile usare lo strumento Pubblica per la pubblicazione di app ASP.NET Core in Servizio app di Azure.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - [Visual Studio 2019 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installato con ASP.NET Core abilitato.
 - Una sottoscrizione di Azure. Se non si ha già una sottoscrizione, [iscriversi gratuitamente](https://azure.microsoft.com/free/dotnet/) per ottenere un credito di $200 per 30 giorni e 12 mesi di accesso ai servizi gratuiti più diffusi.
 - Un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](~/create-new-projects.md).
 
-## <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
+## <a name="publish-to-azure-app-service"></a>Pubblicare in Servizio app di Azure
 
  1. Nel riquadro della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
 
@@ -56,7 +56,7 @@ ms.locfileid: "70222729"
 
     È possibile modificare la sottoscrizione cui il servizio app sarà associato usando l'elenco a discesa **Sottoscrizione**.
 
-    È possibile selezionare un **Gruppo di risorse** esistente usando l'elenco a discesa oppure è possibile crearne uno nuovo con il pulsante **+** .
+    È possibile selezionare un **Gruppo di risorse** esistente usando l'elenco a discesa oppure è possibile crearne uno nuovo con il pulsante **+**.
 
     Per il piano di servizio app, selezionarne uno esistente o crearne uno nuovo selezionando il pulsante di opzione **Person.**
 

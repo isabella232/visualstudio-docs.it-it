@@ -11,15 +11,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430332"
 ---
 # <a name="python-item-templates"></a>Modelli di elementi Python
 
-I modelli di elementi sono disponibili nei progetti Python tramite il comando di menu **Progetto** > **Aggiungi nuovo elemento** oppure tramite il comando **Aggiungi** > **Nuovo elemento** del menu di scelta rapida in **Esplora soluzioni**.
+I modelli di elemento sono disponibili nei progetti Python tramite il comando di menu **Project** > **Aggiungi nuovo elemento** o il comando **Aggiungi** > nuovo**elemento** nel menu di scelta rapida in **Esplora soluzioni**.
 
 ![Finestra di dialogo Aggiungi nuovo elemento](media/project-item-templates.png)
 
@@ -31,10 +31,10 @@ La tabella seguente illustra brevemente l'effetto di ogni modello di elemento in
 | --- | --- |
 | **File Python vuoto** | File vuoto con estensione *.py*. |
 | **Classe Python** | File *.py* contenente una singola definizione di classe Python vuota. |
-| **Pacchetto Python** | Cartella contenente un file *\_\_init\_\_.py*. |
+| **Pacchetto Python** | Cartella che contiene un * \_ \_file .py init.\_\_* |
 | **Unit test Python** | File *.py* con un singolo unit test basato sul framework `unittest`, insieme a una chiamata a `unittest.main()` per eseguire i test nel file. |
 | **Pagina HTML** | File *.html* con una struttura di pagina semplice composta da un elemento `<head>` e un elemento `<body>`. |
-| **JavaScript** | File *.js* vuoto. |
+| **Javascript** | File *.js* vuoto. |
 | **Foglio di stile** | File *.css* contenente uno stile vuoto per `body`. |
 | **File di testo** | File *.txt* vuoto. |
 | **App Django 1.9**<br/>**App Django 1.4** | Cartella con il nome dell'app, contenente i file principali per un'app Django, come illustrato in [Informazioni su Django in Visual Studio, passaggio 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) per Django 1.9. Per Django 1.4, la cartella *migrations*, il file *admin.py* e il file *apps.py* non sono inclusi. |
@@ -50,4 +50,4 @@ La tabella seguente illustra brevemente l'effetto di ogni modello di elemento in
 
 - [Gestire progetti Python - Modelli di progetto](managing-python-projects-in-visual-studio.md#project-templates)
 - [Modelli di progetto applicazione Web di Python](python-web-application-project-templates.md)
-- [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Pubblicare in Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)

@@ -12,13 +12,13 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70154901"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Passaggio 5: Usare il modello Progetto Web Flask di sondaggi
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Passaggio 5: Usare il modello di progetto Web Flask di sondaggi
 
 **Passaggio precedente: [Usare il modello Progetto Web Flask completo](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
@@ -36,15 +36,15 @@ Visual Studio include anche il modello "Progetto Web Flask/Jade di sondaggi" che
 
 ## <a name="step-5-1-create-the-project"></a>Passaggio 5-1: Creare il progetto
 
-1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningFlask** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **File** > **Nuovo** > **Progetto**.
+1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningFlask** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si desidera utilizzare una nuova soluzione, selezionare **File** > **nuovo** > **progetto.**
 
-1. Nella finestra di dialogo Nuovo progetto cercare e selezionare il modello **Progetto Web Flask di sondaggi**, assegnare al progetto il nome "FlaskPolls" e selezionare **OK**.
+1. Nella finestra di dialogo del nuovo progetto, cercare e selezionare il modello **Polls Flask Web Project,** chiamare il progetto "FlaskPolls" e scegliere **OK**.
 
 1. Come gli altri modelli di progetto in Visual Studio, il modello "Progetto Web Flask di sondaggi" include un file *requirements.txt* e Visual Studio chiede dove installare le dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite. Questo modello richiede l'uso di Flask nonché dei pacchetti azure-storage e pymongo. Il "Progetto Web Flask/Jade di sondaggi" richiede anche pyjade.
 
-1. Impostare il progetto **FlaskPolls** come predefinito per la soluzione Visual Studio facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliendo **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
+1. Impostare il progetto **FlaskPolls** come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse su tale progetto in **Esplora soluzioni** e selezionando Imposta come progetto di **avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
 
-1. Selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti per eseguire il server:
+1. Selezionare **Debug** > di**avvio debug** (**F5**) o utilizzare il pulsante **Server Web** sulla barra degli strumenti per eseguire il server:
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -68,7 +68,7 @@ Visual Studio include anche il modello "Progetto Web Flask/Jade di sondaggi" che
 
 1. È possibile lasciare l'app in esecuzione per le sezioni seguenti.
 
-    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (in genere **env**) e scegliere **Ignora questi elementi locali**.
+    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (generalmente **env**) e scegliere **Ignora questi elementi locali**.
 
 ### <a name="examine-the-project-contents"></a>Esaminare i contenuti del progetto
 
@@ -76,7 +76,7 @@ Come accennato prima, molte parti di un progetto creato dal modello "Progetto We
 
 ## <a name="step-5-2-understand-the-data-models"></a>Passaggio 5-2: Comprendere i modelli di dati
 
-I modelli di dati per l'app sono classi Python denominate Poll e Choice definite in *models/\_\_init\_\_.py*. La classe Poll rappresenta una domanda, per la quale una raccolta di istanze di Choice rappresenta l'insieme delle risposte disponibili. Poll gestisce inoltre il numero totale di voti (per ogni scelta) e un metodo per calcolare le statistiche usate per la generazione di visualizzazioni:
+I modelli di dati per l'app sono classi Python denominate Poll e Choice, definite in *models/\_\_\_\_init .py*. La classe Poll rappresenta una domanda, per la quale una raccolta di istanze di Choice rappresenta l'insieme delle risposte disponibili. Poll gestisce inoltre il numero totale di voti (per ogni scelta) e un metodo per calcolare le statistiche usate per la generazione di visualizzazioni:
 
 ```python
 class Poll(object):
@@ -187,7 +187,7 @@ I passaggi seguenti aggiungono il supporto per un archivio dati diverso dai tre 
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>Assegnare valori di inizializzazione all'archivio dati da samples.json
 
-Inizialmente un archivio dati, indipendentemente dall'opzione scelta, non contiene sondaggi, quindi nella home page dell'app un messaggio indica che **non sono disponibili sondaggi** e viene visualizzato un pulsante di **creazione di sondaggi di esempio**. Quando si seleziona il pulsante, tuttavia, la visualizzazione cambia e appaiono i sondaggi disponibili. Questo cambiamento è dovuto ai tag condizionali in *templates\index.html* (alcune righe vuote sono state omesse per brevità):
+Inizialmente, qualsiasi archivio dati scelto non contiene sondaggi, quindi la home page dell'app mostra il messaggio **Nessun sondaggio disponibile** insieme al pulsante **Crea sondaggi di esempio.** Quando si seleziona il pulsante, tuttavia, la visualizzazione cambia e appaiono i sondaggi disponibili. Questo cambiamento è dovuto ai tag condizionali in *templates\index.html* (alcune righe vuote sono state omesse per brevità):
 
 ```html
 {% extends "layout.html" %}
@@ -228,13 +228,13 @@ def seed():
     return redirect('/')
 ```
 
-La chiamata a `repository.add_sample_polls()` termina in una delle implementazioni specifiche di `Repository` per l'archivio dati scelto. Ogni implementazione chiama il metodo `_load_samples_json` disponibile in *models\_\_init\_\_.py* per caricare il file *models\samples.json* in memoria, quindi scorre i dati per creare gli oggetti `Poll` e `Choice` necessari nell'archivio dati.
+La chiamata a `repository.add_sample_polls()` termina in una delle implementazioni specifiche di `Repository` per l'archivio dati scelto. Ogni implementazione `_load_samples_json` chiama il metodo trovato nei *\_\_modelli init\_\_.py* per caricare il file *models.samples.json* in memoria, quindi scorre i dati per creare gli oggetti necessari `Poll` e `Choice` gli oggetti nell'archivio dati.
 
 Al termine del processo, l'istruzione `redirect('/')` nel metodo `seed` torna alla home page. Poiché `repository.get_polls` ora restituisce un oggetto dati, i tag condizionali in *templates\index.html* eseguono il rendering di una tabella che contiene i sondaggi.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Domanda: Come si aggiungono nuovi sondaggi all'app?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Domanda: come si aggiungono nuovi sondaggi all'app?
 
-Risposta: L'app disponibile attraverso il modello di progetto non include una funzionalità per l'aggiunta o la modifica dei sondaggi. È possibile modificare *models\samples.json* per creare nuovi dati di inizializzazione, ma tale operazione comporterebbe la reimpostazione dell'archivio dati. Per implementare le funzionalità di modifica, è necessario estendere l'interfaccia della classe `Repository` con metodi per la creazione delle istanze `Choice` e `Poll` necessarie, quindi implementare un'interfaccia utente in altre pagine che usano quei metodi.
+Risposta: l'app disponibile attraverso il modello di progetto non include una funzionalità per l'aggiunta o la modifica dei sondaggi. È possibile modificare *models\samples.json* per creare nuovi dati di inizializzazione, ma tale operazione comporterebbe la reimpostazione dell'archivio dati. Per implementare le funzionalità di modifica, è necessario estendere l'interfaccia della classe `Repository` con metodi per la creazione delle istanze `Choice` e `Poll` necessarie, quindi implementare un'interfaccia utente in altre pagine che usano quei metodi.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Passaggio 5-4: Comprendere i dettagli dei sondaggi e le visualizzazioni risultati
 

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: e31286a9b0ea3852ad1fe788d4ff6c4c66e7e4f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784283"
 ---
 # <a name="profile-python-code"></a>Profilare il codice Python
@@ -23,7 +23,7 @@ ms.locfileid: "62784283"
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>Profilatura per interpreti basati su CPython
 
-Per avviare la profilatura, si usa il comando di menu **Analizza** > **Avvia profilatura Python**, che consente di aprire una finestra di dialogo di configurazione:
+La profilatura viene avviata tramite il comando di menu Analizza per avviare la**profilatura Python,** che apre una finestra di dialogo di configurazione:Profiling is started through the **Analyze** > Launch Python Profiling menu command, which opens a configuration dialog:
 
 ![Finestra di dialogo di configurazione della profilatura](media/profiling-start.png)
 
