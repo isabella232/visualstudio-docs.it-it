@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263103"
 ---
-# <a name="parameter-element"></a>Parameter - elemento
+# <a name="parameter-element"></a>Elemento Parameter
 
-Contiene informazioni su un parametro specifico per un'attività generata da un `UsingTask` `TaskFactory`.  Il nome dell'elemento è il nome del parametro.  Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contiene informazioni su un parametro specifico per `UsingTask` `TaskFactory`un'attività generata da un oggetto .  Il nome dell'elemento è il nome del parametro.  Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
 
@@ -40,7 +40,7 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
 
- Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributes
 
@@ -58,7 +58,7 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene un elenco facoltativo di parametri che saranno presenti nell'attività generata da un `UsingTask` `TaskFactory`.|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene un elenco facoltativo di parametri che saranno presenti `UsingTask` `TaskFactory`nell'attività generata da un oggetto .|
 
 ## <a name="example"></a>Esempio
 
@@ -81,4 +81,4 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)

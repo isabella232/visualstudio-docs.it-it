@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114503"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: Non visualizzare gli avvisi del compilatore
 
-È possibile snellire un log di compilazione escludendo uno o più tipi di avvisi del compilatore. Ad esempio, potrebbe essere utile esaminare solo parte dell'output generato quando si imposta il livello di dettaglio per il log di compilazione su **Normale**, **Dettagliato** o **Diagnostica**. Per altre informazioni sul livello di dettaglio, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).
+È possibile snellire un log di compilazione escludendo uno o più tipi di avvisi del compilatore. Ad esempio, è possibile esaminare solo parte dell'output generato quando si imposta il livello di dettaglio del log di compilazione su **Normale**, **Dettagliato**o **Diagnostica**. Per altre informazioni sul livello di dettaglio, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Non visualizzare avvisi specifici per Visual C# o F\#
 
@@ -25,7 +25,7 @@ Usare la pagina delle proprietà **Compila** per escludere avvisi specifici per 
 
 1. In **Esplora soluzioni** scegliere il progetto in cui non devono essere visualizzati gli avvisi.
 
-1. Sulla barra dei menu scegliere **Visualizza** > **Pagine delle proprietà**.
+1. Nella barra dei menu scegliere **Visualizza** > **pagine delle proprietà.**
 
 1. Scegliere la scheda **Compila**.
 
@@ -33,13 +33,13 @@ Usare la pagina delle proprietà **Compila** per escludere avvisi specifici per 
 
 1. Ricompilare la soluzione.
 
-## <a name="suppress-specific-warnings-for-c"></a>Non visualizzare avvisi specifici perC++
+## <a name="suppress-specific-warnings-for-c"></a>Eliminazione di avvisi specifici per C
 
 Usare la pagina delle proprietà **Proprietà di configurazione** per escludere avvisi specifici per i progetti C++.
 
 1. In **Esplora soluzioni** scegliere il progetto o il file di origine in cui non devono essere visualizzati gli avvisi.
 
-1. Sulla barra dei menu scegliere **Visualizza** > **Pagine delle proprietà**.
+1. Nella barra dei menu scegliere **Visualizza** > **pagine delle proprietà.**
 
 1. Scegliere la categoria **Proprietà di configurazione**, selezionare la categoria **C/C++** e scegliere la pagina **Avanzate**.
 
@@ -61,7 +61,7 @@ Questo esempio mostra come modificare il file *vbproj* per escludere avvisi spec
 
 1. In **Esplora soluzioni** scegliere il progetto in cui non devono essere visualizzati gli avvisi.
 
-1. Sulla barra dei menu scegliere **Progetto** > **Scarica progetto**.
+1. Nella barra dei menu scegliere **Progetto** > **Scarica progetto**.
 
 1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e quindi scegliere **Modifica\<NomeProgetto>.vbproj**.
 
@@ -104,9 +104,9 @@ Questo esempio mostra come modificare il file *vbproj* per escludere avvisi spec
 
 1. Salvare le modifiche apportate al file con estensione *vbproj*.
 
-1. Sulla barra dei menu scegliere **Progetto** > **Ricarica progetto**.
+1. Nella barra dei menu scegliere **Carica** > **progetto**.
 
-1. Sulla barra dei menu scegliere **Compila** > **Ricompila soluzione**.
+1. Nella barra dei menu scegliere **Compila** > **soluzione di compilazione**.
 
     Nella finestra **Output** gli avvisi specificati non saranno più visualizzati.
 
@@ -118,7 +118,7 @@ In alcuni casi, può essere necessario escludere gli avvisi del compilatore NuGe
 
 ### <a name="to-suppress-a-specific-warning-for-a-single-nuget-package"></a>Per escludere un avviso specifico per un singolo pacchetto NuGet
 
-1. In **Esplora soluzioni**  selezionare il pacchetto NuGet per il quale si vogliono escludere avvisi del compilatore.
+1. In **Esplora soluzioni ** selezionare il pacchetto NuGet per il quale si vogliono escludere avvisi del compilatore.
 
    ![Pacchetto NuGet in Esplora soluzioni](media/nuget-package-with-warning.png)
 
@@ -132,6 +132,6 @@ In alcuni casi, può essere necessario escludere gli avvisi del compilatore NuGe
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md) (Procedura dettagliata: Compilare un'applicazione)
+- [Procedura dettagliata: compilare un'applicazioneWalkthrough: Build an application](../ide/walkthrough-building-an-application.md)
 - [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md)
-- [Compilare](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)

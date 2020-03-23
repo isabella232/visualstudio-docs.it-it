@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114725"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurazione degli avvisi in Visual Basic
@@ -39,7 +39,7 @@ L'opzione della riga di comando **/warnaserror** del compilatore consente anche 
 |Opzione della riga di comando|Specifica|
 | - |---------------|
 |`/warnaserror+`|Considera tutti gli avvisi come errori.|
-|`/warnsaserror`-|Non considera gli avvisi come errori. Questo è il valore predefinito.|
+|`/warnsaserror`-|Non considera gli avvisi come errori. Questa è la modalità predefinita.|
 |`/warnaserror+:<warning list` `>`|Considera come errori gli avvisi specifici elencati in base al numero ID dell'errore in un elenco delimitato da virgole.|
 |`/warnaserror-:<warning list>`|Non considera come errori gli avvisi specifici elencati in base al numero ID dell'errore in un elenco delimitato da virgole.|
 |`/nowarn`|Non segnala gli avvisi.|
@@ -88,7 +88,7 @@ Vengono generati quando una variabile viene usata prima di ricevere l'assegnazio
 ID: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Avviso di variabile locale non usata
-Viene generato quando una variabile locale viene dichiarata ma non dispone di nessun riferimento. L'impostazione predefinita è On (attivato).
+Viene generato quando una variabile locale viene dichiarata ma non dispone di nessun riferimento. Per impostazione predefinita questa opzione è abilitata.
 
 ID: 42024
 
@@ -120,8 +120,8 @@ ID: 42029, 42031
 ## <a name="see-also"></a>Vedere anche
 
 - [Tipi di errore](/dotnet/visual-basic/programming-guide/language-features/error-types)
-- [Istruzione Try...Catch...Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+- [Provare... Prendere... Dichiarazione Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
 - [Pagina Compilazione, Creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Avvisi del compilatore disattivati per impostazione predefinita](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+- [Avvisi del compilatore disattivati per impostazione predefinitaCompiler warnings that are off by default](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114226"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Pagina Estensioni My, Progettazione progetti (Visual Basic)
@@ -25,7 +25,7 @@ Usare la pagina **Estensioni My** di **Progettazione progetti** per gestire le e
 
 Per accedere alla pagina **Estensioni My**, fare doppio clic su **Progetto personale** per il nodo del progetto in **Esplora soluzioni**. Quando appare **Progettazione progetti** fare clic sulla scheda **Estensioni My**.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 Le opzioni seguenti consentono di aggiungere o rimuovere estensioni dello spazio dei nomi `My` nel progetto. Un'estensione dello spazio dei nomi `My` deve prima essere installata come modello di elemento di Visual Studio per essere disponibile per l'aggiunta. Per informazioni sulla pubblicazione e l'installazione delle estensioni dello spazio dei nomi `My`, vedere [Assemblaggio e distribuzione delle estensioni My personalizzate](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
  **Estensioni spazio dei nomi My**

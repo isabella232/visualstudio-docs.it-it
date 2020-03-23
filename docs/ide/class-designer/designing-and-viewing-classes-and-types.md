@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c65be2b5afe91f9ee20a5eecde57d790a0cbcb2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590397"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Progettare e visualizzare classi e tipi con Progettazione classi
 
-Con **Progettazione classi** di Visual Studio è possibile progettare, visualizzare ed effettuare il refactoring di classi e altri tipi all'interno del codice. Usare i diagrammi classi per creare e modificare classi nel progetto C#, Visual Basic o C++. È anche possibile usare i diagrammi classi per comprendere meglio la struttura del progetto o riorganizzare il codice.
+Progettare, visualizzare ed esefare il refactoring di classi e altri tipi nel codice con **Progettazione classi** in Visual Studio.Design, visualize, and refactor classes and other types in your code with Class Designer in Visual Studio. Usare i diagrammi classi per creare e modificare classi nel progetto C#, Visual Basic o C++. È anche possibile usare i diagrammi classi per comprendere meglio la struttura del progetto o riorganizzare il codice.
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>Operazioni eseguibili con i diagrammi classi
 

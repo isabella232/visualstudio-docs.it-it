@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115102"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedura: Specificare gli eventi di compilazione (Visual Basic)
@@ -51,7 +51,7 @@ Gli eventi di compilazione vengono specificati nella finestra di dialogo **Event
 
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Esempio: come modificare le informazioni di un manifesto usando un evento di post-compilazione
 
-La procedura seguente illustra come impostare la versione minima del sistema operativo nel manifesto dell'applicazione usando un comando *exe* chiamato da un evento di post-compilazione (il file *exe.manifest* nella directory del progetto). La versione minima del sistema operativo è un numero composto da quattro parti, ad esempio 4.10.0.0. A tale scopo, il comando modificherà la sezione `<dependentOS>` del manifesto:
+Nella procedura seguente viene illustrato come impostare la versione minima del sistema operativo nel manifesto dell'applicazione utilizzando un comando *exe* chiamato da un evento di post-compilazione (il file *con estensione exe.manifest* nella directory del progetto). La versione minima del sistema operativo è un numero composto da quattro parti, ad esempio 4.10.0.0. A tale scopo, il comando modificherà la sezione `<dependentOS>` del manifesto:
 
 ```xml
 <dependentOS>
@@ -63,11 +63,11 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Per creare un comando exe per modificare il manifesto dell'applicazione
 
-1. Creare un'applicazione console per il comando. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.
+1. Creare un'applicazione console per il comando. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
-2. Nella finestra di dialogo **Nuovo progetto** nel nodo **Visual Basic** selezionare **Windows** e quindi scegliere il modello **Applicazione console**. Denominare il progetto `ChangeOSVersionVB`.
+2. Nella finestra di dialogo **Nuovo progetto** nel nodo **Visual Basic** selezionare **Windows** e quindi scegliere il modello **Applicazione console**. Assegnare al progetto il nome `ChangeOSVersionVB`.
 
-3. In *Module1.vb* aggiungere la riga seguente alle altre istruzioni `Imports` all'inizio del file:
+3. In *Module1.vb*aggiungere la riga `Imports` seguente alle altre istruzioni all'inizio del file:
 
    ```vb
    Imports System.Xml
@@ -116,9 +116,9 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
    End Sub
    ```
 
-   Il comando accetta due argomenti. Il primo argomento è il percorso del manifesto dell'applicazione (ovvero, la cartella in cui il processo di compilazione crea il manifesto, in genere *\<Projectname>.publish*). Il secondo argomento è la nuova versione del sistema operativo.
+   Il comando accetta due argomenti. Il primo argomento è il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto, in genere * \<NomeProgetto>.publish*. Il secondo argomento è la nuova versione del sistema operativo.
 
-5. Scegliere **Compila soluzione** dal menu **Compila**.
+5. Nel menu **Compila** scegliere **Compila soluzione**.
 
 6. Copiare il file con estensione *exe* in una directory, ad esempio *C:\TEMP\ChangeOSVersionVB.exe*.
 
@@ -126,9 +126,9 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Per richiamare un evento di post-compilazione per modificare il manifesto dell'applicazione
 
-1. Creare un'applicazione Windows per il progetto da pubblicare. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.
+1. Creare un'applicazione Windows per il progetto da pubblicare. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
-2. Nella finestra di dialogo **Nuovo progetto** del nodo **Visual Basic** selezionare **Desktop di Windows** e quindi scegliere il modello **App Windows Forms**. Denominare il progetto `VBWinApp`.
+2. Nella finestra di dialogo **Nuovo progetto** del nodo **Visual Basic** selezionare **Desktop di Windows** e quindi scegliere il modello **App Windows Forms**. Assegnare al progetto il nome `VBWinApp`.
 3. Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 4. In **Creazione progetti**, passare alla pagina **Pubblica** e impostare **Posizione di pubblicazione** su *C:\TEMP*.

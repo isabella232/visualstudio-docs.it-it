@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4c55204983f9e7a546867621ec21070c8d69645
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590163"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Procedura: Personalizzare i diagrammi classi
@@ -37,7 +37,7 @@ Le sezioni contenenti membri di tipo, ad esempio la sezione **Proprietà** in un
 
 2. Nella barra degli strumenti di **Progettazione classi** fare clic sul pulsante **Zoom avanti** o **Zoom indietro** per modificare il livello di zoom dell'area di progettazione.
 
-     oppure
+     o
 
      Specificare un particolare valore di zoom. È possibile usare l'elenco a discesa **Zoom** o digitare un livello di zoom valido (l'intervallo valido è compreso tra 10% e 400%).
 
@@ -128,5 +128,5 @@ Le sezioni contenenti membri di tipo, ad esempio la sezione **Proprietà** in un
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Passare dalla notazione membro alla notazione associazione](how-to-change-between-member-notation-and-association-notation.md)
-- [Procedura: Visualizzare i tipi esistenti](how-to-view-existing-types.md)
+- [Procedura: visualizzare i tipi esistentiHow to: View Existing Types](how-to-view-existing-types.md)
 - [Visualizzazione di tipi e relazioni](designing-and-viewing-classes-and-types.md)

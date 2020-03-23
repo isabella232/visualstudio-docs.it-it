@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9eac5c8c47c208f39f74f542fbbff89c8340a93f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591346"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
@@ -24,7 +24,7 @@ ms.locfileid: "75591346"
 
 ### <a name="open-a-peek-definition-window"></a>Aprire una finestra Visualizza definizione
 
-1. È possibile visualizzare una definizione scegliendo **Visualizza definizione** dal menu di scelta rapida per un tipo o un membro che si vuole esplorare. Se l'opzione è abilitata, è possibile visualizzare una definizione anche usando il mouse premendo **CTRL** (o un altro modificatore) e facendo clic sul nome del membro. In alternativa, dalla tastiera premere **ALT**+**F12**.
+1. È possibile visualizzare una definizione scegliendo **Visualizza definizione** dal menu di scelta rapida per un tipo o un membro che si vuole esplorare. Se l'opzione è abilitata, è possibile visualizzare una definizione anche usando il mouse premendo **CTRL** (o un altro modificatore) e facendo clic sul nome del membro. In alternativa, dalla tastiera, premere **Alt**+**F12**.
 
      Questa illustrazione mostra la finestra **Visualizza definizione** per un metodo denominato `Print()`:
 
@@ -58,11 +58,11 @@ Quando si inizia ad apportare modifiche all'interno di una finestra **Visualizza
 
 ### <a name="to-change-options-for-peek-definition"></a>Per modificare le opzioni per Visualizza definizione
 
-1. Passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Generale**.
+1. Passare a **Opzioni** > **opzioni** > **opzioni Editor** > di testo**Generale**.
 
 1. Selezionare l'opzione **Apri definizione in visualizzazione rapida**.
 
-1. Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.
+1. Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni** .
 
    ![Impostazione dell'opzione Visualizza definizione con clic del mouse](../ide/media/editor_options_peek_view.png)
 
@@ -70,14 +70,14 @@ Quando si inizia ad apportare modifiche all'interno di una finestra **Visualizza
 
 Nella finestra **Visualizza definizione** è possibile usare questi tasti di scelta rapida:
 
-|Funzionalità|Tasti di scelta rapida|
+|Funzionalità|Tasto di scelta rapida|
 |-------------------|:-----------------------:|
-|Consente di aprire la finestra di definizione|**ALT**+**F12**|
-|Consente di chiudere la finestra di definizione|**ESC**|
-|Consente di alzare di livello la finestra di definizione in una scheda documento normale|**MAIUSC**+**ALT**+**Home**|
-|Consente di spostarsi tra le finestre di definizione|**CTRL**+**ALT**+ **-** e **CTRL**+**ALT**+ **=**|
+|Consente di aprire la finestra di definizione|**Alt**+**F12**|
+|Consente di chiudere la finestra di definizione|**Esc**|
+|Consente di alzare di livello la finestra di definizione in una scheda documento normale|**Maiusc**+**Alt**+**Home**|
+|Consente di spostarsi tra le finestre di definizione|**Ctrl**+**Alt** + **-** Alt e **Ctrl**+**Alt**+**=**|
 |Consente di spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
-|Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|**MAIUSC**+**ESC**|
+|Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|**Maiusc**+**Esc**|
 
 > [!NOTE]
 > Per modificare codice in una finestra **Visualizza definizione** è anche possibile usare gli stessi tasti di scelta rapida utilizzabili in qualsiasi altra posizione in Visual Studio.

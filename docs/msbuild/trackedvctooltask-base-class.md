@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594929"
 ---
 # <a name="trackedvctooltask-base-class"></a>Classe di base TrackedVCToolTask
@@ -30,23 +30,23 @@ Nella tabella seguente vengono descritti i parametri della classe di base **Trac
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|Parametro **bool** facoltativo.|
 |**EnableExecuteTool**|Parametro **bool** facoltativo.|
-|**ExcludedInputPaths**|Parametro **ITaskItem[]** facoltativo.|
+|**ExcludedInputPaths**|Parametro **Facoltativo ITaskItem[].**|
 |**MinimalRebuildFromTracking**|Parametro **bool** facoltativo.|
-|**PathOverride**|Parametro **string** facoltativo.|
+|**PathOverride**|Parametro **stringa** facoltativo.|
 |**PostBuildTrackingCleanup**|Parametro **bool** facoltativo.|
-|**RootSource**|Parametro **string** facoltativo.|
+|**RootSource**|Parametro **stringa** facoltativo.|
 |**SkippedExecution**|Parametro di output **bool** facoltativo.|
-|**SourcesCompiled**|Parametro di output facoltativo **ITaskItem[]** .|
+|**SourcesCompiled**|Parametro di output facoltativo **ITaskItem[]**.|
 |**TLogCommandFile**|Parametro **ITaskItem** facoltativo.|
-|**TLogReadFiles**|Parametro **ITaskItem[]** facoltativo.|
-|**TLogWriteFiles**|Parametro **ITaskItem[]** facoltativo.|
-|**ToolArchitecture**|Parametro **string** facoltativo.|
+|**TLogReadFiles**|Parametro **Facoltativo ITaskItem[].**|
+|**TLogWriteFiles**|Parametro **Facoltativo ITaskItem[].**|
+|**ToolArchitecture**|Parametro **stringa** facoltativo.|
 |**TrackCommandLines**|Parametro **bool** facoltativo.|
 |**TrackFileAccess**|Parametro **bool** facoltativo.|
-|**TrackedInputFilesToIgnore**|Parametro **ITaskItem[]** facoltativo.|
-|**TrackedOutputFilesToIgnore**|Parametro **ITaskItem[]** facoltativo.|
-|**TrackerFrameworkPath**|Parametro **string** facoltativo.|
-|**TrackerSdkPath**|Parametro **string** facoltativo.|
+|**TrackedInputFilesToIgnore**|Parametro **Facoltativo ITaskItem[].**|
+|**TrackedOutputFilesToIgnore**|Parametro **Facoltativo ITaskItem[].**|
+|**TrackerFrameworkPath**|Parametro **stringa** facoltativo.|
+|**TrackerSdkPath**|Parametro **stringa** facoltativo.|
 
 ## <a name="see-also"></a>Vedere anche
 

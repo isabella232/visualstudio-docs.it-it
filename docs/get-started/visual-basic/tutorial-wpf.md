@@ -15,25 +15,25 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77579945"
 ---
-# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: creare un'applicazione semplice con Visual Basic
+# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: Creare un'applicazione semplice con Visual BasicTutorial: Create a simple application with Visual Basic
 
 Completando questa esercitazione, si acquisirà familiarità con molti strumenti, finestre di dialogo e finestre di progettazione che è possibile usare quando si sviluppano applicazioni con Visual Studio. Si creerà un' applicazione "Hello, World", si progetterà l'interfaccia utente, si aggiungerà il codice e si eseguirà il debug degli errori, apprendendo l'uso dell'ambiente di sviluppo integrato ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ Quando si apre per la prima volta, Visual Studio richiede di eseguire l'accesso.
 
 ![Finestra di dialogo Selezionare le impostazioni](../media/exploreide-settings.png)
 
-Dopo aver avviato Visual Studio, saranno visualizzati le finestre degli strumenti, i menu, le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con **Avvio veloce**, la barra dei menu e la barra degli strumenti standard nella parte superiore. Al centro della finestra dell'applicazione si trova **Pagina iniziale**. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nello spazio in cui si trova la **pagina iniziale** . Quando si sviluppa un'applicazione, la maggior parte del tempo verrà dedicata a questa area centrale.
+Dopo aver avviato Visual Studio, saranno visualizzati le finestre degli strumenti, i menu, le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con **Avvio veloce**, la barra dei menu e la barra degli strumenti standard nella parte superiore. Al centro della finestra dell'applicazione si trova **Pagina iniziale**. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nello spazio in cui si trova la **pagina iniziale** . Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
 
 ![Visual Studio 2017 IDE con impostazioni generali applicate](../media/exploreide-idewithgeneralsettings.png)
 
@@ -53,7 +53,7 @@ Dopo aver avviato Visual Studio, saranno visualizzati le finestre degli strument
 
 ::: moniker range=">=vs-2019"
 
-Quando si avvia Visual Studio, si apre la finestra iniziale. Selezionare **Continua senza codice** per aprire l'ambiente di sviluppo. Saranno visualizzate le finestre degli strumenti, i menu, barre degli strumenti e lo spazio della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con una casella di ricerca, la barra dei menu e la barra degli strumenti standard nella parte superiore. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nell'area al centro della finestra dell'applicazione. Quando si sviluppa un'applicazione, la maggior parte del tempo verrà dedicata a questa area centrale.
+Quando si avvia Visual Studio, si apre la finestra iniziale. Selezionare **Continua senza codice** per aprire l'ambiente di sviluppo. Saranno visualizzate le finestre degli strumenti, i menu, barre degli strumenti e lo spazio della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con una casella di ricerca, la barra dei menu e la barra degli strumenti standard nella parte superiore. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nell'area al centro della finestra dell'applicazione. Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
 
 ::: moniker-end
 
@@ -63,11 +63,11 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 ::: moniker range="vs-2017"
 
-1. Creare un nuovo progetto. Nella barra dei menu selezionare **File** > **Nuovo** > **Progetto**.
+1. Creare un nuovo progetto. Nella barra dei menu selezionare **File** > **Nuovo** > **progetto**.
 
      ![Nella barra dei menu scegliere File, Nuovo, Progetto](../media/exploreide-filenewproject.png)
 
-2. Nella finestra di dialogo **Nuovo progetto** selezionare la categoria **Installati** > **Visual Basic** > **Windows Desktop** e quindi selezionare il modello **App WPF (.NET Framework)** . Assegnare al progetto il nome **HelloWPFApp** e scegliere **OK**.
+2. Nella finestra di dialogo **Nuovo progetto** selezionare la categoria **Installati** > **Visual Basic** > **Windows Desktop** e quindi selezionare il modello **App WPF (.NET Framework)**. Assegnare al progetto il nome **HelloWPFApp** e scegliere **OK**.
 
      ![Modello App WPF nella finestra di dialogo Nuovo progetto di Visual Studio](media/exploreide-newproject-vb.png)
 
@@ -100,23 +100,23 @@ Dopo aver creato il progetto, sarà possibile personalizzarlo. Nella finestra **
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
-Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su *MainWindow. XAML* e scegliere **Rinomina**. Rinominare il file in *Greetings. XAML*.
+Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su *MainWindow.xaml* e scegliere **Rinomina**. Rinominare il file *in Greetings.xaml*.
 
 ## <a name="design-the-user-interface-ui"></a>Progettare l'interfaccia utente
 
-Se la finestra di progettazione non è aperta, selezionare *Greetings. XAML* in **Esplora soluzioni**e premere **MAIUSC**+**F7** per aprire la finestra di progettazione.
+Se la finestra di progettazione non è aperta, selezionare *Greetings.xaml* in **Esplora soluzioni**e premere **MAIUSC**+**F7** per aprire la finestra di progettazione.
 
 Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:System.Windows.Controls.TextBlock>, due controlli <xref:System.Windows.Controls.RadioButton> e un controllo <xref:System.Windows.Controls.Button>.
 
 ### <a name="add-a-textblock-control"></a>Aggiungere un controllo TextBlock
 
-1. Premere **Ctrl**+**Q** per attivare la casella di ricerca e digitare **casella degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
+1. Premere **Ctrl**+**Q** per attivare la casella di ricerca e digitare Casella **degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
 
 2. Nella **casella degli strumenti** espandere il nodo **Controlli WPF comuni** per visualizzare il controllo TextBlock.
 
      ![Casella degli strumenti con il controllo TextBlock evidenziato](../media/exploreide-textblocktoolbox.png)
 
-3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra. In Visual Studio 2019 e versioni successive è possibile usare le linee guida rosse per centrare il controllo.
+3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra. In Visual Studio 2019 e versioni successive, è possibile usare le linee guida rosse per centrare il controllo.
 
 La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
 
@@ -138,7 +138,7 @@ Il markup XAML sarà simile all'esempio seguente:
 
 2. Se necessario, riallineare al centro il controllo TextBlock e salvare le modifiche premendo CTRL+S o usando la voce di menu **File**.
 
-Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/wpf/controls/radiobutton) al form.
+Successivamente, si aggiungeranno due [RadioButton](/dotnet/framework/wpf/controls/radiobutton) controlli al form.
 
 ### <a name="add-radio-buttons"></a>Aggiungere pulsanti di opzione
 
@@ -146,7 +146,7 @@ Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/
 
      ![Finestra Casella degli strumenti con il controllo RadioButton selezionato](../media/exploreide-radiobuttontoolbox.png)
 
-2. Aggiungere due controlli RadioButton all'area di progettazione scegliendo l'elemento **RadioButton** e trascinandolo nell'area di progettazione nella finestra. Selezionare i pulsanti e usare i tasti di direzione per spostare i pulsanti in modo che vengano visualizzati affiancati sotto il controllo TextBlock. Usare le linee guida rosse per allineare i controlli.
+2. Aggiungere due controlli RadioButton all'area di progettazione scegliendo l'elemento **RadioButton** e trascinandolo nell'area di progettazione nella finestra. Selezionare i pulsanti e usare i tasti di direzione per spostare i pulsanti in modo che vengano visualizzati affiancati sotto il controllo TextBlock. Utilizzare le linee guida rosse per allineare i controlli.
 
      La finestra dovrebbe risultare simile alla seguente:
 
@@ -162,7 +162,7 @@ Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/
 
 ### <a name="add-display-text-for-each-radio-button"></a>Aggiungere testo visualizzato per ogni pulsante di opzione
 
-Aggiornare l'attributo **Content** per la `HelloButton` e `GoodbyeButton` a `"Hello"` e `"Goodbye"` in XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
+Aggiornare l'attributo `GoodbyeButton` `"Hello"` **Content** per `HelloButton` e a e `"Goodbye"` nel codice XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
 
    ```xaml
    <Grid>
@@ -182,7 +182,7 @@ Nella visualizzazione XAML individuare il markup per HelloButton e aggiungere un
 IsChecked="True"
 ```
 
-L'elemento finale dell'interfaccia utente da aggiungere è un controllo [Button](/dotnet/framework/wpf/controls/button).
+L'elemento finale dell'interfaccia utente che verrà aggiunto è un [controllo Button.The](/dotnet/framework/wpf/controls/button) final UI element that you'll add is a Button control.
 
 ### <a name="add-the-button-control"></a>Aggiungere il controllo del pulsante
 
@@ -228,7 +228,7 @@ Verrà quindi eseguito il debug dell'applicazione per rilevare eventuali errori 
 
 ### <a name="find-and-fix-errors"></a>Trovare e correggere errori
 
-In questo passaggio verrà identificato l'errore generato in precedenza modificando il nome del file *MainWindow.xaml*.
+In questo passaggio, troverai l'errore che hai causato in precedenza modificando il nome del file *MainWindow.xaml.*
 
 #### <a name="start-debugging-and-find-the-error"></a>Avviare il debug e trovare l'errore
 
@@ -261,11 +261,11 @@ Avviare nuovamente il debugger premendo **F5**. Viene visualizzata la finestra *
 
 ### <a name="debug-with-breakpoints"></a>Eseguire il debug con punti di interruzione
 
-Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione selezionando **Debug** > **Imposta/Rimuovi punto di interruzione**, facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si vuole inserire l'interruzione oppure premendo **F9**.
+Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo **Debug** > **Toggle Breakpoint**, facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si desidera inserire l'interruzione oppure premendo **F9**.
 
 #### <a name="add-breakpoints"></a>Aggiungere punti di interruzione
 
-1. Aprire *Greetings.xaml.vb* e selezionare la riga seguente: `MessageBox.Show("Hello.")`
+1. Aprire *Greetings.xaml.vb*e selezionare la riga seguente:`MessageBox.Show("Hello.")`
 
 2. Aggiungere un punto di interruzione dal menu premendo **F9** o selezionando **Debug**, quindi **Attiva/disattiva punto di interruzione**.
 
@@ -281,7 +281,7 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
    ![Screenshot del punto di interruzione nel debugger](media/exploreide-debugbreakpoint.png)
 
-6. Nella barra dei menu scegliere **Debug** > **Esci da istruzione/routine**.
+6. Nella barra dei menu scegliere Esegui istruzione **alla debug** > **.**
 
      L'applicazione riprende l'esecuzione e verrà visualizzata una finestra di messaggio con la parola "Hello".
 
@@ -295,25 +295,25 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
 10. Chiudere la finestra dell'applicazione per arrestare il debug.
 
-11. Nella barra dei menu scegliere **Debug** > **Disabilita tutti i punti di interruzione**.
+11. Nella barra dei menu scegliere **Disabilita debug** > **tutti i punti di interruzione**.
 
-### <a name="view-a-representation-of-the-ui-elements"></a>Visualizzazione di una rappresentazione degli elementi dell'interfaccia utente
+### <a name="view-a-representation-of-the-ui-elements"></a>Visualizzare una rappresentazione degli elementi dell'interfaccia utenteView a representation of the UI elements
 
-Nell'app in esecuzione verrà visualizzato un widget visualizzato nella parte superiore della finestra. Si tratta di un helper di runtime che consente di accedere rapidamente ad alcune utili funzionalità di debug. Fare clic sul primo pulsante, **passare a albero elementi visivi attivi**. Verrà visualizzata una finestra con un albero che contiene tutti gli elementi visivi della pagina. Espandere i nodi per trovare i pulsanti aggiunti.
+Nell'app in esecuzione, dovresti vedere un widget che appare nella parte superiore della finestra. Si tratta di un helper di runtime che fornisce un accesso rapido ad alcune utili funzionalità di debug. Fare clic sul primo pulsante Vai alla struttura **ad albero visuale attiva**. Verrà visualizzata una finestra con una struttura ad albero che contiene tutti gli elementi visivi della pagina. Espandere i nodi per trovare i pulsanti aggiunti.
 
-![Screenshot della finestra albero elementi visivi attivi](media/vs-2019/exploreide-live-visual-tree.png)
+![Schermata della finestra Albero visuale attivo](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>Compilare una versione di rilascio dell'applicazione
 
-Dopo aver verificato che tutto funzioni, è possibile preparare una build di rilascio dell'applicazione.
+Dopo aver verificato che tutto funzioni, sarà possibile preparare una build di versione dell'applicazione.
 
-1. Nel menu principale selezionare **Compila** > **Pulisci soluzione** per eliminare i file intermedi e di output creati durante le compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
+1. Nel menu principale selezionare **Compila** > **soluzione pulita** per eliminare i file intermedi e i file di output creati durante le compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
 
-2. Modificare la configurazione della build per HelloWPFApp da **Debug** a **Rilascio** usando il controllo a discesa sulla barra degli strumenti (al momento è selezionato "Debug").
+2. Modificare la configurazione di compilazione per HelloWPFApp da **Debug** a **Release** utilizzando il controllo elenco a discesa sulla barra degli strumenti (attualmente si dice "Debug").
 
-3. Compilare la soluzione scegliendo **Compila** > **Compila soluzione**.
+3. Compilare la soluzione scegliendo **Compila** > **soluzione**.
 
-L'esercitazione è stata completata. È possibile trovare il file con estensione *exe* compilato nella directory del progetto e della soluzione ( *…\HelloWPFApp\HelloWPFApp\bin\Release*).
+L'esercitazione è stata completata. È possibile trovare il *file .exe* compilato nella directory della soluzione e del progetto (*...*
 
 ## <a name="see-also"></a>Vedere anche
 

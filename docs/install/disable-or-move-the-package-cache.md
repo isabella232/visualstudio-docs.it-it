@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 3f38757931cb22e9072571d96b015f37882dd500
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114795"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Disabilitare o spostare la cache dei pacchetti
@@ -46,18 +46,18 @@ Se si vuole abilitare nuovamente la cache, passare invece `--cache`. Verranno me
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
-È anche possibile impostare i [criteri del registro di sistema](set-defaults-for-enterprise-deployments.md) `KeepDownloadedPayloads` per disabilitare la cache prima di installare, modificare o ripristinare Visual Studio.
+È possibile anche impostare i  [criteri del Registro di sistema](set-defaults-for-enterprise-deployments.md)`KeepDownloadedPayloads` per disabilitare la cache prima di installare, modificare o ripristinare Visual Studio.
 
 ## <a name="move-the-package-cache"></a>Spostare la cache dei pacchetti
 
 Una configurazione di sistema comune prevede Windows installato in un'unità SSD con un disco rigido più grande (o più dischi rigidi) riservato per le esigenze di sviluppo, ad esempio per codice sorgente, file binari del programma e altro ancora. Se si preferisce lavorare offline è invece possibile spostare la cache dei pacchetti.
 
-Attualmente, è possibile eseguire questa operazione solo se si impostano i [criteri del registro di sistema](set-defaults-for-enterprise-deployments.md) `CachePath` prima di installare, modificare o ripristinare Visual Studio.
+Attualmente è possibile eseguire questa operazione solo se si impostano i  [criteri del Registro di sistema](set-defaults-for-enterprise-deployments.md)`CachePath` prima di installare, modificare o ripristinare Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
+* [Installare Visual Studio](install-visual-studio.md)
 * [Impostare i valori predefiniti per le distribuzioni aziendali](set-defaults-for-enterprise-deployments.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

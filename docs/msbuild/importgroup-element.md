@@ -17,16 +17,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633733"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
 
   
-Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa. Per altre informazioni, vedere [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
+Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa. Per ulteriori informazioni, vedere [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
 
 ```xml
 <Project>
@@ -44,15 +44,15 @@ Contiene una raccolta di elementi `Import` raggruppati in una condizione facolta
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
 
- Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Elemento figlio
+### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
@@ -62,7 +62,7 @@ Contiene una raccolta di elementi `Import` raggruppati in una condizione facolta
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Project](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
 ## <a name="example"></a>Esempio
 
@@ -80,5 +80,5 @@ Contiene una raccolta di elementi `Import` raggruppati in una condizione facolta
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
-- [Items](../msbuild/msbuild-items.md)
+- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)
+- [Elementi](../msbuild/msbuild-items.md)

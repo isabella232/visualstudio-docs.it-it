@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169365"
 ---
 # <a name="template-parameters"></a>Parametri del modello
@@ -33,7 +33,7 @@ I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:
 
 ### <a name="enable-parameter-substitution-in-templates"></a>Abilitare la sostituzione dei parametri nei modelli
 
-1. Nel file *.vstemplate* del modello individuare l'elemento `ProjectItem` che corrisponde all'elemento per il quale si vuole abilitare la sostituzione dei parametri.
+1. Nel file *.vstemplate* del modello, `ProjectItem` individuare l'elemento che corrisponde all'elemento per il quale si desidera abilitare la sostituzione dei parametri.
 
 1. Impostare l'attributo `ReplaceParameters` dell'elemento `ProjectItem` su `true`.
 
@@ -61,7 +61,7 @@ La tabella seguente elenca i parametri di modello riservati che possono essere u
 |safeitemrootname|Come per `safeitemname`.|
 |safeprojectname|Nome specificato dall'utente quando è stato creato il progetto con tutti i caratteri non sicuri e gli spazi rimossi.|
 |time|L'ora corrente nel formato GG/MM/AAAA 00:00:00.|
-|specifiedsolutionname|Nome della soluzione. Quando l'opzione per creare una directory di soluzione è selezionata, `specifiedsolutionname` è il nome della soluzione. Quando l'opzione per creare una directory di soluzione non è selezionata, `specifiedsolutionname` è vuoto.|
+|specifiednomesoluzione|Nome della soluzione. Quando l'opzione per creare una directory di soluzione è selezionata, `specifiedsolutionname` è il nome della soluzione. Quando l'opzione per creare una directory di soluzione non è selezionata, `specifiedsolutionname` è vuoto.|
 |userdomain|Dominio dell'utente corrente.|
 |username|Nome dell'utente corrente.|
 |webnamespace|Nome del sito Web corrente. Questo parametro viene usato nel modello di modulo Web per garantire che i nomi delle classi siano univoci. Se il sito Web si trova nella directory radice del server Web, questo parametro di modello viene risolto nella directory radice del server Web.|
@@ -119,7 +119,7 @@ Nel file *.vstemplate* del modello di progetto includere l'attributo `ReplacePar
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Sostituire i parametri di un modello](how-to-substitute-parameters-in-a-template.md)
+- [Procedura: sostituire i parametri in un modelloHow to: Substitute parameters in a template](how-to-substitute-parameters-in-a-template.md)
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
-- [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Procedura: creare modelli di progettoHow to: Create project templates](../ide/how-to-create-project-templates.md)
 - [Riferimento allo schema di modello](../extensibility/visual-studio-template-schema-reference.md)

@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7347ba6bf599e34d9555f6acaeb03cf396a5855
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595566"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedura: modificare i tipi di carattere e i colori per l'editor in Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedura: modificare i tipi di carattere e i colori per l'editor in Visual StudioHow to: Change fonts and colors for the editor in Visual Studio
 
-Nell'editor del codice è possibile modificare il tipo di carattere predefinito, le dimensioni del carattere e i colori di sfondo e primo piano di diversi **elementi visualizzati** di tipo testo. Quando si modificano le impostazioni del carattere, tenere presenti le informazioni seguenti:
+È possibile modificare il tipo di carattere predefinito, regolare la dimensione del carattere e modificare i colori di primo piano e di sfondo per vari **elementi di visualizzazione** del testo nell'editor di codice. Quando si modificano le impostazioni del carattere, tenere presenti le informazioni seguenti:
 
 - Le impostazioni **Tipo di carattere** e **Dimensioni** sono globali per tutti gli elementi di testo in tutti gli editor di Visual Studio.
 
@@ -33,7 +33,7 @@ Nell'editor del codice è possibile modificare il tipo di carattere predefinito,
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Modificare il tipo di carattere, le dimensioni e i colori predefiniti
 
-1. Scegliere **Opzioni** dal menu **Strumenti**. In **ambiente**selezionare [tipi di carattere e colori](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+1. Scegliere **Opzioni** dal menu **Strumenti**. In **Ambiente**selezionare [Tipi di carattere e colori](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 2. In **Mostra impostazioni per** selezionare **Editor di testo**.
 

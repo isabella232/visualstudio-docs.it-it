@@ -7,16 +7,16 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Informazioni per gli amministratori su come risolvere il problema relativo alle sottoscrizioni sovrallocate
 ms.openlocfilehash: 6773196d914306b7e18fe31ce06cc0cd89783ffd
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78410275"
 ---
 # <a name="overallocated-subscriptions"></a>Sottoscrizioni sovrassegnate
 Talvolta gli ordini vengono modificati dopo che sono stati aggiunti dei sottoscrittori, con un conseguente numero di sottoscrizioni assegnate superiore alle licenze detenute dall'azienda. Questo processo è noto come "sovrallocazione".  
 
-Per visualizzare le allocazioni di sottoscrizione, fare clic sull'icona in alto a sinistra per aprire il riquadro allocazioni.  
+Per visualizzare le allocazioni di pedice, fare clic sull'icona superiore a sinistra per aprire il riquadro delle allocazioni.  
 
 > [!NOTE]
 > La sovrallocazione non è consentita nei programmi Open License.  Inoltre, altri programmi possono visualizzare queste informazioni nel portale in modo diverso.
@@ -24,7 +24,7 @@ Per visualizzare le allocazioni di sottoscrizione, fare clic sull'icona in alto 
 > [!div class="mx-imgBorder"]
 > ![Avviso di sottoscrizioni richieste in eccedenza](_img/over-claimed/over-claimed-alert.png)
 
-Si noti che la visualizzazione usa una barra con hash per indicare le sottoscrizioni sovraallocate.  Il numero di overallocazioni in tutti i tipi di sottoscrizione è incluso nella sezione Panoramica nella parte superiore e ogni livello di sottoscrizione Visualizza anche il proprio stato di allocazione.  
+Si noti che la visualizzazione utilizza una barra con hash per indicare le sottoscrizioni sovrassegnate.  Il numero di sovrassegnazioni in tutti i tipi di sottoscrizione è incluso nella sezione Panoramica nella parte superiore e ogni livello di sottoscrizione visualizza anche il proprio stato di allocazione.  
 
 ## <a name="resolve-overallocated-subscriptions"></a>Risolvere il problema di sovrallocazione di sottoscrizioni
 Esistono diversi modi per risolvere questo problema:
@@ -42,10 +42,10 @@ Se l'organizzazione dispone di un contratto Enterprise Agreement (EA), gli ammin
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Altre informazioni sulla [Gestione delle sottoscrizioni di Visual Studio con GitHub Enterprise](assign-github.md).
-- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .

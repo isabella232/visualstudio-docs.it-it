@@ -7,10 +7,10 @@ ms.date: 02/12/2020
 ms.topic: conceptual
 description: Altre informazioni sul vantaggio LinkedIn Learning incluso come parte della sottoscrizione LinkedIn Premium inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.openlocfilehash: f6c5206055835605ae529f1f07159611bcd6bf7d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "77278844"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio
@@ -39,17 +39,17 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
 
 7. Indicare quindi alcune informazioni personali per il profilo.  Indicare se si è uno studente o una studentessa e specificare la posizione, la società e il settore più recenti.
 
-8. In questo passaggio si ha la possibilità di identificare le proprie aree di interesse.  Per accelerare il processo di creazione dell'account, fare clic su **non ancora.  Sono aperto!**  È possibile identificare le aree di interesse in un secondo momento.
+8. In questo passaggio si ha la possibilità di identificare le proprie aree di interesse.  Per accelerare il processo di creazione dell'account, fai clic su **Non sei ancora sicuro.  Sono aperto!**  È possibile identificare le aree di interesse in un secondo momento.
 
 9. Quando è stato immesso l'indirizzo di posta elettronica, è stato ricevuto un messaggio contenente un codice di conferma.  Il mittente del messaggio è "Messaggi LinkedIn".  Se il messaggio non è disponibile nella posta in arrivo, controllare le cartelle della posta indesiderata.  Immettere il codice del messaggio e fare clic su **Verifica**.
 
-10. Se si vogliono importare i contatti dall'account di posta elettronica immesso in precedenza, è possibile farlo ora.  In caso contrario, fare clic su **Ignora**. Se si sceglie di ignorare questo passaggio, verrà chiesto di confermare la scelta.  Fare clic su **Sì**.
+10. Se si vogliono importare i contatti dall'account di posta elettronica immesso in precedenza, è possibile farlo ora.  In caso contrario, fare clic su **Ignora**. Se si sceglie di ignorare questo passaggio, verrà chiesto di confermare la scelta.  Fare clic su **Sì**.)
 
 11. Gli avvisi di offerte di lavoro consentono di ricevere notifiche relative a offerte di lavoro della propria area corrispondenti alle proprie caratteristiche professionali.  È possibile impostare un avviso ora o saltare questo passaggio e continuare la creazione dell'account.
 
 12. In base alle preferenze e a le informazioni personali fornite fino a questo punto, verrà visualizzata una selezione di collegamenti consigliati per iniziare a creare la propria rete.  È possibile scegliere di aggiungere collegamenti o ignorare questo passaggio.
 
-13. Per aggiungere una foto al profilo, fare clic su **Carica foto**.  In alternativa, è possibile ignorare questo passaggio.  È sempre possibile aggiungere una foto in un secondo momento.
+13. Per aggiungere una foto al profilo, fare clic su **Carica foto**.  In caso contrario è possibile ignorare questo passaggio.  È sempre possibile aggiungere una foto in un secondo momento.
 
 14. È possibile scaricare l'app LinkedIn nel telefono per accedere alla propria rete ovunque ci si trovi.  A tale scopo, è possibile inviare un collegamento al proprio telefono o scaricare direttamente l'app da App Store o da Google Play Store.  È anche possibile fare clic su **Avanti** per ignorare questo passaggio e scaricare l'app in seguito.
 
@@ -66,24 +66,24 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
    > [!div class="mx-imgBorder"]
    > ![Home page di LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png)
 
-## <a name="eligibility"></a>Eligibility
+## <a name="eligibility"></a>Idoneità
 
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL | 6 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, vendita al dettaglio, NFR<sup>1</sup> selezionato | 6 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Visual Studio Enterprise con GitHub Enterprise   | Vl | 6 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 mesi                                                            |No.  Disponibile solo per i nuovi sottoscrittori         |
-| Visual Studio Professional con GitHub Enterprise | VL | 3 mesi      | No.  Disponibile solo per i nuovi sottoscrittori         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  N/D         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              | N/D         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+| Visual Studio Professional con GitHub Enterprise | Vl | 3 mesi      | No.  Disponibile solo per i nuovi sottoscrittori         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  ND         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              | ND         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
 
-<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Escludi: Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT software & Services.*
+<sup>1</sup>  *Include: Non per la rivendita (NFR), Visual Studio Industry Partner (VSIP).  Esclude: Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  Software MCT & Servizi.*
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) invitati a passare a esplorare diverse opzioni per l'acquisto di Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>D: Rinnovando la sottoscrizione viene rinnovato anche il vantaggio LinkedIn Learning?
@@ -93,10 +93,10 @@ R: No, l'offerta LinkedIn Learning è disponibile a solo per i nuovi sottoscritt
 - Serve aiuto con LinkedIn Learning?  Vedere queste risorse:
   - Assistenza per l'[uso di LinkedIn Learning](https://www.linkedin.com/help/learning).
   - Supporto per domande di carattere generale su [LinkedIn](https://www.linkedin.com/help/linkedin) , ad esempio la creazione di account e profili e la gestione della rete.
-- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [il supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
-Scopri il resto degli eccezionali vantaggi offerti dalla tua sottoscrizione. Visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+Scopri il resto dei grandi vantaggi inclusi nel tuo abbonamento. Visita [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-Se non è già stato attivato il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione, visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul riquadro Azure nella categoria strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale Azure DevTest.
+Se non è già stato attivato il vantaggio del credito individuale [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) DevTest di Azure fornito con la sottoscrizione, visitare e fare clic sul riquadro Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale di Azure DevTest.If you haven't already activated the Azure DevTest individual credit that comes with your subscription, visit and click on the Azure tile in the Tools category to set up your Azure subscription and redeem your Azure DevTest individual credit.

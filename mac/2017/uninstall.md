@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
 ms.openlocfilehash: ad0be8546b88fbd01f54faf7eb00f71ddd6aa632
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "76892155"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Disinstallazione di Visual Studio per Mac
@@ -100,7 +100,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
 
-Può anche essere necessario rimuovere la directory seguente che contiene diversi file e cartelle di Xamarin. Tuttavia, prima di procedere è necessario tenere presente che questa directory contiene le chiavi di firma di Android. Per altre informazioni, vedere la sezione **[Disinstallazione di Android SDK e Java SDK](#uninstall-android-sdk-and-java-sdk)** :
+Può anche essere necessario rimuovere la directory seguente che contiene diversi file e cartelle di Xamarin. Tuttavia, prima di procedere è necessario tenere presente che questa directory contiene le chiavi di firma di Android. Per altre informazioni, vedere la sezione **[Disinstallazione di Android SDK e Java SDK](#uninstall-android-sdk-and-java-sdk)**:
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f33dd9b19297811597be406337d70392904e6e44
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596384"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Impostazioni predefinite di Visual Basic, Progetti, finestra di dialogo Opzioni
@@ -36,7 +36,7 @@ Imposta il valore predefinito del compilatore in modo da richiedere le conversio
 
  **Option Compare**
 
-Imposta il valore predefinito del compilatore per i confronti tra stringhe: binario (maiuscole/minuscole) o testo (senza distinzione tra maiuscole e minuscole). Per impostazione predefinita, **Option Compare** è impostato su **Binary**. Per altre informazioni, vedere [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+Imposta l'impostazione predefinita del compilatore per i confronti tra stringhe: binario (maiuscole/minuscole) o testo (senza distinzione tra maiuscole e minuscole). Per impostazione predefinita, **Option Compare** è impostato su **Binary**. Per altre informazioni, vedere [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
  **Option Infer**
 
@@ -44,4 +44,4 @@ Imposta il valore predefinito del compilatore per l'inferenza del tipo di variab
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Solutions and Projects](../../ide/solutions-and-projects-in-visual-studio.md) (Soluzioni e progetti)
+- [Soluzioni e progetti](../../ide/solutions-and-projects-in-visual-studio.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593603"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
@@ -31,19 +31,19 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 ## <a name="arguments"></a>Argomenti
 
-- *SolutionName*
+- *Solutionname*
 
   Percorso completo e nome del file di soluzione.
 
-- *ProjectName*
+- *Projectname*
 
   Percorso completo e nome del file di progetto.
 
-- `/Out` *OutputFileName*
+- `/Out`*OutputFilename*
 
-  Parametro facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
+  Facoltativa. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Compila ed esegue il progetto o la soluzione specificati in base alle impostazioni specificate per la configurazione della soluzione attiva. Questa opzione riduce a icona l'IDE durante l'esecuzione del progetto o della soluzione. Chiude l'IDE al termine dell'esecuzione del progetto o della soluzione.
 

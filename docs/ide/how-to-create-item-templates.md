@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 62004c5c96fa708f98ab49f4810ec2fc1c38eadc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594721"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
@@ -26,7 +26,7 @@ Questo argomento spiega come creare un modello di elemento usando l'**Esportazio
 
 1. Modificare il file del codice per indicare dove verrà applicata la sostituzione dei parametri. Per altre informazioni, vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).
 
-1. Nel menu **Progetto** scegliere**Esporta modello**.
+1. Scegliere **Esporta modello**dal menu **Progetto** .
 
 1. Nella pagina **Scegliere il tipo di modello** scegliere **Modello di elemento**, selezionare il progetto che contiene l'elemento e quindi scegliere **Avanti**.
 
@@ -42,7 +42,7 @@ Questo argomento spiega come creare un modello di elemento usando l'**Esportazio
 
 1. Chiudere e riaprire Visual Studio.
 
-1. Creare un nuovo progetto o aprire un progetto esistente, quindi scegliere **Progetto** > **Aggiungi nuovo elemento** o premere **CTRL**+**MAIUSC**+**A**.
+1. Creare un nuovo progetto o aprire un progetto esistente, quindi **scegliere** > **Aggiungi nuovo elemento** o premere **CTRL**+**Maiusc**+**A**.
 
    Il modello di elemento appare nella finestra di dialogo **Aggiungi nuovo elemento**. Se è stata aggiunta una descrizione nell'**Esportazione guidata modelli**, la descrizione viene visualizzata sul lato destro della finestra di dialogo.
 
@@ -78,12 +78,12 @@ La procedura guidata esegue la maggior parte delle operazioni richieste per crea
 
 1. Impostare il valore di testo dell'elemento su uno dei valori seguenti:
 
-    - Portale di
+    - Windows
     - Office
-    - Database di
+    - Database
     - Web
 
-Ad esempio: `<ProjectSubType>Database</ProjectSubType>`.
+Ad esempio `<ProjectSubType>Database</ProjectSubType>`.
 
 L'esempio seguente illustra un modello di elemento per i progetti **Office**.
 
@@ -113,13 +113,13 @@ In alcuni casi può essere utile creare manualmente un modello di elemento da ze
 
 3. Modificare il file del codice per indicare dove deve avvenire la sostituzione dei parametri, se necessaria. Per altre informazioni sulla sostituzione dei parametri, vedere [Procedura: Sostituire i parametri di un modello.](../ide/how-to-substitute-parameters-in-a-template.md)
 
-4. Creare un file XML e salvarlo con estensione *vstemplate* nella stessa directory del file dell'elemento del progetto.
+4. Creare un file XML e salvarlo con estensione *.vstemplate* nella stessa directory del file dell'elemento di progetto.
 
 5. Modificare il file XML con estensione *vstemplate* in modo da specificare i metadati del modello di elemento. Per altre informazioni, vedere [Riferimento allo schema di modello (estendibilità)](../extensibility/visual-studio-template-schema-reference.md) e l'esempio nella sezione precedente.
 
 6. Salvare e chiudere il file con estensione *vstemplate*.
 
-7. In **Esplora risorse** selezionare i file che si vuole includere nel modello. Fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a** > **Cartella compressa**. I file selezionati verranno compressi in un file con estensione *zip*.
+7. In **Esplora risorse** selezionare i file che si vuole includere nel modello. Fare clic con il pulsante destro del mouse sulla selezione e **scegliere Invia a** > **cartella compressa (compressa).** I file selezionati vengono compressi in un file *.zip.*
 
 ::: moniker range="vs-2017"
 
@@ -135,6 +135,6 @@ In alcuni casi può essere utile creare manualmente un modello di elemento da ze
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
+- [Creare modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
 - [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)
-- [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
+- [Informazioni di riferimento sullo schema dei modelli di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)

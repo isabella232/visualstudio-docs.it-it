@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593564"
 ---
 # <a name="services-page-project-designer"></a>Pagina Servizi, Progettazione progetti
@@ -31,7 +31,7 @@ Per accedere alla pagina **Servizi**, selezionare un nodo di progetto in **Esplo
 
 [Procedura: configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
  **Configurazione**
 
@@ -78,5 +78,5 @@ Apre la [finestra di dialogo Impostazioni avanzate per i servizi](../../ide/refe
 - [Servizi applicazioni client](/dotnet/framework/common-client-technologies/client-application-services)
 - [Finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md)
 - [Procedura: configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
-- [Pagina Compilazione, Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [Pagina Compila, Progettazione progetti (Visual Basic)Compile Page, Project Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Build Page, Project Designer (C#)](../../ide/reference/build-page-project-designer-csharp.md) (Pagina Compilazione, Progettazione progetti (C#))
