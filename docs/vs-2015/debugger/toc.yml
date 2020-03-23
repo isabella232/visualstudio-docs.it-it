@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: Connettersi a processi in esecuzione
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: Specificare file di simboli (PDB) e di origine
+    - name: Specifica di file di simboli (con estensione pdb) e di origine
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: Eseguire il debug di applicazioni a 64 bit
       href: debug-64-bit-applications.md
@@ -132,7 +132,7 @@
               href: how-to-debug-in-mixed-mode.md
             - name: Libreria di controlli Web (Codice gestito)
               href: web-control-library-managed-code.md
-        - name: Progetti console
+        - name: Progetti di console
           href: debugging-preparation-console-projects.md
         - name: Applicazioni Web ASP.NET
           href: debugging-preparation-aspnet-web-applications.md
@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: Ripristinare i comandi nascosti del debugger
       href: how-to-restore-hidden-debugger-commands.md
-- name: Remote Debugging
+- name: Debug remoto
   items:
-    - name: Remote Debugging
+    - name: Debug remoto
       href: remote-debugging.md
     - name: Configurare Windows Firewall per il debug remoto
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -410,7 +410,7 @@
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
                 - name: 'Codice di esempio di navigazione del debugger (Xaml e C#)'
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
-            - name: 'Attivare eventi di sospensione, di ripresa e in background per Windows Store'
+            - name: 'Attivare eventi di sospensione, ripresa e background per Windows Store'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
         - name: Prelettura del contenuto per le applicazioni Windows Store
           href: prefetch-content-for-windows-store-apps.md
@@ -424,7 +424,7 @@
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: Impostazioni consigliate delle proprietà
               href: managed-debugging-recommended-property-settings.md
-            - name: Applicazioni Windows Forms
+            - name: Applicazioni Windows Form
               href: debugging-preparation-windows-forms-applications.md
             - name: servizi Windows
               href: debugging-preparation-windows-services.md
@@ -628,9 +628,9 @@
               href: how-to-change-the-graphics-diagnostics-playback-machine.md
             - name: Usare Diagnostica della grafica con un dispositivo ARM
               href: how-to-use-graphics-diagnostics-with-an-arm-device.md
-        - name: Riferimenti
+        - name: Reference
           items:
-            - name: Riferimenti
+            - name: Reference
               href: reference-programmatic-capture.md
             - name: Classe VsgDbg
               items:
@@ -902,9 +902,9 @@
               href: how-to-search-for-a-process-in-processes-view.md
             - name: Visualizzare le proprietà del processo
               href: how-to-display-process-properties.md
-        - name: Visualizzazione Thread
+        - name: Visualizzazione thread
           items:
-            - name: Visualizzazione Thread
+            - name: Visualizzazione thread
               href: threads-view.md
             - name: Cercare un thread nella visualizzazione thread
               href: how-to-search-for-a-thread-in-threads-view.md

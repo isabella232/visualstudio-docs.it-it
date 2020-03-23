@@ -76,7 +76,7 @@
               href: analyzing-code-coverage-in-build-verification-tests.md
             - name: Risoluzione dei problemi di code coverage
               href: troubleshooting-code-coverage.md
-        - name: Uso di emulatori per isolare gli unit test di SharePoint 2010
+        - name: Utilizzo di emulatori per isolare gli unit test di SharePoint 2010
           href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
     - name: Usare l'automazione dell'interfaccia utente per testare il codice
       items:
@@ -100,7 +100,7 @@
           href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
         - name: Uso di Web browser diversi con test codificati dell'interfaccia utente
           href: using-different-web-browsers-with-coded-ui-tests.md
-        - name: Modifica di test codificati dell'interfaccia utente utilizzando l'editor di test codificato dell'interfaccia utente
+        - name: Modifica di test codificati dell'interfaccia utente con l'editor di test codificato dell'interfaccia utente
           href: editing-coded-ui-tests-using-the-coded-ui-test-editor.md
         - name: Analisi dei test codificati dell'interfaccia utente utilizzando i log dei test codificati dell'interfaccia utente
           href: analyzing-coded-ui-tests-using-coded-ui-test-logs.md
@@ -156,7 +156,7 @@
           items:
             - name: Creare ed eseguire unit test
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
-            - name: Unit test di una DLL C++
+            - name: Testing unità di una DLL di C++
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
             - name: 'Unit test di codice C#'
               href: unit-testing-visual-csharp-code-in-a-store-app.md

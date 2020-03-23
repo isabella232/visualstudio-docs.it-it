@@ -62,7 +62,7 @@
 ### [Contesto del documento](document-context.md)
 ### [Contesto di valutazione delle espressioni](expression-evaluation-context.md)
 ## [Attività di debug](debugging-tasks.md)
-### [Problemi di sicurezza](security-issues.md)
+### [Problemi relativi alla sicurezza](security-issues.md)
 ### [Avvio di un programma](launching-a-program.md)
 #### [Notifica della porta](notifying-the-port.md)
 #### [Collegamento dopo un avvio](attaching-after-a-launch.md)

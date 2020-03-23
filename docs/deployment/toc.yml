@@ -78,7 +78,7 @@
               href: localizing-clickonce-applications.md
             - name: Pubblicare un progetto dotato di impostazioni locali specifiche
               href: how-to-publish-a-project-that-has-a-specific-locale.md
-        - name: Sicurezza
+        - name: Security
           items:
             - name: Proteggere le applicazioni ClickOnce
               href: securing-clickonce-applications.md
@@ -256,7 +256,7 @@
               href: strings-element-bootstrapper.md
             - name: Elemento <Schedules> (programma di avvio automatico)
               href: schedules-element-bootstrapper.md
-- name: Riferimenti
+- name: Riferimento
   items:
     - name: Riferimenti di ClickOnce
       items:

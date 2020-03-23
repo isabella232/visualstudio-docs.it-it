@@ -40,7 +40,7 @@
           href: container-build.md
     - name: Risoluzione dei problemi
       href: troubleshooting-docker-errors.md
-    - name: Riferimento
+    - name: Reference
       items:
         - name: Proprietà di MSBuild per i progetti di contenitori
           href: container-msbuild-properties.md

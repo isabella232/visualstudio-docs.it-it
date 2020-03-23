@@ -34,9 +34,9 @@
   items:
     - name: Creare modelli per l'app
       href: create-models-for-your-app.md
-    - name: 'Diagrammi delle dipendenze: Riferimenti'
+    - name: 'Diagrammi delle dipendenze: riferimenti'
       href: layer-diagrams-reference.md
-    - name: 'Diagrammi delle dipendenze: Indicazioni'
+    - name: 'Diagrammi delle dipendenze: linee guida'
       href: layer-diagrams-guidelines.md
     - name: Condividere i modelli
       items:
@@ -221,7 +221,7 @@
           href: accessing-models-from-text-templates.md
         - name: Usare Visual Studio ModelBus in un modello di testo
           href: using-visual-studio-modelbus-in-a-text-template.md
-        - name: 'Procedura dettagliata: Eseguire il debug di un modello di testo che accede a un modello'
+        - name: 'Procedura dettagliata: Debug di un modello di testo che accede a un modello'
           href: walkthrough-debugging-a-text-template-that-accesses-a-model.md
         - name: 'Procedura dettagliata: Connettere un host a un processore di direttiva generato'
           href: walkthrough-connecting-a-host-to-a-generated-directive-processor.md

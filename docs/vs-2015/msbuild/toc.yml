@@ -100,13 +100,13 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: Usare caratteri XML riservati nei file di progetto
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: Concetti avanzati
+    - name: Concetti avanzati relativi
       items:
-        - name: Concetti avanzati
+        - name: Concetti avanzati relativi
           href: msbuild-advanced-concepts.md
-        - name: Invio in batch
+        - name: Batch
           items:
-            - name: Invio in batch
+            - name: Batch
               href: msbuild-batching.md
             - name: Metadati degli elementi nella suddivisione in batch delle attività
               href: item-metadata-in-task-batching.md
@@ -114,9 +114,9 @@
               href: item-metadata-in-target-batching.md
         - name: Trasformazioni
           href: msbuild-transforms.md
-        - name: Integrazione di Visual Studio
+        - name: Integrazione con Visual Studio
           items:
-            - name: Integrazione di Visual Studio
+            - name: Integrazione con Visual Studio
               href: visual-studio-integration-msbuild.md
             - name: Estendere il processo di compilazione di Visual Studio
               href: how-to-extend-the-visual-studio-build-process.md
@@ -124,9 +124,9 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Registrazione di estensioni di .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Creazione di più progetti in parallelo
+        - name: Compilazione di più progetti in parallelo
           items:
-            - name: Creazione di più progetti in parallelo
+            - name: Compilazione di più progetti in parallelo
               href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Utilizzo di più processori per la compilazione di progetti
               href: using-multiple-processors-to-build-projects.md
@@ -180,9 +180,9 @@
       items:
         - name: Riferimenti a MSBuild
           href: msbuild-reference.md
-        - name: Informazioni di riferimento sullo schema dei file di progetto
+        - name: Riferimenti dello schema del file di progetto
           items:
-            - name: Informazioni di riferimento sullo schema dei file di progetto
+            - name: Riferimenti dello schema del file di progetto
               href: msbuild-project-file-schema-reference.md
             - name: Elemento Choose (MSBuild)
               href: choose-element-msbuild.md
@@ -226,9 +226,9 @@
               href: usingtask-element-msbuild.md
             - name: Elemento When (MSBuild)
               href: when-element-msbuild.md
-        - name: Informazioni di riferimento sulle attività
+        - name: Riferimenti alle attività
           items:
-            - name: Informazioni di riferimento sulle attività
+            - name: Riferimenti alle attività
               href: msbuild-task-reference.md
             - name: Attività di Visual C++
               items:
@@ -392,7 +392,7 @@
           href: common-msbuild-project-properties.md
         - name: Elementi di progetto MSBuild comuni
           href: common-msbuild-project-items.md
-        - name: Informazioni di riferimento sulla riga di comando
+        - name: Riferimenti alla riga di comando
           href: msbuild-command-line-reference.md
         - name: File con estensione targets
           href: msbuild-dot-targets-files.md
@@ -408,9 +408,9 @@
               href: wpf-msbuild-reference.md
             - name: File con estensione targets
               href: wpf-dot-targets-files.md
-            - name: Informazioni di riferimento sulle attività
+            - name: Riferimenti alle attività
               items:
-                - name: Informazioni di riferimento sulle attività
+                - name: Riferimenti alle attività
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier
                   href: fileclassifier-task.md

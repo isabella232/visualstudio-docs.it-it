@@ -50,9 +50,9 @@
       items:
         - name: Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma
           href: visual-cpp-for-cross-platform-mobile-development.md
-        - name: Installare Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma
+        - name: Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma
           items:
-            - name: Installare Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma
+            - name: Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma
               href: install-visual-cpp-for-cross-platform-mobile-development.md
             - name: Install and Configure Tools to Build using iOS
               href: install-and-configure-tools-to-build-using-ios.md
@@ -64,7 +64,7 @@
           href: import-an-xcode-project.md
         - name: Sincronizzare le modifiche tra XCode e Visual Studio
           href: sync-changes-between-xcode-and-visual-studio.md
-        - name: Esempi di Sviluppo app per dispositivi mobili multipiattaforma
+        - name: Cross-Platform Mobile Development Examples
           href: cross-platform-mobile-development-examples.md
     - name: Sviluppare app per la piattaforma UWP (Universal Windows Platform)
       href: develop-apps-for-the-universal-windows-platform-uwp.md
@@ -72,7 +72,7 @@
       items:
         - name: Emulatore di Visual Studio per Android
           href: visual-studio-emulator-for-android.md
-        - name: Requisiti di sistema per Visual Studio Emulator for Android
+        - name: System requirements for the Visual Studio Emulator for Android
           href: system-requirements-for-the-visual-studio-emulator-for-android.md
         - name: Risoluzione dei problemi di Visual Studio Emulatore per Android
           href: troubleshooting-the-visual-studio-emulator-for-android.md

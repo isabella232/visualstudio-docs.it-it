@@ -63,7 +63,7 @@
                 - name: Introduzione a Visual Basic
                   tocHref: /visualstudio/get-started/visual-basic/
                   topicHref: /visualstudio/get-started/visual-basic/
-            - name: Estendibilità
+            - name: Extensibility
               tocHref: /visualstudio/extensibility/
               topicHref: /visualstudio/extensibility/index
               items:
@@ -74,7 +74,7 @@
                   tocHref: /visualstudio/extensibility/debugger/
                   topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
                   items:
-                    - name: Riferimento
+                    - name: Reference
                       tocHref: /visualstudio/extensibility/debugger/reference/
                       topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
                 - name: Linee guida sull'esperienza utente
@@ -89,7 +89,7 @@
             - name: Python
               tocHref: /visualstudio/python/
               topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio
-            - name: R
+            - name: V
               tocHref: /visualstudio/rtvs/
               topicHref: /visualstudio/rtvs/index
             - name: Office e SharePoint

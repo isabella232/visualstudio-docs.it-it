@@ -138,43 +138,43 @@
           href: editor-imports.md
         - name: Supporto di EditorConfig
           href: supporting-editorconfig.md
-        - name: 'Procedura dettagliata: Collegamento di un tipo di contenuto a un''estensione'
+        - name: 'Procedura dettagliata: collegamento di un tipo di contenuto a un''estensione'
           href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-        - name: 'Procedura dettagliata: Creazione di un glifo del margine'
+        - name: 'Procedura dettagliata: creazione di un glifo di margine'
           href: walkthrough-creating-a-margin-glyph.md
-        - name: 'Procedura dettagliata: Personalizzazione della visualizzazione di testo'
+        - name: 'Procedura dettagliata: personalizzazione della visualizzazione di testo'
           href: walkthrough-customizing-the-text-view.md
-        - name: 'Procedura dettagliata: Creazione di un''area di controllo di visualizzazione, di comandi e impostazioni (guide di colonne)'
+        - name: 'Procedura dettagliata: creazione di un''area di controllo di visualizzazione, di comandi e impostazioni (guide di colonne)'
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-        - name: 'Procedura dettagliata: Evidenziazione del testo'
+        - name: 'Procedura dettagliata: evidenziazione del testo'
           href: walkthrough-highlighting-text.md
-        - name: 'Procedura dettagliata: struttura'
+        - name: 'Procedura dettagliata: definizione della struttura'
           href: walkthrough-outlining.md
-        - name: 'Procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe'
+        - name: 'Procedura dettagliata: visualizzazione della corrispondenza parentesi graffe'
           href: walkthrough-displaying-matching-braces.md
-        - name: 'Procedura dettagliata: Visualizzazione delle descrizioni comando di InformazioniBase'
+        - name: 'Procedura dettagliata: visualizzazione delle descrizioni comando di InformazioniBase'
           href: walkthrough-displaying-quickinfo-tooltips.md
-        - name: 'Procedura dettagliata: Visualizzazione della funzionalità di supporto alla firma'
+        - name: 'Procedura dettagliata: visualizzazione della Guida per la firma'
           href: walkthrough-displaying-signature-help.md
-        - name: 'Procedura dettagliata: Visualizzazione del completamento di istruzioni'
+        - name: 'Procedura dettagliata: visualizzazione del completamento istruzioni'
           href: walkthrough-displaying-statement-completion.md
-        - name: 'Procedura dettagliata: Implementazione di frammenti di codice'
+        - name: 'Procedura dettagliata: implementazione di frammenti di codice'
           href: walkthrough-implementing-code-snippets.md
-        - name: 'Procedura dettagliata: Visualizzazione dei suggerimenti delle icone lampadina'
+        - name: 'Procedura dettagliata: visualizzazione dei suggerimenti delle icone lampadina'
           href: walkthrough-displaying-light-bulb-suggestions.md
-        - name: 'Procedura dettagliata: Uso di un comando della shell con un''estensione dell''editor'
+        - name: 'Procedura dettagliata: uso di un comando della shell con un''estensione dell''editor'
           href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-        - name: 'Procedura dettagliata: Uso di un tasto di scelta rapida con un''estensione dell''editor'
+        - name: 'Procedura dettagliata: uso di una combinazione di tasti con un''estensione dell''editor'
           href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-        - name: 'Procedura dettagliata: Accesso all''oggetto DTE da un''estensione dell''editor'
+        - name: 'Procedura dettagliata: accesso all''oggetto DTE da un''estensione dell''editor'
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
     - name: Creare finestre di progettazione ed editor personalizzati
       items:
         - name: Creare finestre di progettazione ed editor personalizzati
           href: creating-custom-editors-and-designers.md
-        - name: 'Procedura dettagliata: Creazione di un editor personalizzato'
+        - name: 'Procedura dettagliata: creazione di un editor personalizzato'
           href: walkthrough-creating-a-custom-editor.md
-        - name: 'Procedura dettagliata: Aggiunta di funzionalità in un editor personalizzato'
+        - name: 'Procedura dettagliata: aggiunta di funzionalità in un editor personalizzato'
           href: walkthrough-adding-features-to-a-custom-editor.md
         - name: Inizializzazione della finestra di progettazione e configurazione dei metadati
           href: designer-initialization-and-metadata-configuration.md
@@ -388,13 +388,13 @@
       items:
         - name: Creazione di una pagina iniziale personalizzata
           href: creating-a-custom-start-page.md
-        - name: 'Procedura dettagliata: Aggiunta di codice XAML personalizzato nella pagina iniziale'
+        - name: 'Procedura dettagliata: aggiunta di codice XAML personalizzato nella pagina iniziale'
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: Aggiunta di un controllo utente nella pagina iniziale
           href: adding-user-control-to-the-start-page.md
         - name: Aggiunta di comandi di Visual Studio in una pagina iniziale
           href: adding-visual-studio-commands-to-a-start-page.md
-        - name: 'Procedura dettagliata: Salvataggio delle impostazioni utente in una pagina iniziale'
+        - name: 'Procedura dettagliata: salvataggio delle impostazioni utente in una pagina iniziale'
           href: walkthrough-saving-user-settings-on-a-start-page.md
         - name: Distribuzione di pagine iniziali personalizzate
           href: deploying-custom-start-pages.md
@@ -442,7 +442,7 @@
       href: ux-guidelines/layout-for-visual-studio.md
     - name: Notifiche e stato
       href: ux-guidelines/notifications-and-progress-for-visual-studio.md
-    - name: Animations
+    - name: Animazioni
       href: ux-guidelines/animations-for-visual-studio.md
     - name: Strumenti di valutazione
       href: ux-guidelines/evaluation-tools-for-visual-studio.md
@@ -494,7 +494,7 @@
       href: vsix-project-template.md
     - name: Introduzione al modello di progetto VSIX
       href: getting-started-with-the-vsix-project-template.md
-    - name: 'Procedura dettagliata: Pubblicazione di un''estensione di Visual Studio'
+    - name: 'Procedura dettagliata: pubblicazione di un''estensione di Visual Studio'
       href: walkthrough-publishing-a-visual-studio-extension.md
     - name: 'Procedura dettagliata: Pubblicazione di un''estensione di Visual Studio tramite la riga di comando'
       href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
@@ -828,11 +828,11 @@
       href: creating-a-software-development-kit.md
     - name: SDK o pacchetto NuGet
       href: nuget-versus-sdk-references.md
-    - name: 'Procedura dettagliata: Creazione di un SDK con C# o Visual Basic'
+    - name: 'Procedura dettagliata: creazione di un SDK con C# o Visual Basic'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-    - name: 'Procedura dettagliata: Creazione di un SDK con C++'
+    - name: 'Procedura dettagliata: creazione di un SDK con C++'
       href: walkthrough-creating-an-sdk-using-cpp.md
-    - name: 'Procedura dettagliata: Creazione di un SDK con JavaScript'
+    - name: 'Procedura dettagliata: creazione di un SDK con JavaScript'
       href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Estendibilità della piattaforma del compilatore .NET ("Roslyn")
   items:
