@@ -7,10 +7,10 @@ ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.openlocfilehash: 4d676f6109c97ae883473a35721f9207e72a6da4
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68872357"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Aprire più soluzioni o istanze di Visual Studio per Mac
@@ -29,7 +29,7 @@ Per aprire una seconda istanza dell'ambiente di sviluppo integrato (IDE), fare c
 
 Per aprire una seconda soluzione insieme alla prima, procedere come segue:
 
-1. Con la prima soluzione già aperta, selezionare **File** > **Apri**.
+1. Con la prima soluzione già aperta, selezionare**Apri** **file** > .
 2. Sfogliare il file system per individuare la soluzione esistente.
 3. Selezionare il file con estensione **sln** e quindi **Opzioni**:
 
@@ -43,7 +43,7 @@ Per aprire una seconda soluzione insieme alla prima, procedere come segue:
 
 In alternativa, se la soluzione è stata aperta di recente, è possibile usare la procedura seguente:
 
-1. Passare a **File** > **Soluzioni recenti**.
+1. Passare a **File** > **soluzioni recenti**.
 
     ![Screenshot del menu Soluzioni recenti](media/open-multiple-solutions-image2.png)
 

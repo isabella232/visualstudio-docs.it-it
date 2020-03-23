@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d38aed17d7fdaa694c8c5753705b28b0390dedfc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72652138"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Informazioni generali sugli strumenti di linguaggio specifico di dominio
@@ -68,7 +68,7 @@ Strumenti Domain-Specific Language (Strumenti DSL), ospitati in [!INCLUDE[vsprvs
 ## <a name="validation-in-dsl-tools"></a>Convalida in Strumenti DSL
  DSL è dotato di un livello di convalida che verifica che il modello di dominio soddisfi i requisiti di base per la generazione di codice. Quando si crea un linguaggio specifico di dominio personalizzato, in genere si aggiunge una convalida personalizzata che esprima le regole della logica di business. Per altre informazioni sulla convalida personalizzata, vedere [Convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md).
 
- È consigliabile convalidare spesso il linguaggio specifico di dominio durante la progettazione. Se il linguaggio specifico di dominio presenta errori di convalida, non è possibile generare codice sorgente. È possibile eseguire il processo di generazione di codice sorgente dai modelli facendo clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni. Ogni volta che si modifica la definizione del linguaggio, assicurarsi anche di **trasformare tutti i modelli**. Per altre informazioni, vedere [procedura: creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ È consigliabile convalidare spesso il linguaggio specifico di dominio durante la progettazione. Se il linguaggio specifico di dominio presenta errori di convalida, non è possibile generare codice sorgente. È possibile eseguire il processo di generazione di codice sorgente dai modelli facendo clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni. Ogni volta che si modifica la definizione del linguaggio, assicurarsi anche di **trasformare tutti i modelli**. Per ulteriori informazioni, vedere [Procedura: creare una soluzione](../modeling/how-to-create-a-domain-specific-language-solution.md)di linguaggio specifico di dominio .
 
 ## <a name="customization-of-dsl-tools"></a>Personalizzazione di Strumenti DSL
  È possibile offrire codice aggiuntivo per perfezionare il comportamento del modello e definire vincoli per il linguaggio. Se necessario, è possibile apportare modifiche significative modificando i modelli di testo.
@@ -79,4 +79,4 @@ Strumenti Domain-Specific Language (Strumenti DSL), ospitati in [!INCLUDE[vsprvs
  Quando si compila e si esegue la soluzione di Strumenti DSL [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], una seconda istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] visualizza l'aspetto del linguaggio specifico di dominio per l'utente del linguaggio. Dopo aver verificato che tutto funzioni correttamente, è possibile distribuire il file `.vsix` disponibile nella cartella di compilazione del progetto DslPackage. È possibile usare questo file per installare DSL come estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in altri computer.  Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Vedere anche
- [L'istanza sperimentale](../extensibility/the-experimental-instance.md) [strumenti Domain-Specific Language Glossario](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ Glossario degli strumenti di linguaggio specifico del dominio [dell'istanza sperimentaleThe Experimental Instance](../extensibility/the-experimental-instance.md) [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

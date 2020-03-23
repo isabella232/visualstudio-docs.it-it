@@ -14,23 +14,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605960"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Finestra di dialogo Opzioni: Editor di testo \> JavaScript/TypeScript \> Rilevamento di errori con Lint
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Finestra di dialogo \> Opzioni: Editor \> di testo JavaScript/TypeScript Linting
 
-Usare la pagina **Linting** della finestra di dialogo **Opzioni** per impostare le opzioni per l'analisi del codice nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere **Strumenti** > **Opzioni** e quindi espandere **Editor di testo** > **JavaScript/TypeScript** > **Rilevamento di errori con Lint**.
+Usare la pagina **Linting** della finestra di dialogo **Opzioni** per impostare le opzioni per l'analisi del codice nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere**Opzioni** **degli** > strumenti , quindi espandere **Editor** > di testo**JavaScript/TypeScript** > **Linting**.
 
 ## <a name="eslint-settings"></a>Impostazioni ESLint
 
 Queste opzioni permettono di abilitare l'analisi codice JavaScript e TypeScript statica e scegliere i file da analizzare. Per altre informazioni su ESLint, vedere [ESLint.org](https://eslint.org/).
 
-### <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
-|Opzione|DESCRIZIONE|
+|Opzione|Descrizione|
 |------------|-----------------|
 |**Abilita ESLint**|Quando questa opzione è selezionata, l'editor del codice consente l'analisi statica del codice.|
 |**Esegui il lint di tutti i file inclusi nel progetto, anche se chiusi**|Quando questa opzione è selezionata, i file chiusi vengono analizzati, a meno che le informazioni di diagnostica non vengano generate solo per i file aperti.|

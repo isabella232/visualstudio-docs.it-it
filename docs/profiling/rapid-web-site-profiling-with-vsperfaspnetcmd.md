@@ -12,15 +12,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771692"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilatura rapida di sito Web con VSPerfASPNETCmd
 
-Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilmente la profilatura di applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. **VSPerfASPNETCmd** è il metodo preferito per la profilatura con il profiler autonomo. Per altre informazioni, vedere [Procedura: Installare il profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md).
+Lo strumento da riga di comando **VSPerfASPNETCmd** consente di profilare [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] facilmente le applicazioni Web. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. **VSPerfASPNETCmd** è il metodo preferito per la profilatura con il profiler autonomo. Per altre informazioni, vedere [Procedura: Installare il profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
 > Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -42,7 +42,7 @@ Per profilare un'applicazione Web di [!INCLUDE[vstecasp](../code-quality/include
 
  **vsperfaspnetcmd**  *websiteUrl*
 
- Un esempio di *websiteUrl* ospitato su server locale potrebbe essere *http://localhost/MySite/default.aspx* . Un esempio di sito esterno è *http://www.contoso.com* . Per altre informazioni, vedere gli URL di esempio nella sezione [Per profilare un sito Web senza aprire un progetto in Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+ Un esempio di *websiteUrl* ospitato su server locale potrebbe essere *http://localhost/MySite/default.aspx*. Un esempio di sito *http://www.contoso.com*esterno è . Per altre informazioni, vedere gli URL di esempio nella sezione [Per profilare un sito Web senza aprire un progetto in Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Per raccogliere dati di intervallo dettagliati tramite il metodo di strumentazione
 
@@ -50,7 +50,7 @@ Usare la riga di comando seguente per raccogliere dati di intervallo dettagliati
 
 **vsperfaspnetcmd /trace**  *websiteUrl*
 
-Se si vogliono profilare file con estensione *dll* compilati staticamente nell'applicazione Web, è necessario instrumentare i file tramite lo strumento da riga di comando [VSInstr](../profiling/vsinstr.md). Il comando vsperfaspnetcmd /trace includerà i dati dai file instrumentati.
+Se si desidera profilare la compilazione statica . *dll* nell'applicazione Web, è necessario instrumentare i file utilizzando lo strumento della riga di comando [VSInstr.](../profiling/vsinstr.md) Il comando vsperfaspnetcmd /trace includerà i dati dai file instrumentati.
 
 ## <a name="to-collect-net-memory-data"></a>Per raccogliere dati di memoria .NET
 
@@ -64,14 +64,14 @@ L'opzione **/Memory** consente di raccogliere dati sull'allocazione di oggetti n
 
  È inoltre possibile usare l'opzione **/Trace** per includere informazioni di intervallo dettagliate con i dati di memoria .NET:
 
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Per raccogliere dati di interazione tra livelli
 
 > [!WARNING]
 > I dati di profilatura dell'interazione tra livelli possono essere raccolti usando qualsiasi edizione di Visual Studio, ma possono essere visualizzati solo in Visual Studio Enterprise.
 >
-> Per raccogliere dati TIP in Windows 8 o Windows Server 2012, è necessario usare l'opzione di strumentazione ( **/trace**).
+> Per raccogliere dati TIP in Windows 8 o Windows Server 2012, è necessario usare l'opzione di strumentazione (**/trace**).
 
 Per raccogliere dati di interazione tra livelli con dati di campionamento:
 
@@ -83,7 +83,7 @@ Per raccogliere dati di interazione tra livelli con dati di strumentazione:
 
 Per raccogliere dati di interazione tra livelli con dati di memoria .NET:
 
-**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>Usare l'opzione /NoWait
 
@@ -91,7 +91,7 @@ Per impostazione predefinita, il prompt dei comandi non restituisce il controllo
 
 Per iniziare la profilatura:
 
-**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
 
 Per terminare la profilatura:
 
@@ -103,5 +103,5 @@ Per terminare la profilatura:
 
 |Opzione|Descrizione|
 |------------|-----------------|
-|**/Output:** `VspFile`|Per impostazione predefinita, il file dei dati di profilatura (con estensione *vsp*) viene creato nella directory corrente con il nome file **PerformanceReport.vsp**. Usare l'opzione /output per specificare un percorso o un nome file diverso o entrambi.|
+|**/Output:**`VspFile`|Per impostazione predefinita, il file dei dati di profilatura (con estensione *vsp*) viene creato nella directory corrente con il nome file **PerformanceReport.vsp**. Usare l'opzione /output per specificare un percorso o un nome file diverso o entrambi.|
 |**/PackSymbols:Off**|Per impostazione predefinita, VsPerfASPNETCmd incorpora simboli (nomi di funzione e di parametro e così via) nel file con estensione *vsp*. L'incorporamento di simboli può aumentare notevolmente le dimensioni del file di dati di profilatura. Se quando si analizzano i dati si ha accesso ai file con estensione *pdb* contenenti i simboli, usare l'opzione /packsymbols:off per disabilitare l'incorporamento dei simboli.|

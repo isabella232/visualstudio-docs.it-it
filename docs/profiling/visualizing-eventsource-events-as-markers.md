@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422099"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64811543"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizzare eventi EventSource come marcatori
 Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource come marcatori ed è possibile controllare la modalità di visualizzazione dei marcatori. Per visualizzare i marcatori EventSource, registrare il GUID del provider ETW mediante la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Il visualizzatore di concorrenza usa convenzioni predefinite per rappresentare gli eventi EventSource come [marcatori di flag](../profiling/flag-markers.md), [marcatori di span](../profiling/span-markers.md) e [marcatori di messaggi](../profiling/message-markers.md). È possibile personalizzare la modalità di visualizzazione degli eventi EventSource aggiungendo campi personalizzati agli eventi. Per altre informazioni sui marcatori, vedere [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md). Per altre informazioni sugli eventi EventSource, vedere <xref:System.Diagnostics.Tracing>.
@@ -29,7 +29,7 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 
 3. In tutti gli altri casi, l'evento viene considerato un messaggio.
 
-### <a name="importance"></a>Importanza
+### <a name="importance"></a>priorità
  La tabella seguente illustra il mapping tra il livello di evento e l'importanza del marcatore.
 
 |Livello ETW|Importanza del visualizzatore di concorrenza|
@@ -37,18 +37,18 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 |win:LogAlways|Normale|
 |win:Critical|Critico|
 |win:Error|Critico|
-|win:Warning|High|
+|win:Warning|Alto|
 |win:Informational|Normale|
-|win:Verbose|Bassa|
-|Superiore a win:verbose|Bassa|
+|win:Verbose|Basso|
+|Superiore a win:verbose|Basso|
 
-### <a name="series-name"></a>Nome serie
+### <a name="series-name"></a>Nome della serie
  Il nome dell'attività dell'evento viene usato per il nome della serie. Il nome della serie è vuoto se è non stata definita alcuna attività per l'evento.
 
 ### <a name="category"></a>Category
  Se il livello è win:Critical o win:Error, la categoria è Avviso (-1). In caso contrario, la categoria è quella predefinita (0).
 
-### <a name="text"></a>Testo
+### <a name="text"></a>Text
  Se è stato definito un messaggio di testo formattato come printf-type per l'evento, viene visualizzato come descrizione del marcatore. In caso contrario, la descrizione è il nome dell'evento e il valore di ogni campo Payload.
 
 ## <a name="customize-visualization-of-eventsource-events"></a>Personalizzare la visualizzazione degli eventi EventSource
@@ -59,32 +59,32 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 
 |Valore cvType|Tipo di marcatore risultante|
 |------------------|---------------------------|
-|0|Messaggio|
+|0|Message|
 |1|Inizio sezione span|
 |2|Fine sezione span|
 |3|Flag|
-|Tutti gli altri valori|Messaggio|
+|Tutti gli altri valori|Message|
 
-### <a name="importance"></a>Importanza
+### <a name="importance"></a>priorità
  È possibile usare il campo `cvImportance`, un byte, per controllare l'impostazione dell'importanza per un evento EventSource. È tuttavia consigliabile controllare l'importanza visualizzata di un evento usando il relativo livello.
 
 |Valore cvImportance|Importanza del visualizzatore di concorrenza|
 |------------------------|---------------------------------------|
 |0|Normale|
 |1|Critico|
-|2|High|
-|3|High|
+|2|Alto|
+|3|Alto|
 |4|Normale|
-|5|Bassa|
-|Tutti gli altri valori|Bassa|
+|5|Basso|
+|Tutti gli altri valori|Basso|
 
-### <a name="series-name"></a>Nome serie
+### <a name="series-name"></a>Nome della serie
  Usare il campo evento `cvSeries`, una stringa, per controllare il nome della serie assegnato dal visualizzatore di concorrenza a un evento EventSource.
 
 ### <a name="category"></a>Category
  Usare il campo `cvCategory`, un byte, per controllare la categoria assegnata dal visualizzatore di concorrenza a un evento EventSource.
 
-### <a name="text"></a>Testo
+### <a name="text"></a>Text
  Usare il campo `cvTextW`, una stringa, per controllare la descrizione assegnata dal visualizzatore di concorrenza a un evento EventSource.
 
 ### <a name="spanid"></a>SpanID
@@ -94,4 +94,4 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 > L'uso di SpanID per annidare sezioni span, consentirne la parziale sovrapposizione nello stesso thread o consentirne l'inizio in un thread e la fine in un altro non è supportato.
 
 ## <a name="see-also"></a>Vedere anche
-- [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md)
+- [Indicatori del visualizzatore di concorrenzaConcurrency visualizer markers](../profiling/concurrency-visualizer-markers.md)

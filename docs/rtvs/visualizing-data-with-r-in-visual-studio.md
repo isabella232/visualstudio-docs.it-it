@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62811192"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Creare tracciati visivi dei dati con R
@@ -23,7 +23,7 @@ Il tracciato è una parte fondamentale del flusso di lavoro di un data scientist
 
 |   |   |
 |---|---|
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) sui tracciati con R (2m 02s). |
+| ![icona della telecamera per un video](../install/media/video-icon.png "Guardare un video") | [Guardare un video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) sui tracciati con R (2m 02s). |
 
 ## <a name="the-plot-window"></a>Finestra dei tracciati
 
@@ -43,9 +43,9 @@ In tutti i casi il ridimensionamento di una finestra dei tracciati esegue nuovam
 
 ## <a name="plot-window-commands"></a>Comandi della finestra dei tracciati
 
-La barra degli strumenti della finestra dei tracciati contiene i comandi applicabili, la maggior parte dei quali sono disponibili anche tramite il menu **R Tools** > **Tracciati**.
+La barra degli strumenti della finestra di stampa contiene i comandi applicabili, la maggior parte dei quali sono disponibili anche tramite il menu > **Grafici** **strumenti R.**
 
-| Button | Comando | Description |
+| Pulsante | Comando | Descrizione |
 | --- | --- | --- |
 | ![Pulsante Nuova finestra dei tracciati](media/plotting-toolbar-01-new-plot-window.png) | Nuova finestra dei tracciati | Crea una finestra dei tracciati separata con la propria cronologia. Vedere [Più finestre dei tracciati](#multiple-plot-windows). |
 | ![Pulsante di attivazione della finestra dei tracciati](media/plotting-toolbar-02-activate-plot-window.png) | Attiva finestra dei tracciati | Imposta la finestra dei tracciati corrente come finestra attiva, in modo che i comandi `plot` successivi vengano sottoposti a rendering per quella finestra. Vedere [Più finestre dei tracciati](#multiple-plot-windows). Vedere [Più finestre dei tracciati](#multiple-plot-windows). |
@@ -62,17 +62,17 @@ La barra degli strumenti della finestra dei tracciati contiene i comandi applica
 
 Poiché gli esperti di dati spesso lavorano con molti tracciati provenienti da set di dati diversi, RTVS consente di creare il numero necessario di finestre dei tracciati indipendenti. Le finestre possono essere disposte come si preferisce all'interno del frame di Visual Studio o anche all'esterno del frame. (Vedere [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) per informazioni generali su ancoraggio e ridimensionamento delle finestre.)
 
-Creare una nuova finestra dei tracciati con il pulsante della barra degli strumenti o **R Tools** > **Tracciati** > **Nuova finestra dei tracciati**. La nuova finestra dei tracciati diventa la finestra *attiva*, in cui viene eseguito il rendering dei nuovi tracciati. Per modificare la finestra attiva, accedere a essa e selezionare il pulsante della barra degli strumenti **Attiva finestra dei tracciati** o **R Tools** > **Tracciati** > **Attiva finestra dei tracciati**.
+Creare una nuova finestra di stampa utilizzando il pulsante della barra degli strumenti o **R Strumenti** > **stampa** > **nuova finestra di stampa**. La nuova finestra dei tracciati diventa la finestra *attiva*, in cui viene eseguito il rendering dei nuovi tracciati. Per modificare la finestra attiva, accedere a essa e selezionare il pulsante della barra degli strumenti **Attiva finestra dei tracciati** o **R Tools** > **Tracciati** > **Attiva finestra dei tracciati**.
 
 I tracciati sono anch'essi oggetti indipendenti, quindi è possibile copiarli o spostarli tra le finestre dei tracciati usando il mouse per trascinare la selezione oppure i comandi **Copia**, **Taglia** e **Incolla** disponibili nel menu **Modifica** e nel menu di scelta rapida visualizzato facendo clic con il pulsante destro del mouse.
 
-Il comportamento predefinito per il trascinamento della selezione è copia; per spostare, trascinare tenendo premuto **MAIUSC**.
+Il comportamento predefinito per il trascinamento della selezione è copy; per spostarsi, trascinare e rilasciare tenendo premuto il **tasto Maiusc.**
 
 ## <a name="plot-history"></a>Cronologia dei tracciati
 
-I comandi dei tracciati vengono mantenuti nella cronologia dei tracciati per ogni finestra, assicurando il mantenimento di tutti i tracciati all'interno di una sessione. Per esplorare la cronologia, usare i pulsanti freccia nella barra degli strumenti della finestra dei tracciati o **CTRL**+**ALT**+**F11** e **CTRL**+**ALT**+**F12**. È anche possibile rimuovere singoli tracciati o cancellare tutti i tracciati dalla finestra usando i pulsanti della barra degli strumenti o i comandi di menu **R Tools** > **Tracciati**.
+I comandi dei tracciati vengono mantenuti nella cronologia dei tracciati per ogni finestra, assicurando il mantenimento di tutti i tracciati all'interno di una sessione. Per spostarsi nella cronologia, utilizzare i pulsanti freccia sulla barra degli strumenti della finestra di stampa oppure **CTRL**+**Alt**+**F11** e **Ctrl**+**Alt**+**F12**. È inoltre possibile rimuovere singoli grafici o cancellare nuovamente tutti i grafici dalla finestra utilizzando i pulsanti della barra degli strumenti o i comandi del menu**Strumenti** **R.** > 
 
-Per visualizzare l'intera raccolta di tracciati, aprire la finestra cronologia dei tracciati usando il pulsante della barra degli strumenti o **R Tools** > **Tracciati** > **Finestra cronologia dei tracciati**.
+Per visualizzare l'intera raccolta di grafici, aprire la finestra della cronologia di stampa utilizzando il pulsante della barra degli strumenti o**la finestra di cronologia**di stampa dei**grafici** >  **Strumenti** > R .
 Nella cronologia è disponibile un elenco di miniature per i tracciati che sono stati visualizzati in tale finestra, raggruppate in base alle diverse finestre dei tracciati (o ai dispositivi). Con i pulsanti dello zoom presenti sulla barra degli strumenti è possibile modificare la dimensione delle miniature.
 
 ![Finestra cronologia dei tracciati](media/plotting-plot-history-window.png)

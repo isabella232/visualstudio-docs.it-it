@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62840666"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Usare la finestra interattiva Node.js
@@ -28,7 +28,7 @@ Per aprire la finestra interattiva, fare clic con il pulsante destro del mouse s
 
 ![Finestra interattiva Node.js nel menu di scelta rapida Progetto](../javascript/media/interactivewindow-open-from-project.png)
 
-I tasti di scelta rapida predefiniti per aprire la finestra interattiva di Node.js sono **[CTRL] + K, N**. In alternativa è possibile aprire la finestra dalla barra degli strumenti scegliendo **Visualizza** > **Finestre** > **Finestra interattiva Node.js**.
+I tasti di scelta rapida predefiniti per aprire la finestra interattiva Node.js sono **[CTRL]- K, N**. In alternativa, è possibile aprire la finestra dalla barra degli strumenti scegliendo **Visualizza** > **finestra interattiva Node.js**di**Windows** > .
 
 ## <a name="use-the-repl"></a>Usare REPL
 
@@ -36,7 +36,7 @@ Dopo l'apertura della finestra è possibile immettere comandi.
 
 ![Finestra interattiva Node.js](../javascript/media/interactivewindow.png)
 
-La finestra interattiva dispone di vari comandi predefiniti, che iniziano con un punto per distinguerli da qualsiasi funzione JavaScript dichiarata. Sono supportati i comandi seguenti:
+La finestra interattiva dispone di vari comandi predefiniti, che iniziano con un punto per distinguerli da qualsiasi funzione JavaScript dichiarata. Supporta i comandi seguenti:
 
 **.cls, .clear** Cancella il contenuto della finestra dell'editor, lasciando intatti la cronologia e il contesto di esecuzione.
 

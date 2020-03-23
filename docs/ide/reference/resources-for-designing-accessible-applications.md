@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "70107842"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Risorse per la progettazione di applicazioni accessibili
@@ -38,7 +38,7 @@ Altre informazioni sulle tecnologie che supportano la progettazione di applicazi
 
 * **Understanding SAMI 1.0** (Informazioni su SAMI 1.0) La tecnologia Microsoft Synchronized Accessible Media Interchange (SAMI) consente agli sviluppatori di acquisire contenuti audio per gli elementi multimediali del PC. Per altre informazioni, vedere [Understanding SAMI 1.0](/previous-versions/windows/desktop/dnacc/understanding-sami-1.0) (Informazioni su SAMI 1.0).
 
-## <a name="windows-applications"></a>Windows (applicazioni)
+## <a name="windows-applications"></a>applicazioni Windows
 
 * **[Procedura dettagliata: Creazione di un'applicazione Windows ad Accesso facilitato](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** L'articolo offre istruzioni dettagliate per includere i cinque requisiti di accessibilità per il logo "Certified for Windows" in un'applicazione Windows di esempio.
 
@@ -54,7 +54,7 @@ Altre informazioni sulle tecnologie che supportano la progettazione di applicazi
 
 ### <a name="third-party-resources"></a>Risorse di terze parti
 
-- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** Questo sito Web offre le linee guida e le tecniche per lo sviluppo di siti Web accessibili. Per altre informazioni, vedere [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** Questo sito Web offre le linee guida e le tecniche per lo sviluppo di siti Web accessibili. Per ulteriori informazioni, vedere [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Vedere anche
 

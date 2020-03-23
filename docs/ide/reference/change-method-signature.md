@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68711254"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactoring con modifica della firma di un metodo
@@ -33,9 +33,9 @@ Questo refactoring si applica a:
 
 **Quando:** si vuole spostare o rimuovere un parametro di un metodo usato in varie posizioni.
 
-**Perché?:** è possibile rimuovere e riordinare manualmente i parametri, per poi cercare tutte le chiamate al metodo e modificarle una alla volta, ma si tratta di un processo soggetto a errori.  Questo strumento di refactoring eseguirà l'attività automaticamente.
+**Motivo:** è possibile rimuovere e riordinare manualmente i parametri, per poi cercare tutte le chiamate al metodo e modificarle una alla volta, ma si tratta di un processo soggetto a errori.  Questo strumento di refactoring eseguirà l'attività automaticamente.
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Evidenziare o posizionare il cursore del testo all'interno del nome del metodo da modificare o un uno dei relativi utilizzi:
 
@@ -51,7 +51,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+V**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring > Rimuovi parametri**.
       - Selezionare **Modifica > Refactoring > Riordina parametri**.
@@ -61,14 +61,14 @@ Questo refactoring si applica a:
 
    ![Finestra di dialogo Cambia firma](media/changesignature-dialog-cs.png)
 
-   | Button | DESCRIZIONE
+   | Pulsante | Descrizione
    | ------ | ---
    | **Su/Giù** | Consente di spostare il parametro selezionato verso l'alto e verso il basso nell'elenco
    | **Rimuovi** | Consente di rimuovere il parametro selezionato dall'elenco
-   | **Recupera** | Consente di ripristinare il parametro selezionato e barrato nell'elenco
+   | **Ripristina** | Consente di ripristinare il parametro selezionato e barrato nell'elenco
 
    > [!TIP]
-   > Usare la casella di controllo **Anteprima modifiche riferimento** per [controllare il risultato in anteprima](../../ide/preview-changes.md) prima di eseguire il commit.
+   > Utilizzare la casella di controllo **Anteprima modifiche riferimento** per visualizzare il [risultato](../../ide/preview-changes.md) prima di eseguirne il commit.
 
 4. Al termine, fare clic sul pulsante **OK** per apportare le modifiche.
 
@@ -83,4 +83,4 @@ Questo refactoring si applica a:
 ## <a name="see-also"></a>Vedere anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
-- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
+- [Anteprima delle modifiche](../../ide/preview-changes.md)

@@ -9,10 +9,10 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67587022"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Annidamento file in Esplora soluzioni
@@ -50,19 +50,19 @@ Si esamineranno ora il nodo **dependentFileProviders** e i suoi nodi figlio. Ogn
 
 * **extensionToExtension**: usare questo tipo di regola per annidare *file.js* in *file.ts*
 
-* **fileSuffixToExtension**: usare questo tipo di regola per annidare *file-vsdoc.js* in *file.ts*
+* **fileSuffixToExtension**: usare questo tipo di regola per annidare *file-vsdoc.js* in *file.js*
 
 * **addedExtension**: usare questo tipo di regola per annidare *file.html.css* in *file.html*
 
 * **pathSegment**: usare questo tipo di regola per annidare *jquery.min.js* in *jquery.js*
 
-* **allExtensions**: usare questo tipo di regola per annidare *file.* * in *file.js*
+* **allExtensions**: usare questo tipo di regola per annidare *file.** in *file.js*
 
 * **fileToFile**: usare questo tipo di regola per annidare *bower.json* in *.bowerrc*
 
 ### <a name="the-extensiontoextension-provider"></a>Provider extensionToExtension
 
-Questo provider consente di definire regole di annidamento file usando estensioni file specifiche. Si consideri l'esempio seguente:
+Questo provider consente di definire regole di annidamento file usando estensioni file specifiche. Prendere in considerazione gli esempi seguenti:
 
 ![Regole dell'esempio extentionToExtension](media/filenesting_extensiontoextension.png) ![Effetto dell'esempio extentionToExtension](media/filenesting_extensiontoextension_effect.png)
 
@@ -76,7 +76,7 @@ Questo provider consente di definire regole di annidamento file usando estension
 
 ### <a name="the-filesuffixtoextension-provider"></a>Provider fileSuffixToExtension
 
-Questo provider ha lo stesso funzionamento di **extensionToExtension**, con l'unica differenza che la regola esamina il suffisso del file anziché la sola l'estensione. Si consideri l'esempio seguente:
+Questo provider ha lo stesso funzionamento di **extensionToExtension**, con l'unica differenza che la regola esamina il suffisso del file anziché la sola l'estensione. Prendere in considerazione gli esempi seguenti:
 
 ![Regole dell'esempio fileSuffixToExtension](media/filenesting_filesuffixtoextension.png) ![Effetto dell'esempio fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
 
@@ -88,7 +88,7 @@ Questo provider ha lo stesso funzionamento di **extensionToExtension**, con l'un
 
 Questo provider annida i file con un'estensione aggiuntiva nel file senza l'estensione aggiuntiva. L'estensione aggiuntiva può essere visualizzata solo alla fine del nome file completo.
 
-Si consideri l'esempio seguente:
+Prendere in considerazione gli esempi seguenti:
 
 ![Regole dell'esempio addedExtension](media/filenesting_addedextension.png) ![Effetto dell'esempio addedExtension](media/filenesting_addedextension_effect.png)
 
@@ -101,7 +101,7 @@ Si consideri l'esempio seguente:
 
 Questo provider annida i file con un'estensione aggiuntiva in un file senza estensione aggiuntiva. L'estensione aggiuntiva può essere visualizzata solo al centro del nome file completo.
 
-Si consideri l'esempio seguente:
+Prendere in considerazione gli esempi seguenti:
 
 ![Regole dell'esempio pathSegment](media/filenesting_pathsegment.png) ![Effetto dell'esempio pathSegment](media/filenesting_pathsegment_effect.png)
 
@@ -126,7 +126,7 @@ Si consideri l'esempio seguente:
 
 ### <a name="the-allextensions-provider"></a>Provider allExtensions
 
-Questo provider consente di definire regole di annidamento file per i file con qualsiasi estensione ma con lo stesso nome file di base. Si consideri l'esempio seguente:
+Questo provider consente di definire regole di annidamento file per i file con qualsiasi estensione ma con lo stesso nome file di base. Prendere in considerazione gli esempi seguenti:
 
 ![Regole dell'esempio allExtensions](media/filenesting_allextensions.png) ![Effetto dell'esempio allExtensions](media/filenesting_allextensions_effect.png)
 
@@ -134,7 +134,7 @@ Questo provider consente di definire regole di annidamento file per i file con q
 
 ### <a name="the-filetofile-provider"></a>Provider fileToFile
 
-Questo provider consente di definire regole di annidamento file in base a nomi file interi. Si consideri l'esempio seguente:
+Questo provider consente di definire regole di annidamento file in base a nomi file interi. Prendere in considerazione gli esempi seguenti:
 
 ![Regole dell'esempio fileToFile](media/filenesting_filetofile.png) ![Effetto dell'esempio fileToFile](media/filenesting_filetofile_effect.png)
 
@@ -160,7 +160,7 @@ L'ordine è importante anche per le sezioni delle regole stesse, non solo per i 
 
 Le impostazioni specifiche di progetto e di soluzione vengono combinate con le impostazioni di Visual Studio attive. Anche se, ad esempio, il file di impostazioni specifiche del progetto è vuoto, **Esplora soluzioni** effettua comunque l'annidamento file. Il comportamento di annidamento deriva dalle impostazioni specifiche della soluzione o dalle impostazioni di Visual Studio. L'ordine di precedenza per l'unione delle impostazioni di annidamento file è: Visual Studio > Soluzione > Progetto.
 
-È possibile impostare Visual Studio in modo che ignori le impostazioni specifiche di progetto e di soluzione, anche se sono presenti file nel disco, abilitando l'opzione **Ignora impostazioni della soluzione e del progetto** in **Strumenti**  >  **Opzioni** > **ASP.NET Core** > **Annidamento file**.
+È possibile impostare Visual Studio in modo che ignori le impostazioni specifiche di progetto e di soluzione, anche se sono presenti file nel disco, abilitando l'opzione **Ignora impostazioni della soluzione e del progetto** in **Strumenti** > **Opzioni** > **ASP.NET Core** > **Annidamento file**.
 
 È possibile attivare l'impostazione opposta, indicando a Visual Studio di usare *solo* le impostazioni specifiche della soluzione o del progetto, impostando il nodo **radice** su **true**. Visual Studio interromperà l'unione dei file a tale livello e non lo combinerà più con i file in posizione più alta nella gerarchia.
 
@@ -181,4 +181,4 @@ Le impostazioni specifiche di progetto e di soluzione vengono combinate con le i
 ## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Soluzioni e progetti in Visual Studio](solutions-and-projects-in-visual-studio.md)
+- [Soluzioni e progetti in Visual StudioSolutions and projects in Visual Studio](solutions-and-projects-in-visual-studio.md)

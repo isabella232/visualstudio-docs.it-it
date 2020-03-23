@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778089"
 ---
 # <a name="understand-performance-collection-methods"></a>Informazioni sui metodi di raccolta delle prestazioni
@@ -24,7 +24,7 @@ ms.locfileid: "74778089"
 Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è possibile usare per raccogliere dati sulle prestazioni. In questo argomento vengono descritti i diversi metodi e vengono suggeriti alcuni scenari in cui può risultare appropriata la raccolta dei dati con un particolare metodo.
 
 > [!NOTE]
-> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -32,11 +32,11 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
 |[Strumentazione](#instrumentation)|Raccoglie informazioni dettagliate sugli intervalli per ogni chiamata di funzione.|
 |[Concorrenza](#concurrency)|Raccoglie informazioni dettagliate sulle applicazioni multithread.|
 |[Memoria .NET](#net-memory)|Raccoglie informazioni dettagliate sull'allocazione e la Garbage Collection della memoria .NET.|
-|[Interazioni tra livelli](#tier-interaction)|Raccoglie informazioni sulle chiamate di funzione ADO.NET sincrone a un database di SQL Server.<br /><br /> I dati di profilatura dell'interazione tra livelli possono essere raccolti usando qualsiasi edizione di Visual Studio, ma possono essere visualizzati solo in Visual Studio Enterprise.|
+|[Interazione tra livelli](#tier-interaction)|Raccoglie informazioni sulle chiamate di funzione ADO.NET sincrone a un database di SQL Server.<br /><br /> I dati di profilatura dell'interazione tra livelli possono essere raccolti usando qualsiasi edizione di Visual Studio, ma possono essere visualizzati solo in Visual Studio Enterprise.|
 
 Usando alcuni metodi di profilatura, è anche possibile raccogliere dati aggiuntivi, ad esempio i contatori delle prestazioni di hardware e software. Per altre informazioni, vedere [Raccogliere dati aggiuntivi relativi alle prestazioni](../profiling/collecting-additional-performance-data.md).
 
-## <a name="sampling"></a>Campionamento
+## <a name="sampling"></a>campionamento
 
 Il metodo di profilatura di campionamento raccoglie dati statistici sulle operazioni eseguite da un'applicazione durante l'esecuzione di una profilatura. Il metodo di campionamento è leggero e ha un impatto minimo sull'esecuzione dei metodi dell'applicazione.
 
@@ -80,7 +80,7 @@ Il metodo di strumentazione inserisce codice in un file binario che acquisisce i
 
 [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)
 
-## <a name="concurrency"></a>concorrenza
+## <a name="concurrency"></a>Concorrenza
 
 La profilatura della concorrenza raccoglie informazioni sulle applicazioni multithread. La profilatura dei conflitti di risorse raccoglie informazioni dettagliate sullo stack di chiamate ogni volta che thread concorrenti sono obbligati ad attendere l'accesso a una risorsa condivisa. La visualizzazione della concorrenza raccoglie inoltre informazioni più generali sulla modalità di interazione dell'applicazione multithread con se stessa, l'hardware, il sistema operativo e altri processi nel computer host:
 
@@ -92,7 +92,7 @@ La profilatura della concorrenza raccoglie informazioni sulle applicazioni multi
 
 [Raccogliere dati di concorrenza di thread e processi](../profiling/collecting-thread-and-process-concurrency-data.md)
 
-[Visualizzazioni dei dati su conflitti tra risorse](../profiling/resource-contention-data-views.md)
+[Visualizzazioni dei dati sui conflitti di risorse](../profiling/resource-contention-data-views.md)
 
 [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)
 
@@ -128,9 +128,9 @@ Dati di interazione tra livelli raccolti dagli strumenti di profilatura
 
 [Raccogliere dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md)
 
-[Visualizzazioni Interazioni tra livelli](../profiling/tier-interaction-views.md)
+[Visualizzazioni delle interazioni tra livelli](../profiling/tier-interaction-views.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura: raccogliere dati sulle prestazioni per un sito web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
-[Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)
+[Procedura: Raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+Guida per principianti alla profilatura delle prestazioniHow to: Collect performance data for a web site[Beginner's guide to performance profiling](../profiling/beginners-guide-to-performance-profiling.md)

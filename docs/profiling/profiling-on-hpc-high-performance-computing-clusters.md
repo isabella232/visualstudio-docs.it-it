@@ -21,10 +21,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772120"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Eseguire la profilatura su cluster HPC (High Performance Computing)
@@ -47,7 +47,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
     1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:`*%HeadNode%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
@@ -69,9 +69,9 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
    - Per profilare un progetto attualmente aperto in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], selezionare l'opzione **Uno o più progetti disponibili** e quindi selezionare il nome del progetto dall'elenco.
 
-   - Per profilare un file binario non incluso in un progetto aperto, selezionare l'opzione **Eseguibile (file EXE)** .
+   - Per profilare un file binario non incluso in un progetto aperto, selezionare l'opzione **Eseguibile (file EXE)**.
 
-4. Scegliere **Avanti**.
+4. Fare clic su **Avanti**.
 
 5. Nella terza pagina della procedura guidata:
 
@@ -83,7 +83,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
     - In **Percorso di distribuzione** specificare il percorso della directory usata dal server HPC per la gestione temporanea di immagini per la distribuzione.
 
-6. Scegliere **Avanti**.
+6. Fare clic su **Avanti**.
 
 7. Nella quarta pagina della procedura guidata:
 
@@ -97,13 +97,13 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
          Per profilare il processo o i processi eseguiti su un nodo specifico nel cluster HPC, selezionare l'opzione **Esegui profilatura su nodo** e quindi selezionare il nodo nell'elenco a discesa.
 
-8. Scegliere **Avanti**.
+8. Fare clic su **Avanti**.
 
 9. Nella quinta pagina della procedura guidata è possibile scegliere di avviare immediatamente il profiler e il processo di profilatura oppure di avviare la profilatura in un secondo momento tramite Esplora prestazioni.
 
     - Selezionare **Avvia profilatura al termine della procedura guidata** per avviare la profilatura immediatamente oppure deselezionare la casella di controllo per avviare la profilatura manualmente.
 
-10. Scegliere **Fine**.
+10. Fare clic su **Fine**.
 
 ## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Impostare le proprietà di profilatura HPC tramite le pagine delle proprietà della sessione di prestazioni
 
@@ -125,7 +125,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 ### <a name="hpc-launch-properties"></a>Proprietà avvio HPC
 
-|proprietà|Descrizione|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Nodo head**|Specifica il computer che funge da nodo head HPC nell'esecuzione della profilatura.|
 |**Numero di processi**|Specifica il numero di istanze dell'applicazione da eseguire nell'applicazione profilata.|
@@ -136,11 +136,11 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 ### <a name="advanced-properties"></a>Proprietà avanzate
 
-| proprietà | Descrizione |
+| Proprietà | Descrizione |
 |---------------------------------------| - |
-| **Nome progetto** | Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] corrente. |
+| **Nome del progetto** | Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] corrente. |
 | **Esegui pulizia all'arresto del profiler** | Se il valore è true, rimuove i file binari distribuiti alla directory di esecuzione. I file e le directory creati dal programma utente non vengono rimossi in questo passaggio. Se la directory di esecuzione e la directory di distribuzione sono state create dall'IDE, l'IDE stesso tenterà di rimuoverle, a meno che non contengano file non distribuiti dall'IDE. |
-| **File aggiuntivi da distribuire** | Specifica un elenco di file aggiuntivi separati da punto e virgola da distribuire sul nodo di calcolo. È possibile fare clic sul pulsante con i puntini di sospensione ( **...** ) per selezionare più file usando una finestra di dialogo. |
+| **File aggiuntivi da distribuire** | Specifica un elenco di file aggiuntivi separati da punto e virgola da distribuire sul nodo di calcolo. È possibile fare clic sul pulsante con i puntini di sospensione (**...**) per selezionare più file usando una finestra di dialogo. |
 | **Comando Mpiexec** | Specifica l'applicazione che avvia l'applicazione MPI. Il valore predefinito è **mpiexec.exe**. |
 | **Argomenti Mpiexec** | Specifica gli argomenti da passare al comando mpiexec.exe. |
 | **Nodi richiesti nel cluster** | Specifica il numero di nodi nel cluster su cui eseguire l'applicazione. |

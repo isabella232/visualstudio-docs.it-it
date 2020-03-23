@@ -14,21 +14,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605926"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opzioni, Editor di testo, JavaScript, Progetto
 
-Usare la pagina **Progetto** della finestra di dialogo **Opzioni** per specificare le opzioni di progetto JavaScript e TypeScript nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere **Strumenti** > **Opzioni** e quindi espandere **Editor di testo** > **JavaScript/TypeScript** > **Progetto**.
+Usare la pagina **Progetto** della finestra di dialogo **Opzioni** per specificare le opzioni di progetto JavaScript e TypeScript nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere**Opzioni** **degli strumenti** > , quindi espandere**Progetto****JavaScript/TypeScript** >  **dell'editor** > di testo.
 
 ## <a name="project-analysis-options"></a>Opzioni di analisi progetti
 
 Queste opzioni determinano come l'editor analizza i progetti, genera report di diagnostica e suggerisce miglioramenti. Selezionare o deselezionare le opzioni per specificare come l'editor gestisce queste situazioni.
 
-### <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 - **Analizza solo i progetti che contengono file aperti nell'editor**
 - **Restituisci dati di diagnostica solo per i file aperti nell'editor**
@@ -42,7 +42,7 @@ Queste opzioni consentono di scegliere se visualizzare progetti virtuali quando 
 
 Queste opzioni determinano se i file TypeScript che non fanno parte del progetto vengono compilati automaticamente. Selezionare la casella di controllo e quindi scegliere il tipo di generazione del codice da usare.
 
-### <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 - **Usa la generazione del codice AMD per moduli che non fanno parte di un progetto**
 - **Usa la generazione del codice CommonJS per moduli che non fanno parte di un progetto**
@@ -58,12 +58,12 @@ Queste opzioni consentono di selezionare la versione di ECMAScript per i file ch
 
 Queste opzioni determinano il modo in cui l'editor gestisce i file TypeScript che non fanno parte di un progetto.
 
-### <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
-|Opzione|DESCRIZIONE|
+|Opzione|Descrizione|
 |------------|-----------------|
 |**Framework React**|Quando questa opzione è selezionata, l'editor del codice genera un file con estensione *js*.|
-|**Preserve**|Quando questa opzione è selezionata, l'editor del codice mantiene JSX come parte dell'output e genera un file con estensione *jsx*.|
+|**Preservare**|Quando questa opzione è selezionata, l'editor del codice mantiene JSX come parte dell'output e genera un file con estensione *jsx*.|
 
 ## <a name="see-also"></a>Vedere anche
 

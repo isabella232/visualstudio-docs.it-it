@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72985175"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
@@ -44,7 +44,7 @@ Per usare un modello, selezionare il modello desiderato, specificare un nome per
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Domanda: In che modo Visual Studio individua i modelli di elementi da offrire?
 
-Risposta: Il file di progetto di Visual Studio ( *.pyproj*) contiene un identificatore del tipo di progetto che lo contrassegna come progetto Python. Visual Studio usa questo identificatore di tipo per mostrare solo i modelli di elementi appropriati per il tipo di progetto. In questo modo, Visual Studio può fornire un set completo di modelli di elementi per numerosi tipi di progetti senza che sia necessario che l'utente li esamini tutti ogni volta.
+Risposta: Il file di progetto di Visual Studio (con estensione *pyproj*) contiene un identificatore del tipo di progetto che lo contrassegna come progetto Python. Visual Studio usa questo identificatore di tipo per mostrare solo i modelli di elementi appropriati per il tipo di progetto. In questo modo, Visual Studio può fornire un set completo di modelli di elementi per numerosi tipi di progetti senza che sia necessario che l'utente li esamini tutti ogni volta.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Passaggio 3-2: Rendere disponibili file statici dall'app
 
@@ -56,9 +56,9 @@ In ogni caso è possibile organizzare i file in *static* come si vuole.
 
 ### <a name="use-a-static-file-in-a-template"></a>Usare un file statico in un modello
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **HelloFlask** nel progetto di Visual Studio, selezionare **Aggiungi** > **Nuova cartella** e assegnare alla cartella il nome `static`.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla cartella `static` **HelloFlask** nel progetto di Visual Studio, scegliere **Aggiungi** > nuova**cartella**e denominarla .
 
-1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata selezionare il modello **Foglio di stile**, assegnare al file il nome `site.css` e selezionare **OK**. Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
+1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata, selezionare `site.css`il modello Foglio di **stile,** assegnare un nome al file e scegliere **OK**. Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
 
     ![Struttura di file statici come visualizzato in Esplora soluzioni](media/flask/step03-static-file-structure.png)
 
@@ -119,7 +119,7 @@ Risposta: È possibile aggiungere altri file CSS, JavaScript e HTML nella cartel
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Domanda: Come si gestiscono le variabili di URL e i parametri di query in un'API?
 
-Risposta: Vedere la risposta al passaggio 1-4 per [Domanda: Come funziona Flask con route di URL e parametri di query variabili?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Risposta: Vedere la risposta nel passaggio 1-4 per [la domanda: Come funziona Flask con percorsi URL variabili e parametri](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables) di query?
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Passaggio 3-3: Aggiungere una pagina all'app
 
@@ -168,7 +168,7 @@ I passaggi seguenti aggiungono una pagina "About" al progetto "HelloFlask", nonc
     <div><a href="about">About</a></div>
     ```
 
-1. Salvare tutti i file con il comando di menu **File** > **Salva tutto** oppure premere **CTRL**+**MAIUSC**+**S**. Tecnicamente, questo passaggio non è necessario in quanto eseguendo il progetto in Visual Studio i file vengono salvati automaticamente. Ciononostante, si tratta di un comando utile da conoscere.
+1. Salvare tutti i file utilizzando il comando di menu **Salva** > **tutto** file o semplicemente premere **CTRL**+**Maiusc**+**S**. Tecnicamente, questo passaggio non è necessario in quanto eseguendo il progetto in Visual Studio i file vengono salvati automaticamente. Ciononostante, si tratta di un comando utile da conoscere.
 
 1. Eseguire il progetto per osservare i risultati e controllare lo spostamento tra le pagine. Al termine, arrestare l'app.
 
@@ -188,7 +188,7 @@ Il sistema di modelli di Flask (Jinja per impostazione predefinita) offre due mo
 
 In entrambi i casi `<template_path>` è relativo alla cartella *templates* dell'app (è consentito anche l'uso di `../` o `./`).
 
-Un modello di base delinea i *blocchi* usando i tag `{% block <block_name> %}` e `{% endblock %}`. Se un modello di riferimento usa quindi tag con lo stesso nome di blocco, il contenuto del blocco esegue l'override di quello del modello di base.
+Un modello di base `{% block <block_name> %}` delinea `{% endblock %}` i *blocchi* utilizzando i tag e . Se un modello di riferimento usa quindi tag con lo stesso nome di blocco, il contenuto del blocco esegue l'override di quello del modello di base.
 
 I passaggi seguenti illustrano l'ereditarietà:
 

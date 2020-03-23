@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 088fe9871b54e69b015ffdc9dcdaf23de3d98e0e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747752"
 ---
 # <a name="set-current-stack-frame-command"></a>Comando Imposta stack frame corrente
@@ -29,7 +29,7 @@ Consente di impostare uno stack frame specifico.
 Debug.SetCurrentStackFrame index
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `index`
 
 Obbligatorio. Seleziona uno stack frame in base all'indice.
@@ -42,7 +42,7 @@ Obbligatorio. Seleziona uno stack frame in base all'indice.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bf503cff7d8de2c00a93385113de05de00059390
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62956810"
 ---
 # <a name="use-pylint-to-check-python-code"></a>Usare PyLint per controllare il codice Python
@@ -50,11 +50,11 @@ Ad esempio, per eliminare gli avvisi relativi a "DocString mancante" illustrati 
    pylint --generate-rcfile > .pylintrc
    ```
 
-1. In Esplora soluzioni di Visual Studio fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** > **Elemento esistente**, passare al nuovo file con estensione *pylintrc*, selezionarlo e quindi scegliere **Aggiungi**.
+1. In Esplora soluzioni di Visual Studio fare clic con il pulsante destro del mouse sul progetto, **scegliere Aggiungi** > **elemento esistente**, passare al nuovo file con estensione *pylintrc* , selezionarlo e scegliere **Aggiungi**.
 
 1. Aprire il file per la modifica, che include diverse opzioni disponibili per l'uso. Per disabilitare un avviso, individuare la sezione `[MESSAGES CONTROL]` e quindi l'impostazione `disable` in tale sezione. È presente una lunga stringa di messaggi specifici, a cui è possibile aggiungere qualsiasi avviso. In questo esempio, aggiungere `,missing-docstring` (inclusa la virgola di delimitazione).
 
 1. Salvare il file con estensione *pylintrc* ed eseguire di nuovo PyLint per verificare che gli avvisi siano soppressi.
 
 > [!Tip]
-> Per usare un file con estensione *pylintrc* da una condivisione di rete, creare una variabile di ambiente denominata `PYLINTRC` con il valore del nome file nella condivisione di rete con un percorso UNC o una lettera di unità mappata. Ad esempio `PYLINTRC=\\myshare\python\.pylintrc`.
+> Per usare un file con estensione *pylintrc* da una condivisione di rete, creare una variabile di ambiente denominata `PYLINTRC` con il valore del nome file nella condivisione di rete con un percorso UNC o una lettera di unità mappata. Ad esempio: `PYLINTRC=\\myshare\python\.pylintrc`.

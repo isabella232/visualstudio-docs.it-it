@@ -7,10 +7,10 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691294"
 ---
 # <a name="refactoring"></a>Refactoring
@@ -42,7 +42,7 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 * Effettuare un refactoring (ad esempio impostare come inline una variabile temporanea)
 * Generare codice (ad esempio introdurre una variabile locale)
 
-È possibile applicare le azioni rapide usando le icone a forma di lampadina ![icona lampadina](media/quick-actions-light-bulb-icon.png) o di cacciavite ![icona cacciavite](media/quick-actions-screwdriver-icon.png) oppure premendo **Opzione (⌥)** +**Invio** quando il cursore si trova su una riga di codice per il quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/quick-actions-error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
+Le azioni rapide possono essere ![applicate utilizzando](media/quick-actions-light-bulb-icon.png) l'icona ![dell'icona](media/quick-actions-screwdriver-icon.png) della lampadina lampadina o l'icona del cacciavite a cacciavite, oppure premendo **l'opzione**+**(-)Invio** quando il cursore si trova su una riga di codice per la quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/quick-actions-error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
 
 È possibile che fornitori terzi offrano diagnostiche e suggerimenti personalizzati per qualsiasi linguaggio, ad esempio includendoli in SDK: le lampadine di Visual Studio si illumineranno in base a tali regole.
 
@@ -57,7 +57,7 @@ L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di co
 
 - Le lampadine e i cacciavite vengono visualizzati nel margine sinistro dell'editor quando si sposta il punto di inserimento in una riga di codice per cui è disponibile un'azione rapida.
 
-- Premere **Opzione (⌥)** +**Invio** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
+- Premere **Opzione (-),**+**Immettere** un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
 
 ![Visualizzare le voci di contesto](media/refactoring-context-action.png)
 

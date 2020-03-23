@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957861"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Passaggio 5: Autenticare gli utenti in Django
 
-**Passaggio precedente: [Usare il modello di progetto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Passaggio precedente: [Usare il modello Progetto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-Poiché l'autenticazione è un'esigenza comune per le app Web, il modello "Progetto Web Django" include un flusso di autenticazione di base. Il modello "Progetto Web Django di sondaggi", presentato nel passaggio 6 di questa esercitazione include lo stesso flusso. Quando si usa uno dei modelli di progetto Django, Visual Studio include tutti i moduli necessari per l'autenticazione nel file *settings.py* del progetto Django.
+Poiché l'autenticazione è un'esigenza comune per le app Web, il modello "Progetto Web Django" include un flusso di autenticazione di base. (Il modello "Polls Django Web Project" descritto nel passaggio 6 di questa esercitazione include anche lo stesso flusso.) Quando si utilizza uno qualsiasi dei modelli di progetto Django, Visual Studio include tutti i moduli necessari per l'autenticazione nel *settings.py*del progetto Django.
 
 In questo passaggio viene descritto come:
 
@@ -35,7 +35,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
 1. Se non si sono ancora seguite le istruzioni contenute nel file *readme.html* all'interno della radice del progetto per creare un utente con privilegi avanzati (amministratore), farlo ora.
 
-1. Eseguire l'app da Visual Studio tramite **Debug** > **Avvia debug** (**F5**). Quando l'app viene visualizzata nel browser, osservare che l'opzione di **accesso** viene visualizzata nell'angolo in alto a destra della barra di spostamento.
+1. Eseguire l'app da Visual Studio usando **Debug** > di**avvio** del debug (**F5**). Quando l'app viene visualizzata nel browser, osservare che l'opzione di **accesso** viene visualizzata nell'angolo in alto a destra della barra di spostamento.
 
     ![Controllo di accesso nella pagina dell'app Progetto Web Django](media/django/step05-login-control.png)
 
@@ -204,7 +204,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
 1. Al termine, arrestare il server ed eseguire di nuovo il commit delle modifiche nel controllo del codice sorgente.
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Domanda: Qual è lo scopo del tag {% csrf_token %} visualizzato negli elementi \<form\>?
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Domanda: Qual è lo scopo del tag {% csrf_token %} visualizzato negli elementi \<form\>?
 
 Risposta: Il tag `{% csrf_token %}` include la [protezione da richieste intersito false (crsf, cross-site request forgery)](https://docs.djangoproject.com/en/2.0/ref/csrf/) predefinita di Django (documentazione di Django). Questo tag viene aggiunto in genere a qualsiasi elemento che prevede metodi di richiesta POST, PUT o DELETE, ad esempio un modulo. La funzione di rendering del modello (`render`) inserisce quindi la protezione necessaria.
 
@@ -216,4 +216,4 @@ Risposta: Il tag `{% csrf_token %}` include la [protezione da richieste intersit
 ## <a name="go-deeper"></a>Approfondimento
 
 - [User authentication in Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (Autenticazione utente in Django) (docs.djangoproject.com)
-- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62840838"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
@@ -22,7 +22,7 @@ ms.locfileid: "62840838"
 In questa breve introduzione all'editor di codice di Visual Studio viene illustrato in che modo Visual Studio semplifica la scrittura, la navigazione e la comprensione del codice.
 
 > [!TIP]
-> Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio.
+> Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio.
 
 Questo articolo presuppone una certa familiarità con lo sviluppo di JavaScript. Se non è questo il caso, è consigliabile vedere prima l'esercitazione [Creare un progetto Node.js e un'app Express in Visual Studio](../javascript/tutorial-nodejs.md).
 
@@ -30,7 +30,7 @@ Questo articolo presuppone una certa familiarità con lo sviluppo di JavaScript.
 
 È possibile usare l'IDE per aggiungere nuovi file al progetto.
 
-1. Con il progetto aperto in Visual Studio, fare clic con il pulsante destro del mouse su una cartella o sul nodo del progetto in Esplora soluzioni (riquadro a destra) e scegliere **Aggiungi** > **Nuovo elemento**.
+1. Con il progetto aperto in Visual Studio, fare clic con il pulsante destro del mouse su una cartella o sul nodo del progetto in Esplora soluzioni (riquadro destro) e scegliere **Aggiungi** > **nuovo elemento**.
 
 1. Nella finestra di dialogo **Nuovo file** nella categoria **Generale** scegliere il tipo di file che si vuole aggiungere, ad esempio **File JavaScript**, e scegliere **Apri**.
 
@@ -52,7 +52,7 @@ Per specificare informazioni di IntelliSense, il servizio di linguaggio può usa
 
 ## <a name="check-syntax"></a>Controllare la sintassi
 
-Il servizio di linguaggio usa ESLint per il controllo e il rilevamento di errori della sintassi. Se è necessario impostare le opzioni per il controllo della sintassi nell'editor, selezionare **Strumenti** > **Opzioni** > **JavaScript/TypeScript** > **Linting** (Rilevamento errori). Le opzioni di rilevamento degli errori puntano al file di configurazione globale ESLint.
+Il servizio di linguaggio usa ESLint per il controllo e il rilevamento di errori della sintassi. Se è necessario impostare le opzioni per il controllo della sintassi nell'editor, selezionare **Opzioni degli strumenti** > **JavaScript/TypeScript** > **Options** > **Linting**. Le opzioni di rilevamento degli errori puntano al file di configurazione globale ESLint.
 
 Nel codice seguente parte della sintassi viene evidenziata con una linea verde a zig zag all'interno dell'espressione. Spostare il puntatore del mouse sull'evidenziazione della sintassi.
 
@@ -70,23 +70,23 @@ Nel riquadro inferiore è possibile fare clic sulla scheda **Elenco errori** per
 
 La barra degli strumenti, ovvero la riga di pulsanti sotto la barra dei menu di Visual Studio, contribuisce ad aumentare la produttività in fase di creazione del codice. Ad esempio, è possibile attivare o disattivare la modalità di completamento IntelliSense ([IntelliSense](../ide/using-intellisense.md) è un ausilio per la scrittura del codice che visualizza un elenco di metodi corrispondenti, tra le altre cose), aumentare o ridurre un rientro di riga o impostare come commento il codice che non si vuole compilare. In questa sezione, una porzione del codice verrà impostata come commento.
 
-Selezionare una o più righe di codice nell'editor e quindi scegliere il pulsante **Imposta le righe selezionate come commento** ![Pulsante impostazione commento ](../javascript/media/write-code-comment-out.png) sulla barra degli strumenti. Se si preferisce usare la tastiera, premere **Ctrl**+**K**, **Ctrl**+**C**.
+Selezionare una o più righe di codice nell'editor e quindi scegliere il pulsante **Imposta le righe selezionate come commento**![Pulsante impostazione commento ](../javascript/media/write-code-comment-out.png) sulla barra degli strumenti. Se si preferisce utilizzare la tastiera, premere **Ctrl**+**K**, **Ctrl**+**C**.
 
 I caratteri del commento di JavaScript `//` vengono aggiunti all'inizio di ogni riga selezionata per essere impostata come commento del codice.
 
 ## <a name="collapse-code-blocks"></a>Comprimere i blocchi di codice
 
-Se è necessario semplificare la visualizzazione di alcune aree del codice, è possibile comprimerlo. Scegliere la piccola casella grigia contenente il segno meno sul margine della prima riga di una funzione. Oppure, con la tastiera posizionare il cursore in qualsiasi punto del codice del costruttore e premere **CTRL**+**M**, **CTRL**+**M**.
+Se è necessario semplificare la visualizzazione di alcune aree del codice, è possibile comprimerlo. Scegliere la piccola casella grigia contenente il segno meno sul margine della prima riga di una funzione. In alternativa, se si è un utente della tastiera, posizionare il cursore in un punto qualsiasi del codice del costruttore e premere **Ctrl**+**M**, **Ctrl**+**M**.
 
 ![Pulsante di compressione evidenziato](../javascript/media/write-code-collapse-code.png)
 
-Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai puntini di sospensione (`...`). Per espandere di nuovo il blocco di codice fare clic sulla stessa casella grigia, che ora contiene un segno più, oppure premere di nuovo **CTRL**+**M**, **CTRL**+**M**. Questa funzionalità è detta [Struttura](../ide/outlining.md) ed è particolarmente utile per comprimere funzioni molto lunghe o intere classi.
+Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai puntini di sospensione (`...`). Per espandere nuovamente il blocco di codice, fare clic sulla stessa casella grigia che ora contiene un segno più oppure premere di nuovo **Ctrl**+**M**, **Ctrl**+**M.** Questa funzionalità è detta [Struttura](../ide/outlining.md) ed è particolarmente utile per comprimere funzioni molto lunghe o intere classi.
 
 ## <a name="view-definitions"></a>Visualizzare le definizioni
 
-L'editor di Visual Studio semplifica l'ispezione della definizione di tipi, funzioni e così via. Ad esempio, è possibile passare al file contenente la definizione scegliendo **Vai alla definizione** in qualsiasi punto in cui esiste un riferimento all'elemento di programmazione. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../ide/go-to-and-peek-definition.md#peek-definition). Prendiamo ad esempio la definizione del metodo `render` nell'esempio seguente.
+L'editor di Visual Studio semplifica l'ispezione della definizione di un tipo, una funzione e così via. Un modo consiste nel passare al file che contiene la definizione, ad esempio scegliendo **Vai a definizione** in qualsiasi punto in cui viene fatto riferimento all'elemento di programmazione. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../ide/go-to-and-peek-definition.md#peek-definition). Prendiamo ad esempio la definizione del metodo `render` nell'esempio seguente.
 
-Fare clic con il pulsante destro del mouse su `render` e scegliere **Visualizza definizione** dal menu del contenuto. In alternativa, premere **Alt**+**F12**.
+Fare clic con il pulsante destro del mouse su `render` e scegliere **Visualizza definizione** dal menu del contenuto. In alternativa, premere **ALT**+**F12**.
 
    Viene visualizzata una finestra popup con la definizione del metodo `render`. È possibile scorrere all'interno della finestra popup o anche esaminare la definizione di un altro tipo dal codice visualizzato.
 
@@ -98,7 +98,7 @@ Chiudere la finestra di visualizzazione della definizione scegliendo la piccola 
 
 Visual Studio offre *frammenti di codice* utili che è possibile usare per generare in modo semplice e rapido blocchi di codice di uso comune. I [frammenti di codice](../ide/code-snippets.md) sono disponibili per vari linguaggi di programmazione, tra cui JavaScript. Ora verrà aggiunto un ciclo `for` al file di codice.
 
-Posizionare il cursore nel punto in cui si vuole inserire il frammento di codice, fare clic con il pulsante destro del mouse e scegliere **Frammento** > **Inserisci frammento**.
+Posizionare il cursore nel punto in cui si desidera inserire il frammento, fare clic con il pulsante destro del mouse e scegliere **Frammento** > di**codice .**
 
 ![Frammenti di codice in Visual Studio](../javascript/media/write-code-insert-snippet.png)
 
@@ -114,7 +114,7 @@ for (var i = 0; i < length; i++) {
 }
 ```
 
-Per vedere i frammenti di codice disponibili per il proprio linguaggio scegliere **Modifica** > **IntelliSense** > **Inserisci frammento** e quindi scegliere la cartella del linguaggio.
+È possibile esaminare i frammenti di codice disponibili per il linguaggio scegliendo **Modifica** > **frammento**di codice**IntelliSense** > e quindi scegliendo la cartella della lingua.
 
 ## <a name="see-also"></a>Vedere anche
 

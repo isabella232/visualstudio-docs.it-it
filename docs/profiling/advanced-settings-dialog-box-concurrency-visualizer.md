@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911217"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
 La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente di controllare quali tracce vengono raccolte.  Nella finestra sono presenti le schede seguenti: Simboli, Just My Code, Buffer, Filtro, Eventi CLR, Marcatori, Provider e File.
 
-## <a name="symbols"></a>Simboli
+## <a name="symbols"></a>Symbols
  Il visualizzatore di concorrenza usa le stesse impostazioni dei simboli del debugger di Visual Studio. Queste impostazioni vengono usate per risolvere gli stack di chiamate associati ai dati relativi alle prestazioni.  Quando elabora le tracce, il visualizzatore di concorrenza accede ai server di simboli specificati nella pagina delle impostazioni.  Quando si accede a questi dati in una rete, l'elaborazione delle tracce subisce un rallentamento.  Per ridurre il tempo necessario per risolvere simboli, è possibile memorizzarli nella cache in locale. Se i simboli sono stati scaricati, Visual Studio li caricherà dalla cache locale.
 
 ## <a name="just-my-code"></a>Just My Code
@@ -28,7 +28,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
 
  I percorsi dei file con estensione *exe* e *dll* vengono archiviati nel file di traccia quando la traccia viene raccolta.  La modifica di questa impostazione non ha alcun effetto sulle tracce raccolte in precedenza.
 
-## <a name="buffering"></a>Buffer
+## <a name="buffering"></a>responseBuffering
  Per raccogliere una traccia, il visualizzatore di concorrenza usa ETW (Event Tracing for Windows).  Per l'archiviazione degli eventi, ETW usa diversi buffer.  Le impostazioni predefinite del buffer ETW possono non essere sempre ottimali e, in alcuni casi, possono causare problemi come la perdita di eventi.  Per configurare le impostazioni del buffer ETW, è possibile usare la scheda Buffer. Per altre informazioni, vedere [Registrazione di eventi](/windows/win32/etw/event-tracing-portal) e [EVENT_TRACE_PROPERTIES structure](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) (Struttura EVENT_TRACE_PROPERTIES).
 
 ## <a name="filter"></a>Filtro
@@ -52,13 +52,13 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
 ### <a name="file-io-events"></a>Eventi di I/O dei file
  Gli eventi di I/O su file rappresentano gli accessi al disco per conto del processo corrente.  Se la raccolta di eventi di I/O su file viene disabilitata, la dimensione della traccia raccolta risulta ridotta, ma nella visualizzazione Thread non sarà riportata alcuna informazione sui canali o le operazioni del disco.
 
-## <a name="markers"></a>Markers
+## <a name="markers"></a>Indicatori
  Nella scheda **Marcatori** è possibile configurare il set di provider ETW mostrati come marcatori nel visualizzatore di concorrenza.  È anche possibile filtrare la raccolta di marcatori in base al livello di importanza e alla categoria ETW.  Se si usa l'[SDK del visualizzatore di concorrenza ](../profiling/concurrency-visualizer-sdk.md) e il proprio provider marcatori, è possibile registrare qui quest'ultimo in modo che venga mostrato nella visualizzazione Thread.
 
 ### <a name="add-a-new-provider"></a>Aggiungi nuovo provider
  Se il codice usa l'[SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md) o genera gli eventi ETW che seguono la convenzione <xref:System.Diagnostics.Tracing.EventSource>, è possibile visualizzare questi eventi nel visualizzatore di concorrenza registrandoli in questa finestra di dialogo.
 
- Nel campo **Nome** immettere un nome che descrive i tipi di eventi generati dal provider.  Nel campo **GUID** immettere il GUID associato a questo provider. A ogni provider ETW è associato un GUID.
+ Nel campo **Nome** immettere un nome che descriva i tipi di eventi generati dal provider.  Nel campo **GUID** immettere il GUID associato a questo provider. A ogni provider ETW è associato un GUID.
 
  Facoltativamente, è possibile specificare se filtrare gli eventi da questo provider, in base alla categoria o al livello di importanza.  È possibile usare il campo categoria per applicare un filtro in base alle categorie dell'SDK del visualizzatore di concorrenza.  A questo scopo, immettere una stringa, delimitata da virgole, di categorie o di intervalli di categorie.  Con questa operazione vengono specificate le categorie di eventi del processo corrente da visualizzare.  Se si aggiunge un provider <xref:System.Diagnostics.Tracing.EventSource>, è possibile usare il campo relativo alla categoria per applicare un filtro in base alla parola chiave ETW.  Poiché la parola chiave è una maschera di bit, è possibile usare una stringa di interi, delimitata da virgole, per specificare i bit della maschera impostati. Ad esempio, "1,2" imposta il primo e il secondo bit e si traduce in 6 in formato decimale.
 

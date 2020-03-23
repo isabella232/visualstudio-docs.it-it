@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9843b47e38d5d33a25c455efe619dfcc033fb334
-ms.sourcegitcommit: 9f6f63a2d76c6e579b4b67a96ec86faba99ad1df
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71933433"
 ---
 ## <a name="discover-and-view-tests"></a>Individuare e visualizzare i test
@@ -43,23 +43,23 @@ Per convenzione, Visual Studio identifica i test come metodi il cui nome inizia 
 
     ![Esplora test con test_A predefinito](../../media/unit-test-A.png)
 
-1. Via via che si aggiungono altri test al progetto, è possibile organizzare la visualizzazione in **Esplora test** tramite il menu **Raggruppa per** della barra degli strumenti:
+1. Quando si aggiungono altri test al progetto, è possibile organizzare la visualizzazione in **Esplora test** utilizzando il menu **Raggruppa per** sulla barra degli strumenti:
 
     ![Menu Raggruppa per della barra degli strumenti in Esplora test](../../media/unit-test-group-menu.png)
 
 1. È anche possibile immettere testo nel campo di **Cerca** per filtrare i test in base al nome.
 
-Per ulteriori informazioni sul modulo `unittest` e sulla scrittura di test, vedere la [documentazione di python 2,7](https://docs.python.org/2/library/unittest.html) o la [documentazione di python 3,7](https://docs.python.org/3/library/unittest.html) (Python.org).
+Per altre informazioni `unittest` sul modulo e sulla scrittura di test, vedere la documentazione di [Python 2.7](https://docs.python.org/2/library/unittest.html) o la documentazione di [Python 3.7](https://docs.python.org/3/library/unittest.html) (python.org).
 
-## <a name="run-tests"></a>Esegui test
+## <a name="run-tests"></a>Esecuzione dei test
 
-In **Esplora test** è possibile eseguire test in diversi modi:
+In Esplora test è possibile eseguire test in diversi modi:In **Test Explorer** you can run tests in a variety of ways:
 
 - L'opzione **Esegui tutto** esegue chiaramente tutti i test visualizzati, tenendo conto degli eventuali filtri applicati.
-- Il menu **Esegui** include i comandi per eseguire in gruppo test non superati, superati o non eseguiti.
+- Il menu **Esegui** consente di eseguire i comandi non riusciti, superati o non eseguiti test come gruppo.
 - È possibile selezionare uno o più test, fare clic con il pulsante destro del mouse e scegliere **Esegui test selezionati**.
 
-I test vengono eseguiti in background ed **Esplora test** aggiorna lo stato di ogni test non appena viene completato:
+I test vengono eseguiti in background e Esplora test aggiorna lo stato di ogni test al completamento:Test run in the background and **Test Explorer** updates each test's status as it completes:
 
 - I test superati sono contraddistinti da un segno di spunta verde, nonché dall'indicazione del tempo necessario per eseguirli:
 
@@ -71,7 +71,7 @@ I test vengono eseguiti in background ed **Esplora test** aggiorna lo stato di o
 
     ![test_A non superato con motivo](../../media/unit-test-A-fail-reason.png)
 
-## <a name="debug-tests"></a>Eseguire il debug dei test
+## <a name="debug-tests"></a>Esecuzione del debug dei test
 
 Dal momento che gli unit test sono parti di codice, sono soggetti a bug esattamente come qualsiasi altro tipo di codice e a volte può essere necessario eseguirli in un debugger, in cui è possibile impostare punti di interruzione, esaminare le variabili ed eseguire il codice istruzione per istruzione. Visual Studio include anche strumenti di diagnostica per gli unit test.
 
@@ -79,11 +79,11 @@ Per avviare il debug, impostare un punto di interruzione iniziale nel codice, fa
 
 ![Debug di un test](../../media/unit-test-debugging.png)
 
-È anche possibile usare il **code coverage analizza per i test selezionati**. Per altre informazioni, vedere [Usare la funzionalità code coverage per determinare la quantità di codice testato](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+È inoltre possibile utilizzare **Analizza code coverage per i test selezionati**. Per altre informazioni, vedere [Usare la funzionalità code coverage per determinare la quantità di codice testato](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ### <a name="known-issues"></a>Problemi noti
 
-- Quando si avvia il debug, Visual Studio sembra avviare e arrestare il debug e quindi avviarlo di nuovo. Questo è il comportamento previsto.
+- Quando si avvia il debug, Visual Studio sembra avviare e arrestare il debug e quindi avviarlo di nuovo. Si tratta di un comportamento previsto.
 - Durante il debug di più test, ognuno di essi viene eseguito in modo indipendente e questo causa l'interruzione della sessione di debug.
 - Di tanto in tanto Visual Studio non riesce ad avviare un test durante il debug. In genere, il problema si risolve ripetendo il debug del test.
 - Durante il debug, è possibile uscire da un test nell'implementazione di `unittest`. Di solito il passaggio successivo viene eseguito alla fine del programma e arresta il debug.

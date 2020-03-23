@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b8c97659cc6036433c5bcf2547a9f88aee56f451
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747720"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
@@ -30,21 +30,21 @@ Visualizza l'URL specificato in una finestra del Web browser all'interno o all'e
 View.ShowWebBrowser URL [/new][/ext]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `URL`
 
 Obbligatorio. URL (Uniform Resource Locator) per il sito Web.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Switch
 /new
 
-Parametro facoltativo. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
+Facoltativa. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
 
 /ext
 
-Parametro facoltativo. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
+Facoltativa. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 L'alias per il comando **ShowWebBrowser** è **navigate** o **nav**.
 
 ## <a name="example"></a>Esempio
@@ -56,7 +56,7 @@ L'esempio seguente illustra la home page di Microsoft Docs in un Web browser all
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

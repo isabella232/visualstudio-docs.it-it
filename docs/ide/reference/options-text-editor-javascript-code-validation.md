@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68606001"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Finestra di dialogo Opzioni: Editor di testo \> JavaScript/TypeScript \> Convalida codice
+# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Finestra di dialogo \> Opzioni: Convalida \> codice JavaScript/TypeScript dell'editor di testo
 
 Usare la pagina **Convalida codice** della finestra di dialogo **Opzioni** per modificare le impostazioni che influiscono sulla gestione degli errori da parte di JavaScript. Per accedere alla pagina **Convalida codice**, scegliere **Strumenti** > **Opzioni** sulla barra dei menu e quindi espandere **Editor di testo** > **JavaScript/TypeScript** > **Convalida codice**.
 
@@ -29,7 +29,7 @@ La pagina **Convalida codice** include le sezioni seguenti:
 
 È possibile utilizzare queste opzioni per impostare le preferenze di convalida della sintassi da parte dell'editor JavaScript nel documento.
 
-### <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 **Abilita errori JavaScript**
 

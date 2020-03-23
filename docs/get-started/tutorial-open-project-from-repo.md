@@ -1,5 +1,5 @@
 ---
-title: 'Esercitazione: Aprire un progetto da un repository'
+title: 'Esercitazione: Aprire un progetto da un repositoryTutorial: Open a project from a repo'
 description: Informazioni su come aprire un progetto in un repository Git o Azure DevOps con Visual Studio.
 ms.custom: get-started
 ms.date: 03/30/2019
@@ -15,25 +15,25 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180434"
 ---
-# <a name="tutorial-open-a-project-from-a-repo"></a>Esercitazione: Aprire un progetto da un repository
+# <a name="tutorial-open-a-project-from-a-repo"></a>Esercitazione: Aprire un progetto da un repositoryTutorial: Open a project from a repo
 
 In questa esercitazione si userà Visual Studio per connettersi a un repository per la prima volta e quindi aprire un progetto dal repository.
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -43,7 +43,7 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
 1. Aprire Visual Studio 2017.
 
-1. Nella barra dei menu superiore scegliere **File**> **Apri** >**Apri dal controllo del codice sorgente**.
+1. Nella barra dei menu superiore scegliere **File** > **Apri** > **Apri dal controllo del codice sorgente**.
 
    Si apre il riquadro **Team Explorer - Connetti**.
 
@@ -65,7 +65,7 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
    Se nel repository non è disponibile un file di soluzione (con estensione sln), il menu a comparsa indicherà che "Non sono state trovate soluzioni". Tuttavia, è possibile fare doppio clic su qualsiasi file nel menu della cartella per aprirlo nell'editor di codice di Visual Studio.
 
-### <a name="review-your-work"></a>Rivedere il lavoro
+### <a name="review-your-work"></a>Esaminare il lavoro
 
 Visualizzare l'animazione seguente per verificare il lavoro completato nella sezione precedente.
 
@@ -101,7 +101,7 @@ Visualizzare l'animazione seguente per verificare il lavoro completato nella sez
 
 1. Aprire Visual Studio 2017.
 
-1. Nella barra dei menu superiore scegliere **File**> **Apri** >**Apri dal controllo del codice sorgente**.
+1. Nella barra dei menu superiore scegliere **File** > **Apri** > **Apri dal controllo del codice sorgente**.
 
    Si apre il riquadro **Team Explorer - Connetti**.
 
@@ -177,13 +177,13 @@ Visualizzare l'animazione seguente per verificare il lavoro completato nella sez
 
 Se è pronti a scrivere codice con Visual Studio, è possibile approfondire l'argomento in una delle esercitazioni specifiche per linguaggio seguenti:
 
-- [Esercitazioni di Visual Studio | **C#** ](./csharp/index.yml)
+- [Esercitazioni di Visual Studio **C'è**](./csharp/index.yml)
 - [Esercitazioni di Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Esercitazioni di Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
+- [Esercitazioni di Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Esercitazioni di Visual Studio | **Python**](/visualstudio/python/)
 - [Esercitazioni di Visual Studio | **JavaScript**, **TypeScript** e **Node.js**](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Introduzione ad Azure Repos e Visual Studio)
-- [Microsoft Learn: Introduzione ad Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn: Introduzione a Azure DevOps](/learn/modules/get-started-with-devops/)

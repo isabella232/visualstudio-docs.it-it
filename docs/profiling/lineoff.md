@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774126"
 ---
 # <a name="lineoff"></a>LineOff
@@ -28,12 +28,12 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```
 
 #### <a name="parameters"></a>Parametri
- nessuna
+ nessuno
 
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **LineOff** può essere usata solo su una riga di comando che contiene l'opzione **Launch**.
 
- **Launch:** `AppName` avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
+ **Avvia:** `AppName` avvia l'applicazione specificata e avvia la profilatura con il metodo di campionamento.
 
 ## <a name="example"></a>Esempio
  Questo esempio illustra come avviare l'applicazione e il profiler e quindi disabilitare il campionamento a livello di riga.

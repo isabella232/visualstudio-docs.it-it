@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772727"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Visualizzazione Moduli: dati di campionamento di memoria .NET
@@ -26,9 +26,9 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 |Colonna|Descrizione|
 |------------|-----------------|
 |**Nome**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo dell'istruzione.|
-|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Nome processo**|nome del processo.|
-|**Nome modulo**|Nome del modulo che contiene la funzione.|
+|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Process Name**|Nome del processo.|
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
@@ -42,7 +42,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 |**% byte esclusivi**|Percentuale di tutti i byte allocati nell'esecuzione della profilatura che rappresenta i byte esclusivi del modulo, della funzione, della riga o dell'istruzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: personalizzare le colonne della visualizzazione reportHow to: Customize Report View columns](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione moduli](../profiling/modules-view-sampling-data.md)
 - [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)

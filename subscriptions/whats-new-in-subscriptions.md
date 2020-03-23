@@ -8,10 +8,10 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
-ms.translationtype: HT
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "70060399"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novità delle sottoscrizioni di Visual Studio
@@ -39,7 +39,7 @@ Se l'organizzazione ha già sottoscrizioni di Visual Studio con GitHub Enterpris
 
 ## <a name="2019-q1-january-march"></a>2019 T1 (gennaio-marzo)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>Utilizzo massimo aggiunto al [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com)
+### <a name="maximum-usage-added-to-subscriptions-administration-portal"></a>Utilizzo massimo aggiunto al [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com)
 Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia di quante sottoscrizioni sono state acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnate, sia nell'ultimo anno che per l'intera durata dei contratti. Ciò consente di comprendere l'utilizzo della sottoscrizione corrente e di pianificare acquisti futuri. 
 
   > [!div class="mx-imgBorder"]

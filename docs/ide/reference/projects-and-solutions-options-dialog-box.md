@@ -14,25 +14,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567645"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> generale
+# <a name="options-dialog-box-projects-and-solutions--general"></a>Finestra di dialogo \> Opzioni: Progetti e soluzioni generali
 
-Usare questa pagina per definire il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni selezionare **Strumenti** > **Opzioni**, espandere **Progetti e soluzioni** e selezionare **Generale**.
+Usare questa pagina per definire il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni, selezionare**Opzioni** **degli strumenti** > , **Progetti e soluzioni**, quindi **generale**.
 
 Le opzioni seguenti sono disponibili nella pagina **Generale**.
 
 ## <a name="always-show-error-list-if-build-finishes-with-errors"></a>Mostra sempre Elenco errori se la compilazione termina con errori
 
-Apre la finestra **Elenco errori** al completamento della compilazione, ma solo se la compilazione di un progetto non è riuscita. Vengono visualizzati gli errori che si sono verificati durante il processo di compilazione. Quando questa opzione è deselezionata, gli errori si verificano ugualmente, ma la finestra non verrà aperta una volta completata la compilazione. Per impostazione predefinita, questa casella di controllo è selezionata.
+Apre la finestra **Elenco errori** al completamento della compilazione, ma solo se la compilazione di un progetto non è riuscita. Vengono visualizzati gli errori che si sono verificati durante il processo di compilazione. Quando questa opzione è deselezionata, gli errori si verificano ugualmente, ma la finestra non verrà aperta una volta completata la compilazione. Questa opzione è attivata per impostazione predefinita.
 
 ## <a name="track-active-item-in-solution-explorer"></a>Tieni traccia degli elementi attivi in Esplora soluzioni
 
-Se selezionata, **Esplora soluzioni** viene aperto automaticamente e l'elemento attivo viene selezionato. L'elemento selezionato cambia quando si lavora con diversi file in un progetto o soluzione oppure componenti diversi in una finestra di progettazione. Quando questa opzione è deselezionata, la selezione in **Esplora soluzioni** non viene modificata automaticamente. Per impostazione predefinita, questa casella di controllo è selezionata.
+Se selezionata, **Esplora soluzioni** viene aperto automaticamente e l'elemento attivo viene selezionato. L'elemento selezionato cambia quando si lavora con diversi file in un progetto o soluzione oppure componenti diversi in una finestra di progettazione. Quando questa opzione è deselezionata, la selezione in **Esplora soluzioni** non viene modificata automaticamente. Questa opzione è attivata per impostazione predefinita.
 
 ## <a name="show-advanced-build-configurations"></a>Mostra configurazioni di generazione avanzate
 
@@ -98,6 +98,6 @@ Se questa opzione non è selezionata e si vuole modificare un file di progetto i
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Finestra di dialogo Opzioni: progetti e soluzioni \> posizioni](projects-solutions-locations-options.md)
+- [Finestra di dialogo \> Opzioni: Percorsi progetti e soluzioni](projects-solutions-locations-options.md)
 - [Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

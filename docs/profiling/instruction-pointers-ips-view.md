@@ -19,10 +19,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c90d070a3b7125143eda5fd8666b1a4f64312b3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778635"
 ---
 # <a name="instruction-pointers-ips-view"></a>Visualizzazione Puntatori all'istruzione
@@ -35,6 +35,6 @@ La visualizzazione Puntatore all'istruzione consente di visualizzare istruzioni 
  Per i dati di memoria .NET, la visualizzazione Righe identifica le istruzioni per l'allocazione della memoria.
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazione puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
-- [Visualizzazione dei puntatori all'istruzione: campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)
+- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Visualizzazione Puntatori all'istruzione (IP) - campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-contention-data.md)

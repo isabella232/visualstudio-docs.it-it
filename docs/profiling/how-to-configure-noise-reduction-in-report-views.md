@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776332"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedura: Configurare la riduzione del rumore nelle visualizzazioni dei report
@@ -39,7 +39,7 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
 
 2. Per abilitare il trimming, attenersi alla procedura seguente:
 
-    1. Selezionare **Abilita trimming**. Questa è l'impostazione predefinita.
+    1. Selezionare **Abilita trimming**. Si tratta dell'impostazione predefinita.
 
         > [!NOTE]
         > Se è abilitata la riduzione del rumore, nel rapporto verrà visualizzata una barra informazioni. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).
@@ -48,7 +48,7 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
 
     3. Configurare l'impostazione di soglia desiderata digitando un valore percentuale nella casella di testo **Soglia**.
 
-    4. Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Questa è l'impostazione predefinita.
+    4. Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Si tratta dell'impostazione predefinita.
 
 3. Per disabilitare il trimming, deselezionare **Abilita trimming**.
 
@@ -62,7 +62,7 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
 
 2. Per abilitare la riduzione, attenersi alla procedura seguente:
 
-    1. Selezionare **Abilita riduzione**. Questa è l'impostazione predefinita.
+    1. Selezionare **Abilita riduzione**. Si tratta dell'impostazione predefinita.
 
         > [!NOTE]
         > Se è abilitata la riduzione del rumore, nel rapporto verrà visualizzata una barra informazioni. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).
@@ -71,14 +71,14 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
 
     3. Configurare l'impostazione di soglia desiderata digitando un valore percentuale nella casella di testo **Soglia**.
 
-    4. Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Questa è l'impostazione predefinita.
+    4. Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Si tratta dell'impostazione predefinita.
 
 3. Per disabilitare la riduzione, deselezionare **Abilita riduzione**.
 
 4. Fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
-- [Personalizzare le visualizzazioni dei report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)
+- [Personalizzare le visualizzazioni dei report degli strumenti di prestazioni](../profiling/customizing-performance-tools-report-views.md)
 - [Procedura: Escludere o includere funzioni brevi nella strumentazione](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
-- [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)
-- [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md)
+- [Visualizzazione Struttura ad albero delle chiamate](../profiling/call-tree-view.md)
+- [Visualizzazione allocazioni](../profiling/dotnet-memory-allocations-view.md)

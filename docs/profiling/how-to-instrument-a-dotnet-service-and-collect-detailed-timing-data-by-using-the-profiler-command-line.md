@@ -1,5 +1,5 @@
 ---
-title: "Riga di comando del profiler: instrumentare il servizio .NET, ottenere dettagli sull'intervallo"
+title: 'Riga di comando profiler: Instrument .NET service, get timing detail'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: af801d2b30c48deb1a88800f67ff4d3efef412b4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778895"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler
@@ -40,21 +40,21 @@ Per terminare una sessione di profilatura, chiudere il servizio e arrestare in m
 
 3. Sostituire il file binario originale con la versione instrumentata. In Gestione controllo servizi di Windows assicurarsi che tipo di avvio del servizio sia impostato su Manuale.
 
-4. Inizializzare le variabili di ambiente di profilatura di .NET Framework. Tipo:
+4. Inizializzare le variabili di ambiente di profilatura di .NET Framework. Digitare:
 
      **VSPerfClrEnv /globaltraceon**
 
-5. Riavvia il computer.
+5. Riavviare il computer.
 
 6. Aprire una finestra del prompt dei comandi.
 
-7. Avviare il profiler. Tipo:
+7. Avvia il profiler. Digitare:
 
      **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
-   - L'opzione [/start](../profiling/start.md) **:trace** consente di inizializzare il profiler.
+   - L'opzione [/start](../profiling/start.md)**:trace** inizializza il profiler.
 
-   - L'opzione [/output](../profiling/output.md) **:** `OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione *vsp*).
+   - L'opzione [/output](../profiling/output.md)**:** `OutputFile` è obbligatoria con **/start**. `OutputFile`specifica il nome e la posizione dei dati di profilatura (.* vsp*).
 
      È possibile usare una delle opzioni seguenti con l'opzione **/start:trace**.
 
@@ -63,14 +63,14 @@ Per terminare una sessione di profilatura, chiudere il servizio e arrestare in m
 
      | Opzione | Descrizione |
      | - | - |
-     | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows. |
-     | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna **ID sessione** della scheda **Processi** di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
-     | [/waitstart](../profiling/waitstart.md)[ **:** `Interval`] | Specifica il numero di secondi di attesa dell'inizializzazione del profiler prima che venga restituito un errore. Se `Interval` non viene specificato, il profiler attende per un tempo indefinito. Per impostazione predefinita, **/start** restituisce immediatamente un valore. |
+     | [/user](../profiling/user-vsperfcmd.md) **:**:`Domain`**\\**[ ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows. |
+     | [/crosssessione](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna **ID sessione** della scheda **Processi** di Task Manager di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
+     | [/waitstart](../profiling/waitstart.md)[**:**`Interval`] | Specifica il numero di secondi di attesa dell'inizializzazione del profiler prima che venga restituito un errore. Se `Interval` non viene specificato, il profiler attende per un tempo indefinito. Per impostazione predefinita, **/start** restituisce immediatamente un valore. |
      | [/globaloff](../profiling/globalon-and-globaloff.md) | Per avviare il profiler con la raccolta dei dati in pausa, aggiungere l'opzione **/globaloff** alla riga di comando **/start**. Usare **/globalon** per riprendere la profilatura. |
-     | [/counter](../profiling/counter.md) **:** `Config` | Raccoglie informazioni dal contatore delle prestazioni del processore specificato in config. Le informazioni del contatore vengono aggiunte ai dati raccolti a ogni evento di profilatura. |
-     | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
-     | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
-     | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
+     | [/counter](../profiling/counter.md) **:**`Config` | Raccoglie informazioni dal contatore delle prestazioni del processore specificato in Config. Le informazioni sul contatore vengono aggiunte ai dati raccolti a ogni evento di profilatura. |
+     | [/wincounter](../profiling/wincounter.md) **:**`WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
+     | [/automark](../profiling/automark.md) **:**`Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
+     | [/events](../profiling/events-vsperfcmd.md) **:**`Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
 
 8. Avviare il servizio da Gestione controllo servizi di Windows.
 
@@ -78,35 +78,35 @@ Per terminare una sessione di profilatura, chiudere il servizio e arrestare in m
 
 Mentre il servizio è in esecuzione, è possibile usare le opzioni di *VSPerfCmd.exe* per avviare e arrestare la scrittura dei dati nel file di dati del profiler. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto del servizio.
 
-- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le coppie seguenti di opzioni **VSPerfCmd** avviano e interrompono la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Descrizione|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Avvia ( **/threadon**) o arresta ( **/threadoff**) la raccolta dei dati per il thread specificato dall'ID thread (`TID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:**`TID`|Avvia (**/threadon**) o arresta (**/threadoff**) la raccolta dei dati per il thread specificato dall'ID thread (`TID`).|
 
 ## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura
 
-Per terminare una sessione di profilatura, arrestare il servizio che esegue il componente instrumentato e quindi chiamare l'opzione **VSPerfCmd** [/shutdown](../profiling/shutdown.md) per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /globaloff** cancella le variabili di ambiente di profilatura.
+Per terminare una sessione di profilatura, arrestare il servizio che esegue il componente instrumentato e quindi chiamare l'opzione **VSPerfCmd** [/shutdown](../profiling/shutdown.md) per disabilitare il profiler e chiudere il file dei dati di profilatura. Il comando **VSPerfClrEnv /globaloff** cancella le variabili di ambiente di profilatura.
 
 È necessario riavviare il computer per applicare le nuove impostazioni di ambiente.
 
 1. Arrestare il servizio da Gestione controllo servizi.
 
-2. Arrestare il profiler. Tipo:
+2. Arrestare il profiler. Digitare:
 
      **VSPerfCmd /shutdown**
 
-3. Dopo aver completato tutte le profilature, deselezionare le variabili di ambiente di profilatura. Tipo:
+3. Dopo aver completato tutte le profilature, deselezionare le variabili di ambiente di profilatura. Digitare:
 
      **VSPerfClrEnv /globaloff**
 
 4. Sostituire il modulo instrumentato con l'originale. Se necessario, riconfigurare il tipo di avvio del servizio.
 
-5. Riavvia il computer.
+5. Riavviare il computer.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
-[Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)
+[Visualizzazioni](../profiling/command-line-profiling-of-services.md)
+dei dati del metodo di strumentazione dei servizi di[profilatoProfile](../profiling/instrumentation-method-data-views.md) services Instrumentation method data

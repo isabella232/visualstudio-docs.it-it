@@ -10,13 +10,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778609"
 ---
-# <a name="launch"></a>Avvio
+# <a name="launch"></a>Launch
 L'opzione **Launch** avvia il profiler usando il metodo di campionamento e avvia anche l'applicazione specificata.
 
  Per usare l'opzione **Launch**, è necessario specificare il metodo **Sample** nell'opzione **Start**.
@@ -33,11 +33,11 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>Opzioni valide
  Le seguenti opzioni di VSPerfCmd possono essere combinate con l'opzione **Launch** in una singola riga di comando.
 
- **Start:** `Method` Inizializza la sessione del profiler da riga di comando e imposta il metodo di profilatura specificato.
+ **Start:** `Method` inizializza la sessione del profiler della riga di comando e imposta il metodo di profilatura specificato.
 
  **GlobalOn** e **GlobalOff** Riprende (**GlobalOn**) o sospende (**GlobalOff**) la profilatura, ma non termina la sessione di profilatura.
 
- ProcessOn **:** `PID` e **ProcessOff**:`PID` riprende (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.
+ **ProcessOn:** `PID` e **ProcessOff**:`PID` riprende (**ProcessOn**) o sospende la profilatura (**ProcessOff**) per il processo specificato.
 
  **TargetCLR** Specifica la versione di Common Language Runtime (CLR) di .NET Framework da sottoporre a profilatura quando in una sessione di profilatura è caricata più di una versione. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.
 
@@ -53,11 +53,11 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Opzioni di campionamento
  È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di **Launch**. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.
 
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] Specifica il numero e il tipo di intervallo di campionamento.
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**]**`Events`]**Contatore**[**:**`Name``Reload`,`FriendlyName`]**GC**[:**allocazione**&#124;**durata**] Specifica il numero e il tipo di intervallo di campionamento.
 
 - **Timer**: esegue il campionamento di ogni `Cycles` dei cicli di clock del processore non interrotti. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
 
-- **PF**: esegue il campionamento ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.
+- **PF**: esegue il campionamento di ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.
 
 - **Sys**: esegue il campionamento ogni `Events` chiamate al sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.
 

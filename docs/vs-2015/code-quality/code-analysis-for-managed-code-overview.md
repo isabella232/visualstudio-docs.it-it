@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 33ab4a000fac75c51c32e8a6d37de62e006160b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72610066"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Panoramica dell'analisi codice gestito
@@ -31,9 +31,9 @@ L'analisi del codice gestito analizza gli assembly gestiti e fornisce informazio
 ## <a name="ide-integrated-development-environment-integration"></a>Integrazione nell'IDE (Integrated Development Environment)
  Gli sviluppatori possono eseguire l'analisi del codice del progetto automaticamente o manualmente.
 
- Per eseguire l'analisi del codice ogni volta che si compila un progetto, selezionare **Abilitare l'analisi codice in fase di compilazione (definisce la costante CODE_ANALYSIS)** nella Pagina delle proprietà del progetto. Per altre informazioni, vedere [procedura: abilitare e disabilitare l'analisi automatica del codice](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+ Per eseguire l'analisi del codice ogni volta che si compila un progetto, selezionare **Abilitare l'analisi codice in fase di compilazione (definisce la costante CODE_ANALYSIS)** nella Pagina delle proprietà del progetto. Per ulteriori informazioni, vedere [Procedura: abilitare e disabilitare l'analisi automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)del codice .
 
- Per eseguire manualmente l'analisi del codice su un progetto, dal menu **Analizza** fare clic su **Esegui analisi codice su**_NomeProgetto_. Per altre informazioni, vedere [procedura: abilitare e disabilitare l'analisi automatica del codice](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+ Per eseguire manualmente l'analisi del codice su un progetto, dal menu **Analizza** fare clic su **Esegui analisi codice su**_NomeProgetto_. Per ulteriori informazioni, vedere [Procedura: abilitare e disabilitare l'analisi automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)del codice .
 
 ## <a name="rule-sets"></a>Set di regole
  Le regole per l'analisi del codice gestito vengono raggruppate in *set di regole*. È possibile utilizzare uno dei set di regole standard Microsoft oppure creare un set di regole personalizzato per soddisfare una specifica esigenza. Per altre informazioni, vedere [Uso di set di regole per raggruppare regole di analisi del codice](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
@@ -66,4 +66,4 @@ L'analisi del codice gestito analizza gli assembly gestiti e fornisce informazio
  È possibile utilizzare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi come parte del processo di compilazione. Per altre informazioni, vedere [Build the application](/azure/devops/pipelines/index) (Compilare l'applicazione).
 
 ## <a name="see-also"></a>Vedere anche
- [Uso di set di regole per raggruppare le regole di analisi del codice](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) [procedura: abilitare e disabilitare l'analisi automatica del codice](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+ Utilizzo di set di [regole per raggruppare le regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) di analisi del [codice: abilitare e disabilitare l'analisi automatica del codiceUsing](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md) Rule Sets to Group Code Analysis Rules How to: Enable and Disable Automatic Code Analysis

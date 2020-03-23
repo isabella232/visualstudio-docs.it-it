@@ -15,19 +15,19 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 89dadc3213620b668160752e919679cccead90bc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778024"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Riferimenti per le API del profiler di Visual Studio (native)
-Le API del profiler di Visual Studio consentono di controllare a livello di codice la quantità di dati raccolti e di inserire contrassegni sia per il timestamp che per il profilo durante la profilatura. Per usare le API native, è necessario includere il file di intestazione *VSPerf.h* e aggiungere il file *VSPerf.lib* nel progetto.
+Le API del profiler di Visual Studio consentono di controllare a livello di codice la quantità di dati raccolti e di inserire contrassegni sia per il timestamp che per il profilo durante la profilatura. Per usare le API native, includere il file di intestazione *VSPerf.h* e aggiungere *VSPerf.lib* nel progetto.
 
 > [!NOTE]
 > Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)
 
 [CommentMarkProfile](../profiling/commentmarkprofile.md)
@@ -49,4 +49,4 @@ Le API del profiler di Visual Studio consentono di controllare a livello di codi
 ## <a name="see-also"></a>Vedere anche
 
 - [API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)
-- [Procedura dettagliata: Uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)
+- [Procedura dettagliata: utilizzo delle API del profilerWalkthrough: Using profiler APIs](../profiling/walkthrough-using-profiler-apis.md)

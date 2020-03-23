@@ -14,10 +14,10 @@ helpviewer_keywords:
 - trusted files
 - trusted folders
 ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62789642"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Configurare le impostazioni di attendibilità per file e cartelle
@@ -31,9 +31,9 @@ Visual Studio richiede l'approvazione dell'utente prima di aprire i progetti con
 
 Per modificare le impostazioni di attendibilità, seguire questa procedura:
 
-1. Aprire **Strumenti** > **Opzioni** > **Impostazioni di attendibilità** e selezionare il collegamento **Configurare impostazioni di attendibilità** nel riquadro a destra.
+1. Aprire Impostazioni**di attendibilità** **delle opzioni** >  **degli strumenti** > e selezionare il collegamento **Configura impostazioni di attendibilità** nel riquadro di destra.
 
-2. Scegliere il livello di controllo per i file e le cartelle. Si possono usare controlli diversi per ognuno di essi. È possibile scegliere:
+2. Scegliere il livello di controllo per i file e le cartelle. Si possono usare controlli diversi per ognuno di essi. Le opzioni disponibili sono le seguenti:
 
    * **Nessuna verifica**: Visual Studio non esegue alcun controllo.
 
@@ -47,7 +47,7 @@ Per modificare le impostazioni di attendibilità, seguire questa procedura:
 
 Per aggiungere percorsi attendibili, attenersi a questa procedura:
 
-1. Aprire **Strumenti** > **Opzioni** > **Impostazioni di attendibilità** e selezionare il collegamento **Configurare impostazioni di attendibilità** nel riquadro a destra.
+1. Aprire Impostazioni**di attendibilità** **delle opzioni** >  **degli strumenti** > e selezionare il collegamento **Configura impostazioni di attendibilità** nel riquadro di destra.
 
 2. Fare clic su **Aggiungi** nella finestra di dialogo **Impostazioni di attendibilità** e quindi selezionare **File** o **Cartella**.
 
@@ -61,7 +61,7 @@ Per aggiungere percorsi attendibili, attenersi a questa procedura:
 
 Per rimuovere percorsi attendibili, attenersi a questa procedura:
 
-1. Aprire **Strumenti** > **Opzioni** > **Impostazioni di attendibilità** e selezionare il collegamento **Configurare impostazioni di attendibilità** nel riquadro a destra.
+1. Aprire Impostazioni**di attendibilità** **delle opzioni** >  **degli strumenti** > e selezionare il collegamento **Configura impostazioni di attendibilità** nel riquadro di destra.
 
 2. Selezionare il percorso da rimuovere nell'elenco dei **percorsi attendibili** e quindi fare clic su **Rimuovi**.
 

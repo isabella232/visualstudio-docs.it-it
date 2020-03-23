@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e09526930bf98141ae4f9d4d204b20383763c208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552876"
 ---
 # <a name="cpu-utilization-graph"></a>Grafico di utilizzo della CPU
-Il grafico di utilizzo della CPU visualizza il livello di utilizzo in un'app nel tempo. L'asse X rappresenta la durata della traccia e l'asse Y rappresenta il numero di core logici nel sistema. Il grafico non indica quale core specifico è attivo in un momento determinato. Ad esempio, se due core sono in esecuzione al 50% per un determinato periodo di tempo, il grafico indica che viene utilizzato un solo core logico.
+Il grafico di utilizzo della CPU visualizza il livello di utilizzo in un'app nel tempo. L'asse X rappresenta la durata della traccia e l'asse Y rappresenta il numero di core logici nel sistema. Il grafico non indica quale core specifico è attivo in un momento determinato. Ad esempio, se due core sono in esecuzione al 50% per un determinato periodo di tempo, il grafico indica che viene usato un solo core logico.
 
 ## <a name="cpu-utilization-graph-colors"></a>Colori del grafico di utilizzo della CPU
 
@@ -33,5 +33,5 @@ Il grafico di utilizzo della CPU visualizza il livello di utilizzo in un'app nel
 - Il colore bianco indica la disponibilità di core logici non usati nel sistema. Tali core sono disponibili per il processo se è possibile trovare altre opportunità di parallelismo.
 
 ## <a name="see-also"></a>Vedere anche
-- [Utilization View](../profiling/utilization-view.md) (Visualizzazione Utilizzo)
-- [Utilizzo medio della CPU](../profiling/average-cpu-utilization.md)
+- [Visualizzazione Uso](../profiling/utilization-view.md)
+- [Utilizzo CPU medio](../profiling/average-cpu-utilization.md)

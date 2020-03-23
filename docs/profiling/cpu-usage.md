@@ -10,17 +10,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553620"
 ---
 # <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 
 Un approccio ottimale per avviare l'analisi dei problemi di prestazioni nell'app è l'esame dell'uso della CPU. Lo strumento per le prestazioni **Utilizzo CPU** visualizza il tempo e la percentuale d'uso della CPU dedicati all'esecuzione del codice nelle app C++, C#/Visual Basic e JavaScript.
 
-Lo strumento **Utilizzo CPU** può essere eseguito in un progetto di Visual Studio aperto, in un'app di Microsoft Store installata oppure può essere collegato a un'app o un processo in esecuzione. È possibile eseguire lo strumento in computer locali o remoti oppure in un simulatore o in un emulatore. Per altre informazioni, vedere [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Lo strumento **Utilizzo CPU** può essere eseguito in un progetto di Visual Studio aperto, in un'app di Microsoft Store installata oppure può essere collegato a un'app o un processo in esecuzione. È possibile eseguire lo strumento in computer locali o remoti oppure in un simulatore o in un emulatore. Per ulteriori informazioni, vedere Eseguire strumenti di [profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 È possibile eseguire lo strumento **Utilizzo CPU** con o senza il debug. Nel debugger è possibile attivare e disattivare la profilatura della CPU e disattivare e visualizzare i dettagli dell'uso della CPU per ogni funzione. È possibile visualizzare i risultati dell'uso della CPU quando l'esecuzione viene messa in pausa, ad esempio in un punto di interruzione.
 
@@ -37,7 +37,7 @@ In genere il computer locale replica in modo ottimale l'esecuzione dell'app inst
 
     ![Selezionare Versione e Computer locale](../profiling/media/cpuuse_selectreleaselocalmachine.png "Selezionare Versione e Computer locale")
 
-1. Selezionare **Debug** > **Profiler prestazioni**.
+1. Selezionare **Debug** > **Performance Profiler**.
 
 1. In **Strumenti disponibili** selezionare **Utilizzo CPU** e quindi selezionare **Avvia**.
 
@@ -45,11 +45,11 @@ In genere il computer locale replica in modo ottimale l'esecuzione dell'app inst
 
 4. Dopo l'avvio dell'app viene avviata la sessione di diagnostica e vengono visualizzati i dati d'uso della CPU. Dopo aver completato la raccolta dei dati, selezionare **Arresta raccolta**.
 
-   ![Arrestare la raccolta dei dati d'uso della CPU](../profiling/media/cpu_use_wt_stopcollection.png "Arrestare la raccolta dei dati d'uso della CPU")
+   ![Interrompere la raccolta dati di utilizzo della CPUStop CPU Usage data collection](../profiling/media/cpu_use_wt_stopcollection.png "Interrompere la raccolta dati di utilizzo della CPUStop CPU Usage data collection")
 
    Lo strumento Utilizzo CPU analizza i dati e visualizza il report.
 
-   ![Report Utilizzo CPU](../profiling/media/cpu_use_wt_report.png "Report Utilizzo CPU")
+   ![Report utilizzo CPU](../profiling/media/cpu_use_wt_report.png "Report utilizzo CPU")
 
 ## <a name="analyze-the-cpu-usage-report"></a>Analizzare il report di Utilizzo CPU
 
@@ -59,25 +59,25 @@ Il report di diagnostica viene ordinato per **CPU totale**, dal valore maggiore 
 A partire da Visual Studio 2019, è possibile scegliere i pulsanti **Espandi percorso critico** e **Mostra percorso critico** per visualizzare le chiamate di funzione che usano la percentuale massima della CPU nella visualizzazione dell'albero delle chiamate.
 ::: moniker-end
 
-### <a name="BKMK_Call_tree_data_columns"></a> Colonne di dati Utilizzo CPU
+### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Colonne di dati Utilizzo CPU
 
 |||
 |-|-|
-|**CPU totale [unità, %]**|![Equazione dei dati % totali](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Millisecondi e percentuale dell'attività della CPU usata dalle chiamate alla funzione e dalle funzioni chiamate dalla funzione nell'intervallo di tempo selezionato. Il valore è diverso da quello del grafico della sequenza temporale di **Utilizzo CPU**, che confronta l'attività CPU totale dell'app in un intervallo di tempo con la capacità CPU disponibile totale.|
-|**CPU auto [unità, %]**|![Equazione auto %](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Millisecondi e percentuale dell'attività della CPU usata dalle chiamate alla funzione nell'intervallo di tempo selezionato, escluse le funzioni chiamate dalla funzione.|
+|**CPU totale [unità, %]**|![Equazione % dati totali](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Millisecondi e percentuale dell'attività della CPU usata dalle chiamate alla funzione e dalle funzioni chiamate dalla funzione nell'intervallo di tempo selezionato. Il valore è diverso da quello del grafico della sequenza temporale di **Utilizzo CPU**, che confronta l'attività CPU totale dell'app in un intervallo di tempo con la capacità CPU disponibile totale.|
+|**CPU auto [unità, %]**|![Equazione % auto](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Millisecondi e percentuale dell'attività della CPU usata dalle chiamate alla funzione nell'intervallo di tempo selezionato, escluse le funzioni chiamate dalla funzione.|
 |**Modulo**|Nome del modulo che contiene la funzione.
 
-### <a name="BKMK_The_CPU_Usage_call_tree"></a> Albero delle chiamate di Utilizzo CPU
+### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a>Struttura ad albero delle chiamate Utilizzo CPU
 
 Per visualizzare l'albero delle chiamate, selezionare il nodo padre nel report. La pagina **Utilizzo CPU** viene aperta con la visualizzazione **Chiamante/chiamato**. Nell'elenco a discesa **Visualizzazione corrente** selezionare **Albero delle chiamate**.
 
-#### <a name="BKMK_Call_tree_structure"></a> Struttura dell'albero delle chiamate
+#### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> Struttura dell'albero delle chiamate
 
 ::: moniker range=">=vs-2019"
-![Struttura dell'albero delle chiamate](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Struttura dell'albero delle chiamate")
+![Struttura ad albero delle chiamate](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Struttura dell'albero delle chiamate")
 ::: moniker-end
 ::: moniker range="vs-2017"
-![Struttura dell'albero delle chiamate](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Struttura dell'albero delle chiamate")
+![Struttura ad albero delle chiamate](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Struttura dell'albero delle chiamate")
 ::: moniker-end
 
 |||
@@ -85,9 +85,9 @@ Per visualizzare l'albero delle chiamate, selezionare il nodo padre nel report. 
 |![Passaggio 1](../profiling/media/procguid_1.png "ProcGuid_1")|Il nodo di livello principale nell'albero delle chiamate di Utilizzo CPU è uno pseudo-nodo.|
 |![Passaggio 2](../profiling/media/procguid_2.png "ProcGuid_2")|Nella maggior parte delle app, quando l'opzione **Mostra codice esterno** opzione è disabilitata il nodo di secondo livello è un nodo **[Codice esterno]**. Il nodo contiene il codice di sistema e di framework che avvia e arresta l'app, disegna l'interfaccia utente, controlla la pianificazione dei thread e offre altri servizi di basso livello all'app.|
 |![Passaggio 3](../profiling/media/procguid_3.png "ProcGuid_3")|Gli elementi figlio del nodo di secondo livello sono i metodi del codice utente e le routine asincrone che vengono chiamati o creati dal codice di sistema o di framework di secondo livello.|
-|![Passaggio 4](../profiling/media/procguid_4.png "ProcGuid_4")|I nodi figlio di un metodo contengono dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|
+|![Fase 4](../profiling/media/procguid_4.png "ProcGuid_4")|I nodi figlio di un metodo contengono dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|
 
-#### <a name="BKMK_External_Code"></a> Codice esterno
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a>Codice esterno
 
 Le funzioni di sistema e framework eseguite dal codice sono dette *codice esterno*. Le funzioni codice esterno avviano e arrestano l'app, disegnano l'interfaccia utente, controllano il threading e offre altri servizi di basso livello all'app. Nella maggior parte dei casi il codice esterno non risulta interessante, pertanto l'albero delle chiamate di Utilizzo CPU raccoglie le funzioni esterne di un metodo utente in un unico nodo **[Codice esterno]**.
 
@@ -108,7 +108,7 @@ Per trovare il nome di una funzione, usare la casella di ricerca. Passare il mou
 ![Ricerca di codice esterno annidato](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Ricerca di codice esterno annidato")
 ::: moniker-end
 
-### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funzioni asincrone nell'albero delle chiamate di Utilizzo CPU
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>Funzioni asincrone nell'albero delle chiamate di utilizzo della CPUAsynchronous functions in the CPU usage call tree
 
  Quando il compilatore rileva un metodo asincrono, crea una classe nascosta per controllare l'esecuzione del metodo. A livello concettuale la classe è una macchina a stati. La classe dispone di funzioni generate dal compilatore che chiamano in modo asincrono i metodi originali e i callback, l'utilità di pianificazione e gli iteratori necessari per la loro esecuzione. Quando un metodo padre chiama il metodo originale, il compilatore rimuove il metodo dal contesto di esecuzione del metodo padre ed esegue i metodi della classe nascosta nel contesto del codice di sistema e di framework che controlla l'esecuzione dell'app. Spesso, ma non sempre, i metodi asincroni vengono eseguiti in uno o più thread diversi. Il codice è visualizzato nell'albero delle chiamate **Utilizzo CPU** come figlio del nodo **[Codice esterno]** immediatamente sotto il nodo principale dell'albero.
 

@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d45bab6b909fffa107158236d9050632f114c530
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772787"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
@@ -40,9 +40,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
  Puntatore alla stringa di testo da inserire. La stringa deve contenere meno di 256 caratteri, compreso il terminatore Null.
 
 ## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito
- La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:
+ La funzione indica esito l'esito positivo o negativo tramite l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:
 
-|Enumerator|Descrizione|
+|Enumeratore|Descrizione|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|Il parametro è minore o uguale a 0. Questi valori sono riservati. L'indicatore e il commento non vengono registrati.|
 |MARK_ERROR_MODE_NEVER|La modalità di profilatura è stata impostata su NEVER al momento della chiamata della funzione. L'indicatore e il commento non vengono registrati.|
@@ -52,10 +52,10 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 |MARK_TEXTTOOLONG|La stringa supera il numero massimo di 256 caratteri. La stringa di commento viene troncata e vengono registrati l'indicatore e il commento.|
 |MARK_OK|MARK_OK viene restituito per indicare l'esito positivo.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Lo stato della profilatura per il thread che contiene la funzione di contrassegno del profilo deve essere attivo quando vengono inseriti indicatori e commenti con il comando Contrassegno di VSInstr o con le funzioni CommentMarkAtProfile, CommentMarkProfile o MarkProfile.
 
- I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno del profilo inserito in un solo thread può essere usato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread del file con estensione *vsp*.
+ I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno di profilo inserito in un thread può essere utilizzato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread dell'oggetto . *vsp.*
 
 > [!IMPORTANT]
 > Il metodo CommentMarkProfile può essere usato solo con la strumentazione.
@@ -67,7 +67,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 
 |||
 |-|-|
-|**Header**|Includere VSPerf.h|
+|**Intestazione**|Includere VSPerf.h|
 |**Libreria**|Usare VSPerf.lib|
 |**Unicode**|Implementato come `CommentMarkProfileW` (Unicode) e `CommentMarkProfileA` (ANSI).|
 
@@ -111,4 +111,4 @@ void ExerciseCommentMarkProfile()
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti per le API del profiler di Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Riferimento all'API del profiler di Visual Studio (nativo)Visual Studio profiler API reference (native)](../profiling/visual-studio-profiler-api-reference-native.md)

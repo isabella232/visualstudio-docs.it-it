@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e5495bb1f531db00d43e04cce9f5f771c88cc1a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65679197"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug con C# o Visual Basic usando il debugger di Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Avvio rapido: eseguire il debug con C# o Visual Basic usando il debugger di Visual Studio
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
@@ -31,7 +31,7 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **console**, scegliere **Modelli** e quindi scegliere **Create new Console App (.NET Core) project** (Crea nuovo progetto app console (.NET Core)). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **.NET Core** e quindi nel riquadro centrale scegliere **App console (.NET Core)**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
+    Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **.NET Core** e quindi nel riquadro centrale scegliere **App console (.NET Core)**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
     ::: moniker-end
 
      Se il modello di progetto **App console (.NET Core)** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**, aprendo così il programma di installazione Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** e **.NET Core**, quindi scegliere **Modifica**.
@@ -132,7 +132,7 @@ Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual S
 
 1. Per impostare il punto di interruzione, fare clic nella barra di navigazione a sinistra della chiamata di funzione `doWork` o selezionare la riga di codice e premere **F9**.
 
-    ![Impostare un punto di interruzione](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Impostare un punto di interruzione")
+    ![Impostare un punto di interruzioneSet a breakpoint](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Imposta punto di interruzione")
 
 2. Premere **F5** o scegliere **Debug > Avvia debug**.
 
@@ -147,9 +147,9 @@ Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual S
 
 Sono disponibili diversi comandi per indicare al debugger di continuare. Viene illustrato un utile comando di esplorazione del codice disponibile a partire da Visual Studio 2017.
 
-Mentre l'elaborazione è ferma al punto di interruzione, passare il mouse sopra l'istruzione `c1.AddLast(20)` finché appare il pulsante verde **Esegui fino alla riga selezionata** ![Esegui fino alla riga selezionata](../debugger/media/dbg-tour-run-to-click.png "RunToClick") quindi premere il pulsante **Esegui fino alla riga selezionata**.
+Mentre l'elaborazione è ferma al punto di interruzione, passare il mouse sopra l'istruzione `c1.AddLast(20)` finché appare il pulsante verde **Esegui fino alla riga selezionata**![Esegui fino alla riga selezionata](../debugger/media/dbg-tour-run-to-click.png "Eseguire EseguiClic") quindi premere il pulsante **Esegui fino alla riga selezionata**.
 
-![Esegui fino alla riga selezionata](../debugger/media/dbg-qs-run-to-click-csharp.png "Esegui fino alla riga selezionata")
+![Esegui per fare clic su](../debugger/media/dbg-qs-run-to-click-csharp.png "Esegui fino alla riga selezionata")
 
 L'app riprende l'esecuzione, esegue la chiamata a `doWork` e si blocca sulla riga di codice in cui si è fatto clic.
 
@@ -175,7 +175,7 @@ Se durante una sessione di debug, nel codice si rileva una modifica che si desid
 
 2. Premere **F10** (o selezionare **Debug > Esegui istruzione/routine**) alcune volte per far avanzare il debugger ed eseguire il codice modificato.
 
-    ![Modifica e continua](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "Modifica e continua")
+    ![Modifica e continuazione](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "Modifica e continuazione")
 
     **F10** fa avanzare il debugger un'istruzione alla volta, ma ignora le funzioni anziché fermarsi. Il codice ignorato viene comunque eseguito.
 
@@ -186,4 +186,4 @@ Per altre informazioni sull'uso della funzione di modifica e continua e sulle li
 In questa esercitazione si è appreso come avviare il debugger, eseguire il codice ed esaminare le variabili. Sono disponibili una panoramica delle funzionalità del debugger e collegamenti a ulteriori informazioni.
 
 > [!div class="nextstepaction"]
-> [Presentazione del debugger](../debugger/debugger-feature-tour.md)
+> [Primo sguardo al debugger](../debugger/debugger-feature-tour.md)

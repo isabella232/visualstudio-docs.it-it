@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c211773f20ab4643b62c8c71fc6ae6581a91987
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747896"
 ---
 # <a name="list-source-command"></a>Comando Elenca origine
@@ -31,26 +31,26 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 [/Line:number] [/ShowLineNumbers:yes|no]
 ```
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Switch
 /Count:`number`
 
-Parametro facoltativo. Specifica il numero di righe da visualizzare.
+Facoltativa. Specifica il numero di righe da visualizzare.
 
 /Current
 
-Parametro facoltativo. Visualizza la riga corrente.
+Facoltativa. Visualizza la riga corrente.
 
 /File:`filename`
 
-Parametro facoltativo. Percorso del file da visualizzare. Se non viene specificato alcun nome file, il comando visualizza il codice sorgente per la riga dell'istruzione corrente.
+Facoltativa. Percorso del file da visualizzare. Se non viene specificato alcun nome file, il comando visualizza il codice sorgente per la riga dell'istruzione corrente.
 
 /Line:`number`
 
-Parametro facoltativo. Visualizza un numero di riga specifico.
+Facoltativa. Visualizza un numero di riga specifico.
 
 /ShowLineNumbers:`yes|no`
 
-Parametro facoltativo. Specifica se visualizzare i numeri di riga.
+Facoltativa. Specifica se visualizzare i numeri di riga.
 
 ## <a name="example"></a>Esempio
 In questo esempio viene elencato il codice sorgente dalla riga 4 del file Form1.vb, con i numeri di riga visibili.
@@ -61,5 +61,5 @@ Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNum
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
 - [Finestra di comando](../../ide/reference/command-window.md)

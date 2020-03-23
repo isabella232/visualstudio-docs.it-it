@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62961688"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Passaggio 4: Usare il modello di progetto Web Django completo
@@ -35,19 +35,19 @@ Il modello offre anche l'autenticazione di base, come descritto nel passaggio 5.
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Passaggio 4-1: Creare un progetto da un modello
 
-1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningDjango** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **File** > **Nuovo** > **Progetto**.
+1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningDjango** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si desidera utilizzare una nuova soluzione, selezionare **File** > **nuovo** > **progetto.**
 
-1. Nella finestra di dialogo Nuovo progetto cercare e selezionare il modello **Progetto Web Django**, assegnare al progetto il nome "DjangoWeb" e selezionare **OK**.
+1. Nella finestra di dialogo del nuovo progetto, cercare e selezionare il modello **Django Web Project,** chiamare il progetto "DjangoWeb" e scegliere **OK**.
 
 1. Poiché il modello include di nuovo un file *requirements.txt*, Visual Studio chiede dove installare queste dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite.
 
-1. Al termine della configurazione dell'ambiente virtuale in Visual Studio, seguire le istruzioni nel file *readme.html* visualizzato per creare un utente Django con privilegi avanzati, ovvero un amministratore. È sufficiente fare clic con il pulsante destro del mouse sul progetto di Visual Studio e scegliere il comando **Python** > **Creazione Super User Django**, quindi seguire le indicazioni. Assicurarsi di registrare il nome utente e la password, perché verranno usati per provare le funzionalità di autenticazione dell'app.
+1. Al termine della configurazione dell'ambiente virtuale in Visual Studio, seguire le istruzioni nel file *readme.html* visualizzato per creare un utente Django con privilegi avanzati, ovvero un amministratore. È sufficiente fare clic con il pulsante destro del mouse sul progetto di Visual Studio e selezionare il comando **Python** > **Django Create Superuser** , quindi seguire le istruzioni visualizzate. Assicurarsi di registrare il nome utente e la password, perché verranno usati per provare le funzionalità di autenticazione dell'app.
 
-1. Impostare il progetto **DjangoWeb** come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse su tale progetto in **Esplora soluzioni** e selezionando **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
+1. Impostare il progetto **DjangoWeb** come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse su tale progetto in **Esplora soluzioni** e selezionando Imposta come progetto di **avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
 
     ![Progetto DjangoWeb mostrato in Esplora soluzioni come progetto di avvio](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti per eseguire il server:
+1. Selezionare **Debug** > di**avvio debug** (**F5**) o utilizzare il pulsante **Server Web** sulla barra degli strumenti per eseguire il server:
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -61,7 +61,7 @@ Il modello offre anche l'autenticazione di base, come descritto nel passaggio 5.
 
 1. È possibile lasciare l'app in esecuzione per le sezioni seguenti.
 
-    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (in genere **env**) e scegliere **Ignora questi elementi locali**.
+    Se si vuole arrestare l'app ed [eseguire il commit delle modifiche nel controllo del codice sorgente](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), aprire prima di tutto la pagina **Modifiche** in **Team Explorer**, fare clic con il pulsante destro del mouse sulla cartella per l'ambiente virtuale (generalmente **env**) e scegliere **Ignora questi elementi locali**.
 
 ### <a name="examine-what-the-template-creates"></a>Esaminare gli elementi creati dal modello
 
@@ -73,11 +73,11 @@ Al livello più ampio il modello "Progetto Web Django" crea la struttura seguent
   - *requirements.txt*, che contiene una dipendenza da Django 1.x.
   - *readme.html*, un file visualizzato in Visual Studio dopo la creazione del progetto. Come indicato nella sezione precedente, seguire le istruzioni riportate qui per creare un account utente con privilegi avanzati (amministratore) per l'app.
 - La cartella *app* contiene tutti i file dell'app, tra cui le visualizzazioni, i modelli, i test, i moduli, e i file statici (vedere il passaggio 4-2). È in genere opportuno rinominare questa cartella per usare un nome di app più distintivo.
-- La cartella *DjangoWeb* (progetto Django) contiene i normali file di progetto Django: *\_\_init\_\_.py*, *settings.py*, *urls.py* e *wsgi.py*. Tramite il modello di progetto, *settings.py* è già configurato per l'app e il file di database, mentre *urls.py* è già configurato con route a tutte le pagine dell'app, incluso il modulo di accesso.
+- La cartella *DjangoWeb* (progetto Django) contiene i file di progetto Tipici di Django: * \_ \_\_\_init .py*, *settings.py*, *urls.py*e *wsgi.py*. Tramite il modello di progetto, *settings.py* è già configurato per l'app e il file di database, mentre *urls.py* è già configurato con route a tutte le pagine dell'app, incluso il modulo di accesso.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Domanda: È possibile condividere un ambiente virtuale tra progetti di Visual Studio?
 
-Risposta: Sì, ma considerare che diversi progetti probabilmente nel tempo useranno pacchetti diversi e di conseguenza un ambiente virtuale condiviso deve contenere tutti i pacchetti per tutti i progetti che lo usano.
+Risposta: Sì, ma tenere presente che diversi progetti probabilmente usano pacchetti diversi nel tempo e di conseguenza un ambiente virtuale condiviso deve contenere tutti i pacchetti per tutti i progetti che lo usano.
 
 Ciononostante, per usare un ambiente virtuale esistente, eseguire le operazioni seguenti:
 
@@ -219,4 +219,4 @@ Risposta: La mancanza del carattere '$' finale nell'espressione regolare è una 
 
 - [Distribuire l'app Web nel Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 4 - views](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (Scrittura della prima app Django, parte 4 - Visualizzazioni) (docs.djangoproject.com)
-- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

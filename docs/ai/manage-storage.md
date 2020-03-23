@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d0f2522117f4c5a5b85e99e2779d10cffcb7f22
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72777404"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Esplorare lo spazio di archiviazione per caricare dati o per scaricare modelli e log
@@ -30,6 +30,6 @@ ms.locfileid: "72777404"
 
 1. Aprire [Cronologia processi](job-details.md)
 2. Selezionare il processo.
-3. Fare clic su **Cartella di lavoro** oppure fare clic su **StdOut/Stderr** per l'accesso rapido a questi file di log importanti.
+3. Fare clic su **Cartella di lavoro** o su **StdOut / Stderr** per accedere rapidamente a questi importanti file di registro.
 
     ![storage](media/manage-storage/job-workingfolder.png)

@@ -10,17 +10,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772079"
 ---
 # <a name="profiling-tools-apis"></a>API per strumenti di profilatura
 
 È possibile inserire i metodi gestiti o nativi delle API degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per controllare la raccolta di dati in un'esecuzione della profilatura. Questa sezione descrive i metodi delle API e come usarli.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 [Riferimenti per le API del profiler di Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
 

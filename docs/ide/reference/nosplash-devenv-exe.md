@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62950653"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
@@ -33,11 +33,11 @@ devenv /NoSplash [File1[ FileN]...]
 
 - *File1*
 
-  Facoltativo. File da aprire in un'istanza esistente di Visual Studio. Se non esiste alcuna istanza di Visual Studio, viene creata una nuova istanza con un layout di finestra semplificato e lo strumento apre *File1* nella nuova istanza.
+  Facoltativa. File da aprire in un'istanza esistente di Visual Studio. Se non esiste alcuna istanza di Visual Studio, viene creata una nuova istanza con un layout di finestra semplificato e lo strumento apre *File1* nella nuova istanza.
 
 - *FileN*
 
-  Facoltativo. Uno o più file aggiuntivi da aprire nell'istanza esistente di Visual Studio.
+  Facoltativa. Uno o più file aggiuntivi da aprire nell'istanza esistente di Visual Studio.
 
 ## <a name="remarks"></a>Osservazioni
 

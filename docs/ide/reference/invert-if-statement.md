@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a0419100cbc5fcd543eb250fa85cbfe2ebd1c97f
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531593"
 ---
 # <a name="invert-if-statement"></a>Istruzione Invert if
@@ -24,11 +24,11 @@ Questo refactoring si applica a:
 - C#
 - Visual Basic
 
-**Cosa:** consente di invertire un'istruzione `if` o `if else` senza modificare il significato del codice.
+**Cosa:** Consente di `if` invertire `if else` un'istruzione o senza modificare il significato del codice.
 
-**Quando:** quando si ha un'istruzione `if` o `if else` che potrebbe essere più chiara se invertita.
+**Quando:** Quando si `if` dispone `if else` di un'affermazione o che sarebbe meglio capito quando invertito.
 
-**Perché?:** l'inversione manuale di un'istruzione `if` o `if else` può richiedere molto più tempo e introdurre errori. Questa correzione del codice consente di eseguire automaticamente questo refactoring.
+**Perché:** L'inversione manuale di un'istruzione `if` o `if else` può richiedere molto più tempo ed eventualmente introdurre errori. Questa correzione del codice consente di eseguire automaticamente questo refactoring.
 
 ## <a name="invert-if-statement-refactoring"></a>Refactoring dell'istruzione Invert if
 

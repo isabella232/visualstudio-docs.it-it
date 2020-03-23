@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969171"
 ---
 # <a name="pull-members-up"></a>Pull di membri
@@ -25,13 +25,13 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** consente di eseguire il pull di membri al tipo di base.
+**Cosa:** Consente di estrarre i membri fino al tipo di base.
 
-**Quando:** è stata implementata un'interfaccia e si vuole spostare un membro al tipo di base.
+**Quando:** È stata implementata un'interfaccia e si desidera spostare un membro nel tipo di base.
 
-**Perché?:** il pull di membri consente ad altre implementazioni dell'interfaccia di ereditare anche questi membri.
+**Perché:** Il pull dei membri consente ad altre implementazioni dell'interfaccia di ereditare anche tali membri.
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore in qualsiasi membro di un'interfaccia implementata.
 2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.

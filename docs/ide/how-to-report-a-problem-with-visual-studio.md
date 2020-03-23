@@ -9,12 +9,12 @@ author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97080d4ee2240725f009505cda8429ba8f5975d5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947693"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64556714"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "62947693"
 
 È possibile segnalare un problema da Visual Studio o dal relativo programma di installazione tramite lo strumento Feedback incluso. Lo strumento Feedback consente di includere facilmente le informazioni di diagnostica nel feedback e aiuta i team di Visual Studio a diagnosticare e risolvere i problemi in modo molto più efficace. Questa è la procedura per segnalare un problema.
 
-1. **In Visual Studio**, selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema. È anche possibile accedere allo strumento di feedback dal menu **?** > **Invia commenti e suggerimenti** > **Segnala un problema**.
+1. **In Visual Studio**, selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema. È inoltre possibile accedere allo strumento di feedback dal menu **Aiuta a** > **inviare commenti e suggerimenti** > **- Un problema**.
 ![Elemento popup per la segnalazione di un problema nella community degli sviluppatori di Visual Studio](media/vsfeedbackentry.png) In alternativa, segnalare un problema nel **programma di installazione di Visual Studio** se non è possibile installare Visual Studio o non è possibile accedere allo strumento di feedback all'interno di Visual Studio.  Nel programma di installazione selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema.
 ![Elemento popup per la segnalazione di un problema nella community degli sviluppatori di Visual Studio](media/installer.png)
 
@@ -54,7 +54,7 @@ ms.locfileid: "62947693"
 
    ![Segnalare un problema nuovo](../ide/media/report-new-problem.png)
 
-1. Selezionare **Avanti** per passare alla scheda **Allegati**, dove è possibile acquisire la schermata corrente per inviarla a Microsoft. Per allegare screenshot aggiuntivi o altri file, scegliere **Allega altri file**.
+1. Selezionare **Avanti** per passare alla scheda **Allegati.** Qui puoi acquisire la schermata corrente per inviarla a Microsoft. Per allegare screenshot aggiuntivi o altri file, scegliere **Allega altri file**.
 
    ![Allegare uno screenshot alla segnalazione di un problema di Visual Studio](media/report-a-problem-screenshot.png)
 
@@ -72,7 +72,7 @@ I file di traccia e di dump di heap sono utili per diagnosticare i problemi. Sia
 
 1. Selezionare la scheda **Registra**.
 
-1. In **Registra le azioni** selezionare l'istanza corrente di Visual Studio, se è possibile riprodurre il problema all'interno di essa. Se non è possibile, ad esempio se Visual Studio è bloccato, selezionare  **\<Crea una nuova istanza>** per registrare le azioni in una nuova istanza di Visual Studio.
+1. In **Registra le azioni** selezionare l'istanza corrente di Visual Studio, se è possibile riprodurre il problema all'interno di essa. Se non è possibile, ad esempio se Visual Studio è bloccato, selezionare ** \<Crea una nuova istanza>** per registrare le azioni in una nuova istanza di Visual Studio.If you can't, for example if Visual Studio is hung, select Create a new instance>to record the actions in a new instance of Visual Studio.
 
 1. Selezionare **Avvia registrazione**. Concedere le autorizzazioni per eseguire lo strumento.
 
@@ -122,8 +122,8 @@ Se non si vuole segnalare un problema, ma suggerire una funzionalità, esiste un
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Comunicazioni con Microsoft](../ide/talk-to-us.md)
+* [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)
 * [Segnalare un problema con Visual Studio per Mac](/visualstudio/mac/report-a-problem)
 * [Segnalare un problema con C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Community di sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/)
+* [Community per sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/)
 * [Privacy dei dati della community degli sviluppatori](developer-community-privacy.md)

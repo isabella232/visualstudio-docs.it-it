@@ -1,15 +1,15 @@
 ---
 ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68143540"
 ---
 
 1. Nel computer in cui è aperto il progetto ASP.NET in Visual Studio fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Pubblica**.
 
-1. Se sono stati configurati tutti i profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Fare clic su **Crea nuovo profilo**.
+1. Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Fare clic su **Crea nuovo profilo**.
 
 1. Nella finestra di dialogo **Selezionare una destinazione di pubblicazione** fare clic su **Importa profilo**.
 

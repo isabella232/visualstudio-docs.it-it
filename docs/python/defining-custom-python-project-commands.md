@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957674"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definire comandi personalizzati per i progetti Python
@@ -42,9 +42,9 @@ Ogni comando personalizzato può fare riferimento a un file di Python, un modulo
 
 ## <a name="walkthrough-add-a-command-to-a-project-file"></a>Procedura dettagliata: Aggiungere un comando a un file di progetto
 
-Per acquisire familiarità con i comandi personalizzati, in questa sezione viene illustrato un semplice esempio che esegue il file di avvio di un progetto direttamente usando *python.exe*. (Questo comando equivale in effetti a usare **Debug** > **Avvia senza eseguire debug**.)
+Per acquisire familiarità con i comandi personalizzati, in questa sezione viene illustrato un semplice esempio che esegue il file di avvio di un progetto direttamente usando *python.exe*. (Tale comando è effettivamente lo stesso come l'utilizzo di **Avvio di debug** > **senza eseguire il debug**.)
 
-1. Creare un nuovo progetto denominato "Python-CustomCommands" usando il modello **Applicazione Python**. Se non si conosce la procedura, vedere le istruzioni disponibili in [Guida introduttiva: Creare un progetto Python da un modello](quickstart-02-python-in-visual-studio-project-from-template.md).
+1. Creare un nuovo progetto denominato "Python-CustomCommands" usando il modello **Applicazione Python**. (Se non si conosce già la procedura, vedere [Guida rapida: creare un progetto Python da un modello](quickstart-02-python-in-visual-studio-project-from-template.md) per istruzioni.)
 
 1. In *Python_CustomCommands.py*, aggiungere il codice `print("Hello custom commands")`.
 
@@ -127,40 +127,40 @@ Il formato generale dell'elemento `<Target>` è indicato nel pseudo-codice segue
   </Target>
 ```
 
-Per fare riferimento alle proprietà o alle variabili di ambiente del progetto nei valori di attributo, usare il nome all'interno di un token `$()`, ad esempio `$(StartupFile)` e `$(MSBuildProjectDirectory)`. Per altre informazioni, vedere [Proprietà di MSBuild](../msbuild/msbuild-properties.md).
+Per fare riferimento alle proprietà o alle variabili di ambiente del progetto nei valori di attributo, usare il nome all'interno di un token `$()`, ad esempio `$(StartupFile)` e `$(MSBuildProjectDirectory)`. Per ulteriori informazioni, vedere [Proprietà MSBuild](../msbuild/msbuild-properties.md).
 
 ### <a name="target-attributes"></a>Attributi Target
 
-| Attributo | Obbligatorio | Description |
+| Attributo | Obbligatoria | Descrizione |
 | --- | --- | --- |
-| nome | Sì | Identificatore per il comando all'interno del progetto di Visual Studio. Questo nome deve essere aggiunto al gruppo di proprietà `<PythonCommands>` per visualizzare il comando nel sottomenu Python. |
-| Label | Sì | Nome visualizzato dell'interfaccia utente visualizzato nel sottomenu Python. |
-| Valore restituito | Sì | Deve contenere `@(Commands)`, che identifica la destinazione come comando. |
+| Nome | Sì | Identificatore per il comando all'interno del progetto di Visual Studio. Questo nome deve essere aggiunto al gruppo di proprietà `<PythonCommands>` per visualizzare il comando nel sottomenu Python. |
+| Etichetta | Sì | Nome visualizzato dell'interfaccia utente visualizzato nel sottomenu Python. |
+| Valori di codice restituiti | Sì | Deve contenere `@(Commands)`, che identifica la destinazione come comando. |
 
 ### <a name="createpythoncommanditem-attributes"></a>Attributi CreatePythonCommandItem
 
 Per tutti i valori di attributo non viene fatta distinzione tra maiuscole e minuscole.
 
-| Attributo | Obbligatorio | Description |
+| Attributo | Obbligatoria | Descrizione |
 | --- | --- | --- |
-| TargetType | Sì | Specifica il contenuto dell'attributo Target e come viene usato insieme all'attributo Arguments:<ul><li>**executable**: esegue il file eseguibile specificato in Target, aggiungendo il valore indicato in Arguments, come se venisse immesso direttamente nella riga di comando. Il valore deve contenere solo un nome di programma senza argomenti.</li><li>**script**: esegue *python.exe* con il nome di file contenuto in Target, seguito dal valore indicato in Arguments.</li><li>**module**: esegue `python -m` seguito dal nome del modulo contenuto in Target e dal valore indicato in Arguments.</li><li>**code**: esegue il codice inline contenuto in Target. Il valore di Arguments viene ignorato.</li><li>**pip**: esegue `pip` con il comando contenuto in Target seguito da Arguments. Se ExecuteIn è impostato su "output", tuttavia, pip presuppone il comando `install` e usa Target come nome del pacchetto.</li></ul> |
-| destinazione | Sì | Nome del file, nome del modulo, codice o comando pip da usare, a seconda di TargetType. |
+| TargetType | Sì | Specifica il contenuto dell'attributo Target e come viene usato insieme all'attributo Arguments:<ul><li>**executable**: eseguire il file eseguibile denominato in Target, aggiungendo il valore in Arguments, come in caso di immissione diretta nella riga di comando. Il valore deve contenere solo un nome di programma senza argomenti.</li><li>**script**: eseguire *python.exe* con il nome di file in Target seguito dal valore in Arguments.</li><li>**module**: eseguire `python -m` seguito dal nome del modulo in Target seguito dal valore in Arguments.</li><li>**code**: eseguire il codice inline contenuto in Target. Il valore di Arguments viene ignorato.</li><li>**pip**: eseguire `pip` con il comando in Target seguito da Arguments. Se ExecuteIn è impostato su "output", tuttavia, pip presuppone il comando `install` e usa Target come nome del pacchetto.</li></ul> |
+| Destinazione | Sì | Nome del file, nome del modulo, codice o comando pip da usare, a seconda di TargetType. |
 | Argomenti | Facoltativo | Specifica una stringa di argomenti (se presenti) da assegnare alla destinazione. Si noti che quando TargetType è `script`, gli argomenti vengono passati al programma Python e non a *python.exe*. Ignorato per TargetType `code`. |
-| ExecuteIn | Sì | Specifica l'ambiente in cui eseguire il comando:<ul><li>**console**: (impostazione predefinita) esegue Target e gli argomenti come se venissero immessi direttamente nella riga di comando. Viene visualizzata una finestra di comando durante l'esecuzione di Target, quindi viene chiusa automaticamente.</li><li>**consolepause**: come console, ma attende la pressione di un tasto prima di chiudere la finestra.</li><li>**output**: esegue Target e visualizza i risultati nella finestra **Output** in Visual Studio. Se TargetType è "pip", Visual Studio usa Target come nome del pacchetto e aggiunge Arguments.</li><li>**repl**: esegue Target nella finestra [Python interattivo](python-interactive-repl-in-visual-studio.md). Il nome visualizzato facoltativo viene usato come titolo della finestra.</li><li>**none**: stesso comportamento di console.</li></ul>|
+| ExecuteIn | Sì | Specifica l'ambiente in cui eseguire il comando:<ul><li>**console**: (impostazione predefinita) esegue Target e gli argomenti come se fossero immessi direttamente nella riga di comando. Viene visualizzata una finestra di comando durante l'esecuzione di Target, quindi viene chiusa automaticamente.</li><li>**consolepause**: come console, ma attende una pressione di tasto prima di chiudere la finestra.</li><li>**output**: esegue Target e visualizza i risultati nella finestra di **Output** in Visual Studio. Se TargetType è "pip", Visual Studio usa Target come nome del pacchetto e aggiunge Arguments.</li><li>**repl**: esegue Target nella [finestra interattiva di Python](python-interactive-repl-in-visual-studio.md). Il nome visualizzato facoltativo viene usato per il titolo della finestra.</li><li>**none**: stesso comportamento di console.</li></ul>|
 | WorkingDirectory | Facoltativo | Cartella in cui eseguire il comando. |
 | ErrorRegex<br>WarningRegEx | Facoltativo | Usato solo quando è ExecuteIn è `output`. Entrambi i valori specificano un'espressione regolare con cui Visual Studio analizza l'output del comando per visualizzare errori e avvisi nella relativa finestra **Elenco errori**. Se non specificato, il comando non influisce sulla finestra **Elenco errori**. Per altre informazioni su cosa prevede Visual Studio , vedere [Gruppi Capture denominati](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Facoltativo | Elenco di requisiti del pacchetto per il comando con lo stesso formato di [*requirements.txt*](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). Il comando **Esegui PyLint**, ad esempio, specifica `pylint>=1.0.0`. Prima di eseguire il comando, Visual Studio verifica che siano installati tutti i pacchetti nell'elenco. Visual Studio usa pip per installare tutti i pacchetti mancanti. |
-| Ambiente | Facoltativo | Stringa di variabili di ambiente da definire prima di eseguire il comando. Ogni variabile usa il formato \<NAME>=\<VALUE> con più variabili separate da punti e virgola. Una variabile con più valori deve essere racchiusa tra virgolette singole o doppie, come in 'NOME=VALORE1;VALORE2'. |
+| Environment | Facoltativo | Stringa di variabili di ambiente da definire prima di eseguire il comando. Ogni variabile usa il formato \<NAME>=\<VALUE> con più variabili separate da punti e virgola. Una variabile con più valori deve essere racchiusa tra virgolette singole o doppie, come in 'NOME=VALORE1;VALORE2'. |
 
 #### <a name="named-capture-groups-for-regular-expressions"></a>Gruppi Capture denominati per le espressioni regolari
 
 Durante l'analisi di errori e avvisi nell'output di un comando, Visual Studio presuppone che le espressioni regolari nei valori `ErrorRegex` e `WarningRegex` usino i gruppi denominati seguenti:
 
 - `(?<message>...)`: testo dell'errore
-- `(?<code>...)`: Codice di errore
-- `(?<filename>...)`: nome del file per il quale viene segnalato l'errore
-- `(?<line>...)`: numero di riga della posizione nel file per il quale viene segnalato l'errore.
-- `(?<column>...)`: numero di colonna della posizione nel file per il quale viene segnalato l'errore.
+- `(?<code>...)`: codice di errore
+- `(?<filename>...)`: nome del file per cui viene segnalato l'errore
+- `(?<line>...)`: numero di riga della posizione nel file per cui viene segnalato l'errore
+- `(?<column>...)`: numero di colonna della posizione nel file per cui viene segnalato l'errore
 
 Ad esempio, PyLint produce avvisi nel formato seguente:
 
@@ -306,7 +306,7 @@ Per esaminare la definizione dei comandi **Avvia il server** e **Avvia il server
   </Target>
 ```
 
-*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione.*
+*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilizzato con autorizzazione.*
 
 ### <a name="generate-windows-installer"></a>Generare un programma di installazione Windows
 
@@ -325,7 +325,7 @@ Per esaminare la definizione dei comandi **Avvia il server** e **Avvia il server
   </Target>
 ```
 
-*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione.*
+*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilizzato con autorizzazione.*
 
 ### <a name="generate-wheel-package"></a>Generare un pacchetto wheel
 
@@ -345,7 +345,7 @@ Per esaminare la definizione dei comandi **Avvia il server** e **Avvia il server
 </Target>
 ```
 
-*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione.*
+*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), utilizzato con autorizzazione.*
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -386,7 +386,7 @@ I valori di attributo possono essere vuoti se si fa riferimento a una proprietà
 
 ### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>Blocco e arresto anomalo di Visual Studio durante l'esecuzione del comando
 
-Probabilmente si sta tentando di eseguire un comando della console con `ExecuteIn="output"`, nel qual caso potrebbe verificarsi un arresto anomalo di Visual Studio durante il tentativo di analizzare l'output. In alternativa, utilizzare `ExecuteIn="console"`. (Vedere [Problema 3682](https://github.com/Microsoft/PTVS/issues/3681).)
+Probabilmente si sta tentando di eseguire un comando della console con `ExecuteIn="output"`, nel qual caso potrebbe verificarsi un arresto anomalo di Visual Studio durante il tentativo di analizzare l'output. Usare invece `ExecuteIn="console"`. (Vedere [Problema 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 
 ### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file"></a>Il comando eseguibile "non è riconosciuto come comando interno o esterno, un programma eseguibile o un file batch"
 

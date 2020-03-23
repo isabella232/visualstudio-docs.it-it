@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774589"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
@@ -36,7 +36,7 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>Per creare un account utente con autorizzazioni utente
 
-1. Fare clic con il pulsante destro del mouse su **Risorse del computer** e quindi fare clic su **Gestione**.
+1. Fare clic con il pulsante destro del mouse su **Risorse del computer,** quindi **scegliere Gestisci**.
 
      Verrà aperta la finestra **Gestione computer**.
 
@@ -44,9 +44,9 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 3. Fare clic con il pulsante destro del mouse sulla cartella **Utenti** e quindi fare clic su **Nuovo utente**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo utente**.
+     Verrà visualizzata la finestra di dialogo **New User** (Nuovo utente).
 
-4. Completare i campi di questa finestra di dialogo con le informazioni relative all'account utente che si sta creando. Specificare una password. Facoltativamente, selezionare la casella di controllo che richiede all'utente di cambiare la password al successivo accesso.
+4. Completare i campi di questa finestra di dialogo con le informazioni relative all'account utente che si sta creando. Consente di specificare una password. Facoltativamente, selezionare la casella di controllo che richiede all'utente di cambiare la password al successivo accesso.
 
 5. Fare clic su **Crea** e quindi su **Chiudi**.
 
@@ -64,9 +64,9 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 2. Fare clic con il pulsante destro del mouse sulla cartella e quindi fare clic su **Proprietà**.
 
-     Verrà visualizzata la finestra di dialogo **Proprietà \<nome cartella>** .
+     Viene visualizzato il nome della cartella> finestra di dialogo ** \<Proprietà.**
 
-3. Fare clic sulla scheda **Sicurezza** .
+3. Fare clic sulla scheda **Sicurezza**.
 
 4. Fare clic sul nome dell'account utente nella casella **Utenti e gruppi**.
 
@@ -122,6 +122,6 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-[VSPerfCmd](../profiling/vsperfcmd.md)
-[Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md)
+[Configurare le sessioni](../profiling/configuring-performance-sessions.md)
+di prestazioni[VSPerfCmd](../profiling/vsperfcmd.md)
+[Profiling e Windows Vista Security](../profiling/profiling-and-windows-vista-security.md)

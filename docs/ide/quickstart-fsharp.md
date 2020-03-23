@@ -12,10 +12,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180318"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Guida introduttiva: Usare Visual Studio per creare il primo servizio Web ASP.NET Core in F\#
@@ -24,13 +24,13 @@ In questa introduzione di 5-10 minuti a F# in Visual Studio verrà creata un'app
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ Per prima cosa, verrà creato un progetto API Web ASP:NET Core. Il tipo di proge
 
 1. Aprire Visual Studio.
 
-2. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+2. Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual F#** e quindi scegliere **Web**. Nel riquadro centrale, scegliere **Applicazione Web ASP.NET Core**, quindi scegliere **OK**.
 
@@ -50,7 +50,7 @@ Per prima cosa, verrà creato un progetto API Web ASP:NET Core. Il tipo di proge
 
      ![Carico di lavoro ASP.NET nel programma di installazione di Visual Studio](../ide/media/quickstart-aspnet-workload.png)
 
-4.Nella finestra di dialogo **Nuova applicazione Web ASP.NET Core** selezionare **ASP.NET Core 2.1** nel menu a discesa in alto. (Se non viene visualizzato **ASP.NET Core 2.1** nell'elenco, installarlo seguendo il collegamento **Download** visualizzato in una barra gialla nella parte superiore della finestra di dialogo.) Scegliere **OK**.
+4.Nella finestra di dialogo **Nuova applicazione Web ASP.NET Core** selezionare **ASP.NET Core 2.1** nel menu a discesa in alto. Se non viene visualizzato **ASP.NET Core 2.1** nell'elenco, installarlo seguendo il collegamento **Download** che dovrebbe essere visualizzato in una barra gialla nella parte superiore della finestra di dialogo. Scegliere **OK**.
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Per prima cosa, verrà creato un progetto API Web ASP:NET Core. Il tipo di proge
 
 1. Aprire Visual Studio.
 
-2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+2. Nella finestra di avvio scegliere **Crea un nuovo progetto.**
 
 3. Nella pagina **Crea un nuovo progetto** digitare **f# web** nella casella di ricerca e quindi scegliere il modello di progetto **Applicazione Web ASP.NET Core**. Scegliere **Avanti**.
 
@@ -89,9 +89,9 @@ Il codice dovrebbe essere simile al seguente nell'editor:
 
 ![Membro Get modificato](../ide/media/hello-world-fs-get-member.png)
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
-1. Premere **CTRL**+**F5** per eseguire l'applicazione e aprirla in un Web browser.
+1. Premere **CTRL**+**F5** per eseguire l'applicazione e aprirla in un browser Web.
 
 2. La pagina dovrebbe passare alla route `/api/values`, ma in caso contrario, immettere `https://localhost:44396/api/values` nel browser.
 
@@ -99,9 +99,9 @@ Il Web browser visualizzerà ora codice JSON corrispondente a quanto digitato in
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di F#, ASP.NET Core e dell'IDE di Visual Studio. Per vedere l'app in esecuzione in un server pubblico, selezionare il pulsante seguente.
+La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di F#, ASP.NET Core e dell'IDE di Visual Studio. Per visualizzare l'app in esecuzione in un server pubblico, selezionare il pulsante seguente.
 
 > [!div class="nextstepaction"]
-> [Distribuire l'app nel Servizio app di Azure](../deployment/quickstart-deploy-to-azure.md)
+> [Deploy the app to Azure App Service](../deployment/quickstart-deploy-to-azure.md) (Pubblicare un'app nel servizio App di Azure)
 
 Per altre informazioni su F#, vedere la [Guida a F#](/dotnet/fsharp/index) ufficiale.

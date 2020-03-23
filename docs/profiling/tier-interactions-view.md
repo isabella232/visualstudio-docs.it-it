@@ -13,17 +13,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778141"
 ---
-# <a name="tier-interactions-view"></a>Interazioni tra livelli (visualizzazione)
+# <a name="tier-interactions-view"></a>Visualizzazione Interazioni tra livelli
 
 La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui tempi di esecuzione nelle funzioni di applicazioni multilivello che comunicano con i database tramite [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. I dati vengono raccolti solo per le chiamate di funzione sincrone.
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 
@@ -51,7 +51,7 @@ La visualizzazione Interazioni mostra i dati di interazione tra livelli in due r
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Testo del comando**|Query SQL della richiesta.|
+|**Testo comando**|Query SQL della richiesta.|
 |**Conteggio query**|Numero di volte in cui è stata eseguita la query.|
 |**Tempo totale trascorso**|Tempo totale impiegato per l'esecuzione delle istanze della query.|
 |**Tempo massimo trascorso**|Tempo massimo impiegato per l'esecuzione di un'istanza della query.|

@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a5c736be59c257d98085831971d6b7b9dc2a0ef3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72666276"
 ---
-# <a name="options-text-editor--f--code-fixes"></a>Opzioni: editor di testo F# > > correzioni del codice
+# <a name="options-text-editor--f--code-fixes"></a>Opzioni: Editor di testo > codice > F .
 
-Usare la pagina delle opzioni Correzioni del codice per specificare le impostazioni che consentono di identificare gli errori del codice e offrono soluzioni. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** e quindi scegliere **Editor di testo** > **F#**  > **Correzioni del codice**.
+Usare la pagina delle opzioni Correzioni del codice per specificare le impostazioni che consentono di identificare gli errori del codice e offrono soluzioni. Per accedere a questa pagina delle opzioni, scegliere**Opzioni** **degli strumenti** > , quindi scegliere Opzioni codice**F ,** >  **Editor** > di testo **.**
 
 ## <a name="code-fixes"></a>Correzioni del codice
 

@@ -1,5 +1,5 @@
 ---
-title: "File Web. config: Instrument & profilatura dinamica dell'app Web ASP.NET compilata"
+title: 'File Web.Config: Instrumentare & profilo dinamico compilato ASP.NET app Web'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
@@ -10,21 +10,21 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 6fb67a5b0da186bd87b9e5c39204e3acccc0529f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775403"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: Modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
 È possibile usare il metodo di strumentazione degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per raccogliere dati di intervallo dettagliati, dati relativi all'allocazione di memoria .NET e dati di durata degli oggetti .NET da applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilate in modo dinamico.
 
- Questo argomento descrive come modificare il file di configurazione *web.config* per abilitare la strumentazione e la profilatura delle applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+ In questo argomento viene descritto come modificare il file di configurazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] *web.config* per abilitare la strumentazione e la profilatura delle applicazioni Web.
 
 > [!NOTE]
-> Non è necessario modificare il file *web.config* quando si usa il metodo di profilatura del campionamento o quando si vuole instrumentare un modulo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilato.
+> Non è necessario modificare il file *web.config* quando si utilizza il metodo di profilatura del campionamento o quando si desidera instrumentare un modulo precompilato. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]
 
- La radice di un file *web.config* è l'elemento **configuration**. Per instrumentare ed eseguire la profilatura di un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilata in modo dinamico, è necessario aggiungere o modificare gli elementi seguenti:
+ La radice di un file *web.config* è l'elemento di **configurazione.** Per instrumentare ed eseguire la profilatura di un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilata in modo dinamico, è necessario aggiungere o modificare gli elementi seguenti:
 
 - Elemento **configuration/runtime/assemblyBinding/dependentAssembly** che identifica l'assembly Microsoft.VisualStudio.Enterprise.ASPNetHelper che controlla il profilo. L'elemento **dependentAssembly** contiene due elementi figlio: **assemblyIdentity** e **codeBase**.
 
@@ -32,7 +32,7 @@ ms.locfileid: "74775403"
 
 - Due elementi **add** che identificano il percorso degli strumenti di profilatura aggiunti alla sezione **configuration/appSettings**.
 
-  È consigliabile creare una copia del file *web.config* originale da usare per ripristinare la configurazione dell'applicazione.
+  Si consiglia di creare una copia del file *web.config* originale che è possibile utilizzare per ripristinare la configurazione dell'applicazione.
 
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Per aggiungere l'assembly ASPNetHelper come elemento configuration/runtime/assemblyBinding/dependentAssembly
 
@@ -46,7 +46,7 @@ ms.locfileid: "74775403"
 
 3. Aggiungere il nome e il valore di attributo riportati di seguito all'elemento **assemblyBinding**:
 
-   | Nome attributo | Valore attributo |
+   | Nome attributo | Valore dell'attributo |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
 
@@ -58,17 +58,17 @@ ms.locfileid: "74775403"
 
 6. Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **assemblyIdentity**:
 
-   | Nome attributo | Valore attributo |
+   | Nome attributo | Valore dell'attributo |
    |--------------------| - |
    | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
-   | **culture** | **Neutral** |
+   | **Cultura** | **Neutralità** |
 
 7. Aggiungere un elemento **codeBase** come elemento figlio dell'elemento **dependentAssembly**.
 
 8. Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **codeBase**:
 
-   |Nome attributo|Valore attributo|
+   |Nome attributo|Valore dell'attributo|
    |--------------------|---------------------|
    |**version**|**10.0.0.0**|
    |**href**|`PathToASPNetHelperDll`|
@@ -107,7 +107,7 @@ ms.locfileid: "74775403"
 
 3. Rimuovere qualsiasi attributo esistente dall'elemento **compilation** e aggiungere il nome e il valore di attributo seguenti:
 
-    |Nome attributo|Valore attributo|
+    |Nome attributo|Valore dell'attributo|
     |--------------------|---------------------|
     |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a**|
 
@@ -137,19 +137,19 @@ ms.locfileid: "74775403"
 
 3. Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **add**:
 
-   | Nome attributo | Valore attributo |
+   | Nome attributo | Valore dell'attributo |
    |----------------| - |
-   | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
-   | **valore** | `PerformanceToolsFolder` **\VSInstr.Exe** |
+   | **Key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
+   | **Valore** | `PerformanceToolsFolder` **\VSInstr.Exe** |
 
 4. Aggiungere un altro elemento **add** come elemento figlio dell'elemento **appSettings**.
 
 5. Aggiungere i nomi e i valori di attributo riportati di seguito a questo elemento **add**:
 
-   |Nome attributo|Valore attributo|
+   |Nome attributo|Valore dell'attributo|
    |--------------------|---------------------|
-   |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|
-   |**valore**|`PerformanceToolsFolder`|
+   |**Key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|
+   |**Valore**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` è il percorso dei file eseguibili del profiler. Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
@@ -175,7 +175,7 @@ ms.locfileid: "74775403"
 ```
 
 ## <a name="example"></a>Esempio
- Di seguito è riportato un file *web.config* completo che consente la strumentazione e la profilatura di applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilate in modo dinamico. In questo esempio si presuppone che non vi siano state altre impostazioni nel file prima della modifica.
+ Di seguito è riportato un file *web.config* completo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] che abilita la strumentazione e la profilatura delle applicazioni Web compilate dinamicamente. In questo esempio si presuppone che non vi siano state altre impostazioni nel file prima della modifica.
 
 ```xml
 <?xml version="1.0"?>
@@ -221,5 +221,5 @@ ms.locfileid: "74775403"
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: instrumentare un'applicazione ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
-- [Procedura: Instrumentare un'applicazione ASP.NET compilata in modo dinamico e raccogliere dati di memoria](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
+- [Procedura: instrumentare un'applicazione ASP.NET compilata in modo dinamico e raccogliere dati di intervallo dettagliatiHow to: Instrument a dynamically compiled ASP.NET application and collect detailed timing data](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [Procedura: instrumentare un'applicazione ASP.NET compilata in modo dinamico e raccogliere dati di memoriaHow to: Instrument a dynamically compiled ASP.NET application and collect memory data](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

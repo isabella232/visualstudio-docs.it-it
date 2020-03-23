@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 570c3c1cfa4ee42b0b7262b92fba3c936297387c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440264"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64826682"
 ---
 # <a name="c-library-reference"></a>Riferimento per la libreria C
 In questa sezione sono contenute informazioni di riferimento per l'SDK del visualizzatore di concorrenza.

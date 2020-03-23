@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777377"
 ---
 # <a name="net-memory-allocations-view"></a>Visualizzazione Allocazioni per la memoria .NET
@@ -42,9 +42,9 @@ Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzio
 |Colonna|Descrizione|
 |------------|-----------------|
 |**Nome**|Nome della funzione o del tipo allocato.|
-|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Nome processo**|nome del processo.|
-|**Nome modulo**|Nome del modulo che contiene il tipo o la funzione.|
+|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Process Name**|Nome del processo.|
+|**Nome del modulo**|Nome del modulo che contiene il tipo o la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene il tipo o la funzione.|
 |**File di origine**|File di origine che contiene la definizione per il tipo o la funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa definizione di tipo o funzione nel file di origine.|

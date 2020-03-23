@@ -7,10 +7,10 @@ ms.date: 11/14/2019
 ms.topic: conceptual
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
 ms.openlocfilehash: fd140dfe1853e6799a960fd8e251a566954bf143
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74491594"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Vantaggi di Visual Studio 2019
@@ -57,29 +57,29 @@ Per scaricare l'ambiente IDE:
     > ![Iniziare a usare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
 
-## <a name="eligibility"></a>Eligibility
+## <a name="eligibility"></a>Idoneità
 
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  Sì          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL | Disponibile       |  Sì          |
+| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, vendita al dettaglio, NFR<sup>1</sup> selezionato | Disponibile       |  Sì          |
+| Visual Studio Enterprise con GitHub Enterprise   | Vl | Disponibile       |  Sì          |
 | Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Disponibile                                                            |  Sì          |
-| Visual Studio Professional con GitHub Enterprise | VL   | Disponibile              |  Sì          |
+| Visual Studio Professional con GitHub Enterprise | Vl   | Disponibile              |  Sì          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 
-<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, BizSpark, Imagine, most VALUABLE Professional (MVP), Regional Director (Rd).  Esclude: MCT software & Services.*
+<sup>1</sup>  *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  Esclusi: MCT Software & Services.*
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) invitati a passare a esplorare diverse opzioni per l'acquisto di Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Se serve assistenza per l'IDE di Visual Studio, vedere queste risorse:
-  - Supporto tecnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - Supporto tecnico:[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Documentazione](/visualstudio/)
-- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
 
 ## <a name="next-steps"></a>Passaggi successivi
 Una volta installato Visual Studio, non dimenticare di attivare questi altri importanti vantaggi:

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62979757"
 ---
 # <a name="span-class"></a>Classe span
@@ -28,11 +28,11 @@ Definisce una fase dell'applicazione.
 class span;
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 
 ### <a name="public-constructors"></a>Costruttori pubblici
 
-|nome|Description|
+|Nome|Descrizione|
 |----------|-----------------|
 |[Costruttore span::span](../profiling/span-span-constructor.md)|Inizializza una nuova istanza della classe `span`.|
 |[Distruttore span::~span](../profiling/span-tilde-span-destructor.md)|Elimina l'oggetto `span` e ne rilascia le risorse.|
@@ -46,4 +46,4 @@ class span;
  **Spazio dei nomi:** Concurrency::diagnostic
 
 ## <a name="see-also"></a>Vedere anche
-- [Spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)
+- [spazio dei nomi diagnostico](../profiling/diagnostic-namespace.md)

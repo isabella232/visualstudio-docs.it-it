@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
 ms.openlocfilehash: 55519960a6b84968ced43183833167a365e91b35
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68872316"
 ---
 # <a name="set-multiple-startup-projects"></a>Impostare più progetti di avvio
@@ -38,7 +38,7 @@ Visual Studio per Mac consente di specificare se avviare più di un progetto dur
 
    ![Finestra di dialogo Opzioni soluzione con i progetti selezionati](media/sln-options-run-config-multi-projects-configured.png)
 
-6. Scegliere **OK**. La nuova configurazione di esecuzione della soluzione viene impostata come configurazione di esecuzione attiva.
+6. Selezionare **OK**. La nuova configurazione di esecuzione della soluzione viene impostata come configurazione di esecuzione attiva.
 
    ![Soluzione con più progetti configurati da avviare in fase di debug o esecuzione](media/startup-project-configured.png)
 

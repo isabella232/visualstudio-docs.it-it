@@ -10,13 +10,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b151e3ede34d0c8fa3a863d7a4e7474431ae6f4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777390"
 ---
-# <a name="detach"></a>Detach
+# <a name="detach"></a>Scollegamento
 L'opzione **Detach** di VSPerfCmd.exe disconnette il profiler dai processi specificati o da tutti i processi se non ne vengono specificati. La profilatura deve essere inizializzata usando il metodo di campionamento.
 
  La profilatura avviata con l'opzione **Launch** o **Attach** può essere disconnessa con **Detach**. Il profiler può essere connesso nuovamente usando comandi **Attach** successivi.
@@ -33,7 +33,7 @@ VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
 ```
 
 #### <a name="parameters"></a>Parametri
- `PIDs|ProcessNames` `PID` - Identificatore numerico del sistema di uno o più processi.
+ `PIDs|ProcessNames``PID` - L'identificatore numerico del sistema di uno o più processi.
 
  `ProcessNames` - Nome del processo. Se si eseguono più istanze del processo denominato, i risultati sono imprevedibili.
 

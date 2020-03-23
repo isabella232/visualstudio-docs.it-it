@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 06de982643a08e1af88073dde0fb0a9abc029900
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779454"
 ---
 # <a name="crosssession"></a>CrossSession
-L'opzione *CrossSession* di **VSPerfCmd.exe** consente al profiler di raccogliere dati da qualsiasi sessione della console. L'opzione **CrossSession** deve essere usata con l'opzione **Start**.
+L'opzione *CrossSession di * **VSPerfCmd.exe** consente al profiler di raccogliere dati da qualsiasi sessione della console. L'opzione **CrossSession** deve essere usata con l'opzione **Start**.
 
  È possibile usare l'abbreviazione **CS** al posto di **CrossSession**.
 
@@ -28,16 +28,16 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```
 
 #### <a name="parameters"></a>Parametri
- nessuna
+ nessuno
 
 ## <a name="valid-options"></a>Opzioni valide
  Per abilitare la profilatura in un'altra sessione, l'opzione **CrossSession** deve essere specificata con l'opzione **Start**. **CrossSession** deve essere specificata anche in tutti i comandi **Attach e Detach** di **VSPerfCmd**.
 
- **Start:** `Method` l'opzione **Start** Inizializza il profiler sul metodo di profilatura specificato.
+ **Inizio:** `Method` l'opzione **Start** inizializza il profiler sul metodo di profilatura specificato.
 
- **Connetti:** _PID_[ **,** _PID_] avvia la profilatura dei processi specificati.
+ **Allega:** _PID_[**,**_PID_] Avvia la profilatura dei processi specificati.
 
- **Detach**[ **:** _PID_[,_PID_]] Arresta la profilatura dei processi specificati.
+ **Detach**[**:**_PID_[,_PID_]] Arresta la profilatura dei processi specificati.
 
 ## <a name="example"></a>Esempio
  In questo esempio l'opzione **CrossSession** viene usata per connettersi a un'applicazione che è stata avviata in un'altra sessione di console.

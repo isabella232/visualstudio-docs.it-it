@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.openlocfilehash: 6f6241c114d636cc8cb01cf5c4bf9ba2b5106701
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73716896"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Creazione e modifica di un file EditorConfig personalizzato
@@ -52,7 +52,7 @@ EditorConfig supporta anche [convenzioni per la scrittura di codice](/visualstud
 
     ![Elemento della soluzione visualizzato nel riquadro della soluzione](media/editorconfig-image1a.png)
 
-4. Modificare il file. Esempio:
+4. Modificare il file. Ad esempio:
 
     ```EditorConfig
     # This file is the top-most EditorConfig file
@@ -79,13 +79,13 @@ Se si sta lavorando a un progetto o a una soluzione contenente già un file `.ed
 
 Nel progetto è consigliabile riusare un file `.editorconfig` esistente. Per aggiungere un file esistente, eseguire le operazioni seguenti:
 
-1. Fare clic con il pulsante destro del mouse sulla cartella in cui si vuole aggiungere il file e scegliere **Aggiungi > Aggiungi file**.
+1. Fare clic con il pulsante destro del mouse sulla cartella a cui si desidera aggiungerla e selezionare **Aggiungi > Aggiungi file**.
 
 2. Passare alla directory del file richiesto.
 
 3. I file che iniziano con `.` (ad esempio `.editorconfig`) sono file nascosti in macOS, quindi premere **Comando + Maiuscole +.** per rendere il file `.editorconfig` visibile.
 
-4. Selezionare il file `.editorconfig` e fare clic su **Apri**:
+4. Selezionare `.editorconfig` il file e fare clic su **Apri**:
 
     ![Finestra per l'aggiunta di un nuovo file](media/editorconfig-image3b.png)
 
@@ -122,11 +122,11 @@ csharp_new_line_before_open_brace = none
 
 Se si imposta `root` su `true`, il file viene contrassegnato come file di livello più alto della codebase e qualsiasi altro file `.editorconfig` di livello superiore nel progetto viene ignorato, come spiegato nella sezione [Eseguire l'override delle impostazioni di EditorConfig](#override-editorconfig-settings).
 
-Ogni sezione, identificata da parentesi quadre ( **[ ]** ), specifica le informazioni sui tipi di file interessati dalle proprietà che seguono.
+Ogni sezione, identificata da parentesi quadre (**[ ]**), specifica le informazioni sui tipi di file interessati dalle proprietà che seguono.
 
 Nell'esempio precedente, alcune impostazioni vengono applicate a tutti i file del progetto e altre vengono aggiunte solo ai file C#. Gli screenshot riportati di seguito illustrano la situazione prima e dopo l'applicazione delle impostazioni di `.editorconfig`:
 
-**Prima**:
+**Prima di**:
 
 ![Prima dell'applicazione delle impostazioni del file editorconfig](media/editorconfig-image4.png)
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62809823"
 ---
 # <a name="variable-explorer"></a>Esplora variabili
@@ -31,7 +31,7 @@ La finestra **Esplora variabili** viene visualizzata come segue:
 
 Se nella sessione è stato definito un dataframe R più complesso, è possibile spostarsi all'interno dei dati. Ad esempio, dopo aver eseguito `cars <- mtcars` è possibile spostarsi all'interno del set di dati espandendo i diversi nodi in **Esplora variabili**:
 
-![Visualizzazione espansa di Esplora variabili](media/variable-explorer-expanded-results.png)
+![Visualizzazione estesa di Esplora variabili](media/variable-explorer-expanded-results.png)
 
 Per eliminare variabili, fare clic con il pulsante destro del mouse e selezionare **Elimina** oppure selezionare la variabile da eliminare e premere **CANC**.
 
@@ -45,7 +45,7 @@ Poiché i dati sono spesso tabulari, è possibile visualizzare qualsiasi tipo di
 
 Se si fa clic sull'intestazione di una colonna, i dati vengono ordinati in base a tale colonna, alternatamente in ordine crescente e decrescente. Se si fa clic su altre colonne tenendo premuto **MAIUSC**, anche queste colonne vengono prese in considerazione per l'ordinamento. Se si fa clic su una colonna senza tenere premuto **MAIUSC** si torna all'ordinamento in base a una sola colonna.
 
-La sequenza in cui si fa clic sulle intestazioni di colonna determina l'ordine in cui viene eseguito l'ordinamento. Se ad esempio tenendo premuto **MAIUSC**+ **si fa clic** sulla colonna **cyl** e quindi, sempre tenendo premuto **MAIUSC**+**si fa clic** due volte su **mpg**, l'elenco viene ordinato per cilindri in ordine crescente e per miglia per gallone in ordine decrescente:
+La sequenza in cui si fa clic sulle intestazioni di colonna determina l'ordine in cui viene eseguito l'ordinamento. Ad esempio, **tenete premuto Maiusc**+**e fate clic sulla** colonna **cilindro,** quindi **tenete premuto Maiusc**+**e fate clic due** volte sulla colonna **mpg** per ordinare l'elenco per i cilindri ascendenti e le miglia decrescenti per gallone:
 
 ![Vista tabulare dell'ordinamento dei dati in base a due colonne.](media/variable-explorer-table-view-sorting.png)
 
@@ -69,7 +69,7 @@ Per impostazione predefinita, all'apertura l'ambito di **Esplora variabili** è 
 
 ## <a name="import-data-into-variable-explorer"></a>Importare dati in Esplora variabili
 
-Due comandi sulla barra degli strumenti di **Esplora variabili**, disponibili anche nel menu **R Tools** > **Dati**, consentono di importare set di dati CSV esterni nella sessione di R:  **Importa set di dati in una sessione di R da un URL Web** e **Importa set di dati in una sessione di R da un file di testo**.
+Due comandi sulla barra degli strumenti di **Esplora variabili**, disponibili anche nel menu **R Tools** > **Dati**, consentono di importare set di dati CSV esterni nella sessione di R: **Importa set di dati in una sessione di R da un URL Web** e **Importa set di dati in una sessione di R da un file di testo**.
 
 Dopo avere identificato il file CSV da importare, Visual Studio visualizza la finestra di dialogo **Importa set di dati**, in cui sono disponibili opzioni per controllare la modalità di analisi del file di dati, ovvero per definire il separatore di campo e stabilire come gestire le virgolette. È anche possibile visualizzare un'anteprima del dataframe importato e del file di dati originale:
 

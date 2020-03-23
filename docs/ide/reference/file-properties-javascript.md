@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926231"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
@@ -52,7 +52,7 @@ La proprietà **Azione pacchetto** indica ciò che realizza Visual Studio con un
 
 - **Contenuto** - Il file è incluso nel manifesto di pacchetto. Ad esempio, questa impostazione è il valore predefinito di un file .htm, .js, .css, immagine, audio o video.
 
-- **Manifesto** - Il file non è incluso nel manifesto di pacchetto. Il file viene usato invece per l'input durante la generazione del manifesto di pacchetto. Questo è il valore predefinito del file package.appxmanifest.
+- **Manifesto:** il file non è incluso nel manifesto del pacchetto. Il file viene usato invece per l'input durante la generazione del manifesto di pacchetto. Questo è il valore predefinito del file package.appxmanifest.
 
 - **Risorsa** - Il file non è incluso nel manifesto di pacchetto. Il contenuto del file viene invece indicizzato nel file di indice risorse (PRI) che va inserito nel manifesto di pacchetto. Viene usato generalmente per i file di risorse.
 
@@ -76,7 +76,7 @@ Visualizza il tipo di file del riferimento.
 ### <a name="file-version"></a>Versione file
 Visualizza la versione file del riferimento.
 
-### <a name="identity"></a>identità
+### <a name="identity"></a>Identità
 Visualizza l'identità del riferimento utilizzato nel progetto, archiviato nel file di progetto.
 
 ### <a name="package"></a>Pacchetto
@@ -88,7 +88,7 @@ Visualizza il percorso del riferimento utilizzato nel progetto.
 ### <a name="sdk-path"></a>Percorso SDK
 Visualizza il percorso al file SDK cui viene fatto riferimento.
 
-### <a name="uri"></a>URI
+### <a name="uri"></a>Uri
 Visualizza l'URI che deve essere incluso nel file HTML o JavaScript del progetto per includere il file come file di origine.
 
 ### <a name="version"></a>Versione

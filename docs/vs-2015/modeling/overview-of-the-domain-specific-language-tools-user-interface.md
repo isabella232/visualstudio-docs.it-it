@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bffb1f7fe6449f078c21c14b0a070cbd23db539
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72652132"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
@@ -25,7 +25,7 @@ ms.locfileid: "72652132"
 
 Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Language (Strumenti DSL) in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], l'interfaccia utente è simile all'immagine seguente.
 
- ![finestra di progettazione dsl](../modeling/media/dsl-designer.png "|::ref1::|")
+ ![finestra di progettazione dsl](../modeling/media/dsl-designer.png "dsl_designer")
 
  La tabella seguente spiega come vengono usate le diverse parti dell'interfaccia utente.
 
@@ -39,7 +39,7 @@ Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Langua
 ## <a name="the-domain-model-diagram"></a>Diagramma del modello di dominio
  Il diagramma del modello di dominio è diviso in due parti. Un lato del diagramma illustra gli elementi e le relazioni nel modello. L'altro lato, che illustra come deve essere visualizzato il modello, include le forme usate per visualizzare gli elementi e le proprietà del diagramma del modello. L'immagine seguente illustra gli elementi del diagramma.
 
- ![finestra di progettazione dsl con corsia](../modeling/media/dsl-desinger.png "|::ref2::|")
+ ![finestra di progettazione dsl con corsia](../modeling/media/dsl-desinger.png "dsl_desinger")
 
  La tabella seguente spiega alcuni elementi del diagramma del modello di dominio.
 
@@ -51,4 +51,4 @@ Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Langua
 |Mappe delle forme|Un mapping di forme ha l'aspetto di una linea che, nel diagramma del modello di dominio, collega una forma alla classe di dominio che visualizza, o un connettore alla relazione di dominio che visualizza.|
 
 ## <a name="see-also"></a>Vedere anche
- [Panoramica di Strumenti Domain-Specific Language](../modeling/overview-of-domain-specific-language-tools.md) [strumenti Domain-Specific Language il Glossario](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [per la personalizzazione e l'estensione di un Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md)
+ [Panoramica del](../modeling/overview-of-domain-specific-language-tools.md) glossario degli strumenti di [linguaggio specifico](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) di dominio per la [personalizzazione e l'estensione](../modeling/customizing-and-extending-a-domain-specific-language.md) di un linguaggio specifico di dominio

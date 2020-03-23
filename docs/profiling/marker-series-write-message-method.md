@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be6194936264d6038c4dc1e26b5d05f539f0dc6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830902"
 ---
-# <a name="markerserieswritemessage-method"></a>Metodo marker_series::write_message
+# <a name="marker_serieswrite_message-method"></a>Metodo marker_series::write_message
 Scrive un messaggio nel file di traccia del visualizzatore di concorrenza.
 
 ## <a name="syntax"></a>Sintassi

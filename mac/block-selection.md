@@ -6,15 +6,15 @@ ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
 ms.openlocfilehash: be5a19b48355b871018684400f3f4a7b2e3135b6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692852"
 ---
 # <a name="block-selection"></a>Selezione blocco
 
-Visual Studio per Mac rende più semplice selezionare, tagliare, copiare e incollare sezioni del codice. È possibile evidenziare e selezionare blocchi rettangolari di codice usando il comando **Opzione + Trascina** sul blocco di codice desiderato. Quando si incolla il blocco, la formattazione all'interno di questo viene mantenuta.
+Visual Studio per Mac rende più semplice selezionare, tagliare, copiare e incollare sezioni del codice. I blocchi di codice rettangolari possono essere evidenziati e selezionati utilizzando il comando **Opzione e trascinamento** sul blocco di codice. Quando si incolla il blocco, la formattazione all'interno di questo viene mantenuta.
 
 Le selezioni blocco consentono di modificare testo su più righe contemporaneamente. Una selezione blocco di larghezza zero può essere usata per posizionare il cursore davanti a un grande numero di righe in una sola volta e digitare lo stesso testo su più righe:
 

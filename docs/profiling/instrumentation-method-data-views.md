@@ -13,21 +13,21 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774163"
 ---
 # <a name="instrumentation-method-data-views"></a>Visualizzazioni dei dati del metodo di strumentazione
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di strumentazione.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 - [Visualizzazione Riepilogo](../profiling/summary-view-instrumentation-data.md)
 
  Elenca le funzioni che hanno richiesto la maggiore quantità di tempo e le funzioni che hanno eseguito la maggior parte del lavoro individuale.
 
-- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
+- [Visualizzazione Struttura ad albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
 
  Visualizza i percorsi di esecuzione delle funzioni in un albero gerarchico.
 
@@ -43,7 +43,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Elenca i dati di profilatura per funzione.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informazioni di riferimento
 - [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)
 
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.
@@ -61,7 +61,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler che includono dati di memoria .NET.
 
-- [Visualizzazioni dei dati su conflitti tra risorse](../profiling/resource-contention-data-views.md)
+- [Visualizzazioni dei dati sui conflitti di risorse](../profiling/resource-contention-data-views.md)
 
  Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di conflitti di thread.
 

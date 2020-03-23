@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585271"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refactoring con spostamento di un tipo in un file corrispondente
@@ -24,7 +24,7 @@ Questo refactoring si applica a:
 
 - C#
 
-- Visual Basic -
+- Visual Basic
 
 **Cosa:** consente di spostare il tipo selezionato in un file distinto con lo stesso nome.
 
@@ -32,7 +32,7 @@ Questo refactoring si applica a:
 
 **Perché:** l'inserimento di più tipi nello stesso file può rendere difficile l'individuazione di questi tipi. Con lo spostamento dei tipi in file con lo stesso nome, il codice diventa più leggibile e la navigazione più semplice.
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore all'interno del nome del tipo in cui è definito. Ad esempio:
 
@@ -46,7 +46,7 @@ Questo refactoring si applica a:
 
 2. Eseguire quindi una delle operazioni seguenti:
 
-   - Premere **CTRL**+ **.**
+   - Premere **CTRL**+**.**
    - Fare clic con il pulsante destro del mouse e scegliere **Azioni rapide e refactoring**
 
 1. Scegliere **Sposta il tipo in *TypeName*.cs** dal menu, dove *TypeName* è il nome del tipo selezionato.

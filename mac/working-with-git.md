@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70108020"
 ---
 # <a name="working-with-git"></a>Uso di Git
@@ -65,7 +65,7 @@ Per impostazione predefinita, il primo ramo creato in un repository è denominat
 
 Gli utenti possono creare tutti i rami che desiderano per ogni repository, ma è consigliabile eliminare i rami quando si finisce di usarli per mantenere organizzato il repository.
 
-Per visualizzare i rami in Visual Studio per Mac, spostarsi su **Controllo della versione > Gestisci rami ed origini remote...** :
+Per visualizzare i rami in Visual Studio per Mac, spostarsi su **Controllo della versione > Gestisci rami ed origini remote...**:
 
 ![Visualizzazione dei rami](media/version-control-gitBranch2.png)
 
@@ -85,13 +85,13 @@ Vedere il ramo corrente nel riquadro della soluzione, accanto al nome del proget
 
 Per rivedere le modifiche nei file, usare le schede Modifiche, Segnala errore, Log e Unisci in ogni documento, come illustrato precedentemente in questo argomento.
 
-Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Controllo della versione > Review Solution and Commit (Rivedi soluzione ed esegui commit)** :
+Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Controllo della versione > Review Solution and Commit (Rivedi soluzione ed esegui commit)**:
 
 ![Visualizzazione di revisione del codice](media/version-control-gitReviewCommit.png)
 
 Ciò consente di visualizzare tutte le modifiche in ogni file di un progetto con l'opzione di annullarle, creare una patch o eseguire il commit.
 
-Per eseguire il commit di un file in un repository remoto, premere **Commit**, inserire un messaggio di commit e confermare con il pulsante Commit:
+Per eseguire il commit di un file nel repository remoto, premere **Commit**, immettere un messaggio di commit e confermare con il pulsante Commit:
 
 ![Commit di un file](media/version-control-gitCommit.png)
 

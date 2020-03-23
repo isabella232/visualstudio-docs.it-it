@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73636578"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Presentazione dell'IDE di Visual Studio
@@ -21,13 +21,13 @@ In questa introduzione della durata di 5-10 minuti all'ambiente di sviluppo inte
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -37,7 +37,7 @@ Se non è ancora stato installato Visual Studio, accedere alla pagina [Download 
 
 All'avvio di Visual Studio viene visualizzata la finestra iniziale. La finestra iniziale consente di iniziare a lavorare con il codice più velocemente. Contiene opzioni per chiudere o estrarre il codice, aprire un progetto o una soluzione esistente, creare un nuovo progetto o semplicemente aprire una cartella contenente alcuni file di codice.
 
-[![Finestra iniziale in Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
+[![Finestra di avvio in Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Se è la prima volta che si usa Visual Studio, l'elenco dei progetti recenti sarà vuoto.
 
@@ -51,11 +51,11 @@ L'opzione **Continua senza codice** apre semplicemente l'ambiente di sviluppo di
 
 ## <a name="start-page"></a>Pagina iniziale
 
-Il primo elemento visualizzato dopo l'avvio di Visual Studio è molto probabilmente la **Pagina iniziale**. La **Pagina iniziale** è progettata come "centro di smistamento" per facilitare l'accesso ai comandi e ai file di progetto necessari più velocemente. Nella sezione **Recenti** sono visualizzati i progetti e le cartelle usati di recente. In **Nuovo progetto** è possibile fare clic su un collegamento per visualizzare la finestra di dialogo **Nuovo progetto** o in **Apri** è possibile aprire un progetto o una cartella di codice esistente. Sulla destra è visualizzato un feed di notizie aggiornate per sviluppatori.
+La prima cosa che si vedrà dopo l'avvio di Visual Studio è molto probabilmente la **pagina iniziale**. La **pagina iniziale** è progettata come un "hub" per aiutarti a trovare i comandi e i file di progetto di cui hai bisogno più velocemente. Nella sezione **Recenti** sono visualizzati i progetti e le cartelle usati di recente. In **Nuovo progetto** è possibile fare clic su un collegamento per visualizzare la finestra di dialogo **Nuovo progetto** o in **Apri** è possibile aprire un progetto o una cartella di codice esistente. Sulla destra è visualizzato un feed di notizie aggiornate per sviluppatori.
 
 ![Pagina iniziale di Visual Studio](media/start-page.png)
 
-Se si chiude la **Pagina iniziale** e si vuole visualizzarla di nuovo, è possibile riaprirla dal menu **File**.
+Se chiudi la **pagina iniziale** e vuoi rivederla, puoi riaprirla dal menu **File.**
 
 ![Menu File di Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
@@ -90,7 +90,7 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 1. Nella finestra di dialogo **Nuovo progetto** visualizzata accettare il nome di progetto predefinito e scegliere **OK**.
 ::: moniker-end
 
-   Il progetto viene creato e viene aperto un file denominato *Server. js* nella finestra dell' **Editor** . L'**Editor** mostra il contenuto dei file ed è la posizione in cui si esegue la maggior parte delle operazioni di scrittura del codice in Visual Studio.
+   Il progetto viene creato e viene aperto un file denominato *server.js* nella finestra **dell'editor.** **L'editor** mostra il contenuto dei file ed è dove si eseguirà la maggior parte del lavoro di codifica in Visual Studio.
 
    ![Editor di Visual Studio](media/editor.png)
 
@@ -106,23 +106,23 @@ La barra dei menu nella parte superiore di Visual Studio raggruppa i comandi in 
 
 ![Barra dei menu di Visual Studio](media/quickstart-IDE-menu-bar.png)
 
-Aprire la finestra **Elenco errori** scegliendo **Elenco errori** dal menu **Visualizza**.
+Apriamo la finestra **Elenco errori** scegliendo il menu **Visualizza,** quindi **Elenco errori**.
 
 ## <a name="error-list"></a>Elenco errori
 
-Nell'**Elenco errori** sono visualizzati gli errori, gli avvisi e i messaggi riguardanti lo stato corrente del codice. Se il file o il progetto in uso contiene errori, ad esempio una parentesi o un punto e virgola mancante, verranno elencati in questa posizione.
+**L'Elenco errori** mostra errori, avvisi e messaggi relativi allo stato corrente del codice. Se il file o il progetto in uso contiene errori, ad esempio una parentesi o un punto e virgola mancante, verranno elencati in questa posizione.
 
 ![Elenco errori in Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Output (finestra)
+## <a name="output-window"></a>Finestra Output
 
 Nella finestra **Output** vengono visualizzati i messaggi di output generati dalla compilazione del progetto e dal provider di controllo del codice sorgente.
 
-Ora si procederà alla compilazione del progetto per esaminare alcuni elementi di output della compilazione. Scegliere **Compila soluzione** dal menu **Compila**. La finestra di **Output** ottiene automaticamente lo stato attivo e visualizza un messaggio di completamento della compilazione.
+Ora si procederà alla compilazione del progetto per esaminare alcuni elementi di output della compilazione. Scegliere **Compila soluzione**dal menu **Compila** . Il **Output** finestra ottiene automaticamente lo stato attivo e visualizzare un messaggio di compilazione riuscita.
 
 ![Finestra Output di Visual Studio](media/build-output-minimal.png)
 
-## <a name="search-box"></a>Casella di ricerca
+## <a name="search-box"></a>Casella Cerca
 
 La casella di ricerca è un modo rapido e semplice per eseguire pressoché qualsiasi operazione in Visual Studio. È possibile immettere testo correlato all'operazione che si vuole eseguire e verrà visualizzato un elenco di opzioni pertinenti. Ad esempio, si supponga di voler aumentare il livello di dettaglio dell'output di compilazione per visualizzare più informazioni sulle operazioni eseguite esattamente dalla compilazione. Ecco come si può fare:
 
@@ -136,7 +136,7 @@ La casella di ricerca è un modo rapido e semplice per eseguire pressoché quals
 
 1. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **NodejsWebApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
 
-   Questa volta la finestra di **Output** mostra una registrazione più dettagliata del processo di compilazione, inclusi i file copiati e la posizione in cui sono stati copiati.
+   Questa volta la finestra **Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file copiati in cui.
 
    ![Output di compilazione dettagliato in Visual Studio](media/build-output-verbose.png)
 
@@ -154,7 +154,7 @@ Sono state presentate solo alcune delle funzionalità di Visual Studio per inizi
 > [Informazioni sull'editor del codice](write-and-edit-code.md)
 
 > [!div class="nextstepaction"]
-> [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
+> [Informazioni su progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

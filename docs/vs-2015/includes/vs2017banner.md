@@ -8,11 +8,11 @@ ms.date: 11/15/2016
 ms.topic: include
 manager: jillfra
 ms.openlocfilehash: d71f84899bc3d49b11c5e28c1298364505f63367
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
-ms.translationtype: MTE95
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70197142"
 ---
 > [!Note]
-> Questo articolo si applica a Visual Studio 2015. Per la documentazione di Visual Studio più recente, usare il selettore di versione in alto a sinistra. È consigliabile eseguire l'aggiornamento a Visual Studio 2019. [Il download è disponibile qui](https://visualstudio.microsoft.com/downloads)
+> Questo articolo si applica a Visual Studio 2015. Per la documentazione di Visual Studio più recente, usare il selettore di versione in alto a sinistra. È consigliabile eseguire l'aggiornamento a Visual Studio 2019. [Scaricalo qui](https://visualstudio.microsoft.com/downloads)

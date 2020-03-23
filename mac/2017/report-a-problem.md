@@ -7,10 +7,10 @@ ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
 ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "66501003"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Come segnalare un problema in Visual Studio per Mac
@@ -52,7 +52,7 @@ Per segnalare un problema con Visual Studio per Mac, selezionare **Aiuto > Segna
 
    ![Segnalare un problema nuovo](media/report-problem-image5.png)
 
-1. Selezionare **Avanti** per passare alla scheda **Includi allegati**, dove è possibile acquisire la schermata corrente per inviarla a Microsoft. Per allegare file di log, fare clic sull'icona ![Allega log](media/report-problem-attach-logs.png) oppure per allegare screenshot aggiuntivi e altri file, fare clic sull'icona ![Allega file](media/report-problem-attach-file.png).
+1. Selezionare **Avanti** per passare alla scheda **Includi allegati.** Qui puoi acquisire la schermata corrente per inviarla a Microsoft. Per allegare file di log, fare clic sull'icona ![Allega log](media/report-problem-attach-logs.png) oppure per allegare screenshot aggiuntivi e altri file, fare clic sull'icona ![Allega file](media/report-problem-attach-file.png).
 
    ![Allegare uno screenshot alla segnalazione di un problema di Visual Studio per Mac](media/report-problem-image6.png)
 

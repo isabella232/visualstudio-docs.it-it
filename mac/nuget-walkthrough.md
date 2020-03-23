@@ -1,49 +1,49 @@
 ---
 title: Inserimento di un pacchetto NuGet nel progetto
-description: Questo documento illustra come includere un pacchetto NuGet in un progetto usando Visual Studio per Mac. Illustra in modo dettagliato come trovare e scaricare un pacchetto e offre un'introduzione alle funzionalità di integrazione dell'IDE.
+description: Questo documento illustra come includere un pacchetto NuGet in un progetto usando Visual Studio per Mac.This document covers how to include a NuGet package in a project using Visual Studio for Mac. Illustra in modo dettagliato come trovare e scaricare un pacchetto e offre un'introduzione alle funzionalità di integrazione dell'IDE.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/01/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
 ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74127218"
 ---
-# <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installare e gestire i pacchetti NuGet in Visual Studio per Mac
+# <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installare e gestire pacchetti NuGet in Visual Studio per Mac
 
-L'interfaccia utente di gestione pacchetti NuGet in Visual Studio per Mac consente di installare, disinstallare e aggiornare facilmente i pacchetti NuGet in progetti e soluzioni. È possibile cercare e aggiungere pacchetti ai progetti .NET Core, ASP.NET Core e Novell.
+L'interfaccia utente di NuGet Package Manager in Visual Studio per Mac consente di installare, disinstallare e aggiornare facilmente i pacchetti NuGet in progetti e soluzioni. È possibile cercare e aggiungere pacchetti ai progetti .NET Core, ASP.NET Core e Xamarin.You can search for and add packages to your .NET Core, ASP.NET Core, and Xamarin projects.
 
 Questo articolo descrive come includere un pacchetto NuGet in un progetto e illustra la catena di strumenti che rende facile il processo.
 
-Per un'introduzione all'uso di NuGet in Visual Studio per Mac, vedere [Guida introduttiva: installare e usare un pacchetto in Visual Studio per Mac](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
+Per informazioni sull'uso di NuGet in Visual Studio per Mac, vedere [Guida introduttiva: Installare e usare un pacchetto in Visual Studio per MacFor](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac) an intro to using NuGet in Visual Studio for Mac, see Quickstart: Install and use a package in Visual Studio for Mac
 
-## <a name="find-and-install-a-package"></a>Trovare e installare un pacchetto
+## <a name="find-and-install-a-package"></a>Trovare e installare un pacchettoFind and Install a Package
 
-1. Con un progetto aperto in Visual Studio per Mac, fare clic con il pulsante destro del mouse sulla cartella **dipendenze** (cartella**pacchetti** se si usa un progetto Novell) nel **riquadro della soluzione** e selezionare **Gestisci pacchetti NuGet...** .
+1. Con un progetto aperto in Visual Studio per Mac, fare clic con il pulsante destro del mouse sulla cartella **Dipendenze** (cartella**Pacchetti** se si utilizza un progetto Xamarin) nel **riquadro della soluzione** e selezionare Gestisci pacchetti **NuGet...**.
 
     ![Azione di contesto di aggiunta di un nuovo pacchetto NuGet](media/nuget-walkthrough-packages-menu.png)
 
-2. Verrà avviata la finestra **Gestisci pacchetti NuGet** . Verificare che l'elenco a discesa di origine nell'angolo superiore sinistro della finestra di dialogo sia impostato su `nuget.org`, in modo che si stia eseguendo una ricerca nel repository dei pacchetti NuGet centrale.
+2. Verrà avviata la finestra **Gestisci pacchetti NuGet.** Assicurarsi che l'elenco a discesa Origine nell'angolo `nuget.org`superiore sinistro della finestra di dialogo sia impostato su , in modo da eseguire la ricerca nel repository centrale del pacchetto NuGet.
 
     ![Elenco di pacchetti NuGet](media/nuget-walkthrough-add-packages1.png)
 
 3. Usare la casella di ricerca nell'angolo superiore destro per trovare un pacchetto specifico, ad esempio `EntityFramework`. Dopo aver trovato un pacchetto da usare, selezionarlo e fare clic sul pulsante **Aggiungi pacchetto** per avviare l'installazione.
 
-    ![Aggiungere il pacchetto NuGet EntityFramework](media/nuget-walkthrough-add-packages2.png)
+    ![Aggiungi pacchetto NuGet Di EntityFramework](media/nuget-walkthrough-add-packages2.png)
 
-4. Dopo essere stato scaricato, il pacchetto verrà aggiunto al progetto. La soluzione cambierà a seconda del tipo di progetto che si sta modificando:
+4. Dopo essere stato scaricato, il pacchetto verrà aggiunto al progetto. La soluzione cambierà a seconda del tipo di progetto che stai modificando:
 
-    **Progetti Novell**
+    **Progetti Xamarin**
     * Il nodo **Riferimenti** conterrà un elenco di tutti gli assembly che fanno parte di un pacchetto NuGet.
     * Il nodo **Pacchetti** mostra ogni pacchetto NuGet scaricato. È possibile aggiornare o rimuovere un pacchetto dall'elenco.
     
     **Progetti .NET Core**
 
-    * Il nodo **dipendenze > NuGet** Visualizza ogni pacchetto NuGet scaricato. È possibile aggiornare o rimuovere un pacchetto dall'elenco.
+    * Il nodo **Dipendenze > NuGet** visualizza ogni pacchetto NuGet scaricato. È possibile aggiornare o rimuovere un pacchetto dall'elenco.
 
 ## <a name="using-nuget-packages"></a>Uso di pacchetti NuGet
 
@@ -57,15 +57,15 @@ using Newtonsoft.Json;
 
 <a name="Package_Updates" class="injected"></a>
 
-## <a name="updating-packages"></a>Aggiornamento di pacchetti
+## <a name="updating-packages"></a>Aggiornamento dei pacchetti
 
-Gli aggiornamenti dei pacchetti possono essere eseguiti contemporaneamente, facendo clic con il pulsante destro del mouse sul nodo **dipendenze** (nodo**pacchetti** per progetti Novell) o singolarmente in ogni pacchetto. Quando è disponibile una nuova versione di un pacchetto NuGet, viene visualizzata un'icona di aggiornamento ![freccia su con](media/nuget-walkthrough-update-icon.png)cerchio.
+Gli aggiornamenti dei pacchetti possono essere eseguiti tutti contemporaneamente, facendo clic con il pulsante destro del mouse sul nodo **Dipendenze** (nodo**Pacchetti** per i progetti Xamarin) o singolarmente su ogni pacchetto. Quando è disponibile una nuova versione di un pacchetto ![NuGet,](media/nuget-walkthrough-update-icon.png)viene visualizzata un'icona di aggiornamento su con cerchio .
 
-Fare clic con il pulsante destro del mouse su **dipendenze** per accedere al menu di scelta rapida e scegliere **Aggiorna** per aggiornare tutti i pacchetti:
+Fare clic con il pulsante destro del mouse su Dipendenze per accedere al menu **contestuale** e scegliere **Aggiorna** per aggiornare tutti i pacchetti:
 
 ![Menu Pacchetti](media/nuget-walkthrough-packages-menu-update.png)
 
-* **Gestisci pacchetti NuGet** : apre la finestra per aggiungere altri pacchetti al progetto.
+* **Gestisci pacchetti NuGet:** apre la finestra per aggiungere altri pacchetti al progetto.
 * **Aggiorna** - Controlla il server di origine per ogni pacchetto e scarica le eventuali versioni più recenti.
 * **Ripristina** - Scarica tutti i pacchetti mancanti (senza aggiornare i pacchetti esistenti alle versioni più recenti).
 
@@ -74,9 +74,9 @@ Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e
 ### <a name="locating-outdated-packages"></a>Individuazione di pacchetti obsoleti
 Dal riquadro della soluzione è possibile visualizzare la versione di un pacchetto attualmente installata e fare clic con il pulsante destro del mouse sul pacchetto da aggiornare.
 
-![Menu pacchetti con le opzioni per aggiornare, rimuovere, aggiornare](media/nuget-walkthrough-PackageMenu.png)
+![Menu Pacchetti con le opzioni Aggiorna, Rimuovi, Aggiorna](media/nuget-walkthrough-PackageMenu.png)
 
-Verrà visualizzata anche una notifica accanto al nome del pacchetto quando sarà disponibile una nuova versione di un pacchetto, quindi è possibile decidere se è necessario aggiornarla.
+Verrà inoltre visualizzata una notifica accanto al nome del pacchetto quando è disponibile una nuova versione di un pacchetto, in modo da poter decidere se è possibile aggiornarlo.
 
 ![Notifica visualizzata quando è disponibile una nuova versione del pacchetto](media/nuget-walkthrough-package-update-available.png)
 
@@ -89,7 +89,7 @@ Nel menu visualizzato sono disponibili due opzioni:
 
 La gestione dei pacchetti per una soluzione è un metodo pratico per utilizzare più progetti contemporaneamente.
 
-1. Fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Gestisci pacchetti NuGet...** :
+1. Fare clic con il pulsante destro del mouse sulla soluzione e selezionare **Gestisci pacchetti NuGet...**:
 
     ![Gestisci pacchetti NuGet per la soluzione](media/nuget-walkthrough-manage-packages-solution.png)
 
@@ -99,21 +99,21 @@ La gestione dei pacchetti per una soluzione è un metodo pratico per utilizzare 
 
 ### <a name="consolidate-tab"></a>Scheda Consolida
 
-Quando si lavora in una soluzione con più progetti, è consigliabile assicurarsi che ovunque si usi lo stesso pacchetto NuGet in ogni progetto, si sta anche usando lo stesso numero di versione di tale pacchetto. Visual Studio per Mac semplifica questa operazione fornendo una scheda **consolidate** nell'interfaccia utente di gestione pacchetti quando si sceglie di gestire i pacchetti per una soluzione. Con questa scheda è possibile vedere facilmente dove i pacchetti con numeri di versione distinti vengono usati da progetti diversi nella soluzione:
+Quando si lavora in una soluzione con più progetti, è considerata una procedura consigliata per assicurarsi che ovunque si utilizza lo stesso pacchetto NuGet in ogni progetto, si sta anche usando lo stesso numero di versione del pacchetto. Visual Studio per Mac consente di semplificare questa operazione fornendo una scheda **Consolida** nell'interfaccia utente di Gestione pacchetti quando si sceglie di gestire i pacchetti per una soluzione. Utilizzando questa scheda, è possibile vedere facilmente dove i pacchetti con numeri di versione distinti vengono utilizzati da diversi progetti nella soluzione:Using this tab, you can easily see where packages with distinct version numbers are used by different projects in the solution:
 
 ![Scheda Consolida dell'interfaccia utente di Gestione pacchetti](media/nuget-walkthrough-consolidate-tab.png)
 
-In questo esempio, il progetto NuGetDemo USA Microsoft. EntityFrameworkCore 2,20, mentre NuGetDemo. Shared USA Microsoft. EntityFrameworkCore 2.2.6. Per consolidare le versioni dei pacchetti, seguire questa procedura:
+In questo esempio, il progetto NuGetDemo utilizza Microsoft.EntityFrameworkCore 2.20, mentre NuGetDemo.Shared utilizza Microsoft.EntityFrameworkCore 2.2.6. Per consolidare le versioni dei pacchetti, seguire questa procedura:
 
 - Selezionare i progetti da aggiornare nell'elenco dei progetti.
-- Selezionare la versione da usare in tutti i progetti nell'elenco **nuova versione** , ad esempio Microsoft. EntityFrameworkCore 3.0.0.
-- Selezionare il pulsante **consolida pacchetto** .
+- Selezionare la versione da utilizzare in tutti i progetti nell'elenco **Nuova versione,** ad esempio Microsoft.EntityFrameworkCore 3.0.0.Select the version to use in all those projects in the New Version list, such as Microsoft.EntityFrameworkCore 3.0.0.
+- Selezionare il pulsante **Consolida pacchetto.**
 
 Gestione pacchetti installa la versione del pacchetto selezionata in tutti i progetti selezionati e in seguito il pacchetto non compare più nella scheda **Consolida**.
 
 ## <a name="adding-package-sources"></a>Aggiunta di origini dei pacchetti
 
-I pacchetti disponibili per l'installazione vengono inizialmente recuperati da nuget.org. Tuttavia, è possibile aggiungere altri percorsi di pacchetti a Visual Studio per Mac. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
+I pacchetti disponibili per l'installazione vengono inizialmente recuperati da nuget.org. Tuttavia, è possibile aggiungere altri percorsi del pacchetto a Visual Studio per Mac.However, you can add other package locations to Visual Studio for Mac. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
 
 In Visual Studio per Mac passare a **Visual Studio > Preferenze > NuGet > Origini** per visualizzare e modificare l'elenco di origini dei pacchetti. Si noti che le origini possono essere un server remoto (specificato da un URL) o una directory locale.
 
