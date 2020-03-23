@@ -294,7 +294,7 @@
                       href: how-to-populate-documents-with-data-from-services.md
                     - name: 'Procedura dettagliata: Associazione ai dati di un servizio in un progetto di componente aggiuntivo VSTO'
                       href: walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md
-                    - name: 'Popolare documenti con dati di oggetti '
+                    - name: Popolare documenti con dati di oggetti
                       href: how-to-populate-documents-with-data-from-objects.md
                     - name: Scorrere i record di un database in un foglio di lavoro
                       href: how-to-scroll-through-database-records-in-a-worksheet.md
@@ -794,6 +794,8 @@
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: Distribuzione di una soluzione Office tramite Windows Installer
               href: deploying-an-office-solution-by-using-windows-installer.md
+            - name: Distribuzione di una soluzione Office tramite i progetti di installazione di Visual Studio
+              href: deploying-a-vsto-solution-by-using-windows-installer.md
             - name: Risoluzione dei problemi relativi alla distribuzione di soluzioni Office
               items:
                 - name: Risoluzione dei problemi relativi alla distribuzione di soluzioni Office
