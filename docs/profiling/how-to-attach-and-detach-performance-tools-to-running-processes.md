@@ -19,10 +19,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4c4ae54d6b90166de31c338a5e606eaf31ecd6cc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779168"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedura: Connettere e disconnettere gli strumenti per le prestazioni ai processi in esecuzione
@@ -59,7 +59,7 @@ Il profiler può essere usato per la connessione o la disconnessione da un proce
 
 2. Fare clic sul nome dell'immagine da cui eseguire la disconnessione.
 
-3. Scegliere **Disconnetti**.
+3. Fare clic su **Scollega**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Controllare la raccolta dati](../profiling/controlling-data-collection.md)

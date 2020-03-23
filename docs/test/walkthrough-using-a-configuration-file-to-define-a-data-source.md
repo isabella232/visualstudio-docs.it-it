@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75776150"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
@@ -32,7 +32,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
 - Accesso alle origini dati tramite la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 Per completare questa procedura dettagliata, è necessario:
 
@@ -269,5 +269,5 @@ Ora che è stato definito un file *app.config*, si creerà uno unit test che usa
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Eseguire unit test del codice](../test/unit-test-your-code.md)
+- [Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)
 - [Procedura: Creare uno unit test basato sui dati](../test/how-to-create-a-data-driven-unit-test.md)

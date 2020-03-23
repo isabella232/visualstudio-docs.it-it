@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce87385314ec84c7c0ed9d30c806a6287bb91d9e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591333"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificare e personalizzare i tasti di scelta rapida in Visual Studio
@@ -43,7 +43,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 
 ## <a name="identify-a-keyboard-shortcut"></a>Identificare un tasto di scelta rapida
 
-1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+1. Nella barra dei menu scegliere**Opzioni** **degli strumenti** > .
 
 2. Espandere **Ambiente**, quindi scegliere **Tastiera**.
 
@@ -63,7 +63,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 
 ## <a name="customize-a-keyboard-shortcut"></a>Personalizzare un tasto di scelta rapida
 
-1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+1. Nella barra dei menu scegliere**Opzioni** **degli strumenti** > .
 
 2. Espandere **Ambiente**, quindi scegliere **Tastiera**.
 
@@ -88,9 +88,9 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 6. Nella casella **Premi tasti di scelta rapida** immettere il tasto di scelta rapida che si vuole usare.
 
     > [!NOTE]
-    > È possibile creare un tasto di scelta rapida che combina una lettera e il tasto **ALT**, il tasto **CTRL** oppure entrambi. È inoltre possibile creare un tasto di scelta rapida che combina il tasto **MAIUSC** e una lettera e il tasto **ALT**, il tasto **CTRL** oppure entrambi.
+    > È possibile creare una scelta rapida che combina una lettera con il tasto **Alt,** il **tasto Ctrl** o entrambi. È inoltre possibile creare una scelta rapida che combina il **tasto Maiusc** e una lettera con il **tasto Alt,** il **tasto Ctrl** o entrambi.
 
-     Se un tasto di scelta rapida è già assegnato a un altro comando, verrà visualizzato nella casella **Combinazione già utilizzata da**. In tal caso, premere il tasto **BACKSPACE** per eliminare il tasto di scelta rapida prima di provarne un altro.
+     Se un tasto di scelta rapida è già assegnato a un altro comando, verrà visualizzato nella casella **Combinazione già utilizzata da**. In tal caso, scegliere il tasto **BACKSPACE** per eliminare il collegamento prima di provare un'altra scelta rapida.
 
     ![Specificare un collegamento diverso per un comando](../ide/media/reassignshortcut.png)
 
@@ -119,13 +119,13 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 
 ::: moniker range="vs-2017"
 
-Per impostazione predefinita, i tasti di scelta rapida vengono salvati in un file nella cartella *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. Il nome del file riflette la data in cui sono state esportate le impostazioni e l'estensione è *.vssettings*.
+Per impostazione predefinita, i tasti di scelta rapida vengono salvati in un file nella cartella *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. Il nome del file riflette la data in cui sono stati esportati le impostazioni e l'estensione è *.vssettings*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Per impostazione predefinita, i tasti di scelta rapida vengono salvati in un file nella cartella *%USERPROFILE%\Documenti\Visual Studio 2019\Settings*. Il nome del file riflette la data in cui sono state esportate le impostazioni e l'estensione è *.vssettings*.
+Per impostazione predefinita, i tasti di scelta rapida vengono salvati in un file nella cartella *%USERPROFILE%\Documenti\Visual Studio 2019\Settings*. Il nome del file riflette la data in cui sono stati esportati le impostazioni e l'estensione è *.vssettings*.
 
 ::: moniker-end
 

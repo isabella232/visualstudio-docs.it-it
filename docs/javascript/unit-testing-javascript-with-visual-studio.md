@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77071947"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testing unità di codice JavaScript e TypeScript in Visual Studio
@@ -70,7 +70,7 @@ Se le opzioni di unit test non sono state impostate nelle proprietà del progett
 > [!Note]
 > Le opzioni di unit test prevalgono sulle impostazioni selezionate per i singoli file.
 
-Dopo aver aperto Esplora test (scegliere **Test** > **Finestre** > **Esplora test**), Visual Studio rileva e visualizza i test. Se inizialmente i test non vengono visualizzati, ricompilare il progetto per aggiornare l'elenco.
+Dopo aver aperto Esplora test (scegliere **Test** > **di Esplora test**di**Windows** > ), Visual Studio individua e visualizza i test. Se inizialmente i test non vengono visualizzati, ricompilare il progetto per aggiornare l'elenco.
 
 ![Esplora test](../javascript/media/UnitTestsDiscoveryMocha.png)
 
@@ -130,7 +130,7 @@ Test execution time: 1.5731 Seconds
 > [!NOTE]
 > Se si verifica un errore che indica che è impossibile trovare *vstest.console.exe*, verificare di aver aperto il prompt dei comandi per gli sviluppatori e non un prompt dei comandi normale.
 
-## <a name="addingFramework"></a>Aggiungere il supporto per un framework di unit test
+## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Aggiungere il supporto per un framework di unit test
 
 È possibile aggiungere il supporto per altri framework di test implementando la logica di individuazione ed esecuzione tramite JavaScript. A questo scopo, aggiungere una cartella con il nome del framework di test in:
 
@@ -174,4 +174,4 @@ Oltre alle proprietà sopra riportate, sarà necessario installare anche il pacc
 </PropertyGroup>
 ```
 
-Alcuni framework di test possono richiedere pacchetti NPM aggiuntivi per il rilevamento dei test. Per scherzo, ad esempio, è necessario il pacchetto NPM di jest-editor-support. Se necessario, consultare la documentazione relativa al Framework specifico.
+Alcuni framework di test potrebbero richiedere pacchetti npm aggiuntivi per il rilevamento dei test. Ad esempio, lo scherzo richiede il pacchetto jest-editor-support npm. Se necessario, consultare la documentazione del framework specifico.

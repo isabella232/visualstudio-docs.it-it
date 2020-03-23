@@ -10,13 +10,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ec56665b546f962e8b3f4fd35460715390aee30
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777816"
 ---
-# <a name="console"></a>Console di
+# <a name="console"></a>Console
 L'opzione **Console** di VSPerfCmd.exe consente di avviare l'applicazione specificata in una nuova finestra del prompt dei comandi. **Console** può essere usata solo con l'opzione **Launch** di VSPerfCmd. Se l'applicazione non è un'applicazione della riga di comando, **Console** non ha alcun effetto.
 
 ## <a name="syntax"></a>Sintassi
@@ -26,12 +26,12 @@ VSPerfCmd.exe /Launch:AppName /Console
 ```
 
 #### <a name="parameters"></a>Parametri
- nessuna
+ nessuno
 
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **Console** può essere specificata solo in una riga di comando che contiene anche l'opzione **Launch**.
 
- **Launch:** `AppName` avvia il profiler e l'applicazione specificata da `AppName`.
+ **Avvia:** `AppName` avvia il profiler e `AppName`l'applicazione specificata da .
 
 ## <a name="see-also"></a>Vedere anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)

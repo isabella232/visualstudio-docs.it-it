@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - uwp
 ms.openlocfilehash: fdd3d98bd848bb6fe679809a58f2e316a316f012
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590358"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Creare un test codificato dell'interfaccia utente per testare un'app UWP
@@ -57,7 +57,7 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
    Me.textBox.Text = Me.button.Name
    ```
 
-1. Premere **CTRL**+**F5** per eseguire l'app. Il risultato dovrebbe essere simile al seguente:
+1. Premere **CTRL**+**F5** per eseguire l'app. Verrà visualizzata una schermata simile alla seguente:
 
    ![App UWP con casella di testo e pulsante](media/uwp-app.png)
 
@@ -98,7 +98,7 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
 
      ![Fare clic sul controllo Button per impostare il valore della casella di testo](../test/media/uwp-app-button-textbox.png)
 
-1. Aggiungere un'asserzione per verificare il testo nel controllo della casella di testo. Usare lo strumento selettore di precisione per selezionare il controllo della casella di testo e selezionare la proprietà **Text** nella finestra di dialogo **Aggiungi asserzione**. Quindi, selezionare **Aggiungi asserzione** o premere **ALT**+**A**. Nella casella **Messaggio su errore asserzione** immettere **Valore casella di testo imprevisto.** e selezionare **OK**.
+1. Aggiungere un'asserzione per verificare il testo nel controllo della casella di testo. Usare lo strumento selettore di precisione per selezionare il controllo della casella di testo e selezionare la proprietà **Text** nella finestra di dialogo **Aggiungi asserzione**. Quindi, selezionare **Aggiungi asserzione** o premere **ALT**+**A**. Nella casella **Messaggio su errore asserzione** immettere **Valore casella di testo imprevisto.** , quindi selezionare **OK**.
 
      ![Scegliere la casella di testo con lo strumento selettore di precisione e aggiungere un'asserzione](../test/media/add-assertion-for-text.png)
 
@@ -224,7 +224,7 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>D: Perché non è possibile modificare il codice nel file UIMap.Designer?
 
-**R**: Qualsiasi modifica del codice apportata nel file *UIMapDesigner.cs* viene sovrascritta ogni volta che si genera codice usando **Generatore di test codificati dell'interfaccia utente**. Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere usato per eseguire l'override dei metodi e delle proprietà contenuti nel file *UIMapDesigner.cs*. Rimuovere il riferimento al metodo originale nel file *Coded UITest.cs* e sostituirlo con il nome del metodo rinominato.
+**R**: Qualsiasi modifica del codice apportata nel file *UIMapDesigner.cs* viene sovrascritta ogni volta che si genera codice usando **Generatore di test codificati dell'interfaccia utente**. Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere utilizzato per eseguire l'override di metodi e proprietà nel file *di UIMapDesigner.cs.* Rimuovere il riferimento al metodo originale nel file *Coded UITest.cs* e sostituirlo con il nome del metodo rinominato.
 
 ## <a name="see-also"></a>Vedere anche
 

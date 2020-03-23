@@ -1,5 +1,5 @@
 ---
-title: Crea progetto unit test
+title: Creare un progetto di unit test
 ms.date: 01/29/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -8,18 +8,18 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 313083090c94c94f4e196e87f3bf6cf6df36e118
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565253"
 ---
-# <a name="create-a-unit-test-project"></a>Crea progetto unit test
+# <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
 
 Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esempio, si crea un progetto unit test per ogni progetto di codice del prodotto. Il progetto test può essere nella stessa soluzione del codice di produzione o in una soluzione separata. È possibile avere più progetti unit test in una soluzione.
 
 > [!NOTE]
-> Il percorso degli unit test per un codice nativo e la struttura del progetto test possono essere diversi da quelli descritti in questo articolo. Per altre informazioni, vedere [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md).
+> Il percorso degli unit test per un codice nativo e la struttura del progetto test possono essere diversi da quelli descritti in questo articolo. Per ulteriori informazioni, vedere [Scrittura di unit test per C/C](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="to-create-a-unit-test-project"></a>Per creare un progetto di unit test
 
@@ -27,7 +27,7 @@ Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esem
 
 ::: moniker range="vs-2017"
 
-2. Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Installato**, scegliere il linguaggio da usare per il progetto di test, quindi scegliere **Test**.
+2. Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Installato,** scegliere la lingua che si desidera utilizzare per il progetto di test, quindi scegliere **Test**.
 
 3. Selezionare il modello di progetto per il framework di test che si vuole usare, ad esempio **Progetto di test MSTest** o **Progetto di test NUnit**. Assegnare un nome al progetto e quindi scegliere **OK**.
 
@@ -49,7 +49,7 @@ Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esem
 
    1. Selezionare il progetto di test in **Esplora soluzioni**.
 
-   2. Scegliere **Aggiungi riferimento** dal menu **Progetto**.
+   2. Scegliere **Aggiungi riferimento**dal menu **Progetto** .
 
    3. In **Gestione riferimenti** selezionare il nodo **Soluzione** in **Progetti**. Selezionare il progetto di codice da testare, quindi selezionare **OK**.
 
@@ -61,9 +61,9 @@ Vedere una delle sezioni seguenti:
 
 **Scrittura di unit test**
 
-- [Eseguire unit test del codice](../test/unit-test-your-code.md)
+- [Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)
 
-- [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md)
+- [Scrittura di unit test per C/C](writing-unit-tests-for-c-cpp.md)
 
 - [Usare il framework MSTest negli unit test](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 

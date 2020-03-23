@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584413"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
@@ -26,7 +26,7 @@ Per informazioni su come installare e configurare test controller e agenti di te
 
 Per configurare e monitorare il controller di test e gli eventuali agenti registrai, è necessario disporre di un file di impostazioni di test nel progetto di test che contiene i test da eseguire. Aprire il file di impostazioni di test, scegliere **Ruolo** e quindi selezionare **Gestisci controller di test** nell'elenco a discesa del campo **Controller**.
 
-Per un progetto di test di carico è anche possibile scegliere **Gestisci controller di test** dal menu **Test di carico**.
+Per un progetto di test di carico è anche possibile scegliere** Gestisci controller di test** dal menu **Test di carico**.
 
 ## <a name="add-a-test-agent-to-a-test-controller"></a>Aggiunta di un agente di test a un controller di test
 
@@ -34,7 +34,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
 
 ### <a name="to-add-a-test-agent-to-a-test-controller"></a>Per aggiungere un agente di test a un controller di test
 
-1. Scegliere **Avvia** > **Test Agent Configuration Tool**.
+1. Scegliere **Avvia** > **strumento di configurazione agente di test**.
 
      Viene visualizzata la finestra di dialogo **Configura agente di test**.
 
@@ -43,7 +43,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
 
 2. Verranno visualizzate due opzioni relative alla modalità di esecuzione dell'agente di test:
 
-   - **Servizio**: se non è necessario eseguire test automatizzati che interagiscono con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Servizio** in **Esegui agente di test come**. L'agente di test verrà avviato come servizio. Scegliere **Avanti**.
+   - **Servizio**: se non è necessario eseguire test automatizzati che interagiscono con il desktop, ad esempio test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, in **Esegui agente di test come**, selezionare **Servizio**. L'agente di test verrà avviato come servizio. Scegliere **Avanti**.
 
       A questo punto è possibile immettere i dettagli sull'utente quando l'agente di test viene avviato come servizio.
 
@@ -58,7 +58,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
         |-   Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul test controller.|
         |-   È necessario che l'utente che sta tentando di usare il test controller  disponga di un account utente per tale test controller, diversamente non sarà in grado di eseguite i test.|
 
-   - **Processo interattivo**: se si desidera eseguire test automatizzati che devono interagire con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Processo interattivo**. L'agente di test verrà avviato come processo interattivo anziché come servizio.
+   - **Processo interattivo:** se si desidera eseguire test automatizzati che devono interagire con il desktop, ad esempio test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Processo interattivo**. L'agente di test verrà avviato come processo interattivo anziché come servizio.
 
       Nella pagina successiva immettere i dettagli relativi all'utente quando l'agente di test viene avviato come processo e specificare le altre opzioni.
 
@@ -81,7 +81,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
     > [!NOTE]
     > Il numero di porta predefinito è 6901.
 
-4. Per salvare le modifiche, scegliere **Applica impostazioni**. Chiudere la finestra di dialogo **Riepilogo configurazione**, quindi chiudere **Test Agent Configuration Tool**.
+4. Per salvare le modifiche, scegliere **Applica impostazioni**. Chiudere la finestra di dialogo **Riepilogo configurazione** e quindi lo Strumento di **configurazione dell'agente di test.**
 
 > [!WARNING]
 > Se l'agente è attualmente configurato per essere eseguito in un altro controller di test, è necessario rimuoverlo da quest'ultimo.
@@ -114,10 +114,10 @@ Per poter rimuovere un agente di test, è necessario che sia impostato sullo sta
 
 Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valori seguenti:
 
-|Status|Descrizione|
+|Stato|Descrizione|
 |-|-----------------|
 |Test in esecuzione|Esecuzione di test|
-|Pronto|Disponibile per l'esecuzione dei test o la raccolta di informazioni e dati di diagnostica|
+|Ready|Disponibile per l'esecuzione dei test o la raccolta di informazioni e dati di diagnostica|
 |Offline|Non disponibile per l'esecuzione dei test o la raccolta di informazioni e dati di diagnostica|
 |Disconnesso|L'agente di test non è avviato|
 
@@ -136,7 +136,7 @@ Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valo
 
 1. (Facoltativo) Nel riquadro **Agenti di test** scegliere il computer dell'agente di test per il quale si desidera modificare le proprietà.
 
-1. Scegliere **Proprietà**.
+1. Scegli **Proprietà**.
 
 1. Modificare le seguenti proprietà dell'agente di test in base alle necessità:
 
@@ -164,7 +164,7 @@ Se si vuole registrare il test controller con la raccolta di progetti Team Found
 
 ### <a name="to-configure-a-test-controller"></a>Per configurare un controller di test
 
-1. Per eseguire lo strumento per riconfigurare il test controller in qualsiasi momento, scegliere **Start** > **Test Controller Configuration Tool**.
+1. Per eseguire lo strumento per riconfigurare il controller di test in qualsiasi momento, scegliere **Avvia** > strumento di**configurazione controller di test**.
 
      Verrà visualizzata la finestra di dialogo **Configura controller di test**.
 
@@ -210,7 +210,7 @@ Quando si aggiungono ruoli per l'applicazione alle impostazioni test per Visual 
 
 I controller di test e gli agenti di test possono caricare solo assembly di test di carico con firma con nome sicuro o assembly non firmati. Per alcuni assembly di test viene usata la firma ritardata in quanto tali assembly devono accedere agli assembly di produzione per l'applicazione. Questi assembly, tuttavia, non dispongono di firma con nome sicuro in quanto si tratta solo di assembly di test, che non vengono distribuiti. Questi assembly non possono essere caricati poiché dispongono di firma ritardata, pertanto è necessario disabilitare la verifica del nome sicuro per tali assembly in tutti i computer in cui l'assembly verrà caricato, incluso il computer del controller di test. Per disabilitare la verifica con firma ritardata, usare *sn.exe*. Potrebbe essere necessario includere anche il token di chiave pubblica dell'assembly con firma ritardata per il quale viene richiesto di ignorare la verifica del nome sicuro.
 
-Usare lo strumento Nome sicuro (*Sn.exe*) per disabilitare la verifica con firma ritardata.
+Utilizzare *Sn.exe* (strumento Nome sicuro) per disabilitare la verifica con firma ritardata.
 
 La verifica dei nomi sicuri viene disabilitata, solo per l'assembly specificato, nel computer in cui viene eseguito il comando. È possibile eseguire questa operazione solo se si dispone di autorizzazioni sufficienti.
 

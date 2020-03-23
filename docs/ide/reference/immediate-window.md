@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568958"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
@@ -33,7 +33,7 @@ La finestra **Controllo immediato** supporta IntelliSense.
 
 ## <a name="display-the-values-of-variables"></a>Visualizzare i valori delle variabili
 
-La finestra **Controllo immediato** è particolarmente utile durante il debug di un'app. Ad esempio, per controllare il valore di una variabile `varA`, usare il [comando Stampa](../../ide/reference/print-command.md):
+La finestra **Controllo immediato** è particolarmente utile durante il debug di un'app. Ad esempio, per controllare il `varA`valore di una variabile, è possibile utilizzare il [comando Stampa](../../ide/reference/print-command.md):
 
 ```cmd
 >Debug.Print varA
@@ -78,7 +78,7 @@ Entrambe le versioni di questo comando restituiscono il valore della variabile `
 
     La finestra **Controllo immediato** esegue `MyFunction` e visualizza `4`.
 
-Se la funzione o la subroutine contiene un punto di interruzione, Visual Studio interrompe l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Per ulteriori informazioni, vedere [procedura dettagliata: debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md).
+Se la funzione o la subroutine contiene un punto di interruzione, Visual Studio interrompe l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Per ulteriori informazioni, vedere [Procedura dettagliata: debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Non è possibile usare la valutazione delle espressioni in fase di progettazione nei tipi di progetto che richiedono l'avvio di un ambiente di esecuzione, tra cui progetti Visual Studio Tools per Office, progetti Web, progetti Smart Device e progetti SQL.
 
@@ -131,9 +131,9 @@ In alcune configurazioni, le notifiche di eccezioni first-chance vengono visuali
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Spostarsi nel codice con il Debugger](../../debugger/navigating-through-code-with-the-debugger.md)
-- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
-- [Presentazione del debugger](../../debugger/debugger-feature-tour.md)
-- [Procedura dettagliata: debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Spostamento all'interno del codice con il debugger](../../debugger/navigating-through-code-with-the-debugger.md)
+- [Finestra di comando](../../ide/reference/command-window.md)
+- [Primo sguardo al debugger](../../debugger/debugger-feature-tour.md)
+- [Procedura dettagliata: debug in fase di progettazioneWalkthrough: Debugging at Design Time](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Uso delle espressioni regolari in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

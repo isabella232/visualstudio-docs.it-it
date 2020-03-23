@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568711"
 ---
 # <a name="list-memory-command"></a>Comando Elenca memoria
@@ -34,26 +34,26 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="arguments"></a>Argomenti
 `expression`
 
-Parametro facoltativo. L'indirizzo di memoria da cui iniziare la visualizzazione della memoria.
+Facoltativa. L'indirizzo di memoria da cui iniziare la visualizzazione della memoria.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Switch
 /ANSI&#124;Unicode
 
-Parametro facoltativo. Visualizza la memoria come caratteri corrispondenti ai byte di memoria, ANSI o Unicode.
+Facoltativa. Visualizza la memoria come caratteri corrispondenti ai byte di memoria, ANSI o Unicode.
 
 /Count:`number`
 
-Parametro facoltativo. Determina il numero di byte di memoria da visualizzare, a partire da `expression`.
+Facoltativa. Determina il numero di byte di memoria da visualizzare, a partire da `expression`.
 
 /Format:`formattype`
 
-Parametro facoltativo. Tipo di formato per la visualizzazione di informazioni sulla memoria nella finestra **Memoria**; può essere OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bit) o Double (64 bit). Se viene usato il formato OneByte, `/Unicode` non è disponibile.
+Facoltativa. Tipo di formato per la visualizzazione di informazioni sulla memoria nella finestra **Memoria**; può essere OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bit) o Double (64 bit). Se viene usato il formato OneByte, `/Unicode` non è disponibile.
 
 /Hex&#124;Signed&#124;Unsigned
 
-Parametro facoltativo. Specifica il formato per la visualizzazione dei numeri: con segno, senza segno o esadecimale.
+Facoltativa. Specifica il formato per la visualizzazione dei numeri: con segno, senza segno o esadecimale.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Invece di scrivere un comando **Debug.ListMemory** completo con tutte le opzioni, è possibile richiamare il comando tramite alias predefiniti con alcune opzioni preimpostate su valori specificati. Ad esempio, anziché immettere:
 
 ```cmd
@@ -70,13 +70,13 @@ Di seguito viene riportato un elenco degli alias disponibili per il comando **De
 
 |Alias|Comandi e opzioni|
 |-----------| - |
-|**d**|Debug.ListMemory|
+|**D**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
-|**db**|Debug.ListMemory /Format:OneByte|
-|**dc**|Debug.ListMemory /Format:FourBytes /Ansi|
-|**dd**|Debug.ListMemory /Format:FourBytes|
-|**df**|Debug.ListMemory /Format:Float|
-|**dq**|Debug.ListMemory /Format:EightBytes|
+|**Db**|Debug.ListMemory /Format:OneByte|
+|**Dc**|Debug.ListMemory /Format:FourBytes /Ansi|
+|**Dd**|Debug.ListMemory /Format:FourBytes|
+|**Df**|Debug.ListMemory /Format:Float|
+|**Dq**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
 ## <a name="example"></a>Esempio
@@ -89,7 +89,7 @@ Di seguito viene riportato un elenco degli alias disponibili per il comando **De
 
 - [Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)
 - [Comando Elenca thread](../../ide/reference/list-threads-command.md)
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
+- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

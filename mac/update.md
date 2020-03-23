@@ -7,10 +7,10 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
 ms.openlocfilehash: ccfcf04816727800501dada64e73d6ce35876674
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984547"
 ---
 # <a name="update-visual-studio-for-mac"></a>Aggiornare Visual Studio per Mac
@@ -22,11 +22,11 @@ Visual Studio per Mac offre due canali per ottenere le versioni più recenti:
 * **Stabile**: fornisce aggiornamenti completamenti testati. Questo canale è consigliato per un'esperienza di sviluppo ottimale.
 * **Anteprima**: consente di accedere anticipatamente agli aggiornamenti candidati per il rilascio nel canale Stabile. Queste versioni possono non essere affidabili per l'uso quotidiano.
 
-## <a name="checking-for-updates"></a>Verifica della disponibilità di aggiornamenti
+## <a name="checking-for-updates"></a>Preparazione per gli aggiornamenti
 
 È possibile usare il riquadro dello **strumento di aggiornamento di Visual Studio** per verificare la presenza di nuovi aggiornamenti, modificare i canali e per scaricare e installare gli aggiornamenti.
 
-Per aprire lo **strumento di aggiornamento di Visual Studio**, spostarsi su **Visual Studio > Controlla aggiornamenti**:
+Per aprire **Visual Studio Updater**, passare a **Visual Studio > Verifica disponibilità aggiornamenti**:
 
 ![Opzione Controlla aggiornamenti](media/update-image1.png)
 
@@ -36,7 +36,7 @@ Visualizza il riquadro dello strumento di aggiornamento:
 
 ## <a name="changing-the-updater-channel"></a>Modifica del canale dello strumento di aggiornamento
 
-Per modificare il canale, selezionarlo dall'elenco a discesa a premere il pulsante **Switch Channel (Cambia canale)** :
+Per modificare il canale, selezionarlo dall'elenco a discesa a premere il pulsante **Switch Channel (Cambia canale)**:
 
 ![Elenco a discesa Cambia canale](media/update-image3.png)
 
@@ -44,7 +44,7 @@ Per modificare il canale, selezionarlo dall'elenco a discesa a premere il pulsan
 
 Il cambio di canale avvia automaticamente il processo di download di nuovi aggiornamenti.
 
-Se si è selezionata l'opzione **Controlla automaticamente**, il riquadro dello strumento di aggiornamento viene visualizzato quando viene aperto Visual Studio per Mac per consentire di sapere se sono disponibili nuovi aggiornamenti. I nuovi download verranno scaricati automaticamente nel computer quando viene visualizzata questa finestra.
+Se si è selezionata l'opzione **Controlla automaticamente**, il riquadro dello strumento di aggiornamento viene visualizzato quando viene aperto Visual Studio per Mac per consentire di sapere se sono disponibili nuovi aggiornamenti. I nuovi download inizieranno a scaricare automaticamente sul computer quando viene visualizzata questa casella.
 
 Per avviare l'installazione degli aggiornamenti, selezionare il pulsante **Riavvia e installa aggiornamenti**:
 

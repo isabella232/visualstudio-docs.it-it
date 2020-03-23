@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 104bdcc7a3f609456d521e710ac6ec2aeda2bb75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585574"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usare vari Web browser con test codificati dell'interfaccia utente
@@ -20,7 +20,7 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-Per prima cosa, installare i [componenti Selenium per test codificati dell'interfaccia utente tra più browser](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
+In primo luogo, installare i [componenti Selenium per codificare l'interfaccia](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)utente test del browser .
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Funzionalità supportate in tutti i Web browser
 
@@ -38,7 +38,7 @@ Testando l'applicazione Web con vari tipi di Web browser si emula meglio l'esper
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Come registrare e riprodurre i test codificati dell'interfaccia utente nelle applicazioni web usando i Web browser supportati
 
-**Registrazione**: è necessario usare il Generatore di test codificati dell'interfaccia utente per registrare il test di un'applicazione Web usando Internet Explorer. È possibile aggiungere la convalida e il codice personalizzato per i controlli testati usando un set predefinito di proprietà come generalmente accade per i test codificati dell'interfaccia utente. Per altre informazioni, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).
+**Registrazione**: è necessario usare il Generatore di test codificati dell'interfaccia utente per registrare il test di un'applicazione Web usando Internet Explorer. È possibile aggiungere la convalida e il codice personalizzato per i controlli testati usando un set predefinito di proprietà come generalmente accade per i test codificati dell'interfaccia utente. Per altre informazioni, vedere [Usare l'automazione dell'interfaccia utente per testare il codice.](../test/use-ui-automation-to-test-your-code.md)
 
 > [!NOTE]
 > Non è possibile registrare i test codificati dell'interfaccia utente usando i browser Mozilla Firefox o Google Chrome.
@@ -74,7 +74,7 @@ Per riprodurre i test su Web browser diversi da IE, è necessario installare i *
 
 Per altre informazioni sulla creazione e l'uso di test codificati dell'interfaccia utente, vedere [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md).
 
-### <a name="enable-debugging"></a>Abilita debug
+### <a name="enable-debugging"></a>Abilitare il debug
 
 Per abilitare il debug dell'applicazione Web è necessario completare le opzioni di configurazione seguenti:
 
@@ -104,11 +104,11 @@ Altre informazioni da tenere presente:
 
 ## <a name="tips"></a>Suggerimenti
 
-È possibile configurare l'output in modo da includere le schermate nei log codificati dell'interfaccia utente. A tale scopo, è necessario impostare alcune impostazioni di configurazione nel file *QTAgent32.exe.config*. Per impostazione predefinita, questo file è installato nel percorso seguente:
+È possibile configurare l'output in modo da includere le schermate nei log codificati dell'interfaccia utente. A tale scopo, è necessario impostare alcune impostazioni di configurazione nel file *QTAgent32.exe.config.* Per impostazione predefinita, questo file è installato nel percorso seguente:
 
 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
-Impostare i seguenti valori:
+Impostare i valori seguenti:
 
 - `EqtTraceLevel` nella sezione `system.diagnostics`.
 
@@ -120,9 +120,9 @@ Per altre informazioni, vedere [Analisi dei test codificati dell'interfaccia ute
 
 ## <a name="video-resources"></a>Risorse video
 
-[Record on IE and Playback everywhere](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU) (Registrazione in IE e riproduzione ovunque)
+[Registra su IE e riproduci ovunque](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
-[Author cross browser tests with Coded UI Test Builder](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8) (Creazione di test eseguibili in più browser con il generatore di test codificati dell'interfaccia utente)
+[Creare test tra browser con il generatore di test codificato dell'interfaccia utente](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
 [Author cross browser tests using plain hand coding without UI Map](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4) (Creazione di test eseguibili in più browser con la normale codifica manuale senza mappa dell'interfaccia utente)
 
@@ -134,4 +134,4 @@ Per altre informazioni, vedere [Analisi dei test codificati dell'interfaccia ute
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Analizzare i test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+- [Analizzare i test codificati dell'interfaccia utente usando i log di test codificati dell'interfaccia utenteAnalyze coded UI tests using coded UI test logs](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

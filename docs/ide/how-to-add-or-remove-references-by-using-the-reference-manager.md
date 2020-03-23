@@ -22,15 +22,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595310"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
-È possibile utilizzare la finestra di dialogo Gestione riferimenti per aggiungere e gestire riferimenti a componenti sviluppati personalmente, da Microsoft o da un'altra società. Se si sviluppa un’app Universal Windows, il progetto fa riferimento automaticamente a tutte le DLL SDK Windows corrette. Se si sviluppa un'applicazione .NET, il progetto fa automaticamente riferimento a *mscorlib.dll*. Alcune API .NET vengono esposte nei componenti che è necessario aggiungere manualmente. I riferimenti ai componenti COM o ai componenti personalizzati devono essere aggiunti manualmente.
+È possibile usare la finestra di dialogo Gestione riferimenti per aggiungere e gestire riferimenti a componenti sviluppati da sviluppatori, da Microsoft o da altre società. Se si sviluppa un’app Universal Windows, il progetto fa riferimento automaticamente a tutte le DLL SDK Windows corrette. Se si sviluppa un'applicazione .NET, il progetto fa automaticamente riferimento a *mscorlib.dll*. Alcune API .NET vengono esposte nei componenti che è necessario aggiungere manualmente. I riferimenti ai componenti COM o ai componenti personalizzati devono essere aggiunti manualmente.
 
 ## <a name="reference-manager-dialog-box"></a>Finestra di dialogo Gestione riferimenti
 
@@ -38,7 +38,7 @@ Sul lato sinistro della finestra di dialogo Gestione riferimenti sono disponibil
 
 - **Assembly** con i sottogruppi **Framework** ed **Estensioni**
 
-- Elenchi **COM** di tutti i componenti COM a cui è possibile fare riferimento
+- **COM** elenca tutti i componenti COM disponibili per il riferimento
 
 - **Progetti**
 
@@ -50,7 +50,7 @@ Sul lato sinistro della finestra di dialogo Gestione riferimenti sono disponibil
 
 ## <a name="add-a-reference"></a>Aggiungere un riferimento
 
-1. In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nodo **Riferimento** o **Dipendenze** e scegliere **Aggiungi riferimento**. È anche possibile fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi** > **Riferimento**.
+1. In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nodo **Riferimento** o **Dipendenze** e scegliere **Aggiungi riferimento**. È anche possibile fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi** > **riferimento**.
 
    Verrà visualizzata la finestra della **Gestione riferimenti** che elenca i riferimenti disponibili in base al gruppo.
 
@@ -58,9 +58,9 @@ Sul lato sinistro della finestra di dialogo Gestione riferimenti sono disponibil
 
 ## <a name="assemblies-tab"></a>Scheda Assembly
 
-La scheda **Assembly** elenca tutti gli assembly .NET disponibili per riferimento. Nella scheda **Assembly** non vengono elencati gli assembly della Global Assembly Cache (GAC) in quanto questi assembly fanno parte dell'ambiente di runtime. Se si distribuisce o si copia un'applicazione che contiene un riferimento a un assembly registrato nella Global Assembly Cache, tale assembly non verrà distribuito o copiato con l'applicazione, indipendentemente dall'impostazione dell'opzione **Copia localmente**. Per altre informazioni, vedere [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md).
+La scheda **Assembly** elenca tutti gli assembly .NET disponibili per riferimento. Nella scheda **Assembly** non vengono elencati gli assembly della Global Assembly Cache (GAC) in quanto questi assembly fanno parte dell'ambiente di runtime. Se si distribuisce o si copia un'applicazione che contiene un riferimento a un assembly registrato nella Global Assembly Cache, l'assembly non verrà distribuito o copiato con l'applicazione, indipendentemente dall'impostazione **Copia localmente.** Per altre informazioni, vedere [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md).
 
-Quando si aggiunge manualmente un riferimento a qualsiasi spazio dei nomi EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> o <xref:EnvDTE100>), impostare la proprietà **Incorpora tipi di interoperabilità** del riferimento su **False** nella finestra **Proprietà**. L'impostazione di questa proprietà su **True** può causare problemi di compilazione dovuti ad alcune proprietà EnvDTE che non possono essere incorporate.
+Quando si aggiunge manualmente un riferimento a qualsiasi spazio dei nomi EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> o <xref:EnvDTE100>), impostare la proprietà **Incorpora tipi di interoperabilità** del riferimento su **False** nella finestra **Proprietà**. L'impostazione di questa proprietà su **True** può causare problemi di compilazione a causa di alcune proprietà Di EnvDTE che non possono essere incorporate.
 
 Tutti i progetti desktop contengono un riferimento implicito a **mscorlib**. I progetti Visual Basic contengono un riferimento implicito a <xref:Microsoft.VisualBasic>. Tutti i progetti contengono un riferimento implicito a **System.Core**, anche se è stato rimosso dall'elenco di riferimenti.
 
@@ -68,15 +68,15 @@ Se un tipo di progetto non supporta gli assembly, la scheda non verrà visualizz
 
 La scheda **Assembly** è costituita da due sottoschede:
 
-1. In **Framework** sono elencati tutti gli assembly che costituiscono il framework di destinazione.
+1. **Framework** elenca tutti gli assembly che costituiscono il framework di destinazione.
 
    Per i progetti che non usano .NET Core o la piattaforma UWP (Universal Windows Platform) come destinazione, la scheda **Framework** enumera gli assembly del framework di destinazione. L'utente dovrà aggiungere i riferimenti necessari all'applicazione.
 
-   Per impostazione predefinita, i progetti di Windows universale contengono riferimenti a tutti gli assembly nel framework di destinazione. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** di **Esplora soluzioni** indica il riferimento all'intero framework. Di conseguenza, la scheda **Framework** non enumera alcuno degli assembly dal Framework e visualizza invece il messaggio seguente: "si è già fatto riferimento a tutti gli assembly del Framework. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nel framework."
+   Per impostazione predefinita, i progetti di Windows universale contengono riferimenti a tutti gli assembly nel framework di destinazione. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** in **Esplora soluzioni** indica il riferimento all'intero framework. Di conseguenza, la scheda **Framework** non enumera nessuno degli assembly dal framework e viene invece visualizzato il seguente messaggio: "Tutti gli assembly Framework sono già referenziati. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nel framework."
 
-2. In **Estensioni** sono elencati tutti gli assembly che i fornitori esterni di componenti e di controlli hanno sviluppato per estendere il framework di destinazione. A seconda dello scopo dell'applicazione utente, potrebbero essere necessari questi assembly.
+2. **Estensioni** elenca tutti gli assembly sviluppati da fornitori esterni di componenti e controlli per estendere il framework di destinazione. A seconda dello scopo dell'applicazione utente, potrebbero essere necessari questi assembly.
 
-   **Estensioni** viene popolata enumerando gli assembly che sono registrati nei seguenti percorsi:
+   **Le estensioni** vengono popolate enumerando gli assembly registrati nei percorsi seguenti:
 
    Computer a 32 bit:
    - `HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]`
@@ -111,7 +111,7 @@ Evitare di aggiungere riferimenti a file agli output di altri progetti della ste
 
   - Altre directory di progetto nella stessa soluzione. È possibile trovare questi assembly tramite la scheda **Progetti**.
 
-  \- oppure -
+  \- - oppure -
 
 - Impostare una chiave del Registro di sistema che specifica il percorso degli assembly da visualizzare:
 
@@ -127,13 +127,13 @@ Evitare di aggiungere riferimenti a file agli output di altri progetti della ste
 
   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-  *\<VersionMinimum\>* corrisponde alla versione minima applicabile del framework. Se il valore di *\<VersionMinimum\>* è v3.0, le cartelle specificate in *AssemblyFoldersEx* si applicano ai progetti destinati a .NET Framework 3.0 e versioni successive.
+  *VersionMinimum\> è la versione minima del framework \<* applicabile. Se * \<VersionMinimum\> * è v3.0, le cartelle specificate in *AssemblyFoldersEx* si applicano ai progetti destinati a .NET Framework 3.0 e versioni successive.
 
-  *\<AssemblyLocation\>* è la directory degli assembly che si vuole visualizzare nella finestra di dialogo **Aggiungi riferimento**, ad esempio *C:\AssiemiPersonali*.
+  *AssemblyLocation\> è la directory degli assembly che si desidera visualizzare nella finestra di dialogo Aggiungi riferimento, ad esempio C:. \<* **Add Reference** *C:\MyAssemblies*
 
   Se la chiave del Registro di sistema viene creata nel nodo `HKEY_LOCAL_MACHINE`, tutti gli utenti possono visualizzare gli assembly nel percorso specificato nella finestra di dialogo **Aggiungi riferimento**. Se la chiave del Registro di sistema viene creata nel nodo `HKEY_CURRENT_USER`, ha effetto solo sull'impostazione dell'utente corrente.
 
-  Aprire di nuovo la finestra di dialogo **Aggiungi riferimento**. Gli assembly verranno visualizzati nella scheda **.NET** . In caso contrario, assicurarsi che gli assembly si trovino nella directory *PercorsoAssembly* specificata, riavviare Visual Studio e riprovare.
+  Aprire di nuovo la finestra di dialogo **Aggiungi riferimento**. Gli assembly dovrebbero essere visualizzati nella scheda **.NET.** In caso contrario, assicurarsi che gli assembly si trovino nella directory *AssemblyLocation* specificata, riavviare Visual Studio e riprovare.
 
 ## <a name="projects-tab"></a>Scheda Progetti
 
@@ -151,7 +151,7 @@ Aggiungere un riferimento a un progetto condiviso nella scheda **Progetti condiv
 ## <a name="universal-windows-tab"></a>Scheda Windows universale
 
 La scheda **Windows universale** contiene tutti gli SDK specifici per le piattaforme in cui vengono eseguiti i sistemi operativi Windows.
-Questa scheda contiene due sottogruppi: **Core** ed **Extensions**.
+Questa scheda ha due sottogruppi: **Core** ed **Estensioni**.
 
 ### <a name="core-subgroup"></a>Sottogruppo di base
 
@@ -159,11 +159,11 @@ I progetti di app di Windows universale hanno un riferimento all'SDK di Windows 
 
 ### <a name="extensions-subgroup"></a>Sottogruppo Estensioni
 
-In **Estensioni** sono elencati gli SDK che estendono la piattaforma Windows di destinazione.
+**Estensioni** elenca gli SDK utente che estendono la piattaforma Windows di destinazione.
 
-Un SDK è una raccolta di file che in Visual Studio vengono trattati come un singolo componente. Nella scheda **Estensioni** gli SDK che si applicano al progetto da cui è stata aperta la finestra di dialogo Gestione riferimenti sono elencati come voci singole. Una volta aggiunto a un progetto, tutto il contenuto dell'SDK viene utilizzato da Visual Studio in modo tale che l'utente non deve eseguire nuove azioni per sfruttare il contenuto dell'SDK in IntelliSense, nella casella degli strumenti, nelle finestre di progettazione, nel Visualizzatore oggetti, nella compilazione, nella distribuzione, nel debug e nella creazione del pacchetto.
+Un SDK è una raccolta di file che in Visual Studio vengono trattati come un singolo componente. Nella scheda **Estensioni,** gli SDK che si applicano al progetto da cui è stata richiamata la finestra di dialogo Gestione riferimenti vengono elencati come singole voci. Una volta aggiunto a un progetto, tutto il contenuto dell'SDK viene utilizzato da Visual Studio in modo tale che l'utente non deve eseguire nuove azioni per sfruttare il contenuto dell'SDK in IntelliSense, nella casella degli strumenti, nelle finestre di progettazione, nel Visualizzatore oggetti, nella compilazione, nella distribuzione, nel debug e nella creazione del pacchetto.
 
-Per informazioni su come visualizzare l'SDK nella scheda **Estensioni**, vedere [Creazione di un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+Per informazioni su come visualizzare l'SDK nella scheda **Estensioni,** vedere [Creazione di un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
 > Se un progetto fa riferimento a un SDK che dipende da un altro SDK, Visual Studio userà il secondo SDK solo se si aggiunge manualmente un riferimento a quest'ultimo. Quando un utente sceglie un SDK nella scheda **Estensioni**, la finestra di dialogo Gestione riferimenti consente di identificare le dipendenze dell'SDK indicandole tutte nel riquadro dei dettagli.
@@ -172,11 +172,11 @@ Se un tipo di progetto non supporta le estensioni, la scheda non viene visualizz
 
 ## <a name="com-tab"></a>Scheda COM
 
-Nella scheda **COM** sono elencati tutti i componenti COM a cui è possibile fare riferimento. Se si desidera aggiungere un riferimento a una DLL COM registrata che contiene un manifesto interno, annullare prima di tutto la registrazione della DLL. In caso contrario, Visual Studio aggiunge il riferimento all'assembly come controllo ActiveX e non come DLL nativa.
+Nella scheda **COM** sono elencati tutti i componenti COM disponibili per il riferimento. Se si desidera aggiungere un riferimento a una DLL COM registrata che contiene un manifesto interno, annullare prima di tutto la registrazione della DLL. In caso contrario, Visual Studio aggiunge il riferimento all'assembly come controllo ActiveX e non come DLL nativa.
 
 Se un tipo di progetto non supporta il modello COM, la scheda non viene visualizzata nella finestra di dialogo Gestione riferimenti.
 
-## <a name="browse"></a>Browse
+## <a name="browse"></a>Sfoglia
 
 È possibile usare il pulsante **Sfoglia** per passare a un componente nel file system.
 
@@ -186,11 +186,11 @@ Evitare di aggiungere riferimenti a file negli output di un altro progetto all'i
 
 Non è possibile individuare un SDK e aggiungerlo al progetto. È possibile solo individuare un file, ad esempio un assembly o un file con estensione *winmd*, e aggiungerlo al progetto.
 
-Nella creazione di un riferimento di file a un WinMD il layout previsto è quello in cui i file *\<NomeFile>.winmd*, *\<NomeFile>.dll* e *\<NomeFile>.pri* si trovano l'uno accanto all'altro. Se si fa riferimento a un WinMD nei seguenti scenari, un set incompleto di file verrà copiato nella directory di output del progetto e, di conseguenza, si verificheranno errori di runtime e di compilazione.
+Quando si esegue un riferimento a un file WinMD, il layout previsto è che i * \<file FileName>.winmd*, * \<FileName>.dll*e * \<FileName>.pri* siano tutti posizionati uno accanto all'altro. Se si fa riferimento a un WinMD nei seguenti scenari, un set incompleto di file verrà copiato nella directory di output del progetto e, di conseguenza, si verificheranno errori di runtime e di compilazione.
 
-- **Componente nativo**: un progetto nativo crea un WinMD per ogni set di spazi dei nomi disgiunto e una sola DLL costituita dall'implementazione. I file WinMD avranno nomi diversi. Durante la creazione del riferimento a questo file di componente nativo, MSBuild non sarà in grado di riconoscere che WinMD con nome diverso sono in realtà un unico componente. Di conseguenza, saranno copiati solo i file *\<NomeFile>.dll* e *\<NomeFile>.winmd* con lo stesso nome e si verificheranno errori di runtime. Per risolvere questo problema, creare un SDK di estensione. Per altre informazioni, vedere [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Componente nativo**: un progetto nativo crea un WinMD per ogni set di spazi dei nomi disgiunto e una sola DLL costituita dall'implementazione. I file WinMD avranno nomi diversi. Durante la creazione del riferimento a questo file di componente nativo, MSBuild non sarà in grado di riconoscere che WinMD con nome diverso sono in realtà un unico componente. Di conseguenza, verranno copiati solo i nomi * \<fileName>.dll* e * \<>.winmd* denominati e si verificheranno errori di runtime. Per risolvere questo problema, creare un SDK di estensione. Per altre informazioni, vedere [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Uso di controlli**: un controllo XAML è costituito come minimo da *\<NomeFile>.winmd*, *\<NomeFile>.dll*, *\<NomeFile>.pri*, *\<NomeXaml>.xaml* e *\<NomeImmagine>.jpg*. Quando il progetto viene compilato, i file di risorse associati al riferimento a file non vengono copiati nella directory di output del progetto. Verranno copiati solo i file *\<NomeFile>.winmd*, *\<NomeFile>.dll* e *\<NomeFile>.pri*. Verrà registrato un errore di compilazione per informare l'utente dell'assenza delle risorse *\<NomeXaml>.xaml* e *\<NomeImmagine>.jpg*. Per ottenere i risultati desiderati, l'utente dovrà copiare manualmente questi file di risorse nella directory di output del progetto per compilazione e debug/runtime. Per risolvere questo problema, creare un SDK di estensione seguendo i passaggi in [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md) o modificare il file di progetto per aggiungere la proprietà seguente:
+- **Uso di controlli**: un controllo XAML è costituito come minimo da *\<NomeFile>.winmd*, *\<NomeFile>.dll*, *\<NomeFile>.pri*, *\<NomeXaml>.xaml* e *\<NomeImmagine>.jpg*. Quando il progetto viene compilato, i file di risorse associati al riferimento al file non verranno copiati nella directory di output del progetto e verranno copiati solo * \<FileName>.winmd*, * \<FileName>.dll* e * \<FileName>.pri.* Viene registrato un errore di compilazione per informare l'utente che le risorse * \<XamlName>.xaml* e * \<ImageName>.jpg* sono mancanti. Per ottenere i risultati desiderati, l'utente dovrà copiare manualmente questi file di risorse nella directory di output del progetto per compilazione e debug/runtime. Per risolvere questo problema, creare un SDK di estensione seguendo i passaggi in [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md) o modificare il file di progetto per aggiungere la proprietà seguente:
 
     ```xml
     <PropertyGroup>
@@ -201,11 +201,11 @@ Nella creazione di un riferimento di file a un WinMD il layout previsto è quell
     > [!NOTE]
     > Se si aggiunge la proprietà, la compilazione potrebbe essere eseguita più lentamente.
 
-## <a name="recent"></a>Recenti
+## <a name="recent"></a>Recente
 
-Le schede **Assembly**, **COM**, **Windows** e **Sfoglia** supportano tutte una scheda **Recenti**, nella quale viene enumerato l'elenco di componenti aggiunti ai progetti di recente.
+**Gli assembly**, **COM**, **Windows**e **Sfoglia** supportano **ciascuna** una scheda Recenti che enumera l'elenco dei componenti aggiunti di recente ai progetti.
 
-## <a name="search"></a>Cerca
+## <a name="search"></a>Ricerca
 
 La barra di ricerca della finestra di dialogo Gestione riferimenti viene abilitata nella scheda attiva. Ad esempio, se un utente digita "sistema" nella barra di ricerca mentre è attiva la scheda **Soluzione**, verranno restituiti risultati solo se la soluzione è costituita da un nome di progetto contenente il termine "sistema".
 

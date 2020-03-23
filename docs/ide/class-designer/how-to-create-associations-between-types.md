@@ -17,24 +17,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 61b598505ad465ec9086102b9e16e96cb7aa8275
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590384"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>Procedura: Creare associazioni tra tipi in Progettazione classi
 
-Le linee di associazione in **Progettazione classi** mostrano le relazioni tra le classi di un diagramma. Una linea di associazione rappresenta una classe che corrisponde al tipo di una proprietà o di un campo di un'altra classe del progetto. Le linee di associazione vengono in genere utilizzate per illustrare le relazioni più importanti tra le classi del progetto.
+Le linee di associazione in **Progettazione classi** mostrano come le classi in un diagramma sono correlate. Una linea di associazione rappresenta una classe che corrisponde al tipo di una proprietà o di un campo di un'altra classe del progetto. Le linee di associazione vengono in genere utilizzate per illustrare le relazioni più importanti tra le classi del progetto.
 
 Anche se è possibile visualizzare tutti i campi e tutte le proprietà come associazioni, è opportuno effettuare questa operazione solo per i membri importanti, a seconda degli elementi si intende evidenziare nel diagramma. I membri meno importanti possono essere visualizzati come membri normali oppure possono essere nascosti.
 
 > [!NOTE]
-> In **Progettazione classi** sono supportate solo le associazioni unidirezionali.
+> **Progettazione classi** supporta solo associazioni unidirezionali.
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>Per definire una linea di associazione in Diagramma classi
 
-1. In **Progettazione classi**, nella casella degli strumenti, selezionare **Associazione**.
+1. Nella Casella degli strumenti, in **Progettazione classi**, selezionare **Associazione**.
 
 2. Disegnare una linea tra le due forme da collegare con un'associazione.
 
@@ -56,4 +56,4 @@ In alternativa, seguire questi passaggi:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Passare dalla notazione membro alla notazione associazione](how-to-change-between-member-notation-and-association-notation.md)
+- [Procedura: Passare dalla notazione dei membri alla notazione di associazione](how-to-change-between-member-notation-and-association-notation.md)

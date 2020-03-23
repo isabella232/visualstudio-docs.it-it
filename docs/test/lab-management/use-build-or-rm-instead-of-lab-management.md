@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566826"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Usare Azure Test Plans anziché Lab Management per i test automatizzati
@@ -26,7 +26,7 @@ Per l'automazione della compilazione, della distribuzione e del test delle appli
 
 | Passaggi | Con la compilazione XAML | In una compilazione o versione |
 |-------|----------------------|-----------------|
-| Identificare i computer in cui distribuire la compilazione ed eseguire i test. | Creare un ambiente lab standard in Microsoft Test Manager con questi computer. | N/D |
+| Identificare i computer in cui distribuire la compilazione ed eseguire i test. | Creare un ambiente lab standard in Microsoft Test Manager con questi computer. | n/d |
 | Identificare i test da eseguire. | Creare un gruppo di test in Microsoft Test Manager, creare i test case e associare l'automazione a ogni test case. Creare le impostazioni di test in Microsoft Test Manager identificando il ruolo dei computer nell'ambiente lab in cui devono essere eseguiti i test. | Se si prevede di gestire l'esecuzione dei test usando i piani di test, creare un gruppo di test automatizzati in Microsoft Test Manager nello stesso modo. In alternativa, è possibile evitare questo passaggio se i test devono essere eseguiti direttamente da file binari di test generati dalle compilazioni. In entrambi i casi non è necessario creare impostazioni di test. |
 | Automatizzare la distribuzione e l'esecuzione di test. | Creare una definizione di compilazione XAML tramite LabDefaultTemplate.*.xaml. Specificare la compilazione, i gruppi di test e l'ambiente lab nella definizione di compilazione. | Creare una [pipeline di compilazione o di versione](/azure/devops/pipelines/index?view=vsts) con un unico ambiente. Eseguire lo stesso script di distribuzione (dalla definizione di compilazione XAML) tramite l'attività Riga di comando ed eseguire test automatizzati tramite le attività Distribuzione agente di test ed Esegui test funzionali. Come input per queste attività, specificare l'elenco dei computer e le relative credenziali. |
 

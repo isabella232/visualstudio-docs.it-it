@@ -21,28 +21,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1be1d4fa9f1b088547bb21dfb64254209783d7e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565708"
 ---
 # <a name="properties-window"></a>Finestra Proprietà
 
 Usare questa finestra per visualizzare e modificare in fase di progettazione le proprietà e gli eventi degli oggetti selezionati presenti in editor e finestre di progettazione. È anche possibile usare la finestra **Proprietà** per modificare e visualizzare le proprietà di file, progetto e soluzione. La finestra **Proprietà** può essere selezionata dal menu **Visualizza**. È anche possibile aprirla premendo **F4** o digitando **Proprietà** nella casella di ricerca.
 
-Nella finestra **Proprietà** vengono visualizzati diversi tipi di campi di modifica, a seconda delle esigenze di una determinata proprietà. I campi di modifica comprendono caselle di modifica, elenchi a discesa e collegamenti a finestre di dialogo dell'editor personalizzato. Le proprietà visualizzate in grigio sono di sola lettura.
+La finestra **Proprietà** visualizza diversi tipi di campi di modifica, a seconda dei requisiti di una determinata proprietà. I campi di modifica comprendono caselle di modifica, elenchi a discesa e collegamenti a finestre di dialogo dell'editor personalizzato. Le proprietà visualizzate in grigio sono di sola lettura.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 Nome oggetto\
-Indica l'oggetto o gli oggetti attualmente selezionati. Sono visibili solo gli oggetti dell'editor o della finestra di progettazione attivi. Quando si selezionano più oggetti vengono visualizzate solo le proprietà comuni a tutti gli oggetti selezionati.
+Elenca l'oggetto o gli oggetti attualmente selezionati. Saranno visibili solo gli oggetti dell'editor attivo o della finestra di progettazione attiva. Quando si selezionano più oggetti vengono visualizzate solo le proprietà comuni a tutti gli oggetti selezionati.
 
 Per categoria\
-Elenca tutte le proprietà e i valori delle proprietà per l'oggetto selezionato, in base alla categoria. È possibile comprimere una categoria per ridurre il numero di proprietà visualizzate. A seconda che si espanda o si comprima una categoria, a sinistra del nome di quest'ultima è presente un segno di addizione (+) o di sottrazione (-). Le categorie sono elencate in ordine alfabetico.
+Elenca, per categoria, tutte le proprietà e i relativi valori per l'oggetto selezionato. È possibile comprimere una categoria per ridurre il numero di proprietà visualizzate. Quando una categoria viene espansa o compressa, accanto al nome verrà visualizzato un segno più (+) o un segno meno (-). Le categorie sono elencate in ordine alfabetico.
 
 Alfabetico\
-Ordina alfabeticamente tutti gli eventi e le proprietà della fase di progettazione per gli oggetti selezionati. Per modificare una proprietà attiva, fare clic nella cella a destra della proprietà e immettere le modifiche.
+Ordina alfabeticamente tutti gli eventi e le proprietà in fase di progettazione per gli oggetti selezionati. Per modificare una proprietà attiva, fare clic nella cella a destra della proprietà e immettere le modifiche.
 
 Pagine delle proprietà\
 Visualizza la finestra di dialogo **Pagine delle proprietà** o **Creazione progetti** per l'elemento selezionato. In Pagine delle proprietà viene visualizzato un subset, lo stesso o un superset delle proprietà disponibili nella finestra **Proprietà**. Usare questo pulsante per visualizzare e modificare le proprietà correlate alla configurazione attiva del progetto.
@@ -72,7 +72,7 @@ Indica tutte le funzioni virtuali per la classe selezionata e consente di aggiun
 > Questo controllo della barra degli strumenti della finestra **Proprietà** è disponibile solo quando **Visualizzazione classi** è la finestra attiva nel contesto di un progetto [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
 
 Riquadro descrizione\
-Visualizza il tipo di proprietà e una breve descrizione della proprietà. È possibile disabilitare la visualizzazione della descrizione della proprietà scegliendo Descrizione dal menu di scelta rapida.
+Visualizza il tipo di proprietà e una breve descrizione della proprietà. È possibile attivare e disattivare la descrizione della proprietà usando il comando Descrizione del menu di scelta rapida.
 
 > [!NOTE]
 > Questo controllo della barra degli strumenti della finestra **Proprietà** non è disponibile se si modificano i file XAML nella finestra di progettazione.
@@ -85,5 +85,5 @@ Specifica una funzione di ricerca per le proprietà e gli eventi quando si modif
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimenti alle proprietà di progetto](../../ide/reference/project-properties-reference.md)
-- [Personalizzazione del layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Project Properties Reference](../../ide/reference/project-properties-reference.md) (Riferimenti alle proprietà di progetto)
+- [Personalizzazione del layout della finestra](../../ide/customizing-window-layouts-in-visual-studio.md)

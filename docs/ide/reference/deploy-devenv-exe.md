@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b8eeb1a03e584b0b39030ec56ca6945a2d5ced78
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570128"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
@@ -32,33 +32,33 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
 ## <a name="arguments"></a>Argomenti
 
-- *SolutionName*
+- *Solutionname*
 
-  Richiesto. Il percorso completo e il nome del file della soluzione.
+  Obbligatorio. Il percorso completo e il nome del file della soluzione.
 
 - *SolnConfigName*
 
-  Parametro facoltativo. Nome della configurazione di soluzione (ad esempio `Debug` o `Release`) da usare per compilare la soluzione indicata in *SolutionName*. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se questo argomento non viene specificato o viene specificata una stringa vuota (`""`), lo strumento usa la configurazione attiva della soluzione.
+  Facoltativa. Nome della configurazione di soluzione (ad esempio `Debug` o `Release`) da usare per compilare la soluzione indicata in *SolutionName*. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se questo argomento non viene specificato o viene specificata una stringa vuota (`""`), lo strumento usa la configurazione attiva della soluzione.
 
-- `/Project` *ProjName*
+- `/Project`*Nome Proj*
 
-  Parametro facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il nome visualizzato del progetto o un percorso relativo dalla cartella *SolutionName* al file di progetto. È anche possibile immettere il percorso completo e il nome del file di progetto.
+  Facoltativa. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il nome visualizzato del progetto o un percorso relativo dalla cartella *SolutionName* al file di progetto. È anche possibile immettere il percorso completo e il nome del file di progetto.
 
-- `/ProjectConfig` *projnameconfig*
+- `/ProjectConfig` *ProjConfigName*
 
-  Parametro facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da usare per la compilazione del `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se si specifica questa opzione, viene eseguito l'override dell'argomento *SolnConfigName*.
+  Facoltativa. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da usare per la compilazione del `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se si specifica questa opzione, viene eseguito l'override dell'argomento *SolnConfigName*.
 
-- `/Out` *OutputFileName*
+- `/Out`*OutputFilename*
 
-  Parametro facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
+  Facoltativa. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Il progetto specificato deve essere un progetto di distribuzione. Se non lo è, quando il progetto compilato viene passato per la distribuzione, genererà un errore.
 
 Racchiudere le stringhe che includono spazi tra virgolette doppie.
 
-Le informazioni di riepilogo sulle compilazioni, inclusi gli errori, possono essere visualizzate nella finestra di **comando** o in qualsiasi file di log specificato con l'opzione [/Out](out-devenv-exe.md).
+Le informazioni di riepilogo per le compilazioni, inclusi gli errori, possono essere visualizzate nella finestra **di comando** o in qualsiasi file di log specificato con l'opzione [/Out.](out-devenv-exe.md)
 
 ## <a name="example"></a>Esempio
 

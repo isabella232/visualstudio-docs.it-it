@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596437"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, scheda HTML
@@ -50,7 +50,7 @@ Quando si trascina **Input (Pulsante)** nell'area di visualizzazione Progettazio
 
 **Input (Reimposta)**
 
-![Schermata di HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
+![Schermata HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
 
 Consente di inserire un elemento `input` di `type="reset"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di reimpostazione viene inserito `id="Reset1"`, come secondo `id="Reset2"` e così via.
 
@@ -62,7 +62,7 @@ Quando si trascina **Input (Reimposta)** nell'area di visualizzazione Progettazi
 
 **Input (Invia)**
 
-![Schermata di HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
+![Schermata HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
 
 Consente di inserire un elemento `input` di `type="submit"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di invio viene inserito `id="Submit1"`, come secondo `id="Submit2"` e così via.
 
@@ -74,7 +74,7 @@ Quando si trascina **Input (Invia)** nell'area di visualizzazione Progettazione,
 
 **Input (Testo)**
 
-![Schermata di HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
+![Schermata HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
 
 Consente di inserire un elemento `input` di `type="text"` nel documento. Per modificare il testo predefinito visualizzato, modificare l'attributo `value`. Per impostazione predefinita, come primo campo di testo viene inserito `id="Text1"`, come secondo `id="Text2"` e così via.
 
@@ -87,7 +87,7 @@ Quando si trascina **Input (Testo)** nell'area di visualizzazione Progettazione,
 > [!IMPORTANT]
 >È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).
 
-**Input (File)**
+**Input (file)**
 
 ![Campo file pagina HTML](../../ide/reference/media/vxfilefield.gif)
 
@@ -131,7 +131,7 @@ Quando si trascina **Input (Casella di controllo)** nell'area di visualizzazione
 
 **Input (Pulsante di opzione)**
 
-![Schermata di VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
+![Schermata VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
 
 Consente di inserire un elemento `input` di `type="radio"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di opzione viene inserito `id="Radio1"`, come secondo `id="Radio2"` e così via.
 
@@ -168,9 +168,9 @@ Quando si trascina **Area di testo** nell'area di visualizzazione Progettazione,
 > [!IMPORTANT]
 > È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).
 
-**Tabella**
+**tavolo**
 
-![Schermata di HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
+![Schermata HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
 Consente di inserire un elemento `table`.
 
@@ -206,7 +206,7 @@ Quando si trascina **Seleziona** nell'area di visualizzazione Progettazione, nel
 
 È possibile creare un elemento `select` aumentando il valore della proprietà Size.
 
-**Righello orizzontale**
+**Regola orizzontale**
 
 ![Elemento righello orizzontale pagina HTML](../../ide/reference/media/vxhorizontal.gif)
 

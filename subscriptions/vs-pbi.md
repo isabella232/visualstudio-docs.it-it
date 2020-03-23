@@ -7,10 +7,10 @@ ms.date: 11/18/2019
 ms.topic: conceptual
 description: Informazioni sulla sottoscrizione Power BI inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.openlocfilehash: 8e7046d8fc16868e23978203cf2bc400c70b6b8d
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74161940"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
@@ -48,35 +48,35 @@ Per usare Power BI Pro, è necessario configurare un account o accedere con un a
    > [!div class="mx-imgBorder"]
    > ![Informazioni sul contatto del vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-contact-cropped.png)
 
-9. La pagina successiva conferma che il prezzo della sottoscrizione di Power BI Pro Developer (MSDN) è 0,00 dollari.  Scegliere **Avanti**.
+9. La pagina successiva conferma che il prezzo della sottoscrizione di Power BI Pro Developer (MSDN) è 0,00 dollari.  Fare clic su **Avanti**.
 
 10. Vengono infine raccolte alcune informazioni per il pagamento.  Non occorre preoccuparsi, non verrà addebitato nulla.  Si noti che il prezzo è ancora 0,00 dollari.  Come metodo di pagamento è possibile scegliere la carta di credito, il conto bancario o la fattura.  Se si sceglie **Fattura**, può venire chiesto il motivo per cui si preferisce questo metodo di pagamento.  Specificare le informazioni richieste per il metodo di pagamento preferito e fare clic su **Esegui ordine**.
     > [!div class="mx-imgBorder"]
     > ![Informazioni sul contatto del vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
 
-11. La pagina successiva conferma che è tutto pronto per iniziare a usare Power BI Pro.  Nella pagina è disponibile un collegamento alla pagina di accesso.  È consigliabile registrare il collegamento alla pagina di accesso, nonché l'ID utente.  Si riceverà anche un messaggio di posta elettronica di benvenuto all'indirizzo specificato durante la configurazione dell'account.  È anche possibile visualizzare una finestra automatica di Office 365 Assistant, che può essere usata in caso di domande.  Fare clic su **Iniziamo** per continuare.
+11. La pagina successiva conferma che è tutto pronto per iniziare a usare Power BI Pro.  Nella pagina è disponibile un collegamento alla pagina di accesso.  È consigliabile registrare il collegamento alla pagina di accesso, nonché l'ID utente.  (Riceverai anche un'e-mail di benvenuto all'indirizzo che hai fornito quando hai configurato l'account.)  È inoltre possibile visualizzare una finestra automatica dell'Assistente di Office 365, che è possibile utilizzare in caso di domande.  Fare clic su **Iniziamo** per continuare.
 
-12. Ora che l'account di Power BI Pro è configurato, viene visualizzata l'interfaccia di amministrazione di Office 365, in cui è possibile gestire utenti e domini, installare il software di Office e trovare informazioni su Office 365.  I commenti  È tutto pronto per iniziare.
+12. Ora che l'account di Power BI Pro è configurato, viene visualizzata l'interfaccia di amministrazione di Office 365, in cui è possibile gestire utenti e domini, installare il software di Office e trovare informazioni su Office 365.  La procedura è terminata.  È tutto pronto per iniziare.
 
 ## <a name="eligibility"></a>Idoneità
 
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  Yes|
-| Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile       |  Yes|
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |N/D         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                            |N/D         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                            |N/D         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile       |  Yes|
-| Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |N/D|
+| Visual Studio Enterprise (Standard)   | VL, Azure, vendita al dettaglio, NFR<sup>1</sup> selezionato | Disponibile       |  Sì|
+| Visual Studio Enterprise con GitHub Enterprise  | Vl | Disponibile       |  Sì|
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |ND         |
+| Visual Studio Professional con GitHub Enterprise | Vl                                      | Non disponibile                                                            |ND         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                            |ND         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile       |  Sì|
+| Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |ND|
 ||
 
-<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (Rd).  Escludi: Microsoft Partner Network (MPN), ETP, Imagine.*
+<sup>1</sup>  *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD).  Esclusi: Microsoft Partner Network (MPN), FTE, Imagine.*
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) invitati a passare a esplorare diverse opzioni per l'acquisto di Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>D: se il vantaggio è gratuito, perché è necessario indicare un numero di carta di credito?
@@ -84,8 +84,8 @@ R: il vantaggio è gratuito, ma l'attivazione usa lo stesso sistema usato per el
 - Carta di credito.  Se si specifica un numero di carta di credito, NON viene effettuato alcun addebitato sulla carta.
 - Fattura.  Se si seleziona "Fattura" come tipo di pagamento, non è necessario indicare un numero di carta di credito.  È anche possibile impostare l'intervallo su "annuale".  In questo modo si riceverà un solo messaggio di posta elettronica che informa che la fattura è pronta.  L'importo della fattura sarà $ 0,00.
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>D: il vantaggio Power BI Pro incluso nell'abbonamento con licenza per l'uso in un ambiente di produzione?
-R: Sì, è possibile usarlo in un ambiente di produzione, con due importanti avvertenze:
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>D: Il vantaggio di Power BI Pro è incluso nella sottoscrizione concesso in licenza per l'uso in un ambiente di produzione?
+R: Sì, è possibile utilizzarlo in una produzione, con due importanti avvertimenti:
 - questa offerta richiede l'installazione in un tenant apposito.  Se è necessario avere una licenza di Power BI associata alle credenziali aziendali nel tenant della società, rivolgersi all'amministratore della società per acquistare e assegnare una licenza.
 - Il vantaggio Power BI Pro non può essere usato nei tenant per enti pubblici.
 
@@ -101,17 +101,17 @@ R: sì.  Il messaggio indica che si è connessi a un dominio che ha già tenant 
 
 4. I passaggi rimanenti del processo sono uguali a quelli descritti nell'articolo, a partire dal passaggio 6.
 
-### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>D: sono un tenant governativo.  è possibile usare il vantaggio?
-R: no.  Il vantaggio Power BI Pro non può essere aggiunto ai tenant per enti pubblici.
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>D: Sono in un inquilino del governo.  è possibile usare il vantaggio?
+R: No.  Il vantaggio Power BI Pro non può essere aggiunto ai tenant per enti pubblici.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con Power BI Pro?
   - Vedere la [documentazione online](/power-bi/).
   - Problemi durante l'iscrizione?  Vedere [Iscrizione a Power BI come utente singolo](/power-bi/service-self-service-signup-for-power-bi)
   - Esplorare i problemi principali, ottenere assistenza dalla community o inviare un ticket di supporto nella [pagina del supporto tecnico](https://powerbi.microsoft.com/support/).
-- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [il supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
-- Per attivare il vantaggio Power BI Pro, vedere [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-- Sfrutta i vantaggi della tua sandbox di sviluppo attivando il tuo [credito di Azure DevTest](vs-azure.md). 
+- Per attivare il vantaggio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)di Power BI Pro, visitare .
+- Sfrutta la tua sandbox di sviluppo attivando il [credito individuale di Azure DevTest.](vs-azure.md) 

@@ -7,25 +7,25 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.openlocfilehash: 85e66711c8bfe65319bf6af90ce0452478c4b7f8
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983477"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
 
 Le funzioni di Azure sono un metodo per la creazione e l'esecuzione di frammenti di codice gestiti dagli eventi (funzioni) nel cloud, senza richiedere l'aggiunta o la gestione esplicita di elementi di infrastruttura. Per altre informazioni sulle funzioni di Azure, vedere la [documentazione di Funzioni di Azure](/azure/azure-functions/).
 
-## <a name="requirements"></a>Requisiti di
+## <a name="requirements"></a>Requisiti
 
 Gli strumenti Funzioni di Azure sono inclusi in **Visual Studio per Mac 7.5**.
 
-Per creare e distribuire le funzioni è necessaria anche una sottoscrizione di Azure, disponibile gratuitamente in [https://azure.com/free](https://azure.com/free).
+Per creare e distribuire funzioni è necessaria anche una [https://azure.com/free](https://azure.com/free)sottoscrizione di Azure, disponibile gratuitamente da .
 
 ## <a name="creating-your-first-azure-functions-project"></a>Creazione del primo progetto di Funzioni di Azure
 
-1. In Visual Studio per Mac selezionare **File > Nuova soluzione**.
+1. In Visual Studio per Mac selezionare **File > nuova soluzione**.
 2. Nella finestra di dialogo Nuovo progetto, selezionare il modello Funzioni di Azure in **Cloud > Generale** e fare clic su **Avanti**:
 
     ![Finestra Nuovo progetto con l'opzione Funzioni di Azure](media/azure-functions-image1.png)
@@ -50,7 +50,7 @@ Il nuovo progetto contiene i file seguenti:
 
 * **nome-funzione.cs** - Questa classe contiene il codice boilerplate per la funzione selezionata. Contiene un attributo **FunctionName** con il nome della funzione e un attributo trigger che specifica cosa attiva la funzione, ad esempio una richiesta HTTP. Per altre informazioni sul metodo della funzione, vedere l'articolo [Azure Functions C# developer reference](/azure/azure-functions/functions-dotnet-class-library) (Riferimento di Funzioni di Azure per gli sviluppatori C#).
 * **host.json**: questo file descrive le opzioni di configurazione globali per l'host delle funzioni. Per visualizzare un file di esempio e informazioni sulle impostazioni disponibili per tale file, vedere [Riferimento host.json per Funzioni di Azure](/azure/azure-functions/functions-host-json).
-* **local.settings.json**: questo file contiene tutte le impostazioni per l'esecuzione locale delle funzioni. Le impostazioni vengono usate dagli strumenti di base di Funzioni di Azure. Per altre informazioni, vedere [File di impostazioni locali](/azure/azure-functions/functions-run-local#local-settings-file) nell'articolo relativo agli strumenti di base di Funzioni di Azure.
+* **local.settings.json**: questo file contiene tutte le impostazioni per l'esecuzione locale delle funzioni. Le impostazioni vengono usate dagli strumenti di base di Funzioni di Azure. Per altre informazioni, vedere [File di impostazioni locali](/azure/azure-functions/functions-run-local#local-settings-file) nell'argomento sugli strumenti di base di Funzioni di Azure.
 
 Ora che è stato creato un nuovo progetto di Funzioni di Azure in Visual Studio per Mac, è possibile sottoporre a test la funzione attivata da HTTP predefinita nel computer locale.
 
@@ -68,7 +68,7 @@ Grazie al supporto di Funzioni di Azure in Visual Studio per Mac è possibile so
 
     Copiare l'URL dall'output.
 
-3. Incollare l'URL della richiesta HTTP nella barra degli indirizzi del browser. Aggiungere la stringa di query `?name=<yourname>` alla fine dell'URL ed eseguire la richiesta. L'immagine seguente visualizza la risposta restituita dalla funzione nel browser alla richiesta GET locale:
+3. Incollare l'URL per la richiesta HTTP nella barra degli indirizzi del browser. Aggiungere la stringa di query `?name=<yourname>` alla fine dell'URL ed eseguire la richiesta. L'immagine seguente visualizza la risposta restituita dalla funzione nel browser alla richiesta GET locale:
 
     ![Richiesta HTTP nel browser](media/azure-functions-httpreq.png)
 
@@ -86,30 +86,30 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 
     Nella sezione [Modelli di funzione disponibili](#available-function-templates) è disponibile un elenco dei modelli di Funzioni di Azure.
 
-È possibile usare la procedura sopra descritta per aggiungere altre funzioni al progetto dell'app per le funzioni. Ogni funzione nel progetto può avere un trigger diverso, ma una funzione deve avere esattamente un trigger. Per altre informazioni, vedere [Concetti di trigger e associazioni di Funzioni di Azure](/azure/azure-functions/functions-triggers-bindings).
+È possibile usare la procedura descritta in precedenza per aggiungere altre funzioni al progetto di app per le funzioni. Ogni funzione nel progetto può avere un trigger diverso, ma una funzione deve avere esattamente un trigger. Per altre informazioni, vedere Concetti relativi ai trigger e alle associazioni di Funzioni di Azure.For more information, see [Azure Functions triggers and bindings concepts](/azure/azure-functions/functions-triggers-bindings).
 
-## <a name="publish-to-azure"></a>Pubblicare in Azure
+## <a name="publish-to-azure"></a>Pubblicazione in Azure
 
-1. Fare clic con il pulsante destro del mouse sul nome del progetto e scegliere **Pubblica > Pubblica in Azure**: ![Opzione di menu Pubblica in Azure](media/azure-functions-image5.png)
+1. Fare clic con il pulsante destro del mouse sul nome del progetto e selezionare **pubblica > l'opzione**di menu Pubblica in Azure: ![Pubblica in Azure](media/azure-functions-image5.png)
 2. Se l'account di Azure è già stato connesso a Visual Studio per Mac, viene visualizzato un elenco dei servizi app disponibili. Se non è stato ancora effettuato l'accesso, verrà richiesto di farlo.
 3. Nella finestra di dialogo **Pubblica in Servizi app di Azure** è possibile selezionare un servizio app esistente o crearne uno nuovo facendo clic **Nuovo**.
 4. Nella finestra di dialogo **Crea nuovo servizio app** immettere le impostazioni: ![Opzione di menu Pubblica in Azure](media/azure-functions-image7.png)
 
-    |Impostazione di  |Descrizione  |
+    |Impostazione  |Descrizione  |
     |---------|---------|
-    |**Nome del servizio app**|Nome globalmente univoco che identifica la nuova app per le funzioni.|
-    |**Sottoscrizione**|La sottoscrizione di Azure da usare.|
-    |**[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)**|Nome del gruppo di risorse in cui creare l'app per le funzioni. Scegliere **+** per creare un nuovo gruppo di risorse.|
+    |**Nome servizio app**|Nome globalmente univoco che identifica la nuova app per le funzioni.|
+    |**Sottoscrizione**|Sottoscrizione di Azure da usare.|
+    |**[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)**|Nome del gruppo di risorse in cui creare l'app per le funzioni. Scegliere **+** di creare un nuovo gruppo di risorse.|
     |**[Piano di servizio](/azure/azure-functions/functions-scale)**|Scegliere un piano esistente o creare un piano personalizzato. Scegliere una località in un'area nelle vicinanze o vicino ad altri servizi a cui accedono le funzioni.|
 
     > [!CAUTION]
     > È presente un bug nella versione 7.6 di Visual Studio per Mac che causerà l'esito negativo della pubblicazione con un errore di provisioning, se si prova a creare un piano di servizio personalizzato con l'opzione **Prezzi** impostata su **Consumo**. Questo problema verrà risolto nella prossima versione.
 
-5. Fare clic su **Avanti** per creare un account di archiviazione. Il runtime di Funzioni richiede un account di archiviazione di Azure. Fare clic su **Personalizzato** per creare un account di archiviazione per utilizzo generico oppure usarne uno esistente:
+5. Fare clic su **Avanti** per creare un account di archiviazione. L'account di archiviazione di Azure è necessario per il runtime di Funzioni. Fare clic su **Personalizzato** per creare un account di archiviazione per utilizzo generico oppure usarne uno esistente:
 
     ![Opzione di menu Pubblica in Azure](media/azure-functions-image8.png)
 
-6. Fare clic su **Crea** per creare un'app per le funzioni e le relative risorse in Azure con queste impostazioni e distribuire il codice del progetto per funzioni.
+6. Fare clic su **Crea** per creare un'app per le funzioni e le relative risorse in Azure con queste impostazioni e distribuire il codice di progetto della funzione.
 
 7. Potrebbe essere visualizzata una finestra di dialogo durante la pubblicazione con la richiesta "Aggiorna versione di Funzioni in Azure". Fare clic su **Sì**:
 
@@ -122,7 +122,7 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 
 Le impostazioni aggiunte nel file local.settings.json devono essere aggiunte anche all'app per le funzioni in Azure. Queste impostazioni non vengono caricate automaticamente quando si pubblica il progetto.
 
-Per accedere alle impostazioni dell'app, passare al portale di Azure all'indirizzo [https://ms.portal.azure.com/](https://ms.portal.azure.com/). In **App per le funzioni** selezionare **App per le funzioni** ed evidenziare il nome della funzione:
+Per accedere alle impostazioni dell'app, [https://ms.portal.azure.com/](https://ms.portal.azure.com/)passare al portale di Azure all'indirizzo . In **App per le funzioni** selezionare **App per le funzioni** ed evidenziare il nome della funzione:
 
 ![Menu di Funzioni di Azure](media/azure-functions-image9.png)
 
@@ -156,7 +156,7 @@ Un'altra impostazione importante che potrebbe essere necessario impostare è `FU
 
 - **WebHook generico**: funzione semplice che viene eseguita ogni volta che riceve una richiesta da un servizio che supporta i webhook. Per altre informazioni, vedere l'[articolo di Funzioni di Azure sui webhook generici](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Gestione di Funzioni durevoli**: Funzioni durevoli consente di creare funzioni con stato in un ambiente senza server. L'estensione gestisce lo stato, i checkpoint e i riavvii per conto dell'utente. Per altre informazioni, vedere le sezioni relative alle funzioni di Azure in [Funzioni durevoli](/azure/azure-functions/durable-functions-overview).
+- **Gestione di Funzioni durevoli**: Funzioni durevoli consente di creare funzioni con stato in un ambiente senza server. L'estensione gestisce automaticamente lo stato, i checkpoint e i riavvii. Per altre informazioni, vedere le sezioni relative alle funzioni di Azure in [Funzioni durevoli](/azure/azure-functions/durable-functions-overview).
 
 - **Image Resizer**: questa funzione crea immagini ridimensionate ogni volta che un BLOB viene aggiunto a un contenitore. Il modello accetta un percorso e una stringa di connessione per il trigger, un output immagine di piccole dimensioni e un output immagine di medie dimensioni.
 

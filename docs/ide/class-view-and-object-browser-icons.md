@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6589d40d8f897eb8df7f108f53973af268d1edc9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588395"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
@@ -30,17 +30,17 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |Icona|Descrizione|Icona|Descrizione|
 |----------|-----------------|----------|-----------------|
 |![Simbolo dello spazio dei nomi](../ide/media/vxnamespace_icon.gif)|Spazio dei nomi|![Simbolo Dichiarazione](../ide/media/vxmethod_icon.gif)|Metodo o funzione|
-|![Icona Classe](../ide/media/vxclass_icon.gif)|Classe|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|??|
-|![Simbolo interfaccia cerchio-linea](../ide/media/vxinterface_icon.gif)|Interfaccia|![Simbolo della proprietà](../ide/media/vxproperty_icon.gif)|Gli|
+|![Icona Classe](../ide/media/vxclass_icon.gif)|Classe|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|Operatore|
+|![Simbolo interfaccia cerchio-linea](../ide/media/vxinterface_icon.gif)|Interfaccia|![Simbolo della proprietà](../ide/media/vxproperty_icon.gif)|Proprietà|
 |![Simbolo struttura](../ide/media/vxstruct_icon.gif)|Struttura|![Icona Campo](../ide/media/vxfield_icon.gif)|Campo o variabile|
-|![Simbolo unione](../ide/media/vxunion_icon.gif)|Unione|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Event|
+|![Simbolo unione](../ide/media/vxunion_icon.gif)|Union|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Event|
 |![Simbolo di enumerazione](../ide/media/vxenum_icon.gif)|Enum|![Icona Costante](../ide/media/vxconstant_icon.gif)|Costante|
 |![Simbolo definizione dei tipi](../ide/media/vxtypedef_icon.gif)|TypeDef|![Simbolo di enumerazione elementi](../ide/media/vxenumitem_icon.gif)|Elemento di enumerazione|
-|![Simbolo dei moduli di Visual Studio](../ide/media/vxmodule_icon.gif)|Module|![Simbolo elemento mappa](../ide/media/vxmapitem_icon.gif)|Elemento mappa|
+|![Simbolo dei moduli di Visual Studio](../ide/media/vxmodule_icon.gif)|Modulo|![Simbolo elemento mappa](../ide/media/vxmapitem_icon.gif)|Elemento mappa|
 |![Simbolo del metodo di estensione](../ide/media/extensionmethod.gif)|Metodo di estensione|![Simbolo Dichiarazione](../ide/media/vxmethod_icon.gif)|Dichiarazione esterna|
-|![Simbolo delegato](../ide/media/vxdelegate_icon.gif)|Delegato|![Icona di errore per Visualizzazione classi e Visualizzatore oggetti](../ide/media/erroricon.gif)|Errore di|
+|![Simbolo delegato](../ide/media/vxdelegate_icon.gif)|Delegato|![Icona di errore per Visualizzazione classi e Visualizzatore oggetti](../ide/media/erroricon.gif)|Errore|
 |![Simbolo Eccezione](../ide/media/vxexception_icon.gif)|Eccezione|![Simbolo modello](../ide/media/vxtemplate_icon.gif)|Modello|
-|![Simbolo Mappa](../ide/media/vxmap_icon.gif)|Mappa|![Simbolo di errore con punto esclamativo](../ide/media/vxerror_icon.gif)|Sconosciuto|
+|![Simbolo Mappa](../ide/media/vxmap_icon.gif)|Mappa|![Simbolo di errore con punto esclamativo](../ide/media/vxerror_icon.gif)|Unknown|
 |![Simbolo Inoltro dei tipi](../ide/media/ob_type_forward.gif)|Inoltro del tipo|||
 
 ## <a name="signal-icons"></a>Icone di segnalazione
@@ -49,9 +49,9 @@ Le icone di segnalazione seguenti si applicano a tutte le icone precedenti e ne 
 
 |Icona|Descrizione|
 |----------|-----------------|
-|\<Nessuna icona di segnalazione>|Pubblico. Accessibile ovunque in questo componente e da qualsiasi componente che vi fa riferimento.|
+|\<Nessuna icona di segnalazione>|Pubblica. Accessibile ovunque in questo componente e da qualsiasi componente che vi fa riferimento.|
 |![Simbolo segnale protetto](../ide/media/vxsignal_icon_key.gif)|Protetto. Accessibile dalla classe o dal tipo contenitore o da quelli da essi derivati.|
-|![Simbolo segnale privato](../ide/media/vxsignal_icon_lock.gif)|Privato. Accessibile solo nella classe o nel tipo contenitore.|
+|![Simbolo segnale privato](../ide/media/vxsignal_icon_lock.gif)|Privata. Accessibile solo nella classe o nel tipo contenitore.|
 |![Simbolo segnale sigillato](../ide/media/vxsignal_icon_envelope.gif)|Contrassegnato come sealed.|
 |![Simbolo segnale Friend&#47;Internal](../ide/media/vxsignal_icon_diamond.gif)|Friend/Internal. Accessibile solo dal progetto.|
 |![Freccia icona di segnalazione](../ide/media/vxsignal_icon_arrow.gif)|Collegamento. Un collegamento all'oggetto.|

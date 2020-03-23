@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Selezionare un repository dei risultati del test di carico'
+title: 'Procedura: selezionare un repository dei risultati del test di carico'
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,15 +16,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589006"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Procedura: Selezionare un repository dei risultati del test di carico
 
-La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. Gli agenti, insieme ai controller, consentono di generare un carico simulato maggiore rispetto a un singolo computer. Per altre informazioni, vedere [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
+La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. Gli agenti, insieme ai controller, consentono di generare un carico simulato maggiore rispetto a un singolo computer. Per ulteriori informazioni, vedere [Test controller e agenti](configure-test-agents-and-controllers-for-load-tests.md)di test .
 
 I risultati ottenuti dai computer agente o locale possono essere memorizzati in qualsiasi server SQL in cui sia stato creato un archivio dei risultati del test di carico. In entrambi i casi è necessario identificare la posizione in cui si vuole archiviare i risultati del test di carico usando la finestra di **amministrazione dei controller di test**.
 
@@ -38,7 +38,7 @@ I risultati ottenuti dai computer agente o locale possono essere memorizzati in 
 
      ![Proprietà di connessione dell'archivio dei risultati del test di carico](../test/media/loadtestconnectionproperties.png) Proprietà di connessione dell'archivio dei risultati del test di carico
 
-3. In **Archivio risultati test di carico** fare clic su **(…)** per visualizzare la finestra di dialogo **Proprietà connessione**.
+3. **Nell'archivio dei risultati del test**di carico fare clic su **(...)** per visualizzare la finestra di dialogo **Proprietà connessione** .
 
 4. In **Nome server** digitare il nome del server in cui sono stati eseguiti gli script `LoadTest`.
 
@@ -55,5 +55,5 @@ I risultati ottenuti dai computer agente o locale possono essere memorizzati in 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Gestire i risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Gestire i risultati dei test di carico nel repository dei risultati del test di caricoManage load test results in the Load Test Results Repository](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)

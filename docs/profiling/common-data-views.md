@@ -13,16 +13,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777829"
 ---
 # <a name="common-data-views"></a>Visualizzazioni dei dati comuni
 Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i report dei file di dati del profiler comuni a tutti i metodi di profilatura.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 - [Visualizzazione Riepilogo](../profiling/summary-view.md)
 
  Descrive la visualizzazione e il report di riepilogo. Le colonne di dati dipendono dal metodo di profilatura.
@@ -31,7 +31,7 @@ Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i re
 
  Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)
+- [Visualizzazione struttura ad albero delle chiamate](../profiling/call-tree-view.md)
 
  Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.
 
@@ -47,11 +47,11 @@ Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i re
 
  Descrive la visualizzazione e il report Righe. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view.md)
+- [Visualizzazione Puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view.md)
 
  Descrive la visualizzazione e il report Puntatori all'istruzione. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione Processo](../profiling/process-view.md)
+- [Visualizzazione processo](../profiling/process-view.md)
 
  Elenca l'ora di inizio e di fine di processi e thread.
 

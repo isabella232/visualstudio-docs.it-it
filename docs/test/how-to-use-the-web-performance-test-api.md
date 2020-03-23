@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e869bc46997ffb6ebecae2aa3e49c3cb6b2582fa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594335"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Procedura: Usare l'API del test delle prestazioni Web
@@ -43,7 +43,7 @@ ms.locfileid: "75594335"
 
 6. Creare una classe che implementi l'interfaccia <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-7. Compilazione del progetto.
+7. Compilare il progetto.
 
 8. Aggiungere un nuovo plug-in del test delle prestazioni Web usando l'Editor test prestazioni Web:
 
@@ -51,7 +51,7 @@ ms.locfileid: "75594335"
 
          Viene visualizzata la finestra di dialogo **Aggiungi plug-in test Web**.
 
-    2. In **Seleziona un plug-in** selezionare la classe del plug-in del test delle prestazioni web.
+    2. In **Selezionare un plug-in**selezionare la classe del plug-in del test delle prestazioni Web.
 
     3. Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 
@@ -68,5 +68,5 @@ ms.locfileid: "75594335"
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Procedura: Usare l'API del test di carico](../test/how-to-use-the-load-test-api.md)
-- [Procedura: Creare un plug-in di test prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Procedura: utilizzare l'API del test di caricoHow to: Use the load test API](../test/how-to-use-the-load-test-api.md)
+- [Procedura: creare un plug-in test delle prestazioni WebHow to: Create a web performance test plug-in](../test/how-to-create-a-web-performance-test-plug-in.md)

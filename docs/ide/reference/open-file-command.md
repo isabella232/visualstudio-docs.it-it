@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591515"
 ---
 # <a name="open-file-command"></a>Comando Apri file
@@ -35,13 +35,13 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-Richiesto. Percorso completo o parziale e nome file del file da aprire. I percorsi contenenti spazi devo devono essere racchiusi tra virgolette.
+Obbligatorio. Percorso completo o parziale e nome file del file da aprire. I percorsi contenenti spazi devo devono essere racchiusi tra virgolette.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Switch
 
 /e:`editorname`
 
-Parametro facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
+Facoltativa. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
 
 La sintassi dell'argomento /e:`editorname` usa i nomi degli editor così come visualizzati nella finestra di dialogo Apri con, racchiusi tra virgolette.
 
@@ -51,7 +51,7 @@ Ad esempio, per aprire un file nell'editor del codice sorgente, per l'argomento 
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Quando si immette un percorso, il completamento automatico tenta di individuare il percorso e il nome file corretti.
 
@@ -67,6 +67,6 @@ In questo esempio viene aperto il file di stile "Test1.css" nell'editor del codi
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Finestra di controllo immediato](../../ide/reference/immediate-window.md)
+- [Finestra immediata](../../ide/reference/immediate-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

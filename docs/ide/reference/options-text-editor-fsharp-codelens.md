@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568477"
 ---
 # <a name="options-text-editor-f-codelens"></a>Opzioni, Editor di testo - F#, CodeLens
 
-Usare la pagina delle opzioni **CodeLens** per modificare le impostazioni di CodeLens dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** e quindi scegliere **Editor di testo** > **F#**  > **CodeLens**.
+Usare la pagina delle opzioni **CodeLens** per modificare le impostazioni di CodeLens dell'editor di testo per F#. Per accedere a questa pagina delle opzioni, scegliere**Opzioni** **degli strumenti** > , quindi scegliere Editor **di** > testo**F ,** > **CodeLens**.
 
 ## <a name="codelens"></a>CodeLens
 

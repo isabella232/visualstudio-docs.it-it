@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569023"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Come usare esclusivamente la tastiera
@@ -37,15 +37,15 @@ Per un elenco completo delle combinazioni di tasti di scelta rapida dei comandi 
 ::: moniker-end
 
 > [!NOTE]
-> A seconda delle impostazioni o dell'edizione di Visual Studio usata, le finestre di dialogo e i comandi di menu visualizzati possono non corrispondere a quelli descritti nella Guida. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
+> A seconda delle impostazioni o dell'edizione di Visual Studio usata, le finestre di dialogo e i comandi di menu visualizzati possono non corrispondere a quelli descritti nella Guida. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Controlli della casella degli strumenti
 
 Per aggiungere un controllo della casella degli strumenti a un modulo o a una finestra di progettazione senza usare il mouse:
 
-1. Scegliere **Visualizza** > **Casella degli strumenti** sulla barra dei menu.
+1. Nella barra dei menu scegliere **Visualizza** > **casella degli strumenti**.
 
-2. Usare i tasti **CTRL**+**Freccia SU** o **CTRL**+**Freccia GIÙ** per spostarsi tra le sezioni della scheda della **casella degli strumenti**.
+2. Utilizzare **i**+tasti**ctrl freccia su** o **CTRL**+**giù** per spostarsi tra le sezioni della scheda Casella **degli strumenti.**
 
 3. Usare il tasto **Freccia SU** o **Freccia GIÙ** per passare da un controllo all'altro in una sezione.
 
@@ -63,17 +63,17 @@ Per passare da un'opzione all'altra all'interno di una finestra di dialogo e mod
 
    - Per selezionare o deselezionare una casella di controllo, premere la **Barra spaziatrice**.
 
-   - Per un elenco a discesa, usare **ALT**+**Freccia GIÙ** per visualizzare le voci e quindi usare **Freccia SU** e **Freccia GIÙ** per selezionare un'altra voce.
+   - Per gli elenchi a discesa, usare la freccia **ALT**+**Giù** per visualizzare gli elementi, quindi usare i tasti **freccia SU** e FRECCIA **GIÙ** per modificare l'elemento selezionato.
 
    - Per azionare un pulsante, selezionare **Invio**.
 
-   - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per un elenco a discesa in una griglia, usare **MAIUSC**+**ALT**+**Freccia GIÙ** per visualizzare le voci e quindi usare **Freccia SU** e **Freccia GIÙ** per selezionare un'altra voce.
+   - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per gli elenchi a discesa nelle griglie, usare **la**+freccia**ALT**+**giu'** per visualizzare gli elementi, quindi usare i tasti freccia **SU** e freccia **giù** per modificare l'elemento selezionato.
 
 ## <a name="navigate-between-windows-and-files"></a>Spostarsi tra finestre e file
 
-- Per passare da un file all'altro in un editor o in una finestra di progettazione, scegliere i tasti di scelta rapida **CTRL**+**Tab** per visualizzare lo strumento di spostamento dell'IDE con l'opzione **File attivi** selezionata. Scegliere **Invio** per passare alla finestra evidenziata.
+- Per spostarsi tra i file in un editor o in una finestra di progettazione, scegliere la scelta rapida da tastiera **Ctrl**+**TAB** per visualizzare il Navigatore IDE con **l'opzione File attivi** selezionata. Scegliere **Invio** per passare alla finestra evidenziata.
 
-- Per spostarsi tra finestre degli strumenti ancorate, scegliere i tasti di scelta rapida **Alt**+**F7** per visualizzare lo strumento di spostamento dell'IDE con l'opzione **Finestre degli strumenti attive** selezionata. Premere **INVIO** per passare alla finestra evidenziata.
+- Per spostarti tra le finestre degli strumenti ancorate, scegliere la scorciatoia da tastiera **Alt**+**F7** per visualizzare il Navigatore IDE con **Active Tool Windows** selezionato. Premere **INVIO** per passare alla finestra evidenziata.
 
 ## <a name="move-and-dock-tool-windows"></a>Spostare e ancorare finestre degli strumenti
 
@@ -81,7 +81,7 @@ Per passare da un'opzione all'altra all'interno di una finestra di dialogo e mod
 
 2. Nel menu **Finestra** selezionare l'opzione **Finestra ancorata**.
 
-3. Premere **ALT**+**Barra spaziatrice** e quindi scegliere **Sposta**.
+3. Premere **ALT**+**barra spaziatrice**e quindi scegliere **Sposta**.
 
    Verrà visualizzata la guida a forma di rombo per l'ancoraggio.
 
@@ -100,6 +100,6 @@ Per passare da un'opzione all'altra all'interno di una finestra di dialogo e mod
 ## <a name="see-also"></a>Vedere anche
 
 * [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-* [Suggerimenti sull'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
+* [Suggerimenti e trucchi per l'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
 * [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 * [Accessibilità nei prodotti Microsoft](https://www.microsoft.com/accessibility/)

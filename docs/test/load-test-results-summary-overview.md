@@ -15,17 +15,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584491"
 ---
 # <a name="load-test-results-summary-overview"></a>Cenni preliminari sul riepilogo dei risultati dei test di carico
 
 Una volta terminata l'esecuzione, è possibile visualizzare il riepilogo dei test di carico per verificarne rapidamente i risultati. Nel riepilogo dei test di carico sono riportati i risultati principali in un formato compatto e di agevole lettura. Il riepilogo può anche essere stampato per comunicare più agevolmente i risultati dei test di carico alle parti interessate. Il riepilogo del test di carico è inoltre alla visualizzazione predefinita quando si apre un risultato del test di carico da un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
 
-![Visualizzazione Riepilogo](../test/media/ltest_summaryview.png)
+![Visualizzazione riepilogo](../test/media/ltest_summaryview.png)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -58,7 +58,7 @@ Le ultime sezioni sono riportate alla fine del riepilogo e possono essere compre
 
 - Risorse controller e agenti
 
-- Errori di
+- Errors
 
 ## <a name="test-run-information"></a>Informazioni sull'esecuzione di test
 
@@ -70,37 +70,37 @@ La sezione relativa ai risultati complessivi contiene i risultati di riepilogo d
 
 ## <a name="key-statistic-top-5-slowest-pages"></a>Statistica: le prime 5 pagine più lente
 
-La sezione contiene informazioni sulle prime cinque pagine più lente del test di carico. Per ogni pagina sono visualizzati l'URL e il tempo medio di caricamento. Le pagine sono elencate in ordine decrescente. È possibile scegliere l'URL di una pagina per aprire la tabella **Pagine** ed esaminare altri dettagli sulla pagina. Per altre informazioni, vedere [Procedura: Visualizzare la risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+La sezione contiene informazioni sulle prime cinque pagine più lente del test di carico. Per ogni pagina sono visualizzati l'URL e il tempo medio di caricamento. Le pagine sono elencate in ordine decrescente. È possibile scegliere l'URL di una pagina per aprire la tabella **Pagine** ed esaminare altri dettagli sulla pagina. Per ulteriori informazioni, vedere [Procedura: visualizzare la risposta alle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 Il valore percentile per il rapporto **Tempo pagina 95% (sec)** indica che il 95% delle pagine è stato completato in meno di questo intervallo in secondi.
 
 ## <a name="key-statistic-top-5-slowest-tests"></a>Statistica: i primi 5 test più lenti
 
-La sezione contiene informazioni sui primi cinque test più lenti del test di carico. Per ogni test sono visualizzati il nome e il tempo medio di esecuzione. I test sono elencati in ordine decrescente. È possibile scegliere il nome di un test per aprire la tabella **Test** ed esaminare altri dettagli sul test. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+La sezione contiene informazioni sui primi cinque test più lenti del test di carico. Per ogni test sono visualizzati il nome e il tempo medio di esecuzione. I test sono elencati in ordine decrescente. È possibile scegliere il nome di un test per aprire la tabella **Test** ed esaminare altri dettagli sul test. Per ulteriori informazioni, vedere [Analizzare i risultati e gli errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)dei test di carico nella visualizzazione Tabelle .
 
 Il valore percentile per il rapporto **Tempo test 95% (sec)** indica che il 95% dei test è stato completato in meno di questo intervallo in secondi.
 
 ## <a name="key-statistic-top-5-slowest-sql-operations"></a>Statistica: le prime 5 operazioni SQL più lente
 
-Se la traccia SQL è attivata nel test di carico, questa sezione contiene informazioni sulle 5 query più lente del test di carico. Per ogni operazione sono visualizzati il nome e la durata espressa in microsecondi (SQL Server 2005) o in millisecondi (SQL Server 2000 e versioni precedenti). I test sono elencati in ordine decrescente in base alla durata. È possibile scegliere il nome di un'operazione per aprire la tabella **Traccia SQL** ed esaminare altri dettagli sull'operazione. Per altre informazioni, vedere la [tabella dei dati di Traccia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
+Se la traccia SQL è attivata nel test di carico, questa sezione contiene informazioni sulle 5 query più lente del test di carico. Per ogni operazione sono visualizzati il nome e la durata espressa in microsecondi (SQL Server 2005) o in millisecondi (SQL Server 2000 e versioni precedenti). I test sono elencati in ordine decrescente in base alla durata. È possibile scegliere il nome di un'operazione per aprire la tabella **Traccia SQL** ed esaminare altri dettagli sull'operazione. Per ulteriori informazioni, vedere Tabella dei [dati di traccia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
-## <a name="test-results"></a>Risultati dei test
+## <a name="test-results"></a>Risultati del test
 
-La sezione relativa ai risultati del test contiene un elenco di tutti i test e degli scenari del test di carico. Per ogni test sono visualizzati il nome, lo scenario, il numero di esecuzioni, il numero di volte che non è stato superato e il tempo medio. È possibile scegliere il nome di un test per aprire la tabella **Test** ed esaminare altri dettagli sul test. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+La sezione relativa ai risultati del test contiene un elenco di tutti i test e degli scenari del test di carico. Per ogni test sono visualizzati il nome, lo scenario, il numero di esecuzioni, il numero di volte che non è stato superato e il tempo medio. È possibile scegliere il nome di un test per aprire la tabella **Test** ed esaminare altri dettagli sul test. Per ulteriori informazioni, vedere [Analizzare i risultati e gli errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)dei test di carico nella visualizzazione Tabelle .
 
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.
 
-## <a name="page-results"></a>Risultati della pagina
+## <a name="page-results"></a>Restituire i risultati in più pagine
 
-La sezione relativa ai risultati di pagina contiene un elenco di tutte le pagine Web del test di carico. Sono visualizzati l'URL, lo scenario, il nome del test, il tempo medio e il conteggio delle pagine. È possibile scegliere l'URL di una pagina per aprire la tabella **Pagine** ed esaminare altri dettagli sulla pagina. Per altre informazioni, vedere [Procedura: Visualizzare la risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+La sezione relativa ai risultati di pagina contiene un elenco di tutte le pagine Web del test di carico. Sono visualizzati l'URL, lo scenario, il nome del test, il tempo medio e il conteggio delle pagine. È possibile scegliere l'URL di una pagina per aprire la tabella **Pagine** ed esaminare altri dettagli sulla pagina. Per ulteriori informazioni, vedere [Procedura: visualizzare la risposta alle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.
 
 ## <a name="transaction-results"></a>Risultati della transazione
 
-La sezione relativa ai risultati di transazione contiene un elenco di tutte le transazioni del test di carico. Sono visualizzati il nome, lo scenario, il test, il tempo di risposta, il tempo trascorso e il conteggio delle transazioni. È possibile scegliere il nome di una transazione per aprire la tabella **Transazioni** ed esaminare altri dettagli sulla transazione. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+La sezione relativa ai risultati di transazione contiene un elenco di tutte le transazioni del test di carico. Sono visualizzati il nome, lo scenario, il test, il tempo di risposta, il tempo trascorso e il conteggio delle transazioni. È possibile scegliere il nome di una transazione per aprire la tabella **Transazioni** ed esaminare altri dettagli sulla transazione. Per ulteriori informazioni, vedere [Analizzare i risultati e gli errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)dei test di carico nella visualizzazione Tabelle .
 
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.
@@ -113,21 +113,21 @@ I valori percentili indicano le seguenti informazioni sulla transazione:
 
 ## <a name="system-under-test-resources"></a>Risorse sistema sotto test
 
-La sezione relativa alle risorse di sistema sotto test contiene un elenco dei computer che costituiscono l'insieme dei computer di destinazione per cui è stato generato il carico. Include tutti i computer da cui vengono raccolti gli insiemi di contatori diversi da agenti o controller. Sono visualizzati il nome del computer, il tempo processore in percentuale e la memoria disponibile. È possibile scegliere il nome di un computer per aprire il grafico **Sistema sottoposto a test** e verificare l'uso delle risorse nel tempo. Per altre informazioni, vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
+La sezione relativa alle risorse di sistema sotto test contiene un elenco dei computer che costituiscono l'insieme dei computer di destinazione per cui è stato generato il carico. Include tutti i computer da cui vengono raccolti gli insiemi di contatori diversi da agenti o controller. Sono visualizzati il nome del computer, il tempo processore in percentuale e la memoria disponibile. È possibile scegliere il nome di un computer per aprire il grafico **Sistema sottoposto a test** e verificare l'uso delle risorse nel tempo. Per ulteriori informazioni, vedere Analizzare i risultati dei test di [carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.
 
 ## <a name="controller-and-agent-resources"></a>Risorse controller e agenti
 
-La sezione relativa alle risorse controller e agenti contiene un elenco dei computer utilizzati per eseguire il test. Sono visualizzati il nome del computer, il tempo processore in percentuale e la memoria disponibile. È possibile scegliere il nome di un computer per aprire il grafico **Controller e agenti** e verificare l'uso delle risorse nel tempo. Per altre informazioni, vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
+La sezione relativa alle risorse controller e agenti contiene un elenco dei computer utilizzati per eseguire il test. Sono visualizzati il nome del computer, il tempo processore in percentuale e la memoria disponibile. È possibile scegliere il nome di un computer per aprire il grafico **Controller e agenti** e verificare l'uso delle risorse nel tempo. Per ulteriori informazioni, vedere Analizzare i risultati dei test di [carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.
 
-## <a name="errors"></a>Errori di
+## <a name="errors"></a>Errors
 
-La sezione contiene un elenco di tutti gli errori che si sono verificati durante il test di carico. Sono visualizzati il tipo e il sottotipo di errore, il conteggio e l'ultimo messaggio. È possibile scegliere un errore per aprire la tabella **Errori** ed esaminare altri dettagli sull'errore. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+La sezione contiene un elenco di tutti gli errori che si sono verificati durante il test di carico. Sono visualizzati il tipo e il sottotipo di errore, il conteggio e l'ultimo messaggio. È possibile scegliere un errore per aprire la tabella **Errori **ed esaminare altri dettagli sull'errore. Per ulteriori informazioni, vedere [Analizzare i risultati e gli errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)dei test di carico nella visualizzazione Tabelle .
 
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.
@@ -139,4 +139,4 @@ La sezione contiene un elenco di tutti gli errori che si sono verificati durante
 ## <a name="see-also"></a>Vedere anche
 
 - [Analisi delle violazioni delle regole di soglia](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizzare i risultati dei test di caricoAnalyze load test results](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589643"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Correggere parametri dinamici non rilevabili in un test delle prestazioni Web
@@ -25,7 +25,7 @@ In alcuni siti Web vengono utilizzati parametri dinamici per elaborare alcune ri
 
 - Valori di parametri dinamici che sono impostati nei campi nascosti delle pagine HTML, ad esempio lo stato di visualizzazione ASP.NET. Vengono gestiti automaticamente dal registratore, il quale aggiunge regole di estrazione dai campi nascosti al test.
 
-- Valori di parametri dinamici che sono impostati come stringa di query o parametri Post per i form. Vengono gestiti tramite il rilevamento dei parametri dinamici dopo la registrazione di un test delle prestazioni Web.
+- Valori di parametri dinamici che sono impostati come stringa di query o parametri Post per i form. Vengono gestiti usando il rilevamento dei parametri dinamici dopo la registrazione di un test delle prestazioni Web.
 
 Alcuni tipi di parametri dinamici non vengono rilevati. Un parametro dinamico non rilevato impedisce la riuscita dell'esecuzione del test delle prestazioni Web perché il valore dinamico cambia a ogni esecuzione del test. Per gestire correttamente questi parametri, è possibile aggiungere manualmente regole di estrazione ai parametri dinamici nei test delle prestazioni Web.
 
@@ -101,7 +101,7 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
             }
     ```
 
-11. Aggiungere un terzo Web Form denominato *JScriptQuery.aspx*.
+11. Aggiungere un terzo Web Form denominato* JScriptQuery.aspx*.
 
      Come è stato fatto per la seconda pagina, trascinare un controllo **Label** nel form, impostandone la proprietà **(ID)** su **IndexLabel** e trascinare un controllo **Hyperlink** nel form, impostandone la proprietà **Text** su **Back** e la proprietà **NavigateUrl** su **Querystring.aspx**.
 
@@ -126,7 +126,7 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
 16. Provare entrambi i collegamenti. Per ciascuno di essi dovrebbe venire visualizzato il messaggio "Success. Dynamic querystring parameter found".
 
-     ![Eseguire l'applicazione Web](../test/media/web_test_dynamicparameter_runapp.png)
+     ![Eseguire l'app Web](../test/media/web_test_dynamicparameter_runapp.png)
 
      ![Operazione completata&#33;](../test/media/web_test_dynamicparameter_runapp2.png)
 
@@ -190,7 +190,7 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
      ![Usare la ricerca veloce per isolare il parametro dinamico](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4. Dall'editor test risulta che all'oggetto CustomQueryString della richiesta *JScriptQuery.aspx* è stato assegnato il valore `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`. La parte dinamica sospetta è "1v0yhyiyr0raa2w4j4pwf5zl". Nell'elenco a discesa Trova rimuovere la parte sospetta della stringa di ricerca. La stringa deve essere "CustomQueryString=jScriptQueryString___".
+4. Osservando l'editor di test, sappiamo che a CustomQueryString della richiesta *JScriptQuery.aspx* è stato assegnato un valore di: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`e che la parte dinamica sospetta è "1v0yhyiyr0raa2w4j4pwf5zl". Nell'elenco a discesa Trova rimuovere la parte sospetta della stringa di ricerca. La stringa deve essere "CustomQueryString=jScriptQueryString___".
 
      Ai parametri dinamici sono assegnati i valori in una delle richieste che precede la richiesta che contiene l'errore. Selezionare pertanto la casella di controllo Cerca in alto e scegliere Trova successivo fino a visualizzare la richiesta *Querystring.aspx* precedente evidenziata nel pannello Richiesta. Questo dovrebbe avvenire dopo avere fatto clic su Trova successivo tre volte.
 
@@ -265,4 +265,4 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>D. È necessario configurare Visual Studio per rilevare i parametri dinamici?
 
-**R.** La configurazione predefinita di Visual Studio prevede il rilevamento dei parametri dinamici quando si registra un test delle prestazioni Web. Tuttavia, se le opzioni di Visual Studio sono configurate per non rilevare i parametri dinamici o se l'applicazione Web testata viene modificata con parametri dinamici aggiuntivi, è comunque possibile eseguire il rilevamento dei parametri dinamici dall'Editor test prestazioni Web.
+**R.** La configurazione predefinita di Visual Studio prevede il rilevamento dei parametri dinamici quando si registra un test delle prestazioni Web. Se tuttavia le opzioni di Visual Studio sono configurate in modo da non rilevare i parametri dinamici o se l'applicazione Web testata viene modificata con parametri dinamici aggiuntivi, è comunque possibile eseguire il rilevamento dei parametri dinamici dall'Editor test prestazioni Web.

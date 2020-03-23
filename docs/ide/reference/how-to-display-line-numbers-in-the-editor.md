@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5392ad3efaee8a3c29e58bd2b75272e4206215a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569140"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Procedura: visualizzare i numeri di riga nell'editor
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Procedura: visualizzare i numeri di riga nell'editorHow to: Display line numbers in the editor
 
 È possibile visualizzare o nascondere la numerazione delle righe nel codice.
 
 ## <a name="display-line-numbers-in-code"></a>Visualizzare i numeri di riga nel codice
 
-1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**. Espandere il nodo **Editor di testo** e selezionare il linguaggio in uso o **Tutti i linguaggi** per attivare i numeri di riga in tutti i linguaggi. (In alternativa, digitare **numero di riga** nella casella di ricerca e selezionare **Abilita o disabilita numeri di riga** nei risultati.)
+1. Nella barra dei menu scegliere**Opzioni** **degli strumenti** > . Espandere il nodo **Editor di testo** e selezionare il linguaggio in uso o **Tutti i linguaggi** per attivare i numeri di riga in tutti i linguaggi. (In alternativa, digitare **numero di riga** nella casella di ricerca e selezionare **Abilita o disabilita numeri di riga** nei risultati.)
 
 2. Selezionare la casella di controllo **Numeri di riga**.
 

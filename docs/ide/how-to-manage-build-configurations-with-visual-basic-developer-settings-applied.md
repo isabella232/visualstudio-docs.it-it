@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5243223e554f8e31fe2ffa9d667c09d0a3e1dbc0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115153"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedura: gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer
@@ -45,5 +45,5 @@ Per impostazione predefinita, le impostazioni di Visual Basic Developer nascondo
 ## <a name="see-also"></a>Vedere anche
 
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
-- [Compilare](../ide/compiling-and-building-in-visual-studio.md)
-- [Impostazioni dell'ambiente](../ide/environment-settings.md)
+- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)
+- [Impostazioni di ambiente](../ide/environment-settings.md)

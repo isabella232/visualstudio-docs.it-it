@@ -13,10 +13,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596996"
 ---
 # <a name="optimize-visual-studio-performance"></a>Ottimizzare le prestazioni di Visual Studio
@@ -29,7 +29,7 @@ Se è attualmente in uso Visual Studio 2015, scaricare gratuitamente [Visual Stu
 
 ::: moniker range="vs-2017"
 
-Se è già in uso Visual Studio 2017, assicurarsi di avere almeno la versione 15.6. In base ai dati raccolti, le soluzioni si caricano due-tre volte più velocemente nella versione 15.6. Il download è disponibile [qui](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
+Se è già in uso Visual Studio 2017, assicurarsi di avere almeno la versione 15.6. In base ai dati raccolti, le soluzioni si caricano due-tre volte più velocemente nella versione 15.6. Scaricarla [qui](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 ::: moniker-end
 
@@ -49,9 +49,9 @@ Non eseguire la soluzione da un'unità USB. Copiarla nell'unità disco rigido o 
 
 ## <a name="help-us-improve"></a>Consigli per miglioramenti
 
-Il feedback degli utenti ci permette di migliorare i nostri prodotti. Usare la funzione **Segnala un problema** per "registrare" un'analisi e inviarla a Microsoft. Selezionare l'icona del feedback accanto ad **Avvio veloce** o scegliere **Guida** > **Commenti e suggerimenti** > **Segnala un problema** dalla barra dei menu. Per altre informazioni, vedere [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+Il feedback degli utenti ci permette di migliorare i nostri prodotti. Usare la funzione **Segnala un problema** per "registrare" un'analisi e inviarla a Microsoft. Selezionare l'icona del feedback accanto ad **Avvio veloce** o scegliere **Guida** > **Commenti e suggerimenti** > **Segnala un problema** dalla barra dei menu. Per ulteriori informazioni, vedere [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Suggerimenti sulle prestazioni](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Suggerimenti e trucchi per le prestazioni](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Blog su Visual Studio - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Caricamento più rapido delle soluzioni con Visual Studio 2017 Versione 15.6)

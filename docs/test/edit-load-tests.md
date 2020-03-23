@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c61c13f6a9eca416a52221ba9da37be820dd4b89
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593226"
 ---
 # <a name="edit-load-tests"></a>Modificare i test di carico
@@ -24,7 +24,7 @@ I test di carico eseguono test delle prestazioni Web o unit test per simulare l'
 
 Un test di carico è definito da *scenari*, *insiemi di contatori* e *impostazioni di esecuzione del test*. Nella figura seguente vengono illustrate le differenze tra [scenari](../test/edit-load-test-scenarios.md), [insiemi di contatori](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) e [impostazioni esecuzione test](../test/load-test-run-settings-properties.md):
 
-![Architettura dei test di carico](../test/media/load_test_editor.png)
+![Architettura del test di carico](../test/media/load_test_editor.png)
 
 ## <a name="software-requirements"></a>Requisiti software
 
@@ -50,5 +50,5 @@ Per altre informazioni, vedere [Configurare le impostazioni esecuzione test di c
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizzare i risultati dei test di caricoAnalyze load test results](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisi delle violazioni delle regole di soglia](../test/analyze-threshold-rule-violations-in-load-tests.md)

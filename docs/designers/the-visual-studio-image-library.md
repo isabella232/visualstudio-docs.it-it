@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2599238e18415fb494d3d72fdf24305d7ba1b0b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75589903"
 ---
 # <a name="the-visual-studio-image-library"></a>Libreria di immagini di Visual Studio
@@ -33,5 +33,5 @@ La libreria di immagini è suddivisa in cinque categorie: Elementi comuni, Azion
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Install Visual Studio](../install/install-visual-studio.md) (Installare Visual Studio)
+- [Installare Visual Studio](../install/install-visual-studio.md)
 - [Immagini, bitmap e metafile](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

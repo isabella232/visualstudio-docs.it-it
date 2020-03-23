@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0981a276a21e1b3f816c6a182df29f1c4adb0d1c
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72777447"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Creare un progetto AI da codice esistente
@@ -27,7 +27,7 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile agg
 
    ![Nuovo progetto da codice esistente, passaggio 1](media/create-project-existing/new-ai-project.png)
 
-3. Nella procedura guidata visualizzata impostare il percorso del codice esistente, un filtro per i tipi di file ed eventuali percorsi di ricerca richiesti dal progetto, quindi selezionare **OK**. In caso di dubbi sui percorsi di ricerca, lasciare vuoto il campo.
+3. Nella procedura guidata visualizzata impostare il percorso del codice esistente, un filtro per i tipi di file ed eventuali percorsi di ricerca richiesti dal progetto, quindi selezionare **OK**. Se non si sa quali sono i percorsi di ricerca, lasciare vuoto il campo.
 
    ![Nuovo progetto da codice esistente, passaggio 2](media/create-project-existing/azurebatch-newproject.png)
 
@@ -35,7 +35,7 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile agg
 
 4. Per impostare un file di avvio, individuare il file in **Esplora soluzioni**, fare clic con il pulsante destro del mouse e scegliere **Imposta come file di avvio**.
 
-5. Eseguire il programma premendo **CTRL**+**F5** o selezionando **Debug > Avvia senza eseguire debug**.
+5. Eseguire il programma premendo **Ctrl**+**F5** o selezionando **Debug > Avvio senza eseguire debug**.
 
 > [!div class="nextstepaction"]
 > [Esercitazione: uso di Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)

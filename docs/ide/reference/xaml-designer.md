@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 9a925e7f3c31b8347148c15b050692fcee26fcb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585613"
 ---
 # <a name="xaml-designer-options-page"></a>Pagina delle opzioni della finestra di progettazione XAML
@@ -22,7 +22,7 @@ ms.locfileid: "75585613"
 Usare la pagina delle opzioni della **finestra di progettazione XAML** per specificare le modalità di formattazione di elementi e attributi nei documenti XAML. Per aprire questa pagina, scegliere **Opzioni** dal menu **Strumenti**. Per accedere alla pagina delle proprietà della **finestra di progettazione XAML**, scegliere il nodo **Finestra di progettazione XAML**. Le impostazioni della finestra di progettazione XAML vengono applicate quando si apre il documento. Quindi, se si apportano modifiche alle impostazioni, è necessario chiudere e riaprire Visual Studio per visualizzare le modifiche.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
 
 ## <a name="enable-xaml-designer"></a>Abilita finestra di progettazione XAML
 
@@ -36,7 +36,7 @@ Usare questa impostazione per verificare se la visualizzazione Progettazione app
 
 |||
 |-|-|
-|**Visualizzazione Origine**|Specifica se viene visualizzata solo l'origine XAML nella visualizzazione XAML. L'impostazione è utile quando si caricano documenti di grandi dimensioni.|
+|**Vista di origine**|Specifica se viene visualizzata solo l'origine XAML nella visualizzazione XAML. L'impostazione è utile quando si caricano documenti di grandi dimensioni.|
 |**Visualizzazione Progettazione**|Specifica se deve apparire solo una finestra di progettazione XAML visiva nella visualizzazione XAML.|
 |**Doppia visualizzazione**|Specifica se sia la finestra di progettazione XAML visiva che l'origine XAML devono apparire l'una accanto all'altra nella visualizzazione XAML (percorso basato sull'impostazione **Orientamento divisione**).|
 
@@ -46,9 +46,9 @@ Usare questa impostazione per stabilire come e quando viene visualizzata la fine
 
 |||
 |-|-|
-|**Verticale**|L'origine XAML viene visualizzata sul lato sinistro della visualizzazione XAML e la finestra di progettazione XAML viene visualizzata sull'altro lato.|
+|**Vertical**|L'origine XAML viene visualizzata sul lato sinistro della visualizzazione XAML e la finestra di progettazione XAML viene visualizzata sull'altro lato.|
 |**Orizzontale**|La finestra di progettazione XAML viene visualizzata nella parte superiore della visualizzazione XAML e l'origine XAML viene visualizzata sotto di essa.|
-|**Default**|Il documento XAML usa l'orientamento divisione consigliato per la piattaforma di destinazione dal progetto del documento. Per la maggior parte delle piattaforme equivale a **Orizzontale**.|
+|**Predefinito**|Il documento XAML usa l'orientamento divisione consigliato per la piattaforma di destinazione dal progetto del documento. Per la maggior parte delle piattaforme equivale a **Orizzontale**.|
 
 ## <a name="zoom-by-using"></a>Zoom mediante
 
@@ -57,8 +57,8 @@ Usare questa impostazione per determinare il funzionamento dello zoom quando si 
 |||
 |-|-|
 |**Rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML usando lo scorrimento della rotellina del mouse.|
-|**CTRL + rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML premendo il tasto **CTRL** mentre si fa scorrere la rotellina del mouse.|
-|**ALT + rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML premendo il tasto **ALT** mentre si fa scorrere la rotellina del mouse.|
+|**CTRL + rotellina del mouse**|Eseguire lo zoom avanti nella finestra di progettazione XAML premendo il **tasto Ctrl** mentre si scorre la rotellina del mouse.|
+|**ALT + rotellina del mouse**|Eseguire lo zoom avanti nella finestra di progettazione XAML premendo il tasto **ALT** mentre si scorre la rotellina del mouse.|
 
 Queste impostazioni determinano il comportamento della finestra di progettazione quando si modifica un documento XAML.
 

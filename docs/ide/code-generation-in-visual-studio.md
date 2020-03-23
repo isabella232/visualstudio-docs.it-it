@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a043c2e1e79d629b32d46f0f54d233cd0ea9cb54
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594253"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Funzionalità di generazione del codice in Visual Studio
@@ -34,4 +34,4 @@ Visual Studio offre supporto in numerosi modi per generare e correggere il codic
 - [Frammenti di codice](../ide/code-snippets.md)
 - [Azioni rapide](../ide/quick-actions.md)
 - [Refactoring](../ide/refactoring-in-visual-studio.md)
-- [Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)
+- [Modelli di testo di generazione del codice e T4Code generation and T4 text templates](../modeling/code-generation-and-t4-text-templates.md)

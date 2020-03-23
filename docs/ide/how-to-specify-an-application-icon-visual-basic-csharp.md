@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596138"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)
 
-La proprietà `Icon` per un progetto specifica il file icona ( *.ico*) che verrà visualizzato per l'applicazione compilata in **Esplora file** e nella barra delle applicazioni di Windows.
+La proprietà `Icon` per un progetto specifica il file icona (*.ico*) che verrà visualizzato per l'applicazione compilata in **Esplora file** e nella barra delle applicazioni di Windows.
 
 È possibile accedere alla proprietà `Icon` nel riquadro **Applicazione** di **Creazione progetti**. Contiene un elenco delle icone aggiunte a un progetto come risorse o come file di contenuto.
 
@@ -31,15 +31,15 @@ La proprietà `Icon` per un progetto specifica il file icona ( *.ico*) che verr�
 
 1. In **Esplora soluzioni** scegliere un nodo progetto, non il nodo **Soluzione**.
 
-1. Sulla barra dei menu scegliere **Progetto** > **Proprietà**.
+1. Nella barra dei menu scegliere**Proprietà** **progetto** > .
 
 1. Quando si apre **Creazione progetti**, scegliere la scheda **Applicazione**.
 
-1. **(Visual Basic)** &mdash;Nell'elenco **Icona** scegliere un file icona ( *.ico*).
+1. **(Visual Basic)** &mdash;Nell'elenco **Icona** scegliere un file icona (*.ico*).
 
-    **C#** &mdash;Accanto all'elenco **Icona** scegliere il pulsante **\<Sfoglia>** e quindi selezionare il percorso del file icona desiderato.
+    **Nell'elenco**&mdash; **delle icone** di C, scegliere il ** \<pulsante Sfoglia...>,** quindi individuare il percorso del file di icona desiderato.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
-- [Applicazione (pagina), Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [Pagina dell'applicazione, Progettazione progetti (Visual Basic)Application page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [Pagina dell'applicazione, Progettazione progetti (c'è)Application page, Project Designer (C](../ide/reference/application-page-project-designer-csharp.md)

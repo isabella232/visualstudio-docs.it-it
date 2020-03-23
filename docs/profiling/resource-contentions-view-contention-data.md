@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778336"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Visualizzazione dei conflitti di risorse: dati sui conflitti
@@ -53,8 +53,8 @@ Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conf
 |**% conflitti inclusivi**|- Per una risorsa, la percentuale di tutti gli eventi di conflitto nell'esecuzione della profilatura che rappresentano eventi di conflitto per l'accesso a questa risorsa.<br />- Per una funzione, il numero di volte in cui è stato bloccato l'accesso alla risorsa padre a queste istanze della funzione durante l'esecuzione di codice nel corpo della funzione. Non sono inclusi gli eventi di blocco in funzioni chiamate dalla funzione.|
 |**Livello**|Profondità di questa funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
-|**Nome modulo**|Nome del modulo che contiene la funzione.|
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
-|**ID processo**|ID del processo (PID) del processo in cui era in esecuzione la funzione.|
-|**Nome processo**|nome del processo.|
+|**ID di processo**|ID del processo (PID) del processo in cui era in esecuzione la funzione.|
+|**Process Name**|Nome del processo.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|

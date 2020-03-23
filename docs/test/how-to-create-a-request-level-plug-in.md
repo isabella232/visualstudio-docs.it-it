@@ -10,15 +10,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6e57f92a3f45983321a866f3524974ea99dba82
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589153"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Procedura: Creare un plug-in a livello di richiesta
 
-Le *richieste* sono istruzioni dichiarative che costituiscono i test delle prestazioni web. I plug-in test delle prestazioni web consentono di isolare e riutilizzare codice al di fuori delle istruzioni dichiarative principali nel test delle prestazioni web. È possibile creare plug-in e aggiungerli a una singola richiesta, nonché al test delle prestazioni web che la contiene. Un *plug-in richiesta* personalizzato consente di chiamare il codice durante l'esecuzione di una determinata richiesta in un test delle prestazioni web.
+*Le richieste* sono le istruzioni dichiarative che costituiscono i test delle prestazioni Web. I plug-in test delle prestazioni web consentono di isolare e riutilizzare codice al di fuori delle istruzioni dichiarative principali nel test delle prestazioni web. È possibile creare plug-in e aggiungerli a una singola richiesta, nonché al test delle prestazioni web che la contiene. Un *plug-in richiesta* personalizzato consente di chiamare il codice durante l'esecuzione di una determinata richiesta in un test delle prestazioni web.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -30,23 +30,23 @@ Ogni plug-in delle richieste test prestazioni web dispone di un metodo PreReques
 
 ## <a name="to-create-a-request-level-plug-in"></a>Per creare un plug-in a livello di richiesta
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, selezionare **Aggiungi**, quindi **Nuovo progetto**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, **scegliere Aggiungi,** quindi **Nuovo progetto**.
 
 2. Creare un nuovo progetto **Libreria di classi**.
 
-3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** nella nuova libreria di classi e selezionare **Aggiungi riferimento**.
+3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** nella nuova libreria di classi e scegliere **Aggiungi riferimento**.
 
      Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
 
 4. Fare clic sulla scheda **.NET**, scorrere verso il basso, selezionare **Microsoft.VisualStudio.QualityTools.WebTestFramework**, quindi scegliere **OK**.
 
-     Il riferimento a **Microsoft.VisualStudio.QualityTools.WebTestFramework** viene aggiunto alla cartella **Riferimenti** in **Esplora soluzioni**.
+     Il riferimento a **Microsoft.VisualStudio.QualityTools.WebTestFramework** viene aggiunto alla cartella **Reference** in **Esplora soluzioni**.
 
-5. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo principale del progetto di test di carico e prestazioni Web che contiene il test di carico a cui si vuole aggiungere il plug-in di test della richiesta di test delle prestazioni Web. Selezionare **Aggiungi riferimento**.
+5. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo principale del progetto di test di carico e prestazioni Web contenente il test di carico a cui si desidera aggiungere il plug-in test delle richieste test delle prestazioni Web. Selezionare **Aggiungi riferimento**.
 
-     Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
+     Viene visualizzata la **finestra di dialogo Aggiungi riferimento**.
 
-6. Scegliere la scheda **Progetti**, selezionare il progetto **Libreria di classi**, quindi fare clic su **OK**.
+6. Scegliere la scheda **Progetti** , selezionare il **progetto Libreria di** classi e quindi scegliere **OK** .
 
 7. Nell'**editor di codice** scrivere il codice del plug-in. Creare innanzitutto una nuova classe pubblica derivata dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
@@ -74,9 +74,9 @@ Ogni plug-in delle richieste test prestazioni web dispone di un metodo PreReques
     > [!WARNING]
     > Quando si esegue un test delle prestazioni Web o un test di carico in cui viene usato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
     >
-    > **Richiesta non riuscita: eccezione nel plug-in \<> evento: non è stato possibile caricare il nome del plug-in del file o dell'assembly '\<' ". file dll >, Version =\<n. n. n. n >, Culture = neutral, PublicKeyToken = null ' o una delle relative dipendenze. Il sistema non è in grado di trovare il file specificato.**
+    > **Richiesta non riuscita: eccezione nel \<plug-in>\<evento: Impossibile caricare il file\<o l'assembly ' "Nome plug-in".dll>, Version 'n.n.n.n>, Culture'neutral, PublicKeyToken'null' o una delle relative dipendenze. Impossibile trovare il file specificato.**
     >
-    > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)** , ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
+    > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)**, ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
     >
     > 1. Nei riferimenti del progetto di test di carico e prestazioni web sarà presente un avviso. Rimuovere e aggiungere nuovamente il riferimento alla DLL del plug-in.
     > 2. Rimuovere il plug-in dal test o dal percorso appropriato, quindi aggiungerlo di nuovo.
@@ -116,5 +116,5 @@ namespace RequestPluginNamespace
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Codificare una regola di estrazione personalizzata per un test delle prestazioni Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificare una regola di convalida personalizzata per un test delle prestazioni Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md)
+- [Procedura: creare un plug-in test di caricoHow to: Create a Load Test Plug-in](../test/how-to-create-a-load-test-plug-in.md)
 - [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md)

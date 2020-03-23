@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6df4932a1043c984509632951ba67864fefe31ce
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590761"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe
@@ -28,19 +28,19 @@ ms.locfileid: "75590761"
 
 Nei diagrammi classi sono supportate le operazioni del mouse seguenti:
 
-|Combinazione del mouse|Contesto|Descrizione|
+|Combinazione del mouse|Context|Descrizione|
 | - |-------------|-----------------|
 |Doppio clic|Elementi forma|Apre l'editor del codice.|
 |Doppio clic|Connettore simbolo|Espande/comprime il simbolo.|
 |Doppio clic|Etichetta del connettore simbolo|Richiama il comando **Mostra interfaccia**.|
 |Rotellina del mouse|Diagramma classi|Scorre verticalmente.|
 |**MAIUSC** + rotellina del mouse|Diagramma classi|Scorre orizzontalmente.|
-|**CTRL** + rotellina del mouse|Diagramma classi|Zoom.|
-|**CTRL**+**MAIUSC** + clic|Diagramma classi|Zoom.|
+|**Ctrl** e rotellina del mouse|Diagramma classi|Ingrandisce.|
+|**Ctrl**+**Maiusc** e fare clic su|Diagramma classi|Ingrandisce.|
 
 ## <a name="use-the-mouse-in-the-class-details-window"></a>Uso del mouse nella finestra Dettagli classe
 
-Usando il mouse è possibile modificare l'aspetto della finestra **Dettagli classe** e i dati che vengono visualizzati nei modi seguenti:
+Utilizzando un mouse, è possibile modificare l'aspetto della finestra **Dettagli classe** e i dati visualizzati nei modi seguenti:
 
 - Facendo clic in qualsiasi cella modificabile è possibile modificarne il contenuto. Tutte le modifiche apportate si riflettono in tutte le posizioni in cui i dati sono archiviati o visualizzati, anche nella finestra **Proprietà** e nel codice sorgente.
 
@@ -56,28 +56,28 @@ Usando il mouse è possibile modificare l'aspetto della finestra **Dettagli clas
 
 Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 
-|Key|Contesto|Descrizione|
+|Chiave|Context|Descrizione|
 |---------|-------------|-----------------|
 |**Tasti di direzione**|All'interno delle forme dei tipi|Navigazione nel contenuto della forma in un formato struttura ad albero (è supportato il wrapping per la forma). I tasti freccia sinistra e destra espandono/comprimono l'elemento corrente se è espandibile; in caso contrario permettono di passare all'elemento padre (vedere le informazioni sulla navigazione nella visualizzazione struttura ad albero per i informazioni dettagliate sul comportamento).|
 |**Tasti di direzione**|Forme di primo livello|Consentono di spostare forme nel diagramma.|
-|**MAIUSC**+**tasti di direzione**|All'interno delle forme dei tipi|Creazione della selezione continua costituita da elementi della forma quali membri, tipi nidificati o raggruppamenti. Questi tasti di scelta rapida non supportano il wrapping.|
+|**Maiusc**+**tasti freccia**|All'interno delle forme dei tipi|Creazione della selezione continua costituita da elementi della forma quali membri, tipi nidificati o raggruppamenti. Questi tasti di scelta rapida non supportano il wrapping.|
 |**Home**|All'interno delle forme dei tipi|Passa al titolo della forma di primo livello.|
 |**Home**|Forme di primo livello|Passa alla prima forma del diagramma.|
-|**FINE**|All'interno delle forme dei tipi|Passa all'ultimo elemento visibile all'interno della forma.|
-|**FINE**|Forme di primo livello|Passa all'ultima forma del diagramma.|
-|**MAIUSC**+**Home**|All'interno della forma del tipo|Seleziona gli elementi all'interno della forma a partire dall'elemento corrente e fino a quello in primo piano sulla stessa forma.|
-|**MAIUSC**+**Fine**|All'interno della forma del tipo|Uguale a **MAIUSC**+**HOME** ma dall'alto verso il basso.|
-|**INVIO**|Tutti i contesti|Richiama l'operazione predefinita sulla forma, che è disponibile anche tramite doppio clic. Nella maggior parte dei casi si tratta di Visualizza codice, ma per alcuni elementi la definizione è differente (simboli, intestazioni di raggruppamenti, etichette di simboli).|
-|**+** e **-**|Tutti i contesti|Se l'elemento con lo stato attivo è espandibile, questi tasti espandono o comprimono l'elemento.|
+|**Fine**|All'interno delle forme dei tipi|Passa all'ultimo elemento visibile all'interno della forma.|
+|**Fine**|Forme di primo livello|Passa all'ultima forma del diagramma.|
+|**Spostamento**+**home**|All'interno della forma del tipo|Seleziona gli elementi all'interno della forma a partire dall'elemento corrente e fino a quello in primo piano sulla stessa forma.|
+|**Maiusc**+**Fine**|All'interno della forma del tipo|Uguale a **Sposta**+**a casa** ma in direzione dall'alto verso il basso.|
+|**Immettere**|Tutti i contesti|Richiama l'operazione predefinita sulla forma, che è disponibile anche tramite doppio clic. Nella maggior parte dei casi si tratta di Visualizza codice, ma per alcuni elementi la definizione è differente (simboli, intestazioni di raggruppamenti, etichette di simboli).|
+|**+** E**-**|Tutti i contesti|Se l'elemento con lo stato attivo è espandibile, questi tasti espandono o comprimono l'elemento.|
 |**>**|Tutti i contesti|Per gli elementi con elementi figlio, espande l'elemento se è compresso e passa al primo figlio.|
 |**<**|Tutti i contesti|Passa all'elemento padre.|
-|**ALT**+**MAIUSC**+**L**|All'interno delle forme dei tipi + sulle forme dei tipi|Passa al simbolo della forma selezionata, se presente.|
-|**ALT**+**MAIUSC**+**B**|All'interno delle forme dei tipi + sulle forme dei tipi|Se l'elenco di tipi di base è visualizzato sulla forma del tipo e contiene più di un elemento, comprime o espande l'elenco.|
-|**Eliminazione**|Sulle forme dei tipi e le forme Commenti|Richiama il comando **Rimuovi dal diagramma**.|
-|**Eliminazione**|Su tutti gli altri elementi.|Richiama il comando **Delete from Code** (Elimina dal codice) (membri, parametri, associazioni, ereditarietà, etichette di simboli).|
-|**CTRL**+**CANC**|Tutti i contesti|Richiama il comando **Delete from Code** (Elimina dal codice) sulla selezione.|
-|**TAB**|Tutti i contesti|Passa all'elemento figlio successivo all'interno dello stesso elemento padre (supporta il wrapping).|
-|**MAIUSC**+**TAB**|Tutti i contesti|Passa all'elemento figlio precedente all'interno dello stesso elemento padre (supporta il wrapping).|
+|**Alt**+**Maiusc**+**L**|All'interno delle forme dei tipi + sulle forme dei tipi|Passa al simbolo della forma selezionata, se presente.|
+|**Alt**+**Maiusc**+**B**|All'interno delle forme dei tipi + sulle forme dei tipi|Se l'elenco di tipi di base è visualizzato sulla forma del tipo e contiene più di un elemento, comprime o espande l'elenco.|
+|**Elimina**|Sulle forme dei tipi e le forme Commenti|Richiama il comando **Rimuovi dal diagramma**.|
+|**Elimina**|Su tutti gli altri elementi.|Richiama il comando **Delete from Code** (Elimina dal codice) (membri, parametri, associazioni, ereditarietà, etichette di simboli).|
+|**Ctrl**+**Elimina**|Tutti i contesti|Richiama il comando **Delete from Code** (Elimina dal codice) sulla selezione.|
+|**Scheda**|Tutti i contesti|Passa all'elemento figlio successivo all'interno dello stesso elemento padre (supporta il wrapping).|
+|**Shift**Maiusc**Tab** +|Tutti i contesti|Passa all'elemento figlio precedente all'interno dello stesso elemento padre (supporta il wrapping).|
 |**BARRA SPAZIATRICE**|Tutti i contesti|Alterna la selezione sull'elemento corrente.|
 
 ## <a name="use-the-keyboard-in-the-class-details-window"></a>Uso della tastiera nella finestra Dettagli classe
@@ -89,20 +89,20 @@ Per spostarsi nella finestra **Dettagli classe**, usare i seguenti tasti:
 
 |||
 |-|-|
-|Key|Risultato|
+|Chiave|Risultato|
 |**,** (virgola)|Se il cursore è posizionato in una riga di parametri, viene spostato nel campo Nome del parametro successivo. Se il cursore è posizionato nell'ultima riga di parametri di un metodo, viene spostato nel campo \<aggiungi parametro>, dove è possibile creare un nuovo parametro.<br /><br /> Se il cursore è posizionato in un altro punto della finestra **Dettagli classe**, viene effettivamente aggiunta una virgola nel campo corrente.|
 |**;** (punto e virgola) o **)** (parentesi di chiusura)|Sposta il cursore nel campo Nome della riga di membri successiva nella griglia della finestra **Dettagli classe**.|
-|**TAB**|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore viene spostato da un campo in cui è stato digitato del testo, in **Dettagli classe** il testo viene elaborato e memorizzato se non genera un errore.<br /><br /> Se il cursore si trova in un campo vuoto, ad esempio \<aggiungi parametro>, con il tasto TAB viene spostato nel primo campo della riga successiva.|
+|**Scheda**|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore viene spostato da un campo in cui è stato digitato del testo, in **Dettagli classe** il testo viene elaborato e memorizzato se non genera un errore.<br /><br /> Se il cursore si trova in un campo vuoto, ad esempio \<aggiungi parametro>, con il tasto TAB viene spostato nel primo campo della riga successiva.|
 |**BARRA SPAZIATRICE**|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore si trova in un campo vuoto, ad esempio \<aggiungi parametro>, viene spostato nel primo campo della riga successiva. Lo \<spazio> digitato immediatamente dopo una virgola viene ignorato.<br /><br /> Se il cursore si trova nel campo Riepilogo, viene aggiunto uno spazio.<br /><br /> Se il cursore si trova nella colonna Nascondi di una determinata riga, il valore della casella di controllo Nascondi viene attivato/disattivato.|
-|**CTRL**+**TAB**|Passa a un'altra finestra del documento, ad esempio dalla finestra **Dettagli classe** a un file di codice aperto.|
-|**ESC**|Se è stata iniziata la digitazione di testo in un campo, il tasto ESC agisce da tasto di annullamento, ripristinando il valore precedente del contenuto del campo. Se la finestra Dettagli classe ha lo stato attivo generale, ma nessuna cella specifica è attiva, il tasto ESC sposta lo stato attivo dalla finestra **Dettagli classe**.|
-|**Freccia SU** e **Freccia GIÙ**|Questi tasti spostano il cursore da riga a riga verticalmente nella griglia della finestra **Dettagli classe**.|
-|**Freccia SINISTRA**|Se il cursore si trova nella colonna Nome, comprime il nodo corrente della gerarchia (se aperto).|
-|**Freccia DESTRA**|Se il cursore si trova nella colonna Nome, espande il nodo corrente della gerarchia (se compresso).|
+|**Scheda Ctrl**+**Tab**|Passa a un'altra finestra del documento, ad esempio dalla finestra **Dettagli classe** a un file di codice aperto.|
+|**Esc**|Se è stata iniziata la digitazione di testo in un campo, il tasto ESC agisce da tasto di annullamento, ripristinando il valore precedente del contenuto del campo. Se la finestra Dettagli classe ha lo stato attivo generale, ma nessuna cella specifica è attiva, il tasto ESC sposta lo stato attivo dalla finestra **Dettagli classe**.|
+|**Freccia su** e **freccia giù**|Questi tasti spostano il cursore da riga a riga verticalmente nella griglia della finestra **Dettagli classe**.|
+|**Freccia sinistra**|Se il cursore si trova nella colonna Nome, comprime il nodo corrente della gerarchia (se aperto).|
+|**Freccia destra**|Se il cursore si trova nella colonna Nome, espande il nodo corrente della gerarchia (se compresso).|
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Creare e configurare membri dei tipi](creating-and-configuring-type-members.md)
 - [Come usare esclusivamente la tastiera](../reference/how-to-use-the-keyboard-exclusively.md)
-- [Tasti di scelta rapida predefiniti in Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Tasti di scelta rapida predefiniti in Visual StudioDefault keyboard shortcuts in Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
 - [Tasti di scelta rapida in Blend](../../xaml-tools/keyboard-shortcuts-in-blend.md)

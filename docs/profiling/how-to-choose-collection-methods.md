@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776345"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedura: Scegliere i metodi di raccolta
@@ -92,6 +92,6 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-[Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)
-[Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)
+[Configurare le sessioni](../profiling/configuring-performance-sessions.md)
+di prestazioni Comprendere i valori
+dei[dati di campionamento](../profiling/understanding-sampling-data-values.md)[Proprietà della sessione prestazioni](../profiling/performance-session-properties.md)

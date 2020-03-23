@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585730"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Suggerimenti relativi alle scelte rapide per Visual Studio
@@ -26,110 +26,110 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 
 ## <a name="window-management"></a>Gestione delle finestre
 
-|Attività|Collegamento|
+|Attività|Tasto di scelta rapida|
 |-|-|
-|Ingrandire la finestra mobile|**Doppio clic** sulla barra del titolo|
-|Ingrandire/ridurre le finestre|**WINDOWS**+**freccia SU** / **WINDOWS**+**freccia GIÙ**|
-|Riancorare la finestra mobile|**CTRL**+**doppio clic** sulla barra del titolo|
-|Spostare/ancorare le finestre mobili|**WINDOWS**+**freccia SINISTRA** / **WINDOWS**+**freccia DESTRA**|
-|Chiudere il documento attivo|**CTRL**+**F4**|
-|Visualizzare l'elenco di file aperti|**CTRL**+**ALT**+**Freccia GIÙ**|
-|Visualizzare tutte le finestre mobili|**CTRL**+**MAIUSC**+**M**|
-|Visualizzare la Jump List|**LOGO WINDOWS**+**ALT**+**N**|
-|Avviare una nuova istanza|**LOGO WINDOWS**+**MAIUSC**+**N**|
-|Spostarsi tra le finestre|**LOGO WINDOWS**+**N**|
+|Ingrandire la finestra mobile|**Fare doppio clic** sulla barra del titolo|
+|Ingrandire/ridurre le finestre|**Vincere**+**freccia** / su**Vincere**+**Freccia Giù**|
+|Riancorare la finestra mobile|**Ctrl**+**doppio clic** sulla barra del titolo|
+|Spostare/ancorare le finestre mobili|**Vinci**+**freccia** / sinistra**Vinci**+**freccia destra**|
+|Chiudere il documento attivo|**Ctrl**+**F4**|
+|Visualizzare l'elenco di file aperti|**Ctrl**+**Alt**+**Freccia giù**|
+|Visualizzare tutte le finestre mobili|**Ctrl**+**Maiusc**+**M**|
+|Visualizzare la Jump List|**Vinci**+**Alt**+**N**|
+|Avviare una nuova istanza|**Vincere**+**Turno**+**N**|
+|Spostarsi tra le finestre|**Vinci**+**N**|
 
-## <a name="search"></a>Cerca
+## <a name="search"></a>Ricerca
 
-|Attività|Collegamento|
+|Attività|Tasto di scelta rapida|
 |-|-|
-|Ricerca in Esplora soluzioni|**CTRL**+ **,**|
-|Spostare lo stato attivo nella casella di ricerca in qualsiasi finestra degli strumenti (fatta eccezione per l'editor)|**ALT**+ **`** quando la finestra degli strumenti è attiva|
-|Eseguire una ricerca in Visual Studio|**CTRL**+**Q**|
+|Ricerca in Esplora soluzioni|**Ctrl**+**;**|
+|Spostare lo stato attivo nella casella di ricerca in qualsiasi finestra degli strumenti (fatta eccezione per l'editor)|**Alt**+ ALT**`** quando la finestra degli strumenti ha lo stato attivo|
+|Eseguire una ricerca in Visual Studio|**Ctrl**+**Q**|
 |Filtro dei risultati della casella di ricerca|@opt - Opzioni<br />@cmd - Comandi<br />@mru - Usati di recente<br />@doc - Documenti aperti|
-|Opzioni di ricerca negli strumenti|**CTRL**+**E**|
+|Opzioni di ricerca negli strumenti|**Ctrl**+**E**|
 
 ## <a name="find-in-the-editor"></a>Ricerca nell'editor
 
-|Attività|Collegamento|
+|Attività|Tasto di scelta rapida|
 |-|-|
-|Ricerca veloce|**CTRL**+**F**|
-|Risultato successivo di Ricerca veloce|**INVIO**|
-|Risultato precedente di Ricerca veloce|**MAIUSC**+**INVIO**|
-|Espandere elenco a discesa di Ricerca veloce|**ALT**+**Freccia GIÙ**|
-|Chiudere ricerca|**ESC**|
-|Sostituzione veloce|**CTRL**+**H**|
-|Sostituzione veloce - Sostituisci successivo|**ALT**+**R**|
-|Sostituzione veloce - Sostituisci tutto|**ALT**+**A**|
-|Cerca nei file|**CTRL**+**MAIUSC**+**F**|
-|Sostituisci nei file|**CTRL**+**MAIUSC**+**H**|
+|Ricerca veloce|**Ctrl**+**F**|
+|Risultato successivo di Ricerca veloce|**Immettere**|
+|Risultato precedente di Ricerca veloce|**Maiusc**+**Invio**|
+|Espandere elenco a discesa di Ricerca veloce|**Alt**+**Freccia giù**|
+|Chiudere ricerca|**Esc**|
+|Sostituzione veloce|**Ctrl**+**H**|
+|Sostituzione veloce - Sostituisci successivo|**Alt**+**R**|
+|Sostituzione veloce - Sostituisci tutto|**Alt**+**A**|
+|Cerca nei file|**Ctrl**+**Maiusc**+**F**|
+|Sostituisci nei file|**Ctrl**+**Maiusc**+**H**|
 
 ## <a name="code-editor"></a>Editor di codice
 
-|Attività|Collegamento|
+|Attività|Tasto di scelta rapida|
 |-|-|
-|Vai a tutti|**CTRL**+**T**|
-|Vai a file recenti|**CTRL**+**T**,**R**|
-|Più punti di inserimento|**CTRL**+**ALT**+**clic**|
-|Aggiungi selezione corrispondente in più punti di inserimento|**MAIUSC**+**ALT**+**INS**|
-|Formatta documento|**CTRL**+**K**,**D**|
-|Modalità di suggerimento di IntelliSense|**CTRL**+**ALT**+**BARRA SPAZIATRICE** (Attiva/Disattiva)|
-|Forzare la visualizzazione di IntelliSense|**CTRL**+**J**|
-|Azioni rapide|**CTRL**+ **.**|
-|Selezione frammento di codice|**CTRL**+**K**,**X** oppure **?** ,**TAB** (Visual Basic)|
-|Racchiudi tra|**CTRL**+**K**,**S**|
-|Visualizzare informazioni rapide|**CTRL**+**K**,**I**|
-|Passa a|**CTRL**+ **,**|
-|Esplorare i riferimenti evidenziati|**CTRL**+**MAIUSC**+**SU** (Precedente)<br />**CTRL**+**MAIUSC**+**GIÙ** (Successivo)|
-|Zoom dell'editor|**CTRL**+**MAIUSC**+ **>** (Avanti)<br />**CTRL**+**MAIUSC**+ **<** (Indietro)|
-|Selezione blocco|Tenere premuto **ALT** e trascinare il mouse<br />**MAIUSC**+**ALT**+**tasti di direzione**|
-|Spostare la riga verso l'alto o il basso|**ALT**+**freccia SU** / **ALT**+**freccia GIÙ**|
-|Duplicare una riga|**CTRL**+**E**,**V**|
-|Espandere la selezione|**MAIUSC**+**ALT**+ **=**|
-|Comprimere la selezione|**MAIUSC**+**ALT**+ **-**|
+|Vai a tutti|**Ctrl**+**T**|
+|Vai a file recenti|**Ctrl**+**T**,**R**|
+|Più punti di inserimento|**Ctrl**+**Alt**+**fare clic su**|
+|Aggiungi selezione corrispondente in più punti di inserimento|**Maiusc**+**Alt**+**Ins**|
+|Formatta documento|**Ctrl**+**K**,**D**|
+|Modalità di suggerimento di IntelliSense|**Ctrl**+**ALT**+**Spazio** (Attiva/Disattiva)|
+|Forzare la visualizzazione di IntelliSense|**Ctrl**+**J**|
+|Azioni rapide|**Ctrl**+**.**|
+|Selezione frammento di codice|**Ctrl**+**K**,**X** o **?**,**TAB** (Visual Basic)|
+|Racchiudi tra|**Ctrl**+**K**,**S**|
+|Visualizzare informazioni rapide|**Ctrl**+**K**,**I**|
+|Passa a|**CTRL**+**,**|
+|Esplorare i riferimenti evidenziati|**Ctrl**+**Maiusc**+**su** (precedente)<br />**Ctrl**+**Maiusc**+**giù** (Avanti)|
+|Zoom dell'editor|**Ctrl**+**Shift** + Maiusc**>** (In)<br />**Ctrl**+**Shift** + MAIUSC**<** (fuori)|
+|Selezione blocco|Tenere premuto **ALT** e trascinare il mouse<br />**Maiusc**+**Alt**+**Tasti freccia**|
+|Spostare la riga verso l'alto o il basso|**Alt**+**Freccia su** / **Alt Freccia**+**Giù Freccia Giù**|
+|Duplicare una riga|**Ctrl**+**E**,**V**|
+|Espandere la selezione|**Maiusc**+**Alt**+**=**|
+|Comprimere la selezione|**Maiusc**+**Alt**+**-**|
 |Vai a definizione|**F12**|
-|Visualizza definizione|**ALT**+**F12**|
-|Stack Vai a definizione|**CTRL**+**MAIUSC**+**8** (Indietro)<br />**CTRL**+**MAIUSC**+**7** (Avanti)|
-|Chiudere la finestra Visualizza definizione|**ESC**|
-|Alzare di livello la finestra Visualizza definizione a una scheda di documento normale|**CTRL**+**ALT**+**HOME**|
-|Spostarsi tra più finestre Visualizza definizione|**CTRL**+**ALT**+ **-** e **CTRL**+**ALT**+ **=**|
+|Visualizza definizione|**Alt**+**F12**|
+|Stack Vai a definizione|**Ctrl**+**Maiusc**+**8** (Indietro)<br />**Ctrl**+**Maiusc**+**7** (Avanti)|
+|Chiudere la finestra Visualizza definizione|**Esc**|
+|Alzare di livello la finestra Visualizza definizione a una scheda di documento normale|**Ctrl**+**Alt**+**Home**|
+|Spostarsi tra più finestre Visualizza definizione|**Ctrl**+**Alt** + **-** Alt e **Ctrl**+**Alt**+**=**|
 |Spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
-|Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|**MAIUSC**+**ESC**|
-|Passare al blocco di inclusione|**CTRL**+**Alt**+**freccia SU**|
-|Passare al problema successivo/precedente|**ALT**+**PGSU** / **ALT**+**PGGIÙ**|
-|Menu di navigazione contestuale|**ALT**+ **`**|
+|Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|**Maiusc**+**Esc**|
+|Passare al blocco di inclusione|**Ctrl**+**Alt**+**Freccia su**|
+|Passare al problema successivo/precedente|**Alt**+**PgSu** / **Alt**+**PgDn**|
+|Menu di navigazione contestuale|**Alt**+**`**|
 
-## <a name="toolbars"></a>Toolbars
+## <a name="toolbars"></a>Barre degli strumenti
 
-|Attività|Collegamento|
+|Attività|Tasto di scelta rapida|
 |-|-|
 |Aggiungere pulsanti|Selezionare il pulsante di overflow della barra degli strumenti|
 |Casella combinata Trova nella barra degli strumenti standard|**Ctrl**+**D**|
-|Modalità comando casella di testo Trova|Digitare **>**|
+|Modalità comando casella di testo Trova|digitare**>**|
 |Creare nuovi alias|Digitare **alias \<nuovo alias> \<comando>** nella finestra **Comando**|
 
 ## <a name="debugging"></a>Debug
 
-|Attività|Collegamento|
+|Attività|Tasto di scelta rapida|
 |-|-|
-|Avvia debug|**F5**|
-|Arrestare il debug|**MAIUSC**+**F5**|
-|Riavviare il debug|**CTRL**+**MAIUSC**+**F5**|
-|Eseguire l'istruzione o la routine|**F10**|
-|Debug|**F11**|
-|Uscire dall'istruzione o dalla routine|**MAIUSC**+**F11**|
-|Esecuzione fino al cursore|**CTRL**+**F10**|
-|Impostare l'istruzione successiva|**CTRL**+**MAIUSC**+**F10**|
+|Consente di iniziare il debug|**F5**|
+|Arrestare l'esecuzione del debug|**Maiusc**+**F5**|
+|Riavviare il debug|**Ctrl**+**Maiusc**+**F5**|
+|Eseguire l'istruzione/routine|**F10**|
+|Eseguire l'istruzione|**F11**|
+|Uscire dall'istruzione/routine|**Maiusc**+**F11**|
+|Esecuzione fino al cursore|**Ctrl**+**F10**|
+|Impostare l'istruzione successiva|**Ctrl**+**Maiusc**+**F10**|
 |Impostare e attivare/disattivare il punto di interruzione|**F9**|
-|Disabilitare il punto di interruzione|**CTRL**+**F9**|
-|Controllo immediato (finestra)|**CTRL**+**ALT**+**I**|
-|Modalità di comando Finestra di controllo immediato|Digitare **>**|
+|Disabilitare il punto di interruzione|**Ctrl**+**F9**|
+|Controllo immediato (finestra)|**Ctrl**+**Alt**+**I**|
+|Modalità di comando Finestra di controllo immediato|digitare**>**|
 |Finestra di controllo immediato - Cancellare il buffer|Digitare **cls**|
 |Finestra di controllo immediato - Stampare il valore|Digitare **?varname**|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
+- [Suggerimenti e trucchi per l'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
 - [Funzionalità di produttività in Visual Studio](productivity-features.md)
 - [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md)
 - [Tasti di scelta rapida comuni in Visual Studio per Mac](/visualstudio/mac/keyboard-shortcuts)

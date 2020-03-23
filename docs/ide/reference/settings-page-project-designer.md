@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566774"
 ---
 # <a name="settings-page-project-designer"></a>Pagina Impostazioni, Creazione progetti
@@ -29,7 +29,7 @@ Per accedere alla pagina **Impostazioni**, selezionare un nodo del progetto in *
 
 La barra intestazione nella parte superiore della pagina **Impostazioni** contiene diversi controlli:
 
-**Sincronizza**
+**Sincronizzare**
 
 **Sincronizza** ripristina le impostazioni con ambito utente usate dall'applicazione in fase di esecuzione o durante il debug ai valori predefiniti specificati in fase di progettazione. Per ripristinare i dati, rimuovere i file specifici dell'applicazione generati in fase di esecuzione dal disco e non dai dati del progetto.
 
@@ -65,15 +65,15 @@ Per altre informazioni sulle classi helper delle impostazioni, vedere [Gestire l
 
 La **griglia Impostazioni** consente di configurare le impostazioni dell'applicazione. La griglia include le colonne seguenti:
 
-**Name**
+**Nome**
 
 Immettere il nome dell'impostazione dell'applicazione in questo campo.
 
-**Type**
+**Tipo**
 
 Usare l'elenco a discesa per selezionare un tipo di impostazione. L'elenco include i tipi più utilizzati, ad esempio **String**, **(Stringa di connessione)** e **System.Drawing.Font**. È possibile scegliere un tipo diverso selezionando **Sfoglia** alla fine dell'elenco e quindi selezionando un tipo dalla finestra di dialogo **Seleziona un tipo**. Il tipo selezionato viene aggiunto ai tipi più utilizzati dell'elenco a discesa (solo per la soluzione corrente).
 
-**Ambito**
+**Scope**
 
 Selezionare **Applicazione** o **Utente**.
 

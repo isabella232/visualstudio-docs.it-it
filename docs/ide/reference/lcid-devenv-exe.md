@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77557941"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -37,13 +37,13 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="arguments"></a>Argomenti
 
-- *LocaleID*
+- *Localeid*
 
   Obbligatorio. Identificatore delle impostazioni locali (LCID) della lingua specificata.
 
 ## <a name="remarks"></a>Osservazioni
 
-Carica l'IDE e imposta la lingua naturale predefinita per l'ambiente. Questa modifica viene salvata tra le sessioni e l'IDE mostra la modifica nella casella **Strumenti** > **Opzioni** > **Ambiente** > **Impostazioni internazionali** > **Lingua**.
+Carica l'IDE e imposta la lingua naturale predefinita per l'ambiente. Questa modifica viene mantenuta tra le sessioni e l'IDE Mostra questa modifica nella**casella** Di seguito **Opzioni** > **di** > **ambiente** > Impostazioni > **internazionali**degli strumenti .
 
 Se la lingua specificata non è disponibile nel sistema in uso, l'opzione `/LCID` viene ignorata.
 
@@ -78,4 +78,4 @@ devenv /LCID 1033
 
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Impostazioni internazionali, Ambiente, finestra di dialogo Opzioni](../../ide/reference/international-settings-environment-options-dialog-box.md)
-- [Personalizzazione del layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Personalizzazione del layout della finestra](../../ide/customizing-window-layouts-in-visual-studio.md)

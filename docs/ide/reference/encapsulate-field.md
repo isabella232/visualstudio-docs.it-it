@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569712"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactoring Incapsula campo
@@ -25,7 +25,7 @@ Questo refactoring si applica a:
 
 - C#
 
-- Visual Basic -
+- Visual Basic
 
 **Cosa:** consente di trasformare un campo in una proprietà e aggiornare tutti gli utilizzi di quel campo per l'uso della nuova proprietà creata.
 
@@ -33,7 +33,7 @@ Questo refactoring si applica a:
 
 **Perché:** si vuole consentire l'accesso a un campo ad altre classi, ma non si vuole che tali classi abbiano accesso diretto.  Eseguendo il wrapping del campo in una proprietà, è ad esempio possibile scrivere codice per verificare il valore assegnato.
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Evidenziare o posizionare il cursore del testo all'interno del nome del campo da incapsulare:
 
@@ -49,12 +49,12 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+E**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring** e selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring > Incapsula campo**.
       - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
 
-   Selection | Descrizione
+   Selezione | Descrizione
    --------- | -----------
    **Incapsula i campi (e usa la proprietà)** | Incapsula il campo con una proprietà e aggiorna tutti gli utilizzi del campo per l'uso della proprietà generata
    **Incapsula i campi (ma continua a usarli)** | Incapsula il campo con una proprietà, ma lascia invariati tutti gli utilizzi del campo
@@ -62,7 +62,7 @@ Questo refactoring si applica a:
    La proprietà viene creata e vengono aggiornati i riferimenti al campo, se selezionato.
 
    > [!TIP]
-   > Usare il collegamento **Anteprima modifiche** nella finestra popup [per controllare il risultato in anteprima](../../ide/preview-changes.md) prima di eseguire il commit.
+   > Utilizzare il collegamento **Anteprima modifiche** nella finestra popup per visualizzare [il risultato](../../ide/preview-changes.md) prima di eseguire il commit.
 
    - C#:
 
@@ -75,4 +75,4 @@ Questo refactoring si applica a:
 ## <a name="see-also"></a>Vedere anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
-- [Anteprima modifiche](../../ide/preview-changes.md)
+- [Anteprima delle modifiche](../../ide/preview-changes.md)

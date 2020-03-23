@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779259"
 ---
 # <a name="function-details-view"></a>Visualizzazione Dettagli funzione
@@ -38,11 +38,11 @@ La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seg
 
 ## <a name="cost-distribution-bar-chart"></a>Grafico a barre Distribuzione costi
 
-### <a name="performance-metrics"></a>Dati statistici sulle prestazioni
+### <a name="performance-metrics"></a>Metriche delle prestazioni
  Nell'elenco a discesa **Metrica prestazioni** è possibile specificare i valori da visualizzare. I valori disponibili dipendono dal metodo di profilatura usato nel file dei dati di profilatura. I nomi tra parentesi sono i nomi delle righe nella tabella **Dettagli prestazioni funzione**.
 
 ### <a name="bar-chart"></a>Grafico a barre
- **Funzioni chiamanti**
+ **Chiamata delle funzioni**
 
  La barra **Funzioni chiamanti** visualizza le funzioni che hanno chiamato la funzione selezionata. Le dimensioni del blocco che contiene la funzione chiamante sono proporzionali al contributo della funzione chiamante rispetto al valore totale della metrica prestazioni per la funzione selezionata.
 
@@ -73,7 +73,7 @@ La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seg
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Esclusivo**|-   Valore della metrica prestazioni relativo all'esecuzione del corpo della funzione.|
+|**Exclusive**|-   Valore della metrica prestazioni relativo all'esecuzione del corpo della funzione.|
 |**In chiamate**|-    Valore della metrica prestazioni relativo a funzioni chiamate dalla funzione selezionata.|
 |**Totale inclusivo**|-   Totale dei valori **Esclusivo** e **In chiamate**.|
 
@@ -82,7 +82,7 @@ La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seg
 
 ## <a name="cost-distribution-bar-chart-values"></a>Valori del grafico a barre Distribuzione costi
 
-### <a name="sampling"></a>Campionamento
+### <a name="sampling"></a>campionamento
  La tabella seguente descrive i valori nell'elenco Metrica prestazioni per i dati di profilatura raccolti tramite il metodo di campionamento.
 
 |||
@@ -105,7 +105,7 @@ La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seg
 |**Allocazioni inclusive (Allocazioni)**|-   Per una **Funzione chiamante**, numero di oggetti allocati dalle istanze della funzione selezionata chiamate dalla funzione. Sono inclusi gli oggetti allocati dalle funzioni chiamate dalla funzione selezionata.<br />-   Per il **Corpo della funzione**, numero di oggetti allocati dalla funzione selezionata durante l'esecuzione del codice relativo. Non sono inclusi gli oggetti allocati nelle funzioni chiamate dalla funzione selezionata.<br />-   Per una funzione chiamata, numero di oggetti allocati dalle istanze della funzione chiamate dalla funzione selezionata. Sono inclusi gli oggetti allocati da funzioni chiamate dalla funzione.|
 |**Byte inclusivi (Byte)**|-   Per una **Funzione chiamante**, numero di byte allocati dalle istanze della funzione selezionata chiamate dalla funzione. Sono inclusi i byte allocati dalle funzioni chiamate dalla funzione selezionata.<br />-   Per il **Corpo della funzione**, numero totale di byte allocati dalla funzione selezionata durante l'esecuzione del codice relativo. Non sono inclusi i byte allocati nelle funzioni chiamate dalla funzione selezionata.<br />-   Per una funzione chiamata, numero di byte allocati dalle istanze della funzione chiamate dalla funzione selezionata. Sono inclusi i byte allocati da funzioni chiamate dalla funzione.|
 
-### <a name="concurrency"></a>concorrenza
+### <a name="concurrency"></a>Concorrenza
  La tabella seguente descrive i valori nell'elenco Metrica prestazioni per i dati di profilatura raccolti tramite il metodo di concorrenza.
 
 |||

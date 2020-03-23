@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568867"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refactoring con variabile temporanea inline
@@ -23,7 +23,7 @@ Questo refactoring si applica a:
 
 - C#
 
-- Visual Basic -
+- Visual Basic
 
 **Cosa:** consente di rimuovere una variabile temporanea e sostituirla con il relativo valore.
 
@@ -31,7 +31,7 @@ Questo refactoring si applica a:
 
 **Perché:** la rimozione di una variabile temporanea può migliorare la leggibilità del codice.
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Evidenziare o posizionare il cursore di testo all'interno della variabile temporanea da rendere inline:
 
@@ -46,7 +46,7 @@ Questo refactoring si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**.
 

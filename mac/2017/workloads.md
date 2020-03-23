@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
 ms.openlocfilehash: a189abf6b46acbf708b1a56fb33d5a50cd3d740c
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985110"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Carichi di lavoro di Visual Studio per Mac
@@ -17,7 +17,7 @@ ms.locfileid: "74985110"
 Visual Studio per Mac è preinstallato con carichi di lavoro per lo sviluppo dei tipi seguenti di app:
 
 * App per dispositivi mobili multipiattaforma con .NET usando Xamarin per Android, iOS, tvOS e watchOS
-* App desktop per Mac
+* App desktop Mac
 * App .NET Core
 * App Web ASP.NET Core
 * Giochi Unity multipiattaforma

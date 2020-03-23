@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777725"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Utilizzo elevato del processore
@@ -27,9 +27,9 @@ ms.locfileid: "74777725"
 |-|-|
 |ID regola|DA0004|
 |Category|Uso degli strumenti di profilatura|
-|Metodi di profilatura|Strumentazione<br /><br /> Campionamento|
+|Metodi di profilatura|Strumentazione<br /><br /> campionamento|
 |Message|L'utilizzo del processore è costantemente superiore al 75%. Si consiglia di utilizzare la modalità di campionamento per le applicazioni basate sulla CPU.|
-|Tipo regola|Informazioni su|
+|Tipo regola|Informazioni|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.
 

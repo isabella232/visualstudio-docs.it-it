@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589422"
 ---
 # <a name="how-to-model-3d-terrain"></a>Procedura: Creare un modello di terreno 3D
@@ -53,8 +53,8 @@ Il modello di terreno è completo. Di seguito viene nuovamente illustrato il mod
 
 ![Scena 3D che illustra un modello di terreno](../designers/media/digit-terrain-model.png)
 
-È possibile usare questo modello di terreno per illustrare l'effetto dello shader con sfumatura descritto in [Procedura: Creare uno shader con sfumatura basata sulla geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Potete usare questo modello di terreno per illustrare l'effetto dello shader sfumatura descritto in [Procedura: Creare uno shader sfumatura basato sulla geometria.](../designers/how-to-create-a-geometry-based-gradient-shader.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Editor dei modelli](../designers/model-editor.md)
+- [Editor modelli](../designers/model-editor.md)

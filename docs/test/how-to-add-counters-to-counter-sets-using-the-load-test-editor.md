@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594332"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Procedura: Aggiungere contatori agli insiemi di contatori usando l'Editor test di carico
@@ -53,7 +53,7 @@ I contatori vengono gestiti nell'**Editor test di carico**. Gli insiemi di conta
 
 6. Selezionare un contatore e un'istanza da aggiungere all'insieme di contatori personalizzati.
 
-     \- oppure -
+     \- - oppure -
 
      Selezionare il pulsante di opzione **Tutti i contatori** per selezionare tutti i contatori disponibili.
 

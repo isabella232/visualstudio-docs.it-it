@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d03912eecd7b3cfa3563fc095453fee3ddf9b163
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114289"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Impostare i valori predefiniti per le distribuzioni aziendali di Visual Studio
@@ -50,7 +50,7 @@ Se non sono ancora impostati, alcuni valori del Registro di sistema vengono impo
 
 È possibile impostare i valori del Registro di sistema seguenti:
 
-| **Name** | **Type** | **Default** | **Descrizione** |
+| **Nome** | **Tipo** | **Predefinito** | **Descrizione** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` o `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Directory in cui vengono archiviati i manifesti di pacchetto e, facoltativamente, i payload. Per altre informazioni, vedere la pagina [Disabilitare o spostare la cache dei pacchetti](disable-or-move-the-package-cache.md). |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Consente di mantenere i payload dei pacchetti anche dopo l'installazione. È possibile modificare questo valore in qualsiasi momento. Disabilitando questi criteri vengono rimossi tutti i payload di pacchetti memorizzati nella cache per l'istanza da riparare o modificare. Per altre informazioni, vedere la pagina [Disabilitare o spostare la cache dei pacchetti](disable-or-move-the-package-cache.md). |
@@ -65,6 +65,6 @@ Se non sono ancora impostati, alcuni valori del Registro di sistema vengono impo
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
+- [Installare Visual Studio](install-visual-studio.md)
 - [Disabilitare o spostare la cache dei pacchetti](disable-or-move-the-package-cache.md)
 - [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

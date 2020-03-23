@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585626"
 ---
 # <a name="replace-in-files"></a>Sostituisci nei file
@@ -26,7 +26,7 @@ ms.locfileid: "75585626"
 **Sostituisci nei file** consente di cercare una stringa o un'espressione nel codice di un determinato set di file e di modificare alcune o tutte le corrispondenze trovate. Le corrispondenze trovate e le azioni eseguite sono elencate nella finestra **Risultati ricerca** selezionata in **Opzioni risultati**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, ad esempio per implementare le impostazioni **Generali** o **Visual C++** , scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione. Per modificare le impostazioni, ad esempio per implementare le impostazioni **Generali** o **Visual C++**, scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
 
 È possibile usare uno dei metodi seguenti per visualizzare l'opzione **Sostituisci nei file** nella finestra **Trova e sostituisci**.
 
@@ -36,7 +36,7 @@ ms.locfileid: "75585626"
 
 2. Scegliere **Sostituisci nei file**.
 
-   oppure
+   - o -
 
    Se la finestra **Trova e sostituisci** è già visualizzata, scegliere **Sostituisci nei file** nella barra degli strumenti.
 
@@ -47,20 +47,20 @@ Per cercare una nuova stringa di testo o espressione, specificarla nella casella
 > [!NOTE]
 > Il pulsante **Generatore di espressioni** viene abilitato solo se è stata selezionata l'opzione **Usa espressioni regolari** in **Opzioni di ricerca**.
 
-## <a name="replace-with"></a>Sostituisci con
+## <a name="replace-with"></a>Sostituire con
 
 Per sostituire istanze della stringa nella casella **Trova** con un'altra stringa, immettere la stringa di sostituzione nella casella **Sostituisci con**. Per eliminare le istanze della stringa nella casella **Trova**, lasciare vuoto questo campo. Aprire l'elenco per visualizzare le ultime 20 stringhe cercate. Scegliere il pulsante **Generatore di espressioni** adiacente se si vuole usare una o più espressioni regolari nella stringa di sostituzione. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="look-in"></a>Cerca in
 
-L'opzione selezionata nell'elenco a discesa **Cerca in** determina se la funzionalità **Sostituisci nei file** deve cercare solo nei file attualmente attivi o in tutti i file archiviati all'interno di determinate cartelle. Selezionare un ambito di ricerca dall'elenco, digitare il percorso di una cartella o fare clic sul pulsante **Sfoglia (...)** per visualizzare la finestra di dialogo **Seleziona cartelle di ricerca** e immettere il set di cartelle per la ricerca. È anche possibile digitare un percorso direttamente nella casella **Cerca in**.
+L'opzione selezionata nell'elenco a discesa **Cerca in** determina se la funzione **Sostituisci nei file** eseguirà la ricerca solo nei file attualmente attivi oppure in tutti i file archiviati all'interno di determinate cartelle. Selezionare un ambito di ricerca dall'elenco, digitare il percorso di una cartella o fare clic sul pulsante **Sfoglia (...)** per visualizzare la finestra di dialogo **Seleziona cartelle di ricerca** e immettere il set di cartelle per la ricerca. È anche possibile digitare un percorso direttamente nella casella **Cerca in**.
 
 > [!NOTE]
 > Se l'opzione **Cerca in** selezionata fa sì che venga cercato un file estratto dal controllo del codice sorgente, la ricerca verrà eseguita solo nella versione del file scaricata nel computer locale.
 
 ## <a name="find-options"></a>Opzioni ricerca
 
-È possibile espandere o comprimere la sezione **Opzioni di ricerca**. È possibile selezionare o deselezionare le opzioni seguenti:
+È possibile espandere o comprimere la sezione **Opzioni di ricerca.** È possibile selezionare o deselezionare le opzioni seguenti:
 
 **Maiuscole/minuscole**
 
@@ -70,7 +70,7 @@ Quando questa opzione è selezionata, le finestre **Risultati ricerca** visualiz
 
 Quando questa opzione è selezionata, le finestre **Risultati ricerca** visualizzano solo le istanze della stringa specificata in **Trova** con l'esatta corrispondenza di parole. Ad esempio, la ricerca di "MyObject" restituisce "MyObject" ma non "CMyObject" o "MyObjectC".
 
-**Usare espressioni regolari**
+**Usare espressioni regolariUse Regular Expressions**
 
 Se questa casella di controllo è selezionata, è possibile usare le notazioni speciali per definire modelli di testo nelle caselle di testo **Trova** o **Sostituisci con**. Per un elenco di queste notazioni, vedere [Uso delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
@@ -80,29 +80,29 @@ L'elenco indica i tipi di file da cercare nelle directory **Cerca in**. Se quest
 
 ## <a name="result-options"></a>Opzioni risultati
 
-È possibile espandere o comprimere la sezione **Opzioni risultati**. È possibile selezionare o deselezionare le opzioni seguenti:
+È possibile espandere o comprimere la sezione **Opzioni risultato.** È possibile selezionare o deselezionare le opzioni seguenti:
 
-Finestra **Risultati ricerca 1**
+**Finestra Risultati ricerca 1**
 
-Quando questa opzione è selezionata, i risultati della ricerca corrente sostituiranno il contenuto della finestra **Risultati ricerca 1**. Questa finestra viene visualizzata automaticamente per mostrare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Altre finestre** dal menu **Visualizza** e quindi **Risultati ricerca 1**.
+Quando questa opzione è selezionata, i risultati della ricerca corrente sostituiranno il contenuto della finestra **Risultati ricerca 1**. Questa finestra viene aperta automaticamente per visualizzare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Altre finestre** dal menu **Visualizza** e quindi **Risultati ricerca 1**.
 
-Finestra **Risultati ricerca 2**
+**Finestra Risultati ricerca 2**
 
-Quando questa opzione è selezionata, i risultati della ricerca corrente sostituiranno il contenuto della finestra **Risultati ricerca 2**. Questa finestra viene visualizzata automaticamente per mostrare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Altre finestre** dal menu **Visualizza** e quindi **Risultati ricerca 2**.
+Quando questa opzione è selezionata, i risultati della ricerca corrente sostituiranno il contenuto della finestra **Risultati ricerca 2**. Questa finestra viene aperta automaticamente per visualizzare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Altre finestre** dal menu **Visualizza** e quindi **Risultati ricerca 2**.
 
-**Visualizza solo nomi file**
+**Mostra solo nomi file**
 
-Quando questa casella di controllo è selezionata, le finestre **Risultati ricerca** elencano i nomi completi e i percorsi di tutti i file che contengono la stringa di ricerca. Tuttavia, i risultati non includono la riga di codice in cui viene visualizzata la stringa. Questa casella di controllo è disponibile solo per **Cerca nei file**.
+Quando questa casella di controllo è selezionata, nelle finestre **Risultati ricerca** vengono elencati i nomi completi e i percorsi di tutti i file che contengono la stringa di ricerca. Tuttavia, i risultati non includono la riga di codice in cui viene visualizzata la stringa. Questa casella di controllo è disponibile solo per **Trova nei file.**
 
 **Non chiudere i file modificati con Sostituisci tutto**
 
-Quando questa opzione è selezionata, tutti i file in cui sono state eseguite delle sostituzioni restano aperti in modo da poter annullare o salvare le modifiche. I vincoli di memoria potrebbero limitare il numero di file che possono rimanere aperti dopo un'operazione di sostituzione.
+Se questa casella di controllo è selezionata, i file in cui sono state eseguite sostituzioni rimangono aperti, in modo che sia possibile annullare o salvare le modifiche. È possibile che la quantità di memoria disponibile limiti il numero di file che possono rimanere aperti dopo un'operazione di sostituzione.
 
 > [!CAUTION]
-> È possibile usare **Annulla** solo nei file che restano aperti per la modifica. Se questa opzione non è selezionata, i file che non sono già aperti per la modifica restano chiusi e l'opzione **Annulla** non è disponibile per i file.
+> Il comando **Annulla** può essere usato solo nei file che rimangono aperti per le modifiche. Se questa opzione non è selezionata, i file non ancora aperti per essere modificati rimarranno chiusi e non sarà disponibile alcuna opzione **Annulla** per tali file.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)
-- [Cerca nei file](../ide/find-in-files.md)
+- [Trovare e sostituire testo](../ide/finding-and-replacing-text.md)
+- [Trova nei file](../ide/find-in-files.md)
 - [Comandi di Visual Studio](../ide/reference/visual-studio-commands.md)

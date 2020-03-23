@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c8b4cb63eb4647ddab4220ed6729894fe8a456f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777489"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Tempo di elaborazione CPU kernel eccessivo
@@ -26,9 +26,9 @@ ms.locfileid: "74777489"
 |-|-|
 |ID regola|TODO|
 |Category|Uso degli strumenti di profilatura|
-|Metodo di profilatura|Campionamento|
+|Metodo di profilatura|campionamento|
 |Message|È stato rilevato un elevato livello di tempo CPU in modalità kernel. Per determinare la causa, abilitare il campionamento SysCall.|
-|Tipo regola|Informazioni su|
+|Tipo regola|Informazioni|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.
 

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e8bb4b2860d40828a96e25ec6e6c73d947dd60c0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567658"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
@@ -39,31 +39,31 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 ## <a name="arguments"></a>Argomenti
 
-- *SolutionName*
+- *Solutionname*
 
-  Richiesto. Il percorso completo e il nome del file della soluzione.
+  Obbligatorio. Il percorso completo e il nome del file della soluzione.
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  Richiesto. [Compila](build-devenv-exe.md), [pulisce](clean-devenv-exe.md), [distribuisce](deploy-devenv-exe.md) o [ridistribuisce](rebuild-devenv-exe.md) il progetto.
+  Obbligatorio. [Compila](build-devenv-exe.md), [pulisce](clean-devenv-exe.md), [distribuisce](deploy-devenv-exe.md) o [ridistribuisce](rebuild-devenv-exe.md) il progetto.
 
 - *SolnConfigName*
 
-  Parametro facoltativo. Nome della configurazione di soluzione (ad esempio `Debug` o `Release`) da applicare alla soluzione indicata in *SolutionName*. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se questo argomento non viene specificato o viene specificata una stringa vuota (`""`), lo strumento usa la configurazione attiva della soluzione.
+  Facoltativa. Nome della configurazione di soluzione (ad esempio `Debug` o `Release`) da applicare alla soluzione indicata in *SolutionName*. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se questo argomento non viene specificato o viene specificata una stringa vuota (`""`), lo strumento usa la configurazione attiva della soluzione.
 
-- `/Project` *ProjName*
+- `/Project`*Nome Proj*
 
-  Parametro facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il nome visualizzato del progetto o un percorso relativo dalla cartella *SolutionName* al file di progetto. È anche possibile immettere il percorso completo e il nome del file di progetto.
+  Facoltativa. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il nome visualizzato del progetto o un percorso relativo dalla cartella *SolutionName* al file di progetto. È anche possibile immettere il percorso completo e il nome del file di progetto.
 
-- `/ProjectConfig` *projnameconfig*
+- `/ProjectConfig` *ProjConfigName*
 
-  Parametro facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da applicare al `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`).
+  Facoltativa. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da applicare al `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`).
 
-- `/Out` *OutputFileName*
+- `/Out`*OutputFilename*
 
-  Parametro facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
+  Facoltativa. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 L'opzione `/ProjectConfig` deve essere usata con l'opzione `/Project` come parte di un comando `/Build`, /`Clean`, `/Deploy` o `/Rebuild`.
 

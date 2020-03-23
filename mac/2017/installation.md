@@ -8,22 +8,22 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984919"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Installare Visual Studio 2017 per Mac
 
 > [!NOTE]
-> Visual Studio 2019 per Mac è [ora disponibile](installation.md?view=vsmac-2019). Per le versioni precedenti di Visual Studio per Mac, vedere la [pagina dei download](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) di Visual Studio.
+> Visual Studio 2019 per Mac è [ora disponibile.](installation.md?view=vsmac-2019) Per le versioni precedenti di Visual Studio per Mac, vedere la [pagina dei download](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) di Visual Studio.
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Downgrade da Visual Studio 2019 per Mac
 
 Per risultati ottimali, prima di effettuare il downgrade è necessario assicurarsi di avere [disinstallato](uninstall.md) Visual Studio 2019 per Mac. In caso di problemi che causano il download, informare Microsoft [segnalando il problema](report-a-problem.md).
  
-## <a name="requirements"></a>Requisiti di
+## <a name="requirements"></a>Requisiti
 
 Per iniziare a sviluppare app native multipiattaforma quando si scarica Visual Studio per Mac, è necessario eseguire alcune operazioni di installazione e configurazione di preparazione.
 
@@ -33,7 +33,7 @@ Per l'uso di iOS in Visual Studio è necessario quanto segue:
 - Xcode 9.3 o versione successiva. È in genere consigliabile usare la versione stabile più recente.
 - ID Apple. Se non si ha ancora un ID Apple, è possibile crearne uno nuovo all'indirizzo https://appleid.apple.com. L'ID Apple è necessario per installare Xcode e accedervi.
 
-## <a name="install"></a>Installazione di
+## <a name="install"></a>Installazione
 
 1. Scaricare Visual Studio per Mac da [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)
 
@@ -89,7 +89,7 @@ Per l'uso di iOS in Visual Studio è necessario quanto segue:
 
 10. Una volta completata l'installazione, è possibile iniziare a sviluppare app in Visual Studio premendo **Avvia**:
 
-    ![Aprire Visual Studio](media/installer-image11.png)
+    ![Aprire Visual Studio.](media/installer-image11.png)
 
 > [!NOTE]
 > Se si sceglie di non installare una piattaforma o uno strumento durante l'installazione originale (deselezionandolo nel passaggio 6), è necessario eseguire di nuovo il [programma di installazione](https://visualstudio.microsoft.com/vs/) se si vuole aggiungere i componenti in un secondo momento.
@@ -113,9 +113,9 @@ L'installazione di Visual Studio per Mac consente di iniziare a scrivere codice 
 
 ### <a name="android"></a>Android
 
-1. [Using the Xamarin Android SDK Manager](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs) (Uso di Xamarin Android SDK Manager)
-2. [Android SDK Emulator](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/) (Emulatore di Android SDK)
-4. [Set Up Device for Development](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/) (Configurare il dispositivo per lo sviluppo)
+1. [Using the Xamarin Android SDK Manager (Uso di Xamarin Android SDK Manager)](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+2. [Emulatore di Android SDK](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Configurare il dispositivo per lo sviluppo](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>app .NET core, app Web ASP.NET Core, sviluppo di giochi Unity
 

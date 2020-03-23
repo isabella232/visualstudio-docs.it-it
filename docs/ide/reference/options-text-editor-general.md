@@ -34,13 +34,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568412"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo Opzioni: editor di testo \> generale
+# <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo \> Opzioni: Generale dell'editor di testo
 
 Questa finestra di dialogo consente di modificare le impostazioni globali di Visual Studio Code e dell'editor di testo. Per visualizzare questa finestra di dialogo, selezionare **Opzioni** nel menu **Strumenti**, espandere la cartella **Editor di testo** e quindi selezionare **Generale**.
 
@@ -54,7 +54,7 @@ Quando questa opzione è selezionata, è possibile spostare il testo selezionand
 
 Quando questa opzione è selezionata, i caratteri di delimitazione che separano i parametri o le coppie elemento-valore, così come le parentesi graffe corrispondenti, vengono evidenziati.
 
-### <a name="track-changes"></a>Revisioni
+### <a name="track-changes"></a>Rilevare le modifiche
 
 Quando questa opzione è selezionata, nel margine di selezione viene visualizzata una linea gialla per contrassegnare il codice modificato dall'ultimo salvataggio del file. Quando si salvano le modifiche, le linee verticali diventano verdi.
 
@@ -72,7 +72,7 @@ Se selezionata, è possibile premere **CTRL** e passare il mouse su un elemento 
 
 Selezionare la casella di controllo **Apri definizione in visualizzazione rapida** per visualizzare la definizione dell'elemento selezionato in una finestra senza spostarsi dalla posizione corrente nell'editor del codice.
 
-## <a name="display"></a>Schermo
+## <a name="display"></a>Visualizzazione
 
 ### <a name="selection-margin"></a>Margine selezione
 
@@ -80,7 +80,7 @@ Quando questa opzione è selezionata, viene visualizzato un margine verticale lu
 
 |Margine di selezione attivato|Margine di selezione disattivato|
 | - | - |
-|![Schermata di HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Schermata di HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
+|![Schermata HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Schermata HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Margine indicatore
 
@@ -98,7 +98,7 @@ Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai bl
 
 - [Opzioni, Editor di testo, Tutti i linguaggi](../../ide/reference/options-text-editor-all-languages.md)
 - [Opzioni, Editor di testo, Tutti i linguaggi, Schede](../../ide/reference/options-text-editor-all-languages-tabs.md)
-- [Opzioni, Editor di testo, Estensione file](../../ide/reference/options-text-editor-file-extension.md)
+- [Opzioni, Editor di testo, Estensione di file](../../ide/reference/options-text-editor-file-extension.md)
 - [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Personalizzazione dell'editor](../how-to-change-text-case-in-the-editor.md)
-- [Uso di IntelliSense](../../ide/using-intellisense.md)
+- [Using IntelliSense](../../ide/using-intellisense.md)

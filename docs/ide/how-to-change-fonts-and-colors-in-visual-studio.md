@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 592b8bb11fa5ea9cf18cfbd5f28aad4c487bedee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588876"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedura: Modificare i tipi di carattere e i colori in Visual Studio
@@ -27,9 +27,9 @@ ms.locfileid: "75588876"
 
 ## <a name="change-the-color-theme-of-the-ide"></a>Modificare il tema colori dell'IDE
 
-1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+1. Nella barra dei menu scegliere**Opzioni** **degli strumenti** > .
 
-1. Nell'elenco di opzioni scegliere **Ambiente** > **Generale**.
+1. Nell'elenco delle opzioni scegliere **Ambiente** > **generale**.
 
 1. Nell'elenco **Tema colori** scegliere il tema predefinito **Blu**, **Scuro** o **Chiaro**.
 
@@ -41,7 +41,7 @@ ms.locfileid: "75588876"
 
 ## <a name="use-windows-high-contrast-colors"></a>Usare i colori a contrasto elevato di Windows
 
-Scegliere **ALT di sinistra**+**MAIUSC di sinistra**+**STAMP**.
+Scegliere i tasti **Sinistra Alt**+**Sinistra Maiusc**+**Stamp.**
 
 > [!WARNING]
 > Questa opzione imposta il contrasto elevato per tutte le applicazioni e l'interfaccia utente del computer corrente.
@@ -52,9 +52,9 @@ Scegliere **ALT di sinistra**+**MAIUSC di sinistra**+**STAMP**.
 
 ### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Per modificare il tipo di carattere e la dimensione di tutto il testo nell'IDE
 
-1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+1. Nella barra dei menu scegliere**Opzioni** **degli strumenti** > .
 
-1. Nell'elenco di opzioni scegliere **Ambiente** > **Tipi di carattere e colori**.
+1. Nell'elenco delle opzioni scegliere**Tipi di carattere e colori** **dell'ambiente** > .
 
 1. Nell'elenco **Mostra impostazioni per** scegliere **Tipo di carattere ambiente**.
 
@@ -68,4 +68,4 @@ Scegliere **ALT di sinistra**+**MAIUSC di sinistra**+**STAMP**.
 ## <a name="see-also"></a>Vedere anche
 
 - [Funzionalità di accessibilità di Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
-- [Procedura: modificare i tipi di carattere e i colori usati nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Procedura: modificare i tipi di carattere e i colori nell'editorHow to: Change fonts and colors in the editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

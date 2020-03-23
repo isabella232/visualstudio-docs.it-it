@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 34a63645933a173e449cf4292cc3d014cc3ec740
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775319"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedura: Limitare la strumentazione a funzioni specifiche
@@ -34,15 +34,15 @@ ms.locfileid: "74775319"
 
 1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul nome della sessione e quindi scegliere **Proprietà**.
 
-    Verrà visualizzata la finestra di dialogo **Pagine delle proprietà**.
+    Viene visualizzata la finestra di dialogo **Pagine delle proprietà**.
 
 2. Nella finestra di dialogo **Pagine delle proprietà** fare clic su **Avanzate**.
 
 3. Nella casella di testo **Opzioni di strumentazione aggiuntive** usare la sintassi seguente per digitare il nome delle funzioni da instrumentare:
 
-    **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
+    **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec` è il nome dello spazio dei nomi e della funzione in questo formato `Namespace` **::** `FunctionName`. Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS::\\** * specifica tutte le funzioni nello spazio dei nomi MyNS.
+    `FuncSpec` è il nome dello spazio dei nomi e della funzione Ha il `Namespace`formato **::**`FunctionName`. Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS::\\*** specifica tutte le funzioni nello spazio dei nomi MyNS.
 
    > [!NOTE]
    > Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare **vsinstr /DumpFuncs**
@@ -53,15 +53,15 @@ ms.locfileid: "74775319"
 
 2. Fare clic con il pulsante destro del mouse sul nome del file binario e quindi scegliere **Proprietà**.
 
-    Verrà visualizzata la finestra di dialogo **Pagine delle proprietà**.
+    Viene visualizzata la finestra di dialogo **Pagine delle proprietà**.
 
 3. Nella finestra di dialogo **Pagine delle proprietà** fare clic su **Avanzate**.
 
 4. Nella casella di testo **Opzioni di strumentazione aggiuntive** usare la sintassi seguente per digitare il nome delle funzioni da instrumentare:
 
-    **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
+    **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec` è il nome dello spazio dei nomi e della funzione in questo formato `Namespace` **::** `FunctionName`. Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS::\\** * specifica tutte le funzioni nello spazio dei nomi MyNS.
+    `FuncSpec` è il nome dello spazio dei nomi e della funzione Ha il `Namespace`formato **::**`FunctionName`. Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS::\\*** specifica tutte le funzioni nello spazio dei nomi MyNS.
 
    > [!NOTE]
    > Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare **vsinstr /DumpFuncs**
@@ -69,4 +69,4 @@ ms.locfileid: "74775319"
 ## <a name="see-also"></a>Vedere anche
 - [Controllare la raccolta dati](../profiling/controlling-data-collection.md)
 - [Procedura: Limitare la strumentazione a specifiche DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)
-- [Procedura: Specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)
+- [Procedura: specificare opzioni di strumentazione aggiuntiveHow to: Specify additional instrumentation options](../profiling/how-to-specify-additional-instrumentation-options.md)

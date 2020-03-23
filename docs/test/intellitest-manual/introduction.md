@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591598"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Panoramica di Microsoft IntelliTest
@@ -46,7 +46,7 @@ Per testare:
 
 ## <a name="the-hello-world-of-intellitest"></a>Hello World di IntelliTest
 
-IntelliTest trova gli input pertinenti al programma testato, pertanto è possibile usarlo per generare la famosa stringa **Hello World!** specificata. Si presuppone che sia stato creato un C# progetto di test basato su MSTest e che sia stato aggiunto un riferimento a **Microsoft. Pex. Framework**. Se si usa un framework di test diverso, creare una libreria di classi C# e vedere la documentazione del framework di test per informazioni sull'impostazione del progetto.
+IntelliTest trova gli input pertinenti al programma testato, pertanto è possibile usarlo per generare la famosa stringa **Hello World!** string. Si presuppone che sia stato creato un progetto di test basato su MSTest di C' e che sia stato aggiunto un riferimento a **Microsoft.Pex.Framework**. Se si usa un framework di test diverso, creare una libreria di classi C# e vedere la documentazione del framework di test per informazioni sull'impostazione del progetto.
 
 Nell'esempio seguente vengono creati due vincoli sul parametro denominato **value**, in modo che IntelliTest generi la stringa necessaria:
 
@@ -71,7 +71,7 @@ Dopo la compilazione e l'esecuzione IntelliTest genera un set di test come il se
 
 1. ""
 2. "\0\0\0\0\0"
-3. "Hello"
+3. "Salve"
 4. "\0\0\0\0\0\0"
 5. "Hello\0"
 6. "Hello\0\0"
@@ -79,7 +79,7 @@ Dopo la compilazione e l'esecuzione IntelliTest genera un set di test come il se
 8. "Hello World!"
 
 > [!NOTE]
-> Per i problemi di compilazione, provare a sostituire i riferimenti Microsoft. VisualStudio. TestPlatform. TestFramework e Microsoft. VisualStudio. TestPlatform. TestFramework. Extensions con un riferimento a Microsoft. VisualStudio. QualityTools. UnitTestFramework.
+> Per problemi di compilazione, provare a sostituire i riferimenti Microsoft.VisualStudio.TestPlatform.TestFramework e Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions con un riferimento a Microsoft.VisualStudio.QualityTools.UnitTestFramework.
 
 Leggere [Generare unit test con IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) per capire dove vengono salvati i test generati. Il codice di test generato deve includere un test come il seguente:
 
@@ -103,7 +103,7 @@ In questa sezione vengono descritte le limitazioni di IntelliTest:
 * [Concorrenza](#concurrency)
 * [Codice .NET nativo](#native-code)
 * [Piattaforma](#platform)
-* [Linguaggio](#language)
+* [Lingua](#language)
 * [Ragionamento simbolico](#symbolic-reasoning)
 * [Analisi dello stack](#incorrect-stack-traces)
 
@@ -118,13 +118,13 @@ Anche i risultati di chiamate a codice non gestito o non instrumentato sono cons
 
 Il programma è considerato non deterministico anche quando i valori provenienti da origini esterne cambiano alla successiva esecuzione del programma stesso. In questi casi IntelliTest non mantiene il controllo dell'esecuzione del programma e la ricerca diventa inefficiente.
 
-Tali casi non sono sempre evidenti. Considerare gli esempi seguenti:
+Tali casi non sono sempre evidenti. Si considerino gli esempi seguenti:
 
 * Il risultato del metodo **GetHashCode()** è specificato da codice non gestito e non è prevedibile.
 * La classe **System.Random** usa l'ora di sistema corrente per specificare valori realmente casuali.
 * La classe **System.DateTime** specifica l'ora corrente, che non è sotto il controllo di IntelliTest.
 
-### <a name="concurrency"></a>concorrenza
+### <a name="concurrency"></a>Concorrenza
 
 IntelliTest non gestisce programmi con multithreading.
 
@@ -135,11 +135,11 @@ Anche nel caso del codice .NET IntelliTest può analizzare solo il codice che ha
 
 Come soluzione alternativa è consigliabile configurare una modalità di test in cui tali metodi risiedono in tipi in un assembly dinamico. Tuttavia, anche se alcuni metodi non sono instrumentati, IntelliTest prova a esaminare la massima quantità possibile di codice instrumentato.
 
-### <a name="platform"></a>Platform
+### <a name="platform"></a>Piattaforma
 
 IntelliTest è supportato solo su .NETFramework X86 a 32 bit.
 
-### <a name="language"></a>Lingua:
+### <a name="language"></a>Linguaggio
 
 In linea di principio IntelliTest può analizzare programmi .NET arbitrari, scritti in qualsiasi linguaggio .NET. Tuttavia in Visual Studio IntelliTest supporta solo C#.
 
@@ -151,7 +151,7 @@ IntelliTest usa un [risolutore di vincoli](input-generation.md#constraint-solver
 
 Dato che IntelliTest rileva e "rigenera" eccezioni in ogni metodo instrumentato, i numeri di riga nelle analisi dello stack non saranno corretti. Questa è una limitazione intrinseca dell'istruzione "rethrow".
 
-## <a name="further-reading"></a>Ulteriori informazioni
+## <a name="further-reading"></a>Altre letture
 
 * [Post di blog introduttivo](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/).
 * [Generare unit test per il codice con IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

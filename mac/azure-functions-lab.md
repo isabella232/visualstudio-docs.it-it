@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75398168"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione alle funzioni di Azure
@@ -24,10 +24,10 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 > * Integrare risorse di archiviazione Web e di Azure
 > * Gestire un flusso di lavoro che interessa più funzioni di Azure
 
-## <a name="requirements"></a>Requisiti di
+## <a name="requirements"></a>Requisiti
 
 - Visual Studio per Mac 7.5 o versione successiva.
-- Sottoscrizione di Azure (disponibile gratuitamente in [https://azure.com/free](https://azure.com/free?ref=visualstudio)).
+- Una sottoscrizione di Azure [https://azure.com/free](https://azure.com/free?ref=visualstudio)(disponibile gratuitamente da ).
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>Esercizio 1: Creazione di un progetto di Funzioni di Azure
 
@@ -35,7 +35,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 2. Selezionare **File > Nuova soluzione**.
 
-3. Nella categoria **Cloud > Generale** selezionare il modello **Funzioni di Azure**. Si userà C# per creare una libreria di classi .NET che ospita le funzioni di Azure. Scegliere **Avanti**.
+3. Nella categoria **Cloud > Generale** selezionare il modello **Funzioni di Azure**. Si userà C# per creare una libreria di classi .NET che ospita le funzioni di Azure. Fare clic su **Avanti**.
 
     ![Selezione del modello Funzioni di Azure](media/azure-functions-lab-image1.png)
 
@@ -54,7 +54,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Esercizio 2: Creazione di un account di archiviazione di Azure
 
-1. Accedere al proprio account Azure in [https://portal.azure.com](https://portal.azure.com).
+1. Accedere all'account Azure [https://portal.azure.com](https://portal.azure.com)all'indirizzo .
 
 1. Nella sezione **Preferiti** sul lato sinistro dello schermo, selezionare **Account di archiviazione**:
 
@@ -68,7 +68,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![Dettagli del nuovo account di archiviazione](media/azure-functions-lab-image6.png)
 
-1. Scegliere **Crea**. La creazione dell'account di archiviazione può richiedere alcuni minuti. Al completamento si riceve una notifica.
+1. Fare clic su **Crea**. La creazione dell'account di archiviazione può richiedere alcuni minuti. Al completamento si riceve una notifica.
 
     ![Notifica di distribuzione riuscita](media/azure-functions-lab-image7.png)
 
@@ -88,7 +88,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Esempio 3: Creazione e debug di una funzione di Azure
 
-1. Ora è possibile iniziare ad aggiungere codice. Quando si usa una libreria di classi .NET le funzioni di Azure vengono aggiunte come metodi statici. Nel **riquadro della soluzione** fare clic con il pulsante destro del mouse sul nodo di progetto **AzureFunctions** e selezionare **Aggiungi > Aggiungi funzione**:
+1. Ora è possibile iniziare ad aggiungere codice. Quando si usa una libreria di classi .NET le funzioni di Azure vengono aggiunte come metodi statici. In **Riquadro della soluzione**fare clic con il pulsante destro del mouse sul nodo del progetto **AzureFunctions** e scegliere **Aggiungi > Aggiungi funzione:**
 
     ![Opzione Aggiungi funzione](media/azure-functions-lab-image11.png)
 
@@ -126,11 +126,11 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![Nuovo metodo run con l'attributo FunctionName evidenziato](media/azure-functions-lab-image13.png)
 
-1. Successivamente, il metodo è contrassegnato come metodo **public static**, impostazione necessaria. Si noterà anche che il valore restituito è di **tipo int**. Se non diversamente specificato mediante gli attributi del metodo, il valore restituito non void di una funzione di Azure viene restituito al client come testo. Per impostazione predefinita viene restituito come **XML**, ma può essere modificato in **JSON**. Si eseguirà questa operazione più avanti nell'esercitazione.
+1. Successivamente, il metodo è contrassegnato come metodo **public static**, impostazione necessaria. Si noterà inoltre che il valore restituito è un **int**. Se non diversamente specificato usando gli attributi del metodo, qualsiasi valore restituito non void di una funzione di Azure viene restituito al client come testo. Per impostazione predefinita viene restituito come **XML**, ma può essere modificato in **JSON**. Si eseguirà questa operazione più avanti nell'esercitazione.
 
     ![Nuovo metodo run con l'inizializzazione del metodo evidenziata](media/azure-functions-lab-image14.png)
 
-1. Il primo parametro è contrassegnato con l'attributo **HttpTrigger**, che indica che il metodo viene chiamato da una richiesta HTTP. L'attributo specifica anche il livello di autorizzazione del metodo, nonché i verbi supportati (in questo caso solo **"GET"** ). È anche possibile definire una **Route** che sostituisce il percorso del metodo e consente di estrarre automaticamente variabili dal percorso. Dato che in questo caso l'impostazione **Route** è null, il percorso di questo metodo assume l'impostazione predefinita **/api/Add**.
+1. Il primo parametro è contrassegnato con l'attributo **HttpTrigger**, che indica che il metodo viene chiamato da una richiesta HTTP. L'attributo specifica anche il livello di autorizzazione del metodo, nonché i verbi supportati (in questo caso solo **"GET"**). È anche possibile definire una **Route** che sostituisce il percorso del metodo e consente di estrarre automaticamente variabili dal percorso. Dato che in questo caso l'impostazione **Route** è null, il percorso di questo metodo assume l'impostazione predefinita **/api/Add**.
 
     ![Nuovo metodo run con il parametro evidenziato](media/azure-functions-lab-image15.png)
 
@@ -162,7 +162,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 1. Rimuovere il punto di interruzione con lo stesso metodo usato in precedenza per aggiungerlo (fare clic sul margine o selezionare la riga e premere **F9**).
 
-1. Premere **F5** per continuare con l'esecuzione.
+1. Premere **F5** per continuare l'esecuzione.
 
 1. Nel browser viene visualizzato il risultato XML del metodo. Come previsto, l'operazione di addizione hardcoded produce una somma plausibile. Se in Safari viene visualizzato solo "3" selezionare **Safari > Preferenze > Avanzate** e selezionare la casella di controllo "**Mostra menu Sviluppo nella barra dei menu**", quindi ricaricare la pagina.
 
@@ -225,7 +225,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. Alla fine del primo binding (dopo la riga **"name": "req"** ) aggiungere le proprietà seguenti. Non dimenticare di includere una virgola nella riga precedente. Questa proprietà sostituisce la radice predefinita e ora estrae i parametri **int** dal percorso e li inserisce nei parametri del metodo denominati **x** e **y**.
+1. Alla fine del primo binding (dopo la riga **"name": "req"**) aggiungere le proprietà seguenti. Non dimenticare di includere una virgola nella riga precedente. Questa proprietà sostituisce la radice predefinita e ora estrae i parametri **int** dal percorso e li inserisce nei parametri del metodo denominati **x** e **y**.
 
     ```json
     "direction": "in",
@@ -242,7 +242,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
     }
     ```
 
-1. Aggiornare anche la proprietà **entryPoint** nella parte inferiore del file in modo che usi un metodo chiamato **"Add2"** , come indicato di seguito. Lo scopo è dimostrare che il percorso **api/Adder...** può eseguire il mapping a un metodo appropriato con qualsiasi nome (in questo caso **Add2**).
+1. Aggiornare anche la proprietà **entryPoint** nella parte inferiore del file in modo che usi un metodo chiamato **"Add2"**, come indicato di seguito. Lo scopo è dimostrare che il percorso **api/Adder...** può eseguire il mapping a un metodo appropriato con qualsiasi nome (in questo caso **Add2**).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
@@ -298,7 +298,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![URL per le funzioni Http](media/azure-functions-lab-image31.png)
 
-1. Tornare alla finestra del browser e passare a **http://localhost:7071/api/Adder/3/5** .
+1. Tornare alla finestra del **http://localhost:7071/api/Adder/3/5**browser e passare a .
 
 1. Ora il metodo funziona di nuovo ed estrae parametri dal percorso, quindi produce una somma.
 
@@ -347,7 +347,7 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
 
 1. Premere **F5** per compilare ed eseguire il progetto.
 
-1. Nella scheda del browser, passare a **http://localhost:7071/api/Process/4/6** . Questa operazione inserisce un altro messaggio nella coda, che a sua volta aggiungerà un'altra riga alla tabella in un secondo momento.
+1. Nella scheda del browser, passare a **http://localhost:7071/api/Process/4/6**. Questa operazione inserisce un altro messaggio nella coda, che a sua volta aggiungerà un'altra riga alla tabella in un secondo momento.
 
 1. Tornare a **Terminal** e verificare la richiesta in ingresso per **4 + 6**.
 
@@ -380,11 +380,11 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
 
 1. Premere **F5** per compilare ed eseguire il progetto.
 
-1. Nella scheda del browser, aggiornare l'URL in **http://localhost:7071/api/Process/4/6** . Dato che la riga della tabella per questo record esiste, viene restituita immediatamente e senza errori. Poiché non esiste alcun output HTTP, è possibile visualizzare l'output nel Terminale.
+1. Nella scheda del browser, **http://localhost:7071/api/Process/4/6**aggiornare l'URL in formato . Dato che la riga della tabella per questo record esiste, viene restituita immediatamente e senza errori. Poiché non esiste alcun output HTTP, è possibile visualizzare l'output nel Terminale.
 
     ![Output nel Terminale indicante che la riga della tabella esiste già](media/azure-functions-lab-image33.png)
 
-1. Aggiornare l'URL in modo da riflettere una combinazione non ancora sottoposta a test, ad esempio **http://localhost:7071/api/Process/5/7** . Si noti il messaggio nel Terminale, indicante che la riga della tabella non è stata trovata (come previsto).
+1. Aggiornare l'URL in modo che rifletta una combinazione non ancora testata, ad **http://localhost:7071/api/Process/5/7**esempio . Si noti il messaggio nel Terminale, indicante che la riga della tabella non è stata trovata (come previsto).
 
     ![Output nel Terminale che visualizza il nuovo processo](media/azure-functions-lab-image34.png)
 
@@ -412,6 +412,6 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
     ![](https://user-images.githubusercontent.com/3944468/29033725-be9d5a5e-7b4a-11e7-8b55-df0a200b6320.png)
 -->
 
-## <a name="summary"></a>Riepilogo
+## <a name="summary"></a>Summary
 
 In questa esercitazione si è appreso come iniziare a creare le funzioni di Azure tramite Visual Studio per Mac.

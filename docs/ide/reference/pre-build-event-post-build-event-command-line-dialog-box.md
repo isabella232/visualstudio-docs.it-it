@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567918"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
@@ -48,7 +48,7 @@ ms.locfileid: "75567918"
 > [!NOTE]
 > Gli eventi di pre-compilazione non vengono eseguiti se il progetto è aggiornato e non viene attivata alcuna compilazione.
 
-## <a name="ui-element-list"></a>Elenco di elementi dell'interfaccia utente
+## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente
 
 **Casella di modifica della riga di comando**
 
@@ -65,7 +65,7 @@ Espande la casella di modifica per visualizzare un elenco di macro che è possib
 
 Elenca le macro disponibili e il relativo valore. Per la descrizione di ogni macro, vedere la sezione Macro più avanti. È possibile selezionare una sola macro per volta da inserire nella casella di modifica della riga di comando.
 
-**Inserisci**
+**Insert**
 
 Inserisce nella casella di modifica della riga di comando la macro selezionata nella tabella delle macro.
 
@@ -98,6 +98,6 @@ Inserisce nella casella di modifica della riga di comando la macro selezionata n
 ## <a name="see-also"></a>Vedere anche
 
 - [Specifica di eventi di compilazione personalizzati in Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
-- [Pagina Eventi di compilazione, Creazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Procedura: Specificare eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Pagina Eventi di compilazione, Progettazione progetti (c ')](../../ide/reference/build-events-page-project-designer-csharp.md)
+- [Procedura: specificare eventi di compilazione (Visual Basic)How to: Specify Build Events (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Procedura: specificare gli eventi di compilazione (C](../../ide/how-to-specify-build-events-csharp.md)

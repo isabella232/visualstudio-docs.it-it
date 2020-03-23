@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778115"
 ---
 # <a name="timer"></a>Timer
-L'opzione *Timer* di **VSPerfCmd.exe** imposta l'evento di profilatura campionato su cicli del clock del processore e, facoltativamente, modifica il numero di cicli in un intervallo di campionamento dal valore predefinito di 10.000.000. In un processore da 1 GH (un gigahertz), un valore di 10.000.000 cicli di clock è pari a circa 100 campioni al secondo. Il numero minimo di cicli che è possibile specificare è 50.000.
+L'opzione *Timer di * **VSPerfCmd.exe** imposta l'evento di profilatura campionato su cicli del clock del processore e, facoltativamente, modifica il numero di cicli in un intervallo di campionamento dal valore predefinito di 10.000.000. In un processore da 1 GH (un gigahertz), un valore di 10.000.000 cicli di clock è pari a circa 100 campioni al secondo. Il numero minimo di cicli che è possibile specificare è 50.000.
 
  L'opzione **Timer** può essere usata solo quando si usa il metodo di profilatura del campionamento e può essere usata solo in una riga di comando che include anche l'opzione **Launch** o **Attach**.
 
@@ -37,20 +37,20 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **Timer** può essere specificata solo in una riga di comando che include una delle opzioni seguenti.
 
- **Launch:** `AppName` avvia il profiler e l'applicazione specificata da `AppName`.
+ **Avvia:** `AppName` avvia il profiler e `AppName`l'applicazione specificata da .
 
  **Connetti:** `PID` connette il profiler al processo specificato dall'ID processo (`PID`).
 
 ## <a name="invalid-options"></a>Opzioni non valide
  Le opzioni seguenti non possono essere specificate nella stessa riga di comando che include **Timer**.
 
- **PF**[ **:** `Events`] Imposta l'evento di campionamento sugli errori di pagina e, facoltativamente, imposta l'intervallo di campionamento su `Events`. L'intervallo PF predefinito è 10.
+ **PF**[**:**`Events`] Imposta l'evento di campionamento su `Events`errori di pagina e, facoltativamente, imposta l'intervallo di campionamento su . L'intervallo PF predefinito è 10.
 
- **Sys**[ **:** `Events`] Imposta l'evento di campionamento su chiamate del sistema operativo e, facoltativamente, imposta l'intervallo di campionamento su `Events`. L'intervallo Sys predefinito è 10.
+ **Sys**[**:**`Events`] Imposta l'evento di campionamento su `Events`chiamate del sistema operativo e, facoltativamente, imposta l'intervallo di campionamento su . L'intervallo Sys predefinito è 10.
 
- **Counter:** [ **:** `Name,Reload,FriendlyName`] Imposta l'evento di campionamento sul contatore delle prestazioni della CPU specificato da `Name` e imposta l'intervallo di campionamento su `Reload`.
+ **Contatore**[**:**`Name,Reload,FriendlyName`] Imposta l'evento `Name` di campionamento sul `Reload`contatore delle prestazioni della CPU specificato da e imposta l'intervallo di campionamento su .
 
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}] Raccoglie dati di memoria .NET. Per impostazione predefinita, (**Allocation**), i dati vengono raccolti in corrispondenza di ogni evento di allocazione di memoria. Quando si specifica il parametro **Lifetime**, i dati vengono raccolti anche in corrispondenza di ogni evento di Garbage Collection.
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}] Raccoglie dati di memoria .NET. Per impostazione predefinita (**Allocazione**), i dati vengono raccolti a ogni evento di allocazione di memoria. Quando viene specificato il parametro **Lifetime,** i dati vengono raccolti anche a ogni evento di Garbage Collection.When the Lifetime parameter is specified, data is also collected at each garbage collection event.
 
 ## <a name="example"></a>Esempio
  Questo esempio illustra come impostare l'intervallo di campionamento del profiler su 1.000.000 cicli del processore.

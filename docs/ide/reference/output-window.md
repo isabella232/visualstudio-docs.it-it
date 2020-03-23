@@ -1,5 +1,5 @@
 ---
-title: Output (finestra)
+title: Finestra di output
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567983"
 ---
-# <a name="output-window"></a>finestra Output
+# <a name="output-window"></a>Finestra Output
 
 Nella finestra **Output** vengono visualizzati messaggi di stato per diverse funzionalità dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment). Per aprire la finestra **Output**, nella barra dei menu scegliere **Visualizza** > **Output** oppure premere **CTRL**+**ALT**+**O**.
 
-## <a name="toolbar"></a>ToolBar
+## <a name="toolbar"></a>Barra degli strumenti
 
 I controlli seguenti vengono visualizzati nella barra degli strumenti della finestra **Output**.
 
@@ -55,7 +55,7 @@ Cancella tutto il testo dal riquadro **Output**.
 
 Attiva e disattiva la funzione A capo automatico nel riquadro **Output**. Quando la funzione A capo automatico è attiva, il testo contenuto in voci particolarmente lunghe che si estende oltre l'area di visualizzazione verrà visualizzato nella riga successiva.
 
-## <a name="output-pane"></a>Riquadro Output
+## <a name="output-pane"></a>Riquadro di output
 
 Nel riquadro **Output** selezionato nell'elenco **Mostra output di** viene visualizzato l'output dell'origine indicata.
 
@@ -71,12 +71,12 @@ In C++ è possibile creare istruzioni ed eventi di compilazione personalizzati i
 
 ## <a name="scroll-behavior"></a>Comportamento dello scorrimento
 
-Se si usa lo scorrimento automatico nella finestra **Output** e quindi si naviga usando il mouse o i tasti di direzione, lo scorrimento automatico viene arrestato. Per riprendere lo scorrimento automatico, **premere** +**CTRL**FINE.
+Se si usa lo scorrimento automatico nella finestra **Output** e quindi si naviga usando il mouse o i tasti di direzione, lo scorrimento automatico viene arrestato. Per riprendere lo scorrimento automatico, premere **CTRL**+**Fine**.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Messaggi diagnostici nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md)
+- [Messaggi di diagnostica nella finestra Output](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Procedura: Controllare la finestra di output](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
-- [Compilare](../../ide/compiling-and-building-in-visual-studio.md)
+- [Compilazione e creazione](../../ide/compiling-and-building-in-visual-studio.md)
 - [Informazioni sulle configurazioni della build](../../ide/understanding-build-configurations.md)
 - [Panoramica della libreria di classi](/dotnet/standard/class-library-overview)

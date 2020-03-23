@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: de399bf493e328e583bdd2765822ca3a66144698
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779636"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Raccogliere le statistiche delle applicazioni autonome tramite la riga di comando del profiler
@@ -29,9 +29,9 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche
 
 |Attività|Contenuti correlati|
 |----------|---------------------|
-|**Avviare un'applicazione tramite profilatura**|-   [Procedura: Avviare un'applicazione autonoma e raccogliere statistiche dell'applicazione](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
-|**Connettere il profiler a un'applicazione .NET Framework in esecuzione**|-   [Procedura: Connettere il profiler a un'applicazione .NET Framework e raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|
-|**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [Procedura: connettere il profiler a un'applicazione nativa e raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|
+|**Avviare un'applicazione tramite profilatura**|-   [Procedura: avviare un'applicazione autonoma e raccogliere statistiche sull'applicazioneHow to: Launch a stand-alone application and collect application statistics](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
+|**Connettere il profiler a un'applicazione .NET Framework in esecuzione**|-   [Procedura: collegare il profiler a un'applicazione .NET Framework e raccogliere statistiche sull'applicazione](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|
+|**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [Procedura: collegare il profiler a un'applicazione nativa e raccogliere statistiche dell'applicazioneHow to: Attach the profiler to a native application and collect application statistics](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|
 |**Aggiungere dati di interazione tra livelli**|-   [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Attività correlate
@@ -42,14 +42,14 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche
 |----------|---------------------|
 |**Instrumentare un'applicazione**|-   [Raccogliere dati di intervallo dettagliati tramite la strumentazione](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Raccolta di dati di allocazione di memoria .NET e garbage collection**|-   [Raccogliere dati di memoria di .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
-|**Raccogliere dati sui conflitti di risorse e sull'esecuzione di thread**|-   [Raccogliere dati di concorrenza](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+|**Raccogliere dati sui conflitti di risorse e sull'esecuzione di thread**|-   [Raccogliere dati di concorrenzaCollect concurrency data](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 
 ### <a name="profile-by-using-the-sampling-method"></a>Eseguire la profilatura tramite il metodo di campionamento
 
 |Attività|Contenuti correlati|
 |----------|---------------------|
 |**Sottoporre a profilatura applicazioni Web ASP.NET**|-   [Raccogliere statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
-|**Sottoporre a profilatura i servizi**|-   [Raccogliere statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Descrive come raccogliere statistiche sulle prestazioni da servizi Windows tramite il metodo di campionamento.|
+|**Sottoporre a profilatura i servizi**|-   [Raccogliere le statistiche dell'applicazione utilizzando](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)il campionamento . Descrive come raccogliere statistiche sulle prestazioni da servizi Windows tramite il metodo di campionamento.|
 
 ### <a name="analyze-sampling-data-views-and-reports"></a>Analizzare visualizzazioni dati e report di campionamento
 - [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)

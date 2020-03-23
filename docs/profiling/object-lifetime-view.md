@@ -18,14 +18,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772624"
 ---
 # <a name="object-lifetime-view"></a>Visualizzazione Durata oggetti
-La visualizzazione Durata oggetti è disponibile quando viene selezionata la casella di controllo **Raccogliere anche le informazioni sulla durata dell'oggetto .NET** nelle pagine della proprietà **Sessione prestazioni**.
+La visualizzazione Durata oggetti è disponibile quando anche raccogliere i dati sulla durata degli **oggetti .NET** viene controllato nelle pagine delle proprietà **sessione di prestazioni.**
 
  Il Garbage Collector di .NET Framework gestisce l'allocazione e il rilascio di memoria per l'applicazione. Per ottimizzare le prestazioni del Garbage Collector, l'heap gestito è diviso in tre generazioni: 0, 1 e 2. Il Garbage Collector del runtime archivia i nuovi oggetti nella generazione 0. Gli oggetti non raccolti vengono promossi e archiviati nelle generazioni 1 e 2.
 
@@ -35,13 +35,13 @@ La visualizzazione Durata oggetti è disponibile quando viene selezionata la cas
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome di classe**|Nome della classe del tipo allocato.|
-|**ID processo**|ID di processo dell'esecuzione della profilatura.|
-|**Nome processo**|nome del processo.|
-|**Nome modulo**|Nome del modulo che contiene la funzione.|
+|**Nome della classe**|Nome della classe del tipo allocato.|
+|**ID di processo**|ID di processo dell'esecuzione della profilatura.|
+|**Process Name**|Nome del processo.|
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 
-## <a name="instance-data"></a>Dati per le istanze
+## <a name="instance-data"></a>Dati dell'istanza
  Questi dati indicano il numero di oggetti del tipo creati durante l'esecuzione della profilatura e la generazione in cui gli oggetti sono stati deallocati dal Garbage Collector.
 
 |Colonna|Descrizione|

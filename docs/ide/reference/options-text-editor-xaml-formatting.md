@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568243"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opzioni, Editor di testo, XAML, Formattazione
@@ -62,7 +62,7 @@ La formattazione automatica si verifica quando si finisce di digitare un tag di 
 
 La formattazione automatica si verifica quando si finisce di digitare un tag di inizio.
 
-**All'inserimento degli Appunti**
+**In cui incollare dagli Appunti**
 
 La formattazione automatica si verifica quando si incolla XAML dagli Appunti nella visualizzazione XAML.
 

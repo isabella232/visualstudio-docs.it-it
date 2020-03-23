@@ -17,23 +17,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b3f47f41466d8eb7ddf0a4700428b6e28500b61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596307"
 ---
 # <a name="wpf-msbuild-reference"></a>Informazioni di riferimento su MSBuild WPF
 
 Windows Presentation Foundation (WPF) estende Microsoft Build Engine (MSBuild) con supporto aggiuntivo per la compilazione, documentato in questa sezione.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
-[File WPF con estensione targets](../msbuild/wpf-dot-targets-files.md)
+[File con estensione targets WPFWPF .targets files](../msbuild/wpf-dot-targets-files.md)
 
 Descrive i file WPF con estensione targets.
 
-[Informazioni di riferimento sulle attività MSBuild WPF](../msbuild/wpf-msbuild-task-reference.md)
+[Informazioni di riferimento sulle attività MSBuild WPFWPF MSBuild task reference](../msbuild/wpf-msbuild-task-reference.md)
 
 Elenca le attività di compilazione di WPF disponibili.
 

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778063"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Usare le regole per le prestazioni per analizzare dati
@@ -22,12 +22,12 @@ Gli avvisi di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](..
 > [!NOTE]
 > Gli avvisi di prestazioni del profiler vengono generati dall'analisi dinamica dell'esecuzione del programma e sono indipendenti dagli avvisi di Analisi codice. Analisi codice può inoltre generare avvisi di prestazioni per il codice gestito in base all'analisi statica del codice sorgente. Per altre informazioni, vedere [Analisi della qualità del codice gestito](../code-quality/code-analysis-for-managed-code-overview.md) e [Avvisi di prestazioni](../code-quality/performance-warnings.md).
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 - [Procedura: Visualizzare gli avvisi di prestazioni](../profiling/how-to-view-performance-warnings.md)
 
  Fornisce informazioni su come aprire la finestra **Elenco errori** per visualizzare gli avvisi di prestazioni del profiler.
 
-- [Procedura: Configurare le regole di prestazioni](../profiling/how-to-configure-performance-rules.md)
+- [Procedura: configurare le regole di prestazioniHow to: Configure performance rules](../profiling/how-to-configure-performance-rules.md)
 
  Fornisce informazioni su come attivare o disattivare i singoli avvisi di prestazioni.
 

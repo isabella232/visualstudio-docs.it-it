@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778245"
 ---
-# <a name="status"></a>Status
-L'opzione *Status* di **VSPerfCmd.exe** visualizza informazioni sullo stato del profiler e di eventuali processi in corso di profilatura.
+# <a name="status"></a>Stato
+L'opzione *Status di * **VSPerfCmd.exe** visualizza informazioni sullo stato del profiler e di eventuali processi in corso di profilatura.
 
- L'opzione **Status** deve essere l'unica opzione specificata nella riga di comando. Prima di poter visualizzare qualsiasi stato è necessario inizializzare il profiler con l'opzione *Start* di **VSPerfCmd.exe**.
+ L'opzione **Status** deve essere l'unica opzione specificata nella riga di comando. Prima di poter visualizzare qualsiasi stato è necessario inizializzare il profiler con l'opzione *Start di * **VSPerfCmd.exe**.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -28,9 +28,9 @@ VSPerfCmd.exe /Status
 ```
 
 #### <a name="parameters"></a>Parametri
- nessuna
+ nessuno
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  L'opzione **Status** consente di visualizzare le informazioni sullo stato seguenti per il profiler.
 
  **Nome file di output** Percorso e nome del file di dati del profiler corrente.
@@ -47,7 +47,7 @@ VSPerfCmd.exe /Status
 
  L'opzione **Status** visualizza le informazioni sullo stato seguenti per ogni processo in corso di profilatura.
 
- **Processo**  Nome del processo di cui è stata eseguita la profilatura.
+ **Processo ** Nome del processo di cui è stata eseguita la profilatura.
 
  **ID processo** Identificatore di sistema del processo.
 

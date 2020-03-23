@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772202"
 ---
 # <a name="performance-session-properties"></a>Proprietà della sessione di prestazioni
@@ -35,19 +35,19 @@ Queste impostazioni consentono di selezionare il metodo di profilatura, aggiunge
 
 Per altre informazioni, vedere:
 
-[Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)
+[Procedura: scegliere i metodi di raccoltaHow to: Choose collection methods](../profiling/how-to-choose-collection-methods.md)
 
 [Raccogliere dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
-- [Procedura: Impostare le opzioni relative ai nomi file dei dati di profilatura](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Procedura: impostare le opzioni relative al nome del file di dati sulle prestazioniHow to: Set performance data file name options](../profiling/how-to-set-performance-data-file-name-options.md)
 
-## <a name="launch"></a>Avvio
+## <a name="launch"></a>Launch
 
 Queste impostazioni consentono di effettuare una selezione da un elenco di file binari e specificare il relativo ordine di avvio.
 
-Per altre informazioni, vedere[Procedura: Specificare l'inizio del file binario](../profiling/how-to-specify-the-binary-to-start.md)
+Per altre informazioni, vedere [procedura: specificare il file binario da avviareFor](../profiling/how-to-specify-the-binary-to-start.md) more information, see How to: Specify the binary to start
 
-## <a name="sampling"></a>Campionamento
+## <a name="sampling"></a>campionamento
 
 Queste impostazioni consentono di selezionare l'evento e l'intervallo di campionamento quando si usa il campionamento come metodo di profilatura. Un evento di campionamento viene usato per raccogliere i dati di profilatura secondo l'intervallo specificato. Ad esempio, se l'evento di campionamento è costituito dai cicli di clock e l'intervallo di campionamento è impostato su 10.000.000, i dati di profilatura verranno raccolti ogni 10 milioni di cicli di clock. Sono disponibili i quattro tipi di eventi di campionamento seguenti:
 
@@ -57,12 +57,12 @@ Queste impostazioni consentono di selezionare l'evento e l'intervallo di campion
 - Contatori di prestazioni per i problemi di prestazioni ridotte
 - È possibile specificare eventi di campionamento aggiuntivi in base ai contatori delle prestazioni disponibili.
 
-Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)
+Per altre informazioni, vedere Procedura: Scegliere gli eventi di [campionamentoFor more information,](../profiling/how-to-choose-sampling-events.md) see How to: Choose sampling events
 
-## <a name="binary"></a>Binario
-Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Ad esempio, se si esegue la profilatura di *My.DLL* e si sceglie di non rilocare il file binario instrumentato, viene creata una copia di backup di *My.DLL* denominata *My.Orig.DLL*. *My.DLL* viene quindi modificato con l'inserimento di probe per la raccolta dei dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.
+## <a name="binary"></a>Binary
+Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Ad esempio, se si profila *My.DLL* e si sceglie di non spostare il file binario instrumentato, viene creata una copia di backup di *My.DLL* denominata *My.Orig.DLL.* Successivamente, *My.DLL* viene modificato inserendo probe per raccogliere dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.
 
-Per altre informazioni, vedere[Procedura: Specificare l'inizio del file binario](../profiling/how-to-specify-the-binary-to-start.md)
+Per altre informazioni, vedere [procedura: specificare il file binario da avviareFor](../profiling/how-to-specify-the-binary-to-start.md) more information, see How to: Specify the binary to start
 
 ## <a name="tier-interactions"></a>Interazioni tra livelli
 
@@ -74,7 +74,7 @@ Queste impostazioni consentono di raccogliere i dati sulle prestazioni per il co
 
 Per altre informazioni, vedere:
 
-[Procedura: Profilare codice JavaScript nelle pagine Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
+[Procedura: profilare il codice JavaScript nelle pagine WebHow to: Profile JavaScript code in web pages](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
 [Procedura: Specificare comandi pre- e post-strumentazione](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
@@ -84,21 +84,21 @@ Queste impostazioni consentono di raccogliere i dati sui contatori delle prestaz
 
 Per altre informazioni, vedere [Procedura: Raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md)
 
-## <a name="windows-events"></a>Eventi di Windows
+## <a name="windows-events"></a>Eventi Windows
 
 Durante la profilatura, è possibile raccogliere i dati dai provider di traccia eventi. I dati possono essere visualizzati usando l'opzione`/calltrace` dello strumento da riga di comando *VSPerfReport.exe*. Per altre informazioni su Event Tracing for Windows (ETW), vedere [About Event Tracing](/windows/win32/etw/about-event-tracing) (Informazioni su Event Tracing).
 
 Per altre informazioni, vedere:
 
-[Procedura: Raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[Procedura: raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
-[VSPerfReport](../profiling/vsperfreport.md)
+[VSPerfReport](../profiling/vsperfreport.md).
 
 ## <a name="windows-counters"></a>Contatori Windows
 
 Questa opzione consente di raccogliere i dati dai contatori di Windows Performance Monitor. Per raccogliere questi dati, selezionare la casella di controllo **Raccogliere contatori Windows**. L'intervallo di raccolta può essere impostato nella casella **Intervallo di raccolta**. Potrebbero essere inoltre disponibili le opzioni **Categoria contatori** e **Istanza**. Sono disponibili alcuni contatori predefiniti di Windows Performance Monitor.
 
- Per altre informazioni, vedere [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md).
+ Per ulteriori informazioni, vedere [Procedura: raccogliere dati sui contatori](../profiling/how-to-collect-windows-counter-data.md)di Windows .
 
 ## <a name="advanced"></a>Avanzate
 
@@ -106,12 +106,12 @@ Queste impostazioni consentono di aggiungere opzioni al processo di strumentazio
 
 Per altre informazioni, vedere:
 
-[Procedura: Specificare il Runtime di .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[Procedura: Specificare il runtime di .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[Procedura: Specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)
+[Procedura: specificare opzioni di strumentazione aggiuntiveHow to: Specify additional instrumentation options](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 ## <a name="see-also"></a>Vedere anche
 
 [Panoramiche](../profiling/overviews-performance-tools.md)
-[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-[Controllare la raccolta dati](../profiling/controlling-data-collection.md)
+[Configurare le sessioni](../profiling/configuring-performance-sessions.md)
+di prestazioni[Controllare la raccolta dei dati](../profiling/controlling-data-collection.md)

@@ -6,15 +6,15 @@ ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75398273"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Creazione di applicazioni ASP.NET Core in Visual Studio per Mac
 
-ASP.NET Core è un framework open source multipiattaforma per la creazione di applicazioni moderne, basate sul cloud e connesse a Internet, ad esempio app e servizi Web, app IoT e back-end per dispositivi mobili. Le app ASP.NET Core possono essere eseguite in [.NET Core](https://www.microsoft.com/net/core/platform) o nei runtime di .NET Framework. È stato progettato per offrire un framework di sviluppo ottimizzato per le app distribuite nel cloud o eseguite in locale. È costituito da componenti modulari con un overhead minimo, in modo da mantenere flessibilità durante la creazione di soluzioni. È possibile sviluppare ed eseguire app ASP.NET Core multipiattaforma in Windows, Mac e Linux. ASP.NET Core è disponibile open source in [GitHub](https://github.com/aspnet/home).
+ASP.NET Core è un framework open source multipiattaforma per la creazione di applicazioni moderne, basate sul cloud e connesse a Internet, ad esempio app e servizi Web, app IoT e back-end per dispositivi mobili. Le app ASP.NET Core possono essere eseguite in [.NET Core](https://www.microsoft.com/net/core/platform) o nei runtime di .NET Framework. È stato progettato per offrire un framework di sviluppo ottimizzato per le app distribuite nel cloud o eseguite in locale. È costituito da componenti modulari con un overhead minimo, in modo da garantire la massima flessibilità durante la creazione di soluzioni. È possibile sviluppare ed eseguire app ASP.NET Core multipiattaforma in Windows, Mac e Linux. ASP.NET Core è disponibile open source in [GitHub](https://github.com/aspnet/home).
 
 In questo lab si creerà ed esplorerà un'applicazione ASP.NET Core con Visual Studio per Mac.
 
@@ -25,21 +25,21 @@ In questo lab si creerà ed esplorerà un'applicazione ASP.NET Core con Visual S
 > * Esplorare il modello di hosting, configurazione e middleware di ASP.NET Core
 > * Eseguire il debug di un'app Web ASP.NET Core
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - [Visual Studio per Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
-## <a name="intended-audience"></a>Destinatari del documento
+## <a name="intended-audience"></a>Destinatari
 
 Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche se non è necessaria una vasta esperienza.
 
-## <a name="task-1-creating-a-new-aspnet-core-application"></a>Attività 1: creazione di una nuova applicazione ASP.NET Core
+## <a name="task-1-creating-a-new-aspnet-core-application"></a>Attività 1: Creazione di una nuova applicazione ASP.NET CoreTask 1: Creating a new ASP.NET Core application
 
 1. Avviare **Visual Studio per Mac**.
 
 2. Selezionare **File > Nuova soluzione**.
 
-3. Selezionare la categoria **.NET Core > App** e il modello **App Web ASP.NET Core (C#)** . Scegliere **Avanti**.
+3. Selezionare la categoria **.NET Core > App** e il modello **App Web ASP.NET Core (C#)**. Fare clic su **Avanti**.
 
     ![](media/netcore-image1.png)
 
@@ -47,7 +47,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>Attività 2: tour della soluzione
+## <a name="task-2-touring-the-solution"></a>Attività 2: Visitare la soluzioneTask 2: Touring the solution
 
 1. Il modello predefinito genera una soluzione con un unico progetto ASP.NET Core denominato **CoreLab**. Espandere il nodo del progetto per esporne il contenuto.
 
@@ -61,7 +61,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image5.png)
 
-4. Il progetto ha anche una cartella **Visualizzazioni** in cui sono incluse altre cartelle mappate a ogni controller, oltre a una cartella per le visualizzazioni **condivise**. Ad esempio, il file CSHTML (estensione del linguaggio HTML) di visualizzazione per il percorso **/Home/About** si troverebbe in **Visualizzazioni/Home/About.cshtml**. Aprire il file.
+4. Il progetto dispone anche di una cartella **Views** che contiene altre cartelle che eseguono il mapping a ogni controller (così come uno per le visualizzazioni **condivise.** Ad esempio, il file CSHTML (estensione del linguaggio HTML) di visualizzazione per il percorso **/Home/About** si troverebbe in **Visualizzazioni/Home/About.cshtml**. Aprire il file.
 
     ![](media/netcore-image6.png)
 
@@ -73,11 +73,11 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image8.png)
 
-7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. Annidato sotto il file appSettings. JSON è **appSettings. File Development. JSON** . Qui è possibile eseguire l'override di alcune o tutte queste impostazioni in base all'ambiente. Visual Studio per Mac annidare i file in questo modo utilizzando la stessa logica di Visual Studio per Windows, in modo che i file a cui è necessario accedere più spesso siano in primo piano. 
+7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. Nidificato sotto il file appsettings.json è **l'appsettings. Development.json.** In questo caso, è possibile eseguire l'override di alcune/tutte queste impostazioni in base all'ambiente. Visual Studio per Mac anniderà i file in questo modo usando la stessa logica di Visual Studio per Windows, in modo che i file a cui è necessario accedere più spesso siano all'avanguardia. 
 
     ![](media/netcore-build-nested.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Attività 3: informazioni sul modo in cui è ospitata l'applicazione
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Attività 3: Informazioni sulla modalità di hosting dell'applicazioneTask 3: Understanding how the application is hosted
 
 1. In **Esplora soluzioni** aprire **Program.cs**. Questo è il programma di bootstrap che eseguirà l'applicazione.
 
@@ -87,7 +87,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image11.png)
 
-3. **WebHostBuilder** ha il compito di creare l'host che eseguirà il bootstrap del server per l'app e al tempo stesso richiede di specificare un server per l'implementazione di **IServer**. Per impostazione predefinita viene usato **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** , un server Web multipiattaforma per ASP.NET Core basato su **libuv**, una libreria di I/O asincrona multipiattaforma.
+3. **WebHostBuilder** ha il compito di creare l'host che eseguirà il bootstrap del server per l'app e al tempo stesso richiede di specificare un server per l'implementazione di **IServer**. Per impostazione predefinita viene usato **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, un server Web multipiattaforma per ASP.NET Core basato su **libuv**, una libreria di I/O asincrona multipiattaforma.
 
     ![](media/netcore-image12.png)
 
@@ -111,7 +111,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image17.png)
 
-## <a name="task-4-running-and-debugging-the-application"></a>Attività 4: esecuzione e debug dell'applicazione
+## <a name="task-4-running-and-debugging-the-application"></a>Attività 4: Esecuzione e debug dell'applicazioneTask 4: Running and debugging the application
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto **CoreLab** e scegliere **Opzioni**.
 
@@ -171,7 +171,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 18. Chiudere la console dell'applicazione e la finestra del browser di test. In questo modo verrà arrestato anche il processo di debug.
 
-## <a name="task-5-application-startup-configuration"></a>Attività 5: configurazione dell'avvio dell'applicazione
+## <a name="task-5-application-startup-configuration"></a>Attività 5: Configurazione di avvio dell'applicazioneTask 5: Application startup configuration
 
 1. In **Esplora soluzioni** aprire **Startup.cs**. È possibile notare inizialmente alcune righe rosse a zigzag mentre i pacchetti NuGet vengono ripristinati in background e il compilatore Roslyn genera un quadro completo delle dipendenze del progetto.
 
@@ -197,7 +197,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>Attività 6: inserimento del middleware dell'applicazione
+## <a name="task-6-inserting-application-middleware"></a>Attività 6: Inserimento di middleware dell'applicazioneTask 6: Inserting application middleware
 
 1. Individuare il metodo **Configure** nella classe **Startup**. In questa classe viene configurato tutto il middleware in modo che possa essere inserito nella pipeline HTTP e usato per elaborare ogni richiesta inviata al server. Anche se questo metodo viene chiamato una sola volta, il contenuto dei metodi, ad esempio **UseStaticFiles**, può essere eseguito per ogni richiesta.
 
@@ -241,6 +241,6 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 12. Dopo aver letto le informazioni desiderate, chiudere la finestra del browser e la console.
 
-## <a name="summary"></a>Riepilogo
+## <a name="summary"></a>Summary
 
 In questo lab si è appreso come iniziare a sviluppare app ASP.NET Core con Visual Studio per Mac. Se si vogliono approfondire le conoscenze sullo sviluppo di un'applicazione di database di film più completa, vedere l'esercitazione [Introduzione ad ASP.NET Core MVC](/aspnet/core/tutorials/first-mvc-app/start-mvc).

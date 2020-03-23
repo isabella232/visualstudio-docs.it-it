@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 826d16fa316340226df042b0d762d923c43d39c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594773"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi
@@ -55,7 +55,7 @@ Prima di eseguire i passaggi della procedura, è necessario aprire le impostazio
 
 2. Selezionare **IntelliTrace**.
 
-3. Se si aggiunge IntelliTrace per un ruolo del client Web o un'applicazione Web ASP.NET, è necessario selezionare anche **Proxy client ASP.NET per IntelliTrace e impatto test**.
+3. Se si aggiunge IntelliTrace per un ruolo client Web o per un'applicazione Web ASP.NET, è inoltre necessario selezionare **ASP.NET proxy client per IntelliTrace e Impatto test**.
 
      Questo proxy consente di raccogliere informazioni sulle chiamate http da un client a un server Web per gli adattatori dati di diagnostica di IntelliTrace e impatto test.
 
@@ -71,34 +71,34 @@ Prima di eseguire i passaggi della procedura, è necessario aprire le impostazio
     > [!WARNING]
     > Se si abilita la raccolta di dati di IntelliTrace, la raccolta di dati di code coverage non funzionerà.
 
-5. Scegliere la scheda **generale** . Selezionare **solo eventi IntelliTrace** per registrare eventi di diagnostica significativi che hanno un impatto minimo sulle prestazioni durante il test.
+5. Scegliere la scheda **Generale.** Selezionare **gli eventi IntelliTrace solo** per registrare eventi di diagnostica significativi che hanno un impatto minimo sulle prestazioni durante il test.
 
-     oppure
+     -oppure-
 
      Selezionare **Eventi IntelliTrace e informazioni sulle chiamate** per registrare eventi di diagnostica e traccia a livello di metodo in cui vengono mostrate le informazioni sulle chiamate. Questo livello di traccia potrebbe avere un impatto sulle prestazioni quando si eseguono i test.
 
 6. Per raccogliere dati dall'applicazione ASP.NET in esecuzione su Internet Information Services, selezionare **Raccogli dati da applicazioni ASP.NET in esecuzione su Internet Information Services**. Impostare e configurare l'agente di test sul ruolo del server Web. Vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
 
-7. Scegliere la scheda **moduli** . Selezionare **Raccogli dati da tutti i moduli tranne i seguenti** e utilizzare **Aggiungi** per aggiungere all'elenco dei moduli e **rimuovere** per rimuovere un modulo. Questa opzione consente di includere tutti i moduli in esecuzione nel sistema, ad eccezione di quelli specificati.
+7. Scegliere la scheda **Moduli.** Selezionare **Raccogli dati da tutti i moduli ad eccezione di quelli seguenti** e utilizzare **Aggiungi** per aggiungere all'elenco dei moduli e **Rimuovi** per rimuovere un modulo. Questa opzione consente di includere tutti i moduli in esecuzione nel sistema, ad eccezione di quelli specificati.
 
-     oppure
+     -oppure-
 
      Selezionare **Raccogli dati solo dai seguenti moduli** e usare **Aggiungi** per aggiungere moduli all'elenco e **Rimuovi** per rimuovere i moduli. Questa opzione consente di specificare esattamente i moduli desiderati.
 
     > [!NOTE]
     > Se possibile, selezionare i processi specifici che si desidera monitorare. Si tratta dell'operazione consigliata per prestazioni ottimali.
 
-8. Scegliere la scheda **processi** . Selezionare **Raccogli dati da tutti i processi tranne i seguenti** e utilizzare **Aggiungi** per aggiungere all'elenco di processi e **rimuovere** per rimuovere un processo. Questa opzione consente di includere tutti i processi in esecuzione nel sistema, ad eccezione di quelli specificati.
+8. Scegliere la scheda **Processi.** Selezionare **Raccogli dati da tutti i processi ad eccezione di quelli seguenti** e utilizzare **Aggiungi** per aggiungere all'elenco dei processi e **Rimuovi** per rimuovere un processo. Questa opzione consente di includere tutti i processi in esecuzione nel sistema, ad eccezione di quelli specificati.
 
-     oppure
+     -oppure-
 
      Selezionare **Raccogli dati solo dai processi specificati** e usare **Aggiungi** per aggiungere processi all'elenco e **Rimuovi** per rimuovere i processi. Questa opzione consente di specificare esattamente i processi desiderati.
 
-9. Opzionale Scegliere la scheda **eventi IntelliTrace** . Selezionare o deselezionare ogni categoria di eventi IntelliTrace che si desidera includere o escludere quando si raccolgono eventi di diagnostica.
+9. (Facoltativo) Scegliere la scheda **Eventi IntelliTrace.** Selezionare o deselezionare ogni categoria di eventi IntelliTrace che si desidera includere o escludere quando si raccolgono eventi di diagnostica.
 
 10. (Facoltativo) Espandere ogni categoria di eventi IntelliTrace e selezionare o deselezionare i singoli eventi che si desidera includere o escludere.
 
-11. Opzionale Scegliere la scheda **Avanzate** . Scegliere quindi la freccia accanto a **quantità massima di spazio su disco per la registrazione** e selezionare le dimensioni massime che si desidera abilitare per il file di IntelliTrace da usare.
+11. (Facoltativo) Scegliere la scheda **Avanzate.** Scegliere quindi la freccia accanto a **Quantità massima di spazio su disco per** la registrazione e selezionare la dimensione massima che si desidera abilitare per il file IntelliTrace da utilizzare.
 
     > [!NOTE]
     > Se si aumenta la dimensione della registrazione, si potrebbe verificare un problema di timeout quando si salva la registrazione con i risultati test.

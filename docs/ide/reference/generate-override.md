@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569244"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Generare un override in Visual Studio
@@ -20,7 +20,7 @@ Questa generazione di codice si applica a:
 
 - C#
 
-- Visual Basic -
+- Visual Basic
 
 **Cosa:** consente di generare immediatamente il codice per qualsiasi metodo che può essere sottoposto a override da una classe di base.
 
@@ -28,7 +28,7 @@ Questa generazione di codice si applica a:
 
 **Perché:** è possibile scrivere la firma del metodo manualmente, ma questa funzionalità la genera automaticamente.
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Digitare `override` in C# o `Overrides` in Visual Basic, seguito da uno spazio, nella posizione in cui si vuole inserire un metodo di override.
 
@@ -58,4 +58,4 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generazione codice](../code-generation-in-visual-studio.md)
+- [Generazione di codice](../code-generation-in-visual-studio.md)

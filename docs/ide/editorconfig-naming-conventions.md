@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588603"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
-Le convenzioni di denominazione riguardano la denominazione degli elementi di codice, ad esempio classi, proprietà e metodi. Ad esempio, è possibile specificare che i membri pubblici devono essere in lettere maiuscole o che i campi privati devono iniziare con `_`. È anche possibile applicare queste regole specificandole in un [file EDITORCONFIG](../ide/create-portable-custom-editor-options.md). Le violazioni delle regole di denominazione vengono visualizzate nell'**Elenco errori** o come suggerimento sotto il nome, a seconda della gravità scelta per la regola. Non è necessario compilare il progetto per visualizzare le violazioni.
+Le convenzioni di denominazione riguardano la denominazione degli elementi di codice, ad esempio classi, proprietà e metodi. Ad esempio, è possibile specificare che i membri pubblici `_`devono essere scritti in maiuscolo o che i campi privati devono iniziare con . È anche possibile applicare queste regole specificandole in un [file EDITORCONFIG](../ide/create-portable-custom-editor-options.md). Le violazioni delle regole di denominazione vengono visualizzate nell'**Elenco errori** o come suggerimento sotto il nome, a seconda della gravità scelta per la regola. Non è necessario compilare il progetto per visualizzare le violazioni.
 
 Per ogni convenzione di denominazione, è necessario specificare i simboli a cui viene applicata, uno stile di denominazione e un livello di gravità per l'applicazione della convenzione, usando le proprietà descritte di seguito. L'ordine delle proprietà non è importante.
 
 Per iniziare, scegliere un titolo per la regola di denominazione da usare in ognuna delle proprietà necessarie per descrivere la regola in modo completo. Ad esempio, `public_members_must_be_capitalized` è un buon nome descrittivo per una regola di denominazione. Questa pagina farà riferimento al titolo scelto come a **<namingRuleTitle\>** nelle sezioni che seguono.
 
-## <a name="symbols"></a>Simboli
+## <a name="symbols"></a>Symbols
 
 Per prima cosa, identificare un gruppo di simboli a cui applicare la regola di denominazione. Questa proprietà ha il formato seguente:
 
@@ -42,19 +42,19 @@ Per descrivere il tipo di simboli a cui applicare la regola di denominazione, sp
 L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola.
 
 - \* (usare questo valore per specificare tutti i simboli)
-- Spazio dei nomi
-- classe
+- spazio dei nomi
+- class
 - struct
-- Interfaccia
+- interfaccia
 - enum
-- property
+- proprietà
 - method
 - campo
-- event
-- delegate
-- Parametro
+- evento
+- delegato
+- parametro
 - type_parameter
-- locali
+- local
 - local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Livelli di accessibilità dei simboli
@@ -68,11 +68,11 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
 - \* (usare questo valore per specificare tutti i livelli di accessibilità)
 - public
 - internal o friend
-- private
-- protetto
+- Privato
+- protected
 - protected\_internal o protected_friend
 - private\_protected
-- locali
+- local
 
    Il livello di accessibilità `local` si applica ai simboli definiti all'interno di un metodo. È utile per la definizione delle convenzioni di denominazione per i simboli la cui accessibilità non può essere specificata nel codice. Ad esempio, se si specifica `applicable_accessibilities = local` per una convenzione di denominazione per le costanti (`required_modifiers = const`), la regola viene applicata solo alle costanti definite all'interno di un metodo e non a quelle definite in un tipo.
 
@@ -112,7 +112,7 @@ Una regola di denominazione cerca le firme corrispondenti con *tutti* i modifica
 > [!TIP]
 > Non specificare un valore `*` per `required_modifiers`. Omettere semplicemente la proprietà `required_modifiers` e la regola di denominazione verrà applicata a qualsiasi tipo di modificatore.
 
-## <a name="style"></a>Stile
+## <a name="style"></a>Style
 
 Ora che è stato identificato il gruppo di simboli a cui applicare la regola di denominazione, è possibile descrivere lo stile di denominazione. Uno stile può stabilire che il nome abbia un determinato prefisso o suffisso o che le singole parole nel nome siano separate da un determinato carattere. È anche possibile specificare uno stile per l'uso di maiuscole e minuscole. La proprietà dello stile ha il formato seguente:
 
@@ -155,7 +155,7 @@ I valori consentiti per questa proprietà sono:
 > [!NOTE]
 > Nell'ambito dello stile di denominazione è necessario specificare uno stile per le lettere maiuscole e minuscole. In caso contrario, lo stile di denominazione potrebbe essere ignorato.
 
-## <a name="severity"></a>Severity
+## <a name="severity"></a>Gravità
 
 Per descrivere la gravità di una violazione della regola di denominazione, specificare una proprietà nel formato seguente:
 
@@ -163,13 +163,13 @@ Per descrivere la gravità di una violazione della regola di denominazione, spec
 
 Nella tabella seguente sono riportati i valori consentiti per la gravità, con il relativo significato:
 
-Severity | Effetto
+Gravità | Effetto
 ------------ | -------------
-nessuno | La regola viene eliminata completamente.
+none | La regola viene eliminata completamente.
 refactoring o silent | Se questo stile non viene rispettato, non viene visualizzato alcun avviso all'utente, ma il codice generato automaticamente segue comunque questo stile.
 suggestion | Se questo stile non viene rispettato, viene visualizzato un suggerimento per l'utente, indicato dai primi due caratteri sottolineati con dei puntini. Non ha alcun effetto in fase di compilazione.
-warning | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'**Elenco errori**.
-Errore | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'**Elenco errori**.
+avviso | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'**Elenco errori**.
+error | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'**Elenco errori**.
 
 > [!NOTE]
 > Non è necessario compilare il progetto per visualizzare le violazioni delle regole di denominazione. Vengono visualizzate quando il codice viene modificato, nell'**Elenco errori** o come suggerimento.
@@ -184,7 +184,7 @@ Le convenzioni di denominazione devono essere ordinate dalla convenzione più sp
 
 ::: moniker range=">=vs-2019"
 
-A partire da Visual Studio 2019 versione 16.2, l'ordine in base al quale sono definite le regole di denominazione in un file EditorConfig non è rilevante. Visual Studio ordina infatti automaticamente le regole di denominazione in base alla definizione delle regole stesse. L' [estensione del servizio di linguaggio EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) può analizzare un file EditorConfig e segnalare i casi in cui l'ordinamento delle regole nel file è diverso da quello che verrà utilizzato dal compilatore in fase di esecuzione.
+A partire da Visual Studio 2019 versione 16.2, l'ordine in base al quale sono definite le regole di denominazione in un file EditorConfig non è rilevante. Visual Studio ordina infatti automaticamente le regole di denominazione in base alla definizione delle regole stesse. L'estensione del servizio di [linguaggio EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) può analizzare un file EditorConfig e i casi di report in cui l'ordine delle regole nel file è diverso da quello che il compilatore utilizzerà in fase di esecuzione.
 
 Se si usa una versione precedente di Visual Studio, le convenzioni di denominazione devono essere ordinate dalla più specifica alla meno specifica nel file EditorConfig. La prima regola rilevata che può essere applicata è l'unica regola che viene applicata. Se tuttavia sono presenti più *proprietà* della regola con lo stesso nome, la proprietà con tale nome individuata più di recente ha la precedenza. Per altre informazioni, vedere [Gerarchia e precedenza dei file](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
@@ -226,7 +226,7 @@ Ora si modifica la gravità della violazione, che diventa `warning`:
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Se si chiude e si riapre il file di codice, anziché visualizzare il suggerimento sotto la violazione del nome, viene visualizzato un zigzag verde e un avviso nel Elenco errori:
+Se chiudi e riapri il file di codice, invece di vedere il suggerimento sotto la violazione del nome, vedrai una sottolineata verde e un avviso nell'Elenco errori:
 
 ![Avviso della regola di denominazione](media/editorconfig-naming-rule-warning.png)
 
@@ -236,4 +236,4 @@ Se si chiude e si riapre il file di codice, anziché visualizzare il suggeriment
 - [Convenzioni di formattazione](editorconfig-formatting-conventions.md)
 - [Convenzioni di denominazione Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
 - [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md)
-- [Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig](editorconfig-code-style-settings-reference.md)
+- [Impostazioni della convenzione di codifica .NET per EditorConfig](editorconfig-code-style-settings-reference.md)
