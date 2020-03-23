@@ -1,20 +1,21 @@
 ---
 title: Istruzioni if di suddivisione o unione
-ms.date: 06/12/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 405ccd4bc0197ce06aa14982a16dc02f6d13a537
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160737"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093666"
 ---
 # <a name="split-or-merge-if-statements"></a>Istruzioni if di suddivisione o unione
 
@@ -22,19 +23,21 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** **Cosa:** dividere o unire istruzioni [if](/dotnet/csharp/language-reference/keywords/if-else).
+- Visual Basic
 
-**Quando:** si vuole dividere un'istruzione `if` che usa l'operatore `&&` o `||` in un'istruzione `if` annidata oppure unire un'istruzione `if` con un'istruzione `if` esterna.
+**Cosa:** **Cosa:** Dividere o unire le istruzioni [if.](/dotnet/csharp/language-reference/keywords/if-else)
 
-**Perché?:** si tratta di una preferenza di stile.  
+**Quando:** Si desidera dividere `if` un'istruzione `&&` `||` che utilizza `if` gli operatori o `if` in un'istruzione annidata o unirare un'istruzione con un'istruzione esterna. `if`
 
-## <a name="how-to"></a>Procedura
+**Perché:** È una questione di preferenza di stile.  
+
+## <a name="how-to"></a>Procedure
 
 Se si vuole dividere l'istruzione `if`:
 
 1. Posizionare il cursore nell'istruzione `if` in corrispondenza dell'operatore `&&` o `||`.
 
-2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
 
     ![Dividere l'istruzione if](../media/split-if-statement.png)
 
@@ -46,7 +49,7 @@ Se si vuole unire l'istruzione `if` interna con l'istruzione `if` esterna:
 
 1. Posizionare il cursore nella parola chiave `if` interna.
 
-2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
 
     ![Unire l'istruzione if](../media/merge-if-statement.png)
 

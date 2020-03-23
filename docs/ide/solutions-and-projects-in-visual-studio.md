@@ -21,28 +21,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408823"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79303071"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
-Questa pagina descrive il concetto di *progetto* e una *soluzione* in Visual Studio. Vengono inoltre illustrati brevemente la finestra degli strumenti Esplora soluzioni e la modalità di creazione di un nuovo progetto.
+In questa pagina viene descritto il concetto di progetto e *di soluzione* in Visual Studio.This page describes the concept of a *project* and a solution in Visual Studio. Viene inoltre illustrata brevemente la finestra degli strumenti Esplora soluzioni e come creare un nuovo progetto.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Progetti e soluzioni in Visual Studio per Mac](/visualstudio/mac/projects-and-solutions).
 
-## <a name="projects"></a>Projects
+## <a name="projects"></a>Progetti
 
-Quando si crea un'app o un sito Web in Visual Studio, si inizia con un *progetto*. In senso logico, un progetto contiene tutti i file compilati in un file eseguibile, in una libreria o in un sito Web. Tali file possono includere codice sorgente, icone, immagini, file di dati e così via. Un progetto contiene anche le impostazioni del compilatore e altri file di configurazione che potrebbero essere necessari per i vari servizi o componenti con cui il programma comunica.
+Quando si crea un'app o un sito Web in Visual Studio, si inizia con un *progetto*. In senso logico, un progetto contiene tutti i file compilati in un eseguibile, una libreria o un sito Web. Tali file possono includere codice sorgente, icone, immagini, file di dati e così via. Un progetto contiene anche le impostazioni del compilatore e altri file di configurazione che potrebbero essere necessari per i vari servizi o componenti con cui il programma comunica.
 
 ### <a name="project-file"></a>File di progetto
 
-Visual Studio USA [MSBuild](../msbuild/msbuild.md) per compilare ogni progetto in una soluzione e ogni progetto contiene un file di progetto MSBuild. L'estensione di file riflette il tipo di progetto, ad esempio un C# progetto (con estensione csproj), un progetto di Visual Basic (vbproj) o un progetto di database (. dbproj). Il file di progetto è un documento XML contenente tutte le informazioni e le istruzioni necessarie a MSBuild per compilare il progetto, inclusi il contenuto, i requisiti della piattaforma, le informazioni sul controllo delle versioni, le impostazioni del server Web o del server di database e le attività per eseguire.
+Visual Studio usa MSBuild per compilare ogni progetto in una soluzione e ogni progetto contiene un file di progetto MSBuild.Visual Studio uses [MSBuild](../msbuild/msbuild.md) to build each project in a solution, and each project contains an MSBuild project file. L'estensione del file riflette il tipo di progetto, ad esempio, un progetto in C, un progetto di Visual Basic (con estensione vbproj) o un progetto di database (con estensione dbproj). Il file di progetto è un documento XML che contiene tutte le informazioni e le istruzioni necessarie a MSBuild per compilare il progetto, inclusi il contenuto, i requisiti della piattaforma, le informazioni sul controllo delle versioni, le impostazioni del server Web o del server di database e le attività da eseguire per la compilazione Eseguire.
 
-I file di progetto sono basati sulla [XML schema MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Per esaminare il contenuto dei [file di progetto in stile SDK](../msbuild/how-to-use-project-sdk.md) più recenti in Visual Studio, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **modifica \<NomeProgetto\>** . Per esaminare il contenuto di .NET Framework e di altri progetti dello stile, scaricare prima il progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare **Scarica progetto**). Quindi, fare clic con il pulsante destro del mouse sul progetto e scegliere **modifica \<nomeprogetto\>** .
+I file di progetto sono basati sullo [schema XML MSBuild.](../msbuild/msbuild-project-file-schema-reference.md) Per esaminare il contenuto dei file di progetto più recenti in [stile sdk](../msbuild/how-to-use-project-sdk.md) in Visual Studio, fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora **soluzioni** e selezionare ** \<Modifica nomeprogetto\>**. Per esaminare il contenuto di .NET Framework e di altri progetti di tale stile, scaricare innanzitutto il progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare **Scarica progetto**). Quindi, fare clic con il pulsante destro del mouse sul progetto e scegliere ** \<Modifica nomeprogetto\>**.
 
 > [!NOTE]
 > Non è necessario usare soluzioni o progetti in Visual Studio per modificare, compilare ed eseguire il debug del codice. È sufficiente aprire la cartella che contiene i file di origine in Visual Studio e iniziare ad apportare le modifiche. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
@@ -53,16 +53,16 @@ Un progetto è contenuto all'interno di una *soluzione*. Nonostante il nome, una
 
 Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di file, uno con estensione *sln* e uno con estensione *suo*.
 
-|Estensione|Name|Descrizione|
+|Estensione|Nome|Descrizione|
 |---------------|----------|-----------------|
 |sln|Soluzione Visual Studio|Organizza progetti, elementi del progetto ed elementi della soluzione nella soluzione.|
 |suo|Solution User Options|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
 
 ## <a name="create-new-projects"></a>Crea nuovi progetti
 
-Il modo più semplice per creare un nuovo progetto è iniziare da un modello di progetto per un tipo particolare di applicazione o sito Web. Un modello di progetto è costituito da un set di base di file di codice, file di configurazione, risorse e impostazioni già generati. Questi modelli sono disponibili nella finestra di dialogo in cui si crea un nuovo progetto (**File** > **Nuovo** > **Progetto**). Per altre informazioni, vedere [Creare un nuovo progetto in Visual Studio](create-new-project.md) e [Creare soluzioni e progetti](../ide/creating-solutions-and-projects.md).
+Il modo più semplice per creare un nuovo progetto è iniziare da un modello di progetto per un tipo particolare di applicazione o sito Web. Un modello di progetto è costituito da un set di base di file di codice, file di configurazione, risorse e impostazioni già generati. Questi modelli sono disponibili nella finestra di dialogo in cui si crea un nuovo progetto (**File** > **Nuovo** > **progetto**). Per altre informazioni, vedere [Creare un nuovo progetto in Visual Studio](create-new-project.md) e [Creare soluzioni e progetti](../ide/creating-solutions-and-projects.md).
 
-Se si personalizzano spesso i progetti in un certo modo, è possibile creare un modello di progetto personalizzato che è possibile utilizzare per creare nuovi progetti da. Per altre informazioni, vedere [Creare modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
+Se si personalizzano spesso i progetti in un determinato modo, è possibile creare un modello di progetto personalizzato da cui è possibile utilizzare per creare nuovi progetti. Per altre informazioni, vedere [Creare modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
 
 Quando si crea un nuovo progetto, per impostazione predefinita viene salvato in *%USERPROFILE%\source\repos*. È possibile modificare questo percorso tramite l'impostazione **Percorso progetti** in **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Percorsi**. Per altre informazioni, vedere [Pagina Progetti e soluzioni, finestra di dialogo Opzioni](../ide/reference/projects-and-solutions-options-dialog-box.md).
 

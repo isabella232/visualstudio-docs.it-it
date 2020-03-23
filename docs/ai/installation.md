@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915803"
 ---
-# <a name="installation"></a>Installazione di
+# <a name="installation"></a>Installazione
 
 È possibile installare gli strumenti di Visual Studio per IA nei sistemi operativi Windows a 64 bit.
 
@@ -26,14 +26,14 @@ Questa estensione può essere usata con Visual Studio 2015 e con Visual Studio 2
 
 È possibile scaricare gli strumenti da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) o direttamente da Visual Studio:
 
-1. Scegliere **Strumenti** > **Estensioni e aggiornamenti**.
+1. Selezionare**Estensioni e aggiornamenti degli** **strumenti** > .
 
    ![Menu Estensioni e aggiornamenti in Visual Studio](media/installation/extensions.png)
 
 2. Nella finestra di dialogo **Estensioni e aggiornamenti** selezionare **Online** sul lato sinistro.
 3. Nella casella di ricerca nell'angolo in alto a destra digitare o immettere "tools for ai".
 4. Selezionare **Visual Studio Tools for AI** dai risultati.
-5. Scegliere **Download**.
+5. Fare clic su **Download**
 
 ## <a name="prepare-your-local-machine"></a>Preparare il computer locale
 
@@ -98,7 +98,7 @@ In seguito, è necessario verificare se Python 3.5 sia installato correttamente 
   C:\Users\test>python -m pip install -U pip
   ```
 
-- **macOS**
+- **Macos**
 
   ```bash
   MyMac:~ test$ python3.5 -V
@@ -156,7 +156,7 @@ Visitare [questo sito](https://caffe2.ai/docs/getting-started.html) per eseguire
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) è un framework di apprendimento profondo progettato per efficienza e flessibilità. Consente di combinare la [programmazione simbolica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) per ottimizzare l'efficienza e la produttività.
+[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) è un framework di apprendimento profondo progettato per efficienza e flessibilità. Consente di **combinare** [programmazione simbolica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) per ottimizzare efficienza e produttività.
 
 Per installare MXNet, eseguire il comando seguente in un terminale:
 
@@ -213,7 +213,7 @@ Per installare PyTorch, eseguire il comando seguente in un terminale:
     pip3 install torchvision
     ```
 
-- **macOS**
+- **Macos**
 
   ```bash
   pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl

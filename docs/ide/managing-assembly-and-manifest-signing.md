@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f13df00059523ca87e720a999c596e203b20e49
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593681"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gestione delle firme di assembly e manifesti
@@ -29,7 +29,7 @@ Un nome sicuro è costituito dall'identità dell'assembly, corrispondente al nom
 
 Per informazioni sulla firma degli assembly nei progetti Visual Basic e C#, vedere [Creare e usare gli assembly con nome sicuro](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Per informazioni sulla firma degli assembly C++ nei progetti, vedere [assembly con nome sicuroC++(/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Per informazioni sulla firma di assembly in progetti in C, vedere Assembly con [nome sicuro (C/CLI).](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
 
 > [!NOTE]
 > La firma con nome sicuro non offre protezione da attacchi di reverse engineering dell'assembly. Per la protezione da attacchi di reverse engineering, vedere [Dotfuscator Community](dotfuscator/index.md).
@@ -38,13 +38,13 @@ Per informazioni sulla firma degli assembly C++ nei progetti, vedere [assembly c
 
 È possibile firmare gli assembly .NET e i manifesti dell'applicazione:
 
-- File eseguibili ( *.exe*)
+- File eseguibili (*.exe*)
 
-- Manifesti dell'applicazione ( *.exe.manifest*)
+- Manifesti dell'applicazione (*.exe.manifest*)
 
-- Manifesti della distribuzione ( *.application*)
+- Manifesti della distribuzione (*.application*)
 
-- Assembly di componenti condivisi ( *.dll*)
+- Assembly di componenti condivisi (*.dll*)
 
 Firmare i seguenti tipi di asset:
 
@@ -73,5 +73,5 @@ Per informazioni sulla firma dei manifesti, vedere [Procedura: Firmare manifesti
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Assembly con nomi sicuri](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assembly con nome sicuro](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Assembly con nomi sicuri (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

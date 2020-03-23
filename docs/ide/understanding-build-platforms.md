@@ -18,26 +18,26 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115071"
 ---
 # <a name="understand-build-platforms"></a>Informazioni sulle piattaforme di compilazione
 
 È possibile archiviare versioni diverse delle proprietà di soluzione e progetto che si applicano a piattaforme di destinazione diverse. Ad esempio, è possibile creare una configurazione di debug che ha come destinazione una piattaforma x86 e una configurazione di debug che ha come destinazione una piattaforma x64. È possibile modificare rapidamente la piattaforma attiva in modo da creare con facilità più configurazioni.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
-[Procedura: configurare progetti per piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Procedura: configurare i progetti per le piattaforme di destinazioneHow to: Configure projects to target platforms](../ide/how-to-configure-projects-to-target-platforms.md)\
 Viene illustrato come configurare un progetto per una determinata piattaforma di destinazione.
 
-[Procedura: configurare progetti per più piattaforme di destinazione](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Procedura: configurare progetti per più piattaforme di destinazioneHow to: Configure projects to target multiple platforms](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Viene illustrato come configurare un progetto per più piattaforme di destinazione.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md) (Procedura dettagliata: Compilare un'applicazione)
+- [Procedura dettagliata: compilare un'applicazioneWalkthrough: Build an application](../ide/walkthrough-building-an-application.md)
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilare](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)

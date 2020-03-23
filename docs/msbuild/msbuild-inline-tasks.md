@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633317"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
 
-Le attività di MSBuild in genere vengono create compilando una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
+Le attività MSBuild vengono in genere create tramite la compilazione di una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
  A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. In questo modo è più semplice tenere traccia del codice sorgente e distribuire l'attività. Il codice sorgente è integrato nello script.
 
@@ -69,7 +69,7 @@ Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programma
 > [!NOTE]
 > Gli elementi contenuti in `Task` sono specifici della factory dell'attività, in questo caso la factory dell'attività del codice.
 
-### <a name="code-element"></a>Code - elemento
+### <a name="code-element"></a>Elemento del codice
 
  L'ultimo elemento figlio visualizzato all'interno dell'elemento `Task` è l'elemento `Code`. L'elemento `Code` contiene o individua il codice che deve essere compilato in un'attività. Ciò che si inserisce nell'elemento `Code` dipende da come si vuole scrivere l'attività.
 

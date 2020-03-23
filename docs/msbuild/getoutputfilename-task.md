@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593291"
 ---
 # <a name="getoutputfilename-task"></a>Attività GetOutputFileName
@@ -34,10 +34,10 @@ Nella tabella seguente vengono descritti i parametri dell'attività **GetOutputF
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|**OutputExtension**|Parametro **string** obbligatorio.|
-|**OutputFile**|Parametro di output **string** facoltativo.|
-|**OutputPath**|Parametro **string** facoltativo.|
-|**SourceFile**|Parametro **string** obbligatorio.|
+|**OutputExtension**|Parametro **di stringa** obbligatorio.|
+|**Outputfile**|Parametro di output **string** facoltativo.|
+|**Percorso output**|Parametro **stringa** facoltativo.|
+|**SourceFile**|Parametro **di stringa** obbligatorio.|
 
 ## <a name="see-also"></a>Vedere anche
 

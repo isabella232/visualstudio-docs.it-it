@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4a3aec047238786a60b1261415acccfed521695
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589435"
 ---
 # <a name="how-to-export-a-shader"></a>Procedura: Esportare uno shader
@@ -23,7 +23,7 @@ Questo articolo illustra come usare la **finestra di progettazione shader** per 
 
 Dopo aver creato uno shader tramite la finestra di progettazione shader, prima di poterlo usare nell'app è necessario esportarlo in un formato supportato dall'API di grafica in uso. È possibile esportare uno shader in modi diversi, in base alle proprie esigenze.
 
-1. In Visual Studio aprire un file **Visual Shader Graph (.dgsl)** .
+1. In Visual Studio aprire un file **Visual Shader Graph (.dgsl)**.
 
      Se non si ha un file **Visual Shader Graph (.dgsl)** da aprire, crearne uno come descritto in [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md).
 
@@ -43,5 +43,5 @@ Dopo aver creato uno shader tramite la finestra di progettazione shader, prima d
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md)
+- [Procedura: creare uno shader di colore di baseHow to: Create a basic color shader](../designers/how-to-create-a-basic-color-shader.md)
 - [Finestra di progettazione shader](../designers/shader-designer.md)

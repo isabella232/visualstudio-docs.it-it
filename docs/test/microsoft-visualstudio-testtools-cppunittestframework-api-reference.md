@@ -8,33 +8,33 @@ ms.workload:
 - multiple
 author: corob-msft
 ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278656"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 In questo argomento sono elencati i membri pubblici dello spazio dei nomi `Microsoft::VisualStudio::CppUnitTestFramework`. Usare queste API per scrivere unit test C++ in base a Microsoft Native Unit Test Framework. È disponibile un [esempio di utilizzo](#example) alla fine dell'argomento.
 
-I file di intestazione e lib si trovano in *\<cartella di installazione di Visual Studio > \VC\Auxiliary\VS\UnitTest*.
+I file di intestazione * \<* e lib si trovano nella cartella di installazione di Visual Studio> .
 
 I percorsi dei file di intestazione e lib vengono configurati automaticamente in un progetto di test nativo.
 
-## <a name="In_this_topic"></a> In questo argomento
+## <a name="in-this-topic"></a><a name="In_this_topic"></a>In questo argomento
 
 [CppUnitTest.h](#cppUnitTest_h)
 
 - [Creare classi e metodi di test](#create_test_classes_and_methods)
 
-- [Eseguire l'inizializzazione e la pulizia](#Initialize_and_cleanup)
+- [Inizializzazione e pulizia](#Initialize_and_cleanup)
 
   - [Metodi di test](#test_methods)
 
   - [Classi di test](#test_classes)
 
-  - [Moduli di test](#test_modules)
+  - [Moduli di prova](#test_modules)
 
 - [Creare attributi di test](#create_test_attributes)
 
@@ -52,35 +52,35 @@ I percorsi dei file di intestazione e lib vengono configurati automaticamente in
 
     - [AreEqual](#general_are_equal)
 
-    - [AreNotEqual](#general_are_not_equal)
+    - [Non sono uguali](#general_are_not_equal)
 
-    - [AreSame](#general_are_same)
+    - [Sono uguali](#general_are_same)
 
     - [AreNotSame](#general_are_not_same)
 
-    - [IsNull](#general_is_null)
+    - [Is Null](#general_is_null)
 
-    - [IsNotNull](#general_is_not_null)
+    - [Non è Null](#general_is_not_null)
 
-    - [IsTrue](#general_is_True)
+    - [È vero](#general_is_True)
 
-    - [IsFalse](#general_is_false)
+    - [È false](#general_is_false)
 
-    - [Fail](#general_Fail)
+    - [Errato](#general_Fail)
 
   - [Asserzioni di Windows Runtime](#winrt_asserts)
 
     - [AreEqual](#winrt_are_equal)
 
-    - [AreSame](#winrt_are_same)
+    - [Sono uguali](#winrt_are_same)
 
-    - [AreNotEqual](#winrt_are_not_equal)
+    - [Non sono uguali](#winrt_are_not_equal)
 
     - [AreNotSame](#winrt_are_not_same)
 
-    - [IsNull](#winrt_is_null)
+    - [Is Null](#winrt_is_null)
 
-    - [IsNotNull](#winrt_is_not_null)
+    - [Non è Null](#winrt_is_not_null)
 
   - [Asserzioni di eccezione](#exception_asserts)
 
@@ -94,9 +94,9 @@ I percorsi dei file di intestazione e lib vengono configurati automaticamente in
 
   - [Esempio di utilizzo](#example)
 
-## <a name="cppUnitTest_h"></a> CppUnitTest.h
+## <a name="cppunittesth"></a><a name="cppUnitTest_h"></a> CppUnitTest.h
 
-### <a name="create_test_classes_and_methods"></a> Creare classi e metodi di test
+### <a name="create-test-classes-and-methods"></a><a name="create_test_classes_and_methods"></a> Creare classi e metodi di test
 
 ```cpp
 TEST_CLASS(className)
@@ -113,9 +113,9 @@ TEST_METHOD(methodName)
 
 Definisce *methodName* come metodo di test. `TEST_METHOD` deve essere dichiarato nell'ambito della classe del metodo.
 
-### <a name="Initialize_and_cleanup"></a> Eseguire l'inizializzazione e la pulizia
+### <a name="initialize-and-cleanup"></a><a name="Initialize_and_cleanup"></a> Eseguire l'inizializzazione e la pulizia
 
-#### <a name="test_methods"></a> Metodi di test
+#### <a name="test-methods"></a><a name="test_methods"></a>Metodi di prova
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -135,7 +135,7 @@ TEST_METHOD_CLEANUP(methodName)
 
 Definisce *methodName* come un metodo eseguito dopo l'esecuzione di ogni metodo di test. `TEST_METHOD_CLEANUP` può essere definito una sola volta in una classe di test e deve essere definito nell'ambito della classe di test.
 
-#### <a name="test_classes"></a> Classi di test
+#### <a name="test-classes"></a><a name="test_classes"></a>Classi di test
 
 ```cpp
 TEST_CLASS_INITIALIZE(methodName)
@@ -155,7 +155,7 @@ TEST_CLASS_CLEANUP(methodName)
 
 Definisce *methodName* come un metodo eseguito dopo la creazione di ogni classe di test. `TEST_CLASS_CLEANUP` può essere definito una sola volta in una classe di test e deve essere definito nell'ambito della classe di test.
 
-#### <a name="test_modules"></a> Moduli di test
+#### <a name="test-modules"></a><a name="test_modules"></a> Moduli di test
 
 ```cpp
 TEST_MODULE_INITIALIZE(methodName)
@@ -172,9 +172,9 @@ TEST_MODULE_CLEANUP(methodName)
 
 Definisce il metodo *methodName* eseguito quando viene scaricato un modulo. `TEST_MODULE_CLEANUP` può essere definito una sola volta in un modulo di test e deve essere dichiarato nell'ambito dello spazio dei nomi.
 
-### <a name="create_test_attributes"></a> Creare attributi di test
+### <a name="create-test-attributes"></a><a name="create_test_attributes"></a> Creare attributi di test
 
-#### <a name="test_method_attributes"></a> Attributi del metodo di test
+#### <a name="test-method-attributes"></a><a name="test_method_attributes"></a>Attributi del metodo di test
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
@@ -187,7 +187,7 @@ Aggiunge gli attributi definiti con una o più macro `TEST_METHOD_ATTRIBUTE` al 
 
 Una macro `TEST_METHOD_ATTRIBUTE` definisce un attributo con il nome *attributeName* e il valore *attributeValue*.
 
-#### <a name="test_class_attributes"></a> Attributi della classe di test
+#### <a name="test-class-attributes"></a><a name="test_class_attributes"></a> Attributi della classe di test
 
 ```cpp
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
@@ -200,7 +200,7 @@ Aggiunge gli attributi definiti con una o più macro `TEST_CLASS_ATTRIBUTE` alla
 
 Una macro `TEST_CLASS_ATTRIBUTE` definisce un attributo con il nome *attributeName* e il valore *attributeValue*.
 
-#### <a name="test_module_attributes"></a> Attributi del modulo di test
+#### <a name="test-module-attributes"></a><a name="test_module_attributes"></a>Attributi del modulo di test
 
 ```cpp
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
@@ -213,7 +213,7 @@ Aggiunge gli attributi definiti con una o più macro `TEST_MODULE_ATTRIBUTE` al 
 
 Una macro `TEST_MODULE_ATTRIBUTE` definisce un attributo con il nome *attributeName* e il valore *attributeValue*.
 
-#### <a name="pre_defined_attributes"></a> Attributi predefiniti
+#### <a name="pre-defined-attributes"></a><a name="pre_defined_attributes"></a>Attributi predefiniti
 
 Queste macro di attributi predefiniti vengono fornite per maggiore praticità nella gestione dei casi comuni. Possono essere sostituire con la macro `TEST_METHOD_ATTRIBUTE` descritta in precedenza.
 
@@ -247,11 +247,11 @@ TEST_IGNORE()
 
 Definisce un oggetto `TEST_METHOD_ATTRIBUTE` con il nome `Ignore` e il valore di attributo `true`.
 
-## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
+## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a>CppUnitTestAssert.h
 
-### <a name="general_asserts"></a> Asserzioni generali
+### <a name="general-asserts"></a><a name="general_asserts"></a> Asserzioni generali
 
-#### <a name="general_are_equal"></a> AreEqual
+#### <a name="are-equal"></a><a name="general_are_equal"></a>Sono uguali
 Verificare che due oggetti siano uguali
 
 ```cpp
@@ -307,7 +307,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_are_not_equal"></a> AreNotEqual
+#### <a name="are-not-equal"></a><a name="general_are_not_equal"></a> AreNotEqual
 Verificare che i due valori Double non siano uguali
 
 ```cpp
@@ -363,7 +363,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_are_same"></a> AreSame
+#### <a name="are-same"></a><a name="general_are_same"></a> AreSame
 Verificare che due riferimenti puntino alla stessa istanza di oggetto (identità).
 
 ```cpp
@@ -375,7 +375,7 @@ static void Assert::AreSame(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_are_not_same"></a> AreNotSame
+#### <a name="are-not-same"></a><a name="general_are_not_same"></a>Non sono uguali
 Verificare che due riferimenti non puntino alla stessa istanza di oggetto (identità).
 
 ```cpp
@@ -387,7 +387,7 @@ static void Assert::AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_null"></a> IsNull
+#### <a name="is-null"></a><a name="general_is_null"></a>Is Null
 Verificare che un puntatore sia NULL.
 
 ```cpp
@@ -398,7 +398,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_not_null"></a> IsNotNull
+#### <a name="is-not-null"></a><a name="general_is_not_null"></a>Non è Null
 Verificare che un puntatore non sia NULL
 
 ```cpp
@@ -409,7 +409,7 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_True"></a> IsTrue
+#### <a name="is-true"></a><a name="general_is_True"></a>È vero
 Verificare che una condizione sia True
 
 ```cpp
@@ -419,7 +419,7 @@ static void Assert::IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_is_false"></a> IsFalse
+#### <a name="is-false"></a><a name="general_is_false"></a>È false
 Verificare che una condizione sia False
 
 ```cpp
@@ -429,7 +429,7 @@ static void Assert::IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="general_Fail"></a> Fail
+#### <a name="fail"></a><a name="general_Fail"></a>Fallire
 Forza il risultato del test case come non superato
 
 ```cpp
@@ -438,9 +438,9 @@ static void Assert::Fail(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-### <a name="winrt_asserts"></a> Asserzioni di Windows Runtime
+### <a name="windows-runtime-asserts"></a><a name="winrt_asserts"></a> Asserzioni di Windows Runtime
 
-#### <a name="winrt_are_equal"></a> AreEqual
+#### <a name="are-equal"></a><a name="winrt_are_equal"></a>Sono uguali
 Verifica che due puntatori di Windows Runtime siano uguali.
 
 ```cpp
@@ -463,7 +463,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_are_same"></a> AreSame
+#### <a name="are-same"></a><a name="winrt_are_same"></a> AreSame
 Verifica che due riferimenti di Windows Runtime puntino allo stesso oggetto.
 
 ```cpp
@@ -475,7 +475,7 @@ static void Assert::AreSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_are_not_equal"></a> AreNotEqual
+#### <a name="are-not-equal"></a><a name="winrt_are_not_equal"></a> AreNotEqual
 Verifica che due puntatori di Windows Runtime non siano uguali.
 
 ```cpp
@@ -498,7 +498,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_are_not_same"></a> AreNotSame
+#### <a name="are-not-same"></a><a name="winrt_are_not_same"></a>Non sono uguali
 Verifica che due riferimenti di Windows Runtime non puntino allo stesso oggetto.
 
 ```cpp
@@ -510,7 +510,7 @@ static void Assert::AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_is_null"></a> IsNull
+#### <a name="is-null"></a><a name="winrt_is_null"></a>Is Null
 Verifica che un puntatore di Windows Runtime sia un nullptr.
 
 ```cpp
@@ -521,7 +521,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="winrt_is_not_null"></a> IsNotNull
+#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a>Non è Null
 Verifica che un puntatore di Windows Runtime non sia un nullptr.
 
 ```cpp
@@ -532,9 +532,9 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-### <a name="exception_asserts"></a> Asserzioni di eccezione
+### <a name="exception-asserts"></a><a name="exception_asserts"></a>Asserzioni di eccezioneException Asserts
 
-#### <a name="expect_exception"></a> ExpectException
+#### <a name="expect-exception"></a><a name="expect_exception"></a>Eccezione
 Verificare che una funzione generi un'eccezione:
 
 ```cpp
@@ -555,12 +555,12 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
+## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a>CppUnitTestLogger.h
 
-### <a name="logger"></a> Logger
+### <a name="logger"></a><a name="logger"></a>Logger
 La classe Logger contiene metodi statici per scrivere nella **finestra di output**.
 
-### <a name="write_message"></a> WriteMessage
+### <a name="write-message"></a><a name="write_message"></a>Scrivi messaggio
 Scrivere una stringa nella **finestra di output**
 
 ```cpp
@@ -571,7 +571,7 @@ static void Logger::WriteMessage(const wchar_t* message)
 static void Logger::WriteMessage(const char* message)
 ```
 
-## <a name="example"></a> Esempio
+## <a name="example"></a><a name="example"></a>Esempio
 Questo codice è un esempio di utilizzo di VSCppUnit. Include esempi di metadati di attributi, fixture, unit test con asserzioni e registrazione personalizzata.
 
 ```cpp
@@ -640,5 +640,5 @@ public:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Eseguire unit test del codice](../test/unit-test-your-code.md)
+- [Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)
 - [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)

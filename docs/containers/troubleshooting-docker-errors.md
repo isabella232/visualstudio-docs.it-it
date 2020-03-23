@@ -12,15 +12,15 @@ ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027276"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Risolvere i problemi di sviluppo di Visual Studio con Docker
 
-Quando si lavora con Visual Studio container Tools, è possibile che si verifichino problemi durante la compilazione o il debug dell'applicazione. Di seguito sono descritti alcuni passaggi comuni per la risoluzione dei problemi.
+Quando si lavora con Visual Studio Container Tools, è possibile riscontrare problemi durante la compilazione o il debug dell'applicazione. Di seguito sono descritti alcuni passaggi comuni per la risoluzione dei problemi.
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>La condivisione dei volumi non è abilitata. Abilitare la condivisione dei volumi nelle impostazioni di Docker CE per Windows (solo per i contenitori Linux)
 
@@ -35,7 +35,7 @@ Per risolvere il problema:
 ![unità condivise](media/troubleshooting-docker-errors/shareddrives.png)
 
 > [!TIP]
-> Versioni di Visual Studio successive a Visual Studio 2017 versione 15,6 richiesta quando non sono configurate **unità condivise** .
+> Le versioni di Visual Studio successive a Visual Studio 2017 versione 15.6 richiedono quando le **unità condivise** non sono configurate.
 
 ### <a name="container-type"></a>Tipo di contenitore
 
@@ -56,42 +56,42 @@ Provare a eseguire lo script scaricabile dall'articolo relativo alla [pulizia de
 
 Quando si usa Docker per macOs, potrebbe verificarsi un errore durante il riferimento alla cartella /usr/local/share/dotnet/sdk/NuGetFallbackFolder. Aggiunge la cartella alla scheda Condivisione file in Docker
 
-## <a name="docker-users-group"></a>Gruppo utenti Docker
+## <a name="docker-users-group"></a>Gruppo di utenti Docker
 
-È possibile che si verifichi l'errore seguente in Visual Studio quando si utilizzano i contenitori:
+Quando si utilizzano i contenitori, è possibile che si verifichi il seguente errore in Visual Studio:
 
 ```
 The current user must be in the 'docker-users' group to use Docker Desktop. 
 Add yourself to the 'docker-users' group and then log out of Windows.
 ```
 
-È necessario essere un membro del gruppo "Docker-Users" per avere le autorizzazioni per lavorare con i contenitori docker.  Per aggiungere se stessi al gruppo in Windows 10, attenersi alla procedura seguente:
+Per disporre delle autorizzazioni per l'utilizzo dei contenitori Docker, è necessario essere membri del gruppo 'docker-users'.  Per aggiungere se stessi al gruppo in Windows 10, attenersi alla seguente procedura:
 
-1. Dal menu Start aprire **Gestione computer**.
-1. Espandere **utenti e gruppi locali**e scegliere **gruppi**.
-1. Trovare il gruppo **Docker-Users** , fare clic con il pulsante destro del mouse e scegliere **Aggiungi al gruppo**.
+1. Dal menu Start, aprire **Gestione computer**.
+1. Espandere **Utenti e gruppi locali**e scegliere **Gruppi**.
+1. Individuare il gruppo **Docker-users,** fare clic con il pulsante destro del mouse e scegliere **Aggiungi al gruppo**.
 1. Aggiungere l'account utente o gli account.
-1. Disconnettersi ed eseguire nuovamente l'accesso per rendere effettive le modifiche.
+1. Esci e accedi di nuovo per rendere effettive le modifiche.
 
-È inoltre possibile utilizzare il comando `net localgroup` al prompt dei comandi dell'amministratore per aggiungere utenti a gruppi specifici.
+È inoltre possibile `net localgroup` utilizzare il comando al prompt dei comandi di amministratore per aggiungere utenti a gruppi specifici.
 
 ```cmd
 net localgroup docker-users DOMAIN\username /add
 ```
 
-In PowerShell usare la funzione [Add-LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) .
+In PowerShell usare la funzione [Add-LocalGroupMember.In](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) PowerShell, use the Add-LocalGroupMember function.
 
 ## <a name="low-disk-space"></a>Spazio su disco insufficiente
 
-Per impostazione predefinita, Docker archivia le immagini nella cartella *% ProgramData%/Docker/* , che in genere si trova nell'unità di sistema * C:\ProgramData\Docker\*. Per evitare che immagini occupano spazio prezioso nell'unità di sistema, è possibile modificare il percorso della cartella immagini.  Dall'icona Docker sulla barra delle applicazioni, aprire Docker Settings, scegliere **daemon**e passare da **Basic** a **Advanced**. Nel riquadro di modifica aggiungere l'impostazione della proprietà `graph` con il valore della posizione desiderata per le immagini docker:
+Per impostazione predefinita, Docker memorizza le immagini nella cartella *%ProgramData%/Docker/,* che in\*genere si trova nell'unità di sistema, . Per evitare che le immagini occupano spazio prezioso sull'unità di sistema, è possibile modificare il percorso della cartella dell'immagine.  Dall'icona Docker sulla barra delle applicazioni, aprire le impostazioni di Docker, scegliere **Daemon**e passare da **Di base** ad **Avanzato**. Nel riquadro di `graph` modifica, aggiungere l'impostazione della proprietà con il valore della posizione desiderata per le immagini Docker:
 
 ```json
     "graph": "D:\\mypath\\images"
 ```
 
-![Screenshot dell'impostazione del percorso dell'immagine Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+![Screenshot dell'impostazione della posizione dell'immagine Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
 
-Fare clic su **applica** per riavviare docker. Questa procedura modifica il file di configurazione in *%ProgramData%\docker\config\daemon.JSON*. Le immagini compilate in precedenza non vengono spostate.
+Fare clic su **Applica** per riavviare Docker. Questa procedura consente di modificare il file di configurazione in *%ProgramData%.* Le immagini costruite in precedenza non vengono spostate.
 
 ## <a name="microsoftdockertools-github-repo"></a>Repository GitHub Microsoft/DockerTools
 

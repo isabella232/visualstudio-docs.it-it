@@ -12,21 +12,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78aeef8ea651aac1fe2a780207474399f4bbcf09
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633434"
 ---
 # <a name="msbuild-batching"></a>Batch MSBuild
 
-MSBuild è in grado di dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire una destinazione o un'attività una volta per ogni batch.
+MSBuild ha la possibilità di dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati dell'elemento ed eseguire una destinazione o un'attività una volta con ogni batch.
 
 ## <a name="task-batching"></a>Suddivisione in batch delle attività
 
 Suddividere le attività in batch consente di semplificare i file di progetto, dividendo gli elenchi di elementi in diversi batch che vengono poi passati separatamente in un'attività. Ciò significa che per un file di progetto è necessario dichiarare l'attività e i relativi attributi solo una volta, anche se può essere eseguito più volte.
 
-Si specifica che MSBuild deve eseguire l'invio in batch con un'attività usando la notazione%(\<ItemMetaDataName >) in uno degli attributi dell'attività. L'esempio seguente suddivide l'elenco di elementi `Example` in batch in base al valore dei metadati degli elementi `Color` e passa ogni batch all'attività `MyTask` separatamente.
+Si specifica che si desidera che MSBuild per eseguire\<l'invio in batch con un'attività utilizzando la notazione %( ItemMetaDataName>) in uno degli attributi dell'attività. L'esempio seguente suddivide l'elenco di elementi `Example` in batch in base al valore dei metadati degli elementi `Color` e passa ogni batch all'attività `MyTask` separatamente.
 
 > [!NOTE]
 > Se non viene fatto riferimento all'elenco di elementi altrove negli attributi dell'attività o il nome dei metadati è ambiguo, è possibile usare la notazione %(\<ItemCollection.ItemMetaDataName>) per qualificare completamente il valore dei metadati degli elementi da usare per la suddivisione in batch.
@@ -57,9 +57,9 @@ Per esempi più specifici della suddivisione in batch, vedere [Metadati degli el
 
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione
 
-MSBuild verifica se gli input e gli output di una destinazione sono aggiornati prima di eseguire la destinazione. Se sia gli input che gli output sono aggiornati, la destinazione viene ignorata. Se un'attività all'interno di una destinazione usa l'invio in batch, MSBuild deve determinare se gli input e gli output per ogni batch di elementi sono aggiornati. In caso contrario, la destinazione viene eseguita ogni volta che viene raggiunta.
+MSBuild controlla se gli input e gli output di una destinazione sono aggiornati prima di eseguire la destinazione. Se sia gli input che gli output sono aggiornati, la destinazione viene ignorata. Se un'attività all'interno di una destinazione usa l'invio in batch, MSBuild deve determinare se gli input e gli output per ogni batch di elementi sono aggiornati. In caso contrario, la destinazione viene eseguita ogni volta che viene raggiunta.
 
-L'esempio seguente illustra un elemento `Target` che contiene un attributo `Outputs` con la notazione %(\<ItemMetaDataName>). MSBuild suddividerà l'elenco di elementi `Example` in batch in base ai metadati dell'elemento `Color` e analizzerà i timestamp dei file di output per ogni batch. Se gli output di un batch non sono aggiornati, la destinazione viene eseguita. In caso contrario, la destinazione viene ignorata.
+L'esempio seguente illustra un elemento `Target` che contiene un attributo `Outputs` con la notazione %(\<ItemMetaDataName>). MSBuild dividerà `Example` l'elenco di elementi `Color` in batch in base ai metadati dell'elemento e analizzerà i timestamp dei file di output per ogni batch. Se gli output di un batch non sono aggiornati, la destinazione viene eseguita. In caso contrario, la destinazione viene ignorata.
 
 ```xml
 <Project

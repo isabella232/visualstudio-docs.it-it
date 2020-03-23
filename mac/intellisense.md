@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75405813"
 ---
 # <a name="intellisense"></a>IntelliSense
@@ -23,21 +23,21 @@ Quando si digita in un file supportato, ad esempio un file di codice C#, i compl
 
 La finestra di completamento offre anche il supporto per filtrare i completamenti inclusi in base al tipo. Ad esempio, è possibile limitare i membri dell'elenco per rappresentare solo i tipi come classi o delegati. Questo processo di filtro può essere abilitato facendo clic su un'icona specifica che rappresenta il tipo che verrà filtrato o tramite scelte rapide da tastiera corrispondenti a un tipo specificato. Le icone, disponibili nella parte inferiore della finestra di completamento, sono le seguenti:
 
-| Icona                         | Name          | Parola chiave    | Tasto di scelta rapida |
+| Icona                         | Nome          | Parola chiave    | Tasto di scelta rapida |
 | -----------------------------|---------------| -----------|--------|
-| ![Icona di classe](media/classes-icon.png)  | classe         | `class`    |  ⌥C
+| ![Icona di classe](media/classes-icon.png)  | class         | `class`    |  ⌥C
 | ![Icona Costante](media/constant-icon.png) | constant      | `const`    |  ⌥O
-| ![Icona di delegato](media/delegate-icon.png) | delegate      | `delegate` |  ⌥D
+| ![Icona di delegato](media/delegate-icon.png) | delegato      | `delegate` |  ⌥D
 | ![Icona di enumerazione](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
-| ![Icona di evento](media/event-icon.png)    | event         |            |  ⌥V
+| ![Icona di evento](media/event-icon.png)    | evento         |            |  ⌥V
 | ![Icona Campo](media/fields-icon.png)   | campo         |            |  ⌥F
-| ![Icona di interfaccia](media/interface-icon.png)| Interfaccia     | `interface`|  ⌥I
-| ![Icona di parola chiave](media/keyword-icon.png)  | keyword       |            |  ⌥K
+| ![Icona di interfaccia](media/interface-icon.png)| interfaccia     | `interface`|  ⌥I
+| ![Icona di parola chiave](media/keyword-icon.png)  | parola chiave       |            |  ⌥K
 | ![Icona di metodo](media/method-icon.png)   | method        |            |  ⌥M
-| ![Icona di spazio dei nomi](media/namespace-icon.png)| Spazio dei nomi     | `namespace`|  ⌥N
-| ![Icona di proprietà](media/props-icon.png)    | property      |            |  ⌥P
-| ![Icona di frammento di codice](media/snippet-icon.png)  | frammento       | `class`    |  ⌥S
-| ![Icona di struct](media/struct-icon.png)   | Struttura     | `struct`   |  ⌥S
+| ![Icona di spazio dei nomi](media/namespace-icon.png)| spazio dei nomi     | `namespace`|  ⌥N
+| ![Icona di proprietà](media/props-icon.png)    | proprietà      |            |  ⌥P
+| ![Icona di frammento di codice](media/snippet-icon.png)  | frammento di codice       | `class`    |  ⌥S
+| ![Icona di struct](media/struct-icon.png)   | structure     | `struct`   |  ⌥S
 
 Facendo clic su una delle icone o premendo i tasti di scelta rapida corrispondenti, l'elenco di completamento sarà limitato solo ai tipi definiti dal set di filtri.  
 

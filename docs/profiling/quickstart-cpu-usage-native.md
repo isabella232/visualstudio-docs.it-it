@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5912e433f4d2bc05dc4e460456c8858af82183f6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 58c91590e751970f9291c8e13ccb9fc2abcc8728
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279227"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550083"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Avvio rapido: Analizzare i dati d'uso della CPU in Visual Studio (C++)
 
@@ -33,25 +33,25 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 1. Aprire Visual Studio e creare il progetto.
 
    ::: moniker range="vs-2017"
-   Dalla barra dei menu in alto scegliere **File** > **nuovo** > **progetto**.
+   Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**.
 
-   Nella finestra di dialogo **nuovo progetto** nel riquadro sinistro espandere oggetto **C++visivo**, quindi scegliere desktop di **Windows**. Nel riquadro centrale scegliere **applicazione console di Windows**. Assegnare al progetto il nome *Diagnostics_Get_Started_Native*.
+   Nella finestra di dialogo **Nuovo progetto,** nel riquadro sinistro, espandere **Visual C,** quindi scegliere Desktop di **Windows**. Nel riquadro centrale scegliere **Applicazione console Windows**. Assegnare quindi un nome al progetto *Diagnostics_Get_Started_Native*.
 
-   Se il modello di progetto **applicazione console di Windows** non è visualizzato, scegliere il collegamento **Apri programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **nuovo progetto** . Verrà avviato il Programma di installazione di Visual Studio. Scegliere lo **sviluppo desktop con C++**  carico di lavoro, quindi scegliere **modifica**.
+   Se il modello di progetto **Applicazione console** di Windows non è visualizzato, scegliere il collegamento Apri programma di installazione di **Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto.** Verrà avviato il Programma di installazione di Visual Studio. Scegliere lo sviluppo di desktop con il carico di lavoro **di C,** quindi scegliere **Modifica**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Se la finestra di avvio non è aperta, scegliere **File** > **finestra Start**.
+   Se la finestra di avvio non è aperta, scegliere **Finestra di avvio** **file** > .
 
-   Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+   Nella finestra di avvio scegliere **Crea un nuovo progetto.**
 
-   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere **C++** quindi dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma.
+   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Successivamente, scegliere **C ,** dall'elenco Lingua e quindi scegliere **Windows** dall'elenco Piattaforma.
 
-   Dopo aver applicato la lingua e i filtri della piattaforma, scegliere il modello **applicazione console** e quindi fare clic su **Avanti**.
+   Dopo aver applicato i filtri lingua e piattaforma, scegliere il modello **App console** e quindi **Avanti**.
 
    > [!NOTE]
-   > Se il modello di **applicazione console** non è visibile, è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Quindi, nella programma di installazione di Visual Studio scegliere lo **sviluppo di applicazioni desktop con C++**  carico di lavoro.
+   > Se il modello **App console** non è visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto.** Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Quindi, nel programma di installazione di Visual Studio, scegliere lo **sviluppo del Desktop con** il carico di lavoro di C .
 
-   Nella finestra **Configura nuovo progetto** Digitare o immettere *Diagnostics_Get_Started_Native* nella casella **nome progetto** . Scegliere **Crea**.
+   Nella finestra **Configura il nuovo progetto digitare** o immettere *Diagnostics_Get_Started_Native* nella casella **Nome progetto.** Scegliere quindi **Crea,** quindi Crea .
 
    ::: moniker-end
 
@@ -140,20 +140,22 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 2. Impostare quindi un secondo punto di interruzione sulla parentesi graffa di chiusura alla fine della funzione `main`:
 
-     ![Imposta punti di interruzione per la profilatura](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Impostare i punti di interruzione per la profilatura")
+     ![Impostare i punti di interruzione per la profilatura](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Impostare i punti di interruzione per la profilatura")
 
-    > [!TIP]
-    > Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
+    Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
 
-3. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
+    >[!TIP]
+    > Quando viene sospesa in corrispondenza di un punto di interruzione o di un'operazione di creazione del codice, è anche possibile analizzare le prestazioni utilizzando [PerfTips](../profiling/perftips.md).
 
-4. Fare clic su **Debug** > **Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
+3. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare nuovamente la finestra, fare clic su **Debug** > di**Windows** > **Mostra strumenti**di diagnostica .
+
+4. Fare clic su **Debug** > **di avvio** (o **Avvia** sulla barra degli strumenti o **F5**).
 
      Al termine del caricamento dell'applicazione viene visualizzata la vista **Riepilogo** degli strumenti di diagnostica.
 
 5. Quando il debugger è in pausa, abilitare la raccolta dei dati relativi all'utilizzo della CPU scegliendo **Registra profilo CPU**, quindi aprire la scheda **Utilizzo CPU**.
 
-     ![Strumenti di diagnostica Abilita profilatura CPU](../profiling/media/quickstart-cpu-usage-summary.png "Abilitazione profilatura CPU in Strumenti di diagnostica")
+     ![Abilitazione profilatura CPU in Strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-summary.png "Abilitazione profilatura CPU in Strumenti di diagnostica")
 
      Quando la raccolta dei dati è abilitata, il pulsante di registrazione visualizza un cerchio rosso.
 
@@ -175,7 +177,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 1. Nell'elenco delle funzioni esaminare le funzioni che eseguono il maggior numero di operazioni.
 
-     ![Scheda utilizzo CPU strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUsageTab")
+     ![Scheda Utilizzo CPU degli strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUsageTab")
 
     > [!TIP]
     > Le funzioni sono elencate in ordine a partire da quelle che svolgono la maggior parte del lavoro (non sono in ordine di chiamata). Ciò consente di identificare rapidamente le funzioni in esecuzione da più tempo.
@@ -184,7 +186,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
     Quando si fa doppio clic su una funzione viene aperta la visualizzazione **Chiamante/chiamato** nel riquadro a sinistra.
 
-    ![Visualizzazione chiamata del chiamante degli strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
+    ![Visualizzazione Chiamante/chiamato in Strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
     In questa visualizzazione la funzione selezionata viene visualizzata nell'intestazione e nella casella **Funzione corrente** (in questo esempio `getNumber`). La funzione che ha chiamato la funzione corrente viene visualizzata a sinistra, sotto **Funzioni chiamanti**, e tutte le funzioni chiamate dalla funzione corrente sono riportate nella casella **Funzioni chiamate** sulla destra. Selezionare una delle due caselle per modificare la funzione corrente.
 

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596515"
 ---
 # <a name="class-designer-errors"></a>Errori di Progettazione classi
@@ -48,4 +48,4 @@ Nelle risorse seguenti è possibile trovare assistenza per altri errori e avvisi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Progettazione e visualizzazione di classi e tipi](designing-and-viewing-classes-and-types.md)
+- [Progettare e visualizzare classi e tipi](designing-and-viewing-classes-and-types.md)

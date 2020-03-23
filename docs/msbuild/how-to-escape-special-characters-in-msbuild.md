@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9958ae93e2605ad3c89decb4ac9fabc18102148
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633876"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Procedura: Usare caratteri di escape speciali in MSBuild
 
-Alcuni caratteri hanno un significato particolare nei file di progetto di MSBuild. Tra gli esempi di carattere sono inclusi il punto e virgola (`;`) e l'asterisco (`*`). Per un elenco completo di questi caratteri speciali, vedere [Caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md).
+Alcuni caratteri hanno un significato particolare nei file di progetto di MSBuild. Tra gli esempi di carattere sono inclusi il punto e virgola (`;`) e l'asterisco (`*`). Per un elenco completo di questi caratteri speciali, vedere [caratteri speciali MSBuild](../msbuild/msbuild-special-characters.md).
 
 Per usare questi caratteri speciali come valori letterali in un file di progetto, è necessario specificarli usando la sintassi `%<xx>`, dove `<xx>` rappresenta il valore esadecimale ASCII del carattere.
 
@@ -34,7 +34,7 @@ I caratteri speciali sono usati, ad esempio, nell'attributo `Include` degli elen
 <Compile Include="MyFile.cs;MyClass.cs"/>
 ```
 
-Se si desidera dichiarare un elemento che contiene un punto e virgola nel nome, è necessario utilizzare la sintassi `%<xx>` per eseguire l'escape del punto e virgola e impedire a MSBuild di dichiarare due elementi distinti. L'elemento seguente, ad esempio, usa il carattere di escape per il punto e virgola e dichiara un solo elemento denominato `MyFile.cs;MyClass.cs`.
+Se si desidera dichiarare un elemento che contiene un punto `%<xx>` e virgola nel nome, è necessario utilizzare la sintassi per eseguire l'escape del punto e virgola e impedire a MSBuild di dichiarare due elementi separati. L'elemento seguente, ad esempio, usa il carattere di escape per il punto e virgola e dichiara un solo elemento denominato `MyFile.cs;MyClass.cs`.
 
 ```xml
 <Compile Include="MyFile.cs%3BMyClass.cs"/>
@@ -53,4 +53,4 @@ Usare la notazione `%<xx>` al posto del carattere speciale, dove `<xx>` rapprese
 ## <a name="see-also"></a>Vedere anche
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [Items](../msbuild/msbuild-items.md)
+- [Elementi](../msbuild/msbuild-items.md)

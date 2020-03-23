@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591086"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
@@ -30,9 +30,9 @@ I modelli per più progetti funzionano in modo diverso rispetto ai modelli per p
 
 Un modello per più progetti deve includere gli elementi seguenti, compressi in un file con estensione *zip*:
 
-- Un file radice con estensione *vstemplate* per l'intero modello per più progetti. Questo file radice con estensione *vstemplate* contiene metadati che vengono visualizzati nella finestra di dialogo in cui si crea un nuovo progetto. Specifica inoltre dove trovare i file con estensione *vstemplate* per i progetti nel modello. Questo file deve trovarsi nella radice del file con estensione *zip*.
+- Un file *vstemplate* radice per l'intero modello multiprogetto. Questo file radice con estensione *vstemplate* contiene metadati che vengono visualizzati nella finestra di dialogo in cui si crea un nuovo progetto. Specifica inoltre dove trovare i file con estensione *vstemplate* per i progetti nel modello. Questo file deve trovarsi nella radice del file con estensione *zip*.
 
-- Due o più cartelle che contengono i file necessari per un modello di progetto completo. Le cartelle includono tutti i file di codice per il progetto e un file con estensione *vstemplate* per il progetto.
+- Due o più cartelle che contengono i file necessari per un modello di progetto completo. Le cartelle includono tutti i file di codice per il progetto e anche un file *vstemplate* per il progetto.
 
 Ad esempio, il file con estensione *zip* di un modello per più progetti con due progetti può includere i file e le directory seguenti:
 
@@ -44,7 +44,7 @@ Ad esempio, il file con estensione *zip* di un modello per più progetti con due
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.vb*
 
-Il file radice con estensione *vstemplate* per un modello per più progetti differisce da un modello per progetto singolo nei modi seguenti:
+Il file vstemplate radice per un modello multiprogetto differisce da un modello a progetto singolo nei modi seguenti:The root *vstemplate* file for a multi-project template differs from a single-project template in the following ways:
 
 - L'attributo **Tipo** dell'elemento**VSTemplate** ha il valore **ProjectGroup** anziché **Project**. Ad esempio:
 
@@ -88,19 +88,19 @@ Il file radice con estensione *vstemplate* per un modello per più progetti diff
 2. Personalizzare i progetti fino a quando non sono pronti per essere esportati in un modello.
 
    > [!TIP]
-   > Se si usano [parametri di modello](template-parameters.md) e si vuole fare riferimento alle variabili del modello padre, aggiungere il prefisso `ext_` al nome del parametro. Ad esempio `$ext_safeprojectname$`. Impostare inoltre l'attributo **CopyParameters** dell'elemento **ProjectTemplateLink** su **true**.
+   > Se si usano [parametri di modello](template-parameters.md) e si vuole fare riferimento alle variabili del modello padre, aggiungere il prefisso `ext_` al nome del parametro. Ad esempio: `$ext_safeprojectname$`. Impostare inoltre l'attributo **CopyParameters** dell'elemento **ProjectTemplateLink** su **true**.
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
    > ```
 
-3. Nel menu **Progetto** scegliere**Esporta modello**.
+3. Scegliere **Esporta modello**dal menu **Progetto** .
 
-   Viene aperta l'**Esportazione guidata modelli**.
+   Verrà **visualizzata l'Esportazione guidata modelli.**
 
 4. Nella pagina **Scegliere il tipo di modello** selezionare **Modello di progetto**. Selezionare uno dei progetti che si vuole esportare in un modello e quindi scegliere **Avanti**. È possibile ripetere questi passaggi per ogni progetto della soluzione.
 
-5. Nella pagina **Selezionare le opzioni del modello** immettere il nome e una descrizione, un'icona e un'immagine di anteprima facoltative per il modello. Scegliere **Fine**.
+5. Nella pagina **Selezione opzioni modello** immettere un nome e una descrizione facoltativa, un'icona e un'immagine di anteprima per il modello. Scegliere **Fine**.
 
    Il progetto viene esportato in un file con estensione *zip* e inserito nel percorso di output specificato.
 
@@ -111,19 +111,19 @@ Il file radice con estensione *vstemplate* per un modello per più progetti diff
 
 7. Estrarre il contenuto del file con estensione *zip* di ogni progetto nella sottodirectory corrispondente appena creata.
 
-8. Nella directory di base creare un file XML con estensione *vstemplate*. Questo file contiene i metadati del modello per più progetti. Vedere l'esempio che segue per la struttura del file. Assicurarsi di specificare il percorso relativo di ogni file con estensione *vstemplate*.
+8. Nella directory di base creare un file XML con estensione *vstemplate*. Questo file contiene i metadati del modello per più progetti. Vedere l'esempio che segue per la struttura del file. Assicurarsi di specificare il percorso relativo del file *vstemplate* di ogni progetto.
 
-9. Selezionare tutti i file nella directory base, quindi facendo clic con il pulsante destro del mouse o dal menu di scelta rapida scegliere **Invia a** > **Cartella compressa**.
+9. Selezionare tutti i file nella directory di base e scegliere **Invia a** > **cartella compressa**dal menu di scelta rapida o dal pulsante destro del mouse.
 
    I file e le cartelle vengono compressi in un file con estensione *zip*.
 
 10. Copiare il file con estensione *zip* nella directory del modello di progetto utente. Per impostazione predefinita la directory è *%USERPROFILE%\Documents\Visual Studio \<versione\>\Templates\ProjectTemplates*.
 
-11. In Visual Studio scegliere **File** > **Nuovo** > **Progetto** e verificare che sia visualizzato il modello.
+11. In Visual Studio scegliere **File** > **nuovo** > **progetto** e verificare che venga visualizzato il modello.
 
 ## <a name="two-project-example"></a>Esempio con due progetti
 
-Questo esempio illustra un file radice semplice con estensione *vstemplate* per più progetti. In questo esempio il modello contiene due progetti, **My Windows Application** e **My Class Library**. L'attributo **ProjectName** dell'elemento **ProjectTemplateLink** specifica il nome assegnato al progetto.
+In questo esempio viene illustrato un file *vstemplate radice* multiprogetto di base. In questo esempio il modello contiene due progetti, **My Windows Application** e **My Class Library**. L'attributo **ProjectName** dell'elemento **ProjectTemplateLink** specifica il nome assegnato al progetto.
 
 > [!TIP]
 > Se l'attributo **ProjectName** non è specificato, viene usato come nome del progetto il nome del file con estensione *vstemplate*.
@@ -188,8 +188,8 @@ Questo esempio usa l'elemento **SolutionFolder** per suddividere i progetti in d
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
-- [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
-- [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Procedura: creare modelli di progettoHow to: Create project templates](../ide/how-to-create-project-templates.md)
+- [Informazioni di riferimento sullo schema dei modelli di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
 - [Elemento SolutionFolder (modelli di Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [Elemento ProjectTemplateLink (modelli di Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

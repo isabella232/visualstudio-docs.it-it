@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591710"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedure consigliate per l'uso dei frammenti di codice
@@ -23,19 +23,19 @@ Il codice in un frammento illustra solo il modo più semplice per eseguire un'op
 
 ## <a name="handling-exceptions"></a>Gestione delle eccezioni
 
-In genere, i blocchi Try... Catch dei frammenti di codice raccolgono e rigenerano tutte le eccezioni. Questo comportamento potrebbe anche non essere idoneo al progetto in uso. Per ogni eccezione, esistono infatti modi diversi di rispondere. Per esempi, vedere [Procedura: Gestire un'eccezione usando Try/Catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Istruzione Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+In genere, i blocchi Try... Catch dei frammenti di codice raccolgono e rigenerano tutte le eccezioni. Questo comportamento potrebbe anche non essere idoneo al progetto in uso. Per ogni eccezione, esistono infatti modi diversi di rispondere. Per gli esempi, vedere [procedura: gestire un'eccezione utilizzando try/catch (C )](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Try... Prendere... Istruzione Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Percorsi dei file
 
 Quando i percorsi dei file vengono adattati all'applicazione, considerare quanto segue:
 
-- Ricerca di una posizione accessibile. È possibile che gli utenti non dispongano dell'accesso alla cartella *Programmi* del computer. Archiviare i file insieme ai file dell'applicazione potrebbe non essere la scelta corretta.
+- Ricerca di una posizione accessibile. Gli utenti potrebbero non avere accesso alla cartella *Programmi* del computer, pertanto l'archiviazione dei file con i file dell'applicazione potrebbe non funzionare.
 
-- Ricerca di una posizione sicura. Non è sicuro archiviare i file nella cartella radice (*C:\\* ). Per i dati dell'applicazione è consigliabile scegliere la cartella *Dati applicazioni*. Per i singoli dati utente, l'applicazione può creare un file per ogni utente nella cartella *Documenti*.
+- Ricerca di una posizione sicura. Non è sicuro archiviare i file nella cartella radice (*C:\\*). Per i dati dell'applicazione è consigliabile scegliere la cartella *Dati applicazioni*. Per i singoli dati utente, l'applicazione può creare un file per ogni utente nella cartella *Documenti*.
 
 - Uso di un nome di file valido. È possibile usare i controlli <xref:System.Windows.Forms.OpenFileDialog> e <xref:System.Windows.Forms.SaveFileDialog> per ridurre la probabilità di nomi di file non validi. Tenere presente che tra il momento in cui l'utente seleziona un file e il momento in cui il codice lo modifica, il file potrebbe essere eliminato. Può anche succedere che l'utente non abbia le autorizzazioni per scrivere il file.
 
-## <a name="security"></a>Sicurezza -
+## <a name="security"></a>Security
 
 In base a dove un frammento viene usato nel codice sorgente e a come viene modificato all'interno del codice, il livello di protezione cambia. Di seguito sono elencati alcuni aspetti da considerare.
 
@@ -51,7 +51,7 @@ In base a dove un frammento viene usato nel codice sorgente e a come viene modif
 
 - Passaggio dei dati a tecnologie script
 
-Per altre informazioni, vedere [Protezione delle applicazioni](../ide/securing-applications.md).
+Per ulteriori informazioni, vedere [Protezione delle applicazioni.](../ide/securing-applications.md)
 
 ## <a name="downloaded-code-snippets"></a>Frammenti di codice scaricati
 
@@ -69,6 +69,6 @@ I frammenti di codice IntelliSense installati da Visual Studio non rappresentano
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Frammenti di codice IntelliSense di Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Frammenti di codice IntelliSense di Visual BasicVisual Basic IntelliSense code snippets](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Protezione delle applicazioni](../ide/securing-applications.md)
 - [Frammenti di codice](../ide/code-snippets.md)

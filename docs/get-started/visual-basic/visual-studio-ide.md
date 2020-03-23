@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410483"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301979"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Benvenuti all'IDE di Visual Studio | Visual Basic
 
@@ -30,7 +30,7 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 ::: moniker range=">=vs-2019"
 
-[![IDE di Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
+[![L'IDE di Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -86,7 +86,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ::: moniker-end
 
-- [IntelliSense](../../ide/using-intellisense.md)
+- [Intellisense](../../ide/using-intellisense.md)
 
    IntelliSense è un termine che indica diverse funzionalità che visualizzano le informazioni sul codice direttamente nell'editor e, in alcuni casi, scrivono automaticamente piccole parti di codice. È come se si avesse a disposizione la documentazione di base all'interno dell'editor senza dover cercare le informazioni sul tipo altrove. Le funzionalità di IntelliSense variano a seconda del linguaggio. Per altre informazioni, vedere [IntelliSense per C#](../../ide/visual-csharp-intellisense.md), [IntelliSense per Visual C++](../../ide/visual-cpp-intellisense.md), [IntelliSense per JavaScript](../../ide/javascript-intellisense.md) e [IntelliSense per Visual Basic](../../ide/visual-basic-specific-intellisense.md). La figura seguente mostra come IntelliSense visualizza un elenco di membri per un tipo:
 
@@ -107,7 +107,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
    La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La casella di ricerca è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. Quando si inizia a digitare il nome di un elemento da cercare, Visual Studio visualizza risultati che consentono di passare esattamente all'elemento desiderato. Se si vuole aggiungere una funzionalità a Visual Studio, ad esempio il supporto di un altro linguaggio di programmazione, la casella di ricerca fornisce risultati che consentono di aprire il programma di installazione di Visual Studio per installare un carico di lavoro o un singolo componente.
 
    > [!TIP]
-   > Premere **CTRL**+**Q** come scelta rapida da tastiera per la casella di ricerca.
+   > Premere **Ctrl**+**Q** come collegamento alla casella di ricerca.
 
    ::: moniker range="vs-2017"
 
@@ -175,7 +175,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ::: moniker-end
 
-- [Visualizza definizione](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Definizione di sbircia](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    La finestra **Visualizza definizione** mostra la definizione di un metodo o un tipo senza aprire un file separato.
 
@@ -221,13 +221,13 @@ Per modificare il tema **Scuro**:
 
 ::: moniker range="vs-2017"
 
-1. Apri Visual Studio.
+1. Aprire Visual Studio.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Apri Visual Studio. Nella finestra iniziale scegliere **Continua senza codice**.
+1. Aprire Visual Studio. Nella finestra iniziale scegliere **Continua senza codice**.
 
    ![Finestra iniziale in Visual Studio 2019](media/vs-2019/continue-without-code.png)
 
@@ -235,9 +235,9 @@ Per modificare il tema **Scuro**:
 
 ::: moniker-end
 
-2. Dalla barra dei menu scegliere **Strumenti** > **Opzioni** per aprire la finestra di dialogo **Opzioni**.
+2. Nella barra dei menu, scegliere**Opzioni** **degli strumenti** > per aprire la finestra di dialogo **Opzioni.**
 
-3. Nella pagina delle opzioni **Ambiente** > **Generale** modificare la selezione del **Tema colori** in **Scuro** e quindi scegliere **OK**.
+3. Nella pagina delle opzioni**Generale** **ambiente** > impostare **Selezione tema colore** su **Scuro**, quindi **scegliere OK**.
 
    ![Impostare il tema colori scuro in Visual Studio](media/change-color-theme.png)
 
@@ -277,13 +277,13 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 ::: moniker range="vs-2017"
 
-1. Sulla barra dei menu di Visual Studio scegliere **File** > **nuovo progetto**.
+1. Nella barra dei menu di Visual Studio scegliere **File** > **Nuovo progetto**.
 
    ![File > Nuovo progetto sulla barra dei menu](media/file-new-project-menu.png)
 
-   Viene visualizzata la finestra di dialogo **Nuovo progetto** con vari *modelli* di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
+   Nella finestra di dialogo **Nuovo progetto** vengono visualizzati diversi *modelli*di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
-1. Scegliere la categoria **.NET Core** in **Visual Basic** e quindi scegliere il modello **App console (.NET Core)** . Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
+1. Scegliere la categoria **.NET Core** in **Visual Basic** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
    ![Modello di app .NET Core](media/overview-npd.png)
 
@@ -302,11 +302,11 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Sono disponibili altri menu e finestre degli strumenti, ma per il momento si procederà con la creazione del programma.
 
-1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **CTRL**+**F5**.
+1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **Ctrl**+**F5**.
 
    ![Menu Debug > Avvia senza eseguire debug](../media/overview-start-without-debugging.png)
 
-   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!** . Ed ecco un'app in esecuzione.
+   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
 
    ![Finestra della console](../media/overview-console-window.png)
 
@@ -327,7 +327,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
    Console.WriteLine("Hello " + name + "!")
    ```
 
-1. Eseguire nuovamente l'app premendo **CTRL**+**F5**.
+1. Eseguire nuovamente l'app premendo **Ctrl**+**F5**.
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
@@ -341,7 +341,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 ::: moniker range=">=vs-2019"
 
-1. Sulla barra dei menu di Visual Studio scegliere **File** > **nuovo progetto**.
+1. Nella barra dei menu di Visual Studio scegliere **File** > **Nuovo progetto**.
 
    ![File > Nuovo progetto sulla barra dei menu](media/vs-2019/file-new-project.png)
 
@@ -349,7 +349,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati relativi ai modelli scegliendo **Visual Basic** dall'elenco a discesa **Linguaggio**.
 
-1. Selezionare il modello**App console (.NET Core)** , quindi scegliere **Avanti**.
+1. Selezionare il modello**App console (.NET Core)**, quindi scegliere **Avanti**.
 
    ![Creare un nuovo progetto in Visual Studio](media/vs-2019/create-new-project.png)
 
@@ -369,11 +369,11 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Sono disponibili altri menu e finestre degli strumenti, ma per il momento si procederà con la creazione del programma.
 
-1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **CTRL**+**F5**.
+1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **Ctrl**+**F5**.
 
    ![Menu Debug > Avvia senza eseguire debug](media/vs-2019/start-without-debugging.png)
 
-   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!** . Ed ecco un'app in esecuzione.
+   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
 
    ![Finestra della console](../media/vs-2019/overview-console-window.png)
 
@@ -394,7 +394,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
    Console.WriteLine("Hello " + name + "!")
    ```
 
-1. Eseguire nuovamente l'app premendo **CTRL**+**F5**.
+1. Eseguire nuovamente l'app premendo **Ctrl**+**F5**.
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
@@ -418,7 +418,7 @@ In primo luogo, rinominare la variabile `name`:
 
    Si noti che viene visualizzata una casella grigia intorno a variabile e una lampadina viene visualizzata nel margine.
 
-3. Selezionare l'icona lampadina per visualizzare le [azioni rapide](../../ide/quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'** .
+3. Selezionare l'icona lampadina per visualizzare le [azioni rapide](../../ide/quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'**.
 
    ![Rinominare l'azione in Visual Studio](media/rename-quick-action.png)
 
@@ -459,7 +459,7 @@ In primo luogo, rinominare la variabile `name`:
 
 ::: moniker range="vs-2017"
 
-10. Eseguire nuovamente il programma premendo **CTRL**+**F5**. L'output è simile al seguente:
+10. Eseguire nuovamente il programma premendo **Ctrl**+**F5**. L'output è simile al seguente:
 
     ![Finestra della console con output del programma](../media/overview-console-final.png)
 
@@ -467,7 +467,7 @@ In primo luogo, rinominare la variabile `name`:
 
 ::: moniker range=">=vs-2019"
 
-10. Eseguire nuovamente il programma premendo **CTRL**+**F5**. L'output è simile al seguente:
+10. Eseguire nuovamente il programma premendo **Ctrl**+**F5**. L'output è simile al seguente:
 
     ![Finestra della console con output del programma](../media/vs-2019/overview-console-final.png)
 
@@ -485,7 +485,7 @@ Impostare un punto di interruzione per visualizzare il valore della variabile `u
 
    ![Punto di interruzione nella riga di codice in Visual Studio](media/breakpoint.png)
 
-1. Avviare il debug selezionando **Debug** > **Avvia debug** o premendo **F5**.
+1. Avviare il debug selezionando **Debug** > di**avvio** o premendo **F5**.
 
 1. Quando viene visualizzata la finestra della console e viene chiesto di immettere il nome, digitarlo e premere **INVIO**.
 
@@ -507,7 +507,7 @@ Esplorare più approfonditamente Visual Studio seguendo uno di questi articoli i
 > [Informazioni su come usare l'editor del codice](tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Introduzione a progetti e soluzioni](tutorial-projects-solutions.md)
+> [Informazioni su progetti e soluzioni](tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

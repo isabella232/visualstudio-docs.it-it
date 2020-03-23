@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: e7f331536de264186bc2977cc4acaaab02147e13
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115226"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio
@@ -89,22 +89,22 @@ In questo esempio è riportata una riga di comando per l'applicazione della lice
 
 Se `StorePID.exe` applica correttamente il codice Product Key, restituisce un `%ERRORLEVEL%` pari a 0. Se si verificano errori, verrà restituito uno dei codici seguenti, a seconda della condizione di errore:
 
-| Errore di                     | Codice |
+| Errore                     | Codice |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |
 | `PID_ACTION_INVALID`      | 2    |
-| `PID_ACTION_EXPIRED`      | 3\.    |
+| `PID_ACTION_EXPIRED`      | 3    |
 | `PID_ACTION_INUSE`        | 4    |
 | `PID_ACTION_FAILURE`      | 5    |
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> Quando si esegue un'istanza virtuale di Visual Studio, assicurarsi di virtualizzare anche la cartella AppData locale e il registro di sistema. Per risolvere i problemi relativi alle istanze virtuali, eseguire `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`.  
+> Quando si esegue un'istanza virtuale di Visual Studio, assicurarsi di virtualizzare anche la cartella AppData locale e il Registro di sistema. Per risolvere i `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`problemi relativi alle istanze virtuali, eseguire .  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Install Visual Studio](../install/install-visual-studio.md) (Installare Visual Studio)
-* [Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)
+* [Installare Visual Studio](../install/install-visual-studio.md)
+* [Creare un'installazione offline di Visual StudioCreate an offline installation of Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)

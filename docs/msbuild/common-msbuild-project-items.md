@@ -16,28 +16,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634448"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 
-In MSBuild un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in Visual Studio hanno più elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd*.
+In MSBuild, un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in Visual Studio hanno diversi elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd*.
 ## <a name="common-items"></a>Elementi comuni
 
  Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 
-### <a name="reference"></a>Riferimento
+### <a name="reference"></a>Informazioni di riferimento
 
  Rappresenta un riferimento all'assembly (gestito) nel progetto.
 
 |Nome metadati degli elementi|Descrizione|
 |---------------|-----------------|
 |HintPath|Stringa facoltativa. Percorso relativo o assoluto dell'assembly.|
-|Name|Stringa facoltativa. Il nome visualizzato dell'assembly, ad esempio "System.Windows.Forms".|
+|Nome|Stringa facoltativa. Il nome visualizzato dell'assembly, ad esempio "System.Windows.Forms".|
 |FusionName|Stringa facoltativa. Specifica il nome Fusion semplice o sicuro per l'elemento.<br /><br /> Questo attributo, se specificato, consente di risparmiare tempo in quanto non comporta l'apertura del file di assembly per ottenere il nome Fusion.|
 |SpecificVersion|Valore booleano facoltativo. Specifica se è necessario fare riferimento solo alla versione nel nome Fusion.|
 |Alias|Stringa facoltativa. Gli alias per il riferimento.|
@@ -49,7 +49,7 @@ Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 
 |Nome metadati degli elementi|Descrizione|
 |---------------|-----------------|
-|Name|Stringa facoltativa. Nome visualizzato del componente|
+|Nome|Stringa facoltativa. Nome visualizzato del componente|
 |Guid|Stringa obbligatoria. GUID per il componente, nel formato {12345678-1234-1234-1234-1234567891234}.|
 |VersionMajor|Stringa obbligatoria. La parte principale del numero di versione del componente. Ad esempio, "5" se il numero di versione completo è "5.46".|
 |VersionMinor|Stringa obbligatoria. La parte secondaria del numero di versione del componente. Ad esempio, "46" se il numero di versione completo è "5.46."|
@@ -71,7 +71,7 @@ Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 
 |Nome metadati degli elementi|Descrizione|
 |---------------|-----------------|
-|Name|Stringa obbligatoria. Il nome base del file manifesto.|
+|Nome|Stringa obbligatoria. Il nome base del file manifesto.|
 |HintPath|Stringa obbligatoria. Il percorso relativo del file manifesto.|
 
 ### <a name="projectreference"></a>ProjectReference
@@ -80,22 +80,22 @@ Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 
 |Nome metadati degli elementi|Descrizione|
 |---------------|-----------------|
-|Name|Stringa facoltativa. Nome visualizzato del riferimento.|
-|Progetto|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|
+|Nome|Stringa facoltativa. Nome visualizzato del riferimento.|
+|Project|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|
 |Pacchetto|Stringa facoltativa. Il percorso del file di progetto a cui viene fatto riferimento.|
 |ReferenceOutputAssembly|Valore booleano facoltativo. Se impostato su `false`, non include l'output del progetto a cui si fa riferimento come [riferimento](#reference) del progetto, ma assicura che l'altro progetto venga compilato prima di questo. L'impostazione predefinita è `true`.|
 
-### <a name="compile"></a>Compile
+### <a name="compile"></a>Compilazione
 
  Rappresenta i file di origine per il compilatore.
 
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta. |
-| AutoGen | Valore booleano facoltativo. Indica se il file è stato generato per il progetto da Visual Studio Integrated Development Environment (IDE). |
+| AutoGen | Valore booleano facoltativo. Indica se il file è stato generato per il progetto dall'ambiente di sviluppo integrato (IDE) di Visual Studio. |
 | Collegamento | Stringa facoltativa. Il percorso di annotazione che viene visualizzato quando il file si trova fisicamente fuori dall'influenza del file di progetto. |
-| Visibile | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
-| CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
+| Visible | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
+| CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. Mai<br />2. Sempre<br />3. PreserveNewest |
 
 ### <a name="embeddedresource"></a>EmbeddedResource
 
@@ -108,8 +108,8 @@ Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 | LastGenOutput | Stringa obbligatoria. Il nome del file che è stato creato da qualsiasi generatore di file eseguito sull'elemento. |
 | CustomToolNamespace | Stringa obbligatoria. Lo spazio dei nomi in cui qualsiasi generatore di file eseguito su questo elemento deve creare codice. |
 | Collegamento | Stringa facoltativa. Il percorso di annotazione che viene visualizzato se il file si trova fisicamente fuori dall'influenza del progetto. |
-| Visibile | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
-| CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
+| Visible | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
+| CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. Mai<br />2. Sempre<br />3. PreserveNewest |
 | LogicalName | Stringa obbligatoria. Nome logico della risorsa incorporata. |
 
 ### <a name="content"></a>Contenuto
@@ -125,10 +125,10 @@ Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 | Collegamento | Stringa facoltativa. Il percorso di annotazione che viene visualizzato quando il file si trova fisicamente fuori dall'influenza del progetto. |
 | PublishState | Stringa obbligatoria. Lo stato di pubblicazione del contenuto, che può essere:<br /><br /> - Impostazione predefinita<br />- Incluso<br />- Escluso<br />- DataFile<br />- Prerequisito |
 | IsAssembly | Valore booleano facoltativo. Specifica se il file è un assembly. |
-| Visibile | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
-| CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
+| Visible | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
+| CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. Mai<br />2. Sempre<br />3. PreserveNewest |
 
-### <a name="none"></a>None
+### <a name="none"></a>nessuno
 
  Rappresenta i file che non hanno un ruolo nel processo di compilazione.
 
@@ -139,20 +139,20 @@ Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 | LastGenOutput | Stringa obbligatoria. Il nome del file che è stato creato da qualsiasi generatore di file eseguito sull'elemento. |
 | CustomToolNamespace | Stringa obbligatoria. Lo spazio dei nomi in cui qualsiasi generatore di file eseguito su questo elemento deve creare codice. |
 | Collegamento | Stringa facoltativa. Il percorso di annotazione che viene visualizzato quando il file si trova fisicamente fuori dall'influenza del progetto. |
-| Visibile | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
-| CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
+| Visible | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
+| CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. Mai<br />2. Sempre<br />3. PreserveNewest |
 
 ### <a name="assemblymetadata"></a>AssemblyMetadata
 
- Rappresenta gli attributi di assembly da generare come `[AssemblyMetadata(key, value)]`.
+ Rappresenta gli attributi dell'assembly da generare come `[AssemblyMetadata(key, value)]`.
 
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
-| Includi | Diventa il primo parametro (chiave) nel costruttore dell'attributo `AssemblyMetadataAttribute`. |
-| Valore | Stringa obbligatoria. Diventa il secondo parametro (valore) nel costruttore dell'attributo `AssemblyMetadataAttribute`. |
+| Includi | Diventa il primo parametro (la chiave) nel costruttore dell'attributo. `AssemblyMetadataAttribute` |
+| valore | Stringa obbligatoria. Diventa il secondo parametro (il valore) nel costruttore dell'attributo. `AssemblyMetadataAttribute` |
 
 > [!NOTE]
-> Questo vale per i progetti che usano solo la .NET Core SDK.
+> Questo vale solo per i progetti che usano .NET Core SDK.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
@@ -162,10 +162,10 @@ Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 
  Rappresenta il progetto FxCop da importare.
 
-### <a name="import"></a>Import
+### <a name="import"></a>Importa
 
  Rappresenta gli assembly i cui spazi dei nomi devono essere importati dal compilatore Visual Basic.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Proprietà di progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md)
+- [Proprietà comuni del progetto MSBuildCommon MSBuild project properties](../msbuild/common-msbuild-project-properties.md)

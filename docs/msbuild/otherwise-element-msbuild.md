@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633044"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 
 Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gli elementi `When` restituiscono `false`.
 
- \<progetto > \<scegliere > \<quando > \<scegliere >... \<in caso contrario > \<scegliere >...
+ \<Progetto \<> \<scegliere \<> quando> sceglie> ... \<Altrimenti \<> Scegli> ...
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
 
- Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributes
 
@@ -53,7 +53,7 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|Elemento facoltativo.<br /><br /> Valuta gli elementi figlio per selezionare una sezione del codice da eseguire. Possono esistere zero o più elementi `Choose` in un elemento `Otherwise`.|
+|[Scegliere](../msbuild/choose-element-msbuild.md)|Elemento facoltativo.<br /><br /> Valuta gli elementi figlio per selezionare una sezione del codice da eseguire. Possono esistere zero o più elementi `Choose` in un elemento `Otherwise`.|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento facoltativo.<br /><br /> Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Possono esistere zero o più elementi `ItemGroup` in un elemento `Otherwise`.|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento facoltativo.<br /><br /> Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) definiti dall'utente. Possono esistere zero o più elementi `PropertyGroup` in un elemento `Otherwise`.|
 
@@ -61,11 +61,11 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|Valuta gli elementi figlio per selezionare una sezione del codice da eseguire.|
+|[Scegliere](../msbuild/choose-element-msbuild.md)|Valuta gli elementi figlio per selezionare una sezione del codice da eseguire.|
 
 ## <a name="remarks"></a>Osservazioni
 
- In un elemento `Otherwise` può esistere un solo un elemento `Choose` ed è necessario che sia l'ultimo.
+ In un elemento `Choose` può esistere un solo un elemento `Otherwise` ed è necessario che sia l'ultimo.
 
  Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md).
 
@@ -121,4 +121,4 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 ## <a name="see-also"></a>Vedere anche
 
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
-- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)

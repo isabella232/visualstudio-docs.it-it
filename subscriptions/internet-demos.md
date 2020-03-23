@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni sull'uso di codici Product Key per supportare dimostrazioni via Internet tramite Servizi terminal e abilitare l'accesso tramite Servizi Desktop remoto
 ms.openlocfilehash: c02bce8fe098c75f0405fdd4e9ba5f0f143401fa
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937466"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Dimostrazioni via Internet tramite Servizi terminal
@@ -19,7 +19,7 @@ Con una sottoscrizione di Visual Studio è possibile offrire agli utenti finali 
 Si tratta di un'aggiunta ai diritti di sviluppo/test, che consente ai sottoscrittori di Visual Studio di usare il numero necessario di connessioni Servizi Desktop remoto o Servizi terminal.
 
 ## <a name="enabling-rds-access"></a>Abilitazione dell'accesso tramite Servizi Desktop remoto
-I sottoscrittori di Visual Studio possono aumentare il numero di utenti che sono autorizzati ad accedere a Windows Server tramite Servizi Desktop remoto immettendo un codice Product Key specificato nella scheda [Codici "Product Key"](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) nel [portale sottoscrittore](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Per ottenere un codice Product Key, connettersi alla pagina Codici "Product Key" e scorrere verso il basso fino a individuare la versione di Windows Server in esecuzione. Individuare la voce relativa alle connessioni di Servizi Desktop remoto < utente o dispositivo > di Windows Server **<** versione {3}>{4} R2 e quindi fare clic sul collegamento {5}Claim Key{6} (Richiedi codice Product Key). Ad esempio, se si usa Servizi Desktop remoto su Windows Server 2012 R2 e la distribuzione usa licenze CAL di tipo utente, scegliere la voce relativa alle connessioni di tipo utente di Servizi Desktop remoto di Windows Server 2012 (50).
+I sottoscrittori di Visual Studio possono aumentare il numero di utenti che sono autorizzati ad accedere a Windows Server tramite Servizi Desktop remoto immettendo un codice Product Key specificato nella scheda [Codici "Product Key"](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) nel [portale sottoscrittore](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Per ottenere un codice Product Key, connettersi alla pagina Codici "Product Key" e scorrere verso il basso fino a individuare la versione di Windows Server in esecuzione. Individuare la voce relativa alle connessioni di Servizi Desktop remoto < utente o dispositivo > di Windows Server < versione > R2 e quindi fare clic sul collegamento Claim Key (Richiedi codice Product Key). Ad esempio, se si usa Servizi Desktop remoto su Windows Server 2012 R2 e la distribuzione usa licenze CAL di tipo utente, scegliere la voce relativa alle connessioni di tipo utente di Servizi Desktop remoto di Windows Server 2012 (50).
 Sono disponibili cinque codici di ogni tipo per Windows Server 2008 R2 e ogni codice supporterà 20 connessioni. Per Windows Server 2012 R2 sono disponibili quattro codici per ogni tipo e ogni codice supporterà 50 connessioni.
 
 ## <a name="to-enable-additional-connections-in-windows-server"></a>Per abilitare connessioni aggiuntive in Windows Server:
@@ -35,9 +35,9 @@ Gli utenti finali possono connettersi per accedere alle applicazioni tramite Ser
 - I codici Product Key per abilitare le connessioni utente devono essere ottenuti da un sottoscrittore di Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
-- [Windows Server documentazione](https://docs.microsoft.com/windows-server/)
+- [Documenation di Windows Server](https://docs.microsoft.com/windows-server/)
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

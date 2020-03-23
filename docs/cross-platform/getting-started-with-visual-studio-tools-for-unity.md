@@ -11,15 +11,15 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408797"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302273"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Introduzione a Visual Studio Tools per Unity
 
-## <a name="install-visual-studio"></a>Installare Visual Studio
+## <a name="install-visual-studio"></a>Installazione di Visual Studio
 
 ### <a name="unity-bundled-installation"></a>Installazione di Unity in bundle
 

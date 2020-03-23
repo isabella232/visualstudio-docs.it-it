@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75590215"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Informazioni su progetti e soluzioni di Visual Basic
@@ -25,21 +25,21 @@ Questa articolo introduttivo spiega che cosa significa creare una *soluzione* e 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+> Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+> Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
 Una soluzione e un progetto verranno creati da zero, in un esercizio didattico che favorisce la comprensione del concetto di progetto. Nell'uso generico di Visual Studio è probabile che si usino alcuni dei numerosi *modelli* di progetto resi disponibili da Visual Studio per la creazione di un nuovo progetto.
 
 > [!NOTE]
-> Non è obbligatorio usare soluzioni e progetti per sviluppare app in Visual Studio. È anche possibile aprire semplicemente una cartella che contiene il codice e avviare la codifica, la compilazione e il debug. Se, ad esempio, si clona un repository di [GitHub](https://github.com/), è possibile che questo non contenga soluzioni e progetti di Visual Studio. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
+> Non è obbligatorio usare soluzioni e progetti per sviluppare app in Visual Studio. È anche possibile aprire semplicemente una cartella che contiene il codice e avviare la codifica, la compilazione e il debug. Ad esempio, se si clona un repository [GitHub,](https://github.com/) potrebbe non contenere soluzioni e progetti di Visual Studio.For example, if you clone a GitHub repo, it might not contain Visual Studio projects and solutions. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 ## <a name="solutions-and-projects"></a>Soluzioni e progetti
 
@@ -51,9 +51,9 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 ::: moniker range="vs-2017"
 
-1. Apri Visual Studio.
+1. Aprire Visual Studio.
 
-1. Nella barra dei menu scegliere **File** > **nuovo** **progetto**>.
+1. Nella barra dei menu scegliere **File** > **Nuovo** > **progetto**.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -67,9 +67,9 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 ::: moniker range=">=vs-2019"
 
-1. Apri Visual Studio.
+1. Aprire Visual Studio.
 
-2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+2. Nella finestra di avvio scegliere **Crea un nuovo progetto.**
 
 3. Nella pagina **Crea un nuovo progetto** immettere **soluzione vuota** nella casella di ricerca, selezionare il modello **Soluzione vuota** e quindi scegliere **Avanti**.
 
@@ -87,7 +87,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 ::: moniker range="vs-2017"
 
-1. Dal menu di scelta rapida o dal menu di scelta rapida della **soluzione ' QuickSolution '** in **Esplora soluzioni**scegliere **Aggiungi** > **nuovo progetto**.
+1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
 
    Verrà aperta la finestra di dialogo **Aggiungi nuovo progetto** .
 
@@ -104,7 +104,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 ::: moniker range=">=vs-2019"
 
-1. Dal menu di scelta rapida o dal menu di scelta rapida della **soluzione ' QuickSolution '** in **Esplora soluzioni**scegliere **Aggiungi** > **nuovo progetto**.
+1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
 
    Viene visualizzata la finestra di dialogo **Aggiungi un nuovo progetto**.
 
@@ -129,7 +129,7 @@ Ora il progetto è vuoto. Aggiungiamo un file di codice.
 
 1. Nel menu di scelta rapida o nel menu a comparsa del progetto **QuickDate** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo elemento**.
 
-   Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
+   Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
 1. Espandere **Elementi comuni**, quindi scegliere **Codice**. Nel riquadro centrale scegliere il modello dell'elemento **Classe**. Assegnare il nome **Calendar** alla classe e scegliere il pulsante **Aggiungi**.
 
@@ -223,21 +223,21 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
    ![Visual Basic (codice)](media/tutorial-projects-code-vb.png)
 
-## <a name="project-properties"></a>Proprietà di progetti
+## <a name="project-properties"></a>Proprietà progetto
 
 La riga del file *Calendar.vb* contenente l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> fa riferimento al nome assembly, cioè al nome file, del progetto **QuickTest**. Il nome assembly può non corrispondere al nome del progetto. Per trovare il nome assembly di un progetto, aprire le proprietà del progetto.
 
 1. In **Esplora soluzioni** selezionare il progetto **QuickTest**. Nel menu di scelta rapida o nel menu a comparsa selezionare **Proprietà** oppure premere semplicemente **ALT**+**INVIO**. È anche possibile fare doppio clic su **Progetto** in **Esplora soluzioni**.
 
-   Le *pagine delle proprietà* per il progetto vengono aperte nella scheda **applicazione** . Le pagine delle proprietà contengono diverse impostazioni per il progetto. Si noti che il nome dell'assembly del progetto **QuickTest** è effettivamente "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
+   Le *pagine delle proprietà* per il progetto vengono aperte nella scheda **Applicazione.** Le pagine delle proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
 
-   ![Proprietà di progetti](../media/tutorial-projects-properties.png)
+   ![Proprietà progetto](../media/tutorial-projects-properties.png)
 
 1. Esplorare le altre schede delle pagine proprietà del progetto, quali **Compilazione** e **Impostazioni**. Queste schede variano a seconda del tipo di progetto.
 
 ## <a name="optional-run-the-test"></a>(Facoltativo) Eseguire il test
 
-Per verificare che l'unit test funzioni scegliere **Test** > **Esegui** > **Tutti i test** nella barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
+Se si desidera verificare il funzionamento dello unit test, scegliere**Esegui** >  **tutti** > **i test** dalla barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
 
 ![Team Explorer in Visual Studio mostra che il test è stato superato](../media/tutorial-projects-test-explorer.png)
 

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a1eec02adf0a643d7ac7e0da8a75da5328c601b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115149"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procedura: impostare più progetti di avvio
@@ -34,6 +34,6 @@ Visual Studio consente di specificare la modalità di esecuzione di più progett
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Compilare](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)
 - [Creare soluzioni e progetti](../ide/creating-solutions-and-projects.md)
 - [Gestire le proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)

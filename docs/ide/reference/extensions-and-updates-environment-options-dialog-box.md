@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7b0e1ca6d73e27f216f80054f87a35cf5389179
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114236"
 ---
-# <a name="options-dialog-box-environment--extensions"></a>Finestra di dialogo Opzioni: Environment \> Extensions
+# <a name="options-dialog-box-environment--extensions"></a>Finestra di dialogo Opzioni: Estensioni ambiente \>
 
 Usare questa pagina per impostare le opzioni relative alla modalità di esecuzione degli aggiornamenti da parte di Visual Studio e della modalità di aggiornamento e individuazione delle estensioni.
 
@@ -27,11 +27,11 @@ Se selezionato, verrà controllata periodicamente la disponibilità di aggiornam
 
 ## <a name="automatically-update-extensions"></a>Aggiorna automaticamente le estensioni
 
-Quando selezionato, gli aggiornamenti alle estensioni vengono eseguiti senza richiesta di conferma. Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Quando selezionato, gli aggiornamenti alle estensioni vengono eseguiti senza richiesta di conferma. Per ulteriori informazioni, vedere [Ricerca e utilizzo delle estensioni](../../ide/finding-and-using-visual-studio-extensions.md)di Visual Studio .
 
 ## <a name="load-per-user-extensions-when-running-as-administrator"></a>Carica estensioni per utente se eseguite come amministratore
 
-Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Per ulteriori informazioni, vedere [Ricerca e utilizzo delle estensioni](../../ide/finding-and-using-visual-studio-extensions.md)di Visual Studio .
 
 ## <a name="additional-extension-galleries"></a>Raccolte di estensioni aggiuntive
 

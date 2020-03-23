@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a22f1a9b6aa772224b217b5de4136687df1462a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594358"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedura: Eseguire lo zoom avanti su un'area del grafico nei risultati del test di carico
@@ -43,7 +43,7 @@ Per riportare i controlli zoom allo stato che consente di visualizzare la cronol
 
 Nell'illustrazione precedente, il grafico **Sistema sotto test** è stato ingrandito al fine di esaminare problemi di soglia. Le violazioni di soglia sono state abilitate tramite l'opzione **Mostra violazioni di soglia su grafico** del menu a discesa **Opzioni grafico** presente nella barra degli strumenti.
 
-Per altre informazioni, vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
+Per ulteriori informazioni, vedere Analizzare i risultati dei test di [carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="display-graphs"></a>Visualizzare i grafici
 
@@ -55,7 +55,7 @@ Per visualizzare i grafici:
 
 2. Al termine dell'esecuzione del test di carico, scegliere **Sì** nella finestra di dialogo in cui viene richiesto se visualizzare i risultati dall'archivio dei risultati del test di carico.
 
-     \- oppure -
+     \- - oppure -
 
      Visualizzare i dettagli di un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
 
@@ -73,7 +73,7 @@ Quando si visualizzano più grafici, è possibile mantenerli sincronizzati in mo
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Per sincronizzare lo zoom e lo scorrimento
 
-1. Nell'**Analizzatore test di carico** scegliere **Sincronizza controlli zoom orizzontali**.
+1. **Nell'analizzatore test di carico**scegliere **Sincronizza controlli zoom orizzontali**.
 
      Quando il pulsante **Sincronizza controlli zoom orizzontali** è selezionato, lo zoom e lo scorrimento della scala cronologica di un singolo grafico vengono applicati anche alla scala cronologica degli altri grafici.
 
@@ -115,6 +115,6 @@ Quando si visualizzano più grafici, è possibile mantenerli sincronizzati in mo
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizzare i risultati dei test di carico nella visualizzazione GraficiAnalyze load test results in the Graphs view](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Analizzare i risultati dei test di caricoAnalyze load test results](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

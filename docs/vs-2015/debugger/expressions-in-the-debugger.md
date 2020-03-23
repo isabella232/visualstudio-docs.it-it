@@ -1,5 +1,5 @@
 ---
-title: Espressioni nel debugger | Microsoft Docs
+title: Espressioni nel debugger . Documenti Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78406324"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302525"
 ---
 # <a name="expressions-in-the-debugger"></a>Espressioni nel debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Uso di funzioni intrinseche del debugger per mantenere lo stato  
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Utilizzo delle funzioni intrinseche del debugger per mantenere lo statoUsing debugger intrinsic functions to maintain state  
  Le funzioni intrinseche del debugger consentono di chiamare alcune funzioni C/C++ nelle espressioni senza modificare lo stato dell'applicazione.  
   
  Funzioni intrinseche del debugger:  
@@ -110,10 +110,10 @@ int main()
 |Area|Funzioni intrinseche|  
 |----------|-------------------------|  
 |**Lunghezza delle stringhe**|strlen, wcslen, strnlen, wcsnlen|  
-|**Confronto tra stringhe**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|  
+|**Confronto di stringhe**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|  
 |**Ricerca di stringhe**|strchr, wcschr, strstr, wcsstr|  
 |**Win32**|GetLastError(), TlsGetValue()|  
-|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Queste funzioni richiedono che il processo sottoposto a debug sia eseguito in Windows 8. Il debug dei file dump generati da un dispositivo Windows 8 richiede inoltre che nel computer Visual Studio sia eseguito Windows 8. Tuttavia, se si esegue il debug di un dispositivo Windows 8 in modalità remota, nel computer Visual Studio può essere eseguito Windows 7.|  
+|**Windows 8 (informazioni in due)**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Queste funzioni richiedono che il processo sottoposto a debug sia eseguito in Windows 8. Il debug dei file dump generati da un dispositivo Windows 8 richiede inoltre che nel computer Visual Studio sia eseguito Windows 8. Tuttavia, se si esegue il debug di un dispositivo Windows 8 in modalità remota, nel computer Visual Studio può essere eseguito Windows 7.|  
 |**Varie**|__log2<br /><br /> Restituisce il logaritmo in base 2 dell'intero specificato, arrotondato all'intero più basso più prossimo.|  
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - Espressioni non supportate  
@@ -215,7 +215,7 @@ int main()
 - Parole chiave a livello di spazio dei nomi o di modulo, ad esempio `End Sub` o `Module`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md)   
- [Context Operator (C++)](../debugger/context-operator-cpp.md)   
- [Identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md)   
+ [Identificatori di formato in C](../debugger/format-specifiers-in-cpp.md)   
+ [Operatore di contesto (C](../debugger/context-operator-cpp.md)   
+ [Identificatori di formato in CFormat Specifiers in C #](../debugger/format-specifiers-in-csharp.md)   
  [Pseudo variabili](../debugger/pseudovariables.md)

@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596216"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opzioni, Editor di testo, C#, IntelliSense
 
-Usare la pagina delle opzioni **IntelliSense** per modificare le impostazioni che hanno effetto sul comportamento di IntelliSense per C#. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** e quindi scegliere **Editor di testo** > **C#**  > **IntelliSense**.
+Usare la pagina delle opzioni **IntelliSense** per modificare le impostazioni che hanno effetto sul comportamento di IntelliSense per C#. Per accedere**C#** > a questa pagina delle opzioni, scegliere**Opzioni** **degli strumenti** > , quindi scegliere Editor di >  **testo****IntelliSense**in Visual Basic .
 
 La pagina delle opzioni **IntelliSense** include le opzioni seguenti:
 
@@ -53,7 +53,7 @@ La pagina delle opzioni **IntelliSense** include le opzioni seguenti:
 
 - Includi i frammenti quando si digita ?+TAB dopo un identificatore
 
-   Quando questa opzione è selezionata, IntelliSense aggiunge gli alias per i frammenti di codice C# all'elenco di completamento quando si preme **?** +**TAB** dopo un identificatore.
+   Quando questa opzione è selezionata, IntelliSense aggiunge gli alias per i frammenti di codice di C, all'elenco di completamento quando **?** + **La tabulazione** viene premuta dopo un identificatore
 
 ## <a name="enter-key-behavior"></a>Comportamento del tasto INVIO
 
@@ -86,4 +86,4 @@ Esegue il completamento automatico dei nomi degli oggetti per i membri seleziona
 ## <a name="see-also"></a>Vedere anche
 
 - [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-- [Uso di IntelliSense](../../ide/using-intellisense.md)
+- [Using IntelliSense](../../ide/using-intellisense.md)

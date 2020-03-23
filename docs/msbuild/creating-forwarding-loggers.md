@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634305"
 ---
 # <a name="create-forwarding-loggers"></a>Creare logger di inoltro
@@ -36,14 +36,14 @@ I logger di inoltro migliorano l'efficienza della registrazione, perché consent
 
 ## <a name="specify-a-forwarding-logger"></a>Specificare un logger di inoltro
 
- Dopo che il logger di invio è stato compilato in un assembly, è necessario indicare a MSBuild di usarlo durante le compilazioni. A tale scopo, usare le opzioni `-FileLogger`, `-FileLoggerParameters`, e `-DistributedFileLogger` insieme a *MSBuild.exe*. L'opzione `-FileLogger` comunica a *MSBuild.exe* che il logger è collegato direttamente. L'opzione `-DistributedFileLogger` indica che è presente un file di log per ogni nodo. L'opzione `-FileLoggerParameters` consente di impostare parametri per il logger di inoltro. Per informazioni sul queste e altre opzioni di *MSBuild.exe*, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
+ Dopo che il logger di inoltro è stato compilato in un assembly, è necessario indicare a MSBuild di utilizzarlo durante le compilazioni. A tale scopo, `-FileLogger` `-FileLoggerParameters`utilizzare `-DistributedFileLogger` le opzioni , e con *MSBuild.exe*. L'opzione `-FileLogger` indica *a MSBuild.exe* che il logger è collegato direttamente. L'opzione `-DistributedFileLogger` indica che è presente un file di log per ogni nodo. L'opzione `-FileLoggerParameters` consente di impostare parametri per il logger di inoltro. Per ulteriori informazioni su queste e altre opzioni di *MSBuild.exe,* vedere Informazioni di [riferimento sulla riga di comando](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="multi-processor-aware-loggers"></a>Logger compatibili con più processori
 
- Quando si compila un progetto in un sistema multiprocessore, i messaggi di compilazione di ogni processore non vengono disposti automaticamente in una sequenza unificata. È necessario stabilire una priorità di raggruppamento dei messaggi usando la classe <xref:Microsoft.Build.Framework.BuildEventContext> associata a ogni messaggio. Per altre informazioni sulla compilazione in ambienti a più processori, vedere [Registrazione in un ambiente a più processori](../msbuild/logging-in-a-multi-processor-environment.md).
+ Quando si compila un progetto in un sistema multiprocessore, i messaggi di compilazione di ogni processore non vengono disposti automaticamente in una sequenza unificata. È necessario stabilire una priorità di raggruppamento dei messaggi usando la classe <xref:Microsoft.Build.Framework.BuildEventContext> associata a ogni messaggio. Per ulteriori informazioni sulla compilazione multiprocessore, vedere [Registrazione in un ambiente multiprocessore](../msbuild/logging-in-a-multi-processor-environment.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [Logger di compilazione](../msbuild/build-loggers.md)
-- [Registrazione in un ambiente a più processori](../msbuild/logging-in-a-multi-processor-environment.md)
+- [Costruisci logger](../msbuild/build-loggers.md)
+- [Registrazione in un ambiente multiprocessoreLogging in a multi-processor environment](../msbuild/logging-in-a-multi-processor-environment.md)

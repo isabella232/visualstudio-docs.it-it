@@ -12,10 +12,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278709"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opzioni, Editor di testo, C/C++, Sperimentale
@@ -28,12 +28,12 @@ In questo articolo vengono descritte le opzioni di Visual Studio 2017. Per Visua
 
 ::: moniker-end
 
-Per accedere a questa pagina delle proprietà, premere **CTRL**+**Q** per attivare la casella di ricerca e quindi digitare **sperimentale**. La ricerca trova la pagina dopo le prime lettere. È anche possibile accedere scegliendo **Strumenti** > **Opzioni**, espandendo **Editor di testo** e **C/C++** e quindi scegliendo **Sperimentale**.
+Per accedere a questa pagina delle proprietà, premere **CTRL**+**Q** per attivare la casella di ricerca e quindi **digitare experimental**. La ricerca trova la pagina dopo le prime lettere. È inoltre possibile osali scegliendo**Opzioni** **degli** > strumenti ed espandendo **l'editor**di testo , quindi **C/C,** quindi fare clic su **Sperimentale**.
 
 In un'installazione di Visual Studio sono disponibili queste funzionalità.
 
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="enable-predictive-intellisense"></a>Abilita IntelliSense predittivo
 

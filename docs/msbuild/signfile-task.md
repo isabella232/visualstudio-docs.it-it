@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 133048a5bb8103c681d8e2b84e68033c486109e1
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: ee018b42fc23b0a520b510235117cb74729fd4b6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77632290"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094515"
 ---
 # <a name="signfile-task"></a>SignFile (attività)
 
@@ -31,7 +31,7 @@ Consente di firmare il file specificato usando il certificato specificato.
 
 ## <a name="parameters"></a>Parametri
 
- Nella tabella che segue vengono descritti i parametri dell'attività `SignFile`.
+ Nella tabella che segue vengono descritti i parametri dell'attività `SignFile` .
 
  Notare che i certificati SHA-256 sono consentiti solo in computer con .NET 4.5 e versioni successive.
 
@@ -45,13 +45,13 @@ Consente di firmare il file specificato usando il certificato specificato.
 |`TimestampUrl`|Parametro `String` facoltativo.<br /><br /> Specifica l'URL del server di timestamp.|
 |`TargetFrameworkVersion`|La versione di.NET Framework che viene usata per la destinazione.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
- Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di tali parametri aggiuntivi e le relative descrizioni, vedere [Classe di base Task](../msbuild/task-base-class.md).
+ Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe base Task](../msbuild/task-base-class.md).
 
 ## <a name="example"></a>Esempio
 
- Nell'esempio seguente viene usata l'attività `SignFile` per firmare i file specificati nella raccolta di elementi `FilesToSign` con il certificato specificato dalla proprietà `Certificate`.
+ Nell'esempio seguente viene usata l'attività `SignFile` per firmare i file specificati nella raccolta di elementi `FilesToSign` con il certificato specificato dalla proprietà `CertificateThumbprint`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

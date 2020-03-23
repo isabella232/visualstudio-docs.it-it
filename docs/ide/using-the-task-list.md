@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594227"
 ---
 # <a name="use-the-task-list"></a>Usare l'elenco attività
@@ -42,7 +42,7 @@ Per mostrare o nascondere le colonne, nel menu di scelta rapida scegliere **Most
 
 Per modificare l'ordine delle colonne, trascinare qualsiasi intestazione di colonna nella posizione desiderata.
 
-## <a name="user-tasks"></a>Attività definite dall'utente
+## <a name="user-tasks"></a>Attività dell'utente
 
 La funzionalità Attività definite dall'utente è stata rimossa a partire da Visual Studio 2015. Quando si apre una soluzione che contiene dati di attività definite dall'utente in Visual Studio 2013 e versioni precedenti, i dati contenuti nel file con estensione *suo* non vengono modificati, ma le attività definite dall'utente non vengono visualizzate nell'elenco attività.
 
@@ -104,7 +104,7 @@ Un *collegamento* è un segnalibro nel codice di cui viene tenuta traccia nell'*
 
 ### <a name="create-a-shortcut"></a>Creare un collegamento
 
-Per creare un collegamento, posizionare il puntatore nella parte del codice in cui si vuole aggiungere il collegamento. Scegliere **Modifica** > **Segnalibri** > **Aggiungi collegamento Elenco attività** o premere **CTRL**+**K**, **CTRL**+**H**.
+Per creare un collegamento, posizionare il puntatore nella parte del codice in cui si vuole aggiungere il collegamento. Scegliere **Modifica** > **segnalibri** > Aggiungi collegamento elenco**attività** o premere **Ctrl**+**K**, **Ctrl**+**H**.
 
 Per spostarsi tra i collegamenti nel codice, scegliere un collegamento nell'elenco, quindi fare clic su **Attività successiva** o **Attività precedente** nel menu di scelta rapida.
 

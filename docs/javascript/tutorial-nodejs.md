@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "78235080"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app Express in Visual Studio
@@ -24,13 +24,13 @@ In questa esercitazione per lo sviluppo in Visual Studio con Node.js ed Express 
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -63,21 +63,21 @@ Express è un framework applicazione Web utilizzato come framework server per da
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se Visual Studio 2019 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
+    Se non hai ancora installato Visual Studio 2019, vai alla pagina dei [download](https://visualstudio.microsoft.com/downloads/) di Visual Studio per installarlo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se Visual Studio 2017 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
+    Se non hai ancora installato Visual Studio 2017, vai alla pagina dei [download](https://visualstudio.microsoft.com/downloads/) di Visual Studio per installarlo gratuitamente.
     ::: moniker-end
 
-    Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, che apre il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **Strumenti** > **Get Tools and Features...**, che apre il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
 
     ![Carico di lavoro Node.js nel programma di installazione di Visual Studio](../ide/media/quickstart-nodejs-workload.png)
 
 * Il runtime di Node.js deve essere installato.
 
-    Se non è installato, è consigliabile installare la versione LTS dal sito Web [node. js](https://nodejs.org/en/download/) per una migliore compatibilità con i Framework e le librerie esterni. Node. js è compilato per le architetture a 32 bit e a 64 bit. Gli strumenti node. js in Visual Studio, inclusi nel carico di lavoro node. js, supportano entrambe le versioni. Ne è necessario solo uno e il programma di installazione di node. js ne supporta solo uno che viene installato alla volta.
+    Se non è installato, si consiglia di installare la versione LTS dal sito [Web Node.js](https://nodejs.org/en/download/) per la migliore compatibilità con framework e librerie esterni. Node.js è progettato per architetture a 32 e 64 bit. Gli strumenti Node.js in Visual Studio, inclusi nel carico di lavoro Node.js, supportano entrambe le versioni. Ne è richiesto solo uno e il programma di installazione Node.js supporta solo uno in fase di installazione alla volta.
     
-    In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non rileva un Runtime installato, è possibile configurare il progetto in modo che faccia riferimento al runtime installato nella pagina proprietà (dopo aver creato un progetto, fare clic con il pulsante destro del mouse sul nodo del progetto, scegliere **Proprietà**e impostare il **percorso di node. exe**). È possibile usare un'installazione globale di node. js oppure è possibile specificare il percorso di un interprete locale in ogni progetto node. js. 
+    In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non rileva un runtime installato, è possibile configurare il progetto in modo che faccia riferimento al runtime installato nella pagina delle proprietà (dopo aver creato un progetto, aver fatto clic con il pulsante destro del mouse sul nodo del progetto, scegliere **Proprietà**e impostare il **percorso di Node.exe**). È possibile utilizzare un'installazione globale di Node.js oppure è possibile specificare il percorso di un interprete locale in ognuno dei progetti Node.js. 
 
     Questa esercitazione è stata testata con Node.js 8.10.0.
 
@@ -95,7 +95,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene codice p
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **Node.js** e scegliere **Create new Basic Azure Node.js Express 4 application** (Crea nuova applicazione Basic Azure Node.js Express 4) (JavaScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
+    Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
     ::: moniker-end
     Se non viene visualizzato il modello di progetto **Applicazione Express 4 Node.js Azure di base** è necessario aggiungere il carico di lavoro **Sviluppo Node.js**. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 
@@ -105,7 +105,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene codice p
 
     (1) Il progetto viene visualizzato in **grassetto**, con il nome assegnato in precedenza nella finestra di dialogo **Nuovo progetto**. Nel file system il progetto è rappresentato da un file con estensione *njsproj* nella cartella del progetto. È possibile impostare le proprietà e le variabili di ambiente associate al progetto facendo clic con il pulsante destro del mouse sul progetto e scegliendo **Proprietà**. È possibile eseguire sequenze di andata e ritorno con altri strumenti di sviluppo, perché il file di progetto non apporta modifiche personalizzate all'origine del progetto Node.js.
 
-    (2) Al primo livello è presente una soluzione che, per impostazione predefinita, ha lo stesso nome del progetto. Una soluzione, rappresentata su disco da un file con estensione *sln*, è un contenitore per uno o più progetti correlati.
+    (2) Al primo livello è presente una soluzione che, per impostazione predefinita, ha lo stesso nome del progetto. Una soluzione, rappresentata da un file *sln* su disco, è un contenitore per uno o più progetti correlati.
 
     (3) Il nodo npm visualizza tutti i pacchetti npm eventualmente installati. È possibile fare clic con il pulsante destro del mouse sul nodo npm per cercare e installare i pacchetti npm utilizzando una finestra di dialogo o per installare e aggiornare i pacchetti usando le impostazioni in *package.json* e fare clic con il pulsante destro del mouse sulle opzioni nel nodo npm.
 
@@ -121,7 +121,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene codice p
 
 L'applicazione usa Pug per il framework JavaScript front-end. Pug usa un codice markup semplice che viene compilato in formato HTML. Pug è impostato come motore di visualizzazione in *app.js*. Il codice che imposta il motore di visualizzazione in *app.js* è `app.set('view engine', 'pug');`.
 
-1. In Esplora soluzioni (riquadro a destra) aprire la cartella Visualizzazioni e quindi aprire *index.pug*.
+1. In Esplora soluzioni (riquadro destro) aprire la cartella views , quindi *index.pug*.
 
 1. Sostituire il contenuto con il markup seguente.
 
@@ -147,7 +147,7 @@ L'applicazione usa Pug per il framework JavaScript front-end. Pug usa un codice 
 
     Il codice precedente viene usato per generare dinamicamente una pagina HTML con un titolo e un messaggio di benvenuto. La pagina include anche il codice per visualizzare un'immagine che cambia ogni volta che si preme un pulsante.
 
-1. Nella cartella Route aprire *index.js*.
+1. Nella cartella routes aprire *index.js*.
 
 1. Aggiungere il codice seguente prima della chiamata a `router.get`:
 
@@ -186,7 +186,7 @@ IntelliSense è uno strumento di Visual Studio che assiste l'utente durante la s
 
     ![Usare IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
 
-1. Aggiungere le parentesi per impostarla come chiamata di funzione `getData()`.
+1. Aggiungere le parentesi per effettuare `getData()`una chiamata di funzione, .
 
 1. Rimuovere la virgola (`,`) prima di `"data"`. Verrà visualizzata l'evidenziazione verde della sintassi per l'espressione. Spostare il puntatore del mouse sull'evidenziazione della sintassi.
 
@@ -208,7 +208,7 @@ IntelliSense è uno strumento di Visual Studio che assiste l'utente durante la s
 
 L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò, è necessario impostare un punto di interruzione.
 
-1. In *index.js* fare clic sul margine a sinistra prima della riga di codice seguente per impostare un punto di interruzione:
+1. In *index.js*, fare clic sulla barra di taglio sinistra prima della seguente riga di codice per impostare un punto di interruzione:
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
@@ -239,7 +239,7 @@ L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò,
 
 1. Premere **F5** (**Debug** > **Continua**) per continuare.
 
-    L'app verrà aperta in un browser.
+    L'app viene aperta in un browser.
 
     Nella finestra del browser verrà visualizzato il titolo "Express" e nel primo paragrafo verrà visualizzato il messaggio "Welcome to Express".
 
@@ -251,7 +251,7 @@ L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò,
 
 ## <a name="optional-publish-to-azure-app-service"></a>(Facoltativo) Pubblicare in Servizio app di Azure
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e **scegliere Pubblica**.
 
    ![Pubblicare in Servizio app di Azure](../javascript/media/tutorial-nodejs-publish-to-azure.png)
 
@@ -259,7 +259,7 @@ L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò,
 
     Nella finestra di dialogo **Servizio app** è possibile accedere all'account di Azure e connettersi a sottoscrizioni di Azure esistenti.
 
-1. Seguire i passaggi rimanenti per selezionare una sottoscrizione, scegliere o creare un gruppo di risorse, scegliere o creare un piano di servizio app e quindi, quando richiesto, seguire i passaggi per la pubblicazione in Azure. Per istruzioni più dettagliate, vedere [Publish to Azure Website using Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy) (Pubblicare in Sito Web di Azure tramite Distribuzione Web).
+1. Seguire i passaggi rimanenti per selezionare una sottoscrizione, scegliere o creare un gruppo di risorse, scegliere o creare un piano di servizio app e quindi, quando richiesto, seguire i passaggi per la pubblicazione in Azure. Per istruzioni più dettagliate, vedere Pubblicare nel sito Web di Azure usando la [distribuzione Web.](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
 
 1. La finestra **Output** visualizza lo stato della distribuzione in Azure.
 
@@ -272,4 +272,4 @@ L'esercitazione è stata completata.
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Distribuire l'app nel Servizio app di Linux](../javascript/publish-nodejs-app-azure.md)
+> [Distribuire l'app nel servizio app di Linux](../javascript/publish-nodejs-app-azure.md)

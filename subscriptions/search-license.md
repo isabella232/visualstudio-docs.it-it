@@ -7,10 +7,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono individuare singoli sottoscrittori o gruppi nel portale di amministrazione.
 ms.openlocfilehash: ab6e680747e7c4c216315bad02e0373bb8fe271c
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78408967"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Cercare e filtrare i sottoscrittori nelle sottoscrizioni di Visual Studio
@@ -29,7 +29,7 @@ Portale di amministrazione delle sottoscrizioni di Visual Studio consente di tro
    > [!NOTE]
    > Il campo **Nome** viene ordinato in base al nome.
 
-   Si noti che l'icona del **filtro** è evidenziata, a indicare che è applicato un filtro.  Viene visualizzata anche una scelta di **filtro chiara** . 
+   Si noti che l'icona **Filtro** è evidenziata, a indicare che è stato applicato un filtro.  Viene visualizzata anche l'opzione **Cancella filtro.** 
 
 3. Per cancellare il filtro e ripristinare l'elenco non filtrato, fare clic sulla scheda **Cancella filtro** in alto a destra. 
    > [!div class="mx-imgBorder"]
@@ -38,13 +38,13 @@ Portale di amministrazione delle sottoscrizioni di Visual Studio consente di tro
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Ora che si è appreso come trovare un sottoscrittore, vedere come [modificare](edit-license.md) la sottoscrizione.
-- Sono necessarie informazioni per l'uso del portale di amministrazione?  contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Sono necessarie informazioni per l'uso del portale di amministrazione?  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 
 

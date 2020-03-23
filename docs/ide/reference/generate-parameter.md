@@ -1,20 +1,21 @@
 ---
 title: Generare un parametro - Refactoring
-ms.date: 06/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e95e76c35afdb8cdbe38c8b33329734ba68361b1
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 372a3f705e5e85c0edb31a754105f61056402b9f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329090"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094346"
 ---
 # <a name="generate-parameter"></a>Generare un parametro
 
@@ -22,15 +23,17 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** genera automaticamente il parametro di un metodo.
+- Visual Basic
 
-**Quando:** si fa riferimento a una variabile in un metodo che non esiste nel contesto corrente e viene restituito un errore. È possibile generare un parametro come correzione del codice. 
+**Cosa:** Genera automaticamente un parametro del metodo.
 
-**Perché?:** è possibile modificare rapidamente la firma di un metodo senza perdere il contesto.
+**Quando:** Si fa riferimento a una variabile in un metodo che non esiste nel contesto corrente e viene visualizzato un errore; è possibile generare un parametro come correzione del codice. 
 
-## <a name="how-to"></a>Procedura
+**Perché:** È possibile modificare rapidamente la firma di un metodo senza perdere il contesto.
 
-1. Posizionare il cursore nel nome della variabile e premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+## <a name="how-to"></a>Procedure
+
+1. Posizionare il cursore nel nome della variabile e premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
 1. Selezionare **Generate parameter** (Genera parametro).
 
    ![Generare un parametro](media/generate-parameter.png) 

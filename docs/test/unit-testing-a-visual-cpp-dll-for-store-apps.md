@@ -1,5 +1,5 @@
 ---
-title: Come testare una C++ dll per le app UWP
+title: Come testare una DLL di C , per le applicazioni UWP
 ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: corob
@@ -8,13 +8,13 @@ ms.workload:
 - uwp
 author: corob-msft
 ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77274452"
 ---
-# <a name="how-to-test-a-c-dll"></a>Come testare una C++ dll
+# <a name="how-to-test-a-c-dll"></a>Come testare una DLL di C
 
 In questo argomento viene descritto come creare unit test per una libreria di collegamento dinamico di Visual C++ per le app della piattaforma UWP (Universal Windows Platform) con il framework di test Microsoft per C++. La libreria di collegamento RooterLib rammenta vagamente la teoria dei limiti di calcolo implementando una funzione che calcola una stima della radice quadrata di un numero specificato. La DLL può quindi essere inclusa in un'app UWP che mostra a un utente il lato divertente della matematica.
 
@@ -22,11 +22,11 @@ Questo argomento illustra come usare unit test come primo passaggio dell'attivit
 
 In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti distinti per gli unit test e la DLL da testare. Puoi anche includere gli unit test direttamente nel progetto DLL oppure creare soluzioni separate per gli unit test e la DLL. Per suggerimenti sulla struttura da usare, vedere [Aggiunta di unit test alle applicazioni C++ esistenti](../test/how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="Create_the_solution_and_the_unit_test_project"></a> Creare la soluzione e il progetto di unit test
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a>Creare la soluzione e il progetto di unit testCreate the solution and the unit test project
 
 ::: moniker range="vs-2019"
 
-Per iniziare, creare un nuovo progetto di test. Nel menu **File** scegliere **Nuovo** > **Progetto**. Nella finestra di dialogo **Crea un nuovo progetto** digitare "test" nella casella di ricerca e quindi impostare **Linguaggio** su C++. Scegli quindi **App unit test (Windows universale)** nell'elenco di modelli di progetto.
+Per iniziare, creare un nuovo progetto di test. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Nella finestra di dialogo **Crea un nuovo progetto** digitare "test" nella casella di ricerca e quindi impostare **Linguaggio** su C++. Scegli quindi **App unit test (Windows universale)** nell'elenco di modelli di progetto.
 
    ![Creare un nuovo progetto di test UWP](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -34,7 +34,7 @@ Per iniziare, creare un nuovo progetto di test. Nel menu **File** scegliere **Nu
 
 ::: moniker range="vs-2017"
 
-Per iniziare, creare un nuovo progetto di test. Nel menu **File** scegliere **Nuovo** > **Progetto**. Nella finestra di dialogo **Nuovo progetto** espandere **Installati** > **Visual C++** e scegliere **Universale di Windows**. Scegli quindi **App unit test (Windows universale)** nell'elenco di modelli di progetto.
+Per iniziare, creare un nuovo progetto di test. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Nella finestra di dialogo **Nuovo progetto** espandere **Installati** > **Visual C++** e scegliere **Universale di Windows**. Scegli quindi **App unit test (Windows universale)** nell'elenco di modelli di progetto.
 
 ::: moniker-end
 
@@ -48,19 +48,19 @@ Per iniziare, creare un nuovo progetto di test. Nel menu **File** scegliere **Nu
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Come puoi notare:
+     Tenere presente quanto segue:
 
     - Ogni test è definito tramite `TEST_METHOD(YourTestName){...}`.
 
-         Non è necessario scrivere una firma della funzione formale. La firma viene creata dalla macro TEST_METHOD. La macro genera un'istanza a una funzione che restituisce un valore nullo. Viene inoltre generata una funzione statica che restituisce informazioni sul metodo di test. Queste informazioni consentono a Esplora test di individuare il metodo.
+         Non è necessario scrivere una firma della funzione formale. La firma viene creata dalla macro TEST_METHOD. La macro genera un'istanza a una funzione che restituisce un valore nullo. Viene inoltre generata una funzione statica che restituisce informazioni sul metodo di test. Queste informazioni consentono ad Esplora test di individuare il metodo.
 
     - I metodi dei test vengono raggruppati in classi usando `TEST_CLASS(YourClassName){...}`.
 
-         Quando si eseguono i test, viene creata un'istanza di ogni classe di test. I metodi di test vengono chiamati in un ordine non specificato. Puoi definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe o metodo. Per altre informazioni, vedere [Uso di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
+         Quando si eseguono i test, viene creata un'istanza di ogni classe di test. I metodi di test vengono chiamati in un ordine non specificato. È possibile definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe, o metodo. Per altre informazioni, vedere [Uso di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Verificare che i test siano eseguiti in Esplora test
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a>Verificare che i test vengono eseguiti in Esplora testVerify that the tests run in Test Explorer
 
-1. Inserisci il codice di test:
+1. Inserire il codice di test:
 
     ```cpp
     TEST_METHOD(TestMethod1)
@@ -73,15 +73,15 @@ Per iniziare, creare un nuovo progetto di test. Nel menu **File** scegliere **Nu
 
 2. Scegliere **Esegui** dal menu **Test**, quindi **Esegui tutto**.
 
-     Il progetto di test viene compilato ed eseguito. Viene visualizzata la finestra di **Esplora test** con il test elencato in **Test superati**. Nel **riquadro di riepilogo** nella parte inferiore della finestra sono disponibili altri dettagli sul test selezionato.
+     Il progetto di test viene compilato ed eseguito. Verrà **visualizzata** la finestra Esplora test e il test è elencato in **Test superati**. Il riquadro **Riepilogo** nella parte inferiore della finestra fornisce ulteriori dettagli sul test selezionato.
 
      ![Esplora test](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="Add_the_DLL_project_to_the_solution"></a> Aggiungere il progetto di DLL alla soluzione
+## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a>Aggiungere il progetto DLL alla soluzioneAdd the DLL project to the solution
 
 ::: moniker range="vs-2019"
 
-In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta rapida scegliere **Aggiungi** e quindi **Nuovo progetto**. Nella finestra di dialogo **Aggiungi un nuovo progetto** impostare **Linguaggio** su C++ e digitare "DLL" nella casella di ricerca. Nell'elenco dei risultati scegliere **App unit test (Windows universale - C++/CX)** .
+In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta rapida scegliere **Aggiungi** e quindi **Nuovo progetto**. Nella finestra di dialogo **Aggiungi un nuovo progetto** impostare **Linguaggio** su C++ e digitare "DLL" nella casella di ricerca. Nell'elenco dei risultati scegliere **App unit test (Windows universale - C++/CX)**.
 
 ![Creare il progetto RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -94,7 +94,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
 ::: moniker-end
 
-1. Nella finestra di dialogo **Aggiungi nuovo progetto** scegliere **DLL (app UWP)** .
+1. Nella finestra di dialogo **Aggiungi nuovo progetto** scegliere **DLL (app UWP)**.
 
 2. Aggiungere il seguente codice al file *RooterLib.h*:
 
@@ -122,7 +122,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
      La classe `CRooterLib` dichiara un costruttore e il metodo estimativo `SqareRoot`.
 
-3. Aggiungi il simbolo di ROOTERLIB_EXPORTS alla riga di comando.
+3. Aggiungere il simbolo di ROOTERLIB_EXPORTS alla riga di comando.
 
     1. In **Esplora soluzioni** selezionare il progetto **RooterLib** e quindi scegliere **Proprietà** dal menu di scelta rapida.
 
@@ -130,9 +130,9 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
     2. Nella finestra di dialogo **Pagina delle proprietà di RooterLib** espandere **Proprietà di configurazione**, espandere **C++** e scegliere **Preprocessore**.
 
-    3. Scegliere **\<Modifica>** nell'elenco **Definizioni preprocessore** e quindi aggiungere `ROOTERLIB_EXPORTS` nella finestra di dialogo **Definizioni preprocessore**.
+    3. Scegliere ** \<Modifica... >** dall'elenco **Definizioni preprocessore,** quindi aggiungere `ROOTERLIB_EXPORTS` nella finestra di dialogo **Definizioni preprocessore.**
 
-4. Aggiungi implementazioni minime delle funzioni dichiarate. Aprire *RooterLib.cpp* e aggiungere il codice seguente:
+4. Aggiungere implementazioni minime delle funzioni dichiarate. Aprire *RooterLib.cpp* e aggiungere il codice seguente:
 
     ```cpp
     // constructor
@@ -148,9 +148,9 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
     ```
 
-## <a name="make_the_dll_functions_visible_to_the_test_code"></a> Definire le funzioni DLL visibili al codice di test
+## <a name="make-the-dll-functions-visible-to-the-test-code"></a><a name="make_the_dll_functions_visible_to_the_test_code"></a> Definire le funzioni DLL visibili al codice di test
 
-1. Aggiungi RooterLib al progetto RooterLibTests.
+1. Aggiungere RooterLib al progetto RooterLibTests.
 
    1. In **Esplora soluzioni** selezionare il progetto **RooterLibTests** e quindi scegliere **Aggiungi** > **Riferimento** dal menu di scelta rapida.
 
@@ -166,7 +166,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
        #include "..\RooterLib\RooterLib.h"
        ```
 
-3. Aggiungi un test che usa la funzione importata. Aggiungere il codice seguente a *unittest1.cpp*:
+3. Aggiungere un test che usa la funzione importata. Aggiungere il codice seguente a *unittest1.cpp*:
 
    ```cpp
    TEST_METHOD(BasicTest)
@@ -186,19 +186,19 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
    }
    ```
 
-4. Compila la soluzione.
+4. Compilare la soluzione.
 
-    Il nuovo test viene visualizzato in **Esplora test** nel nodo **Test non eseguiti**.
+    Il nuovo test viene visualizzato in **Esplora test** nel nodo Test **non eseguiti.**
 
-5. In **Esplora test** scegliere **Esegui tutto**.
+5. In **Esplora test**scegliere Esegui **tutto**.
 
     ![Test di base superato](../test/media/ute_cpp_testexplorer_basictest.png)
 
-   A questo punto hai configurato il test e i progetti di codice. Hai inoltre verificato di poter eseguire i test che eseguono funzioni nel progetto di codice. Ora puoi iniziare a scrivere test e codice reali.
+   È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
 
-## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentare i test in maniera iterativa e farli passare
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a>Aumentare in modo iterativo i test e farli passare
 
-1. Aggiungi un nuovo test:
+1. Aggiungere un nuovo test:
 
     ```cpp
     TEST_METHOD(RangeTest)
@@ -215,18 +215,18 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
     ```
 
     > [!TIP]
-    > Ti suggeriamo di non modificare i test superati. Al contrario, aggiungere un nuovo test, aggiornare il codice in modo che il test passi e quindi aggiungere un altro test, e così via.
+    > È consigliabile non modificare i test che siano stati superati. Al contrario, aggiungere un nuovo test, aggiornare il codice in modo che il test passi e quindi aggiungere un altro test, e così via.
     >
-    > Se gli utenti modificano i requisiti, disabilita i test che non risultano più corretti. Scrivi nuovi test e verificane il funzionamento, uno alla volta, sempre in modo incrementale.
+    > Quando gli utenti modificano i requisiti, disabilitare i test che non sono più corretti. Scrivere nuovi test e farli funzionare uno alla volta, nello stesso modo incrementale.
 
-2. In **Esplora test** scegliere **Esegui tutto**.
+2. In **Esplora test**scegliere Esegui **tutto**.
 
 3. Il test ha esito negativo.
 
      ![RangeTest non riuscito](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
-    > Subito dopo averlo scritto, verifica che ogni test abbia esito negativo. In questo modo eviti l'errore comune di scrivere un test che non ha mai esito negativo.
+    > Verificare che ogni test non venga superato subito dopo averlo scritto. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.
 
 4. Modifica il codice sottoposto a test in modo che il nuovo test venga superato. Aggiungere quanto segue a *RooterLib.cpp*:
 
@@ -249,14 +249,14 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
     ```
 
-5. Compilare la soluzione e quindi scegliere **Esegui tutto** in **Esplora test**.
+5. Compilare la soluzione, quindi in **Esplora test**scegliere **Esegui tutto**.
 
      Entrambi i test vengono superati.
 
 > [!TIP]
-> Sviluppa il codice aggiungendo i test uno alla volta. Assicurati che tutti i test vengano superati dopo ogni iterazione.
+> Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.
 
-## <a name="Debug_a_failing_test"></a> Debug di un test non superato
+## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a>Eseguire il debug di un test non superatoDebug a failing test
 
 1. Aggiungere un altro test a *unittest1.cpp*:
 
@@ -289,19 +289,19 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
    };
    ```
 
-2. In **Esplora test** scegliere **Esegui tutto**.
+2. In **Esplora test**scegliere Esegui **tutto**.
 
     Il test ha esito negativo. Scegliere il nome del test in **Esplora test**. L'asserzione fallita viene evidenziata. Il messaggio di errore è visibile nel riquadro dei dettagli di **Esplora test**.
 
     ![NegativeRangeTests non riuscito](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
-3. Per verificare il motivo per cui il test non riesce, esegui la funzione un'istruzione alla volta:
+3. Per capire perché il test non riesce, scorrere la funzione:
 
    1. Imposta un punto di interruzione all'inizio della funzione `SquareRoot`.
 
    2. Dal menu di scelta rapida del test non superato, scegliere **Esegui debug test selezionati**.
 
-        Quando l'esecuzione si ferma in corrispondenza del punto di interruzione, esegui il codice un'istruzione alla volta.
+        Quando l'esecuzione si arresta in corrispondenza del punto di interruzione, eseguire il codice un'istruzione alla volta.
 
    3. Aggiungere codice a *RooterLib.cpp* per intercettare l'eccezione:
 
@@ -321,11 +321,11 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
    1. In **Esplora test** scegliere **Esegui tutto** per testare il metodo corretto e assicurarsi di non aver introdotto una regressione.
 
-   Ora tutti i test vengono superati.
+   Tutti i test vengono ora superati.
 
    ![Tutti i test superati](../test/media/ute_ult_alltestspass.png)
 
-## <a name="Refactor_the_code_without_changing_tests"></a> Eseguire il refactoring del codice senza modificare i test
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a>Effettuare il refactoring del codice senza modificare i testRefactor the code without changing tests
 
 1. Semplificare il calcolo centrale nella funzione `SquareRoot`:
 

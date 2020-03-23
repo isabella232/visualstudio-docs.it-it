@@ -7,10 +7,10 @@ ms.date: 07/20/2019
 ms.topic: conceptual
 description: Informazioni sulle responsabilità degli amministratori delle sottoscrizioni.
 ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78235158"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Panoramica delle responsabilità degli amministratori
@@ -33,11 +33,11 @@ Le sottoscrizioni di Visual Studio consentono ai membri di team di sviluppo di i
 | Installazioni illimitate                  | Ogni utente con licenza può installare e usare il software su qualsiasi numero di dispositivi per la progettazione, lo sviluppo, il testing, la valutazione e la dimostrazione di altro software. L'unica eccezione è Microsoft Office, concesso in licenza per un solo desktop. Il software di Visual Studio concesso in licenza può essere installato e usato in ufficio, a casa, in ambiente scolastico e nei dispositivi presso l'ufficio di un cliente o su hardware dedicato ospitato da terze parti.                                                                                                                                                                                                                                  |
 | Non è destinato agli ambienti di produzione | Il software incluso nelle sottoscrizioni di Visual Studio non è concesso in licenza per gli ambienti di produzione, inclusi gli ambienti a cui hanno accesso gli utenti finali per scopi diversi dai test di accettazione o dalla valutazione per commenti e suggerimenti, un ambiente che si connette a un database di produzione, ambienti per il supporto del ripristino di emergenza o come backup di produzione oppure ambienti usati per la produzione durante i periodi di picco delle attività. Fanno eccezione vantaggi specifici per determinati livelli di sottoscrizione, descritti nel [white paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf).                                                                                            |
 | Riassegnazione di una licenza                     | Quando un utente lascia un team e non ha più bisogno di una licenza, è possibile riassegnarla dopo 90 giorni. Quando si riassegna una licenza, tutti i codici Product Key già usati rimangono disponibili, ma non vengono sostituiti. Per le organizzazioni che hanno in essere contratti Enterprise, gli eventuali vantaggi usati dall'utente originale, ad esempio corsi Pluralsight, verranno reimpostati.                                                                                                                                                                                                                                                 |
-| Eccezione per gli utenti finali                  | Alla fine di un progetto di sviluppo software, gli utenti finali in genere esaminano un'applicazione e determinano se soddisfa i criteri necessari per il rilascio. Questo processo è denominato test di accettazione utente. I membri di un team, ad esempio uno sponsor aziendale o un responsabile del prodotto possono fungere da intermediari per gli utenti finali. Gli utenti finali che non hanno una sottoscrizione di Visual Studio possono accedere al software per i test di accettazione utente, se l'uso del software è comunque conforme a tutte le condizioni di licenza di Visual Studio. È raro che un utente il cui ruolo primario stia progettando, sviluppando o testando il software venga qualificato anche come "utente finale". |
+| Eccezione per gli utenti finali                  | Alla fine di un progetto di sviluppo software, gli utenti finali in genere esaminano un'applicazione e determinano se soddisfa i criteri necessari per il rilascio. Questo processo è denominato test di accettazione utente. I membri di un team, ad esempio uno sponsor aziendale o un responsabile del prodotto possono fungere da intermediari per gli utenti finali. Gli utenti finali che non hanno una sottoscrizione di Visual Studio possono accedere al software per i test di accettazione utente, se l'uso del software è comunque conforme a tutte le condizioni di licenza di Visual Studio. È raro che anche una persona il cui ruolo primario sia progettare, sviluppare o testare il software si qualificherebbe come "utente finale". |
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

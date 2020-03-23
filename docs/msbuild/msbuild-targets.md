@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633187"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093608"
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
 
@@ -42,7 +42,7 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 </Target>
 ```
 
- Se si esegue AfterBuild, viene visualizzato solo "Second occurrence".
+ Se `AfterBuild` viene eseguito, viene visualizzato solo "Seconda `AfterBuild` occorrenza", perché la seconda definizione di nasconde la prima.
 
  MSBuild si basa sull'ordine di importazione e l'ultima definizione di una destinazione diventa l'ultima definizione usata.
 
@@ -64,7 +64,7 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 
 Una destinazione non viene mai eseguita due volte durante una compilazione, anche se da essa dipende una destinazione successiva nella compilazione. Il contributo della destinazione alla compilazione termina dopo che è stata eseguita.
 
-Per dettagli e altre informazioni sull'ordine di compilazione delle destinazioni, vedere [Ordine di compilazione delle destinazioni](../msbuild/target-build-order.md).
+Per informazioni dettagliate e ulteriori informazioni sull'ordine di compilazione di destinazione, vedere Ordine di [compilazione di destinazione](../msbuild/target-build-order.md).
 
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione
 
@@ -102,11 +102,11 @@ Reference: 4.0
 
  Le compilazioni incrementali sono compilazioni ottimizzate in modo da non eseguire le destinazioni con file di output aggiornati rispetto ai file di input corrispondenti. Un elemento di destinazione può avere entrambi gli attributi `Inputs` e `Outputs` per indicare quali elementi la destinazione accetta come input e quali elementi genera come output.
 
- Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione e questo migliora notevolmente la velocità di compilazione. Questa operazione è definita compilazione incrementale della destinazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione senza gli elementi aggiornati. Questa operazione è definita compilazione incrementale parziale della destinazione. Per altre informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md).
+ Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione e questo migliora notevolmente la velocità di compilazione. Questa operazione è definita compilazione incrementale della destinazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione senza gli elementi aggiornati. Questa operazione è definita compilazione incrementale parziale della destinazione. Per ulteriori informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Destinazioni di compilazione predefinite
 
-Di seguito sono elencate le destinazioni pubbliche in Microsoft. Common. CurrentVersion. targets.
+The following lists the public targets in Microsoft.Common.CurrentVersion.Targets.
 
 ```
 ===================================================
@@ -1015,4 +1015,4 @@ This target gathers the Redist folders from the SDKs which have been resolved.
 ## <a name="see-also"></a>Vedere anche
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
-- [Procedura: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Procedura: utilizzare la stessa destinazione in più file di progettoHow to: Use the same target in multiple project files](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

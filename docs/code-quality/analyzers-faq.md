@@ -10,66 +10,66 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408834"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301692"
 ---
 # <a name="code-analysis-faq"></a>Domande frequenti sull'analisi del codice
 
-Questa pagina contiene le risposte ad alcune domande frequenti sull'analisi del codice basata su .NET Compiler Platform in Visual Studio.
+Questa pagina contiene le risposte ad alcune domande frequenti sull'analisi del codice basata su piattaforma del compilatore .NET in Visual Studio.This page contains answers to some frequently asked questions about .NET Compiler Platform-based code analysis in Visual Studio.
 
-## <a name="code-analysis-versus-editorconfig"></a>Analisi codice rispetto a EditorConfig
+## <a name="code-analysis-versus-editorconfig"></a>Analisi del codice e EditorConfigCode analysis versus EditorConfig
 
-**D**: è consigliabile usare l'analisi del codice o EditorConfig per controllare lo stile del codice?
+**D:** È necessario utilizzare l'analisi del codice o EditorConfig per il controllo dello stile del codice?
 
-**R: l'** analisi del codice e i file EditorConfig funzionano manualmente. Quando si definiscono gli stili [di codice in un file EditorConfig](../ide/editorconfig-code-style-settings-reference.md) o nella pagina [Opzioni editor di testo](../ide/code-styles-and-code-cleanup.md) , si configurano effettivamente gli analizzatori di codice incorporati in Visual Studio. I file EditorConfig possono essere usati per abilitare o disabilitare le regole dell'analizzatore e anche per configurare alcuni pacchetti di NuGet Analyzer, ad esempio gli [analizzatori FxCop](configure-fxcop-analyzers.md).
+**R:** L'analisi del codice e i file EditorConfig funzionano in mano. Quando si definiscono gli stili di codice [in un file EditorConfig](../ide/editorconfig-code-style-settings-reference.md) o nella pagina Opzioni dell'editor di [testo,](../ide/code-styles-and-code-cleanup.md) si stanno effettivamente configurando gli analizzatori di codice incorporati in Visual Studio. I file EditorConfig possono essere utilizzati per abilitare o disabilitare le regole dell'analizzatore e anche per configurare alcuni pacchetti dell'analizzatore NuGet, ad esempio [gli analizzatori FxCop](configure-fxcop-analyzers.md).
 
-## <a name="editorconfig-versus-rule-sets"></a>EditorConfig rispetto ai set di regole
+## <a name="editorconfig-versus-rule-sets"></a>EditorConfig e set di regole
 
-**D**: è necessario configurare gli analizzatori utilizzando un set di regole o un file EditorConfig?
+**D:** È necessario configurare gli analizzatori utilizzando un set di regole o un file EditorConfig?
 
-**R**: i set di regole e i file EditorConfig possono coesistere e possono essere usati entrambi per configurare gli analizzatori. Sia i file EditorConfig che i set di regole consentono di abilitare e disabilitare le regole e di impostarne la gravità.
+**R**: I set di regole e i file EditorConfig possono coesistere ed entrambi per configurare gli analizzatori. Sia i file EditorConfig che i set di regole consentono di abilitare e disabilitare le regole e di impostarne la gravità.
 
-Tuttavia, i file EditorConfig offrono modi aggiuntivi per configurare le regole:
+Tuttavia, i file EditorConfig offrono altri modi per configurare le regole troppo:
 
-- Per gli analizzatori FxCop, i file EditorConfig consentono [di definire i tipi di codice da analizzare](fxcop-analyzer-options.md).
-- Per gli analizzatori di tipo codice incorporati in Visual Studio, i file EditorConfig consentono di [definire gli stili di codice preferiti](../ide/editorconfig-code-style-settings-reference.md) per una codebase.
+- Per gli analizzatori FxCop, i file EditorConfig consentono di [definire i tipi di codice da analizzare.](fxcop-analyzer-options.md)
+- Per gli analizzatori di stile di codice incorporati in Visual Studio, i file EditorConfig consentono di [definire gli stili](../ide/editorconfig-code-style-settings-reference.md) di codice preferiti per una codebase.
 
-Oltre ai set di regole e ai file EditorConfig, alcuni analizzatori sono configurati tramite l'uso di file di testo contrassegnati come C# [file aggiuntivi](../ide/build-actions.md#build-action-values) per i compilatori e VB.
+Oltre ai set di regole e ai file EditorConfig, alcuni analizzatori vengono configurati tramite l'utilizzo di file di testo contrassegnati come [file aggiuntivi](../ide/build-actions.md#build-action-values) per i compilatori di C e VB.
 
 > [!NOTE]
-> - I file EditorConfig possono essere usati solo per abilitare le regole e per impostarne la gravità in Visual Studio 2019 versione 16,3 e successive.
-> - Non è possibile usare i file EditorConfig per configurare l'analisi legacy, mentre i set di regole possono.
+> - I file EditorConfig possono essere usati solo per abilitare le regole e impostarne la gravità in Visual Studio 2019 versione 16.3 e successive.
+> - I file EditorConfig non possono essere utilizzati per configurare l'analisi legacy, mentre i set di regole possono.
 
-## <a name="code-analysis-in-ci-builds"></a>Analisi del codice nelle compilazioni CI
+## <a name="code-analysis-in-ci-builds"></a>Analisi del codice nelle compilazioni CICode analysis in CI builds
 
-**D**: l'analisi del codice basata su .NET Compiler Platform funziona in compilazioni di integrazione continua (ci)?
+**D:** L'analisi del codice basata su piattaforma del compilatore .NET funziona nelle compilazioni di integrazione continua (CI)?
 
-**R**: Sì. Per gli analizzatori installati da un pacchetto NuGet, tali regole vengono [applicate in fase di compilazione](roslyn-analyzers-overview.md#build-errors), incluso durante una compilazione ci. Gli analizzatori usati nelle compilazioni CI rispettano la configurazione della regola da entrambi i set di regole e file EditorConfig. Attualmente, gli analizzatori di codice incorporati in Visual Studio non sono disponibili come pacchetto NuGet, quindi queste regole non sono applicabili in una compilazione CI.
+**R:** Sì. Per gli analizzatori installati da un pacchetto NuGet, tali regole vengono [applicate in fase di compilazione,](roslyn-analyzers-overview.md#build-errors)anche durante una compilazione CI. Gli analizzatori utilizzati nelle compilazioni CI rispettano la configurazione delle regole sia dai set di regole che dai file EditorConfig. Attualmente, gli analizzatori di codice incorporati in Visual Studio non sono disponibili come pacchetto NuGet e pertanto queste regole non sono applicabili in una compilazione CI.
 
-## <a name="ide-analyzers-versus-stylecop"></a>Analizzatori IDE rispetto a StyleCop
+## <a name="ide-analyzers-versus-stylecop"></a>Analizzatori IDE e StyleCop
 
-**D**: qual è la differenza tra gli analizzatori di codice IDE di Visual Studio e gli analizzatori StyleCop?
+**D:** Qual è la differenza tra gli analizzatori di codice IDE di Visual Studio e gli analizzatori StyleCop?
 
-**R**: l'IDE di Visual Studio include analizzatori incorporati che cercano sia lo stile del codice che i problemi di qualità. Queste regole consentono di usare le nuove funzionalità del linguaggio Man mano che sono state introdotte e di migliorare la gestibilità del codice. Gli analizzatori IDE vengono continuamente aggiornati con ogni versione di Visual Studio.
+**R:** l'IDE di Visual Studio include analizzatori incorporati che cercano sia lo stile del codice che i problemi di qualità. Queste regole consentono di utilizzare le nuove funzionalità del linguaggio man mano che vengono introdotte e di migliorare la manutenibilità del codice. Analizzatori IDE vengono continuamente aggiornati con ogni versione di Visual Studio.IDE analyzers are continually updated with each Visual Studio release.
 
-Gli [analizzatori StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) sono analizzatori di terze parti installati come pacchetto NuGet che verificano la coerenza dello stile nel codice. In generale, le regole StyleCop consentono di impostare le preferenze personali per una codebase senza suggerire uno stile rispetto a un altro.
+[Gli analizzatori StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) sono analizzatori di terze parti installati come pacchetto NuGet che verificano la coerenza dello stile nel codice. In generale, le regole StyleCop consentono di impostare le preferenze personali per una base di codice senza consigliare uno stile rispetto a un altro.
 
-## <a name="code-analyzers-versus-legacy-analysis"></a>Analizzatori del codice rispetto all'analisi legacy
+## <a name="code-analyzers-versus-legacy-analysis"></a>Analizzatori di codice e analisi legacyCode analyzers versus legacy analysis
 
-**D**: qual è la differenza tra analisi legacy e analisi del codice basata su .NET Compiler Platform?
+**D:** Qual è la differenza tra l'analisi legacy e l'analisi del codice basata su piattaforma del compilatore .NET?
 
-**R: l'** analisi del codice basata su .NET Compiler Platform analizza il codice sorgente in tempo reale e durante la compilazione, mentre analisi legacy analizza i file binari al termine della compilazione. Per altre informazioni, vedere Domande frequenti [su analisi basata su .NET Compiler Platform e analisi legacy](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) e [analizzatori FxCop](fxcop-analyzers-faq.md).
+**R:** L'analisi del codice basata su piattaforma del compilatore .NET analizza il codice sorgente in tempo reale e durante la compilazione, mentre l'analisi legacy analizza i file binari al termine della compilazione. Per ulteriori informazioni, vedere [Analisi basata su piattaforma del compilatore .NET rispetto all'analisi legacy](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) e [Domande frequenti sugli analizzatori FxCop](fxcop-analyzers-faq.md).
 
 ## <a name="treat-warnings-as-errors"></a>Considera gli avvisi come errori
 
-**D**: il progetto usa l'opzione di compilazione per considerare gli avvisi come errori. Dopo la migrazione dall'analisi legacy all'analisi del codice sorgente, tutti gli avvisi di analisi del codice sono ora visualizzati come errori. Come è possibile evitare questo?
+**D:** Il progetto utilizza l'opzione di compilazione per considerare gli avvisi come errori. Dopo la migrazione dall'analisi legacy all'analisi del codice sorgente, tutti gli avvisi dell'analisi del codice vengono ora visualizzati come errori. Come posso impedirlo?
 
-**R**: per impedire che gli avvisi di analisi del codice vengano considerati come errori, attenersi alla seguente procedura:
+**R**: Per evitare che gli avvisi dell'analisi del codice vengano considerati come errori, attenersi alla seguente procedura:
 
-  1. Creare un file con estensione Props con il contenuto seguente:
+  1. Creare un file .props con il seguente contenuto:
 
      ```xml
      <Project>
@@ -79,7 +79,7 @@ Gli [analizzatori StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers
      </Project>
      ```
 
-  2. Aggiungere una riga al file di progetto con estensione csproj o vbproj per importare il file con estensione Props creato nel passaggio precedente. Questa riga deve essere posizionata prima di tutte le righe che importano i file di FxCop Analyzer. props. Ad esempio, se il file. props è denominato CodeAnalysis. props:
+  2. Aggiungere una riga al file di progetto con estensione csproj o vbproj per importare il file con estensione props creato nel passaggio precedente. Questa riga deve essere posizionata prima di tutte le righe che importano i file .props dell'analizzatore FxCop. Ad esempio, se il file props è denominato codeanalysis.props:
 
      ```xml
      ...
@@ -91,4 +91,4 @@ Gli [analizzatori StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli analizzatori](roslyn-analyzers-overview.md)
-- [Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Impostazioni della convenzione di codifica .NET per EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

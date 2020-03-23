@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633811"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
@@ -27,7 +27,7 @@ Quando si compila un progetto che contiene molti file, è possibile elencare sep
 
 Gli elementi rappresentano gli input di una compilazione. Per altre informazioni sugli elementi, vedere [Elementi](../msbuild/msbuild-items.md).
 
-Per includere i file per una compilazione, è necessario includerli in un elenco di elementi nel file di progetto MSBuild. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.
+Per includere i file per una compilazione, è necessario includerla in un elenco di elementi nel file di progetto MSBuild.To include files for a build, they must be included in an item list in the MSBuild project file. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.
 
 #### <a name="to-declare-items-individually"></a>Per dichiarare gli elementi uno alla volta
 
@@ -40,7 +40,7 @@ Per includere i file per una compilazione, è necessario includerli in un elenco
     `<VBFile Include="form1.vb"/>`
 
     > [!NOTE]
-    > Se gli elementi di una raccolta di elementi non si trovano nella stessa directory del file di progetto, è necessario specificare il percorso completo o relativo dell'elemento. Ad esempio: `Include="..\..\form2.cs"`.
+    > Se gli elementi di una raccolta di elementi non si trovano nella stessa directory del file di progetto, è necessario specificare il percorso completo o relativo dell'elemento. Ad esempio `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>Per dichiarare più elementi
 
@@ -101,7 +101,7 @@ In un file di progetto, è possibile usare la notazione @() nelle attività per 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> È necessario utilizzare caratteri jolly con elementi per specificare gli input per una compilazione. non è possibile specificare gli input usando l'attributo `Sources` nelle attività di MSBuild, ad esempio [CSC](../msbuild/csc-task.md) o [vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
+> È necessario utilizzare caratteri jolly con elementi per specificare gli input per una compilazione. non è possibile specificare `Sources` gli input utilizzando l'attributo in MSBuild attività quali [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
@@ -177,5 +177,5 @@ L'esempio di codice seguente usa un carattere jolly per includere tutti i file c
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)
-- [Items](../msbuild/msbuild-items.md)
+- [Procedura: escludere file dalla compilazioneHow to: Exclude files from the build](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Elementi](../msbuild/msbuild-items.md)

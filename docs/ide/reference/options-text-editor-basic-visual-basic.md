@@ -18,21 +18,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a069e17e615199e367683273adb85e771f1d9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584517"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431475"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opzioni, editor di testo, di base (Visual Basic), avanzato
 La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della cartella **Editor di testo** della finestra di dialogo **Opzioni** (menu **Strumenti**) include le proprietà seguenti:
 
 ## <a name="analysis"></a>Analisi
 
-- Abilita analisi della soluzione completa
+- Analisi del codice in tempo reale o ambito di analisi in background
 
-   Abilita l'analisi del codice per tutti i file nella soluzione e non solo per i file di codice aperti. Per altre informazioni, vedere [Analisi della soluzione completa](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+   Configurare l'ambito di analisi in background per il codice gestito. Per ulteriori informazioni, vedere [Procedura: configurare l'ambito di analisi del codice in tempo reale per il codice gestito.](../../code-quality/configure-live-code-analysis-scope-managed-code.md)
 
 ## <a name="using-directives"></a>Direttive using
 
@@ -55,9 +55,9 @@ La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della ca
 
  **Abilita evidenziazione di riferimenti e parole chiave**
 
-L'editor di testo può evidenziare tutte le istanze di un simbolo o tutte le parole chiave in una clausola, ad esempio `If..Then`, `While...End While` o `Try...Catch...Finally`. È possibile spostarsi tra le parole chiave o i riferimenti evidenziati premendo **CTRL** + **MAIUSC** + **freccia GIÙ** o **CTRL** + **MAIUSC** + **freccia SU**.
+L'editor di testo può evidenziare tutte le istanze di un simbolo o tutte le parole chiave in una clausola, ad esempio `If..Then`, `While...End While` o `Try...Catch...Finally`. È possibile spostarsi tra i riferimenti evidenziati o le parole chiave premendo **CTRL** + **Maiusc** + **freccia giù** o **Ctrl** + **Maiusc** + freccia**su**.
 
-## <a name="outlining"></a>struttura
+## <a name="outlining"></a>Struttura
 
 **Abilita modalità struttura**
 
@@ -97,7 +97,7 @@ Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai bl
 
 **Inserimento automatico di costrutti End**
 
-Quando si digita, ad esempio, la prima riga di una dichiarazione di routine, `Sub Main`, e si preme **INVIO**, l'editor di testo aggiunge una riga `End Sub` corrispondente. Analogamente, se si aggiunge un ciclo [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), l'editor di testo aggiunge un'istruzione `Next` corrispondente. Quando questa opzione è selezionata, l'editor del codice aggiunge automaticamente il costrutto end.
+Quando si digita, ad esempio, la prima `Sub Main`riga di una dichiarazione di `End Sub` routine, e si preme **INVIO**, l'editor di testo aggiunge una riga corrispondente. Analogamente, se si aggiunge un ciclo [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), l'editor di testo aggiunge un'istruzione `Next` corrispondente. Quando questa opzione è selezionata, l'editor del codice aggiunge automaticamente il costrutto end.
 
 **Inserimento automatico di membri Interface e MustOverride**
 

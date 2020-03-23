@@ -1,42 +1,45 @@
 ---
-title: Genera campo privato dal costruttore
-ms.date: 02/19/2020
+title: Generare un campo privato dal costruttore
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ef4188216b669b30b7af9bd725ec432bcd0a774
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: 4eb5dd39d0fb2d4cd9ba8ade0d0408d6e36a4854
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527661"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094029"
 ---
-# <a name="generate-private-field-from-constructor"></a>Genera campo privato dal costruttore
+# <a name="generate-private-field-from-constructor"></a>Generare un campo privato dal costruttore
 
 Questo refactoring si applica a: 
 
 - C# 
 
-**Cosa:** Genera un campo privato da un costruttore. 
+- Visual Basic
+
+**Cosa:** Generare un campo privato da un costruttore. 
 
 **Quando:** Si desidera aggiungere rapidamente un campo privato da un costruttore.
 
-**Motivo:** La scrittura di campi privati può richiedere molto tempo e ripetitiva. L'uso di questo refactoring è rapido e rende il programma più stabile.
+**Perché:** La scrittura di campi privati può richiedere molto tempo e ripetitiva. L'uso di questo refactoring è rapido e rende il programma più stabile.
 
-## <a name="how-to"></a>Procedura 
+## <a name="how-to"></a>Procedure 
 
 1. Posizionare il cursore sul nome del parametro all'interno del costruttore.
 
-2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    
-3. Selezionare l'opzione per **creare e inizializzare il campo**.
+3. Selezionare l'opzione **Crea e inizializza campo**.
 
-   ![Genera campo privato dal costruttore](media/generate-private-field-from-constructor.png)
+   ![Generare un campo privato dal costruttore](media/generate-private-field-from-constructor.png)
 
 ## <a name="see-also"></a>Vedere anche 
 

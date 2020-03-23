@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 831153a734fa88c045f7b8397db0a033e53862c7
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77634487"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094558"
 ---
 # <a name="calltarget-task"></a>attività CallTarget
 
@@ -29,7 +29,7 @@ Richiama le destinazioni specificate nel file di progetto.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
- Nella tabella che segue vengono descritti i parametri dell'attività `CallTarget`.
+ Nella tabella che segue vengono descritti i parametri dell'attività `CallTarget` .
 
 | Parametro | Descrizione |
 |---------------------------| - |
@@ -38,13 +38,15 @@ Richiama le destinazioni specificate nel file di progetto.
 | `Targets` | Parametro `String[]` facoltativo.<br /><br /> Specifica la destinazione o le destinazioni da compilare. |
 | `UseResultsCache` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, viene restituito il risultato memorizzato nella cache, se presente.<br /><br /> **Nota** Se l'attività MSBuild viene eseguita, il relativo output viene memorizzato nella cache in un ambito (ProjectFileName, GlobalProperties)[TargetNames] come elenco di elementi di compilazione. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
  Se una destinazione specificata in `Targets` ha esito negativo e `RunEachTargetSeparately` è `true`, l'attività continua a compilare le destinazioni rimanenti.
 
- Per compilare le destinazioni predefinite, usare l'[attività MSBuild](../msbuild/msbuild-task.md) e impostare il parametro `Projects` uguale a `$(MSBuildProjectFile)`.
+ Se si desidera compilare le destinazioni predefinite, `Projects` utilizzare l'attività [MSBuild](../msbuild/msbuild-task.md) e impostare il parametro su . `$(MSBuildProjectFile)`
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+Quando `CallTarget`si utilizza , MSBuild valuta la destinazione chiamata in un nuovo ambito, anziché nello stesso ambito da cui viene chiamata. Ciò significa che qualsiasi elemento e le modifiche alle proprietà nella destinazione chiamata non sono visibili alla destinazione chiamante.  Per passare informazioni alla destinazione `TargetOutputs` chiamante, usare il parametro di output.
+
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

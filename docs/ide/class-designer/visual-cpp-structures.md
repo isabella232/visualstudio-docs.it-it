@@ -1,5 +1,5 @@
 ---
-title: C++Strutture in Progettazione classi
+title: Strutture di C, in Progettazione classi
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590684"
 ---
-# <a name="c-structures-in-class-designer"></a>C++strutture in Progettazione classi
+# <a name="c-structures-in-class-designer"></a>Strutture di C, in Progettazione classi
 
-**Progettazione Classi** supporta le strutture C++, che vengono dichiarate con la parola chiave `struct`. come nell'esempio seguente:
+**Progettazione Classi** supporta le strutture C++, che vengono dichiarate con la parola chiave `struct`. Di seguito è illustrato un esempio:
 
 ```cpp
 struct MyStructure
@@ -34,12 +34,12 @@ Per altre informazioni sull'uso del tipo `struct`, vedere [struct](/cpp/cpp/stru
 
 Una forma struttura C++ in un diagramma classi è simile per aspetto e funzionamento a una forma classe, ad eccezione del fatto che l'etichetta della forma struttura è **Struct** ed è contraddistinta da angoli squadrati anziché arrotondati.
 
-|Code - elemento|Visualizzazione di Progettazione classi|
+|Elemento del codice|Visualizzazione di Progettazione classi|
 |------------------| - |
 |`struct StructureName {};`|**NomeStruttura**<br /><br /> Struct|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Utilizzo del C++ codice](working-with-visual-cpp-code.md)
+- [Lavorare con il codice C](working-with-visual-cpp-code.md)
 - [Classi e struct](/cpp/cpp/classes-and-structs-cpp)
 - [struct](/cpp/cpp/struct-cpp)

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409895"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301811"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 
@@ -31,12 +31,12 @@ Questa generazione di codice si applica a:
 **Procedura:** esistono diversi modi per generare un costruttore:
 
 - [Generare un costruttore e selezionare i membri](#pick)
-- [Generare un costruttore dai campi selezionati](#selection)
+- [Genera costruttore da campi selezionati](#selection)
 - [Generare un costruttore da un nuovo utilizzo](#usage)
 - [Aggiungere un parametro a un costruttore esistente](#addparameter)
 - [Creare e inizializzare un campo/una proprietà dal parametro di un costruttore](#create)
 
-## <a id = "pick"></a> Generare un costruttore e selezionare i membri (solo C#)
+## <a name="generate-constructor-and-pick-members-c-only"></a><a id = "pick"></a> Generare un costruttore e selezionare i membri (solo C#)
 
 1. Posizionare il cursore in qualsiasi riga vuota in una classe:
 
@@ -45,10 +45,10 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sulla scheda ![cacciavite](media/screwdriver.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga vuota nella classe.
+      - Fare clic sul pulsante ![cacciavite](media/screwdriver.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga vuota nella classe.
 
    ![Anteprima della generazione di un costruttore](media/constructor1-preview-cs.png)
 
@@ -67,7 +67,7 @@ Questa generazione di codice si applica a:
 
    ![Risultato della generazione del costruttore](media/constructor1-result-cs.png)
 
-## <a id="selection"></a> Generare un costruttore dai campi selezionati (solo C#)
+## <a name="generate-constructor-from-selected-fields-c-only"></a><a id="selection"></a> Generare un costruttore dai campi selezionati (solo C#)
 
 1. Evidenziare i membri che si desidera includere nel costruttore generato:
 
@@ -76,10 +76,10 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sulla scheda ![cacciavite](media/screwdriver.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la selezione.
+      - Fare clic sul pulsante ![cacciavite](media/screwdriver.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la selezione.
 
       ![Anteprima della generazione di un costruttore](media/constructor2-preview-cs.png)
 
@@ -89,7 +89,7 @@ Questa generazione di codice si applica a:
 
    ![Risultato della generazione del costruttore](media/constructor2-result-cs.png)
 
-## <a id="usage"></a> Generare un costruttore da un nuovo utilizzo (C# e Visual Basic)
+## <a name="generate-constructor-from-new-usage-c-and-visual-basic"></a><a id="usage"></a> Generare un costruttore da un nuovo utilizzo (C# e Visual Basic)
 
 1. Posizionare il cursore nella riga in cui è presente una sottolineatura ondulata rossa. La sottolineatura rossa indica una chiamata a un costruttore che non esiste ancora.
 
@@ -104,11 +104,11 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sulla scheda ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione di un costruttore](media/constructor-preview-cs.png)
 
@@ -127,7 +127,7 @@ Questa generazione di codice si applica a:
 
        ![Risultato della generazione del metodo VB](media/constructor-result-vb.png)
 
-## <a id="addparameter"></a> Aggiungere un parametro a un costruttore esistente (solo C#)
+## <a name="add-parameter-to-existing-constructor-c-only"></a><a id="addparameter"></a> Aggiungere un parametro a un costruttore esistente (solo C#)
 
 1. Aggiungere un parametro a una chiamata di un costruttore esistente.
 
@@ -138,11 +138,11 @@ Questa generazione di codice si applica a:
 3. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sulla scheda ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione di un costruttore](media/constructor4-preview-cs.png)
 
@@ -154,7 +154,7 @@ Questa generazione di codice si applica a:
 
 È anche possibile aggiungere un parametro a un metodo esistente. Per altre informazioni, vedere [Aggiungere un parametro a un metodo](add-parameter.md).
 
-## <a id="create"></a> Creare e inizializzare un campo o una proprietà dal parametro di un costruttore (solo C#)
+## <a name="create-and-initialize-a-field-or-property-from-a-constructor-parameter-c-only"></a><a id="create"></a> Creare e inizializzare un campo o una proprietà dal parametro di un costruttore (solo C#)
 
 1. Trovare un costruttore esistente e aggiungere un parametro:
 
@@ -165,10 +165,10 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sulla scheda ![cacciavite](media/screwdriver.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con il parametro aggiunto.
+      - Fare clic sul pulsante ![cacciavite](media/screwdriver.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con il parametro aggiunto.
 
    ![Anteprima della generazione di un costruttore](media/constructor5-preview-cs.png)
 
@@ -180,5 +180,5 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generazione di codice](../code-generation-in-visual-studio.md)
+- [Generazione del codice](../code-generation-in-visual-studio.md)
 - [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)

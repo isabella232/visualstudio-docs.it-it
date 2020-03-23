@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7049271dddb4e763bf5ecb3760358bdd63e38df5
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579339"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Passaggio 4: Aggiungere un gestore dell'evento Click a ogni etichetta
@@ -34,15 +34,15 @@ Il gioco delle coppie funziona come segue:
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Per aggiungere un gestore dell'evento Click a ogni etichetta
 
-1. Aprire il modulo in **Progettazione Windows Form**. In **Esplora soluzioni** scegliere *Form1.cs* o *Form1.vb*. Sulla barra dei menu scegliere **Visualizza** > **Finestra di progettazione**.
+1. Aprire il modulo in **Progettazione Windows Form**. In **Esplora soluzioni** scegliere *Form1.cs* o *Form1.vb*. Nella barra dei menu scegliere **Progettazione** > **viste**.
 
 2. Scegliere il primo controllo etichetta per selezionarlo. Tenere quindi premuto **CTRL** mentre si sceglie ognuna delle altre etichette per selezionarle. Assicurarsi che ogni etichetta sia selezionata.
 
-3. Fare clic sul pulsante **Eventi** della barra degli strumenti della finestra **Proprietà** per visualizzare la pagina **Eventi** nella finestra **Proprietà**. Scorrere verso il basso fino all'evento **Click** e immettere **label_Click** nella casella, come illustrato nello screenshot seguente.
+3. Fare clic sul pulsante **Eventi** della barra degli strumenti della finestra **Proprietà** per visualizzare la pagina **Eventi** nella finestra **Proprietà**. Scorrere verso il basso fino all'evento **Click** e immettere **label_Click** nella casella, come illustrato nella schermata seguente.
 
      ![Finestra Proprietà con evento Click visualizzato](../ide/media/express_labelclick.png)
 
-4. Premere il tasto **INVIO**. L'IDE aggiunge al codice un gestore dell'evento `Click` denominato `label_Click()` e lo collega a ognuna delle etichette nel modulo.
+4. Scegliere il tasto **Invio.** L'IDE aggiunge al codice un gestore dell'evento `Click` denominato `label_Click()` e lo collega a ognuna delle etichette nel modulo.
 
 5. Compilare la parte restante di codice come segue:
 
@@ -50,7 +50,7 @@ Il gioco delle coppie funziona come segue:
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
 
      > [!IMPORTANT]
-     > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo del linguaggio di programmazione ![per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     > Utilizzare il controllo del linguaggio di programmazione nella parte superiore destra di questa pagina per visualizzare il frammento di codice di C o il frammento di codice Visual Basic.<br><br>![Controllo del linguaggio di programmazione per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
     > [!NOTE]
     > Se si sceglie di copiare e incollare il blocco di codice `label_Click()` anziché immetterlo manualmente, è necessario verificare di sostituire il codice `label_Click()` esistente. In caso contrario, verrà generato un blocco di codice duplicato.
@@ -58,12 +58,12 @@ Il gioco delle coppie funziona come segue:
     > [!NOTE]
     > È possibile riconoscere `object sender` all'inizio del gestore dell'evento, che corrisponde a quanto usato in [Esercitazione 2: Creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md). Poiché eventi Click di diversi controlli etichetta sono stati collegati a un unico metodo del gestore, viene chiamato lo stesso metodo, indipendentemente dall'etichetta scelta dall'utente. Il metodo del gestore dell'evento deve sapere quale etichetta è stata scelta, quindi usa il nome `sender` per identificare il controllo etichetta. La prima riga del metodo indica al programma che non si tratta di un oggetto generico, bensì di un controllo etichetta e che questo oggetto usa il nome `clickedLabel` per accedere ai metodi e alle proprietà dell'etichetta.
 
-     Questo metodo prima controlla se è stata eseguita correttamente la conversione (cast) di `clickedLabel` da un oggetto a un controllo etichetta. In caso contrario, il valore sarà `null` (C#) o `Nothing` (Visual Basic) e non è consigliabile eseguire la parte restante di codice nel metodo. Il metodo controlla quindi il colore del testo dell'etichetta scelta tramite la proprietà **ForeColor** dell'etichetta. Se il colore del testo dell'etichetta è nero, significa che l'icona è già stata scelta e il metodo è terminato. Questo è il risultato dell'istruzione `return`: indica al programma di arrestare l'esecuzione del metodo. In caso contrario, l'icona non è stata scelta, pertanto il programma modifica il colore del testo dell'etichetta in nero.
+     Questo metodo prima controlla se è stata eseguita correttamente la conversione (cast) di `clickedLabel` da un oggetto a un controllo etichetta. In caso contrario, il valore sarà `null` (C#) o `Nothing` (Visual Basic) e non è consigliabile eseguire la parte restante di codice nel metodo. Il metodo controlla quindi il colore del testo dell'etichetta scelta tramite la proprietà **ForeColor** dell'etichetta. Se il colore del testo dell'etichetta è nero, significa che l'icona è già stata scelta e il metodo è terminato. (Questo è ciò che fa l'istruzione: `return` Dice al programma di interrompere l'esecuzione del metodo.) In caso contrario, l'icona non è stata scelta, quindi il programma cambia il colore del testo dell'etichetta in nero.
 
-6. Sulla barra dei menu scegliere **File** > **Salva tutto** per salvare lo stato di avanzamento e quindi, sempre sulla barra dei menu, scegliere **Debug** > **Avvia debug** per eseguire il programma. Si dovrebbe visualizzare un form vuoto con uno sfondo blu. Scegliere una cella qualsiasi nel form: una delle icone deve diventare visibile. Continuare a scegliere diversi punti nel form. Le icone scelte verranno visualizzate.
+6. Nella barra dei menu scegliere **Salva** > **tutto** per salvare lo stato di avanzamento, quindi nella barra dei menu scegliere **Debug** > di**avvio del debug** per eseguire il programma. Si dovrebbe visualizzare un form vuoto con uno sfondo blu. Scegliere una cella qualsiasi nel form: una delle icone deve diventare visibile. Continuare a scegliere diversi punti nel form. Le icone scelte verranno visualizzate.
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 5: aggiungere riferimenti alle etichette](../ide/step-5-add-label-references.md)** .
+- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 5: Aggiungere riferimenti alle etichette](../ide/step-5-add-label-references.md)**.
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 3: Assegnare un'icona casuale a ogni etichetta](../ide/step-3-assign-a-random-icon-to-each-label.md).

@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595813"
 ---
-# <a name="application-page-project-designer-visual-basic"></a>Pagina Applicazione, Progettazione progetti (Visual Basic)
+# <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 Usare la pagina **Applicazione** di Creazione progetti per specificare le impostazioni e le proprietà dell'applicazione del progetto.
 
-Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Scegliere quindi **Progetto** > **Proprietà** sulla barra dei menu. Quando si apre **Creazione progetti**, selezionare la scheda **Applicazione**.
+Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere**Proprietà** **progetto** > sulla barra dei menu. Quando si apre **Creazione progetti**, selezionare la scheda **Applicazione**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -47,7 +47,7 @@ Specifica lo spazio dei nomi di base per tutti i file nel progetto. Ad esempio, 
 Se si deseleziona **Spazio dei nomi radice**, è possibile specificare nel codice la struttura dello spazio dei nomi del progetto.
 
 > [!NOTE]
-> Se si usa la parola chiave `Global` in un'[istruzione Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), è possibile definire uno spazio dei nomi esterno allo spazio dei nomi radice del progetto. Se si deseleziona l'opzione **Spazio dei nomi radice**, `Global` diventa lo spazio dei nomi principale. Ciò elimina la necessità della parola chiave `Global` nelle istruzioni `Namespace`. Per altre informazioni, vedere "Global Keyword in Namespace Statements" (Parola chiave Global nelle istruzioni Namespace) in [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces) (Spazi dei nomi in Visual Basic).
+> Se si usa la parola chiave `Global` in un'[istruzione Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), è possibile definire uno spazio dei nomi esterno allo spazio dei nomi radice del progetto. Se si deseleziona **lo spazio dei nomi radice**, `Global` diventa `Global` lo `Namespace` spazio dei nomi di primo livello, che elimina la necessità della parola chiave in un'istruzione . Per altre informazioni, vedere "Global Keyword in Namespace Statements" (Parola chiave Global nelle istruzioni Namespace) in [Namespaces in Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces) (Spazi dei nomi in Visual Basic).
 
 Per informazioni su come creare spazi dei nomi nel codice, vedere [Namespace Statement](/dotnet/visual-basic/language-reference/statements/namespace-statement) (Istruzione Namespace).
 
@@ -86,15 +86,15 @@ Consente di specificare il modulo di avvio o il punto di ingresso dell'applicazi
 
 Se l'opzione **Abilita framework applicazione** è selezionata (impostazione predefinita), questo elenco ha come intestazione **Modulo di avvio** e mostra solo moduli, poiché il framework applicazione supporta solo moduli di avvio, non oggetti.
 
-Se il progetto è un'applicazione browser WPF, questo elenco ha come intestazione **URI di avvio** e il valore predefinito è **Page1.xaml**. L'elenco **URI di avvio** consente di specificare la risorsa interfaccia utente (un elemento XAML) che l'applicazione visualizza all'avvio dell'applicazione. Per ulteriori informazioni, vedere <xref:System.Windows.Application.StartupUri%2A>.
+Se il progetto è un'applicazione browser WPF, questo elenco ha come intestazione **URI di avvio** e il valore predefinito è **Page1.xaml**. L'elenco **URI di avvio** consente di specificare la risorsa interfaccia utente (un elemento XAML) che l'applicazione visualizza all'avvio dell'applicazione. Per altre informazioni, vedere <xref:System.Windows.Application.StartupUri%2A>.
 
 Se l'opzione **Abilita framework applicazione** è deselezionata, questo elenco diventa **Oggetto di avvio** e mostra sia moduli e classi o moduli con `Sub Main`.
 
-**Oggetto di avvio** definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Sub Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Nessuno)** . Per altre informazioni, vedere [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+**Oggetto di avvio** definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Sub Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Nessuno)**. Per altre informazioni, vedere [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 ### <a name="icon"></a>Icona
 
-Consente di impostare il file con estensione ico che si vuole usare come icona di programma. Selezionare **\<Sfoglia...>** per individuare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) o [/win32icon (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Consente di impostare il file con estensione ico che si vuole usare come icona di programma. Selezionare ** \<Sfoglia...>** per cercare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) o [/win32icon (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Informazioni assembly
 
@@ -102,7 +102,7 @@ Fare clic su questo pulsante per visualizzare la [finestra di dialogo Informazio
 
 ### <a name="enable-application-framework"></a>Abilita framework applicazione
 
-Consente di specifica se un progetto deve usare il framework dell'applicazione. L'impostazione di questa opzione influisce sulle opzioni disponibili in **Modulo di avvio**/**Oggetto di avvio**.
+Consente di specifica se un progetto deve usare il framework dell'applicazione. L'impostazione di questa opzione influisce sulle opzioni disponibili nell'oggetto di avvio modulo/**di avvio**. **Startup form**
 
 Se questa casella di controllo è selezionata, l'applicazione usa la procedura `Sub Main` standard. Se si seleziona questa casella di controllo, vengono abilitate le funzionalità della sezione **Proprietà framework applicazione Windows** ed è anche necessario selezionare un modulo di avvio.
 
@@ -110,7 +110,7 @@ Se questa casella di controllo è deselezionata, l'applicazione userà la proced
 
 ### <a name="view-windows-settings"></a>Visualizza impostazioni di Windows
 
-Fare clic su questo pulsante per generare e aprire il file *app.manifest*. Visual Studio usa questo file per generare i dati del manifesto per l'applicazione. Impostare quindi il livello di esecuzione richiesto per Controllo dell'account utente modificando il tag `<requestedExecutionLevel>` in *app.manifest* come segue:
+Fare clic su questo pulsante per generare e aprire il file *app.manifest.* Visual Studio usa questo file per generare i dati del manifesto per l'applicazione. Impostare quindi il livello di esecuzione `<requestedExecutionLevel>` richiesto dal controllo dell'account utente modificando il tag in *app.manifest* come segue:
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -127,7 +127,7 @@ Le impostazioni seguenti sono disponibili nella sezione **Proprietà framework a
 
 ### <a name="enable-xp-visual-styles"></a>Attiva stili di visualizzazione XP
 
-Consente di abilitare o disabilitare gli stili di visualizzazione di Windows XP, noti anche come *temi di Windows XP*. Gli stili di visualizzazione di Windows XP consentono, ad esempio, i controlli con angoli arrotondati e colori dinamici. Per impostazione predefinita questi stili sono abilitati.
+Consente di abilitare o disabilitare gli stili di visualizzazione di Windows XP, noti anche come *temi di Windows XP*. Gli stili di visualizzazione di Windows XP consentono, ad esempio, i controlli con angoli arrotondati e colori dinamici. Il valore predefinito è Attivato.
 
 ### <a name="make-single-instance-application"></a>Rendi a istanza singola
 
@@ -147,13 +147,13 @@ Selezionare **Alla chiusura del form di avvio** (impostazione predefinita) per s
 
 Selezionare **Alla chiusura esplicita** per specificare che l'applicazione deve terminare quando si chiama in modo esplicito `Shutdown`.
 
-Selezionare **Alla chiusura dell'ultima finestra** per specificare che l'applicazione deve terminare quando viene chiusa l'ultima finestra o quando si chiama in modo esplicito `Shutdown`. Questa è l'impostazione predefinita.
+Selezionare **Alla chiusura dell'ultima finestra** per specificare che l'applicazione deve terminare quando viene chiusa l'ultima finestra o quando si chiama in modo esplicito `Shutdown`. Si tratta dell'impostazione predefinita.
 
 Selezionare **Alla chiusura della finestra principale** per specificare che l'applicazione deve terminare quando viene chiusa la finestra principale o quando si chiama in modo esplicito `Shutdown`.
 
 ### <a name="splash-screen"></a>Schermata iniziale
 
-Selezionare il modulo che si vuole usare come schermata iniziale. È necessario avere creato precedentemente una schermata iniziale tramite un modulo o un modello. L'impostazione predefinita è **(Nessuna)** .
+Selezionare il modulo che si vuole usare come schermata iniziale. È necessario avere creato precedentemente una schermata iniziale tramite un modulo o un modello. Il valore predefinito è **(Nessuno)**.
 
 ### <a name="view-application-events"></a>Visualizza eventi applicazione
 
@@ -169,7 +169,7 @@ Questa proprietà è valida solo per le applicazioni WPF (Windows Presentation F
 
 Selezionare **Alla chiusura esplicita** per specificare che l'applicazione deve terminare quando si chiama in modo esplicito <xref:System.Windows.Application.Shutdown%2A>.
 
-Selezionare **Alla chiusura dell'ultima finestra** per specificare che l'applicazione deve terminare quando viene chiusa l'ultima finestra o quando si chiama in modo esplicito <xref:System.Windows.Application.Shutdown%2A>. Questa è l'impostazione predefinita.
+Selezionare **Alla chiusura dell'ultima finestra** per specificare che l'applicazione deve terminare quando viene chiusa l'ultima finestra o quando si chiama in modo esplicito <xref:System.Windows.Application.Shutdown%2A>. Si tratta dell'impostazione predefinita.
 
 Selezionare **Alla chiusura della finestra principale** per specificare che l'applicazione deve terminare quando viene chiusa la finestra principale o quando si chiama in modo esplicito <xref:System.Windows.Application.Shutdown%2A>.
 
@@ -177,7 +177,7 @@ Per altre informazioni sull'uso di questa impostazione, vedere <xref:System.Wind
 
 ### <a name="edit-xaml"></a>Modifica XAML
 
-Questo pulsante apre il file di definizione dell'applicazione (Application.xaml) nell'editor XAML. Quando si fa clic su questo pulsante, *Application.xaml* viene aperto in corrispondenza del nodo di definizione dell'applicazione. Potrebbe essere necessario modificare questo file per eseguire determinate attività, ad esempio la definizione delle risorse. Se il file di definizione dell'applicazione non esiste, Creazione progetti ne crea uno.
+Questo pulsante apre il file di definizione dell'applicazione (Application.xaml) nell'editor XAML. Quando si fa clic su questo pulsante, *Application.xaml* viene aperto nel nodo di definizione dell'applicazione. Potrebbe essere necessario modificare questo file per eseguire determinate attività, ad esempio la definizione delle risorse. Se il file di definizione dell'applicazione non esiste, Creazione progetti ne crea uno.
 
 ### <a name="view-application-events"></a>Visualizza eventi applicazione
 

@@ -16,11 +16,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410098"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79303407"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -33,44 +33,44 @@ Tale operazione è stata effettuata per consentire alle workstation client di po
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Scaricare il programma di bootstrap di Visual Studio
 
-Scaricare un file del programma di avvio automatico per l'edizione di Visual Studio desiderata. Assicurarsi di scegliere **Salva**, quindi scegliere **Apri cartella**.
+Scaricare un file del programma di avvio automatico per l'edizione di Visual Studio desiderata. Assicurarsi di scegliere **Salva**, quindi **Apri cartella**.
 
 ::: moniker range="vs-2017"
 
-Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download di [versioni precedenti di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per informazioni dettagliate su come eseguire questa operazione.
+Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download delle versioni precedenti di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per informazioni dettagliate su come eseguire questa operazione.
 
-Il file eseguibile di installazione&mdash;o più specifico, il file del programma di avvio automatico&mdash;deve corrispondere o essere simile a uno dei seguenti.
+Il file&mdash;eseguibile di installazione o&mdash;per essere più specifico, il file del programma di avvio automatico deve corrispondere o essere simile a uno dei seguenti.
 
 | Edizione | Nome file |
 |-------------|-----------------------|
 |Visual Studio Enterprise | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
-|Visual Studio Build Tools   | **vs_buildtools. exe** |
+|Visual Studio Build Tools   | **vs_buildtools.exe** |
 
-Altri programmi di avvio automatico supportati includono **vs_feedbackclient. exe**, **vs_TeamExplorer. exe**, **vs_testagent. exe**, **vs_testcontroller. exe**e **vs_testprofessional. exe**.
+Altri programmi di avvio automatico supportati includono **vs_feedbackclient.exe**, **vs_teamexplorer.exe**, **vs_testagent.exe**, **vs_testcontroller.exe**e **vs_testprofessional.exe**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Il file eseguibile di installazione&mdash;o in modo più specifico, un file&mdash;del programma di avvio automatico deve corrispondere o essere simile a uno dei seguenti.
+Il file&mdash;eseguibile di installazione o&mdash;per essere più specifico, un file del programma di avvio automatico deve corrispondere o essere simile a uno dei seguenti.
 
 |Edizione | Download|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
-| Visual Studio Build Tools   | [**vs_buildtools. exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
+| Visual Studio Build Tools   | [**vs_buildtools.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-Altri programmi di avvio automatico supportati includono [vs_TeamExplorer. exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/4026077127d25d33789f3882998266946608d8ada378b6ed7c8fff8c07f3dde2/vs_TeamExplorer.exe), [vs_testagent. exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/1383bf8bcda3d0e986a2e42c14114aaea8a7b085d31aa0623c9f70b2bad130e4/vs_TestAgent.exe)e [vs_testcontroller. exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/54dcf24b76e7cd9fb8be0ac518a9dfba6daf18fe9b2aa1543411b1cda8820918/vs_TestController.exe).
+Altri programmi di avvio automatico supportati includono [vs_teamexplorer.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/4026077127d25d33789f3882998266946608d8ada378b6ed7c8fff8c07f3dde2/vs_TeamExplorer.exe), [vs_testagent.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/1383bf8bcda3d0e986a2e42c14114aaea8a7b085d31aa0623c9f70b2bad130e4/vs_TestAgent.exe)e [vs_testcontroller.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/54dcf24b76e7cd9fb8be0ac518a9dfba6daf18fe9b2aa1543411b1cda8820918/vs_TestController.exe).
 
 ::: moniker-end
 
 >[!TIP]
->Se in precedenza è stato scaricato un file del programma di avvio automatico e si vuole verificarne la versione, ecco come. In Windows aprire Esplora file, fare clic con il pulsante destro del mouse sul file del programma di avvio automatico, scegliere **Proprietà**, scegliere la scheda **Dettagli** , quindi visualizzare il numero di **versione del prodotto** . Per abbinare tale numero a una versione di Visual Studio, vedere la pagina relativa ai [numeri di build e alle date di rilascio di Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
+>Se in precedenza hai scaricato un file del programma di avvio automatico e vuoi verificarne la versione, ecco come. In Windows aprire Esplora file, fare clic con il pulsante destro del mouse sul file del programma di avvio automatico, scegliere **Proprietà**, scegliere la scheda **Dettagli** e quindi visualizzare il numero di versione del **prodotto.** Per far corrispondere tale numero a una versione di Visual Studio, vedere la pagina Numeri di build e date di [rilascio](visual-studio-build-numbers-and-release-dates.md) di Visual Studio.To match that number to a release of Visual Studio, see the Visual Studio build numbers and release dates page.
 
 ## <a name="create-an-offline-installation-folder"></a>Creare una cartella di installazione offline
 
-Per completare questo passaggio è necessaria una connessione Internet. Per creare un'installazione offline con tutte le lingue e tutte le funzionalità, usare un comando simile a uno degli esempi seguenti.
+Per completare questo passaggio è necessaria una connessione Internet. Per creare un'installazione offline con tutte le lingue e tutte le funzionalità, utilizzare un comando simile a uno degli esempi seguenti.
 
    > [!IMPORTANT]
    > Un layout di Visual Studio completo richiede almeno 35 GB di spazio su disco e, pertanto, può essere necessario molto tempo per scaricarlo. Vedere la sezione [Personalizzare del layout di rete](#customize-the-network-layout) per informazioni su come creare un layout contenente solo i componenti che si vogliono installare.
@@ -90,7 +90,7 @@ Per completare questo passaggio è necessaria una connessione Internet. Per crea
 
 È possibile modificare il file response.json per impostare i valori predefiniti da usare quando viene eseguito il programma di installazione.  È possibile ,ad esempio, configurare il file `response.json` per selezionare un set specifico di carichi di lavoro selezionato in modo automatico. Per informazioni dettagliate, vedere [Automatizzare l'installazione di Visual Studio con un file di risposta](automated-installation-with-response-file.md).
 
-Se si verifica un problema con il programma di avvio automatico di Visual Studio che genera un errore quando si associa a un file Response. JSON, vedere la sezione "Impossibile analizzare l'ID dal processo padre" della sezione [risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) per altre informazioni sulle operazioni da eseguire.
+E, se si verifica un problema con il programma di avvio automatico di Visual Studio generando un errore quando lo si associa a un file response.json, vedere la sezione "Impossibile analizzare l'ID dal processo padre" della pagina [Risolvere i problemi relativi alla rete quando si installa o si utilizza Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) per ulteriori informazioni sulle operazioni da eseguire.
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Copiare il layout in una condivisione di rete
 
@@ -123,7 +123,7 @@ xcopy /e c:\VSLayout \\server\products\VS2019
 
 Sono disponibili varie opzioni per personalizzare il layout di rete. È possibile, ad esempio, creare un layout parziale che contenga solo un set specifico di [impostazioni locali delle lingue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [carichi di lavoro, componenti e relative dipendenze consigliate o facoltative](workload-and-component-ids.md). Questa soluzione potrebbe essere utile se si prevede di distribuire nelle workstation client solo un subset di carichi di lavoro. I parametri della riga di comando tipici per la personalizzazione del layout includono:
 
-* `--add` per specificare ID di [carico di lavoro o di componente](workload-and-component-ids.md). <br>Se si usa `--add`, verranno scaricati solo i carichi di lavoro e i componenti specificati con `--add`.  Se non si usa `--add`, verranno scaricati tutti i carichi di lavoro e i componenti.
+* `--add`per specificare [gli ID del carico di lavoro o dei componenti](workload-and-component-ids.md). <br>Se si usa `--add`, verranno scaricati solo i carichi di lavoro e i componenti specificati con `--add`.  Se non si usa `--add`, verranno scaricati tutti i carichi di lavoro e i componenti.
 * `--includeRecommended` per includere tutti i componenti consigliati per gli ID di carico di lavoro specificati.
 * `--includeOptional` per includere tutti i componenti consigliati e facoltativi per gli ID di carico di lavoro specificati.
 * `--lang` per specificare le [impostazioni locali delle lingue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
@@ -231,7 +231,7 @@ Gli amministratori possono distribuire Visual Studio nelle workstation client ne
 
 ::: moniker range="vs-2019"
 > [!IMPORTANT]
-> Per le installazioni offline, se viene visualizzato un messaggio di errore che indica che non è possibile trovare un prodotto corrispondente ai parametri seguenti, assicurarsi di usare l'opzione `--noweb` con la versione 16.3.5 o successiva.
+> Per le installazioni offline, se viene visualizzato il messaggio di errore "Impossibile trovare un `--noweb` prodotto corrispondente ai seguenti parametri", assicurarsi di utilizzare l'opzione con la versione 16.3.5 o successiva.
 >
 ::: moniker-end
 
@@ -274,7 +274,7 @@ Man mano che diventano disponibili nuovi aggiornamenti di prodotto, è possibile
 
 ::: moniker-end
 
-Se è necessario creare un layout per una versione precedente di Visual Studio, accedere all'indirizzo [https://my.visualstudio.com](https://my.visualstudio.com) e scaricare le versioni "corrette" dei programmi di bootstrap di Visual Studio.
+Se è necessario creare un layout per una versione [https://my.visualstudio.com](https://my.visualstudio.com) precedente di Visual Studio, passare a scaricare le versioni "fisse" del programma di avvio automatico di Visual Studio.If you need to create a layout for an older version of Visual Studio, go to download "fixed" versions of the Visual Studio bootstrappers.
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Come ottenere supporto per il programma di installazione offline
 
@@ -286,11 +286,11 @@ Sono disponibili anche altre opzioni per il supporto. Per un elenco, vedere la p
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
+- [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
 - [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)
-- [Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
+- [Risolvere gli errori relativi alla rete quando si installa o si utilizza Visual StudioTroubleshoot network-related errors when you install or use Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 - [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-- [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing/)
+- [Ciclo di vita e manutenzione del prodotto Visual StudioVisual Studio product lifecycle and servicing](/visualstudio/releases/2019/servicing/)
 - [Aggiornare Visual Studio secondo una baseline di manutenzione](update-servicing-baseline.md)
-- [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md) (Usare i parametri della riga di comando per installare Visual Studio)
+- [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)

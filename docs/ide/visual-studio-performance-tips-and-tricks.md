@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409501"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79303022"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -33,23 +33,23 @@ Visual Studio riaprire automaticamente i documenti lasciati aperti nella session
 
 Tramite una barra gialla, Visual Studio indica se il ripristino automatico dei documenti sta rallentando considerevolmente il caricamento di una soluzione. È possibile disabilitare la riapertura automatica dei file seguendo questa procedura:
 
-1. Selezionare **Strumenti** > **Opzioni** per aprire la finestra di dialogo **Opzioni**.
+1. Selezionare**Opzioni** **strumenti** > per aprire la finestra di dialogo **Opzioni.**
 
-1. Nella pagina **Progetti e soluzioni** > **Generale** deselezionare **Reopen documents on solution load** (Riapri documenti al caricamento della soluzione).
+1. Nella pagina**Generale** **progetti e soluzioni** > deselezionare **Riapri documenti al caricamento**della soluzione .
 
 Se si disabilita il ripristino automatico dei file, è possibile accedere velocemente ai file da aprire usando il comando [Vai a](../ide/go-to.md):
 
-- Per le funzionalità generali di **Vai a**, selezionare **Modifica** > **Vai a** > **Vai a tutti** oppure premere  **CTRL**+**T**.
+- Per le funzionalità generali di **Vai a**, selezionare **Modifica** > **Vai a** > **Vai a tutti** oppure premere ** CTRL**+**T**.
 
-- È possibile passare all'ultima posizione di modifica in una soluzione usando **Modifica** > **Vai a** > **Vai alla posizione dell'ultima modifica** oppure premendo **CTRL**+**MAIUSC**+**BACKSPACE**.
+- Passare all'ultima posizione di modifica in una soluzione utilizzando **Edit** > **Vai a** > **Ultima modifica**o premendo **CTRL**+**Maiusc**+**BACKspace**.
 
-- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **Modifica** > **Vai a** > **Go To Recent File** (Vai a file recenti) oppure premere **CTRL**+**1**, **CTRL**+**R**.
+- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **Edit** > **Modifica Vai a** > file**recente**o premere **CTRL**+**1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Configurare le opzioni di debug
 
 Se in genere si verificano problemi di memoria insufficiente durante le sessioni di debug, è possibile ottimizzare le prestazioni apportando una o più modifiche alla configurazione.
 
-- **Abilitare Just My Code**
+- **Abilita Just My Code**
 
     L'ottimizzazione più semplice consiste nell'abilitazione della funzionalità **Just My Code** che carica solo i simboli per il proprio progetto. L'abilitazione di questa funzionalità può offrire un notevole risparmio di memoria per il debug delle applicazioni gestite (.NET). Questa opzione è già abilitata per impostazione predefinita in alcuni tipi di progetto.
 
@@ -59,9 +59,9 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
 
     Per il debug nativo, il caricamento dei file di simboli (con estensione *pdb*) è dispendioso in termini di risorse di memoria. È possibile configurare le impostazioni dei simboli del debugger per risparmiare memoria. In genere, si configura la soluzione per caricare solo i moduli del proprio progetto.
 
-    Per specificare il caricamento dei simboli, scegliere **Strumenti**  > **Opzioni** > **Debug** > **Simboli**.
+    Per specificare il **Tools** > caricamento dei simboli, scegliere**Strumenti Opzioni di** > **debug** > **simboli**.
 
-    Impostare le opzioni su **Solo moduli specificati** anziché su **Tutti i moduli** e quindi specificare quali moduli si intende caricare. Durante il debug, è anche possibile fare doppio clic su moduli specifici nella finestra **Moduli** per includere in modo esplicito un modulo nel caricamento dei simboli (per aprire la finestra durante il debug, scegliere **Debug** > **Finestra** > **Moduli**).
+    Impostare le opzioni su **Solo moduli specificati** anziché su **Tutti i moduli** e quindi specificare quali moduli si intende caricare. Durante il debug, è anche possibile fare doppio clic su moduli specifici nella finestra **Moduli** per includere in modo esplicito un modulo nel caricamento dei simboli Per aprire la finestra durante il debug, scegliere **Debug** > **moduli****di Windows** > .
 
     Per altre informazioni, vedere [Understand symbol files](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019) (Informazioni sui file dei simboli).
 
@@ -88,13 +88,13 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
     Visual Studio esegue l'analisi dell'intera soluzione per fornire un'esperienza completa di verifica degli errori prima di richiamare una compilazione. Questa funzionalità è utile per identificare gli errori il più presto possibile. In caso di soluzioni di grandi dimensioni, questa funzionalità può tuttavia richiedere un maggiore utilizzo delle risorse di memoria. In caso di memoria insufficiente o di problemi analoghi, è possibile disabilitare questa funzionalità per liberare risorse. Per impostazione predefinita, questa opzione è abilitata per Visual Basic ed è disabilitata per C#.
 
-    Per disabilitare l'**analisi della soluzione completa**, scegliere **Strumenti** > **Opzioni** > **Editor di testo**, quindi selezionare **Visual Basic** o **C#** . Scegliere **Avanzate** e deselezionare **Abilita analisi della soluzione completa**.
+    Per disabilitare l'**analisi della soluzione completa**, scegliere **Strumenti** > **Opzioni** > **Editor di testo**, quindi selezionare **Visual Basic** o **C#**. Scegliere **Avanzate** e deselezionare **Abilita analisi della soluzione completa**.
 
 - **Disabilitare CodeLens**
 
     Visual Studio esegue un'attività **Trova tutti i riferimenti** su ogni metodo quando viene visualizzato. CodeLens offre funzionalità come la visualizzazione inline del numero di riferimenti. Il lavoro viene eseguito in un processo separato, ad esempio *ServiceHub.RoslynCodeAnalysisService32*. In soluzioni di grandi dimensioni o in sistemi con risorse limitate, questa funzionalità può influenzare notevolmente le prestazioni. Se si riscontra un elevato utilizzo della CPU in questo processo o se si verificano problemi di memoria, ad esempio durante il caricamento di una soluzione di grandi dimensioni in un computer da 4 GB, è possibile disabilitare la funzionalità CodeLens per liberare le risorse.
 
-    Per disabilitare **CodeLens**, scegliere **Strumenti** > **Opzioni** >  **Editor di testo** > **Tutti i linguaggi** > **CodeLens** e deselezionare la funzionalità.
+    Per disabilitare **CodeLens**, scegliere **Strumenti** > **Opzioni** > ** Editor di testo** > **Tutti i linguaggi** > **CodeLens** e deselezionare la funzionalità.
 
     > [!NOTE]
     > CodeLens è disponibile nelle edizioni Professional ed Enterprise di Visual Studio.
@@ -107,13 +107,13 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
    ::: moniker range="vs-2017"
 
-    Per disabilitare le estensioni, passare a **strumenti** > **estensioni e aggiornamenti**e disabilitare un'estensione specifica.
+    Per disabilitare le estensioni, andare a **Strumenti** > **Estensioni e aggiornamenti** e disabilitare l'estensione specifica.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    Per disabilitare le estensioni, passare a **estensioni** > **Gestisci estensioni**e disabilitare un'estensione specifica.
+    Per disabilitare le estensioni, andare a **Estensioni** > **Gestisci estensioni** e disabilitare l'estensione specifica.
 
    ::: moniker-end
 
@@ -129,9 +129,9 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
 ## <a name="force-a-garbage-collection"></a>Imporre una Garbage Collection
 
-CLR usa una sistema di gestione della memoria di Garbage Collection. In questo sistema, talvolta viene utilizzata memoria da oggetti non più necessari. Questo stato è temporaneo, il Garbage Collector libera questa memoria in base alla propria euristica di prestazioni e uso delle risorse. È possibile imporre a CLR la raccolta della memoria inutilizzata usando un tasto di scelta rapida in Visual Studio. Se in presenza di una quantità elevata di garbage in attesa di raccolta si forza una Garbage Collection, si noterà una riduzione nel consumo di memoria da parte del processo *devenv.exe* in **Gestione attività**. È raramente è necessario utilizzare questo metodo. Tuttavia, dopo il completamento di un'operazione dispendiosa (ad esempio una compilazione completa, una sessione di debug o un evento di apertura della soluzione), può consentire di determinare la quantità di memoria effettivamente usata dal processo. Poiché Visual Studio è misto (gestito e nativo), è talvolta possibile che allocatore nativo e Garbage Collector si contengono le risorse di memoria. In condizioni di utilizzo elevato della memoria, può essere utile per imporre l'esecuzione del Garbage Collector.
+CLR usa una sistema di gestione della memoria di Garbage Collection. In questo sistema, talvolta viene utilizzata memoria da oggetti non più necessari. Questo stato è temporaneo, il Garbage Collector libera questa memoria in base alla propria euristica di prestazioni e uso delle risorse. È possibile imporre a CLR la raccolta della memoria inutilizzata usando un tasto di scelta rapida in Visual Studio. Se in presenza di una quantità elevata di garbage in attesa di raccolta si forza una Garbage Collection, si noterà una riduzione nel consumo di memoria da parte del processo *devenv.exe *in **Gestione attività**. È raramente è necessario utilizzare questo metodo. Tuttavia, dopo il completamento di un'operazione dispendiosa (ad esempio una compilazione completa, una sessione di debug o un evento di apertura della soluzione), può consentire di determinare la quantità di memoria effettivamente usata dal processo. Poiché Visual Studio è misto (gestito e nativo), è talvolta possibile che allocatore nativo e Garbage Collector si contengono le risorse di memoria. In condizioni di utilizzo elevato della memoria, può essere utile per imporre l'esecuzione del Garbage Collector.
 
-Per forzare una Garbage Collection, usare il tasto di scelta rapida: **CTRL**+**ALT**+**MAIUSC**+**F12**, **CTRL**+**ALT**+**MAIUSC**+**F12** (premerlo due volte).
+Per forzare un'operazione di Garbage Collection, utilizzare il tasto di scelta rapida: **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Maiusc**+**F12** (premere due volte).
 
 Se l'imposizione della Garbage Collection risulta particolarmente efficiente nel proprio scenario, compilare un report tramite lo strumento per il feedback di Visual Studio poiché questo comportamento è in genere sintomo di un bug.
 

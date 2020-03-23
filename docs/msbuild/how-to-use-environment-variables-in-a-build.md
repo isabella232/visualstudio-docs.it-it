@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633785"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: Usare le variabili di ambiente in una compilazione
@@ -69,4 +69,4 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Proprietà di MSBuild](../msbuild/msbuild-properties.md)
-- [Procedura: Compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+- [Procedura: compilare gli stessi file di origine con opzioni diverseHow to: Build the same source files with different options](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

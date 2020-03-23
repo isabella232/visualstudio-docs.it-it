@@ -1,5 +1,5 @@
 ---
-title: 'Guida introduttiva: creare la prima app Vue. js'
+title: 'Guida introduttiva: Creare la prima app Vue.js'
 description: In questa Guida introduttiva viene spiegato come creare un'app Vue.js in Visual Studio usando Node.js Tools for Visual Studio
 ms.custom: ''
 ms.date: 10/31/2019
@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "78235106"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Guida introduttiva: Creare per la prima volta un'app Vue.js con Visual Studio
@@ -31,21 +31,21 @@ In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) d
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se Visual Studio 2019 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
+    Se non hai ancora installato Visual Studio 2019, vai alla pagina dei [download](https://visualstudio.microsoft.com/downloads/) di Visual Studio per installarlo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se Visual Studio 2017 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)  per installarlo gratuitamente.
+    Se non hai ancora installato Visual Studio 2017, vai alla pagina dei [download](https://visualstudio.microsoft.com/downloads/) di Visual Studio per installarlo gratuitamente.
     ::: moniker-end
 
-    Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, che apre il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **Strumenti** > **Get Tools and Features...**, che apre il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
 
     ![Carico di lavoro Node.js nel programma di installazione di Visual Studio](../ide/media/quickstart-nodejs-workload.png)
 
 * Il runtime di Node.js deve essere installato.
 
-    Se non è installato, è consigliabile installare la versione LTS dal sito Web [node. js](https://nodejs.org/en/download/) per una migliore compatibilità con i Framework e le librerie esterni. Node. js è compilato per le architetture a 32 bit e a 64 bit. Gli strumenti node. js in Visual Studio, inclusi nel carico di lavoro node. js, supportano entrambe le versioni. Ne è necessario solo uno e il programma di installazione di node. js ne supporta solo uno che viene installato alla volta.
+    Se non è installato, si consiglia di installare la versione LTS dal sito [Web Node.js](https://nodejs.org/en/download/) per la migliore compatibilità con framework e librerie esterni. Node.js è progettato per architetture a 32 e 64 bit. Gli strumenti Node.js in Visual Studio, inclusi nel carico di lavoro Node.js, supportano entrambe le versioni. Ne è richiesto solo uno e il programma di installazione Node.js supporta solo uno in fase di installazione alla volta.
     
-    In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non rileva un Runtime installato, è possibile configurare il progetto in modo che faccia riferimento al runtime installato nella pagina proprietà (dopo aver creato un progetto, fare clic con il pulsante destro del mouse sul nodo del progetto, scegliere **Proprietà**e impostare il **percorso di node. exe**). È possibile usare un'installazione globale di node. js oppure è possibile specificare il percorso di un interprete locale in ogni progetto node. js. 
+    In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non rileva un runtime installato, è possibile configurare il progetto in modo che faccia riferimento al runtime installato nella pagina delle proprietà (dopo aver creato un progetto, aver fatto clic con il pulsante destro del mouse sul nodo del progetto, scegliere **Proprietà**e impostare il **percorso di Node.exe**). È possibile utilizzare un'installazione globale di Node.js oppure è possibile specificare il percorso di un interprete locale in ognuno dei progetti Node.js. 
 
 ## <a name="create-a-project"></a>Creare un progetto
 
@@ -53,7 +53,7 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
 1. Se il runtime di Node.js non è già installato, installare la versione LTS dal sito Web [Node.js](https://nodejs.org/en/download/).
 
-    Per ulteriori informazioni, vedere i prerequisiti.
+    Per altre informazioni, vedere i prerequisiti.
 
 1. Aprire Visual Studio.
 
@@ -65,7 +65,7 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
     ![Modello Vue.js](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript** o **TypeScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Vue.js di base**, digitare il nome **basic-vuejs** e scegliere **OK**.
+    Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript** o **TypeScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Vue.js di base**, digitare il nome **basic-vuejs** e scegliere **OK**.
 
     ![Modello Vue.js](../javascript/media/vuejs-template.png)
     ::: moniker-end
@@ -85,11 +85,11 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
      ![Soluzione Vue.js](../javascript/media/vuejs-solution.png)
 
-   - Il progetto viene visualizzato in grassetto, con il nome assegnato in precedenza nella finestra di dialogo **Nuovo progetto**. Sul disco, questo progetto è rappresentato nella cartella del progetto da un file con estensione *njsproj*.
+   - Il progetto viene visualizzato in grassetto, con il nome assegnato in precedenza nella finestra di dialogo **Nuovo progetto**. Su disco, questo progetto è rappresentato da un oggetto . *njsproj* nella cartella del progetto.
 
-   - Al primo livello è presente una soluzione che, per impostazione predefinita, ha lo stesso nome del progetto. Una soluzione, rappresentata su disco da un file con estensione *sln*, è un contenitore per uno o più progetti correlati.
+   - Al primo livello è presente una soluzione che, per impostazione predefinita, ha lo stesso nome del progetto. Una soluzione, rappresentata da un oggetto . *sln* file su disco, è un contenitore per uno o più progetti correlati.
 
-   - Il nodo **npm** visualizza tutti i pacchetti npm installati. È possibile fare clic con il pulsante destro del mouse sul nodo npm per cercare e installare pacchetti npm tramite una finestra di dialogo.
+   - Il nodo **npm** mostra tutti i pacchetti npm installati. È possibile fare clic con il pulsante destro del mouse sul nodo npm per cercare e installare pacchetti npm tramite una finestra di dialogo.
 
 2. Se si vuole installare pacchetti npm o eseguire comandi Node.js da un prompt dei comandi, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Apri prompt dei comandi qui**.
 
@@ -103,15 +103,15 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
 ## <a name="build-the-project"></a>Compilare il progetto
 
-1. (Solo per progetti TypeScript) Da Visual Studio scegliere **Compila** > **Pulisci soluzione**.
+1. (Solo progetto TypeScript) In Visual Studio scegliere **Compila** > **soluzione pulita**.
 
     ::: moniker range=">=vs-2019"
     Nel modello TypeScript incluso in Visual Studio 2019 ignorare questo passaggio.
     ::: moniker-end
 
-1. In seguito, scegliere **Compila** > **Compila soluzione** per compilare il progetto. Controllare i risultati della compilazione nella finestra **Output** e scegliere **Compila** dall'elenco **Mostra output di**.
+1. Scegliere quindi **Compila** > **soluzione** per compilare il progetto. Controllare i risultati della compilazione nella finestra **Output** e scegliere **Compila** dall'elenco **Mostra output di**.
 
-    Il modello di progetto di JavaScript VME. js (e le versioni precedenti del modello TypeScript) usano lo script NPM di `build` configurando un evento di post-compilazione. Se si desidera modificare questa impostazione, aprire il file di progetto ( *\<projectname\>.njsproj*) da Esplora risorse e individuare la seguente riga di codice:
+    Il modello di progetto Vue.js JavaScript (e le `build` versioni precedenti del modello TypeScript) usano lo script npm configurando un evento post-compilazione. Se si desidera modificare questa impostazione, aprire il file di progetto (*\<nomeprogetto\>.njsproj*) da Esplora risorse e individuare questa riga di codice:
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -119,13 +119,13 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
 ## <a name="run-the-application"></a>Eseguire l'applicazione
 
-1. Premere **Ctrl**+**F5** (o scegliere **Debug > Avvia senza eseguire debug**) per eseguire l'applicazione.
+1. Premere **CTRL**+**F5** (o **Esegui debug > Avvia senza eseguire debug**) per eseguire l'applicazione.
 
-   Nella console un messaggio avvisa che è in corso *l'avvio del server di sviluppo* .
+   Nella console un messaggio avvisa che è in corso *l'avvio del server di sviluppo *.
 
    Quindi, l'app verrà aperta in un browser.
    
-   Se l'app in esecuzione non è visibile, aggiornare la pagina.
+   Se non vedi l'app in esecuzione, aggiorna la pagina.
 
    ![App Vue.js in esecuzione nel browser](../javascript/media/vuejs-running-app.png)
 
@@ -137,4 +137,4 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 
 - Completare l'[Esercitazione per Node.js e Express](tutorial-nodejs.md)
 - Completare l'[Esercitazione per Node.js e React](tutorial-nodejs-with-react-and-jsx.md)
-- [Distribuire l'app nel Servizio app di Linux](../javascript/publish-nodejs-app-azure.md)
+- [Distribuire l'app nel servizio app di Linux](../javascript/publish-nodejs-app-azure.md)

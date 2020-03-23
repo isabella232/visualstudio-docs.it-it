@@ -15,13 +15,13 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f50dad637d9efa2db347ff9f1b4828abf8c733af
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589188"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: creare un unit test basato sui dati
+# <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: creare uno unit test basato sui datiHow to: Create a data-driven unit test
 
 È possibile usare il framework unit test Microsoft per il codice gestito per impostare un metodo di unit test per recuperare i valori da un'origine dati. Il metodo viene eseguito in successione per ogni riga nell'origine dati, rendendo più semplice testare una un'ampia varietà di input con un singolo metodo.
 
@@ -67,7 +67,7 @@ public int AddIntegers(int first, int second)
 
 Per testare il metodo `AddIntegers`, creiamo un'origine dati che specifica un intervallo di valori per i parametri e la somma restituita prevista. Nell'esempio verrà creato un database Sql Compact denominato `MathsData` e una tabella denominata `AddIntegersData` che contiene i nomi di colonna e i valori seguenti
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|SUM|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
@@ -89,7 +89,7 @@ public TestContext TestContext
 Nel metodo di test si accede ai dati tramite la proprietà dell'indicizzatore `DataRow` di `TestContext`.
 
 > [!NOTE]
-> .NET core non supporta l'attributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Se si tenta di accedere ai dati di test in questo modo in un progetto di unit test .NET Core o per la piattaforma UWP, verrà visualizzato un errore simile a **"'TestContext' non contiene una definizione per 'DataRow' e non è stato trovato alcun metodo di estensione accessibile 'DataRow' che accetta un primo argomento di tipo 'TestContext'. Probabilmente manca una direttiva using o un riferimento all'assembly"** .
+> .NET core non supporta l'attributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Se si tenta di accedere ai dati di test in questo modo in un progetto di unit test .NET Core o per la piattaforma UWP, verrà visualizzato un errore simile a **"'TestContext' non contiene una definizione per 'DataRow' e non è stato trovato alcun metodo di estensione accessibile 'DataRow' che accetta un primo argomento di tipo 'TestContext'. Probabilmente manca una direttiva using o un riferimento all'assembly"**.
 
 ## <a name="write-the-test-method"></a>Scrivere il metodo di test
 
@@ -160,7 +160,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>Eseguire il test e visualizzare i risultati
 
-Al termine della scrittura di un metodo di test, compilare il progetto di test. Il metodo di test viene visualizzato in **Esplora test** nel gruppo **Test non eseguiti**. Quando si eseguono, si scrivono e si rieseguono i test, **Esplora test** visualizza i risultati nei gruppi **Test non superati**, **Test superati** e **Test non eseguiti**. È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire.
+Al termine della scrittura di un metodo di test, compilare il progetto di test. Il metodo di test viene visualizzato in **Esplora test** nel gruppo **Test non eseguiti**. Quando si eseguono, si scrivono e si rieseguono i test, **Esplora test** visualizza i risultati nei gruppi **Test non superati**, **Test superati** e **Test non eseguiti**. È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per scegliere un sottoinsieme di test da eseguire.
 
 La barra dei risultati dei test nella parte superiore di **Esplora test** viene animata durante l'esecuzione dei test. Al termine del test, la barra diventa verde se tutti i test sono stati superati oppure rossa se almeno uno dei test ha avuto esito negativo. Nel riquadro dei dettagli nella parte inferiore della finestra **Esplora test** appare un riepilogo dell'esecuzione dei test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore.
 
@@ -177,6 +177,6 @@ Dopo avere corretto il metodo sottoposto a test ed eseguito nuovamente il test, 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
-- [Eseguire unit test del codice](../test/unit-test-your-code.md)
+- [Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)
 - [Scrittura di unit test per .NET con il framework di unit test Microsoft per il codice gestito](../test/unit-test-your-code.md)

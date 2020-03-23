@@ -15,15 +15,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778687"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Procedura: Specificare l'avvio del file binario
 
-Per profilare file binari, ad esempio le DLL, è necessario immettere informazioni nella finestra di dialogo **Pagine delle proprietà di \<destinazione>** . Queste informazioni indicano dove il progetto DLL può trovare l'applicazione chiamante.
+Per profilare i file binari, ad esempio le DLL, è necessario immettere le informazioni nella ** \<** finestra di dialogo Pagine delle proprietà di> di destinazione. Queste informazioni indicano dove il progetto DLL può trovare l'applicazione chiamante.
 
 1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul file binario di destinazione e quindi scegliere **Proprietà**.
 

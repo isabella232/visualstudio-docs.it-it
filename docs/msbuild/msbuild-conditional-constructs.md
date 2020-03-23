@@ -23,15 +23,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633382"
 ---
 # <a name="msbuild-conditional-constructs"></a>Costrutti condizionali di MSBuild
 
-MSBuild fornisce un meccanismo per l'elaborazione/o con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [in caso contrario](../msbuild/otherwise-element-msbuild.md) .
+MSBuild fornisce un meccanismo per l'elaborazione con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [Otherwise](../msbuild/otherwise-element-msbuild.md) .
 
 ## <a name="use-the-choose-element"></a>Usare l'elemento Choose
 
@@ -82,6 +82,6 @@ MSBuild fornisce un meccanismo per l'elaborazione/o con gli elementi [Choose](..
 ## <a name="see-also"></a>Vedere anche
 
 - [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)
-- [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)
+- [Quando elemento (MSBuild)When element (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)
 - [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)

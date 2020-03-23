@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595787"
 ---
 # <a name="assembly-information-dialog-box"></a>Finestra di dialogo Informazioni assembly
@@ -25,7 +25,7 @@ ms.locfileid: "75595787"
 
 Per accedere a questa finestra di dialogo, selezionare un nodo del progetto in **Esplora soluzioni** e quindi scegliere **Proprietà** dal menu **Progetto**. Nella pagina **Applicazione** selezionare il pulsante **Informazioni assembly**.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 **Titolo**\
 Specifica un titolo per il manifesto dell'assembly. Corrisponde a <xref:System.Reflection.AssemblyTitleAttribute>.
@@ -33,7 +33,7 @@ Specifica un titolo per il manifesto dell'assembly. Corrisponde a <xref:System.R
 **Descrizione**\
 Specifica una descrizione facoltativa per il manifesto dell'assembly. Corrisponde a <xref:System.Reflection.AssemblyDescriptionAttribute>.
 
-**Società**\
+**Azienda**\
 Specifica il nome di una società per il manifesto dell'assembly. Corrisponde a <xref:System.Reflection.AssemblyCompanyAttribute>.
 
 È possibile impostare o modificare il valore predefinito per Società nel Registro di sistema. Cercare il valore **RegisteredOrganization** nella chiave **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** o **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion**, a seconda della versione di Windows.
@@ -47,23 +47,23 @@ Specifica le informazioni sul copyright per il manifesto dell'assembly. Corrispo
 **Marchio**\
 Specifica un marchio per il manifesto dell'assembly. Corrisponde a <xref:System.Reflection.AssemblyTrademarkAttribute>.
 
-**Versione dell'assembly**\
+**Versione assembly**\
 Specifica la versione dell'assembly. Corrisponde a <xref:System.Reflection.AssemblyVersionAttribute>.
 
-**Versione file**\
+**Versione del file**\
 Specifica a un numero di versione che indica al compilare di usare una versione specifica per la risorsa della versione del file Win32. Corrisponde a <xref:System.Reflection.AssemblyFileVersionAttribute>.
 
-**GUID**\
+**Guid**\
 Un GUID univoco che identifica l'assempbly. Quando si crea un progetto, Visual Studio genera un GUID per l'assembly. Corrisponde a <xref:System.Guid>.
 
-**Lingua di sistema**\
-Specifica le impostazioni cultura supportate dall'assembly. Corrisponde a <xref:System.Resources.NeutralResourcesLanguageAttribute>. L'impostazione predefinita è **(Nessuna)** .
+**Lingua neutra**\
+Specifica le impostazioni cultura supportate dall'assembly. Corrisponde a <xref:System.Resources.NeutralResourcesLanguageAttribute>. Il valore predefinito è **(Nessuno)**.
 
-**Rendi assembly visibile a COM**\
+**Rendi visibile l'assembly COM-Visible**\
 Specifica se i tipi nell'assembly saranno disponibili a COM. Corrisponde a <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 
 > [!NOTE]
-> Per altre informazioni sull'impostazione di queste proprietà durante la generazione di un pacchetto NuGet in una libreria di classi .NET Framework, vedere [configurare le proprietà del progetto per il pacchetto](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
+> Per ulteriori informazioni sull'impostazione di queste proprietà durante la generazione di un pacchetto NuGet in una libreria di classi .NET Framework, vedere [Configurare le proprietà del progetto per il pacchetto.](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)
 
 ## <a name="see-also"></a>Vedere anche
 

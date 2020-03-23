@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567216"
 ---
 # <a name="customize-startup"></a>Personalizzare l'avvio
@@ -32,7 +32,7 @@ ms.locfileid: "75567216"
 
 ## <a name="to-change-the-startup-item"></a>Per modificare l'elemento di avvio
 
-1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+1. Nella barra dei menu scegliere**Opzioni** **degli strumenti** > .
 
 2. Espandere **Ambiente**, quindi scegliere **Avvio**.
 
@@ -58,7 +58,7 @@ Per installare una pagina iniziale personalizzata, aprire il file con estensione
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>Per selezionare la pagina iniziale personalizzata da visualizzare
 
-1. Nella barra dei menu scegliere **strumenti** > **Opzioni**.
+1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
 
 1. Espandere **Ambiente**, quindi scegliere **Avvio**.
 

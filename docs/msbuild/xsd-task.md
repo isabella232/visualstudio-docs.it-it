@@ -21,15 +21,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630782"
 ---
 # <a name="xsd-task"></a>XSD (attività)
 
-Esegue il wrapping dello strumento XML Schema Definition, *xsd.exe*, che genera file di schema o di classe da un'origine.
+Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera file di schema o di classe da un'origine.
 
 > [!NOTE]
 > A partire da Visual Studio 2017, il supporto dei progetti C++ per *xsd.exe* è deprecato. È comunque possibile usare le API **Microsoft.VisualC.CppCodeProvider** aggiungendo manualmente *CppCodeProvider.dll* alla Global Assembly Cache.
@@ -52,9 +52,9 @@ Esegue il wrapping dello strumento XML Schema Definition, *xsd.exe*, che genera 
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione XSD.
 
-  - **classes** -  **/classes**
+  - **classes** - **classi/classi**
 
-  - **dataset** -  **/dataset**
+  - **set di dati** - **/dataset**
 
 - **Lingua**
 
@@ -64,13 +64,13 @@ Esegue il wrapping dello strumento XML Schema Definition, *xsd.exe*, che genera 
 
      È possibile scegliere tra **CS** (C#, il linguaggio predefinito), **VB** (Visual Basic) o **JS** (JScript). È anche possibile specificare un nome completo per una classe che implementa `System.CodeDom.Compiler.CodeDomProvider Class`.
 
-- **Spazio dei nomi**
+- **Namespace**
 
      Parametro **String** facoltativo.
 
      Specifica lo spazio dei nomi del runtime per i tipi generati.
 
-- **Sources**
+- **recenti**
 
      Parametro `ITaskItem[]` obbligatorio.
 
@@ -78,7 +78,7 @@ Esegue il wrapping dello strumento XML Schema Definition, *xsd.exe*, che genera 
 
 - **SuppressStartupBanner**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.
 

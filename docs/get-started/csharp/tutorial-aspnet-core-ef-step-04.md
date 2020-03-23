@@ -1,5 +1,5 @@
 ---
-title: "Passaggio 4: esposizione di un'API Web dall'app ASP.NET Core"
+title: "Passaggio 4: Esposizione di un'API Web dall'app ASP.NET coreStep 4: Exposing a web API From Your ASP.NET Core App"
 description: Aggiungere un'API Web all'app Web ASP.NET Core con questa esercitazione video e le istruzioni dettagliate.
 ms.custom: get-started
 ms.date: 02/13/2020
@@ -17,13 +17,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5ea9468bdf86986ab542fb1cabc873c9aeb75fd6
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580045"
 ---
-# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Passaggio 4: esporre un'API Web dall'app ASP.NET Core
+# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Passaggio 4: Esporre un'API Web dall'app ASP.NET CoreStep 4: Expose a web API from your ASP.NET Core app
 
 Seguire questa procedura per aggiungere un'API Web a un'app ASP.NET Core esistente.
 
@@ -37,7 +37,7 @@ Aprire l'app ASP.NET Core in Visual Studio 2019. È necessario che l'app usi gi�
 
 ## <a name="add-an-api-controller"></a>Aggiungere un controller API
 
-Fare clic con il pulsante destro del mouse sul progetto e aggiungere una nuova cartella denominata *Api*. Fare clic con il pulsante destro del mouse sulla cartella e scegliere **Aggiungi** > **Nuovo elemento di scaffolding**. Scegliere **Controller API con azioni, che usa Entity Framework**. A questo punto, scegliere una classe modello esistente e fare clic su **Aggiungi**.
+Fare clic con il pulsante destro del mouse sul progetto e aggiungere una nuova cartella denominata *Api*. Quindi, fare clic con il pulsante destro del mouse su questa cartella e scegliere **Aggiungi** > **nuovo elemento con scaffolding**. Scegliere **Controller API con azioni, che usa Entity Framework**. A questo punto, scegliere una classe modello esistente e fare clic su **Aggiungi**.
 
 ![Controller API di scaffolding di ASP.NET Core in Visual Studio 2019](media/vs-2019/vs2019-add-scaffold-api.png)
 
@@ -187,7 +187,7 @@ Infine, viene usata una route `[HttpDelete]` con un ID per eliminare un record. 
 
 ## <a name="adding-swagger"></a>Aggiunta di Swagger
 
-Swagger è uno strumento per il testing e la documentazione dell'API, che può essere aggiunto come un set di servizi e middleware a un'app ASP.NET Core. A tale scopo, fare clic con il pulsante destro del mouse sul progetto e scegliere **Gestisci pacchetti NuGet**. Fare quindi clic su **Sfoglia**, cercare `Swashbuckle.AspNetCore`e installare la versione 4.0.1.
+Swagger è uno strumento per il testing e la documentazione dell'API, che può essere aggiunto come un set di servizi e middleware a un'app ASP.NET Core. A tale scopo, fare clic con il pulsante destro del mouse sul progetto e scegliere **Gestisci pacchetti NuGet**. Quindi, **Browse**fare clic `Swashbuckle.AspNetCore`su Sfoglia , cercare e installare la versione 4.0.1.
 
 ![Visual Studio 2019 - Aggiunta di Swashbuckle da Nuget](media/vs-2019/vs2019-nuget-swashbuckle.png)
 
@@ -226,7 +226,7 @@ Fare clic su un endpoint in Games e quindi su `Try it out` e `Execute` per veder
 
 Nel prossimo video verrà spiegato come distribuire l'app in Azure.
 
-[Passaggio 5: distribuzione dell'app ASP.NET Core in Azure](tutorial-aspnet-core-ef-step-05.md)
+[Passaggio 5: Distribuzione dell'app di base dell'ASP.NET in AzureStep 5: Deploying Your ASP.NET Core App to Azure](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="see-also"></a>Vedere anche
 

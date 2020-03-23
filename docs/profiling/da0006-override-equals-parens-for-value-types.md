@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e097d6d8c9a7b82fac53fd37951644eb7eb5e59
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779532"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Eseguire l'override di Equals() per i tipi di valore
@@ -27,7 +27,7 @@ ms.locfileid: "74779532"
 |-|-|
 |ID regola|DA0006|
 |Category|Uso di .NET Framework|
-|Metodi di profilatura|Campionamento|
+|Metodi di profilatura|campionamento|
 |Message|Eseguire l'override di Equals e dell'operatore di uguaglianza sui tipi di valore.|
 |Tipo di messaggio|Avviso|
 

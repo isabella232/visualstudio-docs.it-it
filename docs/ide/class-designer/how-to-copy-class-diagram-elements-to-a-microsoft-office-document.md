@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2d08b45d913270bdc43c01b0baf92abc3589927
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592243"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Procedura: Copiare elementi dei diagrammi classi in un documento di Microsoft Office
@@ -42,5 +42,5 @@ Fare clic con il pulsante destro del mouse sulla forma e scegliere **Copia immag
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Stampare diagrammi classi](how-to-print-class-diagrams.md)
-- [Procedura: Esportare diagrammi classi come immagini](how-to-export-class-diagrams-as-images.md)
+- [Procedura: stampare diagrammi classi](how-to-print-class-diagrams.md)
+- [Procedura: esportare diagrammi classi come immaginiHow to: Export class diagrams as images](how-to-export-class-diagrams-as-images.md)

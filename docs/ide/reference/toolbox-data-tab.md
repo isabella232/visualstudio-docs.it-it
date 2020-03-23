@@ -1,5 +1,5 @@
 ---
-title: Casella degli strumenti, Scheda Dati
+title: Casella degli strumenti, scheda Dati
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590254"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
@@ -30,7 +30,7 @@ Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La 
 
 Per passare direttamente alla pagina di riferimento di .NET per un componente, premere **F1** sull'elemento nella **Casella degli strumenti** o sul componente nella barra della finestra di progettazione.
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|Aggiunge un'istanza di un set di dati tipizzato o non tipizzato al form o al componente. Quando si trascina questo oggetto in una finestra di progettazione, viene visualizzata una finestra di dialogo che consente di selezionare una classe Dataset tipizzata esistente o di specificare che si vuole creare un nuovo set di dati non tipizzato vuoto. **Nota:** l'oggetto <xref:System.Data.DataSet> nella **Casella degli strumenti** non viene usato per creare una nuova classe e un nuovo schema di set di dati tipizzato. Per altre informazioni, vedere [Create and configure datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).|
 |<xref:System.Windows.Forms.DataGridView>|Offre un sistema efficiente e flessibile per visualizzare i dati in formato tabulare.|
@@ -39,7 +39,7 @@ Per passare direttamente alla pagina di riferimento di .NET per un componente, p
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Accedere ai dati in Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
+- [Accedere ai dati in Visual StudioAccess Data in Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
 - [Visual Studio Data Tools per .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Strumenti di set di dati in Visual Studio](../../data-tools/dataset-tools-in-visual-studio.md)
 - [Associare controlli ai dati in Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)

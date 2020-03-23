@@ -1,5 +1,5 @@
 ---
-title: a capo automatico
+title: A capo automatico
 ms.date: 11/07/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36720588f56d7c718078dca96445eb48915a3845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f456a35f4a65438df5229492beb1f3e142e38f05
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75569075"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508940"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: gestire il ritorno a capo automatico nell'editor
 
@@ -28,11 +28,11 @@ ms.locfileid: "75569075"
 
 ## <a name="to-set-word-wrap-preferences"></a>Per impostare le preferenze del ritorno a capo automatico
 
-1. Scegliere **Opzioni** dal menu **Strumenti**.
+1. Nel menu **Strumenti** selezionare **Opzioni**.
 
 2. Per impostare l'opzione a livello globale, nella cartella **Editor di testo** scegliere le opzioni **Generale** nella sottocartella **Tutti i linguaggi**.
 
-     oppure
+     - o -
 
      Scegliere le opzioni **Generale** nella sottocartella corrispondente al linguaggio di programmazione in uso.
 
@@ -50,7 +50,6 @@ ms.locfileid: "75569075"
 Se si ha familiarità con il ritorno a capo automatico in Notepad++, Sublime Text o Visual Studio Code, tenere presente i problemi seguenti per cui Visual Studio si comporta in modo diverso rispetto agli altri editor:
 
 * [Il triplo clic non seleziona l'intera riga](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
-* [Il comando Taglia non elimina l'intera riga](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
 * [Premere il tasto FINE due volte non sposta il cursore alla fine della riga](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
 ## <a name="see-also"></a>Vedere anche

@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c6a5a0eb84e4f06fd1b4dd248a1bce952b2c7197
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779805"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guida per principianti al campionamento CPU
@@ -73,13 +73,13 @@ ms.locfileid: "74779805"
 
  Ogni area numerata nella figura si riferisce a un passaggio della procedura.
 
- ![Visualizzazione report di riepilogo per il campionamento](../profiling/media/summary_sampling.png "Summary_Sampling")
+ ![Visualizzazione del report di riepilogo per il campionamento](../profiling/media/summary_sampling.png "Summary_Sampling")
 
 #### <a name="to-analyze-sampling-data"></a>Analizzare i dati di campionamento
 
 1. Nella visualizzazione **Riepilogo** il **Percorso critico** indica il ramo dell'albero delle chiamate dell'applicazione con gli esempi più inclusivi. Si tratta del percorso di esecuzione che era più attivo quando sono stati raccolti dati. Valori inclusivi alti possono indicare che l'algoritmo che genera la struttura delle chiamate può essere ottimizzata. Trovare la funzione nel codice che è più basso nel percorso. Si noti che il percorso può inoltre includere funzioni di sistema o funzioni in moduli esterni.
 
-     ![Percorso critico del profiler](../profiling/media/profiler_hotpath.png "Profiler_HotPath")
+     ![Percorso ricorrente del profiler](../profiling/media/profiler_hotpath.png "Profiler_HotPath")
 
     1. **Esempi inclusivi** indica quanto lavoro è stato svolto dalla funzione e dalle funzioni chiamate dalla funzione. I numeri inclusivi alti indicano le funzioni sono più dispendiose in generale.
 
@@ -95,13 +95,13 @@ ms.locfileid: "74779805"
 
 3. Per continuare l'analisi, tornare alla visualizzazione **Riepilogo** selezionando **Riepilogo** dall'elenco a discesa **Visualizza**. Esaminare quindi le funzioni in **Funzioni che svolgono più lavoro individuale**. Questo elenco vengono visualizzate le funzioni con i campioni esclusivi più alti. Il codice nel corpo della funzione di queste funzioni eseguite molto lavoro e potrebbe essere possibile ottimizzarlo. Per analizzare ulteriormente una particolare funzione, fare clic sul nome della funzione per visualizzarlo in **Dettagli funzione**.
 
-     ![Elenco di funzioni che funzionano maggiormente](../profiling/media/functions_mostwork.png "Functions_MostWork")
+     ![Elenco di funzioni che svolgono la maggior parte del lavoro](../profiling/media/functions_mostwork.png "Functions_MostWork")
 
      Per continuare l'analisi dell'esecuzione della profilatura, è possibile analizzare di nuovo un segmento di dati di profilatura usando la sequenza temporale nella visualizzazione **Riepilogo** per vedere il **Percorso critico** e le **Funzioni che svolgono più lavoro individuale** da un segmento selezionato. Ad esempio, con particolare attenzione ad un picco più piccolo nella sequenza temporale potrebbe rivelare costosi alberi delle chiamate e funzioni che non sono stati visualizzati durante l'analisi dell'intera esecuzione della profilatura.
 
-     Per analizzare di nuovo un segmento, selezionarlo all'interno della **casella della sequenza temporale di riepilogo** e quindi fare clic su **Filtro in base a selezione**.
+     Per analizzare nuovamente un segmento, selezionate un segmento all'interno della casella **Sequenza temporale** di riepilogo e fate clic su **Filtra per selezione**.
 
-     ![Sequenza temporale visualizzazione Riepilogo prestazioni](../profiling/media/performancesummary.png "PerformanceSummary")
+     ![Sequenza temporale della visualizzazione Riepilogo prestazioni](../profiling/media/performancesummary.png "PerformanceSummary")
 
 4. Il profiler utilizza anche un set di regole per suggerire modi per migliorare l'esecuzione della profilatura e identificare eventuali problemi di prestazioni. Se viene rilevato un problema, verrà visualizzato un avviso nella finestra **Elenco errori**. Per aprire la finestra **Elenco errori**, scegliere **Elenco errori** nel menu **Visualizza**.
 

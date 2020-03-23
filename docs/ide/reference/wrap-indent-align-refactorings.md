@@ -1,40 +1,43 @@
 ---
-title: Refactoring a capo, rientro e allineamento
+title: Impostare il ritorno a capo automatico, il rientro e l'allineamento dei refactoring
 description: Informazioni su come impostare il ritorno a capo e l'allineamento delle catene di chiamate di metodi.
-ms.date: 02/19/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 349f2eeccfea4fea03967929b01114c0de1af155
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527668"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093880"
 ---
-# <a name="wrap-indent-and-align-refactorings"></a>Refactoring a capo, rientro e allineamento
+# <a name="wrap-indent-and-align-refactorings"></a>Impostare il ritorno a capo automatico, il rientro e l'allineamento dei refactoring
 
-## <a name="wrap-and-align-call-chains"></a>Wrapping e allineamento delle catene di chiamate
+## <a name="wrap-and-align-call-chains"></a>Ritorno a capo e allineamento delle catene di chiamate
 
 Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** Consente di eseguire il wrapping e allineare le catene di chiamate al metodo.
+- Visual Basic
 
-**Quando:** Si dispone di una catena estesa costituita da diverse chiamate al metodo in un'unica istruzione.
+**Cosa:** Consente di eseguire il wrapping e allineare le catene delle chiamate al metodo.
 
-**Motivo:** La lettura di un lungo elenco è più semplice quando ne viene eseguito il wrapped o il rientro in base alle preferenze dell'utente.
+**Quando:** Si dispone di una catena lunga costituita da diverse chiamate al metodo in un'istruzione.
 
-### <a name="how-to"></a>Procedura
+**Perché:** La lettura di un lungo elenco è più semplice quando viene eseguito il wrapping o il rientro in base alle preferenze dell'utente.
+
+### <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore in qualsiasi catena di chiamate.
-2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare **Esegui il wrapping della catena di chiamate** o **Esegui il wrapping e allinea la catena di chiamate** per accettare il refactoring.
 
    ![Ritorno a capo e allineamento delle catene di chiamate](media/wrap-call-chain.png)
@@ -47,20 +50,20 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** Consente di incapsulare, rientrare e allineare parametri o argomenti.
+**Cosa:** Consente di eseguire il wrapping, il rientro e l'allineamento di parametri o argomenti.
 
-**Quando:** Si dispone di una dichiarazione di metodo o di una chiamata con più parametri o argomenti.
+**Quando:** Si dispone di una dichiarazione di metodo o una chiamata che dispone di più parametri o argomenti.
 
-**Motivo:** La lettura di un lungo elenco di parametri o argomenti è più semplice quando ne viene eseguito il wrapped o il rientro in base alle preferenze dell'utente.
+**Perché:** La lettura di un lungo elenco di parametri o argomenti è più semplice quando vengono incapsulati o rientrati in base alle preferenze dell'utente.
 
-### <a name="how-to"></a>Procedura
+### <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore nell'elenco di parametri.
-2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
 
    ![Impostare il ritorno a capo automatico, il rientro e l'allineamento dei parametri](media/wrap-parameters.png)
 
-3. Selezionare **Wrap ogni parametro** per accettare il refactoring.
+3. Selezionare **Avvolgi ogni parametro** per accettare il refactoring.
 
 ## <a name="wrap-binary-expressions"></a>Wrapping delle espressioni binarie
 
@@ -68,17 +71,19 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** Consente di eseguire il wrapping di espressioni binarie.
+- Visual Basic
+
+**Cosa:** Consente di eseguire il wrapping delle espressioni binarie.
 
 **Quando:** Si dispone di un'espressione binaria.
 
-**Motivo:** La lettura di un'espressione binaria è più semplice quando viene sottoposta a incapsulamento in preferenza utente
+**Perché:** La lettura di un'espressione binaria è più semplice quando viene eseguito il wrapping in base alle preferenze dell'utente.
 
-### <a name="how-to"></a>Procedura
+### <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore nell'espressione binaria.
-2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
-3. Selezionare **espressione a capo** per accettare il refactoring.
+2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+3. Selezionare **Espressione di ritorno** a capo per accettare il refactoring.
 
    ![Ritorno a capo e allineamento delle catene di chiamate](media/wrap-binary-expression.png)
 

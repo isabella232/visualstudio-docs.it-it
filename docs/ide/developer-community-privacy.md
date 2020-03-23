@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75775879"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
@@ -68,7 +68,7 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
 
 - Log Python, se esistenti
 
-- Windows Forms log, se esistono
+- Registri di Windows Form, se esistenti
 
 - Uno screenshot, se si sceglie di includerlo
 
@@ -81,8 +81,8 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
   - File dump
 
 > [!NOTE]
-> I file di log, le schermate e la registrazione dei dati inviati possono aumentare significativamente la capacità di Microsoft di comprendere e rispondere al problema.  Quindi, è consigliabile includerli. Per proteggere la privacy, tutti i file di log allegati, le schermate e i dati di registrazione vengono inviati a Microsoft solo quando si fornisce l'autorizzazione inviando il report di problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "segnala un problema" prima di inviare il report. È possibile escludere dal report i file di registro di sistema deselezionando "Connetti registri di sistema" nel passaggio "Riepilogo". Per riferimento, vedere la schermata seguente. 
-  > ![segnalare un problema: riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
+> I file di log, le schermate e i dati di registrazione inviati possono aumentare significativamente la capacità di Microsoft di comprendere e rispondere al problema.  Quindi si consiglia di includerli. Per proteggere la privacy dell'utente, tutti i file di log allegati, le schermate e i dati di registrazione vengono inviati a Microsoft solo quando si fornisce l'autorizzazione inviando la segnalazione del problema con cui sono inclusi. Puoi vedere quali file sono inclusi nel passaggio "Riepilogo" della finestra "Segnala un problema" prima di inviare il rapporto. È possibile escludere i file di registro di sistema dal report deselezionando 'Allega registri di sistema' nel passaggio 'Riepilogo'. Per riferimento, vedere la schermata seguente. 
+  > ![Segnalare un problema - Riepilogo dei registri raccolti](media/report-a-problem-logs-collected.png)
 
 
 ## <a name="see-also"></a>Vedere anche

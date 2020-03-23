@@ -12,10 +12,10 @@ author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.openlocfilehash: 428c41a96de90494167d04ded8722d49c76afc71
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114654"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installare versioni di Visual Studio side-by-side
@@ -56,18 +56,18 @@ Per informazioni specifiche del linguaggio, vedere l'argomento corrispondente ne
 
 ::: moniker range="vs-2017"
 
-| Lingua: | Argomento |
+| Linguaggio | Argomento |
 |--------------|-----------|
-| Visual Basic - | [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Visual Basic | [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Pagina Applicazione, Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Sviluppare con F# in Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Procedura: modificare il Framework di destinazione e il set di strumenti della piattaforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+|C++ | [Procedura: modificare il framework di destinazione e il set di strumenti della piattaformaHow to: Modify the target framework and platform toolset](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Install Visual Studio](install-visual-studio.md?view=vs-2017) (Installare Visual Studio)
+* [Installare Visual Studio](install-visual-studio.md?view=vs-2017)
 * [Trasferire, migrare e aggiornare progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
 * [Compilazione di applicazioni isolate C/C++ e di assembly side-by-side](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
@@ -75,18 +75,18 @@ Per informazioni specifiche del linguaggio, vedere l'argomento corrispondente ne
 
 ::: moniker range=">= vs-2019"
 
-| Lingua: | Argomento |
+| Linguaggio | Argomento |
 |--------------|-----------|
-| Visual Basic - | [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual Basic | [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [Pagina Applicazione, Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md) |
 | Visual F# | [Sviluppare con F# in Visual Studio](../ide/fsharp-visual-studio.md) |
-| C++ | [Procedura: modificare il Framework di destinazione e il set di strumenti della piattaforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| C++ | [Procedura: modificare il framework di destinazione e il set di strumenti della piattaformaHow to: Modify the target framework and platform toolset](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
+* [Installare Visual Studio](install-visual-studio.md)
 * [Trasferire, migrare e aggiornare progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [Compilazione di applicazioni isolate C/C++ e di assembly side-by-side](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
