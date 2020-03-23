@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569283"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generare override dei metodi Equals e GetHashCode in Visual Studio
@@ -24,15 +24,15 @@ Questa generazione di codice si applica a:
 
 **Quando:** generare questi override quando si dispone di un tipo che deve essere confrontato in base a uno o più campi, invece che in base alla posizione dell'oggetto in memoria.
 
-**Perché?:**
+**Perché:**
 
 - se si implementa un tipo valore, è consigliabile valutare la possibilità di eseguire l'override del metodo **Equals** per ottenere migliori prestazioni rispetto all'implementazione predefinita del metodo Equals su ValueType.
 
-- Se si implementa un tipo riferimento, è consigliabile eseguire l'override del metodo **Equals**, se il tipo è simile a un tipo di base, ad esempio Point, String, BigNumber e così via.
+- Se si implementa un tipo di riferimento, è consigliabile eseguire l'override del metodo **Equals** se il tipo è simile a un tipo di base, ad esempio Point, String, BigNumber e così via.
 
-- Eseguire l'override del metodo **GetHashCode** per consentire il funzionamento corretto di un tipo in una tabella hash. Leggere ulteriori informazioni sugli [operatori di uguaglianza](/dotnet/standard/design-guidelines/equality-operators).
+- Eseguire l'override di **GetHashCode** metodo per consentire a un tipo di funzionare correttamente in una tabella hash. Leggere ulteriori informazioni sugli [operatori di uguaglianza](/dotnet/standard/design-guidelines/equality-operators).
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore in un punto qualsiasi della riga della dichiarazione di tipo.
 
@@ -43,7 +43,7 @@ Questa generazione di codice si applica a:
 
 1. Eseguire quindi una delle operazioni seguenti:
 
-   - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+   - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
 
    - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
 
@@ -66,5 +66,5 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generazione codice](../code-generation-in-visual-studio.md)
-- [Anteprima modifiche](../../ide/preview-changes.md)
+- [Generazione di codice](../code-generation-in-visual-studio.md)
+- [Anteprima delle modifiche](../../ide/preview-changes.md)

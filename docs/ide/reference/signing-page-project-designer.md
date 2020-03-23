@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597334"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
@@ -79,9 +79,9 @@ Questa opzione usa lo strumento Al.exe fornito da Windows Software Development K
 
 Elenco **Scegliere un file di chiave con nome sicuro**
 
-Consente di specificare un file di chiave nuovo o esistente con nome sicuro da usare per firmare l'assembly. Selezionare **\<Sfoglia...>** per selezionare un file di chiave esistente.
+Consente di specificare un file di chiave nuovo o esistente con nome sicuro da usare per firmare l'assembly. Selezionare ** \<Sfoglia...>** per selezionare un file di chiave esistente.
 
-Selezionare **\<Nuovo...>** per creare un nuovo file di chiave con cui firmare l'assembly. Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro**, che è possibile usare per specificare il nome di un file di chiave e proteggere il file con una password. La password deve avere una lunghezza di almeno 6 caratteri. Se si specifica una password, viene creato un file di scambio di informazioni personali (con estensione pfx, Personal inFormation eXchange). Se non si specifica una password, viene creato un file di chiave con nome sicuro (con estensione snk).
+Selezionare ** \<Nuovo...>** per creare un nuovo file di chiave con cui firmare l'assembly. Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro**, che è possibile usare per specificare il nome di un file di chiave e proteggere il file con una password. La password deve avere una lunghezza di almeno 6 caratteri. Se si specifica una password, viene creato un file di scambio di informazioni personali (con estensione pfx, Personal inFormation eXchange). Se non si specifica una password, viene creato un file di chiave con nome sicuro (con estensione snk).
 
 Pulsante **Cambia password**
 
@@ -100,9 +100,9 @@ Si tenga presente che un progetto con firma ritardata non può essere eseguito e
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimenti alle proprietà di progetto](../../ide/reference/project-properties-reference.md)
+- [Project Properties Reference](../../ide/reference/project-properties-reference.md) (Riferimenti alle proprietà di progetto)
 - [Gestione delle firme di assembly e manifesti](../../ide/managing-assembly-and-manifest-signing.md)
-- [Procedura: Firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Procedura: firmare i manifesti dell'applicazione e della distribuzioneHow to: Sign Application and Deployment Manifests](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Procedura: firmare un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
-- [Procedura: Firmare un assembly con un nome sicuro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Procedura: firmare un assembly con un nome sicuro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Assembly con nomi sicuri](/dotnet/framework/app-domains/strong-named-assemblies)

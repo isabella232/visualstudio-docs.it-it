@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589455"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procedura: Creare una trama di base
@@ -49,7 +49,7 @@ Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**. 
 
 4. Impostare il colore di primo piano su un nero completamente trasparente. Nella finestra **Proprietà**, nel gruppo di proprietà **Colori**, selezionare **Primo piano**. Impostare i valori delle proprietà **R**, **G**, **B**e **A** accanto alla selezione colori su `0`.
 
-5. Nella barra degli strumenti dell'editor di immagini scegliere lo strumento **Riempimento** e, tenendo premuto **MAIUSC**, scegliere un punto qualsiasi nell'immagine. L'utilizzo di **MAIUSC** fa sì che il valore alfa del colore di riempimento sostituisca il colore dell'immagine; in caso contrario, il valore alfa consente di sfumare il colore di riempimento con il colore dell'immagine.
+5. Sulla barra degli strumenti dell'editor di immagini scegliere lo strumento **Riempimento,** quindi tenere premuto **il tasto Maiusc** e scegliere un punto qualsiasi dell'immagine. L'uso del tasto **Maiusc** fa sì che il valore alfa del colore di riempimento sostituisca il colore nell'immagine; in caso contrario, il valore alfa viene utilizzato per fondere il colore di riempimento con il colore nell'immagine.
 
     > [!IMPORTANT]
     > Questo passaggio, insieme alla selezione del colore nel passaggio precedente, assicura che l'immagine di base sia preparata per la trama di destinazione "bullseye" che si intende disegnare. Poiché l'immagine viene riempita con un nero trasparente e il bordo della destinazione è nero, non saranno presenti artefatti di aliasing intorno alla destinazione.
@@ -64,7 +64,7 @@ Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**. 
 
 10. Assicurarsi che l'antialiasing sia abilitato. Nella finestra **Proprietà**, nel gruppo di proprietà **Aspetto**, assicurarsi che la proprietà **Anti-alias** sia impostata.
 
-11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per disegnare più facilmente il cerchio, tenere premuto **MAIUSC** mentre si disegna.
+11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per disegnare il cerchio più facilmente, è possibile tenere premuto il **tasto Maiusc** mentre si disegna.
 
     > [!NOTE]
     > Le coordinate in pixel della posizione corrente del puntatore sono visualizzate nella barra di stato di Visual Studio.

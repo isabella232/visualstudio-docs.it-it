@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9780a4ee81a4d063b5cfb7f66b1a5ea023d8fa2f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75573404"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificare una regola di convalida personalizzata per un test delle prestazioni Web
@@ -48,9 +48,9 @@ ms.locfileid: "75573404"
 
 6. (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di convalida personalizzata.
 
-7. Nel progetto di test aprire un test delle prestazioni Web nell'**Editor test prestazioni Web**.
+7. Nel progetto di test aprire un test delle prestazioni Web **nell'Editor test prestazioni Web.**
 
-8. Per aggiungere una regola di convalida personalizzata a una richiesta di test delle prestazioni Web, fare clic con il pulsante destro del mouse sulla richiesta e selezionare **Aggiungi regola di convalida**.
+8. Per aggiungere la regola di convalida personalizzata a una richiesta di test delle prestazioni Web, fare clic con il pulsante destro del mouse su una richiesta e scegliere **Aggiungi regola**di convalida .
 
      Verrà visualizzata la finestra di dialogo **Aggiungi regola di convalida**. La regola di convalida personalizzata sarà disponibile nell'elenco **Selezionare una regola**, insieme alle regole di convalida predefinite. Selezionare la regola di convalida personalizzata, quindi scegliere **OK**.
 

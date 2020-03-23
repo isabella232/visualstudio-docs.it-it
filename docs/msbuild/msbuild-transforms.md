@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633109"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 
-Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. In questo argomento vengono illustrate le trasformazioni e il modo in cui MSBuild le utilizza per compilare progetti in modo più efficiente.
+Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. In questo argomento vengono illustrate le trasformazioni e il modo in cui MSBuild le utilizza per compilare i progetti in modo più efficiente.
 
 ## <a name="transform-modifiers"></a>Modificatori di comandi
 
@@ -49,9 +49,9 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 
 ## <a name="dependency-analysis"></a>Analisi delle dipendenze
 
- Le trasformazioni garantiscono un mapping uno-a-uno tra l'elenco di elementi trasformato e l'elenco di elementi originale. Se pertanto una destinazione crea output che sono trasformazioni degli input, MSBuild può analizzare i timestamp degli input e degli output e decidere se ignorare, compilare o ricompilare parzialmente una destinazione.
+ Le trasformazioni garantiscono un mapping uno-a-uno tra l'elenco di elementi trasformato e l'elenco di elementi originale. Pertanto, se una destinazione crea output che sono trasformazioni degli input, MSBuild può analizzare i timestamp degli input e degli output e decidere se ignorare, compilare o ricostruire parzialmente una destinazione.
 
- Nell'[attività Copy](../msbuild/copy-task.md) dell'esempio seguente, ogni file dell'elenco di elementi `BuiltAssemblies` è associato a un file nella cartella di destinazione dell'attività, specificata con una trasformazione nell'attributo `Outputs`. Se viene modificato un file dell'elenco di elementi `BuiltAssemblies`, l'attività `Copy` viene eseguita solo per il file modificato e tutti gli altri file vengono ignorati. Per altre informazioni sulle analisi delle dipendenze e su come usare le trasformazioni, vedere [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md).
+ Nell'[attività Copy](../msbuild/copy-task.md) dell'esempio seguente, ogni file dell'elenco di elementi `BuiltAssemblies` è associato a un file nella cartella di destinazione dell'attività, specificata con una trasformazione nell'attributo `Outputs`. Se viene modificato un file dell'elenco di elementi `BuiltAssemblies`, l'attività `Copy` viene eseguita solo per il file modificato e tutti gli altri file vengono ignorati. Per ulteriori informazioni sull'analisi delle dipendenze e su come utilizzare le trasformazioni, vedere [Procedura: compilare in modo incrementale.](../msbuild/how-to-build-incrementally.md)
 
 ```xml
 <Target Name="CopyOutputs"
@@ -69,7 +69,7 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 
 ### <a name="description"></a>Descrizione
 
- Nell'esempio seguente viene illustrato un file di progetto MSBuild che utilizza le trasformazioni. In questo esempio si presuppone che vi sia un solo file con estensione *xsd* nella directory *c:\sub0\sub1\sub2\sub3* e che la directory di lavoro sia *c:\sub0*.
+ Nell'esempio seguente viene illustrato un file di progetto MSBuild che usa le trasformazioni. In questo esempio si presuppone che nella directory *c:.sub0, sub1, sub2 e sub3* sia presente un solo file *xsd* e che la directory di lavoro sia *c:.*
 
 ### <a name="code"></a>Codice
 
@@ -111,4 +111,4 @@ extension: .xsd
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
-- [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md)
+- [Procedura: compilare in modo incrementaleHow to: Build incrementally](../msbuild/how-to-build-incrementally.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 134a5b7cd4bb0ffc9c00a41df12ed196dd2a9212
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115129"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: Specificare gli eventi di compilazione (C#)
@@ -49,7 +49,7 @@ Quando un progetto viene compilato, gli eventi di pre-compilazione vengono aggiu
 6. Nella casella **Esegui evento post-compilazione** specificare con quali condizioni eseguire l'evento di post-compilazione.
 
    > [!NOTE]
-   > Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dalla [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione ( **...** ) per visualizzare una casella di modifica.
+   > Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dalla [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione (**...**) per visualizzare una casella di modifica.
 
    La sintassi dell'evento di compilazione può includere qualsiasi comando che sia valido in un prompt dei comandi o in un file con estensione *bat*. Perché vengano sicuramente eseguiti tutti i comandi successivi, il nome di un file batch deve essere preceduto da `call`.
 
@@ -72,7 +72,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 1. Creare un nuovo progetto **App console** per il comando. Assegnare al progetto il nome **ChangeOSVersionCS**.
 
-2. In *Program.cs*aggiungere la riga seguente alle altre `using` direttive all'inizio del file:
+2. In *Program.cs*, aggiungere la `using` riga seguente alle altre direttive all'inizio del file:
 
    ```csharp
    using System.Xml;
@@ -132,7 +132,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
    Il comando accetta due argomenti: il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto (in genere *Projectname.publish*), e la versione del nuovo sistema operativo.
 
-4. Compilazione del progetto.
+4. Compilare il progetto.
 
 5. Copiare il file con estensione *exe* in una directory, ad esempio *C:\TEMP\ChangeOSVersionVB.exe*.
 
@@ -179,4 +179,4 @@ Richiamare quindi questo comando in un evento di post-compilazione per modificar
 - [Pagina Eventi di compilazione, Creazione progetti (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
-- [Compilare](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)

@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113781"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
 
 Contiene lo strumento di analisi del codice che è possibile scegliere di eseguire nel codice. Lo strumento restituisce informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle linee guida di progettazione di Microsoft .NET.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 Abilita l'analisi del codice\
 Abilita o disabilita l'analisi del codice per il progetto.
@@ -64,6 +64,6 @@ Abilita o disabilita le regole di utilizzo. È anche possibile espandere questa 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Analisi del codice per gli avvisi del codice gestito](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Code Analysis for Managed Code Warnings](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Panoramica dell'analisi codice gestito](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [Procedura dettagliata: analisi del codice gestito per l'identificazione di errori del codice](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

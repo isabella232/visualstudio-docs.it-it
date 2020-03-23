@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1b17ded468e262d4f636ed5494081adab7b8c5f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632251"
 ---
 # <a name="special-characters-to-escape"></a>Caratteri speciali di escape
@@ -43,9 +43,9 @@ I caratteri speciali devono essere preceduto da un carattere di escape solo se h
 |*|Asterisco, un carattere jolly usato nel descrivere le specifiche di un file nella sezione Include/Exclude di un elemento.|
 
 > [!NOTE]
-> In alcuni scenari potrebbe essere necessario usare caratteri di escape per virgolette doppie ("), ad esempio quando si usa all'interno di un'attività di `Exec`.
+> In alcuni scenari, potrebbe essere necessario eseguire l'escape dei `Exec` caratteri di virgolette doppie ("), ad esempio quando si utilizza all'interno di un'attività.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: eseguire l'escape di caratteri speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
+- [Procedura: eseguire l'escape di caratteri speciali in MSBuildHow to: Escape special characters in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)

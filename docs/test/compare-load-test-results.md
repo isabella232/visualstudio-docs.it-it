@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f85800ea59545ad64a821d1bb8c003ba6eef8c26
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589344"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze
@@ -41,9 +41,9 @@ Inoltre, il file del foglio di calcolo può essere condiviso con parti interessa
 
 |Attività|Argomenti correlati|
 |-|-|
-|**Creare un report di prestazioni e sovraccarico:** è possibile creare report relativi ai test di carico e delle prestazioni Web usando Microsoft Excel.|- [Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Creare manualmente un report di prestazioni e sovraccarico usando Microsoft Word:** è possibile creare manualmente report relativi ai test di carico e delle prestazioni Web copiando e incollando dati di riepilogo, tabelle e grafici in un documento Microsoft Word.|- [Procedura: Creare manualmente un report di prestazioni di un test di carico usando Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Creare un rapporto sulle prestazioni e lo stress:** È possibile creare report sui test di carico e delle prestazioni Web utilizzando Microsoft Excel.|- [Procedura: creare report sulle prestazioni dei test di carico utilizzando Microsoft ExcelHow to: Create load test performance reports using Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Creare manualmente un report sulle prestazioni e lo stress utilizzando Microsoft Word:** È possibile creare manualmente report sui test di carico e sulle prestazioni Web copiando e incollando i dati di riepilogo, tabella e grafico in un documento di Microsoft Word.|- [Procedura: creare manualmente un report sulle prestazioni del test di carico utilizzando Microsoft WordHow to: Manually create a load test performance report using Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizzare i risultati dei test di caricoAnalyze load test results](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
