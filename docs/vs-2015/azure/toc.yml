@@ -52,11 +52,11 @@
       items:
         - name: Eseguire il debug di un servizio cloud o di una macchina virtuale di Azure
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Informazioni sui vari modi per eseguire il debug di un servizio cloud di Azure
+        - name: Informazioni sui vari modi disponibili per eseguire il debug di un servizio cloud di Azure
           href: vs-azure-tools-debugging-cloud-services-overview.md
         - name: Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-        - name: Uso dell'emulatore Express per l'esecuzione e il debug di un servizio cloud di Azure in un computer locale
+        - name: Uso dell'emulatore Express per eseguire un servizio cloud di Azure ed eseguirne il debug in un computer locale
           href: vs-azure-tools-emulator-express-debug-run.md
         - name: Eseguire il debug di un servizio cloud di Azure pubblicato con IntelliTrace
           href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
@@ -74,7 +74,7 @@
           href: vs-azure-tools-publishing-a-cloud-service.md
         - name: Usare script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test
           href: vs-azure-tools-publishing-using-powershell-scripts.md
-        - name: Publish-WebApplicationVM (Windows PowerShell script)
+        - name: Publish-WebApplicationVM (script di Windows PowerShell)
           href: vs-azure-tools-publish-webapplicationvm.md
         - name: Publish-WebApplicationWebSite (script di Windows PowerShell)
           href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md

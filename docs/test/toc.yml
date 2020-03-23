@@ -1,10 +1,10 @@
 - name: Strumenti di test di Visual Studio
   href: improve-code-quality.md
-- name: Testing unità
+- name: Unit test
   items:
     - name: Panoramica degli strumenti di unit test
       href: unit-test-your-code.md
-    - name: Attività iniziali
+    - name: Introduzione
       href: getting-started-with-unit-testing.md
     - name: Nozioni di base sugli unit test
       href: unit-test-basics.md
@@ -18,7 +18,7 @@
           href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: Panoramica
           href: intellitest-manual/introduction.md
-        - name: Introduzione
+        - name: Per iniziare
           href: intellitest-manual/getting-started.md
         - name: Indice delle sezioni
           href: intellitest-manual/index.md
@@ -122,7 +122,7 @@
       href: live-unit-testing-intro.md
     - name: Novità
       href: live-unit-testing-whats-new.md
-    - name: Attività iniziali
+    - name: Introduzione
       href: live-unit-testing-start.md
     - name: Configurazione e uso
       href: live-unit-testing.md
@@ -244,7 +244,7 @@
           href: how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md
         - name: Periodi di timeout
           href: how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md
-        - name: Risolvere problemi
+        - name: Risolvere i problemi
           href: troubleshoot-test-controllers-and-test-agents.md
     - name: Personalizzare i test di carico
       items:
@@ -292,7 +292,7 @@
           href: how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md
         - name: Registrazioni schermate e voce
           href: how-to-include-recordings-of-the-screen-and-voice-during-tests.md
-    - name: Risultati del test
+    - name: Risultati dei test
       items:
         - name: Analizzare i risultati
           href: analyze-load-test-results-using-the-load-test-analyzer.md

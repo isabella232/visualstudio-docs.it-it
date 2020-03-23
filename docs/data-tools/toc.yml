@@ -20,7 +20,7 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Strumenti di Entity Framework
       href: entity-data-model-tools-in-visual-studio.md
-    - name: Set di dati
+    - name: DataSet
       items:
         - name: Strumenti dei set di dati
           href: dataset-tools-in-visual-studio.md
@@ -34,7 +34,7 @@
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
     - name: Panoramica delle applicazioni dati a più livelli
       href: n-tier-data-applications-overview.md
-- name: Guide pratiche
+- name: 'Guide pratiche:'
   items:
     - name: Creare un database
       href: create-a-sql-database-by-using-a-designer.md
@@ -120,7 +120,7 @@
               items:
                 - name: Salvare dati usando una transazione
                   href: save-data-by-using-a-transaction.md
-                - name: 'Procedura dettagliata: Salvare i dati in una transazione'
+                - name: 'Procedura dettagliata: Salvare dati in una transazione'
                   href: save-data-in-a-transaction.md
             - name: Salvare dati in un database (a più tabelle)
               href: save-data-to-a-database-multiple-tables.md
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: Risolvere i problemi relativi agli errori di accesso ai dati
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: Riferimenti
+- name: Reference
   items:
     - name: Object Relational Designer (LINQ to SQL)
       items:

@@ -10,7 +10,7 @@
       href: porting/porting-migrating-and-upgrading-visual-studio-projects.md
     - name: IDE di Visual Studio
       href: ide/visual-studio-ide.md
-    - name: Estendibilità
+    - name: Extensibility
       href: extensibility/visual-studio-sdk.md
     - name: Accesso ai dati
       href: data-tools/accessing-data-in-visual-studio.md

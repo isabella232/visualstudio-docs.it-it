@@ -286,7 +286,7 @@
               items:
                 - name: Finestra di progettazione legacy per la Guida interfaccia utente di Windows Workflow Foundation
                   href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-                - name: Eseguire l'associazione a una finestra di dialogo delle proprietà dell'attività (legacy)
+                - name: Associare a una finestra di dialogo delle proprietà dell’attività (legacy)
                   href: bind-to-an-activity-s-property-dialog-box-legacy.md
                 - name: Finestra di dialogo Cerca e seleziona un tipo .NET (legacy)
                   href: browse-and-select-a-dotnet-type-dialog-box-legacy.md

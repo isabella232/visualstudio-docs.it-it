@@ -39,7 +39,7 @@
   items:
     - name: Emulatore di Visual Studio per Android
       href: visual-studio-emulator-for-android.md
-    - name: Requisiti di sistema per Visual Studio Emulator for Android
+    - name: System requirements for the Visual Studio Emulator for Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
     - name: Risolvere i problemi di Visual Studio Emulator for Android
       href: troubleshooting-the-visual-studio-emulator-for-android.md

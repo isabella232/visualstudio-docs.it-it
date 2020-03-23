@@ -4,7 +4,7 @@
       href: index.md
     - name: Carico di lavoro delle applicazioni analitiche e di analisi scientifica dei dati
       href: ../python/data-science-and-analytical-applications-workload.md
-- name: Guide rapide introduttive
+- name: Guide introduttive
   items:
     - name: Installazione
       href: installing-r-tools-for-visual-studio.md
@@ -16,7 +16,7 @@
       href: getting-started-with-r.md
 - name: Esempi
   href: getting-started-samples.md
-- name: Guide pratiche
+- name: 'Guide pratiche:'
   items:
     - name: Progetti R
       items:
@@ -56,7 +56,7 @@
       href: variable-explorer.md
     - name: Debug
       href: debugging-r-in-visual-studio.md
-- name: Riferimenti
+- name: Reference
   items:
     - name: Opzioni
       href: options-for-r-tools-in-visual-studio.md

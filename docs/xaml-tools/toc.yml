@@ -30,7 +30,7 @@
           href: animate-objects-in-xaml-designer.md
         - name: Visualizzare dati
           href: display-data-in-blend.md
-    - name: Riferimenti
+    - name: Riferimento
       items:
         - name: Errori e avvisi XAML
           href: xaml-errors-warnings.md

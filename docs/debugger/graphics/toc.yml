@@ -50,21 +50,21 @@
   items:
     - name: Esempi di diagnostica grafica
       href: graphics-diagnostics-examples.md
-    - name: 'Procedura dettagliata: Acquisizione di informazioni grafiche'
+    - name: 'Procedura dettagliata: cattura delle informazioni grafica'
       href: walkthrough-capturing-graphics-information.md
-    - name: 'Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice'
+    - name: 'Procedura dettagliata: cattura programmatica delle informazioni grafica'
       href: walkthrough-capturing-graphics-information-programmatically.md
-    - name: 'Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo'
+    - name: 'Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo'
       href: walkthrough-missing-objects-due-to-device-state.md
-    - name: 'Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex'
+    - name: 'Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex'
       href: walkthrough-missing-objects-due-to-vertex-shading.md
-    - name: 'Procedura dettagliata: Oggetti mancanti a causa di una pipeline configurata in modo non corretto'
+    - name: 'Procedura dettagliata: oggetti mancanti a causa di una pipeline configurata in modo non corretto'
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
-    - name: 'Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo'
+    - name: 'Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo'
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: 'Procedura dettagliata: Uso della diagnostica della grafica per eseguire il debug di un compute shader'
+    - name: 'Procedura dettagliata: utilizzo della diagnostica della grafica per eseguire il debug di un compute shader'
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: 'Procedura: Modificare il computer di riproduzione della diagnostica della grafica'
+    - name: 'Procedura: modificare il computer di riproduzione della diagnostica della grafica'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Riferimento (acquisizione a livello di codice)
   items:

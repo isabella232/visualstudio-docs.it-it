@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: Supporto a 64 bit per IDE di Visual Studio
       href: visual-studio-ide-64-bit-support.md
-    - name: Esempi di Visual Studio
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Account utente e aggiornamenti
       items:
@@ -528,7 +528,7 @@
           href: user-permissions-and-visual-studio.md
         - name: Bibliografia sulla sicurezza
           href: security-bibliography.md
-    - name: Esempi di Visual Studio
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Microsoft Help Viewer
       items:
@@ -616,7 +616,7 @@
               href: how-to-save-and-open-files-with-encoding.md
     - name: Aggiunta del supporto di altri linguaggi all'editor di Visual Studio
       href: adding-visual-studio-editor-support-for-other-languages.md
-    - name: Riferimenti
+    - name: Reference
       items:
         - name: Elementi generali dell'interfaccia utente (Visual Studio)
           items:
@@ -768,7 +768,7 @@
                       href: reference/build-events-dialog-box-visual-basic.md
                 - name: 'Pagina Debug, Progettazione progetti'
                   href: reference/debug-page-project-designer.md
-                - name: 'Pagina Estensioni My, Creazione progetti'
+                - name: 'Pagina Estensioni My, Progettazione progetti'
                   href: reference/my-extensions-page-project-designer-visual-basic.md
                 - name: 'Pagina Pubblica, Progettazione progetti'
                   items:
@@ -956,7 +956,7 @@
           href: reference/visual-studio-for-applications-reference.md
         - name: MSBuild
           href: ../msbuild/msbuild.md
-        - name: Risorse per la risoluzione dei problemi relativi all'IDE
+        - name: Risorse per la risoluzione dei problemi relativi a errori IDE
           href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
         - name: Accessibilità per utenti con particolari esigenze
           items:
