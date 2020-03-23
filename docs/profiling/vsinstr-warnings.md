@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f1a0cba29caeda01de1154430af7a0d94bcfc2a5
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779948"
 ---
 # <a name="vsinstr-warnings"></a>Avvisi di VSInstr
@@ -28,7 +28,7 @@ La tabella seguente elenca gli avvisi generati dallo strumento *VSInstr.exe*. Pe
 |Numero di avviso|Descrizione|
 |--------------------|-----------------|
 |**VSP1026**|Code coverage non è supportato nelle librerie che non fanno riferimento a MSCorLib. Ciò è vero spesso per le librerie portabili.<br /><br />L'opzione della riga di comando [/EnableCodeCoverage](../test/vstest-console-options.md) è obbligatoria per .NET Core.|
-|**VSP2000**|Errore interno Impossibile ottenere il nome del file di modulo per questo eseguibile.|
+|**VSP2000**|Errore interno. Impossibile ottenere il nome del file di modulo per questo eseguibile.|
 |**VSP2001**|\<nome assembly> è un assembly con nome sicuro. Deve essere firmato di nuovo prima dell'esecuzione.<br /><br /> Questo avviso viene visualizzato quando un assembly firmato viene instrumentato. È possibile usare lo strumento *sn.exe* per firmare nuovamente il file binario o disattivare temporaneamente il requisito del nome sicuro. Per altre informazioni, vedere [Sn.exe (strumento Nome sicuro)](/dotnet/framework/tools/sn-exe-strong-name-tool).|
 |**VSP2002**|Impossibile trovare la funzione \<nome funzione> nel file \<nome file><br /><br /> Questo avviso viene visualizzato quando non è possibile individuare una funzione nel file specificato.|
 |**VSP2003**|Impossibile trovare cross-jump alla funzione \<nome funzione> nel file \<nome file>.<br /><br /> Questo avviso viene visualizzato se VSInstr non è in grado di annullare i cross-jump, che vengono usati per l'ottimizzazione del codice.|

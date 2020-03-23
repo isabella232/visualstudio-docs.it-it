@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74853516"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Suggerire una funzionalità per Visual Studio
@@ -27,7 +27,7 @@ ms.locfileid: "74853516"
 
 Se si sceglie **Invia un suggerimento**, si passa a [Developer Community](https://developercommunity.visualstudio.com), in cui è possibile immettere il suggerimento.
 
-## <a name="user-voice"></a>User Voice
+## <a name="user-voice"></a>UserVoice
 
 Finora, per suggerire idee per nuove funzionalità gli utenti di Visual Studio usavano User Voice. Con l'aggiunta del pulsante *Suggest a feature* (Suggerisci funzionalità) in Developer Community, tutti i commenti e i suggerimenti per il team del prodotto Visual Studio si trovano ora in un'unica posizione.
 
@@ -35,7 +35,7 @@ Il sito User Voice è stato reso di sola lettura. È possibile vedere i post esi
 
 È stata eseguita la migrazione di un set iniziale di idee dal forum User Voice a Developer Community. La migrazione è stata eseguita in base all'impatto sulla community dei commenti e suggerimenti e delle priorità della roadmap dei prodotti. Chi si aspettava di trovare un suggerimento che non è stato incluso, può aggiungerlo liberamente in Developer Community.
 
-## <a name="votes"></a>Voti
+## <a name="votes"></a>Votes
 
 Il sistema di voto di Developer Community è diverso da quello di User Voice. Per mantenere l'integrità dei conteggi di voti di Developer Community e per evitare che i dati vengano falsati, i conteggi di voti di User Voice vengono visualizzati prevalentemente come tag accanto a ogni suggerimento di funzionalità. Passando a votare i suggerimenti nel sito Developer Community migliorato, i nuovi conteggi di voti verranno visualizzati separatamente dai conteggi di voti di User Voice.
 

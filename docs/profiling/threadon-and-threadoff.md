@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778154"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn e ThreadOff
-In *VSPerfCmd.exe* i sottocomandi **ThreadOff** e **ThreadOn** sono disponibili solo nelle sessioni di profilatura della riga di comando che usano il metodo di strumentazione. **ThreadOff** e **ThreadOn** sospendono e riprendono la profilatura per il thread specificato. **ThreadOff** arresta la profilatura del thread e **ThreadOn** avvia la profilatura del thread.
+In *VSPerfCmd.exe i sottocomandi * **ThreadOff** e **ThreadOn** sono disponibili solo nelle sessioni di profilatura della riga di comando che usano il metodo di strumentazione. **ThreadOff** e **ThreadOn** sospendono e riprendono la profilatura per il thread specificato. **ThreadOff** arresta la profilatura del thread e **ThreadOn** avvia la profilatura del thread.
 
- Nella maggior parte dei casi si specifica **ThreadOn** o **ThreadOff** come unica opzione in una riga di comando di *VSPerfCmd.exe*, ma questi sottocomandi possono anche essere combinati con i sottocomandi **GlobalOn**, **GlobalOff**, **ProcessOn** e **ProcessOff**.
+ Nella maggior parte dei casi, si specifica **ThreadOn** o **ThreadOff** come unica opzione nella riga di comando di *VSPerfCmd.exe* , ma possono anche essere combinati con i sottocomandi **GlobalOn**, **GlobalOff**, **ProcessOn**e **ProcessOff** .
 
  I sottocomandi **ThreadOn** e **ThreadOff** interagiscono con i sottocomandi **GlobalOn** e **GlobalOff** che controllano la raccolta dei dati per tutti i processi in una sessione di profilatura da riga di comando e i sottocomandi **ProcessOn** e **ProcessOff** che controllano la raccolta dei dati per un processo specificato.
 
@@ -44,11 +44,11 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="valid-options"></a>Opzioni valide
  **ThreadOn** e **ThreadOff** possono essere specificati su righe di comando che contengono anche i sottocomandi seguenti.
 
- **Start:** `Method` Inizializza la sessione di profilatura della riga di comando e imposta il metodo di profilatura specificato.
+ **Start:** `Method` inizializza la sessione di profilatura della riga di comando e imposta il metodo di profilatura specificato.
 
  **GlobalOff**&#124;**GlobalOn** Arresta o avvia la profilatura per tutti i processi in una sessione di profilatura da riga di comando.
 
- {**ProcessOff**&#124;**ProcessOn**} **:** `TID` arresta o avvia la profilatura per il processo specificato.
+ **ProcessOff**&#124;**ProcessOn** **:** `TID` interrompe o avvia la profilatura per il processo specificato.
 
 ## <a name="example"></a>Esempio
  In questo esempio, il sottocomando **ThreadOff** viene usato per arrestare la raccolta dei dati di profilatura, in modo da raccogliere solo i dati di avvio dell'applicazione.

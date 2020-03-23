@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985213"
 ---
 # <a name="source-editor"></a>Editor standard
@@ -40,17 +40,17 @@ Per mostrare o nascondere sezioni, usare il widget di divulgazione accanto al nu
 
 ![Mostrare o nascondere sezioni nel codice](media/source-editor-image2.png)
 
-È anche possibile selezionare alternativamente se visualizzare o nascondere le riduzioni, usando la voce di menu **Visualizza > Riduzione > Toggle Fold / Toggle All Folds (Attiva riduzione / Attiva/disattiva tutte le riduzioni)** :
+È anche possibile selezionare alternativamente se visualizzare o nascondere le riduzioni, usando la voce di menu **Visualizza > Riduzione > Toggle Fold / Toggle All Folds (Attiva riduzione / Attiva/disattiva tutte le riduzioni)**:
 
 ![Voce di menu Riduzione](media/source-editor-image19.png)
 
 Questa voce di menu può anche essere usata per abilitare o disabilitare la riduzione del codice.
 
-## <a name="white-space"></a>Spazio vuoto
+## <a name="white-space"></a>Spazi vuoti
 
 Può essere necessario visualizzare i caratteri invisibili nel codice sorgente. Questo è un modo per verificare visivamente che si stiano rispettando gli standard di codifica e che non si sprechi spazio. È anche utile quando si scrive in F#, dove la valutazione del codice dipende da righe con un rientro preciso.
 
-Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**. La selezione di questa opzione consente di impostare _quando_  visualizzare i caratteri invisibili: mai, alla selezione o sempre:
+Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**. La selezione di questa opzione consente di impostare _quando_ visualizzare i caratteri invisibili: Mai, Su selezione o Sempre:
 
 ![Opzioni per mostrare i caratteri invisibili](media/source-editor-image3.png)
 

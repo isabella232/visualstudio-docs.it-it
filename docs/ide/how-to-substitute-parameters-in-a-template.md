@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 9ddfe065d30b958e52e22f30f946d01d626fcf0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591411"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Procedura: Sostituire i parametri di un modello
@@ -32,7 +32,7 @@ Nella sezione seguente viene illustrato come modificare un modello in modo da so
     namespace $safeprojectname$
     ```
 
-1. Nel file *vstemplate* del modello individuare l'elemento `ProjectItem` che include il file.
+1. Nel file *vstemplate* per il `ProjectItem` modello, individuare l'elemento che include questo file.
 
 1. Impostare l'attributo `ReplaceParameters` su `true` per l'elemento `ProjectItem`:
 
@@ -42,7 +42,7 @@ Nella sezione seguente viene illustrato come modificare un modello in modo da so
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
-- [Parametri di modello](../ide/template-parameters.md)
-- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creare modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Parametri del modello](../ide/template-parameters.md)
+- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
 - [Elemento ProjectItem (modelli di elemento di Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

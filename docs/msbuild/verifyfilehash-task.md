@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77579531"
 ---
 # <a name="verifyfilehash-task"></a>Attività VerifyFileHash
@@ -30,14 +30,14 @@ Questa attività è stata aggiunta nella versione 15.8. È tuttavia necessaria u
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
- Nella tabella che segue vengono descritti i parametri dell'attività `VerifyFileHash`.
+ Nella tabella che segue vengono descritti i parametri dell'attività `VerifyFileHash` .
 
 |Parametro|Descrizione|
 |---------------|-----------------|
 |`File`|Parametro `String` obbligatorio.<br /><br />File di cui eseguire l'hashing e la convalida.|
 |`Hash`|Parametro `String` obbligatorio.<br /><br />Hash file previsto.|
 |`Algorithm`|Parametro `String` facoltativo.<br /><br />Algoritmo. Valori consentiti: `SHA256`, `SHA384`, `SHA512`. Valore predefinito = `SHA256`.|
-|`HashEncoding`|Parametro `String` facoltativo.<br /><br />Codifica da usare per gli hash generati. Il valore predefinito è `hex`. Valori consentiti = `hex`, `base64`.|
+|`HashEncoding`|Parametro `String` facoltativo.<br /><br />Codifica da usare per gli hash generati. L'impostazione predefinita è `hex`. Valori consentiti = `hex`, `base64`.|
 
 ## <a name="example"></a>Esempio
 
@@ -61,7 +61,7 @@ Nell'esempio seguente l'attività `VerifyFileHash` viene usata per verificare il
 </Project>
 ```
 
-In MSBuild 16,5 e versioni successive, se non si vuole che la compilazione abbia esito negativo quando l'hash non corrisponde, ad esempio se si usa il confronto hash come condizione per il flusso di controllo, è possibile effettuare il downgrade dell'avviso a un messaggio usando il codice seguente:
+In MSBuild 16.5 e versioni successive, se non si desidera che la compilazione abbia esito negativo quando l'hash non corrisponde, ad esempio se si utilizza il confronto hash come condizione per il flusso di controllo, è possibile eseguire il downgrade dell'avviso a un messaggio utilizzando il codice seguente:On MSBuild 16.5 and later, if you don't want the build to fail when the hash doesn't match, ad esempio if you are using the hash comparison as a condition for control flow, you can downgrade the warning to a message using the following code:
 
 ```xml
   <PropertyGroup>

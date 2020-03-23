@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410244"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302945"
 ---
 # <a name="extend-dependency-diagrams"></a>Estendere i diagrammi delle dipendenze
 
-È possibile scrivere codice per creare e aggiornare i diagrammi delle dipendenze e per convalidare la struttura del codice del programma in base ai diagrammi di dipendenza in Visual Studio. È possibile aggiungere comandi da visualizzare nel menu di scelta rapida (contestuale) dei diagrammi, personalizzare i movimenti di trascinamento della selezione e accedere al modello di livello dai modelli di testo. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) e distribuirle ad altri utenti di Visual Studio.
+È possibile scrivere codice per creare e aggiornare diagrammi di dipendenza e per convalidare la struttura del codice del programma rispetto ai diagrammi di dipendenza in Visual Studio.You can write code to create and update dependency diagrams and to validate the structure of your program code against dependency diagrams in Visual Studio. È possibile aggiungere comandi da visualizzare nel menu di scelta rapida (contestuale) dei diagrammi, personalizzare i movimenti di trascinamento della selezione e accedere al modello di livello dai modelli di testo. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) e distribuirle ad altri utenti di Visual Studio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,7 +33,7 @@ ms.locfileid: "78410244"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-È necessario che nel computer in cui si desidera eseguire le estensioni del livello sia installata un'edizione appropriata di Visual Studio. Per individuare le edizioni di Visual Studio che supportano i diagrammi di dipendenza, vedere [supporto dell'edizione per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+È necessario disporre di un'edizione appropriata di Visual Studio installata nel computer in cui si desidera eseguire le estensioni del livello. Per sapere quali edizioni di Visual Studio supportano i diagrammi di dipendenza, vedere [Supporto dell'edizione per gli strumenti di architettura e modellazione.](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
 ## <a name="see-also"></a>Vedere anche
 

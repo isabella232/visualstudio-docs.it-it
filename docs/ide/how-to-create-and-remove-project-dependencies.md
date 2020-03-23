@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a286a84d01c6a49b32445106488688ba5b489be
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114549"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Procedura: Creare e rimuovere dipendenze di progetto
@@ -31,7 +31,7 @@ Quando si compila una soluzione che contiene più progetti, può essere necessar
 
 ## <a name="to-assign-dependencies-to-projects"></a>Per assegnare le dipendenze ai progetti
 
-1. Selezionare un progetto in **Esplora soluzioni**.
+1. In **Esplora soluzioni**selezionare un progetto.
 
 2. Nel menu **Proprietà** scegliere **Dipendenze progetto**.
 
@@ -48,7 +48,7 @@ Quando si compila una soluzione che contiene più progetti, può essere necessar
 
 ## <a name="to-remove-dependencies-from-projects"></a>Per rimuovere dipendenze dai progetti
 
-1. Selezionare un progetto in **Esplora soluzioni**.
+1. In **Esplora soluzioni**selezionare un progetto.
 
 2. Nel menu **Proprietà** scegliere **Dipendenze progetto**.
 
@@ -64,6 +64,6 @@ Quando si compila una soluzione che contiene più progetti, può essere necessar
 ## <a name="see-also"></a>Vedere anche
 
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilare](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Gestire le proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)

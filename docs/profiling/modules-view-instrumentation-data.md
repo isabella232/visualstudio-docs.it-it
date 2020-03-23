@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f6449ad30edf11d3d315532cc33db2a79c14f90b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778531"
 ---
 # <a name="modules-view---instrumentation-data"></a>Visualizzazione Moduli - dati di strumentazione
@@ -30,10 +30,10 @@ Nella visualizzazione Moduli vengono visualizzati i dati sulle prestazioni raggr
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione o modulo.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-|**Nome modulo**|Nome del modulo che contiene la funzione.|
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
-|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Nome processo**|Nome del processo in cui era in esecuzione il modulo o la funzione.|
+|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Process Name**|Nome del processo in cui era in esecuzione il modulo o la funzione.|
 |**Sovraccarico temporale per probe esclusivi**|Sovraccarico temporale per questa funzione o per questo modulo causato dalla strumentazione.|
 |**Sovraccarico temporale per probe inclusivi**|Sovraccarico temporale per questa funzione o per questo modulo e per le relative funzioni figlio causato dalla strumentazione.|
 
@@ -71,7 +71,7 @@ Nella visualizzazione Moduli vengono visualizzati i dati sulle prestazioni raggr
 |**Tempo inclusivo applicazione minimo**|- Per una funzione, il tempo inclusivo applicazione minimo di una chiamata a questo modulo o a questa funzione.<br />- Per un modulo, il tempo inclusivo applicazione minimo di tutte le chiamate a funzioni nel modulo.|
 
 ## <a name="application-exclusive-values"></a>Valori di tempo esclusivo applicazione
- I valori relativi al tempo esclusivo applicazione indicano il tempo dedicato al modulo o alla funzione. Esclude il tempo trascorso nelle funzioni figlio ed esclude anche le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.
+ I valori relativi al tempo esclusivo applicazione indicano il tempo dedicato al modulo o alla funzione. È escluso il tempo dedicato alle funzioni figlio così come alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.
 
 |Colonna|Descrizione|
 |------------|-----------------|

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96326910a04294e30c410cc96bf9c600bfb3f17c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589454"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con un gradiente basato sulla geometria
@@ -56,13 +56,13 @@ La figura seguente illustra lo shader descritto in questo documento applicato al
 
 ![Effetto sfumatura applicato a un modello di terreno 3D](../designers/media/digit-gradient-effect-result.png)
 
-Per altre informazioni su come applicare uno shader a un modello 3D, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Per ulteriori informazioni su come applicare uno shader a un modello 3D, consultate [Procedura: Applicare uno shader a un modello 3D.](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)
-- [Procedura: Creare un modello di territorio 3D](../designers/how-to-model-3-d-terrain.md)
-- [Procedura: Creare uno shader con trama in scala di grigi](../designers/how-to-create-a-grayscale-texture-shader.md)
+- [Procedura: applicare uno shader a un modello 3DHow to: Apply a shader to a 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedura: esportare uno shaderHow to: Export a shader](../designers/how-to-export-a-shader.md)
+- [Procedura: Modellare il terreno 3D](../designers/how-to-model-3-d-terrain.md)
+- [Procedura: creare uno shader di trama in scala di grigiHow to: Create a grayscale texture shader](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [Finestra di progettazione shader](../designers/shader-designer.md)
 - [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

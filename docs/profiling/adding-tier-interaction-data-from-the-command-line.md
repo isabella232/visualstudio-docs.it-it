@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779870"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Aggiungere dati di interazione tra livelli dalla riga di comando
@@ -32,7 +32,7 @@ I dati di profilatura dell'interazione tra livelli possono essere raccolti usand
 
 **Raccogliere dati TIP in un computer remoto**
 
-Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs_profiler\_** _\<Piattaforma>_ **\_** _\<Linguaggio>_ **.exe** dalla cartella _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
+Per raccogliere i dati di interazione tra livelli in un computer remoto, è necessario copiare **vs_profiler\_** **\_** _ \< __\< _il file platform>Language>**.exe** della cartella _%VSInstallDir%_,**Strumenti di team, Strumenti** di prestazioni e Impostazioni di installazione nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
 
 **Report TIP**
 
@@ -59,7 +59,7 @@ Nell'esempio seguente un'applicazione desktop di Windows viene profilata tramite
     vsperfclrenv /interactionon
     ```
 
-3. Avviare il profiler. Digitare il comando seguente:
+3. Avvia il profiler. Digitare il comando seguente:
 
     ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp
@@ -111,7 +111,7 @@ Nell'esempio seguente un servizio di Windows viene profilato tramite il metodo d
 
 6. Aprire una finestra del prompt dei comandi con privilegi di amministratore.
 
-7. Avviare il profiler. Digitare il comando seguente:
+7. Avvia il profiler. Digitare il comando seguente:
 
     ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession
@@ -139,7 +139,7 @@ Nell'esempio seguente un servizio di Windows viene profilato tramite il metodo d
 
 13. Riavviare il computer per registrare le variabili di ambiente cancellate.
 
-Per altre informazioni, vedere uno degli argomenti seguenti:
+Per ulteriori informazioni, vedere uno degli argomenti seguenti:
 
 [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
@@ -155,4 +155,4 @@ Per aggiungere l'interazione tra livelli ai dati di profilatura raccolti tramite
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Per altre informazioni su VSPerfASPNETCmd, vedere [Profilatura rapida di siti Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Per ulteriori informazioni su VSPerfASPNETCmd, vedere Profiling di [siti Web rapid con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633967"
 ---
 # <a name="getwinfxpath-task"></a>Attività GetWinFXPath
@@ -35,9 +35,9 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> restituisce la dir
 |-------------------| - |
 | `WinFXPath` | Parametro di output **String** facoltativo.<br /><br /> Specifica il percorso reale del runtime .NET. |
 | `WinFXNativePath` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso del runtime .NET nativo. |
-| `WinFXWowPath` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso degli assembly .NET nel modulo Windows a 32 bit per **Windows** su sistemi a 64 bit. |
+| `WinFXWowPath` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso degli assembly .NET nel modulo **Windows su Windows** a 32 bit nei sistemi a 64 bit. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
  Se l'attività <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> viene eseguita su un processore a 64 bit, il parametro **WinFXPath** viene impostato sul percorso archiviato nel parametro **WinFXWowPath**. In caso contrario, il parametro **WinFXPath** viene impostato sul percorso archiviato nel parametro **WinFXNativePath**.
 

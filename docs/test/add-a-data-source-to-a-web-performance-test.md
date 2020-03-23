@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c7f947be01500b0d45b81d404206722ac71084a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565409"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Aggiungere un'origine dati a un test delle prestazioni Web
@@ -219,7 +219,7 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
      ![Aggiungere l'origine dati di un database](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
-5. Creare una nuova connessione.
+5. Crea una nuova connessione.
 
      ![Scegliere la nuova connessione](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
@@ -249,7 +249,7 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>D. Come si utilizza un file XML come origine dati?
 
-**R:** Sì.
+**A:** Sì.
 
 1. Creare una cartella per organizzare gli elementi del database dei progetti e aggiungere un elemento.
 

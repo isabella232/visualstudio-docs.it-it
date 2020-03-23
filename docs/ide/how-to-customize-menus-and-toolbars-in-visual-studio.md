@@ -28,11 +28,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591099"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301853"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedura: personalizzare menu e barre degli strumenti in Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "75591099"
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Aggiungere, rimuovere o spostare un menu nella barra dei menu
 
-1. Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
+1. Nella barra dei menu scegliere **Personalizza strumenti** > **.**
 
      Viene visualizzata la finestra di dialogo **Personalizza**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "75591099"
 
 ## <a name="add-remove-or-move-a-toolbar"></a>Aggiungere, rimuovere o spostare una barra degli strumenti
 
-1. Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
+1. Nella barra dei menu scegliere **Personalizza strumenti** > **.**
 
      Viene visualizzata la finestra di dialogo **Personalizza**.
 
@@ -81,9 +81,9 @@ ms.locfileid: "75591099"
         > [!NOTE]
         > Per altre informazioni su come migliorare l'uso e l'accessibilità delle barre degli strumenti, vedere [Procedura: Impostare le opzioni di accessibilità IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
-## <a name="customizing_menu">Personalizzare un menu o di una barra degli strumenti</a>
+## <a name=""></a><a name="customizing_menu">Personalizzare un menu o di una barra degli strumenti</a>
 
-1. Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
+1. Nella barra dei menu scegliere **Personalizza strumenti** > **.**
 
     Viene visualizzata la finestra di dialogo **Personalizza**.
 
@@ -105,7 +105,7 @@ ms.locfileid: "75591099"
 
 ## <a name="reset-a-menu-or-a-toolbar"></a>Reimpostare un menu o una barra degli strumenti
 
-1. Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
+1. Nella barra dei menu scegliere **Personalizza strumenti** > **.**
 
     Viene visualizzata la finestra di dialogo **Personalizza**.
 

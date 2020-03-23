@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b7b60ad871f40e06e2a8fbf6782773ce6596f31
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779675"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Raccogliere dati di concorrenza per un servizio tramite la riga di comando del profiler
@@ -26,9 +26,9 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
 
 |Attività|Contenuto correlato|
 |----------|---------------------|
-|**Connettersi a un servizio .NET in esecuzione**|-   [Procedura: Connettere il profiler a un servizio .NET per raccogliere dati di concorrenza](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|
+|**Connettersi a un servizio .NET in esecuzione**|-   [Procedura: connettere il profiler a un servizio .NET per raccogliere dati di concorrenzaHow to: Attach the profiler to a .NET service to collect concurrency data](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|
 |**Aggiungere dati di interazione tra livelli**|-   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-|**Connettersi a un servizio C/C++ in esecuzione**|-   [Procedura: Connettere il profiler a un servizio nativo per raccogliere dati di concorrenza](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|
+|**Connettersi a un servizio C/C++ in esecuzione**|-   [Procedura: connettere il profiler a un servizio nativo per raccogliere dati di concorrenzaHow to: Attach the profiler to a native service to collect concurrency data](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Attività correlate
 
@@ -37,20 +37,20 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
 |Attività|Contenuto correlato|
 |----------|---------------------|
 |**Eseguire la profilatura tramite il metodo di campionamento**|-   [Raccogliere statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
-|**Sottoporre a profilatura tramite il metodo di strumentazione**|-   [Raccogliere dati di intervallo dettagliati tramite la strumentazione](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
-|**Sottoporre a profilatura l'allocazione di memoria .NET e la garbage collection**|-   [Raccogliere dati di memoria .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
+|**Profilare usando il metodo di strumentazione**|-   [Raccogliere dati di intervallo dettagliati tramite la strumentazione](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
+|**Sottoporre a profilatura l'allocazione di memoria .NET e la garbage collection**|-   [Raccogliere dati di memoria .NETCollect .NET memory data](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
 
 ### <a name="profile-concurrency-data"></a>Sottoporre a profilatura dati di concorrenza
 
 |Attività|Contenuto correlato|
 |----------|---------------------|
-|**Sottoporre a profilatura applicazioni autonome**|-   [Raccogliere dati di concorrenza](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
-|**Sottoporre a profilatura applicazioni Web ASP.NET**|-   [Raccogliere dati di concorrenza](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
+|**Sottoporre a profilatura applicazioni autonome**|-   [Raccogliere dati di concorrenzaCollect concurrency data](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+|**Profilare ASP.NET applicazioni Web**|-   [Raccogliere dati di concorrenzaCollect concurrency data](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
 
 ### <a name="analyze-concurrency-data-views-and-reports"></a>Analizzare visualizzazioni dati e report di concorrenza
-- [Visualizzazioni dei dati su conflitti tra risorse](../profiling/resource-contention-data-views.md)
+- [Visualizzazioni dei dati sui conflitti di risorse](../profiling/resource-contention-data-views.md)
 
 - [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Reference
-- [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)
+## <a name="reference"></a>Informazioni di riferimento
+- [Informazioni di riferimento sulle strumenti di profilatura della riga di comandoCommand-line profiling tools reference](../profiling/command-line-profiling-tools-reference.md)

@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 60fa2bd38f3d7e594e9af7ba8ec544518bdbb920
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115303"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Specificare i tipi di rete virtuale in uno scenario di test di carico
@@ -95,9 +95,9 @@ Il pulsante **Distribuisci** viene usato per allocare uniformemente i valori per
 > [!WARNING]
 > Il pulsante **Distribuisci** esegue l'override degli eventuali elementi bloccati.
 
-È anche possibile digitare direttamente i valori percentuali nella colonna **%** anziché usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
+È anche possibile digitare i valori **%** percentuali direttamente nella colonna anziché utilizzare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
 
 > [!NOTE]
-> I dispositivi di scorrimento sono disabilitati se il totale non è pari al 100% o se i valori immessi nella colonna **%** sono decimali.
+> I cursori sono disabilitati quando il totale non viene aggiunto fino al **%** 100% o quando i valori percentuali immessi nella colonna sono decimali.
 
 Quando si immettono manualmente le percentuali, assicurarsi che la somma di tutti gli elementi sia 100%. Quando si salva una combinazione, se la somma non è pari al 100%, verrà richiesto di accettare i valori percentuali così come sono o di tornare indietro e regolarli. Se si sceglie di accettarle così come sono, le percentuali verranno ripartite proporzionalmente al 100%.  Se ad esempio si dispone di due elementi che sono stati impostati manualmente su 80% e 40%, il primo elemento verrà impostato su 66,67% (80 diviso 120) mentre il secondo su 33,33% (40 diviso 120).

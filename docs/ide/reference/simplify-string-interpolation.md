@@ -1,42 +1,45 @@
 ---
-title: Semplificazione dell'interpolazione di stringhe
-ms.date: 02/12/2020
+title: Semplificare l'interpolazione di stringhe
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15f034b0ecf46e19681f3b74e4137a2de9e9d950
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: a8b0fd53164cb98921b111d49fa04a76c9d0d8a8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77280754"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094307"
 ---
-# <a name="simplify-string-interpolation-refactoring"></a>Semplificazione del refactoring dell'interpolazione di stringhe
+# <a name="simplify-string-interpolation-refactoring"></a>Semplifica il refactoring dell'interpolazione delle stringhe
 
 Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** Consente di semplificare un' [interpolazione di stringhe](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation).
+- Visual Basic
 
-**Quando:** Si dispone di un'interpolazione di stringhe che può essere semplificata.
+**Cosa:** Consente di semplificare [l'interpolazione](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation)di una stringa.
 
-**Motivo:** La semplificazione di un'interpolazione di stringhe può fornire maggiore chiarezza e sintassi concisa. Questo strumento di refactoring eseguirà automaticamente l'attività invece di eseguirla manualmente.
+**Quando:** Si dispone di un'interpolazione di stringa che può essere semplificata.
+
+**Perché:** Semplificare l'interpolazione di stringa può fornire maggiore chiarezza e sintassi concisa. Questo strumento di refactoring eseguirà automaticamente l'attività anziché doverla eseguire manualmente.
 
 ## <a name="how-to"></a>Procedure
 
-1. Posizionare il cursore sull'interpolazione di stringhe:
+1. Posizionare il punto di inserimento sull'interpolazione della stringa:
 
-2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
 
-3. Selezionare **semplifica l'interpolazione**
+3. Selezionate **Semplifica interpolazione**
 
-    ![Semplificazione dell'interpolazione di stringhe](media/simplify-string-interpolation.png)
+    ![Semplificare l'interpolazione di stringhe](media/simplify-string-interpolation.png)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 866f91303c224f8330a4d2be76f3d29331fcb346
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589916"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procedura dettagliata: Creazione di una palla da biliardo tridimensionale realistica
 
 In questa procedura dettagliata viene illustrato come creare una palla da biliardo tridimensionale realistica usando la Modalità progettazione shader e l'editor di immagini in Visual Studio. L'aspetto tridimensionale della palla da biliardo viene raggiunto combinando diverse tecniche di shader con le risorse appropriate di trama.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 Per completare questa procedura dettagliata, è necessario disporre dei componenti e delle abilità seguenti:
 
@@ -161,15 +161,15 @@ Il primo passaggio consiste nella creazione della trama della mappa cubo. In mol
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Per assemblare una mappa cubo utilizzando lo strumento Trama di DirectX
 
-1. Nello strumento Trama di DirectX, scegliere **File**,  > **New Texture** (Nuova trama) dal menu principale. Verrà visualizzata la finestra di dialogo **New Texture** (Nuova trama).
+1. Nello strumento Texture DirectX, nel menu principale, scegliere **File** > **nuova trama**. Verrà visualizzata la finestra di dialogo **New Texture** (Nuova trama).
 
 2. Nello gruppo **Texture Type** (Tipo trama), scegliere **Cubemap Texture** (Trama mappa cubo).
 
 3. Nel gruppo **Dimensioni**, immettere il valore corretto per **Larghezza** e **Altezza**, quindi scegliere **OK**. Verrà visualizzato un nuovo documento a trama. Per impostazione predefinita, la trama mostrata per prima nel documento di trama corrisponde alla faccia del cubo **Positive X** (X positivo).
 
-4. Caricare la trama creata per il lato del cubo di trama sulla faccia del cubo. Nel menu principale, scegliere **File**,  > **Open Onto This Cubemap Face** (Apri in questa faccia cubo), selezionare la trama creata per il lato del cubo, quindi scegliere **Apri**.
+4. Caricare la trama creata per il lato del cubo di trama sulla faccia del cubo. Nel menu principale scegliere **Apri file** > su questa faccia**della mappa cubo**, selezionare la trama creata per il lato del cubo e quindi scegliere **Apri**.
 
-5. Ripetere il passaggio 4 per le facce del cubo **Negative X** (X negativo), **Positive Z** (Z positivo) e **Negative Z** (Z negativo). A tal fine, è necessario visualizzare la faccia che si desidera caricare. Per visualizzare un'altra faccia della mappa cubo, dal menu principale scegliere **Visualizza**,  > **Cube Map Face** (Faccia mappa cubo), quindi selezionare la faccia che si desidera visualizzare.
+5. Ripetere il passaggio 4 per le facce del cubo **Negative X** (X negativo), **Positive Z** (Z positivo) e **Negative Z** (Z negativo). A tal fine, è necessario visualizzare la faccia che si desidera caricare. Per visualizzare una faccia diversa della mappa cubo, nel menu principale scegliere **Visualizza** > faccia**mappa cubo**, quindi selezionare la faccia che si desidera visualizzare.
 
 6. Per la faccia del cubo **Positive Y** (Y positivo), caricare la trama creata per la parte superiore del cubo di trama.
 
@@ -209,8 +209,8 @@ Il primo passaggio consiste nella creazione della trama della mappa cubo. In mol
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)
-- [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedura: esportare uno shaderHow to: Export a shader](../designers/how-to-export-a-shader.md)
+- [Procedura: applicare uno shader a un modello 3DHow to: Apply a shader to a 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Finestra di progettazione shader](../designers/shader-designer.md)
 - [Image Editor](../designers/image-editor.md)
 - [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

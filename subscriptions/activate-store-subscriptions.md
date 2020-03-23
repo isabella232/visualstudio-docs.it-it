@@ -7,10 +7,10 @@ ms.date: 02/17/2020
 ms.topic: conceptual
 description: Informazioni su come attivare le sottoscrizioni di Visual Studio acquistate in Microsoft Store.
 ms.openlocfilehash: c872dd738b1b27620bf988e74bcc03631ce8b037
-ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78894405"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Qual è la procedura per attivare una sottoscrizione acquistata da Microsoft Store?
@@ -21,7 +21,7 @@ Se la sottoscrizione di Visual Studio è stata acquistata usando Microsoft Store
 
 ## <a name="activate-your-subscription"></a>Attivare la sottoscrizione
 1. Fare clic su **Fai clic qui per accedere** nel messaggio di posta elettronica di conferma o nella pagina di conferma dell'acquisto.
-2. Si verrà reindirizzati a [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
+2. Si verrà reindirizzati [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)a .
 3. Immettere l'indirizzo di posta elettronica per cui è necessario l'accesso alla sottoscrizione di Visual Studio e fare clic su **Continua**.
 4. Si verrà reindirizzati a una di due diverse pagine di accesso a seconda del tipo di account in uso:
     - I sottoscrittori che usano un account Microsoft (MSA) personale visualizzeranno la pagina della password per l'account Microsoft.
@@ -33,7 +33,7 @@ Se la sottoscrizione di Visual Studio è stata acquistata usando Microsoft Store
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2b6333b6b57891065b42c2d56e3acfe68b315de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595657"
 ---
 # <a name="evaluate-statement-command"></a>Comando Valuta istruzione
@@ -34,7 +34,7 @@ Valuta e visualizza l'istruzione specificata.
 
 `text`
 
-Richiesto. Istruzione da valutare.
+Obbligatorio. Istruzione da valutare.
 
 ## <a name="example"></a>Esempio
 
@@ -45,7 +45,7 @@ Richiesto. Istruzione da valutare.
 ## <a name="see-also"></a>Vedere anche
 
 - [Comando Stampa](../../ide/reference/print-command.md)
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
+- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

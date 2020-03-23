@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408522"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302560"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Pubblicazione di un servizio cloud con Visual Studio
 
@@ -35,11 +35,11 @@ Quando si pubblica l'applicazione Azure, è possibile eseguire una delle seguent
 
 - Creare un pacchetto del servizio: è possibile usare questo pacchetto e il file di configurazione del servizio per pubblicare l'applicazione in un ambiente di distribuzione dal [portale di Azure](https://portal.azure.com).
 
-- Pubblicare il progetto Azure da Visual Studio: per pubblicare un'applicazione direttamente in Azure, è possibile utilizzare la Pubblicazione guidata. Per altre informazioni, vedere [Procedura guidata Pubblica l'applicazione Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Pubblicare il progetto Azure da Visual Studio: per pubblicare l'applicazione direttamente in Azure, si utilizza la Pubblicazione guidata. Per altre informazioni, vedere [Procedura guidata Pubblica l'applicazione Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Per creare un pacchetto del servizio da Visual Studio
 
-1. Quando l'applicazione è pronta per la pubblicazione, aprire Esplora soluzioni, aprire il menu di scelta rapida per il progetto Azure contenente i ruoli e scegliere Pubblica.
+1. Quando si è pronti per pubblicare l'applicazione, aprire Esplora soluzioni, aprire il menu di scelta rapida per il progetto Azure contenente i ruoli e scegliere Pubblica.
 
 1. Per creare un pacchetto del servizio, attenersi alla procedura seguente:
 
@@ -69,19 +69,19 @@ Se l'infrastruttura back-end dell'app è stabile, ma i ruoli Web richiedono aggi
 
 ### <a name="requirements-for-using-web-deploy"></a>Requisiti per l'uso di Distribuzione Web
 
-- **Solo per scopi di sviluppo e test:** le modifiche vengono apportate direttamente alla macchina virtuale in cui è in esecuzione il ruolo web. Se è necessario riciclare questa macchina virtuale, le modifiche andranno perse perché il pacchetto originale pubblicato viene utilizzato per ricreare la macchina virtuale per il ruolo. Pubblicare nuovamente l'applicazione per ottenere le modifiche più recenti per il ruolo Web.
+- **Solo**a scopo di sviluppo e test : le modifiche vengono apportate direttamente alla macchina virtuale in cui è in esecuzione il ruolo Web. Se è necessario riciclare questa macchina virtuale, le modifiche andranno perse perché il pacchetto originale pubblicato viene utilizzato per ricreare la macchina virtuale per il ruolo. Pubblicare nuovamente l'applicazione per ottenere le modifiche più recenti per il ruolo Web.
 
-- **Possono essere aggiornati solo i ruoli Web:** i ruoli di lavoro non possono essere aggiornati. Inoltre, non è possibile aggiornare `RoleEntryPoint` in `web role.cs`.
+- Solo i **ruoli Web possono essere aggiornati:** i ruoli di lavoro non possono essere aggiornati. Inoltre, non è possibile aggiornare `RoleEntryPoint` in `web role.cs`.
 
 - **Può supportare solo una singola istanza di un ruolo Web:** non è possibile avere più istanze di qualsiasi ruolo Web nell'ambiente di distribuzione. Tuttavia, sono supportati più ruoli web con una sola istanza.
 
-- **Abilitare le connessioni Desktop remoto:** questa operazione è necessaria per consentire a Distribuzione Web di usare il nome utente e la password per connettersi alla macchina virtuale e distribuire le modifiche al server che esegue IIS (Internet Information Services). Inoltre, potrebbe essere necessario connettersi alla macchina virtuale per aggiungere un certificato attendibile a IIS su questa macchina virtuale. Con questo certificato si ha la certezza che la connessione remota per IIS usata da Distribuzione Web sia protetta.
+- **Abilita connessioni desktop remoto:** questo requisito consente a Distribuzione Web di utilizzare l'utente e la password per connettersi alla macchina virtuale per distribuire le modifiche al server che esegue Internet Information Services (IIS). Inoltre, potrebbe essere necessario connettersi alla macchina virtuale per aggiungere un certificato attendibile a IIS su questa macchina virtuale. Con questo certificato si ha la certezza che la connessione remota per IIS usata da Distribuzione Web sia protetta.
 
 Si presuppone che si usi la procedura guidata **Pubblica l'applicazione Azure**.
 
 ### <a name="enable-web-deploy-when-you-publish-your-application"></a>Abilitare Distribuzione Web quando si pubblica l'applicazione
 
-1. Per abilitare l'opzione **Abilita Distribuzione Web per tutti i ruoli Web** , è prima necessario configurare le connessioni di Desktop remoto. Selezionare **Abilita Desktop remoto per tutti i ruoli** e quindi specificare le credenziali usate per connettersi in remoto nella casella **Configurazione Desktop remoto** visualizzata. Vedere [Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+1. Per abilitare l'opzione **Abilita Distribuzione Web per tutti i ruoli Web **, è prima necessario configurare le connessioni di Desktop remoto. Selezionare **Abilita Desktop remoto per tutti i ruoli** e quindi specificare le credenziali usate per connettersi in remoto nella casella **Configurazione Desktop remoto** visualizzata. Vedere [Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
 1. Per abilitare Distribuzione Web per tutti i ruoli Web nell'applicazione, selezionare **Abilita Distribuzione Web per tutti i ruoli Web**.
 
@@ -138,16 +138,16 @@ Potrebbe essere necessario includere file specifici nel pacchetto di servizio in
    c. Scegliere il riferimento che si vuole aggiungere e quindi fare clic su **OK**. Il riferimento viene aggiunto all'elenco nella cartella **Riferimenti**.
    d. Aprire il menu di scelta rapida per l'assembly aggiunto, quindi scegliere **Proprietà**. Verrà visualizzata la finestra **Proprietà**.
 
-      Per includere questo assembly nel pacchetto del servizio, nell'elenco **Copia locale** scegliere **True**.
+      Per includere questo assembly nel pacchetto del servizio, **nell'elenco Copia locale** scegliere **True**.
 1. In **Esplora soluzioni** aprire il nodo del progetto in cui manca l'assembly a cui si fa riferimento.
 
-1. Per aggiungere l'assembly al progetto, aprire il menu di scelta rapida per la cartella **Riferimenti**, quindi scegliere **Aggiungi riferimento**. Viene visualizzata la finestra di dialogo **Aggiungi riferimento** .
+1. Per aggiungere l'assembly al progetto, aprire il menu di scelta rapida per la cartella **Riferimenti**, quindi scegliere **Aggiungi riferimento**. Viene visualizzata la finestra di dialogo **Aggiungi riferimento.**
 
 1. Scegliere il riferimento da aggiungere, quindi scegliere **OK**.
 
     Il riferimento viene aggiunto all'elenco nella cartella **Riferimenti**.
 
-1. Aprire il menu di scelta rapida per l'assembly aggiunto, quindi scegliere **Proprietà**. Viene visualizzata la finestra Proprietà.
+1. Aprire il menu di scelta rapida per l'assembly aggiunto, quindi scegliere **Proprietà**. La finestra Proprietà verrà visualizzata.
 
 1. Per includere questo assembly nel pacchetto del servizio, nell'elenco **Copia locale** scegliere **True**.
 

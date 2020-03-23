@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593694"
 ---
 # <a name="manage-application-resources-net"></a>Gestire le risorse dell'applicazione (.NET)
@@ -31,7 +31,7 @@ I file di risorse sono file che fanno parte di un'applicazione ma non vengono co
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Gestione delle risorse delle app (Visual Studio per Mac)](/visualstudio/mac/managing-app-resources).
 
-Per altre informazioni sulle risorse nelle app desktop .NET, vedere [Risorse nelle applicazioni desktop](/dotnet/framework/resources/index).
+Per altre informazioni sulle risorse nelle app desktop .NET, vedere [Risorse nelle app desktop.](/dotnet/framework/resources/index)
 
 ## <a name="work-with-resources"></a>Uso delle risorse
 
@@ -39,9 +39,9 @@ In un progetto di codice gestito aprire la finestra delle proprietà del progett
 
 - Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare **Proprietà**
 - Digitazione di **proprietà progetto** nella casella di ricerca **CTRL**+**Q**
-- Scegliere **ALT**+**INVIO** in **Esplora soluzioni**
+- Scelta di **Alt**+**Enter** in **Esplora soluzioni**
 
-Selezionare la scheda **risorse** . È possibile aggiungere un file con *estensione resx* se il progetto non ne contiene già uno, aggiungere ed eliminare diversi tipi di risorse e modificare le risorse esistenti.
+Selezionare la scheda **Risorse.** È possibile aggiungere un file *RESX* se il progetto non ne contiene già uno, aggiungere ed eliminare diversi tipi di risorse e modificare le risorse esistenti.
 
 ## <a name="resources-in-other-project-types"></a>Risorse in altri tipi di progetto
 
@@ -52,5 +52,5 @@ Le risorse vengono gestite in modo diverso nei progetti .NET rispetto ad altri t
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Risorse nelle applicazioni desktop (.NET Framework)](/dotnet/framework/resources/index)
+- [Risorse nelle app desktop (.NET Framework)](/dotnet/framework/resources/index)
 - [Gestione delle risorse delle app (Visual Studio per Mac)](/visualstudio/mac/managing-app-resources)

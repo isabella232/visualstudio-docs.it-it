@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593785"
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a
 
 I comandi **Vai a** di Visual Studio consentono di eseguire una ricerca mirata nel codice allo scopo di individuare rapidamente elementi specifici. Da una semplice interfaccia unificata è possibile passare a una riga, a un tipo, a un simbolo o a un file specifico e ad altro ancora.
 
-## <a name="how-to-use-it"></a>Come usare la funzionalità
+## <a name="how-to-use-it"></a>Come usarlo
 
 Input | Funzione
 ------------ | ---
-**Tastiera** | Premere **CTRL**+**T** oppure **CTRL**+ **,**
-**Mouse** | Selezionare **Modifica** > **Vai a** > **Vai a tutti**
+**Tastiera** | Premere **Ctrl**+**T** o **Ctrl**+**,**
+**Mouse** | Selezionare **Modifica** > **Vai a** > **tutti**
 
 Viene visualizzata una piccola finestra nella parte superiore destra dell'editor del codice.
 
@@ -38,13 +38,13 @@ Durante la digitazione nella casella di testo i risultati vengono visualizzati i
 
 ![Finestra Passa a](../ide/media/vside_navigatetowindow.png)
 
-È anche possibile immettere un punto interrogativo ( **?** ) per ottenere informazioni aggiuntive.
+È anche possibile immettere un punto interrogativo (**?**) per ottenere informazioni aggiuntive.
 
 ![Guida di Vai a tutti](media/go-to-all-help.png)
 
 ## <a name="filtered-searches"></a>Ricerche con filtri
 
-Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli elementi della soluzione. È però possibile limitare la ricerca nel codice a tipi di elementi specifici anteponendo determinati caratteri di prefisso ai termini di ricerca. È anche possibile modificare rapidamente il filtro di ricerca scegliendo i pulsanti sulla barra degli strumenti della finestra di dialogo **Vai a**. I pulsanti per la modifica dei filtri relativi al tipo si trovano sul lato sinistro, mentre quelli per la modifica dell'ambito della ricerca sono sul lato destro.
+Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli elementi della soluzione. È però possibile limitare la ricerca nel codice a tipi di elementi specifici anteponendo determinati caratteri di prefisso ai termini di ricerca. È inoltre possibile modificare rapidamente il filtro di ricerca scegliendo i pulsanti sulla barra degli strumenti della finestra di dialogo **Vai a.** I pulsanti per la modifica dei filtri relativi al tipo si trovano sul lato sinistro, mentre quelli per la modifica dell'ambito della ricerca sono sul lato destro.
 
 ![Passare a membri](../ide/media/vside_navigation_toolbar.png)
 
@@ -52,14 +52,14 @@ Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli 
 
 Per limitare la ricerca a un tipo specifico di elemento di codice, è possibile specificare un prefisso nella casella di ricerca o selezionare una delle cinque icone di filtro:
 
-Prefisso | Icona | Collegamento | Descrizione
+Prefisso | Icona | Tasto di scelta rapida | Descrizione
 :-: | - | - | -
-:| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL**+**G** | Consente di passare al numero di riga specificato
-f| ![Icona File](media/gotoall-files-icon.png) | **CTRL**+**1**, **CTRL**+**F** | Consente di passare al file specificato
-r| ![Icona File recenti](media/gotoall-recent-files-icon.png) | **CTRL**+**1**, **CTRL**+**R** | Consente di passare al file specificato, visitato di recente
-u| ![Icona Tipi](media/gotoall-types-icon.png) | **CTRL**+**1**, **CTRL**+**T** | Consente di passare al tipo specificato
-m| ![Icona Membri](media/gotoall-members-icon.png) | **CTRL**+**1**, **CTRL**+**M** | Consente di passare al membro specificato
-\#| ![Icona Simboli](media/gotoall-symbols-icon.png) | **CTRL**+**1**, **CTRL**+**S** | Consente di passare al simbolo specificato
+:| ![Icona Riga](media/gotoall-line-icon.png) | **Ctrl**+**G** | Consente di passare al numero di riga specificato
+f| ![Icona File](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Consente di passare al file specificato
+r| ![Icona File recenti](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Consente di passare al file specificato, visitato di recente
+t| ![Icona Tipi](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Consente di passare al tipo specificato
+m| ![Icona Membri](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Consente di passare al membro specificato
+\#| ![Icona Simboli](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Consente di passare al simbolo specificato
 
 ### <a name="filter-to-a-specific-location"></a>Filtrare in base a una posizione specifica
 
@@ -78,9 +78,9 @@ Se si usa la [notazione Camel](https://en.wikipedia.org/wiki/Camel_case) nel cod
 
 ## <a name="settings"></a>Impostazioni
 
-Se si seleziona l'icona a forma di ingranaggio ![Icona Ingranaggio](media/gotoall_gear.png) è possibile modificare il comportamento di questa funzionalità:
+Se si seleziona l'icona a forma di ingranaggio ![Icona a forma di ingranaggio](media/gotoall_gear.png) è possibile modificare il comportamento di questa funzionalità:
 
-Impostazione di | Descrizione
+Impostazione | Descrizione
 ------- | ---
 Utilizza scheda anteprima | Visualizza immediatamente l'elemento selezionato nella scheda anteprima dell'IDE
 Mostra dettagli | Visualizza informazioni relative a progetto, file, riga e riepilogo recuperando i commenti della documentazione nella finestra

@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591601"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302623"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generazione di input con l'esecuzione simbolica dinamica
 
@@ -34,10 +34,10 @@ Le fasi del ciclo sono:
 
 Il [risolutore di vincoli](#constraint-solver) di IntelliTest può gestire valori di tutti i tipi presenti nelle applicazioni .NET:
 
-* [Integer](#integers-and-floats) e [Float](#integers-and-floats)
+* [Numeri interi](#integers-and-floats) e [float](#integers-and-floats)
 * [Oggetti](#objects)
 * [Struct](#structs)
-* [Array](#arrays-and-strings) e [String](#arrays-and-strings)
+* [Matrici](#arrays-and-strings) e [stringhe](#arrays-and-strings)
 
 IntelliTest esclude gli input che violano i presupposti dichiarati.
 
@@ -61,14 +61,14 @@ In una fase successiva dell'analisi, man mano che vengono rilevati altri metodi 
 
 Il [risolutore di vincoli](#constraint-solver) di IntelliTest determina i valori di input di test dei tipi primitivi quali **byte**, **int**, **float** e altri ancora, per attivare percorsi di esecuzione diversi per il test e il programma sottoposto a test.
 
-## <a name="objects"></a>Oggetti di
+## <a name="objects"></a>Oggetti
 
 IntelliTest può [creare istanze di classi .NET esistenti](#existing-classes) oppure può essere usato per [creare automaticamente oggetti fittizi](#parameterized-mocks) che implementano un'interfaccia specifica e presentano comportamenti diversi a seconda dell'uso.
 
 <a name="existing-classes"></a>
 ## <a name="instantiate-existing-classes"></a>Creare istanze di classi esistenti
 
-**Definizione del problema**
+**Qual è il problema?**
 
 IntelliTest consente di monitorare le istruzioni completate quando esegue un test e il programma sottoposto a test. In particolare esegue il monitoraggio di tutti gli accessi ai campi. Quindi usa un [risolutore di vincoli](#constraint-solver) per determinare i nuovi input di test, inclusi gli oggetti e i valori dei campi corrispondenti, in modo che il test e il programma sottoposto a test adottino altri comportamenti interessanti.
 
@@ -77,13 +77,13 @@ Se tutti i campi della classe sono [visible](#visibility), IntelliTest può impo
 
 Se il tipo non è visibile o i campi non sono [visible](#visibility), IntelliTest richiede un apporto esterno per creare oggetti e impostare stati interessanti al fine di ottenere il massimo code coverage. Sebbene IntelliTest possa usare la reflection per creare e inizializzare istanze in modo arbitrario, questo approccio non è solitamente consigliabile poiché può impostare l'oggetto in uno stato che non può mai verificarsi durante la normale esecuzione del programma. IntelliTest si basa invece sui suggerimenti specificati dall'utente.
 
-## <a name="visibility"></a>Visibility
+## <a name="visibility"></a>Visibilità
 
 .NET offre un modello di visibilità elaborato: i tipi, i metodi, i campi e gli altri membri possono essere **private**, **public**, **internal** e altro ancora.
 
 Quando IntelliTest genera test, prova a eseguire solo azioni (ad esempio la chiamata di costruttori o metodi e l'impostazione dei campi) valide in base alle regole di visibilità .NET all'interno del contesto dei test generati.
 
-Le regole sono le seguenti:
+Di seguito vengono definite le regole:
 
 * **Visibilità dei membri interni**
   * IntelliTest presuppone che i test generati avranno accesso ai membri interni che risultano visibili alla classe [PexClass](attribute-glossary.md#pexclass) di inclusione.
@@ -113,7 +113,7 @@ Per gli oggetti fittizi con parametri sono disponibili due modalità di esecuzio
 
 Per ottenere valori per gli oggetti fittizi con parametri, usare [PexChoose](static-helper-classes.md#pexchoose).
 
-## <a name="structs"></a>Strutture
+## <a name="structs"></a>Struct
 
 Il procedimento di IntelliTest con i valori **struct** è simile a quello usato con gli [oggetti](#objects).
 
@@ -129,10 +129,10 @@ IntelliTest prova a ridurre al minimo le dimensioni delle matrici e delle string
 
 La classe statica [PexChoose](static-helper-classes.md#pexchoose) può essere usata per ottenere input aggiuntivi per un test e per implementare [oggetti fittizi con parametri](#parameterized-mocks).
 
-## <a name="got-feedback"></a>Commenti?
+## <a name="got-feedback"></a>Per eventuali commenti,
 
 Pubblicare idee e richieste di funzionalità nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Ulteriori informazioni
+## <a name="further-reading"></a>Altre letture
 
-* [Funzionamento](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [Come funziona?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

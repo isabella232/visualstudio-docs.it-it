@@ -13,17 +13,17 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 9f31a3f7ae5e0e0ca4150d88870b9e48493bffcc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114965"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aggiornare Visual Studio secondo una baseline di manutenzione
 
 Visual Studio viene aggiornato spesso durante il ciclo di vita del prodotto. Sono disponibili due tipi di aggiornamenti: 
 
-* **Aggiornamenti di versione minori**: ad esempio dalla versione 16.0 alla versione 16.1, con nuove funzionalità e nuovi componenti.  
+* **Aggiornamenti di versioni**&mdash;secondarie, ad esempio da&mdash;16.0 a 16,1 che includono nuove funzionalità e componenti.  
 * **Aggiornamenti di servizio**: ad esempio dalla versione 16.0.4 alla versione 16.0.5, con le correzioni specifiche di problemi critici.
 
 Gli amministratori dell'organizzazione possono scegliere di mantenere i client su una baseline di manutenzione, supportata con gli aggiornamenti di manutenzione per un anno dopo il rilascio della baseline di manutenzione successiva.
@@ -48,7 +48,7 @@ Gli amministratori che usano un'installazione con layout di rete devono modifica
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>Installare una baseline di manutenzione tramite Internet
 
-Per un'installazione basata su Internet, aggiungere `--channelUri` con un manifesto di canale inesistente alla riga di comando usata per avviare il programma di installazione. In questo modo si impedisce a Visual Studio di usare la versione più recente disponibile per un aggiornamento. Di seguito è riportato un esempio:
+Per un'installazione basata su Internet, aggiungere `--channelUri` con un manifesto di canale inesistente alla riga di comando usata per avviare il programma di installazione. In questo modo si impedisce a Visual Studio di usare la versione più recente disponibile per un aggiornamento. Ad esempio:
 
 ```cmd
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
@@ -82,10 +82,10 @@ Nel caso di un'installazione basata su Internet, eseguire il nuovo programma di 
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
-* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
+* [Installare Visual Studio](install-visual-studio.md)
+* [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Come definire impostazioni in un file di risposta](automated-installation-with-response-file.md)
 * [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing/)
+* [Ciclo di vita e manutenzione del prodotto Visual StudioVisual Studio product lifecycle and servicing](/visualstudio/releases/2019/servicing/)

@@ -8,10 +8,10 @@ ms.workload:
 - dotnet
 author: mikejo5000
 ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596021"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: configurare unit test destinati a una versione precedente di .NET Framework
@@ -64,7 +64,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Ridestinazione per progetti di unit test C#
 
-1. Creare un nuovo **progetto di unit test** in C#.
+1. Creare un nuovo progetto di progetto **di unit test** di C.
 
 2. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test C#.
 
@@ -108,4 +108,4 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 - [Creare soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+- [Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)Advanced compiler settings dialog box (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

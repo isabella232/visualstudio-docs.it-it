@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569205"
 ---
 # <a name="go-to-command"></a>Comando Vai a
@@ -31,9 +31,9 @@ Edit.GoTo [linenumber]
 
 ## <a name="arguments"></a>Argomenti
 `linenumber`\
-Parametro facoltativo. Valore integer che rappresenta il numero della riga a cui passare.
+Facoltativa. Valore integer che rappresenta il numero della riga a cui passare.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 La numerazione delle righe inizia da uno. Se il valore di `linenumber` è minore di uno, viene visualizzata la prima riga. Se il valore di `linenumber` è maggiore del numero dell'ultima riga, viene visualizzata l'ultima riga.
 
 Se non viene specificato alcun un valore per `linenumber`, viene visualizzata la finestra di dialogo **Vai alla riga**.
@@ -48,7 +48,7 @@ L'alias per questo comando è GoToLn.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
+- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

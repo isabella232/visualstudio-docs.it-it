@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774080"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Visualizzazione Righe: dati di campionamento di memoria .NET
@@ -43,9 +43,9 @@ La visualizzazione Righe dei dati di profilatura sull'allocazione di memoria .NE
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Nome processo**|nome del processo.|
-|**Nome modulo**|Nome del modulo che contiene l'istruzione.|
+|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Process Name**|Nome del processo.|
+|**Nome del modulo**|Nome del modulo che contiene l'istruzione.|
 |**Percorso modulo**|Percorso del modulo che contiene l'istruzione.|
 |**File di origine**|File di origine che contiene l'istruzione.|
 |**Nome funzione**|Nome della funzione che contiene l'istruzione.|
@@ -55,11 +55,11 @@ La visualizzazione Righe dei dati di profilatura sull'allocazione di memoria .NE
 |**Fine riga di origine**|Numero di riga finale nel file di origine in corrispondenza del quale si è verificata l'allocazione.|
 |**Inizio carattere di origine**|Offset del carattere iniziale nella riga del file di origine in corrispondenza del quale si è verificata l'allocazione.|
 |**Fine carattere di origine**|Offset del carattere finale nella riga del file di origine in corrispondenza del quale si è verificata l'allocazione.|
-|**Nome riga**|Identificatore generato dal profiler della riga con la sintassi seguente:`Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number Start,Character Start` **]**|
+|**Nome riga**|Un identificatore generato dal profiler della`Source File`riga con la sintassi seguente:**;[** `Line Number Start` **,**,`Character Start`**]->; [**`Line Number Start,Character Start`**]**|
 |**Allocazioni esclusive**|Numero totale di oggetti creati in questa riga.|
 |**% allocazioni esclusive**|Percentuale di tutti gli oggetti creati nell'esecuzione della profilatura che sono stati allocati in questa riga.|
 |**Byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che sono stati allocati in questa riga.|
 |**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che sono stati allocati in questa riga.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Righe (visualizzazione)](../profiling/lines-view-sampling-data.md)
+- [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)

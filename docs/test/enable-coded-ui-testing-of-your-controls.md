@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: feb7785678be4b6f2c26bbcff93bf7d3e6632116
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589617"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Abilitare test codificati dell'interfaccia utente per i controlli
@@ -69,7 +69,7 @@ Implementare l'accessibilità per il controllo come descritto nella procedura se
 4. Eseguire l'override delle proprietà e dei metodi <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> e <xref:System.Windows.Forms.AccessibleObject.Select%2A> per l'oggetto accessibilità del controllo figlio.
 
 > [!NOTE]
-> Questo argomento inizia con l'esempio di accessibilità in <xref:System.Windows.Forms.AccessibleObject> e si basa quindi su tale esempio nelle procedure restanti. Se si vuole creare una versione funzionante dell'esempio di accessibilità, creare un'applicazione console e quindi sostituire il codice in *Program.cs* con il codice di esempio. Aggiungere riferimenti a oggetti Accessibility, System.Drawing e System.Windows.Forms. Modificare **Incorpora tipi di interoperabilità** per l'accessibilità impostandolo su **False** per eliminare l'avviso di compilazione. È possibile modificare il tipo di output del progetto da **Applicazione console** ad **Applicazione Windows** in modo che non venga visualizzata alcuna finestra della console quando si esegue l'applicazione.
+> Questo argomento inizia con l'esempio di accessibilità in <xref:System.Windows.Forms.AccessibleObject> e si basa quindi su tale esempio nelle procedure restanti. Se si desidera creare una versione funzionante dell'esempio di accessibilità, creare un'applicazione console e quindi sostituire il codice in *Program.cs* con il codice di esempio. Aggiungere riferimenti a oggetti Accessibility, System.Drawing e System.Windows.Forms. Modificare **Incorpora tipi di interoperabilità** per l'accessibilità impostandolo su **False** per eliminare l'avviso di compilazione. È possibile modificare il tipo di output del progetto da **Applicazione console** ad **Applicazione Windows** in modo che non venga visualizzata alcuna finestra della console quando si esegue l'applicazione.
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>Supportare la convalida delle proprietà personalizzate implementando un provider di proprietà
 
@@ -171,7 +171,7 @@ Quando Visual Studio registra un test, acquisisce ogni evento di mouse e tastier
 
 1. Aggiungere il filtro azioni al metodo <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> del pacchetto di estensione.
 
-1. Compilare i file binari e copiarli in *%Programmi%\File comuni\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Compilare i file binari e copiarli in *%ProgramFiles%*.
 
 > [!NOTE]
 > Il filtro azioni non dipende dall'implementazione di accessibilità o dal provider di proprietà.
@@ -182,7 +182,7 @@ Il provider di proprietà e il filtro azioni vengono implementati in un pacchett
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Per eseguire il debug del provider di proprietà o del filtro azioni
 
-1. Compilare la versione di debug del pacchetto di estensione copiare i file con estensione *dll* e *pdb* in *%Programmi%\File comuni\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Compilare la versione di debug del pacchetto di estensione copiare i file *con estensione dll* e *pdb* in *%ProgramFiles%*.
 
 2. Eseguire l'applicazione (non nel debugger).
 

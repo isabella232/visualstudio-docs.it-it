@@ -16,58 +16,58 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633265"
 ---
 # <a name="msbuild-reference"></a>Riferimenti a MSBuild
 
-MSBuild è il sistema di compilazione di Visual Studio. I collegamenti seguenti portano ad argomenti che contengono informazioni di riferimento su MSBuild.
+MSBuild è il sistema di compilazione di Visual Studio. I collegamenti seguenti portano ad argomenti che contengono informazioni di riferimento su MSBuild.The following links lead to topics that contain MSBuild reference information.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)\
- Vengono descritti gli elementi XML che compongono il formato di file MSBuild.
+- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)\
+ Vengono descritti gli elementi XML che costituiscono il formato di file MSBuild.
 
-- [Attività MSBuild](../msbuild/msbuild-task-reference.md)\
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)\
  Vengono descritte alcune delle attività tipiche incluse in MSBuild.
 
 - [Condizioni](../msbuild/msbuild-conditions.md)\
- Descrive le condizioni disponibili nei file MSBuild.
+ Vengono descritte le condizioni disponibili nei file MSBuild.
 
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)\
  Descrive come usare gli elementi `Choose`, `When` e `Otherwise`.
 
-- [Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)\
- Descrive le proprietà riservate di MSBuild.
+- [Proprietà riservate e note di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)\
+ Vengono descritte le proprietà riservate di MSBuild.
 
-- [Proprietà del progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md)\
+- [Proprietà comuni del progetto MSBuildCommon MSBuild project properties](../msbuild/common-msbuild-project-properties.md)\
  Descrive le proprietà di progetto comuni a tutti i tipi di progetto e anche le proprietà usate spesso da determinati tipi di progetto.
 
-- [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)\
+- [Elementi di progetto MSBuild comuniCommon MSBuild project items](../msbuild/common-msbuild-project-items.md)\
  Descrive gli elementi di progetto comuni a tutti i tipi di progetto e anche gli elementi usati spesso da determinati tipi di progetto.
 
-- [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md)\
- Vengono descritti gli argomenti e le opzioni che possono essere utilizzati con MSBuild. exe.
+- [Informazioni di riferimento sulla riga di comando](../msbuild/msbuild-command-line-reference.md)\
+ Vengono descritti gli argomenti e le opzioni che possono essere utilizzati con MSBuild.exe.
 
-- [. File di destinazioni](../msbuild/msbuild-dot-targets-files.md)\
- Viene descritto *.* File di destinazione incluso in MSBuild.
+- [. File di destinazione](../msbuild/msbuild-dot-targets-files.md)\
+ Viene descritto il file *. Targets* file incluso in MSBuild.
 
-- [Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md)\
+- [Metadati degli elementi noti](../msbuild/msbuild-well-known-item-metadata.md)\
  Elenca i metadati creati con ogni elemento.
 
 - [File di risposta](../msbuild/msbuild-response-files.md)\
  Illustra i file con estensione *rsp* contenenti opzioni della riga di comando.
 
 - [Risorse aggiuntive](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
- Fornisce collegamenti a siti Web e newsgroup di MSBuild.
+ Vengono forniti collegamenti a siti Web e newsgroup MSBuild.
 
-- [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)\
- Contiene un riferimento a attività e destinazioni di MSBuild per Windows Presentation Foundation (WPF).
+- [Informazioni di riferimento su MSBuild WPFWPF MSBuild reference](../msbuild/wpf-msbuild-reference.md)\
+ Contiene una destinazione MSBuild e riferimenti alle attività per Windows Presentation Foundation (WPF).
 
-- [Caratteri speciali di escape](../msbuild/special-characters-to-escape.md)\
+- [Caratteri speciali per l'escape](../msbuild/special-characters-to-escape.md)\
  Elenca i caratteri che possono essere preceduti da un carattere di escape per essere interpretati correttamente. Una sequenza di escape è una serie di caratteri indicante che ciò che segue è un'interpretazione alternativa.
 
 ## <a name="see-also"></a>Vedere anche

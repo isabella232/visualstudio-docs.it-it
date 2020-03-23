@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ebc2da5e71dbdee13df4cf658f3681804879f58
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596931"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)
@@ -28,7 +28,7 @@ Per specificare le proprietà di configurazione avanzate della build del progett
 
 1. In **Esplora soluzioni** scegliere un nodo progetto, non il nodo **Soluzione**.
 
-2. Scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti**, fare clic sulla scheda **Compilazione**.
+2. Scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzato **Progettazione progetti,** fare clic sulla scheda **Compila.When** the Project Designer appears, click the Compile tab.
 
 3. Nella [Pagina Compilazione, Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) selezionare la **configurazione** e la **piattaforma**. Nelle configurazioni della build semplificate gli elenchi **Configurazione** e **Piattaforma** non vengono visualizzati. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
@@ -72,14 +72,14 @@ Per impostazione predefinita, questa casella di controllo è selezionata e speci
 
  **Costanti personalizzate**
 
-Immettere le costanti personalizzate per l'applicazione in questa casella di testo. Le voci devono essere delimitate da virgole usando questa forma: **Nome1="Valore1",Nome2="Valore2",Nome3="Valore3"** .
+Immettere le costanti personalizzate per l'applicazione in questa casella di testo. Le voci devono essere delimitate da virgole usando questa forma: **Nome1="Valore1",Nome2="Valore2",Nome3="Valore3"**.
 
 ## <a name="other-settings"></a>Altre impostazioni
 
 **Genera assembly di serializzazione**
 
-Questa impostazione specifica se il compilatore creerà assembly di serializzazione XML. Gli assembly di serializzazione possono migliorare le prestazioni di avvio della classe <xref:System.Xml.Serialization.XmlSerializer>, se è stata usata per serializzare i tipi nel codice. Il valore predefinito per questa opzione è **auto**. **Auto** specifica che gli assembly di serializzazione devono essere generati solo se si è usato <xref:System.Xml.Serialization.XmlSerializer> per codificare i tipi nel codice in XML. **Off** specifica che non saranno mai generati assembly di serializzazione, indipendentemente dal fatto che il codice usi o meno la classe <xref:System.Xml.Serialization.XmlSerializer>. **On** specifica che saranno sempre generati assembly di serializzazione. Gli assembly di serializzazione sono denominati `TypeName`.XmlSerializers.dll.
+Questa impostazione specifica se il compilatore creerà assembly di serializzazione XML. Gli assembly di serializzazione possono migliorare le prestazioni di avvio della classe <xref:System.Xml.Serialization.XmlSerializer>, se è stata usata per serializzare i tipi nel codice. Il valore predefinito per questa opzione è **Auto**. **Auto** specifica che gli assembly di serializzazione <xref:System.Xml.Serialization.XmlSerializer> devono essere generati solo se è stato utilizzato per codificare i tipi nel codice in XML. **Off** specifica che non saranno mai generati assembly di serializzazione, indipendentemente dal fatto che il codice usi o meno la classe <xref:System.Xml.Serialization.XmlSerializer>. **On** specifica che saranno sempre generati assembly di serializzazione. Gli assembly di serializzazione sono denominati `TypeName`.XmlSerializers.dll.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Pagina Compilazione, Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Pagina Compila, Progettazione progetti (Visual Basic)Compile Page, Project Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

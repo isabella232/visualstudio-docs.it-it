@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983444"
 ---
 # <a name="customizing-the-build-system"></a>Personalizzazione del sistema di compilazione
@@ -78,7 +78,7 @@ Il codice XML del PropertyGroup per una semplice applicazione console, ad esempi
 
 È possibile fare riferimento alle proprietà da espressioni che usano la sintassi `$()`. L'espressione `$(Foo)`, ad esempio, verrà valutata come valore della proprietà `Foo`. Se la proprietà non è stata impostata, verrà valutata come stringa vuota, senza alcun errore.
 
-#### <a name="items"></a>Elementi
+#### <a name="items"></a>Items
 
 Gli elementi consentono di gestire l'input nel sistema di compilazione sotto forma di elenchi o set e in genere rappresentano file. Ogni elemento ha un *tipo*, una *specifica*e *metadati* arbitrari facoltativi. Si noti che MSBuild non opera su elementi singoli, ma su tutti gli elementi di un tipo specifico, ovvero su un *set* di elementi.
 
@@ -103,5 +103,5 @@ Il frammento di codice seguente, ad esempio, crea le schermate di avvio di iOS. 
 
 Per approfondire le proprie conoscenze di MSBuild, è possibile usare le risorse seguenti:
 
-* [Panoramica di MSBuild](/visualstudio/msbuild/msbuild)
-* [Concetti relativi a MSBuild](/visualstudio/msbuild/msbuild-concepts)
+* [Cenni preliminari su MSBuild](/visualstudio/msbuild/msbuild)
+* [Concetti relativi a MSBuildMSBuild Concepts](/visualstudio/msbuild/msbuild-concepts)

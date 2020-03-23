@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113437"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedura: Creare manualmente un report di prestazioni di un test di carico usando Microsoft Word
@@ -30,7 +30,7 @@ ms.locfileid: "76113437"
 
 ## <a name="copy-summary-view-data"></a>Copiare i dati della visualizzazione Riepilogo
 
-1. Se in **Risultati test di carico** la visualizzazione Riepilogo non è attualmente visibile, fare clic su **Riepilogo** nella barra degli strumenti.
+1. In **Risultati test di carico**, se la visualizzazione di riepilogo non è attualmente visualizzata, fare clic su **Riepilogo** nella barra degli strumenti.
 
 2. Nella visualizzazione Riepilogo fare clic con il pulsante destro del mouse e scegliere **Seleziona tutto**.
 
@@ -42,7 +42,7 @@ ms.locfileid: "76113437"
 
 ## <a name="copy-graph-view-data"></a>Copiare i dati della visualizzazione Grafici
 
-1. Se in **Risultati test di carico** la visualizzazione Grafici non è attualmente visibile, scegliere **Grafici** nella barra degli strumenti.
+1. In **Risultati test**di carico , se la visualizzazione Grafici non è attualmente visualizzata, scegliere **Grafici** nella barra degli strumenti.
 
 2. (Facoltativo) Ingrandire il grafico specifico che si vuole copiare nel documento di Microsoft Word, come illustrato nella figura seguente. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 

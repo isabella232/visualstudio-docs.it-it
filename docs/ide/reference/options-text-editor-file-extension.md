@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596203"
 ---
 # <a name="options-text-editor-file-extension"></a>Opzioni, Editor di testo, Estensione file
@@ -28,17 +28,17 @@ La finestra di dialogo Opzioni consente di specificare il modo in cui tutti i fi
 
 Quando si seleziona un'opzione "con codifica", ogni volta che si apre un documento del tipo specifico viene visualizzata una finestra di dialogo che consente di selezionare uno schema di codifica per il documento. Ciò può rivelarsi utile se si preparano versioni dei documenti di progetto da usare in piattaforme diverse o con lingue di destinazione diverse.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 **Estensione**
 
 Digitare l'estensione di file di cui si vuole definire lo strumento di modifica nell'IDE.
 
-**Editor**
+**Editore**
 
 Selezionare la finestra di progettazione o l'editor dell'IDE in cui verranno aperti i documenti con l'estensione di file specificata. Quando si seleziona un'opzione "con codifica", ogni volta che si apre un documento di questo tipo viene visualizzata una finestra di dialogo che consente di selezionare uno schema di codifica.
 
-**Aggiungi**
+**Aggiungere**
 
 Aggiunge una voce che include l'**Estensione** e lo **Strumento di modifica** specificati all'elenco delle estensioni.
 

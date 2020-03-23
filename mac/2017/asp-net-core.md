@@ -7,10 +7,10 @@ ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984887"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
@@ -23,13 +23,13 @@ ms.locfileid: "74984887"
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Creazione di un'app ASP.NET Core in Visual Studio per Mac
 
-Aprire Visual Studio per Mac. Nella pagina iniziale selezionare **Nuovo progetto...** .
+Aprire Visual Studio per Mac. Nella pagina iniziale selezionare **Nuovo progetto...**.
 
 ![Finestra di dialogo Nuovo progetto](media/asp-net-core-image1.png)
 
 Verrà visualizzata la finestra di dialogo Nuovo progetto, che consente di selezionare un modello per la creazione dell'applicazione.
 
-Alcuni progetti offrono un modello predefinito utilizzabile per iniziare a creare l'applicazione ASP.NET Core. ovvero:
+Alcuni progetti offrono un modello predefinito utilizzabile per iniziare a creare l'applicazione ASP.NET Core. Si tratta di:
 
 - **.NET Core > Progetto ASP.NET Core vuoto**
 - **.NET Core > App Web ASP.NET Core**
@@ -64,7 +64,7 @@ public static void Main(string[] args)
 }
 ```
 
-Un'app ASP.NET Core crea un server Web nel metodo Main configurando e avviando un host tramite un'istanza di [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
+Un'app ASP.NET Core crea un server Web nel relativo metodo [`WebHostBuilder`](/aspnet/core/fundamentals/hosting)principale configurando e avviando un host tramite un'istanza di . Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
 
 * `UseKestrel`: specifica il server Kestrel che verrà usato dall'app
 * `UseContentRoot(Directory.GetCurrentDirectory())`: usa la cartella radice del progetto Web come radice del contenuto dell'app quando quest'ultima viene avviata da questa cartella
@@ -167,7 +167,7 @@ Per aggiungere un controller, eseguire le operazioni seguenti:
     }
     ```
 
-3. Aggiungere la dipendenza `Microsoft.AspNetCore.Mvc` al progetto facendo clic con il pulsante destro del mouse sulla cartella **Dependency** (Dipendenza) e selezionando **Aggiungi pacchetto...** .
+3. Aggiungere la dipendenza `Microsoft.AspNetCore.Mvc` al progetto facendo clic con il pulsante destro del mouse sulla cartella **Dependency** (Dipendenza) e selezionando **Aggiungi pacchetto... **.
 
 4. Usare la casella di ricerca per cercare `Microsoft.AspNetCore.Mvc` all'interno della libreria NuGet e selezionare **Aggiungi pacchetto**. L'installazione potrebbe richiedere alcuni minuti e potrebbe essere richiesto di accettare diverse licenze per le dipendenze necessarie:
 
@@ -230,11 +230,11 @@ Se è necessario installare manualmente .NET Core in Mac OS 10.11 (El Capitan) e
 
 Per installare correttamente .NET Core, assicurarsi che tutti i quattro passaggi vengano completati in modo appropriato.
 
-## <a name="summary"></a>Riepilogo
+## <a name="summary"></a>Summary
 
 Questa guida offre un'introduzione ad ASP.NET Core. Descrive che cos'è e quando usarlo e fornisce informazioni per l'uso in Visual Studio per Mac.
 Per altre informazioni sui passaggi successivi, fare riferimento alle guide seguenti:
-- Documentazione di [ASP.NET Core](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc).
+- ASP.NET documenti [principali.](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc)
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Creazione di servizi back-end per applicazioni per dispositivi mobili native), che illustra come creare un servizio REST tramite ASP.NET Core per un'app Xamarin.Forms.
 - [ASP.NET Core hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) (Esercitazione pratica su ASP.NET Core).
 

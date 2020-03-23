@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cbe4bc3f982ae18b9f85fe8bf5c21495c98beee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76112548"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Procedura: configurare progetti per le piattaforme di destinazione
 
-Visual Studio consente di configurare le applicazioni per diverse piattaforme di destinazione, tra cui le piattaforme a 64 bit. Per altre informazioni sul supporto delle piattaforme a 64 bit in Visual Studio, vedere [Applicazioni a 64 bit](/dotnet/framework/64-bit-apps).
+Visual Studio consente di configurare le applicazioni per diverse piattaforme di destinazione, tra cui le piattaforme a 64 bit. Per ulteriori informazioni sul supporto della piattaforma a 64 bit in Visual Studio, vedere [Applicazioni a 64 bit](/dotnet/framework/64-bit-apps).
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>Individuazione delle piattaforme di destinazione con Gestione configurazione
 
@@ -35,13 +35,13 @@ La **Gestione configurazione** consente di aggiungere rapidamente una nuova piat
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Per configurare un progetto per una piattaforma a 64 bit
 
-1. Nella barra dei menu scegliere **Compilazione** > **Gestione configurazione**.
+1. Nella barra dei menu scegliere **Gestione configurazione compilazione** > **Configuration Manager**.
 
 2. Nell'elenco **Piattaforma soluzione attiva** scegliere una piattaforma a 64 bit di destinazione per la soluzione e quindi scegliere il pulsante **Chiudi**.
 
-    1. Se la piattaforma non compare nell'elenco **Piattaforma soluzione attiva**, scegliere **Nuovo**.
+    1. Se la piattaforma desiderata non viene visualizzata nell'elenco **Piattaforma soluzione attiva,** scegliere **Nuovo**.
 
-         Viene visualizzata la finestra di dialogo **Nuova piattaforma soluzione**.
+         Verrà visualizzata la finestra di dialogo **Nuova piattaforma soluzione**.
 
     2. Nell'elenco **Digitare o selezionare la nuova piattaforma** scegliere **x64**.
 
@@ -50,13 +50,13 @@ La **Gestione configurazione** consente di aggiungere rapidamente una nuova piat
 
     3. Se si vuole copiare le impostazioni da una configurazione di piattaforma corrente, selezionarla e quindi fare clic sul pulsante **OK**.
 
-Le proprietà per tutti i progetti destinati alla piattaforma a 64 bit vengono aggiornate e la compilazione successiva del progetto verrà ottimizzata per le piattaforme a 64 bit.
+Le proprietà per tutti i progetti destinati alla piattaforma a 64 bit vengono aggiornate e la compilazione successiva del progetto verrà ottimizzata per le piattaforme a 64 bit. 
 
 ## <a name="target-platforms-in-the-project-designer"></a>Individuazione delle piattaforme di destinazione in Progettazione progetti
 
 Anche **Progettazione progetti** consente di creare diverse piattaforme di destinazione per il progetto. Se la selezione di una delle piattaforme incluse nell'elenco della finestra di dialogo **Nuova piattaforma soluzione** non è applicabile alla soluzione, è possibile creare un nome di configurazione personalizzato e modificare le impostazioni in **Creazione progetti** per la piattaforma di destinazione corretta.
 
-L'esecuzione di questa attività varia in base al linguaggio di programmazione usato. Per altre informazioni, accedere ai collegamenti seguenti:
+L'esecuzione di questa attività varia in base al linguaggio di programmazione usato. Per altre informazioni, vedere i collegamenti seguenti:
 
 - Per i progetti [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], vedere [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
@@ -68,7 +68,7 @@ L'esecuzione di questa attività varia in base al linguaggio di programmazione u
 
 In alcuni casi è necessario modificare manualmente il file di progetto per applicare una configurazione personalizzata. Un esempio è la presenza di condizioni che non possono essere specificate nell'IDE, ad esempio un riferimento diverso per due piattaforme differenti, come nell'esempio seguente.
 
-### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Esempio: riferimento a assembly e dll x86 e x64
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Esempio: riferimento ad assembly x86 e x64 e DLL
 
 Potrebbe essere disponibile un assembly o una DLL .NET con entrambe le versioni x86 e x64. Per configurare il progetto in modo da usare questi riferimenti, aggiungere prima di tutto il riferimento, quindi aprire il file di progetto e modificarlo per aggiungere un `ItemGroup` con una condizione che fa riferimento sia alla configurazione che alla piattaforma di destinazione.  Si supponga, ad esempio, che il file binario a cui si fa riferimento sia ClassLibrary1 e che ci siano percorsi diversi per le configurazioni di debug e di versione, nonché per le versioni x86 e x64.  Usare quindi quattro elementi `ItemGroup` con tutte le combinazioni di impostazioni, come indicato di seguito:
 

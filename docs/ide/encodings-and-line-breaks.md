@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588590"
 ---
 # <a name="encodings-and-line-endings"></a>Codifiche e interruzioni di riga
@@ -44,14 +44,14 @@ Quando si apre un file con caratteri di interruzione di riga diversi, è possibi
 
 ## <a name="advanced-save-options"></a>Opzioni di salvataggio avanzate
 
-È possibile usare la finestra di dialogo **File** > **Opzioni di salvataggio avanzate** per determinare il tipo di caratteri di interruzione di riga desiderati. Con le stesse impostazioni è anche possibile modificare la codifica di un file.
+È possibile utilizzare la finestra di dialogo Opzioni di**salvataggio avanzate** **file** > per determinare il tipo di caratteri di interruzione di riga desiderati. Con le stesse impostazioni è anche possibile modificare la codifica di un file.
 
-![Finestra di dialogo Opzioni di salvataggio avanzate](media/line_endings.png)
+![Opzioni di salvataggio avanzate - finestra di dialogo](media/line_endings.png)
 
 > [!NOTE]
-> Se il comando **Opzioni di salvataggio avanzate** non è disponibile nel menu **File**, è possibile aggiungerlo. Scegliere **strumenti**, **Personalizza**, quindi fare clic sulla scheda **comandi** . Nell'elenco a discesa **barra dei menu** scegliere **file**, quindi fare clic sul pulsante **Aggiungi comando** . Nella finestra di dialogo **Aggiungi comando**, in **Categorie** scegliere **File** e quindi nell'elenco **Comandi** scegliere  **Opzioni di salvataggio avanzate**. Scegliere **OK** , quindi scegliere il pulsante **Sposta giù** per spostare il comando in qualsiasi posizione nel menu. Scegliere **Chiudi** per chiudere la finestra di dialogo **Personalizza**. Per altre informazioni, vedere [Personalizzazione di un menu o di una barra degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Se il comando **Opzioni di salvataggio avanzate** non è disponibile nel menu **File**, è possibile aggiungerlo. Scegliere **Strumenti**, **Personalizza**, quindi scegliere la scheda **Comandi.** Nell'elenco a discesa **Barra dei menu** scegliere **File**, quindi scegliere il pulsante **Aggiungi comando.** Nella finestra di dialogo **Aggiungi comando**, in **Categorie** scegliere **File** e quindi nell'elenco **Comandi** scegliere ** Opzioni di salvataggio avanzate**. Scegliere **OK** e quindi scegliere il pulsante **Sposta giù** per spostare il comando in qualsiasi posizione nel menu. Scegliere **Chiudi** per chiudere la finestra di dialogo **Personalizza**. Per altre informazioni, vedere [Personalizzazione di un menu o di una barra degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> In alternativa, è possibile accedere alla finestra di dialogo **Opzioni di salvataggio avanzate** scegliendo **File** > **Salva \<file\> con nome**. Nella finestra di dialogo **Salva file con nome** scegliere la freccia a discesa accanto al pulsante **Salva** e scegliere **Salva con codifica**.
+> In alternativa, è possibile accedere alla finestra di dialogo Opzioni di **salvataggio avanzate** scegliendo **Salva** > ** \<\> file con nome**. Nella finestra di dialogo **Salva file con nome** scegliere la freccia a discesa accanto al pulsante **Salva** e scegliere **Salva con codifica**.
 
 ## <a name="see-also"></a>Vedere anche
 

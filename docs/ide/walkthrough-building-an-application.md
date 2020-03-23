@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115403"
 ---
 # <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Compilare un'applicazione
@@ -35,19 +35,19 @@ Quando si crea una soluzione, le configurazioni della build di versione e di deb
 
    ![Menu Compila, comando Gestione configurazione](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Nell'elenco **Configurazione soluzione attiva** scegliere **\<Nuova...\>** .
+1. Nell'elenco **Configurazione soluzione attiva** scegliere ** \<Nuovo... \>**.
 
 1. Nella finestra di dialogo **Nuova configurazione soluzione** assegnare il nome `Test` alla nuova configurazione, copiare le impostazioni dalla configurazione **Debug** esistente e quindi scegliere **OK**.
 
    ![Finestra di dialogo Nuova configurazione soluzione](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Nell'elenco **Piattaforma soluzione attiva** scegliere **\<Nuova...\>** .
+1. Nell'elenco **Piattaforma soluzione attiva** scegliere **\<Nuova...\>**.
 
-1. Nella finestra di dialogo **Nuova piattaforma soluzione** scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.
+1. Nella finestra di dialogo **Nuova piattaforma soluzione** scegliere **x64**e non copiare le impostazioni dalla piattaforma x86.
 
    ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk_newsolutionplatform.png)
 
-1. Fare clic sul pulsante **OK** .
+1. Fare clic su **OK** .
 
    La configurazione della soluzione attiva è stata modificata in **Test** con la piattaforma della soluzione attiva impostata su x64.
 
@@ -65,7 +65,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
 ### <a name="build-the-solution"></a>Compilare la soluzione
 
-- Nella barra dei menu scegliere **compila** > **Compila soluzione**oppure premere **CTRL**+**MAIUSC**+**B**.
+- Nella barra dei menu scegliere **Compila** > **soluzione**oppure premere **CTRL**+**MAIUSC B**+**B**.
 
     Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione è stata completata.
 
@@ -75,11 +75,11 @@ A questo punto viene presentata la parte del codice che determina un avviso gene
 
 1. Nel progetto C# aprire il file *ExpenseReportPage.xaml.cs*. Nel metodo **ExpenseReportPage** aggiungere il codice seguente: `int i;`.
 
-    OPPURE
+    o
 
-    Nel progetto Visual Basic aprire il file *ExpenseReportPage.xaml.vb*. Nel costruttore personalizzato **Public Sub New...**  aggiungere il codice seguente: `Dim i`.
+    Nel progetto Visual Basic aprire il file *ExpenseReportPage.xaml.vb*. Nel costruttore personalizzato **Public Sub New... ** aggiungere il codice seguente: `Dim i`.
 
-1. Compila la soluzione.
+1. Compilare la soluzione.
 
 Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione è stata completata, ma sono stati generati avvisi:
 
@@ -93,7 +93,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.
 
-1. Sulla barra dei menu scegliere **Visualizza** > **Pagine delle proprietà**.
+1. Nella barra dei menu scegliere **Visualizza** > **pagine delle proprietà.**
 
      Si apre la finestra **Creazione progetti**.
 
@@ -103,7 +103,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
      Per altre informazioni, vedere [Pagina Compilazione, Creazione progetti (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
-1. Compila la soluzione.
+1. Compilare la soluzione.
 
      Nella finestra **Output** vengono visualizzate solo le informazioni di riepilogo per la compilazione.
 
@@ -113,7 +113,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.
 
-2. Sulla barra dei menu scegliere **Visualizza** > **Pagine delle proprietà**.
+2. Nella barra dei menu scegliere **Visualizza** > **pagine delle proprietà.**
 
      Si apre la finestra **Creazione progetti**.
 
@@ -123,7 +123,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
      Per altre informazioni, vedere [Configurare gli avvisi in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
-4. Compila la soluzione.
+4. Compilare la soluzione.
 
    Nella finestra **Output** vengono visualizzate solo le informazioni di riepilogo per la compilazione.
 
@@ -148,15 +148,15 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere **Normale** e quindi **OK**.
 
-1. Nella barra dei menu scegliere **Compilazione** > **Pulisci soluzione**.
+1. Nella barra dei menu scegliere **Compila** > **soluzione pulita**.
 
 1. Compilare la soluzione e quindi esaminare le informazioni nella finestra **Output**.
 
      Le informazioni sulla compilazione includono l'ora di inizio della compilazione (indicata all'inizio) e l'ordine in cui i file sono stati elaborati. Queste informazioni includono anche la sintassi del compilatore effettiva che Visual Studio esegue durante la compilazione.
 
-     Ad esempio, nella C# compilazione, l'opzione [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) elenca il codice di avviso, **0168**, specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
+     Ad esempio, nella compilazione in C, l'opzione [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) elenca il codice di avviso, **0168**, specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
 
-     Nella compilazione di Visual Basic [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) non include avvisi specifici da escludere, pertanto non viene visualizzato alcun avviso.
+     Nella build di Visual Basic/ [nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) non include avvisi specifici da escludere, pertanto non vengono visualizzati avvisi.
 
     > [!TIP]
     > È possibile cercare il contenuto della finestra **Output** se si visualizza la finestra di dialogo **Trova** scegliendo i tasti **CTRL**+**F**.
@@ -186,7 +186,7 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
      Ad esempio, è possibile specificare `\\myserver\builds`.
 
     > [!IMPORTANT]
-    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere il pulsante **OK** nella finestra di messaggio.
+    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere **il** OK pulsante nella finestra di messaggio.
 
 1. Compilare l'applicazione.
 
@@ -209,7 +209,7 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
      Ad esempio è possibile specificare `\\myserver\builds`.
 
     > [!IMPORTANT]
-    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere il pulsante **OK** nella finestra di messaggio.
+    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere **il** OK pulsante nella finestra di messaggio.
 
 1. Nella **barra degli strumenti Standard** impostare le opzioni Configurazioni soluzione su **Release** e Piattaforme soluzione su **x86**.
 
@@ -219,7 +219,7 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
 
    Il file eseguibile viene copiato nel percorso di rete specificato. Il percorso corrispondente sarà `\\myserver\builds\\FileName.exe`.
 
-La procedura è stata completata. Questa procedura dettagliata è stata completata correttamente.
+Congratulazioni! Questa procedura dettagliata è stata completata correttamente.
 
 ## <a name="see-also"></a>Vedere anche
 

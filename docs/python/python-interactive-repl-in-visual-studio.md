@@ -11,15 +11,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409958"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302763"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Usare la finestra interattiva di Python
 
-In Visual Studio è disponibile una finestra REPL (Read-Evaluate-Print Loop) per ogni ambiente Python, che costituisce un miglioramento rispetto alla funzionalità REPL disponibile con *python.exe* dalla riga di comando. La finestra **interattiva** (che si apre con i comandi di menu **Visualizza** > **Altre finestre** >  **&lt;Ambiente&gt; interattivo**) consente di immettere codice Python arbitrario e visualizzare risultati immediati. Questo modo di generare codice consente di imparare e sperimentare con API e librerie e sviluppare in modo interattivo codice funzionante da includere nei propri progetti.
+In Visual Studio è disponibile una finestra REPL (Read-Evaluate-Print Loop) per ogni ambiente Python, che costituisce un miglioramento rispetto alla funzionalità REPL disponibile con *python.exe* dalla riga di comando. La finestra **interattiva** (che si apre con i comandi di menu **Visualizza** > **Altre finestre** > **&lt;Ambiente&gt; interattivo**) consente di immettere codice Python arbitrario e visualizzare risultati immediati. Questo modo di generare codice consente di imparare e sperimentare con API e librerie e sviluppare in modo interattivo codice funzionante da includere nei propri progetti.
 
 ![Finestra interattiva di Python](media/interactive-window.png)
 
@@ -34,17 +34,17 @@ In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 
 Questo articolo descrive le modalità REPL **Standard** e **Debug**. Per informazioni dettagliate sulle modalità IPython, vedere [Usare la finestra REPL in modalità IPython](interactive-repl-ipython.md).
 
-Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come **CTRL**+**INVIO**, vedere [Esercitazione - Passaggio 3: Uso della finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
+Per una procedura dettagliata con esempi, incluse le interazioni con l'editor, ad esempio **CTRL**+**INVIO**, vedere [Passaggio 3: Utilizzare la finestra REPL interattiva](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 ## <a name="open-an-interactive-window"></a>Aprire una finestra interattiva
 
 È possibile aprire la finestra **interattiva** per un ambiente in diversi modi.
 
-Passare prima alla finestra Ambienti Python (**Visualizza** > **Altre finestre** > **Ambienti Python** oppure premere **CTRL**+**K** > **CTRL**+ **`** ) e selezionare il comando o il pulsante **Apri finestra interattiva** per l'ambiente desiderato.
+Per prima cosa, passa alla finestra Ambienti Python **(Visualizza** > **altri** > ambienti Windows**Python** o **Ctrl**+**K** > **Ctrl**+**`**) e seleziona il comando apri finestra **interattiva** o il pulsante per un ambiente scelto.
 
 ![Collegamento Finestra interattiva nella finestra Ambienti Python](media/interactive-window-opening.png)
 
-In seguito, nella parte inferiore del menu **Visualizza** > **Altre finestre** è presente un comando **Finestra Python interattivo** per l'ambiente predefinito oltre a un comando per passare alla finestra degli **ambienti**:
+In secondo luogo, nella parte inferiore del menu **Visualizza** > **altre finestre,** è disponibile un comando Finestra **interattiva Python** per l'ambiente predefinito, nonché un comando per passare alla finestra **Ambienti:**
 
 ![Voci di menu relative alla finestra interattiva in Visualizza > Altre finestre](media/interactive-window-menu.png)
 
@@ -62,14 +62,14 @@ In seguito, nella parte inferiore del menu **Visualizza** > **Altre finestre** �
 
 ## <a name="use-the-interactive-window"></a>Usare la finestra Interattiva
 
-Dopo aver aperto la finestra **interattiva**, è possibile iniziare a immettere codice riga per riga al prompt dei comandi di **\>\>\>** . La finestra **interattiva** esegue ogni riga non appena viene immessa, incluse le operazioni di importazione di moduli, definizione di variabili e così via:
+Una volta aperta la finestra **interattiva,** è possibile iniziare ** \> \> ** a immettere il codice riga per riga al prompt. La finestra **Interattiva** esegue ogni riga durante l'immissione, inclusi l'importazione di moduli, la definizione di variabili e così via:
 
 ![Finestra interattiva di Python](media/interactive-window.png)
 
-L'eccezione si verifica quando sono necessarie righe di codice aggiuntivo per creare un'istruzione completa, ad esempio quando un'istruzione `for` termina con i due punti, come illustrato in precedenza. In questi casi, il prompt della riga diventa **...** , per indicare che è necessario immettere altre righe per il blocco, come illustrato nella quarta e nella quinta riga della figura precedente. Quando si preme **INVIO** in una riga vuota, la finestra **interattiva** chiude il blocco e lo esegue nell'interprete.
+L'eccezione si verifica quando sono necessarie righe di codice aggiuntivo per creare un'istruzione completa, ad esempio quando un'istruzione `for` termina con i due punti, come illustrato in precedenza. In questi casi, il prompt della riga diventa **...**, per indicare che è necessario immettere altre righe per il blocco, come illustrato nella quarta e nella quinta riga della figura precedente. Quando si preme **INVIO** in una riga vuota, la finestra **interattiva** chiude il blocco e lo esegue nell'interprete.
 
 > [!Tip]
-> La finestra **interattiva** costituisce un miglioramento rispetto all'esperienza REPL di Python dalla riga di comando in quanto imposta automaticamente un rientro per le istruzioni che appartengono a un ambito circostante. La relativa cronologia (richiamata con la freccia su) visualizza inoltre elementi su più righe, mentre la riga di comando REPL visualizza solo singole righe.
+> La finestra **interattiva** migliora la solita esperienza REPL della riga di comando Python applicando automaticamente il rientro delle istruzioni che appartengono a un ambito circostante. La relativa cronologia (richiamata con la freccia su) visualizza inoltre elementi su più righe, mentre la riga di comando REPL visualizza solo singole righe.
 
 <a name="meta-commands"></a> La finestra **interattiva** supporta anche diversi metacomandi. Tutti i metacomandi iniziano con `$` ed è possibile digitare `$help` per ottenere un elenco dei metacomandi oppure `$help <command>` per ottenere i dettagli relativi all'utilizzo di un comando specifico.
 
@@ -104,10 +104,10 @@ Oltre a lavorare direttamente nella finestra **interattiva**, è possibile selez
 
 ![Comando di menu Invia a finestra interattiva](media/interactive-send-to.png)
 
-Questo comando è utile per lo sviluppo di codice iterativo o evolutivo, tra cui il test del codice durante lo sviluppo. Dopo aver inviato una parte di codice alla finestra **interattiva** e averne visualizzato l'output, è ad esempio possibile premere il tasto freccia SU per visualizzare di nuovo il codice, modificarlo e testarlo rapidamente premendo **CTRL**+**INVIO**. (Premendo **invio** alla fine dell'input viene eseguito, ma premendo **invio** al centro di input viene inserita una nuova riga). Una volta ottenuto il codice desiderato, è possibile copiarlo di nuovo nel file di progetto.
+Questo comando è utile per lo sviluppo di codice iterativo o evolutivo, tra cui il test del codice durante lo sviluppo. Ad esempio, dopo aver inviato una parte di codice alla finestra **interattiva** e ne è stato visto l'output, è possibile premere la freccia su per visualizzare nuovamente il codice, modificarlo e testarlo rapidamente premendo **CTRL**+**INVIO**. (Premendo **Invio** alla fine dell'input viene eseguito, ma premendo **Invio** nel mezzo dell'input si inserisce una nuova riga.) Una volta che hai il codice che desideri, puoi facilmente copiarlo di nuovo nel file di progetto.
 
 > [!Tip]
-> Per impostazione predefinita, Visual Studio rimuove **>>>** e **...** REPL richiede quando si incolla il codice dalla finestra **interattiva** nell'editor. È possibile modificare questo comportamento nella scheda **Strumenti** > **Opzioni** > **Editor di testo** > **Python** > **Avanzate** usando l'opzione **L'operazione Incolla rimuove i prompt REPL**. Vedere [Opzioni - Miscellaneous options (Opzioni varie)](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Per impostazione predefinita, Visual Studio rimuove **>>>** e **...** REPL richiede quando si incolla il codice dalla finestra **interattiva** nell'editor. È possibile modificare questo comportamento **nella** > scheda**Strumenti** > **Opzioni Editor** > di testo**Python** > **Avanzate** utilizzando l'opzione Incolla rimuove i **prompt REPL.** Vedere [Opzioni - Opzioni varie](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
@@ -115,7 +115,7 @@ Questo comando è utile per lo sviluppo di codice iterativo o evolutivo, tra cui
 
 Le celle di codice possono essere usate nell'analisi dei dati e sono supportate da un'ampia gamma di editor di testo.
 
-Ad esempio, quando si usa un file di codice come un'area dei file temporanei, spesso si ha un piccolo blocco di codice che si vuole inviare in una sola volta. Per raggruppare il codice, contrassegnare il codice come una *cella codice* aggiungendo un commento che inizia con `#%%` all'inizio della cella, che termina quella precedente. Le celle di codice possono essere compresse ed espanse e l'uso di **CTRL**+**INVIO** all'interno di una cella di codice invia l'intera cella alla finestra **interattiva** e passa alla successiva.
+Ad esempio, quando si usa un file di codice come un'area dei file temporanei, spesso si ha un piccolo blocco di codice che si vuole inviare in una sola volta. Per raggruppare il codice, contrassegnare il codice come una *cella codice* aggiungendo un commento che inizia con `#%%` all'inizio della cella, che termina quella precedente. Le celle di codice possono essere compresse ed espanse e l'utilizzo di **CTRL**+**INVIO** all'interno di una cella di codice invia l'intera cella alla finestra **interattiva** e passa a quella successiva.
 
 Visual Studio rileva anche le celle di codice a partire da commenti come `# In[1]:`, che è il formato visualizzato quando si esporta un blocco appunti Jupyter come file Python. Questo rilevamento semplifica l'esecuzione di un notebook da [Azure Notebooks](https://notebooks.azure.com/) scaricandolo come file Python, aprendolo in Visual Studio e usando **CTRL**+**INVIO** per eseguire ogni cella.
 
@@ -125,4 +125,4 @@ Visual Studio rileva anche le celle di codice a partire da commenti come `# In[1
 
 La finestra **interattiva** include la funzionalità IntelliSense basata su oggetti attivi, a differenza dell'editor del codice in cui IntelliSense è basato solo sull'analisi del codice sorgente. Questi suggerimenti risultano più corretti nella finestra **interattiva**, in particolare con codice generato dinamicamente. Può però capitare che funzioni con effetti collaterali, ad esempio la registrazione di messaggi, influiscano negativamente sull'esperienza di sviluppo.
 
-Se questo comportamento costituisce un problema, modificare le impostazioni in **Strumenti** > **Opzioni** > **Python** > **Finestre interattive** nel gruppo **Modalità di completamento**, come descritto in [Opzioni della finestra interattiva](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Se questo comportamento è un problema, modificare le impostazioni in **Strumenti** > **Opzioni Python** > **Python** > Finestre**interattive** nel gruppo **Modalità di completamento,** come descritto in Opzioni - Opzioni di Windows [interattive](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

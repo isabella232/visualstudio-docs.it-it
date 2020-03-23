@@ -7,19 +7,19 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.openlocfilehash: 717eb9cd58f213c3d2c31a18c546a83ab8feb645
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984024"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio per Mac protetto da un firewall o un server proxy
 
 Se un utente o un'organizzazione usa misure di sicurezza, come un firewall o un server proxy, è possibile che vi siano domini da aggiungere a un elenco di indirizzi consentiti, così come porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio per Mac e dei servizi di Azure.
 
-- [**Installare Visual Studio per Mac**](#install-visual-studio-for-mac): queste tabelle includono i domini che devono consentire la connettività, in modo da poter accedere a tutte le funzionalità e i carichi di lavoro di Visual Studio per Mac.
+- [**Installare Visual Studio per Mac:**](#install-visual-studio-for-mac)queste tabelle includono i domini che devono consentire la connettività in modo da avere accesso a tutte le funzionalità e i carichi di lavoro di Visual Studio per Mac.Install Visual Studio for Mac : These tables include the domains that must allow connectivity so that you have access to all features and workloads of Visual Studio for Mac.
 
-- [**Usare Visual Studio per Mac**](#use-visual-studio-for-mac): queste tabelle includono domini che devono consentire la connettività, in modo da poter accedere alle funzionalità correlate.
+- [**Usa Visual Studio per Mac:**](#use-visual-studio-for-mac)queste tabelle includono domini che devono consentire la connettività in modo da avere accesso alle funzionalità correlate.
 
 ## <a name="install-visual-studio-for-mac"></a>Installare Visual Studio per Mac
 
@@ -47,7 +47,7 @@ Poiché il programma di installazione di Visual Studio per Mac esegue il downloa
 | Dominio| Scopo |
 | --------------------------|-------------------------|
 | dl.google.com | Android SDK |
-| download.oracle.com | Java SDK|
+| download.oracle.com | SDK per Java|
 | api.apple-cloudkit.com| Servizi di sicurezza Apple |
 
 ## <a name="use-visual-studio-for-mac"></a>Usare Visual Studio per Mac
@@ -56,7 +56,7 @@ Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual S
 
 ### <a name="general"></a>Generale
 
-| Dominio | Porta/e|Scopo|
+| Dominio | Porte|Scopo|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Risoluzione degli URL Microsoft |
 | vsstartpage.blob.core.windows.net| 80/443| Dati della pagina iniziale|
@@ -65,9 +65,9 @@ Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual S
 | visualstudio-devdiv-c2s.msedge.net | 80/443| Notifiche e funzionalità sperimentali |
 | targetednotifications.azurewebsites.net|  80/443| Usato per filtrare un elenco globale delle notifiche in un elenco applicabile solo a specifici tipi di computer/scenari di utilizzo|
 
-### <a name="identity"></a>Identity
+### <a name="identity"></a>Identità
 
-| Dominio | Porta/e|Scopo|
+| Dominio | Porte|Scopo|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| Provider di identità|
 | secure.aadcdn.microsoftonline-p.com | 80/443|Provider di identità|
@@ -76,7 +76,7 @@ Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual S
 
 ### <a name="nuget"></a>NuGet
 
-| Dominio | Porta/e|Scopo|
+| Dominio | Porte|Scopo|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|API NuGet|
 | secure.aadcdn.microsoftonline-p.com |80/443| Provider di identità|

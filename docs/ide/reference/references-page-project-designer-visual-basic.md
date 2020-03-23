@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565604"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
@@ -28,7 +28,7 @@ Usare la pagina **Riferimenti** di **Creazione progetti** per gestire riferiment
 
 Per accedere alla pagina **Riferimenti**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere **Progetto**, **Proprietà** sulla barra dei menu. Quando viene visualizzata la finestra Progettazione progetti fare clic sulla scheda **Riferimenti**.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 Le opzioni seguenti consentono di selezionare o rimuovere riferimenti e spazi dei nomi importati del progetto.
 
@@ -48,7 +48,7 @@ Fare clic su questo pulsante per accedere alla finestra di dialogo **Percorsi ri
 
 Questo elenco visualizza tutti i riferimenti del progetto, utilizzati o inutilizzati.
 
- **Aggiungi**
+ **Aggiungere**
 
 Fare clic su questo pulsante per aggiungere un riferimento o un riferimento Web all'elenco **Riferimenti**.
 
@@ -68,7 +68,7 @@ Selezionare un riferimento Web nell'elenco **Riferimenti** e fare clic su questo
 
 È possibile digitare il proprio spazio dei nomi in questa casella e fare clic su **Aggiungi importazione utente** per aggiungerlo all'elenco degli spazi dei nomi.
 
-È possibile creare alias per gli spazi dei nomi importati dall'utente. A tale scopo, immettere l'alias e lo spazio dei nomi nel formato *alias*=*spazio dei nomi*. Questa operazione è utile se si usano spazi dei nomi lunghi, ad esempio `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+È possibile creare alias per gli spazi dei nomi importati dall'utente. A tale scopo, immettere l'alias e lo spazio dei nomi nello spazio dei nomi *dell'alias*=*namespace*di formato . Questa operazione è utile se si usano spazi dei nomi lunghi, ad esempio `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Aggiungi importazione utente**
 
@@ -91,5 +91,5 @@ Selezionare uno spazio dei nomi specificato dall'utente nell'elenco degli spazi 
 ## <a name="see-also"></a>Vedere anche
 
 - [Gestione dei riferimenti in un progetto](../../ide/managing-references-in-a-project.md)
-- [Procedura: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Procedura: aggiungere o rimuovere spazi dei nomi importati (Visual Basic)How to: Add or Remove Imported Namespaces (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Istruzione Imports (spazio dei nomi XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

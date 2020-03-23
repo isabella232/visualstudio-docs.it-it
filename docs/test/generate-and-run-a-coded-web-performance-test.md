@@ -15,15 +15,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589578"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generare ed eseguire un test delle prestazioni Web codificato
 
-I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'applicazione Web. I test vengono inclusi nei test di carico per misurare le prestazioni dell'applicazione Web quando utilizzata da più utenti. Un test delle prestazioni Web può essere convertito in uno script basato su codice che è possibile modificare e personalizzare come qualsiasi altro codice sorgente. Ad esempio, è possibile aggiungere costrutti di ciclo e di creazione di rami.
+I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app Web. I test vengono inclusi nei test di carico per misurare le prestazioni dell'applicazione Web quando viene usata da molteplici utenti. Un test delle prestazioni Web può essere convertito in uno script basato su codice che è possibile modificare e personalizzare come qualsiasi altro codice sorgente. Ad esempio, è possibile aggiungere costrutti di ciclo e di creazione di rami.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -85,7 +85,7 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'appl
 ## <a name="qa"></a>Domande e risposte
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>D: È possibile eseguire più test contemporaneamente?
-**R:** Sì, fare clic con il pulsante destro del mouse sul menu di scelta rapida in **Esplora soluzioni**.
+**A:** Sì, utilizzare il menu di scelta rapida (contesto) in **Esplora soluzioni**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>D: È necessario aggiungere un'origine dati prima o dopo avere generato un test codificato?
 **R:** È più semplice aggiungere un'[origine dati](../test/add-a-data-source-to-a-web-performance-test.md) prima di generare il test codificato, perché il codice verrà generato automaticamente.

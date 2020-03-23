@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634409"
 ---
 # <a name="compare-properties-and-items"></a>Confrontare proprietà ed elementi
 
 Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.
 
-- Le proprietà sono coppie nome-valore. Per altre informazioni, vedere [Proprietà di MSBuild](../msbuild/msbuild-properties.md).
+- Le proprietà sono coppie nome-valore. Per ulteriori informazioni, vedere [Proprietà MSBuild](../msbuild/msbuild-properties.md).
 
-- Gli elementi sono oggetti che rappresentano in genere i file. Agli oggetti elemento possono essere associate raccolte di metadati. I metadati sono coppie nome-valore. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+- Gli elementi sono oggetti che rappresentano in genere i file. Agli oggetti elemento possono essere associate raccolte di metadati. I metadati sono coppie nome-valore. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
 ## <a name="scalars-and-vectors"></a>Valori scalari e vettori
 
@@ -127,7 +127,7 @@ Nella fase di valutazione di una build la valutazione delle proprietà precede l
 </Target>
 ```
 
-Eseguendo l'attività Messaggio viene visualizzato il messaggio seguente:
+Eseguendo l'attività Message viene visualizzato il messaggio seguente:
 
 ```
 KeyFileVersion: 1.0.0.3
@@ -155,7 +155,7 @@ Come secondo esempio considerare cosa può accadere quando i gruppi di propriet�
 </Target>
 ```
 
-L'attività Messaggio visualizza il messaggio seguente:
+L'attività Message visualizza il messaggio seguente:
 
 ```
 KeyFileVersion:
@@ -179,7 +179,7 @@ In questo caso, invertendo l'ordine dei gruppi di proprietà ed elemento è poss
 </Target>
 ```
 
-Il valore di `KeyFileVersion` è impostato su "1.0.0.3" e non su "\@(KeyFile->'%(Version)')". L'attività Messaggio visualizza il messaggio seguente:
+Il valore di `KeyFileVersion` è impostato su "1.0.0.3" e non su "\@(KeyFile->'%(Version)')". L'attività Message visualizza il messaggio seguente:
 
 ```
 KeyFileVersion: 1.0.0.3

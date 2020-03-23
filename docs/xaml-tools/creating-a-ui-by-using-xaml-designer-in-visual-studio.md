@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a2a0e25779df1e0b91a69518dc2257119e33cca4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263355"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79190342"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML
 
@@ -26,7 +26,7 @@ La finestra di progettazione XAML in Visual Studio e Blend per Visual Studio for
 Per gli utenti avanzati è anche possibile [personalizzare la finestra di progettazione XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 > [!NOTE]
-> Novell. Forms non supporta una finestra di progettazione XAML. Per visualizzare le interfacce utente XAML di Novell. Forms e modificarle mentre l'app è in esecuzione, usare il ricaricamento a caldo di XAML per Novell. Forms. Per ulteriori informazioni, vedere la pagina [relativa al ricaricamento a caldo di XAML per Novell. Forms (anteprima)](/xamarin/xamarin-forms/xaml/hot-reload/) .
+> Xamarin.Forms non supporta una finestra di progettazione XAML. Per visualizzare le api XAML di Xamarin.Forms e modificarle mentre l'app è in esecuzione, usa XAML Hot Reload per Xamarin.Forms. Per altre informazioni, vedere la pagina [XAML Hot Reload for Xamarin.Forms (Preview).](/xamarin/xamarin-forms/xaml/hot-reload/)
 
 ## <a name="xaml-designer-workspace"></a>Area di lavoro della finestra di progettazione XAML
 
@@ -36,7 +36,7 @@ La finestra di progettazione XAML include una visualizzazione XAML e una visuali
 
 ### <a name="design-view"></a>Visualizzazione progettazione
 
-Nella visualizzazione Progettazione, la finestra che contiene la tavola da disegno è la finestra attiva e può essere utilizzata come area di lavoro primaria. Permette di progettare visivamente una pagina nell'app aggiungendo, disegnando o modificando elementi. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
+Nella visualizzazione Progettazione la finestra che include la tavola da disegno è la finestra attiva ed è possibile usarla come area di lavoro principale. Permette di progettare visivamente una pagina nell'app aggiungendo, disegnando o modificando elementi. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
 
 ![Visualizzazione Progettazione della finestra di progettazione XAML](media/xaml-artboard.png)
 
@@ -90,7 +90,7 @@ Visualizza o nasconde la griglia di allineamento che mostra le griglie. Le grigl
 
 **Attiva/Disattiva allineamento alla griglia**
 
-Se il **blocco sulla griglia** è abilitato, un elemento tende a allinearsi con le griglie orizzontali e verticali più vicine quando lo si trascina sulla tavola da disegno.
+Se **l'aggancio alle linee della griglia** è abilitato, un elemento tende ad allinearsi alla griglia orizzontale e verticale più vicina quando lo trascinate sulla tavola da disegno.
 
 **Attiva/Disattiva sfondo tavola da disegno**
 
@@ -116,26 +116,26 @@ La finestra Struttura documento in Visual Studio è simile alla finestra [Oggett
 
 - Visualizzare la struttura gerarchica di tutti gli elementi sulla tavola da disegno.
 
-- Selezionare gli elementi in modo da poterli modificare. Ad esempio, è possibile spostarli nella gerarchia o impostarne le proprietà nella Finestra Proprietà. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+- Selezionare gli elementi in modo da poterli modificare. Ad esempio, è possibile spostarli nella gerarchia o impostarne le proprietà nella finestra Proprietà.For example, you can move them around in the hierarchy or set their properties in the Properties window. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 - Creare e modificare modelli per gli elementi che sono controlli.
 
 - [Crea animazioni](animate-objects-in-xaml-designer.md) (solo Blend per Visual Studio).
 
-Per visualizzare la finestra Struttura documento in Visual Studio, selezionare **Visualizza** > **Altre finestre** > **Struttura documento** nella barra dei menu.
-Per visualizzare la finestra Oggetti e sequenza temporale in Blend per Visual Studio, selezionare **Visualizza** > **Struttura documento** nella barra dei menu.
+Per visualizzare la finestra Struttura documento in Visual Studio, sulla barra dei menu selezionare **Visualizza** > altro**contorno documento****Windows** > .
+Per visualizzare la finestra Oggetti e sequenza temporale in Blend per Visual Studio, sulla barra dei menu selezionare **Visualizza** > **struttura documento**.
 
 ![Finestra Struttura documento in Visual Studio](media/document-outline-window.png)
 
-La visualizzazione principale nella finestra Struttura documento/Oggetti e sequenza temporale mostra la gerarchia di un documento in una struttura ad albero. È possibile usare la natura gerarchica della struttura documento per esaminare il documento con diversi livelli di dettaglio e per bloccare e nascondere gli elementi singolarmente o in gruppo. Nella finestra Struttura documento/Oggetti e sequenza temporale sono disponibili le opzioni seguenti:
+La visualizzazione principale nella finestra Struttura documento/Oggetti e sequenza temporale mostra la gerarchia di un documento in una struttura ad albero. È possibile usare la natura gerarchica della struttura documento per esaminare il documento con diversi livelli di dettaglio e per bloccare e nascondere gli elementi singolarmente o in gruppo. Nella finestra Struttura/Oggetti e timeline del documento sono disponibili le seguenti opzioni:
 
 **Mostra/Nascondi**
 
-Visualizza o nasconde gli elementi della tavola da disegno. Appare come simbolo di un occhio quando gli elementi sono visualizzati. È anche possibile premere **CTRL**+**H** per nascondere un elemento e **MAIUSC**+**CTRL**+**H** per visualizzarlo.
+Visualizza o nasconde gli elementi della tavola da disegno. Appare come simbolo di un occhio quando gli elementi sono visualizzati. Puoi anche premere **Ctrl**+**H** per nascondere un elemento e **Maiusc**+**Ctrl**+**H** per mostrarlo.
 
 **Blocca/Sblocca**
 
-Blocca o sblocca gli elementi della tavola da disegno. Gli elementi bloccati non possono essere modificati. Appare come simbolo di un lucchetto quando è applicato il blocco. È anche possibile premere **CTRL**+**L** per bloccare un elemento e **MAIUSC**+**CTRL**+**L** per sbloccarlo.
+Blocca o sblocca gli elementi della tavola da disegno. Gli elementi bloccati non possono essere modificati. Appare come simbolo di un lucchetto quando è applicato il blocco. È anche possibile premere **Ctrl**+**L** per bloccare un elemento e premere **Ctrl**+**Ctrl**+**L** per sbloccarlo.
 
 **Reimposta l'ambito pageRoot**
 
@@ -143,7 +143,7 @@ L'opzione nella parte superiore della finestra Struttura documento/Oggetti e seq
 
 ## <a name="properties-window"></a>Finestra Proprietà
 
-La finestra **Proprietà** consente di impostare valori di proprietà sui controlli. Di seguito è riportata un'immagine di tale finestra:
+La finestra **Proprietà** consente di impostare valori di proprietà sui controlli. e ha l'aspetto seguente:
 
 ![Finestra Proprietà](media/xaml-designer-properties-window.png)
 

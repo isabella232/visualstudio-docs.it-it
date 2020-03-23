@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409547"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302609"
 ---
 # <a name="test-generation"></a>Generazione di test
 
@@ -116,7 +116,7 @@ public partial class ListTest {
 
 IntelliTest offre numerosi attributi di convalida per consentire la valutazione delle eccezioni dividendo le eccezioni previste dalle eccezione impreviste.
 
-Le eccezioni previste generano test case negativi con l'annotazione appropriata, ad esempio **ExpectedException(typeof(*xxx*))** , mentre le eccezioni impreviste generano test case non superati.
+Le eccezioni previste generano test case negativi con l'annotazione appropriata, ad esempio **ExpectedException(typeof(*xxx*))**, mentre le eccezioni impreviste generano test case non superati.
 
 ```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]

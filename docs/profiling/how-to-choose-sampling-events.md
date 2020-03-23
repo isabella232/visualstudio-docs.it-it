@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779051"
 ---
 # <a name="how-to-choose-sampling-events"></a>Procedura: Scegliere eventi di campionamento
@@ -61,7 +61,7 @@ Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](
 
 ## <a name="see-also"></a>Vedere anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-- [Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)
+- [Procedura: scegliere i metodi di raccoltaHow to: Choose collection methods](../profiling/how-to-choose-collection-methods.md)
 - [Contatori CPU e Windows](../profiling/cpu-and-windows-counters.md)
 - [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)
-- [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+- [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

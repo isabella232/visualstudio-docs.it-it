@@ -7,10 +7,10 @@ ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.openlocfilehash: 728a225f4a1d14af986039cae7cb2fc8a493ecc9
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983300"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inserimento di un pacchetto NuGet nel progetto
@@ -39,13 +39,13 @@ Verrà visualizzata la finestra **Aggiungi pacchetti**. Verificare che l'elenco 
 
 ![Elenco a discesa Origine](media/nuget-walkthrough-Source.png)
 
-Quando viene visualizzata la finestra, viene caricato un elenco di pacchetti dall'origine del pacchetto predefinita: nuget.org. I risultati iniziali hanno un aspetto simile al seguente:
+Quando si apre la finestra viene caricato un elenco di pacchetti dall'origine del pacchetto predefinito: nuget.org. I risultati iniziali sono simili ai seguente:The initial results look like this:
 
 ![Elenco di pacchetti NuGet](media/nuget-walkthrough-AddPackages1.png)
 
 Usare la casella di ricerca nell'angolo superiore destro per trovare un pacchetto specifico, ad esempio `azure`. Dopo aver trovato un pacchetto da usare, selezionarlo e fare clic sul pulsante **Aggiungi pacchetto** per avviare l'installazione.
 
-[Aggiungere un pacchetto NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
+[Aggiungere un pacchetto NuGet di Azure](media/nuget-walkthrough-AddPackages2.png)
 
 Dopo essere stato scaricato, il pacchetto verrà aggiunto al progetto. La soluzione verrà modificata come illustrato di seguito:
 
@@ -93,7 +93,7 @@ Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e
 
 ## <a name="adding-package-sources"></a>Aggiunta di origini dei pacchetti
 
-I pacchetti disponibili per l'installazione vengono inizialmente recuperati da nuget.org. Tuttavia, è possibile aggiungere altri percorsi di pacchetti a Visual Studio per Mac. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
+I pacchetti disponibili per l'installazione vengono inizialmente recuperati da nuget.org. Tuttavia, è possibile aggiungere altri percorsi del pacchetto a Visual Studio per Mac.However, you can add other package locations to Visual Studio for Mac. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
 
 In Visual Studio per Mac passare a **Visual Studio > Preferenze > NuGet > Origini** per visualizzare e modificare l'elenco di origini dei pacchetti. Si noti che le origini possono essere un server remoto (specificato da un URL) o una directory locale.
 

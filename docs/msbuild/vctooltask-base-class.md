@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591671"
 ---
 # <a name="vctooltask-base-class"></a>Classe di base VCToolTask
@@ -29,13 +29,13 @@ Nella tabella seguente vengono descritti i parametri della classe di base **VCTo
 |Parametro|Descrizione|
 |---------------|-----------------|
 |**ActiveToolSwitchesValues**|Parametro **Dictionary\<string, ToolSwitch>** facoltativo.|
-|**AdditionalOptions**|Parametro **string** facoltativo.|
-|**EffectiveWorkingDirectory**|Parametro **string** facoltativo.|
+|**AdditionalOptions**|Parametro **stringa** facoltativo.|
+|**EffectiveWorkingDirectory**|Parametro **stringa** facoltativo.|
 |**EnableErrorListRegex**|Parametro **bool** facoltativo.<br/><br/>Il valore predefinito è `true`.|
-|**ErrorListRegex**|Parametro **ITaskItem[]** facoltativo.|
-|**ErrorListListExclusion**|Parametro **ITaskItem[]** facoltativo.|
-|**GenerateCommandLine**|Parametro **string** facoltativo.<br/><br/>USA Values **CommandLineFormat** *Format* [default = CommandLineFormat. ForBuildLog] e **EscapeFormat** *EscapeFormat* [default = EscapeFormat. default].|
-|**GenerateCommandLineExceptSwitches**|Parametro **string** facoltativo.<br/><br/>USA Values **String []** *switchesToRemove*, **CommandLineFormat** *Format* [default = CommandLineFormat. ForBuildLog] e **EscapeFormat** *EscapeFormat [default* = EscapeFormat. default].|
+|**ErrorListRegex**|Parametro **Facoltativo ITaskItem[].**|
+|**ErrorListListExclusion**|Parametro **Facoltativo ITaskItem[].**|
+|**GenerateCommandLine**|Parametro **stringa** facoltativo.<br/><br/>Usare i valori **CommandLineFormat** *formato* [valore predefinito = CommandLineFormat.ForBuildLog] e **EscapeFormat** *formatoEscape* [valore predefinito = EscapeFormat.Default].|
+|**GenerateCommandLineExceptSwitches**|Parametro **stringa** facoltativo.<br/><br/>Usare i valori **string[]** *opzioniDaRimuovere*, **CommandLineFormat** *formato* [valore predefinito = CommandLineFormat.ForBuildLog] e **formatoEscape** *escapeFormat* [valore predefinito = EscapeFormat.Default].|
 
 ## <a name="see-also"></a>Vedere anche
 

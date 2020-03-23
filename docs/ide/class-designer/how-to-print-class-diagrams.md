@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f259a36cb35b69954d99a2104903fb973930af42
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596697"
 ---
 # <a name="how-to-print-class-diagrams"></a>Procedura: Stampare diagrammi classi
@@ -32,5 +32,5 @@ Viene stampato l'intero diagramma classi. Può essere necessario regolare le imp
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Copiare elementi dei diagrammi classi in un documento di Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
+- [Procedura: copiare elementi del diagramma classi in un documento di Microsoft OfficeHow to: Copy Class Diagram Elements to a Microsoft Office Document](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
 - [Procedura: Esportare diagrammi classi come immagini](how-to-export-class-diagrams-as-images.md)

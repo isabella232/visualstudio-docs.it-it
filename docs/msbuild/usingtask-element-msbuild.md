@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263123"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431449"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -41,11 +41,11 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 ```
 
 > [!NOTE]
-> A differenza di proprietà ed elementi, verrà usato il *primo* elemento `UsingTask` che si applica a un `TaskName`. per eseguire l'override delle attività è necessario definire un nuovo `UsingTask` *prima* di quello esistente.
+> A differenza di proprietà ed elementi, `TaskName` verrà utilizzato il *primo* `UsingTask` elemento che si applica a un oggetto; per sostituire le attività `UsingTask` è necessario definirne una nuova *prima* di quella esistente.
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
 
- Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributes
 
@@ -68,7 +68,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Project](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -78,6 +78,8 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 > Le proprietà e gli elementi a livello di progetto non hanno alcun effetto se l'elemento `UsingTask` proviene da uno dei file con estensione *tasks* registrati a livello globale nel motore MSBuild. I valori a livello di progetto non sono globali per MSBuild.
 
  In MSBuild 4.0 è possibile caricare gli elementi UsingTask dai file con estensione *overridetask*.
+
+L'assembly contenente l'attività `Task` personalizzata viene caricato quando l'oggetto viene utilizzato per la prima volta.
 
 ## <a name="example"></a>Esempio
 
@@ -109,4 +111,4 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)

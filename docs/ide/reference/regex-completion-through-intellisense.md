@@ -1,20 +1,21 @@
 ---
 title: Completamento di un'espressione regolare (regex) tramite IntelliSense
-ms.date: 06/10/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75110432f9bba35ce02588032b9a41dece01056b
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 68b5cb480184a287d9fcb088b0a74ac9d607f3f2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033422"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093864"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>Completamento di un'espressione regolare (regex) tramite IntelliSense
 
@@ -22,16 +23,18 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** completamento di un'espressione regolare (regex) tramite il menu di IntelliSense.
+- Visual Basic
 
-**Quando:** si vuole scrivere un'espressione regolare con l'aiuto di IntelliSense. IntelliSense offre una funzionalità di completamento di base e una spiegazione del significato dei singoli caratteri dell'espressione regolare. 
+**Cosa:** Completamento dell'espressione regolare (regex) tramite il menu IntelliSense.Regular expression (regex) completion through IntelliSense menu.
 
-**Perché?:** non è facile scrivere espressioni regolari e IntelliSense può essere di aiuto.
+**Quando:** Si desidera scrivere un'espressione regolare con la guida di IntelliSense.You want to write a regular expression with help from IntelliSense. IntelliSense offre una funzionalità di completamento di base e una spiegazione del significato dei singoli caratteri dell'espressione regolare. 
 
-## <a name="how-to"></a>Procedura
+**Perché:** La scrittura di un'espressione regolare è difficile e IntelliSense può aiutarti a scriverla.
+
+## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore nella stringa dell'espressione regolare.
-2. Premere **CTRL**+**BARRA SPAZIATRICE** per attivare il menu di **IntelliSense**.
+2. Premere **CTRL**+**Space** per attivare il menu **IntelliSense.**
 3. Selezionare il carattere da aggiungere alla stringa dell'espressione regolare.
 
    ![Completamento di regex tramite IntelliSense](../media/regex-completion-intellisense.png)

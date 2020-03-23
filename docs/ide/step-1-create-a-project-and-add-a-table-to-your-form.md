@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579929"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
@@ -25,30 +25,30 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ::: moniker range="vs-2017"
 
-1. Nella barra dei menu scegliere **File** > **nuovo** **progetto**>.
+1. Nella barra dei menu scegliere **File** > **Nuovo** > **progetto**.
 
 1. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
 
-1. Nell'elenco di modelli scegliere il modello **App Windows Forms (.NET Framework)** , assegnare il nome *MatchingGame* e quindi scegliere il pulsante **OK**.
+1. Nell'elenco di modelli scegliere il modello **App Windows Forms (.NET Framework) **, assegnare il nome *MatchingGame* e quindi scegliere il pulsante **OK**.
 
     Verrà visualizzato un modulo con nome *Form1.cs* o *Form1.vb*, a seconda del linguaggio di programmazione scelto.
 
    > [!NOTE]
-   > Se non viene visualizzato il modello **App Windows Forms (.NET Framework)** , usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.<br/><br/>![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Per altre informazioni, vedere la pagina [Installare Visual Studio](../install/install-visual-studio.md).
+   > Se non viene visualizzato il modello **App Windows Forms (.NET Framework)**, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.<br/><br/>![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Per altre informazioni, vedere la pagina [Installare Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+1. Nella finestra di avvio scegliere **Crea un nuovo progetto.**
 
-   ![Visualizzare la finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **tipo di progetto** .
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **Tipo di progetto.**
 
-   Dopo aver applicato il filtro del **tipo di progetto** , scegliere il modello **App Windows Forms (.NET Framework)** per C# o Visual Basic, quindi scegliere **Avanti**.
+   Dopo aver applicato il filtro **di tipo Progetto,** scegliere il modello **di app Windows Form (.NET Framework)** per C'è o Visual Basic e quindi scegliere **Avanti**.
 
-   ![Scegliere il modello C# o Visual Basic per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Scegliere il modello di C o Visual Basic per l'app Windows Form (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Se il modello **App Windows Forms (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
@@ -59,9 +59,9 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
+   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *MatchingGame* nella casella **Nome del progetto**. Scegliere **Crea**.
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *MatchingGame* nella casella **Nome del progetto**. Scegliere quindi **Crea,** quindi Crea .
 
 ::: moniker-end
 
@@ -106,7 +106,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
    4. Impostare la proprietà **TextAlign** su **MiddleCenter** scegliendo il pulsante a discesa accanto alla proprietà, quindi il pulsante al centro. In questo modo l'icona verrà visualizzata al centro della cella.
 
-   5. Scegliere la proprietà **Font**. Verrà visualizzato un pulsante con i puntini di sospensione ( **...** ).
+   5. Scegliere la proprietà **Font**. Verrà visualizzato un pulsante con i puntini di sospensione (**...**).
 
    6. Scegliere il pulsante con i puntini di sospensione e impostare **Tipo di carattere** su **Webdings**, **Stile** su **Grassetto** e **Dimensione** su **48**.
 
@@ -117,12 +117,12 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
        > [!NOTE]
        > Il tipo di carattere Webdings include una serie di icone ed è fornito con il sistema operativo Windows. Nel gioco delle coppie, il giocatore deve riuscire ad accoppiare le icone, per cui si utilizza questo tipo di carattere per visualizzare le icone da accoppiare. Anziché inserire **c** nella proprietà **Text**, provare a immettere lettere diverse per vedere quali icone vengono visualizzate. Il punto esclamativo equivale a un ragno, la N maiuscola a un occhio e la virgola a un peperoncino.
 
-5. Scegliere il controllo Label e copiarlo nella cella successiva in TableLayoutPanel. ( **Premere Ctrl**+**C** chiavi oppure sulla barra dei menu scegliere **modifica** > **copia**.) Quindi incollarlo. **Premere il tasto Ctrl**+**V** oppure scegliere **modifica** > **Incolla**sulla barra dei menu. Una copia della prima etichetta viene visualizzata nella seconda cella di TableLayoutPanel. Incollare di nuovo e nella terza cella verrà visualizzata un'altra etichetta. Continuare a incollare i controlli Label fino a che non sono state riempite tutte le celle.
+5. Scegliere il controllo Label e copiarlo nella cella successiva in TableLayoutPanel. Scegliere i tasti **Ctrl**+**C** oppure sulla barra dei menu scegliere **Modifica** > **copia.** Quindi incollarlo. Scegliere i tasti **Ctrl**+**V** oppure scegliere **Modifica** > **Incolla**nella barra dei menu. Una copia della prima label viene visualizzata nella seconda cella del TableLayoutPanel. Incollare di nuovo e nella terza cella verrà visualizzata un'altra etichetta. Continuare a incollare i controlli Label fino a riempire tutte le celle.
 
    > [!NOTE]
-   > Se si incolla troppe volte, l'IDE aggiunge una nuova riga a TableLayoutPanel in modo da avere il posto per aggiungere il nuovo controllo Label. L'azione può essere annullata. Per rimuovere la nuova cella, premere **CTRL**+**Z** oppure scegliere **Modifica** > **Annulla** sulla barra dei menu.
+   > Se si incolla troppe volte, l'IDE aggiunge una nuova riga a TableLayoutPanel, in modo da creare una posizione dove aggiungere il nuovo controllo Label. L'azione può essere annullata. Per rimuovere la nuova cella, scegliere i tasti **Ctrl**+**o** nella barra dei menu scegliere **Modifica** > **Annulla**.
 
-    Il modulo è ora disposto. Dovrebbe essere simile all'immagine seguente.
+    Ora il tuo modulo è disposto. Dovrebbe essere simile all'immagine seguente.
 
     ![Form iniziale del gioco di abbinamenti](../ide/media/express_tut4step1.png)<br/>*Form iniziale del gioco di abbinamenti*
 

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631081"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
@@ -27,7 +27,7 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
 
 - Come usare gli elementi di compilazione.
 
-È possibile eseguire MSBuild da Visual Studio o dalla **finestra di comando**. In questa procedura dettagliata si crea un file di progetto MSBuild in Visual Studio. Si modifica il file di progetto in Visual Studio e si usa la **finestra di comando** per compilare il progetto ed esaminare i risultati.
+È possibile eseguire MSBuild da Visual Studio o dalla finestra di **comando**. In questa procedura dettagliata si crea un file di progetto MSBuild in Visual Studio. Si modifica il file di progetto in Visual Studio e si usa la **finestra di comando** per compilare il progetto ed esaminare i risultati.
 
 ## <a name="create-an-msbuild-project"></a>Creare un progetto MSBuild
 
@@ -38,14 +38,14 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
 1. Aprire Visual Studio e creare un progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL+Q** per aprire la casella di ricerca, digitare **winforms** e quindi scegliere **Crea nuova app Windows Forms (.NET Framework)** . Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL+Q** per aprire la casella di ricerca, digitare **winforms** e quindi scegliere **Crea nuova app Windows Forms (.NET Framework)**. Nella finestra di dialogo visualizzata scegliere **Crea**.
 
-    Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\* . Accettare le impostazioni predefinite per **Soluzione**, **Nome soluzione** (**BuildApp**) e **Framework**.
+    Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\*. Accettare le impostazioni predefinite per **Soluzione**, **Nome soluzione** (**BuildApp**) e **Framework**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#**  > **Windows Desktop** e quindi scegliere **App Windows Forms (.NET Framework)** . Scegliere quindi **OK**.
+    Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** > **Windows Desktop** e quindi scegliere **App Windows Forms (.NET Framework)**. Quindi scegliere **OK**.
 
-    Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\* . Accettare le impostazioni predefinite per **Crea directory per soluzione** (selezionata), **Aggiungi al controllo del codice sorgente** (non selezionata) e **Nome soluzione** (**BuildApp**).
+    Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\*. Accettare le impostazioni predefinite per **Crea directory per soluzione** (selezionata), **Aggiungi al controllo del codice sorgente** (non selezionata) e **Nome soluzione** (**BuildApp**).
     ::: moniker-end
 
 1. Fare clic su **OK** o su **Crea** per creare il file di progetto.
@@ -56,9 +56,9 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
 
 **Per esaminare il file di progetto**
 
-1. In **Esplora soluzioni** fare clic sul nodo del progetto **BuildApp**.
+1. In **Esplora soluzioni**fare clic sul nodo del progetto **BuildApp**.
 
-2. Nel browser **Proprietà** si noti che la proprietà **File di progetto** corrisponde a *BuildApp.csproj*. Il nome di tutti i file di progetto ha il suffisso *proj*. Se si è creato un progetto Visual Basic, il nome del file di progetto è *BuildApp.vbproj*.
+2. Nel browser **Proprietà** notare che la proprietà File di **progetto** è *BuildApp.csproj*. Tutti i file di progetto sono denominati con il suffisso *proj*. Se è stato creato un progetto di Visual Basic, il nome del file di progetto sarebbe *BuildApp.vbproj*.
 
 3. Fare clic con il pulsante destro del mouse sul nodo del progetto, quindi scegliere **Scarica progetto**.
 
@@ -121,7 +121,7 @@ MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che og
 
 3. Salvare il file di progetto.
 
-L'attività Message è una delle tante disponibili in MSBuild. Per un elenco completo delle attività disponibili e informazioni sull'uso, vedere [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md).
+L'attività Message è una delle tante disponibili in MSBuild. Per un elenco completo delle attività disponibili e delle informazioni sull'utilizzo, vedere Informazioni di [riferimento sulle attività](../msbuild/msbuild-task-reference.md).
 
 L'attività Message accetta il valore stringa dell'attributo Text come input e lo visualizza nel dispositivo di output. La destinazione HelloWorld esegue l'attività Message due volte: prima per visualizzare "Hello" e quindi per visualizzare "World".
 
@@ -134,13 +134,13 @@ L'attività Message accetta il valore stringa dell'attributo Text come input e l
 
 **Per compilare la destinazione**
 
-1. Aprire la **finestra di comando**.
+1. Aprire la finestra di **comando**.
 
    (Windows 10) Nella casella di ricerca della barra delle applicazioni iniziare a digitare il nome dello strumento, ad esempio `dev` o `developer command prompt`. Verrà visualizzato un elenco di app installate che corrispondono ai criteri di ricerca.
 
    Se è necessario cercarlo manualmente, il file, *LaunchDevCmd.bat* si trova nella cartella *<cartella di installazione di visualstudio\>\<versione>\Common7\Strumenti*.
 
-2. Dalla finestra di comando passare alla cartella contenete il file di progetto, in questo caso *D:\BuildApp\BuildApp*.
+2. Dalla finestra di comando, passare alla cartella che contiene il file di progetto, in questo *caso, D:*
 
 3. Eseguire msbuild con l'opzione di comando -t: HelloWorld. La destinazione HelloWorld verrà selezionata e compilata:
 
@@ -183,7 +183,7 @@ L'attività Message accetta il valore stringa dell'attributo Text come input e l
 
  definisce la proprietà denominata TargetFrameworkVersion, assegnandole il valore stringa "v15.0".
 
- Compilare le proprietà possono essere ridefinite in qualsiasi momento. \* Se
+ Compilare le proprietà possono essere ridefinite in qualsiasi momento. Se
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -201,7 +201,7 @@ $(PropertyName)
 
  Usare questa sintassi per esaminare alcune delle proprietà nel file di progetto.
 
-**Per esaminare un valore di proprietà**
+**Per esaminare un valore della proprietà**
 
 1. Nell'editor di codice sostituire la destinazione HelloWorld con questo codice:
 
@@ -256,17 +256,17 @@ $(PropertyName)
 
 ### <a name="reserved-properties"></a>Proprietà riservate
 
- In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per altre informazioni, vedere [Procedura: Fare riferimento al nome o al percorso del file di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per ulteriori informazioni, vedere [Procedura: fare riferimento al nome o](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) al percorso del file di progetto e alle proprietà riservate e note di [MSBuild.](../msbuild/msbuild-reserved-and-well-known-properties.md)
 
 ### <a name="environment-variables"></a>Variabili di ambiente
 
- È possibile fare riferimento alle variabili di ambiente nei file di progetto come si fa riferimento alle proprietà di compilazione. Ad esempio, per usare la variabile di ambiente PATH nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente. Per altre informazioni, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ È possibile fare riferimento alle variabili di ambiente nei file di progetto come si fa riferimento alle proprietà di compilazione. Ad esempio, per usare la variabile di ambiente PATH nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente. Per ulteriori informazioni, vedere Procedura: utilizzare variabili di [ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Impostare le proprietà dalla riga di comando
 
  Le proprietà possono essere definite dalla riga di comando usando l'opzione della riga di comando -property o -p. I valori delle proprietà ricevuti dalla riga di comando eseguono l'override dei valori delle proprietà impostati nel file di progetto e nelle variabili di ambiente.
 
-**Per impostare un valore di proprietà dalla riga di comando**
+**Per impostare un valore della proprietà dalla riga di comando**
 
 1. Dalla **finestra di comando** immettere ed eseguire questa riga:
 
@@ -310,7 +310,7 @@ MSBuild crea la proprietà Configuration e le assegna il valore "Release".
     $(Configuration) is "Debug"
     ```
 
-Per altre informazioni, vedere [Caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md).
+Per ulteriori informazioni, vedere [caratteri speciali MSBuild](../msbuild/msbuild-special-characters.md).
 
 ## <a name="build-items"></a>Elementi di compilazione
 
@@ -325,7 +325,7 @@ Per altre informazioni, vedere [Caratteri speciali di MSBuild](../msbuild/msbuil
 </ItemGroup>
 ```
 
- definisce un gruppo di elementi contenente due elementi. Il tipo di elemento Compile ha due valori: *Program.cs* e *Properties\AssemblyInfo.cs*.
+ definisce un gruppo di elementi contenente due elementi. Il tipo di elemento Compile ha due valori: *Program.cs* e *Proprietà , AssemblyInfo.cs*.
 
  Il codice seguente crea lo stesso tipo di elemento dichiarando entrambi i file in un attributo Include, separati da punto e virgola.
 
@@ -335,7 +335,7 @@ Per altre informazioni, vedere [Caratteri speciali di MSBuild](../msbuild/msbuil
 </ItemGroup>
 ```
 
-Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
 > [!NOTE]
 > Percorsi dei file sono relativi alla cartella contenente il file di progetto MSBuild.
@@ -419,13 +419,13 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 <Photos Include="images\*.jpeg" />
 ```
 
- aggiunge tutti i file con estensione *jpeg* nella cartella *images* al tipo di elemento Photos, mentre
+ aggiunge tutti i file con estensione *.jpeg* nella cartella *images* al tipo di elemento
 
 ```xml
 <Photos Include="images\**\*.jpeg" />
 ```
 
- aggiunge tutti i file con estensione *jpeg* nella cartella *images* e in tutte le relative sottocartelle al tipo di elemento Photos. Per altri esempi, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).
+ aggiunge tutti i file con estensione *.jpeg* nella cartella *images* e tutte le relative sottocartelle al tipo di elemento Foto. Per altri esempi, vedere [Procedura: selezionare i file da compilare.](../msbuild/how-to-select-the-files-to-build.md)
 
  Si noti che gli elementi, quando vengono dichiarati, vengono aggiunti al tipo di elemento. Ad esempio,
 
@@ -446,7 +446,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- aggiunge tutti i file con estensione *cs* al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa *Designer*. Per altri esempi, vedere [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).
+ aggiunge tutti i file con estensione *cs* al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa *Designer*. Per altri esempi, vedere [Procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).
 
 L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Ad esempio,
 
@@ -455,7 +455,7 @@ L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include 
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
-non esclude il file *Form1.cs*, aggiunto nell'elemento item precedente.
+non escluderà il file *Form1.cs*, che è stato aggiunto nell'elemento item precedente.
 
 **Per includere ed escludere elementi**
 
@@ -536,7 +536,7 @@ Si noti come la frase "Compile.DependentUpon" venga visualizzata più volte. L'u
 
 ### <a name="well-known-metadata"></a>Metadati noti
 
- Quando un elemento viene aggiunto a un elenco di elementi, a tale elemento vengono assegnati alcuni metadati noti. Ad esempio, %(FileName) restituisce il nome file di qualsiasi elemento. Per l'elenco completo dei metadati noti, vedere [Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md).
+ Quando un elemento viene aggiunto a un elenco di elementi, a tale elemento vengono assegnati alcuni metadati noti. Ad esempio, %(FileName) restituisce il nome file di qualsiasi elemento. Per un elenco completo dei metadati noti, consultate [Metadati](../msbuild/msbuild-well-known-item-metadata.md)noti degli elementi.
 
 **Per esaminare i metadati noti**
 
@@ -603,7 +603,7 @@ Si noti che i metadati espressi in questa sintassi non causano la divisione in b
 
 ## <a name="whats-next"></a>Quali sono le operazioni successive?
 
- Per informazioni su come creare un file di progetto semplice passaggio per passaggio, vedere [Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+ Per informazioni su come creare un file di progetto semplice un passaggio alla volta, provare la [procedura dettagliata: creazione di un file](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)di progetto MSBuild da zero .
 
 ## <a name="see-also"></a>Vedere anche
 

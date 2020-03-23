@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd85565ee573015737ab815258914bec89ab9369
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596983"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
@@ -24,23 +24,23 @@ Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta 
 
 È possibile scrivere il codice più rapidamente tramite le seguenti funzionalità.
 
-- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **Modifica** > **Duplica** o premere **CTRL**+**E**,**V**. È anche possibile espandere o comprimere rapidamente una selezione di testo scegliendo **Modifica** > **Avanzate** > **Espandi selezione** o **Modifica** > **Avanzate** > **Comprimi selezione** oppure premendo **MAIUSC**+**ALT**+ **=** o **MAIUSC**+**ALT**+ **-** .
+- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **Modifica** > **duplicato** o premere **Ctrl**+**E**,**V**. È inoltre possibile espandere o contrarre rapidamente una selezione di testo scegliendo **Modifica** > **Advanced** > **selezione avanzata espansione** o **Modifica** > **Advanced** > **selezione avanzata contratto**oppure premendo **Maiusc**+**Alt** + **=** o **Maiusc**+**Alt**+**-**.
 
-- **Uso di IntelliSense**. Quando si immette il codice nell'editor, vengono visualizzate alcune informazioni di IntelliSense, come Elenca membri, Informazioni sul parametro, Informazioni rapide, Supporto firma e Completa parola. Queste funzionalità supportano la corrispondenza fuzzy del testo. Ad esempio, gli elenchi di risultati per Elenca membri includono non solo le voci che iniziano con i caratteri immessi ma anche le voci contenenti la combinazione di caratteri presente in qualsiasi posizione del nome. Per altre informazioni, vedere [Utilizzo di IntelliSense](../ide/using-intellisense.md).
+- **Utilizzare IntelliSense**. Quando si immette il codice nell'editor, vengono visualizzate alcune informazioni di IntelliSense, come Elenca membri, Informazioni sul parametro, Informazioni rapide, Supporto firma e Completa parola. Queste funzionalità supportano la corrispondenza fuzzy del testo. Ad esempio, gli elenchi di risultati per Elenca membri includono non solo le voci che iniziano con i caratteri immessi ma anche le voci contenenti la combinazione di caratteri presente in qualsiasi posizione del nome. Per altre informazioni, vedere [Utilizzo di IntelliSense](../ide/using-intellisense.md).
 
 - **Modifica dell'inserimento automatico delle opzioni IntelliSense durante l'immissione del codice**. Se si attiva la modalità di suggerimento di IntelliSense, è possibile specificare che le opzioni IntelliSense vengano inserite solo se si scelgono in modo esplicito.
 
-     Per abilitare la modalità di suggerimento, scegliere la combinazione di tasti **CTRL**+**ALT**+**BARRA SPAZIATRICE** o scegliere **Modifica** > **IntelliSense** > **Attiva/disattiva modalità di terminazione** nella barra dei menu.
+     Per attivare la modalità di suggerimento, scegliere i tasti **CTRL**+**ALT**+**barra spaziatrice** oppure, nella barra dei menu, scegliere **Modifica** > **IntelliSense** > **Attiva/Disattiva modalità completamento**.
 
-- **Uso di frammenti di codice**. È possibile usare frammenti di codice predefiniti o creare frammenti di codice personalizzati.
+- **Utilizzare frammenti di codice**. È possibile usare frammenti di codice predefiniti o creare frammenti di codice personalizzati.
 
-     Per inserire un frammento di codice, scegliere **Modifica** > **IntelliSense** > **Inserisci frammento** o **Racchiudi tra** o aprire il menu di scelta rapida in un file e scegliere **Snippet** > **Inserisci frammento** o **Racchiudi tra**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md).
+     Per inserire un frammento di codice, nella barra dei menu scegliere **Modifica** > **frammento** di codice**IntelliSense** > o **Circonda con**oppure aprire il menu di scelta rapida in un file e scegliere **Frammento** > **di codice O** **Racporta con**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
 
-- **Correzione di errori di codice inline**. Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione. Queste azioni possono essere applicate usando le icone a forma di cacciavite ![icona cacciavite](media/screwdriver-icon.png) o di lampadina ![icona lampadina](media/light-bulb-icon.png) oppure premendo **ALT**+**INVIO** o **CTRL**+ **.** quando il cursore si trova sulla riga di codice appropriata. Per altre informazioni, vedere [Azioni rapide](quick-actions.md).
+- **Correzione di errori di codice inline**. Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione. Queste azioni possono essere applicate ![utilizzando l'icona](media/screwdriver-icon.png) ![Screwdriver cacciavite o lampadina](media/light-bulb-icon.png) icone icona della lampadina, o premendo **Alt**+**Invio** o **Ctrl**+**.** quando il cursore si trova sulla riga di codice appropriata. Per altre informazioni, vedere [Azioni rapide](quick-actions.md).
 
 - **Visualizzazione e modifica della definizione di un elemento di codice**. È possibile visualizzare e modificare rapidamente il modulo in cui viene definito un elemento di codice, ad esempio un membro, una variabile o un elemento locale.
 
-    Per aprire una definizione in una finestra popup, evidenziare l'elemento e quindi premere **ALT**+**F12** o aprire il menu di scelta rapida per l'elemento e scegliere **Visualizza definizione**. Per aprire una definizione in una finestra di codice separata, aprire il menu di scelta rapida per l'elemento e quindi scegliere **Vai a definizione**.
+    Per aprire una definizione in una finestra popup, evidenziare l'elemento e quindi scegliere i tasti **Alt**+**F12** oppure aprire il menu di scelta rapida per l'elemento e quindi scegliere **Visualizza definizione**. Per aprire una definizione in una finestra di codice separata, aprire il menu di scelta rapida per l'elemento e quindi scegliere **Vai a definizione**.
 
 - **Uso di applicazioni di esempio**. È possibile velocizzare lo sviluppo di applicazioni scaricando e installando applicazioni di esempio da [Microsoft Developer Network](https://code.msdn.microsoft.com/). È inoltre possibile capire un particolare concetto di programmazione o tecnologico, scaricando e esplorando un Pacchetto di esempi di un'area.
 
@@ -50,11 +50,11 @@ Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta 
 
 - **Inserimento di un segnalibro per le righe di codice**. È possibile utilizzare i segnalibri per passare rapidamente alle righe di codice specifiche in un file.
 
-    Per impostare un segnalibro scegliere **Modifica** > **Segnalibri** > **Attiva/disattiva segnalibro** nella barra dei menu. È possibile visualizzare tutti i segnalibri per una soluzione nella finestra **Segnalibri**. Per altre informazioni, vedere [Impostazione di segnalibri nel codice](../ide/setting-bookmarks-in-code.md).
+    Per impostare un segnalibro, sulla barra dei menu scegliere **Modifica** > **segnalibro** > **Attiva/disattiva segnalibro**. È possibile visualizzare tutti i segnalibri per una soluzione nella finestra **Segnalibri**. Per altre informazioni, vedere [Impostazione di segnalibri nel codice](../ide/setting-bookmarks-in-code.md).
 
 - **Ricerca delle definizioni dei simboli in un file**. Sebbene sia possibile cercare all'interno di una soluzione definizioni di simboli e nomi file, i risultati della ricerca non includono gli spazi dei nomi o le variabili locali.
 
-   Per accedere a questa funzionalità, scegliere **Modifica** > **Passa a** nella barra dei menu.
+   Per accedere a questa funzione, nella barra dei menu scegliere **Modifica** > **passa a**.
 
 - **Esplorazione della struttura generale del codice**. In **Esplora soluzioni** è possibile cercare e visualizzare le classi e i relativi tipi e membri nei progetti. È anche possibile cercare simboli, visualizzare la gerarchia di chiamata di un metodo, trovare i riferimenti dei simboli ed eseguire altre attività. Se si sceglie un elemento di codice in **Esplora soluzioni**, il file associato viene visualizzato nella scheda **Anteprima** e il cursore si sposta sull'elemento nel file. Per altre informazioni, vedere [Visualizzazione della struttura del codice](../ide/viewing-the-structure-of-code.md).
 
@@ -64,7 +64,7 @@ Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta 
 
 - **Applicazione di filtri al contenuto delle finestre degli strumenti**. È possibile eseguire ricerche nel contenuto di molte finestre degli strumenti, come **Casella degli strumenti**, finestra **Proprietà** ed **Esplora soluzioni**, ma visualizzare solo gli elementi i cui nomi contengono i caratteri specificati.
 
-- **Visualizzazione dei soli errori da risolvere**. Se si sceglie il pulsante **Filtro** nella barra degli strumenti **Elenco errori**, è possibile ridurre il numero di errori visualizzati nella finestra **Elenco errori**. È possibile visualizzare solo gli errori nei file aperti nell'editor, solo gli errori nel file corrente o solo gli errori nel progetto corrente. È possibile anche eseguire ricerche nella finestra **Elenco errori** per trovare errori specifici.
+- **Visualizzazione dei soli errori da risolvere**. Se si sceglie il pulsante **Filtro** nella barra degli strumenti **Elenco errori**, è possibile ridurre il numero di errori visualizzati nella finestra **Elenco errori**. È possibile visualizzare solo gli errori nei file aperti nell'editor, solo gli errori nel file corrente o solo gli errori nel progetto corrente. È inoltre possibile eseguire una ricerca all'interno della finestra **Elenco errori** per individuare errori specifici.
 
 - **Ricerca di finestre di dialogo, comandi di menu, opzioni e altro**. Nella casella di ricerca immettere le frasi o le parole chiave per gli elementi da trovare. Se ad esempio si digita **nuovo progetto** vengono visualizzate le opzioni seguenti:
 
@@ -82,19 +82,19 @@ Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta 
 
    ::: moniker-end
 
-   Premere **CTRL**+**Q** per passare direttamente alla casella di ricerca.
+   Premere **Ctrl**+**Q** per passare direttamente alla casella di ricerca.
 
 ## <a name="debug-code"></a>Debug del codice
 
 Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di velocizzare il processo.
 
-- **Verifica della stessa pagina, applicazione o sito in diversi browser**. Quando si esegue il debug del codice, è possibile passare facilmente da un Web browser installato all'altro, compreso [Controllo pagina (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), senza dover aprire la finestra di dialogo **Esplora con**. È possibile usare l'elenco **Destinazione di debug**, che si trova nella barra degli strumenti **Standard** accanto al pulsante **Avvia debug**, per verificare rapidamente il browser usato durante il debug o la visualizzazione delle pagine.
+- **Verifica della stessa pagina, applicazione o sito in diversi browser**. Quando si esegue il debug del codice, è possibile passare facilmente da un Web browser installato all'altro, compreso [Controllo pagina (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), senza dover aprire la finestra di dialogo **Esplora con**. È possibile utilizzare l'elenco **Destinazione debug,** che si trova sulla barra degli strumenti **Standard** accanto al pulsante **Avvia debug,** per verificare rapidamente quale browser si sta utilizzando durante il debug o la visualizzazione delle pagine.
 
     ![Selezionare opzioni di debug del Web browser](../ide/media/webbrowserdropdowntoolbar.png)
 
 - **Impostazione di punti di interruzione temporanei**. È possibile creare un punto di interruzione temporaneo nella riga di codice corrente e avviare contemporaneamente il debugger. Quando si raggiunge la riga di codice, viene attivata la modalità di interruzione del debugger. Per altre informazioni, vedere [Spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
-    Per usare questa funzionalità, scegliere la combinazione di tasti **CTRL**+**F10** o aprire il menu di scelta rapida per la riga di codice in corrispondenza della quale si intende interrompere l'esecuzione e quindi scegliere **Esegui fino al cursore**.
+    Per utilizzare questa funzionalità, scegliere i tasti **Ctrl**+**F10** oppure aprire il menu di scelta rapida per la riga di codice in cui si desidera interrompere , quindi scegliere **Esegui fino al cursore**.
 
 - **Spostamento del punto di esecuzione durante il debug**. È possibile spostare il punto di esecuzione corrente in un'altra sezione del codice e quindi riavviare il debug da tale punto. Questa tecnica è utile se si desidera eseguire il debug di una sezione di codice senza dover ricreare tutti i passaggi necessari per raggiungere la sezione. Per altre informazioni, vedere [Spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
@@ -104,9 +104,9 @@ Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di v
 
      Per aggiungere un suggerimento dati, il debugger deve essere in modalità di interruzione. Posizionare il cursore sulla variabile e quindi scegliere il pulsante del blocco sul suggerimento dati visualizzato. Quando il debug viene arrestato, viene visualizzata un'icona a forma di puntina da disegno blu nel file di origine accanto alla riga di codice che contiene la variabile. Se si posiziona il puntatore del mouse su tale icona, viene visualizzato il valore della variabile della sessione di debug più recente.
 
-- **Cancellazione della finestra di controllo immediato**. È possibile cancellare il contenuto della [Finestra di controllo immediato](../ide/reference/immediate-window.md) in fase di progettazione immettendo `>cls` o `>Edit.ClearAll`
+- **Cancellazione della finestra di controllo immediato**. È possibile cancellare il contenuto della [finestra](../ide/reference/immediate-window.md) `>cls` Immediata in fase di progettazione immettendo o`>Edit.ClearAll`
 
-     Per altre informazioni su comandi aggiuntivi, vedere [Visual Studio Command Aliases](../ide/reference/visual-studio-command-aliases.md) (Alias di comandi di Visual Studio).
+     Per ulteriori informazioni sui comandi aggiuntivi, vedere [Alias dei comandi](../ide/reference/visual-studio-command-aliases.md)di Visual Studio .
 
 ## <a name="access-visual-studio-tools"></a>Accesso agli strumenti di Visual Studio
 
@@ -132,18 +132,18 @@ In qualsiasi momento, durante lo sviluppo di un'applicazione è possibile che si
 
 - **Blocco della visualizzazione dei file usati di frequente nell'editor**. È possibile bloccare i file nel lato sinistro della scheda in modo che rimangano visibili indipendentemente dal numero di file aperti nell'editor.
 
-   Per bloccare un file, scegliere la scheda del file e quindi scegliere il pulsante **Attiva/disattiva stato di blocco**.
+   Per bloccare un file, scegliere la scheda del file, quindi scegliere il **pulsante Attiva/disattiva stato pin.**
 
 - **Spostamento di documenti e finestre in altri monitor**. Se si utilizza più di un monitor durante lo sviluppo delle applicazioni, è possibile gestire più facilmente le parti dell'applicazione spostando i file aperti nell'editor in un altro monitor. È anche possibile spostare le finestre degli strumenti, ad esempio le finestre del debugger, in un altro monitor e ancorare le finestre degli strumenti e dei documenti per creare raggruppamenti. Per altre informazioni, vedere [Personalizzazione del layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 
    È anche possibile gestire i file più facilmente creando un'altra istanza di **Esplora soluzioni** e spostandola in un altro monitor. Per creare un'altra istanza di **Esplora soluzioni**, aprire un menu di scelta rapida in **Esplora soluzioni** e quindi scegliere **Nuova visualizzazione Esplora soluzioni**.
 
-- **Personalizzazione di tipi di carattere in Visual Studio**. È possibile modificare il tipo di carattere, la dimensione e il colore usato per il testo nell'IDE. Ad esempio, è possibile personalizzare il colore degli elementi di codice specifici nell'editor e il tipo di carattere nelle finestre degli strumenti o nell'IDE. Per altre informazioni, vedere [Procedura: Modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [Procedura: Modificare i tipi di carattere e i colori nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Personalizzazione di tipi di carattere in Visual Studio**. È possibile modificare il tipo di carattere, la dimensione e il colore usato per il testo nell'IDE. Ad esempio, è possibile personalizzare il colore degli elementi di codice specifici nell'editor e il tipo di carattere nelle finestre degli strumenti o nell'IDE. Per ulteriori informazioni, vedere Procedura: modificare i tipi di [carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e Procedura: Modificare i tipi di carattere e i colori [nell'editor.](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Post di blog di suggerimenti e consigli per Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
-- [Tasti di scelta rapida predefiniti per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Procedura: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Procedura dettagliata: Creare un'applicazione semplice](../get-started/csharp/tutorial-wpf.md)
-- [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
+- [Tasti di scelta rapida predefiniti per i comandi utilizzati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Procedura: personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Procedura dettagliata: Creare un'applicazione sempliceWalkthrough: Create a simple application](../get-started/csharp/tutorial-wpf.md)
+- [Suggerimenti e trucchi per l'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)

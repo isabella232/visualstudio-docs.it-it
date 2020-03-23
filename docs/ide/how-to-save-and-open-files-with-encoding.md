@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1e562771567a6ff4f9dc35c9e98ceb5441a074
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596177"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Procedura: salvare e aprire file con codifica
@@ -28,7 +28,7 @@ ms.locfileid: "75596177"
 
 1. Scegliere **Salva con nome** dal menu **File** e fare clic sul pulsante del menu a discesa accanto al pulsante **Salva**.
 
-     Viene visualizzata la finestra di dialogo **Opzioni di salvataggio avanzate**.
+     La finestra di dialogo **Opzioni di salvataggio avanzate** viene visualizzata.
 
 2. In **Codifica** selezionare la codifica da usare per il file.
 

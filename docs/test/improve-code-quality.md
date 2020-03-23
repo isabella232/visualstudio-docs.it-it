@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e6dd0f0df6dde5c1f3553ab86374e71dfef82384
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594364"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Strumenti di test di Visual Studio
@@ -67,7 +67,7 @@ L'analisi di code coverage può essere applicata sia al codice gestito che a que
 
 Il code coverage è un'opzione per l'esecuzione dei metodi di test utilizzando Esplora test. Nella tabella dei risultati viene illustrata la percentuale di codice che è stata eseguita per ogni assembly, classe e metodo. Inoltre, nell'editor standard viene visualizzato il codice testato.
 
-* [Usare la funzionalità code coverage per determinare la quantità di codice testato](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Utilizzare il code coverage per determinare la quantità di codice sottoposta a test](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Lab su unit test, code coverage e analisi dei cloni di codice con Visual Studio](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 * [Personalizzare l'analisi code coverage](customizing-code-coverage-analysis.md)
 
@@ -85,12 +85,12 @@ Sia che si scelgano i test codificati dell'interfaccia utente più evoluti, sia 
 
 * [Usare l'automazione dell'interfaccia utente per testare il codice](use-ui-automation-to-test-your-code.md)
 * [Creazione, modifica e gestione di un test codificato dell'interfaccia utente](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Testare app UWP con test codificati dell'interfaccia utente](test-uwp-app-with-coded-ui-test.md)
+* [Testare le app UWP con test codificati dell'interfaccia utenteTest UWP apps with coded UI tests](test-uwp-app-with-coded-ui-test.md)
 * [Lab sull'esecuzione di test codificati dell'interfaccia utente con Visual Studio Enterprise](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 
 ## <a name="load-testing"></a>Test di carico
 
-I [test di carico](../test/quickstart-create-a-load-test-project.md) simulano il carico su un'applicazione server tramite l'esecuzione di unit test e test delle prestazioni Web.
+[Il test di carico](../test/quickstart-create-a-load-test-project.md) simula il carico su un'applicazione server eseguendo unit test e test delle prestazioni Web.
 
 ## <a name="related-scenarios"></a>Scenari correlati
 

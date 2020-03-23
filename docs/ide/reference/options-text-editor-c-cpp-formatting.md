@@ -17,10 +17,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596255"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opzioni, Editor di testo, C/C++, Formattazione
@@ -29,34 +29,34 @@ Usare queste pagine delle proprietà per modificare il comportamento predefinito
 
 ![Pagine delle proprietà di formattazione di C++](media/cpp-formatting.png)
 
-Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++** , quindi fare clic su **Formattazione**.
+Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++**, quindi fare clic su **Formattazione**.
 
 > [!NOTE]
-> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per ulteriori informazioni, vedere [Personalizzare l'IDE](../../ide/personalizing-the-visual-studio-ide.md)di Visual Studio.
 
-## <a name="general-page"></a>Pagina generale
+## <a name="general-page"></a>Pagina Generale
 
 Questa pagina include opzioni di formattazione di istruzioni e blocchi durante la digitazione.
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 versione 15.7 e successive**:
+**Visual Studio 2017 versione 15.7 e successive:**
 
 ::: moniker-end
 
-La pagina include anche opzioni per la configurazione del supporto per [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versione 5,0. ClangFormat è un'utilità che semplifica l'applicazione di stili e la formattazione del codice in base a un set di regole che è possibile configurare in un file con estensione clang-format o _clang-format.
+la pagina include anche opzioni per la configurazione del supporto di [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versione 5.0. ClangFormat è un'utilità che semplifica l'applicazione di stili e la formattazione del codice in base a un set di regole che è possibile configurare in un file con estensione clang-format o _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Configurazione delle opzioni di ClangFormat
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 versione 15.7 e successive**:
+**Visual Studio 2017 versione 15.7 e successive:**
 
 ::: moniker-end
 
 Il supporto di ClangFormat è abilitato per impostazione predefinita. È possibile scegliere quali di queste convenzioni di formattazione comuni applicare a tutti i progetti: LLVM, Google, Chromium, Mozilla o WebKit. È anche possibile creare un file con estensione clang-format o _clang-format con una definizione di formato personalizzata. Se questo file è presente nella cartella di un progetto, Visual Studio lo usa per formattare tutti i file di codice sorgente contenuti nella cartella e nelle relative sottocartelle.
 
-Per impostazione predefinita, Visual Studio esegue clangformat.exe in background e applica la formattazione durante la digitazione. È anche possibile specificare di eseguirlo solo per i comandi di formattazione richiamati manualmente **Formatta documento (CTRL+K, CTRL+D)** o **Formatta selezione (CTRL + K, CTRL + F)** .
+Per impostazione predefinita, Visual Studio esegue clangformat.exe in background e applica la formattazione durante la digitazione. È anche possibile specificare di eseguirlo solo per i comandi di formattazione richiamati manualmente **Formatta documento (CTRL+K, CTRL+D)** o **Formatta selezione (CTRL + K, CTRL + F)**.
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Pagine Rientro, Nuove righe, Spaziatura, Ritorno a capo
 
@@ -65,4 +65,4 @@ Queste pagine consentono di personalizzare la formattazione in vari modi, ma ven
 ## <a name="see-also"></a>Vedere anche
 
 - [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-- [Uso di IntelliSense](../../ide/using-intellisense.md)
+- [Using IntelliSense](../../ide/using-intellisense.md)

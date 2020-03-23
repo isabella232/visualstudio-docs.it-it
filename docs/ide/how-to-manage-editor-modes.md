@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77f224a6e3a1b12ed17799ddf6a2fc5c23f5d4cc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591034"
 ---
 # <a name="how-to-manage-editor-modes"></a>Procedura: Gestire le modalità dell'editor
@@ -36,15 +36,15 @@ ms.locfileid: "75591034"
 È possibile visualizzare l'editor di codice di Visual Studio in diverse modalità.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti in questo articolo, a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, ad esempio per implementare le impostazioni **Generali** o **Visual C++** , scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti in questo articolo, a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, ad esempio per implementare le impostazioni **Generali** o **Visual C++**, scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
 
 ## <a name="enable-full-screen-mode"></a>Abilitare la modalità Schermo intero
 
-È possibile nascondere tutte le caselle degli strumenti e visualizzare solo le finestre dei documenti abilitando la modalità **Schermo intero**.
+È possibile scegliere di nascondere tutte le finestre degli strumenti e visualizzare solo le finestre dei documenti attivando la modalità **Schermo intero.**
 
-- Premere **ALT**+**MAIUSC**+**INVIO** per attivare o disattivare la modalità **schermo intero**.
+- Premere **Alt**+**Shift**+**Enter** per entrare o uscire dalla modalità Schermo **intero.**
 
-     --oppure--
+     -- o --
 
 - Eseguire il comando `View.Fullscreen` nella finestra **Comando**.
 
@@ -54,7 +54,7 @@ Nella modalità **Spazio virtuale** vengono inseriti spazi alla fine di ogni rig
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2. Espandere la cartella **Editor di testo** e scegliere **Tutti i linguaggi** per impostare l'opzione a livello globale oppure scegliere la cartella di un linguaggio specifico. Ad esempio, per attivare i numeri di riga solo in Visual Basic, scegliere il nodo **Basic** > **Editor di testo**.
+2. Espandere la cartella **Editor di testo** e scegliere **Tutti i linguaggi** per impostare l'opzione a livello globale oppure scegliere la cartella di un linguaggio specifico. Ad esempio, per attivare i numeri di riga solo in Visual Basic, scegliere il nodo**Editor di testo** di **base.** > 
 
 3. Selezionare **Generale** e in **Impostazioni**selezionare **Attiva spazio virtuale**.
 

@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595631"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
@@ -25,7 +25,7 @@ Questa generazione di codice si applica a:
 
 - C#
 
-- Visual Basic -
+- Visual Basic
 
 **Cosa:** consente di generare immediatamente il codice per una classe o un tipo.
 
@@ -33,7 +33,7 @@ Questa generazione di codice si applica a:
 
 **Perché:** si potrebbe dichiarare la classe o il tipo prima dell'uso, tuttavia questa funzionalità genera la classe o il tipo automaticamente.
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore nella riga in cui è presente una sottolineatura ondulata rossa. La sottolineatura rossa indica una classe che non esiste ancora.
 
@@ -48,7 +48,7 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
@@ -59,8 +59,8 @@ Questa generazione di codice si applica a:
 3. Selezionare una delle opzioni dal menu a discesa:
 
    - Genera l'elemento classe '*NomeTipo*' nel nuovo file&mdash;Crea una classe denominata *NomeTipo* in un file denominato *NomeTipo*.cs/.vb
-   - Genera l'elemento classe '*NomeTipo*'&mdash;Crea una classe denominata *NomeTipo* nel file corrente.
-   - Genera l'elemento classe '*NomeTipo*' annidato&mdash;Crea una classe denominata *NomeTipo* annidata nella classe corrente.
+   - Genera classe '&mdash;*NomeTipo*' Crea una classe denominata *TypeName* nel file corrente.
+   - Genera classe annidata&mdash;'*NomeTipo*' Crea una classe denominata *TypeName* annidata all'interno della classe corrente.
    - Genera nuovo tipo&mdash;Crea una nuova classe o un nuovo struct con tutte le proprietà specificate.
 
    > [!TIP]
@@ -70,13 +70,13 @@ Questa generazione di codice si applica a:
 
    ![Genera tipo](media/class-newtype-cs.png)
 
-   Selection | Descrizione
+   Selezione | Descrizione
    --- | ---
-   condizionale | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
+   Accesso | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
    Tipo | Può essere impostato come *classe* o *struct*.
-   Name | Questo non può essere modificato e sarà il nome già digitato.
-   Progetto di | Se sono presenti più progetti nella soluzione, è possibile scegliere il progetto in cui aggiungere la classe/lo struct.
-   Nome file | È possibile creare un nuovo file oppure è possibile aggiungere il tipo a un file esistente.
+   Nome | Questo non può essere modificato e sarà il nome già digitato.
+   Project | Se sono presenti più progetti nella soluzione, è possibile scegliere il progetto in cui aggiungere la classe/lo struct.
+   File Name | È possibile creare un nuovo file oppure è possibile aggiungere il tipo a un file esistente.
 
 Vengono creati la classe o lo struct. Per C# viene creato anche un costruttore.
 
@@ -84,11 +84,11 @@ Vengono creati la classe o lo struct. Per C# viene creato anche un costruttore.
 
    ![Risultato della generazione della classe C#](media/class-result-cs.png)
 
-- Visual Basic -
+- Visual Basic
 
    ![Risultato della generazione della classe VB](media/class-result-vb.png)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generazione codice](../code-generation-in-visual-studio.md)
-- [Anteprima modifiche](../../ide/preview-changes.md)
+- [Generazione di codice](../code-generation-in-visual-studio.md)
+- [Anteprima delle modifiche](../../ide/preview-changes.md)

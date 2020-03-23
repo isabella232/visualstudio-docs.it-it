@@ -11,15 +11,15 @@ dev_langs:
 - VB
 - CSharp
 ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566904"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolare codice sottoposto a test con Microsoft Fakes
 
-Microsoft Fakes consente di isolare il codice di cui si sta eseguendo il test sostituendo altre parti dell'applicazione con *stub* o *shim*. Si tratta di piccoli frammenti di codice sotto il controllo dei test. Isolando il codice per il test, si avrà la certezza che se il test non viene superato, la causa è presente in tale codice e non in un altro punto. Gli stub e gli shim consentono inoltre di testare il codice anche se altre parti dell'applicazione ancora non funzionano.
+Microsoft Fakes consente di isolare il codice di cui si sta eseguendo il test sostituendo altre parti dell'applicazione con *stub* o *shim*. Si tratta di frammenti di codice che rientrano nel controllo dei test. Isolando il codice per il test, si avrà la certezza che se il test non viene superato, la causa è presente in tale codice e non in un altro punto. Anche gli stub e gli shim consentono di testare il codice anche se altre parti dell'applicazione ancora non funzionano.
 
 Fakes è di due tipi:
 
@@ -29,7 +29,7 @@ Fakes è di due tipi:
 
 ![Fakes sostituisce altri componenti](../test/media/fakes-2.png)
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 - Un progetto .NET Framework
@@ -41,11 +41,11 @@ Fakes è di due tipi:
 ## <a name="choose-between-stub-and-shim-types"></a>Scegliere tra i tipi stub e shim
 In genere, un progetto di Visual Studio viene considerato un componente perché le classi vengono sviluppate e aggiornate contemporaneamente. Considerare l'uso di stub e shim per le chiamate che il progetto effettua ad altri progetti della soluzione o ad altri assembly a cui fa riferimento.
 
-In generale, è consigliabile usare gli stub per le chiamate all'interno della soluzione di Visual Studio e gli shim per le chiamate ad altri assembly a cui si fa riferimento. Questo perché all'interno di una soluzione è consigliabile separare i componenti definendo le interfacce secondo le regole di esecuzione dello stub. Invece gli assembly esterni come *System.dll* non vengono in genere corredati di definizioni di interfaccia separate e pertanto è necessario usare gli shim.
+In generale, è consigliabile usare gli stub per le chiamate all'interno della soluzione di Visual Studio e gli shim per le chiamate ad altri assembly a cui si fa riferimento. Questo perché all'interno di una soluzione è consigliabile separare i componenti definendo le interfacce secondo le regole di esecuzione dello stub. Ma gli assembly esterni, ad esempio *System.dll* in genere, non vengono forniti con definizioni di interfaccia separate, pertanto è necessario utilizzare gli shim.
 
 Altre considerazioni:
 
-**Prestazioni.** Gli shim sono più lenti perché riscrivono il codice in fase di esecuzione. Gli stub non incorrono in questo sovraccarico delle prestazioni e sono veloci al pari dei metodi virtuali.
+**Prestazione.** Gli shim sono più lenti perché riscrivono il codice in fase di esecuzione. Gli stub non incorrono in questo sovraccarico delle prestazioni e sono veloci al pari dei metodi virtuali.
 
 **Metodi statici, tipi sealed.** È possibile usare solo gli stub per implementare le interfacce. Di conseguenza, i tipi stub non possono essere usati per metodi statici, metodi non virtuali, metodi virtuali sealed, metodi con tipi sealed e così via.
 
@@ -53,7 +53,7 @@ Altre considerazioni:
 
 **Metodi privati.** Gli shim possono sostituire le chiamate ai metodi privati se tutti i tipi sono visibili nella firma del metodo. Gli stub possono sostituire solo i metodi visibili.
 
-**Interfacce e metodi astratti.** Gli stub forniscono implementazioni di interfacce e metodi astratti che possono essere usati nel test. Gli shim non possono instrumentare interfacce e metodi astratti perché sono privi di corpi di metodo.
+**Interfacce e metodi astratti.** Gli stub forniscono implementazioni di interfacce e metodi astratti che possono essere utilizzati nel test. Gli shim non possono instrumentare interfacce e metodi astratti perché sono privi di corpi di metodo.
 
 In generale, è consigliabile usare i tipi stub per l'isolamento dalle dipendenze nella codebase. A tale scopo è possibile nascondere i componenti dietro le interfacce. I tipi shim possono essere usati per l'isolamento da componenti di terze parti che non forniscono un'API testabile.
 
@@ -81,7 +81,7 @@ Per una descrizione più dettagliata, vedere [Usare stub per isolare le parti de
 
 2. **Aggiungere l'assembly Fakes**
 
-    1. In **Esplora soluzioni** espandere l'elenco di riferimento del progetto di test. Se si usa Visual Basic, scegliere **Mostra tutti i file** per visualizzare l'elenco dei riferimenti.
+    1. In **Esplora soluzioni**espandere l'elenco dei riferimenti del progetto di test. Se si usa Visual Basic, scegliere **Mostra tutti i file** per visualizzare l'elenco dei riferimenti.
 
     2. Selezionare il riferimento all'assembly in cui è definita l'interfaccia (ad esempio IStockFeed). Nel menu di scelta rapida del riferimento scegliere **Aggiungi assembly Fakes**.
 
@@ -168,7 +168,7 @@ Per usare gli shim, non è necessario modificare il codice dell'applicazione o s
 
 1. **Aggiungere l'assembly Fakes**
 
-     In **Esplora soluzioni** aprire i riferimenti del progetto di unit test e selezionare il riferimento all'assembly che contiene il metodo che si vuole simulare. In questo esempio la classe `DateTime` si trova in *System.dll*.  Per visualizzare i riferimenti in un progetto di Visual Basic, scegliere **Mostra tutti i file**.
+     In **Esplora soluzioni**aprire i riferimenti del progetto di unit test e selezionare il riferimento all'assembly che contiene il metodo che si desidera falsificare. In questo esempio la classe `DateTime` si trova in *System.dll*.  Per visualizzare i riferimenti in un progetto di Visual Basic, scegliere **Mostra tutti i file**.
 
      Scegliere **Aggiungi assembly Fakes**.
 
@@ -244,7 +244,7 @@ Non c'è un assembly "System.IO.Fakes" a cui fare riferimento. Lo spazio dei nom
 
 È inoltre possibile creare shim per istanze, costruttori e proprietà specifiche. Per altre informazioni, vedere [Usare shim per isolare l'applicazione da altri assembly per unit test](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 [Usare stub per isolare le parti dell'applicazione l'una dall'altra per unit test](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
 [Usare shim per isolare l'applicazione da altri assembly per unit test](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)

@@ -1,5 +1,5 @@
 ---
-title: Elenco eventi di grafica | Microsoft Docs
+title: Elenco di eventi di grafica - Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409329"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302126"
 ---
 # <a name="graphics-event-list"></a>Elenco eventi grafici
 Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per esplorare gli eventi Direct3D registrati durante il rendering di un frame del gioco o dell'app.
 
  Questo è l'elenco di eventi:
 
- ![Elenco di eventi il cui nome contiene "index".](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")
+ ![Elenco di eventi con "Vertice" nel relativo nome.](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")
 
 ## <a name="using-the-event-list"></a>Uso dell'elenco di eventi
  Quando si seleziona un evento nell'elenco, l'attività si riflette nelle informazioni visualizzate dagli altri strumenti di analisi grafica. Usando l'elenco di eventi insieme a questi altri strumenti è possibile esaminare in dettaglio un problema di rendering per determinarne la causa. Per altre informazioni su come risolvere i problemi di rendering usando l'elenco di eventi insieme agli altri strumenti di analisi grafica, vedere [Esempi](graphics-diagnostics-examples.md).
@@ -41,15 +41,15 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
  Direct3D 11 non espone più code, dunque gli eventi non sono contraddistinti dal colore nell'elenco di eventi quando si lavora con una cattura di un'app Direct3D 11.
 
 ### <a name="event-list-views"></a>Visualizzazioni dell'elenco di eventi
- L'elenco di eventi supporta due diverse visualizzazioni che organizzano gli eventi grafici in modo diverso, per supportare il flusso di lavoro e le preferenze dell'utente. La prima visualizzazione è la *visualizzazione lavoro GPU* , che organizza gli eventi e lo stato associato in modo gerarchico. La seconda è la *visualizzazione cronologia* , che organizza gli eventi in ordine cronologico, in un elenco semplice.
+ L'elenco di eventi supporta due diverse visualizzazioni che organizzano gli eventi grafici in modo diverso, per supportare il flusso di lavoro e le preferenze dell'utente. La prima vista è la visualizzazione di *lavoro GPU* che organizza gli eventi e il relativo stato associato in modo gerarchico. La seconda è la *visualizzazione cronologia* , che organizza gli eventi in ordine cronologico, in un elenco semplice.
 
- La visualizzazione **lavoro GPU** Visualizza gli eventi acquisiti e il relativo stato in una gerarchia. Il primo livello della gerarchia contiene eventi come chiamate di disegno, cancellazioni, presentazioni ed eventi associati alle visualizzazioni. Nell'elenco di eventi è possibile espandere le chiamate di disegno per visualizzare lo stato del dispositivo al momento della chiamata di disegno ed espandere ulteriormente ogni tipo di stato per visualizzare gli eventi che hanno impostato i valori. A questo livello è anche possibile vedere se un particolare stato è stato impostato in un frame precedente oppure se è stato impostato più volte dall'ultima chiamata di disegno.
+ La vista **lavoro GPU** Visualizza gli eventi acquisiti e il relativo stato in una gerarchia. Il primo livello della gerarchia contiene eventi come chiamate di disegno, cancellazioni, presentazioni ed eventi associati alle visualizzazioni. Nell'elenco di eventi è possibile espandere le chiamate di disegno per visualizzare lo stato del dispositivo al momento della chiamata di disegno ed espandere ulteriormente ogni tipo di stato per visualizzare gli eventi che hanno impostato i valori. A questo livello è anche possibile vedere se un particolare stato è stato impostato in un frame precedente oppure se è stato impostato più volte dall'ultima chiamata di disegno.
 
- Nella visualizzazione **sequenza temporale** vengono visualizzati tutti gli eventi acquisiti in ordine cronologico. Questo tipo di organizzazione dell'elenco di eventi è uguale a quello usato nelle versioni precedenti di Visual Studio.
+ La vista **Sequenza temporale** Visualizza ogni evento acquisito in ordine cronologico. Questo tipo di organizzazione dell'elenco di eventi è uguale a quello usato nelle versioni precedenti di Visual Studio.
 
 ##### <a name="to-change-the-event-list-view-mode"></a>Per modificare la modalità di visualizzazione dell'elenco di eventi
 
-- Nella finestra **elenco eventi di grafica** , sopra l'elenco di eventi, individuare l'elenco a discesa **Visualizza** e scegliere la visualizzazione **sequenza temporale** o la visualizzazione **lavoro GPU** .
+- Nella finestra **Elenco eventi** di grafica, sopra l'elenco degli eventi, individua l'elenco a discesa **Visualizza** e scegli la vista **Sequenza temporale** o La vista Lavoro **GPU.**
 
 ### <a name="filtering-events"></a>Filtro degli eventi
  La casella Cerca, situata nell'angolo superiore destro della finestra **Elenco eventi grafici** consente di filtrare l'elenco di eventi in modo da includere solo gli eventi i cui nomi contengono determinate parole chiave. È possibile specificare singole parole chiave, ad esempio `Vertex`, come mostrato nella figura precedente, oppure un elenco di parole chiave separate da punti e virgola, come `Draw;Primitive`, per visualizzare solo gli eventi il cui nome contiene `Draw` o `Primitive` . Le ricerche sono sensibili agli spazi. Ad esempio, `VSSet` e `VS Set` sono differenti. Fare quindi attenzione a formulare le ricerche nel modo corretto.
@@ -66,9 +66,9 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 |Icona|Descrizione evento|
 |----------|-----------------------|
 |(nessuna icona)|Evento generale<br /> Qualsiasi evento diverso da un evento definito dall'utente, un gruppo di eventi definito dall'utente o un evento di disegno.|
-|![Icona dell'evento di richiamo](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Evento di disegno<br /> Contrassegna un evento di disegno che si è verificato durante il frame acquisito.|
-|![Icona dell'&#45;indicatore dell'evento definito dall'utente](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Gruppo di eventi definito dall'utente<br /> Raggruppa gli eventi correlati, in base a quanto definito dall'app.|
-|![Icona dell'&#45;indicatore dell'evento definito dall'utente](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marcatore di eventi definito dall'utente<br /> Contrassegna una posizione specifica, in base a quanto definito dall'app.|
+|![Icona dell'evento di disegno](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Evento di disegno<br /> Contrassegna un evento di disegno che si è verificato durante il frame acquisito.|
+|![L'utente&#45;'icona dell'indicatore di evento definito](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Gruppo di eventi definito dall'utente<br /> Raggruppa gli eventi correlati, in base a quanto definito dall'app.|
+|![L'utente&#45;'icona dell'indicatore di evento definito](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marcatore di eventi definito dall'utente<br /> Contrassegna una posizione specifica, in base a quanto definito dall'app.|
 
 ## <a name="marking-user-defined-events-in-your-app"></a>Contrassegno di eventi definiti dall'utente nell'app
  Gli eventi definiti dall'utente sono specifici dell'app. Possono essere usati per correlare gli eventi significativi che si verificano nell'app a quelli presenti nell'Elenco eventi grafici. Ad esempio, è possibile creare gruppi di eventi definiti dall'utente per organizzare in gruppi o gerarchie gli eventi correlati al rendering dell'interfaccia, in modo da poter sfogliare più facilmente l'elenco di eventi, oppure creare marcatori quando vengono disegnati determinati tipi di oggetti, in modo da trovare facilmente gli eventi grafici correlati nell'elenco di eventi.
@@ -99,17 +99,17 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>Cronologia risorse
-Visual Studio 2017 e versioni successive contengono la finestra **Cronologia risorse** .  Selezionando l'icona espressioni di controllo ![icona espressioni di controllo](media/gfx_watch.png) accanto a una voce nella finestra **elenco eventi** verrà visualizzata la finestra **Cronologia risorse** mostrata di seguito:
+Visual Studio 2017 e versioni successive contengono la finestra **Cronologia risorse.**  Selezionando l'icona ![](media/gfx_watch.png) dell'orologio dell'orologio dell'orologio accanto a una voce nella finestra **Elenco eventi** verrà visualizzata la finestra **Cronologia risorse** illustrata di seguito:
 
 ![Cronologia risorse](media/gfx_diag_resource_history.png)
 
-Questa finestra consente di visualizzare la cronologia dell'elemento selezionato nell'elenco degli eventi.  L'elenco a discesa nella parte superiore può essere usato per selezionare gli altri elementi per visualizzare la cronologia di.  La metà superiore della finestra contiene gli **eventi di configurazione dei frame**.  Questi sono gli eventi che rientrano nella categoria *Crea* tipo e sono chiamate che in genere inizializzano e creano la risorsa.  La metà inferiore della finestra contiene la sezione **eventi frame** .  Questi sono gli eventi di lettura e scrittura normali che si verificano durante l'utilizzo della risorsa.
+Questa finestra consente di visualizzare la cronologia dell'elemento selezionato nell'elenco degli eventi.  Il menu a discesa nella parte superiore può essere utilizzato per selezionare altri elementi di cui visualizzare la cronologia.  La metà superiore della finestra contiene gli **eventi di impostazione dei frame**.  Questi sono gli eventi che rientrano nella categoria di tipo *Create* e sono chiamate che in genere inizializzano e creano la risorsa.  La metà inferiore della finestra contiene la sezione **Eventi frame.**  Questi sono i normali eventi di lettura e scrittura che si verificano durante l'utilizzo della risorsa.
 
 | Colonna | Descrizione |
 |-----------| - |
-| **Tipo** | Mostra il tipo di voce, in genere *creazione*, *lettura* e *scrittura*. |
-| **Visualizza** | Mostra un'anteprima della risorsa in un momento specifico.  Fare doppio clic sull'anteprima per aprire una visualizzazione dettagli della risorsa in quel momento. |
-| **Event** | Mostra la chiamata al metodo che ha generato l'evento.  È possibile visualizzare qualsiasi cronologia aggiuntiva sui singoli elementi selezionando l'icona a espressioni di controllo ![icona espressioni di controllo](media/gfx_watch.png) nella riga appropriata.  Per ulteriori informazioni, è inoltre possibile selezionare qualsiasi elemento disegnato con testo blu, ad esempio `m_commandList` nella schermata precedente. |
+| **Tipo** | Visualizza il tipo della voce, in genere *Crea*, *Lettura* e *Scrittura*. |
+| **Visualizza** | Mostra un'anteprima della risorsa in quel momento.  Fare doppio clic sulla miniatura per aprire una visualizzazione dei dettagli della risorsa in quel momento. |
+| **Evento** | Mostra la chiamata al metodo che si è verificata generando l'evento.  È possibile visualizzare qualsiasi cronologia aggiuntiva sui ![singoli elementi](media/gfx_watch.png) selezionando l'icona dell'orologio sull'icona dell'orologio sulla riga appropriata.  Inoltre, qualsiasi elemento disegnato in testo `m_commandList` blu, ad esempio nella schermata precedente, può essere selezionato per ulteriori dettagli. |
 
 <!-- /VERSIONLESS -->
 

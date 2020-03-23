@@ -10,10 +10,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 5a1c449a77e3000205ee81f5414949743b6035c4
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272270"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con app Unity
@@ -80,7 +80,7 @@ Collegamento di riferimento: **[Azure Pipelines](/azure/devops/pipelines/index?v
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
 |Team Foundation Server (TFS) locale|Possibile|I progetti Unity vengono compilati tramite l'ambiente Unity e non tramite il sistema di compilazione di Visual Studio (se si usa Visual Studio Tools per Unity, vengono compilati gli script, ma non viene prodotto un eseguibile). Poiché è possibile [compilare progetti Unity dalla riga di comando](https://docs.unity3d.com/Manual/CommandLineArguments.html) (documentazione di Unity), si può configurare un processo MSBuild in un server TFS per eseguire i comandi Unity appropriati, a condizione che Unity sia installato nello stesso computer.<br /><br /> Unity offre anche [Unity Cloud Build](https://build.cloud.unity3d.com/landing/) che monitora un repository Git o SVN ed esegue compilazioni periodiche. Al momento non funziona con TFVC o Azure DevOps Services.|
-|Server di compilazione locale collegato a Azure DevOps Services|Possibile|Date le stesse condizioni precedenti, è anche possibile indirizzare le compilazioni attivate tramite Azure DevOps Services in modo che usino un computer TFS locale. Vedere [Build and release agents](/azure/devops/pipelines/agents/agents?view=vsts) (Agenti di compilazione e versione) per le istruzioni.|
+|Server di compilazione locale collegato a Azure DevOps Services|Possibile|Date le stesse condizioni precedenti, è anche possibile indirizzare le compilazioni attivate tramite Azure DevOps Services in modo che usino un computer TFS locale. Per istruzioni, vedere Build and release agents .See [Build and release agents](/azure/devops/pipelines/agents/agents?view=vsts) for instructions.|
 |Servizio controller ospitato di Azure DevOps Services|No|Le compilazioni Unity non sono attualmente supportate.|
 |Definizioni di compilazione con pre e post script|Sì|Per gli script pre- e post-compilazione è anche possibile configurare una definizione di compilazione personalizzata che usa la riga di comando di Unity per eseguire una compilazione.|
 |Integrazione continuata incluse le archiviazioni gestite|Sì|Archiviazioni gestite per TFVC solo quando Git elabora un modello di richiesta di pull anziché le archiviazioni.|
@@ -93,12 +93,12 @@ Collegamento di riferimento: **[Azure Pipelines](/azure/devops/pipelines/index?v
 |Test manuali|Sì||
 |Test Manager (registrazione e riproduzione di test)|Solo dispositivi Windows ed emulatori Android||
 |Code coverage|n/d|Non applicabile perché l'esecuzione di unit test avviene in Unity e non in Visual Studio. Vedere di seguito.|
-|[Eseguire unit test del codice](../test/unit-test-your-code.md)|In Unity, ma non Visual Studio.|Unity offre un proprio framework di unit test come parte di [Unity Test Tools](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store). I risultati degli unit test vengono segnalati in Unity e non saranno rilevati in Visual Studio.|
+|[Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)|In Unity, ma non Visual Studio.|Unity fornisce il proprio framework di unit test come parte degli strumenti di [test Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store). I risultati degli unit test vengono segnalati in Unity e non saranno rilevati in Visual Studio.|
 |[Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)|No|I test codificati dell'interfaccia utente si basano su controlli leggibili nell'interfaccia utente dell'app. Le app Unity sono di natura grafica e il contenuto non può quindi essere letto dagli strumenti di test codificato dell'interfaccia utente.|
 
 ## <a name="improve-code-quality"></a>Migliorare la qualità del codice
 
-Collegamento di riferimento: **[Migliorare la qualità del codice](../test/improve-code-quality.md)**
+Collegamento di riferimento: ** [Migliorare la qualità del codice](../test/improve-code-quality.md)**
 
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|

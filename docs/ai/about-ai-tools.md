@@ -11,13 +11,13 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915964"
 ---
-# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools per AI
+# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
 Visual Studio Tools for AI è un'estensione per compilare, testare e distribuire soluzioni per l'apprendimento avanzato o di intelligenza artificiale. Si integra perfettamente con Azure Machine Learning per offrire funzionalità di sperimentazione avanzate, ad esempio l'invio di processi di preparazione dei dati e training di modelli in modo trasparente a destinazioni di calcolo diverse. Supporta inoltre metriche personalizzate e la registrazione della cronologia di esecuzione, consentendo la riproducibilità e il controllo di operazioni di data science. Sono disponibili funzionalità per la collaborazione in ambiente aziendale, che consentono di lavorare in modo sicuro a un progetto con altri utenti.
 
@@ -42,7 +42,7 @@ Questa estensione rende più facile eseguire il training di modelli nel computer
 
 [Altre informazioni sui modelli di training nel cloud](tensorflow-vm.md)
 
-## <a name="supported-operating-systems"></a>Supported Operating Systems
+## <a name="supported-operating-systems"></a>Sistemi operativi supportati
 Questa estensione supporta attualmente i sistemi operativi Windows a 64 bit.
 
 ## <a name="support"></a>Supporto

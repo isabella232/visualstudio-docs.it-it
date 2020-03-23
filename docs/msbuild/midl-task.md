@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633473"
 ---
 # <a name="midl-task"></a>MIDL (attività)
@@ -59,7 +59,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
 - **ApplicationConfigurationMode**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, consente di usare alcune parole chiave dei file di configurazione dell'applicazione nel file IDL.
 
@@ -89,7 +89,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione della riga di comando|
+    |valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**Signed**|**/char signed**|
     |**Unsigned**|**/char unsigned**|
@@ -113,17 +113,17 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione della riga di comando|
+    |valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**Nessuno**|**/error none**|
-    |**EnableCustom**|**/error**|
-    |**Tutto**|**/error all**|
+    |**EnableCustom**|**/errore**|
+    |**Tutti**|**/error all**|
 
      Per altre informazioni, vedere l'opzione **/error** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
 
 - **ErrorCheckAllocations**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, verifica la presenza di errori di memoria insufficiente.
 
@@ -131,7 +131,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
 - **ErrorCheckBounds**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, controlla le dimensioni delle matrici variabili conformi e variabili rispetto alla specifica relativa alla durata delle trasmissioni.
 
@@ -139,15 +139,15 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
 - **ErrorCheckEnumRange**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, controlla che i valori di enumerazione siano compresi in un intervallo consentito.
 
-     Per altre informazioni, vedere l'opzione **/error enum** nella guida della riga di comando ( **/?** ) per *midl.exe*.
+     Per altre informazioni, vedere l'opzione **/error enum** nella guida della riga di comando (**/?**) per *midl.exe*.
 
 - **ErrorCheckRefPointers**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, controlla che nessun puntatore di riferimento Null venga passato agli stub client.
 
@@ -155,7 +155,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
 - **ErrorCheckStubData**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, genera uno stub che acquisisce eccezioni di unmarshalling sul lato server e le propaga al client.
 
@@ -169,7 +169,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione della riga di comando|
+    |valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**Nessuno**|**/client none**|
     |**Stub**|**/client stub**|
@@ -184,7 +184,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione della riga di comando|
+    |valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**Nessuno**|**/server none**|
     |**Stub**|**/server stub**|
@@ -193,7 +193,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
 - **GenerateStublessProxies**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, genera stub completamente interpretati con proxy senza stub per le interfacce degli oggetti.
 
@@ -201,7 +201,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
 - **GenerateTypeLibrary**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, non viene generato un file di libreria dei tipi (file con estensione *tlb*).
 
@@ -217,7 +217,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
 - **IgnoreStandardIncludePath**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, l'attività MIDL effettua la ricerca solo nelle directory specificate usando l'opzione **AdditionalIncludeDirectories** e ignora la directory corrente e le directory specificate dalla variabile di ambiente INCLUDE.
 
@@ -231,7 +231,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Per altre informazioni, vedere l'opzione **/iid** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
 
-- **LocaleID**
+- **Localeid**
 
      Parametro **int** facoltativo.
 
@@ -241,7 +241,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
 - **MkTypLibCompatible**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, è necessario che il formato dei file di input sia compatibile con *mktyplib.exe* versione 2.03.
 
@@ -259,7 +259,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Parametro **String[]** facoltativo.
 
-     Specifica una o più *definizioni*, ovvero un nome e un valore facoltativo da passare al preprocessore C come in base alla direttiva `#define`. Il formato di ogni definizione è *nome[=valore]* .
+     Specifica una o più *definizioni*, ovvero un nome e un valore facoltativo da passare al preprocessore C come in base alla direttiva `#define`. Il formato di ogni definizione è *nome[=valore]*.
 
      Per altre informazioni, vedere l'opzione **/D** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **UndefinePreprocessorDefinitions** in questa tabella.
 
@@ -287,7 +287,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Per altre informazioni, vedere l'opzione **/sstub** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **ClientStubFile** in questa tabella.
 
-- **Origine**
+- **origine**
 
      Parametro `ITaskItem[]` obbligatorio.
 
@@ -301,7 +301,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione della riga di comando|
+    |valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**NotSet**|*\<nessuno>*|
     |**1**|**/Zp1**|
@@ -313,7 +313,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
 - **SuppressCompilerWarnings**
 
-     Parametro **Boolean** facoltativo.
+     Parametro **booleano** facoltativo.
 
      Se `true`, elimina i messaggi di avviso dall'attività MIDL.
 
@@ -335,7 +335,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione della riga di comando|
+    |valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**NotSet**|*\<nessuno>*|
     |**Win32**|**/env win32**|
@@ -358,7 +358,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione della riga di comando|
+    |valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
@@ -389,7 +389,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Per altre informazioni, vedere le opzioni **/robust** e **/no_robust** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
 
-- **WarnAsError**
+- **WarnAsError (Messaggio)**
 
      Parametro `Boolean` facoltativo.
 
@@ -407,7 +407,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione della riga di comando|
+    |valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**0**|**/W0**|
     |**1**|**/W1**|

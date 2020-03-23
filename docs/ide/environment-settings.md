@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408366"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301881"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Impostazioni dell'ambiente per Visual Studio
 
@@ -32,7 +32,7 @@ Sono disponibili le raccolte di impostazioni seguenti:
 
 Per modificare le impostazioni di sviluppo quando si apre Visual Studio in seguito, eseguire questa procedura:
 
-1. Selezionare **Strumenti** > **Importa/Esporta impostazioni** dalla barra dei menu per aprire l'**Importazione/Esportazione guidata delle impostazioni**.
+1. Selezionare **Strumenti** > **Importa ed Esporta impostazioni** dalla barra dei menu per aprire l'Importazione/Esportazione guidata **impostazioni**.
 
 1. Nell'**Importazione/Esportazione guidata delle impostazioni** selezionare **Reimposta tutte le impostazioni** e quindi selezionare **Avanti**.
 

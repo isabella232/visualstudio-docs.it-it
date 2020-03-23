@@ -2,17 +2,17 @@
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 07/23/2019
+ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 4b5d1d77681f00846a01661c9c1bfebe2298ebdc
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: e92399e6efafba7c250fdf82882d44e2e0051412
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76159319"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437456"
 ---
-Quando si impostano le dipendenze nel manifesto VSIX, è necessario specificare solo gli ID dei componenti. Usare le tabelle in questa pagina per determinare le dipendenze minime dei componenti. In alcuni scenari, ciò potrebbe portare alla specifica di un solo componente da un carico di lavoro. In altri scenari è possibile che vengano specificati più componenti da un singolo carico di lavoro o più componenti da più carichi di lavoro. Per altre informazioni, vedere la pagina [procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio](../../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) .
+Quando si impostano le dipendenze nel manifesto VSIX, è necessario specificare solo gli ID dei componenti. Usare le tabelle in questa pagina per determinare le dipendenze minime dei componenti. In alcuni scenari, ciò potrebbe portare alla specifica di un solo componente da un carico di lavoro. In altri scenari è possibile che vengano specificati più componenti da un singolo carico di lavoro o più componenti da più carichi di lavoro. Per altre informazioni, vedere la pagina Procedura: eseguire la migrazione di progetti di [estensibilità a Visual Studio.For](../../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) more information, see the How to: Migrate extensibility projects to Visual Studio page.
 
 Per altre informazioni su come usare questi ID, vedere la pagina [Usare i parametri della riga di comando per installare Visual Studio](../use-command-line-parameters-to-install-visual-studio.md). Per un elenco di ID di componenti e carichi di lavoro per altri prodotti, vedere la pagina [ID dei carichi di lavoro e dei componenti di Visual Studio](../workload-and-component-ids.md).

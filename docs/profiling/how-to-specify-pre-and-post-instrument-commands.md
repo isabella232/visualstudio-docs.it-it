@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778713"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedura: Specificare comandi pre e post-strumentazione
@@ -45,7 +45,7 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
 3. Digitare il comando nella casella di testo **Riga di comando** in **Eventi pre-strumentazione**.
 
     > [!NOTE]
-    > È possibile fare clic sul pulsante con i puntini di sospensione **(...)** adiacente alla casella **Riga di comando** per individuare e selezionare il file con estensione EXE, CMD o BAT appropriato.
+    > È possibile fare clic sul pulsante con i lipsia **(...)** adiacente alla casella Riga di **comando** per individuare e selezionare il file .exe, cmd o .bat appropriato.
 
 4. Fare clic su **OK**.
 
@@ -64,7 +64,7 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
 3. Digitare il comando nella casella di testo **Riga di comando** in **Eventi post-strumentazione**.
 
     > [!NOTE]
-    > È possibile fare clic sul pulsante con i puntini di sospensione **(...)** adiacente alla casella **Riga di comando** per individuare e selezionare il file con estensione EXE, CMD o BAT appropriato.
+    > È possibile fare clic sul pulsante con i lipsia **(...)** adiacente alla casella Riga di **comando** per individuare e selezionare il file .exe, cmd o .bat appropriato.
 
 4. Fare clic su **OK**.
 

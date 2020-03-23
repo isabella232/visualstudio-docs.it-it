@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579787"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Passaggio 7: Aggiungere problemi di moltiplicazione e divisione
@@ -25,7 +25,7 @@ ms.locfileid: "77579787"
 Nella settima parte di questa esercitazione si aggiungeranno i problemi di moltiplicazione e divisione, ma prima di procedere vedere come effettuare questa modifica. Considerare il passaggio iniziale, che comporta l'archiviazione dei valori.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz di matematica a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
 ## <a name="to-add-multiplication-and-division-problems"></a>Per aggiungere problemi di moltiplicazione e divisione
 
@@ -46,7 +46,7 @@ Nella settima parte di questa esercitazione si aggiungeranno i problemi di molti
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]
 
-     Non è possibile immettere facilmente il segno di moltiplicazione (×) e il segno di divisione (÷) usando la C# tastiera, quindi e Visual Basic accettano un asterisco (*) per la moltiplicazione e una barra (/) per la divisione.
+     Non è possibile immettere facilmente il segno di moltiplicazione (-) e il segno di divisione (-) utilizzando la tastiera, in modo che il segno di addizione per la divisione sia in C, in Visual Basic, sia che sia possibile accettare un asterisco, ovvero un asterisco, e una barra (/).
 
 4. Modificare l'ultima parte del gestore dell'evento <xref:System.Windows.Forms.Timer.Tick> del timer in modo che inserisca la risposta corretta allo scadere del tempo.
 
@@ -58,10 +58,10 @@ Nella settima parte di questa esercitazione si aggiungeranno i problemi di molti
      Gli esecutori del quiz devono risolvere quattro problemi per completare il quiz, come illustrato di seguito.
 
      ![Quiz matematico con quattro problemi](../ide/media/express_finishedquiz.png)<br/>
-***Quiz matematico*** *con quattro problemi*
+***Quiz di matematica*** *con quattro problemi*
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 8: personalizzare il quiz](../ide/step-8-customize-the-quiz.md)** .
+- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 8: Personalizzare il quiz](../ide/step-8-customize-the-quiz.md)**.
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 6: Aggiungere un problema di sottrazione](../ide/step-6-add-a-subtraction-problem.md).

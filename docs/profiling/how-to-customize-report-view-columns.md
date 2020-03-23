@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778973"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Procedura: Personalizzare le colonne delle visualizzazioni dei report
@@ -28,15 +28,15 @@ Gli strumenti per le prestazioni in Visual Studio Team System Development Editio
 
 - [Visualizzazione Funzioni](../profiling/functions-view.md)
 
-- [Righe (visualizzazione)](../profiling/lines-view.md)
+- [Visualizzazione Righe](../profiling/lines-view.md)
 
-- [Visualizzazione puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view.md)
+- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view.md)
 
 - [Visualizzazione Chiamante/Chiamato](../profiling/caller-callee-view.md)
 
-- [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)
+- [Visualizzazione Struttura ad albero delle chiamate](../profiling/call-tree-view.md)
 
-- [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md)
+- [Visualizzazione allocazioni](../profiling/dotnet-memory-allocations-view.md)
 
 - [Visualizzazione Durata oggetti](../profiling/object-lifetime-view.md)
 
@@ -50,7 +50,7 @@ Gli strumenti per le prestazioni in Visual Studio Team System Development Editio
 
 2. Fare clic con il pulsante destro del mouse sull'area della visualizzazione del rapporto e quindi fare clic su **Aggiungi/Rimuovi colonne**.
 
-     Verrà visualizzata la finestra di dialogo **Aggiungi/Rimuovi colonne**.
+     Viene visualizzata la finestra di dialogo **Aggiungi/rimuovi colonne**.
 
 3. Selezionare le colonne da aggiungere.
 

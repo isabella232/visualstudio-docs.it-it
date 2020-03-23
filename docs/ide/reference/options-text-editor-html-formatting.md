@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568321"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opzioni, Editor di testo, HTML (Web Form), Formattazione
 
-Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere alla pagina, nella barra dei menu scegliere **Strumenti** > **Opzioni** e quindi espandere **Editor di testo** > **HTML (Web Form)**  > **Formattazione**.
+Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere **Opzioni degli strumenti** > **Options**, quindi espandere**Formattazione****HTML (Web Form)** >  **dell'editor** > di testo.
 
 ## <a name="capitalization"></a>Maiuscole/minuscole
 
@@ -28,7 +28,7 @@ Se queste opzioni sono selezionate, nella visualizzazione Origine e negli editor
 > [!WARNING]
 > Nel linguaggio XML viene fatta distinzione tra maiuscole e minuscole. L'impostazione di un formato predefinito per i caratteri maiuscoli e minuscoli può influire sui parser XML.
 
-### <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 **Tag server, Attributi server**
 
@@ -37,8 +37,8 @@ Queste opzioni specificano la modalità di applicazione delle lettere maiuscole 
 |Opzione|Risultato|
 |---------------------------------|------------------------------|
 |**Come immesse**|Esatta combinazione di maiuscole/minuscole dell'elemento come immessa.|
-|**Maiuscole**|I nomi degli elementi vengono riformattati in maiuscolo.|
-|**Minuscole**|I nomi degli elementi vengono riformattati in minuscolo.|
+|**Maiuscolo**|I nomi degli elementi vengono riformattati in maiuscolo.|
+|**Lettere minuscole**|I nomi degli elementi vengono riformattati in minuscolo.|
 |**Definizione assembly**|La combinazione di maiuscole e minuscole degli elementi è determinata dalla definizione dell'elemento nella classe di tipo corrispondente.|
 
 **Tag client, Attributi client**
@@ -48,8 +48,8 @@ Tramite queste opzioni viene determinato se durante la formattazione automatica 
 |Opzione|Risultato|
 |---------------------------------|------------------------------|
 |**Come immesse**|Esatta combinazione di maiuscole/minuscole dell'attributo come immessa.|
-|**Maiuscole**|I nomi degli attributi vengono riformattati in maiuscolo.|
-|**Minuscole**|I nomi degli attributi vengono riformattati in minuscolo.|
+|**Maiuscolo**|I nomi degli attributi vengono riformattati in maiuscolo.|
+|**Lettere minuscole**|I nomi degli attributi vengono riformattati in minuscolo.|
 
 ## <a name="automatic-formatting-options"></a>Opzioni di formattazione automatica
 
@@ -58,31 +58,31 @@ Tramite queste opzioni viene determinata l'aggiunta o la rimozione delle interru
 > [!NOTE]
 > Queste impostazioni non alterano gli spazi all'interno del markup XML.
 
-### <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 - **Inserisci virgolette per valori attributi durante la digitazione**
 
-   Quando questa opzione è selezionata, l'editor inserisce automaticamente le virgolette per racchiudere gli attributi durante la digitazione, ad esempio: ID = "Select1". Deselezionare questa opzione se si preferisce inserire manualmente le virgolette nel markup.
+   Quando questa opzione è selezionata, l'editor inserisce automaticamente le virgolette intorno agli attributi durante la digitazione (ad esempio: ID "Select1"). Deselezionare questa opzione se si preferisce inserire manualmente le virgolette nel markup.
 
    > [!NOTE]
    > Indipendentemente dalla selezione di questa opzione, tutte le virgolette esistenti nel markup vengono mantenute: le virgolette non vengono mai rimosse.
 
 - **Inserisci valori di attributo tra virgolette durante la formattazione**
 
-   Quando questa opzione è selezionata, la formattazione automatica aggiunge le virgolette intorno ai valori degli attributi, ad esempio: ID = "Select1".
+   Quando questa opzione è selezionata, la formattazione automatica aggiunge le virgolette intorno ai valori degli attributi (ad esempio: ID "Select1").
 
    > [!NOTE]
    > Indipendentemente dalla selezione di questa opzione, tutte le virgolette esistenti nel markup vengono mantenute.
 
 - **Inserisci automaticamente tag di chiusura**
 
-   Se selezionata, nell'editor viene creato automaticamente un tag di chiusura, ad esempio **\</b>** , quando si chiude il tag di apertura.
+   Quando questa opzione è selezionata, l'editor crea automaticamente un tag di chiusura (ad esempio, ** \</b>**) quando si chiude il tag di apertura.
 
 ## <a name="tag-wrapping"></a>Ritorno a capo dei tag
 
 Queste opzioni determinano se i tag vengono suddivisi nell'editor in più righe qualora superino una determinata lunghezza.
 
-### <a name="uielement-list"></a>Elenco UIElement
+### <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 - **Tag a capo quando superano la lunghezza specificata**
 

@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633681"
 ---
 # <a name="item-functions"></a>funzioni Item
 
-Il codice in attività e destinazioni può chiamare funzioni di elemento per ottenere informazioni sugli elementi del progetto (in MSBuild 4,0 e versioni successive). Queste funzioni semplificano l'ottenimento di elementi distinti e sono più veloci del ciclo tra gli elementi.
+Il codice nelle attività e nelle destinazioni può chiamare le funzioni degli elementi per ottenere informazioni sugli elementi nel progetto (in MSBuild 4.0 e versioni successive). Queste funzioni semplificano l'ottenimento di elementi distinti e sono più veloci rispetto a scorrere gli elementi.
 
 ## <a name="string-item-functions"></a>Funzioni degli elementi per i valori stringa
 
@@ -104,4 +104,4 @@ Nell'esempio seguente viene illustrato come usare le funzioni intrinseche degli 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Items](../msbuild/msbuild-items.md)
+- [Elementi](../msbuild/msbuild-items.md)

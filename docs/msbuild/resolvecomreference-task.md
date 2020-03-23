@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595202"
 ---
 # <a name="resolvecomreference-task"></a>Attività ResolveComReference
 
-Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con estensione *tlb* e risolve tali librerie in percorsi sul disco.
+Accetta un elenco di uno o più nomi di librerie dei tipi o file *con estensione tlb* e risolve tali librerie dei tipi in percorsi su disco.
 
 ## <a name="parameters"></a>Parametri
 
@@ -78,9 +78,9 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 > [!NOTE]
 > Una maggiore quantità di informazioni fornite per identificare in maniera univoca una libreria dei tipi aumenta le probabilità di risoluzione dell'attività nel file corretto su disco.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
-Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di tali parametri aggiuntivi e le relative descrizioni, vedere [Classe di base Task](../msbuild/task-base-class.md).
+Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe base Task](../msbuild/task-base-class.md).
 
 Per il corretto funzionamento di questa attività, non è necessario che la DLL COM sia registrata nel computer.
 

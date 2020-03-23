@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596164"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: firmare manifesti dell'applicazione e di distribuzione
@@ -71,7 +71,7 @@ Per altre informazioni sulla creazione di file di chiave, vedere [Procedura: Cre
 4. Immettere la password per accedere al file di chiave e quindi premere **INVIO**.
 
 > [!NOTE]
-> Il file *pfx* non può includere informazioni di concatenamento dei certificati. In caso contrario, si verificherà l'errore di importazione seguente: **Impossibile trovare il certificato e la chiave privata per la decrittografia**. Per rimuovere le informazioni di concatenamento dei certificati, è possibile usare *certmgr. msc* e [disabilitare l'opzione](/previous-versions/aa730868(v=vs.80)) per **includere tutti i certificati** quando si esporta il file *. pfx.
+> Il file *pfx* non può includere informazioni di concatenamento dei certificati. In caso affermativo, si verificherà il seguente errore di importazione: **Impossibile trovare il certificato e la chiave privata per la decrittografia**. Per rimuovere le informazioni sul concatenamento dei certificati, è possibile utilizzare *Certmgr.msc* e [disattivare l'opzione](/previous-versions/aa730868(v=vs.80)) **Includi tutti i certificati** durante l'esportazione del file con estensione pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Firmare con un certificato di prova
 
@@ -113,7 +113,7 @@ Per impostazione predefinita, ClickOnce genera automaticamente manifesti firmati
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Assembly con nomi sicuri](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assembly con nome sicuro](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Procedura: Creare una coppia di chiavi pubblica/privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [Pagina Firma, Creazione progetti](../ide/reference/signing-page-project-designer.md)
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)

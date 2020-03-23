@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75918655"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizzare l'analisi code coverage
@@ -24,11 +24,11 @@ Per includere assembly che non fanno parte della soluzione, ottenere i file *PDB
 
 ## <a name="run-settings-file"></a>File di impostazioni esecuzione test
 
-Il [file di impostazioni esecuzione test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md) è il file di configurazione usato dagli strumenti di testing unità. Le impostazioni avanzate di code coverage vengono specificate in un file con estensione *runsettings*.
+Il file delle [impostazioni di esecuzione](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md) è il file di configurazione utilizzato dagli strumenti di unit test. Le impostazioni avanzate di code coverage vengono specificate in un file *con estensione runsettings.*
 
 Per personalizzare il code coverage, seguire questa procedura:
 
-1. Aggiungere un file di impostazioni esecuzione test alla propria soluzione. In **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo elemento** dal menu di scelta rapida della soluzione e selezionare **File XML**. Salvare il file con un nome come *CodeCoverage.runsettings*.
+1. Aggiungere un file di impostazioni esecuzione test alla propria soluzione. In **Esplora soluzioni**scegliere **Aggiungi** > **nuovo elemento**dal menu di scelta rapida della soluzione, quindi File **XML**. Salvare il file con un nome come *CodeCoverage.runsettings*.
 
 2. Aggiungere il contenuto riportato nel file di esempio alla fine di questo articolo, quindi personalizzarlo secondo le proprie esigenze come descritto nelle sezioni seguenti.
 
@@ -40,7 +40,7 @@ Per personalizzare il code coverage, seguire questa procedura:
 
 ::: moniker range=">=vs-2019"
 
-3. Per selezionare il file di impostazioni esecuzione test, scegliere **Seleziona file di impostazioni**dal menu **test** . Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando, vedere [Configurare unit test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+3. Per selezionare il file delle impostazioni di esecuzione, scegliere **Seleziona file di impostazioni**dal menu **Test** . Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando, vedere [Configurare unit test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ Per personalizzare il code coverage, seguire questa procedura:
 
 ::: moniker range="vs-2017"
 
-Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **test** > **impostazioni test** .
+Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test** > **Impostazioni test**.
 
 ![Menu Impostazioni test con file di impostazioni personalizzato in Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -59,13 +59,13 @@ Per attivare e disattivare le impostazioni personalizzate, deselezionare o selez
 
 ::: moniker range=">=vs-2019"
 
-Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **test** .
+Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test.**
 
 ::: moniker-end
 
 ## <a name="symbol-search-paths"></a>Percorsi di ricerca dei simboli
 
-Il code coverage richiede file di simboli (file *PDB*) per gli assembly. Per gli assembly compilati dalla soluzione, i file di simboli sono solitamente presenti accanto ai file binari e il code coverage viene eseguito automaticamente. In alcuni casi è consigliabile includere gli assembly a cui si fa riferimento nell'analisi del code coverage. In questi casi i file *PDB* non possono essere adiacenti ai binari, ma è possibile specificare il percorso di ricerca dei simboli nel file *RUNSETTINGS*.
+Il code coverage richiede file di simboli (file *PDB*) per gli assembly. Per gli assembly compilati dalla soluzione, i file di simboli sono solitamente presenti accanto ai file binari e il code coverage viene eseguito automaticamente. In alcuni casi è consigliabile includere gli assembly a cui si fa riferimento nell'analisi del code coverage. In questi casi, i file *pdb* potrebbero non essere adiacenti ai file binari, ma è possibile specificare il percorso di ricerca dei simboli nel file *con estensione runsettings.*
 
 ```xml
 <SymbolSearchPaths>
@@ -79,9 +79,9 @@ Il code coverage richiede file di simboli (file *PDB*) per gli assembly. Per gli
 
 ## <a name="include-or-exclude-assemblies-and-members"></a>Includere o escludere assembly e membri
 
-È possibile includere o escludere assembly o tipi e membri specifici da code coverage analysis. Se la sezione **include** è vuota o omessa, vengono inclusi tutti gli assembly caricati e i file PDB associati. Se un assembly o un membro corrisponde a una clausola nella sezione **Exclude** , viene esclusa dalla code coverage. La sezione **Exclude** ha la precedenza sulla sezione **include** : se un assembly è elencato in **include** ed **exclude**, non verrà incluso in code coverage.
+È possibile includere o escludere assembly o tipi e membri specifici dall'analisi di code coverage. Se la sezione **Include** è vuota o omessa, vengono inclusi tutti gli assembly caricati e con file PDB associati. Se un assembly o un membro corrisponde a una clausola nella sezione **Exclude,** viene escluso dal code coverage. La sezione **Exclude** ha la precedenza sulla sezione **Include:** se un assembly è elencato sia in **Includi** che **in Escludi**, non verrà incluso nel code coverage.
 
-Il codice XML seguente, ad esempio, esclude un singolo assembly specificandone il nome:
+Ad esempio, il codice XML seguente esclude un singolo assembly specificandone il nome:
 
 ```xml
 <ModulePaths>
@@ -92,7 +92,7 @@ Il codice XML seguente, ad esempio, esclude un singolo assembly specificandone i
 </ModulePaths>
 ```
 
-Nell'esempio seguente viene specificato che solo un singolo assembly deve essere incluso in code coverage:
+Nell'esempio seguente viene specificato che solo un singolo assembly deve essere incluso nel code coverage:The following example specifies that only a single assembly should be included in code coverage:
 
 ```xml
 <ModulePaths>
@@ -103,28 +103,28 @@ Nell'esempio seguente viene specificato che solo un singolo assembly deve essere
 </ModulePaths>
 ```
 
-La tabella seguente illustra i diversi modi in cui è possibile trovare una corrispondenza tra gli assembly e i membri per l'inclusione o l'esclusione da code coverage.
+Nella tabella seguente vengono illustrati i vari modi in cui gli assembly e i membri possono essere associati per l'inclusione o l'esclusione dal code coverage.
 
-| Elemento XML | Elementi corrispondenti |
+| Elemento XML | Cosa corrisponde |
 | - | - |
-| ModulePath | Corrisponde agli assembly specificati in base al nome dell'assembly o al percorso del file. |
-| CompanyName | Corrisponde agli assembly in base all'attributo **Company** . |
-| PublicKeyToken | Corrisponde agli assembly firmati dal token di chiave pubblica. |
-| Source | Corrisponde agli elementi in base al nome del percorso del file di origine in cui sono definiti. |
-| Attributo | Corrisponde a elementi con l'attributo specificato. Specificare il nome completo dell'attributo, ad esempio `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Se si esclude l'attributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, il codice che usa funzionalità del linguaggio come `async`, `await`, `yield return` e le proprietà implementate automaticamente viene escluso dall'analisi code coverage. Per escludere il codice effettivamente generato, escludere solo l'attributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
-| Funzione | Corrisponde a procedure, funzioni o metodi in base al nome completo, incluso l'elenco di parametri. È inoltre possibile far corrispondere parte del nome utilizzando un' [espressione regolare](#regular-expressions).<br/><br/>Esempi:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
+| ModulePath | Corrisponde agli assembly specificati dal nome dell'assembly o dal percorso del file. |
+| CompanyName | Corrisponde agli assembly in base all'attributo **Company.** |
+| PublicKeyToken | Corrisponde agli assembly firmati in base al token di chiave pubblica. |
+| Source (Sorgente) | Corrisponde agli elementi in base al nome del percorso del file di origine in cui sono definiti. |
+| Attributo | Corrisponde agli elementi con l'attributo specificato. Specificare il nome completo dell'attributo, ad esempio `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Se si esclude l'attributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, il codice che usa funzionalità del linguaggio come `async`, `await`, `yield return` e le proprietà implementate automaticamente viene escluso dall'analisi code coverage. Per escludere il codice effettivamente generato, escludere solo l'attributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
+| Funzione | Corrisponde a routine, funzioni o metodi in base al nome completo, incluso l'elenco di parametri. È inoltre possibile trovare una corrispondenza nella parte del nome utilizzando [un'espressione regolare](#regular-expressions).<br/><br/>Esempi:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C)) |
 
 ### <a name="regular-expressions"></a>Espressioni regolari
 
-I nodi Includi ed Escludi usano espressioni regolari, che non sono uguali ai caratteri jolly. Tutte le corrispondenze fanno distinzione tra maiuscole e minuscole. Di seguito sono riportati alcuni esempi:
+I nodi Includi ed Escludi usano espressioni regolari, che non sono uguali ai caratteri jolly. Tutte le corrispondenze fanno distinzione tra maiuscole e minuscole. Ad esempio:
 
-- **.\*** corrisponde a una stringa composta da qualsiasi carattere
+- **. \* ** corrisponde a una stringa di qualsiasi carattere
 
 - **\\.** corrisponde a un punto "."
 
-- **\\(   \\)** corrisponde alle parentesi "(  )"
+- ( ) corrisponde alle parentesi "( )" ** \\ \\**
 
-- **\\\\** corrisponde al delimitatore del percorso di file "\\"
+- **\\\\**corrisponde a un delimitatore di percorso di file "\\"
 
 - **^** corrisponde all'inizio della stringa
 
@@ -167,7 +167,7 @@ Nel codice XML seguente viene illustrato come includere ed escludere funzioni sp
 > [!WARNING]
 > Se è presente un errore in un'espressione regolare, ad esempio un carattere senza codice di escape o parentesi non corrispondenti, l'analisi di code coverage non funzionerà.
 
-Per altre informazioni sulle espressioni regolari, vedere [usare espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Per ulteriori informazioni sulle espressioni regolari, vedere [Usare espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="sample-runsettings-file"></a>File con estensione runsettings di esempio
 
@@ -292,4 +292,4 @@ Included items must then not match any entries in the exclude list to remain inc
 
 - [Configurare unit test usando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [Usare la funzionalità code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-- [Eseguire unit test del codice](../test/unit-test-your-code.md)
+- [Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)

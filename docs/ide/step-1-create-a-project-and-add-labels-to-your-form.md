@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579451"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere etichette al modulo
@@ -22,36 +22,36 @@ ms.locfileid: "77579451"
 I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del progetto e nell'aggiunta di etichette, di un pulsante e di altri controlli a un modulo. Si impostano inoltre le proprietà di ogni controllo che si desidera aggiungere. Il progetto conterrà il modulo, i controlli e, più avanti nell'esercitazione, il codice. Il pulsante avvia il quiz, le etichette mostrano i problemi del quiz e gli altri controlli mostrano le risposte e il tempo rimanente per completarlo.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz di matematica a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
 ## <a name="to-create-a-project-for-a-form"></a>Per creare un progetto da un modulo
 
 ::: moniker range="vs-2017"
 
-1. Nella barra dei menu scegliere **File** > **nuovo** **progetto**>.
+1. Nella barra dei menu scegliere **File** > **Nuovo** > **progetto**.
 
 1. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
 
-1. Nell'elenco di modelli scegliere il modello **App Windows Forms (.NET Framework)** , assegnare il nome *QuizMatematico* e quindi scegliere il pulsante **OK**.
+1. Nell'elenco di modelli scegliere il modello **App Windows Forms (.NET Framework) **, assegnare il nome *QuizMatematico* e quindi scegliere il pulsante **OK**.
 
     Verrà visualizzato un modulo con nome *Form1.cs* o *Form1.vb*, a seconda del linguaggio di programmazione scelto.
 
    > [!NOTE]
-   > Se non viene visualizzato il modello **App Windows Forms (.NET Framework)** , usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.<br/><br/>![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Per altre informazioni, vedere la pagina [Installare Visual Studio](../install/install-visual-studio.md).
+   > Se non viene visualizzato il modello **App Windows Forms (.NET Framework)**, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.<br/><br/>![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Per altre informazioni, vedere la pagina [Installare Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+1. Nella finestra di avvio scegliere **Crea un nuovo progetto.**
 
-   ![Visualizzare la finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **tipo di progetto** .
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **Tipo di progetto.**
 
-   Dopo aver applicato il filtro del **tipo di progetto** , scegliere il modello **App Windows Forms (.NET Framework)** per C# o Visual Basic, quindi scegliere **Avanti**.
+   Dopo aver applicato il filtro **di tipo Progetto,** scegliere il modello **di app Windows Form (.NET Framework)** per C'è o Visual Basic e quindi scegliere **Avanti**.
 
-   ![Scegliere il modello C# o Visual Basic per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Scegliere il modello di C o Visual Basic per l'app Windows Form (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Se il modello **App Windows Forms (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
@@ -62,15 +62,15 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
+   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *QuizMatematico* nella casella **Nome del progetto**. Scegliere **Crea**.
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *QuizMatematico* nella casella **Nome del progetto**. Scegliere quindi **Crea,** quindi Crea .
 
 ::: moniker-end
 
 ## <a name="to-set-properties-for-a-form"></a>Per impostare le proprietà per un modulo
 
-1. In Visual Studio scegliere il modulo (*Form1.cs* oppure *Form1.vb*, a seconda del linguaggio di programmazione) e quindi modificare la relativa proprietà **Testo** in  **Quiz matematico**.
+1. In Visual Studio scegliere il modulo (*Form1.cs* oppure *Form1.vb*, a seconda del linguaggio di programmazione) e quindi modificare la relativa proprietà **Testo** in ** Quiz matematico**.
 
      La finestra **Proprietà** conterrà le proprietà per il modulo.
 
@@ -98,15 +98,15 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
      Queste righe consentono di allineare i controlli nel modulo.
 
-6. Nella finestra **Proprietà** scegliere la proprietà **Text** e quindi premere **BACKSPACE** per cancellare il valore.
+6. Nella finestra **Proprietà** scegliere la proprietà **Text,** quindi premere **BACKSPACE** per cancellarne il valore.
 
-7. Scegliere il segno più ( **+** ) accanto alla proprietà **Font** e quindi modificare il valore della proprietà **Size** su **15,75**.
+7. Scegliere il segno**+** più ( ) accanto alla proprietà **Font,** quindi modificare il valore della proprietà **Size** in **15,75**.
 
-     È possibile modificare diverse proprietà del tipo di carattere, come illustrato nella schermata seguente.
+     È possibile modificare diverse proprietà del carattere, come illustrato nella schermata seguente.
 
      ![Finestra Proprietà con la dimensione del carattere](../ide/media/express_setfontsize.png)
 
-8. Aggiungere un altro controllo Label dalla **casella degli strumenti** e quindi impostare la dimensione del carattere su **15,75**.
+8. Aggiungere un altro controllo Label dalla **Casella degli strumenti**, quindi impostare la dimensione del carattere su **15,75**.
 
 9. Impostare la proprietà **Text** su **Tempo rimanente**.
 
@@ -114,7 +114,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 ### <a name="to-add-controls-for-the-addition-problems"></a>Per aggiungere controlli per i problemi di addizione
 
-1. Aggiungere un controllo Label dalla **casella degli strumenti** e impostare la relativa proprietà **Text** su **?** (punto interrogativo).
+1. Aggiungere un controllo Label dalla **Casella degli strumenti**, quindi impostarne la proprietà **Text** su **?** (punto interrogativo).
 
 2. Impostare la proprietà **AutoSize** su **False**.
 
@@ -128,9 +128,9 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 7. Impostare la proprietà **(Name)** su **plusLeftLabel**.
 
-8. Scegliere l'etichetta **plusLeftLabel** e quindi premere **CTRL**+**C** oppure scegliere **Copia** dal menu **Modifica**.
+8. Scegliere l'etichetta **plusLeftLabel** e **Ctrl**+quindi ctrl**C** o **Copia** dal menu **Modifica.**
 
-9. Incollare l'etichetta tre volte premendo **CTRL**+**V** oppure scegliendo **Incolla** dal menu **Modifica**.
+9. Incollare l'etichetta tre volte scegliendo i tasti **Ctrl**+**V** o **Incolla** dal menu **Modifica.**
 
 10. Disporre le tre nuove etichette in modo che risultino in fila a destra dell'etichetta **plusLeftLabel**.
 
@@ -148,7 +148,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 15. Allineare il controllo NumericUpDown ai controlli Label per il problema di addizione.
 
-16. Modificare il valore della proprietà **(Name)** per il controllo NumericUpDown in **sum**.
+16. Impostare il valore della proprietà **(Name)** per il controllo NumericUpDown su **somma**.
 
      È stata creata la prima riga, come illustrato nella figura seguente.
 
@@ -170,7 +170,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 5. Assegnare alla seconda etichetta punto interrogativo il nome **minusRightLabel**.
 
-6. Assegnare al controllo NumericUpDown il nome **difference**.
+6. Denominare il controllo NumericUpDown**differenza**.
 
 7. Incollare i cinque controlli altre due volte.
 
@@ -196,11 +196,11 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 6. Impostare il valore della proprietà **TabIndex** per il controllo **startButton** su **1**.
 
     > [!NOTE]
-    > La proprietà **TabIndex** imposta l'ordine dei controlli quando l'esecutore del quiz preme **TAB**. Per verificarne il funzionamento, aprire una finestra di dialogo qualsiasi, ad esempio sulla barra dei menu scegliere **File** > **Apri**, e quindi premere **TAB** alcune volte. Osservare il modo in cui il cursore si sposta da un controllo all'altro ogni volta che si preme **TAB**. Un programmatore ha deciso l'ordine quando ha creato il modulo.
+    > Il **TabIndex** proprietà imposta l'ordine dei controlli quando il selettore del quiz sceglie il **tasto Tab.** Per verificarne il funzionamento, aprire una finestra di dialogo qualsiasi, ad esempio sulla barra dei menu, scegliere**Apri** **file,** > quindi premere **TAB** alcune volte. Guarda come il cursore si sposta da un controllo all'altro ogni volta che scegli il **tasto Tab.** Un programmatore ha deciso l'ordine quando ha creato il modulo.
 
 7. Impostare il valore della proprietà **TabIndex** per il controllo somma NumericUpDown su **2**, per il controllo differenza su **3**, per il controllo prodotto su **4** e per il controllo quoziente su **5**.
 
-     Il form dovrebbe essere simile allo screenshot seguente.
+     Il modulo dovrebbe essere simile alla schermata seguente.
 
      ![Form iniziale del quiz matematico](../ide/media/express_formlaidout.png)
 
@@ -208,6 +208,6 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 2: creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md)** .
+- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 2: Creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md)**.
 
-- Per tornare all'argomento introduttivo, vedere [Esercitazione 2: Creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Per tornare all'argomento Panoramica, vedere [Esercitazione 2: Creare un quiz di matematica a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)

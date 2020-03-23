@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595722"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
@@ -66,7 +66,7 @@ Immettere in questa casella di testo gli argomenti della riga di comando da usar
 
 **Directory di lavoro**
 
-Immettere in questa casella di testo la directory da cui verrà avviato il progetto oppure fare clic sul pulsante Sfoglia ( **...** ) per scegliere una directory.
+Immettere in questa casella di testo la directory da cui verrà avviato il progetto oppure fare clic sul pulsante Sfoglia (**...**) per scegliere una directory.
 
 **Usa computer remoto**
 
@@ -76,16 +76,16 @@ Per il debug dell'applicazione da un computer remoto selezionare questa casella 
 
 **Abilita debug del codice nativo**
 
-Questa opzione specifica se è supportato il debug del codice nativo. Selezionare questa casella di controllo se si effettuano chiamate a oggetti COM o se si avvia un programma personalizzato scritto in codice nativo che chiama il progetto ed è necessario eseguire il debug del codice nativo. Deselezionare questa casella di controllo per disabilitare il debug di codice non gestito. Per impostazione predefinita, questa casella di controllo è deselezionata.
+Questa opzione specifica se è supportato il debug del codice nativo. Selezionare questa casella di controllo se si effettuano chiamate a oggetti COM o se si avvia un programma personalizzato scritto in codice nativo che chiama il progetto ed è necessario eseguire il debug del codice nativo. Deselezionare questa casella di controllo per disabilitare il debug di codice non gestito. Questa casella di controllo è deselezionata per impostazione predefinita.
 
 **Abilita debug SQL Server**
 
-Selezionare o deselezionare questa casella di controllo per abilitare o disabilitare il debug delle routine SQL dall'applicazione Visual Basic. Per impostazione predefinita, questa casella di controllo è deselezionata.
+Selezionare o deselezionare questa casella di controllo per abilitare o disabilitare il debug delle routine SQL dall'applicazione Visual Basic. Questa casella di controllo è deselezionata per impostazione predefinita.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Presentazione del debugger](../../debugger/debugger-feature-tour.md)
-- [Impostazioni di progetto per le configurazioni di debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Impostazioni di progetto per una configurazione di debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Primo sguardo al debugger](../../debugger/debugger-feature-tour.md)
+- [Impostazioni di progetto per le configurazioni di debug di C](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Impostazioni di progetto per una configurazione di debug di Visual BasicProject Settings for a Visual Basic Debug Configuration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Procedura: eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitateHow to: Debug a ClickOnce Application with Restricted Permissions](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md)

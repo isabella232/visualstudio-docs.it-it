@@ -7,10 +7,10 @@ ms.date: 12/13/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75405824"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Presentazione di Visual Studio 2019 per Mac
@@ -18,13 +18,13 @@ ms.locfileid: "75405824"
 Visual Studio per Mac è un _ambiente di sviluppo integrato_ .NET nel Mac che può essere usato per modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Oltre alle funzionalità previste, ad esempio un editor e un debugger standard, Visual Studio per Mac include compilatori, strumenti di completamento del codice, finestre di progettazione con interfaccia grafica e controllo del codice sorgente che semplificano il processo di sviluppo del software.
 
 Visual Studio per Mac supporta molti degli stessi tipi di file della controparte Windows, ad esempio i file con estensione `.csproj`, `.fsproj` o `.sln`, nonché funzionalità quali EditorConfig, rendendo possibile l'uso dell'IDE più adatto alle proprie esigenze.
-La creazione, l'apertura e lo sviluppo di app saranno operazioni familiari per chi in precedenza ha usato Visual Studio in Windows. Visual Studio per Mac usa inoltre molti degli strumenti avanzati che rendono la controparte Windows un IDE estremamente potente. La piattaforma di compilazione Roslyn viene usata per il refactoring e per IntelliSense. Il sistema di progetto e il motore di compilazione utilizzano MSBuild e l'editor di origine utilizza la stessa base di Visual Studio in Windows. Vengono usati gli stessi motori di debugger per le app Xamarin e .NET Core e le stesse finestre di progettazione per Xamarin.iOS e Xamarin.Android.
+La creazione, l'apertura e lo sviluppo di app saranno operazioni familiari per chi in precedenza ha usato Visual Studio in Windows. Visual Studio per Mac usa inoltre molti degli strumenti avanzati che rendono la controparte Windows un IDE estremamente potente. La piattaforma di compilazione Roslyn viene usata per il refactoring e per IntelliSense. Il sistema di progetto e il motore di compilazione utilizzano MSBuild e l'editor di origine utilizza le stesse basi di Visual Studio in Windows.Its project system and build engine use MSBuild, and its source editor uses the same base as Visual Studio on Windows. Vengono usati gli stessi motori di debugger per le app Xamarin e .NET Core e le stesse finestre di progettazione per Xamarin.iOS e Xamarin.Android.
 
 ## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Attività possibili in Visual Studio per Mac
 
 Visual Studio per Mac supporta i tipi di sviluppo seguenti:
 
-- ASP.NET Core applicazioni Web con C#supporto F#per, e per Razor Pages, JavaScript e typescript
+- ASP.NET applicazioni Web di base con C, F e il supporto per le pagine Razor, JavaScript e TypeScript
 - Applicazioni console .NET Core con C# o F#
 - Giochi Unity multipiattaforma e applicazioni con C#
 - Applicazioni Android, iOS, tvOS e watchOS in Xamarin con C# o F# e XAML
@@ -36,15 +36,15 @@ L'articolo illustra varie sezioni di Visual Studio per Mac e presenta alcune del
 
 Visual Studio per Mac è organizzato in sezioni diverse per la gestione di impostazioni e file delle applicazioni, la creazione di codice delle applicazioni e il debug.
 
-## <a name="getting-started"></a>Per iniziare
+## <a name="getting-started"></a>Introduzione
 
-Quando si avvia Visual Studio 2019 per Mac, verrà visualizzata una finestra di accesso. Accedere con l'account Microsoft per attivare una licenza a pagamento (se disponibile) o connettersi alle sottoscrizioni di Azure. È possibile scegliere di **eseguire questa** operazione in un secondo momento e accedere in un secondo momento tramite la voce **di menu di accesso > di Visual Studio** :
+Quando si avvia Visual Studio 2019 per Mac, verrà visualizzata una finestra di accesso. Accedere con l'account Microsoft per attivare una licenza a pagamento (se disponibile) o connettersi alle sottoscrizioni di Azure. È possibile premere **Farò questo in un secondo momento** e accedere in un secondo momento tramite la voce di menu di > di Visual **Studio:**
 
-![Accedere all'account Microsoft](media/ide-tour-2019-start-signin.png)
+![Effettuare l'accesso con l'account Microsoft.](media/ide-tour-2019-start-signin.png)
 
-Sarà quindi possibile personalizzare l'IDE selezionando i tasti di scelta rapida preferiti: Visual Studio per Mac, Visual Studio, Visual Studio Code o Xcode:
+Verrà quindi fornita la possibilità di personalizzare l'IDE selezionando i tasti di scelta rapida preferiti: Visual Studio per Mac, Visual Studio, Visual Studio Code o Xcode:
 
-![Selezionare i tasti di scelta rapida Preferiti](media/ide-tour-2019-keyboard-shortcut.png)
+![Selezionare le scelte rapide da tastiera preferite](media/ide-tour-2019-keyboard-shortcut.png)
 
 Gli utenti che hanno eseguito l'accesso visualizzeranno la nuova _finestra iniziale_, che mostra un elenco dei progetti recenti e i pulsanti per aprire un progetto esistente o crearne uno nuovo:
 
@@ -94,26 +94,26 @@ Le informazioni sull'uso di un pacchetto NuGet in un'applicazione sono disponibi
 
 ## <a name="source-editor"></a>Editor standard
 
-Indipendentemente da se si sta scrivendo in C#, XAML o JavaScript, l'editor di codice condivide gli stessi componenti di base con le finestre di Visual Studio, con un'interfaccia utente completamente nativa.
+Indipendentemente dal fatto che tu stia scrivendo in C, XAML o Javascript, l'editor di codice condivide gli stessi componenti di base con Visual Studio Windows, con un'interfaccia utente completamente nativa.
 
-In questo esempio vengono riportate alcune delle funzionalità seguenti:
+Questo porta alcune delle seguenti caratteristiche:
 
 * Interfaccia utente (basata su Cocoa) macOS nativa (descrizioni comandi, area dell'editor, ornamenti dei margini, rendering del testo, IntelliSense)
-* Filtro del tipo IntelliSense e "Mostra elementi di importazione"
+* Filtro dei tipi IntelliSense e "mostra elementi di importazione"
 * Supporto per input di testo nativo
 * Supporto del linguaggio RTL/BiDi
 * Roslyn 3
 * Supporto di più punti di inserimento
-* a capo automatico
-* Interfaccia utente di IntelliSense aggiornata
-* Ricerca/sostituzione migliorata
+* A capo automatico
+* Interfaccia utente IntelliSense aggiornata
+* Miglioramento della ricerca/sostituzione
 * Supporto per frammenti 
 * Selezione di Formatta
-* Lampadine inline
+* Lampadine in linea
 
-Per ulteriori informazioni sull'utilizzo dell'editor di origine in Visual Studio per Mac, vedere la documentazione dell' [editor di origine](/visualstudio/mac/source-editor) .
+Per altre informazioni sull'uso dell'Editor di origine in Visual Studio per Mac, vedere la documentazione [dell'Editor di origine.](/visualstudio/mac/source-editor)
 
-Per tenere le schede visibili in qualsiasi momento, è possibile sfruttare i vantaggi offerti dall'aggiunta. Ciò garantisce che ogni volta che si avvia un progetto, la scheda necessaria sarà sempre visualizzata. Per aggiungere una scheda, passare il puntatore del mouse sulla scheda e fare clic sull'icona del _pin_ :
+Per mantenere sempre visibili le schede, è possibile sfruttarle. In questo modo, ogni volta che si avvia un progetto, verrà sempre visualizzata la scheda necessaria. Per aggiungere una scheda, passa il mouse sopra la scheda e fai clic sull'icona a _forma di puntina:_
 
 ![Aggiunta di una scheda](media/ide-tour-tabpin.png)
 
@@ -123,9 +123,9 @@ Visual Studio per Mac fornisce due metodi utili per il refactoring del codice: a
 
 ## <a name="debugging"></a>Debug
 
-Visual Studio per Mac dispone di debugger che supportano i progetti .NET Core, .NET Framework, Unity e Novell. Visual Studio per Mac usa il debugger di .NET Core e il debugger mono soft, consentendo all'IDE di eseguire il debug di codice gestito in tutte le piattaforme. Per altre informazioni sul debug, vedere l'articolo [Debug](/visualstudio/mac/debugging).
+In Visual Studio per Mac sono inclusi debugger che supportano progetti .NET Core, .NET Framework, Unity e Xamarin. Visual Studio per Mac usa il debugger di .NET Core e Mono Soft Debugger, consentendo all'IDE di eseguire il debug del codice gestito in tutte le piattaforme. Per altre informazioni sul debug, vedere l'articolo [Debug](/visualstudio/mac/debugging).
 
-Il debugger contiene visualizzatori avanzati per tipi speciali come stringhe, colori, URL, oltre a dimensioni, coordinate e curve di Bézier.
+Il debugger contiene visualizzatori avanzati per tipi speciali quali stringhe, colori, URL, nonché dimensioni, coordinate e curve bézier.
 
 Per altre informazioni sulle visualizzazioni dei dati del debugger, vedere l'articolo [Visualizzazioni dei dati](/visualstudio/mac/data-visualizations).
 

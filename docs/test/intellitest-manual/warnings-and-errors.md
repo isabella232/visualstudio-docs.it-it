@@ -10,17 +10,17 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77275445"
 ---
 # <a name="warnings-and-errors"></a>Avvisi ed errori
 
 ## <a name="warnings-and-errors-by-category"></a>Avvisi ed errori per categoria
 
-* **Limiti**
+* **Confini**
   * [MaxBranches superato](#maxbranches-exceeded)
   * [MaxConstraintSolverTime superato](#maxconstraintsolvertime-exceeded)
   * [MaxConditions superato](#maxconditions-exceeded)
@@ -30,27 +30,27 @@ ms.locfileid: "77275445"
   * [MaxRunsWithoutNewTests superato](#maxrunswithoutnewtests-exceeded)
 
 * **Risoluzione di vincoli**
-  * [Non è possibile concretizzare la soluzione](#cannot-concretize-solution)
+  * [Impossibile concretizzare la soluzione](#cannot-concretize-solution)
 
-* **Domini o Runtime**
-  * [Serve aiuto per costruire l'oggetto](#help-construct)
-  * [Serve aiuto per trovare i tipi](#help-types)
-  * [Tipo utilizzabile ipotizzato](#usable-type-guessed)
+* **Domini o runtime**
+  * [Serve aiuto per costruire un oggetto](#help-construct)
+  * [Hai bisogno di aiuto per trovare i tipi](#help-types)
+  * [Tipo utilizzabile Indovinato](#usable-type-guessed)
 
 * **Esecuzione**
-  * [Errore imprevisto nell'esplorazione](#unexpected-exploration)
+  * [Errore imprevisto durante l'esplorazione](#unexpected-exploration)
   * [TargetInvocationException](#targetinvocationexception)
 
 * **Strumentazione**
-  * [Chiamata di metodo non instrumentato](#uninstrumented-method-called)
-  * [Chiamata di metodo esterno](#external-method-called)
-  * [Chiamata di metodo non instrumentabile](#uninstrumentable-method-called)
+  * [Metodo non instrumentato chiamato](#uninstrumented-method-called)
+  * [Metodo esterno chiamato](#external-method-called)
+  * [Metodo non instrumentabile chiamatoUninstrumentable Method Called](#uninstrumentable-method-called)
   * [Problema di testabilità](#testability-issue)
   * [Limitazione](#limitation)
 
 * **Interprete**
-  * [Rilevata mancata corrispondenza della chiamata](#observed-call-mismatch)
-  * [Valore memorizzato in un campo statico](#value-static-field)
+  * [Chiamata osservata non corrispondente](#observed-call-mismatch)
+  * [Valore archiviato nel campo statico](#value-static-field)
 
 <a name="maxbranches-exceeded"></a>
 ## <a name="maxbranches-exceeded"></a>MaxBranches superato
@@ -99,7 +99,7 @@ IntelliTest limita la lunghezza dei percorsi di esecuzione che esplora durante l
 
 Ogni diramazione condizionale che dipende dagli input dello [unit test con parametri](test-generation.md#parameterized-unit-testing) viene conteggiata in base a questo limite.
 
-Ad esempio, ogni percorso nel codice seguente usa **n + 1** condizioni:
+Ad esempio, ogni percorso nel codice seguente utilizza le condizioni **n :**
 
 ```csharp
 [PexMethod]
@@ -209,7 +209,7 @@ public void MyTest(...) {
 <a name="cannot-concretize-solution"></a>
 ## <a name="cannot-concretize-solution"></a>Non è possibile concretizzare la soluzione
 
-Questo errore è spesso la conseguenza di un errore precedente. IntelliTest usa un [risolutore di vincoli](input-generation.md#constraint-solver) per determinare nuovi input di test. In alcuni casi, gli input di test proposti dal [risolutore di vincoli](input-generation.md#constraint-solver) non sono validi. Ciò può verificarsi nei seguenti casi:
+Questo errore è spesso la conseguenza di un errore precedente. IntelliTest usa un [risolutore di vincoli](input-generation.md#constraint-solver) per determinare nuovi input di test. In alcuni casi, gli input di test proposti dal [risolutore di vincoli](input-generation.md#constraint-solver) non sono validi. Questa situazione può verificarsi quando:
 
 * alcuni vincoli non sono noti
 * i valori vengono creati in modo definito dall'utente, causando errori nel codice utente
@@ -254,7 +254,7 @@ IntelliTest [genera input di test](input-generation.md) per qualsiasi tipo .NET.
 
 IntelliTest [genera input di test](input-generation.md) per qualsiasi tipo .NET. Quando un tipo è astratto o è un'interfaccia, IntelliTest deve scegliere una particolare implementazione del tipo. Per effettuare questa scelta, deve conoscere i tipi esistenti.
 
-Quando viene visualizzato questo avviso, viene indicato che IntelliTest ha esaminato alcuni degli assembly a cui si fa riferimento ed è stato trovato un tipo di implementazione, ma non è certo che debba utilizzare quel tipo o se sono disponibili altri tipi appropriati altrove. IntelliTest ha semplicemente scelto un tipo che sembrava promettente.
+Quando viene visualizzato questo avviso, indica che IntelliTest ha esaminato alcuni degli assembly a cui si fa riferimento e ha trovato un tipo di implementazione, ma non è sicuro se deve utilizzare tale tipo o se sono disponibili altri tipi appropriati altrove. IntelliTest ha semplicemente scelto un tipo che sembrava promettente.
 
 Per evitare questo avviso, è possibile accettare la scelta di IntelliTest o indicare a IntelliTest di usare altri tipi aggiungendo un attributo [PexUseType](attribute-glossary.md#pexusetype) corrispondente.
 

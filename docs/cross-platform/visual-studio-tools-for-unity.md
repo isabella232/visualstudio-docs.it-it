@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74797125"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools per Unity
@@ -23,11 +23,11 @@ ms.locfileid: "74797125"
 
 Visual Studio Tools per Unity è un'estensione gratuita di Visual Studio che consente di trasformare Visual Studio in uno strumento potente per lo sviluppo di giochi e applicazioni multipiattaforma con Unity.
 
-L'editor di Unity è la scelta ideale per comporre scenari di gioco, ma non è possibile usarlo per scriverci codice. Con Visual Studio Tools per Unity è possibile usare le funzionalità di produttività e modifica del codice già note di Visual Studio per creare script di editor e di gioco per i giochi Unity con C# ed eseguirne il debug con le potenti funzionalità di debug di Visual Studio.
+L'editor di Unity è la scelta ideale per comporre scenari di gioco, ma non è possibile usarlo per scriverci codice. Con Visual Studio Tools per Unity è possibile usare le funzionalità di produttività e di modifica e debug del codice di Visual Studio già note per creare script di editor e di gioco per i progetti Unity con C# ed eseguirne il debug con le potenti funzionalità di debug di Visual Studio.
 
 Ma Visual Studio Tools per Unity non è solo questo. È infatti strettamente integrato con l'editor di Unity, di conseguenza non è necessario passare dall'uno all'altro per eseguire semplici attività. Include inoltre funzionalità per ottimizzare la produttività specifiche di Unity e permette di accedere rapidamente alla documentazione di Unity.
 
-## <a name="overview"></a>Panoramica di
+## <a name="overview"></a>Panoramica
 
 Visitare la pagina [Sviluppo di giochi Unity con Visual Studio](https://visualstudio.microsoft.com/vs/unity-tools/) per una panoramica dei vantaggi dell'uso di Visual Studio per lo sviluppo di Unity, oppure continuare a leggere per scoprire le funzionalità principali di Visual Studio Tools per Unity:
 
@@ -48,11 +48,11 @@ Visual Studio Tools per Unity supporta tutte le solide funzionalità di [debug](
 * Controllo e modifica del valore di variabili e argomenti.
 * Drill down in strutture di dati e oggetti complessi.
 
-### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostica Roslyn e correzioni rapide per Unity
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostica di Roslyn e correzioni rapide per Unity
 
-Scrivi codice migliore che acquisisce le procedure consigliate con la comprensione approfondita dei progetti Unity di Visual Studio.
+Scrivere codice migliore che acquisisca le procedure consigliate con la conoscenza approfondita di Visual Studio dei progetti Unity.Write better code that captures the best practices with Visual Studio's deep understanding of Unity projects.
 
-![Confronto tra stringhe di refactoring di Visual Studio con CompareTag](media/unity-diagnostics.png)
+![Confronto tra stringhe di refactoring di VS con CompareTag](media/unity-diagnostics.png)
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio per Mac Tools per Unity
 

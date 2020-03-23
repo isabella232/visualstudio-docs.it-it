@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409773"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79302840"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Flask con visualizzazioni e modelli di pagina
 
@@ -36,7 +36,7 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
 
 1. Nella cartella del progetto creare una cartella dell'app denominata `HelloFlask` facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionando **Aggiungi** > **Nuova cartella**.
 
-2. Nella cartella *HelloFlask* creare un file denominato *\_\_init\_\_.py* con il contenuto seguente che crea l'istanza `Flask` e carica le visualizzazioni dell'app (create nel passaggio successivo):
+2. Nella cartella *HelloFlask,* crea un file denominato * \_ \_\_\_init .py* con il seguente contenuto che crea l'istanza `Flask` e carica le visualizzazioni dell'app (create nel passaggio successivo):
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
     import HelloFlask.views
     ```
 
-3. Nella cartella *HelloFlask* creare un file denominato *views.py* con il contenuto seguente. Il nome *views.py* è importante perché si è usato `import HelloFlask.views` all'interno di *\_\_init\_\_.py*: se i nomi non corrispondono, verrà visualizzato un errore in fase di esecuzione.
+3. Nella cartella *HelloFlask* creare un file denominato *views.py* con il contenuto seguente. Il nome *views.py* è `import HelloFlask.views` importante perché è stato utilizzato all'interno * \_ \_di\_\_init .py*; verrà visualizzato un errore in fase di esecuzione se i nomi non corrispondono.
 
     ```python
     from flask import Flask
@@ -57,7 +57,7 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
         return "Hello Flask!"
     ```
 
-    Oltre a rinominare la funzione e la route in `home`, questo codice contiene il codice di rendering della pagina proveniente da *app.py* e importa l'oggetto `app` dichiarato in *\_\_init\_\_.py*.
+    Oltre a rinominare la funzione `home`e la route a , questo codice `app` contiene il codice di rendering della pagina da *app.py* e importa l'oggetto dichiarato in * \_ \_init\_\_.py*.
 
 4. In *HelloFlask* creare la sottocartella *templates*, che per il momento rimane vuota.
 
@@ -82,9 +82,9 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
 
     ![Struttura del progetto dopo il refactoring del codice](media/flask/step02-project-structure.png)
 
-7. Selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti (il browser visualizzato può variare) per avviare l'app e aprire un browser. Provare entrambe le route dell'URL / e /home.
+7. Selezionare **Debug** > di**avvio** di debug (**F5**) o utilizzare il pulsante **Server Web** sulla barra degli strumenti (il browser visualizzato può variare) per avviare l'app e aprire un browser. Provare entrambe le route dell'URL / e /home.
 
-8. È inoltre possibile impostare punti di interruzione in varie parti del codice e riavviare l'app per seguire la sequenza di avvio. Ad esempio, impostare un punto di interruzione nelle prime righe di *runserver.py* e *HelloFlask\_* init_ *.py* e nella riga `return "Hello Flask!"` in *views.py*. Quindi riavviare l'app (**Debug** > **Riavvia**, **CTRL**+**F5** o il pulsante della barra degli strumenti illustrato di seguito) e scorrere il codice (**F10**) o eseguirlo da ogni punto di interruzione premendo **F5**.
+8. È inoltre possibile impostare punti di interruzione in varie parti del codice e riavviare l'app per seguire la sequenza di avvio. Ad esempio, impostare un punto di interruzione sulle prime righe di `return "Hello Flask!"` *runserver.py* e *HelloFlask\_* init_*.py*e sulla riga in *views.py*. Riavviare quindi l'app (**Debug** > **Restart**, **Ctrl**+**F5**o il pulsante della barra degli strumenti illustrato di seguito) ed eseguire il codice un'istruzione alla volta (**F10**) oppure eseguire da ogni punto di interruzione utilizzando **F5**.
 
     ![Pulsante di riavvio sulla barra degli strumenti per il debug in Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -98,7 +98,7 @@ Poiché sono state apportate modifiche al codice e il test delle modifiche è ri
 
     ![Pulsante Modifiche per il controllo del codice sorgente sulla barra di stato di Visual Studio](media/flask/step02-source-control-changes-button.png)
 
-1. In **Team Explorer** immettere un messaggio per il commit, ad esempio "Refactoring del codice" e selezionare **Esegui commit di tutto**. Al termine del commit, viene visualizzato un messaggio di **commit \<hash > creato localmente. Sincronizzare per condividere le modifiche con il server.** Se si vuole eseguire il push delle modifiche nel repository remoto, selezionare **Sync** e quindi **Push** in **Commit in uscita**. È anche possibile accumulare più commit locali prima di eseguire il push in remoto.
+1. In **Team Explorer** immettere un messaggio per il commit, ad esempio "Refactoring del codice" e selezionare **Esegui commit di tutto**. Al termine del commit, viene visualizzato un messaggio ** \<Commit hash> creato localmente. Sincronizza per condividere le modifiche con il server.** Se si vuole eseguire il push delle modifiche nel repository remoto, selezionare **Sync** e quindi **Push** in **Commit in uscita**. È anche possibile accumulare più commit locali prima di eseguire il push in remoto.
 
     ![Eseguire il push dei commit in remoto in Team Explorer](media/flask/step02-source-control-push-to-remote.png)
 
@@ -199,7 +199,7 @@ Poiché il valore restituito per la visualizzazione è una stringa, è possibile
 
 Risposta: Anche se i modelli vengono in genere mantenuti in file HTML separati, è possibile usare anche un modello inline. L'uso di un file distinto è l'opzione consigliata, tuttavia, per mantenere una netta separazione tra il markup e il codice.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Domanda: I modelli devono usare l'estensione html?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Domanda: I modelli devono usare l'estensione di file html?
 
 Risposta: L'estensione *html* per i file di modello di pagina è del tutto facoltativa, perché il percorso relativo esatto del file viene sempre identificato nel primo argomento della funzione `render_template`. Per i file con estensione *html*, tuttavia, Visual Studio e altri editor offrono in genere funzionalità quali il completamento del codice e la colorazione della sintassi, che compensano il fatto che i modelli di pagina non siano rigorosamente HTML.
 

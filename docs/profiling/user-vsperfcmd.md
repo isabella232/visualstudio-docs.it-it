@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7dbb1a155e8e0ffd2690b5850299b8075a63ea3d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779961"
 ---
 # <a name="user-vsperfcmd"></a>User (VSPerfCmd)
-L'opzione **User** specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è indicato nella colonna Nome utente nella scheda **Processi** di Gestione attività di Windows.
+L'opzione **User** specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna Nome utente nella scheda **Processi** di Gestione attività di Windows.
 
  L'opzione **User** può essere specificata solo in una riga di comando che contiene anche l'opzione **Start**.
 
@@ -35,7 +35,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **User** può essere usata solo con l'opzione **Start**.
 
- **Start:** `Method` Inizializza il profiler sul metodo di profilatura specificato.
+ **Start:** `Method` inizializza il profiler al metodo di profilatura specificato.
 
 ## <a name="example"></a>Esempio
  L'esempio seguente illustra l'uso dell'opzione **User**.

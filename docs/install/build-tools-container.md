@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 53049d37f23a72adb337cdad629f4c689c83707e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114615"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installare Build Tools in un contenitore
@@ -136,7 +136,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    ::: moniker-end
    
    > [!NOTE]
-   > Il codice di errore `3010` viene usato per indicare l'esito positivo con un riavvio necessario. per ulteriori informazioni, vedere [i messaggi di errore msiexec. exe](/windows/win32/msi/error-codes) .
+   > Il `3010` codice di errore viene utilizzato per indicare l'esito positivo con un riavvio necessario, vedere messaggi di [errore MsiExec.exe](/windows/win32/msi/error-codes) per ulteriori informazioni.
 
 1. Eseguire il comando seguente in tale directory.
 
@@ -194,6 +194,6 @@ Per usare questa immagine per il flusso di lavoro CI/CD è possibile pubblicarla
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Esempio avanzato per i contenitori](advanced-build-tools-container.md)
+* [Esempio avanzato per i contenitoriAdvanced Example for Containers](advanced-build-tools-container.md)
 * [Problemi noti dei contenitori](build-tools-container-issues.md)
 * [ID dei carichi di lavoro e dei componenti di Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

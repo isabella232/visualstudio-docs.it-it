@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.openlocfilehash: 664f2431de7702219ced2ae2af4bd908e814a689
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985193"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Accesso a Visual Studio per Mac
@@ -24,7 +24,7 @@ Assicurarsi di essere connessi a Internet prima di accedere a Visual Studio per 
 
 Per accedere a Visual Studio per Mac, seguire questa procedura:
 
-1. Fare clic sul collegamento **Accedi** della home page per visualizzare la finestra di dialogo Account e premere il pulsante **Accedi**:
+1. Fare clic sul collegamento **Accedi** nella pagina di benvenuto per visualizzare la finestra di dialogo Account e premere il pulsante **Accedi:**
 
     ![Finestra di dialogo Account in Visual Studio per Mac](media/signing-in-image12.png)
 
@@ -46,5 +46,5 @@ Per aggiungere ulteriori account utente, seguire la procedura riportata nella se
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Accesso a Visual Studio (in Windows)](/visualstudio/ide/signing-in-to-visual-studio)
+- [Accedere a Visual Studio (in Windows)](/visualstudio/ide/signing-in-to-visual-studio)
 - [Gestire più account utente (Visual Studio in Windows)](/visualstudio/ide/work-with-multiple-user-accounts)

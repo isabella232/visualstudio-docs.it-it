@@ -19,28 +19,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631328"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>Attività UpdateManifestForBrowserApplication
 
-L'attività <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> viene eseguita per aggiungere l'elemento **\<HostInBrowser/>** al manifesto dell'applicazione ( *\<NomeProgetto >. exe. manifest*) quando viene compilato un progetto di applicazione browser XAML (XBAP).
+L'attività <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> viene eseguita per aggiungere l'elemento ** \<hostInBrowser />** al manifesto dell'applicazione (*\<nomeprogetto>.exe.manifest*) quando viene compilato un progetto di applicazione browser XAML (XBAP).
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|`ApplicationManifest`|Parametro **ITaskItem []** obbligatorio.<br /><br /> Specifica il percorso e il nome del file manifesto dell'applicazione a cui si desidera aggiungere l'elemento `<hostInBrowser />`.|
-|`HostInBrowser`|Parametro **Boolean** obbligatorio.<br /><br /> Specifica se modificare il manifesto dell'applicazione per includere l'elemento **\<hostInBrowser />** . Se **true**, un nuovo elemento **\<hostInBrowser />** viene incluso nell'elemento **\<entryPoint />** . L'inclusione degli elementi è cumulativa: se un elemento **\<hostInBrowser />** esiste già non viene rimosso o sovrascritto. Al contrario, viene creato un altro elemento **\<hostInBrowser />** . Se è **false**, il manifesto dell'applicazione non viene modificato.|
+|`ApplicationManifest`|Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica il percorso e il nome del file manifesto dell'applicazione a cui si desidera aggiungere l'elemento `<hostInBrowser />`.|
+|`HostInBrowser`|Parametro **Boolean** obbligatorio.<br /><br /> Specifica se modificare il manifesto dell'applicazione per includere l'elemento ** \<hostInBrowser />.** Se **true**, un nuovo elemento **\<hostInBrowser />** viene incluso nell'elemento **\<entryPoint />**. L'inclusione dell'elemento è cumulativa: se un ** \<elemento hostInBrowser />** esiste già, non viene rimosso o sovrascritto. Al contrario, viene creato un elemento ** \<hostInBrowser />** aggiuntivo. Se è **false**, il manifesto dell'applicazione non viene modificato.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
- Le applicazioni XBAP vengono eseguite utilizzando la distribuzione ClickOnce, pertanto devono essere pubblicate con i manifesti di supporto della distribuzione e dell'applicazione. MSBuild utilizza l'attività [GenerateApplicationManifest](generateapplicationmanifest-task.md) per generare un manifesto dell'applicazione.
+ Le applicazioni XBAP vengono eseguite tramite la distribuzione ClickOnce, pertanto devono essere pubblicate con la distribuzione di supporto e i manifesti dell'applicazione. MSBuild usa l'attività [GenerateApplicationManifest](generateapplicationmanifest-task.md) per generare un manifesto dell'applicazione.
 
- Quindi per configurare un'applicazione da ospitare in un browser, è necessario aggiungere un altro elemento **\<hostInBrowser />** al manifesto dell'applicazione, come illustrato nell'esempio seguente:
+ Quindi, per configurare un'applicazione da ospitare da un browser, è necessario aggiungere un elemento ** \<hostInBrowser />** aggiuntivo al manifesto dell'applicazione, come illustrato nell'esempio seguente:Then, to configure an application to be hosted from a browser, an additional hostInBrowser />element must be added to the application manifest, as shown in the following example:
 
 ```xml
 <!--MyXBAPApplication.exe.manifest-->
@@ -56,7 +56,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplicat
 />
 ```
 
- L'attività <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> viene eseguita quando viene compilato un progetto XBAP per aggiungere l'elemento `<hostInBrowser />`.
+ L'attività <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> viene eseguita quando viene compilato un `<hostInBrowser />` progetto XBAP per aggiungere l'elemento.
 
 ## <a name="example"></a>Esempio
 

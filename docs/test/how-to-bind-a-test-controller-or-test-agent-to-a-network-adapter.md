@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594786"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedura: Associare un test controller o un agente di test a una scheda di rete
@@ -25,7 +25,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 > [!WARNING]
 > Quando si tenta di configurare un agente di test, potrebbe verificarsi l'errore seguente:
 >
-> **Errore 8110. Non è possibile connettersi al computer controller specificato o accedere all'oggetto controller**
+> **Errore 8110. Impossibile connettersi al computer controller specificato o accedere all'oggetto controller**
 >
 > Questo errore può essere causato dall'installazione del controller di test in un computer con più di una scheda di rete. È anche possibile installare correttamente gli agenti e non riscontrare il problema finché non si tenta di eseguire un test.
 
@@ -49,7 +49,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
 2. Nel riquadro dei risultati, nella colonna **Nome** fare clic con il pulsante destro del mouse sul servizio **Visual Studio Test Controller** e quindi scegliere **Arresta**.
 
-     oppure
+     -oppure-
 
      Aprire un prompt dei comandi con privilegi elevati ed eseguire il comando seguente nella riga di comando:
 
@@ -95,7 +95,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
 2. Nel riquadro dei risultati, nella colonna **Nome** fare clic con il pulsante destro del mouse sul servizio **Agente di test di Visual Studio** e quindi scegliere **Arresta**.
 
-     oppure
+     -oppure-
 
      Aprire un prompt dei comandi con privilegi elevati ed eseguire il comando seguente nella riga di comando:
 

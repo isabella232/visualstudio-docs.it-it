@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2febef6987cf3440f92f6a6c505840cfe3ca3448
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579882"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Passaggio 2: Creare un problema di addizione casuale
@@ -25,13 +25,13 @@ ms.locfileid: "77579882"
 Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di matematica basati su numeri casuali. Viene inoltre creato un metodo denominato `StartTheQuiz()` che completa i problemi e avvia il timer del conto alla rovescia. Più avanti nell'esercitazione si aggiungeranno problemi di sottrazione, moltiplicazione e divisione.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz di matematica a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
 ## <a name="to-create-a-random-addition-problem"></a>Per creare un problema di addizione casuale
 
 1. Nella finestra di progettazione moduli scegliere il modulo (**Form1**).
 
-2. Sulla barra dei menu scegliere **Visualizza** > **Codice**.
+2. Nella barra dei menu scegliere **Visualizza** > **codice**.
 
      Viene visualizzato il file *Form1.cs* o *Form1.vb*, a seconda del linguaggio di programmazione in uso, per consentire di visualizzare il code-behind per il modulo.
 
@@ -71,7 +71,7 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
      Quando si inserisce un punto dopo un oggetto, IntelliSense mostra un elenco dei membri dell'oggetto, ad esempio proprietà, metodi ed eventi.
 
     > [!NOTE]
-    > Quando si utilizza il metodo `Next()` con l'oggetto `Random`, ad esempio quando si chiama `randomizer.Next(50)`, si ottiene un numero casuale minore di 50 (compreso tra 0 e 49). In questo esempio, è stato chiamato `randomizer.Next(51)`. Viene utilizzato 51 e non 50 di modo che la somma dei due numeri casuali corrisponda a una risposta compresa tra 0 e 100. Se si passa 50 al metodo `Next()`, viene scelto un numero compreso tra 0 e 49, pertanto la risposta più alta possibile è 98, non 100. Dopo l'esecuzione delle prime due istruzioni nel metodo, ciascuna delle due variabili Integer, **addend1** e **addend2**, contiene un numero casuale compreso tra 0 e 50. Questa schermata mostra C# il codice, ma IntelliSense funziona allo stesso modo per Visual Basic.
+    > Quando si utilizza il metodo `Next()` con l'oggetto `Random`, ad esempio quando si chiama `randomizer.Next(50)`, si ottiene un numero casuale minore di 50 (compreso tra 0 e 49). In questo esempio, è stato chiamato `randomizer.Next(51)`. Viene utilizzato 51 e non 50 di modo che la somma dei due numeri casuali corrisponda a una risposta compresa tra 0 e 100. Se si passa 50 al metodo `Next()`, viene scelto un numero compreso tra 0 e 49, pertanto la risposta più alta possibile è 98, non 100. Dopo l'esecuzione delle prime due istruzioni nel metodo, ciascuna delle due variabili Integer, **addend1** e **addend2**, contiene un numero casuale compreso tra 0 e 50. In questa schermata viene illustrato il codice c'è, ma IntelliSense funziona allo stesso modo per Visual Basic.
 
      Esaminare attentamente queste istruzioni.
 
@@ -102,6 +102,6 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 3: aggiungere un timer per il conto alla rovescia](../ide/step-3-add-a-countdown-timer.md)** .
+- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 3: Aggiungere un timer di conto alla rovescia](../ide/step-3-add-a-countdown-timer.md)**.
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto e aggiungere etichette al modulo](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

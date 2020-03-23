@@ -12,10 +12,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b0a88815c4a2853270b539a3e012297b681af62e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114952"
 ---
 # <a name="advanced-example-for-containers"></a>Esempio avanzato per i contenitori
@@ -213,6 +213,6 @@ Al termine dell'esecuzione dell'ultima riga aprire "%TEMP%\vslogs.zip" nel compu
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Build Tools in un contenitore](build-tools-container.md)
+* [Installare gli strumenti di compilazione in un contenitoreInstall Build Tools into a Container](build-tools-container.md)
 * [Problemi noti dei contenitori](build-tools-container-issues.md)
 * [ID dei carichi di lavoro e dei componenti di Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

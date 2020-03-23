@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
 ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983591"
 ---
 # <a name="understanding-build-configurations"></a>Informazioni sulle configurazioni della build
@@ -28,7 +28,7 @@ Analogamente alle configurazioni di progetti, le configurazioni di soluzioni ven
 
 Per altre informazioni sulle configurazioni, vedere il video di James Montemagno su [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg).
 
-## <a name="run-configuration"></a>Configurazione dell'esecuzione
+## <a name="run-configuration"></a>Configurazione di esecuzione
 
 Nelle versioni precedenti di Xamarin Studio era disponibile un'opzione per impostare un progetto come **progetto di avvio**, ovvero come progetto da eseguire o di cui eseguire il debug quando veniva usato il comando di esecuzione/debug globale. Il progetto di avvio era contrassegnato dal nome in grassetto nel riquadro dei progetti.
 
@@ -36,7 +36,7 @@ In Visual Studio per Mac, anziché impostare un progetto di avvio, è possibile 
 
 ![Elenco a discesa della configurazione di esecuzione](media/projects-and-solutions-image8.png)
 
-Una configurazione di esecuzione è un set di opzioni di esecuzione con un nome. Per un progetto possono essere definite diverse configurazioni per scopi diversi. Le configurazioni di esecuzione sono definite a livello di progetto. Per ogni progetto eseguibile viene creata automaticamente una configurazione predefinita, anche se è possibile aggiungerne un numero illimitato. Alcuni tipi di progetto generano automaticamente altre configurazioni di esecuzione. Ad esempio, i progetti watchOS possono generare _configurazioni per Glances e notifiche_.
+Una configurazione di esecuzione è un set di opzioni di esecuzione con un nome. Per un progetto possono essere definite diverse configurazioni per scopi diversi. Le configurazioni di esecuzione sono definite a livello di progetto. Per ogni progetto eseguibile viene creata automaticamente una configurazione predefinita, anche se è possibile aggiungerne un numero illimitato. Alcuni tipi di progetto generano automaticamente altre configurazioni di esecuzione. Ad esempio, i progetti watchOS possono generare _configurazioni Glance e Notification.For example,_ watchOS projects may generate Glance and Notification configurations.
 
 Le configurazioni possono essere condivise con altri sviluppatori, nel qual caso vengono archiviate nel file con estensione csproj, o mantenute in locale, nel qual caso vengono archiviate in un file con estensione user.
 
@@ -53,7 +53,7 @@ L'elenco seguente offre alcuni esempi di dati che possono essere inclusi nelle c
 * Progetto .NET normale
   * App di avvio alternativa
   * Argomenti di avvio
-  * Directory operativa
+  * Directory di lavoro
   * Variabili di ambiente
   * Opzioni di runtime di Mono (da usare solo se in esecuzione in Mono)
 * Progetto Android

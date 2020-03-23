@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589201"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedura: Creare un editor del corpo HTTP personalizzato per l'Editor test prestazioni Web
@@ -125,7 +125,7 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto della libreria di controlli Windows Forms e scegliere **Aggiungi nuovo elemento**.
 
-   Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
+   La finestra di dialogo **Aggiungi nuovo elemento** viene visualizzata.
 
 2. Selezionare **Classe**.
 
@@ -264,7 +264,7 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Compilare e distribuire i plug-in
 
-1. Dal menu **Compila** scegliere **Compila \<nome progetto Libreria di controlli Windows Form>** .
+1. Dal menu **Compila** scegliere **Compila \<nome progetto Libreria di controlli Windows Form>**.
 
 2. Chiudere tutte le istanze di Visual Studio.
 
@@ -273,7 +273,7 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 3. Copiare il file con estensione *dll* risultante dalla cartella *bin\debug* del progetto (ad esempio, *MessageEditors.dll*) in *%ProgramFiles%\Microsoft Visual Studio\2017\\\<edizione>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
-4. Apri Visual Studio.
+4. Aprire Visual Studio.
 
    Il file con estensione *dll* è ora registrato in Visual Studio.
 
@@ -283,9 +283,9 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 2. Creare un test delle prestazioni Web e immettere un URL di servizio Web nel browser.
 
-3. Quando si termina la registrazione, nell'Editor test prestazioni Web espandere la richiesta per il servizio Web e selezionare un **Corpo stringa** o un **Corpo binario**.
+3. Al termine della registrazione, nell'Editor test prestazioni Web espandere la richiesta per il servizio Web e selezionare **Corpo stringa** o **Corpo binario**.
 
-4. Nella finestra **Proprietà** selezionare Corpo stringa o Corpo binario e scegliere i puntini di sospensione **(…)** .
+4. Nella finestra **Proprietà** selezionare Corpo stringa o Corpo binario e scegliere i conivizolsi **(...)**.
 
    Viene visualizzata la finestra di dialogo **Modifica dati del corpo HTTP**.
 
@@ -305,9 +305,9 @@ Per altre informazioni, vedere [Pagina Applicazione, Creazione progetti (C#)](..
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Procedura: Creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md)
+- [Procedura: creare un plug-in a livello di richiestaHow to: Create a request-level plug-in](../test/how-to-create-a-request-level-plug-in.md)
 - [Codificare una regola di estrazione personalizzata per un test delle prestazioni Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificare una regola di convalida personalizzata per un test delle prestazioni Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md)
+- [Procedura: creare un plug-in test di caricoHow to: Create a Load Test Plug-in](../test/how-to-create-a-load-test-plug-in.md)
 - [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Procedura: Creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Procedura: creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568011"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -37,11 +37,11 @@ devenv /Out FileName
 
 ## <a name="arguments"></a>Argomenti
 
-- *FileName*
+- *Filename*
 
-  Richiesto. Percorso e nome del file per ricevere l'output quando si compila un eseguibile.
+  Obbligatorio. Percorso e nome del file per ricevere l'output quando si compila un eseguibile.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Se viene specificato un nome file inesistente, il file viene creato automaticamente. Se il file esiste già, i risultati vengono aggiunti al contenuto del file già esistente.
 

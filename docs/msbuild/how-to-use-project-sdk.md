@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76826471"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Procedura: Usare SDK di progetto MSBuild
 
-MSBuild 15,0 ha introdotto il concetto di "SDK di progetto", che semplifica l'uso di Software Development Kit che richiedono l'importazione di proprietà e destinazioni.
+MSBuild 15.0 ha introdotto il concetto di "SDK del progetto", che semplifica l'utilizzo di kit di sviluppo software che richiedono l'importazione di proprietà e destinazioni.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -28,7 +28,7 @@ MSBuild 15,0 ha introdotto il concetto di "SDK di progetto", che semplifica l'us
 </Project>
 ```
 
-Durante la valutazione del progetto, MSBuild aggiunge le importazioni implicite all'inizio e alla fine del file di progetto:
+Durante la valutazione del progetto, MSBuild aggiunge importazioni implicite nella parte superiore e inferiore del file di progetto:
 
 ```xml
 <Project>
@@ -56,9 +56,9 @@ Esistono tre modi per fare riferimento a un SDK di progetto:
     </Project>
     ```
 
-    Un'importazione implicita viene aggiunta alla parte superiore e inferiore del progetto, come illustrato in precedenza.
+    Un'importazione implicita viene aggiunta nella parte superiore e inferiore del progetto come descritto in precedenza.
     
-    Per specificare una versione specifica dell'SDK, aggiungerla all'attributo `Sdk`:
+    Per specificare una versione specifica dell'SDK, aggiungerla all'attributo: `Sdk`
 
     ```xml
     <Project Sdk="My.Custom.Sdk/1.2.3">
@@ -78,7 +78,7 @@ Esistono tre modi per fare riferimento a un SDK di progetto:
     </Project>
    ```
 
-   Un'importazione implicita viene aggiunta alla parte superiore e inferiore del progetto, come illustrato in precedenza.
+   Un'importazione implicita viene aggiunta nella parte superiore e inferiore del progetto come descritto in precedenza.
    
    L'attributo `Version` non è obbligatorio.
 
@@ -101,19 +101,19 @@ Esistono tre modi per fare riferimento a un SDK di progetto:
 
 ## <a name="how-project-sdks-are-resolved"></a>Come vengono risolti gli SDK di progetto
 
-Quando si valuta l'importazione, MSBuild risolve in modo dinamico il percorso dell'SDK di progetto in base al nome e alla versione specificati.  MSBuild include anche un elenco di resolver SDK registrati, che sono plug-in che individuano gli SDK di progetto nel computer. Questi plug-in includono:
+Durante la valutazione dell'importazione, MSBuild risolve dinamicamente il percorso dell'SDK del progetto in base al nome e alla versione specificati.  MSBuild dispone inoltre di un elenco di resolver SDK registrati, ovvero plug-in che individuano gli SDK del progetto nel computer. Questi plug-in includono:
 
 - Un resolver basato su NuGet che recupera i feed di pacchetto configurati per i pacchetti NuGet corrispondenti all'ID e alla versione dell'SDK specificati.
 
-   Questo resolver è attivo solo se è stata specificata una versione facoltativa. Può essere usato per qualsiasi SDK di progetto personalizzato.
+   Questo sistema di risoluzione è attivo solo se è stata specificata una versione facoltativa. Può essere utilizzato per qualsiasi SDK di progetto personalizzato.
    
-- Un resolver dell'interfaccia della riga di comando .NET che risolve gli SDK installati con l'interfaccia della riga di comando [.NET](/dotnet/core/tools/).
+- Un resolver dell'interfaccia della riga di comando .NET che risolve gli SDK installati con [l'interfaccia della riga](/dotnet/core/tools/)di comando di .NET.
 
-   Questo sistema di risoluzione individua gli SDK di progetto, ad esempio `Microsoft.NET.Sdk` e `Microsoft.NET.Sdk.Web` che fanno parte del prodotto.
+   Questo sistema di risoluzione individua `Microsoft.NET.Sdk` `Microsoft.NET.Sdk.Web` gli SDK del progetto, ad esempio e che fanno parte del prodotto.
    
 - Un resolver predefinito che risolve gli SDK che sono stati installati con MSBuild.
 
-Il resolver di SDK basato su NuGet supporta la specifica di una versione nel file [Global. JSON](/dotnet/core/tools/global-json) , che consente di controllare la versione dell'SDK di progetto in un'unica posizione invece che in ogni singolo progetto:
+Il resolver SDK basato su NuGet supporta la specifica di una versione nel file [global.json,](/dotnet/core/tools/global-json) che consente di controllare la versione SDK del progetto in un'unica posizione anziché in ogni singolo progetto:
 
 ```json
 {
@@ -124,7 +124,7 @@ Il resolver di SDK basato su NuGet supporta la specifica di una versione nel fil
 }
 ```
 
-Durante una compilazione, è possibile usare una sola versione di ogni SDK di progetto. Se si fa riferimento a due versioni diverse dello stesso SDK di progetto, MSBuild genera un avviso. Si consiglia di **non** specificare una versione nei progetti se è stata specificata una versione nel file *Global. JSON* .
+Durante una compilazione, è possibile usare una sola versione di ogni SDK di progetto. Se si fa riferimento a due versioni diverse dello stesso SDK del progetto, MSBuild genera un avviso. Si consiglia di **non** specificare una versione nei progetti se una versione è specificata nel file *global.json.*
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -7,10 +7,10 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: 29c5bb9c45ae8d859316bd9c63eec10a6a425571
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75851962"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estensione di Visual Studio per Mac
@@ -23,12 +23,12 @@ Per personalizzare Visual Studio per Mac, è possibile creare un pacchetto di es
 
 ![Architettura dei componenti aggiuntivi](media/extending-visual-studio-mac-addin1.png)
 
-Perché un pacchetto di estensione possa essere compilato da Visual Studio per Mac, deve includere estensioni compilate da punti di estensione preesistenti all'interno dell'IDE di Visual Studio per Mac. Quando un pacchetto di estensione è basato su un punto di estensione definito in un host di componenti aggiuntivi, significa che il pacchetto ha una  _dipendenza_  dal pacchetto di estensione.
+Perché un pacchetto di estensione possa essere compilato da Visual Studio per Mac, deve includere estensioni compilate da punti di estensione preesistenti all'interno dell'IDE di Visual Studio per Mac. Quando un pacchetto di estensione si basa su un punto di estensione definito in un host del componente aggiuntivo, si dice che abbia una _dipendenza_ da tale pacchetto di estensione.
 
 Il vantaggio di questa progettazione modulare è il fatto che Visual Studio per Mac è estendibile, ovvero sono disponibili molti punti di estensione su cui è possibile basare i pacchetti di estensione personalizzati. Alcuni esempi degli attuali pacchetti di estensione includono il supporto per C# ed F#, strumenti debugger e modelli di progetto.
 
 > [!NOTE]
-> Se si dispone di un progetto di creatore di componenti aggiuntivi creato prima del componente aggiuntivo Maker 1,2, è necessario eseguire la migrazione del progetto come descritto nei passaggi [qui](https://mhut.ch/addinmaker/1.2).
+> in presenza di un progetto Addin Maker creato prima di Addin Maker 1.2, è necessario eseguire la migrazione del progetto come descritto nei passaggi [qui](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -96,7 +96,7 @@ Nel frammento di codice seguente è illustrata un'estensione CommandItem che si 
 </Extension>
 ```
 
-Un'estensione CommandItem inserisce un comando specificato nel relativo attributo id in un menu. CommandItem estende il punto di estensione `/MonoDevelop/Ide/MainMenu/Edit`, che fa apparire l'etichetta del comando nel **menu Modifica**. Si noti che **id** in CommandItem corrisponde all'ID del nodo del comando, `InsertDate`. Se si rimuove CommandItem, l'opzione **Inserisci data** non è più disponibile nel menu Modifica.
+Un'estensione CommandItem inserisce un comando specificato nel relativo attributo id in un menu. CommandItem estende il punto di estensione `/MonoDevelop/Ide/MainMenu/Edit`, che fa apparire l'etichetta del comando nel **menu Modifica**. Si noti che l'id in CommandItem corrisponde `InsertDate`all'id del Command nodo, . **id** Se si rimuove CommandItem, l'opzione **Inserisci data** non è più disponibile nel menu Modifica.
 
 ### <a name="command-handlers"></a>Gestori di comandi
 

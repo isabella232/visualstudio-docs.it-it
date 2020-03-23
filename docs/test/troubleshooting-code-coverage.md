@@ -8,19 +8,19 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: bd70394262a2dd19ebf32f57549b9d2b3e8ee92a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565975"
 ---
 # <a name="troubleshoot-code-coverage"></a>Risolvere i problemi di code coverage
 
-Lo strumento di analisi della copertura del codice in Visual Studio raccoglie dati per assembly nativo e gestito (file con estensione *dll* o *exe*). Tuttavia, in alcuni casi, nella finestra **Risultati code coverage** viene visualizzato un errore simile a "i risultati vuoti generati:...". Esistono diversi motivi per cui è possibile ottenere risultati vuoti. Questo articolo consente di risolvere tali problemi.
+Lo strumento di analisi code coverage in Visual Studio raccoglie i dati per gli assembly nativi e gestiti (file*DLL* o *exe).* Tuttavia, in alcuni casi, nella finestra **Risultati code coverage** viene visualizzato un errore simile a "Risultati vuoti generati: ...." Ci sono diversi motivi per cui è possibile ottenere risultati vuoti. Questo articolo consente di risolvere tali problemi.
 
-## <a name="what-you-should-see"></a>Cosa si dovrebbe vedere
+## <a name="what-you-should-see"></a>Elementi che dovrebbero essere visualizzati
 
-Se si sceglie un comando **Analizza code coverage** dal menu **Test** e se la compilazione e i test vengono eseguiti correttamente, nella finestra **Code coverage** verrà visualizzato un elenco di risultati. Potrebbe essere necessario espandere gli elementi per visualizzare il dettaglio.
+Se si sceglie un comando **Analizza code coverage** dal menu **Test** e se la compilazione e i test vengono eseguiti correttamente, verrà visualizzato un elenco di risultati nella finestra **Code coverage.** Potrebbe essere necessario espandere gli elementi per visualizzare il dettaglio.
 
 ![Risultati del code coverage con colorazione](../test/media/codecoverage1.png)
 
@@ -46,25 +46,25 @@ Quando si modificano e si rieseguono i test, i risultati di un code coverage pre
 
 1. Eseguire **Analizza code coverage**.
 
-2. Verificare che sia stato selezionato il set di risultati più recente nella finestra **Risultati code coverage**.
+2. Assicurarsi di aver selezionato il set di risultati più recente nella finestra **Risultati code coverage.**
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>I file con estensione pdb (simbolo) non sono disponibili
 
-Analisi&mdash;Aprire la cartella di destinazione della compilazione (in genere *bin\debug*) e verificare che per ogni assembly esista un file con estensione *pdb* nella stessa directory del file con estensione *dll* o *exe*.
+Analisi&mdash;Aprire la cartella di destinazione della compilazione (in genere *bin-debug*) e verificare che per ogni assembly sia presente un file *con estensione pdb* nella stessa directory del file *DLL* o *EXE.*
 
-Spiegazione&mdash;Il motore di code coverage richiede che ogni assembly abbia un proprio file con estensione *pdb* associato accessibile durante l'esecuzione del test. Se non esiste alcun file con estensione *pdb* per un particolare assembly, tale assembly non viene analizzato.
+Spiegazione&mdash;Il motore di code coverage richiede che a ogni assembly sia associato un file *pdb* accessibile durante l'esecuzione del test. Se non è presente alcun file *pdb* per un determinato assembly, l'assembly non viene analizzato.
 
-Il file con estensione *pdb* deve essere generato dalla stessa compilazione dei file con estensione *dll* o *exe*.
+Il file *con estensione pdb* deve essere generato dalla stessa compilazione dei file *DLL* o *EXE.*
 
-Risoluzione&mdash;Verificare che le impostazioni di compilazione generino il file con estensione *pdb*. Se i file con estensione *pdb* non vengono aggiornati quando viene compilato il progetto, aprire le proprietà del progetto, selezionare la pagina **Compila**, scegliere **Avanzate** e controllare **Informazioni di debug**.
+Soluzione&mdash;Assicurarsi che le impostazioni di compilazione generino il file *con estensione pdb.* Se i file *con estensione pdb* non vengono aggiornati quando il progetto viene compilato, aprire le proprietà del progetto, selezionare la pagina **Compila** , scegliere **Avanzate**e controllare le informazioni di **debug**.
 
-Per C++ i progetti, verificare che i file con estensione pdb generati dispongano di informazioni di debug complete. Aprire le proprietà del progetto e verificare che il **debug** del > del **linker** > **genera informazioni di debug** sia impostato su **genera informazioni di debug ottimizzate per la condivisione e la pubblicazione (/debug: Full)** .
+Per i progetti in C, assicurarsi che i file con estensione pdb generati dispongano di informazioni di debug complete. Aprire le proprietà del progetto e verificare che**l'opzione Genera informazioni** di debug del**debug** > del **linker** > sia impostata su Genera informazioni di **debug ottimizzate per la condivisione e la pubblicazione (/DEBUG:FULL).**
 
-Se i file con estensione *pdb* e *dll* o *exe* sono in posizioni diverse, copiare il file con estensione *pdb* nella stessa directory. È inoltre possibile configurare il motore di code coverage per cercare i file con estensione *pdb* in un'altra posizione. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
+Se i file *con estensione pdb* e *dll* o *exe* si trovano in posizioni diverse, copiare il file con *estensione pdb* nella stessa directory. È inoltre possibile configurare il motore di code coverage per la ricerca di file *pdb* in un'altra posizione. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
 ### <a name="use-an-instrumented-or-optimized-binary"></a>Usare un binario instrumentato o ottimizzato
 
-Analisi&mdash;Determinare se il binario è stato sottoposto a qualche forma di ottimizzazione avanzata, come l'ottimizzazione PGO, o è stato instrumentato da uno strumento di profilatura come *vsinstr.exe* o *vsperfmon.exe*.
+Analisi&mdash;Determinare se il file binario è stato sottoposto a qualsiasi forma di ottimizzazione avanzata, ad esempio Ottimizzazione PGO, o se è stato instrumentato da uno strumento di profilatura, ad esempio *vsinstr.exe* o *vsperfmon.exe*.
 
 Spiegazione: se l'assembly è già stato instrumentato o ottimizzato da un altro strumento di profilatura, l'assembly viene omesso dall'analisi di code coverage. L'analisi di code coverage non può essere eseguita su tali assembly.
 
@@ -90,13 +90,13 @@ Risoluzione: usare una versione MSIL dell'assembly. Non elaborarlo con NGen.
 
 Analisi: in un file personalizzato con estensione *runsettings* potrebbe contenere un errore di sintassi. Il code coverage non viene eseguito e la finestra di code coverage non viene visualizzata alla fine dell'esecuzione del test oppure vengono visualizzati risultati obsoleti.
 
-Spiegazione&mdash;È possibile eseguire gli unit test con un file personalizzato con estensione *runsettings* per configurare le opzioni di code coverage. Le opzioni consentono di includere o escludere i file. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
+Spiegazione&mdash;È possibile eseguire gli unit test con un file *.runsettings* personalizzato per configurare le opzioni di code coverage. Le opzioni consentono di includere o escludere i file. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
 Risoluzione: esistono due possibili tipi di errori:
 
 - **Errore XML**
 
-     Aprire il file con estensione *runsettings* nell'editor XML di Visual Studio. Individuare le indicazioni degli errori.
+     Aprire il file *con estensione runsettings* nell'editor XML di Visual Studio. Individuare le indicazioni degli errori.
 
 - **Errore di espressione regolare**
 
@@ -110,9 +110,9 @@ Risoluzione: esistono due possibili tipi di errori:
 
 Analisi: se si usa un file personalizzato con estensione *runsettings*, verificare che sia incluso nell'assembly.
 
-Spiegazione&mdash;È possibile eseguire gli unit test con un file personalizzato con estensione *runsettings* per configurare le opzioni di code coverage. Le opzioni consentono di includere o escludere i file. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
+Spiegazione&mdash;È possibile eseguire gli unit test con un file *.runsettings* personalizzato per configurare le opzioni di code coverage. Le opzioni consentono di includere o escludere i file. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
-Risoluzione&mdash;Rimuovere tutti i nodi `Include` dal file con estensione *runsettings* e quindi rimuovere tutti i nodi `Exclude`. Se in tal modo si risolve il problema, riportare i nodi nelle fasi.
+Soluzione&mdash;Rimuovere `Include` tutti i nodi dal file con `Exclude` estensione *runsettings* e quindi rimuovere tutti i nodi. Se in tal modo si risolve il problema, riportare i nodi nelle fasi.
 
 Assicurarsi che il nodo DataCollectors specifichi Code coverage. Confrontarlo con l'esempio presente in [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
@@ -128,4 +128,4 @@ Risoluzione: nessuna.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Usare la funzionalità code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+- [Utilizzare il code coverage per determinare la quantità di codice sottoposta a test](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

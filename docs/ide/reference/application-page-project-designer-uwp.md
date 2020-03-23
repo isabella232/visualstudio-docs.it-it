@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77173085"
 ---
 # <a name="application-property-page-uwp-projects"></a>Pagina delle proprietà dell'applicazione (progetti UWP)
@@ -24,7 +24,7 @@ Usare la pagina delle proprietà **Applicazione** per specificare l'assembly e l
 
 ![Pagina delle proprietà dell'applicazione](media/application-page-uwp.png)
 
-Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto in **Esplora soluzioni**. Scegliere quindi **Progetto** > **Proprietà** sulla barra dei menu. Le pagine delle proprietà vengono aperte nella scheda **Applicazione**.
+Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto in **Esplora soluzioni**. Quindi scegliere**Proprietà** **progetto** > sulla barra dei menu. Le pagine delle proprietà vengono aperte nella scheda **Applicazione**.
 
 ## <a name="general-section"></a>Sezione Generale
 
@@ -32,13 +32,13 @@ Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto in **E
 
 Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
-**Spazio dei nomi predefinito**&mdash;Specifica lo spazio dei nomi di base per i file aggiunti al progetto. Per altre informazioni sugli spazi dei nomi, vedere [Spazi dei nomi (Guida per programmatori C#)](/dotnet/csharp/programming-guide/namespaces/), [Spazi dei nomi (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces) o [Spazi dei nomi (C++)](/cpp/cpp/namespaces-cpp).
+**Spazio dei nomi**&mdash;predefinito Specifica lo spazio dei nomi di base per i file aggiunti al progetto. Per altre informazioni sugli spazi dei nomi, vedere [Spazi dei nomi (Guida per programmatori C#)](/dotnet/csharp/programming-guide/namespaces/), [Spazi dei nomi (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces) o [Spazi dei nomi (C++)](/cpp/cpp/namespaces-cpp).
 
 Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Informazioni assembly**&mdash;Se si sceglie questo pulsante viene visualizzata la [finestra di dialogo Informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).
+**Informazioni sull'assieme**&mdash;Scegliendo questo pulsante viene visualizzata la finestra di [dialogo Informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifesto del pacchetto**&mdash;Scegliendo questo pulsante viene aperta la finestra di progettazione del manifesto. Per accedere alla finestra di progettazione del manifesto, è anche possibile scegliere il file _Package.appxmanifest_ in **Esplora soluzioni**. Per altre informazioni, vedere [Configurare un pacchetto con Progettazione manifesto](/windows/msix/package/packaging-uwp-apps#configure-your-project).
+**Manifesto pacchetto**&mdash;Scegliendo questo pulsante si apre la finestra di progettazione del manifesto. Per accedere alla finestra di progettazione del manifesto, è anche possibile scegliere il file _Package.appxmanifest_ in **Esplora soluzioni**. Per altre informazioni, vedere [Configurare un pacchetto con Progettazione manifesto](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 
 ## <a name="targeting-section"></a>Sezione Destinazione
 

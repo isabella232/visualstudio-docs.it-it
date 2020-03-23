@@ -9,21 +9,21 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585535"
 ---
-# <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usare gli shim per isolare l'app per il testing unità
+# <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usare gli shim per isolare l'app per gli unit testUse shims to isolate your app for unit test
 
-I **tipi shim** sono una delle due tecnologie che il Framework Microsoft Fakes usa per consentire l'isolamento dei componenti sottoposti a test dall'ambiente. Gli shim deviano le chiamate a metodi specifici verso il codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. Questo rende più semplice scrivere i test.
+I tipi di **shim** sono una delle due tecnologie utilizzate da Microsoft Fakes Framework per consentire di isolare i componenti sottoposti a test dall'ambiente. Gli shim deviano le chiamate ai metodi specifici al codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. In questo modo è più semplice scrivere i test.
 
-Usare gli *shim* per isolare il codice dagli assembly che non fanno parte della soluzione. Per isolare i componenti della soluzione, utilizzare gli *Stub*.
+Utilizzare *gli shim* per isolare il codice dagli assembly che non fanno parte della soluzione. Per isolare i componenti della soluzione l'uno dall'altro, utilizzare *stub .*
 
-Per una panoramica e istruzioni introduttive, vedere [isolare il codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
+Per una panoramica e una guida "rapida di avvio", vedere Isolare il codice sottoposto a [test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 - Un progetto .NET Framework
@@ -33,7 +33,7 @@ Per una panoramica e istruzioni introduttive, vedere [isolare il codice sottopos
 
 ## <a name="example-the-y2k-bug"></a>Esempio: il bug dell'anno 2000
 
-Si consideri un metodo che genera un'eccezione il 1 ° gennaio di 2000:
+Si consideri un metodo che genera un'eccezione il 1 gennaio 2000:Consider a method that throws an exception on January of 2000:
 
 ```csharp
 // code under test
@@ -62,21 +62,21 @@ using (ShimsContext.Create()) {
 }
 ```
 
-## <a name="how-to-use-shims"></a>Come usare gli shim
+## <a name="how-to-use-shims"></a>Come utilizzare gli shim
 
-Aggiungere prima di tutto un assembly Fakes:
+In primo luogo, aggiungere un assembly Fakes:
 
-1. In **Esplora soluzioni**espandere il nodo **riferimenti** del progetto unit test.
+1. In **Esplora soluzioni**espandere il nodo **Riferimenti** del progetto di unit test.
 
    - Se si usa Visual Basic, per visualizzare il nodo **Riferimenti**, selezionare **Mostra tutti i file** sulla barra degli strumenti di **Esplora soluzioni**.
 
-2. Consente di selezionare l'assembly contenente le definizioni delle classi per le quali si desidera creare gli shim. Ad esempio, se si vuole effettuare lo shim di **DateTime**, selezionare **System.dll**.
+2. Selezionare l'assembly che contiene le definizioni di classe per cui si desidera creare shim. Ad esempio, se si desidera shim **DateTime**, selezionare **System.dll**.
 
 3. Scegliere **Aggiungi assembly Fakes** dal menu di scelta rapida.
 
 ### <a name="use-shimscontext"></a>Utilizzare ShimsContext
 
-Quando si usano tipi shim in un Framework di unit test, eseguire il wrapping del codice di test in un `ShimsContext` per controllare la durata degli shim. In caso contrario, gli shim dureranno fino alla chiusura di AppDomain. Il modo più semplice per creare un oggetto `ShimsContext` consiste nell'usare il metodo statico `Create()` come mostrato nel codice seguente:
+Quando si usano tipi di shim in un `ShimsContext` framework di unit test, eseguire il wrapping del codice di test in un oggetto per controllare la durata degli shim. In caso contrario, gli shim durerebbero fino all'arresto di AppDomain. Il modo più semplice per creare un oggetto `ShimsContext` consiste nell'usare il metodo statico `Create()` come mostrato nel codice seguente:
 
 ```csharp
 //unit test code
@@ -88,7 +88,7 @@ public void Y2kCheckerTest() {
 }
 ```
 
-È fondamentale eliminare correttamente ogni contesto shim. Come regola generale, chiamare la `ShimsContext.Create` all'interno di un'istruzione `using` per garantire la corretta cancellazione degli shim registrati. Ad esempio, si potrebbe registrare uno shim per un metodo di test che sostituisce il metodo `DateTime.Now` con un delegato che restituisce sempre il primo gennaio 2000. Se si dimentica di cancellare lo shim registrato nel metodo di test, il resto dell'esecuzione del test restituisce sempre il primo gennaio 2000 come valore `DateTime.Now`. Ciò potrebbe sorprendere e confondere.
+È fondamentale eliminare correttamente ogni contesto shim. Come regola generale, chiamare `ShimsContext.Create` l'interno di una `using` dichiarazione per garantire una corretta compensazione degli shim registrati. Ad esempio, si potrebbe registrare uno shim per un metodo di test che sostituisce il metodo `DateTime.Now` con un delegato che restituisce sempre il primo gennaio 2000. Se si dimentica di cancellare lo shim registrato nel metodo di test, il resto dell'esecuzione del test restituirà sempre il primo di gennaio 2000 come `DateTime.Now` valore. Ciò potrebbe sorprendere e confondere.
 
 ### <a name="write-a-test-with-shims"></a>Scrivere un test con shim
 
@@ -401,7 +401,7 @@ public class MyClass : IEnumerable<int> {
 }
 ```
 
-È possibile eseguire lo shim delle implementazioni di `IEnumerable<int>` in MyClass chiamando il metodo bind:
+È possibile shim le `IEnumerable<int>` implementazioni di in MyClass chiamando il Bind metodo:You can shim the implementations of in MyClass by calling the Bind method:
 
 ```csharp
 // unit test code
@@ -426,7 +426,7 @@ Ogni tipo shim generato include un'istanza dell'interfaccia `IShimBehavior`, tra
 
 Se il comportamento non è stato impostato in modo esplicito, viene usata l'istanza restituita dalla proprietà statica `ShimsBehaviors.Current`. Per impostazione predefinita, questa proprietà restituisce un comportamento che genera un'eccezione `NotImplementedException`.
 
-Il comportamento può essere modificato in qualsiasi momento impostando la proprietà `InstanceBehavior` su qualsiasi istanza di shim. Ad esempio, il frammento di codice seguente modifica lo shim in un comportamento che non esegue alcuna operazione o restituisce il valore predefinito del tipo restituito, ovvero `default(T)`:
+Il comportamento può essere modificato in qualsiasi momento impostando la proprietà `InstanceBehavior` su qualsiasi istanza di shim. Ad esempio, il frammento di codice seguente modifica lo shim in un comportamento `default(T)`che non esegue alcuna operazione o restituisce il valore predefinito del tipo restituito, ovvero :
 
 ```csharp
 // unit test code
@@ -456,15 +456,15 @@ ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
 ShimMyClass.BehaveAsNotImplemented();
 ```
 
-## <a name="concurrency"></a>concorrenza
+## <a name="concurrency"></a>Concorrenza
 
-I tipi shim si applicano a tutti i thread in AppDomain e non presentano affinità di thread. Questo è un fatto importante se si prevede di usare un test runner che supporta la concorrenza. I test che coinvolgono tipi shim non possono essere eseguiti contemporaneamente. Questa proprietà non viene applicata dal runtime di Fakes.
+I tipi shim si applicano a tutti i thread in AppDomain e non presentano affinità di thread. Si tratta di un fatto importante se si prevede di utilizzare un test runner che supporta la concorrenza. I test che coinvolgono i tipi di shim non possono essere eseguiti contemporaneamente. Questa proprietà non viene applicata dal runtime di Fakes.
 
 ## <a name="call-the-original-method-from-the-shim-method"></a>Chiamare il metodo originale dal metodo shim
 
-Si supponga di voler scrivere il testo nel file system dopo aver convalidato il nome del file passato al metodo. In tal caso, è necessario chiamare il metodo originale all'interno del metodo shim.
+Si supponga di voler scrivere il testo nel file system dopo aver convalidato il nome del file passato al metodo. In tal caso, è necessario chiamare il metodo originale nel mezzo del metodo shim.
 
-Il primo approccio per risolvere questo problema consiste nell'eseguire il wrapping di una chiamata al metodo originale usando un delegato e `ShimsContext.ExecuteWithoutShims()`, come nel codice seguente:
+Il primo approccio per risolvere questo problema consiste nell'eseguire `ShimsContext.ExecuteWithoutShims()`il wrapping di una chiamata al metodo originale utilizzando un delegato e , come nel codice seguente:
 
 ```csharp
 // unit test code
@@ -503,7 +503,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>System.Environment
 
-Per shim <xref:System.Environment?displayProperty=fullName>, aggiungere il contenuto seguente al file mscorlib. Fakes dopo l'elemento **assembly** :
+Per shim <xref:System.Environment?displayProperty=fullName>, aggiungere il seguente contenuto al file mscorlib.fakes dopo l'elemento **Assembly:**
 
 ```xml
 <ShimGeneration>
@@ -511,7 +511,7 @@ Per shim <xref:System.Environment?displayProperty=fullName>, aggiungere il conte
 </ShimGeneration>
 ```
 
-Dopo la ricompilazione della soluzione, i metodi e le proprietà nella classe <xref:System.Environment?displayProperty=fullName> sono disponibili per essere sottoposto a shim, ad esempio:
+Dopo aver ricompilato la soluzione, <xref:System.Environment?displayProperty=fullName> i metodi e le proprietà nella classe sono disponibili per essere shimmed, ad esempio:
 
 ```csharp
 System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
@@ -524,5 +524,5 @@ Non è possibile usare gli shim in tutti i tipi della libreria di classi base .N
 ## <a name="see-also"></a>Vedere anche
 
 - [Isolare codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Blog di Peter Provost sugli shim in Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Video (1h16): Testing Untestable Code with Fakes in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) (Testare codice non testabile con Fakes in Visual Studio 2012)
+- [Blog di Peter Provost: Shim di Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Video (1h16): Test del codice non testabile con i falsi in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

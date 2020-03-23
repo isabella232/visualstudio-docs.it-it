@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594240"
 ---
 # <a name="code-snippet-functions"></a>Funzioni dei frammenti di codice
@@ -27,7 +27,7 @@ Con i frammenti di codice C# è possibile usare tre funzioni. Le funzioni sono s
 
 Nella tabella seguente vengono descritte le funzioni disponibili per l'uso con l'elemento `Function` nei frammenti di codice.
 
-|Funzione|Descrizione|Lingua:|
+|Funzione|Descrizione|Linguaggio|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Genera un'istruzione switch e un set di istruzioni case per i membri dell'enumerazione specificata dal parametro `EnumerationLiteral`. Il parametro `EnumerationLiteral` deve essere un riferimento a un valore letterale di enumerazione o un tipo di enumerazione.|C#|
 |`ClassName()`|Restituisce il nome della classe che contiene il frammento inserito.|C#|
@@ -158,4 +158,4 @@ In questo esempio viene illustrato come usare la funzione `SimpleTypeName`. Quan
 ## <a name="see-also"></a>Vedere anche
 
 - [Elemento Function](../ide/code-snippets-schema-reference.md#function-element)
-- [Informazioni di riferimento sullo schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)
+- [Informazioni di riferimento sullo schema dei frammenti di codiceCode snippets schema reference](../ide/code-snippets-schema-reference.md)

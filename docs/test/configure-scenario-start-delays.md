@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76111472"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurare ritardi di avvio di uno scenario nei test di carico
@@ -30,7 +30,7 @@ Un altro esempio è costituito da uno scenario eseguito solo a una determinata o
 È possibile specificare un ritardo prima dell'avvio di uno scenario in un test di carico usando l'Editor test di carico per modificare la proprietà **Ritarda ora di inizio** nella finestra **Proprietà**.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà degli scenari di test di carico e le relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+> Per un elenco completo delle proprietà dello scenario di test di carico e delle relative descrizioni, vedere [Proprietà dello scenario](../test/load-test-scenario-properties.md)di test di carico .
 
 La proprietà **Ritarda ora di inizio** può ad esempio essere utile quando è necessario che uno scenario inizi a produrre elementi usati da un altro scenario. È possibile ritardare il secondo scenario per consentire al primo di popolare i dati.
 
@@ -43,7 +43,7 @@ Un altro esempio è costituito da uno scenario eseguito solo a una determinata o
 
 1. Aprire un test di carico.
 
-     Viene visualizzato l'Editor test di carico. Verrà visualizzata la struttura ad albero del test di carico.
+     Verrà visualizzato l'Editor test di carico. Verrà visualizzata la struttura ad albero del test di carico.
 
 2. Nella cartella **Scenari** dell'albero del test di carico scegliere il nodo dello scenario per il quale si desidera specificare il ritardo per l'ora di inizio.
 

@@ -7,19 +7,19 @@ ms.date: 01/06/2020
 ms.topic: conceptual
 description: Informazioni su come attivare la sottoscrizione di WhiteSource Bolt inclusa nella sottoscrizione di Visual Studio.
 ms.openlocfilehash: edfc4c01908a6ce3bf5466a812ab7cf2608a62f7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "76114330"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt nelle sottoscrizioni di Visual Studio
 
-È possibile trovare e correggere le vulnerabilità open source e generare report esaurienti sull'inventario e sulle licenze di tutti i componenti open source nella build. Visual Studio Enterprise sottoscrizioni ricevono sei mesi di analisi illimitate.
+È possibile trovare e correggere le vulnerabilità open source e generare report esaurienti sull'inventario e sulle licenze di tutti i componenti open source nella build. Le sottoscrizioni di Visual Studio Enterprise ricevono sei mesi di analisi illimitate.
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 
-1. Per attivare il vantaggio di WhiteSource Bolt, accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
+1. Per attivare il vantaggio WhiteSource [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) Bolt, accedere a .
 
 2. Individuare il riquadro WhiteSource Bolt nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.
    > [!div class="mx-imgBorder"]
@@ -37,28 +37,28 @@ ms.locfileid: "76114330"
 8. Dopo aver installato correttamente WhiteSource Bolt, tornare alla [pagina di attivazione](https://bolt.whitesourcesoftware.com/whitesource-bolt-azure-devops#activate) e visualizzare il video per vedere come configurarlo. 
 9. Per altre informazioni, visita la [pagina delle domande frequenti](https://bolt.whitesourcesoftware.com/azure/faq/) su WhiteSource Bolt. 
 
-## <a name="eligibility"></a>Eligibility
+## <a name="eligibility"></a>Idoneità
 
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  Sì       |
-| Visual Studio Enterprise con GitHub Enterprise | VL | 6 mesi       |  Sì       |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |N/D         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |N/D         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |N/D         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+| Visual Studio Enterprise (Standard)   | VL, Azure, vendita al dettaglio, NFR<sup>1</sup> selezionato | 6 mesi       |  Sì       |
+| Visual Studio Enterprise con GitHub Enterprise | Vl | 6 mesi       |  Sì       |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |ND         |
+| Visual Studio Professional con GitHub Enterprise | Vl                                      | Non disponibile                                                           |ND         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |ND         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |ND         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
 ||
 
-<sup>1</sup>  *include: Microsoft Partner Network (Enterprise).  Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), ETP, MCT software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT software & Services.*
+<sup>1</sup>  *Include: Microsoft Partner Network (Enterprise).  Esclude: Non per la rivendita (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  Software MCT & Servizi.*
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) invitati a passare a esplorare diverse opzioni per l'acquisto di Visual Studio.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con WhiteSource Bolt?  Chat con un rappresentante WhiteSource Bolt in tempo reale all'indirizzo https://www.whitesourcesoftware.com/vse_whitesource_bolt/
-- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [il supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
 Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la sottoscrizione di Visual Studio:
@@ -68,6 +68,6 @@ Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la s
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](/visualstudio/)
-- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](/azure/devops/)
 - [Documentazione di Azure](/azure/)
 - [Documentazione di Microsoft 365](/microsoft-365/)

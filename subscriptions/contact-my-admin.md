@@ -7,10 +7,10 @@ ms.date: 03/07/2020
 ms.topic: conceptual
 description: Informazioni su come contattare l'amministratore della sottoscrizione per richiedere assistenza in caso di domande o problemi.
 ms.openlocfilehash: 20122b94d59b7b2c3fbe437531cd439341e6b2dd
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937534"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
@@ -29,14 +29,14 @@ Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe 
 6. Infine, fare clic su **Send** (Invia).
 
 > [!NOTE]
-> **Amministratori con privilegi avanzati:**  Per impostare l'indirizzo di posta elettronica a cui vengono inviate le richieste "Contatta l'amministratore", specificare l'indirizzo nelle [Preferenze dell'accordo](admin-prefs.md#contact-email-address).
+> **Super amministratori:**  Per impostare l'indirizzo e-mail a cui vengono inviate le richieste "Contatta il mio amministratore", specifica tale indirizzo in [Preferenze accordo.](admin-prefs.md#contact-email-address)
 
 ## <a name="resources"></a>Risorse
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

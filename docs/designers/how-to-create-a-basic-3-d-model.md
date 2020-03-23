@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce16e436172a7d369f2df8342f6b027b574056ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589526"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Procedura: Creare un modello 3D di base
@@ -40,7 +40,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Per creare un modello 3D semplificato di una casa
 
-1. Creare un modello 3D da usare. Per informazioni su come aggiungere un modello al progetto, vedere la sezione Introduzione in [Editor dei modelli](../designers/model-editor.md).
+1. Creare un modello 3D da usare. Per informazioni su come aggiungere un modello al progetto, vedere la sezione Introduzione in [Editor modelli](../designers/model-editor.md).
 
 2. Aggiungere un cubo alla scena. Nella finestra **Casella degli strumenti**, in **Forme**, selezionare **Cubo** e spostarlo nell'area di progettazione.
 
@@ -58,7 +58,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
     ![Una lato del cubo è stato ulteriormente estruso](../designers/media/gfx_model_demo_house_extend.png)
 
-7. Eseguire la triangolazione del modello. Nella barra degli strumenti dell'editor dei modelli scegliere **Avanzate** > **Strumenti** > **Triangolazione**.
+7. Eseguire la triangolazione del modello. Sulla barra degli strumenti **Advanced** > Editor modelli scegliere**Triangolazione****strumenti** > avanzati .
 
 8. Creare il tetto della casa. Passare alla modalità di selezione bordo scegliendo **Seleziona bordo** nella barra degli strumenti dell'editor dei modelli e quindi scegliere il cubo per attivarlo. Durante la selezione dei bordi visualizzati qui, tenere premuto **CTRL**:
 
@@ -70,10 +70,10 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
    ![Modello completato della casa semplificata](../designers/media/gfx_model_demo_house_final.png)
 
-   Come passaggio successivo, è possibile applicare uno shader a questo modello 3D. Per informazioni, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Come passaggio successivo, è possibile applicare uno shader a questo modello 3D. Per informazioni, consultate [Procedura: Applicare uno shader a un modello 3D.](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Creare un modello di territorio 3D](../designers/how-to-model-3-d-terrain.md)
-- [Editor dei modelli](../designers/model-editor.md)
-- [Finestra di progettazione shader](../designers/shader-designer.md)
+- [Procedura: Modellare il terreno 3D](../designers/how-to-model-3-d-terrain.md)
+- [Editor modelli](../designers/model-editor.md)
+- [Progettista shader](../designers/shader-designer.md)

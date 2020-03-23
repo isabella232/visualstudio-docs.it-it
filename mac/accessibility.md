@@ -1,33 +1,33 @@
 ---
 title: Accessibilità
-description: Introduzione delle funzionalità di accessibilità in Visual Studio per Mac e del modo in cui possono essere abilitate.
+description: Introduzione delle funzionalità di accessibilità in Visual Studio per Mac e come possono essere abilitate.
 author: alanjclark
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.openlocfilehash: 60c35e886155163bff757b175d4233bd06fe61c3
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985062"
 ---
 # <a name="accessibility"></a>Accessibilità
 
-Sono disponibili numerosi strumenti e funzionalità di accessibilità incorporati in macOS che aiuteranno a usare con Visual Studio per Mac.  Oltre a questi, Visual Studio per Mac dispone anche delle funzionalità seguenti per renderlo più accessibile per gli utenti con capacità diverse:
+Ci sono una serie di strumenti di accessibilità e funzionalità integrate direttamente in macOS che ti aiuteranno a usare Visual Studio per Mac.  In aggiunta a questi, Visual Studio per Mac ha anche le seguenti funzionalità per renderlo più accessibile per gli utenti di diverse capacità:
 
-* Ingrandimento testo editor
-* Ingrandimento testo riempimento
-* Personalizzazione del tema colori dell'editor del codice
+* Ingrandimento del testo dell'editor
+* Ingrandimento del testo del pad
+* Personalizzazione del tema dei colori dell'editor di codiceCode editor color theme customization
 * Personalizzazione dei tasti di scelta rapida
-* Navigazione tramite tastiera
+* Navigazione da tastiera
 
 > [!NOTE]
-> Questa guida fa riferimento a Visual Studio per Mac. Per Visual Studio in Windows, vedere [funzionalità di accessibilità di Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio).
+> Questa guida fa riferimento a Visual Studio per Mac.This guide refers to Visual Studio for Mac. Per Visual Studio in Windows, vedere [Funzionalità di accessibilità di Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio).
 
-Per altre informazioni, vedere i seguenti argomenti:
+Per altre informazioni, vedere gli argomenti seguenti:
 
-* [Imposta le opzioni di accessibilità IDE](accessibility-ide-options.md)
-* [Usare le funzionalità e gli strumenti di accessibilità macOS](accessibility-macos.md)
-* [Usare la navigazione da tastiera](accessibility-keyboard.md)
-* [Usare la voce VoiceOver di macOS con Visual Studio per Mac](accessibility-voiceover.md)
+* [Impostare le opzioni di accessibilità dell'IDE](accessibility-ide-options.md)
+* [Usare le funzioni e gli strumenti di accessibilità di macOS](accessibility-macos.md)
+* [Utilizzare la navigazione da tastiera](accessibility-keyboard.md)
+* [Usare VoiceOver di macOS con Visual Studio per Mac](accessibility-voiceover.md)

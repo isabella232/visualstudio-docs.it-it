@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: d106b15a94e00915f8cd0fd2e69c2918f9fbead9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128300"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79549860"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Misurare le prestazioni dell'applicazione analizzando l'utilizzo della CPU
 
-È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare la scheda **Utilizzo CPU** della finestra Strumenti di diagnostica per ottenere i dati relativi alle prestazioni per l'applicazione.
+È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questo articolo illustra come usare la scheda **Utilizzo CPU** degli strumenti di diagnostica per ottenere dati sulle prestazioni per l'app e vengono inoltre fornite informazioni sull'uso di PerfTips.
 
 Durante le pause del debug, lo strumento **Utilizzo CPU** raccoglie informazioni sulle funzioni in esecuzione nell'applicazione. Vengono indicate le funzioni che stavano eseguendo un'operazione e un grafico della sequenza temporale consente di concentrarsi su segmenti specifici della sessione di campionamento.
 
@@ -39,7 +39,7 @@ In questo articolo viene illustrata l'analisi dell'utilizzo della CPU nel normal
 
 È possibile usare gli strumenti di profilatura senza il debugger con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
 
-In questa esercitazione si eseguono le attività seguenti:
+In questa esercitazione si apprenderà come:
 
 > [!div class="checklist"]
 > * Raccogliere i dati di Utilizzo CPU
@@ -51,58 +51,66 @@ In questa esercitazione si eseguono le attività seguenti:
 
 2. Impostare un secondo punto di interruzione alla fine della funzione o dell'area di codice da analizzare.
 
-    > [!TIP]
-    > Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
+    Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
 
-3. La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
+3. La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare nuovamente la finestra, fare clic su **Debug** > di**Windows** > **Mostra strumenti**di diagnostica .
 
-4. È possibile scegliere se visualizzare **Utilizzo CPU**, [Utilizzo memoria](../profiling/Memory-Usage.md) o entrambi usando l'impostazione **Seleziona strumenti** della barra degli strumenti. Se si usa Visual Studio Enterprise, è anche possibile abilitare o disabilitare IntelliTrace in **Strumenti** > **Opzioni** > **IntelliTrace**.
+4. È possibile scegliere se visualizzare **Utilizzo CPU**, [Utilizzo memoria](../profiling/Memory-Usage.md) o entrambi usando l'impostazione **Seleziona strumenti** della barra degli strumenti. Se si esegue Visual Studio Enterprise, è anche possibile abilitare o disabilitare IntelliTrace in **Strumenti** > **Opzioni** > **IntelliTrace**.
 
-     ![Mostra strumenti di diagnostica](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
+     ![Mostra strumenti di diagnostica](../profiling/media/diag-tools-select-tool.png "Strumento DiagToolsSelectTool")
 
      In questa sede ci si occupa principalmente dell'utilizzo della CPU, quindi verificare che l'opzione **Utilizzo CPU** è abilitata (è abilitata per impostazione predefinita).
 
-5. Fare clic su **Debug** > **Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
+5. Fare clic su **Debug** > **di avvio** (o **Avvia** sulla barra degli strumenti o **F5**).
 
-     Al termine del caricamento dell'applicazione viene visualizzato il riepilogo degli strumenti di diagnostica. Se è necessario aprire la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
+     Al termine del caricamento dell'applicazione viene visualizzato il riepilogo degli strumenti di diagnostica. Se è necessario aprire la finestra, fare clic su **Debug** > di**Windows** > **Mostra strumenti**di diagnostica .
 
-     ![Strumenti di diagnostica Scheda Riepilogo](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
+     ![Scheda Riepilogo strumenti di diagnostica](../profiling/media/diag-tools-summary-tab.png "Scheda DiagToolsRiepilogoTab")
 
-     Per altre informazioni sugli eventi, vedere l'articolo relativo a come [eseguire ricerche e applicare filtri nella scheda Eventi della finestra Strumenti di diagnostica](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
+     Per ulteriori informazioni sugli eventi, vedere [Ricerca e filtraggio della scheda Eventi della finestra Strumenti di diagnostica](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
 6. Eseguire lo scenario in cui viene raggiunto il primo punto di interruzione.
 
 7. Quando il debugger è in pausa, abilitare la raccolta dei dati relativi all'utilizzo della CPU e quindi aprire la scheda **Utilizzo CPU**.
 
-     ![Abilitazione profilatura CPU in Strumenti di diagnostica](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
+     ![Strumenti di diagnostica abilitano la profilatura della CPU](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
 
      Quando si sceglie **Registra profilo CPU** Visual Studio avvia la registrazione delle funzioni e del tempo necessario per eseguirle. È possibile visualizzare i dati raccolti solo quando l'applicazione viene interrotta in un punto di interruzione.
+
+     > [!TIP]
+     > Per analizzare le prestazioni, è anche possibile usare [PerfTips](../profiling/perftips.md) per eseguire il codice un'istruzione alla volta e identificare il tempo necessario per il completamento di determinate funzioni o blocchi di codice.
 
 8. Premere F5 per eseguire l'applicazione fino al secondo punto di interruzione.
 
      Ora si hanno a disposizione i dati relativi alle prestazioni per l'applicazione, precisamente per l'area di codice compresa tra i due punti di interruzione.
 
+     >[!TIP]
+     > Quando viene sospesa in corrispondenza di un punto di interruzione o di un'operazione di creazione del codice, è anche possibile analizzare le prestazioni utilizzando [PerfTips](#analyze-performance-using-perftips).
+
      Il profiler inizia a preparare i dati di thread. Attendere il completamento.
 
-     ![Strumenti di diagnostica - Preparazione thread](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
+     ![Strumenti di diagnostica per la preparazione dei thread](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
 
      Lo strumento Utilizzo CPU consente di visualizzare il report nella scheda **Utilizzo CPU**.
 
-     ![Strumenti di diagnostica - Scheda Utilizzo CPU](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
+     ![Scheda Utilizzo CPU degli strumenti di diagnostica](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
 
 9. Se si vuole selezionare un'area di codice più specifica da analizzare, selezionare un'area nella sequenza temporale della CPU (deve essere un'area con dati di profilatura).
 
-     ![Strumenti di diagnostica Selezione di un segmento di tempo](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
+     ![Strumenti di diagnostica Selezionando un segmento di tempo](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
      A questo punto, è possibile iniziare ad analizzare i dati.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Passaggio 2: Analizzare i dati d'uso della CPU
+     > [!TIP]
+     >  Quando si tenta di identificare i problemi di prestazioni, eseguire più misurazioni. Le prestazioni variano naturalmente da run-to-run e i percorsi di codice in genere vengono eseguiti più lentamente la prima volta che vengono eseguiti a causa di operazioni di inizializzazione una tantum, ad esempio il caricamento di DLL, metodi di compilazione JIT e l'inizializzazione delle cache. Prendendo più misure, si ottiene una migliore idea dell'intervallo e della mediana della metrica visualizzata, che consente di confrontare la prima volta rispetto alle prestazioni di stato costante di un'area di codice.
+
+## <a name="step-2-analyze-cpu-usage-data"></a>Passaggio 2: Analizzare i dati di utilizzo della CPU
 
 È consigliabile iniziare ad analizzare i dati esaminando l'elenco di funzioni in Utilizzo CPU, identificando le funzioni che svolgono la maggior parte del lavoro e quindi concentrandosi su ognuna di esse.
 
 1. Nell'elenco delle funzioni esaminare le funzioni che eseguono il maggior numero di operazioni.
 
-    ![Strumenti di diagnostica Elenco funzioni di Utilizzo CPU](../profiling/media/diag-tools-cpu-usage-function-list.png "DiagToolsCPUUsageFunctionList")
+    ![Elenco delle funzioni di utilizzo della CPU degli strumenti di diagnosticaDiagnostics Tools CPU Usage Function List](../profiling/media/diag-tools-cpu-usage-function-list.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > Le funzioni sono elencate in ordine a partire da quelle che svolgono la maggior parte del lavoro (non sono in ordine di chiamata). Ciò consente di identificare rapidamente le funzioni in esecuzione da più tempo.
@@ -111,7 +119,7 @@ In questa esercitazione si eseguono le attività seguenti:
 
     Quando si fa doppio clic su una funzione viene aperta la visualizzazione **Chiamante/Chiamato** nel riquadro a sinistra.
 
-    ![Strumenti di diagnostica Visualizzazione Chiamante Chiamato](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
+    ![Visualizzazione Chiamante/chiamato in Strumenti di diagnostica](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
 
     In questa visualizzazione la funzione selezionata viene visualizzata nell'intestazione e nella casella **Funzione corrente** (GetNumber, in questo esempio). La funzione che ha chiamato la funzione corrente viene visualizzata a sinistra, in **Funzioni chiamanti**, e tutte le funzioni chiamate dalla funzione corrente sono riportate nella casella **Funzioni chiamate** sulla destra. Selezionare una delle due caselle per modificare la funzione corrente.
 
@@ -126,10 +134,10 @@ In questa esercitazione si eseguono le attività seguenti:
     Ogni area numerata nella figura si riferisce a un passaggio della procedura.
 
     ::: moniker range=">=vs-2019"
-    ![Strumenti di diagnostica Albero delle chiamate](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
+    ![Albero delle chiamate degli strumenti di diagnostica](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
     ::: moniker range="vs-2017"
-    ![Strumenti di diagnostica Albero delle chiamate](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
+    ![Albero delle chiamate degli strumenti di diagnostica](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
     |||
@@ -137,7 +145,7 @@ In questa esercitazione si eseguono le attività seguenti:
     |![Passaggio 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Il nodo di livello principale nell'albero delle chiamate di Utilizzo CPU è uno pseudo-nodo|
     |![Passaggio 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Nella maggior parte delle app, quando l'opzione [Mostra codice esterno](#view-external-code) è disabilitata, il nodo di secondo livello è un nodo **[Codice esterno]** contenente il codice di sistema e di framework che avvia e arresta l'app, disegna l'interfaccia utente, controlla la pianificazione dei thread e fornisce altri servizi di basso livello all'app.|
     |![Passaggio 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Gli elementi figlio del nodo di secondo livello sono i metodi del codice utente e le routine asincrone che vengono chiamati o creati dal codice di sistema o di framework di secondo livello.|
-    |![Passaggio 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|I nodi figlio di un metodo contengono i dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|
+    |![Fase 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|I nodi figlio di un metodo contengono i dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|
 
     Di seguito sono riportate altre informazioni sui valori di colonna:
 
@@ -150,11 +158,17 @@ In questa esercitazione si eseguono le attività seguenti:
     ::: moniker range=">=vs-2019"
     Per visualizzare le chiamate di funzioni che usano la percentuale massima della CPU nella visualizzazione dell'albero delle chiamate, fare clic su **Espandi percorso critico**.
 
-    ![Percorso critico degli strumenti di diagnostica](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
+    ![Percorso critico degli strumenti di diagnostica](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsPercorso HotPath")
     ::: moniker-end
 
     > [!NOTE]
     > Se nell'albero delle chiamate sono presenti porzioni di codice contrassegnate come codice "danneggiato" o "stack unwalkable", è probabile che siano stati eliminati eventi ETW (Event Tracing for Windows). Per risolvere il problema, provare a raccogliere nuovamente la stessa traccia.
+
+## <a name="analyze-performance-using-perftips"></a>Analizzare le prestazioni usando PerfTipsAnalyze performance using PerfTips
+
+Durante l'esecuzione di codice nel debugger, è anche possibile usare [PerfTips](../profiling/perftips.md) per un'analisi approfondita delle prestazioni. Utilizzando PerfTips, è possibile visualizzare le informazioni sulle prestazioni durante l'interazione con il codice. È possibile verificare informazioni quali la durata dell'evento, misurata da quando il debugger è stato messo pausa l'ultima volta o quando è stata avviata l'applicazione. Ad esempio, se esegui il codice (F10, F11), PerfTips mostra la durata del runtime dell'app dall'operazione del passaggio precedente al passaggio corrente.
+
+![Analizzare con PerfTipsAnalyze with PerfTips](../profiling/media/diag-tools-perftips.png "AnalyzeWithPerfTips")
 
 ## <a name="view-external-code"></a>Visualizzare codice esterno
 
@@ -164,12 +178,12 @@ Per visualizzare i percorsi delle chiamate del codice esterno, scegliere **Mostr
 
 ![Scegliere Visualizzazione filtro, quindi Mostra codice esterno](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
-Tieni presente che numerose catene di chiamate del codice esterno sono molto annidate, pertanto la larghezza della colonna Nome funzione può superare la larghezza di visualizzazione in quasi tutti i monitor, ad eccezione di quelli più grandi. Quando ciò si verifica, i nomi delle funzioni sono visualizzati come **[…]** .
+Tieni presente che numerose catene di chiamate del codice esterno sono molto annidate, pertanto la larghezza della colonna Nome funzione può superare la larghezza di visualizzazione in quasi tutti i monitor, ad eccezione di quelli più grandi. In questo caso, i nomi delle funzioni vengono visualizzati come **[...]**.
 
 Usare la casella di ricerca per trovare un nodo che si sta cercando, quindi usare la barra di scorrimento orizzontale per visualizzare i dati.
 
 > [!TIP]
-> Se si profila il codice esterno che chiama le funzioni di Windows, è necessario verificare di avere i file con estensione *pdb* più aggiornati. Senza questi file, le visualizzazioni dei rapporti elencherà i nomi delle funzioni di Windows enigmatici e difficile da comprendere. Per altre informazioni su come verificare di avere i file necessari, vedere [Specifica di file di simboli con estensione pdb e di file di origine nel debugger](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> Se si profila il codice esterno che chiama le funzioni di Windows, è necessario verificare di avere i file con estensione *pdb* più aggiornati. Senza questi file, le visualizzazioni dei rapporti elencherà i nomi delle funzioni di Windows enigmatici e difficile da comprendere. Per ulteriori informazioni su come assicurarsi di disporre dei file necessari, vedere Specificare i [file di simboli (con estensione pdb) e i file](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)di origine nel debugger.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

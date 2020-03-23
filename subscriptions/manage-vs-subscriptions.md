@@ -7,11 +7,11 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
 ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78967912"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79303372"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -51,7 +51,7 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 **Sottoscrizioni acquistate attraverso programmi:** se si riceve la sottoscrizione tramite un programma, la sottoscrizione è associata alla partecipazione al programma. Per altre informazioni, rivolgersi ai referenti per il programma.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
+- [Bizspark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -115,14 +115,14 @@ R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per d
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Gestisci le sottoscrizioni per la tua organizzazione?  Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio:
-- [Assegna singole sottoscrizioni](assign-license.md)
-- [Assegna più sottoscrizioni](assign-license-bulk.md)
+Gestire le sottoscrizioni per l'organizzazione?  Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio:Learn more about managing Visual Studio subscriptions:
+- [Assegnare singole sottoscrizioniAssign individual subscriptions](assign-license.md)
+- [Assegnare più sottoscrizioniAssign multiple subscriptions](assign-license-bulk.md)
 - [Modificare sottoscrizioni](edit-license.md)
 - [Eliminare sottoscrizioni](delete-license.md)
-- [Determinare l'utilizzo massimo](maximum-usage.md)
+- [Determinare l'utilizzo massimoDetermine maximum usage](maximum-usage.md)

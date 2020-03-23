@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568659"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registra output finestra di comando
 
-Copia interamente l'input e l'output della finestra di **comando** in un file.
+Copia tutto l'input e l'output dalla finestra **di comando** in un file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,23 +33,23 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="arguments"></a>Argomenti
 
 `filename`\
-Parametro facoltativo. Nome del file di log. Per impostazione predefinita, il file viene creato nella cartella del profilo dell'utente. Se il nome del file specificato esiste già, il log viene accodato alla fine del file esistente. Se non viene specificato alcun file, viene usato l'ultimo file specificato. Se non esiste alcun file precedente, viene creato un file di log predefinito, denominato cmdline.log.
+Facoltativa. Nome del file di log. Per impostazione predefinita, il file viene creato nella cartella del profilo dell'utente. Se il nome del file specificato esiste già, il log viene accodato alla fine del file esistente. Se non viene specificato alcun file, viene usato l'ultimo file specificato. Se non esiste alcun file precedente, viene creato un file di log predefinito, denominato cmdline.log.
 
 > [!TIP]
 > Per modificare il percorso in cui viene salvato il file di log, immettere il percorso completo del file, racchiuso tra virgolette se il percorso contiene spazi.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Switch
 
 /on\
-Parametro facoltativo. Avvia la registrazione per la finestra di **comando** nel file specificato e accoda il file con le nuove informazioni.
+Facoltativa. Avvia la registrazione per la finestra di **comando** nel file specificato e accoda il file con le nuove informazioni.
 
 /off\
-Parametro facoltativo. Interrompe la registrazione per la finestra di **comando**.
+Facoltativa. Interrompe la registrazione per la finestra di **comando**.
 
 /overwrite\
-Parametro facoltativo. Se il file specificato nell'argomento `filename` corrisponde a un file esistente, il file viene sovrascritto.
+Facoltativa. Se il file specificato nell'argomento `filename` corrisponde a un file esistente, il file viene sovrascritto.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Se non viene specificato alcun file, viene creato per impostazione predefinita il file cmdline.log. Per impostazione predefinita, l'alias per questo comando è Log.
 

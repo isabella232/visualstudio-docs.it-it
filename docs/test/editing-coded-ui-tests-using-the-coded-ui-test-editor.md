@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589656"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modificare test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente
@@ -24,7 +24,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 - Componente Test codificato dell'interfaccia utente
@@ -61,40 +61,40 @@ Quando si apre il file *UIMap.uitest* associato al test codificato dell'interfac
 
 ![Modifica del menu di scelta rapida con il generatore di test codificati dell'interfaccia utente.](../test/media/editcodeduitest.png)
 
-In **Esplora soluzioni** aprire il menu di scelta rapida per **UIMap.uitest** e scegliere *Apri*. Il test codificato dell'interfaccia utente viene visualizzato in **Editor di test codificati dell'interfaccia utente**. Ora è possibile visualizzare e modificare i metodi registrati, i le azioni e i corrispondenti controlli nel test codificato dell'interfaccia utente.
+In **Esplora soluzioni**aprire il menu di scelta rapida per *UIMap.uitest* e scegliere **Apri**. Il test codificato dell'interfaccia utente viene visualizzato **nell'Editor test codificati dell'interfaccia utente**. Ora è possibile visualizzare e modificare i metodi registrati, i le azioni e i corrispondenti controlli nel test codificato dell'interfaccia utente.
 
 > [!TIP]
 > Quando si seleziona un'azione dell'interfaccia utente che si trova in un metodo nel riquadro **Azioni dell'interfaccia utente** , viene evidenziato il controllo corrispondente. È possibile modificare anche le proprietà delle azioni dell'interfaccia utente o dei controlli.
 
 ## <a name="modify-ui-action-and-control-properties"></a>Modificare le proprietà di azione e controllo dell'interfaccia utente
 
-Usando l'Editor di test codificati dell'interfaccia utente, è possibile individuare rapidamente e visualizzare tutte le azioni dell'interfaccia utente nei metodi di test. Quando si seleziona l'azione dell'interfaccia utente nell'editor, il controllo corrispondente viene automaticamente evidenziato. Analogamente, se si seleziona un controllo, vengono evidenziate le azioni dell'interfaccia utente associate. Quando si seleziona un'azione dell'interfaccia utente o un controllo, è facile usare la finestra **Proprietà** per modificare le proprietà corrispondenti.
+Usando l'Editor di test codificati dell'interfaccia utente, è possibile individuare rapidamente e visualizzare tutte le azioni dell'interfaccia utente nei metodi di test. Quando si seleziona l'azione dell'interfaccia utente nell'editor, il controllo corrispondente viene automaticamente evidenziato. Analogamente, se si seleziona un controllo, vengono evidenziate le azioni dell'interfaccia utente associate. Quando si seleziona un'azione dell'interfaccia utente o un controllo, è quindi facile usare la finestra **Proprietà** per modificare le proprietà corrispondenti.
 
 ![Proprietà di un'azione dell'interfaccia utente](../test/media/codeduiedituiaction.png)
 
 Per modificare le proprietà di un'azione dell'interfaccia utente, nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test contenente un'azione dell'interfaccia utente di cui si vogliono modificare le proprietà, selezionare l'azione dell'interfaccia utente e quindi modificare le proprietà usando la finestra Proprietà.
 
-Ad esempio, se un server non è disponibile e al Web browser è associata l'azione dell'interfaccia utente **Vai a pagina Web '<http://Contoso1/default.aspx>'** , è possibile sostituire l'URL con `'http://Contoso2/default.aspx'`.
+Ad esempio, se un server non è disponibile e al browser Web è associata un'azione dell'interfaccia utente che indica **Vai alla pagina Web '<http://Contoso1/default.aspx>**, è possibile modificare l'URL in `'http://Contoso2/default.aspx'`.
 
 ![Proprietà del controllo](../test/media/codeduitestcontrolprop.png)
 
-La modifica delle proprietà di un controllo è come quella delle azioni dell'interfaccia utente. Nel riquadro **Mappa del controllo dell'interfaccia utente** selezionare il controllo su cui intervenire e modificarne le proprietà usando la finestra **Proprietà**.
+La modifica delle proprietà di un controllo è come quella delle azioni dell'interfaccia utente. Nel riquadro Mappa di controllo **dell'interfaccia utente** selezionare il controllo che si desidera modificare e modificare le relative proprietà utilizzando la finestra **Proprietà.In** the UI Control Map pane, select the control that you want to edit and modify its properties using the Properties window.
 
 Ad esempio, uno sviluppatore potrebbe avere cambiato la proprietà **(ID)** in un pulsante nel codice sorgente dell'applicazione di cui è in corso il test da "idSubmit" a "idLogin". Con la proprietà **(ID)** modificata nell'applicazione, il test codificato dell'interfaccia utente non potrà individuare il pulsante e avrà esito negativo. In questo caso, il tester può aprire la raccolta **Proprietà di ricerca** e modificare la proprietà **Id** in modo che corrisponda al nuovo valore usato dallo sviluppatore nell'applicazione. Il tester potrebbe anche cambiare la proprietà **Nome descrittivo** da "Invia" ad "Accesso". Con questa modifica, l'azione dell'interfaccia utente associata nell'editor di test codificati dell'interfaccia utente viene aggiornata da "Scegli pulsante Invia" a "Scegli pulsante Accesso".
 
-Dopo aver completato le modifiche, salvarle nel file *UIMap.Designer* scegliendo **Salva** sulla barra degli strumenti di Visual Studio.
+Dopo aver completato le modifiche, salvare le modifiche al file UIMap.Designer scegliendo Salva sulla barra degli strumenti di Visual Studio.After completing your modifications, save the changes to the *UIMap.Designer* file by choosing **Save** on the Visual Studio toolbar.
 
 ### <a name="tips"></a>Suggerimenti
 
 - Se la finestra **Proprietà** non viene visualizzata, tenere premuto **ALT** mentre si preme **INVIO** o, in alternativa, premere **F4**.
 
-- Per annullare le modifiche apportate alle proprietà, selezionare **Annulla** dal menu **Modifica** oppure premere **CTRL**+**Z**.
+- Per annullare le modifiche apportate alle proprietà, scegliere **Annulla** dal menu **Modifica** o premere **CTRL**+**Z**.
 
-- È possibile usare il pulsante **Trova** sulla barra degli strumenti dell'editor di test codificati dell'interfaccia utente per aprire lo strumento **Trova e sostituisci** in Visual Studio. Quindi è possibile usare il controllo **Trova** per individuare l'azione dell'interfaccia utente nell'Editor di test codificati dell'interfaccia utente. Ad esempio, è possibile provare a cercare "Fare clic sul pulsante Accesso". Questo è utile nei test di grandi dimensioni. Si noti che non è possibile usare la funzionalità di sostituzione dello strumento **Trova e sostituisci** nell'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere la sezione relativa al controllo di ricerca in [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md).
+- È possibile utilizzare il pulsante Trova nella barra degli strumenti dell'editor test codificati dell'interfaccia utente per aprire lo strumento **Trova e sostituisci** in Visual Studio.You can use the **Find** button in the Coded UI Test editor toolbar to open the Find and Replace tool in Visual Studio. È quindi possibile utilizzare il **controllo Trova** per individuare un'azione dell'interfaccia utente nell'editor test codificati dell'interfaccia utente. Ad esempio, è possibile provare a cercare "Fare clic sul pulsante Accesso". Questo è utile nei test di grandi dimensioni. Non è possibile utilizzare la funzionalità di sostituzione nello strumento **Trova e sostituisci** nell'Editor test codificati dell'interfaccia utente. Per altre informazioni, vedere la sezione relativa al controllo di ricerca in [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md).
 
 - A volte può essere difficile identificare la posizione dei controlli nell'interfaccia utente dell'applicazione sottoposta a test. Una delle funzionalità dell'Editor di test codificati dell'interfaccia utente consente di selezionare un controllo elencato nella mappa del controllo dell'interfaccia utente e visualizzarne la posizione nell'applicazione sottoposta a test. Per altre informazioni, vedere [Individuare un controllo dell'interfaccia utente nell'applicazione sottoposta a test](#locate-a-ui-control-in-the-application-under-test) più avanti in questo articolo.
 
-- Potrebbe essere necessario espandere il controllo contenitore che include il controllo che si vuole modificare. Per altre informazioni, vedere [Individuare un controllo e i relativi discendenti](#locate-a-control-and-its-descendants) più avanti nell'articolo.
+- Potrebbe essere necessario espandere il controllo contenitore che comprende il controllo che si vuole modificare. Per altre informazioni, vedere [Individuare un controllo e i relativi discendenti](#locate-a-control-and-its-descendants) più avanti nell'articolo.
 
 ## <a name="delete-unwanted-ui-actions"></a>Eliminare le azioni dell'interfaccia utente indesiderate
 
@@ -112,20 +112,20 @@ Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test cont
 
 ![Due metodi di test](../test/media/codeduitestsplitmethod2.png)
 
-Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test che si vuole suddividere in due metodi distinti e selezionare l'azione dell'interfaccia utente con cui far iniziare il nuovo metodo di test. Aprire il menu di scelta rapida per l'azione dell'interfaccia utente e quindi scegliere **Suddividi in nuovo metodo**scegliere il pulsante **Suddividi in nuovo metodo** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente. Il nuovo metodo di test viene visualizzato nel riquadro **Azioni dell'interfaccia utente**. che contiene le azioni dell'interfaccia utente a iniziare dall'azione in cui è stata specificata la suddivisione.
+Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test che si vuole suddividere in due metodi distinti e selezionare l'azione dell'interfaccia utente con cui far iniziare il nuovo metodo di test. Aprire il menu di scelta rapida per l'azione dell'interfaccia utente e quindi scegliere **Suddividi in nuovo metodo**scegliere il pulsante **Suddividi in nuovo metodo** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente. Il nuovo metodo di test viene visualizzato nel riquadro **Azioni dell'interfaccia utente.** che contiene le azioni dell'interfaccia utente a iniziare dall'azione in cui è stata specificata la suddivisione.
 
-Dopo avere completato la suddivisione del metodo, salvare le modifiche nel file *UIMap.Designer* scegliendo **Salva** sulla barra degli strumenti di Visual Studio.
+Dopo aver diviso il metodo, salvare le modifiche apportate al file *UIMap.Designer* scegliendo **Salva** sulla barra degli strumenti di Visual Studio.
 
 > [!WARNING]
 > Se si suddivide un metodo, è necessario modificare qualsiasi codice che chiama il metodo esistente in modo che chiami anche il nuovo metodo che si sta per creare, se si vuole che queste azioni dell'interfaccia utente restino incluse. Quando si suddivide un metodo, verrà visualizzata una finestra di dialogo di Microsoft Visual Studio che avvisa che è necessario modificare qualsiasi codice chiami il metodo esistente in modo che chiami anche il nuovo metodo che si sta per creare. Scegliere **Sì**.
 
 ### <a name="tips"></a>Suggerimenti
 
-- Per annullare la suddivisione, scegliere **Annulla** dal menu **Modifica** oppure premere **CTRL**+**Z**.
+- Per annullare la divisione, scegliete **Annulla** dal menu **Modifica** o premete **Ctrl**+**.**
 
-- È possibile rinominare il nuovo metodo. Selezionarlo nel riquadro **Azioni** dell'interfaccia utente e scegliere il pulsante **Rinomina** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente.
+- È possibile rinominare il nuovo metodo. Selezionarlo nel riquadro **Azioni dell'interfaccia utente** e scegliere il pulsante **Rinomina** nella barra degli strumenti dell'Editor test dell'interfaccia utente codificati.
 
-   oppure
+   -oppure-
 
    Aprire il menu di scelta rapida per il nuovo metodo di test e scegliere **Rinomina**.
 
@@ -133,18 +133,18 @@ Dopo avere completato la suddivisione del metodo, salvare le modifiche nel file 
 
 ## <a name="move-a-test-method-to-the-uimap-file-to-facilitate-customization"></a>Spostare un metodo di test nel file UIMap per facilitare la personalizzazione
 
-Se si determina che uno dei metodi di test nel test codificato dell'interfaccia utente richieda un codice personalizzato, è necessario spostarlo nel file *UIMap.cs* o *UIMap.vb*. In caso contrario, il codice verrà sovrascritto ogni volta che il test codificato dell'interfaccia utente verrà ricompilato. Se non si sposta il metodo, il codice personalizzato verrà sovrascritto ogni volta che il test verrà ricompilato.
+Se si determina che uno dei metodi di test nel test codificato dell'interfaccia utente richiede codice personalizzato, è necessario spostarlo nel *file UIMap.cs* o *UIMap.vb.* In caso contrario, il codice verrà sovrascritto ogni volta che il test codificato dell'interfaccia utente verrà ricompilato. Se non si sposta il metodo, il codice personalizzato verrà sovrascritto ogni volta che il test verrà ricompilato.
 
-Nel riquadro **Azioni dell'interfaccia utente** selezionare il metodo di test che si vuole spostare nel file *UIMap.cs* o *UIMap.vb* per facilitare la funzionalità di codice personalizzato che non verrà sovrascritto quando il codice di test verrà ricompilato. Scegliere poi il pulsante **Sposta codice** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente o aprire il menu di scelta rapida per il metodo di test e scegliere **Sposta codice**. Il metodo di test verrà rimosso dal file *UIMap.uitest* e non verrà più visualizzato nel riquadro **Azioni dell'interfaccia utente**. Per modificare il file di test spostato, aprire il file *UIMap.cs* o *UIMap.vb* da **Esplora soluzioni**.
+Nel riquadro **Azione interfaccia utente** selezionare il metodo di test che si desidera spostare nel file *UIMap.cs* o *UIMap.vb* per facilitare la funzionalità del codice personalizzato che non verrà sovrascritto quando il codice di test viene ricompilato. Scegliere poi il pulsante **Sposta codice** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente o aprire il menu di scelta rapida per il metodo di test e scegliere **Sposta codice**. Il metodo di test viene rimosso dal file *UIMap.uitest* e non viene più visualizzato nel riquadro **Azioni dell'interfaccia utente.** Per modificare il file di test spostato, aprire il *UIMap.cs* o il file *UIMap.vb* da **Esplora soluzioni**.
 
-Dopo avere completato lo spostamento del metodo, salvare le modifiche nel file *UIMap.Designer* scegliendo **Salva** sulla barra degli strumenti di Visual Studio.
+Dopo aver spostato il metodo, salvare le modifiche apportate al file *UIMap.Designer* scegliendo **Salva** sulla barra degli strumenti di Visual Studio.
 
 > [!WARNING]
-> Dopo aver spostato un metodo, non è più possibile modificarlo mediante l'editor di test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor del codice. Quando si sposta un metodo, verrà visualizzata una finestra di dialogo di Microsoft Visual Studio che avvisa che il metodo verrà spostato dal file *UIMap.uitest* al file *UIMap.cs* o *UIMap.vb* e che non sarà più possibile modificare il metodo usando l'Editor di test codificati dell'interfaccia utente. Scegliere **Sì**.
+> Dopo aver spostato un metodo, non è più possibile modificarlo mediante l'editor di test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor del codice. Quando si sposta un metodo, verrà visualizzata una finestra di dialogo di Microsoft Visual Studio Avvisa che il metodo verrà spostato dal file *UIMap.uitest* al file *UIMap.cs* o *UIMap.vb* e che non sarà più possibile modificare il metodo utilizzando l'Editor test codificato dell'interfaccia utente. Scegliere **Sì**.
 
 ### <a name="tips"></a>Suggerimenti
 
-Per annullare lo spostamento, selezionare **Annulla** dal menu **Modifica** oppure premere **CTRL**+**Z**. Tuttavia, è poi necessario rimuovere manualmente il codice dal file *UIMap.cs* o *UIMap.vb*.
+Per annullare lo spostamento, selezionare **Annulla** dal menu **Modifica** o premere **CTRL**+**Z**. Tuttavia, è necessario rimuovere manualmente il codice dal file *UIMap.cs* o *UIMap.vb.*
 
 ## <a name="locate-a-ui-control-in-the-application-under-test"></a>Individuare un controllo dell'interfaccia utente nell'applicazione sottoposta a test
 
@@ -184,15 +184,15 @@ Talvolta, potrebbe essere necessario fare in modo che il test attenda che si ver
 
 ![Ritardo aggiunto con 5 secondi](../test/media/codeduidealy2.png)
 
-Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test contenente l'azione dell'interfaccia utente prima della quale si vuole inserire un ritardo. Selezionare l'azione dell'interfaccia utente. Aprire quindi il menu di scelta rapida per l'azione dell'interfaccia utente e scegliere **Inserisci ritardo prima**. Un ritardo viene inserito ed evidenziato prima dell'azione dell'interfaccia utente selezionata con il testo seguente: **Attendere 1 secondo per ritardo utente tra azioni**. Nella finestra **Proprietà** impostare il valore della proprietà **Ritardo** sul numero desiderato di millisecondi.
+Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test contenente l'azione dell'interfaccia utente prima della quale si vuole inserire un ritardo. Selezionare l'azione dell'interfaccia utente. Aprire quindi il menu di scelta rapida per l'azione dell'interfaccia utente e scegliere **Inserisci ritardo prima**. Un ritardo viene inserito ed evidenziato prima dell'azione dell'interfaccia utente selezionata con il testo seguente: **Attendere 1 secondo per ritardo utente tra azioni**. Nella finestra **Proprietà** modificare il valore della proprietà **Delay** sul numero di millisecondi desiderato.
 
-Dopo avere completato l'inserimento del ritardo, salvare le modifiche nel file *UIMap.Designer* scegliendo **Salva** sulla barra degli strumenti di Visual Studio.
+Dopo aver inserito il ritardo, salvare le modifiche apportate al file UIMap.Designer scegliendo Salva sulla barra degli strumenti di Visual Studio.After you are done inserting the delay, save the changes to the *UIMap.Designer* file by choosing **Save** on the Visual Studio toolbar.
 
-Se è necessario verificare che un controllo specifico sia disponibile prima di un'azione dell'interfaccia utente, è consigliabile valutare se aggiungere codice personalizzato al metodo di test usando il metodo UITestControl.WaitForControlXXX() appropriato. Per altre informazioni, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+Se è necessario assicurarsi che un controllo specifico sia disponibile prima di un'azione dell'interfaccia utente, è consigliabile aggiungere il codice personalizzato al metodo di test usando il metodo UITestControl.WaitForControlXXX() appropriato. Per ulteriori informazioni, consultate Rendere i [test codificati dell'interfaccia utente in attesa di eventi specifici durante la riproduzione.](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md)
-- [Creare un test codificato dell'interfaccia utente basato sui dati](../test/creating-a-data-driven-coded-ui-test.md)
-- [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Creare un test codificato dell'interfaccia utente basato sui datiCreate a data-driven UI test](../test/creating-a-data-driven-coded-ui-test.md)
+- [Procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utenteWalkthrough: Creating, editing and maintaining a coded UI test](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

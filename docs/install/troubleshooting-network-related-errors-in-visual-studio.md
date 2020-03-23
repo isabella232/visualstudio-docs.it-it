@@ -18,13 +18,13 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114981"
 ---
-# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio
+# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Risolvere gli errori relativi alla rete quando si installa o si utilizza Visual StudioTroubleshoot network-related errors when you install or use Visual Studio
 
 Esistono soluzioni per la maggiore parte degli errori tipici correlati alla rete o al proxy che si riscontrano quando si installa o si usa Visual Studio protetto da un firewall o un server proxy.
 
@@ -50,7 +50,7 @@ Generalmente questo errore si verifica quando gli utenti sono connessi a Interne
 
 - In caso contrario, è possibile rimuovere l'indirizzo http:&#47;&#47;go.microsoft.com dall'elenco di indirizzi consentiti in modo che al riavvio di Visual Studio la finestra di dialogo di autenticazione del proxy venga visualizzata sia per l'indirizzo http:&#47;&#47;go.microsoft.com sia per gli endpoint server.
 
-  OPPURE
+  -OPPURE-
 
 - Se si vogliono usare le credenziali predefinite con il proxy, è possibile eseguire le azioni seguenti:
 
@@ -69,7 +69,7 @@ Generalmente questo errore si verifica quando gli utenti sono connessi a Interne
       È necessario inserire l'indirizzo del proxy corretto per la rete in `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Per altre informazioni, vedere le pagine relative all'elemento [&lt;defaultProxy&gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e all'elemento [&lt;proxy&gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+     > Per altre informazioni, vedere le [ &lt;pagine defaultProxy&gt; Element (Network Settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [ &lt;proxy&gt; Element (Network Settings).](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Generalmente questo errore si verifica quando gli utenti sono connessi a Interne
       È necessario inserire l'indirizzo del proxy corretto per la rete in `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Per altre informazioni, vedere le pagine relative all'elemento [&lt;defaultProxy&gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e all'elemento [&lt;proxy&gt; (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+     > Per altre informazioni, vedere le [ &lt;pagine defaultProxy&gt; Element (Network Settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [ &lt;proxy&gt; Element (Network Settings).](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)
 
 ::: moniker-end
 
@@ -133,23 +133,23 @@ Abilitare le connessioni per gli URL seguenti:
   > [!NOTE]
   > Gli URL di server NuGet di proprietà privata potrebbero non essere inclusi in questo elenco. È possibile controllare i server NuGet in uso in %APPData%\Nuget\NuGet.Config.
 
-## <a name="error-failed-to-parse-id-from-parent-process"></a>Errore: "non è stato possibile analizzare l'ID dal processo padre"
+## <a name="error-failed-to-parse-id-from-parent-process"></a>Errore: "Impossibile analizzare l'ID dal processo padre"
 
-Questo messaggio di errore può essere visualizzato quando si usa un programma di avvio automatico di Visual Studio e un file Response. JSON in un'unità di rete. L'origine dell'errore è il controllo dell'account utente (UAC) in Windows.
+Questo messaggio di errore può verificarsi quando si utilizza un programma di avvio automatico di Visual Studio e un file response.json in un'unità di rete. L'origine dell'errore è il controllo dell'account utente (UAC) in Windows.
 
-Ecco perché questo errore può verificarsi: un'unità di rete mappata o una condivisione [UNC](/dotnet/standard/io/file-path-formats#unc-paths) è collegata al token di accesso di un utente. Quando UAC è abilitato, vengono creati due [token di accesso](/windows/win32/secauthz/access-tokens) utente: uno *con* accesso amministratore e uno *senza* accesso amministratore. Quando viene creata un'unità o una condivisione di rete, il token di accesso corrente dell'utente è collegato a tale unità. Poiché il programma di avvio automatico deve essere eseguito come amministratore, non sarà in grado di accedere all'unità di rete o alla condivisione se l'unità o la condivisione non è collegata a un token di accesso utente con accesso di amministratore.
+Ecco perché questo errore può verificarsi: un'unità di rete mappata o una condivisione [UNC](/dotnet/standard/io/file-path-formats#unc-paths) è collegata al token di accesso di un utente. Quando il controllo dell'account utente è abilitato, vengono creati due token di [accesso](/windows/win32/secauthz/access-tokens) utente: uno *con* accesso amministratore e uno *senza* accesso amministratore. Quando viene creata un'unità di rete o una condivisione, viene collegato il token di accesso corrente dell'utente. Poiché il programma di avvio automatico deve essere eseguito come amministratore, non sarà in grado di accedere all'unità di rete o condividere se l'unità o la condivisione non è collegata a un token di accesso utente con accesso di amministratore.
 
-### <a name="to-fix-this-error"></a>Per risolvere l'errore
+### <a name="to-fix-this-error"></a>Per correggere l'errore
 
-È possibile usare il comando `net use` oppure è possibile modificare l'impostazione di controllo dell'account utente Criteri di gruppo. Per ulteriori informazioni su queste soluzioni alternative e su come implementarle, vedere gli articoli del supporto tecnico Microsoft seguenti:
+È possibile `net use` utilizzare il comando oppure modificare l'impostazione di Criteri di gruppo controllo dell'utilizzo del sistema di controllo dell'utente. Per ulteriori informazioni su queste soluzioni alternative e su come implementarle, vedere i seguenti articoli del supporto tecnico Microsoft:
 
-* [Le unità mappate non sono disponibili da un prompt con privilegi elevati quando UAC è configurato per "Richiedi credenziali" in Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
-* [I programmi potrebbero non essere in grado di accedere ad alcuni percorsi di rete dopo l'attivazione del controllo dell'account utente nei sistemi operativi Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
+* [Unità mappate non sono disponibili da un prompt dei comandi con privilegi elevati quando il controllo dell'account utente è configurato su "Richiedi credenziali" in Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [I programmi potrebbero non essere in grado di accedere ad alcuni percorsi di rete dopo aver attivato Controllo dell'account utente nei sistemi operativi Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
 * [Installare e usare Visual Studio protetto da un firewall o un server proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
-* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
-* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
+* [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
+* [Installare Visual Studio](install-visual-studio.md)

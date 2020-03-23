@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570557"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 
-Questa scheda della finestra di dialogo **Scegli elementi della Casella degli strumenti** include l'elenco dei controlli Windows Presentation Foundation (WPF) disponibili nel computer locale. Per visualizzare questo elenco, **scegliere Scegli elementi della casella degli** strumenti dal menu **strumenti** per visualizzare la finestra di dialogo **Scegli elementi della casella degli strumenti** e quindi selezionare la scheda **Componenti WPF** . Per ordinare i componenti elencati, selezionare un'intestazione di colonna.
+Questa scheda della finestra di dialogo **Scegli elementi della Casella degli strumenti** include l'elenco dei controlli Windows Presentation Foundation (WPF) disponibili nel computer locale. Per visualizzare questo elenco, scegliere **Scegli elementi della Casella degli strumenti** dal menu **Strumenti** per visualizzare la finestra di dialogo Scegli elementi della Casella **degli strumenti** e quindi selezionare la relativa scheda Componenti **WPF** . Per ordinare i componenti elencati, selezionare un'intestazione di colonna.
 
 - Quando la casella di controllo accanto a un componente è selezionata, l'icona di tale componente viene visualizzata nella **casella degli strumenti**.
 
@@ -35,7 +35,7 @@ Questa scheda della finestra di dialogo **Scegli elementi della Casella degli st
 
 Le colonne della scheda **Componenti WPF** contengono le informazioni seguenti:
 
-**Name**
+**Nome**
 
 Elenca i nomi dei controlli WPF per i quali sono presenti voci nel Registro di sistema del computer.
 
@@ -51,13 +51,13 @@ Visualizza il nome dell'assembly .NET che include lo spazio dei nomi per ogni co
 
 Visualizza il percorso dell'assembly .NET. Gli assembly si trovano, per impostazione predefinita, nella cartella Global Assembly Cache. Per altre informazioni sulla cartella Global Assembly Cache, vedere [Usare gli assembly e la Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 ### <a name="filter"></a>Filtro
 
 Filtra l'elenco dei controlli WPF in base alla stringa immessa nella casella di testo. Vengono visualizzate tutte le corrispondenze presenti in una qualsiasi delle quattro colonne.
 
-**Cancella**
+**Chiaro**
 
 Cancella la stringa del filtro.
 
@@ -65,7 +65,7 @@ Cancella la stringa del filtro.
 
 Apre la finestra di dialogo **Apri** che consente di selezionare gli assembly che contengono i controlli WPF. Usare questo metodo per caricare gli assembly che non si trovano nella cartella Global Assembly Cache.
 
-**Linguaggio**
+**Lingua**
 
 Visualizza la lingua localizzata dell'assembly che contiene il controllo WPF selezionato.
 

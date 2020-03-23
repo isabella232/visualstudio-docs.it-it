@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596411"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
@@ -40,36 +40,36 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |Aggiungi nuovo progetto|AddProj|File.AddNewProject|
 |[Comando Alias](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
 |Auto (finestra)|Auto|Debug.Autos|
-|Finestra Punti di interruzione|bl|Debug.Breakpoints|
-|Attiva/disattiva punto di interruzione|bp|Debug.ToggleBreakPoint|
+|finestra Punti di interruzione|bl|Debug.Breakpoints|
+|Imposta/Rimuovi punto di interruzione|bp|Debug.ToggleBreakPoint|
 |Finestra Stack di chiamate|CallStack|Debug.CallStack|
 |Cancella segnalibri|ClearBook|Edit.ClearBookmarks|
-|Chiusura|Chiusura|File.Close|
+|Chiudi|Chiudi|File.Close|
 |Chiudi tutti i documenti|CloseAll|Window.CloseAllDocuments|
-|Deseleziona tutto|cls|Edit.ClearAll|
+|Cancella tutto|cls|Edit.ClearAll|
 |Modalità di comando|cmd|View.CommandWindow|
 |Visualizza codice|codice|View.ViewCode|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) come ANSI|da|Debug.ListMemory /Ansi|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) formato a byte singolo|db|Debug.ListMemory /Format:OneByte|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) come ANSI con formato a quattro byte|dc|Debug.ListMemory /Format:FourBytes /Ansi|
-|[Comando Elenca memoria](../../ide/reference/list-memory-command.md) formato a quattro byte|dd|Debug.ListMemory /Format:FourBytes|
+|[Comando Elenca memoria](../../ide/reference/list-memory-command.md) formato a quattro byte|gg|Debug.ListMemory /Format:FourBytes|
 |Elimina a inizio riga|DelBOL|Edit.DeleteToBOL|
 |Elimina a fine riga|DelEOL|Edit.DeleteToEOL|
 |Elimina spazio vuoto superfluo|DelHSp|Edit.DeleteHorizontalWhitespace|
-|Progettazione visualizzazioni|designer|View.ViewDesigner|
+|Progettazione viste|finestra di progettazione|View.ViewDesigner|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) formato a virgola mobile|df|Debug.ListMemory/Format:Float|
 |Disassembly (finestra)|disasm|Debug.Disassembly|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) formato a otto byte|dq|Debug.ListMemory /Format:EightBytes|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) come Unicode|du|Debug.ListMemory /Unicode|
 |[Comando Valuta istruzione](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
-|Azioni uscita|Azioni uscita|File.Exit|
-|Formatta selezione|formato|Edit.FormatSelection|
+|Esci|Esci|File.Exit|
+|Formatta selezione|format|Edit.FormatSelection|
 |Schermo intero|A tutto schermo|View.FullScreen|
-|[Comando Avvia](../../ide/reference/start-command.md)|g|Debug.Start|
+|[Comando di avvio](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Comando Vai a](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Vai a parentesi graffa|GotoBrace|Edit.GotoBrace|
-|F1Help|Guida di|Help.F1Help|
+|F1Help|Guida|Help.F1Help|
 |Modalità immediata|immed|Tools.ImmediateMode|
 |Inserisci file come testo|InsertFile|Edit.InsertFileAsText|
 |[Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -78,13 +78,13 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |Elimina riga|LineDel|Edit.LineDelete|
 |Elenca membri|ListMembers|Edit.ListMembers|
 |Finestra Variabili locali|Variabili locali|Debug.Locals|
-|[Comando Registra output finestra di comando](../../ide/reference/log-command-window-output-command.md)|Registro|Tools.LogCommandWindowOutput|
+|[Comando Registra output finestra di comando](../../ide/reference/log-command-window-output-command.md)|File di log|Tools.LogCommandWindowOutput|
 |Modalità indicatore nella finestra di comando|mark|Tools.CommandWindowMarkMode|
 |Memoria (finestra)|Memory Memory1|Debug.Memory1|
 |Finestra Memoria 2|Memory2|Debug.Memory2|
 |Finestra Memoria 3|Memory3|Debug.Memory3|
 |Finestra Memoria 4|Memory4|Debug.Memory4|
-|[Comando Imposta radice](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
+|[Imposta radice (comando)](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
 |[Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Segnalibro successivo|NextBook|Edit.NextBookmark|
 |[Comando Nuovo file](../../ide/reference/new-file-command.md)|nf|File.NewFile|
@@ -98,35 +98,35 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |Segnalibro precedente|PrevBook|Edit.PreviousBookmark|
 |Stampa file|print|File.Print|
 |Finestra Proprietà|props|View.PropertiesWindow|
-|Arresta|q|Debug.StopDebugging|
-|Ripristina|redo|Edit.Redo|
+|Arresto|q|Debug.StopDebugging|
+|Ripristinare|rollforward|Edit.Redo|
 |Registri (finestra)|registri|Debug.Registers|
 |Esegui fino al cursore|rtc|Debug.RunToCursor|
-|Salva elementi selezionati|salvataggio|File.SaveSelectedItems|
+|Salva elementi selezionati|Salva|File.SaveSelectedItems|
 |Salva tutto|SaveAll|File.SaveAll|
-|Salva con nome|SaveAs|File.SaveSelectedItemsAs|
+|Save As|SaveAs|File.SaveSelectedItemsAs|
 |[Shell (comando)](../../ide/reference/shell-command.md)|shell|Tools.Shell|
 |Interrompi ricerca nei file|StopFind|Edit.FindInFiles /stop|
 |Scambia punto di aggancio|SwapAnchor|Edit.SwapAnchor|
-|Esegui istruzione|u|Debug.StepInto|
+|Esegui istruzione|t|Debug.StepInto|
 |Inserisci tabulazioni nella selezione|inserimento di tabulazioni|Edit.TabifySelection|
 |Finestra dell'elenco attività|TaskList|View.TaskList|
-|Finestra Thread|Thread|Debug.Threads|
+|finestra Thread|Threads|Debug.Threads|
 |Affianca orizzontalmente|TileH|Window.TileHorizontally|
 |Affianca verticalmente|TileV|Window.TileVertically|
 |Attiva/Disattiva segnalibro|ToggleBook|Edit.ToggleBookmark|
 |Finestra della casella degli strumenti|casella degli strumenti|View.Toolbox|
 |[Comando Elenca disassembly](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |Maiuscole|Ucase|Edit.MakeUppercase|
-|Annulla|undo|Edit.Undo|
+|Annullamento|rollback|Edit.Undo|
 |Rimuovi tabulazioni nella selezione|Untabify|Edit.UntabifySelection|
-|Finestra di controllo|Video|Debug.WatchN|
+|Finestra Espressioni di controllo|Espressioni di controllo|Debug.WatchN|
 |Attiva/Disattiva a capo automatico|WordWrap|Edit.ToggleWordWrap|
 |Elenca processi|&#124;|Debug.ListProcesses|
 |[Comando Elenca thread](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
+- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)

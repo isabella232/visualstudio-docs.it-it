@@ -1,6 +1,6 @@
 ---
 title: Misurare le prestazioni dalla riga di comando
-description: Misurare le prestazioni della CPU e managed memory l'utilizzo nell'applicazione dalla riga di comando.
+description: Misurare le prestazioni della CPU e l'utilizzo della memoria gestita nell'applicazione dalla riga di comando.
 ms.custom: ''
 ms.date: 02/21/2020
 ms.topic: conceptual
@@ -15,10 +15,10 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77558129"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Misurare le prestazioni dell'applicazione dalla riga di comando
@@ -65,7 +65,7 @@ Per eseguire la profilatura tramite gli strumenti da riga di comando di diagnost
 
 1. Passare al file di output dal comando precedente e aprirlo in Visual Studio per esaminare le informazioni raccolte.
 
-## <a name="config_file"></a> File di configurazione degli agenti
+## <a name="agent-configuration-files"></a><a name="config_file"></a> File di configurazione degli agenti
 
 Gli agenti di raccolta sono componenti intercambiabili che raccolgono tipi diversi di dati a seconda degli elementi che si sta tentando di misurare.
 

@@ -9,10 +9,10 @@ ms.technology: vs-unity-tools
 ms.workload:
 - unity
 ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75944240"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso di .NET 4.x in Unity
@@ -21,7 +21,7 @@ C# e .NET, le tecnologie sottostanti alle funzionalità di scripting Unity, cont
 
 Con il rilascio di Unity 2017.1, Unity ha introdotto una versione sperimentale del runtime di scripting aggiornata a una versione compatibile con .NET 4.6 e C# 6. In Unity 2018.1, il runtime equivalente di .NET 4.x non è più considerato sperimentale, mentre il runtime equivalente a .NET 3.5 precedente viene ora considerato la versione legacy. Con il rilascio di Unity 2018.3, Unity progetta di rendere il runtime di scripting aggiornato la selezione predefinita con ulteriori aggiornamenti a C# 7. Per altre informazioni e indicazioni sugli aggiornamenti più recenti, leggere questo [post di blog](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) di Unity oppure visitare il [forum dedicato alle anteprime di scripting sperimentali](https://forum.unity.com/forums/experimental-scripting-previews.107/). Nel frattempo, consultare le sezioni seguenti per altre informazioni sulle nuove funzionalità ora disponibili con il runtime di scripting .NET 4.x.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 * [Unity 2017.1 o versione successiva](https://unity3d.com/) (consigliata la versione 2018.2)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>Interpolazione di stringhe
 
-Con il runtime .NET 3.5 precedente, per la concatenazione di stringhe era prevista una sintassi complicata. Con il runtime .NET 4.x, la funzionalità di [interpolazione di stringhe `$`](/dotnet/csharp/language-reference/tokens/interpolated) consente di inserire espressioni nelle stringhe con una sintassi più diretta e leggibile:
+Con il runtime .NET 3.5 precedente, per la concatenazione di stringhe era prevista una sintassi complicata. Ora con il runtime di .NET 4.x, la [ `$` ](/dotnet/csharp/language-reference/tokens/interpolated) funzionalità di interpolazione delle stringhe consente di inserire espressioni nelle stringhe in una sintassi più diretta e leggibile:
 
 ```csharp
 // .NET 3.5
@@ -229,11 +229,11 @@ TAP è un argomento complesso, con varie sfumature specifiche per Unity di cui d
 
 Questi suggerimenti possono essere utili per iniziare a usare il modello TAP in Unity:
 
-* Le funzioni asincrone destinate all'attesa devono avere il tipo restituito [`Task`](/dotnet/api/system.threading.tasks.task) oppure [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1).
+* Le funzioni asincrone destinate ad [`Task`](/dotnet/api/system.threading.tasks.task) [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1)essere attese devono avere il tipo restituito o .
 * Le funzioni asincrone che restituiscono un'attività devono avere il suffisso **"Async"** aggiunto ai relativi nomi. Il suffisso "Async" consente di indicare che una funzione deve sempre essere attesa.
 * Usare solo il tipo restituito `async void` per le funzioni che attivano funzioni asincrone dal codice sincrono tradizionale. Tali funzioni non possono essere attese e non devono avere il suffisso "Async" nei relativi nomi.
 * Unity usa UnitySynchronizationContext per assicurarsi che le funzioni asincrone vengano eseguite sul thread principale per impostazione predefinita. L'API di Unity non è accessibile all'esterno del thread principale.
-* È possibile eseguire le attività in thread in background con metodi come [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) e [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx). Questa tecnica è utile per l'offload delle operazioni onerose dal thread principale per migliorare le prestazioni. Tuttavia, l'uso di thread in background può causare problemi di cui è difficile eseguire il debug, ad esempio [situazioni di race condition](https://wikipedia.org/wiki/Race_condition).
+* È possibile eseguire attività su thread in [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx)background con metodi come e . Questa tecnica è utile per l'offload delle operazioni onerose dal thread principale per migliorare le prestazioni. Tuttavia, l'uso di thread in background può causare problemi di cui è difficile eseguire il debug, ad esempio [situazioni di race condition](https://wikipedia.org/wiki/Race_condition).
 * L'API di Unity non è accessibile all'esterno del thread principale.
 * Le attività che usano i thread non sono supportate in build WebGL Unity.
 
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 Quando si esporta un gioco in piattaforme come iOS, Unity userà il motore IL2CPP per "eseguire il transpile" di IL in codice C++ che viene quindi compilato usando il compilatore nativo della piattaforma di destinazione. In questo scenario, esistono numerose funzionalità di .NET che non sono supportate, ad esempio parti della reflection e l'utilizzo della parola chiave `dynamic`. Mentre è possibile controllare l'utilizzo di queste funzionalità nel codice, è possibile riscontrare problemi durante l'uso di DLL e SDK di terze parti non scritti tenendo conto di Unity e IL2CPP. Per altre informazioni su questo argomento, vedere la documentazione relativa alle [restrizioni di scripting](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) nel sito di Unity.
 
-Inoltre, come accennato nell'esempio Json.NET precedente, Unity proverà a rimuovere il codice inutilizzato durante il processo di esportazione IL2CPP.  Sebbene questo non sia in genere un problema, con le librerie che usano la reflection, può rimuovere accidentalmente le proprietà o i metodi che verranno chiamati in fase di esecuzione che non possono essere determinati in fase di esportazione.  Per risolvere questi problemi, aggiungere un file **link.xml** al progetto, che contiene un elenco di assembly e spazi dei nomi su cui non eseguire il processo di rimozione.  Per informazioni dettagliate, vedere la [documentazione di Unity sulla rimozione del bytecode](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
+Inoltre, come accennato nell'esempio Json.NET precedente, Unity proverà a rimuovere il codice inutilizzato durante il processo di esportazione IL2CPP.  Anche se questo non è in genere un problema, con le librerie che utilizzano Reflection, può accidentalmente rimuovere le proprietà o metodi che verranno chiamati in fase di esecuzione che non possono essere determinati in fase di esportazione.  Per risolvere questi problemi, aggiungere un file **link.xml** al progetto, che contiene un elenco di assembly e spazi dei nomi su cui non eseguire il processo di rimozione.  Per informazioni dettagliate, vedere la [documentazione di Unity sulla rimozione del bytecode](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
 
 ## <a name="net-4x-sample-unity-project"></a>Progetto Unity di esempio di .NET 4.x
 

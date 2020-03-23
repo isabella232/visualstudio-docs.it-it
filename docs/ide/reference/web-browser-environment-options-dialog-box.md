@@ -22,27 +22,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596502"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: ambiente \> Web browser
+# <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: Browser Web ambiente \>
 
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
 > L'apertura di determinati file o componenti dal Web può determinare l'esecuzione del codice nel computer in uso.
 
-## <a name="home-page"></a>Pagina iniziale
+## <a name="home-page"></a>Home page
 
 Consente di impostare la pagina visualizzata quando si apre il Web browser dell'IDE.
 
-## <a name="search-page"></a>Pagina Search
+## <a name="search-page"></a>Pagina di ricerca
 
 Consente di definire una pagina di ricerca per il Web browser interno. Questo percorso può essere diverso dalla pagina di ricerca usata dalle istanze di Internet Explorer avviate all'esterno dell'ambiente di sviluppo integrato (IDE).
 

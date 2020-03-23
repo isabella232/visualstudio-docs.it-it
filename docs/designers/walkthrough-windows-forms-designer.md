@@ -8,13 +8,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589838"
 ---
-# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Procedura dettagliata: Introduzione a Progettazione Windows Form
+# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Procedura dettagliata: Introduzione a Progettazione Windows FormWalkthrough: Get started with Windows Forms Designer
 
 Progettazione Windows Form fornisce molti strumenti per la creazione di applicazioni Windows Forms. Questo articolo illustra come creare un'app usando i vari strumenti forniti dalla finestra di progettazione, incluse le attività seguenti:
 
@@ -69,7 +69,7 @@ Il controllo DemoCalculator contiene diversi controlli Windows Forms. In questa 
     Il controllo `SplitContainer` viene ancorato ai limiti del controllo DemoCalculator.
 
     > [!NOTE]
-    > Diversi controlli offrono smart tag per facilitare la progettazione. Per altre informazioni, vedere [procedura dettagliata: eseguire attività comuni usando gli smart tag nei controlli Windows Forms](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
+    > Diversi controlli offrono smart tag per facilitare la progettazione. Per ulteriori informazioni, vedere [Procedura dettagliata: eseguire attività comuni utilizzando gli smart tag nei controlli Windows Form](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
 
 5. Selezionare il bordo verticale tra i pannelli e trascinarlo a destra, in modo che la maggior parte dello spazio sia occupato dal pannello sinistro.
 
@@ -91,7 +91,7 @@ Il controllo DemoCalculator contiene diversi controlli Windows Forms. In questa 
 
 12. Dalla **casella degli strumenti** del nodo **Contenitori** trascinare un controllo `TableLayoutPanel` nel pannello sinistro del controllo `SplitContainer`.
 
-    Il controllo `TableLayoutPanel` viene visualizzato nell'area di progettazione con il relativo pannello smart tag aperto. Il controllo `TableLayoutPanel` dispone i relativi controlli figlio in una griglia. Il controllo `TableLayoutPanel` conterrà i pulsanti e la visualizzazione del controllo DemoCalculator. Per ulteriori informazioni, vedere [procedura dettagliata: disporre i controlli mediante TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
+    Il controllo `TableLayoutPanel` viene visualizzato nell'area di progettazione con il relativo pannello smart tag aperto. Il controllo `TableLayoutPanel` dispone i relativi controlli figlio in una griglia. Il controllo `TableLayoutPanel` conterrà i pulsanti e la visualizzazione del controllo DemoCalculator. Per ulteriori informazioni, vedere [procedura dettagliata: disporre i controlli utilizzando un TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
 
 13. Selezionare **Modifica righe e colonne** nel pannello smart tag.
 
@@ -135,9 +135,9 @@ Ora che il layout del controllo è configurato, è possibile popolare il control
 
 8. Nella **casella degli strumenti** fare doppio clic sull'icona `Button` altre quattro volte per popolare la seconda riga del controllo `TableLayoutPanel`.
 
-9. Selezionare tutti e cinque i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**. Premere **CTRL**+**C** per copiare i controlli `Button` negli Appunti.
+9. Selezionare tutti e cinque i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**. Premere **CTRL**+**C** `Button` per copiare i controlli negli Appunti.
 
-10. Premere **CTRL**+**V** tre volte per incollare le copie dei controlli `Button` nelle righe rimanenti del controllo `TableLayoutPanel`.
+10. Premere **CTRL**+**V** tre volte per `Button` incollare copie dei `TableLayoutPanel` controlli nelle righe rimanenti del controllo.
 
 11. Selezionare tutti e 20 i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**.
 
@@ -157,7 +157,7 @@ Ora che il layout del controllo è configurato, è possibile popolare il control
 
 Quando il controllo o il form viene popolato con diversi controlli, può risultare più semplice spostarsi nel layout con la finestra Struttura documento.
 
-1. Nella barra dei menu scegliere **Visualizza** > **Altre finestre** > **Struttura documento**.
+1. Nella barra dei menu scegliere **Visualizza** > **contorno altro** > **documento**di Windows.
 
    La finestra Struttura documento mostra una visualizzazione albero del controllo DemoCalculator e dei relativi controlli costitutivi. I controlli contenitore come `SplitContainer` visualizzano i relativi controlli figlio come sottonodi dell'albero. È anche possibile rinominare i controlli sul posto usando la finestra Struttura documento.
 
@@ -209,7 +209,7 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    - Impostare la proprietà Text del controllo nineButton su **9**
 
-   - Impostare la proprietà Text del controllo divisionButton su **/** (barra)
+   - Modificare la proprietà di **/** testo del controllo divisionButton in (barra)
 
    - Impostare la proprietà Text del controllo clearButton su **Cancella**
 
@@ -219,7 +219,7 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    - Impostare la proprietà Text del controllo sixButton su **6**
 
-   - Impostare la proprietà Text del controllo multiplicationButton su **\*** (asterisco)
+   - Modificare la proprietà di testo **\*** del controllo multiplicationButton in (asterisco)
 
    - Impostare la proprietà Text del controllo oneButton su **1**
 
@@ -227,17 +227,17 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    - Impostare la proprietà Text del controllo threeButton su **3**
 
-   - Impostare la proprietà Text del controllo subtractionButton su **-** (trattino)
+   - Modificare la proprietà di testo **-** del controllo subtractionButton in (trattino)
 
-   - Impostare la proprietà Text del controllo equalsButton su **=** (segno di uguale)
+   - Modificare la proprietà di testo **=** del controllo equalsButton in (segno di uguale)
 
    - Impostare la proprietà Text del controllo zeroButton su **0**
 
-   - Impostare la proprietà Text del controllo changeSignButton su **+/-**
+   - Modificare la proprietà di testo del controllo changeSignButton in**+/-**
 
    - Impostare la proprietà Text del controllo decimalButton su **.** (punto)
 
-   - Impostare la proprietà Text del controllo additionButton su **+** (segno più)
+   - Modificare la proprietà di **+** testo del controllo additionButton in (segno più)
 
 5. Nell'area di progettazione selezionare tutti i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**.
 
@@ -257,7 +257,7 @@ I pulsanti del controllo DemoCalculator hanno gestori eventi che possono essere 
 
 ## <a name="test-the-control"></a>Testare il controllo
 
-Poiché il controllo DemoCalculator eredita dalla classe <xref:System.Windows.Forms.UserControl>, è possibile testarne il comportamento con **UserControl Test Container**. Per altre informazioni, vedere [procedura: testare il comportamento in fase di esecuzione di un UserControl](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
+Poiché il controllo DemoCalculator eredita dalla classe <xref:System.Windows.Forms.UserControl>, è possibile testarne il comportamento con **UserControl Test Container**. Per ulteriori informazioni, vedere [Procedura: testare il comportamento in](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)fase di esecuzione di un oggetto UserControl .
 
 1. Premere **F5** per compilare ed eseguire il controllo DemoCalculator in **UserControl Test Container**.
 
@@ -291,7 +291,7 @@ Per usare il controllo DemoCalculator in un'applicazione, è necessario inserirl
 
 2. Trascinare il controllo **DemoCalculator** dalla **casella degli strumenti** nel form. Spostare il controllo nell'angolo superiore sinistro del form. Quando il controllo è vicino ai bordi del form, verranno visualizzate le *guide di allineamento*. Le guide di allineamento indicano la distanza della proprietà `Padding` del form e della proprietà `Margin` del controllo. Posizionare il controllo nella posizione indicata dalle guide di allineamento.
 
-   Per ulteriori informazioni, vedere [procedura dettagliata: disposizione di controlli mediante](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)guide di allineamento.
+   Per ulteriori informazioni, vedere [Procedura dettagliata: disporre i controlli mediante le guide di allineamento](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines).
 
 3. Trascinare un controllo `Button` dalla **casella degli strumenti** e rilasciarlo nel form.
 

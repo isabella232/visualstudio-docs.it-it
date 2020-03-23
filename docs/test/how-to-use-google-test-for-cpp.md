@@ -9,15 +9,15 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 31078b060c94f3253232d22681a1a5dae47e03b6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279300"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Come usare Google Test per C++ in Visual Studio
 
-In Visual Studio 2017 e nelle versioni successive Google Test è integrato nell'IDE di Visual Studio come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++** . Per verificare che sia installato nel computer, aprire il programma di installazione di Visual Studio e trovare Google Test nell'elenco dei componenti del carico di lavoro:
+In Visual Studio 2017 e nelle versioni successive Google Test è integrato nell'IDE di Visual Studio come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++**. Per verificare che sia installato nel computer, aprire il programma di installazione di Visual Studio e trovare Google Test nell'elenco dei componenti del carico di lavoro:
 
 ![Installare Google Test](media/cpp-google-component.png)
 
@@ -25,7 +25,7 @@ In Visual Studio 2017 e nelle versioni successive Google Test è integrato nell'
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Aggiungere un progetto Google Test in Visual Studio 2019
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **Aggiungi** > **nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **Aggiungi** > **Nuovo progetto**.
 2. Impostare **Linguaggio** su **C++** e digitare **test** nella casella di ricerca. Nell'elenco risultati scegliere **Google Test Project** (Progetto Google Test).
 3. Specificare un nome per il progetto di test e fare clic su **OK**.
 
@@ -37,8 +37,8 @@ In Visual Studio 2017 e nelle versioni successive Google Test è integrato nell'
 
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Aggiungere un progetto Google Test in Visual Studio 2017
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **Aggiungi** > **nuovo progetto**.
-2. Nel riquadro sinistro scegliere **Visual C++**  > **test** , quindi scegliere **Google test progetto** nel riquadro centrale.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **Aggiungi** > **Nuovo progetto**.
+2. Nel riquadro sinistro scegliere **Visual C++** > **Test** e quindi scegliere **Google Test Project** (Progetto Google Test ) nel riquadro centrale.
 3. Specificare un nome per il progetto di test e fare clic su **OK**.
 
 ![Nuovo progetto Google Test](media/cpp-gtest-new-project.png)
@@ -53,19 +53,19 @@ Nella finestra di dialogo **Configurazione progetto di test** visualizzata è po
 
 ## <a name="set-additional-options"></a>Impostare opzioni aggiuntive
 
-Dal menu principale scegliere **Strumenti** > **Opzioni** > **Test Adapter for Google Test** per impostare opzioni aggiuntive. Per altre informazioni su queste impostazioni, vedere la documentazione di Google Test.
+Dal menu principale, scegli **Strumenti** > **Opzioni Adattatore** > **di prova per Google Test** per impostare opzioni aggiuntive. Per altre informazioni su queste impostazioni, vedere la documentazione di Google Test.
 
 ![Impostazioni del progetto Google Test](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>Aggiungere direttive include
 
-Nel file *CPP* del test aggiungere le direttive `#include` necessarie per rendere visibili al codice di test i tipi e le funzioni del programma. Il programma si trova in genere al livello superiore della gerarchia di cartelle. Se si digita `#include "../"`, viene visualizzata una finestra di IntelliSense ed è possibile selezionare il percorso completo del file di intestazione.
+Nel file *con estensione cpp* `#include` di test aggiungere le direttive necessarie per rendere i tipi e le funzioni del programma visibili al codice di test. Il programma si trova in genere al livello superiore della gerarchia di cartelle. Se si digita `#include "../"`, viene visualizzata una finestra di IntelliSense ed è possibile selezionare il percorso completo del file di intestazione.
 
 ![Aggiungere direttive #include](media/cpp-gtest-includes.png)
 
 ## <a name="write-and-run-tests"></a>Scrivere ed eseguire i test
 
-È ora possibile scrivere ed eseguire i Google Test. Per informazioni sulle macro dei test, vedere [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Introduzione a Google Test). Per informazioni sull'individuazione, l'esecuzione e il raggruppamento dei test usando [Esplora test](run-unit-tests-with-test-explorer.md), vedere **Eseguire unit test con Esplora test**.
+È ora possibile scrivere ed eseguire i Google Test. Per informazioni sulle macro dei test, vedere [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Introduzione a Google Test). Per informazioni sull'individuazione, l'esecuzione e il raggruppamento dei test usando **Esplora test**, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md).
 
 ## <a name="see-also"></a>Vedere anche
 

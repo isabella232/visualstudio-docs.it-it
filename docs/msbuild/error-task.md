@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634227"
 ---
 # <a name="error-task"></a>attività Error
@@ -31,22 +31,22 @@ Interrompe una compilazione e registra un errore in base a un'istruzione condizi
 
 ## <a name="parameters"></a>Parametri
 
-Nella tabella che segue vengono descritti i parametri dell'attività `Error`.
+Nella tabella che segue vengono descritti i parametri dell'attività `Error` .
 
 | Parametro | Descrizione |
 |---------------| - |
 | `Code` | Parametro `String` facoltativo.<br /><br /> Codice errore da associare all'errore. |
 | `File` | Parametro `String` facoltativo.<br /><br /> Il nome del file che contiene l'errore. Se non viene indicato alcun nome file, verrà usato il file contenente l'attività di errore. |
 | `HelpKeyword` | Parametro `String` facoltativo.<br /><br /> Parola chiave della Guida da associare all'errore. |
-| `Text` | Parametro `String` facoltativo.<br /><br /> Testo dell'errore registrato da MSBuild se il parametro `Condition` restituisce `true`. |
+| `Text` | Parametro `String` facoltativo.<br /><br /> Testo dell'errore che MSBuild registra se il `Condition` parametro restituisce `true`. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
-Il `Error` attività consente ai progetti MSBuild di rilasciare il testo dell'errore ai logger e arrestare l'esecuzione della compilazione.
+L'attività `Error` consente ai progetti MSBuild di emettere testo di errore per i logger e interrompere l'esecuzione della compilazione.
 
-Se il parametro `Condition` restituisce `true`, la compilazione viene interrotta e viene registrato un errore. Se non esiste un parametro `Condition`, l'errore viene registrato e l'esecuzione della compilazione viene arrestata. Per altre informazioni sulla registrazione, vedere [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md).
+Se il parametro `Condition` restituisce `true`, la compilazione viene interrotta e viene registrato un errore. Se non esiste un parametro `Condition`, l'errore viene registrato e l'esecuzione della compilazione viene arrestata. Per ulteriori informazioni sulla registrazione, vedere Recupero dei log di [compilazione](../msbuild/obtaining-build-logs-with-msbuild.md).
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

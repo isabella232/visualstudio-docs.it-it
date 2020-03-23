@@ -31,15 +31,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffc31a0d0e2b6878b5dd5173a35ce4f538e135be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590345"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
-È possibile trovare e sostituire testo nell'editor di Visual Studio usando [Trova e sostituisci](#find-and-replace-control) (**CTRL**+**F** o **CTRL**+**H**) oppure [Find/Replace in Files](#find-in-files-and-replace-in-files) (Trova/Sostituisci nei file) (**CTRL**+**MAIUSC**+**F** o **CTRL**+**MAIUSC**+**H**). È anche possibile cercare e sostituire solo *alcune* istanze di un modello usando la *[selezione di più punti di inserimento](#multi-caret-selection)* .
+È possibile trovare e sostituire testo nell'editor di Visual Studio usando [Trova e sostituisci](#find-and-replace-control) (**CTRL**+**F** o **CTRL**+**H**) oppure [Find/Replace in Files](#find-in-files-and-replace-in-files) (Trova/Sostituisci nei file) (**CTRL**+**MAIUSC**+**F** o **CTRL**+**MAIUSC**+**H**). È anche possibile cercare e sostituire solo *alcune* istanze di un modello usando la *[selezione di più punti di inserimento](#multi-caret-selection)*.
 
 > [!TIP]
 > Se si stanno rinominando simboli del codice, ad esempio variabili e i metodi, è preferibile *[effettuarne il refactoring](../ide/reference/rename.md)* anziché usare la funzionalità di ricerca e sostituzione. Il refactoring è un'opzione avanzata in grado di rilevare l'ambito, mentre con la ricerca e sostituzione vengono sostituite indifferentemente tutte le istanze.
@@ -53,27 +53,27 @@ La funzionalità di ricerca e sostituzione è disponibile nell'editor, in alcune
 
 ## <a name="find-and-replace-control"></a>Controllo Trova e sostituisci
 
-- Premere **CTRL**+**F** come scelta rapida da tastiera per *trovare* una stringa nel file corrente.
-- Premere **CTRL**+**H** come scelta rapida da tastiera per *trovare e sostituire* una stringa nel file corrente.
+- Premere **Ctrl**+**F** come collegamento per *trovare* una stringa nel file corrente.
+- Premere **Ctrl**+**H** come collegamento per trovare *e sostituire* una stringa nel file corrente.
 
 Il controllo **Trova e sostituisci** viene visualizzato nell'angolo superiore destro della finestra dell'editor di codice. Evidenzia immediatamente tutte le occorrenze della stringa di ricerca specificata nel documento corrente. È possibile spostarsi da un'occorrenza all'altra scegliendo il pulsante **Trova successivo** o **Trova precedente** nel controllo di ricerca.
 
 ![Trova e sostituisci in Visual Studio](media/find-and-replace-box.png)
 
-È possibile accedere alle opzioni di sostituzione scegliendo il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere il pulsante **Sostituisci tutto**.
+È possibile accedere alle opzioni di sostituzione scegliendo il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere il pulsante **Sostituisci tutto.**
 
-Per modificare il colore di evidenziazione per le corrispondenze, scegliere il menu **Strumenti**, selezionare **Opzioni**, quindi scegliere **Ambiente** e selezionare **Tipi di carattere e colori**. Nell'elenco **Show settings for** (Mostra impostazioni per), selezionare **Editor di testo**, quindi nell'elenco **Elementi visualizzati**, selezionare **Trova evidenziato (estensione)** .
+Per modificare il colore di evidenziazione per le corrispondenze, scegliere il menu **Strumenti**, selezionare **Opzioni**, quindi scegliere **Ambiente** e selezionare **Tipi di carattere e colori**. Nell'elenco **Show settings for** (Mostra impostazioni per), selezionare **Editor di testo**, quindi nell'elenco **Elementi visualizzati**, selezionare **Trova evidenziato (estensione)**.
 
 ### <a name="search-tool-windows"></a>Finestre degli strumenti di ricerca
 
 È possibile usare il controllo **Trova** nelle finestre di codice o del testo, ad esempio le finestre **Output** e **Risultati ricerca**, selezionando **Modifica** > **Trova e sostituisci** o premendo **CTRL+F**.
 
-Una versione del controllo di **ricerca** è disponibile anche in alcune finestre degli strumenti. Ad esempio, è possibile filtrare l'elenco di controlli nella finestra **Casella degli strumenti** immettendo il testo nella casella di ricerca. Tra le altre finestre degli strumenti che consentono di cercare il relativo contenuto sono incluse **Esplora soluzioni**, **Proprietà** e **Team Explorer**.
+Una versione del controllo **Find** è disponibile anche in alcune finestre degli strumenti. Ad esempio, è possibile filtrare l'elenco di controlli nella finestra **Casella degli strumenti** immettendo il testo nella casella di ricerca. Tra le altre finestre degli strumenti che consentono di cercare il relativo contenuto sono incluse **Esplora soluzioni**, **Proprietà** e **Team Explorer**.
 
 ## <a name="find-in-files-and-replace-in-files"></a>Cerca nei file e Sostituisci nei file
 
-- Premere **CTRL**+**MAIUSC**+**F** come scelta rapida da tastiera per *trovare* una stringa in più file.
-- Premere **CTRL**+**MAIUSC**+**H** come scelta rapida da tastiera per *trovare e sostituire* una stringa in più file.
+- Premere **Ctrl**+**Maiusc**+**F** come scorciatoia per *trovare* una stringa in più file.
+- Premere **Ctrl**+**Maiusc**+**H** come scorciatoia per trovare e *sostituire* una stringa in più file.
 
 **Find/Replace in Files** (Trova/Sostituisci nei file) funziona come il controllo **Trova e sostituisci**, con la differenza che è possibile definire un ambito per la ricerca. Non solo è possibile cercare il file aperto corrente nell'editor, ma anche tutti i documenti aperti, l'intera soluzione, il progetto corrente e gli insiemi di cartelle selezionati. È inoltre possibile eseguire la ricerca in base all'estensione del nome file. Per accedere alla finestra di dialogo **Find/Replace in Files** (Trova/Sostituisci nei file), selezionare **Trova e sostituisci** dal menu **Modifica** o premere **CTRL**+**MAIUSC**+**F**.
 
@@ -81,18 +81,18 @@ Una versione del controllo di **ricerca** è disponibile anche in alcune finestr
 
 ### <a name="find-results"></a>Risultati ricerca
 
-Quando si sceglie **Find All**  (Trova tutti), si apre una finestra **Risultati ricerca** che elenca le corrispondenze della ricerca. Selezionando un risultato nell'elenco viene visualizzato il file associato ed evidenziata la corrispondenza. Se il file non è già aperto per la modifica, viene aperto in una scheda di anteprima a destra della finestra scheda. È possibile utilizzare il controllo **Trova** per eseguire la ricerca nell'elenco dei **Risultati ricerca**.
+Quando si sceglie **Find All ** (Trova tutti), si apre una finestra **Risultati ricerca** che elenca le corrispondenze della ricerca. Selezionando un risultato nell'elenco viene visualizzato il file associato ed evidenziata la corrispondenza. Se il file non è già aperto per la modifica, viene aperto in una scheda di anteprima a destra della finestra scheda. È possibile utilizzare il controllo **Trova** per eseguire la ricerca nell'elenco dei **Risultati ricerca**.
 
 ### <a name="create-custom-search-folder-sets"></a>Creare set personalizzati di cartelle di ricerca
 
-È possibile definire un ambito di ricerca scegliendo il pulsante **Seleziona cartelle di ricerca** (simile a **...** ) accanto alla casella **Cerca in**. Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca nonché salvare la specifica in modo da poterla usare di nuovo in un secondo tempo.
+È possibile definire un ambito di ricerca scegliendo il pulsante **Scegli cartelle di ricerca** (sembra **...**) accanto alla casella **Cerca in.** Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca nonché salvare la specifica in modo da poterla usare di nuovo in un secondo tempo.
 
 > [!TIP]
 > Se è stato eseguito il mapping dell'unità di un computer remoto nel computer locale, è possibile specificare cartelle in cui eseguire la ricerca nel computer remoto.
 
 ### <a name="create-custom-component-sets"></a>Creare set di componenti personalizzati
 
-È possibile definire set di componenti nell'ambito di ricerca scegliendo il pulsante **Modifica insieme di componenti personalizzato** accanto alla casella **Cerca in**. È possibile specificare i componenti .NET o COM installati, i progetti Visual Studio che sono inclusi nella soluzione, o qualunque assembly o libreria dei tipi ( *.dll*, *.tlb*, *.olb*, *.exe* o *.ocx*). Per individuare i riferimenti, selezionare la casella **Cerca in riferimenti**.
+È possibile definire set di componenti nell'ambito di ricerca scegliendo il pulsante **Modifica insieme di componenti personalizzato** accanto alla casella **Cerca in**. È possibile specificare i componenti .NET o COM installati, i progetti Visual Studio che sono inclusi nella soluzione, o qualunque assembly o libreria dei tipi (*.dll*, *.tlb*, *.olb*, *.exe* o *.ocx*). Per individuare i riferimenti, selezionare la casella **Cerca in riferimenti**.
 
 ## <a name="multi-caret-selection"></a>Selezione di più punti di inserimento
 
@@ -112,19 +112,19 @@ Per selezionare più punti di inserimento, fare clic o effettuare la prima selez
 > [!TIP]
 > Se si è scelto **ALT** come tasto di modifica per il clic del mouse di Vai a definizione in **Strumenti** > **Opzioni**, la selezione per più punti di inserimento è disabilitata.
 
-### <a name="commands"></a>Comandi
+### <a name="commands"></a>Comandi:
 
 Usare i tasti e le azioni seguenti per i comportamenti di selezione di più punti di inserimento:
 
-|Collegamento|Azione|
+|Tasto di scelta rapida|Azione|
 |-|-|
-|**CTRL**+**ALT** + clic|Aggiungere un punto di inserimento secondario|
-|**CTRL**+**ALT** + doppio clic|Aggiungere una selezione di parola secondaria|
-|**CTRL**+**ALT** + clic + trascina|Aggiungere una selezione secondaria|
-|**MAIUSC**+**ALT**+ **.**|Aggiungere il testo successivo corrispondente come selezione|
-|**CTRL**+**MAIUSC**+**ALT**+ **,**|Aggiungere tutto il testo corrispondente come selezione|
-|**MAIUSC**+**ALT**+ **,**|Rimuovere l'ultima occorrenza selezionata|
-|**CTRL**+**MAIUSC**+**Alt**+ **.**|Ignorare l'occorrenza corrispondente successiva|
+|**Premere CTRL**+**ALT** e fare clic su|Aggiungere un punto di inserimento secondario|
+|**Ctrl**+**Alt** : fare doppio clic su|Aggiungere una selezione di parola secondaria|
+|**Premere CTRL**+**Alt** e fare clic e trascinare|Aggiungere una selezione secondaria|
+|**Maiusc**+**Alt**+**.**|Aggiungere il testo successivo corrispondente come selezione|
+|**Ctrl**+**Maiusc**+**Alt**+**,**|Aggiungere tutto il testo corrispondente come selezione|
+|**Maiusc**+**alt**+**,**|Rimuovere l'ultima occorrenza selezionata|
+|**Ctrl**+**Maiusc**+**Alt**+**.**|Ignorare l'occorrenza corrispondente successiva|
 |**ALT** + clic|Aggiungere una selezione di casella|
 |**ESC** oppure clic|Cancellare tutte le selezioni|
 

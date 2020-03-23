@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633915"
 ---
 # <a name="how-to-clean-a-build"></a>Procedura: Pulire una compilazione
@@ -34,7 +34,7 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 
      `<builtdir>BuiltApp</builtdir>`
 
-2. Usare l'attività [MakeDir](../msbuild/makedir-task.md) per creare la directory se la directory non esiste. Ad esempio,
+2. Usare l'attività [MakeDir](../msbuild/makedir-task.md) per creare la directory se la directory non esiste. Ad esempio:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -47,7 +47,7 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Per rimuovere una directory e tutti i file contenuti nella directory
 
-- Usare l'attività `RemoveDir` per rimuovere la directory. Ad esempio,
+- Usare l'attività `RemoveDir` per rimuovere la directory. Ad esempio:
 
      `<RemoveDir Directories="$(builtdir)" />`
 
@@ -55,7 +55,7 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 
  Il progetto di esempio di codice seguente contiene una nuova destinazione, `Clean`, che usa l'attività `RemoveDir` per eliminare una directory e tutti i file e le directory in essa contenute. Anche in questo esempio, la destinazione `Compile` crea una directory distinta per gli elementi di output che vengono eliminati durante la pulizia della compilazione.
 
- `Compile` è definito come destinazione predefinita che viene usata automaticamente se non vengono specificate una o più destinazioni diverse. Usare l'opzione della riga di comando **-target** per specificare una destinazione diversa. Ad esempio,
+ `Compile` è definito come destinazione predefinita che viene usata automaticamente se non vengono specificate una o più destinazioni diverse. Usare l'opzione della riga di comando **-target** per specificare una destinazione diversa. Ad esempio:
 
  `msbuild <file name>.proj -target:Clean`
 

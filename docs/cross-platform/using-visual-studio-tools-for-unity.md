@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916574"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302259"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Usare Visual Studio Tools per Unity
 
@@ -33,7 +33,7 @@ In alternativa, Visual Studio può essere aperto senza aprire alcuno script nell
 
 È possibile accedere rapidamente alla documentazione di Unity da Visual Studio. Se Visual Studio Tools per Unity non trova la documentazione dell'API in locale, proverà a individuarla online.
 
-- In Visual Studio evidenziare o posizionare il cursore sull'API di Unity su cui visualizzare maggiori informazioni e quindi premere **CTRL**+**ALT**+**M**, **CTRL**+**H**
+- In Visual Studio, evidenziare o posizionare il cursore sull'API Unity che si desidera conoscere, quindi premere **Ctrl**+**Alt**+**M**, **Ctrl**+**H**
 
 ## <a name="intellisense-for-unity-api-messages"></a>IntelliSense per messaggi dell'API Unity
 
@@ -45,7 +45,7 @@ Ciò semplifica l'implementazione di messaggi dell'API Unity negli script MonoBe
 
 3. Dopo aver digitato le lettere "**ontri**", viene visualizzato un elenco di suggerimenti di IntelliSense.
 
-   ![Utilizzo di IntelliSense](media/vstu_intellisense1.png)
+   ![Using IntelliSense](media/vstu_intellisense1.png)
 
 4. La selezione nell'elenco può essere modificata in tre modi:
 
@@ -71,7 +71,7 @@ Ciò semplifica l'implementazione di messaggi dell'API Unity negli script MonoBe
 
 Per creare definizioni vuote di metodi MonoBehaviour con la procedura guidata MonoBehaviour:
 
-1. In Visual Studio posizionare il cursore nel punto in cui si vogliono inserire i metodi e quindi premere **CTRL**+**MAIUSC**+**M** per avviare la procedura guidata MonoBehaviour.
+1. In Visual Studio posizionare il cursore nel punto in cui si desidera inserire i metodi, quindi premere **CTRL**+**MAIUSC**+**M** per avviare la procedura guidata MonoBehavior.
 
 2. Nella finestra **Create script methods** (Crea metodi script) selezionare la casella di controllo accanto al nome dei singoli metodi da aggiungere.
 
@@ -83,17 +83,17 @@ Per creare definizioni vuote di metodi MonoBehaviour con la procedura guidata Mo
 
 6. Fare clic su **OK** per chiudere la procedura guidata e inserire i metodi nel codice.
 
-   ![Finestra di dialogo della procedura guidata monobehavior.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![Finestra della procedura guidata MonoBehavior.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Esplora progetti Unity
 
-![Finestra Esplora progetti Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+![Finestra Esplora progetti di Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
 Esplora progetti Unity visualizza tutti i file di progetto Unity e tutte le directory nella stessa gerarchia usata dall'editor di Unity. Si differenzia dall'esplorazione degli script Unity con Esplora soluzioni Visual Studio standard, che li organizza in progetti e in una soluzione generata da Visual Studio.
 
-- Nel menu principale di Visual Studio scegliere **Visualizza > Esplora progetti Unity**. Tasti di scelta rapida: **ALT**+**MAIUSC**+**E**
+- Nel menu principale di Visual Studio scegliere **Visualizza > Esplora progetti Unity**. Scelta rapida da tastiera: **Alt**+**Shift**+**E**
 
-   ![Visualizzare la finestra Esplora progetti Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+   ![Visualizzare la finestra Esplora progetti di Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-debugging"></a>Debug di Unity
 
@@ -101,7 +101,7 @@ Visual Studio Tools per Unity consente di eseguire il debug di script dell'edito
 
 ### <a name="debug-in-the-unity-editor"></a>Eseguire il debug nell'editor di Unity
 
-#### <a name="start-debugging"></a>Avvia debug
+#### <a name="start-debugging"></a>Consente di iniziare il debug
 
 1. Collegare Visual Studio a Unity facendo clic sul pulsante **Riproduci** etichettato **Collega a Unity**, o usare la scelta rapida da tastiera **F5**.
 
@@ -113,7 +113,7 @@ Visual Studio Tools per Unity consente di eseguire il debug di script dell'edito
 
 3. Quando il gioco è in esecuzione nell'editor di Unity mentre è connesso a Visual Studio, qualsiasi punto di interruzione incontrato causa la sospensione dell'esecuzione del gioco e la visualizzazione della riga di codice dove il gioco ha incontrato il punto di interruzione in Visual Studio.
 
-#### <a name="stop-debugging"></a>Arrestare il debug
+#### <a name="stop-debugging"></a>Arrestare l'esecuzione del debug
 
 - Scegliere il pulsante **Interrompi** in Visual Studio oppure usare la scelta rapida da tastiera **Maiusc+F5**.
 
@@ -151,19 +151,19 @@ Fare clic sul pulsante **Interrompi** in Visual Studio o usare i tasti di scelta
 
 - Nel menu principale di Visual Studio scegliere **Debug > Collega debugger Unity**.
 
-   ![Alleghi il debugger di Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+   ![Connettere il debugger di Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
    Nella finestra di dialogo **Seleziona istanza di Unity** sono visualizzate alcune informazioni sulle singole istanze di Unity a cui è possibile connettersi.
 
    ![Scegliere un'istanza di Unity a cui connettersi.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
-   **Progetto**
+   **Project**
 
    Nome del progetto Unity in esecuzione in questa istanza di Unity.
 
    **Computer** Nome del computer o del dispositivo in cui è in esecuzione questa istanza di Unity.
 
-   **Editor** dei tipi se questa istanza di Unity viene eseguita nell'editor di Unity; **Lettore** se questa istanza di Unity è un lettore autonomo.
+   **Tipo** **Editor** se questa istanza di Unity viene eseguita nell'editor di Unity; **Lettore** se questa istanza di Unity è un lettore autonomo.
 
    **Porta** Numero di porta del socket UDP usata da questa istanza di Unity per comunicare.
 
@@ -183,7 +183,7 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 
 1. Aggiungere il progetto di DLL esistente alla soluzione di Visual Studio generata da Visual Studio Tools per Unity. Può capitare meno frequentemente di avviare un nuovo progetto di DLL gestita per contenere i componenti di codice nel progetto Unity. In questo caso, è possibile aggiungere un nuovo progetto di DLL gestita alla soluzione Visual Studio. Per altre informazioni sull'aggiunta di un progetto nuovo o esistente a una soluzione, vedere [Procedura: Aggiungere progetti a una soluzione](https://msdn.microsoft.com/library/ff460187.aspx).
 
-   ![Aggiungere il progetto di DLL esistente alla soluzione.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
+   ![Aggiungere il progetto DLL esistente alla soluzione.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
    In entrambi i casi, Visual Studio Tools per Unity mantiene il riferimento al progetto, anche se deve rigenerare nuovamente i file di progetto e soluzione, di conseguenza è necessario eseguire questi passaggi una sola volta.
 
@@ -192,9 +192,9 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 > [!NOTE]
 > Quanto segue è richiesto solo se si usa il runtime legacy di Unity. Se si usa il nuovo runtime di Unity, non è più necessario usare tali profili dedicati per la versione 3.5. Usare un profilo di .NET 4.x compatibile con la versione di Unity in uso.
 
-   ![Impostare il Framework di destinazione della DLL sul framework Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+   ![Impostare il framework di destinazione della DLL sul framework Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
-3. Copiare la DLL nella cartella Assets del progetto Unity. In Unity gli asset sono file che vengono inseriti nel pacchetto dell'app Unity e distribuiti con questa per consentirne il caricamento al runtime. Poiché le dll sono collegate in fase di esecuzione, le dll devono essere distribuite come asset. Per distribuire le DLL come asset, l'editor di Unity richiede che vengano inserite nella cartella Assets del progetto Unity. Questa operazione può essere eseguita nei due modi seguenti:
+3. Copiare la DLL nella cartella Assets del progetto Unity. In Unity gli asset sono file che vengono inseriti nel pacchetto dell'app Unity e distribuiti con questa per consentirne il caricamento al runtime. Poiché le DLL sono collegate in fase di esecuzione, le DLL devono essere distribuite come risorse. Per distribuire le DLL come asset, l'editor di Unity richiede che vengano inserite nella cartella Assets del progetto Unity. Questa operazione può essere eseguita nei due modi seguenti:
 
    - Modificare le impostazioni di compilazione del progetto di DLL in modo da includere un'attività di post-compilazione che copi la DLL di output e i file PDB dalla cartella di output alla cartella **Assets** (Asset) del progetto Unity.
 
@@ -206,15 +206,15 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 
 4. Eseguire il debug del codice. È ora possibile eseguire il debug del codice sorgente della DLL con il codice sorgente del progetto Unity e usare tutte le funzionalità di debug a cui si è abituati, ad esempio punti di interruzione ed esecuzione del codice un'istruzione alla volta.
 
-## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
+## <a name="keyboard-shortcuts"></a>Tasti di scelta rapida
 
 Per accedere rapidamente alle funzionalità degli strumenti Unity per Visual Studio, è possibile usare i tasti di scelta rapida elencati di seguito.
 
-|Comando|Collegamento|Nome del comando associato al tasto di scelta rapida|
+|Comando|Tasto di scelta rapida|Nome del comando associato al tasto di scelta rapida|
 |-------------|--------------|---------------------------|
-|Apri procedura guidata MonoBehaviour|**CTRL**+**MAIUSC**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Apri Esplora progetti Unity|**ALT**+**MAIUSC**+**E**|**View.UnityProjectExplorer**|
-|Accedi alla documentazione di Unity|**CTRL**+**ALT**+**M, CTRL**+**H**|**Help.UnityAPIReference**|
-|Connetti al debugger Unity (lettore o editor)|**_Non sono previsti valori predefiniti_**|**Debug.AttachUnityDebugger**|
+|Apri procedura guidata MonoBehaviour|**Ctrl**+**Maiusc**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Apri Esplora progetti Unity|**Alt**+**Maiusc**+**E**|**View.UnityProjectExplorer**|
+|Accedi alla documentazione di Unity|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
+|Connetti al debugger Unity (lettore o editor)|**_nessun valore predefinito_**|**Debug.AttachUnityDebugger**|
 
 Se si preferisce non usarle, è possibile modificare le combinazioni di tasti di scelta rapida predefinite. Per informazioni su come modificarle, vedere [Identificare e personalizzare i tasti di scelta rapida in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

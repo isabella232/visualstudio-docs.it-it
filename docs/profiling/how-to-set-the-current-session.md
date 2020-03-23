@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778752"
 ---
 # <a name="how-to-set-the-current-session"></a>Procedura: Impostare la sessione corrente
@@ -38,6 +38,6 @@ Dopo avere impostato una sessione come sessione corrente, fare clic su **Avvio**
 ## <a name="see-also"></a>Vedere anche
 
 [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-[Finestra Esplora prestazioni](../profiling/performance-explorer-window.md)
-[Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)
-[Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)
+Finestra Esplora prestazioni Proprietà sessione[prestazioni Panoramica della sessione](../profiling/performance-session-overview.md) di prestazioniConfigure[performance sessions Performance Explorer window](../profiling/performance-explorer-window.md)
+[Performance explorer Performance session Performance session Properties](../profiling/performance-session-properties.md)
+Performance session overview

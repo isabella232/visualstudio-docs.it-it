@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409837"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79302847"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Flask in Visual Studio
 
@@ -50,7 +50,7 @@ Lo sviluppo in Python non è attualmente supportato in Visual Studio per Mac. In
 
 ## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Passaggio 1-1: Creare un progetto e una soluzione di Visual Studio
 
-1. In Visual Studio selezionare **File** > **Nuovo** > **Progetto**, cercare "Flask" e quindi selezionare il modello **Progetto Web Flask vuoto**. Il modello è anche disponibile in **Python** > **Web** nell'elenco a sinistra.
+1. In Visual Studio selezionare **File** > **nuovo** > **progetto**, cercare "Flask" e selezionare il modello Progetto **Web Flask vuoto.** (Il modello si trova anche sotto **Python** > **Web** nell'elenco a sinistra.)
 
     ![Finestra di dialogo Nuovo progetto in Visual Studio per il modello Progetto Web Flask vuoto](media/flask/step01-new-blank-project.png)
 
@@ -62,7 +62,7 @@ Lo sviluppo in Python non è attualmente supportato in Visual Studio per Mac. In
     - **Crea directory per soluzione**: lasciare impostato il valore predefinito.
     - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
 
-1. Dopo un istante, Visual Studio visualizza una finestra di dialogo con il messaggio **Questo progetto richiede pacchetti esterni**, riportata di seguito. Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Flask 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
+1. Dopo qualche istante, Visual Studio ti chiede con una finestra di dialogo che dice che **questo progetto richiede pacchetti esterni** (mostrato di seguito). Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Flask 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
 
     ![Messaggio che indica che il progetto richiede pacchetti esterni](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
@@ -85,7 +85,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 
     ![Finestra di Team Explorer, pagina Modifiche](media/flask/step01-team-explorer-changes.png)
 
-1. Nella barra di stato di Visual Studio selezionare il pulsante dei commit di cui è stato annullato il push (freccia in su con **2**) per aprire la pagina **Sincronizzazione** in **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
+1. Nella barra di stato di Visual Studio selezionare il pulsante commit non premuti (la freccia verso l'alto con **2**) per aprire la pagina **Sincronizzazione** in **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
 
     ![Finestra di Team Explorer che mostra le opzioni relative ai repository Git per il controllo del codice sorgente](media/flask/step01-team-explorer.png)
 
@@ -100,7 +100,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 1. Durante lo svolgimento di questa esercitazione, abituarsi a usare periodicamente i controlli in Visual Studio per il commit e il push delle modifiche. Questa esercitazione ricorda di eseguire queste operazioni nei momenti appropriati.
 
 > [!Tip]
-> Per spostarsi rapidamente all'interno di **Team Explorer**, selezionare l'intestazione (che indica **Modifiche** o **Push** nelle immagini precedenti) per visualizzare un menu di scelta rapida delle pagine disponibili.
+> Per spostarsi rapidamente all'interno di **Team Explorer,** selezionare l'intestazione (che legge **Changes** o **Push** nelle immagini precedenti) per visualizzare un menu a comparsa delle pagine disponibili.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Domanda: Quali sono alcuni dei vantaggi dell'uso del controllo del codice sorgente sin dall'inizio di un progetto?
 
@@ -120,7 +120,7 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
     ![Comando Aggiungi ambiente virtuale in Esplora soluzioni](media/flask/step01-add-virtual-environment-command.png)
 
-1. Verrà visualizzata la finestra di dialogo **Aggiungi ambiente virtuale** con il messaggio **È stato trovato il file requirements.txt.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
+1. Viene visualizzata la finestra di dialogo **Aggiungi ambiente virtuale** con il messaggio Che indica che è stato trovato un file **requirements.txt.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
 
     ![Finestra di dialogo Aggiungi ambiente virtuale con il messaggio sul file requirements.txt](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
 
@@ -128,7 +128,7 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
 1. Accettare i privilegi di amministratore se richiesto, quindi attendere alcuni minuti mentre Visual Studio scarica e installa i pacchetti. Questo per Flask e le relative dipendenze significa l'espansione di un migliaio di file in più di 100 sottocartelle. È possibile visualizzare lo stato di avanzamento nella finestra **Output** di Visual Studio. Durante l'attesa, leggere le sezioni delle domande seguenti. È anche possibile visualizzare una descrizione delle dipendenze di Flask nella pagina di [installazione di Flask](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) (flask.pcocoo.org).
 
-1. Nei controlli Git di Visual Studio nella barra di stato selezionare l'indicatore delle modifiche (indica **99&#42;** ) che apre la pagina **Modifiche** in **Team Explorer**.
+1. Nei controlli Git di Visual Studio nella barra di stato selezionare l'indicatore delle modifiche (indica **99&#42;**) che apre la pagina **Modifiche** in **Team Explorer**.
 
     La creazione dell'ambiente virtuale ha comportato centinaia di modifiche, ma non è necessario includerle nel controllo del codice sorgente, perché sarà sempre possibile, per l'utente o per chiunque altro cloni il progetto, ricreare l'ambiente da *requirements.txt*.
 
@@ -142,7 +142,7 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Domanda: Perché è utile creare un ambiente virtuale?
 
-Risposta: Un ambiente virtuale è un ottimo strumento per isolare le dipendenze esatte dell'app. Questo isolamento evita i conflitti all'interno di un ambiente Python globale e semplifica i test e la collaborazione. Quando si sviluppa un'app, si finisce per introdurre nel tempo molti utili pacchetti Python. Inserendo questi pacchetti in un ambiente virtuale specifico del progetto, è possibile aggiornare facilmente il file *requirements.txt* del progetto che descrive l'ambiente e che è incluso nel controllo del codice sorgente. Quando il progetto viene copiato in altri computer, tra cui server di compilazione, server di distribuzione e altri computer di sviluppo, è facile ricreare l'ambiente usando solo *requirements.txt*, che è il motivo per cui non è necessario includere l'ambiente nel controllo del codice sorgente. Per altre informazioni, vedere [Uso di ambienti virtuali](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
+Risposta: Un ambiente virtuale è un ottimo strumento per isolare le dipendenze esatte dell'app. Questo isolamento evita i conflitti all'interno di un ambiente Python globale e semplifica i test e la collaborazione. Quando si sviluppa un'app, si finisce per introdurre nel tempo molti utili pacchetti Python. Inserendo questi pacchetti in un ambiente virtuale specifico del progetto, è possibile aggiornare facilmente il file *requirements.txt* del progetto che descrive l'ambiente e che è incluso nel controllo del codice sorgente. Quando il progetto viene copiato in altri computer, tra cui server di compilazione, server di distribuzione e altri computer di sviluppo, è facile ricreare l'ambiente usando solo *requirements.txt*, che è il motivo per cui non è necessario includere l'ambiente nel controllo del codice sorgente. Per altre informazioni, vedere [Usare ambienti virtuali](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Domanda: Come si rimuove un ambiente virtuale di cui è già stato eseguito il commit nel controllo del codice sorgente?
 
@@ -228,7 +228,7 @@ Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante 
 
 ## <a name="step-1-5-run-the-project"></a>Passaggio 1-5: Eseguire il progetto
 
-1. In Visual Studio selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti (il browser visualizzato può variare):
+1. In Visual Studio selezionare **Debug debug** > **(** **F5**) o utilizzare il pulsante **Server Web** sulla barra degli strumenti (il browser visualizzato può variare):
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
 
@@ -238,11 +238,11 @@ Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante 
 
     ![Visualizzazione predefinita del progetto Flask](media/flask/step01-first-run-success.png)
 
-1. Al termine, arrestare il server chiudendo la finestra della console o usando il comando **Debug** > **Interrompi debug** in Visual Studio.
+1. Al termine, arrestare il server chiudendo la finestra della console o utilizzando il comando **Debug** > **Stop Debugging** in Visual Studio.
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Domanda: Qual è la differenza tra l'uso dei comandi del menu Debug e dei comandi del server nel sottomenu Python del progetto?
 
-Risposta: Oltre ai comandi del menu **Debug** e ai pulsanti della barra degli strumenti, è possibile avviare il server anche usando i comandi **Python** > **Avvia server** o **Python** > **Avvia il server di debug** del menu di scelta rapida del progetto. Entrambi i comandi aprono una finestra della console in cui viene visualizzato l'URL locale (localhost:port) per il server in esecuzione. Tuttavia, è necessario aprire manualmente un browser con l'URL e l'esecuzione del server di debug non avvia automaticamente il debugger di Visual Studio. È possibile collegare un debugger al processo in esecuzione in un secondo momento, se necessario, usando il comando **Debug** > **Associa a processo**.
+Risposta: Oltre ai comandi del menu **Debug** e ai pulsanti della barra degli strumenti, è possibile avviare il server anche usando i comandi **Python** > **Avvia server** o **Python** > **Avvia il server di debug** del menu di scelta rapida del progetto. Entrambi i comandi aprono una finestra della console in cui viene visualizzato l'URL locale (localhost:port) per il server in esecuzione. Tuttavia, è necessario aprire manualmente un browser con l'URL e l'esecuzione del server di debug non avvia automaticamente il debugger di Visual Studio. È possibile connettere un debugger al processo in esecuzione in un secondo momento, se lo si desidera, utilizzando il comando **Debug** > **connessione a processo.**
 
 ## <a name="next-steps"></a>Passaggi successivi
 

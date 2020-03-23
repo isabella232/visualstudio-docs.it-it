@@ -6,10 +6,10 @@ ms.author: johmil
 ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: c411ae1730c2bd9b4f92729a8480d7fa399d0894
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74797236"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio per Mac Tools per Unity
@@ -23,7 +23,7 @@ L'integrazione di Unity è inclusa in Visual Studio per Mac e a partire da Unity
 > [!NOTE]
 > Queste informazioni si riferiscono all'IDE di Visual Studio per Mac. Per Visual Studio Code, vedere [questa guida](https://code.visualstudio.com/docs/other/unity) per altre informazioni.
 
-## <a name="overview"></a>Panoramica di
+## <a name="overview"></a>Panoramica
 
 Di seguito sono riportate alcune delle funzionalità principali di Visual Studio per Mac Tools per Unity:
 
@@ -48,9 +48,9 @@ Visual Studio per Mac Tools per Unity supporta tutte le funzionalità di [debug]
 
 Scrittura di codice più facile da utilizzare con menu rapidi e tasti di scelta rapida per [azioni di contesto, ridenominazione e refactoring](refactoring.md).
 
-### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostica Roslyn e correzioni rapide per Unity
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostica di Roslyn e correzioni rapide per Unity
 
-Scrivere codice migliore che acquisisca le procedure consigliate con Visual Studio per Mac la conoscenza approfondita dei progetti di Unity. 
+Scrivere codice migliore che acquisisca le procedure consigliate con la profonda conoscenza dei progetti Unity di Visual Studio per Mac. 
 
 ![Confronto tra stringa di refactoring di VS per Mac e CompareTag](media/using-vsmac-tools-unity-image9.png)
 

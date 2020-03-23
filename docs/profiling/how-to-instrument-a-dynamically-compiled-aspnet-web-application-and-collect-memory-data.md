@@ -1,5 +1,5 @@
 ---
-title: "Riga di comando del profiler: instrumentare l'app ASP.NET dinamica, ottenere dati di memoria"
+title: 'Riga di comando del profiler: instrumento ASP.NET app dinamica, ottenere i dati di memoriaProfiler command line: Instrument dynamic ASP.NET app, get memory data'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 3378a45ebace942bb8696f2f67962365b5f57796
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778882"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di memoria tramite la riga di comando del profiler
@@ -36,11 +36,11 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
 2. Aprire una finestra del prompt dei comandi nel computer che ospita l'applicazione Web.
 
-3. Inizializzare le variabili di ambiente di profilatura. Tipo:
+3. Inizializzare le variabili di ambiente di profilatura. Digitare:
 
      **VSPerfClrEnv /globaltracegc**
 
-     oppure
+     -oppure-
 
      **VSPerfClrEnv /globaltracegclife**
 
@@ -48,19 +48,19 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
     - **/globaltracegclife** abilita la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti.
 
-4. Riavvia il computer.
+4. Riavviare il computer.
 
 ## <a name="run-the-profiling-session"></a>Eseguire la sessione di profilatura
 
 #### <a name="to-profile-the-aspnet-web-application"></a>Per profilare l'applicazione Web ASP.NET
 
-1. Avviare il profiler. Tipo:
+1. Avvia il profiler. Digitare:
 
     **VSPerfCmd** [/start](../profiling/start.md) **:trace** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
    - L'opzione **/start:trace** inizializza il profiler.
 
-   - L'opzione **/output:** `OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione *vsp*).
+   - L'opzione **/output:** `OutputFile` è obbligatoria con **/start**. `OutputFile`specifica il nome e la posizione dei dati di profilatura (.* vsp*).
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:trace**.
 
@@ -69,13 +69,13 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
    | Opzione | Descrizione |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Specifica il dominio facoltativo e il nome utente dell'account proprietario del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il nome è elencato nella colonna **Nome utente** della scheda **Processi** di Gestione attività di Windows. |
-   | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna **ID sessione** della scheda **Processi** di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
+   | [/user](../profiling/user-vsperfcmd.md) **:**:`Domain`**\\**[ ]`UserName` | Specifica il dominio facoltativo e il nome utente dell'account proprietario del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il nome è elencato nella colonna **Nome utente** della scheda **Processi** di Task Manager di Windows. |
+   | [/crosssessione](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna **ID sessione** della scheda **Processi** di Task Manager di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Avvia il profiler con la raccolta dei dati sospesa. Usare [/globalon](../profiling/globalon-and-globaloff.md) per riprendere la profilatura. |
-   | [/counter](../profiling/counter.md) **:** `Config` | Raccoglie informazioni dal contatore delle prestazioni del processore specificato in Config`Config`. Le informazioni del contatore vengono aggiunte ai dati raccolti a ogni evento di profilatura. |
-   | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
-   | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
-   | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
+   | [/counter](../profiling/counter.md) **:**`Config` | Raccoglie informazioni dal contatore delle prestazioni del processore specificato in Config`Config`. Le informazioni del contatore vengono aggiunte ai dati raccolti a ogni evento di profilatura. |
+   | [/wincounter](../profiling/wincounter.md) **:**`WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
+   | [/automark](../profiling/automark.md) **:**`Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
+   | [/events](../profiling/events-vsperfcmd.md) **:**`Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
 
 2. Avviare l'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nel modo usuale.
 
@@ -88,9 +88,9 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
     |Opzione|Descrizione|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Avvia ( **/threadon**) o arresta ( **/threadoff**) la raccolta dei dati per il thread specificato dall'ID thread (`TID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:**`TID`|Avvia (**/threadon**) o arresta (**/threadoff**) la raccolta dei dati per il thread specificato dall'ID thread (`TID`).|
 
 - È anche possibile usare l'opzione **VSPerfCmd.exe**[/mark](../profiling/mark.md) per inserire un indicatore di profilatura nel file di dati. Il comando **/mark** aggiunge un identificatore, un timestamp e una stringa di testo facoltativa definita dall'utente. Gli indicatori possono essere usati per filtrare i dati nei rapporti e nelle visualizzazioni dei dati del profiler.
 
@@ -101,15 +101,15 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
 1. Chiudere l'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
-2. Chiudere il processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] reimpostando Internet Information Services (IIS). Tipo:
+2. Chiudere il processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] reimpostando Internet Information Services (IIS). Digitare:
 
     **IISReset /stop**
 
-3. Arrestare il profiler. Tipo:
+3. Arrestare il profiler. Digitare:
 
     **VSPerfCmd** [/shutdown](../profiling/shutdown.md)
 
-4. Riavviare IIS. Tipo:
+4. Riavviare IIS. Digitare:
 
     **IISReset /start**
 
@@ -120,11 +120,11 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
 1. Sostituire il file *web.config* con una copia del file originale.
 
-2. (Facoltativo). Cancellare le variabili di ambiente di profilatura. Tipo:
+2. (Facoltativo). Cancellare le variabili di ambiente di profilatura. Digitare:
 
      **VSPerfCmd /globaloff**
 
-3. Riavvia il computer.
+3. Riavviare il computer.
 
 ## <a name="see-also"></a>Vedere anche
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

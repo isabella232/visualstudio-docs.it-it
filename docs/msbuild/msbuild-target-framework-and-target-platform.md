@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633200"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework e piattaforma di destinazione di MSBuild
 
-È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile impostare un'applicazione come destinazione per eseguirla in .NET Framework 2.0 su una piattaforma a 32 bit compatibile con la famiglia di processori 802x86 ("x86"). La combinazione del framework e della piattaforma di destinazione è nota come *contesto di destinazione*.
+È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile impostare un'applicazione come destinazione per eseguirla in .NET Framework 2.0 su una piattaforma a 32 bit compatibile con la famiglia di processori 802x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*.
 
 > [!IMPORTANT]
 > Questo articolo descrive il metodo precedente per specificare un framework di destinazione. I progetti in stile SDK abilitano framework di destinazione diversi, ad esempio netstandard. Per altre informazioni, vedere [Framework di destinazione](/dotnet/standard/frameworks).
@@ -30,13 +30,13 @@ ms.locfileid: "77633200"
 
 - .NET Framework 2.0 (incluso in Visual Studio 2005)
 
-- Il .NET Framework 3,0 (incluso in Windows Vista)
+- .NET Framework 3.0 (incluso in Windows Vista)
 
-- Il .NET Framework 3,5 (incluso in Visual Studio 2008)
+- .NET Framework 3.5 (incluso in Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- Il .NET Framework 4,6 (incluso in Visual Studio 2015)
+- .NET Framework 4.6 (incluso in Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
@@ -61,7 +61,7 @@ Il framework di destinazione viene specificato nella proprietà `TargetFramework
  Un *profilo target* è un subset di un framework di destinazione. Ad esempio, Framework 4 Client Profile non include riferimenti agli assembly di MSBuild.
 
  > [!NOTE]
- > I profili di destinazione si applicano solo alle [librerie di classi](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)portabili.
+ > I profili di destinazione si applicano solo alle librerie di [classi portabili.](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)
 
  Il framework di destinazione viene specificato nella proprietà `TargetFrameworkProfile` in un file di progetto. È possibile modificare il profilo target usando il controllo del framework di destinazione nelle pagine delle proprietà del progetto nell'IDE.
 

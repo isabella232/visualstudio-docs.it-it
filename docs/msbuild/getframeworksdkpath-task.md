@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633993"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath (attività)
@@ -30,8 +30,8 @@ ms.locfileid: "77633993"
 Recupera il percorso di Windows Software Development Kit (SDK).
 ## <a name="task-parameters"></a>Parametri dell'attività
 
-Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkSdkPath`.
-Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkSdkPath`.
+Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkSdkPath` .
+Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkSdkPath` .
 
 |Parametro|Descrizione|
 |---------------|-----------------|
@@ -40,13 +40,13 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GetFramewo
 |`FrameworkSdkVersion40Path`|Parametro di output `String` di sola lettura facoltativo.<br /><br /> Restituisce il percorso di .NET SDK versione 4.0, se presente. In caso contrario restituisce `String.Empty`.|
 |`Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso della versione più recente di .NET SDK, se sono presenti delle versioni. In caso contrario restituisce `String.Empty`.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene utilizzata l'attività `GetFrameworkSdkPath` per archiviare il percorso della Windows SDK nella proprietà `SdkPath`.
+Nell'esempio seguente `GetFrameworkSdkPath` viene utilizzata l'attività per `SdkPath` archiviare il percorso di Windows SDK nella proprietà .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594175"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79303029"
 ---
 # <a name="c-intellisense"></a>IntelliSense per C#
 
-IntelliSense per C# è disponibile durante la scrittura del codice nell'editor e durante il debug nella finestra di comando [Modalità immediata](../ide/reference/immediate-window.md).
+IntelliSense di Cè è disponibile durante la codifica nell'editor e durante il debug nella finestra di comando in [modalità immediata.](../ide/reference/immediate-window.md)
 
 ## <a name="completion-lists"></a>Elenchi di completamento
 
@@ -35,15 +35,15 @@ Gli elenchi di completamento di IntelliSense in C# contengono token di Elenca me
 
 - Metodi di estensione
 
-L'elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per altre informazioni, vedere [Elenchi di completamento filtrati](#filtered-completion-lists).
+L'elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per ulteriori informazioni, vedere Elenchi di [completamento filtrati](#filtered-completion-lists).
 
 ### <a name="code-snippets-in-completion-lists"></a>Frammenti di codice negli elenchi di completamento
 
-In C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [testo del collegamento](../ide/code-snippets-schema-reference.md#shortcut-element) del frammento di codice. Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in C#, vedere [Frammenti di codice C#](../ide/visual-csharp-code-snippets.md).
+In C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [testo del collegamento](../ide/code-snippets-schema-reference.md#shortcut-element) del frammento di codice. Per ulteriori informazioni sui frammenti di codice disponibili in C , per impostazione predefinita, vedere [frammenti](../ide/visual-csharp-code-snippets.md)di codice C .
 
 ### <a name="language-keywords-in-completion-lists"></a>Parole chiave del linguaggio negli elenchi di completamento
 
-In C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere [Parole chiave di C#](/dotnet/csharp/language-reference/keywords/index).
+In C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per ulteriori informazioni sulle parole chiave del linguaggio C, vedere [Parole chiave di C.](/dotnet/csharp/language-reference/keywords/index)
 
 ### <a name="extension-methods-in-completion-lists"></a>Metodi di estensione negli elenchi di completamento
 
@@ -78,9 +78,9 @@ I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense
 
 ### <a name="most-recently-used-members"></a>Membri utilizzati più di recente
 
-IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. Al successivo utilizzo di **Elenco membri**, i membri usati di recente vengono visualizzati nella parte superiore. La cronologia dei membri usati più di recente viene cancellata tra ogni sessione di Visual Studio.
+IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. Al successivo utilizzo **dell'elenco dei membri**, i membri utilizzati più di recente vengono visualizzati nella parte superiore. La cronologia dei membri usati più di recente viene cancellata tra ogni sessione di Visual Studio.
 
-### <a name="override"></a>sostituzione
+### <a name="override"></a>override
 
 Quando si digita [override](/dotnet/csharp/language-reference/keywords/override) e si preme la **BARRA SPAZIATRICE**, IntelliSense visualizza in una casella dell'elenco popup tutti i membri validi della classe di base di cui è possibile eseguire l'override. Se si digita il tipo restituito del metodo dopo `override`, IntelliSense mostra solo i metodi che restituiscono lo stesso tipo. Se non vengono trovate corrispondenze, IntelliSense visualizza tutti i membri della classe di base.
 
@@ -94,7 +94,7 @@ Quando si digita [override](/dotnet/csharp/language-reference/keywords/override)
 
 L'operazione **Aggiungi using** di IntelliSense aggiunge automaticamente la direttiva `using` richiesta al file di codice. Questa funzione consente di restare concentrati sul codice che si sta scrivendo anziché passare a un'altra parte del codice.
 
-Per avviare l'operazione **Aggiungi using**, posizionare il cursore sul riferimento a un tipo che non può essere risolto. Ad esempio, quando si crea un'applicazione console e si aggiunge `XmlReader` al corpo del metodo `Main`, nella riga di codice appare una sottolineatura ondulata rossa per indicare che non è possibile risolvere il riferimento al tipo. È quindi possibile richiamare **Aggiungi using** con le **Azione rapide**. Le **Azioni rapide** sono visibili solo quando il cursore è posizionato sul tipo non associato.
+Per avviare l'operazione **Add using,** posizionare il cursore su un riferimento al tipo che non può essere risolto. Ad esempio, quando si crea un'applicazione console e si aggiunge `XmlReader` al corpo del metodo `Main`, nella riga di codice appare una sottolineatura ondulata rossa per indicare che non è possibile risolvere il riferimento al tipo. È quindi possibile richiamare **Aggiungi using** con le **Azione rapide**. Le **Azioni rapide** sono visibili solo quando il cursore è posizionato sul tipo non associato.
 
 ![Immagine ampliata Aggiungi using, azione rapida](../ide/media/addusing-quickaction.png)
 
@@ -106,7 +106,7 @@ L'opzione **Rimuovi e ordina using** consente di ordinare e rimuovere le dichiar
 
 ### <a name="implement-interface"></a>Implementare l'interfaccia
 
-IntelliSense offre un'opzione che consente di implementare un'[interfaccia](/dotnet/csharp/language-reference/keywords/interface) mentre si usa l'editor del codice. Per implementare correttamente un'interfaccia è in genere necessario creare una dichiarazione di metodo per ogni membro dell'interfaccia della classe. Usando IntelliSense, dopo aver digitato il nome di un'interfaccia in una dichiarazione di classe, viene visualizzata la lampadina delle **Azioni rapide**. La lampadina offre la possibilità di implementare automaticamente l'interfaccia, usando la denominazione esplicita o implicita. Se si usa la denominazione esplicita, le dichiarazioni dei metodi includono il nome dell'interfaccia. Se si usa la denominazione implicita, le dichiarazioni dei metodi non indicano l'interfaccia a cui appartengono. Un metodo di interfaccia con denominazione esplicita è accessibile solo tramite un'istanza di interfaccia e non tramite un'istanza di classe. Per altre informazioni, vedere [Implementazione esplicita dell'interfaccia](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+IntelliSense fornisce un'opzione che consente di implementare [un'interfaccia](/dotnet/csharp/language-reference/keywords/interface) durante l'utilizzo nell'editor di codice. Per implementare correttamente un'interfaccia è in genere necessario creare una dichiarazione di metodo per ogni membro dell'interfaccia della classe. Usando IntelliSense, dopo aver digitato il nome di un'interfaccia in una dichiarazione di classe, viene visualizzata la lampadina delle **Azioni rapide**. La lampadina offre la possibilità di implementare automaticamente l'interfaccia, usando la denominazione esplicita o implicita. Se si usa la denominazione esplicita, le dichiarazioni dei metodi includono il nome dell'interfaccia. Se si usa la denominazione implicita, le dichiarazioni dei metodi non indicano l'interfaccia a cui appartengono. Un metodo di interfaccia con denominazione esplicita è accessibile solo tramite un'istanza di interfaccia e non tramite un'istanza di classe. Per ulteriori informazioni, vedere [Implementazione esplicita dell'interfaccia](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
 Il comando Implementa interfaccia genera il numero minimo di stub di metodo necessario per soddisfare l'interfaccia. Se una classe di base implementa parti dell'interfaccia, tali stub non verranno rigenerati.
 
@@ -114,7 +114,7 @@ Il comando Implementa interfaccia genera il numero minimo di stub di metodo nece
 
 IntelliSense offre un'opzione che consente di implementare automaticamente i membri di una classe di base astratta mentre si usa l'editor del codice. Per implementare i membri di una classe base astratta è in genere necessario creare una nuova definizione di metodo per ciascun metodo della classe base astratta nella classe derivata. Usando IntelliSense, dopo aver digitato il nome di una classe di base astratta in una dichiarazione di classe, viene visualizzata la lampadina delle **Azioni rapide**. La lampadina offre la possibilità di implementare automaticamente i metodi della classe di base.
 
-Gli stub di metodo generati con la funzionalità **Implementare una classe di base astratta** vengono modellati in base al frammento di codice definito nel file *MethodStub.snippet*. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
+Gli stub di metodo generati dalla funzionalità **Implementa classe base astratta** vengono modellati dal frammento di codice definito nel file *MethodStub.snippet*. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Generazione dall'utilizzo
 
@@ -124,7 +124,7 @@ Viene visualizzata una sottolineatura ondulata rossa sotto ogni identificatore n
 
 - Fare clic sull'identificatore non definito. Verrà visualizzata la lampadina di errore di **Azioni rapide** sotto l'identificatore. Fare clic sulla lampadina di errore.
 
-- Fare clic sull'identificatore non definito e premere **CTRL**+ **.** (**CTRL** + punto).
+- Fare clic sull'identificatore non definito e quindi premere **CTRL**+**.** (**CTRL** + punto).
 
 - Fare clic con il pulsante destro del mouse sull'identificatore non definito e quindi scegliere **Azioni rapide e refactoring**.
 
@@ -134,7 +134,7 @@ Le opzioni visualizzate possono includere quanto segue:
 
 - **Genera campo**
 
-- **Genera metodo**
+- **Generate (metodo)**
 
 - **Genera classe**
 
@@ -144,21 +144,21 @@ Le opzioni visualizzate possono includere quanto segue:
 
 Nell'editor del codice IntelliSense consente di agganciare i metodi (gestori di eventi) a campi evento.
 
-Quando si digita l'operatore `+=` dopo un campo evento in un file con estensione *cs*, IntelliSense chiede di premere **TAB**. Questa operazione consente di inserire una nuova istanza di un delegato che punta al metodo che gestisce l'evento.
+Quando si `+=` digita l'operatore dopo un campo evento in un file *con estensione cs,* IntelliSense richiede l'opzione per premere il **tasto Tab.** Questa operazione consente di inserire una nuova istanza di un delegato che punta al metodo che gestisce l'evento.
 
 ![Associazione automatica dei pulsanti](../ide/media/vxautohookup.gif)
 
-Se si preme **TAB**, IntelliSense termina automaticamente l'istruzione e visualizza il riferimento al gestore dell'evento come testo selezionato nell'editor del codice. Per completare l'associazione automatica dell'evento, IntelliSense chiede di premere di nuovo **TAB** per creare uno stub vuoto per il gestore dell'evento.
+Se si preme **TAB**, IntelliSense completa automaticamente l'istruzione e visualizza automaticamente il riferimento al gestore eventi come testo selezionato nell'editor di codice. Per completare l'hook automatico dell'evento, IntelliSense richiede di premere nuovamente **TAB** per creare uno stub vuoto per il gestore eventi.
 
 ![Gestore eventi di generazione](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > Se un nuovo delegato creato da IntelliSense fa riferimento a un gestore eventi esistente, IntelliSense comunica queste informazioni nella descrizione comando. È quindi possibile modificare questo riferimento. Il testo è già selezionato nell'editor del codice. In caso contrario, l'associazione automatica dell'evento è a questo punto completata.
 
-Se si preme **TAB**, IntelliSense associa automaticamente un metodo con la firma corretta e posiziona il cursore nel corpo del gestore dell'evento.
+Se si preme **Tab**, IntelliSense esegue lo stub di un metodo con la firma corretta e inserisce il cursore nel corpo del gestore eventi.
 
 > [!NOTE]
-> Usare il comando **Posizione precedente** nel menu **Visualizza** (**CTRL**+ **-** ) per tornare all'istruzione di associazione dell'evento.
+> Utilizzare il comando **Sposta indietro** del menu **Visualizza** (**Ctrl**+**-**) per tornare all'istruzione di hook dell'evento.
 
 ## <a name="see-also"></a>Vedere anche
 

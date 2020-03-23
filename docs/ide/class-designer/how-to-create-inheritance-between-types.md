@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbf540056318e092db13521dc80478cc7eb91948
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590371"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Procedura: Creare ereditarietà tra tipi in Progettazione classi
@@ -28,7 +28,7 @@ Per creare una relazione di ereditarietà tra due tipi in un diagramma classi us
 
 1. Dal progetto in **Esplora soluzioni** aprire un file del diagramma classi (con estensione cd).
 
-     Se non è disponibile alcun diagramma classi, crearne uno. Vedere [(Procedura: Aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
+     Se non è disponibile alcun diagramma classi, crearne uno. Vedere [Procedura: aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
 
 2. In **Progettazione classi** nella **Casella degli strumenti** fare clic su **Ereditarietà**.
 

@@ -14,23 +14,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c31da244e5c264bb81498c6091aefce7e6318bb2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633941"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: Compilare gli stessi file di origine con opzioni diverse
 
-Quando si compilano progetti, spesso si compilano gli stessi componenti con opzioni di compilazione diverse. È possibile, ad esempio, creare una build di debug con informazioni sui simboli o una build di versione senza informazioni sui simboli, ma con le ottimizzazioni abilitate In alternativa, è possibile compilare un progetto da eseguire su una piattaforma specifica, ad esempio x86 o x64. In tutti questi casi, la maggior parte delle opzioni di compilazione è la stessa. Vengono modificate solo alcune opzioni per controllare la configurazione della build. Con MSBuild è possibile utilizzare le proprietà e le condizioni per creare le diverse configurazioni di compilazione.
+Quando si compilano progetti, spesso si compilano gli stessi componenti con opzioni di compilazione diverse. È possibile, ad esempio, creare una build di debug con informazioni sui simboli o una build di versione senza informazioni sui simboli, ma con le ottimizzazioni abilitate In alternativa, è possibile compilare un progetto da eseguire su una piattaforma specifica, ad esempio x86 o x64. In tutti questi casi, la maggior parte delle opzioni di compilazione è la stessa. Vengono modificate solo alcune opzioni per controllare la configurazione della build. Con MSBuild, si usano proprietà e condizioni per creare le diverse configurazioni di compilazione.
 
-## <a name="use-properties-to-control-build-settings"></a>Usare le proprietà per controllare le impostazioni di compilazione
+## <a name="use-properties-to-control-build-settings"></a>Usare le proprietà per controllare le impostazioni di compilazioneUse properties to control build settings
 
 L'elemento `Property` definisce una variabile a cui si fa riferimento più volte in un file di progetto, ad esempio per indicare la posizione di una directory temporanea o per impostare i valori delle proprietà usate in più configurazioni, ad esempio in una build di debug e in una build di rilascio. Per altre informazioni sulle proprietà, vedere [Proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
-È possibile usare le proprietà per modificare la configurazione della build senza dover modificare il file di progetto. L'attributo `Condition` dell'elemento `Property` e dell'elemento `PropertyGroup` consente di modificare il valore delle proprietà. Per ulteriori informazioni sulle condizioni di MSBuild, vedere [condizioni](../msbuild/msbuild-conditions.md).
+È possibile usare le proprietà per modificare la configurazione della build senza dover modificare il file di progetto. L'attributo `Condition` dell'elemento `Property` e dell'elemento `PropertyGroup` consente di modificare il valore delle proprietà. Per altre informazioni sulle condizioni di MSBuild, vedere [Condizioni](../msbuild/msbuild-conditions.md).
 
-### <a name="to-set-a-group-of-properties-that-depends-on-another-property"></a>Per impostare un gruppo di proprietà che dipende da un'altra proprietà
+### <a name="to-set-a-group-of-properties-that-depends-on-another-property"></a>Per impostare un gruppo di proprietà che dipende da un'altra proprietàTo set a group of properties that depends on another property
 
 - Usare un attributo `Condition` in un elemento `PropertyGroup` simile al seguente:
 
@@ -41,7 +41,7 @@ L'elemento `Property` definisce una variabile a cui si fa riferimento più volte
   </PropertyGroup>
   ```
 
-### <a name="to-define-a-property-that-depends-on-another-property"></a>Per definire una proprietà che dipende da un'altra proprietà
+### <a name="to-define-a-property-that-depends-on-another-property"></a>Per definire una proprietà che dipende da un'altra proprietàTo define a property that depends on another property
 
 - Usare un attributo `Condition` in un elemento `Property` simile al seguente:
 
@@ -51,11 +51,11 @@ L'elemento `Property` definisce una variabile a cui si fa riferimento più volte
 
 ## <a name="specify-properties-on-the-command-line"></a>Specificare le proprietà nella riga di comando
 
-Dopo avere scritto il file di progetto in modo che accetti più configurazioni, è necessario poter modificare tali configurazioni ogni volta che si compila il progetto. MSBuild offre questa possibilità consentendo di specificare le proprietà nella riga di comando usando l'opzione **-Property** o **-p** .
+Dopo avere scritto il file di progetto in modo che accetti più configurazioni, è necessario poter modificare tali configurazioni ogni volta che si compila il progetto. MSBuild offre questa funzionalità consentendo l'impostazione delle proprietà nella riga di comando utilizzando l'opzione **-property** o **-p.**
 
 ### <a name="to-set-a-project-property-at-the-command-line"></a>Per impostare una proprietà del progetto nella riga di comando
 
-- Usare l'opzione **-property** con la proprietà e il valore della proprietà. Ad esempio,
+- Utilizzare l'opzione **-property** con la proprietà e il valore della proprietà. Ad esempio:
 
   ```cmd
   msbuild file.proj -property:Flavor=Debug
@@ -69,7 +69,7 @@ Dopo avere scritto il file di progetto in modo che accetti più configurazioni, 
 
 ### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Per specificare più di una proprietà del progetto nella riga di comando
 
-- Usare l'opzione **-property** o **-p** più volte con la proprietà e i valori della proprietà oppure usare una sola opzione **-property** o **-p** e separare più proprietà con punti e virgola (;). Ad esempio,
+- Utilizzare l'opzione **-property** o **-p** più volte con i valori delle proprietà e delle proprietà oppure un'opzione **-property** o **-p** e separare più proprietà con il punto e virgola (;). Ad esempio:
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug;Platform=x86
@@ -81,7 +81,7 @@ Dopo avere scritto il file di progetto in modo che accetti più configurazioni, 
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86
   ```
 
-  Le variabili di ambiente vengono considerate anche come proprietà e vengono incorporate automaticamente da MSBuild. Per altre informazioni sull'uso delle variabili di ambiente, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).
+  Anche le variabili di ambiente vengono considerate come proprietà e vengono incorporate automaticamente da MSBuild.Environment variables are also treated as properties and are automatically incorporated by MSBuild. Per ulteriori informazioni sull'utilizzo delle variabili di ambiente, vedere Procedura: utilizzare variabili di [ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
   Il valore della proprietà specificato nella riga di comando ha la precedenza sui valori impostati per la stessa proprietà nel file di progetto e tale valore nel file di progetto ha la precedenza sul valore in una variabile di ambiente.
 

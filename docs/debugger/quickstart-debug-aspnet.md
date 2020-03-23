@@ -1,6 +1,6 @@
 ---
-title: ASP.NET Core di debug
-description: Eseguire il debug di ASP.NET Core usando il debugger di Visual Studio
+title: Nucleo di ASP.NET debug
+description: Eseguire il debug di ASP.NET Core tramite il debugger di Visual StudioDebug ASP.NET Core using the Visual Studio debugger
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -13,25 +13,25 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75847880"
 ---
-# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Guida introduttiva: eseguire il debug di ASP.NET Core con il debugger di Visual Studio
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug di ASP.NET Core con il debugger di Visual StudioQuickstart: Debug ASP.NET Core with the Visual Studio debugger
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
-1. Apri Visual Studio.
+1. Aprire Visual Studio.
 
     ::: moniker range=">=vs-2019"
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **asp.net**, scegliere **Modelli**, quindi scegliere **Crea una nuova applicazione Web ASP.NET Core**. Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **Web** e quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Digitare un nome come **MyDbgApp** e fare clic su **OK**.
+    Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **Web** e quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Digitare un nome come **MyDbgApp** e fare clic su **OK**.
 
     Nella finestra di dialogo visualizzata scegliere **Applicazione Web** nel riquadro centrale e quindi fare clic su **OK**.
 
@@ -76,7 +76,7 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
 
 ## <a name="set-a-breakpoint"></a>Imposta punto di interruzione
 
-Un *punto di interruzione* indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice. È la più semplice funzionalità di debug.
+Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice. È la più semplice funzionalità di debug.
 
 1. Per impostare il punto di interruzione, fare clic nella barra di navigazione a sinistra della funzione `doWork` o selezionare la riga di codice e premere **F9**.
 
@@ -138,4 +138,4 @@ Per altre informazioni sull'uso della funzione di modifica e continua e sulle li
 In questa esercitazione si è appreso come avviare il debugger, eseguire il codice ed esaminare le variabili. Sono disponibili una panoramica delle funzionalità del debugger e collegamenti a ulteriori informazioni.
 
 > [!div class="nextstepaction"]
-> [Presentazione del debugger](../debugger/debugger-feature-tour.md)
+> [Primo sguardo al debugger](../debugger/debugger-feature-tour.md)

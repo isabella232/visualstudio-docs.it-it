@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Implementare un'interfaccia (Progettazione classi)"
+title: "Procedura: implementare un'interfaccia (Progettazione classi)"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbe8db6c6bd7df5285880f7f860df5bb26db736a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590111"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Procedura: Implementare un'interfaccia in Progettazione classi
@@ -42,7 +42,7 @@ Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi](how-to
 2. Aprire **Visualizzazione classi** e individuare l'interfaccia.
 
     > [!TIP]
-    > Se non è già visualizzata, aprire **Visualizzazione classi** dal menu **Visualizza** o premere **CTRL**+**MAIUSC**+**C**.
+    > Se **Visualizzazione classi** non è aperto, aprire Visualizzazione **classi** dal menu **Visualizza** o premere **CTRL**+**Maiusc**+**C**.
 
 3. Trascinare il nodo di interfaccia nella forma della classe nel diagramma.
 
@@ -51,6 +51,6 @@ Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi](how-to
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Creare tipi usando Progettazione classi](how-to-create-types.md)
-- [Procedura: Visualizzare i tipi esistenti](how-to-view-existing-types.md)
+- [Procedura: visualizzare i tipi esistentiHow to: View Existing Types](how-to-view-existing-types.md)
 - [Procedura: Creare ereditarietà tra tipi](how-to-create-inheritance-between-types.md)
-- [Refactoring di classi e tipi](refactoring-classes-and-types.md)
+- [Refactoring Classes and Types](refactoring-classes-and-types.md)

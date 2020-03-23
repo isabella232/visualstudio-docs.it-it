@@ -8,21 +8,21 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594214"
 ---
 # <a name="visual-c-intellisense-features"></a>Funzionalità IntelliSense per Visual C++
 
-IntelliSense è un nome assegnato a un set di funzionalità che semplificano la scrittura di codice. IntelliSense per C++ è disponibile per i file autonomi e per i file che fanno parte di un progetto C++. Nei progetti multipiattaforma alcune funzionalità di IntelliSense sono disponibili nei file con estensione *cpp* e *c* del progetto di codice condiviso, anche quando si opera in un contesto Android o iOS.
+IntelliSense è un nome assegnato a un set di funzionalità che semplificano la scrittura di codice. IntelliSense per C++ è disponibile per i file autonomi e per i file che fanno parte di un progetto C++. Nei progetti multipiattaforma, alcune funzionalità di IntelliSense sono disponibili nei file con estensione cpp e c nel progetto di codice condiviso, anche quando ci si trova in un contesto Android o iOS.In cross-platform projects, some IntelliSense features are available in *.cpp* and *.c* files in the shared code project, even when you are in an Android or iOS context.
 
 Questo articolo offre una panoramica delle funzionalità di IntelliSense per C++. Per informazioni su come configurare il progetto per IntelliSense e come risolvere eventuali problemi, vedere [Configure a C++ project for IntelliSense](visual-cpp-intellisense-configuration.md) (Configurare un progetto C++ per IntelliSense).
 
 ## <a name="intellisense-features-in-c"></a>Funzionalità IntelliSense in C++
 
-IntelliSense è un nome assegnato a un set di funzionalità che semplificano la scrittura di codice. Per una maggiore flessibilità, tutte le funzionalità di IntelliSense possono essere abilitate o disabilitate nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++**  > **Avanzate**. La finestra di dialogo **Opzioni** è accessibile dal menu **Strumenti** sulla barra dei menu.
+IntelliSense è un nome assegnato a un set di funzionalità che semplificano la scrittura di codice. Per una maggiore flessibilità, tutte le funzionalità di IntelliSense possono essere abilitate o disabilitate nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Avanzate**. La finestra di dialogo **Opzioni** è accessibile dal menu **Strumenti** sulla barra dei menu.
 
 ![Finestra di dialogo Strumenti/Opzioni](../ide/media/sintellisensecpptoolsoptions.PNG)
 
@@ -34,23 +34,23 @@ Per accedere a IntelliSense, è possibile utilizzare le voci di menu e i tasti d
 
 Quando si inizia a digitare una parola chiave, un tipo, una funzione, un nome di variabile o un altro elemento del programma che viene riconosciuto dal compilatore, l'editor visualizza un elenco di suggerimenti per completare la parola.
 
-Per un elenco delle icone e dei relativi significati, vedere [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md).
+Per un elenco delle icone e dei relativi significati, vedere [Icone Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md).
 
 ![Finestra Completa parola di Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-La prima volta che viene richiamato, l'elenco dei membri mostra solo i membri accessibili per il contesto corrente. Se successivamente si preme **CTRL**+**J**, vengono visualizzati tutti i membri indipendentemente dall'accessibilità. Se viene richiamato per la terza volta, viene visualizzato un elenco di elementi del programma ancora più ampio. È possibile disattivare l'elenco dei membri nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++**  > **Generale** > **Elenco membri automatico**.
+La prima volta che viene richiamato, l'elenco dei membri mostra solo i membri accessibili per il contesto corrente. Se si preme **Ctrl**+**J** dopo, vengono visualizzati tutti i membri indipendentemente dall'accessibilità. Se viene richiamato per la terza volta, viene visualizzato un elenco di elementi del programma ancora più ampio. È possibile disattivare l'elenco dei membri nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Generale** > **Elenco membri automatico**.
 
 ![Elenco di membri di Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
 ## <a name="parameter-help"></a>Guida ai parametri
 
-Quando si digita una parentesi graffa di apertura di una chiamata di funzione o una parentesi angolare in una dichiarazione di variabile del modello di classe, l'editor visualizza una piccola finestra con i tipi di parametro per ogni overload del costruttore o della funzione. Il parametro corrente, in base della posizione del cursore, è visualizzato in grassetto. È possibile disattivare le informazioni sui parametri nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++**  > **Generale** > **Informazioni parametri**.
+Quando si digita una parentesi graffa di apertura di una chiamata di funzione o una parentesi angolare in una dichiarazione di variabile del modello di classe, l'editor visualizza una piccola finestra con i tipi di parametro per ogni overload del costruttore o della funzione. Il parametro corrente, in base della posizione del cursore, è visualizzato in grassetto. È possibile disattivare le informazioni sui parametri nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Generale** > **Informazioni parametri**.
 
 ![Guida relativa ai parametri di Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
 ## <a name="quick-info"></a>Informazioni rapide
 
-Quando si passa con il cursore del mouse su una variabile, viene visualizzata una piccola finestra inline che mostra le informazioni sul tipo e l'intestazione in cui è definito il tipo. Passare con il puntatore del mouse su una chiamata di funzione per visualizzare la firma della funzione. È possibile disattivare le informazioni rapide nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++**  > **Avanzate** > **Informazioni rapide automatiche**.
+Quando si passa con il cursore del mouse su una variabile, viene visualizzata una piccola finestra inline che mostra le informazioni sul tipo e l'intestazione in cui è definito il tipo. Passare con il puntatore del mouse su una chiamata di funzione per visualizzare la firma della funzione. È possibile disattivare le informazioni rapide nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Avanzate** > **Informazioni rapide automatiche**.
 
 ![InformazioniBase di Visual C&#43;&#43;](../ide/media/vs2015_cpp_quickinfo.png)
 
@@ -90,7 +90,7 @@ Se si modifica il progetto attivo in Android, le sottolineature cambiano:
 
 ## <a name="intellisense-for-stand-alone-files"></a>IntelliSense per file autonomi
 
-IntelliSense è disponibile anche quando si apre un singolo file all'esterno di qualsiasi progetto. È possibile abilitare o disabilitare particolari funzionalità IntelliSense nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++**  > **Avanzate**. Per configurare IntelliSense per singoli file che non fanno parte di un progetto, vedere la sezione **IntelliSense ed esplorazione per file non di progetto**.
+IntelliSense è disponibile anche quando si apre un singolo file all'esterno di qualsiasi progetto. È possibile abilitare o disabilitare particolari funzionalità IntelliSense nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Avanzate**. Per configurare IntelliSense per singoli file che non fanno parte di un progetto, vedere la sezione **IntelliSense ed esplorazione per file non di progetto**.
 
 ![Intellisense per singolo file Visual C&#43;&#43;](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
@@ -100,11 +100,11 @@ Per impostazione predefinita, IntelliSense con singolo file utilizza solo direct
 
 ## <a name="enable-or-disable-features"></a>Abilitare o disabilitare le funzionalità
 
-Per una maggiore flessibilità, tutte le funzionalità di IntelliSense possono essere abilitate o disabilitate nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++**  > **Avanzate**. La finestra di dialogo **Opzioni** è accessibile dal menu **Strumenti** sulla barra dei menu.
+Per una maggiore flessibilità, tutte le funzionalità di IntelliSense possono essere abilitate o disabilitate nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Avanzate**. La finestra di dialogo **Opzioni** è accessibile dal menu **Strumenti** sulla barra dei menu.
 
 ![Finestra di dialogo Strumenti/Opzioni](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso di IntelliSense](../ide/using-intellisense.md)
+- [Using IntelliSense](../ide/using-intellisense.md)
 - [Configure a C++ project for IntelliSense](visual-cpp-intellisense-configuration.md) (Configurare un progetto C++ per IntelliSense)

@@ -1,5 +1,5 @@
 ---
-title: "Passaggio 5: distribuzione dell'app ASP.NET Core in Azure"
+title: "Passaggio 5: Distribuzione dell'app di base dell'ASP.NET in AzureStep 5: Deploying Your ASP.NET Core App to Azure"
 description: Distribuire l'App Web di ASP.NET Core in Azure con questo video di esercitazione e per istruzioni dettagliate.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -17,13 +17,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77580025"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Passaggio 5: distribuire l'app ASP.NET Core in Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Passaggio 5: Distribuire l'app ASP.NET Core in AzureStep 5: Deploy your ASP.NET Core app to Azure
 
 Seguire questi passaggi per distribuire l'app ASP.NET Core e il relativo database in Azure.
 
@@ -35,7 +35,7 @@ _Guardare questo video e seguire le indicazioni per distribuire la prima app ASP
 
 Aprire l'app ASP.NET Core in Visual Studio 2019. L'app deve essere già configurata con EF Core e un'API Web funzionante, come descritto nel [passaggio 4 di questa serie di esercitazioni](tutorial-aspnet-core-ef-step-04.md).
 
-## <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
+## <a name="publish-to-azure-app-service"></a>Pubblicare in Servizio app di Azure
 
 Fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Pubblica**. Lasciare le impostazioni predefinite **Servizio app** e **Crea nuovo**, quindi fare clic sul pulsante **Pubblica**. Se non si ha già un account Azure, fare clic su **Crea un account Azure gratuito** e completare il breve processo di registrazione.
 
@@ -57,7 +57,7 @@ Dopo aver creato il servizio app, il sito verrà avviato in un browser. Durante 
 
 ### <a name="scalability"></a>Scalabilità
 
-È possibile esaminare le opzioni per la scalabilità dell'app e così via. La scalabilità verticale si riferisce all'aumento delle risorse assegnate a ogni istanza che ospita l'app. oppure aumentare il numero di istanze che ospitano l'app. Si può anche configurare la scalabilità automatica per l'app, in modo da aumentare automaticamente il numero di istanze usate per ospitare l'app in risposta al carico, per poi ridurle quando il carico diminuisce.
+È possibile esaminare le opzioni per aumentare ne everso l'app. La scalabilità verticale si riferisce all'aumento delle risorse assegnate a ogni istanza che ospita l'app. oppure aumentare il numero di istanze che ospitano l'app. Si può anche configurare la scalabilità automatica per l'app, in modo da aumentare automaticamente il numero di istanze usate per ospitare l'app in risposta al carico, per poi ridurle quando il carico diminuisce.
 
 ### <a name="security-and-compliance"></a>Sicurezza e conformità
 
@@ -75,7 +75,7 @@ Per impostazione predefinita, Azure prevede che la connessione di una nuova app 
 
 Passare al percorso */Games*. Dovrebbe essere possibile aggiungere un nuovo gioco e visualizzarlo nell'elenco. Passare quindi al percorso */swagger*. Dovrebbe essere possibile usare gli endpoint dell'API Web da questa posizione per verificare che anche l'API dell'app funzioni correttamente.
 
-La procedura è stata completata. Questa serie di esercitazioni video è ora completa.
+Congratulazioni! Questa serie di esercitazioni video è ora completa.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

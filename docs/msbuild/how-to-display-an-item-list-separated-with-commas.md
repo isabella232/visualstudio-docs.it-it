@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633902"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedura: Visualizzare un elenco di elementi separati da virgole
 
-Quando si lavora con gli elenchi di elementi in Microsoft Build Engine (MSBuild), a volte è utile visualizzare il contenuto degli elenchi di elementi in modo da semplificare la lettura. In alternativa, si potrebbe usare un attività che accetta un elenco di elementi separati da una stringa di separazione speciale. In entrambi i casi, è possibile specificare una stringa di separazione per un elenco di elementi.
+Quando si utilizzano elenchi di elementi in Microsoft Build Engine (MSBuild), a volte è utile visualizzare il contenuto di tali elenchi di elementi in modo semplice da leggere. In alternativa, si potrebbe usare un attività che accetta un elenco di elementi separati da una stringa di separazione speciale. In entrambi i casi, è possibile specificare una stringa di separazione per un elenco di elementi.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Separare gli elementi in un elenco con virgole
 
-Per impostazione predefinita, MSBuild usa i punti e virgola per separare gli elementi in un elenco. Si consideri ad esempio un elemento `Message` con il valore seguente:
+Per impostazione predefinita, MSBuild utilizza il punto e virgola per separare gli elementi in un elenco. Si consideri ad esempio un elemento `Message` con il valore seguente:
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-Quando l'elenco di elementi `@(TXTFile)` contiene gli elementi *App1.txt*, *App2.txt* e *App3.txt*, il messaggio è:
+Quando `@(TXTFile)` l'elenco di elementi contiene gli elementi *App1.txt*, *App2.txt*e *App3.txt*, il messaggio è il:
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 
@@ -46,7 +46,7 @@ Il separatore può essere un singolo carattere o una stringa e deve essere racch
 
 ## <a name="example"></a>Esempio
 
-In questo esempio l'attività [Exec](../msbuild/exec-task.md) esegue lo strumento findstr per trovare le stringhe di testo specificate nel file *Phrases.txt*. Nel comando findstr le stringhe di ricerca letterali sono indicate dall'opzione **-c:** e di conseguenza il separatore di elementi `-c:` viene inserito tra gli elementi nell'elenco di elementi `@(Phrase)`.
+In questo esempio l'attività [Exec](../msbuild/exec-task.md) esegue lo strumento findstr per trovare le stringhe di testo specificate nel file *Phrases.txt*. Nel comando findstr, le stringhe di ricerca letterali sono indicate dall'opzione **-c:,** quindi il separatore di elementi viene `-c:` inserito tra gli elementi nell'elenco `@(Phrase)` di elementi.
 
 Per questo esempio, la riga di comando equivalente è:
 
@@ -72,4 +72,4 @@ Per questo esempio, la riga di comando equivalente è:
 ## <a name="see-also"></a>Vedere anche
 
 - [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
-- [Items](../msbuild/msbuild-items.md)
+- [Elementi](../msbuild/msbuild-items.md)

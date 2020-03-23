@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569439"
 ---
-# <a name="options-dialog-box-environment--general"></a>Finestra di dialogo Opzioni: ambiente \> generale
+# <a name="options-dialog-box-environment--general"></a>Finestra di dialogo Opzioni: Generale ambiente \>
 
 Usare questa pagina per modificare i temi di colori, le impostazioni della barra di stato e le associazioni dell'estensione di file, tra le altre opzioni, per l'ambiente di sviluppo integrato (IDE). Per accedere alla finestra di dialogo **Opzioni**, aprire il menu **Strumenti**, scegliere **Opzioni**, aprire la cartella **Ambiente** e scegliere la pagina **Generale**. Se la pagina non viene visualizzata nell'elenco, selezionare la casella di controllo **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.
 
@@ -55,7 +55,7 @@ Questa opzione abilita o disabilita la sensibilità ai valori DPI (punti per pol
 
 ::: moniker-end
 
-**Regola automaticamente esperienza visiva in base alle prestazioni del client**
+**Regola automaticamente in base alle prestazioni del client**
 
 Specifica se Visual Studio imposta automaticamente la regolazione dell'esperienza visiva o la regolazione viene impostata in modo esplicito dall'utente. Questa regolazione può modificare la visualizzazione di colori da gradienti a colori uniformi o può limitare l'uso di animazioni nei menu o finestre a comparsa.
 
@@ -74,13 +74,13 @@ Consente l'esperienza visiva completa di Visual Studio, inclusi i gradienti e le
 
 Usa l'accelerazione grafica hardware, se disponibile, piuttosto che l'accelerazione software.
 
-## <a name="other"></a>Altro
+## <a name="other"></a>Altri
 
 **Elementi da mostrare nel menu Finestra**
 
 Consente di personalizzare il numero di finestre visualizzate nell'elenco Finestre accessibile dal menu **Finestra**. Immettere un numero compreso tra 1 e 24. Il valore predefinito è 10.
 
-**elementi negli elenchi degli ultimi file usati**
+**Elementi negli elenchi degli ultimi file usati**
 
 Consente di personalizzare il numero dei file e dei progetti usati più di recente visualizzati nel menu **File**. Immettere un numero compreso tra 1 e 24. Il valore predefinito è 10. Questa funzionalità offre un modo semplice per recuperare progetti e file usati di recente.
 
@@ -88,11 +88,11 @@ Consente di personalizzare il numero dei file e dei progetti usati più di recen
 
 Consente di visualizzare la barra di stato. Nella barra di stato, posizionata nella parte inferiore della finestra dell'IDE, sono visualizzate le informazioni sullo stato delle operazioni in corso.
 
-**Chiudi ha effetto solo sulla finestra degli strumenti attiva**
+**Il pulsante Chiudi si applica solo alla finestra degli strumenti attiva**
 
-Consente di specificare che quando si fa clic sul pulsante **Chiudi** deve essere chiusa solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è selezionata per impostazione predefinita.
+Consente di specificare che quando si fa clic sul pulsante **Chiudi** deve essere chiusa solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Per impostazione predefinita, questa opzione è selezionata.
 
-**Nascondi automaticamente ha effetto solo sulla finestra degli strumenti attiva**
+**Il pulsante Nascondi automaticamente si applica solo alla finestra degli strumenti attiva**
 
 Consente di specificare che se si fa clic sul pulsante **Nascondi automaticamente** deve essere nascosta automaticamente solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è deselezionata per impostazione predefinita.
 

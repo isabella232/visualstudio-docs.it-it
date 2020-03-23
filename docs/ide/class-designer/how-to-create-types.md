@@ -18,29 +18,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590176"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Procedura: Creare tipi usando Progettazione classi
 
 Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramma di classi. Per visualizzare i tipi esistenti, vedere [Procedura : Visualizzare i dati esistenti](how-to-view-existing-types.md).
 
-## <a name="CreateType"></a>Creare un nuovo tipo
+## <a name="create-a-new-type"></a><a name="CreateType"></a>Creare un nuovo tipo
 
-1. Nella **Casella degli strumenti** di **Progettazione classi** trascinare uno dei seguenti elementi in un diagramma classi:
+1. Nella **Casella degli strumenti**, in **Progettazione classi**, trascinare uno di questi in un diagramma classi:
 
     - **Classe** o **Classe astratta**
 
     - **Enum**
 
-    - **Interface**
+    - **Interfaccia**
 
     - **Struttura** (VB) o **Struct** (C#)
 
-    - **Delegate**
+    - **Delega**
 
     - **Modulo** (solo VB)
 
@@ -58,16 +58,16 @@ Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramm
 
     |||
     |-|-|
-    |**Per**|**Aggiungi**|
+    |**Per**|**Aggiungere**|
     |Classi, classi astratte, strutture o struct|Metodi, proprietà, campi, eventi, costruttori (metodo), distruttori (metodo) e costanti che definiscono il tipo|
     |Enumerazioni|Valori di campo che costituiscono l'enumerazione|
     |Interfacce|Metodi, proprietà ed eventi che costituiscono l'interfaccia|
     |Delegato|Parametri che definiscono il delegato|
-    |Module|Metodi, proprietà, campi, eventi, costruttori (metodo), distruttori (metodo) e costanti che definiscono il modulo|
+    |Modulo|Metodi, proprietà, campi, eventi, costruttori (metodo), distruttori (metodo) e costanti che definiscono il modulo|
 
      Vedere [Creazione di membri](creating-and-configuring-type-members.md#create-members).
 
-## <a name="CustAttributeType"></a> Applicare un attributo personalizzato a un tipo
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Applicare un attributo personalizzato a un tipo
 
 1. Fare clic sulla forma del tipo in un diagramma classi.
 
@@ -77,7 +77,7 @@ Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramm
 
    Gli attributi personalizzati vengono applicati al tipo.
 
-## <a name="CustAttributeMember"></a> Applicare un attributo personalizzato a un membro di un tipo
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Applicare un attributo personalizzato a un membro di tipoApply a custom attribute to a type member
 
 1. Fare clic sul nome del membro nella forma del relativo tipo in un diagramma classi oppure nella relativa riga nella finestra Dettagli classe.
 

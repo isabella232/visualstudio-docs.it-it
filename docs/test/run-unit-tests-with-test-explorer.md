@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278525"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
@@ -23,12 +23,12 @@ Usare Esplora test per eseguire unit test da Visual Studio o da progetti di unit
 
 Visual Studio include i framework di unit test Microsoft sia per il codice gestito sia per quello nativo. Esplora test può tuttavia eseguire anche qualsiasi framework di unit test in cui sia implementato un adattatore di Esplora test. Per altre informazioni sull'installazione di framework di unit test di terze parti, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
-**Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET, indipendentemente dal linguaggio del codice di destinazione. I progetti di codice C/C++ nativo devono essere testati tramite il framework di unit test C++. Per altre informazioni, vedere [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md).
+**Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++. Per altre informazioni, vedere [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
 
-Quando compili il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.
+Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
 
 
 ::: moniker range="vs-2017"
@@ -54,10 +54,10 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-### <a name="run-tests"></a>Esegui test
+### <a name="run-tests"></a>Esecuzione dei test
 
 ::: moniker range="vs-2017"
-Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionato. Esegui una delle operazioni seguenti:
+È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
 
@@ -70,7 +70,7 @@ Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set d
 Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte superiore della finestra **Esplora test** visualizza un'animazione. Al termine dell'esecuzione del test, la barra **Superato/Non superato** diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Puoi eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionato. Esegui una delle operazioni seguenti:
+È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
 - Per eseguire tutti i test in una soluzione, scegliere l'icona **Esegui tutto**.
 
@@ -121,11 +121,11 @@ Se il test non viene superato, il riquadro dei dettagli mostra anche le informaz
 
 - Messaggio restituito dal framework di unit test per il test.
 
-- Analisi dello stack nel momento in cui il test non è riuscito.
+- Analisi dello stack al momento del mancato superamento del test.
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Visualizzare il codice sorgente di un metodo di test
 
-Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e quindi scegliere **Apri test** dal menu di scelta rapida (tastiera: **F12**).
+Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test, quindi scegliere **Apri test** dal menu di scelta rapida (Tastiera: **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Raggruppare e filtrare l'elenco dei test
 
@@ -156,20 +156,20 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 |**Durata**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio**e **Lento**.|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Raggruppa i test in base a coppie categoria/valore definite. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
-|**Progetto**|Raggruppa i test in base al nome dei progetti.|
+|**Project**|Raggruppa i test in base al nome dei progetti.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 |Gruppo|Descrizione|
 |-|-----------------|
-|**Durata**|Raggruppa i test in base al tempo di esecuzione: **veloce**, **medio**e **lento**.|
-|**Stato**|Raggruppa i test per risultati di esecuzione: **test non**superati, **test ignorati**, **test superati**, **non eseguiti**|
-|**Framework di destinazione** | Raggruppa i test in base al framework di destinazione dei progetti |
+|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio**e **Lento**.|
+|**Stato**|Raggruppa i test in base ai risultati dell'esecuzione: **Test non superati**, **Test ignorati**, **Test superati**, **Non esecuzione**|
+|**Quadro di destinazione** | Raggruppa i test in base al framework di destinazione dei progetti |
 |**Namespace**|Raggruppa i test in base allo spazio dei nomi contenitore.|
-|**Progetto**|Raggruppa i test in base al progetto contenitore.|
-|**Classe**|Raggruppa i test in base alla classe contenitore.|
+|**Project**|Raggruppa i test in base al progetto contenitore.|
+|**Class**|Raggruppa i test in base alla classe contenitore.|
 ::: moniker-end
 
-### <a name="traits"></a>Caratteristiche
+### <a name="traits"></a>Tratti
 
 Una tratto è in genere una coppia nome/valore di una categoria, ma può anche essere una singola categoria. I tratti possono essere assegnati ai metodi identificati come metodi di test dal framework di unit test. Un framework di unit test può definire le categorie dei tratti. È possibile aggiungere valori alle categorie dei tratti per definire coppie nome/valore personalizzate per le categorie. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.
 
@@ -177,7 +177,7 @@ Una tratto è in genere una coppia nome/valore di una categoria, ma può anche e
 
 Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore di un tratto viene definita in un attributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . Il framework di test contiene anche i tratti predefiniti seguenti:
 
-|Tratto|Descrizione|
+|Caratteristica|Descrizione|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoria Owner è definita dal framework di unit test e richiede di specificare un valore di stringa relativo al proprietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoria Priority è definita dal framework di unit test e richiede di specificare un valore integer relativo alla priorità.|
@@ -192,30 +192,30 @@ Vedere [Come usare il framework di testing unità Microsoft per C++](how-to-use-
 ## <a name="create-custom-playlists"></a>Creare playlist personalizzate
 
 ::: moniker range="vs-2017"
-È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco vengono visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test**.
+È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco vengono visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test** .
 
 ![Scegliere una playlist](../test/media/ute_playlist.png)
 
-**Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** > **Nuova playlist** dal menu di scelta rapida. Salvare il file con il nome e il percorso specificati nella finestra di dialogo **Crea nuova playlist** .
+**Per creare una playlist**, scegliere uno o più test in Esplora Test. Nel menu di scelta rapida scegliere **Aggiungi all'elenco di riproduzione** > **NewPlaylist**. Salvare il file con il nome e il percorso specificati nella finestra di dialogo **Crea nuova playlist** .
 
 **Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** dal menu di scelta rapida e quindi scegliere la playlist a cui aggiungere i test.
 
-**Per aprire una playlist**, scegliere **test** > **playlist** dal menu di Visual Studio e scegliere nell'elenco delle playlist usate di recente oppure scegliere **Apri playlist** per specificare il nome e il percorso della playlist.
+**Per aprire una playlist**, scegliere **Test** > **Playlist** dal menu di Visual Studio e quindi scegliere nell'elenco delle playlist usate di recente oppure scegliere **Apri playlist** per specificare il nome e il percorso della playlist.
 
 Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test nell'elenco vengono visualizzati in una nuova scheda Esplora test. È possibile aggiungere un test a più di una playlist.
 
-**Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** > **Nuova playlist** dal menu di scelta rapida.
+**Per creare una playlist**, scegliere uno o più test in Esplora Test. Nel menu di scelta rapida scegliere **Aggiungi a playlist** > **nuova playlist**.
 
 ![Creare una playlist](../test/media/vs-2019/test-explorer-playlist-16-2.png)
 
-La playlist verrà aperta in una nuova scheda Esplora test. È possibile usare questa playlist una volta e quindi eliminarla oppure fare clic sul pulsante **Salva** sulla barra degli strumenti della finestra della playlist, quindi selezionare un nome e un percorso per salvare la playlist.
+La playlist si apre in una nuova scheda Esplora test. È possibile utilizzare questa playlist una sola volta e quindi scartarla, oppure fare clic sul pulsante **Salva** nella barra degli strumenti della finestra della playlist, quindi selezionare un nome e una posizione per salvare la playlist.
 
 ![La playlist si apre in una nuova scheda di Esplora test](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Per creare una playlist**, scegliere uno o più test in Esplora Test. Fare clic con il pulsante destro del mouse e scegliere **Aggiungi a playlist** > **Nuova playlist**.
+**Per creare una playlist**, scegliere uno o più test in Esplora Test. Fare clic con il pulsante destro del mouse e scegliere **Aggiungi alla nuova** > **playlist.**
 
 **Per aprire una playlist**, scegliere l'icona della playlist sulla barra degli strumenti di Visual Studio, quindi scegliere un file di playlist salvato in precedenza dal menu.
 ::: moniker-end
@@ -266,10 +266,10 @@ Per filtrare in base a un criterio diverso:
 > Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.
 
 ::: moniker range="vs-2017"
-|Qualificatore|Descrizione|
+|Qualifier|Descrizione|
 |-|-----------------|
-|**Tratto**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
-|**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
+|**Caratteristica**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
+|**Project**|Cerca le corrispondenze nei nomi dei progetti di test.|
 |**Messaggio di errore**|Cerca le corrispondenze nei messaggi di errore definiti dall'utente restituiti da asserzioni non riuscite.|
 |**Percorso file**|Cerca le corrispondenze nel nome file completo dei file di origine test.|
 |**Nome completo**|Cerca le corrispondenze nel nome completo di spazi dei nomi, classi e metodi di test.|
@@ -277,15 +277,15 @@ Per filtrare in base a un criterio diverso:
 |**Risultato**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Qualificatore|Descrizione|
+|Qualifier|Descrizione|
 |-|-----------------|
 |**Stato**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Nome completo**|Cerca le corrispondenze nel nome completo di spazi dei nomi, classi e metodi di test.|
-|**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
-|**Framework di destinazione**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
+|**Project**|Cerca le corrispondenze nei nomi dei progetti di test.|
+|**Quadro di destinazione**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Namespace**|Cerca le corrispondenze negli spazi dei nomi di test.|
-|**Classe**|Cerca le corrispondenze nei nomi delle classi di test.|
+|**Class**|Cerca le corrispondenze nei nomi delle classi di test.|
 ::: moniker-end
 
 Per escludere un subset dei risultati di un filtro, usare la sintassi seguente:
@@ -298,12 +298,12 @@ Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test 
 
 ## <a name="debug-and-analyze-unit-tests"></a>Eseguire il debug e l'analisi di unit test
 
-Puoi usare Espora test per avviare una sessione di debug dei test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:
+È possibile usare Esplora test per avviare una sessione di debug per i test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:
 
 1. Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.
 
     > [!NOTE]
-    > Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, imposta i punti di interruzione in tutti i metodi di test di cui vuoi eseguire il debug.
+    > Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.
 
 2. In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
 
@@ -311,7 +311,7 @@ Puoi usare Espora test per avviare una sessione di debug dei test. Esaminando co
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticare i problemi di prestazioni dei metodi di test
 
-Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, selezionare il metodo in Esplora test e quindi scegliere **Esegui profilatura del test selezionato** dal menu di scelta rapida. Vedere [report sulla profilatura della strumentazione](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
+Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, selezionare il metodo in Esplora test e quindi scegliere **Esegui profilatura del test selezionato** dal menu di scelta rapida. Vedere [Report di profilatura della strumentazione](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizzare il code coverage di unit test
 
@@ -333,7 +333,7 @@ Per eseguire il code coverage per i metodi di test in una soluzione:
 
 ::: moniker range=">=vs-2019"
 
-* Fare clic con il pulsante destro del mouse su Esplora test e scegliere **Analizza code coverage per i test selezionati**
+* Fare clic con il pulsante destro del mouse in Esplora test e selezionare **Analizza code coverage per i test selezionati**
 
 ::: moniker-end
 
@@ -343,20 +343,20 @@ Per altre informazioni, vedere [Usare la funzionalità code coverage per determi
 
 ## <a name="test-shortcuts"></a>Tasti di scelta rapida per i test
 
-I test possono essere eseguiti da Esplora test facendo clic con il pulsante destro del mouse nell'editor di codice in un test e selezionando **Esegui test** oppure usando i collegamenti predefiniti di [Esplora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) test in Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono i test o ne eseguono il debug in base a dove si trova il cursore del mouse nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
+I test possono essere eseguiti da Esplora test facendo clic con il pulsante destro del mouse nell'editor di codice in un test e selezionando **Esegui test** oppure utilizzando i collegamenti predefiniti di Esplora test in Visual Studio.Tests can be run from Test Explorer by right-clicking in the code editor on a test and selecting Run test or by using the default Test Explorer [shortcuts](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) in Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono i test o ne eseguono il debug in base a dove si trova il cursore del mouse nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
 
 |Comandi frequenti| Tasti di scelta rapida|
 |-|------------------------|
-|TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **CTRL**+**T**|
-|TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
-|TestExplorer.RunAllTests|**CTRL**+**R**, **A**|
-|TestExplorer.RepeatLastRun|**CTRL**+**R**, **L**|
+|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
+|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
+|TestExplorer.RunAllTests|**Ctrl**+**R**, **A**|
+|TestExplorer.RepeatLastRun|**Ctrl**+**R**, **L**|
 
 > [!NOTE]
 > Non è possibile eseguire un test in una classe astratta, poiché i test vengono solo definiti nelle classi astratte ma non ne viene creata l'istanza. Per eseguire i test nelle classi astratte, creare una classe che deriva dalla classe astratta.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Eseguire unit test del codice](../test/unit-test-your-code.md)
+- [Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)
 - [Eseguire uno unit test come processo a 64 bit](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [Domande frequenti su Esplora test](test-explorer-faq.md)

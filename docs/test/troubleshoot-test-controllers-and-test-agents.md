@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565955"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie di risoluzione dei problemi dei controller e degli agenti di test nei test di carico
@@ -41,7 +41,7 @@ Il problema potrebbe anche essere causato dalla mancata disponibilità di autori
 
 1. Arrestare il servizio controller di test. Al prompt dei comandi digitare `net stop vsttcontroller`.
 
-2. Aprire il file *QTController. exe. config*. Questo file si trova nella directory di installazione del controller.
+2. Aprire il file *QTController.exe.config*. Questo file si trova nella directory di installazione del controller.
 
 3. Modificare la voce per l'opzione `EqtTraceLevel` nella sezione del file relativa alla diagnostica di sistema. Il codice sarà simile a quello riportato di seguito:
 
@@ -97,7 +97,7 @@ Per correggere questo errore, è necessario associare il controller di test a un
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>Per ottenere l'indirizzo IP della scheda di rete
 
-1. Scegliere **Start** e quindi **Esegui**.
+1. Scegliere **Start**, quindi **Esegui**.
 
      Viene visualizzata la finestra di dialogo **Esegui**.
 
@@ -113,7 +113,7 @@ Per correggere questo errore, è necessario associare il controller di test a un
 
 1. Arrestare il servizio controller di test. Al prompt dei comandi digitare `net stop vsttcontroller`.
 
-2. Aprire il file *QTController. exe. config*. Il file si trova in *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Aprire il file *QTController.exe.config*. Questo file si trova in *%ProgramFiles(x86)% .*
 
 3. Aggiungere una voce per la proprietà `BindTo` alle impostazioni dell'applicazione. Specificare l'indirizzo IP della scheda di rete da associare al controller. Il codice sarà simile a quello riportato di seguito:
 

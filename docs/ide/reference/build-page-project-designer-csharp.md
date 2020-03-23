@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76923273"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
@@ -42,7 +42,7 @@ Specifica le impostazioni di configurazione da visualizzare o modificare. Le imp
 
 **Piattaforma**
 
-Specifica le impostazioni della piattaforma da visualizzare o modificare. L'impostazione predefinita è **Active (Any CPU)** (Attiva (qualsiasi CPU)). È possibile modificare la piattaforma attiva tramite **Gestione configurazione**. Per altre informazioni, vedere [How to: Create and Edit Configurations](../../ide/how-to-create-and-edit-configurations.md) (Procedura: Creare e modificare le configurazioni).
+Specifica le impostazioni della piattaforma da visualizzare o modificare. L'impostazione predefinita è **Active (Any CPU)** (Attiva (qualsiasi CPU)). È possibile modificare la piattaforma attiva tramite **Gestione configurazione**. Per ulteriori informazioni, vedere [Procedura: creare e modificare configurazioni](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Generale
 
@@ -50,7 +50,7 @@ Le opzioni seguenti consentono di configurare diverse impostazioni del compilato
 
 **Simboli di compilazione condizionale**
 
-Specifica i simboli su cui eseguire la compilazione condizionale. Separare i simboli con un punto e virgola (";"). Per altre informazioni, vedere [/define (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).
+Specifica i simboli su cui eseguire la compilazione condizionale. Separare i simboli con un punto e virgola (";"). Per ulteriori informazioni, vedere [/define (opzioni del compilatore C)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).
 
 **Definisci costante DEBUG**
 
@@ -68,9 +68,9 @@ Per altre informazioni, vedere [/platform (Opzioni del compilatore C#)](/dotnet/
 
 **Nullable**
 
-Specifica il contesto Nullable a C# livello di progetto. Questa opzione di interfaccia utente è stata introdotta in Visual Studio 16,5 ed è abilitata solo C# per i progetti che usano 8,0 o versioni successive.
+Specifica il contesto nullable a livello di progetto di C. Questa opzione dell'interfaccia utente è stata introdotta in Visual Studio 16.5 ed è abilitata solo per i progetti che utilizzano C .
 
-Per altre informazioni, vedere [contesti Nullable](/dotnet/csharp/nullable-references#nullable-contexts).
+Per ulteriori informazioni, vedere [Contesti nullable](/dotnet/csharp/nullable-references#nullable-contexts).
 
 **Preferisci 32 bit**
 
@@ -92,7 +92,7 @@ Consente la compilazione del codice che usa la parola chiave [unsafe](/dotnet/cs
 
 **Ottimizza codice**
 
-Abilita o disabilita le ottimizzazioni eseguite dal compilatore per ridurre le dimensioni del file di output e aumentarne la velocità e l'efficienza. Per altre informazioni, vedere [/optimize (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).
+Abilita o disabilita le ottimizzazioni eseguite dal compilatore per ridurre le dimensioni del file di output e aumentarne la velocità e l'efficienza. Per ulteriori informazioni, vedere [/optimize (opzioni del compilatore C)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).
 
 ## <a name="errors-and-warnings"></a>Errori e avvisi
 
@@ -102,28 +102,28 @@ Le impostazioni riportate di seguito sono usate per configurare le opzioni di er
 
 Specifica il livello da visualizzare per gli avvisi del compilatore. Per altre informazioni, vedere [/warn (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).
 
-**Non visualizzare avvisi**
+**Elimina avvisi**
 
 Blocca la capacità del compilatore di generare uno o più avvisi. Separare più numeri di avvisi tramite virgola o punto e virgola. Per altre informazioni, vedere [/nowarn (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).
 
 ## <a name="treat-warnings-as-errors"></a>Considera gli avvisi come errori
 
-Le impostazioni riportate di seguito sono usate per specificare quali avvisi considerare come errori. Selezionare una delle opzioni seguenti per indicare in quali condizioni restituire un errore se la compilazione rileva un avviso. Per altre informazioni, vedere [/warnaserror (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
+Le impostazioni riportate di seguito sono usate per specificare quali avvisi considerare come errori. Selezionare una delle opzioni seguenti per indicare in quali condizioni restituire un errore se la compilazione rileva un avviso. Per ulteriori informazioni, vedere [/warnaserror (Opzioni del compilatore C)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**None** : non considera gli avvisi come errori.
+**Nessuno** - Non considera gli avvisi come errori.
 
-**All** : considera tutti gli avvisi come errori.
+**Tutti:** considera tutti gli avvisi come errori.
 
 **Avvisi specifici** : considera gli avvisi specificati come errori. Separare più numeri di avvisi tramite virgola o punto e virgola.
 
 > [!TIP]
-> Se non si vuole che gli avvisi di analisi del codice vengano considerati come errori, vedere [domande frequenti sull'analisi del codice](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
+> Se non si desidera che gli avvisi dell'analisi del codice vengano considerati come errori, vedere [Domande frequenti sull'analisi del codice](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="output"></a>Output
 
 Le impostazioni riportate di seguito sono usate per configurare le opzioni di output del processo di compilazione.
 
-**Percorso output**
+**Percorso di output**
 
 Specifica il percorso dei file di output per la configurazione del progetto. Immettere il percorso dell'output di compilazione in questa casella, oppure scegliere il pulsante **Sfoglia** per specificare un percorso. Il percorso è relativo. Se si immette un percorso assoluto, verrà salvato come relativo. Il percorso predefinito è bin\Debug o bin\Release\\.
 
@@ -147,5 +147,5 @@ Selezionare il collegamento per informazioni sulla finestra di dialogo [Impostaz
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimenti alle proprietà di progetto](../../ide/reference/project-properties-reference.md)
-- [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/index)
+- [Project Properties Reference](../../ide/reference/project-properties-reference.md) (Riferimenti alle proprietà di progetto)
+- [Opzioni del compilatore C](/dotnet/csharp/language-reference/compiler-options/index)

@@ -7,10 +7,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
 ms.openlocfilehash: ddafa2daef34d4a23de448235ffa186c1bb27319
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947049"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
@@ -23,7 +23,7 @@ Quando un partner ottiene una competenza, sia di livello Silver che Gold, ottien
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Vantaggio di base Visual Studio quando si ottiene almeno una competenza di qualsiasi tipo
 
-| Competenze ottenute solo a livello Silver               | Almeno una competenza ottenuta a livello di oro   |
+| Competenze guadagnate solo a livello d'argento               | Almeno una competenza guadagnata a livello oro   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 sottoscrizioni di Visual Studio Enterprise                   | 10 sottoscrizioni di Visual Studio Enterprise          |
 
@@ -47,9 +47,9 @@ Indipendentemente dal numero di competenze guadagnate da un partner, il numero d
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Sottoscrizioni per i partner che acquistano Action Pack
 
-I partner con una competenza sono idonei ad acquistare il Action Pack. Ogni partner può acquistare un solo Action Pack.
+I partner con una competenza sono idonei ad acquistare l'Action Pack. Ogni partner può acquistare un solo Action Pack.
 
-Con Action Pack il partner ottiene **3 sottoscrizioni di Visual Studio Professional (MPN)** . Visual Studio Professional (MPN) è un'offerta personalizzata senza un equivalente disponibile in commercio sul mercato. Ecco cosa include:
+Con Action Pack il partner ottiene **3 sottoscrizioni di Visual Studio Professional (MPN)**. Visual Studio Professional (MPN) è un'offerta personalizzata senza un equivalente disponibile in commercio sul mercato. Ecco cosa include:
 
 - Visual Studio Professional - solo l'ultima versione
 - Windows Enterprise - solo l'ultima versione, da usare solo per sviluppo e test
@@ -57,17 +57,17 @@ Con Action Pack il partner ottiene **3 sottoscrizioni di Visual Studio Professio
 
 I sottoscrittori di Visual Studio Professional (MPN) possono anche scaricare e usare software per lo sviluppo, incluso SQL Server Developer Edition.
 
-La sottoscrizione di Visual Studio Professional (MPN) non include i vantaggi Azure DevOps Services, il credito individuale di Azure DevTest, il supporto tecnico, il training o altri vantaggi per gli abbonati disponibili con le sottoscrizioni di Visual Studio offerte commercialmente.
+La sottoscrizione di Visual Studio Professional (MPN) non include i vantaggi di Servizi DevOps di Azure, il credito individuale DevTest di Azure, il supporto tecnico, la formazione o altri vantaggi per i sottoscrittori disponibili con le sottoscrizioni di Visual Studio offerte Commercialmente.
 
 ## <a name="internal-use-only-restriction"></a>Restrizione per il solo uso interno
 
 Le regole di MPN stabiliscono che tutto il software offerto come vantaggio del programma può essere usato solo internamente. Questo vale sia per il software offerto per l'uso da parte dei singoli sottoscrittori di Visual Studio che per i vantaggi complessivi della licenza software MPN.
 
-Questa restrizione per il solo uso interno significa fondamentalmente che i partner non possono usare il software per lavoro eseguito per terze parti all'esterno della loro organizzazione. La creazione di un'app che verrà usata solo dai dipendenti partner è sufficiente, ma non è consentita la creazione di un'app che fa parte di un progetto client.
+Questa restrizione per il solo uso interno significa fondamentalmente che i partner non possono usare il software per lavoro eseguito per terze parti all'esterno della loro organizzazione. La creazione di un'app che verrà usata solo dai dipendenti partner va bene, ma la creazione di un'app che fa parte di un progetto client non è consentita.
 
 ## <a name="sign-in-required-with-visual-studio"></a>Accesso richiesto con Visual Studio
 
-Con le sottoscrizioni di Visual Studio offerte tramite MPN, l'utente con licenza deve accedere a Visual Studio usando la stessa identità o lo stesso account di accesso usato per attivare la sottoscrizione di Visual Studio. I codici Product Key non sono disponibili per sbloccare il prodotto; l'accesso è l'unica opzione per l'esecuzione di Visual Studio. Il sottoscrittore di Visual Studio può lavorare offline per un massimo di 30 giorni prima che Visual Studio smetta di funzionare. Durante l'uso online, Visual Studio aggiorna in modo invisibile all'utente lo stato della licenza periodicamente per verificare che la sottoscrizione sia ancora valida.
+Con le sottoscrizioni di Visual Studio offerte tramite MPN, l'utente con licenza deve accedere a Visual Studio usando la stessa identità o lo stesso account di accesso usato per attivare la sottoscrizione di Visual Studio. I codici Product Key non sono offerti per sbloccare il prodotto; l'accesso è l'unica opzione per l'esecuzione di Visual Studio. Il sottoscrittore di Visual Studio può lavorare offline per un massimo di 30 giorni prima che Visual Studio smetta di funzionare. Durante l'uso online, Visual Studio aggiorna in modo invisibile all'utente lo stato della licenza periodicamente per verificare che la sottoscrizione sia ancora valida.
 
 ## <a name="resources"></a>Risorse
 
@@ -78,7 +78,7 @@ Con le sottoscrizioni di Visual Studio offerte tramite MPN, l'utente con licenza
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

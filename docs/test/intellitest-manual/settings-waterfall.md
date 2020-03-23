@@ -10,15 +10,15 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591580"
 ---
 # <a name="settings-waterfall"></a>Impostazioni a cascata
 
-Il concetto di impostazioni a cascata significa che l'utente può specificare impostazioni a livello di **assembly**, **fixture** ed **esplorazione**:
+Il concetto di cascata di impostazioni significa che l'utente può specificare le impostazioni a livello **di assemblaggio,** **fissaggio**ed **esplorazione:**
 
 * Assembly: [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
 * Fixture: [PexClass](attribute-glossary.md#pexclass)
@@ -46,6 +46,6 @@ namespace MyTests
 }
 ```
 
-## <a name="got-feedback"></a>Commenti?
+## <a name="got-feedback"></a>Per eventuali commenti,
 
 Pubblicare idee e richieste di funzionalità nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

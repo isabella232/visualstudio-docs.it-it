@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565916"
 ---
 # <a name="troubleshoot-broken-references"></a>Risolvere i problemi relativi ai riferimenti interrotti
@@ -37,15 +37,15 @@ Se l'applicazione tenta di usare un riferimento interrotto, viene generato un er
 Di seguito sono elencate le soluzioni a questi problemi.
 
 > [!NOTE]
-> Nel file di progetto si fa riferimento ai file contenuti negli assembly tramite percorsi assoluti. Di conseguenza, per utenti che lavorano in un ambiente con più sviluppatori è possibile che risulti mancante un assembly a cui viene fatto riferimento tramite un percorso nell'ambiente locale. Per evitare questo tipo di errori, è consigliabile, in tali casi, aggiungere riferimenti da progetto a progetto. Per altre informazioni, vedere [Programmazione con gli assembly](/dotnet/framework/app-domains/programming-with-assemblies).
+> Nel file di progetto si fa riferimento ai file contenuti negli assembly tramite percorsi assoluti. Di conseguenza, per utenti che lavorano in un ambiente con più sviluppatori è possibile che risulti mancante un assembly a cui viene fatto riferimento tramite un percorso nell'ambiente locale. Per evitare questo tipo di errori, è consigliabile, in tali casi, aggiungere riferimenti da progetto a progetto. Per ulteriori informazioni, vedere [Programmazione con gli assembly](/dotnet/framework/app-domains/programming-with-assemblies).
 
 ## <a name="reference-path-is-incorrect"></a>Percorso di riferimento non corretto
 
-Se i progetti sono condivisi e si trovano in computer diversi, è possibile che alcuni riferimenti non vengano individuati quando un componente viene posizionato in una directory diversa in ogni computer. I riferimenti vengono archiviati con il nome del file del componente, ad esempio *Componente*. Quando si aggiunge un riferimento a un progetto, il percorso della cartella del file del componente, ad esempio *C:\Componenti*, viene aggiunto alla proprietà **ReferencePath** del progetto.
+Se i progetti sono condivisi e si trovano in computer diversi, è possibile che alcuni riferimenti non vengano individuati quando un componente viene posizionato in una directory diversa in ogni computer. I riferimenti vengono memorizzati con il nome del file del componente (ad esempio, *MyComponent*). Quando un riferimento viene aggiunto a un progetto, il percorso della cartella del file del componente (ad esempio, *C:, MyComponents*) viene aggiunto alla proprietà del progetto **ReferencePath** .
 
-Quando si apre il progetto, i file dei componenti a cui viene fatto riferimento vengono cercati nelle directory del percorso dei riferimenti. Se il progetto viene aperto in un computer in cui il componente è archiviato in una directory diversa, ad esempio *D:\Componenti*, non sarà possibile trovare il riferimento e in **Elenco attività** verrà visualizzato un errore.
+Quando si apre il progetto, i file dei componenti a cui viene fatto riferimento vengono cercati nelle directory del percorso dei riferimenti. Se il progetto viene aperto in un computer in cui il componente è memorizzato in una directory diversa, ad esempio *D:,* il riferimento non viene trovato e viene visualizzato un errore **nell'Elenco attività**.
 
-Per correggere il problema, è possibile eliminare il riferimento non valido e sostituirlo usando la finestra di dialogo **Aggiungi riferimento**. Un'altra soluzione consiste nell'uso dell'elemento **ReferencePath** nelle pagine delle proprietà del progetto e nella modifica delle cartelle visualizzate nell'elenco in modo che puntino ai percorsi corretti. La proprietà **ReferencePath** viene mantenuta per ogni utente in ogni computer. Di conseguenza, la modifica del percorso dei riferimenti non ha alcun effetto sugli altri utenti del progetto.
+Per risolvere questo problema, è possibile eliminare il riferimento interrotto e quindi sostituirlo utilizzando la finestra di dialogo **Aggiungi riferimento** . Un'altra soluzione consiste nell'uso dell'elemento **ReferencePath** nelle pagine delle proprietà del progetto e nella modifica delle cartelle visualizzate nell'elenco in modo che puntino ai percorsi corretti. La proprietà **ReferencePath** viene mantenuta per ogni utente in ogni computer. Di conseguenza, la modifica del percorso dei riferimenti non ha alcun effetto sugli altri utenti del progetto.
 
 > [!TIP]
 > Nei riferimenti da progetto a progetto problemi di questo tipo non si verificano. Per questo motivo è consigliabile usare riferimenti da progetto a progetto, se possibile, anziché riferimenti a file.
@@ -54,7 +54,7 @@ Per correggere il problema, è possibile eliminare il riferimento non valido e s
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**.
 
-   Viene visualizzata la finestra **Creazione progetti**.
+   Verrà visualizzata **la finestra di progettazione del progetto.**
 
 1. Se si usa Visual Basic, selezionare la pagina **Riferimenti** e fare clic sul pulsante **Percorsi riferimento**. Nella finestra di dialogo **Percorsi riferimento** digitare il percorso della cartella che contiene l'elemento a cui si vuole fare riferimento nel campo **Cartella** e quindi fare clic sul pulsante **Aggiungi cartella**.
 
@@ -86,7 +86,7 @@ I file possono risultare inaccessibili per molte cause, ad esempio una connessio
 
 ## <a name="com-component-is-not-installed-on-computer"></a>Componente COM non installato
 
-Se un utente ha aggiunto un riferimento a un componente COM e un altro utente tenta di eseguire il codice in un computer nel quale tale componente non è installato, verrà generato un errore relativo all'interruzione del riferimento, che sarà possibile correggere installando il componente nel computer del secondo utente. Per altre informazioni su come usare riferimenti a componenti COM nei progetti, vedere [Interoperabilità COM nelle applicazioni .NET Framework](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
+Se un utente ha aggiunto un riferimento a un componente COM e un altro utente tenta di eseguire il codice in un computer nel quale tale componente non è installato, verrà generato un errore relativo all'interruzione del riferimento, che sarà possibile correggere installando il componente nel computer del secondo utente. Per ulteriori informazioni sull'utilizzo dei riferimenti ai componenti COM nei progetti, vedere [Interoperabilità COM nelle applicazioni .NET Framework](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
 
 ## <a name="see-also"></a>Vedere anche
 

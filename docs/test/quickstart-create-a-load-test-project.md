@@ -8,10 +8,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75566410"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Guida introduttiva: Creare un progetto di test di carico
@@ -28,7 +28,7 @@ I progetti di test di carico e prestazioni Web sono disponibili solo nell'**ediz
 
 Se il componente degli strumenti per test di carico e delle prestazioni Web non è già installato, è necessario installarlo tramite il programma di installazione di Visual Studio.
 
-1. Aprire **Programma di installazione di Visual Studio** dal menu **Start** di Windows. È anche possibile accedervi in Visual Studio dalla finestra di dialogo Nuovo progetto oppure scegliendo **Strumenti** > **Ottieni strumenti e funzionalità** dalla barra dei menu.
+1. Aprire **Visual Studio Installer** dal menu **Start** di Windows. È inoltre possibile accedervi in Visual Studio dalla finestra di dialogo Nuovo progetto o scegliendo **Strumenti** > **Get Tools and Features** dalla barra dei menu.
 
 1. In **Programma di installazione di Visual Studio** scegliere la scheda **Singoli componenti** e scorrere verso il basso fino alla sezione **Debug e test**. Selezionare **Strumenti per test di carico e delle prestazioni Web**.
 
@@ -44,9 +44,9 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
 ::: moniker range="vs-2017"
 
-1. Apri Visual Studio.
+1. Aprire Visual Studio.
 
-2. Scegliere **File** > **nuovo** **progetto** > dalla barra dei menu.
+2. Scegliere **File** > **Nuovo** > **Progetto** dalla barra dei menu.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -60,9 +60,9 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
 ::: moniker range=">=vs-2019"
 
-1. Apri Visual Studio.
+1. Aprire Visual Studio.
 
-2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+2. Nella finestra di avvio scegliere **Crea un nuovo progetto.**
 
 3. Nella pagina **Crea un nuovo progetto** digitare **test web** nella casella di ricerca e quindi selezionare il modello **Progetto di test di carico e prestazioni Web \[Deprecato]** per C#. Scegliere **Avanti**.
 
@@ -70,11 +70,11 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
 ::: moniker-end
 
-   Visual Studio crea il progetto e visualizza i file in **Esplora soluzioni**. Il progetto contiene inizialmente un file di test Web denominato *WebTest1.webtest*.
+   Visual Studio crea il progetto e visualizza i file in **Esplora soluzioni.** Il progetto contiene inizialmente un file di test Web denominato *WebTest1.webtest*.
 
 ## <a name="add-a-load-test-to-the-project"></a>Aggiungere un test di carico al progetto
 
-1. Nel menu di scelta rapida o nel menu a comparsa del nodo di progetto in **Esplora soluzioni** scegliere **Aggiungi** > **Test di carico**.
+1. Dal menu di scelta rapida o dal menu di scelta rapida del nodo del progetto in **Esplora soluzioni**scegliere **Aggiungi** > **test di carico**.
 
    Viene avviata la **Creazione guidata test di carico**.
 
@@ -82,11 +82,11 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
    ![Prima pagina della Creazione guidata test di carico](media/load-test-wizard-page-1.png)
 
-1. Scegliere **Avanti** per eseguire la procedura guidata fino a raggiungere la pagina **Aggiungere i test a uno scenario di test di carico e modificare la combinazione di test**. Scegliere il pulsante **Aggiungi**.
+1. Scegliere **Avanti** per eseguire la procedura guidata fino a raggiungere la pagina **Aggiungere i test a uno scenario di test di carico e modificare la combinazione di test**. Fare clic sul pulsante **Aggiungi**.
 
    Si apre la finestra di dialogo **Aggiungi test**.
 
-1. Sotto **Test disponibili** selezionare **WebTest1** e quindi scegliere la freccia destra per spostarlo nella finestra **Test selezionati**. Fare clic sul pulsante **OK** .
+1. Sotto **Test disponibili** selezionare **WebTest1** e quindi scegliere la freccia destra per spostarlo nella finestra **Test selezionati**. Fare clic su **OK** .
 
    ![Finestra di dialogo Aggiungi test](media/add-tests-dialog-box.png)
 

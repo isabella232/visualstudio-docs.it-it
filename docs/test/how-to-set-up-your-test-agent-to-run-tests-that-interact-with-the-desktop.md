@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588967"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop
@@ -36,7 +36,7 @@ Utilizzare la procedura riportata di seguito per configurare qualsiasi agente as
 
 ## <a name="to-set-up-an-agent-to-run-as-a-process"></a>Per configurare un agente affinché venga eseguito come processo
 
-1. Per configurare l'agente di test installato per l'esecuzione come processo, scegliere **Start** > **Test Agent Configuration Tool**.
+1. Per configurare l'agente di test installato per l'esecuzione come processo, passare a **Avvia** > strumento di**configurazione agente di test**.
 
    Viene visualizzata la finestra di dialogo **Configura agente di test**.
 
@@ -60,7 +60,7 @@ Utilizzare la procedura riportata di seguito per configurare qualsiasi agente as
 5. Per assicurarsi che lo screen saver sia disabilitato in quanto potrebbe interferire con i test automatizzati che devono interagire con il desktop, selezionare **Verifica che lo screen saver sia disabilitato**.
 
    > [!WARNING]
-   > L'accesso automatico e la disabilitazione dello screen saver implicano rischi per la sicurezza. Se si abilita l'accesso automatico si consente ad altri utenti di avviare il computer e di usare l'account in grado di accedere automaticamente. Se si disabilita lo screen saver, è possibile che non venga richiesto di immettere le credenziali di un utente per accedere e sbloccare il computer. In questo modo chiunque possa raggiungere il computer fisico può accedere al sistema. Se si abilitano queste funzionalità in un computer, è consigliabile accertarsi che esso sia fisicamente protetto. Ad esempio, i computer potrebbero essere collocati in un laboratorio sicuro. La deselezione dell'opzione **Verifica che lo screen saver sia disabilitato** non abilita lo screen saver.
+   > L'accesso automatico e la disabilitazione dello screen saver implicano rischi per la sicurezza. Se si abilita l'accesso automatico si consente ad altri utenti di avviare il computer e di usare l'account in grado di accedere automaticamente. Se si disabilita lo screen saver, è possibile che non venga richiesto di immettere le credenziali di un utente per accedere e sbloccare il computer. In questo modo chiunque possa raggiungere il computer fisico può accedere al sistema. Se si abilitano queste funzionalità in un computer, è consigliabile accertarsi che esso sia fisicamente protetto. Ad esempio, i computer potrebbero essere collocati in un laboratorio sicuro. Se si deseleziona **Verifica che lo screen saver sia disattivato,** questo non abilita lo screen saver.
 
    Per modificare l'agente riconfigurandolo per l'esecuzione come servizio, è possibile utilizzare questo strumento e selezionare **Servizio**.
 
@@ -71,9 +71,9 @@ Utilizzare la procedura riportata di seguito per configurare qualsiasi agente as
 7. Per chiudere la finestra di dialogo **Riepilogo configurazione**, fare clic su **Chiudi**. Quindi scegliere ancora **Chiudi** per chiudere **Test Agent Configuration Tool**.
 
    > [!NOTE]
-   > Per gli agenti di test eseguiti come processo, nel computer è disponibile un'icona dell'area di notifica. Tale icona indica lo stato dell'agente di test. Se l'agente è in esecuzione come processo, con questo strumento è possibile avviarlo, arrestarlo o riavviarlo. Per avviare l'agente di test come processo se non è in esecuzione, scegliere **Start** > **Visual Studio** > **Agente di test di Microsoft Visual Studio**.
+   > Per gli agenti di test eseguiti come processo, nel computer è disponibile un'icona dell'area di notifica. Tale icona indica lo stato dell'agente di test. Se l'agente è in esecuzione come processo, con questo strumento è possibile avviarlo, arrestarlo o riavviarlo. Per avviare l'agente di test come processo se non è in esecuzione, scegliere **Avvia** > **Microsoft** > **Visual Studio Microsoft Visual Studio Test Agent**.
 
-   Se il controller di test per questo agente di test è registrato con Team Foundation Server, lo stato dell'agente di test in esecuzione come processo interattivo viene riprodotto nella visualizzazione **Controller** in **Centro lab** per Microsoft Test Manager. Viene elencato con un simbolo di asterisco anteposto al nome per indicare che viene eseguito come un processo interattivo. Per riavviare questo agente di test, è necessario usare lo strumento in esecuzione nel computer dell'agente di test e non la visualizzazione **Controller**.
+   Se il controller di test per questo agente di test è registrato con Team Foundation Server, lo stato dell'agente di test in esecuzione come processo interattivo viene riprodotto nella visualizzazione **Controller** in **Centro lab** per Microsoft Test Manager. Viene elencato con un simbolo di asterisco anteposto al nome per indicare che viene eseguito come un processo interattivo. Per riavviare questo agente di test, è necessario utilizzare lo strumento in esecuzione nel computer per l'agente di test e non per la visualizzazione **Controller.**
 
 ## <a name="see-also"></a>Vedere anche
 

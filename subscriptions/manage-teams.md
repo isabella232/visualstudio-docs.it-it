@@ -5,12 +5,12 @@ ms.author: lank
 manager: lank
 ms.date: 03/09/2020
 ms.topic: conceptual
-description: Informazioni sulla responsabilità degli amministratori per gestire le sottoscrizioni per i team di grandi dimensioni e per i collaboratori esterni.
+description: Informazioni sulla responsabilità degli amministratori di gestire le sottoscrizioni per i team di grandi dimensioni e per gli appaltatori esterni.
 ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947053"
 ---
 # <a name="large-teams-and-external-contractors"></a>Team di grandi dimensioni e collaboratori esterni
@@ -29,13 +29,13 @@ Ogni organizzazione è diversa, ma un elenco dei team di sviluppo tipico potrebb
 I collaboratori esterni possono disporre di licenze per interagire con l'ambiente di Visual Studio concesso in licenza. I Microsoft Certified Partner potrebbero ricevere alcune sottoscrizioni gratuite di Visual Studio per uso interno. Queste sottoscrizioni, tuttavia, non includono la copertura per attività che generano reddito, come lo sviluppo di software personalizzato per un cliente. Chiedere ai partner di inviare una lettera certificata con informazioni sulle licenze da loro fornite e quelle che occorre ottenere.
 
 ## <a name="resources"></a>Risorse
-- [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [White paper sulle licenze di Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
-- [Condizioni dei contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+- [Condizioni per i contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

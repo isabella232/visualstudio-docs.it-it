@@ -6,19 +6,19 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.openlocfilehash: f9925954083c7fe64ad29c7cfed618a84d7a6386
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984856"
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 
 Visual Studio per Mac offre due modi per aggiungere ulteriori riferimenti al progetto:
 
-![Riferimenti al progetto](media/projects-and-solutions-image10.png)
+![Riferimenti del progetto](media/projects-and-solutions-image10.png)
 
-ovvero:
+Si tratta di:
 
 * Riferimenti
 * Pacchetti NuGet (aggiunti tramite la cartella Pacchetti)

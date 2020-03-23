@@ -1,5 +1,5 @@
 ---
-title: Analizzare i dati di utilizzoC#della CPU (, Visual Basic)
+title: Analizzare i dati sull'utilizzo della CPU (Visual Basic, Visual Basic)
 description: Misurare le prestazioni delle app in C# e Visual Basic con lo strumento di diagnostica Utilizzo CPU
 ms.custom: mvc
 ms.date: 02/14/2020
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8fd77fe5fc00e8c1a3b487c93a6004b2f8cf7060
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: b4d36d9b758e0171452a909d85c799503389a1a9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558194"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550079"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Guida introduttiva: analizzare i dati di utilizzo dellaC#CPU in Visual Studio (, Visual Basic)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Guida introduttiva: Analizzare i dati sull'utilizzo della CPU in Visual Studio (C, Visual Basic)
 
 Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi di prestazioni nell'applicazione. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base. In questo caso si esamina lo strumento che identifica eventuali colli di bottiglia delle prestazioni dovuti a un uso intensivo della CPU. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
 
@@ -32,25 +32,25 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 1. Aprire Visual Studio e creare il progetto.
 
    ::: moniker range="vs-2017"
-   Dalla barra dei menu in alto scegliere **File** > **nuovo** > **progetto**.
+   Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**.
 
-   Nella finestra di dialogo **nuovo progetto** nel riquadro sinistro espandere **C#** o **Visual Basic**, quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi denominare il progetto *myprofilingapp*.
+   Nel riquadro sinistro della finestra di dialogo **Nuovo progetto,** espandere **C,** O **Visual Basic**, quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al progetto il nome *MyProfilerApp*.
 
-   Se non viene visualizzato il modello di progetto **Applicazione console (.NET Core)** , fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
+   Se non viene visualizzato il modello di progetto **Applicazione console (.NET Core)**, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Se la finestra di avvio non è aperta, scegliere **File** > **finestra Start**.
+   Se la finestra di avvio non è aperta, scegliere **Finestra di avvio** **file** > .
 
-   Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+   Nella finestra di avvio scegliere **Crea un nuovo progetto.**
 
-   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Successivamente, scegliere **C#** o **Visual Basic** dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma.
+   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Successivamente, scegliere **C ,** o **Visual Basic** dall'elenco linguaggio e quindi scegliere **Windows** dall'elenco piattaforma .
 
-   Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App console (.NET Core)** e quindi scegliere **Avanti**.
+   Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App console (.NET Core)** e **Avanti**.
 
    > [!NOTE]
    > Se il modello **App console (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
 
-   Nella finestra **Configura nuovo progetto** Digitare o immettere *myprofilingapp* nella casella **nome progetto** . Scegliere **Crea**.
+   Nella finestra **Configura il nuovo progetto digitare** o immettere *MyProfilerApp* nella casella **Nome progetto.** Scegliere quindi **Crea,** quindi Crea .
 
    ::: moniker-end
 
@@ -175,7 +175,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
     ```
 
     > [!NOTE]
-    > In Visual Basic verificare che l'oggetto di avvio sia impostato su `Sub Main` (**Proprietà** > **Applicazione** > **Oggetto di avvio**).
+    > In Visual Basic assicurarsi che l'oggetto di avvio sia impostato su `Sub Main` (**Proprietà** > oggetto di**avvio****dell'applicazione** > ).
 
 ## <a name="step-1-collect-profiling-data"></a>Passaggio 1: Raccogliere i dati di profilatura
 
@@ -191,20 +191,22 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 2. Impostare quindi un secondo punto di interruzione sulla parentesi graffa di chiusura alla fine della funzione `Main`:
 
-     ![Imposta punti di interruzione per la profilatura](../profiling/media/quickstart-cpu-usage-breakpoints.png "Impostare i punti di interruzione per la profilatura")
+     ![Impostare i punti di interruzione per la profilatura](../profiling/media/quickstart-cpu-usage-breakpoints.png "Impostare i punti di interruzione per la profilatura")
 
-    > [!TIP]
-    > Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
+    Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
 
-3. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
+    >[!TIP]
+    > Quando viene sospesa in corrispondenza di un punto di interruzione o di un'operazione di creazione del codice, è anche possibile analizzare le prestazioni utilizzando [PerfTips](../profiling/perftips.md).
 
-4. Fare clic su **Debug** > **Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
+3. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare nuovamente la finestra, fare clic su **Debug** > di**Windows** > **Mostra strumenti**di diagnostica .
+
+4. Fare clic su **Debug** > **di avvio** (o **Avvia** sulla barra degli strumenti o **F5**).
 
      Al termine del caricamento dell'applicazione viene visualizzata la vista **Riepilogo** degli strumenti di diagnostica.
 
 5. Quando il debugger è in pausa, abilitare la raccolta dei dati relativi all'utilizzo della CPU scegliendo **Registra profilo CPU**, quindi aprire la scheda **Utilizzo CPU**.
 
-     ![Strumenti di diagnostica Abilita profilatura CPU](../profiling/media/quickstart-cpu-usage-summary.png "Abilitazione profilatura CPU in Strumenti di diagnostica")
+     ![Abilitazione profilatura CPU in Strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-summary.png "Abilitazione profilatura CPU in Strumenti di diagnostica")
 
      Quando la raccolta dei dati è abilitata, il pulsante di registrazione visualizza un cerchio rosso.
 
@@ -226,7 +228,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 1. Nell'elenco delle funzioni esaminare le funzioni che eseguono il maggior numero di operazioni.
 
-     ![Scheda utilizzo CPU strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-cpu.png "DiagToolsCPUUsageTab")
+     ![Scheda Utilizzo CPU degli strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-cpu.png "DiagToolsCPUUsageTab")
 
     > [!TIP]
     > Le funzioni sono elencate in ordine a partire da quelle che svolgono la maggior parte del lavoro (non sono in ordine di chiamata). Ciò consente di identificare rapidamente le funzioni in esecuzione da più tempo.
@@ -235,7 +237,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
     Quando si fa doppio clic su una funzione viene aperta la visualizzazione **Chiamante/chiamato** nel riquadro a sinistra.
 
-    ![Visualizzazione chiamata del chiamante degli strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
+    ![Visualizzazione Chiamante/chiamato in Strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
     In questa visualizzazione la funzione selezionata viene visualizzata nell'intestazione e nella casella **Funzione corrente** (in questo esempio `GetNumber`). La funzione che ha chiamato la funzione corrente viene visualizzata a sinistra, sotto **Funzioni chiamanti**, e tutte le funzioni chiamate dalla funzione corrente sono riportate nella casella **Funzioni chiamate** sulla destra. Selezionare una delle due caselle per modificare la funzione corrente.
 

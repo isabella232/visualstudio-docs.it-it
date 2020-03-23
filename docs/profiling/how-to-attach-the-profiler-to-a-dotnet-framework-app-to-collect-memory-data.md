@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 04dcf800074476b285a07e36db5a85fa3a366585
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779129"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati di memoria tramite la riga di comando
@@ -31,47 +31,47 @@ Per terminare una sessione di profilatura, il profiler deve essere disconnesso d
 
 ### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Per connettere il profiler a un'applicazione .NET Framework in esecuzione
 
-1. Apri una finestra del prompt dei comandi.
+1. Aprire una finestra del prompt dei comandi.
 
-2. Inizializzare le variabili di ambiente di profilatura. Tipo:
+2. Inizializzare le variabili di ambiente di profilatura. Digitare:
 
-     **VSPerfClrEnv** { **/samplegc** &#124; **/samplegclife**} [ **/samplelineoff**]
+     **VSPerfClrEnv** {**/samplegc** &#124; **/samplegclife**} [**/samplelineoff**]
 
     - Le opzioni **/samplegc** e **/samplegclife** specificano se raccogliere solo i dati di allocazione della memoria o se raccogliere sia i dati di allocazione della memoria che quelli di durata degli oggetti. È necessario specificare una sola opzione.
 
         |Opzione|Descrizioni|
         |------------|------------------|
-        |**/samplegc**|Raccoglie solo i dati di allocazione della memoria.|
-        |**/samplegclife**|Raccoglie sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.|
+        |**/samplegc (inglese)**|Raccoglie solo i dati di allocazione della memoria.|
+        |**/samplegclife (esempiogvita)**|Raccoglie sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.|
 
     - L'opzione **/samplelineoff** disabilita la raccolta dei dati di numero di riga del codice sorgente.
 
-3. Avviare il profiler. Tipo:
+3. Avvia il profiler. Digitare:
 
-     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
+     **VSPerfCmd /start:esempio /output:** `OutputFile` [`Options`]
 
-   - L'opzione [/start](../profiling/start.md) **:sample** inizializza il profiler.
+   - L'opzione [/start](../profiling/start.md)**:sample** inizializza il profiler.
 
-   - L'opzione [/output](../profiling/output.md) **:** `OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione vsp).
+   - L'opzione [/output](../profiling/output.md)**:** `OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione vsp).
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.
 
      | Opzione | Descrizione |
      | - | - |
-     | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna Nome utente nella scheda Processi di Gestione attività di Windows. |
+     | [/user](../profiling/user-vsperfcmd.md) **:**:`Domain`**\\**[ ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna Nome utente nella scheda Processi di Gestione attività di Windows. |
      | [/crosssession &#124; /cs](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'identificatore di sessione è elencato nella colonna ID sessione nella scheda Processi di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
-     | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
-     | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
+     | [/wincounter](../profiling/wincounter.md) **:**`WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
+     | [/automark](../profiling/automark.md) **:**`Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
 
 4. Se necessario, avviare l'applicazione di destinazione nel modo usuale.
 
-5. Connettere il profiler all'applicazione di destinazione. Tipo:
+5. Connettere il profiler all'applicazione di destinazione. Digitare:
 
-     **VSPerfCmd**  [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md) **:** `Version`]
+     **VSPerfCmd**[/attach](../profiling/attach.md) `PID` **:**&#124;`ProcName`: [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
     - `PID` specifica l'ID del processo dell'applicazione di destinazione. `ProcessName` specifica il nome del processo. Si noti che se si specifica `ProcessName` e sono in esecuzione più processi con lo stesso nome, i risultati sono imprevedibili. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.
 
-    - **/targetclr:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione. Parametro facoltativo.
+    - **/targetclr:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più versioni del runtime vengono caricate in un'applicazione. Facoltativa.
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
 
@@ -83,9 +83,9 @@ Quando è in esecuzione l'applicazione di destinazione, è possibile controllare
 
     |Opzione|Descrizione|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato da `PID`.|
-    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** avvia la raccolta dei dati per il processo specificato da `PID` o dal nome del processo (ProcName). **/detach** interrompe la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo specifico.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato da `PID`.|
+    |[/attach](../profiling/attach.md) **:**:`PID` `ProcName`&#124;: [/detach](../profiling/detach.md) `ProcName`[**:**&#124;`PID` ]|**/attach** avvia la raccolta dei dati per il processo specificato da `PID` o dal nome del processo (ProcName). **/detach** interrompe la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo specifico.|
 
 ## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura
 
@@ -95,21 +95,21 @@ Per terminare una sessione di profilatura, il profiler deve essere disconnesso d
 
 1. Eseguire una delle operazioni seguenti per disconnettere il profiler dall'applicazione di destinazione:
 
-    - Digitare **VSPerfCmd /detach**
+    - Tipo **VSPerfCmd /detach**
 
-         oppure
+         -oppure-
 
     - Chiudere l'applicazione di destinazione.
 
-2. Arrestare il profiler. Tipo:
+2. Arrestare il profiler. Digitare:
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 
-3. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Tipo:
+3. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Digitare:
 
      **VSPerfCmd /off**
 
 ## <a name="see-also"></a>Vedere anche
 
-[Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
-[Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
+[Profilare le](../profiling/command-line-profiling-of-stand-alone-applications.md)
+visualizzazioni dati della[memoria .NET](../profiling/dotnet-memory-data-views.md) delle applicazioni autonome

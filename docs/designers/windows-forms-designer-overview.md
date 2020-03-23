@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589890"
 ---
 # <a name="windows-forms-designer-overview"></a>Panoramica di Progettazione Windows Form
@@ -37,9 +37,9 @@ Usando la finestra di progettazione è possibile:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Panoramica sui Windows Form](/dotnet/framework/winforms/windows-forms-overview)
+- [Panoramica di Windows Form](/dotnet/framework/winforms/windows-forms-overview)
 - [Controlli Windows Form](/dotnet/framework/winforms/controls/)
-- [Input dell'utente in Windows Form](/dotnet/framework/winforms/user-input-in-windows-forms)
+- [Input dell'utente in Windows FormUser input in Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Associare dati in Windows Form](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Ottimizzare le app di Windows Form](/dotnet/framework/winforms/advanced/)
 - Informazioni di riferimento sull'API <xref:System.Windows.Forms?displayProperty=fullName>

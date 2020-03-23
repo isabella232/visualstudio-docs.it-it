@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
-ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77611132"
 ---
 # <a name="known-issues-for-containers"></a>Problemi noti dei contenitori
@@ -54,7 +54,7 @@ Potrebbero verificarsi i seguenti problemi noti quando si usa un contenitore di 
 
 * IntelliTrace potrebbe non funzionare in [alcuni scenari](https://github.com/Microsoft/vstest/issues/940) all'interno di un contenitore.
 * Nelle versioni precedenti di Docker per Windows, le dimensioni dell'immagine del contenitore predefinite sono solo di 20 GB e non saranno abbastanza per Build Tools. Seguire le [istruzioni per modificare le dimensioni dell'immagine](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits) specificando minimo 127 GB.
-Per confermare un problema di spazio su disco, controllare i file di log per ulteriori informazioni. Se si esaurisce lo spazio su disco, nel file di `vslogs\dd_setup_<timestamp>_errors.log` sarà incluso quanto segue: 
+Per verificare un problema di spazio su disco, controllare i file di registro per ulteriori informazioni. Se `vslogs\dd_setup_<timestamp>_errors.log` si esaurisce lo spazio su disco, il file includerà quanto segue: 
 ```
 Pre-check verification: Visual Studio needs at least 91.99 GB of disk space. Try to free up space on C:\ or change your target drive.
 Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
@@ -63,6 +63,6 @@ Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Build Tools in un contenitore](build-tools-container.md)
-* [Esempio avanzato per i contenitori](advanced-build-tools-container.md)
+* [Installare gli strumenti di compilazione in un contenitoreInstall Build Tools into a Container](build-tools-container.md)
+* [Esempio avanzato per i contenitoriAdvanced Example for Containers](advanced-build-tools-container.md)
 * [ID dei carichi di lavoro e dei componenti di Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

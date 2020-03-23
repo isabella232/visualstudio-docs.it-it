@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75919015"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opzioni della riga di comando di VSTest.Console.exe
@@ -26,7 +26,7 @@ ms.locfileid: "75919015"
 >
 > Per eseguire test automatizzati in un computer basato su architettura ARM è necessario usare *VSTest.Console.exe*.
 
-Aprire una [prompt dei comandi per gli sviluppatori](/dotnet/framework/tools/developer-command-prompt-for-vs) per utilizzare lo strumento da riga di comando oppure è possibile trovare lo strumento in *% Program Files (x86)% \ Microsoft Visual Studio\\< version\>\\< edition\>\Common7\ide\CommonExtensions\\< Platform | Microsoft >* .
+Aprire un [prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs) per gli sviluppatori per utilizzare lo strumento da riga di comando oppur *\\ \> \\ \>\\<e è possibile trovare lo strumento in %Programmi(x86)%<<. Microsoft>*.
 
 ## <a name="general-command-line-options"></a>Opzioni generali della riga di comando
 
@@ -37,27 +37,27 @@ Nella tabella seguente vengono illustrate tutte le opzioni di *VSTest.Console.ex
 |**[*nomi file di test*]**|Esegue i test dai file specificati. Per separare i nomi di file di test, usare gli spazi.<br />Esempi: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*nome file*]**|Eseguire i test con ulteriori impostazioni, ad esempio gli agenti di raccolta dati.<br />Esempio: `/Settings:Local.RunSettings`|
 |**/Tests:[*nome test*]**|Esegue i test con nomi che contengono i valori specificati. Per fornire più valori, separarli con virgole.<br />Esempio: `/Tests:TestMethod1,testMethod2`<br />Non è possibile usare l'opzione della riga di comando **/Tests** con l'opzione della riga di comando **/TestCaseFilter**.|
-|**/Parallel**|Specifica che i test devono essere eseguiti in parallelo. Per impostazione predefinita, è possibile usare fino a tutti i core disponibili nel computer. È possibile configurare il numero di core da usare in un file di impostazioni.|
+|**/Parallelo**|Specifica che i test devono essere eseguiti in parallelo. Per impostazione predefinita, è possibile usare fino a tutti i core disponibili nel computer. È possibile configurare il numero di core da usare in un file di impostazioni.|
 |**/Enablecodecoverage**|Abilita l'adapter dei dati di diagnostica CodeCoverage nell'esecuzione dei test.<br />Usare le impostazioni predefinite se non diversamente specificato usando un file di impostazioni.|
 |**/InIsolation**|Esegue i test in un processo isolato.<br />L'isolamento rende meno probabile l'arresto del processo *vstest.console.exe* in caso di errore nei test, ma questi ultimi potrebbero essere più lenti.|
-|**/UseVsixExtensions**|Questa opzione consente al processo *vstest.console.exe* di usare o ignorare le eventuali estensioni VSIX installate nell'esecuzione dei test.<br />Questa opzione è stata deprecata. È possibile che a partire dalla prossima versione principale di Visual Studio questa opzione venga rimossa. Passare all'uso delle estensioni rese disponibili come pacchetto NuGet.<br />Esempio: `/UseVsixExtensions:true`|
+|**/UseVsixExtensions**|Questa opzione consente al processo *vstest.console.exe* di usare o ignorare le eventuali estensioni VSIX installate nell'esecuzione dei test.<br />Questa opzione è deprecata. È possibile che a partire dalla prossima versione principale di Visual Studio questa opzione venga rimossa. Passare all'uso delle estensioni rese disponibili come pacchetto NuGet.<br />Esempio: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*percorso*]**|Impone al processo *vstest.console.exe* l'uso di adattatori di test personalizzati in un percorso specificato (se disponibili) nell'esecuzione dei test.<br />Esempio: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*tipo di piattaforma*]**|Architettura della piattaforma di destinazione da usare per l'esecuzione del test.<br />I valori validi sono x86, x64 e ARM.|
 |**/Framework: [*versione framework*]**|Versione .NET di destinazione da usare per l'esecuzione dei test.<br />Esempi di valori sono `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`.<br />Se il framework di destinazione è specificato come **Framework35**, i test vengono eseguiti in "modalità di compatibilità" CLR 4.0.<br />Esempio: `/Framework:framework40`|
 |**/TestCaseFilter:[*espressione*]**|Esegue test corrispondenti all'espressione specificata.<br /><Expression\> è nel formato <property\>=<value\>[\|<Expression\>].<br />Esempio: `/TestCaseFilter:"Priority=1"`<br />Esempio: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Non è possibile usare l'opzione della riga di comando **/TestCaseFilter** con l'opzione della riga di comando **/Tests**. <br />Per informazioni sulla creazione e sull'uso delle espressioni, vedere il [filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
-|**/?**|Visualizza informazioni sull'utilizzo.|
-|**/Logger:[*uri/nome descrittivo*]**|Specifica un logger per i risultati di test.<br />Esempio: per registrare i risultati in un file di Risultati test di Visual Studio (TRX), usare<br />**/Logger: TRX**<br />**[; LogFilename =\<il valore predefinito è il nome file univoco >]**<br />Ad esempio, per pubblicare i risultati dei test in Team Foundation Server, usare TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<nome build\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=\<Il valore predefinito è "Any CPU">]**<br />**[;Flavor=\<Il valore predefinito è "Debug">]**<br />**[;RunTitle=<titolo\>]**<br />Nota: il logger TfsPublisher è deprecato in Visual Studio 2017 e non è supportato nelle versioni successive di Visual Studio. Per questi scenari, usare invece un logger personalizzato. Il logger passa alla modalità legacy.|
+|**/?**|Visualizza le informazioni sull'utilizzo.|
+|**/Logger:[*uri/nome descrittivo*]**|Specifica un logger per i risultati di test.<br />Esempio: per registrare i risultati in un file dei risultati dei test di Visual Studio (TRX), utilizzare<br />**/Logger:trx**<br />**[; LogFileName:\<il nome file predefinito è>]**<br />Ad esempio, per pubblicare i risultati dei test in Team Foundation Server, usare TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<nome build\>;**<br />**TeamProject=<project name\>;**<br />**[; Piattaforma:\<il valore predefinito è "Qualsiasi CPU">]**<br />**[; Sapore:\<valore predefinito per "Debug">]**<br />**[;RunTitle=<titolo\>]**<br />Nota: il logger TfsPublisher è deprecato in Visual Studio 2017 e non è supportato nelle versioni successive di Visual Studio. Per questi scenari, usare invece un logger personalizzato. Questo logger passa il logger in modalità legacy.|
 |**/ListTests:[*nome file*]**|Elenca i test individuati dal contenitore di test specificato.|
 |**/ListDiscoverers**|Elenca gli agenti di individuazione test installati.|
 |**/ListExecutors**|Elenca gli executor di test installati.|
 |**/ListLoggers**|Elenca i logger di test installati.|
 |**/ListSettingsProviders**|Elenca i provider di impostazioni test installati.|
-|**/Blame**|Monitora i test durante l'esecuzione e, se il processo host del test si arresta in modo anomalo, genera i nomi dei test nella sequenza di esecuzione fino al test specifico che era in esecuzione al momento dell'arresto anomalo. Questo output semplifica l'isolamento del test che causa l'errore e l'ulteriore diagnosi. [Altre informazioni](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
+|**/Blame**|Monitora i test durante l'esecuzione e, se il processo host del test si arresta in modo anomalo, genera i nomi dei test nella sequenza di esecuzione fino al test specifico che era in esecuzione al momento dell'arresto anomalo. Questo output semplifica l'isolamento del test che causa l'errore e l'ulteriore diagnosi. [Ulteriori informazioni](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nome file*]**|Scrive i log di traccia di diagnostica nel file specificato.|
 |**/ResultsDirectory:[*percorso*]**|Directory dei risultati dei test che verrà creata nel percorso specificato, se non esistente.<br />Esempio: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*ID processo padre*]**|ID del processo padre responsabile dell'avvio del processo corrente.|
 |**/Port:[*porta*]**|La porta per la connessione socket e la ricezione dei messaggi di evento.|
-|**/Collect:[*nome descrittivo agente di raccolta dati*]**|Abilita l'agente di raccolta dati per l'esecuzione dei test. [Altre informazioni](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md).|
+|**/Collect:[*nome descrittivo agente di raccolta dati*]**|Abilita l'agente di raccolta dati per l'esecuzione dei test. [Ulteriori informazioni](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md).|
 
 > [!TIP]
 > Opzioni e valori non applicano la distinzione tra maiuscole e minuscole.

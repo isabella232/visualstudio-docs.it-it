@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c1b96e9a73b488ba9c9920e8ea43e27f78f67ed
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777673"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Utilizzo elevato della reflection
@@ -27,12 +27,12 @@ ms.locfileid: "74777673"
 |-|-|
 |ID regola|DA0012|
 |Category|Uso di .NET Framework|
-|Metodi di profilatura|Campionamento|
+|Metodi di profilatura|campionamento|
 |Message|È possibile che si stia usando la reflection in modo eccessivo. L'operazione è dispendiosa.|
 |Tipo regola|Avviso|
 
 ## <a name="cause"></a>Causa
- Le chiamate ai metodi System.Reflection, ad esempio InvokeMember e GetMember, o ai metodi Type, ad esempio MemberInvoke, costituiscono una percentuale significativa dei dati di profilatura. Quando è possibile, è consigliabile sostituire questi metodi con associazione anticipata ai metodi di assembly dipendenti.
+ Le chiamate ai metodi System.Reflection, ad esempio InvokeMember e GetMember, o ai metodi Type, ad esempio MemberInvoke, costituiscono una percentuale significativa dei dati di profilatura. Ove possibile considerare la possibilità di sostituire questi metodi con associazione anticipata ai metodi di assembly dipendenti.
 
 ## <a name="rule-description"></a>Descrizione della regola
  La reflection è una funzionalità flessibile di .NET Framework che può essere usata per eseguire l'associazione tardiva dell'applicazione a un assembly di runtime dipendente oppure per creare ed eseguire dinamicamente nuovi tipi durante il runtime. Tuttavia, queste tecniche possono ridurre le prestazioni se vengono usate frequentemente o chiamate in cicli ridotti.

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 27f030fb73629172e0b5a2d5d4cb27cf186bb69f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594266"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installare agenti di test e test controller
@@ -26,7 +26,7 @@ Potrebbe anche essere utile valutare se è preferibile usare la [gestione di com
 
 La tabella seguente illustra i requisiti di sistema per l'installazione dell'agente di test o del test controller per Visual Studio:
 
-| Elemento | Requisiti di |
+| Elemento | Requisiti |
 | ---- | ------------ |
 | **Agente** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />Windows Server 2012 R2 |
 | **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />Windows Server 2012 R2 |
@@ -44,7 +44,7 @@ Questi programmi di installazione sono disponibili come file ISO per facilitarne
 
 È possibile combinare diverse versioni di TFS, Microsoft Test Manager, test controller e agente di test come indicato nella tabella seguente:
 
-| TFS | Microsoft Test Manager con Lab Center | Controller | Agente di |
+| TFS | Microsoft Test Manager con Lab Center | Controller | Agente |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017: aggiornamento dalla versione 2015 o nuova installazione | 2017 | 2017 | 2017 |
 | 2017: aggiornamento dalla versione 2015 o nuova installazione | 2017 | 2013 Update 5 | 2013 Update 5 |
@@ -68,4 +68,4 @@ La tabella seguente visualizza gli scenari supportati da Agents per Visual Studi
 | Flusso di lavoro compilazione, distribuzione e test in Visual Studio | Gli utenti possono usare una [pipeline di compilazione](/azure/devops/pipelines/index?view=vsts) (non una compilazione XAML) per gli scenari di compilazione, distribuzione e test in TFS. |
 | Test di carico (test delle prestazioni) usando computer remoti in posizioni locali | Per eseguire i test di carico in locale, usare Test Controller e Test Agents 2013 Update 5. |
 | Esecuzione remota di test automatizzati da Microsoft Test Manager usando un ambiente lab | Attualmente non è disponibile nessuna alternativa per questo scenario. È consigliabile usare l'attività Esegui test funzionali nelle definizioni di compilazione e di versione (non in una compilazione XAML) per eseguire i test in modalità remota. |
-| Sviluppatori che eseguono test remoti in Visual Studio | Non è più supportato. |
+| Sviluppatori che eseguono test remoti in Visual Studio | Non più supportata. |

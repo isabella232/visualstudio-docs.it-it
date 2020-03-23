@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915592"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302574"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto di Azure in Visual Studio per l'uso di più configurazioni del servizio
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto Azure di Visual Studio per l'uso di più configurazioni del servizio
 
 Un progetto di servizio cloud di Azure in Visual Studio include tre file di configurazione: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` e `ServiceConfiguration.Cloud.cscfg`:
 
@@ -33,15 +33,15 @@ Per informazioni sugli schemi sottostanti per i file di definizione e di configu
 
 ## <a name="configuration-page"></a>Pagina Configurazione
 
-### <a name="service-configuration"></a>Configurazione del servizio
+### <a name="service-configuration"></a>Service Configuration
 
 Consente di selezionare il file `ServiceConfiguration.*.cscfg` interessato dalle modifiche. Per impostazione predefinita, sono disponibili le varianti Local e Cloud ed è possibile usare il comando **Gestisci** per copiare, rinominare e rimuovere i file di configurazione. Questi file vengono aggiunti al progetto di servizio cloud e vengono visualizzati in **Esplora soluzioni**. Tuttavia, la ridenominazione o la rimozione di configurazioni può essere eseguita solo da questo controllo.
 
-### <a name="instances"></a>Istanze di
+### <a name="instances"></a>Istanze
 
 Impostare la proprietà **Conteggio istanze** sul numero di istanze che il servizio deve eseguire per questo ruolo.
 
-Impostare la proprietà delle **Dimensioni macchina virtuale** su **Molto piccola**, **Piccola**, **Media**, **Grande**o **Molto grande**.  Per altre informazioni, vedere [Dimensioni dei servizi cloud](/azure/cloud-services/cloud-services-sizes-specs).
+Impostare la proprietà delle **Dimensioni macchina virtuale** su **Molto piccola**, **Piccola**, **Media**, **Grande**o **Molto grande**.  Per ulteriori informazioni, vedere Dimensioni per i [servizi cloud](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Startup Action (Azione di avvio) (solo ruolo Web)
 
@@ -53,7 +53,7 @@ Se è già stato aggiunto un endpoint HTTPS, l'opzione Endpoint HTTPS è abilita
 
 ### <a name="diagnostics"></a>Diagnostica
 
-Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il progetto di servizio cloud di Azure e l'account di archiviazione sono impostati per usare l'emulatore di archiviazione locale. Quando si è pronti a eseguire la distribuzione in Azure, è possibile selezionare il pulsante del generatore ( **…** ) per usare in sostituzione l’archiviazione di Azure. È possibile trasferire i dati di diagnostica nell'account di archiviazione a richiesta o a intervalli pianificati automaticamente. Per altre informazioni sulla diagnostica di Azure, vedere [Abilitazione della diagnostica nei servizi cloud e nelle macchine virtuali di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il progetto di servizio cloud di Azure e l'account di archiviazione sono impostati per usare l'emulatore di archiviazione locale. Quando si è pronti a eseguire la distribuzione in Azure, è possibile selezionare il pulsante del generatore (**…**) per usare in sostituzione l’archiviazione di Azure. È possibile trasferire i dati di diagnostica nell'account di archiviazione a richiesta o a intervalli pianificati automaticamente. Per altre informazioni sulla diagnostica di Azure, vedere [Abilitazione della diagnostica nei servizi cloud e nelle macchine virtuali di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Pagina Impostazioni
 
@@ -70,7 +70,7 @@ Una stringa di connessione è un'impostazione che fornisce informazioni di conne
 
 Per creare una stringa di connessione, selezionare **Aggiungi impostazione** e impostare **Tipo** su "Stringa di connessione".
 
-Per le stringhe di connessione nuove o esistenti, selezionare **...** * a destra del campo **Valore** per aprire la finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**:
+Per le stringhe di connessione nuove o esistenti, selezionare **... *** a destra del campo **Valore** per aprire la finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**:
 
 1. In **Connetti con** scegliere l'opzione **Sottoscrizione** per selezionare un account di archiviazione da una sottoscrizione. Visual Studio otterrà quindi le credenziali dell'account di archiviazione automaticamente dal file `.publishsettings`.
 1. Se si seleziona **Credenziali immesse manualmente**, è possibile specificare il nome e la chiave dell'account direttamente, usando le informazioni presenti nel portale di Azure. Per copiare la chiave dell'account:

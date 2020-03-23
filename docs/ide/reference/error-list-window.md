@@ -1,5 +1,5 @@
 ---
-title: finestra Elenco errori
+title: Finestra Elenco errori
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569663"
 ---
-# <a name="error-list-window"></a>finestra Elenco errori
+# <a name="error-list-window"></a>Finestra Elenco errori
 
 > [!NOTE]
 > L'**elenco errori** consente di visualizzare informazioni su un messaggio di errore specifico. È possibile copiare il testo della stringa di errore o il numero di errore nella finestra **Output**. Per visualizzare la finestra **Output**, premere **Ctrl**+**Alt**+**O**. Vedere [Finestra di output](../../ide/reference/output-window.md).
@@ -41,7 +41,7 @@ La finestra **Elenco errori** consente di eseguire le attività seguenti:
 
 - Cercare i termini specifici e l'ambito della ricerca solo nel progetto corrente o nel documento.
 
-Per visualizzare la finestra **Elenco errori**, scegliere **Visualizza** > **Elenco errori** o premere **Ctrl**+ **\\** +**E**.
+Per visualizzare l'Elenco **errori**, scegliere **Visualizza** > **elenco errori**o premere **CTRL**+**\\**+**E**.
 
 È possibile scegliere le schede **Errori**, **Avvisi** e **Messaggi** per visualizzare diversi livelli di informazioni.
 
@@ -66,19 +66,19 @@ Se ai risultati della ricerca è applicato un filtro, il nome del filtro viene v
 
 L'elenco sul lato destro della barra degli strumenti specifica se visualizzare errori di compilazione (errori risultanti da un'operazione di compilazione) o di IntelliSense (errori rilevati prima di eseguire una compilazione) o di entrambi.
 
-## <a name="search"></a>Cerca
+## <a name="search"></a>Ricerca
 
 Usare la casella di testo **Elenco errori di ricerca** sul lato destro della barra degli strumenti **Elenco errori** per trovare errori specifici nell'elenco errori. È possibile cercare una colonna visibile nell'elenco errori e i risultati di ricerca vengono sempre ordinati in base alla colonna con priorità di ordinamento anziché alla query o al filtro applicato. Se si sceglie il tasto **Esc** mentre è attivo l'**Elenco errori**, è possibile cancellare il termine di ricerca e i risultati di ricerca filtrati. È anche possibile fare clic sulla **X** sul lato destro della casella di testo per cancellare il contenuto.
 
-## <a name="save"></a>Salva
+## <a name="save"></a>Salvare
 
 È possibile copiare l'elenco errori e salvarlo in un file. Selezionare gli errori da copiare e fare clic con il pulsante destro del mouse sulla selezione, quindi nel menu di scelta rapida selezionare **Copia**. È quindi possibile incollare gli errori in un file. Se si incollano gli errori in un foglio di calcolo di Excel, i campi vengono visualizzati come diverse colonne.
 
-## <a name="ui-element-list"></a>Elenco di elementi dell'interfaccia utente
+## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente
 
-Severity
+Gravità
 
-Consente di visualizzare i diversi tipi di voci dell'**Elenco errori** (**Errore**, **Messaggio**, **Avviso**, **Avviso (attivo)** , **Avviso (inattivo)** .
+Consente di visualizzare i diversi tipi di voci dell'**Elenco errori** (**Errore**, **Messaggio**, **Avviso**, **Avviso (attivo)**, **Avviso (inattivo)**.
 
 Codice
 
@@ -88,7 +88,7 @@ Descrizione
 
 Visualizza il testo della voce.
 
-Progetto di
+Project
 
 Visualizza il nome del progetto corrente.
 
@@ -96,6 +96,6 @@ File
 
 Visualizza il nome del file.
 
-Riga
+Grafico a linee
 
 Visualizza la riga in cui si è verificato l'errore.

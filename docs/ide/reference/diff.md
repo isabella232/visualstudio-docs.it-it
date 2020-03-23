@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570089"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
@@ -33,21 +33,21 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 - *SourceFile*
 
-  Richiesto. Percorso completo e nome del primo file da confrontare.
+  Obbligatorio. Percorso completo e nome del primo file da confrontare.
 
 - *TargetFile*
 
-  Richiesto. Percorso completo e nome del secondo file da confrontare.
+  Obbligatorio. Percorso completo e nome del secondo file da confrontare.
 
 - *SourceDisplayName*
 
-  Parametro facoltativo. Nome visualizzato del primo file.
+  Facoltativa. Nome visualizzato del primo file.
 
 - *TargetDisplayName*
 
-  Parametro facoltativo. Nome visualizzato del secondo file.
+  Facoltativa. Nome visualizzato del secondo file.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Se un'istanza dell'IDE è già aperta, il confronto dei file viene visualizzato in una scheda nell'IDE corrente.
 

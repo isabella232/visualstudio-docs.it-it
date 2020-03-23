@@ -8,21 +8,21 @@ ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
 ms.openlocfilehash: 2ccef07a2889f66df3e7f217ea292b61ffc0008f
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75405470"
 ---
-# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Risoluzione dei problemi: l'aggiornamento contiene errori durante il recupero delle informazioni
+# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Risoluzione dei problemi: Updater ha errori durante il recupero delle informazioni
 
 In rare occasioni può essere visualizzato il messaggio di errore "Si è verificato un errore durante il recupero delle informazioni sugli aggiornamenti" quando si tenta di [aggiornare Visual Studio per Mac](update.md). In questo caso, provare i passaggi seguenti per risolvere il problema:
 
-- Controllare la connessione Internet. Un'interruzione della connessione è la causa più comune di questo errore.
+- Verificare la connessione Internet. Un'interruzione della connessione è la causa più comune di questo errore.
   - Se il download di un componente ha esito negativo, è possibile fare clic sul pulsante Riprova accanto al nome del componente per ritentare il download.
 - Riavviare l'IDE.
 - Se si continua a visualizzare questo messaggio di errore, è anche possibile provare a eseguire l'aggiornamento usando il programma di installazione, se il file con estensione **dmg** è ancora disponibile nel computer, oppure è possibile scaricarlo da [visualstudio.com](https://visualstudio.microsoft.com/vs/mac/)
   - Il programma di installazione aggiornerà i componenti installati nel computer.
   - Eseguendo di nuovo il programma di installazione sarà anche possibile installare eventuali componenti mancanti, non installati in precedenza.
 - È inoltre possibile provare a cancellare i download memorizzati nella cache eliminando il file che si trova in `~/Library/Caches/VisualStudio/8.0/TempDownload/index.xml`.
-- Se si utilizza una versione precedente di Visual Studio per Mac, è possibile che nella directory `VisualStudio` siano presenti altri numeri di versione. Eliminare anche il file di `index.xml` in questi percorsi.
+- Se si utilizza una versione precedente di Visual Studio per Mac, `VisualStudio` è possibile che nella directory siano disponibili altri numeri di versione. Eliminare `index.xml` anche il file in questi percorsi.

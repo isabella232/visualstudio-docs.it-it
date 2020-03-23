@@ -16,36 +16,36 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78865323"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 
-Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività nell'elenco seguente sono incluse in MSBuild. Quando si C++ installa il carico di lavoro, sono disponibili attività aggiuntive che vengono usate C++ per compilare i progetti. Per ulteriori informazioni, vedere [ C++ attività](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Le attività forniscono il codice che viene eseguito durante il processo di compilazione. The tasks in the following list are included with MSBuild. Quando viene installato il carico di lavoro di C, sono disponibili attività aggiuntive che vengono utilizzate per compilare i progetti in C. Per ulteriori informazioni, vedere Attività di [C.](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)
 
 Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività dispone anche dei parametri seguenti:
 
 | Parametro | Descrizione |
 |-------------------| - |
-| `Condition` | Parametro `String` facoltativo.<br /><br /> Espressione `Boolean` utilizzata dal motore MSBuild per determinare se questa attività verrà eseguita. Per informazioni sulle condizioni supportate da MSBuild, vedere [condizioni](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [Target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori delle attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [Procedura: Ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `Condition` | Parametro `String` facoltativo.<br /><br /> Espressione `Boolean` utilizzata dal motore MSBuild per determinare se questa attività verrà eseguita. Per informazioni sulle condizioni supportate da MSBuild, vedere [Condizioni](../msbuild/msbuild-conditions.md). |
+| `ContinueOnError` | Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, le attività successive nell'elemento [Target](../msbuild/target-element-msbuild.md) e nella compilazione continuano a essere eseguite e tutti gli errori dell'attività vengono considerati come avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per ulteriori informazioni, vedere [Procedura: ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Classe di base Task](../msbuild/task-base-class.md)
 
- Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Utilities.Task>. Non può essere utilizzato direttamente.
+ Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Utilities.Task>. Non deve essere utilizzato direttamente.
 
-- [Classe di base TaskExtension](../msbuild/taskextension-base-class.md)
+- [Classe base TaskExtension](../msbuild/taskextension-base-class.md)
 
- Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>. Non può essere utilizzato direttamente.
+ Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>. Non deve essere utilizzato direttamente.
 
-- [Classe di base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md)
+- [ToolTaskExtension (classe di base)](../msbuild/tooltaskextension-base-class.md)
 
- Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>. Non può essere utilizzato direttamente.
+ Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>. Non deve essere utilizzato direttamente.
 
 - [Attività AL (Assembly Linker)](../msbuild/al-assembly-linker-task.md)
 
@@ -53,7 +53,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività AspNetCompiler](../msbuild/aspnetcompiler-task.md)
 
- Esegue il wrapping di *aspnet_compiler.exe*, un'utilità per la precompilazione di applicazioni ASP.NET.
+ Esegue il wrapping *di aspnet_compiler.exe*, un'utilità per precompilare ASP.NET applicazioni.
 
 - [Attività AssignCulture](../msbuild/assignculture-task.md)
 
@@ -79,31 +79,31 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Converte un percorso relativo, o un riferimento, in un percorso assoluto.
 
-- [Attività Copy](../msbuild/copy-task.md)
+- [Copia attività](../msbuild/copy-task.md)
 
  Copia i file in una nuova posizione.
 
-- [Attività CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)
+- [Attività CreateCSharpManifestResourceNameCreateCSharpManifestResourceName task](../msbuild/createcsharpmanifestresourcename-task.md)
 
- Crea un C#nome di manifesto di tipo da un nome di file con *estensione resx* specificato o da un'altra risorsa.
+ Crea un nome di manifesto di tipo C, da un nome di file *resx* specificato o da un'altra risorsa.
 
 - [Attività CreateItem](../msbuild/createitem-task.md)
 
  Popola le raccolte di elementi dagli elementi di input, consentendo la copia degli elementi da un elenco a un altro.
 
-- [Attività CreateProperty](../msbuild/createproperty-task.md)
+- [CreateProperty (attività)](../msbuild/createproperty-task.md)
 
  Popola le proprietà dai valori di input, consentendo la copia di tali valori da una proprietà o una stringa a un'altra.
 
 - [Attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- Crea un nome di manifesto di tipo Visual Basic da un nome di file con *estensione resx* specificato o da un'altra risorsa.
+ Crea un nome di manifesto di tipo Visual Basic da un determinato nome di file *RESX* o da un'altra risorsa.
 
 - [Attività Csc](../msbuild/csc-task.md)
 
  Richiama il compilatore Visual C# per creare librerie eseguibili a collegamento dinamico o moduli di codice.
 
-- [Attività Delete](../msbuild/delete-task.md)
+- [Elimina attività](../msbuild/delete-task.md)
 
  Elimina i file specificati.
 
@@ -111,7 +111,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Scarica un file nella posizione specificata.
 
-- [Attività Error](../msbuild/error-task.md)
+- [attività Error](../msbuild/error-task.md)
 
  Interrompe una compilazione e registra un errore in base a un'istruzione condizionale valutata.
 
@@ -131,7 +131,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Determina gli elementi di una raccolta specificata presenti nella cartella indicata e in tutte le relative sottocartelle.
 
-- [Attività FormatUrl task](../msbuild/formaturl-task.md)
+- [Attività FormatUrl](../msbuild/formaturl-task.md)
 
  Converte un URL in un formato URL corretto.
 
@@ -143,7 +143,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Genera un manifesto dell'applicazione ClickOnce o un manifesto nativo.
 
-- [Attività GenerateBootstrapper](../msbuild/generatebootstrapper-task.md)
+- [GenerateBootstrapper (attività)](../msbuild/generatebootstrapper-task.md)
 
  Consente di rilevare, scaricare e installare automaticamente un'applicazione e i relativi prerequisiti.
 
@@ -151,9 +151,9 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Genera un manifesto di distribuzione ClickOnce.
 
-- [Attività GenerateResource](../msbuild/generateresource-task.md)
+- [GenerateResource (attività)](../msbuild/generateresource-task.md)
 
- Converte i file con estensione *txt* e *resx* in file binari di Common Language Runtime con estensione *resources*.
+ Converte i file *con estensione txt* e *resx* in file *con estensione resources* binari di Common Language Runtime.
 
 - [Attività GenerateTrustInfo](../msbuild/generatetrustinfo-task.md)
 
@@ -181,23 +181,23 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività LC](../msbuild/lc-task.md)
 
- Genera un file con estensione *license* da un file con estensione *licx*.
+ Genera un file *con estensione license* da un file con estensione *llicx.*
 
 - [Attività MakeDir](../msbuild/makedir-task.md)
 
  Crea directory e, se necessario, eventuali directory padre.
 
-- [Attività Message](../msbuild/message-task.md)
+- [Attività messaggio](../msbuild/message-task.md)
 
  Registra un messaggio durante una compilazione.
 
-- [Attività Move](../msbuild/move-task.md)
+- [Sposta attività](../msbuild/move-task.md)
 
  Sposta i file in una nuova posizione.
 
-- [Attività MSBuild](../msbuild/msbuild-task.md)
+- [MSBuild (attività)](../msbuild/msbuild-task.md)
 
- Compila i progetti MSBuild da un altro progetto MSBuild.
+ Compila progetti MSBuild da un altro progetto MSBuild.
 
 - [Attività ReadLinesFromFile](../msbuild/readlinesfromfile-task.md)
 
@@ -221,7 +221,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - Attività ResGen
 
- Obsoleto. Usare l'[attività GenerateResource](../msbuild/generateresource-task.md) per convertire i file con estensione *txt* e *resx* in file binari di Common Language Runtime con estensione *resources* e viceversa.
+ Obsoleto. Utilizzare [l'attività GenerateResource](../msbuild/generateresource-task.md) per convertire file *con estensione txt* e *resx* in e da file *con estensione resources* binari di Common Language Runtime.
 
 - [Attività ResolveAssemblyReference](../msbuild/resolveassemblyreference-task.md)
 
@@ -229,7 +229,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività ResolveComReference](../msbuild/resolvecomreference-task.md)
 
- Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con estensione *tlb* e risolve tali librerie in percorsi sul disco.
+ Accetta un elenco di uno o più nomi di librerie dei tipi o file *con estensione tlb* e risolve tali librerie dei tipi in percorsi su disco.
 
 - [Attività ResolveKeySource](../msbuild/resolvekeysource-task.md)
 
@@ -239,7 +239,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Risolve gli elementi seguenti del processo di compilazione nei file per la generazione del manifesto: elementi compilati, dipendenze, satelliti, contenuto, simboli di debug e documentazione.
 
-- [Attività ResolveNativeReference](../msbuild/resolvenativereference-task.md)
+- [ResolveNativeReference (attività)](../msbuild/resolvenativereference-task.md)
 
  Risolve i riferimenti nativi.
 
@@ -255,7 +255,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Consente di firmare il file specificato usando il certificato specificato.
 
-- [Attività Touch](../msbuild/touch-task.md)
+- [Attività di tocco](../msbuild/touch-task.md)
 
  Imposta l'ora di accesso e di modifica dei file.
 
@@ -263,7 +263,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Annulla la registrazione degli assembly specificati ai fini dell'interoperabilità COM.
 
-- [Attività Unzip](../msbuild/unzip-task.md)
+- [Decomprimere l'attività](../msbuild/unzip-task.md)
 
  Decomprime un archivio con estensione *zip* nella posizione specificata.
 
@@ -279,7 +279,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Verifica che un file corrisponda all'hash file previsto.
 
-- [Attività Warning](../msbuild/warning-task.md)
+- [Attività di avviso](../msbuild/warning-task.md)
 
  Registra un avviso durante una compilazione in base a un'istruzione condizionale valutata.
 
@@ -295,7 +295,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Restituisce valori come specificato dalla query XPath da un file XML.
 
-- [XmlPoke Task](../msbuild/xmlpoke-task.md)
+- [Attività XmlPoke](../msbuild/xmlpoke-task.md)
 
  Imposta i valori come specificato da una query XPath in un file XML.
 
@@ -303,7 +303,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Trasforma un input XML tramite *Extensible Stylesheet Language Transformation* (XSLT) o un XSLT compilato e gli output in un dispositivo o file di output.
 
-- [Attività ZipDirectory](../msbuild/zipdirectory-task.md)
+- [Attività di zipDirectory](../msbuild/zipdirectory-task.md)
 
  Crea un archivio con estensione *zip* dal contenuto di una directory.
 

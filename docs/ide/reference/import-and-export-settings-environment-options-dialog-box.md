@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 805ca35d5ff9907bd9ff8907f706ade346b3010e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595540"
 ---
-# <a name="options-dialog-box-environment--import-and-export-settings"></a>Finestra di dialogo Opzioni: ambiente \> impostazioni di importazione ed esportazione
+# <a name="options-dialog-box-environment--import-and-export-settings"></a>Finestra di dialogo Opzioni: Impostazioni di importazione ed esportazione dell'ambiente \>
 
 Usare questa pagina per specificare dove viene salvato il file delle impostazioni utente. Per altre informazioni sulle impostazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78865375"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Attività inline di MSBuild con RoslynCodeTaskFactory
@@ -22,7 +22,7 @@ ms.locfileid: "78865375"
 Analogamente all'attività [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), l'attività RoslynCodeTaskFactory usa i compilatori Roslyn multipiattaforma per generare assembly di attività in memoria da usare come attività inline.  Le attività RoslynCodeTaskFactory, destinate a .NET Standard, possono funzionare nei runtime di .NET Framework e .NET Core, nonché in altre piattaforme quali Linux e Mac OS.
 
 >[!NOTE]
->RoslynCodeTaskFactory è disponibile solo in MSBuild 15.8 e versioni successive. Le versioni di MSBuild seguono le versioni di Visual Studio, quindi RoslynCodeTaskFactory è disponibile in Visual Studio 15,8 e versioni successive.
+>RoslynCodeTaskFactory è disponibile solo in MSBuild 15.8 e versioni successive. Le versioni di MSBuild seguono le versioni di Visual Studio, pertanto RoslynCodeTaskFactory è disponibile in Visual Studio 15.8 e versioni successive.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Struttura di un'attività inline con RoslynCodeTaskFactory
 
@@ -56,7 +56,7 @@ Analogamente all'attività [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)
 
 Gli elementi rimanenti dell'attività `DoNothing` sono vuoti e vengono specificati per illustrare l'ordine e la struttura di un'attività inline. Un esempio più concreto è riportato più avanti in questo argomento.
 
-- L'elemento `ParameterGroup` è facoltativo. Se specificato, consente di dichiarare i parametri per l'attività. Per altre informazioni sui parametri di input e output, vedere [Parametri di input e output](#input-and-output-parameters) più avanti in questo argomento.
+- L'elemento `ParameterGroup` è facoltativo. Se specificato, consente di dichiarare i parametri per l'attività. Per altre informazioni sui parametri di input e output, vedere Parametri di [input e output](#input-and-output-parameters) più avanti in questo argomento.
 
 - L'elemento `Task` descrive e contiene il codice sorgente dell'attività.
 
@@ -69,7 +69,7 @@ Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programma
 > [!NOTE]
 > Gli elementi contenuti in `Task` sono specifici della factory dell'attività, in questo caso la factory dell'attività del codice.
 
-### <a name="code-element"></a>Code - elemento
+### <a name="code-element"></a>Elemento del codice
 
 L'ultimo elemento figlio visualizzato all'interno dell'elemento `Task` è l'elemento `Code`. L'elemento `Code` contiene o individua il codice che deve essere compilato in un'attività. Ciò che si inserisce nell'elemento `Code` dipende da come si vuole scrivere l'attività.
 
@@ -164,7 +164,7 @@ definisce questi tre parametri:
 
 - `Tally` è un parametro di output del tipo System.Int32.
 
-Se l'elemento `Code` ha come attributo `Type``Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro.  In RoslynCodeTaskFactory, se l'elemento `Code` dispone dell'attributo `Type` di `Class`, non è necessario specificare il `ParameterGroup`, perché viene dedotto dal codice sorgente (si tratta di una differenza rispetto a `CodeTaskFactory`). In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.
+Se l'elemento `Code` ha come attributo `Type``Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro.  In RoslynCodeTaskFactory, `Code` se l'elemento ha `Type` l'attributo `Class`di `ParameterGroup`, non è necessario specificare il , poiché viene dedotto dal codice sorgente (questa è una differenza da `CodeTaskFactory`). In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.
 
 ## <a name="example"></a>Esempio
 

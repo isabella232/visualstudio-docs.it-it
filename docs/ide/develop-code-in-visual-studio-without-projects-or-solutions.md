@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596294"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
@@ -28,19 +28,19 @@ Dopo aver aperto i file di codice in Visual Studio, **Esplora soluzioni** consen
 
 È possibile aprire il codice in Visual Studio in uno dei modi seguenti:
 
-- Nella barra dei menu di Visual Studio scegliere **File** > **Apri** > **Cartella** e quindi passare al percorso del codice.
+- Nella barra dei menu di Visual Studio scegliere**Cartella****di apertura** >  **file** > , quindi individuare il percorso del codice.
 
 - Nel menu di scelta rapida (pulsante destro del mouse) di una cartella contenente codice scegliere il comando **Apri in Visual Studio**.
 
 ::: moniker range="vs-2017"
-- Scegliere il collegamento **Apri cartella** nella **pagina iniziale** di Visual Studio.
+- Scegliere il collegamento **Apri cartella** nella **pagina iniziale**di Visual Studio .
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 - Scegliere il collegamento **Apri cartella** nella finestra iniziale.
 ::: moniker-end
 
-- Se si preferisce usare la tastiera, premere **CTRL**+**MAIUSC**+**ALT**+**O** in Visual Studio.
+- Se sei un utente della tastiera, premi **Ctrl**+**Maiusc**+**Alt**+**O** in Visual Studio.
 
 - Aprire codice da un repository GitHub clonato.
 
@@ -54,7 +54,7 @@ L'esempio seguente mostra come clonare un repository GitHub e quindi aprire il r
 
    ![Pulsante per clonare in GitHub](./media/VSIDE_Code_Clone.png)
 
-1. In Visual Studio scegliere la scheda **Team Explorer** per aprire **Team Explorer**. Se la scheda non è visualizzata, aprirla da **Visualizza** > **Team Explorer**.
+1. In Visual Studio scegliere la scheda **Team Explorer** per aprire **Team Explorer.** Se la scheda non è visualizzata, aprirla da **Visualizza** > **Team Explorer**.
 
 1. In Team Explorer, nella sezione **Repository Git locali**, scegliere il comando **Clona** e quindi incollare l'URL della pagina GitHub nella casella di testo.
 
@@ -62,11 +62,11 @@ L'esempio seguente mostra come clonare un repository GitHub e quindi aprire il r
 
 1. Scegliere il pulsante **Clona** per clonare i file del progetto in un repository Git locale. L'operazione potrebbe richiedere diversi minuti a seconda delle dimensioni del repository.
 
-1. Dopo aver clonato il repository nel sistema, in **Team Explorer** scegliere il comando **Apri** nel menu di scelta rapida (pulsante destro del mouse) del repository appena clonato.
+1. Dopo che il repository è stato clonato nel sistema, in **Team Explorer**scegliere il comando **Apri** dal menu contestuale (clic con il pulsante destro del mouse) del repository appena clonato.
 
    ![Repository clonato](./media/VSIDE_Code_Clone3.png)
 
-1. Scegliere il comando **Mostra visualizzazione cartelle** per visualizzare i file in **Esplora soluzioni**.
+1. Scegliere il comando **Mostra visualizzazione cartella** per visualizzare i file in Esplora **soluzioni**.
 
    ![Mostra visualizzazione cartelle](./media/VSIDE_Code_Clone3_show.png)
 
@@ -83,7 +83,7 @@ La configurazione del codice per l'esecuzione in Visual Studio varia a seconda d
 Le codebase basate su MSBuild possono avere più configurazioni di compilazione visualizzate nell'elenco a discesa del pulsante **Avvia**. Selezionare il file che si vuole usare come elemento di avvio e quindi scegliere il pulsante **Avvia** per avviare il debug.
 
 > [!NOTE]
-> Per le codebase C# e Visual Basic, è necessario avere installato il carico di lavoro **Sviluppo per desktop .NET**. Per le codebase C++, è necessario avere installato il carico di lavoro **Sviluppo di applicazioni desktop con C++** .
+> Per le codebase C# e Visual Basic, è necessario avere installato il carico di lavoro **Sviluppo per desktop .NET**. Per le codebase C++, è necessario avere installato il carico di lavoro **Sviluppo di applicazioni desktop con C++**.
 
 ### <a name="codebases-that-use-custom-build-tools"></a>Codebase che usano strumenti di compilazione personalizzati
 

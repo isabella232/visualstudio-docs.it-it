@@ -7,10 +7,10 @@ ms.date: 05/20/2019
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.openlocfilehash: c25df777a9af10859c70741a78c880a57c6f5b8e
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984801"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introduzione alla creazione di giochi con Unity in Visual Studio per Mac
@@ -26,22 +26,22 @@ Visual Studio for Mac Tools for Unity è un'estensione gratuita, installata con 
 
 ## <a name="prerequisites"></a>Prerequisites
 
-- Visual Studio per Mac ([https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac))
-- Unity 5.6.1 Personal Edition o versione successiva ([https://store.unity.com](https://store.unity.com/), è necessario un account unity.com per l'esecuzione)
+- Visual Studio per[https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac)Mac ( )
+- Unity 5.6.1 Personal Edition[https://store.unity.com](https://store.unity.com/)o versione successiva ( richiede un account unity.com per l'esecuzione)
 
-## <a name="intended-audience"></a>Destinatari del documento
+## <a name="intended-audience"></a>Destinatari
 
 Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche se non è necessaria una vasta esperienza.
 
-## <a name="task-1-creating-a-basic-unity-project"></a>Attività 1: creazione di un progetto Unity di base
+## <a name="task-1-creating-a-basic-unity-project"></a>Attività 1: Creazione di un progetto Unity di baseTask 1: Creating a basic Unity project
 
 1. Avviare **Unity**. Eseguire l'accesso, se richiesto.
 
-2. Fare clic su **Nuovo**.
+2. Fare clic su **New**.
 
     ![pulsante per la creazione di un nuovo progetto in Unity](media/unity-image1.png)
 
-3. Impostare **Project name** (Nome progetto) su **"UnityLab"** e selezionare **3D**. Fare clic su **Create project** (Crea progetto).
+3. Impostare **Project name** (Nome progetto) su **"UnityLab"** e selezionare **3D**. Fare clic su **Crea progetto**.
 
     ![schermata per la creazione di nuovo progetto](media/unity-image2.png)
 
@@ -79,7 +79,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 13. Chiudere la finestra **Finder** e tornare a **Unity**.
 
-14. La cartella **assets** contiene tutti gli asset-Art, code, audio e così via. Ora è vuota, ma ogni singolo file inserito nel progetto va qui. che è sempre la cartella di livello principale nell'**Editor di Unity**. È tuttavia sempre necessario aggiungere e rimuovere i file tramite l'interfaccia di Unity (o Visual Studio per Mac) e mai direttamente tramite il file system.
+14. La cartella **Assets** contiene tutte le risorse,grafica, codice, audio e così via. Ora è vuoto, ma ogni singolo file che porti nel tuo progetto è qui. che è sempre la cartella di livello principale nell'**Editor di Unity**. È tuttavia sempre necessario aggiungere e rimuovere i file tramite l'interfaccia di Unity (o Visual Studio per Mac) e mai direttamente tramite il file system.
 
     ![cartella Assets in Unity](media/unity-image10.png)
 
@@ -91,11 +91,11 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![proprietà dell'oggetto gioco](media/unity-image12.png)
 
-17. Rinominare l'oggetto **Cube** (Cubo), che per impostazione predefinita è denominato **"Cube"** , specificando il nuovo nome **"Enemy"** . Premere **INVIO** per salvare la modifica. Questo sarà il cubo dell'avversario nel gioco semplice che si sta creando.
+17. Rinominare l'oggetto **Cube** (Cubo), che per impostazione predefinita è denominato **"Cube"**, specificando il nuovo nome **"Enemy"**. Premere **INVIO** per salvare la modifica. Questo sarà il cubo dell'avversario nel gioco semplice che si sta creando.
 
     ![proprietà per la ridenominazione dell'oggetto Cube](media/unity-image13.png)
 
-18. Aggiungere nella scena un altro oggetto **Cube** (Cubo) per il giocatore con la stessa procedura illustrata in precedenza e assegnare all'oggetto il nome **"Player"** .
+18. Aggiungere nella scena un altro oggetto **Cube** (Cubo) per il giocatore con la stessa procedura illustrata in precedenza e assegnare all'oggetto il nome **"Player"**.
 
     ![ridenominazione del secondo oggetto Cube](media/unity-image14.png)
 
@@ -125,11 +125,11 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 25. Selezionare **File > Save Scenes** (File > Salva scene) per salvare la scena corrente. Assegnare il nome **"MyScene"** alla scena.
 
-## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Attività 2: uso di Visual Studio per Mac Tools per Unity
+## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Attività 2: Utilizzo di Visual Studio per Mac Tools per UnityTask 2: Working with Visual Studio for Mac Tools for Unity
 
 1. Il modo migliore per modificare il codice C# è quello di usare Visual Studio per Mac. È possibile configurare Unity in modo da usare Visual Studio per Mac come gestore predefinito. Selezionare **Unity > Preferences** (Unity > Preferenze).
 
-2. Selezionare la scheda **strumenti esterni** . Dall'elenco a discesa **editor di script esterno** selezionare **Sfoglia** e selezionare **applicazioni/Visual Studio. app**. In alternativa, se è già presente un'opzione **Visual Studio**, è sufficiente selezionare tale opzione.
+2. Selezionare la scheda **Strumenti esterni.** Nell'elenco a discesa **Editor script esterni** selezionare **Sfoglia** e selezionare **Applicazioni/Visual Studio.app**. In alternativa, se è già presente un'opzione **Visual Studio**, è sufficiente selezionare tale opzione.
 
     ![scheda degli strumenti esterni nelle preferenze](media/unity-image21.png)
 
@@ -189,7 +189,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 9. Salvare le modifiche apportate allo script dell'avversario in **Visual Studio per Mac**.
 
-## <a name="task-3-debugging-the-unity-project"></a>Attività 3: debug del progetto Unity
+## <a name="task-3-debugging-the-unity-project"></a>Attività 3: Debug del progetto UnityTask 3: Debugging the Unity project
 
 1. Impostare un punto di interruzione sulla prima riga di codice nel metodo **Start**. È possibile fare clic sul margine dell'editor in corrispondenza della riga di destinazione oppure posizionare il cursore sulla riga e premere **F9**.
 
@@ -247,9 +247,9 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![arresto della sessione di debug in Visual Studio per Mac](media/unity-image37.png)
 
-## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Attività 4: esplorazione delle funzionalità di Unity in Visual Studio per Mac
+## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Attività 4: Esplorazione delle funzionalità di Unity in Visual Studio per MacTask 4: Exploring Unity features in Visual Studio for Mac
 
-1. Visual Studio per Mac consente di accedere rapidamente alla documentazione di Unity all'interno dell'editor di codice. Posizionare il cursore in un punto qualsiasi sul simbolo **Vector3** all'interno del metodo **Update** e premere **Comando ⌘+'** .
+1. Visual Studio per Mac consente di accedere rapidamente alla documentazione di Unity all'interno dell'editor di codice. Posizionare il cursore in un punto qualsiasi sul simbolo **Vector3** all'interno del metodo **Update** e premere **Comando ⌘+'**.
 
     ![selezione di un metodo nell'editor di Visual Studio per Mac](media/unity-image38.png)
 
@@ -261,7 +261,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![azione contestuale Nuovo MonoBehaviour](media/unity-image40.png)
 
-4. La classe appena creata fornisce gli stub per i metodi **Start** e **Update**. Dopo la parentesi graffa di chiusura del metodo **Update**, iniziare a digitare **"onmouseup"** . Durante la digitazione, si noti che la tecnologia IntelliSense di Visual Studio punta rapidamente al metodo che si prevede di implementare. Selezionarlo dall'elenco di completamento automatico visualizzato. Verrà completato automaticamente uno stub del metodo, inclusi gli eventuali parametri.
+4. La classe appena creata fornisce gli stub per i metodi **Start** e **Update**. Dopo la parentesi graffa di chiusura del metodo **Update**, iniziare a digitare **"onmouseup"**. Durante la digitazione, si noti che la tecnologia IntelliSense di Visual Studio punta rapidamente al metodo che si prevede di implementare. Selezionarlo dall'elenco di completamento automatico visualizzato. Verrà completato automaticamente uno stub del metodo, inclusi gli eventuali parametri.
 
     ![IntelliSense in Visual Studio per Mac](media/unity-image41.png)
 
@@ -281,6 +281,6 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![pannello degli asset di Unity](media/unity-image45.png)
 
-## <a name="summary"></a>Riepilogo
+## <a name="summary"></a>Summary
 
-In questo lab si sono apprese le nozioni di base per iniziare a creare un gioco con Unity e Visual Studio per Mac. Per altre informazioni su Unity, vedere [https://unity3d.com/learn](https://unity3d.com/learn).
+In questo lab si sono apprese le nozioni di base per iniziare a creare un gioco con Unity e Visual Studio per Mac. Per [https://unity3d.com/learn](https://unity3d.com/learn) saperne di più su Unity.

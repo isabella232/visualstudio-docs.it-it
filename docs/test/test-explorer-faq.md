@@ -15,10 +15,10 @@ ms.workload:
 author: kendrahavens
 manager: jillfra
 ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75846815"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
@@ -35,15 +35,15 @@ Per il momento, è possibile fare clic con il pulsante destro del mouse sulla co
 
 ## <a name="dynamic-test-discovery"></a>Individuazione dei test dinamici
 
-**Esplora test non è in grado di individuare i test definiti in modo dinamico. (Ad esempio, teorie, adattatori personalizzati, tratti personalizzati, #ifdefs e così via) Come è possibile individuare questi test?**
+**Esplora test non sta individuando i test definiti dinamicamente. (Ad esempio, teorie, adattatori personalizzati, tratti personalizzati, #ifdefs e così via) Come posso scoprire questi test?**
 
 ::: moniker range=">=vs-2019"
 Compilare il progetto per eseguire l'individuazione basata su assembly.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Compilare il progetto e verificare che l'individuazione basata su assembly sia attivata in **strumenti** > **Opzioni** > **test**.
+Compilare il progetto e verificare che l'individuazione basata su assembly sia attivata in **Strumenti** > **Opzioni** > **Test**.
 ::: moniker-end
-L'[individuazione dei test in tempo reale](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) è l'individuazione dei test in base all'origine. Non è in grado di individuare test che usano teorie, adattatori personalizzati, tratti personalizzati, istruzioni `#ifdef` e altro ancora perché sono definiti in fase di esecuzione. Per l'individuazione accurata di questi test è necessaria una compilazione. In Visual Studio 2017 versione 15.6 e versioni successive l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questa impostazione significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione dei test definiti in modo dinamico dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, consentendo tuttavia di ottenere risultati precisi e completi dopo una compilazione.
+L'[individuazione dei test in tempo reale](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) è l'individuazione dei test in base all'origine. Non è possibile individuare i test che utilizzano teorie, adattatori personalizzati, tratti personalizzati, `#ifdef` istruzioni e altro ancora perché sono definiti in fase di esecuzione. Per l'individuazione accurata di questi test è necessaria una compilazione. In Visual Studio 2017 versione 15.6 e versioni successive l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questa impostazione significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione dei test definiti in modo dinamico dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, consentendo tuttavia di ottenere risultati precisi e completi dopo una compilazione.
 
 ## <a name="test-explorer--plus-symbol"></a>'+' (segno più) di Esplora test
 
@@ -56,16 +56,16 @@ Il simbolo '+' (più) indica che possono essere individuati ulteriori test dopo 
 ::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Individuazione basata su assembly
 
-**L'individuazione basata su assembly non funziona più per il progetto. Ricerca per categorie riattivarla?**
+**La scoperta basata su assembly non funziona più per il mio progetto. Come faccio ad riaccenderlo?**
 
-Passare a **strumenti** > **Opzioni** > **test** e selezionare la casella per **individuare i test dagli assembly compilati dopo le compilazioni.**
+Passare a **Strumenti** > **Opzioni** > **Test** e selezionare la casella **Individua anche i test di assembly compilati dopo le compilazioni.**
 
 ![Opzione basata su assembly](media/testex-toolsoptions.png)
 ::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>Individuazione dei test in tempo reale
 
-**I test vengono ora visualizzati in Esplora test durante la digitazione, senza dover compilare il progetto. Cosa è cambiato?**
+**I test vengono ora visualizzati in Esplora test durante la digitazione, senza dover compilare il progetto. Cos'è cambiato?**
 
 Questa funzionalità è denominata [individuazione dei test in tempo reale](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/). Usa un analizzatore Roslyn per trovare i test e popolare Esplora test in tempo reale, senza che sia necessario compilare il progetto. Per altre informazioni sul comportamento dell'individuazione dei test per i test definiti in modo dinamico, ad esempio teorie o tratti personalizzati, vedere [Individuazione dei test dinamici](#dynamic-test-discovery).
 
@@ -79,7 +79,7 @@ L'[individuazione dei test in tempo reale](https://devblogs.microsoft.com/dotnet
 
 **Come è possibile attivare i log per Esplora test?**
 
-Passare a **Strumenti** > **Opzioni** > **Test** e individuare la sezione Registrazione.
+Passare a **Strumenti** > **Opzioni** > **Test** e trovare la sezione Registrazione.
 
 ## <a name="uwp-test-discovery"></a>Individuazione dei test UWP
 
@@ -97,7 +97,7 @@ Nella visualizzazione gerarchia i test sono disposti in ordine alfabetico anzich
 
 ## <a name="test-explorer-hierarchy-view"></a>Visualizzazione gerarchia in Esplora test
 
-**Nella visualizzazione gerarchia sono presenti icone passate, non riuscite, ignorate e non eseguite accanto ai raggruppamenti padre-nodo. Che cosa significano queste icone?**
+**Nella visualizzazione gerarchia vengono passate, ignorate, ignorate e non icone di esecuzione accanto ai raggruppamenti dei nodi padre. Cosa significano queste icone?**
 
 Le icone accanto ai raggruppamenti Progetto, Spazio dei nomi e Classe indicano lo stato dei test all'interno di tale raggruppamento. Fare riferimento alla tabella riportata di seguito.
 
@@ -111,7 +111,7 @@ Il filtro per il percorso file nella casella di ricerca **Esplora test** è stat
 
 ## <a name="remove-undocumented-interfaces"></a>Rimuovere le interfacce non documentate
 
-**Alcune API correlate ai test non sono più presenti in Visual Studio 2019. Cosa è cambiato?**
+**Alcune API correlate ai test non sono più presenti in Visual Studio 2019.Some test-related APIs are no longer present in Visual Studio 2019. Cos'è cambiato?**
 
 In Visual Studio 2019, verranno rimosse alcune API di finestra di test in precedenza contrassegnate come pubbliche, ma mai documentate ufficialmente. Sono state contrassegnate come "deprecate" in Visual Studio 2017 per avvisare tempestivamente chi gestisce le estensioni. In base a quanto osservato, sono pochissime le estensioni che hanno rilevato queste API e hanno dipendenze dalle stesse. Sono incluse `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` e `SearchFilterTokenType`. Se questa modifica interessa l'estensione in uso, segnalare un bug in [Developer Community](https://developercommunity.visualstudio.com).
 
@@ -121,13 +121,13 @@ In Visual Studio 2019, verranno rimosse alcune API di finestra di test in preced
 
 Tutti i progetti di test devono includere il riferimento NuGet all'adattatore di test .NET nel relativo file csproj. In caso contrario, viene visualizzato l'output di test seguente nel progetto se viene avviata l'individuazione da parte di un'estensione dell'adattatore di test dopo una compilazione o se l'utente tenta di eseguire i test selezionati:
 
-**Il progetto di test {} non fa riferimento ad alcun Adapter NuGet .NET. L'individuazione o l'esecuzione dei test potrebbe non funzionare per questo progetto. Si consiglia di fare riferimento agli adattatori di test NuGet in ogni progetto di test .NET nella soluzione.**
+**Il {} progetto di test non fa riferimento ad alcun adattatore NuGet .NET. L'individuazione o l'esecuzione dei test potrebbe non funzionare per questo progetto. È consigliabile fare riferimento agli adattatori di test NuGet in ogni progetto di test .NET nella soluzione.**
 
 Invece di usare le estensioni dell'adattatore di test, i progetti devono usare i pacchetti NuGet dell'adattatore di test. Questo requisito migliora notevolmente le prestazioni e causa meno problemi con l'integrazione continua. Altre informazioni sulla deprecazione dell'estensione dell'adattatore di test .NET sono disponibili nelle [note sulla versione](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Se si usa l'adattatore di test NUnit 2 e non si può eseguire la migrazione a NUnit 3, è possibile disattivare questo nuovo comportamento di individuazione in Visual Studio versione 15.8 in **Strumenti** > **Opzioni** > **Test**.
+> Se si utilizza l'adattatore di test NUnit 2 e non è possibile eseguire la migrazione all'adattatore di test NUnit 3, è possibile disattivare questo nuovo comportamento di individuazione in Visual Studio versione 15.8 in **Tools** > **Options** > **Test**.
 
 ![Comportamento dell'adattatore nelle opzioni degli strumenti di Esplora test](media/testex-adapterbehavior.png)
 ::: moniker-end
@@ -136,11 +136,11 @@ Invece di usare le estensioni dell'adattatore di test, i progetti devono usare i
 
 **I test UWP non vengono più eseguiti in Visual Studio 2017 versione 15.7 e successive.**
 
-I progetti di test UWP recenti specificano una proprietà di compilazione della piattaforma di test che consente di migliorare le prestazioni durante l'identificazione delle app di test. In un progetto di test UWP inizializzato prima di Visual Studio versione 15.7 è possibile che venga visualizzato questo errore in **Output** > **Test**:
+I progetti di test UWP recenti specificano una proprietà di compilazione della piattaforma di test che consente di migliorare le prestazioni durante l'identificazione delle app di test. Se si dispone di un progetto di test UWP inizializzato prima di Visual Studio versione 15.7, è possibile che venga visualizzato questo errore in**Test**di **output** > :
 
-**System. AggregateException: si sono verificati uno o più errori. ---> System. InvalidOperationException: Impossibile trovare il seguente TestContainer {} in Microsoft. VisualStudio. TestWindow. controller. TestContainerProvider \<GetTestContainerAsync > d__61. MoveNext ()**
+**System.AggregateException: si sono verificati uno o più errori. ---> System.InvalidOperationException: Il seguente TestContainer non è stato trovato {} in Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 
-Per correggere l'errore:
+Per correggere l'errore: 
 
 - Aggiornare la proprietà di compilazione del progetto di test usando il codice seguente:
 
@@ -175,5 +175,5 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [Create and run unit tests for existing code](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) (Creare ed eseguire unit test per il codice esistente)
-- [Eseguire unit test del codice](unit-test-your-code.md)
+- [Eseguire unit test del codiceUnit test your code](unit-test-your-code.md)
 - [Domande frequenti su Live Unit Testing](live-unit-testing-faq.md)

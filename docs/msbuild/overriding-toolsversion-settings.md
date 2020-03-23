@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633018"
 ---
 # <a name="override-toolsversion-settings"></a>Override delle impostazioni ToolsVersion
@@ -36,7 +36,7 @@ ms.locfileid: "77633018"
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 ```
 
- Nell'esempio seguente tutti i progetti vengono compilati usando ToolsVersion 12.0. Vedere la sezione [Ordine di precedenza](#order-of-precedence) più avanti in questo argomento.
+ Nell'esempio seguente tutti i progetti vengono compilati usando ToolsVersion 12.0. (Tuttavia, vedere la sezione [Ordine di precedenza](#order-of-precedence) più avanti in questo argomento.)
 
  Quando si usa l'opzione `-tv` della riga di comando, è possibile usare facoltativamente la proprietà `$(ProjectToolsVersion)` nei progetti singoli per compilarli con un valore ToolsVersion diverso dagli altri progetti della soluzione.
 
@@ -115,7 +115,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     2. Versione predefinita degli strumenti del file *MSBuild.exe.config*.
 
-    3. Versione predefinita degli strumenti nel Registro di sistema. Per altre informazioni, vedere [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md).
+    3. Versione predefinita degli strumenti nel Registro di sistema. Per ulteriori informazioni, consultate Configurazioni del set di [strumenti standard e personalizzate.](../msbuild/standard-and-custom-toolset-configurations.md)
 
 6. Se la variabile di ambiente `MSBUILDLEGACYDEFAULTTOOLSVERSION` non è impostata, vengono usati i passaggi seguenti:
 
@@ -131,5 +131,5 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
 - [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
-- [Set di strumenti (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
-- [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) (Set di strumenti (ToolsVersion))
+- [Configurazioni del set di strumenti standard e personalizzate](../msbuild/standard-and-custom-toolset-configurations.md)

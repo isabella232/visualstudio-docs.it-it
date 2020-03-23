@@ -1,5 +1,5 @@
 ---
-title: Estendere i diagrammi livello | Microsoft Docs
+title: Estendere i diagrammi a livello Documenti Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bfcec64f9401fdbf79e67bee5fe8430452632fbc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301035"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302336"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "74301035"
 
 - [Convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md)
 
-## <a name="prereqs"></a> Requisiti
+## <a name="requirements"></a><a name="prereqs"></a>Requisiti
  È necessario verificare che nel computer in cui si vogliono sviluppare le estensioni del livello sia installato quanto segue:
 
 - Visual Studio
@@ -43,7 +43,7 @@ ms.locfileid: "74301035"
 
 - [SDK di modellazione per Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
-  È necessario avere installato una versione appropriata di Visual Studio nel computer in cui si vogliono eseguire le estensioni del livello. Per altre informazioni, vedere [distribuire un'estensione del modello di livello](../modeling/deploy-a-layer-model-extension.md).
+  È necessario avere installato una versione appropriata di Visual Studio nel computer in cui si vogliono eseguire le estensioni del livello. Per ulteriori informazioni, consultate [Distribuire un'estensione del modello](../modeling/deploy-a-layer-model-extension.md)di livello.
 
   Per individuare le versioni di Visual Studio che supportano i diagrammi livello, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -61,4 +61,4 @@ ms.locfileid: "74301035"
  [Risoluzione dei problemi relativi a estensioni per diagrammi livello](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md) [diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md) [diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md) [creare diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md) [convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md) [generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md) [aprire un modello UML tramite l'API di Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
+ [Definire e installare un'estensione](../modeling/define-and-install-a-modeling-extension.md) di modellazione Diagrammi livello: Diagrammi livello di riferimento: Linee guida Creare diagrammi livello dal codice Convalidare il codice con diagrammi livello [Generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md) [Aprire un modello UML utilizzando l'API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md) di Visual StudioDefine a modelL [Diagrams: Reference](../modeling/layer-diagrams-reference.md) [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md) Create layer [diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md) Validate code with layer [diagrams](../modeling/validate-code-with-layer-diagrams.md) Generate files from a UML model Open a UML model by using the Visual Studio API

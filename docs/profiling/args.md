@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b6d01a95b7e0872d6bb36c6d9f3917bc6a05b3b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779818"
 ---
 # <a name="args"></a>Args
@@ -28,10 +28,10 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
 ```
 
 #### <a name="parameters"></a>Parametri
- `Arguments` Elenco di argomenti per l'applicazione di destinazione del comando **Launch**.
+ `Arguments`Elenco di argomenti per l'applicazione di destinazione del comando **Launch.**
 
 ## <a name="required-options"></a>Opzioni obbligatorie
- **Launch:** `AppName` avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
+ **Avvia:** `AppName` avvia l'applicazione specificata e avvia la profilatura con il metodo di campionamento.
 
 ## <a name="example"></a>Esempio
  L'esempio seguente usa l'opzione **Args** per passare gli argomenti a TestApp.exe.
@@ -44,5 +44,5 @@ VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"
 ## <a name="see-also"></a>Vedere anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
+- [Profiling di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Servizi di profilazione](../profiling/command-line-profiling-of-services.md)

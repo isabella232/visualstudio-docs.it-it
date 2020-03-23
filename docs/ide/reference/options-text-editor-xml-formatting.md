@@ -9,28 +9,28 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568139"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opzioni, Editor di testo, XML, Formattazione
 
-Usare la pagina delle opzioni **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XML. Per accedere alle opzioni di formattazione XML, scegliere **Strumenti** > **Opzioni** > **Editor di testo** > **XML**, quindi scegliere **Formattazione**.
+Usare la pagina delle opzioni **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XML. Per accedere alle opzioni di formattazione XML, scegliere **Strumenti** > **Opzioni** > Editor > **testo****XML**, quindi **Formattazione**.
 
-## <a name="attributes"></a>Attributi
+## <a name="attributes"></a>Attributes
 
 **Mantieni la formattazione manuale degli attributi**
 
 Consente di non riformattare gli attributi. Questa è l'impostazione predefinita.
 
 > [!NOTE]
-> Se gli attributi si trovano su più righe, l'editor fa rientrare ogni riga degli attributi in base al rientro dell'elemento padre.
+> Se gli attributi sono disposti su più righe, a ogni riga di attributi verrà applicato un rientro corrispondente al rientro dell'elemento padre.
 
 **Allinea ogni attributo su una riga separata**
 
-Allinea verticalmente il secondo attributo e i successivi in base al rientro del primo attributo. Il testo XML seguente è un esempio di allineamento degli attributi:
+Il secondo attributo e i successivi vengono allineati verticalmente in modo da corrispondere al rientro del primo attributo. Il testo XML seguente è un esempio di allineamento degli attributi:
 
 ```xml
 <item id = "123-A"
@@ -41,21 +41,21 @@ Allinea verticalmente il secondo attributo e i successivi in base al rientro del
 
 ## <a name="auto-reformat"></a>Riformatta automaticamente
 
-**All'inserimento degli Appunti**
+**In cui incollare dagli Appunti**
 
-Riformatta il testo XML incollato dagli Appunti.
+Consente di riformattare il testo XML incollato dagli Appunti.
 
 **Al completamento del tag di fine**
 
-Riformatta l'elemento quando il tag di fine è completato.
+Consente di riformattare l'elemento al completamento del tag di fine.
 
 ## <a name="mixed-content"></a>Contenuto misto
 
-**Formatta contenuto misto per impostazione predefinita.**
+**Formatta contenuto misto per impostazione predefinita**
 
-Tenta di riformattare il contenuto misto, a meno che il contenuto non venga rilevato in un ambito `xml:space="preserve"`. Questa è l'impostazione predefinita.
+Viene riformattato il contenuto misto, tranne quando il contenuto si trova in un ambito `xml:space="preserve"`. Questa è l'impostazione predefinita.
 
-Se un elemento contiene una combinazione di testo e markup, il contenuto viene considerato misto. Di seguito viene riportato un esempio di elemento con contenuto misto.
+Se un elemento contiene testo e markup, il contenuto viene considerato misto. Di seguito viene riportato un esempio di elemento con contenuto misto.
 
 ```xml
 <dir>c:\data\AlphaProject\

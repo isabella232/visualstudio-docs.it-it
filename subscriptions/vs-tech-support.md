@@ -7,10 +7,10 @@ ms.date: 11/18/2019
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
 ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74706987"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
@@ -22,14 +22,14 @@ Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di 
 > [!NOTE]
 > Non tutte le sottoscrizioni a un determinato livello sono idonee per ricevere il supporto per eventi imprevisti. Le sottoscrizioni acquisite tramite FTE, NFR, MPN, MCT e altri programmi non ricevono il supporto per eventi imprevisti. Se la sottoscrizione non è idonea per la ricezione del supporto tecnico, il riquadro relativo non verrà visualizzato nei vantaggi disponibili.
 
-**Per inviare una richiesta di supporto tramite il vantaggio, è necessario prima attivarla.  Per completare l'attivazione, attenersi alla procedura descritta nella sezione successiva.**
+**Per inviare una richiesta di supporto utilizzando il benefit, è necessario prima attivarla.  Seguire i passaggi nella sezione successiva per completare l'attivazione.**
 
 ## <a name="supported-products"></a>Prodotti supportati 
-Strumenti di sviluppo come l'IDE di Visual Studio e la Azure DevOps Server riceveranno il supporto principale ed esteso tramite le sottoscrizioni di Visual Studio.
+Gli strumenti di sviluppo, ad esempio l'IDE di Visual Studio e il server DevOps di Azure, riceveranno supporto sia mainstream che esteso tramite le sottoscrizioni di Visual Studio.Developer Tools such as the Visual Studio IDE and Azure DevOps Server will receive both mainstream and extended support through Visual Studio subscriptions.
 
-I prodotti non per sviluppatori (ad esempio SQL, Windows, SharePoint) scaricati dalle sottoscrizioni di Visual Studio sono idonei solo per il supporto mainstream. Questi prodotti sono concessi in licenza solo per gli ambienti di sviluppo per la progettazione, lo sviluppo, il test e la dimostrazione delle applicazioni. Questi prodotti non sono concessi in licenza per gli ambienti di produzione.
+I prodotti non per sviluppatori (ad esempio SQL, Windows, SharePoint) scaricati dalle sottoscrizioni di Visual Studio sono idonei solo per il supporto mainstream. Questi prodotti sono concessi in licenza solo per gli ambienti di sviluppo per progettare, sviluppare, testare o dimostrare applicazioni. Questi prodotti non sono concessi in licenza per gli ambienti di produzione.
 
-Descrizioni del livello di prodotto: espandere **piani di supporto non disponibili**. Se non è **possibile utilizzare il piano di supporto per il supporto per il prodotto specificato (codice: 8)** , non è possibile utilizzare il contratto di supporto per la versione del prodotto selezionata.
+Descrizioni a livello di prodotto: espandere Piani di **supporto non disponibili**. Se il piano di **supporto non può essere utilizzato per il supporto sul prodotto specificato (Codice: 8)**, il contratto di supporto non può essere utilizzato per la versione del prodotto selezionata.
 
 ## <a name="how-to-activate-the-benefit"></a>Come attivare il vantaggio
 1. Passare a https://my.visualstudio.com/Benefits, scorrere verso il basso fino alla sezione Supporto e nel riquadro Supporto tecnico fare clic su **Chat to activate** (Chatta per attivare).
@@ -39,11 +39,11 @@ Descrizioni del livello di prodotto: espandere **piani di supporto non disponibi
 
 3. Per completare il processo, è necessario specificare al rappresentante gli elementi seguenti:
    - Paese dell'utente
-   - Nome società
+   - Nome della società
    - Nome e cognome dell'utente
    - L'indirizzo di posta elettronica che si usa per accedere alla sottoscrizione
    - Numero di telefono dell'utente
-   - L'ID sottoscrizione, che viene visualizzato nella scheda [Sottoscrizioni](https://my.visualstudio.com/subscriptions).
+   - L'ID sottoscrizione, disponibile nella scheda [Sottoscrizioni.](https://my.visualstudio.com/subscriptions)
 
    > [!div class="mx-imgBorder"]
    > ![Trovare l'ID sottoscrizione del vantaggio Supporto tecnico](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
@@ -82,7 +82,7 @@ Quando si segnala un evento imprevisto online, per prima cosa verrà chiesto di 
    > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Aggiungere il contratto](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. Immettere l'**ID di accesso** e l'**ID contratto**.  Fare clic su **Aggiungi**.
+4. Immettere **l'ID di accesso** e **l'ID contratto**.  Fare clic su **Aggiungi**.
 
    > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Aggiungere l'ID contratto](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
@@ -104,27 +104,27 @@ Se si vuole richiedere supporto per un evento imprevisto tramite telefono, indiv
 Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio per problemi relativi ad Azure, è necessario collegare l'ID contratto e l'ID di accesso alla sottoscrizione di Azure.
 
 1. Visitare https://portal.azure.com e accedere
-2. Dal menu di spostamento a sinistra fare clic su **Guida e supporto**
+2. Dal menu di spostamento a sinistra, fai clic su **Guida e supporto**
 3. In "Supporto" fare clic su **Nuova richiesta di supporto**
 
-## <a name="eligibility"></a>Eligibility
+## <a name="eligibility"></a>Idoneità
 
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 4 eventi imprevisti       |  Sì|
-| Visual Studio Enterprise con GitHub Enterprise | VL | 4 eventi imprevisti       |  Sì|
+| Visual Studio Enterprise con GitHub Enterprise | Vl | 4 eventi imprevisti       |  Sì|
 | Visual Studio Professional (Standard) | VL, Azure, Retail, NFR<sup>2</sup> selezionato                                        | 2 eventi imprevisti                                                          |Sì         |
-| Visual Studio Professional con GitHub Enterprise | VL                                     | 2 eventi imprevisti                                                          |Sì         |
+| Visual Studio Professional con GitHub Enterprise | Vl                                     | 2 eventi imprevisti                                                          |Sì         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Sì         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
 ||
 
-<sup>1</sup> *include: Imagine Premium, BizSpark. Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, Imagine standard, Most Valuable Professional (MVP), Regional Director (RD), MCT software & Services.*
+<sup>1</sup> *Include: Imagine Premium, BizSpark. Esclude: Non per la rivendita (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
 <sup>2</sup> *Include: Imagine Standard.*
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="next-steps"></a>Passaggi successivi
 Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la sottoscrizione di Visual Studio:

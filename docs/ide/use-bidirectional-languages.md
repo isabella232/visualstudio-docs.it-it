@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591996"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Supporto per le lingue bidirezionali in Visual Studio
@@ -56,9 +56,9 @@ Gli elementi seguenti possono avere nomi in arabo o ebraico e vengono gestiti co
 
 - Attributi e metadati.
 
-- Valori delle proprietà.
+- Valori delle proprietà
 
-   Nella finestra **Proprietà** è possibile usare testo in arabo o ebraico. La finestra consente di passare dall'ordine di lettura da destra a sinistra a quello da sinistra a destra e viceversa usando combinazioni di tasti standard di Windows (**CTRL**+**MAIUSC destro** per l'ordine di lettura da destra a sinistra e **CTRL**+**MAIUSC sinistro** per quello da sinistra a destra).
+   È possibile utilizzare testo arabo o ebraico nella finestra **Proprietà.** La finestra consente di passare dall'ordine di lettura da destra a sinistra a quello da sinistra a destra utilizzando le sequenze di tasti standard di Windows **(Ctrl**+**Maiusc di destra** per l'ordine da destra a sinistra e **CTRL**+MAIUSC**sinistro** per l'ordine da sinistra a destra).
 
 - Codice e testo letterale.
 
@@ -72,13 +72,13 @@ Gli elementi seguenti possono avere nomi in arabo o ebraico e vengono gestiti co
 
 - Commenti del codice. È possibile creare commenti in arabo o in ebraico. È possibile usare queste lingue anche nello strumento per la generazione di commenti.
 
-### <a name="file-encoding"></a>Codifica dei file
+### <a name="file-encoding"></a>Codifica file
 
-È possibile salvare e aprire file con codifica Unicode o specifica della lingua. Per altre informazioni, vedere [Procedura: Salvare e aprire file con codifica](../ide/how-to-save-and-open-files-with-encoding.md).
+È possibile salvare e aprire file con codifica Unicode o specifica della lingua. Per ulteriori informazioni, consultate [Procedura: Salvare e aprire file con codifica](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="right-to-left-reading-order"></a>Ordine di lettura da destra a sinistra
 
-Visual Studio offre supporto limitato per l'ordine di lettura da destra a sinistra. Per impostazione predefinita i controlli per l'immissione di testo in Visual Studio adottano l'ordine di lettura da sinistra a destra. Nella maggior parte dei casi è possibile cambiare l'ordine di lettura con operazioni standard di Windows. È ad esempio possibile premere **CTRL**+**MAIUSC destro** per impostare il supporto dell'ordine di lettura da destra a sinistra per i valori delle proprietà nella finestra **Proprietà**.
+Visual Studio offre supporto limitato per l'ordine di lettura da destra a sinistra. Per impostazione predefinita i controlli per l'immissione di testo in Visual Studio adottano l'ordine di lettura da sinistra a destra. Nella maggior parte dei casi è possibile cambiare l'ordine di lettura con operazioni standard di Windows. Ad esempio, è possibile premere **CTRL**+**MAIUSC di destra** per passare il **proprietà** finestra per supportare l'ordine di lettura da destra a sinistra per i valori delle proprietà.
 
 L'ordine di lettura da destra a sinistra non è supportato nelle posizioni seguenti in Visual Studio:
 

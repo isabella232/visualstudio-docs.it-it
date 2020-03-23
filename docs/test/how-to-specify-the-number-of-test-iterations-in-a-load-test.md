@@ -10,20 +10,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 446da348c1a947e6c59b8ad60d9bd0799d0d4322
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588941"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione test di carico
 
 Dopo avere creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test. Per altre informazioni, vedere [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md).
 
-Usando l'**Editor test di carico** è possibile modificare la proprietà **Iterazioni test** di un valore delle impostazioni esecuzione test nella finestra **Proprietà**. La proprietà **Iterazioni test** consente di specificare il numero di iterazioni da eseguire in tutti i test prestazioni Web e degli unit test in tutti gli scenari di un test di carico tramite l'**Editor test di carico**.
+Utilizzando **l'Editor test di carico**, è possibile modificare la proprietà **Iterazioni test** di un valore delle impostazioni esecuzione test nella finestra **Proprietà.** La proprietà **Iterazioni test** specifica il numero di iterazioni da eseguire su tutte le prestazioni Web e gli unit test in tutti gli scenari in un test di carico utilizzando l'Editor **test di carico**.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà delle impostazioni di esecuzione test e delle relative descrizioni, vedere [Proprietà delle impostazioni di esecuzione test di carico](../test/load-test-run-settings-properties.md).
+> Per un elenco completo delle proprietà delle impostazioni esecuzione test e delle relative descrizioni, vedere Proprietà delle [impostazioni esecuzione test](../test/load-test-run-settings-properties.md)di carico .
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

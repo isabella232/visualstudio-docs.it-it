@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778297"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Salvataggio delle informazioni sui simboli con i file di dati di prestazioni
@@ -62,6 +62,6 @@ VsPerfReport -packsymbols -summary:all nomefile.vsp
 
 ## <a name="see-also"></a>Vedere anche
 
-[Salvataggio ed esportazione dei dati degli strumenti per le prestazioni](../profiling/saving-and-exporting-performance-tools-data.md)
-[procedura: fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)
-[VSPerfReport](../profiling/vsperfreport.md)
+[Salvataggio ed esportazione dei dati](../profiling/saving-and-exporting-performance-tools-data.md)
+degli strumenti[prestazioni Procedura: Riferimento alle informazioni](../profiling/how-to-reference-windows-symbol-information.md)
+sui simboli di Windows[VSPerfReport](../profiling/vsperfreport.md)

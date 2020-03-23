@@ -1,5 +1,5 @@
 ---
-title: C++Enumerazioni in Progettazione classi
+title: Enumerazioni di C' in Progettazione classi
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114193"
 ---
-# <a name="c-enumerations-in-class-designer"></a>C++enumerazioni in Progettazione classi
+# <a name="c-enumerations-in-class-designer"></a>Enumerazioni di C, in Progettazione classi
 
-**Progettazione classi** supporta i tipi `enum` e `enum class` con ambito in C++. come nell'esempio seguente:
+**Progettazione classi** supporta `enum` i tipi `enum class` con ambito in C. Di seguito è illustrato un esempio:
 
 ```cpp
 enum CardSuit {
@@ -44,5 +44,5 @@ Per altre informazioni sull'uso del tipo `enum`, vedere [Enumerazioni](/cpp/cpp/
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Utilizzo del C++ codice](working-with-visual-cpp-code.md)
+- [Lavorare con il codice C](working-with-visual-cpp-code.md)
 - [Enumerazioni](/cpp/cpp/enumerations-cpp)

@@ -13,10 +13,10 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78234956"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
@@ -26,7 +26,7 @@ JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggi
 > [!NOTE]
 > Microsoft ha contribuito al lavoro svolto dall'intera community per fare della [documentazione Web MDN](https://developer.mozilla.org/en-US/) il punto di riferimento e la principale risorsa di sviluppo sul Web reindirizzando tutte le informazioni di riferimento sulle API JavaScript di Microsoft (oltre 500 pagine) da docs.microsoft.com alle rispettive controparti MDN. Per i dettagli, vedere questo [annuncio](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
-## <a name="ES6"></a>Supporto per ECMAScript 2015 (ES6) e versioni successive
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a>Supporto per ECMAScript 2015 (ES6) e versioni successive
 
 Visual Studio ora supporta la sintassi per gli aggiornamenti del linguaggio ECMAScript, ad esempio ECMAScript 2015/2016.
 
@@ -118,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 JavaScript IntelliSense in [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] ora visualizza più informazioni relative agli elenchi di parametri e membri. Le nuove informazioni sono specificate dal servizio di linguaggio TypeScript, che usa l'analisi statica in background per un'interpretazione più approfondita del codice. Per ottenere altre informazioni sulla nuova esperienza IntelliSense e il relativo funzionamento vedere [qui](/visualstudio/ide/javascript-intellisense/).
 
-## <a name="JSX"></a> Supporto della sintassi JSX
+## <a name="jsx-syntax-support"></a><a name="JSX"></a>Supporto della sintassi JSX
 
 JavaScript in [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] offre un supporto dettagliato della sintassi JSX. JSX è un set di sintassi che consente la presenza di tag HTML nei file JavaScript.
 

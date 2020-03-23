@@ -26,32 +26,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595618"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
-La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo, fare clic su **Strumenti** > **Opzioni** e quindi selezionare **Ambiente** > **Tipi di carattere e colori**.
+La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). È possibile accedere a questa finestra di dialogo facendo clic su**Opzioni** **strumenti** > e quindi selezionando Tipi di**carattere e colori** **dell'ambiente** > .
 
-Le modifiche delle combinazioni colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
+Le modifiche apportate alla combinazione colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
 
 **Mostra impostazioni per**
 
-Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificare le combinazioni di tipi i carattere e colori. Dopo aver selezionato un elemento in questo elenco è possibile personalizzare le impostazioni dei colori per l'elemento selezionato in **Elementi visualizzati**.
+Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificare le combinazioni di tipi i carattere e colori. Dopo aver selezionato un elemento da questo elenco, è possibile personalizzare le impostazioni dei colori per l'elemento selezionato in **Elementi visualizzati**.
 
 - **Editor di testo**
 
-     Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per l'Editor di testo influiscono sull'aspetto del testo nell'editor di testo predefinito. I documenti aperti in un editor di testo all'esterno dell'IDE non saranno interessati da queste impostazioni.
+     Le modifiche delle impostazioni di visualizzazione dello stile, della dimensione e del colore del tipo di carattere dell'editor di testo influiscono sull'aspetto del testo nell'editor predefinito. I documenti aperti in un editor di testo all'esterno dell'IDE non saranno interessati da queste impostazioni.
 
 - **Stampante**
 
-     Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per gli elementi Stampante influiscono sull'aspetto del testo nei documenti stampati.
+     Le modifiche delle impostazioni di visualizzazione dello stile, della dimensione e del colore della stampante influiscono sull'aspetto del testo nei documenti stampati.
 
     > [!NOTE]
-    > Se necessario, è possibile selezionare un tipo di carattere predefinito per la stampa diverso da quello usato per la visualizzazione nell'editor di testo. Questo può essere utile durante la stampa di codice che contiene sia caratteri a un byte che DBCS.
+    > Se necessario, è possibile selezionare un tipo di carattere predefinito per la stampa diverso da quello usato per la visualizzazione nell'editor di testo. Questa operazione può essere utile quando si esegue la stampa di codice contenente sia caratteri SBCS sia caratteri DBCS.
 
 - **Completamento istruzioni**
 
@@ -63,7 +63,7 @@ Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificar
 
 - **Tipo di carattere ambiente**
 
-     Modifica lo stile e la dimensione del carattere di tutti gli elementi dell'interfaccia utente dell'IDE per i quali non è stata ancora impostata un'opzione separata in **Mostra impostazioni per**.
+     Modifica lo stile e la dimensione del carattere per tutti gli elementi dell'interfaccia utente dell'IDE che non dispongono già di un'opzione separata in **Mostra impostazioni per**.
 
      ::: moniker range="vs-2017"
 
@@ -76,7 +76,7 @@ Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificar
      Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per questo elemento influiscono sull'aspetto del testo nelle finestre degli strumenti con riquadri di output nell'IDE. Ad esempio, finestra di output, finestra di comando, finestra di controllo immediato e così via.
 
     > [!NOTE]
-    > Le modifiche al testo degli elementi **[Tutte le finestre degli strumenti di testo]** non sono effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.
+    > Le modifiche apportate al testo degli elementi **[Tutte le** finestre degli strumenti di testo] non hanno effetto durante la sessione in cui vengono apportate. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.
 
 **Valori predefiniti**
 
@@ -84,15 +84,15 @@ Reimposta i valori relativi al tipo di carattere e al colore dell'elemento elenc
 
 **Carattere (tipi di carattere a larghezza fissa in grassetto)**
 
-Elenca tutti i tipi di carattere installati nel sistema. La prima volta che viene visualizzato il menu a discesa, nel campo **Mostra impostazioni per** viene evidenziato il tipo di carattere corrente per l'elemento selezionato. I tipi di carattere a larghezza fissa, più facili da allineare nell'editor, sono visualizzati in grassetto.
+Consente di visualizzare l'elenco di tutti i tipi di carattere installati nel sistema. La prima volta che viene visualizzato il menu a discesa, nel campo **Mostra impostazioni per** viene evidenziato il tipo di carattere corrente per l'elemento selezionato. I tipi di carattere a larghezza fissa, più facili da allineare nell'editor, sono visualizzati in grassetto.
 
-**Size**
+**Dimensione**
 
 Elenca le dimensioni in punti disponibili per il tipo di carattere evidenziato. La modifica della dimensione del carattere influisce su tutti gli **Elementi visualizzati** disponibili per la selezione in **Mostra impostazioni per**.
 
 **Elementi visualizzati**
 
-Elenca gli elementi per cui è possibile modificare il colore di primo piano e sfondo.
+Consente di visualizzare l'elenco di tutti gli elementi di cui è possibile modificare il colore di primo piano e quello di sfondo.
 
 > [!NOTE]
 > L'elemento visualizzato predefinito è **Testo normale**. Di conseguenza, le proprietà assegnate a **Testo normale** verranno sostituite dalle proprietà assegnate ad altri elementi visualizzati. Se, ad esempio, si assegna il colore blu a **Testo normale** e il colore verde a **Identificatore**, tutti gli identificatori verranno visualizzati in verde. In questo esempio le proprietà di **Identificatore** sostituiscono le proprietà di **Testo normale**.
@@ -104,7 +104,7 @@ Alcuni degli elementi visualizzati includono:
 |**Testo normale**|Testo nell'editor.|
 |**Testo selezionato**|Testo incluso nella selezione corrente quando l'editor ha lo stato attivo.|
 |**Testo selezionato inattivo**|Testo incluso nella selezione corrente quando l'editor perde lo stato attivo.|
-|**Margine indicatore**|Il margine a sinistra dell'Editor di codice in cui vengono visualizzate le icone dei punti di interruzione e dei segnalibri.|
+|**Margine indicatore**|ovvero il margine a sinistra dell'editor del codice in cui vengono visualizzati i punti di interruzione e le icone dei segnalibri.|
 |**Numeri di riga**|Numeri facoltativi visualizzati accanto a ogni riga di codice|
 |**Spazio vuoto visibile**|Spazi, tabulazioni e indicatori di a capo automatico|
 |**Segnalibro**|Righe con segnalibri. L'opzione **Segnalibro** è visibile solo se viene disabilitato il margine indicatore.|
@@ -127,7 +127,7 @@ Alcuni degli elementi visualizzati includono:
 |**Campo dipendente da frammento di codice**|Un campo che verrà aggiornato in seguito alla modifica del campo modificabile corrente.|
 |**Campo frammento di codice**|Campo modificabile quando è attivo un frammento di codice.|
 |**Testo comprimibile**|Un blocco di testo o codice che può essere aggiunto o rimosso dalla visualizzazione all'interno dell'Editor di codice.|
-|**Commentoo**|Commenti del codice.|
+|**Commento**|Commenti del codice.|
 |**Errore del compilatore**|Linee a zigzag blu nell'editor che indicano un errore del compilatore.|
 |**Area non interessata dal code coverage**|Codice non interessato da un unit test.|
 |**Area parzialmente interessata dal code coverage**|Codice interessato parzialmente da un unit test.|
@@ -152,10 +152,10 @@ Alcuni degli elementi visualizzati includono:
 |**Parola chiave**|Parole chiave riservate per il linguaggio specificato. Ad esempio: class e namespace.|
 |**Indirizzo di memoria**|Colore del testo usato per visualizzare la colonna dell'indirizzo all'interno della finestra **Memoria**.|
 |**Memoria modificata**|Colore del testo usato per visualizzare i dati modificati all'interno della finestra **Memoria**.|
-|**Dati memoria**|Colore del testo usato per visualizzare i dati all'interno della finestra **Memoria**.|
+|**Dati memoria**|Colore del testo utilizzato per visualizzare i dati all'interno della finestra **Memoria.**|
 |**Memoria illeggibile**|Colore del testo usato per visualizzare le aree della memoria illeggibili all'interno della finestra **Memoria**.|
 |**Numero**|Numero nel codice che rappresenta un valore numerico effettivo.|
-|**Operator**|Operatori come +, - e !=.|
+|**Operatore**|Operatori come +, - e !=.|
 |**Altro errore**|Altri tipi di errore non coperti da altre sottolineature a zigzag per gli errori. Attualmente sono incluse le modifiche non applicabili in Modifica e continuazione.|
 |**Parola chiave preprocessore**|Parole chiave usate dal preprocessore come #include.|
 |**Area in sola lettura**|Codice non modificabile. Ad esempio codice visualizzato nella finestra Definizione codice o codice che non può essere modificato durante Modifica e continuazione.|
@@ -164,10 +164,10 @@ Alcuni degli elementi visualizzati includono:
 |**Effettua refactoring del campo dipendente**|Colore o riferimenti dell'elemento di cui effettuare il refactoring nella finestra di dialogo **Anteprima modifiche**.|
 |**Registra dati**|Colore del testo usato per visualizzare i dati all'interno della finestra **Registri**.|
 |**Registra NAT**|Colore del testo usato per visualizzare i dati e gli oggetti non riconosciuti all'interno della finestra **Registri**.|
-|**Smart tag**|Usato per indicare la struttura quando vengono richiamati gli smart tag.|
+|**Smart Tag**|Usato per indicare la struttura quando vengono richiamati gli smart tag.|
 |**Indicatore DML SQL**|Si applica all'editor Transact-SQL. Per impostazione predefinita, le istruzioni DML in questo editor sono contrassegnate con un rettangolo blu.|
 |**Codice non aggiornato**|Codice obsoleto in attesa di aggiornamento. In alcuni casi la funzionalità Modifica e continuazione non consente di applicare immediatamente modifiche al codice, ma le applicherà in seguito mentre si continua con il debug. Ciò si verifica quando si modifica una funzione che deve chiamare la funzione in esecuzione o si aggiungono più di 64 byte di nuove variabili a una funzione in attesa nello stack di chiamate. In questo caso, il debugger viene visualizzata una finestra di dialogo "Avviso di codice non aggiornato" e il codice obsoleto continua a essere eseguito fino a quando la funzione in questione non termina e viene chiamata nuovamente. Questo è il momento in cui Modifica e continuazione applica le modifiche.|
-|**String**|Valori letterali stringa.|
+|**Stringa**|Valori letterali stringa.|
 |**Stringa (C# @ Verbatim)**|Valori letterali stringa in C# che vengono interpretati come verbatim. Ad esempio:<br /><br /> @"x"|
 |**Errore di sintassi**|Errori di analisi.|
 |**Collegamento Elenco attività**|Se a una riga viene aggiunto un collegamento **Elenco attività** e il margine indicatore è disabilitato, la riga verrà evidenziata.|
@@ -210,13 +210,13 @@ Alcuni degli elementi visualizzati includono:
 
 **Primo piano elemento**
 
-Elenca i colori disponibili che è possibile scegliere per il primo piano dell'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di primo piano modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
+Visualizza l'elenco dei colori disponibili che è possibile scegliere per il primo piano dell'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di primo piano modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
 
 **Automatico**
 
 Gli elementi possono ereditare il colore di primo piano da altri elementi visualizzati, ad esempio **Testo normale**. Con questa opzione, quando si modifica il colore di un elemento visualizzato ereditato, cambia automaticamente anche il colore degli elementi visualizzati correlati. Ad esempio, se si seleziona il valore **Automatico** per **Errore del compilatore** e in seguito si modifica il colore di **Testo normale** impostando il rosso, il colore rosso viene ereditato automaticamente anche da **Errore del compilatore**.
 
-**Default**
+**Predefinito**
 
 Il colore visualizzato per l'elemento la prima volta che si apre Visual Studio. È possibile fare clic sul pulsante **Valori predefiniti** per reimpostare questo colore.
 
@@ -225,17 +225,17 @@ Il colore visualizzato per l'elemento la prima volta che si apre Visual Studio. 
 Visualizza la finestra di dialogo Colore che consente di impostare un colore personalizzato per l'elemento selezionato nell'elenco Elementi visualizzati.
 
 > [!NOTE]
-> La possibilità di definire colori personalizzati può essere limitata dalle impostazioni del colore per lo schermo del computer. Ad esempio, se il computer è impostato su 256 colori e si seleziona un colore personalizzato nella finestra di dialogo **Colore**, l'IDE userà per impostazione predefinita il **colore di base** più simile disponibile e visualizzerà il colore nero nella casella di anteprima **Colore**.
+> La possibilità di definire colori personalizzati può venire limitata dalle impostazioni dei colori dello schermo del computer. Ad esempio, se il computer è impostato su 256 colori e si seleziona un colore personalizzato nella finestra di dialogo **Colore**, l'IDE userà per impostazione predefinita il **colore di base** più simile disponibile e visualizzerà il colore nero nella casella di anteprima **Colore**.
 
 **Sfondo elemento**
 
-Visualizza una tavolozza di colori da cui è possibile scegliere un colore di sfondo per l'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di sfondo modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
+Visualizza una tavolozza di colori in cui è possibile scegliere un colore di sfondo per l'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di sfondo modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
 
 **Automatico**
 
 Gli elementi possono ereditare il colore di sfondo da altri elementi visualizzati, ad esempio **Testo normale**. Con questa opzione, quando si modifica il colore di un elemento visualizzato ereditato, cambia automaticamente anche il colore degli elementi visualizzati correlati. Ad esempio, se si seleziona il valore **Automatico** per **Errore del compilatore** e in seguito si modifica il colore di **Testo normale** impostando il rosso, il colore rosso viene ereditato automaticamente anche da **Errore del compilatore**.
 
-**Default**
+**Predefinito**
 
 Il colore visualizzato per l'elemento la prima volta che si apre Visual Studio. È possibile fare clic sul pulsante **Valori predefiniti** per reimpostare questo colore.
 

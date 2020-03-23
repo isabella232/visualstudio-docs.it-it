@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778466"
 ---
 # <a name="performance-session-overview"></a>Panoramica delle sessioni di prestazioni
@@ -76,4 +76,4 @@ In questa panoramica vengono illustrate le nozioni di base della profilatura. Gl
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramiche](../profiling/overviews-performance-tools.md)
-- [Procedura dettagliata: Identificare i problemi di prestazioni](beginners-guide-to-cpu-sampling.md)
+- [Procedura dettagliata: Identificare i problemi di prestazioniWalkthrough: Identify performance problems](beginners-guide-to-cpu-sampling.md)

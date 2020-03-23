@@ -7,10 +7,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 4bd769ebd2605d98b4c8a3c473dfca00f86b0f06
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76158842"
 ---
 | **Valore** | **Risultato** |
@@ -24,4 +24,4 @@ ms.locfileid: "76158842"
 | 5005 | Errore di analisi della riga di comando del programma di avvio automatico |
 | 5007 | L'operazione è stata bloccata. Il computer non soddisfa i requisiti |
 | -1073741510 | Il programma di installazione di Microsoft Visual Studio è stato terminato (dall'utente o da un processo esterno) |
-| Altro<br>(ad esempio:<br>-1, 1, 1603) | Si è verificata una condizione di errore. Per altre informazioni, vedere i log |
+| Altri<br>(ad esempio:<br>-1, 1, 1603) | Si è verificata una condizione di errore. Per altre informazioni, vedere i log |

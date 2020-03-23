@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
 ms.openlocfilehash: d0cf61c94161e6d6bef6cd580e5fb342a177c1c4
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983516"
 ---
 # <a name="projects-and-solutions"></a>Progetti e soluzioni
 
-Visual Studio per Mac offre un  _riquadro della soluzione_ per una visualizzazione struttura ad albero dell'intera soluzione aperta. Il riquadro della **soluzione** consente di accedere facilmente al codice sorgente, alle risorse, alle interfacce utente e ai riferimenti di assembly contenuti nei singoli progetti. Per impostazione predefinita, il riquadro della soluzione apre una soluzione alla volta. Ogni soluzione può includere numerosi progetti e ogni progetto può includere numerosi elementi.
+Visual Studio per Mac fornisce un _riquadro_ della soluzione per visualizzare una visualizzazione albero dell'intera soluzione aperta. Il riquadro della **soluzione** consente di accedere facilmente al codice sorgente, alle risorse, alle interfacce utente e ai riferimenti di assembly contenuti nei singoli progetti. Per impostazione predefinita, il riquadro della soluzione apre una soluzione alla volta. Ogni soluzione può includere numerosi progetti e ogni progetto può includere numerosi elementi.
 
 ## <a name="using-projects-and-solutions"></a>Uso di progetti e soluzioni
 

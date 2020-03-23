@@ -18,15 +18,15 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595345"
 ---
 # <a name="custombuild-task"></a>Attività CustomBuild
 
-Esegue il wrapping dello C++ strumento compilatore Microsoft, cmd. exe. Questa classe deriva da [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), ma non usa il rilevamento file per individuare le dipendenze di file. Affinché la compilazione incrementale funzioni correttamente, tutte le dipendenze devono essere specificate esplicitamente come AdditionalDependencies.
+Esegue il wrapping dello strumento del compilatore di Microsoft C, cmd.exe. Questa classe deriva da [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), ma non usa il rilevamento file per individuare le dipendenze di file. Affinché la compilazione incrementale funzioni correttamente, tutte le dipendenze devono essere specificate esplicitamente come AdditionalDependencies.
 
 ## <a name="parameters"></a>Parametri
 
@@ -34,9 +34,9 @@ La tabella seguente descrive i parametri dell'attività **CustomBuild**.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|**BuildSuffix**|Parametro **string** facoltativo.|
-|**Sources**|Parametro **ITaskItem[]** obbligatorio.|
-|**TrackerLogDirectory**|Parametro **string** facoltativo.|
+|**BuildSuffix**|Parametro **stringa** facoltativo.|
+|**recenti**|Parametro **ITaskItem[]** obbligatorio.|
+|**TrackerLogDirectory**|Parametro **stringa** facoltativo.|
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75596970"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
@@ -21,13 +21,13 @@ In questa introduzione della durata di 5-10 minuti all'ambiente di sviluppo inte
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -35,11 +35,11 @@ Se non è ancora stato installato Visual Studio, accedere alla pagina [Download 
 
 ## <a name="start-page"></a>Pagina iniziale
 
-Il primo elemento visualizzato dopo l'apertura di Visual Studio è molto probabilmente la **Pagina iniziale**. La **Pagina iniziale** è progettata come "centro di smistamento" per facilitare l'accesso ai comandi e ai file di progetto necessari più velocemente. Nella sezione **Recenti** sono visualizzati i progetti e le cartelle usati di recente. In **Nuovo progetto** è possibile fare clic su un collegamento per visualizzare la finestra di dialogo **Nuovo progetto** o in **Apri** è possibile aprire un progetto o una cartella di codice esistente. Sulla destra è visualizzato un feed di notizie aggiornate per sviluppatori.
+Il primo elemento visualizzato dopo l'apertura di Visual Studio è molto probabilmente la **Pagina iniziale**. La **pagina iniziale** è progettata come un "hub" per aiutarti a trovare i comandi e i file di progetto di cui hai bisogno più velocemente. Nella sezione **Recenti** sono visualizzati i progetti e le cartelle usati di recente. In **Nuovo progetto** è possibile fare clic su un collegamento per visualizzare la finestra di dialogo **Nuovo progetto** o in **Apri** è possibile aprire un progetto o una cartella di codice esistente. Sulla destra è visualizzato un feed di notizie aggiornate per sviluppatori.
 
 ![Pagina iniziale di Visual Studio](media/start-page.png)
 
-Se si chiude la **Pagina iniziale** e si vuole visualizzarla di nuovo, è possibile riaprirla dal menu **File**.
+Se chiudi la **pagina iniziale** e vuoi rivederla, puoi riaprirla dal menu **File.**
 
 ![Menu File di Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
@@ -79,11 +79,11 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 
 ::: moniker range=">=vs-2019"
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+1. Nella finestra di avvio scegliere **Crea un nuovo progetto.**
 
    Viene visualizzata la finestra di dialogo **Crea un nuovo progetto**. Nella finestra è possibile cercare, filtrare e selezionare un modello di progetto. La finestra include anche un elenco dei modelli di progetto usati di recente.
 
-1. Nella casella di ricerca in alto digitare **console** per filtrare l'elenco dei tipi di progetto includendo solo quelli che contengono "console" nel nome. Perfezionare ulteriormente i risultati della ricerca scegliendo **C#** (o un altro linguaggio di propria scelta) nel menu di selezione del **Linguaggio**.
+1. Nella casella di ricerca in alto digitare **console** per filtrare l'elenco dei tipi di progetto includendo solo quelli che contengono "console" nel nome. Perfezionare ulteriormente i risultati della ricerca scegliendo ** C# ** (o un altro linguaggio di propria scelta) nel menu di selezione del **Linguaggio**.
 
    ![Finestra di dialogo Nuovo progetto di Visual Studio 2019](media/vs-2019/create-a-new-project.png)
 
@@ -103,7 +103,7 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 
 ![Esplora soluzioni di Visual Studio](media/quickstart-IDE-solution-explorer.png)
 
-## <a name="menus"></a>Menus
+## <a name="menus"></a>Menu
 
 La barra dei menu nella parte superiore di Visual Studio raggruppa i comandi in categorie. Ad esempio, il menu **Progetto** contiene i comandi correlati al progetto in uso. Dal menu **Strumenti** è possibile personalizzare Visual Studio selezionando **Opzioni** oppure aggiungere funzionalità all'installazione selezionando **Ottieni strumenti e funzionalità**.
 
@@ -123,25 +123,25 @@ La barra dei menu nella parte superiore di Visual Studio raggruppa i comandi in 
 
 Aprire la finestra **Elenco errori** scegliendo **Elenco errori** dal menu **Visualizza**.
 
-Nell'**Elenco errori** sono visualizzati gli errori, gli avvisi e i messaggi riguardanti lo stato corrente del codice. Se il file o il progetto in uso contiene errori, ad esempio una parentesi o un punto e virgola mancante, verranno elencati in questa posizione.
+**L'Elenco errori** mostra errori, avvisi e messaggi relativi allo stato corrente del codice. Se il file o il progetto in uso contiene errori, ad esempio una parentesi o un punto e virgola mancante, verranno elencati in questa posizione.
 
 ![Elenco errori in Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>finestra Output
+## <a name="output-window"></a>Finestra Output
 
 Nella finestra **Output** vengono visualizzati i messaggi di output generati dalla compilazione del progetto e dal provider di controllo del codice sorgente.
 
-Ora si procederà alla compilazione del progetto per esaminare alcuni elementi di output della compilazione. Scegliere **Compila soluzione** dal menu **Compila**. La finestra di **Output** ottiene automaticamente lo stato attivo e visualizza un messaggio di completamento della compilazione.
+Ora si procederà alla compilazione del progetto per esaminare alcuni elementi di output della compilazione. Scegliere **Compila soluzione**dal menu **Compila** . Il **Output** finestra ottiene automaticamente lo stato attivo e visualizzare un messaggio di compilazione riuscita.
 
 ![Finestra Output di Visual Studio](media/build-output-minimal.png)
 
-## <a name="search-box"></a>Casella di ricerca
+## <a name="search-box"></a>Casella Cerca
 
 La casella di ricerca è un modo rapido e semplice per eseguire pressoché qualsiasi operazione in Visual Studio. È possibile immettere testo correlato all'operazione che si vuole eseguire e verrà visualizzato un elenco di opzioni pertinenti. Ad esempio, si supponga di voler aumentare il livello di dettaglio dell'output di compilazione per visualizzare più informazioni sulle operazioni eseguite esattamente dalla compilazione. Ecco come si può fare:
 
 ::: moniker range="vs-2017"
 
-1. Individuare la casella di ricerca **Avvio veloce** in alto a destra nell'IDE. In alternativa premere **CTRL**+**Q** per accedere.
+1. Individuare la casella di ricerca **Avvio veloce** in alto a destra nell'IDE. In alternativa, premere **Ctrl**+**Q** per accedervi.
 
 2. Digitare **livello di dettaglio** nella casella di ricerca. Nei risultati visualizzati scegliere **Progetti e soluzioni -> Compila ed Esegui** nella categoria **Opzioni**.
 
@@ -153,7 +153,7 @@ La casella di ricerca è un modo rapido e semplice per eseguire pressoché quals
 
 ::: moniker range=">=vs-2019"
 
-1. Premere **CTRL**+**Q** per attivare la casella di ricerca nella parte superiore dell'IDE.
+1. Premere **Ctrl**+**Q** per attivare la casella di ricerca nella parte superiore dell'IDE.
 
 2. Digitare **livello di dettaglio** nella casella di ricerca. Nei risultati visualizzati scegliere **Modifica livello di dettaglio di MSBuild**.
 
@@ -167,7 +167,7 @@ La casella di ricerca è un modo rapido e semplice per eseguire pressoché quals
 
 4. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **ConsoleApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
 
-   Questa volta la finestra di **Output** mostra una registrazione più dettagliata del processo di compilazione, inclusi i file copiati e la posizione in cui sono stati copiati.
+   Questa volta la finestra **Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file copiati in cui.
 
    ![Output di compilazione dettagliato in Visual Studio](media/build-output-verbose.png)
 
@@ -195,7 +195,7 @@ Sono state presentate solo alcune delle funzionalità di Visual Studio per inizi
 > [Informazioni sull'editor del codice](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
+> [Informazioni su progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

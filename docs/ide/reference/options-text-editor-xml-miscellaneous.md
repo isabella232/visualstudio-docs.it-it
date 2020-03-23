@@ -9,45 +9,45 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568126"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opzioni, Editor di testo, XML, Varie
 
-Usare la pagina delle opzioni **Varie** per modificare le impostazioni di completamento automatico e dello schema per l'editor XML. Per accedere alle opzioni XML, Varie, scegliere **Strumenti** > **Opzioni** > **Editor di testo** > **XML**, quindi scegliere **Varie**.
+Usare la pagina delle opzioni **Varie** per modificare le impostazioni di completamento automatico e dello schema per l'editor XML. Per accedere alle varie opzioni XML, scegliere **Strumenti** > **Opzioni** > **database Editor** > **XML**, quindi **Varie**.
 
 ## <a name="auto-insert"></a>Inserimento automatico
 
-**Tag di chiusura**
+**Chiudi i tag**
 
-L'editor di testo aggiunge tag di chiusura durante la creazione di elementi XML. Se si seleziona il tag di inizio di un elemento, l'editor inserisce il tag di chiusura corrispondente, incluso un prefisso di spazio dei nomi corrispondente. Per impostazione predefinita, questa casella di controllo è selezionata.
+L'editor di testo aggiunge tag di chiusura durante la creazione di elementi XML. Se viene selezionato il tag di inizio di un elemento, viene inserito automaticamente il tag di chiusura corrispondente, che include un prefisso di spazio dei nomi corrispondente. Questa casella di controllo è selezionata per impostazione predefinita.
 
 **Virgolette per gli attributi**
 
-Quando si creano attributi XML, l'editor inserisce i caratteri `="` e `"` e posiziona l'accento circonflesso ( **^** ) all'interno delle virgolette. Per impostazione predefinita, questa casella di controllo è selezionata.
+Quando si creano attributi XML, `="` `"` l'editor inserisce**^** i caratteri e e posiziona il carattere di inserimento ( ) all'interno delle virgolette. Questa casella di controllo è selezionata per impostazione predefinita.
 
-**Dichiarazioni dello spazio dei nomi**
+**Dichiarazioni degli spazi dei nomi**
 
-L'editor inserisce automaticamente le dichiarazioni dello spazio dei nomi ovunque siano necessarie. Per impostazione predefinita, questa casella di controllo è selezionata.
+Vengono inserite automaticamente le dichiarazioni degli spazi dei nomi, se necessarie. Questa casella di controllo è selezionata per impostazione predefinita.
 
 **Altri markup (commenti, CDATA)**
 
-Commenti, CDATA, DOCTYPE, istruzioni di elaborazione e altri markup vengono completati automaticamente. Per impostazione predefinita, questa casella di controllo è selezionata.
+Commenti, CDATA, DOCTYPE, istruzioni di elaborazione e altri markup vengono completati automaticamente. Questa casella di controllo è selezionata per impostazione predefinita.
 
 ## <a name="network"></a>Rete
 
 **Scarica automaticamente le DTD e gli schemi**
 
-Gli schemi e le DTD (Document Type Definitions) vengono scaricati automaticamente dalle posizioni HTTP. Questa funzionalità usa System.Net con il rilevamento automatico dei server proxy abilitato. Per impostazione predefinita, questa casella di controllo è selezionata.
+Gli schemi e le definizioni DTD (Document Type Definitions) vengono scaricati automaticamente da percorsi HTTP. Questa caratteristica utilizza System.Net con il rilevamento automatico del server proxy. Questa casella di controllo è selezionata per impostazione predefinita.
 
-## <a name="outlining"></a>struttura
+## <a name="outlining"></a>Struttura
 
-**Attiva modalità struttura all'apertura del file**
+**Attiva modalità struttura all'apertura dei file**
 
-Attiva la funzionalità struttura quando un file è aperto. Per impostazione predefinita, questa casella di controllo è selezionata.
+Attiva la modalità struttura quando viene aperto un file. Questa casella di controllo è selezionata per impostazione predefinita.
 
 ## <a name="caching"></a>Memorizzazione nella cache
 

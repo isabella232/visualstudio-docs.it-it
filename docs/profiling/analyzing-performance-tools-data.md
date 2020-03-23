@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 90752fd8e34769530f1b95dd439a46c71fe985a0
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779831"
 ---
 # <a name="analyze-performance-tools-data"></a>Analizzare i dati degli strumenti per le prestazioni
@@ -31,12 +31,12 @@ I report sulle prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](.
 
 |Attività|Contenuto correlato|
 |----------|---------------------|
-|**Usare le regole di prestazioni per identificare rapidamente i problemi:** le regole di prestazioni degli strumenti di profilatura identificano i problemi comuni e consentono di passare facilmente al codice di origine contenente il problema. Gli argomenti della Guida dettagliati offrono spesso una soluzione.|-   [Usare le regole per le prestazioni per analizzare dati](../profiling/using-performance-rules-to-analyze-data.md)|
-|**Comprendere i dettagli della visualizzazione dei report:** le visualizzazioni dei report degli strumenti di profilatura offrono dati sulle prestazioni aggregati relativi a processi, thread, moduli e funzioni dell'esecuzione di una profilatura. I dati visualizzati variano a seconda del metodo di profilatura usato per raccogliere i dati.|-   [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md)|
-|**Configurare, ordinare e filtrare le visualizzazioni dei report:** è possibile specificare e ordinare le colonne di dati da visualizzare in un report, ordinare le righe del report e filtrare i dati in modo da includere solo un intervallo di tempo specificato.|-   [Personalizzare le visualizzazioni dei report sugli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)|
+|**Usare le regole di prestazioni per identificare rapidamente i problemi:** le regole di prestazioni degli strumenti di profilatura identificano i problemi comuni e consentono di passare facilmente al codice di origine contenente il problema. Gli argomenti della Guida dettagliati offrono spesso una soluzione.|-   [Usare le regole delle prestazioni per analizzare i datiUse performance rules to analyze data](../profiling/using-performance-rules-to-analyze-data.md)|
+|**Comprendere i dettagli della visualizzazione dei report:** le visualizzazioni dei report degli strumenti di profilatura offrono dati sulle prestazioni aggregati relativi a processi, thread, moduli e funzioni dell'esecuzione di una profilatura. I dati visualizzati variano a seconda del metodo di profilatura usato per raccogliere i dati.|-   [Visualizzazioni dei rapporti sul rendimento](../profiling/performance-report-views.md)|
+|**Configurare, ordinare e filtrare le visualizzazioni dei report:** è possibile specificare e ordinare le colonne di dati da visualizzare in un report, ordinare le righe del report e filtrare i dati in modo da includere solo un intervallo di tempo specificato.|-   [Personalizzare le visualizzazioni dei report degli strumenti di prestazioni](../profiling/customizing-performance-tools-report-views.md)|
 
 ## <a name="related-sections"></a>Sezioni correlate
-- [Confrontare i file di dati delle prestazioni](../profiling/comparing-performance-data-files.md)
+- [Confrontare i file di dati sulle prestazioni](../profiling/comparing-performance-data-files.md)
 
 - [Salvare ed esportare i dati degli strumenti per le prestazioni](../profiling/saving-and-exporting-performance-tools-data.md)
 

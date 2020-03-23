@@ -1,6 +1,6 @@
 ---
-title: Converti istruzione if in istruzione switch o espressione switch
-ms.date: 02/12/2020
+title: Convertire un'istruzione if in un'istruzione switch o un'espressione switch
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -9,32 +9,38 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb0c06fe0493f973ea9cf0a566ffda45a49eeeff
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 93ad96809c77d5644b13e6221a41f0b182fb448f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77280782"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094149"
 ---
-# <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Converti istruzione if in istruzione switch o espressione switch
+# <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Convertire un'istruzione if in un'istruzione switch o un'espressione switch
 
 Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** Converte un'istruzione if in un' [istruzione switch](/dotnet/csharp/language-reference/keywords/switch) o nell' C# [espressione switch](/dotnet/csharp/whats-new/csharp-8#switch-expressions)8,0.
+**Cosa:** Convertire un'istruzione if in [un'istruzione switch](/dotnet/csharp/language-reference/keywords/switch) o nell'espressione [switch](/dotnet/csharp/whats-new/csharp-8#switch-expressions)di C. 8.0 .
 
-**Quando:** Si vuole convertire un'istruzione `if` in un'istruzione `switch` o un'espressione `switch` e viceversa. 
+**Quando:** Si desidera convertire `if` un'istruzione in un'istruzione `switch` o un'espressione `switch` e viceversa. 
 
-**Motivo:** Se si usa un'istruzione `if`, questo refactoring consente una semplice transizione a istruzioni `switch` o `switch` espressioni.
+**Perché:** Se si utilizza `if` un'istruzione, questo refactoring `switch` consente `switch` una transizione semplice a istruzioni o espressioni.
 
 ## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore nella parola chiave `if`.
-2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
-3. Selezionare **Converti nell'istruzione ' switch '** .
+2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+3. Selezionare una delle due opzioni seguenti: 
 
-   ![Converti istruzione if in istruzione switch o espressione switch](media/convert-if-statement-to-switch-statement-or-switch-expression.png) 
+    Selezionare **Converti in istruzione 'switch'.**
+
+   ![Converti istruzione if in istruzione switch](media/convert-if-to-switch-statement.png) 
+
+    Selezionare **Converti in espressione 'switch'.** 
+
+    ![Converti istruzione if in espressione switch](media/convert-if-to-switch-expression.png) 
 
 ## <a name="see-also"></a>Vedere anche
 

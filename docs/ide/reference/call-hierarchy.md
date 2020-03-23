@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595800"
 ---
 # <a name="view-call-hierarchy"></a>Visualizzare la gerarchia di chiamata
@@ -28,7 +28,7 @@ In Visual Studio, è possibile visualizzare una gerarchia di chiamata in fase di
 
 Per visualizzare la finestra **Gerarchia di chiamata**, fare clic con il pulsante destro del mouse nell'editor del codice sul nome di una chiamata a un metodo, una proprietà o un costruttore e quindi scegliere **Visualizza gerarchia delle chiamate**.
 
-Il nome del membro viene visualizzato in un riquadro con visualizzazione struttura ad albero nella finestra **Gerarchia di chiamata**. Se si espande il nodo membro, vengono visualizzate le **chiamate al** *nome*del C++membro e per le **chiamate dal nome del** *membro*.
+Il nome del membro viene visualizzato in un riquadro con visualizzazione struttura ad albero nella finestra **Gerarchia di chiamata**. Se si espande il nodo del membro, vengono visualizzati i sottonodi **Chiamate a** *nome membro* e per C++ **Chiamate da** *nome membro*.
 
 Per il codice C++, è possibile visualizzare le chiamate da e verso un membro:
 
@@ -54,10 +54,10 @@ Quando si seleziona un membro figlio nel riquadro della visualizzazione struttur
 
 - Il riquadro dei dettagli **Gerarchia di chiamata** visualizza tutte le righe di codice in cui tale membro figlio viene chiamato dal membro padre.
 
-- La finestra **Definizione codice**, se aperta, visualizza il codice per il membro selezionato (solo C++). Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).
+- Nella finestra **Definizione codice,** se aperta, viene visualizzato il codice per il membro selezionato (solo in C. Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).
 
 > [!NOTE]
-> La funzionalità **Gerarchia di chiamata** non trova riferimenti ai gruppi di metodi, che includono le posizioni in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.
+> La funzionalità **Gerarchia** di chiamata non trova i riferimenti al gruppo di metodi, incluse le posizioni in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.
 
 ## <a name="shortcut-menu-items"></a>Comandi del menu di scelta rapida
 

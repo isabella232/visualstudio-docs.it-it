@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594188"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense per i file di codice di Visual Basic
@@ -39,7 +39,7 @@ I suggerimenti per la sintassi visualizzano la sintassi dell'istruzione che si s
 
 Il completamento può essere disattivato per impostazione predefinita deselezionando **Elenco membri automatico** dalla pagina **Generale** delle proprietà nella cartella **Visual Basic**.
 
-È possibile richiamare manualmente il completamento richiamando Elenca membri, Completa parola o **ALT**+**Freccia DESTRA**. Per altre informazioni, vedere [Utilizzo di IntelliSense](../ide/using-intellisense.md).
+È possibile richiamare manualmente il completamento richiamando Elenca membri, Parola completa o **Alt**+**freccia destra**. Per altre informazioni, vedere [Utilizzo di IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense sensibile all'area
 

@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77630639"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094566"
 ---
 # <a name="zipdirectory-task"></a>Attività ZipDirectory
 
@@ -38,7 +38,7 @@ Crea un archivio con estensione *zip* dal contenuto di una directory.
 
 ## <a name="parameters"></a>Parametri
 
- Nella tabella che segue vengono descritti i parametri dell'attività `ZipDirectory`.
+ Nella tabella che segue vengono descritti i parametri dell'attività `ZipDirectory` .
 
 |Parametro|Descrizione|
 |---------------|-----------------|
@@ -48,11 +48,11 @@ Crea un archivio con estensione *zip* dal contenuto di una directory.
 
 ## <a name="remarks"></a>Osservazioni
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 
- L'esempio seguente crea un archivio con estensione *zip* dalla directory di output dopo la compilazione di un progetto.
+ L'esempio seguente (se utilizzato come file *con estensione targets* importato) crea un archivio con estensione *zip* dalla directory di output dopo la compilazione di un progetto. La `$(OutputPath)` proprietà viene in genere definita in un file di progetto MSBuild, pertanto `output.zip`un file di progetto che importa il file seguente produrrebbe un archivio zip:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

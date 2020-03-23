@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595462"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
 Registra tutte le attività nel file di log per la risoluzione dei problemi. Il file verrà visualizzato dopo aver chiamato `devenv /log` almeno una volta. Per impostazione predefinita, il file di log è disponibile qui:
 
-**%APPDATA%\\Microsoft\\VisualStudio\\** \<versione\> **\\ActivityLog.xml**
+**%APPDATA%\\\\Microsoft\\VisualStudio**\<Versione\>**\\ActivityLog.xml**
 
 dove \<Versione\> indica la versione di Visual Studio. È tuttavia possibile specificare un percorso e un nome di file diversi.
 
@@ -37,9 +37,9 @@ devenv /Log NameOfLogFile
 
 - *NameOfLogFile*
 
-  Richiesto. Percorso completo e nome del file di log in cui salvare le attività.
+  Obbligatorio. Percorso completo e nome del file di log in cui salvare le attività.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Questa opzione deve apparire alla fine della riga di comando, dopo tutte le altre opzioni.
 

@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c0a9967f1248c6dc23c5d70be35788ad9e05eb2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566306"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificare le impostazioni di registrazione dei test di carico
@@ -25,7 +25,7 @@ Durante l'esecuzione del test di carico, il *test controller* effettua lo spooli
 
 |Attività|Argomenti correlati|
 |-|-----------------------|
-|**Salvare i log se un test di carico non riesce:** è possibile specificare se si vuole salvare il log di test quando un test di carico non riesce.|-   [Procedura: Specificare se i test non superati vengono salvati in log di test](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Salvare i log se un test di carico non riesce:** è possibile specificare se si vuole salvare il log di test quando un test di carico non riesce.|-   [Procedura: specificare se gli errori di test vengono salvati nei log di testHow to: Specify if test failures are saved to test logs](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Impostare le dimensioni massime per il file di log:** è possibile modificare il file di configurazione XML associato al servizio del test controller per specificare le dimensioni massime da usare per il file di log.|Modificare `<add key="LogSizeLimitInMegs" value="20"/>` nel file di configurazione XML *QTCcontroller.exe.config*.|
 
 ## <a name="see-also"></a>Vedere anche

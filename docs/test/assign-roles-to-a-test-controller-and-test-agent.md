@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591190"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
@@ -25,7 +25,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - Creare unit test o test codificati dell'interfaccia utente da eseguire con l'impostazione di test.
 
@@ -35,7 +35,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Elementi di soluzione**, scegliere **Aggiungi** e quindi **Nuovo elemento**.
 
-     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
+     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
 2. Nel riquadro **Modelli installati** scegliere **Impostazioni test**.
 
@@ -97,13 +97,13 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 ::: moniker range="vs-2017"
 
-8. Nel menu **test** selezionare **impostazioni test** > **selezionare file di impostazioni test** , quindi scegliere il file *TestSettingDistributedTestWalkthrough. testsettings* .
+8. Scegliere **Impostazioni** > test dal menu **Test,** quindi scegliere il file **Select Test Settings File** *TestSettingDistributedTestWalkthrough.testsettings.*
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. Scegliere **Seleziona file di impostazioni**dal menu **test** . Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
+8. Scegliere Seleziona file **di impostazioni**dal menu **Test** . Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
 
 ::: moniker-end
 

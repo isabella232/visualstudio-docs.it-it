@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37342796f2dd94138136bb837cf6007d19d350c4
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114259"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procedura: modificare la directory dell'output compilato
@@ -45,7 +45,7 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
    ![Proprietà Percorso di output per un progetto Visual Studio C#](media/output-path.png)
    
    > [!NOTE]
-   > In alcuni progetti, per impostazione predefinita, il Framework e il runtime vengono inclusi nel percorso di compilazione. Per modificare questa operazione, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, scegliere **modifica file di progetto**e aggiungere quanto segue:
+   > Alcuni progetti includono per impostazione predefinita framework e runtime nel percorso di compilazione. Per modificare questa impostazione, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni,** scegliere **Modifica file**di progetto e aggiungere quanto segue:
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -60,6 +60,6 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Pagina Compilazione, Creazione progetti (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [Pagina delle proprietà Generale (Progetto)](/cpp/build/reference/general-property-page-project)
-- [Compilare](../ide/compiling-and-building-in-visual-studio.md)
+- [Pagina Compilazione, Progettazione progetti (c'è)Build page, Project Designer (C](../ide/reference/build-page-project-designer-csharp.md)
+- [Pagina delle proprietà Generale (progetto)General Property page (project)](/cpp/build/reference/general-property-page-project)
+- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)

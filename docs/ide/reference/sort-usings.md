@@ -1,21 +1,22 @@
 ---
 title: Ordinare le direttive using
 description: Come ordinare le direttive `using` all'inizio del file in modo da elencarle in ordine alfabetico.
-ms.date: 06/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: de568398b0f12384ee5e913c479da3e6ab61bab8
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: d502abe583c09d6c117ed1083e87cded823bc386
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329089"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093791"
 ---
 # <a name="sort-usings"></a>Ordinare le direttive using
 
@@ -23,16 +24,18 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** ordinare le direttive using.
+- Visual Basic
 
-**Quando:** si vogliono ordinare le direttive `using` all'inizio del file in modo da elencarle in ordine alfabetico. 
+**Cosa:** Ordinare utilizzando.
 
-**Perché?:** è più semplice trovare una direttiva using.
+**Quando:** Si desidera `using` ordinare le direttive all'inizio del file in modo che siano in ordine alfabetico. 
 
-## <a name="how-to"></a>Procedura
+**Perché:** Rende più facile trovare una direttiva using.
+
+## <a name="how-to"></a>Procedure
 
 1. Selezionare **Modifica** dalla barra dei menu.
-2. Selezionare **IntelliSense** > **Ordina using**.
+2. Selezionare **Intellisense** > **Sort Usings**.
 
    ![Ordinare le direttive using](media/sort-usings.png)
 

@@ -17,33 +17,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e8e72ef282911ecb36fb9a16838f6cc311e253e1
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634357"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>attività CreateCSharpManifestResourceName
 
-Crea un C#nome di manifesto di tipo da un nome di file con *estensione resx* specificato o da un'altra risorsa.
+Crea un nome di manifesto di tipo C, da un nome di file *resx* specificato o da un'altra risorsa.
 
 ## <a name="parameters"></a>Parametri
 
- La tabella seguente descrive i parametri dell'[attività CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md).
+ Nella tabella seguente vengono descritti i parametri [dell'attività CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md).
 
 | Parametro | Descrizione |
 | - | - |
-| `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametro di sola lettura di output.<br /><br /> Nomi di manifesto risultanti. |
+| `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametro di sola lettura di output.<br /><br /> Nomi di manifesto risultanti. |
 | `ResourceFiles` | Parametro `String` obbligatorio.<br /><br /> Nome del file di risorse da cui creare il nome di manifesto C#. |
-| `RootNamespace` | Parametro `String` facoltativo.<br /><br /> Spazio dei nomi radice del file di risorse, in genere derivato dal file di progetto. Il valore può essere `null`. |
+| `RootNamespace` | Parametro `String` facoltativo.<br /><br /> Spazio dei nomi radice del file di risorse, in genere derivato dal file di progetto. Può essere `null`. |
 | `PrependCultureAsDirectory` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il nome delle impostazioni cultura viene aggiunto come nome di directory prima del nome di risorsa di manifesto. Il valore predefinito è `true`. |
 | `ResourceFilesWithManifestResourceNames` | Parametro di output di sola lettura `String` facoltativo.<br /><br /> Restituisce il nome del file di risorse che include ora il nome di risorsa di manifesto. |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
- L'[attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) determina il nome di risorsa di manifesto appropriato da assegnare a un file con estensione *resx* specificato o a un altro file di risorse. L'attività fornisce un nome logico a un file di risorse e quindi lo associa a un parametro di output come metadato.
+ [L'attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) determina il nome di risorsa di manifesto appropriato da assegnare a un file *RESX* specificato o a un altro file di risorse. L'attività fornisce un nome logico a un file di risorse e quindi lo associa a un parametro di output come metadato.
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579878"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Passaggio 3: Aggiungere un timer per il conto alla rovescia
@@ -25,7 +25,7 @@ ms.locfileid: "77579878"
 Nella terza parte di questa esercitazione si aggiungerà un timer per il conto alla rovescia per tenere traccia del numero di secondi che rimangono all'esecutore del quiz per completare l'operazione.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz di matematica a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
 ## <a name="to-add-a-countdown-timer"></a>Per aggiungere un timer per il conto alla rovescia
 
@@ -62,7 +62,7 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
      Si è appena aggiunta un'istruzione `if else`, che rappresenta il modo in cui si comunica ai programmi di prendere decisioni. Di seguito è riportato un esempio di istruzione `if else`.
 
     > [!NOTE]
-    > L'esempio seguente è solo a scopo dimostrativo. non aggiungerlo al progetto.
+    > L'esempio seguente è solo a dimostrazione: non aggiungerlo al progetto.
 
     ```vb
     If (something that your program will check) Then
@@ -112,6 +112,6 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 4: aggiungere il metodo metodo CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md)** .
+- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 4: Aggiungere il metodo CheckTheAnswer().](../ide/step-4-add-the-checktheanswer-parens-method.md)**
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md).

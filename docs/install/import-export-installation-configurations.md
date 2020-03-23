@@ -19,17 +19,17 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 12d22334094b848350d44d245685532fed196389
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114846"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importare o esportare configurazioni di installazione
 
 È possibile configurare Visual Studio a livello di organizzazione con file di configurazione dell'installazione. A tale scopo, è sufficiente esportare le informazioni sui carichi di lavoro e i componenti in un file con estensione vsconfig tramite il programma di installazione di Visual Studio. Sarà quindi possibile importare la configurazione in installazioni nuove o esistenti e condividerla con altri utenti.
 
-Ecco come fare.
+Ecco come.
 
 ::: moniker range="vs-2017"
 
@@ -70,7 +70,7 @@ Quando si è pronti per importare un file di configurazione dell'installazione, 
 
 ## <a name="automatically-install-missing-components"></a>Installare automaticamente i componenti mancanti
 
-**Novità di Visual studio 2019**: quando si salva un file con estensione vsconfig nella directory radice della soluzione e quindi si apre una soluzione, Visual Studio rileva automaticamente i componenti mancanti e richiede di installarli.
+**Novità di Visual Studio 2019:** quando si salva un file con estensione vsconfig nella directory radice della soluzione e quindi si apre una soluzione, Visual Studio rileva automaticamente i componenti mancanti e richiede di installarli.
 
 ![Esplora soluzioni suggerisce componenti aggiuntivi](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -78,7 +78,7 @@ Quando si è pronti per importare un file di configurazione dell'installazione, 
 
 1. Fare clic con il pulsante destro del mouse sul file della soluzione.
 
-1. Scegliere **aggiungi** > **file di configurazione dell'installazione**.
+1. Scegliere **Aggiungi** > **File di configurazione dell'installazione**.
 
 1. Verificare il percorso in cui si salvare il file con estensione vconfig e quindi scegliere **Esamina dettagli**.
 

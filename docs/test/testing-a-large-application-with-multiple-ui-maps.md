@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9fa5afd01ad25d4eebdc0b29e924cb2430d9c775
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590293"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
@@ -23,7 +23,7 @@ In questo argomento viene illustrato l'uso dei test codificati dell'interfaccia 
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 
@@ -56,7 +56,7 @@ Creare più mappe dell'interfaccia utente nei tipi di situazioni seguenti:
 
 2. Fare clic con il pulsante destro del sulla cartella `UIMaps`, scegliere **Aggiungi** e quindi **Nuovo elemento**.
 
-    Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
+    La finestra di dialogo **Aggiungi nuovo elemento** viene visualizzata.
 
    > [!NOTE]
    > È necessario essere all'interno di un progetto di test codificato dell'interfaccia utente per aggiungere una nuova mappa di test codificati dell'interfaccia utente.
@@ -145,4 +145,4 @@ namespace ContosoProject
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md)
-- [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md)
+- [Anatomia di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md)

@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114562"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Compilazione e pulizia di progetti e soluzioni in Visual Studio
@@ -38,11 +38,11 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Compilazione e pulizia di progetti e soluzioni in Visual Studio per Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
 
 > [!NOTE]
-> L'interfaccia utente dell'edizione di Visual Studio in uso potrebbe essere diversa da quanto descritto in questo argomento, a seconda delle impostazioni attive. Per modificare le impostazioni, ad esempio per implementare le impostazioni **Generali** o **Visual C++** , scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
+> L'interfaccia utente dell'edizione di Visual Studio in uso potrebbe essere diversa da quanto descritto in questo argomento, a seconda delle impostazioni attive. Per modificare le impostazioni, ad esempio per implementare le impostazioni **Generali** o **Visual C++**, scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Per compilare, ricompilare o pulire un'intera soluzione
 
-1. In **Esplora soluzioni**  scegliere una soluzione o aprire la soluzione voluta.
+1. In **Esplora soluzioni ** scegliere una soluzione o aprire la soluzione voluta.
 
 2. Nella barra dei menu, scegliere **Compila** e quindi scegliere uno dei comandi seguenti:
 
@@ -57,43 +57,43 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Per compilare o ricompilare un progetto singolo
 
-1. In **Esplora soluzioni**  scegliere un progetto o aprire il progetto voluto.
+1. In **Esplora soluzioni ** scegliere un progetto o aprire il progetto voluto.
 
-2. Sulla barra dei menu scegliere **Compila**, quindi scegliere **Compila** *NomeProgetto* o **ricompila** *NomeProgetto*.
+2. Sulla barra dei menu scegliere **Compila**, quindi **Compila** *NomeProgetto* o **Ricompila** *NomeProgetto*.
 
-    - Scegliere **Compila** *NomeProgetto* per compilare solo i componenti del progetto che sono stati modificati rispetto alla build più recente.
+    - Scegliere **Compila** *ProjectName* per compilare solo i componenti del progetto che sono stati modificati dopo la compilazione più recente.
 
-    - Scegliere **ricompila** *NomeProgetto* per "pulire" il progetto e quindi compilare i file di progetto e tutti i componenti del progetto.
+    - Scegliere **Ricompila** *ProjectName* per "pulire" il progetto, quindi compilare i file di progetto e tutti i componenti del progetto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Per compilare il progetto di avvio e le relative dipendenze
 
-1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+1. Nella barra dei menu scegliere**Opzioni** **degli strumenti** > .
 
 2. Nella finestra di dialogo **Opzioni** espandere il nodo **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.
 
-     Si apre la finestra di dialogo **Compila ed esegui** > **Progetti e soluzioni** > **Opzioni**.
+     Verrà visualizzata la finestra di dialogo**Opzioni** **progetti e soluzioni** > di **compilazione ed esecuzione** > .
 
 3. Selezionare la casella di controllo **Compila progetti di avvio e dipendenze solo in fase di esecuzione**.
 
      Se questa casella di controllo è selezionata, solo il progetto di avvio corrente e le relative dipendenze vengono compilati quando si esegue la procedura seguente:
 
-    - Nella barra dei menu scegliere **Debug** > **Avvia** (**F5**).
+    - Nella barra dei menu scegliere**Avvio** **debug** > (**F5**).
 
-    - Nella barra dei menu scegliere **Compila** > **Compila soluzione** (**CTRL**+**MAIUSC**+**B**).
+    - Nella barra dei menu scegliere **Compila** > **soluzione** compilazione **(CTRL**+**MAIUSC**+**B**).
 
-    Quando questa casella di controllo è deselezionata e si eseguono i comandi precedenti vengono compilati tutti i progetti, le relative dipendenze e i file della soluzione. Per impostazione predefinita, questa casella di controllo è deselezionata.
+    Quando questa casella di controllo è deselezionata e si eseguono i comandi precedenti vengono compilati tutti i progetti, le relative dipendenze e i file della soluzione. Per impostazione predefinita, tale casella di controllo è deselezionata.
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Per compilare solo il progetto di Visual C++ selezionato
 
-Scegliere un progetto di [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] e quindi nella barra dei menu scegliere **Compila** > **Solo progetto** e quindi uno dei comandi seguenti:
+Scegliere [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] un progetto, quindi nella barra dei menu scegliere **Compila** > **solo progetto**e uno dei comandi seguenti:
 
-- **Solo compilazione** *NomeProgetto*
+- **Build Only (Compila solo) ** *NomeProgetto*
 
-- **Ricompila solo** *NomeProgetto*
+- **Rebuild Only (Ricompila solo) ** *NomeProgetto*
 
-- **Pulisci solo** *NomeProgetto*
+- **Clean Only (Pulisci solo) ** *NomeProgetto*
 
-- **Solo link** *NomeProgetto*
+- **Link Only (Collega solo) ** *NomeProgetto*
 
 Questi comandi si applicano solo al progetto di [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] scelto. Non eseguono la compilazione, la ricompilazione, la pulizia o il collegamento di eventuali dipendenze del progetto o file di soluzione. A seconda della versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il sottomenu **Project Only** (Solo progetto) potrebbe contenere altri comandi.
 
@@ -107,9 +107,9 @@ Se i file hanno dipendenze, vengono compilati in ordine di dipendenza. L'operazi
 
 Effettuare uno dei passaggi seguenti:
 
-- Nella barra dei menu selezionare **Compila** > **Annulla**.
+- Nella barra dei menu selezionare**Annulla** **compilazione** > .
 
-- Premere **CTRL**+**INTERR**.
+- Premere **CTRL**+**Break**.
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -118,7 +118,7 @@ Effettuare uno dei passaggi seguenti:
 - [Compilazione e creazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Riferimenti alla compilazione in C/C++](/cpp/build/reference/c-cpp-building-reference)
+- [Riferimento dell'edificio C/C](/cpp/build/reference/c-cpp-building-reference)
 - [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md)
 - [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)
 - [Compilazione e pulizia di progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

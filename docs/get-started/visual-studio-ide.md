@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3707e06aa41c4f232a5525ca4422f3941fbe2d1a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589357"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Benvenuti all'IDE di Visual Studio
@@ -42,7 +42,7 @@ Se l'utente è pronto per approfondire maggiormente le attività di codifica, il
 
 - [Usare Visual Studio per creare la prima app Node.js](../ide/quickstart-nodejs.md)
 
-- [Usare Visual Studio per creare la prima C++ app console](/cpp/get-started/tutorial-console-cpp)
+- [Usare Visual Studio per creare la prima app per console di C](/cpp/get-started/tutorial-console-cpp)
 
 ## <a name="see-also"></a>Vedere anche
 
