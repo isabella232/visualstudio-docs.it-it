@@ -1,5 +1,9 @@
 - name: Strumenti di test di Visual Studio
-  href: improve-code-quality.md
+  href: index.yml
+- name: Panoramica
+  items:
+    - name: Presentazione degli strumenti di test
+      href: improve-code-quality.md
 - name: Unit test
   items:
     - name: Panoramica degli strumenti di unit test
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
+        - name: Panoramica
+          href: intellitest-manual/index.md
         - name: 'Procedura: Generare unit test con IntelliTest'
           href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: Panoramica
-          href: intellitest-manual/introduction.md
-        - name: Per iniziare
-          href: intellitest-manual/getting-started.md
-        - name: Indice delle sezioni
-          href: intellitest-manual/index.md
         - name: Generazione di test
           href: intellitest-manual/test-generation.md
         - name: Esecuzione simbolica dinamica

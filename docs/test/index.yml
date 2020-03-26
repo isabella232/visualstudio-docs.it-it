@@ -1,0 +1,64 @@
+### YamlMime:Landing
+title: Strumenti di test di Visual Studio
+summary: Gli strumenti di test di Visual Studio consentono allo sviluppatore e al team di creare e gestire standard di eccellenza del codice elevati.
+metadata:
+  title: Strumenti di test di Visual Studio
+  description: Informazioni su come usare Visual Studio per testare il codice.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 03/23/2020
+  ms.openlocfilehash: cb29c5219cb3ad73cf8a3efeecaf344c7af81968
+  ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 03/25/2020
+  ms.locfileid: "80261568"
+landingContent:
+- title: Informazioni sugli strumenti di test
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Presentazione degli strumenti di test
+      url: improve-code-quality.md
+    - text: Panoramica degli strumenti di unit test
+      url: unit-test-your-code.md
+    - text: Panoramica di Live Unit Testing
+      url: live-unit-testing-intro.md
+- title: Unit test
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Introduzione agli unit test
+      url: getting-started-with-unit-testing.md
+    - text: Creare ed eseguire unit test per codice gestito
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
+    - text: Eseguire unit test con Esplora test
+      url: run-unit-tests-with-test-explorer.md
+    - text: Introduzione a Live Unit Testing
+      url: live-unit-testing-start.md
+    - text: Generare unit test (IntelliTest)
+      url: generate-unit-tests-for-your-code-with-intellitest.md
+- title: Altri strumenti di test
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Code coverage - Determinare la quantità di codice testato
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    - text: Microsoft Fakes - Isolare il codice sottoposto a test
+      url: isolating-code-under-test-with-microsoft-fakes.md
+    - text: Interfaccia utente codificata (deprecata)
+      url: use-ui-automation-to-test-your-code.md
+    - text: Test di carico (deprecato)
+      url: quickstart-create-a-load-test-project.md
+- title: Strumenti correlati (Azure DevOps)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Test manuali ed esplorativi (Azure Test Plans)
+      url: /azure/devops/test/overview?view=azure-devops
+    - text: Test di carico (Azure Test Plans)
+      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops
+    - text: Test continuati (Azure Test Plans)
+      url: /azure/devops/pipelines/?view=azure-devops
