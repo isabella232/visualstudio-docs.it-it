@@ -3,15 +3,16 @@ title: Accesso alle sottoscrizioni di Visual Studio con l'account GitHub | Micro
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come accedere alle sottoscrizioni di Visual Studio con l'account GitHub.
-ms.openlocfilehash: a0a2f69ab3cbab3fdf6c35d9407a59a7c7d49eb1
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947085"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233235"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Accesso alle sottoscrizioni di Visual Studio con l'account GitHub 
 

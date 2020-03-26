@@ -3,15 +3,16 @@ title: Gestire le licenze sovrallocate | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Informazioni per gli amministratori su come risolvere il problema relativo alle sottoscrizioni sovrallocate
-ms.openlocfilehash: 6773196d914306b7e18fe31ce06cc0cd89783ffd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78410275"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232444"
 ---
 # <a name="overallocated-subscriptions"></a>Sottoscrizioni sovrassegnate
 Talvolta gli ordini vengono modificati dopo che sono stati aggiunti dei sottoscrittori, con un conseguente numero di sottoscrizioni assegnate superiore alle licenze detenute dall'azienda. Questo processo è noto come "sovrallocazione".  

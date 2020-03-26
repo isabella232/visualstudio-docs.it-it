@@ -8,22 +8,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ddb082bf2451759be239d5c16404e82bcd84733
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 43126f4bba8afc50fc5c1e4cf6a3b9a67c6f340c
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578154"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233055"
 ---
 # <a name="analyze-memory-usage"></a>Analizzare l'utilizzo della memoria
 
-Per individuare perdite di memoria e un utilizzo inefficiente della memoria, è possibile utilizzare strumenti quali lo strumento di diagnostica Utilizzo memoria integrato nel debugger o strumenti nel Profiler prestazioni, ad esempio lo strumento di allocazione degli oggetti .NET e lo strumento di utilizzo della memoria post-mortem. Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo. È possibile raccogliere snapshot di app .NET, ASP.NET, native o in modalità mista (.NET e native). 
+Per individuare perdite di memoria e un utilizzo inefficiente della memoria, è possibile utilizzare strumenti quali lo strumento di diagnostica Utilizzo memoria integrato nel debugger o strumenti nel Profiler prestazioni, ad esempio lo strumento di allocazione degli oggetti .NET e lo strumento di utilizzo della memoria post-mortem.
 
-Lo strumento **Utilizzo memoria** può essere eseguito in un progetto di Visual Studio aperto, in un'app di Microsoft Store installata o collegato a un'app o un processo in esecuzione. È possibile eseguire lo strumento in computer locali o remoti oppure in un simulatore o in un emulatore. Per ulteriori informazioni, vedere Eseguire strumenti di [profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo. È possibile raccogliere snapshot di app .NET, ASP.NET, native o in modalità mista (.NET e native). Lo strumento **Utilizzo memoria** può essere eseguito in un progetto di Visual Studio aperto, in un'app di Microsoft Store installata o collegato a un'app o un processo in esecuzione. È possibile eseguire lo strumento in computer locali o remoti oppure in un simulatore o in un emulatore. È possibile eseguire lo strumento **Utilizzo memoria** con o senza debug. Per ulteriori informazioni, vedere Eseguire strumenti di [profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Nel debugger è possibile attivare e disattivare la profilatura della memoria e visualizzare un'interruzione per oggetto dell'utilizzo della memoria. È possibile visualizzare i risultati dell'utilizzo della memoria quando l'esecuzione viene sospesa, ad esempio in corrispondenza di un punto di interruzione.
 
-È possibile eseguire lo strumento **Utilizzo memoria** con o senza debug. Nel debugger è possibile attivare e disattivare la profilatura della memoria e visualizzare un'interruzione per oggetto dell'utilizzo della memoria. È possibile visualizzare i risultati dell'utilizzo della memoria quando l'esecuzione viene sospesa, ad esempio in corrispondenza di un punto di interruzione.
-
-Lo strumento **.NET Object Allocation** viene eseguito solo come strumento post-mortem.
+Lo strumento **.NET Object Allocation** consente di identificare i modelli di allocazione e le anomalie nel codice .NET. Questo strumento viene eseguito solo come strumento post-mortem.
 
 Per istruzioni dettagliate che descrivono come utilizzare gli strumenti di analisi della memoria, vedere [l'esercitazione Analizzare l'utilizzo](../profiling/memory-usage.md) della memoria e [lo strumento Allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md).
 

@@ -3,15 +3,16 @@ title: Disponibilità dei prodotti per i download di software nelle sottoscrizio
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni sulla disponibilità dei prodotti nei download di software per le sottoscrizioni di Visual Studio
-ms.openlocfilehash: 30dd3a216274e189d4d1afe2321bd1db7b66fb94
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 7b6b3bf3dbcf75a33853a9af5edf51e3ef1165a8
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947095"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232308"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilità dei prodotti per i download di software nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.

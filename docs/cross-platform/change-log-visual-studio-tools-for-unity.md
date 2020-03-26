@@ -1,7 +1,7 @@
 ---
 title: Log delle modifiche (Visual Studio Tools per Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 12/02/2019
+ms.date: 3/23/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,66 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0b1d735cd05f79eaabd00a575a6c050b37ce2d16
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74706790"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232831"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="4510"></a>4.5.1.0
+
+Rilasciato il 16 marzo 2020
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+  - Aggiunto un soppressore per [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md). I metodi privati utilizzati con Invoke, InvokeRepeating, StartCoroutine o StopCoroutine non devono essere contrassegnati come inutilizzati.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Correzione della documentazione di OnDrawGizmos/OnDrawGizmosSelectedFixed OnDrawGizmos/OnDrawGizmos documentation
+
+- **Valutazione:**
+
+  - Correzione dell'ispezione degli argomenti lambda.
+
+## <a name="4501"></a>4.5.0.1
+
+Rilasciato il 19 febbraio 2020
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Correzione [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) del controllo diagnostico per la firma del messaggio non corretto. Durante l'ispezione di tipi con più livelli di ereditarietà, questa diagnostica potrebbe non riuscire con il seguente messaggio: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
+
+## <a name="4500"></a>4.5.0.0
+
+Rilasciato il 22 gennaio 2020
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+  - Aggiunto il supporto per i file HLSL.
+  
+  - Aggiunto un soppressore per [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md). I campi `SerializeField` privati con l'attributo non devono essere contrassegnati come inutilizzati.
+  
+  - Aggiunto un soppressore per [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md). I campi `SerializeField` con l'attributo non devono essere contrassegnati come non assegnati.  
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Generazione corretta`GenerateTargetFrameworkMonikerAttribute` del progetto (la destinazione non si trovava sempre correttamente)
 
 ## <a name="4420"></a>4.4.2.0
 
@@ -49,7 +99,7 @@ Rilasciato il 6 novembre 2019
 
 - **Integrazione:**
 
-  - Corretto l'analizzatore `UNT0002` di confronto di tag con espressioni binarie e di chiamata avanzate.
+  - Corretto l'analizzatore [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md) di confronto di tag con espressioni binarie e di chiamata avanzate.
 
 ### <a name="deprecated-features"></a>Caratteristiche deprecate
 
@@ -65,7 +115,7 @@ Rilasciato il 15 ottobre 2019
 
 - **Integrazione:**
 
-  - Aggiunto un soppressore per `IDE0060` (parametro inutilizzato) per tutti i messaggi Unity.
+  - Aggiunto un soppressore per [`IDE0060`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) (parametro inutilizzato) per tutti i messaggi Unity.
   
   - Aggiunta una descrizione rapida per `TooltipAttribute`i campi contrassegnati con . (Questo funzionerà per una semplice funzione di accesso get utilizzando anche questo campo).
 
@@ -88,21 +138,21 @@ Rilasciato il 16 settembre 2019
 - **Integrazione:**
 
   - Abbiamo approfondito la comprensione che Visual Studio ha per I progetti Unity aggiungendo una nuova diagnostica specifica per Unity.We've deepened the understanding that Visual Studio has for Unity projects by adding new diagnostics specific to Unity. Inoltre, l'IDE è stata resa più intelligente eliminando la diagnostica C# generale non applicabile ai progetti Unity. Ad esempio, l'IDE non mostrerà una correzione rapida `readonly` per modificare una variabile di controllo in cui si impedirà di modificare la variabile nell'Editor di Unity.
-    - `UNT0001`: i messaggi Unity vengono chiamati dal runtime anche se sono vuoti, non dichiararli per evitare uncesseray processing dal runtime Unity.
-    - `UNT0002`: il confronto dei tag che utilizza l'uguaglianza delle stringhe è più lento del metodo CompareTag incorporato.
-    - `UNT0003`: l'utilizzo della forma generica di GetComponent è preferibile per l'indipendenza dai tipi.
-    - `UNT0004`: il messaggio di aggiornamento dipende dalla frequenza dei fotogrammi e deve utilizzare Time.deltaTime anziché Time.fixedDeltaTime.
-    - `UNT0005`: il messaggio FixedUpdate è indipendente dalla frequenza dei fotogrammi e deve utilizzare Time.fixedDeltaTime anziché Time.deltaTime.
-    - `UNT0006`: è stata rilevata una firma del metodo non corretta per questo messaggio Unity.
-    - `UNT0007`: Unity esegue l'override dell'operatore di confronto null per gli oggetti Unity che non è compatibile con il coalescing null.
-    - `UNT0008`: Unity esegue l'override dell'operatore di confronto null per gli oggetti Unity, incompatibile con la propagazione null.
-    - `UNT0009`: quando si applica l'attributo InitializeOnLoad a una classe, è necessario fornire un costruttore statico. L'attributo InitializeOnLoad garantisce che verrà chiamato all'avvio dell'editor.
-    - `UNT0010`: MonoBehaviours deve essere creato solo utilizzando AddComponent(). un MonoBehaviour è un componente e deve essere associato a un GameObject.
-    - `UNT0011`: ScriptableObject deve essere creato solo utilizzando CreateInstance(). Gli ScriptableObject devono essere creati dal motore di Unity per gestire i metodi relativi ai messaggi di Unity.
-    - `USP0001`for `IDE0029`: Gli oggetti Unity non devono utilizzare il coalescing nullo.
-    - `USP0002`for `IDE0031`: gli oggetti Unity non devono utilizzare la propagazione null.
-    - `USP0003`for `IDE0051`: I messaggi Unity vengono richiamati dal runtime Unity.
-    - `USP0004`for `IDE0044`: I campi con un attributo SerializeField non devono essere resi di sola lettura.
+    - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md): i messaggi Unity vengono chiamati dal runtime anche se sono vuoti, non dichiararli per evitare uncesseray processing dal runtime Unity.
+    - [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md): il confronto dei tag che utilizza l'uguaglianza delle stringhe è più lento del metodo CompareTag incorporato.
+    - [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0003.md): l'utilizzo della forma generica di GetComponent è preferibile per l'indipendenza dai tipi.
+    - [`UNT0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0004.md): il messaggio di aggiornamento dipende dalla frequenza dei fotogrammi e deve utilizzare Time.deltaTime anziché Time.fixedDeltaTime.
+    - [`UNT0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0005.md): il messaggio FixedUpdate è indipendente dalla frequenza dei fotogrammi e deve utilizzare Time.fixedDeltaTime anziché Time.deltaTime.
+    - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md): è stata rilevata una firma del metodo non corretta per questo messaggio Unity.
+    - [`UNT0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0007.md): Unity esegue l'override dell'operatore di confronto null per gli oggetti Unity che non è compatibile con il coalescing null.
+    - [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0008.md): Unity esegue l'override dell'operatore di confronto null per gli oggetti Unity, incompatibile con la propagazione null.
+    - [`UNT0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0009.md): quando si applica l'attributo InitializeOnLoad a una classe, è necessario fornire un costruttore statico. L'attributo InitializeOnLoad garantisce che verrà chiamato all'avvio dell'editor.
+    - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0010.md): MonoBehaviours deve essere creato solo utilizzando AddComponent(). un MonoBehaviour è un componente e deve essere associato a un GameObject.
+    - [`UNT0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0011.md): ScriptableObject deve essere creato solo utilizzando CreateInstance(). Gli ScriptableObject devono essere creati dal motore di Unity per gestire i metodi relativi ai messaggi di Unity.
+    - [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0001.md)for `IDE0029`: Gli oggetti Unity non devono utilizzare il coalescing nullo.
+    - [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0002.md)for `IDE0031`: gli oggetti Unity non devono utilizzare la propagazione null.
+    - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0003.md)for `IDE0051`: I messaggi Unity vengono richiamati dal runtime Unity.
+    - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md)for `IDE0044`: I campi con un attributo SerializeField non devono essere resi di sola lettura.
 
 ## <a name="4310"></a>4.3.1.0
 

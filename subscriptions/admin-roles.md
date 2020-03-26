@@ -3,15 +3,16 @@ title: Ruoli di amministratore con privilegi avanzati e amministratore nel porta
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Informazioni sui ruoli di amministratore con privilegi avanzati e amministratore e su come assegnare gli amministratori.
-ms.openlocfilehash: ef0ba479c099bf1e34fe871386984297b130ffd6
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: ce76a2aaf970926d171086e65ba2d364e1526d61
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78234827"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232748"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Amministratori con privilegi avanzati e amministratori per i contratti di sottoscrizione di Visual Studio
 

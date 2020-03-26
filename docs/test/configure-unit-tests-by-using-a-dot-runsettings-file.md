@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 16ba88a11acd488ba70096e0b394a734e65011f5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cad3a644935e14a605dbef02bddc1f9337c1f5e9
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549903"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233089"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare unit test utilizzando un file *con estensione runsettings*
 
@@ -259,6 +259,7 @@ L'elemento **RunConfiguration** può includere gli elementi seguenti:
 |**TestAdaptersPaths**||Uno o più percorsi della directory in cui si trovano i TestAdapter|
 |**MaxCpuCount**|1|Questa impostazione determina il livello di esecuzione parallela dei test durante l'esecuzione di unit test, in base ai core disponibili nel computer. Il motore di esecuzione dei test viene avviato come processo distinto in ogni core disponibile e assegna a ogni core un contenitore con test da eseguire. Un contenitore può essere un assembly, una DLL o un artefatto pertinente. Il contenitore di test è l'unità di pianificazione. In ogni contenitore, i test vengono eseguiti in base al framework di test. Se sono presenti molti contenitori, non appena termina l'esecuzione dei test in un contenitore, i processi vengono assegnati al successivo contenitore disponibile.<br /><br />MaxCpuCount può essere:<br /><br />n, dove 1 < = n < = numero di core: vengono avviati fino a n processi<br /><br />n, dove n - qualsiasi altro valore: il numero di processi avviati può essere fino al numero di core disponibili. Ad esempio, impostare n-0 per consentire alla piattaforma di decidere automaticamente il numero ottimale di processi da avviare in base all'ambiente.|
 |**TestSessionTimeout**||Consente agli utenti di terminare una sessione di test allo scadere di un timeout specificato. L'impostazione di un timeout assicura un consumo ottimale delle risorse e consente di vincolare le sessioni di test a un periodo di tempo stabilito. L'impostazione è disponibile in **Visual Studio 2017 versione 15.5** e versioni successive.|
+|**Percorso di dotnetHost**||Specificare un percorso personalizzato per l'host dotnet utilizzato per eseguire testhost. Ciò è utile quando si compila un proprio dotnet, ad esempio quando si compila il repository dotnet/runtime. Specificando questa opzione salterà la ricerca di testhost.exe e utilizzerà sempre il file testhost.dll. 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adattatori dati di diagnostica (agenti di raccolta dati)
 
