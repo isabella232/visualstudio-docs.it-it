@@ -3,15 +3,16 @@ title: Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Products 
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Product and Services Agreement)
-ms.openlocfilehash: e4416bfab95bd7d1c38c392bfbf9efee9a06fc7f
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e59929404febda5a07ba13f7dc230ab89e09addf
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78410251"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232208"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Product and Services Agreement)
 Se sono state acquistate sottoscrizioni di Visual Studio tramite il programma MPSA, è necessario tenere presente alcuni aspetti prima di poter diventare un amministratore di sottoscrizioni di Visual Studio e assegnare le sottoscrizioni agli utenti. Se il proprio account è già stato configurato come amministratore, è possibile passare direttamente al [portale di amministrazione](https://manage.visualstudio.com/) delle sottoscrizioni di Visual Studio.

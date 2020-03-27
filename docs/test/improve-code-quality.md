@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6dd0f0df6dde5c1f3553ab86374e71dfef82384
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594364"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256231"
 ---
-# <a name="testing-tools-in-visual-studio"></a>Strumenti di test di Visual Studio
+# <a name="first-look-at-testing-tools-in-visual-studio"></a>Esaminare gli strumenti di test in Visual StudioFirst look at testing tools in Visual Studio
 
 Gli strumenti di test di Visual Studio consentono allo sviluppatore e al team di creare e gestire standard di eccellenza del codice elevati.
 
@@ -67,7 +67,7 @@ L'analisi di code coverage può essere applicata sia al codice gestito che a que
 
 Il code coverage è un'opzione per l'esecuzione dei metodi di test utilizzando Esplora test. Nella tabella dei risultati viene illustrata la percentuale di codice che è stata eseguita per ogni assembly, classe e metodo. Inoltre, nell'editor standard viene visualizzato il codice testato.
 
-* [Utilizzare il code coverage per determinare la quantità di codice sottoposta a test](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Usare la funzionalità code coverage per determinare la quantità di codice testato](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Lab su unit test, code coverage e analisi dei cloni di codice con Visual Studio](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 * [Personalizzare l'analisi code coverage](customizing-code-coverage-analysis.md)
 

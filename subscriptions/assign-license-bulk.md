@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o i gruppi di Microsoft Azure Active Directory
-ms.openlocfilehash: 3a4a6c400a17d52cdd67391a45ba088cdbb7af01
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988481"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274063"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
@@ -104,6 +104,10 @@ L'utilizzo di questa funzionalità semplifica il mantenersi in primo piano sulle
 7. Per visualizzare il gruppo aggiunto, scorrere fino alla fine dell'elenco di utenti.  
 
 8. Selezionare **Visualizza sottoscrittori** per visualizzare i membri del gruppo. È possibile visualizzare i dettagli sui sottoscrittori del gruppo, ma non è possibile apportare modifiche ai sottoscrittori o alle sottoscrizioni a cui sono assegnati.    
+
+> [!NOTE]
+> Se le sottoscrizioni sono già state assegnate singolarmente agli utenti aggiunti successivamente come parte di un gruppo di Azure AD, verranno aggiunti come parte del gruppo e non verranno più elencati singolarmente. Tuttavia, se la singola sottoscrizione è per un livello di sottoscrizione diverso, avranno due sottoscrizioni.  Esempio: se un utente ha una singola sottoscrizione di Visual Studio Professional e sono membri di un gruppo a cui si assegnano le sottoscrizioni di Visual Studio Enterprise, entrambi avranno.  
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

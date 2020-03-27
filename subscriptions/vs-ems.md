@@ -1,17 +1,18 @@
 ---
 title: Vantaggio EMS | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: bada7a96-a969-4459-a2ac-7f253149d925
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Informazioni sul vantaggio Enterprise Mobility + Security incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: a8ea7cba0c23129e9dd7669c474f54675a12e619
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e66e760cc8400e1f81c396c0e62ff57bf6356153
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74099543"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273920"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) nelle sottoscrizioni di Visual Studio
 
@@ -47,6 +48,12 @@ Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstud
 - Per supporto tecnico per qualsiasi componente di EMS, visitare le [domande frequenti sul supporto per EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) per trovare il tipo di supporto più adatto per le proprie esigenze.
 - Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [il supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Se non è già stato attivato il vantaggio del credito individuale [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) DevTest di Azure fornito con la sottoscrizione, visitare e fare clic sul riquadro Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale di Azure DevTest.If you haven't already activated the Azure DevTest individual credit that comes with your subscription, visit and click on the Azure tile in the Tools category to set up your Azure subscription and redeem your Azure DevTest individual credit.

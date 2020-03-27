@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b05787802b72eb4d14e1b2b56765bb246b9ada51
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578339"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256244"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger
 
@@ -89,13 +89,13 @@ In un report snapshot è possibile espandere le voci **Tipo di oggetto** per vis
 
 Se un **Tipo di oggetto** è blu, è possibile selezionarlo per passare all'oggetto nel codice sorgente, in una finestra separata.
 
-I tipi che non è possibile identificare o il cui coinvolgimento nel codice risulta sconosciuto appartengono probabilmente al sistema operativo .NET Framework o agli oggetti del compilatore. Lo strumento **Utilizzo memoria** visualizza questi oggetti se sono coinvolti nelle catene di proprietà degli oggetti.
+I tipi che non è possibile identificare o il cui coinvolgimento nel codice non si capisce sono probabilmente .NET, oggetti del sistema operativo o del compilatore. Lo strumento **Utilizzo memoria** visualizza questi oggetti se sono coinvolti nelle catene di proprietà degli oggetti.
 
 Nei report snapshot:
 
 - L'albero **Heap gestito** mostra i tipi e le istanze presenti nel report. Quando si seleziona un tipo o un'istanza, vengono visualizzati gli alberi **Percorsi della radice** e **Oggetti a cui si fa riferimento** per l'elemento selezionato.
 
-- L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o un'istanza. Garbage Collector di .NET Framework pulisce la memoria per un oggetto solo una volta rilasciati tutti i riferimenti.
+- L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o un'istanza. Il Garbage Collector di .NET pulisce la memoria per un oggetto solo quando tutti i riferimenti ad esso sono stati rilasciati.
 
 - L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 
@@ -135,7 +135,7 @@ L'albero **Heap gestito** di un report dettagli dello snapshot include le colonn
 |**Modulo**|Il modulo che contiene il costruttore.|
 
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Albero Percorsi della radice (report dettagli dello snapshot)
-L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Garbage Collector di .NET Framework pulisce la memoria per un oggetto solo una volta rilasciati tutti i riferimenti.
+L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector di .NET pulisce la memoria per un oggetto solo quando tutti i riferimenti ad esso sono stati rilasciati.
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**.
 
@@ -185,7 +185,7 @@ L'albero **Heap gestito** di un report differenze dello snapshot include le colo
 
 ### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Albero Percorsi della radice (report differenze degli snapshot)
 
-L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Garbage Collector di .NET Framework pulisce la memoria per un oggetto solo una volta rilasciati tutti i riferimenti.
+L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector di .NET pulisce la memoria per un oggetto solo quando tutti i riferimenti ad esso sono stati rilasciati.
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**. La differenza di numero rispetto allo snapshot precedente è indicata nella colonna **Diff. conteggio riferimenti**.
 

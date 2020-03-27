@@ -1,17 +1,18 @@
 ---
 title: Vantaggio Concierge Chat nella sottoscrizione di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Informazioni sul vantaggio Concierge Chat nelle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 83fdb9a21528e00db1ef8652846c6b852c5c6067
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 6b6ed0635f86abb94fd3693d14b53a9ff1f7c936
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74099586"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273998"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat nelle sottoscrizioni di Visual Studio
 Il servizio Concierge Chat offre assistenza per la ricerca di informazioni e documentazione tecnica sui prodotti, nonché per l'uso dei vantaggi della sottoscrizione di Visual Studio.
@@ -59,6 +60,12 @@ Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstud
 ## <a name="support-resources"></a>Risorse di supporto
 - Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [il supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Per altre informazioni sugli strumenti e i servizi Microsoft, consultare la documentazione di:

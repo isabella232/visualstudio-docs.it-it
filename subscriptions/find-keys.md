@@ -3,15 +3,16 @@ title: Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual 
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come trovare, richiedere ed esportare codici Product Key nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 984a89f5085867ea7b23735d05d0e22ef51dcfdb
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937502"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232490"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual Studio
 Questo articolo illustra come individuare, richiedere ed esportare codici Product Key da https://my.visualstudio.com/productkeys.  Per altre informazioni sull'attivazione di un prodotto con un codice Product Key, sulle versioni per attivazione singola e per contratti multilicenza dei codici Product Key e sui limiti giornalieri per la richiesta di tali codici, vedere la [panoramica dei codici Product Key](product-keys.md).

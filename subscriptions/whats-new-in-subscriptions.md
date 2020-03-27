@@ -5,52 +5,36 @@ ms.custom: ''
 ms.date: 08/26/2019
 ms.topic: conceptual
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
+ms.openlocfilehash: 87ac019b27561941c0d7038b6b65d692a5125652
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "70060399"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301833"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novità delle sottoscrizioni di Visual Studio
 
 Il pacchetto dei vantaggi della sottoscrizione viene aggiornato spesso perché sia più utile per gli utenti. Verranno anche introdotti miglioramenti per i portali di gestione dei sottoscrittori e delle sottoscrizioni per offrire ai clienti la migliore esperienza possibile.  Continuare a leggere per scoprire le funzionalità e gli aggiornamenti più recenti, ordinati per trimestre.
 
-## <a name="2019-q3-june-august"></a>T3 2019 (giugno-agosto)
+## <a name="2020-q1-january-march"></a>Primo trimestre 2020 (gennaio-marzo)
 
-### <a name="contact-my-admin-available-for-subscribers---august-2019"></a>"Contact my Admin" (Contatta amministratore) disponibile per i sottoscrittori - Agosto 2019
-Molti sottoscrittori di Visual Studio ottengono le proprie sottoscrizioni tramite gli account aziendali o dell'istituto di istruzione e tali sottoscrizioni vengono assegnate e gestite dagli amministratori.  Nelle organizzazioni di grandi dimensioni o complesse può essere difficile per un sottoscrittore scoprire chi contattare se necessita di assistenza da un amministratore.  Per supportare i sottoscrittori, è stata aggiunta una nuova funzionalità "Contact my Admin" (Contatta amministratore) nel portale dei sottoscrittori all'indirizzo https://my.visualstudio.com/subscriptions. Per altre informazioni, vedere l'articolo [Ottenere assistenza dall'amministratore delle sottoscrizioni](contact-my-admin.md). 
+Il primo trimestre del 2020 ha visto un nuovo aspetto https://manage.visualstudio.come alcune nuove funzionalità per il portale di amministrazione delle sottoscrizioni di Visual Studio in . Le modifiche al portale includevano una nuova combinazione di colori e la riorganizzazione di alcuni strumenti.  La panoramica delle allocazioni di sottoscrizioni, i dettagli del contratto e l'utilizzo massimo sono ora controllati dai pulsanti in alto a sinistra.  Ciò consente di ottimizzare lo spazio disponibile sullo schermo per le attività di gestione eseguite più di frequente, ad esempio l'assegnazione e la modifica delle sottoscrizioni.  
 
-### <a name="agreement-preferences-available-for-super-admins---august-2019"></a>Preferenze per i contratti disponibili per gli amministratori con privilegi avanzati - Agosto 2019
-Una nuova funzionalità del portale di amministrazione delle sottoscrizioni consente ora agli amministratori con privilegi avanzati di impostare preferenze globali per i contratti.  È possibile impostare preferenze che permetteranno di ridurre la quantità di lavoro necessaria durante l'assegnazione delle sottoscrizioni e consentiranno di ottenere un maggiore controllo sulle funzionalità, ad esempio per stabilire se un amministratore può creare una sottoscrizione per utenti esterni all'organizzazione.  Per altre informazioni, vedere l'articolo [Impostare le preferenze per i contratti](admin-prefs.md). 
+Abbiamo anche combinato le opzioni per aggiungere abbonati invididual ed eseguire aggiunte collettive in un menu a discesa **- Aggiungi.** 
 
-## <a name="2019-q2-april-june"></a>Secondo trimestre 2019 (aprile-giugno)
+   > [!div class="mx-imgBorder"]
+   > ![La nuova interfaccia utente per il portale di amministrazione delle sottoscrizioni](_img/whats-new/new-admin-ui.png)
 
-### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Sottoscrizioni di Visual Studio con GitHub Enterprise
-In occasione della conferenza //build di maggio, Microsoft ha annunciato che i clienti con contratto Enterprise possono ora acquistare le sottoscrizioni di Visual Studio che includono GitHub Enterprise.  È un modo semplice per acquisire sia sottoscrizioni di Visual Studio che GitHub Enterprise per un singolo prezzo inferiore.  
+### <a name="connect-emails"></a>Connessione delle e-mail
+È stato semplificato l'abbinamento dei sottoscrittori che usano gli account Microsoft (MSA) ad Azure Active Directory (Azure AD), in modo da poter collegare rapidamente le due identità.  L'uso delle identità di Azure AD offre maggiore sicurezza e una gestione delle sottoscrizioni più semplice.  Consulta il nostro [articolo di accesso personale](personal-email-sign-ins.md) per maggiori dettagli. 
 
-GitHub Enterprise è disponibile con le sottoscrizioni di Visual Studio Enterprise e Visual Studio Professional acquistate tramite contratti Enterprise. È anche disponibile un'offerta di aggiornamento all'edizione superiore che consente di aggiungere GitHub Enterprise, anche se il contratto Enterprise non è prossimo al rinnovo.
-
-Per altre informazioni su vantaggi, opzioni e prezzi, visitare https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
-
-Se l'organizzazione ha già sottoscrizioni di Visual Studio con GitHub Enterprise, nella documentazione sono disponibili altre informazioni sulla [gestione delle sottoscrizioni di Visual Studio con GitHub Enterprise](assign-github.md).  
-
-## <a name="2019-q1-january-march"></a>2019 T1 (gennaio-marzo)
-
-### <a name="maximum-usage-added-to-subscriptions-administration-portal"></a>Utilizzo massimo aggiunto al [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com)
-Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia di quante sottoscrizioni sono state acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnate, sia nell'ultimo anno che per l'intera durata dei contratti. Ciò consente di comprendere l'utilizzo della sottoscrizione corrente e di pianificare acquisti futuri. 
-
-  > [!div class="mx-imgBorder"]
-  > ![Menu Utilizzo massimo](_img/maximum-usage/maximum-usage-menu.png)
-
-È anche possibile visualizzare la cronologia aggiornata delle assegnazioni, inclusi gli acquisti e le assegnazioni.   
-
-Per altre informazioni, vedere l'articolo dedicato all'[utilizzo massimo](maximum-usage.md). 
-
-
-
-
+### <a name="add-subscribers-using-azure-active-directory-groups"></a>Aggiungere sottoscrittori usando i gruppi di Azure Active DirectoryAdd subscribers using Azure Active Directory groups
+Se l'organizzazione usa Azure Active Directory (Azure AD), è ora possibile gestire le sottoscrizioni usando i gruppi di Azure AD.  L'assegnazione di sottoscrizioni ai gruppi consente di fornire rapidamente sottoscrizioni dello stesso tipo a più utenti.  Quando vengono aggiunti nuovi utenti al gruppo di Azure AD, viene assegnata automaticamente una sottoscrizione.  Se un utente viene rimosso dal gruppo di Azure AD, viene rimossa anche la sottoscrizione.  Ciò consente all'organizzazione di automatizzare la gestione delle sottoscrizioni, risparmiando tempo e fatica per gli amministratori.  Consulta l'articolo [Aggiungere più utenti](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) nella nostra documentazione per i dettagli. 
 
 Per ora è tutto.
+
+## <a name="next-steps"></a>Passaggi successivi
+Consulta la nuova interfaccia utente del portale di amministrazione delle sottoscrizioni con le sue nuove funzionalità e assicurati di controllare qui per le informazioni più recenti sulle novità delle sottoscrizioni di Visual Studio!

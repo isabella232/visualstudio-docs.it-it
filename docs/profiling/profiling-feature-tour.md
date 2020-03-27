@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688a446fbbaf1c2c56b9304576224a70f71064d8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a2d23620a1861396971c79551088b898c9b77c86
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550111"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233102"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Avvio rapido: Presentazione degli strumenti di profilatura
 
@@ -74,9 +74,9 @@ PerfTips Mostra gli stessi eventi che vengono visualizzati anche nella visualizz
 
 ## <a name="analyze-memory-usage"></a>Analizzare l'utilizzo della memoria
 
-La finestra Strumenti di **diagnostica** consente inoltre di valutare l'utilizzo della memoria nell'app. Ad esempio, è possibile esaminare il numero e le dimensioni degli oggetti nell'heap. Per istruzioni più dettagliate sull'analisi della memoria, vedere [Analizzare l'utilizzo della memoria](../profiling/memory-usage.md).
+La finestra Strumenti di **diagnostica** consente inoltre di valutare l'utilizzo della memoria nell'app usando lo strumento **Utilizzo memoria.** Ad esempio, è possibile esaminare il numero e le dimensioni degli oggetti nell'heap. Per istruzioni più dettagliate sull'analisi della memoria, vedere [Analizzare l'utilizzo della memoria](../profiling/memory-usage.md). Un altro strumento di analisi della memoria, lo [strumento .NET Object Allocation](../profiling/dotnet-alloc-tool.md), consente di identificare i modelli di allocazione e le anomalie nel codice .NET.
 
-Per analizzare l'utilizzo della memoria durante il debug, è necessario acquisire almeno uno snapshot della memoria. Spesso, il modo migliore per analizzare la memoria consiste nel creare due snapshot: il primo immediatamente prima di un sospetto problema di memoria e il secondo subito dopo che si è verificato un sospetto problema di memoria. È quindi possibile confrontare i due snapshot in una visualizzazione differenziale e vedere esattamente che cosa è cambiato.
+Per analizzare l'utilizzo della memoria con l'utilizzo della memoria integrato nel debugger, è necessario creare almeno uno snapshot della memoria. Spesso, il modo migliore per analizzare la memoria consiste nel creare due snapshot: il primo immediatamente prima di un sospetto problema di memoria e il secondo subito dopo che si è verificato un sospetto problema di memoria. È quindi possibile confrontare i due snapshot in una visualizzazione differenziale e vedere esattamente che cosa è cambiato.
 
 ![Creare uno snapshot negli strumenti di diagnostica](../profiling/media/prof-tour-take-snapshots.gif "Strumenti di diagnostica Scattare istantanee")
 

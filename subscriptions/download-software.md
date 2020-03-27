@@ -3,15 +3,16 @@ title: Download di titoli software nelle sottoscrizioni di Visual Studio | Micro
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 03/07/2020
 ms.topic: conceptual
 description: Informazioni su come individuare e scaricare titoli software Microsoft inclusi nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 062454a6f5af4a0452b55bd632986f426347eab5
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 4196d8bcf256a624f34ae0b66e11f536e3c2c2ec
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937487"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232600"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Download di titoli software nelle sottoscrizioni di Visual Studio
 A seconda della sottoscrizione di Visual Studio, può essere disponibile un'ampia gamma di titoli software Microsoft.  Questo articolo descrive come individuare e scaricare il software necessario per sfruttare al meglio la sottoscrizione. 

@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 03/18/2020
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio del credito individuale di Azure DevTest incluso nella sottoscrizione di Visual Studio.Learn how to activate the Azure DevTest individual credit benefit included in your Visual Studio subscription.
-ms.openlocfilehash: 8c7f8d2d79655c9bdd33827dc3ae2e48dc51b853
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 8cf79c9f4ce9230195e2fdbf551320c3532ad42d
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508966"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232029"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il [credito individuale mensile di Azure DevTest,](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)Azure è la sandbox personale per lo sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
@@ -112,6 +112,12 @@ Se si ritiene di aver ricevuto questo messaggio di posta elettronica per errore,
   - [Suggerimenti & trucchi di AzureAzure Tips & Tricks](https://microsoft.github.io/AzureTipsAndTricks/ "Suggerimenti & trucchi di AzureAzure Tips & Tricks") 
 - Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [il supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Per altre informazioni sugli strumenti e i servizi Microsoft, consultare la documentazione di:

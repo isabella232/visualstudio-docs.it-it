@@ -1,17 +1,18 @@
 ---
 title: Uso del portale per i sottoscrittori - https://my.visualstudio.com | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
-ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5403880dc5a2ac62cd23800cea5acacd2766bc6f
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75546226"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232192"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del portale per i sottoscrittori - my.visualstudio.com
 
@@ -51,6 +52,12 @@ Oltre ai singoli vantaggi disponibili nella categoria Supporto nella pagina Vant
 ## <a name="marketplace"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 Se è necessario rinnovare una sottoscrizione cloud di Visual Studio  o si vogliono scaricare le estensioni più recenti per la famiglia di prodotti Visual Studio,  Nel Marketplace è possibile trovare estensioni, strumenti e servizi per migliorare ulteriormente Azure DevOps, Azure DevOps Server e Visual Studio Code. È anche possibile diventare un editore e pubblicare estensioni personalizzate in Marketplace.
+
+## <a name="see-also"></a>Vedere anche
+- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure](https://docs.microsoft.com/azure/)
+- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Accedi al portale [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) e scopri i tuoi vantaggi.  È anche possibile ottenere altre informazioni sull'accesso al portale con l'[account Microsoft](sign-in-msa.md) (account del servizio gestito), con l'[account aziendale o dell'istituto di istruzione](sign-in-work.md) e persino con l'[account GitHub](sign-in-github.md). 

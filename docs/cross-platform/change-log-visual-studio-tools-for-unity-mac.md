@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771543"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232911"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro modifiche (Visual Studio Tools per Unity, Mac)
 
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="2520"></a>2.5.2.0
+
+Rilasciato il 23 marzo 2020
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Debugger:**
+
+  - Risolto problema nella registrazione dei thread al momento dell'attacco.
+
+## <a name="2510"></a>2.5.1.0
+
+Rilasciato il 3 marzo 2020
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+  - Aggiunto un soppressore per [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md). I metodi privati utilizzati con Invoke, InvokeRepeating, StartCoroutine o StopCoroutine non devono essere contrassegnati come inutilizzati.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Correzione della documentazione di OnDrawGizmos/OnDrawGizmosSelectedFixed OnDrawGizmos/OnDrawGizmos documentation
+
+- **Valutazione:**
+
+  - Correzione dell'ispezione degli argomenti lambda.
+
+## <a name="2501"></a>2.5.0.1
+
+Rilasciato il 19 febbraio 2020
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Correzione [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) del controllo diagnostico per la firma del messaggio non corretto. Durante l'ispezione di tipi con più livelli di ereditarietà, questa diagnostica potrebbe non riuscire con il seguente messaggio: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`.
+
+## <a name="2500"></a>2.5.0.0
+
+Rilasciato il 22 gennaio 2020
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+  - Aggiunto il supporto per i file HLSL.
+  
+  - Passare a una nuova interfaccia utente della finestra di dialogo cartella.
+  
+  - Passare a una nuova griglia delle proprietà accessibile per le impostazioni.
+
+  - Aggiunto un soppressore per [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md). I campi `SerializeField` privati con l'attributo non devono essere contrassegnati come inutilizzati.
+
+  - Aggiunto un soppressore per [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md). I campi `SerializeField` con l'attributo non devono essere contrassegnati come non assegnati.  
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Generazione corretta`GenerateTargetFrameworkMonikerAttribute` del progetto (la destinazione non si trovava sempre correttamente)
+
+- **Valutazione:**
+
+  - Valutazione delle stringhe fissa (non utilizzando le chiamate ToString())
 
 ## <a name="2420"></a>2.4.2.0
 
