@@ -2,22 +2,22 @@
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/02/2019
+ms.date: 03/23/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: a2a8a5bc03baf51f684777f39f0815699c6c77af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f8f4645c9b69ff0fa7aa332f0716cc07b7a46e8a
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76159576"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80234241"
 ---
 ## <a name="get-support"></a>Supporto
 
 Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere [Risolvere i problemi di installazione e aggiornamento di Visual Studio](../troubleshooting-installation-issues.md) per istruzioni dettagliate.
 
-Per i problemi correlati all'installazione è disponibile anche un'opzione di supporto che offre una [**chat attiva**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese).
+Per i problemi correlati all'installazione è disponibile anche un'opzione di supporto che offre una [**chat per l'installazione**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese).
 
 Ecco alcune altre opzioni di supporto:
 
