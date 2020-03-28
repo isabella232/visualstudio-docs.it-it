@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631978"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375558"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 
@@ -55,11 +55,11 @@ Contiene un set di attività per l'esecuzione sequenziale di MSBuild.
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`Name`|Attributo obbligatorio.<br /><br /> Nome della destinazione.|
+|`Name`|Attributo obbligatorio.<br /><br /> Nome della destinazione. Un nome di destinazione `$@()%*?.`può contenere qualsiasi carattere ad eccezione di .|
 |`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Se la condizione restituisce `false`, la destinazione non eseguirà il corpo della destinazione o di eventuali destinazioni impostate nell'attributo `DependsOnTargets`. Per ulteriori informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 |`Inputs`|Attributo facoltativo.<br /><br /> File che costituiscono gli input in questa destinazione. Per specificare più file, usare il punto e virgola come delimitatore. I timestamp dei file verranno confrontati con i timestamp dei file in `Outputs` per determinare se `Target` è aggiornata. Per altre informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md), [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md) e [Trasformazioni](../msbuild/msbuild-transforms.md).|
 |`Outputs`|Attributo facoltativo.<br /><br /> File che costituiscono gli output in questa destinazione. Per specificare più file, usare il punto e virgola come delimitatore. I timestamp dei file verranno confrontati con i timestamp dei file in `Inputs` per determinare se `Target` è aggiornata. Per altre informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md), [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md) e [Trasformazioni](../msbuild/msbuild-transforms.md).|
