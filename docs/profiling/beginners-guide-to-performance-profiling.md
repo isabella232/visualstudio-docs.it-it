@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d106b15a94e00915f8cd0fd2e69c2918f9fbead9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1ac7d23c1d4cb245366ecf03c1a8a0e67b11cb55
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549860"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412017"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Misurare le prestazioni dell'applicazione analizzando l'utilizzo della CPU
 
-È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questo articolo illustra come usare la scheda **Utilizzo CPU** degli strumenti di diagnostica per ottenere dati sulle prestazioni per l'app e vengono inoltre fornite informazioni sull'uso di PerfTips.
+È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questo articolo illustra come usare la scheda **Utilizzo CPU** degli strumenti di diagnostica per ottenere i dati sulle prestazioni per l'app.
 
 Durante le pause del debug, lo strumento **Utilizzo CPU** raccoglie informazioni sulle funzioni in esecuzione nell'applicazione. Vengono indicate le funzioni che stavano eseguendo un'operazione e un grafico della sequenza temporale consente di concentrarsi su segmenti specifici della sessione di campionamento.
 
@@ -35,7 +35,7 @@ L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessi
 > [!Important]
 > Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
 
-In questo articolo viene illustrata l'analisi dell'utilizzo della CPU nel normale flusso di lavoro di debug. È anche possibile analizzare l'utilizzo della CPU senza un debugger collegato o usando un'app in esecuzione. Per altre informazioni, vedere [Raccogliere dati di profilatura senza il debug](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+In questo articolo viene illustrata l'analisi dell'utilizzo della CPU nel normale flusso di lavoro di debug. È anche possibile analizzare l'utilizzo della CPU senza un debugger collegato o usando un'app in esecuzione. Per altre informazioni, vedere [Raccogliere dati di profilatura senza il debug](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). È inoltre possibile utilizzare un altro strumento di profilatura, [PerfTips](../profiling/perftips.md), per eseguire il codice un'istruzione alla volta e identificare il tempo necessario per il completamento di determinate funzioni o blocchi di codice.
 
 È possibile usare gli strumenti di profilatura senza il debugger con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
 
@@ -77,15 +77,9 @@ In questa esercitazione si apprenderà come:
 
      Quando si sceglie **Registra profilo CPU** Visual Studio avvia la registrazione delle funzioni e del tempo necessario per eseguirle. È possibile visualizzare i dati raccolti solo quando l'applicazione viene interrotta in un punto di interruzione.
 
-     > [!TIP]
-     > Per analizzare le prestazioni, è anche possibile usare [PerfTips](../profiling/perftips.md) per eseguire il codice un'istruzione alla volta e identificare il tempo necessario per il completamento di determinate funzioni o blocchi di codice.
-
 8. Premere F5 per eseguire l'applicazione fino al secondo punto di interruzione.
 
      Ora si hanno a disposizione i dati relativi alle prestazioni per l'applicazione, precisamente per l'area di codice compresa tra i due punti di interruzione.
-
-     >[!TIP]
-     > Quando viene sospesa in corrispondenza di un punto di interruzione o di un'operazione di creazione del codice, è anche possibile analizzare le prestazioni utilizzando [PerfTips](#analyze-performance-using-perftips).
 
      Il profiler inizia a preparare i dati di thread. Attendere il completamento.
 
@@ -163,12 +157,6 @@ In questa esercitazione si apprenderà come:
 
     > [!NOTE]
     > Se nell'albero delle chiamate sono presenti porzioni di codice contrassegnate come codice "danneggiato" o "stack unwalkable", è probabile che siano stati eliminati eventi ETW (Event Tracing for Windows). Per risolvere il problema, provare a raccogliere nuovamente la stessa traccia.
-
-## <a name="analyze-performance-using-perftips"></a>Analizzare le prestazioni usando PerfTipsAnalyze performance using PerfTips
-
-Durante l'esecuzione di codice nel debugger, è anche possibile usare [PerfTips](../profiling/perftips.md) per un'analisi approfondita delle prestazioni. Utilizzando PerfTips, è possibile visualizzare le informazioni sulle prestazioni durante l'interazione con il codice. È possibile verificare informazioni quali la durata dell'evento, misurata da quando il debugger è stato messo pausa l'ultima volta o quando è stata avviata l'applicazione. Ad esempio, se esegui il codice (F10, F11), PerfTips mostra la durata del runtime dell'app dall'operazione del passaggio precedente al passaggio corrente.
-
-![Analizzare con PerfTipsAnalyze with PerfTips](../profiling/media/diag-tools-perftips.png "AnalyzeWithPerfTips")
 
 ## <a name="view-external-code"></a>Visualizzare codice esterno
 
