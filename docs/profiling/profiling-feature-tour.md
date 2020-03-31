@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d23620a1861396971c79551088b898c9b77c86
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: b1ee476a518444bfff7a97a12c9fd814e9509239
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233102"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412028"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Avvio rapido: Presentazione degli strumenti di profilatura
 
@@ -36,6 +36,21 @@ La finestra **Strumenti di diagnostica** è spesso il modo migliore per profilar
 > [!NOTE]
 > È possibile usare gli strumenti di valutazione finale con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
 
+## <a name="examine-performance-using-perftips"></a>Esaminare le prestazioni utilizzando PerfTipsExamine performance using PerfTips
+
+Spesso, il modo più semplice per visualizzare le informazioni sulle prestazioni consiste [nell'utilizzare PerfTips](../profiling/perftips.md). Utilizzando PerfTips, è possibile visualizzare le informazioni sulle prestazioni durante l'interazione con il codice. È possibile verificare informazioni quali la durata dell'evento, misurata da quando il debugger è stato messo pausa l'ultima volta o quando è stata avviata l'applicazione. Ad esempio, se esegui il codice (F10, F11), PerfTips mostra la durata del runtime dell'app dall'operazione del passaggio precedente al passaggio corrente.
+
+![Profiling Tour PerfTips](../profiling/media/prof-tour-perf-tips.png "Profiling Tour PerfTips")
+
+È possibile usare PerfTips per esaminare il tempo necessario per l'esecuzione di un blocco di codice o il tempo necessario per il completamento di una singola funzione.
+
+PerfTips Mostra gli stessi eventi che vengono visualizzati anche nella visualizzazione **eventi** degli strumenti di diagnostica. Nella visualizzazione **Eventi** è possibile visualizzare diversi eventi che si verificano durante il debug, ad esempio l'impostazione di un punto di interruzione o un'operazione di esecuzione passoa del codice.
+
+![Visualizzazione Eventi degli strumenti di diagnostica](../profiling/media/prof-tour-events.png "Eventi di visualizzazione degli strumenti di diagnostica")
+
+ > [!NOTE]
+ > Gli utenti di Visual Studio Enterprise possono visualizzare anche gli [eventi IntelliTrace](../debugger/intellitrace.md) in questa scheda.
+
 ## <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 
 L'uso dello strumento Utilizzo CPU è consigliabile per iniziare ad analizzare le prestazioni dell'applicazione. Lo strumento offre maggiori informazioni sulle risorse della CPU consumate dall'applicazione. Per una procedura dettagliata più dettagliata dello strumento Utilizzo CPU, vedere [Misurare le prestazioni dell'applicazione analizzando l'utilizzo della CPU](../profiling/beginners-guide-to-performance-profiling.md).
@@ -53,24 +68,6 @@ La visualizzazione **Utilizzo CPU** contiene un elenco di funzioni ordinate in b
 Fare doppio clic su una funzione a cui si è interessati per aprire una visualizzazione più dettagliata a tre riquadri in modalità "farfalla", con la funzione selezionata al centro della finestra, la funzione chiamante a sinistra e le funzioni chiamate a destra. La sezione **Corpo funzione** indica la quantità totale di tempo (e la percentuale di tempo) impiegata nel corpo della funzione, escluso il tempo dedicato alle funzioni chiamanti e chiamate. Questi dati consentono di valutare se la funzione stessa è un collo di bottiglia delle prestazioni.
 
 ![Visualizzazione "farfalla" del chiamante degli strumenti di diagnostica](../profiling/media/prof-tour-cpu-usage-caller-callee.png "Visualizzazione chiamate chiamante degli strumenti di diagnostica")
-
-> [!TIP]
-> Per analizzare le prestazioni, è anche possibile usare [PerfTips](#examine-performance-events-using-perftips) per eseguire il codice un'istruzione alla volta e identificare il tempo necessario per il completamento di determinate funzioni o blocchi di codice.
-
-## <a name="examine-performance-events-using-perftips"></a>Esaminare gli eventi di prestazioni utilizzando PerfTipsExamine performance events using PerfTips
-
-Spesso, il modo più semplice per visualizzare le informazioni sulle prestazioni consiste [nell'utilizzare PerfTips](../profiling/perftips.md). Utilizzando PerfTips, è possibile visualizzare le informazioni sulle prestazioni durante l'interazione con il codice. È possibile verificare informazioni quali la durata dell'evento, misurata da quando il debugger è stato messo pausa l'ultima volta o quando è stata avviata l'applicazione. Ad esempio, se esegui il codice (F10, F11), PerfTips mostra la durata del runtime dell'app dall'operazione del passaggio precedente al passaggio corrente.
-
-![Profiling Tour PerfTips](../profiling/media/prof-tour-perf-tips.png "Profiling Tour PerfTips")
-
-È possibile usare PerfTips per esaminare il tempo necessario per l'esecuzione di un blocco di codice o il tempo necessario per il completamento di una singola funzione.
-
-PerfTips Mostra gli stessi eventi che vengono visualizzati anche nella visualizzazione **eventi** degli strumenti di diagnostica. Nella visualizzazione **Eventi** è possibile visualizzare diversi eventi che si verificano durante il debug, ad esempio l'impostazione di un punto di interruzione o un'operazione di esecuzione passoa del codice.
-
-![Visualizzazione Eventi degli strumenti di diagnostica](../profiling/media/prof-tour-events.png "Eventi di visualizzazione degli strumenti di diagnostica")
-
- > [!NOTE]
- > Gli utenti di Visual Studio Enterprise possono visualizzare anche gli [eventi IntelliTrace](../debugger/intellitrace.md) in questa scheda.
 
 ## <a name="analyze-memory-usage"></a>Analizzare l'utilizzo della memoria
 
