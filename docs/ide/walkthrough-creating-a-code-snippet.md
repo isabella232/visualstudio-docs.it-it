@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2554729be8f3b9697d1407befd68cbb21fac10dd
+ms.sourcegitcommit: 992dd075e65b5f3adefc1ff758975298c47381e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597295"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80435044"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procedura dettagliata: Creare un frammento di codice
 
@@ -54,7 +54,7 @@ Il codice XML seguente illustra il modello di frammento di base:
 
 2. Specificare il titolo del frammento nell'elemento **Title**. Usare il titolo **Square Root**.
 
-3. Aggiungere il linguaggio del frammento nell'attributo **Language** dell'elemento **Code**. Per C# usare **CSharp** e per Visual Basic usare **VB**.
+3. Aggiungere il linguaggio del frammento nell'attributo **Language** dell'elemento **Code**. Nel linguaggio C, utilizzare **CSharp**, per Visual Basic, utilizzare **VB**, e per C, **CPP**.
 
    > [!TIP]
    > Per tutti i valori di lingua disponibili, vedere la [sezione Attributi dell'elemento Code](code-snippets-schema-reference.md#attributes) nella pagina [Riferimento dello schema dei frammenti di codice](code-snippets-schema-reference.md).
@@ -230,4 +230,4 @@ Il codice XML seguente illustra un frammento di codice che usa il metodo `File.E
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sullo schema dei frammenti di codiceCode snippets schema reference](../ide/code-snippets-schema-reference.md)
+- [Riferimento dello schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)
