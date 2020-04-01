@@ -7,16 +7,16 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922978"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80502444"
 ---
 Con Visual Studio è possibile compilare, eseguire facilmente il debug e l'esecuzione di .NET, ASP.NET e ASP.NET core e pubblicarle nel Registro di sistema contenitore di Azure (ACR), nell'hub Docker, nel servizio app di Azure o nel registro dei contenitori. In questo articolo, pubblicheremo un'app ASP.NET Core in ACR.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con il carico di lavoro **Sviluppo Web**, **Strumenti di Azure** e/o **Sviluppo multipiattaforma .NET Core** installato
@@ -74,6 +74,9 @@ Se la casella di controllo **Configura per HTTPS** della finestra di dialogo Nuo
 Selezionare **Docker** nell'elenco a discesa Debug nella barra degli strumenti e avviare il debug dell'app. È possibile che venga visualizzato un messaggio in cui viene richiesto di considerare attendibile un certificato; scegliere di considerare attendibile il certificato per continuare.
 
 L'opzione **Strumenti contenitore** nella finestra **Output** mostra le azioni in corso. La prima volta, potrebbe richiedere un po 'di tempo per scaricare l'immagine di base, ma è molto più veloce nelle esecuzioni successive.
+
+>[!NOTE]
+> Se è necessario modificare le porte per il debug, è possibile farlo nel file *launchSettings.json.* Consultate [Impostazioni di avvio del contenitore](../../container-launch-settings.md).
 
 ## <a name="containers-window"></a>Finestra Contenitori
 

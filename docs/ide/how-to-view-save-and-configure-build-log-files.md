@@ -9,28 +9,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114461"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472787"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: Visualizzare, salvare e configurare file di log di compilazione
 
-Dopo aver compilato un progetto nell'IDE di Visual Studio, è possibile visualizzare informazioni sulla compilazione nella finestra **Output**. Usando queste informazioni è possibile ad esempio risolvere un errore di compilazione. 
+Dopo aver compilato un progetto nell'IDE di Visual Studio, è possibile visualizzare informazioni sulla compilazione nella finestra **Output**. Usando queste informazioni è possibile ad esempio risolvere un errore di compilazione.
 
-- Per i progetti C++ è possibile visualizzare le stesse informazioni anche in un file con estensione *txt* creato e salvato automaticamente. 
+- Per i progetti in C, è inoltre possibile visualizzare le stesse informazioni in un file di log creato e salvato durante la compilazione di un progetto. 
 
-- Per i progetti di codice gestito, è possibile fare clic nella finestra di output di compilazione e premere **Ctrl**+**S**. Visual Studio chiede il percorso per salvare le informazioni dalla finestra **Output** in un file con estensione *txt*. 
+- Per i progetti di codice gestito, è possibile fare clic nella finestra di output di compilazione e premere **Ctrl**+**S**. Visual Studio richiede un percorso per salvare le informazioni dalla finestra **di output** in un file di log.
 
 È anche possibile usare l'IDE per specificare i tipi di informazioni da visualizzare per ogni compilazione.
 
-Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un file con estensione *txt* per salvare le informazioni sulla compilazione. Per altre informazioni, vedere [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md).
+Se si compila qualsiasi tipo di progetto utilizzando MSBuild, è possibile creare un file di log per salvare le informazioni sulla compilazione. Per altre informazioni, vedere [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Per visualizzare il file di log di compilazione per un progetto C++
 
-1. In **Esplora risorse** o **Esplora file** aprire il file seguente: *\\...\Visual Studio \<Version\>\Projects\\<ProjectName\>\\<ProjectName\>\Debug\\<ProjectName\>.txt*
+1. In **Esplora risorse** o Esplora **file**aprire il file seguente (relativo alla cartella radice del progetto): *Release*\\<ProjectName>\>. Log o *\\ Debug<\>NomeProgetto .log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Per creare un file di log di compilazione per un progetto di codice gestito
 

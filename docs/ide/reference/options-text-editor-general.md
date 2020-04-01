@@ -33,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568412"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472828"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo \> Opzioni: Generale dell'editor di testo
 
@@ -93,6 +93,10 @@ Quando questa opzione è selezionata, viene visualizzata una casella grigia into
 ### <a name="show-structure-guide-lines"></a>Mostra guide per strutture
 
 Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai blocchi di codice strutturato, che consentono di identificare facilmente i singoli blocchi di codice.
+
+### <a name="show-file-health-indicator"></a>Mostra indicatore di integrità del file
+
+Quando questa opzione è selezionata, nell'angolo inferiore sinistro dell'editor verrà visualizzata una barra di stato dell'indicatore di integrità del file (errori, avvisi).
 
 ## <a name="see-also"></a>Vedere anche
 

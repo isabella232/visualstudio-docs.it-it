@@ -1,6 +1,6 @@
 ---
 title: Framework .NET di destinazione
-ms.date: 02/06/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,20 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303421"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472729"
 ---
 # <a name="framework-targeting-overview"></a>Panoramica sull'impostazione dei framework di destinazione
 
 In Visual Studio è possibile specificare la versione di .NET da impostare come destinazione per il progetto. L'impostazione di framework di destinazione consente di garantire che l'applicazione usi solo le funzionalità disponibili nella versione del framework specificata. Per le app .NET Framework da eseguire in un altro computer, la versione del framework per cui viene sviluppata l'applicazione deve essere compatibile con quella installata nel computer.
 
-Una soluzione di Visual Studio può contenere progetti destinati a versioni diverse di .NET.
-
-Per altre informazioni sui framework di destinazione, vedere [Framework di destinazione](/dotnet/standard/frameworks).
+Una soluzione di Visual Studio può contenere progetti destinati a versioni diverse di .NET.  Si noti tuttavia che è possibile compilare solo in base a una singola versione di .NET usando le condizioni di riferimento per una singola compilazione o compilare in modo ricorsivo file binari diversi per ogni versione.  Per altre informazioni sui framework di destinazione, vedere [Framework di destinazione](/dotnet/standard/frameworks).
 
 > [!TIP]
 > È anche possibile definire la destinazione delle applicazioni per piattaforme diverse. Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).

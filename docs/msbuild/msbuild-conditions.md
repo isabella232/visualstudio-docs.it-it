@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e69e5c8fc7404c0c313774271fd07b6315e5270
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0d51aa0a5ef995abbe150160e378aa8885cc9706
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633369"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472677"
 ---
 # <a name="msbuild-conditions"></a>Condizioni di MSBuild
 
@@ -39,6 +39,22 @@ MSBuild supporta un set specifico di condizioni `Condition` che possono essere a
 |Oppure|Restituisce `true` se almeno uno degli operandi restituisce `true`.|
 |()|Meccanismo di raggruppamento che restituisce `true` se le espressioni contenute all'interno restituiscono `true`.|
 |$if$ ( %expression% ), $else$, $endif$|Controlla se l'oggetto `%expression%` specificato corrisponde al valore stringa del parametro di modello personalizzato passato. Se la condizione `$if$` restituisce `true`, le istruzioni vengono eseguite. In caso contrario, viene controllata la condizione `$else$`. Se la condizione `$else$` è `true`, le istruzioni vengono eseguite. In caso contrario, la condizione `$endif$` termina la valutazione dell'espressione.<br /><br /> Per esempi di utilizzo, vedere Logica dei parametri del [modello di progetto/elemento](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)di Visual Studio.|
+
+È possibile utilizzare i metodi stringa nelle condizioni, <xref:System.String.TrimEnd> come illustrato nell'esempio seguente, in cui la funzione viene utilizzata per confrontare solo la parte rilevante della stringa, per distinguere tra i framework di destinazione di .NET Framework e .NET Core.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net45;net48;netstandard2.1;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework.TrimEnd('0123456789.'))' == 'net'">
+        <!-- Properties for .NET Framework -->
+    </PropertyGroup>
+
+</Project>
+```
 
 ## <a name="see-also"></a>Vedere anche
 
