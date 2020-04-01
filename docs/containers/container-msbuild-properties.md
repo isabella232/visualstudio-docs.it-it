@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71950695"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472661"
 ---
 # <a name="container-tools-build-properties"></a>Proprietà di compilazione degli strumenti contenitoreContainer Tools build properties
 
-È possibile personalizzare la modalità di compilazione dei progetti contenitore in Visual Studio impostando le proprietà utilizzate da MSBuild per compilare il progetto. Ad esempio, è possibile modificare il nome del Dockerfile, specificare tag ed etichette per le immagini, fornire argomenti aggiuntivi passati ai comandi Docker e controllare se Visual Studio esegue determinate ottimizzazioni delle prestazioni, ad esempio la compilazione all'esterno del nell'ambiente contenitore. È inoltre possibile impostare le proprietà di debug, ad esempio il nome dell'eseguibile da avviare e gli argomenti della riga di comando da fornire.
+È possibile personalizzare la modalità di compilazione dei progetti contenitore in Visual Studio impostando le proprietà utilizzate da MSBuild per compilare il progetto. Ad esempio, è possibile modificare il nome del Dockerfile, specificare tag ed etichette per le immagini, fornire argomenti aggiuntivi passati ai comandi Docker e controllare se Visual Studio esegue determinate ottimizzazioni delle prestazioni, ad esempio la compilazione all'esterno dell'ambiente del contenitore. È inoltre possibile impostare le proprietà di debug, ad esempio il nome dell'eseguibile da avviare e gli argomenti della riga di comando da fornire.
 
 Per impostare il valore di una proprietà, modificare il file di progetto. Si supponga, ad esempio, che il Dockerfile sia denominato *MyDockerfile*. È possibile `DockerfileFile` impostare la proprietà nel file di progetto come indicato di seguito.
 
@@ -41,7 +41,7 @@ Nella tabella seguente vengono illustrate le proprietà MSBuild disponibili per 
 | DockerImageLabels | Il set predefinito di etichette applicate all'immagine Docker. | com.microsoft.created-by-visual-studio;com.microsoft.visual-studio.project-name |1.5.4 o più recente|
 | DockerFastModeProjectMountDirectory|In **modalità veloce**, questa proprietà controlla la posizione in cui la directory di output del progetto è montata sul volume nel contenitore in esecuzione.|C::app (Windows) o /app (Linux)|1.9.2 o più recente|
 | DockerfileBuildArguments | Argomenti aggiuntivi passati al comando Docker build. | Non applicabile. |1.0.1872750 o più recente|
-| Oggetto DockerfileContext | Contesto predefinito utilizzato durante la compilazione dell'immagine Docker. | Impostato da Visual Studio. |1.0.1872750 o più recente|
+| Oggetto DockerfileContext | Contesto predefinito utilizzato durante la creazione dell'immagine Docker, come percorso relativo al Dockerfile. | Impostato da Visual Studio. |1.0.1872750 o più recente|
 | DockerfileFastModeStage | Fase Dockerfile (ovvero destinazione) da utilizzare durante la compilazione dell'immagine in modalità di debug. | Prima fase trovata nel Dockerfile (base) |
 | FileDockerfileFile | Viene descritto il dockerfile predefinito che verrà utilizzato per compilare/eseguire il contenitore per il progetto. Questo può essere anche un percorso. | Dockerfile |1.0.1872750 o più recente|
 | DockerfileRunArguments | Argomenti aggiuntivi passati al comando Docker run. | Non applicabile. |1.0.1872750 o più recente|

@@ -1,6 +1,6 @@
 ---
 title: Riferimento dello schema dei frammenti di codice
-ms.date: 02/25/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 867aac31f1515136e3aa9f0a6f171ec425d90cf7
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301839"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472803"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -104,7 +104,7 @@ Di seguito è riportata la struttura dell'elemento Code:
 
 È necessario specificare un valore di testo. Il testo specifica il codice, insieme ai valori letterali e agli oggetti, che è possibile usare in caso di inserimento di questo frammento di codice in un file di codice.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 Sono disponibili tre attributi per l'elemento Code:
 
@@ -235,7 +235,7 @@ Specifica informazioni descrittive sul contenuto di un frammento di codice Intel
 Specifica una funzione da eseguire quando il valore letterale o l'oggetto ricevono lo stato attivo in Visual Studio.
 
 > [!NOTE]
-> L'elemento `Function` è supportato solo nei frammenti di codice di C#.
+> Non tutte `function` le lingue supportano elementi. Vedere la documentazione specifica del linguaggio per le funzioni disponibili.
 
 ```xml
 <Function>
