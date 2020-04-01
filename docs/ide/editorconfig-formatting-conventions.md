@@ -1,24 +1,24 @@
 ---
 title: Convenzioni di formattazione .NET per EditorConfig
-ms.date: 07/17/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f10d4c710c0686b22e29883cabc21550ffd32f8c
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589227"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527957"
 ---
 # <a name="formatting-conventions"></a>Convenzioni di formattazione
 
@@ -151,6 +151,8 @@ Le regole di formattazione illustrate in questa sezione si applicano solo al cod
 - [Opzioni di wrapping](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
+- [Utilizzo delle opzioni di direttiva](#using-directive-options) 
+  - csharp_using_directive_placement
 
 ### <a name="new-line-options"></a>Opzioni di nuova riga
 
@@ -1207,6 +1209,50 @@ public int Foo { get; set; }
 public int MyProperty
 {
     get; set;
+}
+```
+
+- [Utilizzo delle opzioni di direttiva](#using-directive-options) 
+  - csharp_using_directive_placement
+  
+### <a name="using-directive-options"></a>Utilizzo delle opzioni di direttiva
+
+Questa regola di formattazione riguarda l'uso di direttive using inserite all'interno rispetto all'esterno di uno spazio dei nomi.
+
+Esempio di file *.editorconfig:*
+
+```ini
+# 'using' directive preferences
+[*.cs]
+csharp_using_directive_placement = outside_namespace
+csharp_using_directive_placement = inside_namespace
+```
+
+#### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
+
+|||
+|-|-|
+| **Nome regola** | csharp_using_directive_placement |
+| **Lingue applicabili** | C# |
+| **Versione introdotta** | Visual Studio 2019 versione 16.1 |
+| **Valori** | `outside_namespace`- Lasciare le direttive using all'esterno dello spazio dei nomi- Leave using directives outside namespace<br /><br />`inside_namespace`- Lasciare le direttive using all'interno dello spazio dei nomi- Leave using directives inside namespace |
+| **Impostazione predefinita di Visual Studio** | `outside_namespace` |
+
+Esempi di codice:
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
 }
 ```
 
