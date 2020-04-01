@@ -1,21 +1,21 @@
 ---
 title: Convenzioni di denominazione .NET per i file EditorConfig
-ms.date: 08/07/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ccf62c5ffc3f526eada85478f37480fcf5d75cba
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588603"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80528010"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -42,20 +42,22 @@ Per descrivere il tipo di simboli a cui applicare la regola di denominazione, sp
 L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola.
 
 - \* (usare questo valore per specificare tutti i simboli)
-- spazio dei nomi
-- class
+- namespace
+- classe
 - struct
 - interfaccia
 - enum
 - proprietà
 - method
 - campo
-- evento
+- event
 - delegato
 - parametro
 - type_parameter
 - local
 - local_function
+
+[!NOTE] I membri della tupla non sono attualmente supportati.
 
 ### <a name="accessibility-levels-of-symbols"></a>Livelli di accessibilità dei simboli
 
@@ -68,7 +70,7 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
 - \* (usare questo valore per specificare tutti i livelli di accessibilità)
 - public
 - internal o friend
-- Privato
+- private
 - protected
 - protected\_internal o protected_friend
 - private\_protected
@@ -168,7 +170,7 @@ Gravità | Effetto
 none | La regola viene eliminata completamente.
 refactoring o silent | Se questo stile non viene rispettato, non viene visualizzato alcun avviso all'utente, ma il codice generato automaticamente segue comunque questo stile.
 suggestion | Se questo stile non viene rispettato, viene visualizzato un suggerimento per l'utente, indicato dai primi due caratteri sottolineati con dei puntini. Non ha alcun effetto in fase di compilazione.
-avviso | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'**Elenco errori**.
+warning | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'**Elenco errori**.
 error | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'**Elenco errori**.
 
 > [!NOTE]

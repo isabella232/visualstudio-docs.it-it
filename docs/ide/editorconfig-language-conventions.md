@@ -1,24 +1,24 @@
 ---
 title: Convenzioni del linguaggio .NET per EditorConfig
-ms.date: 09/23/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0c06d6c16082a8300092e36b9bbed126c66f8af4
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301895"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80528023"
 ---
 # <a name="language-conventions"></a>Convenzioni del linguaggio
 
@@ -94,7 +94,6 @@ Le regole di stile illustrate in questa sezione sono applicabili a C# e Visual B
   - dotnet\_style\_predefined\_type\_for\_member_access
 - [Preferenze modificatore](#normalize-modifiers)
   - dotnet\_style\_require\_accessibility_modifiers
-  - csharp\_preferred\_modifier_order
   - visual\_basic\_preferred\_modifier_order
   - dotnet\_style\_readonly\_field
 - [Preferenze per parentesi](#parentheses-preferences)
@@ -116,6 +115,7 @@ Le regole di stile illustrate in questa sezione sono applicabili a C# e Visual B
 - [Preferenze di controllo "Null"](#null-checking-preferences)
   - dotnet\_style\_coalesce_expression
   - dotnet\_style\_null_propagation
+  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
 ### <a name="this-and-me-qualifiers"></a><a name="this-and-me"></a>"Questo." e "Me"
 
@@ -407,6 +407,43 @@ Esempi di codice:
 Public Class MyClass
     Private Shared ReadOnly daysInYear As Int = 365
 End Class
+```
+
+#### <a name="visual_basic_style_unused_value_expression_statement_preference"></a>visual_basic_style_unused_value_expression_statement_preference
+
+|||
+|-|-|
+| **Nome regola** | visual_basic_style_unused_value_expression_statement_preference |
+| **ID regola** | IDE0058 |
+| **Lingue applicabili** | Visual Basic |
+| **Valori** | `unused_local_variable:silent` |
+| **Impostazione predefinita di Visual Studio** | `unused_local_variable:silent` |
+
+Esempi di codice:
+
+```vb
+' visual_basic_style_unused_value_expression_statement_preference = unused_local_variable:silent
+
+Dim unused = Computation()
+```
+
+#### <a name="visual_basic_style_unused_value_assignment_preference"></a>visual_basic_style_unused_value_assignment_preference
+
+|||
+|-|-|
+| **Nome regola** | visual_basic_style_unused_value_assignment_preference |
+| **ID regola** | IDE0059 |
+| **Lingue applicabili** | Visual Basic |
+| **Valori** | `unused_local_variable:silent` |
+| **Impostazione predefinita di Visual Studio** | `unused_local_variable:silent` |
+
+Esempi di codice:
+
+```vb
+' visual_basic_style_unused_value_assignment_preference = unused_local_variable:suggestion
+
+Dim unused = Computation()
+Dim x = 1;
 ```
 
 #### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
@@ -941,6 +978,7 @@ Queste regole possono essere visualizzate in un file *.editorconfig* come indica
 [*.{cs,vb}]
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
 ```
 
 #### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
@@ -1002,6 +1040,16 @@ Dim v = o?.ToString()
 Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
+
+### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
+
+|||
+|-|-|
+| **Nome regola** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
+| **ID regola** | IDE0041 |
+| **Lingue applicabili** | C# 6.0+ e Visual Basic 14+ |
+| **Valori** | `true`- Prefer è un controllo null rispetto al metodo di uguaglianza dei riferimenti<br /><br />`false`- Preferisci il metodo di uguaglianza dei riferimenti rispetto al controllo null- Prefer reference equality method over is null check |
+| **Impostazione predefinita di Visual Studio** | `true:silent` |
 
 ## <a name="net-code-quality-settings"></a>Impostazioni di qualità del codice .NET
 
@@ -1071,7 +1119,7 @@ Le regole di stile illustrate in questa sezione sono applicabili solo a C#.
   - csharp\_style\_expression\_bodied_accessors
   - csharp\_style\_expression\_bodied_lambdas
   - csharp\_style\_expression\_bodied\_local_functions
-- [Corrispondenza dei criteri](#pattern-matching)
+- [Criteri](#pattern-matching)
   - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
   - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
 - [Dichiarazioni di variabili inline](#inlined-variable-declarations)
@@ -1081,6 +1129,7 @@ Le regole di stile illustrate in questa sezione sono applicabili solo a C#.
 - [Preferenze di controllo "Null"](#c-null-checking-preferences)
   - csharp\_style\_throw_expression
   - csharp\_style\_conditional\_delegate_call
+- [Preferenze modificatore](#normalize-modifiers) \_-csharp modifier_order preferiti\_
 - [Preferenze blocco codice](#code-block-preferences)
   - csharp\_prefer_braces
 - [Preferenze per i valori non usati](#unused-value-preferences)
