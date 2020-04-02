@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f10d4c710c0686b22e29883cabc21550ffd32f8c
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: 292e9e2eb505d65b49144bcee66dc0da870f5866
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527957"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543837"
 ---
 # <a name="formatting-conventions"></a>Convenzioni di formattazione
 
@@ -1212,9 +1212,6 @@ public int MyProperty
 }
 ```
 
-- [Utilizzo delle opzioni di direttiva](#using-directive-options) 
-  - csharp_using_directive_placement
-  
 ### <a name="using-directive-options"></a>Utilizzo delle opzioni di direttiva
 
 Questa regola di formattazione riguarda l'uso di direttive using inserite all'interno rispetto all'esterno di uno spazio dei nomi.
