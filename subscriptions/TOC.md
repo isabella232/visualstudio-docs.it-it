@@ -40,6 +40,7 @@
 #### [IDE di Visual Studio](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Account sviluppatore per Windows](vs-windows-dev.md)
+#### [Desktop virtuale Windows](vs-windows-virtual-desktop.md)
 ### Sviluppo professionale
 #### [CODE Magazine](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
