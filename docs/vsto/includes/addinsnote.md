@@ -3,12 +3,12 @@ author: John-Hart
 ms.topic: include
 ms.date: 08/14/2019
 ms.author: johnhart
-ms.openlocfilehash: 38f6de56d26cbcaf8739ea8458d846c5a2daf721
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 8bf2f79a12c606e58e60c94854d533eedbc9f395
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69547977"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80573298"
 ---
 > [!NOTE]
-> Vuoi sviluppare soluzioni che estendono l'esperienza di Office su [più piattaforme](https://dev.office.com/add-in-availability)? Vedere il nuovo [modello di componenti](https://dev.office.com/docs/add-ins/overview/office-add-ins)aggiuntivi per Office. I componenti aggiuntivi di Office hanno un footprint ridotto rispetto alle soluzioni e ai componenti aggiuntivi VSTO e possono essere compilati con quasi tutte le tecnologie di programmazione Web, ad esempio HTML5, JavaScript, CSS3 e XML.
+> Sei interessato a sviluppare soluzioni che estendono l'esperienza di Office su più piattaforme? Scopri il nuovo modello di componenti [aggiuntivi di Office](/office/dev/add-ins/). I componenti aggiuntivi di Office hanno un footprint ridotto rispetto ai componenti aggiuntivi e alle soluzioni VSTO ed è possibile compilarli usando quasi tutte le tecnologie di programmazione Web, ad esempio HTML5, JavaScript, CSS3 e XML.
