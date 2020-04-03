@@ -1,7 +1,7 @@
 ---
 title: Analizzare l'utilizzo della memoria senza debug | Microsoft Docs
 ms.custom: ''
-ms.date: 11/15/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,28 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b05787802b72eb4d14e1b2b56765bb246b9ada51
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80256244"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638819"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger
 
 Lo strumento **Utilizzo memoria** monitora l'utilizzo della memoria dell'app. È possibile utilizzare lo strumento per studiare gli effetti in tempo reale sulla memoria degli scenari in corso di sviluppo attivo in Visual Studio. Creare snapshot dettagliati degli stati di memoria dell'app e confrontare gli snapshot per individuare le cause principali dei problemi di memoria.
 
-Lo strumento **Utilizzo memoria** può essere eseguito con o senza debugger. Le istruzioni seguenti illustrano come usare lo strumento **Utilizzo memoria** senza il debugger, con **Profiler prestazioni** di Visual Studio.
+Lo strumento **Utilizzo memoria** può essere eseguito con o senza [il debugger.](../profiling/running-profiling-tools-with-or-without-the-debugger.md) In questo articolo viene illustrato come utilizzare lo strumento **Utilizzo memoria** senza il debugger in Visual Studio **Performance Profiler**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sessioni di diagnostica con lo strumento Utilizzo memoria
 
 **Per avviare una sessione di diagnostica con lo strumento Utilizzo memoria:**
 
-1. Aprire un progetto universale di Windows C# (UWP) in Visual Studio.
+1. Aprire un progetto in Visual Studio.Open a project in Visual Studio.
+
+   Lo strumento Utilizzo memoria supporta le app .NET, ASP.NET, native o in modalità mista (.NET e native).
+
+1. Nel menu Debug impostare la configurazione della soluzione su **Release** e selezionare **Debugger Windows locale** (o Computer **locale)** come destinazione di distribuzione.
 
 1. Nella barra dei menu scegliere **Debug** > **Performance Profiler**.
 
-1. Selezionare **Utilizzo memoria**, quindi selezionare **Avvia**.
+1. In **Strumenti disponibili**selezionare Utilizzo **memoria**e quindi **Avvia**.
 
    ![Avviare una sessione diagnostica di Utilizzo memoria](../profiling/media/memuse_start_diagnosticssession.png "Avviare una sessione diagnostica di Utilizzo memoria")
 

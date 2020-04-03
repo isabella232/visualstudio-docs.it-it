@@ -1,7 +1,7 @@
 ---
 title: Analizzare l'utilizzo della CPU | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553620"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638842"
 ---
 # <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 
 Un approccio ottimale per avviare l'analisi dei problemi di prestazioni nell'app è l'esame dell'uso della CPU. Lo strumento per le prestazioni **Utilizzo CPU** visualizza il tempo e la percentuale d'uso della CPU dedicati all'esecuzione del codice nelle app C++, C#/Visual Basic e JavaScript.
 
-Lo strumento **Utilizzo CPU** può essere eseguito in un progetto di Visual Studio aperto, in un'app di Microsoft Store installata oppure può essere collegato a un'app o un processo in esecuzione. È possibile eseguire lo strumento in computer locali o remoti oppure in un simulatore o in un emulatore. Per ulteriori informazioni, vedere Eseguire strumenti di [profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Lo strumento **Utilizzo CPU** può essere eseguito in un progetto di Visual Studio aperto, in un'app di Microsoft Store installata oppure può essere collegato a un'app o un processo in esecuzione. Per ulteriori informazioni, vedere Eseguire strumenti di [profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 È possibile eseguire lo strumento **Utilizzo CPU** con o senza il debug. Nel debugger è possibile attivare e disattivare la profilatura della CPU e disattivare e visualizzare i dettagli dell'uso della CPU per ogni funzione. È possibile visualizzare i risultati dell'uso della CPU quando l'esecuzione viene messa in pausa, ad esempio in un punto di interruzione.
 
@@ -33,7 +33,7 @@ In genere il computer locale replica in modo ottimale l'esecuzione dell'app inst
 
 ## <a name="collect-cpu-usage-data"></a>Raccogliere i dati di Utilizzo CPU
 
-1. Nel progetto di Visual Studio impostare la configurazione della soluzione su **Versione** e selezionare **Computer locale** come destinazione di distribuzione.
+1. Nel progetto di Visual Studio impostare la configurazione della soluzione su **Release** e selezionare **Debugger Windows locale** (o Computer **locale)** come destinazione di distribuzione.
 
     ![Selezionare Versione e Computer locale](../profiling/media/cpuuse_selectreleaselocalmachine.png "Selezionare Versione e Computer locale")
 

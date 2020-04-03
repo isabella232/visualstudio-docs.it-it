@@ -2,19 +2,20 @@
 title: Installare strumenti di intelligenza artificiale
 description: Descrive come installare strumenti di intelligenza artificiale per Visual Studio
 keywords: ai, visual studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75915803"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638583"
 ---
 # <a name="installation"></a>Installazione
 
@@ -33,7 +34,7 @@ Questa estensione può essere usata con Visual Studio 2015 e con Visual Studio 2
 2. Nella finestra di dialogo **Estensioni e aggiornamenti** selezionare **Online** sul lato sinistro.
 3. Nella casella di ricerca nell'angolo in alto a destra digitare o immettere "tools for ai".
 4. Selezionare **Visual Studio Tools for AI** dai risultati.
-5. Fare clic su **Download**
+5. Fare clic su **Download**.
 
 ## <a name="prepare-your-local-machine"></a>Preparare il computer locale
 
@@ -98,7 +99,7 @@ In seguito, è necessario verificare se Python 3.5 sia installato correttamente 
   C:\Users\test>python -m pip install -U pip
   ```
 
-- **Macos**
+- **macOS**
 
   ```bash
   MyMac:~ test$ python3.5 -V
@@ -213,7 +214,7 @@ Per installare PyTorch, eseguire il comando seguente in un terminale:
     pip3 install torchvision
     ```
 
-- **Macos**
+- **macOS**
 
   ```bash
   pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl

@@ -2,20 +2,21 @@
 title: Eseguire il training di un modello TensorFlow in locale
 description: Eseguire un modello TensorFlow in locale in Visual Studio Tools for AI
 keywords: ai, visual studio, tensorflow, locale
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72777436"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638748"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Eseguire il training di un modello TensorFlow in locale
 
@@ -23,7 +24,7 @@ Questa guida introduttiva descrive come eseguire il training di un modello Tenso
 
 Il database MNIST include un set di training di 60.000 esempi e un set di test di 10.000 esempi di cifre scritte a mano.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Prima di iniziare, assicurarsi di aver installato quanto segue:
 
@@ -53,7 +54,7 @@ Scaricare questo [repository di GitHub](https://github.com/Microsoft/samples-for
 
 - Individuare il progetto MNIST in **Esplora soluzioni**, fare clic con il pulsante destro del mouse e scegliere Imposta come progetto di **avvio**.
 
-- Fare clic su **Start**.
+- Fare clic su **Avvia**.
 
 - L'output viene stampato nella console.
 

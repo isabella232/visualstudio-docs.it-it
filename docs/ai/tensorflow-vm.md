@@ -2,20 +2,21 @@
 title: Eseguire un modello TensorFlow nel cloud
 description: eseguire un modello tensorflow in una macchina virtuale per l'apprendimento avanzato di azure
 keywords: intelligenza artificiale, visual studio, macchina virtuale per l'apprendimento avanzato
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75915836"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638760"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Eseguire il training di un modello TensorFlow nel cloud
 
@@ -23,7 +24,7 @@ Questa esercitazione illustra le procedure per il training di un modello TensorF
 
 Il database MNIST include un set di training di 60.000 esempi e un set di test di 10.000 esempi di cifre scritte a mano.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 Prima di iniziare, assicurarsi di aver installato e configurato quanto segue:
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Configurare la macchina virtuale di Azure per l'apprendimento avanzato

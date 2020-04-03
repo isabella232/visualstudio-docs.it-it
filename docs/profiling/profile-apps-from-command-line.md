@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77558129"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638696"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Misurare le prestazioni dell'applicazione dalla riga di comando
 
@@ -27,11 +27,13 @@ ms.locfileid: "77558129"
 
 Nell'esempio descritto in questo articolo si raccolgono informazioni sulle prestazioni di Blocco note, ma lo stesso metodo può essere usato per profilare qualsiasi processo.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
-* Visual Studio 2019 Preview 3 o versioni successive
+* Visual Studio 2019 o versioni successive
 
 * Conoscenza degli strumenti da riga di comando
+
+* Per raccogliere informazioni sulle prestazioni in un computer remoto in cui non è installato Visual Studio, installare [Performance Tools per Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019) nel computer remoto. La versione degli strumenti deve corrispondere alla versione di Visual Studio.
 
 ## <a name="collect-performance-data"></a>Raccogliere i dati sulle prestazioni
 
