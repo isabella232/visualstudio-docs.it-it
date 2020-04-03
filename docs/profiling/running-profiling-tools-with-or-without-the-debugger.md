@@ -1,6 +1,6 @@
 ---
 title: Eseguire strumenti di profilatura con o senza debugger | Microsoft Docs
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf544b3bec9b492f1d1669549ba5501a52f7d5f2
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62999419"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638793"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 
@@ -33,23 +33,21 @@ Per stabilire quali strumenti e risultati usare, considerare quanto segue:
 - Il debugger stesso modifica i tempi delle prestazioni in quanto esegue operazioni di debugger necessarie come l'intercettazione di eccezioni e di eventi di caricamento del modulo.
 - I numeri relativi alle prestazioni della compilazione Release negli strumenti **Profiler prestazioni** sono i più precisi e accurati. I risultati degli strumenti integrati nel debugger sono particolarmente utili per il confronto con altre misurazioni correlate al debug.
 
+Per Utilizzo CPU, è possibile eseguire lo strumento su un computer remoto utilizzando gli strumenti da riga di comando.
+
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Raccogliere dati di profilatura durante il debug
 
 Quando si avvia il debug in Visual Studio selezionando **Debug di** > **avvio** di debug o premendo **F5**, la finestra Strumenti di **diagnostica** viene visualizzata per impostazione predefinita. Per aprirlo manualmente, selezionare **Debug** > di**Windows** > **Mostra strumenti**di diagnostica . Nella finestra **Strumenti di diagnostica** vengono visualizzate informazioni su eventi, memoria dei processi e utilizzo della CPU.
 
 ![Strumenti di diagnostica](../profiling/media/diagnostictools-update1.png "Strumenti di diagnostica")
 
-- Usare l'icona **Impostazioni** sulla barra degli strumenti per scegliere se visualizzare **Utilizzo memoria**, **Analisi interfaccia utente** o **Utilizzo CPU**.
+- Utilizzare l'icona **Impostazioni** nella barra degli strumenti per scegliere se visualizzare **Utilizzo memoria** o **Utilizzo CPU**.
 
 - Selezionare **Impostazioni** nell'elenco a discesa **Impostazioni** per aprire **Diagnostic Tools Property Pages** (Pagine delle proprietà strumenti di diagnostica) con altre opzioni.
 
 - Se si esegue Visual Studio Enterprise, è possibile abilitare o disabilitare IntelliTrace in**IntelliTrace delle****opzioni** >  **degli strumenti** > di Visual Studio.
 
 La sessione di diagnostica termina quando si interrompe il debug.
-
-È anche possibile visualizzare **Strumenti di diagnostica** per destinazioni di debug in remoto. Per il debug e la profilatura remoti, è necessario installare il debugger remoto di Visual Studio ed eseguirlo nella destinazione remota.
-- Per il debug e la profilatura remoti di progetti di app desktop, vedere [Remote debugging](../debugger/remote-debugging.md) (Debug remoto).
-- Per il debug e la profilatura remoti di app UWP, vedere [Eseguire il debug di app UWP in un computer remoto da Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 ### <a name="the-events-tab"></a>Scheda Eventi
 
@@ -69,7 +67,9 @@ Per altre informazioni, vedere l'articolo relativo a come [eseguire ricerche e a
 
 Per raccogliere dati sulle prestazioni senza debug, è possibile eseguire gli strumenti **Profiler prestazioni**. Per l'esecuzione di alcuni strumenti di profilatura, è necessario avere i privilegi di amministratore. È possibile aprire Visual Studio come amministratore oppure eseguire gli strumenti come amministratore quando si avvia la sessione di diagnostica.
 
-1. Con un progetto aperto in Visual Studio, selezionare **Debug** > **Performance Profiler**oppure premere **ALT**+**F2**.
+1. Con un progetto aperto in Visual Studio, impostare la configurazione della soluzione su **Release** e selezionare **Debugger Windows locale** (o Computer **locale)** come destinazione di distribuzione.
+
+1. Selezionare **Debug** > **Performance Profiler**oppure premere **ALT**+**F2**.
 
 1. Nella pagina di avvio di diagnostica selezionare uno o più strumenti da eseguire. Vengono visualizzati solo gli strumenti applicabili al tipo di progetto, al sistema operativo e al linguaggio di programmazione. Selezionare **Mostra tutti gli strumenti** per vedere anche gli strumenti che sono disabilitati per la sessione di diagnostica. Ecco le possibili scelte per un'app UWP C#:
 
@@ -103,13 +103,20 @@ Per raccogliere dati sulle prestazioni senza debug, è possibile eseguire gli st
 
 ## <a name="run-diagnostic-sessions-on-installed-or-running-apps"></a>Eseguire sessioni di diagnostica per le app installate o in esecuzione
 
- Prima di avviare l'app dal progetto di Visual Studio, è anche possibile eseguire sessioni di diagnostica su destinazioni alternative. Ad esempio, potrebbe essere necessario diagnosticare problemi di prestazioni in un'app installata dall'Archivio applicazioni di Windows.
+Prima di avviare l'app dal progetto di Visual Studio, è anche possibile eseguire sessioni di diagnostica su destinazioni alternative. Ad esempio, potrebbe essere necessario diagnosticare problemi di prestazioni in un'app installata dall'Archivio applicazioni di Windows. Nel profiler prestazioni selezionare dall'elenco a discesa in **Modifica destinazione**.
 
- ![Scegliere la destinazione di analisi degli strumenti diagnostici](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
+![Scegliere la destinazione di analisi degli strumenti diagnostici](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
 
- È possibile avviare app già installate oppure collegare gli strumenti di diagnostica ad app e processi già in esecuzione. Quando si sceglie **Applicazione in esecuzione** o **Applicazione installata**, è possibile selezionare l'app da un elenco che individua le app nella destinazione di distribuzione specificata. La destinazione può essere un computer locale o remoto.
+È possibile avviare app già installate oppure collegare gli strumenti di diagnostica ad app e processi già in esecuzione.
 
- ![Scegliere un'app in esecuzione o installata per la diagnostica](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+Se si sceglie **Eseguibile** come destinazione dell'analisi, è possibile immettere il percorso di un *file con estensione exe* in un computer locale o remoto. In entrambi i casi, il *file .exe* viene eseguito localmente. Tuttavia, è consigliabile profilare l'app aprendo la soluzione in Visual Studio.However, we recommend that you profile your app by opening the solution in Visual Studio.
+
+Per un'app UWP, quando si seleziona **App in esecuzione** o App **installata**, si seleziona l'app da un elenco che trova le app nella destinazione di distribuzione specificata. La destinazione può essere un computer locale o remoto. Per profilare un'app UWP in un computer remoto, è necessario selezionare **Universale (protocollo non crittografato)** nella finestra di dialogo **Connessioni remote.**
+
+![Scegliere un'app in esecuzione o installata per la diagnostica](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+
+> [!NOTE]
+> Per altri scenari che richiedono l'utilizzo remoto degli strumenti di profilatura, vedere [Misurare le prestazioni dell'applicazione dalla riga](../profiling/profile-apps-from-command-line.md)di comando. È possibile utilizzare gli strumenti della riga di comando con Utilizzo CPU e lo strumento .NET Object Allocation.
 
 ## <a name="see-also"></a>Vedere anche
 
