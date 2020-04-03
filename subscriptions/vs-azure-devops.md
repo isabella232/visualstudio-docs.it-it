@@ -7,17 +7,17 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informazioni su come usare Azure DevOps come sottoscrittore di Visual Studio.
-ms.openlocfilehash: 73c6ae54ed39375e695fd1d68b972edb1ec9b46c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 11bd1262e72042b01c2514edc3bc3158325b9417
+ms.sourcegitcommit: 67dd2aedfe9752afaec9625ed3056fa03bd2699e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232046"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80607178"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Vantaggi Azure DevOps per i sottoscrittori di Visual Studio
 I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia gamma di funzionalità in Azure DevOps, incluse nella sottoscrizione come vantaggi. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.
 
-## <a name="sign-in"></a>Accesso
+## <a name="sign-in"></a>Accedi
 Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottoscrizione di Visual Studio o l'[identità alternativa](vs-alternate-identity.md), il riconoscimento avviene automaticamente.  In questo modo è possibile aggiungere anche un account aziendale o dell'istituto di istruzione (usato per l'accesso a Visual Studio, Office 365 o alla rete aziendale o dell'istituto di istruzione), in modo che sia possibile accedere ad Azure DevOps sia tramite l'account personale che tramite l'account aziendale o dell'istituto di istruzione.
 
 [Iscriversi per avere diritto a un'organizzazione gratuita di Azure DevOps](https://visualstudio.microsoft.com/team-services/)
@@ -55,7 +55,7 @@ Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più so
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle funzionalità di Azure DevOps:
-- [Azure Boards e Repos (Basic)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Azure Boards & Repos (Basic Plan)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
