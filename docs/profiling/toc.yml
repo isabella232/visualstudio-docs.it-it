@@ -2,7 +2,7 @@
   href: index.yml
 - name: Panoramica
   href: profiling-overview.md
-- name: Guide introduttive
+- name: Guide rapide introduttive
   items:
     - name: Presentazione della profilatura
       href: profiling-feature-tour.md
@@ -22,22 +22,22 @@
   items:
     - name: Eseguire gli strumenti di profilatura con o senza il debugger
       href: running-profiling-tools-with-or-without-the-debugger.md
-- name: 'Guide pratiche:'
+- name: Guide pratiche
   items:
-    - name: Utilizzo della CPU
-      href: cpu-usage.md
     - name: Usare PerfTips
       href: perftips.md
+    - name: Utilizzo della CPU
+      href: cpu-usage.md
     - name: Utilizzo memoria
       items:
         - name: Analizzare l'utilizzo della memoria
           href: analyze-memory-usage.md
         - name: Analizzare l'utilizzo della memoria per gli oggetti .NET
           href: dotnet-alloc-tool.md
-        - name: Personalizzare gli eventi dell'heap ETW nativo
-          href: custom-native-etw-heap-events.md
         - name: Utilizzo della memoria senza il debugger
           href: memory-usage-without-debugging2.md
+        - name: Personalizzare gli eventi dell'heap ETW nativo
+          href: custom-native-etw-heap-events.md
     - name: Misurare le prestazioni dalla riga di comando
       href: profile-apps-from-command-line.md
     - name: Analizzare l'utilizzo della GPU
@@ -188,19 +188,19 @@
                           href: dotnet-framework-usage-performance-rules.md
                         - name: 'DA0001: Utilizzare StringBuilder per le concatenazioni'
                           href: da0001-use-stringbuilder-for-concatenations.md
-                        - name: 'DA0005: Collection GC2 frequenti'
+                        - name: 'DA0005: Raccolte GC2 frequenti'
                           href: da0005-frequent-gc2-collections.md
                         - name: 'DA0006: Eseguire l''override di Equals() per i tipi di valore'
                           href: da0006-override-equals-parens-for-value-types.md
-                        - name: 'DA0007: Evitare di utilizzare eccezioni per il flusso di controllo'
+                        - name: 'DA0007: Evitare di usare eccezioni per il flusso di controllo'
                           href: da0007-avoid-using-exceptions-for-control-flow.md
                         - name: 'DA0010: Funzione GetHashCode dispendiosa'
                           href: da0010-expensive-gethashcode.md
-                        - name: 'DA0011: Funzione compareTo dispendiosa'
+                        - name: 'DA0011: Funzione CompareTo dispendiosa'
                           href: da0011-expensive-compareto.md
                         - name: 'DA0012: Utilizzo elevato della reflection'
                           href: da0012-significant-amount-of-reflection.md
-                        - name: 'DA0013: Utilizzo elevato di String.Split/String.Substring'
+                        - name: 'DA0013: Utilizzo elevato di String.Split o String.Substring'
                           href: da0013-high-usage-of-string-split-or-string-substring.md
                         - name: 'DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo'
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
@@ -208,7 +208,7 @@
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
                         - name: 'DA0022: Frequenza elevata di Garbage Collection di generazione 2'
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: 'DA0024: Tempo CPU GC elevato'
+                        - name: 'DA0023: Tempo di CPU GC elevato'
                           href: da0023-high-gc-cpu-time.md
                         - name: 'DA0024: Tempo CPU GC eccessivo'
                           href: da0024-excessive-gc-cpu-time.md
@@ -240,7 +240,7 @@
                           href: da0026-excessive-kernel-cpu-time-processing.md
                         - name: 'DA0029: Versione CLR non supportata'
                           href: da0029-unsupported-clr-version.md
-                        - name: 'DA0030: Raccogli misurazioni di interazione tra livelli per i progetti di database'
+                        - name: 'DA0030: Raccogliere misurazioni di interazione tra livelli per i progetti di database'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Regole per le prestazioni relative al monitoraggio delle risorse
                       items:
@@ -382,7 +382,7 @@
                   items:
                     - name: Panoramica delle visualizzazioni Interazioni tra livelli
                       href: tier-interaction-views.md
-                    - name: Visualizzazione Interazioni tra livelli
+                    - name: Interazioni tra livelli (visualizzazione)
                       href: tier-interactions-view.md
             - name: Personalizzare le visualizzazioni
               items:
@@ -572,7 +572,7 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: Start
+                    - name: Inizia
                       href: start.md
                     - name: CrossSession
                       href: crosssession.md
@@ -622,7 +622,7 @@
                       href: lineoff.md
                     - name: Console
                       href: console.md
-                    - name: Stato
+                    - name: Status
                       href: status.md
                     - name: TargetCLR
                       href: targetclr.md
@@ -668,7 +668,7 @@
           href: profiling-aspnet-load-tests.md
         - name: Risoluzione dei problemi relativi agli strumenti per le prestazioni
           href: troubleshooting-performance-tools-issues.md
-    - name: Visualizzatore di concorrenza
+    - name: Visualizzatore di concorrenze
       items:
         - name: Panoramica del visualizzatore di concorrenza
           href: concurrency-visualizer.md
