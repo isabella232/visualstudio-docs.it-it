@@ -1,5 +1,5 @@
 ---
-title: DEBUG_PROPERTY_INFO | Microsoft Docs
+title: DEBUG_PROPERTY_INFO . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7804cfad48d5029e16619b5ae524fa6e761f11b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34fc1b5103949a767a3ee448618cbb708ea6a48b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346174"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737456"
 ---
-# <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
+# <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 Contiene informazioni su una proprietà di debug.
 
 ## <a name="syntax"></a>Sintassi
@@ -53,30 +53,30 @@ public struct DEBUG_PROPERTY_INFO {
 
 ## <a name="members"></a>Membri
 `dwValidFields`\
-Una combinazione di flag dal [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumerazione che specifica quali campi vengono compilati.
+Combinazione di flag dell'enumerazione [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica quali campi vengono compilati.
 
 `bstrFullName`\
 Nome completo della proprietà.
 
 `bstrName`\
-Il nome della proprietà all'interno di un contesto.
+Nome della proprietà all'interno di un contesto.
 
 `bstrType`\
-Il tipo di proprietà come stringa formattata.
+Tipo di proprietà come stringa formattata.
 
 `bstrValue`\
-Il valore della proprietà come stringa formattata.
+Valore della proprietà come stringa formattata.
 
 `pProperty`\
 Il [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto descritto da questa struttura.
 
 `dwAttrib`\
-Una combinazione di flag dal [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumerazione che descrive gli attributi di questa proprietà.
+Combinazione di flag [dell'DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumerazione che descrive gli attributi di questa proprietà.
 
-## <a name="remarks"></a>Note
-Una proprietà è un oggetto di natura gerarchica che ha un nome, tipo e valore. Ad esempio, può descrivere una proprietà di variabili locali, parametri, controllare variabili e le espressioni e registri.
+## <a name="remarks"></a>Osservazioni
+Una proprietà è un oggetto di natura gerarchica con un nome, un tipo e un valore. Ad esempio, una proprietà può descrivere variabili locali, parametri, variabili di controllo ed espressioni e registri.
 
-Questa struttura viene passata per il [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) in cui viene compilato nel metodo. Questa struttura viene anche restituita come parte di un elenco di questa struttura dal [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) interfaccia che, a sua volta, viene restituito da una chiamata ai [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) e [ EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) metodi.
+Questa struttura viene passata al [metodo GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) in cui viene compilata. Questa struttura viene restituita anche come parte di un elenco di questa struttura dal [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) interfaccia che, a sua volta, viene restituito da una chiamata per il [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) e [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) metodi.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

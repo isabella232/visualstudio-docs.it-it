@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetDocumentContext | Microsoft Docs
+title: IDebugCodeContext2::GetDocumentContext . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetDocumentContext
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a12838db0687fd7ebe20a5c576db0e06ece49107
-ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
+ms.openlocfilehash: 46510ce794ea30fdd365a77007b962a1eafd5d31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67342404"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734338"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Ottiene il contesto del documento che corrisponde a questo contesto di codice. Il contesto del documento rappresenta una posizione nel file di origine che corrisponde al codice sorgente che ha generato questa istruzione.
@@ -41,13 +41,13 @@ int GetDocumentContext( 
 
 ## <a name="parameters"></a>Parametri
 `ppSrcCxt`\
-[out] Restituisce il [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) oggetto corrispondente nel contesto del codice. Se `S_OK` viene restituito, deve essere ths non`null`.
+[fuori] Restituisce il [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) oggetto che corrisponde al contesto del codice. Se `S_OK` viene restituito, ths deve`null`essere diverso da - .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Un motore di debug deve restituire un codice di errore, ad esempio `E_FAIL` quando il `out` parametro è `null` , ad esempio quando il contesto del codice non ha nessuna posizione di origine associata.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Un motore di debug deve `E_FAIL` restituire `out` un `null` codice di errore, ad esempio quando il parametro è, ad esempio quando il contesto del codice non è associata alcuna posizione di origine.
 
-## <a name="remarks"></a>Note
- In genere, il contesto del documento può essere considerato come una posizione in un file di origine mentre il contesto del codice è una posizione di un'istruzione di codice in un flusso di esecuzione.
+## <a name="remarks"></a>Osservazioni
+ In genere, il contesto del documento può essere considerato come una posizione in un file di origine mentre il contesto di codice è una posizione di un'istruzione di codice in un flusso di esecuzione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
