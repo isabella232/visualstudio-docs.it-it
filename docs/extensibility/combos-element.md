@@ -1,25 +1,25 @@
 ---
-title: Elemento combos | Microsoft Docs
+title: Elemento Combos . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e0d4c15a5255a621268b239cb2cde4439b4c02b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334893"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739809"
 ---
-# <a name="combos-element"></a>Elemento combos
-I gruppi [elemento Combo](../extensibility/combo-element.md) elementi.
+# <a name="combos-element"></a>Elemento Combos
+Raggruppa gli elementi [combo.](../extensibility/combo-element.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,20 +37,20 @@ I gruppi [elemento Combo](../extensibility/combo-element.md) elementi.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento combos](../extensibility/combos-element.md)|Raggruppa gli elementi di casella combinata.|
-|[Elemento combo](../extensibility/combo-element.md)|Definisce i comandi che vengono visualizzati in una casella combinata.|
+|[Elemento Combos](../extensibility/combos-element.md)|Raggruppa gli elementi combinati.|
+|[Elemento combinato](../extensibility/combo-element.md)|Definisce i comandi visualizzati in una casella combinata.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage.|
+|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti VSPackage.|
 
 ## <a name="example"></a>Esempio
 
@@ -77,5 +77,5 @@ I gruppi [elemento Combo](../extensibility/combo-element.md) elementi.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Come VSPackage aggiungere elementi dell'interfaccia utenteHow VSPackages add user interface elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

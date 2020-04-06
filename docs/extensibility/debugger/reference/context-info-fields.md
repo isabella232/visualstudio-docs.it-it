@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO_FIELDS | Microsoft Docs
+title: CONTEXT_INFO_FIELDS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO_FIELDS enumeration
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ed50d43061ee714f8f892e03bb164f16e2e33d9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b398e7ee549026750cbdff7b7fede8522116f346
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346391"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737600"
 ---
-# <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
+# <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 Specifica le informazioni da recuperare su un contesto di memoria.
 
 ## <a name="syntax"></a>Sintassi
@@ -54,27 +54,27 @@ public enum enum_CONTEXT_INFO_FIELDS {
 
 ## <a name="fields"></a>Campi
 `CIF_MODULEURL`\
-Initialize/usare la `bstrModuleUrl` campo le [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struttura.
+Inizializzare/utilizzare `bstrModuleUrl` il campo della [struttura CONTEXT_INFO.](../../../extensibility/debugger/reference/context-info.md)
 
 `CIF_FUNCTION`\
-Initialize/usare la `bstrFunction` campo il `CONTEXT_INFO` struttura.
+Inizializzare/utilizzare `bstrFunction` il `CONTEXT_INFO` campo della struttura.
 
 `CIF_FUNCTIONOFFSET`\
-Initialize/usare la `posFunctionOffset` campo il `CONTEXT_INFO` struttura.
+Inizializzare/utilizzare `posFunctionOffset` il `CONTEXT_INFO` campo della struttura.
 
 `CIF_ADDRESS`\
-Initialize/usare la `bstrAddress` campo il `CONTEXT_INFO` struttura.
+Inizializzare/utilizzare `bstrAddress` il `CONTEXT_INFO` campo della struttura.
 
 `CIF_ADDRESSOFFSET`\
-Initialize/usare la `bstrAddressOffset` campo il `CONTEXT_INFO` struttura.
+Inizializzare/utilizzare `bstrAddressOffset` il `CONTEXT_INFO` campo della struttura.
 
 `CIF_ALLFIELDS`\
-Tutti i campi di inizializzazione/usare la `CONTEXT_INFO` struttura.
+Inizializzare/utilizzare tutti `CONTEXT_INFO` i campi della struttura.
 
-## <a name="remarks"></a>Note
-Questi valori vengono passati un parametro per il [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) metodo per indicare quali campi della [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struttura devono essere inizializzate.
+## <a name="remarks"></a>Osservazioni
+A questi valori viene passato un parametro al metodo [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) per indicare i campi della struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) da inizializzare.
 
-Questi flag vengono usanti anche per indicare quali campi del `CONTEXT_INFO` struttura siano usati e validi quando viene restituita la struttura.
+Questi flag vengono utilizzati anche `CONTEXT_INFO` per indicare quali campi della struttura vengono utilizzati e validi quando viene restituita la struttura.
 
 Questi valori possono essere combinati con un OR bit per bit.
 

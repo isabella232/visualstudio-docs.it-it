@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | Microsoft Docs
+title: proprietà FIELD_MODIFIERS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10538f3728647a716a9f3f964a3deedf2a5ae5c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324487"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736850"
 ---
-# <a name="fieldmodifiers"></a>FIELD_MODIFIERS
+# <a name="field_modifiers"></a>FIELD_MODIFIERS
 Specifica i modificatori per un tipo di campo.
 
 ## <a name="syntax"></a>Sintassi
@@ -106,16 +106,16 @@ public enum enum_FIELD_MODIFIERS {
 
 ## <a name="fields"></a>Campi
 `FIELD_MOD_ACCESS_TYPE`\
-Indica che il campo non è accessibile.
+Indica che non è possibile accedere al campo.
 
 `FIELD_MOD_ACCESS_PUBLIC`\
-Indica che il campo dispone di accesso pubblico.
+Indica che il campo ha accesso pubblico.
 
 `FIELD_MOD_ACCESS_PROTECTED`\
-Indica che il campo dispone di accesso protetto.
+Indica che il campo ha accesso protetto.
 
 `FIELD_MOD_ACCESS_PRIVATE`\
-Indica che il campo dispone di accesso privata.
+Indica che il campo ha accesso privato.
 
 `FIELD_MOD_NOMODIFIERS`\
 Indica che il campo non dispone di modificatori.
@@ -151,7 +151,7 @@ Indica che il campo è un'interfaccia.
 Indica che il campo è finale.
 
 `FIELD_MOD_SENTINEL`\
-Indica che il campo è un sentinel.
+Indica che il campo è una sentinella.
 
 `FIELD_MOD_INNERCLASS`\
 Indica che il campo è una classe interna.
@@ -160,33 +160,33 @@ Indica che il campo è una classe interna.
 Indica che il campo è facoltativo.
 
 `FIELD_MOD_BYREF`\
-Indica che il campo è un argomento di riferimento. Si tratta in particolare per gli argomenti del metodo.
+Indica che il campo è un argomento di riferimento. Questo è specifico per gli argomenti del metodo.
 
 `FIELD_MOD_HIDDEN`\
-Indica che il campo deve essere nascosto o visualizzato in un altro contesto. ad esempio, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] variabili locali statiche.
+Indica che il campo deve essere nascosto o presentato in un altro contesto; ad esempio, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] variabili locali statiche.
 
 `FIELD_MOD_MARSHALASOBJECT`\
-Indica che il campo rappresenta un oggetto con un `IUnknown` interfaccia.
+Indica che il campo rappresenta `IUnknown` un oggetto con un'interfaccia.
 
 `FIELD_MOD_SPECIAL_NAME`\
-Indica che il campo ha un nome speciale, ad esempio, `.ctor` per un costruttore ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).
+Indica che il campo ha un nome `.ctor` speciale,[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] ad esempio per un costruttore (solo).
 
 `FIELD_MOD_HIDEBYSIG`\
-Indica che il campo ha il `Overloads` parola chiave applicato ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).
+Indica che al campo `Overloads` è applicata[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] la parola chiave (solo).
 
 `FIELD_MOD_WRITEONLY`\
-Indica che il campo è di sola scrittura. Questo valore non è incluso `FIELD_MOD_ALL`, come l'uso solo di tali campi di sola scrittura per la valutazione della funzione. Un utente deve richiedere esplicitamente `FIELD_MOD_WRITEONLY` campi.
+Indica che il campo è di sola scrittura. Questo valore non `FIELD_MOD_ALL`è incluso in , poiché l'unico utilizzo di tali campi di sola scrittura è per la valutazione della funzione. Un utente deve `FIELD_MOD_WRITEONLY` richiedere esplicitamente i campi.
 
 `FIELD_MOD_ACCESS_MASK`\
-Indica una maschera per l'accesso al campo.
+Indica una maschera per l'accesso ai campi.
 
 `FIELD_MOD_MASK`\
 Indica una maschera per i modificatori di campo.
 
-## <a name="remarks"></a>Note
-Utilizzato per il `dwModifiers` membro della [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struttura.
+## <a name="remarks"></a>Osservazioni
+Utilizzato per `dwModifiers` il membro della [struttura FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
 
-Questi valori vengono passati anche per il [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) metodo per filtrare per campi specifici.
+Questi valori vengono inoltre passati al metodo [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) per filtrare campi specifici.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: sh.h

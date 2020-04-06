@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetAllAliases | Microsoft Docs
+title: Proprietà IDebugBinder3::GetAllAliases . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetAllAliases method
 ms.assetid: 1f9ab2ee-2ab3-4a61-8b99-95dd7fdf3511
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 51f45c64c0e1927e23052de08367c9699fda4cb9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d512fa6eb7529e11c766d7c173b318aa6f8f2f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327171"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735813"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 Questo metodo recupera un elenco di alias dal programma.
@@ -45,16 +45,16 @@ int GetAllAliases(
 
 ## <a name="parameters"></a>Parametri
 `uRequest`\
-[in] Il numero massimo di alias da restituire (specifica la lunghezza della matrice passato nel `ppAliases`).
+[in] Il numero massimo di alias da restituire (specifica la `ppAliases`lunghezza della matrice passata).
 
 `ppAliases`\
-[in, out] Matrice da riempire con alias (se si tratta di un valore null e `uRequest` è 0, verrà restituito il conteggio degli alias che possono essere restituiti da `puFetched`).
+[in, out] Matrice da compilare con alias (se si `uRequest` tratta di un valore null e è 0, il `puFetched`conteggio degli alias che possono essere restituiti verrà restituito da ).
 
 `puFetched`\
-[out] Restituisce il numero di alias ottenuti.
+[fuori] Restituisce il numero di alias ottenuti.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

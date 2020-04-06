@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE | Microsoft Docs
+title: EXCEPTION_STATE . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f05596b12151b3a40b87c6fc2f15659a38e3431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337685"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736952"
 ---
-# <a name="exceptionstate"></a>EXCEPTION_STATE
-Specifica lo stato di eccezione.
+# <a name="exception_state"></a>EXCEPTION_STATE
+Specifica lo stato dell'eccezione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,54 +78,54 @@ public enum enum_EXCEPTION_STATE {
 
 ## <a name="fields"></a>Campi
 `EXCEPTION_NONE`\
-Non arrestare in corrispondenza dell'eccezione.
+Non arrestarsi in corrispondenza dell'eccezione.
 
 `EXCEPTION_STOP_FIRST_CHANCE`\
-Arresto generazione dell'evento prima dell'eccezione. Quando si descrive un evento di eccezione, questo flag indica che l'evento dell'eccezione è un evento di eccezioni first-chance.
+Stop al primo sputo di eccezione. Quando si descrive un evento di eccezione, questo flag indica che l'evento di eccezione è un evento di eccezione first-chance.
 
 `EXCEPTION_STOP_SECOND_CHANCE`\
-Interrompere alla seconda generazione dell'eccezione. Quando si descrive un evento di eccezione, indica che l'evento dell'eccezione è un evento di eccezione second-chance.
+Arresto al secondo attivazione di eccezione. Quando si descrive un evento di eccezione, indica che l'evento di eccezione è un evento di eccezione second-chance.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE`\
-Termina prima attivazione di un'eccezione in modalità utente. Quando si descrive un evento di eccezione, indica che l'evento dell'eccezione è un evento di eccezione utente first-chance.
+Interrompere la prima generazione di un'eccezione in modalità utente. Quando si descrive un evento di eccezione, indica che l'evento di eccezione è un evento di eccezione utente di prima possibilità.
 
 `EXCEPTION_STOP_USER_UNCAUGHT`\
-Interrompi quando non viene intercettata un'eccezione in modalità utente. Quando si descrive un evento di eccezione, indica che l'evento dell'eccezione è un evento di eccezione in modalità utente non rilevate.
+Interrompere quando non viene rilevata un'eccezione in modalità utente. Quando si descrive un evento di eccezione, indica che l'evento di eccezione è un evento di eccezione non rilevata dalla modalità utente.
 
 `EXCEPTION_STOP_ALL`\
-Arrestare qualsiasi eccezione. Non utilizzato quando si descrive un evento di eccezione.
+Interrompere in caso di qualsiasi eccezione. Non utilizzato durante la descrizione di un evento di eccezione.
 
 `EXCEPTION_CANNOT_BE_CONTINUED`\
-Quando si descrive un evento di eccezione, indica che l'eccezione non può essere ripreso da.
+Quando si descrive un evento di eccezione, indica che l'eccezione non può continuare da.
 
 `EXCEPTION_CODE_SUPPORTED`\
-Indica che l'eccezione contiene codice che lo supporta. Utilizzati per la visualizzazione di un'eccezione
+Indica che l'eccezione contiene codice che lo supporta. Utilizzato nella visualizzazione di un'eccezione
 
 `EXCEPTION_CODE_DISPLAY_IN_HEX`\
-Indica che il codice di eccezione deve essere visualizzato in formato esadecimale. Utilizzati per la visualizzazione di un'eccezione.
+Indica che il codice di eccezione deve essere visualizzato in esadecimale. Utilizzato nella visualizzazione di un'eccezione.
 
 `EXCEPTION_JUST_MY_CODE_SUPPORTED`\
-Indica che il codice di eccezione supporta JustMyCode. Utilizzati per la visualizzazione di un'eccezione.
+Indica che il codice di eccezione supporta JustMyCode. Utilizzato nella visualizzazione di un'eccezione.
 
 `EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
-Indica che il debugger di codice gestito deve gestire le eccezioni. Se non impostato, il debugger predefinito gestisce le eccezioni. Viene passato al [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) metodo e non utilizzata nel [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struttura.
+Indica che il debugger del codice gestito deve gestire le eccezioni. Se non è impostato, il debugger predefinito gestisce le eccezioni. Viene passato al metodo [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) e non utilizzato nella struttura [EXCEPTION_INFO.](../../../extensibility/debugger/reference/exception-info.md)
 
 `EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
-OBSOLETO, NON USARE.
+OBSOLETO, NON UTILIZZARE.
 
 `EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT`\
-OBSOLETO, NON USARE.
+OBSOLETO, NON UTILIZZARE.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT`\
-OBSOLETO, NON USARE.
+OBSOLETO, NON UTILIZZARE.
 
 `EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
-OBSOLETO, NON USARE.
+OBSOLETO, NON UTILIZZARE.
 
-## <a name="remarks"></a>Note
-Utilizzato come il `dwState` membro della [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struttura per indicare lo stato di eccezione e ciò che può essere eseguita su di esso.
+## <a name="remarks"></a>Osservazioni
+Utilizzato come `dwState` membro della struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) per indicare lo stato dell'eccezione e le operazioni che è possibile eseguire al riguardo.
 
-Questi valori vengono passati anche per il [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) metodo per impostare lo stato di tutte le eccezioni.
+Questi valori vengono inoltre passati al metodo [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) per impostare lo stato di tutte le eccezioni.
 
 Questi flag possono essere combinati con un OR bit per bit.
 

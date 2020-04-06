@@ -1,51 +1,51 @@
 ---
-title: Concetti relativi al debugger | Microsoft Docs
+title: Concetti relativi al debugger Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d9905281c83287b8b54f57a233c2056462226f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345927"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738991"
 ---
-# <a name="debugger-concepts"></a>Concetti relativi al debugger
-Per compilare il pacchetto di debug di Visual Studio, è necessario avere familiarità con i concetti dell'architettura usati durante la progettazione del pacchetto.
+# <a name="debugger-concepts"></a>Concetti del debuggerDebugger concepts
+Per basarsi sul pacchetto di debug di Visual Studio, è necessario avere familiarità con i concetti dell'architettura utilizzati nella progettazione del pacchetto.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Sessione di debug](../../extensibility/debugger/debug-session.md) viene illustrato il ruolo di una sessione nell'architettura di debug.
+ [Sessione di debug](../../extensibility/debugger/debug-session.md) Viene illustrato il ruolo di una sessione nell'architettura di debug.
 
- [Server](../../extensibility/debugger/servers-visual-studio-sdk.md) definisce quali un server sia in termini di architettura, il debug in termini fisici sia astratti.
+ [Server](../../extensibility/debugger/servers-visual-studio-sdk.md) Definisce che cos'è un server in termini di architettura di debug, sia in termini astratti che fisici.
 
- [Porta suppliers](../../extensibility/debugger/port-suppliers.md) definisce quali un fornitore di porte sia in termini di architettura di debug.
+ [Fornitori portuali](../../extensibility/debugger/port-suppliers.md) Definisce il valore di un fornitore di porte in termini di architettura di debug.
 
- [Porte](../../extensibility/debugger/ports.md) definisce quale una porta è in termini di architettura di debug.
+ [Porte](../../extensibility/debugger/ports.md) Definisce che cos'è una porta in termini di architettura di debug.
 
- [Processi](../../extensibility/debugger/processes.md) definisce quali un processo è in termini di architettura di debug.
+ [Processi](../../extensibility/debugger/processes.md) Definisce che cos'è un processo in termini di architettura di debug.
 
- [I nodi di programma](../../extensibility/debugger/program-nodes.md) definisce un nodo di programma in termini di architettura, inclusi come in grado di identificare se stesso e il processo è in esecuzione nel debug.
+ [Nodi di programma](../../extensibility/debugger/program-nodes.md) Definisce un nodo di programma in termini di architettura di debug, incluso il modo in cui può identificare se stesso e il processo in cui è in esecuzione.
 
- [Programmi](../../extensibility/debugger/programs.md) definisce un programma in termini di architettura di debug.
+ [Programmi](../../extensibility/debugger/programs.md) Definisce un programma in termini di architettura di debug.
 
- [Thread](../../extensibility/debugger/threads.md) definisce le caratteristiche di thread in termini di architettura di debug.
+ [Filettature](../../extensibility/debugger/threads.md) Definisce le caratteristiche dei thread in termini di architettura di debug.
 
- [Stack frame](../../extensibility/debugger/stack-frames.md) definisce uno stack frame in termini di architettura di debug. Uno stack frame è un'astrazione di un oggetto stack che fornisce il contesto di esecuzione di un thread.
+ [Stack frame](../../extensibility/debugger/stack-frames.md) Definisce uno stack frame in termini di architettura di debug. Uno stack frame è un'astrazione di uno stack che fornisce il contesto di esecuzione di un thread.
 
- [I moduli](../../extensibility/debugger/modules.md) definisce un modulo, in termini di architettura, come un contenitore fisico di codice, ad esempio un file eseguibile o una DLL di debug.
+ [Moduli](../../extensibility/debugger/modules.md) Definisce un modulo, in termini di architettura di debug, come contenitore fisico di codice, ad esempio un file eseguibile o una DLL.
 
- [I punti di interruzione](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) definisce tre tipi di punti di interruzione, in sospeso, associazione e di errore, in termini di architettura di debug.
+ [Punti di interruzione](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) Definisce i tre tipi di punti di interruzione, in sospeso, associati ed errore, in termini di architettura di debug.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md) spiega come il motore di debug (DE) funziona contemporaneamente all'interno di contesti di valutazione di codice, documentazione ed espressione. Viene descritto, per ognuno dei tre contesti, il percorso, posizione o valutazione pertinente a esso.
+ [Contesti del debuggerDebugger contexts](../../extensibility/debugger/debugger-contexts.md) Viene illustrato il funzionamento simultaneo del motore di debug (DE) all'interno di contesti di valutazione del codice, della documentazione e delle espressioni. Descrive, per ognuno dei tre contesti, la posizione, la posizione o la valutazione pertinente.
 
- [Componenti del debugger](../../extensibility/debugger/debugger-components.md) fornisce una panoramica dei componenti di debug in Visual Studio, che includono il motore di debug (DE), l'analizzatore di espressioni (EE) e il gestore di simboli (SH).
+ [Componenti del debugger](../../extensibility/debugger/debugger-components.md) Viene fornita una panoramica dei componenti di debug di Visual Studio, che includono il motore di debug (DE), l'analizzatore di espressioni (EE) e il gestore di simboli (SH).
 
- [Eseguire il debug di attività](../../extensibility/debugger/debugging-tasks.md) contiene collegamenti alle varie attività di debug, ad esempio l'avvio di un programma e la valutazione delle espressioni.
+ [Attività di debug](../../extensibility/debugger/debugging-tasks.md) Contiene collegamenti a varie attività di debug, ad esempio l'avvio di un programma e la valutazione di espressioni.
