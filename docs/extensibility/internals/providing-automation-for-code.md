@@ -1,36 +1,36 @@
 ---
-title: Fornire l'automazione per il codice | Microsoft Docs
+title: Fornire l'automazione per il codice Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - CodeModel object
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 874446aa6bf2e40a120aac49e7d91fd3d861d1d4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bd13b7db2065069ff1540dbfc921570c2b230b8a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724971"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705989"
 ---
 # <a name="providing-automation-for-code"></a>Automazione per il codice
-La creazione di un modello di automazione per il codice non è obbligatoria. L'SDK dell'ambiente non fornisce un esempio per questa operazione. Per informazioni dettagliate sui modelli di codice, vedere l'oggetto <xref:EnvDTE.CodeModel>.
+La creazione di un modello di automazione per il codice non è necessaria. L'SDK dell'ambiente non fornisce un esempio per eseguire questa operazione. Per informazioni dettagliate sui <xref:EnvDTE.CodeModel> modelli di codice, vedere l'oggetto.
 
- Per implementare un modello di codice, è necessario implementare le interfacce determinate dalla struttura dei dati interna. Gli oggetti devono essere derivati dalla classe `IDispatch`.
+ Per implementare un modello di codice, è necessario implementare tutte le interfacce determinate dalla struttura di dati interna. Gli oggetti devono essere `IDispatch` derivati dalla classe .
 
- Gli oggetti estesi, <xref:EnvDTE.CodeModel> e <xref:EnvDTE.FileCodeModel>, sono disponibili dall'oggetto <xref:EnvDTE.Project> e hanno un aspetto simile al seguente:
+ Gli oggetti che <xref:EnvDTE.CodeModel> si <xref:EnvDTE.FileCodeModel>estendono e <xref:EnvDTE.Project> , sono disponibili dall'oggetto ed è simile al seguente:
 
 - <xref:EnvDTE.Project.CodeModel%2A>
 
 - <xref:EnvDTE.ProjectItem.FileCodeModel%2A>
 
- È possibile scegliere di implementare solo la `CodeModel` o l'interfaccia `FileCodeModel` nell'oggetto restituito dagli oggetti `Project` e <xref:EnvDTE.ProjectItem>. Fornire tutte le funzionalità di questa interfaccia appropriate per il sistema del progetto.
+ È possibile scegliere di `CodeModel` implementare solo `FileCodeModel` l'interfaccia `Project` nell'oggetto restituito dagli oggetti e . <xref:EnvDTE.ProjectItem> Fornire tutte le funzionalità di questa interfaccia appropriata per il sistema del progetto.
 
- Se si desidera aggiungere funzionalità, ad esempio metodi o proprietà, che non sono disponibili dalle interfacce standard `CodeModel` e `FileCodeModel`, creare un'interfaccia personalizzata che erediti dallo standard. Assicurarsi di documentarlo con il sistema di progetto in modo che gli utenti finali conoscano la ricerca. Viene restituita l'interfaccia standard, ma l'utente può chiamare il metodo `QueryInterface` o eseguire il cast all'interfaccia se è noto.
+ Se si desidera aggiungere funzionalità, ad esempio metodi o proprietà, che non sono disponibili dallo standard `CodeModel` e `FileCodeModel` dalle interfacce, creare un'interfaccia personalizzata che eredita dallo standard. Assicurarsi di documentarlo con il sistema del progetto in modo che gli utenti finali sappiano di cercarlo. Restituisce l'interfaccia standard, ma `QueryInterface` l'utente può chiamare il metodo o eseguire il cast all'interfaccia se è noto che esiste.
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica del modello di automazione](../../extensibility/internals/automation-model-overview.md)

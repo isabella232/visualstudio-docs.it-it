@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_THIS_RELATIVE | Microsoft Docs
+title: proprietà UNMANAGED_ADDRESS_THIS_RELATIVE . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_THIS_RELATIVE structure
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30a70f33edbe3cf817ebe4ad383c54bc02275a72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea493170c7b422129485fcea4248981a2b506001
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316106"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713262"
 ---
-# <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-Questa struttura rappresenta un indirizzo a cui fa riferimento a un `this` puntatore (`Me` in Visual Basic).
+# <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
+Questa struttura rappresenta un indirizzo `this` relativo`Me` a un puntatore ( in Visual Basic).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ public struct UNMANAGED_THIS_RELATIVE {
 
 ## <a name="members"></a>Membri
  `dwOffset`\
- Offset da una posizione di base (ad esempio, avvio di un oggetto vtable classe) in byte.
+ Offset di byte da una posizione di base (ad esempio, l'inizio di una classe vtable).
 
  `dwBitOffset`\
- Offset in bit da una posizione di base (sempre 0 a meno che non fa riferimento a un campo di bit).
+ Offset in bit da una posizione di base (sempre 0 a meno che non si faccia riferimento a un campo di bit).
 
  `dwBitLength`\
- Numero di bit che rappresenta l'indirizzo (sempre 0 a meno che non fa riferimento a un campo di bit).
+ Numero di bit che rappresentano l'indirizzo (sempre 0 a meno che non si faccia riferimento a un campo di bit).
 
-## <a name="remarks"></a>Note
- Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).
+## <a name="remarks"></a>Osservazioni
+ Questa struttura fa parte dell'unione nella `dwKind` struttura `DEBUG_ADDRESS_UNION` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` il campo della struttura è impostato su (un valore dell'enumerazione [ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: sh.h

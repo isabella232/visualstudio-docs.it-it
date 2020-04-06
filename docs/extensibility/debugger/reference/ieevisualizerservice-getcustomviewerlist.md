@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerList | Microsoft Docs
+title: Proprietà IEEVisualizerService::GetCustomViewerList . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerList method
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fa71a731843f1deed1cfe9a464cc4ab716a8a43
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350164"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718011"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-Questo metodo restituisce un elenco di visualizzatori di tipi noti al servizio.
+Questo metodo restituisce un elenco di visualizzatori di tipo che questo servizio conosce.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,24 +47,24 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parametri
 `celtSkip`\
-[in] Numero di visualizzatori di ignorare.
+[in] Numero di visualizzatori da ignorare.
 
 `celRequested`\
-[in] Numero di visualizzatori da recuperare (specifica anche dimensioni del `rgViewers` matrice).
+[in] Numero di visualizzatori da recuperare (specifica `rgViewers` anche le dimensioni della matrice).
 
 `rgViewers`\
-[in, out] Matrice di [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) strutture da compilare.
+[in, out] Matrice di [strutture DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) da compilare.
 
 `pceltFetched`\
-[out] Numero di visualizzatori effettivamente recuperati.
+[fuori] Numero di visualizzatori effettivamente recuperati.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
-- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) passa la richiesta a questo metodo come parte del supporto per i visualizzatori di tipo. Se l'analizzatore di espressioni fornisce anche i visualizzatori personalizzati per lo stesso tipo, è possibile aggiungere in modo appropriato compilato [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) strutture per i visualizzatori personalizzati all'elenco. Verificare che l'opzione [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) riflette i visualizzatori aggiuntivi.
+## <a name="remarks"></a>Osservazioni
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) passa la richiesta a questo metodo come parte del relativo supporto per i visualizzatori di tipo. Se l'analizzatore di espressioni fornisce anche visualizzatori personalizzati per lo stesso tipo, può aggiungere all'elenco strutture [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) compilate in modo appropriato per tali visualizzatori personalizzati. Assicurarsi che [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) rifletta tali visualizzatori aggiuntivi.
 
- Visualizzare [Visualizzatore di tipi e Visualizzatore personalizzato](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) per informazioni dettagliate sulle differenze tra i visualizzatori e visualizzatori.
+ Per informazioni dettagliate sulle differenze tra visualizzatori e visualizzatori, vedere Visualizzatore di [tipi e Visualizzatore personalizzato.](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

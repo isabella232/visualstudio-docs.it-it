@@ -1,5 +1,5 @@
 ---
-title: Funzione SccDirDiff | Microsoft Docs
+title: Funzione SccDirDiff . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirDiff function
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3d207a171acba4127849cd479a1049afafa8492
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1bb592a1174a91480ed76ef818733c288c5273c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351895"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701006"
 ---
-# <a name="sccdirdiff-function"></a>Funzione SccDirDiff
-Questa funzione consente di visualizzare le differenze tra la directory corrente del disco di client e il progetto corrispondente nel controllo del codice sorgente.
+# <a name="sccdirdiff-function"></a>SccDirDiff (funzione SccDir)
+Questa funzione visualizza le differenze tra la directory locale corrente sul disco client e il progetto corrispondente nel controllo del codice sorgente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,53 +37,53 @@ SCCRTN SccDirDiff(
 ### <a name="parameters"></a>Parametri
  pContext
 
-[in] La struttura del contesto plug-in del controllo origine.
+[in] Struttura di contesto del plug-in del controllo del codice sorgente.
 
  hWnd
 
-[in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.
+[in] Un handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo che fornisce.
 
- lpDirName
+ LpDirName (nome dall'utente)
 
-[in] Percorso completo nella directory locale per cui si desidera mostrare una differenza visual.
+[in] Percorso completo della directory locale per cui mostrare una differenza visiva.
 
  dwFlags
 
-[in] Flag di comando (vedere la sezione Osservazioni sezione).
+[in] Flag di comando (vedere la sezione Osservazioni).
 
- pvOptions
+ PvOpzioni
 
-[in] Opzioni specifiche plug-in controllo sorgente.
+[in] Opzioni specifiche del plug-in del controllo del codice sorgente.
 
 ## <a name="return-value"></a>Valore restituito
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+ L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei seguenti valori:
 
-|Value|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|La directory su disco è lo stesso nome di progetto nel controllo del codice sorgente.|
+|SCC_OK|La directory su disco è la stessa del progetto nel controllo del codice sorgente.|
 |SCC_I_FILESDIFFER|La directory su disco è diversa dal progetto nel controllo del codice sorgente.|
-|SCC_I_RELOADFILE|Un progetto o il file deve essere ricaricato.|
-|SCC_E_FILENOTCONTROLLED|La directory non è incluso nel controllo del codice sorgente.|
+|SCC_I_RELOADFILE|Un file o un progetto deve essere ricaricato.|
+|SCC_E_FILENOTCONTROLLED|La directory non è sotto il controllo del codice sorgente.|
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|
-|SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete. È consigliabile un nuovo tentativo.|
+|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di contesa. È consigliabile eseguire un nuovo tentativo.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Errore non specifico.|
-|SCC_E_FILENOTEXIST|Directory locale non è stata trovata.|
+|SCC_E_FILENOTEXIST|Impossibile trovare la directory locale.|
 
-## <a name="remarks"></a>Note
- Questa funzione viene utilizzata per indicare il controllo del codice sorgente del plug-in da visualizzare all'utente un elenco delle modifiche apportate a una directory specificata. Il plug-in verrà visualizzata la relativa finestra, in un formato di propria scelta, per visualizzare le differenze tra la directory dell'utente su disco e il progetto corrispondente nel controllo della versione.
+## <a name="remarks"></a>Osservazioni
+ Questa funzione viene utilizzata per indicare al plug-in del controllo del codice sorgente di visualizzare all'utente un elenco di modifiche a una directory specificata. Il plug-in apre la propria finestra, in un formato di sua scelta, per visualizzare le differenze tra la directory dell'utente su disco e il progetto corrispondente sotto il controllo della versione.
 
- Se un confronto di plug-in supporta delle directory affatto, deve supportare il confronto delle directory in base a nome del file anche se non sono supportate le opzioni "diff veloce".
+ Se un plug-in supporta il confronto delle directory, deve supportare il confronto delle directory in base al nome del file anche se le opzioni "quick-diff" non sono supportate.
 
 |`dwFlags`|Interpretazione|
 |---------------|--------------------|
-|SCC_DIFF_IGNORECASE|Confronto tra maiuscole e minuscole (possono essere usate per diff veloce o oggetto visivo).|
-|SCC_DIFF_IGNORESPACE|Ignora gli spazi vuoti (possono essere usate per quick-diff o oggetto visivo).|
-|SCC_DIFF_QD_CONTENTS|Se supportato dal controllo del codice sorgente del plug-in, in modo invisibile confronta la directory, byte per byte.|
-|SCC_DIFF_QD_CHECKSUM|Se supportato dal plug-in, in modo invisibile Confronta alla directory tramite un checksum o, se non è supportato, esegue il fallback a SCC_DIFF_QD_CONTENTS.|
-|SCC_DIFF_QD_TIME|Se supportato dal plug-in, in modo invisibile Confronta alla directory tramite il timestamp oppure, se non è supportato, esegue il fallback su SCC_DIFF_QD_CHECKSUM o SCC_DIFF_QD_CONTENTS.|
+|SCC_DIFF_IGNORECASE|Confronto senza distinzione tra maiuscole e minuscole (può essere utilizzato per diff rapido o visivo).|
+|SCC_DIFF_IGNORESPACE|Ignora gli spazi vuoti (può essere utilizzato per quick-diff o visual).|
+|SCC_DIFF_QD_CONTENTS|Se supportato dal plug-in del controllo del codice sorgente, confronta automaticamente la directory byte per byte.|
+|SCC_DIFF_QD_CHECKSUM|Se supportato dal plug-in, confronta automaticamente la directory tramite un checksum o, se non è supportato, esegue il fallback a SCC_DIFF_QD_CONTENTS.|
+|SCC_DIFF_QD_TIME|Se supportato dal plug-in, confronta automaticamente la directory tramite il timestamp o, se non è supportato, esegue il fallback su SCC_DIFF_QD_CHECKSUM o SCC_DIFF_QD_CONTENTS.|
 
 > [!NOTE]
-> Questa funzione Usa gli stessi flag di comando come il [SccDiff](../extensibility/sccdiff-function.md). Tuttavia, un plug-in del controllo del codice sorgente può scegliere di non supportare l'operazione "diff veloce" per le directory.
+> Questa funzione utilizza gli stessi flag di comando di [SccDiff](../extensibility/sccdiff-function.md). Tuttavia, un plug-in del controllo del codice sorgente potrebbe scegliere di non supportare l'operazione "quick-diff" per le directory.
 
 ## <a name="see-also"></a>Vedere anche
-- [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)
+- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

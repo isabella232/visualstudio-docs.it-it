@@ -1,5 +1,5 @@
 ---
-title: Opzioni della riga di comando devenv per lo sviluppo di VSPackage | Microsoft Docs
+title: Opzioni della riga di comando di Devenv per lo sviluppo di VSPackage Documenti Microsoft
 ms.date: 12/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,43 +13,43 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289f31c503143dc2b992717483f4d8701414e09d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad3a5125a730b9230959bbf9342b4c0a4823c4d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348044"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712187"
 ---
-# <a name="devenv-command-line-switches-for-vspackage-development"></a>Opzioni della riga di comando devenv per lo sviluppo di VSPackage
+# <a name="devenv-command-line-switches-for-vspackage-development"></a>Opzioni della riga di comando devenv per lo sviluppo di pacchetti VSPackage
 
-Visual Studio consente agli sviluppatori di automatizzare le attività dalla riga di comando durante l'esecuzione `devenv.exe`, il file che avvia l'IDE di Visual Studio.
+Visual Studio consente agli sviluppatori di automatizzare `devenv.exe`le attività dalla riga di comando durante l'esecuzione, il file che avvia l'IDE di Visual Studio.
 
  Le attività includono:
 
-- Distribuzione di applicazioni in configurazioni predefinite all'esterno dell'IDE.
+- Distribuzione di applicazioni in configurazioni predefinite dall'esterno dell'IDE.
 
-- Compilazione di progetti usando set di impostazioni automaticamente le impostazioni di compilazione o le configurazioni di debug.
+- Compilazione automatica di progetti utilizzando impostazioni di compilazione preimpostate o configurazioni di debug.
 
-- Caricamento l'IDE in configurazioni specifiche, tutto all'esterno dell'IDE. È anche possibile personalizzare l'IDE all'avvio.
+- Caricamento dell'IDE in configurazioni specifiche, il tutto dall'esterno dell'IDE. È inoltre possibile personalizzare l'IDE all'avvio.
 
-## <a name="guidelines-for-switches"></a>Linee guida per le opzioni
+## <a name="guidelines-for-switches"></a>Linee guida per gli interruttori
 
-Documentazione di Visual Studio descrive il livello di utente `devenv` della riga di comando. Per altre informazioni, vedere [opzioni della riga di comando Devenv](../ide/reference/devenv-command-line-switches.md). Il `devenv` lo strumento supporta anche altre opzioni della riga di comando che sono utili con VSPackage lo sviluppo, distribuzione e debug.
+La documentazione di Visual `devenv` Studio descrive le opzioni della riga di comando a livello utente. Per ulteriori informazioni, vedere [Opzioni della riga di comando Devenv](../ide/reference/devenv-command-line-switches.md). Lo `devenv` strumento supporta anche opzioni della riga di comando aggiuntive utili con lo sviluppo, la distribuzione e il debug di VSPackage.The tool also supports additional command-line switches that are useful with VSPackage development, deployment, and debugging.
 
 | Opzione della riga di comando | Descrizione |
 |---------------------| - |
-| `/ResetSkipPkgs` | Cancella tutte le opzioni di caricamento skip che sono stati aggiunti dagli utenti che vogliono evitare il caricamento di pacchetti VSPackage problematici, quindi avvia Visual Studio. La presenza di un tag SkipLoading disabilita il caricamento di un pacchetto VSPackage. La cancellazione del tag riabilita il caricamento del pacchetto VSPackage.<br /><br /> Questa opzione non accetta argomenti. |
-| `/RootSuffix` | Avvia Visual Studio usando un percorso alternativo. Mediante il collegamento creato dal programma di installazione di Visual Studio SDK viene eseguito il comando seguente:<br /><br /> `devenv /RootSuffix exp`<br /><br /> In questo caso `exp` identifica un percorso con un suffisso specifico (ad esempio, `10.0Exp` invece di `10.0`). L'istanza sperimentale consente di eseguire il debug di un pacchetto VSPackage separatamente dall'istanza di Visual Studio che si sta usando per scrivere codice.<br /><br /> Questa opzione può accettare qualsiasi stringa che identifica un percorso che è stato creato utilizzando VSRegEx.exe. Per altre informazioni, vedere [il processo dell'istanza sperimentale](../extensibility/the-experimental-instance.md). |
-| `/SafeMode` | Avvia Visual Studio in modalità provvisoria, caricando solo l'IDE predefinito e i servizi. Il `/SafeMode` commutatore che impedisce il caricamento quando si avvia Visual Studio, garantendo un'esecuzione stabile di tutti i pacchetti VSPackage di terze parti.<br /><br /> Questa opzione non accetta argomenti. |
-| `/Setup` | Forza Visual Studio l'unione dei metadati delle risorse che descrivono menu, barre degli strumenti e gruppi di comandi da tutti i pacchetti VSPackage disponibili. È solo possibile eseguire questo comando come amministratore. <br /><br /> Questa opzione non accetta argomenti. Il comando `devenv /Setup` viene in genere eseguito come ultimo passaggio del processo di installazione. Usare il `/Setup` commutatore non si avvia l'IDE.|
-| `/Splash` | Mostra la schermata iniziale di Visual Studio come di consueto, schermata e quindi viene visualizzato il messaggio finestra prima di visualizzare l'IDE principale. La finestra di messaggio consente di esaminare la schermata iniziale (ad esempio, per verificare la presenza di un'icona di VSPackage del prodotto).<br /><br /> Questa opzione non accetta argomenti. |
+| `/ResetSkipPkgs` | Cancella tutte le opzioni di caricamento ignora che sono state aggiunte dagli utenti che vogliono evitare il caricamento di VSPackage problematici, quindi avvia Visual Studio. La presenza di un tag SkipLoading disabilita il caricamento di un PACCHETTO VSPackage. Cancellazione del tag riabilita il caricamento del pacchetto VSPackage.<br /><br /> Questa opzione non accetta argomenti. |
+| `/RootSuffix` | Avvia Visual Studio utilizzando un percorso alternativo. Il comando seguente viene eseguito dal collegamento creato dal programma di installazione di Visual Studio SDK:<br /><br /> `devenv /RootSuffix exp`<br /><br /> In questo `exp` caso, identifica una posizione con `10.0Exp` un `10.0`particolare suffisso (ad esempio, anziché ). L'istanza sperimentale consente di eseguire il debug di un VSPackage separatamente dall'istanza di Visual Studio che si sta utilizzando per scrivere codice.<br /><br /> Questa opzione può accettare qualsiasi stringa che identifica un percorso creato utilizzando VSRegEx.exe. Per ulteriori informazioni, vedere [Istanza sperimentale](../extensibility/the-experimental-instance.md). |
+| `/SafeMode` | Avvia Visual Studio in modalità provvisoria, caricando solo l'IDE e i servizi predefiniti. L'opzione `/SafeMode` impedisce il caricamento di tutti i package VS di terze parti all'avvio di Visual Studio, garantendo l'esecuzione stabile.<br /><br /> Questa opzione non accetta argomenti. |
+| `/Setup` | Impone a Visual Studio di unire i metadati delle risorse che descrivono menu, barre degli strumenti e gruppi di comandi da tutti i package VS disponibili. È possibile eseguire questo comando solo come amministratore. <br /><br /> Questa opzione non accetta argomenti. Il comando `devenv /Setup` viene in genere eseguito come ultimo passaggio del processo di installazione. L'utilizzo `/Setup` dello switch non avvia l'IDE.|
+| `/Splash` | Viene visualizzata la schermata iniziale di Visual Studio, come di consueto, quindi viene visualizzata una finestra di messaggio prima di visualizzare l'IDE principale. La finestra di messaggio consente di studiare la schermata iniziale (ad esempio, per verificare la presenza di un VSPackage icona del prodotto).<br /><br /> Questa opzione non accetta argomenti. |
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Aggiungere i parametri della riga di comando](../extensibility/adding-command-line-switches.md)
+- [Aggiungere opzioni della riga di comando](../extensibility/adding-command-line-switches.md)
 - [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md)

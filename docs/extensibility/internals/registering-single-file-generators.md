@@ -1,31 +1,31 @@
 ---
-title: Registrazione di generatori di file singoli | Microsoft Docs
+title: Registrazione di generatori di file singoli Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9026da08272d69bac246f98ae741a47527d627f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724558"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705803"
 ---
 # <a name="registering-single-file-generators"></a>Registrazione di generatori di file singoli
-Per rendere disponibile uno strumento personalizzato in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è necessario registrarlo in modo che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possa crearne un'istanza e associarlo a un determinato tipo di progetto.
+Per rendere disponibile uno [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]strumento personalizzato in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , è necessario registrarlo in modo da poterne creare un'istanza e associarlo a un particolare tipo di progetto.
 
 ### <a name="to-register-a-custom-tool"></a>Per registrare uno strumento personalizzato
 
-1. Registrare la DLL dello strumento personalizzato nel registro di sistema [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] locale o nel registro di sistema in HKEY_CLASSES_ROOT.
+1. Registrare la DLL dello [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] strumento personalizzato nel Registro di sistema locale o nel Registro di sistema, in HKEY_CLASSES_ROOT.
 
-    Ad esempio, di seguito sono riportate le informazioni di registrazione per lo strumento MSDataSetGenerator personalizzato gestito, che viene fornita con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:
+    Ad esempio, ecco le informazioni di registrazione per lo strumento personalizzato [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]MSDataSetGenerator gestito, che viene fornito con :
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]
@@ -36,24 +36,24 @@ Per rendere disponibile uno strumento personalizzato in [!INCLUDE[vsprvs](../../
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. Creare una chiave del registro di sistema nell'hive di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] desiderato in generatori \\*GUID* dove *GUID* è il GUID definito dal sistema o dal servizio del progetto della lingua specifica. Il nome della chiave diventa il nome a livello di codice dello strumento personalizzato. La chiave dello strumento personalizzata presenta i valori seguenti:
+2. Creare una chiave del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Registro di\\sistema nell'hive desiderato in*GENERATORi GUID* dove *GUID* è il GUID definito dal sistema di progetto o servizio del linguaggio specifico. Il nome della chiave diventa il nome a livello di codice dello strumento personalizzato. La chiave dello strumento personalizzato ha i seguenti valori:
 
-   - (Predefinito)
+   - Valore predefinito.
 
-        Parametro facoltativo. Fornisce una descrizione intuitiva dello strumento personalizzato. Questo parametro è facoltativo, ma consigliato.
+        Facoltativa. Fornisce una descrizione intuitiva dello strumento personalizzato. Questo parametro è facoltativo, ma consigliato.
 
    - CLSID
 
-        Obbligatorio. Specifica l'identificatore della libreria di classi del componente COM che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
+        Obbligatorio. Specifica l'identificatore della libreria di classi <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>del componente COM che implementa .
 
-   - GeneratesDesignTimeSource
+   - GeneratesDesignTimeSource (GeneraDesignTimeSource)
 
-        Obbligatorio. Indica se i tipi dei file prodotti da questo strumento personalizzato vengono resi disponibili per le finestre di progettazione visiva. Il valore di questo parametro deve essere (zero) 0 per i tipi non disponibili per le finestre di progettazione visiva o (uno) 1 per i tipi disponibili per le finestre di progettazione visive.
+        Obbligatorio. Indica se i tipi dei file prodotti da questo strumento personalizzato vengono resi disponibili alle finestre di progettazione visiva. Il valore di questo parametro deve essere (zero) 0 per i tipi non disponibili per le finestre di progettazione visiva o (uno) 1 per i tipi disponibili per le finestre di progettazione visiva.
 
    > [!NOTE]
-   > È necessario registrare lo strumento personalizzato separatamente per ogni lingua per cui si desidera che lo strumento personalizzato sia disponibile.
+   > È necessario registrare lo strumento personalizzato separatamente per ogni lingua per la quale si desidera che lo strumento personalizzato sia disponibile.
 
-    Il MSDataSetGenerator, ad esempio, si registra una sola volta per ogni lingua:
+    Ad esempio, MSDataSetGenerator registra se stesso una volta per ogni lingua:For example, the MSDataSetGenerator registers itself once for each language:
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\MSDataSetGenerator]

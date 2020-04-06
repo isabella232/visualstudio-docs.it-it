@@ -1,5 +1,5 @@
 ---
-title: Funzione SccBackgroundGet | Microsoft Docs
+title: SccBackgroundGet (funzione) . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccBackgroundGet function
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0805e91f5386f101917ee988e9e0d23d066f48d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334020"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701235"
 ---
-# <a name="sccbackgroundget-function"></a>Funzione SccBackgroundGet
-Questa funzione recupera dal controllo del codice sorgente ogni dei file specificati senza l'intervento dell'utente.
+# <a name="sccbackgroundget-function"></a>SccBackgroundGet (funzione)
+Questa funzione recupera dal controllo del codice sorgente ognuno dei file specificati senza alcuna interazione da parte dell'utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,41 +37,41 @@ SCCRTN SccBackgroundGet(
 ### <a name="parameters"></a>Parametri
  pContext
 
-[in] Il puntatore di contesto del plug-in controllo di origine.
+[in] Puntatore di contesto del plug-in del controllo del codice sorgente.
 
- nFiles
+ nFile
 
-[in] Numero di file specificato per il `lpFileNames` matrice.
+[in] Numero di file `lpFileNames` specificati nella matrice.
 
- lpFileNames
+ LpNomidi File
 
 [in, out] Matrice di nomi di file da recuperare.
 
 > [!NOTE]
-> I nomi devono essere completamente qualificati i nomi di file locale.
+> I nomi devono essere nomi di file locali completi.
 
  dwFlags
 
-[in] Flag di comando (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).
+[in] Flag di`SCC_GET_ALL` `SCC_GET_RECURSIVE`comando ( , ).
 
  dwBackgroundOperationID
 
-[in] Un valore univoco associato a questa operazione.
+[in] Valore univoco associato a questa operazione.
 
 ## <a name="return-value"></a>Valore restituito
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+ L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei seguenti valori:
 
-|Value|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
 |SCC_OK|Operazione completata correttamente.|
-|SCC_E_BACKGROUNDGETINPROGRESS|Uno per il recupero in background è già in corso (il plug-in del controllo del codice sorgente deve restituire questo solo se non supporta operazioni batch simultanei).|
-|SCC_I_OPERATIONCANCELED|Operazione annullata prima del relativo completamento.|
+|SCC_E_BACKGROUNDGETINPROGRESS|Un recupero in background è già in corso (il plug-in del controllo del codice sorgente deve restituire questo solo se non supporta le operazioni batch simultanee).|
+|SCC_I_OPERATIONCANCELED|L'operazione è stata annullata prima del completamento.|
 
-## <a name="remarks"></a>Note
- Questa funzione viene sempre chiamata su un thread diverso da quello che caricata il plug-in del controllo del codice sorgente. Questa funzione non deve restituire fino al termine; Tuttavia, si può chiamato più volte con più elenchi di file, tutti nello stesso momento.
+## <a name="remarks"></a>Osservazioni
+ Questa funzione viene sempre chiamata su un thread diverso da quello che ha caricato il plug-in del controllo del codice sorgente. Questa funzione non deve restituire fino a quando non viene eseguita; tuttavia, può essere chiamato più volte con più elenchi di file, tutti contemporaneamente.
 
- L'utilizzo dei `dwFlags` argomento è quello utilizzato per il [SccGet](../extensibility/sccget-function.md).
+ L'utilizzo `dwFlags` dell'argomento è lo stesso di [SccGet](../extensibility/sccget-function.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)
+- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

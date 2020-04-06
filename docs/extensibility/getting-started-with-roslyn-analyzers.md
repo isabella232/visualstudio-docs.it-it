@@ -1,38 +1,38 @@
 ---
-title: Introduzione con gli analizzatori Roslyn | Microsoft Docs
+title: Guida introduttiva agli analizzatori di Roslyn Documenti Microsoft
 ms.date: 04/02/2018
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21b2d77d8c038988fa77293280c9ff7ad38cc82e
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: bc975ff4f142b85297c20f16ac399fce588c093b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822335"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711265"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Introduzione agli analizzatori Roslyn
 
-Con gli analizzatori di codice dinamici basati su progetti in Visual Studio, gli autori di API possono inviare analisi del codice specifiche del dominio come parte dei pacchetti NuGet. Poiché questi analizzatori sono basati sulla .NET Compiler Platform (nome in codice "Roslyn"), possono produrre avvisi nel codice mentre si digita anche prima di aver terminato la riga (non è più in attesa di compilare il codice per individuare i problemi). Gli analizzatori possono anche visualizzare una correzione automatica del codice tramite il prompt della lampadina di Visual Studio per consentire di pulire immediatamente il codice.
+Con analizzatori di codice in tempo reale e basati su progetti in Visual Studio, gli autori di API possono spedire l'analisi del codice specifica del dominio come parte dei pacchetti NuGet. Poiché questi analizzatori sono alimentati dalla piattaforma del compilatore .NET (nome in codice "Roslyn"), possono produrre avvisi nel codice durante la digitazione anche prima di aver completato la riga (non più in attesa di compilare il codice per individuare i problemi). Gli analizzatori possono anche esporre una correzione automatica del codice tramite il prompt lampadina di Visual Studio per consentire di pulire immediatamente il codice.
 
-## <a name="get-started"></a>Attività iniziali
+## <a name="get-started"></a>Introduzione
 
 [Panoramica degli analizzatori Roslyn](../code-quality/roslyn-analyzers-overview.md)
 
-[Esercitazione: Scrivi il primo analizzatore e la correzione del codice](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
+[Esercitazione: compilare il primo analizzatore con correzione del codice](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
-[Procedura dettagliata per aggiungere correzioni del codice: Fornire correzioni agli utenti per i problemi dell'analizzatore](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[Aggiungere le correzioni di codice Procedura dettagliata: fornire agli utenti correzioni per i problemi dell'analizzatoreAdd code fixes Walkthrough: Provide users fixes for analyzer issues](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
-[Real World Roslyn Analyzer](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) , che puoi guardare anche come una [discussione](https://channel9.msdn.com/events/Build/2015/3-725)
+[Analizzatore Roslyn del mondo reale](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) che puoi anche guardare come un [discorso](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[Alcuni esempi su GitHub, raggruppati in tre tipi di analizzatori](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
+[Diversi esempi su GitHub, raggruppati in tre tipi di analizzatori](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimento per la versione del pacchetto .NET Compiler Platform](roslyn-version-support.md)
-- [Altri documenti sul sito di GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+- [Informazioni di riferimento sulla versione del pacchetto della piattaforma del compilatore .NET.NET compiler platform package version reference](roslyn-version-support.md)
+- [Altri documenti sul sito GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [Regole FxCop implementate con gli analizzatori Roslyn](../code-quality/fxcop-rule-port-status.md)

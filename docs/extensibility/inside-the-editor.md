@@ -5,320 +5,320 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bba0b5192df53b6ec837b0030c7b236bf8e08dea
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340796"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710320"
 ---
 # <a name="inside-the-editor"></a>All'interno dell'editor
 
-L'editor è composto da più sottosistemi diversi, che sono pensati per l'editor di testo modello separato dalla visualizzazione di testo e l'interfaccia utente.
+L'editor è composto da diversi sottosistemi, che sono progettati per mantenere il modello di testo dell'editor separato dalla visualizzazione di testo e dall'interfaccia utente.
 
-Queste sezioni vengono descritti aspetti diversi dell'editor:
+Queste sezioni descrivono diversi aspetti dell'editor:
 
 - [Panoramica dei sottosistemi](../extensibility/inside-the-editor.md#overview-of-the-subsystems)
 
 - [Il modello di testo](../extensibility/inside-the-editor.md#the-text-model)
 
-- [Visualizzazione di testo.](../extensibility/inside-the-editor.md#the-text-view)
+- [La visualizzazione di testo](../extensibility/inside-the-editor.md#the-text-view)
 
 Queste sezioni descrivono le funzionalità dell'editor:
 
-- [Classificatori e i tag](../extensibility/inside-the-editor.md#tags-and-classifiers)
+- [Tag e classificatori](../extensibility/inside-the-editor.md#tags-and-classifiers)
 
-- [Aree di controllo](../extensibility/inside-the-editor.md#adornments)
+- [Ornamenti](../extensibility/inside-the-editor.md#adornments)
 
 - [Proiezione](../extensibility/inside-the-editor.md#projection)
 
-- [Struttura](../extensibility/inside-the-editor.md#outlining)
+- [struttura](../extensibility/inside-the-editor.md#outlining)
 
 - [Associazioni del mouse](../extensibility/inside-the-editor.md#mouse-bindings)
 
-- [Operazioni di editor](../extensibility/inside-the-editor.md#editor-operations)
+- [Operazioni dell'editore](../extensibility/inside-the-editor.md#editor-operations)
 
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)
 
 ## <a name="overview-of-the-subsystems"></a>Panoramica dei sottosistemi
 
-### <a name="text-model-subsystem"></a>Sottosistema di modello testo
+### <a name="text-model-subsystem"></a>Sottosistema del modello di testo
 
-Il sottosistema di modello di testo è responsabile per la rappresentazione di testo e consentendo la manipolazione. Il sottosistema di modello di testo contiene il <xref:Microsoft.VisualStudio.Text.ITextBuffer> interfaccia, che descrive la sequenza di caratteri che deve essere visualizzato dall'editor. Questo testo può essere modificato, rilevato e manipolato in caso contrario, in molti modi. Il modello di testo fornisce anche i tipi per gli aspetti seguenti:
+Il sottosistema del modello di testo è responsabile della rappresentazione del testo e dell'abilitazione della relativa manipolazione. Il sottosistema del <xref:Microsoft.VisualStudio.Text.ITextBuffer> modello di testo contiene l'interfaccia, che descrive la sequenza di caratteri che deve essere visualizzata dall'editor. Questo testo può essere modificato, tracciato e manipolato in altro modo in molti modi. Il modello di testo fornisce anche i tipi per i seguenti aspetti:
 
-- Un servizio che associa i file di testo e gestisce la lettura e scrittura nel file system.
+- Servizio che associa il testo ai file e gestisce la lettura e la scrittura nel file system.
 
-- Un servizio di differenziazione che consente di trovare le differenze minime tra due sequenze di oggetti.
+- Servizio differenze che individua le differenze minime tra due sequenze di oggetti.
 
-- Un sistema per la descrizione di testo in un buffer in termini di subset del testo in altri buffer.
+- Sistema per la descrizione del testo in un buffer in termini di sottoinsiemi del testo in altri buffer.
 
-Il sottosistema di modello di testo è gratuito dei concetti dell'interfaccia utente. Ad esempio, non è responsabile della formattazione del testo o il layout del testo e non ha alcuna conoscenza di visuali che possono essere associati con il testo.
+Il sottosistema del modello di testo è privo di concetti dell'interfaccia utente. Ad esempio, non è responsabile della formattazione del testo o del layout del testo e non ha alcuna conoscenza delle aree di controllo visive che possono essere associate al testo.
 
-I tipi pubblici del sottosistema di modello di testo sono contenuti nel *Microsoft.VisualStudio.Text.Data.dll* e *Microsoft.VisualStudio.CoreUtility.dll*, che variano solo sulla base di .NET Framework libreria di classi e Managed Extensibility Framework (MEF).
+I tipi pubblici del sottosistema del modello di testo sono contenuti in *Microsoft.VisualStudio.Text.Data.dll* e *Microsoft.VisualStudio.CoreUtility.dll*, che dipendono solo dalla libreria di classi base di .NET Framework e da Managed Extensibility Framework (MEF).
 
-### <a name="text-view-subsystem"></a>Sottosistema di visualizzazione testo
+### <a name="text-view-subsystem"></a>Sottosistema vista testo
 
-Il sottosistema di visualizzazione testo è responsabile della formattazione e visualizzazione di testo. I tipi in questo sottosistema sono suddivise in due livelli, a seconda del fatto che i tipi si basano su Windows Presentation Foundation (WPF). I tipi più importanti sono <xref:Microsoft.VisualStudio.Text.Editor.ITextView> e <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, che controllano il set di righe di testo che devono essere visualizzati e anche il punto di inserimento, la selezione e le funzionalità per la decorazione di testo con elementi UI di WPF. Questo sottosistema fornisce anche i margini intorno al testo dell'area di visualizzazione. I margini possono essere estese e possono contenere diversi tipi di effetti contenuti e visual. Riga numero consente di visualizzare e barre di scorrimento sono esempi dei margini.
+Il sottosistema della visualizzazione di testo è responsabile della formattazione e della visualizzazione del testo. I tipi in questo sottosistema sono suddivisi in due livelli, a seconda che i tipi si basino su Windows Presentation Foundation (WPF). I tipi più <xref:Microsoft.VisualStudio.Text.Editor.ITextView> <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>importanti sono e , che controllano il set di righe di testo da visualizzare, nonché il punto di inserimento, la selezione e le funzionalità per l'ornamento del testo tramite gli elementi dell'interfaccia utente WPF. Questo sottosistema fornisce anche margini intorno all'area di visualizzazione del testo. Questi margini possono essere estesi e possono contenere diversi tipi di contenuto ed effetti visivi. Esempi di margini sono le visualizzazioni dei numeri di riga e le barre di scorrimento.
 
-I tipi pubblici del sottosistema di visualizzazione di testo sono contenuti nel *Microsoft.VisualStudio.Text.UI.dll* e *Microsoft.VisualStudio.Text.UI.Wpf.dll*. Il primo assembly contiene gli elementi indipendenti dalla piattaforma e il secondo contiene gli elementi di specifiche di WPF.
+I tipi pubblici del sottosistema di visualizzazione di testo sono contenuti in *Microsoft.VisualStudio.Text.UI.dll* e *Microsoft.VisualStudio.Text.UI.Wpf.dll*. Il primo assembly contiene gli elementi indipendenti dalla piattaforma e il secondo contiene gli elementi specifici di WPFWPF.
 
 ### <a name="classification-subsystem"></a>Sottosistema di classificazione
 
-Il sottosistema di classificazione è responsabile di determinare le proprietà del carattere per il testo. Un classificatore suddivide il testo in diverse classi, ad esempio, "parola chiave" o "comment". La mappa di formato di classificazione è correlato queste classi per le proprietà del carattere effettivo, ad esempio, "Blue Consolas 10 pt". Queste informazioni vengano utilizzate per la visualizzazione di testo quando viene formattato e si esegue il rendering di testo. L'assegnazione di tag, che è descritti più dettagliatamente più avanti in questo argomento, abilita i dati da associare a intervalli di testo.
+Il sottosistema di classificazione è responsabile della determinazione delle proprietà dei caratteri per il testo. Un classificatore suddivide il testo in classi diverse, ad esempio "parola chiave" o "commento". La mappa del formato di classificazione mette in relazione queste classi con le proprietà del carattere effettive, ad esempio "Blue Consolas 10 pt". Queste informazioni vengono utilizzate dalla visualizzazione di testo durante la visualizzazione e il rendering del testo. L'aggiunta di tag, descritta in modo più dettagliato più avanti in questo argomento, consente di associare i dati agli intervalli di testo.
 
-I tipi pubblici del sottosistema di classificazione sono contenuti in Microsoft.VisualStudio.Text.Logic.dll e interagiscono con gli aspetti visivi di classificazione, che sono contenuti nel Microsoft.VisualStudio.Text.UI.Wpf.dll.
+I tipi pubblici del sottosistema di classificazione sono contenuti in Microsoft.VisualStudio.Text.Logic.dll e interagiscono con gli aspetti visivi della classificazione, contenuti in Microsoft.VisualStudio.Text.UI.Wpf.dll.
 
-### <a name="operations-subsystem"></a>Sottosistema di operazioni
+### <a name="operations-subsystem"></a>Sottosistema delle operazioni
 
-Il sottosistema di operazioni definisce il comportamento dell'editor. Fornisce l'implementazione per i comandi dell'editor di Visual Studio e il sistema di annullamento.
+Il sottosistema delle operazioni definisce il comportamento dell'editor. Fornisce l'implementazione per i comandi dell'editor di Visual Studio e il sistema di annullamento.
 
-## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Informazioni dettagliate sul modello di testo e la visualizzazione di testo
+## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Uno sguardo più da vicino al modello di testo e alla vista di testo
 
 ### <a name="the-text-model"></a>Il modello di testo
 
-Il sottosistema di modello di testo è costituito dai raggruppamenti diversi dei tipi di testo. Sono inclusi il buffer di testo, gli snapshot di testo e intervalli di testo.
+Il sottosistema del modello di testo è costituito da diversi raggruppamenti di tipi di testo. Questi includono il buffer di testo, le istantanee di testo e le estensioni di testo.
 
-#### <a name="text-buffers-and-text-snapshots"></a>I buffer di testo e gli snapshot di testo
+#### <a name="text-buffers-and-text-snapshots"></a>Buffer di testo e istantanee di testo
 
-Il <xref:Microsoft.VisualStudio.Text.ITextBuffer> interfaccia rappresenta una sequenza di caratteri Unicode che vengono codificati con UTF-16, che è la codifica usata per il `String` tipo in .NET Framework. Un buffer di testo può essere reso persistente come un documento di file system, ma non è obbligatorio.
+L'interfaccia <xref:Microsoft.VisualStudio.Text.ITextBuffer> rappresenta una sequenza di caratteri Unicode codificati utilizzando UTF-16, ovvero la codifica utilizzata dal `String` tipo in .NET Framework. Un buffer di testo può essere reso persistente come documento del file system, ma questa operazione non è necessaria.
 
-Il <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService> viene usato per creare un buffer di testo vuoto o un buffer di testo che viene inizializzato da una stringa o da <xref:System.IO.TextReader>. Il buffer di testo può essere resi persistenti nel file System come un <xref:Microsoft.VisualStudio.Text.ITextDocument>.
+L'oggetto <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService> viene utilizzato per creare un buffer di testo vuoto o <xref:System.IO.TextReader>un buffer di testo inizializzato da una stringa o da . Il buffer di testo può essere salvato <xref:Microsoft.VisualStudio.Text.ITextDocument>in modo permanente nel file system come file .
 
-Qualsiasi thread può modificare il buffer di testo fino a quando un thread acquisisce la proprietà del buffer di testo chiamando <xref:Microsoft.VisualStudio.Text.ITextBuffer.TakeThreadOwnership%2A>. In seguito, solo quel thread può eseguire modifiche.
+Qualsiasi thread può modificare il buffer di testo fino <xref:Microsoft.VisualStudio.Text.ITextBuffer.TakeThreadOwnership%2A>a quando un thread assume la proprietà del buffer di testo chiamando . Dopo di che, solo quel thread può eseguire modifiche.
 
-Un buffer di testo può essere eseguita per molte versioni durante la sua durata. Una nuova versione viene generata ogni volta che il buffer viene modificato, mentre l'oggetto non modificabile <xref:Microsoft.VisualStudio.Text.ITextSnapshot> rappresenta il contenuto di tale versione del buffer. Poiché gli snapshot di testo non sono modificabili, è possibile accedere uno snapshot di testo in qualsiasi thread, senza restrizioni, anche se il buffer di testo che esso rappresenta in continua evoluzione.
+Un buffer di testo può passare attraverso molte versioni durante la sua durata. Una nuova versione viene generata ogni volta che il <xref:Microsoft.VisualStudio.Text.ITextSnapshot> buffer viene modificato e un non modificabile rappresenta il contenuto di tale versione del buffer. Poiché le istantanee di testo non sono modificabili, è possibile accedere a un'istantanea di testo su qualsiasi thread, senza restrizioni, anche se il buffer di testo che rappresenta continua a cambiare.
 
-#### <a name="text-snapshots-and-text-snapshot-lines"></a>Gli snapshot di testo e righe di testo dello snapshot
+#### <a name="text-snapshots-and-text-snapshot-lines"></a>Istantanee di testo e linee di testo
 
-È possibile visualizzare il contenuto di uno snapshot di testo come una sequenza di caratteri o come una sequenza di righe. Caratteri e le righe sono che entrambi indicizzati a partire da zero. Uno snapshot di testo vuoto contiene zero caratteri e una riga vuota. Una riga è delimitata da qualsiasi sequenza di caratteri di interruzione di riga Unicode valido, o dall'inizio o alla fine del buffer. I caratteri di interruzione di riga sono rappresentati in modo esplicito nello snapshot di testo e le interruzioni di riga in uno snapshot di testo non devono essere tutte lo stesso.
+È possibile visualizzare il contenuto di un'istantanea di testo come una sequenza di caratteri o come una sequenza di righe. I caratteri e le righe sono entrambi indicizzati a partire da zero. Un'istantanea di testo vuoto contiene zero caratteri e una riga vuota. Una riga è delimitata da qualsiasi sequenza di caratteri di interruzione di riga Unicode valida o dall'inizio o dalla fine del buffer. I caratteri di interruzione di riga sono rappresentati in modo esplicito nello snapshot di testo e le interruzioni di riga in uno snapshot di testo non devono essere tutte uguali.
 
 > [!NOTE]
-> Per altre informazioni sui caratteri di interruzione di riga nell'editor di Visual Studio, vedere [codifiche e interruzioni di riga](../ide/encodings-and-line-breaks.md).
+> Per ulteriori informazioni sui caratteri di interruzione di riga nell'editor di Visual Studio, vedere [Codifiche e interruzioni](../ide/encodings-and-line-breaks.md)di riga .
 
-Una riga di testo è rappresentata da un <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> oggetto, che può essere ottenuto da uno snapshot di testo per un numero di riga specifico o per una particolare posizione di carattere.
+Una riga di testo <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> è rappresentata da un oggetto, che può essere ottenuto da un'istantanea di testo per un particolare numero di riga o per una particolare posizione del carattere.
 
-#### <a name="snapshotpoints-snapshotspans-and-normalizedsnapshotspancollections"></a>Elementi SnapshotPoint SnapshotSpans e NormalizedSnapshotSpanCollections
+#### <a name="snapshotpoints-snapshotspans-and-normalizedsnapshotspancollections"></a>SnapshotPoints, SnapshotSpans e NormalizedSnapshotSpanCollections
 
-Oggetto <xref:Microsoft.VisualStudio.Text.SnapshotPoint> rappresenta una posizione del carattere in uno snapshot. La posizione è garantita a essere compreso tra zero e la lunghezza dello snapshot. Oggetto <xref:Microsoft.VisualStudio.Text.SnapshotSpan> rappresenta un intervallo di testo in uno snapshot. Posizione finale è garantito a essere compreso tra zero e la lunghezza dello snapshot. Il <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection> è costituito da un set di <xref:Microsoft.VisualStudio.Text.SnapshotSpan> oggetti dello stesso snapshot.
+Oggetto <xref:Microsoft.VisualStudio.Text.SnapshotPoint> rappresenta la posizione di un carattere in un'istantanea. La posizione è garantita per giacere tra zero e la lunghezza dell'istantanea. Oggetto <xref:Microsoft.VisualStudio.Text.SnapshotSpan> rappresenta un intervallo di testo in un'istantanea. La sua posizione finale è garantita per giacere tra zero e la lunghezza dell'istantanea. L'oggetto <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection> è <xref:Microsoft.VisualStudio.Text.SnapshotSpan> costituito da un insieme di oggetti dallo stesso snapshot.
 
-#### <a name="spans-and-normalizedspancollections"></a>Gli intervalli e NormalizedSpanCollections
+#### <a name="spans-and-normalizedspancollections"></a>Spans e NormalizedSpanCollections
 
-Oggetto <xref:Microsoft.VisualStudio.Text.Span> rappresenta un intervallo che può essere applicato a un intervallo di testo in uno snapshot di testo. Le posizioni di snapshot sono in base zero, in modo che gli intervalli possono iniziare in qualsiasi posizione inclusi zero. Il `End` proprietà di un intervallo è uguale alla somma dei relativi `Start` proprietà e i relativi `Length` proprietà. Oggetto `Span` non include il carattere che verrà indicizzato per la `End` proprietà. Ad esempio, un intervallo che ha inizio = 5 e Length = 3 ha End = 8, e include i caratteri in corrispondenza delle posizioni 5, 6 e 7. La notazione per questo intervallo è [5..8).
+Oggetto <xref:Microsoft.VisualStudio.Text.Span> rappresenta un intervallo che può essere applicato a un intervallo di testo in un'istantanea di testo. Le posizioni delle istantanee sono in base zero, pertanto gli intervalli possono iniziare in qualsiasi posizione, incluso zero. La `End` proprietà di un intervallo è `Start` uguale `Length` alla somma della relativa proprietà e della relativa proprietà. Un `Span` oggetto non include il carattere `End` indicizzato dalla proprietà . Ad esempio, un intervallo con inizio 5 e lunghezza 3 ha la fine 8 e include i caratteri nelle posizioni 5, 6 e 7. La notazione per questo intervallo è [5..8).
 
-Due intervalli si intersecano se dispongono di alcuna posizione in comune, tra cui la posizione finale. Pertanto, l'intersezione di [3, 5) e [2, 7) è [3, 5) e punto di intersezione tra [3, 5) e [5, 7) è [5, 5). (Si noti che [5, 5) è un intervallo vuoto.)
+Due campate si intersecano se hanno in comune posizioni, inclusa la posizione Finale. Pertanto, l'intersezione di [3, 5) e [2, 7) è [3, 5) e l'intersezione di [3, 5) e [5, 7) è [5, 5). (Si noti che [5, 5) è un intervallo vuoto.)
 
-Due intervalli si sovrappongono se hanno le posizioni in comune, ad eccezione della posizione finale. Intervallo vuoto mai si sovrappone a qualsiasi altro intervallo e la sovrapposizione di due intervalli non è mai vuota.
+Due estensioni si sovrappongono se hanno posizioni in comune, ad eccezione della posizione Finale. Un intervallo vuoto non si sovrappone mai ad altri intervalli e la sovrapposizione di due intervalli non è mai vuota.
 
-Oggetto <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> è riportato un elenco di intervalli in base all'ordine le proprietà di inizio degli intervalli. Nell'elenco di intervalli sovrapposti o adiacenti vengono uniti. Ad esempio, dato il set di intervalli [5..9), [0..1), [3..6), e [9..10), l'elenco normalizzato di intervalli è [0..1), [3..10).
+A <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> è un elenco di intervalli nell'ordine delle proprietà Start degli intervalli. Nell'elenco vengono unite le estensioni sovrapposte o adiacenti. Ad esempio, dato il set di intervalli [5..9), [0..1), [3..6) e [9..10), l'elenco normalizzato di intervalli è [0..1), [3..10).
 
-#### <a name="itextedit-textversion-and-text-change-notifications"></a>Le notifiche di modifica ITextEdit TextVersion e testo
+#### <a name="itextedit-textversion-and-text-change-notifications"></a>Notifiche di Modifica di testo, TextVersion e Modifiche testo
 
-Il contenuto di un buffer di testo può essere modificato utilizzando un <xref:Microsoft.VisualStudio.Text.ITextEdit> oggetto. Creazione di tale tipo di oggetto (usando uno dei `CreateEdit()` metodi di <xref:Microsoft.VisualStudio.Text.ITextBuffer>) avvia una transazione di testo che è costituito da modifiche di testo. Ogni modifica è una sostituzione di un intervallo di testo nel buffer da una stringa. Le coordinate e il contenuto di ogni modifica sono espresse in relazione lo snapshot del buffer quando la transazione è stata avviata. Il <xref:Microsoft.VisualStudio.Text.ITextEdit> oggetto consente di regolare le coordinate di modifiche che sono interessate da altre modifiche nella stessa transazione.
+Il contenuto di un buffer di <xref:Microsoft.VisualStudio.Text.ITextEdit> testo può essere modificato utilizzando un oggetto . La creazione di un oggetto `CreateEdit()` di <xref:Microsoft.VisualStudio.Text.ITextBuffer>questo tipo (utilizzando uno dei metodi di ) avvia una transazione di testo costituita da modifiche di testo. Ogni modifica è la sostituzione di un intervallo di testo nel buffer da una stringa. Le coordinate e il contenuto di ogni modifica sono espressi in relazione allo snapshot del buffer all'avvio della transazione. L'oggetto <xref:Microsoft.VisualStudio.Text.ITextEdit> regola le coordinate delle modifiche interessate da altre modifiche nella stessa transazione.
 
-Si consideri, ad esempio, un buffer di testo che contiene questa stringa:
+Si consideri, ad esempio, un buffer di testo che contiene questa stringa:For example, consider a text buffer that contains this string:
 
 ```
 abcdefghij
 ```
 
-Applicare una transazione che contiene due modifiche, una modifica che sostituisce l'intervallo di [2..4) utilizzando il carattere `X` e una seconda modifica che sostituisce l'intervallo di [6..9) utilizzando il carattere `Y`. Il risultato è il buffer:
+Applicare una transazione che contiene due modifiche, una modifica che sostituisce l'intervallo in corrispondenza di [2..4) utilizzando il carattere `X` e una seconda modifica che sostituisce l'intervallo in [6..9) utilizzando il carattere `Y`. Il risultato è questo buffer:The result is this buffer:
 
 ```
 abXefYj
 ```
 
-Le coordinate per la seconda modifica sono state calcolate per quanto riguarda il contenuto del buffer all'inizio della transazione, prima è stata applicata alla prima modifica.
+Le coordinate per la seconda modifica sono state calcolate rispetto al contenuto del buffer all'inizio della transazione, prima dell'applicazione della prima modifica.
 
-Rendere effettive le modifiche al buffer durante la <xref:Microsoft.VisualStudio.Text.ITextEdit> oggetto commit viene eseguito chiamando relativo `Apply()` (metodo). Se si è verificato almeno una modifica non è vuoto, una nuova <xref:Microsoft.VisualStudio.Text.ITextVersion> viene creato un nuovo <xref:Microsoft.VisualStudio.Text.ITextSnapshot> viene creato e uno `Changed` viene generato l'evento. Ogni versione di testo ha un altro snapshot di testo. Uno snapshot di testo rappresenta lo stato completo del buffer di testo dopo che una transazione di modifica, ma una versione testuale vengono descritte solo le modifiche da uno snapshot alla successiva. In generale, gli snapshot di testo sono concepiti per essere utilizzate una sola volta e quindi scartati, mentre le versioni di testo devono rimanere attive per un certo tempo.
+Le modifiche apportate al <xref:Microsoft.VisualStudio.Text.ITextEdit> buffer diventano effettive quando viene eseguito il commit dell'oggetto chiamando il relativo `Apply()` metodo. Se si è verificato almeno una modifica <xref:Microsoft.VisualStudio.Text.ITextVersion> non vuota, <xref:Microsoft.VisualStudio.Text.ITextSnapshot> viene creata `Changed` una nuova modifica, viene creato un nuovo evento e viene generato un evento. Ogni versione di testo ha un'istantanea di testo diversa. Uno snapshot di testo rappresenta lo stato completo del buffer di testo dopo una transazione di modifica, ma una versione di testo descrive solo le modifiche da uno snapshot a quello successivo. In generale, le istantanee di testo devono essere utilizzate una sola volta e quindi eliminate, mentre le versioni di testo devono rimanere attive per un certo periodo di tempo.
 
-Contiene una versione testuale un <xref:Microsoft.VisualStudio.Text.INormalizedTextChangeCollection>. Questa raccolta vengono descritte le modifiche che, quando applicato lo snapshot, generare lo snapshot successivo. Ogni <xref:Microsoft.VisualStudio.Text.ITextChange> nella raccolta contiene la posizione di carattere della stringa sostituita, la modifica e la stringa di sostituzione. Stringa sostituita è vuota per un inserimento di base e la stringa di sostituzione è vuota per un'eliminazione di base. La raccolta normalizzata è sempre `null` per la versione più recente del buffer di testo.
+Una versione di <xref:Microsoft.VisualStudio.Text.INormalizedTextChangeCollection>testo contiene un file . Questa raccolta descrive le modifiche che, se applicate allo snapshot, producono lo snapshot successivo. Ogni <xref:Microsoft.VisualStudio.Text.ITextChange> nella raccolta contiene la posizione del carattere della modifica, la stringa sostituita e la stringa di sostituzione. La stringa sostituita è vuota per un inserimento di base e la stringa di sostituzione è vuota per un'eliminazione di base. La raccolta normalizzata `null` è sempre per la versione più recente del buffer di testo.
 
-Un solo <xref:Microsoft.VisualStudio.Text.ITextEdit> oggetto può essere creata un'istanza per un buffer di testo in qualsiasi momento e tutte le modifiche di testo devono essere eseguite sul thread che possiede il buffer di testo (se la proprietà è stato richiesto). Una modifica di testo può venire abbandonata chiamando relativi `Cancel` metodo o del relativo `Dispose` (metodo).
+È <xref:Microsoft.VisualStudio.Text.ITextEdit> possibile creare un'istanza di un solo oggetto per un buffer di testo in qualsiasi momento e tutte le modifiche di testo devono essere eseguite sul thread proprietario del buffer di testo (se la proprietà è stata rivendicata). Una modifica di testo può `Cancel` essere abbandonata chiamando il relativo metodo o il relativo `Dispose` metodo.
 
-<xref:Microsoft.VisualStudio.Text.ITextBuffer> fornisce inoltre `Insert()`, `Delete()`, e `Replace()` metodi simili a quelle disponibili nel <xref:Microsoft.VisualStudio.Text.ITextEdit> interfaccia. La chiamata di questi ha lo stesso effetto di creazione di un <xref:Microsoft.VisualStudio.Text.ITextEdit> oggetto, effettua la chiamata simile e quindi applicare la modifica.
+<xref:Microsoft.VisualStudio.Text.ITextBuffer>fornisce `Insert()`inoltre `Delete()`, `Replace()` e metodi simili <xref:Microsoft.VisualStudio.Text.ITextEdit> a quelli presenti sull'interfaccia. La chiamata a questi ha <xref:Microsoft.VisualStudio.Text.ITextEdit> lo stesso effetto della creazione di un oggetto, l'esecuzione della chiamata simile e quindi l'applicazione della modifica.
 
-#### <a name="tracking-points-and-tracking-spans"></a>Track point e intervalli di rilevamento
+#### <a name="tracking-points-and-tracking-spans"></a>Punti di tracciamento e campate di tracciamento
 
-Un <xref:Microsoft.VisualStudio.Text.ITrackingPoint> rappresenta una posizione del carattere in un buffer di testo. Se il buffer viene modificato in modo che determina la posizione del carattere da spostare, il punto di rilevamento vengono spostati con essa. Ad esempio, se un punto di rilevamento si riferisce alla posizione 10 in un buffer e vengono inseriti cinque caratteri all'inizio del buffer, il punto di rilevamento quindi fa riferimento alla posizione 15. Se si verifica un inserimento in modo preciso la posizione indicata dal punto di rilevamento, il comportamento è determinato dal relativo <xref:Microsoft.VisualStudio.Text.PointTrackingMode>, che può essere `Positive` o `Negative`. Se la modalità di verifica è positiva, il punto di rilevamento si riferisce allo stesso carattere, che ora si trova alla fine dell'inserimento. Se la modalità di rilevamento è negativa, il punto di rilevamento si riferisce al primo carattere inserito nella posizione originale. Se il carattere in corrispondenza della posizione rappresentato da un punto di rilevamento è stato eliminato, il punto di rilevamento passa al primo carattere che segue l'intervallo di eliminazione. Ad esempio, se un punto di rilevamento indica il carattere alla posizione 5 e vengono eliminati i caratteri nelle posizioni 3 a 6, il punto di rilevamento fa riferimento al carattere nella posizione 3.
+Oggetto <xref:Microsoft.VisualStudio.Text.ITrackingPoint> rappresenta una posizione di carattere in un buffer di testo. Se il buffer viene modificato in modo da spostare la posizione del carattere, il punto di rilevamento si sposta con esso. Ad esempio, se un punto di rilevamento fa riferimento alla posizione 10 in un buffer e cinque caratteri vengono inseriti all'inizio del buffer, il punto di rilevamento fa riferimento alla posizione 15. Se un inserimento avviene esattamente nella posizione indicata dal <xref:Microsoft.VisualStudio.Text.PointTrackingMode>punto di tracciamento, il suo comportamento è determinato dalla relativa , che può essere o `Positive` `Negative`. Se la modalità di tracciamento è positiva, il punto di tracciamento fa riferimento allo stesso carattere, che si trova ora alla fine dell'inserimento. Se la modalità di tracciamento è negativa, il punto di tracciamento si riferisce al primo carattere inserito nella posizione originale. Se il carattere nella posizione rappresentata da un punto di rilevamento viene eliminato, il punto di rilevamento passa al primo carattere che segue l'intervallo eliminato. Ad esempio, se un punto di tracciamento si riferisce al carattere nella posizione 5 e i caratteri nelle posizioni da 3 a 6 vengono eliminati, il punto di tracciamento fa riferimento al carattere nella posizione 3.
 
-Un <xref:Microsoft.VisualStudio.Text.ITrackingSpan> rappresenta un intervallo di caratteri anziché una sola posizione. Il comportamento è determinato dal relativo <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>. Se è la modalità di rilevamento span [SpanTrackingMode.EdgeInclusive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeInclusive), si espande l'intervallo di rilevamento per incorporare testo inserito nei suoi bordi. Se è la modalità di rilevamento span [SpanTrackingMode.EdgeExclusive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeExclusive), intervallo di rilevamento non incorpora il testo inserito nei suoi bordi. Tuttavia, se è la modalità di rilevamento span [SpanTrackingMode.EdgePositive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgePositive), un inserimento effettua il push della posizione corrente verso l'inizio, e se è la modalità di rilevamento span [SpanTrackingMode.EdgeNegative](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeNegative), un oggetto inserimento inserisce la posizione corrente verso la fine.
+Un <xref:Microsoft.VisualStudio.Text.ITrackingSpan> rappresenta un intervallo di caratteri anziché una sola posizione. Il suo comportamento <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>è determinato dalla sua . Se la modalità di rilevamento dell'intervallo è [SpanTrackingMode.EdgeInclusive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeInclusive), l'intervallo di rilevamento viene aumentato per incorporare il testo inserito ai bordi. Se la modalità di rilevamento dell'intervallo è [SpanTrackingMode.EdgeExclusive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeExclusive), l'intervallo di rilevamento non incorpora il testo inserito ai bordi. Tuttavia, se la modalità di rilevamento dell'intervallo è [SpanTrackingMode.EdgePositive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgePositive), un inserimento spinge la posizione corrente verso l'inizio e se la modalità di rilevamento dell'intervallo è [SpanTrackingMode.EdgeNegative](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeNegative), un inserimento spinge la posizione corrente verso la fine.
 
-È possibile ottenere la posizione di un punto di rilevamento o l'intervallo di un intervallo di rilevamento per tutti gli snapshot del buffer di testo a cui appartengono. Track point e intervalli di rilevamento può fare in modo sicuro riferimento da qualsiasi thread.
+È possibile ottenere la posizione di un punto di rilevamento o l'intervallo di un intervallo di rilevamento per qualsiasi snapshot del buffer di testo a cui appartengono. I punti di rilevamento e gli intervalli di rilevamento possono essere referenziati in modo sicuro da qualsiasi thread.
 
 #### <a name="content-types"></a>Tipi di contenuto
 
-Tipi di contenuto sono un meccanismo per definire tipi diversi di contenuto. Un tipo di contenuto può essere un tipo di file, ad esempio "text", "code" o "binary" o un tipo di tecnologia, ad esempio "xml", "vb" o "c#". Ad esempio, la parola "using" è una parola chiave in c# e Visual Basic, ma non in altri linguaggi di programmazione. Pertanto, la definizione di questa parola chiave sarebbe limitata per i tipi di contenuto "c#" e "vb".
+I tipi di contenuto sono un meccanismo per la definizione di diversi tipi di contenuto. Un tipo di contenuto può essere un tipo di file, ad esempio "text", "code" o "binary", oppure un tipo di tecnologia, ad esempio "xml", "vb" o "c". Ad esempio, la parola "using" è una parola chiave sia in C , che in Visual Basic, ma non in altri linguaggi di programmazione. Di conseguenza, la definizione di questa parola chiave sarebbe limitata ai tipi di contenuto "c" e "vb".
 
-I tipi di contenuto vengono utilizzati come filtro per le aree di controllo e gli altri elementi dell'editor. Molte funzionalità dell'editor e punti di estensione sono definiti per ogni tipo di contenuto. Colorazione del testo, ad esempio, è diversa per i file di testo normale, i file XML e file del codice sorgente Visual Basic. I buffer di testo sono in genere assegnati un tipo di contenuto quando vengono creati e il tipo di contenuto di un buffer di testo può essere modificato.
+I tipi di contenuto vengono utilizzati come filtro per le aree di controllo e altri elementi dell'editor. Molte funzionalità dell'editor e punti di estensione sono definiti per tipo di contenuto. Ad esempio, la colorazione del testo è diversa per i file di testo normale, i file XML e i file di codice sorgente di Visual Basic. I buffer di testo sono in genere assegnati a un tipo di contenuto quando vengono creati e il tipo di contenuto di un buffer di testo può essere modificato.
 
-I tipi di contenuto possono multiplo-ereditare da altri tipi di contenuto. Il <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> consente di specificare più tipi di base come elementi padre di un tipo di contenuto specificato.
+I tipi di contenuto possono ereditare più elementi da altri tipi di contenuto. Consente <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> di specificare più tipi di base come elementi padre di un determinato tipo di contenuto.
 
-Gli sviluppatori possono definire i propri tipi di contenuto e registrarli utilizzando il <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Molte funzionalità dell'editor possono essere definite rispetto al tipo di contenuto specifico tramite la <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Margini dell'editor, le aree di controllo e i gestori del mouse, ad esempio, possono essere definiti in modo che si applicano solo agli editor che consentono di visualizzare i tipi di contenuto specifici.
+Gli sviluppatori possono definire i propri tipi <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>di contenuto e registrarli utilizzando il file . Molte funzionalità dell'editor possono essere definite rispetto <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>a un tipo di contenuto specifico utilizzando il metodo . Ad esempio, i margini dell'editor, le aree di controllo e i gestori del mouse possono essere definiti in modo che vengano applicati solo agli editor che visualizzano tipi di contenuto specifici.
 
-### <a name="the-text-view"></a>Visualizzazione di testo.
+### <a name="the-text-view"></a>La visualizzazione di testo
 
-La parte di visualizzazione del modello model view controller (MVC) definisce la visualizzazione di testo, la formattazione della visualizzazione, elementi grafici, ad esempio la barra di scorrimento e il punto di inserimento. Tutti gli elementi di presentazione dell'editor di Visual Studio sono basati su WPF.
+La parte di visualizzazione del modello del controller di visualizzazione modello (MVC) definisce la visualizzazione di testo, la formattazione della visualizzazione, gli elementi grafici, ad esempio la barra di scorrimento e il punto di inserimento. Tutti gli elementi di presentazione dell'editor di Visual Studio sono basati su WPFWPF.
 
 #### <a name="text-views"></a>Visualizzazioni di testo
 
-Il <xref:Microsoft.VisualStudio.Text.Editor.ITextView> interfaccia è una rappresentazione indipendente dalla piattaforma di una visualizzazione di testo. Viene usato principalmente per visualizzare i documenti di testo in una finestra, ma può anche essere utilizzato per altri scopi, ad esempio, in una descrizione comando.
+L'interfaccia <xref:Microsoft.VisualStudio.Text.Editor.ITextView> è una rappresentazione indipendente dalla piattaforma di una visualizzazione di testo. Viene utilizzato principalmente per visualizzare documenti di testo in una finestra, ma può essere utilizzato anche per altri scopi, ad esempio, in una descrizione comando.
 
-La visualizzazione di testo fa riferimento a diversi tipi di buffer di testo. Il <xref:Microsoft.VisualStudio.Text.Editor.ITextView.TextViewModel%2A> proprietà fa riferimento a un <xref:Microsoft.VisualStudio.Text.Editor.ITextViewModel> oggetto che fa riferimento a questi tre buffer di testo diverso: il buffer di dati, che è il buffer di dati a livello superiore, il buffer di modifica, in cui la modifica si verifica e buffer visivo, ovvero il buffer che è visualizzato nella visualizzazione di testo.
+La visualizzazione di testo fa riferimento a diversi tipi di buffer di testo. La <xref:Microsoft.VisualStudio.Text.Editor.ITextView.TextViewModel%2A> proprietà fa <xref:Microsoft.VisualStudio.Text.Editor.ITextViewModel> riferimento a un oggetto che punta a questi tre diversi buffer di testo: il buffer di dati, che è il buffer a livello di dati superiore, il buffer di modifica, in cui si verifica la modifica, e il buffer visivo, ovvero il buffer visualizzato nella visualizzazione di testo.
 
-Il testo viene formattato in base i classificatori collegati al buffer di testo sottostante ed è decorato con i provider dell'area di controllo associati alla visualizzazione di testo stesso.
+Il testo viene formattato in base ai classificatori associati al buffer di testo sottostante ed è decorato utilizzando i provider di area di controllo associati alla visualizzazione di testo stessa.
 
-#### <a name="the-text-view-coordinate-system"></a>Il sistema di coordinate di visualizzazione testo
+#### <a name="the-text-view-coordinate-system"></a>Il sistema di coordinate della vista di testo
 
-Il sistema di coordinate di visualizzazione di testo specifica le posizioni nella visualizzazione di testo. In questo sistema di coordinate, il valore di x 0,0 corrisponde al bordo sinistro del testo viene visualizzato e il valore di y 0,0 corrisponde al bordo superiore del testo viene visualizzato. La coordinata x aumenta da sinistra a destra e la coordinata y aumenta dall'alto verso il basso.
+Il sistema di coordinate della vista di testo specifica le posizioni nella vista di testo. In questo sistema di coordinate, il valore x 0,0 corrisponde al bordo sinistro del testo visualizzato e il valore y 0,0 corrisponde al bordo superiore del testo visualizzato. La coordinata x aumenta da sinistra a destra e la coordinata y aumenta dall'alto verso il basso.
 
-Un riquadro di visualizzazione (la parte del testo visibile nella finestra di testo) non è possibile scorrere orizzontalmente allo stesso modo, è necessario scorrere verticalmente. Un riquadro di visualizzazione è necessario scorrere orizzontalmente modificando la coordinata sinistra in modo da spostarla rispetto all'area di disegno. Tuttavia, un riquadro di visualizzazione è possibile scorrere verticalmente solo modificando il testo viene eseguito il rendering, provocando un <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> generazione dell'evento.
+Una finestra (la parte del testo visibile nella finestra di testo) non può essere fatta scorrere nello stesso modo in senso orizzontale in cui viene fatto scorrere verticalmente. Una finestra viene fatta scorrere orizzontalmente modificandone la coordinata sinistra in modo che si sposti rispetto alla superficie di disegno. Tuttavia, è possibile scorrere una finestra verticalmente solo modificando <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> il testo di cui è stato eseguito il rendering, che causa la generamento di un evento.
 
-Distanze nel sistema di coordinate corrispondono ai pixel logici. Se la superficie di rendering di testo viene visualizzata senza una trasformazione in scala, un'unità di sistema di coordinate del rendering del testo corrisponde a un pixel sullo schermo.
+Le distanze nel sistema di coordinate corrispondono ai pixel logici. Se la superficie di rendering del testo viene visualizzata senza una trasformazione di ridimensionamento, un'unità nel sistema di coordinate di rendering del testo corrisponde a un pixel sullo schermo.
 
 #### <a name="margins"></a>Margini
 
-Il <xref:Microsoft.VisualStudio.Text.Editor.ITextViewMargin> interfaccia rappresenta un margine e i controlli di visibilità di margine e le relative dimensioni. Esistono quattro i margini predefiniti, che sono denominati "Top", "Left", "Right" e "Basso" e sono collegati alla parte superiore, inferiore, sinistro o il bordo destro di una vista. I margini sono contenitori in cui possono essere inserito l'altro margine. L'interfaccia definisce i metodi che restituiscono le dimensioni del margine e la visibilità di un margine. I margini sono gli elementi visivi che forniscono informazioni aggiuntive sulla visualizzazione di testo a cui sono collegate. Ad esempio, il margine del numero di riga consente di visualizzare i numeri di riga per la visualizzazione di testo. Il margine del glifo consente di visualizzare elementi dell'interfaccia utente.
+L'interfaccia <xref:Microsoft.VisualStudio.Text.Editor.ITextViewMargin> rappresenta un margine e consente il controllo della visibilità del margine e delle sue dimensioni. Sono disponibili quattro margini predefiniti, denominati "Top", "Left", "Right" e "Bottom" e collegati al bordo superiore, inferiore, sinistro o destro di una vista. Questi margini sono contenitori in cui è possibile posizionare altri margini. L'interfaccia definisce i metodi che restituiscono le dimensioni del margine e la visibilità di un margine. I margini sono elementi visivi che forniscono informazioni aggiuntive sulla visualizzazione di testo a cui sono associati. Ad esempio, il margine del numero di riga visualizza i numeri di riga per la visualizzazione di testo. Il margine del glifo visualizza gli elementi dell'interfaccia utente.
 
-Il <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> interfaccia gestisce la creazione e posizionamento dei margini. I margini possono essere ordinati rispetto a altro margine. I margini con priorità più alta si trovano più vicino alla visualizzazione di testo. Ad esempio, se sono presenti due margini sinistro, margine A e B margin e margin B ha una priorità più bassa rispetto a margine A, B margine viene visualizzata a sinistra del margine A.
+L'interfaccia <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> gestisce la creazione e la posizione dei margini. I margini possono essere ordinati rispetto ad altri margini. I margini con priorità più alta si trovano più vicini alla visualizzazione di testo. Ad esempio, se sono presenti due margini sinistro, il margine A e il margine B e il margine B ha una priorità inferiore rispetto al margine A, il margine B viene visualizzato a sinistra del margine A.
 
-#### <a name="the-text-view-host"></a>L'host della visualizzazione testo
+#### <a name="the-text-view-host"></a>L'host della visualizzazione di testo
 
-Il <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> interfaccia contiene la visualizzazione di testo e qualsiasi decorazioni adiacenti che accompagnano la visualizzazione, ad esempio, le barre di scorrimento. L'host di visualizzazione di testo contiene inoltre i margini che sono associati a un bordo della visualizzazione.
+L'interfaccia <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> contiene la visualizzazione di testo e le eventuali decorazioni adiacenti che accompagnano la visualizzazione, ad esempio le barre di scorrimento. L'host della visualizzazione di testo contiene anche i margini associati a un bordo della vista.
 
 #### <a name="formatted-text"></a>Testo formattato
 
-È costituito da testo che viene visualizzato in una visualizzazione di testo <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> oggetti. Ogni riga della visualizzazione di testo corrisponde a una riga di testo nella visualizzazione di testo. Righe lunghe nel buffer di testo sottostante possono essere parzialmente oscurate (se non è abilitato il ritorno a capo) o suddivise in più righe di visualizzazione di testo. Il <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> interfaccia contiene i metodi e proprietà per il mapping tra i caratteri e le coordinate e per le aree di controllo che possono essere associati con la riga.
+Il testo visualizzato in una visualizzazione di <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> testo è composto da oggetti. Ogni riga di visualizzazione di testo corrisponde a una riga di testo nella visualizzazione di testo. Le righe lunghe nel buffer di testo sottostante possono essere parzialmente oscurate (se il ritorno a capo automatico non è abilitato) o suddivise in più righe di visualizzazione di testo. L'interfaccia <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> contiene metodi e proprietà per il mapping tra coordinate e caratteri e per le aree di controllo che possono essere associate alla riga.
 
-<xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> gli oggetti vengono creati utilizzando un <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> interfaccia. Se si è preoccupati solo per il testo attualmente visualizzato nella visualizzazione, è possibile ignorare l'origine della formattazione. Se si è interessati nel formato di testo che non è visualizzato nella visualizzazione (ad esempio, per supportare una Taglia testo RTF e incollare), è possibile usare <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> per formattare il testo in un buffer di testo.
+<xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>gli oggetti vengono <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> creati tramite un'interfaccia. Se si è preoccupati solo per il testo attualmente visualizzato nella visualizzazione, è possibile ignorare l'origine della formattazione. Se si è interessati al formato del testo non visualizzato nella visualizzazione (ad esempio, per supportare un taglio e incolla di testo RTF), è possibile utilizzare <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> per formattare il testo in un buffer di testo.
 
-La visualizzazione di testo formatta uno <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> alla volta.
+La visualizzazione di <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> testo viene formatta una alla volta.
 
 ## <a name="editor-features"></a>Funzionalità dell'editor
 
-Le funzionalità dell'editor sono progettate in modo che la definizione della funzionalità è separata dalla relativa implementazione. L'editor aggiunge le funzionalità seguenti:
+Le funzionalità dell'editor sono progettate in modo che la definizione della funzionalità sia separata dalla relativa implementazione. L'editor include le seguenti funzionalità:
 
-- Classificatori e i tag
+- Tag e classificatori
 
-- Aree di controllo
+- Ornamenti
 
 - Proiezione
 
 - struttura
 
-- Associazioni del mouse e la chiave
+- Associazioni di mouse e tasti
 
 - Operazioni e primitive
 
 - IntelliSense
 
-### <a name="tags-and-classifiers"></a>Classificatori e i tag
+### <a name="tags-and-classifiers"></a>Tag e classificatori
 
-I tag sono indicatori che sono associati a un intervallo di testo. Possano essere visualizzati in diversi modi, ad esempio, con colorazione del testo, sottolineature, elementi grafici o i popup. I classificatori sono un tipo di tag.
+I tag sono marcatori associati a un intervallo di testo. Possono essere presentati in diversi modi, ad esempio utilizzando la colorazione del testo, le sottolineature, la grafica o i popup. I classificatori sono un tipo di tag.
 
-Altri tipi di tag sono <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> per l'evidenziazione del testo, <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> per la struttura, e <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> per errori di compilazione.
+Altri tipi di <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> tag sono <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> per l'evidenziazione del testo, per la struttura e <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> per gli errori di compilazione.
 
 #### <a name="classification-types"></a>Tipi di classificazione
 
-Un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> interfaccia rappresenta una classe di equivalenza, ovvero una categoria astratta di testo. Tipi di classificazione possono più-ereditare da altri tipi di classificazione. Ad esempio, le classificazioni del linguaggio di programmazione potrebbe includere "parola chiave", "comment" e "identificatore", che eredita da "code". Tipi di classificazione di linguaggio naturale potrebbero includere "sostantivo", "verbo" e "aggettivo", che ereditano da "lingua".
+Un'interfaccia <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> rappresenta una classe di equivalenza, ovvero una categoria astratta di testo. I tipi di classificazione possono ereditare più elementi da altri tipi di classificazione. Ad esempio, le classificazioni dei linguaggi di programmazione potrebbero includere "parola chiave", "commento" e "identificatore", che ereditano tutte da "codice". I tipi di classificazione del linguaggio naturale possono includere "sostantivo", "verbo" e "aggettivo", che tutti ereditano da "linguaggio naturale".
 
 #### <a name="classifications"></a>Classificazioni
 
-Una classificazione è un'istanza di un determinato tipo di classificazione, in genere in un intervallo di testo. Oggetto <xref:Microsoft.VisualStudio.Text.Classification.ClassificationSpan> viene usato per rappresentare una classificazione. Un intervallo di classificazione può essere considerato come un'etichetta che copre un determinato intervallo di testo e indica al sistema che questo intervallo di testo è di un determinato tipo di classificazione.
+Una classificazione è un'istanza di un particolare tipo di classificazione, in genere su un intervallo di testo. A <xref:Microsoft.VisualStudio.Text.Classification.ClassificationSpan> viene utilizzato per rappresentare una classificazione. Un intervallo di classificazione può essere considerato come un'etichetta che copre un particolare intervallo di testo e indica al sistema che questo intervallo di testo è di un particolare tipo di classificazione.
 
 #### <a name="classifiers"></a>Classificatori
 
-Un <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> è un meccanismo che suddivide il testo in un set di classificazioni. Classificatori devono essere definiti per i tipi di contenuto specifici e creare un'istanza per i buffer di testo specifico. I client devono implementare <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> per partecipare alla classificazione di testo.
+Un <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> meccanismo è un meccanismo che suddivide il testo in un set di classificazioni. I classificatori devono essere definiti per tipi di contenuto specifici e istanziati per buffer di testo specifici. I client <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> devono implementare per partecipare alla classificazione di testo.
 
-#### <a name="classifier-aggregators"></a>Aggregatori di classificazione
+#### <a name="classifier-aggregators"></a>Aggregatori classificatori
 
-Un aggregatore di classificatore è un meccanismo che combina tutti i classificatori per buffer di uno testo in un solo set di classificazioni. Ad esempio, un classificatore c# sia un classificatore di lingua inglese è stato possibile creare classificazioni su un commento in un file c#. Prendere in considerazione questo commento:
+Un aggregatore di classificatori è un meccanismo che combina tutti i classificatori per un buffer di testo in un solo set di classificazioni. Ad esempio, sia un classificatore di c'è e un classificatore di lingua inglese potrebbe creare classificazioni su un commento in un file c.For example, both a C' classifier and an English language classifier could create classifications over a comment in a C' file. Considera questo commento:
 
 ```
 // This method produces a classifier
 ```
 
-Un classificatore di c# potrebbe assegnare un'etichetta all'intero intervallo come commento e la funzione di classificazione in lingua inglese può classificare "produce" come "verbo" e "method" come "sostantivo". L'aggregatore genera un set di classificazioni non sovrapposti e il tipo del set si basa su tutti i contributi.
+Un classificatore di C, potrebbe etichettare l'intero intervallo come commento e il classificatore di lingua inglese potrebbe classificare "produce" come "verbo" e "metodo" come "sostantivo". L'aggregatore produce una serie di classificazioni non sovrapposte e il tipo di set si basa su tutti i contributi.
 
-Un aggregatore di classificatore è anche un classificatore perché suddivide il testo in un set di classificazioni. Aggregatore di classificatori garantisce inoltre che non esistono Nessun classificazioni sovrapposte e che le classificazioni sono ordinate. Classificatori singoli sono liberi di restituire qualsiasi set di classificazioni degli aggiornamenti, in qualsiasi ordine e sovrapposti in alcun modo.
+Un aggregatore classificatore è anche un classificatore perché suddivide il testo in un set di classificazioni. L'aggregatore di classificatori garantisce inoltre che non vi siano classificazioni sovrapposte e che le classificazioni siano ordinate. I singoli classificatori sono liberi di restituire qualsiasi set di classificazioni, in qualsiasi ordine e sovrapposte in qualsiasi modo.
 
-#### <a name="classification-formatting-and-text-coloring"></a>Formattazione di classificazione e la colorazione del testo
+#### <a name="classification-formatting-and-text-coloring"></a>Formattazione della classificazione e colorazione del testo
 
-Formattazione del testo è un esempio di una funzionalità che si basa su classificazione di testo. Utilizzato dal livello di visualizzazione di testo per determinare la visualizzazione del testo in un'applicazione. A seconda dell'area di formattazione di testo su WPF, ma non la definizione di logica delle classificazioni.
+La formattazione del testo è un esempio di funzionalità basata sulla classificazione del testo. Viene utilizzato dal livello di visualizzazione del testo per determinare la visualizzazione del testo in un'applicazione. L'area di formattazione del testo dipende da WPFWPF, ma non dalla definizione logica delle classificazioni.
 
-Un formato di classificazione è un set di proprietà per un tipo di classificazione specifica di formattazione. Questi formati di ereditano il formato dell'elemento padre del tipo di classificazione.
+Un formato di classificazione è un set di proprietà di formattazione per un tipo di classificazione specifico. Questi formati ereditano dal formato dell'elemento padre del tipo di classificazione.
 
-Un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> è un mapping da un tipo di classificazione per un set di proprietà di formattazione del testo. L'implementazione della mappa di formato nell'editor gestisce tutte le esportazioni dei formati di classificazione.
+Un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> oggetto è una mappa da un tipo di classificazione a un set di proprietà di formattazione del testo. L'implementazione della mappa di formato nell'editor gestisce tutte le esportazioni dei formati di classificazione.
 
-### <a name="adornments"></a>Aree di controllo
+### <a name="adornments"></a>Ornamenti
 
-Le aree di controllo sono effetti grafici che non sono direttamente correlati al tipo di carattere e colori dei caratteri nella visualizzazione di testo. Ad esempio, la sottolineatura sottolineatura ondulata rossa che consente di contrassegnare il codice non di compilazione in molti linguaggi di programmazione è un'area di controllo incorporato, e le descrizioni comando sono le aree di controllo popup. Le aree di controllo sono derivati da <xref:System.Windows.UIElement> e implementare <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Due tipi specializzati di tag dell'area di controllo sono le <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, per le aree di controllo che occupano lo stesso spazio come testo in una vista, e il <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, per la sottolineatura a zigzag.
+Gli elementi decorativi sono effetti grafici che non sono direttamente correlati al tipo di carattere e al colore dei caratteri nella visualizzazione di testo. Ad esempio, la sottolineatura ondulata rossa utilizzata per contrassegnare il codice non di compilazione in molti linguaggi di programmazione è un'area di controllo incorporata e le descrizioni comandi sono aree di controllo popup. Gli elementi decorativi sono derivati da <xref:System.Windows.UIElement> e implementano <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Due tipi specializzati di <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>tag di area di controllo sono , per le aree di controllo che occupano lo stesso spazio del testo in una vista e <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, per la sottolineatura ondulata.
 
-Le aree di controllo incorporate sono immagini che fanno parte della visualizzazione di testo formattato. Essi sono organizzati in diversi livelli di Z order. Esistono tre livelli predefiniti, come indicato di seguito: testo, il punto di inserimento e la selezione. Tuttavia, gli sviluppatori possono definire più livelli e inserirli in ordine di uno rispetto a altro. I tre tipi di aree di controllo incorporate sono le aree di controllo relativo al testo (che lo spostamento quando si sposta il testo e vengono eliminati quando viene eliminato il testo), le aree di controllo relativo alla visualizzazione, che hanno a che fare con parti non di testo della visualizzazione, e inclusi nel controllo proprietario aree di controllo (i per gli sviluppatori devono gestire la loro posizione).
+Le aree di controllo incorporate sono elementi grafici che fanno parte della visualizzazione di testo formattata. Sono organizzati in diversi livelli di ordine z. Sono disponibili tre livelli incorporati, come indicato di seguito: testo, il punto di inserimento e la selezione. Tuttavia, gli sviluppatori possono definire più layer e metterli in ordine l'uno rispetto all'altro. I tre tipi di aree di controllo incorporate sono aree di controllo relative al testo (che si spostano quando il testo viene spostato e vengono eliminati quando il testo viene eliminato), le aree di controllo relative alla visualizzazione (che hanno a che fare con le parti non testuali della visualizzazione) e le aree di controllo controllate dal proprietario (lo sviluppatore deve gestire il posizionamento).
 
-Le aree di controllo popup sono immagini che vengono visualizzati in una finestra piccola sopra la visualizzazione di testo, ad esempio, le descrizioni comandi.
+Le aree di controllo popup sono elementi grafici che vengono visualizzati in una piccola finestra sopra la visualizzazione di testo, ad esempio le descrizioni comandi.
 
-### <a name="projection"></a> Proiezione
+### <a name="projection"></a><a name="projection"></a>Proiezione
 
-Proiezione è una tecnica per la costruzione di un tipo diverso di buffer di testo che non archivia effettivamente il testo, ma invece Combina testo dagli altri buffer di testo. Ad esempio, un buffer di proiezione utilizzabile per concatenare il testo di due altri buffer e presentare i risultati come se fosse in un solo buffer o per nascondere le parti del testo in un buffer. Un buffer di proiezione può fungere da buffer di origine a un altro buffer di proiezione. È possibile costruire un set di buffer che sono correlati tramite proiezione per ridisporre il testo in molti modi diversi. (Un set di questo tipo è noto anche come un *grafico del buffer*.) La funzionalità di struttura di testo di Visual Studio viene implementata usando un buffer di proiezione per nascondere il testo compresso e l'editor di Visual Studio per le pagine ASP.NET utilizza proiezione per il supporto incorporati linguaggi quali Visual Basic e c#.
+La proiezione è una tecnica per la costruzione di un tipo diverso di buffer di testo che non archivia effettivamente il testo, ma combina il testo di altri buffer di testo. Ad esempio, un buffer di proiezione può essere utilizzato per concatenare il testo da altri due buffer e presentare il risultato come se si trovasse in un solo buffer o per nascondere parti del testo in un buffer. Un buffer di proiezione può fungere da buffer di origine per un altro buffer di proiezione. Un set di buffer correlati dalla proiezione può essere costruito per ridisporre il testo in molti modi diversi. (Questo set è noto anche come *grafico del buffer.* La funzionalità di struttura del testo di Visual Studio viene implementata utilizzando un buffer di proiezione per nascondere il testo compresso e l'editor di Visual Studio per ASP.NET pagine utilizza la proiezione per supportare i linguaggi incorporati, ad esempio Visual Basic e C.
 
-Un' <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> viene creato usando <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Rappresentato da una sequenza ordinata di un buffer di proiezione <xref:Microsoft.VisualStudio.Text.ITrackingSpan> gli oggetti che sono note come *intervalli di origine*. Il contenuto di questi intervalli viene presentato come una sequenza di caratteri. I buffer di testo da cui vengono disegnati gli intervalli di origine vengono denominati *buffer di origine*. I client di un buffer di proiezione non sono necessario tenere presente che differisce da un buffer di testo normale.
+Viene <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> creato un <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>oggetto mediante . Un buffer di proiezione è <xref:Microsoft.VisualStudio.Text.ITrackingSpan> rappresentato da una sequenza ordinata di oggetti noti come *intervalli*di origine . Il contenuto di questi intervalli viene presentato come una sequenza di caratteri. I buffer di testo da cui vengono disegnati gli intervalli di origine sono *denominati buffer di origine.* I client di un buffer di proiezione non devono essere consapevoli del fatto che è diverso da un buffer di testo ordinario.
 
-Il buffer di proiezione è in ascolto degli eventi di modifica testo nel buffer di origine. Quando il testo in un'origine estendono le modifiche, il buffer di proiezione le coordinate di testo modificato viene eseguito il mapping a un proprio coordinate e genera eventi di modifica di testo appropriato. Ad esempio, prendere in considerazione i buffer di origine A e B che hanno questi contenuti:
+Il buffer di proiezione è in ascolto degli eventi di modifica del testo nei buffer di origine. Quando il testo in un intervallo di origine viene modificato, il buffer di proiezione esegue il mapping delle coordinate del testo modificate alle proprie coordinate e genera gli eventi di modifica del testo appropriati. Ad esempio, si considerino i buffer di origine A e B che hanno il contenuto seguente:For example, consider source buffers A and B that have these contents:
 
 ```
 A: ABCDE
 B: vwxyz
 ```
 
-Se il buffer di proiezione P è costituito da due intervalli di testo, uno che dispone di tutti i buffer A e l'altri dotato di tutti i buffer B, P dispone il contenuto seguente:
+Se il buffer di proiezione P è formato da due intervalli di testo, uno che ha tutto il buffer A e l'altro che ha tutto il buffer B, quindi P ha il seguente contenuto:
 
 ```
 P: ABCDEvwxyz
 ```
 
-Se la sottostringa `xy` vengono eliminati dal buffer B, il buffer P genera un evento che indica se i caratteri nelle posizioni 7 e 8 sono stati eliminati.
+Se la `xy` sottostringa viene eliminata dal buffer B, il buffer P genera un evento che indica che i caratteri nelle posizioni 7 e 8 sono stati eliminati.
 
-Il buffer di proiezione può anche essere modificato direttamente. Propaga le modifiche al buffer di origine appropriato. Ad esempio, se una stringa viene inserita nel buffer P in posizione 6 (vale a dire la posizione originale del carattere "v"), l'inserimento viene propagato al buffer B nella posizione 1.
+Il buffer di proiezione può anche essere modificato direttamente. Propaga le modifiche ai buffer di origine appropriati. Ad esempio, se una stringa viene inserita nel buffer P nella posizione 6 (la posizione originale del carattere "v"), l'inserimento viene propagato al buffer B nella posizione 1.
 
-Esistono restrizioni per gli intervalli di origine che contribuiscono a un buffer di proiezione. Intervalli di origine non possono sovrapporsi; un percorso in un buffer di proiezione non è possibile eseguire il mapping a più di una posizione nel buffer qualsiasi origine e un percorso in un buffer di origine non è possibile eseguire il mapping a più di una posizione in un buffer di proiezione. Nessun circularities sono consentite nella relazione di buffer di origine.
+Esistono restrizioni sugli intervalli di origine che contribuiscono a un buffer di proiezione. Gli intervalli di origine non possono sovrapporsi; una posizione in un buffer di proiezione non può eseguire il mapping a più di una posizione in qualsiasi buffer di origine e una posizione in un buffer di origine non può eseguire il mapping a più di una posizione in un buffer di proiezione. Non sono consentite circolarità nella relazione del buffer di origine.
 
-Gli eventi vengono generati quando il set di origine nel buffer per la modifica di un buffer di proiezione e se il set di origine è esteso a modifiche.
-Un buffer di elisione è un tipo speciale di buffer di proiezione. Viene principalmente utilizzato per la struttura e per le operazioni che espandere e comprimere blocchi di testo. Un buffer di elisione si basa su un solo buffer di origine e gli intervalli in buffer di elisione devono essere ordinati allo stesso modo come vengono ordinati nel buffer di origine.
+Gli eventi vengono generati quando il set di buffer di origine per un buffer di proiezione viene modificato e quando il set di intervalli di origine viene modificato.
+Un buffer di elisione è un tipo speciale di buffer di proiezione. Viene utilizzato principalmente per la struttura e per le operazioni che espandono e comprimono blocchi di testo. Un buffer di elisione è basato su un solo buffer di origine e gli intervalli nel buffer di elisione devono essere ordinati come sono ordinati nel buffer di origine.
 
-#### <a name="the-buffer-graph"></a>Grafico del buffer
+#### <a name="the-buffer-graph"></a>Il grafico del buffer
 
-Il <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph> interfaccia attiva il mapping tra un grafico del buffer di proiezione. Tutti i buffer di testo e i buffer di proiezione vengono raccolti in un grafo aciclico diretto, molto simile all'albero sintattico astratto generato da un compilatore di linguaggio. Il grafico è definito dal buffer superiore, che può essere qualsiasi buffer di testo. Grafico del buffer può eseguire il mapping da un punto nel buffer superiore a un punto nel buffer di origine o da un intervallo nel buffer superiore a un set di intervalli in un buffer di origine. Analogamente, può eseguire il mapping di un punto o spaziano da un buffer di origine a un punto nel buffer superiore. Buffer grafici vengono creati utilizzando il <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>.
+L'interfaccia <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph> consente il mapping in un grafico di buffer di proiezione. Tutti i buffer di testo e i buffer di proiezione vengono raccolti in un grafico aciclico diretto, in modo analogo all'albero della sintassi astratta prodotto da un compilatore di linguaggio. Il grafico è definito dal buffer superiore, che può essere qualsiasi buffer di testo. Il grafico del buffer può eseguire il mapping da un punto nel buffer superiore a un punto in un buffer di origine o da un intervallo nel buffer superiore a un set di intervalli in un buffer di origine. Analogamente, può eseguire il mapping di un punto o di un intervallo da un buffer di origine a un punto nel buffer superiore. I grafici del buffer <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>vengono creati utilizzando l'oggetto .
 
-#### <a name="events-and-projection-buffers"></a>Gli eventi e i buffer di proiezione
+#### <a name="events-and-projection-buffers"></a>Buffer di eventi e proiezioni
 
-Quando viene modificato un buffer di proiezione, le modifiche vengono inviate dal buffer di proiezione per i buffer che dipendono da esso. Dopo che tutti i buffer sono stati modificati, vengono generati gli eventi di modifica del buffer, a partire con il buffer più in basso.
+Quando un buffer di proiezione viene modificato, le modifiche vengono inviate dal buffer di proiezione ai buffer che dipendono da esso. Dopo la modifica di tutti i buffer, vengono generati eventi di modifica del buffer, a partire dal buffer più profondo.
 
 ### <a name="outlining"></a>struttura
 
-La struttura è la possibilità di espandere o comprimere diversi blocchi di testo in una visualizzazione di testo. La struttura viene definita come una sorta di <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, nello stesso modo in sono definite le aree di controllo. Oggetto <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> è un tag che definisce un'area di testo che può essere espansi o compressi. Per usare la struttura, è necessario importare il <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> per ottenere un <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Il gestore della struttura enumera comprime e si espande i blocchi diversi, rappresentati come <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> oggetti e genera eventi di conseguenza.
+La struttura consente di espandere o comprimere diversi blocchi di testo in una visualizzazione di testo. La struttura è definita <xref:Microsoft.VisualStudio.Text.Tagging.ITag>come un tipo di , nello stesso modo in cui vengono definite le aree di controllo. A <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> è un tag che definisce un'area di testo che può essere espansa o compressa. Per utilizzare la struttura, <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> è necessario <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>importare l'oggetto per ottenere un file . Il gestore della struttura enumera, comprime ed espande i <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> diversi blocchi, rappresentati come oggetti, generando eventi di conseguenza.
 
 ### <a name="mouse-bindings"></a>Associazioni del mouse
 
-Le associazioni del mouse collegano spostamenti del mouse a comandi diversi. Vengono definite le associazioni del mouse con un' <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, e tasti di scelta rapida vengono definiti utilizzando un <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. Il <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> automaticamente crea un'istanza di tutte le associazioni e li connette agli eventi del mouse nella visualizzazione.
+Le associazioni del mouse collegano i movimenti del mouse a comandi diversi. Le associazioni del mouse <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>vengono definite utilizzando un oggetto <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>, e le associazioni di tasti vengono definite mediante un oggetto . L'oggetto <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> crea automaticamente un'istanza di tutte le associazioni e le connette agli eventi del mouse nella visualizzazione.
 
-Il <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> interfaccia contiene i gestori di eventi di pre-elaborazione e post-elaborazione per gli eventi di mouse diversa. Handle uno degli eventi, è possibile ignorare alcuni dei metodi in <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.
+L'interfaccia <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> contiene gestori eventi di pre-elaborazione e post-elaborazione per diversi eventi del mouse. Per gestire uno degli eventi, è possibile <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>eseguire l'override di alcuni metodi in .
 
-### <a name="editor-operations"></a>Operazioni di editor
+### <a name="editor-operations"></a>Operazioni dell'editore
 
-Editor operazioni possono essere utilizzate per automatizzare l'interazione con l'editor, per la creazione di script o altri scopi. È possibile importare il <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> alle operazioni di accesso su un determinato <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. È quindi possibile utilizzare questi oggetti per modificare la selezione, scorrere la visualizzazione o spostare il punto di inserimento in diverse parti della visualizzazione.
+Le operazioni dell'editor possono essere utilizzate per automatizzare l'interazione con l'editor, per lo scripting o altri scopi. È possibile <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> importare l'oggetto <xref:Microsoft.VisualStudio.Text.Editor.ITextView>per accedere alle operazioni su un determinato oggetto . È quindi possibile utilizzare questi oggetti per modificare la selezione, scorrere la vista o spostare il punto di inserimento in diverse parti della vista.
 
 ### <a name="intellisense"></a>IntelliSense
 
-Completamento delle istruzioni, supporto per la firma (detta anche informazioni sul parametro), informazioni rapide e lampadine supportate da IntelliSense.
+IntelliSense supporta il completamento delle istruzioni, la Guida alla firma (nota anche come informazioni sui parametri), le informazioni rapide e le lampadine.
 
-Completamento delle istruzioni fornisce elenchi popup dei completamenti possibili per i nomi dei metodi, gli elementi XML e altri elementi di codice o markup. In generale, un movimento dell'utente richiama una sessione di completamento. La sessione viene visualizzato l'elenco di completamenti possibili e l'utente può selezionare uno o ignorare l'elenco. Il <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> è responsabile della creazione e l'attivazione di <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. Il <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> calcola il <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> degli elementi di completamento per la sessione.
+Il completamento delle istruzioni fornisce elenchi popup di potenziali completamenti per i nomi dei metodi, gli elementi XML e altri elementi di codifica o markup. In generale, un gesto dell'utente richiama una sessione di completamento. La sessione visualizza l'elenco dei potenziali completamenti e l'utente può selezionarne uno o chiudere l'elenco. L'oggetto <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> è responsabile <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>della creazione e dell'attivazione del file . Il <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> calcola <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> il degli elementi di completamento per la sessione.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Punti di estensione del servizio e l'editor di linguaggio](../extensibility/language-service-and-editor-extension-points.md)
+- [Punti di estensione del servizio di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)
 - [Importazioni dell'editor](../extensibility/editor-imports.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Microsoft Docs
+title: IDebugProgramProvider2::WatchForProviderEvents . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb0968f96300ab62e4b4ee4b34b3e7f574f4b0fc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a48e082556cf96a35ed83afd5008d3240e600b1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343436"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721758"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-Consente di ricevere una notifica degli eventi porta il processo.
+Consente al processo di ricevere una notifica degli eventi della porta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,38 +51,38 @@ int WatchForProviderEvents(
 
 ## <a name="parameters"></a>Parametri
 `Flags`\
-[in] Una combinazione di flag dal [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumerazione. I flag seguenti sono più comuni per questa chiamata:
+[in] Combinazione di flag dall'enumerazione [PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) I seguenti flag sono tipici per questa chiamata:
 
 |Flag|Descrizione|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|Chiamante è in esecuzione nel computer remoto.|
-|`PFLAG_DEBUGGEE`|Chiamante è in corso il debug (vengono restituite informazioni aggiuntive su marshalling per ogni nodo).|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Chiamante è stato collegato a ma non avviare dal debugger.|
-|`PFLAG_REASON_WATCH`|Chiamante desidera il controllo degli eventi. Se questo flag non è impostato. quindi viene rimosso l'evento di callback e il chiamante non riceve più notifiche.|
+|`PFLAG_REMOTE_PORT`|Il chiamante è in esecuzione su un computer remoto.|
+|`PFLAG_DEBUGGEE`|È in corso il debug del chiamante (vengono restituite informazioni aggiuntive sul marshalling per ogni nodo).|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Il chiamante è stato collegato ma non avviato dal debugger.|
+|`PFLAG_REASON_WATCH`|Il chiamante desidera controllare gli eventi. Se questo flag non è impostato. quindi l'evento di callback viene rimosso e il chiamante non riceve più le notifiche.|
 
 `pPort`\
-[in] La porta del processo chiamante è in corso.
+[in] Porta su cui è in esecuzione il processo chiamante.
 
 `processId`\
-[in] Un' [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura che contiene l'ID del processo che contiene il programma in questione.
+[in] Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) contenente l'ID del processo che contiene il programma in questione.
 
 `EngineFilter`\
-[in] Una matrice di GUID di motori di debug associati al processo.
+[in] Matrice di GUID dei motori di debug associati al processo.
 
 `guidLaunchingEngine`\
 [in] GUID del motore di debug che ha avviato questo processo (se presente).
 
 `pEventCallback`\
-[in] Un' [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) oggetto che riceve le notifiche degli eventi.
+[in] Oggetto [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) che riceve le notifiche degli eventi.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Quando un chiamante tenta di rimuovere un gestore eventi che è stato stabilito con una chiamata precedente a questo metodo, il chiamante passa gli stessi parametri come la prima volta, ma lascia disattivato il `PFLAG_REASON_WATCH` flag.
+## <a name="remarks"></a>Osservazioni
+ Quando un chiamante desidera rimuovere un gestore eventi stabilito con una chiamata precedente a questo metodo, il `PFLAG_REASON_WATCH` chiamante passa gli stessi parametri della prima volta, ma lascia il flag fuori.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugEngine** oggetto che espone le [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfaccia.
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugEngine** oggetto che espone il [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfaccia.
 
 ```cpp
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(

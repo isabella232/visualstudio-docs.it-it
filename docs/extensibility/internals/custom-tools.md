@@ -1,5 +1,5 @@
 ---
-title: Gli strumenti personalizzati | Microsoft Docs
+title: Strumenti personalizzati - Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,48 +7,48 @@ helpviewer_keywords:
 - tools [Visual Studio], custom
 - custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9bad62d071fd7c2ef6e0a7c1f5500a5fccb18e0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312260"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708952"
 ---
 # <a name="custom-tools"></a>Strumenti personalizzati
-*Gli strumenti personalizzati* consentono di associare uno strumento a un elemento in un progetto ed eseguire tale strumento ogni volta che viene salvato il file. Alcuni strumenti personalizzati, anche detta *generatori di file singoli*, vengono spesso usati per implementare i traduttori che generano codice dai dati e viceversa. Ad esempio, creano i generatori di file singolo [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] out del codice sorgente il *Settings* e *resx* file. Il codice sorgente generato fornisce accesso fortemente tipizzato ai dati di *Settings* e *resx* file. Il [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipi di progetto supportano gli strumenti personalizzati; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] non li supportano tipi di progetto. Tipi di progetto personalizzati possono anche supportare gli strumenti personalizzati.
+*Gli strumenti personalizzati* consentono di associare uno strumento a un elemento in un progetto ed eseguire tale strumento ogni volta che il file viene salvato. Alcuni strumenti personalizzati, a volte indicati come generatori di file singolo , vengono spesso *utilizzati*per implementare convertitori che generano codice dai dati e viceversa. Ad esempio, i generatori [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] di file singolo creano e codificano i file *.settings* e *.resx.* Il codice sorgente generato fornisce un accesso fortemente tipizzato ai dati nei file *.settings* e *.resx.* I [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipi e di progetto supportano gli strumenti personalizzati; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tipi di progetto non lo fanno. I propri tipi di progetto possono anche supportare strumenti personalizzati.
 
- Gli strumenti personalizzati verranno registrati i componenti che implementano il `IVsSingleFileGenerator` interfaccia.
+ Gli strumenti personalizzati sono `IVsSingleFileGenerator` componenti registrati che implementano l'interfaccia.
 
- Gli strumenti personalizzati sono associati un `ProjectItem` oggetto di interfaccia e sono simili a editor e finestre di progettazione. Uno strumento personalizzato accetta il file rappresentato da un `ProjectItem` come input e scrive un nuovo file il cui nome viene fornito per il `DefaultExtension` (metodo).
+ Gli strumenti personalizzati `ProjectItem` sono associati a un oggetto interfaccia e sono simili a finestre di progettazione ed editor. Uno strumento personalizzato accetta il `ProjectItem` file rappresentato da un come input `DefaultExtension` e scrive un nuovo file il cui nome viene fornito dal metodo .
 
 ## <a name="in-this-section"></a>Contenuto della sezione
-- [Implementare generatori di file singoli](../../extensibility/internals/implementing-single-file-generators.md)
+- [Implementare generatori a file singolo](../../extensibility/internals/implementing-single-file-generators.md)
 
- Viene descritto come utilizzare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfaccia da implementare uno strumento personalizzato.
+ Viene descritto come <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> utilizzare l'interfaccia per implementare uno strumento personalizzato.
 
-- [I generatori di singolo file di registrazione](../../extensibility/internals/registering-single-file-generators.md)
+- [Registrare generatori di file singoli](../../extensibility/internals/registering-single-file-generators.md)
 
- Vengono fornite descrizioni per tutte le voci del Registro di sistema per uno strumento personalizzato.
+ Fornisce le descrizioni per tutte le voci del Registro di sistema per uno strumento personalizzato.
 
-- [Esporre i tipi di finestre di progettazione visiva](../../extensibility/internals/exposing-types-to-visual-designers.md)
+- [Esporre i tipi alle finestre di progettazione visivaExpose types to visual designers](../../extensibility/internals/exposing-types-to-visual-designers.md)
 
- Viene illustrato come i sistemi di progetto forniscono supporto per finestre di progettazione visiva per classi di accesso generato e i tipi tramite i file temporanei eseguibile portabile (PE).
+ Viene illustrato come i sistemi di progetto forniscono supporto alle finestre di progettazione visiva per accedere alle classi e ai tipi generati tramite file eseguibili portabili temporanei (PE).
 
-- [Rendere permanente la proprietà di un elemento del progetto](../../extensibility/persisting-the-property-of-a-project-item.md)
+- [Rendere persistente la proprietà di un elemento di progettoPersist the property of a project item](../../extensibility/persisting-the-property-of-a-project-item.md)
 
- Viene illustrato come salvare in modo permanente una proprietà di elemento di progetto, ad esempio l'autore di un file di origine, nel file di progetto.
+ Viene illustrato come rendere persistente una proprietà dell'elemento di progetto, ad esempio l'autore di un file di origine, nel file di progetto.
 
-## <a name="reference"></a>Riferimenti
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Vengono forniti dettagli sul <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, che trasforma un singolo file di input in un singolo file di output che può essere compilato o aggiunto a un progetto.
+## <a name="reference"></a>Informazioni di riferimento
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>Fornisce informazioni <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>dettagliate su , che trasforma un singolo file di input in un singolo file di output che può essere compilato o aggiunto a un progetto.
 
- <xref:EnvDTE.ProjectItem> Viene illustrato il `ProjectItem` interfaccia che rappresenta un elemento in un progetto.
+ <xref:EnvDTE.ProjectItem>Viene illustrata l'interfaccia, `ProjectItem` che rappresenta un elemento in un progetto.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> Vengono forniti dettagli sul `DefaultExtension` metodo, che recupera l'estensione del nome file che viene assegnato al nome del file di output.
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>Fornisce informazioni `DefaultExtension` dettagliate sul metodo , che recupera l'estensione del nome file assegnata al nome del file di output.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Estendere i progetti](../../extensibility/extending-projects.md)

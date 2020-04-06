@@ -1,58 +1,58 @@
 ---
-title: 'Procedura: Aprire gli editor di documenti aperti | Microsoft Docs'
+title: 'Procedura: Aprire gli editor per i documenti aperti . Documenti Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8342947681bcd8f698c2a646e917b353ec6c9dd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03d0986573ac0d53427f6490370be2bfa1c4cbe7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319320"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710920"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Procedura: Aprire gli editor di documenti aperti
-Prima di una finestra del documento viene aperto un progetto, il progetto prima di tutto necessario determinare se il file è già aperto nella finestra del documento per un altro editor. Il file è possibile aprire in un editor specifico del progetto o uno degli editor standard registrato con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+# <a name="how-to-open-editors-for-open-documents"></a>Procedura: aprire gli editor per i documenti apertiHow to: Open editors for open documents
+Prima che un progetto apra una finestra del documento, il progetto deve prima determinare se il file è già aperto nella finestra del documento per un altro editor. Il file può essere aperto in un editor specifico del progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]o in uno degli editor standard registrati con .
 
-## <a name="open-a-project-specific-editor"></a>Aprire un editor specifico del progetto
- Usare la procedura seguente per aprire un editor specifico del progetto per un file che è già aperto.
+## <a name="open-a-project-specific-editor"></a>Aprire un editor specifico del progettoOpen a project-specific editor
+ Utilizzare la procedura seguente per aprire un editor specifico del progetto per un file già aperto.
 
-### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Per aprire un editor specifico del progetto per un file aperto
+### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Per aprire un editor specifico del progetto per un file apertoTo open a project-specific editor for an open file
 
-1. Chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.
+1. Chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> .
 
-    Questa chiamata restituisce puntatori alla gerarchia del documento, elemento della gerarchia e cornice della finestra, se appropriato.
+    Questa chiamata restituisce i puntatori alla gerarchia del documento, all'elemento della gerarchia e alla cornice della finestra, se appropriato.
 
-2. Se il documento è aperto, il progetto deve verificare se è presente solo un oggetto dati del documento o se è presente anche un oggetto visualizzazione del documento.
+2. Se il documento è aperto, il progetto deve verificare se esiste solo un oggetto dati del documento o se è presente anche un oggetto visualizzazione documento.
 
-   - Se è presente un oggetto visualizzazione del documento e questa visualizzazione è per una gerarchia diversa o un elemento della gerarchia, il progetto utilizza il puntatore alla cornice della finestra della visualizzazione per resurface finestra esistente.
+   - Se esiste un oggetto visualizzazione documento e questa visualizzazione è per una gerarchia diversa o un elemento della gerarchia, il progetto utilizza il puntatore alla cornice della finestra della visualizzazione per riaffiorare la finestra esistente.
 
-   - Se è presente un oggetto visualizzazione del documento e questa visualizzazione è disponibile per la stessa gerarchia ed elemento di gerarchia, il progetto può aprire una seconda vista se è possibile collegare all'oggetto dati documento sottostante. In caso contrario, il progetto deve utilizzare il puntatore alla cornice della finestra della visualizzazione a resurface finestra esistente.
+   - Se esiste un oggetto visualizzazione documento e questa visualizzazione è per la stessa gerarchia e l'elemento della gerarchia, il progetto può aprire una seconda visualizzazione se è possibile collegare all'oggetto dati del documento sottostante. In caso contrario, il progetto deve utilizzare il puntatore alla cornice della finestra della visualizzazione per riaffiorare la finestra esistente.
 
-   - Se esiste l'oggetto dati del documento, solo il progetto deve determinare se l'oggetto dati del documento possono utilizzare per la relativa visualizzazione. Se l'oggetto dati del documento è compatibile, completato i passaggi descritti in [aprire un editor specifico del progetto](../extensibility/how-to-open-project-specific-editors.md).
+   - Se esiste solo l'oggetto dati del documento, il progetto deve determinare se è possibile utilizzare l'oggetto dati del documento per la visualizzazione. Se l'oggetto dati del documento è compatibile, completare i passaggi descritti in Aprire un editor specifico del [progetto.](../extensibility/how-to-open-project-specific-editors.md)
 
-     Se l'oggetto dati del documento non è compatibile, dovrebbe essere visualizzato un errore all'utente che indica che il file è attualmente in uso. Questo errore deve essere visualizzato solo in casi temporanei, ad esempio quando un file è in fase di compilazione nello stesso momento l'utente sta tentando di aprire il file utilizzando un editor diverso il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor di testo principale. L'editor di testo principale può condividere l'oggetto dati del documento con il compilatore.
+     Se l'oggetto dati del documento non è compatibile, deve essere visualizzato un errore per l'utente che indica che il file è attualmente in uso. Questo errore deve essere visualizzato solo in casi temporanei, ad esempio quando un file viene compilato contemporaneamente l'utente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sta tentando di aprire il file utilizzando un editor diverso dall'editor di testo principale. L'editor di testo principale può condividere l'oggetto dati del documento con il compilatore.
 
-3. Se il documento non è aperto perché non esiste un oggetto dati del documento o un oggetto visualizzazione del documento, completare i passaggi descritti in [aprire un editor specifico del progetto](../extensibility/how-to-open-project-specific-editors.md).
+3. Se il documento non è aperto perché non è presente alcun oggetto dati del documento o oggetto visualizzazione documento, completare i passaggi descritti in Aprire un editor specifico del [progetto.](../extensibility/how-to-open-project-specific-editors.md)
 
 ## <a name="open-a-standard-editor"></a>Aprire un editor standard
- Utilizzare la procedura seguente per aprire un editor standard di un file che è già aprire.
+ Utilizzare la procedura seguente per aprire un editor standard per un file già aperto.
 
-### <a name="to-open-a-standard-editor-for-an-open-file"></a>Per aprire un editor standard di un file aperto
+### <a name="to-open-a-standard-editor-for-an-open-file"></a>Per aprire un editor standard per un file aperto
 
-1. Chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
+1. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
 
-     Questo metodo verifica innanzitutto che il documento non è già aperto chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Se il documento è già aperto, la finestra dell'editor è riapparire.
+     Questo metodo verifica innanzitutto che il documento <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>non sia già aperto chiamando . Se il documento è già aperto, la finestra dell'editor viene nuovamente visualizzata.
 
-2. Se il documento non è aperto, quindi completare la procedura descritta in [come: Aprire gli editor standard](../extensibility/how-to-open-standard-editors.md).
+2. Se il documento non è aperto, completare i passaggi descritti in [Procedura: aprire gli editor standard.](../extensibility/how-to-open-standard-editors.md)
 
 ## <a name="see-also"></a>Vedere anche
-- [Aprire e salvare elementi del progetto](../extensibility/internals/opening-and-saving-project-items.md)
-- [Procedura: Apri editor specifici del progetto](../extensibility/how-to-open-project-specific-editors.md)
-- [Procedura: Apri editor standard](../extensibility/how-to-open-standard-editors.md)
+- [Aprire e salvare elementi di progetto](../extensibility/internals/opening-and-saving-project-items.md)
+- [Procedura: aprire editor specifici del progettoHow to: Open project-specific editors](../extensibility/how-to-open-project-specific-editors.md)
+- [Procedura: aprire gli editor standardHow to: Open standard editors](../extensibility/how-to-open-standard-editors.md)

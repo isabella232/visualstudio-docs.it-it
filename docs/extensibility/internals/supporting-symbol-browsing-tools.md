@@ -1,5 +1,5 @@
 ---
-title: Supporto degli strumenti per l'esplorazione di simboli | Microsoft Docs
+title: Supporto degli strumenti di esplorazione dei simboli Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,40 +13,40 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca171fa75adda3deef5b941852fc3e6c648c84c6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4998e47ccd6f99df2710833c18975d57e3bb92f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723078"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704773"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Supporto degli strumenti di esplorazione dei simboli
-Gli strumenti **Visualizzatore oggetti**, **Visualizzazione classi**, **Visualizzatore chiamate** e **Trova simbolo** forniscono funzionalità di esplorazione dei simboli in Visual Studio. Questi strumenti visualizzano visualizzazioni ad albero gerarchico dei simboli e mostrano le relazioni tra i simboli nell'albero. I simboli possono rappresentare gli spazi dei nomi, gli oggetti, le classi, i membri della classe e altri elementi del linguaggio contenuti in diversi componenti. I componenti includono i progetti di Visual Studio, i componenti di .NET Framework esterni e le librerie di tipo (tlb). Per altre informazioni, vedere [Viewing the Structure of Code](../../ide/viewing-the-structure-of-code.md) (Visualizzazione della struttura del codice).
+**Browser oggetti**, **Visualizzazione classi**, **Visualizzatore chiamate** e Trova risultati **simbolo** forniscono funzionalità di esplorazione dei simboli in Visual Studio. Questi strumenti visualizzano le viste ad albero gerarchiche dei simboli e mostrano le relazioni tra i simboli nell'albero. I simboli possono rappresentare spazi dei nomi, oggetti, classi, membri di classi e altri elementi del linguaggio contenuti in vari componenti. I componenti includono progetti di Visual Studio, componenti esterni di .NET Framework e librerie di tipi (tlb). Per ulteriori informazioni, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).
 
-## <a name="symbol-browsing-libraries"></a>Librerie di esplorazione simboli
- In qualità di implementatore di linguaggi, è possibile estendere le funzionalità di esplorazione dei simboli di Visual Studio creando librerie che tengono traccia dei simboli nei componenti e forniscono gli elenchi di simboli al gestore oggetti di Visual Studio tramite un set di interfacce. Una libreria è descritta dall'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2>. Il gestore oggetti di Visual Studio risponde alle richieste di nuovi dati dagli strumenti di esplorazione dei simboli ottenendo i dati dalle librerie e organizzando il relativo. Successivamente, compila o aggiorna gli strumenti con i dati richiesti. Per ottenere un riferimento al gestore oggetti di Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> passare l'ID del servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> al metodo `GetService`.
+## <a name="symbol-browsing-libraries"></a>Librerie di esplorazione dei simboli
+ In qualità di implementatore del linguaggio, è possibile estendere le funzionalità di esplorazione dei simboli di Visual Studio creando librerie che tengono traccia dei simboli nei componenti e forniscono gli elenchi di simboli al gestore di oggetti di Visual Studio tramite un set di interfacce. Una libreria è <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> descritta dall'interfaccia. Il gestore di oggetti di Visual Studio risponde alle richieste di nuovi dati dagli strumenti di esplorazione dei simboli ottenendo i dati dalle librerie e organizzandoli. Successivamente popola o aggiorna gli strumenti con i dati richiesti. Per ottenere un riferimento al gestore di oggetti di Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>passare l'ID del <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> servizio al `GetService` metodo .
 
- Ogni libreria deve eseguire la registrazione con il gestore oggetti di Visual Studio, che raccoglie le informazioni su tutte le librerie. Per registrare una raccolta, chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>. A seconda dello strumento che avvia la richiesta, il gestore oggetti di Visual Studio trova la libreria appropriata e richiede i dati. I dati vengono trasmessi tra le librerie e il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestione oggetti negli elenchi di simboli descritti dall'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>.
+ Ogni libreria deve registrarsi con il gestore di oggetti di Visual Studio, che raccoglie le informazioni in tutte le librerie. Per registrare una <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> libreria, chiamare il metodo . A seconda dello strumento che avvia la richiesta, il gestore di oggetti di Visual Studio trova la libreria appropriata e richiede i dati. I dati si spostano [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tra le librerie e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> il gestore di oggetti in elenchi di simboli descritti dall'interfaccia.
 
- @No__t_0 Object Manager è responsabile dell'aggiornamento periodico degli strumenti di esplorazione dei simboli in modo da riflettere i dati più recenti contenuti nelle librerie.
+ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore di oggetti è responsabile dell'aggiornamento periodico degli strumenti di esplorazione dei simboli per riflettere i dati più aggiornati contenuti nelle librerie.
 
- Il diagramma seguente contiene un esempio di elementi principali del processo di richiesta/scambio di dati tra una libreria e il gestore oggetti di Visual Studio. Le interfacce nel diagramma fanno parte di un'applicazione di codice gestito.
+ Il diagramma seguente contiene un esempio di elementi chiave del processo di richiesta/scambio di dati tra una libreria e il gestore di oggetti di Visual Studio. Le interfacce nel diagramma fanno parte di un'applicazione di codice gestito.
 
- ![Flusso di dati tra una libreria e gestione oggetti](../../extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")
+ ![Flusso dei dati tra una libreria e il gestore oggetti](../../extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram (Diagramma di CallBrowser)")
 
- Per fornire gli elenchi di simboli al gestore oggetti di Visual Studio, è necessario prima registrare la libreria con gestione oggetti di Visual Studio chiamando il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>. Una volta registrata la libreria, il gestore oggetti di Visual Studio richiede alcune informazioni sulle funzionalità della libreria. Ad esempio, richiede i flag della libreria e le categorie supportate chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> metodi. A un certo punto, quando uno degli strumenti richiede dati da questa libreria, il gestore di oggetti richiede l'elenco di simboli di primo livello chiamando il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A>. In risposta, la libreria produce un elenco di simboli e lo espone al gestore oggetti di Visual Studio tramite l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>. Il gestore di oggetti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] determina il numero di elementi presenti nell'elenco chiamando il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>. Tutte le richieste seguenti sono correlate a un determinato elemento dell'elenco e forniscono il numero di indice dell'elemento in ogni richiesta. Il gestore oggetti di Visual Studio continua a raccogliere le informazioni sul tipo, l'accessibilità e altre proprietà dell'elemento chiamando il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>.
+ Per fornire gli elenchi di simboli al gestore di oggetti di Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> è innanzitutto necessario registrare la libreria con il gestore di oggetti di Visual Studio chiamando il metodo . Dopo la registrazione della libreria, il gestore di oggetti di Visual Studio richiede alcune informazioni sulle funzionalità della libreria. Ad esempio, richiede i flag di libreria <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> e le categorie supportate chiamando i metodi e . A un certo punto, quando uno degli strumenti richiede dati da questa libreria, il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> gestore di oggetti richiede l'elenco di primo livello dei simboli chiamando il metodo . In risposta, la libreria produce un elenco di simboli e lo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> espone al gestore di oggetti di Visual Studio tramite l'interfaccia. Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore di oggetti determina il numero <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> di elementi presenti nell'elenco chiamando il metodo . Tutte le richieste seguenti si riferiscono a un determinato elemento nell'elenco e forniscono il numero di indice dell'elemento in ogni richiesta. Il gestore di oggetti di Visual Studio procede a raccogliere le informazioni sul <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> tipo, l'accessibilità e altre proprietà dell'elemento chiamando il metodo .
 
- Determina il nome dell'elemento chiamando il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> e richiede le informazioni sull'icona chiamando il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>. L'icona viene visualizzata a sinistra del nome dell'elemento e rappresenta il tipo dell'elemento, l'accessibilità e altre proprietà.
+ Determina il nome dell'elemento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> chiamando il metodo e richiede <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> le informazioni sull'icona chiamando il metodo . L'icona viene visualizzata a sinistra del nome dell'elemento e illustra il tipo di elemento, l'accessibilità e altre proprietà.
 
- Il gestore di oggetti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] chiama il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> per determinare se un determinato elemento dell'elenco è espandibile e contiene elementi figlio. Se l'interfaccia utente invia una richiesta per espandere un elemento, il gestore di oggetti richiede l'elenco di simboli figlio chiamando il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>. Il processo continua con parti diverse dell'albero compilato su richiesta.
+ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> di oggetti chiama il metodo per determinare se un determinato elemento dell'elenco è espandibile e dispone di elementi figlio. Se l'interfaccia utente invia una richiesta per espandere un elemento, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> il gestore di oggetti richiede l'elenco figlio di simboli chiamando il metodo . Il processo continua con diverse parti dell'albero in fase di costruzione su richiesta.
 
 > [!NOTE]
-> Per implementare un provider di simboli di codice nativo, usare le interfacce <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>.
+> Per implementare un provider di <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> simboli di codice nativo, utilizzare le interfacce e .
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Registrare una libreria con il gestore degli oggetti](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)

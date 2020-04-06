@@ -1,5 +1,5 @@
 ---
-title: Funzione SccPopulateDirList | Microsoft Docs
+title: SccPopulateDirList (funzione) . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f13c674e6374e826dc45343e5cd1f7edcc1f8100
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720892"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700559"
 ---
 # <a name="sccpopulatedirlist-function"></a>Funzione SccPopulateDirList
-Questa funzione determina quali directory e, facoltativamente, i file vengono archiviati nel controllo del codice sorgente, dato un elenco di directory da esaminare.
+Questa funzione determina quali directory e (facoltativamente) i file vengono archiviati nel controllo del codice sorgente, dato un elenco di directory da esaminare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,37 +38,37 @@ SCCRTN SccPopulateDirList(
 #### <a name="parameters"></a>Parametri
  pContext
 
-in Puntatore al contesto del plug-in del controllo del codice sorgente.
+[in] Puntatore di contesto del plug-in del controllo del codice sorgente.
 
- nDirs
+ nDirs (informazioni in stato infondi)
 
-in Numero di percorsi di directory nella matrice `lpDirPaths`.
+[in] Numero di percorsi `lpDirPaths` di directory nella matrice.
 
- lpDirPaths
+ LpDirPeri
 
-in Matrice di percorsi di directory da esaminare.
+[in] Matrice di percorsi di directory da esaminare.
 
- pfnPopulate
+ pfnPop
 
-in Funzione di callback da chiamare per ogni percorso di directory e (facoltativamente) filename in `lpDirPaths`. per informazioni dettagliate, vedere [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) .
+[in] Funzione di callback da chiamare per ogni percorso `lpDirPaths` di directory e (facoltativamente) nome file in (vedere [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) per i dettagli).
 
- pvCallerData
+ pvCallerData (informazioni in fibra con i dati)
 
-in Valore che deve essere passato senza modifiche alla funzione di callback.
+[in] Valore che deve essere passato invariato alla funzione di callback.
 
- fOptions
+ fOpzioni
 
-in Combinazione di valori che controllano il modo in cui vengono elaborate le directory. vedere la sezione "flag PopulateDirList" di [flag utilizzata da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) per i valori possibili.
+[in] Combinazione di valori che controllano la modalità di elaborazione delle directory (vedere la sezione "Flag PopOfrList" di Flag di [bit utilizzati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) per i valori possibili).
 
 ## <a name="return-value"></a>Valore restituito
- Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
+ L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei seguenti valori:
 
-|Value|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|L'operazione è stata completata.|
+|SCC_OK|L'operazione è stata completata correttamente.|
 |SCC_E_UNKNOWNERROR|Si è verificato un errore.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Solo le directory e (facoltativamente) i nomi di file effettivamente presenti nel repository del controllo del codice sorgente vengono passati alla funzione di callback.
 
 ## <a name="see-also"></a>Vedere anche

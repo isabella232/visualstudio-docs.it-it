@@ -1,30 +1,30 @@
 ---
-title: Aggiunta di directory per la finestra di dialogo Nuovo progetto | Microsoft Docs
+title: Aggiunta di directory alla finestra di dialogo Nuovo progetto Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - New Project dialog box, extending
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e81d09c2a4e97ca5f3da112e593b04b219e6314
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328008"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710237"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>Aggiungere directory alla finestra di dialogo Nuovo progetto
-Quando si creano nuovi tipi di progetto, è anche possibile registrare una nuova directory nel **nuovo progetto** finestra di dialogo per la visualizzazione per l'uso come modelli. Esempio di codice seguente illustra come registrare una nuova directory, noto anche come un nodo. Nell'esempio esposti dal pacchetto VSPackage, i modelli *CLSID_Package*, vengono registrati. Di conseguenza, il lato sinistro del **nuovo progetto** finestra di dialogo offre il nodo aggiunto, con un nome di base di *Folder_Label_ResID* risorse. Questa risorsa verrà caricata della DLL satellite di VSPackage.
+Quando si creano nuovi tipi di progetto, è anche possibile registrare una nuova directory nella finestra di dialogo **Nuovo progetto** per visualizzarli per l'utilizzo come modelli. Nell'esempio di codice riportato di seguito viene illustrato come registrare una nuova directory, nota anche come nodo. Nell'esempio vengono registrati i modelli esposti da VSPackage, *CLSID_Package*, . Di conseguenza, il lato sinistro della finestra di dialogo **Nuovo progetto** offre il nodo aggiunto, con un nome determinato dalla risorsa *Folder_Label_ResID.* Questa risorsa viene caricata dalla DLL satellite VSPackage.
 
- Il **cartella** valore rappresenta un GUID di una cartella in cui le *Folder_Label_ResID* nodo viene visualizzato. Nell'esempio, rappresenta il GUID il **altri progetti** cartella il **tipi di progetto** riquadro del **nuovo progetto** nella finestra di dialogo. Se il **altri progetti** valore è assente, l'etichetta viene posizionata nella parte superiore.
+ Il valore **Folder** rappresenta un GUID di una cartella in cui viene visualizzato il *nodo Folder_Label_ResID.* Nell'esempio, il GUID rappresenta la cartella **Altri progetti** nel riquadro **Tipi** progetto della finestra di dialogo **Nuovo progetto.** Se il valore **Altri progetti** è assente, l'etichetta viene posizionata al livello superiore.
 
- Il `TemplatesDir` valore specifica il percorso completo della directory che contiene i modelli di progetto. Questi file possono essere *vsz* file o i file di modello tipico per la clonazione.
+ Il `TemplatesDir` valore specifica il percorso completo della directory che contiene i modelli di progetto. Questi file possono essere file *vsz* o file modello tipici da clonare.
 
- Se si specifica `TemplatesLocalizedSubDir`, deve essere l'ID risorsa della stringa che denomina la sottodirectory della `TemplatesDir` che contiene i modelli localizzati. Poiché [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carica la risorsa stringa da una DLL satellite se presente, ogni DLL satellite può contenere un nome di sottodirectory diverse. Il `SortPriority` valore specifica una priorità di ordinamento.
+ Se si `TemplatesLocalizedSubDir`specifica , deve essere l'ID di risorsa `TemplatesDir` di una stringa che denomina la sottodirectory di tale contiene i modelli localizzati. Poiché [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carica la risorsa stringa da una DLL satellite, se ne è ota', ogni DLL satellite può contenere un nome di sottodirectory diverso. Il `SortPriority` valore specifica una priorità di ordinamento.
 
 ```
 NoRemove NewProjectTemplates
@@ -46,6 +46,6 @@ NoRemove NewProjectTemplates
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Registrare i modelli di progetto ed elemento](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Registrare modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md)
 - [Aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Aggiungere directory alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

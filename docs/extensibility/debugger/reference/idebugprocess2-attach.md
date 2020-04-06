@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Attach | Microsoft Docs
+title: Proprietà IDebugProcess2::Attach . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Attach
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24a83c13d8953e3725a5fc5a4e55153b9ade88c4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353255"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724189"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
-Collega gestore di sessione di debug (SDM) al processo.
+Collega il gestore di sessione di debug (SDM) al processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,30 +47,30 @@ int Attach( 
 
 ## <a name="parameters"></a>Parametri
 `pCallback`\
-[in] Un' [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) oggetto utilizzato per la notifica degli eventi di debug.
+[in] Oggetto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) utilizzato per la notifica dell'evento di debug.
 
 `rgguidSpecificEngines`\
-[in] Una matrice di GUID dei motori di debug da utilizzare per il debug dei programmi in esecuzione nel processo. Questo parametro può essere un valore null. Per informazioni dettagliate, vedere la sezione Osservazioni.
+[in] Matrice di GUID di motori di debug da utilizzare per eseguire il debug di programmi in esecuzione nel processo. Questo parametro può essere un valore null. Per ulteriori informazioni, vedere Note.
 
 `celtSpecificEngines`\
-[in] Il numero di debug motori nel `rgguidSpecificEngines` matrice e la dimensione del `rghrEngineAttach` matrice.
+[in] Il numero di motori `rgguidSpecificEngines` di debug nella `rghrEngineAttach` matrice e la dimensione della matrice.
 
 `rghrEngineAttach`\
-[in, out] Matrice di codici HRESULT restituiti dai motori di debug. La dimensione di questa matrice viene specificata nel `celtSpecificEngines` parametro. Ogni codice è generalmente `S_OK` o `S_ATTACH_DEFERRED`. Quest'ultimo indica che la Germania è attualmente connesso a nessun programma.
+[in, out] Matrice di codici HRESULT restituiti dai motori di debug. La dimensione di questa matrice `celtSpecificEngines` è specificata nel parametro. Ogni codice è `S_OK` `S_ATTACH_DEFERRED`in genere o . Quest'ultimo indica che il DE è attualmente collegato ad alcun programma.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra altri valori possibili.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Nella tabella seguente vengono illustrati altri valori possibili.
 
-|Value|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Il processo specificato è già collegato al debugger.|
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Il processo specificato è già connesso al debugger.|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Si è verificata una violazione della sicurezza durante la procedura di collegamento.|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un processo del desktop non è possibile collegare il debugger.|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Non è possibile connettere un processo desktop al debugger.|
 
-## <a name="remarks"></a>Note
- Connessione a un processo associa il modello SDM per tutti i programmi in esecuzione in tale processo che è possibile eseguire il debug per i motori di debug (DE) specificati nel `rgguidSpecificEngines` matrice. Impostare il `rgguidSpecificEngines` parametro in un valore null valore o includere `GUID_NULL` nella matrice da collegare a tutti i programmi nel processo.
+## <a name="remarks"></a>Osservazioni
+ La connessione a un processo collega il modello SDM a tutti i programmi in esecuzione in tale `rgguidSpecificEngines` processo di cui è possibile eseguire il debug dai motori di debug (DE) specificati nell'array. Impostare `rgguidSpecificEngines` il parametro su `GUID_NULL` un valore null o includerlo nella matrice da associare a tutti i programmi nel processo.
 
- Tutti gli eventi di debug che si verificano nel processo vengono inviati per il dato [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) oggetto. Ciò `IDebugEventCallback2` oggetto viene fornito quando il modello SDM chiama questo metodo.
+ Tutti gli eventi di debug che si verificano nel processo vengono inviati all'oggetto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) specificato. Questo `IDebugEventCallback2` oggetto viene fornito quando il modello SDM chiama questo metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

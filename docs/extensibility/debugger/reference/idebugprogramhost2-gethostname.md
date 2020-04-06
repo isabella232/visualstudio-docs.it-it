@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostName | Microsoft Docs
+title: Proprietà IDebugProgramHost2::GetHostName . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2::GetHostName
 ms.assetid: 48bbb089-e59a-471a-9965-24b42a8dabf3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 851905a9ca642f029444a2f6c1adfdfe543fdf70
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f1bd63d6b53359cf3b86f5e3849cb18bd8367f7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351277"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722224"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
-Ottiene il titolo, un nome descrittivo o un nome file del processo di hosting di questo programma.
+Ottiene il titolo, il nome descrittivo o il nome file del processo di hosting di questo programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ int GetHostName( 
 
 ## <a name="parameters"></a>Parametri
 `dwType`\
-[in] Un valore compreso il [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) enumerazione.
+[in] Valore dell'enumerazione [GETHOSTNAME_TYPE.](../../../extensibility/debugger/reference/gethostname-type.md)
 
 `pbstrHostName`\
-[out] Restituisce il nome richiesto del processo di hosting.
+[fuori] Restituisce il nome richiesto del processo di hosting.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- In una tipica implementazione di questo metodo, il `dwType` parametro viene ignorato e viene restituito un nome descrittivo della macchina host. Un altro possibile implementazione consiste nel passare il `dwType` parametro per una chiamata ai [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodo per ottenere il nome.
+## <a name="remarks"></a>Osservazioni
+ In un'implementazione tipica `dwType` di questo metodo, il parametro viene ignorato e viene restituito un nome descrittivo del computer host. Un'altra possibile implementazione consiste nel passare il `dwType` parametro a una chiamata al [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodo per ottenere il nome.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)

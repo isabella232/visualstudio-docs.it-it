@@ -1,28 +1,28 @@
 ---
-title: IDebugProgramDestroyEventFlags2::GetFlags | Microsoft Docs
+title: Proprietà IDebugProgramDestroyEventFlags2::GetFlags . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetFlags
 - IDebugProgramDestroyEventFlags2::GetFlags
 ms.assetid: dd53bd0c-459a-4077-ba81-780defb71e87
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae8ff2cddad4817acbb0474cad7442c79c0994b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a590fa78769f75fe1689f233361beb963d9ccf0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343520"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722518"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
-Recupera il programma di eliminare definitivamente i flag.
+Recupera i flag di eliminazione del programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ public int GetFlags(
 
 ## <a name="parameters"></a>Parametri
 `pdwFlags`\
-[out] Rappresenta il programma di eliminare definitivamente i flag.
+[fuori] Rappresenta i flag di eliminazione del programma.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgramDestroyEventFlags2](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2.md)
