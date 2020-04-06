@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2::Next | Microsoft Docs
+title: Proprietà IEnumDebugFrameInfo2::Next . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2::Next
 ms.assetid: 64a64eeb-5dea-4119-8a22-03771015d1e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d95ae4b8ee5b6343b922b2b50a7b63889dee798c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5fe15c46066fdbc94b0b7f005ef7a06e1f10cc0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350337"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716707"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
-Restituisce il set successivo di elementi dall'enumerazione.
+Restituisce il successivo set di elementi dall'enumerazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Parametri
 `celt`\
-[in] Il numero di elementi da recuperare. Specifica inoltre la dimensione massima del `rgelt` matrice.
+[in] Numero di elementi da recuperare. Specifica anche la dimensione `rgelt` massima della matrice.
 
 `rgelt`\
-[in, out] Matrice di [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) elementi da compilare.
+[in, out] Matrice di elementi [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) da compilare.
 
 `pceltFetched`\
-[out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.
+[fuori] Restituisce il numero di `rgelt`elementi effettivamente restituiti in .
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è possibile restituire un numero di elementi inferiore al numero richiesto; in caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

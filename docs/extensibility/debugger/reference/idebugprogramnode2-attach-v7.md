@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::Attach_V7 | Microsoft Docs
+title: IDebugProgramNode2::Attach_V7 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::Attach_V7
 - IDebugProgramNode2::Attach
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a90b162476872700ee0ec69a3bb9e6e575e7862a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bdee5b224ae38c3474009aeaf26e783ebc5dd139
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351176"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722134"
 ---
-# <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
+# <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 
 > [!Note]
-> DEPRECATO. NON USARE.
+> Deprecato. NON UTILIZZARE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,27 +51,27 @@ int Attach_V7 (
 [in] Il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia che rappresenta il programma a cui connettersi.
 
 `pCallback`\
-[in] Il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) interfaccia da utilizzare per inviare gli eventi di debug per il modello SDM.
+[in] Il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) interfaccia da utilizzare per inviare eventi di debug al modello SDM.
 
 `dwReason`\
-[in] Un valore compreso il [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumerazione che specifica il motivo per il collegamento.
+[in] Valore dell'enumerazione [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) che specifica il motivo della connessione.
 
 ## <a name="return-value"></a>Valore restituito
 
-Un'implementazione deve sempre restituire `E_NOTIMPL`.
+Un'implementazione `E_NOTIMPL`deve sempre restituire .
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 > [!WARNING]
-> A partire da Visual Studio 2005, questo metodo non viene più usato e deve sempre restituire `E_NOTIMPL`. Vedere le [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfaccia di amministrazione di un approccio alternativo se il nodo programma deve indicare non è possibile collegare o se il nodo di programma è semplicemente l'impostazione del programma `GUID`. In caso contrario, implementare il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) (metodo).
+> A partire da Visual Studio 2005, questo metodo `E_NOTIMPL`non viene più utilizzato e deve sempre restituire . Vedere il [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfaccia per un approccio alternativo se il nodo del programma deve indicare `GUID`che non può essere collegato o se il nodo del programma è semplicemente l'impostazione del programma . In caso contrario, implementare il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) metodo.
 
 ## <a name="prior-to-visual-studio-2005"></a>Prima di Visual Studio 2005
 
-Questo metodo deve essere implementata solo se la Germania viene eseguito nello spazio degli indirizzi del programma in fase di debug. In caso contrario, questo metodo deve restituire `S_FALSE`.
+Questo metodo deve essere implementato solo se il DE viene eseguito nello spazio degli indirizzi del programma in fase di debug. In caso contrario, questo metodo deve restituire `S_FALSE`.
 
-Quando questo metodo viene chiamato, la Germania è necessario inviare il [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) oggetto dell'evento, se non si sono già stato inviato per questa istanza del [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interfaccia, così come il [ IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) e [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) oggetti evento. Il [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) oggetto dell'evento viene inviato se le `dwReason` parametro `ATTACH_REASON_LAUNCH`.
+Quando questo metodo viene chiamato, il DE deve inviare il [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) oggetto evento, se non è già stato inviato per questa istanza del [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interfaccia, nonché il [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) e [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) oggetti evento. L'oggetto evento [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) viene `dwReason` quindi `ATTACH_REASON_LAUNCH`inviato se il parametro è .
 
-La Germania è necessario chiamare il [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metodo sul [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto fornito dal [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) eventi dell'oggetto e devono archiviare il GUID del programma nei dati dell'istanza per il `IDebugProgram2` oggetto implementato dal DE.
+Il DE deve chiamare il [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metodo il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto fornito dal [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) oggetto evento e deve `IDebugProgram2` archiviare il GUID del programma nei dati di istanza per l'oggetto implementato dal DE.
 
 ## <a name="see-also"></a>Vedere anche
 

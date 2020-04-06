@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::EnumProcesses | Microsoft Docs
+title: Proprietà IDebugPort2::EnumProcesses . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::EnumProcesses
 ms.assetid: aafb32c5-5790-4807-a448-878a80256438
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c1b5b43007e43a5cee368622d808d20ad5b83b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb3b3bc07cc784300fd80626acd7f0cd6179773c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343806"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725454"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 Restituisce un elenco di tutti i processi in esecuzione su una porta.
@@ -41,10 +41,10 @@ int EnumProcesses( 
 
 ## <a name="parameters"></a>Parametri
 `ppEnum`\
-[out] Restituisce un [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) oggetto che contiene un elenco di tutti i processi in esecuzione su una porta.
+[fuori] Restituisce un oggetto [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) che contiene un elenco di tutti i processi in esecuzione su una porta.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

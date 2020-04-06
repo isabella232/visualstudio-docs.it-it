@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2 | Microsoft Docs
+title: Proprietà IDebugProcess2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2 interface
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bea73c1bce5367d9686e835bb58dd99a83cc818
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c72659491ec6718397a4fbb494175eea0896c7f7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314132"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723807"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
-Questa interfaccia rappresenta un processo in esecuzione su una porta. Se la porta è la porta locale, quindi `IDebugProcess2` rappresenta in genere un processo nel computer locale fisico.
+Questa interfaccia rappresenta un processo in esecuzione su una porta. Se la porta è la `IDebugProcess2` porta locale, rappresenta in genere un processo fisico nel computer locale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,37 +29,37 @@ IDebugProcess2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Questa interfaccia viene implementata da un fornitore di porte personalizzate per i programmi sono gestiti come gruppo. Questa interfaccia deve essere implementata dal fornitore della porta.
+ Questa interfaccia viene implementata da un fornitore di porta personalizzato per gestire i programmi come gruppo. Questa interfaccia deve essere implementata dal fornitore della porta.
 
- Un motore di debug anche implementa questa interfaccia se supporta l'avvio di un programma attraverso [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).
+ Un motore di debug implementa anche questa interfaccia se supporta l'avvio di un programma tramite [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Questa interfaccia viene chiamata principalmente dal gestore di sessione di debug (SDM) per interagire con un gruppo di programmi identificate in questo processo.
+ Questa interfaccia viene chiamata principalmente dal gestore di sessione di debug (SDM) per interagire con un gruppo di programmi identificati in questo processo.
 
- Chiamare [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md) oppure [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md) per ottenere questa interfaccia. Questa interfaccia viene inoltre restituita chiamando `IDebugEngineLaunch2::LaunchSuspended`.
+ Chiamare [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md) o [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md) per ottenere questa interfaccia. Questa interfaccia viene restituita `IDebugEngineLaunch2::LaunchSuspended`anche chiamando .
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IDebugProcess2`.
+ Nella tabella seguente vengono `IDebugProcess2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)|Ottiene una descrizione del processo.|
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|Enumera i programmi contenuti in questo processo.|
-|[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Ottiene il titolo, un nome descrittivo o un nome di file del processo.|
-|[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|Ottiene l'istanza di questo processo è in esecuzione in una macchina server.|
-|[Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|Termina il processo.|
-|[Attach](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|Collega al processo.|
-|[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|Determina se il modello SDM possibile scollegare il processo.|
-|[Detach](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Scollega debugger dal processo.|
-|[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Ottiene l'identificatore di processo di sistema.|
-|[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Ottiene un identificatore univoco globale per questo processo.|
-|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [DEPRECATO]|Ottiene il nome della sessione che sta eseguendo il debug del processo.<br /><br /> [DEPRECATO. DEVE SEMPRE RESTITUIRE `E_NOTIMPL`.]|
+|[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Ottiene il titolo, il nome descrittivo o il nome file del processo.|
+|[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|Ottiene l'istanza di un server del computer in cui è in esecuzione questo processo.|
+|[Terminare](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|Termina il processo.|
+|[Attach](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|Si connette al processo.|
+|[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|Determina se il modello SDM può scollegare il processo.|
+|[Detach](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Disconnette il debugger dal processo.|
+|[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Ottiene l'identificatore del processo di sistema.|
+|[IdProcessoGetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Ottiene un identificatore univoco globale per questo processo.|
+|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [DEPRECATO]|Ottiene il nome della sessione che esegue il debug del processo.<br /><br /> [DEPRECATO. DEVE SEMPRE `E_NOTIMPL`RESTITUIRE .]|
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|Enumera i thread in esecuzione nel processo.|
-|[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Richiede che il successivo programma in esecuzione di codice in arrestare questo processo.|
-|[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Ottiene la porta su cui è in esecuzione in questo processo.|
+|[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Richiede che il codice in esecuzione del programma successivo in questo processo venga interrotto.|
+|[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Ottiene la porta su cui è in esecuzione questo processo.|
 
-## <a name="remarks"></a>Note
- Un' `IDebugProcess2` contiene uno o più [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfacce.
+## <a name="remarks"></a>Osservazioni
+ Un `IDebugProcess2` contiene una o più [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfacce.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: Msdbg.h
@@ -73,7 +73,7 @@ IDebugProcess2 : IUnknown
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
-- [avanti](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)
+- [Avanti](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)
 - [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

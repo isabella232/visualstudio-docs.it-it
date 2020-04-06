@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA | Microsoft Docs
+title: proprietà PROVIDER_PROCESS_DATA . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_PROCESS_DATA structure
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18b60d68b8c36c1d0c4fcd2a90e25732108460ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347245"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713774"
 ---
-# <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
-Questa struttura fornisce informazioni sui processi in esecuzione in un computer.
+# <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
+Questa struttura fornisce informazioni sui processi in esecuzione su una macchina.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ public struct PROVIDER_PROCESS_DATA {
 
 ## <a name="members"></a>Membri
  `Fields`\
- Una combinazione di flag dal [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) enumerazione, che indica quali campi vengono compilati.
+ Combinazione di flag dell'enumerazione [PROVIDER_FIELDS,](../../../extensibility/debugger/reference/provider-fields.md) che indica quali campi vengono compilati.
 
  `ProgramNodes`\
- Oggetto [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) struttura che contiene una matrice di nodi di programma.
+ Struttura [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) che contiene una matrice di nodi di programma.
 
  `fIsDebuggerPresent`\
- Diverso da zero (`TRUE`) se il [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger è in esecuzione, zero (`FALSE`) in caso contrario.
+ Diverso da`TRUE`zero [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ( ) se`FALSE`il debugger è in esecuzione, zero ( ) in caso contrario.
 
-## <a name="remarks"></a>Note
- Questa struttura viene passata per il [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) in cui viene compilato nel metodo.
+## <a name="remarks"></a>Osservazioni
+ Questa struttura viene passata al metodo [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) in cui viene compilata.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

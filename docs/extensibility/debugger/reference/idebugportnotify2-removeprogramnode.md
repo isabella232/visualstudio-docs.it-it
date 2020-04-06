@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::RemoveProgramNode | Microsoft Docs
+title: Proprietà IDebugPortNotify2::RemoveProgramNode . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::RemoveProgramNode
 ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05565005838fb47c3ad798464ee9382ae1168905
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c59b80a2c9748dccccd7b1fa1d5217b8e9f4979f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314233"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724954"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
-Annulla la registrazione di un programma che è possibile eseguire il debug dalla porta di che cui è in esecuzione.
+Annulla la registrazione di un programma di cui è possibile eseguire il debug dalla porta su cui è in esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int RemoveProgramNode( 
 
 ## <a name="parameters"></a>Parametri
 `pProgramNode`\
-[in] Un' [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetti che rappresenta il programma di cui annullare la registrazione.
+[in] Objecy [di IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il programma di cui annullare la registrazione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo rimuove un nodo viene aggiunto con una chiamata ai [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) (metodo).
+## <a name="remarks"></a>Osservazioni
+ Questo metodo rimuove un nodo di programma che è stato aggiunto con una chiamata al [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

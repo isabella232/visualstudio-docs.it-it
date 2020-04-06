@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS | Microsoft Docs
+title: proprietà PROVIDER_FLAGS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8408481efbcaa67ce60d2dbfc9166b5dd0fd5223
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d2333b62f21aa7b2b2bc70bddb50cbb3983cedf5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350019"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713812"
 ---
-# <a name="providerflags"></a>PROVIDER_FLAGS
-Specifica le proprietà desiderate devono essere ottenuti da un provider di programma.
+# <a name="provider_flags"></a>PROVIDER_FLAGS
+Specifica le proprietà desiderate da ottenere da un provider di programmi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,25 +57,25 @@ public enum enum_PROVIDER_FLAGS {
  Nessun flag specificato.
 
  `PFLAG_REMOTE_PORT`\
- Il chiamante desidera un elenco di programmi in un computer diverso rispetto a [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ Il chiamante desidera un elenco [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]di programmi su un computer diverso da .
 
  `PFLAG_DEBUGGEE`\
- Il processo è in corso il debug da questa istanza di [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ È in corso il debug del [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]processo da questa istanza di .
 
  `PFLAG_ATTACH_TODEBUGGEE`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] è collegato al programma in fase di debug ma non è avviata.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]è collegato al programma in fase di debug ma non l'ha avviato.
 
  `PFLAG_REASON_WATCH`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] sta controllando l'arrivo degli eventi.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]sta guardando per gli eventi.
 
  `PFLAG_GET_PROGRAM_NODES`\
- Chiamante desidera che il `ProgramNodes` campo le [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struttura.
+ Il chiamante vuole il `ProgramNodes` campo della struttura [PROVIDER_PROCESS_DATA.](../../../extensibility/debugger/reference/provider-process-data.md)
 
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
- Chiamante desidera che il `fIsTheDebuggerPresent` campo il `PROVIDER_PROCESS_DATA` struttura.
+ Il chiamante vuole il `fIsTheDebuggerPresent` campo della `PROVIDER_PROCESS_DATA` struttura.
 
-## <a name="remarks"></a>Note
- Questi flag vengono passati ai metodi seguenti:
+## <a name="remarks"></a>Osservazioni
+ Questi flag vengono passati ai seguenti metodi:
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
@@ -83,7 +83,7 @@ public enum enum_PROVIDER_FLAGS {
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-  Questi valori possono essere combinati con un bit per bit `OR`.
+  Questi valori possono essere combinati `OR`con un file bit per bit.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

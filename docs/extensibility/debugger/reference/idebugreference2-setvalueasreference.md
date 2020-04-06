@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference | Microsoft Docs
+title: Proprietà IDebugReference2::SetValueAsReference . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsReference
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 108061d4957b03d049897985da849ab86563ea47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f4767dbe08e716d64ea03c18a1c4a6f7d6690a7b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339761"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720299"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Imposta il valore di un riferimento da un altro riferimento. Riservato per usi futuri.
+Imposta il valore di un riferimento da un altro riferimento. Riservato per utilizzi futuri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,16 +47,16 @@ int SetValueAsReference ( 
 
 ## <a name="parameters"></a>Parametri
 `rgpArgs`\
-[in] Matrice di [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) oggetti utilizzati per determinare come impostare il valore di riferimento.
+[in] Matrice di [oggetti IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) utilizzati per determinare come impostare il valore di riferimento.
 
 `dwArgCount`\
-[in] Il numero di riferimenti nella matrice.
+[in] Numero di riferimenti nella matrice.
 
 `pValue`\
-[in] Un' [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) oggetto da cui impostare il valore della proprietà.
+[in] Oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) da cui impostare il valore della proprietà.
 
 `dwTimeout`\
-[in] Tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.
+[in] Tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Utilizzare `INFINITE` per attendere a tempo indeterminato.
 
 ## <a name="return-value"></a>Valore restituito
  Restituisce sempre `E_NOTIMPL`.

@@ -1,5 +1,5 @@
 ---
-title: Estensione delle proprietà e la finestra delle proprietà | Microsoft Docs
+title: Estensione delle proprietà e della finestra delle proprietà Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,24 +9,24 @@ helpviewer_keywords:
 - SelectionContainer class
 - SelectableObjects property
 ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50f403c6bb92dbd11b53c5814fb6c9c7f512be42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313061"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711731"
 ---
-# <a name="extend-properties-and-the-property-window"></a>Estendere le proprietà e la finestra delle proprietà
-Il **proprietà** finestra consente di visualizzare e modificare le proprietà design-time e gli eventi degli oggetti selezionati.
+# <a name="extend-properties-and-the-property-window"></a>Estendere le proprietà e la finestra ProprietàExtend properties and the Property window
+La finestra **Proprietà** viene utilizzata per visualizzare e modificare le proprietà e gli eventi della fase di progettazione degli oggetti selezionati.
 
- Quando si seleziona un oggetto nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], le proprietà pubbliche dell'oggetto vengono visualizzati nei **proprietà** finestra. Per altre informazioni, vedere [Panoramica della finestra proprietà](../extensibility/internals/properties-window-overview.md).
+ Quando si seleziona [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]un oggetto in , le proprietà pubbliche di tale oggetto vengono visualizzate nella finestra **Proprietà.** Per ulteriori informazioni, vedere [Panoramica della finestra Proprietà](../extensibility/internals/properties-window-overview.md).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
-- [Esporre le proprietà nella finestra proprietà](../extensibility/exposing-properties-to-the-properties-window.md) viene spiegato come si possono avere le proprietà personalizzate visualizzate nella finestra Proprietà.
+- [Esporre le proprietà alla finestra Proprietà](../extensibility/exposing-properties-to-the-properties-window.md) Viene illustrato come visualizzare le proprietà personalizzate nella finestra Proprietà.
 
-- [Ottenere le proprietà del progetto](../extensibility/getting-project-properties.md) spiega come ottenere le proprietà del progetto.
+- [Ottenere le proprietà del progettoGet project properties](../extensibility/getting-project-properties.md) Viene illustrato come ottenere le proprietà del progetto.

@@ -1,27 +1,27 @@
 ---
-title: Elemento EnableEditOfLocationField (modelli di Visual Studio) | Microsoft Docs
+title: EnableEditOfLocationField (elemento) Documenti Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82a65115ce5df0f57ad9e6ea18a5637e035fed66
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334545"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711998"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (modelli di Visual Studio)
-Specifica se l'utente può modificare il campo del percorso.
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (elemento) (modelli di Visual Studio)
+Specifica se l'utente può modificare il campo della posizione.
 
- \<VSTemplate > \<TemplateData > \<EnableEditOfLocationField >
+ \<VSTemplate \<> TemplateData> \<> EnableEditOfLocationField
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,15 +47,15 @@ Specifica se l'utente può modificare il campo del percorso.
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Il testo deve essere `true` o `false`, che indica se l'utente può modificare il **posizione** casella di testo al **nuovo progetto** nella finestra di dialogo.
+ Il testo deve `true` `false`essere o , che indica se l'utente può modificare o meno la casella di testo **Percorso** nella finestra di dialogo **Nuovo progetto** .
 
-## <a name="remarks"></a>Note
- `EnableEditOfLocationField` è un elemento facoltativo. Il valore predefinito è `true`, che consente all'utente di modificare il valore di **posizione** casella di testo nel **nuovo progetto** nella finestra di dialogo.
+## <a name="remarks"></a>Osservazioni
+ `EnableEditOfLocationField` è un elemento facoltativo. Il valore `true`predefinito è , che consente all'utente di modificare il valore nella casella di testo **Percorso** della finestra di dialogo **Nuovo progetto** .
 
- Nel **nuovo progetto** della finestra di dialogo il **posizione** casella di testo specifica la directory in cui viene salvato un nuovo progetto.
+ Nella finestra di dialogo **Nuovo progetto,** la casella di testo **Percorso** specifica la directory in cui viene salvato un nuovo progetto.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows.
+ Nell'esempio seguente vengono illustrati [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] i metadati per un'applicazione Windows.The following example illustrates the metadata for a Windows application.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,5 +84,5 @@ Specifica se l'utente può modificare il campo del percorso.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)

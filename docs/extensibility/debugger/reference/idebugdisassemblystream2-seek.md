@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Seek | Microsoft Docs
+title: Proprietà IDebugDisassemblyStream2::Seek . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Seek
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e97da5b4b65b18c9d4c745dea2cb5f0915862731
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4954b3b278b3c7a6b798a4ffda3856ab8bb200c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310361"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732078"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
-Sposta il puntatore di lettura nel flusso di disassemblaggio di un determinato numero di istruzioni rispetto alla posizione specificata.
+Sposta il puntatore di lettura nel flusso di disassembly di un determinato numero di istruzioni relative a una posizione specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,22 +47,22 @@ int Seek( 
 
 ## <a name="parameters"></a>Parametri
 `dwSeekStart`\
-[in] Un valore compreso il [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) enumerazione che specifica la posizione relativa per iniziare il processo di ricerca.
+[in] Valore dell'enumerazione [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) che specifica la posizione relativa per avviare il processo di ricerca.
 
 `pCodeContext`\
-[in] Il [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta il contesto di codice che l'operazione di ricerca è relativo alla. Questo parametro viene utilizzato solo se `dwSeekStart`  =  `SEEK_START_CODECONTEXT`; in caso contrario, questo parametro viene ignorato e può essere un valore null.
+[in] Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta il contesto del codice a cui è relativa l'operazione di ricerca. Questo parametro viene `dwSeekStart`  =  `SEEK_START_CODECONTEXT`utilizzato solo se ; in caso contrario, questo parametro viene ignorato e può essere un valore null.
 
 `uCodeLocationId`\
-[in] L'identificatore percorso codice che l'operazione di ricerca è relativo alla. Questo parametro viene usato se `dwSeekStart`  =  `SEEK_START_CODELOCID`; in caso contrario, questo parametro viene ignorato e può essere impostato su 0. Vedere la sezione Osservazioni per il [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) metodo per una descrizione di un identificatore percorso codice.
+[in] Identificatore della posizione del codice a cui è relativa l'operazione di ricerca. Questo parametro `dwSeekStart`  =  `SEEK_START_CODELOCID`viene utilizzato if ; in caso contrario, questo parametro viene ignorato e può essere impostato su 0. Vedere la sezione Osservazioni per il [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) metodo per una descrizione di un identificatore di percorso di codice.
 
 `iInstructions`\
-[in] Il numero di istruzioni da spostare rispetto alla posizione specificata nel `dwSeekStart`. Questo valore può essere negativo per spostarsi all'indietro.
+[in] Il numero di istruzioni da spostare `dwSeekStart`rispetto alla posizione specificata in . Questo valore può essere negativo per spostarsi all'indietro.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è stata la posizione di ricerca a un punto successivo nell'elenco delle istruzioni disponibili. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la posizione della ricerca si trova in un punto che va oltre l'elenco delle istruzioni disponibili. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Note
- Se la ricerca è stato in una posizione antecedente l'inizio dell'elenco, la posizione di lettura è impostata per la prima istruzione nell'elenco. Se il vedere è stato in una posizione dopo la fine dell'elenco, la posizione di lettura viene impostata all'ultima istruzione nell'elenco.
+## <a name="remarks"></a>Osservazioni
+ Se la ricerca è stata in una posizione prima dell'inizio dell'elenco, la posizione di lettura viene impostata sulla prima istruzione dell'elenco. Se il see era in una posizione dopo la fine dell'elenco, la posizione di lettura viene impostata sull'ultima istruzione nell'elenco.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Detach | Microsoft Docs
+title: Proprietà IDebugProcess2::Detach . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Detach
 ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3948ecce15b9b2b2e8b3bf974ecc2277d9fa0360
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9036ebc44835ab6c3ebd08b9fad4408d9cb97461
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353192"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724121"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
-Scollega debugger da questo processo per tutti i programmi nel processo di scollegamento.
+Disconnette il debugger da questo processo disconnettendo tutti i programmi nel processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,10 +38,10 @@ int Detach();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Tutti i programmi e il processo di continuare l'esecuzione, ma non fanno più parte della sessione di debug. Dopo l'operazione di scollegamento è completo e non è più debug verranno inviati gli eventi per questo processo (e i relativi programmi).
+## <a name="remarks"></a>Osservazioni
+ Tutti i programmi e il processo continuano a essere eseguiti, ma non fanno più parte della sessione di debug. Al termine dell'operazione di disconnessione, non verranno inviati più eventi di debug per questo processo (e i relativi programmi).
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES | Microsoft Docs
+title: PROPRIETÀ THREAD Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0e39102fa66c04a15042ffd82086ac66d3058ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316176"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713427"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
-Vengono descritte le proprietà di un thread.
+Descrive le proprietà di un thread.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,28 +53,28 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>Membri
  `dwFields`\
- Una combinazione di flag dal [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumerazione, che indica quali campi in questa struttura sono validi.
+ Combinazione di flag dall'enumerazione [THREADPROPERTY_FIELDS,](../../../extensibility/debugger/reference/threadproperty-fields.md) che descrive quali campi in questa struttura sono validi.
 
  `dwThreadId`\
  ID del thread.
 
  `dwSuspendCount`\
- Il thread di conteggio di sospensione.
+ Conteggio delle sospensioni del thread.
 
  `dwThreadState`\
- Un valore compreso il [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumerazione che indica lo stato del thread operativo.
+ Valore dell'enumerazione [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) che indica lo stato del thread operativo.
 
  `bstrPriority`\
- Stringa che specifica la priorità del thread; ad esempio, "Superiore al normale", "Normal" o "Ora critiche".
+ Una stringa che specifica la priorità del thread; ad esempio, "Sopra il normale", "Normale" o "Critico tempo".
 
  `bstName`\
- Il nome del thread.
+ Nome del thread.
 
  `bstrLocation`\
- Il percorso di thread (in genere il frame dello stack più in alto), in genere espresso come il nome del metodo in cui l'esecuzione è attualmente bloccata.
+ Posizione del thread (in genere lo stack frame più in alto), in genere espressa come nome del metodo in cui l'esecuzione è attualmente interrotta.
 
-## <a name="remarks"></a>Note
- Questa struttura viene compilata tramite una chiamata per il [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) (metodo). Le informazioni restituite così vengano in genere utilizzate per il popolamento di **thread** finestra.
+## <a name="remarks"></a>Osservazioni
+ Questa struttura viene compilata da una chiamata al [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) metodo. Le informazioni restituite vengono in genere utilizzate per popolare la finestra **Thread.**
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

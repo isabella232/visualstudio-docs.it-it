@@ -1,20 +1,20 @@
 ---
-title: Elemento TargetPlatformName (modelli di Visual Studio) | Microsoft Docs
+title: Elemento TargetPlatformName (modelli di Visual Studio) Documenti Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f22fb5d94b0f8c5147f014abdb973a23b1b9e24e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718914"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699271"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>Elemento TargetPlatformName (Modelli di Visual Studio)
 Specifica la piattaforma a cui è destinato il modello di progetto. Questo elemento viene usato per specificare per creare app di [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] viene usato un modello di progetto.
@@ -31,7 +31,7 @@ Specifica la piattaforma a cui è destinato il modello di progetto. Questo eleme
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -48,7 +48,7 @@ Specifica la piattaforma a cui è destinato il modello di progetto. Questo eleme
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Il testo deve essere **Windows**.
 
 ## <a name="example"></a>Esempio

@@ -1,25 +1,25 @@
 ---
-title: Elemento GuidSymbol | Microsoft Docs
+title: Elemento GuidSymbol . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, GuidSymbol
 - GuidSymbol element (VSCT XML schema)
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bebcec561f915bd8223d0adc183293a1760c261d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59068a9ac9f952b5370681b3684ce4234354afc9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342217"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711124"
 ---
-# <a name="guidsymbol-element"></a>Elemento GuidSymbol
-Il `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta un menu, gruppo o comando. L'ID proviene da un' `IDSymbol` elemento il `GuidSymbol` elemento. Il `GuidSymbol` elemento ha un `name` attributo che fornisce un nome descrittivo per il GUID, contenuta nel `value` attributo.
+# <a name="guidsymbol-element"></a>GuidSymbol (elemento)
+L'elemento `GuidSymbol` contiene il GUID della coppia GUID:ID che rappresenta un menu, un gruppo o un comando. L'ID proviene da un `IDSymbol` elemento nell'elemento. `GuidSymbol` L'elemento `GuidSymbol` `name` dispone di un attributo che fornisce un `value` nome descrittivo per il GUID, che è contenuto nell'attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,22 +38,22 @@ Il `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta 
 |Attributo|Descrizione|
 |---------------|-----------------|
 |name|Obbligatorio. Nome del simbolo GUID.|
-|predefinito|Obbligatorio. GUID del simbolo GUID.|
+|Valore|Obbligatorio. GUID del simbolo GUID.|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento IDSymbol](../extensibility/idsymbol-element.md)|Contiene l'ID della coppia GUID: ID che rappresenta un menu, gruppo o comando.|
+|[IdSymbol (elemento)](../extensibility/idsymbol-element.md)|Contiene l'ID della coppia GUID:ID che rappresenta un menu, un gruppo o un comando.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Symbols](../extensibility/symbols-element.md)|I gruppi `GuidSymbol` elementi in un *vsct* file.|
+|[Elemento Symbols](../extensibility/symbols-element.md)|Raggruppa `GuidSymbol` gli elementi in un file *con estensione vsct.*|
 
-## <a name="remarks"></a>Note
- In genere, un *vsct* file contiene tre `GuidSymbol` elementi nel relativo `Symbols` sezione, uno per il pacchetto stesso, uno per il set di comandi (la raccolta di menu, gruppi e i comandi che rende disponibile il pacchetto), e uno per le mappe di bit che forniscono le icone per i pulsanti e altri componenti visivi. Ogni `IDSymbol` elemento in un determinato `GuidSymbol` elemento deve avere un valore univoco `value`. Tuttavia, `IDSymbol` possono essere presenti in un pacchetto di elementi che hanno valori identici purché hanno elementi padre diversi.
+## <a name="remarks"></a>Osservazioni
+ In genere, un file `GuidSymbol` *vsct* `Symbols` contiene tre elementi nella relativa sezione, uno per il pacchetto stesso, uno per il set di comandi (la raccolta di menu, gruppi e comandi resi disponibili dal pacchetto) e uno per le bitmap che forniscono icone per i pulsanti e altri componenti visivi. Ogni `IDSymbol` elemento in `GuidSymbol` un determinato `value`elemento deve avere un oggetto . Tuttavia, `IDSymbol` gli elementi con valori identici possono esistere in un pacchetto, purché abbiano elementi padre diversi.
 
 ## <a name="see-also"></a>Vedere anche
-- [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

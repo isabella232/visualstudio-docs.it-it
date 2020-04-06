@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetName | Microsoft Docs
+title: Proprietà IDebugDocument2::GetName . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31eddcc07adc181e179c3f3edba669fff85fa565
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2af7f4dc01ee3a2fe3fb5026602a0b5d4f766b17
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310274"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731966"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 Ottiene il nome del documento in uno dei diversi formati.
@@ -43,16 +43,16 @@ int GetName( 
 
 ## <a name="parameters"></a>Parametri
 `gnType`\
-[in] Un valore compreso il [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumerazione che determina il tipo del nome da restituire.
+[in] Valore dell'enumerazione [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) che determina il tipo di nome da restituire.
 
 `pbstrFileName`\
-[out] Restituisce una stringa contenente il nome del documento.
+[fuori] Restituisce una stringa contenente il nome del documento.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo può, ad esempio, restituire il nome del documento come un titolo o come nome del file o persino parte di un nome file.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo può, ad esempio, restituire il nome del documento come titolo o come nome file o anche parte di un nome di file.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

@@ -1,47 +1,47 @@
 ---
-title: Architettura di tipi di progetto | Microsoft Docs
+title: Architettura dei tipi di progetto Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], architecture
 ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d77524097509c45c23d6a3d9cc147e5aba6691d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e53929b1ec2ed9c73191bf16f1cedc84a53b58f2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318890"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706313"
 ---
 # <a name="project-types-architecture"></a>Architettura dei tipi di progetto
-In questa sezione contiene informazioni dettagliate sull'architettura dei tipi di progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+In questa sezione sono contenute informazioni [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]dettagliate sull'architettura dei tipi di progetto in .
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 - [Elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md)
 
- Elenca i servizi che può utilizzare un tipo di progetto e le interfacce che deve implementare.
+ Elenca i servizi che un tipo di progetto può utilizzare e le interfacce che deve implementare.
 
 - [Componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)
 
- Descrive le interfacce di tipi di progetto devono implementare sia possono implementare facoltativamente per fornire funzionalità aggiuntive.
+ Vengono descritte le interfacce che i tipi di progetto devono implementare e, facoltativamente, possono implementare per fornire funzionalità aggiuntive.
 
 - [Quando creare tipi di progetto](../../extensibility/internals/when-to-create-project-types.md)
 
- Consente di decidere quando è necessario creare un progetto di tipo e quando è possibile usare un altro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità di estendibilità, ad esempio editor e i pacchetti VSPackage per ottenere lo stesso scopo.
+ Consente di decidere quando è necessario creare un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tipo di progetto e quando è possibile utilizzare un'altra funzionalità di estendibilità, ad esempio VSPackage ed editor per raggiungere lo stesso obiettivo.
 
 - [Gerarchie e selezione](../../extensibility/internals/hierarchies-and-selection.md)
 
- Viene descritto come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Usa le gerarchie e il contesto di selezione per offrire un'esperienza utente coerente e semplificata.
+ Viene descritto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] come utilizzare le gerarchie e il contesto di selezione per fornire un'esperienza utente coerente e semplificata.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Sottotipi di progetto](../../extensibility/internals/project-subtypes.md)
 
- Viene spiegato come sottotipi di progetto consentono di personalizzare il comportamento dei sistemi di progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+ Viene illustrato come i sottotipi di progetto consentono [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]di personalizzare il comportamento dei sistemi di progetto di e .
 
 - [Tipi di progetto](../../extensibility/internals/project-types.md)
 
- Viene fornita una panoramica di progetti come blocchi predefiniti di base del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Vengono forniti collegamenti ad argomenti aggiuntivi che illustrano come progetti consentono di controllare la creazione e compilazione di codice.
+ Fornisce una panoramica dei progetti come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] blocchi predefiniti di base dell'ambiente di sviluppo integrato (IDE). Vengono forniti collegamenti ad argomenti aggiuntivi che illustrano come i progetti controllano la compilazione e la compilazione del codice.

@@ -1,5 +1,5 @@
 ---
-title: Nascosto elemento (modelli di Visual Studio) | Microsoft Docs
+title: Elemento nascosto (modelli di Visual Studio) . Documenti Microsoft
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341047"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711115"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Elemento Hidden (modelli di Visual Studio)
+# <a name="hidden-element-visual-studio-templates"></a>Elemento nascosto (modelli di Visual Studio)Hidden element (Visual Studio templates)
 
-Specifica se il modello viene visualizzato in uno nuovo progetto oppure **Aggiungi nuovo elemento** finestre di dialogo.
+Specifica se il modello viene visualizzato nelle finestre di dialogo Nuovo progetto o **Aggiungi nuovo elemento.**
 
 ```xml
 <VSTemplate>
@@ -43,11 +43,11 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 
 ### <a name="attributes"></a>Attributi
 
-Nessuno.
+No.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-Nessuno.
+No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -59,17 +59,17 @@ Nessuno.
 
 È necessario specificare un valore di testo.
 
-Il testo deve essere `true` o `false`, che indica se il modello verrà visualizzato nel **nuovo progetto** o **Aggiungi nuovo elemento** finestre di dialogo.
+Il testo deve `true` `false`essere o , che indica se il modello verrà visualizzato o meno nelle finestre di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento.**
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 `Hidden` è un elemento facoltativo.
 
-Se non specificato, nessun altro elemento figlio del `TemplateData` elemento sono necessari.
+Se specificato, non sono `TemplateData` necessari altri elementi figlio dell'elemento.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono illustrati i metadati per un C# modello.
+Nell'esempio seguente vengono illustrati i metadati per un modello di C.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,5 +98,5 @@ Nell'esempio seguente vengono illustrati i metadati per un C# modello.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimento allo schema di modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Informazioni di riferimento sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2 | Microsoft Docs
+title: Proprietà IDebugProgram2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2 interface
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c79ec83adcb766bd7c6de3d31a2ae790710a838
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 150746197be4945b012717bef08e18ea57168177
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348961"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722728"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Questa interfaccia rappresenta un programma in esecuzione in un processo.
@@ -29,37 +29,37 @@ IDebugProgram2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) e un fornitore di porte personalizzate implementano questa interfaccia per rappresentare un programma in un processo. Gestore di sessione di debug (SDM) implementa anche questa interfaccia per fornire informazioni al [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md).
+ Il motore di debug (DE) e un fornitore di porta personalizzato implementano questa interfaccia per rappresentare un programma in un processo. Il gestore di debug della sessione (SDM) implementa anche questa interfaccia per fornire informazioni a [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md).
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Il [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) evento restituisce questa interfaccia per un nuovo programma. Questa interfaccia viene inoltre utilizzata come parametro per molti metodi in più interfacce.
+ L'evento [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) restituisce questa interfaccia per un nuovo programma. Questa interfaccia viene utilizzata anche come parametro per molti metodi su più interfacce.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IDebugProgram2`.
+ Nella tabella seguente vengono `IDebugProgram2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Enumera i thread che sono in esecuzione in questo programma.|
+|[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Enumera i thread in esecuzione in questo programma.|
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Ottiene il nome del programma.|
-|[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Ottiene il processo che questo programma è in esecuzione.|
-|[Terminate](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Termina il programma.|
-|[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Collega a questo programma.|
-|[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Determina se è possibile scollegare un motore di debug (DE) dal programma.|
-|[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Scollega debugger da questo programma.|
-|[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Ottiene un identificatore univoco globale per il programma.|
+|[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Ottiene il processo in cui è in esecuzione il programma.|
+|[Terminare](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Termina questo programma.|
+|[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Si collega a questo programma.|
+|[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Determina se un motore di debug (DE) può disconnettersi dal programma.|
+|[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Scollega il debugger da questo programma.|
+|[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Ottiene un identificatore univoco globale per questo programma.|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|Ottiene le proprietà del programma.|
-|[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Continua l'esecuzione di questo programma da uno stato arrestato. Qualsiasi stato di esecuzione precedente viene cancellata.|
-|[Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|Continua l'esecuzione di questo programma da uno stato arrestato. Qualsiasi stato di esecuzione precedente viene mantenuta.|
-|[Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)|Esegue un passaggio.|
-|[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)|Le richieste che questo programma di arresta l'esecuzione successiva ora una parte del codice di esecuzioni di thread.|
-|[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)|Ottiene il nome e l'identificatore del motore di debug (DE) eseguire il programma.|
-|[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)|Enumera i contesti di codice per una determinata posizione nel file di origine.|
-|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)|Ottiene i byte di memoria per il programma.|
-|[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)|Ottiene il flusso disassembly per questo programma o parte di questo programma.|
-|[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)|Enumera i moduli che questo programma è stata caricata ed è in esecuzione.|
-|[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)|Ottiene l'aggiornamento di modifica e Continuazione per il programma.<br /><br /> Un motore di debug personalizzato può neimplementuje metodu questo metodo (l'app deve sempre restituire `E_NOTIMPL`).|
-|[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|Enumera i percorsi del codice di questo programma.|
-|[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|Scrive un dump di un file.|
+|[Eseguire](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Continua l'esecuzione del programma da uno stato arrestato. Qualsiasi stato di esecuzione precedente viene cancellato.|
+|[Continuare](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|Continua l'esecuzione del programma da uno stato arrestato. Qualsiasi stato di esecuzione precedente viene mantenuto.|
+|[Passaggio](../../../extensibility/debugger/reference/idebugprogram2-step.md)|Esegue un passaggio.|
+|[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)|Richiede che il programma interrompa l'esecuzione alla successiva esecuzione del codice di uno dei relativi thread.|
+|[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)|Ottiene il nome e l'identificatore del motore di debug (DE) che esegue il programma.|
+|[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)|Enumera i contesti di codice per una determinata posizione in un file di origine.|
+|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)|Ottiene i byte di memoria per questo programma.|
+|[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)|Ottiene il flusso di disassembly per questo programma o parte di questo programma.|
+|[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)|Enumera i moduli caricati dal programma.|
+|[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)|Ottiene l'aggiornamento di Modifica e continuazione (ENC) per questo programma.<br /><br /> Un motore di debug personalizzato non implementa `E_NOTIMPL`questo metodo (deve sempre restituire ).|
+|[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|Enumera i percorsi di codice di questo programma.|
+|[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|Scrive un dump in un file.|
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h
@@ -68,13 +68,13 @@ IDebugProgram2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Un programma è un contenitore di thread in esecuzione in una particolare architettura di runtime, mentre un processo è costituito da uno o più programmi.
 
 ## <a name="see-also"></a>Vedere anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
-- [avanti](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
+- [Avanti](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
 - [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)

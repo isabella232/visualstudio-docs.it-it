@@ -1,24 +1,24 @@
 ---
-title: IDebugDocumentPositionOffset2::GetRange | Microsoft Docs
+title: IDebugDocumentPositionOffset2::GetRange . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2::GetRange
 ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c667ffa597481121de0467c9ab4b07e4bf4d607
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fd305b6506471a40de90fbd954e54461d2a139d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333380"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731621"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 Recupera l'intervallo per la posizione corrente del documento.
@@ -41,23 +41,23 @@ public int GetRange(
 
 ## <a name="parameters"></a>Parametri
 `pdwBegOffset`\
-[in, out] Offset per la posizione iniziale dell'intervallo. Impostare questo parametro su un valore null se questa informazione non è necessaria.
+[in, out] Offset per la posizione iniziale dell'intervallo. Impostare questo parametro su un valore null se queste informazioni non sono necessarie.
 
 `pdwEndOffset`\
-[in, out] Offset per la posizione finale dell'intervallo. Impostare questo parametro su un valore null se questa informazione non è necessaria.
+[in, out] Offset per la posizione finale dell'intervallo. Impostare questo parametro su un valore null se queste informazioni non sono necessarie.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- L'intervallo specificato in una posizione di documento per un punto di interruzione di posizione viene utilizzato dal motore di debug (DE) per la ricerca con un'istruzione che effettivamente contribuisce codice. Si consideri il codice di esempio seguente:
+## <a name="remarks"></a>Osservazioni
+ L'intervallo specificato in una posizione di documento per un punto di interruzione di posizione viene utilizzato dal motore di debug (DE) per cercare in anticipo un'istruzione che contribuisce effettivamente al codice. Si consideri il codice di esempio seguente:
 
 ```
 Line 5: // comment
 Line 6: x = 1;
 ```
 
- Riga 5 non contribuisce alcun codice per il programma sottoposto a debug. Se il debugger che consente di impostare il punto di interruzione alla riga 5 desidera DE per eseguire la ricerca di un determinato periodo per la prima riga che ha reso disponibile codice, il debugger di specificare un intervallo che include le righe aggiuntive candidato in cui un punto di interruzione potrebbe essere correttamente posizionato. La Germania verrebbe quindi eseguita una ricerca in avanti tramite queste righe fino a quando non trovata una riga che può accettare un punto di interruzione.
+ Riga 5 non fornisce codice al programma in fase di debug. Se il debugger che imposta il punto di interruzione nella riga 5 desidera che il DE per cercare in avanti una certa quantità per la prima riga che contribuisce al codice, il debugger specifica un intervallo che include ulteriori righe candidate in cui un punto di interruzione potrebbe essere posizionato correttamente. Il DE sarebbe quindi cercare in avanti attraverso tali righe fino a trovare una riga che potrebbe accettare un punto di interruzione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)

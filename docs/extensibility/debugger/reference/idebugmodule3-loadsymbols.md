@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::LoadSymbols | Microsoft Docs
+title: IDebugModule3::LoadSymbols Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::LoadSymbols
 ms.assetid: 7548c8c1-cbc6-48aa-a845-19058d4a85bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1b23e7b1ae837087db198795ffeda6a5827f045
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c61339305200acc9a6c572a1a96595dc4cb6f50
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323849"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726784"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
 Carica i simboli per il modulo corrente.
@@ -38,12 +38,12 @@ int LoadSymbols();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Se il metodo ha esito positivo, restituisce `S_OK`. In caso contrario, restituisce un codice di errore.
+ Se il metodo ha esito positivo, viene restituito `S_OK`. Se ha esito negativo, viene restituito un codice di errore.
 
-## <a name="remarks"></a>Note
- Questo metodo carica i simboli dal percorso di ricerca corrente (che può essere modificata chiamando il [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) (metodo)).
+## <a name="remarks"></a>Osservazioni
+ Questo metodo carica i simboli dal percorso di ricerca corrente (che possono essere modificati chiamando il [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) metodo).
 
- Questo metodo è preferibile tramite il [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) (metodo).
+ Questo metodo è preferibile al [metodo ReloadSymbols_Deprecated.](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

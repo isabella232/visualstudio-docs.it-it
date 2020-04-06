@@ -1,23 +1,23 @@
 ---
-title: Strumenti dei temi di colore | Microsoft Docs
+title: Strumenti di tema di colore Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5ddf0121631525831f5f4e6971571321700b38b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50d45a7757771474cf2fd7c46a016e5ea685998e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338681"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709734"
 ---
-# <a name="color-theme-tools"></a>Strumenti di tema colori
-Visual Studio SDK offre diversi strumenti che consentono di creare e gestire i temi di colore.
+# <a name="color-theme-tools"></a>Strumenti tema colore
+Visual Studio SDK fornisce diversi strumenti che consentono di creare e gestire i temi di colore.
 
-- Il [dell'Editor dei colori VSIX](../../extensibility/internals/vsix-color-editor.md) strumento è possibile creare e modificare i colori personalizzati per Visual Studio.
+- Lo strumento Editor colori VSIX consente di creare e modificare colori personalizzati per Visual Studio.The [VSIX Color Editor](../../extensibility/internals/vsix-color-editor.md) tool can create and edit custom colors for Visual Studio.
 
-- Il [compilatore dei colori VSIX](../../extensibility/internals/vsix-color-compiler.md) lo strumento converte il tema di Visual Studio esistente *XML* di file in *pkgdef* file per l'estensione.
+- Lo strumento [VSIX Color Compiler](../../extensibility/internals/vsix-color-compiler.md) converte i file *XML* del tema di Visual Studio esistenti in file con *estensione pkgdef* per l'estensione.

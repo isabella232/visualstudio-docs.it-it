@@ -1,5 +1,5 @@
 ---
-title: Esposizione di tipi di finestre di progettazione visiva | Microsoft Docs
+title: Esposizione di tipi alle finestre di progettazione visiva . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,43 +7,43 @@ helpviewer_keywords:
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04f1c3608159ba305646dc9c39a98d92d7571073
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9067f88b4bf1334e23a548bc6a2cbeb3eac6ad33
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332261"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708430"
 ---
-# <a name="expose-types-to-visual-designers"></a>Esporre i tipi di finestre di progettazione visiva
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve avere accesso alle definizioni di classe e il tipo in fase di progettazione per visualizzare una finestra di progettazione. Le classi vengono caricate da un set predefinito di assembly che includono il set completo delle dipendenze del progetto corrente (riferimenti e le relative dipendenze). Potrebbe essere necessario anche per finestre di progettazione visiva per accedere alle classi e tipi definiti nei file generati da strumenti personalizzati.
+# <a name="expose-types-to-visual-designers"></a>Esporre i tipi alle finestre di progettazione visivaExpose types to visual designers
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Deve avere accesso alle definizioni di classe e tipo in fase di progettazione per visualizzare una finestra di progettazione visiva. Le classi vengono caricate da un set predefinito di assembly che includono il set di dipendenze completo del progetto corrente (riferimenti più le relative dipendenze). Potrebbe anche essere necessario per le finestre di progettazione visiva accedere a classi e tipi definiti nei file generati dagli strumenti personalizzati.
 
- Il [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] sistemi di progetto forniscono il supporto per l'accesso alle classi generate e i tipi tramite portatile temporaneo file eseguibili (file PE temporanei). Qualsiasi file generati da uno strumento personalizzato può essere compilato in un assembly temporaneo in modo che i tipi possono essere caricati da tali assembly ed esposte nelle finestre di progettazione. L'output di ogni strumento personalizzato viene compilato in un file PE temporaneo separato e l'esito positivo o negativo di questa compilazione temporanea dipende solo se il file generato può essere compilato. Anche se un progetto non venga compilato nel suo complesso, i singoli file PE temporaneo potrebbero essere ancora disponibili nelle finestre di progettazione.
+ I [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] sistemi e di progetto forniscono il supporto per l'accesso a classi e tipi generati tramite file eseguibili portabili temporanei (PE temporanei). Qualsiasi file generato da uno strumento personalizzato può essere compilato in un assembly temporaneo in modo che i tipi possano essere caricati da tali assembly ed esposti alle finestre di progettazione. L'output di ogni strumento personalizzato viene compilato in un file PE temporaneo separato e l'esito positivo o negativo di questa compilazione temporanea dipende solo dalla possibilità o meno che il file generato possa essere compilato o meno. Anche se un progetto può non essere compilato nel suo complesso, i singoli PE temporanei potrebbero essere ancora disponibili per i progettisti.
 
- Il sistema di progetto fornisce supporto completo per tenere traccia delle modifiche al file di output di uno strumento personalizzato, purché queste modifiche sono il risultato dell'esecuzione dello strumento personalizzato. Ogni volta che viene eseguito lo strumento personalizzato, viene generato un nuovo file PE temporaneo, e le notifiche appropriate vengono inviate alle finestre di progettazione.
+ Il sistema del progetto fornisce il supporto completo per tenere traccia delle modifiche apportate al file di output di uno strumento personalizzato, a condizione che tali modifiche siano il risultato dell'esecuzione dello strumento personalizzato. Ogni volta che viene eseguito lo strumento personalizzato, viene generato un nuovo file PE temporaneo e vengono inviate le notifiche appropriate alle finestre di progettazione.
 
 > [!NOTE]
-> Perché file di generazione eseguibile di programma temporaneo avviene in background, non vengono segnalati errori all'utente se la compilazione ha esito negativo.
+> Poiché il file di generazione eseguibile del programma temporaneo si verifica in background, non vengono segnalati errori all'utente se la compilazione non riesce.
 
- Gli strumenti personalizzati che sfruttano i vantaggi del supporto PE temporaneo devono rispettare le regole seguenti:
+ Gli strumenti personalizzati che sfruttano il supporto PE temporaneo devono seguire le seguenti regole:
 
-- **GeneratesDesignTimeSource** deve essere impostata su 1 nel Registro di sistema.
+- **GeneratesDesignTimeSource** deve essere impostato su 1 nel Registro di sistema.
 
-     Nessuna compilazione file eseguibile di programma viene eseguito senza questa impostazione.
+     Nessuna compilazione di file eseguibile di programma avviene senza questa impostazione.
 
-- Il codice generato deve essere nella stessa lingua come l'impostazione di progetti globale.
+- Il codice generato deve essere nella stessa lingua dell'impostazione globale del progetto.
 
-     Indipendentemente dal report che lo strumento personalizzato come l'estensione nella richiesta viene compilato il file PE temporaneo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> purché **GeneratesDesignTimeSource** è impostato su 1 nel Registro di sistema. L'estensione non deve essere *vb*, *cs*, o *JLS*; può essere qualsiasi estensione.
+     Il file PE temporaneo viene compilato indipendentemente da ciò che lo strumento personalizzato segnala come estensione richiesta a condizione <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> che **GeneratesDesignTimeSource** sia impostato su 1 nel Registro di sistema. Non è necessario che l'estensione sia *vb*, *cs*o *jsl*; può essere qualsiasi estensione.
 
-- Il codice generato dallo strumento personalizzato deve essere valido e deve essere compilato in proprio utilizzando solo il set di riferimenti presenti nel progetto al momento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> termina l'esecuzione.
+- Il codice generato dallo strumento personalizzato deve essere valido e deve essere compilato da solo utilizzando <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> solo il set di riferimenti presenti nel progetto al termine dell'esecuzione.
 
-     Quando viene compilato un file PE temporaneo, l'unico file di origine fornito al compilatore è l'output dello strumento personalizzato. Pertanto, uno strumento personalizzato che usa un file PE temporaneo necessario generare i file di output che possono essere compilati indipendentemente da altri file nel progetto.
+     Quando viene compilato un file PE temporaneo, l'unico file di origine fornito al compilatore è l'output dello strumento personalizzato. Pertanto, uno strumento personalizzato che utilizza un file PE temporaneo deve generare file di output che possono essere compilati indipendentemente da altri file nel progetto.
 
 ## <a name="see-also"></a>Vedere anche
 - [Introduzione all'oggetto BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
-- [Implementare generatori di file singoli](../../extensibility/internals/implementing-single-file-generators.md)
-- [Registrare i generatori di file singolo](../../extensibility/internals/registering-single-file-generators.md)
+- [Implementare generatori a file singolo](../../extensibility/internals/implementing-single-file-generators.md)
+- [Registrare generatori a file singolo](../../extensibility/internals/registering-single-file-generators.md)

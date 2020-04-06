@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS | Microsoft Docs
+title: PROVIDER_FIELDS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 923ae0bc3ca03dabee7b5d4bca74d24c7f7d5815
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329365"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713796"
 ---
-# <a name="providerfields"></a>PROVIDER_FIELDS
-Specifica le proprietà associate a un provider di programma.
+# <a name="provider_fields"></a>PROVIDER_FIELDS
+Specifica le proprietà associate a un provider di programmi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,10 +49,10 @@ public enum enum_PROVIDER_FIELDS {
  `PFIELD_IS_DEBUGGER_PRESENT`\
  Il `fIsDebuggerPresent` campo è valido.
 
-## <a name="remarks"></a>Note
- Questi valori vengono restituiti nel `Fields` membro della [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struttura per indicare quali campi della struttura sono stati compilati in modo esplicito.
+## <a name="remarks"></a>Osservazioni
+ Questi valori vengono restituiti nel `Fields` membro della struttura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) per indicare quali campi della struttura sono stati compilati in modo esplicito.
 
- Questi valori possono essere combinati con un bit per bit `OR`.
+ Questi valori possono essere combinati `OR`con un file bit per bit.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

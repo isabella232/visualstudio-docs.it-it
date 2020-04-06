@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS | Microsoft Docs
+title: METODO PARSEFLAGS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PARSEFLAGS enumeration
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6123c6438defff596351fff3d1ba31ea52a19f28
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc70fdd9fe1279e4d419a422b970eb3d3b07c65
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349929"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714112"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-Specifica la modalità di analisi dell'espressione.
+Specifica come analizzare un'espressione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,13 +49,13 @@ public enum enum_PARSEFLAGS { 
  Indica che l'espressione non è un'istruzione.
 
  `PARSE_FUNCTION_AS_ADDRESS`\
- Indica che l'espressione deve essere analizzato (e valutate in un secondo momento) come un indirizzo.
+ Indica che l'espressione deve essere analizzata (e successivamente valutata) come indirizzo.
 
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
- Indica che l'espressione viene analizzato durante la fase di progettazione (ovvero, quando una finestra di progettazione è aperto).
+ Indica che l'espressione viene analizzata durante la fase di progettazione, ovvero quando una finestra di progettazione è aperta.
 
-## <a name="remarks"></a>Note
- Passato come parametro per il [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) e [analizzare](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metodi.
+## <a name="remarks"></a>Osservazioni
+ Passato come parametro per il [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) e [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metodi.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h
@@ -67,4 +67,4 @@ public enum enum_PARSEFLAGS { 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
-- [Analisi](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+- [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
