@@ -1,58 +1,58 @@
 ---
-title: Modalità operative | Microsoft Docs
+title: Modalità operative Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, modes
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81011a6962bc874188aa04b6b1bb8ea538f3db49
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 027152b2b2fc18b509a687220e5d963ea1b7e721
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351528"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738288"
 ---
 # <a name="operational-modes"></a>Modalità operative
-Sono disponibili tre modalità in cui può operare nell'IDE, come indicato di seguito:
+Esistono tre modalità in cui l'IDE può funzionare, come indicato di seguito:There are three modes in which the IDE can operate, as follows:
 
-- [Modalità progettazione](#vsconoperationalmodesanchor1)
+- [Modalità di progettazione](#vsconoperationalmodesanchor1)
 
 - [Modalità di esecuzione](#vsconoperationalmodesanchor2)
 
 - [Modalità di interruzione](#vsconoperationalmodesanchor3)
 
-  Come avviene la transizione tra le modalità del motore di debug personalizzato (DE) è una decisione di implementazione che è necessario avere familiarità con i meccanismi di transizione. Il DE potrebbe o non può implementare direttamente queste modalità. Queste modalità sono davvero debug pacchetto modalità cui passare basate sulle azione dell'utente o gli eventi dal DE. Ad esempio, la transizione dalla modalità di esecuzione alla modalità di interruzione viene attivata da un evento di arresto dal DE. La transizione dall'interruzione di eseguire in modalità o in modalità di passaggio è eseguirlo è l'utente che esegue le operazioni, ad esempio Esegui o passaggio. Per altre informazioni sulle transizioni DE, vedere [controllo di esecuzione](../../extensibility/debugger/control-of-execution.md).
+  Il modo in cui il motore di debug personalizzato (DE) esegue la transizione tra queste modalità è una decisione di implementazione che richiede di avere familiarità con i meccanismi di transizione. Il DE può o non può implementare direttamente queste modalità. Queste modalità sono davvero le modalità di pacchetto di debug che passano in base all'azione dell'utente o eventi dal DE. Ad esempio, la transizione dalla modalità di esecuzione alla modalità di interruzione viene avviata da un evento di arresto dal DE. La transizione dalla modalità di interruzione alla modalità di esecuzione o alla modalità di passaggio viene avviata dall'utente che esegue operazioni quali Step o Execute.The transition from break to either run mode or step mode is stigated by the user performing operations such as Step or Execute. Per ulteriori informazioni sulle transizioni DE, vedere [Controllo dell'esecuzione](../../extensibility/debugger/control-of-execution.md).
 
-## <a name="vsconoperationalmodesanchor1"></a> Modalità progettazione
- Modalità di progettazione è lo stato nonrunning del debug di Visual Studio, durante i quali è possibile impostare le funzionalità nell'applicazione di debug.
+## <a name="design-mode"></a><a name="vsconoperationalmodesanchor1"></a>Modalità di progettazione
+ La modalità di progettazione è lo stato non in esecuzione del debug di Visual Studio, durante il quale è possibile impostare le funzionalità di debug nell'applicazione.
 
- Solo debug alcune funzionalità vengono usate durante la modalità di progettazione. Uno sviluppatore può scegliere di impostare punti di interruzione o creare espressioni di controllo. Il DE viene mai caricato o chiamato mentre l'IDE è in modalità progettazione. L'interazione con il rilevamento viene eseguita durante l'interruzione e l'esecuzione solo con le modalità.
+ Durante la modalità progettazione vengono utilizzate solo alcune funzionalità di debug. Uno sviluppatore può scegliere di impostare punti di interruzione o creare espressioni di controllo. Il DE non viene mai caricato o chiamato mentre l'IDE è in modalità progettazione. L'interazione con il DE avviene solo durante le modalità di esecuzione e interruzione.
 
-## <a name="vsconoperationalmodesanchor2"></a> Modalità di esecuzione
- Modalità di esecuzione si verifica quando un programma viene eseguito in una sessione di debug nell'IDE. L'applicazione viene eseguita fino alla terminazione, fino a quando non viene raggiunto un punto di interruzione o fino a quando non viene generata un'eccezione. Quando l'applicazione viene eseguita al completamento, le transizioni DE in modalità progettazione. Quando viene raggiunto un punto di interruzione o viene generata un'eccezione, modalità di interruzione passa la Germania.
+## <a name="run-mode"></a><a name="vsconoperationalmodesanchor2"></a>Modalità di esecuzione
+ La modalità di esecuzione si verifica quando un programma viene eseguito in una sessione di debug nell'IDE. L'applicazione viene eseguita fino alla terminazione, fino a quando non viene raggiunto un punto di interruzione o fino a quando non viene generata un'eccezione. Quando l'applicazione viene eseguita alla terminazione, il DE passa alla modalità di progettazione. Quando viene raggiunto un punto di interruzione o viene generata un'eccezione, il DE passa alla modalità di interruzione.
 
-## <a name="vsconoperationalmodesanchor3"></a> Modalità di interruzione
- Modalità di interruzione si verifica quando viene sospesa l'esecuzione del programma di debug. Modalità di interruzione offre allo sviluppatore dell'applicazione al momento dell'interruzione di uno snapshot e consente allo sviluppatore di analizzare lo stato dell'applicazione e modificare la modalità di esecuzione dell'applicazione. Lo sviluppatore può visualizzare e modificare il codice, esaminare o modificare i dati, riavviare l'applicazione, terminare l'esecuzione o continuare l'esecuzione dallo stesso punto.
+## <a name="break-mode"></a><a name="vsconoperationalmodesanchor3"></a>Modalità di interruzione
+ La modalità di interruzione si verifica quando l'esecuzione del programma di debug viene sospesa. La modalità di interruzione offre allo sviluppatore uno snapshot dell'applicazione al momento dell'interruzione e consente allo sviluppatore di analizzare lo stato dell'applicazione e modificare la modalità di esecuzione dell'applicazione. Lo sviluppatore può visualizzare e modificare il codice, esaminare o modificare i dati, riavviare l'applicazione, terminare l'esecuzione o continuare l'esecuzione dallo stesso punto.
 
- Modalità di interruzione viene immesso quando la Germania invia un evento di arresto sincrono. Eventi di arresto sincrono, denominati anche gli eventi di arresto, inviare una notifica di gestore di sessione di debug (SDM) e l'IDE in cui l'applicazione in fase di debug ha interrotto l'esecuzione di codice. Il [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) e [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) interfacce sono esempi di eventi di arresto.
+ La modalità di interruzione viene immessa quando il DE invia un evento di arresto sincrono. Gli eventi di arresto sincrono, denominati anche eventi di arresto, notificano al gestore di debug della sessione (SDM) e all'IDE che l'applicazione sottoposta a debug ha interrotto l'esecuzione del codice. Le interfacce [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) e [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sono esempi di interruzione degli eventi.
 
- Gli eventi di arresto proseguono da una chiamata a uno dei metodi seguenti, eseguire la transizione dalla modalità di interruzione per l'esecuzione o in modalità di passaggio nel debugger:
+ L'arresto degli eventi continua da una chiamata a uno dei metodi seguenti, che consentono al debugger di eseguire la modalità di interruzione alla modalità di interruzione o alla modalità istruzione/passaggio:
 
-- [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)
+- [Eseguire](../../extensibility/debugger/reference/idebugprocess3-execute.md)
 
-- [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)
+- [Passaggio](../../extensibility/debugger/reference/idebugprocess3-step.md)
 
-- [Continue](../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [Continuare](../../extensibility/debugger/reference/idebugprocess3-continue.md)
 
-### <a name="vsconoperationalmodesanchor4"></a> Modalità di passaggio
- Modalità di passaggio si verifica quando il programma di passaggi alla riga successiva del codice, nel, in o da una funzione. Un passaggio viene eseguito chiamando il metodo [passaggio](../../extensibility/debugger/reference/idebugprocess3-step.md). Questo metodo richiede `DWORD`che specificano il [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) e [STEPKIND](../../extensibility/debugger/reference/stepkind.md) enumerazioni come parametri di input.
+### <a name="step-mode"></a><a name="vsconoperationalmodesanchor4"></a>Modalità passo
+ La modalità passo a passo si verifica quando il programma passare alla riga di codice successiva, o in, sopra o fuori da una funzione. Un passaggio viene eseguito chiamando il metodo [Step](../../extensibility/debugger/reference/idebugprocess3-step.md). Questo metodo `DWORD`richiede s che specificano le enumerazioni [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) e [STEPKIND](../../extensibility/debugger/reference/stepkind.md) come parametri di input.
 
- Quando il programma correttamente i passaggi alla riga successiva del codice o in una funzione o viene eseguito fino al cursore o a un punto di interruzione di set, la Germania sistema passa automaticamente alla modalità di interruzione.
+ Quando il programma passa correttamente alla riga di codice successiva o in una funzione o viene eseguito al cursore o a un punto di interruzione impostato, il DE passa automaticamente alla modalità di interruzione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Controllo dell'esecuzione](../../extensibility/debugger/control-of-execution.md)

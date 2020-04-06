@@ -1,24 +1,24 @@
 ---
-title: IDebugStopCompleteEvent2 | Microsoft Docs
+title: IDebugStopCompleteEvent2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d080b3073ffc13b90870b40a16a353634f4aa0cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: da3eb33d76f55310e6428a34dd09cabbc271aa68
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352014"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719451"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
-Il motore di debug (DE) può inviare questo evento facoltativo da gestore di sessione di debug (SDM) quando un programma è stato arrestato.
+Il motore di debug (DE) può inviare questo evento facoltativo al gestore di sessione di debug (SDM) quando un programma è stato arrestato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -28,11 +28,11 @@ IDebugStopCompleteEvent2 : IUnknown
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
 
-Questa interfaccia è stato introdotto con Visual Studio 2005. Arresto asincrono non supporta le versioni precedenti.
+Questa interfaccia è stata introdotta con Visual Studio 2005. Le versioni precedenti non supportavano l'arresto asincrono.
 
-- [Arrestare](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) viene chiamato da SDM negli scenari a più processi o multi-programma. Quando un programma invia un evento di arresto per il modello SDM, il modello SDM richiede altri programmi per arrestare, troppo.
+- [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) viene chiamato dal modello SDM in scenari multiprocesso o multiprogramma. Quando un programma invia un evento di arresto al modello SDM, anche il modello SDM richiede l'arresto di altri programmi.
 
-Arresto viene utilizzato per indicare in modo asincrono il modello SDM che un programma è stato arrestato. Per informare il modello SDM è utile per un motore di debug dell'interprete, in cui a volte codice non è in esecuzione all'interno in fase di debug del programma, pertanto [arrestare](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) non può essere eseguita in modo sincrono. Se un motore di debug vuole adottare questa notifica asincrona, deve restituire `S_ASYNC_STOP` dal [arrestare](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
+Stop viene utilizzato per informare in modo asincrono il processo SDM che un programma è stato arrestato. Informare il processo SDM è utile per un motore di debug interprete, in cui a volte non è in esecuzione alcun codice all'interno del programma sottoposto a debug, pertanto [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) non può essere completato in modo sincrono. Se un motore di debug desidera utilizzare `S_ASYNC_STOP` questa notifica asincrona, deve restituire da [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
 
 ## <a name="requirements"></a>Requisiti
 

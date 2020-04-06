@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Microsoft Docs
+title: OBJECT_TYPE . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349924"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714134"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
+# <a name="object_type"></a>Object_Type
 Specifica il tipo di un oggetto dall'analizzatore di espressioni.
 
 ## <a name="syntax"></a>Sintassi
@@ -76,10 +76,10 @@ public enum enum_OBJECT_TYPE { 
  Indica che l'oggetto è un carattere.
 
  `OBJECT_TYPE_I1`\
- Indica che l'oggetto è un intero con segno a 1 byte.
+ Indica che l'oggetto è un intero con segno a un byte.
 
  `OBJECT_TYPE_U1`\
- Indica che l'oggetto è un intero senza segno a 1 byte.
+ Indica che l'oggetto è un intero senza segno a un byte.
 
  `OBJECT_TYPE_I2`\
  Indica che l'oggetto è un intero con segno a due byte.
@@ -94,16 +94,16 @@ public enum enum_OBJECT_TYPE { 
  Indica che l'oggetto è un intero senza segno a quattro byte.
 
  `OBJECT_TYPE_I8`\
- Indica che l'oggetto è un intero con segno a 8 byte.
+ Indica che l'oggetto è un intero con segno a otto byte.
 
  `OBJECT_TYPE_U8`\
- Indica che l'oggetto è un intero senza segno a 8 byte.
+ Indica che l'oggetto è un intero senza segno a otto byte.
 
  `OBJECT_TYPE_R4`\
  Indica che l'oggetto è un numero a virgola mobile a quattro byte.
 
  `OBJECT_TYPE_R8`\
- Indica che l'oggetto è un numero a virgola mobile a 8 byte.
+ Indica che l'oggetto è un numero a virgola mobile a otto byte.
 
  `OBJECT_TYPE_OBJECT`\
  Indica che l'oggetto è un oggetto.
@@ -114,7 +114,7 @@ public enum enum_OBJECT_TYPE { 
  `OBJECT_TYPE_CLASS`\
  Indica che l'oggetto è una classe.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Passato come argomento per il [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metodi.
 
 ## <a name="requirements"></a>Requisiti

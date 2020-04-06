@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CauseBreak | Microsoft Docs
+title: Proprietà IDebugEngine2::CauseBreak . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CauseBreak
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93f9937609a09439b265946e76f0af0381d488f1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62be3ce13ecbc3180cf2bbcce26b04f3d79edb1a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330139"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731161"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
-Le richieste che tutti i programmi in fase di debug da questo motore di debug (DE) per arrestare l'esecuzione la volta successiva che uno dei relativi thread tenta di eseguire.
+Richiede che tutti i programmi sottoposti a debug da questo motore di debug (DE) interrompano l'esecuzione al successivo tentativo di esecuzione di uno dei relativi thread.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,10 +38,10 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo è asincrono: un' [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) evento viene inviato quando il programma quindi tenta di eseguire dopo che questo metodo viene chiamato.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo è asincrono: un [evento IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) viene inviato quando il programma tenta di eseguire dopo la chiamata a questo metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

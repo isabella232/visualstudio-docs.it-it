@@ -1,5 +1,5 @@
 ---
-title: BP_RES_DATA_FLAGS | Microsoft Docs
+title: BP_RES_DATA_FLAGS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RES_DATA_FLAGS enumeration
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7573d9bde08f69a7c7e7707d7631dc71e2d8d5e6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d0b687a54ddc1ed111b664a819dacfed6709196d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350649"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737872"
 ---
-# <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
-Specifica se il punto di interruzione dei dati viene emulato o implementata nell'hardware.
+# <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
+Specifica se il punto di interruzione dei dati viene emulato o implementato nell'hardware.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ public enum enum_BP_RES_DATA_FLAGS {
 
 ## <a name="fields"></a>Campi
 `BP_RES_DATA_EMULATED`\
-Specifica che il punto di interruzione dei dati viene emulato.
+Specifica che è in corso l'emulazione del punto di interruzione dei dati.
 
-## <a name="remarks"></a>Note
-Utilizzato per il `dwFlags` membro della [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struttura.
+## <a name="remarks"></a>Osservazioni
+Utilizzato per `dwFlags` il membro della [struttura BP_RESOLUTION_DATA.](../../../extensibility/debugger/reference/bp-resolution-data.md)
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

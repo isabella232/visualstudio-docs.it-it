@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetServer | Microsoft Docs
+title: Proprietà IDebugProcess2::GetServer . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetServer
 ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20eed8cb3689ac58b1303f4dec7359d75d0c0f40
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f54faf50f5307a1c4c67d07efccd5747918e322
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343645"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723894"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
-Ottiene il server in esecuzione su questo processo.
+Ottiene il server in cui è in esecuzione questo processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetServer( 
 
 ## <a name="parameters"></a>Parametri
 `ppServer`\
-[out] Restituisce un [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) oggetto che rappresenta il server in cui questo processo è in esecuzione.
+[fuori] Restituisce un [oggetto IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) che rappresenta il server in cui è in esecuzione il processo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Più di un server può essere eseguiti in un singolo computer.
+## <a name="remarks"></a>Osservazioni
+ Più server possono essere in esecuzione su un singolo computer.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

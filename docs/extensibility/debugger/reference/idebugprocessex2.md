@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2 | Microsoft Docs
+title: Proprietà IDebugProcessEx2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c27a03a09a6073ebab8d7a2dd5f60218066d474
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 743dd1aa72d9b8db6b848618c8a2ad6c8c8ecaaf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311594"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723334"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
-Questa interfaccia consente la sessione di debug manager (SDM) notifica di un processo che viene collegamento a o lo scollegamento dal processo.
+Questa interfaccia consente al gestore di debug della sessione (SDM) notificare a un processo che si sta connettendo o scollegando dal processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,28 +29,28 @@ IDebugProcessEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Un fornitore di porte personalizzato implementa questa interfaccia sull'oggetto stesso come il [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interfaccia al fine di:
+ Un fornitore di porta personalizzato implementa questa interfaccia sullo stesso oggetto di IDebugProcess2 interfaccia per:A custom port supplier implements this interface on the same object as the [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interface in order to:
 
-- Rilevamento di supporto di sessioni connesse a un processo
+- Supportare il monitoraggio delle sessioni connesse a un processoSupport tracking of sessions connected to a process
 
-- Supporto della connessione automatica tra più motori di debug
+- Supporto dell'associazione automatica tra più motori di debugSupport auto-attach across multiple debug engines
 
-  Il fornitore della porta personalizzate possa implementare questa interfaccia se sceglie.
+  Il fornitore della porta personalizzata può implementare questa interfaccia, se lo desidera.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 
-- Le chiamate SDM [QueryInterface](/cpp/atl/queryinterface) su un `IDebugProcess2` interfaccia per ottenere questa interfaccia.
+- Il modello SDM chiama `IDebugProcess2` [QueryInterface](/cpp/atl/queryinterface) su un'interfaccia per ottenere questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IDebugProcessEx2`.
+ Nella tabella seguente vengono `IDebugProcessEx2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informa il processo di una sessione è ora il debug del processo.|
-|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informa il processo che una sessione di debug non è più il processo.|
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Consente di aggiungere nodi di programma per un elenco dei motori di debug.|
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informa il processo che una sessione sta eseguendo il debug del processo.|
+|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informa il processo che una sessione non esegue più il debug del processo.|
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Aggiunge nodi di programma per un elenco di motori di debug.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Questa interfaccia è privata tra il modello SDM e il processo.
 
 ## <a name="requirements"></a>Requisiti

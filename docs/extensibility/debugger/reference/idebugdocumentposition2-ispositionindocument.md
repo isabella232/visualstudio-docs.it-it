@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::IsPositionInDocument | Microsoft Docs
+title: IDebugDocumentPosition2::IsPositionInDocument . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::IsPositionInDocument
 ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab4792427a98f97fcd50d4b39c2bb332527a0942
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4d92dddda8fd9831f5d66b602cd48fdbbc3dbcf1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333417"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731648"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 Determina se la posizione del documento è contenuta nel documento specificato.
@@ -41,13 +41,13 @@ int IsPositionInDocument( 
 
 ## <a name="parameters"></a>Parametri
 `pDoc`\
-[in] Il [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) oggetto che rappresenta il candidato di documento che lo contiene.
+[in] Oggetto [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) che rappresenta il candidato al documento che lo contiene.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo viene utilizzato principalmente in impostando punti di interruzione [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfacce. Man mano che vengono caricati documenti, la posizione del punto di interruzione viene chiamata per determinare se il documento contiene questa posizione.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo viene utilizzato principalmente nell'impostazione di punti di interruzione in [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfacce. Quando i documenti vengono caricati, la posizione del punto di interruzione viene chiamata per determinare se il documento contiene questa posizione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

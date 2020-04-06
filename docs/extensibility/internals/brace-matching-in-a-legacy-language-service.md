@@ -1,56 +1,56 @@
 ---
-title: Corrispondenza parentesi graffe in un servizio di linguaggio Legacy | Microsoft Docs
+title: Corrispondenza delle parentesi graffe in un servizio di linguaggio Legacy Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a535fc479fe5cc398d09d7aa9e47a3c91fa97f38
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309178"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709812"
 ---
-# <a name="brace-matching-in-a-legacy-language-service"></a>Corrispondenza parentesi graffe in un servizio di linguaggio legacy
-Corrispondenza delle parentesi graffe consente allo sviluppatore di tenere traccia di elementi del linguaggio che si verificano insieme, ad esempio le parentesi tonde e parentesi graffe devono. Quando uno sviluppatore immette una parentesi graffa di chiusura, parentesi graffa di apertura viene evidenziata.
+# <a name="brace-matching-in-a-legacy-language-service"></a>Associare la corrispondenza in un servizio di linguaggio legacy
+La corrispondenza delle parentesi graffe consente allo sviluppatore di tenere traccia degli elementi del linguaggio che devono verificarsi insieme, ad esempio parentesi e parentesi graffe. Quando uno sviluppatore immette una parentesi graffa di chiusura, la parentesi graffa di apertura viene evidenziata.
 
- È possibile associare due o tre elementi che si verificano contemporaneamente, denominate coppie e Triple. Triple sono set di tre elementi che si verificano contemporaneamente. Ad esempio, in c#, il `foreach` istruzione costituisce una tripla: `foreach()`, `{`, e `}`. I tre elementi vengono evidenziati quando viene digitata la parentesi graffa di chiusura.
+ È possibile abbinare due o tre elementi co-legati, chiamati coppie e triple. Le triple sono insiemi di tre elementi co-presentinti. Ad esempio, in C, `foreach` l'istruzione `foreach()` `{`forma `}`una tripla: , , e . Tutti e tre gli elementi vengono evidenziati quando viene digitata la parentesi graffa di chiusura.
 
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare corrispondenza parentesi graffe, vedere [procedura dettagliata: Visualizzare le parentesi graffe corrispondenti](../../extensibility/walkthrough-displaying-matching-braces.md).
+ Servizi di linguaggio legacy vengono implementati come parte di un VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'utilizzare le estensioni MEF. Per ulteriori informazioni sul nuovo modo di implementare la corrispondenza tra parentesi graffe, vedere Procedura dettagliata: visualizzazione di [parentesi graffe corrispondenti](../../extensibility/walkthrough-displaying-matching-braces.md).
 
 > [!NOTE]
-> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
+> Si consiglia di iniziare a utilizzare la nuova API dell'editor il prima possibile. Ciò migliorerà le prestazioni del servizio di linguaggio e consentirà di sfruttare le nuove funzionalità dell'editor.
 
- Il <xref:Microsoft.VisualStudio.Package.AuthoringSink> supporta entrambe le coppie di classe e per triplica con il <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> e <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> metodi.
+ La <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe supporta sia coppie che <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> triple con i metodi e .
 
 ## <a name="implementation"></a>Implementazione
- Il servizio di linguaggio deve identificare tutti gli elementi corrispondenti nel linguaggio e quindi individuare tutte le coppie corrispondenti. Questa operazione viene in genere eseguita mediante l'implementazione <xref:Microsoft.VisualStudio.Package.IScanner> per rilevare la lingua corrispondente e viene quindi utilizzato il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo corrispondere gli elementi.
+ Il servizio di linguaggio deve identificare tutti gli elementi corrispondenti nel linguaggio e quindi individuare tutte le coppie corrispondenti. Questa operazione viene in <xref:Microsoft.VisualStudio.Package.IScanner> genere eseguita implementando per <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> rilevare un linguaggio corrispondente e quindi utilizzando il metodo per abbinare gli elementi.
 
- Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> metodo chiama lo scanner per suddividere in token di riga e restituire il token appena prima il punto di inserimento. Lo scanner indica che è stata trovata una coppia di elemento di linguaggio impostando un valore token trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> sul token corrente. Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> metodo che a sua volta chiama il <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> metodo con il valore di motivo di analisi di <xref:Microsoft.VisualStudio.Package.ParseReason> per individuare l'elemento di linguaggio corrispondenti. Quando viene trovato l'elemento di linguaggio corrispondente, entrambi gli elementi vengono evidenziati.
+ Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> metodo chiama lo scanner per suddividere in token la riga e restituire il token appena prima del punto di inserimento. Lo scanner indica che è stata trovata una coppia di <xref:Microsoft.VisualStudio.Package.TokenTriggers> elementi del linguaggio impostando un valore di trigger di token su un token corrente. Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> metodo <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> chiama il metodo <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> che a sua volta <xref:Microsoft.VisualStudio.Package.ParseReason> chiama il metodo con il valore di parse reason di per individuare l'elemento del linguaggio corrispondente. Quando viene trovato l'elemento di linguaggio corrispondente, entrambi gli elementi vengono evidenziati.
 
- Per una descrizione completa del modo in cui digitare una parentesi graffa attiva l'evidenziazione delle parentesi graffe, vedere la *operazione di analisi di esempio* sezione dell'articolo [scanner e parser servizio di linguaggio Legacy](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
+ Per una descrizione completa del modo in cui la digitazione di una parentesi graffa attiva l'evidenziazione delle parentesi graffe, vedere la sezione Operazione di analisi di *esempio* nell'articolo Parser e scanner del [servizio di linguaggio Legacy](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
-## <a name="enable-support-for-brace-matching"></a>Abilitare il supporto per la corrispondenza delle parentesi graffe
- Il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attributo è possibile impostare il **MatchBraces**, **MatchBracesAtCaret**, e **ShowMatchingBrace** le voci del Registro di sistema che imposteranno le proprietà corrispondenti del <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Proprietà delle preferenze di lingua possono essere impostate anche dall'utente.
+## <a name="enable-support-for-brace-matching"></a>Abilitare il supporto per la corrispondenza delle parentesi graffeEnable support for brace matching
+ L'attributo <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> può impostare le voci del Registro di sistema **MatchBraces**, **MatchBracesAtCaret**e **ShowMatchingBrace** che impostano le proprietà corrispondenti della <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe . Le proprietà delle preferenze di lingua possono anche essere impostate dall'utente.
 
 |Voce del Registro di sistema|Proprietà|Descrizione|
 |--------------------|--------------|-----------------|
-|MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Corrispondenza parentesi graffe Abilita.|
-|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Consente di corrispondenza tra parentesi graffe durante lo spostamento del punto di inserimento.|
+|Parentesi corrispondenti|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Abilita la corrispondenza tra parentesi graffe.|
+|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Abilita la corrispondenza del parente della parentesi graffa durante lo spostamento del riquadro di inserimento.|
 |ShowMatchingBrace|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Evidenzia la parentesi graffa corrispondente.|
 
-## <a name="match-conditional-statements"></a>Corrispondenza di istruzioni condizionali
- È possibile far corrispondere le istruzioni condizionali, ad esempio `if`, `else if`, e `else`, o `#if`, `#elif`, `#else`, `#endif`, esattamente come i delimitatori di corrispondenza. È possibile creare una sottoclasse di <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe e forniscono un metodo che è possibile aggiungere testo si estende oltre i delimitatori per la matrice interna di elementi corrispondenti.
+## <a name="match-conditional-statements"></a>Associare istruzioni condizionali
+ È possibile associare istruzioni `if`condizionali, `#if`ad `#elif` `#else`esempio `#endif`, `else if`e , o `else`, , , , allo stesso modo dei delimitatori corrispondenti. È possibile creare <xref:Microsoft.VisualStudio.Package.AuthoringSink> una sottoclasse della classe e fornire un metodo che può aggiungere intervalli di testo e delimitatori alla matrice interna di elementi corrispondenti.
 
 ## <a name="set-the-trigger"></a>Impostare il trigger
- Nell'esempio seguente viene illustrato come rilevare la corrispondenza tra parentesi, parentesi graffe e parentesi quadre e impostare il trigger per tale nello scanner. Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> metodo sul <xref:Microsoft.VisualStudio.Package.Source> classe rileva il trigger e chiama il parser per trovare la coppia corrispondente (vedere la *trovare la corrispondenza* sezione in questo articolo). Questo esempio è solo a scopo illustrativo. Si presuppone che lo scanner contiene un metodo `GetNextToken` che identifica e restituisce i token da una riga di testo.
+ Nell'esempio seguente viene illustrato come rilevare parentesi corrispondenti, parentesi graffe e parentesi graffe e impostando il trigger per tale parentesi nello scanner. Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> metodo <xref:Microsoft.VisualStudio.Package.Source> nella classe rileva il trigger e chiama il parser per trovare la coppia corrispondente (vedere la sezione *Ricerca della corrispondenza* in questo articolo). Questo esempio è solo a scopo illustrativo. Si presuppone che lo scanner `GetNextToken` contenga un metodo che identifica e restituisce i token da una riga di testo.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -84,8 +84,8 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="match-the-braces"></a>Corrispondenza parentesi graffe
- Ecco un esempio semplificato per gli elementi del linguaggio di ricerca `{ }`, `( )`, e `[ ]`e aggiungendo i loro intervalli per la <xref:Microsoft.VisualStudio.Package.AuthoringSink> oggetto. Questo approccio non è un approccio consigliato per l'analisi del codice sorgente; è solo a scopo illustrativo.
+## <a name="match-the-braces"></a>Abbina le parentesi graffe
+ Di seguito è riportato un `{ }` `( )`esempio `[ ]`semplificato per la corrispondenza degli elementi del linguaggio , , e , e per aggiungere gli intervalli all'oggetto. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Questo approccio non è consigliato per l'analisi del codice sorgente. è solo a scopo illustrativo.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -136,5 +136,5 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Funzionalità del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)
-- [Scanner e parser servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+- [Funzionalità del servizio di linguaggio legacyLegacy language service features](../../extensibility/internals/legacy-language-service-features1.md)
+- [Parser e scanner del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

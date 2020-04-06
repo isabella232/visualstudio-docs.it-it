@@ -1,27 +1,27 @@
 ---
-title: IDebugProgram3::ExecuteOnThread | Microsoft Docs
+title: Proprietà IDebugProgram3::ExecuteOnThread . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 798a0caca394a21d6ee12a99efeacb2f27f6969c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343609"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722653"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-Esegue il programma di debugger. Il thread viene restituito per fornire le informazioni sui debugger thread in cui l'utente visualizza quando l'esecuzione del programma.
+Esegue il programma debugger. Il thread viene restituito per fornire al debugger informazioni su quale thread l'utente sta visualizzando durante l'esecuzione del programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,22 +38,22 @@ int ExecuteOnThread(
 
 ## <a name="parameters"></a>Parametri
 `pThread`\
-[in] Un' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto.
+[in] Oggetto [IDebugThread2.](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Esistono tre modi diversi, che un debugger può riprendere l'esecuzione dopo l'arresto:
+## <a name="remarks"></a>Osservazioni
+ Esistono tre modi diversi in cui un debugger può riprendere l'esecuzione dopo l'arresto:There are three different ways that a debugger can resume execution after stopping:
 
-- Eseguire: Annullare qualsiasi passaggio precedente ed eseguire fino al punto di interruzione successivo e così via.
+- Esegui: consente di annullare qualsiasi passaggio precedente ed eseguire fino al punto di interruzione successivo e così via.
 
-- Passaggio: Annullare qualsiasi passaggio precedente ed eseguire fino a quando non viene completato il passaggio della nuova.
+- Passaggio: Annullare qualsiasi passaggio precedente ed eseguilo fino al completamento del nuovo passaggio.
 
-- Continuare: Eseguire di nuovo e lasciare attiva qualsiasi passaggio precedente.
+- Continua: eseguire di nuovo e lasciare attivo qualsiasi passaggio precedente.
 
-  Il thread passato a `ExecuteOnThread` è utile quando si decide il passaggio da annullare. Se non si conosce il thread, in esecuzione Esegui Annulla tutti i passaggi. Con una conoscenza del thread, devi solo annullare il passaggio al thread attivo.
+  Il thread `ExecuteOnThread` passato a è utile per decidere quale passaggio annullare. Se non si conosce il thread, l'esecuzione di execute annulla tutti i passaggi. Con la conoscenza del thread, è sufficiente annullare il passaggio sul thread attivo.
 
 ## <a name="see-also"></a>Vedere anche
-- [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
+- [Eseguire](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
 - [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

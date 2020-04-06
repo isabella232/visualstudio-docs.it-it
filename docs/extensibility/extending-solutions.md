@@ -1,26 +1,26 @@
 ---
-title: Estensione di soluzioni | Microsoft Docs
+title: Estensione delle soluzioni Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fd58ea0f898f1840d63a436b4fe28787e89e613
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 40a9591418dd3d2fb53bee29dfb8192a368e4047
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313015"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711729"
 ---
-# <a name="extend-solutions"></a>Estendi le soluzioni
-Una soluzione è un raggruppamento di uno o più progetti che funzionano insieme per creare un'applicazione.
+# <a name="extend-solutions"></a>Estendere le soluzioni
+Una soluzione è un raggruppamento di uno o più progetti che lavorano insieme per creare un'applicazione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  Le procedure dettagliate seguenti illustrano alcuni modi in cui è possibile estendere le soluzioni.
 
-1. [Estendere il filtro di Esplora soluzioni](../extensibility/extending-the-solution-explorer-filter.md) viene illustrato come filtrare gli elementi visualizzati da Esplora soluzioni.
+1. [Estendere il filtro Esplora soluzioni](../extensibility/extending-the-solution-explorer-filter.md) viene illustrato come filtrare ciò che viene visualizzato in Esplora soluzioni.
 
-2. [Gestire il caricamento di progetti in una soluzione](../extensibility/managing-project-loading-in-a-solution.md) viene illustrato come gestire il caricamento di progetti per migliorare le prestazioni quando un utente carica una soluzione.
+2. [Gestire](../extensibility/managing-project-loading-in-a-solution.md) il caricamento del progetto in una soluzione viene illustrato come gestire il caricamento del progetto per migliorare le prestazioni quando un utente carica una soluzione.

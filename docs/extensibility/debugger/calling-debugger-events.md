@@ -1,51 +1,51 @@
 ---
-title: La chiamata a eventi del Debugger | Microsoft Docs
+title: Chiamata agli eventi del debugger Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7564010055218065a8971f40989af2152acd5d95
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 869bd87952aebf8ad640c5aeb439c9e99929f4c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332488"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739172"
 ---
-# <a name="call-debugger-events"></a>Chiamare gli eventi del debugger
-Gli eventi nella sessione di debug e si verificano in un ordine specifico.
+# <a name="call-debugger-events"></a>Chiamare eventi del debuggerCall debugger events
+Gli eventi nelle sessioni di debug si verificano in un ordine specifico.
 
 ## <a name="discussion"></a>Discussione
- Per comprendere il criterio di chiamate tra il motore di debug (DE) e la gestione di debug di sessione (SDM), di seguito rappresenta l'ordine di chiamata degli eventi che si verificano durante una normale sessione di debug:
+ Per comprendere il modello di chiamate tra il motore di debug (DE) e il gestore di debug di sessione (SDM), quanto segue rappresenta l'ordine di chiamata degli eventi che si verificano in una sessione di debug tipica:
 
-1. [Collegamento e scollegamento da un programma](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
+1. [Associazione e disconnessione a un programma](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
 
-2. [L'avvio del debugger](../../extensibility/debugger/launching-the-debugger.md)
+2. [Avvio del debugger](../../extensibility/debugger/launching-the-debugger.md)
 
-3. [Terminazione di un programma](../../extensibility/debugger/terminating-a-program.md)
+3. [Interruzione di un programma](../../extensibility/debugger/terminating-a-program.md)
 
-4. [Creazione di un punto di interruzione](../../extensibility/debugger/creating-a-breakpoint.md)
+4. [Creazione di un punto di interruzioneCreating a breakpoint](../../extensibility/debugger/creating-a-breakpoint.md)
 
-5. [Quando si associa un punto di interruzione o diventare non associato](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
+5. [Quando un punto di interruzione viene associato o diventa non associatoWhen a breakpoint binds or becoming unbound](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
 
-6. [Errori di punto di interruzione](../../extensibility/debugger/breakpoint-errors.md)
+6. [Errori dei punti di interruzione](../../extensibility/debugger/breakpoint-errors.md)
 
-7. [Raggiungere un punto di interruzione](../../extensibility/debugger/hitting-a-breakpoint.md)
+7. [Raggiungimento di un punto di interruzione](../../extensibility/debugger/hitting-a-breakpoint.md)
 
-8. [L'eliminazione di un punto di interruzione](../../extensibility/debugger/deleting-a-breakpoint.md)
+8. [Eliminazione di un punto di interruzione](../../extensibility/debugger/deleting-a-breakpoint.md)
 
-9. [Modalità di interruzione](../../extensibility/debugger/entering-break-mode.md)
+9. [Entrare in modalità di interruzione](../../extensibility/debugger/entering-break-mode.md)
 
-10. [Esecuzione di istruzioni in modalità di interruzione](../../extensibility/debugger/stepping-in-break-mode.md)
+10. [Passaggio in modalità di interruzioneStepping in break mode](../../extensibility/debugger/stepping-in-break-mode.md)
 
 11. [Valutazione dell'espressione in modalità di interruzione](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
 
 12. [Gestione delle eccezioni](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
 
 ## <a name="see-also"></a>Vedere anche
-- [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+- [Creazione di un motore di debug personalizzatoCreating a custom debug engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::GetBreakpointRequest | Microsoft Docs
+title: IDebugPendingBreakpoint2::GetBreakpointRequest . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::GetBreakpointRequest method
 - GetBreakpointRequest method
 ms.assetid: cb1e36aa-4302-455c-98fb-6638a1ef5c46
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 37bc4fb6421aa0c04afcf91d690e354e368c4055
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5440db69a3ceb763fb3e64e07d04a1e4f67f822a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347829"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725810"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
-Ottiene la richiesta del punto di interruzione che è stata utilizzata per creare il punto di interruzione in sospeso.
+Ottiene la richiesta del punto di interruzione utilizzata per creare questo punto di interruzione in sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ int GetBreakpointRequest( 
 
 ## <a name="parameters"></a>Parametri
 `ppBPRequest`\
-[out] Restituisce un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) oggetto che rappresenta la richiesta di punto di interruzione che è stata usata per creare questa in sospeso punto di interruzione.
+[fuori] Restituisce un [oggetto IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) che rappresenta la richiesta di punto di interruzione utilizzata per creare questo punto di interruzione in sospeso.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stata eliminata.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce un valore che `E_BP_DELETED` indica se il punto di interruzione è stato eliminato.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

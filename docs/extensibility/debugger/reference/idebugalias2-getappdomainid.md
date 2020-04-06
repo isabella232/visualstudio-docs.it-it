@@ -1,25 +1,25 @@
 ---
-title: IDebugAlias2::GetAppDomainId | Microsoft Docs
+title: Proprietà IDebugAlias2::GetAppDomainId . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetAppDomainId
 - IDebugAlias2::GetAppDomainId
 ms.assetid: 23581aaa-5a53-4859-b264-eca49fc44bcd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b40d52c5eedf0defb845f1944acd166d48dca1ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aca8f2311b58fc7e73f9eb4f4c14f993c88b9a62
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338169"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736410"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 Recupera l'identificatore per il dominio applicazione.
@@ -40,13 +40,13 @@ int GetAppDomainId (
 
 ## <a name="parameters"></a>Parametri
 `pappDomainId`\
-[out] Restituisce l'identificatore del dominio applicazione.
+[fuori] Restituisce l'identificatore di dominio dell'applicazione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Viene creato un nuovo dominio applicazione e le modifiche di identificatore di dominio dell'applicazione ogni volta che l'applicazione viene riavviata.
+## <a name="remarks"></a>Osservazioni
+ L'identificatore di dominio applicazione cambia ogni volta che l'applicazione viene riavviata e viene creato un nuovo dominio applicazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)

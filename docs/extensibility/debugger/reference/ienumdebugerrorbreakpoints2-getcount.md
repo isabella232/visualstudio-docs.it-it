@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2::GetCount | Microsoft Docs
+title: Proprietà IEnumDebugErrorBreakpoints2::GetCount . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::GetCount
 ms.assetid: 56f7bb70-d55b-471c-8c65-09a9e7f4938e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 36bbaa079e88332f6cbca5aa0dd6705db307a3ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 867b0e699ac1e4874a6ac3db12eb52daa27758d8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336461"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717009"
 ---
 # <a name="ienumdebugerrorbreakpoints2getcount"></a>IEnumDebugErrorBreakpoints2::GetCount
 Restituisce il numero di elementi nell'enumerazione.
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parametri
 `pcelt`\
-[out] Restituisce il numero di elementi nell'enumerazione.
+[fuori] Restituisce il numero di elementi nell'enumerazione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo non fa parte dell'interfaccia di enumerazione COM facoltativa che specifica che solo le `Next`, `Clone`, `Skip`, e `Reset` devono essere implementati i metodi.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo non fa parte dell'interfaccia di enumerazione `Next` `Clone`COM `Skip`consueta che specifica che è necessario implementare solo i metodi , , e . `Reset`
 
 ## <a name="see-also"></a>Vedere anche
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

@@ -1,5 +1,5 @@
 ---
-title: Creazione di un oggetto personalizzato di motore di Debug | Microsoft Docs
+title: Creazione di un motore di debug personalizzato Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,52 +7,52 @@ helpviewer_keywords:
 - debug engines, custom
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3756eb105ec562d902d4631318e7a5fc698601a2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a350d640fffcc6e09cf8f981c797b97071a0cacf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345314"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739031"
 ---
-# <a name="create-a-custom-debug-engine"></a>Creare un motore di debug personalizzato
-Un motore di debug (DE) è un componente che consente il debug di architetture in fase di esecuzione particolare. È in genere solo un'implementazione di DE per ogni ambiente run-time.
+# <a name="create-a-custom-debug-engine"></a>Creare un motore di debug personalizzatoCreate a custom debug engine
+Un motore di debug (DE) è un componente che consente il debug di particolari architetture di runtime. In genere esiste una sola implementazione DE per ogni ambiente di runtime.
 
 > [!NOTE]
-> Anche se sono disponibili implementazioni separate di DE per Transact-SQL e JScript, VBScript e JScript condividono un singolo DE.
+> Sebbene esistano implementazioni DE separate per Transact-SQLTransact-SQL e JScript, VBScript e JScript condividono un singolo DE.
 
- Un CRI funziona con il sistema interprete o operazione per fornire tali servizi di debug come valutazione dell'espressione di controllo e i punti di interruzione esecuzione. Questi servizi vengono implementati tramite le interfacce DE e possono causare il debugger per la transizione tra diverse modalità operative. Per altre informazioni, vedere [modalità operative](../../extensibility/debugger/operational-modes.md).
+ Un DE funziona con l'interprete o il sistema operativo per fornire servizi di debug quali il controllo dell'esecuzione, i punti di interruzione e la valutazione delle espressioni. Questi servizi vengono implementati tramite le interfacce DE e possono causare la transizione del debugger tra diverse modalità operative. Per ulteriori informazioni, consultate [Modalità operative.](../../extensibility/debugger/operational-modes.md)
 
- Creazione di un CRI prevede i passaggi seguenti:
+ La creazione di un DE è costituita dai seguenti passaggi:
 
-1. Registrare un CRI con Visual Studio
+1. Registrare un DE con Visual StudioRegister a DE with Visual Studio
 
-2. Abilitare un programma da sottoporre a debug
+2. Abilitare il debug di un programmaEnable a program to be debugged
 
-3. Implementare la valutazione di controllo e lo stato di esecuzione
+3. Implementare il controllo dell'esecuzione e la valutazione dello statoImplement execution control and state evaluation
 
 4. Inviare eventi
 
-5. Configurazione di terminazione e scollegamento
+5. Impostare la terminazione e lo scollegamento
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Registrare un motore di debug personalizzato](../../extensibility/debugger/registering-a-custom-debug-engine.md) illustra i passaggi necessari per registrare un motore di debug con Visual Studio in modo che può essere usato.
+ [Registrare un motore di debug personalizzatoRegister a custom debug engine](../../extensibility/debugger/registering-a-custom-debug-engine.md) Vengono illustrati i passaggi necessari per registrare un motore di debug con Visual Studio in modo che possa essere utilizzato.
 
- [Abilitare un programma da sottoporre a debug](../../extensibility/debugger/enabling-a-program-to-be-debugged.md) spiega che prima che la Germania possa eseguire il debug di un programma, è prima necessario avviare il DE o collegarlo a un programma esistente.
+ [Abilitare il debug di un programmaEnable a program to be debugged](../../extensibility/debugger/enabling-a-program-to-be-debugged.md) Viene illustrato che prima di DE è possibile eseguire il debug di un programma, è necessario avviare il DE o collegarlo a un programma esistente.
 
- [Implementare la valutazione di controllo e lo stato di esecuzione](../../extensibility/debugger/execution-control-and-state-evaluation.md) esamina il motivo per cui debug di un'applicazione richiede l'implementazione di funzionalità di controllo di esecuzione.
+ [Implementare il controllo dell'esecuzione e la valutazione dello statoImplement execution control and state evaluation](../../extensibility/debugger/execution-control-and-state-evaluation.md) Viene illustrato il motivo per cui il debug di un'applicazione richiede l'implementazione delle funzionalità di controllo dell'esecuzione.
 
- [Inviare eventi](../../extensibility/debugger/sending-events.md) descrive la comunicazione tra il debugger e il DE come un modello di eventi basati su DCOM.
+ [Invia eventi](../../extensibility/debugger/sending-events.md) Descrive la comunicazione tra il debugger e il DE come modello eventi basato su DCOM.
 
- [Configurazione di terminazione e scollegamento](../../extensibility/debugger/termination-and-detaching.md) viene spiegato come ottenere la terminazione normale, il che significa che non esistono Nessun punti di interruzione, eccezioni, errori di run-time o cicli infiniti nell'applicazione da sottoporre a debug.
+ [Impostare la terminazione e lo scollegamento](../../extensibility/debugger/termination-and-detaching.md) Viene illustrato come ottenere la terminazione normale, ovvero che non sono presenti punti di interruzione, eccezioni, errori di runtime o cicli infiniti nell'applicazione di cui eseguire il debug.
 
- [Chiamare gli eventi del debugger](../../extensibility/debugger/calling-debugger-events.md) documenta l'ordine di chiamata degli eventi che si verificano in una sessione di debug.
+ [Chiamare eventi del debuggerCall debugger events](../../extensibility/debugger/calling-debugger-events.md) Documenta l'ordine di chiamata degli eventi che si verificano in una sessione di debug.
 
- [Procedura: Eseguire il debug di un motore di debug personalizzato](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md) spiega come eseguire il debug di un CRI personalizzato.
+ Procedura: eseguire il debug di un motore di [debug personalizzatoHow To: Debug a custom debug engine](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md) Viene illustrato come eseguire il debug di un DE personalizzato.
 
 ## <a name="see-also"></a>Vedere anche
-- [Estendibilità del debugger Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+- [Estendibilità del debugger di Visual StudioVisual Studio debugger extensibility](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

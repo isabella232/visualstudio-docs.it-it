@@ -1,5 +1,5 @@
 ---
-title: IDebugProviderProgramNode2 | Microsoft Docs
+title: Proprietà IDebugProviderProgramNode2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33c4a4914e15a8ecbea0d4f28c2325a952a042de
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 815a945f6fb591960ebf0bf4b4fcd9d842ffefd3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353810"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720675"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
-Questa interfaccia effettua il marshalling di interfacce relative al programma attraverso i limiti di processo.
+Questa interfaccia esegue il marshalling delle interfacce correlate al programma attraverso i limiti del processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,20 +29,20 @@ IDebugProviderProgramNode2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia nello stesso oggetto che implementa [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) per supportare le interfacce di marshalling tra i limiti dei processi.
+ Il motore di debug (DE) implementa questa interfaccia sullo stesso oggetto che implementa [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) per supportare le interfacce di marshalling attraverso i limiti del processo.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [QueryInterface](/cpp/atl/queryinterface) su un `IDebugProgramNode2` interfaccia per ottenere questa interfaccia. Se non è possibile ottenere questa interfaccia, la Germania non supporta il marshalling delle interfacce.
+ Chiamare [QueryInterface](/cpp/atl/queryinterface) `IDebugProgramNode2` su un'interfaccia per ottenere questa interfaccia. Se non è possibile ottenere questa interfaccia, il DE non supporta il marshalling delle interfacce.
 
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Questa interfaccia implementa il metodo seguente:
+## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
+ Questa interfaccia implementa il metodo seguente:This interface implements the following method:
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Ottiene un'interfaccia specificata attraverso i limiti dei processi.|
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Ottiene un'interfaccia specificata attraverso i limiti del processo.|
 
-## <a name="remarks"></a>Note
- Questa interfaccia viene implementata quando viene eseguita la Germania in uno spazio processi distinto dal programma in fase di debug: ad esempio, quando la Germania è in esecuzione nello spazio di processo Visual Studio anziché lo spazio di processo del programma in fase di debug.
+## <a name="remarks"></a>Osservazioni
+ Questa interfaccia viene implementata quando il DE viene eseguito in uno spazio di processo separato dal programma in fase di debug: ad esempio, quando il DE è in esecuzione nello spazio di processo di Visual Studio anziché lo spazio di processo del programma in fase di debug.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

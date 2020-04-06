@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::CanStop | Microsoft Docs
+title: Proprietà IDebugCanStopEvent2::CanStop . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::CanStop
 ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab59cf5d077c4e397373c4c86b864ed17749fc19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2915938c966bac7f842d0745c973c7d0b7033e2b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351261"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734596"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
-Notifica al motore di debug (DE) per interrompere in corrispondenza della posizione di codice corrente o semplicemente continuare l'esecuzione o meno.
+Notifica al motore di debug (DE) se interrompere o meno nel percorso del codice corrente o semplicemente continuare l'esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,15 +41,15 @@ int CanStop ( 
 
 ## <a name="parameters"></a>Parametri
 `fCanStop`\
-[in] Diverso da zero (`TRUE`) se la Germania deve essere interrotta in corrispondenza della posizione di codice corrente; in caso contrario, zero (`FALSE`).
+[in] Diverso da`TRUE`zero ( ) se il DE deve arrestarsi nella posizione del codice corrente; in caso`FALSE`contrario, zero ( ).
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Il ricevitore dell'evento chiama in genere il [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodo per determinare il motivo per la Germania desidera arrestare e quindi chiama il `IDebugCanStopEvent2::CanStop` metodo con la risposta appropriata.
+## <a name="remarks"></a>Osservazioni
+ Il destinatario di questo evento chiama in genere il [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodo per `IDebugCanStopEvent2::CanStop` determinare il motivo per cui il DE desidera arrestare e quindi chiama il metodo con la risposta appropriata.
 
- Se si arresta la Germania, invia un evento che descrive il motivo dell'arresto. In genere esistono due eventi che vengono inviati, rappresentata da un'interruzione di utente o un segnale i [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) interfaccia e un evento punto di interruzione rappresentato dal [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) interfaccia.
+ Se il DE si arresta, invia un evento che descrive il motivo dell'arresto. Esistono in genere due eventi che vengono inviati, un'interruzione del segnale o utente rappresentata dal [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) interfaccia e un evento punto di interruzione rappresentato dal [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) interfaccia.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)

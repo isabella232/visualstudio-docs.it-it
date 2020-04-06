@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FILE_LINE | Microsoft Docs
+title: BP_LOCATION_CODE_FILE_LINE . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_FILE_LINE structure
 ms.assetid: 3ff32032-d412-44d3-91bf-870cc354a09e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 9e2cdcce6895d88f4a3ea1096bd419d951a1f545
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e338c3b24ade2cf7663b77abea64f58425d3a068
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319061"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738009"
 ---
-# <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
-Contiene i dati per il percorso di un punto di interruzione in una riga specifica in un file di codice sorgente.
+# <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
+Contiene i dati per la posizione di un punto di interruzione in una riga specifica in un file di origine del codice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,13 +35,13 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 
 ## <a name="members"></a>Membri
 `bstrContext`\
-Il contesto del punto di interruzione, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.
+Contesto del punto di interruzione, in genere un nome di metodo o funzione come illustrato in uno stack di chiamate.
 
 `pDocPos`\
-Il [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) oggetto che rappresenta la posizione del documento del punto di interruzione.
+Oggetto [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) che rappresenta la posizione del documento del punto di interruzione.
 
-## <a name="remarks"></a>Note
-Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.
+## <a name="remarks"></a>Osservazioni
+Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'unione.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

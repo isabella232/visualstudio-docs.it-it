@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3 | Microsoft Docs
+title: Proprietà IDebugProperty3 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3 interface
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8581e8163ab95eac7d49c5deca70c339804aac64
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d2819724c204631112fd1a3e827126c4bc176972
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348694"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721049"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
-Questa interfaccia fornisce supporto per:
+Questa interfaccia fornisce il supporto per:This interface provides support for:
 
-- Recupero di una stringa di lunghezza arbitraria associata alla proprietà.
+- Recupero di una stringa arbitrariamente lunga associata alla proprietà.
 
-- Associare un ID univoco della proprietà.
+- Associazione di un ID univoco alla proprietà.
 
-- Recuperare un elenco di visualizzatori personalizzati per la proprietà.
+- Recupero di un elenco di visualizzatori personalizzati per la proprietà.
 
 - Impostazione del valore di una proprietà con la possibilità di segnalare eventuali errori risultanti
 
@@ -37,13 +37,13 @@ IDebugProperty3 : IDebugProperty2
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia nello stesso oggetto che implementa [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) per fornire supporto per le stringhe lunghe, ID di proprietà e visualizzatori personalizzati.
+ Il motore di debug (DE) implementa questa interfaccia sullo stesso oggetto che implementa [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) per fornire il supporto per lunghe stringhe, ID di proprietà e visualizzatori personalizzati.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [QueryInterface](/cpp/atl/queryinterface) su un `IDebugProperty2` interfaccia per ottenere questa interfaccia.
+ Chiamare [QueryInterface](/cpp/atl/queryinterface) `IDebugProperty2` su un'interfaccia per ottenere questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Oltre ai metodi ereditati da `IDebugProperty2`, il `IDebugProperty3` interfaccia espone i metodi seguenti.
+ Oltre ai metodi ereditati `IDebugProperty2` `IDebugProperty3` da , l'interfaccia espone i metodi riportati di seguito.
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -51,12 +51,12 @@ IDebugProperty3 : IDebugProperty2
 |[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Restituisce la stringa in un buffer fornito dall'utente.|
 |[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|Crea un ID univoco per questa proprietà.|
 |[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|Elimina l'ID univoco per questa proprietà.|
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Restituisce il numero di visualizzatori personalizzati che può essere visualizzata con questa proprietà.|
-|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Restituisce l'elenco di visualizzatori personalizzati che può essere visualizzata con questa proprietà.|
-|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Imposta il valore di questa proprietà, restituendo un messaggio di errore se qualsiasi elemento è verificato un errore.|
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Restituisce il numero di visualizzatori personalizzati con cui questa proprietà può essere visualizzata.|
+|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Restituisce l'elenco di visualizzatori personalizzati con cui questa proprietà può essere visualizzata.|
+|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Imposta il valore di questa proprietà, restituendo un messaggio di errore in caso di problemi.|
 
-## <a name="remarks"></a>Note
-- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) è il modo migliore per la gestione di debug (SDM) per impostare un valore della proprietà di sessione.
+## <a name="remarks"></a>Osservazioni
+- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) è il modo preferito per il gestore di sessione di debug (SDM) per impostare il valore di una proprietà.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

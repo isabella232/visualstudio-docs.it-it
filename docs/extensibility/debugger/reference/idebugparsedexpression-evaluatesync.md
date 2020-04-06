@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
+title: Proprietà IDebugParsedExpression::EvaluateSync . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugParsedExpression::EvaluateSync method
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aac58831224a6bebadd625dad72177f2aec3fc76
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1f00b209ff5f91d160e89f5f55ad966fbe9e6414
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311818"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726017"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-Questo metodo valuta l'espressione analizzata e facoltativamente esegue il cast del risultato a un altro tipo di dati.
+Questo metodo valuta l'espressione analizzata e facoltativamente esegue il cast del risultato in un altro tipo di dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,31 +53,31 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>Parametri
 `dwEvalFlags`\
-[in] Una combinazione di [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) costanti che controllano il modo in cui l'espressione deve essere valutata.
+[in] Combinazione di costanti [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) che controllano il modo in cui l'espressione deve essere valutata.
 
 `dwTimeout`\
-[in] Specifica il tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.
+[in] Specifica il tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Utilizzare `INFINITE` per attendere a tempo indeterminato.
 
 `pSymbolProvider`\
-[in] Il provider di simboli, espresso come un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interfaccia.
+[in] Provider di simboli, espresso come [un IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interfaccia.
 
 `pAddress`\
-[in] Il percorso di esecuzione corrente all'interno di un metodo, espresso come un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
+[in] Posizione di esecuzione corrente all'interno di un metodo, espressa come [un IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
 
 `pBinder`\
-[in] Lo strumento di associazione, espresso come un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfaccia.
+[in] Il gestore di associazione, espresso come [un IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfaccia.
 
 `bstrResultType`\
-[in] Il risultato dovrebbe essere eseguire il cast. Questo argomento può essere un valore null.
+[in] Tipo in cui deve essere eseguito il cast del risultato. Questo argomento può essere un valore null.
 
 `ppResult`\
-[out] Restituisce il [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfaccia che rappresenta i risultati della valutazione.
+[fuori] Restituisce il [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfaccia che rappresenta i risultati della valutazione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Contesto di valutazione dell'espressione è dato dai `pAddress`, che rende possibile determinare il metodo contenitore e dell'ambito di utilizzo del linguaggio delle regole per determinare il valore dei simboli nell'espressione.
+## <a name="remarks"></a>Osservazioni
+ Il contesto di `pAddress`valutazione dell'espressione è dato da , che consente di determinare il metodo contenitore e quindi utilizzare le regole di ambito del linguaggio per determinare il valore dei simboli nell'espressione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

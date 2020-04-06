@@ -1,5 +1,5 @@
 ---
-title: Elemento assembly (estensione della creazione guidata modello di Visual Studio) | Microsoft Docs
+title: Elemento Assembly (estensione Creazione guidata modello Visual Studio) Documenti Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Assembly element [Visual Studio Template Wizard Extension]
 - <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68fb795005f1f653893147f7013117112f803211
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 43f5adb8abc17f0509fb58263f307e5051af85dc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352217"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740070"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento assembly (estensione della creazione guidata modello di Visual Studio)
-Specifica il nome o un nome sicuro dell'assembly che implementa il `IWizard` interfaccia.
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (estensione della Creazione guidata modello di Visual Studio)Assembly element (Visual Studio template wizard extension)
+Specifica il nome o il nome sicuro `IWizard` dell'assembly che implementa l'interfaccia.
 
- \<VSTemplate > \<WizardExtension > \<Assembly >
+ \<VSTemplate \<> WizardExtension> \<Assembly>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,27 +36,27 @@ Specifica il nome o un nome sicuro dell'assembly che implementa il `IWizard` int
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per la creazione guidata modello di personalizzazione.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per la personalizzazione della creazione guidata modello.|
 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Tale testo specifica l'assembly che implementa il `IWizard` interfaccia. Questo nome dell'assembly deve essere specificato come un nome completo dell'assembly. Ad esempio `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
+ Questo testo specifica l'assembly `IWizard` che implementa l'interfaccia. Il nome dell'assembly deve essere specificato come nome completo dell'assembly. Ad esempio: `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  `Assembly` è un elemento figlio obbligatorio di `WizardExtension`.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows.
+ Nell'esempio seguente vengono illustrati i metadati [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] per il modello di progetto standard per un'applicazione Windows.The following example illustrates the metadata for the standard project template for a Windows application.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -88,6 +88,6 @@ Specifica il nome o un nome sicuro dell'assembly che implementa il `IWizard` int
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
-- [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Procedura: utilizzare procedure guidate con modelli di progettoHow to: Use wizards with project templates](../extensibility/how-to-use-wizards-with-project-templates.md)

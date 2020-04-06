@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName | Microsoft Docs
+title: IDebugCustomAttribute::GetName . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetName
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ed7abc9682d0a9f56c50fe7510ed3f276a6bf5a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 15d435d043d0e3863358628fa12016431a417918
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315199"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732767"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Ottiene il nome dell'attributo personalizzato.
@@ -41,13 +41,13 @@ int GetName(
 
 ## <a name="parameters"></a>Parametri
 `bstrName`\
-[out] Restituisce una stringa contenente il nome dell'attributo personalizzato.
+[fuori] Restituisce una stringa contenente il nome dell'attributo personalizzato.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- L'oggetto restituito da questo metodo denominato corrisponde al nome della classe utilizzata per dichiarare l'attributo. Ciò non è uguale a può corrispondere al nome della classe dell'attributo personalizzato come c# consente il suffisso "Attribute" che si desidera eliminare da un nome di attributo personalizzato quando viene usata in una dichiarazione.
+## <a name="remarks"></a>Osservazioni
+ Il nome restituito da questo metodo corrisponde al nome della classe utilizzata per dichiarare l'attributo. Questo potrebbe non corrispondere esattamente al nome della classe di attributi personalizzati come C , consente il suffisso "Attribute" da eliminare da un nome di attributo personalizzato quando viene utilizzato in una dichiarazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

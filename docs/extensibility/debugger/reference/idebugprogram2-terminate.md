@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Terminate | Microsoft Docs
+title: Metodo IDebugProgram2::Terminate . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Terminate
 ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16a6d60173090642bda7d8fd940ecf0699e1d7ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 913c90e34e308ce5bb4ceecface739afc8d03f3d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331506"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722750"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 Termina il programma.
@@ -38,13 +38,13 @@ int Terminate();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Se possibile, verrà terminato e scaricato dal processo; il programma in caso contrario, il motore di debug (DE) eseguirà le operazioni di pulitura necessarie.
+## <a name="remarks"></a>Osservazioni
+ Se possibile, il programma verrà terminato e scaricato dal processo; in caso contrario, il motore di debug (DE) eseguirà tutte le operazioni di pulizia necessarie.
 
- Questo metodo o la [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) viene chiamato dall'IDE, in genere in risposta all'utente di interrompere il debug di tutti. L'implementazione di questo metodo deve, in teoria, terminare il programma all'interno del processo. In caso contrario, la Germania deve impedire che il programma in esecuzione altri in questo processo ed eseguire la pulizia necessaria. Se il `IDebugProcess2::Terminate` metodo è stato chiamato dall'IDE, l'intero processo verrà terminato un certo momento dopo la `IDebugProgram2::Terminate` viene chiamato il metodo.
+ Questo metodo o il [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) metodo viene chiamato dall'IDE, in genere in risposta all'utente interrompere tutto il debug. L'implementazione di questo metodo dovrebbe, idealmente, terminare il programma all'interno del processo. Se questo non è possibile, il DE dovrebbe impedire il programma di esecuzione più in questo processo (ed eseguire qualsiasi pulizia necessaria). Se `IDebugProcess2::Terminate` il metodo è stato chiamato dall'IDE, l'intero `IDebugProgram2::Terminate` processo verrà terminato dopo la chiamata al metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-- [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
+- [Terminare](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

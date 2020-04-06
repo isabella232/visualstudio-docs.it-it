@@ -1,24 +1,24 @@
 ---
-title: IDebugPortSupplierDescription2 | Microsoft Docs
+title: Proprietà IDebugPortSupplierDescription2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
 ms.assetid: dd19b9d6-0703-44b3-9498-cedffa0ce5b7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae6491628888f682d61c94ae618bfad72837c845
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69853e34788a2f24afe183dfbb7070e48f14aa46
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339886"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724360"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Consente il [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente per visualizzare il testo all'interno di **informazioni sul trasporto** sezione del **Connetti a processo** nella finestra di dialogo.
+Consente [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] all'interfaccia utente di visualizzare il testo all'interno della sezione **Informazioni sul trasporto** della finestra di dialogo Connetti a **processo.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -27,14 +27,14 @@ IDebugPortSupplierDescription2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Questa interfaccia viene implementata da fornitori di porte.
+ Questa interfaccia viene implementata dai fornitori di porte.
 
 ## <a name="methods"></a>Metodi
- Nella tabella seguente sono illustrati i metodi di `IDebugPortSupplierDescription2`.
+ Nella tabella seguente vengono `IDebugPortSupplierDescription2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Recupera la descrizione e una descrizione dei metadati per il fornitore della porta.|
+|[GetDescrizione](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Recupera i metadati di descrizione e descrizione per il fornitore della porta.|
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: Msdbg.h

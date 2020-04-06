@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumParameters | Microsoft Docs
+title: Proprietà IDebugMethodField::EnumParameters . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumParameters method
 ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d455d380f66689cd2245070a7ef0bf9290a2455
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13df02cf5870e630c4aecb34e9295d218ba7a0eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324226"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727192"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 Crea un enumeratore per i parametri del metodo.
@@ -41,17 +41,17 @@ int EnumParameters(
 
 ## <a name="parameters"></a>Parametri
 `ppParams`\
-[out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) dell'oggetto che rappresenta l'elenco di parametri al metodo; in caso contrario, restituisce un valore null se non sono presenti parametri.
+[fuori] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) oggetto che rappresenta l'elenco di parametri per il metodo; in caso contrario, restituisce un valore null se non sono presenti parametri.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK o restituisce S_FALSE se non sono presenti parametri. In caso contrario, verrà restituito un codice di errore.
+ Se ha esito positivo, restituisce S_OK o restituisce S_FALSE se non sono presenti parametri. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Note
- Ogni elemento è un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetti che rappresentano diversi tipi di parametri. Chiamare il [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metodo su ogni oggetto per determinare esattamente quale tipo di parametro l'oggetto rappresenta.
+## <a name="remarks"></a>Osservazioni
+ Ogni elemento è un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto che rappresenta diversi tipi di parametri. Chiamare il [getKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metodo su ogni oggetto per determinare esattamente il tipo di parametro rappresentato dall'oggetto.
 
- Un parametro include il nome di variabile e il relativo tipo. Il primo parametro a un metodo della classe è in genere il puntatore "this".
+ Un parametro include sia il nome della variabile che il tipo. Il primo parametro di un metodo di classe è in genere il puntatore "this".
 
- Se solo i tipi dei parametri è necessaria, chiamare il [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) (metodo).
+ Se sono necessari solo i tipi dei parametri, chiamare il [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

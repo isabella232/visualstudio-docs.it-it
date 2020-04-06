@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA | Microsoft Docs
+title: BP_RESOLUTION_DATA . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_DATA structure
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8fcf2443cdc013e6f81968336101b78ea220784
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 93a78f84c10af047e596459b68211b885d3c3085
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346536"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737844"
 ---
-# <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
-Descrive il risultato dell'associazione di un punto di interruzione dei dati.
+# <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
+Viene descritto il risultato dell'associazione di un punto di interruzione dei dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,19 +47,19 @@ public struct BP_RESOLUTION_DATA {
 
 ## <a name="members"></a>Membri
 `bstrDataExpr`\
-L'espressione di dati che è stata associata.
+Espressione di dati associata.
 
 `bstrFunc`\
-Il nome della funzione è associato il punto di interruzione dei dati (se presente).
+Nome della funzione a cui è associato il punto di interruzione di dati (se presente).
 
 `bstrImage`\
-Il nome del modulo (ad esempio, MyModule.dll) che è associato il punto di interruzione dei dati in.
+Nome del modulo (MyModule.dll, ad esempio) a cui è associato il punto di interruzione di dati.
 
 `dwFlags`\
-Un valore compreso il [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) enumerazione, che indica come viene implementato il punto di interruzione dei dati.
+Valore dell'enumerazione [BP_RES_DATA_FLAGS,](../../../extensibility/debugger/reference/bp-res-data-flags.md) che descrive la modalità di implementazione del punto di interruzione dei dati.
 
-## <a name="remarks"></a>Note
-Questa struttura è un membro del [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struttura, che a sua volta è un membro delle [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura restituita dal [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metodo.
+## <a name="remarks"></a>Osservazioni
+Questa struttura è un membro del [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struttura, che a sua volta è un membro del [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura restituita dal [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metodo.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

@@ -1,5 +1,5 @@
 ---
-title: Creazione di plug-in un controllo del codice sorgente | Microsoft Docs
+title: Creazione di un plug-in del controllo del codice sorgente Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,43 +7,43 @@ helpviewer_keywords:
 - source control plug-ins
 - source control [Visual Studio SDK], plug-ins
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8489e991a54df5b905289a64fccb0df65c3cec8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341922"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709176"
 ---
-# <a name="create-a-source-control-plug-in"></a>Creare un controllo del codice sorgente del plug-in
-Visual Studio SDK fornisce le risorse che consentono di aggiungere funzionalità di controllo di origine per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Consente di usare qualsiasi DLL del plug-in che è conforme con l'API dei plug-in del controllo origine descritti in questa documentazione.
+# <a name="create-a-source-control-plug-in"></a>Creare un plug-in del controllo del codice sorgenteCreate a source control plug-in
+Visual Studio SDK fornisce risorse che consentono di aggiungere [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità di controllo del codice sorgente all'ambiente di sviluppo integrato (IDE). Consente di utilizzare qualsiasi DLL di plug-in conforme all'API del plug-in del controllo del codice sorgente descritta in questa documentazione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Introduzione](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 
- Viene descritto come installare un plug-in del controllo del codice sorgente ed evidenzia le versioni dell'API dei plug-in del controllo origine attualmente disponibili.
+ Viene descritto come installare un plug-in del controllo del codice sorgente ed evidenzia le versioni dell'API del plug-in del controllo del codice sorgente attualmente disponibili.
 
-- [Architettura](../../extensibility/internals/source-control-plug-in-architecture.md)
+- [Architecture](../../extensibility/internals/source-control-plug-in-architecture.md)
 
- Usa un diagramma dell'architettura per illustrare l'integrazione di un controllo del codice sorgente del plug-in con il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
+ Utilizza un diagramma dell'architettura per spiegare l'integrazione di un plug-in del controllo del codice sorgente con l'IDE. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 
-- [Guida per i test](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+- [Guida ai test](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
 
- Vengono fornite istruzioni su come testare l'installazione e funzionamento di un plug-in del controllo del codice sorgente.
+ Vengono fornite indicazioni su come testare l'installazione e il funzionamento di un plug-in del controllo del codice sorgente.
 
 ## <a name="related-sections"></a>Sezioni correlate
-- [Creare un pacchetto VSPackage di controllo di origine](../../extensibility/internals/creating-a-source-control-vspackage.md)
+- [Creare un controllo del codice sorgente VSPackageCreate a source control VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- Viene illustrato come creare un controllo del codice sorgente VSPackage che fornisce controllo del codice sorgente ma che non solo sostituisce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controllo dell'interfaccia utente del codice sorgente.
+ Viene illustrato come creare un controllo del codice sorgente VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che non solo fornisce funzionalità di controllo del codice sorgente, ma sostituisce l'interfaccia utente del controllo del codice sorgente.
 
-- [Plug-in controllo codice sorgente](../../extensibility/source-control-plug-ins.md)
+- [Plug-in del controllo del codice sorgente](../../extensibility/source-control-plug-ins.md)
 
- Fornisce un elenco completo di tutti gli elementi nell'API dei plug-in controllo di origine.
+ Fornisce un elenco completo di tutti gli elementi nell'API del plug-in del controllo del codice sorgente.
 
 - [Controllo del codice sorgente](../../extensibility/internals/source-control.md)
 
- Vengono illustrate le opzioni per l'implementazione del controllo del codice sorgente come una funzionalità integrata di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Vengono illustrate le opzioni per l'implementazione del controllo del codice sorgente come funzionalità integrata di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

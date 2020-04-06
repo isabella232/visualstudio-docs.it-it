@@ -1,5 +1,5 @@
 ---
-title: 'IDebugEngine3:: SetSymbolPath | Microsoft Docs'
+title: IDebugEngine3::SetSymbolPath ??? Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetSymbolPath
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fe3000804971c8bd8cbf896a592bd11b875bfa8
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.openlocfilehash: 1fbe5128900fa10147c747cbcba4129e96d4c4ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506384"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730669"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-Imposta il percorso o i percorsi in cui vengono cercati i simboli di debug.
+Imposta il percorso o i percorsi cercati per i simboli di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,27 +46,27 @@ int SetSymbolPath(
 ## <a name="parameters"></a>Parametri
 
 `szSymbolSearchPath`\
-in Stringa che contiene il percorso o i percorsi di ricerca dei simboli. Per informazioni dettagliate, vedere la sezione "osservazioni". Non può essere Null.
+[in] Stringa contenente il percorso o i percorsi di ricerca dei simboli. Vedere "Osservazioni" per i dettagli. Non può essere null.
 
 `szSymbolCachePath`\
-in Stringa contenente il percorso locale in cui i simboli possono essere memorizzati nella cache. Non può essere Null.
+[in] Stringa contenente il percorso locale in cui i simboli possono essere memorizzati nella cache. Non può essere null.
 
 `Flags`\
-in Non utilizzato; sempre impostato su 0.
+[in] Non utilizzato; sempre impostato su 0.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- La stringa `szSymbolSearchPath` è un elenco di uno o più percorsi, separati da punti e virgola, per la ricerca di simboli. Questi percorsi possono essere un percorso locale, un percorso di tipo UNC o un URL. Questi percorsi possono anche essere costituiti da una combinazione di tipi diversi. Se il percorso è UNC (ad esempio \\\Symserver\Symbols), il motore di debug deve determinare se il percorso è un server di simboli e deve essere in grado di caricare i simboli da tale server, inserendoli nella cache nel percorso specificato da `szSymbolCachePath`.
+## <a name="remarks"></a>Osservazioni
+ La `szSymbolSearchPath` stringa è un elenco di uno o più percorsi, separati da punto e virgola, per la ricerca di simboli. Questi percorsi possono essere un percorso locale, un percorso in stile UNC o un URL. Questi percorsi possono anche essere un mix di diversi tipi. Se il percorso è UNC \\(ad esempio, "Symserver" o "Symbols"), il motore di debug deve determinare se il percorso è `szSymbolCachePath`diretto a un server di simboli e deve essere in grado di caricare simboli da tale server, memorizzandoli nella cache nel percorso specificato da .
 
- Il percorso dei simboli può anche contenere uno o più percorsi della cache. Le cache sono elencate in ordine di priorità, con la prima cache con priorità più elevata e separate da * simboli. Ad esempio,
+ Il percorso dei simboli può contenere anche uno o più percorsi della cache. Le cache sono elencate in ordine di priorità, con la cache con priorità più alta e separate da simboli . Ad esempio:
 
 ```
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com
 ```
 
- Il metodo [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) esegue il carico effettivo dei simboli.
+ Il [metodo LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) esegue il caricamento effettivo dei simboli.
 
 ## <a name="see-also"></a>Vedere anche
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)

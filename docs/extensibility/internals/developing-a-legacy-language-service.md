@@ -1,5 +1,5 @@
 ---
-title: Sviluppo di un servizio di linguaggio Legacy | Microsoft Docs
+title: Sviluppo di un servizio di linguaggio Legacy Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,48 +11,48 @@ f1_keywords:
 helpviewer_keywords:
 - language services, developing
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa21b2f2e8b0321e829fd27fde1d833a63e7ecb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0c7f930d5087b6a822156fd44024def0d5b42b49
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351568"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708664"
 ---
-# <a name="develop-a-legacy-language-service"></a>Sviluppare un servizio di linguaggio legacy
-Questa sezione sono riportati i collegamenti ad argomenti che consentono di creare un servizio di linguaggio legacy.
+# <a name="develop-a-legacy-language-service"></a>Sviluppare un servizio di linguaggio legacyDevelop a legacy language service
+In questa sezione vengono forniti collegamenti ad argomenti che consentono di creare un servizio di linguaggio legacy.
 
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare un servizio di linguaggio, vedere [le estensioni del servizio di Editor e linguaggio](../../extensibility/editor-and-language-service-extensions.md).
+ Servizi di linguaggio legacy vengono implementati come parte di un VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'utilizzare le estensioni MEF. Per ulteriori informazioni sul nuovo modo di implementare un servizio di linguaggio, vedere Editor e estensioni del [servizio di linguaggio](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
+> Si consiglia di iniziare a utilizzare la nuova API dell'editor il prima possibile. Ciò migliorerà le prestazioni del servizio di linguaggio e consentirà di sfruttare le nuove funzionalità dell'editor.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Modello di un servizio di linguaggio legacy](../../extensibility/internals/model-of-a-legacy-language-service.md)
 
- Fornisce un modello di un servizio di linguaggio minimo per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principale. È possibile usare questo modello come guida per la creazione di un proprio servizio di linguaggio.
+ Fornisce un modello di un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] servizio di linguaggio minimo per l'editor principale. È possibile utilizzare questo modello come guida per la creazione di un servizio di linguaggio personalizzato.
 
-- [Interfacce del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-interfaces.md)
+- [Interfacce del servizio di linguaggio legacyLegacy language service interfaces](../../extensibility/internals/legacy-language-service-interfaces.md)
 
- Descrive gli oggetti necessari per implementare un servizio di linguaggio e fornisce un elenco di oggetti aggiuntivi che è possibile usare per fornire l'evidenziazione della sintassi, i dati del metodo e altre funzionalità.
+ Vengono illustrati gli oggetti necessari per implementare un servizio di linguaggio e viene fornito un elenco di oggetti aggiuntivi che è possibile utilizzare per fornire l'evidenziazione della sintassi, i dati del metodo e altre funzionalità.
 
-- [Intercetta comandi del servizio di linguaggio legacy](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+- [Intercettare i comandi del servizio di linguaggio legacyIntercept legacy language service commands](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
 
- Viene descritto come inserire un filtro di comando nel servizio di linguaggio per intercettare i comandi che in caso contrario, è necessario gestire la visualizzazione di testo.
+ Viene descritto come inserire un filtro di comando nel servizio di linguaggio per intercettare i comandi che la visualizzazione di testo sarebbe altrimenti gestire.
 
-- [Registrare un servizio di linguaggio legacy](../../extensibility/internals/registering-a-legacy-language-service2.md)
+- [Registrare un servizio di linguaggio legacyRegister a legacy language service](../../extensibility/internals/registering-a-legacy-language-service2.md)
 
- Fornisce informazioni su come registrare il servizio di linguaggio usando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Vengono fornite informazioni su come registrare il servizio di linguaggio utilizzando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-- [Supporto del servizio del linguaggio per il debug](../../extensibility/internals/language-service-support-for-debugging.md)
+- [Supporto del servizio di linguaggio per il debugLanguage service support for debugging](../../extensibility/internals/language-service-support-for-debugging.md)
 
  Viene descritto come un servizio di linguaggio può fornire funzionalità per supportare un debugger.
 
-- [Elenco di controllo: Creare un servizio di linguaggio legacy](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [Elenco di controllo: creare un servizio di linguaggio legacyChecklist: Create a legacy language service](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
 
  Vengono fornite istruzioni dettagliate per la creazione e l'integrazione di un servizio di linguaggio per l'editor principale.
 
@@ -63,16 +63,16 @@ Questa sezione sono riportati i collegamenti ad argomenti che consentono di crea
 
 - [Completamento delle istruzioni in un servizio di linguaggio legacy](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
 
- Illustra il completamento, il processo mediante il quale un servizio di linguaggio consente agli utenti di completare una parola chiave del linguaggio o l'elemento che è stato avviato digitando.
+ Viene illustrato il completamento delle istruzioni, il processo mediante il quale un servizio di linguaggio consente agli utenti di completare una parola chiave del linguaggio o un elemento che hanno iniziato a digitare.
 
-- [Informazioni sui parametri in un servizio di linguaggio legacy](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
+- [Informazioni sui parametri in un servizio di linguaggio legacyParameter Info in a legacy language service](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
 
- Viene descritto come fornire suggerimenti di metodo per le funzioni in overload e i metodi.
+ Viene descritto come fornire suggerimenti sui metodi per le funzioni e i metodi in overload.
 
-- [Procedura: Fornisce il supporto di testo nascosto in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
+- [Procedura: fornire supporto per testo nascosto in un servizio di linguaggio legacyHow to: Provide hidden text support in a legacy language service](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 
  Viene illustrato lo scopo di un'area di testo nascosto e vengono fornite istruzioni su come implementare un'area di testo nascosto.
 
-- [Procedura: Fornire supporto per la struttura espanso in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+- [Procedura: fornire il supporto della struttura espansa in un servizio di linguaggio legacyHow to: Provide expanded outlining support in a legacy language service](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Illustra le due opzioni che estendono il supporto della struttura per il linguaggio oltre, supportando il *Comprimi alle definizioni* comando.
+ Vengono illustrate le due opzioni che estendono il supporto della struttura per il linguaggio oltre al supporto del comando *Comprimi alle definizioni.*
