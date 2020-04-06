@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE | Microsoft Docs
+title: REFERENCE_TYPE . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_TYPE enumeration
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c45457566682e373b879892cfdd26707102ebd5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329274"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713665"
 ---
-# <a name="referencetype"></a>REFERENCE_TYPE
+# <a name="reference_type"></a>REFERENCE_TYPE
 Specifica il tipo di riferimento.
 
 ## <a name="syntax"></a>Sintassi
@@ -44,15 +44,15 @@ public enum enum_REFERENCE_TYPE { 
 
 ## <a name="fields"></a>Campi
  `REF_TYPE_WEAK`\
- Specifica un riferimento debole. Non può essere combinato con `REF_TYPE_STRONG`.
+ Specifica un riferimento debole. Non può `REF_TYPE_STRONG`essere combinato con .
 
  `REF_TYPE_STRONG`\
- Specifica un riferimento sicuro. Non può essere combinato con `REF_TYPE_WEAK`.
+ Specifica un riferimento sicuro. Non può `REF_TYPE_WEAK`essere combinato con .
 
-## <a name="remarks"></a>Note
- Utilizzato come il `dwRefType` membro della [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struttura.
+## <a name="remarks"></a>Osservazioni
+ Utilizzato come `dwRefType` membro della struttura [DEBUG_REFERENCE_INFO.](../../../extensibility/debugger/reference/debug-reference-info.md)
 
- Passato come parametro per il [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) (metodo).
+ Passato come parametro al metodo [SetReferenceType.](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

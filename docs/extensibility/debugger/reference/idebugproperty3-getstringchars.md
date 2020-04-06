@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Microsoft Docs
+title: Proprietà IDebugProperty3::GetStringChars . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16d352ae5397d786c5d77f56a513e9ae2db2d7b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348835"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721089"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Recupera la stringa associata a questa proprietà e lo archivia in un buffer fornito dall'utente.
+Recupera la stringa associata a questa proprietà e la archivia in un buffer fornito dall'utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,24 +45,24 @@ int GetStringChars(
 
 ## <a name="parameters"></a>Parametri
 `buflen`\
-[in] Numero massimo di caratteri può contenere il buffer fornito dall'utente.
+[in] Numero massimo di caratteri che il buffer fornito dall'utente può contenere.
 
 `rgString`\
-[out] Restituisce la stringa.
+[fuori] Restituisce la stringa.
 
- [C++ solo], `rgString` è un puntatore a un buffer che riceve i caratteri Unicode della stringa. Questo buffer deve essere almeno `buflen` caratteri (non byte) nella dimensione.
+ È disponibile solo `rgString` un puntatore a un buffer che riceve i caratteri Unicode della stringa. Questo buffer deve `buflen` avere una dimensione di almeno caratteri (non byte).
 
 `pceltFetched`\
-[out] In cui viene restituito il numero di caratteri effettivamente archiviati nel buffer. (Può essere `NULL` in C++.)
+[fuori] Dove viene restituito il numero di caratteri effettivamente archiviati nel buffer. (Può `NULL` essere in C.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+Se ha `S_OK`esito positivo, restituisce ; in caso contrario restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
-In C++, prestare attenzione per assicurarsi che il buffer è almeno `buflen` caratteri Unicode. Si noti che un carattere Unicode è la lunghezza di 2 byte.
+## <a name="remarks"></a>Osservazioni
+È necessario prestare attenzione a garantire che il buffer `buflen` sia lungo almeno caratteri Unicode. Si noti che un carattere Unicode è lungo 2 byte.
 
 > [!NOTE]
-> In C++, la stringa restituita non include un carattere di terminazione null. Se non specificato, `pceltFetched` specificherà il numero di caratteri nella stringa.
+> La stringa restituita non include un carattere di terminazione null. Se specificato, `pceltFetched` verrà specificato il numero di caratteri nella stringa.
 
 ## <a name="example"></a>Esempio
 

@@ -1,161 +1,161 @@
 ---
-title: "Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio | Microsoft Docs"
+title: "Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio Documenti Microsoft"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86ed2455b19a3f7e56c92a37a9402b7d65bf70a3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a34260124baedeba297dbd64e8a2c1856b55ec5a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337918"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697132"
 ---
-# <a name="walkthrough-publish-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicare un'estensione di Visual Studio
+# <a name="walkthrough-publish-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicare un'estensione di Visual StudioWalkthrough: Publish a Visual Studio extension
 
-Questa procedura dettagliata illustra come pubblicare un'estensione di Visual Studio in Visual Studio Marketplace. Quando si aggiunge l'estensione nel Marketplace, gli sviluppatori possono utilizzare **estensioni e aggiornamenti** per cercare estensioni nuove e aggiornate.
+Questa procedura dettagliata viene illustrato come pubblicare un'estensione di Visual Studio in Visual Studio Marketplace.This walkthrough shows you how to publish a Visual Studio extension to the Visual Studio Marketplace. Quando aggiungi l'estensione al Marketplace, gli sviluppatori possono utilizzare **le estensioni e gli aggiornamenti** per cercare estensioni nuove e aggiornate.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
- Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per ulteriori informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
-## <a name="create-a-visual-studio-extension"></a>Creare un'estensione di Visual Studio
+## <a name="create-a-visual-studio-extension"></a>Creare un'estensione di Visual StudioCreate a Visual Studio extension
 
-Questo articolo usa un'estensione VSPackage predefinito, ma i passaggi sono validi per ogni tipo di estensione.
+Questo articolo usa un'estensione VSPackage predefinita, ma i passaggi sono validi per ogni tipo di estensione.
 
-1. Creare un pacchetto VSPackage in c# denominato `TestPublish` che dispone di un comando di menu. Per altre informazioni, vedere [creare la prima estensione: Hello World](../extensibility/extensibility-hello-world.md).
+1. Creare un pacchetto VSPackage `TestPublish` in nome C , che dispone di un comando di menu. Per ulteriori informazioni, vedere [Creare la prima estensione: Hello World](../extensibility/extensibility-hello-world.md).
 
-## <a name="package-your-extension"></a>Creare un pacchetto di estensione
+## <a name="package-your-extension"></a>Creare il pacchetto dell'estensione
 
-1. Aggiornare l'estensione *vsixmanifest* con le informazioni corrette sul nome del prodotto, autore e versione.
+1. Aggiornare l'estensione *vsixmanifest* con le informazioni corrette sul nome del prodotto, l'autore e la versione.
 
-   ![update extension vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![aggiornamento estensione vsixmanifest](media/update-extension-vsixmanifest.png)
 
-2. Compilare l'estensione **rilascio** modalità. L'estensione è ora fornita come un progetto VSIX nella cartella \bin\Release.
+2. Compilare l'estensione in modalità **di rilascio.** A questo punto l'estensione è inclusa in un pacchetto VSIX nella cartella di rilascio.
 
-3. È possibile fare doppio clic il progetto VSIX per verificare l'installazione.
+3. È possibile fare doppio clic sul valore VSIX per verificare l'installazione.
 
 ## <a name="test-the-extension"></a>Testare l'estensione
 
- Prima di distribuire l'estensione, compilare e testare per verificare che sia installato correttamente nell'istanza sperimentale di Visual Studio.
+ Prima di distribuire l'estensione, compilarla e testarla per assicurarsi che sia installata correttamente nell'istanza sperimentale di Visual Studio.
 
-1. In Visual Studio, avviare il debug per aprire un'istanza sperimentale di Visual Studio.
+1. In Visual Studio, start debugging to open an experimental instance of Visual Studio.
 
-2. Nell'istanza sperimentale, passare al **degli strumenti** dal menu **estensioni e aggiornamenti**. L'estensione TestPublish dovrebbe essere visualizzato nel riquadro centrale e abilitato.
+2. Nell'istanza sperimentale, accedere al menu **Strumenti** e fare clic su **Estensioni e aggiornamenti**. L'estensione TestPublish deve essere visualizzata nel riquadro centrale ed essere abilitata.
 
-3. Nel **strumenti** menu, assicurarsi che venga visualizzato il comando di test.
+3. Nel menu **Strumenti,** assicurarsi che venga visualizzato il comando test.
 
-## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>Pubblicare l'estensione per Visual Studio Marketplace
+## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>Pubblicare l'estensione in Visual Studio Marketplace
 
-1. Assicurarsi di avere compilato la versione dell'estensione e che sia aggiornato.
+1. Assicurati di aver creato la versione di rilascio dell'estensione e che sia aggiornata.
 
-2. In un web browser, aprire il [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) sito Web.
+2. In un Web browser aprire il sito Web di [Visual Studio Marketplace.](https://marketplace.visualstudio.com/vs)
 
-3. Nell'angolo superiore destro, fare clic su **Accedi**.
+3. Nell'angolo superiore destro fare clic su **Accedi**.
 
-4. Usare l'account Microsoft per accedere. Se non hai un account Microsoft, è possibile creare uno a questo punto.
+4. Usare l'account Microsoft per accedere. Se non si dispone di un account Microsoft, è possibile crearne uno a questo punto.
 
-5. Fare clic su **pubblicare estensioni**.  Questa opzione si passa alla pagina di gestione per tutte le estensioni. Se non hai un account editore, viene chiesto di crearne uno in questo momento.
+5. Fare clic su **Pubblica estensioni**.  Questa opzione consente di accedere alla pagina di gestione di tutte le estensioni. Se non si dispone di un account editore, viene richiesto di crearne uno in questo momento.
 
-   ![Caricare in Marketplace](media/upload-to-marketplace.png)
+   ![Carica su Marketplace](media/upload-to-marketplace.png)
 
-6. Scegliere il server di pubblicazione da usare per caricare l'estensione. È possibile modificare i server di pubblicazione facendo clic sui nomi di server di pubblicazione elencati a sinistra. Fare clic su **nuova estensione** e selezionare **Visual Studio**.
+6. Scegli l'editore che desideri utilizzare per caricare l'estensione. Puoi cambiare editore facendo clic sui nomi dei publisher elencati a sinistra. Fare clic su **Nuova estensione** e selezionare **Visual Studio**.
 
-7. In **1: Carica estensione**, è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o è sufficiente aggiungere un collegamento al proprio sito Web. In questo esempio, l'estensione *TestPublish.vsix* viene caricato. Trascinare l'estensione oppure usare il **fare clic su** collegamento per cercare il file. Trovare l'estensione nella cartella \bin\Release del progetto.  Scegliere **Continua**.
+7. In **1: Carica estensione**, è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o semplicemente aggiungere un collegamento al proprio sito Web. In questo esempio viene caricata l'estensione *TestPublish.vsix.In* this example, the extension, TestPublish.vsix is uploaded. Trascina e rilascia l'estensione o usa il link **di clic** per cercare il file. Individuare l'estensione nella cartella di rilascio del progetto.  Fare clic su **Continua**.
 
-8. In **2: Fornire i dettagli dell'estensione**, alcuni campi sono popolati automaticamente dal *vsixmanifest* dall'estensione di file. Per informazioni dettagliate su ognuna di seguito:
+8. In **2: fornire i dettagli dell'estensione**, alcuni campi vengono popolati automaticamente dal file *source.extension.vsixmanifest* dall'estensione. Per maggiori dettagli su ciascuno di essi qui sotto:
 
-    * **Nome interno** viene usato nell'URL della pagina dei dettagli dell'estensione. Per un esempio, la pubblicazione di un'estensione con il nome del server di pubblicazione "myname" e specificando il nome interno per essere "my extension" i risultati in un URL di "marketplace.visualstudio\.com/items?itemName=myname.myextension" per i dettagli dell'estensione pagina.
+    * **Nome interno** viene utilizzato nell'URL della pagina dei dettagli dell'estensione. Ad esempio, la pubblicazione di un'estensione con il nome dell'editore "myname" e la specifica\.del nome interno come "mia estensione" genera un URL di "marketplace.visualstudio com/items?itemName.myname.myextension" per la pagina dei dettagli dell'estensione.
 
-    * **Nome visualizzato** dell'estensione. Questo nome viene popolato automaticamente dal *vsixmanifest* file.
+    * **Nome visualizzato** dell'estensione. Questo nome viene compilato automaticamente dal file *source.extension.vsixmanifest.*
 
-    * **Versione** numerica dell'estensione si sta caricando. Questa versione viene compilato automaticamente dal *vsixmanifest* file.
+    * **Numero** di versione dell'estensione che si sta caricando. Questa versione viene compilata automaticamente dal file *source.extension.vsixmanifest.*
 
-    * **ID VSIX** è l'identificatore univoco utilizzato per l'estensione per Visual Studio. Questo identificatore è obbligatorio se si vuole avere l'estensione aggiornate automaticamente. Questo identificatore viene popolato automaticamente dal *vsixmanifest* file.
+    * **ID VSIX** è l'identificatore univoco utilizzato da Visual Studio per l'estensione. Questo identificatore è obbligatorio se si desidera aggiornare automaticamente l'estensione. Questo identificatore viene compilato automaticamente dal file *source.extension.vsixmanifest.*
 
-    * **Logo** che viene usato per l'estensione. Questo logo viene popolato automaticamente dal *vsixmanifest* file se specificato.
+    * **Logo** utilizzato per l'estensione. Questo logo viene compilato automaticamente dal file *source.extension.vsixmanifest,* se specificato.
 
-    * **Descrizione breve** delle funzionalità dell'estensione. Questa descrizione viene popolato automaticamente dal *vsixmanifest* file.
+    * **Breve descrizione** delle operazioni eseguite dall'estensione. Questa descrizione viene compilata automaticamente dal file *source.extension.vsixmanifest.*
 
-    * **Panoramica** è un buon punto da includere le schermate e informazioni dettagliate sulla funzione associata l'estensione.
+    * **Panoramica** è un buon posto per includere screenshot e informazioni dettagliate su ciò che l'estensione fa.
 
-    * **Le versioni di Visual Studio supportate** consente di scegliere quali versioni di Visual Studio funzionalità sarà disponibile l'estensione. L'estensione viene installata solo per tali versioni.
+    * **Le versioni di Visual Studio supportate** consentono di scegliere le versioni di Visual Studio su cui funzionerà l'estensione. L'estensione viene installata solo in tali versioni.
 
-    * * * Supportato edition consente di scegliere quali edizioni di Visual Studio sarà disponibile l'estensione di Visual Studio. L'estensione viene installata solo per queste edizioni.
+    * L'edizione di Visual Studio supportata consente di scegliere le edizioni di Visual Studio su cui funzionerà l'estensione. L'estensione viene installata solo in tali edizioni.
 
-    * **Tipo**. Il tipo più comune delle estensioni sono **strumenti**.
+    * **Tipo**. Il tipo più comune di estensioni sono **Tools**.
 
-    * **Categorie**. Selezionare un massimo di tre che sono una soluzione ottimale per l'estensione.
+    * **Categorie**. Scegli fino a tre che sono la soluzione migliore per la tua estensione.
 
-    * **I tag** sono parole chiave che consentono agli utenti di trovare l'estensione. I tag consentono di aumentare la rilevanza di ricerca delle estensioni nel Marketplace.
+    * **I tag** sono parole chiave che aiutano gli utenti a trovare la tua estensione. I tag consentono di aumentare la pertinenza della ricerca delle estensioni nel Marketplace.
 
-    * **Categoria di prezzi** è il costo dell'estensione.
+    * **Categoria di prezzo** è il costo dell'estensione.
 
-    * **Repository del codice sorgente** consente di condividere un collegamento al codice sorgente con la community.
+    * **Il repository** del codice sorgente consente di condividere un collegamento al codice sorgente con la community.
 
-    * **Consenti domande e risposte per l'estensione** consente agli utenti di lasciare domande nella pagina di voce di estensione.
+    * **Consenti Q&A per l'estensione** consente agli utenti di lasciare domande nella pagina di immissione dell'estensione.
 
-9. Fare clic su **Salva e carica**. Pagina Gestisci visualizzata questa opzione di nuovo il server di pubblicazione. L'estensione non è ancora stata pubblicata. Per pubblicare l'estensione, fare clic sull'estensione e selezionare **Rendi pubblico**. È possibile visualizzare come l'estensione sarà simile in Marketplace, selezionando **Visualizza l'estensione**. Per i numeri di acquisizione, fare clic su **report**. Per apportare modifiche all'estensione, fare clic su **modifica**.
+9. Fare clic su **Salva & caricamento**. Questa opzione consente di tornare alla pagina di gestione del publisher. L'estensione non è ancora stata pubblicata. Per pubblicare l'estensione, fare clic con il pulsante destro del mouse sull'estensione e **scegliere Rendi pubblico**. È possibile visualizzare l'aspetto dell'estensione su Marketplace selezionando **Visualizza estensione**. Per i numeri di acquisizione, fare clic su **Report**. Per apportare modifiche all'estensione, fare clic su **Modifica**.
 
-   ![Menu dell'estensione movimento](media/extension-entry-menu.png)
+   ![Menu Voce estensione](media/extension-entry-menu.png)
 
-10. Dopo aver fatto clic **Rendi pubblico**, l'estensione è ora pubblica. Visual Studio Marketplace per l'estensione di ricerca.
+10. Dopo aver fatto clic su **Rendi pubblico**, l'estensione è ora pubblica. Cercare l'estensione in Visual Studio Marketplace.
 
-## <a name="add-additional-users-to-manage-your-publisher-account"></a>Aggiungere altri utenti per gestire l'account editore
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>Aggiungere altri utenti per gestire l'account publisher
 
-Marketplace supporta la concessione di autorizzazioni aggiuntive agli utenti per accedere e gestire un account editore.
+Marketplace supporta la concessione di ad altri utenti autorizzazioni per accedere e gestire un account publisher.
 
-1. Passare all'account del server di pubblicazione che si desidera aggiungere altri utenti a.
+1. Accedi all'account publisher a cui desideri aggiungere altri utenti.
 
-2. Selezionare **membri** e fare clic su **Add**.
+2. Selezionare **Membri** e fare clic su **Aggiungi**.
 
-   ![Aggiungere altro utente](media/add-users.png)
+   ![Aggiungi utente aggiuntivo](media/add-users.png)
 
-3. È quindi possibile specificare l'indirizzo di posta elettronica dell'utente che si desidera aggiungere e concedere il corretto livello di accesso nel **selezionare un ruolo**.  È possibile scegliere una delle opzioni seguenti:
+3. È quindi possibile specificare l'indirizzo di posta elettronica dell'utente che si desidera aggiungere e concedere il livello di accesso corretto in **Selezionare un ruolo**.  È possibile scegliere tra le opzioni seguenti:
 
-   * **Creatore**: L'utente può pubblicare estensioni, ma non è possibile visualizzare o gestire estensioni pubblicate da altri utenti.
+   * **Creatore:** l'utente può pubblicare estensioni, ma non può visualizzare o gestire le estensioni pubblicate da altri utenti.
 
-   * **Lettore**: L'utente può visualizzare le estensioni, ma non è possibile pubblicare o gestire le estensioni.
+   * **Lettore:** l'utente può visualizzare le estensioni, ma non può pubblicare o gestire le estensioni.
 
-   * **Collaboratore**: L'utente può pubblicare e gestire le estensioni, ma non è possibile modificare le impostazioni di pubblicazione o gestire l'accesso.
+   * **Collaboratore:** l'utente può pubblicare e gestire le estensioni, ma non può modificare le impostazioni dell'editore o gestire l'accesso.
 
-   * **Owner**: L'utente può pubblicare e gestire le estensioni, modificare le impostazioni di pubblicazione e gestire l'accesso.
+   * **Proprietario**: L'utente può pubblicare e gestire le estensioni, modificare le impostazioni dell'editore e gestire l'accesso.
 
-## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installare l'estensione da Visual Studio Marketplace
+## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installare l'estensione da Visual Studio MarketplaceInstall the extension from the Visual Studio Marketplace
 
-Ora che la pubblicazione dell'estensione, installarlo in Visual Studio e testarlo.
+Ora che l'estensione è pubblicata, installarla in Visual Studio e testarla.
 
-1. In Visual Studio sul **degli strumenti** menu, fare clic su **estensioni e aggiornamenti**.
+1. In Visual Studio scegliere **Estensioni e aggiornamenti**dal menu **Strumenti** .
 
 2. Fare clic su **Online** e quindi cercare **TestPublish**.
 
-3. Scegliere **Download**. Quindi, l'estensione è pianificata per l'installazione.
+3. Fare clic su **Download**. L'estensione viene quindi pianificata per l'installazione.
 
-4. Per completare l'installazione, chiudere tutte le istanze di Visual Studio.
+4. Per completare l'installazione, chiudere tutte le istanze di Visual Studio.To complete the installation, close all instances of Visual Studio.
 
-## <a name="remove-the-extension"></a>Rimuovere l'estensione.
+## <a name="remove-the-extension"></a>Rimuovere l'estensione
 
 È possibile rimuovere l'estensione da Visual Studio Marketplace e dal computer.
 
 ### <a name="to-remove-the-extension-from-the-visual-studio-marketplace"></a>Per rimuovere l'estensione da Visual Studio Marketplace
 
-1. Aprire il [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) sito Web.
+1. Aprire il sito Web [di Visual Studio Marketplace.](https://marketplace.visualstudio.com/vs)
 
-2. Nell'angolo superiore destro, fare clic su **pubblica** estensioni. Selezionare il server di pubblicazione usato per pubblicare **TestPublish**. L'elenco relativo al **TestPublish** viene visualizzata.
+2. Nell'angolo superiore destro fare clic su **Pubblica** estensioni. Selezionare l'autore utilizzato per pubblicare **TestPublish**. Viene visualizzato l'elenco per **TestPublish.**
 
-3. Fare doppio clic sulla voce estensione e fare clic su **rimuovere**. Viene chiesto di confermare se si vuole rimuovere l'estensione. Fare clic su **OK**.
+3. Fare clic con il pulsante destro del mouse sulla voce di estensione e **scegliere Rimuovi**. Viene chiesto di confermare se si desidera rimuovere l'estensione. Fare clic su **OK**.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Per rimuovere l'estensione dal computer
 
-1. In Visual Studio sul **degli strumenti** menu, fare clic su **estensioni e aggiornamenti**.
+1. In Visual Studio scegliere **Estensioni e aggiornamenti**dal menu **Strumenti** .
 
-2. Selezionare **TestPublish** e quindi fare clic su **Disinstalla**. L'estensione è pianificata quindi per la disinstallazione.
+2. Selezionare **TestPublish** e quindi fare clic su **Disinstalla**. L'estensione viene quindi pianificata per la disinstallazione.
 
-3. Per completare la disinstallazione, chiudere tutte le istanze di Visual Studio.
+3. Per completare la disinstallazione, chiudere tutte le istanze di Visual Studio.To complete the uninstallation, close all instances of Visual Studio.

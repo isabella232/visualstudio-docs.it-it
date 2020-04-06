@@ -1,5 +1,5 @@
 ---
-title: Ottimizzazione dei Menu e comandi della barra degli strumenti | Microsoft Docs
+title: Ottimizzazione dei comandi dei menu e della barra degli strumenti Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - menu commands, implementing
 - toolbars [Visual Studio], commands
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c76e4f37fd77bd35526153bd86d419417a6cdb6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333123"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706915"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Ottimizzazione dei comandi di menu e barre degli strumenti
-L'aggiunta di pacchetti VSPackage e i comandi corrispondenti a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] potrebbe essere un'interfaccia utente piena. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce metodi per ridurre al minimo la confusione di comando dell'interfaccia utente.
+L'aggiunta di VSPackage e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i comandi corrispondenti a può causare un'interfaccia utente affollata. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornisce modi per ridurre al minimo la confusione dei comandi dell'interfaccia utente.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 - [Miglioramento della disponibilità dei comandi](../../extensibility/internals/making-commands-available.md)
 
- Vengono fornite linee guida generali per ridurre al minimo affollare del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente quando si aggiungono pacchetti VSPackage.
+ Fornisce linee guida generali per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ridurre al minimo l'affollamento dell'interfaccia utente quando si aggiungono vsPackage.
 
 - [Linee guida per il posizionamento](../../extensibility/internals/command-placement-guidelines.md)
 

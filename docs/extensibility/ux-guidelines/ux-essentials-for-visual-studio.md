@@ -1,168 +1,168 @@
 ---
-title: Fondamentali sull'esperienza utente per Visual Studio | Microsoft Docs
+title: 'UX Essentials per Visual Studio : Documenti Microsoft'
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c6c329eda477d77ab73be2ad913ac18d67ff3c08
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310803"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698335"
 ---
-# <a name="ux-essentials-for-visual-studio"></a>Fondamentali sull'esperienza utente per Visual Studio
+# <a name="ux-essentials-for-visual-studio"></a>Nozioni fondamentali sull'esperienza utente per Visual Studio
 
 ## <a name="best-practices"></a>Procedure consigliate
 
-### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. La coerenza all'interno dell'ambiente di Visual Studio.
+### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Essere coerenti all'interno dell'ambiente di Visual Studio.
 
-- Seguire esistente [modelli di interazione](interaction-patterns-for-visual-studio.md) all'interno della shell.
+- Seguire i modelli di [interazione](interaction-patterns-for-visual-studio.md) esistenti all'interno della shell.
 
-- Progettare le funzionalità siano coerenti con linguaggio visivo della shell e [requisiti maestria](evaluation-tools-for-visual-studio.md).
+- Caratteristiche di progettazione per essere coerenti con il linguaggio visivo della shell e [i requisiti di artigianato.](evaluation-tools-for-visual-studio.md)
 
-- Usare i controlli e comandi condivisi quando sono presenti.
+- Utilizzare i comandi e i controlli condivisi quando esistono.
 
-- Comprendere la gerarchia di Visual Studio e come stabilisce contesto e le unità dell'interfaccia utente.
+- Comprendere la gerarchia di Visual Studio e come stabilisce il contesto e guida l'interfaccia utente.
 
-### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Usare il servizio di ambiente per i tipi di carattere e colori.
+### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Utilizzare il servizio ambiente per i caratteri e colori.
 
-- Interfaccia utente deve rispettare corrente [tipo di carattere ambiente](fonts-and-formatting-for-visual-studio.md) impostazione a meno che non viene esposta per la personalizzazione nella pagina tipi di carattere e colori nella finestra di dialogo Opzioni.
+- L'interfaccia utente deve rispettare l'impostazione del tipo di [carattere dell'ambiente](fonts-and-formatting-for-visual-studio.md) corrente, a meno che non sia esposta per la personalizzazione nella pagina Tipi di carattere e colori della finestra di dialogo Opzioni.UI should respect the current environment font setting unless it is exposed for customization in the Fonts and Colors page in the Options dialog.
 
-- Elementi dell'interfaccia utente devono usare la [VSColor Service](colors-and-styling-for-visual-studio.md), utilizzare condivisi i token di ambiente o i token specifici delle funzionalità.
+- Gli elementi dell'interfaccia utente devono utilizzare il [servizio VSColor](colors-and-styling-for-visual-studio.md), utilizzando token di ambiente condiviso o token specifici della funzionalità.
 
-### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Apportare tutte le immagini coerenti con il nuovo stile Visual Studio.
+### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Rendere tutte le immagini coerenti con il nuovo stile VS.
 
-- Seguire i principi di progettazione di Visual Studio per le icone, glifi e altri elementi grafici.
+- Seguire i principi di progettazione di Visual Studio per icone, glifi e altri elementi grafici.
 
-- Non inserire testo in elementi grafici.
+- Non inserire testo negli elementi grafici.
 
-### <a name="4-design-from-a-user-centric-perspective"></a>4. Progettare una prospettiva incentrata sull'utente.
+### <a name="4-design-from-a-user-centric-perspective"></a>4. Progettare da una prospettiva incentrata sull'utente.
 
-- Creare il flusso di attività prima le singole funzionalità all'interno di esso.
+- Creare il flusso di attività prima delle singole entità geografiche al suo interno.
 
-- Acquisire familiarità con gli utenti e rendere espliciti nelle specifiche di tali informazioni.
+- Acquisire familiarità con gli utenti e rendere esplicita tale conoscenza nelle specifiche.
 
-- Esaminare l'interfaccia utente, valutare l'esperienza completa, nonché i dettagli.
+- Quando esamini l'interfaccia utente, valuta l'esperienza completa e i dettagli.
 
-- Progettare l'interfaccia utente in modo che rimanga funzionali e accattivanti indipendentemente dal linguaggio o delle impostazioni locali.
+- Progetta l'interfaccia utente in modo che rimanga funzionale e attraente indipendentemente dalle impostazioni locali o dalla lingua.
 
 ## <a name="screen-resolution"></a>Risoluzione dello schermo
 
 ### <a name="minimum-resolution"></a>Risoluzione minima
 
-- È la risoluzione minima per Visual Studio 2015 **1280 x 720**. Ciò significa che è *possibili* usare Visual Studio questa risoluzione, anche se potrebbe non essere un'esperienza utente ottimale. Non è garantito che tutti gli aspetti sarà utilizzabili con risoluzioni inferiori a 1280 x 720.
+- La risoluzione minima per Visual Studio 2015 è **1280x720**. Ciò significa che è *possibile* utilizzare Visual Studio con questa risoluzione, anche se potrebbe non essere un'esperienza utente ottimale. Non vi è alcuna garanzia che tutti gli aspetti saranno utilizzabili con risoluzioni inferiori a 1280x720.
 
-- La risoluzione di destinazione per Visual Studio viene **1366 x 768**. Questa è la soluzione più bassa in corrispondenza del quale vedrai una *buona* esperienza utente.
+- La risoluzione di destinazione per Visual Studio è **1366x768**. Questa è la risoluzione più bassa alla quale promettiamo una *buona* esperienza utente.
 
-- Altezza iniziale della finestra deve essere **inferiore a 700 pixel**, in modo che rientri nella risoluzione minima del frame IDE 96 DPI.
+- L'altezza iniziale della finestra di dialogo deve essere inferiore a **700 pixel,** pertanto rientra nella risoluzione minima del frame IDE a 96 dpi.
 
 ### <a name="high-density-displays"></a>Display ad alta densità
- Interfaccia utente in Visual Studio deve funzionare correttamente in tutti i fattori di scala DPI che Windows supportate per impostazione predefinita: 150%, 200% e % a 250.
+ Interfaccia utente in Visual Studio deve funzionare correttamente in tutti i fattori di ridimensionamento DPI supportati da Windows: 150%, 200% e 250%.
 
 ## <a name="anti-patterns"></a>Anti-modelli
- Visual Studio contiene molti esempi dell'interfaccia utente che seguono le linee guida e procedure consigliate. Favorire la coerenza, gli sviluppatori spesso prestito da modelli di progettazione dell'interfaccia utente del prodotto simili a ciò che sta creando. Anche se questo è un buon approccio che consente di noi maggiore coerenza nella progettazione visiva e l'interazione dell'utente, in alcuni casi messa a disposizione le funzionalità con alcuni dettagli che non soddisfa le linee guida a causa dei vincoli di pianificazione o l'esclusione di assegnazione delle priorità. In questi casi, non vogliamo ai team di copiare uno di questi "anti-modelli" poiché essi proliferare dell'interfaccia utente non valido o non coerente nell'ambiente di Visual Studio.
+ Visual Studio contiene molti esempi di interfaccia utente che seguono le linee guida e le procedure consigliate. Nel tentativo di essere coerenti, gli sviluppatori spesso prendono in prestito da modelli di progettazione dell'interfaccia utente del prodotto simili a quello che stanno creando. Anche se questo è un buon approccio che ci aiuta a promuovere la coerenza nell'interazione dell'utente e nella progettazione visiva, a volte spediamo funzionalità con alcuni dettagli che non soddisfano le nostre linee guida a causa di vincoli di pianificazione o di definizione delle priorità dei difetti. In questi casi, non vogliamo che i team di copiare uno di questi "anti-modelli" perché proliferano cattiva o incoerente dell'interfaccia utente all'interno dell'ambiente di Visual Studio.
 
-### <a name="required-fieldssettings-shown-in-error-state-by-default"></a>I campi/le impostazioni necessarie in stato di errore visualizzate per impostazione predefinita
+### <a name="required-fieldssettings-shown-in-error-state-by-default"></a>Campi obbligatori/impostazioni visualizzati nello stato di errore per impostazione predefinitaRequired fields/settings shown in error state by default
 
-#### <a name="feature-team-goals"></a>Funzionalità degli obiettivi del team
+#### <a name="feature-team-goals"></a>Obiettivi del team di funzionalità
 
-- Avvisare gli utenti che è stato aggiunto un elemento che deve essere configurato.
+- Avvisare gli utenti che hanno aggiunto un elemento che deve essere configurato.
 
-- Attirare l'attenzione dell'utente per le aree che richiedono input.
+- Attirare l'attenzione dell'utente alle aree che devono essere immesse.
 
-#### <a name="anti-pattern-solution"></a>Soluzione anti-pattern
- Non appena l'utente ha avviato un'azione e prima che è stata completata l'attività, inserire immediatamente arresto critico icone accanto alle aree che richiedono una configurazione.
+#### <a name="anti-pattern-solution"></a>Soluzione anti-modello
+ Non appena l'utente ha avviato un'azione e prima di aver completato l'attività, posizionare immediatamente le icone di arresto critico accanto alle aree che richiedono la configurazione.
 
-#### <a name="example-manifest-designer-declarations"></a>Esempio: Dichiarazioni di progettazione manifesto
- Aggiunta di una dichiarazione all'elenco immediatamente, lo inserisce in uno stato di errore, che persiste fino a quando l'utente imposta le proprietà necessarie.
+#### <a name="example-manifest-designer-declarations"></a>Esempio: dichiarazioni di Progettazione manifestoExample: Manifest Designer declarations
+ L'aggiunta di una dichiarazione all'elenco lo colloca immediatamente in uno stato di errore, che persiste fino a quando l'utente non imposta le proprietà necessarie.
 
- In questo caso, è presente una preoccupazione aggiuntiva perché l'icona utilizzata per l'avviso contiene un "&times;" sull'icona, non è possibile usare l'icona Rimuovi comuni accanto a esso. Di conseguenza, l'interfaccia utente usa un pulsante Rimuovi, un controllo più difficili.
+ In questo caso, c'è un ulteriore problema perché&times;l'icona utilizzata per l'avviso contiene un' icona " ", quindi l'icona di rimozione comune non può essere utilizzata accanto ad essa. Di conseguenza, l'interfaccia utente usa un pulsante Rimuovi, un controllo più goffo.
 
- ![Inserimento dell'interfaccia utente in uno stato di errore per impostazione predefinita è un antipattern di Visual Studio. ](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-pattern")<br />Inserimento dell'interfaccia utente in uno stato di errore per impostazione predefinita è un antipattern di Visual Studio.
+ ![L'inserimento dell'interfaccia utente in uno stato di errore per impostazione predefinita è un anti-modello di Visual Studio.Placing UI in an error state by default is a Visual Studio anti-pattern.](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-pattern")<br />L'inserimento dell'interfaccia utente in uno stato di errore per impostazione predefinita è un anti-modello di Visual Studio.Placing UI in an error state by default is a Visual Studio anti-pattern.
 
-#### <a name="alternatives"></a>Alternative
+#### <a name="alternatives"></a>Alternativi
 
-Una soluzione migliore a questo problema consiste nel:
+Una soluzione migliore a questo problema è:
 
-- Consentire all'utente di aggiungere una dichiarazione senza avviso e quindi spostare immediatamente impostare le proprietà sull'elemento.
+- Consentire all'utente di aggiungere una dichiarazione senza avviso e quindi spostarsi immediatamente per impostare le proprietà dell'elemento.
 
-- Aggiungere l'icona di avviso (triangolo gold) quando lo stato attivo viene spostata dall'elemento, ad esempio per aggiungere un'altra dichiarazione all'elenco o per tentare di modificare le tabulazioni all'interno della finestra di progettazione.
+- Aggiungere l'icona di avviso (triangolo d'oro) quando lo stato attivo si sposta dall'elemento, ad esempio per aggiungere un'altra dichiarazione all'elenco o per tentare di modificare le schede all'interno della finestra di progettazione.
 
-- Se l'utente tenta di modificare le schede prima di impostare le proprietà per tutte le dichiarazioni, visualizzata una finestra di dialogo che spiega che l'applicazione non verrà compilato (o qualsiasi le implicazioni) fino a quando non vengono risolti gli avvisi. Se l'utente chiude la finestra di dialogo e sostituisce le tabulazioni comunque, un'icona (critica o avviso, come appropriata) viene aggiunto alla scheda dichiarazioni.
+- Se l'utente tenta di modificare le schede prima di impostare le proprietà in tutte le dichiarazioni, aprire una finestra di dialogo che spiega che l'applicazione non verrà compilata (o qualunque siano le implicazioni) fino a quando non vengono risolti gli avvisi. Se l'utente chiude la finestra di dialogo e cambia comunque le schede, viene aggiunta un'icona (critica o di avviso, a seconda dei casi) alla scheda Dichiarazioni.
 
-### <a name="multiple-clicks-to-dismiss-ui"></a>Diversi clic per chiudere l'interfaccia utente
+### <a name="multiple-clicks-to-dismiss-ui"></a>Più clic per chiudere l'interfaccia utenteMultiple clicks to dismiss UI
 
-#### <a name="feature-team-goals"></a>Funzionalità degli obiettivi del team
- Non consentire all'utente di ignorare l'interfaccia utente senza prima di visualizzare il testo di spiegazione.
+#### <a name="feature-team-goals"></a>Obiettivi del team di funzionalità
+ Non consentire all'utente di chiudere l'interfaccia utente senza prima visualizzare il testo della spiegazione.
 
-#### <a name="anti-pattern"></a>Anti-pattern
- Il team di inserimento di collegamenti video in diverse posizioni nell'interfaccia utente di Visual Studio ha deciso rispetto al pattern comune del "&times;" chiude spiegazione pulsante e la descrizione comando come specificato dall'esperienza utente e invece implementato un elenco a discesa e "Non visualizzare più" Crea un collegamento.
+#### <a name="anti-pattern"></a>Anti-modello
+ Il team che inserisce i collegamenti video in vari punti all'interno dell'interfaccia utente di VS ha deciso contro il modello comune del pulsante di chiusura "&times;" e descrizione comando come specificato dall'esperienza utente, e invece implementato un elenco a discesa e "Non mostrare più".
 
-#### <a name="example-video-links-in-team-explorer"></a>Esempio: Collegamenti video in Team Explorer
-L'utente leggere testo esplicativo prima dell'eliminazione dell'interfaccia utente sia un antipattern all'interno di Visual Studio. Collegamenti correttamente progettati, un video devono visualizzare una descrizione comando con informazioni aggiuntive sul passaggio del mouse e scegliendo la "&times;" deve chiudere il messaggio senza necessità di ulteriore interazione.
+#### <a name="example-video-links-in-team-explorer"></a>Esempio: collegamenti video in Team Explorer
+Forzare l'utente a leggere il testo esplicativo prima di chiudere l'interfaccia utente è un anti-modello all'interno di Visual Studio.Forcing the user to read eplanatory text before dismissing UI is an anti-pattern within Visual Studio. Progettati correttamente, i collegamenti video dovrebbero visualizzare una descrizione&times;comando con informazioni aggiuntive al passaggio del mouse e facendo clic su " " dovrebbe ignorare il messaggio senza bisogno di ulteriori interazioni.
 
- ![Testo esplicativo anti-&#45;modello &#45; errato](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Modello di collegamento video non corretto
+ ![Testo esplicativo anti&#45;modello &#45; errato](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Uso erratodi più clic")<br />Modello di collegamento video errato
 
-Invece di un semplice pulsante Chiudi (un solo clic), l'utente è obbligato a usare due clic per chiudere l'interfaccia utente in ogni punto in cui vengono visualizzati i collegamenti video.
+Invece di un semplice pulsante di chiusura (un clic), l'utente è costretto a utilizzare due clic per chiudere semplicemente l'interfaccia utente in ogni luogo in cui vengono visualizzati i collegamenti video.
 
-La progettazione corretta questa situazione consiste nel seguire il modello comune per Internet Explorer, Office e Visual Studio: al passaggio del mouse, l'utente può visualizzare la descrizione della descrizione e un solo clic consente di nascondere l'interfaccia utente.
+La progettazione corretta per questa situazione consiste nel seguire il modello comune a Internet Explorer, Office e Visual Studio: al passaggio del mouse, l'utente può visualizzare la descrizione comando e un clic nasconde l'interfaccia utente.
 
- ![Testo esplicativo anti-&#45;modello &#45; corretta](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-pattern-correggere")<br />Modello corretto collegamento video
+ ![Testo esplicativo anti&#45;modello &#45; corretto](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Esplicativotestoanti-pattern-corretto")<br />Correggere il modello di collegamento video
 
-### <a name="using-command-bars-for-settings"></a>Utilizzo di barre dei comandi per le impostazioni
+### <a name="using-command-bars-for-settings"></a>Utilizzo delle barre dei comandi per le impostazioni
 
-**Figura A** rappresenta questo antipattern: inserimento di un'impostazione di sotto di un pulsante di comando che si applica solo al comando. In questo esercizio sono disponibili comandi oltre a Avvia debug, ovvero come visualizzazione nel Browser, Avvia senza eseguire debug ed Esegui istruzione, che verrà rispettata l'impostazione selezionata.
+**Figura A** rappresenta questo anti-modello: l'inserimento di un'impostazione sotto un pulsante di comando che si applica a più di un semplice comando. In questo schizzo sono disponibili comandi oltre a Avvia debug, ad esempio Visualizza nel browser, Avvia senza eseguire debug ed Esegui istruzione, che rispetteranno l'impostazione selezionata.
 
-![Figura a: Anti-pattern barra dei comandi](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />Figura a: Anti-pattern barra dei comandi
+![Figura A: Anti-modello della barra dei comandi](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />Figura A: Anti-modello della barra dei comandi
 
-Scherzo leggermente migliore, ma è ancora, è inserire le impostazioni di questo tipo nelle barre degli strumenti, come illustrato nella **Figura B**. Anche se i pulsanti di suddivisione richiede meno spazio e sono pertanto un miglioramento su elenchi a discesa, entrambi i progetti siano ancora usando una barra degli strumenti per promuovere un elemento che non è davvero un comando.
+Leggermente migliore, ma ancora indesiderabile, sta mettendo le impostazioni di questo tipo nelle barre degli strumenti, come mostrato Figura **B**. Mentre i pulsanti di divisione occupano meno spazio e sono quindi un miglioramento rispetto ai menu a discesa, entrambi i disegni utilizzano ancora una barra degli strumenti per promuovere qualcosa che non è realmente un comando.
 
-![Figura b: Migliore, ma comunque un anti-pattern della barra di comandi](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />Figura b: Migliore, ma comunque un anti-pattern della barra di comandi
+![Figura B: Meglio, ma ancora un anti-modello della barra dei comandi](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />Figura B: Meglio, ma ancora un anti-modello della barra dei comandi
 
-L'approccio corretto illustrato nella **figura C**, l'impostazione è collegata a una serie di comandi. È disponibile alcuna impostazione globale viene impostata e si passa semplicemente tra quattro comandi. Si tratta dell'unica situazione in cui i comandi sulla barra degli strumenti sono accettabili.
+Nell'approccio corretto illustrato nella **Figura C**, l'impostazione è legata a una serie di comandi. Non è stata impostata alcuna impostazione globale e stiamo solo passando da un comando all'altro. Questa è l'unica situazione in cui i comandi nella barra degli strumenti sono accettabili.
 
-![Figura c: Correzione uso di pattern della barra dei comandi di Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />Figura c: Uso corretto del pattern della barra dei comandi di Visual Studio
+![Figura C: Utilizzo corretto del modello della barra dei comandi di Visual StudioFigure C: Correct use of Visual Studio command bar pattern](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />Figura C: Utilizzo corretto del modello della barra dei comandi di Visual StudioFigure C: Correct use of Visual Studio command bar pattern
 
-### <a name="control-anti-patterns"></a>Anti-pattern di controllo
- Alcuni anti-modelli sono utilizzo semplicemente non corretto o la presentazione di un controllo o un gruppo di controlli.
+### <a name="control-anti-patterns"></a>Controllare gli anti-modelli
+ Alcuni anti-pattern sono semplicemente l'utilizzo non corretto o la presentazione di un controllo o un gruppo di controlli.
 
-#### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Sottolineatura usata come etichetta di gruppo, non un collegamento ipertestuale
- Sottolineare il testo deve essere utilizzato solo per i collegamenti ipertestuali.
+#### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Sottolineatura utilizzata come etichetta di gruppo, non come collegamento ipertestuale
+ Il testo di sottolineatura deve essere utilizzato solo per i collegamenti ipertestuali.
 
- **Non valido:** \
- ![Testo sottolineato che non è un collegamento ipertestuale è un antipattern di Visual Studio. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />Testo sottolineato che non è un collegamento ipertestuale è un antipattern di Visual Studio.
+ **Male:**\
+ ![Il testo sottolineato che non è un collegamento ipertestuale è un anti-modello di Visual Studio.Underlineed text that is not a hyperlink is a Visual Studio anti-pattern.](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-g_GroupLabelIncorrect")<br />Il testo sottolineato che non è un collegamento ipertestuale è un anti-modello di Visual Studio.Underlineed text that is not a hyperlink is a Visual Studio anti-pattern.
 
- **Buona:** \
- ![Applicato lo stile corretto, non hyperlink testo viene visualizzato solo nel tipo di carattere ambiente. ](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />Applicato lo stile corretto, non hyperlink testo viene visualizzato solo nel tipo di carattere ambiente.
+ **Buono:**\
+ ![Con uno stile corretto, il testo non del collegamento ipertestuale appare disadorno nel tipo di carattere dell'ambiente.](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-h_GroupLabelCorrect")<br />Con uno stile corretto, il testo non del collegamento ipertestuale appare disadorno nel tipo di carattere dell'ambiente.
 
-#### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Facendo clic su una casella di controllo di risultati in una finestra di dialogo popup
- Scegliere la casella di controllo "Abilita Desktop remoto per tutti i ruoli" della procedura guidata "Pubblica l'applicazione Windows Azure" immediatamente viene visualizzata una finestra di dialogo popup, un antipattern di Visual Studio. Inoltre, il campo casella di controllo non viene riempita con una casella di controllo dopo la selezione, anti-modello di un'altra interazione.
+#### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Facendo clic su una casella di controllo si ottiene una finestra di dialogo popup
+ Facendo clic sulla casella di controllo "Abilita Desktop remoto per tutti i ruoli" nella procedura guidata "Pubblica applicazione Windows Azure" viene visualizzata immediatamente una finestra di dialogo popup, un anti-modello di Visual Studio. Inoltre, il campo della casella di controllo non viene compilato con una casella di controllo dopo essere stato selezionato, un'altra interazione anti-modello.
 
- ![Richiama una finestra di dialogo al termine fare clic su una casella di controllo un antipattern di Visual Studio. ](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102 i_CheckboxPopup")<br />Richiama una finestra di dialogo al termine fare clic su una casella di controllo un antipattern di Visual Studio.
+ ![La visualizzazione di una finestra di dialogo dopo aver fatto clic su una casella di controllo è un anti-modello di Visual Studio.](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102-i_CheckboxPopup")<br />La visualizzazione di una finestra di dialogo dopo aver fatto clic su una casella di controllo è un anti-modello di Visual Studio.
 
 ### <a name="hyperlink-anti-patterns"></a>Collegamenti ipertestuali per anti-pattern
- L'esempio seguente contiene due anti-modelli:
+ L'esempio seguente contiene due anti-pattern:The following example contains two anti-patterns:
 
-1. In primo piano rosso attivando al passaggio del mouse significa che non viene utilizzato il corretto colore condiviso dal servizio del tipo di carattere.
+1. Il primo piano che gira il rosso al passaggio del mouse indica che il colore condiviso corretto dal servizio tipi di carattere non viene utilizzato.
 
-2. "Altre informazioni" non è il testo appropriato per un collegamento a un argomento concettuale. Obiettivo il suo non è altre informazioni, che consiste nel comprendere le implicazioni di propria scelta.
+2. "Ulteriori informazioni" non è il testo appropriato per un collegamento a un argomento concettuale. L'obiettivo dell'utente non è quello di imparare di più, è quello di capire le ramificazioni della loro scelta.
 
-   ![Ignorando il servizio di colore e l'utilizzo di "Informazioni" per i collegamenti ipertestuali sono anti-modelli di Visual Studio. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />Ignorando il servizio di colore e l'utilizzo di "Informazioni" per i collegamenti ipertestuali sono anti-modelli di Visual Studio.
+   ![Ignorando il servizio colore e utilizzando "Ulteriori informazioni" per i collegamenti ipertestuali sono anti-modelli di Visual Studio.Ignoring the color service and using "Learn more" for hyperlinks are Visual Studio anti-patterns.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Ignorando il servizio colore e utilizzando "Ulteriori informazioni" per i collegamenti ipertestuali sono anti-modelli di Visual Studio.Ignoring the color service and using "Learn more" for hyperlinks are Visual Studio anti-patterns.
 
-**Soluzione migliore:** Porre la domanda che sarebbe chiedere all'utente, selezionando il collegamento. Ad esempio:
+**Soluzione migliore:** Porre la domanda che l'utente sarebbe chiedere facendo clic sul collegamento. Ad esempio:
 
-- Come funzionano i servizi di Azure?
+- Come funzionano i servizi di Windows Azure?
 
-- Quando è necessario un progetto di servizi mobili di Azure?
+- Quando è necessario un progetto Windows Azure Mobile Services?
 
-#### <a name="using-click-here-for-links"></a>Utilizzando "Fare clic qui" per i collegamenti
- I collegamenti ipertestuali dovrebbero essere autodescrittivi. È un antipattern usare "Fare clic qui" o qualsiasi variazione simili.
+#### <a name="using-click-here-for-links"></a>Utilizzo di "Clicca qui" per i link
+ I collegamenti ipertestuali devono essere autodescrittivi. Si tratta di un anti-modello per utilizzare "Clicca qui" o qualsiasi variazione simile.
 
  **Non valido:** "Fare clic qui per istruzioni su come creare un nuovo progetto."
 
- **Buona:** "Come si crea un nuovo progetto?"
+ **Bene:** "Come faccio a creare un nuovo progetto?"

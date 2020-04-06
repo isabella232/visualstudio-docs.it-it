@@ -1,29 +1,29 @@
 ---
-title: Modellazione del progetto | Microsoft Docs
+title: Modellazione del progetto Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42e810a36478e49a578c6713d20f1bfc6be98309
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1ac89baf5bc7582d3430532938a5e5a0c35a4c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72725566"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706547"
 ---
 # <a name="project-modeling"></a>Definizione di modelli di progetto
-Il passaggio successivo per fornire l'automazione per il progetto consiste nell'implementare gli oggetti di progetto standard: le raccolte <xref:EnvDTE.Projects> e `ProjectItems`; oggetti `Project` e <xref:EnvDTE.ProjectItem>; e gli oggetti rimanenti specifici dell'implementazione. Questi oggetti standard vengono definiti nel file Dteinternal. h. Nell'esempio BscPrj viene fornita un'implementazione degli oggetti standard. È possibile utilizzare queste classi come modelli per creare oggetti di progetto standard che si trovano affiancati a oggetti di progetto di altri tipi di progetto.
+Il passaggio successivo nel fornire l'automazione per <xref:EnvDTE.Projects> il `ProjectItems` progetto consiste nell'implementare gli oggetti di progetto standard: le e le raccolte; gli `Project` <xref:EnvDTE.ProjectItem> oggetti e; e gli oggetti rimanenti univoci per l'implementazione. Questi oggetti standard sono definiti nel file Dteinternal.h. Un'implementazione degli oggetti standard viene fornita nell'esempio BscPrj. È possibile utilizzare queste classi come modelli per creare oggetti di progetto standard personalizzati affiancati a oggetti di progetto di altri tipi di progetto.
 
- Un consumer di automazione presume che sia in grado di chiamare <xref:EnvDTE.Solution> ("`<UniqueProjName>")` e <xref:EnvDTE.ProjectItems> (`n`) dove n è un numero di indice per ottenere un progetto specifico nella soluzione. Se si effettua questa chiamata di automazione, l'ambiente chiamerà <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> sulla gerarchia del progetto appropriata, passando VSITEMID_ROOT come parametro ItemID e VSHPROPID_ExtObject come parametro VSHPROPID. `IVsHierarchy::GetProperty` restituisce un puntatore `IDispatch` all'oggetto di automazione che fornisce l'interfaccia di `Project` principale, che è stata implementata.
+ Un consumer di automazione presume <xref:EnvDTE.Solution>`<UniqueProjName>")` di <xref:EnvDTE.ProjectItems> `n`essere in grado di chiamare (" e ( ) dove n è un numero di indice per ottenere un progetto specifico nella soluzione. Se si effettua questa chiamata <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> di automazione, l'ambiente chiama la gerarchia di progetto appropriata, passando VSITEMID_ROOT come parametro ItemID e VSHPROPID_ExtObject come parametro VSHPROPID. `IVsHierarchy::GetProperty`restituisce `IDispatch` un puntatore all'oggetto di automazione che fornisce l'interfaccia di base, `Project` implementata.
 
- Di seguito è riportata la sintassi di `IVsHierarchy::GetProperty`.
+ Di seguito è `IVsHierarchy::GetProperty`riportata la sintassi di .
 
  `HRESULT GetProperty (`
 
@@ -35,7 +35,7 @@ Il passaggio successivo per fornire l'automazione per il progetto consiste nell'
 
  `);`
 
- I progetti supportano la nidificazione e l'utilizzo di raccolte per creare gruppi di elementi di progetto. La gerarchia ha un aspetto simile al seguente.
+ I progetti supportano la nidificazione e utilizzano le raccolte per creare gruppi di elementi di progetto. La gerarchia ha questo aspetto.
 
 ```
 Projects
@@ -44,13 +44,13 @@ Projects
           |- ProjectItem (single object) or ProjectItems (another collection)
 ```
 
- Annidamento significa che un oggetto <xref:EnvDTE.ProjectItem> può essere <xref:EnvDTE.ProjectItems> raccolta contemporaneamente perché una raccolta `ProjectItems` può contenere gli oggetti annidati. Nell'esempio di progetto di base non viene illustrato questo annidamento. Implementando l'oggetto `Project`, si partecipa alla struttura ad albero che caratterizza la progettazione del modello di automazione globale.
+ La nidificazione <xref:EnvDTE.ProjectItem> significa che <xref:EnvDTE.ProjectItems> un oggetto può `ProjectItems` essere insacido contemporaneamente perché una raccolta può contenere gli oggetti annidati. Nell'esempio di progetto di base non viene illustrato questo annidamento. Implementando `Project` l'oggetto, si partecipa alla struttura ad albero che caratterizza la progettazione del modello di automazione generale.
 
- L'automazione del progetto segue il percorso del diagramma seguente.
+ L'automazione del progetto segue il percorso nel diagramma seguente.
 
- ![Oggetti di progetto di Visual Studio](../../extensibility/internals/media/projectobjects.gif "ProjectObjects") Automazione del progetto
+ ![Oggetti progetto di Visual StudioVisual Studio Project Objects](../../extensibility/internals/media/projectobjects.gif "ProjectObjects") Automazione del progetto
 
- Se non si implementa un oggetto `Project`, l'ambiente restituirà comunque un oggetto `Project` generico che contiene solo il nome del progetto.
+ Se non si `Project` implementa un oggetto, l'ambiente restituirà comunque un oggetto generico `Project` che contiene solo il nome del progetto.
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:EnvDTE.Projects>

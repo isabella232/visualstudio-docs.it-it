@@ -1,27 +1,27 @@
 ---
-title: Elemento KeyBinding | Microsoft Docs
+title: Elemento KeyBinding . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309633"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703149"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
-L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.
+L'elemento KeyBinding specifica i tasti di scelta rapida per i comandi.
 
- I comandi possono avere una o due tasti di scelta rapida associati. È un esempio di un unico tasto di scelta rapida **Ctrl**+**S** per i **Salva** comando. Tasti di scelta doppia richiedono due combinazioni di tasti successive per attivare un comando. È un esempio di un tasto di scelta rapida duale <strong>Ctrl *+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** per impostare un segnalibro.
+ Ai comandi possono essere associate associazioni di tasti sia singole che doppie. Un esempio di un singolo tasto di scelta rapida è Ctrl S per il comando **Salva.An** example of a single key binding is **Ctrl**+**S** for the Save command. Le associazioni di tasti doppie richiedono due combinazioni di tasti successive per attivare un comando. Un esempio di un doppio legame di tasti è <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K*- per impostare un segnalibro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,27 +37,27 @@ L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.
 |Attributo|Descrizione|
 |---------------|-----------------|
 |guid|Obbligatorio.|
-|ID|Obbligatorio.|
-|editor|Obbligatorio. Il GUID dell'editor indica il contesto di modifica per il quale sarà attiva questo tasto di scelta rapida. Il valore dell'ambito dell'associazione globale è "guidVSStd97".|
-|key1|Obbligatorio. I valori validi includono possibile digitare tutti i caratteri alfanumerici, nonché i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod1|Facoltativo. Qualsiasi combinazione delle **Ctrl**, **Alt**, e **MAIUSC** separati da spazio.|
-|key2|Facoltativo. I valori validi includono possibile digitare tutti i caratteri alfanumerici, nonché i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod2|Facoltativo. Qualsiasi combinazione delle **Ctrl**, **Alt**, e **MAIUSC** separati da spazio.|
-|Emulatore|Facoltativo.|
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|id|Obbligatorio.|
+|editor|Obbligatorio. Il GUID dell'editor indica il contesto di modifica per il quale questa scelta rapida da tastiera sarà attiva. Il valore dell'ambito di associazione globale è "guidVSStd97".|
+|key1|Obbligatorio. I valori validi includono tutti gli alfanumerici tipoti e anche i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod1 (informazioni in stato indue|Facoltativa. Qualsiasi combinazione di **Ctrl**, **Alt**e **Maiusc** separati da spazio.|
+|key2|Facoltativa. I valori validi includono tutti gli alfanumerici tipoti e anche i valori esadecimali a due cifre preceduti da 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod2|Facoltativa. Qualsiasi combinazione di **Ctrl**, **Alt**e **Maiusc** separati da spazio.|
+|emulatore|Facoltativa.|
+|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Padre||
+|Parent||
 |Annotazione||
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento KeyBindings](../extensibility/keybindings-element.md)|Raggruppa gli elementi di tasto di scelta rapida e altri raggruppamenti di tasti di scelta rapida.|
+|[Elemento KeyBindings](../extensibility/keybindings-element.md)|Raggruppa gli elementi KeyBinding e altri raggruppamenti KeyBindings.|
 
 ## <a name="example"></a>Esempio
 
@@ -72,4 +72,4 @@ L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.
 
 ## <a name="see-also"></a>Vedere anche
 - [Elemento KeyBindings](../extensibility/keybindings-element.md)
-- [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

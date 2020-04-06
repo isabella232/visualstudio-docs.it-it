@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::GetCount | Microsoft Docs
+title: Proprietà IEnumCodePaths2::GetCount . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::GetCount
 ms.assetid: 988c5092-fcc5-43a1-a94c-c261edd56ebf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9356b58131e8478840d68a3965d0f6fabf314a55
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab16a27257229bf97145403b99af9e478eae65db
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310061"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717831"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 Restituisce il numero di elementi nell'enumerazione.
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parametri
 `pcelt`\
-[out] Restituisce il numero di elementi nell'enumerazione.
+[fuori] Restituisce il numero di elementi nell'enumerazione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo non fa parte dell'interfaccia di enumerazione COM facoltativa che specifica che solo le `Next`, `Clone`, `Skip`, e `Reset` devono essere implementati i metodi.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo non fa parte dell'interfaccia di enumerazione `Next` `Clone`COM `Skip`consueta che specifica che è necessario implementare solo i metodi , , e . `Reset`
 
 ## <a name="see-also"></a>Vedere anche
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

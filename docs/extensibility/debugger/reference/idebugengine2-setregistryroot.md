@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetRegistryRoot | Microsoft Docs
+title: Proprietà IDebugEngine2::SetRegistryRoot . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetRegistryRoot
 ms.assetid: d0d81202-8a4a-4bc3-b297-30a047c5ec60
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f30a2fe4a239b76d9eb984cdc4cea6485b8dd5d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: beba304e846126b262c23c0fc8232f79de5fd794
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352511"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730877"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 Imposta la radice del Registro di sistema per il motore di debug (DE).
@@ -41,13 +41,13 @@ int SetRegistryRoot( 
 
 ## <a name="parameters"></a>Parametri
 `pszRegistryRoot`\
-[in] La radice del Registro di sistema da utilizzare.
+[in] Radice del Registro di sistema da utilizzare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo consente [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] per specificare una radice alternativa del Registro di sistema che la Germania deve usare per ottenere le impostazioni del Registro di sistema; ad esempio, "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp".
+## <a name="remarks"></a>Osservazioni
+ Questo metodo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] consente di specificare una radice del Registro di sistema alternativa che il DE deve utilizzare per ottenere le impostazioni del Registro di sistema; ad esempio, "HKEY_LOCAL_MACHINE SOFTWARE Microsoft VisualStudio 8.0Exp".
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

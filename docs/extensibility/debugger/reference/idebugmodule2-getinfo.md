@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::GetInfo | Microsoft Docs
+title: Proprietà IDebugModule2::GetInfo . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - GetInfo method
 - IDebugModule2::GetInfo method
 ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1fe5060f66c56a033fb0bdcc8ae7dee368d2824e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c68c583702d7def5a7bff3ee40a9b8b2c537bb31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323974"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726958"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 Ottiene informazioni su questo modulo.
@@ -44,16 +44,16 @@ int GetInfo( 
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Una combinazione di flag dal [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumerazione che specificano quali campi della `pInfo` sono da compilare.
+[in] Combinazione di flag dell'enumerazione [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) `pInfo` che specificano i campi di da compilare.
 
 `pInfo`\
-[in, out] Oggetto [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struttura compilata con una descrizione del modulo.
+[in, out] Struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) compilata con una descrizione del modulo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Il [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struttura contiene il nome del modulo che viene visualizzato nei **moduli** finestra.
+## <a name="remarks"></a>Osservazioni
+ La struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) contiene il nome del modulo visualizzato nella finestra **Moduli.**
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

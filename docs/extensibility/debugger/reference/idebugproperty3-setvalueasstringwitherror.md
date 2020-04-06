@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
+title: Proprietà IDebugProperty3::SetValueAsStringWithError . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61a39d3b68deec2dd51c49113355a8ed6c69325c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348822"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721069"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Imposta il valore di questa proprietà e restituisce un messaggio di errore, se necessario.
@@ -50,22 +50,22 @@ int SetValueAsStringWithError(
 [in] Valore da impostare.
 
 `dwRadix`\
-[in] La radice del valore da impostare.
+[in] Radice del valore da impostare.
 
 `dwTimeout`\
-[in] Il periodo di tempo di attesa per il valore da impostare (`INFINITE` l'attesa è illimitata).
+[in] Periodo di attesa dell'impostazione del`INFINITE` valore (significa attendere per sempre).
 
 `errorString`\
-[out] Se si è verificato un errore di impostazione del valore, contiene il motivo dell'errore.
+[fuori] Se si è verificato un errore durante l'impostazione del valore, questo contiene il motivo dell'errore.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
-Il valore in ingresso può essere un'espressione da valutare.
+## <a name="remarks"></a>Osservazioni
+Il valore in ingresso potrebbe essere un'espressione da valutare.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CProperty** oggetto che espone le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **CProperty** oggetto che espone il [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaccia.
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(

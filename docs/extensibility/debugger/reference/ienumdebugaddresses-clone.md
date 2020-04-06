@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::Clone | Microsoft Docs
+title: IEnumDebugAddresses::Clone . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::Clone method
 ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e5de8bd89d928bafe86bec0a502c1a5427db2d5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f163f2733f237b30b668c2c46473e152718dd6fc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330053"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717708"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
 Questo metodo restituisce una copia dell'enumerazione corrente come oggetto separato.
@@ -44,10 +44,10 @@ int Clone(
 [out] Restituisce una copia di questa enumerazione come oggetto separato.
 
 ## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- La copia dell'enumerazione ha lo stesso stato originale al momento che questo metodo viene chiamato. Tuttavia, gli Stati dell'originale e la copia sono separati e possono essere modificati singolarmente.
+## <a name="remarks"></a>Osservazioni
+ La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata a questo metodo. Tuttavia, gli stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
 
 ## <a name="see-also"></a>Vedere anche
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

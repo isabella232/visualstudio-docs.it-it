@@ -1,5 +1,5 @@
 ---
-title: Elemento LocationFieldMRUPrefix (modelli di Visual Studio) | Microsoft Docs
+title: Elemento LocationFieldMRUPrefix (modelli di Visual Studio) Documenti Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - <LocationFieldMRUPrefix> element [Visual Studio Templates]
 - LocationFieldMRUPrefix element [Visual Studio Templates]
 ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d817f688ffeebecf1655fe10aa58efa664135c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce86eecbab8c31f16ece4628eff28dc40416a0a9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309084"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702817"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (modelli di Visual Studio)
-Specifica i percorsi usati di recente (MRU) nei **nuovo progetto** e **Aggiungi nuovo elemento** nella finestra di dialogo.
+Specifica i percorsi utilizzati più di recente (MRU) nella finestra di dialogo **Nuovo progetto** e Aggiungi **nuovo elemento.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,10 +34,10 @@ Specifica i percorsi usati di recente (MRU) nei **nuovo progetto** e **Aggiungi 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -45,9 +45,9 @@ Specifica i percorsi usati di recente (MRU) nei **nuovo progetto** e **Aggiungi 
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .|
 
-## <a name="remarks"></a>Note
- Questo elemento deve essere utilizzato solo per modelli creati tramite il [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)].
+## <a name="remarks"></a>Osservazioni
+ Questo elemento deve essere utilizzato solo [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)]per i modelli prodotti tramite l'oggetto .
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)

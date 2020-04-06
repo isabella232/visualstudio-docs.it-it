@@ -3,17 +3,17 @@ title: Colori e applicazione di stili per Visual Studio . Documenti Microsoft
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303155"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699858"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colori e stili per Visual Studio
 
@@ -421,7 +421,7 @@ A tale scopo, un pacchetto VSPackage deve:To do this, a VSPackage must:
 
 - **gestire gli eventi generati dall'IDE** implementando il [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) interfaccia. L'IDE chiama il metodo appropriato in seguito alle modifiche dell'utente del tipi di carattere e colori pagina. Ad esempio, chiama il [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) metodo se è selezionato un nuovo tipo di carattere.
 
-  **O**
+  **OR**
 
 - **eseguire il polling dell'IDE per le modifiche**. Questa operazione può essere eseguita tramite il sistema implementato [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) interfaccia. Anche se principalmente per il supporto della persistenza, il [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) metodo può ottenere informazioni sul tipo di carattere e colore per gli elementi di visualizzazione. Per ulteriori informazioni sulle impostazioni dei tipi di carattere e dei colori, vedere l'articolo MSDN [Accessing Stored Font and Color Settings](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015).
 

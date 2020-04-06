@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION | Microsoft Docs
+title: BP_CONDITION . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337431"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738098"
 ---
-# <a name="bpcondition"></a>BP_CONDITION
-Descrive le condizioni in cui viene attivato un punto di interruzione.
+# <a name="bp_condition"></a>BP_CONDITION
+Descrive le condizioni in cui viene generato un punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,24 +49,24 @@ public struct BP_CONDITION {
 
 ## <a name="members"></a>Membri
 `pThread`\
-Il [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread attivo per l'applicazione che contiene il punto di interruzione.
+Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread attivo per l'applicazione che contiene il punto di interruzione.
 
 `styleCondition`\
-Un valore compreso il [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) enumerazione che indica lo stile di questa condizione di punto di interruzione.
+Valore dell'enumerazione [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) che descrive lo stile di questa condizione del punto di interruzione.
 
 `bstrContext`\
-La posizione del punto di interruzione.
+Posizione del punto di interruzione.
 
 `bstrCondition`\
-La condizione di attivazione del punto di interruzione.
+Condizione di attivazione del punto di interruzione.
 
 `nRadix`\
-Radice da usare nella valutazione di tutte le informazioni numeriche.
+Radix da utilizzare nella valutazione di qualsiasi informazione numerica.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Questa struttura è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.
 
-Questa struttura viene anche passata come parametro per il [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) metodi.
+Questa struttura viene passata anche come parametro per il [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) metodi.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

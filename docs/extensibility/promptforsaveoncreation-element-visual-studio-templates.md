@@ -1,5 +1,5 @@
 ---
-title: Elemento PromptForSaveOnCreation (modelli di Visual Studio) | Microsoft Docs
+title: Proprietà PromptForSaveOnCreation (modelli di Visual Studio) Documenti Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802bcd357fe82434f7cf5aaf835b2841e6dc8dc5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335980"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701785"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelli di Visual Studio)
 
-Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il **nuovo progetto** finestra di dialogo durante la creazione di un progetto. Se questo elemento è impostato su `true`, quindi l'utente viene richiesto un salvataggio percorso. Se `false`, quindi non vengono visualizzate (vale a dire, viene creato un progetto temporaneo).
+Specifica se all'utente viene richiesto di specificare un percorso di salvataggio del progetto tramite la finestra di dialogo **Nuovo progetto** durante la creazione di un progetto. Se questo elemento `true`è impostato su , all'utente viene richiesto di specificare un percorso di salvataggio. Se `false`, non viene richiesto, ovvero viene creato un progetto temporaneo.
 
 ```xml
 \<VSTemplate>
@@ -41,10 +41,10 @@ Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -55,15 +55,15 @@ Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Il testo deve essere `true` oppure `false`, `true` che indica che l'utente verrà chiesta una Salva percorso quando si crea un nuovo progetto.
+ Il testo deve `true` `false`essere `true` o , che indica che all'utente verrà richiesto di specificare un percorso di salvataggio durante la creazione di un nuovo progetto.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  `PromptForSaveOnCreation` è un elemento facoltativo. Il valore predefinito è `false`.
 
- I progetti temporanei sono progetti che è possibile creare e modificare senza salvarne i contenuti del progetto su disco.
+ I progetti temporanei sono progetti che è possibile creare e modificare senza salvare il contenuto di tale progetto su disco.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente imposta il valore della `PromptForSaveOnCreation` uguale a `false`, che specifica il progetto deve essere creato come progetto temporaneo.
+ Nell'esempio riportato `PromptForSaveOnCreation` di `false`seguito viene impostato il valore di uguale a , che specifica di consentire la creazione del progetto come progetto temporaneo.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,5 +92,5 @@ Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

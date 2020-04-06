@@ -1,5 +1,5 @@
 ---
-title: Sessione di Debug Manager | Microsoft Docs
+title: 'Gestione debug sessione : Documenti Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,33 +10,33 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c7dd40796fbf0141cc60bf86204bce462594f8f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 953b4e948ef5e21531a3e73bceed3a363ed3cec5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348569"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712877"
 ---
-# <a name="session-debug-manager"></a>Gestione del debug della sessione
-Gestore di sessione di debug (SDM) gestisce un numero qualsiasi di motori di debug (DE) che esegue il debug di un numero qualsiasi di programmi in più processi in un numero qualsiasi di macchine. Oltre a essere un motore di debug multiplexer, il modello SDM fornisce una visualizzazione unificata della sessione di debug all'IDE.
+# <a name="session-debug-manager"></a>Gestione debug sessione
+Gestione di debug di sessione (SDM) gestisce un numero qualsiasi di motori di debug (DE) che eseguono il debug di un numero qualsiasi di programmi in più processi su un numero qualsiasi di computer. Oltre a essere un multiplexer del motore di debug, il modello SDM fornisce una visualizzazione unificata della sessione di debug all'IDE.
 
-## <a name="session-debug-manager-operation"></a>Operazione sessione di debug manager
- Gestore di sessione di debug (SDM) gestisce il DE. Può essere presente più di un motore di debug in esecuzione in un computer nello stesso momento. Per moltiplicare la crittografia DEs, il modello SDM esegue il wrapping di un numero di interfacce dalla crittografia DEs e li espone all'IDE come un'unica interfaccia.
+## <a name="session-debug-manager-operation"></a>Operazione del gestore di debug della sessione
+ Il gestore di sessione di debug (SDM) gestisce il DE. In un computer possono essere in esecuzione più motori di debug contemporaneamente. Per multiplex dEs, il file SDM esegue il wrapping di un numero di interfacce da dE e li espone all'IDE come un'unica interfaccia.
 
- Per migliorare le prestazioni, non sono multiplex alcune interfacce. Al contrario, vengono utilizzati direttamente dal DE e le chiamate a queste interfacce non passano attraverso il modello SDM. Ad esempio, non sono multiplex interfacce usate con memoria, il codice e contesti di documento, perché fanno riferimento a un'istruzione specifica, memoria o documento in un programma specifico di debug da un CRI specifico. Nessun altro Germania dovrà essere coinvolti in tale livello di comunicazione.
+ Per migliorare le prestazioni, alcune interfacce non sono multiplexed. Al contrario, vengono utilizzati direttamente dal DE e le chiamate a queste interfacce non passano attraverso il sDM. Ad esempio, le interfacce utilizzate con i contesti di memoria, codice e documento non sono multiplexed, perché si riferiscono a un'istruzione specifica, memoria o documento in un programma specifico sottoposto a debug da un DE specifico. Nessun'altra DE deve essere coinvolta in questo livello di comunicazione.
 
- Ciò non vale per tutti i contesti. Le chiamate all'interfaccia di contesto di valutazione di espressione passano attraverso il modello SDM. Durante la valutazione dell'espressione, il modello SDM esegue il wrapping di [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaccia che consente a IDE perché quando tale espressione viene valutata e può comportare più DEs che sta eseguendo il debug di programmi nello stesso processo che potrebbero essere in esecuzione sullo stesso thread.
+ Questo non vale per tutti i contesti. Le chiamate all'interfaccia del contesto di valutazione dell'espressione passano attraverso il file SDM. Durante la valutazione dell'espressione, il modello SDM esegue il wrapping di [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaccia che fornisce all'IDE perché quando tale espressione viene valutata, può coinvolgere più DEs che eseguono il debug di programmi nello stesso processo che potrebbe essere in esecuzione sullo stesso thread.
 
- Il modello SDM funge in genere da un meccanismo di delega, ma può fungere da un meccanismo di trasmissione. Ad esempio, durante la valutazione dell'espressione, il modello SDM agisce come un meccanismo di trasmissione per notificare tutti DEs che possono eseguire codice su un thread specificato. Analogamente, quando il modello SDM riceve un evento di arresto, trasmette i programmi che non possono più in esecuzione. Quando viene chiamato un passaggio, il modello SDM trasmette ai programmi che è possibile continuare l'esecuzione. I punti di interruzione vengono anche trasmessi a ogni DE.
+ Il meccanismo DiSM in genere funge da meccanismo di delega, ma potrebbe fungere da meccanismo di trasmissione. Ad esempio, durante la valutazione dell'espressione, il modello SDM funge da meccanismo di trasmissione per notificare a tutti i DE che possono eseguire codice in un thread specificato. Analogamente, quando il modello SDM riceve un evento di arresto, trasmette ai programmi che devono interrompere l'esecuzione. Quando viene chiamato un passaggio, il file SDM trasmette ai programmi che possono continuare a eseguire. I punti di interruzione vengono trasmessi anche a ogni DE.
 
- Il modello SDM non rileva il programma corrente, thread o dello stack frame. Il processo, programma e informazioni sul thread vengono inviati per il modello SDM in combinazione con eventi di debug specifici.
+ Il modello SDM non tiene traccia del programma, del thread o dello stack frame corrente. Le informazioni sul processo, sul programma e sul thread vengono inviate al modello SDM insieme a eventi di debug specifici.
 
 ## <a name="see-also"></a>Vedere anche
 - [Motore di debug](../../extensibility/debugger/debug-engine.md)
 - [Componenti del debugger](../../extensibility/debugger/debugger-components.md)
-- [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md)
+- [Contesti del debuggerDebugger contexts](../../extensibility/debugger/debugger-contexts.md)

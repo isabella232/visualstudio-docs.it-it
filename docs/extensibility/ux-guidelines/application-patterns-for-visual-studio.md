@@ -3,17 +3,17 @@ title: Modelli di applicazione per Visual Studio . Documenti Microsoft
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55044df3898b452e87ec877f9ae10dd12a2b1110
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 036c95951fe3dc9e65a0f3338f75ae9867d721c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303190"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698590"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli delle applicazioni per Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Interazioni con le finestre
@@ -475,7 +475,7 @@ I progetti devono inoltre mantenere modelli di interazione coerenti per:
 - Operazioni di trascinamento della selezione
 
 ### <a name="drag-and-drop-interaction-model"></a>Modello di interazione di trascinamento della selezione
-I progetti in genere si classificano come basati su riferimenti (in grado di rendere persistenti solo i riferimenti agli elementi di progetto nell'archivio), basati su directory (in grado di rendere persistenti solo gli elementi di progetto archiviati fisicamente all'interno della gerarchia di un progetto) o misti (in grado di rendere persistenti i riferimenti o oggetti fisici). L'IDE supporta tutti e tre i tipi di progetti contemporaneamente all'interno di **Esplora soluzioni.**
+I progetti in genere si classificano come basati sui riferimenti (in grado di rendere persistenti solo i riferimenti agli elementi di progetto nell'archivio), basati su directory (in grado di rendere persistenti solo gli elementi di progetto archiviati fisicamente all'interno della gerarchia di un progetto) o misti (in grado di rendere persistenti i riferimenti o gli elementi fisici). L'IDE supporta tutti e tre i tipi di progetti contemporaneamente all'interno di **Esplora soluzioni.**
 
 Dal punto di vista del trascinamento della selezione, le caratteristiche seguenti devono essere applicate a ogni tipo di progetto all'interno di **Esplora soluzioni:**
 

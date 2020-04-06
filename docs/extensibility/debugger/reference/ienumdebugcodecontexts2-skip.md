@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2::Skip | Microsoft Docs
+title: Proprietà IEnumDebugCodeContexts2::Skip . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Skip
 ms.assetid: 3451a3eb-bf5b-4ec5-acc9-aa5a24363801
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 323410ec227b89b110db7b69d083e46381968109
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6a1f63f5e3a6a84d6752707de5c81b4549085662
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335015"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717308"
 ---
 # <a name="ienumdebugcodecontexts2skip"></a>IEnumDebugCodeContexts2::Skip
-Ignora il numero specificato di elementi.
+Ignora il numero di elementi specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int Skip(
 
 ## <a name="parameters"></a>Parametri
 `celt`\
-[in] Numero di elementi da ignorare.
+[in]Numero di elementi da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. `S_FALSE` Restituisce `celt` if è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione è impostata su Fine e `S_FALSE` viene restituito.
+## <a name="remarks"></a>Osservazioni
+ Se `celt` specifica un valore maggiore del numero di elementi rimanenti, `S_FALSE` l'enumerazione viene impostata alla fine e viene restituita.
 
 ## <a name="see-also"></a>Vedere anche
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

@@ -1,40 +1,40 @@
 ---
-title: Estendere la barra di stato | Microsoft Docs
+title: Estensione della barra di stato Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - status bars, about status bars
 - status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c555c2a23b52d475b01fbf8cc2086167acc423dc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342872"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711546"
 ---
 # <a name="extend-the-status-bar"></a>Estendere la barra di stato
-È possibile utilizzare la barra di stato di Visual Studio nella parte inferiore dell'IDE per visualizzare le informazioni.
+È possibile utilizzare la barra di stato di Visual Studio nella parte inferiore dell'IDE per visualizzare informazioni.
 
- Quando si estende la barra di stato, è possibile visualizzare le informazioni e l'interfaccia utente in quattro aree: l'area commenti e suggerimenti, l'indicatore di stato, l'area animazione e l'area di progettazione. L'area commenti e suggerimenti consente di visualizzare il testo ed evidenziare il testo visualizzato. L'indicatore di stato Mostra lo stato incrementale per le operazioni a esecuzione breve, ad esempio salvataggio di un file. L'area animazione visualizza un'animazione chiuso in modo continuativo per le operazioni a esecuzione prolungata o operazione di lunghezza non determinata, quali la creazione di più progetti in una soluzione. E l'area di progettazione Mostra il numero di riga e alla colonna della posizione del cursore.
+ Quando si estende la barra di stato, è possibile visualizzare informazioni e interfaccia utente in quattro aree: l'area commenti e suggerimenti, la barra di stato, l'area di animazione e l'area della finestra di progettazione. L'area commenti e suggerimenti consente di visualizzare il testo ed evidenziare il testo visualizzato. La barra di avanzamento mostra lo stato di avanzamento incrementale per le operazioni a esecuzione breve, ad esempio il salvataggio di un file. L'area di animazione visualizza un'animazione a ciclo continuo per operazioni a esecuzione prolungata o operazioni di lunghezza indeterminata, ad esempio la compilazione di più progetti in una soluzione. E l'area di progettazione mostra il numero di riga e colonna della posizione del cursore.
 
- È possibile ottenere la barra di stato usando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> interfaccia (dal <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> servizio). Inoltre, qualsiasi oggetto individuato in una cornice di finestra può registrare lo stato della barra di oggetto client mediante l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> interfaccia. Ogni volta che una finestra viene attivata, Visual Studio esegue una query dell'oggetto individuato in tale finestra di `IVsStatusbarUser` interfaccia. Se viene trovato, verrà chiamata la <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metodo sull'oggetto e l'interfaccia restituita è possibile aggiornare la barra di stato dall'interno di tale metodo. Documenti di windows, ad esempio, possibile utilizzare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metodo per aggiornare le informazioni nell'area di progettazione quando diventano attivi.
+ È possibile ottenere la barra <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> di stato <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> utilizzando l'interfaccia (dal servizio). Inoltre, qualsiasi oggetto si trova su una cornice di finestra può <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> registrarsi come oggetto client della barra di stato implementando l'interfaccia. Ogni volta che viene attivata una finestra, Visual `IVsStatusbarUser` Studio esegue una query sull'oggetto individuato in tale finestra per l'interfaccia. Se viene trovato, <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> chiama il metodo sull'interfaccia restituita e l'oggetto può aggiornare la barra di stato dall'interno di tale metodo. Le finestre di documento, <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> ad esempio, possono utilizzare il metodo per aggiornare le informazioni nell'area della finestra di progettazione quando diventano attive.
 
- Le procedure seguenti presuppongono che si sappiano creare un progetto VSIX e aggiungere un comando di menu personalizzato. Per informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+ Le procedure seguenti presuppongono che si comprende come creare un progetto VSIX e aggiungere un comando di menu personalizzato. Per informazioni, consultate [Creare un'estensione con un comando](../extensibility/creating-an-extension-with-a-menu-command.md)di menu.
 
 ## <a name="modify-the-status-bar"></a>Modificare la barra di stato
- Questa procedura viene illustrato come impostare e ottenere il testo, visualizzare il testo statico ed evidenziare il testo visualizzato nell'area commenti e suggerimenti della barra di stato.
+ In questa procedura viene illustrato come impostare e ottenere testo, visualizzare testo statico ed evidenziare il testo visualizzato nell'area commenti e suggerimenti della barra di stato.
 
-### <a name="read-and-write-to-the-status-bar"></a>Lettura e scrittura per la barra di stato
+### <a name="read-and-write-to-the-status-bar"></a>Lettura e scrittura nella barra di stato
 
 1. Creare un progetto VSIX denominato **TestStatusBarExtension** e aggiungere un comando di menu denominato **TestStatusBarCommand**.
 
-2. Nelle *TestStatusBarCommand.cs*, sostituire il codice del metodo del gestore comando (`MenuItemCallback`) con il codice seguente:
+2. In *TestStatusBarCommand.cs*sostituire il codice`MenuItemCallback`del metodo del gestore di comando ( ) con quanto segue:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -68,17 +68,17 @@ ms.locfileid: "66342872"
     }
     ```
 
-3. Compilare il codice e avviare il debug.
+3. Compilare il codice e avviare il debug.Compile the code and start debugging.
 
-4. Aprire il **strumenti** menu nell'istanza sperimentale di Visual Studio. Scegliere il **richiamare TestStatusBarCommand** pulsante.
+4. Aprire il menu **Strumenti** nell'istanza sperimentale di Visual Studio. Fare clic sul pulsante **Richiama TestStatusBarCommand.**
 
-     Si noterà che il testo nella barra ora letture di stato **abbiamo appena scritto nella barra di stato.** la finestra di messaggio visualizzato è lo stesso testo.
+     Si dovrebbe vedere che il testo nella barra di stato ora legge **Abbiamo appena scritto alla barra di stato.** e la finestra di messaggio visualizzata ha lo stesso testo.
 
-### <a name="update-the-progress-bar"></a>Aggiornare l'indicatore di stato
+### <a name="update-the-progress-bar"></a>Aggiornare la barra di avanzamento
 
-1. In questa procedura si mostrerà come inizializzare e aggiornare l'indicatore di stato.
+1. In questa procedura verrà illustrato come inizializzare e aggiornare l'indicatore di stato.
 
-2. Aprire il *TestStatusBarCommand.cs* del file e sostituire il `MenuItemCallback` metodo con il codice seguente:
+2. Aprire il file di `MenuItemCallback` *TestStatusBarCommand.cs* e sostituire il metodo con il codice seguente:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -102,21 +102,21 @@ ms.locfileid: "66342872"
     }
     ```
 
-3. Compilare il codice e avviare il debug.
+3. Compilare il codice e avviare il debug.Compile the code and start debugging.
 
-4. Aprire il **strumenti** menu nell'istanza sperimentale di Visual Studio. Fare clic su **richiamare TestStatusBarCommand** pulsante.
+4. Aprire il menu **Strumenti** nell'istanza sperimentale di Visual Studio. Fare clic sul pulsante **Richiama TestStatusBarCommand.**
 
-     Si noterà che il testo nella barra ora letture di stato **scrittura per l'indicatore di stato.** Si dovrebbe vedere anche l'indicatore di stato vengono aggiornati ogni secondo per 20 secondi. Dopo che la barra di stato e l'indicatore di stato vengono cancellati.
+     Si dovrebbe vedere che il testo nella barra di stato ora legge Scrittura sulla barra di **stato.** Dovresti anche vedere la barra di avanzamento essere aggiornata ogni secondo per 20 secondi. Dopo di che la barra di stato e la barra di avanzamento vengono cancellati.
 
-### <a name="display-an-animation"></a>Visualizza un'animazione
+### <a name="display-an-animation"></a>Visualizzare un'animazione
 
-1. La barra di stato Visualizza un'animazione di ciclo che indica un'operazione a esecuzione prolungata (ad esempio, la creazione di più progetti in una soluzione). Se non viene visualizzata questa animazione, assicurarsi di avere i valori corretti **degli strumenti** > **opzioni** impostazioni:
+1. La barra di stato visualizza un'animazione ciglio continuo che indica un'operazione a esecuzione prolungata (ad esempio, la compilazione di più progetti in una soluzione). Se questa animazione non viene visualizzata, assicurarsi di disporre delle**impostazioni** corrette per Le opzioni **degli strumenti:** > 
 
-     Passare al **degli strumenti** > **opzioni** > **generale** scheda e deselezionare l'opzione **regola automaticamente esperienza visiva basato su client prestazioni**. Quindi selezionare l'opzione secondaria **Abilita esperienza visiva dettagliata del client**. A questo punto sarà possibile visualizzare l'animazione quando si compila il progetto nell'istanza sperimentale di Visual Studio.
+     Passare alla scheda**Generale** **opzioni** >  **degli strumenti** > e deselezionare **Regola automaticamente l'esperienza visiva in base alle prestazioni del client.** Selezionare quindi l'opzione secondaria **Abilita esperienza visiva rich client**. You should now be able to see the animation when you build the project in your experimental instance of Visual Studio.
 
-     In questa procedura viene visualizzato l'animazione di Visual Studio standard, che rappresenta la creazione di un progetto o soluzione.
+     In questa procedura viene visualizzata l'animazione standard di Visual Studio che rappresenta la compilazione di un progetto o di una soluzione.
 
-2. Aprire il *TestStatusBarCommand.cs* del file e sostituire il `MenuItemCallback` metodo con il codice seguente:
+2. Aprire il file di `MenuItemCallback` *TestStatusBarCommand.cs* e sostituire il metodo con il codice seguente:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -137,8 +137,8 @@ ms.locfileid: "66342872"
     }
     ```
 
-3. Compilare il codice e avviare il debug.
+3. Compilare il codice e avviare il debug.Compile the code and start debugging.
 
-4. Aprire il **degli strumenti** menu nell'istanza sperimentale di Visual Studio e fare clic su **richiamare TestStatusBarCommand**.
+4. Aprire il menu **Strumenti** nell'istanza sperimentale di Visual Studio e fare clic su **Richiama TestStatusBarCommand**.
 
-     Quando viene visualizzata la finestra di messaggio, si dovrebbe vedere anche l'animazione nella barra di stato all'estrema destra. Appena si chiude la finestra di messaggio, l'animazione viene rimosso.
+     Quando viene visualizzata la finestra di messaggio, si dovrebbe vedere anche l'animazione nella barra di stato all'estrema destra. Quando si chiude la finestra di messaggio, l'animazione scompare.

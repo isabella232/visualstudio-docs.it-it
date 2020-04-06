@@ -1,5 +1,5 @@
 ---
-title: MODULE_FLAGS | Microsoft Docs
+title: proprietà MODULE_FLAGS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b8080710b3225f025c329e0c5cb42331e1a059f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 78c7f24d64ffca667706c3b2fcebeffad16a9d85
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346798"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714261"
 ---
-# <a name="moduleflags"></a>MODULE_FLAGS
+# <a name="module_flags"></a>MODULE_FLAGS
 Utilizzato per descrivere un modulo.
 
 ## <a name="syntax"></a>Sintassi
@@ -52,27 +52,27 @@ public enum enum_MODULE_FLAGS { 
 
 ## <a name="fields"></a>Campi
  `MODULE_FLAG_NONE`\
- Non specifica nessun modulo.
+ Non specifica alcun modulo.
 
  `MODULE_FLAG_SYSTEM`\
  Specifica un modulo di sistema.
 
  `MODULE_FLAG_SYMBOLS`\
- Specifica un modulo di simboli.
+ Specifica un modulo di simbolo.
 
  `MODULE_FLAG_64BIT`\
  Specifica un modulo a 64 bit.
 
  `MODULE_FLAG_OPTIMIZED`\
- Specifica che il modulo è stato ottimizzato. Questo stato si riflette nel **moduli** finestra.
+ Specifica che il modulo è stato ottimizzato. Questo stato si riflette nella finestra **Moduli.**
 
  `MODULE_FLAG_UNOPTIMIZED`\
- Specifica che il modulo non è stato ottimizzato. Questo stato si riflette nel **moduli** finestra. Questo è lo stato predefinito.
+ Specifica che il modulo non è stato ottimizzato. Questo stato si riflette nella finestra **Moduli.** Questo è lo stato predefinito.
 
-## <a name="remarks"></a>Note
- Utilizzato per il `m_dwModuleFlags` membro della [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struttura.
+## <a name="remarks"></a>Osservazioni
+ Utilizzato per `m_dwModuleFlags` il membro della [struttura MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
 
- Questi flag possono essere combinati con un bit per bit `OR`.
+ Questi flag possono essere combinati `OR`con un oggetto .
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

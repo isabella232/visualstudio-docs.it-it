@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Supporta la struttura in un servizio di linguaggio Legacy | Microsoft Docs'
+title: 'Procedura: Supportare la struttura in un servizio di linguaggio Legacy Documenti Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,44 +7,44 @@ helpviewer_keywords:
 - language services, supporting Collapse to Definitions command
 - hidden text, Collapse to Definitions command
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f79f98ede5c28f8e3acb682ebe8f23e4dc4f72e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 28396d513c83ed83e2769e75a6020a98b10251b4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312046"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707911"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procedura: Supporta la struttura in un servizio di linguaggio legacy
-La struttura consente di espandere o comprimere aree diverse del testo. La struttura viene utilizzata possono essere definiti in modo diverso in lingue diverse. Per altre informazioni, vedere [Struttura](../../ide/outlining.md).
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procedura: supportare la struttura in un servizio di linguaggio legacyHow to: Support outlining in a legacy language service
+La struttura viene utilizzata per espandere o comprimere diverse aree di testo. Il modo in cui viene utilizzata la struttura può essere definito in modo diverso da lingue diverse. Per altre informazioni, vedere [Struttura](../../ide/outlining.md).
 
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare la struttura, vedere [procedura dettagliata: Struttura](../../extensibility/walkthrough-outlining.md).
+ Servizi di linguaggio legacy vengono implementati come parte di un VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'utilizzare le estensioni MEF. Per ulteriori informazioni sul nuovo modo di implementare la struttura, vedere [Procedura dettagliata: struttura](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
-> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
+> Si consiglia di iniziare a utilizzare la nuova API dell'editor il prima possibile. Ciò migliorerà le prestazioni del servizio di linguaggio e consentirà di sfruttare le nuove funzionalità dell'editor.
 
  Di seguito viene illustrato come supportare questo comando per il servizio di linguaggio.
 
 ## <a name="to-support-outlining"></a>Per supportare la struttura
 
-1. Implementare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> nell'oggetto del servizio di linguaggio.
+1. Implementare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> l'oggetto servizio di linguaggio.
 
-2. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> sull'oggetto sessione per aggiungere nuove aree della struttura corrente della struttura.
+2. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> l'oggetto sessione struttura corrente per aggiungere nuove aree della struttura.
 
 ## <a name="robust-programming"></a>Programmazione efficiente
- Quando un utente seleziona **Comprimi alle definizioni** nel **struttura** dal menu, le chiamate IDE <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> sul servizio di linguaggio.
+ Quando un utente seleziona **Comprimi alle definizioni** nel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> **struttura** menu, l'IDE chiama sul servizio di linguaggio.
 
- Quando questo metodo viene chiamato, l'IDE passa in un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> puntatore (un puntatore a un buffer di testo) e un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (un puntatore alla sessione della struttura corrente).
+ Quando questo metodo viene chiamato, l'IDE passa un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> puntatore <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (un puntatore a un buffer di testo) e un (un puntatore alla sessione di struttura corrente).
 
- È possibile chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> metodo per più aree di struttura specificando in queste aree il `rgOutlnReg` parametro. Il `rgOutlnReg` parametro è un <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> struttura. Questo processo consente di specificare diverse caratteristiche dell'area nascosta, ad esempio se una determinata area è espanso o compresso.
+ È possibile <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> chiamare il metodo per più aree `rgOutlnReg` di struttura specificando queste aree nel parametro. Il `rgOutlnReg` parametro <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> è una struttura. Questo processo consente di specificare caratteristiche diverse dell'area nascosta, ad esempio se una determinata area viene espansa o compressa.
 
 > [!NOTE]
-> Prestare attenzione se si nasconde caratteri di nuova riga. Testo nascosto deve estendere dall'inizio della prima riga all'ultimo carattere dell'ultima riga in una sezione, lasciando visibili il carattere di nuova riga finale.
+> Prestare attenzione a nascondere i caratteri di nuova riga. Il testo nascosto deve estendersi dall'inizio della prima riga all'ultimo carattere dell'ultima riga di una sezione, lasciando visibile il carattere di nuova riga finale.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Fornisce il supporto di testo nascosto in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
-- [Procedura: Fornire supporto per la struttura espanso in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+- [Procedura: fornire supporto per testo nascosto in un servizio di linguaggio legacyHow to: Provide hidden text support in a legacy language service](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
+- [Procedura: fornire il supporto della struttura espansa in un servizio di linguaggio legacyHow to: Provide expanded outlining support in a legacy language service](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

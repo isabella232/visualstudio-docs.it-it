@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesState | Microsoft Docs
+title: IDebugSymbolProviderDirect::GetCurrentModulesState . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetCurrentModulesState
 - IDebugSymbolProviderDirect::GetCurrentModulesState
 ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59f1917f420e4815bcd525f131e4b524e53e6b3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c9e7cf711b5cf6823059945f85b9c3db30701ccf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347324"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719080"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-Recupera le informazioni relative al gruppo di simboli di cui il provider di simboli è un membro.
+Recupera informazioni sul gruppo di simboli di cui il provider di simboli è membro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ int GetCurrentModulesState(
 
 ## <a name="parameters"></a>Parametri
 `pState`\
-[out] Lo stato del gruppo di provider di simboli.
+[fuori] Stato del gruppo di provider di simboli.
 
 `count`\
-[out] Numero di moduli del gruppo.
+[fuori] Numero di moduli nel gruppo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Lo stato viene modificato ogni volta che un modulo viene aggiunto a o rimosso da, il gruppo di simboli. Di conseguenza, questo metodo può essere utilizzato per rilevare se un gruppo di simboli è stato modificato.
+## <a name="remarks"></a>Osservazioni
+ Lo stato viene modificato ogni volta che un modulo viene aggiunto o rimosso dal gruppo di simboli. Pertanto, questo metodo può essere utilizzato per rilevare se un gruppo di simboli è stato modificato.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

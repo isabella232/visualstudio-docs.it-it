@@ -1,29 +1,29 @@
 ---
-title: Linee guida sull'esperienza utente di Visual Studio | Microsoft Docs
+title: Linee guida per l'esperienza utente di Visual Studio Documenti Microsoft
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28cf2f0542cc76e5045dbf0780e9899983084760
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 994d0029e7dfdc3559adae0e1c022acd38d7f5a4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982383"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698200"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Linee guida sull'esperienza utente di Visual Studio
-Se si progettano nuove funzionalità per Visual Studio, seguire le linee guida sull'esperienza utente di Visual Studio. Queste linee guida contengono informazioni sui modelli utente comuni e i modelli di interazione, in modo che i progettisti di nuove interfacce utente possano creare esperienze utente che sono coerenti e coerenti all'interno dell'ambiente di sviluppo.
+Seguire le linee guida per l'esperienza utente di Visual Studio se si progettano nuove funzionalità per Visual Studio.Follow the Visual Studio User Experience Guidelines if you design new features for Visual Studio. Queste linee guida contengono informazioni sui modelli utente comuni e sui modelli di interazione in modo che i progettisti di nuove interfacce utente (UI) possano creare esperienze utente uniformi e coerenti all'interno dell'ambiente di sviluppo.
 
-Se si sviluppa software per prodotti Microsoft, imparare a usare queste risorse:
+Se sviluppi software per i prodotti Microsoft, scopri di usare queste risorse:
 
-- Le [linee guida](/windows/win32/uxguide/guidelines) per l'interazione con l'esperienza utente di Windows sono le nozioni di base per il comportamento e l'aspetto
+- Le linee guida per [l'interazione con l'esperienza utente](/windows/win32/uxguide/guidelines) di Windows sono le nozioni di base per il comportamento e l'aspetto del desktop di Windows.The Windows User Experience Interaction Guidelines are the basics for Windows desktop behavior and appearance.
 
-- Queste linee guida di Visual Studio, che sono linee guida specifiche della piattaforma che sostituiscono le linee guida generali di Windows laddove appropriate per l'ambiente in uso.
+- Queste linee guida di Visual Studio, che sono linee guida specifiche della piattaforma che sostituiscono le linee guida generali di Windows ove appropriato per il nostro ambiente.
 
-- I [controlli e i modelli per le app UWP](/windows/uwp/design/controls-and-patterns) sono un riferimento per i modelli emergenti che possono essere usati in alcune istanze all'interno di Visual Studio.
+- I [controlli e i pattern per le app UWP](/windows/uwp/design/controls-and-patterns) sono un riferimento per i modelli emergenti che possono essere usati in alcuni casi all'interno di Visual Studio.The controls and patterns for UWP apps are a reference for emerging patterns that may be used in some instances within Visual Studio.
 
-Queste linee guida forniscono informazioni sulle operazioni da eseguire quando si progetta per Visual Studio e in alcuni casi sono incluse anche informazioni su come eseguire questa operazione. Per informazioni più dettagliate sull'implementazione e per ottenere informazioni sulle API (Application Programming Interface) specifiche che consentono di scrivere codice per le soluzioni integrate in Visual Studio Integrated Development Environment (IDE), usare l'oggetto [visivo SDK (Software Development Kit) di studio](../visual-studio-sdk.md).
+Queste linee guida forniscono informazioni su cosa eseguire durante la progettazione per Visual Studio e in alcuni casi sono incluse anche informazioni su come eseguirlo. Per informazioni più dettagliate sull'implementazione e per informazioni sulle API (Application Programming Interface) specifiche che consentono di scrivere codice per soluzioni che si integrano nell'ambiente di sviluppo integrato (IDE) di Visual Studio, utilizzare [Visual Studio Software Development Kit (SDK)](../visual-studio-sdk.md).

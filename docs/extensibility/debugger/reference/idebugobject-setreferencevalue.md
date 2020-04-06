@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue | Microsoft Docs
+title: Proprietà IDebugObject::SetReferenceValue . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetReferenceValue method
 ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aaef4eb96942789bd3f574e6eeddcd3500ae6ee9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc0db8ee7f0581a4c336111d3876c24f0e5c12d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349942"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726373"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 Imposta il valore di riferimento di questo oggetto.
@@ -41,13 +41,13 @@ int SetReferenceValue(
 
 ## <a name="parameters"></a>Parametri
 `pObject`\
-[in] Un' [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto che rappresenta il nuovo valore di riferimento.
+[in] Oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta il nuovo valore di riferimento.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- Questo metodo rende questa [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) sul valore dell'oggetto specificato in un riferimento a un oggetto di `pObject` parametro, generando un'eccezione qualsiasi riferimento precedente. Si noti che questo `IDebugObject` oggetto deve essere già un tipo di riferimento.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo rende questo [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto un riferimento al `pObject` valore dell'oggetto specificato nel parametro, gettando via qualsiasi riferimento precedente. Si noti che questo `IDebugObject` oggetto deve essere già un tipo di riferimento.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

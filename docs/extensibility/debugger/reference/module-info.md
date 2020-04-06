@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Microsoft Docs
+title: proprietà MODULE_INFO . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db67710fd7ee71cddf1e7dbee030cb208a1de86c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339115"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714305"
 ---
-# <a name="moduleinfo"></a>MODULE_INFO
-Descrive un particolare modulo (DLL, EXE o assembly).
+# <a name="module_info"></a>MODULE_INFO
+Viene descritto un determinato modulo (DLL, EXE o assembly).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,45 +63,45 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>Membri
  `dwValidFields`\
- Una combinazione di flag dal [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumerazione che specifica quali campi vengono compilati.
+ Combinazione di flag dell'enumerazione [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) che specifica quali campi vengono compilati.
 
  `m_bstrName`\
  Nome del modulo.
 
  `m_bstrUrl`\
- L'URL del modulo.
+ URL del modulo.
 
  `m_bstrVersion`\
- La versione del modulo.
+ Versione del modulo.
 
  `m_bstrDebugMessage`\
- Un messaggio facoltativo sul modulo, ad esempio, "non è possibile caricare i simboli."
+ Un messaggio facoltativo relativo al modulo, ad esempio "Impossibile caricare i simboli".
 
  `m_addrLoadAddress`\
- L'indirizzo di caricamento del modulo.
+ Indirizzo di caricamento del modulo.
 
  `m_addrPreferredLoadAddress`\
- L'indirizzo di caricamento preferito del modulo.
+ Indirizzo di caricamento preferito del modulo.
 
  `m_dwSize`\
- Le dimensioni del modulo.
+ Dimensioni del modulo.
 
  `m_dwLoadOrder`\
- L'ordine di caricamento del modulo.
+ Ordine di caricamento del modulo.
 
  `m_TimeStamp`\
- L'ora che dell'ultima modifica apportata al file di simboli.
+ Ora dell'ultima modifica del file di simboli.
 
  `m_bstrUrlSymbolLocation`\
- Il percorso del file di simboli (ad esempio, ".\\") specificato nel modulo. Utilizzato come una posizione di partenza per trovare i simboli per un modulo.
+ Percorso del file di simboli (ad\\esempio, ". ") specificato nel modulo. Utilizzato come posizione iniziale per trovare i simboli per un modulo.
 
  `m_dwModuleFlags`\
- Una combinazione di flag dal [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) enumerazione che descrive il modulo.
+ Combinazione di flag dell'enumerazione [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) che descrive il modulo.
 
-## <a name="remarks"></a>Note
- Questa struttura viene passata per il [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) in cui viene compilato nel metodo.
+## <a name="remarks"></a>Osservazioni
+ Questa struttura viene passata al [metodo GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) in cui viene compilata.
 
- Questa struttura corrisponde a ogni modulo nel **moduli** finestra.
+ Questa struttura corrisponde a ogni modulo elencato nella finestra **Moduli.**
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

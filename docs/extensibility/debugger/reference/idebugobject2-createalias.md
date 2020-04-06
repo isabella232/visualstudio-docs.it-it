@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias | Microsoft Docs
+title: Metodo IDebugObject2::CreateAlias . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::CreateAlias method
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: efab749b7850cc3c7e3a29a62240ce9502f99843
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03564e8b81eb4e11a2cd4f25e1047d326d62b21b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317407"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726303"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
-Restituisce un alias esistente o crea un alias per questo oggetto o un ID univoco.
+Crea un ID o un alias univoco per questo oggetto o restituisce un alias esistente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int CreateAlias(
 
 ## <a name="parameters"></a>Parametri
 `ppAlias`\
-[out] L'alias di nuovo (o esistente).
+[fuori] Alias nuovo (o esistente).
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- Un alias è un'etichetta che rappresenta un oggetto specifico, mentre l'oggetto è in memoria.
+## <a name="remarks"></a>Osservazioni
+ Un alias è un'etichetta che rappresenta un particolare oggetto mentre l'oggetto è in memoria.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

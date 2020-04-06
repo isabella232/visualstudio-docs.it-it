@@ -1,99 +1,99 @@
 ---
-title: Modello di Visual Studio Manifest Schema Reference | Microsoft Docs
+title: Riferimenti allo schema del manifesto del modello di Visual Studio Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52a421986e076d2badc6dc7eb76247d243da155b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dbe46851d9df85569be796b4147217bd7db450ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323020"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697978"
 ---
-# <a name="visual-studio-template-manifest-schema-reference"></a>Riferimento dello schema del manifesto di modello di Visual Studio
-Questo schema viene descritto il formato del manifesto del modello di Visual Studio (*con estensione vstman*) i file che vengono generati per i modelli di progetto o un elemento di Visual Studio. Lo schema descrive anche la posizione e altre informazioni rilevanti relative al modello.
+# <a name="visual-studio-template-manifest-schema-reference"></a>Informazioni di riferimento sullo schema del manifesto del modello di Visual StudioVisual Studio template manifest schema reference
+In questo schema viene descritto il formato dei file di manifesto del modello di Visual Studio (*con estensione vstman*) generati per i modelli di progetto o di elemento di Visual Studio. Lo schema descrive anche il percorso e altre informazioni rilevanti sul modello.
 
- : Poiché esistono elemento separato e le directory di progetto, un manifesto mai deve avere una combinazione di modelli di progetto ed elemento.
+ : poiché sono presenti directory separate di modelli di progetto e di elemento, un manifesto non deve mai avere una combinazione di modelli di elemento e di progetto.
 
 > [!IMPORTANT]
-> Questo manifesto è disponibile a partire da Visual Studio 2017.
+> Questo manifesto è disponibile a partire da Visual Studio 2017.This manifest is available starting in Visual Studio 2017.
 
-## <a name="vstemplatemanifest-element"></a>Elemento VSTemplateManifest
- L'elemento radice del manifesto.
+## <a name="vstemplatemanifest-element"></a>VSTemplateManifest (elemento)
+ Elemento radice del manifesto.
 
 ### <a name="attributes"></a>Attributi
 
-- **Versione**: Stringa che rappresenta la versione del manifesto del modello. Obbligatorio.
+- **Versione**: Una stringa che rappresenta la versione del manifesto del modello. Obbligatorio.
 
-- **Impostazioni locali**: Stringa che rappresenta le impostazioni locali o impostazioni locali del manifesto del modello. Il valore delle impostazioni locali si applica a tutti i modelli. È necessario usare un manifesto separato per ogni impostazione locale. Facoltativo.
+- **Locale**: stringa che rappresenta le impostazioni locali o le impostazioni locali del manifesto del modello. Il valore delle impostazioni locali si applica a tutti i modelli. È necessario utilizzare un manifesto separato per ogni impostazione locale. Facoltativa.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-- **VSTemplateContainer** facoltativo.
+- **VSTemplateContainer** Opzionale.
 
-- **VSTemplateDir** facoltativo.
+- **VSTemplateDir** Opzionale.
 
 ### <a name="parent-element"></a>Elemento padre
- Nessuno.
+ No.
 
 ## <a name="vstemplatecontainer"></a>VSTemplateContainer
- Il contenitore del modello di manifesto elementi. Un contenitore di modello per ogni modello che definisce un manifesto.
+ Contenitore degli elementi del manifesto del modello. Un manifesto ha un contenitore di modelli per ogni modello che definisce.
 
 ### <a name="attributes"></a>Attributi
- **VSTemplateType**: Valore stringa che specifica il tipo del modello (`"Project"`, `"Item"`, o `"ProjectGroup"`). Obbligatorio
+ **VSTemplateType**: valore stringa che specifica il`"Project"`tipo `"Item"`del `"ProjectGroup"`modello ( , , o ). Obbligatoria
 
 ### <a name="child-elements"></a>Elementi figlio
 
-- **RelativePathOnDisk**:  Il percorso relativo del file del modello su disco. Questo percorso definisce anche la posizione del modello nell'albero del modello illustrato nella **nuovo progetto** oppure **nuovo elemento** finestra di dialogo. Per i modelli distribuiti come una directory e i singoli file, questo percorso fa riferimento alla directory contenente i file di modello. Per i modelli distribuiti come un *zip* file, questo percorso deve essere il percorso per il *zip* file.
+- **RelativePathOnDisk**: il percorso relativo del file modello su disco. Questa posizione definisce anche la posizione del modello nell'albero del modello mostrato nella finestra di dialogo **Nuovo progetto** o **Nuovo elemento.** Per i modelli distribuiti come directory e singoli file, questo percorso fa riferimento alla directory contenente i file modello. Per i modelli distribuiti come file *con estensione zip,* questo percorso deve essere il percorso del file *con estensione zip.*
 
-- **VSTemplateHeader: Oggetto [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento che descrive l'intestazione.
+- Un elemento [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) che descrive l'intestazione.
 
 ### <a name="parent-element"></a>Elemento padre
  **VSTemplateManifest**
 
 ## <a name="vstemplatedir"></a>VSTemplateDir
- Descrive la directory in cui si trova il modello. Un manifesto può contenere più **VSTemplateDir** voci per fornire nome localizzato e ordinamento per le directory di ordinamento per determinarne l'aspetto di albero delle categorie di modello.
+ Descrive la directory in cui si trova il modello. Un manifesto può contenere più **voci VSTemplateDir** per fornire il nome localizzato e l'ordinamento per le directory per controllarne l'aspetto nell'albero delle categorie di modelli.
 
- A causa di un progetto, **VSTemplateDir** voci devono essere visualizzato solo nei manifesti specificati non locali.
+ A causa della loro progettazione, le voci **VSTemplateDir** devono essere visualizzate solo nei manifesti specificati non per le impostazioni locali.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-- **RelativePath**: Il percorso del modello. Può esistere solo una voce per ogni percorso, il primo avrà la precedenza per tutti i manifesti.
+- **RelativePath**: Il percorso del modello. Ci può essere una sola voce per percorso, quindi la prima vincerà per tutti i manifesti.
 
-- **LocalizedName**: Oggetto **NameDescriptionIcon** elemento che specifica il nome localizzato. Facoltativo.
+- **LocalizedName**: Un elemento **NameDescriptionIcon** che specifica il nome localizzato. Facoltativa.
 
-- **SortOrder**: Stringa che specifica l'ordinamento. Facoltativo.
+- **SortOrder**: Una stringa che specifica l'ordinamento. Facoltativa.
 
-- **ParentFolderOverrideName**: Nome stato eseguito l'override della cartella padre. Facoltativo. Questo elemento dispone di un **nome** attributo, ovvero un valore stringa che specifica il nome.
+- **ParentFolderOverrideName**: il nome sottoposto a override della cartella padre. Facoltativa. Questo elemento ha un **Name** attributo, che è un valore stringa che specifica il nome.
 
 ### <a name="parent-element"></a>Elemento padre
  **VSTemplateManifest**
 
-## <a name="namedescriptionicon"></a>NameDescriptionIcon
- Specifica il nome e descrizione, possibilmente per i modelli localizzati. Visualizzare **LocalizedName** sopra.
+## <a name="namedescriptionicon"></a>NomeDescrizioneIcona
+ Specifica il nome e la descrizione, possibilmente per i modelli localizzati. Vedere **LocalizedName** sopra.
 
 ### <a name="attributes"></a>Attributi
 
-- **Pacchetto**: Valore stringa che specifica il pacchetto. Facoltativo.
+- **Package**: Un valore stringa che specifica il pacchetto. Facoltativa.
 
-- **ID**: Valore stringa che specifica l'ID. Facoltativo.
+- **ID**: Un valore stringa che specifica l'ID. Facoltativa.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ No.
 
 ### <a name="parent-element"></a>Elemento padre
- **LocalizedName**
+ **LocalizedName (Nome localizzato)**
 
 ## <a name="examples"></a>Esempi
- Il codice seguente è un esempio di un modello di progetto *con estensione vstman* file.
+ Il codice seguente è un esempio di un file *con estensione vstman* del modello di progetto.
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
@@ -119,7 +119,7 @@ Questo schema viene descritto il formato del manifesto del modello di Visual Stu
 
 ```
 
- Il codice seguente è un esempio di un modello di elemento *con estensione vstman* file.
+ Il codice seguente è un esempio di un file *con estensione vstman* del modello di elemento.
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">

@@ -1,38 +1,38 @@
 ---
-title: Panoramica del modello di automazione | Microsoft Docs
+title: Cenni preliminari sul modello di automazione Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], about automation
 - extensibility
 ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ea38dc79bd557f17bbae8276dd112304c9a40fa
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 7b940677c370106ebdcc63c7984d553003251e8a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186730"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710014"
 ---
 # <a name="automation-model-overview"></a>Panoramica del modello di automazione
-Il modello di automazione è costituito da un set di oggetti in cui è possibile scrivere un componente aggiuntivo o un'estensione di Visual Studio. Un componente aggiuntivo è un'applicazione in grado di modificare l'ambiente di Visual Studio e di automatizzare le attività comuni. Un'estensione di Visual Studio può creare componenti personalizzati di Visual Studio o aggiungere alla funzionalità dei componenti standard, ad esempio l'editor di testo.
+Il modello di automazione è costituito da un set di oggetti su cui è possibile scrivere un componente aggiuntivo o un'estensione di Visual Studio.The automation model consists of a set of objects against which you can write a Visual Studio add-in or extension. Un componente aggiuntivo è un'applicazione che può modificare l'ambiente di Visual Studio e automatizzare le attività comuni. Un'estensione di Visual Studio può creare componenti personalizzati di Visual Studio o aggiungere alla funzionalità dei componenti standard, ad esempio l'editor di testo.
 
-## <a name="objects-in-the-automation-model"></a>Oggetti nel modello di automazione
- Il modello di automazione è costituito da gruppi di oggetti correlati che controllano i facet principali dell'ambiente comune. Il diagramma seguente illustra il set completo di oggetti di Visual Studio che compongono il modello di automazione.
+## <a name="objects-in-the-automation-model"></a>Oggetti nel modello di automazioneObjects in the automation model
+ Il modello di automazione è costituito da gruppi correlati di oggetti che controllano i principali aspetti dell'ambiente comune. Nel diagramma seguente viene illustrato il set completo di oggetti di Visual Studio che compongono il modello di automazione.
 
  ![Grafico degli oggetti di automazione di Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")
 
- Per altre informazioni, vedere [estendere l'ambiente di Visual Studio](https://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).
+ Per ulteriori informazioni, vedere [Estendere l'ambiente di Visual Studio.](https://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)
 
- L'ambiente fornisce un modello per aree funzionali diverse. È ad esempio disponibile un modello di codice per vari elementi che potrebbero essere presenti nel codice. È disponibile un modello di documento per vari elementi del documento. Un'area, l'area del progetto, è di particolare interesse per i provider VSPackage. Probabilmente si vuole che i nuovi tipi di progetto contribuiscano al modello di automazione in modo analogo a [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] contribuiscono al modello di automazione. Questo processo è descritto in fornire l' [automazione per i pacchetti VSPackage](../../extensibility/internals/providing-automation-for-vspackages.md).
+ L'ambiente fornisce un modello per diverse aree funzionali. Ad esempio, è disponibile un modello di codice per vari elementi che è possibile trovare nel codice. Esiste un modello di documento per vari elementi del documento. Un'area, l'area del progetto, è di particolare interesse per i provider VSPackage. È probabile che si desideri che i nuovi tipi di [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] contribuiscano al modello di automazione in modo molto simile a quello e al modello di automazione. Tale processo è descritto in [fornire l'automazione per VSPackage](../../extensibility/internals/providing-automation-for-vspackages.md).
 
- Luoghi in cui è possibile estendere il modello di automazione dell'ambiente:
+ Posizioni in cui è possibile considerare l'estensione del modello di automazione dell'ambiente:
 
-- Progetto
+- Project
 
 - Document
 
@@ -40,7 +40,7 @@ Il modello di automazione è costituito da un set di oggetti in cui è possibile
 
 - Compilazione
 
-Per altre informazioni sull'automazione, vedere [automazione ed estendibilità per Visual Studio](/visualstudio/extensibility/extensibility-in-visual-studio?view=vs-2015). Questo documento e i documenti a cui forniscono i collegamenti consentono di prendere decisioni in merito a come fornire l'automazione per il pacchetto VSPackage.
+Per ulteriori informazioni sull'automazione, vedere [automazione ed estensibilità per Visual Studio](/visualstudio/extensibility/extensibility-in-visual-studio?view=vs-2015). Questo documento e i documenti a cui fornisce collegamenti, consentono di prendere decisioni su come è necessario fornire l'automazione per il pacchetto VSPackage.This document and the documents it provides links to, help you make decisions regarding how you should provide automation for your VSPackage.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: creare un componente aggiuntivo](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+- [Procedura: creare un componente aggiuntivoHow to: Create an add-in](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

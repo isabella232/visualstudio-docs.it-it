@@ -1,5 +1,5 @@
 ---
-title: Elemento ShowByDefault (modelli di Visual Studio)
+title: ShowByDefault (elemento) (modelli di Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <ShowByDefault> element [Visual Studio Templates]
 - ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720108"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700103"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (modelli di Visual Studio)
-Se `false`, specifica che il modello verrà visualizzato solo nel [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)specificato.
+# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault (elemento) (modelli di Visual Studio)
+Se `false`, specifica che il modello verrà visualizzato solo sotto [l'oggetto TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)specificato.
 
- \<VSTemplate > \<TemplateData > \<ShowByDefault >
+ \<> VSTemplate \<> \<TemplateData> ShowByDefault
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,10 +36,10 @@ Se `false`, specifica che il modello verrà visualizzato solo nel [TemplateGroup
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -52,7 +52,7 @@ Se `false`, specifica che il modello verrà visualizzato solo nel [TemplateGroup
 
  Questo testo deve essere `true` o `false`. Se true, specifica che il modello verrà visualizzato per tutti i tipi di progetto. Se false, il modello verrà visualizzato solo nel `TemplateGroupID` specificato.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  `ShowByDefault` è un elemento facoltativo. Il valore predefinito è `true`.
 
 ## <a name="example"></a>Esempio

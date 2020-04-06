@@ -1,5 +1,5 @@
 ---
-title: Funzione SccCloseProject | Microsoft Docs
+title: Funzione SccCloseProject . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCloseProject function
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a5fe721a3b51f4d3f210e7f2d5450e4f4bc6f41
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333927"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701057"
 ---
-# <a name="scccloseproject-function"></a>Funzione SccCloseProject
-Questa funzione consente di chiudere un progetto, contrassegna la fine di una determinata sessione.
+# <a name="scccloseproject-function"></a>SccCloseProject (funzione)
+Questa funzione chiude un progetto, contrassegnando la fine di una particolare sessione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,22 +31,22 @@ SCCRTN SccCloseProject (
 ```
 
 ### <a name="parameters"></a>Parametri
- pvContext la struttura del contesto plug-in del controllo origine.
+ pvContext La struttura di contesto del plug-in del controllo del codice sorgente.
 
 ## <a name="return-value"></a>Valore restituito
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+ L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei seguenti valori:
 
-|Value|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|Il progetto è stato chiuso.|
-|SCC_E_PROJNOTOPEN|Nessun progetto è aperto.|
+|SCC_OK|Il progetto è stato chiuso con successo.|
+|SCC_E_PROJNOTOPEN|Nessun progetto è attualmente aperto.|
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
-## <a name="remarks"></a>Note
- Il [SccOpenProject](../extensibility/sccopenproject-function.md) viene sempre chiamato prima di questa funzione. Una chiamata a questa funzione viene quindi seguita da una chiamata a uno il `SccOpenProject` funzione o il [SccUninitialize](../extensibility/sccuninitialize-function.md), che termina la connessione al sistema di controllo di origine completamente.
+## <a name="remarks"></a>Osservazioni
+ Il [SccOpenProject](../extensibility/sccopenproject-function.md) viene sempre chiamato prima di questa funzione. Una chiamata a questa funzione è quindi `SccOpenProject` seguita da una chiamata alla funzione o [a SccUninitialize](../extensibility/sccuninitialize-function.md), che termina completamente la connessione al sistema di controllo del codice sorgente.
 
 ## <a name="see-also"></a>Vedere anche
-- [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)
+- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

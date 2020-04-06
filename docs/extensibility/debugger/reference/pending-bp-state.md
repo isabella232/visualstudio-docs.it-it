@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE | Microsoft Docs
+title: PENDING_BP_STATE . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6707c09e409e2a04d7afec0322b575a70cea33cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69c8dbe1022ee0b1b2ff034d2b83b947c8fb3df6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349864"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714002"
 ---
-# <a name="pendingbpstate"></a>PENDING_BP_STATE
-Specifica lo stato di un punto di interruzione in sospeso (un punto di interruzione che non è ancora stata associata).
+# <a name="pending_bp_state"></a>PENDING_BP_STATE
+Specifica lo stato di un punto di interruzione in sospeso (un punto di interruzione che non è ancora stato associato).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,13 +54,13 @@ public enum enum_PENDING_BP_STATE { 
  Indica che il punto di interruzione in sospeso è stato eliminato.
 
  `PBPS_DISABLED`\
- Indica che il punto di interruzione in sospeso è disabilitata.
+ Indica che il punto di interruzione in sospeso è disabilitato.
 
  `PBPS_ENABLED`\
- Indica che il punto di interruzione in sospeso è abilitata.
+ Indica che il punto di interruzione in sospeso è abilitato.
 
-## <a name="remarks"></a>Note
- Usare come le `state` membro della [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struttura.
+## <a name="remarks"></a>Osservazioni
+ Utilizzare come `state` membro della struttura [PENDING_BP_STATE_INFO.](../../../extensibility/debugger/reference/pending-bp-state-info.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

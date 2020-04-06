@@ -1,5 +1,5 @@
 ---
-title: Enumeratore di codice di stato di file | Microsoft Docs
+title: Enumeratore del codice di stato del file - Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - SccStatus enumerator
 - file status code enumerator
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94bd9ff93872139fc056c4c8bb7a59191616919e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 184c8686ea184aea2cbd0a64873718cbe72f7615
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342695"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711446"
 ---
-# <a name="file-status-code-enumerator"></a>Enumeratore di codice di stato file
-Il `SccStatus` enumeratore contiene denominati valori costanti che specificano lo stato di un file nel sistema di controllo di origine. Questa enumerazione viene utilizzata per la [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e il `POPLISTFUNC` funzione di callback (vedere [POPLISTFUNC](../extensibility/poplistfunc.md) per informazioni dettagliate).
+# <a name="file-status-code-enumerator"></a>Enumeratore codice di stato del file
+L'enumeratore `SccStatus` contiene valori costanti denominati che specificano lo stato di un file nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e dalla `POPLISTFUNC` funzione di callback (vedere [POPLISTFUNC](../extensibility/poplistfunc.md) per i dettagli).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,43 +49,43 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>Membri
- Non è stato possibile ottenere lo stato SCC_STATUS_INVALID; non fare affidamento su di esso.
+ SCC_STATUS_INVALID Impossibile ottenere lo Status; non fare affidamento su di esso.
 
- SCC_STATUS_NOTCONTROLLED File non è presente nel controllo del codice sorgente.
+ SCC_STATUS_NOTCONTROLLED File non è nel controllo del codice sorgente.
 
- SCC_STATUS_CONTROLLED File è incluso nel controllo del codice sorgente.
+ SCC_STATUS_CONTROLLED File è nel controllo del codice sorgente.
 
- SCC_STATUS_CHECKEDOUT controllati numero di utenti corrente sul disco locale.
+ SCC_STATUS_CHECKEDOUT Estratto dall'utente corrente sul disco locale.
 
- SCC_STATUS_OUTOTHER File viene estratto da un altro utente.
+ SCC_STATUS_OUTOTHER file è estratto da un altro utente.
 
- SCC_STATUS_OUTEXCLUSIVE File viene estratto in esclusiva.
+ SCC_STATUS_OUTEXCLUSIVE file viene estratto esclusivamente.
 
- SCC_STATUS_OUTMULTIPLE File viene estratto da più di un utente.
+ SCC_STATUS_OUTMULTIPLE file è estratto da più utenti.
 
- SCC_STATUS_OUTOFDATE il file non è più recente.
+ SCC_STATUS_OUTOFDATE Il file non è il più recente.
 
- File SCC_STATUS_DELETED è stato eliminato dal progetto.
+ SCC_STATUS_DELETED file è stato eliminato dal progetto.
 
- File SCC_STATUS_LOCKED è bloccato; non le versioni più consentite.
+ SCC_STATUS_LOCKED Il file è bloccato; non sono più ammesse versioni.
 
- SCC_STATUS_MERGED File è stato unito ma non ancora corretto o verificato.
+ SCC_STATUS_MERGED file è stato unito ma non ancora fisso/verificato.
 
- File SCC_STATUS_SHARED è condiviso tra progetti.
+ SCC_STATUS_SHARED file viene condiviso tra i progetti.
 
- File SCC_STATUS_PINNED è condivisa in una versione esplicita.
+ SCC_STATUS_PINNED File viene condiviso con una versione esplicita.
 
- File SCC_STATUS_MODIFIED è stato modificato, interrotto o violato.
+ SCC_STATUS_MODIFIED file è stato modificato/interrotto/violato.
 
- File SCC_STATUS_OUTBYUSER estratto dall'utente corrente.
+ SCC_STATUS_OUTBYUSER file è estratto dall'utente corrente.
 
- File SCC_STATUS_NOMERGE mai possono essere unite e non deve essere salvato prima di un'operazione GET.
+ SCC_STATUS_NOMERGE File non può mai essere unito e non deve essere salvato prima di un GET.
 
- SCC_STATUS_RESERVED_1 riservati per uso interno.
+ SCC_STATUS_RESERVED_1 Riservato per uso interno.
 
- SCC_STATUS_RESERVED_2 riservati per uso interno.
+ SCC_STATUS_RESERVED_2 Riservato per uso interno.
 
 ## <a name="see-also"></a>Vedere anche
-- [Plug-in controllo codice sorgente](../extensibility/source-control-plug-ins.md)
+- [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

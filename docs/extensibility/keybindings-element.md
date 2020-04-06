@@ -1,5 +1,5 @@
 ---
-title: Elemento KeyBindings | Microsoft Docs
+title: Elemento KeyBindings . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBindings element (VSCT XML schema)
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d970497dd8f80d66bdbdac8809103582104a2636
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352587"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703132"
 ---
 # <a name="keybindings-element"></a>Elemento KeyBindings
-L'elemento KeyBindings Raggruppa gli elementi di tasto di scelta rapida e altri raggruppamenti di tasti di scelta rapida.
+L'elemento KeyBindings raggruppa gli elementi KeyBinding e altri raggruppamenti KeyBindings.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,14 +39,14 @@ L'elemento KeyBindings Raggruppa gli elementi di tasto di scelta rapida e altri 
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
 |[Elemento KeyBinding](../extensibility/keybinding-element.md)|Specifica i tasti di scelta rapida per i comandi.|
-|[KeyBindings](../extensibility/keybindings-element.md)|Raggruppa gli elementi di tasto di scelta rapida e altri raggruppamenti di tasti di scelta rapida.|
+|[KeyBindings (Associazione tasti)](../extensibility/keybindings-element.md)|Raggruppa gli elementi KeyBinding e altri raggruppamenti KeyBindings.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -67,4 +67,4 @@ L'elemento KeyBindings Raggruppa gli elementi di tasto di scelta rapida e altri 
 
 ## <a name="see-also"></a>Vedere anche
 - [Elemento KeyBinding](../extensibility/keybinding-element.md)
-- [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

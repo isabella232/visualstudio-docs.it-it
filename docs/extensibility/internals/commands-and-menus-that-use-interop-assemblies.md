@@ -1,5 +1,5 @@
 ---
-title: I comandi e menu che usano assembly di interoperabilità | Microsoft Docs
+title: Comandi e menu che utilizzano gli assembly di interoperabilità . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,55 +8,55 @@ helpviewer_keywords:
 - commands, handling using interop assemblies
 - command handling with interop assemblies
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14625d38a8eae594d1ba63aa1f628c2482be8f30
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e6c381abe9b4c6ea2a58342e185d7427fa56a180
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342020"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709494"
 ---
-# <a name="commands-and-menus-that-use-interop-assemblies"></a>I comandi e menu che usano assembly di interoperabilità
-Un pacchetto VSPackage che implementa i comandi di menu e barra degli strumenti usando assembly di interoperabilità deve:
+# <a name="commands-and-menus-that-use-interop-assemblies"></a>Comandi e menu che utilizzano assembly di interoperabilitàCommands and menus that use Interop assemblies
+Un pacchetto VSPackage che implementa i comandi di menu e barra degli strumenti utilizzando gli assembly di interoperabilità deve:A VSPackage that implements menu and toolbar commands by using Interop assemblies must:
 
-- Informare il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) sui comandi supportati e se sono attualmente abilitati.
+- Informare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l'ambiente di sviluppo integrato (IDE) sui comandi supportati e se sono attualmente abilitati.
 
 - Rispettare le regole (contratto) per la gestione dei comandi.
 
-- Implementare in modo esplicito la gestione dei comandi usando il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia.
+- Implementare in modo esplicito la gestione dei comandi utilizzando l'interfaccia <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> .
 
-  La sezione seguente descrive come eseguire queste attività.
+  Nella sezione seguente viene descritto come eseguire queste attività.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
-- [Determinare lo stato del comando con gli assembly di interoperabilità](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
+- [Determinare lo stato dei comandi utilizzando gli assembly di interoperabilitàDetermine command status by using Interop assemblies](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
 
- Viene descritto come un pacchetto VSPackage notifica all'IDE sulle quali comandi supportati e se sono attualmente abilitati.
+ Viene descritto come un VSPackage notifica l'IDE sui comandi che supporta e se sono attualmente abilitati.
 
-- [Contratti dei comandi negli assembly di interoperabilità](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
+- [Contratti di comando negli assembly di interoperabilitàCommand contracts in Interop assemblies](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
 
- Fornisce una definizione del contratto di comando di base usato da tutti i pacchetti VSPackage che implementa i comandi tramite assembly di interoperabilità.
+ Fornisce una definizione del contratto di comando di base utilizzato da tutti i package VS che implementano i comandi utilizzando gli assembly di interoperabilità.
 
-- [Implementazione del comando](../../extensibility/internals/command-implementation.md)
+- [Implementazione dei comandi](../../extensibility/internals/command-implementation.md)
 
- Fornisce una panoramica del modo in cui un pacchetto VSPackage implementa un comando.
+ Fornisce una panoramica di come un VSPackage implementa un comando.
 
-- [Registrare i gestori di comando di assembly di interoperabilità](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
+- [Registrare i gestori dei comandi dell'assembly di interoperabilità Register Interop assembly command handlers](../../extensibility/internals/registering-interop-assembly-command-handlers.md)
 
- Descrive le voci del Registro di sistema necessarie per inviare una notifica dell'IDE che un pacchetto VSPackage fornisce un gestore comando.
+ Descrive le voci del Registro di sistema necessarie per notificare l'IDE che un VSPackage fornisce un gestore di comando.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Disponibilità dei comandi](../../extensibility/internals/command-availability.md)
 
- Descrive i criteri usati dall'IDE per determinare quali comandi VSPackage sono disponibili e l'oggetto che li gestisce.
+ Vengono descritti i criteri utilizzati dall'IDE per determinare quali comandi VSPackage sono disponibili e quale oggetto li gestisce.
 
-- [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Come VSPackage aggiungere elementi dell'interfaccia utenteHow VSPackages add user interface elements](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
- Vengono fornite informazioni dettagliate su come creare un'interfaccia utente che usa [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando supporto.
+ Fornisce informazioni dettagliate su come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] creare un'interfaccia utente che usa il supporto dei comandi.
 
-- [Routing dei comandi nei pacchetti VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)
+- [Routing dei comandi nei pacchetti VSPackageCommand routing in VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)
 
- Panoramica del processo utilizzato per correlare un oggetto con la richiesta corretta del comando.
+ Panoramica del processo utilizzato per correlare un oggetto con la richiesta di comando corretta.

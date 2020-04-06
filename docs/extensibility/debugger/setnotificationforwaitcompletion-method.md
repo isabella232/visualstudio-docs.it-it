@@ -1,28 +1,28 @@
 ---
-title: Metodo SetNotificationForWaitCompletion | Microsoft Docs
+title: Metodo SetNotificationForWaitCompletion . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: da149c9a-20f4-4543-a29e-429c8c1d2e19
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d9bee2579cc3a93f657291551955f0c9b7565b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348578"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712870"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Metodo SetNotificationForWaitCompletion
-Imposta o Cancella il bit di stato TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
+Imposta o cancella il bit di stato del TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
 
- **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Spazio dei nomi:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** mscorlib (in *mscorlib. dll*)
+ **Assembly:** mscorlib (in *mscorlib.dll*)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,12 +33,12 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ### <a name="parameters"></a>Parametri
  `enabled`
 
- `true` Per impostare il bit; `false` per annullare il bit.
+ `true`per impostare il bit; `false` per annullare l'impostazione del bit.
 
 ## <a name="exceptions"></a>Eccezioni
 
-## <a name="remarks"></a>Note
- Il debugger imposta questo bit consentono di uscire il corpo di un metodo async. Se `enabled` è `true`, questo metodo deve essere chiamato solo su un'attività che non è ancora stata completata. Quando `enabled` è `false`, questo metodo può essere chiamato in attività completate. In entrambi i casi deve solo essere utilizzato per le attività basato su promise.
+## <a name="remarks"></a>Osservazioni
+ Il debugger imposta questo bit per facilitare l'uscita dal corpo di un metodo asincrono. Se `enabled` `true`è , questo metodo deve essere chiamato solo su un'attività che non è ancora stata completata. Quando `enabled` `false`è , questo metodo può essere chiamato sulle attività completate. In entrambi i casi, deve essere utilizzato solo per le attività di tipo promessa.
 
 ## <a name="requirements"></a>Requisiti
 

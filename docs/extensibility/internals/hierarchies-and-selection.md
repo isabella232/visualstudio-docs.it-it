@@ -1,5 +1,5 @@
 ---
-title: Le gerarchie e selezione | Microsoft Docs
+title: Gerarchie e selezione Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,37 +7,37 @@ helpviewer_keywords:
 - selection
 - hierarchies
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3d59a5160b5c20a3243426eaf1fda4b72e58e93
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a0e38c2cea464abded5ecf6ee2c8ac087868b07e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328872"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708133"
 ---
-# <a name="hierarchies-and-selection"></a>Le gerarchie e selezione
-Quando si personalizza [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è necessario comprendere come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce le gerarchie, ad esempio i progetti e utilizza come contesto di selezione per determinare ciò che viene visualizzato all'utente. In questa sezione illustra i concetti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gerarchie e selezione.
+# <a name="hierarchies-and-selection"></a>Gerarchie e selezione
+Quando si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]personalizza , [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è necessario comprendere come gestisce le gerarchie, ad esempio i progetti, e come utilizza il contesto di selezione per determinare ciò che viene visualizzato all'utente. In questa sezione [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vengono illustrati i concetti di gerarchie e selezione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
- Descrive il concetto generale di gerarchie e le gerarchie di progetto.
+ Descrive le gerarchie di progetto e il concetto generale di gerarchie.
 
 - [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 
- Viene descritto come il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) mantiene le informazioni sugli oggetti attualmente attiva dell'utente e consente a pacchetti VSPackage di tenere traccia di tipo valuta.
+ Viene descritto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] come l'ambiente di sviluppo integrato (IDE) gestisce le informazioni sugli oggetti attualmente attivi dell'utente e consente VSPackage tenere traccia della valuta.
 
 - [Oggetti di contesto di selezione](../../extensibility/internals/selection-context-objects.md)
 
- Viene illustrato il modello per come è possibile determinare lo stato attivo contesto di selezione dell'utente in una finestra.
+ Viene illustrato il modello per determinare lo stato attivo del contesto di selezione dell'utente su una finestra.
 
-- [Commenti e suggerimenti all'utente](../../extensibility/internals/feedback-to-the-user.md)
+- [Feedback all'utente](../../extensibility/internals/feedback-to-the-user.md)
 
- Viene illustrato come le funzionalità disponibili nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è basata sul contesto della selezione corrente e il contesto IDE complessiva dell'utente.
+ Viene illustrato come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la funzionalità disponibile in è basata sul contesto di selezione corrente dell'utente e il contesto IDE generale.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Architettura dei tipi di progetto](../../extensibility/internals/project-types-architecture.md)

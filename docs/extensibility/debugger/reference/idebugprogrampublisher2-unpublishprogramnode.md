@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft Docs
+title: IDebugProgramPublisher2::UnpublishProgramNode . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::UnpublishProgramNode
 ms.assetid: 57c7e6e1-b84e-4e14-ad83-cbbb64e2f526
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c59f4df20be0836d42a5d88431401660d9d5bc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae2c3d9f3c9f6c500b10f580035312b2d045689a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343148"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721573"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-Rimuove un nodo di programma specificato dalla disponibilità del debug motori (DEs) e gestore di sessione di debug (SDM).
+Rimuove un nodo di programma specificato dalla disponibilità ai motori di debug (DE) e dal gestore di debug della sessione (SDM).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,15 +41,15 @@ int UnpublishProgramNode(
 
 ## <a name="parameters"></a>Parametri
 `pProgramNode`\
-[in] Un' [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetto che rappresenta il nodo di programma da rimuovere.
+[in] Oggetto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il nodo del programma da rimuovere.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Una volta rimosso, il nodo di programma non è più disponibile per essere eseguita una query per le informazioni sul programma.
+## <a name="remarks"></a>Osservazioni
+ Una volta rimosso, il nodo del programma non è più disponibile per essere interrogato per le informazioni sul programma.
 
- Per rendere disponibile un nodo di programma, chiamare il [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) (metodo).
+ Per rendere disponibile un nodo di programma, chiamare il [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

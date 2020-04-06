@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION | Microsoft Docs
+title: TEXT_POSITION . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f53cb7a0dacc58a0d4a8109ea6dd3ca3ab710e1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336303"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713419"
 ---
-# <a name="textposition"></a>TEXT_POSITION
-Descrive la posizione di riga e colonna in testo specificato.
+# <a name="text_position"></a>TEXT_POSITION
+Descrive la posizione della riga e della colonna nel testo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ public struct TEXT_POSITION { 
 Indice della riga nel file di origine.
 
 `dwColumn`\
-Offset carattere nella riga.
+Offset carattere in riga.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
-Questa struttura viene utilizzata la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) e [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) strutture.
+Questa struttura viene utilizzata nelle strutture [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) e [DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
 
-Questa struttura viene compilata da una chiamata ai metodi seguenti:
+Questa struttura viene compilata da una chiamata ai metodi seguenti:This structure is filled in by a call to the following methods:
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -63,9 +63,9 @@ Questa struttura viene compilata da una chiamata ai metodi seguenti:
 
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 
-Questa struttura viene passata come parametro per i metodi seguenti:
+Questa struttura viene passata come parametro ai metodi seguenti:This structure is passed as a parameter to the following methods:
 
-- [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
+- [Gettext](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 
 - [onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)
 
@@ -90,7 +90,7 @@ Questa struttura viene passata come parametro per i metodi seguenti:
 - [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
-- [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
+- [Gettext](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

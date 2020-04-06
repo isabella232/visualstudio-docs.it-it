@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetInfo | Microsoft Docs
+title: IDebugStackFrame2::GetInfo . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetInfo
 ms.assetid: 19c6870b-b94e-453c-bf19-82ce95b79d26
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad560386991a0545510e1b74a140d17cc35fcbe3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 09768fc58640d79a3b5628bafc16b2267f1f8a4c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352119"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719720"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
-Ottiene una descrizione del frame dello stack.
+Ottiene una descrizione dello stack frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ int GetInfo ( 
 
 ## <a name="parameters"></a>Parametri
 `dwFieldSpec`\
-[in] Una combinazione di flag dal [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumerazione che specifica quali campi del `pFrameInfo` parametro devono essere compilati.
+[in] Combinazione di flag dell'enumerazione [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) che `pFrameInfo` specifica quali campi del parametro devono essere compilati.
 
 `nRadix`\
-[in] La radice da utilizzare nella formattazione qualsiasi informazioni numeriche.
+[in] La radice da utilizzare nella formattazione di qualsiasi informazione numerica.
 
 `pFrameInfo`\
-[out] Oggetto [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struttura compilata con la descrizione del frame dello stack.
+[fuori] Struttura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) compilata con la descrizione dello stack frame.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

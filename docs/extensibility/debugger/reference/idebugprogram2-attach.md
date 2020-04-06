@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Attach | Microsoft Docs
+title: Proprietà IDebugProgram2::Attach . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Attach
 ms.assetid: de069fbf-a565-4905-b102-f5658c55aacd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca0d696067cecc042a0fa6eb071a92f18ac229fc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7d0b182ba7a873816e3a7aa32d39beb2c63cc5ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311401"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723144"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
-Collega al programma.
+Si collega al programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,19 +41,19 @@ int Attach( 
 
 ## <a name="parameters"></a>Parametri
 `pCallback`\
-[in] Un' [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) oggetto da utilizzare per la notifica degli eventi di debug.
+[in] Oggetto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) da utilizzare per la notifica degli eventi di debug.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. La tabella seguente illustra alcuni possibili codici di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. La tabella seguente mostra alcuni possibili codici di errore.
 
-|Value|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Il programma specificato è già collegato al debugger.|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Si è verificata una violazione della sicurezza durante la procedura di collegamento.|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un programma desktop non è possibile collegare il debugger.|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un programma desktop non può essere collegato al debugger.|
 
-## <a name="remarks"></a>Note
- Un motore di debug (DE) non chiama mai questo metodo per connettersi a un programma. Se la Germania è in esecuzione nello spazio degli indirizzi del programma, il [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) viene chiamato il metodo. Se l'esecuzione DE nel gestore di sessione debug (SDM) addressspace, il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) viene chiamato il metodo.
+## <a name="remarks"></a>Osservazioni
+ Un motore di debug (DE) non chiama mai questo metodo per connettersi a un programma. Se il DE viene eseguito nello spazio degli indirizzi del programma, il [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) viene chiamato il metodo. Se il DE viene eseguito nello spazio degli indirizzi del gestore di debug della sessione (SDM), il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) viene chiamato il metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

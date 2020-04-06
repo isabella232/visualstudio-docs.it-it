@@ -1,5 +1,5 @@
 ---
-title: Fa riferimento all'elemento (modelli di Visual Studio) | Microsoft Docs
+title: Elemento References (modelli di Visual Studio) Documenti Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <References> element [Visual Studio Templates]
 - References element [Visual Studio Templates]
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2ab5c3decc201958bd939a0a9d66dd65a5ef1c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334418"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701608"
 ---
 # <a name="references-element-visual-studio-templates"></a>Elemento References (modelli di Visual Studio)
-Raggruppa i riferimenti all'assembly che il modello aggiunge ai progetti.
+Raggruppa l'assembly a cui il modello aggiunge ai progetti.
 
- \<VSTemplate > \<TemplateContent > \<riferimenti >
+ \<VSTemplate \<> TemplateContent> \<Riferimenti>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ Raggruppa i riferimenti all'assembly che il modello aggiunge ai progetti.
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Riferimento](../extensibility/reference-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto. Deve esistere uno o più `Reference` elementi in un `References` elemento.|
+|[Riferimento](../extensibility/reference-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto. In un `References` elemento `Reference` devono essere presenti uno o più elementi.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -54,13 +54,13 @@ Raggruppa i riferimenti all'assembly che il modello aggiunge ai progetti.
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Specifica il contenuto del modello.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  `References` è un elemento figlio facoltativo di `TemplateContent`.
 
- Il `Reference` e `References` elementi possono essere utilizzati solo nel *vstemplate* contenenti un `Type` valore dell'attributo `Item`.
+ Gli `Reference` `References` elementi e possono essere utilizzati solo `Type` nei file `Item` *.vstemplate* con un valore di attributo di .
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato il `TemplateContent` elemento di un modello di elemento. Questo codice XML aggiunge i riferimenti per il *System. dll* e *System* assembly.
+ Nell'esempio seguente `TemplateContent` viene illustrato l'elemento di un modello di elemento. Questo codice XML aggiunge riferimenti agli assembly *System.dll* e *System.Data.dll.*
 
 ```xml
 <TemplateContent>
@@ -81,5 +81,5 @@ Raggruppa i riferimenti all'assembly che il modello aggiunge ai progetti.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)

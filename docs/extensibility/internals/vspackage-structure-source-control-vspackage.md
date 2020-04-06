@@ -1,40 +1,40 @@
 ---
-title: Struttura VSPackage (VSPackage di controllo codice sorgente) | Microsoft Docs
+title: Struttura VSPackage (controllo del codice sorgente VSPackage) . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d609efe52955dba53b8c8890a6fcb44bb7f3f352
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332747"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703801"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struttura VSPackage (VSPackage di controllo del codice sorgente)
 
-il SDK di pacchetto di controllo di origine fornisce indicazioni per la creazione di un pacchetto VSPackage che consentono a un implementatore di controllo di origine per integrare la propria funzionalità di controllo di origine con l'ambiente di Visual Studio. Un pacchetto VSPackage è un componente COM che in genere viene caricato su richiesta dall'ambiente di sviluppo integrato (IDE) di Visual Studio in base ai servizi che vengono annunciati dal pacchetto in relative voci del Registro di sistema. Ogni pacchetto VSPackage deve implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Un pacchetto VSPackage in genere vengono utilizzati i servizi offerti dall'IDE di Visual Studio e offre alcuni servizi specifici.
+L'SDK del pacchetto di controllo del codice sorgente fornisce linee guida per la creazione di un pacchetto VSPackage che consentono a un implementatore del controllo del codice sorgente di integrare la propria funzionalità di controllo del codice sorgente con l'ambiente di Visual Studio.The Source Control Package SDK provides guidelines for creating a VSPackage that allow a source control implementer to integrate his or his source control functionality with the Visual Studio environment. Un pacchetto VSPackage è un componente COM che viene in genere caricato su richiesta dall'ambiente di sviluppo integrato (IDE) di Visual Studio in base ai servizi annunciati dal pacchetto nelle relative voci del Registro di sistema. Ogni VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>deve implementare . Un VSPackage in genere utilizza i servizi offerti dall'IDE di Visual Studio e offre alcuni servizi propri.
 
-Un pacchetto VSPackage dichiara le voci di menu e viene stabilito uno stato dell'elemento predefinito tramite il file con estensione vsct. IDE di Visual Studio consente di visualizzare le voci di menu in questo stato fino a quando non viene caricato il pacchetto VSPackage. Successivamente, l'implementazione di VSPackage del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> viene chiamato per abilitare o disabilitare le voci di menu.
+Un pacchetto VSPackage dichiara le voci di menu e stabilisce uno stato di elemento predefinito tramite il file vsct. L'IDE di Visual Studio visualizza le voci di menu in questo stato fino a quando non viene caricato il pacchetto VSPackage. Successivamente, l'implementazione del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> VSPackage del metodo viene chiamato per abilitare o disabilitare le voci di menu.
 
-## <a name="source-control-package-characteristics"></a>Caratteristiche di pacchetto di origine controllo
+## <a name="source-control-package-characteristics"></a>Caratteristiche del pacchetto di controllo del codice sorgenteSource Control Package Characteristics
 
-Un pacchetto VSPackage di controllo di origine è integrato in Visual Studio. La semantica di VSPackage include:
+Un controllo del codice sorgente VSPackage è profondamente integrato in Visual Studio.A source control VSPackage is deeply integrated into Visual Studio. La semantica VSPackage include:The VSPackage semantics include:
 
-- Interfaccia da implementare poiché è un pacchetto VSPackage (il `IVsPackage` interfaccia)
+- Interfaccia da implementare in virtù di `IVsPackage` essere un VSPackage (l'interfaccia)Interface to be implemented by virtue of being a VSPackage (the interface)
 
-- Implementazione dei comandi dell'interfaccia utente (file con estensione vsct e l'implementazione del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia)
+- Implementazione del comando dell'interfaccia utente <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> (file con estensione vsct e implementazione dell'interfaccia)
 
 - Registrazione del pacchetto VSPackage con Visual Studio.
 
-Il controllo del codice sorgente VSPackage deve comunicare con queste altre entità di Visual Studio:
+Il controllo del codice sorgente VSPackage deve comunicare con queste altre entità di Visual Studio:The source control VSPackage must communicate with these other Visual Studio entities:
 
 - Progetti
 
@@ -42,11 +42,11 @@ Il controllo del codice sorgente VSPackage deve comunicare con queste altre enti
 
 - Soluzioni
 
-- WINDOWS
+- Windows
 
-- La tabella documenti in esecuzione
+- Tabella dei documenti in esecuzione
 
-### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Servizi dell'ambiente Visual Studio che possono essere usati
+### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Servizi di ambiente di Visual Studio che possono essere utilizzati
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>
 
@@ -62,15 +62,15 @@ Servizio SVsRegisterScciProvider
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>
 
-### <a name="vsip-interfaces-implemented-and-called"></a>VSIP interfacce implementate e chiamato
+### <a name="vsip-interfaces-implemented-and-called"></a>Interfacce VSIP implementate e chiamate
 
-Un pacchetto controllo del codice sorgente è un pacchetto VSPackage e pertanto può interagire direttamente con gli altri pacchetti VSPackage registrati con Visual Studio. Per garantire l'ampia gamma di controllo del codice sorgente, un controllo del codice sorgente VSPackage può gestire le interfacce fornite dai progetti o la shell.
+A source control package is a VSPackage, and therefore it can interact directly with other VSPackages that are registered with Visual Studio. Per fornire l'ampiezza completa della funzionalità di controllo del codice sorgente, un controllo del codice sorgente VSPackage può gestire le interfacce fornite dai progetti o la shell.
 
-Tutti i progetti di Visual Studio devono implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> venga riconosciuta come un progetto nell'IDE di Visual Studio. Tuttavia, questa interfaccia non specializzata sufficiente per controllo del codice sorgente. I progetti che dovrebbero essere nel gruppo origine controllano implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>. Questa interfaccia viene utilizzata dal pacchetto VSPackage di controllo del codice sorgente per eseguire query di un progetto del relativo contenuto e fornire i glifi e informazioni di associazione (le informazioni necessarie per stabilire una connessione tra il percorso del server e il percorso del disco di un progetto che si trova sotto controllo del codice sorgente).
+Ogni progetto in Visual <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> Studio deve implementare per essere riconosciuto come un progetto all'interno dell'IDE di Visual Studio.Every project in Visual Studio must implement to be recognized as a project within the Visual Studio IDE. Tuttavia, questa interfaccia non è sufficientemente specializzata per il controllo del codice sorgente. I progetti che si prevede <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>siano nel controllo del codice sorgente implementano . Questa interfaccia viene utilizzata dal controllo del codice sorgente VSPackage per eseguire una query di un progetto per il relativo contenuto e per fornire glifi e informazioni di associazione (le informazioni necessarie per stabilire una connessione tra il percorso del server e il percorso del disco di un progetto incluso nel controllo del codice sorgente).
 
-Il controllo del codice sorgente pacchetto VSPackage implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, che a sua volta consente ai progetti di registrarsi per il controllo di origine e recuperare le icone di stato.
+Il controllo del <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>codice sorgente VSPackage implementa , che a sua volta consente ai progetti di registrarsi per il controllo del codice sorgente e recuperare i glifi di stato.
 
-Per un elenco completo di interfacce che debba prendere in considerazione un pacchetto VSPackage di controllo di origine, vedere [interfacce e servizi correlati](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
+Per un elenco completo delle interfacce che un controllo del codice sorgente VSPackage deve considerare, vedere [collegamenti e interfacce](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
 
 ## <a name="see-also"></a>Vedere anche
 

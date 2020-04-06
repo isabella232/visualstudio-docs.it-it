@@ -1,24 +1,24 @@
 ---
-title: IDebugWindowsComputerPort2 | Microsoft Docs
+title: Proprietà IDebugWindowsComputerPort2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugWindowsComputerPort2 interface
 ms.assetid: 25f327b8-0303-4268-88d1-74df630436aa
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a60572c652080f2655ab7fe33954a661fbe07e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ef4162469651e4b69502d3a9639d1e86c62e0b7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319734"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718222"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
-Consente di eseguire query per informazioni relative al computer di destinazione.
+Consente l'esecuzione di query per ottenere informazioni sul computer di destinazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -27,14 +27,14 @@ IDebugWindowsComputerPort2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Questa interfaccia viene implementata dagli oggetti porta di gestione del debug di sessione.
+ Questa interfaccia viene implementata dagli oggetti porta del gestore di debug della sessione.
 
 ## <a name="methods"></a>Metodi
- Nella tabella seguente sono illustrati i metodi di `IDebugWindowsComputerPort2`.
+ Nella tabella seguente vengono `IDebugWindowsComputerPort2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Recupera le informazioni relative al computer in cui il debugger in esecuzione.|
+|[Informazioni su GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Recupera informazioni sul computer in cui è in esecuzione il debugger.|
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: Msdbg.h

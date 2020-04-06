@@ -1,5 +1,5 @@
 ---
-title: TEXT_DOC_ATTR_2 | Microsoft Docs
+title: proprietà TEXT_DOC_ATTR_2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_DOC_ATTR_2 enumeration
 ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24c5bc4a25bae6da1831f242501fdf0d6b66ca26
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: afbb7d7f4525050e73dafaed906dbc504cc8b52e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322306"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713447"
 ---
-# <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
-Vengono descritti gli attributi di un documento.
+# <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
+Descrive gli attributi di un documento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
  `TEXT_DOC_ATTR_READONLY_2`\
  Indica che il documento è di sola lettura.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 > [!NOTE]
-> Questo valore non viene effettivamente definito nell'assembly per il linguaggio c#. In alternativa, è necessario copiare la definizione per il file di origine.
+> Questo valore non è effettivamente definito nell'assembly per C. È invece necessario copiare la definizione nel file di origine.
 
- Passato come argomento per il [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) (metodo).
+ Passato come argomento al metodo [onUpdateDocumentAttributes.](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

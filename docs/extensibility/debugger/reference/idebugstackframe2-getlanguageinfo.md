@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
+title: Proprietà IDebugStackFrame2::GetLanguageInfo . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetLanguageInfo
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0318f99d234309093717c9603ec1153e71d6d7f3
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559703"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719709"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
-Ottiene la lingua associata a questo frame dello stack.
+Ottiene il linguaggio associato a questo stack frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,10 +45,10 @@ int GetLanguageInfo ( 
 ## <a name="parameters"></a>Parametri
 
 `pbstrLanguage`\
-[out] Restituisce il nome del linguaggio che implementa il metodo associato a questo frame dello stack.
+[fuori] Restituisce il nome del linguaggio che implementa il metodo associato a questo stack frame.
 
 `pguidLanguage`\
-[out] Restituisce il `GUID` del linguaggio. Per il [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] linguaggi, ad esempio, di seguito può essere restituiti:
+[fuori] Restituisce `GUID` l'oggetto della lingua. Per [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] le lingue, ad esempio, è possibile restituire quanto segue:
 
 - `guidVBScriptLang`\
 
@@ -64,7 +64,7 @@ int GetLanguageInfo ( 
 
 ## <a name="return-value"></a>Valore restituito
 
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 

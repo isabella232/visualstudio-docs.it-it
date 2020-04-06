@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Continue | Microsoft Docs
+title: Proprietà IDebugProgram2::Continue . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Continue
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c7ea051c9753f6149802c9e92534dd9ee1d8735
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6d04445a7a1c444f30a0ef5c156dcd7ad744c6f1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319385"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723071"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
-Continua l'esecuzione di questo programma da uno stato arrestato. Qualsiasi stato di esecuzione precedente (ad esempio, un passaggio) viene mantenuto, e il programma inizia l'esecuzione anche in questo caso.
+Continua l'esecuzione del programma da uno stato arrestato. Qualsiasi stato di esecuzione precedente (ad esempio un passaggio) viene mantenuto e il programma viene avviato nuovamente l'esecuzione.
 
 > [!NOTE]
-> Metodo deprecato. Usare la [continuazione](../../../extensibility/debugger/reference/idebugprocess3-continue.md) metodo invece.
+> Questo metodo è deprecato. Utilizzare invece il metodo [Continue.](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ int Continue( 
 ```
 
 ## <a name="parameters"></a>Parametri
-`pThread` [in] Un' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread.
+`pThread`[in] Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo viene chiamato su questo programma, indipendentemente dal modo molti programmi sono in fase di debug o programma che viene generato l'evento stopping. L'implementazione deve mantenere lo stato di esecuzione precedente (ad esempio, un passaggio) e l'esecuzione continua come se non aveva mai arrestato prima di completare l'esecuzione precedente. Vale a dire, se un thread in questo programma stava eseguendo un'operazione dell'istruzione / routine ed è stato arrestato perché un altro programma arrestato e quindi è stato chiamato questo metodo, il programma deve completare l'operazione di routine / istruzione originale.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo viene chiamato su questo programma indipendentemente dal numero di programmi sottoposti a debug o dal programma che ha generato l'evento di arresto. L'implementazione deve mantenere lo stato di esecuzione precedente (ad esempio un passaggio) e continuare l'esecuzione come se non si fosse mai arrestata prima di completare l'esecuzione precedente. Vale a dire, se un thread in questo programma stava eseguendo un'operazione di passaggio ed è stato arrestato perché un altro programma arrestato, e quindi questo metodo è stato chiamato, il programma deve completare l'operazione di passaggio originale.
 
 > [!WARNING]
-> Non inviare un evento di arresto o di un evento (sincrono) immediato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante la gestione di questa chiamata; in caso contrario, il debugger potrebbe bloccarsi.
+> Non inviare un evento di arresto o un evento immediato (sincrona) [all'evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante la gestione di questa chiamata; in caso contrario, il debugger potrebbe bloccarsi.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

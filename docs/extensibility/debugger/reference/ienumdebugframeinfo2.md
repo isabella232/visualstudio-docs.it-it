@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2 | Microsoft Docs
+title: Proprietà IEnumDebugFrameInfo2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6579481f44006cc3f77e57a9c9ecbd327c3b7409
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0aa67792ced94afd9c4439cbc6ea577e6b85f28b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350289"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716617"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
-Questa interfaccia enumera [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture.
+Questa interfaccia enumera le strutture [FRAMEINFO.](../../../extensibility/debugger/reference/frameinfo.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,21 +32,21 @@ IEnumDebugFrameInfo2 : IUnknown
  Il motore di debug (DE) implementa questa interfaccia per fornire un elenco di strutture che descrive lo stack di chiamate corrente.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Le chiamate di Visual Studio [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) per ottenere questa interfaccia ogni volta che un punto di interruzione, eccezione o arresto si verifica in un programma in fase di debug.
+ Visual Studio chiama [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) per ottenere questa interfaccia ogni volta che si verifica un punto di interruzione, un'eccezione o un arresto in un programma in fase di debug.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IEnumDebugFrameInfo2`.
+ Nella tabella seguente vengono `IEnumDebugFrameInfo2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[avanti](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Recupera un numero specificato di [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture in una sequenza di enumerazione.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Ignora un numero specificato di [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture in una sequenza di enumerazione.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Ottiene il numero di [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture nell'enumeratore.|
+|[Avanti](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Recupera un numero specificato di [STRUTTURE FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) in una sequenza di enumerazione.|
+|[Saltare](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Ignora un numero specificato di strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) in una sequenza di enumerazione.|
+|[Reimposta](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md) (Clona)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Ottiene il numero di [strutture FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) in un enumeratore.|
 
-## <a name="remarks"></a>Note
- Visual Studio ottiene questa interfaccia come primo passaggio per la gestione di un punto di interruzione, eccezioni o generati dall'utente pausa attivata il programma sottoposto a debug. L'elenco delle [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture rappresenta lo stack di chiamate corrente, con la chiamata di funzione corrente all'inizio dell'elenco e la funzione meno recente chiamare alla fine dell'elenco. Ogni `FRAMEINFO` rappresenta uno stack frame, un contesto in cui possono essere valutate espressioni e variabili locali preso in esame.
+## <a name="remarks"></a>Osservazioni
+ Visual Studio ottiene questa interfaccia come primo passaggio per la gestione di un punto di interruzione, un'eccezione o una pausa generata dall'utente sul programma in fase di debug. L'elenco di strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) rappresenta lo stack di chiamate corrente, con la chiamata di funzione corrente all'inizio dell'elenco e la chiamata di funzione meno recente alla fine dell'elenco. Ognuna `FRAMEINFO` rappresenta uno stack frame, un contesto in cui le espressioni possono essere valutate e le variabili locali esaminate.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

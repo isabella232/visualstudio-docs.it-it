@@ -1,5 +1,5 @@
 ---
-title: Nome elemento (modelli di Visual Studio) | Microsoft Docs
+title: Elemento Name (modelli di Visual Studio) Documenti Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b0365740f5ea8ab20ed79d077134afd32356bcc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344727"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702452"
 ---
 # <a name="name-element-visual-studio-templates"></a>Elemento Name (modelli di Visual Studio)
-Specifica il nome del modello così come appare nel **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.
+Specifica il nome del modello così come viene visualizzato nella finestra di dialogo **Nuovo progetto** o Aggiungi **nuovo elemento.**
 
- \<VSTemplate > \<TemplateData > \<nome >
+ \<VSTemplate \<> TemplateData> \<Name>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Specifica il nome del modello così come appare nel **nuovo progetto** oppure **
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`Package`|Attributo facoltativo, per scenari avanzati.<br /><br /> ID di un GUID che specifica il pacchetto di Visual Studio.|
-|`ID`|Attributo facoltativo, per scenari avanzati.<br /><br /> Specifica l'ID di risorsa di Visual Studio.|
+|`Package`|Attributo facoltativo, per scenari utente avanzati.<br /><br /> GUID che specifica l'ID del pacchetto di Visual Studio.|
+|`ID`|Attributo facoltativo, per scenari utente avanzati.<br /><br /> Specifica l'ID di risorsa di Visual Studio.|
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -55,15 +55,15 @@ Specifica il nome del modello così come appare nel **nuovo progetto** oppure **
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .|
 
 ## <a name="text-value"></a>Valore di testo
- È necessario un valore di testo, a meno che il `Package` e `ID` vengono utilizzati gli attributi.
+ È necessario un valore di testo, a meno che non si usino gli attributi `Package` e `ID`.
 
  Il testo fornisce il nome del modello.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  `Name` è un elemento figlio obbligatorio di `TemplateData`.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente mostra i metadati per un modello di progetto per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dell'applicazione.
+ Nell'esempio seguente vengono illustrati i [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] metadati per un modello di progetto per un'applicazione.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -90,5 +90,5 @@ Specifica il nome del modello così come appare nel **nuovo progetto** oppure **
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)

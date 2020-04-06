@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricGuid | Microsoft Docs
+title: IDebugSettingsCallback2::GetEEMetricGuid . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricGuid
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca64245a4f0ce3436dce3e5623099b0d82669676
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d95842ecde264accd8989a83ae652ac540183ef1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322099"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720011"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
-Recupera l'identificatore univoco per una metrica dell'analizzatore di espressioni in base al nome.
+Recupera l'identificatore univoco per una metrica dell'analizzatore di espressioni dato il nome.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,10 +54,10 @@ HRESULT GetEEMetricGuid(
 [in] Nome della metrica.
 
 `pguidValue`\
-[out] Restituisce l'identificatore univoco della metrica.
+[fuori] Restituisce l'identificatore univoco della metrica.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
