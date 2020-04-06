@@ -1,42 +1,42 @@
 ---
-title: Attributi condizionali dello Schema XML VSCT | Microsoft Docs
+title: Attributi condizionali dello schema XML VSCT Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11807129c34fa613ef06b3534adc7c7ebb9865e0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322945"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697938"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Attributi condizionali dello schema XML VSCT
-È possibile applicare attributi condizionali per tutti gli elementi e gli elenchi. Simboli espansione espressioni e operatori logici restituiscono true o false. Se true, l'elenco associato o elemento è incluso nell'output risultante.
+È possibile applicare attributi condizionali a tutti gli elenchi e gli elementi. Gli operatori logici e le espressioni di espansione dei simboli restituiscono true o false. Se true, l'elenco o l'elemento associato viene incluso nell'output risultante.
 
- È possibile testare le espansioni token con altri token espansioni o costanti. La funzione `Defined()` verifica se è stato definito un determinato nome, anche se non ha alcun valore.
+ È possibile testare le espansioni dei token rispetto ad altre espansioni o costanti di token. La `Defined()` funzione verifica se un determinato nome è stato definito, anche se non ha alcun valore.
 
- Quando un attributo Condition è applicato a un elenco, la condizione viene applicata a ogni elemento figlio nell'elenco. Se un elemento figlio contiene un attributo Condition, quindi la condizione viene combinata con l'espressione padre mediante un'operazione con AND.
+ Quando un Condition attributo viene applicato a un elenco, la condizione viene applicata a ogni elemento figlio nell'elenco. Se un elemento figlio contiene un attributo Condition, la relativa condizione viene combinata con l'espressione padre tramite un'operazione AND.
 
- I valori 1, '1' e 'true' vengono valutati come true e 0, '0' e 'false' vengono valutate come false.
+ I valori 1, '1' e 'true' vengono valutati come true e 0, '0' e 'false' vengono valutati come false.
 
 ## <a name="operators"></a>Operatori
- Usare gli operatori seguenti per valutare le espressioni condizionali.
+ Utilizzare gli operatori seguenti per valutare le espressioni condizionali.
 
 |Operatore|Definizione|
 |--------------|----------------|
 |(,)|Raggruppamento|
 |!|NOT logico|
-|\<, >, \<=, >=, ==, !=|Relazionale e uguaglianza|
-|e|Booleano|
-|oppure|Booleano|
+|\<, >, \<, >, , , !|Relazionale e uguaglianza|
+|e|Boolean|
+|o|Boolean|
 
 ## <a name="examples"></a>Esempi
 
@@ -70,4 +70,4 @@ and !Defined(DEBUG)">
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Tabella di comandi Visual Studio (. File Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Tabella dei comandi di Visual Studio (. Vsct) file](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,42 +1,42 @@
 ---
-title: Visualizzatore della libreria di immagini | Microsoft Docs
+title: Visualizzatore della libreria di immagini - Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fbef0686671a504cd1a141b6f582d30043809af
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a7c5eda24c235cddec99cb5177c6ed315978bc6f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315703"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707741"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
-Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare e cercare i manifesti dell'immagine, consentendo all'utente di modificarli in modo identico a Visual Studio. L'utente potrà modificare in background, dimensioni, DPI, contrasto elevato e altre impostazioni. Inoltre, lo strumento visualizza le informazioni di caricamento per ogni manifesto di immagini e Visualizza informazioni sull'origine per ogni immagine nel manifesto dell'immagine. Questo strumento è utile per:
+Lo strumento Visualizzatore libreria di immagini di Visual Studio può caricare ed eseguire ricerche nei manifesti delle immagini, consentendo all'utente di modificarli nello stesso modo in cui farebbe Visual Studio. L'utente può modificare lo sfondo, le dimensioni, dPI, contrasto elevato e altre impostazioni. Lo strumento visualizza anche le informazioni di caricamento per ogni manifesto dell'immagine e visualizza le informazioni sull'origine per ogni immagine nel manifesto dell'immagine. Questo strumento è utile per:
 
 1. Diagnostica degli errori
 
-2. Garantire che gli attributi sono impostati in modo corretto nei manifesti immagine personalizzata
+2. Verifica della corretta impostazione degli attributi nei manifesti immagine personalizzatiEnsuring attributes are set correctly in custom image manifests
 
-3. La ricerca delle immagini dell'immagine del catalogo di Visual Studio in modo che un'estensione di Visual Studio può usare le immagini che adatta lo stile di Visual Studio
+3. Ricerca di immagini nel Catalogo immagini di Visual Studio in modo che un'estensione di Visual Studio possa usare immagini che si adattano allo stile di Visual StudioSearching for images in the Visual Studio Image Catalog so that a Visual Studio extension can use images that fit the style of Visual Studio
 
-   ![Immagine principale del Visualizzatore della libreria](../../extensibility/internals/media/image-library-viewer-hero.png "principale del Visualizzatore della libreria di immagini")
+   ![Immagine principale del visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-hero.png "Immagine principale del visualizzatore della libreria di immagini")
 
-   **Moniker di immagini**
+   **Moniker immagine**
 
-   Un moniker di immagine (o moniker breve) è una coppia GUID: ID che identifica in modo univoco un asset di immagine o un asset di elenco immagini della raccolta.
+   Un moniker di immagini (o moniker in breve) è una coppia GUID:ID che identifica in modo univoco una risorsa immagine o un asset di immagini nella raccolta immagini.
 
-   **File manifesto di immagini**
+   **File manifesto immagine**
 
-   I file di immagine manifesto (.imagemanifest) sono file XML che definiscono un set di asset di immagini, i moniker che rappresentano tali asset e l'immagine reale o le immagini per rappresentare ogni asset. Manifesti dell'immagine può definire le immagini autonome o elenchi di immagini per il supporto legacy dell'interfaccia utente. Inoltre, esistono attributi che è possano impostare l'asset o le singole immagini protetti da ogni asset modificare quando e come vengono visualizzati tali asset.
+   I file manifesto dell'immagine (con estensione imagemanifest) sono file XML che definiscono un set di risorse immagine, i moniker che rappresentano tali risorse e l'immagine o le immagini reali che rappresentano ogni risorsa. I manifesti immagine possono definire immagini autonome o elenchi di immagini per il supporto dell'interfaccia utente legacy. Inoltre, ci sono attributi che possono essere impostati sulla risorsa o sulle singole immagini dietro ogni risorsa per modificare quando e come tali risorse vengono visualizzate.
 
    **Schema del manifesto dell'immagine**
 
-   Un manifesto del completamento dell'immagine è simile alla seguente:
+   Un manifesto completo dell'immagine è simile al seguente:A complete image manifest looks like this:
 
 ```xml
 <ImageManifest>
@@ -55,9 +55,9 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 </ImageManifest>
 ```
 
- **Simboli**
+ **Symbols**
 
- Come favorire una leggibilità e la manutenzione, il manifesto di immagini è possibile usare i simboli per i valori di attributo. I simboli sono definiti come segue:
+ Come aiuto per la leggibilità e la manutenzione, il manifesto dell'immagine può usare simboli per i valori degli attributi. I simboli sono definiti in questo modo:
 
 ```xml
 <Symbols>
@@ -70,13 +70,13 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 
 |||
 |-|-|
-|**Subelement**|**Definizione**|
-|Import|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente.|
-|GUID|Il simbolo rappresenta un GUID e deve corrispondere la formattazione di GUID.|
-|Id|Il simbolo rappresenta un ID e deve essere un numero intero non negativo.|
-|Stringa|Il simbolo rappresenta un valore di stringa arbitrario.|
+|**Sottoelemento**|**Definizione**|
+|Importa|Importa i simboli del file manifesto specificato per l'utilizzo nel manifesto corrente.|
+|Guid|Il simbolo rappresenta un GUID e deve corrispondere alla formattazione GUID.|
+|ID|Il simbolo rappresenta un ID e deve essere un numero intero non negativo.|
+|string|Il simbolo rappresenta un valore stringa arbitrario.|
 
- I simboli sono tra maiuscole e minuscole e usando la sintassi $(symbol-name) riferimento:
+ Per i simboli viene fatta distinzione tra maiuscole e minuscole e viene fatto riferimento utilizzando la sintassi di (nome-simbolo):
 
 ```xml
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >
@@ -84,24 +84,24 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 </Image>
 ```
 
- Alcuni simboli sono predefiniti per tutti i manifesti. Possono essere usati nell'attributo dell'Uri di \<Source > o \<importazione > elemento ai percorsi di riferimento sul computer locale.
+ Alcuni simboli sono predefiniti per tutti i manifesti. Questi possono essere utilizzati nell'attributo Uri dell'elemento \<> di origine o \<import> per fare riferimento ai percorsi nel computer locale.
 
 |||
 |-|-|
 |**Simbolo**|**Descrizione**|
-|CommonProgramFiles|Il valore della variabile di ambiente % CommonProgramFiles %|
-|LocalAppData|Il valore della variabile di ambiente % LocalAppData %|
-|ManifestFolder|La cartella contenente il file manifesto|
-|MyDocuments|Il percorso completo della cartella documenti dell'utente corrente|
-|ProgramFiles|Il valore della variabile di ambiente % ProgramFiles %|
-|System|Nella cartella Windows\System32|
-|WinDir|Il valore della variabile di ambiente % WinDir %|
+|CommonProgramFiles|Il valore della variabile di ambiente %CommonProgramFiles%|
+|Localappdata|Il valore della variabile di ambiente %LocalAppData%|
+|ManifestFolder (cartella manifesta)|La cartella contenente il file manifesto|
+|Mydocuments|Il percorso completo della cartella Documenti dell'utente corrente|
+|ProgramFiles|Il valore della variabile di ambiente %ProgramFiles%|
+|System|La cartella Windows-System32|
+|Windir|Il valore della variabile di ambiente %WinDir%|
 
  **Immagine**
 
- Il \<immagine > elemento definisce un'immagine che è possibile farvi riferimento da un moniker. Il GUID e ID nel loro insieme costituiscono il moniker di immagine. Moniker per l'immagine deve essere univoco tra la libreria di immagini intero. Se più di un'immagine è un moniker specificato, il primo ha rilevato durante la compilazione della libreria è quello che viene mantenuto.
+ L'elemento \<> Image definisce un'immagine a cui fa riferimento un moniker. Il GUID e l'ID presi insieme formano il moniker dell'immagine. Il moniker per l'immagine deve essere univoco nell'intera libreria di immagini. Se più di un'immagine ha un dato moniker, la prima rilevata durante la creazione della libreria è quella che viene mantenuta.
 
- Deve contenere almeno un'origine. Sebbene indipendente dalla dimensione origini fornirà i migliori risultati attraverso un'ampia gamma di dimensioni, non sono necessarie. Se il servizio è richiesto per un'immagine di dimensioni non è definita nel \<immagine > elemento ed è presente alcuna origine indipendente dalla dimensione, il servizio scegliere la migliore fonte di dimensioni specifiche e passare al piano la dimensione richiesta.
+ Deve contenere almeno una fonte. Anche se le sorgenti neutre di dimensione daranno i migliori risultati in un'ampia gamma di dimensioni, non sono necessarie. Se al servizio viene richiesta un'immagine di \<una dimensione non definita nell'elemento Image> e non esiste un'origine neutra per le dimensioni, il servizio sceglierà la fonte specifica per le dimensioni migliori e la scalerà in base alle dimensioni richieste.
 
 ```xml
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">
@@ -113,13 +113,13 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |||
 |-|-|
 |**Attributo**|**Definizione**|
-|GUID|[Obbligatorio] La parte GUID del moniker immagine|
-|Id|[Obbligatorio] La parte ID del moniker immagine|
-|AllowColorInversion|[Facoltativo, valore predefinito true] Indica se l'immagine può avere i colori invertiti a livello di codice quando viene utilizzata su uno sfondo scuro.|
+|Guid|[Obbligatorio] Parte GUID del moniker dell'immagine|
+|ID|[Obbligatorio] La parte ID del moniker dell'immagine|
+|AllowColorInversion|[Facoltativo, predefinito true] Indica se i colori dell'immagine possono essere invertiti a livello di codice quando vengono utilizzati su uno sfondo scuro.|
 
- **Origine**
+ **origine**
 
- Il \<origine > elemento definisce una risorsa di origine immagine singola (XAML e PNG).
+ L'elemento \<> di origine definisce un singolo asset di origine dell'immagine (XAML e PNG).
 
 ```xml
 <Source Uri="uri" Background="background">
@@ -130,20 +130,20 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |||
 |-|-|
 |**Attributo**|**Definizione**|
-|URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei seguenti:<br /><br /> -A [URI di tipo Pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) utilizzando l'applicazione: / / / autorità<br /><br /> -Riferimento a una risorsa un componente assoluto<br /><br /> -Un percorso di un file contenente una risorsa nativa|
-|Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> - *Light*: L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> - *Scuro*: L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> - *HighContrast*: L'origine può essere utilizzata in qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> - *HighContrastLight*: L'origine può essere utilizzata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> -*HighContrastDark*: L'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se il **sfondo** attributo viene omesso, l'origine può essere usato su qualsiasi dello sfondo.<br /><br /> Se **sfondo** viene *Light*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **sfondo** viene omesso o impostato su *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|
+|Uri|[Obbligatorio] URI che definisce la posizione da cui è il caricamento dell'immagine. I possibili valori sono i seguenti:<br /><br /> - Un [URI di tipo Pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) che utilizza l'autorità application:///<br /><br /> - Un riferimento di risorsa componente assoluto- An absolute component resource reference<br /><br /> - Un percorso a un file contenente una risorsa nativa- A path to a file containing a native resource|
+|Background|[Facoltativo] Indica il tipo di sfondo in cui deve essere utilizzata l'origine.<br /><br /> I possibili valori sono i seguenti:<br /><br /> - *Luce*: La sorgente può essere utilizzata su uno sfondo chiaro.<br /><br /> - *Scuro*: La sorgente può essere utilizzata su uno sfondo scuro.<br /><br /> - *HighContrast*: La sorgente può essere utilizzata su qualsiasi sfondo in modalità Contrasto elevato.<br /><br /> - *HighContrastLight*: La sorgente può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> -*HighContrastDark*: La sorgente può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo **Background** viene omesso, l'origine può essere utilizzata in qualsiasi sfondo.<br /><br /> Se **Sfondo** è *Chiaro*, *Scuro*, *HighContrastLight*o *HighContrastDark*, i colori della sorgente non vengono mai invertiti. Se **Sfondo** viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine è controllata dall'attributo **AllowColorInversion** dell'immagine.|
 
- Oggetto \<origine > elemento può includere esattamente uno dei sottoelementi facoltativi seguenti:
+ Un \<elemento Source> può avere esattamente uno dei seguenti sottoelementi facoltativi:
 
 ||||
 |-|-|-|
-|**Elemento**|**Attributi (tutti necessari)**|**Definizione**|
-|\<Size>|Value|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità di dispositivo). L'immagine sarà quadrato.|
-|\<SizeRange>|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize alle dimensioni massime (in unità di dispositivo), inclusi. L'immagine sarà quadrato.|
-|\<Dimensioni >|Larghezza, altezza|L'origine verrà utilizzata per le immagini della larghezza specificata e dell'altezza (espressa in unità di dispositivo).|
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà utilizzata per le immagini dalla larghezza/altezza minima per la larghezza/altezza massima (in unità di dispositivo), inclusi.|
+|**Elemento**|**Attributi (tutti obbligatori)**|**Definizione**|
+|\<> di dimensioni|valore|La sorgente verrà utilizzata per le immagini delle dimensioni specificate (in unità di dispositivo). L'immagine sarà quadrata.|
+|\<> SizeRange|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize a MaxSize (in unità di dispositivo) inclusiva. L'immagine sarà quadrata.|
+|\<Dimensioni>|Larghezza, altezza|La sorgente verrà utilizzata per le immagini della larghezza e dell'altezza specificate (in unità di dispositivo).|
+|\<> Di DimensionRange|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà utilizzata per le immagini dalla larghezza/altezza minima alla larghezza/altezza massima (in unità di dispositivo) inclusiva.|
 
- Oggetto \<Source > elemento può anche avere facoltativo \<NativeResource > sottoelemento, che definisce un \<origine > che viene caricato da un assembly nativo piuttosto che da un assembly gestito.
+ Un \<elemento Source> può \<anche avere un sottoelemento \<facoltativo NativeResource>, che definisce un oggetto Source> caricato da un assembly nativo anziché da un assembly gestito.
 
 ```xml
 <NativeResource Type="type" ID="int" />
@@ -152,12 +152,12 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |||
 |-|-|
 |**Attributo**|**Definizione**|
-|Tipo|[Obbligatorio] Il tipo di risorsa nativa, XAML o PNG|
-|Id|[Obbligatorio] Il quoziente di ID di risorsa nativa|
+|Type|[Obbligatorio] Il tipo della risorsa nativa, XAML o PNG|
+|ID|[Obbligatorio] Parte dell'ID intero della risorsa nativa|
 
- **ImageList**
+ **Imagelist**
 
- Il \<ImageList > elemento definisce una raccolta di immagini che possono essere restituiti in un singolo elenco. L'elenco viene compilato su richiesta, in base alle esigenze.
+ Il \<ImageList> elemento definisce una raccolta di immagini che possono essere restituite in una singola striscia. La striscia è costruita su richiesta, se necessario.
 
 ```xml
 <ImageList>
@@ -169,64 +169,64 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |||
 |-|-|
 |**Attributo**|**Definizione**|
-|GUID|[Obbligatorio] La parte GUID del moniker immagine|
-|Id|[Obbligatorio] La parte ID del moniker immagine|
-|Altre informazioni|[Impostazione predefinita è false, facoltativo] Indica se il moniker di immagine fa riferimento a un'immagine nel manifesto corrente.|
+|Guid|[Obbligatorio] Parte GUID del moniker dell'immagine|
+|ID|[Obbligatorio] La parte ID del moniker dell'immagine|
+|Esterno|[Facoltativo, predefinito false] Indica se il moniker dell'immagine fa riferimento a un'immagine nel manifesto corrente.|
 
- Moniker per l'immagine contenuta non è necessario fare riferimento a un'immagine definita nel manifesto corrente. Se l'immagine del contenuto non viene trovato nella raccolta immagini, un'immagine segnaposto vuoto verrà utilizzata al suo posto.
+ Il moniker per l'immagine contenuta non deve fare riferimento a un'immagine definita nel manifesto corrente. Se non è possibile trovare l'immagine contenuta nella libreria di immagini, al suo posto verrà utilizzata un'immagine segnaposto vuota.
 
-## <a name="how-to-use-the-tool"></a>Come usare lo strumento
- **La convalida di un manifesto di immagini personalizzate**
+## <a name="how-to-use-the-tool"></a>Procedura: utilizzare lo strumento
+ **Convalida di un manifesto dell'immagine personalizzatoValidating a custom image manifest**
 
- Per creare un manifesto personalizzato, è consigliabile usare lo strumento ManifestFromResources per generare automaticamente il manifesto. Per convalidare il manifesto personalizzato, avviare il Visualizzatore della libreria di immagini e selezionare File > imposta percorsi... per aprire la finestra di dialogo Directory di ricerca. Directory di ricerca viene usato per caricare i manifesti di immagine, ma lo userà anche loro di trovare i file con estensione dll che contengono le immagini in un manifesto, pertanto assicurarsi di includere sia il manifesto e le directory DLL in questa finestra di dialogo.
+ Per creare un manifesto personalizzato, è consigliabile usare lo strumento ManifestFromResources per generare automaticamente il manifesto. Per convalidare il manifesto personalizzato, avviare il Visualizzatore raccolta immagini e selezionare Percorsi > file... per aprire la finestra di dialogo Directory di ricerca. Lo strumento utilizzerà le directory di ricerca per caricare i manifesti di immagine, ma li utilizzerà anche per trovare i file DLL che contengono le immagini in un manifesto, quindi assicurarsi di includere le directory manifesto e DLL in questa finestra di dialogo.
 
- ![Ricerca del Visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-search.png "ricerca del Visualizzatore della libreria di immagini")
+ ![Ricerca del visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-search.png "Ricerca del visualizzatore della libreria di immagini")
 
- Fare clic su **Aggiungi...**  selezionare nuove directory di ricerca per cercare i manifesti e le DLL corrispondenti. Lo strumento memorizzerà queste directory di ricerca e può essere attivate o disattivata, selezionare o deselezionare una directory.
+ Fare clic su **Aggiungi...** per selezionare nuove directory di ricerca in cui cercare i manifesti e le DLL corrispondenti. Lo strumento ricorderà queste directory di ricerca e possono essere attivate o disattivate selezionando o deselezionando una directory.
 
- Per impostazione predefinita, lo strumento tenterà di trovare la directory di installazione di Visual Studio e aggiungere tali directory all'elenco di directory di ricerca. È possibile aggiungere manualmente le directory che non viene trovato lo strumento.
+ Per impostazione predefinita, lo strumento tenterà di trovare la directory di installazione di Visual Studio e aggiungere tali directory all'elenco delle directory di ricerca. È possibile aggiungere manualmente le directory che lo strumento non trova.
 
- Una volta che vengono caricati tutti i manifesti, lo strumento può essere usato per attivare/disattivare **sfondo** colori **DPI**, **contrasto elevato**, o **grigio** per le immagini in modo che un utente può esaminare visivamente gli asset delle immagini per verificare che viene eseguito il rendering correttamente per le varie impostazioni.
+ Una volta caricati tutti i manifesti, lo strumento può essere utilizzato per attivare o disattivare i colori di **sfondo,** **DPI,** **contrasto elevato**o **grayscaling** per le immagini in modo che un utente possa ispezionare visivamente le risorse immagine per verificare che il rendering venga eseguito correttamente per varie impostazioni.
 
- ![Immagine di sfondo del Visualizzatore della libreria](../../extensibility/internals/media/image-library-viewer-background.png "immagine di sfondo del Visualizzatore della libreria")
+ ![Sfondo del visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-background.png "Sfondo del visualizzatore della libreria di immagini")
 
- Chiaro, scuro, o un valore personalizzato, è possibile impostare il colore di sfondo. Selezionando "Colore personalizzato" verrà aprire una finestra di dialogo di selezione di colore e aggiungere tale colore personalizzato nella parte inferiore della casella combinata in background per essere richiamati facilmente in un secondo momento.
+ Il colore di sfondo può essere impostato su Chiaro, Scuro o su un valore personalizzato. Selezionando "Colore personalizzato" si aprirà una finestra di dialogo di selezione del colore e aggiungere quel colore personalizzato nella parte inferiore della casella combinata di sfondo per un facile richiamo in un secondo momento.
 
- ![Colore personalizzato del Visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-custom-color.png "colore personalizzato del Visualizzatore della libreria di immagini")
+ ![Colore personalizzato del visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-custom-color.png "Colore personalizzato del visualizzatore della libreria di immagini")
 
- La selezione di un moniker di immagini consente di visualizzare le informazioni per ogni immagine reale dietro il moniker nel riquadro dei dettagli di immagine a destra. Il riquadro consente inoltre agli utenti di copiare un moniker in base al nome o valore non elaborato coppia GUID: ID.
+ Selezionando un moniker di immagine vengono visualizzate le informazioni per ogni immagine reale dietro il moniker nel riquadro Dettagli immagine a destra. Il riquadro consente inoltre agli utenti di copiare un moniker in base al nome o al valore GUID:ID non elaborato.
 
- ![I dettagli dell'immagine del Visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-image-details.png "i dettagli dell'immagine del Visualizzatore della libreria di immagini")
+ ![Dettagli dell'immagine del visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-image-details.png "Dettagli dell'immagine del visualizzatore della libreria di immagini")
 
- Le informazioni visualizzate per ogni origine dell'immagine includono il tipo di sfondo per visualizzarlo, se può essere a tema o supporta a contrasto elevato, le dimensioni è valido per o se è indipendente dalla dimensione e se l'immagine proviene da un assembly nativo.
+ Le informazioni visualizzate per ogni origine dell'immagine includono il tipo di sfondo su cui visualizzarla, se può essere a tema o supporta Contrasto elevato, quali dimensioni è valida per o se è indipendente dalle dimensioni e se proviene da un assembly nativo.
 
- ![Visualizzatore della libreria di immagini possono tema](../../extensibility/internals/media/image-library-viewer-can-theme.png "Visualizzatore della libreria di immagini possono tema")
+ ![Tema del visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-can-theme.png "Tema del visualizzatore della libreria di immagini")
 
- Durante la convalida di un manifesto di immagini, è consigliabile distribuire il manifesto e l'immagine DLL nei rispettivi percorsi reali. Ciò consente di verificare che tutti i percorsi relativi sono funzioni correttamente e che la libreria di immagini possa individuare e caricare il manifesto e l'immagine DLL.
+ Quando si convalida un manifesto dell'immagine, è consigliabile distribuire il manifesto e la DLL dell'immagine nelle relative posizioni reali. In questo modo verrà verificato che tutti i percorsi relativi funzionino correttamente e che la libreria di immagini sia in grado di trovare e caricare il manifesto e la DLL dell'immagine.
 
- **La ricerca per il catalogo immagine KnownMonikers**
+ **Ricerca del catalogo immagini KnownMonikers**
 
- Per meglio soddisfare lo stile di Visual Studio, un'estensione di Visual Studio può usare le immagini in Visual Studio Image catalogo anziché la creazione e con i propri. Questo ha il vantaggio di non dover gestire tali immagini e garantisce che l'immagine avrà un'immagine ad alta risoluzione, pertanto dovrebbe essere corretto in tutte le impostazioni DPI che supportano Visual Studio.
+ Per abbinare meglio lo stile di Visual Studio, un'estensione di Visual Studio può usare le immagini nel catalogo immagini di Visual Studio anziché creare e usare il proprio. Questo ha il vantaggio di non dover gestire tali immagini e garantisce che l'immagine avrà un'immagine di backup ad alta risoluzione in modo che dovrebbe apparire corretta in tutte le impostazioni DPI che supporta Visual Studio.
 
- Il Visualizzatore della libreria di immagini consente un manifesto da cercare in modo che un utente può trovare il moniker che rappresenta un asset di immagine e usare tale moniker nel codice. Per cercare immagini, immettere il termine di ricerca desiderati nella casella di ricerca e premere INVIO. La barra di stato nella parte inferiore verrà visualizzato il numero di corrispondenze trovato all'esterno di immagini di totale in tutti i manifesti.
+ Il visualizzatore della libreria di immagini consente di cercare un manifesto in modo che un utente possa trovare il moniker che rappresenta un asset di immagine e usare tale moniker nel codice. Per cercare immagini, immettere il termine di ricerca desiderato nella casella di ricerca e premere INVIO. La barra di stato in basso mostrerà quante corrispondenze sono state trovate dalle immagini totali in tutti i manifesti.
 
- ![Filtro del Visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-filter.png "filtro del Visualizzatore della libreria di immagini")
+ ![Filtro del visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-filter.png "Filtro del visualizzatore della libreria di immagini")
 
- Quando si cercano i moniker immagine nei manifesti esistenti, si consiglia di cercare e utilizzare solo i moniker di Visual Studio Image Catalog, altri moniker intenzionalmente pubblicamente accessibile o il proprio moniker personalizzato. Se si usano i moniker non pubblici, interfaccia utente personalizzata potrebbe essere interrotta o sono relative immagini stati modificati in modo imprevisto se o quando i moniker non pubblici e le immagini vengono modificate o aggiornate.
+ Quando si cercano moniker di immagini nei manifesti esistenti, è consigliabile cercare e utilizzare solo i moniker di Visual Studio Image Catalog, altri moniker accessibili intenzionalmente pubblicamente o i propri moniker personalizzati. Se utilizzi i moniker non pubblici, l'interfaccia utente personalizzata potrebbe essere interrotta o le sue immagini potrebbero essere modificate in modi imprevisti se o quando tali moniker e immagini non pubblici vengono modificati o aggiornati.
 
- Inoltre, è possibile la ricerca dal GUID. Questo tipo di ricerca è utile per filtrare l'elenco per un manifesto singolo, o singolo sottosezione di un manifesto se tale manifesto contiene più GUID.
+ Inoltre, la ricerca in base al GUID è possibile. Questo tipo di ricerca è utile per filtrare l'elenco in base a un singolo manifesto o a una singola sottosezione di un manifesto se tale manifesto contiene più GUID.
 
- ![GUID filtro del Visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-filter-guid.png "GUID filtro del Visualizzatore della libreria di immagini")
+ ![GUID filtro del visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-filter-guid.png "GUID filtro del visualizzatore della libreria di immagini")
 
- Infine, la ricerca per ID è possibile anche.
+ Infine, è possibile anche la ricerca in base all'ID.
 
- ![ID filtro del Visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-filter-id.png "ID filtro del Visualizzatore della libreria di immagini")
+ ![ID filtro del visualizzatore della libreria di immagini](../../extensibility/internals/media/image-library-viewer-filter-id.png "ID filtro del visualizzatore della libreria di immagini")
 
 ## <a name="notes"></a>Note
 
-- Per impostazione predefinita, lo strumento effettuerà il pull in diversi i manifesti di immagine presenti nella directory di installazione di Visual Studio. È l'unico con moniker utilizzabile pubblicamente il **Microsoft.VisualStudio.ImageCatalog** manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (effettuare **non** eseguire l'override di questo GUID in un manifesto personalizzato) digitare: KnownMonikers
+- Per impostazione predefinita, lo strumento estrarrà diversi manifesti di immagine presenti nella directory di installazione di Visual Studio.By default, the tool will pull in several image manifests present in the Visual Studio install directory. L'unico che dispone di moniker consumabili pubblicamente è il manifesto **Microsoft.VisualStudio.ImageCatalog.** GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 **(non** eseguire l'override di questo GUID in un manifesto personalizzato) Tipo: KnownMonikers
 
-- Lo strumento tenta di avvio per caricare tutti i manifesti di immagine che trova, in modo che potrebbe richiedere alcuni secondi per l'applicazione viene effettivamente visualizzata. È possibile anche lenta o che non risponde durante il caricamento dei manifesti.
+- Lo strumento tenta all'avvio di caricare tutti i manifesti dell'immagine trovati, pertanto potrebbero essere stati applicati alcuni secondi prima che l'applicazione venga effettivamente visualizzata. Potrebbe anche essere lento o non risponde durante il caricamento dei manifesti.
 
-## <a name="sample-output"></a>Esempio di output
+## <a name="sample-output"></a>Output di esempio
  Questo strumento non genera alcun output.

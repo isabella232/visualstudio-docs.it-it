@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH | Microsoft Docs
+title: proprietà NAME_MATCH . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - NAME_MATCH enumeration
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09ddb4653d1f13024360daca30eab40ebf57df0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346734"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714284"
 ---
-# <a name="namematch"></a>NAME_MATCH
-Seleziona l'opzione maiuscole per i nomi corrispondenti.
+# <a name="name_match"></a>NAME_MATCH
+Seleziona l'opzione case per i nomi corrispondenti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,13 +48,13 @@ public enum NameMatchOptions { 
  Non è stata specificata alcuna opzione.
 
  `nmCaseSensitive`\
- Indica che i nomi per cui trovare una corrispondenza tra maiuscole e minuscole.
+ Indica che per i nomi di cui trovare la corrispondenza viene fatta distinzione tra maiuscole e minuscole.
 
  `nmCaseInsensitive`\
- Indica che i nomi per cui trovare una corrispondenza non sono tra maiuscole e minuscole.
+ Indica che per i nomi di cui trovare la corrispondenza non viene fatta distinzione tra maiuscole e minuscole.
 
-## <a name="remarks"></a>Note
- Passato come argomento per i metodi seguenti:
+## <a name="remarks"></a>Osservazioni
+ Passato come argomento ai metodi seguenti:
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 

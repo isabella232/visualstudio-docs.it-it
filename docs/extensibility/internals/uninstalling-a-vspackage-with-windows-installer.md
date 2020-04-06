@@ -1,5 +1,5 @@
 ---
-title: Disinstallazione di un pacchetto VSPackage con Windows Installer | Microsoft Docs
+title: Disinstallazione di un pacchetto VSPackage con Windows Installer Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,37 +7,37 @@ helpviewer_keywords:
 - VSPackages, uninstalling
 - uninstalling VSPackages
 ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8e92937e848d124c18dc91b9bdfa0f020f27f20
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fee88e895d40d42114eaf53422503524594b485f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722136"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704269"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Disinstallazione di un pacchetto VSPackage con Windows Installer
-Nella maggior parte dei casi, Windows Installer possibile disinstallare il pacchetto VSPackage semplicemente eseguendo l'operazione di installazione del pacchetto VSPackage. Le azioni personalizzate illustrate in [comandi che devono essere eseguite dopo l'installazione](../../extensibility/internals/commands-that-must-be-run-after-installation.md) devono essere eseguite anche dopo una disinstallazione. Poiché le chiamate a devenv. exe si verificano subito prima dell'azione standard InstallFinalize per l'installazione e la disinstallazione, le voci della tabella CustomAction e InstallExecuteSequence servono entrambi i casi.
+Per la maggior parte, Windows Installer può disinstallare il pacchetto VSPackage semplicemente "annullando" ciò che ha fatto per installare il pacchetto VSPackage. Le azioni personalizzate descritte in [Comandi che devono essere eseguiti dopo l'installazione](../../extensibility/internals/commands-that-must-be-run-after-installation.md) devono essere eseguite anche dopo una disinstallazione. Poiché le chiamate a devenv.exe si verificano appena prima dell'azione standard InstallFinalize sia per l'installazione che per la disinstallazione, le voci della tabella CustomAction e InstallExecuteSequence servono entrambi i casi.
 
 > [!NOTE]
 > Eseguire `devenv /setup` dopo la disinstallazione di un pacchetto MSI.
 
- Come regola generale, se si aggiungono azioni personalizzate a un pacchetto di Windows Installer, è necessario gestire tali azioni durante la disinstallazione e il rollback. Se si aggiungono azioni personalizzate per registrare autonomamente il pacchetto VSPackage, ad esempio, è necessario aggiungere anche azioni personalizzate per annullare la registrazione.
+ Come regola generale, se si aggiungono azioni personalizzate a un pacchetto di Windows Installer, è necessario gestire tali azioni durante la disinstallazione e il rollback. Se si aggiungono azioni personalizzate per auto-registrare il pacchetto VSPackage, ad esempio, è necessario aggiungere azioni personalizzate per annullare la registrazione, troppo.
 
 > [!NOTE]
-> È possibile che un utente possa installare il pacchetto VSPackage e quindi disinstallare le versioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con cui è integrato. Per assicurarsi che la disinstallazione del pacchetto VSPackage funzioni in questo scenario, eliminare le azioni personalizzate che eseguono il codice con dipendenze su [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+> È possibile per un utente installare il pacchetto VSPackage e quindi disinstallare le versioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con cui è integrato. È possibile garantire che la disinstallazione del pacchetto VSPackage funziona in tale scenario [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]eliminando le azioni personalizzate che eseguono codice con dipendenze su .
 
-## <a name="handling-launch-conditions-at-uninstall-time"></a>Gestione delle condizioni di avvio in fase di disinstallazione
- L'azione LaunchConditions standard legge le righe della tabella LaunchCondition per visualizzare i messaggi di errore se le condizioni non vengono soddisfatte. Poiché le condizioni di avvio vengono in genere utilizzate per garantire che siano soddisfatti i requisiti di sistema, in genere è possibile ignorare le condizioni di avvio durante la disinstallazione aggiungendo la condizione, `NOT Installed`, alla riga LaunchConditions della tabella LaunchCondition.
+## <a name="handling-launch-conditions-at-uninstall-time"></a>Gestione delle condizioni di avvio in fase di disinstallazioneHandling Launch Conditions at Uninstall Time
+ L'azione standard LaunchConditions legge le righe della tabella LaunchCondition per visualizzare i messaggi di errore se le condizioni non vengono soddisfatte. Poiché le condizioni di avvio vengono in genere utilizzate per garantire che i `NOT Installed`requisiti di sistema siano soddisfatti, in genere è possibile ignorare le condizioni di avvio durante la disinstallazione aggiungendo la condizione , , alla riga LaunchConditions della tabella LaunchCondition.
 
- In alternativa, è possibile aggiungere `OR Installed` alle condizioni di avvio che non sono importanti durante la disinstallazione. In questo modo si garantisce che la condizione sia sempre true durante la disinstallazione e pertanto non visualizzerà il messaggio di errore relativo alla condizione di avvio.
+ Un'alternativa consiste `OR Installed` nell'aggiungere alle condizioni di avvio che non sono importanti durante la disinstallazione. Ciò garantisce che la condizione sarà sempre true durante la disinstallazione e pertanto non verrà visualizzato il messaggio di errore della condizione di avvio.
 
 > [!NOTE]
-> `Installed` è la proprietà Windows Installer imposta quando rileva che il pacchetto VSPackage è già stato installato nel sistema.
+> `Installed`è la proprietà impostata da Windows Installer quando rileva che il pacchetto VSPackage è già stato installato nel sistema.
 
 ## <a name="see-also"></a>Vedere anche
-- [Windows Installer](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)
+- [Programma di installazione di Windows](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)
 - [Rilevamento dei requisiti di sistema](../../extensibility/internals/detecting-system-requirements.md)

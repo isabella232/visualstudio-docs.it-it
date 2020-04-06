@@ -1,5 +1,5 @@
 ---
-title: Elemento UsedCommands | Microsoft Docs
+title: UsedCommands (elemento) . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66361ad58c15e8539fcda6d0ec4468dd8b68289b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718617"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698745"
 ---
 # <a name="usedcommands-element"></a>Elemento UsedCommands
-L'elemento UsedCommands raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands.
+L'elemento UsedCommands raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands.The UsedCommands element groups UsedCommand elements and other UsedCommands groupings.
 
- L'elemento UsedCommands è facoltativo. Se non si chiamano comandi definiti all'esterno del pacchetto, non è necessario includere questa sezione nel file con estensione vsct.
+ L'elemento UsedCommands è facoltativo. Se non si chiamano comandi definiti all'esterno del pacchetto, non è necessario includere questa sezione nel file vsct.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ L'elemento UsedCommands raggruppa gli elementi UsedCommand e altri raggruppament
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|Parametro facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -52,7 +52,7 @@ L'elemento UsedCommands raggruppa gli elementi UsedCommand e altri raggruppament
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi (ad esempio, le voci di menu, i menu, le barre degli strumenti e le caselle combinate) forniti da un VSPackage al Integrated Development Environment (IDE).|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi (ad esempio, voci di menu, menu, barre degli strumenti e caselle combinate) che un VSPackage fornisce all'ambiente di sviluppo integrato (IDE).|
 
 ## <a name="example"></a>Esempio
 
@@ -66,4 +66,4 @@ L'elemento UsedCommands raggruppa gli elementi UsedCommand e altri raggruppament
 
 ## <a name="see-also"></a>Vedere anche
 - [Elemento UsedCommand](../extensibility/usedcommand-element.md)
-- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

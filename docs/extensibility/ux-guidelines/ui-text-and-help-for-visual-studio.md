@@ -3,17 +3,17 @@ title: Testo dell'interfaccia utente e Guida per Visual Studio . Documenti Micro
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0477a0e1994e9c3b94df13ace4c1f3b4df51039
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79303127"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698289"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Testo dell'interfaccia utente e Guida per Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a>Testo dell'interfaccia utente e terminologia
@@ -272,7 +272,7 @@ ms.locfileid: "79303127"
 
 - **Pulsanti della Guida dell'interfaccia utente** (deprecati). Indicatore visibile nella barra del titolo che consente di accedere all'argomento della Guida F1 correlato.
 
-### <a name="text"></a>Text
+### <a name="text"></a>Testo
 
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>Testo informativo e supplementare nelle finestre di dialogo
  Nelle finestre di dialogo che supportano attività complesse, potrebbe essere necessario fornire testo informativo all'interno dell'interfaccia utente, spesso nella parte superiore della finestra di dialogo o quasi controlli complessi. Vedere [Testo e terminologia dell'interfaccia utente](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) per informazioni dettagliate sullo stile di scrittura.

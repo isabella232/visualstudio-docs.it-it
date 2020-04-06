@@ -1,69 +1,69 @@
 ---
-title: Aggiunta come contributo al modello di automazione | Microsoft Docs
+title: Contribuire al modello di automazione Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e6686c82dcb0272fa9b3b3c4d3b7c73afe4475
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d660edc740229c3e91b99e1f59eb37b4e9312098
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335436"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709261"
 ---
 # <a name="contribute-to-the-automation-model"></a>Contribuire al modello di automazione
-Visual Studio offre un set di interfacce di automazione per la personalizzazione dell'ambiente. Il modello di automazione è il modello a oggetti che consente agli utenti di creare componenti aggiuntivi di Visual Studio ed estensioni.
+Visual Studio fornisce un set di interfacce di automazione per la personalizzazione dell'ambiente. Il modello di automazione è il modello a oggetti che consente agli utenti finali di creare componenti aggiuntivi ed estensioni di Visual Studio.The automation model is the object model that enables end users to create Visual Studio add-ins and extensions.
 
- Inoltre, è appropriata, gli sviluppatori VSPackage di contribuire al modello di automazione. In questo modo, consentire agli utenti finali di un VSPackage per creare componenti aggiuntivi e in genere forniscono un'esperienza di modello utente coerente quando usano il pacchetto VSPackage in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Inoltre, è appropriato per l'utente, come sviluppatore VSPackage, per contribuire al modello di automazione; In questo modo, si consente agli utenti finali del pacchetto VSPackage per creare componenti aggiuntivi e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]in genere fornire un'esperienza coerente del modello utente quando utilizzano il pacchetto VSPackage in .
 
- Per semplificare l'utente finale esperienza coerente, è possibile seguire una serie di linee guida quando si progetta il pacchetto VSPackage in modo che il modello di automazione per il pacchetto VSPackage segue le idee in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Per rendere coerente l'esperienza dell'utente finale, è possibile seguire una serie di linee guida durante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]la progettazione del pacchetto VSPackage in modo che il modello di automazione per il pacchetto VSPackage segue le idee in .
 
 ## <a name="in-this-section"></a>Contenuto della sezione
-- [Cenni preliminari sul modello di automazione](../../extensibility/internals/automation-model-overview.md)
+- [Panoramica del modello di automazione](../../extensibility/internals/automation-model-overview.md)
 
- Definisce il modello di automazione come un gruppi di oggetti che consentono di controllare aspetti principali dell'ambiente comune correlati. Questo set di oggetti è raffigurato un diagramma del modello di automazione.
+ Definisce il modello di automazione come un gruppo correlato di oggetti che controllano i principali aspetti dell'ambiente comune. Questo set di oggetti è illustrato in un diagramma del modello di automazione.
 
-- [Fornire l'automazione per i pacchetti VSPackage](../../extensibility/internals/providing-automation-for-vspackages.md)
+- [Fornire l'automazione per i pacchetti VSPackageProvide automation for VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md)
 
- Descrive i due modi principali per fornire l'automazione per il pacchetto VSPackage.
+ Vengono illustrati i due modi principali per fornire l'automazione per il pacchetto VSPackage.
 
-- [Esporre oggetti del progetto](../../extensibility/internals/exposing-project-objects.md)
+- [Esporre gli oggetti del progetto](../../extensibility/internals/exposing-project-objects.md)
 
- Vengono fornite istruzioni dettagliate per la creazione di oggetti specifici di un pacchetto VSPackage.
+ Fornisce istruzioni dettagliate per la creazione di oggetti specifici di VSPackage.
 
-- [Modellazione di progetto](../../extensibility/internals/project-modeling.md)
+- [Modellazione del progetto](../../extensibility/internals/project-modeling.md)
 
- Vengono illustrati gli oggetti di progetto standard necessari per creare un'automazione per il nuovo tipo di progetto e viene illustrato il percorso di automazione dei progetti di seguito. In questo argomento vengono anche forniti elenchi di dichiarazioni e implementazioni per le classi.
+ Vengono illustrati gli oggetti di progetto standard necessari per creare l'automazione per il nuovo tipo di progetto e viene illustrato il percorso che segue l'automazione del progetto. In questo argomento vengono inoltre forniti elenchi di dichiarazioni e implementazione per le classi.
 
-- [Esporre gli eventi](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)
+- [Esporre eventi](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)
 
  Vengono fornite istruzioni dettagliate per la creazione di eventi per il modello di automazione.
 
 - [Supporto di automazione per le pagine di opzioni](../../extensibility/internals/automation-support-for-options-pages.md)
 
- Viene descritto come restituire un oggetto di automazione per supportare proprietà di un pacchetto VSPackage personalizzati **opzioni** nella finestra di dialogo il **strumento** menu estendendo il `DTE.Properties` oggetto.
+ Viene descritto come restituire un oggetto di automazione per il supporto delle proprietà di `DTE.Properties` un VSPackage personalizzato **Opzioni** finestra di dialogo il **strumento** menu estendendo l'oggetto.
 
-- [Fornire l'automazione per il codice](../../extensibility/internals/providing-automation-for-code.md)
+- [Fornire l'automazione per il codiceProvide automation for code](../../extensibility/internals/providing-automation-for-code.md)
 
- Viene illustrato che la creazione di un modello di automazione per il codice non è obbligatorio. Tuttavia, in questo argomento che fornisce informazioni accurate nei modelli di codice viene fornito un collegamento.
+ Viene illustrato che la creazione di un modello di automazione per il codice non è necessaria. Tuttavia, in questo argomento viene fornito un collegamento che fornisce informazioni dettagliate nei modelli di codice.
 
-- [Procedura: Fornire l'automazione per Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)
+- [Procedura: fornire l'automazione per WindowsHow to: Provide automation for Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)
 
- Viene illustrato che l'automazione è una buona idea ogni volta che si desidera rendere disponibili gli oggetti di automazione in una finestra e l'ambiente non fornisce già un oggetto di automazione pronte all'uso. Viene illustrata l'automazione per le finestre dei documenti e finestre degli strumenti.
+ Viene illustrato che fornire l'automazione è una buona idea ogni volta che si desidera rendere disponibili gli oggetti di automazione in una finestra e l'ambiente non fornisce già un oggetto di automazione già pronto. Viene illustrata l'automazione per le finestre degli strumenti e le finestre dei documenti.
 
-- [Usare il modello di automazione](../../extensibility/internals/using-the-automation-model.md)
+- [Utilizzare il modello di automazione](../../extensibility/internals/using-the-automation-model.md)
 
- Vengono forniti due esempi di codice che illustrano come un consumer di automazione Ottiene il progetto iniziale gli oggetti di automazione.
+ Vengono forniti due esempi di codice che illustrano come un consumer di automazione ottiene gli oggetti di automazione del progetto iniziale.
 
-- [Automazione per gli oggetti di configurazione e SelectedItem](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)
+- [Automazione per gli oggetti Configuration e SelectedItem](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)
 
- Fornisce informazioni su automazione per gli oggetti di configurazione e SelectedItems.
+ Fornisce informazioni sull'automazione per gli oggetti Configuration e SelectedItems.
 
-## <a name="reference"></a>Riferimenti
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Fornisce un esempio di codice che illustra come fa parte di un pacchetto VSPackage nel modello a oggetti di automazione DTE. Elenca i parametri, valori restituiti e selezionato la sezione Osservazioni.
+## <a name="reference"></a>Informazioni di riferimento
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>Fornisce un esempio di codice che mostra come un VSPackage partecipa al modello a oggetti di automazione DTE. Elenca i parametri, i valori restituiti e le osservazioni selezionate.

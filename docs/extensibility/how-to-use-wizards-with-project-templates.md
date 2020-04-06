@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Usare procedure guidate con modelli di progetto'
+title: 'Procedura: utilizzare procedure guidate con modelli di progetto'
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,68 +9,68 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51c89fb82985d37b106f352047bfce74503f3c48
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 4d2dc057dfa518bb52c6ba4d30cd0f3e0a822cfd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913109"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710539"
 ---
-# <a name="how-to-use-wizards-with-project-templates"></a>Procedura: Usare procedure guidate con modelli di progetto
+# <a name="how-to-use-wizards-with-project-templates"></a>Procedura: utilizzare procedure guidate con modelli di progettoHow to: Use wizards with project templates
 
 In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> che, se implementata, consente di eseguire il codice personalizzato quando un utente crea un progetto da un modello.
 
-La personalizzazione del modello di progetto può essere usata per visualizzare un'interfaccia utente personalizzata che raccoglie l'input dell'utente per personalizzare il modello, aggiungere altri file al modello o qualsiasi altra azione consentita su un progetto.
+La personalizzazione del modello di progetto può essere usata per visualizzare un'interfaccia utente personalizzata che raccoglie l'input dell'utente per personalizzare il modello, aggiungere file aggiuntivi al modello o qualsiasi altra azione consentita in un progetto.
 
-I <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> metodi di interfaccia vengono chiamati in diversi momenti durante la creazione del progetto, a partire dal momento in cui un utente fa clic su **OK** nella finestra di dialogo **nuovo progetto** . Ogni metodo dell'interfaccia è denominato per descrivere il punto in cui viene chiamato. Ad esempio, Visual Studio chiama <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> immediatamente quando inizia a creare il progetto, rendendolo un percorso valido per la scrittura di codice personalizzato per raccogliere l'input dell'utente.
+I <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> metodi di interfaccia vengono chiamati in momenti diversi durante la creazione del progetto, a partire dal momento in cui un utente fa clic **su OK** nella finestra di dialogo **Nuovo progetto** . Ogni metodo dell'interfaccia è denominato per descrivere il punto in cui viene chiamato. Ad esempio, Visual <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Studio chiama immediatamente quando inizia a creare il progetto, rendendolo una buona posizione per scrivere codice personalizzato per raccogliere l'input dell'utente.
 
-## <a name="create-a-project-template-project-with-a-vsix-project"></a>Creare un progetto di modello di progetto con un progetto VSIX
+## <a name="create-a-project-template-project-with-a-vsix-project"></a>Creare un progetto di modello di progetto con un progetto VSIXCreate a project template project with a VSIX project
 
-Si inizia a creare un modello personalizzato con il progetto di modello di progetto, che fa parte di Visual Studio SDK. In questa procedura verrà usato un C# progetto di modello di progetto, ma è disponibile anche un progetto di modello di progetto Visual Basic. Aggiungere quindi un progetto VSIX alla soluzione che contiene il progetto di modello di progetto.
+Si inizia a creare un modello personalizzato con il progetto di modello di progetto, che fa parte di Visual Studio SDK. In this procedure, we'll use a C# project template project, but there is also a Visual Basic project template project. Quindi si aggiunge un progetto VSIX alla soluzione che contiene il progetto di modello di progetto.
 
-1. Creare un C# progetto di modello di progetto (in Visual Studio, selezionare **file** > **nuovo** > **progetto** e cercare "modello progetto"). Denominarlo **MyProjectTemplate**.
+1. Creare un progetto di modello di progetto c'è (in Visual Studio, selezionare **File** > **nuovo** > **progetto** e cercare "modello di progetto"). Denominarlo **MyProjectTemplate**.
 
    > [!NOTE]
-   > Potrebbe essere richiesto di installare Visual Studio SDK. Per ulteriori informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+   > Potrebbe essere richiesto di installare Visual Studio SDK. Per ulteriori informazioni, vedere [Installazione di Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
-2. Aggiungere un nuovo progetto VSIX nella stessa soluzione del progetto di modello di progetto (in **Esplora soluzioni**, selezionare il nodo della soluzione, fare clic con il pulsante destro del mouse e scegliere **Aggiungi** > **nuovo progetto** e cercare "VSIX"). Denominarlo **MyProjectWizard.**
+2. Aggiungere un nuovo progetto VSIX nella stessa soluzione del progetto di modello di progetto (in **Esplora soluzioni**, selezionare il nodo della soluzione, fare clic con il pulsante destro del mouse e scegliere **Aggiungi** > **nuovo progetto** e cercare "vsix"). Denominarlo **MyProjectWizard.Name it MyProjectWizard.**
 
-3. Impostare il progetto VSIX come progetto di avvio. In **Esplora soluzioni**selezionare il nodo progetto VSIX, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**.
+3. Impostare il progetto VSIX come progetto di avvio. In **Esplora soluzioni**selezionare il nodo del progetto VSIX , fare clic con il pulsante destro del mouse e scegliere Imposta come progetto di **avvio**.
 
-4. Aggiungere il progetto modello come asset del progetto VSIX. In **Esplora soluzioni**, nel nodo progetto VSIX, trovare il file *source. Extension. vsixmanifest* . Fare doppio clic su di esso per aprirlo nell'editor manifesto.
+4. Aggiungere il progetto di modello come risorsa del progetto VSIX. In **Esplora soluzioni**, nel nodo del progetto VSIX, individuare il file *source.extension.vsixmanifest.* Fare doppio clic su di esso per aprirlo nell'editor del manifesto.
 
-5. Nell'editor del manifesto selezionare la scheda **Asset** sul lato sinistro della finestra.
+5. Nell'editor del manifesto, seleziona la scheda **Asset** sul lato sinistro della finestra.
 
-6. Nella scheda **Asset** selezionare **nuovo**. Nella finestra **Aggiungi nuovo asset** selezionare **Microsoft. VisualStudio. ProjectTemplate**per il campo tipo. Nel campo **origine** selezionare **un progetto nella soluzione corrente**. Nel campo **progetto** selezionare **MyProjectTemplate**. Fare quindi clic su **OK**.
+6. Nella scheda **Risorse,** selezionare **Nuovo.** Nella finestra **Aggiungi nuovo asset** selezionare **Microsoft.VisualStudio.ProjectTemplate**per il campo Tipo . Nel campo **Origine** selezionare **Un progetto nella soluzione corrente.** Nel campo **Progetto** selezionare **MyProjectTemplate**. Fare quindi clic su **OK**.
 
-7. Compilare la soluzione e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio. (L'operazione potrebbe richiedere alcuni minuti).
+7. Compilare la soluzione e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio. L'operazione potrebbe richiedere alcuni minuti.
 
-8. Nella seconda istanza di Visual Studio, provare a creare un nuovo progetto con il nuovo modello (**file** > **nuovo** > **progetto**, cercare "MyProject"). Il nuovo progetto dovrebbe essere visualizzato con una classe denominata **Class1**. A questo punto è stato creato un modello di progetto personalizzato. Arrestare il debug adesso.
+8. Nella seconda istanza di Visual Studio, provare a creare un nuovo progetto con il nuovo modello (**File** > **nuovo** > **progetto**, cercare "myproject"). Il nuovo progetto dovrebbe essere visualizzato con una classe denominata **Class1**. È stato creato un modello di progetto personalizzato. Interrompere il debug ora.
 
 ## <a name="create-a-custom-template-wizard"></a>Creazione guidata modello personalizzato
 
-Questa procedura illustra come creare una procedura guidata personalizzata che apre un Windows Form prima della creazione del progetto. Il modulo consente agli utenti di aggiungere un valore di parametro personalizzato che viene aggiunto al codice sorgente durante la creazione del progetto.
+In questa procedura viene illustrato come creare una procedura guidata personalizzata che apre un Windows Form prima della creazione del progetto. Il modulo consente agli utenti di aggiungere un valore di parametro personalizzato che viene aggiunto al codice sorgente durante la creazione del progetto.
 
-1. Configurare il progetto VSIX per consentire la creazione di un assembly.
+1. Impostare il progetto VSIX per consentire la creazione di un assembly.
 
-2. In **Esplora soluzioni**selezionare il nodo progetto VSIX. Sotto **Esplora soluzioni**verrà visualizzata la finestra **Proprietà** . In caso contrario, selezionare **Visualizza** > **finestra Proprietà**o premere **F4**. Nella finestra **Proprietà** selezionare i campi seguenti per `true`:
+2. In **Esplora soluzioni**selezionare il nodo del progetto VSIX. Sotto **Esplora soluzioni**, verrà visualizzata la finestra **Proprietà** . In caso contrario, selezionare **Visualizza** > **finestra Proprietà**oppure premere **F4**. Nella finestra **Proprietà,** selezionare `true`i seguenti campi per:
 
    - **Includi assembly nel contenitore VSIX**
 
-   - **Includere i simboli di debug nel contenitore VSIX**
+   - **Includere simboli di debug nel contenitore VSIX**
 
-   - **Includere i simboli di debug nella distribuzione VSIX locale**
+   - **Includi simboli di debug nella distribuzione VSIX locale**
 
-3. Aggiungere l'assembly come asset al progetto VSIX. Aprire il file *source. Extension. vsixmanifest* e selezionare la scheda **Asset** . Nella finestra **Aggiungi nuovo asset** , per **tipo** selezionare **Microsoft. VisualStudio. assembly**, per **origine** selezionare **un progetto nella soluzione corrente**e per **progetto** selezionare **MyProjectWizard**.
+3. Aggiungere l'assembly come risorsa al progetto VSIX. Aprire il file *source.extension.vsixmanifest* e selezionare la scheda **Asset.** Nella finestra **Aggiungi nuovo asset,** per **Tipo** selezionare **Microsoft.VisualStudio.Assembly**, per **Origine** selezionare **Un progetto nella soluzione corrente**e per **Progetto** selezionare **CreazioneguidataProgetto**.
 
-4. Aggiungere i riferimenti seguenti al progetto VSIX. (In **Esplora soluzioni**, nel nodo progetto VSIX selezionare **riferimenti**, fare clic con il pulsante destro del mouse e scegliere **Aggiungi riferimento**. Nella scheda **Framework** della finestra di dialogo **Aggiungi riferimento** individuare l'assembly **System. Windows Forms** e selezionarlo. Trovare e selezionare anche gli assembly **System** e **System. Drawing** . A questo punto, selezionare la scheda **estensioni** . Individuare l'assembly **EnvDTE** e selezionarlo. Trovare anche l'assembly **Microsoft. VisualStudio. TemplateWizardInterface** e selezionarlo. Fare clic su **OK**.
+4. Aggiungere i riferimenti seguenti al progetto VSIX. In **Esplora soluzioni**, nel nodo del progetto VSIX selezionare **Riferimenti**, fare clic con il pulsante destro del mouse e scegliere **Aggiungi riferimento**. Nella scheda **Framework** della finestra di dialogo **Aggiungi riferimento** individuare l'assembly **System.Windows Forms** e selezionarlo. Individuare e selezionare anche gli assiemi **System** e **System.Drawing.** Selezionare ora la scheda **Estensioni.** Individuare l'assembly **EnvDTE** e selezionarlo. Individuare anche l'assembly **Microsoft.VisualStudio.TemplateWizardInterface** e selezionarlo. Fare clic su **OK**.
 
-5. Aggiungere una classe per l'implementazione della procedura guidata al progetto VSIX. (In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nodo del progetto VSIX e scegliere **Aggiungi**, quindi **nuovo elemento**, quindi **classe**). Denominare la classe **WizardImplementation**.
+5. Aggiungere una classe per l'implementazione della procedura guidata al progetto VSIX. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto VSIX e scegliere **Aggiungi**, quindi **Nuovo elemento**, quindi **Classe**. Denominare la classe **WizardImplementation**.
 
 6. Sostituire il codice nel file *WizardImplementationClass.cs* con il codice seguente:
 
@@ -143,23 +143,23 @@ Questa procedura illustra come creare una procedura guidata personalizzata che a
    }
    ```
 
-    Il **UserInputForm** a cui si fa riferimento in questo codice verrà implementato in un secondo momento.
+    **UserInputForm** a cui si fa riferimento in questo codice verrà implementato in un secondo momento.
 
-    La `WizardImplementation` classe contiene implementazioni del metodo per ogni membro <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>di. In questo esempio solo il <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> metodo esegue un'attività. Tutti gli altri metodi non eseguono alcuna operazione `true`o restituiscono.
+    La `WizardImplementation` classe contiene implementazioni di <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>metodi per ogni membro di . In questo esempio, <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> solo il metodo esegue un'attività. Tutti gli altri metodi `true`non eseguono alcuna operazione o restituiscono .
 
     Il <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> metodo accetta quattro parametri:
 
-   - Parametro di cui è possibile eseguire il cast all' <xref:EnvDTE._DTE> oggetto radice per consentire la personalizzazione del progetto. <xref:System.Object>
+   - Parametro <xref:System.Object> di cui è <xref:EnvDTE._DTE> possibile eseguire il cast all'oggetto radice, per consentire di personalizzare il progetto.
 
-   - <xref:System.Collections.Generic.Dictionary%602> Parametro che contiene una raccolta di tutti i parametri predefiniti nel modello. Per ulteriori informazioni sui parametri di modello, vedere [parametri di modello](../ide/template-parameters.md).
+   - Parametro <xref:System.Collections.Generic.Dictionary%602> che contiene una raccolta di tutti i parametri predefiniti nel modello. Per ulteriori informazioni sui parametri di modello, vedere [Parametri modello](../ide/template-parameters.md).
 
-   - <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> Parametro che contiene informazioni sul tipo di modello utilizzato.
+   - Parametro <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> che contiene informazioni sul tipo di modello in uso.
 
-   - <xref:System.Object> Matrice che contiene un set di parametri passati alla procedura guidata da Visual Studio.
+   - Matrice <xref:System.Object> che contiene un set di parametri passati alla procedura guidata da Visual Studio.
 
-     Questo esempio aggiunge un valore di parametro dal modulo di input dell'utente <xref:System.Collections.Generic.Dictionary%602> al parametro. Ogni istanza del `$custommessage$` parametro nel progetto verrà sostituita con il testo immesso dall'utente.
+     In questo esempio viene aggiunto un valore <xref:System.Collections.Generic.Dictionary%602> di parametro dal form di input dell'utente al parametro. Ogni istanza `$custommessage$` del parametro nel progetto verrà sostituita con il testo immesso dall'utente.
 
-7. A questo punto, creare il **UserInputForm**. Nel file *WizardImplementation.cs* aggiungere il codice seguente dopo la fine della `WizardImplementation` classe.
+7. Creare ora **UserInputForm**. Nel *file WizardImplementation.cs* aggiungere il codice seguente `WizardImplementation` dopo la fine della classe.
 
    ```csharp
    public partial class UserInputForm : Form
@@ -202,51 +202,51 @@ Questa procedura illustra come creare una procedura guidata personalizzata che a
        }
    ```
 
-    Il modulo di input dell'utente fornisce un modulo semplice per l'immissione di un parametro personalizzato. Il modulo contiene una casella di testo `textBox1` denominata e un pulsante `button1`denominato. Quando si fa clic sul pulsante, il testo della casella di testo viene archiviato nel `customMessage` parametro.
+    Il modulo di input dell'utente fornisce un modulo semplice per l'immissione di un parametro personalizzato. Il modulo contiene una `textBox1` casella di `button1`testo denominata e un pulsante denominato . Quando si fa clic sul pulsante, il testo `customMessage` della casella di testo viene memorizzato nel parametro.
 
 ## <a name="connect-the-wizard-to-the-custom-template"></a>Connettere la procedura guidata al modello personalizzato
 
-Per fare in modo che il modello di progetto personalizzato usi la procedura guidata personalizzata, è necessario firmare l'assembly della procedura guidata e aggiungere alcune righe al modello di progetto personalizzato per indicare dove trovare l'implementazione della procedura guidata quando viene creato un nuovo progetto.
+Affinché il modello di progetto personalizzato utilizzi la procedura guidata personalizzata, è necessario firmare l'assembly della procedura guidata e aggiungere alcune righe al modello di progetto personalizzato per sapere dove trovare l'implementazione della procedura guidata quando viene creato un nuovo progetto.
 
-1. Firmare l'assembly. Nella **Esplora soluzioni**selezionare il progetto VSIX, fare clic con il pulsante destro del mouse e scegliere **Proprietà progetto**.
+1. Firma l'assemblea. In **Esplora soluzioni**selezionare il progetto VSIX, fare clic con il pulsante destro del mouse e scegliere **Proprietà progetto**.
 
-2. Nella finestra delle **proprietà del progetto** selezionare la scheda **firma** . nella scheda **firma** selezionare **Firma assembly**. Nel campo **Scegli un file chiave con nome sicuro** selezionare  **\<nuovo >** . Nella finestra **Crea chiave con nome sicuro** Digitare **Key. snk**nel campo **nome file di chiave** . Deselezionare il campo **Proteggi file di chiave con una password** .
+2. Nella finestra **Proprietà progetto** selezionare la scheda **Firma** nella scheda **Firma,** selezionare **Firma assembly**. Nel campo **Scegliere un file** di chiave con nome sicuro selezionare ** \<Nuovo>**. Nel campo **Nome file** di chiave della finestra Crea chiave **con nome** sicuro **digitare key.snk**. Deselezionare il campo **Proteggi il file di chiave con una password.**
 
-3. Nella **Esplora soluzioni**selezionare il progetto VSIX e trovare la finestra **Proprietà** .
+3. In **Esplora soluzioni**selezionare il progetto VSIX e individuare la finestra **Proprietà.In** the Solution Explorer , select the VSIX project and find the Properties window.
 
-4. Impostare il campo **Copia output di compilazione in directory di output** su **true**. Ciò consente di copiare l'assembly nella directory di output quando la soluzione viene ricompilata. È ancora incluso nel `.vsix` file. Per individuare la chiave di firma, è necessario visualizzare l'assembly.
+4. Impostare il campo **Copia output di compilazione in directory di output** su **true**. Ciò consente all'assembly di essere copiato nella directory di output quando la soluzione viene ricompilata. È ancora contenuto `.vsix` nel file. È necessario visualizzare l'assembly per scoprirne la chiave di firma.
 
 5. Ricompilare la soluzione.
 
-6. È ora possibile trovare il file Key. snk nella directory del progetto MyProjectWizard ( *\<percorso del disco > \MyProjectTemplate\MyProjectWizard\key.snk*). Copiare il file *Key. snk* .
+6. È ora possibile trovare il file key.snk nella directory del progetto MyProjectWizard*\<(percorso su disco> , MyProjectTemplate , MyProjectWizard , key.snk*). Copiare il file *key.snk.*
 
-7. Passare alla directory di output e trovare l'assembly ( *\<percorso del disco > \ MyProjectTemplate/MyProjectWizard \ bin \ debug \ MyProjectWizard. dll*). Incollare il file *Key. snk* qui. (Questo non è assolutamente necessario, ma renderà più semplice la procedura seguente).
+7. Passare alla directory di output e individuare l'assembly*\<(percorso del disco> , MyProjectTemplate/MyProjectWizard , bin , Debug , MyProjectWizard.dll*). Incollare il file *key.snk* qui. (Questo non è assolutamente necessario, ma renderà i seguenti passaggi più facili.)
 
 8. Aprire una finestra di comando e passare alla directory in cui è stato creato l'assembly.
 
-9. Trovare lo strumento di firma *sn. exe* . Ad esempio, in un sistema operativo Windows a 10 64 bit, un percorso tipico è il seguente:
+9. Individuare lo strumento di firma *sn.exe.* Ad esempio, in un sistema operativo Windows 10 a 64 bit, un percorso tipico sarebbe il seguente:
 
-     *C:\Programmi (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*
+     *Strumenti di C: (x86) file di programma (x86) Microsoft SDKs*
 
-     Se non si riesce a trovare lo strumento, provare a eseguire **where/r. sn. exe** nella finestra di comando. Prendere nota del percorso.
+     Se non è possibile trovare lo strumento, provare a eseguire **where /R . sn.exe** nella finestra di comando. Prendere nota del percorso.
 
-10. Estrarre la chiave pubblica dal file *Key. snk* . Nella finestra di comando digitare
+10. Estrarre la chiave pubblica dal file *key.snk.* Nella finestra di comando, digitare
 
-     **\<percorso di sn. exe > \sn.exe-p Key. snk outfile. Key.**
+     **\<percorso di sn.exe>sn.exe -p key.snk outfile.key.**
 
-     Non dimenticare di racchiudere il percorso di *sn. exe* con virgolette se sono presenti spazi nei nomi di directory.
+     Non dimenticare di racchiudere il percorso di *sn.exe* tra virgolette se ci sono spazi nei nomi delle directory!
 
 11. Ottenere il token di chiave pubblica dal file outfile:
 
-     **\<percorso di sn. exe > \sn.exe-t outfile. Key.**
+     **\<percorso di sn.exe>sn.exe -t outfile.key.**
 
-     Anche in questo caso, non dimenticare le virgolette. Nell'output dovrebbe essere visualizzata una riga simile alla seguente.
+     Anche in questo caso, non dimenticare le virgolette. Si dovrebbe vedere una linea nell'output come questo
 
-     **Il token di chiave \<pubblica è token >**
+     **Il token \<di chiave pubblica è token>**
 
      Prendere nota di questo valore.
 
-12. Aggiungere il riferimento alla procedura guidata personalizzata al file con *estensione vstemplate* del modello di progetto. Nella **Esplora soluzioni**individuare il file denominato *MyProjectTemplate. vstemplate*e aprirlo. Al termine della \<sezione > TemplateContent aggiungere la sezione seguente:
+12. Aggiungere il riferimento alla procedura guidata personalizzata al file *.vstemplate* del modello di progetto. In **Esplora soluzioni**individuare il file denominato *MyProjectTemplate.vstemplate*e aprirlo. Dopo la fine \<della sezione> TemplateContent, aggiungere la sezione seguente:
 
     ```xml
     <WizardExtension>
@@ -261,17 +261,17 @@ Per fare in modo che il modello di progetto personalizzato usi la procedura guid
 
 ## <a name="add-the-custom-parameter-to-the-template"></a>Aggiungere il parametro personalizzato al modello
 
-In questo esempio, il progetto utilizzato come modello Visualizza il messaggio specificato nel modulo di input dell'utente della procedura guidata personalizzata.
+In questo esempio, il progetto utilizzato come modello visualizza il messaggio specificato nel modulo di input dell'utente della procedura guidata personalizzata.
 
-1. Nel **Esplora soluzioni**passare al progetto **MyProjectTemplate** e aprire *Class1.cs*.
+1. In **Esplora soluzioni**passare al progetto **MyProjectTemplate** e *aprire Class1.cs*.
 
-2. `Main` Nel metodo dell'applicazione aggiungere la riga di codice seguente.
+2. Nel `Main` metodo dell'applicazione aggiungere la riga di codice seguente.
 
    ```csharp
    Console.WriteLine("$custommessage$");
    ```
 
-    Il parametro `$custommessage$` viene sostituito con il testo immesso nel modulo di input dell'utente quando viene creato un progetto dal modello.
+    Il `$custommessage$` parametro viene sostituito con il testo immesso nel modulo di input dell'utente quando viene creato un progetto dal modello.
 
 Ecco il file di codice completo prima che sia stato esportato in un modello.
 
@@ -293,25 +293,25 @@ namespace $safeprojectname$
 }
 ```
 
-## <a name="use-the-custom-wizard"></a>Usare la procedura guidata personalizzata
+## <a name="use-the-custom-wizard"></a>Utilizzare la procedura guidata personalizzata
 
 A questo punto è possibile creare un progetto dal modello e utilizzare la procedura guidata personalizzata.
 
 1. Ricompilare la soluzione e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio.
 
-2. Creare un nuovo progetto MyProjectTemplate. (**File** > nuovoprogetto > ).
+2. Creare un nuovo progetto MyProjectTemplate.Create a new MyProjectTemplate project. (**File** > **nuovo** > **progetto**).
 
-3. Nella finestra di dialogo **nuovo progetto** cercare "MyProject" per individuare il modello, digitare un nome e fare clic su **OK**.
+3. Nella finestra di dialogo **Nuovo progetto** cercare "myproject" per individuare il modello, digitare un nome e fare clic su **OK**.
 
-     Verrà visualizzato il modulo di input dell'utente della procedura guidata.
+     Verrà aperto il modulo di input dell'utente della procedura guidata.
 
 4. Digitare un valore per il parametro personalizzato e fare clic sul pulsante.
 
-     Il modulo di input utente della procedura guidata viene chiuso e viene creato un progetto dal modello.
+     Il modulo di input dell'utente della procedura guidata viene chiuso e viene creato un progetto dal modello.
 
-5. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file del codice sorgente e scegliere **Visualizza codice**.
+5. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file del codice sorgente e **scegliere Visualizza codice**.
 
-     Si noti `$custommessage$` che è stato sostituito con il testo immesso nel modulo di input dell'utente della procedura guidata.
+     Si `$custommessage$` noti che è stato sostituito con il testo immesso nel modulo di input dell'utente della procedura guidata.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_FIELD | Microsoft Docs
+title: proprietà METADATA_ADDRESS_FIELD . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_FIELD structure
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd8e536c1916f22fba81ff77379c218b1f2516ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe9901ac9dab4a1ec4b5e8467f3063845dfb74f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334649"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714506"
 ---
-# <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
+# <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 
 Questa struttura rappresenta l'indirizzo di un campo di una classe o struttura.
 
@@ -43,13 +43,13 @@ public struct METADATA_ADDRESS_FIELD {
 ## <a name="members"></a>Membri
 
 `tokField`\
-L'ID del token di campo.
+ID del token di campo.
 
-[C++] `_mdToken` sia un `typedef` un 32-bit `int`.
+[C]: `_mdToken` è `typedef` un per un `int`oggetto a 32 bit.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
-Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_FIELD` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).
+Questa struttura fa parte dell'unione nella `dwKind` struttura `DEBUG_ADDRESS_UNION` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando `ADDRESS_KIND_FIELD` il campo della struttura è impostato su (un valore dell'enumerazione [ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,52 +1,52 @@
 ---
-title: Gestione dei componenti | Microsoft Docs
+title: Gestione dei componenti Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477079cdb0349b2299b5cb829770800a4930958d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310011"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709333"
 ---
 # <a name="component-management"></a>Gestione dei componenti
-Unità delle attività del programma di installazione di Windows sono definite come componenti di Windows Installer (talvolta denominati WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di conteggio dei riferimenti per le configurazioni che usano Windows Installer e installazione.
+Le unità di attività in Windows Installer sono denominate componenti di Windows Installer (talvolta denominati WIC o solo componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di installazione e conteggio dei riferimenti per le installazioni che utilizzano Windows Installer.
 
- Sebbene sia possibile usare diversi prodotti per creare il programma di installazione di VSPackage, questa discussione si presuppone l'uso di Windows Installer (*file con estensione msi*) file. Quando si crea un programma di installazione, è necessario gestire correttamente la distribuzione del file in modo che il conteggio dei riferimenti corretto venga eseguita in qualsiasi momento. Di conseguenza, diverse versioni del prodotto non interferiscono con o smettono di funzionare tra loro in una combinazione di installare e disinstallare gli scenari.
+ Sebbene sia possibile utilizzare diversi prodotti per creare il programma di installazione VSPackage, in questa discussione si presuppone l'utilizzo dei file di Windows Installer (*MSI).* Quando si crea il programma di installazione, è necessario gestire correttamente la distribuzione dei file in modo che il conteggio dei riferimenti corretto venga eseguito in qualsiasi momento. Di conseguenza, versioni diverse del prodotto non interferiranno o si romperanno a vicenda in una combinazione di scenari di installazione e disinstallazione.
 
- Nel programma di installazione di Windows, il conteggio dei riferimenti si verifica a livello di componente. È necessario organizzare con attenzione le risorse, ovvero i file, voci del Registro di sistema e così via, ovvero in componenti. Esistono altri livelli di organizzazione, quali moduli, le funzionalità e i prodotti, che possono aiutare in scenari diversi. Per altre informazioni, vedere [nozioni di base di Windows Installer](../../extensibility/internals/windows-installer-basics.md).
+ In Windows Installer, il conteggio dei riferimenti si verifica a livello di componente. È necessario organizzare con attenzione le risorse, ovvero file, voci del Registro di sistema e così via, in componenti. Esistono altri livelli di organizzazione, ad esempio moduli, funzionalità e prodotti, che possono essere utili in scenari diversi. Per ulteriori informazioni, vedere [Nozioni di base su Windows Installer](../../extensibility/internals/windows-installer-basics.md).
 
-## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Linee guida del programma di installazione per l'installazione side-by-side di creazione
+## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Linee guida per la configurazione della creazione per l'installazione side-by-side
 
-- Creare file e le chiavi del Registro di sistema che vengono condivise tra le versioni nei propri componenti.
+- Creare file e chiavi del Registro di sistema condivisi tra le versioni nei propri componenti.
 
-     In questo modo consente di renderli facilmente nella prossima versione. Ad esempio, le librerie dei tipi registrati a livello globale, estensioni di file, altri elementi registrati in **HKEY_CLASSES_ROOT**e così via.
+     In questo modo è possibile consumarli facilmente nella versione successiva. Ad esempio, librerie dei tipi registrate a livello globale, estensioni di file, altri elementi registrati in **HKEY_CLASSES_ROOT**e così via.
 
-- Raggruppare i componenti condivisi in moduli unione separato.
+- Raggruppare i componenti condivisi in moduli unione separati.
 
-     Questa strategia consente di modificare in modo corretto per l'installazione side-by-side in futuro.
+     Questa strategia consente di creare correttamente per l'installazione side-by-side in futuro.
 
-- Installare i file condivisi e le chiavi del Registro di sistema utilizzando gli stessi componenti di Windows Installer in tutte le versioni.
+- Installare i file condivisi e le chiavi del Registro di sistema utilizzando gli stessi componenti di Windows Installer tra le versioni.
 
-     Se si usa un componente diverso, i file e le voci del Registro di sistema vengono disinstallate quando si disinstalla un pacchetto VSPackage con controllo delle versioni, ma è ancora installato un altro pacchetto VSPackage.
+     Se si utilizza un componente diverso, i file e le voci del Registro di sistema vengono disinstallati quando viene disinstallato un VSPackage con versione con controllo delle versioni, ma un altro VSPackage è ancora installato.
 
-- Non combinare gli elementi condivisi e con controllo delle versioni nello stesso componente.
+- Non combinare elementi con versione e condivisi nello stesso componente.
 
-     Questa operazione rende Impossibile installare gli elementi condivisi a un percorso globale e gli elementi con controllo delle versioni da percorsi di tipo isolati.
+     In questo modo è impossibile installare gli elementi condivisi in una posizione globale e gli elementi con controllo delle versioni in posizioni isolate.
 
-- Non dispongono di chiavi del Registro di sistema condivise che puntano ai file con controllo delle versioni.
+- Non dispongono di chiavi del Registro di sistema condivise che puntano a file con versione.
 
-     Se esegue l'operazione, le chiavi condivise verranno sovrascritto quando viene installato un altro pacchetto VSPackage con controllo delle versioni. Dopo aver rimosso la seconda versione, il file a cui punta la chiave è più presente.
+     In caso contrario, le chiavi condivise verranno sovrascritte quando viene installato un altro VSPackage con controllo delle versioni. Dopo aver rimosso la seconda versione, il file a cui punta la chiave non è più presente.
 
 ## <a name="see-also"></a>Vedere anche
-- [Scegliere tra pacchetti VSPackage condivisi e con controllo delle versioni](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+- [Scegliere tra package VS condivisi e con controllo delle versioni](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Scenari di installazione di VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)

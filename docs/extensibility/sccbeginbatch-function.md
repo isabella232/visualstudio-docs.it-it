@@ -1,5 +1,5 @@
 ---
-title: Funzione SccBeginBatch | Microsoft Docs
+title: Funzione SccBeginBatch . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bb145358184117046e14b7b598ce6d4bb4586b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6c7982d8c8c0d71f8c79e9b808be5453d384882d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333893"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701191"
 ---
-# <a name="sccbeginbatch-function"></a>Funzione SccBeginBatch
-Questa funzione avvia una sequenza di batch di operazioni di controllo codice sorgente. Il [SccEndBatch](../extensibility/sccendbatch-function.md) verrà chiamato per terminare il batch. Questi batch non possono essere annidati.
+# <a name="sccbeginbatch-function"></a>SccBeginBatch (funzione)
+Questa funzione avvia una sequenza batch di operazioni di controllo del codice sorgente. [SccEndBatch](../extensibility/sccendbatch-function.md) verrà chiamato per terminare il batch. Questi batch non possono essere annidati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,21 +29,21 @@ SCCRTN SccBeginBatch(void);
 ```
 
 ### <a name="parameters"></a>Parametri
- Nessuno.
+ No.
 
 ## <a name="return-value"></a>Valore restituito
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+ L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei seguenti valori:
 
-|Value|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|Batch di operazioni completata è stata avviata.|
+|SCC_OK|Batch di operazioni avviato correttamente.|
 |SCC_E_UNKNOWNERROR|Errore non specifico.|
 
-## <a name="remarks"></a>Note
- Batch di controllo di origine utilizzati per eseguire le stesse operazioni in più progetti o più contesti. Batch sono utilizzabile per eliminare finestre di dialogo per ogni progetto ridondanti rispetto all'esperienza utente durante un'operazione batch. Il `SccBeginBatch` funzione e il [SccEndBatch](../extensibility/sccendbatch-function.md) vengono utilizzati come una coppia di funzione per indicare l'inizio e alla fine di un'operazione. Non possono essere annidate. `SccBeginBatch` imposta un flag che indica che un'operazione batch è in corso.
+## <a name="remarks"></a>Osservazioni
+ I batch di controllo del codice sorgente vengono utilizzati per eseguire le stesse operazioni in più progetti o più contesti. I batch possono essere utilizzati per eliminare le finestre di dialogo ridondanti per progetto dall'esperienza utente durante un'operazione in batch. La `SccBeginBatch` funzione e [SccEndBatch](../extensibility/sccendbatch-function.md) vengono utilizzati come coppia di funzioni per indicare l'inizio e la fine di un'operazione. Non possono essere annidati. `SccBeginBatch`imposta un flag che indica che è in corso un'operazione batch.
 
- Mentre è attiva un'operazione batch, il plug-in del controllo del codice sorgente debba presentare al massimo una finestra di dialogo per qualsiasi domanda all'utente e applicare la risposta da questa finestra di dialogo in tutte le operazioni successive.
+ Mentre è attiva un'operazione batch, il plug-in del controllo del codice sorgente deve presentare al massimo una finestra di dialogo per qualsiasi domanda all'utente e applicare la risposta da tale finestra di dialogo in tutte le operazioni successive.
 
 ## <a name="see-also"></a>Vedere anche
-- [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)
+- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)

@@ -1,33 +1,33 @@
 ---
-title: Cenni preliminari sul servizio di linguaggio legacy | Microsoft Docs
+title: Panoramica del servizio di linguaggio legacy - Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dfec9cc8b57dfb12b3977cc04e2e62ecc0dea96
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726860"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707351"
 ---
 # <a name="legacy-language-service-overview"></a>Panoramica dei servizi di linguaggio legacy
-Un servizio di linguaggio fornisce supporto per l'editor che consente di implementare determinate funzionalità di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Le classi del servizio di linguaggio MPF (Managed Package Framework) forniscono supporto completo per le funzionalità di uso frequente e il supporto parziale per altre funzionalità.
+Un servizio di linguaggio fornisce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] il supporto dell'editor che consente di implementare determinate funzionalità. Le classi del servizio di linguaggio Managed Package Framework (MPF) forniscono supporto completo per le funzionalità utilizzate di frequente e il supporto parziale per altre funzionalità.
 
 ## <a name="fully-supported-features-in-the-mpf"></a>Funzionalità completamente supportate in MPF
- Le classi del servizio di linguaggio MPF supportano le funzionalità seguenti:
+ Le classi del servizio di linguaggio MPF supportano le funzionalità seguenti:The MPF language service classes support the following features:
 
 - Evidenziazione della sintassi
 
 - struttura
 
-- Aggiungere commenti a blocchi di codice
+- Aggiunta di commenti a blocchi di codice
 
 - Corrispondenza parentesi graffe
 
@@ -37,25 +37,25 @@ Un servizio di linguaggio fornisce supporto per l'editor che consente di impleme
 
 - Informazioni sui parametri IntelliSense
 
-- Informazioni rapide di IntelliSense
+- Informazioni rapide su IntelliSense
 
-- Completamento del membro IntelliSense
+- Completamento dei membri IntelliSense
 
-- Completamento parole IntelliSense
+- Completamento delle parole IntelliSense
 
 ## <a name="partially-supported-features-in-the-mpf"></a>Funzionalità parzialmente supportate in MPF
- MPF fornisce solo il supporto parziale per le funzionalità seguenti. Ciò significa che è necessario implementare i metodi chiamati da MPF.
+ Il MPF fornisce solo un supporto parziale per le seguenti funzionalità. Ciò significa che è necessario implementare i metodi chiamati da MPF.
 
-- Riformattazione del codice. Fornire il codice che implementa la riformattazione.
+- Riformattare il codice. Viene fornito il codice che implementa la riformattazione.
 
-- Convalida dei punti di interruzione mediante l'identificazione di intervalli di codice validi. Fornire il codice che identifica gli intervalli di codice.
+- Convalida dei punti di interruzione identificando intervalli di codice validi. Il codice che identifica gli intervalli di codice viene fornito.
 
-- Supporto della finestra **auto** del debugger per la visualizzazione di variabili. Fornire il codice che determina gli elementi da visualizzare nella finestra.
+- Supporto della finestra **Auto** del debugger per la visualizzazione delle variabili. Specificare il codice che determina cosa visualizzare nella finestra.
 
-- Supporto della **barra di navigazione** per la navigazione rapida tra tipi e membri. Implementare e restituire una classe helper che popola gli elenchi nelle caselle combinate della **barra di spostamento** .
+- Supporto della **barra di spostamento** per la navigazione rapida tra tipi e membri. Implementare e restituire una classe helper che popola gli elenchi nelle caselle combinate della barra di **spostamento.**
 
 ## <a name="implementation"></a>Implementazione
- È necessario completare diversi passaggi per implementare il servizio di linguaggio e le funzionalità del servizio di linguaggio che si desidera supportare per la lingua in uso. Questi passaggi sono descritti negli argomenti seguenti:
+ È necessario completare diversi passaggi per implementare il servizio di linguaggio stesso e le funzionalità del servizio di linguaggio che si desidera supportare per la lingua. Questi passaggi vengono illustrati negli argomenti seguenti:These steps are discussed in the following topics:
 
 - [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
@@ -65,7 +65,7 @@ Un servizio di linguaggio fornisce supporto per l'editor che consente di impleme
 
 - [Corrispondenza parentesi graffe in un servizio di linguaggio legacy](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
 
-- [Definizione della struttura in un servizio di linguaggio legacy](../../extensibility/internals/outlining-in-a-legacy-language-service.md)
+- [Struttura in un servizio di linguaggio legacy](../../extensibility/internals/outlining-in-a-legacy-language-service.md)
 
 - [Aggiunta di commenti al codice in un servizio di linguaggio legacy](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)
 

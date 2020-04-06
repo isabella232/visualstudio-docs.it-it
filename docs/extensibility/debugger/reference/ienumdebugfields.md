@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields | Microsoft Docs
+title: Proprietà IEnumDebugFields . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields interface
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50d80242ca516c5fa7f3ad297250e25c782664d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d577ff2f5848f2cb348bcaccf57875507018634b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350374"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716775"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Questa interfaccia rappresenta una raccolta di oggetti che implementano il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia.
@@ -29,23 +29,23 @@ IEnumDebugFields : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Questa interfaccia viene implementata dal provider di simboli per specificare set di oggetti che implementano il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia. Si noti che questo non è un'enumerazione standard COM a causa della presenza del [GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md) (metodo).
+ Questa interfaccia viene implementata dal provider di simboli per fornire set di oggetti che implementano il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia. Si noti che non si tratta di un'enumerazione COM standard a causa della presenza del metodo [GetCount.](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Questa interfaccia viene restituita da [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md) e [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md).
 
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
+## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
  Questa interfaccia implementa i metodi seguenti.
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[avanti](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Recupera il set successivo di [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetti dall'enumerazione.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Ignora un determinato numero di voci.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Reimposta l'enumerazione per la prima voce.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Recupera una copia dell'enumerazione corrente.|
+|[Avanti](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Recupera il set successivo di [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetti dall'enumerazione.|
+|[Saltare](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Salta un numero specificato di voci.|
+|[Reimposta](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Reimposta l'enumerazione sulla prima voce.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md) (Clona)|Recupera una copia dell'enumerazione corrente.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|Recupera il numero di voci nell'enumerazione.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: sh.h
