@@ -1,5 +1,5 @@
 ---
-title: Creazione di un sistema di progetto di base, parte 2 | Microsoft Docs
+title: Creazione di un sistema di progetto di base, parte 2 Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,46 +7,46 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7823dc949e78cc6d22514a1ba93476fd5f42d076
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337004"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739719"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Creare un sistema di progetto di base, parte 2
-La prima procedura dettagliata in questa serie [creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), viene illustrato come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema del progetto di base mediante l'aggiunta di un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. Prima di iniziare questo, è necessario completare la prima procedura dettagliata.
+Nella prima procedura dettagliata di questa serie, [Creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), viene illustrato come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema di progetto di base aggiungendo un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. È necessario completare la prima procedura dettagliata prima di iniziare questa.
 
-Questa procedura dettagliata viene illustrato come creare un tipo di progetto che ha l'estensione del file di progetto *.myproj*. Per completare la procedura dettagliata, non è necessario creare un proprio linguaggio perché la procedura dettagliata Usa il sistema di progetto Visual c# esistente.
+In questa procedura dettagliata viene illustrato come creare un tipo di progetto con estensione *myproj*di progetto. Per completare la procedura dettagliata, non è necessario creare un linguaggio personalizzato perché la procedura dettagliata prende in prestito dal sistema di progetto Visual C.
 
-Questa procedura dettagliata illustra come eseguire queste attività:
+In questa procedura dettagliata viene illustrato come eseguire queste attività:This walkthrough teaches how to accomplish these tasks:
 
-- Creare un modello di Visual Studio.
+- Creare un modello di Visual Studio.Create a Visual Studio template.
 
-- Distribuire un modello di Visual Studio.
+- Distribuire un modello di Visual Studio.Deploy a Visual Studio template.
 
-- Creare un nodo figlio di tipo di progetto nel **nuovo progetto** nella finestra di dialogo.
+- Creare un nodo figlio di tipo progetto nella finestra di dialogo **Nuovo progetto.**
 
-- Abilitare la sostituzione dei parametri nel modello di Visual Studio.
+- Abilitare la sostituzione dei parametri nel modello di Visual Studio.Enable parameter substitution in the Visual Studio template.
 
-- Creare una pagina delle proprietà progetto.
+- Creare una pagina delle proprietà del progetto.
 
 > [!NOTE]
-> I passaggi descritti in questa procedura dettagliata si basano su un progetto c#. Tuttavia, fatta eccezione per le specifiche, ad esempio estensioni di file e il codice, è possibile utilizzare gli stessi passaggi per un progetto Visual Basic.
+> I passaggi di questa procedura dettagliata sono basati su un progetto in C. Tuttavia, ad eccezione di specifiche, ad esempio le estensioni di file e il codice, è possibile utilizzare la stessa procedura per un progetto di Visual Basic.However, except for specifics such as file name extensions and code, you can use the same steps for a Visual Basic project.
 
-## <a name="create-a-visual-studio-template"></a>Creare un modello di Visual Studio
-- [Creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) viene illustrato come creare un modello di progetto di base e aggiungerlo al sistema del progetto. Viene inoltre illustrato come registrare questo modello con Visual Studio usando il <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attributo, che scrive il percorso completo del *\\Templates\Projects\SimpleProject\\* cartella del sistema Registro di sistema.
+## <a name="create-a-visual-studio-template"></a>Creare un modello di Visual StudioCreate a Visual Studio template
+- Creare un sistema di [progetto di base, la parte 1](../extensibility/creating-a-basic-project-system-part-1.md) mostra come creare un modello di progetto di base e aggiungerlo al sistema di progetto. Viene inoltre illustrato come registrare questo modello <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> con Visual Studio utilizzando l'attributo , che scrive il percorso completo della cartella * \\Templates, Projects e SimpleProject\\ * nel Registro di sistema.
 
-Usando un modello di Visual Studio (*vstemplate* file) invece di un modello di progetto di base, è possibile controllare come viene visualizzato il modello nel **nuovo progetto** nella finestra di dialogo e come parametri del modello sono sostituito. Oggetto *vstemplate* file è un file XML che descrive la modalità file di origine devono essere incluse quando viene creato un progetto usando il modello di sistema di progetto. Il sistema di progetto stesso viene compilato mediante la raccolta di *vstemplate* file e i file di origine in un *zip* file e distribuiti tramite la copia il *zip* in un percorso che è noti a Visual Studio. Questo processo è illustrato in dettaglio più avanti in questa procedura dettagliata.
+Utilizzando un modello di Visual Studio (file *.vstemplate)* anziché un modello di progetto di base, è possibile controllare la modalità di visualizzazione del modello nella finestra di dialogo **Nuovo progetto** e la modalità di sostituzione dei parametri del modello. Un file *.vstemplate* è un file XML che descrive come i file di origine devono essere inclusi quando un progetto viene creato utilizzando il modello di sistema del progetto. Il sistema del progetto stesso viene compilato raccogliendo il file *con estensione vstemplate* e i file di origine in un file *con estensione zip* e distribuito copiando il file con estensione *zip* in un percorso noto in Visual Studio. Questo processo viene illustrato in modo più dettagliato più avanti in questa procedura dettagliata.
 
-1. Nelle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aprire la soluzione SimpleProject creata seguendo [creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md).
+1. In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aprire la soluzione SimpleProject creata seguendo Creare un sistema di [progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md).
 
-2. Nel *SimpleProjectPackage.cs* file, individuare l'attributo ProvideProjectFactory. Sostituire il secondo parametro (il nome di progetto) con un valore null e il quarto parametro (il percorso alla cartella del modello di progetto) con ". \\\NullPath ", come indicato di seguito.
+2. Nel file *SimpleProjectPackage.cs* individuare l'attributo ProvideProjectFactory. Sostituire il secondo parametro (il nome del progetto) con null e il quarto parametro (il percorso della cartella del modello di progetto) con ". \\"Percorso Null", come indicato di seguito.
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,
@@ -55,9 +55,9 @@ Usando un modello di Visual Studio (*vstemplate* file) invece di un modello di p
     LanguageVsTemplate = "SimpleProject")]
     ```
 
-3. Aggiungere un file XML denominato *SimpleProject.vstemplate* per il *\\Templates\Projects\SimpleProject\\* cartella.
+3. Aggiungere un file XML denominato *SimpleProject.vstemplate* alla cartella * \\Templates, Projects, SimpleProject.\\ *
 
-4. Sostituire il contenuto del *SimpleProject.vstemplate* con il codice seguente.
+4. Sostituire il contenuto di *SimpleProject.vstemplate* con il codice seguente.
 
     ```xml
     <VSTemplate Version="2.0.0" Type="Project"
@@ -83,44 +83,44 @@ Usando un modello di Visual Studio (*vstemplate* file) invece di un modello di p
     </VSTemplate>
     ```
 
-5. Nel **delle proprietà** finestra, seleziona tutti i cinque file nel *\\Templates\Projects\SimpleProject\\* cartella e impostare il **azione di compilazione** per **ZipProject**.
+5. Nella finestra **Proprietà** selezionare tutti e cinque i file nella cartella * \\Modelli, Progetti e Progetto Semplici,\\ * quindi impostare l'azione di compilazione **su** Progetto **zip**.
 
-    ![Cartella del progetto semplice](../extensibility/media/simpproj2.png "SimpProj2")
+    ![Cartella di progetto semplice](../extensibility/media/simpproj2.png "SimpProj2")
 
-    Il \<TemplateData > sezione determina la posizione e l'aspetto del tipo di progetto SimpleProject nel **nuovo progetto** finestra di dialogo, come indicato di seguito:
+    La \<sezione> TemplateData determina il percorso e l'aspetto del tipo di progetto SimpleProject nella finestra di dialogo **Nuovo progetto,** come indicato di seguito:
 
-- Il \<nome > il modello di progetto applicazione SimpleProject nomi degli elementi.
+- Il \<Name> elemento denomina il modello di progetto per l'applicazione SimpleProject.The Name a Name a name the project template to be SimpleProject Application.
 
-- Il \<descrizione > elemento contiene la descrizione che viene visualizzato nei **nuovo progetto** finestra di dialogo quando viene selezionato il modello di progetto.
+- L'elemento \<Descrizione> contiene la descrizione visualizzata nella finestra di dialogo **Nuovo progetto** quando viene selezionato il modello di progetto.
 
-- Il \<icona > elemento specifica l'icona visualizzata insieme al tipo di progetto SimpleProject.
+- L'elemento \<> Icon specifica l'icona visualizzata insieme al tipo di progetto SimpleProject.
 
-- Il \<ProjectType > nomi di elementi di tipo di progetto nel **nuovo progetto** nella finestra di dialogo. Questo nome sostituisce il parametro name del progetto dell'attributo ProvideProjectFactory.
+- Il \<ProjectType> elemento denomina il tipo di progetto nella finestra di dialogo **Nuovo progetto** . Questo nome sostituisce il parametro del nome del progetto dell'attributo ProvideProjectFactory.
 
   > [!NOTE]
-  > Il \<ProjectType > elemento deve corrispondere il `LanguageVsTemplate` argomento del `ProvideProjectFactory` attributo nel file SimpleProjectPackage.cs.
+  > L'elemento \<> ProjectType `LanguageVsTemplate` deve `ProvideProjectFactory` corrispondere all'argomento dell'attributo nel file di SimpleProjectPackage.cs.
 
-  Il \<TemplateContent > sezione vengono descritti questi file vengono generati quando viene creato un nuovo progetto:
+  La \<sezione> TemplateContent descrive questi file generati quando viene creato un nuovo progetto:The TemplateContent> section describes these files that are generated when a new project is created:
 
-- *SimpleProject.myproj*
+- *Progetto Semplice.myproj*
 
 - *Program.cs*
 
 - *AssemblyInfo.cs*
 
-  Tutti i tre file `ReplaceParameters` impostata su true, che consente la sostituzione dei parametri. Il *Program.cs* dispone di file `OpenInEditor` impostata su true, che fa sì che il file da aprire nell'editor del codice quando viene creato un progetto.
+  Tutti e `ReplaceParameters` tre i file sono impostati su true, che consente la sostituzione dei parametri. Il *file* `OpenInEditor` Program.cs è impostato su true, che determina l'apertura del file nell'editor di codice quando viene creato un progetto.
 
-  Per altre informazioni sugli elementi presenti nello schema del modello di Visual Studio, vedere la [riferimenti dello schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
+  Per ulteriori informazioni sugli elementi nello schema dei modelli di Visual Studio, vedere informazioni di [riferimento sullo schema](../extensibility/visual-studio-template-schema-reference.md)dei modelli di Visual Studio .
 
 > [!NOTE]
-> Se un progetto ha più di un modello di Visual Studio, ogni modello è in una cartella separata. Ogni file in tale cartella deve contenere il **Build Action** impostata su **ZipProject**.
+> Se un progetto ha più di un modello di Visual Studio, ogni modello si trova in una cartella separata. Per ogni file contenuto in tale cartella deve essere impostata **l'azione di compilazione** **su Progettozip**.
 
-## <a name="adding-a-minimal-vsct-file"></a>Aggiunta di un file con estensione vsct minimo
- Visual Studio deve essere eseguito in modalità di installazione per riconoscere un modello di Visual Studio nuovo o modificato. La modalità di installazione richiede un *vsct* file sia presente. Pertanto, è necessario aggiungere un minimo *vsct* file al progetto.
+## <a name="adding-a-minimal-vsct-file"></a>Aggiunta di un file vsct minimo
+ Visual Studio deve essere eseguito in modalità di installazione per riconoscere un modello di Visual Studio nuovo o modificato. La modalità di installazione richiede la presenza di un file *vsct.* Pertanto, è necessario aggiungere un file *vsct* minimo al progetto.
 
 1. Aggiungere un file XML denominato *SimpleProject.vsct* al progetto SimpleProject.
 
-2. Sostituire il contenuto del *SimpleProject.vsct* file con il codice seguente.
+2. Sostituire il contenuto del file *SimpleProject.vsct* con il codice seguente.
 
     ```
     <?xml version="1.0" encoding="utf-8" ?>
@@ -129,17 +129,17 @@ Usando un modello di Visual Studio (*vstemplate* file) invece di un modello di p
     </CommandTable>
     ```
 
-3. Impostare il **Build Action** di questo file per **VSCTCompile**. È possibile eseguire questa operazione solo nel *file con estensione csproj* nel file, non il **proprietà** finestra. Assicurarsi che il **Build Action** di questo file è impostato su **None** a questo punto.
+3. Impostare l'azione di **compilazione** di questo file su **VSCTCompile**. È possibile eseguire questa operazione solo nel file *con estensione csproj,* non nella finestra **Proprietà.** Assicurarsi che l'azione di **compilazione** di questo file sia **impostata** su Nessuno a questo punto.
 
-    1. Il pulsante destro del nodo SimpleProject e quindi fare clic su **SimpleProject.csproj modifica**.
+    1. Fare clic con il pulsante destro del mouse sul nodo SimpleProject , quindi **scegliere Modifica SimpleProject.csproj**.
 
-    2. Nel *file con estensione csproj* del file, individuare il *SimpleProject.vsct* elemento.
+    2. Nel file *con estensione csproj* individuare l'elemento *SimpleProject.vsct.*
 
         ```
         <None Include="SimpleProject.vsct" />
         ```
 
-    3. Modificare l'azione di compilazione specificando **VSCTCompile**.
+    3. Modificare l'azione di compilazione in **VSCTCompile**.
 
         ```
         <VSCTCompile Include="SimpleProject.vsct" />
@@ -147,20 +147,20 @@ Usando un modello di Visual Studio (*vstemplate* file) invece di un modello di p
 
     4. il file di progetto e chiudere l'editor.
 
-    5. Salva il nodo SimpleProject, quindi nella **Esplora soluzioni** fare clic su **Ricarica progetto**.
+    5. Salvare il nodo SimpleProject , quindi in **Esplora soluzioni** fare clic su **Ricarica progetto**.
 
-## <a name="examine-the-visual-studio-template-build-steps"></a>Esaminare le istruzioni di compilazione di modelli di Visual Studio
- Il sistema di compilazione progetto VSPackage in genere viene eseguito Visual Studio in modalità di installazione quando il *vstemplate* file viene modificato o il progetto che contiene il *vstemplate* file viene ricompilato. È possibile seguire la procedura, impostare il livello di dettaglio di MSBuild alla normalità o versione successiva.
+## <a name="examine-the-visual-studio-template-build-steps"></a>Esaminare le istruzioni di compilazione dei modelli di Visual StudioExamine the Visual Studio template build steps
+ Il sistema di compilazione del progetto VSPackage esegue in genere Visual Studio in modalità di installazione quando il file *.vstemplate* viene modificato o il progetto che contiene il file *.vstemplate* viene ricompilato. È possibile seguire impostando il livello di dettaglio di MSBuild su Normale o superiore.
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2. Espandere la **progetti e soluzioni** nodo e quindi selezionare **compila ed Esegui**.
+2. Espandere il nodo **Progetti e soluzioni** , quindi selezionare **Compila ed esegui**.
 
-3. Impostare **livello di dettaglio output di compilazione progetto MSBuild** al **normale**. Fare clic su **OK**.
+3. Impostare il **livello di dettaglio dell'output di compilazione del progetto MSBuild** su **Normal**. Fare clic su **OK**.
 
 4. Ricompilare il progetto SimpleProject.
 
-    L'istruzione di compilazione per creare il *zip* file di progetto sarà simile al seguente.
+    L'istruzione di compilazione per creare il file di progetto *con estensione zip* dovrebbe essere simile all'esempio seguente.
 
 ```
 ZipProjects:
@@ -174,56 +174,56 @@ ZipProjects:
 1>  SimpleProject ->
 ```
 
-## <a name="deploy-a-visual-studio-template"></a>Distribuire un modello di Visual Studio
-Modelli di Visual Studio non contengono informazioni sul percorso. Pertanto, il modello *zip* file deve essere distribuito in un percorso noto a Visual Studio. È in genere il percorso della cartella ProjectTemplates *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >* .
+## <a name="deploy-a-visual-studio-template"></a>Distribuire un modello di Visual StudioDeploy a Visual Studio template
+I modelli di Visual Studio non contengono informazioni sul percorso. Pertanto, il file *con estensione zip* del modello deve essere distribuito in un percorso noto a Visual Studio. Il percorso della cartella ProjectTemplates è in genere *<%LOCALAPPDATA%> .*
 
-Per distribuire la factory di progetto, il programma di installazione deve disporre dei privilegi di amministratore. Distribuisce i modelli sotto il nodo di installazione di Visual Studio: *...\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates*.
+Per distribuire la factory del progetto, il programma di installazione deve disporre dei privilegi di amministratore. Vengono distribuiti i modelli nel nodo di installazione di Visual Studio: ... . *. . .*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-## <a name="test-a-visual-studio-template"></a>Testare un modello di Visual Studio
-Testare la factory di progetto per verificare se crea una gerarchia del progetto usando il modello di Visual Studio.
+## <a name="test-a-visual-studio-template"></a>Testare un modello di Visual StudioTest a Visual Studio template
+Testare la factory del progetto per verificare se crea una gerarchia di progetto usando il modello di Visual Studio.Test your project factory to see whether it creates a project hierarchy by using the Visual Studio template.
 
 1. Reimpostare l'istanza sperimentale di Visual Studio SDK.
 
-    On [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Nel **avviare** menu, trovare il **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** cartella e quindi selezionare **reimpostare l'istanza di Microsoft Visual Studio sperimentale**.
+    Attivato: [!INCLUDE[win7](../debugger/includes/win7_md.md)]nel menu **Start** individuare la cartella Microsoft **Visual Studio/Microsoft Visual Studio SDK/Tools** e quindi selezionare **Reimposta l'istanza sperimentale**di Microsoft Visual Studio .
 
-    Nelle versioni successive di Windows: Nel **avviare** digitare **ripristinare Microsoft Visual Studio \<versione > istanza sperimentale**.
+    Nelle versioni successive di Windows: nella schermata **Start** **digitare Reimposta la versione di Microsoft Visual Studio \<> Istanza sperimentale**.
 
-2. Viene visualizzata una finestra del prompt dei comandi. Quando vengono visualizzate le parole **premere un tasto qualsiasi per continuare**, fare clic su **invio**. Dopo aver chiuso la finestra, aprire Visual Studio.
+2. Viene visualizzata una finestra del prompt dei comandi. Quando vengono visualizzate le parole **Premere un tasto qualsiasi per continuare**, fare clic su **INVIO**. Dopo la chiusura della finestra, aprire Visual Studio.After the window closes, open Visual Studio.
 
 3. Ricompilare il progetto SimpleProject e avviare il debug. Viene visualizzata l'istanza sperimentale.
 
-4. Nell'istanza sperimentale, creare un progetto SimpleProject. Nel **nuovo progetto** finestra di dialogo **SimpleProject**.
+4. Nell'istanza sperimentale, creare un progetto SimpleProject.In the experimental instance, create a SimpleProject project. Nella finestra di dialogo **Nuovo progetto** selezionare **SimpleProject**.
 
-5. Verrà visualizzata una nuova istanza della SimpleProject.
+5. Verrà visualizzata una nuova istanza di SimpleProject.You should see a new instance of SimpleProject.
 
-    ![Progetto semplice nuova istanza](../extensibility/media/simpproj2_newproj.png "SimpProj2_NewProj")
+    ![Nuova istanza di progetto semplice](../extensibility/media/simpproj2_newproj.png "SimpProj2_NewProj")
 
-    ![La nuova istanza di Project](../extensibility/media/simpproj2_myproj.png "SimpProj2_MyProj")
+    ![Nuova istanza del progetto personale](../extensibility/media/simpproj2_myproj.png "SimpProj2_MyProj")
 
-## <a name="create-a-project-type-child-node"></a>Creare un nodo figlio di tipo progetto
-È possibile aggiungere un nodo figlio a un nodo di tipo di progetto nel **nuovo progetto** nella finestra di dialogo. Ad esempio, per il tipo di progetto SimpleProject, si potrebbero avere nodi figlio per le applicazioni console, applicazioni di finestra, le applicazioni web e così via.
+## <a name="create-a-project-type-child-node"></a>Creare un nodo figlio del tipo di progettoCreate a project type child node
+È possibile aggiungere un nodo figlio a un nodo di tipo progetto nella finestra di dialogo **Nuovo progetto.** Ad esempio, per il tipo di progetto SimpleProject, è possibile disporre di nodi figlio per applicazioni console, applicazioni finestra, applicazioni Web e così via.
 
-I nodi figlio vengono creati alterare il file di progetto e aggiungendo \<OutputSubPath > gli elementi figlio di \<ZipProject > elementi. Quando un modello viene copiato durante la compilazione o la distribuzione, tutti i nodi figlio diventano una sottocartella della cartella dei modelli di progetto.
+I nodi figlio vengono creati modificando \<il file di \<progetto e aggiungendo OutputSubPath> elementi figlio agli elementi> . Quando un modello viene copiato durante la compilazione o la distribuzione, ogni nodo figlio diventa una sottocartella della cartella dei modelli di progetto.
 
-In questa sezione viene illustrato come creare un nodo figlio della Console per il tipo di progetto SimpleProject.
+In questa sezione viene illustrato come creare un nodo figlio Console per il tipo di progetto SimpleProject.This section shows how to create a Console child node for the SimpleProject project type.
 
-1. Rinominare il *\\Templates\Projects\SimpleProject\\* cartella in cui  *\\Templates\Projects\ConsoleApp\\* .
+1. Rinominare la * \\cartella Templates, Projects, SimpleProject\\ * in * \\Templates, Projects, ConsoleApp\\*.
 
-2. Nel **delle proprietà** finestra, seleziona tutti i cinque file nel *\\Templates\Projects\ConsoleApp\\* cartella e assicurarsi che il **azione di compilazione**è impostata su **ZipProject**.
+2. Nella finestra **Proprietà,** selezionare tutti e cinque i file nella cartella * \\Modelli,\\ Progetti e ConsoleApp,* e assicurarsi che l'azione di **compilazione** sia impostata su **.**
 
-3. Nel file SimpleProject.vstemplate, aggiungere la riga seguente alla fine del \<TemplateData > sezione, appena prima del tag di chiusura.
+3. Nel file SimpleProject.vstemplate aggiungere la riga seguente \<alla fine della sezione> TemplateData, appena prima del tag di chiusura.
 
     ```
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     ```
 
-    In questo modo il modello di applicazione Console venga visualizzato nel nodo figlio Console e nel nodo padre SimpleProject, a un livello sopra il nodo figlio.
+    In questo modo il modello applicazione console venga visualizzato sia nel nodo figlio Console che nel nodo padre SimpleProject, che si trova di un livello al di sopra del nodo figlio.
 
-4. Salvare il *SimpleProject.vstemplate* file.
+4. Salvare il file *SimpleProject.vstemplate.*
 
-5. Nel *file con estensione csproj* Aggiungi \<OutputSubPath > a ciascuno degli elementi ZipProject. Scaricare il progetto, come in precedenza e modificare il file di progetto.
+5. Nel file *con estensione csproj,* aggiungere \<OutputSubPath> a ciascuno degli elementi di .ipProject. Scaricare il progetto, come in precedenza, e modificare il file di progetto.
 
-6. Individuare il \<ZipProject > elementi. A ogni \<ZipProject > elemento, aggiungere un \<OutputSubPath > elemento e assegnargli il valore di Console. Il ZipProject
+6. Individuare \<gli elementi> .ipProject. A \<ogni elemento> di \<.ipProject, aggiungere un OutputSubPath> elemento e assegnargli il valore Console. Il progetto zip
 
     ```
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">
@@ -243,7 +243,7 @@ In questa sezione viene illustrato come creare un nodo figlio della Console per 
     </ZipProject>
     ```
 
-7. Aggiungere quanto segue \<PropertyGroup > nel file di progetto:
+7. Aggiungere \<questo propertyGroup> al file di progetto:Add this PropertyGroup> to the project file:
 
     ```
     <PropertyGroup>
@@ -253,45 +253,45 @@ In questa sezione viene illustrato come creare un nodo figlio della Console per 
 
 8. Salvare il file di progetto e ricaricare il progetto.
 
-## <a name="test-the-project-type-child-node"></a>Il nodo figlio del tipo progetto di test
-Verificare il file di progetto modificato per verificare se il **Console** nodi figlio viene visualizzato nel **nuovo progetto** nella finestra di dialogo.
+## <a name="test-the-project-type-child-node"></a>Testare il nodo figlio del tipo di progettoTest the project type child node
+Testare il file di progetto modificato per verificare se il nodo figlio **Console** viene visualizzato nella finestra di dialogo **Nuovo progetto.**
 
-1. Eseguire la **reimpostare l'istanza Microsoft Visual Studio sperimentale** dello strumento.
+1. Eseguire lo strumento **Reimposta istanza sperimentale** di Microsoft Visual Studio.
 
-2. Ricompilare il progetto SimpleProject e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato
+2. Ricompilare il progetto SimpleProject e avviare il debug. L'istanza sperimentale dovrebbe apparire
 
-3. Nel **nuovo progetto** finestra di dialogo, fare clic sui **SimpleProject** nodo. Il **applicazione Console** modello deve essere visualizzato nei **modelli** riquadro.
+3. Nella finestra di dialogo **Nuovo progetto** fare clic sul nodo **SimpleProject.** Il modello Applicazione console dovrebbe essere visualizzato nel riquadro Modelli.The **Console Application** template should appear in the **Templates** pane.
 
-4. Espandere la **SimpleProject** nodo. Il **Console** nodo figlio deve essere visualizzato. Il **applicazione SimpleProject** modello continua ad apparire nel **modelli** riquadro.
+4. Espandere il nodo **SimpleProject.** Verrà visualizzato il nodo figlio **Console.** Il modello Applicazione SimpleProject continua a essere visualizzato nel riquadro **Modelli.The** **SimpleProject Application** template continues to appear in the Templates pane.
 
-5. Fare clic su **annullare** e arrestare il debug.
+5. Fare clic su **Annulla** e interrompere il debug.
 
-    ![Progetto semplice Rollup](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")
+    ![Rollup progetto semplice](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")
 
-    ![Nodo della Console di progetto semplice](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
+    ![Nodo Console di progetto semplice](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
-## <a name="substitute-project-template-parameters"></a>Sostituire i parametri di modello di progetto
-- [Creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) è stato illustrato come sovrascrivere i `ProjectNode.AddFileFromTemplate` metodo per ottenere un tipo di base della sostituzione di parametri di modello. In questa sezione illustra come usare i parametri di modello di Visual Studio più sofisticati.
+## <a name="substitute-project-template-parameters"></a>Sostituzione dei parametri del modello di progetto
+- Creazione di un sistema di [progetto di base, la parte 1](../extensibility/creating-a-basic-project-system-part-1.md) ha illustrato come sovrascrivere il `ProjectNode.AddFileFromTemplate` metodo per eseguire un tipo di base di sostituzione dei parametri di modello. In questa sezione viene illustrato come utilizzare i parametri di modello di Visual Studio più sofisticati.
 
-Quando si crea un progetto tramite un modello di Visual Studio il **nuovo progetto** nella finestra di dialogo modello i parametri vengono sostituiti con le stringhe per personalizzare il progetto. Un parametro di modello è un token speciale che inizia e finisce con un segno di dollaro, ad esempio, $ $time. I due parametri seguenti sono particolarmente utili per l'abilitazione della personalizzazione nei progetti che si basano sul modello:
+Quando si crea un progetto utilizzando un modello di Visual Studio nella finestra di dialogo **Nuovo progetto,** i parametri del modello vengono sostituiti con stringhe per personalizzare il progetto. Un parametro di modello è un token speciale che inizia e termina con un simbolo del dollaro, ad esempio, $time. I due parametri seguenti sono particolarmente utili per abilitare la personalizzazione nei progetti basati sul modello:
 
-- $ $GUID [1-10] viene sostituito da un nuovo Guid. È possibile specificare fino a 10 GUID univoci, ad esempio, $guid1$.
+- $GUID[1-10] viene sostituito da un nuovo Guid. È possibile specificare fino a 10 GUID univoci, ad esempio $guid1.
 
-- $safeprojectname$ è il nome specificato da un utente di **nuovo progetto** nella finestra di dialogo modificata per rimuovere i caratteri non sicuri e gli spazi.
+- $safeprojectname è il nome fornito da un utente nella finestra di dialogo **Nuovo progetto,** modificato per rimuovere tutti i caratteri e gli spazi non sicuri.
 
   Per un elenco completo dei parametri dei modelli, vedere [Parametri di modelli](../ide/template-parameters.md).
 
-### <a name="to-substitute-project-template-parameters"></a>Per sostituire i parametri di modello di progetto
+### <a name="to-substitute-project-template-parameters"></a>Per sostituire i parametri del modello di progetto
 
-1. Nel *SimpleProjectNode.cs* del file, rimuovere il `AddFileFromTemplate` (metodo).
+1. Nel file *SimpleProjectNode.cs,* `AddFileFromTemplate` rimuovere il metodo.
 
-2. Nel  *\\Templates\Projects\ConsoleApp\SimpleProject.myproj* del file, individuare il \<RootNamespace > proprietà e modificarne il valore su $ $safeprojectname.
+2. Nel file * \\Templates,Projects,ConsoleApp/SimpleProject.myproj* individuare \<la proprietà rootNamespace> e modificarne il valore in $safeprojectname.
 
     ```
     <RootNamespace>$safeprojectname$</RootNamespace>
     ```
 
-3. Nel  *\\Templates\Projects\SimpleProject\Program.cs* file, sostituire il contenuto del file con il codice seguente:
+3. Nel file * \\Templates,Projects/SimpleProject/Program.cs* sostituire il contenuto del file con il codice seguente:
 
     ```
     using System;
@@ -313,11 +313,11 @@ Quando si crea un progetto tramite un modello di Visual Studio il **nuovo proget
     }
     ```
 
-4. Ricompilare il progetto SimpleProject e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato.
+4. Ricompilare il progetto SimpleProject e avviare il debug. Verrà visualizzata l'istanza sperimentale.
 
-5. Creare una nuova applicazione SimpleProject Console. (Nelle **tipi di progetto** riquadro, selezionare **SimpleProject**. Nella sezione **modelli di Visual Studio installati**, selezionare **applicazione Console**.)
+5. Creare una nuova applicazione SimpleProject Console.Create a new SimpleProject Console application. Nel riquadro **Tipi** progetto selezionare **SimpleProject**. In **Modelli Visual Studio installati**selezionare Applicazione **console**.)
 
-6. Nel progetto appena creato, aprire *Program.cs*. Dovrebbe essere simile al seguente (i valori GUID nel file saranno diversa.):
+6. Nel progetto appena creato aprire *Program.cs*. Dovrebbe essere simile al seguente (i valori GUID nel file saranno diversi.):
 
     ```csharp
     using System;
@@ -339,29 +339,29 @@ Quando si crea un progetto tramite un modello di Visual Studio il **nuovo proget
     }
     ```
 
-## <a name="create-a-project-property-page"></a>Creare una pagina delle proprietà progetto
-È possibile creare una pagina delle proprietà per il tipo di progetto in modo che gli utenti possono visualizzare e modificare le proprietà nei progetti basati su modello. Questa sezione illustra come creare una pagina delle proprietà indipendenti dalla configurazione. Questa pagina delle proprietà di base usa una griglia delle proprietà per visualizzare le proprietà pubbliche che esposta nella classe della pagina proprietà.
+## <a name="create-a-project-property-page"></a>Creare una pagina delle proprietà del progettoCreate a project property page
+È possibile creare una pagina delle proprietà per il tipo di progetto in modo che gli utenti possano visualizzare e modificare le proprietà nei progetti basati sul modello. In questa sezione viene illustrato come creare una pagina delle proprietà indipendente dalla configurazione. Questa pagina delle proprietà di base usa una griglia delle proprietà per visualizzare le proprietà pubbliche esposte nella classe della pagina delle proprietà.
 
-Derivare la classe di pagina di proprietà dal `SettingsPage` classe di base. Griglia delle proprietà fornita dal `SettingsPage` classe è a conoscenza dei tipi di dati più primitivi e sa come visualizzarli. Inoltre, il `SettingsPage` classe in grado di rendere persistenti i valori delle proprietà del file di progetto.
+Derivare la classe `SettingsPage` della pagina delle proprietà dalla classe di base. La griglia delle `SettingsPage` proprietà fornita dalla classe è a conoscenza della maggior parte dei tipi di dati primitivi e sa come visualizzarli. Inoltre, la `SettingsPage` classe sa come rendere persistenti i valori delle proprietà nel file di progetto.
 
-La pagina delle proprietà create in questa sezione consente di modificare e salvare le proprietà del progetto:
+La pagina delle proprietà creata in questa sezione consente di modificare e salvare le proprietà del progetto seguenti:The property page you create in this section lets you alter and save these project properties:
 
 - AssemblyName
 
 - OutputType
 
-- RootNamespace.
+- Rootnamespace.
 
-1. Nel *SimpleProjectPackage.cs* file, aggiungere quanto segue `ProvideObject` attributo di `SimpleProjectPackage` classe:
+1. Nel file *di* SimpleProjectPackage.cs `ProvideObject` aggiungere `SimpleProjectPackage` questo attributo alla classe:
 
     ```
     [ProvideObject(typeof(GeneralPropertyPage))]
     public sealed class SimpleProjectPackage : ProjectPackage
     ```
 
-    Questo registra la classe delle pagine proprietà `GeneralPropertyPage` con COM.
+    In questo modo viene `GeneralPropertyPage` eseguita la classe della pagina delle proprietà con COM.
 
-2. Nel *SimpleProjectNode.cs* , aggiungere questi due metodi sottoposti a override per il `SimpleProjectNode` classe:
+2. Nel file *SimpleProjectNode.cs* aggiungere questi due metodi `SimpleProjectNode` sottoposti a override alla classe:
 
     ```csharp
     protected override Guid[] GetConfigurationIndependentPropertyPages()
@@ -378,11 +378,11 @@ La pagina delle proprietà create in questa sezione consente di modificare e sal
     }
     ```
 
-    Entrambi questi metodi restituiscono una matrice di GUID pagina delle proprietà. Il GUID GeneralPropertyPage è l'unico elemento nella matrice, in modo che il **pagine delle proprietà** nella finestra di dialogo visualizzerà solo una pagina.
+    Entrambi questi metodi restituiscono una matrice di GUID della pagina delle proprietà. Il GUID GeneralPropertyPage è l'unico elemento nella matrice, pertanto la finestra di dialogo **Pagine delle proprietà** verrà visualizzata una sola pagina.
 
-3. Aggiungere un file di classe denominato *GeneralPropertyPage.cs* al progetto SimpleProject.
+3. Aggiungere un file di classe denominato GeneralPropertyPage.cs al progetto SimpleProject.Add a class file named *GeneralPropertyPage.cs* to the SimpleProject project.
 
-4. Sostituire il contenuto di questo file usando il codice seguente:
+4. Sostituire il contenuto di questo file utilizzando il codice seguente:
 
     ```csharp
     using System;
@@ -452,36 +452,36 @@ La pagina delle proprietà create in questa sezione consente di modificare e sal
     }
     ```
 
-    Il `GeneralPropertyPage` classe espone tre proprietà pubbliche AssemblyName OutputType e RootNamespace. Poiché AssemblyName non dispone di alcun metodo set, viene visualizzato come proprietà di sola lettura. OutputType è costante enumerata, viene visualizzato come elenco a discesa.
+    La `GeneralPropertyPage` classe espone le tre proprietà pubbliche AssemblyName, OutputType e RootNamespace. Poiché AssemblyName non dispone di alcun metodo set, viene visualizzato come proprietà di sola lettura. OutputType è una costante enumerata, pertanto viene visualizzato come elenco a discesa.
 
-    Il `SettingsPage` classe di base fornisce `ProjectMgr` per rendere persistenti le proprietà. Il `BindProperties` Usa metodo `ProjectMgr` per recuperare i valori della proprietà persistente e impostare le proprietà corrispondenti. Il `ApplyChanges` Usa metodo `ProjectMgr` per ottenere i valori delle proprietà e renderli persistenti nel file di progetto. Impostare la proprietà metodo imposta `IsDirty` su true per indicare che le proprietà devono essere resi persistenti. Persistenza si verifica quando si salva il progetto o soluzione.
+    La `SettingsPage` classe `ProjectMgr` base fornisce per rendere persistenti le proprietà. Il `BindProperties` metodo `ProjectMgr` utilizza per recuperare i valori delle proprietà persistenti e impostare le proprietà corrispondenti. Il `ApplyChanges` metodo `ProjectMgr` utilizza per ottenere i valori delle proprietà e persisterli nel file di progetto. Il metodo set `IsDirty` di proprietà imposta su true per indicare che le proprietà devono essere rese persistenti. La persistenza si verifica quando si salva il progetto o la soluzione.
 
-5. Ricompilare la soluzione SimpleProject e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato.
+5. Ricompilare la soluzione SimpleProject e avviare il debug. Verrà visualizzata l'istanza sperimentale.
 
-6. Nell'istanza sperimentale, creare una nuova applicazione SimpleProject.
+6. Nell'istanza sperimentale, creare una nuova applicazione SimpleProject.In the experimental instance, create a new SimpleProject Application.
 
-7. Visual Studio chiama la factory di progetto per creare un progetto usando il modello di Visual Studio. Il nuovo *Program.cs* file viene aperto nell'editor del codice.
+7. Visual Studio chiama la factory del progetto per creare un progetto usando il modello di Visual Studio.Visual Studio calls your project factory to create a project by using the Visual Studio template. Il nuovo *file Program.cs* viene aperto nell'editor di codice.
 
-8. Fare clic sul nodo del progetto in **Esplora soluzioni**, quindi fare clic su **proprietà**. Verrà visualizzata la finestra di dialogo **Pagine delle proprietà**.
+8. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, quindi **scegliere Proprietà**. Viene visualizzata la finestra di dialogo **Pagine delle proprietà**.
 
     ![Pagina delle proprietà progetto semplice](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")
 
-## <a name="test-the-project-property-page"></a>Pagina delle proprietà del progetto di test
-A questo punto è possibile verificare se è possibile modificare e modificare i valori delle proprietà.
+## <a name="test-the-project-property-page"></a>Testare la pagina delle proprietà del progettoTest the project property page
+È ora possibile verificare se è possibile modificare e modificare i valori delle proprietà.
 
-1. Nel **pagine delle proprietà MyConsoleApplication** della finestra di dialogo Modifica il **DefaultNamespace** a **MyApplication**.
+1. Nella finestra di dialogo **Pagine delle proprietà MyConsoleApplication** modificare **DefaultNamespace** in **MyApplication**.
 
-2. Selezionare il **OutputType** proprietà e quindi selezionare **libreria di classi**.
+2. Selezionare la proprietà **OutputType** , quindi scegliere **Libreria di classi**.
 
-3. Fare clic su **Apply**, quindi fare clic su **OK**.
+3. Fare clic su **Applica** e quindi su **OK**.
 
-4. Riaprire il **pagine delle proprietà** dialogo casella e verificare che le modifiche sono state rese persistenti.
+4. Riaprire la finestra di dialogo **Pagine delle proprietà** e verificare che le modifiche siano state rese persistenti.
 
 5. Chiudere l'istanza sperimentale di Visual Studio.
 
 6. Riaprire l'istanza sperimentale.
 
-7. Riaprire il **pagine delle proprietà** dialogo casella e verificare che le modifiche sono state rese persistenti.
+7. Riaprire la finestra di dialogo **Pagine delle proprietà** e verificare che le modifiche siano state rese persistenti.
 
 8. Chiudere l'istanza sperimentale di Visual Studio.
     ![Chiudere l'istanza sperimentale](../extensibility/media/simpproj2_proppage2.png "SimpProj2_PropPage2")

@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON | Microsoft Docs
+title: BP_UNBOUND_REASON . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350563"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737780"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-Indica il motivo che è stato dissociato un punto di interruzione.
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
+Indica il motivo per cui un punto di interruzione non è stato associato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,13 +54,13 @@ Il motivo è sconosciuto.
 Il codice che contiene il punto di interruzione è stato scaricato.
 
 `BPUR_BREAKPOINT_REBIND`\
-Il punto di interruzione è stato riassociato a un percorso diverso. Ciò può verificarsi dopo la modifica e continuare le operazioni quando si sposta il punto di interruzione o quando il punto di interruzione è associata a un file con un percorso che non è più valido.
+Il punto di interruzione è stato riassociato in una posizione diversa. Ciò può verificarsi dopo le operazioni di modifica e continuazione quando si sposta il punto di interruzione o quando il punto di interruzione è associato a un file con un percorso che non è più valido.
 
 `BPUR_ BREAKPOINT_ERROR`\
-Il punto di interruzione viene considerato in errore dopo l'associazione. In questo caso i punti di interruzione gestite le cui condizioni non sono più valide.
+Il punto di interruzione viene determinato come in errore dopo l'associazione. Ciò accade ai punti di interruzione gestiti le cui condizioni non sono più valide.
 
-## <a name="remarks"></a>Note
-Restituito dal [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) (metodo).
+## <a name="remarks"></a>Osservazioni
+Restituito dal metodo [GetReason.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

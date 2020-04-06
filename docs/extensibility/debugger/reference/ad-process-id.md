@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID | Microsoft Docs
+title: AD_PROCESS_ID . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - AD_PROCESS_ID union
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1893b78063e045f341af246fc0ef2c0f2ad1538e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351418"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738161"
 ---
-# <a name="adprocessid"></a>AD_PROCESS_ID
-Specifica l'ID di processo che può essere un ID di sistema o un GUID.
+# <a name="ad_process_id"></a>AD_PROCESS_ID
+Specifica l'ID processo, che può essere un ID di sistema o un GUID.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,18 +49,18 @@ public struct AD_PROCESS_ID {
 
 ## <a name="members"></a>Membri
 `ProcessIdType`\
-Un valore compreso il [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumerazione che specifica come interpretare il `ProcessId` unione (o, per il codice gestito, il membro della struttura da accedere).
+Valore dell'enumerazione [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) che specifica `ProcessId` come interpretare l'unione (o, per il codice gestito, a quale membro della struttura accedere).
 
 `dwProcessId`\
-ID del processo come un valore dal sistema.
+ID processo come valore dal sistema.
 
 `guidProcessId`\
-ID del processo sotto forma di GUID.
+ID del processo come GUID.
 
 dwUnused Padding.
 
-## <a name="remarks"></a>Note
-Questa struttura viene passata ai metodi seguenti:
+## <a name="remarks"></a>Osservazioni
+Questa struttura viene passata ai seguenti metodi:
 
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
 
@@ -70,7 +70,7 @@ Questa struttura viene passata ai metodi seguenti:
 
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 
-E viene restituito uno dei metodi seguenti:
+E viene restituito dai seguenti metodi:
 
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 

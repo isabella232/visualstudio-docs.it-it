@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS | Microsoft Docs
+title: proprietà BP_FLAGS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31f5153c3a2d0b55829a7743840fe8a791f023d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319216"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738066"
 ---
-# <a name="bpflags"></a>BP_FLAGS
-Fornisce flag opzionale che può essere usato per specificare informazioni aggiuntive durante l'impostazione di un punto di interruzione.
+# <a name="bp_flags"></a>BP_FLAGS
+Fornisce flag facoltativi che possono essere utilizzati per specificare informazioni aggiuntive durante l'impostazione di un punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,18 +46,18 @@ public enum enum_BP_FLAGS {
 
 ## <a name="fields"></a>Campi
 `BP_FLAG_NONE`\
-Non specifica alcun flag per il punto di interruzione.
+Non specifica alcun flag del punto di interruzione.
 
 `BP_FLAG_MAP_DOCPOSITION`\
-Specifica che il motore di debug (DE) deve eseguire il mapping del punto di interruzione usando la posizione del documento. Ciò si applica solo ai punti di interruzione impostati nei file di origine orientata ai servizi script, ad esempio le pagine ASP (Active Server).
+Specifica che il motore di debug (DE) deve eseguire il mapping del punto di interruzione utilizzando la posizione del documento. Ciò è applicabile solo ai punti di interruzione impostati nei file di origine orientati agli script, ad esempio ASP (Active Server Pages).
 
 `BP_FLAG_DONT_STOP`\
-Specifica che il punto di interruzione deve essere elaborato dal motore di debug, ma che il motore di debug in definitiva non deve arrestare presenti (vale a dire, un' [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) oggetto dell'evento non deve essere inviato). Questo flag è progettato per essere usato principalmente con i punti di analisi.
+Specifica che il punto di interruzione deve essere elaborato dal motore di debug, ma che il motore di debug non deve infine arrestarsi in tale posizione, ovvero non deve essere inviato un oggetto evento [IDebugBreakpointEvent2.](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Questo flag è progettato per essere utilizzato principalmente con i punti di traccia.
 
-## <a name="remarks"></a>Note
-Utilizzato per il `dwFlags` membro della [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.
+## <a name="remarks"></a>Osservazioni
+Utilizzato per `dwFlags` il membro delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-Questi valori possono essere combinati con un bit per bit `OR`.
+Questi valori possono essere combinati `OR`con un oggetto .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

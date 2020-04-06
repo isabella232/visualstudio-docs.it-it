@@ -1,5 +1,5 @@
 ---
-title: IDebugEvent2 | Microsoft Docs
+title: Proprietà IDebugEvent2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2 interface
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87184481c5d01e74d284b175078b67f6f2612d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6341f8003b962a7f45420b076b23623ebdaf861
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310603"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729906"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
-Questa interfaccia viene utilizzata per comunicare informazioni di debug critiche, ad esempio l'interruzione in corrispondenza di un punto di interruzione sia informazioni non critiche, ad esempio un messaggio di debug.
+Questa interfaccia viene utilizzata per comunicare sia informazioni di debug critiche, ad esempio l'arresto in corrispondenza di un punto di interruzione, sia informazioni non critiche, ad esempio un messaggio di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,20 +29,20 @@ IDebugEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) e il fornitore di porte personalizzato implementare questa interfaccia nello stesso oggetto come tutte le altre interfacce di eventi.
+ Il motore di debug (DE) e il fornitore di porta personalizzato implementano questa interfaccia sullo stesso oggetto di tutte le altre interfacce di eventi.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Usando l'interfaccia argomento ID (IID) assegnato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) o [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md), gestore di sessione di debug (SDM) chiama [QueryInterface](/cpp/atl/queryinterface) nel `IDebugEvent2` interfaccia per ottenere l'interfaccia di eventi appropriato.
+ Utilizzando l'argomento ID di interfaccia (IID) fornito a [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) o [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md), il gestore di sessione di debug (SDM) chiama [QueryInterface](/cpp/atl/queryinterface) sull'interfaccia `IDebugEvent2` per ottenere l'interfaccia eventi appropriata.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IDebugEvent2`.
+ Nella tabella seguente vengono `IDebugEvent2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Ottiene gli attributi per questo evento di debug.|
 
-## <a name="remarks"></a>Note
- Interfacce dell'evento più specifico, ad esempio [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), non derivano dall'interfaccia IDebugEvent2 ma vengono invece implementati come un'interfaccia separata sullo stesso oggetto come `IDebugEvent2`.
+## <a name="remarks"></a>Osservazioni
+ Le interfacce eventi più specifiche, ad esempio [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), non derivano dall'interfaccia IDebugEvent2, `IDebugEvent2`ma vengono invece implementate come un'interfaccia separata sullo stesso oggetto di .
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

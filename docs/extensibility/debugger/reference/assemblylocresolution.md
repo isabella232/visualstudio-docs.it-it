@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
+title: ASSEMBLYLOCRESOLUTION . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a229fc7f0a59f8b5ca5d2d71a6d8bf0a01f76b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327375"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738145"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Specifica un assembly in cui si trova.
+Specifica dove si trova un assieme.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,21 +48,21 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 
 ## <a name="fields"></a>Campi
 `ALR_NAME`\
-Assembly si trova nello spazio dei nomi corrente.
+L'assembly si trova nello spazio dei nomi corrente.
 
 `ALR_USERDIR`\
-Assembly si trova in una directory dell'utente.
+L'assembly si trova in una directory utente.
 
 `ALR_SHAREDDIR`\
-Assembly si trova nella directory condivisa.
+L'assembly si trova nella directory condivisa.
 
 `ALR_REMOTEDIR`\
-Assembly si trova in una directory remota.
+L'assembly si trova in una directory remota.
 
-## <a name="remarks"></a>Note
-Questi valori vengono restituiti per il [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) metodi.
+## <a name="remarks"></a>Osservazioni
+Questi valori vengono restituiti dai metodi [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData.](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
 
-Questi valori possono essere combinati con i `OR` operazione.
+Questi valori possono essere `OR` combinati con l'operazione.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

@@ -1,5 +1,5 @@
 ---
-title: EncUnavailableReason | Microsoft Docs
+title: Proprietà EncUnavailableReason . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7db94a181d87791edb242d69b461f90c42a5e080
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318149"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737164"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!` Rappresenta i motivi che **modifica e continuazione** non è disponibile.
+`This is for internal use only!`Rappresenta i motivi per cui **Modifica e continuazione** non è disponibile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,13 +54,13 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>Campi
 `ENCUN_NONE`\
-Nessun motivo specifico per cui modifica e continuazione non è disponibile.
+Nessun motivo specifico per cui Modifica e continuazione non è disponibile.
 
 `ENCUN_INTEROP`\
-Modifica e continuazione non è disponibile durante una chiamata di interoperabilità.
+Modifica e continuazione non è disponibile durante una chiamata InterOp.
 
 `ENCUN_SQLCLR`\
-Modifica e continuazione non è disponibile durante una chiamata di procedura SQL che usa Common Language Runtime (CLR).
+Modifica e continuazione non è disponibile durante una chiamata di procedura SQL che utilizza Common Language Runtime (CLR).
 
 `ENCUN_MINIDUMP`\
 Modifica e continuazione non è disponibile durante l'elaborazione di un minidump.
@@ -69,13 +69,13 @@ Modifica e continuazione non è disponibile durante l'elaborazione di un minidum
 Modifica e continuazione non è disponibile durante l'elaborazione del codice incorporato.
 
 `ENCUN_ATTACH`\
-Modifica e continuazione non è disponibile perché la sessione è stata collegata a, non viene avviata da, il debugger.
+Modifica e continuazione non è disponibile perché la sessione è stata collegata al debugger non avviata dal debugger.
 
 `ENCUN_WIN64`\
 Modifica e continuazione non è disponibile durante l'elaborazione di codice Windows a 64 bit.
 
-## <a name="remarks"></a>Note
-Questa enumerazione è per uso interno solo da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. Il [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) metodi come implementato da un fornitore di porte personalizzato devono sempre restituire `E_NOTIMPL`.
+## <a name="remarks"></a>Osservazioni
+Questa enumerazione è per [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]uso interno solo da parte di . I metodi [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) implementati da `E_NOTIMPL`un fornitore di porte personalizzato devono sempre restituire .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.idl

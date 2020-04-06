@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
+title: DEBUG_CUSTOM_VIEWER . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_CUSTOM_VIEWER structure
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba4af7ef465a4d98f78eccc9f7dce7dd4fa43aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3de9b8f7ef30cffbdd78399dc831060e413ba51b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346190"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737537"
 ---
-# <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-Struttura che identifica un visualizzatore personalizzato o digitare Visualizzatore.
+# <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
+Struttura che identifica un visualizzatore personalizzato o un visualizzatore di tipo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,25 +51,25 @@ public struct DEBUG_CUSTOM_VIEWER {
 
 ## <a name="members"></a>Membri
 `dwID`\
-Un ID per distinguere più visualizzatori o visualizzatori implementati da una `GUID`.
+UN ID per differenziare più visualizzatori o visualizzatori implementati da un file `GUID`.
 
 `bstrMenuName`\
 Il testo che verrà visualizzato nel menu a discesa.
 
 `bstrDescription`\
-Descrizione del visualizzatore personalizzato o Visualizzatore di tipi (deve essere un valore null se non utilizzato).
+Una descrizione del visualizzatore personalizzato o del visualizzatore di tipo (deve essere un valore null se non viene utilizzato).
 
 `guidLang`\
-Lingua dell'analizzatore di espressioni che fornisce.
+Linguaggio dell'analizzatore di espressioni fornito.
 
 `guidVendor`\
-Fornitore dell'analizzatore di espressioni che fornisce.
+Fornitore dell'analizzatore di espressioni fornito.
 
 `bstrMetric`\
-Metrica in base alle quali il visualizzatore personalizzato o Visualizzatore di tipi `CLSID` viene archiviato.
+Metrica in cui è archiviato il visualizzatore personalizzato o il visualizzatore `CLSID` di tipo.
 
-## <a name="remarks"></a>Note
-Viene restituito da una chiamata a un elenco di questa struttura i [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) metodo (e, di conseguenza, il [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) (metodo)).
+## <a name="remarks"></a>Osservazioni
+Un elenco di questa struttura viene restituito da una chiamata al [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) metodo (e, per estensione, il [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) metodo).
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

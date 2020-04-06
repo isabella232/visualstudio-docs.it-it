@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetThis | Microsoft Docs
+title: IDebugMethodField::GetThis Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetThis method
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 426fc0c74b44b1f137752814f9b6aaeff150baa8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b29252d1586d039084ec1d21f1fc4967aea68baf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324059"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727173"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
-Ottiene il `this` (`Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) puntatore dell'oggetto che contiene il metodo.
+Ottiene `this` il`Me` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]puntatore in ( in ) dell'oggetto contenente il metodo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetThis(
 
 ## <a name="parameters"></a>Parametri
 `ppClass`\
-[out] Restituisce un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) oggetto che rappresenta il puntatore "this".
+[fuori] Restituisce un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) oggetto che rappresenta il puntatore "this".
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- Linguaggi orientati, prevede in genere un puntatore implicito per la creazione dell'istanza corrente di una classe. Questo è noto come `this` in c# o C++ sia come `Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].
+## <a name="remarks"></a>Osservazioni
+ Nei linguaggi orientati agli oggetti, è in genere un puntatore implicito alla creazione di istanze corrente di una classe. Questa operazione `this` è nota come in `Me` C, C, e come in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

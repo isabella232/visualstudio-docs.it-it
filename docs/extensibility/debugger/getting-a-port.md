@@ -1,37 +1,37 @@
 ---
-title: Recupero di una porta | Microsoft Docs
+title: Ottenere una porta Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ports, getting
 - debugging [Debugging SDK], ports
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a57fc69f2ff5b49f1ad4e5449daddda5ff764d8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353786"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738639"
 ---
-# <a name="get-a-port"></a>Ottenere una porta
-Una porta rappresenta una connessione a un computer in cui i processi in esecuzione. Tale computer potrebbe essere il computer locale o in un computer remoto (che potrebbe eventualmente essere con sistema operativo non basate su Windows, vedere [porte](../../extensibility/debugger/ports.md) per altre informazioni).
+# <a name="get-a-port"></a>Ottenere una portaGet a port
+Una porta rappresenta una connessione a un computer in cui sono in esecuzione processi. Tale computer potrebbe essere il computer locale o un computer remoto (che potrebbe essere in esecuzione un sistema operativo non basato su Windows; vedere [Porte](../../extensibility/debugger/ports.md) per ulteriori informazioni).
 
-Una porta è rappresentata dal [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaccia. Viene utilizzato per ottenere informazioni sui processi in esecuzione nel computer che la porta è connesso.
+Una porta è rappresentata dal [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaccia. Viene utilizzato per ottenere informazioni sui processi in esecuzione sulla macchina a cui è collegata la porta.
 
-Un motore di debug deve avere accesso a una porta per poter registrare i nodi di programma con la porta e per soddisfare le richieste di informazioni sul processo. Ad esempio, se il motore di debug implementa il [IDebugProgramProvider2](../../extensibility/debugger/reference/idebugprogramprovider2.md) dell'interfaccia, l'implementazione per il [GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metodo può chiedere la porta per il processo necessario informazioni da restituire.
+Un motore di debug deve accedere a una porta per registrare i nodi di programma con la porta e soddisfare le richieste di informazioni sul processo. Ad esempio, se il motore di debug implementa il [IDebugProgramProvider2](../../extensibility/debugger/reference/idebugprogramprovider2.md) interfaccia, l'implementazione per il [GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metodo potrebbe richiedere la porta per le informazioni sul processo necessarie da restituire.
 
-Visual Studio fornisce la porta necessaria per il motore di debug e ottiene questa porta da un fornitore di porte. Se un programma è collegato a (all'interno del debugger o a causa di un'eccezione viene generata, che attiva la finestra di dialogo [JIT] Just-in-Time), l'utente ha la scelta dei trasporti (un altro nome per un fornitore di porte) da usare. In caso contrario, se l'utente avvia il programma all'interno del debugger, il sistema di progetto specifica il fornitore della porta da usare. In entrambi i casi Visual Studio crea il fornitore della porta, rappresentato da un [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) dell'interfaccia e richiede una nuova porta chiamando [Aggiungi porta](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) con un [ IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) interfaccia. Questa porta viene quindi passata al motore di debug in un form o in un altro.
+Visual Studio fornisce la porta necessaria al motore di debug e ottiene questa porta da un fornitore di porta. Se un programma è collegato (dall'interno del debugger o a causa di un'eccezione è stata generata, che attiva la finestra di dialogo Just-in-Time [JIT]), all'utente viene data la scelta del trasporto (un altro nome per un fornitore di porta) da utilizzare. In caso contrario, se l'utente avvia il programma dall'interno del debugger, il sistema del progetto specifica il fornitore della porta da utilizzare. In entrambi gli eventi, Visual Studio crea un'istanza del fornitore della porta, rappresentato da un [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfaccia e richiede una nuova porta chiamando [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) con un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) interfaccia. Questa porta viene quindi passata al motore di debug in un form o in un altro.
 
 ## <a name="example"></a>Esempio
-Questo frammento di codice viene illustrato come utilizzare la porta fornita da [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) per registrare un nodo programma [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Parametri non direttamente correlati a questo concetto sono stati omessi per maggiore chiarezza.
+In questo frammento di codice viene illustrato come utilizzare la porta fornita a [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) per registrare un nodo di programma in [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). I parametri non direttamente correlati a questo concetto sono stati omessi per chiarezza.
 
 > [!NOTE]
-> Questo esempio Usa la porta per avviare e riprendere il processo e si presuppone che il [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) interfaccia è implementata sulla porta. Si tratta in alcun modo l'unico modo per eseguire queste attività ed è possibile che la porta non ancora coinvolto diverso da disporre del programma [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) assegnato a esso.
+> In questo esempio viene utilizzata la porta per avviare e riprendere il processo e si presuppone che il [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) interfaccia viene implementata sulla porta. Questo non è affatto l'unico modo per eseguire queste attività ed è possibile che la porta non sia nemmeno coinvolta se non avere [il programma IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) dato ad esso.
 
 ```cpp
 // This is an IDebugEngineLaunch2 method.
@@ -98,6 +98,6 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 
 ## <a name="see-also"></a>Vedere anche
 - [Registrazione del programma](../../extensibility/debugger/registering-the-program.md)
-- [Abilitazione di un programma da sottoporre a debug](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
-- [Fornitori di porte](../../extensibility/debugger/port-suppliers.md)
-- [Porte](../../extensibility/debugger/ports.md)
+- [Abilitazione del debug di un programma](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Fornitori portuali](../../extensibility/debugger/port-suppliers.md)
+- [Ports](../../extensibility/debugger/ports.md)

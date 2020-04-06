@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetRank | Microsoft Docs
+title: Proprietà IDebugArrayObject::GetRank . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetRank method
 ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a733baf1be2e5a249c214547b31465bb2464ed6
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: c645683cf1f842afdecba3c3dee8942a3fd6971a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "66351775"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736184"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
-Ottiene il rango della matrice, vale a dire il numero di dimensioni.
+Ottiene il rango della matrice, ovvero il numero di dimensioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetRank(
 
 ## <a name="parameters"></a>Parametri
 `pdwRank`\
-[out] Restituisce il rango.
+[fuori] Restituisce il rango.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- Usare la [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) metodo per recuperare le dimensioni di ciascuna dimensione dell'oggetto matrice.
+## <a name="remarks"></a>Osservazioni
+ Utilizzare il [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) metodo per recuperare la dimensione di ogni dimensione dell'oggetto matrice.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

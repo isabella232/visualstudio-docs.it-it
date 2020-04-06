@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace (elemento) (modelli di Visual Studio)
+title: Elemento CreateInPlace (modelli di Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da14da9606c2fcd84f053aff30139eec5751c673
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341785"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739655"
 ---
-# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace (elemento) (modelli di Visual Studio)
-Specifica se creare il progetto ed eseguire la sostituzione del parametro nella posizione specificata, o eseguire la sostituzione del parametro in una posizione temporanea e quindi salvare il progetto nel percorso specificato.
+# <a name="createinplace-element-visual-studio-templates"></a>Elemento CreateInPlace (modelli di Visual Studio)
+Specifica se creare il progetto ed eseguire la sostituzione dei parametri nel percorso specificato oppure eseguire la sostituzione dei parametri in un percorso temporaneo e quindi salvare il progetto nel percorso specificato.
 
- \<VSTemplate> \<TemplateData> \<CreateInPlace>
+ \<Template> \<TemplateData \<> CreateInPlace>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,10 +36,10 @@ Specifica se creare il progetto ed eseguire la sostituzione del parametro nella 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -50,9 +50,9 @@ Specifica se creare il progetto ed eseguire la sostituzione del parametro nella 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Questo testo deve essere `true` o `false`. Se `true`, viene creato il progetto e la sostituzione dei parametri viene eseguita nella posizione specificata nel **nuovo progetto** nella finestra di dialogo. Se `false`, la sostituzione dei parametri viene eseguita in un percorso temporaneo e il progetto viene quindi copiato nel percorso specificato.
+ Questo testo deve essere `true` o `false`. Se `true`, il progetto viene creato e la sostituzione dei parametri viene eseguita nel percorso specificato nella finestra di dialogo **Nuovo progetto.** Se `false`, la sostituzione dei parametri viene eseguita in un percorso temporaneo e il progetto viene quindi copiato nel percorso specificato.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  `CreateInPlace` è un elemento facoltativo. Il valore predefinito è `true`.
 
 ## <a name="example"></a>Esempio
@@ -85,4 +85,4 @@ Specifica se creare il progetto ed eseguire la sostituzione del parametro nella 
 
 ## <a name="see-also"></a>Vedere anche
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
-- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)

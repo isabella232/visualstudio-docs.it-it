@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetEnclosingClass | Microsoft Docs
+title: Proprietà IDebugClassField::GetEnclosingClass . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetEnclosingClass method
 ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6927a63241e2f2794fb5c70945962e00a1676431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329493"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734401"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-Ottiene la classe che comprende questa classe.
+Ottiene la classe che racchiude questa classe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetEnclosingClass(
 
 ## <a name="parameters"></a>Parametri
 `ppClassField`\
-[out] Restituisce un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) classe oggetto che rappresenta il tipo di inclusione. Restituisce un valore null se nessuna classe che lo contiene.
+[fuori] Restituisce un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) oggetto che rappresenta la classe che lo contiene. Restituisce un valore null se non è presente alcuna classe di inclusione.
 
 ## <a name="return-value"></a>Valore restituito
-Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
-Se la classe rappresentata da questo [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) oggetto è una classe annidata, il `ppClassField` parametro restituisce un `IDebugClassField` classe oggetto che rappresenta il tipo di inclusione. Ad esempio, Data questa definizione di classe:
+## <a name="remarks"></a>Osservazioni
+Se la classe rappresentata da questo [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) `ppClassField` oggetto è `IDebugClassField` una classe annidata, il parametro restituisce un oggetto che rappresenta la classe che lo contiene. Ad esempio, data questa definizione di classe:For example, given this class definition:
 
 ```
 class RootClass {
@@ -55,7 +55,7 @@ class RootClass {
 };
 ```
 
-Chiama il `GetEnclosingClass` metodo sul `IDebugClassField` oggetto che rappresenta il `NestedClass` classe restituisce un' `IDebugClassField` oggetto che rappresenta la classe `RootClass`.
+La `GetEnclosingClass` chiamata del `IDebugClassField` metodo sull'oggetto che rappresenta la `NestedClass` classe restituisce un `IDebugClassField` oggetto che rappresenta la classe `RootClass`.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

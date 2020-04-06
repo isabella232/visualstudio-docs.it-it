@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dereference | Microsoft Docs
+title: Proprietà IDebugPointerObject::Dereference . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::Dereference method
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 381c6f392cccb398497204cc5772c5f9a00fd5b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331651"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725569"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
-Ottiene l'oggetto puntato.
+Ottiene l'oggetto a cui punta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ int Dereference(
 
 ## <a name="parameters"></a>Parametri
 `dwIndex`\
-[in] Un offset di byte semplici dall'inizio dell'oggetto puntato.
+[in] Offset di byte semplice dall'inizio dell'oggetto a cui punta.
 
 `ppObject`\
-[out] Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) dell'oggetto che rappresenta l'oggetto a cui, oltre a eseguire l'offset, se presente.
+[fuori] Restituisce un [Oggetto IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto a cui punta, più l'offset, se presente.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se questo oggetto non fa riferimento a un altro oggetto.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se questo oggetto non punta a un altro oggetto.
 
-## <a name="remarks"></a>Note
- L'oggetto a cui può essere primitivo o un tipo più complesso, ad esempio una classe o struttura.
+## <a name="remarks"></a>Osservazioni
+ L'oggetto a cui punta può essere un tipo primitivo o più complesso, ad esempio una classe o una struttura.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

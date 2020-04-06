@@ -1,5 +1,5 @@
 ---
-title: Scelta tra pacchetti VSPackage condivisi e con controllo delle versioni | Microsoft Docs
+title: Scelta tra package VS condivisi e con versione Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,59 +7,59 @@ helpviewer_keywords:
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747783"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739881"
 ---
-# <a name="choose-between-shared-and-versioned-vspackages"></a>Scegliere tra pacchetti VSPackage condivisi e con controllo delle versioni
-Versioni diverse di Visual Studio possono coesistere nello stesso computer. I pacchetti VSPackage possono supportare qualsiasi combinazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versioni.
+# <a name="choose-between-shared-and-versioned-vspackages"></a>Scegliere tra package VS condivisi e con controllo delle versioni
+Versioni diverse di Visual Studio possono coesistere nello stesso computer. VSPackage possono supportare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qualsiasi combinazione di versioni.
 
- È possibile abilitare le installazioni side-by-side di pacchetti VSPackage tramite una delle due strategie, la strategia condivisa o la strategia di controllo delle versioni. Entrambi contenere la presenza di più versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e associate le versioni di .NET Framework.
+ È possibile abilitare le installazioni side-by-side di VSPackage tramite una delle due strategie, la strategia condivisa o la strategia con controllo delle versioni. Entrambi supportano la presenza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di più versioni di e versioni associate di .NET Framework.
 
- Nella strategia di condiviso, un pacchetto VSPackage è registrato per l'uso in più versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Nella strategia di controllo delle versioni, sono installate più DLL di VSPackage, uno per ogni versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supportate.
+ Nella strategia condivisa, un VSPackage viene registrato [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]per l'utilizzo in più versioni di . Nella strategia con controllo delle versioni, vengono installate più [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DLL VSPackage, una per ogni versione di supporto.
 
-## <a name="shared-vspackages"></a>Pacchetti VSPackage condivisi
- Usando un pacchetto VSPackage condiviso è appropriato quando si usa il pacchetto VSPackage stesso in più versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per implementare un package VS condivisi, è necessario eseguire i passaggi seguenti:
+## <a name="shared-vspackages"></a>VSPackage condivisi
+ L'utilizzo di un pacchetto VSPackage condiviso è appropriato [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]quando si utilizza lo stesso VSPackage in più versioni di . Per implementare un VSPackage condiviso, è necessario eseguire la procedura seguente:To implement a shared VSPackage, you must take the following steps:
 
-- Rendere compatibili con più versioni del pacchetto VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Due modalità di esecuzione sono pertanto disponibili:
+- Rendere il pacchetto VSPackage compatibile con più versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sono disponibili due modi per farlo:
 
-  - Limitare il pacchetto VSPackage per usare solo le funzionalità dalla versione meno recente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supportate.
+  - Limitare il pacchetto VSPackage per l'utilizzo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solo delle funzionalità della versione meno recente di tale supporto.
 
-  - Programmare il pacchetto VSPackage per adattarsi alla versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in cui è in esecuzione. Quindi, se le query per i servizi più recenti hanno esito negativo, il pacchetto VSPackage può offrire altri servizi che sono supportati nelle versioni precedenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+  - Programmare il pacchetto VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per adattarsi alla versione di in cui è in esecuzione. Quindi, se le query per i servizi più recenti hanno esito [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]negativo, il pacchetto VSPackage può offrire altri servizi supportati nelle versioni precedenti di .
 
-- Registrare il VSPackage in modo appropriato. Per altre informazioni, vedere [registrazione di pacchetti VSPackage](../extensibility/internals/vspackage-registration.md) e [registrazione di pacchetti VSPackage gestiti](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
+- Registrare il pacchetto VSPackage in modo appropriato. Per ulteriori informazioni, vedere [registrazione VSPackage](../extensibility/internals/vspackage-registration.md) e [registrazione VSPackage gestita](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
 
-- Registrare le estensioni di file in modo appropriato. Per altre informazioni, vedere [la registrazione di estensioni di file per le distribuzioni side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
+- Registrare le estensioni dei file in modo appropriato. Per ulteriori informazioni, vedere Registrazione delle estensioni di [file per le distribuzioni side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
-- Creare un programma di installazione che consente di distribuire il pacchetto VSPackage per le versioni appropriate di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [installazione di pacchetti VSPackage con Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) e [gestione dei componenti](../extensibility/internals/component-management.md).
+- Creare un programma di installazione che distribuisce [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]il pacchetto VSPackage per le versioni appropriate di . Per ulteriori informazioni, vedere [Installazione di pacchetti VSPackage con Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) e gestione dei [componenti](../extensibility/internals/component-management.md).
 
-- Risolvere il problema dei conflitti di registrazione. Per altre informazioni, vedere [registrazione di pacchetti VSPackage](../extensibility/internals/vspackage-registration.md).
+- Risolvere il problema delle collisioni di registrazione. Per ulteriori informazioni, vedere [Registrazione VSPackage](../extensibility/internals/vspackage-registration.md).
 
-- Assicurarsi che i file sia condivisi sia con controllo delle versioni rispettino per consentire l'installazione sicura e la rimozione di più versioni di conteggio dei riferimenti. Per altre informazioni, vedere [gestione dei componenti](../extensibility/internals/component-management.md).
+- Assicurarsi che i file condivisi e con controllo delle versioni rispettino il conteggio dei riferimenti per consentire l'installazione e la rimozione sicure di più versioni. Per ulteriori informazioni, vedere [Gestione dei componenti](../extensibility/internals/component-management.md).
 
-## <a name="versioned-vspackages"></a>Pacchetti VSPackage con controllo delle versioni
- Sotto la strategia di VSPackage con controllo delle versioni, si crea un pacchetto VSPackage per ogni versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supportate. Questa operazione è appropriata se si prevede di sfruttare i vantaggi dei servizi forniti dalle versioni più recenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], perché ogni pacchetto VSPackage può evolversi senza influire sulle altre. Tuttavia, la strategia di creazione di più file binari, da una singola codebase o da più basi di codice indipendenti, con controllo delle versioni può comportare ulteriori attività iniziali di sviluppo più la strategia condivisa. Inoltre, operazioni di configurazione aggiuntivi potrebbero essere necessari perché è necessario creare un programma di installazione separato per ogni versione né di un unico programma di installazione che rileva le versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che siano installati e che supporta il pacchetto VSPackage.
+## <a name="versioned-vspackages"></a>Pacchetti VS con versione
+ Sotto la strategia VSPackage con controllo delle versioni, si crea un VSPackage per ogni versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supporto. Questa operazione è appropriata quando si prevede di sfruttare i servizi forniti dalle versioni successive di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], perché ogni VSPackage può evolvere senza influire sugli altri. Tuttavia, la strategia con controllo delle versioni di creazione di più file binari, da una singola base di codice o da più basi di codice indipendenti, potrebbe comportare un maggiore sviluppo iniziale rispetto alla strategia condivisa. Inoltre, potrebbe essere necessario ulteriore lavoro di installazione perché è necessario creare un'installazione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] separata per ogni versione o una singola installazione che rileva le versioni di che sono installate e che supporta il pacchetto VSPackage.
 
 ## <a name="binary-compatibility"></a>Compatibilità binaria
- In generale, la compatibilità binaria consente codice nativo i pacchetti VSPackage sviluppati con versioni precedenti di Visual Studio per l'esecuzione nelle versioni più recenti di Visual Studio. Tuttavia, esistono tre importanti eccezioni:
+ In genere, la compatibilità binaria consente agli VSPackage in codice nativo sviluppati con versioni precedenti di Visual Studio di essere eseguiti nelle versioni successive di Visual Studio. Tuttavia, ci sono tre importanti eccezioni:
 
-- Se il pacchetto VSPackage si basa su una particolare versione di common language runtime, quindi è necessario determinare in quale versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è in esecuzione.
+- Se il pacchetto VSPackage si basa su una particolare versione di Common [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Language Runtime, è necessario determinare in quale versione è in esecuzione.
 
-- Un pacchetto VSPackage potrebbe avere una dipendenza su una funzionalità specifica di un altro VSPackage o di un altro prodotto. Di conseguenza, il pacchetto VSPackage può essere eseguito solo in cui la dipendenza viene soddisfatta.
+- Un pacchetto VSPackage potrebbe avere una dipendenza da una funzionalità specifica di un altro VSPackage o un altro prodotto. Di conseguenza, il pacchetto VSPackage può essere eseguito solo dove viene soddisfatta la dipendenza.
 
-- Un pacchetto VSPackage può essere influenzato da una correzione di sicurezza in un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] service pack o una versione successiva di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In questi casi, un pacchetto VSPackage sviluppati con una versione precedente del [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] potrebbe non funzionare nelle versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dopo la correzione di sicurezza è stata applicata. Tuttavia, è possibile ricompilare il pacchetto con la versione più recente e anche eseguirlo nelle versioni precedenti.
+- Un pacchetto VSPackage potrebbe essere interessato da una correzione di sicurezza in un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] service pack o una versione successiva di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In questi casi, un pacchetto VSPackage [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] sviluppato con una [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versione precedente del potrebbe non essere eseguito nelle versioni di dopo l'applicazione della correzione di sicurezza. Tuttavia, è possibile ricompilare il pacchetto con la versione successiva e fare in modo che venga eseguito anche nelle versioni precedenti.
 
-  I VSPackage gestiti devono essere creati usando una versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e il [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] che corrisponde alla versione di destinazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+  I package VS gestiti devono [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] essere [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] compilati utilizzando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]una versione di e quelli che corrispondono alla versione di destinazione di .
 
-  Oltre alla pianificazione per la compatibilità binaria per i file binari del pacchetto VSPackage, è anche necessario prendere in considerazione soluzioni e formati di file di progetto. Se il pacchetto VSPackage viene creato un nuovo tipo di progetto, è necessario decidere se può essere eseguito solo una versione o in più versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [aggiornamento di progetti personalizzati](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects).
+  Oltre alla pianificazione per la compatibilità binaria per i file binari VSPackage, è necessario considerare anche i formati di file di soluzione e progetto. Se il pacchetto VSPackage crea un nuovo tipo di progetto, è necessario [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]decidere se può essere eseguito in una sola versione o in più versioni di . Per ulteriori informazioni, consultate [Aggiornamento di progetti personalizzati.](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects)
 
 ## <a name="see-also"></a>Vedere anche
 - [Installazione di pacchetti VSPackage con Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -1,28 +1,28 @@
 ---
-title: Creazione di editor e finestre di progettazione personalizzati | Microsoft Docs
+title: Creazione di editor personalizzati e finestre di progettazione Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a6cb0d70566eaabb2ba37cb209041e03684c958
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: b9f56b82225e1e40782b6753bea03d3c1780f596
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568895"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739483"
 ---
-# <a name="create-custom-editors-and-designers"></a>Creazione di editor e finestre di progettazione personalizzati
+# <a name="create-custom-editors-and-designers"></a>Creare editor e finestre di progettazione personalizzatiCreate custom editors and designers
 
-Visual Studio Integrated Development Environment (IDE) può ospitare tipi diversi di Editor:
+L'ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi tipi di editor:The Visual Studio integrated development environment (IDE) can host different types of editor:
 
-- Editor principale di Visual Studio
+- L'editor principale di Visual Studio
 
 - Editor personalizzati
 
@@ -30,77 +30,77 @@ Visual Studio Integrated Development Environment (IDE) può ospitare tipi divers
 
 - Finestre di progettazione
 
-Le informazioni seguenti consentono di scegliere il tipo di editor necessario.
+Le seguenti informazioni ti aiutano a scegliere il tipo di editor che ti serve.
 
 ## <a name="types-of-editor"></a>Tipi di editor
 
-Per informazioni sull'editor principale di Visual Studio, vedere [estendere l'editor e i servizi di linguaggio](../extensibility/extending-the-editor-and-language-services.md).
+Per informazioni sull'editor principale di Visual Studio, vedere [Estendere l'editor e](../extensibility/extending-the-editor-and-language-services.md)i servizi di linguaggio .
 
 ### <a name="custom-editors"></a>Editor personalizzati
- Un editor personalizzato è uno progettato per funzionare in circostanze specializzate. Ad esempio, è possibile creare un editor la cui funzione è leggere e scrivere dati in un repository specifico, ad esempio un server Microsoft Exchange. Scegliere un editor personalizzato se si desidera un editor che funzioni solo con il tipo di progetto o se si desidera un editor con solo alcuni comandi specifici. Si noti, tuttavia, che gli utenti non saranno in grado di utilizzare un editor personalizzato per modificare i progetti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] standard.
+ Un editor personalizzato è progettato per funzionare in circostanze specializzate. Ad esempio, è possibile creare un editor la cui funzione consiste nel leggere e scrivere dati in un repository specifico, ad esempio un server di Microsoft Exchange. Scegliere un editor personalizzato se si desidera un editor che funziona solo con il tipo di progetto o se si desidera un editor che dispone solo di alcuni comandi specifici. Si noti, tuttavia, che gli utenti non [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] saranno in grado di utilizzare un editor personalizzato per modificare i progetti standard.
 
- Un editor personalizzato può utilizzare una factory dell'editor e aggiungere informazioni sull'editor al registro di sistema. Il tipo di progetto associato all'editor personalizzato può tuttavia creare un'istanza dell'editor personalizzato in altri modi.
+ Un editor personalizzato può utilizzare una factory dell'editor e aggiungere informazioni sull'editor al Registro di sistema. Tuttavia, il tipo di progetto associato all'editor personalizzato può creare un'istanza dell'editor personalizzato in altri modi.
 
  Un editor personalizzato può usare l'attivazione sul posto o l'incorporamento semplificato per implementare una visualizzazione.
 
 ### <a name="external-editors"></a>Editor esterni
- Gli editor esterni sono editor che non sono integrati in Visual Studio, ad esempio Microsoft Word, blocco note o Microsoft FrontPage. È possibile chiamare un editor di questo tipo se, ad esempio, si passa il testo dal pacchetto VSPackage. Gli editor esterni si registrano e possono essere usati all'esterno di Visual Studio. Quando si chiama un editor esterno e può essere incorporato in una finestra host, viene visualizzato in una finestra nell'IDE. In caso contrario, l'IDE crea una finestra separata.
+ Gli editor esterni sono editor non integrati in Visual Studio, ad esempio Microsoft Word, Blocco note o Microsoft FrontPage. You might call such an editor if, for example, you are passing text to it from your VSPackage. Gli editor esterni si registrano e possono essere utilizzati all'esterno di Visual Studio.External editors register themselves and can be used outside Visual Studio. Quando si chiama un editor esterno e può essere incorporato in una finestra host, quindi viene visualizzato in una finestra nell'IDE. In caso contrario, l'IDE crea una finestra separata per esso.
 
- Il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> imposta la priorità del documento tramite l'enumerazione <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>. Se viene specificato il valore `DP_External`, il file può essere aperto da un editor esterno.
+ Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metodo imposta la priorità <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> del documento utilizzando l'enumerazione . Se `DP_External` viene specificato il valore, il file può essere aperto da un editor esterno.
 
-## <a name="editor-design-decisions"></a>Decisioni di progettazione dell'editor
- Le seguenti domande di progettazione consentiranno di scegliere il tipo di editor più adatto all'applicazione:
+## <a name="editor-design-decisions"></a>Decisioni di progettazione dell'editore
+ Le seguenti domande di progettazione ti aiuteranno a scegliere il tipo di editor più adatto alla tua applicazione:
 
-- L'applicazione salverà i dati nei file? Se i dati verranno salvati nei file, saranno in formato personalizzato o standard?
+- L'applicazione salverà i dati in file o no? Se salverà i suoi dati in file, saranno in un formato personalizzato o standard?
 
-   Se si usa un formato di file standard, altri tipi di progetto in aggiunta al progetto saranno in grado di aprire e leggere/scrivere dati in essi contenuti. Se si usa un formato di file personalizzato, tuttavia, solo il tipo di progetto sarà in grado di aprire e leggere/scrivere i dati.
+   Se si utilizza un formato di file standard, altri tipi di progetto oltre al progetto saranno in grado di aprire e leggere/scrivere dati. Se si utilizza un formato di file personalizzato, tuttavia, solo il tipo di progetto sarà in grado di aprire e leggere/scrivere dati.
 
-   Se il progetto usa file, è necessario personalizzare l'editor standard. Se il progetto non usa file, ma usa invece elementi in un database o in un altro repository, è necessario creare un editor personalizzato.
+   Se il progetto utilizza file, è necessario personalizzare l'editor standard. Se il progetto non utilizza file, ma utilizza elementi in un database o in un altro repository, è necessario creare un editor personalizzato.
 
 - L'editor deve ospitare i controlli ActiveX?
 
-   Se l'editor ospita controlli ActiveX, implementare un editor di attivazione sul posto, come descritto nell' [attivazione sul posto](/visualstudio/misc/in-place-activation?view=vs-2015). Se non ospita i controlli ActiveX, usare un editor di incorporamento semplificato o personalizzare l'[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predefinito.
+   Se l'editor ospita controlli ActiveX, implementare un editor di attivazione sul posto, come descritto in [Attivazione sul posto](/visualstudio/misc/in-place-activation?view=vs-2015). Se non ospita controlli ActiveX, utilizzare un editor di incorporamento [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] semplificato o personalizzare l'editor predefinito.
 
-- L'editor supporterà più visualizzazioni? È necessario supportare più visualizzazioni Se si desidera che le visualizzazioni dell'editor siano visibili nello stesso momento dell'editor predefinito.
+- Il tuo editor supporterà più visualizzazioni? È necessario supportare più visualizzazioni se si desidera che le visualizzazioni dell'editor siano visibili contemporaneamente all'editor predefinito.
 
-   Se l'editor deve supportare più visualizzazioni, gli oggetti dati del documento e visualizzazione documento per l'editor devono essere oggetti separati. Per altre informazioni, vedere [supportare più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md).
+   Se l'editor deve supportare più visualizzazioni, i dati del documento e gli oggetti visualizzazione documento per l'editor devono essere oggetti separati. Per ulteriori informazioni, consultate [Supporto di più visualizzazioni documento.](../extensibility/supporting-multiple-document-views.md)
 
-   Se l'editor supporta più visualizzazioni, si prevede di usare l'implementazione del buffer di testo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dell'editor principale (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto) per l'oggetto dati del documento? Ovvero se si desidera supportare la visualizzazione dell'editor side-by-side con l'editor [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core? La possibilità di eseguire questa operazione è la base della finestra di progettazione dei form.
+   Se l'editor supporta più visualizzazioni, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si prevede di utilizzare<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> l'implementazione del buffer di testo (oggetto) dell'editor di base per l'oggetto dati del documento? Vale a dire, si desidera supportare la visualizzazione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dell'editor side-by-side con l'editor di base? La possibilità di eseguire questa operazione è la base della finestra di progettazione dei moduli.
 
-- Se è necessario ospitare un editor esterno, l'editor può essere incorporato all'interno [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?
+- Se è necessario ospitare un editor esterno, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]l'editor può essere incorporato all'interno di ?
 
-   Se può essere incorporata, è necessario creare una finestra host per l'editor esterno, quindi chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> e impostare il valore dell'enumerazione <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> su `DP_External`. Se non è possibile incorporare l'editor, l'IDE creerà automaticamente una finestra separata.
+   Se è possibile incorporarlo, è necessario creare una finestra <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> host per <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> l'editor `DP_External`esterno, quindi chiamare il metodo e impostare il valore di enumerazione su . Se l'editor non può essere incorporato, l'IDE creerà automaticamente una finestra separata per esso.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-[Procedura dettagliata: creare un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md)\
+[Procedura dettagliata: Creare un editor personalizzatoWalkthrough: Create a custom editor](../extensibility/walkthrough-creating-a-custom-editor.md)\
 Viene illustrato come creare un editor personalizzato.
 
-[Procedura dettagliata: aggiungere funzionalità a un editor personalizzato](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+[Procedura dettagliata: Aggiungere funzionalità a un editor personalizzatoWalkthrough: Add features to a custom editor](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
 Viene illustrato come aggiungere funzionalità a un editor personalizzato.
 
 [Inizializzazione della finestra di progettazione e configurazione dei metadati](../extensibility/designer-initialization-and-metadata-configuration.md)\
 Viene illustrato come inizializzare una finestra di progettazione.
 
-[Fornire il supporto per l'annullamento alle finestre di progettazione](../extensibility/supplying-undo-support-to-designers.md)\
-Viene illustrato come fornire supporto di annullamento per le finestre di progettazione.
+[Fornire supporto di annullamento ai progettisti](../extensibility/supplying-undo-support-to-designers.md)\
+Viene illustrato come fornire il supporto di annullamento per le finestre di progettazione.
 
 [Colorazione della sintassi negli editor personalizzati](../extensibility/syntax-coloring-in-custom-editors.md)\
 Viene illustrata la differenza tra la colorazione della sintassi nell'editor principale e negli editor personalizzati.
 
-[Visualizzazione di dati e documenti di documenti in editor personalizzati](../extensibility/document-data-and-document-view-in-custom-editors.md)\
-Viene illustrato come implementare i dati del documento e le visualizzazioni documento negli editor personalizzati.
+[Dati del documento e visualizzazione del documento negli editor personalizzati](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+Viene illustrato come implementare i dati del documento e le visualizzazioni del documento negli editor personalizzati.
 
 ## <a name="related-sections"></a>Sezioni correlate
 
 [Interfacce legacy nell'editor](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)\
-Viene illustrato come accedere all'editor principale per mezzo dell'API legacy.
+Viene illustrato come accedere all'editor principale tramite l'API legacy.
 
-[Sviluppare un servizio di linguaggio legacy](../extensibility/internals/developing-a-legacy-language-service.md)\
+[Sviluppare un servizio di linguaggio legacyDevelop a legacy language service](../extensibility/internals/developing-a-legacy-language-service.md)\
 Viene illustrato come implementare un servizio di linguaggio.
 
-[Estendi altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
-Viene illustrato come creare elementi dell'interfaccia utente che corrispondono al resto del [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+[Estendere altre parti di Visual StudioExtend other parts of Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
+Viene illustrato come creare elementi dell'interfaccia utente che corrispondono al resto di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Vedere anche
 

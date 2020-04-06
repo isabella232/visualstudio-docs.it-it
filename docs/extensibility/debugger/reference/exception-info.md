@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO | Microsoft Docs
+title: EXCEPTION_INFO . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_INFO structure
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c4fc29aee8d14e9c73dcf5665eff3ea611985d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337787"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737024"
 ---
-# <a name="exceptioninfo"></a>EXCEPTION_INFO
-Descrive un'eccezione o errore di run-time generato dal programma in fase di debug.
+# <a name="exception_info"></a>EXCEPTION_INFO
+Viene descritta un'eccezione o un errore di run-time generato dal programma in fase di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,25 +51,25 @@ public struct EXCEPTION_INFO {
 
 ## <a name="members"></a>Membri
 `pProgram`\
-Il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta il programma in cui si è verificata l'eccezione.
+Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta il programma in cui si è verificata l'eccezione.
 
 `bstrProgramName`\
-Il nome del programma in cui si è verificata l'eccezione.
+Nome del programma in cui si è verificata l'eccezione.
 
 `bstrExceptionName`\
-Il nome dell'eccezione.
+Nome dell'eccezione.
 
 `dwCode`\
-Il codice di identificazione per errore eccezione o di run-time.
+Codice di identificazione per l'eccezione o l'errore di run-time.
 
 `dwState`\
-Un valore compreso il [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) enumerazione che definisce lo stato dell'eccezione.
+Valore dell'enumerazione [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) che definisce lo stato dell'eccezione.
 
 `guidType`\
-L'identificatore di lingua GUID, ad esempio `guidLang` o `guidEng`.
+Identificatore della lingua `guidLang` `guidEng`GUID, o .
 
-## <a name="remarks"></a>Note
-Questa struttura viene passata come parametro per il [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) e il [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metodi. Questa struttura viene inoltre passata per il [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) metodo deve essere compilato.
+## <a name="remarks"></a>Osservazioni
+Questa struttura viene passata come parametro per il [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) e [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metodi. Questa struttura viene passata anche al metodo [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) da compilare.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

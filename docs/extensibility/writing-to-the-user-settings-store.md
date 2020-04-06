@@ -1,28 +1,28 @@
 ---
-title: Scrittura nell'archivio impostazioni utente | Microsoft Docs
+title: Scrittura nell'archivio delle impostazioni utente Documenti Microsoft
 ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80b525fe896c59503cac55c9f7cab79a11b481f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2bed721cc084042c3ebe57639af28b7e9f13d206
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647888"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740357"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente
-Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra di dialogo **Strumenti/Opzioni** , finestre proprietà e alcune altre finestre di dialogo. Le estensioni di Visual Studio possono usarle per archiviare piccole quantità di dati. Questa procedura dettagliata illustra come aggiungere il blocco note a Visual Studio come strumento esterno leggendo e scrivendo nell'archivio impostazioni utente.
+Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra di dialogo **Strumenti / Opzioni,** nelle finestre delle proprietà e in alcune altre finestre di dialogo. Le estensioni di Visual Studio possono usarle per archiviare piccole quantità di dati. In questa procedura dettagliata viene illustrato come aggiungere Blocco note a Visual Studio come strumento esterno leggendo e scrivendo nell'archivio delle impostazioni utente.
 
 ## <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente
 
-1. Creare un progetto VSIX denominato UserSettingsStoreExtension e quindi aggiungere un comando personalizzato denominato UserSettingsStoreCommand. Per ulteriori informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Creare un progetto VSIX denominato UserSettingsStoreExtension e quindi aggiungere un comando personalizzato denominato UserSettingsStoreCommand.Create a VSIX project named UserSettingsStoreExtension and then add a custom command named UserSettingsStoreCommand. Per altre informazioni su come creare un comando personalizzato, vedere [Creazione di un'estensione con un comando](../extensibility/creating-an-extension-with-a-menu-command.md) di menuFor more information about how to create a custom command, see Creating an Extension with a Menu Command
 
-2. In UserSettingsStoreCommand.cs aggiungere le direttive using seguenti:
+2. In UserSettingsStoreCommand.cs, aggiungere le direttive using seguenti:In UserSettingsStoreCommand.cs, add the following using directives:
 
     ```csharp
     using System.Collections.Generic;
@@ -40,7 +40,7 @@ Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra d
     }
     ```
 
-4. Verificare ora se il blocco note è già impostato come strumento esterno. È necessario scorrere tutti gli strumenti esterni per determinare se l'impostazione ToolCmd è "blocco note", come indicato di seguito:
+4. Ora scoprire se Blocco note è già impostato come strumento esterno. È necessario scorrere tutti gli strumenti esterni per determinare se l'impostazione ToolCmd è "Notepad", come indicato di seguito:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -64,7 +64,7 @@ Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra d
 
     ```
 
-5. Se il blocco note non è stato impostato come strumento esterno, impostarlo come segue:
+5. Se Blocco note non è stato impostato come strumento esterno, impostarlo come segue:
 
     ```vb
     private void MenuItemCallback(object sender, EventArgs e)
@@ -100,10 +100,10 @@ Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra d
     }
     ```
 
-6. Testare il codice. Tenere presente che aggiunge il blocco note come strumento esterno, quindi è necessario eseguire il rollback del registro di sistema prima di eseguirlo una seconda volta.
+6. Testare il codice. Tenere presente che aggiunge il Blocco note come strumento esterno, pertanto è necessario eseguire il rollback del Registro di sistema prima di eseguirlo una seconda volta.
 
 7. Compilare il codice e avviare il debug.
 
-8. Scegliere **richiama UserSettingsStoreCommand**dal menu **strumenti** . Il blocco note verrà aggiunto al menu **strumenti** .
+8. Scegliere **Richiama UserSettingsStoreCommand**dal menu **Strumenti** . Verrà aggiunto Blocco note al menu **Strumenti.**
 
-9. A questo punto, il blocco note verrà visualizzato nel menu Strumenti/Opzioni e facendo clic su **blocco note** verrà visualizzata un'istanza del blocco note.
+9. Ora dovresti vedere Blocco note dal menu Strumenti / Opzioni e facendo clic su **Blocco note** dovrebbe visualizzare un'istanza del Blocco note.

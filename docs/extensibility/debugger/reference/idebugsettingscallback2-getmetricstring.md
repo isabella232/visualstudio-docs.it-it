@@ -1,28 +1,28 @@
 ---
-title: IDebugSettingsCallback2::GetMetricString | Microsoft Docs
+title: IDebugSettingsCallback2::GetMetricString . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricString
 - GetMetricString
 ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 119fa1ac0f90cd6ebef22633130a3683c039a204
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e0c90f3261809bf41b3aa4bd3337a16c1190fcfc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321966"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719970"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
-Recupera la stringa del valore della metrica in base al nome.
+Recupera la stringa di valore della metrica in base al nome.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,10 +55,10 @@ private int GetMetricString(
 [in] Nome della metrica.
 
 `pbstrValue`\
-[out] Restituisce la stringa del valore della metrica.
+[fuori] Restituisce la stringa del valore della metrica.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

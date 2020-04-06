@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2 | Microsoft Docs
+title: Proprietà IDebugProgramProvider2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2 interface
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6f392e823d28440a73a1aaa606351c28c6e9c70
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 43557e5d81e5140967a1189e57a350595d0f7220
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343351"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721700"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
-Questa interfaccia registrata consente il debug di sessione manager (SDM) per ottenere informazioni sui programmi che sono stati "pubblicati" tramite il [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interfaccia.
+Questa interfaccia registrata consente al gestore di sessione di debug (SDM) di ottenere informazioni sui programmi che sono stati "pubblicati" tramite il [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interfaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,22 +29,22 @@ IDebugProgramProvider2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
-Il motore di debug (DE) implementa questa interfaccia per fornire informazioni sui programmi in fase di debug. Questa interfaccia viene registrata nella sezione del Registro di sistema usando la metrica DE `metricProgramProvider`, come descritto in [helper SDK per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).
+Il motore di debug (DE) implementa questa interfaccia per fornire informazioni sui programmi in fase di debug. Questa interfaccia viene registrata nella sezione DE `metricProgramProvider`del Registro di sistema utilizzando la metrica , come descritto in [SDK Helpers for Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Chiamare COM `CoCreateInstance` utilizzabile con il `CLSID` del provider di programma che viene ottenuto dal Registro di sistema. Vedere l'esempio.
+Chiamare la `CoCreateInstance` funzione di `CLSID` COM con il provider di programmi ottenuto dal Registro di sistema. Vedere l'esempio.
 
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
+## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Ottiene informazioni sui programmi in esecuzione, filtrate in modi diversi.|
-|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Ottiene un nodo di programma, dato un ID processo specifico.|
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Stabilisce un callback per il controllo degli eventi del provider associati tipi specifici di processi.|
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Consente di stabilire le impostazioni locali per tutte le risorse specifiche della lingua necessarie per la Germania.|
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Ottiene informazioni sui programmi in esecuzione, filtrati in diversi modi.|
+|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Ottiene un nodo di programma, dato un ID di processo specifico.|
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Stabilisce un callback per controllare gli eventi del provider associati a tipi specifici di processi.|
+|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Stabilisce un'impostazione locale per tutte le risorse specifiche della lingua necessarie per il DE.|
 
-## <a name="remarks"></a>Note
-In genere, un processo Usa questa interfaccia per scoprire i programmi in esecuzione in tale processo.
+## <a name="remarks"></a>Osservazioni
+Normalmente, un processo utilizza questa interfaccia per scoprire i programmi in esecuzione in quel processo.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

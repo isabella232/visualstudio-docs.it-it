@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::EnumFrameInfo | Microsoft Docs
+title: Proprietà IDebugThread2::EnumFrameInfo . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::EnumFrameInfo
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fad77ca1d649e7ffdda02c7145dc11666619f232
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320325"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718851"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Recupera un elenco degli stack frame per questo thread.
@@ -45,19 +45,19 @@ int EnumFrameInfo ( 
 
 ## <a name="parameters"></a>Parametri
 `dwFieldSpec`\
-[in] Una combinazione di flag dal [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumerazione che specifica quali campi della [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture sono da compilare. Specificare il `FIF_FUNCNAME_FORMAT` flag per formattare il nome della funzione in un'unica stringa.
+[in] Combinazione di flag dell'enumerazione [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) che specifica quali campi delle strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) devono essere compilati. Specificare `FIF_FUNCNAME_FORMAT` il flag per formattare il nome della funzione in un'unica stringa.
 
 `nRadix`\
-[in] Radice usati nella formattazione di informazioni numeriche nell'enumeratore.
+[in] Radice utilizzata nella formattazione delle informazioni numeriche nell'enumeratore.
 
 `ppEnum`\
-[out] Restituisce un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) oggetto che contiene un elenco delle [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture che descrivono lo stack frame.
+[fuori] Restituisce un oggetto [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) che contiene un elenco di strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) che descrivono lo stack frame.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Frame del thread vengono enumerati in ordine, con il fotogramma corrente enumerata prima e il meno recente enumerati ultima.
+## <a name="remarks"></a>Osservazioni
+ I frame del thread vengono enumerati in ordine, con il frame corrente enumerato per primo e il frame meno recente enumerato per ultimo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

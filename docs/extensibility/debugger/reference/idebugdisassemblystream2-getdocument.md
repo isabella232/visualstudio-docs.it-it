@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetDocument | Microsoft Docs
+title: IDebugDisassemblyStream2::GetDocument . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetDocument
 ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a043d5462ad206395cb7d70d28152c19a7df6460
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf5d1a73e15ad38bf14d954718ce97c088b2e525
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310427"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732180"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 Ottiene il documento di origine associato a questo flusso di input.
@@ -43,16 +43,16 @@ int GetDocument( 
 
 ## <a name="parameters"></a>Parametri
 `bstrDocumentUrl`\
-[in] L'URL del documento.
+[in] URL del documento.
 
 `ppDocument`\
-[out] Restituisce un [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) oggetto che rappresenta il documento.
+[fuori] Restituisce un [Oggetto IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) che rappresenta il documento.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo viene implementato da motori di debug che sono documenti di testo che non sono archiviati in un file effettivo.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo viene implementato dai motori di debug che dispongono di documenti di testo che non vengono archiviati in un file effettivo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

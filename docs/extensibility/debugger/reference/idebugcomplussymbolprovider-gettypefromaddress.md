@@ -1,25 +1,25 @@
 ---
-title: IDebugComPlusSymbolProvider::GetTypeFromAddress | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetTypeFromAddress . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetTypeFromAddress
 - GetTypeFromAddress
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7cc1a0e5bb25edcbfae047a088c20884330e81ee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 87dfa102916b55c8445ecbf99d7033c0391ec254
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336695"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733733"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 Recupera in un tipo di simbolo dato il relativo indirizzo di debug.
@@ -42,16 +42,16 @@ int GetTypeFromAddress(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-[in] L'indirizzo di debug che è rappresentato da un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
+[in] Indirizzo di debug rappresentato da un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
 
 `ppField`\
-[out] Restituisce il tipo di matrice come rappresentato da un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaccia.
+[fuori] Restituisce il tipo di matrice come è rappresentato da un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromAddress(

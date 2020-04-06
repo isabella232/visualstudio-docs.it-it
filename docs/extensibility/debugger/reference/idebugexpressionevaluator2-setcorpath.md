@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::SetCorPath | Microsoft Docs
+title: Proprietà IDebugExpressionEvaluator2::SetCorPath . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - SetCorPath
 - IDebugExpressionEvaluator2::SetCorPath
 ms.assetid: 27b614ff-7325-4f9b-8da4-61ee020c9410
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e8300f3cfc54ece6a57c31fcca819ffd8d275d28
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bea93c3f10a946353c52231d0ac3802f0b2ec8e9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313166"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729272"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
-Imposta il percorso di common language runtime (CLR) caricato nel debugger.
+Imposta il percorso di Common Language Runtime (CLR) caricato nel debugger.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ int SetCorPath(
 
 ## <a name="parameters"></a>Parametri
 `pcstrCorPath`\
-[in] Percorso di CLR caricati nel debugger.
+[in] Percorso di CLR caricato nel debugger.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **ExpressionEvaluatorPackage** oggetto che espone le [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaccia.
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un **ExpressionEvaluatorPackage** oggetto che espone il [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaccia.
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)

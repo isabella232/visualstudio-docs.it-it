@@ -1,24 +1,24 @@
 ---
-title: IDebugFirewallConfigurationCallback2 | Microsoft Docs
+title: IDebugFirewallConfigurationCallback2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugFirewallConfigurationCallback2 interface
 ms.assetid: 0827361c-b97c-4851-9898-ab6d88c81811
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b4c04b996d180f1975ee1e9ad3a9a95cd1b76a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 635771fc87326b28566058a43d4922b131ae1975
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337455"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728721"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
-Consente a un motore di debug che utilizza DCOM per porre il [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente per assicurarsi che il firewall non blocca il debug remoto.
+Abilita un motore di debug che [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] utilizza DCOM per chiedere all'interfaccia utente di assicurarsi che il firewall non blocchi il debug remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -27,10 +27,10 @@ IDebugFirewallConfigurationCallback2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Implementata dall'oggetto porta del gestore di debug della sessione.
+ Implementato dall'oggetto porta del gestore di debug della sessione.
 
 ## <a name="methods"></a>Metodi
- Nella tabella seguente sono illustrati i metodi di `IDebugFirewallConfigurationCallback2`.
+ Nella tabella seguente vengono `IDebugFirewallConfigurationCallback2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|

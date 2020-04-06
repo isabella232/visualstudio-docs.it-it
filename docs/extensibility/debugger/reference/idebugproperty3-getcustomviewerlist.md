@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerList | Microsoft Docs
+title: Proprietà IDebugProperty3::GetCustomViewerList . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerList
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d8a439863f577237699950b3d70eb15d75ec77a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 212f8d251232d35ee7d9cc46074a21239eea29f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348862"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721156"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Ottiene un elenco di visualizzatori personalizzati associati a questa proprietà.
@@ -47,27 +47,27 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parametri
 `celtSkip`\
-[in] Il numero di visualizzatori di ignorare.
+[in] Il numero di spettatori da saltare.
 
 `celtRequested`\
-[in] Il numero di visualizzatori da recuperare (specifica anche la dimensione del `rgViewers` matrice).
+[in] Il numero di visualizzatori da recuperare (specifica anche la dimensione della `rgViewers` matrice).
 
 `rgViewers`\
-[in, out] Matrice di [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) strutture da compilare.
+[in, out] Matrice di [strutture DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) da compilare.
 
 `pceltFetched`\
-[out] Il numero effettivo di visualizzatori restituito.
+[fuori] Il numero effettivo di spettatori restituiti.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
-Per supportare i visualizzatori di tipo, questo metodo inoltra la chiamata per il [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) (metodo). Se l'analizzatore di espressioni supporta anche i visualizzatori personalizzati per questo tipo di proprietà, questo metodo può aggiungere i visualizzatori personalizzati appropriati all'elenco.
+## <a name="remarks"></a>Osservazioni
+Per supportare i visualizzatori di tipo, questo metodo inoltra la chiamata al [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) metodo. Se l'analizzatore di espressioni supporta anche visualizzatori personalizzati per il tipo di questa proprietà, questo metodo può aggiungere i visualizzatori personalizzati appropriati all'elenco.
 
-Visualizzare [Visualizzatore di tipi e Visualizzatore personalizzato](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) per informazioni dettagliate sulle differenze tra i visualizzatori di tipi e visualizzatori personalizzati.
+Per informazioni dettagliate sulle differenze tra visualizzatori di tipi e visualizzatori personalizzati, vedere Visualizzatore di tipi [e Visualizzatore personalizzato.](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CProperty** oggetto che espone le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **CProperty** oggetto che espone il [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaccia.
 
 ```cpp
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)

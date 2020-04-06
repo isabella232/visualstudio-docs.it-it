@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FLAGS | Microsoft Docs
+title: proprietà MODULE_INFO_FLAGS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FLAGS enumeration
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d8cc60510e29cdf502b0a91b434966d1ea47860d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 20a11488c32b4259105e346e7fa28fd706e48a48
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346690"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714238"
 ---
-# <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
+# <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 Specifica lo stato dei simboli per un modulo.
 
 ## <a name="syntax"></a>Sintassi
@@ -42,10 +42,10 @@ public enum enum_MODULE_INFO_FLAGS {
 
 ## <a name="fields"></a>Campi
  `MIF_SYMBOLS_LOADED`\
- Almeno un set di simboli è stato caricato dal modulo (in caso contrario, sono stati caricati senza simboli).
+ Almeno un set di simboli è stato caricato dal modulo (altrimenti non sono stati caricati simboli).
 
-## <a name="remarks"></a>Note
- Questo valore viene restituito per il [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) (metodo).
+## <a name="remarks"></a>Osservazioni
+ Questo valore viene restituito dal [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) metodo.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

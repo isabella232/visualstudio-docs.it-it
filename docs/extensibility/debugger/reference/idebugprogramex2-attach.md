@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::Attach | Microsoft Docs
+title: Proprietà IDebugProgramEx2::Attach . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db27f29b37480081d29e452d74a6da0c5cea59a6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325177"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722385"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
-Connettere una sessione a un programma.
+Collegare una sessione a un programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,22 +45,22 @@ int Attach( 
 
 ## <a name="parameters"></a>Parametri
 `pCallback`\
-[in] Un' [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) oggetto che rappresenta la funzione di callback che il motore di debug collegati invia eventi.
+[in] Oggetto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) che rappresenta la funzione di callback a cui il motore di debug associato invia eventi.
 
 `dwReason`\
-[in] Un valore compreso il [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumerazione che descrive il motivo per l'operazione di collegamento.
+[in] Valore dell'enumerazione [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) che descrive il motivo dell'operazione di collegamento.
 
 `pSession`\
-[in] Un valore che identifica in modo univoco la sessione che si sta connettendo al programma.
+[in] Valore che identifica in modo univoco la sessione che si sta collegando al programma.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Questo metodo deve restituire `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` se il programma è già collegato.
+ Se ha `S_OK`esito positivo, restituisce ; in caso contrario restituisce un codice di errore. Questo metodo `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` deve restituire se il programma è già collegato.
 
-## <a name="remarks"></a>Note
- La porta che contiene il programma può usare il valore in `pSession` per determinare quale sessione sta tentando di collegare al programma. Ad esempio, se una porta consente di sessione di debug solo una per connettersi a un processo alla volta, la porta possibile determinare se la stessa sessione è già collegata ad altri programmi nel processo.
+## <a name="remarks"></a>Osservazioni
+ La porta che contiene il programma `pSession` può utilizzare il valore in per determinare quale sessione sta tentando di connettersi al programma. Ad esempio, se una porta consente la connessione a un processo a una sola sessione di debug alla volta, la porta può determinare se la stessa sessione è già collegata ad altri programmi nel processo.
 
 > [!NOTE]
-> L'interfaccia passato `pSession` deve essere considerata solo come un cookie, un valore che identifica in modo univoco la gestione del debug sessione la connessione a questo programma; nessuno dei metodi nell'interfaccia specificata sono funzionali.
+> L'interfaccia `pSession` passata deve essere trattata solo come un cookie, un valore che identifica in modo univoco il gestore di debug della sessione che si collega a questo programma; nessuno dei metodi sull'interfaccia fornita è funzionale.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2 | Microsoft Docs
+title: Proprietà IDebugFunctionPosition2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionPosition2 interface
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19b9fbe16abec97ef29794b66cc4fe92631ca0af
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c260b6316207b0079a2ca8893b851db8b1288ba6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313249"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728318"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Questa interfaccia rappresenta una posizione astratta di una funzione in un documento di origine.
@@ -32,18 +32,18 @@ IDebugFunctionPosition2 : IUnknown
  Il motore di debug (DE) implementa questa interfaccia per rappresentare la posizione di una funzione all'interno di un documento di origine.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Questa interfaccia deve essere fornita come parte di un [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) union (in particolare, un [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) struttura) che a sua volta fa parte del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) struttura utilizzata per creare un punto di interruzione in sospeso.
+ Questa interfaccia viene fornita come parte di un'unione [di BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) (in particolare, una struttura [di BP_LOCATION_CODE_FUNC_OFFSET)](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) che a sua volta fa parte della struttura [BP_REQUEST_INFO,](../../../extensibility/debugger/reference/bp-request-info.md) utilizzata nella creazione di un punto di interruzione in sospeso.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IDebugFunctionPosition2`.
+ Nella tabella seguente vengono `IDebugFunctionPosition2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Ottiene il nome della funzione che questa posizione è relativa a.|
+|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Ottiene il nome della funzione relativa a questa posizione.|
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Ottiene l'offset dall'inizio della funzione.|
 
-## <a name="remarks"></a>Note
- La posizione rappresentata da questa interfaccia è basata su testo, in particolare, un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura.
+## <a name="remarks"></a>Osservazioni
+ La posizione rappresentata da questa interfaccia è basata su testo, in particolare una struttura [TEXT_POSITION.](../../../extensibility/debugger/reference/text-position.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+title: IDebugErrorBreakpointResolution2::GetResolutionInfo . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetResolutionInfo
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fefea5081278800b330dac665862a360b4a0c15b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327818"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730029"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
-Ottiene informazioni sulla risoluzione di errori i punto di interruzione.
+Ottiene le informazioni sulla risoluzione degli errori del punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Una combinazione di flag dal [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) enumerazione che determinano quali campi della `pErrorResolutionInfo` sono da compilare.
+[in] Combinazione di flag dell'enumerazione [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) `pErrorResolutionInfo` che determinano i campi di da compilare.
 
 `pErrorResolutionInfo`\
-[in, out] Il [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struttura compilata con la descrizione della risoluzione del punto di interruzione.
+[in, out] Struttura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) compilata con la descrizione della risoluzione del punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente implementa questo metodo per un semplice `CDebugErrorBreakpointResolution` oggetto che espone il [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) interfaccia.
+L'esempio seguente implementa questo `CDebugErrorBreakpointResolution` metodo per un oggetto semplice che espone il [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) interfaccia.
 
 ```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(

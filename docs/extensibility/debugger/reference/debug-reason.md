@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Microsoft Docs
+title: proprietà DEBUG_REASON . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346162"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737430"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
-Specifica il motivo per cui è stato avviato il processo per eseguire il debug.
+# <a name="debug_reason"></a>DEBUG_REASON
+Specifica il motivo per cui il processo è stato avviato per il debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>Campi
 `DEBUG_REASON_ERROR`\
-Si è verificato un errore non specifico (usato come una condizione predefinita quando nessuno degli altri motivi adattamento).
+Si è verificato un errore non specifico (viene utilizzato come condizione predefinita quando nessuno degli altri motivi si adatta).
 
 `DEBUG_REASON_USER_LAUNCHED`\
 Il processo è stato avviato su richiesta dell'utente.
@@ -59,13 +59,13 @@ Il processo è stato avviato su richiesta dell'utente.
 Il processo già in esecuzione è stato collegato dall'utente.
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-Il processo è stato associato automaticamente al quando è stata avviata.
+Il processo è stato collegato automaticamente a quando è stato lanciato.
 
 `DEBUG_REASON_CAUSALITY`\
-Il processo è stato avviato a causa dell'errore una *Just-In-Time* evento di debug (JIT).
+Il processo è stato avviato a causa di un evento di debug *JIT (Just-In-Time).*
 
-## <a name="remarks"></a>Note
-Restituito dal [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) (metodo).
+## <a name="remarks"></a>Osservazioni
+Restituito dal [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metodo.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

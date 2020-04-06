@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
+title: IDebugExpressionEvaluator::SetLocale . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetLocale method
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18d0dbde0d04dcdf42b3e1fbd19841645036e5bf
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 57ddee6e1796159c505b67982f25d1ba09684561
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "66325661"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729467"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 Questo metodo imposta la lingua da utilizzare per creare risultati stampabili.
@@ -41,13 +41,13 @@ int SetLocale(
 
 ## <a name="parameters"></a>Parametri
 `wLangID`\
-[in] L'identificatore di lingua.
+[in] Identificatore della lingua.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo può essere chiamato più volte mentre l'analizzatore di espressioni (EE) viene caricato, in modo che l'analizzatore di Espressioni deve essere in grado di cambiare la lingua in tempo reale. L'analizzatore di Espressioni Usa le impostazioni locali per restituire messaggi di errore e le stringhe nel linguaggio appropriato.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo può essere chiamato più volte mentre viene caricato l'analizzatore di espressioni (EE), pertanto l'analizzatore di espressioni deve essere in grado di passare da una lingua all'altra al volo. EE utilizza queste impostazioni locali per restituire i messaggi di errore e le stringhe nella lingua appropriata.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs
+title: IDebugBoundBreakpoint2::SetHitCount . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - SetHitCount method
 - IDebugBoundBreakpoint2::SetHitCount method
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8e59fadb019124cca111f23e99220b77df2a88d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314478"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735409"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Imposta il numero di passaggi per il punto di interruzione associato.
@@ -42,15 +42,15 @@ int SetHitCount( 
 
 ## <a name="parameters"></a>Parametri
 `dwHitCount`\
-[in] Per impostare il numero di passaggi.
+[in] Numero di colpi da impostare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato viene impostato su `BPS_DELETED` (in parte il [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumerazione).
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto `BPS_DELETED` punto di interruzione associato è impostato su (parte dell'enumerazione [BP_STATE).](../../../extensibility/debugger/reference/bp-state.md)
 
-## <a name="remarks"></a>Note
- Il numero di passaggi è il numero di volte in cui che il punto di interruzione generato durante l'esecuzione della sessione corrente.
+## <a name="remarks"></a>Osservazioni
+ Il numero di passaggi è il numero di volte in cui questo punto di interruzione è stato generato durante l'esecuzione corrente della sessione.
 
- In genere, questo metodo viene chiamato dal motore di debug per aggiornare il numero di passaggi corrente su questo punto di interruzione.
+ Questo metodo viene in genere chiamato dal motore di debug per aggiornare il numero di passaggi corrente in questo punto di interruzione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetField | Microsoft Docs
+title: Proprietà IDebugObject2::GetField . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetField method
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e491d98219f1cbb105af653dee15f25bb246c2d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317317"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726218"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 Ottiene il tipo di questo oggetto.
@@ -41,12 +41,12 @@ int GetField(
 
 ## <a name="parameters"></a>Parametri
 `ppField`\
-[out] Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto se non è un valore null.
+[fuori] Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto se non è un valore null.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Un campo descrive il tipo dell'oggetto.
 
 ## <a name="see-also"></a>Vedere anche

@@ -1,5 +1,5 @@
 ---
-title: GETNAME_TYPE | Microsoft Docs
+title: GETNAME_TYPE Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bdcbc4171c8a481ee0c45456ef5600f5150c6d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d0d146ec4ed7340bde36b298df9d455257b35fe
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317588"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736668"
 ---
-# <a name="getnametype"></a>GETNAME_TYPE
-Specifica il tipo di nome di file da recuperare.
+# <a name="getname_type"></a>GETNAME_TYPE
+Specifica il tipo di nome dei file da recuperare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,10 +63,10 @@ Specifica il percorso completo del documento o del contesto.
 Specifica un nome di file di base anziché un percorso completo del documento o del contesto.
 
 `GN_MONIKERNAME`\
-Specifica un nome univoco del documento o del contesto sotto forma di un moniker.
+Specifica un nome univoco del documento o del contesto sotto forma di moniker.
 
 `GN_URL`\
-Specifica il nome dell'URL del documento o del contesto.
+Specifica un nome URL del documento o del contesto.
 
 `GN_TITLE`\
 Specifica un titolo del documento, se presente.
@@ -74,8 +74,8 @@ Specifica un titolo del documento, se presente.
 `GN_STARTPAGEURL`\
 Ottiene l'URL della pagina iniziale per i processi.
 
-## <a name="remarks"></a>Note
-Questi valori vengono passati come parametri per il [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), e [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metodi per specificare il tipo di nome da restituire.
+## <a name="remarks"></a>Osservazioni
+Questi valori vengono passati come parametri ai metodi [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)e [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) per specificare il tipo di nome da restituire.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

@@ -1,25 +1,25 @@
 ---
-title: Elemento Button | Microsoft Docs
+title: Elemento Button . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10b4f8749aa7e42a7fb95afb31d98907e45d05f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321291"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739933"
 ---
 # <a name="button-element"></a>Elemento Button
-Definisce un elemento che l'utente può interagire con. Pulsanti possono essere di tipi diversi: Pulsante MenuButton e SplitDropDown.
+Definisce un elemento con cui l'utente può interagire. I pulsanti possono essere di diversi tipi: Button, MenuButton e SplitDropDown.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,30 +39,30 @@ Definisce un elemento che l'utente può interagire con. Pulsanti possono essere 
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|guid|Obbligatorio. GUID dell'identificatore di comando/ID GUID.|
-|ID|Obbligatorio. ID dell'identificatore di comando/ID GUID.|
-|priority|Facoltativo. Valore numerico che specifica la priorità.|
-|tipo|Facoltativo. Valore enumerato che specifica il tipo di pulsante.<br /><br /> Se non viene specificato, viene utilizzata sul pulsante.<br /><br /> Button<br /> Comando standard che viene visualizzato nelle barre degli strumenti (in genere come un pulsante originalissima), i menu e menu di scelta rapida.<br /><br /> MenuButton<br /> Una voce di menu che non viene eseguito un comando, ma produce un altro menu.<br /><br /> SplitDropDown<br /> Controlli, ad esempio i pulsanti di annullamento e ripristino sulla barra degli strumenti standard in Microsoft Word.|
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Obbligatorio. GUID dell'identificatore di comando GUID/ID.|
+|id|Obbligatorio. ID dell'identificatore di comando GUID/ID.|
+|priority|Facoltativa. Valore numerico che specifica la priorità.|
+|type|Facoltativa. Valore enumerato che specifica il tipo di pulsante.<br /><br /> Se non specificato, utilizza Button.<br /><br /> Pulsante<br /> Comando standard visualizzato sulle barre degli strumenti (in genere come pulsante iconico), nei menu e nei menu di scelta rapida.<br /><br /> MenuButton<br /> Voce di menu che non esegue un comando, ma produce un altro menu.<br /><br /> SplitDropDown (SplitDropDown)<br /> Controlli, ad esempio i pulsanti Annulla e Ripeti sulla barra degli strumenti standard di Microsoft Word.|
+|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento padre](../extensibility/parent-element.md)|Facoltativo. L'elemento padre del pulsante.|
-|[Elemento Icon](../extensibility/icon-element.md)|Facoltativo. L'icona associata al pulsante.|
-|[Elemento commandflag](../extensibility/command-flag-element.md)|Obbligatorio. I valori CommandFlag validi per un pulsante sono come indicato di seguito.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> - DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> - IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> - TextOnly|
-|[Elemento Strings](../extensibility/strings-element.md)|Obbligatorio. L'elemento figlio [elemento ButtonText](../extensibility/buttontext-element.md) deve essere definito.|
+|[Elemento padre](../extensibility/parent-element.md)|Facoltativa. Elemento padre del pulsante.|
+|[Elemento icona](../extensibility/icon-element.md)|Facoltativa. Icona associata al pulsante.|
+|[Elemento del flag di comando](../extensibility/command-flag-element.md)|Obbligatorio. I valori CommandFlag validi per un Button sono i seguenti.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DontCache (Informazioni in base a<br /><br /> - DynamicItemStart<br /><br /> - DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> - NoCustomize<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> - Pict<br /><br /> - PostExec<br /><br /> - ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> - TextChanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> - TextOnly|
+|[Elemento Strings](../extensibility/strings-element.md)|Obbligatorio. È necessario definire [l'elemento figlio ButtonText.](../extensibility/buttontext-element.md)|
 |Annotazione|Commento facoltativo.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Buttons](../extensibility/buttons-element.md)|Raggruppa gli elementi di pulsante.|
+|[Elemento Buttons](../extensibility/buttons-element.md)|Raggruppa gli elementi Button.|
 
 ## <a name="example"></a>Esempio
- L'esempio seguente definisce un pulsante in un *vsct* file.
+ Nell'esempio seguente viene definito un pulsante in un file *con estensione vsct.*
 
  ```xml
 <Button guid="guidMenuTextCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -77,4 +77,4 @@ Definisce un elemento che l'utente può interagire con. Pulsanti possono essere 
  ```
 
 ## <a name="see-also"></a>Vedere anche
-- [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

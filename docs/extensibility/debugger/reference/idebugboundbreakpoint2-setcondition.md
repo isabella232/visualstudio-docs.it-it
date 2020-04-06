@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition | Microsoft Docs
+title: Proprietà IDebugBoundBreakpoint2::SetCondition . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93109204a02b808c69bed242665bb6e373d6fe7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337438"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735457"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 Imposta o modifica la condizione associata a questo punto di interruzione associato.
@@ -42,13 +42,13 @@ int SetCondition( 
 
 ## <a name="parameters"></a>Parametri
 `bpCondition`\
-[in] Un valore compreso il [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) enumerazione che descrive la condizione.
+[in] Valore dell'enumerazione [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) che descrive la condizione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato viene impostato su `BPS_DELETED` (in parte il [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumerazione).
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto `BPS_DELETED` punto di interruzione associato è impostato su (parte dell'enumerazione [BP_STATE).](../../../extensibility/debugger/reference/bp-state.md)
 
-## <a name="remarks"></a>Note
- Tutte le condizioni che è stato precedentemente associata a questo punto di interruzione vengono persa.
+## <a name="remarks"></a>Osservazioni
+ Qualsiasi condizione precedentemente associata a questo punto di interruzione viene persa.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

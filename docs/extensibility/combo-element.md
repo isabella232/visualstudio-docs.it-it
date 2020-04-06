@@ -1,25 +1,25 @@
 ---
-title: Elemento combo | Microsoft Docs
+title: 'Elemento Combo : Documenti Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a97163f1f7dc2a1152bc22f4bc3a68ed32b3cfe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 18ff9d9e20ec221a86f1cce5f9c43a4e47ed6dc2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334901"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739815"
 ---
-# <a name="combo-element"></a>Elemento combo
-Definisce i comandi che vengono visualizzati in una casella combinata. Esistono quattro tipi di caselle combinate, come indicato di seguito: DropDownCombo, DynamicCombo, IndexCombo, and MRUCombo.
+# <a name="combo-element"></a>Elemento combinato
+Definisce i comandi visualizzati in una casella combinata. Esistono quattro tipi di caselle combinate, come segue: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,28 +38,28 @@ Definisce i comandi che vengono visualizzati in una casella combinata. Esistono 
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|guid|Obbligatorio. GUID dell'identificatore di comando/ID GUID.|
-|ID|Obbligatorio. ID dell'identificatore di comando/ID GUID.|
-|defaultWidth|Obbligatorio. Valore intero che specifica una larghezza in pixel per la casella combinata.|
-|idCommandList|Obbligatorio. Un ID che viene inviato alla destinazione del comando attiva per recuperare l'elenco di elementi da visualizzare nella casella combinata. L'ID sarà nello stesso ambito GUID del controllo.|
-|priority|Facoltativo. Valore numerico che specifica la priorità.|
-|tipo|Facoltativo. Valore enumerato che specifica il tipo di pulsante.<br /><br /> Se non viene specificato, viene utilizzata sul pulsante.<br /><br /> DropDownCombo<br /> Il pacchetto VSPackage è responsabile della compilazione del contenuto per questa casella combinata. L'utente non è possibile digitare qualsiasi elemento nella casella di testo di questo elenco a discesa.<br /><br /> DynamicCombo<br /> Il pacchetto VSPackage è responsabile della compilazione nel contenuto di questa casella combinata. L'utente può modificare questa casella combinata e anche selezionare gli elementi in esso.<br /><br /> IndexCombo<br /> Lo stesso come DynamicCombo ad eccezione del fatto che genera l'indice dell'elemento anziché il relativo testo.<br /><br /> MRUCombo<br /> Compilato tramite l'ambiente di sviluppo integrato (IDE) per conto di VSPackage.  L'utente può modificare in questa casella combinata. Nell'IDE vengono mantenuti fino alle ultime 16 voci per ogni casella combinata.<br /><br /> Quando l'utente seleziona un elemento nella casella combinata o immette un nuovo valore, l'IDE di notifica a VSPackage appropriato.|
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Obbligatorio. GUID dell'identificatore di comando GUID/ID.|
+|id|Obbligatorio. ID dell'identificatore di comando GUID/ID.|
+|DefaultWidth (Larghezza predefinita)|Obbligatorio. Intero che specifica una larghezza in pixel per la casella combinata.|
+|idCommandList (elenco di comando)|Obbligatorio. ID inviato alla destinazione del comando attivo per recuperare l'elenco di elementi da visualizzare nella casella combinata. L'ID sarà nello stesso ambito GUID del controllo.|
+|priority|Facoltativa. Valore numerico che specifica la priorità.|
+|type|Facoltativa. Valore enumerato che specifica il tipo di pulsante.<br /><br /> Se non specificato, utilizza Button.<br /><br /> Proprietà DropDownCombo<br /> Il pacchetto VSPackage è responsabile della compilazione del contenuto per questa casella combinata. L'utente non può digitare nulla nella casella di testo di questo elenco a discesa.<br /><br /> DynamicCombo<br /> Il pacchetto VSPackage è responsabile per la compilazione del contenuto di questa casella combinata. L'utente può modificare questa combinazione e anche selezionare gli elementi in essa contenuti.<br /><br /> IndiceCombo<br /> Uguale a DynamicCombo, ad eccezione del fatto che genera l'indice dell'elemento anziché il relativo testo.<br /><br /> MRUCombo<br /> Compilato dall'ambiente di sviluppo integrato (IDE) per conto del pacchetto VSPackage.  L'utente può modificare in questa casella combinata. L'IDE memorizza fino alle ultime 16 voci per casella combinata.<br /><br /> Quando l'utente seleziona un elemento nella casella combinata o immette un nuovo elemento, l'IDE notifica il pacchetto VSPackage appropriato.|
+|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Padre|Facoltativo. L'elemento padre del pulsante.|
-|CommandFlag|Obbligatorio. Visualizzare [elemento commandflag](../extensibility/command-flag-element.md). I valori CommandFlag validi per un pulsante sono come indicato di seguito.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -FilterKeys<br /><br /> - IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|
-|Stringhe|Obbligatorio. Visualizzare [elemento Strings](../extensibility/strings-element.md). Elemento ButtonText figlio deve essere definito.|
+|Parent|Facoltativa. Elemento padre del pulsante.|
+|CommandFlag (Flag di comando)|Obbligatorio. Consultate [Elemento flag di comando](../extensibility/command-flag-element.md). I valori CommandFlag validi per un Button sono i seguenti.<br /><br /> - CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DynamicVisibility<br /><br /> - FilterKeys<br /><br /> - IconAndText<br /><br /> - NoAutoComplete<br /><br /> - NoButtonCustomize<br /><br /> - NoCustomize<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|
+|Stringhe|Obbligatorio. Consultate [l'elemento Strings](../extensibility/strings-element.md). È necessario definire l'elemento figlio ButtonText.|
 |Annotazione|Commento facoltativo.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage.|
+|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti VSPackage.|
 
 ## <a name="example"></a>Esempio
 
@@ -84,4 +84,4 @@ Definisce i comandi che vengono visualizzati in una casella combinata. Esistono 
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
