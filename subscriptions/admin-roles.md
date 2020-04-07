@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 03/02/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Informazioni sui ruoli di amministratore con privilegi avanzati e amministratore e su come assegnare gli amministratori.
-ms.openlocfilehash: ce76a2aaf970926d171086e65ba2d364e1526d61
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232748"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808384"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Amministratori con privilegi avanzati e amministratori per i contratti di sottoscrizione di Visual Studio
 
@@ -21,6 +21,8 @@ Esistono due diversi ruoli nel nuovo portale di amministrazione delle sottoscriz
 **Super amministratori:** Quando un'organizzazione è inizialmente configurata, il contatto principale o avvisi diventa un amministratore con privilegi avanzati per impostazione predefinita. Il contatto principale o per le comunicazioni può scegliere di assegnare altri amministratori con privilegi avanzati o amministratori. Un amministratore con privilegi elevati può aggiungere e rimuovere altri amministratori e sottoscrittori. Se nel sistema sono presenti più di due amministratori con privilegi elevati, è possibile eliminarli tutti tranne gli ultimi due per motivi di sicurezza.
 
 **Amministratori:** Un amministratore può essere assegnato solo da un amministratore con privilegi avanzati. Un amministratore può gestire i sottoscrittori solo negli accordi che l'amministratore con privilegi avanzati assegna loro.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
 ## <a name="assigning-administrators"></a>Assegnazione di amministratori
 Per assegnare nuovi amministratori:
