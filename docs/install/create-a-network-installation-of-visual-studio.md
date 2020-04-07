@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ea7efd82aa25844e8eb33745aa53d44be1ed14f6
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544068"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759724"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -297,4 +297,4 @@ Sono disponibili anche altre opzioni per il supporto. Per un elenco, vedere la p
 - [Aggiornare Visual Studio secondo una baseline di manutenzione](update-servicing-baseline.md)
 - [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
-- [Installare i certificati necessari per l'installazione offline di Visual Studio](/install-certificates-for-visual-studio-offline.md)
+- [Installare i certificati necessari per l'installazione offline di Visual Studio](install-certificates-for-visual-studio-offline.md)
