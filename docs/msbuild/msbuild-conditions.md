@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d51aa0a5ef995abbe150160e378aa8885cc9706
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: bbed62c13fc963af382ede113b138451303d9382
+ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472677"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759719"
 ---
 # <a name="msbuild-conditions"></a>Condizioni di MSBuild
 
@@ -40,7 +40,7 @@ MSBuild supporta un set specifico di condizioni `Condition` che possono essere a
 |()|Meccanismo di raggruppamento che restituisce `true` se le espressioni contenute all'interno restituiscono `true`.|
 |$if$ ( %expression% ), $else$, $endif$|Controlla se l'oggetto `%expression%` specificato corrisponde al valore stringa del parametro di modello personalizzato passato. Se la condizione `$if$` restituisce `true`, le istruzioni vengono eseguite. In caso contrario, viene controllata la condizione `$else$`. Se la condizione `$else$` è `true`, le istruzioni vengono eseguite. In caso contrario, la condizione `$endif$` termina la valutazione dell'espressione.<br /><br /> Per esempi di utilizzo, vedere Logica dei parametri del [modello di progetto/elemento](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)di Visual Studio.|
 
-È possibile utilizzare i metodi stringa nelle condizioni, <xref:System.String.TrimEnd> come illustrato nell'esempio seguente, in cui la funzione viene utilizzata per confrontare solo la parte rilevante della stringa, per distinguere tra i framework di destinazione di .NET Framework e .NET Core.
+È possibile utilizzare i metodi stringa nelle condizioni, come illustrato nell'esempio seguente, in cui la funzione [TrimEnd()](/dotnet/api/system.string.trimend) viene utilizzata per confrontare solo la parte rilevante della stringa, per distinguere tra i framework di destinazione di .NET Framework e .NET Core.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
