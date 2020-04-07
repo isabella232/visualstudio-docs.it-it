@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 03/17/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio - Perché vengono visualizzati indirizzi Hotmail o Gmail per i sottoscrittori?
-ms.openlocfilehash: 7cd6a4761efb7dcad7568bd0a95ba33141407055
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550328"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808335"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Sottoscrizioni di Visual Studio: perché vengono visualizzati gli account personali per i sottoscrittori?
 Dopo la migrazione delle società dal Volume Licensing Service Center (VLSC) al nuovo portale di [amministrazione delle sottoscrizioni](https://manage.visualstudio.com)di Visual Studio , gli amministratori sono stati sorpresi di scoprire che l'"Indirizzo di posta elettronica di accesso" per alcuni sottoscrittori mostra un indirizzo di posta elettronica personale come Hotmail o Outlook.  Per altre informazioni, vedere [questo video](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
@@ -28,6 +28,9 @@ Durante il processo di attivazione del sottoscrittore, veniva richiesto un accou
 > La moderna esperienza [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) di sottoscrittore supporta i tipi di identità di lavoro, scuola e account Microsoft (MSA).
 
 ## <a name="solution"></a>Soluzione
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
+
 Per risolvere il problema, è sufficiente selezionare il pulsante Connetti messaggi di **posta elettronica** e il sistema tenterà di associare gli account con MSA agli utenti esistenti in Azure Active Directory (Azure AD) dell'organizzazione in base alla corrispondenza tra nome e cognome. Se c'è un errore, è possibile rimuovere qualsiasi corrispondenza facendo clic sulla **X** a destra della partita.  
 
 > [!div class="mx-imgBorder"]

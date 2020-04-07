@@ -7,16 +7,18 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Informazioni su come iniziare a gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale di amministrazione delle sottoscrizioni.
-ms.openlocfilehash: 295bcd62efde8c24689c40e39ecef895e6a082c7
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 279f1d926bd81bafd8fd79e5cdddbf67b96899f1
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233159"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808366"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Panoramica del portale di amministrazione delle sottoscrizioni di Visual StudioOverview of the Visual Studio Subscriptions Administrator Portal
 
 Il portale di amministrazione delle sottoscrizioni di Visual Studio offre gli strumenti necessari per gestire le sottoscrizioni dell'organizzazione in un'unica posizione. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
 ## <a name="important-considerations"></a>Considerazioni importanti
 Tenere presenti i punti seguenti durante l'uso del portale di amministrazione delle sottoscrizioni di Visual Studio:
@@ -50,7 +52,7 @@ Per ulteriori informazioni sull'accordo che si sta visualizzando, selezionare la
 > ![Pagina relativa ai dettagli del portale di amministrazione delle sottoscrizioni di Visual Studio](_img/using-admin-portal/details-page.png)
 
 ## <a name="resources"></a>Risorse
-- [White paper sulle licenze di Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Confrontare le opzioni e i prezzi delle sottoscrizioni](https://visualstudio.microsoft.com/vs/pricing)
 - [Confrontare le funzionalità dell'IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

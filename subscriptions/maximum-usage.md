@@ -4,18 +4,21 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 03/03/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Informazioni su come visualizzare il numero massimo di sottoscrizioni assegnate nel portale di amministrazione
-ms.openlocfilehash: 3f62c251262bc16f8f214c6f7bcc22674c7430b2
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 0fe9dbe494867c99ba62bcb5f56c372da7ac50aa
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232262"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808358"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Utilizzare la funzionalità di utilizzo massimo per tenere traccia del numero di sottoscrizioni assegnate
 Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia di quante sottoscrizioni sono state acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnate, sia nell'ultimo anno che per l'intera durata dei contratti. 
+
+## <a name="maximum-usage-overview"></a>Panoramica sull'utilizzo massimo
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tdQK] 
 
 ## <a name="view-your-maximum-usage"></a>Visualizzare l'utilizzo massimo
 Per visualizzare il numero massimo di sottoscrizioni assegnate per qualsiasi livello di contratto e sottoscrizione:
@@ -38,7 +41,7 @@ Per ogni livello di sottoscrizione, il report mostra la data in cui è stato rag
 R: Le informazioni nella panoramica mostrano le assegnazioni *correnti* e le sottoscrizioni disponibili per ogni livello di sottoscrizione.  Queste informazioni possono essere molto diverse dal numero massimo di sottoscrizioni assegnate per il contratto durante l'anno corrente o per la durata del contratto.  La funzionalità di utilizzo massimo consente di vedere quando sono stati raggiunti i livelli massimi di assegnazione e quali erano i livelli.  Si tratta di una distinzione importante, poiché la fatturazione per le sottoscrizioni durante il conteggio true-up si basa sul numero massimo di sottoscrizioni assegnate in qualsiasi momento nel corso dell'anno. 
 
 ## <a name="resources"></a>Risorse
-- [White paper sulle licenze di Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Condizioni per i contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
