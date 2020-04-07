@@ -1,27 +1,27 @@
 ---
-title: IDebugPortSupplierDescription2::GetDescription | Microsoft Docs
+title: IDebugPortSupplierDescription2::GetDescription . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierDescription2::GetDescription
 ms.assetid: bff5f536-1cd1-4313-8856-db7b05818305
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7619421e66b8f6e68c252fd2c2885272003bb6e8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c2e99b55b89ef921c42fab582f65788923aa15c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339931"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724378"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
-Recupera la descrizione e una descrizione dei metadati per il fornitore della porta.
+Recupera i metadati di descrizione e descrizione per il fornitore della porta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ public int GetDescription(
 
 ## <a name="parameters"></a>Parametri
 `pdwFlags`\
-[out] Flag di metadati per la descrizione.
+[fuori] Flag di metadati per la descrizione.
 
 `pbstrText`\
-[out] Descrizione del fornitore della porta.
+[fuori] Descrizione del fornitore della porta.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::Next | Microsoft Docs
+title: IEnumDebugAddresses::Next Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::Next method
 ms.assetid: 941e4be7-858d-433a-9259-18d0d017be9e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88462448ca05b1e064d39fb0d969491dac8cadda
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 88deefddc5b479d7173c4de1c574c4da92631e97
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330050"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717642"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 Questo metodo restituisce il set successivo di elementi dall'enumerazione.
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Parametri
 `celt`\
-[in] Il numero di elementi da recuperare. Specifica inoltre la dimensione massima del `rgelt` matrice.
+[in] Numero di elementi da recuperare. Specifica anche la dimensione `rgelt` massima della matrice.
 
 `rgelt`\
-[in, out] Matrice di [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) elementi da compilare.
+[in, out] Matrice di elementi [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) da compilare.
 
 `pceltFetched`\
-[out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.
+[fuori] Restituisce il numero di `rgelt`elementi effettivamente restituiti in .
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è possibile restituire un numero di elementi inferiore al numero richiesto; in caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

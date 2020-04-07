@@ -1,30 +1,30 @@
 ---
-title: Campo m_stateFlags | Microsoft Docs
+title: m_stateFlags campo Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dee91fa96e16cdc2cd1cd75083c381422a99092
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b504d134c8951072795dc2e202cf05082b12cb64
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330856"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738386"
 ---
-# <a name="mstateflags-field"></a>campo m_stateFlags
-Archivia le informazioni sullo stato corrente del <xref:System.Threading.Tasks.Task> oggetto.
+# <a name="m_stateflags-field"></a>m_stateFlags campo
+Archivia le informazioni sullo <xref:System.Threading.Tasks.Task> stato corrente dell'oggetto.
 
- **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Spazio dei nomi:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** mscorlib (in *mscorlib. dll*)
+ **Assembly:** mscorlib (in *mscorlib.dll*)
 
- Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).
+ Poiché non è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente è disponibile in Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,10 +32,10 @@ Archivia le informazioni sullo stato corrente del <xref:System.Threading.Tasks.T
 .field assembly int32 modreq(System.Runtime.CompilerServices.IsVolatile) m_stateFlags
 ```
 
-## <a name="remarks"></a>Note
- In genere si usa il <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> proprietà per accedere a questo valore.
+## <a name="remarks"></a>Osservazioni
+ In genere <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> si utilizza la proprietà per accedere a questo valore.
 
- Questo membro può essere qualsiasi combinazione dei valori seguenti:
+ Questo membro può essere qualsiasi combinazione dei seguenti valori:
 
 - [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)
 

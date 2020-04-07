@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind | Microsoft Docs
+title: Proprietà IDebugBinder::Bind . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::Bind method
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00d7e63b8a521ee25d2c7d378aeb82d064358ec9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7a783025c96053a89956a1c77d46b5e417938a2b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344502"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736025"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-Questo metodo ottiene il contesto in memoria o un oggetto che contiene valore corrente del simbolo.
+Questo metodo ottiene il contesto di memoria o l'oggetto che contiene il valore corrente del simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ int Bind(
 
 ## <a name="parameters"></a>Parametri
 `pContainer`\
-[in] Il [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che contiene l'elemento figlio a cui fanno riferimento `pField`.
+[in] Oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che contiene l'elemento figlio a cui fa riferimento `pField`.
 
 `pField`\
-[in] Il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il simbolo.
+[in] Oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il simbolo.
 
 `ppObject`\
-[out] Restituisce il `IDebugObject` che rappresenta l'istanza del simbolo.
+[fuori] Restituisce `IDebugObject` l'oggetto che rappresenta l'istanza del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

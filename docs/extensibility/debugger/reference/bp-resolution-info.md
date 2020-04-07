@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO | Microsoft Docs
+title: proprietà BP_RESOLUTION_INFO . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_INFO structure
 ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e07110a4ab4aae014f6134130a92dfcb8a31289
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 70e66a936ec1eaf1f818ad249aa4eb14b0b63749
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350602"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737831"
 ---
-# <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
-Descrive le informazioni di punto di interruzione associato per un punto di interruzione del codice o un punto di interruzione dei dati.
+# <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
+Vengono descritte le informazioni sui punti di interruzione associati per un punto di interruzione del codice o un punto di interruzione di dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,18 +47,18 @@ public struct BP_RESOLUTION_INFO {
 
 ## <a name="members"></a>Membri
 `dwFields`\
-Una raccolta di flag dal [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) enumerazioni che specifica quali campi vengono compilate.
+Raccolta di flag [dall'BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) enumerazioni che specifica quali campi vengono compilati.
 
 `bpResLocation`\
-Il [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struttura che specifica la posizione del punto di interruzione nel codice o dati.
+Struttura [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) che specifica la posizione del punto di interruzione nel codice o nei dati.
 
 `pProgram`\
-Il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta l'applicazione in cui si è verificato l'errore punto di interruzione.
+Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta l'applicazione in cui si è verificato l'errore del punto di interruzione.
 
 `pThread`\
-Il [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread in cui viene eseguita l'applicazione contenente l'errore punto di interruzione.
+Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread in cui è in esecuzione l'applicazione che contiene l'errore del punto di interruzione.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Questa struttura viene restituita da [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).
 
 ## <a name="requirements"></a>Requisiti

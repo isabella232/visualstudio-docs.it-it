@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeLocationId | Microsoft Docs
+title: Proprietà IDebugDisassemblyStream2::GetCodeLocationId . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeLocationId
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58e3b12ecbc75b7d07d60ac399412dc5b0deb73b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32be70e11776177a0e68f09689c2262497703ab1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351689"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732249"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
-Restituisce un identificatore percorso codice per un contesto di codice specifico.
+Restituisce un identificatore di posizione del codice per un contesto di codice specifico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,17 +43,17 @@ int GetCodeLocationId( 
 
 ## <a name="parameters"></a>Parametri
 `pCodeContext`\
-[in] Un' [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto da convertire in un identificatore.
+[in] Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) da convertire in un identificatore.
 
-`puCodeLocationId` [out] Restituisce l'identificatore percorso codice. Vedere la sezione Osservazioni.
+`puCodeLocationId`[fuori] Restituisce l'identificatore della posizione del codice. Vedere la sezione Osservazioni.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_CODE_CONTEXT_OUT_OF_SCOPE` se il contesto del codice è valido, ma all'esterno dell'ambito.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_CODE_CONTEXT_OUT_OF_SCOPE` se il contesto del codice è valido ma esterno all'ambito.
 
-## <a name="remarks"></a>Note
- L'identificatore percorso codice è specifico per il motore di debug (DE) che supporta il disassembly. Questo identificatore di località viene utilizzato internamente per la Germania per tenere traccia delle posizioni nel codice e in genere è un indirizzo o un offset di qualche tipo. L'unico requisito è che se il contesto del codice di un'unica posizione è inferiore al contesto del codice di un'altra posizione, l'identificatore percorso codice corrispondente del primo contesto di codice deve essere anche minore l'identificatore percorso codice il secondo contesto del codice.
+## <a name="remarks"></a>Osservazioni
+ L'identificatore del percorso del codice è specifico del motore di debug (DE) che supporta il disassembly. Questo identificatore di posizione viene utilizzato internamente dal DE per tenere traccia delle posizioni nel codice ed è in genere un indirizzo o offset di qualche tipo. L'unico requisito è che se il contesto del codice di una posizione è minore del contesto del codice di un'altra posizione, anche l'identificatore della posizione del codice corrispondente del primo contesto di codice deve essere minore dell'identificatore della posizione del codice del secondo contesto di codice.
 
- Per recuperare il contesto del codice di un identificatore percorso codice, chiamare il [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) (metodo).
+ Per recuperare il contesto del codice di un identificatore di percorso del codice, chiamare il [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

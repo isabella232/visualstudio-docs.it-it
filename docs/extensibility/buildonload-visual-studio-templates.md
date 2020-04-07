@@ -1,5 +1,5 @@
 ---
-title: BuildOnLoad attributi ed elementi (modelli di Visual Studio)
+title: Attributo e elemento BuildOnLoad (modelli di Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - BuildOnLoad attribute [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32056aae3c860aee250248c606bbda4dbf9506c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3be4016822ccaaae2f1352f91ecc10f09273a889
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321265"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739941"
 ---
-# <a name="buildonload-attribute-and-element"></a>Elementi e attributi buildOnLoad
+# <a name="buildonload-attribute-and-element"></a>Attributo e elemento BuildOnLoad
 
-Specifica se compilare il progetto immediatamente dopo averlo creato. **BuildOnLoad** è un attributo sia un elemento.
+Specifica se compilare il progetto immediatamente dopo che è stato creato. **BuildOnLoad** è sia un attributo che un elemento.
 
-Gerarchia di elementi:
+Gerarchia degli elementi:
 
 ```xml
 <VSTemplate>
@@ -33,7 +33,7 @@ Gerarchia di elementi:
     <BuildOnLoad>
 ```
 
-## <a name="element-syntax"></a>Sintassi dell'elemento
+## <a name="element-syntax"></a>Sintassi degli elementi
 
 ```xml
 <BuildOnLoad> true/false </BuildOnLoad>
@@ -47,15 +47,15 @@ Gerarchia di elementi:
 
 ## <a name="text-value"></a>Valore di testo
 
-È necessario un valore di testo per il **BuildOnLoad** elemento. Il testo deve essere `true` o `false`, che indica se compilare il progetto immediatamente dopo averlo creato.
+È necessario un valore di testo per l'elemento **BuildOnLoad.** Il testo deve `true` `false`essere o , che indica se compilare il progetto immediatamente dopo la creazione.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 **BuildOnLoad** è un attributo facoltativo. Il valore predefinito è `false`.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono illustrati i metadati per un C# modello quando si **BuildOnLoad** viene utilizzato come un elemento:
+L'esempio seguente illustra i metadati per un modello di C , quando BuildOnLoad viene usato come elemento:The following example illustrates the metadata for a C' template when **BuildOnLoad** is used as an element:
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,7 +84,7 @@ Nell'esempio seguente vengono illustrati i metadati per un C# modello quando si 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Elemento buildProjectOnload](buildprojectonload-element-visual-studio-templates.md)
+- [BuildProjectOnload (elemento)](buildprojectonload-element-visual-studio-templates.md)
 - [Elemento TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
-- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)

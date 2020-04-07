@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_RETVAL | Microsoft Docs
+title: proprietà METADATA_ADDRESS_RETVAL . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_RETVAL structure
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f2437d10078eb623e063b3292d96ef9bb4a9cf64
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746340"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714270"
 ---
-# <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
-Questa struttura rappresenta un valore restituito da un metodo o funzione.
+# <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
+Questa struttura rappresenta un valore restituito da un metodo o una funzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,19 +47,19 @@ public struct METADATA_ADDRESS_RETVAL {
 
 ## <a name="members"></a>Membri
  `tokMethod`\
- L'ID del metodo di questo valore restituito è per.
+ ID del metodo a cui serve questo valore restituito.
 
  `dwCorType`\
- Il tipo di base del valore restituito. Si tratta di un valore compreso il `CorElementType` enumerazione definita nel file corhdr. h di .NET Framework SDK.
+ Tipo di base del valore restituito. Si tratta di `CorElementType` un valore dell'enumerazione definita nel file corhdr.h di .NET Framework SDK.
 
  `dwSigSize`\
- Le dimensioni della firma del valore restituito (archiviato in `rgSig`).
+ La dimensione della firma del valore `rgSig`restituito (come archiviata in ).
 
  `rgSig`\
- Matrice di byte che costituiscono la firma del valore restituito.
+ Matrice di byte che formano la firma del valore restituito.
 
-## <a name="remarks"></a>Note
- Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_RETVAL` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).
+## <a name="remarks"></a>Osservazioni
+ Questa struttura fa parte dell'unione nella `dwKind` struttura `DEBUG_ADDRESS_UNION` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando `ADDRESS_KIND_RETVAL` il campo della struttura è impostato su (un valore dell'enumerazione [ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: sh.h

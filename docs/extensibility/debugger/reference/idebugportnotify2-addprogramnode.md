@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::AddProgramNode | Microsoft Docs
+title: Proprietà IDebugPortNotify2::AddProgramNode . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2::AddProgramNode
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0afd0b2ae50555e29a75159edb8f52635730a56
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9090c39d85519435d17c940ad21fd55d26904765
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319471"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724982"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
-Registra un programma che è possibile eseguire il debug con la porta in cui viene eseguito.
+Registra un programma di cui è possibile eseguire il debug con la porta su cui è in esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int AddProgramNode( 
 
 ## <a name="parameters"></a>Parametri
 `pProgramNode`\
-[in] Un' [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetto che rappresenta il programma da registrare.
+[in] Oggetto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il programma da registrare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Un programma nodo può essere annullata la registrazione dalla porta chiamando il [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) (metodo).
+## <a name="remarks"></a>Osservazioni
+ È possibile annullare la registrazione di un nodo di programma dalla porta chiamando il [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadProperties | Microsoft Docs
+title: Proprietà IDebugThread2::GetThreadProperties . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadProperties
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a325e8798f54d8ec78ad0ec5318e9162b16774b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320106"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718697"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Ottiene le proprietà che descrivono questo thread.
@@ -43,19 +43,19 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Una combinazione di flag dal [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumerazione che determina quali campi della `ptp` sono da compilare.
+[in] Combinazione di flag dell'enumerazione [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) `ptp` che determina i campi di da compilare.
 
 `ptp`\
-[in, out] Oggetto [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struttura compilata con le proprietà del thread.
+[in, out] Struttura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) compilata con le proprietà del thread.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
-Le informazioni restituite da questo metodo viene in genere visualizzate nei **thread** finestra di debug.
+## <a name="remarks"></a>Osservazioni
+Le informazioni restituite da questo metodo vengono in genere visualizzate nella finestra di debug **Thread.The** information returned from this method is typically shown in the Threads debug window.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CProgram` oggetto che implementa le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfaccia.
+Nell'esempio seguente viene illustrato come `CProgram` implementare questo metodo per un oggetto semplice che implementa il [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfaccia.
 
 ```cpp
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,

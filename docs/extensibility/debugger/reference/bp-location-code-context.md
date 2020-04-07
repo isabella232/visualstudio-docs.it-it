@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_CONTEXT | Microsoft Docs
+title: BP_LOCATION_CODE_CONTEXT Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_CONTEXT structure
 ms.assetid: 37412896-021a-4f73-9bb7-4125502c2e18
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 95d09c81fa12e6f06157aeb28aa6b1837f95009e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4dcb8ffb1a1debcf6aeeca8dc4d21c1ab5f18b90
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353075"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738025"
 ---
-# <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
-Descrive la posizione di un punto di interruzione che è associato direttamente a un indirizzo nel programma sottoposto a debug.
+# <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
+Descrive la posizione di un punto di interruzione associato direttamente a un indirizzo nel programma sottoposto a debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,10 +34,10 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
 
 ## <a name="members"></a>Membri
 `pCodeContext`\
-Il [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del punto di interruzione nel codice.
+Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del punto di interruzione nel codice.
 
-## <a name="remarks"></a>Note
-Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.
+## <a name="remarks"></a>Osservazioni
+Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'unione.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

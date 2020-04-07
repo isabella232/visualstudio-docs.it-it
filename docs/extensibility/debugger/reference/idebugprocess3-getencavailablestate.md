@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetENCAvailableState | Microsoft Docs
+title: Proprietà IDebugProcess3::GetENCAvailableState . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::GetENCAvailableState
 ms.assetid: 98a5d527-8a72-476c-8e92-0bff3d97c195
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99ec4ff53fe9baad2c3a36f252c652f37822ba83
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 77345cfc3aa1dd95482052893e7c09591ad7cd4e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313948"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723650"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
-Questo metodo ottiene lo stato corrente di modifica e continuazione del processo. Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL`.
+Questo metodo ottiene lo stato corrente di Modifica e continuazione del processo. Un fornitore di `E_NOTIMPL`porta personalizzato deve sempre restituire .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,16 +41,16 @@ int GetENCAvailableState(
 
 ## <a name="parameters"></a>Parametri
 `pReason`\
-[out] Un valore compreso il [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumerazione.
+[fuori] Valore dell'enumerazione [EncUnavailableReason.](../../../extensibility/debugger/reference/encunavailablereason.md)
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.
+ Se ha `S_OK`esito positivo, restituisce ; in caso contrario, restituisce il codice di errore.
 
 > [!NOTE]
-> Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL`.
+> Un fornitore di `E_NOTIMPL`porta personalizzato deve sempre restituire .
 
-## <a name="remarks"></a>Note
- Questo stato può essere influenzato dal [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).
+## <a name="remarks"></a>Osservazioni
+ Questo stato può essere influenzato da [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

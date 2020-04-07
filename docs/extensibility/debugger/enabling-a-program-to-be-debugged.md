@@ -1,35 +1,35 @@
 ---
-title: Abilitazione di un programma da sottoporre a debug | Microsoft Docs
+title: Abilitazione di un programma per il debug Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], enabling for programs
 ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b939b692e4e93243f5f346fcd2fcb2872e989615
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17c6218cd0b25c0cf0134351fd5efd7490b6a1f3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341636"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738889"
 ---
-# <a name="enable-a-program-to-be-debugged"></a>Abilitare un programma da sottoporre a debug
-Prima che il motore di debug (DE) può eseguire il debug di un programma, è necessario avviare il DE o collegarlo a un programma esistente.
+# <a name="enable-a-program-to-be-debugged"></a>Abilitare il debug di un programmaEnable a program to be debugged
+Prima che il motore di debug (DE) possa eseguire il debug di un programma, è necessario avviare il DE o collegarlo a un programma esistente.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Ottenere una porta](../../extensibility/debugger/getting-a-port.md) viene illustrato come ottenere una porta come il primo passaggio per abilitare un programma da sottoporre a debug.
+ [Ottenere una portaGet a port](../../extensibility/debugger/getting-a-port.md) Viene illustrato come ottenere una porta come primo passaggio per consentire il debug di un programma.
 
- [Registrare il programma](../../extensibility/debugger/registering-the-program.md) illustra il passaggio successivo di abilitazione di un programma da sottoporre a debug: registrandola con la porta. Una volta registrato, il programma di debug può essere eseguito tramite il processo di collegamento o il debug just-in-time (JIT).
+ [Registrare il programma](../../extensibility/debugger/registering-the-program.md) Viene illustrato il passaggio successivo nell'abilitazione di un programma da sottoporre a debug: la registrazione con la porta. Una volta registrato, il programma può essere sottoposto a debug dal processo di collegamento o jIT (Just-In-Time) di debug.
 
- [Collegare al programma](../../extensibility/debugger/attaching-to-the-program.md) illustra il passaggio successivo: collegare il debugger al programma.
+ [Collegamento al programma](../../extensibility/debugger/attaching-to-the-program.md) Viene illustrato il passaggio successivo: collegamento del debugger al programma.
 
- [Basato su Avvio collegamento](../../extensibility/debugger/launch-based-attachment.md) descrive basato su avvio allegato a un programma, che risulta automatico all'avvio per il modello SDM.
+ [Collegamento basato sul lancio](../../extensibility/debugger/launch-based-attachment.md) Descrive l'allegato basato sul lancio di un programma, che viene automatico all'avvio da parte del modello SDM.
 
- [Inviare gli eventi richiesti](../../extensibility/debugger/sending-the-required-events.md) illustra gli eventi necessari quando si crea un motore di debug (DE) e collegarlo a un programma.
+ [Inviare gli eventi richiesti](../../extensibility/debugger/sending-the-required-events.md) Vengono dettagliati gli eventi necessari durante la creazione di un motore di debug (DE) e il collegamento a un programma.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md) definisce un motore di debug (DE) e vengono descritti i servizi implementati tramite le interfacce DE e come possono causare il debugger per la transizione tra diverse modalità operative.
+ [Creazione di un motore di debug personalizzatoCreating a custom debug engine](../../extensibility/debugger/creating-a-custom-debug-engine.md) Definisce un motore di debug (DE) e descrive i servizi implementati tramite le interfacce DE e come possono causare la transizione del debugger tra diverse modalità operative.

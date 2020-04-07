@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE | Microsoft Docs
+title: REFERENCE_COMPARE . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d166917ec9770e3f8d1f41f3774676278b894724
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2aa9e7c608c4aabdbb808629112b922a5ed3322e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322351"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713723"
 ---
-# <a name="referencecompare"></a>REFERENCE_COMPARE
+# <a name="reference_compare"></a>REFERENCE_COMPARE
 Specifica il tipo di confronto per i riferimenti.
 
 ## <a name="syntax"></a>Sintassi
@@ -46,16 +46,16 @@ public enum enum_REFERENCE_COMPARE { 
 
 ## <a name="fields"></a>Campi
  `REF_COMPARE_EQUAL`\
- Specifica un confronto di uguaglianza.
+ Specifica un confronto di uguale a.
 
  `REF_COMPARE_LESS_THAN`\
- Specifica un minore di-confronto.
+ Specifica un confronto minore di.
 
  `REF_COMPARE_GREATER_THAN`\
- Specifica una maggiore-confronto.
+ Specifica un confronto maggiore di.
 
-## <a name="remarks"></a>Note
- Passato come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugreference2-compare.md) (metodo).
+## <a name="remarks"></a>Osservazioni
+ Passato come argomento per il [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) metodo.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h
@@ -66,4 +66,4 @@ public enum enum_REFERENCE_COMPARE { 
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+- [Confronta](../../../extensibility/debugger/reference/idebugreference2-compare.md)

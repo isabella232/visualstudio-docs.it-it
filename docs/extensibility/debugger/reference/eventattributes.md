@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES | Microsoft Docs
+title: PROPRIETÀ EVENTATTRIBUTES . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVENTATTRIBUTES enumeration
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3361d27a9e0a4a1f56035c0d2af20d9fa9a9303
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c479058a5e6abb61fb419425706d2a8b26858d04
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337760"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737067"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Specifica gli attributi dell'evento.
@@ -54,30 +54,30 @@ public enum enum_EVENTATTRIBUTES {
 
 ## <a name="fields"></a>Campi
 `EVENT_ASYNCHRONOUS`\
-Indica che l'evento è asincrona e non necessita di alcuna risposta all'evento.
+Indica che l'evento è asincrono ed è necessaria alcuna risposta all'evento.
 
 `EVENT_SYNCHRONOUS`\
-Indica che l'evento è sincrona; per mezzo di rispondere [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
+Indica che l'evento è sincrono; rispondere tramite [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
 
 `EVENT_STOPPING`\
-Indica che si tratta di un evento di arresto. Deve essere combinato con `EVENT_ASYNCHRONOUS` o `EVENT_SYNCHRONOUS`.
+Indica che si tratta di un evento di arresto. Deve essere combinato `EVENT_ASYNCHRONOUS` `EVENT_SYNCHRONOUS`con uno o .
 
 `EVENT_ASYNC_STOP`\
-Indica un evento di arresto asincrona. Non è attualmente alcun evento di questo tipo. Questo flag è solo un segnaposto.
+Indica un evento di arresto asincrono. Al momento non esiste alcun evento di questo tipo. Questo flag è solo un segnaposto.
 
 `EVENT_SYNC_STOP`\
-Indica un evento di arresto sincrono (una combinazione di `EVENT_SYNCHRONOUS` e `EVENT_STOPPING`). Questo valore viene utilizzato da un motore di debug (DE) quando si invia un evento di arresto. La risposta viene effettuata mediante una chiamata a [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [passaggio](../../../extensibility/debugger/reference/idebugprogram2-step.md), o [continua](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+Indica un evento di arresto `EVENT_SYNCHRONOUS` sincrono (una combinazione di e `EVENT_STOPPING`). Questo valore viene utilizzato da un motore di debug (DE) quando invia un evento di arresto. La risposta viene effettuata tramite una chiamata a [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)o [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
 
 `EVENT_IMMEDIATE`\
-Indica un evento che viene inviato immediatamente e in modo sincrono all'IDE. Questo flag viene combinato con altri flag Analogamente `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, o `EVENT_SYNC_STOP` per indicare il tipo di evento e il fatto che il meccanismo di risposta (se presente) è noto.
+Indica un evento che viene inviato immediatamente e in modo sincrono all'IDE. Questo flag viene combinato `EVENT_ASYNCHRONOUS`con `EVENT_SYNCHRONOUS`altri `EVENT_SYNC_STOP` flag come , , o per indicare il tipo di evento e il fatto che il meccanismo di risposta (se presente) è noto.
 
 `EVENT_EXPRESSION_EVALUATION`\
 L'evento è il risultato della valutazione dell'espressione.
 
-## <a name="remarks"></a>Note
-Questi valori vengono passati il `dwAttrib` parametro del [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) (metodo).
+## <a name="remarks"></a>Osservazioni
+Questi valori vengono `dwAttrib` passati nel parametro del metodo [Event.](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 
-Questi valori possono essere combinati con un bit per bit `OR`.
+Questi valori possono essere combinati `OR`con un oggetto .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

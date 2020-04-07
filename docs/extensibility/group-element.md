@@ -1,25 +1,25 @@
 ---
-title: Elemento Group | Microsoft Docs
+title: Elemento Group Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3c1c4bedc5ff44f797e6b46e351dc3753362501
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342361"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711225"
 ---
-# <a name="group-element"></a>Elemento Group
-Definisce un gruppo di comandi di VSPackage.
+# <a name="group-element"></a>Group - elemento
+Definisce un gruppo di comandi VSPackage.Defines a VSPackage command group.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,23 +36,23 @@ Definisce un gruppo di comandi di VSPackage.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|guid|Obbligatorio. GUID dell'identificatore di comando/ID GUID.|
-|ID|Obbligatorio. ID dell'identificatore di comando/ID GUID.|
-|priority|Facoltativo. Valore numerico che specifica la priorità.|
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Obbligatorio. GUID dell'identificatore di comando GUID/ID.|
+|id|Obbligatorio. ID dell'identificatore di comando GUID/ID.|
+|priority|Facoltativa. Valore numerico che specifica la priorità.|
+|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Padre|Facoltativo. L'elemento padre del pulsante.|
+|Parent|Facoltativa. Elemento padre del pulsante.|
 |Annotazione|Commento facoltativo.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comandi di un pacchetto VSPackage.|
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene voci che definiscono i gruppi di comandi di un pacchetto VSPackage.|
 
 ## <a name="example"></a>Esempio
 
@@ -63,4 +63,4 @@ Definisce un gruppo di comandi di VSPackage.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

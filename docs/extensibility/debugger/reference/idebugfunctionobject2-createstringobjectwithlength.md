@@ -1,28 +1,28 @@
 ---
-title: IDebugFunctionObject2::CreateStringObjectWithLength | Microsoft Docs
+title: IDebugFunctionObject2::CreateStringObjectWithLength . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - CreateStringObjectWithLength
 - IDebugFunctionObject2::CreateStringObjectWithLength
 ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce0fdafc6835fdccc87638e17d3bbd01a1415abb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 937d325f8637a3260121def189d472dcfb3e1309
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313513"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728473"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
-Crea un oggetto stringa che contiene la lunghezza specificata.
+Crea un oggetto stringa con la lunghezza specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,16 +44,16 @@ int CreateStringObjectWithLength (
 
 ## <a name="parameters"></a>Parametri
 `pcstrString`\
-[in] Il valore di stringa per l'oggetto stringa.
+[in] Valore stringa per l'oggetto stringa.
 
 `uiLength`\
-[in] La lunghezza della stringa in byte.
+[in] Lunghezza della stringa in byte.
 
 `ppObject`\
-[out] Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto che rappresenta l'oggetto stringa appena creato.
+[fuori] Restituisce un [oggetto IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto stringa appena creato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArgumentCount | Microsoft Docs
+title: IDebugBinder3::GetTypeArgumentCount . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetTypeArgumentCount method
 ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9dff83d4d9c09ebc2572fa3897ae528d2adce4b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: db43ed4dc178cf5080822e2dc387b5faa4bc5cd1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330757"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735707"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
-Questo metodo restituisce il numero di tipi di argomento associato all'oggetto.
+Questo metodo restituisce il numero di tipi di argomento associati a questo oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetTypeArgumentCount(
 
 ## <a name="parameters"></a>Parametri
 `uCount`\
-[out] Numero di tipi di argomento associato all'oggetto.
+[fuori] Numero di tipi di argomento associati a questo oggetto.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Il valore restituito da questo metodo può essere utilizzato per allocare una matrice per l'uso con il [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) (metodo).
+## <a name="remarks"></a>Osservazioni
+ Il valore restituito da questo metodo può essere utilizzato per allocare una matrice da utilizzare con il [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO_FIELDS | Microsoft Docs
+title: proprietà FIELD_INFO_FIELDS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9a3d2e796d37606c51918d8e49db920161d63f55
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337675"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736901"
 ---
-# <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
-Specifica le informazioni da recuperare su un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.
+# <a name="field_info_fields"></a>FIELD_INFO_FIELDS
+Specifica le informazioni da recuperare su un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,23 +52,23 @@ public enum enum_FIELD_INFO_FIELDS {
 
 ## <a name="fields"></a>Campi
 `FIF_FULLNAME`\
-Initialize/usare la `bstrFullName` campo le [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struttura.
+Inizializzare/utilizzare `bstrFullName` il campo nella [struttura FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
 
 `FIF_NAME`\
-Initialize/usare la `bstrName` campo il `FIELD_INFO` struttura.
+Inizializzare/utilizzare `bstrName` il `FIELD_INFO` campo nella struttura.
 
 `FIF_TYPE`\
-Initialize/usare la `bstrType` campo il `FIELD_INFO` struttura.
+Inizializzare/utilizzare `bstrType` il `FIELD_INFO` campo nella struttura.
 
 `FIF_MODIFIERS`\
-Initialize/usare la `bstrModifiers` campo il `FIELD_INFO` struttura.
+Inizializzare/utilizzare `bstrModifiers` il `FIELD_INFO` campo nella struttura.
 
-## <a name="remarks"></a>Note
-Questi valori vengono passati anche come argomento per il [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) metodo per specificare quali campi della [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struttura devono essere inizializzate.
+## <a name="remarks"></a>Osservazioni
+Questi valori vengono inoltre passati come argomento per il [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) metodo per specificare quali campi del [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struttura devono essere inizializzati.
 
-Questi valori vengono anche utilizzati nel `dwFields` membro del `FIELD_INFO` struttura per indicare quali campi vengono usati e valido.
+Questi valori vengono utilizzati anche nel `dwFields` membro della `FIELD_INFO` struttura per indicare quali campi vengono utilizzati e validi.
 
-Questi flag possono essere combinati con un bit per bit `OR`.
+Questi flag possono essere combinati `OR`con un oggetto .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: sh.h

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineInfo | Microsoft Docs
+title: Proprietà IDebugCoreServer2::GetMachineInfo . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetInfo
 ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a80ee7bfa6e9e17135683fede9de24f110b7ca6c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9411c296f396043a63eee6e4254a35d5c2c35884
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317890"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733159"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
-Recupera una descrizione del computer che in cui è in esecuzione server core.
+Recupera una descrizione del computer su cui è in esecuzione il server core.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ int GetMachineInfo( 
 
 ## <a name="parameters"></a>Parametri
 `Fields`\
-[in] Una combinazione di flag dal [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) enumerazione che specificano quali campi della `pMachineInfo` sono da compilare.
+[in] Combinazione di flag dell'enumerazione [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) `pMachineInfo` che specificano i campi di da compilare.
 
  `pMachineInfo`\
 
- [in, out] Oggetto [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struttura compilata con una descrizione della macchina.
+ [in, out] Struttura [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) compilata con una descrizione della macchina.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

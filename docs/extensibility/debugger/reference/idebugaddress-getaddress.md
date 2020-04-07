@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress::GetAddress | Microsoft Docs
+title: IDebugAddress::GetAddress . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress:GetAddress method
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f787f041c6c39b8120a768f9288efe86649bb227
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 162a64c9118bdcde23208082350005e607a237b8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318000"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736600"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
-Restituisce una struttura che descrive un oggetto e il relativo percorso nel relativo ambito o di un contenitore.
+Restituisce una struttura che descrive un oggetto e la relativa posizione all'interno del relativo ambito o contenitore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetAddress(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-[in, out] Oggetto [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struttura che viene compilato da questo metodo.
+[in, out] Struttura [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) compilata da questo metodo.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- Il [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struttura viene passata a questo metodo, che quindi viene riempita con le informazioni appropriate. Modalità di interpretazione di queste informazioni dipende dal tipo di informazioni restituite e il gestore di simboli se stesso. Visualizzare [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) per altri dettagli.
+## <a name="remarks"></a>Osservazioni
+ La [struttura DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) viene passata a questo metodo, che quindi lo inserisce con le informazioni appropriate. Il modo in cui queste informazioni vengono interpretate dipende dal tipo di informazioni restituite e dal gestore di simboli stesso. Per ulteriori [dettagli, vedere DEBUG_ADDRESS.](../../../extensibility/debugger/reference/debug-address.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

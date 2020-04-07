@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue | Microsoft Docs
+title: Proprietà IDebugCustomViewer::DisplayValue . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d6ff987e12e70a9d3dd443cfafc45d2698469b8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 32e444d0d6a30484f708d3001b95e7a71856edd5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335697"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732444"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Questo metodo viene chiamato per visualizzare il valore specificato.
@@ -47,24 +47,24 @@ int DisplayValue(
 
 ## <a name="parameters"></a>Parametri
 `hwnd`\
-[in] Finestra padre
+[in] Finestra Padre
 
 `dwID`\
-[in] ID per i visualizzatori personalizzati che supportano più di un tipo.
+[in] ID per visualizzatori personalizzati che supportano più di un tipo.
 
 `pHostServices`\
 [in] Riservato. Sempre impostato su null.
 
 `pDebugProperty`\
-[in] Interfaccia che può essere utilizzato per recuperare il valore da visualizzare.
+[in] Interfaccia che può essere utilizzata per recuperare il valore da visualizzare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.
+ Se ha `S_OK`esito positivo, restituisce ; in caso contrario restituisce il codice di errore.
 
-## <a name="remarks"></a>Note
- La visualizzazione è "modal" in quanto questo metodo crea la finestra necessaria, visualizzare il valore, attende l'input e chiudere la finestra, tutti prima di restituire al chiamante. Ciò significa che il metodo deve gestire tutti gli aspetti della visualizzazione del valore della proprietà, dalla creazione di una finestra di output, in attesa di input dell'utente, all'eliminazione della finestra.
+## <a name="remarks"></a>Osservazioni
+ La visualizzazione è "modale" in quanto questo metodo creerà la finestra necessaria, visualizzerà il valore, attenderà l'input e chiude la finestra, il tutto prima di tornare al chiamante. Ciò significa che il metodo deve gestire tutti gli aspetti della visualizzazione del valore della proprietà, dalla creazione di una finestra per l'output, all'attesa dell'input dell'utente, all'eliminazione della finestra.
 
- Per supportare la modifica del valore sul determinato [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) dell'oggetto, è possibile utilizzare il [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) (metodo), ovvero se il valore può essere espresso sotto forma di stringa. In caso contrario, è necessario creare un'interfaccia personalizzata, ovvero esclusivo per l'analizzatore di espressioni l'implementazione di questa `DisplayValue` metodo, ovvero sullo stesso oggetto che implementa il `IDebugProperty3` interfaccia. Questa interfaccia personalizzata verrà forniti metodi per modificare i dati di una dimensione arbitraria o complessità.
+ Per supportare la modifica del valore nell'oggetto [Specificato IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) oggetto, è possibile utilizzare il [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) metodo, se il valore può essere espresso come stringa. In caso contrario, è necessario creare un'interfaccia personalizzata, in esclusiva per l'analizzatore di espressioni che implementa questo `DisplayValue` metodo, sullo stesso oggetto che implementa l'interfaccia. `IDebugProperty3` Questa interfaccia personalizzata fornirebita metodi per modificare i dati di una dimensione o complessità arbitraria.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

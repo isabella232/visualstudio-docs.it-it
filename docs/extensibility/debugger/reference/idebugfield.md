@@ -1,5 +1,5 @@
 ---
-title: IDebugField | Microsoft Docs
+title: Proprietà IDebugField . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField interface
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80def3f9c3d270ebd6f2217f6ce39f07ef27b119
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337514"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728749"
 ---
 # <a name="idebugfield"></a>IDebugField
-Questa interfaccia rappresenta un campo, vale a dire, una descrizione di un simbolo o del tipo.
+Questa interfaccia rappresenta un campo, ovvero una descrizione di un simbolo o di un tipo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,27 +32,27 @@ IDebugField : IUnknown
  Un provider di simboli implementa questa interfaccia come classe base per tutti i campi.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Questa interfaccia è la classe base per tutti i campi. In base al valore restituito del [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), questa interfaccia può restituire più specializzate interfacce usando [QueryInterface](/cpp/atl/queryinterface). Inoltre, molte delle interfacce restituiscono `IDebugField` oggetti da metodi diversi.
+ Questa interfaccia è la classe base per tutti i campi. In base al valore restituito di [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), questa interfaccia può restituire interfacce più specializzate utilizzando [QueryInterface](/cpp/atl/queryinterface). Inoltre, molte interfacce `IDebugField` restituiscono oggetti da vari metodi.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IDebugField`.
+ Nella tabella seguente vengono `IDebugField`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Ottiene visualizzabile informazioni relative al tipo o un simbolo.|
+|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Ottiene informazioni visualizzabili sul simbolo o sul tipo.|
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Ottiene il tipo di campo.|
-|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Ottiene il tipo di campo.|
+|[Tipo GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Ottiene il tipo di campo.|
 |[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Ottiene il contenitore del campo.|
 |[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Ottiene l'indirizzo del campo.|
 |[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Ottiene le dimensioni di un campo, in byte.|
-|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Ottiene le informazioni relative a un campo estese.|
-|[Equal](../../../extensibility/debugger/reference/idebugfield-equal.md)|Confronta due campi.|
-|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Ottiene indipendenti dal tipo di informazioni sul simbolo o tipo.|
+|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Ottiene informazioni estese su un campo.|
+|[Uguale](../../../extensibility/debugger/reference/idebugfield-equal.md)|Confronta due campi.|
+|[Informazioni su GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Ottiene informazioni indipendenti dal tipo sul simbolo o sul tipo.|
 
-## <a name="remarks"></a>Note
- Un tipo è equivalente a un linguaggio C `typedef`.
+## <a name="remarks"></a>Osservazioni
+ Un tipo è equivalente `typedef`a un linguaggio C .
 
- Nell'esempio seguente del linguaggio C++ `weather` è un tipo di classe, e `sunny` e `stormy` simboli:
+ Nell'esempio di linguaggio `weather` C, è un `sunny` `stormy` tipo di classe seguente e sono simboli:
 
 ```cpp
 class weather;
@@ -60,7 +60,7 @@ weather sunny;
 weather stormy;
 ```
 
- Se un campo rappresenta un simbolo o tipo può essere determinato chiamando [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) ed esaminando il [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) risultato. Se il `FIELD_KIND_TYPE` bit viene impostato, il campo è un tipo e se il `FIELD_KIND_SYMBOL` bit viene impostato, è un simbolo.
+ Se un campo rappresenta un simbolo o un tipo può essere determinato chiamando [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) ed esaminando il [risultato della FIELD_KIND.](../../../extensibility/debugger/reference/field-kind.md) Se `FIELD_KIND_TYPE` il bit è impostato, il campo `FIELD_KIND_SYMBOL` è un tipo e, se il bit è impostato, è un simbolo.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: sh.h

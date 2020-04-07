@@ -6,23 +6,23 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
 ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 682786df1d676391cc1ec838e739cb03983ebb66
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa1d03b2f91cea03403f4893e61ec15bf5b82952
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334664"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733393"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-Caricare i simboli di debug da un flusso di dati ha il **ICorDebugModule** oggetto.
+Caricare i simboli di debug da un flusso di dati dato il **ICorDebugModule** oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,28 +50,28 @@ int LoadSymbolsFromStreamWithCorModule(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-[in] Identificatore del dominio dell'applicazione.
+[in] Identificatore del dominio applicazione.
 
 `guidModule`\
 [in] Identificatore univoco del modulo.
 
 `baseAddress`\
-[in] Indirizzo di base di memoria.
+[in] Indirizzo di memoria di base.
 
 `pUnkMetadataImport`\
 [in] Oggetto che contiene i metadati del simbolo.
 
 `pUnkCorDebugModule`\
-[in] Oggetto che implementa il [ICorDebugModule (interfaccia)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+[in] Oggetto che implementa [l'interfaccia ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
 `pStream`\
 [in] Flusso di dati che contiene i simboli di debug da caricare.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaccia.
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(

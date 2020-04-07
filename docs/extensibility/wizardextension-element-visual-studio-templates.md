@@ -1,5 +1,5 @@
 ---
-title: Elemento WizardExtension (modelli di Visual Studio) | Microsoft Docs
+title: Elemento WizardExtension (modelli di Visual Studio) Documenti Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - WizardExtension element [Visual Studio Templates]
 - <WizardExtension> element [Visual Studio Templates]
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfd46573f70b31559f9d6c4749c142d763537764
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748940"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740381"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Elemento WizardExtension (modelli di Visual Studio)
-Contiene gli elementi di registrazione per personalizzare la creazione guidata modello.
+Contiene gli elementi di registrazione per la personalizzazione della creazione guidata modello.
 
- \<VSTemplate >... \<WizardExtension >
+ \<> VSTemplate ... \<WizardExtension>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,26 +39,26 @@ Contiene gli elementi di registrazione per personalizzare la creazione guidata m
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Specifica il nome o il nome sicuro di un assembly visualizzato nell'Global Assembly Cache. In un elemento `WizardExtension` deve essere presente almeno un elemento `Assembly`.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Nome completo della classe che implementa l'interfaccia `IWizard`. In un elemento `WizardExtension` deve essere presente almeno un elemento `FullClassName`.|
+|[Assemblea](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Specifica il nome o il nome sicuro di un assembly visualizzato nella Global Assembly Cache. Deve essere presente `Assembly` almeno un `WizardExtension` elemento in un elemento.|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Nome completo della classe che `IWizard` implementa l'interfaccia. Deve essere presente `FullClassName` almeno un `WizardExtension` elemento in un elemento.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contiene tutti i metadati per il modello di progetto, il modello di elemento o starter kit.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contiene tutti i metadati per il modello di progetto, il modello di elemento o lo starter kit.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  `WizardExtension` è un elemento figlio facoltativo di `VSTemplate`.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows.
+ Nell'esempio seguente vengono illustrati i metadati [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] per il modello di progetto standard per un'applicazione Windows.The following example illustrates the metadata for the standard project template for a Windows application.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -91,4 +91,4 @@ Contiene gli elementi di registrazione per personalizzare la creazione guidata m
 ## <a name="see-also"></a>Vedere anche
 - [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
-- [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Procedura: utilizzare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)

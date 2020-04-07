@@ -1,5 +1,5 @@
 ---
-title: Oggetto VSCodeWindowManager | Microsoft Docs
+title: Oggetto VSCodeWindowManager . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - VsCodeWindowManager object
 - views [Visual Studio SDK], VSCodeWindowManager object
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c67fb719c6ec87e7707a406e2e7f67cd71569b39
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 17bc9462af55ec9621654bd39cd65a2091f3f73f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189043"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740412"
 ---
 # <a name="vscodewindowmanager-object"></a>Oggetto VSCodeWindowManager
 
-Il servizio di linguaggio implementa gestione finestre del codice ed è responsabile della gestione delle aree di controllo (ad esempio, la barra a discesa). Per altre informazioni, vedere [personalizzazione delle finestre di codice tramite l'API legacy](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+Il servizio di linguaggio implementa il gestore della finestra del codice ed è responsabile della gestione delle aree di controllo (ad esempio, la barra a discesa). Per ulteriori informazioni, vedere Personalizzazione delle finestre di [codice tramite l'API Legacy](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
 
-Nella tabella seguente vengono illustrate le interfacce nell'oggetto `VSCodeWindowManager`.
+Nella tabella seguente vengono illustrate `VSCodeWindowManager` le interfacce nell'oggetto.
 
 |Interfaccia|Descrizione|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Consente l'aggiunta o la rimozione di aree di strumenti, ad esempio barre a discesa, da una finestra del codice.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Consente di aggiungere o rimuovere aree di controllo (ad esempio barre a discesa) da una finestra del codice.|

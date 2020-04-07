@@ -1,52 +1,52 @@
 ---
-title: I punti di interruzione (Visual Studio SDK) | Microsoft Docs
+title: Punti di interruzione (Visual Studio SDK) Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be901dcb4692fa556008199aeea250c9427b3167
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7c9d61c82886f237e8c9f544a59d8fe167548277
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332522"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739198"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Punti di interruzione (Visual Studio SDK)
-Esistono tre tipi di punti di interruzione: in sospeso, associazione e di errore.
+Esistono tre tipi di punti di interruzione: in sospeso, associato ed errore.
 
- **Oggetto in sospeso punto di interruzione:**
+ **Un punto di interruzione in sospeso:A pending breakpoint:**
 
-- È un'astrazione che contiene tutte le informazioni necessarie per associare un punto di interruzione a uno o più contesti di codice in uno o più programmi. Ogni volta che un programma in fase di debug causa codice per caricare, il motore di debug controlla tutti i punti di interruzione in sospeso per vedere se può essere associati.
+- È un'astrazione che contiene tutte le informazioni necessarie per associare un punto di interruzione a uno o più contesti di codice in uno o più programmi. Ogni volta che un programma in fase di debug causa il caricamento del codice, il motore di debug controlla tutti i punti di interruzione in sospeso per verificare se possono essere associati.
 
-   Un punto di interruzione in sospeso stesso mai associa al codice, ma piuttosto raccoglie e si dice che contiene tutti i punti di interruzione associati che genera.
+   Un punto di interruzione in sospeso non si associa mai al codice, ma raccoglie e si dice che contenga tutti i punti di interruzione associati che genera.
 
 - È rappresentato da un [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaccia.
 
-  **Un punto di interruzione associato:**
+  **Un punto di interruzione associato:A bound breakpoint:**
 
-- È un'astrazione per un punto di interruzione associata o associata a un contesto di codice singolo. Ogni punto di interruzione associato viene generato in risposta a un punto di interruzione in sospeso. Un punto di interruzione in sospeso può, tuttavia, generare più di un punto di interruzione associato.
+- È un'astrazione per un punto di interruzione associato o associato a un singolo contesto di codice. Ogni punto di interruzione associato viene generato in risposta a un punto di interruzione in sospeso. Un punto di interruzione in sospeso può, tuttavia, generare più di un punto di interruzione associato.
 
-   Quando il codice scaricato, un punto di interruzione associato può annullare l'associazione e rimossi.
+   Quando il codice viene scaricato, un punto di interruzione associato può essere non associato ed eliminato.
 
 - È rappresentato da un [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaccia.
 
-  **Un punto di interruzione di errore:**
+  **Un punto di interruzione di errore:An error breakpoint:**
 
-- È un'astrazione per la descrizione di un errore nel tentativo di associare un punto di interruzione in sospeso a un contesto del codice. Un punto di interruzione di errore descrive un errore nel percorso o nell'espressione di punto di interruzione se stesso. Per altre informazioni, vedere [associazione dei punti di interruzione](../../extensibility/debugger/binding-breakpoints.md).
+- È un'astrazione per la descrizione di un errore nel tentativo di associare un punto di interruzione in sospeso a un contesto di codice. Un punto di interruzione di errore descrive un errore nella posizione o nell'espressione del punto di interruzione stesso. Per ulteriori informazioni, vedere [Associazione di punti di interruzione](../../extensibility/debugger/binding-breakpoints.md).
 
-   L'errore punto di interruzione può essere un errore o un avviso.
+   L'errore del punto di interruzione può essere un errore o un avviso.
 
 - È rappresentato da un [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interfaccia.
 
 ## <a name="see-also"></a>Vedere anche
 - [Programmi](../../extensibility/debugger/programs.md)
-- [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)
+- [Concetti del debuggerDebugger concepts](../../extensibility/debugger/debugger-concepts.md)
 - [Contesto del codice](../../extensibility/debugger/code-context.md)
 - [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::PassToDebuggee | Microsoft Docs
+title: IDebugExceptionEvent2::PassToDebuggee . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::PassToDebuggee
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca6c35b3d4a238404b92b50de486a7671bfc4726
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aec6f460295b59b2b5455b83d5b0be554bca24fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326106"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729827"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
-Specifica se l'eccezione deve essere passata per il programma in fase di debug quando si riprende l'esecuzione o se l'eccezione deve essere eliminato.
+Specifica se l'eccezione deve essere passata al programma sottoposto a debug alla ripresa dell'esecuzione o se l'eccezione deve essere eliminata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,17 +41,17 @@ int PassToDebuggee(
 
 ## <a name="parameters"></a>Parametri
 `fPass`\
-[in] Diverso da zero (`TRUE`) se l'eccezione deve essere passata programma sottoposto a debug quando si riprende l'esecuzione, oppure zero (`FALSE`) se l'eccezione deve essere eliminato.
+[in] Diverso da`TRUE`zero ( ) se l'eccezione deve essere passata al`FALSE`programma sottoposto a debug alla ripresa dell'esecuzione oppure zero ( ) se l'eccezione deve essere eliminata.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Chiamare questo metodo non determina effettivamente qualsiasi codice da eseguire nel programma sottoposto a debug. La chiamata è semplicemente impostare lo stato per l'esecuzione di codice successiva. Ad esempio, le chiamate al [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) metodo può restituire `S_OK` con il [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md).`dwState` campo impostato su `EXCEPTION_STOP_SECOND_CHANCE`.
+## <a name="remarks"></a>Osservazioni
+ La chiamata a questo metodo non causa l'esecuzione di codice nel programma sottoposto a debug. La chiamata consiste semplicemente nell'impostare lo stato per la successiva esecuzione del codice. Ad esempio, le chiamate al [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) metodo possono restituire `S_OK` con il [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md).`dwState` campo impostato `EXCEPTION_STOP_SECOND_CHANCE`su .
 
- Potrebbe essere visualizzato l'IDE di [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) eventi e chiamate di [continua](../../../extensibility/debugger/reference/idebugprogram2-continue.md) (metodo). Il motore di debug (DE) deve avere un comportamento predefinito per gestire il caso se il `PassToDebuggee` non viene chiamato.
+ L'IDE può ricevere il [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) evento e chiamare il [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md) metodo. Il motore di debug (DE) deve avere un `PassToDebuggee` comportamento predefinito per gestire il caso se il metodo non viene chiamato.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
 - [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)
-- [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)
+- [Continuare](../../../extensibility/debugger/reference/idebugprogram2-continue.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodeContexts | Microsoft Docs
+title: IDebugProgram2::EnumCodeContexts ??? Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumCodeContexts
 ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2b710c48d8fe030bab1f7ea6b2fe76a10b879499
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c22a5ce398e76ee97b2f0448900fd4e38f996615
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326719"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723046"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-Recupera un elenco dei contesti di codice per una determinata posizione nel file di origine.
+Recupera un elenco dei contesti di codice per una posizione specificata in un file di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,15 +43,15 @@ int EnumCodeContexts( 
 
 ## <a name="parameters"></a>Parametri
 `pDocPos`\
-[in] Un' [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) oggetto che rappresenta una posizione astratta in un file di origine noto all'IDE.
+[in] Oggetto [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) che rappresenta una posizione astratta in un file di origine noto all'IDE.
 
-`ppEnum` [out] Restituisce un [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) oggetto che contiene un elenco dei contesti di codice.
+`ppEnum`[fuori] Restituisce un [oggetto IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) che contiene un elenco dei contesti del codice.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo consente il debug di sessione manager (SDM) o un IDE di eseguire il mapping di una posizione del file di origine in una posizione di codice. Se l'origine genera più blocchi di codice (ad esempio, i modelli di C++), viene restituito più di un contesto del codice.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo consente al gestore di sessione di debug (SDM) o IDE per eseguire il mapping di una posizione del file di origine in una posizione di codice. Se l'origine genera più blocchi di codice, viene restituito più di un contesto di codice.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

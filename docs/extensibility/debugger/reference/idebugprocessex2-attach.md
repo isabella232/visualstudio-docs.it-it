@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Attach | Microsoft Docs
+title: Proprietà IDebugProcessEx2::Attach . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5932535810f28e6f5da96ab69457f7364563d622
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d70da2530a1677367a22968436a17eba809fd24a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325336"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723391"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
-Questo metodo indica il processo a una sessione è ora il debug del processo.
+Questo metodo informa il processo che una sessione sta eseguendo il debug del processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int Attach(
 
 ## <a name="parameters"></a>Parametri
 `pSession`\
-[in] Un valore che identifica in modo univoco la sessione di connessione a questo processo.
+[in] Valore che identifica in modo univoco la sessione che si connette a questo processo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- L'interfaccia passato `pSession` deve essere considerata solo come un cookie, un valore che identifica in modo univoco la gestione del debug sessione connessione a questo processo; nessuno dei metodi nell'interfaccia specificata sono funzionali.
+## <a name="remarks"></a>Osservazioni
+ L'interfaccia `pSession` passata deve essere trattata solo come un cookie, un valore che identifica in modo univoco il gestore di debug della sessione che si connette a questo processo. nessuno dei metodi sull'interfaccia fornita è funzionale.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

@@ -1,27 +1,27 @@
 ---
-title: DisplayKind | Microsoft Docs
+title: Proprietà DisplayKind . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c15726a3725b756e646e73804643f6b1ab36374
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318273"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737259"
 ---
 # <a name="displaykind"></a>DisplayKind
-Enumera i valori validi che rappresentano i tipi di informazioni da eseguire da un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) dell'oggetto e visualizzare all'utente.
+Enumera i valori validi che rappresentano i tipi di informazioni da accettare da un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto e visualizzare all'utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Nome del campo.
 Tipo di campo.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: EE.h
+Intestazione: Ee.h
 
 Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 

@@ -1,5 +1,5 @@
 ---
-title: Comandi elemento | Microsoft Docs
+title: Elemento Commands . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - Commands element (VSCT XML schema)
 - VSCT XML schema elements, Commands
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab8629fb3ef83277f1366a5141c400b8eeea70e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3ea2400cca19a02475caecec3d022e0b78794ae4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341905"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739682"
 ---
 # <a name="commands-element"></a>Elemento Commands
-Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage. La raccolta può avere fino a cinque sottosezioni, come indicato di seguito: i menu, gruppi, i pulsanti, combos e bitmap.
+Rappresenta la raccolta di comandi sulla barra degli strumenti VSPackage. La raccolta può avere fino a cinque sottosezioni, come indicato di seguito: menu, gruppi, pulsanti, combinazioni e bitmap.
 
- Ogni elemento figlio sottosezione, ad esempio, \<Menu >, è identificato da un ID univoco del comando che è un GUID e una coppia di identificatori numerici. Il GUID identifica il set di comandi"" e viene usato per raggruppare i comandi correlati logicamente. Il pacchetto VSPackage deve definire un proprio set di comandi per evitare conflitti con gli ID di comando che sono definiti da altri pacchetti VSPackage.
+ Ogni elemento figlio della sottosezione, ad esempio \<> Menu, è identificato da un ID di comando univoco che è una coppia GUID e identificatore numerico. Il GUID identifica il "set di comandi" e viene utilizzato per raggruppare i comandi correlati logicamente. Il pacchetto VSPackage deve definire il proprio set di comandi per evitare conflitti con gli ID di comando definiti da altri pacchetti VSPackage.The VSPackage should define its own command set to avoid collisions with command IDs that are defined by other VSPackages.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,26 +44,26 @@ Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage. La 
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|pacchetto|GUID che identifica il pacchetto VSPackage che fornisce i comandi.<br /><br /> Ad esempio, creare un pacchetto = "guidVsPackage1Pkg".|
+|Pacchetto|GUID che identifica il pacchetto VSPackage che fornisce i comandi.<br /><br /> Ad esempio, package:"guidVsPackage1Pkg".|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu che implementa un pacchetto VSPackage.|
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comandi in un pacchetto VSPackage.|
-|[Elemento Buttons](../extensibility/buttons-element.md)|Raggruppa gli elementi di pulsante.|
-|[Elemento Bitmaps](../extensibility/bitmaps-element.md)|Raggruppa gli elementi mappa di bit.|
-|[Elemento combos](../extensibility/combos-element.md)|Raggruppa gli elementi di casella combinata.|
+|[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu implementati da un pacchetto VSPackage.|
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene voci che definiscono i gruppi di comandi in un pacchetto VSPackage.|
+|[Elemento Buttons](../extensibility/buttons-element.md)|Raggruppa gli elementi Button.|
+|[Elemento Bitmaps](../extensibility/bitmaps-element.md)|Raggruppa gli elementi Bitmap.|
+|[Elemento Combos](../extensibility/combos-element.md)|Raggruppa gli elementi combinati.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi che un pacchetto VSPackage fornisce all'IDE. Gli elementi possibili sono voci di menu, menu, barre degli strumenti e caselle combinate.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi che un VSPackage fornisce all'IDE. Gli elementi possibili sono voci di menu, menu, barre degli strumenti e caselle combinate.|
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come utilizzare un [elemento Commands](../extensibility/commands-element.md).
+ Nell'esempio riportato di seguito viene illustrato come utilizzare un [elemento Commands](../extensibility/commands-element.md).
 
 ```
 <Commands package="guidMyPackage">
@@ -89,5 +89,5 @@ Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage. La 
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Come VSPackage aggiungere elementi dell'interfaccia utenteHow VSPackages add user interface elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

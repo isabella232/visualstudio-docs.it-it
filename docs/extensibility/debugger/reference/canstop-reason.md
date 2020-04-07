@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON | Microsoft Docs
+title: CANSTOP_REASON . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18861d7aa19281528e9a100f57399451194598a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327244"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737691"
 ---
-# <a name="canstopreason"></a>CANSTOP_REASON
-Utilizzato per determinare se un programma può arrestare l'esecuzione dopo aver raggiunto un punto particolare nell'esecuzione.
+# <a name="canstop_reason"></a>CANSTOP_REASON
+Utilizzato per determinare se un programma può interrompere l'esecuzione dopo aver raggiunto un determinato punto dell'esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,10 +47,10 @@ public enum enum_CANSTOP_REASON {
 Specifica il punto di ingresso del programma specificato.
 
 `CANSTOP_STEPIN`\
-Specifica l'esecuzione di una funzione.
+Specifica l'esecuzione di istruzioni in una funzione.
 
-## <a name="remarks"></a>Note
-Passato come argomento per il [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodo per confermare con sessione di Debug Manager (SDM) se è corretto arrestare dopo aver raggiunto il punto di ingresso del programma o dopo l'esecuzione di una funzione o metodo.
+## <a name="remarks"></a>Osservazioni
+Passato come argomento per il [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodo per confermare con il gestore di debug di sessione (SDM) se è possibile interrompere dopo aver raggiunto il punto di ingresso del programma o dopo l'istruzione in una funzione o un metodo.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

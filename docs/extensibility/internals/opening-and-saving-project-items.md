@@ -1,5 +1,5 @@
 ---
-title: Apertura e salvataggio di elementi di progetto | Microsoft Docs
+title: Apertura e salvataggio di elementi di progetto Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,53 +7,53 @@ helpviewer_keywords:
 - files [Visual Studio], opening and saving
 - editors [Visual Studio SDK], file persistence
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77a3417bc15bc9c4c6149b4e77dc4fdcebe5cd6e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314928"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706961"
 ---
 # <a name="opening-and-saving-project-items"></a>Apertura e salvataggio di elementi di progetto
-Quando si aggiunge un nuovo tipo di progetto, è necessario gestire l'apertura e salvataggio dei file di progetti nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Gli argomenti seguenti descrivono i diversi approcci per l'apertura e salvataggio di file.
+Quando si aggiunge un nuovo tipo di progetto, è necessario [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestire l'apertura e il salvataggio dei file di progetto nell'ambiente di sviluppo integrato (IDE). Negli argomenti seguenti vengono illustrati i diversi approcci all'apertura e al salvataggio dei file.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 - [Visualizzazione di file tramite il comando Apri file](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 
- Fornisce una spiegazione dettagliata del modo in cui l'IDE gestisce i **Apri File** comando e il ruolo di progetti in risposta a questo comando.
+ Viene fornita una spiegazione dettagliata del modo in cui l'IDE gestisce il comando **Apri file** e il ruolo dei progetti nella risposta a questo comando.
 
 - [Visualizzazione di file tramite il comando Apri con](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 
- Fornisce una spiegazione dettagliata e dettagliata del modo in cui l'IDE gestisce i **aperta con** comando, che richiede l'apertura di un file con alcune scelte degli editor standard.
+ Fornisce una spiegazione dettagliata del modo in cui l'IDE gestisce il comando **Apri con,** richiedendo l'apertura di un file con una scelta di editor standard.
 
-- [Procedura: aprire gli editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)
+- [Procedura: Aprire gli editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)
 
- Vengono fornite istruzioni dettagliate che consentono di specificare che i file di un determinato tipo nel progetto devono essere aperto usando un editor specifico del progetto.
+ Vengono fornite istruzioni dettagliate per specificare che i file di un determinato tipo nel progetto devono essere aperti utilizzando un editor specifico del progetto.
 
-- [Procedura: aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)
+- [Procedura: Aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)
 
- Vengono fornite istruzioni dettagliate per la specifica come abilitare l'IDE aprire un editor standard per i file nel tipo di progetto.
+ Vengono fornite istruzioni dettagliate per specificare come abilitare l'IDE per aprire un editor standard per i file nel tipo di progetto.
 
-- [Procedura: aprire gli editor per i documenti aperti](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Procedura: Aprire gli editor per i documenti aperti](../../extensibility/how-to-open-editors-for-open-documents.md)
 
- Vengono fornite istruzioni dettagliate per aprire un editor specifico del progetto per un file aperto.
+ Fornisce istruzioni dettagliate per aprire un editor specifico del progetto per un file aperto.
 
 - [Salvataggio di un documento standard](../../extensibility/internals/saving-a-standard-document.md)
 
- Fornisce una spiegazione dettagliata del modo in cui l'IDE gestisce i **salvare**, **Salva con nome**, e **Salva tutto** comandi per un documento aperto in un editor standard.
+ Viene fornita una spiegazione dettagliata del modo in cui l'IDE gestisce i comandi **Salva**, **Salva con nome**e Salva **tutto** per un documento aperto in un editor standard.
 
 - [Salvataggio di un documento personalizzato](../../extensibility/internals/saving-a-custom-document.md)
 
- Fornisce un diagramma e una spiegazione dettagliata del modo in cui l'IDE gestisce i **salvare**, **Salva con nome**, e **Salva tutto** comandi per i documenti aperti in un editor personalizzato.
+ Fornisce un diagramma e una spiegazione dettagliata del modo in cui l'IDE gestisce i comandi **Salva**, **Salva con nome**e Salva **tutto** per i documenti aperti in un editor personalizzato.
 
 - [Scelta dell'editor da usare per aprire un file in un progetto](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 
- Illustra il processo che l'IDE deve seguire per selezionare la finestra di progettazione per un file o l'editor appropriato.
+ Viene illustrato il processo che segue l'IDE per selezionare l'editor o la finestra di progettazione appropriata per un file.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Creazione di finestre di progettazione ed editor personalizzati](../../extensibility/creating-custom-editors-and-designers.md)
@@ -62,4 +62,4 @@ Quando si aggiunge un nuovo tipo di progetto, è necessario gestire l'apertura e
 
 - [Tipi di progetto](../../extensibility/internals/project-types.md)
 
- Illustra come progetti consentono di controllare la modalità di codice viene compilato e creato, come aprire gli editor e come formattare gli elementi del progetto.
+ Viene illustrato come i progetti controllano il modo in cui il codice viene compilato e compilato, come vengono aperti gli editor e come vengono formattati gli elementi di progetto.

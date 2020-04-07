@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetEELocalObject | Microsoft Docs
+title: Proprietà IDebugSettingsCallback2::GetEELocalObject . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEELocalObject
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 561f6727ca0273d5d59434a7bfdd0cdc00533754
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fc205392f325a014bfe07b02b64cd8b0050ce079
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322187"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720065"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
-Recupera un oggetto locale dell'analizzatore di espressioni espressione dato il nome della metrica.
+Recupera un analizzatore di espressioni oggetto locale dato il nome della metrica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,10 +54,10 @@ private int GetEELocalObject(
 [in] Nome della metrica.
 
 `ppUnk`\
-[out] Restituisce l'espressione di oggetto locale dell'analizzatore di espressioni.
+[fuori] Restituisce l'oggetto locale dell'analizzatore di espressioni.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

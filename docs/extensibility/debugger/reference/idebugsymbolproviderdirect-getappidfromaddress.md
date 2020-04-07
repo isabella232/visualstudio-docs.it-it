@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetAppIDFromAddress | Microsoft Docs
+title: IDebugSymbolProviderDirect::GetAppIDFromAddress . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetAppIDFromAddress
 - GetAppIDFromAddress
 ms.assetid: d76a0f36-79c4-4c58-9db3-880b00d11610
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59078cd574c30992d332983704aba4d70f069d5c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: df1dbea23cf29809c5f504359ebf02b40c14e6e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347440"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719166"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
-Recupera l'identificatore del dominio dell'applicazione fornito l'indirizzo di debug.
+Recupera l'identificatore di dominio dell'applicazione dato l'indirizzo di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ int GetAppIDFromAddress(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-[in] Eseguire il debug indirizzo rappresentato dal [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
+[in] Indirizzo di debug rappresentato dall'interfaccia [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 `pAppID`\
-[out] Identificatore del dominio dell'applicazione.
+[fuori] Identificatore del dominio applicazione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

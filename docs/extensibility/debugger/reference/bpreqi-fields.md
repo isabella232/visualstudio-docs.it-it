@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS | Microsoft Docs
+title: BPREQI_FIELDS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BPREQI_FIELDS enumeration
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 757b8bfeeed2a7d75f3a0b4203b80b464e5b39fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c0e10b6c253c61a9e68e0cf161201f7d2520ae6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350501"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737755"
 ---
-# <a name="bpreqifields"></a>BPREQI_FIELDS
+# <a name="bpreqi_fields"></a>BPREQI_FIELDS
 Specifica le informazioni da recuperare su una richiesta di punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
@@ -68,53 +68,53 @@ public enum enum_BPREQI_FIELDS {
 
 ## <a name="fields"></a>Campi
 `BPREQI_BPLOCATION`\
-Initialize/usare la `bpLocation` campo (posizione punto di interruzione) del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) oppure [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struttura.
+Inizializzare/utilizzare `bpLocation` il campo (posizione punto di interruzione) della struttura [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) o [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
 `BPREQI_LANGUAGE`\
-Initialize/usare la `guidLanguage` campo le `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `guidLanguage` il `BP_REQUEST_INFO` campo `BP_REQUEST_INFO2` della struttura o .
 
 `BPREQI_PROGRAM`\
-Initialize/usare la `pProgram` campo le `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `pProgram` il `BP_REQUEST_INFO` campo `BP_REQUEST_INFO2` della struttura o .
 
 `BPREQI_PROGRAMNAME`\
-Initialize/usare la `bstrProgramName` campo le `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `bstrProgramName` il `BP_REQUEST_INFO` campo `BP_REQUEST_INFO2` della struttura o .
 
 `BPREQI_THREAD`\
-Initialize/usare la `pThread` campo le `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `pThread` il `BP_REQUEST_INFO` campo `BP_REQUEST_INFO2` della struttura o .
 
 `BPREQI_THREADNAME`\
-Initialize/usare la `bstrThreadName` campo le `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `bstrThreadName` il `BP_REQUEST_INFO` campo `BP_REQUEST_INFO2` della struttura o .
 
 `BPREQI_PASSCOUNT`\
-Initialize/usare la `bpPassCount` campo le `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `bpPassCount` il `BP_REQUEST_INFO` campo `BP_REQUEST_INFO2` della struttura o .
 
 `BPREQI_CONDITION`\
-Initialize/usare la `bpCondition` campo (condizione di punto di interruzione) del `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `bpCondition` il campo (condizione `BP_REQUEST_INFO` `BP_REQUEST_INFO2` punto di interruzione) della struttura o .
 
 `BPREQI_FLAGS`\
-Initialize/usare la `dwFlags` campo le `BP_REQUEST_INFO` o `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `dwFlags` il `BP_REQUEST_INFO` campo `BP_REQUEST_INFO2` della struttura o .
 
 `BPREQI_ALLOLDFIELDS`\
-Initialize/Usa tutti i campi per la del `BP_REQUEST_INFO` struttura.
+Inizializzare/utilizzare tutti i `BP_REQUEST_INFO` campi per la struttura.
 
 `BPREQI_VENDOR`\
-Initialize/usare la `guidVendor` campo `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `guidVendor` il `BP_REQUEST_INFO2` campo della struttura.
 
 `BPREQI_CONSTRAINT`\
-Initialize/usare la `bstrConstraint` campo `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `bstrConstraint` il `BP_REQUEST_INFO2` campo della struttura.
 
 `BPREQI_TRACEPOINT`\
-Initialize/usare la `bstrTracepoint` campo `BP_REQUEST_INFO2` struttura.
+Inizializzare/utilizzare `bstrTracepoint` il `BP_REQUEST_INFO2` campo della struttura.
 
 `BPREQI_ALLFIELDS`\
-Specifica tutti i campi per il `BP_REQUEST_INFO2` struttura.
+Specifica tutti i `BP_REQUEST_INFO2` campi per la struttura.
 
-## <a name="remarks"></a>Note
-Passato come argomento per il [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) e [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) metodi per specificare quali campi della [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2 ](../../../extensibility/debugger/reference/bp-request-info2.md) strutture devono essere inizializzate.
+## <a name="remarks"></a>Osservazioni
+Passato come argomento ai metodi [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) e [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) per specificare quali campi delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) devono essere inizializzati.
 
-Questi flag vengono usanti anche per indicare quali campi della `BP_REQUEST_INFO` e `BP_REQUEST_INFO2` strutture sono utilizzate e validi quando viene restituito ogni struttura.
+Questi flag vengono utilizzati anche `BP_REQUEST_INFO` per `BP_REQUEST_INFO2` indicare quali campi delle strutture e vengono utilizzati e validi quando viene restituita ogni struttura.
 
-Questi valori possono essere combinati con un bit per bit `OR`.
+Questi valori possono essere combinati `OR`con un oggetto .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

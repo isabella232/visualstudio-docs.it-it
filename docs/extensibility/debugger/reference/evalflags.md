@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Microsoft Docs
+title: Proprietà EVALFLAGS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a56f7d5fe4741fa887814691eddcf8df93030cd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337886"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737118"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Specifica i flag che controllano la valutazione dell'espressione.
@@ -54,27 +54,27 @@ public enum enum_EVALFLAGS {
 
 ## <a name="fields"></a>Campi
 `EVAL_RETURNVALUE`\
-Specifica che il valore restituito, se presente, da valutare.
+Specifica che il valore restituito, se presente, deve essere valutato.
 
 `EVAL_NOSIDEEFFECTS`\
-Specifica che gli effetti collaterali non saranno consentite.
+Specifica che gli effetti collaterali non sono consentiti.
 
 `EVAL_ALLOWBPS`\
-Specifica l'arresto per i punti di interruzione.
+Specifica l'arresto in corrispondenza dei punti di interruzione.
 
 `EVAL_ALLOWERRORREPORT`\
-Specifica la segnalazione errori per l'host deve essere autorizzato. Utilizzato principalmente per la valutazione dell'espressione in uno script in Internet Explorer.
+Specifica la segnalazione degli errori all'host da consentire. Utilizzato principalmente per la valutazione delle espressioni nello script in Internet Explorer.
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-Funzioni di forze deve essere valutata come indirizzi, anziché richiamare la funzione.
+Forza le funzioni da valutare come indirizzi, anziché richiamare la funzione.
 
 `EVAL_NOFUNCEVAL`\
-Impedisce che funzione viene valutata. Si consideri, ad esempio, il `int` token dell'espressione `myExpression(int) + 10`. Questa funzione può essere valutata correttamente come un indirizzo, ma non come un valore.
+Impedisce la valutazione della funzione. Si consideri `int` ad esempio `myExpression(int) + 10`il token nell'espressione . Questa funzione può essere valutata correttamente come indirizzo, ma non come valore.
 
 `EVAL_NOEVENTS`\
 Flag per indicare che gli eventi che si verificano durante la valutazione dell'espressione non devono essere inviati al gestore di sessione di debug (SDM) o all'IDE.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Questi flag vengono passati come argomento per il [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) e [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) metodi.
 
 Questi flag possono essere combinati con un OR bit per bit.

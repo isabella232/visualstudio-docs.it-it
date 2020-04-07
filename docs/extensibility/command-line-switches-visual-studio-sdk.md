@@ -1,5 +1,5 @@
 ---
-title: Opzioni della riga di comando (Visual Studio SDK) | Microsoft Docs
+title: Opzioni della riga di comando (Visual Studio SDK) Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,25 +7,25 @@ helpviewer_keywords:
 - command-line switches
 - command line, switches
 ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753ff049d09bafb5d7f2284f858647a8427ca0e1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: db2967a6fab128b6730fbbe35d34f23464ca2096
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344536"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739760"
 ---
-# <a name="command-line-switches-visual-studio-sdk"></a>Opzioni della riga di comando (Visual Studio SDK)
-*Devenv.exe*, il file eseguibile che viene avviato il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE), supporta i parametri della riga di comando in modo specifico per lo sviluppo di pacchetti VSPackage. I pacchetti VSPackage possono anche rendere disponibile le proprie opzioni nella riga di comando Devenv. Gli argomenti seguenti forniscono informazioni su come usare le opzioni della riga di comando nell'IDE.
+# <a name="command-line-switches-visual-studio-sdk"></a>Opzioni della riga di comando (Visual Studio SDK)Command-line switches (Visual Studio SDK)
+*Devenv.exe*, l'eseguibile che avvia l'ambiente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di sviluppo integrato (IDE), supporta le opzioni della riga di comando specifiche per lo sviluppo di PACKAGE VS. VSPackage possono anche rendere le proprie opzioni disponibili nella riga di comando Devenv. Negli argomenti seguenti vengono fornite informazioni sull'utilizzo delle opzioni della riga di comando nell'IDE.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
-- [Opzioni della riga di comando devenv per VSPackage Ddevelopment](../extensibility/devenv-command-line-switches-for-vspackage-development.md) vengono descritte le opzioni della riga di comando Devenv consente di semplificare lo sviluppo di VSPackage, il debug e distribuzione.
+- [Opzioni della riga di comando Devenv per VSPackage Ddevelopment](../extensibility/devenv-command-line-switches-for-vspackage-development.md) Descrive le opzioni della riga di comando Devenv che è possibile usare per semplificare lo sviluppo, il debug e la distribuzione di VSPackage.Describes the Devenv command-line switches you can use to simplify VSPackage development, debugging, and deployment.
 
-- [Aggiungere i parametri della riga di comando](../extensibility/adding-command-line-switches.md) viene descritto come implementare, cercare e leggere i parametri della riga di comando immesso dall'utente per il pacchetto.
+- [Aggiungere opzioni della riga di comando](../extensibility/adding-command-line-switches.md) Descrive come implementare, cercare e leggere le opzioni della riga di comando immesse dall'utente per il pacchetto.
 
 ## <a name="related-sections"></a>Sezioni correlate
-- [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md) spiega come Devenv consente di impostare varie opzioni per l'IDE e viene illustrato come compilare, compilano e debug di progetti dalla riga di comando. È disponibile anche informazioni sulla sintassi delle opzioni Devenv e una tabella di opzioni.
+- [Opzioni della riga di comando Devenv](../ide/reference/devenv-command-line-switches.md) Viene illustrato come Devenv consente di impostare varie opzioni per l'IDE e come è possibile compilare, compilare ed eseguire il debug di progetti dalla riga di comando. Sono inoltre disponibili informazioni sulla sintassi delle opzioni Devenv e una tabella di opzioni.

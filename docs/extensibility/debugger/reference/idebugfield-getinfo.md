@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetInfo | Microsoft Docs
+title: Proprietà IDebugField::GetInfo . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetInfo method
 ms.assetid: 7d508200-89ce-400f-a8ea-f28e7610cb2b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 53c0de1b956202f95b4995855ec5bdda0ebe59d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1b3251db3426f87901ca0768800feaa36fef5373
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352623"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728849"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
-Questo metodo ottiene visualizzabile informazioni sul campo.
+Questo metodo ottiene informazioni visualizzabili sul campo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,13 +43,13 @@ int GetInfo(
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Una combinazione di [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) le costanti che consente di selezionare le informazioni da visualizzare. Se il campo rappresenta un simbolo, si tratta generalmente il nome del simbolo e il tipo.
+[in] Combinazione di [costanti FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) che seleziona le informazioni da visualizzare. Se il campo rappresenta un simbolo, si tratta in genere del nome e del tipo del simbolo.
 
 `pFieldInfo`\
-[out] Restituisce le informazioni nella classe fornita [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struttura.
+[fuori] Restituisce le informazioni nella struttura [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) fornita.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

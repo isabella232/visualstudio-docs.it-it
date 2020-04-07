@@ -1,100 +1,100 @@
 ---
-title: Creazione di un'estensione con un modello di elemento dell'Editor | Microsoft Docs
+title: Creazione di un'estensione con un modello di elemento dell'editor Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bef42c67f34b8a24ac26a7765fecddc104ae74a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ac19d99bf75c79ad011bfd0d5a56ecf3880b100
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350997"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739499"
 ---
-# <a name="create-an-extension-with-an-editor-item-template"></a>Creare un'estensione con un modello di elemento dell'editor
-È possibile usare i modelli di elementi inclusi in Visual Studio SDK per creare estensioni di editor di base di classificatori, le aree di controllo e i margini all'editor. I modelli di elemento dell'editor sono disponibili per i progetti Visual c# o Visual Basic VSIX.
+# <a name="create-an-extension-with-an-editor-item-template"></a>Creare un'estensione con un modello di elemento dell'editorCreate an extension with an editor item template
+È possibile usare i modelli di elemento inclusi in Visual Studio SDK per creare estensioni di base dell'editor che aggiungono classificatori, aree di controllo e margini all'editor. I modelli di elemento dell'editor sono disponibili per i progetti VSIX di Visual Co o Visual Basic.
 
 ## <a name="prerequisites"></a>Prerequisiti
- A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio.It is included as an optional feature in Visual Studio setup. È anche possibile installare l'SDK di VISUAL SMI in un secondo momento. Per ulteriori informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
-## <a name="create-a-classifier-extension"></a>Creare un'estensione di classificazione
- Il modello di elemento di classificatore Editor Crea un classificatore editor che colora il testo appropriato (in questo caso, tutto) in qualsiasi file di testo.
+## <a name="create-a-classifier-extension"></a>Creare un'estensione classificatoreCreate a classifier extension
+ Il modello di elemento Classificatore editor crea un classificatore di editor che colora il testo appropriato (in questo caso, tutto) in qualsiasi file di testo.
 
-1. Nel **nuovo progetto** finestra di dialogo espandere **Visual c#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `TestClassifier`. Fare clic su **OK**.
+1. Nella finestra di dialogo **Nuovo progetto** , espandere **Visual C,** Visual **Basic** e quindi fare clic su **estensibilità**. Nel riquadro **Modelli** selezionare **Progetto VSIX**. Nella casella **Nome** digitare `TestClassifier`. Fare clic su **OK**.
 
-2. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **classificatore Editor**. Lasciare il nome file predefinito (*EditorClassifier1.cs*).
+2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi** > **nuovo elemento**. Andare al nodo **Extensibility** di Visual C, quindi selezionare **Classificatore editor**. Lasciare il nome file predefinito (*EditorClassifier1.cs*).
 
-3. Esistono quattro file di codice, come indicato di seguito:
+3. Esistono quattro file di codice, come indicato di seguito:There are four code files, as follows:
 
-    - *EditorClassifier1.cs* contiene il `EditorClassifier1` classe.
+    - *EditorClassifier1.cs* contiene `EditorClassifier1` la classe.
 
-    - *EditorClassifier1ClassificationDefinition.cs* contiene il `EditorClassifier1ClassificationDefinition` classe.
+    - *EditorClassifier1ClassificationDefinition.cs* contiene `EditorClassifier1ClassificationDefinition` la classe.
 
-    - *EditorClassifier1Format.cs* contiene il `EditorClassifier1Format` classe.
+    - *EditorClassifier1Format.cs* contiene `EditorClassifier1Format` la classe.
 
-    - *EditorClassifier1Provider.cs* contiene il `EditorClassifier1Provider` classe.
+    - *EditorClassifier1Provider.cs* contiene `EditorClassifier1Provider` la classe.
 
-4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale di Visual Studio.
+4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale di Visual Studio.The experimental instance of Visual Studio appears.
 
-     Se si apre un file di testo, tutto il testo è sottolineato su uno sfondo scuro.
+     Se si apre un file di testo, tutto il testo viene sottolineato su uno sfondo viola.
 
-## <a name="create-a-text-relative-adornment-extension"></a>Creare un'estensione dell'area di controllo relativo al testo
- Il modello di area di controllo Text Editor crea un'area di controllo di testo relativa che decora tutte le istanze dei caratteri del testo "a" tramite una finestra che ha un bordo rosso e uno sfondo blu. È relativo al testo perché la casella sempre le sovrimpressioni 'a' caratteri, anche quando vengono spostati o riformattati.
+## <a name="create-a-text-relative-adornment-extension"></a>Creare un'estensione dell'area di controllo relativa al testoCreate a text-relative adornment extension
+ Il modello Editor Text Adornment crea un'area di controllo relativa al testo che decora tutte le istanze del carattere di testo 'a' utilizzando una casella con un contorno rosso e uno sfondo blu. È relativo al testo perché la casella si sovrappone sempre ai caratteri 'a', anche quando vengono spostati o riformattati.
 
-1. Nel **nuovo progetto** finestra di dialogo espandere **Visual c#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `TestAdornment`. Fare clic su **OK**.
+1. Nella finestra di dialogo **Nuovo progetto** , espandere **Visual C,** Visual **Basic** e quindi fare clic su **estensibilità**. Nel riquadro **Modelli** selezionare **Progetto VSIX**. Nella casella **Nome** digitare `TestAdornment`. Fare clic su **OK**.
 
-2. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **Editor di testo Adornment**. Lasciare il nome file predefinito (*TextAdornment1.cs/vb*).
+2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi** > **nuovo elemento**. Andare al nodo **Extensibility** di Visual C, quindi selezionare **Editor Text Adornment**. Lasciare il nome file predefinito (*TextAdornment1.cs/vb*).
 
-3. Sono presenti due file di codice, come indicato di seguito:
+3. Esistono due file di codice, come indicato di seguito:There are two code files, as follows:
 
-    - *TextAdornment1.cs* contiene il `TextAdornment1` classe.
+    - *TextAdornment1.cs* contiene `TextAdornment1` la classe.
 
-    - *TextAdornment1TextViewCreationListener.cs* contiene il `TextAdornment1TextViewCreationListener` classe.
+    - *TextAdornment1TextViewCreationListener.cs* contiene `TextAdornment1TextViewCreationListener` la classe.
 
-4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si apre un file di testo, tutti i "a" caratteri del testo sono evidenziati in rosso su uno sfondo blu.
+4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si apre un file di testo, tutti i caratteri 'a' nel testo vengono evidenziati in rosso su uno sfondo blu.
 
-## <a name="create-a-viewport-relative-adornment-extension"></a>Creare un'estensione dell'area di controllo relativo al viewport
- Il modello di area di controllo del riquadro di visualizzazione dell'Editor crea un'area di controllo relativo al riquadro di visualizzazione che consente di aggiungere una casella scuro con un bordo rosso nell'angolo superiore destro del riquadro di visualizzazione.
+## <a name="create-a-viewport-relative-adornment-extension"></a>Creare un'estensione dell'area di controllo relativa alla finestraCreate a viewport-relative adornment extension
+ Il modello AreaViewport Adornment crea un'area di controllo relativa alla finestra che aggiunge una casella viola con un contorno rosso nell'angolo superiore destro della finestra.
 
 > [!NOTE]
-> Il **viewport** è l'area di visualizzazione di testo che è attualmente visualizzata.
+> La **finestra** è l'area della visualizzazione di testo attualmente visualizzata.
 
-### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Per creare un'estensione dell'area di controllo del riquadro di visualizzazione utilizzando il modello di area di controllo del riquadro di visualizzazione dell'Editor
+### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Per creare un'estensione dell'area di controllo della finestra utilizzando il modello Area area di visualizzazione area di visualizzazione
 
-1. Nel **nuovo progetto** finestra di dialogo espandere **Visual c#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `ViewportAdornment`. Fare clic su **OK**.
+1. Nella finestra di dialogo **Nuovo progetto** , espandere **Visual C,** Visual **Basic** e quindi fare clic su **estensibilità**. Nel riquadro **Modelli** selezionare **Progetto VSIX**. Nella casella **Nome** digitare `ViewportAdornment`. Fare clic su **OK**.
 
-2. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **dell'area di controllo del riquadro di visualizzazione dell'Editor**. Lasciare il nome file predefinito (*ViewportAdornment1.cs/vb*).
+2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi** > **nuovo elemento**. Andare al nodo **Extensibility** di Visual C, quindi selezionare **Editor Viewport Adornment**. Lasciare il nome file predefinito (*ViewportAdornment1.cs/vb*).
 
-3. Sono presenti due file di codice, come indicato di seguito:
+3. Esistono due file di codice, come indicato di seguito:There are two code files, as follows:
 
-    - *ViewportAdornment1.cs* contiene il `ViewportAdornment1` classe.
+    - *ViewportAdornment1.cs* contiene `ViewportAdornment1` la classe.
 
-    - *ViewportAdornment1TextViewCreationListener.cs* contiene il `ViewportAdornment1TextViewCreationListener` classe
+    - *ViewportAdornment1TextViewCreationListener.cs* contiene `ViewportAdornment1TextViewCreationListener` la classe
 
-4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si crea un nuovo file di testo, viene visualizzata una finestra scuro con un bordo rosso nell'angolo in alto a destra del riquadro di visualizzazione.
+4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si crea un nuovo file di testo, nell'angolo superiore destro della finestra viene visualizzata una casella viola con un contorno rosso.
 
 ## <a name="create-a-margin-extension"></a>Creare un'estensione di margine
- Il modello di margine dell'Editor Crea un margine verde che verrà visualizzata insieme alle parole **Hello world!* sotto la barra di scorrimento orizzontale.
+ Il modello Margine editor crea un margine verde che viene visualizzato insieme alle parole*Hello world!* sotto la barra di scorrimento orizzontale.
 
-### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>Per creare un'estensione di margine usando il modello di margine dell'Editor
+### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>Per creare un'estensione margine utilizzando il modello Margine editor
 
-1. Nel **nuovo progetto** finestra di dialogo espandere **Visual c#** oppure **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `MarginExtension`. Fare clic su **OK**.
+1. Nella finestra di dialogo **Nuovo progetto** , espandere **Visual C,** Visual **Basic** e quindi fare clic su **estensibilità**. Nel riquadro **Modelli** selezionare **Progetto VSIX**. Nella casella **Nome** digitare `MarginExtension`. Fare clic su **OK**.
 
-2. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **margine dell'Editor**. Lasciare il nome file predefinito (EditorMargin1.cs/vb).
+2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi** > **nuovo elemento**. Andare al nodo **Extensibility** di Visual C, quindi selezionare **Margine editor**. Lasciare il nome file predefinito (EditorMargin1.cs/vb).
 
-3. Sono presenti due file di codice, come indicato di seguito:
+3. Esistono due file di codice, come indicato di seguito:There are two code files, as follows:
 
-    - *EditorMargin1.cs* contiene il `EditorMargin1` classe.
+    - *EditorMargin1.cs* contiene `EditorMargin1` la classe.
 
-    - *EditorMargin1Factory.cs* contiene il `EditorMargin1Factory` classe.
+    - *EditorMargin1Factory.cs* contiene `EditorMargin1Factory` la classe.
 
-4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si apre un file di testo, un margine verde con le parole **Hello EditorMargin1** viene visualizzato sotto la barra di scorrimento orizzontale.
+4. Compilare questo progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si apre un file di testo, sotto la barra di scorrimento orizzontale viene visualizzato un margine verde con le parole **Hello EditorMargin1.**
 
 ## <a name="see-also"></a>Vedere anche
-- [Punti di estensione del servizio e l'editor di linguaggio](../extensibility/language-service-and-editor-extension-points.md)
+- [Punti di estensione del servizio di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)

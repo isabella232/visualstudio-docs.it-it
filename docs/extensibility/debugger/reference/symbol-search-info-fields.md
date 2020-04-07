@@ -1,5 +1,5 @@
 ---
-title: SYMBOL_SEARCH_INFO_FIELDS | Microsoft Docs
+title: SYMBOL_SEARCH_INFO_FIELDS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 86a7fb7c891d0c22bc415920014e905cf3d9c6fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bf8a1ad8a5dabc663ef29f5f2c36fdf0fbd8b786
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322357"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713484"
 ---
-# <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
+# <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Specifica il tipo di informazioni sui simboli da recuperare.
 
 ## <a name="syntax"></a>Sintassi
@@ -47,16 +47,16 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ## <a name="fields"></a>Campi
  `SSIF_NONE`\
- Non indica nessun flag
+ Indica che non ci sono flag
 
  `SSIF_VERBOSE_SEARCH_INFO`\
- Restituisce che tutti i percorsi usati per trovare i simboli di ricerca
+ Restituisce tutti i percorsi di ricerca utilizzati per la ricerca di simboli
 
-## <a name="remarks"></a>Note
- Questi flag vengono passati come parametro per il [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) metodo per determinare la quantità di informazioni restituite.
+## <a name="remarks"></a>Osservazioni
+ Questi flag vengono passati come parametro al [metodo GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) per determinare la quantità di informazioni restituite.
 
 > [!NOTE]
-> Attualmente, solo `SSIF_VERBOSE_SEARCH_INFO` è supportata, e deve essere specificato come i `dwFlags` parametro per `IDebugModule3::GetSymbolInfo`. Tutti gli altri valori restituiscono un errore.
+> Attualmente, `SSIF_VERBOSE_SEARCH_INFO` solo è supportato e deve `dwFlags` essere `IDebugModule3::GetSymbolInfo`specificato come parametro a . Tutti gli altri valori restituiscono un errore.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

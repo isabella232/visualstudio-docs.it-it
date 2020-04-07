@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Resume | Microsoft Docs
+title: IDebugThread2::Riprendi . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a312b18fead71b343fd1b9beafcf36c904bf1b24
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3899dea7c33946588de4308f42b948ede703361a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320141"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718681"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Riprende l'esecuzione di un thread.
@@ -41,16 +41,16 @@ int Resume ( 
 
 ## <a name="parameters"></a>Parametri
 `pdwSuspendCount`\
-[out] Restituisce il conteggio di sospensione al termine dell'operazione di ripresa.
+[fuori] Restituisce il conteggio delle sospensioni dopo l'operazione di ripresa.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Ogni chiamata a questo metodo decrementa il conteggio di sospensione fino a raggiungere 0 a quel punto, in realtà ripresa l'esecuzione. Questo conteggio di sospensione viene visualizzato nei **thread** finestra di debug.
+## <a name="remarks"></a>Osservazioni
+ Ogni chiamata a questo metodo decrementa il conteggio delle sospensioni fino a raggiungere 0 al momento in cui l'esecuzione viene effettivamente ripresa. Questo conteggio delle sospensioni viene visualizzato nella finestra di debug **Thread.This** suspend count is displayed in the Threads debug window.
 
- Per ogni chiamata a questo metodo, deve esistere una chiamata precedente al [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) (metodo). Il conteggio di suspend determina quante volte il `IDebugThread2::Suspend` metodo è stato chiamato fino a questo momento.
+ Per ogni chiamata a questo metodo, deve essere presente una chiamata precedente al [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) metodo. Il conteggio delle sospensioni `IDebugThread2::Suspend` determina quante volte il metodo è stato chiamato finora.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)
+- [Sospendere](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

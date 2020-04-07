@@ -1,5 +1,5 @@
 ---
-title: Recupero delle proprietà locali | Microsoft Docs
+title: Recupero delle proprietà locali Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,32 +7,32 @@ helpviewer_keywords:
 - debugging [Debugging SDK], local properties
 - expression evaluation, local properties
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c10cd5ebfe1efbf6657b9925c4c27cce33591524
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e084f28257ddede388468f36e1635e87c8f65961
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338260"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738627"
 ---
-# <a name="get-local-properties"></a>Ottenere le proprietà locali
+# <a name="get-local-properties"></a>Ottenere le proprietà localiGet local properties
 > [!IMPORTANT]
-> In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni CLR, vedere [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [esempio analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere [Analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e Esempio di [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-Le chiamate di Visual Studio [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) per ottenere un [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) che fornisce l'accesso a tutte le variabili locali da visualizzare nell'oggetto di **variabili locali** finestra. Visual Studio chiama quindi [successivo](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) per ottenere le informazioni da visualizzare per ogni locale. In questo esempio, la classe `CEnumPropertyInfo` implementa il `IEnumDebugPropertyInfo2` interfaccia.
+Visual Studio chiama [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) per ottenere un [Oggetto IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) che fornisce l'accesso a tutte le variabili locali da visualizzare nella finestra **Variabili locali.** Visual Studio chiama quindi [Next](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) per ottenere le informazioni da visualizzare per ogni locale. In questo esempio, `CEnumPropertyInfo` la `IEnumDebugPropertyInfo2` classe implementa l'interfaccia.
 
-Questa implementazione di `IEnumDebugPropertyInfo2::Next` esegue le attività seguenti:
+Questa implementazione di `IEnumDebugPropertyInfo2::Next` esegue le seguenti attività:
 
-1. Cancella la matrice in cui vengono archiviate le informazioni.
+1. Cancella la matrice in cui devono essere archiviate le informazioni.
 
-2. Le chiamate [successivo](../../extensibility/debugger/reference/ienumdebugfields-next.md) per ogni utente locale e l'archiviazione restituito [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) nella matrice da restituire. Il [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) oggetto è stato fornito quando si `CEnumPropertyInfo` è stata creata un'istanza di classe.
+2. Chiama [Next](../../extensibility/debugger/reference/ienumdebugfields-next.md) per ogni locale, archiviando il [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) restituito nella matrice da restituire. L'oggetto [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) è `CEnumPropertyInfo` stato fornito quando è stata creata un'istanza di questa classe.
 
 ## <a name="managed-code"></a>Codice gestito
-In questo esempio viene illustrata un'implementazione di `IEnumDebugPropertyInfo2::EnumChildren` per variabili locali del metodo nel codice gestito.
+In questo esempio `IEnumDebugPropertyInfo2::EnumChildren` viene illustrata un'implementazione di per le variabili locali di un metodo nel codice gestito.
 
 ```csharp
 namespace EEMC
@@ -95,7 +95,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Codice non gestito
- In questo esempio viene illustrata un'implementazione di `IEnumDebugPropertyInfo2::EnumChildren` per variabili locali del metodo nel codice non gestito.
+ In questo esempio `IEnumDebugPropertyInfo2::EnumChildren` viene illustrata un'implementazione di per le variabili locali di un metodo nel codice non gestito.
 
 ```cpp
 STDMETHODIMP CEnumPropertyInfo::Next(
@@ -157,5 +157,5 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Implementazione di esempio di variabili locali](../../extensibility/debugger/sample-implementation-of-locals.md)
-- [Enumerazione di variabili locali](../../extensibility/debugger/enumerating-locals.md)
+- [Esempio di implementazione di gente del posto](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Enumerazione dei locali](../../extensibility/debugger/enumerating-locals.md)

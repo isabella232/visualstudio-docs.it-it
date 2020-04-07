@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
+title: IDebugPortSupplier3::CanPersistPorts . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11bc6e21e8b70a5bd95c001f4173a7da3f3fe4be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2bf436d788b517300bee9a13b66b0ca3747bcc43
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340063"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724467"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-Questo metodo determina se il fornitore della porta può mantenere le porte (mediante la scrittura su disco) tra le chiamate del debugger.
+Questo metodo determina se il fornitore della porta può rendere persistenti le porte (scrivendole su disco) tra le chiamate del debugger.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,13 +36,13 @@ int CanPersistPorts();
 ```
 
 ## <a name="parameters"></a>Parametri
- Nessuno.
+ No.
 
 ## <a name="return-value"></a>Valore restituito
- `S_OK` Se le porte possono essere resi persistenti, o `S_FALSE` per indicare che le porte non possono essere persistente.
+ `S_OK`se le porte possono `S_FALSE` essere mantenute o per indicare che le porte non possono essere mantenute.
 
-## <a name="remarks"></a>Note
- Se il fornitore della porta può rendere persistenti le porte, dovrebbe eseguire questa operazione quando viene eliminata e quindi ricaricarli quando ne viene creata un'istanza ancora una volta.
+## <a name="remarks"></a>Osservazioni
+ Se il fornitore della porta può rendere persistenti le porte, deve farlo quando viene eliminato e quindi ricaricarle quando viene creata nuovamente un'istanza.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

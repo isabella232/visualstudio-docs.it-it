@@ -1,27 +1,27 @@
 ---
-title: IDebugComPlusSymbolProvider::IsHiddenCode | Microsoft Docs
+title: IDebugComPlusSymbolProvider::IsHiddenCode . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsHiddenCode
 ms.assetid: 1352c6ab-7b92-4a16-b2d2-6520b628830e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fff87eff48f5d52c67bba0914654a9646697988
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d1ede1cbd8c2a69d45a8c653aa97d0bfb618f821
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321626"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733673"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
-Determina se il codice in corrispondenza dell'indirizzo di debugger specificato è nascosto.
+Determina se il codice in corrispondenza dell'indirizzo del debugger specificato è nascosto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,13 +39,13 @@ int IsHiddenCode(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-[in] L'indirizzo di debug che è rappresentato da un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
+[in] Indirizzo di debug rappresentato da un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
-Se il codice è nascosto, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE`.
+Se il codice è `S_OK`nascosto, restituisce ; in caso `S_FALSE`contrario, restituisce .
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsHiddenCode(

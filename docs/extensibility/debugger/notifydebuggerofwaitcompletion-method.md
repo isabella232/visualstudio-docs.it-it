@@ -1,28 +1,28 @@
 ---
-title: Metodo NotifyDebuggerOfWaitCompletion | Microsoft Docs
+title: Metodo NotifyDebuggerOfWaitCompletion . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a3280a24ad7f9d4045c9a1bff6ca2b44c724325
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8963e29a067754c0e8c89b9db336b239ac682ce1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350631"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738340"
 ---
-# <a name="notifydebuggerofwaitcompletion-method"></a>Metodo NotifyDebuggerOfWaitCompletion
-Metodo segnaposto usato come destinazione un punto di interruzione dal debugger. Questo metodo non deve essere impostato come inline o ottimizzato.
+# <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion (metodo)
+Metodo segnaposto utilizzato come destinazione del punto di interruzione dal debugger. Questo metodo non deve essere inline o ottimizzato.
 
- **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Spazio dei nomi:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** mscorlib (in *mscorlib. dll*)
+ **Assembly:** mscorlib (in *mscorlib.dll*)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,8 +30,8 @@ Metodo segnaposto usato come destinazione un punto di interruzione dal debugger.
 private void NotifyDebuggerOfWaitCompletion()
 ```
 
-## <a name="remarks"></a>Note
- Tutte le operazioni di join con un'attività devono chiamare questo metodo se i bit di notifica di debugger è impostato.
+## <a name="remarks"></a>Osservazioni
+ Tutte le operazioni di join con un'attività devono chiamare questo metodo se è impostato il bit di notifica del debugger.
 
 ## <a name="requirements"></a>Requisiti
 

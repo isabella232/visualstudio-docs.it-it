@@ -1,5 +1,5 @@
 ---
-title: IDebugEntryPointEvent2 | Microsoft Docs
+title: Proprietà IDebugEntryPointEvent2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEntryPointEvent2 interface
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c2cd0f92e5bd954c8247fa86c39f3ad206aa99b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 531ff846f2488193ed7f3d9f200a1a4ea04df6f9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345104"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730325"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
-Il motore di debug (DE) invia questa interfaccia al gestore di sessione di debug (SDM) quando il programma sta per essere eseguito nella prima istruzione del codice utente.
+Il motore di debug (DE) invia questa interfaccia al gestore di sessione di debug (SDM) quando il programma sta per eseguire la prima istruzione del codice utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,15 +29,15 @@ IDebugEntryPointEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- La Germania implementa questa interfaccia come parte del normale funzionamento. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](/cpp/atl/queryinterface) per l'accesso di `IDebugEvent2` interfaccia.
+ Il DE implementa questa interfaccia come parte delle normali operazioni. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata sullo stesso oggetto di questa interfaccia. Il modello SDM utilizza `IDebugEvent2` [QueryInterface](/cpp/atl/queryinterface) per accedere all'interfaccia.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- La Germania crea e invia l'oggetto evento quando il programma sottoposto a debug è stato caricato ed è pronto per l'esecuzione della prima istruzione del codice utente. L'evento viene inviato tramite il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funzione di callback che viene fornito per il modello SDM quando associato al programma in fase di debug.
+ Il DE crea e invia questo oggetto evento quando il programma in fase di debug è stato caricato ed è pronto per eseguire la prima istruzione del codice utente. L'evento viene inviato utilizzando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita dal modello SDM quando è collegato al programma in fase di debug.
 
-## <a name="remarks"></a>Note
-- [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) viene inviato quando il programma sta per essere eseguita molto prima istruzione. Ad esempio, `IDebugEntryPoint2` viene inviato quando il programma sta per essere eseguito il suo `main` (funzione).
+## <a name="remarks"></a>Osservazioni
+- [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) viene inviato quando il programma sta per eseguire la prima istruzione. Ad esempio, `IDebugEntryPoint2` viene inviato quando il programma sta `main` per eseguire la funzione dell'utente.
 
- Quando invia la Germania `IDebugEntryPointEvent2`, la posizione corrente del codice deve essere alla prima istruzione del codice utente, ad esempio `main`.
+ Quando il `IDebugEntryPointEvent2`DE invia , la posizione del codice corrente `main`deve trovarsi alla prima istruzione del codice utente, ad esempio .
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs
+title: IDebugCustomAttribute::GetAttributeBytes Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551261414db9fab97f3e8c2a8fdbe518143d79c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315191"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732793"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-Ottiene le informazioni sugli attributi come un blob di byte.
+Ottiene le informazioni sull'attributo come BLOB di byte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,18 +43,18 @@ int GetAttributeBytes(
 
 ## <a name="parameters"></a>Parametri
 `ppBlob`\
-[in, out] Matrice che viene compilata con i byte di attributo.
+[in, out] Matrice compilata con l'attributo bytes.
 
 `pdwLen`\
-[in, out] Specifica il numero massimo di byte da restituire nel `ppBlob` della matrice e restituisce il numero di byte effettivamente scritti nella matrice.
+[in, out] Specifica il numero massimo di byte `ppBlob` da restituire nella matrice e restituisce il numero di byte effettivamente scritti nella matrice.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- Impostare il `ppBlob` attributi di parametro con un valore null per restituire il numero di byte disponibili. Quindi allocare una matrice e passare la matrice in per il `ppBlob` parametro.
+## <a name="remarks"></a>Osservazioni
+ Impostare `ppBlob` il parametro su un valore null per restituire il numero di byte di attributi disponibili. Quindi allocare una matrice e `ppBlob` passare tale matrice per il parametro.
 
- I byte di attributo rappresentano i dati non elaborati dell'attributo personalizzato.
+ I byte dell'attributo rappresentano i dati non elaborati dell'attributo personalizzato.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

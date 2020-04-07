@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2 | Microsoft Docs
+title: Proprietà IDebugDocument2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2 interface
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23510910fe18c68107e2c497aac5913da1eae963
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c959c018dd4da0ff088c4fb52c0420de83b4eac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310217"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731986"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Questa interfaccia rappresenta un documento di origine.
@@ -29,21 +29,21 @@ IDebugDocument2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] in genere implementa questa interfaccia. Un motore di debug (DE) possa anche implementare questa interfaccia quando è necessario fornire il codice sorgente e l'origine non esiste sul disco.  In questi casi, è necessario implementare anche la Germania [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) e [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) interfacce, nonché su altri metodi di [ IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) e [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) interfacce.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]in genere implementa questa interfaccia. Un motore di debug (DE) può anche implementare questa interfaccia quando è necessario fornire il codice sorgente e l'origine non esiste sul disco.  In questi casi, il DE implementa anche [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) e [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) interfacce, nonché alcuni metodi aggiuntivi sul [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) e [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) interfacce.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- I metodi sul `IDebugDocumentContext2`, `IDebugDisassemblyStream2`, `IDebugDocumentPosition2`, e `IDebugActivateDocumentEvent2` interfacce restituiscono questa interfaccia.
+ I metodi `IDebugDocumentContext2` `IDebugDisassemblyStream2`sulle `IDebugDocumentPosition2` `IDebugActivateDocumentEvent2` interfacce , , e restituiscono questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IDebugDocument2`.
+ Nella tabella seguente vengono `IDebugDocument2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Ottiene il nome del documento in uno dei diversi formati.|
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Ottiene l'identificatore di classe del documento.|
 
-## <a name="remarks"></a>Note
- Questa interfaccia è implementata solo quando la Germania fornisce il codice sorgente. Ad esempio, quando si esegue il debug dello script in una pagina HTML, la Germania fornisce il codice sorgente perché l'origine è scaricato oppure generato in modo dinamico e non esiste come file di disco. Durante il debug tradizionali linguaggi, ad esempio C++, questa interfaccia non devono essere implementati.
+## <a name="remarks"></a>Osservazioni
+ Questa interfaccia viene implementata solo quando il DE fornisce il codice sorgente. Ad esempio, quando si esegue il debug di script in una pagina HTML, il DE fornisce il codice sorgente perché l'origine viene scaricato o generato in modo dinamico e non esiste come file su disco. Durante il debug dei linguaggi tradizionali, ad esempio C, non è necessario implementare questa interfaccia.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

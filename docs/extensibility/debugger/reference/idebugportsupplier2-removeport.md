@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::RemovePort | Microsoft Docs
+title: Metodo IDebugPortSupplier2::RemovePort . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::RemovePort
 ms.assetid: f5c1fbf2-9084-46f2-a682-7db963928df2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba0a18ba3d137e0e003b84c01cfb98e4504aff88
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a9a23301395fe875efe66936d737d9b2bad0accb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340111"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724527"
 ---
 # <a name="idebugportsupplier2removeport"></a>IDebugPortSupplier2::RemovePort
 Rimuove una porta.
@@ -41,13 +41,13 @@ int RemovePort( 
 
 ## <a name="parameters"></a>Parametri
 `pPort`\
-[in] Un' [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) oggetto che rappresenta la porta da rimuovere.
+[in] Oggetto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) che rappresenta la porta da rimuovere.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Questo metodo rimuove la porta dall'elenco di porte attive interno del fornitore della porta.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo rimuove la porta dall'elenco interno delle porte attive del fornitore della porta.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetPassCount | Microsoft Docs
+title: IDebugPendingBreakpoint2::SetPassCount . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetPassCount method
 - IDebugPendingBreakpoint2::SetPassCount method
 ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5af01702c20b4841c5d737bef2c3be7f885cc31e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 732eadc955b9a6c9bdded3d52f038ff58ed9c217
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340557"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725685"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
-Imposta o modifica il numero di pass associato con il punto di interruzione in sospeso.
+Imposta o modifica il numero di passaggi associato al punto di interruzione in sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ int SetPassCount( 
 
 ## <a name="parameters"></a>Parametri
 `bpPassCount`\
-[in] Oggetto [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) struttura che contiene il conteggio del pass.
+[in] Struttura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) che contiene il conteggio dei passaggi.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stata eliminata.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce un valore che `E_BP_DELETED` indica se il punto di interruzione è stato eliminato.
 
-## <a name="remarks"></a>Note
- Qualsiasi numero di passaggio che era precedentemente associato il punto di interruzione in sospeso verrà perso. Tutti i punti di interruzione associati da questo oggetto in sospeso punto di interruzione vengono chiamati per impostare il conteggio di pass il `bpPassCount` parametro.
+## <a name="remarks"></a>Osservazioni
+ Qualsiasi conteggio dei pass precedentemente associato al punto di interruzione in sospeso viene perso. Tutti i punti di interruzione associati da questo punto `bpPassCount` di interruzione in sospeso vengono chiamati per impostare il numero di passaggi per il parametro.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

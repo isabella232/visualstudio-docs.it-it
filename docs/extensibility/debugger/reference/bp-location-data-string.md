@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_DATA_STRING | Microsoft Docs
+title: proprietà BP_LOCATION_DATA_STRING . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_DATA_STRING structure
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: cf8e2958f55ca13ab050302a24ad9e5ae185d81a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 75f881feaaa2068abd98d771a63024f20435d98f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353098"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737976"
 ---
-# <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
-Utilizzata per impostare i punti di interruzione dei dati che si basano su una stringa che l'utente può immettere dall'ambiente di sviluppo integrato (IDE).
+# <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
+Utilizzato per l'impostazione di punti di interruzione di dati basati su una stringa che l'utente può immettere dall'ambiente di sviluppo integrato (IDE).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,19 +37,19 @@ typedef struct _BP_LOCATION_DATA_STRING {
 
 ## <a name="members"></a>Membri
 `pThread`\
-Il [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread in cui si verifica il punto di interruzione.
+Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread in cui si verifica il punto di interruzione.
 
 `bstrContext`\
-Contesto del punto di interruzione all'interno del codice, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.
+Contesto del punto di interruzione all'interno del codice, in genere un nome di metodo o funzione come illustrato in uno stack di chiamate.
 
 `bstrDataExpr`\
-La stringa di dati l'utente immette per impostare il punto di interruzione.
+Stringa di dati immessa dall'utente per impostare il punto di interruzione.
 
 `dwNumElements`\
-Il numero di elementi nella stringa di dati in cui si verifica il punto di interruzione.
+Numero di elementi nella stringa di dati in cui si verifica il punto di interruzione.
 
-## <a name="remarks"></a>Note
-Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.
+## <a name="remarks"></a>Osservazioni
+Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'unione.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2 | Microsoft Docs
+title: Proprietà IEnumDebugModules2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2
 ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd6d7dc2cba76443d409feef4f2fe9dd0cd04e33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 612285aa4d5a249c0f922ccae88d98a7df83187b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339647"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716440"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
-Questa interfaccia enumera un elenco dei moduli.
+Questa interfaccia enumera un elenco di moduli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,23 +32,23 @@ IEnumDebugModules2 : IUnknown
  Il motore di debug (DE) implementa questa interfaccia per rappresentare un elenco di moduli caricati per un programma.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Le chiamate di Visual Studio [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) per ottenere questa interfaccia.
+ Visual Studio chiama [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) per ottenere questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IEnumDebugModules2`.
+ Nella tabella seguente vengono `IEnumDebugModules2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[avanti](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Recupera un determinato numero di moduli in una sequenza di enumerazione.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Ignora un numero specificato di moduli in una sequenza di enumerazione.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Ottiene il numero dei moduli.|
+|[Avanti](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Recupera un numero specificato di moduli in una sequenza di enumerazione.|
+|[Saltare](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Ignora un numero specificato di moduli in una sequenza di enumerazione.|
+|[Reimposta](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md) (Clona)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Ottiene il numero di moduli.|
 
-## <a name="remarks"></a>Note
- Visual Studio Usa questa interfaccia principalmente per aggiornare il **moduli** finestra.
+## <a name="remarks"></a>Osservazioni
+ Visual Studio usa questa interfaccia principalmente per aggiornare la finestra **Moduli.Visual** Studio uses this interface primarily to update the Modules window.
 
- Ai fini di debug in Visual Studio, un programma è una sequenza logica di istruzioni di codice che possono oltrepassare i limiti di modulo, quindi la necessità di un elenco di moduli per una singola [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia. Il primo modulo nell'elenco contiene in genere il punto di ingresso iniziale per il programma associato.
+ Ai fini del debug in Visual Studio, un programma è una sequenza logica di istruzioni di codice che possono attraversare i limiti dei moduli, pertanto la necessità di un elenco di moduli per una singola [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia. Il primo modulo nell'elenco contiene in genere il punto di ingresso iniziale per il programma associato.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

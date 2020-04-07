@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2 | Microsoft Docs
+title: Proprietà IDebugErrorBreakpointResolution2 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2
 ms.assetid: b1234216-0ac8-461d-b2a7-54f60f8f3262
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 093b3ae1bd58113941d1031559dadd55cb704475
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d922259034d4e99c43fc06cfef8228b013fb180f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327761"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730014"
 ---
 # <a name="idebugerrorbreakpointresolution2"></a>IDebugErrorBreakpointResolution2
 Questa interfaccia rappresenta la risoluzione di un errore del punto di interruzione.
@@ -29,18 +29,18 @@ IDebugErrorBreakpointResolution2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Un motore di debug implementa questa interfaccia come parte del supporto per i punti di interruzione. Questa interfaccia viene utilizzata per segnalare in un punto di interruzione non è stato possibile eseguire l'associazione.
+ Un motore di debug implementa questa interfaccia come parte del supporto per i punti di interruzione. Questa interfaccia viene utilizzata per segnalare dove non è stato possibile associare un punto di interruzione.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Una chiamata a [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) restituisce questa interfaccia per specificare le informazioni in cui il punto di interruzione non è stato possibile eseguire l'associazione. Il [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) metodo ottiene il [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interfaccia.
+ Una chiamata a [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) restituisce questa interfaccia per fornire informazioni sulla posizione in cui non è stato possibile associare il punto di interruzione. Il [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) metodo ottiene il [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IDebugErrorBreakpointResolution2`.
+ Nella tabella seguente vengono `IDebugErrorBreakpointResolution2`illustrati i metodi di .
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Ottiene il tipo di punto di interruzione.|
-|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Ottiene le informazioni di risoluzione del punto di interruzione.|
+|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Ottiene le informazioni sulla risoluzione del punto di interruzione.|
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

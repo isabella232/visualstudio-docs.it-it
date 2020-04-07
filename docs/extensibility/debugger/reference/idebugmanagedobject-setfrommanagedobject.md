@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
+title: Proprietà IDebugManagedObject::SetFromManagedObject . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf82275bf3375098cc8a8bcbeb200846252d2cec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4056befa0b5b053d480983901b24feb6b25cf538
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349372"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727706"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
-Imposta il valore dell'istanza dell'oggetto della classe di valore dall'istanza della classe di valori fornita come parametro.
+Imposta il valore dell'istanza dell'oggetto classe di valori dall'istanza della classe di valori fornita come parametro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int SetFromManagedObject(
 
 ## <a name="parameters"></a>Parametri
 `pManagedObject`\
-[in] Un'interfaccia che rappresenta l'oggetto gestito che contiene il nuovo valore.
+[in] Interfaccia che rappresenta l'oggetto gestito contenente il nuovo valore.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- Questo metodo viene utilizzato per modificare l'oggetto gestito, come rappresentate dal [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) oggetto.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo viene utilizzato per modificare l'oggetto gestito come rappresentato dal [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) oggetto.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

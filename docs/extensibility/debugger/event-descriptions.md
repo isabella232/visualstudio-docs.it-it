@@ -1,48 +1,48 @@
 ---
-title: Le descrizioni degli eventi | Microsoft Docs
+title: Descrizioni degli eventi Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267011c61a3b43c76db80a758a86f1af1dd228b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3c2582717fd4da3b833da90a951f9b8f72a59f71
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315355"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738795"
 ---
 # <a name="event-descriptions"></a>Descrizioni degli eventi
 Ogni tipo di evento ha uno scopo specifico.
 
-## <a name="events-and-the-reasons-for-their-use"></a>Gli eventi e i motivi per l'uso
+## <a name="events-and-the-reasons-for-their-use"></a>Eventi e le ragioni del loro utilizzo
 
-|event|Descrizione|
+|Event|Descrizione|
 |-----------|-----------------|
-|Attivare gli eventi del documento|Si verificano quando il motore di debug (DE) richiede l'IDE per aprire o visualizzare un documento in primo piano.|
-|Punto di interruzione associata o eventi di errore punto di interruzione|Inviato quando è associato un punto di interruzione o quando non è possibile associare un punto di interruzione e viene restituito un errore.|
-|Eventi punto di interruzione non associato|Si verificano quando un punto di interruzione associato viene disassociata dal codice.|
-|Può arrestare eventi|Inviato all'IDE per determinare se l'utente desidera arrestare in un momento specificato nel codice.|
-|Eventi punto di interruzione|Si verifica quando viene raggiunto un punto di interruzione di dati o codice.|
-|Eventi di testo di documenti|Si verifica quando viene modificato il testo in un documento. Questi eventi non vengono inviati tramite il `IDebugEventCallBack2::Event` (metodo).|
-|Motore di creare eventi|Inviato quando un motore viene inizialmente creato.|
-|Eventi punto di ingresso|Inviato quando il programma in fase di debug ha eseguito il codice di inizializzazione e raggiunto il primo punto di ingresso utente.|
+|Attivare gli eventi del documento|Si verifica quando il motore di debug (DE) desidera che l'IDE per aprire o portare un documento in primo piano.|
+|Eventi di errore associati a punti di interruzione o punti di interruzione|Inviato quando un punto di interruzione è associato o quando un punto di interruzione non può essere associato e viene restituito un errore.|
+|Eventi non associati ai punti di interruzione|Si verifica quando un punto di interruzione associato viene dissociato dal codice.|
+|Può fermare gli eventi|Inviato all'IDE per determinare se l'utente desidera interrompere in un punto specificato nel codice.|
+|Eventi punto di interruzione|Si verifica quando viene raggiunto un codice o un punto di interruzione di dati.|
+|Eventi di testo del documento|Si verifica quando il testo in un documento viene modificato. Questi eventi non vengono `IDebugEventCallBack2::Event` inviati tramite il metodo .|
+|Eventi di creazione del motoreEngine create events|Inviato quando un motore viene creato per la prima volta.|
+|Eventi del punto di ingresso|Inviato quando il programma in fase di debug ha eseguito il codice di inizializzazione e ha raggiunto il primo punto di ingresso dell'utente.|
 |Eventi di eccezione|Inviato quando un programma in esecuzione raggiunge un'eccezione.|
-|Eventi di completamento valutazione di espressioni|Inviato quando la valutazione dell'espressione asincrona è stata completata.|
-|Trovare gli eventi di simboli|Inviato ogni volta che la Germania deve richiedere all'utente di trovare i simboli per un modulo.|
-|Eventi di caricamento completati|Inviato solo quando il carico iniziale del programma è stato completato e il primo codice sta per eseguire il programma.|
-|Eventi dei messaggi|Inviato quando i messaggi vengono inviati agli utenti.|
-|Eventi modulo di caricamento|Inviato quando un nuovo modulo viene caricato o scaricato.|
-|Eventi di stringa di output|Inviato quando il programma scrive l'output di debug.|
-|Creare e distruggere gli eventi|Invio di annunciare la creazione o l'eliminazione di processi, programmi, proprietà, le sessioni e i thread in modo che l'IDE di Visual Studio può tenere traccia dello stato dei programmi in fase di debug.|
-|Eventi di passaggio completati|Inviato quando un passaggio è stato completato.|
-|Eventi di modifica nome thread|Inviato quando l'utente modifica il nome di un thread.|
-|Eventi di modifica nome programma|Inviato quando l'utente modifica il nome di un programma.|
+|Eventi completi di valutazione dell'espressione|Inviato al termine della valutazione asincrona dell'espressione.|
+|Eventi Trova simbolo|Inviato ogni volta che il DE deve chiedere all'utente di trovare i simboli per un modulo.|
+|Caricare gli eventi completi|Inviato solo quando il caricamento iniziale del programma è completo e il primo codice sta per essere eseguito nel programma.|
+|Eventi messaggio|Inviato quando i messaggi vengono inviati agli utenti.|
+|Eventi di caricamento del modulo|Inviato quando un nuovo modulo viene caricato o scaricato.|
+|Eventi stringa di output|Inviato quando il programma scrive l'output di debug.|
+|Creare e distruggere eventi|Inviato per annunciare la creazione o l'eliminazione di processi, programmi, proprietà, sessioni e thread in modo che l'IDE di Visual Studio possa tenere traccia dello stato dei programmi sottoposti a debug.|
+|Passaggio degli eventi completiStep complete events|Inviato al completamento di un passaggio.|
+|Eventi di modifica del nome del thread|Inviato quando l'utente modifica il nome di un thread.|
+|Eventi di modifica del nome del programma|Inviato quando l'utente modifica il nome di un programma.|
 
 ## <a name="see-also"></a>Vedere anche
-- [L'invio di eventi](../../extensibility/debugger/sending-events.md)
+- [Invio di eventi](../../extensibility/debugger/sending-events.md)

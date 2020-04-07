@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetRange | Microsoft Docs
+title: Proprietà IDebugDocumentPosition2::GetRange . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetRange
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c67828e2d9e1cb0c75d272b57e7c6b610a84fdd5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a923691afdfe145931ab31d0e9bbc6142e7c8d1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326467"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731671"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
-Ottiene l'intervallo per questa posizione del documento.
+Ottiene l'intervallo per la posizione del documento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,23 +43,23 @@ int GetRange( 
 
 ## <a name="parameters"></a>Parametri
 `pBegPosition`\
-[in, out] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura compilata con la posizione iniziale. Impostare questo argomento con un valore null se questa informazione non è necessaria.
+[in, out] Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che viene compilata con la posizione iniziale. Impostare questo argomento su un valore null se queste informazioni non sono necessarie.
 
 `pEndPosition`\
-[in, out] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura compilata con la posizione finale. Impostare questo argomento con un valore null se questa informazione non è necessaria.
+[in, out] Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che viene compilata con la posizione finale. Impostare questo argomento su un valore null se queste informazioni non sono necessarie.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- L'intervallo specificato in una posizione di documento per un punto di interruzione di posizione viene utilizzato dal motore di debug (DE) per la ricerca con un'istruzione che effettivamente contribuisce codice. Si consideri il codice di esempio seguente:
+## <a name="remarks"></a>Osservazioni
+ L'intervallo specificato in una posizione di documento per un punto di interruzione di posizione viene utilizzato dal motore di debug (DE) per cercare in anticipo un'istruzione che contribuisce effettivamente al codice. Si consideri il codice di esempio seguente:
 
 ```
 Line 5: // comment
 Line 6: x = 1;
 ```
 
- Riga 5 non contribuisce alcun codice per il programma sottoposto a debug. Se il debugger che consente di impostare il punto di interruzione alla riga 5 desidera DE per eseguire la ricerca di un determinato periodo per la prima riga che ha reso disponibile codice, il debugger di specificare un intervallo che include le righe aggiuntive candidato in cui un punto di interruzione potrebbe essere correttamente posizionato. La Germania verrebbe quindi eseguita una ricerca in avanti tramite queste righe fino a quando non trovata una riga che può accettare un punto di interruzione.
+ Riga 5 non fornisce codice al programma in fase di debug. Se il debugger che imposta il punto di interruzione nella riga 5 desidera che il DE per cercare in avanti una certa quantità per la prima riga che contribuisce al codice, il debugger specifica un intervallo che include ulteriori righe candidate in cui un punto di interruzione potrebbe essere posizionato correttamente. Il DE sarebbe quindi cercare in avanti attraverso tali righe fino a trovare una riga che potrebbe accettare un punto di interruzione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

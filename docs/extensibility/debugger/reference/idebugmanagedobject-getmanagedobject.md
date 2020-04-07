@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::GetManagedObject | Microsoft Docs
+title: Proprietà IDebugManagedObject::GetManagedObject . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject::GetManagedObject method
 ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75e0367aaddb28e2af2703904fd77b4e4f9f6322
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b7080760b174c51d62c44cd2757944948e0104ca
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349401"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727745"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 Restituisce un'interfaccia che rappresenta l'oggetto gestito.
@@ -41,13 +41,13 @@ int GetManagedObject(
 
 ## <a name="parameters"></a>Parametri
 `ppManagedObject`\
-[out] Restituisce un'interfaccia che rappresenta l'oggetto gestito.
+[fuori] Restituisce un'interfaccia che rappresenta l'oggetto gestito.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- L'interfaccia restituita da questo metodo è possibile eseguire query per qualsiasi interfaccia implementata dalla classe gestita, che consente di chiamare i relativi metodi.
+## <a name="remarks"></a>Osservazioni
+ L'interfaccia restituita da questo metodo può essere eseguita una query per qualsiasi interfaccia implementata dalla classe gestita, consentendo la chiamata dei relativi metodi.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

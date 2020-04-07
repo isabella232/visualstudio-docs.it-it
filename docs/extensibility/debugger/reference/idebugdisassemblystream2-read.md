@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Read | Microsoft Docs
+title: Proprietà IDebugDisassemblyStream2::Read . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Read
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c74ed1de1d12cc7384ee8f7d27dad910c7b9c9d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310347"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732089"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-Legge le istruzioni a partire dalla posizione corrente nel flusso di disassemblaggio.
+Legge le istruzioni a partire dalla posizione corrente nel flusso di smontaggio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,26 +47,26 @@ int Read( 
 
 ## <a name="parameters"></a>Parametri
 `dwInstructions`\
-[in] Il numero di istruzioni da disassemblare. Questo valore è anche la lunghezza massima del `prgDisassembly` matrice.
+[in] Il numero di istruzioni da smontare. Questo valore è anche la `prgDisassembly` lunghezza massima della matrice.
 
 `dwFields`\
-[in] Una combinazione di flag dal [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) enumerazione che indicano quali campi della `prgDisassembly` sono da compilare.
+[in] Combinazione di flag dell'enumerazione [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) `prgDisassembly` che indicano i campi di devono essere compilati.
 
 `pdwInstructionsRead`\
-[out] Restituisce il numero di istruzioni effettivamente disassemblato.
+[fuori] Restituisce il numero di istruzioni effettivamente disassemblate.
 
 `prgDisassembly`\
-[out] Matrice di [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) strutture che viene compilato con il codice disassemblato, una struttura per ogni istruzione disassemblato. La lunghezza di questa matrice è determinata dal `dwInstructions` parametro.
+[fuori] Matrice di strutture [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) compilata con il codice disassemblato, una struttura per ogni istruzione disassemblata. La lunghezza di questa matrice `dwInstructions` è dettata dal parametro.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Il numero massimo di istruzioni che sono disponibili nell'ambito corrente può essere ottenuto chiamando il [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) (metodo).
+## <a name="remarks"></a>Osservazioni
+ Il numero massimo di istruzioni disponibili nell'ambito corrente può essere ottenuto chiamando il [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) metodo.
 
- La posizione corrente in cui l'istruzione successiva viene letto da può essere modificata chiamando il [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) (metodo).
+ La posizione corrente da cui viene letta l'istruzione successiva può essere modificata chiamando il [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) metodo.
 
- Il `DSF_OPERANDS_SYMBOLS` flag può essere aggiunti al `DSF_OPERANDS` flag nel `dwFields` parametro per indicare che i nomi dei simboli devono essere utilizzati quando le istruzioni di disassemblaggio.
+ Il `DSF_OPERANDS_SYMBOLS` flag può essere `DSF_OPERANDS` aggiunto `dwFields` al flag nel parametro per indicare che i nomi dei simboli devono essere utilizzati durante le istruzioni di disassemblaggio.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

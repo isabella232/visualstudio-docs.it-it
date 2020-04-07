@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Delete | Microsoft Docs
+title: IDebugPendingBreakpoint2::Delete . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Delete method
 - Delete method
 ms.assetid: 4cb5ed81-6f0c-41ce-a770-5adb6b4bf5d9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 850f073e76bb48e734ff1cccac100b10ceaa2066
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fd6e2d61eb7a7ce927a966281bba2f0cbf470dc6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320465"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725910"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
-Elimina il punto di interruzione in sospeso e tutti i punti di interruzione associati da quest'ultimo.
+Elimina questo punto di interruzione in sospeso e tutti i punti di interruzione associati da esso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,10 +39,10 @@ int Delete();
 ```
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stata eliminata.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce un valore che `E_BP_DELETED` indica se il punto di interruzione è stato eliminato.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CPendingBreakpoint` oggetto che implementa le [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaccia.
+Nell'esempio seguente viene illustrato come `CPendingBreakpoint` implementare questo metodo per un oggetto semplice che implementa il [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaccia.
 
 ```cpp
 HRESULT CPendingBreakpoint::Delete(void)

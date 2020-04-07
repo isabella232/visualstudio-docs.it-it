@@ -1,39 +1,39 @@
 ---
-title: Common Language Runtime e valutazione delle espressioni | Microsoft Docs
+title: Common Language Runtime e valutazione delle espressioni Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803dbb75a5cc9ad2b4fc81310c3b564994fea734
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 013579473189dd9310501b76d2de0d5cf6fa5822
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351304"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739119"
 ---
-# <a name="common-language-runtime-and-expression-evaluation"></a>Valutazione di Common language runtime ed espressione
+# <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime e valutazione delle espressioni
 > [!IMPORTANT]
-> In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [esempio analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere [Analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e Esempio di [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Compilatori, ad esempio Visual Basic e c# (pronunciato C-sharp), destinate a Common Language Runtime (CLR), produrre linguaggio MSIL (Microsoft Intermediate), ovvero successive compilate in codice nativo. CLR fornisce un motore di debug (DE) per il debug del codice risulta. Se si prevede di integrare il linguaggio di programmazione proprietario nell'IDE di Visual Studio, è possibile scegliere di compilare in codice MSIL e pertanto non sarà necessario scrivere il proprio DE. Tuttavia, è necessario scrivere un analizzatore di espressioni (EE) che è in grado di valutazione di espressioni all'interno del contesto del linguaggio di programmazione.
+ I compilatori, ad esempio Visual Basic e C, (pronunciato in C-sharp), destinati a Common Language Runtime (CLR), producono Microsoft Intermediate Language (MSIL), che viene successivamente compilato in codice nativo. CLR fornisce un motore di debug (DE) per eseguire il debug del codice risultante. Se si prevede di integrare il linguaggio di programmazione proprietario nell'IDE di Visual Studio, è possibile scegliere di compilare in MSIL e pertanto non sarà necessario scrivere il proprio DE. Tuttavia, sarà necessario scrivere un analizzatore di espressioni (EE) in grado di valutare le espressioni nel contesto del linguaggio di programmazione.
 
 ## <a name="discussion"></a>Discussione
- Le espressioni del linguaggio computer vengono in genere analizzate per produrre un set di oggetti dati e un set di operatori usato per la manipolazione. L'espressione "A + B" può essere analizzata per applicare l'operatore di addizione (+) per i dati degli oggetti, ad esempio, "A" e "B", determinando in un altro oggetto dati. Set totale di oggetti dati, operatori e le relative associazioni sono spesso rappresentati in un programma come un albero, con gli operatori ai nodi dell'albero e gli oggetti dati nelle filiali. Un'espressione che è stato suddiviso in forma di struttura ad albero viene spesso definita una struttura ad albero analizzato.
+ Le espressioni del linguaggio computer sono in genere analizzate per produrre un set di oggetti dati e un set di operatori utilizzati per modificarli. Ad esempio, è possibile analizzare l'espressione "A" per applicare l'operatore di addizione ( ) agli oggetti dati "A" e "B", eventualmente generando un altro oggetto dati. Il set totale di oggetti dati, gli operatori e le relative associazioni sono più spesso rappresentati in un programma come una struttura ad albero, con gli operatori nei nodi della struttura ad albero e gli oggetti dati nei rami. Un'espressione suddivisa in forma ad albero viene spesso chiamata albero analizzato.
 
- Una volta che un'espressione è stata analizzata, viene chiamato un provider di simboli (SP) per valutare ogni oggetto dati. Se, ad esempio, "A" è definito in più di un metodo, la domanda "Quale A?" deve essere una risposta prima che è possibile ottenere il valore dell'oggetto. La risposta restituita dalla stored procedure è simile a "Il terzo elemento sullo stack frame quinto" o "A 50 byte oltre l'inizio della memoria statica allocato a questo metodo".
+ Una volta analizzata un'espressione, viene chiamato un provider di simboli (SP) per valutare ogni oggetto dati. Ad esempio, se "A" è definito sia in più di un metodo, la domanda "Quale A?" deve essere risposto prima di poter accertare il valore di A. La risposta restituita dal SP è qualcosa come "Il terzo elemento sul quinto stack frame" o "A che è 50 byte oltre l'inizio della memoria statica allocata a questo metodo."
 
- Oltre a produrre codice MSIL per il programma stesso, i compilatori CLR possono inoltre generare informazioni di debug molto descrittive che viene scritto in un DataBase di programma (*PDB*) file. Fino a quando un compilatore di linguaggio di tua proprietà produce informazioni di debug nello stesso formato i compilatori CLR, SP di CLR è in grado di identificare che del linguaggio denominato oggetti dati. Dopo aver individuato un oggetto dati con nome, l'analizzatore di Espressioni Usa un oggetto strumento di associazione per associare l'oggetto dati (o associare) nell'area di memoria che contiene il valore di tale oggetto. Il DE possa quindi ottenere o impostare un nuovo valore per l'oggetto dati.
+ Oltre a produrre codice MSIL per il programma stesso, i compilatori CLR possono anche produrre informazioni di debug molto descrittive scritte in un file *.pdb*( Program DataBase). Finché un compilatore di linguaggio proprietario produce informazioni di debug nello stesso formato dei compilatori CLR, il SP di CLR è in grado di identificare gli oggetti dati denominati del linguaggio. Una volta identificato un oggetto dati denominato, EE utilizza un oggetto gestore di associazione per associare (o associare) l'oggetto dati all'area di memoria che contiene il valore di tale oggetto. Il DE può quindi ottenere o impostare un nuovo valore per l'oggetto dati.
 
- Un compilatore proprietario può fornire informazioni di debug tramite la chiamata di CLR i `ISymbolWriter` interface (definito in .NET Framework nello spazio dei nomi `System.Diagnostics.SymbolStore`). La compilazione in codice MSIL e scrivendo le informazioni di debug tramite queste interfacce, è possibile usare un compilatore proprietario il CLR Germania e provider di servizi. Questo semplifica notevolmente l'integrazione di un linguaggio proprietario nell'IDE di Visual Studio.
+ Un compilatore proprietario può fornire informazioni `ISymbolWriter` di debug CLR chiamando l'interfaccia `System.Diagnostics.SymbolStore`(definita in .NET Framework nello spazio dei nomi ). Compilando in MSIL e scrivendo informazioni di debug tramite queste interfacce, un compilatore proprietario può utilizzare CLR DE e SP. Ciò semplifica notevolmente l'integrazione di un linguaggio proprietario nell'IDE di Visual Studio.This seimplifies integrating a proprietary language into the Visual Studio IDE.
 
- Quando la Germania CLR chiama l'analizzatore di Espressioni proprietarie per valutare un'espressione, la Germania fornisce l'analizzatore di Espressioni con le interfacce per un Service Pack e un oggetto strumento di associazione. Di conseguenza, la scrittura di un mezzo del motore di debug basata su CLR è necessario solo implementare le interfacce dell'analizzatore di espressione appropriata. Common Language Runtime si occupa dell'associazione e il simbolo di gestione per l'utente.
+ Quando CLR DE chiama l'analizzatore di espressioni proprietario per valutare un'espressione, il DE fornisce l'eE con interfacce a un SP e un oggetto binder. Pertanto, la scrittura di un motore di debug basato su CLR significa che è necessario solo implementare le interfacce dell'analizzatore di espressioni appropriate; CLR si occupa dell'associazione e della gestione dei simboli.
 
 ## <a name="see-also"></a>Vedere anche
-- [Scrivere un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Scrivere un analizzatore di espressioni CLRWrite a CLR expression evaluator](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

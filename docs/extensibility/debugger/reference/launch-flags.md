@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Microsoft Docs
+title: proprietà LAUNCH_FLAGS . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339359"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714711"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
+# <a name="launch_flags"></a>LAUNCH_FLAGS
 Specifica i flag di avvio del debug.
 
 ## <a name="syntax"></a>Sintassi
@@ -48,21 +48,21 @@ public enum enum_LAUNCH_FLAGS {
 
 ## <a name="fields"></a>Campi
 `LAUNCH_DEBUG`\
-Avvia il processo per eseguire il debug.
+Avvia il processo di debug.
 
 `LAUNCH_NODEBUG`\
-Avvia il processo senza eseguirne il debug.
+Avvia il processo senza eseguire il debug.
 
 `LAUNCH_ENABLE_ENC`\
-DEPRECATO, NON USARE.
+DEPRECATO, NON UTILIZZARE.
 
 `LAUNCH_MERGE_ENV`\
-Avvia il processo e unisce l'ambiente con l'host che esegue l'applicazione.
+Avvia il processo e unisce l'ambiente all'host di avvio.
 
-## <a name="remarks"></a>Note
-Questi valori vengono passati come argomento per il [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) (metodo).
+## <a name="remarks"></a>Osservazioni
+Questi valori vengono passati come argomento per il [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metodo.
 
-Questi flag possono essere combinati con un bit per bit `OR`.
+Questi flag possono essere combinati `OR`con un oggetto .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

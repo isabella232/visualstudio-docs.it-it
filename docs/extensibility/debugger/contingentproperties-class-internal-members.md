@@ -1,31 +1,31 @@
 ---
-title: Classe ContingentProperties - membri interni | Microsoft Docs
+title: Classe ContingentProperties - Membri interni . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
 - debug engines, ContingentProperties class [.NET Framework]
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b9775ed74e7ae81768f180e596f171b2c99cba
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c6441cafcc34a06464061b41691ea5faa32fc359
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344312"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739104"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties - membri interni
-Contiene le proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto.
+Contiene proprietà aggiuntive <xref:System.Threading.Tasks.Task> per un oggetto.
 
- **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Spazio dei nomi:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** mscorlib (in mscorlib. dll)
+ **Assembly:** mscorlib (in mscorlib.dll)
 
- Poiché non è possibile accedere a questi membri interni da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).
+ Poiché non è possibile accedere a questi membri interni da .NET Framework, la sintassi seguente è disponibile in Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ Contiene le proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> ogge
 
 |Nome|Descrizione|
 |----------|-----------------|
-|[m_children](../../extensibility/debugger/m-children-field.md)|L'elenco delle attività figlio che sono registrati con questa attività.|
+|[m_children](../../extensibility/debugger/m-children-field.md)|Elenco di attività figlio registrate con questa attività.|
 
-## <a name="remarks"></a>Note
- .NET Framework consente di inizializzare i campi di questa classe solo quando sono necessari.
+## <a name="remarks"></a>Osservazioni
+ .NET Framework inizializza i campi di questa classe solo quando sono necessari.
 
 ## <a name="see-also"></a>Vedere anche
-- [Elementi interni delle estensioni parallele per .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Elementi interni delle estensioni parallele per .NET FrameworkParallel extension internals for the .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

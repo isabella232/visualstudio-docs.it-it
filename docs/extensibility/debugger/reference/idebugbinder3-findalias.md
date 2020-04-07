@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::FindAlias | Microsoft Docs
+title: Proprietà IDebugBinder3::FindAlias . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::FindAlias method
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8387a3302395d6e25c2b00dd360286e533531168
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0a697e39d21b1c25a98c09ad6cc4837cca7a293
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344427"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735869"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-Questo metodo individua un alias, dato un nome. Si eseguirà la ricerca tutti gli alias nel programma.
+Questo metodo individua un alias, dato un nome. Questo cercherà tutti gli alias nel programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ int FindAlias(
 
 ## <a name="parameters"></a>Parametri
 `pcstrName`\
-[in] Nome di alias da trovare.
+[in] Nome dell'alias da trovare.
 
 `ppAlias`\
-[out] Alias (se presente) rappresentato dal [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interfaccia.
+[fuori] Alias trovato (se presente) rappresentato dal [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` (se non viene trovato alias) o un codice di errore.
+ Se ha `S_OK`esito positivo, restituisce ; in caso `S_FALSE` contrario, restituisce (se alias non viene trovato) o un codice di errore.
 
-## <a name="remarks"></a>Note
- Questo metodo inizializza l'oggetto di destinazione a null prima di chiamare il metodo. quindi verifica un valore null in un secondo momento determinare se l'alias è stato trovato.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo inizializza l'oggetto di destinazione su null prima di chiamare; quindi verifica la verifica di un valore null in seguito per determinare se l'alias è stato trovato o meno.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

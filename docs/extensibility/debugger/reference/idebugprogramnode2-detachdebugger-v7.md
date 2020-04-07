@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
+title: IDebugProgramNode2::DetachDebugger_V7 . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger
 - IDebugProgramNode2::DetachDebugger_V7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 241db5db55897932120b3253ff5185cb852ea77b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925f1b07662ece35d21f9b647681bc898428c4c7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351213"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722116"
 ---
-# <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
+# <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
 > [!Note]
-> DEPRECATO. NON USARE.
+> Deprecato. NON UTILIZZARE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,14 +41,14 @@ int DetachDebugger_V7 ();
 
 ## <a name="return-value"></a>Valore restituito
 
-Un'implementazione deve sempre restituire `E_NOTIMPL`.
+Un'implementazione `E_NOTIMPL`deve sempre restituire .
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 > [!WARNING]
-> A partire da Visual Studio 2005, questo metodo non viene più usato e deve sempre restituire `E_NOTIMPL`.
+> A partire da Visual Studio 2005, questo metodo `E_NOTIMPL`non viene più utilizzato e deve sempre restituire .
 
-Questo metodo viene chiamato quando il debugger viene chiuso in modo imprevisto. Quando questo metodo viene chiamato, la Germania deve essere ripreso il programma come se l'utente disconnesso da quest'ultimo. Nessun altro evento di debug deve essere inviato. Il programma deve essere in uno stato in cui è associabile da un'altra istanza del debugger.
+Questo metodo viene chiamato quando il debugger si chiude in modo imprevisto. Quando questo metodo viene chiamato, il DE deve riprendere il programma come se l'utente si è disconnesso da esso. Non devono essere inviati altri eventi di debug. Il programma deve trovarsi in uno stato in cui è collegabile da un'altra istanza del debugger.
 
 ## <a name="see-also"></a>Vedere anche
 

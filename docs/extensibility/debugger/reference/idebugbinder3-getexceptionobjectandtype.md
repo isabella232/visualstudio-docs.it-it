@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs
+title: IDebugBinder3::GetExceptionObjectAndType . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetExceptionObjectAndType method
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29aa44bdd67234dec4b560ad41be8c677e4356e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e25a0f7b4e1713a072359f1efdd962f36c50b774
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327082"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735743"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 Questo metodo recupera l'eccezione associata a un oggetto, se presente.
@@ -43,16 +43,16 @@ int GetExceptionObjectAndType(
 
 ## <a name="parameters"></a>Parametri
 `ppException`\
-[out] Restituisce l'oggetto che rappresenta l'eccezione.
+[fuori] Restituisce l'oggetto che rappresenta l'eccezione.
 
 `ppField`\
-[out] Restituisce l'oggetto che rappresenta un campo specifico che potrà aver causato l'eccezione (potrebbe trattarsi di un valore null).
+[fuori] Restituisce l'oggetto che rappresenta un campo specifico che potrebbe aver causato l'eccezione (può essere un valore null).
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 > [!NOTE]
-> Per verificare se si verifica un'eccezione, controllare il valore restituito da `ppException`: se si tratta di un valore null, quindi non è associata a questo oggetto fa eccezione.
+> Per verificare se è presente un'eccezione, controllare il valore restituito da `ppException`: se si tratta di un valore null, quindi non è associata alcuna eccezione a questo oggetto.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

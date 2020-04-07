@@ -1,49 +1,49 @@
 ---
-title: Proprietà Window Fields and Interfaces | Microsoft Docs
+title: Interfacce e campi della finestra Proprietà Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 379eaa6e154b77d10463514a63978708bf2b89d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9529708c781e7fdb04c3b4c5ee143b7605857e84
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347878"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80706155"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Campi e interfacce della finestra Proprietà
-Il modello per la selezione determinare quali informazioni vengono visualizzate nel **proprietà** finestra è basata sulla finestra di stato attivo nell'IDE. Ogni finestra e oggetto all'interno della finestra selezionata, può avere relativo oggetto di contesto di selezione il push nel contesto di selezione globale. L'ambiente aggiorna il contesto di selezione globale con i valori di una cornice di finestra quando tale finestra ha lo stato attivo. Quando viene modificato lo stato attivo, pertanto, non il contesto di selezione.
+Il modello per la selezione per determinare quali informazioni vengono visualizzate nella finestra **Proprietà** si basa sulla finestra che ha lo stato attivo nell'IDE. Ogni finestra e oggetto all'interno della finestra selezionata, possono avere il relativo oggetto di contesto di selezione inserito nel contesto di selezione globale. L'ambiente aggiorna il contesto di selezione globale con i valori di una cornice della finestra quando tale finestra ha lo stato attivo. Quando lo stato attivo cambia, cambia anche il contesto di selezione.
 
-## <a name="tracking-selection-in-the-ide"></a>Traccia della selezione nell'IDE
- Il frame della finestra o il sito, di proprietà dall'IDE, offre un servizio chiamato <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>. I passaggi seguenti mostrano come una modifica in una selezione, causata dall'utente modificando lo stato attivo a un'altra finestra aperta o selezionando un elemento di progetto diverso nel **Esplora soluzioni**, viene implementata per modificare il contenuto visualizzato nella finestra di  **Proprietà** finestra.
+## <a name="tracking-selection-in-the-ide"></a>Rilevamento della selezione nell'IDETracking Selection in the IDE
+ La cornice della finestra o il sito, di <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>proprietà dell'IDE, dispone di un servizio denominato . Nei passaggi seguenti viene illustrato come viene implementata una modifica in una selezione, causata dallo stato attivo da parte dell'utente che modifica lo stato attivo in un'altra finestra aperta o dalla selezione di un elemento di progetto diverso in **Esplora soluzioni**, per modificare il contenuto visualizzato nella finestra **Proprietà.**
 
-1. L'oggetto creato dal pacchetto VSPackage che viene inserito nelle chiamate finestra selezionata <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> avere <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> richiamare <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.
+1. L'oggetto creato dal pacchetto VSPackage che si <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> trova <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>nella finestra selezionata chiama per avere richiamare .
 
-2. Il contenitore di selezione, fornito per la finestra selezionata, consente di creare un proprio <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> oggetto. Quando la modifica di selezione, il pacchetto VSPackage chiama <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> per notificare a qualsiasi listener nell'ambiente, inclusi i **proprietà** finestra, della modifica. Fornisce inoltre l'accesso alle informazioni di gerarchia ed elemento correlate alla nuova selezione.
+2. Il contenitore di selezione, fornito dalla <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> finestra selezionata, crea il proprio oggetto. Quando la selezione viene modificata, il pacchetto VSPackage chiama <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> per notificare i listener nell'ambiente, inclusa la finestra **Proprietà,** della modifica. Fornisce inoltre l'accesso alle informazioni sulla gerarchia e sugli elementi relative alla nuova selezione.
 
-3. La chiamata <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> e passando gli elementi della gerarchia selezionata nel `VSHPROPID_BrowseObject` parametro consente di popolare il <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> oggetto.
+3. La <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> chiamata e il passaggio `VSHPROPID_BrowseObject` degli elementi <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> della gerarchia selezionati nel parametro popola l'oggetto.
 
-4. Oggetto derivato dal [IDispatch Interface](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) viene restituita per [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) per l'elemento richiesto e l'ambiente esegue il wrapping in un <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (vedere il passaggio seguente). Se la chiamata non riesce, l'ambiente esegue una seconda chiamata a `IVsHierarchy::GetProperty`, passandolo al contenitore di selezioni [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) che specifichino l'elemento della gerarchia o gli elementi.
+4. Un oggetto derivato [dall'interfaccia IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) viene restituito per [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) per l'elemento richiesto e l'ambiente ne esegue il wrapping in un <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (vedere il passaggio seguente). Se la chiamata ha esito negativo, l'ambiente effettua una seconda chiamata a `IVsHierarchy::GetProperty`, passandoil e __VSHPROPID il contenitore di [selezione. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) che l'articolo o gli articoli della gerarchia forniscono.
 
-    Il progetto VSPackage non viene creato <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> perché la finestra fornita dall'ambiente di VSPackage che implementa (ad esempio, **Esplora soluzioni**) costruisce <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> per suo conto.
+    Il progetto VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> non crea perché la finestra fornita dall'ambiente VSPackage che <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> lo implementa (ad esempio, **Esplora soluzioni**) costruisce per suo conto.
 
-5. L'ambiente chiama i metodi della <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> per ottenere gli oggetti in base il `IDispatch` interfaccia per riempire il **proprietà** finestra.
+5. L'ambiente richiama i <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> metodi di per `IDispatch` ottenere gli oggetti in base all'interfaccia per compilare il **proprietà** finestra.
 
-   Quando un valore nel **delle proprietà** finestra viene modificata, i pacchetti VSPackage implementare `IVsTrackSelectionEx::OnElementValueChangeEx` e `IVsTrackSelectionEx::OnSelectionChangeEx` per segnalare la modifica per il valore dell'elemento. Richiama quindi l'ambiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> oppure <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> per mantenere le informazioni visualizzate nel **proprietà** finestra sincronizzati con i valori delle proprietà. Per altre informazioni, vedere [aggiornare i valori delle proprietà nella finestra proprietà](#updating-property-values-in-the-properties-window).
+   Quando viene modificato un valore nella finestra `IVsTrackSelectionEx::OnElementValueChangeEx` `IVsTrackSelectionEx::OnSelectionChangeEx` **Proprietà,** VSPackage implementare e per segnalare la modifica al valore dell'elemento. L'ambiente richiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> o per mantenere le informazioni visualizzate nella finestra **Proprietà** sincronizzate con i valori delle proprietà. Per ulteriori informazioni, vedere [Aggiornamento dei valori delle proprietà nella finestra Proprietà](#updating-property-values-in-the-properties-window).
 
-   Oltre a selezionare un altro elemento del progetto **Esplora soluzioni** per visualizzare le proprietà correlate a tale elemento, è anche possibile scegliere un oggetto diverso all'interno di una finestra del form o un documento utilizzando l'elenco a discesa disponibile nel **Proprietà** finestra. Per altre informazioni, vedere [elenco di oggetti finestra proprietà](../../extensibility/internals/properties-window-object-list.md).
+   Oltre a selezionare un elemento di progetto diverso in **Esplora soluzioni** per visualizzare le proprietà correlate a tale elemento, è anche possibile scegliere un oggetto diverso all'interno di un form o di una finestra del documento utilizzando l'elenco a discesa disponibile nella finestra **Proprietà.** Per ulteriori informazioni, vedere [Elenco oggetti della finestra Proprietà](../../extensibility/internals/properties-window-object-list.md).
 
-   È possibile modificare il modo in cui vengono visualizzate informazioni il **proprietà** griglia della finestra dall'ordine alfabetico per categoria, e, se disponibile, è anche possibile aprire una pagina delle proprietà dell'oggetto selezionato facendo clic sui pulsanti appropriati nel  **Proprietà** finestra. Per altre informazioni, vedere [pulsanti della finestra proprietà](../../extensibility/internals/properties-window-buttons.md) e [pagine delle proprietà](../../extensibility/internals/property-pages.md).
+   È possibile modificare la modalità di visualizzazione delle informazioni nella griglia della finestra **Proprietà** da alfabetico a categoria e, se disponibile, è anche possibile aprire una pagina delle proprietà per un oggetto selezionato facendo clic sui pulsanti appropriati nella finestra **Proprietà.** Per ulteriori informazioni, vedere [Pulsanti della finestra Proprietà](../../extensibility/internals/properties-window-buttons.md) e [Pagine delle proprietà](../../extensibility/internals/property-pages.md).
 
-   Infine, la parte inferiore della **delle proprietà** finestra contiene inoltre una descrizione del campo selezionato nel **proprietà** griglia della finestra. Per altre informazioni, vedere [recupero delle descrizioni dei campi dalla finestra delle proprietà](#getting-field-descriptions-from-the-properties-window).
+   Infine, nella parte inferiore della finestra **Proprietà** contiene anche una descrizione del campo selezionato nella griglia della finestra **Proprietà.** Per ulteriori informazioni, vedere [Recupero delle descrizioni dei campi dalla finestra Proprietà](#getting-field-descriptions-from-the-properties-window).
 
-## <a name="updating-property-values-in-the-properties-window"></a> Aggiornamento dei valori di proprietà nella finestra proprietà
+## <a name="updating-property-values-in-the-properties-window"></a><a name="updating-property-values-in-the-properties-window"></a>Aggiornamento dei valori delle proprietà nella finestra ProprietàUpdating Property Values in the Properties Window
 Esistono due modi per mantenere sincronizzata la finestra **Proprietà** con le modifiche dei valori della proprietà. Il primo consiste nel chiamare l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>, che fornisce l'accesso alle funzionalità di windowing di base, inclusi l'accesso e la creazione di finestre degli strumenti e dei documenti fornite dall'ambiente. I passaggi seguenti descrivono il processo di sincronizzazione.
 
 ### <a name="updating-property-values-using-ivsuishell"></a>Aggiornamento dei valori di proprietà tramite IVsUIShell
@@ -52,9 +52,9 @@ Esistono due modi per mantenere sincronizzata la finestra **Proprietà** con le 
 
 1. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (tramite il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>) ogni volta che VSPackage, progetti o editor devono creare o enumerare finestre degli strumenti o dei documenti.
 
-2. Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> per mantenere il **delle proprietà** finestra sincronizzato con le modifiche alle proprietà per un progetto (o qualsiasi altro oggetto selezionato visualizzato tramite il **proprietà** finestra) senza implementare <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> e la generazione di <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> gli eventi.
+2. Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> per mantenere la finestra **Proprietà** sincronizzata con le modifiche alle proprietà per un progetto (o qualsiasi altro oggetto selezionato visualizzato dalla finestra **Proprietà)** senza implementare <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> e generando <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> eventi.
 
-3. Implementare i metodi <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> per stabilire e disabilitare, rispettivamente, la notifica client degli eventi di gerarchia senza richiedere l'implementazione di <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> nella gerarchia.
+3. Implementare i metodi <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy><xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> per stabilire e disabilitare, rispettivamente, la notifica client degli eventi di gerarchia senza richiedere l'implementazione di <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> nella gerarchia.
 
 ### <a name="updating-property-values-using-iconnection"></a>Aggiornamento dei valori di proprietà tramite IConnection
  Il secondo modo per mantenere sincronizzata la finestra **Proprietà** con le modifiche dei valori della proprietà consiste nell'implementare `IConnection` sull'oggetto collegabile per indicare l'esistenza delle interfacce in uscita. Se si vuole localizzare il nome della proprietà, derivare l'oggetto da <xref:System.ComponentModel.ICustomTypeDescriptor>. L'implementazione <xref:System.ComponentModel.ICustomTypeDescriptor> può modificare i descrittori di proprietà che restituisce e cambiare il nome di una proprietà. Per localizzare la descrizione, creare un attributo che deriva da <xref:System.ComponentModel.DescriptionAttribute> ed eseguire l'override della proprietà Description.
@@ -69,12 +69,12 @@ Esistono due modi per mantenere sincronizzata la finestra **Proprietà** con le 
 
 4. Un client può chiamare l'interfaccia `IConnection` per ottenere l'accesso a un oggetto secondario enumeratore con l'interfaccia <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>. L'interfaccia <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> può quindi essere chiamata per enumerare i punti di connessione per ogni ID di interfaccia (IID) in uscita.
 
-5. `IConnection` può anche essere chiamato per ottenere l'accesso agli oggetti secondari del punto di connessione con l'interfaccia <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> per ogni IID in uscita. Tramite l'interfaccia <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>, un client avvia o termina un ciclo consultivo con l'oggetto collegabile e la sincronizzazione del client stesso. Il client può anche chiamare l'interfaccia <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> per ottenere un oggetto enumeratore con l'interfaccia <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> per enumerare le connessioni note.
+5. `IConnection` può anche essere chiamato per ottenere l'accesso agli oggetti secondari del punto di connessione con l'interfaccia <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> per ogni IID in uscita. Tramite <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> l'interfaccia, un client avvia o termina un ciclo consultivo con l'oggetto collegabile e la sincronizzazione del client. Il client può <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> anche chiamare l'interfaccia <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> per ottenere un oggetto enumeratore con l'interfaccia per enumerare le connessioni che conosce.
 
-## <a name="getting-field-descriptions-from-the-properties-window"></a> Descrizioni dei campi dalla finestra delle proprietà
+## <a name="getting-field-descriptions-from-the-properties-window"></a><a name="getting-field-descriptions-from-the-properties-window"></a>Recupero delle descrizioni dei campi dalla finestra Proprietà
 Nella parte inferiore della finestra **Proprietà** è disponibile un'area per la descrizione che visualizza informazioni relative al campo della proprietà selezionata. Questa funzionalità è attivata per impostazione predefinita. Se si vuole nascondere il campo della descrizione, fare clic con il pulsante destro del mouse nella finestra **Proprietà** e fare clic su **Descrizione**. In questo modo viene anche rimosso il segno di spunta accanto al titolo **Descrizione** nella finestra del menu. È possibile visualizzare di nuovo il campo con la stessa procedura per riattivare il campo **Descrizione** .
 
- Le informazioni visualizzate nel campo della descrizione derivano da <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>. Per ogni metodo, interfaccia, coclasse e così via può esistere un attributo `helpstring` non localizzato nella libreria dei tipi. Il **delle proprietà** finestra Recupera la stringa da <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>.
+ Le informazioni visualizzate nel campo della descrizione derivano da <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>. Per ogni metodo, interfaccia, coclasse e così via può esistere un attributo `helpstring` non localizzato nella libreria dei tipi. La finestra **Proprietà** recupera <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>la stringa da .
 
 ### <a name="to-specify-localized-help-strings"></a>Per specificare stringhe della Guida localizzate
 
@@ -87,7 +87,7 @@ Nella parte inferiore della finestra **Proprietà** è disponibile un'area per l
 
     Questi attributi sono distinti dagli attributi `helpfile` e `helpcontext` , contenuti negli argomenti della Guida nei file effettivi con estensione chm.
 
-   Per recuperare le informazioni di descrizione da visualizzare per il nome della proprietà evidenziata, la **delle proprietà** finestra chiamate <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> per la proprietà è selezionata, specificando il valore desiderato `lcid` attributo per il stringa di output. Internamente, <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> trova il file DLL specificato nell'attributo `helpstringdll` e chiama `DLLGetDocumentation` su tale file DLL con il contesto e l'attributo `lcid` specificati.
+   Per recuperare le informazioni di descrizione da visualizzare per il <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> nome della proprietà evidenziata, `lcid` la finestra **Proprietà** chiama per la proprietà selezionata, specificando l'attributo desiderato per la stringa di output. Internamente, <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> trova il file DLL specificato nell'attributo `helpstringdll` e chiama `DLLGetDocumentation` su tale file DLL con il contesto e l'attributo `lcid` specificati.
 
    La firma e l'implementazione di `DLLGetDocumentation` sono:
 

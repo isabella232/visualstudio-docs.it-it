@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_RESOLUTION | Microsoft Docs
+title: proprietà BP_LOCATION_RESOLUTION . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_RESOLUTION structure
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: d728c0aae749caa661ae4cb8f29e13f9cd1827fb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f33f01d0c2b8465bbb417b56576118349234970
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353070"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737963"
 ---
-# <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
-Descrive la risoluzione di un punto di interruzione in una posizione specifica.
+# <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
+Viene descritta la risoluzione di un punto di interruzione in una posizione specifica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,10 +34,10 @@ typedef struct _BP_LOCATION_RESOLUTION {
 
 ## <a name="members"></a>Membri
 `pResolution`\
-Il [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) oggetto che determina il tipo di punto di interruzione e le relative informazioni di risoluzione.
+Il [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) oggetto che determina il tipo del punto di interruzione e le relative informazioni sulla risoluzione.
 
-## <a name="remarks"></a>Note
-Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.
+## <a name="remarks"></a>Osservazioni
+Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'unione.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

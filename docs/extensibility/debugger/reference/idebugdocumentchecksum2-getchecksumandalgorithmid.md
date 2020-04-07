@@ -1,28 +1,28 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
+title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
 ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20cf33743d222e160458afcdcf186022a7405fa3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350084"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731937"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Recupera l'identificatore di algoritmo e del documento dato il numero massimo di byte da usare.
+Recupera il checksum del documento e l'identificatore dell'algoritmo dato il numero massimo di byte da utilizzare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,22 +46,22 @@ public int GetChecksumAndAlgorithmId(
 
 ## <a name="parameters"></a>Parametri
 `pRetVal`\
-[out] Identificatore univoco per l'algoritmo di checksum.
+[fuori] Identificatore univoco dell'algoritmo di checksum.
 
 `cMaxBytes`\
-[in] Numero massimo di byte da usare per il valore di checksum.
+[in] Numero massimo di byte da utilizzare per il checksum.
 
 `pChecksum`\
-[out] Valore di checksum.
+[fuori] Valore del checksum.
 
 `pcNumBytes`\
-[out] Numero effettivo di byte utilizzati per il valore di checksum.
+[fuori] Numero effettivo di byte utilizzati per il checksum.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente usa questo metodo per ottenere il checksum e l'algoritmo per un documento.
+Nell'esempio seguente viene utilizzato questo metodo per ottenere il checksum e l'algoritmo per un documento.
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetEngineGuid | Microsoft Docs
+title: Proprietà IDebugEngine3::SetEngineGuid . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetEngineGuid
 ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 66b72edc81cdde1d3d83e4c3534b50e40dd2cf19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae151484a7c2fd5828888a8a551b710c6fda44c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352494"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730760"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
-Questo metodo imposta il motore di debug (DE) `GUID`.
+Questo metodo imposta il motore di `GUID`debug (DE) .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ int SetEngineGuid(
 [in] `GUID` del motore.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.
+ Se ha `S_OK`esito positivo, restituisce ; in caso contrario, restituisce il codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

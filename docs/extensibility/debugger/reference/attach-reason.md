@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON | Microsoft Docs
+title: proprietà ATTACH_REASON . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c132b507d679fd6cec5ce7fff04362159cbc848
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca871d9dac2b6f37018af925eece5c1a6f3d1585
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351839"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738131"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
-Specifica il motivo per il motore di debug (DE) da associare a un nodo di programma.
+# <a name="attach_reason"></a>ATTACH_REASON
+Specifica il motivo per cui il motore di debug (DE) deve connettersi a un nodo di programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,16 +46,16 @@ public enum enum_ATTACH_REASON {
 
 ## <a name="fields"></a>Campi
 `ATTACH_REASON_AUTO`\
-Collegare perché il processo è attualmente in modalità di debug.
+Connettersi perché il processo è attualmente in modalità di debug.
 
 `ATTACH_REASON_LAUNCH`\
-Collegare perché il processo è stato avviato.
+Connettersi perché il processo è stato avviato.
 
 `ATTACH_REASON_USER`\
-Collegare a causa di una richiesta dell'utente.
+Allegare a causa di una richiesta dell'utente.
 
-## <a name="remarks"></a>Note
-Questi valori vengono usati come parametro per il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) e [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) metodi.
+## <a name="remarks"></a>Osservazioni
+Questi valori vengono utilizzati come parametro per il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) e [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) metodi.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::ReloadSymbols_Deprecated | Microsoft Docs
+title: IDebugModule2::ReloadSymbols_Deprecated . Documenti Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule2::ReloadSymbols method
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 635e305c0dd88d72017048da6353f813fcc46406
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e776434e17d90cd2c61c926bbf0100a44ecc524b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323957"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726927"
 ---
-# <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
-OBSOLETE. NON USARE. Ricarica i simboli per questo modulo.
+# <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
+OBSOLETO. NON UTILIZZARE. Ricarica i simboli per questo modulo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ int ReloadSymbols( 
 
 ## <a name="parameters"></a>Parametri
 `pszUrlToSymbols`\
-[in] Il percorso dell'archivio simboli.
+[in] Percorso dell'archivio simboli.
 
 `pbstrDebugMessage`\
-[out] Restituisce un messaggio informativo, ad esempio un messaggio di stato o di errore, che viene visualizzato a destra del nome del modulo nella finestra di moduli.
+[fuori] Restituisce un messaggio informativo, ad esempio uno stato o un messaggio di errore, visualizzato a destra del nome del modulo nella finestra Moduli.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Un motore di debug deve sempre restituire `E_FAIL`.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Un motore di `E_FAIL`debug deve sempre restituire .
 
-## <a name="remarks"></a>Note
- Questo metodo non è più supportato. Implementare il [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) metodo invece.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo non è più supportato. Implementare invece il metodo [LoadSymbols.Implement](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) the LoadSymbols method instead.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
