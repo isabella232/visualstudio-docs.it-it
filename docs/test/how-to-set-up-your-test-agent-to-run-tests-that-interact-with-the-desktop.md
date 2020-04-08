@@ -8,21 +8,28 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dc00598595ee3e3d958562682900bde9aad2a353
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588967"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880182"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop
 
+::: moniker range="vs-2017"
 Se si vuole eseguire test automatizzati che interagiscono con il desktop, è necessario configurare l'agente affinché venga eseguito come processo anziché come servizio. Se ad esempio si desidera eseguire un test codificato dell'interfaccia utente in remoto mediante un controller di test e un agente di test oppure eseguire un test e acquisire una registrazione video, è necessario configurare l'agente affinché venga eseguito come processo. Quando si assegnano agenti ai ruoli nelle impostazioni test tramite Visual Studio oppure si assegnano agenti ai ruoli nell'ambiente in uso mediante Microsoft Test Manager, è necessario modificare la configurazione per tutti gli agenti assegnati a ruoli che devono interagire con il desktop.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Se si vuole eseguire test automatizzati che interagiscono con il desktop, è necessario configurare l'agente affinché venga eseguito come processo anziché come servizio. Se ad esempio si desidera eseguire un test codificato dell'interfaccia utente in remoto mediante un controller di test e un agente di test oppure eseguire un test e acquisire una registrazione video, è necessario configurare l'agente affinché venga eseguito come processo. Quando si assegnano agenti ai ruoli nelle impostazioni di test utilizzando Visual Studio, è necessario modificare l'installazione per tutti gli agenti assegnati ai ruoli che devono interagire con il desktop.
+::: moniker-end
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+::: moniker range="vs-2017"
 > [!WARNING]
 > Se si usa Microsoft Test Manager per configurare un ambiente lab, viene installato l'agente di test. Nella **procedura guidata di creazione dell'ambiente** è possibile specificare che si desidera configurare uno dei ruoli per eseguire test codificati dell'interfaccia utente.
+:::moniker-end
 
 > [!IMPORTANT]
 > Il computer che esegue l'agente su cui si desidera eseguire test codificati dell'interfaccia utente non può essere bloccato né avere uno screen saver attivo.
@@ -73,7 +80,9 @@ Utilizzare la procedura riportata di seguito per configurare qualsiasi agente as
    > [!NOTE]
    > Per gli agenti di test eseguiti come processo, nel computer è disponibile un'icona dell'area di notifica. Tale icona indica lo stato dell'agente di test. Se l'agente è in esecuzione come processo, con questo strumento è possibile avviarlo, arrestarlo o riavviarlo. Per avviare l'agente di test come processo se non è in esecuzione, scegliere **Avvia** > **Microsoft** > **Visual Studio Microsoft Visual Studio Test Agent**.
 
+   ::: moniker range="vs-2017"
    Se il controller di test per questo agente di test è registrato con Team Foundation Server, lo stato dell'agente di test in esecuzione come processo interattivo viene riprodotto nella visualizzazione **Controller** in **Centro lab** per Microsoft Test Manager. Viene elencato con un simbolo di asterisco anteposto al nome per indicare che viene eseguito come un processo interattivo. Per riavviare questo agente di test, è necessario utilizzare lo strumento in esecuzione nel computer per l'agente di test e non per la visualizzazione **Controller.**
+   ::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 

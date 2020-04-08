@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585639"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880364"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usare test codificati dell'interfaccia utente per il testing del codice
 
@@ -435,7 +435,12 @@ myWinCheckBox.Checked = true;
 
 ## <a name="whats-next"></a>Quali sono le operazioni successive?
 
+::: moniker range="vs-2017"
 **Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente:Additional options for running Coded UI tests:** È possibile eseguire test codificati dell'interfaccia utente direttamente da Visual Studio, come descritto in precedenza in questo argomento. Inoltre, è possibile eseguire test automatizzati dell'interfaccia utente da Microsoft Test Manager o tramite Azure Pipelines. A differenza di altri test automatizzati, i test codificati dell'interfaccia utente automatizzati devono interagire con il desktop quando vengono eseguiti.
+::: moniker-end
+::: moniker range=">=vs-2019"
+**Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente:Additional options for running Coded UI tests:** È possibile eseguire test codificati dell'interfaccia utente direttamente da Visual Studio, come descritto in precedenza in questo argomento. Inoltre, è possibile eseguire test automatizzati dell'interfaccia utente usando le pipeline di Azure.Additionally, you can run automated UI tests using Azure Pipelines. A differenza di altri test automatizzati, i test codificati dell'interfaccia utente automatizzati devono interagire con il desktop quando vengono eseguiti.
+::: moniker-end
 
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)
 
@@ -449,7 +454,7 @@ myWinCheckBox.Checked = true;
 
 - [Estendere test codificati dell'interfaccia utente e registrazioni delle azioni](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altre informazioni sui test manuali, vedere [Eseguire test manuali con Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Per altre informazioni sui test automatizzati, vedere [Strumenti di test di Visual Studio](../test/improve-code-quality.md).
+I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altre informazioni sui test automatizzati, vedere [Strumenti di test di Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Vedere anche
 

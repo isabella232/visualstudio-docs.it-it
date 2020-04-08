@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75847294"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880338"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -53,6 +53,7 @@ Ecco alcuni esempi di topologie comuni di ambienti lab:
 
 Per altre informazioni, vedere [Usare la gestione di compilazione o versione](use-build-or-rm-instead-of-lab-management.md).
 
+::: moniker range="vs-2017"
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Usare le funzionalità di Visual Studio Lab Management di Microsoft Test Manager
 
 È possibile creare e gestire ambienti lab con le funzionalità di Visual Studio Lab Management di Microsoft Test Manager quando si usa Visual Studio Enterprise.
@@ -126,7 +127,7 @@ Per altre informazioni su Lab Management, vedere:
 * [Pianificare il lab](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
 * [Configurazione e amministrazione di Lab Management](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
 * [Configurazione di Lab Management per ambienti SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [Gestire le autorizzazioni](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
+* [Gestione autorizzazioni](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
 * [Modifica della configurazione](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
 * [Risoluzione dei problemi](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
 
@@ -136,6 +137,7 @@ Per informazioni sulla configurazione degli ambienti, vedere:
 * [Ambienti lab standard](https://msdn.microsoft.com/library/ee390842.aspx)
 * [Ambienti SCVMM (virtuali)](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Creazione e uso di un ambiente di isolamento rete](https://msdn.microsoft.com/library/ee518924.aspx)
+::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 
