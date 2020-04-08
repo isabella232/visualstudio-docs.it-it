@@ -1,6 +1,6 @@
 ---
 title: Convenzioni di formattazione .NET per EditorConfig
-ms.date: 03/31/2020
+ms.date: 04/02/2020
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 292e9e2eb505d65b49144bcee66dc0da870f5866
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 136744514e5e2e49ec92a443ac590eb5cc34418a
+ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543837"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80892762"
 ---
 # <a name="formatting-conventions"></a>Convenzioni di formattazione
 
@@ -65,7 +65,6 @@ dotnet_separate_import_directive_groups = true
 | **Lingue applicabili** | C# e Visual Basic |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Ordina le direttive `using` System.* in ordine alfabetico e le posiziona prima di altre direttive using.<br /><br />`false` - Non posiziona le direttive `using` System.* prima di altre direttive `using`. |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -89,7 +88,6 @@ using System.Threading.Tasks;
 | **Lingue applicabili** | C# e Visual Basic |
 | **Versione introdotta** | Visual Studio 2017 versione 15.5 |
 | **Valori** | `true` - Inserisce una riga vuota tra gruppi di direttive `using`.<br /><br />`false` - Non inserisce una riga vuota tra gruppi di direttive `using`. |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -182,7 +180,6 @@ Questa regola riguarda il posizionamento di una parentesi graffa di apertura `{`
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `all` - Richiede che le parentesi graffe siano posizionate in una nuova riga per tutte le espressioni (stile "Allman").<br /><br />`none` - Richiede che le parentesi graffe siano posizionate nella stessa riga per tutte le espressioni ("K&R").<br /><br />`accessors`, `anonymous_methods`, `anonymous_types`, `control_blocks`, `events`, `indexers`, `lambdas`, `local_functions`, `methods`, `object_collection_array_initializers`, `properties`, `types` - Richiedono che le parentesi graffe siano posizionate in una nuova riga per l'elemento di codice specificato (stile "Allman"). |
-| **Impostazione predefinita di Visual Studio** | `all` |
 
 Esempi di codice:
 
@@ -212,7 +209,6 @@ void MyMethod() {
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Posiziona le istruzioni `else` in una nuova riga.<br /><br />`false` - Posiziona le istruzioni `else` nella stessa riga. |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -241,7 +237,6 @@ if (...) {
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Posiziona le istruzioni `catch` in una nuova riga.<br /><br />`false` - Posiziona le istruzioni `catch` nella stessa riga. |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -270,7 +265,6 @@ try {
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Richiede che le istruzioni `finally` siano posizionate in una nuova riga dopo la parentesi graffa di chiusura.<br /><br />`false` - Richiede che le istruzioni `finally` siano posizionate nella stessa riga della parentesi graffa di chiusura. |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -304,7 +298,6 @@ try {
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Richiede che i membri degli inizializzatori di oggetto siano posizionati in righe separate<br /><br />`false` - Richiede che i membri degli inizializzatori di oggetto siano posizionati nella stessa riga |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -331,7 +324,6 @@ var z = new B()
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Richiede che membri dei tipi anonimi siano posizionati in righe separate<br /><br />`false` - Richiede che i membri dei tipi anonimi siano posizionati nella stessa riga |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -358,7 +350,6 @@ var z = new
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Richiede che gli elementi delle clausole di espressione di query siano posizionati in righe separate<br /><br />`false` - Richiede che gli elementi delle clausole di espressione di query siano posizionati nella stessa riga |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -398,7 +389,6 @@ csharp_indent_case_contents_when_block = true
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Imposta un rientro per il contenuto case `switch`<br /><br />`false` - Non imposta un rientro per il contenuto case `switch` |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 - Quando questa regola è impostata su **true**, i.
 - Quando questa regola è impostata su **false**, d.
@@ -441,7 +431,6 @@ switch(c) {
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Imposta un rientro per le etichette `switch`<br /><br />`false` - Non imposta un rientro per le etichette `switch` |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -481,7 +470,6 @@ default:
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `flush_left` - Le etichette vengono posizionate nella colonna più a sinistra<br /><br />`one_less_than_current` - Le etichette vengono posizionate con un rientro minore rispetto al contesto corrente<br /><br />`no_change` - Le etichette vengono posizionate con lo stesso rientro del contesto corrente |
-| **Impostazione predefinita di Visual Studio** | `no_change` |
 
 Esempi di codice:
 
@@ -533,7 +521,6 @@ class C
 | **Nome regola** | csharp_indent_block_contents |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - <br /><br />`false` -  |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -558,7 +545,6 @@ Console.WriteLine("Hello");
 | **Nome regola** | csharp_indent_braces |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - <br /><br />`false` -  |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -583,7 +569,6 @@ static void Hello()
 | **Nome regola** | csharp_indent_case_contents_when_block |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - <br /><br />`false` -  |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -644,7 +629,6 @@ csharp_space_between_square_brackets = false
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Inserisce uno spazio tra un cast e il valore<br /><br />`false` - Rimuove lo spazio tra il cast e il valore |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -664,7 +648,6 @@ int y = (int)x;
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Inserisce uno spazio dopo una parola chiave in un'istruzione del flusso di controllo, ad esempio un ciclo `for`<br /><br />`false` - Rimuove lo spazio dopo una parola chiave in un'istruzione del flusso di controllo, ad esempio un ciclo `for` |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -684,7 +667,6 @@ for(int i;i<x;i++) { ... }
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `control_flow_statements` - Inserisce uno spazio tra le parentesi delle istruzioni del flusso di controllo<br /><br />`expressions` - Inserisce uno spazio tra le parentesi delle espressioni<br /><br />`type_casts` - Inserisce uno spazio tra le parentesi dei cast di tipo |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Se si omette questa regola o si usa un valore diverso da `control_flow_statements`, `expressions` o `type_casts`, l'impostazione non viene applicata.
 
@@ -709,7 +691,6 @@ int y = ( int )x;
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.7 |
 | **Valori** | `true` - Inserisce uno spazio prima dei due punti per le basi o le interfacce in una dichiarazione del tipo<br /><br />`false` - Rimuove lo spazio prima dei due punti per le basi o le interfacce in una dichiarazione del tipo |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -745,7 +726,6 @@ class C: I
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.7 |
 | **Valori** | `true` - Inserisce uno spazio dopo i due punti per le basi o le interfacce in una dichiarazione del tipo<br /><br />`false` - Rimuove lo spazio dopo i due punti per le basi o le interfacce in una dichiarazione del tipo |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -781,7 +761,6 @@ class C :I
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.7 |
 | **Valori** | `before_and_after` - Inserisce uno spazio prima e dopo l'operatore binario<br /><br />`none` - Rimuove gli spazi prima e dopo l'operatore binario<br /><br />`ignore` - Ignora gli spazi prima e dopo gli operatori binari |
-| **Impostazione predefinita di Visual Studio** | `before_and_after` |
 
 Se si omette questa regola, o si usa un valore diverso da `before_and_after`, `none` o `ignore`, l'impostazione non viene applicata.
 
@@ -806,7 +785,6 @@ return x  *  (x-y);
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Inserisce uno spazio dopo la parentesi di apertura e prima della parentesi di chiusura dell'elenco di parametri di una dichiarazione di metodo<br /><br />`false` - Rimuove gli spazi dopo la parentesi di apertura e prima della parentesi di chiusura dell'elenco di parametri di una dichiarazione di metodo |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -826,7 +804,6 @@ void Bark(int x) { ... }
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.7 |
 | **Valori** | `true` - Inserisce uno spazio tra le parentesi dell'elenco parametri vuoto per una dichiarazione di metodo<br /><br />`false` - Rimuove uno spazio tra le parentesi dell'elenco parametri vuoto per una dichiarazione di metodo |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -861,7 +838,6 @@ void Goo(int x)
 | **Nome regola** | csharp_space_between_method_declaration_name_and_open_parenthesis |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - Inserisce uno spazio tra il nome del metodo e la parentesi di apertura nella dichiarazione del metodo<br /><br />`false` - Rimuove gli spazi tra il nome del metodo e la parentesi di apertura nella dichiarazione del metodo |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -881,7 +857,6 @@ void M() { }
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Inserisce uno spazio dopo la parentesi di apertura e prima della parentesi di chiusura della chiamata a un metodo<br /><br />`false` - Rimuove gli spazi dopo la parentesi di apertura e prima della parentesi di chiusura della chiamata a un metodo |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -901,7 +876,6 @@ MyMethod(argument);
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.7 |
 | **Valori** | `true` - Inserisce uno spazio tra le parentesi dell'elenco di argomenti vuoto<br /><br />`false` - Rimuove lo spazio tra le parentesi dell'elenco di argomenti vuoto |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -937,7 +911,6 @@ void Goo(int x)
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.7 |
 | **Valori** | `true` - Inserisce uno spazio tra il nome della chiamata al metodo e la parentesi di apertura<br /><br />`false` - Rimuove uno spazio tra il nome della chiamata al metodo e la parentesi di apertura |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -972,7 +945,6 @@ void Goo(int x)
 | **Nome regola** | csharp_space_after_comma |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - Inserisce uno spazio dopo una virgola<br /><br />`false` - Rimuove lo spazio dopo una virgola |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -991,7 +963,6 @@ int[] x = new int[] { 1,2,3,4,5 }
 | **Nome regola** | csharp_space_before_comma |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - Inserisce uno spazio prima di una virgola<br /><br />`false` - Rimuove lo spazio prima di una virgola |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -1010,7 +981,6 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 | **Nome regola** | csharp_space_after_dot |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - Inserisce uno spazio dopo un punto<br /><br />`false` - Rimuove lo spazio dopo un punto |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -1029,7 +999,6 @@ this.Goo();
 | **Nome regola** | csharp_space_before_dot |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - Inserisce uno spazio prima di un punto <br /><br />`false` - Rimuove lo spazio prima di un punto |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -1048,7 +1017,6 @@ this.Goo();
 | **Nome regola** | csharp_space_after_semicolon_in_for_statement |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - Inserisce uno spazio dopo ogni punto e virgola in un'istruzione `for`<br /><br />`false` - Rimuove lo spazio dopo ogni punto e virgola in un'istruzione `for` |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -1067,7 +1035,6 @@ for (int i = 0;i < x.Length;i++)
 | **Nome regola** | csharp_space_before_semicolon_in_for_statement |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - Inserisce uno spazio prima di ogni punto e virgola in un'istruzione `for` <br /><br />`false` - Rimuove lo spazio prima di ogni punto e virgola in un'istruzione `for` |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -1086,7 +1053,6 @@ for (int i = 0; i < x.Length; i++)
 | **Nome regola** | csharp_space_around_declaration_statements |
 | **Lingue applicabili** | C# |
 | **Valori** | `ignore` - Non rimuove gli spazi aggiuntivi nelle istruzioni di dichiarazione<br /><br />`false` - Rimuove gli spazi aggiuntivi nelle istruzioni di dichiarazione |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -1105,7 +1071,6 @@ int x = 0;
 | **Nome regola** | csharp_space_before_open_square_brackets |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - Inserisce uno spazio prima delle parentesi quadre di apertura `[` <br /><br />`false` - Rimuove lo spazio prima delle parentesi quadre di apertura `[` |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -1124,7 +1089,6 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 | **Nome regola** | csharp_space_between_empty_square_brackets |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - Inserisce uno spazio tra parentesi quadre vuote `[ ]` <br /><br />`false` - Rimuove lo spazio tra parentesi quadre vuote `[]` |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -1143,7 +1107,6 @@ int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 | **Nome regola** | csharp_space_between_square_brackets |
 | **Lingue applicabili** | C# |
 | **Valori** | `true` - Inserisce spazi nelle parentesi quadre non vuote `[ 0 ]` <br /><br />`false` - Rimuove gli spazi nelle parentesi quadre non vuote `[0]` |
-| **Impostazione predefinita di Visual Studio** | `false` |
 
 Esempi di codice:
 
@@ -1176,7 +1139,6 @@ csharp_preserve_single_line_blocks = true
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Lascia le istruzioni e le dichiarazioni di membri nella stessa riga<br /><br />`false` - Lascia le istruzioni e le dichiarazioni di membri in righe diverse |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -1197,7 +1159,6 @@ string name = "John";
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2017 versione 15.3 |
 | **Valori** | `true` - Lascia il blocco di codice in una sola riga<br /><br />`false` - Lascia il blocco di codice in righe separate |
-| **Impostazione predefinita di Visual Studio** | `true` |
 
 Esempi di codice:
 
@@ -1233,7 +1194,6 @@ csharp_using_directive_placement = inside_namespace
 | **Lingue applicabili** | C# |
 | **Versione introdotta** | Visual Studio 2019 versione 16.1 |
 | **Valori** | `outside_namespace`- Lasciare le direttive using all'esterno dello spazio dei nomi- Leave using directives outside namespace<br /><br />`inside_namespace`- Lasciare le direttive using all'interno dello spazio dei nomi- Leave using directives inside namespace |
-| **Impostazione predefinita di Visual Studio** | `outside_namespace` |
 
 Esempi di codice:
 
