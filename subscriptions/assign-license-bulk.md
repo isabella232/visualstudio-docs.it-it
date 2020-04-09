@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o i gruppi di Microsoft Azure Active Directory
-ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: eb641d86733ef794f1d53ae6eee45e0bdf4fde18
+ms.sourcegitcommit: deab74e8f41b30b28c041b048d67b3fff2cceab9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274063"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80994443"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
@@ -72,8 +72,6 @@ L'utilizzo di questa funzionalità semplifica il mantenersi in primo piano sulle
 
 
 > [!IMPORTANT]
->
-> L'uso dei gruppi di Azure AD viene abilitato nelle fasi.  Potresti non vedere immediatamente la funzione abilitata per i tuoi accordi.
 >
 > Le limitazioni seguenti si applicano all'uso dei gruppi di Azure AD per l'aggiunta di sottoscrittori:The following limitations apply to the use of Azure AD groups for adding subscribers:
 > - I gruppi devono contenere almeno un membro.  I gruppi vuoti non sono supportati.
