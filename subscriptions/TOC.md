@@ -75,7 +75,6 @@
 ### [Amministratori avanzati e amministratori](admin-roles.md)
 ### [Impostare le preferenze per i contratti](admin-prefs.md)
 ### [Panoramica](using-admin-portal.md)
-### [Esercitazione video: Usare il portale di amministrazione](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### Assegnare sottoscrizioni
 #### [Aggiungere utenti singoli](assign-license.md)
 #### [Aggiungere più utenti](assign-license-bulk.md)
