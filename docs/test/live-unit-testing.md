@@ -1,6 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 03/07/2017
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75851437"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223703"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Come configurare e utilizzare Live Unit Testing
 
@@ -130,12 +130,13 @@ Dal test non superato, è possibile eseguire facilmente il debug del codice del 
 
 Ad esempio, l'errore di test mostrato nell'immagine precedente è stato causato da `true` un presupposto <xref:System.Char.IsLower%2A?displayProperty=fullName> non corretto nel metodo di test restituito da caratteri non alfabetici quando vengono passati al metodo. Dopo aver corretto il metodo di test, tutti i test devono essere superati. Non è necessario sospendere o interrompere Live Unit Testing.
 
+::: moniker range="vs-2017"
 ## <a name="test-explorer"></a>Esplora test
 
 **Esplora test** fornisce un'interfaccia che consente di eseguire ed eseguire il debug dei test e analizzare i risultati dei test. Live Unit Testing si integra con **Esplora test**. Quando Live Unit Testing non è abilitato o è stato arrestato, **Esplora Test** visualizza lo stato degli unit test durante l'ultima esecuzione di un test. Se si apportano modifiche al codice sorgente, è necessario eseguire di nuovo i test. Quando invece è abilitato Live Unit Testing, lo stato degli unit test in **Esplora test** viene aggiornato immediatamente. Non è necessario eseguire in modo esplicito gli unit test.
 
 > [!TIP]
-> Aprire **Esplora test** selezionando **Test** > **di Esplora test** di**Windows** > dal menu di Visual Studio di primo livello.
+> Aprire **Live Unit Testing** selezionando **Test** > di**Esplora test** di**Windows** > dal menu di Visual Studio di primo livello.
 
 È possibile notare nella finestra **Esplora test** che alcuni test sono sbiaditi. Ad esempio, quando si attiva Live Unit Testing dopo l'apertura di un progetto salvato in precedenza, la finestra **Esplora test** era sbiadita tutto tranne il test non superato, come illustrato nell'immagine seguente. In questo caso, Live Unit Testing ha rieseguito il test non riuscito, ma non ha rieseguito i test riusciti. Ciò è dovuto al fatto che i dati persistenti di Live Unit Test indicano che non sono state apportate modifiche dall'ultima esecuzione dei test.
 
@@ -148,6 +149,28 @@ Esistono alcune differenze tra l'esecuzione automatica di Live Unit Testing e l'
 - Durante l'esecuzione o il debug di test dalla finestra Esplora test vengono eseguiti file binari normali, mentre con Live Unit Testing vengono eseguiti file instrumentati.
 - Live Unit Testing non crea un nuovo dominio applicazione per eseguire i test, ma esegue i test dal dominio predefinito. Quando i test vengono eseguiti dalla finestra **Esplora test**, viene invece creato un nuovo dominio applicazione.
 - Live Unit Testing esegue i test di ogni assembly di test in modo sequenziale. Nella finestra **Esplora test** è possibile scegliere di eseguire più test in parallelo.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="live-unit-testing-window"></a>Finestra Live Unit Testing
+
+**Live Unit Testing**, simile a **Esplora test**, fornisce un'interfaccia che consente di eseguire ed eseguire il debug dei test e di analizzare i risultati dei test. Quando Live Unit Test è abilitato, lo stato degli unit test in **Esplora test** viene aggiornato immediatamente. Non è necessario eseguire in modo esplicito gli unit test. Quando Live Unit Test non è abilitato o viene arrestato, **Live Unit Testing** visualizza lo stato degli unit test l'ultima volta che è stato eseguito un test. Dopo aver riavviato Live Unit Testing, è necessaria una modifica del codice sorgente per eseguire nuovamente i test.
+
+> [!TIP]
+> Avviare Live Unit Testing selezionando **Test** > **Live Unit Testing** > **Start** dal menu di Visual Studio di primo livello. È inoltre possibile aprire la finestra **Live Unit Testing** utilizzando la finestra **Visualizza** > altri**unit test**di**Windows** > Live .
+
+È possibile notare nella finestra **Live Unit Testing** che alcuni test sono sbiaditi. Ad esempio, quando si arresta e si riavvia Live Unit Testing, la finestra **Live Unit Testing** dissolve tutti i test, come illustrato nell'immagine seguente. I risultati del test con dissolvenza in uscita indicano che il test non faceva parte dell'ultima esecuzione di Live Unit Test. I test vengono eseguiti solo quando viene rilevata una modifica al test o alle dipendenze del test. Se non viene apportata alcuna modifica, evita di eseguire il test inutilmente. In questo caso, il risultato del test in grigio è ancora "aggiornato" anche se non faceva parte dell'ultima esecuzione.
+
+![Test con dissolvenza in uscita in Esplora test](media/vs-2019/lut-test-explorer.png)
+
+È possibile eseguire nuovamente tutti i test che appaiono sbiaditi apportando una modifica al codice.
+
+Esistono alcune differenze tra l'esecuzione automatica di Live Unit Testing e l'aggiornamento dei risultati dei test e l'esecuzione esplicita di test da **Esplora test**. Ecco alcune di queste differenze:
+
+- Durante l'esecuzione o il debug di test dalla finestra Esplora test vengono eseguiti file binari normali, mentre con Live Unit Testing vengono eseguiti file instrumentati.
+- Live Unit Testing non crea un nuovo dominio applicazione per eseguire i test, ma esegue i test dal dominio predefinito. Quando i test vengono eseguiti dalla finestra **Esplora test**, viene invece creato un nuovo dominio applicazione.
+- Live Unit Testing esegue i test di ogni assembly di test in modo sequenziale. Nella finestra **Esplora test** è possibile scegliere di eseguire più test in parallelo.
+::: moniker-end
 
 ## <a name="large-solutions"></a>Soluzioni di grandi dimensioni
 

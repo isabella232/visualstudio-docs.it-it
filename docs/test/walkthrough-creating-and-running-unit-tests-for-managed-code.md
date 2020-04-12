@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 4d5878e2c5950e45f65f8d56efdf53cd7b2e89ea
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094679"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223671"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -431,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Rieseguire il test, riscrivere e rianalizzare
 
-Si supponga che sia presente un bug nel metodo sottoposto a test e che il metodo `Debit` non generi una <xref:System.ArgumentOutOfRangeException> né tantomeno restituisca il messaggio corretto con l'eccezione. Attualmente, il metodo di test non gestisce questa situazione. Se `debitAmount` il valore è valido, ovvero minore del saldo e maggiore di zero, non viene rilevata alcuna eccezione, pertanto l'asserzione non viene mai attivata. Tuttavia il metodo supera il test. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
+Attualmente, il metodo di test non gestisce tutti i casi che dovrebbe. Se il metodo sottoposto a test, il `Debit` metodo, non è riuscito a generare un <xref:System.ArgumentOutOfRangeException> quando `debitAmount` era maggiore del saldo (o minore di zero), il metodo di test sarebbe passato. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
 
 È presente un bug nel metodo di test. Per risolvere il problema, aggiungere un'asserzione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> alla fine del metodo di test per gestire il caso in cui non viene generata alcuna eccezione.
 
