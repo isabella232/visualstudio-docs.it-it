@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 75fcaf2b797e6a1592be6c6add484a60a1178704
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 21be6f1b9cd5eeecd96fccd055a5f56dd1e35edf
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437676"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276383"
 ---
 # <a name="visual-studio-community-component-directory"></a>Elenco dei componenti di Visual Studio Community
 
@@ -50,4 +51,4 @@ ms.locfileid: "79437676"
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Esempi di parametri della riga di comando](command-line-parameter-examples.md)
-* [Creare un'installazione offline di Visual StudioCreate an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Creare un'installazione offline di Visual Studio](create-an-offline-installation-of-visual-studio.md)

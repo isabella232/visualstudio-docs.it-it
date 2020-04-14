@@ -16,12 +16,13 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b9af7c981e92495d07d0f0d455251e494aa4cc7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: c80c9677a52c32f9539858b64e3be0e5cfb5f27f
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79485903"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276442"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>ID dei carichi di lavoro e dei componenti di Visual Studio
 
@@ -76,4 +77,4 @@ Per altre informazioni su come usare questi elenchi, vedere la pagina Usare i pa
 * [Guida dell'amministratore di Visual Studio per Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Esempi di parametri della riga di comando](command-line-parameter-examples.md)
-* [Creare un'installazione offline di Visual StudioCreate an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Creare un'installazione offline di Visual Studio](create-an-offline-installation-of-visual-studio.md)

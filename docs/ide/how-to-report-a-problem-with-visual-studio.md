@@ -4,17 +4,17 @@ description: Informazioni su come segnalare un problema con Visual Studio
 ms.date: 03/11/2018
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-ms.author: seiyer
-author: seaniyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97080d4ee2240725f009505cda8429ba8f5975d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64556714"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276501"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "64556714"
 
    ![Cercare e contrassegnare problemi simili](../ide/media/search-and-vote.png)
 
-1. Se il problema riscontrato non viene trovato, scegliere **Segnala un nuovo problema** nella parte inferiore della schermata.
+1. Se non trovi il problema riscontrato, scegli **Segnala nuovo problema** nella parte inferiore dello schermo.
 
    > [!NOTE]
    > Il pulsante **Segnala un nuovo problema** viene visualizzato solo nell'interfaccia di Visual Studio per la community degli sviluppatori. Non è possibile segnalare un problema direttamente nel sito Web della [community degli sviluppatori](https://developercommunity.visualstudio.com/).

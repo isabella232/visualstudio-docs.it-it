@@ -3,21 +3,21 @@ title: Suggerire una funzionalità
 description: Descrive i suggerimenti disponibili in Developer Community e spiega come immettere un suggerimento e come vengono usati i suggerimenti da Microsoft nella roadmap per Visual Studio.
 ms.date: 12/17/2018
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74853516"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276488"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Suggerire una funzionalità per Visual Studio
 
-È stata introdotta una nuova esperienza che, insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://developercommunity.visualstudio.com), consente di suggerire nuove funzionalità. Si tratta di un nuovo modo di interagire direttamente con il flusso di lavoro di progettazione di Visual Studio.
+È stata introdotta una nuova esperienza che, insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://developercommunity.visualstudio.com), consente di suggerire nuove funzionalità. Questo è un nuovo modo in cui puoi essere autorizzato a interagire direttamente con il flusso di lavoro di progettazione di Visual Studio.
 
 ![Pulsante Suggest a Feature (Suggerisci funzionalità) in Developer Community](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -83,7 +83,7 @@ Un suggerimento di funzionalità contrassegnato come **Servono altre info** indi
 
 ![Stato Chiuso - Informazioni insufficienti per i suggerimenti in Developer Community](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**Chiuso - Informazioni insufficienti** indica che dopo diversi tentativi non sono state ricevute informazioni sufficienti per comprendere a pieno il suggerimento della funzionalità. È necessario chiudere il suggerimento della nuova funzionalità perché non è possibile intraprendere altre azioni in questa fase.
+**Chiuso - Informazioni insufficiente** indica che dopo diversi tentativi, non abbiamo ricevuto informazioni sufficienti per comprendere completamente il suggerimento. È necessario chiudere il suggerimento della nuova funzionalità perché non è possibile intraprendere altre azioni in questa fase.
 
 Se vengono trovate le informazioni aggiuntive necessarie, è possibile richiedere di riattivare il ticket una volta ottenute.
 
@@ -103,7 +103,7 @@ Se vengono trovate le informazioni aggiuntive necessarie, è possibile richieder
 
 ## <a name="faq"></a>Domande frequenti
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Perché un'idea di User Voice non viene visualizzata in Developer Community?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Perché non riesco a vedere la mia idea di User Voice nella community degli sviluppatori?
 
 È stata eseguita la migrazione dei nuovi suggerimenti di funzionalità dal forum User Voice a Developer Community in base all'impatto per la più ampia community e alle priorità della roadmap dei prodotti. Se si nota che non è stata eseguita la migrazione di un suggerimento specifico, è possibile aggiungerlo come nuovo suggerimento in Developer Community.
 

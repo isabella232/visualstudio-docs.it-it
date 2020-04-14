@@ -4,20 +4,20 @@ ms.date: 03/06/2018
 ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: karann-msft
-ms.author: karann
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d8821da877536195d44a02102d3650e1f5cee01
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f8a36a91f40fd4857e50d5262c1598ee096697e7
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450982"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276466"
 ---
 # <a name="xaml-errors-and-warnings"></a>Errori e avvisi XAML
 
-Durante la creazione di codice XAML, Visual Studio analizza il codice mentre lo si digita. Quando viene rilevato un errore in una riga di codice, viene visualizzata una sottolineatura ondulata. Se si porta il cursore del mouse sulla sottolineatura, vengono visualizzate informazioni sull'errore o sull'avviso. Per alcuni errori e avvisi viene visualizzata una lampadina di azione e la combinazione di tasti **CTRL**+ **.** consente di visualizzare le opzioni per la risoluzione del problema.
+Durante la creazione di codice XAML, Visual Studio analizza il codice mentre lo si digita. Quando viene rilevato un errore in una riga di codice, viene visualizzata una sottolineatura ondulata. Se si porta il cursore del mouse sulla sottolineatura, vengono visualizzate informazioni sull'errore o sull'avviso. Per alcuni errori e avvisi, viene visualizzata una lampadina a azione rapida e si utilizza il **tasto Ctrl**+**.** consente di visualizzare le opzioni per la risoluzione del problema.
 
 ## <a name="error-types"></a>Tipi di errore
 

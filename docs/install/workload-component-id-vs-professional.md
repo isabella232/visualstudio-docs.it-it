@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 22af1df58619207a0af89da2268ab9d19ba5fa33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 2fa6401a03068ceaea325491d749d05a52866f72
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437600"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276334"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Elenco dei componenti di Visual Studio Professional
 
@@ -50,4 +51,4 @@ ms.locfileid: "79437600"
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Esempi di parametri della riga di comando](command-line-parameter-examples.md)
-* [Creare un'installazione offline di Visual StudioCreate an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Creare un'installazione offline di Visual Studio](create-an-offline-installation-of-visual-studio.md)
