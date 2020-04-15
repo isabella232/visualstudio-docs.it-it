@@ -1,12 +1,12 @@
-- name: Visual Studio Tools per AI
+- name: Visual Studio Tools for AI
   items:
-    - name: Visual Studio Tools per AI
-      href: index.yml
+    - name: Visual Studio Tools for AI
+      href: overview.md
     - name: Panoramica
       href: about-ai-tools.md
     - name: Installazione
       href: installation.md
-    - name: Guide introduttive
+    - name: Guide rapide introduttive
       items:
         - name: Tensorflow + Python
           href: tensorflow-local.md
@@ -14,7 +14,7 @@
       items:
         - name: TensorFlow + Azure Deep Learning VM
           href: tensorflow-vm.md
-    - name: 'Guide pratiche:'
+    - name: Guide pratiche
       items:
         - name: Creare un progetto
           items:
