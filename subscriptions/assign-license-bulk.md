@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o i gruppi di Microsoft Azure Active Directory
-ms.openlocfilehash: eb641d86733ef794f1d53ae6eee45e0bdf4fde18
-ms.sourcegitcommit: deab74e8f41b30b28c041b048d67b3fff2cceab9
+ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80994443"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385517"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
@@ -75,10 +75,10 @@ L'utilizzo di questa funzionalità semplifica il mantenersi in primo piano sulle
 >
 > Le limitazioni seguenti si applicano all'uso dei gruppi di Azure AD per l'aggiunta di sottoscrittori:The following limitations apply to the use of Azure AD groups for adding subscribers:
 > - I gruppi devono contenere almeno un membro.  I gruppi vuoti non sono supportati.
-> - I gruppi devono avere meno di 1.000 utenti 
-> - Tutti gli utenti devono essere nel livello superiore del gruppo.  I gruppi nidificati non sono supportati
-> - Sono supportati solo gli accordi attendibili
-> - Tutti i membri del gruppo devono avere un indirizzo di posta elettronica associato all'account Azure ADAll members of the group must have an email address associated with their Azure AD account
+> - I gruppi devono avere meno di 1.000 utenti. 
+> - Tutti gli utenti devono essere nel livello superiore del gruppo.  I gruppi nidificati non sono supportati.
+> - Sono supportati solo gli accordi attendibili.
+> - A tutti i membri del gruppo deve essere associato un indirizzo di posta elettronica.
 > - Indirizzi di posta elettronica separati per le notifiche non sono supportati per le sottoscrizioni aggiunte usando i gruppi di Azure AD.  
 
 1. Accedere al portale di amministrazione [https://manage.visualstudio.com](https://manage.visualstudio.com)delle sottoscrizioni di Visual Studio all'indirizzo .
@@ -106,6 +106,7 @@ L'utilizzo di questa funzionalità semplifica il mantenersi in primo piano sulle
 > [!NOTE]
 > Se le sottoscrizioni sono già state assegnate singolarmente agli utenti aggiunti successivamente come parte di un gruppo di Azure AD, verranno aggiunti come parte del gruppo e non verranno più elencati singolarmente. Tuttavia, se la singola sottoscrizione è per un livello di sottoscrizione diverso, avranno due sottoscrizioni.  Esempio: se un utente ha una singola sottoscrizione di Visual Studio Professional e sono membri di un gruppo a cui si assegnano le sottoscrizioni di Visual Studio Enterprise, entrambi avranno.  
 
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
