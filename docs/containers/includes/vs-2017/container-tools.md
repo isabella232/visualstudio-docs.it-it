@@ -6,20 +6,20 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: ae6548892010035564bf29a8eda25b736db97d2a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 627b0b1260a3ccdd401dbb170f8e2dfffadea2dc
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922993"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81389988"
 ---
 Con Visual Studio è possibile compilare, eseguire facilmente il debug e l'esecuzione in contenitori ASP.NET app core e pubblicarle nel Registro di sistema contenitore di Azure, nell'hub Docker, nel servizio app di Azure o nel registro contenitori del contenitore. In questo articolo viene eseguita la pubblicazione nel Registro Azure Container (ACR).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) con il carico di lavoro **Sviluppo Web**, **Strumenti di Azure** e/o **Sviluppo multipiattaforma .NET Core** installato
-* Per pubblicare in Registro Azure Container, una sottoscrizione di Azure. [Iscriviti per una prova gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Per pubblicare in Registro Azure Container, una sottoscrizione di Azure. [Iscriviti per una prova gratuita](https://azure.microsoft.com/free/dotnet/).
 
 ## <a name="installation-and-setup"></a>Installazione e configurazione
 
