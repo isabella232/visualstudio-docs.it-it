@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702044"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444648"
 ---
 # <a name="private-galleries"></a>Gallerie private
 È possibile condividere i controlli, i modelli e gli strumenti sviluppati pubblicandoli in una *raccolta privata* della rete Intranet dell'organizzazione, come indicato di seguito:
@@ -42,9 +42,9 @@ ms.locfileid: "80702044"
 
 5. Nel campo **URL** immettere l'URL del feed Atom o del sito di SharePoint che ospita la raccolta privata.
 
-    1. Se l'host è un feed Atom che si connette alla http://www.mywebsite/mygallery/atom.xmlraccolta privata, l'URL sarà simile al seguente: .  Questo URL può fare riferimento a un file o a un percorso di rete.
+    1. Se l'host è un feed Atom che si connette alla `http://www.mywebsite/mygallery/atom.xml`raccolta privata, l'URL sarà simile al seguente: .  Questo URL può fare riferimento a un file o a un percorso di rete.
 
-    2. Se l'host è un sito di SharePoint, l'URL sarà simile al seguente: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.
+    2. Se l'host è un sito di SharePoint, l'URL sarà simile al seguente: `http://mysharepoint/sites/mygallery/forms/AllItems.aspx`.
 
 ### <a name="manage-private-galleries"></a>Gestire gallerie private
  Un amministratore può rendere disponibile una raccolta privata a più computer contemporaneamente modificando il Registro di sistema in ogni computer. A tale scopo, creare un file *con estensione pkgdef* che descrive le nuove chiavi del Registro di sistema e i relativi valori.  Il formato di questo file è il seguente.

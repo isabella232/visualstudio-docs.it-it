@@ -1,5 +1,5 @@
 ---
-title: Raccolte private | Microsoft Docs
+title: Gallerie Private Documenti Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,45 +11,45 @@ ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 097d666a839f67e657610b34641ed29da91797be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 895fbef5459de75c7ccdc6a090fc30ec27a030f9
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194002"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444921"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile condividere i controlli, modelli e strumenti che si sviluppano inviando messaggi a un *raccolta privata* nella intranet per l'organizzazione, come indicato di seguito:  
+È possibile condividere i controlli, i modelli e gli strumenti sviluppati pubblicandoli in una *raccolta privata* della rete Intranet dell'organizzazione, come indicato di seguito:  
   
-- Creare un atomo (feed RSS) in una posizione centrale opportunamente configurata (repository) nella intranet. Per altre informazioni, vedere [Procedura: Creare un Atom per una raccolta privata di Feed](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
+- Creare un feed Atom (RSS) in una posizione centrale (repository) opportunamente configurata nella rete Intranet. Per ulteriori informazioni, vedere [Procedura: creare un feed Atom per una raccolta privata](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
   
-- Distribuire un file. pkgdef che descrive la raccolta privata. Si consiglia questa configurazione per gli amministratori che desiderano connettersi una raccolta privata a più computer contemporaneamente.  
+- Distribuire un file con estensione pkgdef che descrive la raccolta privata. Questa configurazione è consigliata per gli amministratori che desiderano connettere una raccolta privata a più computer contemporaneamente.  
   
-## <a name="adding-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>Aggiunta di una raccolta privata a estensioni e aggiornamenti in Visual Studio  
- Quando una raccolta privata è disponibile, è possibile aggiungerla alla **estensioni e aggiornamenti** in Visual Studio.  
+## <a name="adding-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>Aggiunta di una raccolta privata alle estensioni e agli aggiornamenti in Visual StudioAdding a Private Gallery to Extensions and Updates in Visual Studio  
+ Quando è disponibile una raccolta privata, è possibile aggiungerla a **estensioni e aggiornamenti** in Visual Studio.When a private gallery is available, you can add it to Extensions and Updates in Visual Studio.  
   
- ![Finestra di dialogo Aggiungi Gestione estensioni](../extensibility/media/em-adddialog.png "EM_AddDialog")  
+ ![Finestra di dialogo Aggiungi di Gestione estensioni](../extensibility/media/em-adddialog.png "EM_AddDialog")  
   
-#### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>Per aggiungere una raccolta privata a estensioni e aggiornamenti  
+#### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>Per aggiungere una raccolta privata a Estensioni e aggiornamenti  
   
 1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.  
   
-2. Nel **ambiente** nodo, seleziona **estensioni e aggiornamenti**.  
+2. Nel nodo **Ambiente** selezionare **Estensioni e aggiornamenti**.  
   
-3. Scegliere il pulsante **Aggiungi**.  
+3. Fare clic sul pulsante **Aggiungi**.  
   
-4. Nel **Name** immettere un nome per la raccolta privata, ad esempio, `My Gallery`.  
+4. Nel campo **Nome** immettere un nome per la `My Gallery`raccolta privata, ad esempio .  
   
-5. Nel **URL** immettere l'URL del feed Atom o sito di SharePoint che ospita la raccolta privata.  
+5. Nel campo **URL** immettere l'URL del feed Atom o del sito di SharePoint che ospita la raccolta privata.  
   
-    1. Se l'host è un feed Atom che si connette alla raccolta privata, l'URL sarà simile a quella: http://www.mywebsite/mygallery/atom.xml.  Questo URL può fare riferimento a un file o un percorso di rete.  
+    1. Se l'host è un feed Atom che si connette alla `http://www.mywebsite/mygallery/atom.xml`raccolta privata, l'URL sarà simile al seguente: .  Questo URL può fare riferimento a un file o a un percorso di rete.  
   
-    2. Se l'host è un sito di SharePoint, l'URL sarebbe simile a questo: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.  
+    2. Se l'host è un sito di SharePoint, l'URL sarà simile al seguente: `http://mysharepoint/sites/mygallery/forms/AllItems.aspx`.  
   
-### <a name="managing-private-galleries"></a>La gestione di raccolte Private  
- Un amministratore può renderla una raccolta privata disponibile per diversi computer nello stesso momento modificando il Registro di sistema in ogni computer. A tale scopo, creare un file. pkgdef che descrive le nuove chiavi del Registro di sistema e i relativi valori.  Il formato di questo file è come indicato di seguito.  
+### <a name="managing-private-galleries"></a>Gestione delle gallerie private  
+ Un amministratore può rendere disponibile una raccolta privata a più computer contemporaneamente modificando il Registro di sistema in ogni computer. A tale scopo, creare un file con estensione pkgdef che descrive le nuove chiavi del Registro di sistema e i relativi valori.  Il formato di questo file è il seguente.  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{UniqueGUID}]  
@@ -63,34 +63,34 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- Per altre informazioni, vedere [Procedura: Gestire una raccolta privata mediante le impostazioni del Registro di sistema](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
+ Per ulteriori informazioni, vedere [Procedura: gestire una raccolta privata utilizzando le impostazioni del Registro di sistema](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
   
-## <a name="installing-extensions-from-a-private-gallery"></a>Installazione di estensioni di una raccolta privata  
- È possibile cercare e installare le estensioni di Visual Studio da una raccolta privata in **estensioni e aggiornamenti**. La procedura seguente usa una raccolta privata denominata `My Gallery`.  
+## <a name="installing-extensions-from-a-private-gallery"></a>Installazione di estensioni da una raccolta privata  
+ È possibile cercare e installare le estensioni di Visual Studio da una raccolta privata in **Estensioni e aggiornamenti**. La procedura seguente utilizza `My Gallery`una raccolta privata denominata .  
   
- ![Gestore estensioni del installazione raccolta privata](../extensibility/media/em.png "EM_")  
+ ![Installazione della galleria privata di Gestione estensioni](../extensibility/media/em.png "EM_")  
   
-#### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>Per cercare e installare le estensioni da una raccolta privata  
-  
-1. Nella barra dei menu scegliere **Strumenti**, **Estensioni e aggiornamenti**.  
-  
-2. Nel riquadro sinistro, selezionare **estensioni Online**, quindi selezionare **raccolta personale**.  
-  
-3. Nel riquadro di destra, selezionare un'estensione e quindi scegliere il **scaricare** pulsante.  
-  
-## <a name="updating-extensions-from-a-private-gallery"></a>Aggiornamento delle estensioni da una raccolta privata  
- Come le nuove versioni delle estensioni di Visual Studio vengono registrate nella raccolta privata, è possibile aggiornare le estensioni installate. La procedura seguente usa una raccolta privata denominata `My Repository`.  
-  
- ![Aggiornamento della Galleria privata di Gestione estensioni](../extensibility/media/em-update.png "EM_Update")  
-  
-#### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>Per aggiornare un'estensione installata da una raccolta privata  
+#### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>Per cercare e installare estensioni da una raccolta privata  
   
 1. Nella barra dei menu scegliere **Strumenti**, **Estensioni e aggiornamenti**.  
   
-2. Nel riquadro sinistro, selezionare **aggiornamenti**, quindi selezionare **Repository personale**.  
+2. Nel riquadro sinistro selezionare **Estensioni in linea**, quindi **Raccolta personale**.  
   
-3. Nel riquadro di destra, selezionare un'estensione e quindi scegliere il **Update** pulsante.  
+3. Nel riquadro destro selezionare un'estensione, quindi scegliere il pulsante **Download.**  
+  
+## <a name="updating-extensions-from-a-private-gallery"></a>Aggiornamento delle estensioni da una raccolta privataUpdating Extensions from a Private Gallery  
+ Man mano che le nuove versioni delle estensioni di Visual Studio vengono pubblicate nella raccolta privata, è possibile aggiornare le estensioni installate. La procedura seguente utilizza `My Repository`una raccolta privata denominata .  
+  
+ ![Aggiornamento della galleria privata di Gestione estensioni](../extensibility/media/em-update.png "EM_Update")  
+  
+#### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>Per aggiornare un'estensione installata da una raccolta privataTo update an installed extension from a private gallery  
+  
+1. Nella barra dei menu scegliere **Strumenti**, **Estensioni e aggiornamenti**.  
+  
+2. Nel riquadro sinistro selezionare **Aggiornamenti**e quindi **Repository personali**.  
+  
+3. Nel riquadro destro selezionare un'estensione, quindi scegliere il pulsante **Aggiorna.In** the right pane, select an extension, and then choose the Update button.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Ricerca e uso di estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)   
+ [Ricerca e utilizzo delle estensioni di Visual StudioFinding and Using Visual Studio Extensions](../ide/finding-and-using-visual-studio-extensions.md)   
  [Distribuzione delle estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

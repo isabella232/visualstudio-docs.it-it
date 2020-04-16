@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 07/30/2019
+ms.date: 04/15/2020
 ms.topic: conceptual
 description: Informazioni su come configurare l'account con pagamento in base al consumo di Azure.
-ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80231977"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444850"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Sottoscrizioni con pagamento in base al risultato di Azure DevTestAzure DevTest Pay-as-You-Go subscriptions
 È possibile collaborare con il team nel cloud  creando più sottoscrizioni per sviluppo e test con pagamento in base al consumo, consentendo la collaborazione con altri sottoscrittori e garantendo allo stesso tempo l'isolamento tra i team e l'ambiente.  Sono disponibili tariffe orarie scontate esclusive per sviluppo/test e diritti speciali di uso del cloud per il software della sottoscrizione di Azure.
@@ -39,7 +39,7 @@ ms.locfileid: "80231977"
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q--what-if-i-want-to-make-changes-to-this-subscription"></a>D: Cosa succede se si desidera apportare modifiche a questa sottoscrizione?
 R: Per apportare modifiche alle sottoscrizioni di Azure:
-1. Accedere al [portale](https://portal.azure.com)di Azure .
+1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Nell'elenco nel riquadro sinistro selezionare **Gestione dei costi e fatturazione**.
 3. Si vedrà un elenco delle proprie sottoscrizioni nella casella **Sottoscrizioni personali**. Fare clic sulla sottoscrizione desiderata.
 4. Verranno visualizzate le opzioni per gestire o annullare la sottoscrizione, rinominarla, cambiare la directory o trasferire la proprietà della fatturazione.

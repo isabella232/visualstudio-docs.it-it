@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8df6d1ea44cb9737c39653366c7b35823051d5f6
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589656"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445038"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modificare test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente
 
@@ -74,7 +74,7 @@ Usando l'Editor di test codificati dell'interfaccia utente, è possibile individ
 
 Per modificare le proprietà di un'azione dell'interfaccia utente, nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test contenente un'azione dell'interfaccia utente di cui si vogliono modificare le proprietà, selezionare l'azione dell'interfaccia utente e quindi modificare le proprietà usando la finestra Proprietà.
 
-Ad esempio, se un server non è disponibile e al browser Web è associata un'azione dell'interfaccia utente che indica **Vai alla pagina Web '<http://Contoso1/default.aspx>**, è possibile modificare l'URL in `'http://Contoso2/default.aspx'`.
+Ad esempio, se un server non è disponibile e al Web browser è associata un'azione dell'interfaccia utente che indica `http://Contoso2/default.aspx`Vai alla pagina Web **http:\//Contoso1/default.aspx**, è possibile modificare l'URL in .
 
 ![Proprietà del controllo](../test/media/codeduitestcontrolprop.png)
 
