@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
-ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232364"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444875"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -52,7 +52,6 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 **Sottoscrizioni acquistate attraverso programmi:** se si riceve la sottoscrizione tramite un programma, la sottoscrizione è associata alla partecipazione al programma. Per altre informazioni, rivolgersi ai referenti per il programma.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [Bizspark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -106,7 +105,7 @@ R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per d
 |    Volume Licensing Service Center (VLSC)              |    180          |
 |    Contratto per i prodotti e i servizi Microsoft (MPSA)    |    180          |
 |    Sottoscrizione cloud a Visual Studio                   |    180          |
-|    Programma (ad esempio, MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Programma (ad es. MCT, MPN, Imagine)          |    180          |
 |    Non tramite vendita (ad esempio MVP e MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 

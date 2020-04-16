@@ -7,17 +7,22 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informazioni su come usare Azure DevOps come sottoscrittore di Visual Studio.
-ms.openlocfilehash: 11bd1262e72042b01c2514edc3bc3158325b9417
-ms.sourcegitcommit: 67dd2aedfe9752afaec9625ed3056fa03bd2699e
+ms.openlocfilehash: a68456b93a307d97ab706e18b3790e84be547f9f
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80607178"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444824"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Vantaggi Azure DevOps per i sottoscrittori di Visual Studio
 I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia gamma di funzionalità in Azure DevOps, incluse nella sottoscrizione come vantaggi. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.
 
 ## <a name="sign-in"></a>Accedi
+
+   > [!div class="mx-imgBorder"]
+   > ![Riquadro DevOps di AzureAzure DevOps Tile](_img/vs-azure-devops/vs-azure-devops-tile.png)
+
+   
 Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottoscrizione di Visual Studio o l'[identità alternativa](vs-alternate-identity.md), il riconoscimento avviene automaticamente.  In questo modo è possibile aggiungere anche un account aziendale o dell'istituto di istruzione (usato per l'accesso a Visual Studio, Office 365 o alla rete aziendale o dell'istituto di istruzione), in modo che sia possibile accedere ad Azure DevOps sia tramite l'account personale che tramite l'account aziendale o dell'istituto di istruzione.
 
 [Iscriversi per avere diritto a un'organizzazione gratuita di Azure DevOps](https://visualstudio.microsoft.com/team-services/)

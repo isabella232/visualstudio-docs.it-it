@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 931f8c2a6d3be130ef78f59f9b3853d28fad8cd4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916955"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444687"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introduzione a Visual Studio Kubernetes Tools
 
@@ -21,7 +21,7 @@ Gli strumenti di Visual Studio Kubernetes consentono di semplificare lo sviluppo
 
 Questa esercitazione illustra l'uso di Visual Studio per aggiungere il supporto Kubernetes a un progetto e pubblicare in AKS.This tutorial covers using Visual Studio to add Kubernetes support to an project and publish to AKS. Se si è interessati principalmente all'uso di Azure Dev Spaces per eseguire il debug e testare il progetto in esecuzione in AKS, è possibile passare all'esercitazione di Azure Dev Spaces.If you are primarily interested in using [Azure Dev Spaces](/azure/dev-spaces/) to debug and test your project running in AKS, you can jump to the [Azure Dev Spaces tutorial](/azure/dev-spaces/get-started-netcore-visualstudio) instead.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per sfruttare questa nuova funzionalità, è necessario:To leverage this new functionality, you'll need:
 
@@ -40,7 +40,7 @@ Per sfruttare questa nuova funzionalità, è necessario:To leverage this new fun
 
     1. Un cluster del servizio Azure Kubernetes. Per ulteriori informazioni, vedere [Creazione di un cluster AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Assicurarsi di [connettersi al cluster](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) dalla workstation di sviluppo.
 
-    1. Helm CLI installato sulla workstation di sviluppo. Per ulteriori informazioni, consultate [Installazione di Helm.](https://github.com/kubernetes/helm/blob/master/docs/install.md)
+    1. Helm CLI installato sulla workstation di sviluppo. Per ulteriori informazioni, consultate [Installazione di Helm.](https://github.com/helm/helm-www/blob/master/content/en/docs/helm/helm_install.md)
 
     1. Helm configurato sul cluster AKS `helm init` utilizzando il comando. Per ulteriori informazioni su come eseguire questa operazione, vedere [Come configurare Helm](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d509292bc3c7a909289abf0c73babccfead31532
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
+ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385404"
+ms.locfileid: "81397376"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
 Questo messaggio può verificarsi perché il monitor di debug remoto non è configurato correttamente sul computer remoto o il computer remoto non è accessibile a causa di problemi di rete o della presenza di un firewall.
@@ -34,6 +34,7 @@ Il `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` m
 
 - [Il debugger non è in grado di connettersi al computer remoto. Il debugger non è riuscito a risolvere il nome computer specificato](#cannot_connect)
 - [La richiesta di connessione è stata rifiutata dal debugger remoto](#rejected)
+- [La connessione con l'endpoint remoto è stata terminata](#connection_terminated)
 - [Accesso non valido alla posizione di memoria](#invalid_access)
 - [Non esiste alcun server con il nome specificato in esecuzione nel computer remoto](#no_server)
 - [Il nome richiesto era valido, ma non sono stati trovati dati del tipo richiesto](#valid_name)
@@ -67,17 +68,19 @@ Nella finestra di dialogo **Connetti a processo** o nelle proprietà del progett
 
 Se questi valori sono corretti e il messaggio indica la modalità **di autenticazione** di Windows, verificare che il debugger remoto sia in modalità di autenticazione corretta (**Strumenti > Opzioni**).
 
-## <a name="the-connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>La connessione con l'endpoint remoto è stata interrotta
+## <a name="connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a>La connessione con l'endpoint remoto è stata terminata
 
 Se si esegue il debug di un'app del servizio app di Azure, provare a usare il comando [Connetti debugger](../debugger/remote-debugging-azure.md#remote_debug_azure_app_service) da Cloud Explorer o Esplora server anziché **Connetti a processo**.
 
 Se si utilizza **Connetti a processo** per eseguire il debug:
 
-1. Nella finestra di dialogo **Connetti a processo** o nelle proprietà del progetto verificare che il nome del computer remoto e il numero di porta corrispondano al nome e al numero di porta visualizzati nella finestra del debugger remoto. Se non è corretto, correggere e riprovare.
+- Nella finestra di dialogo **Connetti a processo** o nelle proprietà del progetto verificare che il nome del computer remoto e il numero di porta corrispondano al nome e al numero di porta visualizzati nella finestra del debugger remoto. Se non è corretto, correggere e riprovare.
 
-2. Controllare il registro applicazioni sul server (Visualizzatore eventi in Windows) per informazioni più dettagliate per risolvere il problema.
+- Se si sta tentando di connettersi utilizzando un nome host, provare invece un indirizzo IP.
 
-3. In caso contrario, provare a riavviare Visual Studio con privilegi di amministratore, quindi riprovare.
+- Controllare il registro applicazioni sul server (Visualizzatore eventi in Windows) per informazioni più dettagliate per risolvere il problema.
+
+- In caso contrario, provare a riavviare Visual Studio con privilegi di amministratore, quindi riprovare.
 
 ## <a name="invalid-access-to-memory-location"></a><a name="invalid_access"></a>Accesso non valido alla posizione di memoria
 
