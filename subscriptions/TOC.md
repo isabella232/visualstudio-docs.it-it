@@ -2,7 +2,7 @@
 # [Novità](whats-new-in-subscriptions.md)
 # Sottoscrizioni
 ## Acquistare sottoscrizioni
-### [Retail](https://visualstudio.microsoft.com/vs/pricing)
+### [Retail](buy-activate-retail.md)
 ### Cloud 
 #### [Panoramica](vscloud-overview.md)
 #### [Domande frequenti sulla fatturazione](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [Gestire le sottoscrizioni per MPN](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## Accedi 
-### [Attivare le sottoscrizioni al dettaglio](activate-store-subscriptions.md)
 ### [Accedere con account Microsoft](sign-in-msa.md)
 ### [Accedere con l'account aziendale o dell'istituto di istruzione](sign-in-work.md)
 ### [Accedere con GitHub](sign-in-github.md)
