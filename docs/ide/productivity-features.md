@@ -2,17 +2,17 @@
 title: Suggerimenti per la produttività
 ms.date: 2/21/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd85565ee573015737ab815258914bec89ab9369
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 620ad93c03e1a1b260ee14cb27093403f27648d7
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596983"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544302"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
@@ -146,4 +146,4 @@ In qualsiasi momento, durante lo sviluppo di un'applicazione è possibile che si
 - [Tasti di scelta rapida predefiniti per i comandi utilizzati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Procedura: personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [Procedura dettagliata: Creare un'applicazione sempliceWalkthrough: Create a simple application](../get-started/csharp/tutorial-wpf.md)
-- [Suggerimenti e trucchi per l'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
+- [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
