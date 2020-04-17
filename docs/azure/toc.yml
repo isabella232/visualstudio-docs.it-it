@@ -23,16 +23,6 @@
       href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Aggiungere Azure Active Directory (AD)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Aggiungere Servizi cognitivi
-      items:
-        - name: Analisi del testo
-          href: /azure/cognitive-services/text-analytics/vs-text-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Ricerca Bing
-          href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Riconoscimento facciale
-          href: /azure/cognitive-services/face/vs-face-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: Visione artificiale
-          href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Sviluppo per Servizi cloud di Azure
   expanded: false
   items:
