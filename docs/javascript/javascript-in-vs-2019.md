@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: df4630182e89dad08360794057bda856ff4d677b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 199a27dbfef2b7297563e87d973137e2acd9c745
+ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549943"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544289"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript e TypeScript in Visual Studio 2019
 
@@ -38,7 +38,8 @@ Visual Studio 2019 offre diverse opzioni per l'integrazione della compilazione T
 * [Pacchetto npm di TypeScript](https://www.npmjs.com/package/typescript). Quando il pacchetto npm per TypeScript 2.1 o versione successiva è installato nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
 * TypeScript SDK, disponibile per impostazione predefinita nel programma di installazione di Visual Studio, nonché come download dell'SDK autonomo da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
 
-Per i progetti sviluppati in Visual Studio 2019, si consiglia di usare i pacchetti npm e NuGet di TypeScript per maggiore portabilità in piattaforme e ambienti e diversi.
+> [!TIP]
+> Per i progetti sviluppati in Visual Studio 2019, ti consigliamo di usare il pacchetto TypeScript NuGet o TypeScript npm per una maggiore portabilità in diverse piattaforme e ambienti.
 
 Un utilizzo comune per il pacchetto NuGet consiste nel compilare TypeScript usando l'interfaccia della riga di comando di .NET Core.One common usage for the NuGet package is to compile TypeScript using the .NET Core CLI. A meno che non si modifichi manualmente il file di progetto per importare destinazioni di compilazione da un'installazione di TypeScript SDK, il pacchetto NuGet è l'unico modo per abilitare la compilazione TypeScript utilizzando i comandi dell'interfaccia della riga di comando di .NET Core, ad `dotnet build` esempio e `dotnet publish`.
 
