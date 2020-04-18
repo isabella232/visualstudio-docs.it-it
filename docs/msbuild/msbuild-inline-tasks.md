@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
+ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633317"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81638042"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
 
@@ -52,7 +52,7 @@ Le attività MSBuild vengono in genere create tramite la compilazione di una cla
 
 - L'attributo `TaskFactory` assegna un nome alla classe che implementa la factory dell'attività inline.
 
-- L'attributo `AssemblyFile` assegna la posizione della factory dell'attività inline. In alternativa, è possibile usare l'attributo `AssemblyName` per specificare il nome completo della classe factory dell'attività inline, che in genere si trova nella Global Assembly Cache (GAC).
+- L'attributo `AssemblyFile` assegna la posizione della factory dell'attività inline. In alternativa, è `AssemblyName` possibile utilizzare l'attributo per specificare il nome completo `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll`della classe task factory inline, che in genere si trova in .
 
 Gli elementi rimanenti dell'attività `DoNothing` sono vuoti e vengono specificati per illustrare l'ordine e la struttura di un'attività inline. Un esempio più concreto è riportato più avanti in questo argomento.
 
