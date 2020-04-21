@@ -1,5 +1,5 @@
 ---
-title: Come eseguire un programma in C
+title: Come eseguire un programma (c'è)How to run a program (C
 description: Guida per principianti su come eseguire un programma in C.
 ms.custom: get-started
 ms.date: 10/16/2019
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2ffe52fc2bf7d05084307b4d972e45f4b1d2acdf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "76924616"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649642"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>Procedura: eseguire un programma in Visual Studio
 

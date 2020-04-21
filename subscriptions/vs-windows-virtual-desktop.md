@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/01/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Informazioni su come sfruttare i vantaggi di Microsoft Windows Virtual Desktop tramite la sottoscrizione di Visual Studio
-ms.openlocfilehash: 3954a3e86c319b8d433e509a8b283201c3313410
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: 87911b1b7b6eb63eb85b64515d5d24755e4656e6
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80550693"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649728"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accedere a Windows Virtual Desktop nelle sottoscrizioni 
 I sottoscrittori di Visual Studio sono ora in grado di usare i singoli crediti di sviluppo/test di Azure per i servizi Desktop virtuali di Microsoft Windows.Visual Studio subscribers are now able to use their Azure dev/test individual credits for Microsoft Windows Virtual Desktop services.  

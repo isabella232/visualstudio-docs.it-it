@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 71af6f269fe84ef633215dcb526b89dffe8481a0
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: 6ae0a77cf4849f0e648eeed17830911c90c8b584
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301884"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649792"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -25,7 +25,7 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
 ## <a name="activation-steps"></a>Procedura di attivazione
 1. Per attivare l'abbonamento, connettersi [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul collegamento Ottieni **codice** nel riquadro del benefit Pluralsight, disponibile nella sezione Sviluppo professionale.
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del vantaggio Pluralsight](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
+   > ![Riquadro del vantaggio Pluralsight](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
    >
    > [!IMPORTANT]
    > Quando si fa clic sul collegamento "Ottieni il codice" nel riquadro del vantaggio Pluralsight, è possibile che venga visualizzato il messaggio seguente:

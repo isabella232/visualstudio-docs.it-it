@@ -9,24 +9,24 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 255b3de916215759615384dce26c5affbc07a995
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 95a00fe4b87a0a9e1ee55497b84c59536d66d285
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73569097"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649440"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Tasti di modifica dello strumento Penna in Blend per Visual Studio
 
-Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile usare per modificare un tracciato mentre viene creato con lo strumento **Penna** ![strumento Penna](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). È possibile usare lo strumento **Penna** anche per aggiungere o rimuovere punti su un tracciato esistente oppure per congiungere due tracciati.
+Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile usare per modificare un tracciato mentre viene creato con lo strumento **Penna**![strumento Penna](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). È possibile usare lo strumento **Penna** anche per aggiungere o rimuovere punti su un tracciato esistente oppure per congiungere due tracciati.
 
-|Per|Seguire questa procedura|Puntatore|
+|Per|Procedere nel modo seguente|Puntatore|
 | - |-------------|-------------|
 |Creare un punto iniziale di un segmento di linea retta|Fai clic per creare il nuovo punto|![Creare un punto iniziale di un segmento di linea retta](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Puntatore penna|
 |Creare un punto iniziale di un segmento di linea curva|Fai clic per creare il nuovo punto e quindi trascina per regolare i punti di controllo della tangente prima di rilasciare il pulsante del mouse|![Creare un punto iniziale di un segmento di linea curva](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Puntatore penna|
 |Modificare l'ultima tangente senza arrotondare il tracciato, in modo da ottenere un angolo acuto|Fare clic per creare il nuovo punto e quindi premere **ALT** prima di rilasciare il pulsante del mouse|![Modificare l'ultima tangente senza arrotondare il tracciato](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|
 |Suddividere l'ultima tangente in modo che i punti finali della tangente funzionino indipendentemente, ottenendo un angolo acuto|Fare clic per creare il nuovo punto e quindi tenere premuto **ALT** prima di rilasciare il pulsante del mouse|![Suddividere l'ultima tangente in modo che i punti finali della tangente funzionino indipendentemente](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|
-|Spostare il punto finale della tangente intorno al nuovo punto con incrementi di 15 gradi|Fare clic per creare il nuovo punto e quindi tenere premuto **MAIUSC**+**ALT** e trascinare prima di rilasciare il pulsante del mouse|![Spostare il punto finale della tangente intorno al nuovo punto con incrementi di 15 gradi](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|
+|Spostare il punto finale della tangente intorno al nuovo punto con incrementi di 15 gradi|Fare clic per creare il nuovo punto, quindi tenere **premuto**+**ALT** e trascinare prima di rilasciare il pulsante del mouse|![Spostare il punto finale della tangente intorno al nuovo punto con incrementi di 15 gradi](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|
 |Ridurre la tangente sul punto finale a lunghezza zero|Fai clic sul punto finale|![Ridurre la tangente sul punto finale a lunghezza zero](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntatore penna di modifica|
 |Aggiungere un nuovo punto a un tracciato esistente|Fai clic sul tracciato nella posizione in cui vuoi inserire il nuovo punto|![Aggiungere un nuovo punto a un tracciato esistente](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> Puntatore penna di inserimento|
 |Rimuovere un punto da un tracciato|Passa il puntatore del mouse su un punto esistente e fai clic|![Rimuovere il punto dal tracciato](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Puntatore penna di eliminazione|
@@ -38,6 +38,6 @@ Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile u
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Tasti di modifica della tavola da disegno](../designers/artboard-modifier-keys-in-blend.md)
+- [Tasti di modifica della tavola da disegno](artboard-modifier-keys-in-blend.md)
 - [Tasti di modifica strumento Selezione diretta](direct-selection-tool-modifier-keys-in-blend.md)
 - [Disegnare forme e tracciati](draw-shapes-and-paths.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 03/26/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Informazioni sul vantaggio Account per sviluppatore di Windows incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 795eccdf72fad7df760d709b44351444b6dea424
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: c3764330b5ace58f976f726770fa7a3e9ed2a4ed
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301853"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649722"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 L'account per sviluppatore di Windows, incluso in una sottoscrizione selezionata di Visual Studio, consente di inviare app di Windows gratuite e a pagamento a Windows Store.
@@ -37,7 +37,7 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 8. Specificare le informazioni di contatto e la lingua preferita per la posta elettronica e quindi fare clic su **Avanti**.
 9. Può essere richiesto di verificare la password.  Immetterla e fare clic su **Accedi**.
 10. Nella pagina Registration - Payment (Registrazione - Pagamento) incollare il codice copiato in precedenza nel campo Codice promozionale.  La pagina verrà aggiornata per mostrare che *non è richiesto alcun pagamento*.  Fare clic su **Avanti**.
-11. Rivedere le informazioni dell'account e il contratto per gli sviluppatori di app, selezionare la casella di controllo per indicare l'accettazione dei termini e delle condizioni  Fare quindi clic su **Fine**.
+11. Rivedere le informazioni dell'account e il contratto per gli sviluppatori di app, selezionare la casella di controllo per indicare l'accettazione dei termini e delle condizioni  Fare clic su **Fine**.
 12. Fare clic su **Vai al dashboard** per iniziare a usare l'account per sviluppatore di Windows.
 
 ## <a name="eligibility"></a>Idoneità

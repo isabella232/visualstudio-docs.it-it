@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b145dd4d82887122009553afd883abb6cade849e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 65ef0edf76780ba7c8b6f5d9347195c286bec466
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697783"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649841"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procedura dettagliata: Aggiungere funzionalità a un editor personalizzatoWalkthrough: Add features to a custom editor
 Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzionalità.
@@ -34,7 +34,7 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
 3. Implementare una factory dell'editor impostando l'interfaccia. <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>
 
-     Per ulteriori informazioni, consultate [Editor factory .](../extensibility/editor-factories.md)
+     Per ulteriori informazioni, consultate [Editor factory .](/visualstudio/extensibility/editor-factories?view=vs-2015)
 
 4. Decidere se si desidera che l'editor utilizzi l'attivazione sul posto o l'incorporamento semplificato per gestire la finestra dell'oggetto visualizzazione del documento.
 

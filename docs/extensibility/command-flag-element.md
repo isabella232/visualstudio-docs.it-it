@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7173bc1ebc5507eadf319c0374f4c878dea62857
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739773"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649373"
 ---
 # <a name="command-flag-eelement"></a>Flag di comando Eelement
 Modifica l'elemento padre.
@@ -30,7 +30,7 @@ Modifica l'elemento padre.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nella sezione seguente vengono descritti i valori validi degli elementi.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
  No.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -60,7 +60,6 @@ Modifica l'elemento padre.
 |PostExec (incarica di post-Exec|Rende il comando non bloccante. L'ambiente di sviluppo rinvia l'esecuzione fino al completamento di tutte le query di pre-elaborazione.<br /><br /> Valido per:`Button`|
 |RouteToDocs|Il comando viene indirizzato al documento attivo.<br /><br /> Valido per:`Button`|
 |StretchHorizontally|Quando questo flag è impostato, la larghezza diventa la larghezza minima per la casella combinata e, se c'è spazio sulla barra degli strumenti, la casella combinata si estende per riempire lo spazio disponibile. Ciò si verifica solo se la barra degli strumenti è ancorata orizzontalmente e solo una casella combinata sulla barra degli strumenti può utilizzare il flag (il flag viene ignorato su tutti tranne la prima casella combinata).<br /><br /> Valido per:`Combo`|
-|TextMenuUseButton|Utilizzare `ButtonText` il campo per i menu. Il campo `MenuText` predefinito è se specificato.<br /><br /> Valido per:`Button`|
 |Modifiche al testo|Il comando o il testo del menu può `QueryStatus` essere modificato in fase di esecuzione, in genere tramite il metodo .<br /><br /> Valido per: `Button`,`Menu`|
 |Controllo TextChangesButton|Valido per:`Button`|
 |TextIsAnchorCommand|Per un controller di menu, il testo del menu viene ricavato dal comando predefinito (ancoraggio). Un comando di ancoraggio è l'ultimo comando selezionato o aggrovigliato. Se questo flag non è impostato, `MenuText` il controller di menu utilizza il proprio campo. Tuttavia, facendo clic sul controller di menu viene ancora abilitato l'ultimo comando selezionato da tale controller.<br /><br /> Si consiglia di combinare questo `TextChanges` flag con il flag.<br /><br /> Questo flag si applica solo ai menu di tipo MenuController o MenuControllerLatched.<br /><br /> Valido per:`Menu`|

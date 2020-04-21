@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78937548"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649607"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Scrivere unit test per C/C++ in Visual Studio
 
@@ -79,7 +79,7 @@ Per consentire l'accesso alle funzioni nel progetto sottoposto a test, aggiunger
 
 ### <a name="link-to-object-or-library-files"></a>Eseguire il collegamento a file oggetto o di libreria
 
-Se il codice di test non esporta le funzioni che si vuole testare, è possibile aggiungere i file con estensione obj o lib di output alle dipendenze del progetto di test. Per ulteriori informazioni, consultate [Per collegare i test ai file](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#object_files)oggetto o libreria.
+Se il codice di test non esporta le funzioni che si vuole testare, è possibile aggiungere i file con estensione obj o lib di output alle dipendenze del progetto di test. Per ulteriori informazioni, consultate [Per collegare i test ai file](how-to-use-microsoft-test-framework-for-cpp.md#object_files)oggetto o libreria.
 
 ### <a name="add-include-directives-for-header-files"></a>Aggiungere direttive #include per il file di intestazione
 

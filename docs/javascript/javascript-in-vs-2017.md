@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75b2a336cf9a229b4834b68e0f7bed5d6b1174f4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233073"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649626"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
@@ -58,7 +58,7 @@ Le impostazioni necessarie per il file tsconfig sono le seguenti:
 Aggiungere a questa impostazione il percorso di output e le cartelle non di progetto, quali `node_modules` o `temp`.
 - `enableAutoDiscovery`: questa impostazione consente il rilevamento e il download automatico dei file di definizione come descritto in precedenza.
 - `compileOnSave`: questa impostazione indica al compilatore se è necessario ricompilare quando un file di origine viene salvato in Visual Studio.
-- `typeAcquisition`: Questo set di impostazioni controlla il comportamento dell'acquisto di tipo automatica (altre spiegazioni in [questa sezione](/visualstudio/ide/javascript-intellisense#Auto))
+- `typeAcquisition`: Questo set di impostazioni controlla il comportamento dell'acquisto di tipo automatica (altre spiegazioni in [questa sezione](../ide/javascript-intellisense.md#Auto))
 
 Per convertire i file JavaScript in moduli CommonJS e inserirli in una cartella `./out`, è possibile usare il file `tsconfig.json` seguente:
 
