@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595722"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649430"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
 
@@ -84,8 +84,8 @@ Selezionare o deselezionare questa casella di controllo per abilitare o disabili
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Primo sguardo al debugger](../../debugger/debugger-feature-tour.md)
+- [Presentazione del debugger](../../debugger/debugger-feature-tour.md)
 - [Impostazioni di progetto per le configurazioni di debug di C](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Impostazioni di progetto per una configurazione di debug di Visual BasicProject Settings for a Visual Basic Debug Configuration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Procedura: eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitateHow to: Debug a ClickOnce Application with Restricted Permissions](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Proteggere le app ClickOnceSecure ClickOnce apps](../../deployment/securing-clickonce-applications.md)
 - [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md)

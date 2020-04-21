@@ -1,5 +1,5 @@
 ---
-title: 'Avviso: debug degli script disabilitato | Microsoft Docs'
+title: 'Avvertenza: Debug di script disabilitato Documenti Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91875a370f6d072cf2dd69807f516b8f1a808461
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728206"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648497"
 ---
 # <a name="warning-script-debugging-disabled"></a>Avviso: debug degli script disabilitato
 Il debug degli script è attualmente disabilitato in Internet Explorer
@@ -35,7 +35,7 @@ Il debug degli script è attualmente disabilitato in Internet Explorer
 
 3. Nella casella **Impostazioni** della scheda **Avanzate**, cercare la categoria **Esplorazione**.
 
-4. Deselezionare **Disabilita debugging degli script (Internet Explorer)** .
+4. Deselezionare **Disabilita debugging degli script (Internet Explorer)**.
 
 5. Fare clic su **OK**.
 
@@ -44,4 +44,4 @@ Il debug degli script è attualmente disabilitato in Internet Explorer
      Le nuove impostazioni risulteranno ora attive.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Connettersi a file script](../debugger/how-to-attach-to-script.md)
+- [Procedura: associare a scriptHow to: Attach to Script](attach-to-running-processes-with-the-visual-studio-debugger.md)

@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: 435185a628dbf256802ae36dae45eac60d304a54
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544058"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649683"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novità delle sottoscrizioni di Visual Studio
 
@@ -39,6 +39,23 @@ Se l'organizzazione usa Azure Active Directory (Azure AD), è ora possibile gest
 Siamo lieti di annunciare un'espansione dei vantaggi offerti dal nostro partner, CAST Highlight. 
 - La durata del vantaggio incluso nelle sottoscrizioni di Visual Studio Enterprise è stata estesa a sei mesi.  
 - I sottoscrittori di Visual Studio Professional possono ora ricevere una sottoscrizione che consente loro di valutare una singola applicazione per tre mesi. 
+
+## <a name="2020-q2-april-june"></a>Secondo trimestre 2020 (aprile-giugno)
+
+### <a name="visual-studio-subscriptions-portal"></a>Visual Studio Subscriptions Portal
+
+Il portale delle sottoscrizioni di Visual Studio ha subito modifiche significative nell'aspetto e nella facilità d'uso.  
+
+- I riquadri dei vantaggi sono stati ridimensionati e vengono tutti visualizzati nella finestra, quindi non è necessario scorrere verso sinistra o destra per visualizzare tutti i riquadri in una determinata categoria. 
+- È possibile scegliere di visualizzare tutti i vantaggi disponibili o di visualizzare una sola categoria utilizzando Selezione categorie.
+   > [!div class="mx-imgBorder"]
+   > ![Il nuovo selettore della categoria benefit](_img/whats-new/whats-new-category-picker.png)
+- Abbiamo anche spostato il selettore di sottoscrizione dall'angolo in alto a destra della finestra in una posizione più accessibile.
+   > [!div class="mx-imgBorder"]
+   > ![La nuova selezione sottoscrizione](_img/whats-new/whats-new-sub-picker.png)
+- Abbiamo aggiunto un "beneficio in primo piano" in cima alla lista dei benefici per richiamare i vantaggi nuovi o popolari.  
+   > [!div class="mx-imgBorder"]
+   > ![Il nuovo vantaggio in primo piano](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Consulta la nuova interfaccia utente del [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com) con le sue nuove funzionalità

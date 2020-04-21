@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1834713ad114ab8a86e314bbe052f4873b308956
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 272d37ef9e73aa5dd0d10ca0210b18a945f993fd
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593577"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649828"
 ---
 # <a name="security-page-project-designer"></a>Pagina Sicurezza, Progettazione progetti
 
@@ -80,7 +80,7 @@ Apre la [finestra di dialogo Impostazioni di sicurezza avanzate](../../ide/refer
 - [Procedura: abilitare le impostazioni di sicurezza ClickOnceHow to: Enable ClickOnce Security Settings](../../deployment/how-to-enable-clickonce-security-settings.md)
 - [Procedura: impostare un'area di sicurezza per un'applicazione ClickOnceHow to: Set a Security Zone for a ClickOnce Application](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Procedura: impostare autorizzazioni personalizzate per un'applicazione ClickOnceHow to: Set Custom Permissions for a ClickOnce Application](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Procedura: eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitateHow to: Debug a ClickOnce Application with Restricted Permissions](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Proteggere le app ClickOnceSecure ClickOnce apps](../../deployment/securing-clickonce-applications.md)
 - [Sicurezza e distribuzione ClickOnceClickOnce Security and Deployment](../../deployment/clickonce-security-and-deployment.md)
 - [Project Properties Reference](../../ide/reference/project-properties-reference.md) (Riferimenti alle proprietà di progetto)
 - [Finestra di dialogo Impostazioni di sicurezza avanzate](../../ide/reference/advanced-security-settings-dialog-box.md)

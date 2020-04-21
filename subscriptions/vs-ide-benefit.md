@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 03/25/2020
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 154e5449603a8a92d2c2a52887fc4631b8dd0ab9
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 84666b0fd4362002fe15b21a6f23cd96c9cdc6a1
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273972"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649545"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Vantaggi di Visual Studio 2019
 
@@ -92,4 +92,4 @@ Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstud
 Una volta installato Visual Studio, non dimenticare di attivare questi altri importanti vantaggi:
 - [Azure DevOps](vs-azure-devops.md)
 - [Credito individuale per Azure DevTest](vs-azure.md)
-- [Account per sviluppatore di Windows](vs-windows-dev.md)
+- [Account sviluppatore Di Windows](vs-windows-dev.md)
