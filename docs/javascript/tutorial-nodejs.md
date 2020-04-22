@@ -1,7 +1,7 @@
 ---
 title: Creare un'app Node.js ed Express
 description: In questa esercitazione si creerà un'app usando Node.js Tools for Visual Studio
-ms.date: 09/24/2018
+ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224524"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744884"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app Express in Visual Studio
 
@@ -109,13 +109,13 @@ In questa esercitazione si inizia con un semplice progetto che contiene codice p
 
     (3) Il nodo npm visualizza tutti i pacchetti npm eventualmente installati. È possibile fare clic con il pulsante destro del mouse sul nodo npm per cercare e installare i pacchetti npm utilizzando una finestra di dialogo o per installare e aggiornare i pacchetti usando le impostazioni in *package.json* e fare clic con il pulsante destro del mouse sulle opzioni nel nodo npm.
 
-    (4) *package.json* è un file utilizzato da npm per gestire le dipendenze e le versioni dei pacchetti per i pacchetti installati localmente. Per altre informazioni su questo file, vedere [Configurazione di package.json](../javascript/configure-packages-with-package-json.md)
+    (4) *package.json* è un file utilizzato da npm per gestire le dipendenze e le versioni dei pacchetti per i pacchetti installati localmente. Per ulteriori informazioni, consultate [Gestire i pacchetti npm.](../javascript/npm-package-management.md)
 
     (5) I file di progetto come *app.js* vengono visualizzati sotto il nodo del progetto. *app.js* è il file di avvio del progetto e per questo motivo viene visualizzata in **grassetto**. Impostare il file di avvio facendo clic con il pulsante destro del mouse su un file del progetto e selezionando **Imposta come file di avvio Node.js**.
 
 1. Aprire il nodo **npm** e assicurarsi che siano presenti tutti i pacchetti npm necessari.
 
-    Se uno o più pacchetti risultano mancanti (icona con il punto esclamativo), fare clic con il pulsante destro del mouse sul nodo **npm** e scegliere **Installa pacchetti npm mancanti**.
+    Se mancano dei pacchetti (icona del punto esclamativo), è possibile fare clic con il pulsante destro del mouse sul nodo **npm** e scegliere **Installa pacchetti npm**.
 
 ## <a name="add-some-code"></a>Aggiungere codice
 
@@ -194,7 +194,7 @@ IntelliSense è uno strumento di Visual Studio che assiste l'utente durante la s
 
     L'ultima riga di questo messaggio indica che l'interprete JavaScript prevedeva una virgola (`,`).
 
-1. Nel riquadro inferiore fare clic sulla scheda **Elenco errori**.
+1. Nel riquadro inferiore, fare clic sulla scheda **Elenco errori** e selezionare Compila **e IntelliSense** per il tipo di problemi segnalati.
 
     Con il nome del file e il numero di riga verranno visualizzati l'avviso e la relativa descrizione.
 
@@ -218,7 +218,7 @@ L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò,
 
 ## <a name="run-the-application"></a>Eseguire l'applicazione
 
-1. Selezionare la destinazione di debug sulla barra degli strumenti Debug, ad esempio Microsoft Edge o Chrome.
+1. Selezionare la destinazione di debug nella barra degli strumenti Debug, ad esempio **Server Web (Google Chrome)** o **Server Web (Microsoft Edge)**.
 
     ::: moniker range=">=vs-2019"
     ![Selezione della destinazione di debug](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
@@ -253,7 +253,7 @@ L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò,
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e **scegliere Pubblica**.
 
-   ![Pubblicare in Servizio app di Azure](../javascript/media/tutorial-nodejs-publish-to-azure.png)
+   ![Eseguire la pubblicazione nel servizio app di Azure](../javascript/media/tutorial-nodejs-publish-to-azure.png)
 
 1. Scegliere **Servizio app di Microsoft Azure**.
 
