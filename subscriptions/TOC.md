@@ -77,6 +77,7 @@
 ### Assegnare sottoscrizioni
 #### [Aggiungere utenti singoli](assign-license.md)
 #### [Aggiungere più utenti](assign-license-bulk.md)
+#### [Assegnare sottoscrizioni specifiche](assign-guid.md)
 ### [Modificare sottoscrizioni](edit-license.md)
 ### [Eliminare sottoscrizioni](delete-license.md)
 ### [Cercare una sottoscrizione](search-license.md)
