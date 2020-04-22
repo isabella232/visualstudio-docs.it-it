@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 31eab6c10451bb6be9e53870bf2724c188d650f4
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 0b4b699c01522878d83e59aadb2c6a54e9d7517f
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649504"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760171"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gestire i pacchetti npm in Visual Studio
 
@@ -84,15 +84,15 @@ I pacchetti npm sono visualizzati in Esplora soluzioni. Le voci sotto il nodo **
 ::: moniker range=">=vs-2019"
 Fare clic con il pulsante destro del mouse sul nodo **npm** per eseguire una delle seguenti operazioni:
 
-* **Installare nuovi pacchetti npm** Apre l'interfaccia utente per installare nuovi pacchetti
+* **Installare nuovi pacchetti npm** Apre l'interfaccia utente per installare nuovi pacchetti.
 * **Installare i pacchetti npm** Esegue il comando npm install per installare tutti i pacchetti elencati in *package.json*. (Corre `npm install`.)
-* **Aggiorna pacchetti npm** Aggiorna un pacchetto alla versione specificata in *package.json*. (Corre `npm update --save`.)
+* **Aggiorna pacchetti npm** Aggiorna i pacchetti alle versioni più recenti, in base all'intervallo di semver specificato in *package.json*. (Esegue `npm update --save`.). Gli intervalli Dimver vengono in genere specificati utilizzando il carattere "" o il carattere """. Per ulteriori informazioni, [package.json configuration](../javascript/configure-packages-with-package-json.md).
 
 Fare clic con il pulsante destro del mouse su un nodo del pacchetto per eseguire una delle azioni seguenti:
 
 * **Installare npm Package(s)** Esegue il comando npm install per installare la versione del pacchetto elencata in *package.json*. (Corre `npm install`.)
-* **Aggiorna npm Pacchetto/i** Aggiorna un pacchetto alla versione specificata in *package.json*. (Esegui `npm update --save`.
-* **Disinstallare npm Package(s)** Disinstallare il pacchetto e rimuoverlo `npm uninstall --save`da *package.json* (Runs .)
+* **Aggiorna npm Pacchetto/i** Aggiorna il pacchetto alla versione più recente, in base all'intervallo di semver specificato in *package.json*. (Esegui `npm update --save`. Gli intervalli Dimver vengono in genere specificati utilizzando il carattere "" o il carattere """.
+* **Disinstallare npm Package(s)** Disinstalla il pacchetto e lo rimuove da `npm uninstall --save` *package.json* (Runs .)
 ::: moniker-end
 ::: moniker range="vs-2017"
 Fare clic con il pulsante destro del mouse su un nodo del pacchetto o sul nodo **npm** per effettuare una delle azioni seguenti:

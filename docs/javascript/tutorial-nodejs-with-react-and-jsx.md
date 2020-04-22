@@ -1,8 +1,8 @@
 ---
 title: Creare un'app Node.js e React
 description: In questa esercitazione si creerà un'app usando Node.js Tools for Visual Studio
-ms.custom: mvc
-ms.date: 4/20/2020
+ms.custom: ''
+ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 265445306babf198c3d0063252846414a589a29c
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649266"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760097"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -106,7 +106,7 @@ Per prima cosa creare un progetto di applicazione Web Node.js.
 
     (3) Il nodo npm visualizza tutti i pacchetti npm eventualmente installati. È possibile fare clic con il pulsante destro del mouse sul nodo npm per cercare e installare i pacchetti npm utilizzando una finestra di dialogo o per installare e aggiornare i pacchetti usando le impostazioni in *package.json* e fare clic con il pulsante destro del mouse sulle opzioni nel nodo npm.
 
-    (4) *package.json* è un file utilizzato da npm per gestire le dipendenze e le versioni dei pacchetti per i pacchetti installati localmente. Per altre informazioni su questo file, vedere [Configurazione di package.json](../javascript/configure-packages-with-package-json.md)
+    (4) *package.json* è un file utilizzato da npm per gestire le dipendenze e le versioni dei pacchetti per i pacchetti installati localmente. Per ulteriori informazioni, consultate [Gestire i pacchetti npm.](../javascript/npm-package-management.md)
 
     (5) I file di progetto come *server.js* vengono visualizzati sotto il nodo del progetto. *server.js* è il file di avvio del progetto e per questo motivo viene visualizzato in **grassetto**. Impostare il file di avvio facendo clic con il pulsante destro del mouse su un file del progetto e selezionando **Imposta come file di avvio Node.js**.
 
@@ -129,7 +129,7 @@ Per essere eseguita correttamente, l'app richiede vari moduli npm.
 
 1. Nella finestra di dialogo **Installa nuovi pacchetti npm** cercare il pacchetto react e selezionare **Installa pacchetto** per installarlo.
 
-    ![Installa nuovi pacchetti npm](../javascript/media/tutorial-nodejs-react-install-packages.png)
+    ![Installa nuovi pacchetti npm](../javascript/media/tutorial-nodejs-react-install-package.png)
 
     Selezionare la finestra **Output** per visualizzare lo stato di avanzamento dell'installazione del pacchetto (selezionare **Npm** nel campo **Mostra output di**). Dopo l'installazione il pacchetto viene visualizzato sotto il nodo **npm**.
 
@@ -162,7 +162,7 @@ Per essere eseguita correttamente, l'app richiede vari moduli npm.
 
     Ecco come appaiono i moduli npm in Esplora soluzioni dopo l'installazione.
 
-    ![Pacchetti npm](../javascript/media/tutorial-nodejs-react-npm-modules.png)
+    ![Pacchetti npm](../javascript/media/tutorial-nodejs-react-npm-modules-installed.png)
 
     > [!NOTE]
     > Se si preferisce installare pacchetti npm o comandi node.js dalla riga di comando, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Apri prompt dei comandi qui**. Per installare i pacchetti, usare i comandi Node.js standard.
@@ -312,7 +312,7 @@ Nei passaggi precedenti è stato aggiunto al progetto *webpack-config.js*. Ora s
 
     Il risultato viene visualizzato nella finestra del prompt dei comandi.
 
-    ![Eseguire webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
+    ![Eseguire webpack](../javascript/media/tutorial-nodejs-react-run-webpack-cmd.png)
 
     Se invece dell'output precedente vengono visualizzati degli errori, è necessario risolverli prima di poter eseguire l'app. Una causa degli errori può essere il fatto che le versioni dei pacchetti npm sono diverse da quelle visualizzate in questa esercitazione. Un modo per correggere gli errori consiste nell'usare le versioni esatte visualizzate nei passaggi precedenti. Se una o più di queste versioni dei pacchetti sono state deprecate e generano errori, potrebbe essere necessario installare una versione più recente per correggere gli errori. Per informazioni sull'uso di *package.json* per controllare le versioni del pacchetto npm, vedere [Configurazione di package.json](../javascript/configure-packages-with-package-json.md).
 
@@ -342,7 +342,7 @@ A partire da Visual Studio 2019, è necessario uno script di compilazione. Invec
 
 ## <a name="run-the-app"></a>Eseguire l'app
 
-1. Seleziona Microsoft Edge o Chrome come destinazione di debug corrente.
+1. Seleziona **Server Web (Google Chrome)** o **Server Web (Microsoft Edge)** come destinazione di debug corrente.
 
     ::: moniker range=">=vs-2019"
     ![Selezionare Chrome come destinazione di debug](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -351,12 +351,7 @@ A partire da Visual Studio 2019, è necessario uno script di compilazione. Invec
     ![Selezionare Chrome come destinazione di debug](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    ::: moniker range=">=vs-2019"
-    Se Chrome è disponibile sul computer, ma non viene visualizzato come opzione, scegliere **Browser Web (nomebrowser)** > **Selezionare Browser Web** dall'elenco a discesa di destinazione del debug e selezionare **Chrome** come destinazione predefinita del browser.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Se Chrome è disponibile sul computer, ma non viene visualizzato come opzione, scegli **Browser Web (nomebrowser)** > **Google Chrome** dall'elenco a discesa di destinazione del debug e seleziona **Chrome** come destinazione del browser predefinito.
-    ::: moniker-end
+    Se Chrome è disponibile nel computer in uso ma non viene visualizzato come opzione, scegliere **Esplora con** dall'elenco a discesa delle destinazioni di debug e selezionare Chrome come destinazione browser predefinita (scegliere **Imposta come predefinito**).
 
 1. Per eseguire l'app, premere **F5** (**Debug** > **Avvia debug**) o fare clic sul pulsante con la freccia verde.
 

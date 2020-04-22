@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 56b0c0defe5593c9dc0e2111ef5984a5c51eaf55
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301692"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760129"
 ---
 # <a name="code-analysis-faq"></a>Domande frequenti sull'analisi del codice
 
@@ -87,6 +87,12 @@ Oltre ai set di regole e ai file EditorConfig, alcuni analizzatori vengono confi
      <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
      ...
      ```
+
+## <a name="code-analysis-solution-property-page"></a>Pagina delle proprietà della soluzione di analisi del codiceCode analysis solution property page
+
+**D:** Dove si trova la pagina delle proprietà Analisi codice per la soluzione?
+
+**R:** La pagina delle proprietà Analisi codice a livello di soluzione è stata rimossa a favore del gruppo di proprietà condivise più affidabile. Per la gestione dell'analisi del codice a livello di progetto, la pagina delle proprietà Analisi codice è ancora disponibile. Per i progetti gestiti, è inoltre consigliabile eseguire la migrazione da set di regole a EditorConfig per la configurazione delle regole.  Per la condivisione di set di regole tra più/tutti i progetti in una soluzione o in un repository, è consigliabile definire un gruppo di proprietà con la proprietà CodeAnalysisRuleSet in un file condiviso props/targets o nel file Directory.props/Directory.targets. Se non si dispone di tali oggetti di rete o destinazioni comuni importati da tutti i progetti, è consigliabile aggiungere tale gruppo di [proprietà a un oggetto Directory.props o a un directory.targets in una directory della soluzione di primo livello, che viene importata automaticamente in tutti i file](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets)di progetto definiti nella directory o nelle relative sottodirectory .
 
 ## <a name="see-also"></a>Vedere anche
 
