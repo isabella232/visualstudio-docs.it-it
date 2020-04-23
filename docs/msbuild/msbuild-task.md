@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a312bfe8c88b0ac523666779970cc28e3a7c798
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633174"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072580"
 ---
 # <a name="msbuild-task"></a>MSBuild (attività)
 
@@ -42,6 +42,7 @@ Compila progetti MSBuild da un altro progetto MSBuild.
 | `RemoveProperties` | Parametro `String` facoltativo.<br /><br /> Specifica il set di proprietà globali da rimuovere. |
 | `RunEachTargetSeparately` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, l'attività MSBuild richiama ogni destinazione nell'elenco passato a MSBuild uno alla volta, anziché contemporaneamente. Impostare questo parametro su `true` garantisce che le destinazioni successive vengano richiamate anche se le destinazioni richiamate prima hanno avuto esito negativo. In caso contrario, un errore di compilazione arresterà la chiamata di tutte le destinazioni successive. Il valore predefinito è `false`. |
 | `SkipNonexistentProjects` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, i file di progetto che non esistono sul disco verranno ignorati. In caso contrario, tali progetti genereranno un errore. |
+|`SkipNonexistentTargets`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, i file di progetto `Targets` che esistono ma non contengono il nome verranno ignorati. In caso contrario, tali progetti genereranno un errore. Introdotto in MSBuild 15.5.|
 | `StopOnFirstFailure` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, quando la compilazione di uno dei progetti non riesce, non verranno compilati altri progetti. Questo parametro non è attualmente supportato con la compilazione in parallelo (con più processori). |
 | `TargetAndPropertyListSeparators` | Parametro `String[]` facoltativo.<br /><br /> Specifica un elenco di destinazioni e proprietà come metadati dell'elemento `Project`. Il carattere di escape verrà rimosso dai separatori prima dell'elaborazione. Ad esempio, %3B (";" preceduto da un carattere di escape) verrà considerato come ";" non preceduto da un carattere di escape. |
 | `TargetOutputs` | Parametro di output di sola lettura <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Restituisce gli output delle destinazioni compilate da tutti i file di progetto. Vengono restituiti solo gli output dalle destinazioni specificate, non tutti gli output esistenti nelle destinazioni da cui le destinazioni dipendono.<br /><br /> Il parametro `TargetOutputs` contiene anche i metadati seguenti:<br /><br /> -   `MSBuildSourceProjectFile`: il file di progetto MSBuild che contiene la destinazione che imposta gli output.<br />-   `MSBuildSourceTargetName`: destinazione che imposta gli output. **Nota:** per identificare gli output da ogni file di progetto o destinazione separatamente, eseguire l'attività `MSBuild` separatamente per ogni file di progetto o destinazione. Se si esegue l'attività `MSBuild` solo una volta per compilare tutti i file di progetto, gli output di tutte le destinazioni vengono raccolte in una sola matrice. |
@@ -56,7 +57,7 @@ Compila progetti MSBuild da un altro progetto MSBuild.
 
  Questa attività può elaborare non solo i file di progetto, ma anche i file di soluzione.
 
- Qualsiasi configurazione richiesta da MSBuild per consentire la compilazione contemporanea dei progetti, anche se la configurazione coinvolge l'infrastruttura remota (ad esempio, porte, protocolli, timeout, tentativi e così via), deve essere resa configurabile file di configurazione. Se possibile, gli elementi di configurazione devono essere specificati come parametri dell'attività nell'attività `MSBuild`.
+ Qualsiasi configurazione richiesta da MSBuild per consentire la compilazione contemporanea dei progetti, anche se la configurazione coinvolge l'infrastruttura remota (ad esempio, porte, protocolli, timeout, tentativi e così via), deve essere resa configurabile tramite un file di configurazione. Se possibile, gli elementi di configurazione devono essere specificati come parametri dell'attività nell'attività `MSBuild`.
 
  A partire da MSBuild 3.5, i progetti di soluzione ora elevano TargetOutputs da tutti i sottoprogetti compilati.
 
