@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Specificare un percorso alternativo per la distribuzione aggiornamenti | Microsoft Docs'
+title: 'Procedura: specificare un percorso alternativo per gli aggiornamenti della distribuzione Documenti Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,55 +16,55 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9040c55b2298d18d1c87e652f76950f771bd14f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b6388833e6574fc1d631d391fa7b67d5f0a3372
+ms.sourcegitcommit: c1339f64fbeee6f17bf80fedea81afc8dac40dc0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437660"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82037220"
 ---
-# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procedura: Specificare un percorso alternativo per gli aggiornamenti della distribuzione
+# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procedura: specificare un percorso alternativo per gli aggiornamenti della distribuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile installare il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione inizialmente da un CD o una condivisione file, ma l'applicazione deve controllare gli aggiornamenti periodici sul Web. È possibile specificare un percorso alternativo per gli aggiornamenti nel manifesto della distribuzione in modo che sia possibile l'aggiornamento automatico dell'applicazione dal Web dopo l'installazione iniziale.  
+È possibile [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installare l'applicazione inizialmente da un CD o da una condivisione file, ma l'applicazione deve verificare la disponibilità di aggiornamenti periodici sul Web. È possibile specificare un percorso alternativo per gli aggiornamenti nel manifesto di distribuzione in modo che l'applicazione possa aggiornarsi dal Web dopo l'installazione iniziale.  
   
 > [!NOTE]
-> L'applicazione deve essere configurata per l'installazione in locale per usare questa funzionalità. Per altre informazioni, vedere [Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Inoltre, se si installa un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione dalla rete, l'impostazione di un percorso alternativo causa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] per utilizzare tale percorso per l'installazione iniziale e tutti gli aggiornamenti successivi. Se si installa l'applicazione in locale (ad esempio, da un CD), viene eseguita l'installazione iniziale usando il supporto originale e tutti gli aggiornamenti successivi verranno usato il percorso alternativo.  
+> L'applicazione deve essere configurata per l'installazione locale per l'utilizzo di questa funzionalità. Per ulteriori informazioni, vedere [Procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Inoltre, se si [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installa un'applicazione dalla rete, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] l'impostazione di un percorso alternativo determina l'utilizzo di tale percorso sia per l'installazione iniziale che per tutti gli aggiornamenti successivi. Se si installa l'applicazione in locale, ad esempio da un CD, l'installazione iniziale viene eseguita utilizzando il supporto originale e tutti gli aggiornamenti successivi utilizzeranno il percorso alternativo.  
   
-### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Specifica un percorso alternativo per gli aggiornamenti con MageUI.exe (utilità basata su Windows Form)  
+### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Specifica di un percorso alternativo per gli aggiornamenti tramite MageUI.exe (utilità basata su Windows Form)  
   
 1. Aprire un prompt dei comandi di .NET Framework e digitare:  
   
      **mageui.exe**  
   
-2. Nel **File** menu, scegliere **aprire** per aprire il manifesto di distribuzione dell'applicazione.  
+2. Scegliere **Apri** dal **Open** menu File per aprire il manifesto di distribuzione dell'applicazione.  
   
 3. Selezionare la scheda **Opzioni di distribuzione**.  
   
-4. Nella casella di testo denominato **posizione avviare**, immettere l'URL della directory che conterrà il manifesto di distribuzione degli aggiornamenti dell'applicazione.  
+4. Nella casella di testo **Percorso di avvio**immettere l'URL della directory che conterrà il manifesto di distribuzione per gli aggiornamenti dell'applicazione.  
   
 5. Salvare il manifesto di distribuzione.  
   
-### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Specifica un percorso alternativo per gli aggiornamenti con Mage.exe  
+### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Specifica di un percorso alternativo per gli aggiornamenti tramite Mage.exe  
   
 1. Aprire un prompt dei comandi di .NET Framework.  
   
-2. Impostare il percorso di aggiornamento usando il comando seguente. In questo esempio **HelloWorld.exe.application** è il percorso per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'applicazione, che ha sempre l'estensione Application, e **http://adatum.com/Update/Path** è l'URL che [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] controllerà gli aggiornamenti dell'applicazione.  
+2. Impostare il percorso di aggiornamento utilizzando il comando seguente. In questo esempio, **HelloWorld.exe.application** è [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] il percorso del manifesto dell'applicazione, che ha sempre l'estensione application ed `http://adatum.com/Update/Path` è l'URL che [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] controllerà la disponibilità di aggiornamenti dell'applicazione.  
   
-     **Mage-aggiornare HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
+     **Mage -Aggiornare HelloWorld.exe.application -ProviderUrl http:\//adatum.com/Update/Path**  
   
 3. Salvare il file.  
   
     > [!NOTE]
-    > È ora necessario firmarlo nuovamente con Mage.exe. Per altre informazioni, vedere [Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+    > A questo punto è necessario firmare nuovamente il file con Mage.exe. Per ulteriori informazioni, vedere [Procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
- Se si installa l'applicazione da un supporto offline, ad esempio un CD, e il computer è online, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] controlla prima di tutto l'URL specificato per il `<deploymentProvider>` tag nel manifesto di distribuzione per determinare se il percorso di aggiornamento contiene una versione più recente del applicazione. In caso affermativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installa l'applicazione direttamente da qui, anziché dalla directory di installazione iniziale, e common language runtime (CLR) determina l'attendibilità dell'applicazione usando il livello `<deploymentProvider>`. Se il computer è offline, o `<deploymentProvider>` non è raggiungibile, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installazioni da CD e CLR concede l'attendibilità in base al punto di installazione; per un'installazione da CD, ciò significa che l'applicazione riceve l'attendibilità totale. Tutti gli aggiornamenti successivi erediterà tale livello di attendibilità.  
+ Se si installa l'applicazione da un supporto offline, ad [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] esempio un CD, `<deploymentProvider>` e il computer è online, controlla innanzitutto l'URL specificato dal tag nel manifesto di distribuzione per determinare se il percorso di aggiornamento contiene una versione più recente dell'applicazione. In caso [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] affermativo, l'applicazione viene installata direttamente da lì, anziché dalla directory di installazione iniziale, e Common Language Runtime (CLR) determina il livello di attendibilità dell'applicazione utilizzando `<deploymentProvider>`. Se il computer non `<deploymentProvider>` è in [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] linea o non è raggiungibile, esegue le installazioni dal CD e CLR concede l'attendibilità in base al punto di installazione. per l'installazione di un CD, significa che l'applicazione riceve l'attendibilità totale. Tutti gli aggiornamenti successivi erediteranno tale livello di attendibilità.  
   
- Tutti i [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazioni che usano `<deploymentProvider>` deve dichiarare in modo esplicito le autorizzazioni necessarie nel relativo manifesto dell'applicazione, in modo che l'applicazione non riceve diversi livelli di attendibilità in computer diversi.  
+ Tutte [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] le `<deploymentProvider>` applicazioni che utilizzano devono dichiarare in modo esplicito le autorizzazioni necessarie nel manifesto dell'applicazione, in modo che l'applicazione non riceva livelli diversi di attendibilità in computer diversi.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Procedura dettagliata: distribuzione manuale di un'applicazione ClickOnceWalkthrough: Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [Manifesto di distribuzione ClickOnceClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)   
+ [Protezione delle applicazioni ClickOnceSecuring ClickOnce Applications](../deployment/securing-clickonce-applications.md)   
  [Scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

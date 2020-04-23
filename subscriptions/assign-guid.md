@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono utilizzare GUID di sottoscrizione specifici per i sottoscrittori
-ms.openlocfilehash: 722aaedcd6da0224311960d1587d0c2c24eec60f
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: e2e8cd4f5d07f218fc23c0b7b6f28ababc25263f
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760155"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072593"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare sottoscrizioni specifiche nel portale di amministrazione delle sottoscrizioni di Visual StudioAssign specific subscriptions in the Visual Studio Subscriptions Administration Portal
 
@@ -49,6 +49,7 @@ Il passaggio finale consiste nel scaricare il modello **di aggiunta in blocco,**
 
 > [!IMPORTANT]
 > Per garantire un caricamento riuscito, assicurati che:
+> - Si utilizza il modello collegato nella finestra di dialogo quando si seleziona **Aggiunta in blocco**.  Non utilizzare una copia memorizzata localmente del modello, in quanto potrebbe non contenere tutti i campi obbligatori.  L'utilizzo di un modello precedente causerà l'esito negativo del caricamento. 
 > - Tutti i campi visualizzati come **Obbligatorio** nel modello sono completi.
 > - Nella colonna **Messaggio di errore** non sono presenti errori.
 > - Ogni GUID viene utilizzato una sola volta nel modello. 
