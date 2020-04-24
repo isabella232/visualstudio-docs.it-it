@@ -11,4 +11,4 @@ ms.lasthandoff: 04/02/2020
 ms.locfileid: "80573298"
 ---
 > [!NOTE]
-> Sei interessato a sviluppare soluzioni che estendono l'esperienza di Office su più piattaforme? Scopri il nuovo modello di componenti [aggiuntivi di Office](/office/dev/add-ins/). I componenti aggiuntivi di Office hanno un footprint ridotto rispetto ai componenti aggiuntivi e alle soluzioni VSTO ed è possibile compilarli usando quasi tutte le tecnologie di programmazione Web, ad esempio HTML5, JavaScript, CSS3 e XML.
+> Vuoi sviluppare soluzioni che estendono l'esperienza di Office su più piattaforme? Vedere il nuovo [modello di componenti](/office/dev/add-ins/)aggiuntivi per Office. I componenti aggiuntivi di Office hanno un footprint ridotto rispetto alle soluzioni e ai componenti aggiuntivi VSTO e possono essere compilati con quasi tutte le tecnologie di programmazione Web, ad esempio HTML5, JavaScript, CSS3 e XML.

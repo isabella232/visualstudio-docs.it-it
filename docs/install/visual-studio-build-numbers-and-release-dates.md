@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 04/16/2020
+ms.date: 04/23/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c9021e2202701e01ee0e34fbf074f07fc1c1b8f0
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: 33d82e84b28fa85bf4cfb014ecd292f31e0c84cb
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544354"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109455"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,23 +27,24 @@ ms.locfileid: "81544354"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.6.0 | Preview 3 | il 16 aprile 2020 | 16.6.30014.187 |
-| 16.0.13 | Versione | il 14 aprile 2020 | 16.0.28803.718 |
-| 16.4.7 | Versione | il 14 aprile 2020 | 16.4.30011.19 |
-| 16.5.4 | Versione | il 14 aprile 2020 | 16.5.30011.22 |
+| 16.6.0 | Preview 4 | 23 aprile 2020 | 16.6.30021.99 |
+| 16.6.0 | Preview 3 | 16 aprile 2020 | 16.6.30014.187 |
+| 16.0.13 | Versione | 14 aprile 2020 | 16.0.28803.718 |
+| 16.4.7 | Versione | 14 aprile 2020 | 16.4.30011.19 |
+| 16.5.4 | Versione | 14 aprile 2020 | 16.5.30011.22 |
 | 16.5.3 | Versione | 7 aprile 2020 | 16.5.30002.166 |
-| 16.6.0 | Preview 2.1 | giovedì 2 aprile 2020 | 16.6.30001.183 |
+| 16.6.0 | Preview 2.1 | 2 aprile 2020 | 16.6.30001.183 |
 | 16.5.2 | Versione | 31 marzo 2020 | 16.5.29926.136 |
-| 16.6.0 | Preview 2 | del 26 marzo 2020 | 16.6.29924.181 |
-| 16.5.1 | Versione | del 24 marzo 2020 | 16.5.29920.165 |
-| 16.6.0 | Preview 1 | del 16 marzo 2020 | 16.6.29911.98 |
-| 16.5.0 | Versione | del 16 marzo 2020 | 16.5.29911.84 |
-| 16.4.6 | Versione | il 10 marzo 2020  | 16.4.29905.134 |
-| 16.0.12 | Versione | il 10 marzo 2020 | 16.0.28803.697 |
+| 16.6.0 | Preview 2 | 26 marzo 2020 | 16.6.29924.181 |
+| 16.5.1 | Versione | 24 marzo, 2020 | 16.5.29920.165 |
+| 16.6.0 | Preview 1 | 16 marzo 2020 | 16.6.29911.98 |
+| 16.5.0 | Versione | 16 marzo 2020 | 16.5.29911.84 |
+| 16.4.6 | Versione | 10 marzo 2020  | 16.4.29905.134 |
+| 16.0.12 | Versione | 10 marzo 2020 | 16.0.28803.697 |
 | 16.5.0 | Preview 5 | 2 marzo 2020 | 16.5.29827.131 |
-| 16.5.0 | Preview 4 | del 25 febbraio 2020 | 16.5.29820.132 |
+| 16.5.0 | Preview 4 | 25 febbraio 2020 | 16.5.29820.132 |
 | 16.5.0 | Preview 3 | 19 febbraio 2020 | 16.5.29814.53 |
 | 16.4.5 | Versione | 11 febbraio 2020 | 16.4.29806.167 |
 | 16.4.4 | Versione | 31 gennaio 2020 | 16.4.29728.190 |
@@ -138,10 +139,10 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.22 | Versione | il 14 aprile 2020 | 15.9.28307.1093 |
-| 15.9.21 | Versione | il 10 marzo 2020 | 15.9.28307.1064 |
+| 15.9.22 | Versione | 14 aprile 2020 | 15.9.28307.1093 |
+| 15.9.21 | Versione | 10 marzo 2020 | 15.9.28307.1064 |
 | 15.9.20 | Versione | 11 febbraio 2020 | 15.9.28307.1033 |
 | 15.9.19 | Versione | 14 gennaio 2020 | 15.9.28307.1000 |
 | 15.0.28 | Versione | 11 dicembre 2019 | 15.0.26228.102 |
@@ -313,7 +314,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Frequenza di rilascio di Visual Studio](/visualstudio/productinfo/release-rhythm/)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
