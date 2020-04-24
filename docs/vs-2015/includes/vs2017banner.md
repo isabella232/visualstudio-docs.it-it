@@ -15,4 +15,4 @@ ms.lasthandoff: 03/20/2020
 ms.locfileid: "70197142"
 ---
 > [!Note]
-> Questo articolo si applica a Visual Studio 2015. Per la documentazione di Visual Studio più recente, usare il selettore di versione in alto a sinistra. È consigliabile eseguire l'aggiornamento a Visual Studio 2019. [Scaricalo qui](https://visualstudio.microsoft.com/downloads)
+> Questo articolo si applica a Visual Studio 2015. Per la documentazione di Visual Studio più recente, usare il selettore di versione in alto a sinistra. È consigliabile eseguire l'aggiornamento a Visual Studio 2019. [Scaricarlo qui](https://visualstudio.microsoft.com/downloads)

@@ -7,24 +7,24 @@ manager: jillfra
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278656"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109429"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 In questo argomento sono elencati i membri pubblici dello spazio dei nomi `Microsoft::VisualStudio::CppUnitTestFramework`. Usare queste API per scrivere unit test C++ in base a Microsoft Native Unit Test Framework. È disponibile un [esempio di utilizzo](#example) alla fine dell'argomento.
 
-I file di intestazione * \<* e lib si trovano nella cartella di installazione di Visual Studio> .
+I file di intestazione e lib si trovano nella * \<cartella di installazione di Visual Studio> \vc\auxiliary\vs\unittest*.
 
 I percorsi dei file di intestazione e lib vengono configurati automaticamente in un progetto di test nativo.
 
-## <a name="in-this-topic"></a><a name="In_this_topic"></a>In questo argomento
+## <a name="in-this-topic"></a><a name="In_this_topic"></a>Contenuto dell'argomento
 
-[CppUnitTest.h](#cppUnitTest_h)
+[CppUnitTest. h](#cppUnitTest_h)
 
 - [Creare classi e metodi di test](#create_test_classes_and_methods)
 
@@ -34,7 +34,7 @@ I percorsi dei file di intestazione e lib vengono configurati automaticamente in
 
   - [Classi di test](#test_classes)
 
-  - [Moduli di prova](#test_modules)
+  - [Moduli di test](#test_modules)
 
 - [Creare attributi di test](#create_test_attributes)
 
@@ -58,11 +58,11 @@ I percorsi dei file di intestazione e lib vengono configurati automaticamente in
 
     - [AreNotSame](#general_are_not_same)
 
-    - [Is Null](#general_is_null)
+    - [È null](#general_is_null)
 
-    - [Non è Null](#general_is_not_null)
+    - [Non è null](#general_is_not_null)
 
-    - [È vero](#general_is_True)
+    - [È true](#general_is_True)
 
     - [È false](#general_is_false)
 
@@ -78,9 +78,9 @@ I percorsi dei file di intestazione e lib vengono configurati automaticamente in
 
     - [AreNotSame](#winrt_are_not_same)
 
-    - [Is Null](#winrt_is_null)
+    - [È null](#winrt_is_null)
 
-    - [Non è Null](#winrt_is_not_null)
+    - [Non è null](#winrt_is_not_null)
 
   - [Asserzioni di eccezione](#exception_asserts)
 
@@ -102,7 +102,7 @@ I percorsi dei file di intestazione e lib vengono configurati automaticamente in
 TEST_CLASS(className)
 ```
 
-Obbligatorio per ogni classe che contiene metodi di test. Identifica *className* come una classe di test. `TEST_CLASS` deve essere dichiarato nell'ambito dello spazio dei nomi.
+Obbligatorio per ogni classe che contiene metodi di test. Identifica *className* come una classe di test. `TEST_CLASS`deve essere dichiarato nell'ambito dello spazio dei nomi.
 
 ```cpp
 TEST_METHOD(methodName)
@@ -115,7 +115,7 @@ Definisce *methodName* come metodo di test. `TEST_METHOD` deve essere dichiarato
 
 ### <a name="initialize-and-cleanup"></a><a name="Initialize_and_cleanup"></a> Eseguire l'inizializzazione e la pulizia
 
-#### <a name="test-methods"></a><a name="test_methods"></a>Metodi di prova
+#### <a name="test-methods"></a><a name="test_methods"></a>Metodi di test
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -247,7 +247,7 @@ TEST_IGNORE()
 
 Definisce un oggetto `TEST_METHOD_ATTRIBUTE` con il nome `Ignore` e il valore di attributo `true`.
 
-## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a>CppUnitTestAssert.h
+## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a>CppUnitTestAssert. h
 
 ### <a name="general-asserts"></a><a name="general_asserts"></a> Asserzioni generali
 
@@ -387,7 +387,7 @@ static void Assert::AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-null"></a><a name="general_is_null"></a>Is Null
+#### <a name="is-null"></a><a name="general_is_null"></a>È null
 Verificare che un puntatore sia NULL.
 
 ```cpp
@@ -398,7 +398,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-not-null"></a><a name="general_is_not_null"></a>Non è Null
+#### <a name="is-not-null"></a><a name="general_is_not_null"></a>Non è null
 Verificare che un puntatore non sia NULL
 
 ```cpp
@@ -409,7 +409,7 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-true"></a><a name="general_is_True"></a>È vero
+#### <a name="is-true"></a><a name="general_is_True"></a>È true
 Verificare che una condizione sia True
 
 ```cpp
@@ -429,7 +429,7 @@ static void Assert::IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="fail"></a><a name="general_Fail"></a>Fallire
+#### <a name="fail"></a><a name="general_Fail"></a>Esito negativo
 Forza il risultato del test case come non superato
 
 ```cpp
@@ -510,7 +510,7 @@ static void Assert::AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="is-null"></a><a name="winrt_is_null"></a>Is Null
+#### <a name="is-null"></a><a name="winrt_is_null"></a>È null
 Verifica che un puntatore di Windows Runtime sia un nullptr.
 
 ```cpp
@@ -521,7 +521,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a>Non è Null
+#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a>Non è null
 Verifica che un puntatore di Windows Runtime non sia un nullptr.
 
 ```cpp
@@ -532,9 +532,9 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-### <a name="exception-asserts"></a><a name="exception_asserts"></a>Asserzioni di eccezioneException Asserts
+### <a name="exception-asserts"></a><a name="exception_asserts"></a>Asserzioni di eccezione
 
-#### <a name="expect-exception"></a><a name="expect_exception"></a>Eccezione
+#### <a name="expect-exception"></a><a name="expect_exception"></a>Aspetta eccezione
 Verificare che una funzione generi un'eccezione:
 
 ```cpp
@@ -555,7 +555,7 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a>CppUnitTestLogger.h
+## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a>CppUnitTestLogger. h
 
 ### <a name="logger"></a><a name="logger"></a>Logger
 La classe Logger contiene metodi statici per scrivere nella **finestra di output**.
@@ -638,7 +638,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)
+- [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)

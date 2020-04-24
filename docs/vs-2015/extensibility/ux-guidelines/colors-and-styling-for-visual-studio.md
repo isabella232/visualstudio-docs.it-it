@@ -9,13 +9,13 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0330ef80fc1127893590ef8d326cb5b8e0cf0160
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291604"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302441"
 ---
-# <a name="colors-and-styling-for-visual-studio"></a>Colori e stile per Visual Studio
+# <a name="colors-and-styling-for-visual-studio"></a>Colori e stili per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 ## <a name="using-color-in-visual-studio"></a>Uso del colore in Visual Studio
@@ -73,13 +73,13 @@ ms.locfileid: "74291604"
 ### <a name="user-customizable-colors"></a>Colori personalizzabili dall'utente
  Vedere: [esposizione dei colori per gli utenti finali](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
- In alcuni casi, è possibile consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o un'area di progettazione. I componenti dell'interfaccia utente personalizzabili sono disponibili nella sezione **tipi di carattere e colori** della finestra di dialogo **Strumenti > Opzioni** , in cui gli utenti possono scegliere di modificare il colore di primo piano, il colore di sfondo o entrambi.
+ In alcuni casi, è possibile consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o un'area di progettazione. I componenti dell'interfaccia utente personalizzabili sono disponibili nella sezione **tipi di carattere e colori** della finestra di dialogo **strumenti > opzioni** , in cui gli utenti possono scegliere di modificare il colore di primo piano, il colore di sfondo o entrambi.
 
- ![Finestra &#62; di dialogo Opzioni strumenti in Visual Studio](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")
+ ![Strumenti &#62; finestra di dialogo Opzioni in Visual Studio](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")
 
- **Strumenti > finestra di dialogo Opzioni**
+ **Strumenti>finestra di dialogo Opzioni**
 
-## <a name="BKMK_TheVSColorService"></a>Il servizio VSColor
+## <a name="the-vscolor-service"></a><a name="BKMK_TheVSColorService"></a>Il servizio VSColor
  Visual Studio fornisce un servizio colori ambiente, detto anche servizio VSColor o Shell Color. Questo servizio consente di associare i valori dei colori degli elementi dell'interfaccia utente a un set di colori nome-valore contenente i colori per ogni tema. Il servizio VSColor deve essere usato per tutti gli elementi dell'interfaccia utente, in modo che i colori cambiano automaticamente per riflettere il tema selezionato dall'utente corrente e in modo che l'interfaccia utente associata al servizio colori ambiente si integrerà con i nuovi temi nelle versioni future di Visual Studio.
 
 ### <a name="how-the-service-works"></a>Funzionamento del servizio
@@ -114,7 +114,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
  **Nota:** I valori COLORREF restituiti da **GetVSSysColorEx ()** contengono solo i componenti R, G, B di un colore del tema. Se una voce del tema usa la trasparenza, il valore del canale alfa viene ignorato prima della restituzione. Pertanto, se è necessario utilizzare il colore dell'ambiente di interesse in una posizione in cui il canale di trasparenza è importante, è consigliabile utilizzare IVsUIShell5. GetThemedColor anziché IVsUIShell2:: GetVSSysColorEx, come descritto più avanti in questo argomento.
 
 ##### <a name="from-managed-code"></a>Da codice gestito
- L'accesso al servizio VSColor tramite codice nativo è piuttosto semplice. Se si utilizza codice gestito, tuttavia, determinare come utilizzare il servizio può risultare complesso. Tenendo presente questo aspetto, ecco un C# frammento di codice che illustra questo processo:
+ L'accesso al servizio VSColor tramite codice nativo è piuttosto semplice. Se si utilizza codice gestito, tuttavia, determinare come utilizzare il servizio può risultare complesso. Tenendo presente questo aspetto, ecco un frammento di codice C# che illustra questo processo:
 
 ```
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Classi e metodi helper per codice gestito
  Per il codice gestito, la libreria del Framework di pacchetto gestito della shell (Microsoft. VisualStudio. Shell. 12.0. dll) contiene un paio di classi helper che facilitano l'uso dei colori con tema.
 
- I metodi helper della classe **Microsoft. VisualStudio. Shell. VsColors** in MPF includono **GetThemedGDIColor ()** e **GetThemedWPFColor ()** . Questi metodi helper restituiscono il valore di colore di una voce del tema come System. Drawing. Color o System. Windows. Media. color, da usare nell'interfaccia utente di WinForms o WPF.
+ I metodi helper della classe **Microsoft. VisualStudio. Shell. VsColors** in MPF includono **GetThemedGDIColor ()** e **GetThemedWPFColor ()**. Questi metodi helper restituiscono il valore di colore di una voce del tema come System. Drawing. Color o System. Windows. Media. color, da usare nell'interfaccia utente di WinForms o WPF.
 
 ```
 IVsUIShell5 shell5;
@@ -256,7 +256,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-## <a name="BKMK_ChoosingHighContrastColors"></a>Scelta di colori Contrasto elevato
+## <a name="choosing-high-contrast-colors"></a><a name="BKMK_ChoosingHighContrastColors"></a>Scelta di colori Contrasto elevato
 
 ### <a name="overview"></a>Panoramica
  Windows utilizza diversi temi a livello di sistema a contrasto elevato che aumentano il contrasto dei colori di testo, sfondi e immagini, rendendo gli elementi più distinti sullo schermo. Per motivi di accessibilità, è importante che gli elementi dell'interfaccia di Visual Studio rispondano correttamente quando gli utenti passano a un tema Contrasto elevato.
@@ -272,7 +272,7 @@ protected override void Dispose(bool disposing)
 ### <a name="system-color-set"></a>Set di colori di sistema
  La tabella nel [Blog del team WPF: riferimento a SystemColors](https://devblogs.microsoft.com/wpf/systemcolors-reference/) indica il set completo di nomi dei colori di sistema e le tonalità corrispondenti visualizzate in ogni tema.
 
- Quando si applica questo set limitato di colori all'interfaccia utente, si *prevede che si perderanno dettagli sottili che erano presenti nei temi "normali"* . Di seguito è riportato un esempio di interfaccia utente con colori grigio sottili che vengono usati per distinguere le aree all'interno di una finestra degli strumenti. Una volta abbinato alla stessa finestra visualizzata in modalità Contrasto elevato, è possibile osservare che tutti gli sfondi sono della stessa tonalità e che i bordi di tali aree sono indicati solo da un bordo:
+ Quando si applica questo set limitato di colori all'interfaccia utente, si *prevede che si perderanno dettagli sottili che erano presenti nei temi "normali"*. Di seguito è riportato un esempio di interfaccia utente con colori grigio sottili che vengono usati per distinguere le aree all'interno di una finestra degli strumenti. Una volta abbinato alla stessa finestra visualizzata in modalità Contrasto elevato, è possibile osservare che tutti gli sfondi sono della stessa tonalità e che i bordi di tali aree sono indicati solo da un bordo:
 
  ![Finestra Proprietà](../../extensibility/ux-guidelines/media/030303-a-propertieswindow.png "030303-a_PropertiesWindow")
 
@@ -283,9 +283,9 @@ protected override void Dispose(bool disposing)
 
  Tonalità per ogni nome di token consentito in una superficie dell'editor, così come appaiono in ogni tema Contrasto elevato:
 
- ![Confronto tra Editor Contrasto elevato](../../extensibility/ux-guidelines/media/030303-b-hceditorcomparison.png "030303-b_HCEditorComparison")
+ ![Confronto di editor a contrasto elevato](../../extensibility/ux-guidelines/media/030303-b-hceditorcomparison.png "030303-b_HCEditorComparison")
 
- **Confronto tra Editor Contrasto elevato**
+ **Confronto di editor a contrasto elevato**
 
  Esempi della superficie dell'editor nel tema blu:
 
@@ -293,18 +293,18 @@ protected override void Dispose(bool disposing)
 
  **Editor con tema blu**
 
- ![Editor nel tema Contrasto elevato](../../extensibility/ux-guidelines/media/030303-d-editorhc1.png "030303-d_EditorHC1")
+ ![Editor con tema a contrasto elevato](../../extensibility/ux-guidelines/media/030303-d-editorhc1.png "030303-d_EditorHC1")
 
  **Editor in Contrasto elevato tema #1**
 
 ### <a name="usage-patterns"></a>Modelli di utilizzo
  Molti elementi dell'interfaccia utente comuni hanno già colori a contrasto elevato definiti. È possibile fare riferimento a questi modelli di utilizzo quando si scelgono i nomi dei colori di sistema personalizzati, in modo che gli elementi dell'interfaccia utente siano coerenti con componenti simili.
 
-|Colore di sistema|Utilizzo|
+|Colore di sistema|Uso|
 |------------------|-----------|
 |ActiveCaption|-Icone dell'IDE attivo e del pulsante della finestra con rafting al passaggio del mouse e premere<br />-Sfondo della barra del titolo per l'IDE e le finestre con rafting<br />-Sfondo della barra di stato predefinita|
 |ActiveCaptionText|-IDE attivo e finestre con rafting per il primo piano della barra del titolo (testo e glifi)<br />-Sfondo e bordo dei pulsanti della finestra attiva al passaggio del mouse e premere|
-|Control|-Casella combinata, elenco a discesa e controllo di ricerca predefinito e disabilitato sfondo, incluso il pulsante a discesa<br />-Sfondo del pulsante di destinazione di ancoraggio<br />-Sfondo della barra comandi<br />-Sfondo della finestra degli strumenti|
+|Controllo|-Casella combinata, elenco a discesa e controllo di ricerca predefinito e disabilitato sfondo, incluso il pulsante a discesa<br />-Sfondo del pulsante di destinazione di ancoraggio<br />-Sfondo della barra comandi<br />-Sfondo della finestra degli strumenti|
 |ControlDark|-Sfondo IDE<br />-Separatori dei menu e della barra dei comandi<br />-Bordo barra del comando<br />-Ombreggiature dei menu<br />-Scheda della finestra degli strumenti predefinita e bordo e separatore del passaggio del mouse<br />-Sfondo del pulsante di overflow del documento<br />-Bordo del glifo di destinazione dell'ancoraggio|
 |ControlDarkDark|-Non attivo, finestra scheda documento selezionata|
 |ControlLight|-Nascondi automaticamente bordo scheda<br />-Casella combinata e bordo dell'elenco a discesa<br />-Ancoraggio dello sfondo e del bordo della destinazione|
@@ -323,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|-Bordo IDE|
 |WindowText|-Nascondi automaticamente tabulazione in primo piano<br />-Primo piano della scheda della finestra degli strumenti selezionata<br />-Scheda della finestra del documento con stato non attivo e in primo piano della scheda provvisoria o non selezionata<br />-Visualizzazione albero-primo piano predefinito e passaggio del mouse su glifo non selezionato<br />-Bordo scheda selezionato della finestra degli strumenti<br />-Sfondo del cursore della barra di scorrimento, bordo e glifo|
 
-## <a name="BKMK_ExposingColorsForEndUsers"></a>Esposizione dei colori per gli utenti finali
+## <a name="exposing-colors-for-end-users"></a><a name="BKMK_ExposingColorsForEndUsers"></a>Esposizione dei colori per gli utenti finali
 
 ### <a name="overview"></a>Panoramica
  In alcuni casi è necessario consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o un'area di progettazione. Il modo più comune per eseguire questa operazione consiste nell'utilizzare la finestra di dialogo **strumenti > opzioni** . A meno che non si disponga di un'interfaccia utente altamente specializzata che richiede controlli speciali, il modo più semplice per presentare la personalizzazione è tramite la pagina **tipi di carattere e colori** all'interno della sezione **ambiente** della finestra di dialogo. Per ogni elemento esposto per la personalizzazione, l'utente può scegliere di modificare il colore di primo piano, il colore di sfondo o entrambi.
@@ -344,25 +344,25 @@ protected override void Dispose(bool disposing)
 - **Gestire le modifiche ai tipi di carattere e ai colori.**
 
 #### <a name="to-create-or-identify-categories"></a>Per creare o identificare categorie
- Costruire un tipo speciale di voce del registro di sistema Category in [Hklm\software\microsoft. \Visual Studio\\< Visual Studio Version\>\FontAndColors\\< Category\>]. \<Category > è il nome non localizzato della categoria.
+ Costruire un tipo speciale di voce del registro di sistema Category in [\\ Hklm\software\microsoft. \Visual Studio<\>Visual\\ Studio versione\>\FontAndColors<Category]. \<Category> è il nome non localizzato della categoria.
 
  Popolare il registro di sistema con due valori:
 
-|Name|Type|Data|Descrizione|
+|Nome|Type|Data|Description|
 |----------|----------|----------|-----------------|
-|Categoria|REG_SZ|GUID|GUID creato per identificare la categoria|
+|Category|REG_SZ|GUID|GUID creato per identificare la categoria|
 |Pacchetto|REG_SZ|GUID|GUID del servizio VSPackage che supporta la categoria|
 
  Il servizio specificato nel registro di sistema deve fornire un'implementazione di [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) per la categoria corrispondente.
 
 #### <a name="to-create-or-identify-groups"></a>Per creare o identificare i gruppi
- Costruire un tipo speciale di voce del registro di sistema Category in [Hklm\software\microsoft. \Visual Studio\\< Visual Studio Version\>\FontAndColors\\< Group\>]. \<Group > è il nome non localizzato del gruppo.
+ Costruire un tipo speciale di voce del registro di sistema Category in [\\ Hklm\software\microsoft. \Visual Studio<\>Visual\\ Studio Version\>\FontAndColors<Group]. \<Group> è il nome non localizzato del gruppo.
 
  Popolare il registro di sistema con due valori:
 
-|Name|Type|Data|Descrizione|
+|Nome|Type|Data|Description|
 |----------|----------|----------|-----------------|
-|Categoria|REG_SZ|GUID|GUID creato per identificare la categoria|
+|Category|REG_SZ|GUID|GUID creato per identificare la categoria|
 |Pacchetto|REG_SZ|GUID|GUID del servizio VSPackage che supporta la categoria|
 
  Il servizio specificato nel registro di sistema deve fornire un'implementazione di **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** per il gruppo corrispondente.
@@ -406,7 +406,7 @@ protected override void Dispose(bool disposing)
 
 - **gestire gli eventi generati dall'IDE** implementando l'interfaccia [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) . L'IDE chiama il metodo appropriato che segue le modifiche dell'utente della pagina tipi di carattere e colori. Ad esempio, chiama il metodo [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) se è selezionato un nuovo tipo di carattere.
 
-  **OPPURE**
+  **OR**
 
 - eseguire **il polling dell'IDE per le modifiche**. Questa operazione può essere eseguita tramite l'interfaccia [errore IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) implementata dal sistema. Sebbene principalmente per il supporto della persistenza, il metodo [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) può ottenere informazioni relative al tipo di carattere e al colore per gli elementi visualizzati. Per ulteriori informazioni sulle impostazioni relative a tipi di carattere e colori, vedere l'articolo di MSDN [accesso alle impostazioni dei tipi di carattere e colori archiviati](https://msdn.microsoft.com/library/bb166382.aspx).
 
@@ -424,7 +424,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
     "NameID"=dword:00000064
 ```
 
- **NOTA:**
+ **Si noti**
 
 - "NameID" = ID risorsa del nome della categoria localizzata nel pacchetto
 
