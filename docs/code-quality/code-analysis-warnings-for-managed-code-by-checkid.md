@@ -106,6 +106,7 @@ f1_keywords:
 - CA1505
 - CA1506
 - CA1507
+- CA1508
 - CA1600
 - CA1601
 - CA1700
@@ -265,18 +266,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83ed654a6e0795e5930580f9d13198631b5d695e
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109494"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153016"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
 Nella tabella seguente sono elencati gli avvisi di analisi del codice per il codice gestito ordinati per identificatore CheckId.
 
-| CheckId | Avviso | Description |
+| CheckId | Avviso | Descrizione |
 |---------| - | - |
 | Ca2007 | [CA2007: Non attendere direttamente un'attività](ca2007.md) | Un metodo asincrono [attende](/dotnet/csharp/language-reference/keywords/await) direttamente un <xref:System.Threading.Tasks.Task> oggetto. Quando un metodo asincrono attende direttamente un <xref:System.Threading.Tasks.Task> oggetto, la continuazione viene eseguita nello stesso thread che ha creato l'attività. Questo comportamento può essere oneroso in termini di prestazioni e può causare un deadlock sul thread UI. Prendere in <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> considerazione la chiamata a per segnalare l'intenzione di continuare. |
 | CA1000 | [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000.md) | Quando viene chiamato un membro statico di un tipo generico, è necessario specificare l'argomento di tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. In questi due casi, la sintassi necessaria per specificare l'argomento di tipo è diversa e può generare confusione. |
@@ -375,7 +376,9 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA1502 | [CA1502: Evitare complessità eccessiva](../code-quality/ca1502.md) | Questa regola misura il numero di percorsi linearmente indipendenti tramite il metodo, determinato dal numero e dalla complessità di rami condizionali. |
 | CA1504 | [CA1504: Controllare i nomi dei campi fuorvianti](../code-quality/ca1504.md) | Il nome di un campo di istanza inizia con "s_" o il nome di un campo statico (Shared in Visual Basic) inizia con "m_". |
 | CA1505 | [CA1505: Evitare codice non gestibile](../code-quality/ca1505.md) | Un tipo o metodo presenta un valore di indice di gestibilità basso. Un indice di manutenibilità basso indica che un tipo o un metodo è probabilmente difficile da gestire e sarebbe un buon candidato per la riprogettazione. |
-| CA1506 |[CA1506: Evitare un numero eccessivo di accoppiamenti tra classi](../code-quality/ca1506.md) | Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo. |
+| CA1506 | [CA1506: Evitare un numero eccessivo di accoppiamenti tra classi](../code-quality/ca1506.md) | Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo. |
+| Ca1507 | [CA1507: Usare nameof invece della stringa](../code-quality/ca1507.md) | Un valore letterale stringa viene usato come argomento in `nameof` cui è possibile usare un'espressione. |
+| Ca1508 | [Ca1508: evitare codice condizionale non attivo](../code-quality/ca1508.md) | Un metodo ha codice condizionale che restituisce sempre `true` o `false` in fase di esecuzione. In questo modo viene creato codice non `false` attivo nel ramo della condizione. |
 | CA1600 | [CA1600: Non impostare la priorità del processo su Inattivo](../code-quality/ca1600.md) | Non impostare la priorità del processo su Inattivo. I processi con System.Diagnostics.ProcessPriorityClass.Idle occupano la CPU, che diversamente sarebbe inattiva, e bloccano quindi la modalità standby. |
 | CA1601 | [CA1601: Non usare i timer che impediscono le modifiche allo stato di potenza](../code-quality/ca1601.md) | Una frequenza maggiore per l'attività periodica occupa la CPU e interferisce con i timer di inattività per il risparmio di energia tramite cui vengono disattivati lo schermo e i dischi rigidi. |
 | CA1700 | [CA1700: Non denominare 'Reserved' i valori di enumerazione](../code-quality/ca1700.md) | Questa regola presuppone che un membro di enumerazione con un nome che contiene la parola "reserved" non sia attualmente utilizzato, ma sia un segnaposto che dovrà essere rinominato o rimosso in una versione futura. La ridenominazione o rimozione di un membro è ritenuta una modifica sostanziale. |
