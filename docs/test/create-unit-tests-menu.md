@@ -1,6 +1,6 @@
 ---
 title: Creare stub di metodo di unit test
-ms.date: 04/01/2019
+ms.date: 04/24/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b9c0d2bfba0a55ef0362f031bfa32e986a05a10
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75844309"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82152996"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Creare stub di metodo di unit test con il comando Crea unit test
 
@@ -22,11 +22,11 @@ Il comando **Crea unit test** crea stub di metodo di unit. Questa funzionalità 
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Il comando di menu **Crea unit test** è disponibile solo per il codice gestito destinato a .NET Framework (ma non a .NET Core).
+> Il comando di menu **Crea unit test** è disponibile solo per il codice C# che ha come destinazione .NET Framework (ma non .NET Core).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Il comando di menu **Crea unit test** è disponibile solo per il codice gestito.
+> Il comando di menu **Crea unit test** è disponibile solo per il codice C#.
 ::: moniker-end
 
 Il comando di menu **Crea unit test** è estendibile e può essere usato per generare test per MSTest, MSTest V2, NUnit e xUnit.
@@ -56,7 +56,7 @@ Usare questa funzionalità ogni volta che è necessario creare unit test, ma in 
 
 Tuttavia, questa funzionalità può essere applicata anche quando uno sviluppatore inizia a scrivere codice e lo usa per il bootstrap degli unit test. All'interno del flusso di scrittura del codice, lo sviluppatore potrebbe voler creare rapidamente uno stub del metodo di unit test, con una classe di test e un progetto di test appropriati, per una parte specifica di codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare stub di metodo di unit test con il comando Crea unit test](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Post di blog sul testing unità](https://devblogs.microsoft.com/devops/?s=unit+testing)

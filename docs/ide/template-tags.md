@@ -13,18 +13,18 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189518"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153022"
 ---
 # <a name="add-tags-to-project-templates"></a>Aggiungere tag ai modelli di progetto
 
 A partire da [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) versione 16.1 Preview 2, è possibile aggiungere tag per il linguaggio, la piattaforma e il tipo di progetto ai modelli di progetto. 
 
-I tag vengono utilizzati in due posizioni nella finestra di dialogo **Nuovo progetto:**
+I tag vengono usati in due posizioni nella finestra di dialogo **nuovo progetto** :
 
 - I tag vengono visualizzati sotto la descrizione del modello.
 
@@ -40,9 +40,9 @@ I tag vengono utilizzati in due posizioni nella finestra di dialogo **Nuovo prog
 
 È possibile aggiungere o modificare tag nel file XML con estensione *vstemplate* del modello di progetto quando si esegue una delle azioni seguenti:
 
-* [Creare un nuovo modello](how-to-create-project-templates.md) di progetto utilizzando la procedura guidata Esporta modello.
-* [Aggiornare il modello di progetto esistente.](how-to-update-existing-templates.md)
-* [Creare un nuovo modello](../extensibility/getting-started-with-the-vsix-project-template.md)di progetto VSIX .
+* [Creare un nuovo modello di progetto](how-to-create-project-templates.md) usando l'esportazione guidata modelli.
+* [Aggiornare il modello di progetto esistente](how-to-update-existing-templates.md).
+* [Creare un nuovo modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,7 +52,7 @@ I tag vengono utilizzati in due posizioni nella finestra di dialogo **Nuovo prog
 <ProjectTypeTag> Project Type </ProjectTypeTag>
 ```
 
-## <a name="attributes"></a>Attributes
+## <a name="attributes"></a>Attributi
 
 È possibile usare gli attributi facoltativi seguenti in scenari utente avanzati:
 
@@ -73,7 +73,7 @@ Sintassi:
 
 ### <a name="child-elements"></a>Elementi figlio
 
-No.
+Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -93,7 +93,7 @@ Visual Studio offre un elenco di tag predefiniti. Quando si aggiunge un tag pred
 
 L'elenco seguente include i tag predefiniti disponibili in Visual Studio. I valori corrispondenti sono visualizzati tra parentesi.
 
-| Linguaggio | Piattaforma | Tipo di progetto |
+| Tag della lingua | Tag Platform | Tag del tipo di progetto |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | Cloud (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | Console (`console`) |
@@ -145,9 +145,9 @@ L'esempio seguente mostra i metadati per un modello di progetto per un'applicazi
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
-- [Creare modelli di progetto e di elemento](creating-project-and-item-templates.md)
-- [Personalizzare i modelli di progetto e di elemento](customizing-project-and-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creare modelli di progetto e di elementi](creating-project-and-item-templates.md)
+- [Personalizzare modelli di progetto e modelli di elemento](customizing-project-and-item-templates.md)
 - [Introduzione al modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
