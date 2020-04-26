@@ -430,6 +430,8 @@
                   href: ca1506.md
                 - name: 'CA1507: Usare nameof invece della stringa'
                   href: ca1507.md
+                - name: 'CA1508: Evitare codice di condizione non utilizzato'
+                  href: ca1508.md
             - name: Avvisi di mobilità
               items:
                 - name: Panoramica
