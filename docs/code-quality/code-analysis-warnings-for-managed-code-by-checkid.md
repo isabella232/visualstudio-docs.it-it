@@ -158,6 +158,10 @@ f1_keywords:
 - CA1823
 - CA1824
 - CA1825
+- CA1826
+- CA1827
+- CA1828
+- CA1829
 - CA1900
 - CA1901
 - CA1903
@@ -266,12 +270,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 554de8df2d05d0ae4f248762891dd0cec543e5a9
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153016"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167384"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
@@ -378,7 +382,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA1505 | [CA1505: Evitare codice non gestibile](../code-quality/ca1505.md) | Un tipo o metodo presenta un valore di indice di gestibilità basso. Un indice di manutenibilità basso indica che un tipo o un metodo è probabilmente difficile da gestire e sarebbe un buon candidato per la riprogettazione. |
 | CA1506 | [CA1506: Evitare un numero eccessivo di accoppiamenti tra classi](../code-quality/ca1506.md) | Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo. |
 | Ca1507 | [CA1507: Usare nameof invece della stringa](../code-quality/ca1507.md) | Un valore letterale stringa viene usato come argomento in `nameof` cui è possibile usare un'espressione. |
-| Ca1508 | [Ca1508: evitare codice condizionale non attivo](../code-quality/ca1508.md) | Un metodo ha codice condizionale che restituisce sempre `true` o `false` in fase di esecuzione. In questo modo viene creato codice non `false` attivo nel ramo della condizione. |
+| Ca1508 | [CA1508: Evitare codice di condizione non utilizzato](../code-quality/ca1508.md) | Un metodo ha codice condizionale che restituisce sempre `true` o `false` in fase di esecuzione. In questo modo viene creato codice non `false` attivo nel ramo della condizione. |
 | CA1600 | [CA1600: Non impostare la priorità del processo su Inattivo](../code-quality/ca1600.md) | Non impostare la priorità del processo su Inattivo. I processi con System.Diagnostics.ProcessPriorityClass.Idle occupano la CPU, che diversamente sarebbe inattiva, e bloccano quindi la modalità standby. |
 | CA1601 | [CA1601: Non usare i timer che impediscono le modifiche allo stato di potenza](../code-quality/ca1601.md) | Una frequenza maggiore per l'attività periodica occupa la CPU e interferisce con i timer di inattività per il risparmio di energia tramite cui vengono disattivati lo schermo e i dischi rigidi. |
 | CA1700 | [CA1700: Non denominare 'Reserved' i valori di enumerazione](../code-quality/ca1700.md) | Questa regola presuppone che un membro di enumerazione con un nome che contiene la parola "reserved" non sia attualmente utilizzato, ma sia un segnaposto che dovrà essere rinominato o rimosso in una versione futura. La ridenominazione o rimozione di un membro è ritenuta una modifica sostanziale. |
@@ -424,6 +428,10 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA1823 | [CA1823: Evitare campi privati non usati](../code-quality/ca1823.md) | Sono stati rilevati campi privati che non sembrano essere utilizzati all'interno dell'assembly. |
 | CA1824 |[CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | L'attributo NeutralResourcesLanguage informa Gestione risorse della lingua utilizzata per visualizzare le risorse di impostazioni cultura non associate ad alcun paese per un assembly. Tale approccio migliora le prestazioni delle ricerche per la prima risorsa caricata e riduce il working set. |
 | Ca1825 |[CA1825: Evitare allocazioni di matrici di lunghezza zero](../code-quality/ca1825.md) | L'inizializzazione di una matrice di lunghezza zero comporta l'allocazione di memoria non necessaria. Usare invece l'istanza di matrice vuota allocata in modo statico <xref:System.Array.Empty%2A?displayProperty=nameWithType>chiamando. L'allocazione di memoria è condivisa tra tutte le chiamate di questo metodo. |
+| Ca1826 |[Ca1826: utilizzare la proprietà anziché il metodo Enumerable LINQ](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>Il metodo LINQ è stato usato in un tipo che supporta una proprietà equivalente e più efficiente. |
+| Ca1827 |[Ca1827: non usare count/LongCount quando è possibile usare qualsiasi](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>è <xref:System.Linq.Enumerable.LongCount%2A> stato usato il metodo <xref:System.Linq.Enumerable.Any%2A> o dove il metodo risulta più efficiente. |
+| Ca1828 |[Ca1828: non usare CountAsync/LongCountAsync quando è possibile usare AnyAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>è <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> stato usato il metodo <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> o dove il metodo risulta più efficiente. |
+| Ca1829 |[Ca1829: usare la proprietà Length/count anziché il metodo Enumerable. Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Il metodo LINQ è stato usato in un tipo che supporta una proprietà equivalente `Length` , `Count` più efficiente o. |
 | CA1900 | [CA1900: I campi dei tipi di valore devono essere portabili](../code-quality/ca1900.md) | Questa regola consente di verificare che le strutture dichiarate utilizzando layout esplicito vengano allineate correttamente quando viene eseguito il marshalling a codice non gestito nei sistemi operativi a 64 bit. |
 | CA1901 | [CA1901: le dichiarazioni P/Invoke devono essere portabili](../code-quality/ca1901.md) | La regola valuta la dimensione di ciascun parametro e il valore restituito di P/Invoke e verifica che la dimensione del parametro sia corretta quando viene eseguito il marshalling a codice non gestito in sistemi operativi a 32 e a 64 bit. |
 | CA1903 | [CA1903: Usare solo API della versione di .NET Framework di destinazione](../code-quality/ca1903.md) | Un membro o un tipo sta utilizzando un membro o un tipo introdotto in un service pack non incluso con la versione di .NET Framework di destinazione del progetto. |
