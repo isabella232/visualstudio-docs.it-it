@@ -38,7 +38,7 @@
 # [Debug](/visualstudio/mac/debugging)
 ## [Visualizzazioni dei dati](/visualstudio/mac/data-visualizations)
 
-# [Compiling and Building](/visualstudio/mac/compiling-and-building) (Compilazione e creazione)
+# [Compilazione e creazione](/visualstudio/mac/compiling-and-building)
 ## [Compilazione e pulizia di progetti e soluzioni](/visualstudio/mac/building-and-cleaning-projects-and-solutions)
 ## [Operazioni di compilazione](/visualstudio/mac/build-actions)
 ## [Personalizzazione del processo di compilazione](/visualstudio/mac/customizing-build-system)
