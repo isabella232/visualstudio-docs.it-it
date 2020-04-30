@@ -432,6 +432,8 @@
                   href: ca1507.md
                 - name: 'CA1508: Evitare codice di condizione non utilizzato'
                   href: ca1508.md
+                - name: 'CA1509: Voce non valida nel file di configurazione della metrica del codice'
+                  href: ca1509.md
             - name: Avvisi di mobilità
               items:
                 - name: Panoramica
@@ -575,6 +577,8 @@
                   href: ca2006.md
                 - name: 'CA2007: Non attendere direttamente un''attività'
                   href: ca2007.md
+                - name: 'CA2009: Non chiamare ToImmutableCollection su un valore ImmutableCollection'
+                  href: ca2009.md
             - name: Avvisi di sicurezza
               items:
                 - name: Panoramica
