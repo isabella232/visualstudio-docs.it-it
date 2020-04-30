@@ -1,21 +1,21 @@
 ---
-title: 'Vantaggi di Microsoft Azure : Documenti Microsoft'
+title: Vantaggio Microsoft Azure | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/10/2020
+ms.date: 04/28/2020
 ms.topic: conceptual
-description: Informazioni su come attivare il vantaggio del credito individuale di Azure DevTest incluso nella sottoscrizione di Visual Studio.Learn how to activate the Azure DevTest individual credit benefit included in your Visual Studio subscription.
-ms.openlocfilehash: b556b90cc0c4f0904cbd6e08a34ec782f044dfae
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+description: Informazioni su come attivare il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione di Visual Studio.
+ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224485"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564173"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
-I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il [credito individuale mensile di Azure DevTest,](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)Azure è la sandbox personale per lo sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
+I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il tuo [credito mensile Azure DevTest individual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure è la tua sandbox personale per sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -24,15 +24,15 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
    > [!div class="mx-imgBorder"]
    > ![Riquadro Azure](_img/vs-azure/vs-azure-tile.png)
 
-3. Se non si dispone di una sottoscrizione di Azure esistente, verrà richiesto di immettere le informazioni necessarie per creare la sottoscrizione di Azure.If you don't have an existing Azure subscription, you'll be asked to fill in the required information to create your Azure subscription.  Il primo passaggio consiste nel fornire le informazioni personali e quindi fare clic su **Avanti**.
+3. Se non si ha una sottoscrizione di Azure esistente, verrà richiesto di immettere le informazioni necessarie per creare la sottoscrizione di Azure.  Il primo passaggio consiste nel fornire le informazioni personali e quindi fare clic su **Avanti**.
    > [!div class="mx-imgBorder"]
    > ![Registrazione di Azure](_img/vs-azure/vs-azure-about-you.png)
 
-4. Successivamente, dovrai verificare la tua identità utilizzando un semplice codice di verifica. Fornisci il tuo numero di telefono e scegli se desideri ricevere il codice via SMS o telefono.  Immettere il codice ricevuto e fare clic su **Verifica codice**.   
+4. Successivamente, sarà necessario verificare l'identità usando un semplice codice di verifica. Specificare il numero di telefono e scegliere se si desidera ricevere il codice in base a testo o telefono.  Immettere il codice ricevuto e fare clic su **Verifica codice**.   
    > [!div class="mx-imgBorder"]
    > ![Preparazione di Azure](_img/vs-azure/vs-azure-identity.png)
 
-5. Per il passaggio finale, fare clic sulla casella di controllo per accettare i termini, quindi fare clic su **Iscriviti**.  Questo è tutto ciò che occorre fare.
+5. Per il passaggio finale, fare clic sulla casella di controllo per accettare le condizioni e quindi fare clic su **Iscriviti**.  Questo è tutto ciò che occorre fare.
    > [!div class="mx-imgBorder"]
    > ![Preparazione di Azure](_img/vs-azure/vs-azure-agreement.png)
 
@@ -40,40 +40,31 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
    > [!div class="mx-imgBorder"]
    > ![Dashboard di Azure](_img/vs-azure/vs-azure-quick-start.png) 
 
-0. Contrassegnare il portale di [Azure](https://portal.azure.com) per un facile accesso in futuro.
+0. Aggiungere un segnalibro al [portale di Azure](https://portal.azure.com) per facilitarne l'accesso in futuro.
 
-## <a name="using-azure-without-a-visual-studio-subscription"></a>Uso di Azure senza una sottoscrizione di Visual StudioUsing Azure without a Visual Studio subscription
-Al termine della sottoscrizione di Visual Studio, tutti i vantaggi della sottoscrizione, incluso il credito mensile per gli sviluppatori/test di Azure, non sono più disponibili. Per continuare a usare Azure con un credito mensile, è necessario rinnovare la sottoscrizione, acquistare una nuova sottoscrizione o trasferire il vantaggio di Azure a una sottoscrizione attiva che include il credito individuale di sviluppo/test di Azure.To continue using Azure with a monthly credit, you will need to renew your subscription, purchase a new subscription, or transfer the Azure benefit to an active subscription that includes the Azure dev/test individual credit.  È anche possibile scegliere di continuare a usare Azure senza credito mensile convertendo la sottoscrizione di Azure corrente in con pagamento in base al consumo.
+## <a name="maintain-a-subscription-to-use-monthly-credits"></a>Gestione di una sottoscrizione per l'utilizzo di crediti mensili
+Se la sottoscrizione di Visual Studio scade o viene rimossa, tutti i vantaggi della sottoscrizione, incluso il credito mensile per sviluppo/test di Azure, non sono più disponibili. Per continuare a usare Azure con un credito mensile, è necessario rinnovare la sottoscrizione, acquistare una nuova sottoscrizione o trasferire il vantaggio di Azure a una sottoscrizione attiva che includa il credito individuale per sviluppo/test di Azure.  
 
-### <a name="continue-using-azure-with-a-monthly-credit"></a>Continuare a usare Azure con un credito mensile
 > [!IMPORTANT]
-> È necessario trasferire le risorse a un'altra sottoscrizione di Azure prima che la sottoscrizione di Azure corrente sia disabilitata o perdere l'accesso ai dati.  
+> È necessario trasferire le risorse a un'altra sottoscrizione di Azure prima che la sottoscrizione di Azure corrente venga disabilitata o si perderà l'accesso ai dati.  
 
-Esistono diversi modi per continuare a usare un credito mensile per Azure.There are several ways to continue using a monthly credit for Azure.  Per salvare le risorse di Azure, è necessario [trasferirle](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) in un'altra sottoscrizione di Azure, indipendentemente dall'azione scelta di seguito. 
+Esistono diversi modi per continuare a usare un credito mensile per Azure.  Per salvare le risorse di Azure, sarà necessario [trasferire le risorse](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) a un'altra sottoscrizione di Azure, indipendentemente dall'azione scelta di seguito. 
 
-- **Se si acquista direttamente la sottoscrizione di Visual Studio,** acquistare una nuova sottoscrizione o rinnovarla tramite [Microsoft Store.](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=)  
-- **Se un utente dell'organizzazione acquista sottoscrizioni per l'organizzazione,** [contattare l'amministratore](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) della sottoscrizione di Visual Studio e richiedere una sottoscrizione che fornisca il credito mensile necessario.  
-- Se si dispone di **un'altra sottoscrizione attiva** di Visual Studio allo stesso livello di sottoscrizione associata a un altro account Microsoft, è possibile trasferire il vantaggio di Azure a un'altra sottoscrizione attiva di Visual Studio aggiungendo un account [alternativo](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) nel portale delle [sottoscrizioni](https://my.visualstudio.com/subscriptions)di Visual Studio.  
+- **Se acquisti direttamente la sottoscrizione di Visual Studio**, Acquista una nuova sottoscrizione o rinnova la sottoscrizione tramite [Microsoft Store](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=).  
+- **Se un utente dell'organizzazione acquista sottoscrizioni per l'organizzazione**, [contattare l'amministratore della sottoscrizione di Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) e richiedere una sottoscrizione che fornisca il credito mensile necessario.  
+- **Se si ha un'altra sottoscrizione di Visual Studio attiva** allo stesso livello di sottoscrizione associata a un altro account Microsoft, è possibile trasferire il vantaggio di Azure a un'altra sottoscrizione attiva di Visual Studio [aggiungendo un account alternativo](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) nel [portale delle sottoscrizioni](https://my.visualstudio.com/subscriptions)di Visual Studio.  
 
-È possibile determinare il livello di sottoscrizione necessario in base al livello di credito di Azure che si sta tentando di sostituire.  
+Usare la tabella di idoneità riportata di seguito per determinare il numero di crediti inclusi in ogni tipo di sottoscrizione.  
 
-| Visual Studio Subscription Level | Credito mensile di Azure |
-|----------------------------------|----------------------|
-| Visual Studio Enterprise         | 150 USD                 |
-| Visual Studio Professional       | 50 USD                  |
-| Visual Studio Test Professional  | 50 USD                  |
-| Piattaforme MSDN                  | $100                 |
 
-Gli abbonati con piattaforme MSDN devono contattare un amministratore per richiedere l'assegnazione di un nuovo abbonamento. 
+## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Converti la tua sottoscrizione di Azure in un modello con pagamento in base al consumo
 
-### <a name="continue-using-azure-without-a-monthly-credit"></a>Continuare a usare Azure senza credito mensileContinue using Azure without a monthly credit
+Se non è più necessario un credito o una sottoscrizione di Visual Studio, ma si vuole continuare a usare le risorse di Azure, [trasferire le risorse](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) in un'altra sottoscrizione di Azure o convertire la sottoscrizione di Azure in prezzi con pagamento in base al [consumo rimuovendo il limite di spesa](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
 
-Se non è più necessaria una sottoscrizione o un credito di Visual Studio, ma si vuole continuare a usare le risorse di Azure, [trasferire le risorse](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) in un'altra sottoscrizione di Azure o convertire la sottoscrizione di Azure in prezzi con pagamento in base al consumo rimuovendo il limite di [spesa.](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal) 
+Se non si esegue una di queste azioni, la sottoscrizione di Azure verrà disabilitata ed eliminata 30 giorni dopo la ricezione della notifica tramite posta elettronica.  
 
-Se non si esidue una di queste azioni, la sottoscrizione di Azure verrà disabilitata ed eliminata 30 giorni dopo la ricezione della notifica tramite posta elettronica.  
-
-### <a name="have-a-question"></a>Hai una domanda?
-In caso di domande sul trasferimento di risorse, sulla rimozione dei limiti di spesa o su altri argomenti di Azure, è possibile [inviare](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) una richiesta di supporto di Azure nel portale di Azure.If you have questions about transferring resources, removing spending limits, or other Azure topics, you can submit an Azure support request in the Azure portal. 
+## <a name="have-a-question"></a>Hai una domanda?
+Per domande su come trasferire risorse, rimuovere i limiti di spesa o altri argomenti di Azure, è possibile [inviare una richiesta di supporto di Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) nella portale di Azure. 
 
 ## <a name="eligibility"></a>Idoneità
 |                 Livello di sottoscrizione/Programma                 |           Vantaggi           |                         Rinnovabile?                          |
@@ -99,9 +90,9 @@ In caso di domande sul trasferimento di risorse, sulla rimozione dei limiti di s
 *Include Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) invitati a passare a esplorare diverse opzioni per l'acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto di Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Connettersi a per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>D: come è possibile inviare una richiesta di supporto tecnico dal portale di Azure?
@@ -112,19 +103,19 @@ R: l'invio di una richiesta di supporto dal portale di Azure è un processo in t
 
 Vedere la documentazione del [supporto tecnico](vs-tech-support.md) per informazioni dettagliate.
 
-### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>D: In che modo è proprietaria della proprietà intellettuale creata tramite il credito individuale DevTest di Azure?
-R: La proprietà intellettuale prodotta da un dipendente creato sulle risorse fornite da tale società è quindi la proprietà intellettuale della società che fornisce la risorsa. Pertanto, se si riceve la sottoscrizione di Visual Studio tramite il datore di lavoro, i criteri di proprietà intellettuale si applicheranno. 
+### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>D: in che modo possiede la proprietà intellettuale che creo con il credito individuale Azure DevTest?
+R: la proprietà intellettuale prodotta da un dipendente creato per le risorse fornite da tale società è quindi una proprietà intellettuale della società che fornisce la risorsa. Quindi, se si riceve la sottoscrizione di Visual Studio tramite il proprio datore di lavoro, si applicano i criteri di proprietà intellettuale. 
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con Azure?  Vedere queste risorse:
   - Supporto tecnico:[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-  - [Suggerimenti & trucchi di AzureAzure Tips & Tricks](https://microsoft.github.io/AzureTipsAndTricks/ "Suggerimenti & trucchi di AzureAzure Tips & Tricks") 
-- Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [il supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+  - [Suggerimenti & per Azure](https://microsoft.github.io/AzureTipsAndTricks/ "Suggerimenti & per Azure") 
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

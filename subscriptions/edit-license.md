@@ -7,18 +7,18 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono modificare le assegnazioni di sottoscrizione.
-ms.openlocfilehash: d145d556467b4eecec787fe409b4faa45945bec0
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: a0f72bf6a6561060fd4eddcf2fc11f0f4cf97f15
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232548"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564225"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modificare assegnazioni di sottoscrizioni di Visual Studio
 L'amministratore delle sottoscrizioni può modificare le sottoscrizioni assegnate a utenti all'interno dell'organizzazione.  Questo articolo presenta il tipo di modifiche che è possibile apportare, insieme ai passaggi necessari.
 
    > [!NOTE]
-   > Se è necessario modificare i dettagli della sottoscrizione per un sottoscrittore assegnato tramite un gruppo di Azure Active Directory, è necessario rimuoverli dal gruppo e aggiungerli singolarmente nel portale di amministrazione.  
+   > Se è necessario modificare i dettagli della sottoscrizione per un Sottoscrittore assegnato tramite un gruppo di Azure Active Directory, sarà necessario rimuoverli dal gruppo e aggiungerli singolarmente nel portale di amministrazione.  
 
 ## <a name="change-subscriber-information"></a>Modificare le informazioni sul sottoscrittore
 È possibile modificare le informazioni di un sottoscrittore per correggere gli errori o aggiornare le informazioni.
@@ -27,21 +27,27 @@ Per modificare un sottoscrittore, selezionare i puntini di sospensione (…) che
 > [!div class="mx-imgBorder"]
 > ![Selezionare un sottoscrittore da modificare](_img/edit-license/select-subscriber.png)
 
-È possibile aggiornare il nome, il cognome, il livello di abbonamento, l'indirizzo e-mail, il paese, la lingua, i download e il campo di riferimento dell'abbonato. Modificare le informazioni del sottoscrittore e fare clic su **Salva**.
+È possibile aggiornare il nome, il cognome, il livello di sottoscrizione, l'indirizzo di posta elettronica, il paese, la lingua, i download e il campo di riferimento del Sottoscrittore Modificare le informazioni del Sottoscrittore e fare clic su **Salva**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Modificare più sottoscrittori usando la modifica di massa
+
+
 È possibile modificare più sottoscrittori contemporaneamente utilizzando il processo di modifiche di massa. Questa funzionalità viene utilizzata principalmente per le organizzazioni che devono effettuare modifiche dell'indirizzo di posta elettronica aziendale o se un'organizzazione ha deciso di limitare l'accesso ai download.
 
-   > [!IMPORTANT]
-   > I livelli di sottoscrizione (ad esempio Enterprise, Professional e così via) e i GUID di sottoscrizione non possono essere modificati utilizzando la modifica in blocco.  Se è necessario assegnare GUID di sottoscrizione specifici agli utenti, usare il processo per l'aggiunta di utenti scegliendo l'ID sottoscrizione. Se si tenta un caricamento con questi elementi modificati nel modello di modifica in blocco, il caricamento avrà esito negativo.
+<br>
 
-1. Per modificare più sottoscrittori contemporaneamente, passare alla scheda Sottoscrittori.To edit multiple subscribers at once, navigate to the Subscribers tab. Sulla barra multifunzione nella parte superiore fare clic su **Modifica in blocco**.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
+
+   > [!IMPORTANT]
+   > I livelli di sottoscrizione (ad esempio Enterprise, Professional e così via) e i GUID della sottoscrizione non possono essere modificati tramite la modifica bulk.  Se è necessario assegnare GUID di sottoscrizione specifici agli utenti, usare il processo per l'aggiunta di utenti scegliendo l'ID sottoscrizione. Se si tenta di eseguire un caricamento con questi elementi modificati nel modello di modifica bulk, il caricamento avrà esito negativo.
+
+1. Per modificare contemporaneamente più sottoscrittori, passare alla scheda sottoscrittori. Nella parte superiore della barra multifunzione fare clic su **modifica in blocco**.
 
 2. La procedura di Modifiche di massa usa un modello di Excel per apportare modifiche a informazioni relative al sottoscrittore. Nella casella Modifiche di massa, fare clic su **Esporta in Excel** per scaricare l'elenco corrente di sottoscrittori, incluse tutte le relative informazioni.
    > [!div class="mx-imgBorder"]
    > ![Modifica di una licenza - Esportazione di un elenco di modifiche in blocco](_img/edit-license/edit-license-bulk-edit-export.png)
 
-3. Successivamente, salvare il file in locale in modo che sia più facile trovarlo e apportare le modifiche necessarie prima di caricarlo. Per garantire un caricamento corretto, non modificare il livello di **sottoscrizione o il GUID della sottoscrizione** nel file di modifica in blocco in quanto in questo modo il caricamento avrà esito negativo.
+3. Successivamente, salvare il file in locale in modo che sia più facile trovarlo e apportare le modifiche necessarie prima di caricarlo. Per assicurarsi che il caricamento venga eseguito correttamente, **non modificare il livello di sottoscrizione o il GUID della sottoscrizione** nel file di modifica bulk. in questo modo, il caricamento avrà esito negativo.
 
 4. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio e nella finestra di dialogo Modifiche in blocco, fare clic su **Sfoglia**. Selezionare il file di Excel salvato e fare clic su **OK**. Lo stato di avanzamento del caricamento verrà visualizzato sullo schermo.
    > [!div class="mx-imgBorder"]
@@ -51,7 +57,7 @@ Per modificare un sottoscrittore, selezionare i puntini di sospensione (…) che
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
