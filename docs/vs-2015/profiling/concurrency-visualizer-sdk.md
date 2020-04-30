@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14bced870cd24badcaf2a687fc4a1a2edeb740c0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851012"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586798"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice sorgente in modo che nel visualizzatore di concorrenza siano visualizzate informazioni aggiuntive. È possibile associare i dati aggiuntivi a fasi ed eventi nel codice. Queste visualizzazioni aggiuntive sono note come *marcatori*.  Per una procedura dettagliata introduttiva, vedere [Introducing the Concurrency Visualizer SDK](https://blogs.msdn.com/b/visualizeparallel/archive/2011/10/17/introducing-the-concurrency-visualizer-sdk.aspx).(Introduzione all'SDK del visualizzatore di concorrenza).
+Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice sorgente in modo che nel visualizzatore di concorrenza siano visualizzate informazioni aggiuntive. È possibile associare i dati aggiuntivi a fasi ed eventi nel codice. Queste visualizzazioni aggiuntive sono note come *marcatori*.  Per una procedura dettagliata introduttiva, vedere [Introducing the Concurrency Visualizer SDK](https://docs.microsoft.com/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).(Introduzione all'SDK del visualizzatore di concorrenza).
 
 ## <a name="properties"></a>Proprietà
  Flag, span e messaggi hanno due proprietà: categoria e importanza. Nella finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) è possibile usare queste proprietà per filtrare il set di marcatori visualizzati. Queste proprietà influiscono anche sulla rappresentazione visiva dei marcatori. Ad esempio, l'importanza è rappresentata dalla dimensione dei flag, mentre il colore viene usato per indicare la categoria.
@@ -33,7 +33,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
 
 In C#, Visual Basic e altro codice gestito usare il provider predefinito chiamando i metodi nella classe [Markers](/previous-versions/hh694099(v=vs.140)). Espone quattro metodi per la generazione di marcatori: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))e [WriteAlert](/previous-versions/hh694180(v=vs.140)). Sono disponibili più overload per queste funzioni, a seconda che si voglia o meno usare le impostazioni predefinite per le proprietà.  L'overload più semplice accetta solo un parametro di stringa che specifica la descrizione dell'evento. La descrizione viene visualizzata nei rapporti del visualizzatore di concorrenza.
 
-#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Aggiungere il supporto di SDK C# a un progetto di o Visual Basic
+#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Aggiungere il supporto di SDK a un progetto C# o Visual Basic
 
 1. Nella barra dei menu scegliere **Analizza**, **Visualizzatore di concorrenza**, **Aggiungi SDK al progetto**.
 
@@ -125,7 +125,7 @@ In C#, Visual Basic e altro codice gestito usare il provider predefinito chiaman
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Riferimento alla libreria C++](../profiling/cpp-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C++.|
-|[Riferimento alla libreria C](../profiling/c-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C.|
+|[Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C++.|
+|[riferimento alla libreria C](../profiling/c-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C.|
 |[Strumentazione](/previous-versions/hh694104(v=vs.140))|Viene descritta l'API del visualizzatore di concorrenza per il codice gestito.|
-|[Visualizzatore di concorrenza](../profiling/concurrency-visualizer.md)|Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati di profilatura generati tramite il metodo di concorrenza che includono dati di esecuzione di thread.|
+|[Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)|Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati di profilatura generati tramite il metodo di concorrenza che includono dati di esecuzione di thread.|

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c47a1583a1d4695905c0fb7067faaa6226fb2d7a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 3b2e1fd025d559889f0ea41d39879e251e80fa64
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851873"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586698"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice della app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,16 +24,16 @@ Lo strumento di analisi del codice disponibile in Visual Studio esamina il codic
 > [!NOTE]
 > L'analisi del codice non è disponibile per codice JavaScript.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 |||
 |-|-|
-|[Analizzare la qualità del codice Visual Basic e C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Usare l'analisi del codice in progetti Visual Basic e C#.|
-|[Analizzare la qualità del codice C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Usare l'analisi del codice in progetti C++.|
+|[Analizzare la qualità del codice Visual Basic e C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Usa l'analisi del codice in progetti Visual Basic e C#.|
+|[Analizzare la qualità del codice C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Usa l'analisi del codice in progetti C++.|
 
 ## <a name="more-code-analysis-info"></a>Ulteriori informazioni sull'analisi del codice
 
 |||
 |-|-|
-|[Analisi del codice in MSDN Library](https://msdn.microsoft.com/library/dd264897.aspx)|Altre informazioni sull'uso dell'analisi del codice in Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional.|
-|[Blog del team di analisi del codice MSDN](https://blogs.msdn.com/codeanalysis/)|In questo blog sono disponibili altre informazioni, inclusi documenti ed esempi tecnici.|
+|[Analisi del codice in MSDN Library](https://msdn.microsoft.com/library/dd264897.aspx)|Ulteriori informazioni sull'uso dell'analisi del codice in Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional.|
+|[Blog del team di analisi del codice MSDN](https://blogs.msdn.com/b/codeanalysis/)|In questo blog sono disponibili ulteriori informazioni, inclusi documenti ed esempi tecnici.|

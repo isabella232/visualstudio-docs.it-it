@@ -10,22 +10,24 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, conditions
 - conditions [MSBuild]
+- Exists, MSBuild condition function
+- HasTrailingSlash, MSBuild condition function
 ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7948f9da5922ba5f5e3582924bbccd56d50219a0
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: 61ffb650a87fa992a07d749687498cbb8ec6482d
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072567"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586829"
 ---
 # <a name="msbuild-conditions"></a>Condizioni di MSBuild
 
-MSBuild supporta un set specifico di condizioni `Condition` che possono essere applicate ovunque sia consentito un attributo. La tabella seguente illustra tali condizioni.
+MSBuild supporta un set specifico di condizioni che possono essere applicate ovunque sia `Condition` consentito un attributo. La tabella seguente illustra tali condizioni.
 
 |Condizione|Descrizione|
 |---------------|-----------------|
@@ -35,12 +37,12 @@ MSBuild supporta un set specifico di condizioni `Condition` che possono essere a
 |Exists('`stringA`')|Restituisce `true` se esiste un file o una cartella con il nome `stringA`.<br /><br /> Ad esempio:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti.|
 |HasTrailingSlash('`stringA`')|Restituisce `true` se la stringa specificata contiene un carattere di barra (/) o di barra rovesciata (\\) finale.<br /><br /> Ad esempio:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti.|
 |!|Restituisce `true` se l'operando restituisce `false`.|
-|e|Restituisce `true` se entrambi gli operandi restituiscono `true`.|
+|And|Restituisce `true` se entrambi gli operandi restituiscono `true`.|
 |Oppure|Restituisce `true` se almeno uno degli operandi restituisce `true`.|
 |()|Meccanismo di raggruppamento che restituisce `true` se le espressioni contenute all'interno restituiscono `true`.|
-|$if$ ( %expression% ), $else$, $endif$|Controlla se l'oggetto `%expression%` specificato corrisponde al valore stringa del parametro di modello personalizzato passato. Se la condizione `$if$` restituisce `true`, le istruzioni vengono eseguite. In caso contrario, viene controllata la condizione `$else$`. Se la condizione `$else$` è `true`, le istruzioni vengono eseguite. In caso contrario, la condizione `$endif$` termina la valutazione dell'espressione.<br /><br /> Per esempi di utilizzo, vedere Logica dei parametri del [modello di progetto/elemento](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic)di Visual Studio.|
+|$if$ ( %expression% ), $else$, $endif$|Controlla se l'oggetto `%expression%` specificato corrisponde al valore stringa del parametro di modello personalizzato passato. Se la condizione `$if$` restituisce `true`, le istruzioni vengono eseguite. In caso contrario, viene controllata la condizione `$else$`. Se la condizione `$else$` è `true`, le istruzioni vengono eseguite. In caso contrario, la condizione `$endif$` termina la valutazione dell'espressione.<br /><br /> Per esempi di utilizzo, vedere [logica dei parametri del modello di progetto/elemento di Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
 
-È possibile utilizzare i metodi stringa nelle condizioni, come illustrato nell'esempio seguente, in cui la funzione [TrimEnd()](/dotnet/api/system.string.trimend) viene utilizzata per confrontare solo la parte rilevante della stringa, per distinguere tra i framework di destinazione di .NET Framework e .NET Core.
+È possibile usare i metodi di stringa in condizioni, come illustrato nell'esempio seguente, in cui la funzione [trirammenda ()](/dotnet/api/system.string.trimend) viene usata per confrontare solo la parte pertinente della stringa, per distinguere tra .NET Framework e i Framework di destinazione .NET Core.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -58,6 +60,6 @@ MSBuild supporta un set specifico di condizioni `Condition` che possono essere a
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
-- [Procedura dettagliata: creazione di un file di progetto MSBuild da zeroWalkthrough: Creating an MSBuild project file from scratch](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+- [Procedura dettagliata: creazione di un file di progetto MSBuild da zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

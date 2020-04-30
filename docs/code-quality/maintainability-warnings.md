@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd7fe79665ac8de665116a6832d5ef9327fb356c
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: fcb1165ea00d407f5b4840358cc270eb299ba198
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82152984"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586223"
 ---
 # <a name="maintainability-warnings"></a>Avvisi di manutenibilità
 
@@ -36,8 +36,9 @@ Gli avvisi di gestibilità supportano la libreria e la manutenzione dell'applica
 | [CA1505: Evitare codice non gestibile](../code-quality/ca1505.md) | Un tipo o metodo presenta un valore di indice di gestibilità basso. Un indice di manutenibilità basso indica che un tipo o un metodo è probabilmente difficile da gestire e sarebbe un buon candidato per la riprogettazione. |
 | [CA1506: Evitare un numero eccessivo di accoppiamenti tra classi](../code-quality/ca1506.md) | Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo. |
 | [CA1507: Usare nameof invece della stringa](../code-quality/ca1507.md) | Un valore letterale stringa viene usato come argomento in `nameof` cui è possibile usare un'espressione. |
-| [Ca1508: evitare codice condizionale non attivo](../code-quality/ca1508.md) | Un metodo ha codice condizionale che restituisce sempre `true` o `false` in fase di esecuzione. In questo modo viene creato codice non `false` attivo nel ramo della condizione. |
+| [CA1508: Evitare codice di condizione non utilizzato](../code-quality/ca1508.md) | Un metodo ha codice condizionale che restituisce sempre `true` o `false` in fase di esecuzione. In questo modo viene creato codice non `false` attivo nel ramo della condizione. |
+| [CA1509: Voce non valida nel file di configurazione della metrica del codice](../code-quality/ca1509.md) | Le regole della metrica del codice, ad esempio [CA1501](ca1501.md), [CA1502](ca1502.md), [CA1505](ca1505.md) e [CA1506](ca1506.md), hanno fornito un `CodeMetricsConfig.txt` file di configurazione denominato con una voce non valida. |
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Misurazione della complessità e della gestibilità del codice gestito](../code-quality/code-metrics-values.md)

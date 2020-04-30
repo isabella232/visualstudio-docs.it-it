@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 900a241549cd499437ee25d8f57ed66c0c958a17
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851227"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586913"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 ### <a name="create-a-simple-wpf-application"></a>Creare una semplice applicazione WPF
 
-1. Nel menu **FILE** scegliere **Nuovo** e quindi selezionare **Progetto**.
+1. Scegliere **nuovo**dal menu **file** , quindi **progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
 2. Nel riquadro **Installato** espandere **Visual C#** e quindi selezionare **Windows Desktop**.
 
@@ -45,7 +45,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
      Verrà aperto WPF Designer per Visual Studio e la finestra principale del progetto.
 
-8. Aprire la casella degli strumenti, se non è già aperta. Scegliere il menu **VISUALIZZA** e quindi **Casella degli strumenti**.
+8. Aprire la casella degli strumenti, se non è già aperta. Scegliere il menu **Visualizza** , quindi scegliere **casella degli strumenti**.
 
 9. Nella sezione **Tutti i controlli di WPF** trascinare i controlli **Button**, **CheckBox** e **ProgressBar** su MainWindow nell'area di progettazione.
 
@@ -106,7 +106,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 ### <a name="verify-the-wpf-application-runs-correctly"></a>Verificare che l'applicazione WPF venga eseguita correttamente
 
-1. Nel menu **DEBUG** scegliere **Avvia debug** o premere **F5**.
+1. Dal menu **debug** scegliere **Avvia debug** o premere **F5**.
 
 2. Si noti che il controllo CheckBox è disabilitato. Scegliere **Avvia**.
 
@@ -141,7 +141,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 7. Selezionare l'opzione **Registra azioni, modifica mappa dell'interfaccia utente o aggiungi asserzioni** e fare clic su **OK**.
 
-     La finestra UIMap – Generatore di test codificato dell'interfaccia utente viene visualizzata e Visual Studio viene ridotto al minimo.
+     La finestra UIMap – Generatore di test codificato dell'interfaccia utente è visualizzata e Visual Studio è ridotto a icona.
 
      Per altre informazioni sulle opzioni disponibili nella finestra di dialogo, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
@@ -168,7 +168,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 12. Chiudere l'applicazione SimpleWPFApp.
 
-13. In UIMap - Generatore di test codificati dell'interfaccia utente scegliere **Genera codice**.
+13. In UIMap-Generatore di test codificati dell'interfaccia utente scegliere **genera codice**.
 
 14. In Nome metodo digitare **SimpleAppTest** e scegliere **Aggiungi e genera**. Entro pochi secondi il test codificato dell'interfaccia utente verrà visualizzato e aggiunto alla soluzione.
 
@@ -180,7 +180,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 ### <a name="run-the-coded-ui-test"></a>Eseguire il test codificato dell'interfaccia utente
 
-1. Nel menu **TEST** scegliere **Finestre** e quindi **Esplora test**.
+1. Dal menu **test** scegliere **finestre** , quindi scegliere **Esplora test**.
 
 2. Nel menu **COMPILA** scegliere **Compila soluzione**.
 
@@ -190,7 +190,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 ### <a name="edit-and-rerun-the-coded-ui-test"></a>Modificare ed eseguire di nuovo il test codificato dell'interfaccia utente
 
-1. Nella finestra Esplora test selezionare il test non riuscito e quindi nella sezione **StackTrace** scegliere il primo collegamento a **UIMap.SimpleAppTest()** .
+1. Nella finestra Esplora test selezionare il test non riuscito e quindi nella sezione **StackTrace** scegliere il primo collegamento a **UIMap.SimpleAppTest()**.
 
 2. Il file UIMap.Designer.cs verrà aperto con il punto di errore evidenziato nel codice:
 
@@ -219,7 +219,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
      Il metodo di test verrà rimosso dal file UIMap.uitest e non verrà più visualizzato nel riquadro delle azioni dell'interfaccia utente. Per modificare il file di test spostato, aprire il file UIMap.cs da Esplora soluzioni.
 
-9. Sulla barra degli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] scegliere **Salva**.
+9. Sulla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] barra degli strumenti scegliere **Salva**.
 
      Gli aggiornamenti al metodo di test vengono salvati nel file UIMap.Designer.
 
@@ -261,7 +261,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
     ```
 
-14. Scegliere **Compila soluzione** dal menu **Compila**.
+14. Scegliere **Compila soluzione**dal menu **Compila** .
 
 15. Fare clic con il pulsante destro del mouse sul metodo **CodedUITestMethod** e selezionare **Esegui test**.
 
@@ -273,13 +273,13 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 2. Nella parte superiore della finestra Proprietà modificare il valore della proprietà **Name** da button1 a buttonA.
 
-3. Scegliere **Compila soluzione** dal menu **Compila**.
+3. Scegliere **Compila soluzione**dal menu **Compila** .
 
 4. In Esplora test eseguire **CodedUITestMethod1**.
 
      Il test non funziona perché il test codificato dell'interfaccia utente non è in grado di individuare il pulsante mappato in origine come button1 in UIMap. Il refactoring può influire in questo modo sui test codificati dell'interfaccia utente.
 
-5. Nella sezione **StackTrace** della finestra Esplora test scegliere il primo collegamento accanto a **UIMpa.ModifiedSimpleAppTest()** .
+5. Nella sezione **StackTrace** della finestra Esplora test scegliere il primo collegamento accanto a **UIMpa.ModifiedSimpleAppTest()**.
 
      Verrà aperto il file UIMap.cs. Il punto di errore è evidenziato nel codice:
 
@@ -295,7 +295,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 ### <a name="map-refactored-control-and-edit-and-rerun-the-coded-ui-test"></a>Mappare il controllo di cui è stato effettuato il refactoring e modificare ed eseguire di nuovo il test codificato dell'interfaccia utente
 
-1. Nel file CodedUITest1.cs fare clic con il pulsante destro del mouse sul metodo **CodedUITestMethod1()** , scegliere **Genera codice per test codificato dell'interfaccia utente** e quindi fare clic su **Usa il generatore di test codificati dell'interfaccia utente**.
+1. Nel file CodedUITest1.cs fare clic con il pulsante destro del mouse sul metodo **CodedUITestMethod1()**, scegliere **Genera codice per test codificato dell'interfaccia utente** e quindi fare clic su **Usa il generatore di test codificati dell'interfaccia utente**.
 
      Verrà visualizzato UIMap - Generatore di test codificati dell'interfaccia utente.
 
@@ -360,7 +360,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
     ```
 
-13. Scegliere **Compila soluzione** dal menu **Compila**.
+13. Scegliere **Compila soluzione**dal menu **Compila** .
 
 14. In Esplora test eseguire CodedUITestMethod1.
 
@@ -368,7 +368,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="videos"></a>Videos
+### <a name="videos"></a>Video
  ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-Episode1-GettingStarted](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
  ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-episode2-MaintainenceAndDebugging](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
@@ -379,12 +379,12 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
  [Lab virtuale MSDN: Introduzione alla creazione di test codificati dell'interfaccia utente con Visual Studio 2010](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
 ### <a name="faq"></a>Domande frequenti
- [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
+ [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
  [Domande frequenti sui test codificati dell'interfaccia utente - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
  [Test di automazione dell'interfaccia utente di Visual Studio (include CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
  [Usare automazione interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) [Introduzione con le](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [configurazioni e le piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [modifica dei test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
