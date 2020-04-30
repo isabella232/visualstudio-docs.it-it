@@ -107,6 +107,7 @@ f1_keywords:
 - CA1506
 - CA1507
 - CA1508
+- CA1509
 - CA1600
 - CA1601
 - CA1700
@@ -172,6 +173,7 @@ f1_keywords:
 - CA2004
 - CA2006
 - CA2007
+- CA2009
 - CA2100
 - CA2101
 - CA2102
@@ -270,12 +272,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 554de8df2d05d0ae4f248762891dd0cec543e5a9
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 4b4b0929830f825b2c1f7fd568620a3f743308f4
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167384"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586290"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
@@ -283,7 +285,6 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 
 | CheckId | Avviso | Descrizione |
 |---------| - | - |
-| Ca2007 | [CA2007: Non attendere direttamente un'attività](ca2007.md) | Un metodo asincrono [attende](/dotnet/csharp/language-reference/keywords/await) direttamente un <xref:System.Threading.Tasks.Task> oggetto. Quando un metodo asincrono attende direttamente un <xref:System.Threading.Tasks.Task> oggetto, la continuazione viene eseguita nello stesso thread che ha creato l'attività. Questo comportamento può essere oneroso in termini di prestazioni e può causare un deadlock sul thread UI. Prendere in <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> considerazione la chiamata a per segnalare l'intenzione di continuare. |
 | CA1000 | [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000.md) | Quando viene chiamato un membro statico di un tipo generico, è necessario specificare l'argomento di tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. In questi due casi, la sintassi necessaria per specificare l'argomento di tipo è diversa e può generare confusione. |
 | CA1001 | [CA1001: I tipi proprietari di campi Disposable devono essere Disposable](../code-quality/ca1001.md) | Una classe dichiara e implementa un campo di istanza di tipo System.IDisposable e la classe non implementa IDisposable. Una classe che dichiara un campo IDisposable è indirettamente proprietaria di una risorsa non gestita e deve implementare l'interfaccia IDisposable. |
 | CA1002 | [CA1002: Non esporre elenchi generici](../code-quality/ca1002.md) | System. Collections. Generic. list< ( \<of (T>) >) è una raccolta generica progettata per le prestazioni, non per l'ereditarietà. List, pertanto, non contiene membri virtuali. Devono invece essere esposte le raccolte generiche che sono state progettate per l'ereditarietà. |
@@ -383,6 +384,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA1506 | [CA1506: Evitare un numero eccessivo di accoppiamenti tra classi](../code-quality/ca1506.md) | Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo. |
 | Ca1507 | [CA1507: Usare nameof invece della stringa](../code-quality/ca1507.md) | Un valore letterale stringa viene usato come argomento in `nameof` cui è possibile usare un'espressione. |
 | Ca1508 | [CA1508: Evitare codice di condizione non utilizzato](../code-quality/ca1508.md) | Un metodo ha codice condizionale che restituisce sempre `true` o `false` in fase di esecuzione. In questo modo viene creato codice non `false` attivo nel ramo della condizione. |
+| Ca1509 | [CA1509: Voce non valida nel file di configurazione della metrica del codice](../code-quality/ca1509.md) | Le regole della metrica del codice, ad esempio [CA1501](ca1501.md), [CA1502](ca1502.md), [CA1505](ca1505.md) e [CA1506](ca1506.md), hanno fornito un `CodeMetricsConfig.txt` file di configurazione denominato con una voce non valida. |
 | CA1600 | [CA1600: Non impostare la priorità del processo su Inattivo](../code-quality/ca1600.md) | Non impostare la priorità del processo su Inattivo. I processi con System.Diagnostics.ProcessPriorityClass.Idle occupano la CPU, che diversamente sarebbe inattiva, e bloccano quindi la modalità standby. |
 | CA1601 | [CA1601: Non usare i timer che impediscono le modifiche allo stato di potenza](../code-quality/ca1601.md) | Una frequenza maggiore per l'attività periodica occupa la CPU e interferisce con i timer di inattività per il risparmio di energia tramite cui vengono disattivati lo schermo e i dischi rigidi. |
 | CA1700 | [CA1700: Non denominare 'Reserved' i valori di enumerazione](../code-quality/ca1700.md) | Questa regola presuppone che un membro di enumerazione con un nome che contiene la parola "reserved" non sia attualmente utilizzato, ma sia un segnaposto che dovrà essere rinominato o rimosso in una versione futura. La ridenominazione o rimozione di un membro è ritenuta una modifica sostanziale. |
@@ -428,10 +430,10 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA1823 | [CA1823: Evitare campi privati non usati](../code-quality/ca1823.md) | Sono stati rilevati campi privati che non sembrano essere utilizzati all'interno dell'assembly. |
 | CA1824 |[CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | L'attributo NeutralResourcesLanguage informa Gestione risorse della lingua utilizzata per visualizzare le risorse di impostazioni cultura non associate ad alcun paese per un assembly. Tale approccio migliora le prestazioni delle ricerche per la prima risorsa caricata e riduce il working set. |
 | Ca1825 |[CA1825: Evitare allocazioni di matrici di lunghezza zero](../code-quality/ca1825.md) | L'inizializzazione di una matrice di lunghezza zero comporta l'allocazione di memoria non necessaria. Usare invece l'istanza di matrice vuota allocata in modo statico <xref:System.Array.Empty%2A?displayProperty=nameWithType>chiamando. L'allocazione di memoria è condivisa tra tutte le chiamate di questo metodo. |
-| Ca1826 |[Ca1826: utilizzare la proprietà anziché il metodo Enumerable LINQ](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>Il metodo LINQ è stato usato in un tipo che supporta una proprietà equivalente e più efficiente. |
-| Ca1827 |[Ca1827: non usare count/LongCount quando è possibile usare qualsiasi](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>è <xref:System.Linq.Enumerable.LongCount%2A> stato usato il metodo <xref:System.Linq.Enumerable.Any%2A> o dove il metodo risulta più efficiente. |
-| Ca1828 |[Ca1828: non usare CountAsync/LongCountAsync quando è possibile usare AnyAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>è <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> stato usato il metodo <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> o dove il metodo risulta più efficiente. |
-| Ca1829 |[Ca1829: usare la proprietà Length/count anziché il metodo Enumerable. Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Il metodo LINQ è stato usato in un tipo che supporta una proprietà equivalente `Length` , `Count` più efficiente o. |
+| Ca1826 |[CA1826: Usare la proprietà anziché il metodo Enumerable LINQ](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>Il metodo LINQ è stato usato in un tipo che supporta una proprietà equivalente e più efficiente. |
+| Ca1827 |[CA1827: Non usare Count/LongCount se è possibile usare Any](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>è <xref:System.Linq.Enumerable.LongCount%2A> stato usato il metodo <xref:System.Linq.Enumerable.Any%2A> o dove il metodo risulta più efficiente. |
+| Ca1828 |[CA1828: Non usare CountAsync/LongCountAsync se è possibile usare AnyAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>è <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> stato usato il metodo <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> o dove il metodo risulta più efficiente. |
+| Ca1829 |[CA1829: Usare la proprietà Length/Count invece del metodo Enumerable.Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Il metodo LINQ è stato usato in un tipo che supporta una proprietà equivalente `Length` , `Count` più efficiente o. |
 | CA1900 | [CA1900: I campi dei tipi di valore devono essere portabili](../code-quality/ca1900.md) | Questa regola consente di verificare che le strutture dichiarate utilizzando layout esplicito vengano allineate correttamente quando viene eseguito il marshalling a codice non gestito nei sistemi operativi a 64 bit. |
 | CA1901 | [CA1901: le dichiarazioni P/Invoke devono essere portabili](../code-quality/ca1901.md) | La regola valuta la dimensione di ciascun parametro e il valore restituito di P/Invoke e verifica che la dimensione del parametro sia corretta quando viene eseguito il marshalling a codice non gestito in sistemi operativi a 32 e a 64 bit. |
 | CA1903 | [CA1903: Usare solo API della versione di .NET Framework di destinazione](../code-quality/ca1903.md) | Un membro o un tipo sta utilizzando un membro o un tipo introdotto in un service pack non incluso con la versione di .NET Framework di destinazione del progetto. |
@@ -441,6 +443,8 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA2003 |[CA2003: Non considerare i fiber come i thread](../code-quality/ca2003.md) | Un thread gestito viene considerato come thread [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)]. |
 | CA2004 | [CA2004: Rimuovere le chiamate a GC.KeepAlive](../code-quality/ca2004.md) | Se si effettua la conversione all'utilizzo di SafeHandle, rimuovere tutte le chiamate a GC.KeepAlive (oggetto). In questo caso, non è necessario che le classi chiamino GC.KeepAlive. Questo comportamento presuppone che non dispongano di un finalizzatore, ma utilizzino SafeHandle per finalizzare l'handle OS al loro posto. |
 | CA2006 | [CA2006: Usare SafeHandle per incapsulare le risorse native](../code-quality/ca2006.md) | L'utilizzo di IntPtr nel codice gestito potrebbe indicare un potenziale problema di sicurezza e affidabilità. Tutte le occorrenze di IntPtr devono essere esaminate per stabilire se al loro posto è necessario utilizzare SafeHandle o una tecnologia simile. |
+| Ca2007 | [CA2007: Non attendere direttamente un'attività](ca2007.md) | Un metodo asincrono [attende](/dotnet/csharp/language-reference/keywords/await) direttamente un <xref:System.Threading.Tasks.Task> oggetto. Quando un metodo asincrono attende direttamente un <xref:System.Threading.Tasks.Task> oggetto, la continuazione viene eseguita nello stesso thread che ha creato l'attività. Questo comportamento può essere oneroso in termini di prestazioni e può causare un deadlock sul thread UI. Prendere in <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> considerazione la chiamata a per segnalare l'intenzione di continuare. |
+| Ca2009 | [CA2009: Non chiamare ToImmutableCollection su un valore ImmutableCollection](ca2009.md) | `ToImmutable`il metodo è stato chiamato inutilmente su una raccolta non <xref:System.Collections.Immutable> modificabile dallo spazio dei nomi. |
 | CA2100 | [CA2100: Controllare la vulnerabilità della sicurezza nelle query SQL](../code-quality/ca2100.md) | Un metodo imposta la proprietà System.Data.IDbCommand.CommandText usando una stringa compilata da un argomento stringa nel metodo. La regola presuppone che l'argomento stringa contenga l'input dell'utente. Una stringa di comando SQL compilata da un input dell'utente è vulnerabile agli attacchi intrusivi nel codice SQL, |
 | CA2101 |[CA2101: specificare il marshalling per gli argomenti di stringa P/Invoke](../code-quality/ca2101.md) | Un membro di platform invoke consente i chiamanti parzialmente attendibili, presenta un parametro di stringa e non effettua il marshalling della stringa. Questo può comportare una potenziale vulnerabilità di sicurezza. |
 | CA2102 | [CA2102: Individuare le eccezioni non CLSCompliant nei gestori generali](../code-quality/ca2102.md) | In un membro di un assembly che non è contrassegnato utilizzando l'attributo RuntimeCompatibilityAttribute o che è contrassegnato con RuntimeCompatibility(WrapNonExceptionThrows = false) è incluso un blocco catch che gestisce System.Exception e che non contiene un blocco catch generale immediatamente successivo. |

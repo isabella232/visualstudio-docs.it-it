@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b44e921a8e1ba13d3f0786d4633f942f94f3eaaa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851280"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586975"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ uiGridKeyboardInputEdit.Text=value;
 
 #### <a name="testing-silverlight-web-parts"></a>Test delle web part Silverlight
 
-1. Avviare Fiddle.
+1. Avviare Fiddler
 
 2. Cancellare la cache del browser. Questa operazione è necessaria perché il file web.config XAP, contenente la DLL di supporto dell'automazione dell'interfaccia utente di Silverlight, in genere viene memorizzato nella cache. È necessario assicurarsi dell'effettiva selezione del file XAP modificato e pertanto viene rimossa la cache del browser.
 
@@ -137,11 +137,11 @@ uiGridKeyboardInputEdit.Text=value;
 
  [Indice del contenuto per il test codificato dell'interfaccia utente](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
-### <a name="guidance"></a>Informazioni aggiuntive
+### <a name="guidance"></a>Indicazioni
  [capitolo 5 sull'automazione dei test di sistema nell'articolo relativo ai test per il recapito continuo con Visual Studio 2012](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="forum"></a>Forum
- [Blog di Visual Studi ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm/)
+ [Blog di Visual Studi ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
  [Usare l'automazione dell'interfaccia utente per testare le prestazioni Web del codice e i](../test/use-ui-automation-to-test-your-code.md) [test di carico per le applicazioni sharepoint 2010 e 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [creare soluzioni SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Verifica e debug di codice SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [compilazione e debug di soluzioni SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [profilatura delle prestazioni delle applicazioni SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

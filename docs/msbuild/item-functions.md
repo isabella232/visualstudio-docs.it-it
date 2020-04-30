@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633681"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586876"
 ---
 # <a name="item-functions"></a>funzioni Item
 
-Il codice nelle attività e nelle destinazioni può chiamare le funzioni degli elementi per ottenere informazioni sugli elementi nel progetto (in MSBuild 4.0 e versioni successive). Queste funzioni semplificano l'ottenimento di elementi distinti e sono più veloci rispetto a scorrere gli elementi.
+Il codice in attività e destinazioni può chiamare funzioni di elemento per ottenere informazioni sugli elementi del progetto (in MSBuild 4,0 e versioni successive). Queste funzioni semplificano l'ottenimento di elementi distinti e sono più veloci del ciclo tra gli elementi.
 
 ## <a name="string-item-functions"></a>Funzioni degli elementi per i valori stringa
 
@@ -101,6 +101,10 @@ Nell'esempio seguente viene illustrato come usare le funzioni intrinseche degli 
     Reverse: third;second;first
   -->
 ```
+
+## <a name="msbuild-condition-functions"></a>Funzioni di condizione MSBuild
+
+Le funzioni `Exists` e `HasTrailingSlash` non sono funzioni elemento. Sono disponibili per l'uso con l' `Condition` attributo. Vedere [condizioni di MSBuild](msbuild-conditions.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd8717d7e87453c047ce5d438a54c594f63cd5de
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: d7670f05fbeced78a0c77a8ffc053cf6b607708f
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986364"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586890"
 ---
 # <a name="develop-sharepoint-solutions"></a>Sviluppare soluzioni SharePoint
   In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono disponibili diversi modelli di tipi di progetto SharePoint per la creazione di siti ed elementi dei siti SharePoint. Per un elenco dei tipi di progetto disponibili, vedere [modelli di progetto e di elementi di progetto SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Di seguito è riportata una descrizione degli elementi e delle proprietà di un progetto SharePoint.
 
- Per informazioni su SharePoint 2013 e sui componenti aggiuntivi per SharePoint, vedere le pagine relative a [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) e alla [compilazione di componenti aggiuntivi per SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Per informazioni su SharePoint 2013 e sui componenti aggiuntivi per SharePoint, vedere le pagine relative a [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) e alla [compilazione di componenti aggiuntivi per SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 ## <a name="elements-of-a-sharepoint-project"></a>Elementi di un progetto SharePoint
  I nodi di un progetto SharePoint sono noti come *elementi di SharePoint*. Gli elementi di SharePoint possono anche contenere uno o più file correlati, detti *file degli elementi di SharePoint*, ad esempio file di configurazione [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] , form ASPX e così via.
@@ -59,7 +59,7 @@ ms.locfileid: "72986364"
 
  Quando un progetto, un elemento di progetto o un nodo del file dell'elemento di progetto SharePoint viene selezionato in **Esplora soluzioni**, nella finestra Proprietà o nella pagina delle proprietà vengono visualizzate le proprietà seguenti:
 
-### <a name="project-properties"></a>Proprietà di progetti
+### <a name="project-properties"></a>Proprietà progetto
 
 |Nome proprietà|Descrizione|
 |-------------------|-----------------|
@@ -71,10 +71,10 @@ ms.locfileid: "72986364"
 |Includi assembly in pacchetto|Specifica se l'assembly del progetto viene incluso o meno in un pacchetto in fase di compilazione.|
 |Riga di comando post-distribuzione|Specifica i comandi da eseguire dopo avere distribuito la soluzione SharePoint. Questa riga supporta qualsiasi comando batch, nonché la risoluzione delle variabili MSBuild. Per altre informazioni, vedere [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|
 |Riga di comando pre-distribuzione|Specifica i comandi da eseguire prima della distribuzione della soluzione SharePoint. Questa riga supporta qualsiasi comando batch, nonché la risoluzione delle variabili MSBuild. Per altre informazioni, vedere [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|
-|File di progetto|Nome del file contenente le informazioni sul progetto relative alla compilazione, alla configurazione e altro.|
+|File di progetto|Nome del file contenente le informazioni sulla build, la configurazione e altre informazioni sul progetto.|
 |Cartella di progetto|Posizione del file di progetto nel sistema (sola lettura).|
 |Sandboxed Solution|Specifica se il progetto deve essere distribuito come *soluzione in modalità sandbox*, nota anche come *soluzione creata dall'utente*. Le soluzioni in modalità sandbox non sono necessariamente attendibili. Un valore **true** indica che il progetto è distribuito come soluzione in modalità sandbox, mentre un valore **false** indica che il progetto è distribuito come soluzione farm. Per altre informazioni, vedere [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) e [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|
-|URL sito|Specifica l' [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] del sito di destinazione per il progetto.|
+|Site URL|Specifica l' [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] del sito di destinazione per il progetto.|
 |Elemento di avvio|Specifica il primo elemento del progetto da eseguire.|
 
  Quando si seleziona un file di elemento di SharePoint (ad esempio un flusso di lavoro o una funzionalità nel nodo Funzionalità), nella finestra Proprietà vengono visualizzate le proprietà seguenti:
@@ -84,7 +84,7 @@ ms.locfileid: "72986364"
 |Nome proprietà|Descrizione|
 |-------------------|-----------------|
 |Risoluzione dei conflitti di distribuzione|Specifica l'azione da eseguire quando si distribuisce un elemento del progetto le cui proprietà sono identiche a quelle di un elemento già presente nel server. Per altre informazioni, vedere [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).|
-|Proprietà funzionalità|Specifica un set di valori (archiviati come coppie chiave/valore) incluso in una funzionalità al momento della distribuzione in SharePoint. Dopo la distribuzione della funzionalità, è possibile accedere ai valori della proprietà nel codice. Per altre informazioni, vedere [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
+|Proprietà di funzionalità|Specifica un set di valori (archiviati come coppie chiave/valore) incluso in una funzionalità al momento della distribuzione in SharePoint. Dopo la distribuzione della funzionalità, è possibile accedere ai valori della proprietà nel codice. Per altre informazioni, vedere [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
 |Ricevitore di funzionalità|Fornisce il codice eseguito quando si verificano determinati eventi nella funzionalità che contiene un elemento di progetto. Per altre informazioni, vedere [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
 |Nome cartella|Nome della cartella dell'elemento di progetto SharePoint.|
 |Riferimenti all'output del progetto|Specifica una dipendenza, ad esempio un assembly, che l'elemento di progetto deve eseguire. Per altre informazioni, vedere [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
@@ -95,14 +95,14 @@ ms.locfileid: "72986364"
 |Nome proprietà|Descrizione|
 |-------------------|-----------------|
 |Azione di compilazione|Specifica la relazione tra il file e i processi di compilazione e distribuzione. Per altre informazioni, vedere [Proprietà file](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
-|Copia nella directory di output|Specifica se i file di origine verranno copiati nella directory di output. Il valore può essere uno dei seguenti:<br /><br /> -   *non copiare*<br />-   *copia sempre*<br />-   *copia se più recente*<br /><br /> Per altre informazioni, vedere [Proprietà file](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
+|Copia nella directory di output|Specifica se i file di origine verranno copiati nella directory di output. I possibili valori sono i seguenti:<br /><br /> -   *Non copiare*<br />-   *Copia sempre*<br />-   *Copia se più recente*<br /><br /> Per altre informazioni, vedere [Proprietà file](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Strumento personalizzato|Specifica il nome di uno strumento, se presente, che trasforma il file in fase di progettazione e inserisce l'output della trasformazione in un altro file. Ad esempio, un file di set di dati (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) ha uno strumento personalizzato predefinito. Per altre informazioni, vedere [Proprietà file](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Spazio dei nomi dello strumento personalizzato|Spazio dei nomi in cui viene copiato l'output dello strumento personalizzato. Per altre informazioni, vedere [Proprietà file](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Percorso di distribuzione|Percorso completo del file nel server SharePoint. Questo percorso è composto dalle sottoproprietà Radice distribuzione e Percorso distribuzione|
-|Percorso distribuzione|Percorso relativo del file nel file del server SharePoint, ad esempio Workflow1\\. Il percorso completo per il file viene creato concatenando il valore *Deployment Path* alla fine del valore *Deployment Root* .<br /><br /> Se si seleziona il valore *RootFile* per la proprietà *tipo di distribuzione* , la proprietà *radice distribuzione* viene modificata in \<SharePointRoot >\\, ottenendo un percorso completo di \<SharePointRoot > \Workflow1 @no_ _t_6_ . Per ulteriori informazioni, vedere Creazione di [pacchetti e distribuzione di soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
-|Deployment Root|Stringa. Cartella radice in cui viene distribuito il file nel server SharePoint. Ad esempio, \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> Il valore della proprietà *Deployment Root* è determinato dall'impostazione di *Deployment Type* .|
-|Tipo distribuzione|Tipo di distribuzione del file, che determina il valore di *Deployment Root* . Il valore può essere uno dei seguenti:<br /><br /> NoDeployment: *\<nessun valore >*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\Features\\\<featurename >* \\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<featurename >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Per ulteriori informazioni, vedere <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
-|Nome file|Nome del file o della cartella per il file dell'elemento.|
+|Percorso distribuzione|Percorso relativo del file nel file del server SharePoint, ad esempio Workflow1\\. Il percorso completo per il file viene creato concatenando il valore *Deployment Path* alla fine del valore *Deployment Root* .<br /><br /> Se si seleziona il valore *RootFile* per la proprietà *tipo di distribuzione* , la proprietà *radice distribuzione* viene modificata in \<SharePointRoot>\\, ottenendo un percorso completo \<di SharePointRoot>\\\workflow1. Per ulteriori informazioni, vedere Creazione di [pacchetti e distribuzione di soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
+|Deployment Root|Stringa. Cartella radice in cui viene distribuito il file nel server SharePoint. Ad esempio, \<SharePointRoot> \Template\Features\\\<FeatureName>\\.<br /><br /> Il valore della proprietà *Deployment Root* è determinato dall'impostazione di *Deployment Type* .|
+|Tipo di distribuzione|Tipo di distribuzione del file, che determina il valore di *Deployment Root* . I possibili valori sono i seguenti:<br /><br /> NoDeployment: * \<nessun valore>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features\\\<FeatureName>*\\<br /><br /> ElementFile: * \<SharePointRoot> \Template\Features\\\<FeatureName>\\*<br /><br /> TemplateFile: * \<SharePointRoot> \Template\\*<br /><br /> RootFile: * \<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources\\*<br /><br /> ClassResource: * \<ClassResourcePath>\\*<br /><br /> Per altre informazioni, vedere <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|File Name|Nome del file o della cartella per il file dell'elemento.|
 |Percorso completo|Percorso del file per l'elemento (sola lettura).|
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -120,16 +120,16 @@ ms.locfileid: "72986364"
 |[Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Descrive come integrare dati dei servizi Web e delle applicazioni server di back-end in un'applicazione di SharePoint.|
 |[Creare definizioni di sito per SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md)|Descrive come creare definizioni di sito, ovvero modelli usati per creare i siti SharePoint.|
 |[Importazione di elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Descrive come importare elementi, come moduli e tipi di contenuto, da un sito SharePoint esistente in un progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
-|[Uso di moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Descrive come usare i moduli per la distribuzione di file dal progetto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] al sito SharePoint.|
+|[Utilizzo di moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Descrive come usare i moduli per la distribuzione di file dal progetto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] al sito SharePoint.|
 |[Esplorazione delle connessioni di SharePoint tramite Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Descrive come trovare siti SharePoint locali tramite Esplora Server.|
 |[Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Descrive come usare le proprietà dell'elemento di progetto per fornire informazioni sulla creazione di pacchetti e sulla distribuzione per i progetti, ad esempio voci di controllo sicure, riferimenti all'output del progetto e proprietà delle funzionalità.|
 |[Procedura: aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Descrive in che modo le cartelle mappate possono essere aggiunte al progetto per semplificare l'accesso alle risorse di SharePoint.|
 |[Considerazioni sulla soluzione sandbox](../sharepoint/sandboxed-solution-considerations.md)|Descrive i problemi associati alle soluzioni in modalità sandbox.|
 |[Sicurezza per le soluzioni SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Descrive le considerazioni sulla sicurezza relative allo sviluppo di soluzioni SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Finestra di dialogo selezione &#40;URL sviluppo per SharePoint in Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Descrive una finestra di dialogo che è possibile usare per aggiungere riferimenti di percorso alle risorse nel progetto o nel server SharePoint locale.|
+|[Finestra di dialogo selezione URL &#40;lo sviluppo di SharePoint in Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Descrive una finestra di dialogo che è possibile usare per aggiungere riferimenti di percorso alle risorse nel progetto o nel server SharePoint locale.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Introduzione &#40;allo sviluppo per SharePoint in Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
+- [Introduzione &#40;sviluppo per SharePoint in Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [Esplorazione delle connessioni di SharePoint tramite Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5952a65881a84ab131703db630f5f3b257683e45
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4db3506ca21289c8ffda8582337cd8027a261438
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852174"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586366"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,20 +122,20 @@ In Visual Studio è possibile usare un modello che consenta di comprendere e mod
 
 |Livello di progettazione|Tipi di diagramma|
 |------------------|-------------------|
-|Processo di business<br /><br /> Le informazioni sul contesto in cui verrà usato il sistema consentono di comprendere quali sono le esigenze degli utenti.|-I diagrammi di attività descrivono il flusso di lavoro tra gli utenti e i sistemi per raggiungere gli obiettivi aziendali.<br />-I diagrammi classi concettuali descrivono i concetti aziendali utilizzati all'interno del processo di business.|
+|Processo aziendale<br /><br /> Le informazioni sul contesto in cui verrà usato il sistema consentono di comprendere quali sono le esigenze degli utenti.|-I diagrammi di attività descrivono il flusso di lavoro tra gli utenti e i sistemi per raggiungere gli obiettivi aziendali.<br />-I diagrammi classi concettuali descrivono i concetti aziendali utilizzati all'interno del processo di business.|
 |Requisiti utente<br /><br /> La definizione di ciò che gli utenti richiedono al sistema.|-I diagrammi caso di utilizzo riepilogano le interazioni tra gli utenti e altri sistemi esterni con il sistema che si sta sviluppando. È possibile associare altri documenti per ogni caso di utilizzo per descriverlo in dettaglio.<br />-I diagrammi classi UML descrivono i tipi di informazioni comunicate dagli utenti e dal sistema.<br />-Le regole di business e i requisiti di qualità del servizio possono essere descritti in documenti distinti.|
 |Progettazione ad alto livello<br /><br /> La struttura generale del sistema: i componenti principali e la modalità con cui vengono accoppiati.|-I diagrammi livello descrivono il modo in cui il sistema viene strutturato in parti interdipendenti. È possibile convalidare il codice di programma con i diagrammi livello per assicurarsi che sia conforme all'architettura.<br />-I diagrammi dei componenti mostrano le interfacce delle parti, specificando i messaggi e i servizi forniti e richiesti da ogni componente.<br />-I diagrammi di sequenza mostrano come i componenti comunicano per implementare ogni caso d'uso.<br />-I diagrammi classi UML descrivono le interfacce dei componenti e i tipi di dati passati tra i componenti.|
-|Schemi progettuali<br /><br /> Convenzioni e metodi di risoluzione dei problemi di progettazione che vengono usati in tutte le parti della progettazione|-I diagrammi classi UML descrivono le strutture di un modello<br />-I diagrammi di sequenza o di attività mostrano le interazioni e gli algoritmi|
+|Modelli di progettazione<br /><br /> Convenzioni e metodi di risoluzione dei problemi di progettazione che vengono usati in tutte le parti della progettazione|-I diagrammi classi UML descrivono le strutture di un modello<br />-I diagrammi di sequenza o di attività mostrano le interazioni e gli algoritmi|
 |Analisi codice<br /><br /> Diversi tipi di diagramma possono essere generati dal codice.|-I diagrammi di sequenza mostrano l'interazione tra gli oggetti nel codice.<br />-I diagrammi livello mostrano le dipendenze tra le classi. Il codice aggiornato può essere convalidato in base a un diagramma livello.<br />-I diagrammi classi mostrano le classi nel codice.|
 
 ## <a name="external-resources"></a>Risorse esterne
 
-|**Categoria**|**Links**|
+|**Categoria**|**Collegamenti**|
 |------------------|---------------|
 |**Video**|![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") video sulle procedure per I video su [MSDN: come creare e usare I modelli e I diagrammi UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/gg418384)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio 2010](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-1-Brainstorming-a-Project/)<br /><br /> ![collegamento a video sulle serie di informazioni su](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: strumenti ed estendibilità UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/ff859492)|
 |**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Documentazione Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
  [Usare i modelli nello sviluppo agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [creare modelli per i](../modeling/create-models-for-your-app.md) [requisiti degli utenti del modello](../modeling/model-user-requirements.md) di app [modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md) [sviluppare test da una](../modeling/develop-tests-from-a-model.md) [struttura di modello la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)
