@@ -47,7 +47,7 @@ Dopo aver acquistato una sottoscrizione di Visual Studio tramite il Microsoft St
 ## <a name="support-for-microsoft-store"></a>Supporto per Microsoft Store
 Per eventuali domande sull'acquisto tramite il Microsoft Store, è disponibile la guida.  Contattare il [supporto Microsoft Store](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
