@@ -11,15 +11,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf8bc1205658899a51cf1a50e83a9a8b34034b25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594318"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedura: Visualizzare il tempo di risposta delle pagine Web in un test di carico usando l'Analizzatore test di carico
 
-Il tempo richiesto per il caricamento di ogni pagina web è definito *tempo di risposta*. Quando si crea un test web, è possibile impostare un tempo di risposta obiettivo per ogni richiesta di pagina web nel test web.
+Il tempo necessario per il caricamento di ogni pagina Web è noto come *tempo di risposta*. Quando si crea un test web, è possibile impostare un tempo di risposta obiettivo per ogni richiesta di pagina web nel test web.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -29,7 +29,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 - La percentuale di iterazioni test che soddisfano il tempo di risposta obiettivo per la pagina.
 
-- È possibile analizzare i tempi di risposta della pagina Web usando la visualizzazione Tabelle o la visualizzazione Grafici nell'**Analizzatore test di carico**:
+- È possibile analizzare i tempi di risposta delle pagine Web usando la visualizzazione tabelle o la visualizzazione grafici nell' **analizzatore test di carico**:
 
 - Analisi dei tempi di risposta della pagina web nella visualizzazione Tabelle
 
@@ -43,9 +43,9 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 3. I dati per ogni pagina vengono visualizzati nella griglia. Solitamente vengono visualizzate le colonne seguenti.
 
-   |Intestazione colonna|Descrizione|
+   |Intestazione colonna|Description|
    |-|-|
-   |**Page**|Nome della pagina Web.|
+   |**Pagina**|Nome della pagina Web.|
    |**Scenario**|Nome dello scenario. Importante se il test Web include più di uno scenario.|
    |**Test**|Nome del test delle prestazioni web. Importante se il test di carico include più di un test delle prestazioni web.|
    |**Network**|Tipo di rete.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
@@ -59,10 +59,10 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
    |**Max**|Tempo di risposta massimo della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
    |**Deviazione standard**|Per impostazione predefinita, i dati della deviazione standard non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
    |**Tempo di risposta pagina**|Tempo di risposta medio per tutte le richieste effettuate per la pagina Web.|
-   |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:** il tempo pagina obiettivo viene visualizzato solo quando nel test delle prestazioni web è stato definito l'obiettivo per la richiesta.|
+   |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:**  Il tempo pagina obiettivo viene visualizzato solo quando è stato definito l'obiettivo per la richiesta nel test delle prestazioni Web.|
    |**% corrispondenza a obiettivo**|Percentuale delle richieste effettuate per la pagina web che soddisfano il tempo di risposta obiettivo.|
 
-   Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+   Per ulteriori informazioni, vedere [analizzare i risultati e gli errori dei test di carico nella visualizzazione tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-response-time-data-in-a-graph"></a>Visualizzare i dati sul tempo di risposta in un grafico
 
@@ -70,7 +70,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 Per visualizzare i dati sul tempo di risposta in un grafico:
 
-1. Nell'**Analizzatore test di carico** scegliere **Grafici** nella barra degli strumenti per assicurarsi che venga visualizzato il grafico.
+1. Nell' **analizzatore test di carico**scegliere **grafici** sulla barra degli strumenti per assicurarsi che venga visualizzato il grafico.
 
 2. Nella finestra **Contatori** espandere il nodo dello scenario desiderato, ad esempio `Scenario1`.
 
@@ -89,10 +89,10 @@ Per visualizzare i dati sul tempo di risposta in un grafico:
    > [!NOTE]
    > Il valore **Page Response Time Goal** è costante.
 
-   Per altre informazioni, vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
+   Per altre informazioni, vedere [analizzare i risultati dei test di carico nella visualizzazione grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)
+- [Procedura: accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
