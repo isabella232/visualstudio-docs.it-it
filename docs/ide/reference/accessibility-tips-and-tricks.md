@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68919529"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Suggerimenti sull'accessibilità per Visual Studio
@@ -29,13 +29,13 @@ Viene illustrato anche come usare le annotazioni per rivelare informazioni utili
 
 ## <a name="save-your-ide-settings"></a>Salvare le impostazioni IDE
 
-È possibile personalizzare l'esperienza IDE salvando il layout delle finestre, lo schema di mappatura della tastiera e altre preferenze. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+È possibile personalizzare l'esperienza IDE salvando il layout delle finestre, lo schema di mappatura della tastiera e altre preferenze. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="modify-your-ide-for-high-contrast-viewing"></a>Modificare l'IDE per la visualizzazione a contrasto elevato
 
 Per alcuni, alcuni colori sono più difficili da vedere. Se si vuole aumentare il contrasto durante la compilazione, ma non si vuole usare i temi tipici a "Contrasto elevato", Microsoft offre il tema "Blu (massimo contrasto)".
 
-  ![Confrontare il tema blu e il tema blu a massimo contrasto](media/blue-extra-contrast-theme.png "Screenshot che mostra un confronto tra il tema blu e il tema blu a massimo contrasto")
+  ![Confronto tra il tema Blu e il tema Blu (massimo contrasto)](media/blue-extra-contrast-theme.png "Screenshot che mostra un confronto tra il tema blu e il tema di contrasto extra blu")
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Usare le annotazioni per rivelare informazioni utili sul proprio codice
 
@@ -47,27 +47,27 @@ L'editor di Visual Studio comprende molte "aree di controllo" del testo che cons
 
 Come molte finestre degli strumenti, l'IDE di Visual Studio include alcune barre degli strumenti. I seguenti tasti di scelta rapida consentono di accedervi.
 
-|Funzionalità|DESCRIZIONE|Tasto di scelta rapida|
+|Funzionalità|Descrizione|Tasti di scelta rapida|
 |-------------|-----------------| - |
-|Barre degli strumenti dell'IDE|Consente di selezionare il primo pulsante della barra degli strumenti Standard.|**ALT**, **CTRL**+**TAB**|
+|Barre degli strumenti dell'IDE|Consente di selezionare il primo pulsante della barra degli strumenti Standard.|**ALT**, **Ctrl**+**scheda** CTRL|
 |Barre degli strumenti della finestra degli strumenti|Consentono di spostare lo stato attivo nelle barre degli strumenti in una finestra degli strumenti. <br> <br> **NOTA:** questo procedimento funziona per la maggior parte delle finestre degli strumenti, ma solo quando lo stato attivo è in una finestra degli strumenti. È anche necessario scegliere MAIUSC prima di ALT. In alcune finestre degli strumenti, ad esempio Team Explorer, è necessario tenere premuto MAIUSC per qualche istante prima di scegliere ALT.|**MAIUSC**+**ALT**|
-|Barre degli strumenti|Consente di passare al primo elemento nella barra degli strumenti successiva (quando una barra degli strumenti ha lo stato attivo).|**CTRL**+**TAB**|
+|Barre degli strumenti|Consente di passare al primo elemento nella barra degli strumenti successiva (quando una barra degli strumenti ha lo stato attivo).|**CTRL**+**Tab**|
 
 ### <a name="other-useful-keyboard-shortcuts"></a>Altri tasti di scelta rapida utili
 
 Di seguito sono riportate altri tasti di scelta rapida utili.
 
-|Funzionalità|DESCRIZIONE|Tasto di scelta rapida|
+|Funzionalità|Descrizione|Tasti di scelta rapida|
 |-------------|-----------------| - |
-|IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **NOTA:** tasto di scelta rapida standard di Windows|**ALT di sinistra**+**MAIUSC di sinistra**+**STAMP**|
-|Finestra di dialogo|Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo. <br> <br> **NOTA:** tasto di scelta rapida standard di Windows|**BARRA SPAZIATRICE**|
-|Menu di scelta rapida|Consentono di aprire un menu di scelta rapida (clic con il pulsante destro del mouse). <br> <br> **NOTA:** tasto di scelta rapida standard di Windows|**MAIUSC**+**F10**|
-|Menu|Consente di accedere rapidamente a una voce di menu con i rispettivi tasti di scelta rapida. Premere **ALT** seguito dalle lettere sottolineate in un menu per attivare il comando. Ad esempio, per visualizzare la finestra di dialogo Apri progetto in Visual Studio premere **ALT**+**F**+**O**+**P**.  <br><br> **NOTA:** tasto di scelta rapida standard di Windows|**ALT** +  **[lettera]**|
-|Casella di ricerca|Usare la funzionalità di ricerca in Visual Studio.|**CTRL**+**Q**|
-|Finestra della casella degli strumenti|Consente di passare da una scheda all'altra della casella degli strumenti.|**CTRL**+**Freccia SU**<br /><br /> e<br /><br /> **CTRL**+**Freccia GIÙ**|
-|Finestra della casella degli strumenti|Consente di aggiungere un controllo della casella degli strumenti a un form o finestra di progettazione.|**INVIO**|
-|Finestra di dialogo Opzioni: Ambiente > Tastiera|Consente di eliminare una combinazione di tasti immessa nell'opzione **Premi tasti di scelta rapida**.|**Backspace**|
-|Finestra degli strumenti Notifiche|Aprire la finestra degli strumenti Notifiche usando due combinazioni di tasti di scelta rapida, una dopo l'altra. Quindi, visualizzare una notifica usando i tasti di direzione per selezionarla.| **CTRL**+ **&#92;** , **CTRL**+**N**|
+|IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **Nota:** Tasti di scelta rapida standard di Windows|**Left ALT**+**Left Shift**+**Stamp**|
+|Finestra di dialogo|Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo. <br> <br> **Nota:** Tasti di scelta rapida standard di Windows|**BARRA SPAZIATRICE**|
+|Menu di scelta rapida|Consentono di aprire un menu di scelta rapida (clic con il pulsante destro del mouse). <br> <br> **Nota:** Tasti di scelta rapida standard di Windows|**MAIUSC**+**F10**|
+|Menu|Consente di accedere rapidamente a una voce di menu con i rispettivi tasti di scelta rapida. Premere il tasto **ALT** seguito dalle lettere sottolineate in un menu per attivare il comando. Ad esempio, per visualizzare la finestra di dialogo Apri progetto in Visual Studio, è possibile scegliere **ALT**+**F**+**O**+**P**.  <br><br> **Nota:** Tasti di scelta rapida standard di Windows|**Alt** + **[lettera]**|
+|Casella Cerca|Usare la funzionalità di ricerca in Visual Studio.|**CTRL**+**Q**|
+|Finestra della casella degli strumenti|Consente di passare da una scheda all'altra della casella degli strumenti.|**CTRL**+**freccia su**<br /><br /> e<br /><br /> **CTRL**+**freccia giù**|
+|Finestra della casella degli strumenti|Consente di aggiungere un controllo della casella degli strumenti a un form o finestra di progettazione.|**Entrare**|
+|Finestra di dialogo Opzioni: ambiente > tastiera|Consente di eliminare una combinazione di tasti immessa nell'opzione **Premi tasti di scelta rapida**.|**BACKSPACE**|
+|Finestra degli strumenti Notifiche|Aprire la finestra degli strumenti Notifiche usando due combinazioni di tasti di scelta rapida, una dopo l'altra. Quindi, visualizzare una notifica usando i tasti di direzione per selezionarla.| **CTRL** + **&#92;**, **CTRL**+**N**|
 
 > [!NOTE]
 > Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso.
@@ -76,11 +76,11 @@ Di seguito sono riportate altri tasti di scelta rapida utili.
 
 Di seguito viene illustrato come accedere alla finestra notifiche tramite tasti di scelta rapida quando viene visualizzata una notifica nell'IDE:
 
-1. Da qualsiasi punto dell'IDE, premere i due tasti di scelta rapida seguenti in sequenza, uno dopo l'altro: **CTRL**+ **&#92;** e quindi **CTRL**+**N**.
+1. Da qualsiasi punto dell'IDE, premere i due tasti di scelta rapida seguenti in sequenza, uno dopo l'altro: **CTRL** + **&#92;** e quindi **CTRL**+**N**.
 
    Verrà visualizzata la finestra **Notifiche**.
 
-   ![Finestra degli strumenti Notifiche nell'IDE di Visual Studio](media/toast-notification.png "Screenshot della finestra Notifiche nell'IDE di Visual Studio")
+   ![Finestra degli strumenti notifiche nell'IDE di Visual Studio](media/toast-notification.png "Screenshot della finestra notifiche nell'IDE di Visual Studio")
 
 1. Usare il tasto **TAB** o i tasti di direzione per selezionare una notifica.
 
@@ -103,7 +103,7 @@ Ecco come:
 
 1. Fare doppio clic su **Cambia segnali acustici emessi dal sistema**.
 
-   ![Risultati della ricerca in Windows 10](media/change-system-sounds.png "Screenshot dei risultati della ricerca 'Cambia segnali acustici emessi dal sistema' in Windows 10")
+   ![Risultati della ricerca in Windows 10](media/change-system-sounds.png "Screenshot dei risultati della ricerca di ' modifica suoni del sistema ' in Windows 10")
 
 1. Nella finestra di dialogo **Suono**, fare clic sulla scheda **Suoni**.
 
@@ -123,7 +123,7 @@ Ecco come:
 ## <a name="see-also"></a>Vedere anche
 
 * [Funzionalità di accessibilità di Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-* [Procedura: Personalizzare menu e barre degli strumenti in Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [Procedura: personalizzare menu e barre degli strumenti in Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 * [Accessibilità (Visual Studio per Mac)](/visualstudio/mac/accessibility)
 * [Accessibilità Microsoft](https://www.microsoft.com/Accessibility)
