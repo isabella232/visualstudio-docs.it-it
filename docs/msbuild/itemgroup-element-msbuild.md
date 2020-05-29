@@ -18,18 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633642"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173512"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
-Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Ogni elemento utilizzato in un progetto MSBuild deve `ItemGroup` essere specificato come figlio di un elemento.
+Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Ogni elemento usato in un progetto MSBuild deve essere specificato come figlio di un `ItemGroup` elemento.
 
-\<Project> \<ItemGroup>
+\<Project>
+\<ItemGroup>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +46,7 @@ Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti 
 
 Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -56,7 +57,7 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemGroup`.|
+|[Item](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemGroup`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -86,8 +87,12 @@ L'esempio di codice seguente illustra le raccolte di elementi definite dall'uten
 </Project>
 ```
 
+In un file di progetto semplice, in genere si usa un singolo `ItemGroup` elemento, ma è anche possibile usare più `ItemGroup` elementi. Quando `ItemGroup` vengono usati più elementi, gli elementi vengono combinati in un unico oggetto `ItemGroup` . Alcuni elementi, ad esempio, possono essere inclusi in un `ItemGroup` elemento separato definito in un file importato.
+
+Per ItemGroup è possibile applicare condizioni usando l' `Condition` attributo. In tal caso, gli elementi vengono aggiunti all'elenco di elementi solo se la condizione è soddisfatta. Vedere [le condizioni di MSBuild](msbuild-conditions.md)
+
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)
+- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementi](../msbuild/msbuild-items.md)
-- [Elementi di progetto MSBuild comuniCommon MSBuild project items](../msbuild/common-msbuild-project-items.md)
+- [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)
