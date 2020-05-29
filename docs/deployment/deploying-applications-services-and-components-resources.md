@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79302000"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173727"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Panoramica della distribuzione in Visual Studio
 
@@ -26,26 +26,26 @@ Mediante la distribuzione, un'applicazione, un servizio o un componente viene di
 
 Per molti tipi comuni di app, è possibile distribuire l'applicazione direttamente da Esplora soluzioni in Visual Studio. Per una panoramica di questa funzionalità, vedere [Presentazione della distribuzione](../deployment/deploying-applications-services-and-components.md).
 
-![Scegliere un'opzione di pubblicazione](../deployment/media/quickstart-publish-azure.png)
+![Scegliere un'opzione di pubblicazione](../deployment/media/quickstart-publish-dialog.png)
 
 ## <a name="what-publishing-options-are-right-for-me"></a>Quali sono le opzioni di pubblicazione più adatte?
 
 Dall'interno di Visual Studio è possibile pubblicare le applicazioni direttamente nelle destinazioni seguenti:
 
-- [Servizio app di Azure](#azure-app-service)
-- [Macchine virtuali di Azure](#azure-virtual-machines)
-- [File system](#file-system)
-- [Destinazioni personalizzate (IIS, FTP e così via) ](#custom-targets-iis-ftp), inclusi tutti i server Web arbitrari.
+- [Azure](#azure)
+- [Container Registry Docker](#docker-container-registry)
+- [Cartella](#folder)
+- [Destinazioni personalizzate (IIS, FTP)](#Custom targets (IIS, FTP))
 
 Nella scheda **Pubblica** è possibile selezionare un profilo di pubblicazione esistente, importare un profilo esistente o crearne uno nuovo usando le opzioni descritte di seguito. Per una panoramica delle opzioni di pubblicazione nell'IDE per diversi tipi di app, vedere [Presentazione della distribuzione](../deployment/deploying-applications-services-and-components.md).
 
-## <a name="azure-app-service"></a>Servizio app di Azure
+## <a name="azure"></a>Azure 
 
-Il [Servizio app di Azure](/azure/app-service/app-service-web-overview) e il [Servizio app in Linux](/azure/app-service/containers/app-service-linux-intro) consentono agli sviluppatori di creare rapidamente un'ampia gamma di servizi e applicazioni Web scalabili senza gestione dell'infrastruttura.
+### <a name="azure-app-service"></a>Servizio app di Azure
+
+[App Azure servizio](/azure/app-service/app-service-web-overview) che consente agli sviluppatori di creare rapidamente servizi e applicazioni Web scalabili senza gestire l'infrastruttura. Un servizio app viene eseguito nelle macchine virtuali ospitate nel cloud di Azure, ma tali macchine vengono gestite automaticamente. A ogni app di un servizio app viene assegnato un URL \*.azurewebsites.net univoco. Tutti i piani tariffari diversi da quello gratuito consentono l'assegnazione di nomi di dominio personalizzati al sito.
 
 Per determinare la potenza di calcolo di un servizio app, scegliere un [piano tariffario](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) per il servizio app che lo contiene. È possibile fare in modo che più app Web (e altri tipi di app) condividano lo stesso servizio app senza modificare il piano tariffario. È ad esempio possibile ospitare insieme app Web di sviluppo, gestione temporanea e produzione nello stesso servizio app.
-
-Un servizio app viene eseguito nelle macchine virtuali ospitate nel cloud di Azure, ma tali macchine vengono gestite automaticamente. A ogni app di un servizio app viene assegnato un URL \*.azurewebsites.net univoco. Tutti i piani tariffari diversi da quello gratuito consentono l'assegnazione di nomi di dominio personalizzati al sito.
 
 ### <a name="when-to-choose-azure-app-service"></a>Quando scegliere Servizio App di Azure
 
@@ -58,7 +58,7 @@ Un servizio app viene eseguito nelle macchine virtuali ospitate nel cloud di Azu
 
 Per altre informazioni sulla pubblicazione nel Servizio app, vedere [Guida introduttiva: pubblicare nel Servizio app di Azure](quickstart-deploy-to-azure.md) e [Guida introduttiva: pubblicare ASP.NET Core in Linux](quickstart-deploy-to-linux.md).
 
-## <a name="azure-virtual-machines"></a>Macchine virtuali di Azure
+### <a name="azure-virtual-machines"></a>Macchine virtuali di Azure
 
 Le [macchine virtuali (VM) di Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) consentono di creare e gestire qualsiasi numero di risorse di elaborazione nel cloud. Assumendosi la responsabilità per tutto il software e tutti gli aggiornamenti nelle macchine virtuali, è possibile personalizzare queste ultime in base alle esigenze dell'applicazione. È possibile accedere alle macchine virtuali direttamente con Desktop remoto e ognuna di esse manterrà l'indirizzo IP assegnato finché lo si ritiene opportuno.
 
@@ -75,11 +75,19 @@ Per altre informazioni, vedere il [confronto dettagliato](https://azure.microsof
 
 > Per usare le macchine virtuali di Azure nel proprio centro dati o in altri computer locali, usare [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-## <a name="file-system"></a>File system
+## <a name="docker-container-registry"></a>Container Registry Docker
+
+Se l'applicazione usa Docker, è possibile pubblicare l'applicazione in contenitori in un Container Registry docker.
+
+### <a name="when-to-choose-docker-container-registry"></a>Quando scegliere Docker Container Registry
+
+- Si vuole distribuire un'applicazione in contenitori
+
+## <a name="folder"></a>Cartella
 
 Effettuare la distribuzione nel file system significa semplicemente copiare i file dell'applicazione in una cartella specifica del proprio computer. Questo sistema viene spesso usato a scopo di test o per distribuire l'applicazione per l'uso da parte di un numero limitato di persone, se il computer esegue anche un server. Se la cartella di destinazione è condivisa in rete, la distribuzione nel file system può rendere disponibili i file dell'applicazione Web per altri utenti che possono distribuirli a loro volta a server specifici.
 
-Qualsiasi computer locale che esegue un server è in grado di rendere l'applicazione disponibile su Internet o Intranet, in base al tipo di configurazione e alle reti a cui è connesso. (Se si connette un computer direttamente a Internet, prestare particolare attenzione a proteggerlo da minacce alla sicurezza esterne.) Poiché gestisci queste macchine, hai il controllo completo delle configurazioni software e hardware.
+Qualsiasi computer locale che esegue un server è in grado di rendere l'applicazione disponibile su Internet o Intranet, in base al tipo di configurazione e alle reti a cui è connesso. Se si connette un computer direttamente a Internet, prestare particolare attenzione a proteggerlo dalle minacce alla sicurezza esterna. Poiché si gestiscono questi computer, si ha il controllo completo delle configurazioni software e hardware.
 
 Si noti che se per qualsiasi motivo (ad esempio, l'accesso al computer) non si è in grado di usare servizi cloud come Servizio app di Azure o Macchine virtuali di Azure, è possibile usare [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) nel proprio centro dati. Azure Stack consente di gestire e usare le risorse di elaborazione con Servizio app di Azure e Macchine virtuali di Azure, mantenendo tutti gli elementi in locale.
 
@@ -116,9 +124,9 @@ Per altre informazioni, vedere [Guida introduttiva: distribuire in un sito Web](
 
 Esercitazioni:
 
-- [Distribuire un'applicazione .NET Core con lo strumento di pubblicazioneDeploy a .NET Core application with the publish tool](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Distribuire un'applicazione .NET Core con lo strumento di pubblicazione](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Pubblicare un'app ASP.NET Core in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Distribuzione in Visual C](/cpp/windows/deployment-in-visual-cpp)
+- [Distribuzione in Visual C++](/cpp/windows/deployment-in-visual-cpp)
 - [Distribuire app per la piattaforma UWP](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Pubblicare un'app Node.js in Azure con Distribuzione Web](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Pubblicare un'app Python in Servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

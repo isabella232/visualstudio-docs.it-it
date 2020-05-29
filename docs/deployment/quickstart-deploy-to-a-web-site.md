@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71127938"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173689"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Eseguire la pubblicazione un'app Web in un sito Web usando Visual Studio
 
@@ -24,37 +24,33 @@ ms.locfileid: "71127938"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Se è necessario pubblicare un'applicazione desktop di Windows in una condivisione file di rete, vedere [Distribuire un'applicazione desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Per il linguaggio C, vedere [Distribuire un'app nativa tramite ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) o, per C/C, vedere [Distribuire un'app nativa usando un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Se è necessario pubblicare un'applicazione desktop di Windows in una condivisione file di rete, vedere [Distribuire un'applicazione desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Per C++/CLR, vedere [Distribuire un'app nativa tramite ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) oppure per C/C++, vedere [Distribuire un'app nativa tramite un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-a-web-site"></a>Eseguire la pubblicazione in un sito Web
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** o usare la voce di menu **Compila** > **Pubblica**.
 
-    ![Comando Pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "Scegliere Pubblica")
+    ![Il comando pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "Scegliere Pubblica")
 
 1. Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Selezionare **Crea nuovo profilo**.
 
-1. Nella finestra di dialogo **Selezionare una destinazione di pubblicazione** scegliere **IIS, FTP e così via**.
+1. Nella finestra di dialogo **pubblica** scegliere **server Web (IIS)**.
 
-    ![Scegliere IIS, FTP e così via.](../deployment/media/quickstart-publish-iis-ftp.png "Scegliere IIS, FTP e così via.")
+    ![Scegliere la destinazione di pubblicazione](../deployment/media/quickstart-publish-iis.png "Scegliere IIS, FTP e così via.")
 
-1. Selezionare **Pubblica**. Viene visualizzata la finestra di dialogo delle impostazioni di pubblicazione del profilo.
+1. Scegliere **distribuzione Web** come metodo di distribuzione. La funzionalità Distribuzione Web semplifica la distribuzione di applicazioni Web e siti Web ai server IIS e deve essere installata come applicazione nel server. Usare la [Installazione guidata piattaforma Web](https://www.microsoft.com/web/downloads/platform.aspx) per installarla.
 
-    ![Scegli cartella](../deployment/media/quickstart-publish-settings-web.png "Scegli cartella")
+    ![Scegliere il metodo di distribuzione](../deployment/media/quickstart-publish-iis-web-deploy.png "Scegliere IIS, FTP e così via.")
 
-1. Nel campo **Metodo di pubblicazione** scegliere un metodo, ad esempio **Distribuzione Web** oppure **FTP**. Le impostazioni visualizzate corrispondono al metodo di pubblicazione. La funzionalità Distribuzione Web semplifica la distribuzione di applicazioni Web e siti Web ai server IIS e deve essere installata come applicazione nel server. Usare la [Installazione guidata piattaforma Web](https://www.microsoft.com/web/downloads/platform.aspx) per installarla.
+1. Configurare le impostazioni necessarie per il metodo Publish e selezionare **Finish (fine**). 
 
-1. Configurare le impostazioni necessarie per il metodo di pubblicazione e selezionare **Convalida connessione**. Se il server o la destinazione è disponibile e le impostazioni sono corrette, un messaggio avvisa che la connessione è stata convalidata e si può pubblicare.
+    ![Dettagli connessione Distribuzione Web](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
-    ![Convalidare la connessione](../deployment/media/quickstart-publish-web-deploy.png "Convalidare la connessione")
-
-1. Selezionare **Impostazioni** per configurare altre impostazioni di distribuzione, ad esempio se distribuire una configurazione di debug o di rilascio e selezionare **Salva**. Per le operazioni di debug eseguite in modalità remota, è necessario distribuire una configurazione di debug.
-
-1. Per pubblicare selezionare **Pubblica**. La finestra Output mostra i risultati e lo stato della distribuzione.
+1. Per pubblicare, selezionare **pubblica** nella pagina di riepilogo. La finestra Output mostra i risultati e lo stato della distribuzione.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 In questa guida introduttiva è stato descritto come usare Visual Studio per creare un profilo di pubblicazione. È anche possibile configurare un profilo di pubblicazione importando le impostazioni di pubblicazione.
 
 > [!div class="nextstepaction"]
-> [Importare impostazioni di pubblicazione e distribuzione in IIS](tutorial-import-publish-settings-iis.md)
+> [Importare impostazioni di pubblicazione ed eseguire la distribuzione in IIS](tutorial-import-publish-settings-iis.md)

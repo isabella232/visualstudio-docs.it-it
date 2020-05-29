@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f286002112667ba763419f0e3d6265dbe1942212
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143540"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173881"
 ---
 
 1. Nel computer in cui è aperto il progetto ASP.NET in Visual Studio fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Pubblica**.
@@ -17,7 +17,7 @@ ms.locfileid: "68143540"
 
 1. Passare al percorso del file delle impostazioni di pubblicazione creato nella sezione precedente.
 
-1. Nella finestra di dialogo **Importa file di impostazioni di pubblicazione** selezionare il profilo creato nella sezione precedente e fare clic su **Apri**.
+1. Nella finestra di dialogo **Importa file di impostazioni di pubblicazione** passare a e selezionare il profilo creato nella sezione precedente e fare clic su **Apri**.
 
     Visual Studio avvia il processo di distribuzione e la finestra Output mostra lo stato di avanzamento e i risultati.
 

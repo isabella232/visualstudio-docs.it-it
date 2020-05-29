@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c83494fe6a23d4c072581c68f7b759aa9a6e6be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 735a4cc533312bcfa3823410780b09caa4f53fde
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586900"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173941"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 
@@ -44,9 +44,9 @@ In questo esempio vengono utilizzati SQL Server Express database locale e il dat
 
 ## <a name="configure-the-project"></a>Configurare il progetto
 
-1. In Visual Studio creare un nuovo C# progetto di **applicazione WPF** .
+1. In Visual Studio creare un nuovo progetto di **app WPF** in C#.
 
-2. Aggiungere il pacchetto NuGet per Entity Framework 6. In **Esplora soluzioni**selezionare il nodo del progetto. Nel menu principale scegliere **progetto** > **Gestisci pacchetti NuGet**.
+2. Aggiungere il pacchetto NuGet per Entity Framework 6. In **Esplora soluzioni**selezionare il nodo del progetto. Nel menu principale scegliere **progetto**  >  **Gestisci pacchetti NuGet**.
 
      ![Voce di menu Gestisci pacchetti NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
@@ -58,21 +58,21 @@ In questo esempio vengono utilizzati SQL Server Express database locale e il dat
 
 ## <a name="create-the-model"></a>Creare il modello
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **nuovo elemento**. Nel riquadro sinistro, sotto il C# nodo, scegliere **dati** e nel riquadro centrale scegliere **ADO.NET Entity Data Model**.
+1. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Aggiungi**  >  **nuovo elemento**. Nel riquadro sinistro, sotto il nodo C#, scegliere **dati** e nel riquadro centrale scegliere **ADO.NET Entity Data Model**.
 
    ![Nuovo elemento del modello di Entity Framework](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. Chiamare il modello `Northwind_model` e scegliere **OK**. Verrà aperta la **Procedura guidata Entity Data Model**. Scegliere **progettazione EF da database** , quindi fare clic su **Avanti**.
+2. Chiamare il modello `Northwind_model` e scegliere **OK**. Si apre la **procedura guidata Entity Data Model** . Scegliere **progettazione EF da database** , quindi fare clic su **Avanti**.
 
    ![Modello EF dal database](../data-tools/media/raddata-ef-model-from-database.png)
 
-3. Nella schermata successiva scegliere la connessione Northwind del database locale e fare clic su **Avanti**.
+3. Nella schermata successiva immettere o scegliere la connessione Northwind del database locale (ad esempio, (database locale) \MSSQLLocalDB), specificare il database Northwind e fare clic su **Avanti**.
 
 4. Nella pagina successiva della procedura guidata scegliere le tabelle, le stored procedure e gli altri oggetti di database da includere nel modello di Entity Framework. Espandere il nodo dbo nella visualizzazione albero e scegliere **Customers**, **Orders**e **Order Details**. Lasciare selezionate le impostazioni predefinite e fare clic su **fine**.
 
     ![Scegliere gli oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. Tramite la procedura guidata C# vengono generate le classi che rappresentano il modello di Entity Framework. Le classi sono classi semplici C# obsolete e sono quelle che è possibile associare all'interfaccia utente WPF. Il file con *estensione edmx* descrive le relazioni e altri metadati che associano le classi agli oggetti nel database. I file con *estensione TT* sono modelli T4 che generano il codice che opera sul modello e salvano le modifiche apportate al database. È possibile visualizzare tutti questi file in **Esplora soluzioni** nel nodo Northwind_model:
+5. Tramite la procedura guidata vengono generate le classi C# che rappresentano il modello di Entity Framework. Le classi sono classi C# obsolete e sono quelle che è possibile associare all'interfaccia utente WPF. Il file con *estensione edmx* descrive le relazioni e altri metadati che associano le classi agli oggetti nel database. I file con *estensione TT* sono modelli T4 che generano il codice che opera sul modello e salva le modifiche apportate al database. È possibile visualizzare tutti questi file in **Esplora soluzioni** nel nodo Northwind_model:
 
       ![Esplora soluzioni i file di modello EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -80,13 +80,13 @@ In questo esempio vengono utilizzati SQL Server Express database locale e il dat
 
 6. I file con *estensione TT* sono a scopo generale ed è necessario modificarne uno per utilizzare l'associazione dati WPF, che richiede ObservableCollections. In **Esplora soluzioni**espandere il nodo Northwind_model fino a trovare *Northwind_model. TT*. Assicurarsi che non si sia in *. File Context.tt* , che si trova direttamente sotto il file con *estensione edmx* .
 
-   - Sostituire le due occorrenze di <xref:System.Collections.ICollection> con <xref:System.Collections.ObjectModel.ObservableCollection%601>.
+   - Sostituire le due occorrenze di <xref:System.Collections.ICollection> con <xref:System.Collections.ObjectModel.ObservableCollection%601> .
 
-   - Sostituire la prima occorrenza di <xref:System.Collections.Generic.HashSet%601> con <xref:System.Collections.ObjectModel.ObservableCollection%601> alla riga 51. Non sostituire la seconda occorrenza di HashSet.
+   - Sostituire la prima occorrenza di <xref:System.Collections.Generic.HashSet%601> con <xref:System.Collections.ObjectModel.ObservableCollection%601> intorno alla riga 51. Non sostituire la seconda occorrenza di HashSet.
 
-   - Sostituire l'unica occorrenza di <xref:System.Collections.Generic> (intorno alla riga 431) con <xref:System.Collections.ObjectModel>.
+   - Sostituire l'unica occorrenza di <xref:System.Collections.Generic> (intorno alla riga 431) con <xref:System.Collections.ObjectModel> .
 
-7. Premere **Ctrl**+**MAIUSC**+**B** per compilare il progetto. Al termine della compilazione, le classi del modello sono visibili alla creazione guidata origine dati.
+7. Premere **CTRL** + **MAIUSC** + **B** per compilare il progetto. Al termine della compilazione, le classi del modello sono visibili alla creazione guidata origine dati.
 
 A questo punto si è pronti per associare questo modello alla pagina XAML in modo che sia possibile visualizzare, esplorare e modificare i dati.
 
@@ -94,31 +94,31 @@ A questo punto si è pronti per associare questo modello alla pagina XAML in mod
 
 È possibile scrivere codice di data binding, ma è molto più semplice consentire a Visual Studio di eseguire questa operazione.
 
-1. Dal menu principale scegliere **progetto** > **Aggiungi nuova origine dati** per visualizzare la **Configurazione guidata origine dati**. Scegliere **oggetto** perché si sta associando le classi del modello, non al database:
+1. Dal menu principale scegliere **progetto**  >  **Aggiungi nuova origine dati** per visualizzare la **Configurazione guidata origine dati**. Scegliere **oggetto** perché si sta associando le classi del modello, non al database:
 
      ![Configurazione guidata origine dati con origine oggetto](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
-2. Selezionare **Customer**. (Le origini per gli ordini vengono generate automaticamente dalla proprietà di navigazione Orders nel cliente).
+2. Espandere il nodo per il progetto e selezionare **Customer**. (Le origini per gli ordini vengono generate automaticamente dalla proprietà di navigazione Orders nel cliente).
 
      ![Aggiungere classi di entità come origini dati](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. Scegliere **Fine**.
+3. Fare clic su **Fine**.
 
 4. Passare a *MainWindow. XAML* nella visualizzazione codice. Il codice XAML viene mantenuto per gli scopi di questo esempio. Modificare il titolo di MainWindow in un elemento più descrittivo e aumentare l'altezza e la larghezza a 600 x 800 per il momento. È sempre possibile modificarlo in un secondo momento. Aggiungere quindi queste tre definizioni di riga alla griglia principale, una riga per i pulsanti di spostamento, una per i dettagli del cliente e una per la griglia che Mostra gli ordini:
 
     ```xaml
-    <Grid.RowDefinitions>
+        <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
     ```
 
-5. Aprire *MainWindow. XAML* in modo che sia visualizzato nella finestra di progettazione. In questo modo la finestra **origini dati** verrà visualizzata come opzione nel margine della finestra di Visual Studio accanto alla **casella degli strumenti**. Fare clic sulla scheda per aprire la finestra. in alternativa, premere **maiusc**+**ALT**+**D** o scegliere **visualizza** > altre **origini dati**di **Windows** > . Ogni proprietà della classe customers verrà visualizzata nella propria casella di testo. Per prima cosa, fare clic sulla freccia nella casella combinata **Customers** e scegliere **Details**. Trascinare quindi il nodo sulla parte centrale dell'area di progettazione in modo che la finestra di progettazione sappia che si desidera che venga posizionata nella riga intermedia. Se non si posiziona il mouse, è possibile specificare la riga manualmente in un secondo momento nel codice XAML. Per impostazione predefinita, i controlli vengono posizionati verticalmente in un elemento Grid, ma a questo punto è possibile disporli nel form. Ad esempio, potrebbe essere utile inserire la casella di testo **nome** in alto, sopra l'indirizzo. L'applicazione di esempio per questo articolo Riordina i campi e li ridispone in due colonne.
+5. Aprire *MainWindow. XAML* in modo che sia visualizzato nella finestra di progettazione. In questo modo la finestra **origini dati** verrà visualizzata come opzione nel margine della finestra di Visual Studio accanto alla **casella degli strumenti**. Fare clic sulla scheda per aprire la finestra. in alternativa, premere **MAIUSC** + **ALT** + **D** o scegliere **Visualizza**  >  **altre**  >  **origini dati**di Windows. Ogni proprietà della classe customers verrà visualizzata nella propria casella di testo. Per prima cosa, fare clic sulla freccia nella casella combinata **Customers** e scegliere **Details**. Trascinare quindi il nodo sulla parte centrale dell'area di progettazione in modo che la finestra di progettazione sappia che si desidera che venga posizionata nella riga intermedia. Se non si posiziona il mouse, è possibile specificare la riga manualmente in un secondo momento nel codice XAML. Per impostazione predefinita, i controlli vengono posizionati verticalmente in un elemento Grid, ma a questo punto è possibile disporli nel form. Ad esempio, potrebbe essere utile inserire la casella di testo **nome** in alto, sopra l'indirizzo. L'applicazione di esempio per questo articolo Riordina i campi e li ridispone in due colonne.
 
      ![Associazione all'origine dati dei clienti ai singoli controlli](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
-     Nella visualizzazione codice è ora possibile visualizzare un nuovo elemento `Grid` nella riga 1, ovvero la riga intermedia, della griglia padre. La griglia padre dispone di un attributo `DataContext` che fa riferimento a un oggetto CollectionViewSource che è stato aggiunto all'elemento `Windows.Resources`. Dato il contesto dei dati, quando la prima casella di testo viene associata a **Address**, il nome viene mappato alla proprietà `Address` nell'oggetto `Customer` corrente in CollectionViewSource.
+     Nella visualizzazione codice è ora possibile visualizzare un nuovo `Grid` elemento nella riga 1, ovvero la riga intermedia, della griglia padre. La griglia padre ha un `DataContext` attributo che fa riferimento a un oggetto CollectionViewSource che è stato aggiunto all' `Windows.Resources` elemento. Dato il contesto dei dati, quando la prima casella di testo viene associata a **Address**, il nome viene mappato alla `Address` proprietà nell' `Customer` oggetto corrente in CollectionViewSource.
 
     ```xaml
     <Grid DataContext="{StaticResource customerViewSource}">
@@ -128,17 +128,17 @@ A questo punto si è pronti per associare questo modello alla pagina XAML in mod
 
      ![Trascina le classi Orders come griglia](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7. Visual Studio ha generato tutto il codice di binding che connette i controlli dell'interfaccia utente agli eventi nel modello. Per visualizzare alcuni dati, è sufficiente scrivere del codice per popolare il modello di. Per prima cosa, passare a *MainWindow.XAML.cs* e aggiungere un membro dati alla classe MainWindow per il contesto dati. Questo oggetto, che è stato generato automaticamente, funge da controllo che tiene traccia delle modifiche e degli eventi nel modello. Verrà inoltre aggiunta la logica di inizializzazione del costruttore. La parte superiore della classe avrà un aspetto simile al seguente:
+7. Visual Studio ha generato tutto il codice di binding che connette i controlli dell'interfaccia utente agli eventi nel modello. Per visualizzare alcuni dati, è sufficiente scrivere del codice per popolare il modello di. Per prima cosa, passare a *MainWindow.XAML.cs* e aggiungere un membro dati alla classe MainWindow per il contesto dati. Questo oggetto, che è stato generato automaticamente, funge da controllo che tiene traccia delle modifiche e degli eventi nel modello. Verranno inoltre aggiunti i membri dati CollectionViewSource per i clienti e gli ordini e la logica di inizializzazione del costruttore associata. La parte superiore della classe avrà un aspetto simile al seguente:
 
      [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
 
-     Aggiungere una direttiva `using` per System. Data. Entity per portare il metodo di estensione del carico nell'ambito:
+     Aggiungere una `using` direttiva per System. Data. Entity per portare il metodo di estensione del carico nell'ambito:
 
      ```csharp
      using System.Data.Entity;
      ```
 
-     Scorrere ora verso il basso e trovare il gestore dell'evento `Window_Loaded`. Si noti che Visual Studio ha aggiunto un oggetto CollectionViewSource. Rappresenta l'oggetto NorthwindEntities selezionato al momento della creazione del modello. Aggiungere il codice per `Window_Loaded` in modo che l'intero metodo sia ora simile al seguente:
+     Scorrere ora verso il basso e trovare il `Window_Loaded` gestore eventi. Si noti che Visual Studio ha aggiunto un oggetto CollectionViewSource. Rappresenta l'oggetto NorthwindEntities selezionato al momento della creazione del modello. Questa operazione è già stata aggiunta, quindi non è necessaria. Sostituire il codice in in `Window_Loaded` modo che il metodo sia ora simile al seguente:
 
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
 
@@ -146,9 +146,9 @@ A questo punto si è pronti per associare questo modello alla pagina XAML in mod
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Modificare la progettazione della pagina e aggiungere griglie per i nuovi clienti e ordini
 
-La disposizione predefinita prodotta da Visual Studio non è ideale per l'applicazione, quindi le modifiche verranno apportate manualmente nel codice XAML. Sono necessari anche alcuni "moduli", che sono effettivamente griglie, per consentire all'utente di aggiungere un nuovo cliente o ordine. Per poter aggiungere un nuovo cliente e un ordine, è necessario un set separato di caselle di testo che non sono associate a dati al `CollectionViewSource`. Verrà controllata la griglia visualizzata dall'utente in un determinato momento impostando la proprietà Visible nei metodi del gestore. Infine, si aggiunge un pulsante Elimina a ogni riga della griglia Orders per consentire all'utente di eliminare un singolo ordine.
+La disposizione predefinita prodotta da Visual Studio non è la soluzione ideale per l'applicazione, quindi il codice XAML finale verrà fornito qui per la copia nel codice. Sono necessari anche alcuni "moduli", che sono effettivamente griglie, per consentire all'utente di aggiungere un nuovo cliente o ordine. Per poter aggiungere un nuovo cliente e un ordine, è necessario un set separato di caselle di testo che non sono associate a dati a `CollectionViewSource` . Verrà controllata la griglia visualizzata dall'utente in un determinato momento impostando la proprietà Visible nei metodi del gestore. Infine, si aggiunge un pulsante Elimina a ogni riga della griglia Orders per consentire all'utente di eliminare un singolo ordine.
 
-In primo luogo, aggiungere questi stili all'elemento `Windows.Resources` in *MainWindow. XAML*:
+In primo luogo, aggiungere questi stili all' `Windows.Resources` elemento in *MainWindow. XAML*:
 
 ```xaml
 <Style x:Key="Label" TargetType="{x:Type Label}" BasedOn="{x:Null}">
@@ -357,7 +357,7 @@ La logica del comando include quattro parti: (1) i comandi, (2) i binding, (3) i
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Aggiungere comandi, associazioni e pulsanti in XAML
 
-1. In primo luogo, aggiungere i comandi nel file *MainWindow. XAML* all'interno dell'elemento `Windows.Resources`:
+1. In primo luogo, aggiungere i comandi nel file *MainWindow. XAML* all'interno dell' `Windows.Resources` elemento:
 
     ```xaml
     <RoutedUICommand x:Key="FirstCommand" Text="First"/>
@@ -371,7 +371,7 @@ La logica del comando include quattro parti: (1) i comandi, (2) i binding, (3) i
     <RoutedUICommand x:Key="CancelCommand" Text="Cancel"/>
     ```
 
-2. Un oggetto CommandBinding esegue il mapping di un evento `RoutedUICommand` a un metodo nel code-behind. Aggiungere questo elemento `CommandBindings` dopo il tag di chiusura `Windows.Resources`:
+2. Un oggetto CommandBinding esegue `RoutedUICommand` il mapping di un evento a un metodo nel code-behind. Aggiungere questo `CommandBindings` elemento dopo il `Windows.Resources` tag di chiusura:
 
     ```xaml
     <Window.CommandBindings>
@@ -387,7 +387,7 @@ La logica del comando include quattro parti: (1) i comandi, (2) i binding, (3) i
     </Window.CommandBindings>
     ```
 
-3. A questo punto, aggiungere la `StackPanel` con i pulsanti di spostamento, aggiunta, eliminazione e aggiornamento. In primo luogo, aggiungere questo stile a `Windows.Resources`:
+3. A questo punto, aggiungere l'oggetto `StackPanel` con i pulsanti di spostamento, aggiunta, eliminazione e aggiornamento. In primo luogo, aggiungere questo stile a `Windows.Resources` :
 
     ```xaml
     <Style x:Key="NavButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">
@@ -399,7 +399,7 @@ La logica del comando include quattro parti: (1) i comandi, (2) i binding, (3) i
     </Style>
     ```
 
-     In secondo luogo, incollare il codice subito dopo la `RowDefinitions` per l'elemento `Grid` esterno, verso la parte superiore della pagina XAML:
+     In secondo luogo, incollare il codice immediatamente dopo `RowDefinitions` per l' `Grid` elemento esterno, verso la parte superiore della pagina XAML:
 
     ```xaml
     <StackPanel Orientation="Horizontal" Margin="2,2,2,0" Height="36" VerticalAlignment="Top" Background="Gainsboro" DataContext="{StaticResource customerViewSource}" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">
@@ -417,13 +417,13 @@ La logica del comando include quattro parti: (1) i comandi, (2) i binding, (3) i
 
 ### <a name="add-command-handlers-to-the-mainwindow-class"></a>Aggiungere gestori di comandi alla classe MainWindow
 
-Il code-behind è minimo ad eccezione dei metodi Add e DELETE. La navigazione viene eseguita chiamando metodi sulla proprietà di visualizzazione dell'oggetto CollectionViewSource. Il `DeleteOrderCommandHandler` Mostra come eseguire un'eliminazione a catena in un ordine. Prima di tutto è necessario eliminare i Order_Details associati. Il `UpdateCommandHandler` aggiunge un nuovo cliente o ordine alla raccolta, altrimenti aggiorna semplicemente un cliente o un ordine esistente con le modifiche apportate dall'utente nelle caselle di testo.
+Il code-behind è minimo ad eccezione dei metodi Add e DELETE. La navigazione viene eseguita chiamando metodi sulla proprietà di visualizzazione dell'oggetto CollectionViewSource. `DeleteOrderCommandHandler`Viene illustrato come eseguire un'eliminazione a catena in un ordine. Prima di tutto è necessario eliminare i Order_Details associati. `UpdateCommandHandler`Aggiunge un nuovo cliente o ordine alla raccolta, altrimenti aggiorna semplicemente un cliente o un ordine esistente con le modifiche apportate dall'utente nelle caselle di testo.
 
 Aggiungere questi metodi di gestione alla classe MainWindow in *MainWindow.XAML.cs*. Se l'oggetto CollectionViewSource per la tabella Customers ha un nome diverso, è necessario modificare il nome in ognuno di questi metodi:
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
 Premere **F5** per avviare il debug. Verranno visualizzati i dati relativi ai clienti e agli ordini popolati nella griglia e i pulsanti di spostamento dovrebbero funzionare come previsto. Fare clic su **commit** per aggiungere un nuovo cliente o ordine al modello dopo aver immesso i dati. Fare clic su **Annulla** per uscire da un nuovo modulo di cliente o nuovo ordine senza salvare i dati. È possibile apportare modifiche ai clienti e agli ordini esistenti direttamente nelle caselle di testo e tali modifiche vengono scritte automaticamente nel modello.
 
