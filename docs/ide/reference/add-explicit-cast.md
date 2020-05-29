@@ -2,17 +2,17 @@
 title: Aggiungere un cast esplicito
 ms.date: 03/26/2020
 ms.topic: reference
-author: y87feng
-ms.author: t-yufen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78a61a8ed782df935a146b111bbc4107fa7c6d82
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: e159082266b848ce4742e436c706f3f71b2cc9ea
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80417322"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182976"
 ---
 # <a name="add-explicit-cast"></a>Aggiungere un cast esplicito
 
@@ -22,17 +22,17 @@ Questa generazione di codice si applica a:
 
 **Cosa:** Consente di aggiungere automaticamente un cast esplicito a un'espressione, in base all'utilizzo.
 
-**Quando:** È necessario aggiungere un cast esplicito a un'espressione e assegnarlo correttamente.
+**Quando:** È necessario aggiungere un cast esplicito a un'espressione e desidera assegnarlo in modo corretto automaticamente.
 
-**Perché:** È possibile aggiungere un cast esplicito a un'espressione manualmente, tuttavia questa funzionalità lo aggiunge automaticamente in base al contesto del codice.
+**Motivo:** È possibile aggiungere manualmente un cast esplicito a un'espressione, tuttavia questa funzionalità la aggiunge automaticamente in base al contesto del codice.
 
-## <a name="how-to-use-it"></a>Come usarlo
+## <a name="how-to-use-it"></a>Modalità d'uso
 
-1. Posizionare il punto di inserimento sull'errore.
-2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+1. Posizionare il cursore sull'errore.
+2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare **Aggiungi cast esplicito**.
 
-   ![Aggiungere un'azione rapida cast esplicita in Visual StudioAdd explicit cast quick action in Visual Studio](media/add-explicit-cast.png)
+   ![Aggiungere un'azione rapida cast esplicita in Visual Studio](media/add-explicit-cast.png)
 
 ## <a name="see-also"></a>Vedere anche
 
