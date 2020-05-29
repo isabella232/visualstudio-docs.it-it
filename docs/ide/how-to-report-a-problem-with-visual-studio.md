@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 37dcfd6351cfa3adde4c1825518dd2bea7ce9b34
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276501"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180558"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "81276501"
 
 È possibile segnalare un problema da Visual Studio o dal relativo programma di installazione tramite lo strumento Feedback incluso. Lo strumento Feedback consente di includere facilmente le informazioni di diagnostica nel feedback e aiuta i team di Visual Studio a diagnosticare e risolvere i problemi in modo molto più efficace. Questa è la procedura per segnalare un problema.
 
-1. **In Visual Studio**, selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema. È inoltre possibile accedere allo strumento di feedback dal menu **Aiuta a** > **inviare commenti e suggerimenti** > **- Un problema**.
+1. **In Visual Studio**, selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema. È anche possibile accedere allo strumento per il feedback dal menu **Guida**  >  **Invia commenti e suggerimenti**  >  **segnala un problema**.
 ![Elemento popup per la segnalazione di un problema nella community degli sviluppatori di Visual Studio](media/vsfeedbackentry.png) In alternativa, segnalare un problema nel **programma di installazione di Visual Studio** se non è possibile installare Visual Studio o non è possibile accedere allo strumento di feedback all'interno di Visual Studio.  Nel programma di installazione selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema.
 ![Elemento popup per la segnalazione di un problema nella community degli sviluppatori di Visual Studio](media/installer.png)
 
@@ -43,10 +43,7 @@ ms.locfileid: "81276501"
 
    ![Cercare e contrassegnare problemi simili](../ide/media/search-and-vote.png)
 
-1. Se non trovi il problema riscontrato, scegli **Segnala nuovo problema** nella parte inferiore dello schermo.
-
-   > [!NOTE]
-   > Il pulsante **Segnala un nuovo problema** viene visualizzato solo nell'interfaccia di Visual Studio per la community degli sviluppatori. Non è possibile segnalare un problema direttamente nel sito Web della [community degli sviluppatori](https://developercommunity.visualstudio.com/).
+1. Se il problema riscontrato non è stato trovato, scegliere **Segnala nuovo problema** nella parte inferiore della schermata.
 
 1. Creare un titolo descrittivo per il problema in modo da consentirne l'invio al team di Visual Studio corretto.
 
@@ -54,7 +51,7 @@ ms.locfileid: "81276501"
 
    ![Segnalare un problema nuovo](../ide/media/report-new-problem.png)
 
-1. Selezionare **Avanti** per passare alla scheda **Allegati.** Qui puoi acquisire la schermata corrente per inviarla a Microsoft. Per allegare screenshot aggiuntivi o altri file, scegliere **Allega altri file**.
+1. Selezionare **Avanti** per passare alla scheda **allegati** . Qui è possibile acquisire la schermata corrente per inviarla a Microsoft. Per allegare screenshot aggiuntivi o altri file, scegliere **Allega altri file**.
 
    ![Allegare uno screenshot alla segnalazione di un problema di Visual Studio](media/report-a-problem-screenshot.png)
 
@@ -72,7 +69,7 @@ I file di traccia e di dump di heap sono utili per diagnosticare i problemi. Sia
 
 1. Selezionare la scheda **Registra**.
 
-1. In **Registra le azioni** selezionare l'istanza corrente di Visual Studio, se è possibile riprodurre il problema all'interno di essa. Se non è possibile, ad esempio se Visual Studio è bloccato, selezionare ** \<Crea una nuova istanza>** per registrare le azioni in una nuova istanza di Visual Studio.If you can't, for example if Visual Studio is hung, select Create a new instance>to record the actions in a new instance of Visual Studio.
+1. In **Registra le azioni** selezionare l'istanza corrente di Visual Studio, se è possibile riprodurre il problema all'interno di essa. Se non è possibile, ad esempio se Visual Studio è bloccato, selezionare **\<Create a new instance>** per registrare le azioni in una nuova istanza di Visual Studio.
 
 1. Selezionare **Avvia registrazione**. Concedere le autorizzazioni per eseguire lo strumento.
 
@@ -123,7 +120,7 @@ Se non si vuole segnalare un problema, ma suggerire una funzionalità, esiste un
 ## <a name="see-also"></a>Vedere anche
 
 * [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)
-* [Segnalare un problema con Visual Studio per Mac](/visualstudio/mac/report-a-problem)
+* [Segnala un problema con Visual Studio per Mac](/visualstudio/mac/report-a-problem)
 * [Segnalare un problema con C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Community per sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/)
+* [Community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/)
 * [Privacy dei dati della community degli sviluppatori](developer-community-privacy.md)

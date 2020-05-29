@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento trustInfo (applicazione ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d6ac13c6eb76bff5ffc07043fd20063700237fc
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745592"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184432"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>Elemento &lt;trustInfo&gt; (applicazione ClickOnce)
 Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'applicazione nel computer client.
@@ -69,7 +69,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 ## <a name="elements-and-attributes"></a>Elementi e attributi
  L'elemento `trustInfo` è obbligatorio e si trova nello spazio dei nomi `asm.v2` . Non ha attributi e contiene gli elementi seguenti.
 
-## <a name="security"></a>sicurity
+## <a name="security"></a>security
  Obbligatorio. Questo elemento è figlio dell'elemento `trustInfo` . Contiene l'elemento `applicationRequestMinimum` e non dispone di attributi.
 
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum
@@ -87,7 +87,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
      Obbligatorio. Identifica la versione dell'autorizzazione. In genere questo valore è `1`.
 
 ## <a name="ipermission"></a>IPermission
- Facoltativo. Questo elemento è figlio dell'elemento `PermissionSet` . Il `IPermission` elemento identifica in modo completo una classe di autorizzazioni in .NET Framework. L'elemento `IPermission` ha gli attributi seguenti, ma può avere attributi aggiuntivi che corrispondono alle proprietà della classe di autorizzazioni. Per scoprire la sintassi di un'autorizzazione specifica, vedere gli esempi elencati nel file Security.config.
+ Facoltativa. Questo elemento è figlio dell'elemento `PermissionSet` . L' `IPermission` elemento identifica in modo completo una classe di autorizzazioni nel .NET Framework. L'elemento `IPermission` ha gli attributi seguenti, ma può avere attributi aggiuntivi che corrispondono alle proprietà della classe di autorizzazioni. Per scoprire la sintassi di un'autorizzazione specifica, vedere gli esempi elencati nel file Security.config.
 
 - `class`
 
@@ -117,14 +117,14 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
      In questo esempio, la dichiarazione per <xref:System.Security.Permissions.EnvironmentPermission> impedisce all'applicazione di leggere solo la variabile di ambiente USERNAME, mentre la dichiarazione per <xref:System.Security.Permissions.FileDialogPermission> consente all'applicazione di usare senza restrizioni tutte le classi <xref:System.Windows.Forms.FileDialog> .
 
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
- Facoltativo. Identifica il set di autorizzazioni concesso agli assembly. Questo elemento è figlio dell'elemento `applicationRequestMinimum` e ha l'attributo seguente.
+ Facoltativa. Identifica il set di autorizzazioni concesso agli assembly. Questo elemento è figlio dell'elemento `applicationRequestMinimum` e ha l'attributo seguente.
 
 - `permissionSetReference`
 
      Obbligatorio. Identifica l'ID del set di autorizzazioni che è l'autorizzazione predefinita. Il set di autorizzazioni viene dichiarato nell'elemento `PermissionSet` .
 
 ## <a name="assemblyrequest"></a>assemblyRequest
- Facoltativo. Identifica le autorizzazioni per un assembly specifico. Questo elemento è figlio dell'elemento `applicationRequestMinimum` e ha l'attributo seguente.
+ Facoltativa. Identifica le autorizzazioni per un assembly specifico. Questo elemento è figlio dell'elemento `applicationRequestMinimum` e ha l'attributo seguente.
 
 - `Name`
 
@@ -135,14 +135,14 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
      Obbligatorio. Identifica l'ID del set di autorizzazioni richiesto dall'assembly. Il set di autorizzazioni viene dichiarato nell'elemento `PermissionSet` .
 
 ## <a name="requestedprivileges"></a>requestedPrivileges
- Facoltativo. Questo elemento è figlio dell'elemento `security` e contiene l'elemento `requestedExecutionLevel` . Questo elemento non ha attributi.
+ Facoltativa. Questo elemento è figlio dell'elemento `security` e contiene l'elemento `requestedExecutionLevel` . Questo elemento non ha attributi.
 
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel
- Facoltativo. Identifica il livello di sicurezza a cui eseguire le richieste dell'applicazione. Questo elemento non ha figli e ha gli attributi seguenti.
+ Facoltativa. Identifica il livello di sicurezza a cui eseguire le richieste dell'applicazione. Questo elemento non ha figli e ha gli attributi seguenti.
 
 - `Level`
 
-   Obbligatorio. Indica il livello di sicurezza richiesto dall'applicazione. I possibili valori sono:
+   Obbligatorio. Indica il livello di sicurezza richiesto dall'applicazione. I valori possibili sono:
 
    `asInvoker`, non vengono richieste autorizzazioni aggiuntive. Questo livello non richiede prompt di attendibilità aggiuntivi.
 
@@ -154,14 +154,14 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 
 - `uiAccess`
 
-   Facoltativo. Indica se l'applicazione richiede l'accesso agli elementi protetti dell'interfaccia utente. I valori sono `true` o `false`e il valore predefinito è false. Solo le applicazioni firmate devono avere un valore true.
+   Facoltativa. Indica se l'applicazione richiede l'accesso agli elementi protetti dell'interfaccia utente. I valori sono `true` o `false`e il valore predefinito è false. Solo le applicazioni firmate devono avere un valore true.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  Se un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] richiede altre autorizzazioni rispetto a quelle concesse per impostazione predefinita al computer client, il gestore di attendibilità di Common Language Runtime chiederà all'utente se vuole concedere all'applicazione un livello così elevato di attendibilità. Se l'utente rifiuta, l'applicazione non verrà eseguita. In caso contrario, eseguirà le autorizzazioni richieste.
 
  Tutte le autorizzazioni richieste mediante `defaultAssemblyRequest` e `assemblyRequest` verranno concesse senza chiedere all'utente se il manifesto di distribuzione ha una licenza di attendibilità valida.
 
- Per altre informazioni sull'elevazione delle autorizzazioni, vedere [protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md). Per altre informazioni sulla distribuzione dei criteri, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
+ Per ulteriori informazioni sull'elevazione delle autorizzazioni, vedere [protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md). Per altre informazioni sulla distribuzione dei criteri, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
 
 ## <a name="examples"></a>Esempi
  I seguenti tre esempi di codice descrivono gli elementi `trustInfo` per le aree di sicurezza denominate predefinite, ovvero Internet, LocalIntranet e FullTrust, per l'uso in un manifesto dell'applicazione di distribuzione di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -268,5 +268,5 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
+- [Panoramica della distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
 - [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

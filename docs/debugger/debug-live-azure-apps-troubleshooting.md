@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911594"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182872"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
-Se i passaggi descritti in questo articolo non **consentono** di risolvere il problema, cercare il problema nella [community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/8/index.html) o segnalare un nuovo problema scegliendo? > **inviare commenti e suggerimenti** > **segnalare un problema** in Visual Studio.
+Se la procedura descritta in questo articolo non risolve il problema, cercare il problema nella community degli [sviluppatori](https://developercommunity.visualstudio.com/spaces/8/index.html) o segnalare un nuovo problema scegliendo **Guida**  >  **Invia commenti e suggerimenti**  >  **segnala un problema** in Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Connetti Snapshot Debugger" rileva un errore del codice di stato HTTP
 
@@ -30,14 +30,38 @@ Se nella finestra di **output** viene visualizzato l'errore seguente durante il 
 
 ### <a name="401-unauthorized"></a>(401) non autorizzato
 
-Questo errore indica che la chiamata REST eseguita da Visual Studio in Azure usa una credenziale non valida. Un bug noto con il modulo Azure Active Directory Easy OAuth può generare questo errore.
+Questo errore indica che la chiamata REST eseguita da Visual Studio in Azure usa una credenziale non valida. 
 
 Seguire questa procedura:
 
-* Verificare che l'account di personalizzazione di Visual Studio disponga delle autorizzazioni per la sottoscrizione di Azure e la risorsa a cui si sta effettuando la connessione. Un modo rapido per determinare questo problema consiste nel controllare se la risorsa è disponibile nella finestra di dialogo da **Debug** > **Connetti snapshot debugger...**  > **risorsa di Azure** > **selezionare esistente**o in Cloud Explorer.
+* Verificare che l'account di personalizzazione di Visual Studio disponga delle autorizzazioni per la sottoscrizione di Azure e la risorsa a cui si sta effettuando la connessione. Un modo rapido per determinare questo problema consiste nel controllare se la risorsa è disponibile nella finestra di dialogo da **debug**  >  **Connetti snapshot debugger...**  >  **Risorsa**  >  di Azure **Selezionare esistente**o in Cloud Explorer.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
-### <a name="403-forbidden"></a>(403) non consentito
+Se è stata abilitata l'autenticazione/autorizzazione (EasyAuth) nel servizio app, è possibile che venga visualizzato un errore 401 con LaunchAgentAsync nel messaggio di errore dello stack di chiamate. Assicurarsi che l' **azione da eseguire quando la richiesta non è autenticata** sia impostata in modo da **consentire richieste anonime (nessuna azione)** nell'portale di Azure e fornire un file Authorization. JSON in D:\Home\sites\wwwroot con il contenuto seguente. 
+
+```
+{
+  "routes": [
+    {
+      "path_prefix": "/",
+      "policies": {
+        "unauthenticated_action": "RedirectToLoginPage"
+      }
+    },
+    {
+      "http_methods": [ "POST" ],
+      "path_prefix": "/41C07CED-2E08-4609-9D9F-882468261608/api/agent",
+      "policies": {
+        "unauthenticated_action": "AllowAnonymous"
+      }
+    }
+  ]
+}
+```
+
+La prima route protegge in modo efficace il dominio dell'app in modo analogo all' **accesso con [IdentityProvider]**. La seconda route espone l'endpoint AgentLaunch di debugger snapshot al di fuori dell'autenticazione, che esegue l'azione predefinita di avvio dell'agente di diagnostica debugger snapshot *solo se* l'estensione del sito preinstallato debugger snapshot è abilitata per il servizio app. Per altri dettagli sulla configurazione authorization. JSON, vedere regole di [autorizzazione URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
+
+### <a name="403-forbidden"></a>(403) Non consentito
 
 Questo errore indica che l'autorizzazione è stata negata. Questa situazione può essere causata da diversi problemi.
 
@@ -54,8 +78,8 @@ Questo errore indica che il sito Web non è stato trovato nel server.
 Seguire questa procedura:
 
 * Verificare di disporre di un sito Web distribuito e in esecuzione nella risorsa del servizio app a cui si sta eseguendo la connessione.
-* Verificare che il sito sia disponibile in https://\<Resource\>. azurewebsites.net
-* Verificare che l'applicazione Web personalizzata in esecuzione correttamente non restituisca un codice di stato 404 quando si accede a https://\<Resource\>. azurewebsites.net
+* Verificare che il sito sia disponibile in https:// \<resource\> . azurewebsites.NET
+* Verificare che l'applicazione Web personalizzata in esecuzione correttamente non restituisca un codice di stato 404 quando si accede a https:// \<resource\> . azurewebsites.NET
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
 ### <a name="406-not-acceptable"></a>(406) non accettabile
@@ -64,7 +88,7 @@ Questo errore indica che il server non è in grado di rispondere al tipo imposta
 
 Seguire questa procedura:
 
-* Verificare che il sito sia disponibile in https://\<Resource\>. azurewebsites.net
+* Verificare che il sito sia disponibile in https:// \<resource\> . azurewebsites.NET
 * Verificare che non sia stata eseguita la migrazione del sito alle nuove istanze. Snapshot Debugger usa la nozione di ARRAffinity per il routing delle richieste a istanze specifiche che possono generare questo errore in modo intermittente.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
@@ -181,7 +205,7 @@ I log dell'agente sono disponibili nelle posizioni seguenti:
   - Passare al sito di Kudu del servizio app (ovvero, servizioapp.**scm**.azurewebsites.net) e passare alla console di debug.
   - I log dell'agente vengono archiviati nella directory seguente: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - Macchina virtuale/set di scalabilità di macchine virtuali:
-  - Accedere alla macchina virtuale. I log dell'agente sono archiviati nella posizione seguente: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Versione>\SnapshotDebuggerAgent_*.txt
+  - Accedere alla macchina virtuale. i log degli agenti vengono archiviati come segue: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics \<Version> \ SnapshotDebuggerAgent_ *. txt
 - Servizio Azure Kubernetes
   - Passare alla directory seguente: /tmp/diag/AgentLogs/*
 
@@ -221,7 +245,7 @@ Il debug di snapshot e Application Insights dipendono da un ICorProfiler, che vi
 ## <a name="see-also"></a>Vedere anche
 
 - [Debug in Visual Studio](../debugger/index.yml)
-- [Eseguire il debug di app ASP.NET Live usando il Snapshot Debugger](../debugger/debug-live-azure-applications.md)
-- [Eseguire il debug dei set di scalabilità di macchine virtuali ASP.NET Snapshot Debugger di Azure in Live](../debugger/debug-live-azure-virtual-machines.md)
-- [Eseguire il debug di Live ASP.NET Azure Kubernetes usando il Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
+- [Eseguire il debug di app ASP.NET attive con Snapshot Debugger](../debugger/debug-live-azure-applications.md)
+- [Eseguire il debug di app ASP.NET attive in macchine virtuali/set di scalabilità di macchine virtuali di Azure con Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Eseguire il debug di servizi Azure Kubernetes ASP.NET attivi con Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
 - [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md)

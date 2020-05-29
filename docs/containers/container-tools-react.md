@@ -3,15 +3,15 @@ title: Strumenti contenitore di Visual Studio con ASP.NET Core e React. js
 author: ghogen
 description: Informazioni su come usare gli strumenti contenitore di Visual Studio e Docker per Windows
 ms.author: ghogen
-ms.date: 10/16/2019
+ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 47bcdd4de4ffd938d6b9aed5a166a863873f526b
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255542"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182788"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Guida introduttiva: usare Docker con un'app a singola pagina React in Visual Studio
 
@@ -72,16 +72,16 @@ Il passaggio successivo è diverso a seconda che si stiano usando contenitori Li
 
 Nel progetto viene creato un *Dockerfile*, il file recipe per la creazione di un'immagine Docker finale. Per informazioni sui comandi al suo interno, vedere la Guida di [riferimento a Dockerfile](https://docs.docker.com/engine/reference/builder/) .
 
-Aprire il *Dockerfile* nel progetto e aggiungere le righe seguenti per installare Node.js 10.x nel contenitore. Assicurarsi di aggiungere le righe nella prima sezione, per aggiungere l'installazione dello strumento di gestione pacchetti Node *npm.exe* all'immagine di base che viene usata nei passaggi successivi.
+Aprire il *Dockerfile* nel progetto e aggiungere le righe seguenti per installare Node.js 10.x nel contenitore. Assicurarsi di aggiungere queste righe nella prima sezione, per aggiungere l'installazione di *NPM. exe* di gestione pacchetti del nodo all'immagine di base, oltre che nella `build` sezione.
 
-```
+```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 ```
 
 Il *Dockerfile* dovrebbe ora essere simile al seguente:
 
-```
+```Dockerfile
 FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
 WORKDIR /app
 EXPOSE 80 
@@ -90,6 +90,8 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
 FROM microsoft/dotnet:2.2-sdk-stretch AS build
+RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
+RUN apt-get install -y nodejs
 WORKDIR /src
 COPY ["WebApplication37/WebApplication37.csproj", "WebApplication37/"]
 RUN dotnet restore "WebApplication37/WebApplication37.csproj"
@@ -123,7 +125,7 @@ Aggiornare Dockerfile aggiungendo le righe seguenti. In questo modo i nodi e NPM
    1. Aggiungere ``# escape=` `` alla prima riga di Dockerfile
    1. Aggiungere le righe seguenti prima`FROM … base`
 
-      ```
+      ```Dockerfile
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
@@ -133,17 +135,19 @@ Aggiornare Dockerfile aggiungendo le righe seguenti. In questo modo i nodi e NPM
 
    1. Aggiungere la riga seguente prima e dopo`FROM … build`
 
-      ```
+      ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
    1. Il Dockerfile completo dovrebbe avere un aspetto simile al seguente:
 
-      ```
+      ```Dockerfile
       # escape=`
       #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
       #For more information, please see https://aka.ms/containercompat
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      RUN mkdir -p C:\nodejsfolder
+      WORKDIR C:\nodejsfolder
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
       Expand-Archive nodejs.zip -DestinationPath C:\; `
@@ -173,7 +177,7 @@ Aggiornare Dockerfile aggiungendo le righe seguenti. In questo modo i nodi e NPM
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-1. Aggiornare il file con estensione dockerignore rimuovendo `**/bin`.
+1. Aggiornare il file con estensione dockerignore rimuovendo `**/bin` .
 
 ## <a name="debug"></a>Debug
 
@@ -232,7 +236,7 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
     ![Finestra di dialogo Creare un'istanza di Registro Azure Container di Visual Studio][0]
 
-1. Scegliere **Crea**.
+1. Fare clic su **Crea**.
 
    ![Screenshot che indica l'esito positivo della pubblicazione](media/container-tools/publish-succeeded.png)
 
