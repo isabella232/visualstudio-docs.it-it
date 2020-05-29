@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: Connettersi a processi in esecuzione
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: Specifica di file di simboli (con estensione pdb) e di origine
+    - name: Specificare file di simboli (PDB) e di origine
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: Eseguire il debug di applicazioni a 64 bit
       href: debug-64-bit-applications.md
@@ -132,7 +132,7 @@
               href: how-to-debug-in-mixed-mode.md
             - name: Libreria di controlli Web (Codice gestito)
               href: web-control-library-managed-code.md
-        - name: Progetti di console
+        - name: Progetti console
           href: debugging-preparation-console-projects.md
         - name: Applicazioni Web ASP.NET
           href: debugging-preparation-aspnet-web-applications.md
@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: Ripristinare i comandi nascosti del debugger
       href: how-to-restore-hidden-debugger-commands.md
-- name: Debug remoto
+- name: Remote Debugging
   items:
-    - name: Debug remoto
+    - name: Remote Debugging
       href: remote-debugging.md
     - name: Configurare Windows Firewall per il debug remoto
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -244,8 +244,6 @@
       items:
         - name: Errori e risoluzione dei problemi relativi al debug remoto
           href: remote-debugging-errors-and-troubleshooting.md
-        - name: Microsoft Visual Studio Remote Debugging Monitor sul computer remoto non dispone dell'autorizzazione per connettersi al computer
-          href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer.md
         - name: Errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato.
           href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
         - name: Microsoft Visual Studio Remote Debugging Monitor è in esecuzione sul computer remoto come utente diverso
@@ -258,8 +256,6 @@
           href: error-kerberos-authentication-failed.md
         - name: Accertarsi che DNS sia correttamente configurato nel computer di destinazione
           href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
-        - name: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.
-          href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
         - name: Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
           href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
         - name: Impossibile iniziare la comunicazione DCOM
@@ -278,7 +274,7 @@
           href: error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md
         - name: Il processo di lavoro del sito Web è stato terminato da IIS
           href: error-web-site-worker-process-has-been-terminated-by-iis.md
-        - name: Impossibile connettersi al computer \<nome>. Impossibile trovare il computer sulla rete.
+        - name: Impossibile connettersi al computer \<name>. Impossibile trovare il computer sulla rete.
           href: error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md
         - name: Il debug in modalità mista è supportato solo quando si usa Microsoft .NET Framework 2.0 o versione successiva
           href: error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md
@@ -410,7 +406,7 @@
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
                 - name: 'Codice di esempio di navigazione del debugger (Xaml e C#)'
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
-            - name: 'Attivare eventi di sospensione, ripresa e background per Windows Store'
+            - name: 'Attivare eventi di sospensione, di ripresa e in background per Windows Store'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
         - name: Prelettura del contenuto per le applicazioni Windows Store
           href: prefetch-content-for-windows-store-apps.md
@@ -424,7 +420,7 @@
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: Impostazioni consigliate delle proprietà
               href: managed-debugging-recommended-property-settings.md
-            - name: Applicazioni Windows Form
+            - name: Applicazioni Windows Forms
               href: debugging-preparation-windows-forms-applications.md
             - name: servizi Windows
               href: debugging-preparation-windows-services.md
@@ -560,7 +556,7 @@
       href: debugging-gpu-code.md
     - name: Diagnostica della grafica (debug della grafica DirectX)
       items:
-        - name: Diagnostica della grafica (debug della grafica DirectX)
+        - name: Diagnostica della grafica (Debug grafica DirectX)
           href: visual-studio-graphics-diagnostics.md
         - name: Panoramica
           href: overview-of-visual-studio-graphics-diagnostics.md
@@ -628,9 +624,9 @@
               href: how-to-change-the-graphics-diagnostics-playback-machine.md
             - name: Usare Diagnostica della grafica con un dispositivo ARM
               href: how-to-use-graphics-diagnostics-with-an-arm-device.md
-        - name: Reference
+        - name: Riferimento
           items:
-            - name: Reference
+            - name: Riferimento
               href: reference-programmatic-capture.md
             - name: Classe VsgDbg
               items:
@@ -902,9 +898,9 @@
               href: how-to-search-for-a-process-in-processes-view.md
             - name: Visualizzare le proprietà del processo
               href: how-to-display-process-properties.md
-        - name: Visualizzazione thread
+        - name: Visualizzazione Thread
           items:
-            - name: Visualizzazione thread
+            - name: Visualizzazione Thread
               href: threads-view.md
             - name: Cercare un thread nella visualizzazione thread
               href: how-to-search-for-a-thread-in-threads-view.md
