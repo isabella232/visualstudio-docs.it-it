@@ -5,27 +5,27 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75678891"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183957"
 ---
 # <a name="create-a-new-project"></a>Creazione di un nuovo progetto
 
 ## <a name="opening-the-project-creation-dialog"></a>Apertura della finestra di dialogo per la creazione del progetto
 
-È possibile creare un nuovo progetto in Visual Studio per Mac in diversi modi. Quando si apre Visual Studio per Mac per la prima volta, viene visualizzata la finestra di avvio. Da qui è possibile scegliere **Nuovo** che consente di passare alla schermata di creazione del progetto.
+È possibile creare un nuovo progetto in Visual Studio per Mac in diversi modi. Quando si apre per la prima volta Visual Studio per Mac, viene visualizzata la finestra di avvio. Da qui è possibile scegliere **nuovo** per portarsi alla schermata di creazione del progetto.
 
 > [!TIP]
 > Inoltre, dalla finestra di avvio, è anche possibile aprire e cercare progetti e soluzioni recenti. Per aprire i progetti recenti si può anche scegliere **File > Soluzioni recenti** dalla barra dei menu
 
-![Finestra Avvia con crea nuovo progetto](media/first-run-project.png)
+![Finestra di avvio con Crea nuovo progetto](media/first-run-project.png)
 
 Se Visual Studio per Mac è già aperto con una soluzione caricata, è possibile creare una nuova soluzione scegliendo **File > Nuova soluzione** dalla barra dei menu. La creazione di una nuova soluzione in questo modo chiude la soluzione già caricata.
 
-## <a name="creating-a-new-project-from-a-template"></a>Creazione di un progetto da un modello
+## <a name="creating-a-new-project"></a>Creazione di un nuovo progetto
 
 La finestra dialogo **Nuovo progetto** mostra, per impostazione predefinita, i modelli usati di recente, ordinati a partire da quelli *più recenti*.
 

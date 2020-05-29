@@ -7,12 +7,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4e7d84768307964b495e8c5e97e7731b0622a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597139"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184029"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aggiornamento di un'applicazione esistente per MSBuild 15
 
@@ -65,7 +65,7 @@ Se non è possibile usare pacchetti NuGet, è possibile fare riferimento agli as
 
 #### <a name="binding-redirects"></a>Reindirizzamenti di binding
 
-Fare riferimento al pacchetto Microsoft.Build.Locator per assicurarsi che l'applicazione utilizzi automaticamente l'associazione richiesta alla versione 15.1.0.0. I reindirizzamenti di associazione a questa versione supportano sia MSBuild 15 che MSBuild 16.Binding redirects to this version support both MSBuild 15 and MSBuild 16.
+Fare riferimento al pacchetto Microsoft. Build. Locator per assicurarsi che l'applicazione usi automaticamente i reindirizzamenti di binding richiesti alla versione 15.1.0.0. I reindirizzamenti di binding a questa versione supportano sia MSBuild 15 che MSBuild 16.
 
 ### <a name="ensure-output-is-clean"></a>Garantire l'eliminazione dell'output
 
@@ -85,7 +85,33 @@ Non specificare `ExcludeAssets=runtime` per il pacchetto Microsoft.Build.Locator
 
 ### <a name="register-instance-before-calling-msbuild"></a>Registrare l'istanza prima di chiamare MSBuild
 
-Aggiungere una chiamata all'API del localizzatore prima di chiamare qualsiasi metodo che usi MSBuild.
+> [!IMPORTANT]
+> Non è possibile fare riferimento a tipi MSBuild (dallo `Microsoft.Build` spazio dei nomi) nel metodo che chiama MSBuildLocator. Ad esempio, non è possibile eseguire questa operazione:
+>
+> ```csharp
+> void ThisWillFail()
+> {
+>     MSBuildLocator.RegisterDefaults();
+>     Project p = new Project(SomePath); // Could be any MSBuild type
+>     // Code that uses the MSBuild type
+> }
+> ```
+>
+> Al contrario, è necessario eseguire questa operazione:
+>
+> ```csharp
+> void MethodThatDoesNotDirectlyCallMSBuild()
+> {
+>     MSBuildLocator.RegisterDefaults();
+>     MethodThatCallsMSBuild();
+> }
+> 
+> void MethodThatCallsMSBuild()
+> {
+>     Project p = new Project(SomePath);
+>     // Code that uses the MSBuild type
+> }
+> ```
 
 Il modo più semplice per aggiungere la chiamata all'API del localizzatore consiste nell'aggiungere una chiamata a
 

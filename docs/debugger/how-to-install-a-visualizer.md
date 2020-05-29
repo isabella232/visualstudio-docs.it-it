@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Installare un visualizzatore Documenti Microsoft'
+title: 'Procedura: installare un visualizzatore | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,42 +17,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 499d644cc8374b070cedaf058b0e4dc17d155bdc
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880260"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183626"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedura: installare un visualizzatore
 Dopo avere creato un visualizzatore, è necessario installarlo in modo da renderlo disponibile in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per installare un visualizzatore è sufficiente seguire una semplice procedura.
 
 > [!NOTE]
-> Nelle app UWP sono supportati solo i visualizzatori standard di testo, HTML, XML e JSON. Non sono supportati i visualizzatori personalizzati (creati dall'utente).
+> Nelle app UWP sono supportati solo i visualizzatori di testo, HTML, XML e JSON standard. Non sono supportati i visualizzatori personalizzati (creati dall'utente).
 
 ::: moniker range=">=vs-2019"
-### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Per installare un visualizzatore per Visual Studio 2019To install a visualizer for Visual Studio 2019
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Per installare un visualizzatore per Visual Studio 2019
   
-1. Individuare la DLL che contiene il visualizzatore compilato.
+1. Individuare la DLL che contiene il Visualizzatore compilato.
 
-   In genere, è consigliabile se sia la DLL lato debugger che la DLL sul lato oggetto del debug specificano **Qualsiasi CPU** come piattaforma di destinazione. La DLL lato debugger deve essere **Qualsiasi CPU** o **32 bit.** La piattaforma di destinazione per la DLL sul lato oggetto del debug deve corrispondere al processo oggetto del debug.
+   In genere, è preferibile che sia la DLL sul lato debugger che la DLL del lato oggetto del debug specifichino **qualsiasi CPU** come piattaforma di destinazione. La DLL sul lato debugger deve essere **qualsiasi CPU** o **a 32 bit**. La piattaforma di destinazione per la DLL lato oggetto del debug deve corrispondere al processo di debug.
 
-2. Copiare la DLL [lato debugger](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (e le DLL da cui dipende) in una delle seguenti posizioni:
+2. Copiare la dll del [lato debugger](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (e le eventuali dll da cui dipende) in uno dei percorsi seguenti:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Copiare la DLL [sul lato Debuggee](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) in una delle seguenti posizioni:
+3. Copiare la dll del lato oggetto del [debug](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) in uno dei percorsi seguenti:
 
-    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework* di
 
-    - `My Documents\`*Framework VisualStudioVersion* `\Visualizers\` *Framework*
+    - `My Documents\`*VisualStudioVersion* `\Visualizers\` *Framework* di
 
-    dove *Framework* è:
-    - `net2.0`per i debug che `.NET Framework` eseguono il runtime.
-    - `netstandard2.0`per i debug utilizzando un runtime `netstandard 2.0` `.NET Framework v4.6.1+` che `.NET Core 2.0+`supporta ( o ).
-    - `netcoreapp`per i debug che `.NET Core` eseguono il runtime. (supporti `.NET Core 2.0+`)
+    dove *Framework* è uno dei seguenti:
+    - `net2.0`per i debug che eseguono il `.NET Framework` Runtime.
+    - `netstandard2.0`per i sottoposti a debug utilizzando un runtime che supporta `netstandard 2.0` ( `.NET Framework v4.6.1+` o `.NET Core 2.0+` ).
+    - `netcoreapp`per i debug che eseguono il `.NET Core` Runtime. (supporta `.NET Core 2.0+` )
 
 4. Riavviare la sessione di debug.
 
@@ -61,10 +61,10 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Per installare un visualizzatore per Visual Studio 2017 e versioni precedentiTo install a visualizer for Visual Studio 2017 and older
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Per installare un visualizzatore per Visual Studio 2017 e versioni precedenti
 
 > [!IMPORTANT]
-> Solo i visualizzatori di .NET Framework sono supportati in Visual Studio 2017 e versioni precedenti.
+> Solo i visualizzatori .NET Framework sono supportati in Visual Studio 2017 e versioni precedenti.
 
 1. Individuare la DLL contenente il visualizzatore compilato.
 

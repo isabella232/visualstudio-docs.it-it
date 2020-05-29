@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3355636eba7556a472d8ce272437fb07c30714be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71128202"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184167"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Distribuire un'app in una cartella locale usando Visual Studio
 
@@ -24,27 +24,27 @@ ms.locfileid: "71128202"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Se è necessario pubblicare un'applicazione desktop di Windows in una cartella locale, vedere [Distribuire un'applicazione desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Per il linguaggio C, vedere [Distribuire un'app nativa tramite ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) o, per C/C, vedere [Distribuire un'app nativa usando un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Se è necessario pubblicare un'applicazione desktop di Windows in una cartella locale, vedere [Distribuire un'applicazione desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Per C++/CLR, vedere [Distribuire un'app nativa tramite ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) oppure per C/C++, vedere [Distribuire un'app nativa tramite un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Distribuire in una cartella locale
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** o usare la voce di menu **Compila** > **Pubblica**.
 
-    ![Comando Pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "Scegliere Pubblica")
+    ![Il comando pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "Scegliere Pubblica")
 
-1. Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Selezionare **Crea nuovo profilo**.
+1. Nella finestra di dialogo **pubblica** selezionare **cartella**.
 
-1. Nella finestra di dialogo **Selezionare una destinazione di pubblicazione** scegliere **Cartella**.
+    ![Scegliere la cartella come destinazione di pubblicazione](../deployment/media/quickstart-publish-folder.png "Scegli cartella")
 
-    ![Scegliere la cartella locale come destinazione di pubblicazione](../deployment/media/quickstart-publish-folder.png "Scegli cartella")
+1. Immettere un percorso o selezionare **Sfoglia** per specificare una cartella.
 
-1. Immettere un percorso o selezionare **Esplora** per specificare una cartella locale.
+    ![Specificare il percorso della cartella](../deployment/media/quickstart-publish-folder-path.png "Scegli cartella")
 
 1. Selezionare **Pubblica**. Visual Studio compila il progetto e lo pubblica nella cartella specificata. Viene visualizzato il riquadro **Pubblica** delle proprietà del progetto con un riepilogo del profilo.
 
     ![Riquadro Pubblica delle proprietà con il riepilogo di un profilo](../deployment/media/quickstart-publish-folder-summary.png)
 
-1. Per configurare le impostazioni di distribuzione, selezionare **Configura** nel riepilogo del profilo e selezionare la scheda **Impostazioni**.
+1. Per configurare le impostazioni di distribuzione, selezionare **modifica** nel riepilogo del profilo di pubblicazione e selezionare la scheda **Impostazioni** .
 
     ![Impostazioni del profilo](../deployment/media/quickstart-profile-settings.png "Impostazioni del profilo")
 

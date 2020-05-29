@@ -7,12 +7,12 @@ ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come ottenere e gestire i codici Product Key in sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 138b85d151aff5ecded4e8a69595518d05f12e7b
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232234"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183925"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso di codici Product Key in sottoscrizioni di Visual Studio
 
@@ -21,6 +21,9 @@ Le sottoscrizioni di Visual Studio consentono di accedere a una vasta gamma di p
 Le sottoscrizioni di Visual Studio solitamente comprendono cinque codici Product Key per le versioni correnti dei prodotti Windows e Office e tre codici per le versioni precedenti.
 
 In più, la maggior parte dei codici Product Key consentono più attivazioni del prodotto per ogni codice.  Molti prodotti consentono anche di installare e usare il prodotto senza attivazione per un minimo di 30 giorni.  Per la maggior parte dei sottoscrittori, questo si traduce in un numero più che sufficiente di attivazioni per soddisfare le proprie esigenze.  Se tuttavia si sono esaurite le attivazioni disponibili per un prodotto, è possibile inviare una richiesta di codici Product Key aggiuntivi tramite il [servizio clienti per le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+
+> [!NOTE]
+> Se la sottoscrizione viene fornita dall'ufficio o dall'Istituto di istruzione, l'amministratore della sottoscrizione controlla se è possibile accedere ai download del software.  Se l'accesso ai download è disabilitato per la sottoscrizione, anche l'accesso ai codici Product Key viene disabilitato.  Se è necessario scaricare e/o codici Product Key, [contattare l'amministratore](contact-my-admin.md).
 
 ## <a name="activating-a-product"></a>Attivazione di un prodotto
 Per determinati prodotti è necessaria l'attivazione.  In genere in Visual Studio questa condizione è limitata alle applicazioni client Windows, Windows Server, Microsoft Office, nonché a Expression Studio. Se è necessaria l'attivazione, molti prodotti, inclusi Windows e Office, consentono di installare e usare il prodotto senza attivazione per un minimo di 30 giorni. Se si effettua frequentemente il re-imaging dei propri computer (ad esempio, ogni 30 giorni), è preferibile NON eseguire l'attivazione. I codici Product Key offerti come parte della sottoscrizione di Visual Studio non consentono un numero illimitato di attivazioni di un prodotto.
@@ -63,7 +66,7 @@ Tutti i codici sono disponibili in forma aggregata nella pagina [Codici "Product
 |    Tipo chiave           |    Descrizione                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Non applicabile                    |    Per installare questo prodotto non è necessario alcun codice.                                                       |
-|    Vendita al dettaglio                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |
+|    Retail                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |
 |    Attivazione multipla        |    Un codice ad attivazione multipla (MAK) consente di attivare più installazioni di un prodotto con lo stesso codice. I codici MAK vengono generalmente usati con le versioni dei prodotti destinate a contratti multilicenza. Viene generalmente offerto un solo codice MAK per sottoscrizione.    |
 |    Codice per attivazione statica    |    I codici per attivazione statica vengono offerti per i prodotti che non richiedono attivazione e possono essere usati per un numero qualsiasi di installazioni.                                                                                                                  |
 |    Codice personalizzato                 |    I codici personalizzati offrono azioni o informazioni speciali per attivare o installare il prodotto.                                                                                                                                                                |
@@ -78,7 +81,7 @@ Tutti i codici sono disponibili in forma aggregata nella pagina [Codici "Product
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

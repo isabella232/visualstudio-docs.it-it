@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF'
+title: 'Procedura: aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,27 +14,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c60dffc7bb47336ae36e64a366def3c4dce06213
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 494e85049a173749d418276340389ebe826a0b0b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586585"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184231"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF
-Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Utilizzare la finestra di dialogo **Aggiungi riferimento al servizio** per cercare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] nella soluzione corrente, localmente, in una rete locale o su Internet.
+
+::: moniker range="vs-2017"
+Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] . Utilizzare la finestra di dialogo **Aggiungi riferimento al servizio** per cercare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] nella soluzione corrente, localmente, in una rete locale o su Internet.
+::: moniker-end
+::: moniker range=">=vs-2019"
+È possibile usare il nodo **servizi connessi** in **Esplora soluzioni** per accedere al **Microsoft WCF Web Service Reference provider**, che consente di gestire i riferimenti al servizio dati Windows Communication Foundation (WCF).
+::: moniker-end
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="add-a-service-reference"></a>Aggiungere un riferimento al servizio
+## <a name="add-a-wcf-service-reference"></a>Aggiungere un riferimento al servizio WCF
 
 ### <a name="to-add-a-reference-to-an-external-service"></a>Per aggiungere un riferimento a un servizio esterno
 
+::: moniker range="vs-2017"
+
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nome del progetto a cui si desidera aggiungere il servizio, quindi fare clic su **Aggiungi riferimento al servizio**.
 
-     Verrà visualizzata la finestra di dialogo **Aggiungi riferimento al servizio** .
+   Viene visualizzata la finestra di dialogo **Aggiungi riferimento al servizio**.
 
-2. Nella casella **Indirizzo** immettere l'URL per il servizio, quindi fare clic su **Vai** per cercare il servizio. Se il servizio implementa la sicurezza del nome utente e della password, è possibile che venga richiesto di specificare un nome utente e una password.
+1. Nella casella **Indirizzo** immettere l'URL per il servizio, quindi fare clic su **Vai** per cercare il servizio. Se il servizio implementa la sicurezza del nome utente e della password, è possibile che venga richiesto di specificare un nome utente e una password.
 
     > [!NOTE]
     > Si consiglia di fare riferimento solo a servizi provenienti da un'origine attendibile. L'aggiunta di riferimenti da un'origine non attendibile può compromettere la sicurezza.
@@ -43,34 +51,91 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
 
      Quando viene eseguita la ricerca, viene visualizzato un indicatore di stato. È possibile arrestare la ricerca in qualsiasi momento facendo clic su **Interrompi**.
 
-3. Nell'elenco **Servizi** espandere il nodo per il servizio che si desidera utilizzare e selezionare un set di entità.
+1. Nell'elenco **Servizi** espandere il nodo per il servizio che si desidera utilizzare e selezionare un set di entità.
 
-4. Nella casella **spazio dei nomi** immettere lo spazio dei nomi che si desidera utilizzare per il riferimento.
+1. Nella casella **Spazio dei nomi** immettere lo spazio dei nomi che si vuole usare per il riferimento.
 
-5. Fare clic su **OK** per aggiungere il riferimento al progetto.
+1. Fare clic su **OK** per aggiungere il riferimento al progetto.
+
+     Viene generato un client del servizio (proxy) e i metadati che descrivono il servizio vengono aggiunti al file *app. config* .
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. In **Esplora soluzioni**fare doppio clic o toccare il nodo **servizi connessi** .
+
+   Verrà visualizzata la scheda **Configura servizi** .
+
+1. Scegliere **Microsoft WCF Web Service Reference provider**.
+
+   Verrà visualizzata la finestra di dialogo **Configura riferimento al servizio Web WCF** .
+
+   ![Screenshot della finestra di dialogo provider di servizi Web WCF](media/vs-2019/configure-wcf-web-service-reference-dialog.png)
+
+
+1. Nella casella **URI** immettere l'URL per il servizio e quindi fare clic su **Vai** per cercare il servizio. Se il servizio implementa la sicurezza del nome utente e della password, è possibile che venga richiesto di specificare un nome utente e una password.
+
+    > [!NOTE]
+    > Si consiglia di fare riferimento solo a servizi provenienti da un'origine attendibile. L'aggiunta di riferimenti da un'origine non attendibile può compromettere la sicurezza.
+
+     È anche possibile selezionare l'URL nell'elenco **URI** , in cui sono archiviati i 15 URL precedenti in cui sono stati trovati i metadati del servizio validi.
+
+     Quando viene eseguita la ricerca, viene visualizzato un indicatore di stato. È possibile arrestare la ricerca in qualsiasi momento facendo clic su **Interrompi**.
+
+1. Nell'elenco **Servizi** espandere il nodo per il servizio che si desidera utilizzare e selezionare un set di entità.
+
+1. Nella casella **Spazio dei nomi** immettere lo spazio dei nomi che si vuole usare per il riferimento.
+
+1. Fare clic su **fine** per aggiungere il riferimento al progetto.
 
      Viene generato un client del servizio (proxy) e i metadati che descrivono il servizio vengono aggiunti al file *app. config* .
 
+::: moniker-end
+
 ### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Per aggiungere un riferimento a un servizio nella soluzione corrente
+
+::: moniker range="vs-2017"
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nome del progetto a cui si desidera aggiungere il servizio, quindi fare clic su **Aggiungi riferimento al servizio**.
 
-    Verrà visualizzata la finestra di dialogo **Aggiungi riferimento al servizio** .
+    Viene visualizzata la finestra di dialogo **Aggiungi riferimento al servizio**.
 
-2. Fare clic su **individua**.
+1. Fare clic su **individua**.
 
-    Tutti i servizi (sia [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] che i servizi WCF) nella soluzione corrente vengono aggiunti all'elenco **dei servizi** .
+    Tutti i servizi ( [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] e i servizi WCF) nella soluzione corrente vengono aggiunti all'elenco **dei servizi** .
 
-3. Nell'elenco **Servizi** espandere il nodo per il servizio che si desidera utilizzare e selezionare un set di entità.
+1. Nell'elenco **Servizi** espandere il nodo per il servizio che si desidera utilizzare e selezionare un set di entità.
 
-4. Nella casella **spazio dei nomi** immettere lo spazio dei nomi che si desidera utilizzare per il riferimento.
+1. Nella casella **Spazio dei nomi** immettere lo spazio dei nomi che si vuole usare per il riferimento.
 
-5. Fare clic su **OK** per aggiungere il riferimento al progetto.
+1. Fare clic su **OK** per aggiungere il riferimento al progetto.
+
+    Un client del servizio (proxy) genera e i metadati che descrivono il servizio vengono aggiunti al file *app. config* .
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. In **Esplora soluzioni**fare doppio clic o toccare il nodo **servizi connessi** . 
+
+   Verrà visualizzata la scheda **Configura servizi** .
+
+1. Scegliere **Microsoft WCF Web Service Reference provider**.
+
+   Verrà visualizzata la finestra di dialogo **Configura riferimento al servizio Web WCF** .
+
+1. Fare clic su **individua**.
+
+    Tutti i servizi ( [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] e i servizi WCF) nella soluzione corrente vengono aggiunti all'elenco **dei servizi** .
+
+1. Nell'elenco **Servizi** espandere il nodo per il servizio che si desidera utilizzare e selezionare un set di entità.
+
+1. Nella casella **Spazio dei nomi** immettere lo spazio dei nomi che si vuole usare per il riferimento.
+
+1. Fare clic su **fine** per aggiungere il riferimento al progetto.
 
     Un client del servizio (proxy) genera e i metadati che descrivono il servizio vengono aggiunti al file *app. config* .
 
+::: moniker-end
+
 ## <a name="update-a-service-reference"></a>Aggiornare un riferimento al servizio
-Il Entity Data Model di un [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] a volte cambia. Quando si verifica questo problema, è necessario aggiornare il riferimento al servizio.
+
+Il Entity Data Model per un oggetto [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] a volte cambia. Quando si verifica questo problema, è necessario aggiornare il riferimento al servizio.
 
 ### <a name="to-update-a-service-reference"></a>Per aggiornare un riferimento al servizio
 
@@ -79,6 +144,7 @@ Il Entity Data Model di un [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria
      Viene visualizzata una finestra di dialogo dello stato di avanzamento quando il riferimento viene aggiornato dal percorso originale e il client del servizio viene rigenerato in modo da riflettere le modifiche apportate ai metadati.
 
 ## <a name="remove-a-service-reference"></a>Rimuovere un riferimento al servizio
+
 Se un riferimento al servizio non viene più usato, è possibile rimuoverlo dalla soluzione.
 
 ### <a name="to-remove-a-service-reference"></a>Per rimuovere un riferimento al servizio
@@ -92,4 +158,4 @@ Se un riferimento al servizio non viene più usato, è possibile rimuoverlo dall
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Servizi Windows Communication Foundation e WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Servizi di Windows Communication Foundation e WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

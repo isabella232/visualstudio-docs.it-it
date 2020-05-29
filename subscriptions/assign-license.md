@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare licenze ai sottoscrittori
-ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: a90d6f3fec1f619cda397788c130f7514307effd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564160"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183470"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 In qualità di amministratore delle sottoscrizioni di Visual Studio, è possibile usare il portale di amministrazione per assegnare sottoscrizioni a singoli utenti e gruppi di utenti.
@@ -20,7 +20,7 @@ In qualità di amministratore delle sottoscrizioni di Visual Studio, è possibil
 Per i gruppi di utenti, è possibile scegliere la modalità di assegnazione delle sottoscrizioni.  
 - È possibile assegnare le sottoscrizioni una alla volta.
 - È anche possibile caricare in modo rapido e semplice elenchi di sottoscrittori e le relative informazioni di sottoscrizione usando la funzionalità di [aggiunta in blocco](assign-license-bulk.md) .
-- Se l'organizzazione utilizza Microsoft Azure Active Directory (Azure AD), è possibile utilizzare Azure AD gruppi per assegnare le sottoscrizioni a gruppi di utenti.  Questa funzionalità viene distribuita in fasi e potrebbe non essere immediatamente disponibile per l'organizzazione.
+- Se l'organizzazione utilizza Microsoft Azure Active Directory (Azure AD), è possibile [utilizzare Azure ad gruppi per assegnare le sottoscrizioni](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) a gruppi di utenti.  
 
 
 ## <a name="add-a-single-subscriber"></a>Aggiungere un singolo sottoscrittore
@@ -39,7 +39,11 @@ Ecco come assegnare una sottoscrizione di Visual Studio a un nuovo utente per po
    > [!div class="mx-imgBorder"]
    > ![Dettagli sul sottoscrittore](_img/assign-license-add/subscriber-details.png)
 
-    Se si vuole che il sottoscrittore possa accedere ai download software quando accede al [portale delle sottoscrizioni di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), assicurarsi di lasciare selezionata la casella di attivazione/disattivazione dei download nella sezione delle **impostazioni di download**. Se si sceglie di disattivare i download, l'utente non avrà accesso ai download del software, ma potrà comunque accedere a tutti gli altri vantaggi inclusi nella sottoscrizione.
+    > [!NOTE]
+    > Affinché i membri di un tenant di Azure Active Directory siano visibili quando si immette un nome di Sottoscrittore, l'amministratore deve essere un membro del tenant. 
+
+
+    Se si vuole che il sottoscrittore possa accedere ai download software quando accede al [portale delle sottoscrizioni di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), assicurarsi di lasciare selezionata la casella di attivazione/disattivazione dei download nella sezione delle **impostazioni di download**. Se si sceglie di disabilitare i download, l'utente non avrà accesso ai download del software.  Anche l'accesso ai codici Product Key verrà disabilitato.  Il Sottoscrittore avrà comunque accesso a tutti gli altri vantaggi inclusi nella sottoscrizione.
    > [!div class="mx-imgBorder"]
    > ![Accedere ai download](media/access-to-downloads.png)
 
@@ -63,6 +67,6 @@ Dopo l'aggiunta di un Sottoscrittore, un messaggio di posta elettronica di asseg
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Se è necessario aggiungere molti utenti,  vedere le informazioni su come assegnare sottoscrizioni a [più sottoscrittori](assign-license-bulk.md).
-- Serve assistenza?  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Serve aiuto?  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77071947"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183106"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testing unità di codice JavaScript e TypeScript in Visual Studio
 
@@ -28,9 +28,6 @@ I framework supportati sono:
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (questo framework è specifico di Node.js Tools for Visual Studio)
-
-> [!WARNING]
-> Un problema in Tape attualmente impedisce l'esecuzione di test Tape. Se viene eseguito il merge della [richiesta pull n. 361](https://github.com/substack/tape/pull/361), il problema dovrebbe essere risolto.
 
 Se un framework non è supportato, vedere [Aggiungere il supporto per un framework di unit test](#addingFramework) per informazioni sull'aggiunta del supporto.
 
@@ -70,7 +67,7 @@ Se le opzioni di unit test non sono state impostate nelle proprietà del progett
 > [!Note]
 > Le opzioni di unit test prevalgono sulle impostazioni selezionate per i singoli file.
 
-Dopo aver aperto Esplora test (scegliere **Test** > **di Esplora test**di**Windows** > ), Visual Studio individua e visualizza i test. Se inizialmente i test non vengono visualizzati, ricompilare il progetto per aggiornare l'elenco.
+Dopo l'apertura di Esplora test (scegliere **test**  >  **Windows**  >  **Esplora test**di Windows), Visual Studio individua e Visualizza i test. Se inizialmente i test non vengono visualizzati, ricompilare il progetto per aggiornare l'elenco.
 
 ![Esplora test](../javascript/media/UnitTestsDiscoveryMocha.png)
 
@@ -91,7 +88,7 @@ Dopo aver aperto Esplora test (scegliere **Test** > **di Esplora test**di**Windo
 > [!NOTE]
 > Test di profilatura o code coverage non sono attualmente supportati.
 
-### <a name="run-tests-from-the-command-line"></a>Eseguire i test dalla riga di comando
+### <a name="run-tests-from-the-command-line"></a>Eseguire test dalla riga di comando
 
 È possibile eseguire i test dal [prompt dei comandi per gli sviluppatori](/dotnet/framework/tools/developer-command-prompt-for-vs) per Visual Studio 2017 usando il comando seguente:
 
@@ -174,4 +171,4 @@ Oltre alle proprietà sopra riportate, sarà necessario installare anche il pacc
 </PropertyGroup>
 ```
 
-Alcuni framework di test potrebbero richiedere pacchetti npm aggiuntivi per il rilevamento dei test. Ad esempio, lo scherzo richiede il pacchetto jest-editor-support npm. Se necessario, consultare la documentazione del framework specifico.
+Alcuni framework di test possono richiedere pacchetti NPM aggiuntivi per il rilevamento dei test. Per scherzo, ad esempio, è necessario il pacchetto NPM di jest-editor-support. Se necessario, consultare la documentazione relativa al Framework specifico.

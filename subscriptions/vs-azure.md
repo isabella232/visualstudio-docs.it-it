@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: f1e566750c4eb6928dd3c7c3e3407db1d161d621
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564173"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183613"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il tuo [credito mensile Azure DevTest individual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure è la tua sandbox personale per sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
@@ -50,7 +50,10 @@ Se la sottoscrizione di Visual Studio scade o viene rimossa, tutti i vantaggi de
 
 Esistono diversi modi per continuare a usare un credito mensile per Azure.  Per salvare le risorse di Azure, sarà necessario [trasferire le risorse](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) a un'altra sottoscrizione di Azure, indipendentemente dall'azione scelta di seguito. 
 
-- **Se acquisti direttamente la sottoscrizione di Visual Studio**, Acquista una nuova sottoscrizione o rinnova la sottoscrizione tramite [Microsoft Store](https://www.microsoft.com/store/collections/visualstudiosubscription/#:~:text=).  
+- **Se acquisti direttamente la sottoscrizione di Visual Studio**, Acquista una nuova sottoscrizione o rinnova la sottoscrizione tramite Microsoft Store.  
+    - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
 - **Se un utente dell'organizzazione acquista sottoscrizioni per l'organizzazione**, [contattare l'amministratore della sottoscrizione di Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) e richiedere una sottoscrizione che fornisca il credito mensile necessario.  
 - **Se si ha un'altra sottoscrizione di Visual Studio attiva** allo stesso livello di sottoscrizione associata a un altro account Microsoft, è possibile trasferire il vantaggio di Azure a un'altra sottoscrizione attiva di Visual Studio [aggiungendo un account alternativo](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) nel [portale delle sottoscrizioni](https://my.visualstudio.com/subscriptions)di Visual Studio.  
 
@@ -90,9 +93,9 @@ Per domande su come trasferire risorse, rimuovere i limiti di spesa o altri argo
 *Include Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Connettersi a per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>D: come è possibile inviare una richiesta di supporto tecnico dal portale di Azure?

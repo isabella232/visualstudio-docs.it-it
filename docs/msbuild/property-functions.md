@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586681"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183652"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 
@@ -57,7 +57,7 @@ Ad esempio, è possibile usare il codice seguente per impostare una proprietà d
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-Per chiamare un metodo statico, usare la sintassi seguente, dove \<Class> è il nome della classe di sistema, \<Method> è il nome del metodo e (\<Parameters>) è l'elenco di parametri del metodo:
+Per chiamare un metodo statico, usare la sintassi seguente, dove \<Class> è il nome della classe di sistema, \<Method> è il nome del metodo e ( \<Parameters> ) è l'elenco di parametri per il metodo:
 
 ```
 $([Class]::Method(Parameters))
@@ -71,57 +71,57 @@ Ad esempio per impostare una proprietà di compilazione su un nuovo GUID, è pos
 
 Nelle funzioni di proprietà statiche è possibile usare qualsiasi proprietà o metodo statico delle classi di sistema seguenti:
 
-- System.Byte
-- System.Char
-- System.Convert
-- System.DateTime
-- System.Decimal
-- System.Double
-- System.Enum
-- System.Guid
-- System.Int16
-- System.Int32
-- System.Int64
-- System.IO.Path
-- System.Math
-- System.Runtime.InteropServices.OSPlatform
-- System.Runtime.InteropServices.RuntimeInformation
-- System.UInt16
-- System.UInt32
-- System.UInt64
-- System.SByte
-- System.Single
-- System.String
-- System.StringComparer
-- System.TimeSpan
-- System.Text.RegularExpressions.Regex
-- System.UriBuilder
-- System.Version
-- Microsoft.Build.Utilities.ToolLocationHelper
+- <xref:System.Byte?displayProperty=nameWithType>
+- <xref:System.Char?displayProperty=nameWithType>
+- <xref:System.Convert?displayProperty=nameWithType>
+- <xref:System.DateTime?displayProperty=nameWithType>
+- <xref:System.Decimal?displayProperty=nameWithType>
+- <xref:System.Double?displayProperty=nameWithType>
+- <xref:System.Enum?displayProperty=nameWithType>
+- <xref:System.Guid?displayProperty=nameWithType>
+- <xref:System.Int16?displayProperty=nameWithType>
+- <xref:System.Int32?displayProperty=nameWithType>
+- <xref:System.Int64?displayProperty=nameWithType>
+- <xref:System.IO.Path?displayProperty=nameWithType>
+- <xref:System.Math?displayProperty=nameWithType>
+- <xref:System.Runtime.InteropServices.OSPlatform?displayProperty=nameWithType>
+- <xref:System.Runtime.InteropServices.RuntimeInformation?displayProperty=nameWithType>
+- <xref:System.UInt16?displayProperty=nameWithType>
+- <xref:System.UInt32?displayProperty=nameWithType>
+- <xref:System.UInt64?displayProperty=nameWithType>
+- <xref:System.SByte?displayProperty=nameWithType>
+- <xref:System.Single?displayProperty=nameWithType>
+- <xref:System.String?displayProperty=nameWithType>
+- <xref:System.StringComparer?displayProperty=nameWithType>
+- <xref:System.TimeSpan?displayProperty=nameWithType>
+- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
+- <xref:System.UriBuilder?displayProperty=nameWithType>
+- <xref:System.Version?displayProperty=nameWithType>
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper?displayProperty=nameWithType>
 
 Inoltre, è possibile usare le proprietà e i metodi statici seguenti:
 
-- System.Environment::CommandLine
-- System.Environment::ExpandEnvironmentVariables
-- System.Environment::GetEnvironmentVariable
-- System.Environment::GetEnvironmentVariables
-- System.Environment::GetFolderPath
-- System.Environment::GetLogicalDrives
-- System.IO.Directory::GetDirectories
-- System.IO.Directory::GetFiles
-- System.IO.Directory::GetLastAccessTime
-- System.IO.Directory::GetLastWriteTime
-- System.IO.Directory::GetParent
-- System.IO.File::Exists
-- System.IO.File::GetCreationTime
-- System.IO.File::GetAttributes
-- System.IO.File::GetLastAccessTime
-- System.IO.File::GetLastWriteTime
-- System.IO.File::ReadAllText
+- [System.Environment::CommandLine](xref:System.Environment.CommandLine*)
+- [System.Environment::ExpandEnvironmentVariables](xref:System.Environment.ExpandEnvironmentVariables*)
+- [System. Environment:: GetEnvironmentVariable](xref:System.Environment.GetEnvironmentVariable*)
+- [System.Environment::GetEnvironmentVariables](xref:System.Environment.GetEnvironmentVariables*)
+- [System.Environment::GetFolderPath](xref:System.Environment.GetFolderPath*)
+- [System.Environment::GetLogicalDrives](xref:System.Environment.GetLogicalDrives*)
+- [System.IO.Directory::GetDirectories](xref:System.IO.Directory.GetDirectories*)
+- [System.IO.Directory::GetFiles](xref:System.IO.Directory.GetFiles*)
+- [System.IO.Directory::GetLastAccessTime](xref:System.IO.Directory.GetLastAccessTime*)
+- [System.IO.Directory::GetLastWriteTime](xref:System.IO.Directory.GetLastWriteTime*)
+- [System.IO.Directory::GetParent](xref:System.IO.Directory.GetParent*)
+- [System.IO.File::Exists](xref:System.IO.File.Exists*)
+- [System. IO. file:: GetCreationTime](xref:System.IO.File.GetCreationTime*)
+- [System. IO. file:: GetAttributes](xref:System.IO.File.GetAttributes*)
+- [System. IO. file:: GetLastAccessTime](xref:System.IO.File.GetLastAccessTime*)
+- [System. IO. file:: GetLastWriteTime](xref:System.IO.File.GetLastWriteTime*)
+- [System.IO.File::ReadAllText](xref:System.IO.File.ReadAllText*)
 
 ### <a name="calling-instance-methods-on-static-properties"></a>Chiamata di metodi di istanza su proprietà statiche
 
-Se si accede a una proprietà statica che restituisce un'istanza di un oggetto, è possibile richiamare i metodi di istanza di tale oggetto. Per richiamare un metodo di istanza usare la sintassi seguente, dove \<Class> è il nome della classe di sistema, \<Property> è il nome della proprietà, \<Method> è il nome del metodo e (\<Parameters>) è l'elenco di parametri del metodo:
+Se si accede a una proprietà statica che restituisce un'istanza di un oggetto, è possibile richiamare i metodi di istanza di tale oggetto. Per richiamare un metodo di istanza, usare la sintassi seguente, dove \<Class> è il nome della classe di sistema, \<Property> è il nome della proprietà, \<Method> è il nome del metodo e ( \<Parameters> ) è l'elenco di parametri per il metodo:
 
 ```
 $([Class]::Property.Method(Parameters))
@@ -137,7 +137,7 @@ Ad esempio, è possibile usare il codice seguente per impostare una proprietà d
 
 ### <a name="msbuild-property-functions"></a>Funzioni di proprietà MSBuild
 
-È possibile accedere a diversi metodi statici nella compilazione per supportare funzionalità aritmetiche, operazioni logiche bit per bit nonché la gestione dei caratteri di escape. Per accedere a questi metodi usare la sintassi seguente, dove \<Method> è il nome del metodo e (\<Parameters>) è l'elenco di parametri del metodo.
+È possibile accedere a diversi metodi statici nella compilazione per supportare funzionalità aritmetiche, operazioni logiche bit per bit nonché la gestione dei caratteri di escape. Per accedere a questi metodi, usare la sintassi seguente, dove \<Method> è il nome del metodo e ( \<Parameters> ) è l'elenco di parametri per il metodo.
 
 ```
 $([MSBuild]::Method(Parameters))
@@ -174,7 +174,7 @@ Di seguito è riportato un elenco di funzioni di proprietà MSBuild:
 |string NormalizePath(params string[] path)|Ottiene il percorso completo in forma canonica corrispondente al percorso specificato e garantisce che contenga i separatori di directory corretti per il sistema operativo corrente.|
 |string NormalizeDirectory(params string[] path)|Ottiene il percorso completo in forma canonica della directory specificata e garantisce che contenga i separatori di directory corretti per il sistema operativo corrente e una barra rovesciata finale.|
 |string EnsureTrailingSlash(string path)|Se il percorso specificato non dispone di una barra rovesciata, la aggiunge al percorso. Se il percorso è una stringa vuota non lo modifica.|
-|string GetPathOfFileAbove(string file, string startingDirectory)|Cerca e restituisce il percorso completo di un file nella struttura di directory sopra il percorso del file di compilazione corrente o in base a `startingDirectory`, se specificato.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Cerca e restituisce il percorso completo di un file nella struttura di directory sopra il percorso del file di compilazione corrente o in base a `startingDirectory` , se specificato.|
 |GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Individuare e restituire la directory di un file nella directory specificata o in una posizione nella struttura di directory sopra quella directory.|
 |string MakeRelative(string basePath, string path)|Rende `path` relativo a `basePath`. `basePath` deve essere una directory assoluta. Se `path` non può essere reso relativo, viene restituito letteralmente. Simile a `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Restituisce la stringa nel parametro 'defaultValue' solo se il parametro 'conditionValue' è vuoto. In caso contrario, restituisce il valore conditionValue.|

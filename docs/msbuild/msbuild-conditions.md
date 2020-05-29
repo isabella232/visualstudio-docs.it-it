@@ -18,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61ffb650a87fa992a07d749687498cbb8ec6482d
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 926c54be9d31a6d0708b33248b6887c0ac7e324e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586829"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184068"
 ---
 # <a name="msbuild-conditions"></a>Condizioni di MSBuild
 
-MSBuild supporta un set specifico di condizioni che possono essere applicate ovunque sia `Condition` consentito un attributo. La tabella seguente illustra tali condizioni.
+MSBuild supporta un set specifico di condizioni che possono essere applicate ovunque `Condition` sia consentito un attributo. La tabella seguente illustra tali condizioni.
 
 |Condizione|Descrizione|
 |---------------|-----------------|
@@ -37,8 +37,8 @@ MSBuild supporta un set specifico di condizioni che possono essere applicate ovu
 |Exists('`stringA`')|Restituisce `true` se esiste un file o una cartella con il nome `stringA`.<br /><br /> Ad esempio:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti.|
 |HasTrailingSlash('`stringA`')|Restituisce `true` se la stringa specificata contiene un carattere di barra (/) o di barra rovesciata (\\) finale.<br /><br /> Ad esempio:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti.|
 |!|Restituisce `true` se l'operando restituisce `false`.|
-|And|Restituisce `true` se entrambi gli operandi restituiscono `true`.|
-|Oppure|Restituisce `true` se almeno uno degli operandi restituisce `true`.|
+|`And`|Restituisce `true` se entrambi gli operandi restituiscono `true`.|
+|`Or`|Restituisce `true` se almeno uno degli operandi restituisce `true`.|
 |()|Meccanismo di raggruppamento che restituisce `true` se le espressioni contenute all'interno restituiscono `true`.|
 |$if$ ( %expression% ), $else$, $endif$|Controlla se l'oggetto `%expression%` specificato corrisponde al valore stringa del parametro di modello personalizzato passato. Se la condizione `$if$` restituisce `true`, le istruzioni vengono eseguite. In caso contrario, viene controllata la condizione `$else$`. Se la condizione `$else$` è `true`, le istruzioni vengono eseguite. In caso contrario, la condizione `$endif$` termina la valutazione dell'espressione.<br /><br /> Per esempi di utilizzo, vedere [logica dei parametri del modello di progetto/elemento di Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
 

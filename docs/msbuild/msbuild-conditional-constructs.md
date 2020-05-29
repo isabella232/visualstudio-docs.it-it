@@ -22,16 +22,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633382"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184289"
 ---
 # <a name="msbuild-conditional-constructs"></a>Costrutti condizionali di MSBuild
 
-MSBuild fornisce un meccanismo per l'elaborazione con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [Otherwise](../msbuild/otherwise-element-msbuild.md) .
+MSBuild fornisce un meccanismo per l'elaborazione/o con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [in caso contrario](../msbuild/otherwise-element-msbuild.md) .
 
 ## <a name="use-the-choose-element"></a>Usare l'elemento Choose
 
@@ -79,9 +79,21 @@ MSBuild fornisce un meccanismo per l'elaborazione con gli elementi [Choose](../m
 </Project>
 ```
 
+In questo esempio viene usata una condizione su una costante del compilatore `DEFINED_CONSTANT` . Questi sono inclusi nella `DefinedConstants` Proprietà. L'espressione regolare viene utilizzata per trovare la corrispondenza con la costante esatta in un elenco delimitato da punti e virgola.
+
+```xml
+<Choose>
+   <When Condition="$([System.Text.RegularExpressions.Regex]::IsMatch(
+         $(DefineConstants), '^(.*;)*DEFINED_CONSTANT(;.*)*$'))">
+      <!-- When DEFINED_CONSTANT is defined. -->
+   </When>
+   <!-- other conditions -->
+</Choose>
+```
+
 ## <a name="see-also"></a>Vedere anche
 
 - [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)
-- [Quando elemento (MSBuild)When element (MSBuild)](../msbuild/when-element-msbuild.md)
-- [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)
-- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
+- [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)
+- [Elemento in caso contrario (MSBuild)](../msbuild/otherwise-element-msbuild.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

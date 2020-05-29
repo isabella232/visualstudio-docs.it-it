@@ -1,5 +1,5 @@
 ---
-title: Pubblicare in Servizio app di Azure
+title: Eseguire la pubblicazione nel servizio app di Azure
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4bbff0c2d149afddc355afe5f6c93e9d0aea54c0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 842f7912d88031d720f438800ef6b54133ce05c9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72806905"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184506"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio
 
@@ -29,25 +29,35 @@ Questo articolo descrive come usare lo strumento **Pubblica** per una distribuzi
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
-## <a name="publish-to-azure-app-service"></a>Pubblicare in Servizio app di Azure
+## <a name="publish-to-azure-app-service-on-windows"></a>Pubblicare nel servizio app Azure in Windows
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** o usare la voce di menu **Compila** > **Pubblica**.
 
-    ![Comando Pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "Scegliere Pubblica")
+    ![Il comando pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "Scegliere Pubblica")
 
-1. Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. In questo caso, selezionare **Crea nuovo profilo**.
+1. Nella finestra di dialogo **pubblica** selezionare **Azure**.
 
-1. Nella finestra di dialogo **Selezionare una destinazione di pubblicazione** fare clic su **Servizio app**.
+    ![Scegliere la destinazione di pubblicazione](../deployment/media/quickstart-publish-azure.png)
 
-    ![Scegliere il servizio app di AzureChoose Azure App Service](../deployment/media/quickstart-publish-azure.png "Scegliere il servizio app di AzureChoose Azure App Service")
+1. Selezionare * * servizio app Azure (Windows) * * e **quindi Avanti**.
 
-1. Selezionare **Pubblica**. Viene visualizzata la finestra di dialogo **Crea servizio app**. Accedere con l'account Azure, se necessario. Le impostazioni predefinite del Servizio app popolano i campi.
+    ![Scegliere app Azure servizio in Linux](../deployment/media/quickstart-publish-windows-select-azure-service.png)
 
-    ![Creare un servizio app](../deployment/media/quickstart-publish-settings-app-service.png "Creare il servizio app di AzureCreate Azure App Service")
+1. Accedere con l'account Azure, se necessario. Selezionare **Crea un nuovo servizio app Azure...**
 
-1. Selezionare **Crea**. Visual Studio distribuisce l'app al Servizio app di Azure e l'app Web viene caricata nel browser. Nel riquadro **Pubblica** delle proprietà del progetto viene visualizzato l'URL del sito con altri dettagli.
+    ![Collegamento per creare una nuova istanza del servizio app Azure](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-    ![Riquadro Pubblica delle proprietà con il riepilogo di un profilo](../deployment/media/quickstart-publish-app-service-summary.png)
+1. Nella finestra di dialogo **Crea servizio app Azure (Windows)** vengono popolati i campi **nome app**, **gruppo di risorse**e **piano di servizio app** . È possibile mantenere questi nomi o modificarli. Quando si è pronti, selezionare **Crea**.
+
+    ![Scegliere app Azure servizio](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+
+1. Nella finestra di dialogo **pubblica** l'istanza appena creata è stata selezionata automaticamente. Quando si è pronti, fare clic su **fine**.
+
+    ![Scegliere app Azure servizio](../deployment/media/quickstart-publish-windows-select-instance.png)
+
+1. Selezionare **Pubblica**. Visual Studio distribuisce l'app al Servizio app di Azure e l'app Web viene caricata nel browser. Nel riquadro **Pubblica** delle proprietà del progetto viene visualizzato l'URL del sito con altri dettagli.
+
+    ![Riquadro Pubblica delle proprietà con il riepilogo di un profilo](../deployment/media/quickstart-publish-windows-summary-page.png)
 
 ## <a name="clean-up-resources"></a>Pulire le risorse
 

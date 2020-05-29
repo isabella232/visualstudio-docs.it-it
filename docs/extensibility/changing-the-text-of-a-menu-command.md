@@ -1,5 +1,5 @@
 ---
-title: Modifica del testo di un comando di menu Documenti Microsoft
+title: Modifica del testo di un comando di menu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff6af7bdd64342e86201af79dbe5c7968b247d6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 88a20d9f29ae86f7946389cafd26d67c244caea7
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739837"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183691"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>Modificare il testo di un comando di menu
-La procedura seguente illustra come modificare l'etichetta di <xref:System.ComponentModel.Design.IMenuCommandService> testo di un comando di menu utilizzando il servizio.
+Nei passaggi seguenti viene illustrato come modificare l'etichetta di testo di un comando di menu utilizzando il <xref:System.ComponentModel.Design.IMenuCommandService> servizio.
 
-## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Modifica dell'etichetta di un comando di menu con IMenuCommandService
+## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Modifica di un'etichetta del comando di menu con IMenuCommandService
 
-1. Creare un progetto `MenuText` VSIX denominato con un comando di menu denominato **ChangeMenuText**. Per ulteriori informazioni, consultate [Creare un'estensione con un comando](../extensibility/creating-an-extension-with-a-menu-command.md)di menu.
+1. Creare un progetto VSIX denominato `MenuText` con un comando di menu denominato **ChangeMenuText**. Per altre informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Nel file *vsct* aggiungere `TextChanges` il flag al comando di menu, come illustrato nell'esempio seguente.
+2. Nel file con *estensione vsct* aggiungere il `TextChanges` flag al comando di menu, come illustrato nell'esempio seguente.
 
     ```xml
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">
@@ -39,7 +39,7 @@ La procedura seguente illustra come modificare l'etichetta di <xref:System.Compo
     </Button>
     ```
 
-3. Nel file *ChangeMenuText.cs* creare un gestore eventi che verrà chiamato prima che venga visualizzato il comando di menu.
+3. Nel file *ChangeMenuText.cs* creare un gestore eventi che verrà chiamato prima di visualizzare il comando di menu.
 
     ```csharp
     private void OnBeforeQueryStatus(object sender, EventArgs e)
@@ -52,37 +52,27 @@ La procedura seguente illustra come modificare l'etichetta di <xref:System.Compo
     }
     ```
 
-    È inoltre possibile aggiornare lo stato del comando <xref:System.ComponentModel.Design.MenuCommand.Visible%2A> <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>di <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> menu in <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> questo metodo modificando le proprietà , e sull'oggetto .
+    È inoltre possibile aggiornare lo stato del comando di menu in questo metodo modificando le <xref:System.ComponentModel.Design.MenuCommand.Visible%2A> <xref:System.ComponentModel.Design.MenuCommand.Checked%2A> proprietà, e <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> per l' <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> oggetto.
 
-4. Nel ChangeMenuText costruttore, sostituire il codice di inizializzazione <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> e posizionamento del comando originale con il codice che crea un (anziché un `MenuCommand`) che rappresenta il comando di menu, aggiunge il <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> gestore eventi e dà il comando di menu al servizio di comando di menu.
+4. Nel costruttore ChangeMenuText sostituire il codice di inizializzazione e posizionamento del comando originale con il codice che crea un <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (anziché un `MenuCommand` ) che rappresenta il comando di menu, aggiunge il <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> gestore eventi e assegna il comando di menu al servizio comando di menu.
 
-    Ecco come dovrebbe apparire:
+    Di seguito è riportato un aspetto simile al seguente:
 
     ```csharp
-    private ChangeMenuText(Package package)
+    private ChangeMenuText(AsyncPackage package, OleMenuCommandService commandService)
     {
-        if (package == null)
-        {
-            throw new ArgumentNullException(nameof(package));
-        }
-
-        this.package = package;
-
-        OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
-        if (commandService != null)
-        {
-            CommandID menuCommandID = new CommandID(MenuGroup, CommandId);
-            EventHandler eventHandler = this.ShowMessageBox;
-            OleMenuCommand menuItem = new OleMenuCommand(ShowMessageBox, menuCommandID);
-            menuItem.BeforeQueryStatus +=
-                new EventHandler(OnBeforeQueryStatus);
-            commandService.AddCommand(menuItem);
-        }
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+        
+        var menuCommandID = new CommandID(CommandSet, CommandId);
+        var menuItem = new OleMenuCommand(this.Excute, menuCommandID);
+        menuItem.BeforeQueryStatus += new EventHandler(OnBeforeQueryStatus);
+        commandService.AddCommand(menuItem);
     }
     ```
 
-5. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale di Visual Studio.The experimental instance of Visual Studio appears.
+5. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale di Visual Studio.
 
-6. Nel menu **Strumenti** verrà visualizzato un comando denominato **Richiama ChangeMenuText**.
+6. Nel menu **strumenti** dovrebbe essere visualizzato un comando denominato **Invoke ChangeMenuText**.
 
-7. Fare clic sul comando. Verrà visualizzata la finestra di messaggio che annuncia che **MenuItemCallback** è stato chiamato. Quando si chiude la finestra di messaggio, si note che il nome del comando del menu Strumenti è ora **Nuovo testo**.
+7. Fare clic sul comando. Verrà visualizzata la finestra di messaggio che annuncia che è stato chiamato **MenuItemCallback** . Quando si chiude la finestra di messaggio, si noterà che il nome del comando nel menu strumenti è ora **nuovo testo**.

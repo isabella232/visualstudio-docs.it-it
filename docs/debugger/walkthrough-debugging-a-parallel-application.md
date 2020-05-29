@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.openlocfilehash: 84d43ede5fcca1ae76d155cb8799a61900926d7b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416425"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183847"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procedura dettagliata: debug di un'applicazione parallela inC#Visual Studio ( C++, Visual Basic,)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procedura dettagliata: debug di un'applicazione parallela in Visual Studio (C#, Visual Basic, C++)
 
 In questa procedura dettagliata viene illustrato come usare le finestre **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela. Queste finestre consentono di comprendere e verificare il comportamento in fase di esecuzione del codice che usa il [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o il [runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime). Nella procedura dettagliata viene fornito un esempio di codice con punti di interruzione incorporati. Una volta interrotta l'esecuzione del codice, viene illustrato come esaminarlo usando le finestre **Attività in parallelo** e **Stack in parallelo**.
 
@@ -46,7 +46,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 - Come le finestre affrontano il ridimensionamento tramite il raggruppamento, lo zoom e altre funzionalità correlate.
 
 ## <a name="prerequisites"></a>Prerequisiti
- In questa procedura dettagliata si presuppone che **Just My Code** sia abilitata per impostazione predefinita nelle versioni più recenti di Visual Studio. Nel menu **Strumenti** fare clic su **Opzioni**, espandere il nodo **Debug**, selezionare **Generale**, quindi **Abilita Just My Code (solo gestito)** . Se non si imposta questa funzionalità, si può comunque utilizzare la procedura dettagliata, ma è possibile che i risultati differiscano dalle illustrazioni.
+ In questa procedura dettagliata si presuppone che **Just My Code** sia abilitata per impostazione predefinita nelle versioni più recenti di Visual Studio. Nel menu **Strumenti** fare clic su **Opzioni**, espandere il nodo **Debug**, selezionare **Generale**, quindi **Abilita Just My Code (solo gestito)**. Se non si imposta questa funzionalità, si può comunque utilizzare la procedura dettagliata, ma è possibile che i risultati differiscano dalle illustrazioni.
 
 ## <a name="c-sample"></a>Esempio C#
  Se si utilizza l'esempio in C#, la procedura dettagliata presuppone inoltre che il codice esterno sia nascosto. Per attivare o disattivare la visualizzazione del codice esterno, fare clic con il pulsante destro del mouse sull'intestazione della tabella **Nome** nella finestra **Stack di chiamate**, quindi selezionare o deselezionare **Mostra codice esterno**. Se non si imposta questa funzionalità, si può comunque utilizzare la procedura dettagliata, ma è possibile che i risultati differiscano dalle illustrazioni.
@@ -66,32 +66,32 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
    ::: moniker range=">=vs-2019"
 
-   Se la finestra di avvio non è aperta, scegliere **File** > **finestra Start**.
+   Se la finestra di avvio non è aperta, **File** scegliere > **finestra di avvio**file.
 
-   Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+   Nella finestra Start scegliere **Crea un nuovo progetto**.
 
-   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Successivamente, scegliere **C#** , **C++** o **Visual Basic** dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma. 
+   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Successivamente, scegliere **C#**, **C++** o **Visual Basic** dall'elenco lingua, quindi scegliere **Windows** dall'elenco piattaforma. 
 
-   Dopo aver applicato la lingua e i filtri della piattaforma, scegliere l' **app console (.NET Core)** o C++, per, modello **applicazione console** , quindi scegliere **Avanti**.
+   Dopo aver applicato la lingua e i filtri della piattaforma, scegliere l' **app console (.NET Core)** o, per C++, modello **applicazione console** , quindi scegliere **Avanti**.
 
    > [!NOTE]
-   > Se non viene visualizzato il modello corretto, passare a **strumenti** > **ottenere strumenti e funzionalità...** , che consente di aprire il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
+   > Se non viene visualizzato il modello corretto, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo per **desktop .NET** o **sviluppo desktop con C++** , quindi scegliere **modifica**.
 
-   Nella finestra **Configura nuovo progetto** Digitare un nome o usare il nome predefinito nella casella **nome progetto** . Scegliere **Crea**.
+   Nella finestra **Configura nuovo progetto** Digitare un nome o usare il nome predefinito nella casella **nome progetto** . Quindi scegliere **Crea**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** scegliere le opzioni seguenti:
+   Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** scegliere le opzioni seguenti:
 
-   - Per un' C# app, in **Visual C#** scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)** .
-   - Per un'app Visual Basic, in **Visual Basic**scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)** .
-   - Per un' C++ app, in **Visual C++** scegliere **desktop di Windows**, quindi scegliere **applicazione console Windows**.
+   - Per un'app C#, in **Visual c#** scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)**.
+   - Per un'app Visual Basic, in **Visual Basic**scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)**.
+   - Per un'app C++, in **Visual C++** scegliere **desktop di Windows**, quindi scegliere **applicazione console di Windows**.
 
-   Se non viene visualizzata l' **app console (.NET Core)** o, per C++il modello di progetto di **applicazione console** , passare a **strumenti** > **ottenere strumenti e funzionalità...** , che consente di aprire il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
+   Se non viene visualizzata l' **app console (.NET Core)** o, per C++, il modello di progetto di **app console** , passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo per **desktop .NET** o **sviluppo desktop con C++** , quindi scegliere **modifica**.
 
    Quindi, digitare un nome o utilizzare il nome predefinito e fare clic su **OK**.
 
-   Scegliere **OK**.
+   Selezionare **OK**.
    ::: moniker-end
 
    Verrà visualizzato un nuovo progetto console. Una volta creato il progetto, viene visualizzato un file di origine.
@@ -111,7 +111,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
     Notare che vi sono quattro chiamate a `Debugger.Break` (`DebugBreak` nell'esempio C++). Pertanto, non è necessario inserire punti di interruzione; la semplice esecuzione dell'applicazione determinerà fino a quattro interruzioni nel debugger.
 
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilizzo della finestra Stack in parallelo: visualizzazione Thread
- Scegliere **Avvia debug** dal menu **Debug**. Attendere che venga raggiunto il primo punto di interruzione.
+ Scegliere **Avvia debug**dal menu **debug** . Attendere che venga raggiunto il primo punto di interruzione.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Per visualizzare lo stack di chiamate di un singolo thread
 
@@ -127,11 +127,11 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      Utilizzando la finestra **stack in parallelo** , è possibile visualizzare più stack di chiamate contemporaneamente in un'unica visualizzazione. Nella figura seguente viene mostrata la finestra **stack in parallelo** sopra la finestra **stack di chiamate** .
 
-     ![Visualizzazione thread nella finestra stack in parallelo](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")
+     ![Visualizzazione thread nella finestra Stack in parallelo](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")
 
      Lo stack di chiamate del thread principale viene visualizzato in una casella, mentre gli stack di chiamate degli altri quattro thread sono raggruppati in un'altra casella. I quattro thread vengono raggruppati insieme in quanto i rispettivi stack frame condividono gli stessi contesti del metodo, vale a dire si trovano negli stessi metodi: `A`, `B` e `C`. Per visualizzare gli ID e i nomi dei thread che condividono la stessa casella, passare il puntatore del mouse sulla casella con l'intestazione (**4 thread**). Il thread corrente viene visualizzato in grassetto.
 
-     ![Descrizione comando che Mostra gli ID e i nomi dei thread](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")
+     ![Descrizione comando che mostra ID e nomi dei thread](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")
 
      La freccia gialla indica lo stack frame attivo del thread corrente.
 
@@ -145,7 +145,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 1. Per riprendere l'esecuzione fino al raggiungimento del secondo punto di interruzione, fare clic su **Continua** nel menu **Debug**. Nell'illustrazione seguente viene mostrata la struttura ad albero del thread in corrispondenza del secondo punto di interruzione.
 
-     ![Finestra stack in parallelo che mostra molti rami](../debugger/media/pdb_walkthrough_2.png "PDB_Walkthrough_2")
+     ![Finestra Stack in parallelo con molti rami](../debugger/media/pdb_walkthrough_2.png "PDB_Walkthrough_2")
 
      In corrispondenza del primo punto di interruzione, i quattro thread erano passati tutti dal metodo S.A a S.B e a S.C. Le informazioni sono ancora visibili nella finestra **Stack in parallelo**, ma i quattro thread sono avanzati. Uno di essi ha proseguito fino a S.D, quindi a S.E. Un altro ha proseguito fino a S.F, S.G e S.H. Gli altri due hanno proseguito fino a S.I e S.J, dopo di che uno è passato a S.K mentre l'altro ha proseguito fino al codice esterno non utente.
 
@@ -161,7 +161,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      Fare clic con il pulsante destro del mouse su S.C e scegliere **Passa a frame**. Uno dei comandi presenta un segno di spunta che indica lo stack frame del thread corrente. È possibile passare a quel frame dello stesso thread (si sposterà soltanto la freccia verde) oppure passare all'altro thread (si sposterà anche l'evidenziazione blu). Nell'illustrazione seguente viene mostrato il sottomenu.
 
-     ![Menu stack con 2 opzioni in C mentre J è corrente](../debugger/media/pdb_walkthrough_3.png "PDB_Walkthrough_3")
+     ![Menu degli stack con 2 opzioni su C mentre J è corrente](../debugger/media/pdb_walkthrough_3.png "PDB_Walkthrough_3")
 
      Quando un contesto del metodo è associato a un unico stack frame, nell'intestazione della casella viene visualizzato **1 thread**; fare doppio clic per passare a esso. Facendo doppio clic su un contesto del metodo al quale sono associati più frame, verrà visualizzato automaticamente il menu. Passando il mouse sui contesti del metodo, notare il triangolo nero sulla destra. Il menu di scelta rapida verrà visualizzato anche facendo clic su quel triangolo.
 
@@ -179,11 +179,11 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      Se più thread si trovano nello stesso metodo ma questo, a sua volta, non si trovava all'inizio dello stack di chiamate, il metodo viene visualizzato in caselle diverse. Un esempio in corrispondenza del punto di interruzione corrente è S.L, il quale contiene tre thread e viene visualizzato in tre caselle. Fare doppio clic su S.L.
 
-     ![Percorso di esecuzione nella finestra stack in parallelo](../debugger/media/pdb_walkthrough_3b.png "PDB_Walkthrough_3B")
+     ![Percorso di esecuzione nella finestra Stack in parallelo](../debugger/media/pdb_walkthrough_3b.png "PDB_Walkthrough_3B")
 
      Si noti che S.L appare in grassetto nelle altre due caselle, così da poter vedere in quali altri punti viene visualizzato. Per visualizzare quali frame chiamano in S.L e quali sono chiamati da S.L, fare clic sul pulsante **Attiva/Disattiva visualizzazione metodo** nella barra degli strumenti. Nella figura seguente viene illustrata la visualizzazione del metodo della finestra **stack in parallelo** .
 
-     ![Visualizzazione metodo nella finestra stack in parallelo](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")
+     ![Visualizzazione metodo nella finestra Stack in parallelo](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")
 
      Si noti come il diagramma sia imperniato sul metodo selezionato e lo abbia posizionato nella propria casella al centro della visualizzazione. I chiamati e i chiamanti vengono visualizzati nella parte superiore e in quella inferiore. Fare nuovamente clic sul pulsante **Attiva/Disattiva visualizzazione metodo** per uscire da questa modalità.
 
@@ -211,7 +211,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      La **Visualizzazione panoramica** risulta utile anche con diagrammi di grandi dimensioni nella finestra **Stack in parallelo**. Per impostazione predefinita, la **visualizzazione occhio** è attiva. È tuttavia possibile alternarlo facendo clic sul pulsante tra le barre di scorrimento nell'angolo inferiore destro della finestra, come illustrato nella figura seguente.
 
-     ![Visualizzazione degli&#45;occhi di Bird nella finestra stack in parallelo](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
+     ![Visualizzazione occhio&#45;di Bird nella finestra stack in parallelo](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
 
      Nella visualizzazione occhi di Bird è possibile spostare il rettangolo per eseguire rapidamente il panning intorno al diagramma.
 
@@ -232,7 +232,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 2. Scegliere **Finestre** dal menu **Debug**, quindi **Thread**. Ancorare la finestra **Thread** nella parte inferiore di Visual Studio.
 
-3. Scegliere **Finestre** dal menu **Debug**, quindi **Stack di chiamate**. Ancorare la finestra **Stack di chiamate** nella parte inferiore di Visual Studio.
+3. Scegliere **Finestre** dal menu **Debug**, quindi **Stack di chiamate**. Ancorare la finestra **stack di chiamate** nella parte inferiore di Visual Studio.
 
 4. Fare doppio clic su un thread nella finestra **Thread** per far sì che diventi il thread corrente. I thread correnti presentano la freccia gialla. Quando si modifica il thread corrente, le altre finestre vengono aggiornate. Si esamineranno quindi le attività.
 
@@ -256,9 +256,9 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      ![Due attività in attesa nella finestra attività](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     L'attività 4, a sua volta, è in attesa di un monitoraggio di proprietà del thread assegnato all'attività 2. (Fare clic con il pulsante destro del mouse sulla riga di intestazione e scegliere **colonne** > **assegnazione thread** per visualizzare il valore di assegnazione thread per l'attività 2).
+     L'attività 4, a sua volta, è in attesa di un monitoraggio di proprietà del thread assegnato all'attività 2. (Fare clic con il pulsante destro del mouse sulla riga di intestazione e scegliere **colonne**  >  **Assegnazione di thread** per visualizzare il valore di assegnazione thread per l'attività 2).
 
-     ![Attività in attesa e descrizione comando nella finestra attività](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
+     ![Attività in attesa e descrizione comando nella finestra Attività](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
      È possibile contrassegnare un'attività facendo clic sul flag nella prima colonna della finestra **attività** .
 
@@ -266,7 +266,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      Quando in precedenza è stata usata la finestra **Stack in parallelo**, sono stati visualizzati i thread dell'applicazione. Visualizzando nuovamente la finestra **Stack in parallelo**, questa volta si vedranno le attività dell'applicazione. A tale scopo, selezionare **Attività** nella casella in alto a sinistra. Nell'illustrazione che segue viene mostrata la visualizzazione Attività.
 
-     ![Visualizzazione attività nella finestra stack in parallelo](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")
+     ![Visualizzazione attività nella finestra Stack in parallelo](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")
 
      I thread che al momento non eseguono attività non vengono mostrati nella visualizzazione Attività della finestra **Stack in parallelo**. Inoltre, per i thread che eseguono attività, alcuni stack frame che non sono importanti per le attività vengono filtrati dalla parte superiore e dalla parte inferiore dello stack.
 
@@ -282,11 +282,11 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      Per visualizzare meglio la relazione padre-figlio, fare clic con il pulsante destro del mouse sulla riga dell'intestazione di colonna e quindi scegliere **visualizzazione padre/figlio**. Si dovrebbe vedere l'illustrazione seguente.
 
-     ![Visualizzazione&#45;figlio padre nella finestra attività](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")
+     ![Visualizzazione figlio&#45;padre nella finestra attività](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")
 
      Si noti che l'attività 4 e l'attività 5 sono in esecuzione nello stesso thread (visualizzare la colonna di **assegnazione thread** se è nascosta). Queste informazioni non vengono visualizzate nella finestra **thread** . Questo è un altro vantaggio della finestra **attività** . Per conferma, visualizzare la finestra **Stack in parallelo**. Assicurarsi di essere nella visualizzazione **Attività**. Individuare le attività 4 e 5 facendo doppio clic su di esse nella finestra **attività** . L'evidenziazione blu nella finestra **Stack in parallelo** verrà di conseguenza aggiornata. È anche possibile individuare le attività 4 e 5 analizzando le descrizioni comandi nella finestra **Stack in parallelo**.
 
-     ![Visualizzazione attività nella finestra stack in parallelo](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")
+     ![Visualizzazione attività nella finestra Stack in parallelo](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")
 
      Fare clic con il pulsante destro del mouse su S.P nella finestra **Stack in parallelo**, quindi scegliere **Passa a thread**. La finestra passerà alla visualizzazione Thread e verrà visualizzato il thread corrispondente. È possibile vedere entrambe le attività nello stesso thread.
 
@@ -298,15 +298,15 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 1. Per riprendere l'esecuzione fino al raggiungimento del terzo punto di interruzione, fare clic su **Continua** nel menu **Debug**. Fare clic sull'intestazione di colonna **ID** per ordinare in base all'ID. Si dovrebbe vedere l'illustrazione seguente.
 
-     ![Quattro stati attività nella finestra stack in parallelo](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")
+     ![Quattro stati di attività nella finestra Attività in parallelo](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")
 
-     Essendo stata completata, l'attività 5 non viene più visualizzata. Se ciò non avviene nel computer in uso e il deadlock non viene visualizzato, avanzare di un passaggio premendo **F11**.
+     Essendo stata completata, l'attività 5 non viene più visualizzata. Se questo non è il caso del computer e il deadlock non viene visualizzato, eseguire il passaggio una volta premendo **F11**.
 
      Le attività 3 e 4 sono ora in attesa l'una sull'altra e sono bloccate. Vi sono inoltre 5 nuove attività che sono attività figlio dell'attività 2 e vengono ora pianificate. Le attività pianificate sono attività avviate nel codice ma non ancora eseguite. Le relative colonne **Percorso** e **Assegnazione thread** sono pertanto vuote.
 
      Visualizzare nuovamente la finestra **Stack in parallelo**. L'intestazione di ogni casella presenta una descrizione comandi nella quale sono visualizzati gli ID e i nomi dei thread. Passare alla visualizzazione Attività nella finestra **Stack in parallelo**. Passare il mouse su un'intestazione per visualizzare l'ID, il nome e lo stato dell'attività come mostrato nell'illustrazione seguente.
 
-     ![Descrizione comando intestazione nella finestra stack in parallelo](../debugger/media/pdb_walkthrough_11.png "PDB_Walkthrough_11")
+     ![Descrizione comando dell'intestazione nella finestra Stack in parallelo](../debugger/media/pdb_walkthrough_11.png "PDB_Walkthrough_11")
 
      È possibile raggruppare le attività in base alle colonne. Nella finestra **attività** fare clic con il pulsante destro del mouse sull'intestazione di colonna **stato** , quindi scegliere **Raggruppa per stato**. Nella figura seguente viene illustrata la finestra **attività** raggruppate in base allo stato.
 
@@ -320,14 +320,14 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      È possibile bloccare il thread sottostante di un'attività o di più attività oppure bloccare tutti i thread a eccezione di quello assegnato. Un thread bloccato viene rappresentato nella finestra **attività** , così come si trova nella finestra **thread** , da un'icona di *sospensione* blu.
 
-## <a name="summary"></a>Riepilogo
+## <a name="summary"></a>Summary
  In questa procedura dettagliata sono state illustrate le finestre del debugger **Attività in parallelo** e **Stack in parallelo**. Utilizzare queste finestre con progetti reali che a loro volta utilizzano codice multithreading. È possibile esaminare codice parallelo scritto in C++, C# o Visual Basic.
 
 ## <a name="see-also"></a>Vedere anche
 - [Debug di applicazioni multithread](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
-- [Debug di codice gestito](../debugger/debugging-managed-code.md)
+- [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Programmazione parallela](/dotnet/standard/parallel-programming/index)
 - [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime)
-- [Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)
-- [Uso della finestra Attività](../debugger/using-the-tasks-window.md)
+- [Utilizzo della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)
+- [Utilizzo della finestra Attività](../debugger/using-the-tasks-window.md)

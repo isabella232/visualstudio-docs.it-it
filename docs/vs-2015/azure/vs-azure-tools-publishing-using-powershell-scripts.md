@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 264647dbb22e90d722bc8a80a5b05c08d6e8366b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6913ec4c80b5cb87cf6cd980ff2da73fab309a02
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917487"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184016"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test
 
@@ -27,10 +27,10 @@ Utilizzando questi script, è possibile eseguire il provisioning (noto anche com
 ## <a name="prerequisites"></a>Prerequisiti
 
 * Azure SDK 2.3 o versioni successive Vedere [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/). Non è necessario Azure SDK per generare script per i progetti Web. Questa funzionalità è riservata ai progetti Web, non ai ruoli Web nei servizi cloud.
-* Azure PowerShell 0.7.4 o versioni successive. Vedere [Come installare e configurare Azure PowerShell](/powershell/azure/overview).
+* Azure PowerShell 0.7.4 o versione successiva Vedere [Come installare e configurare Azure PowerShell](/powershell/azure/overview).
 * [Windows PowerShell 3.0](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) o versione successiva.
 
-## <a name="additional-tools"></a>Altri strumenti
+## <a name="additional-tools"></a>Strumenti aggiuntivi
 
 Sono disponibili altri strumenti e risorse per l'utilizzo di PowerShell in Visual Studio per lo sviluppo in Azure. Vedere [PowerShell Tools per Visual Studio](https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597).
 
@@ -40,19 +40,19 @@ Sono disponibili altri strumenti e risorse per l'utilizzo di PowerShell in Visua
 
 ## <a name="scripts-that-visual-studio-generates"></a>Script generati da Visual Studio
 
-Visual Studio genera una cartella a livello di soluzione denominata **PublishScripts** che contiene due file di Windows PowerShell, uno script di pubblicazione per la macchina virtuale o sito Web e un modulo che contiene funzioni che è possibile utilizzare negli script. Visual Studio genera inoltre un file in formato JSON che specifica i dettagli del progetto in distribuzione.
+Visual Studio genera una cartella a livello di soluzione denominata **PublishScripts** che contiene due file di Windows PowerShell, uno script di pubblicazione per la macchina virtuale o il sito Web e un modulo che contiene funzioni che è possibile usare negli script. Visual Studio genera inoltre un file in formato JSON che specifica i dettagli del progetto in distribuzione.
 
 ### <a name="windows-powershell-publish-script"></a>Pubblicazione di script da parte di Windows PowerShell
 
 Lo script di pubblicazione contiene specifici passaggi di pubblicazione per la distribuzione in una macchina virtuale o in un sito Web. Visual Studio fornisce la colorazione della sintassi per lo sviluppo di Windows PowerShell . La Guida per le funzioni è disponibile, ed è possibile modificare liberamente le funzioni nello script per adattarle ai propri requisiti.
 
-### <a name="windows-powershell-module"></a>modulo di Windows PowerShell
+### <a name="windows-powershell-module"></a>Modulo di Windows PowerShell
 
 Il modulo Windows PowerShell generato da Visual Studio contiene funzioni che utilizzano lo script di pubblicazione. Queste funzioni di Azure PowerShell non possono essere modificate. Vedere [Come installare e configurare Azure PowerShell](/powershell/azure/overview).
 
 ### <a name="json-configuration-file"></a>File di configurazione JSON.
 
-Il file JSON viene creato nella cartella **Configurazioni** e contiene dati di configurazione che consentono di specificare esattamente quali risorse distribuire in Azure. Il nome del file generato da Visual Studio è project-name-WAWS-dev. json se è stato creato un sito Web, o project name-VM-dev.json se è stata creata una macchina virtuale. Di seguito è riportato un esempio di un file di configurazione JSON generato quando si crea un sito Web. La maggior parte dei valori è facilmente comprensibile. Il nome del sito Web viene generato da Azure, pertanto potrebbe non corrispondere al nome del progetto.
+Il file JSON viene creato nella cartella delle**** configurazioni e contiene i dati di configurazione che specificano le risorse esatte da distribuire in Azure. Il nome del file generato da Visual Studio è project-name-WAWS-dev. json se è stato creato un sito Web, o project name-VM-dev.json se è stata creata una macchina virtuale. Di seguito è riportato un esempio di un file di configurazione JSON generato quando si crea un sito Web. La maggior parte dei valori è facilmente comprensibile. Il nome del sito Web viene generato da Azure, pertanto potrebbe non corrispondere al nome del progetto.
 
 ```json
 {
@@ -144,17 +144,17 @@ Quando si crea una macchina virtuale, il file di configurazione JSON è simile a
 
 È possibile modificare la configurazione JSON per modificare l'operazione eseguita quando si eseguono gli script di pubblicazione. Le sezioni `cloudService` e `virtualMachine` sono necessarie, ma è possibile eliminare la sezione `databases` se non è necessario. Le proprietà che sono vuote nel file di configurazione predefinito generato da Visual Studio sono facoltative, mentre quelle in cui sono presenti valori sono obbligatorie.
 
-Se si dispone di un sito Web che dispone di più ambienti di distribuzione (noti come slot) anziché di un unico sito di produzione in Azure, è possibile includere il nome dello slot nel nome del sito Web nel file di configurazione JSON. Ad esempio, se si ha un sito Web denominato **mysite** e uno slot denominato **test**, l'URI è `mysite-test.cloudapp.net`, ma il nome corretto da usare nel file di configurazione è mysite(test). È possibile eseguire questo solo se il sito Web e gli slot sono già presenti nella sottoscrizione. Se non sono presenti, creare il sito Web eseguendo lo script senza specificare lo slot, quindi creare lo slot nel [portale di Azure](https://portal.azure.com/) e successivamente eseguire lo script con il nome del sito Web modificato. Per altre informazioni sugli slot di distribuzione per le app Web, vedere [Configurare ambienti di gestione temporanea per le app Web del Servizio app di Azure](/azure/app-service/web-sites-staged-publishing).
+Se si dispone di un sito Web che dispone di più ambienti di distribuzione (noti come slot) anziché di un unico sito di produzione in Azure, è possibile includere il nome dello slot nel nome del sito Web nel file di configurazione JSON. Se ad esempio si dispone di un sito Web denominato **mysite** e di uno slot correlato denominato **test**, l'URI corrispondente è `mysite-test.cloudapp.net`, ma il nome corretto da usare nel file di configurazione è mysite(test). È possibile eseguire questo solo se il sito Web e gli slot sono già presenti nella sottoscrizione. Se non sono presenti, creare il sito Web eseguendo lo script senza specificare lo slot, quindi creare lo slot nel [portale di Azure](https://portal.azure.com/) e successivamente eseguire lo script con il nome del sito Web modificato. Per altre informazioni sugli slot di distribuzione per le app Web, vedere [Configurare ambienti di gestione temporanea per le app Web del Servizio app di Azure](/azure/app-service/web-sites-staged-publishing).
 
 ## <a name="how-to-run-the-publish-scripts"></a>Come eseguire gli script di pubblicazione
 
 Se non è stato eseguito prima uno script Windows PowerShell, è innanzitutto necessario impostare i criteri di esecuzione per consentire l'esecuzione di script. I criteri costituiscono una funzionalità di sicurezza volta a impedire agli utenti di eseguire script di Windows PowerShell se sono vulnerabili a malware o virus che comportano l'esecuzione di script.
 
-### <a name="run-the-script"></a>Esecuzione dello script
+### <a name="run-the-script"></a>Eseguire lo script
 
 1. Creare il pacchetto di distribuzione Web per il progetto. Un pacchetto di distribuzione Web è un archivio compresso (con estensione zip) che contiene i file che si desidera copiare in una macchina virtuale o il sito Web. È possibile creare pacchetti di distribuzione Web in Visual Studio per qualsiasi applicazione web.
 
-   ![Creazione del pacchetto di distribuzione Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
+   ![Creare pacchetto di distribuzione web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
    Per ulteriori informazioni, vedere [Procedura: Creare un pacchetto di distribuzione Web in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). È anche possibile automatizzare la creazione del pacchetto di Distribuzione Web, come descritto nella sezione [Personalizzazione ed estensione degli script di pubblicazione](#customizing-and-extending-the-publish-scripts).
 
@@ -244,7 +244,7 @@ Per automatizzare la compilazione del progetto, aggiungere il codice che chiama 
     }
     ```
 
-1. Sostituire `New-WebDeployPackage` con il seguente codice e sostituire i segnaposto per la costruzione di riga `$msbuildCmd`. Questo codice è per Visual Studio 2015. Se si usa Visual Studio 2017, modificare la proprietà **VisualStudioVersion** in `15.0` (`12.0` per Visual Studio 2013).
+1. Sostituire `New-WebDeployPackage` con il seguente codice e sostituire i segnaposto per la costruzione di riga `$msbuildCmd`. Questo codice è per Visual Studio 2015. Se si usa Visual Studio 2017, modificare la proprietà **VisualStudioVersion** in `15.0` ( `12.0` per Visual Studio 2013).
 
     ```powershell
     function New-WebDeployPackage
@@ -252,7 +252,7 @@ Per automatizzare la compilazione del progetto, aggiungere il codice che chiama 
         #Write a function to build and package your web application
     ```
 
-    Per compilare l'applicazione Web, usare MsBuild.exe. Per informazioni, vedere il riferimento della riga di comando di MSBuild all'indirizzo: [http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
+    Per compilare l'applicazione Web, usare MsBuild.exe. Per informazioni, vedere riferimenti alla riga di comando di MSBuild all'indirizzo:[http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -312,18 +312,18 @@ Per visualizzare la Guida per le funzioni è possibile utilizzare il prompt dei 
 
 **AzureWebAppPublishModule**
 
-| Nome funzione | Descrizione |
+| Nome della funzione | Descrizione |
 | --- | --- |
-| Aggiungere AzureSQLDatabase |Creare un nuovo database SQL Azure. |
+| Aggiungere AzureSQLDatabase |Creare un nuovo database SQL di Azure. |
 | Aggiungere AzureSQLDatabases |Crea database SQL di Azure da valori nel file di configurazione JSON generato da Visual Studio. |
 | Aggiungere-AzureVM |Crea una macchina virtuale di Azure e restituisce l'URL della macchina virtuale distribuita. La funzione imposta i prerequisiti e quindi chiama la funzione **New-AzureVM** (modulo di Azure) per creare una nuova macchina virtuale. |
 | Aggiungere AzureVMEndpoints |Aggiunge nuovi endpoint di input a una macchina virtuale e restituisce la macchina virtuale con il nuovo endpoint. |
 | Aggiungere AzureVMStorage |Crea un nuovo account di archiviazione di Azure nella sottoscrizione corrente. Il nome dell'account inizia con "devtest" seguito da una stringa alfanumerica univoca. La funzione restituisce il nome del nuovo account di archiviazione. Specificare un percorso o un gruppo di affinità per il nuovo account di archiviazione. |
-| Aggiungere-AzureWebsite |Crea un sito Web con nome e percorso specificati. Questa funzione chiama la funzione **New-AzureWebsite** nel modulo di Azure. Se la sottoscrizione non include già un sito Web con il nome specificato, questa funzione crea il sito Web e restituisce un oggetto sito Web. In caso contrario restituirà `$null`. |
+| Aggiungere-AzureWebsite |Crea un sito Web con nome e percorso specificati. Questa funzione chiama la funzione **New-AzureWebsite** nel modulo di Azure. Se la sottoscrizione non include già un sito Web con il nome specificato, questa funzione crea il sito Web e restituisce un oggetto sito Web. In caso contrario, viene restituito `$null`. |
 | Backup-Sottoscrizione |Salva la sottoscrizione di Azure corrente nella variabile `$Script:originalSubscription` nell'ambito dello script. Questa funzione salva nell'ambito dello script la sottoscrizione di Azure corrente, ottenuta da `Get-AzureSubscription -Current`, e il relativo account di archiviazione, nonché la sottoscrizione modificata da questo script, contenuto nella variabile `$UserSpecifiedSubscription`, e il relativo account di archiviazione. Salvando i valori, è possibile usare una funzione, ad esempio `Restore-Subscription`, per ripristinare allo stato corrente la sottoscrizione e l'account di archiviazione corrente originale se è stato modificato lo stato corrente. |
 | Trovare-AzureVM |Ottiene la macchina virtuale di Azure specificata. |
 | Formato DevTestMessageWithTime |Antepone la data e l’ora a un messaggio. Questa funzione è progettata per i messaggi scritti ai flussi di errore e dettagliati. |
-| Get-AzureSQLDatabaseConnectionString |Assembla una stringa di connessione per connettersi a un database SQL Azure. |
+| Get-AzureSQLDatabaseConnectionString |Assembla una stringa di connessione per connettersi a un database SQL di Azure. |
 | Get-AzureVMStorage |Restituisce il nome del primo account di archiviazione con il modello di nome "devtest *" (senza distinzione tra maiuscole e minuscole) nella posizione o nel gruppo di affinità specificato. Se l'account di archiviazione "devtest*" non corrisponde alla posizione o al gruppo di affinità, la funzione lo ignora. Specificare un percorso o un gruppo di affinità. |
 | Get-MSDeployCmd |Restituisce un comando per eseguire lo strumento MsDeploy.exe. |
 | Nuovo AzureVMEnvironment |Trova o crea una macchina virtuale nella sottoscrizione che corrisponde ai valori nel file di configurazione JSON. |
@@ -341,7 +341,7 @@ Per visualizzare la Guida per le funzioni è possibile utilizzare il prompt dei 
 
 **Pubblicare-WebApplication**
 
-| Nome funzione | Descrizione |
+| Nome della funzione | Descrizione |
 | --- | --- |
 | Nuovo-AzureWebApplicationEnvironment |Crea risorse di Azure, ad esempio una macchina virtuale o un sito Web. |
 | Nuovo-WebDeployPackage |Questa funzione non è implementata. È possibile aggiungere comandi in questa funzione per compilare il progetto. |
@@ -350,4 +350,4 @@ Per visualizzare la Guida per le funzioni è possibile utilizzare il prompt dei 
 | Test-WebApplication |Questa funzione non è implementata. È possibile aggiungere comandi in questa funzione per testare l’applicazione. |
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per altre informazioni sulla creazione di script PowerShell, leggere [Scripting con Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx) e vedere gli altri script di Azure PowerShell nello [Script Center](https://azure.microsoft.com/documentation/scripts/).
+Per altre informazioni sulla creazione di script PowerShell, leggere [Scripting con Windows PowerShell](/powershell/scripting/overview) e vedere gli altri script di Azure PowerShell nello [Script Center](https://azure.microsoft.com/documentation/scripts/).

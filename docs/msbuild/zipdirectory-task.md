@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094566"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183067"
 ---
 # <a name="zipdirectory-task"></a>Attività ZipDirectory
 
@@ -43,16 +43,16 @@ Crea un archivio con estensione *zip* dal contenuto di una directory.
 |Parametro|Descrizione|
 |---------------|-----------------|
 |`DestinationFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio<br /><br /> Percorso completo del primo file con estensione *zip* da creare.|
-|`Overwrite`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il file di destinazione, se disponibile, verrà sovrascritto. L'impostazione predefinita è `false`.|
+|`Overwrite`|Parametro `Boolean` facoltativo.<br /><br /> Se `true` , il file di destinazione verrà sovrascritto, se esistente. Il valore predefinito è `false`.|
 |`SourceDirectory`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica la directory da cui creare un archivio con estensione *zip*.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 
- L'esempio seguente (se utilizzato come file *con estensione targets* importato) crea un archivio con estensione *zip* dalla directory di output dopo la compilazione di un progetto. La `$(OutputPath)` proprietà viene in genere definita in un file di progetto MSBuild, pertanto `output.zip`un file di progetto che importa il file seguente produrrebbe un archivio zip:
+ L'esempio seguente, se usato come file con *estensione targets* importato, crea un archivio *zip* dalla directory di output dopo la compilazione di un progetto. La `$(OutputPath)` proprietà verrebbe normalmente definita in un file di progetto MSBuild, quindi un file di progetto che importa il file seguente produrrebbe un archivio zip `output.zip` :
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
