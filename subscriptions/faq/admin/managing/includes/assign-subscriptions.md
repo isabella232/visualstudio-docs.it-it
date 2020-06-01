@@ -7,12 +7,12 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 7c90cb398e174d5b023668040352de11e1caaee3
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386170"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84200408"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Qual è la procedura per assegnare le sottoscrizioni di Visual Studio?
 
@@ -22,7 +22,7 @@ Per assegnare le sottoscrizioni singolarmente:
 
 1. Selezionare la scheda [Gestisci sottoscrittori](https://manage.visualstudio.com/subscribers) nella parte superiore della pagina in [manage.visualstudio.com](https://manage.visualstudio.com)
 2. Selezionare Aggiungi e digitare il nome e l'indirizzo di posta elettronica dell'utente a cui si vuole assegnare una sottoscrizione.
-    - Se l'organizzazione usa Azure Active Directory, nel campo del nome verrà eseguita una ricerca per trovare gli utenti nella directory corrente. È possibile effettuare una selezione dai risultati della ricerca o aggiungere manualmente un utente.
+    1. Se l'organizzazione usa Azure Active Directory, nel campo del nome verrà eseguita una ricerca per trovare gli utenti nella directory corrente. È possibile effettuare una selezione dai risultati della ricerca o aggiungere manualmente un utente.
 3. Se si vuole che il sottoscrittore possa accedere ai download software quando accede al [portale delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/), assicurarsi di lasciare selezionata la casella di attivazione/disattivazione dei download nella sezione delle impostazioni di download.
 4. Completare la sezione Preferenze di comunicazione in modo che Microsoft sappia quale lingua usare per inviare il messaggio di posta elettronica di assegnazione dei sottoscrittori.
 5. Per aggiungere note associate all'assegnazione, usare la selezione Riferimento.
