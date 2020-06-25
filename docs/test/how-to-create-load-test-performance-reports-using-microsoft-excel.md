@@ -1,7 +1,7 @@
 ---
 title: Creare report di prestazioni dei test di carico usando Microsoft Excel
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a94a44d0a826cbda1d50b212f61bef86ad29f05c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589071"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287818"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel
 
@@ -29,7 +29,7 @@ Sono disponibili due tipi di report del test di carico:
 - **Tendenza** È possibile generare l'analisi delle tendenze in due o più risultati del test di carico. I risultati vengono visualizzati usando grafici a linee, ma i dati sono disponibili in tabelle pivot.
 
 > [!TIP]
-> È inoltre possibile creare manualmente report di Microsoft Word copiando e incollando dati dalle visualizzazioni Riepilogo, Grafici e Tabelle. Vedere [Procedura: creare manualmente un rapporto](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)sulle prestazioni del test di carico utilizzando Microsoft Word .
+> È inoltre possibile creare manualmente report di Microsoft Word copiando e incollando dati dalle visualizzazioni Riepilogo, Grafici e Tabelle. Vedere [procedura: creare manualmente un report di prestazioni di un test di carico usando Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
 Ciascun report può essere usato per condividere dati relativi alle prestazioni con le parti interessate e mostrare se le prestazioni complessive e l'integrità del sistema stanno migliorando o peggiorando.
 
@@ -38,13 +38,13 @@ Le definizioni del report vengono archiviate nel database del test di carico. Qu
 Inoltre, la cartella di lavoro di Excel può essere condivisa con le parti interessate in modo che esse non debbano connettersi al database per vedere il report.
 
 > [!NOTE]
-> È possibile condividere la cartella di lavoro di Excel; tuttavia, solo gli utenti con computer in cui è installato Visual Studio saranno in grado di modificare i fogli di calcolo. Gli altri utenti non vedranno l'opzione **Rapporto test** di carico nella barra multifunzione di **Office,** ma saranno in grado di visualizzare la cartella di lavoro.
+> È possibile condividere la cartella di lavoro di Excel; tuttavia, solo gli utenti con computer in cui è installato Visual Studio saranno in grado di modificare i fogli di calcolo. Gli altri utenti non vedranno l'opzione **rapporto test di carico** nella barra multifunzione di **Office** , ma saranno in grado di visualizzare la cartella di lavoro.
 
 Nella figura seguente è illustrato un esempio di report in cui viene mostrata una correlazione tra una riduzione della velocità della transazione di aggiornamento del carrello e l'alterazione del contatore di percentuale processore. Ciò indica un potenziale problema nel codice dell'applicazione, anziché nel database o nella rete, ed è una situazione adatta alla diagnosi tramite il profiler ASP.NET.
 
 ![Possibile problema nel codice dell'applicazione](../test/media/lt_excel.png)
 
-I report di Excel possono essere generati **nell'Analizzatore test**di carico , utilizzando il pulsante **Crea report di Excel** sulla barra degli strumenti o da Excel utilizzando l'opzione Rapporto test di **carico** nella scheda Test di **carico** della barra multifunzione di **Office.**
+È possibile generare report di Excel nell' **analizzatore test di carico**utilizzando il pulsante **Crea rapporto Excel** sulla barra degli strumenti oppure da Excel utilizzando l'opzione **rapporto test** di carico nella scheda **test di carico** della barra multifunzione di **Office** .
 
 > [!NOTE]
 > Se si aggiungono commenti a un test di carico, vengono visualizzati nel report di Excel.
@@ -58,15 +58,15 @@ I report di Excel possono essere generati **nell'Analizzatore test**di carico , 
    - Dopo avere completato un test di carico, nella pagina **Risultati test di carico** scegliere il pulsante **Crea rapporto Excel** sulla barra degli strumenti.
 
       > [!NOTE]
-      > Se il pulsante **Crea report Excel** è disabilitato nella barra degli strumenti del **Visualizzatore risultati test prestazioni Web,** potrebbe essere necessario eseguire Microsoft Excel una volta prima che venga abilitato. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
+      > Se il pulsante **Crea rapporto Excel** è disabilitato nella barra degli strumenti del **Visualizzatore risultati test prestazioni Web** , potrebbe essere necessario eseguire Microsoft Excel una volta prima che sia abilitato. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
 
-      Verrà aperto Microsoft Excel con la **Creazione guidata report test**di carico .
+      Verrà aperto Microsoft Excel con la **procedura guidata genera un rapporto test di carico**.
 
-   **O**
+   **OR**
 
-   1. Aprire Microsoft Excel, selezionare la scheda **Test di carico** sulla barra multifunzione di **Office** e quindi scegliere Rapporto test **di carico**.
+   1. Aprire Microsoft Excel, selezionare la scheda **test di carico** sulla barra multifunzione di **Office** , quindi scegliere **rapporto test di carico**.
 
-       Verrà visualizzata la **Creazione guidata report Test di carico.**
+       Viene visualizzata la **procedura guidata genera un rapporto test di carico** .
 
    2. Nella pagina **Selezionare il database che contiene i test di carico**, in **Nome server** digitare il nome del server che contiene i risultati del test di carico.
 
@@ -85,7 +85,7 @@ I report di Excel possono essere generati **nell'Analizzatore test**di carico , 
    > [!NOTE]
    > È possibile generare un report di confronto solo per due risultati del test di carico. Se si selezionano un solo risultato o più di due risultati del test di carico, verrà visualizzato un messaggio di avviso.
 
-8. Nella pagina **Selezionare i contatori per il report,** in **Selezionare uno o più contatori da aggiungere al report,** è disponibile un elenco espandibile di contatori per personalizzare il report. Selezionare i contatori che si vuole confrontare dalle due esecuzioni di test selezionate nel report e scegliere **Fine**.
+8. Nella pagina **selezionare i contatori per il rapporto** , in **selezionare uno o più contatori da aggiungere al report** è disponibile un elenco espandibile di contatori per personalizzare il report. Selezionare i contatori che si vuole confrontare dalle due esecuzioni di test selezionate nel report e scegliere **Fine**.
 
 9. Viene generato il report della cartella di lavoro di Excel che include i seguenti fogli di lavoro:
 
@@ -113,15 +113,15 @@ I report di Excel possono essere generati **nell'Analizzatore test**di carico , 
    - Dopo avere completato un test di carico, nella pagina **Risultati test di carico** scegliere il pulsante **Crea rapporto Excel** sulla barra degli strumenti.
 
       > [!NOTE]
-      > Se il pulsante **Crea report Excel** è disabilitato nella barra degli strumenti del **Visualizzatore risultati test prestazioni Web,** potrebbe essere necessario eseguire Microsoft Excel una volta prima che venga abilitato. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
+      > Se il pulsante **Crea rapporto Excel** è disabilitato nella barra degli strumenti del **Visualizzatore risultati test prestazioni Web** , potrebbe essere necessario eseguire Microsoft Excel una volta prima che sia abilitato. Quando viene installato Visual Studio Enterprise, nel computer viene copiato il componente aggiuntivo dei test di carico di Visual Studio Entperprise per Microsoft Excel. Per completare il processo di installazione del componente aggiuntivo è tuttavia necessario eseguire Microsoft Excel.
 
-      Verrà aperto Microsoft Excel con la **Creazione guidata report test**di carico .
+      Verrà aperto Microsoft Excel con la **procedura guidata genera un rapporto test di carico**.
 
-   **O**
+   **OR**
 
-   1. Aprire Microsoft Excel, selezionare la scheda **Test di carico** sulla barra multifunzione di **Office** e quindi scegliere Rapporto test **di carico**.
+   1. Aprire Microsoft Excel, selezionare la scheda **test di carico** sulla barra multifunzione di **Office** , quindi scegliere **rapporto test di carico**.
 
-       Verrà visualizzata la **Creazione guidata report Test di carico.**
+       Viene visualizzata la **procedura guidata genera un rapporto test di carico** .
 
    2. Nella pagina **Selezionare il database che contiene i test di carico**, in **Nome server** digitare il nome del server che contiene i risultati del test di carico.
 
@@ -148,6 +148,6 @@ I report di Excel possono essere generati **nell'Analizzatore test**di carico , 
 
 I risultati e i report del test di carico contengono informazioni potenzialmente riservate che potrebbero essere utilizzate per realizzare un attacco al computer o alla rete. I risultati e i report del test di carico contengono nomi di computer e stringhe di connessione. Quando si condividono i report del test di carico con altre persone, è necessario tenere in considerazione tali rischi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md)

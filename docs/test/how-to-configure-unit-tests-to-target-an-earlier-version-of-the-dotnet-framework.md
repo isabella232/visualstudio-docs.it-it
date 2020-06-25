@@ -1,18 +1,18 @@
 ---
 title: Unit test con la versione precedente di .NET Framework come destinazione
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596021"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288169"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: configurare unit test destinati a una versione precedente di .NET Framework
 
@@ -64,7 +64,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Ridestinazione per progetti di unit test C#
 
-1. Creare un nuovo progetto di progetto **di unit test** di C.
+1. Creare un nuovo progetto di **progetto di unit test** di C#.
 
 2. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test C#.
 
@@ -83,7 +83,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 2. In **Esplora soluzioni** scegliere **Scarica progetto** dal nuovo progetto di test C++.
 
-3. In **Esplora soluzioni** scegliere il progetto di test C++ scaricato, quindi scegliere **Modifica \<nome progetto>.vcxproj**.
+3. In **Esplora soluzioni**scegliere il progetto di test C++ scaricato e quindi scegliere **modifica \<project name> . vcxproj**.
 
    Il file *VCXPROJ* viene aperto nell'editor.
 
@@ -104,8 +104,8 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 6. In **Esplora soluzioni** selezionare **Ricarica progetto** dal menu di scelta rapida del nuovo progetto di test C++.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)Advanced compiler settings dialog box (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+- [Finestra di dialogo impostazioni del compilatore avanzate (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

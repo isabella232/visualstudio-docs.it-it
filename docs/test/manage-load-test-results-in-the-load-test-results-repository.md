@@ -1,7 +1,7 @@
 ---
 title: Gestire i risultati dei test di carico
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, results repository
 - results, load test
@@ -11,12 +11,12 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd0562a6cceeb50d43222a7850de11d52b0587cf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9945551469541cdcffe520844da600d758dc43b5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584426"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286765"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gestire i risultati dei test di carico nel repository dei risultati del test di carico
 
@@ -46,17 +46,17 @@ Quando è installato Visual Studio Enterprise, l'archivio dei risultati dei test
 |Attività|Argomenti correlati|
 |-|-----------------------|
 |**Configurare un repository dei risultati del test di carico**: è possibile configurare un repository dei risultati del test di carico in un database SQL. **Nota:** un repository del test di carico può essere creato anche quando si installa un test controller. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).||
-|**Selezione e visualizzazione di un repository dei risultati:** è possibile selezionare un repository dei risultati specifico. La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. I risultati ottenuti dai computer agente o locale possono essere memorizzati in qualsiasi server SQL in cui sia stato creato un archivio dei risultati del test di carico. In entrambi i casi è necessario identificare la posizione in cui archiviare i risultati del test di carico utilizzando la finestra **Gestisci controller test**.|-   [Procedura: selezionare un repository dei risultati di un test di caricoHow to: Select a load test results repository](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Procedura: accedere ai risultati dei test di carico per l'analisiHow to: Access load test results for analysis](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Eliminare un risultato del test di carico dal repository**: è possibile rimuovere un risultato del test di carico dall'**Editor test di carico** utilizzando la finestra di dialogo **Apri e gestisci risultati test di carico**.|-   [Procedura: eliminare i risultati dei test di carico da un repositoryHow to: Delete load test results from a repository](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**Importare ed esportare risultati in un repository:** è possibile importare ed esportare risultati del test di carico dall'**Editor test di carico**.|-   [Procedura: importare i risultati dei test di carico in un repositoryHow to: Import load test results into a repository](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Procedura: esportare i risultati dei test di carico da un repositoryHow to: Export load test results from a repository](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**Selezione e visualizzazione di un repository dei risultati:** è possibile selezionare un repository dei risultati specifico. La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. I risultati ottenuti dai computer agente o locale possono essere memorizzati in qualsiasi server SQL in cui sia stato creato un archivio dei risultati del test di carico. In entrambi i casi è necessario identificare la posizione in cui archiviare i risultati del test di carico utilizzando la finestra **Gestisci controller test**.|-   [Procedura: selezionare un repository dei risultati del test di carico](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Procedura: accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)|
+|**Eliminare un risultato del test di carico dal repository**: è possibile rimuovere un risultato del test di carico dall'**Editor test di carico** utilizzando la finestra di dialogo **Apri e gestisci risultati test di carico**.|-   [Procedura: eliminare i risultati di un test di carico da un repository](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**Importare ed esportare risultati in un repository:** è possibile importare ed esportare risultati del test di carico dall'**Editor test di carico**.|-   [Procedura: importare i risultati di un test di carico in un repository](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Procedura: esportare i risultati di un test di carico da un repository](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>Attività correlate
 
-[Analizzare i risultati dei test di caricoAnalyze load test results](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 È possibile visualizzare i risultati di un test di carico in esecuzione e di un test di carico completato tramite l'**analizzatore test di carico**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Analizzare i risultati dei test di caricoAnalyze load test results](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Procedura: accedere ai risultati dei test di carico per l'analisiHow to: Access load test results for analysis](../test/how-to-access-load-test-results-for-analysis.md)
+- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Procedura: accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)

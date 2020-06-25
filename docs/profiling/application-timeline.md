@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128283"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285980"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
 
@@ -49,6 +49,8 @@ I passaggi principali sono indicati di seguito.
 
 3. Selezionare **Sequenza temporale applicazione** e fare clic su **Avvia** nella parte inferiore della finestra.
 
+   ![Strumento Sequenza temporale applicazione selezionato](../profiling/media/apptimelineselect.png "Strumento Sequenza temporale applicazione")
+
    > [!NOTE]
    > È possibile che venga visualizzata una finestra Controllo dell'account utente che richiede le autorizzazioni per l’esecuzione di *VsEtwCollector.exe*. Fare clic su **Sì**.
 
@@ -82,7 +84,7 @@ Nella sequenza temporale vengono anche visualizzati tutti i contrassegni utente 
 
 ### <a name="ui-thread-utilization-graph"></a><a name="BKMK_UI_thread_utilization_graph"></a> Grafico Utilizzo thread UI
 
-![Grafico dell'utilizzo della CPU](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
+![Grafico Utilizzo CPU](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
 
 Il grafico **Utilizzo thread UI (%)** è un grafico a barre che visualizza la quantità relativa di tempo impiegato in una categoria durante l'estensione di una raccolta.
 
@@ -117,13 +119,13 @@ Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, fil
 |||
 |-|-|
 |**Ordina per**|Ordina in base a ora di inizio o lunghezza degli eventi.|
-|![Raggruppa gli eventi per frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Aggiunge o rimuove una categoria **Frame** di primo livello che raggruppa gli eventi per frame.|
-|![Filtrare l'elenco dei dettagli della sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|
-|![Personalizzare le informazioni sui dettagli della sequenza temporale](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
+|![Raggruppare gli eventi per frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Aggiunge o rimuove una categoria **Frame** di primo livello che raggruppa gli eventi per frame.|
+|![Elenco dettagli filtro sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|
+|![Personalizzare le informazioni sui dettagli della cronologia](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Blog del team WPF: nuovo strumento di analisi delle prestazioni dell'interfaccia utente per le applicazioni WPFWPF team blog: New UI performance analysis tool for WPF applications](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [Blog del team WPF: nuovo strumento di analisi delle prestazioni dell'interfaccia utente per applicazioni WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Ottimizzazione delle prestazioni di applicazioni WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Profilatura in Visual Studio](../profiling/index.yml)

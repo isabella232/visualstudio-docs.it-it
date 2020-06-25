@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 0564e9d36fafb32dfdefa1e5a581d298da744a0a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586565"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289170"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Pubblicazione in Servizio app di Azure in Windows
 
@@ -63,7 +63,7 @@ Con una sottoscrizione Azure attiva, creare un servizio app con un'app Web vuota
 
 Per creare un servizio app temporaneo che non richiede una sottoscrizione di Azure eseguire le operazioni seguenti:
 
-1. Aprire il browser a [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/).
+1. Aprire il browser a [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/) .
 1. Selezionare **App Web** come tipo di applicazione e quindi selezionare **Successivi**.
 1. Selezionare **Empty Site** (Sito vuoto) e quindi **Crea**.
 1. Accedere con un qualsiasi account di accesso di social networking e dopo qualche istante il sito sarà pronto all'URL visualizzato.
@@ -79,7 +79,7 @@ Dopo aver creato un servizio app con un'app Web vuota in esecuzione nella propri
 
 Durante la pubblicazione nel servizio app di Azure da Visual Studio 2017 e versioni successive vengono copiati solo i file del progetto nel server. Per questa ragione. è necessario creare i file per configurare l'ambiente del server.
 
-1. In **Esplora soluzioni**di Visual Studio fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi > nuovo elemento...**. Nella finestra di dialogo visualizzata, selezionare il modello "Azure Web. config (Fast CGI)" e selezionare OK. Verrà creato un file `web.config` nella radice del progetto.
+1. In **Esplora soluzioni**di Visual Studio fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi > nuovo elemento...**. Nella finestra di dialogo visualizzata selezionare il modello "Azure web.config (Fast CGI)" e selezionare OK. Verrà creato un file `web.config` nella radice del progetto.
 
 1. Modificare la voce `PythonHandler` in `web.config` in modo che il percorso corrisponda a quello dell'installazione Python nel server (vedere [Riferimento alla configurazione di IIS](https://www.iis.net/configreference) (iis.net) per tutti i dettagli). Ad esempio, per Python 3.6.1 x64 la voce sarà la seguente:
 
@@ -129,7 +129,7 @@ Durante la pubblicazione nel servizio app di Azure da Visual Studio 2017 e versi
     ALLOWED_HOSTS = ['vspython-test-02.azurewebsites.net']
     ```
 
-    Se l'URL non viene aggiunto alla matrice si verifica l'errore "DisallowedHost at/Invalid HTTP_HOST header: '\<URL sito\>'. You may need to add '\<URL sito\>' to ALLOWED_HOSTS" (Host non consentito in/Intestazione HTTP_HOST non valida: '<URL sito>'. Può essere necessario aggiungere 'URL sito' ad ALLOWED_HOSTS).
+    Se non si aggiunge l'URL alla matrice, viene restituito l'errore "DisallowedHost at/invalid HTTP_HOST header:' \<site URL\> '. Potrebbe essere necessario aggiungere ' \<site URL\> ' al ALLOWED_HOSTS. "
 
     Si noti che quando la matrice è vuota, Django autorizza automaticamente 'localhost', ma l'aggiunta dell'URL di produzione rimuove tale funzionalità. Per questo motivo si potrebbe voler mantenere copie separate di `settings.py` per sviluppo e produzione, oppure utilizzare le variabili di ambiente per controllare i valori della fase di esecuzione.
 
@@ -145,7 +145,7 @@ Durante la pubblicazione nel servizio app di Azure da Visual Studio 2017 e versi
 
     ![Pubblicare in Azure, passaggio 1, Visual Studio 2017 e versioni successive, sottoscrizioni esistenti](media/tutorials-common-publish-1a-2017.png)
 
-    b. Se si usa un servizio app temporaneo in try.azurewebsites.net o in caso contrario è necessario usare un profilo di pubblicazione, selezionare **>** il controllo per trovare il **profilo di importazione**, selezionare l'opzione e quindi selezionare **pubblica**. Viene richiesto di specificare il percorso del file `.publishsettings` scaricato in precedenza.
+    b. Se si usa un servizio app temporaneo in try.azurewebsites.net o in caso contrario è necessario usare un profilo di pubblicazione, selezionare il **>** controllo per trovare il **profilo di importazione**, selezionare l'opzione e quindi selezionare **pubblica**. Viene richiesto di specificare il percorso del file `.publishsettings` scaricato in precedenza.
 
     ![Pubblicare in Azure, passaggio 1, Visual Studio 2017 e versioni successive, servizio app temporaneo](media/tutorials-common-publish-1b-2017.png)
 
@@ -209,7 +209,7 @@ Come parte di questo processo, Visual Studio esegue anche i passaggi seguenti:
 - Creare un file `web.config` nel server che contiene i puntatori appropriati alla funzione `wsgi_app` dell'app e all'interprete Python 3.4 predefinito del servizio app.
 - Disattivare l'elaborazione per i file della cartella `static` del progetto (le regole si trovano in `web.config`).
 - Pubblicare l'ambiente virtuale nel server.
-- Aggiungere un file `web.debug.config` e gli strumenti di debug ptvsd per abilitare il debug remoto.
+- Aggiungere un `web.debug.config` file e gli strumenti di debug per abilitare il debug remoto. Per Visual Studio 2019 versione 16,4 e versioni precedenti, gli strumenti di debug sono ptvsd. Per Visual Studio 2019 versione 16,5 e successive, gli strumenti di debug sono debugpy.
 
 Come segnalato in precedenza, questi passaggi automatici semplificano il processo di pubblicazione ma rendono più difficile il controllo dell'ambiente Python. Ad esempio, il file `web.config` viene creato solo nel server ma non viene aggiunto al progetto. Anche il processo di pubblicazione richiede più tempo poiché copia l'intero ambiente virtuale dal computer di sviluppo anziché basarsi sulla configurazione del server.
 

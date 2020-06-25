@@ -1,7 +1,7 @@
 ---
 title: Insiemi di contatori di test di carico
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.dialog.countersetmapping
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 224ac14a0d670648f8047a82a8abef0c2b7b2654
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1eeb99d58a9fc0547d118c529878d8b02cc83dda
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113429"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287688"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procedura: Gestire insiemi di contatori usando l'Editor test di carico
 
@@ -50,7 +50,7 @@ La gestione degli insiemi di contatori implica la scelta del gruppo di computer 
     > [!NOTE]
     > Ciò vale solo se nel test di carico sono incluse più impostazioni di esecuzione.
 
-4. (Facoltativo) Scegliere **Aggiungi computer** per aggiungere un nuovo computer da monitorare. Verrà richiesto di specificare un nome. Digitare il nome di un computer per visualizzare i nodi sotto la nuova voce, ad esempio **ASP.NET**, **IIS**, **SQL** e altri. Selezionare le caselle di controllo accanto ai nodi da selezionare. I nuovi contatori vengono visualizzati nel riquadro **Anteprima selezioni**.
+4. (Facoltativo) Scegliere **Aggiungi computer** per aggiungere un nuovo computer da monitorare. Verrà richiesto di indicare un nome. Digitare il nome di un computer per visualizzare i nodi sotto la nuova voce, ad esempio **ASP.NET**, **IIS**, **SQL** e altri. Selezionare le caselle di controllo accanto ai nodi da selezionare. I nuovi contatori vengono visualizzati nel riquadro **Anteprima selezioni**.
 
 5. (Facoltativo) Nella casella di testo **Tag computer** digitare un tag da associare al computer. Ad esempio, "TestMachine12 in lab3."
 
@@ -60,7 +60,7 @@ La gestione degli insiemi di contatori implica la scelta del gruppo di computer 
 
 6. Scegliere **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

@@ -1,5 +1,5 @@
 ---
-title: Aggiunta di un menu alla barra dei menu di Visual Studio . Documenti Microsoft
+title: Aggiunta di un menu alla barra dei menu di Visual Studio | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,49 +11,51 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e5a6e1714dbb87abc67fbf722c3bbd1a194a5b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: b87fc73c1ed4b24ccfbd604e3bb08c9b02b62524
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740306"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285387"
 ---
-# <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Aggiungere un menu alla barra dei menu di Visual StudioAdd a menu to the Visual Studio menu bar
+# <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Aggiungere un menu alla barra dei menu di Visual Studio
 
-Questa procedura dettagliata viene illustrato come aggiungere un menu alla barra dei menu dell'ambiente di sviluppo integrato (IDE) di Visual Studio. La barra dei menu dell'IDE contiene categorie di menu quali **File**, **Modifica**, **Visualizza**, **Finestra**e **Guida**.
+Questa procedura dettagliata illustra come aggiungere un menu alla barra dei menu di Visual Studio Integrated Development Environment (IDE). La barra dei menu dell'IDE contiene le categorie di menu, ad esempio **file**, **modifica**, **Visualizza**, **finestra**e **Guida**.
 
-Prima di aggiungere un nuovo menu alla barra dei menu di Visual Studio, valutare se i comandi devono essere inseriti all'interno di un menu esistente. Per ulteriori informazioni sul posizionamento dei comandi, vedere [Menu e comandi per Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).
+Prima di aggiungere un nuovo menu alla barra dei menu di Visual Studio, valutare se i comandi devono essere posizionati all'interno di un menu esistente. Per ulteriori informazioni sulla selezione host dei comandi, vedere [menu e comandi per Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).
 
-I menu vengono dichiarati nel file *vsct* del progetto. Per ulteriori informazioni sui menu e sui file *vsct,* consultate [Comandi, menu e barre degli strumenti.](../extensibility/internals/commands-menus-and-toolbars.md)
+I menu vengono dichiarati nel file con *estensione vsct* del progetto. Per ulteriori informazioni sui menu e sui file con *estensione vsct* , vedere [comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md).
 
-Completando questa procedura dettagliata, è possibile creare un menu denominato **TestMenu** che contiene un comando.
+Completando questa procedura dettagliata, è possibile creare un menu denominato **Testmenu** che contiene un solo comando.
 
+:::moniker range=">=vs-2019"
 > [!NOTE]
-> In VS 2019, i menu di primo livello forniti dalle estensioni vengono posizionati nel menu **Estensioni.**
+> A partire da Visual Studio 2019, i menu di primo livello forniti dalle estensioni vengono inseriti nel menu **estensioni** .
+:::moniker-end
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio.It is included as an optional feature in Visual Studio setup. È anche possibile installare l'SDK di VISUAL SMI in un secondo momento. Per ulteriori informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
+A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>Creare un progetto VSIX con un modello di elemento di comando personalizzatoCreate a VSIX project that has a custom command item template
+## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>Creare un progetto VSIX con un modello di elemento di comando personalizzato
 
-1. Creare un progetto `TopLevelMenu`VSIX denominato . È possibile trovare il modello di progetto VSIX nella finestra di dialogo **Nuovo progetto** cercando "vsix".  Per ulteriori informazioni, consultate [Creare un'estensione con un comando](../extensibility/creating-an-extension-with-a-menu-command.md)di menu.
+1. Creare un progetto VSIX denominato `TopLevelMenu` . È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".  Per altre informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **TestCommand**. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi** >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Custom Command** **Visual C.** Nel campo **Nome** nella parte inferiore della finestra modificare il nome del file di comando *in TestCommand.cs*.
+2. Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **TestCommand**. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >   **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#/extensibility** e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *TestCommand.cs*.
 
-## <a name="create-a-menu-on-the-ide-menu-bar"></a>Creare un menu sulla barra dei menu dell'IDE
+## <a name="create-a-menu-on-the-ide-menu-bar"></a>Creare un menu nella barra dei menu dell'IDE
 
 ::: moniker range="vs-2017"
 
-1. In **Esplora soluzioni**aprire *TestCommandPackage.vsct*.
+1. In **Esplora soluzioni**aprire *TestCommandPackage. vsct*.
 
-    Alla fine del file, è \<presente un nodo \<Symbols> che contiene diversi nodi GuidSymbol>. Nel nodo denominato guidTestCommandPackageCmdSet aggiungere un nuovo simbolo, come indicato di seguito:In the node named guidTestCommandPackageCmdSet, add a new symbol, as follows:
+    Alla fine del file è presente un \<Symbols> nodo che contiene diversi \<GuidSymbol> nodi. Nel nodo denominato guidTestCommandPackageCmdSet aggiungere un nuovo simbolo, come indicato di seguito:
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Creare un \<nodo Menus \<> vuoto nel \<nodo Comandi>, appena prima della> dei gruppi. Nel \<menu> nodo, \<aggiungere un menu> nodo, come indicato di seguito:In the Menus> node, add a Menu> node, as follows:
+2. Creare un \<Menus> nodo vuoto nel \<Commands> nodo, immediatamente prima \<Groups> . Nel \<Menus> nodo aggiungere un \<Menu> nodo, come indicato di seguito:
 
    ```xml
    <Menus>
@@ -70,35 +72,35 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
     I `guid` `id` valori e del menu specificano il set di comandi e il menu specifico nel set di comandi.
 
-    I `guid` `id` valori e dell'elemento padre posizionano il menu nella sezione della barra dei menu di Visual Studio che contiene i menu Strumenti e componenti aggiuntivi.
+    I `guid` `id` valori e dell'elemento padre posizionano il menu nella sezione della barra dei menu di Visual Studio contenente i menu strumenti e componenti aggiuntivi.
 
-    Il valore `CommandName` della stringa specifica che il testo deve essere visualizzato nella voce di menu.
+    Il valore della `CommandName` stringa specifica che il testo deve essere visualizzato nella voce di menu.
 
-3. Nella \<sezione> Gruppi, \<trova il \<> Gruppo e modifica l'elemento> padre in modo che punti al menu appena aggiunto:
+3. Nella \<Groups> sezione trovare \<Group> e modificare l' \<Parent> elemento in modo che punti al menu appena aggiunto:
 
-   ```csharp
+   ```xml
    <Groups>
-         <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+       <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
            <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>
-         </Group>
-       </Groups>
+       </Group>
+   </Groups>
    ```
 
-    In questo modo il gruppo fa parte del nuovo menu.
+    In questo modo la parte del gruppo del nuovo menu.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. In **Esplora soluzioni**aprire *TopLevelMenuPackage.vsct*.
+1. In **Esplora soluzioni**aprire *TopLevelMenuPackage. vsct*.
 
-    Alla fine del file, è \<presente un nodo \<Symbols> che contiene diversi nodi GuidSymbol>. Nel nodo denominato guidTopLevelMenuPackageCmdSet, aggiungere un nuovo simbolo, come indicato di seguito:In the node named guidTopLevelMenuPackageCmdSet, add a new symbol, as follows:
+    Alla fine del file è presente un \<Symbols> nodo che contiene diversi \<GuidSymbol> nodi. Nel nodo denominato guidTopLevelMenuPackageCmdSet aggiungere un nuovo simbolo, come indicato di seguito:
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Creare un \<nodo Menus \<> vuoto nel \<nodo Comandi>, appena prima della> dei gruppi. Nel \<menu> nodo, \<aggiungere un menu> nodo, come indicato di seguito:In the Menus> node, add a Menu> node, as follows:
+2. Creare un \<Menus> nodo vuoto nel \<Commands> nodo, immediatamente prima \<Groups> . Nel \<Menus> nodo aggiungere un \<Menu> nodo, come indicato di seguito:
 
    ```xml
    <Menus>
@@ -115,46 +117,46 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
     I `guid` `id` valori e del menu specificano il set di comandi e il menu specifico nel set di comandi.
 
-    I `guid` `id` valori e dell'elemento padre posizionano il menu nella sezione della barra dei menu di Visual Studio che contiene i menu Strumenti e componenti aggiuntivi.
+    I `guid` `id` valori e dell'elemento padre posizionano il menu nella sezione della barra dei menu di Visual Studio contenente i menu strumenti e componenti aggiuntivi.
 
-    Il valore `CommandName` della stringa specifica che il testo deve essere visualizzato nella voce di menu.
+    Il valore della `CommandName` stringa specifica che il testo deve essere visualizzato nella voce di menu.
 
-3. Nella \<sezione> Gruppi, \<trova il \<> Gruppo e modifica l'elemento> padre in modo che punti al menu appena aggiunto:
+3. Nella \<Groups> sezione trovare \<Group> e modificare l' \<Parent> elemento in modo che punti al menu appena aggiunto:
 
-   ```csharp
+   ```xml
    <Groups>
-         <Group guid="guidTopLevelMenuPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+       <Group guid="guidTopLevelMenuPackageCmdSet" id="MyMenuGroup" priority="0x0600">
            <Parent guid="guidTopLevelMenuPackageCmdSet" id="TopLevelMenu"/>
-         </Group>
-       </Groups>
+       </Group>
+   </Groups>
    ```
 
-    In questo modo il gruppo fa parte del nuovo menu.
+    In questo modo la parte del gruppo del nuovo menu.
 
 ::: moniker-end
 
-4. Trovare la sezione `Buttons`. Si noti che [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] il `Button` modello Package ha `MyMenuGroup`generato un elemento il cui elemento padre è impostato su . Di conseguenza, questo comando viene visualizzato nel menu.
+4. Trovare la sezione `Buttons`. Si noti che il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modello di pacchetto ha generato un `Button` elemento il cui padre è impostato su `MyMenuGroup` . Questo comando viene quindi visualizzato nel menu.
 
 ## <a name="build-and-test-the-extension"></a>Compilare e testare l'estensione
 
-1. Compilare il progetto e avviare il debug. Dovrebbe essere visualizzata un'istanza dell'istanza sperimentale.
+1. Compilare il progetto e avviare il debug. Verrà visualizzata un'istanza dell'istanza sperimentale.
 
 ::: moniker range="vs-2017"
 
-2. La barra dei menu nell'istanza sperimentale deve contenere un menu **TestMenu.The** menu bar in the experimental instance should contain a TestMenu menu.
+2. La barra dei menu nell'istanza sperimentale deve contenere un menu **Testmenu** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Il menu **Estensioni** nell'istanza sperimentale deve contenere un menu **TestMenu.The** Extensions menu in the experimental instance should contain a TestMenu menu.
+2. Il menu **estensioni** nell'istanza sperimentale deve contenere un menu **Testmenu** .
 
 ::: moniker-end
 
-3. Scegliere **Richiama comando**di prova dal menu **TestMenu** .
+3. Scegliere **richiama test comando**dal menu **Testmenu** .
 
-     Verrà visualizzata una finestra di messaggio con il messaggio "TestCommand Package Inside TopLevelMenu.TestCommand.MenuItemCallback()".
+     Verrà visualizzata una finestra di messaggio in cui viene visualizzato il messaggio "pacchetto TestCommand all'interno di TopLevelMenu. TestCommand. MenuItemCallback ()".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

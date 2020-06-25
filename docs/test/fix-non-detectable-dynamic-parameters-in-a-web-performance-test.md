@@ -1,7 +1,7 @@
 ---
 title: Correggere parametri dinamici non rilevabili in un test delle prestazioni Web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs, load tests
 - load tests, walkthroughs
@@ -10,12 +10,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25df1c0d0d3165ba8afb068fc416a872af737a82
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589643"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288754"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Correggere parametri dinamici non rilevabili in un test delle prestazioni Web
 
@@ -122,7 +122,7 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
      ![Impostare la pagina iniziale su Querystring.aspx](../test/media/web_test_dynamicparameter_setstartpage.png)
 
-15. Premere **CTRL**+**F5** per eseguire l'applicazione Web nel browser. Copiare l'URL. Sarà necessario quando si registra il test.
+15. Premere **CTRL** + **F5** per eseguire l'applicazione Web nel browser. Copiare l'URL. Sarà necessario quando si registra il test.
 
 16. Provare entrambi i collegamenti. Per ciascuno di essi dovrebbe venire visualizzato il messaggio "Success. Dynamic querystring parameter found".
 
@@ -190,7 +190,7 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
      ![Usare la ricerca veloce per isolare il parametro dinamico](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4. Osservando l'editor di test, sappiamo che a CustomQueryString della richiesta *JScriptQuery.aspx* è stato assegnato un valore di: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`e che la parte dinamica sospetta è "1v0yhyiyr0raa2w4j4pwf5zl". Nell'elenco a discesa Trova rimuovere la parte sospetta della stringa di ricerca. La stringa deve essere "CustomQueryString=jScriptQueryString___".
+4. Si è a conoscenza dell'editor di test a cui è stato assegnato il valore di CustomQueryString della richiesta *JScriptQuery. aspx* `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` e che la parte dinamica sospetta è "1v0yhyiyr0raa2w4j4pwf5zl". Nell'elenco a discesa Trova rimuovere la parte sospetta della stringa di ricerca. La stringa deve essere "CustomQueryString=jScriptQueryString___".
 
      Ai parametri dinamici sono assegnati i valori in una delle richieste che precede la richiesta che contiene l'errore. Selezionare pertanto la casella di controllo Cerca in alto e scegliere Trova successivo fino a visualizzare la richiesta *Querystring.aspx* precedente evidenziata nel pannello Richiesta. Questo dovrebbe avvenire dopo avere fatto clic su Trova successivo tre volte.
 

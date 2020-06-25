@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: selezionare un repository dei risultati del test di carico'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.dialog.connectstringmissing
 - vs.test.load.dialog.databaseconnectstring
@@ -15,16 +15,16 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1648a31f623f4a285f9f827a7e9163a85182b01a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589006"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287571"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Procedura: Selezionare un repository dei risultati del test di carico
 
-La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. Gli agenti, insieme ai controller, consentono di generare un carico simulato maggiore rispetto a un singolo computer. Per ulteriori informazioni, vedere [Test controller e agenti](configure-test-agents-and-controllers-for-load-tests.md)di test .
+La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. Gli agenti, insieme ai controller, consentono di generare un carico simulato maggiore rispetto a un singolo computer. Per ulteriori informazioni, vedere [test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).
 
 I risultati ottenuti dai computer agente o locale possono essere memorizzati in qualsiasi server SQL in cui sia stato creato un archivio dei risultati del test di carico. In entrambi i casi è necessario identificare la posizione in cui si vuole archiviare i risultati del test di carico usando la finestra di **amministrazione dei controller di test**.
 
@@ -38,12 +38,12 @@ I risultati ottenuti dai computer agente o locale possono essere memorizzati in 
 
      ![Proprietà di connessione dell'archivio dei risultati del test di carico](../test/media/loadtestconnectionproperties.png) Proprietà di connessione dell'archivio dei risultati del test di carico
 
-3. **Nell'archivio dei risultati del test**di carico fare clic su **(...)** per visualizzare la finestra di dialogo **Proprietà connessione** .
+3. Nell' **Archivio dei risultati del test di carico**fare clic su **(...)** per visualizzare la finestra di dialogo **Proprietà connessione** .
 
 4. In **Nome server** digitare il nome del server in cui sono stati eseguiti gli script `LoadTest`.
 
     > [!TIP]
-    > Se si usa SQL Express nel computer locale per l'archivio del test di carico, immettere \<nomecomputer>\sqlexpress (ad esempio, **MyComputer\sqlexpress**).
+    > Se si usa SQL Express nel computer locale per l'archivio test di carico, immettere \<computername> \sqlexpress (ad esempio, **MyComputer\sqlexpress**).
 
 5. In **Accesso al server** è possibile scegliere **Usa autenticazione di Windows**. È possibile specificare il nome utente e la password, ma, in tal caso, è necessario selezionare l'opzione **Salva password**.
 
@@ -53,7 +53,7 @@ I risultati ottenuti dai computer agente o locale possono essere memorizzati in 
 
 8. Scegliere **Chiudi** nella finestra di dialogo **Gestisci controller di test**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Gestire i risultati dei test di carico nel repository dei risultati del test di caricoManage load test results in the Load Test Results Repository](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Gestire i risultati dei test di carico nel repository del Risultati test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)

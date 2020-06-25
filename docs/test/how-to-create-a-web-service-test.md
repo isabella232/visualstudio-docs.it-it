@@ -1,7 +1,7 @@
 ---
 title: Creare un test del servizio Web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, creating Web service tests
 - Web services [Visual Studio ALM], creating
@@ -10,16 +10,16 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a6e42d6d92a74a0fc8be96c966b9146b7888b9e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 67aff3b1486224c93a6a8302feb96caea91afcff
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589097"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287896"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Procedura: Creare un test di servizio Web
 
-I test web consentono di testare i servizi web. Utilizzando le opzioni **Inserisci richiesta** e Inserisci richiesta **servizio Web,** è possibile personalizzare le singole richieste nell'Editor **test prestazioni Web** per individuare le pagine del servizio Web. Solitamente queste pagine non vengono visualizzate nell'applicazione Web. Pertanto, per poter accedere alle pagine è necessario personalizzare la richiesta.
+I test web consentono di testare i servizi web. Utilizzando le opzioni **Inserisci richiesta** e **Inserisci servizio Web** , è possibile personalizzare le singole richieste nell' **Editor test prestazioni Web** per individuare le pagine del servizio Web. Solitamente queste pagine non vengono visualizzate nell'applicazione Web. Pertanto, per poter accedere alle pagine è necessario personalizzare la richiesta.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -33,9 +33,9 @@ Visual Studio Enterprise
 
 1. Creare un nuovo test delle prestazioni Web. Non appena si apre il browser, scegliere **Interrompi**.
 
-2. **Nell'Editor test prestazioni Web**fare clic con il pulsante destro del mouse sul test delle prestazioni Web e scegliere Aggiungi richiesta servizio **Web**.
+2. Nella **Editor test prestazioni Web**fare clic con il pulsante destro del mouse sul test delle prestazioni Web e scegliere **Aggiungi richiesta servizio Web**.
 
-3. Nella proprietà **Url** della nuova richiesta digitare il nome **http://localhost/storecsvs/InstantOrder.asmx**del servizio Web, ad esempio .
+3. Nella proprietà **URL** della nuova richiesta digitare il nome del servizio Web, ad esempio **http://localhost/storecsvs/InstantOrder.asmx** .
 
 4. Aprire una sessione separata del browser e digitare l'URL della pagina con estensione *asmx* sulla barra degli strumenti **Indirizzo**. Selezionare il metodo da testare, quindi esaminare il messaggio SOAP. Contiene un elemento `SOAPAction`.
 
@@ -64,15 +64,15 @@ Visual Studio Enterprise
 
 10. Sostituire i valori segnaposto con valori XML validi che consentiranno di superare il test. Nell'esempio precedente si devono sostituire le due istanze di `string` e la singola istanza di `int`. L'operazione del servizio Web potrà essere terminata solamente se un utente registrato ha effettuato un ordine.
 
-11. Fare clic con il pulsante destro del mouse sulla richiesta del servizio Web e scegliere **Aggiungi parametro QueryString URL**.
+11. Fare clic con il pulsante destro del mouse sulla richiesta del servizio Web e selezionare **Aggiungi parametro QUERYSTRING URL**.
 
 12. Assegnare un nome e un valore al parametro della stringa di query. Nell'esempio precedente il nome è `op` e il valore è `CheckStatus`. Tramite il nome e il valore viene identificata l'operazione di servizio Web da eseguire.
 
     > [!NOTE]
     > È possibile usare l'associazione dati nel corpo SOAP per sostituire i valori segnaposto con valori associati a dati mediante la sintassi `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Eseguire il test. Nel riquadro superiore del **Visualizzatore risultati test prestazioni web** selezionare la richiesta di servizio Web. Nel riquadro inferiore selezionare la scheda del browser Web. Verrà visualizzato il codice XML restituito dal servizio Web e i risultati di tutte le operazioni.
+13. Eseguire il test. Nel riquadro superiore del **Visualizzatore risultati test prestazioni web** selezionare la richiesta di servizio Web. Nel riquadro inferiore selezionare la scheda Web browser. Verrà visualizzato il codice XML restituito dal servizio Web e i risultati delle operazioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)

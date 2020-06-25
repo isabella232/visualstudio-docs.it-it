@@ -1,21 +1,21 @@
 ---
 title: Creare un'impostazione di test per un test di carico distribuito
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3129aa5139533db0783c168c3489e071fe9339b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 625f4720e94f6ec0b3b9751c28ad18e0a9f38bbd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589145"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288006"
 ---
-# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Procedura: creare un file di impostazioni di test per un test di carico distribuitoHow to: Create a test settings file for a distributed load test
+# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Procedura: creare un file di impostazioni di test per un test di carico distribuito
 
 Configurare le *impostazioni test* per i test di carico per consentirne la distribuzione tra più computer con agenti di test e test controller. È anche possibile configurare le impostazioni test per l'uso degli *adattatori dati di diagnostica* che specificano i tipi di dati da raccogliere o il funzionamento dei computer di test quando si eseguono i test di carico da Visual Studio.
 
@@ -33,7 +33,7 @@ Le impostazioni test per Visual Studio vengono archiviate in un file. Le imposta
 
 Quando si eseguono i test, si selezionano le impostazioni di test da utilizzare come impostazioni attive a seconda delle esigenze correlate allo specifico test da eseguire. Il file delle impostazioni di test è archiviato come parte della soluzione. Il nome file ha l'estensione *testsettings*.
 
-Quando si aggiunge un progetto di test di carico e prestazioni Web a una soluzione, viene creato un file *Default.testsettings.When* you add a web performance and load test project to a solution, a Default.testsettings file is created. Il file viene aggiunto automaticamente alla soluzione nella cartella **Elementi di soluzione**. Questo file esegue i test in locale senza adattatori dati di diagnostica. È possibile aggiungere un altro file con estensione *testsettings* o modificare un file con estensione *testsettings* per specificare gli adattatori dati di diagnostica e i test controller.
+Quando si aggiunge un progetto di test di carico e prestazioni Web a una soluzione, viene creato un file *default. testsettings* . Il file viene aggiunto automaticamente alla soluzione nella cartella **Elementi di soluzione**. Questo file esegue i test in locale senza adattatori dati di diagnostica. È possibile aggiungere un altro file con estensione *testsettings* o modificare un file con estensione *testsettings* per specificare gli adattatori dati di diagnostica e i test controller.
 
 Il controller di test disporrà di agenti che possono essere usati per ogni ruolo nelle impostazioni di test. Per altre informazioni sui test controller e gli agenti di test, vedere [Gestire test controller e agenti di test con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
@@ -41,7 +41,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 ## <a name="create-a-test-settings-file"></a>Creare un file di impostazioni test
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Elementi di soluzione**, scegliere **Aggiungi**, quindi **Nuovo elemento**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **elementi di soluzione**, scegliere **Aggiungi**, quindi **nuovo elemento**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
@@ -51,7 +51,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 4. Scegliere **Aggiungi**.
 
-     Il nuovo file delle impostazioni di test verrà visualizzato in **Esplora soluzioni,** nella cartella **Elementi soluzione.**
+     Il nuovo file di impostazioni test viene visualizzato in **Esplora soluzioni**, nella cartella **elementi di soluzione** .
 
 5. Verrà visualizzata la finestra di dialogo **Impostazioni test**. È selezionata la pagina **Generale**.
 
@@ -89,7 +89,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
     > [!IMPORTANT]
     > Gli altri ruoli creati e definiti non consentiranno l'esecuzione di test, ma verranno usati solo per raccogliere dati in base agli adattatori dati e agli adattatori di diagnostica specificati per i ruoli nella pagina **Dati e diagnostica**.
 
-16. Per limitare gli agenti che possono essere utilizzati per un ruolo, selezionare il ruolo e quindi scegliere **Aggiungi** nella barra degli strumenti in Attributi agente per il **ruolo selezionato.**
+16. Per limitare gli agenti che possono essere utilizzati per un ruolo, selezionare il ruolo, quindi scegliere **Aggiungi** nella barra degli strumenti in **attributi agenti per ruolo selezionato**.
 
      Viene visualizzata la finestra di dialogo **Regola di selezione agenti**.
 
@@ -111,7 +111,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
      Per informazioni dettagliate su ogni adattatore dati di diagnostica e su come configurarlo, è possibile visualizzare l'argomento associato nella tabella seguente.
 
-     Per ulteriori informazioni sugli adattatori dati di diagnostica, vedere [Raccogliere informazioni di diagnostica utilizzando le impostazioni](../test/collect-diagnostic-information-using-test-settings.md)di test .
+     Per ulteriori informazioni sugli adattatori dati di diagnostica, vedere [raccogliere informazioni di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
 
      **Adattatori dati di diagnostica per test di carico**
 
@@ -119,8 +119,8 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
     |-|-------------------------|-|
     |**Proxy client ASP.NET per IntelliTrace e impatto test:** questo proxy consente di raccogliere informazioni sulle chiamate http da un client a un server Web per gli adattatori dati di diagnostica di IntelliTrace e impatto test.|![Icona Informazioni](../test/media/vc364f4.gif)<br /><br /> A meno che ci sia una specifica esigenza di raccogliere informazioni sul sistema per i computer degli agenti di test, non includere questo adattatore. **Attenzione:** non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti. <br /><br /> I dati dell'impatto sui test non vengono raccolti tramite test di carico.||
     |**IntelliTrace:** è possibile configurare informazioni specifiche sulla traccia diagnostica archiviate in un file di log. Un file di log ha estensione *tdlog*. Quando si esegue il test e un passo del test non riesce, è possibile creare un bug. Il file di log che contiene la traccia diagnostica viene associato automaticamente al bug. I dati raccolti nel file di log aumentano la produttività di debug riducendo il tempo necessario per riprodurre e diagnosticare un errore nel codice. Da questo file di log è possibile ricreare la sessione locale in un altro computer. In questo modo si riduce il rischio che non sia possibile riprodurre un bug.<br /><br /> Per altre informazioni, vedere [Raccogliere dati IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Icona Importante](../test/media/vc364f3.gif)<br /><br /> Non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti e registrati. È opportuno tentare di utilizzare l'adattatore IntelliTrace solo in test di carico che non hanno lunga esecuzione e non utilizzano molti agenti di test.|[Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
-    |**ASP.NET Profiler:** È possibile creare un'impostazione di test che include ASP.NET profilatura, che raccoglie i dati sulle prestazioni nelle applicazioni Web ASP.NET.|L'adattatore dati di diagnostica del profiler ASP.NET profila il processo di Internet Information Services (IIS), pertanto non funzionerà con un server web di sviluppo. Per profilare il sito web nel test di carico, è necessario installare un agente di test nel computer sul quale IIS è in esecuzione. L'agente di test non genererà carico, ma sarà un agente di sola raccolta. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|[Procedura: configurare ASP.NET profiler per i test di carico tramite le impostazioni di testHow to: Configure the profiler for load tests using test settings](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**Log eventi:** è possibile configurare un'impostazione test in modo da includere la raccolta del log eventi, che verrà inserita nei risultati dei test.||[Procedura: configurare la raccolta del log eventi utilizzando le impostazioni di testHow to: Configure event log collection using test settings](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**Profiler di ASP.NET:** È possibile creare un'impostazione di test che includa la profilatura di ASP.NET, che raccoglie i dati sulle prestazioni nelle applicazioni Web ASP.NET.|L'adattatore dati di diagnostica del profiler ASP.NET profila il processo di Internet Information Services (IIS), pertanto non funzionerà con un server web di sviluppo. Per profilare il sito web nel test di carico, è necessario installare un agente di test nel computer sul quale IIS è in esecuzione. L'agente di test non genererà carico, ma sarà un agente di sola raccolta. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|[Procedura: configurare ASP.NET Profiler per i test di carico tramite impostazioni test](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
+    |**Log eventi:** è possibile configurare un'impostazione test in modo da includere la raccolta del log eventi, che verrà inserita nei risultati dei test.||[Procedura: configurare la raccolta di log eventi usando le impostazioni test](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
     |**Emulazione di rete:** è possibile specificare che si vuole aggiungere un carico di rete artificiale al test usando un'impostazione test. L'emulazione di rete influisce sulla comunicazione da e verso il computer emulando una determinata velocità della connessione di rete, ad esempio di una connessione remota. **Nota:** non è possibile usare l'emulazione di rete per aumentare la velocità della connessione di rete.|L'adattatore di emulazione di rete viene ignorato dai test di carico. Al contrario, i test di carico usano le impostazioni specificate nella combinazione di reti dello scenario dei test di carico.<br /><br /> Per altre informazioni, vedere [Specificare i tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Informazioni di sistema:** è possibile configurare un'impostazione test per includere le informazioni di sistema dei computer su cui viene eseguito l'agente di raccolta di dati e diagnostica delle informazioni di sistema. Le informazioni di sistema sono specificate nei risultati del test tramite un'impostazione di test.|![Icona di informazioni](../test/media/vc364f4.gif)<br /><br /> È possibile raccogliere informazioni di sistema sia dagli agenti di carico che dal sistema sottoposto a test.|Per raccogliere queste informazioni, non è necessaria alcuna configurazione.|
     |**Impatto test:** è possibile raccogliere informazioni sui metodi del codice dell'applicazione usati durante l'esecuzione di un test case. Queste informazioni possono essere utilizzate insieme a quelle relative alle modifiche apportate al codice dell'applicazione dagli sviluppatori per individuare i test interessati da tali modifiche di sviluppo.|I dati dell'impatto sui test non vengono raccolti con i test di carico.||
@@ -160,7 +160,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
     2. Usare l'elenco a discesa **Esegui test in un processo a 32 bit o a 64 bit** per scegliere se i test delle prestazioni Web e gli unit test nel test di carico devono essere eseguiti come processi a 32 bit o a 64 bit.
 
         > [!NOTE]
-        > Per la massima flessibilità, è consigliabile compilare i progetti di test di carico e prestazioni Web utilizzando la configurazione **Qualsiasi CPU.** È quindi possibile effettuare l'esecuzione sia su agenti a 32 bit che a 64 bit. La compilazione di progetti di test di carico e prestazioni Web utilizzando la configurazione a **64 bit** non offre alcun vantaggio.
+        > Per garantire la massima flessibilità, è necessario compilare i progetti di test di carico e prestazioni Web utilizzando la configurazione **qualsiasi CPU** . È quindi possibile effettuare l'esecuzione sia su agenti a 32 bit che a 64 bit. La compilazione di progetti di test di carico e prestazioni Web con la configurazione a **64 bit** non offre alcun vantaggio.
 
 25. (Facoltativo) Per limitare la durata di ogni esecuzione di test e dei singoli test, scegliere **Timeout test**.
 
@@ -176,11 +176,11 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 ## <a name="remove-a-test-settings-file-from-your-solution"></a>Rimuovere un file di impostazioni test dalla soluzione
 
-Nella cartella **Elementi di soluzione** in Esplora **soluzioni**fare clic con il pulsante destro del mouse sulle impostazioni di test che si desidera rimuovere, quindi scegliere **Rimuovi**.
+Nella cartella **elementi di soluzione** in **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulle impostazioni di test che si desidera rimuovere, quindi scegliere **Rimuovi**.
 
 Il file delle impostazioni di test verrà rimosso dalla soluzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)

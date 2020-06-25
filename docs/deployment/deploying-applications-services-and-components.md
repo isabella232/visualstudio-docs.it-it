@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183002"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286356"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Presentazione della distribuzione in Visual Studio
 
@@ -48,7 +48,7 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
 ## <a name="publish-to-azure"></a>Pubblicazione in Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python**e **node. js**: pubblicare in app Azure servizio o app Azure servizio Linux (usando i contenitori) usando uno dei metodi seguenti.
+- **ASP.NET**, **ASP.NET Core**, **Python**e **Node.js**: pubblicare in app Azure Service o app Azure Service Linux (usando i contenitori) usando uno dei metodi seguenti.
 
   - Per una distribuzione di app continua o automatica, usare Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
@@ -58,7 +58,7 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
   Per usare lo strumento **Pubblica**, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Pubblica**. Se sono stati configurati in precedenza i profili di pubblicazione, è necessario fare clic su **Crea nuovo profilo**. Nella finestra di dialogo Pubblica scegliere **servizio app** o **macchine virtuali di Azure**e quindi seguire la procedura di configurazione.
 
-  ![Scegliere app Azure servizio](../deployment/media/quickstart-publish-azure.png "Scegliere app Azure servizio")
+  ![Scegliere app Azure servizio](../deployment/media/quickstart-publish-azure-new.png "Scegliere app Azure servizio")
 
   A partire da Visual Studio 2017 versione 15.7, è possibile distribuire app ASP.NET Core in **Servizio app di Azure in Linux**.
 
@@ -91,7 +91,7 @@ Da Visual Studio è possibile creare pacchetti di app per la distribuzione in Mi
 
 - **Piattaforma UWP**: è possibile creare il pacchetto dell'app e distribuirlo tramite voci di menu. Per altre informazioni, vedere [Creare il pacchetto di un'app UWP con Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
-    ![Creare un pacchetto dell'applicazione](../deployment/media/feature-tour-create-app-package.jpg)
+    ![Creare un pacchetto dell'applicazione](../deployment/media/feature-tour-create-app-package.png)
 
 - **Desktop di Windows**: a partire da Visual Studio 2017 versione 15.4, è possibile eseguire la distribuzione in Microsoft Store tramite Desktop Bridge. A tale scopo, iniziare creando un progetto di creazione del pacchetto dell'applicazione Windows. Per altre informazioni, vedere [Creare il pacchetto di un'app desktop per Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 

@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180402"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288936"
 ---
 # <a name="customize-your-build"></a>Personalizzare la compilazione
 
@@ -80,7 +80,7 @@ Le proprietà impostate in *Directory. Build. props* possono essere sostituite a
 Quando è necessario impostare una proprietà o definire una destinazione per un singolo progetto che esegue l'override di qualsiasi impostazione precedente, inserire la logica nel file di progetto dopo l'importazione finale. Per eseguire questa operazione in un progetto di tipo SDK, è necessario innanzitutto sostituire l'attributo di tipo SDK con le importazioni equivalenti. Vedere [come usare gli SDK di progetto di MSBuild](how-to-use-project-sdk.md).
 
 > [!NOTE]
-> Il motore MSBuild legge tutti i file importati durante la valutazione, prima di avviare l'esecuzione della compilazione per qualsiasi progetto (incluso qualsiasi `PreBuildEvent` ), quindi questi file non devono essere modificati da `PreBuildEvent` o da qualsiasi altra parte del processo di compilazione. Eventuali modifiche non diventano effettive fino alla successiva chiamata di *MSBuild. exe* o della successiva compilazione di Visual Studio.
+> Il motore MSBuild legge tutti i file importati durante la valutazione, prima di avviare l'esecuzione della compilazione per qualsiasi progetto (incluso qualsiasi `PreBuildEvent` ), quindi questi file non devono essere modificati da `PreBuildEvent` o da qualsiasi altra parte del processo di compilazione. Eventuali modifiche non diventano effettive fino alla successiva chiamata di *MSBuild.exe* o alla successiva compilazione di Visual Studio.
 
 ### <a name="use-case-multi-level-merging"></a>Caso d'uso: unione a più livelli
 
@@ -182,7 +182,7 @@ La stessa struttura di directory viene ricercata in `$(MSBuildUserExtensionsPath
 ## <a name="customize-the-solution-build"></a>Personalizzare la compilazione della soluzione
 
 > [!IMPORTANT]
-> Questa procedura di personalizzazione della compilazione della soluzione si applica solo alle compilazioni da riga di comando con *MSBuild.exe*. **Non** si applica alle compilazioni in Visual Studio.
+> Questa procedura di personalizzazione della compilazione della soluzione si applica solo alle compilazioni da riga di comando con *MSBuild.exe*. **Non** si applica alle compilazioni in Visual Studio. Per questo motivo, non è consigliabile applicare la personalizzazione a livello di soluzione. Un'alternativa migliore per personalizzare tutti i progetti in una soluzione consiste nell'usare i file *Directory. Build. props* e *Directory. Build. targets* nella cartella della soluzione, come descritto in precedenza in questo articolo.
 
 Quando MSBuild compila un file della soluzione, prima lo converte internamente in un file di progetto e poi lo compila. Il file di progetto generato importa `before.{solutionname}.sln.targets` prima di definire tutte le destinazioni e `after.{solutionname}.sln.targets` dopo avere importato le destinazioni, incluse le destinazioni installate nelle directory `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` e `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter`.
 
@@ -287,7 +287,7 @@ msbuild /p:ForceImportBeforeCppTargets="C:\build\config\Custom.Before.Microsoft.
 
 Per un'impostazione globale (per avere effetto su tutte le compilazioni C++ per una piattaforma in un server di compilazione), sono disponibili due metodi. In primo luogo, è possibile impostare queste proprietà usando una variabile di ambiente di sistema sempre impostata. Questa operazione funziona perché MSBuild legge sempre l'ambiente e crea o esegue l'override delle proprietà per tutte le variabili di ambiente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 

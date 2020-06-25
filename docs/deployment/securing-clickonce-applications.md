@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b8416508ee5800ab581a1a58cedee1e5725cab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184445"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286301"
 ---
 # <a name="secure-clickonce-applications"></a>Proteggere le applicazioni ClickOnce
 Le applicazioni[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono soggette ai vincoli di sicurezza dall'accesso di codice in .NET Framework che consentono di limitare l'accesso del codice alle risorse e alle operazioni protette. Per poter scrivere correttamente le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , è quindi importante comprendere le implicazioni di questo tipo di sicurezza. Le applicazioni possono usare l'attendibilità totale o le aree parziali, ad esempio le aree Internet e Intranet, per limitare l'accesso.
@@ -50,7 +50,7 @@ Le applicazioni[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
  Per altre informazioni sulla sicurezza per l'accesso al codice e su ClickOnce, vedere [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ## <a name="code-signing-certificates"></a>Certificati per la firma del codice
- Per pubblicare un'applicazione tramite la tecnologia di distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , è possibile firmare il manifesto dell'applicazione e della distribuzione con una coppia di chiavi pubblica/privata. Gli strumenti per firmare un manifesto sono disponibili nella pagina **Firma** di **Progettazione progetti**. Per altre informazioni, vedere [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md). In alternativa, è possibile firmare i manifesti con un file di chiave durante il processo di pubblicazione, tramite la Pubblicazione guidata.
+ Per pubblicare un'applicazione tramite la tecnologia di distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , è possibile firmare il manifesto dell'applicazione e della distribuzione con una coppia di chiavi pubblica/privata. Gli strumenti per firmare un manifesto sono disponibili nella pagina **Firma** di **Progettazione progetti**. Per altre informazioni, vedere [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md).
 
  Durante l'installazione, dopo la firma dei manifesti, nella finestra di dialogo Autorizzazioni verranno visualizzate le informazioni sull'editore basate sulla firma Authenticode, per dimostrare all'utente che l'applicazione proviene da una fonte attendibile.
 
@@ -76,6 +76,6 @@ Le applicazioni[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 ## <a name="deploying-obfuscated-assemblies"></a>Distribuzione di assembly offuscati
  Visual Studio include la versione gratuita di [PreEmptive Protection - Dotfuscator Community](../ide/dotfuscator/index.md), che è possibile usare per proteggere le applicazioni ClickOnce tramite l'offuscamento del codice e misure di protezione attive.  Per informazioni dettagliate, vedere [la sezione dedicata a ClickOnce della guida dell'utente di Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Scegliere una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

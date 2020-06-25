@@ -1,6 +1,6 @@
 ---
 title: Misurare le prestazioni dalla riga di comando
-description: Misurare le prestazioni della CPU e l'utilizzo della memoria gestita nell'applicazione dalla riga di comando.
+description: Misurare le prestazioni della CPU e managed memory l'utilizzo nell'applicazione dalla riga di comando.
 ms.custom: ''
 ms.date: 02/21/2020
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638696"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285844"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Misurare le prestazioni dell'applicazione dalla riga di comando
 
@@ -33,7 +33,7 @@ Nell'esempio descritto in questo articolo si raccolgono informazioni sulle prest
 
 * Conoscenza degli strumenti da riga di comando
 
-* Per raccogliere informazioni sulle prestazioni in un computer remoto in cui non è installato Visual Studio, installare [Performance Tools per Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019) nel computer remoto. La versione degli strumenti deve corrispondere alla versione di Visual Studio.
+* Per raccogliere informazioni sulle prestazioni in un computer remoto senza installato Visual Studio, installare gli [strumenti per le prestazioni di Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) nel computer remoto. La versione degli strumenti deve corrispondere a quella di Visual Studio.
 
 ## <a name="collect-performance-data"></a>Raccogliere i dati sulle prestazioni
 
@@ -53,9 +53,9 @@ Per eseguire la profilatura tramite gli strumenti da riga di comando di diagnost
 
    È necessario includere gli argomenti seguenti:
 
-   * \<*id*> Identifica la sessione di raccolta. L'ID deve essere un numero compreso tra 1 e 255.
+   * \<*id*>Identifica la sessione di raccolta. L'ID deve essere un numero compreso tra 1 e 255.
    * \<*pid*>, PID del processo che si vuole profilare, in questo caso il PID trovato nel passaggio 1
-   * \<*configFile*>, file di configurazione per l'agente di raccolta che si vuole avviare. Per altre informazioni, vedere [File di configurazione degli agenti](#config_file).
+   * \<*configFile*>, il file di configurazione per l'agente di raccolta che si vuole avviare. Per altre informazioni, vedere [File di configurazione degli agenti](#config_file).
 
 1. Ridimensionare Blocco note o digitare un testo nell'applicazione per assicurarsi che vengano raccolte alcune informazioni di profilatura interessanti.
 
@@ -73,10 +73,20 @@ Gli agenti di raccolta sono componenti intercambiabili che raccolgono tipi diver
 
 Per praticità, è possibile archiviare le informazioni in un file di configurazione dell'agente. Il file di configurazione è un file con estensione *.json* che contiene almeno il nome del file con estensione *dll* e il relativo CLSID COM. Di seguito sono elencati i file di configurazione di esempio che è possibile trovare nella cartella seguente:
 
-```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
+```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
-* Configurazioni CpuUsage (Base/Alto/Basso) che corrispondono ai dati raccolti per lo strumento di profilatura [Utilizzo CPU](../profiling/cpu-usage.md).
-* Configurazioni DotNetObjectAlloc (Base/Basso) che corrispondono ai dati raccolti per lo [strumento di allocazione degli oggetti .NET](../profiling/dotnet-alloc-tool.md).
+Per scaricare e visualizzare i file di configurazione dell'agente, vedere i collegamenti seguenti:
+
+- https://aka.ms/vs/diaghub/agentconfig/cpubase
+- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
+- https://aka.ms/vs/diaghub/agentconfig/cpulow
+- https://aka.ms/vs/diaghub/agentconfig/database
+- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+
+Le configurazioni CpuUsage (base/alta/bassa) corrispondono ai dati raccolti per lo strumento di profilatura [utilizzo CPU](../profiling/cpu-usage.md) .
+Le configurazioni DotNetObjectAlloc (base/bassa) corrispondono ai dati raccolti per lo [strumento di allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md).
 
 Le configurazioni Base/Basso/Alto fanno riferimento alla frequenza di campionamento. Ad esempio, il valore Basso corrisponde a 100 campioni al secondo e Alto corrisponde a 4.000 campioni al secondo.
 

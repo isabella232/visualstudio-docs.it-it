@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come i partner gestiscono le sottoscrizioni di Visual Studio per i clienti.
-ms.openlocfilehash: 7d62025c5e8198a11c013b4ba4adf32a3d09c2dc
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564212"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289027"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partner che gestiscono le sottoscrizioni per conto dei clienti
 Per gestire le sottoscrizioni nel [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com)di Visual Studio, è necessario seguire alcuni passaggi. 
@@ -30,7 +30,7 @@ Ciò si applica ai partner che hanno già accesso al [portale di amministrazione
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAG]
 
 Passaggi per i partner che devono aggiungere una nuova licenza:
-- Accedere a https://manage.visualstudio.com.
+- Accedere a <https://manage.visualstudio.com>.
 - Selezionare l'elenco a discesa contratto e scorrere fino alla fine in cui è disponibile un'opzione per la **nuova licenza Open**.
 - Nel pannello popout immettere il numero di autorizzazione, il numero di licenza e l'indirizzo di posta elettronica del cliente riportato nel contratto, selezionare la casella di controllo e quindi fare clic su **Invia**.
 
@@ -52,7 +52,7 @@ Questo vale per i nuovi partner che inseriscono nuovi ordini di licenza aperti, 
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nuovi partner che visitano direttamente il portale di amministrazione delle sottoscrizioni di Visual Studio
 Questo scenario si applica ai nuovi partner che hanno già inserito nuovi ordini di licenza aperti, ma che non hanno eseguito la registrazione in [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e passano direttamente al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).  A tale scopo, seguire questa procedura:
-- Visitare https://manage.visualstudio.com.
+- Visitare <https://manage.visualstudio.com>.
 - Viene visualizzato un errore di utente non riconosciuto.
 - Selezionare l'opzione di registrazione per **partner OLP** e immettere il numero di autorizzazione, il numero di licenza e l'indirizzo di posta elettronica del cliente usato nell'ordine, selezionare la casella di controllo e quindi fare clic su **Invia**.
 
@@ -64,7 +64,7 @@ Questo scenario si applica ai nuovi partner che hanno già inserito nuovi ordini
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Condizioni per contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
@@ -72,4 +72,4 @@ Questo scenario si applica ai nuovi partner che hanno già inserito nuovi ordini
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Visitare il [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com) di Visual Studio per gestire le sottoscrizioni.
-- Serve assistenza? Contattare il [supporto per l'amministrazione e le sottoscrizioni](https://visualstudio.microsoft.com/support/support-overview-vs) di Visual Studio
+- Serve aiuto? Contattare il [supporto per l'amministrazione e le sottoscrizioni](https://visualstudio.microsoft.com/support/support-overview-vs) di Visual Studio

@@ -1,29 +1,29 @@
 ---
-title: 'Test di carico: impostare la percentuale di utenti virtuali utilizzando i dati della cache Web'
+title: 'Test di carico: impostare la percentuale utente virtuale usando i dati della cache Web'
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8cac3368d0f03c268e086cc8636f1175a15effdd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a31ea50cdedbeb825d03de38a89200b6e8e5200
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113368"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287402"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Procedura: Specificare la percentuale di utenti virtuali che usano i dati della cache Web
 
-Dopo avere creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test. Per un elenco completo delle proprietà dello scenario di test di carico e delle relative descrizioni, vedere [Proprietà dello scenario](../test/load-test-scenario-properties.md)di test di carico .
+Dopo avere creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test. Per un elenco completo delle proprietà dello scenario del test di carico e delle relative descrizioni, vedere [proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-La proprietà **Percentuale di nuovi utenti** viene impostata nella finestra **Proprietà.** Le proprietà degli scenari dei test di carico vengono modificate nell'**Editor test di carico**.
+La proprietà **percentuale di nuovi utenti** viene impostata nella finestra **Proprietà** . Le proprietà degli scenari dei test di carico vengono modificate nell'**Editor test di carico**.
 
-La proprietà **Percentuale di nuovi utenti** influisce sul modo in cui il test di carico simula la memorizzazione nella cache eseguita da un Web browser. Per impostazione predefinita, la proprietà **Percentuale di nuovi utenti** è impostata su 0%. Se il valore della proprietà **Percentuale di nuovi utenti** è impostato su 100%, ogni esecuzione dei test prestazioni web in un test di carico viene considerata come un nuovo utente del sito web, che non dispone nella cache del browser di alcun contenuto del sito Web ottenuto con visite precedenti. Vengono pertanto scaricate tutte le richieste del test web, comprese tutte le richieste dipendenti come le immagini.
+La proprietà **percentuale di nuovi utenti** influiscono sul modo in cui il test di carico simula la memorizzazione nella cache che verrebbe eseguita da un Web browser. Per impostazione predefinita, la proprietà **Percentuale di nuovi utenti** è impostata su 0%. Se il valore della proprietà **Percentuale di nuovi utenti** è impostato su 100%, ogni esecuzione dei test prestazioni web in un test di carico viene considerata come un nuovo utente del sito web, che non dispone nella cache del browser di alcun contenuto del sito Web ottenuto con visite precedenti. Vengono pertanto scaricate tutte le richieste del test web, comprese tutte le richieste dipendenti come le immagini.
 
 > [!NOTE]
 > Quando la stessa risorsa memorizzabile nella cache viene richiesta più volte in un test Web, le richieste non vengono scaricate.
@@ -42,14 +42,14 @@ Se si esegue il test di carico di un sito web caratterizzato da un numero signif
 
      Le categorie e le proprietà dello scenario vengono visualizzate nella finestra **Proprietà**.
 
-4. Impostare il valore della proprietà **Percentuale di nuovi utenti** immettendo un numero per la percentuale di nuovi utenti.
+4. Impostare il valore per la proprietà **percentuale di nuovi utenti** immettendo un numero per la percentuale di nuovi utenti.
 
-5. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. È quindi possibile eseguire il test di carico usando il nuovo valore **Percentuale di nuovi utenti.**
+5. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. È quindi possibile eseguire il test di carico usando il nuovo valore **percentuale di nuovi utenti** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)
-- [Modificare i modelli di carico per modellare le attività degli utenti virtualiEdit load patterns to model virtual user activities](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Modificare i modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)

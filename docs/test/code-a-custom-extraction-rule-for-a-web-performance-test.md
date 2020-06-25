@@ -1,7 +1,7 @@
 ---
 title: Codifica di una regola di estrazione personalizzata per un test delle prestazioni Web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - extraction rules
 - Web performance tests, creating custom extraction rules
@@ -13,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00001662667ed7020909d23cf3cfbd4b8437eabf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591177"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288884"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificare una regola di estrazione personalizzata per un test delle prestazioni Web
 
@@ -46,9 +46,9 @@ ms.locfileid: "75591177"
 
 6. (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di estrazione personalizzata.
 
-7. Nel progetto Test aprire un test delle prestazioni Web **nell'Editor test prestazioni Web.**
+7. Nel progetto di test aprire un test delle prestazioni Web nel **Editor test prestazioni Web**.
 
-8. Per aggiungere la regola di estrazione personalizzata, fare clic con il pulsante destro del mouse su una richiesta di test delle prestazioni Web e scegliere **Aggiungi regola**di estrazione .
+8. Per aggiungere la regola di estrazione personalizzata, fare clic con il pulsante destro del mouse su una richiesta di test delle prestazioni Web e selezionare **Aggiungi regola di estrazione**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi regola di estrazione**. La regola di convalida personalizzata sarà disponibile nell'elenco **Selezionare una regola**, insieme alle regole di convalida predefinite. Selezionare la regola di estrazione personalizzata e scegliere **OK**.
 
@@ -206,7 +206,7 @@ End Namespace
 
 Il metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> contiene le funzionalità principali di una regola di estrazione. Il metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> nell'esempio precedente assume il valore <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> che fornisce la risposta generata dalla richiesta coperta da questa regola di estrazione. La risposta contiene <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> che contiene tutti i tag nella risposta. I tag di input vengono filtrati da <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>. In ogni tag di input viene cercato un attributo denominato `name` il cui valore è uguale all'utente che ha specificato il valore della proprietà `Name`. Se viene rilevato un tag con questo attributo corrispondente, viene eseguito un tentativo di estrarre un valore contenuto nell'attributo `value`, se esiste. Se presenti, il nome e il valore del tag vengono estratti e aggiunti al contesto del test Web. La regola di estrazione viene passata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

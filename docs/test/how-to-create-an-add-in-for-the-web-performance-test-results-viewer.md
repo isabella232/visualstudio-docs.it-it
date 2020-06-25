@@ -1,7 +1,7 @@
 ---
 title: Creare un componente aggiuntivo per il Visualizzatore risultati test prestazioni Web
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, Visual Studio Add-in
 - Visual Studio Add-in, Web performance tests
@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6da2686a5a68325101e7161a51a8144e7ef42b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589084"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287831"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: creare un componente aggiuntivo per il Visualizzatore risultati test prestazioni Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: creare un componente aggiuntivo per il Visualizzatore Risultati test prestazioni Web
 
 È possibile estendere l'interfaccia utente per il **Visualizzatore risultati test prestazioni Web** usando gli spazi dei nomi seguenti:
 
@@ -24,7 +24,7 @@ ms.locfileid: "75589084"
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Inoltre, è necessario aggiungere un riferimento alla DLL LoadTestPackage, che si trova nella cartella *%ProgramFiles(x86)>%.\\\<*
+Inoltre, è necessario aggiungere un riferimento a LoadTestPackage DLL, che si trova nella cartella *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \Enterprise\Common7\IDE\PrivateAssemblies*
 
 Per estendere l'interfaccia utente del **Visualizzatore risultati test prestazioni Web**, è necessario creare un controllo utente e un componente aggiuntivo per Visual Studio. Nelle procedure seguenti viene illustrato come creare il componente aggiuntivo e il controllo utente nonché come implementare le classi necessarie per estendere l'interfaccia utente del **Visualizzatore risultati test prestazioni Web**.
 
@@ -37,7 +37,7 @@ Per estendere l'interfaccia utente del **Visualizzatore risultati test prestazio
 Creare o aprire una soluzione non di produzione con la quale sperimentare che contenga un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web con uno o più test delle prestazioni Web per l'applicazione Web ASP.NET.
 
 > [!NOTE]
-> È possibile creare un progetto di test di carico e di applicazione Web e di applicazione Web ASP.NET contenente test delle prestazioni Web seguendo le procedure descritte in [Procedura: Creare un test del servizio Web](../test/how-to-create-a-web-service-test.md) e [Generare ed eseguire un test delle prestazioni Web codificato.](../test/generate-and-run-a-coded-web-performance-test.md)
+> È possibile creare un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web che contenga test delle prestazioni Web seguendo le procedure descritte in [procedura: creare un test di servizio Web](../test/how-to-create-a-web-service-test.md) e [generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Creare un componente aggiuntivo per Visual Studio
 
@@ -49,7 +49,7 @@ Si utilizzerà **Gestione componenti aggiuntivi** alla fine di questo articolo.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Per creare un componente aggiuntivo utilizzando la Creazione guidata componente aggiuntivo.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, **scegliere Aggiungi**, quindi Nuovo **progetto**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi selezionare **nuovo progetto**.
 
 2. Creare un nuovo progetto di **componente aggiuntivo di Visual Studio**.
 
@@ -109,7 +109,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Per creare un controllo da utilizzare nel Visualizzatore risultati test Web
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, **scegliere Aggiungi**, quindi Nuovo **progetto**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi selezionare **nuovo progetto**.
 
 2. Creare un nuovo progetto **Libreria di controlli Windows Form**.
 
@@ -256,7 +256,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto WebPerfTestResultsViewerControl e selezionare **Proprietà**.
 
-2. Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione** e selezionare **.NET Framework 4** (o versioni successive). Chiudere la finestra **Proprietà.**
+2. Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione** e selezionare **.NET Framework 4** (o versioni successive). Chiudere la finestra **Proprietà** .
 
    Questa operazione è necessaria per supportare i riferimenti DLL necessari per l'estensione del **Visualizzatore risultati test prestazioni Web**.
 
@@ -334,7 +334,7 @@ Le impostazioni disponibili nella pagina delle opzioni relative alla sicurezza d
 
 - **Consenti caricamento componenti aggiuntivi da URL.** Non selezionato per impostazione predefinita. Se selezionata, questa opzione consente il caricamento di componenti aggiuntivi da siti Web esterni. In caso contrario, non è possibile caricare componenti aggiuntivi remoti in Visual Studio. Se per qualche motivo non è possibile eseguire il caricamento di un componente aggiuntivo, non potrà essere caricato dal Web. Questa impostazione controlla solo il caricamento della DLL del componente aggiuntivo. I file di registrazione *ADDIN* devono trovarsi sempre nel sistema locale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>

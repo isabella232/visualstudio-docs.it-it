@@ -1,19 +1,19 @@
 ---
 title: Configurare l'emulazione di rete tramite le impostazioni test
 ms.date: 10/03/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - test settings, network emulation
 ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 685b22f25c7138c4c3e7c9068ba52864e40648e1
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 55daa1e16af45c153efced3736c46c3c27d748ac
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880143"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288182"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Procedura: Configurare l'emulazione di rete usando le impostazioni test in Visual Studio
 
@@ -28,11 +28,11 @@ ms.locfileid: "80880143"
 Nella procedura seguente viene illustrato come configurare l'emulazione di rete dall'editor di configurazione. La procedura è valida per l'editor di configurazione in Microsoft Test Manager e Visual Studio.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Nella procedura seguente viene illustrato come configurare l'emulazione di rete dall'editor di configurazione. Questi passaggi si applicano all'editor di configurazione in Visual Studio.These steps apply to the configuration editor in Visual Studio.
+Nella procedura seguente viene illustrato come configurare l'emulazione di rete dall'editor di configurazione. Questi passaggi si applicano all'editor di configurazione in Visual Studio.
 ::: moniker-end
 
 > [!NOTE]
-> L'adattatore dati di diagnostica dell'emulazione di rete è applicabile solo alle impostazioni test di Visual Studio. Non viene utilizzato per le impostazioni di test in Microsoft Test Manager (deprecato in Visual Studio 2017).
+> L'adattatore dati di diagnostica dell'emulazione di rete è applicabile solo alle impostazioni test di Visual Studio. Non viene usato per le impostazioni di test in Microsoft Test Manager (deprecato in Visual Studio 2017).
 
 ::: moniker range="vs-2017"
 Per l'emulazione di rete è necessario usare un account con i privilegi di amministratore. Se è stata selezionata l'emulazione di rete per un ruolo locale che esegue test manuali, è necessario avviare Microsoft Test Manager usando privilegi di amministratore. Se è stata selezionata l'emulazione di rete per qualsiasi altro ruolo, è necessario verificare che l'agente di test nel computer per quel ruolo usi un account utente che è membro del gruppo Administrators. Per altre informazioni su come configurare l'account dell'agente di test, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
@@ -90,7 +90,7 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
     > [!TIP]
     > È anche possibile installare il driver di emulazione di rete dalla riga di comando nel computer locale senza installare l'agente di test di Visual Studio tramite il comando seguente: **VSTestConfig NETWORKEMULATION /install**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Eseguire test manuali (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

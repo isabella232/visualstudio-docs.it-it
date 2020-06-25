@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: installare un visualizzatore | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 06/10/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183626"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286388"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedura: installare un visualizzatore
 Dopo avere creato un visualizzatore, è necessario installarlo in modo da renderlo disponibile in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per installare un visualizzatore è sufficiente seguire una semplice procedura.
@@ -54,6 +54,10 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
     - `netstandard2.0`per i sottoposti a debug utilizzando un runtime che supporta `netstandard 2.0` ( `.NET Framework v4.6.1+` o `.NET Core 2.0+` ).
     - `netcoreapp`per i debug che eseguono il `.NET Core` Runtime. (supporta `.NET Core 2.0+` )
 
+   Una DLL sul lato oggetto del debug è necessaria se si desidera creare un visualizzatore autonomo. Questa DLL contiene il codice per l'oggetto dati, che può implementare metodi di <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+
+   Se si utilizza il multitargeting del codice del lato oggetto del debug, la DLL sul lato oggetto del debug deve essere inserita nella cartella per la TFM supportata almeno.
+
 4. Riavviare la sessione di debug.
 
 > [!NOTE]
@@ -80,6 +84,6 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
 > Se si desidera usare un visualizzatore gestito per il debug remoto, copiare la DLL nello stesso percorso nel computer remoto.
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)
 - [Procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md)

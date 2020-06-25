@@ -1,19 +1,19 @@
 ---
 title: Tempo di preparazione del passaggio per un modello di carico passaggio per i test di carico
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a40f7ce4aacfdc03b5e05becbfc83439945f7e8a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5ae00c3d9d647eff6f9df448c1681ae1d6c54bcb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588915"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287324"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procedura: Specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio
 
@@ -22,9 +22,9 @@ Dopo avere creato il test di carico mediante la **Creazione guidata test di cari
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Per un elenco completo delle proprietà dello scenario di test di carico e delle relative descrizioni, vedere [Proprietà dello scenario](../test/load-test-scenario-properties.md)di test di carico .
+> Per un elenco completo delle proprietà dello scenario del test di carico e delle relative descrizioni, vedere [proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
-La proprietà **Tempo rampa passaggio** viene impostata nella finestra **Proprietà.** Le proprietà degli scenari dei test di carico vengono modificate nell'**Editor test di carico**.
+La proprietà tempo di preparazione **passaggio** viene impostata nella finestra **Proprietà** . Le proprietà degli scenari dei test di carico vengono modificate nell'**Editor test di carico**.
 
 La proprietà **Tempo di preparazione passaggio** viene usata solo con un modello di carico passaggio. Per altre informazioni, vedere [Modificare i modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
@@ -43,7 +43,7 @@ Un modello di carico per passaggio viene utilizzato per aumentare il carico sul 
 Queste impostazioni attivano l'esecuzione del test di carico per 30 minuti (1800 secondi) a carichi utente di 100, 200, 300, fino a 2000 utenti.
 
 > [!NOTE]
-> La proprietà **Tempo rampa passaggio** è l'unica di queste proprietà non disponibile nella Creazione guidata test di **carico.**
+> La proprietà tempo di preparazione **passaggio** è la sola di queste proprietà che non è disponibile per la scelta nella **nuova creazione guidata test di carico**.
 
 La proprietà **Tempo di preparazione passaggio** consente l'aumento graduale, anziché immediato, da un passaggio al successivo (ad esempio da 100 a 200 utenti). In questo esempio il carico utente aumenterebbe da 100 a 200 utenti in un intervallo di 20 secondi, ovvero un aumento di 5 utenti al secondo.
 
@@ -68,9 +68,9 @@ La proprietà **Tempo di preparazione passaggio** consente l'aumento graduale, a
 
 6. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore di **Tempo di preparazione passaggio**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)
-- [Modificare i modelli di carico per modellare le attività degli utenti virtualiEdit load patterns to model virtual user activities](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Modificare i modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)

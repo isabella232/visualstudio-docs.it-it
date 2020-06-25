@@ -1,11 +1,13 @@
 - name: Documentazione di profilatura
   href: index.yml
 - name: Panoramica
-  href: profiling-overview.md
-- name: Guide rapide introduttive
   items:
     - name: Presentazione della profilatura
       href: profiling-feature-tour.md
+    - name: Eseguire gli strumenti di profilatura con o senza il debugger
+      href: running-profiling-tools-with-or-without-the-debugger.md
+- name: Guide rapide introduttive
+  items:
     - name: Analizzare l'utilizzo della CPU (gestita)
       href: quickstart-cpu-usage-managed.md
     - name: Analizzare l'utilizzo della CPU (nativa)
@@ -20,12 +22,22 @@
       href: memory-usage.md
 - name: Concetti
   items:
-    - name: Eseguire gli strumenti di profilatura con o senza il debugger
-      href: running-profiling-tools-with-or-without-the-debugger.md
+    - name: Informazioni sui metodi di raccolta delle prestazioni
+      href: understanding-performance-collection-methods-perf-profiler.md
+    - name: Ottimizzare le impostazioni del profiler
+      href: optimize-profiler-settings.md
+    - name: Uso simultaneo di più strumenti del profiler
+      href: use-multiple-profiler-tools-simultaneously.md
 - name: Guide pratiche
   items:
-    - name: Usare PerfTips
+    - name: PerfTips
       href: perftips.md
+    - name: .NET Async
+      href: analyze-async.md
+    - name: Database
+      href: analyze-database.md
+    - name: Visualizzatore eventi
+      href: events-viewer.md
     - name: Utilizzo della CPU
       href: cpu-usage.md
     - name: Utilizzo memoria

@@ -1,7 +1,7 @@
 ---
 title: Usare un ambiente lab per DevOps
 ms.date: 05/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - lab environment, test lab
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 499f335edabe77d001a1a2486e7b559abe6c7a8a
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880338"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286830"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -28,7 +28,7 @@ Un ambiente lab è una raccolta di computer virtuali e fisici che è possibile u
 
 Ecco alcuni esempi di topologie comuni di ambienti lab:
 
-| Topologia | Descrizione |
+| Topologia | Description |
 |---|---|
 |![Topologia solo server](../media/topology_backend.png)| Questo ambiente lab ha una *topologia server*, che è spesso usata per eseguire test manuali su applicazioni server e che consente ai tester di usare i propri computer client per verificare i bug nell'ambiente. In una topologia di back-end, l'ambiente lab contiene solo i server. Quando si usa questo tipo di topologia in genere si esegue la connessione ai server nell’ambiente lab usando un computer client che non fa parte dell’ambiente.|
 |![Ambiente lab nel cloud](../media/topology_cloud.png)| Questo ambiente lab presenta caratteristiche e funzionalità simili alla _topologia server_ senza il requisito della presenza di macchine virtuali o computer fisici in un ambiente locale. Ciò può ridurre la durata della configurazione, semplificare la manutenzione e abbassare i costi. La configurazione di più siti Web e più macchine virtuali e la personalizzazione della rete sono semplici e rapide in un ambiente cloud come Microsoft Azure.|
@@ -127,7 +127,7 @@ Per altre informazioni su Lab Management, vedere:
 * [Pianificare il lab](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
 * [Configurazione e amministrazione di Lab Management](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
 * [Configurazione di Lab Management per ambienti SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [Gestione autorizzazioni](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
+* [Gestisci autorizzazioni](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
 * [Modifica della configurazione](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
 * [Risoluzione dei problemi](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
 
@@ -139,7 +139,7 @@ Per informazioni sulla configurazione degli ambienti, vedere:
 * [Creazione e uso di un ambiente di isolamento rete](https://msdn.microsoft.com/library/ee518924.aspx)
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Installare e configurare agenti di test](../../test/lab-management/install-configure-test-agents.md)
 * [Visual Studio Lab Management Guide](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/) (Guida di Visual Studio Lab Management)

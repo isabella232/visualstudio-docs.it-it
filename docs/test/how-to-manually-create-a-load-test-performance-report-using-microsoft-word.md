@@ -1,7 +1,7 @@
 ---
 title: Creare un report di prestazioni del test di carico usando Microsoft Word
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, reporting
 - load tests, creating Word reports
@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f630c0e5c054185dcc0dcb87f553dff8dd2ad8f7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113437"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287597"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedura: Creare manualmente un report di prestazioni di un test di carico usando Microsoft Word
 
@@ -30,7 +30,7 @@ ms.locfileid: "76113437"
 
 ## <a name="copy-summary-view-data"></a>Copiare i dati della visualizzazione Riepilogo
 
-1. In **Risultati test di carico**, se la visualizzazione di riepilogo non è attualmente visualizzata, fare clic su **Riepilogo** nella barra degli strumenti.
+1. Nel **risultati test di carico**, se la visualizzazione riepilogo non è attualmente visualizzata, fare clic su **Riepilogo** sulla barra degli strumenti.
 
 2. Nella visualizzazione Riepilogo fare clic con il pulsante destro del mouse e scegliere **Seleziona tutto**.
 
@@ -42,7 +42,7 @@ ms.locfileid: "76113437"
 
 ## <a name="copy-graph-view-data"></a>Copiare i dati della visualizzazione Grafici
 
-1. In **Risultati test**di carico , se la visualizzazione Grafici non è attualmente visualizzata, scegliere **Grafici** nella barra degli strumenti.
+1. Nel **risultati test di carico**, se la visualizzazione grafici non è attualmente visualizzata, scegliere **grafici** nella barra degli strumenti.
 
 2. (Facoltativo) Ingrandire il grafico specifico che si vuole copiare nel documento di Microsoft Word, come illustrato nella figura seguente. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
@@ -55,7 +55,7 @@ ms.locfileid: "76113437"
     > [!WARNING]
     > Non è possibile copiare il grafico da un desktop remoto e incollarlo in un altro computer, perché verranno copiate solo le informazioni della tabella associata al grafico e non l'immagine del grafico. L'immagine del grafico viene archiviata nella directory temporanea del computer dal quale è stata copiata e il secondo computer non è in grado di dereferenziare tale directory.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md)
 - [Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

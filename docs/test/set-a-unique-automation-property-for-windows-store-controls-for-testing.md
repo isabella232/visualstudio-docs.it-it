@@ -1,18 +1,18 @@
 ---
 title: Impostare una proprietà di automazione univoca dei controlli UWP per il test
 ms.date: 05/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 51e16dcaa48a08ae97bc80be1d33163c6f3af875
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 62409dc4aac8f640c7b58b112f7f86215ba2043b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590449"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286713"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Impostare una proprietà di automazione univoca dei controlli UWP per il test
 
@@ -22,7 +22,7 @@ Per eseguire test codificati dell'interfaccia utente per un'applicazione UWP bas
 
 ## <a name="static-xaml-definition"></a>Definizione XAML statica
 
-Per specificare una proprietà di automazione univoca per un controllo definito nel file XAML, è possibile impostare **AutomationProperties.AutomationId** o **AutomationProperties.Name** in modo implicito o esplicito, come illustrato negli esempi seguenti. Quando si imposta uno di questi valori, al controllo viene assegnata una proprietà di automazione univoca che può essere usata per identificare il controllo quando si crea una registrazione delle azioni o di un test codificato dell'interfaccia utente.
+Per specificare una proprietà di automazione univoca per un controllo definito nel file XAML, è possibile impostare **AutomationProperties. AutomationId** o **AutomationProperties.Name** in modo implicito o esplicito, come illustrato negli esempi seguenti. Quando si imposta uno di questi valori, al controllo viene assegnata una proprietà di automazione univoca che può essere usata per identificare il controllo quando si crea una registrazione delle azioni o di un test codificato dell'interfaccia utente.
 
 ### <a name="set-the-property-implicitly"></a>Impostare la proprietà in modo implicito
 
@@ -56,11 +56,11 @@ Impostare **AutomationProperties.Name** su **ButtonY** in modo esplicito nel fil
 
 In Blend per Visual Studio è possibile selezionare un'opzione per assegnare nomi univoci a elementi interattivi quali pulsanti, caselle di riepilogo, caselle combinate e caselle di testo. In questo modo, ai controlli vengono assegnati valori univoci di **AutomationProperties.Name**.
 
-Per assegnare nomi univoci ai controlli esistenti, selezionare **Strumenti** > **Nome Elementi interattivi**.
+Per assegnare nomi univoci a controlli esistenti, selezionare **strumenti**  >  **nome elementi interattivi**.
 
 ![Denominare elementi interattivi in Blend per Visual Studio](../test/media/cuit_windowsstoreproperty_blend_1.png)
 
-Per assegnare automaticamente nomi univoci ai nuovi controlli aggiunti, selezionare**Opzioni** **degli strumenti** > per aprire la finestra di dialogo **Opzioni.** Selezionare **Finestra di progettazione XAML** e **Assegna automaticamente un nome agli elementi interattivi durante la creazione**. Selezionare **OK** per chiudere la finestra di dialogo.
+Per assegnare automaticamente nomi univoci ai nuovi controlli aggiunti, selezionare **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** . Selezionare **Finestra di progettazione XAML** e **Assegna automaticamente un nome agli elementi interattivi durante la creazione**. Selezionare **OK** per chiudere la finestra di dialogo.
 
 ## <a name="use-a-data-template"></a>Usare un modello di dati
 
@@ -99,7 +99,7 @@ Per associare i valori alle variabili è anche possibile usare un modello con **
 </ListBox>
 ```
 
-Per entrambi questi esempi, è necessario quindi eseguire l'override del metodo **ToString()** di **ItemSource**, come illustrato utilizzando l'esempio di codice riportato di seguito. Questo codice consente di verificare che il valore di **AutomationProperties.Name** sia impostato e univoco, dal momento che non è possibile impostare una proprietà di automazione univoca per ogni elemento elenco associato a dati. In questo caso è sufficiente impostare un valore univoco per **Automation Properties.Name**.
+Per entrambi questi esempi, è necessario eseguire l'override del metodo **ToString ()** di **ItemSource**, come illustrato nell'esempio di codice seguente. Questo codice consente di verificare che il valore di **AutomationProperties.Name** sia impostato e univoco, dal momento che non è possibile impostare una proprietà di automazione univoca per ogni elemento elenco associato a dati. In questo caso è sufficiente impostare un valore univoco per **Automation Properties.Name**.
 
 > [!NOTE]
 > Con questo approccio è anche possibile usare l'associazione per impostare il contenuto interno dell'elemento elenco su una stringa della classe Employee. Come illustrato nell'esempio, al controllo pulsante all'interno di ogni elemento dell'elenco viene assegnato un ID automazione univoco che corrisponde all'ID dipendente.
@@ -163,6 +163,6 @@ private void CreateCheckBox(string txt, StackPanel panel)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Testare le app UWP con test codificati dell'interfaccia utenteTest UWP apps with coded UI tests](../test/test-uwp-app-with-coded-ui-test.md)
+- [Testare app UWP con test codificati dell'interfaccia utente](../test/test-uwp-app-with-coded-ui-test.md)

@@ -1,19 +1,19 @@
 ---
 title: Analizzare le attività degli utenti virtuali per i test di carico
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c997f27e65a8e3992239fac78d52b0b4f19670c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169404"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288403"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedura: Analizzare le attività degli utenti virtuali durante un test di carico usando il grafico attività utente virtuale
 
@@ -55,13 +55,13 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il **Gra
 
    - **Browser** (non visualizzato in un test o in una transazione)
 
-   - **Rete**
+   - **Network**
 
-   - **Ora di inizio**
+   - **Ora di Inizio**
 
-   - **Durata**
+   - **Duration**
 
-   - **Agente**
+   - **Agent**
 
    - **Log test** (collegamento al log test)
 
@@ -72,9 +72,9 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il **Gra
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Per utilizzare le opzioni di filtro nel Grafico attività utente virtuale
 
-1. Nella **Legenda dettagli**utilizzare l'elenco a discesa per selezionare **Test**, **Pagina**o **Transazione**.
+1. Nella **Legenda dettagli**utilizzare l'elenco a discesa per selezionare **test**, **pagina**o **transazione**.
 
-    **Pannello Legenda dettagli**
+    **Riquadro Legenda dettagli**
 
     ![Riquadro della legenda dei dettagli](../test/media/ltest_detailslegend.png)
 
@@ -86,7 +86,7 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il **Gra
 
     Ad esempio, è possibile selezionare l'opzione **(Evidenzia errori)** per visualizzare tutti gli errori nel grafico in colore rosso. È anche possibile selezionare l'opzione **(Evidenzia risultati con log)** per visualizzare tutti i risultati del test nel grafico che dispongono di log in colore verde.
 
-    **Pannello dei risultati del filtro**
+    **Pannello Risultati filtro**
 
     ![Riquadro dei risultati del filtro](../test/media/ltest_filterresults.png)
 
@@ -99,11 +99,11 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il **Gra
    - **Mostra risultati con errori** Vengono visualizzati i risultati in cui sono presenti errori, che possono risultare utili per l'esecuzione del debug.
 
      > [!NOTE]
-     > L'elenco dei tipi di errore elencati nel nodo **Mostra risultati con errori** può essere ulteriormente analizzato scegliendo il pulsante **Tabelle** nella barra degli strumenti **del Visualizzatore risultati test prestazioni Web.** Per ulteriori informazioni, vedere [Analizzare i risultati e gli errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)dei test di carico nella visualizzazione Tabelle .
+     > È possibile analizzare ulteriormente l'elenco dei tipi di errore elencati nel nodo **Mostra risultati con errori** scegliendo il pulsante **tabelle** nella barra degli strumenti del **Visualizzatore risultati test prestazioni Web** . Per ulteriori informazioni, vedere [analizzare i risultati e gli errori dei test di carico nella visualizzazione tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      Il **Grafico attività utente virtuale** verrà aggiornato di conseguenza.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Analisi dell'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Procedura dettagliata: utilizzo dell'area attività utente virtuale per isolare i problemiWalkthrough: Using the virtual user activity chart to isolate issues](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Procedura dettagliata: uso del grafico attività utente virtuale per isolare i problemi](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

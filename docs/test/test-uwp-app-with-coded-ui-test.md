@@ -1,7 +1,7 @@
 ---
 title: Testare un'app UWP con un test codificato dell'interfaccia utente
 ms.date: 05/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: fdd3d98bd848bb6fe679809a58f2e316a316f012
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aad17d244d70051a363a4cde294c592968093ba0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590358"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286752"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Creare un test codificato dell'interfaccia utente per testare un'app UWP
 
@@ -57,7 +57,7 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
    Me.textBox.Text = Me.button.Name
    ```
 
-1. Premere **CTRL**+**F5** per eseguire l'app. Verrà visualizzata una schermata simile alla seguente:
+1. Premere **CTRL** + **F5** per eseguire l'app. Verrà visualizzata una schermata simile alla seguente:
 
    ![App UWP con casella di testo e pulsante](media/uwp-app.png)
 
@@ -80,7 +80,7 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
 
    ![Finestra di dialogo Genera codice per test codificato dell'interfaccia utente](../test/media/manually-edit-the-test.png)
 
-1. Se l'app UWP non è già in esecuzione, avviarla premendo **CTRL**+**F5**.
+1. Se l'app UWP non è già in esecuzione, avviarla premendo **CTRL** + **F5**.
 
 1. Aprire la finestra di dialogo **Generatore di test codificati dell'interfaccia utente** posizionando il cursore nel metodo `CodedUITestMethod1` e scegliendo **Test** > **Genera codice per test codificato dell'interfaccia utente** > **Usa il generatore di test codificati dell'interfaccia utente**.
 
@@ -98,7 +98,7 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
 
      ![Fare clic sul controllo Button per impostare il valore della casella di testo](../test/media/uwp-app-button-textbox.png)
 
-1. Aggiungere un'asserzione per verificare il testo nel controllo della casella di testo. Usare lo strumento selettore di precisione per selezionare il controllo della casella di testo e selezionare la proprietà **Text** nella finestra di dialogo **Aggiungi asserzione**. Quindi, selezionare **Aggiungi asserzione** o premere **ALT**+**A**. Nella casella **Messaggio su errore asserzione** immettere **Valore casella di testo imprevisto.** , quindi selezionare **OK**.
+1. Aggiungere un'asserzione per verificare il testo nel controllo della casella di testo. Usare lo strumento selettore di precisione per selezionare il controllo della casella di testo e selezionare la proprietà **Text** nella finestra di dialogo **Aggiungi asserzione**. Quindi, selezionare **Aggiungi asserzione** o premere **ALT**+**A**. Nella casella **Messaggio su errore asserzione** immettere **Valore casella di testo imprevisto.** quindi selezionare **OK**.
 
      ![Scegliere la casella di testo con lo strumento selettore di precisione e aggiungere un'asserzione](../test/media/add-assertion-for-text.png)
 
@@ -224,9 +224,9 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>D: Perché non è possibile modificare il codice nel file UIMap.Designer?
 
-**R**: Qualsiasi modifica del codice apportata nel file *UIMapDesigner.cs* viene sovrascritta ogni volta che si genera codice usando **Generatore di test codificati dell'interfaccia utente**. Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere utilizzato per eseguire l'override di metodi e proprietà nel file *di UIMapDesigner.cs.* Rimuovere il riferimento al metodo originale nel file *Coded UITest.cs* e sostituirlo con il nome del metodo rinominato.
+**R**: Qualsiasi modifica del codice apportata nel file *UIMapDesigner.cs* viene sovrascritta ogni volta che si genera codice usando **Generatore di test codificati dell'interfaccia utente**. Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere usato per eseguire l'override dei metodi e delle proprietà nel file *UIMapDesigner.cs* . Rimuovere il riferimento al metodo originale nel file *Coded UITest.cs* e sostituirlo con il nome del metodo rinominato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Impostare una proprietà di automazione univoca dei controlli UWP per il test](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

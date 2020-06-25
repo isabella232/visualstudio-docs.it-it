@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173512"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288975"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
@@ -51,17 +51,17 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`Condition`|Attributo facoltativo. Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
-|`Label`|Attributo facoltativo. Identifica l'oggetto `ItemGroup`.|
+|`Label`|Attributo facoltativo. Identifica l'oggetto `ItemGroup`. |
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Elemento|Descrizione|
+|Elemento|Description|
 |-------------|-----------------|
-|[Item](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemGroup`.|
+|[Elemento](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemGroup`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
-| Elemento | Descrizione |
+| Elemento | Description |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 | [Destinazione](../msbuild/target-element-msbuild.md) | A partire da .NET Framework 3.5, l'elemento `ItemGroup` può essere visualizzato in un elemento `Target`. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md). |
@@ -91,7 +91,9 @@ In un file di progetto semplice, in genere si usa un singolo `ItemGroup` element
 
 Per ItemGroup è possibile applicare condizioni usando l' `Condition` attributo. In tal caso, gli elementi vengono aggiunti all'elenco di elementi solo se la condizione è soddisfatta. Vedere [le condizioni di MSBuild](msbuild-conditions.md)
 
-## <a name="see-also"></a>Vedere anche
+L' `Label` attributo viene usato in alcuni sistemi di compilazione come metodo per controllare i comportamenti di compilazione. È possibile usarlo solo nelle dichiarazioni, in modo da creare script MSBuild più comprensibili o come impostazioni di controllo per influire sulle azioni di compilazione.
+
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementi](../msbuild/msbuild-items.md)

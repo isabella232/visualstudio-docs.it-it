@@ -1,7 +1,7 @@
 ---
 title: Associare un test controller o un agente di test a una scheda di rete
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - controllers, netwrok adapter
 - agents, configuring
@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 925df819b903be3de3d44127243f3b18d1e9aff5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594786"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288249"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedura: Associare un test controller o un agente di test a una scheda di rete
 
@@ -25,7 +25,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 > [!WARNING]
 > Quando si tenta di configurare un agente di test, potrebbe verificarsi l'errore seguente:
 >
-> **Errore 8110. Impossibile connettersi al computer controller specificato o accedere all'oggetto controller**
+> **Errore 8110. Non è possibile connettersi al computer controller specificato o accedere all'oggetto controller**
 >
 > Questo errore può essere causato dall'installazione del controller di test in un computer con più di una scheda di rete. È anche possibile installare correttamente gli agenti e non riscontrare il problema finché non si tenta di eseguire un test.
 
@@ -55,7 +55,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
      `net stop vsttcontroller`
 
-3. Aprire il file di configurazione XML *QTCcontroller.exe.config* che si trova in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edizione>\Common7\IDE*.
+3. Aprire il file di configurazione XML *QTCcontroller.exe.config* che si trova in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4. Individuare il tag `<appSettings>`.
 
@@ -101,7 +101,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
      **net stop vsttagent**
 
-3. Aprire il file di configurazione XML *QTCAgentService.exe.config* che si trova in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edizione>\Common7\IDE*.
+3. Aprire il file di configurazione XML *QTAgentService.exe.config* che si trova in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4. Individuare il tag `<appSettings>`.
 
@@ -128,7 +128,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
     `net start vsttagent`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)
 - [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)

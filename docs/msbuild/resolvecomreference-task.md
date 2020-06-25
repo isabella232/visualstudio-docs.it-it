@@ -18,22 +18,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595202"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286180"
 ---
 # <a name="resolvecomreference-task"></a>Attività ResolveComReference
 
-Accetta un elenco di uno o più nomi di librerie dei tipi o file *con estensione tlb* e risolve tali librerie dei tipi in percorsi su disco.
+Accetta un elenco di uno o più nomi di librerie dei tipi o file *tlb* e risolve tali librerie dei tipi in posizioni su disco.
 
 ## <a name="parameters"></a>Parametri
 
  Nella tabella che segue vengono descritti i parametri dell'attività `ResolveCOMReference` .
 
-|Parametro|Descrizione|
+|Parametro|Description|
 |---------------|-----------------|
 |`DelaySign`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, la chiave pubblica viene inserita nell'assembly. Se `false`, l'assembly viene firmato completamente.|
 |`EnvironmentVariables`|Parametro `String[]` facoltativo.<br /><br /> Matrice di coppie di variabili di ambiente, separate da segni di uguale. Tali variabili vengono passate ai file *tlbimp.exe* e *aximp.exe* compilati in aggiunta al blocco di ambiente regolare, oppure eseguendo l'override selettivo di tale blocco.|
@@ -57,7 +57,7 @@ Accetta un elenco di uno o più nomi di librerie dei tipi o file *con estensione
 
  Nella tabella seguente vengono descritti i metadati disponibili per gli elementi passati al parametro `TypeLibNames`.
 
-|Metadati|Descrizione|
+|Metadati|Description|
 |--------------|-----------------|
 |`GUID`|Metadati di elemento obbligatori.<br /><br /> GUID della libreria dei tipi. Se questi metadati di elemento non vengono specificati, l'attività avrà esito negativo.|
 |`VersionMajor`|Metadati di elemento obbligatori.<br /><br /> Versione principale della libreria dei tipi. Se questi metadati di elemento non vengono specificati, l'attività avrà esito negativo.|
@@ -70,7 +70,7 @@ Accetta un elenco di uno o più nomi di librerie dei tipi o file *con estensione
 
  Nella tabella seguente vengono descritti i metadati disponibili per gli elementi passati al parametro `TypeLibFiles`.
 
-|Metadati|Descrizione|
+|Metadati|Description|
 |--------------|-----------------|
 |`EmbedInteropTypes`|Parametro `Boolean` facoltativo.<br /><br />  Se `true`, incorporare i tipi di interoperabilità da questo riferimento direttamente nell'assembly anziché generare una DLL di interoperabilità.|
 |`WrapperTool`|Metadati di elemento facoltativi.<br /><br /> Specifica lo strumento wrapper usato per generare il wrapper dell'assembly per la libreria dei tipi in oggetto. Se questi metadati di elemento non vengono specificati, l'attività userà lo strumento wrapper predefinito "tlbimp". Di seguito sono riportate le opzioni disponibili per typelibs (non viene fatta distinzione tra maiuscole e minuscole):<br /><br /> -   `Primary`: usare questo strumento wrapper se si vuole usare un assembly di interoperabilità primario già generato per il componente COM. Quando si usa questo strumento wrapper, non specificare una directory di output del wrapper perché tale operazione determina l'esito negativo dell'attività.<br />-   `TLBImp`: usare questo strumento wrapper se si vuole generare un assembly di interoperabilità per il componente COM.<br />-   `AXImp`: usare questo strumento wrapper per generare un assembly di interoperabilità per un controllo ActiveX.|
@@ -78,13 +78,23 @@ Accetta un elenco di uno o più nomi di librerie dei tipi o file *con estensione
 > [!NOTE]
 > Una maggiore quantità di informazioni fornite per identificare in maniera univoca una libreria dei tipi aumenta le probabilità di risoluzione dell'attività nel file corretto su disco.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
-Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe base Task](../msbuild/task-base-class.md).
+Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base Task](../msbuild/task-base-class.md).
 
 Per il corretto funzionamento di questa attività, non è necessario che la DLL COM sia registrata nel computer.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="msb4803-error"></a>Errore MSB4803
+
+Se si tenta di eseguire un progetto che usa l' `ResolveCOMReference` attività dai comandi dell'interfaccia della riga di `dotnet` comando, si ottiene l'errore:
+
+```output
+MSB4803: The task "ResolveComReference" is not supported on the .NET Core version of MSBuild. Please use the .NET Framework version of MSBuild.
+```
+
+Questa attività non è supportata nella versione .NET Core di MSBuild, che viene usata quando si esegue il `dotnet build` comando dalla riga di comando. Provare a compilare il progetto richiamando [MSBuild.exe](msbuild-command-line-reference.md) dalla prompt dei comandi per gli sviluppatori di Visual Studio, perché usa la versione .NET Framework di MSBuild.
+
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

@@ -1,18 +1,18 @@
 ---
 title: Scrivere unit test per DLL C++
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77279280"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287038"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Scrivere unit test per le DLL C++ in Visual Studio
 
@@ -44,7 +44,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
   1. In **Esplora soluzioni**scegliere **Proprietà**dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
 
-  2. Scegliere **Proprietà di** > configurazione**generale**.
+  2. Scegliere **proprietà di configurazione**  >  **generale**.
 
   3. Impostare **Tipo di configurazione** su **Libreria statica (.lib)**.
 
@@ -76,7 +76,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
   1. Nelle proprietà del progetto di test, aggiungere il percorso del progetto incluso nel test a Directory di inclusione.
 
-       Scegliere Le > directory di configurazione directory**di** >  **inclusione**directory VC e Directories .**Include Directories**
+       Scegliere **proprietà di configurazione**  >  **directory di VC + +**  >  **Includi directory**.
 
        Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
@@ -102,15 +102,15 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
   2. In **Esplora soluzioni**scegliere **Proprietà**dal menu di scelta rapida del progetto di test.
 
-  3. Scegliere **Le proprietà** > di configurazione**Dipendenze aggiuntive****del** > **linker** > .
+  3. Scegliere **proprietà di configurazione**  >  **linker**  >  **immettere**  >  **dipendenze aggiuntive**.
 
        Scegliere **Modifica** e aggiungere i nomi dei file con estensione **obj** o **lib**. Non usare nomi di percorso completo.
 
-  4. Scegliere Le directory di libreria aggiuntive**generali** > **del linker** > **delle** **proprietà** > di configurazione .
+  4. Scegliere **proprietà di configurazione**  >  **linker**  >  **General**  >  **directory aggiuntive libreria**generale.
 
        Scegliere **Modifica** e aggiungere il percorso della directory dei file con estensione **obj** o **lib**. Il percorso è in genere contenuto nella cartella di compilazione del progetto sottoposto a test.
 
-  5. Scegliere Le > directory di configurazione directory**di** >  **inclusione**directory VC e Directories .**Include Directories**
+  5. Scegliere **proprietà di configurazione**  >  **directory di VC + +**  >  **Includi directory**.
 
        Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
@@ -122,7 +122,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
    1. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
 
-   2. Scegliere **Proprietà** > di configurazione**VC e Directories**.
+   2. Scegliere **proprietà di configurazione**  >  **directory di VC + +**.
 
    3. Modificare le directory di inclusione e di libreria:
 
@@ -167,13 +167,13 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
 1. Se non è visibile alcun test nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul relativo nodo in **Esplora soluzioni** e scegliendo **Compila** o **Ricompila**.
 
-1. In **Esplora test**scegliere Esegui **tutto**oppure selezionare i test specifici che si desidera eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
+1. In **Esplora test**scegliere **Esegui tutto**oppure selezionare i test specifici che si desidera eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)
-- [Guida di riferimento all'API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
+- [Informazioni di riferimento sull'API Microsoft. VisualStudio. TestTools. CppUnitTestFramework](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Eseguire il debug di codice nativo](../debugger/debugging-native-code.md)
-- [Procedura dettagliata: Creare e usare la propria libreria a collegamento dinamico (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Procedura dettagliata: Creazione e uso di una libreria di collegamento dinamico (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importare ed esportare](/cpp/build/importing-and-exporting)
 - [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)

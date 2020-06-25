@@ -1,18 +1,18 @@
 ---
 title: Installare framework di unit test di terze parti
 ms.date: 04/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b70e26adc7c0c9a8dc409d9b4b971b233418b8e1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb9a08d0d3119724e8db631841aca35c6c6e9fe5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594279"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286973"
 ---
 # <a name="install-unit-test-frameworks"></a>Installare framework di unit test
 
@@ -38,7 +38,7 @@ Eseguire l'aggiornamento all'adattatore di test stabile più recente per una mig
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Per eseguire l'aggiornamento alla versione dell'adattatore di test stabile più recente
 
-1. Aprire Nuget Package Manager per la soluzione passando a **Strumenti** > **NuGet Gestione pacchetti** > **Gestisci pacchetti NuGet per soluzione**.
+1. Aprire Gestione pacchetti NuGet per la soluzione passando a **strumenti**gestione  >  **pacchetti NuGet**  >  **Gestisci pacchetti NuGet per la soluzione**.
 
 2. Fare clic sulla scheda **Aggiornamenti** e cercare gli adattatori di test MSTest, NUnit o xUnit installati.
 
@@ -48,6 +48,6 @@ Eseguire l'aggiornamento all'adattatore di test stabile più recente per una mig
 
    ![Aggiornare un adattatore di test](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)
+- [Eseguire unit test del codice](../test/unit-test-your-code.md)

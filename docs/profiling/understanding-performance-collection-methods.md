@@ -1,53 +1,53 @@
 ---
 title: Informazioni sui metodi di raccolta delle prestazioni | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 4/30/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
 helpviewer_keywords:
-- Profiling Tools, profiling methods
+- Profiling tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a37d58d1bd18ef19f610602ec8f2238816405e4
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778089"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285751"
 ---
 # <a name="understand-performance-collection-methods"></a>Informazioni sui metodi di raccolta delle prestazioni
 
-Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è possibile usare per raccogliere dati sulle prestazioni. In questo argomento vengono descritti i diversi metodi e vengono suggeriti alcuni scenari in cui può risultare appropriata la raccolta dei dati con un particolare metodo.
+Gli strumenti di profilatura di Visual Studio forniscono cinque metodi per la raccolta dei dati sulle prestazioni. Questo articolo descrive i diversi metodi e suggerisce scenari in cui la raccolta di dati con un determinato metodo può essere appropriata.
 
 > [!NOTE]
-> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative nel modo in cui il profiler di Visual Studio raccoglie i dati su queste piattaforme. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[Campionamento](#sampling)|Raccoglie dati statistici sulle operazioni eseguite da un'applicazione.|
+|[Campionamento](#sampling)|Raccoglie i dati statistici sul lavoro svolto da un'app.|
 |[Strumentazione](#instrumentation)|Raccoglie informazioni dettagliate sugli intervalli per ogni chiamata di funzione.|
-|[Concorrenza](#concurrency)|Raccoglie informazioni dettagliate sulle applicazioni multithread.|
+|[Concorrenza](#concurrency)|Raccoglie informazioni dettagliate sulle app multithread.|
 |[Memoria .NET](#net-memory)|Raccoglie informazioni dettagliate sull'allocazione e la Garbage Collection della memoria .NET.|
-|[Interazione tra livelli](#tier-interaction)|Raccoglie informazioni sulle chiamate di funzione ADO.NET sincrone a un database di SQL Server.<br /><br /> I dati di profilatura dell'interazione tra livelli possono essere raccolti usando qualsiasi edizione di Visual Studio, ma possono essere visualizzati solo in Visual Studio Enterprise.|
+|[Interazione tra livelli](#tier-interaction)|Raccoglie informazioni sulle chiamate di funzione ADO.NET sincrone a un database SQL Server.<br /><br /> Qualsiasi edizione di Visual Studio è in grado di raccogliere dati del profilo di interazione tra livelli. Tuttavia, è possibile visualizzare i dati solo in Visual Studio Enterprise.|
 
-Usando alcuni metodi di profilatura, è anche possibile raccogliere dati aggiuntivi, ad esempio i contatori delle prestazioni di hardware e software. Per altre informazioni, vedere [Raccogliere dati aggiuntivi relativi alle prestazioni](../profiling/collecting-additional-performance-data.md).
+Utilizzando alcuni dei metodi di profilatura, è anche possibile raccogliere dati aggiuntivi quali i contatori delle prestazioni software e hardware. Per altre informazioni, vedere [Raccogliere dati aggiuntivi relativi alle prestazioni](../profiling/collecting-additional-performance-data.md).
 
 ## <a name="sampling"></a>campionamento
 
-Il metodo di profilatura di campionamento raccoglie dati statistici sulle operazioni eseguite da un'applicazione durante l'esecuzione di una profilatura. Il metodo di campionamento è leggero e ha un impatto minimo sull'esecuzione dei metodi dell'applicazione.
+Il metodo di profilatura del campionamento raccoglie dati statistici sul lavoro eseguito da un'app durante un'esecuzione della profilatura. Il metodo di campionamento è leggero e ha un effetto minimo sull'esecuzione dei metodi dell'app.
 
-Il campionamento è il metodo predefinito degli strumenti di profilatura di Visual Studio. È utile per le operazioni seguenti:
+Il campionamento è il metodo predefinito per gli strumenti di profilatura di Visual Studio. È utile per le attività seguenti:
 
-- Analisi iniziali delle prestazioni dell'applicazione.
-- Analisi dei problemi di prestazioni che comportano l'uso del processore (CPU).
+- Esplorazione iniziale delle prestazioni dell'app
+- Analisi dei problemi di prestazioni che coinvolgono l'utilizzo del microprocessore (CPU)
 
-Il metodo di profilatura di campionamento interrompe il processore del computer a intervalli prestabiliti e raccoglie lo stack di chiamate della funzione. I conteggi dei campioni esclusivi vengono incrementati per la funzione in esecuzione e i conteggi inclusivi vengono incrementati per tutte le funzioni chiamanti nello stack di chiamate. I report di campionamento presentano i totali di questi conteggi per il modulo, la funzione, la riga del codice sorgente e l'istruzione sottoposti a profilatura.
+Il metodo di profilatura del campionamento interrompe la CPU del computer a intervalli prestabiliti e raccoglie lo stack di chiamate della funzione. I conteggi dei campioni esclusivi vengono incrementati per la funzione in esecuzione. I conteggi inclusivi vengono incrementati per tutte le funzioni chiamante nello stack di chiamate. I report di campionamento presentano i totali di questi conteggi per i moduli, le funzioni, le righe del codice sorgente e le istruzioni profilate.
 
-Per impostazione predefinita, il profiler imposta l'intervallo di campionamento sui cicli della CPU. È possibile modificare il tipo di intervallo su un altro contatore delle prestazioni della CPU e impostare il numero di eventi del contatore per l'intervallo. È anche possibile raccogliere dati di profilatura di interazione tra livelli (TIP), che forniscono informazioni sulle query eseguite su un database SQL server tramite ADO.NET.
+Per impostazione predefinita, il profiler imposta l'intervallo di campionamento sui cicli della CPU. È possibile modificare il tipo di intervallo in un altro contatore delle prestazioni della CPU o impostare il numero di eventi del contatore per l'intervallo. È anche possibile raccogliere dati di profilatura dell'interazione tra livelli (TIP). Questi dati forniscono informazioni sulle query eseguite in un database di SQL Server tramite ADO.NET.
 
 [Raccogliere le statistiche sulle prestazioni tramite il campionamento](../profiling/collecting-performance-statistics-by-using-sampling.md)
 
@@ -57,22 +57,24 @@ Per impostazione predefinita, il profiler imposta l'intervallo di campionamento 
 
 ## <a name="instrumentation"></a>Strumentazione
 
-Il metodo di profilatura della strumentazione raccoglie informazioni dettagliate sugli intervalli per le chiamate di funzione in un'applicazione sottoposta a profilatura. La profilatura della strumentazione è utile per le operazioni seguenti:
+Il metodo di profilatura della strumentazione raccoglie un intervallo dettagliato per le chiamate di funzione in un'applicazione profilata. La profilatura della strumentazione è utile per le attività seguenti:
 
-- Analisi dei colli di bottiglia di input/output, ad esempio attività di I/O su disco.
-- Analisi di un particolare modulo o set di funzioni.
+- Analisi di colli di bottiglia di input/output, ad esempio I/O su disco
+- Chiusura dell'esame di un particolare modulo o set di funzioni
 
-Il metodo di strumentazione inserisce codice in un file binario che acquisisce informazioni sugli intervalli per ogni funzione nel file instrumentato e ogni chiamata di funzione effettuata da tali funzioni. La strumentazione identifica inoltre il momento in cui una funzione esegue una chiamata al sistema operativo per operazioni quali la scrittura in un file. I report di strumentazione usano quattro valori per rappresentare il tempo totale impiegato in una funzione o una riga del codice sorgente:
+Il metodo di strumentazione inserisce codice in un file binario. Il codice acquisisce le informazioni di temporizzazione per tutte le funzioni nel file instrumentato e ogni funzione chiama tali funzioni. La strumentazione identifica anche quando una funzione chiama il sistema operativo per operazioni come la scrittura in un file.
 
-- Inclusivo trascorso - Tempo totale impiegato per l'esecuzione della funzione o della riga del codice sorgente.
+I report di strumentazione usano questi quattro valori per rappresentare il tempo totale impiegato in una funzione o in una riga del codice sorgente:
 
-- Inclusivo applicazione - Tempo impiegato per l'esecuzione della funzione o della riga del codice sorgente, escluso il tempo trascorso in chiamate al sistema operativo.
+- Inclusivo trascorso: tempo totale impiegato per l'esecuzione della funzione o della riga del codice sorgente.
 
-- Esclusivo trascorso - Tempo impiegato per l'esecuzione del codice nel corpo della funzione o della riga del codice sorgente. È escluso il tempo impiegato per l'esecuzione di funzioni chiamate dalla funzione o dalla riga del codice sorgente.
+- Inclusivo applicazione-tempo impiegato per l'esecuzione della funzione o della riga del codice sorgente. Le chiamate al sistema operativo sono escluse.
 
-- Esclusivo applicazione - Tempo impiegato per l'esecuzione del codice nel corpo della funzione o della riga del codice sorgente. È escluso il tempo impiegato per l'esecuzione di chiamate al sistema operativo e il tempo impiegato per l'esecuzione delle funzioni chiamate dalla funzione o dalla riga del codice sorgente.
+- Tempo esclusivo trascorso: tempo impiegato per l'esecuzione della funzione o della riga del codice sorgente. Le chiamate ad altre funzioni sono escluse.
 
-È inoltre possibile raccogliere i contatori delle prestazioni sia della CPU che del software usando il metodo di strumentazione.
+- Applicazione esclusiva: tempo impiegato per l'esecuzione della funzione o della riga del codice sorgente. Le chiamate al sistema operativo o ad altre funzioni sono escluse.
+
+È anche possibile raccogliere i contatori delle prestazioni della CPU e del software tramite il metodo di strumentazione.
 
 [Informazioni sui valori dei dati di strumentazione](../profiling/understanding-instrumentation-data-values.md)
 
@@ -82,11 +84,25 @@ Il metodo di strumentazione inserisce codice in un file binario che acquisisce i
 
 ## <a name="concurrency"></a>Concorrenza
 
-La profilatura della concorrenza raccoglie informazioni sulle applicazioni multithread. La profilatura dei conflitti di risorse raccoglie informazioni dettagliate sullo stack di chiamate ogni volta che thread concorrenti sono obbligati ad attendere l'accesso a una risorsa condivisa. La visualizzazione della concorrenza raccoglie inoltre informazioni più generali sulla modalità di interazione dell'applicazione multithread con se stessa, l'hardware, il sistema operativo e altri processi nel computer host:
+La profilatura della concorrenza raccoglie informazioni sulle app multithread. La profilatura della contesa delle risorse raccoglie informazioni dettagliate sullo stack di chiamate ogni volta che i thread in conflitto attendono l'accesso a una risorsa condivisa. La visualizzazione della concorrenza raccoglie anche informazioni più generali sul modo in cui l'app multithreading interagisce con:
 
-- I report sui conflitti di risorse visualizzano il numero totale di conflitti e il tempo totale trascorso in attesa di una risorsa per i moduli, le funzioni, le righe del codice sorgente e le istruzioni in cui si è verificata l'attesa. I grafici della sequenza temporale mostrano inoltre quando si sono verificati i conflitti.
+  - Stesso.
+  - L'hardware.
+  - Sistema operativo.
+  - Altri processi sul computer host.
 
-- Il visualizzatore di concorrenza mostra informazioni grafiche che è possibile usare per individuare problemi relativi a colli di bottiglia delle prestazioni, sottoutilizzo della CPU, conflitti di thread, migrazione di thread, ritardi di sincronizzazione, aree di I/O sovrapposte e per ottenere altre informazioni. Quando possibile, l'output grafico fornisce collegamenti allo stack di chiamate e ai dati del codice sorgente. I dati di visualizzazione della concorrenza possono essere raccolti solo per la riga di comando e le applicazioni Windows.
+Report sui conflitti di risorse Visualizza il numero totale di conflitti. Segnalano inoltre il tempo totale di attesa di una risorsa per i moduli, le funzioni, le righe del codice sorgente e le istruzioni. I grafici della sequenza temporale mostrano i conflitti che si sono verificati.
+
+Il Visualizzatore di concorrenza Visualizza informazioni grafiche che consentono di individuare:
+
+  - Colli di bottiglia delle prestazioni.
+  - Sottoutilizzo della CPU.
+  - Contesa di thread.
+  - Migrazione di thread.
+  - Ritardi di sincronizzazione.
+  - Aree di I/O sovrapposte.
+
+  Quando possibile, l'output grafico si collega ai dati dallo stack di chiamate e dal codice sorgente. I dati di visualizzazione della concorrenza possono essere raccolti solo per le app della riga di comando e le app di Windows.
 
 [Informazioni sui valori dei dati su conflitti di risorse](../profiling/understanding-resource-contention-data-values.md)
 
@@ -98,21 +114,21 @@ La profilatura della concorrenza raccoglie informazioni sulle applicazioni multi
 
 ## <a name="net-memory"></a>Memoria .NET
 
-Il metodo di profilatura dell'allocazione della memoria .NET interrompe il processore del computer a ogni allocazione di un oggetto .NET Framework in un'applicazione sottoposta a profilatura. Quando vengono raccolti anche dati sulla durata degli oggetti, il profiler interrompe il processore dopo ogni operazione di Garbage Collection di .NET Framework.
+Il metodo di profilatura per l'allocazione di memoria .NET interrompe la CPU a ogni allocazione di un oggetto .NET Framework in un'applicazione profilata. Quando il profiler raccoglie anche dati sulla durata degli oggetti, interrompe la CPU dopo ogni .NET Framework Garbage Collection.
 
-Il profiler raccoglie informazioni sul tipo, la dimensione e il numero degli oggetti che sono stati creati in un'allocazione o eliminati in un'operazione di Garbage Collection.
+Il profiler raccoglie informazioni sul tipo, le dimensioni e il numero di oggetti creati in un'allocazione o eliminati definitivamente in Garbage Collection.
 
-- Quando si verifica un evento di allocazione, il profiler raccoglie informazioni aggiuntive sullo stack di chiamate della funzione. I conteggi di allocazione esclusivi vengono incrementati per la funzione attualmente in esecuzione e i conteggi inclusivi vengono incrementati per tutte le funzioni chiamanti nello stack di chiamate. I report .NET presentano i totali di questi conteggi per i tipi, i moduli, le funzioni, le righe del codice sorgente e le istruzioni sottoposti a profilatura.
+- Quando si verifica un evento di allocazione, il profiler raccoglie informazioni aggiuntive sullo stack di chiamate della funzione. Il profiler incrementa i conteggi delle allocazioni esclusive per la funzione attualmente in esecuzione. Incrementa inoltre i conteggi inclusivi per tutte le funzioni chiamante nello stack di chiamate. I report .NET presentano i totali di questi conteggi per i tipi profilati, i moduli, le funzioni, le righe del codice sorgente e le istruzioni.
 
-- Quando si verifica una Garbage Collection, il profiler raccoglie dati sugli oggetti che sono stati eliminati e informazioni sugli oggetti in ogni generazione di Garbage Collection. Al termine dell'esecuzione della profilatura, il profiler registra i dati sugli oggetti che non sono stati eliminati in modo esplicito. Il report Durata oggetti mostra i totali per ogni tipo che è stato allocato durante l'esecuzione della profilatura.
+- Quando si verifica Garbage Collection, il profiler raccoglie i dati sugli oggetti eliminati e sugli oggetti in ogni generazione di Garbage Collection. Al termine dell'esecuzione della profilatura, il profiler registra i dati sugli oggetti che non sono stati eliminati in modo esplicito. Il report durata oggetti Visualizza i totali per ogni tipo allocato nell'esecuzione della profilatura.
 
-La profilatura della memoria .NET può essere usata in modalità di campionamento o di strumentazione. La modalità selezionata non influisce sui report Allocazione e Durata oggetti che sono univoci per la profilatura della memoria .NET:
+È possibile utilizzare la profilatura della memoria .NET in modalità di campionamento o di strumentazione. La modalità selezionata non influisce sui report di allocazione e durata degli oggetti che sono univoci per la profilatura della memoria .NET.
 
-- Quando si esegue la profilatura della memoria .NET in modalità di campionamento, il profiler .NET usa gli eventi di allocazione della memoria come intervallo e visualizza il numero di oggetti allocati e i byte totali allocati come valori inclusivi ed esclusivi nei report.
+- Quando si esegue la profilatura della memoria .NET in modalità di campionamento, il profiler utilizza gli eventi di allocazione della memoria come intervallo. Viene inoltre visualizzato il numero totale di oggetti e byte allocati come valori inclusivi ed esclusivi nei report.
 
-- Quando si esegue la profilatura della memoria .NET in modalità di strumentazione, vengono raccolte informazioni dettagliate sugli intervalli insieme ai valori inclusivi ed esclusivi dell'allocazione.
+- Quando si esegue la profilatura della memoria .NET in modalità di strumentazione, il profiler raccoglie informazioni dettagliate sull'intervallo insieme ai valori di allocazione inclusivi ed esclusivi.
 
-[Informazioni sull'allocazione di memoria e i valori dei dati di durata di un oggetto](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
+[Informazioni sull'allocazione di memoria e sui valori dei dati di durata degli oggetti](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
 
 [Raccogliere dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
@@ -120,17 +136,18 @@ La profilatura della memoria .NET può essere usata in modalità di campionament
 
 ## <a name="tier-interaction"></a>Interazione tra livelli
 
-La profilatura di interazione tra livelli aggiunge informazioni a un file di dati di profilatura sulle chiamate [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] sincrone tra una pagina [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o un'altra applicazione e un database [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]. I dati includono il numero e l'ora delle chiamate e i tempi massimi e minimi. I dati di interazione tra livelli possono essere aggiunti ai dati di profilatura raccolti con i metodi di campionamento, strumentazione, memoria .NET o concorrenza.
+La profilatura dell'interazione tra livelli aggiunge informazioni a un file di dati di profilatura sulle chiamate sincrone [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] tra una [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pagina o un'altra app e un [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] database. I dati includono il numero e l'ora delle chiamate e i tempi massimi e minimi. È possibile aggiungere dati di interazione tra livelli ai dati di profilatura raccolti con i metodi di campionamento, strumentazione, memoria .NET o concorrenza.
 
-![Dati del profilo di interazione tra livelli](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![Flusso di file di profilatura interazione tra livelli](../profiling/media/tierinteraction_profilingtools.png "Flusso di file di profilatura interazione tra livelli")
 
-Dati di interazione tra livelli raccolti dagli strumenti di profilatura
+Per informazioni sui dati di interazione tra livelli raccolti dagli strumenti di profilatura, vedere gli articoli seguenti.
 
-[Raccogliere dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md)
+[Raccolta di dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md)
 
-[Visualizzazioni delle interazioni tra livelli](../profiling/tier-interaction-views.md)
+[Viste di interazione tra livelli](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Procedura: Raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
-Guida per principianti alla profilatura delle prestazioniHow to: Collect performance data for a web site[Beginner's guide to performance profiling](../profiling/beginners-guide-to-performance-profiling.md)
+
+[Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)

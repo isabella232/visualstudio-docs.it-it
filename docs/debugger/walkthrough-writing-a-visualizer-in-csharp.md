@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f188b40938c62ae8c3692f096217618f9cb7ff6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183743"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286306"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: scrittura di un visualizzatore in C\#
 
@@ -60,7 +60,7 @@ Per creare un visualizzatore, seguire le attività riportate di seguito.
 
 3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-4. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia** e individuare Microsoft. VisualStudio. DebuggerVisualizers. dll.
+4. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia** e trovare il Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
     È possibile trovare la DLL nella sottodirectory * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies.* della directory di installazione di Visual Studio.
 
@@ -106,7 +106,7 @@ Per creare un visualizzatore, seguire le attività riportate di seguito.
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia**e individuare il file System. Windows. Forms. dll.
+2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia**e individuare il System.Windows.Forms.DLL.
 
     È possibile trovare la DLL in *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
@@ -187,7 +187,7 @@ Nel codice sul lato debugger specificare il tipo da visualizzare (origine oggett
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **MyTestConsole** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** scegliere Microsoft. VisualStudio. DebuggerVisualizers. dll.
+2. Nella scheda **Sfoglia** della finestra di dialogo **aggiungi riferimento** scegliere Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
 3. Fare clic su **OK**.
 
@@ -235,6 +235,8 @@ Nel codice sul lato debugger specificare il tipo da visualizzare (origine oggett
 
    Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per altre informazioni, vedere [procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).
 
+::: moniker range="vs-2017"
+
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Creare un visualizzatore usando il modello di elemento del Visualizzatore
 
 Fino a questo punto, questa procedura dettagliata ha illustrato come creare manualmente un visualizzatore. Questa operazione è stata eseguita come esercizio di formazione. Ora che si è appreso come funziona un visualizzatore semplice, esiste un modo più semplice per crearne uno: usando il modello di elemento del visualizzatore.
@@ -268,8 +270,9 @@ Prima di tutto, è necessario creare un nuovo progetto libreria di classi.
 5. Scegliere **Aggiungi**.
 
    Questo è tutto. Esaminare il file SecondVisualizer.cs e visualizzare il codice aggiunto dal modello. Procedere e sperimentare il codice. Ora che si conoscono le nozioni di base, è possibile creare visualizzatori più complessi e utili.
+::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Architettura del visualizzatore](../debugger/visualizer-architecture.md)
 - [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)
