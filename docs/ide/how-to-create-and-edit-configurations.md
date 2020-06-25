@@ -2,7 +2,7 @@
 title: 'Procedura: Creare e modificare le configurazioni'
 ms.date: 06/21/2017
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 754d2ceef776ab0dea2d8d51151d4170839173b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5b3ecd4abb05148130b0d87e287cbe199557951
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114707"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284503"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procedura: Creare e modificare le configurazioni
 
@@ -40,7 +40,7 @@ Per una soluzione è possibile creare diverse configurazioni della build. È pos
 Per aprire la finestra di dialogo **Configuration Manager**, in **Esplora soluzioni** aprire il menu di scelta rapida per la soluzione e quindi scegliere **Configuration Manager**.
 
 > [!NOTE]
-> Se il comando **Configuration Manager** non viene visualizzato nel menu di scelta rapida, cercare il menu **Compilazione** nella barra dei menu. Se non viene visualizzato, nella barra dei menu scegliere**Opzioni** **strumenti** > , quindi nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Generale progetti e soluzioni** > **General**e nel riquadro destro selezionare la casella di controllo **Mostra configurazioni di compilazione avanzate** .
+> Se il comando **Configuration Manager** non viene visualizzato nel menu di scelta rapida, cercare il menu **Compilazione** nella barra dei menu. Se non viene visualizzato, sulla barra dei menu scegliere **strumenti**  >  **Opzioni**e quindi nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **progetti e soluzioni**  >  **generale**e nel riquadro destro selezionare la casella di controllo **Mostra configurazioni di compilazione avanzate** .
 
 Nella finestra di dialogo **Configuration Manager** è possibile usare l'elenco a discesa **Configurazione soluzione attiva** per selezionare una configurazione della build, modificarne una esistente o crearne una nuova. È possibile usare l'elenco a discesa **Piattaforma soluzione attiva** per selezionare la piattaforma di destinazione della configurazione, modificarne una esistente oppure aggiungerne una nuova. Il riquadro **Contesti progetto** elenca i progetti all'interno della soluzione. Per ogni progetto è possibile selezionare una configurazione e una piattaforma specifiche per il progetto, modificarne alcune esistenti o crearne di nuove. Per ogni progetto è anche disponibile una casella di controllo che è possibile selezionare per includere il progetto quando si usa la configurazione a livello di soluzione per compilare o distribuire la soluzione stessa.
 
@@ -118,7 +118,7 @@ Per altre informazioni sulle impostazioni della pagina delle proprietà, vedere 
 
 3. Nel riquadro **Contesti progetto** per ogni progetto selezionare la **Configurazione** e la **Piattaforma** desiderate. Selezionare quindi se eseguire la **Build** e la **Distribuzione**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

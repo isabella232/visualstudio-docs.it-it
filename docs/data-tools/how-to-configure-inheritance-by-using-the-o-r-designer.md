@@ -1,30 +1,30 @@
 ---
 title: "Procedura: Configurare l'ereditarietà usando Object Relational Designer"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64a29eb3ebb1a5366eb9aaced1b5c228832fe71e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e31e5e78d5c72167f9d1c1eaab974155a4c369f3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586510"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282241"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedura: Configurare l'ereditarietà usando Object Relational Designer
 Il **Object Relational Designer** (**O/R Designer**) supporta il concetto di ereditarietà a tabella singola poiché viene spesso implementato nei sistemi relazionali. Nell'ereditarietà a tabella singola, è presente una singola tabella di database che contiene campi per le informazioni padre e le informazioni figlio. Insieme ai dati relazionali, una colonna discriminatore contiene il valore che determina la classe a cui appartiene un record.
 
-Si consideri, ad esempio, una tabella `Persons` che contiene tutti gli utenti usati da una società. alcune delle quali sono dipendenti mentre altre sono manager. La tabella `Persons` contiene una colonna denominata `EmployeeType` con un valore pari a 1 per i Manager e un valore pari a 2 per i dipendenti; si tratta della colonna discriminatore. In questo scenario è possibile creare una sottoclasse di dipendenti e popolarla solo con i record che hanno un valore 2 in `EmployeeType`. È anche possibile rimuovere le colonne non appropriate da ognuna delle classi.
+Si consideri, ad esempio, una `Persons` tabella che contiene tutti i dipendenti di una società. alcune delle quali sono dipendenti mentre altre sono manager. La `Persons` tabella contiene una colonna denominata `EmployeeType` con un valore pari a 1 per i Manager e un valore pari a 2 per i dipendenti. si tratta della colonna discriminatore. In questo scenario è possibile creare una sottoclasse di dipendenti e popolarla solo con i record che hanno un valore 2 in `EmployeeType`. È anche possibile rimuovere le colonne non appropriate da ognuna delle classi.
 
 La creazione di un modello a oggetti che usa l'ereditarietà (e corrisponde ai dati relazionali) può generare una certa confusione. Nella procedura riportata di seguito vengono illustrati i passaggi necessari per la configurazione dell'ereditarietà con **Object Relational Designer**. I passaggi generici seguenti senza fare riferimento a una tabella e a colonne esistenti potrebbero essere difficili, quindi viene fornita una procedura dettagliata che usa i dati. Per istruzioni dettagliate per la configurazione dell'ereditarietà usando il **O/R Designer**, vedere [procedura dettagliata: creazione di LINQ to SQL classi con ereditarietà a tabella singola (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).
 
 ## <a name="to-create-inherited-data-classes"></a>Per creare classi di dati ereditate
 
-1. Aprire la **finestra di progettazione relazionale** oggetti aggiungendo un **LINQ to SQL elemento classi** a un Visual Basic o C# a un progetto esistente.
+1. Aprire la **finestra di progettazione relazionale** oggetti aggiungendo un **LINQ to SQL elemento classi** a un progetto Visual Basic o C# esistente.
 
 2. Trascinare la tabella che si vuole usare come classe di base in **Progettazione relazionale di O/R**.
 
@@ -35,7 +35,7 @@ La creazione di un modello a oggetti che usa l'ereditarietà (e corrisponde ai d
     > [!NOTE]
     > Fare clic sull'elemento **Inheritance** nella **Casella degli strumenti** e rilasciare il pulsante del mouse, fare clic sulla seconda copia della classe creata nel passaggio 3 e quindi fare clic sulla prima classe creata nel passaggio 2. La freccia sulla linea di ereditarietà punta alla prima classe.
 
-5. In ogni classe eliminare le proprietà dell'oggetto che non si desidera visualizzare e che non sono usate per le associazioni. Viene visualizzato un errore se si tenta di eliminare le proprietà dell'oggetto utilizzate per [le associazioni: Impossibile eliminare la proprietà \<il nome della proprietà > perché partecipa al nome dell'associazione \<associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
+5. In ogni classe eliminare le proprietà dell'oggetto che non si desidera visualizzare e che non sono usate per le associazioni. Viene visualizzato un errore se si tenta di eliminare le proprietà dell'oggetto usate per [le associazioni: la proprietà \<property name> non può essere eliminata perché partecipa \<association name> all'associazione ](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
     > Poiché una classe derivata eredita le proprietà definite nella relativa classe di base, non è possibile definire le stesse colonne in ogni classe (Le colonne vengono implementate come proprietà). È possibile abilitare la creazione di colonne nella classe derivata impostando il modificatore di ereditarietà sulla proprietà nella classe di base. Per ulteriori informazioni, vedere [nozioni fondamentali sull'ereditarietà (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
@@ -50,7 +50,7 @@ La creazione di un modello a oggetti che usa l'ereditarietà (e corrisponde ai d
 
 10. È anche possibile impostare eventualmente la proprietà **Inheritance Default** per definire un tipo in una gerarchia di ereditarietà usata durante il caricamento di righe che non corrispondono ad alcun codice di ereditarietà definito. In altre parole, se un record include un valore nella relativa colonna discriminatore che non corrisponde al valore nelle proprietà del valore **discriminatore della classe derivata** o del **valore del discriminatore della classe base** , il record viene caricato nel tipo designato come **valore predefinito di ereditarietà**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Procedura dettagliata: Creazione di classi LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

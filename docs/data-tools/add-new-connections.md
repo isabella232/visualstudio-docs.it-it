@@ -1,18 +1,18 @@
 ---
 title: Aggiungere nuove connessioni
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c4e28eb9dfa3e3677f70d0557bb53ad8f9c3b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587069"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283060"
 ---
 # <a name="add-new-connections"></a>Aggiungere nuove connessioni
 
@@ -50,10 +50,10 @@ Se l'origine dati non è quella desiderata, fare clic sul pulsante **Cambia** pe
 
 Dopo aver scelto l'origine dati, fare clic su **Test connessione**. Se l'operazione non riesce, sarà necessario risolvere i problemi in base alla documentazione del fornitore.
 
-![Test connessione](../data-tools/media/raddata-test-connection.png)
+![Test della connessione](../data-tools/media/raddata-test-connection.png)
 
 Se il test ha esito positivo, si è pronti per creare un' *origine dati*, ovvero un termine di Visual Studio che significa realmente un *modello di dati* basato sul database o sul servizio sottostante.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

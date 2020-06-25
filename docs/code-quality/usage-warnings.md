@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dfa23896f006dbf904a3e097e0d6fa296e0361
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 9c94fac97a340c8c315ec91e3c5ebb68cac0d516
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184575"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283346"
 ---
 # <a name="usage-warnings"></a>avvisi di utilizzo
 
@@ -27,7 +27,7 @@ Gli avvisi di utilizzo supportano il corretto utilizzo di .NET.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-|Regola|Descrizione|
+|Regola|Description|
 |----------|-----------------|
 |[CA1801: Controllare i parametri non usati](../code-quality/ca1801.md)|Una firma di metodo include un parametro non utilizzato nel corpo del metodo.|
 |[CA1806: Non ignorare i risultati dei metodi](../code-quality/ca1806.md)|Un nuovo oggetto viene creato, ma non viene mai utilizzato oppure viene chiamato un metodo che crea e restituisce una nuova stringa e la nuova stringa non viene mai utilizzata oppure un metodo COM o P/Invoke restituisce un HRESULT o un codice di errore che non viene mai utilizzato.|
@@ -75,3 +75,4 @@ Gli avvisi di utilizzo supportano il corretto utilizzo di .NET.
 |[CA2244: Non duplicare inizializzazioni di elementi indicizzati](../code-quality/ca2244.md)|Un inizializzatore di oggetto ha più di un inizializzatore di elemento indicizzato con lo stesso indice costante. Tutti tranne l'ultimo inizializzatore sono ridondanti.|
 |[CA2245: Non assegnare una proprietà a se stessa](../code-quality/ca2245.md)|Una proprietà è stata assegnata per errore a se stessa.|
 |[CA2246: Non assegnare un simbolo e il relativo membro nella stessa istruzione](../code-quality/ca2246.md)|Non è consigliabile assegnare un simbolo e il relativo membro, ovvero un campo o una proprietà, nella stessa istruzione. Non è chiaro se l'accesso ai membri fosse destinato a usare il valore precedente del simbolo prima dell'assegnazione o del nuovo valore dall'assegnazione in questa istruzione.|
+|[CA2248: specificare l'argomento ' enum ' corretto per ' enum. HasFlag '](../code-quality/ca2248.md)|Il tipo enum passato come argomento alla chiamata al `HasFlag` metodo è diverso dal tipo enum chiamante.|

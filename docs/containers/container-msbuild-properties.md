@@ -5,13 +5,13 @@ description: Panoramica del processo di compilazione degli strumenti contenitore
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
-ms.topic: conceptual
-ms.openlocfilehash: 1b23d918621d79756fd77a1dd9b98009b2769ed3
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.topic: reference
+ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189491"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283203"
 ---
 # <a name="container-tools-build-properties"></a>Proprietà di compilazione degli strumenti contenitore
 
@@ -25,7 +25,7 @@ Per impostare il valore di una proprietà, modificare il file di progetto. Si su
 </PropertyGroup>
 ```
 
-È possibile aggiungere l'impostazione della proprietà a un `PropertyGroup` elemento esistente o, se non ne esiste uno, creare `PropertyGroup` un nuovo elemento.
+È possibile aggiungere l'impostazione della proprietà a un `PropertyGroup` elemento esistente o, se non ne esiste uno, creare un nuovo `PropertyGroup` elemento.
 
 La tabella seguente illustra le proprietà MSBuild disponibili per i progetti contenitore. La versione del pacchetto NuGet si applica a [Microsoft. VisualStudio. Azure. container. Tools. targets](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/).
 
@@ -80,10 +80,10 @@ Il file di progetto seguente mostra esempi di alcune di queste impostazioni.
 
 Per informazioni sulle proprietà di MSBuild in genere, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Proprietà di compilazione Docker Compose](docker-compose-properties.md)
 
 [Impostazioni di avvio degli strumenti contenitore](container-launch-settings.md)
 
-[Proprietà di MSBuild riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

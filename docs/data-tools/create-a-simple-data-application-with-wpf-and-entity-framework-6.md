@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 735a4cc533312bcfa3823410780b09caa4f53fde
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173941"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282761"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 
-Questa procedura dettagliata illustra come creare un'applicazione "Forms over data" di base in Visual Studio. L'app usa SQL Server database locale, il database Northwind, Entity Framework 6 e Windows Presentation Foundation. Viene illustrato come eseguire l'associazione dati di base con una visualizzazione Master-Details ed è inoltre presente uno strumento di navigazione di associazione personalizzato con pulsanti per **Sposta avanti**, **Sposta indietro**, **sposta all'inizio**, **Sposta a fine**, **Aggiorna** ed **Elimina**.
+Questa procedura dettagliata illustra come creare un'applicazione "Forms over data" di base in Visual Studio. L'app usa SQL Server database locale, il database Northwind Entity Framework 6 (non Entity Framework Core) e Windows Presentation Foundation per .NET Framework (non .NET Core). Viene illustrato come eseguire l'associazione dati di base con una visualizzazione Master-Details ed è inoltre presente uno strumento di navigazione di associazione personalizzato con pulsanti per **Sposta avanti**, **Sposta indietro**, **sposta all'inizio**, **Sposta a fine**, **Aggiorna** ed **Elimina**.
 
 Questo articolo è incentrato sull'uso di strumenti dati in Visual Studio e non tenta di spiegare le tecnologie sottostanti in modo approfondito. Si presuppone che si disponga di una conoscenza di base di XAML, Entity Framework e SQL. In questo esempio non viene inoltre illustrata l'architettura MVC (Model-View-ViewModel), che è standard per le applicazioni WPF. Tuttavia, è possibile copiare questo codice nella propria applicazione MVVM con poche modifiche.
 
@@ -427,7 +427,7 @@ Aggiungere questi metodi di gestione alla classe MainWindow in *MainWindow.XAML.
 
 Premere **F5** per avviare il debug. Verranno visualizzati i dati relativi ai clienti e agli ordini popolati nella griglia e i pulsanti di spostamento dovrebbero funzionare come previsto. Fare clic su **commit** per aggiungere un nuovo cliente o ordine al modello dopo aver immesso i dati. Fare clic su **Annulla** per uscire da un nuovo modulo di cliente o nuovo ordine senza salvare i dati. È possibile apportare modifiche ai clienti e agli ordini esistenti direttamente nelle caselle di testo e tali modifiche vengono scritte automaticamente nel modello.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Documentazione di Entity Framework](/ef/)

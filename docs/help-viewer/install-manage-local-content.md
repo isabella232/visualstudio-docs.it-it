@@ -1,7 +1,7 @@
 ---
 title: Installare la documentazione della Guida locale
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -23,18 +23,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20755447ccac7f5720bdb2df2a96cd9dbec5b730
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824954"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284906"
 ---
 # <a name="install-and-manage-local-content"></a>Installare e gestire il contenuto locale
 
 L'uso di Microsoft Help Viewer consente di aggiungere, rimuovere, aggiornare e spostare il contenuto della Guida installato nel computer a seconda delle esigenze di sviluppo del software.
 
-Per gestire il contenuto nel computer locale, è necessario accedere con un account che abbia autorizzazioni amministrative. È anche possibile che l'utente non possa gestire il contenuto locale se lavora in un ambiente aziendale in cui gli amministratori di sistema abbiano preso decisioni in tal senso per l'organizzazione. Per altre informazioni, vedere la [Guida dell'amministratore di Help Viewer](../help-viewer/administrator-guide.md).
+Per gestire il contenuto nel computer locale, è necessario accedere con un account che abbia autorizzazioni amministrative. È anche possibile che l'utente non possa gestire il contenuto locale se lavora in un ambiente aziendale in cui gli amministratori di sistema abbiano preso decisioni in tal senso per l'organizzazione. Per ulteriori informazioni, vedere la [Guida dell'amministratore di Help Viewer](../help-viewer/administrator-guide.md).
 
 ## <a name="change-the-content-installation-source"></a>Modificare l'origine di installazione del contenuto
 
@@ -45,13 +45,13 @@ Per impostazione predefinita, Help Viewer installa il contenuto tramite un servi
 1. Nella scheda **Gestisci contenuto** scegliere il pulsante di opzione **Disco**.
 
     > [!NOTE]
-    > L'opzione **Disco** non è disponibile se l'amministratore ha impedito la modifica dell'origine dell'installazione del contenuto. Per altre informazioni, vedere la [Guida dell'amministratore di Help Viewer](../help-viewer/administrator-guide.md).
+    > L'opzione **Disco** non è disponibile se l'amministratore ha impedito la modifica dell'origine dell'installazione del contenuto. Per ulteriori informazioni, vedere la [Guida dell'amministratore di Help Viewer](../help-viewer/administrator-guide.md).
 
 2. Effettuare uno dei passaggi indicati di seguito.
 
-    - Immettere il percorso di un file con estensione *.msha* o l'URL di un endpoint del servizio.
+    - Immettere il percorso di un file con *estensione MSHA* o l'URL di un endpoint del servizio.
 
-    - Scegliere il pulsante Sfoglia ( **…** ) per trovare un file con estensione *.msha*.
+    - Scegliere il pulsante Sfoglia (**..**.) per passare a un file con *estensione MSHA* .
 
     - Nell'elenco scegliere la voce che è stata usata più di recente.
 
@@ -104,7 +104,7 @@ Se si installa il contenuto nel computer locale, è possibile visualizzare gli a
 Nella barra di stato viene indicato quando sono disponibili aggiornamenti del contenuto installato.
 
 > [!IMPORTANT]
-> Se si vuole che **Help Viewer** controlli automaticamente la disponibilità di aggiornamenti online, è necessario aprire la finestra di dialogo **Opzioni visualizzatore** e selezionare la casella di controllo **Connetti per verificare la disponibilità di aggiornamenti**.
+> Se si vuole che **Help Viewer** controlli automaticamente la disponibilità di aggiornamenti online, è necessario aprire la finestra di dialogo **Opzioni Visualizzatore** , quindi selezionare la casella **di controllo Vai online per verificare** la disponibilità di aggiornamenti del contenuto.
 
 ### <a name="to-update-local-content"></a>Per aggiornare il contenuto locale
 
@@ -129,6 +129,6 @@ I tempi di aggiornamento possono variare ma è possibile visualizzare lo stato d
 
 3. Scegliere **Chiudi** dopo che il contenuto è stato spostato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)

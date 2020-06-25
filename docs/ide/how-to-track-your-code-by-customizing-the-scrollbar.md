@@ -1,24 +1,24 @@
 ---
 title: Modalità mappa e modalità barra della barra di scorrimento
 ms.date: 03/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c66cda1b90d11a44f744faf0012a3e41212d33dd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5d1b659dabed2337013ffb84ff48277f0edacb09
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988570"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283983"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Procedura: Personalizzare la barra di scorrimento
 
 Quando si usano file di codice di grandi dimensioni, può essere difficile tenere traccia di tutto il contenuto dei file. È possibile personalizzare la barra di scorrimento dell'editor di codice per ottenere una panoramica di cosa avviene nel codice.
 
-## <a name="annotations"></a>annotazioni
+## <a name="annotations"></a>Annotazioni
 
 È possibile specificare se la barra di scorrimento deve mostrare annotazioni, ad esempio modifiche al codice, punti di interruzione, segnalibri, errori e posizione del cursore.
 
@@ -54,7 +54,7 @@ La *modalità barra* visualizza indicatori di annotazione sulla barra di scorrim
 
 ### <a name="map-mode"></a>Modalità mappa
 
-*La modalità Mappa* visualizza le righe di codice, in miniatura, sulla barra di scorrimento. È possibile scegliere la larghezza della colonna della mappa selezionando un valore in **Panoramica origine**. Per abilitare un'anteprima di dimensioni maggiori del codice quando si posiziona il puntatore del mouse sulla mappa, selezionare l'opzione **Mostra descrizione comando anteprima**. Le aree compresse hanno un'ombreggiatura diversa e si espandono quando si fa doppio clic su di esse.
+*Modalità mappa* Visualizza le righe di codice, in miniatura, sulla barra di scorrimento. È possibile scegliere la larghezza della colonna della mappa selezionando un valore in **Panoramica origine**. Per abilitare un'anteprima di dimensioni maggiori del codice quando si posiziona il puntatore del mouse sulla mappa, selezionare l'opzione **Mostra descrizione comando anteprima**. Le aree compresse hanno un'ombreggiatura diversa e si espandono quando si fa doppio clic su di esse.
 
 > [!TIP]
 > È possibile disattivare la visualizzazione del codice in miniatura in modalità mappa impostando **Panoramica origine** su **Disattivata**. Se l'opzione **Mostra descrizione comando anteprima** è selezionata, viene comunque visualizzata un'anteprima del codice in tale posizione quando si posiziona il puntatore del mouse sulla barra di scorrimento e il cursore passa comunque alla posizione nel file quando si fa clic.
@@ -68,8 +68,8 @@ La figura seguente mostra l'opzione **Mostra descrizione comando anteprima**:
 ![Barra di scorrimento di Visual Studio con una descrizione comando](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 > [!TIP]
-> Per modificare i colori visualizzati in modalità mappa, scegliere **Strumenti** > **Opzioni tipi** > **di carattere e colori dell'ambiente****Environment** > . In **Visualizza elementi**scegliere quindi uno degli elementi preceduti da "Panoramica", apportare le modifiche di colore desiderate e quindi scegliere **OK**.
+> Per modificare i colori visualizzati in modalità mappa, scegliere **strumenti**  >  **Opzioni**  >  **ambiente**  >  **tipi di carattere e colori**. Successivamente, in **elementi visualizzati**scegliere uno degli elementi che sono preceduti da "panoramica", apportare le modifiche ai colori desiderate, quindi scegliere **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)

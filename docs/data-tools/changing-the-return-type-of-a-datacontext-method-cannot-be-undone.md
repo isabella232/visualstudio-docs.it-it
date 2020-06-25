@@ -1,19 +1,19 @@
 ---
 title: La modifica del tipo restituito di un metodo DataContext non può essere annullata
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 95d75e084b4824cf7cc8e717b1ce9174e76aa2e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5b24337c9233aeeb060029cb54cd661b7591309
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648686"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282787"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>La modifica del tipo restituito di un metodo DataContext non può essere annullata
 
@@ -23,7 +23,7 @@ Il tipo restituito di un metodo <xref:System.Data.Linq.DataContext> varia a seco
 
 ## <a name="to-change-the-return-type-of-a-datacontext"></a>Per modificare il tipo restituito di un metodo DataContext
 
-- Scegliere **Sì**.
+- Fare clic su **Sì**.
 
 ## <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>Per uscire dalla finestra di messaggio e lasciare invariato il tipo restituito
 
@@ -37,6 +37,6 @@ Il tipo restituito di un metodo <xref:System.Data.Linq.DataContext> varia a seco
 
     Viene creato un metodo <xref:System.Data.Linq.DataContext> con il tipo restituito predefinito originale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

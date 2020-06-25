@@ -1,7 +1,7 @@
 ---
 title: Personalizzare le didascalie per i controlli associati a dati
 ms.date: 11/03/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113667"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282579"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 
@@ -43,7 +43,7 @@ La didascalia intelligente è controllata dall'espressione regolare immessa nel 
 
 La tabella seguente descrive i valori del registro di sistema che controllano le etichette delle didascalie.
 
-|Elemento del registro di sistema|Descrizione|
+|Elemento del registro di sistema|Description|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|Espressione regolare usata per trovare la corrispondenza con i modelli.|
 |**SmartCaptionReplacement**|Formato per visualizzare i gruppi corrispondenti in **SmartCaptionExpression**.|
@@ -51,14 +51,14 @@ La tabella seguente descrive i valori del registro di sistema che controllano le
 
 Nella tabella seguente sono elencate le impostazioni predefinite interne per questi valori del registro di sistema.
 
-|Elemento del registro di sistema|Valore predefinito|Descrizione|
+|Elemento del registro di sistema|Valore predefinito|Spiegazione|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Corrisponde a un carattere minuscolo seguito da un carattere maiuscolo o un carattere di sottolineatura.|
+|**SmartCaptionExpression**|**( \\ \p{ll}) ( \\ \p{Lu}) &#124;_ +**|Corrisponde a un carattere minuscolo seguito da un carattere maiuscolo o un carattere di sottolineatura.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** rappresenta tutti i caratteri corrispondenti nelle prime parentesi dell'espressione e il **$2** rappresenta tutti i caratteri corrispondenti nella seconda parentesi. La sostituzione è la prima corrispondenza, uno spazio e quindi la seconda corrispondenza.|
-|**SmartCaptionSuffix**|**:**|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name`, il suffisso lo rende `Company Name:`|
+|**SmartCaptionSuffix**|**:**|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name` , il suffisso lo rende`Company Name:`|
 
 > [!CAUTION]
-> Prestare attenzione quando si esegue qualsiasi operazione nell'editor del registro di sistema. Eseguire il backup del registro di sistema prima di modificarlo. Se si utilizza l'editor del registro di sistema in modo errato, è possibile che si verifichino gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che i problemi causati dall'utilizzo errato dell'editor del registro di sistema possano essere risolti. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
+> Prestare attenzione quando si esegue qualsiasi operazione nell'editor del registro di sistema. Eseguire il backup del registro di sistema prima di modificarlo. Se si utilizza l'editor del registro di sistema in modo errato, è possibile che si verifichino gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che i problemi causati dall'utilizzo errato dell'editor del registro di sistema possano essere risolti. L'uso dell'editor del Registro di sistema è di sola responsabilità dell'utente.
 >
 > Per informazioni sul backup, la modifica e il ripristino del registro di sistema, vedere [informazioni del registro di sistema di Windows per gli utenti avanzati](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
@@ -68,17 +68,17 @@ Nella tabella seguente sono elencate le impostazioni predefinite interne per que
 
 2. Digitare `regedit` nella finestra di dialogo **Esegui** , quindi fare clic su **OK**.
 
-3. Espandere il **HKEY_CURRENT_USER** > **software** > nodo **Microsoft** > **VisualStudio** .
+3. Espandere il **HKEY_CURRENT_USER**  >  nodo**software**  >  **Microsoft**  >  **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Fare clic con il pulsante destro del mouse sul nodo **15,0** e creare una nuova **chiave** denominata `Data Designers`.
+4. Fare clic con il pulsante destro del mouse sul nodo **15,0** e creare una nuova **chiave** denominata `Data Designers` .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Fare clic con il pulsante destro del mouse sul nodo **16,0** e creare una nuova **chiave** denominata `Data Designers`.
+4. Fare clic con il pulsante destro del mouse sul nodo **16,0** e creare una nuova **chiave** denominata `Data Designers` .
 
 ::: moniker-end
 
@@ -108,17 +108,17 @@ Nella tabella seguente sono elencate le impostazioni predefinite interne per que
 
 2. Digitare `regedit` nella finestra di dialogo **Esegui** , quindi fare clic su **OK**.
 
-3. Espandere il **HKEY_CURRENT_USER** > **software** > nodo **Microsoft** > **VisualStudio** .
+3. Espandere il **HKEY_CURRENT_USER**  >  nodo**software**  >  **Microsoft**  >  **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Fare clic con il pulsante destro del mouse sul nodo **15,0** e creare una nuova **chiave** denominata `Data Designers`.
+4. Fare clic con il pulsante destro del mouse sul nodo **15,0** e creare una nuova **chiave** denominata `Data Designers` .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Fare clic con il pulsante destro del mouse sul nodo **16,0** e creare una nuova **chiave** denominata `Data Designers`.
+4. Fare clic con il pulsante destro del mouse sul nodo **16,0** e creare una nuova **chiave** denominata `Data Designers` .
 
 ::: moniker-end
 
@@ -138,6 +138,6 @@ Nella tabella seguente sono elencate le impostazioni predefinite interne per que
 
     La volta successiva che si trascinano gli elementi dalla finestra **origini dati** , le etichette didascalia vengono create con didascalie non modificate.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

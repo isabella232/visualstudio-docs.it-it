@@ -1,7 +1,7 @@
 ---
 title: Aggiungere codice nei set di dati di applicazioni a più livelli
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d35ff68144e92af12f2ee6284076118493c6be9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587121"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283086"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Aggiungere codice nei set di dati di applicazioni a più livelli
 
@@ -32,7 +32,7 @@ Per impostazione predefinita, dopo aver separato il set di dati e il codice Tabl
 > Quando si separano i set di dati e i TableAdapter (impostando la proprietà del **progetto DataSet** ), le classi del set di dati parziali esistenti nel progetto non verranno spostate automaticamente. Le classi parziali del set di dati esistenti devono essere spostate manualmente nel progetto DataSet.
 
 > [!NOTE]
-> Quando è necessario aggiungere il codice di convalida, il set di dati tipizzato fornisce la funzionalità per la generazione di <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> gestori di eventi. Per altre informazioni, vedere [aggiungere la convalida a un set di dati a più livelli](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Quando è necessario aggiungere il codice di convalida, il set di dati tipizzato fornisce funzionalità per la generazione <xref:System.Data.DataTable.ColumnChanging> e i <xref:System.Data.DataTable.RowChanging> gestori eventi. Per altre informazioni, vedere [aggiungere la convalida a un set di dati a più livelli](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Per aggiungere codice a DataSet in applicazioni a più livelli
 
@@ -63,7 +63,7 @@ Per impostazione predefinita, dopo aver separato il set di dati e il codice Tabl
     }
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md)
 - [Aggiungere il codice nei TableAdapter di applicazioni a più livelli](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)

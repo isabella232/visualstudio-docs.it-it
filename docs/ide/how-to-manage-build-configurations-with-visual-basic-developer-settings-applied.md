@@ -2,7 +2,7 @@
 title: Gestire configurazioni della build applicando le impostazioni di Visual Basic Developer
 ms.date: 11/21/2018
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - advanced build configurations
 - building with Visual Basic developer settings (Visual Studio)
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5243223e554f8e31fe2ffa9d667c09d0a3e1dbc0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8593f32b31dc70be08c777e86ae404da0578c48d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115153"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284230"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedura: gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer
 
@@ -42,8 +42,8 @@ Per impostazione predefinita, le impostazioni di Visual Basic Developer nascondo
 
      **Configuration Manager** è ora disponibile nel menu **Compilazione** e gli elenchi **Configurazione** e **Piattaforma** sono visibili in **Creazione progetti**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)
-- [Impostazioni di ambiente](../ide/environment-settings.md)
+- [Impostazioni dell'ambiente](../ide/environment-settings.md)

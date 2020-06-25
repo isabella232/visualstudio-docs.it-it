@@ -1,7 +1,7 @@
 ---
 title: Creare e configurare i set di dati
 ms.date: 11/21/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
@@ -11,22 +11,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8222b1985ab7f765be9b06fdd6abf7cb1e1cb2dc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1065c5efdcf73016e61ee0f016511579d41acd88
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586913"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282748"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Procedura: creare e configurare DataSet in Visual Studio
 
 Un set di dati è un set di oggetti che archivia i dati da un database in memoria e supporta il rilevamento delle modifiche per abilitare le operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD) su tali dati senza la necessità di essere sempre connessi al database. I set di dati sono stati progettati per semplici *forme su* applicazioni aziendali di dati. Per le nuove applicazioni, è consigliabile usare Entity Framework per archiviare e modellare i dati in memoria. Per utilizzare i set di dati, è necessario disporre di una conoscenza di base dei concetti relativi ai database.
 
-È possibile creare una classe <xref:System.Data.DataSet> tipizzata in Visual Studio in fase di progettazione tramite la **Configurazione guidata origine dati**. Per informazioni sulla creazione di set di dati a livello di codice, vedere [creazione di un set di dati (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
+È possibile creare una classe tipizzata <xref:System.Data.DataSet> in Visual Studio in fase di progettazione tramite la **Configurazione guidata origine dati**. Per informazioni sulla creazione di set di dati a livello di codice, vedere [creazione di un set di dati (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Creare un nuovo set di dati tramite la configurazione guidata origine dati
 
-1. Aprire il progetto in Visual Studio, quindi scegliere **progetto** > **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+1. Aprire il progetto in Visual Studio, quindi scegliere **progetto**  >  **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
 2. Scegliere il tipo di origine dati a cui si connetterà.
 
@@ -40,13 +40,13 @@ Un set di dati è un set di oggetti che archivia i dati da un database in memori
 
      ![Scegliere gli oggetti di database](../data-tools/media/raddata-chose-objects.png)
 
-5. Scegliere **Fine**.
+5. Fare clic su **Fine**.
 
    Il set di dati viene visualizzato come nodo in **Esplora soluzioni**.
 
    ![Set di dati in Esplora soluzioni](../data-tools/media/dataset-in-solution-explorer.png)
 
-6. Fare clic sul nodo set di dati in **Esplora soluzioni** per aprire il set di dati in **Progettazione DataSet**. A ogni tabella del set di dati è associato un oggetto `TableAdapter`, rappresentato in basso. L'adapter Table viene utilizzato per popolare il set di dati e, facoltativamente, per inviare comandi al database.
+6. Fare clic sul nodo set di dati in **Esplora soluzioni** per aprire il set di dati in **Progettazione DataSet**. A ogni tabella del set di dati è associato un `TableAdapter` oggetto, rappresentato in basso. L'adapter Table viene utilizzato per popolare il set di dati e, facoltativamente, per inviare comandi al database.
 
    ![Progettazione DataSet](../data-tools/media/dataset-designer.png)
 
@@ -82,13 +82,13 @@ In questa procedura viene illustrato come aggiungere una tabella dallo stesso da
 
 1. Aprire il set di dati in **Progettazione DataSet**.
 
-2. Trascinare una classe <xref:System.Data.DataTable> dalla scheda **DataSet** della **casella degli strumenti** nel **Progettazione DataSet**.
+2. Trascinare una <xref:System.Data.DataTable> classe dalla scheda **DataSet** della **casella degli strumenti** nel **Progettazione DataSet**.
 
-3. Aggiungere colonne per definire la tabella di dati. Fare clic con il pulsante destro del mouse sulla tabella e scegliere **aggiungi** > **colonna**. Utilizzare la finestra **Proprietà** per impostare il tipo di dati della colonna e una chiave, se necessario.
+3. Aggiungere colonne per definire la tabella di dati. Fare clic con il pulsante destro del mouse sulla tabella e scegliere **Aggiungi**  >  **colonna**. Utilizzare la finestra **Proprietà** per impostare il tipo di dati della colonna e una chiave, se necessario.
 
-Le tabelle autonome devono implementare `Fill` logica in tabelle autonome in modo da poterle inserire i dati. Per informazioni sul riempimento di tabelle di dati autonome, vedere [popolamento di un DataSet da un oggetto DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
+Le tabelle autonome devono implementare la `Fill` logica in tabelle autonome in modo che sia possibile riempirle con i dati. Per informazioni sul riempimento di tabelle di dati autonome, vedere [popolamento di un DataSet da un oggetto DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Relazioni nei set di dati](../data-tools/relationships-in-datasets.md)

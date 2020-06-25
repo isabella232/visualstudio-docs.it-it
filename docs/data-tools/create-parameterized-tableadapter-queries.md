@@ -1,7 +1,7 @@
 ---
 title: Creare query TableAdapter con parametri
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98e1ee8a279933cc2cc59abe70b6ea8af4850676
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586744"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282605"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Creare query TableAdapter con parametri
 
@@ -40,7 +40,7 @@ Una query con parametri restituisce dati che soddisfano le condizioni di una cla
 
 - Creare un nuovo oggetto TableAdapter aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati. Per altre informazioni, vedere [creare e configurare TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-     oppure
+     -oppure-
 
 - Aggiungere una query a un oggetto TableAdapter esistente aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati.
 
@@ -65,19 +65,19 @@ Una query con parametri restituisce dati che soddisfano le condizioni di una cla
 
 4. Digitare un nome nella casella **Nuovo nome query** se si intende creare una nuova query.
 
-     oppure
+     -oppure-
 
      Selezionare una query nella casella **Nome query esistente**.
 
 5. Nella casella di **testo query** Digitare una query che accetta parametri.
 
-6. Scegliere **OK**.
+6. Fare clic su **OK**.
 
      Un controllo per l'immissione del parametro e un pulsante **Carica** verranno aggiunti al form in un controllo <xref:System.Windows.Forms.ToolStrip>.
 
 ### <a name="query-for-null-values"></a>Eseguire una query per i valori null
 
-Ai parametri TableAdapter è possibile assegnare valori null quando si desidera eseguire una query per i record senza valore corrente. Si consideri, ad esempio, la query seguente con un parametro `ShippedDate` nella relativa clausola `WHERE`:
+Ai parametri TableAdapter è possibile assegnare valori null quando si desidera eseguire una query per i record senza valore corrente. Si consideri, ad esempio, la query seguente con un `ShippedDate` parametro nella relativa `WHERE` clausola:
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate
@@ -94,10 +94,10 @@ Per consentire a una query di accettare valori null:
 
 1. Nella **Progettazione DataSet**selezionare la query TableAdapter che deve accettare valori di parametro null.
 
-2. Nella finestra **Proprietà** selezionare **parametri**, quindi fare clic sul pulsante con i puntini di sospensione ( **..** .) per aprire l' **Editor della raccolta Parameters**.
+2. Nella finestra **Proprietà** selezionare **parametri**, quindi fare clic sul pulsante con i puntini di sospensione (**..**.) per aprire l' **Editor della raccolta Parameters**.
 
-3. Selezionare il parametro che consente valori null e impostare la proprietà **AllowDBNull** su `true`.
+3. Selezionare il parametro che consente valori null e impostare la proprietà **AllowDBNull** su `true` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)

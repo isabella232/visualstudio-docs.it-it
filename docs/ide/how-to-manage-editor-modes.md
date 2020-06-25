@@ -1,7 +1,7 @@
 ---
 title: Modalità schermo intero e Spazio virtuale
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - word wrap
 - views, virtual space
@@ -24,12 +24,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f224a6e3a1b12ed17799ddf6a2fc5c23f5d4cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3f8f86d635e1e57d82dd2d18084c91a9267f9a0b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591034"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284204"
 ---
 # <a name="how-to-manage-editor-modes"></a>Procedura: Gestire le modalità dell'editor
 
@@ -40,9 +40,9 @@ ms.locfileid: "75591034"
 
 ## <a name="enable-full-screen-mode"></a>Abilitare la modalità Schermo intero
 
-È possibile scegliere di nascondere tutte le finestre degli strumenti e visualizzare solo le finestre dei documenti attivando la modalità **Schermo intero.**
+È possibile scegliere di nascondere tutte le finestre degli strumenti e visualizzare solo le finestre dei documenti abilitando la modalità **schermo intero** .
 
-- Premere **Alt**+**Shift**+**Enter** per entrare o uscire dalla modalità Schermo **intero.**
+- Premere **ALT** + **MAIUSC** + **invio** per attivare o disattivare la modalità **schermo intero** .
 
      -- o --
 
@@ -54,14 +54,14 @@ Nella modalità **Spazio virtuale** vengono inseriti spazi alla fine di ogni rig
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2. Espandere la cartella **Editor di testo** e scegliere **Tutti i linguaggi** per impostare l'opzione a livello globale oppure scegliere la cartella di un linguaggio specifico. Ad esempio, per attivare i numeri di riga solo in Visual Basic, scegliere il nodo**Editor di testo** di **base.** > 
+2. Espandere la cartella **Editor di testo** e scegliere **Tutti i linguaggi** per impostare l'opzione a livello globale oppure scegliere la cartella di un linguaggio specifico. Ad esempio, per attivare i numeri di riga solo in Visual Basic, scegliere **Basic**il  >  nodo Editor di**testo** di base.
 
 3. Selezionare **Generale** e in **Impostazioni**selezionare **Attiva spazio virtuale**.
 
     > [!NOTE]
     > L'opzione **Spazio virtuale** è abilitata nella modalità **Seleziona colonne**. Quando la modalità **Spazio virtuale** non è abilitata, il punto di inserimento passa dalla fine di una riga direttamente al primo carattere della riga successiva.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
-- [Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+- [Tipi di carattere e colori, ambiente, finestra di dialogo Opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

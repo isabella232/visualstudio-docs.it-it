@@ -1,7 +1,7 @@
 ---
 title: Associare i controlli ai dati
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data, displaying
 - data sources, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e0746de34a16dc181baff3c8b843b123c2ae434
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587030"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283034"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare controlli ai dati in Visual Studio
 
@@ -34,9 +34,9 @@ Nel contesto di data binding, un'origine dati rappresenta i dati in memoria che 
 | - | - | - | - |
 | Set di dati | Sì | Sì | No |
 | Entity Data Model | Sì<sup>1</sup> | Sì | Sì |
-| Classi LINQ to SQL | Non<sup>2</sup> | Non<sup>2</sup> | Non<sup>2</sup> |
+| Classi LINQ to SQL | No<sup>2</sup> | No<sup>2</sup> | No<sup>2</sup> |
 | Servizi (inclusi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], servizi WCF e servizi Web) | Sì | Sì | Sì |
-| Oggetto di | Sì | Sì | Sì |
+| Oggetto | Sì | Sì | Sì |
 | SharePoint | Sì | Sì | Sì |
 
 1. Generare il modello utilizzando la procedura guidata **Entity Data Model** , quindi trascinare tali oggetti nella finestra di progettazione.
@@ -45,7 +45,7 @@ Nel contesto di data binding, un'origine dati rappresenta i dati in memoria che 
 
 ## <a name="data-sources-window"></a>Finestra Origini dati
 
-Nella finestra **Origini dati** sono visualizzate le voci relative alle origini dati disponibili per il progetto. Questa finestra è visibile quando un'area di progettazione del modulo è la finestra attiva nel progetto oppure è possibile aprirla (quando un progetto è aperto) scegliendo **visualizza** > altre **origini dati**di **Windows** > . È possibile trascinare elementi da questa finestra per creare controlli associati ai dati sottostanti ed è inoltre possibile configurare le origini dati facendo clic con il pulsante destro del mouse.
+Nella finestra **Origini dati** sono visualizzate le voci relative alle origini dati disponibili per il progetto. Questa finestra è visibile quando un'area di progettazione del modulo è la finestra attiva nel progetto oppure è possibile aprirla (quando un progetto è aperto) scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows. È possibile trascinare elementi da questa finestra per creare controlli associati ai dati sottostanti ed è inoltre possibile configurare le origini dati facendo clic con il pulsante destro del mouse.
 
 ![Finestra Origini dati](../data-tools/media/raddata-data-sources-window.png)
 
@@ -55,9 +55,9 @@ Per ogni tipo di dati visualizzato nella finestra **Origini dati** viene creato 
 
 Nella tabella seguente sono elencate alcune delle attività più comuni eseguite per associare i controlli ai dati.
 
-|Attività|Altre informazioni|
+|Attività|Ulteriori informazioni|
 |----------| - |
-|Aprire la finestra **Origini dati**.|Aprire un'area di progettazione nell'editor e scegliere **visualizza** > **origini dati**.|
+|Aprire la finestra **Origini dati**.|Aprire un'area di progettazione nell'editor e scegliere **Visualizza**  >  **origini dati**.|
 |Aggiungere un'origine dati al progetto.|[Aggiungi nuova origine dati](../data-tools/add-new-data-sources.md)|
 |Impostare il controllo che viene creato quando si trascina un elemento dalla finestra **Origini dati** alla finestra di progettazione.|[Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Modificare l'elenco dei controlli associati agli elementi nella finestra **Origini dati**.|[Aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
@@ -66,7 +66,7 @@ Nella tabella seguente sono elencate alcune delle attività più comuni eseguite
 |Filtrare i dati visualizzati nell'interfaccia utente.|[Filtrare e ordinare i dati in un'applicazione Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Personalizzare le didascalie per i controlli.|[Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [Data binding in Windows Form](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Windows Forms data binding](/dotnet/framework/winforms/windows-forms-data-binding)

@@ -13,26 +13,29 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8fa89b2cf6eb5afdf1d09a9b4de60cdc9ca11f2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586887"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282722"
 ---
-# <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creazione di un database e aggiunta di tabelle in Visual Studio
+# <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creare un database e aggiungere tabelle in Visual Studio
 
 È possibile utilizzare Visual Studio per creare e aggiornare un file di database locale in SQL Server Express database locale. È inoltre possibile creare un database eseguendo istruzioni Transact-SQL nella finestra degli strumenti **Esplora oggetti di SQL Server** in Visual Studio. In questo argomento si creerà un file con *estensione MDF* e si aggiungeranno tabelle e chiavi usando il progettazione tabelle.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per completare questa procedura dettagliata, saranno necessari i carichi di lavoro sviluppo di applicazioni **desktop .NET** e **archiviazione dati e elaborazione** in Visual Studio. Per installarli, aprire **programma di installazione di Visual Studio** e scegliere **modifica** (o **più** > **modifica**) accanto alla versione di Visual Studio che si desidera modificare.
+Per completare questa procedura dettagliata, saranno necessari i carichi di lavoro sviluppo di applicazioni **desktop .NET** e **archiviazione dati e elaborazione** in Visual Studio. Per installarli, aprire **programma di installazione di Visual Studio** e scegliere **modifica** (o **altre**  >  **modifiche**) accanto alla versione di Visual Studio che si desidera modificare.
+
+> [!NOTE]
+> Le procedure descritte in questo articolo si applicano solo ai progetti .NET Framework Windows Forms, non ai progetti .NET Core Windows Forms.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Creare un progetto e un file di database locale
 
-1. Creare un nuovo progetto di **App Windows Forms** e denominarlo **SampleDatabaseWalkthrough**.
+1. Creare un nuovo progetto di **App Windows Forms (.NET Framework)** e denominarlo **SampleDatabaseWalkthrough**.
 
-2. Nella barra dei menu selezionare **progetto** > **Aggiungi nuovo elemento**.
+2. Nella barra dei menu selezionare **progetto**  >  **Aggiungi nuovo elemento**.
 
 3. Nell'elenco dei modelli di elemento scorrere verso il basso e selezionare **database basato su servizi**.
 
@@ -42,13 +45,13 @@ Per completare questa procedura dettagliata, saranno necessari i carichi di lavo
 
 ### <a name="add-a-data-source"></a>Aggiungere un'origine dati
 
-1. Se la finestra **origini dati** non è aperta, aprirla premendo **maiusc**+**ALT**+**D** o selezionando **Visualizza** > altre **origini dati** di **Windows** > sulla barra dei menu.
+1. Se la finestra **origini dati** non è aperta, aprirla premendo **MAIUSC** + **ALT** + **D** o selezionando **Visualizza**  >  **altre**  >  **origini dati** di Windows sulla barra dei menu.
 
 1. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati**.
 
    ![Aggiungere una nuova origine dati in Visual Studio](media/add-new-data-source.png)
 
-   Viene avviata la **Configurazione guidata origine dati**.
+   Verrà avviata la **Configurazione guidata origine dati** .
 
 1. Nella pagina **scegliere un tipo di origine dati** scegliere **database** , quindi fare clic su **Avanti**.
 
@@ -64,9 +67,9 @@ Per completare questa procedura dettagliata, saranno necessari i carichi di lavo
 
 È possibile visualizzare la stringa di connessione per il file *SampleDatabase. MDF* aprendo il finestra proprietà della connessione dati:
 
-- Selezionare **visualizza** > **Esplora oggetti di SQL Server** per aprire la finestra **Esplora oggetti di SQL Server** . Espandere **(local DB) \MSSQLLocalDB** > **database**, quindi fare clic con il pulsante destro del mouse su *SampleDatabase. MDF* e scegliere **Proprietà**.
+- Selezionare **Visualizza**  >  **Esplora oggetti di SQL Server** per aprire la finestra di **Esplora oggetti di SQL Server** . Espandere **(local DB) \MSSQLLocalDB**  >  **databases**, quindi fare clic con il pulsante destro del mouse su *SampleDatabase. MDF* e scegliere **Proprietà**.
 
-- In alternativa, è possibile selezionare **visualizza** > **Esplora server**, se tale finestra non è già aperta. Aprire il Finestra Proprietà espandendo il nodo **connessioni dati** , facendo clic con il pulsante destro del mouse su *SampleDatabase. MDF*e quindi scegliendo **proprietà**.
+- In alternativa, è possibile selezionare **Visualizza**  >  **Esplora server**, se tale finestra non è già aperta. Aprire il Finestra Proprietà espandendo il nodo **connessioni dati** , facendo clic con il pulsante destro del mouse su *SampleDatabase. MDF*e quindi scegliendo **proprietà**.
 
   > [!TIP]
   > Se non è possibile espandere il nodo Connessioni dati o la connessione SampleDatabase. mdf non è inclusa nell'elenco, selezionare il pulsante **Connetti al database** nella barra degli strumenti Esplora server. Nella finestra di dialogo **Aggiungi connessione** verificare che **Microsoft SQL Server file di database** sia selezionato in **origine dati**, quindi individuare e selezionare il file SampleDatabase. MDF. Completare l'aggiunta della connessione selezionando **OK**.
@@ -87,16 +90,16 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 
 3. Nella griglia, aggiungere una riga per ognuna delle seguenti voci:
 
-   |Nome della colonna|Tipo di dati|Consente valori null|
+   |Nome colonna|Tipo di dati|Consente valori null|
    |-----------------|---------------|-----------------|
    |`CustomerID`|`nchar(5)`|False (deselezionato)|
    |`CompanyName`|`nvarchar(50)`|False (deselezionato)|
    |`ContactName`|`nvarchar (50)`|True (selezionato)|
    |`Phone`|`nvarchar (24)`|True (selezionato)|
 
-4. Fare clic con il pulsante destro del mouse sulla riga `CustomerID`, quindi scegliere **Imposta chiave primaria**.
+4. Fare clic con il pulsante destro del mouse sulla `CustomerID` riga e quindi scegliere **Imposta chiave primaria**.
 
-5. Fare clic con il pulsante destro del mouse sulla riga predefinita (`Id`), quindi selezionare **Elimina**.
+5. Fare clic con il pulsante destro del mouse sulla riga predefinita ( `Id` ), quindi scegliere **Elimina**.
 
 6. Denominare la tabella Customers aggiornando la prima riga nel riquadro dello script in modo che corrisponda all'esempio seguente:
 
@@ -104,7 +107,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
    CREATE TABLE [dbo].[Customers]
    ```
 
-   Viene visualizzato un output simile al seguente:
+   Verrà visualizzata una schermata analoga alla seguente:
 
    ![Progettazione tabelle](../data-tools/media/table-designer.png)
 
@@ -118,7 +121,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 
 1. Aggiungere un'altra tabella, quindi aggiungere una riga per ogni voce nella tabella seguente:
 
-   |Nome della colonna|Tipo di dati|Consente valori null|
+   |Nome colonna|Tipo di dati|Consente valori null|
    |-----------------|---------------|-----------------|
    |`OrderID`|`int`|False (deselezionato)|
    |`CustomerID`|`nchar(5)`|False (deselezionato)|
@@ -178,10 +181,10 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 6. Aggiungere dati per alcuni ordini.
 
     > [!IMPORTANT]
-    > Verificare che tutti gli ID ordine e le quantità di ordini siano valori Integer e che ogni ID cliente corrisponda a un valore specificato nella colonna **CustomerID** della tabella Customers.
+    > Verificare che tutti gli ID e le quantità degli ordini siano numeri interi e che ogni ID cliente corrisponda a un valore specificato nella colonna **CustomerID** della tabella Customers.
 
-7. Nella barra dei menu selezionare **File** > **Salva tutto**.
+7. Nella barra dei menu selezionare **file**  >  **Salva tutto**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accesso ai dati in Visual Studio](accessing-data-in-visual-studio.md)

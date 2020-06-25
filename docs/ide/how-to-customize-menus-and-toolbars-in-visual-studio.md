@@ -1,7 +1,7 @@
 ---
 title: Personalizzare menu e barre degli strumenti
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.renametoolbar
 - vs.customize.toolbars
@@ -27,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301853"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284399"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedura: personalizzare menu e barre degli strumenti in Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "79301853"
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Aggiungere, rimuovere o spostare un menu nella barra dei menu
 
-1. Nella barra dei menu scegliere **Personalizza strumenti** > **.**
+1. Sulla barra dei menu scegliere **strumenti**  >  **Personalizza**.
 
      Viene visualizzata la finestra di dialogo **Personalizza**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "79301853"
 
 ## <a name="add-remove-or-move-a-toolbar"></a>Aggiungere, rimuovere o spostare una barra degli strumenti
 
-1. Nella barra dei menu scegliere **Personalizza strumenti** > **.**
+1. Sulla barra dei menu scegliere **strumenti**  >  **Personalizza**.
 
      Viene visualizzata la finestra di dialogo **Personalizza**.
 
@@ -83,7 +83,7 @@ ms.locfileid: "79301853"
 
 ## <a name=""></a><a name="customizing_menu">Personalizzare un menu o di una barra degli strumenti</a>
 
-1. Nella barra dei menu scegliere **Personalizza strumenti** > **.**
+1. Sulla barra dei menu scegliere **strumenti**  >  **Personalizza**.
 
     Viene visualizzata la finestra di dialogo **Personalizza**.
 
@@ -105,7 +105,7 @@ ms.locfileid: "79301853"
 
 ## <a name="reset-a-menu-or-a-toolbar"></a>Reimpostare un menu o una barra degli strumenti
 
-1. Nella barra dei menu scegliere **Personalizza strumenti** > **.**
+1. Sulla barra dei menu scegliere **strumenti**  >  **Personalizza**.
 
     Viene visualizzata la finestra di dialogo **Personalizza**.
 
@@ -117,7 +117,7 @@ ms.locfileid: "79301853"
 
     È anche possibile reimpostare tutti i menu e le barre degli strumenti facendo clic sul pulsante **Reimposta tutto**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Personalizzare l'editor](../ide/how-to-change-text-case-in-the-editor.md)

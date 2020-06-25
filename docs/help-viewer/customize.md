@@ -1,7 +1,7 @@
 ---
 title: Personalizzare il visualizzatore della Guida
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_options
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edcdee8ffe4c2b8a97f4ed65ae86f925db42b1c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825021"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284972"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizzare Help Viewer
 È possibile personalizzare il layout delle finestre di Help Viewer, così come altre opzioni quali dimensioni del carattere, numero massimo di risultati e se includere contenuto in inglese.
@@ -43,8 +43,8 @@ Per aprire la finestra di dialogo **Opzioni Help Viewer** scegliere il pulsante 
 |Modificare le dimensioni del carattere per la visualizzazione del testo|Scegliere una dimensione nell'elenco **Dimensioni testo**.|
 |Modificare il numero massimo di risultati di ricerca visualizzati nella scheda **Ricerca**|Scegliere un valore nell'elenco **Numero massimo di risultati di ricerca**.|
 |Modificare il numero massimo di voci della cronologia visualizzate nella finestra **Preferiti**|Scegliere un valore nell'elenco **Numero massimo di voci della cronologia salvate**.|
-|Includere o escludere contenuto in inglese quando si visualizza il contenuto per una versione non inglese di un prodotto.|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1**. **Attenzione:**  da questa funzionalità dipende anche la possibilità di scaricare contenuto in inglese nella scheda **Gestisci contenuto**.|
+|Includere o escludere contenuto in inglese quando si visualizza il contenuto per una versione non inglese di un prodotto.|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1**. **Attenzione:** da questa funzionalità dipende anche la possibilità di scaricare contenuto in inglese nella scheda **Gestisci contenuto**.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)

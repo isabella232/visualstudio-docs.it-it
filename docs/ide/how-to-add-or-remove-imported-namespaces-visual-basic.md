@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)'
 ms.date: 06/21/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - adding imported namespaces
 - removing imported namespaces
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e636969164c4cf2526bb85add95e7cfe02ce6176
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a50fdb643029bed8a44ce6999d4a8ce062ba3dcf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593330"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284739"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procedura: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)
 
@@ -36,7 +36,7 @@ Gli spazi dei nomi importati vengono gestiti nella pagina **Riferimenti** di **C
 3. Nell'elenco **Spazi dei nomi importati** selezionare la casella di controllo relativa allo spazio dei nomi da aggiungere.
 
     > [!NOTE]
-    > Perché sia possibile importarlo, lo spazio dei nomi deve trovarsi in un componente di riferimento. Se lo spazio dei nomi non è incluso nell'elenco, è necessario aggiungere un riferimento al componente che lo contiene. Per ulteriori informazioni, consultate [Gestione dei riferimenti in un progetto.](managing-references-in-a-project.md)
+    > Perché sia possibile importarlo, lo spazio dei nomi deve trovarsi in un componente di riferimento. Se lo spazio dei nomi non è incluso nell'elenco, è necessario aggiungere un riferimento al componente che lo contiene. Per ulteriori informazioni, vedere [gestione dei riferimenti in un progetto](managing-references-in-a-project.md).
 
 ### <a name="to-remove-an-imported-namespace"></a>Per rimuovere uno spazio dei nomi importato
 
@@ -76,6 +76,6 @@ Se in seguito si decide di importare la classe `EventLog` è possibile specifica
 
 5. Fare clic sul pulsante **Aggiorna importazione utente** per aggiornare lo spazio dei nomi nell'elenco **Spazi dei nomi importati**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)

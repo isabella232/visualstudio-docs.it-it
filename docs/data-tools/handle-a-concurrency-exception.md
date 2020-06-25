@@ -1,7 +1,7 @@
 ---
 title: Gestire un'eccezione di concorrenza
 ms.date: 09/11/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,24 +18,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586601"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282358"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 
-Vengono generate eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) quando due utenti tentano di modificare contemporaneamente gli stessi dati in un database. In questa procedura dettagliata viene creata un'applicazione Windows che illustra come intercettare un <xref:System.Data.DBConcurrencyException>, individuare la riga che ha provocato l'errore e apprendere una strategia per gestirla.
+Vengono generate eccezioni di concorrenza ( <xref:System.Data.DBConcurrencyException?displayProperty=fullName> ) quando due utenti tentano di modificare contemporaneamente gli stessi dati in un database. In questa procedura dettagliata viene creata un'applicazione Windows che illustra come intercettare un oggetto <xref:System.Data.DBConcurrencyException> , individuare la riga che ha provocato l'errore e apprendere una strategia per gestirla.
 
 Questa procedura dettagliata illustra il processo seguente:
 
-1. Creare un nuovo progetto di **Applicazione Windows Form**.
+1. Creare un nuovo progetto di **applicazione Windows Forms** .
 
 2. Creare un nuovo set di dati in base alla tabella Northwind Customers.
 
-3. Creare un modulo con un <xref:System.Windows.Forms.DataGridView> per visualizzare i dati.
+3. Creare un modulo con un oggetto <xref:System.Windows.Forms.DataGridView> per visualizzare i dati.
 
 4. Compilare un set di dati con i dati della tabella Customers nel database Northwind.
 
@@ -69,7 +69,7 @@ Per iniziare, creare un nuovo Windows Forms Application:
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
@@ -83,7 +83,7 @@ Successivamente, creare un set di dati denominato **NorthwindDataSet**:
 
 1. Scegliere **Aggiungi nuova origine dati**dal menu **dati** .
 
-   Verrà avviata la Configurazione guidata origine dati.
+   Viene avviata la Configurazione guidata origine dati.
 
 2. Nella schermata **scegliere un tipo di origine dati** selezionare **database**.
 
@@ -112,7 +112,7 @@ In questa sezione viene creato un <xref:System.Windows.Forms.DataGridView?displa
 
 4. Trascinare la tabella su un'area vuota del modulo.
 
-     Un controllo <xref:System.Windows.Forms.DataGridView> denominato **customersDataGridView**e un <xref:System.Windows.Forms.BindingNavigator> denominato **CustomersBindingNavigator**vengono aggiunti al form associato al <xref:System.Windows.Forms.BindingSource>. Questo, a sua volta, è associato alla tabella Customers nell'oggetto NorthwindDataSet.
+     Un <xref:System.Windows.Forms.DataGridView> controllo denominato **customersDataGridView**e un oggetto <xref:System.Windows.Forms.BindingNavigator> denominato **CustomersBindingNavigator**vengono aggiunti al form associato a <xref:System.Windows.Forms.BindingSource> . Questo, a sua volta, è associato alla tabella Customers nell'oggetto NorthwindDataSet.
 
 ## <a name="test-the-form"></a>Testare il modulo
 
@@ -150,33 +150,33 @@ L'utente può quindi sovrascrivere il database con la versione proposta oppure a
 
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>Aggiungere il codice per gestire l'eccezione di concorrenza
 
-Quando si tenta di eseguire un aggiornamento e viene generata un'eccezione, in genere si desidera eseguire un'operazione con le informazioni fornite dall'eccezione generata. In questa sezione viene aggiunto il codice che tenta di aggiornare il database. È anche possibile gestire eventuali <xref:System.Data.DBConcurrencyException> che potrebbero essere generate, nonché qualsiasi altra eccezione.
+Quando si tenta di eseguire un aggiornamento e viene generata un'eccezione, in genere si desidera eseguire un'operazione con le informazioni fornite dall'eccezione generata. In questa sezione viene aggiunto il codice che tenta di aggiornare il database. È anche possibile gestire gli eventuali <xref:System.Data.DBConcurrencyException> che potrebbero essere generati, nonché qualsiasi altra eccezione.
 
 > [!NOTE]
-> I metodi `CreateMessage` e `ProcessDialogResults` verranno aggiunti più avanti nella procedura dettagliata.
+> I `CreateMessage` `ProcessDialogResults` metodi e vengono aggiunti più avanti nella procedura dettagliata.
 
-1. Aggiungere il codice seguente sotto il metodo `Form1_Load`:
+1. Aggiungere il codice seguente sotto il `Form1_Load` Metodo:
 
    [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
    [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
-2. Sostituire il metodo `CustomersBindingNavigatorSaveItem_Click` per chiamare il metodo `UpdateDatabase` in modo che abbia un aspetto simile al seguente:
+2. Sostituire il `CustomersBindingNavigatorSaveItem_Click` metodo per chiamare il `UpdateDatabase` metodo in modo che abbia un aspetto simile al seguente:
 
    [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
    [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>Visualizza le opzioni per l'utente
 
-Il codice appena scritto chiama la procedura `CreateMessage` per visualizzare le informazioni sull'errore all'utente. Per questa procedura dettagliata viene usata una finestra di messaggio per visualizzare le diverse versioni del record per l'utente. Ciò consente all'utente di scegliere se sovrascrivere il record con le modifiche o annullare la modifica. Quando l'utente seleziona un'opzione (fa clic su un pulsante) nella finestra di messaggio, la risposta viene passata al metodo `ProcessDialogResult`.
+Il codice appena scritto chiama la `CreateMessage` procedura per visualizzare le informazioni sull'errore all'utente. Per questa procedura dettagliata viene usata una finestra di messaggio per visualizzare le diverse versioni del record per l'utente. Ciò consente all'utente di scegliere se sovrascrivere il record con le modifiche o annullare la modifica. Quando l'utente seleziona un'opzione (fa clic su un pulsante) nella finestra di messaggio, la risposta viene passata al `ProcessDialogResult` metodo.
 
-Creare il messaggio aggiungendo il codice seguente all'editor di **codice**. Immettere questo codice sotto il metodo `UpdateDatabase`:
+Creare il messaggio aggiungendo il codice seguente all'editor di **codice**. Immettere il codice seguente nel `UpdateDatabase` Metodo:
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>Elaborare la risposta dell'utente
 
-È necessario anche codice per elaborare la risposta dell'utente alla finestra di messaggio. Le opzioni consentono di sovrascrivere il record corrente nel database con la modifica proposta oppure di abbandonare le modifiche locali e aggiornare la tabella dati con il record attualmente presente nel database. Se l'utente sceglie **Sì**, il metodo <xref:System.Data.DataTable.Merge%2A> viene chiamato con l'argomento *preserveChanges* impostato su **true**. In questo modo il tentativo di aggiornamento ha esito positivo, perché la versione originale del record ora corrisponde al record nel database.
+È necessario anche codice per elaborare la risposta dell'utente alla finestra di messaggio. Le opzioni consentono di sovrascrivere il record corrente nel database con la modifica proposta oppure di abbandonare le modifiche locali e aggiornare la tabella dati con il record attualmente presente nel database. Se l'utente sceglie **Sì**, il <xref:System.Data.DataTable.Merge%2A> metodo viene chiamato con l'argomento *preserveChanges* impostato su **true**. In questo modo il tentativo di aggiornamento ha esito positivo, perché la versione originale del record ora corrisponde al record nel database.
 
 Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
 
@@ -206,12 +206,12 @@ Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
 
 8. Nel primo record nel form (**ALFKI**) modificare **ContactName** in **Maria Anders1**.
 
-9. Selezionare il pulsante **Salva**.
+9. Fare clic sul pulsante **Salva**.
 
      Viene generato l'errore di concorrenza e viene visualizzata la finestra di messaggio.
 
    Se si seleziona **No** , l'aggiornamento viene annullato e il set di dati viene aggiornato con i valori attualmente presenti nel database. Se **si seleziona Sì** , il valore proposto viene scritto nel database.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

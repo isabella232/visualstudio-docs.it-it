@@ -3,7 +3,7 @@ title: Creare un'app Vue.js tramite Node.js
 description: È possibile creare applicazioni Node.js in Visual Studio usando il framework Vue.js
 ms.custom: seodec18
 ms.date: 07/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81744931"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285166"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Creare un'applicazione Vue.js tramite Node.js Tools for Visual Studio
 
@@ -40,10 +40,10 @@ Lo sviluppo di applicazioni Vue.js in Visual Studio è supportato dalle nuove fu
     Se non è già installata una versione richiesta, installare [Visual Studio 2019](https://visualstudio.microsoft.com/downloads).
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se Visual Studio non è già stato installato, passare alla pagina dei [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) di Visual Studio per installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)per   installarlo gratuitamente.
     ::: moniker-end
 
-    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **Strumenti** > **Get Tools and Features...**, che apre il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
 
 * Per creare il progetto ASP.NET Core, è necessario che siano installati i carichi di lavoro Sviluppo ASP.NET e Web e il carico di lavoro di sviluppo multipiattaforma di .NET Core.
 
@@ -51,7 +51,7 @@ Lo sviluppo di applicazioni Vue.js in Visual Studio è supportato dalle nuove fu
 
     Se il runtime non è installato, installare la versione LTS dal sito Web [Node.js](https://nodejs.org/en/download/). In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non viene rilevato un runtime installato è possibile configurare il progetto in modo che faccia riferimento al runtime installato nella pagina delle proprietà. Dopo aver creato un progetto, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**.
 
-## <a name="create-a-vuejs-project-using-nodejs"></a>Creare un progetto Vue.js usando Node.jsCreate a Vue.js project using Node.js
+## <a name="create-a-vuejs-project-using-nodejs"></a>Creare un progetto Vue.js utilizzando Node.js
 
 Per creare un nuovo progetto, è possibile usare i nuovi modelli Vue.js. L'uso di un modello è il modo più semplice per iniziare. Per la procedura dettagliata, vedere [Use Visual Studio to create your first Vue.js app](../javascript/quickstart-vuejs-with-nodejs.md) (Creare la prima app Vue.js con Visual Studio).
 
@@ -74,7 +74,7 @@ In questo esempio si usa un'applicazione ASP.NET Core vuota (C#). È tuttavia po
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **asp.net** e quindi scegliere **Crea una nuova applicazione Web ASP.NET Core**. Nella finestra di dialogo visualizzata digitare il nome **client-app**, quindi scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e quindi scegliere **Web**. Nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**, digitare il nome **client-app** e quindi scegliere **OK**.
+    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e quindi scegliere **Web**. Nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**, digitare il nome **client-app** e quindi scegliere **OK**.
     ::: moniker-end
 
     Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato, è prima necessario installare il carico di lavoro **Sviluppo ASP.NET e Web** e il carico di lavoro di sviluppo di .**NET Core**. Per installare uno o entrambi i carichi di lavoro, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto** (selezionare **File** > **Nuovo** > **Progetto**). Verrà avviato il Programma di installazione di Visual Studio. Selezionare i carichi di lavoro necessari.
@@ -119,7 +119,7 @@ Per installare il modulo vue-cli npm, aprire un prompt dei comandi e digitare `n
 
 #### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Indicare il progetto per la compilazione dell'app client ogni volta che viene attivata una compilazione
 
-1. In Visual Studio passare a Eventi di**compilazione****delle proprietà** >  **del progetto** > .
+1. In Visual Studio passare a proprietà **progetto**  >  **Properties**  >  **eventi di compilazione**.
 
 1. In **Riga di comando eventi pre-compilazione** digitare `npm --prefix ./client-app run build`.
 
@@ -196,8 +196,8 @@ cd ../
 
 * L'esecuzione del comando `npm run build` come evento di pre-compilazione per le proprietà del progetto non funziona se si usa vue-cli 3.0.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Guida introduttiva di Vue](https://vuejs.org/v2/guide).
-- [Progetto Vue CLI](https://github.com/vuejs/vue-cli).
+- [Progetto dell'interfaccia](https://github.com/vuejs/vue-cli)della riga di comando Vue.
 - [Documentazione sulla configurazione di webpack](https://webpack.js.org/configuration/).

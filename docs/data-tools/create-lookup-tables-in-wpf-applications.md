@@ -1,7 +1,7 @@
 ---
 title: Creare tabelle di ricerca in applicazioni WPF
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [WPF], displaying
 - WPF, data binding in Visual Studio
@@ -16,18 +16,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a14209d895b461c64b30d0f1690b68484f09d970
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7485c63d358bc6f6fe7030e589fbdf7286ded3fd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586757"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282618"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca in applicazioni WPF
 
 La *tabella di ricerca* termini (talvolta denominata *associazione di ricerca*) descrive un controllo che visualizza informazioni da una tabella dati in base al valore di un campo di chiave esterna in un'altra tabella. È possibile creare una tabella di ricerca trascinando il nodo principale di una tabella o di un oggetto padre nella finestra **origini dati** su un controllo già associato a una colonna o a una proprietà in una tabella figlio correlata.
 
-Si consideri, ad esempio, una tabella di `Orders` in un database Sales. Ogni record della tabella `Orders` include una `CustomerID` che indica il cliente che ha effettuato l'ordine. Il `CustomerID` è una chiave esterna che punta a un record del cliente nella tabella `Customers`. Quando si visualizza un elenco di ordini dalla tabella `Orders`, è possibile che si desideri visualizzare il nome effettivo del cliente anziché l'`CustomerID`. Poiché il nome del cliente si trova nella tabella `Customers`, è necessario creare una tabella di ricerca per visualizzare il nome del cliente. Nella tabella di ricerca viene utilizzato il valore `CustomerID` nel record `Orders` per spostarsi nella relazione e viene restituito il nome del cliente.
+Si consideri, ad esempio, una tabella di `Orders` in un database Sales. Ogni record della `Orders` tabella include un valore `CustomerID` che indica il cliente che ha effettuato l'ordine. `CustomerID`È una chiave esterna che punta a un record del cliente nella `Customers` tabella. Quando si visualizza un elenco di ordini dalla `Orders` tabella, è possibile che si desideri visualizzare il nome effettivo del cliente anziché il `CustomerID` . Poiché il nome del cliente si trova nella `Customers` tabella, è necessario creare una tabella di ricerca per visualizzare il nome del cliente. Nella tabella di ricerca viene utilizzato il `CustomerID` valore del `Orders` record per spostarsi nella relazione e viene restituito il nome del cliente.
 
 ## <a name="to-create-a-lookup-table"></a>Per creare una tabella di ricerca
 
@@ -68,28 +68,28 @@ Si consideri, ad esempio, una tabella di `Orders` in un database Sales. Ogni rec
         > [!NOTE]
         > Se il controllo **ListBox** o **ListView** non è presente nell'elenco, è possibile aggiungere questi controlli all'elenco. Per informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-    - Qualsiasi controllo personalizzato che deriva da <xref:System.Windows.Controls.Primitives.Selector>.
+    - Qualsiasi controllo personalizzato che deriva da <xref:System.Windows.Controls.Primitives.Selector> .
 
         > [!NOTE]
         > Per informazioni sull'aggiunta di controlli personalizzati all'elenco di controlli che è possibile selezionare per gli elementi nella finestra **origini dati** , vedere [aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 8. Trascinare il nodo figlio dalla finestra **origini dati** in un contenitore in WPF Designer. Nell'esempio precedente, il nodo figlio è il nodo **Orders** .
 
-     Visual Studio genera il codice XAML che crea nuovi controlli associati a dati per ogni elemento trascinato. Il codice XAML aggiunge anche un nuovo <xref:System.Windows.Data.CollectionViewSource> per la tabella o l'oggetto figlio alle risorse dell'obiettivo di rilascio. Per alcune origini dati, Visual Studio genera anche codice per caricare i dati nella tabella o nell'oggetto. Per altre informazioni, vedere [associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Visual Studio genera il codice XAML che crea nuovi controlli associati a dati per ogni elemento trascinato. Il codice XAML aggiunge anche un nuovo <xref:System.Windows.Data.CollectionViewSource> oggetto per la tabella o l'oggetto figlio alle risorse dell'obiettivo di rilascio. Per alcune origini dati, Visual Studio genera anche codice per caricare i dati nella tabella o nell'oggetto. Per altre informazioni, vedere [associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 9. Trascinare il nodo padre dalla finestra **origini dati** nel controllo binding di ricerca creato in precedenza. Nell'esempio precedente, il nodo padre è il nodo **Customers** .
 
      Visual Studio imposta alcune proprietà nel controllo per configurare l'associazione di ricerca. La tabella seguente elenca le proprietà modificate da Visual Studio. Se necessario, è possibile modificare queste proprietà in XAML o nella finestra **Proprietà** .
 
-    |Gli|Spiegazione dell'impostazione|
+    |Proprietà|Spiegazione dell'impostazione|
     |--------------| - |
-    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Questa proprietà specifica la raccolta o l'associazione utilizzata per ottenere i dati visualizzati nel controllo. Visual Studio imposta questa proprietà sul <xref:System.Windows.Data.CollectionViewSource> per i dati padre trascinati nel controllo.|
+    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Questa proprietà specifica la raccolta o l'associazione utilizzata per ottenere i dati visualizzati nel controllo. Visual Studio imposta questa proprietà su <xref:System.Windows.Data.CollectionViewSource> per i dati padre trascinati nel controllo.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Questa proprietà specifica il percorso dell'elemento di dati visualizzato nel controllo. Visual Studio imposta questa proprietà sulla prima colonna o proprietà nei dati padre, dopo la chiave primaria, che ha un tipo di dati String.<br /><br /> Se si desidera visualizzare una colonna o una proprietà diversa nei dati padre, impostare questa proprietà sul percorso di un'altra proprietà.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|In Visual Studio questa proprietà viene associata alla colonna o alla proprietà dei dati figlio trascinati nella finestra di progettazione. Si tratta della chiave esterna per i dati padre.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio imposta questa proprietà sul percorso della colonna o della proprietà dei dati figlio che rappresenta la chiave esterna per i dati padre.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Visualizzare dati correlati in applicazioni WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Procedura dettagliata: Visualizzazione di dati correlati in un'applicazione WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Procedura dettagliata: visualizzazione dei dati correlati in un'applicazione WPF](../data-tools/display-related-data-in-wpf-applications.md)

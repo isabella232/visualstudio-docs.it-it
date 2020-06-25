@@ -1,6 +1,6 @@
 ---
 title: Sincronizzare le impostazioni
-ms.date: 12/10/2018
+ms.date: 06/18/2020
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566787"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285205"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizzare le impostazioni di Visual Studio in più computer
 
@@ -27,36 +27,36 @@ Per impostazione predefinita, vengono sincronizzate le impostazioni seguenti:
 
 - Alias di comandi definiti dall'utente. Per altre informazioni su come definire gli alias di comandi, vedere [Alias di comandi di Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-- Layout di finestra definiti dall'utente **nella** > pagina**Gestisci layout di finestra.**
+- Layout delle finestre definite dall'utente nella **Window**  >  pagina**Gestisci layout** finestra.
 
-- Nelle pagine Opzioni **degli strumenti,** > **Options** le seguenti opzioni sono disponibili:
+- Le opzioni seguenti nelle **Tools**  >  pagine**Opzioni** di strumenti:
 
-  - Impostazioni del tema e della barra dei menu nella pagina delle opzioni**Generale** **ambiente.** > 
+  - Impostazioni delle maiuscole e minuscole della **Environment**barra dei menu nella  >  pagina Opzioni**generali** dell'ambiente.
 
-  - Tutte le impostazioni nella pagina delle opzioni**Tipi di carattere e colori** **dell'ambiente.** > 
+  - Tutte le impostazioni nella **Environment**  >  pagina opzioni ambiente**tipi di carattere e colori** .
 
-  - Tutti i tasti di scelta rapida nella pagina delle opzioni**Tastiera** **ambiente.** > 
+  - Tutti i tasti di scelta **Environment**rapida nella  >  pagina Opzioni**tastiera** ambiente.
 
-  - Tutte le **Environment** > impostazioni nella pagina**Schede ambiente e opzioni di Windows.**
+  - Tutte le impostazioni nelle **Environment**  >  **schede ambiente e** nella pagina Opzioni di Windows.
 
-  - Tutte le impostazioni nella pagina delle opzioni**di avvio** **dell'ambiente.** > 
+  - Tutte le impostazioni nella **Environment**  >  pagina Opzioni di**avvio** dell'ambiente.
 
   - Tutte le impostazioni nella pagina delle opzioni **Editor di testo**, ad esempio le [preferenze di stile per il codice](code-styles-and-code-cleanup.md).
 
-  - Tutte le impostazioni nelle pagine delle opzioni della **finestra di progettazione XAML.**
+  - Tutte le impostazioni nelle pagine delle opzioni di **finestra di progettazione XAML** .
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Disattivare le impostazioni sincronizzate per un computer specifico
 
-Le impostazioni sincronizzate per Visual Studio sono attivate per impostazione predefinita. È possibile disattivare le impostazioni sincronizzate in un computer accedendo alla**pagina** **Tools** > **Strumenti Opzioni** > **account ambiente** > e deselezionando **Sincronizza impostazioni tra dispositivi dopo l'accesso a Visual Studio**.
+Le impostazioni sincronizzate per Visual Studio sono attivate per impostazione predefinita. È possibile disattivare le impostazioni sincronizzate in un computer visitando la pagina **strumenti**  >  **Opzioni**  >  **ambiente**  >  **account** e deselezionando **Sincronizza impostazioni tra i dispositivi quando**si accede a Visual Studio.
 
-Se, ad esempio, si decide di non sincronizzare le impostazioni di Visual Studio nel computer "A", le modifiche delle impostazioni apportate nel computer "A" non verranno visualizzate nel computer "B" o nel computer "C". I computer "B" e "C" continueranno a sincronizzarsi tra di loro, ma non con il computer "A".
+Ad esempio, se si decide di non sincronizzare le impostazioni in Visual Studio sul computer "A", le modifiche apportate all'impostazione sul computer "A" non vengono visualizzate nel computer "B" o nel computer "C". I computer "B" e "C" continueranno a sincronizzarsi tra di loro, ma non con il computer "A".
 
 > [!NOTE]
-> Se si sceglie di non sincronizzare le impostazioni deselezionando l'opzione nella pagina **Strumenti** > **Opzioni** > **account** **di ambiente,** > altre versioni o edizioni di Visual Studio disponibili nello stesso computer non sono interessate. Tali installazioni side-by-side di Visual Studio continueranno a sincronizzare le impostazioni (a meno che non si deseleziona anche l'opzione).
+> Se si sceglie di non sincronizzare le impostazioni deselezionando l'opzione nella pagina **strumenti**  >  **Opzioni**  >  **ambiente**  >  **account** , le altre versioni o edizioni di Visual Studio presenti nello stesso computer non sono interessate. Tali installazioni side-by-side di Visual Studio continueranno a sincronizzare le impostazioni (a meno che non si deseleziona anche l'opzione).
 
-## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Sincronizzare le impostazioni tra prodotti e edizioni della famiglia Visual Studio
+## <a name="synchronize-settings-across-visual-studio-ide-products-and-editions"></a>Sincronizzare le impostazioni tra i prodotti e le edizioni IDE di Visual Studio
 
-Le impostazioni vengono sincronizzate nelle versioni e nelle edizioni di Visual Studio installate *side-by-side*. Le impostazioni vengono sincronizzate anche nei prodotti della famiglia Visual Studio, come ad esempio Blend per Visual Studio. Tuttavia, ogni prodotto di questa famiglia può avere impostazioni proprie che non vengono condivise con Visual Studio. Ad esempio, le impostazioni specifiche per Blend per Visual Studio nel computer "A"non vengono condivise con Visual Studio nei computer "A" o "B".
+Le impostazioni vengono sincronizzate nelle versioni e nelle edizioni di Visual Studio installate *side-by-side*. Le impostazioni vengono sincronizzate anche tra i prodotti IDE di Visual Studio, tra cui Blend per Visual Studio. Tuttavia, un singolo prodotto IDE di Visual Studio potrebbe avere impostazioni proprie che non sono condivise con Visual Studio. Ad esempio, le impostazioni specifiche per Blend per Visual Studio nel computer "A"non vengono condivise con Visual Studio nei computer "A" o "B".
 
 ## <a name="side-by-side-synchronized-settings"></a>Impostazioni sincronizzate affiancate
 
@@ -87,10 +87,11 @@ Alcune impostazioni, ad esempio il layout delle finestre degli strumenti, non ve
 
 ## <a name="reset-synchronized-settings"></a>Reimpostare le impostazioni sincronizzate
 
-Per ripristinare tutte le impostazioni predefinite, accedere a Visual Studio, quindi selezionare **Strumenti** > **importa/Esporta impostazioni** per aprire l'Importazione/Esportazione guidata **impostazioni**. Selezionare **Reimposta tutte le impostazioni** e quindi seguire i passaggi rimanenti della procedura guidata.
+Per reimpostare le impostazioni predefinite per tutte le impostazioni, accedere a Visual Studio, quindi selezionare **strumenti**  >  **Importa/Esporta impostazioni** per aprire **importazione/esportazione guidata delle impostazioni**. Selezionare **Reimposta tutte le impostazioni** e quindi seguire i passaggi rimanenti della procedura guidata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Impostazioni di ambiente](../ide/environment-settings.md)
+- [Impostazioni dell'ambiente](../ide/environment-settings.md)
 - [Ambiente > Account, finestra di dialogo Opzioni](reference/accounts-environment-options-dialog-box.md)
+- [Installare versioni di Visual Studio side-by-side](../install/install-visual-studio-versions-side-by-side.md)

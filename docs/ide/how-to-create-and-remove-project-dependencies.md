@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Creare e rimuovere dipendenze di progetto'
 ms.date: 06/21/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ProjectDependenciesDlg
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a286a84d01c6a49b32445106488688ba5b489be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad21aeae2d348f56cb722365cd1e2ded249bbefe
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114549"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284464"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Procedura: Creare e rimuovere dipendenze di progetto
 
@@ -61,7 +61,7 @@ Quando si compila una soluzione che contiene più progetti, può essere necessar
 
 4. Nel campo **Dipendente da** deselezionare le caselle di controllo accanto agli altri progetti che non sono più dipendenze del progetto specificato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)

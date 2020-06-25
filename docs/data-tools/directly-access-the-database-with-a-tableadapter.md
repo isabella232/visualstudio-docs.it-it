@@ -1,7 +1,7 @@
 ---
 title: Accedere direttamente al database mediante un oggetto TableAdapter
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -23,26 +23,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fe408c090dbdc2157cd52977d4bbed66cfe9109
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 22d84e9b4beafd64cc629a295bcfa7f9f67afb6d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586692"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282566"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Accedere direttamente al database mediante un oggetto TableAdapter
 
-Oltre ai `InsertCommand`, `UpdateCommand`e `DeleteCommand`, gli oggetti TableAdapter vengono creati con metodi che possono essere eseguiti direttamente sul database. È possibile chiamare questi metodi (`TableAdapter.Insert`, `TableAdapter.Update`e `TableAdapter.Delete`) per modificare i dati direttamente nel database.
+Oltre agli `InsertCommand` oggetti, e, gli `UpdateCommand` `DeleteCommand` oggetti TableAdapter vengono creati con metodi che possono essere eseguiti direttamente sul database. È possibile chiamare questi metodi ( `TableAdapter.Insert` , `TableAdapter.Update` e `TableAdapter.Delete` ) per modificare i dati direttamente nel database.
 
-Se non si desidera creare questi metodi diretti, impostare la proprietà `GenerateDbDirectMethods` del TableAdapter su `false` nella finestra **Proprietà** . Se una query viene aggiunta a un TableAdapter oltre alla query principale del TableAdapter, si tratta di query autonome che non generano questi metodi `DbDirect`.
+Se non si desidera creare questi metodi diretti, impostare la proprietà del TableAdapter `GenerateDbDirectMethods` su `false` nella finestra **proprietà** . Se una query viene aggiunta a un TableAdapter oltre alla query principale del TableAdapter, si tratta di query autonome che non generano questi `DbDirect` metodi.
 
 ## <a name="send-commands-directly-to-a-database"></a>Inviare comandi direttamente a un database
 
-Chiamare il metodo TableAdapter `DbDirect` che esegue l'attività che si sta tentando di eseguire.
+Chiamare il `DbDirect` metodo TableAdapter che esegue l'attività che si sta tentando di eseguire.
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>Per inserire nuovi record direttamente in un database
 
-- Chiamare il metodo `Insert` del TableAdapter, passando i valori per ogni colonna come parametri. Nella procedura riportata di seguito viene utilizzata come esempio la tabella `Region` nel database Northwind.
+- Chiamare il metodo del TableAdapter `Insert` , passando i valori per ogni colonna come parametri. Nella procedura riportata di seguito viene utilizzata `Region` come esempio la tabella nel database Northwind.
 
     > [!NOTE]
     > Se non si dispone di un'istanza disponibile, creare un'istanza del TableAdapter che si desidera utilizzare.
@@ -52,7 +52,7 @@ Chiamare il metodo TableAdapter `DbDirect` che esegue l'attività che si sta ten
 
 ### <a name="to-update-records-directly-in-a-database"></a>Per aggiornare i record direttamente in un database
 
-- Chiamare il metodo `Update` del TableAdapter, passando i valori nuovi e originali per ogni colonna come parametri.
+- Chiamare il metodo del TableAdapter `Update` , passando i valori nuovi e originali per ogni colonna come parametri.
 
     > [!NOTE]
     > Se non si dispone di un'istanza disponibile, creare un'istanza del TableAdapter che si desidera utilizzare.
@@ -62,7 +62,7 @@ Chiamare il metodo TableAdapter `DbDirect` che esegue l'attività che si sta ten
 
 ### <a name="to-delete-records-directly-from-a-database"></a>Per eliminare i record direttamente da un database
 
-- Chiamare il metodo `Delete` del TableAdapter, passando i valori per ogni colonna come parametri del metodo `Delete`. Nella procedura riportata di seguito viene utilizzata come esempio la tabella `Region` nel database Northwind.
+- Chiamare il metodo del TableAdapter `Delete` , passando i valori per ogni colonna come parametri del `Delete` metodo. Nella procedura riportata di seguito viene utilizzata `Region` come esempio la tabella nel database Northwind.
 
     > [!NOTE]
     > Se non si dispone di un'istanza disponibile, creare un'istanza del TableAdapter che si desidera utilizzare.
@@ -70,6 +70,6 @@ Chiamare il metodo TableAdapter `DbDirect` che esegue l'attività che si sta ten
      [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
      [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)

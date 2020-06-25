@@ -1,25 +1,25 @@
 ---
 title: Cercare argomenti (Help Viewer)
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824989"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284919"
 ---
-# <a name="how-to-search-for-topics"></a>Procedura: Cercare argomenti
+# <a name="how-to-search-for-topics"></a>Procedura: Eseguire la ricerca di argomenti
 
 È possibile usare la funzionalità di ricerca full-text per individuare tutti gli argomenti che contengono una parola specifica. È anche possibile perfezionare e personalizzare la ricerca usando espressioni con caratteri jolly, operatori logici e operatori di ricerca avanzata.
 
-Per aprire la scheda **Cerca**, scegliere la scheda **Cerca** nella finestra **Help Viewer** oppure se si usa la tastiera, scegliere **CTRL**+**E**.
+Per aprire la scheda **Cerca** , scegliere la scheda **Cerca** nella finestra **Help Viewer** oppure, se si è un utente della tastiera, scegliere **CTRL** + **E**.
 
 ## <a name="to-perform-a-full-text-search"></a>Per eseguire una ricerca full-text
 
@@ -30,7 +30,7 @@ Per aprire la scheda **Cerca**, scegliere la scheda **Cerca** nella finestra **H
     > [!NOTE]
     > Nella finestra di dialogo **Opzioni Help Viewer** è possibile specificare altre preferenze, ad esempio il numero massimo di risultati da visualizzare contemporaneamente e se includere i contenuti in lingua inglese quando le impostazioni locali sono diverse dall'inglese.
 
-3. Premere il tasto **INVIO**.
+3. Premere il tasto **invio** .
 
      Per impostazione predefinita, una ricerca restituisce un massimo di 200 risultati che vengono visualizzati nell'area corrispondente. È possibile che vengano visualizzate informazioni aggiuntive sulla versione per ogni risultato, a seconda del contenuto.
 
@@ -40,13 +40,13 @@ Per aprire la scheda **Cerca**, scegliere la scheda **Cerca** nella finestra **H
 
 Se si comprendono gli effetti della sintassi sulle query, è possibile creare ricerche più mirate che restituiscano solo gli argomenti di interesse. La sintassi include caratteri speciali, parole riservate e filtri. In questo argomento vengono illustrati suggerimenti, procedure e informazioni dettagliate sulla sintassi che aiutano a creare le query correttamente.
 
-### <a name="general-guidelines"></a>Indicazioni generali
+### <a name="general-guidelines"></a>Linee guida generali
 
 Nella tabella seguente sono elencate alcune regole di base e linee guida per lo sviluppo di query di ricerca nella Guida.
 
-|Sintassi|DESCRIZIONE|
+|Sintassi|Descrizione|
 |------------|-----------------|
-|Distinzione fra maiuscole e minuscole|Le ricerche non distinguono tra maiuscole e minuscole. Sviluppare i criteri di ricerca usando indifferentemente caratteri maiuscoli o minuscoli. Ad esempio, "OLE" e "ole" restituiscono gli stessi risultati.|
+|Maiuscole/minuscole|Le ricerche non distinguono tra maiuscole e minuscole. Sviluppare i criteri di ricerca usando indifferentemente caratteri maiuscoli o minuscoli. Ad esempio, "OLE" e "ole" restituiscono gli stessi risultati.|
 |Combinazioni di caratteri|Non è possibile cercare solo singole lettere (a-z) o singoli numeri (0-9). Se si tenta di cercare determinate parole riservate, ad esempio "e", "da" e "con", queste vengono ignorate. Per altre informazioni, vedere [Parole ignorate nelle ricerche](#stopwords) più avanti in questo argomento.|
 |Ordine di valutazione|Le query di ricerca vengono valutate da sinistra a destra.|
 
@@ -72,13 +72,13 @@ L'algoritmo di ricerca applica determinati criteri per consentire la classificaz
 
 3. I contenuti che contengono una densità maggiore delle parole di ricerca sono classificati a un livello superiore rispetto ai contenuti che hanno una densità inferiore.
 
-### <a name="stopwords"> Parole ignorate nelle ricerche (parole non significative) </a>
+### <a name=""></a><a name="stopwords"> Parole ignorate nelle ricerche (parole non significative) </a>
 
 Alcune parole o numeri molto comuni, definiti a volte parole non significative, vengono ignorati automaticamente durante la ricerca full-text. Ad esempio, se si cerca la frase "passare a", i risultati visualizzeranno gli argomenti contenenti la parola "passare" ma non "a".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Operatori logici e avanzati](../help-viewer/logical-operators-search-expressions.md)
-- [Procedura: Trovare argomenti nell'indice](../help-viewer/find-topics-index.md)
-- [Procedura: Trovare argomenti nel sommario](../help-viewer/find-topics-toc.md)
+- [Procedura: trovare argomenti nell'indice](../help-viewer/find-topics-index.md)
+- [Procedura: trovare argomenti nel sommario](../help-viewer/find-topics-toc.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

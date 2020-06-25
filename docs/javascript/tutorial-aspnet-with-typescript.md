@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183093"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283567"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Esercitazione: creare un'app ASP.NET Core con TypeScript in Visual Studio
 
@@ -97,9 +97,9 @@ In questa esercitazione si inizia con un semplice progetto che contiene il codic
 
 1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **aggiungi > nuovo elemento**. Scegliere il **file di configurazione TYPESCRIPT JSON**e quindi fare clic su **Aggiungi**.
 
-   Visual Studio aggiunge il file *tsconfig. JSON* alla radice del progetto. È possibile usare questo file per [configurare le opzioni](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) per il compilatore typescript.
+   Visual Studio aggiunge il *tsconfig.jsnel* file alla radice del progetto. È possibile usare questo file per [configurare le opzioni](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) per il compilatore typescript.
 
-1. Aprire *tsconfig. JSON* e sostituire il codice predefinito con il codice seguente:
+1. Aprire *tsconfig.js* e sostituire il codice predefinito con il codice seguente:
 
    ```json
    {
@@ -162,7 +162,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene il codic
 
     Selezionare questa finestra `lastName` per aggiungere di nuovo il cognome al codice.
 
-1. Aprire la cartella *views/Home* e quindi aprire *index. html*.
+1. Aprire la cartella *views/Home* e quindi aprire *index. cshtml*.
 
 1. Aggiungere il codice HTML seguente alla fine del file.
 
@@ -189,7 +189,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene il codic
 
    Sebbene l'app venga compilata automaticamente quando viene eseguita, è opportuno esaminare qualcosa che si verifica durante il processo di compilazione.
 
-1. Aprire la cartella *wwwroot/JS* e trovare due nuovi file, *app. js* e il file di mappa di origine, *app. js. map*. Questi file vengono generati dal compilatore TypeScript.
+1. Aprire la cartella *wwwroot/JS* e trovare due nuovi file, *app.js* e il file di mapping di origine, *app.js. map*. Questi file vengono generati dal compilatore TypeScript.
 
    Per il debug sono necessari i file di mapping di origine.
 
@@ -224,7 +224,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene il codic
    >[!NOTE]
    > Per ASP.NET Core progetti, è anche possibile usare [Gestione librerie](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) o Yarn anziché NPM per installare i file CSS e JavaScript sul lato client.
 
-1. In questo esempio, aggiungere un file di definizione TypeScript per jQuery al progetto. Includere il codice seguente nel file *Package. JSON* .
+1. In questo esempio, aggiungere un file di definizione TypeScript per jQuery al progetto. Includere quanto segue nel file di *package.js* .
 
    ```json
    "devDependencies": {
@@ -237,7 +237,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene il codic
 1. Se il pacchetto in Esplora soluzioni non è installato, fare clic con il pulsante destro del mouse sul nodo NPM e scegliere **Ripristina pacchetti**.
 
    >[!NOTE]
-   > In alcuni scenari Esplora soluzioni possibile indicare che un pacchetto NPM non è sincronizzato con *Package. JSON* a causa di un problema noto descritto [qui](https://github.com/aspnet/Tooling/issues/479). È ad esempio possibile che il pacchetto venga visualizzato come non installato al momento dell'installazione. Nella maggior parte dei casi, è possibile aggiornare Esplora soluzioni eliminando *Package. JSON*, riavviare Visual Studio e aggiungere nuovamente il file *Package. JSON* come descritto in precedenza in questo articolo.
+   > In alcuni scenari Esplora soluzioni possibile indicare che un pacchetto NPM non è sincronizzato con *package.js* a causa di un problema noto descritto [qui](https://github.com/aspnet/Tooling/issues/479). È ad esempio possibile che il pacchetto venga visualizzato come non installato al momento dell'installazione. Nella maggior parte dei casi, è possibile aggiornare Esplora soluzioni eliminando *package.js*, riavviando Visual Studio e aggiungendo nuovamente il *package.jssul* file come descritto in precedenza in questo articolo.
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella script e scegliere **Aggiungi**  >  **nuovo elemento**.
 

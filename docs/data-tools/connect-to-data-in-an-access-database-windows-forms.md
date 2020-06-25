@@ -1,7 +1,7 @@
 ---
 title: Connettersi ai dati in un database di Access
 ms.date: 07/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - data [Visual Studio], connecting
 - connecting to data, Access databases
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 03c92476e8083106a0d301655be3a1779709c1c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586861"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282735"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Connettersi ai dati in un database di Access
 
@@ -33,13 +33,13 @@ Connettersi ai database creati con Office 365, Access 2013, Access 2010 o Access
 
 1. Aprire un progetto di applicazione Windows Forms o WPF in Visual Studio.
 
-2. Per aprire la finestra **origini dati** , scegliere **altre finestre** > **origini dati**dal menu **Visualizza** .
+2. Per aprire la finestra **origini dati** , scegliere altre **View** **Other Windows**  >  **origini dati**di Windows dal menu Visualizza.
 
    ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 
 3. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
-   Viene avviata la **Configurazione guidata origine dati**.
+   Verrà avviata la **Configurazione guidata origine dati** .
 
 4. Selezionare **database** nella pagina **scegliere un tipo di origine dati** e quindi fare clic su **Avanti**.
 
@@ -49,7 +49,7 @@ Connettersi ai database creati con Office 365, Access 2013, Access 2010 o Access
 
    Verrà visualizzata la finestra di dialogo **Aggiungi connessione**.
 
-7. Se l' **origine dati** non è impostata su **file di database Microsoft Access (OLE DB)** , selezionare il pulsante **Cambia** .
+7. Se l' **origine dati** non è impostata su **file di database Microsoft Access**, selezionare il pulsante **Cambia** .
 
    Verrà visualizzata la finestra di dialogo **Modifica origine dati** . Nell'elenco delle origini dati scegliere file di **database Microsoft Access**. Nell'elenco a discesa **provider di dati** selezionare **.NET Framework provider di dati per OLE DB**, quindi scegliere **OK**.
 
@@ -75,13 +75,13 @@ Connettersi ai database creati con Access 2000-2003 usando la procedura seguente
 
 1. Aprire un progetto di applicazione Windows Forms o WPF in Visual Studio.
 
-2. Scegliere **altre finestre** > **origini dati**dal menu **Visualizza** .
+2. Scegliere altre **View** **Other Windows**  >  **origini dati**di Windows dal menu Visualizza.
 
    ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 
 3. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
-    Viene avviata la **Configurazione guidata origine dati**.
+    Verrà avviata la **Configurazione guidata origine dati** .
 
 4. Selezionare **database** nella pagina **scegliere un tipo di origine dati** e quindi fare clic su **Avanti**.
 
@@ -89,7 +89,7 @@ Connettersi ai database creati con Access 2000-2003 usando la procedura seguente
 
 6. Nella pagina **Seleziona connessione dati** selezionare **Nuova connessione** per configurare una nuova connessione dati.
 
-7. Se l'origine dati non è **un file di database Microsoft Access (OLE DB)** , selezionare **Cambia** per aprire la finestra di dialogo **Modifica origine dati** e selezionare **file di database Microsoft Access**, quindi scegliere **OK**.
+7. Se l'origine dati non è **un file di database Microsoft Access (OLE DB)**, selezionare **Cambia** per aprire la finestra di dialogo **Modifica origine dati** e selezionare **file di database Microsoft Access**, quindi scegliere **OK**.
 
 8. Nel **nome del file di database**specificare il percorso e il nome del file con *estensione mdb* a cui si desidera connettersi e quindi fare clic su **OK**.
 
@@ -113,10 +113,10 @@ Il set di dati appena creato è disponibile nella finestra **origini dati** . A 
 
 - Aprire l'origine dati in **Progettazione DataSet** per aggiungere o modificare gli oggetti che costituiscono il set di dati.
 
-- Aggiungere la logica di convalida all'evento <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> delle tabelle dati nel DataSet. vedere [convalidare i dati nei set](../data-tools/validate-data-in-datasets.md)di dati.
+- Aggiungere la logica di convalida <xref:System.Data.DataTable.ColumnChanging> all' <xref:System.Data.DataTable.RowChanging> evento o delle tabelle dati nel DataSet (vedere [convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiungere connessioni](../data-tools/add-new-connections.md)
 - [Panoramica di data binding WPF](/dotnet/framework/wpf/data/data-binding-overview)
-- [Data binding in Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms)
+- [Windows Forms data binding](/dotnet/framework/winforms/data-binding-and-windows-forms)

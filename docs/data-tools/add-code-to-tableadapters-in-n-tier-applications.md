@@ -1,7 +1,7 @@
 ---
 title: Aggiungere il codice nei TableAdapter di applicazioni a più livelli
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5d240726030a3a08d184b3015f56f65d9168e9f
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ea451ac60de971677ee2f7910b28b334c67dff3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113326"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283099"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Aggiungere il codice nei TableAdapter di applicazioni a più livelli
 È possibile estendere la funzionalità di un TableAdapter creando un file di classe parziale per il TableAdapter e aggiungendovi codice, anziché aggiungere codice al file *DataSetName. DataSet. designer* . Le classi parziali consentono di dividere il codice per una classe specifica tra più file fisici. Per ulteriori informazioni, vedere [partial](/dotnet/visual-basic/language-reference/modifiers/partial) o [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -32,7 +32,7 @@ Per impostazione predefinita, dopo aver separato il set di dati e il codice Tabl
 > Quando si separano i dataset e gli oggetti TableAdapter (impostando la proprietà **Progetto DataSet**), le classi parziali del dataset presenti nel progetto non vengono spostate automaticamente. Le classi di set di dati parziali esistenti devono essere spostate manualmente nel progetto DataSet.
 
 > [!NOTE]
-> Il set di dati fornisce funzionalità per la generazione di <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> gestori eventi quando è necessaria la convalida. Per altre informazioni, vedere [aggiungere la convalida a un set di dati a più livelli](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Il set di dati fornisce funzionalità per la generazione <xref:System.Data.DataTable.ColumnChanging> e i <xref:System.Data.DataTable.RowChanging> gestori di eventi quando è necessaria la convalida. Per altre informazioni, vedere [aggiungere la convalida a un set di dati a più livelli](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,7 +48,7 @@ Per impostazione predefinita, dopo aver separato il set di dati e il codice Tabl
 
 4. Aggiungere codice all'interno della dichiarazione di classe parziale.
 
-5. Nell'esempio seguente viene illustrato dove aggiungere il codice al `CustomersTableAdapter` nel `NorthwindDataSet`:
+5. Nell'esempio seguente viene illustrato come aggiungere codice a `CustomersTableAdapter` in `NorthwindDataSet` :
 
     ```vb
     Partial Public Class CustomersTableAdapter
@@ -65,7 +65,7 @@ Per impostazione predefinita, dopo aver separato il set di dati e il codice Tabl
     }
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md)
 - [Aggiungere il codice nei set di dati di applicazioni a più livelli](../data-tools/add-code-to-datasets-in-n-tier-applications.md)

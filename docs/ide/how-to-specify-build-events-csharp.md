@@ -2,7 +2,7 @@
 title: 'Procedura: Specificare gli eventi di compilazione (C#)'
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 134a5b7cd4bb0ffc9c00a41df12ed196dd2a9212
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e1a3083b59ad0cec727f753395768a214ff571b7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115129"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283996"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: Specificare gli eventi di compilazione (C#)
 
@@ -72,7 +72,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 1. Creare un nuovo progetto **App console** per il comando. Assegnare al progetto il nome **ChangeOSVersionCS**.
 
-2. In *Program.cs*, aggiungere la `using` riga seguente alle altre direttive all'inizio del file:
+2. In *Program.cs*aggiungere la riga seguente alle altre `using` direttive all'inizio del file:
 
    ```csharp
    using System.Xml;
@@ -174,9 +174,9 @@ Richiamare quindi questo comando in un evento di post-compilazione per modificar
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Pagina Eventi di compilazione, Creazione progetti (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
-- [Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Pagina eventi di compilazione, Progettazione progetti (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
+- [Finestra di dialogo riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)

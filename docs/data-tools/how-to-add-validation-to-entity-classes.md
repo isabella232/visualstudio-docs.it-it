@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Aggiungere la convalida a classi di entità'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ccd83662700794e60572eed923d10452595d726
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586562"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282345"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: Aggiungere la convalida a classi di entità
 La *convalida* delle classi di entità rappresenta il processo mediante cui si conferma che i valori immessi negli oggetti dati sono conformi ai vincoli presenti nello schema di un oggetto e alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.
@@ -62,7 +62,7 @@ In questa procedura viene mostrato come convalidare i dati quando viene modifica
 
     Per i progetti C#:
 
-    Poiché C# i progetti non generano automaticamente i gestori eventi, è possibile utilizzare IntelliSense per creare i metodi parziali per la modifica delle colonne. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di modifica delle colonne relativo alla colonna per cui si desidera aggiungere la convalida. Il codice seguente è simile al codice generato quando si seleziona un metodo parziale per la modifica delle colonne:
+    Poiché i progetti C# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare i metodi parziali per la modifica delle colonne. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di modifica delle colonne relativo alla colonna per cui si desidera aggiungere la convalida. Il codice seguente è simile al codice generato quando si seleziona un metodo parziale per la modifica delle colonne:
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -106,7 +106,7 @@ Oltre a controllare i valori durante le modifiche, è anche possibile convalidar
 
     Per i progetti C#:
 
-    Poiché C# i progetti non generano automaticamente i gestori eventi, è possibile utilizzare IntelliSense per creare il metodo di `UpdateCLASSNAME` parziale. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento per la classe in cui si desidera aggiungere la convalida. Il codice seguente è simile al codice generato quando si seleziona un `UpdateCLASSNAME` metodo parziale:
+    Poiché i progetti C# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare il `UpdateCLASSNAME` metodo parziale. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento per la classe in cui si desidera aggiungere la convalida. Il codice seguente è simile al codice generato quando si seleziona un `UpdateCLASSNAME` metodo parziale:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)
@@ -119,7 +119,7 @@ Oltre a controllare i valori durante le modifiche, è anche possibile convalidar
     }
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Convalida dei dati](../data-tools/validate-data-in-datasets.md)

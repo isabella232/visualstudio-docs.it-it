@@ -1,7 +1,7 @@
 ---
 title: Usare l'indice di Help Viewer
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f80b0d63bc7e7fdb89f69607e4529e18f26cc30
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825937"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284958"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Trovare argomenti tramite l'indice del visualizzatore della Guida
 
@@ -45,7 +45,7 @@ Nella scheda **Indice** eseguire una delle due attività seguenti:
 
 Usare l'indice è semplice, ma conoscere il modo migliore per immettere le parole chiave può rendere più efficaci le ricerche nell'indice.
 
-### <a name="general-guidelines"></a>Indicazioni generali
+### <a name="general-guidelines"></a>Linee guida generali
 
 - Scorrere le voci dell'indice. Non tutti gli argomenti sono indicizzati nello stesso modo e quello che può essere più utile potrebbe essere elencato più in alto o più in basso di quanto ci si aspetterebbe.
 
@@ -77,8 +77,8 @@ Se non si trova una voce per la parola o la frase immessa, provare a eseguire le
 
     Se ad esempio si è immesso il termine "compilazione", provare invece "creazione".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Procedura: Trovare argomenti nel sommario](../help-viewer/find-topics-toc.md)
+- [Procedura: trovare argomenti nel sommario](../help-viewer/find-topics-toc.md)
 - [Procedura: Eseguire la ricerca di argomenti](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

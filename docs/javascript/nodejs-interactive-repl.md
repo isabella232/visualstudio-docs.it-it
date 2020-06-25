@@ -2,7 +2,7 @@
 title: Usare il ciclo Read-Eval-Print Node.js
 description: Visual Studio offre supporto per l'interazione con il runtime Node.js
 ms.date: 12/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62840666"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285004"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Usare la finestra interattiva Node.js
 
@@ -28,7 +28,7 @@ Per aprire la finestra interattiva, fare clic con il pulsante destro del mouse s
 
 ![Finestra interattiva Node.js nel menu di scelta rapida Progetto](../javascript/media/interactivewindow-open-from-project.png)
 
-I tasti di scelta rapida predefiniti per aprire la finestra interattiva Node.js sono **[CTRL]- K, N**. In alternativa, è possibile aprire la finestra dalla barra degli strumenti scegliendo **Visualizza** > **finestra interattiva Node.js**di**Windows** > .
+I tasti di scelta rapida predefiniti per aprire la finestra Node.js interattiva sono **[CTRL] + K, N**. In alternativa, è possibile aprire la finestra dalla barra degli strumenti scegliendo **Visualizza**  >  **finestre**  >  **Node.js finestra interattiva**.
 
 ## <a name="use-the-repl"></a>Usare REPL
 

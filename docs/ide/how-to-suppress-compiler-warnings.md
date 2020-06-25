@@ -2,22 +2,22 @@
 title: Eliminare gli avvisi del compilatore per progetti e pacchetti NuGet
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114503"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283957"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: Non visualizzare gli avvisi del compilatore
 
-È possibile snellire un log di compilazione escludendo uno o più tipi di avvisi del compilatore. Ad esempio, è possibile esaminare solo parte dell'output generato quando si imposta il livello di dettaglio del log di compilazione su **Normale**, **Dettagliato**o **Diagnostica**. Per altre informazioni sul livello di dettaglio, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).
+È possibile snellire un log di compilazione escludendo uno o più tipi di avvisi del compilatore. Ad esempio, potrebbe essere necessario esaminare solo parte dell'output generato quando si imposta il livello di dettaglio del log di compilazione su **normale**, **dettagliato**o **diagnostico**. Per altre informazioni sul livello di dettaglio, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Non visualizzare avvisi specifici per Visual C# o F\#
 
@@ -25,7 +25,7 @@ Usare la pagina delle proprietà **Compila** per escludere avvisi specifici per 
 
 1. In **Esplora soluzioni** scegliere il progetto in cui non devono essere visualizzati gli avvisi.
 
-1. Nella barra dei menu scegliere **Visualizza** > **pagine delle proprietà.**
+1. Sulla barra dei menu scegliere **Visualizza**  >  **pagine delle proprietà**.
 
 1. Scegliere la scheda **Compila**.
 
@@ -33,13 +33,13 @@ Usare la pagina delle proprietà **Compila** per escludere avvisi specifici per 
 
 1. Ricompilare la soluzione.
 
-## <a name="suppress-specific-warnings-for-c"></a>Eliminazione di avvisi specifici per C
+## <a name="suppress-specific-warnings-for-c"></a>Non visualizzare avvisi specifici per C++
 
 Usare la pagina delle proprietà **Proprietà di configurazione** per escludere avvisi specifici per i progetti C++.
 
 1. In **Esplora soluzioni** scegliere il progetto o il file di origine in cui non devono essere visualizzati gli avvisi.
 
-1. Nella barra dei menu scegliere **Visualizza** > **pagine delle proprietà.**
+1. Sulla barra dei menu scegliere **Visualizza**  >  **pagine delle proprietà**.
 
 1. Scegliere la categoria **Proprietà di configurazione**, selezionare la categoria **C/C++** e scegliere la pagina **Avanzate**.
 
@@ -61,9 +61,9 @@ Questo esempio mostra come modificare il file *vbproj* per escludere avvisi spec
 
 1. In **Esplora soluzioni** scegliere il progetto in cui non devono essere visualizzati gli avvisi.
 
-1. Nella barra dei menu scegliere **Progetto** > **Scarica progetto**.
+1. Sulla barra dei menu scegliere **progetto**  >  **Scarica**progetto.
 
-1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e quindi scegliere **Modifica\<NomeProgetto>.vbproj**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e quindi scegliere **Modifica\<ProjectName>vbproj**.
 
     Il file di progetto XML verrà aperto nell'editor del codice.
 
@@ -104,9 +104,9 @@ Questo esempio mostra come modificare il file *vbproj* per escludere avvisi spec
 
 1. Salvare le modifiche apportate al file con estensione *vbproj*.
 
-1. Nella barra dei menu scegliere **Carica** > **progetto**.
+1. Sulla barra dei menu scegliere **progetto**  >  **ricarica**progetto.
 
-1. Nella barra dei menu scegliere **Compila** > **soluzione di compilazione**.
+1. Sulla barra dei menu scegliere **Compila**  >  **Ricompila soluzione**.
 
     Nella finestra **Output** gli avvisi specificati non saranno più visualizzati.
 
@@ -130,8 +130,8 @@ In alcuni casi, può essere necessario escludere gli avvisi del compilatore NuGe
 
    L'avviso scompare da **Esplora soluzioni** e dall'**Elenco errori**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Procedura dettagliata: compilare un'applicazioneWalkthrough: Build an application](../ide/walkthrough-building-an-application.md)
+- [Procedura dettagliata: Creare un'applicazione](../ide/walkthrough-building-an-application.md)
 - [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)

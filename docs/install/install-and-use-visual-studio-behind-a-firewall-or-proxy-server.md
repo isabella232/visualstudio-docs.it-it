@@ -1,7 +1,7 @@
 ---
 title: Installare e usare prodotti protetti da un firewall o un server proxy
 description: Verificare gli URL di dominio, le porte e i protocolli da aggiungere a un elenco di elementi consentiti o da aprire se l'organizzazione usa un firewall o un server proxy
-ms.date: 05/13/2020
+ms.date: 06/17/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c1a1fd706ce64b9b39954142664e0799b6251c56
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180441"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283476"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -89,11 +89,11 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 
 Per assicurarsi di avere accesso a tutti gli elementi desiderati quando si usano Visual Studio o i servizi di Azure protetti da un firewall o un server proxy, di seguito sono riportati gli URL che è necessario aggiungere a un elenco Consenti e le porte e i protocolli che è possibile aprire.
 
-| Servizio o scenario | Endpoint DNS | Protocollo<br/>/Port | Descrizione |
+| Servizio o scenario | Endpoint DNS | Protocollo<br/>/Port | Description |
 | - | - | -: | - | - |
 | URL<br>resolution | go.microsoft.com<br><br>aka.ms | | Usato per abbreviare gli URL, risolti quindi in URL più lunghi |
 | Pagina iniziale | vsstartpage.blob.core.windows.net | 443 | Usato per visualizzare le Novità per gli sviluppatori nella pagina iniziale (solo Visual Studio 2017) |
-| Servizio di<br> Notifica <br>Servizio | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Usato per filtrare un elenco globale delle notifiche in un elenco applicabile solo a specifici tipi di computer/scenari di utilizzo |
+| Assegnato<br> Notification <br>Servizio | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Usato per filtrare un elenco globale delle notifiche in un elenco applicabile solo a specifici tipi di computer/scenari di utilizzo |
 | Estensione <br>per le estensioni | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | 443 | Usato per fornire notifiche quando è disponibile un aggiornamento per un'estensione installata <br><br> Usato come posizione di accesso |
 | Integrazione di <br>Integrazione | az861674.vo.msecnd.net | 443<br> | Usato per configurare nuovi progetti per l'invio di dati di utilizzo all'account registrato di Application Insights |
 | CodeLens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Usato per fornire informazioni nell'editor sull'ultimo aggiornamento di un file, la sequenza temporale delle modifiche, gli elementi di lavoro a cui sono associate le modifiche, gli autori e altro |
@@ -103,13 +103,13 @@ Per assicurarsi di avere accesso a tutti gli elementi desiderati quando si usano
 | Strumenti di Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Usato per gli scenari dello store di app per Windows |
 | Schema JSON <br>Individuazione <br><br>Schema JSON <br>Definizione<br><br>Schema JSON <br>Il supporto per <br>Risorse di Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Usato per individuare e scaricare gli schemi JSON che l'utente può usare durante la modifica di documenti JSON <br><br>Usato per ottenere lo schema di convalida dei metadati per JSON<br><br>Usato per ottenere lo schema corrente per i modelli di distribuzione di Azure Resource Manager |
 | Pacchetto NPM <br>individuazione | Skimdb.npmjs.com <br><br>Registry.npmjs.org <br><br>Api.npms.io | https/443<br><br>& http/80<br> https/443<br>https/443 | Necessario per la ricerca di pacchetti NPM e usato per l'installazione di pacchetti di script sul lato client nei progetti Web |
-| Ricerca di pacchetti<br> Icone<br><br>Ricerca di pacchetti <br>cerca | Bower.io <br><br>bowercache.azurewebsites.net <br>go.microsoft.com <br>Registry.bower.io | http/80<br><br>https/443<br>http/80<br>https/443 | Fornisce l'icona predefinita per i pacchetti Bower  <br><br>Offre la possibilità di cercare pacchetti Bower |
+| Ricerca di pacchetti<br> Icone<br><br>Ricerca di pacchetti <br>ricerca | Bower.io <br><br>bowercache.azurewebsites.net <br>go.microsoft.com <br>Registry.bower.io | http/80<br><br>https/443<br>http/80<br>https/443 | Fornisce l'icona predefinita per i pacchetti Bower  <br><br>Offre la possibilità di cercare pacchetti Bower |
 | NuGet<br><br>Pacchetto NuGet<br> individuazione | api.nuget.org <br>www.nuget.org <br>nuget.org <br>azuresearch-usnc.nuget.org <br>azuresearch-ussc.nuget.org <br>licenses.nuget.org <br>nuget.cdn.azure.cn <br>azuresearch-ea.nuget.org <br>azuresearch-sea.nuget.org <br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https/443<br><br>& http/80<br>https/443<br> | Usato per verificare i pacchetti NuGet firmati.<br><br>Richiesto per la ricerca pacchetti e versioni NuGet |
 | Informazioni sul repository GitHub | api.github.com | https/443 | Necessario per ottenere informazioni aggiuntive sui pacchetti Bower |
 | Linter Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http/80 | |
 | Cookiecutter<br>Individuazione di modelli<br>individuazione <br><br>Cookiecutter <br>Creazione di progetti<br> di Explorer | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https/443<br> | Usato per individuare modelli online dal feed consigliato e dai repository GitHub <br><br>Usato per creare un progetto da un modello di Cookiecutter che richiede un'unica installazione su richiesta di un pacchetto di Python Cookiecutter dall'indice dei pacchetti di Python (PyPI) |
 | Pacchetto Python <br>individuazione<br><br>Pacchetto Python <br>management<br><br>Nuovo <br>Python <br> project <br>Modelli | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Offre la possibilità di cercare pacchetti pip<br><br>Usato per installare automaticamente pip, se mancante <br><br>Usato per trovare la corrispondenza tra i nuovi modelli di progetto Python seguenti e gli URL di modelli di Cookiecutter:<br> - Progetto Classificatore<br>- Progetto Clustering <br> - Progetto Regressione <br> - PyGame con PyKinect <br> - Progetto Pyvot |
-| Componente aggiuntivo <br>componente aggiuntivo <br> manifesto <br>Verifica <br>Servizio | verificationservice.osi.office.net | https/443 | Usato per convalidare i manifesti per i componenti aggiuntivi Web di Office |
+| Componente aggiuntivo <br>componente aggiuntivo <br> Manifesto <br>Verifica <br>Servizio | verificationservice.osi.office.net | https/443 | Usato per convalidare i manifesti per i componenti aggiuntivi Web di Office |
 | Componenti aggiuntivi di <br>Componenti aggiuntivi per Office | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https/443 | Usato per pubblicare e testare i componenti aggiuntivi di SharePoint e Office in SharePoint Online e Office 365 |
 | Host del servizio <br>di test di<br> Host | | http/12292 | Regola del firewall che viene creata automaticamente per il test di componenti aggiuntivi di SharePoint con i flussi di lavoro |
 | Statistiche di affidabilità <br>raccolte automaticamente <br>e altri programmi <br>Analisi utilizzo <br>software (CEIP)<br> per Azure SDK e <br>per gli strumenti SQL <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | Usato per inviare le statistiche di affidabilità (dati su arresti anomali/blocchi) dall'utente a Microsoft. I dump effettivi di arresto anomalo/blocco verranno ancora caricati se è abilitata la Segnalazione errori Windows. Verranno omesse solo le informazioni statistiche. <br>Usato per individuare i modelli di utilizzo anonimo per l'estensione Azure Tools SDK per Visual Studio e per i modelli di utilizzo per gli strumenti SQL per Visual Studio |
@@ -129,6 +129,8 @@ Per assicurarsi di avere accesso a tutti gli elementi desiderati quando si usano
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https/443 | Usato per compilare, inviare, visualizzare, diagnosticare ed eseguire il debug di processi; usato per visualizzare file ADLS; usato per caricare e scaricare file |
 | Servizio di creazione di pacchetti | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https/443 | I \* . npmjs.org, \* . NuGet.org e \* . NodeJS.org sono necessari solo per determinati scenari di attività di compilazione (ad esempio, programma di installazione dello strumento NuGet, programma di installazione dello strumento del nodo) o se si prevede di usare upstream pubblico con i feed. Gli altri tre domini sono necessari per la funzionalità core del servizio Creazione pacchetto. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | Usato per la connessione con Azure DevOps Services |
+| Bus di servizio di Azure | \*.servicebus.windows.net | ampq/5671 e 5672, </br> SBMP/9350-9354, </br> http/80, </br> https/443 | Consente di creare code, argomenti e sottoscrizioni. </br> Usato anche per inviare/ricevere messaggi da e verso code e argomenti del bus di servizio. |
+| Azure Cosmos DB | \*. documents.azure.com | https/443 | Utilizzato per chiamare le API principali del database di documenti. |
 | Community degli sviluppatori | sendvsfeedback2.azurewebsites.net/api | https/443 | Usato per chiamare le API dello strumento per il feedback della community degli sviluppatori (problemi personali, ricerca, voto, commenti, invio, caricamento e ripresa) |
 | Intellicode | \*. intellicode.vsengsaas.visualstudio.com | https/443 | Usato per chiamare le API di Intellicode |
 | Live Share | \*. liveshare.vsengsaas.visualstudio.com| https/443 | Usato per chiamare le API di Live Share |
@@ -145,7 +147,7 @@ Per assicurarsi di avere accesso a tutti gli elementi desiderati quando si usano
 
 In alcuni casi, è possibile che si riscontrino problemi correlati alla rete o al proxy quando si installa o si usa Visual Studio protetto da un firewall o un server proxy. Per altre informazioni sulle soluzioni per questo tipo di messaggi di errore, vedere la pagina [Troubleshooting network-related errors when you install or use Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md) (Risoluzione dei problemi correlati alla rete quando si installa o usa Visual Studio).
 
-## <a name="get-support"></a>Supporto
+## <a name="get-support"></a>Ottenere supporto
 
 È disponibile un'opzione di supporto per la [**chat di installazione**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in inglese) per i problemi relativi all'installazione.
 
@@ -155,7 +157,7 @@ Ecco alcune altre opzioni di supporto:
 * Suggerire una funzionalità, tenere traccia dei problemi del prodotto e trovare risposte in [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
 * Usare l'account [GitHub](https://github.com/) per comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Requisiti di connettività per Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Creare un'installazione di rete di Visual Studio](create-a-network-installation-of-visual-studio.md)

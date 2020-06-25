@@ -2,7 +2,7 @@
 title: "Procedura: modificare la directory dell'output compilato"
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37342796f2dd94138136bb837cf6007d19d350c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4c2f2445bc7139c5bbc80a35905e24c319c9dfa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114259"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284646"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procedura: modificare la directory dell'output compilato
 
@@ -45,7 +45,7 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
    ![Proprietà Percorso di output per un progetto Visual Studio C#](media/output-path.png)
    
    > [!NOTE]
-   > Alcuni progetti includono per impostazione predefinita framework e runtime nel percorso di compilazione. Per modificare questa impostazione, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni,** scegliere **Modifica file**di progetto e aggiungere quanto segue:
+   > In alcuni progetti, per impostazione predefinita, il Framework e il runtime vengono inclusi nel percorso di compilazione. Per modificare questa operazione, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, scegliere **modifica file di progetto**e aggiungere quanto segue:
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -58,8 +58,8 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
 >
 > ![Selezione della configurazione della build in Visual Studio 2019](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Pagina Compilazione, Progettazione progetti (c'è)Build page, Project Designer (C](../ide/reference/build-page-project-designer-csharp.md)
-- [Pagina delle proprietà Generale (progetto)General Property page (project)](/cpp/build/reference/general-property-page-project)
+- [Pagina Compila, Progettazione progetti (C#)](../ide/reference/build-page-project-designer-csharp.md)
+- [Pagina delle proprietà generale (progetto)](/cpp/build/reference/general-property-page-project)
 - [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)

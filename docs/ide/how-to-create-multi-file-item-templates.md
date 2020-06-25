@@ -1,7 +1,7 @@
 ---
 title: Creazione di modelli di elemento a più file
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593733"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284425"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedura: Creare modelli di elementi a più file
 
@@ -36,7 +36,7 @@ Per i modelli di elementi a più file è necessario specificare i parametri per 
 
 1. Creare il modello di elemento come se si creasse manualmente un modello di elemento a file singolo, ma includere ogni file che costituisce l'elemento a più file.
 
-1. Nel file XML *.vstemplate* `ProjectItem` aggiungere un elemento per ogni `TargetFileName` singolo file e un attributo a questo elemento. Impostare il `TargetFileName` valore dell'attributo su *$fileinputname. FileExtension*, dove *FileExtension* è l'estensione del file incluso nel modello. Ad esempio:
+1. Nel file XML con *estensione vstemplate* , aggiungere un `ProjectItem` elemento per ogni singolo file e aggiungere un `TargetFileName` attributo a questo elemento. Impostare il valore dell' `TargetFileName` attributo su *$fileinputname $. FileExtension*, dove *FileExtension* è l'estensione del file da includere nel modello. Ad esempio:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -53,15 +53,15 @@ Per i modelli di elementi a più file è necessario specificare i parametri per 
      > [!NOTE]
      > Quando un elemento derivato da questo modello viene aggiunto a un progetto, i nomi dei file deriveranno dal nome immesso dall'utente nella finestra di dialogo **Aggiungi nuovo elemento**.
 
-1. Selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione e **scegliere Invia a** > **cartella compressa (compressa).**
+1. Selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a**  >  **cartella compressa**.
 
-   I file selezionati vengono compressi in un file *.zip.*
+   I file selezionati vengono compressi in un file con *estensione zip* .
 
-1. Copiare il file *con estensione zip* nel percorso del modello di elemento utente. Per impostazione predefinita, la directory è *%USERPROFILE% . \<\>* Per ulteriori informazioni, vedere [Procedura: individuare e organizzare](../ide/how-to-locate-and-organize-project-and-item-templates.md)i modelli .
+1. Copiare il file *zip* nel percorso del modello di elemento dell'utente. Per impostazione predefinita, la directory è *%USERPROFILE%\Documents\Visual Studio \<Version\> \Templates\ItemTemplates*. Per altre informazioni, vedere [procedura: individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Chiudere e riaprire Visual Studio.
 
-1. Creare un nuovo progetto o aprire un progetto esistente, quindi **scegliere** > **Aggiungi nuovo elemento** o premere **CTRL**+**Maiusc**+**A**.
+1. Creare un nuovo progetto o aprire un progetto esistente, quindi scegliere **progetto**  >  **Aggiungi nuovo elemento** o premere **CTRL** + **MAIUSC** + **a**.
 
    Il modello di elemento a più file appare nella finestra di dialogo **Aggiungi nuovo elemento**.
 
@@ -92,9 +92,9 @@ L'esempio seguente illustra un modello di Windows Form. Quando viene creato un e
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Creare modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
-- [Procedura: Creare modelli di elementoHow to: Create item templates](../ide/how-to-create-item-templates.md)
-- [Parametri del modello](../ide/template-parameters.md)
-- [Procedura: sostituire i parametri in un modelloHow to: Substitute parameters in a template](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
+- [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)
+- [Parametri di modelli](../ide/template-parameters.md)
+- [Procedura: sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md)

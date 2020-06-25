@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 696664aa5aa92a3e9a675df4803a3e65e3e81f36
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84185616"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283546"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Come usare Visual Studio con gli account che richiedono l'autenticazione a più fattori
 
@@ -33,7 +33,11 @@ Nella versione 16,6 sono state aggiunte nuove funzionalità a Visual Studio 2019
 > [!WARNING]
 > Il mancato utilizzo di questo flusso di lavoro potrebbe provocare un'esperienza ridotte, ottenendo più richieste di autenticazione aggiuntive durante l'aggiunta o la riautenticazione degli account di Visual Studio. 
 
-### <a name="enabling-system-web-browser"></a>Abilitazione del Web browser di sistema  
+### <a name="enabling-system-web-browser"></a>Abilitazione del Web browser di sistema
+
+> [!NOTE] 
+> Per un'esperienza ottimale, è consigliabile cancellare i dati del Web browser predefiniti del sistema prima di procedere con il flusso di lavoro. Inoltre, se si dispone di account aziendali o dell'Istituto di istruzione nelle impostazioni di Windows 10 in **Accedi all'ufficio o all'Istituto di istruzione**, verificare che siano autenticati correttamente.
+
 Per abilitare questo flusso di lavoro, passare alla finestra di dialogo Opzioni di Visual Studio **(strumenti > opzioni...)**, selezionare la scheda **account** e selezionare **sistema Web browser** sotto l'elenco **a discesa Aggiungi e riautenticare gli account con:** . 
 
 :::image type="content" source="media/select-system-web-browser.png" alt-text="Dal menu selezionare System Web browser.":::
@@ -43,20 +47,22 @@ Quando il flusso di lavoro del browser Web di sistema è abilitato, è possibile
 </br>
 :::image type="content" source="media/add-personalization-account.png" alt-text="Aggiungere un nuovo account di personalizzazione a Visual Studio." border="false":::
 
-Questa azione consente di aprire il Web browser predefinito del sistema, di richiedere l'accesso all'account e di convalidare i criteri di autenticazione a più fattori richiesti. 
+Questa azione consente di aprire il Web browser predefinito del sistema, di richiedere l'accesso all'account e di convalidare i criteri di autenticazione a più fattori richiesti.
+
+In base alle attività di sviluppo e alla configurazione delle risorse, è possibile che venga richiesto di immettere nuovamente le credenziali durante la sessione. Questo problema può verificarsi quando si aggiunge una nuova risorsa o si prova ad accedere a una risorsa senza che in precedenza siano stati soddisfatti i requisiti di autorizzazione CA/AMF.
 
 > [!NOTE] 
-> Per un'esperienza ottimale, è possibile lasciare il browser aperto nell'intero processo, perché la chiusura del browser potrebbe attivare richieste di autorizzazione aggiuntive. 
+> Per un'esperienza ottimale, è possibile lasciare il browser aperto fino a quando non vengono convalidati tutti i criteri CA/multi-factor authentication per le risorse. La chiusura del browser può comportare la perdita dello stato di autenticazione a più fattori compilato in precedenza e potrebbe richiedere richieste di autorizzazione aggiuntive.
 
 ## <a name="reauthenticating-an-account"></a>Riautenticazione di un account  
 Se si verifica un problema con l'account, Visual Studio potrebbe richiedere di immettere nuovamente le credenziali dell'account.  
 
 :::image type="content" source="media/reauthenticate-account.png" alt-text="Riautenticare l'account di Visual Studio.":::
 
-Facendo clic su **reimmettere le credenziali** si aprirà il Web browser predefinito del sistema e si tenterà di aggiornare automaticamente le credenziali. In caso di esito negativo, verrà richiesto di accedere al proprio account e di convalidare i criteri di autenticazione a più fattori richiesti. 
+Facendo clic su **reimmettere le credenziali** si aprirà il Web browser predefinito del sistema e si tenterà di aggiornare automaticamente le credenziali. In caso di esito negativo, verrà richiesto di accedere al proprio account e di convalidare i criteri di autorità di certificazione/autenticazione richiesti.
 
 > [!NOTE] 
-> Il browser può essere aperto nell'intero processo per la migliore esperienza, perché la chiusura del browser potrebbe attivare richieste di autorizzazione aggiuntive. 
+> Per un'esperienza ottimale, è possibile lasciare il browser aperto fino a quando non vengono convalidati tutti i criteri CA/multi-factor authentication per le risorse. La chiusura del browser può comportare la perdita dello stato di autenticazione a più fattori compilato in precedenza e potrebbe richiedere richieste di autorizzazione aggiuntive.
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>Come rifiutare esplicitamente l'uso di un tenant di Azure Active Directory specifico in Visual Studio
 
@@ -75,7 +81,7 @@ Verrà visualizzata la finestra di dialogo **filtro account** , che consente di 
 
 :::image type="content" source="media/select-filter-account.png" alt-text="Selezionare l'account da filtrare.":::
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accedi a Visual Studio](signing-in-to-visual-studio.md)
 - [Accesso a Visual Studio per Mac](/visualstudio/mac/signing-in)

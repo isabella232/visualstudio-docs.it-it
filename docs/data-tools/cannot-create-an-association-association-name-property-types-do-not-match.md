@@ -1,23 +1,23 @@
 ---
 title: Impossibile creare un'associazione. Le proprietà non hanno tipi corrispondenti
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d7b2e0d777f0d499ca6fbf76b52aa028c940b2df
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f01f14855b7f70243228a66d73244173427217e8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648698"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282774"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossibile creare un'associazione &lt;nome associazione&gt;. Le proprietà non hanno tipi corrispondenti
 
-Impossibile creare un'associazione \<nome associazione>. Le proprietà non hanno tipi corrispondenti. Le proprietà non hanno tipi corrispondenti: \<nomi proprietà>.
+Impossibile creare un'associazione \<association name> . i tipi di proprietà non corrispondono. Le proprietà non hanno tipi corrispondenti: \<property names> .
 
 Le associazioni vengono definite dalle **Proprietà associazione** selezionate nella finestra di dialogo **Editor di associazione**. Le proprietà di ciascun lato dell'associazione devono presentare lo stesso tipo di dati.
 
@@ -33,7 +33,7 @@ Quelle elencate nel messaggio non presentano gli stessi tipi di dati.
 
 4. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Procedura: creare un'associazione tra classi di LINQ to SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
