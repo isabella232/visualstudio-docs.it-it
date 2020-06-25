@@ -1,7 +1,7 @@
 ---
 title: Funzione CvReleaseProvider | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvReleaseProvider
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0008b7476290558c098b2241fde5c9b209933a0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0347d3e2345defb13a67e0e0d730e010be618a21
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62974046"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332186"
 ---
 # <a name="cvreleaseprovider-function"></a>Funzione CvReleaseProvider
 Rilascia un provider di marcatori. Il rilascio del provider di marcatori non influisce sulle serie di marcatori del provider create in precedenza. Le serie di marcatori devono essere rilasciate separatamente dalla chiamata CvReleaseMarkerSeries. Il mancato rilascio del provider di marcatori causa una perdita di memoria.
@@ -39,5 +39,5 @@ HRESULT CvReleaseProvider(
 ## <a name="requirements"></a>Requisiti
  **Intestazione:** *cvmarkers.h*
 
-## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sulla libreria in C](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Vedi anche
+- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

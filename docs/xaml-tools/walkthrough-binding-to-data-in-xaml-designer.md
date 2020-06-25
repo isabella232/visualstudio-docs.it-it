@@ -1,7 +1,7 @@
 ---
 title: Eseguire il binding ai dati nella finestra di progettazione XAML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 dev_langs:
@@ -10,12 +10,12 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1abe14c443432d0da0ab0c53b33f9321034228be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f57d4f24348ff805669832ce6db9e8e4e79e4569
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592931"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330745"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
 
@@ -81,7 +81,7 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
      ![Finestra di dialogo Seleziona oggetto](../designers/media/blendselectobject.png)
 
-1. Nella **casella degli strumenti`TextBlock` scegliere un controllo**  e aggiungerlo al modulo.
+1. Nella **casella degli strumenti`TextBlock` scegliere un controllo ** e aggiungerlo al modulo.
 
 1. Dopo aver selezionato il controllo `TextBlock`, scegliere il marcatore della proprietà a destra della proprietà **Text** e scegliere **Crea associazione dati**. Tale marcatore ha l'aspetto di una piccola casella.
 
@@ -95,7 +95,7 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
      Il controllo `TextBlock` dovrebbe visualizzare il valore predefinito 0 come testo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare un'interfaccia utente tramite la finestra di progettazione XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 - [Finestra di dialogo Aggiungi convertitore di valori](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -1,7 +1,7 @@
 ---
-title: "Riga di comando del profiler: intervallo dei dettagli dei dati per l'app autonoma"
+title: Riga di comando del profiler-dettagli dei dati di temporizzazione per un'app autonoma
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling tools,instrumentation method
 - instrumentation profiling method
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c0fae312b5c193774d9acf8934a0688b2ed69e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779610"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331831"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Raccogliere dati di intervallo dettagliati per un'applicazione autonoma tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettagliati sulle prestazioni per i componenti client autonomi tramite il metodo di strumentazione dalla riga di comando.
@@ -26,9 +26,9 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettag
 
 |Attività|Contenuti correlati|
 |----------|---------------------|
-|**Sottoporre a profilatura un'applicazione .NET Framework tramite la strumentazione**|-   [Procedura: instrumentare un componente .NET e raccogliere dati di intervallo dettagliatiHow to: Instrument a .NET component and collect detailed timing data](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
-|**Sottoporre a profilatura un'applicazione C/C++ tramite la strumentazione**|-   [Procedura: instrumentare un componente nativo e raccogliere dati di intervallo dettagliatiHow to: Instrument a native component and collect detailed timing data](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|
-|**Aggiungere dati di interazione tra livelli**|-   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**Sottoporre a profilatura un'applicazione .NET Framework tramite la strumentazione**|-   [Procedura: instrumentare un componente .NET e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
+|**Sottoporre a profilatura un'applicazione C/C++ tramite la strumentazione**|-   [Procedura: instrumentare un componente nativo e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|
+|**Aggiungere dati di interazione tra livelli**|-   [Raccolta dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Attività correlate
 
@@ -38,7 +38,7 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettag
 |----------|---------------------|
 |**Sottoporre a profilatura applicazioni tramite campionamento**|-   [Raccogliere statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**Sottoporre a profilatura l'allocazione di memoria .NET e la garbage collection**|-   [Raccogliere dati di memoria di .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
-|**Sottoporre a profilatura i conflitti di risorse e le attività dei thread**|-   [Raccogliere dati di concorrenzaCollect concurrency data](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+|**Sottoporre a profilatura i conflitti di risorse e le attività dei thread**|-   [Raccogli dati di concorrenza](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 
 ### <a name="profile-by-using-the-instrumentation-method"></a>Profilare usando il metodo di strumentazione
 
@@ -51,4 +51,4 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettag
 - [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)
 
 ## <a name="reference"></a>Informazioni di riferimento
-- [Informazioni di riferimento sulle strumenti di profilatura della riga di comandoCommand-line profiling tools reference](../profiling/command-line-profiling-tools-reference.md)
+- [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)

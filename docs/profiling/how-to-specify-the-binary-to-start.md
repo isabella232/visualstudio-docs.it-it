@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Specificare il file binario da avviare | Microsoft Docs'
+title: 'Procedura: specificare il file binario da avviare | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.itemlaunch
 helpviewer_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7f7cfd0d7a578d2ddaff28e9821f1d190bb2e10d
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778687"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331450"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Procedura: Specificare l'avvio del file binario
 
-Per profilare i file binari, ad esempio le DLL, è necessario immettere le informazioni nella ** \<** finestra di dialogo Pagine delle proprietà di> di destinazione. Queste informazioni indicano dove il progetto DLL può trovare l'applicazione chiamante.
+Per profilare i file binari, ad esempio le dll, è necessario immettere le informazioni nella finestra di dialogo ** \<Target> pagine delle proprietà** . Queste informazioni indicano dove il progetto DLL può trovare l'applicazione chiamante.
 
 1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul file binario di destinazione e quindi scegliere **Proprietà**.
 
@@ -39,6 +39,6 @@ Per profilare i file binari, ad esempio le DLL, è necessario immettere le infor
 
 7. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)

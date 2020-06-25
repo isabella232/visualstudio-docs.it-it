@@ -1,7 +1,7 @@
 ---
 title: Funzione CvWriteMessage | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvWriteMessageW
 - cvmarkers/CvWriteMessageExW
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9fd21c346a61939683ee05e3cb9ef3123cc03d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 66fb584090a0b6483c18f8254eb4a96b6186d51e
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62936660"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332126"
 ---
 # <a name="cvwritemessage-function"></a>Funzione CvWriteMessage
 Scrive un messaggio nel file di traccia del visualizzatore di concorrenza.
@@ -113,5 +113,5 @@ HRESULT CvWriteMessageExVA(
 
  **ANSI:** CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA
 
-## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sulla libreria in C](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Vedi anche
+- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

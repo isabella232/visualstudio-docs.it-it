@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Raccogliere i dati dei contatori Windows | Microsoft Docs'
+title: 'Procedura: raccogliere i dati dei contatori Windows | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.syscounter
 - vs.performance.property.wincounter
@@ -15,16 +15,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c85187fd54d61fdf40956c8aee3c0a222d95a313
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16e29d82d1cee2237886d88a24929b4c794464a5
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776319"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330864"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Procedura: Raccogliere i dati dei contatori Windows
 
-I contatori Windows sono contatori di prestazioni del sistema che possono essere raccolti a intervalli prestabiliti durante la profilatura. Nella visualizzazione Contrassegni del rapporto degli strumenti di profilatura è presente una riga con etichetta **AutoMark** per ogni intervallo della raccolta. La riga contiene colonne che descrivono i valori dei contatori di prestazioni inclusi nell'intervallo specificato. Per limitare l'analisi a un periodo di tempo tra due contrassegni particolari, selezionare i contrassegni, fare clic con il pulsante destro del mouse, quindi scegliere **Filtra** > **per contrassegni** dal menu di scelta rapida.
+I contatori Windows sono contatori di prestazioni del sistema che possono essere raccolti a intervalli prestabiliti durante la profilatura. Nella visualizzazione Contrassegni del rapporto degli strumenti di profilatura è presente una riga con etichetta **AutoMark** per ogni intervallo della raccolta. La riga contiene colonne che descrivono i valori dei contatori di prestazioni inclusi nell'intervallo specificato. Per limitare l'analisi a un periodo di tempo compreso tra due contrassegni particolari, selezionare i contrassegni, fare clic con il pulsante destro del mouse e quindi scegliere **Filtra per**  >  **Contrassegni** dal menu di scelta rapida.
 
 > [!NOTE]
 > Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -45,10 +45,10 @@ I contatori Windows sono contatori di prestazioni del sistema che possono essere
 
 7. Selezionare i contatori da usare quando si profila l'applicazione.
 
-8. Fare clic su **Apply** (Applica).
+8. Fare clic su **Applica.**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-Proprietà sessione prestazioni CPU e contatori di WindowsConfigure performance[sessions Performance session properties](../profiling/performance-session-properties.md)
-[CPU and Windows counters](../profiling/cpu-and-windows-counters.md)
+[Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
+ di prestazioni Proprietà della sessione di [prestazioni](../profiling/performance-session-properties.md) 
+ [Contatori CPU e Windows](../profiling/cpu-and-windows-counters.md)

@@ -1,31 +1,31 @@
 ---
 title: Tasti di modifica della tavola da disegno in Blend
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c9035a092854ae5b9d0cfe0fa0ad8f9aab349f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c2659f8f4c90bb7476a5c3a51f8ecb9a2e207029
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593015"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329584"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Tasti di modifica della tavola da disegno in Blend
 Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertanto non è possibile usare l'interfaccia utente [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] per individuarli. La tabella seguente elenca i tasti di scelta rapida che modificano un'azione, ad esempio il ridimensionamento di un oggetto.
 
-|Per|Eseguire questa operazione|
+|Per|Procedere nel modo seguente|
 | - |-------------|
 |Selezionare temporaneamente **Selezione** mentre rimane selezionato uno strumento diverso (ciò consente di ridurre il numero di volte in cui è necessario fare clic su un elemento nel pannello **Strumenti**, passando da **Selezione** ad altri strumenti)|Tenere premuto **CTRL**|
 |Spostare gli oggetti selezionati mentre è selezionato **Selezione**|Premere i tasti freccia|
 |Eseguire una panoramica della tavola da disegno|Tenere premuta la **BARRA SPAZIATRICE** e trascinare la tavola da disegno|
 |Eseguire uno zoom avanti o indietro della tavola da disegno|Ruotare la rotellina del mouse|
-|Ingrandire la tavola da disegno|Tenere premuto **CTRL**+**BARRA SPAZIATRICE** mentre si fa clic in un punto qualsiasi della tavola da disegno|
-|Ridurre la visualizzazione della tavola da disegno|Tenere premuto **CTRL**+**ALT**+**BARRA SPAZIATRICE** mentre si fa clic in un punto qualsiasi della tavola da disegno|
+|Ingrandire la tavola da disegno|Tenere premuto **CTRL** + **barra spaziatrice** facendo clic in un punto qualsiasi della tavola da disegno|
+|Ridurre la visualizzazione della tavola da disegno|Tenere premuto **CTRL** + **ALT** + **barra spaziatrice** facendo clic in un punto qualsiasi della tavola da disegno|
 |Spostare la tavola da disegno verso sinistra e destra|Tenere premuto **MAIUSC** e ruotare la rotellina del mouse|
 |Spostare la tavola da disegno verso l'alto e il basso|Tenere premuto **CTRL** e ruotare la rotellina del mouse|
 |Mantenere le proporzioni degli oggetti disegnati o trasformati|Tenere premuto **MAIUSC**|
@@ -36,11 +36,11 @@ Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertant
 |Selezionare più oggetti adiacenti|Tenere premuto **MAIUSC** e selezionare il primo e l'ultimo oggetto|
 |Selezionare disegnando una cornice intermittente|Tenere premuto **MAIUSC** e trascinare|
 |Selezionare un oggetto sotto un altro oggetto|Tenere premuto **ALT** e fare clic una volta per ogni livello di oggetti|
-|Spostarsi tra i documenti aperti|Premere **CTRL**+**TAB**|
-|Aprire il pannello **Asset**|Premere **CTRL**+**PUNTO**|
+|Spostarsi tra i documenti aperti|Premere **Ctrl**la + **scheda** CTRL|
+|Aprire il pannello **Asset**|Premere **Ctrl**il + **punto** CTRL|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Tasti di scelta rapida](../xaml-tools/keyboard-shortcuts-in-blend.md)
+- [Scelte rapide da tastiera](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [Tasti di modifica strumento Penna](../xaml-tools/pen-tool-modifier-keys-in-blend.md)
 - [Tasti di modifica strumento Selezione diretta](../xaml-tools/direct-selection-tool-modifier-keys-in-blend.md)

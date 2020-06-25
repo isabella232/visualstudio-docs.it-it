@@ -2,7 +2,7 @@
 title: Presentazione delle funzionalità di Blend per Visual Studio
 titleSuffix: ''
 ms.date: 07/31/2019
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2b9f38d83befcf49ecd3de8da3a2cd26ff3ab46
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8348ba38849b76a745a56f941850d6b61a8f433f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301671"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332085"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Panoramica di Blend per Visual Studio
 
@@ -79,7 +79,7 @@ Usare i pulsanti correlati allo storyboard ![Pulsanti dello storyboard in Blend 
 
 Passare il puntatore del mouse su ogni pulsante della finestra per altre informazioni sulle funzionalità disponibili.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Animare oggetti](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [Disegnare forme e tracciati](../xaml-tools/draw-shapes-and-paths.md)

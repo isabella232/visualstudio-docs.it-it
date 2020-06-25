@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Raccogliere i dati di campionamento a livello di riga | Microsoft Docs'
+title: 'Procedura: raccogliere dati di campionamento a livello di riga | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55afe3be6b01e382c82fb41b7a09fa5f84c92365
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776358"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330899"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Procedura: Raccogliere i dati di campionamento a livello di riga
 Il campionamento a livello di riga è una capacità del profiler che consente di determinare il punto del codice di una funzione che richiede un uso intensivo del processore, ad esempio una funzione con esempi esclusivi elevati, in cui il processore impiega la maggior parte del tempo.
@@ -54,8 +54,8 @@ Il campionamento a livello di riga è una capacità del profiler che consente di
 
      - o -
 
-- Quando si avvia un'applicazione, digitare **VSPerfCmd /lineoff \<altri argomenti>**.
+- Quando si avvia un'applicazione, digitare **VSPerfCmd \<other arguments> /LineOff **.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-- [Analizzare i dati degli strumenti di prestazioniAnalyze performance tools data](../profiling/analyzing-performance-tools-data.md)
+- [Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)

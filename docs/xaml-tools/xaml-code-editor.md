@@ -1,21 +1,22 @@
 ---
 title: Editor di codice XAML
+description: Presentazione dell'editor di codice XAML in Visual Studio
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d789ac099e6d0bba7a44f0d6efd7a19beec54c19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290708"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329177"
 ---
 # <a name="xaml-code-editor"></a>Editor di codice XAML
 
-L'editor di codice XAML nell' [IDE di Visual Studio](../get-started/visual-studio-ide.md) include tutti gli strumenti necessari per creare app WPF e UWP per la piattaforma Windows e per [Novell. Forms](/xamarin/xamarin-forms/user-interface/text/editor/). Questo articolo illustra sia il ruolo che l'editor di codice svolge quando si sviluppano app basate su XAML e le funzionalità che sono univoche per l'editor di codice XAML in Visual Studio 2019.
+L'editor di codice XAML nell' [IDE di Visual Studio](../get-started/visual-studio-ide.md) include tutti gli strumenti necessari per creare app WPF e UWP per la piattaforma Windows e per [Novell. Forms](/xamarin/xamarin-forms/user-interface/text/editor/). Questo articolo illustra sia il ruolo che l'editor di codice svolge quando si sviluppano app basate su XAML e le funzionalità univoche per l'editor di codice XAML in Visual Studio 2019.
 
 Per iniziare, esaminiamo l'IDE (Integrated Development Environment) con un progetto WPF aperto. Nell'immagine seguente vengono illustrati molti degli strumenti IDE principali che verranno utilizzati insieme all'editor di codice XAML.
 
@@ -182,7 +183,7 @@ La maggior parte delle funzionalità seguenti sono disponibili a livello univers
 
 I frammenti di codice sono piccoli blocchi di codice riutilizzabile che è possibile inserire in un file di codice usando il comando del menu di scelta rapida per **inserire il frammento** di codice o una combinazione di tasti di scelta rapida (**CTRL** + **K**, **CTRL** + **X**). [IntelliSense](../ide/using-intellisense.md) è stato migliorato in modo da supportare la visualizzazione dei frammenti XAML, che funzionano sia per i frammenti predefiniti sia per eventuali frammenti personalizzati aggiunti manualmente. Alcuni frammenti di codice XAML predefiniti includono,,, `#region` `Column definition` `Row definition` `Setter` e `Tag` .
 
-![Editor di codice XAML con opzioni di #region visualizzate in IntelliSense](media/xaml-code-snippets.png "Screenshot dell'editor del codice XAML con opzioni di #region visualizzate in IntelliSense")
+![Editor del codice XAML con le opzioni dei frammenti di codice XAML visualizzate in IntelliSense](media/xaml-code-snippets.png "Screenshot dell'editor del codice XAML con le opzioni dei frammenti di codice XAML visualizzate in IntelliSense")
 
 Per ulteriori informazioni, vedere i [frammenti di codice](../ide/code-snippets.md) e le pagine dei [frammenti di codice C#](../ide/visual-csharp-code-snippets.md) .
 

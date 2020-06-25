@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Configurare la riduzione del rumore nelle visualizzazioni dei rapporti | Microsoft Docs'
+title: 'Procedura: configurare la riduzione del rumore nelle visualizzazioni report | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.noisereduction.dialog
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2920d2d7f6a77fe8fdbd62a0788f570818390eea
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776332"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330800"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedura: Configurare la riduzione del rumore nelle visualizzazioni dei report
 I rapporti di prestazioni possono essere configurati per la riduzione del rumore limitando la quantità di dati presentati nelle visualizzazioni Albero delle chiamate e Allocazioni. Con la riduzione del rumore, i problemi di prestazioni sono più evidenti. In questo modo è più semplice analizzare i rapporti di prestazioni.
@@ -77,8 +77,8 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
 
 4. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedere anche
-- [Personalizzare le visualizzazioni dei report degli strumenti di prestazioni](../profiling/customizing-performance-tools-report-views.md)
+## <a name="see-also"></a>Vedi anche
+- [Personalizzare le visualizzazioni report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)
 - [Procedura: Escludere o includere funzioni brevi nella strumentazione](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
-- [Visualizzazione Struttura ad albero delle chiamate](../profiling/call-tree-view.md)
+- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)
 - [Visualizzazione allocazioni](../profiling/dotnet-memory-allocations-view.md)

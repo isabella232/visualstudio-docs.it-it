@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Personalizzare colonne delle visualizzazioni dei rapporti | Microsoft Docs'
+title: 'Procedura: personalizzare le colonne della visualizzazione report | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.columnchooser.dialogbox
 helpviewer_keywords:
@@ -14,27 +14,27 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58d2a7b7c83f1260427ff0d805510e08ae35c019
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778973"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329797"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Procedura: Personalizzare le colonne delle visualizzazioni dei report
 Gli strumenti per le prestazioni in Visual Studio Team System Development Edition sono completamente integrati nell'ambiente di sviluppo integrato (IDE) per fornire un'esperienza utente. L'elenco seguente indica le visualizzazioni che possono essere personalizzate aggiungendo, rimuovendo e ridisponendo le colonne:
 
-- [Visualizzazione moduli](../profiling/modules-view.md)
+- [Visualizzazione Moduli](../profiling/modules-view.md)
 
 - [Visualizzazione Funzioni](../profiling/functions-view.md)
 
 - [Visualizzazione Righe](../profiling/lines-view.md)
 
-- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view.md)
+- [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view.md)
 
-- [Visualizzazione Chiamante/Chiamato](../profiling/caller-callee-view.md)
+- [Visualizzazione chiamante/chiamato](../profiling/caller-callee-view.md)
 
-- [Visualizzazione Struttura ad albero delle chiamate](../profiling/call-tree-view.md)
+- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)
 
 - [Visualizzazione allocazioni](../profiling/dotnet-memory-allocations-view.md)
 

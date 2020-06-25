@@ -2,7 +2,7 @@
 title: Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app UWP | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - JavaScript
 helpviewer_keywords:
@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189379"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331420"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.
@@ -40,7 +40,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 
 1. Se si esegue l'app da Visual Studio, nell'elenco **Avvia debug** sulla barra degli strumenti **Standard** scegliere una destinazione di distribuzione come **Computer locale** o **Dispositivo**.
 
-2. Scegliere **Performance Profiler**dal menu **Debug** .
+2. Scegliere **Profiler prestazioni**dal menu **debug** .
 
      Se si vuole modificare la destinazione di analisi per il profiler, scegliere **Modifica destinazione**.
 
@@ -71,16 +71,16 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 ## <a name="isolate-an-issue"></a>Isolare un problema
  Nella seguente sezione vengono descritti i suggerimenti per isolare i problemi di prestazioni. Per una spiegazione dettagliata della procedura di identificazione e risoluzione dei problemi di prestazioni mediante un'app di esempio per la verifica delle prestazioni, vedere [Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente](html-ui-responsiveness.md).
 
-### <a name="isolate-a-ui-responsiveness-problem"></a><a name="Workflow"></a>Isolare un problema di risposta dell'interfaccia utenteIsolate a UI responsiveness problem
+### <a name="isolate-a-ui-responsiveness-problem"></a><a name="Workflow"></a>Isolare un problema di velocità di risposta dell'interfaccia utente
  Questi passaggi forniscono un flusso di lavoro consigliato che può aiutarti a usare il profiler della velocità di risposta dell'interfaccia utente in modo più efficace:
 
 1. Apri l'app in Visual Studio.
 
-2. Esegui i test dell'app per i problemi di velocità di risposta dell'interfaccia utente. (Premere **Ctrl**+**F5** per avviare l'app senza eseguire il debug.)
+2. Esegui i test dell'app per i problemi di velocità di risposta dell'interfaccia utente. (Premere **CTRL** + **F5** per avviare l'app senza debug.)
 
      Se rilevi un problema, continua ad eseguire i test per tentare di restringere l'intervallo di tempo in cui il problema si verifica o per tentare di identificare i trigger che causano il comportamento.
 
-3. Passare a Visual Studio **(premere**+**ALT Tab**) e arrestare l'app (**Shift**+**F5**).
+3. Passa a Visual Studio (premere **ALT** + **Tab**) e arresta l'app (**MAIUSC** + **F5**).
 
 4. Facoltativamente, puoi aggiungere contrassegni utente al codice usando [Contrassegnare il codice per l'analisi](#ProfileMark).
 
@@ -109,7 +109,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 
      Nella figura seguente viene mostrato il grafico dell'utilizzo della CPU con un'area di interesse evidenziata.
 
-     ![Grafico dell'utilizzo della CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
+     ![Grafico di utilizzo della CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
 
 11. Usa la [Visualizzare i dettagli cronologia](#TimelineDetails) per ottenere informazioni dettagliate sugli eventi che si verificano troppo spesso o il cui completamento richiede troppo tempo. Ad esempio, cerca quanto segue:
 
@@ -197,7 +197,7 @@ if (performance.mark && performance.measure) {
 
  Questo esempio mostra l'aspetto del grafico relativo all'utilizzo della CPU:
 
- ![Grafico dell'utilizzo della CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
+ ![Grafico di utilizzo della CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
 
  Usare questo grafico per:
 
@@ -311,9 +311,9 @@ if (performance.mark && performance.measure) {
 
 - **Scripting.** Indica il tempo impiegato per l'analisi e l'esecuzione di JavaScript. Include eventi DOM, timer, valutazione script e il lavoro dei frame di animazione. Include sia il codice utente che il codice di libreria.
 
-- **Gc.** Indica il tempo impiegato nell'operazione di Garbage Collection.
+- **GC.** Indica il tempo impiegato nell'operazione di Garbage Collection.
 
-- **Stile.** Indica il tempo impiegato per l'analisi di CSS e il calcolo del layout e della presentazione dell'elemento.
+- **Stili.** Indica il tempo impiegato per l'analisi di CSS e il calcolo del layout e della presentazione dell'elemento.
 
 - **Rendering.** Indica il tempo impiegato per disegnare lo schermo.
 
@@ -325,7 +325,7 @@ if (performance.mark && performance.measure) {
 
   Questa tabella mostra gli eventi e le relative descrizioni:
 
-|Event|Categoria evento|Ambito|
+|Evento|Categoria evento|Ambito|
 |-----------|--------------------|-----------------|
 |Analisi CSS|Caricamento|È stato rilevato nuovo contenuto CSS e ne è stata tentata l'analisi.|
 |Analisi HTML|Caricamento|È stato rilevato nuovo contenuto HTML ed è stata tentata l'analisi del contenuto nei nodi e l'inserimento del contenuto nell'albero DOM.|
@@ -357,5 +357,5 @@ if (performance.mark && performance.measure) {
 
 - Per informazioni sulle prestazioni e sul modello di esecuzione di codice a thread singolo, vedere [Esecuzione di codice](/previous-versions/windows/apps/hh781217\(v\=win.10\)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

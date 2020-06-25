@@ -1,7 +1,7 @@
 ---
 title: Funzione CvWriteAlert | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvWriteAlertVA
 - cvmarkers/CvWriteAlertVW
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7cc2316168d14c6c996c4d55065771c85ffdfc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 56af9515fb9c066e56dd45a0fb91a95530f09799
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62989779"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332172"
 ---
 # <a name="cvwritealert-function"></a>Funzione CvWriteAlert
 Scrive un avviso nel file di traccia del visualizzatore di concorrenza.
@@ -71,5 +71,5 @@ HRESULT CvWriteAlertVA(
 
  **ANSI:** CvWriteAlertA, CvWriteAlertVA
 
-## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sulla libreria in C](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Vedi anche
+- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

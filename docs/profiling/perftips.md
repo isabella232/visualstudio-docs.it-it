@@ -1,19 +1,19 @@
 ---
 title: PerfTips | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93703bdd4bf2f0046176ceb1f6febd5564f61705
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7003f75b59773e8761095c15826bf5e6abcf23ff
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128312"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331054"
 ---
 # <a name="perftips"></a>PerfTips
 Il debugger di Visual Studio *PerfTips* e il debugger integrato **Strumenti di diagnostica** consentono di monitorare e analizzare le prestazioni dell'app durante il debug.
@@ -28,9 +28,9 @@ Il debugger di Visual Studio *PerfTips* e il debugger integrato **Strumenti di d
 ## <a name="diagnostics-tools-window"></a>Finestra Strumenti di diagnostica
  I punti di interruzione e i dati di intervallo associati vengono registrati nella finestra **Strumenti di diagnostica**.
 
- Il grafico seguente mostra la finestra Strumenti di **diagnostica** in Visual Studio 2015 Update 1:
+ Il grafico seguente mostra la finestra di **strumenti di diagnostica** in Visual Studio 2015 Update 1:
 
- ![Aggiornamento di DiagnosticTools&#45;1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+ ![Diagnostica&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
 - La sequenza temporale **Eventi di interruzione** contrassegnano i punti di interruzione che vengono eseguiti nella sessione di debug. Fare clic su un evento per selezionare l’elenco dei dettagli **Debugger** .
 
@@ -54,6 +54,6 @@ Il debugger di Visual Studio *PerfTips* e il debugger integrato **Strumenti di d
 
 2. Selezionare o deselezionare **Abilita Strumenti di diagnostica durante il debug**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

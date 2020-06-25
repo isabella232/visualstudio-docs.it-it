@@ -1,22 +1,21 @@
 ---
 title: Controllare le proprietà XAML durante il debug | Microsoft Docs
 ms.date: 11/12/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 36246f959aa49e49aa84defc203075f163c67118
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: 1c8ac187f5602d1c422fe5699d36deee70341b0f
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706411"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331073"
 ---
-# <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug 
+# <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug
 
 Gli strumenti **Struttura ad albero visuale attiva** ed **Esplora proprietà attive** offrono un punto di vista in tempo reale sul codice XAML. Questi strumenti offrono una visualizzazione albero degli elementi dell'interfaccia utente dell'applicazione XAML in esecuzione e mostrano le proprietà di runtime di qualsiasi elemento dell'interfaccia utente selezionato.
 
@@ -33,7 +32,7 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
 
 ### <a name="create-the-project"></a>Creare il progetto
 
-1. Creare una nuova C# applicazione WPF (**file** > **nuovo** **progetto** > , quindi digitare "C# WPF" e scegliere **app WPF (.NET Core)** o **app WPF (.NET Framework)** . Assegnare all'applicazione il nome **TestXAML**.
+1. Creare una nuova applicazione WPF c# (**file**  >  **nuovo**  >  **progetto**, quindi digitare "c# WPF" e scegliere **app WPF (.NET Core)** o **app WPF (.NET Framework)**). Assegnare all'applicazione il nome **TestXAML**.
 
 1. Modificare MainWindow.xaml come segue:
 
@@ -78,10 +77,10 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
 
    Quando viene visualizzata la finestra, la barra degli strumenti in-app verrà visualizzata nell'applicazione in esecuzione.
 
-   ::: moniker range=">= vs-2019" 
+   ::: moniker range=">= vs-2019"
    ![Finestra principale dell'app](../debugger/media/vs-2019/livevisualtree-app.png "LiveVIsualTree-app")
    ::: moniker-end
-   ::: moniker range="vs-2017" 
+   ::: moniker range="vs-2017"
    ![Finestra principale dell'app](../debugger/media/livevisualtree-app.png "LiveVIsualTree-app")
    ::: moniker-end
 
@@ -93,33 +92,33 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
 
 1. Nella finestra **Struttura ad albero visuale attiva** espandere il nodo **ContentPresenter**. Tale nodo dovrebbe contenere i nodi per il pulsante e la casella di riepilogo. Espandere la casella di riepilogo, listBox, (e quindi **ScrollContentPresenter** e **ItemsPresenter**) per individuare i relativi elementi.
 
-   ::: moniker range=">= vs-2019" 
+   ::: moniker range=">= vs-2019"
    Se non viene visualizzato il nodo **ContentPresenter** , impostare l'icona **Mostra Just My XAML** sulla barra degli strumenti. A partire da Visual Studio 2019 versione 16,4, la visualizzazione degli elementi XAML viene semplificata per impostazione predefinita con la funzionalità Just My XAML. È anche possibile [disabilitare questa impostazione](../debugger/general-debugging-options-dialog-box.md) in Options per visualizzare sempre tutti gli elementi XAML.
    ::: moniker-end
 
    La finestra dovrebbe essere simile alla seguente:
 
-   ::: moniker range=">= vs-2019" 
-   ![ListBoxItem nell'albero elementi visivi attivi](../debugger/media/vs-2019/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")
+   ::: moniker range=">= vs-2019"
+   ![ListBoxItems nell'albero degli elementi visivi attivi](../debugger/media/vs-2019/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")
    ::: moniker-end
-   ::: moniker range="vs-2017" 
-   ![ListBoxItem nell'albero elementi visivi attivi](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")
+   ::: moniker range="vs-2017"
+   ![ListBoxItems nell'albero degli elementi visivi attivi](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")
    ::: moniker-end
 
 1. Tornare alla finestra dell'applicazione e aggiungere altri elementi. Nella finestra **Albero elementi visivi attivi** dovrebbero venire visualizzati altri elementi casella di riepilogo.
 
 1. Verranno ora esaminate le proprietà di uno degli elementi della casella di riepilogo.
 
-   Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il campo **contenuto** è "Item1" e il campo **colore** > **sfondo** è **#FFFFFFE0**.
-   
-1. Tornare alla finestra **Struttura ad albero visuale attiva** e selezionare il secondo elemento casella di riepilogo. **Esplora proprietà attive** dovrebbe indicare che il campo **contenuto** è "Item2" e che il campo **colore** > **sfondo** è **#FFD3D3D3** (a seconda del tema).
+   Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il campo del **contenuto** è "Item1" e il campo del colore di **sfondo**  >  **Color** è **#FFFFFFE0**.
+
+1. Tornare alla finestra **Struttura ad albero visuale attiva** e selezionare il secondo elemento casella di riepilogo. **Esplora proprietà attive** dovrebbe indicare che il campo **contenuto** è "Item2" e che il campo del colore di **sfondo**  >  **Color** è **#FFD3D3D3** (a seconda del tema).
 
    > [!NOTE]
-   > Un bordo giallo intorno a una proprietà in **Esplora proprietà attive** significa che il valore della proprietà viene impostato tramite un'associazione, ad esempio `Color = {BindingExpression}`. Un bordo verde indica che il valore viene impostato utilizzando una risorsa, ad esempio `Color = {StaticResource MyBrush}`.
+   > Un bordo giallo intorno a una proprietà in **Esplora proprietà attive** significa che il valore della proprietà viene impostato tramite un'associazione, ad esempio `Color = {BindingExpression}` . Un bordo verde indica che il valore viene impostato utilizzando una risorsa, ad esempio `Color = {StaticResource MyBrush}` .
 
    La struttura effettiva del codice XAML include numerosi elementi a cui probabilmente non si è direttamente interessati e se non si conosce bene il codice potrebbe risultare difficile esplorare l'albero per trovare ciò che si sta cercando. Lo strumento **Struttura ad albero visuale attiva** offre alcuni modi per usare l'interfaccia utente dell'applicazione per individuare l'elemento che si vuole esaminare.
 
-   ::: moniker range=">= vs-2019" 
+   ::: moniker range=">= vs-2019"
    **Selezionare l'elemento nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante all'estrema sinistra sulla barra degli strumenti nella finestra **Struttura ad albero visuale attiva**. Quando questa modalità è attivata, è possibile selezionare un elemento dell'interfaccia utente nell'applicazione affinché lo strumento **Struttura ad albero visuale attiva** (e il **visualizzatore delle proprietà attive**) si aggiorni automaticamente per mostrare il nodo nell'albero corrispondente a tale elemento e le relative proprietà. A partire da Visual Studio 2019 versione 16,4, è possibile [configurare il comportamento della selezione degli elementi](../debugger/general-debugging-options-dialog-box.md).
 
    **Visualizza gli Adorner layout nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante immediatamente a destra del pulsante di abilitazione della selezione. Quando l'opzione **Visualizza gli Adorner layout** è attivata, la finestra dell'applicazione mostra le linee orizzontali e verticali lungo i bordi dell'oggetto selezionato, per consentire di vederne l'allineamento, nonché rettangoli che mostrano i margini. Ad esempio, attivare sia l' **elemento SELECT** che il **layout di visualizzazione** e selezionare il blocco di testo **Aggiungi elemento** nell'applicazione. Dovrebbero venire visualizzati il nodo del blocco di testo in **Struttura ad albero visuale attiva** e le proprietà del blocco di testo nel **visualizzatore delle proprietà attive**, nonché le linee orizzontali e verticali lungo i bordi del blocco di testo.
@@ -129,7 +128,7 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
    **Anteprima selezione**. È possibile abilitare questa modalità selezionando il terzo pulsante da sinistra sulla barra degli strumenti nella finestra Albero elementi visivi attivi. Questa modalità mostra il codice XAML in cui è stato dichiarato l'elemento, se si ha accesso al codice sorgente dell'applicazione. Selezionare **Seleziona elemento** e **Anteprima selezione**, quindi selezionare il pulsante nell'applicazione di test. Il file MainWindow.xaml verrà aperto in Visual Studio e il cursore verrà posizionato sulla riga in cui è definito il pulsante.
    ::: moniker-end
 
-   ::: moniker range="vs-2017" 
+   ::: moniker range="vs-2017"
    **Abilita la selezione nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante all'estrema sinistra sulla barra degli strumenti nella finestra **Struttura ad albero visuale attiva**. Quando questa modalità è attivata, è possibile selezionare un elemento dell'interfaccia utente nell'applicazione affinché lo strumento **Struttura ad albero visuale attiva** (e il **visualizzatore delle proprietà attive**) si aggiorni automaticamente per mostrare il nodo nell'albero corrispondente a tale elemento e le relative proprietà.
 
    **Visualizza gli Adorner layout nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante immediatamente a destra del pulsante di abilitazione della selezione. Quando l'opzione **Visualizza gli Adorner layout** è attivata, la finestra dell'applicazione mostra le linee orizzontali e verticali lungo i bordi dell'oggetto selezionato, per consentire di vederne l'allineamento, nonché rettangoli che mostrano i margini. Ad esempio, attivare entrambe le opzioni **Abilita selezione** e **Visualizza gli Adorner layout** e selezionare il blocco di testo **Aggiungi elemento** nell'applicazione. Dovrebbero venire visualizzati il nodo del blocco di testo in **Struttura ad albero visuale attiva** e le proprietà del blocco di testo nel **visualizzatore delle proprietà attive**, nonché le linee orizzontali e verticali lungo i bordi del blocco di testo.
@@ -151,6 +150,6 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
 
 4. Nella seconda istanza di Visual Studio aprire la finestra **Struttura ad albero visuale attiva** (**Debug > Finestre > Struttura ad albero visuale attiva**). Dovrebbero venire visualizzati gli elementi dell'interfaccia utente di **TestXaml** e dovrebbe essere possibile modificarli nello stesso modo in cui sono stati modificati direttamente durante il debug dell'applicazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento attivo XAML](xaml-hot-reload.md)

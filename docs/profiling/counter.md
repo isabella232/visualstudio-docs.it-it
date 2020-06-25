@@ -1,7 +1,7 @@
 ---
 title: Counter | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
@@ -9,14 +9,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f1684257ed39560fa0ea049d3296a6e45cdd7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64c882514d6bcf27de36a6ca4420fbaf671c72f2
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779480"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331199"
 ---
-# <a name="counter"></a>Contatore
+# <a name="counter"></a>Counter
 L'opzione **Counter** raccoglie i dati dai contatori delle prestazioni del processore (hardware).
 
 - Quando si usa il metodo di profilatura basato sul campionamento, l'opzione **Counter** consente di specificare il contatore delle prestazioni del chip e il numero di eventi del contatore da usare come intervallo di campionamento. Quando si usa il campionamento, è possibile specificare un solo contatore.
@@ -45,11 +45,11 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione Counter può essere usata solo con una delle opzioni seguenti:
 
- **Start:** `Trace` inizializza il profiler per l'utilizzo del metodo di strumentazione.
+ **Inizio:** `Trace` Inizializza il profiler per l'uso del metodo di strumentazione.
 
- **Avvia:** `AppName` avvia l'applicazione e il profiler specificati. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
+ **Avvia:** `AppName` Avvia l'applicazione specificata e il profiler. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
 
- **Connetti:** `PID` avvia il profiler e lo connette al processo specificato dall'ID processo. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
+ **Connetti:** `PID` Avvia il profiler e lo connette al processo specificato dall'ID del processo. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
 
 ## <a name="example"></a>Esempio
  Nell'esempio del metodo basato sul campionamento viene illustrato come campionare un'applicazione ogni 1000 occorrenze del contatore del profiler generico NonHaltedCycles.
@@ -65,7 +65,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /Counter:NonHaltedCycles,1000,"Non-Halted Cycl
 VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches,,"L2 Cache Instruction Fetches"
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

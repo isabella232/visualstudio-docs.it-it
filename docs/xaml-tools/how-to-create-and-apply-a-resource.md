@@ -1,7 +1,7 @@
 ---
 title: Come creare e applicare una risorsa
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac633f94c237bdff418375903e99f6f2da9e776
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2301ce14fcd3d2d8a9c5d003a05186513d950cd4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592966"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330119"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
 
@@ -52,9 +52,9 @@ Quando si crea una nuova risorsa da una proprietà, una classe [Style](xref:Wind
 
 1. Nella finestra Struttura documento scegliere l'elemento a cui si vuole applicare una risorsa.
 
-2. Effettuare una delle seguenti operazioni:
+2. Eseguire una delle operazioni seguenti:
 
-   - Applicare una risorsa a una proprietà. Nella finestra **Proprietà** scegliere il marcatore della proprietà accanto al valore della proprietà, quindi scegliere **Risorsa locale** o **Risorsa di sistema** e infine selezionare una risorsa disponibile nell'elenco visualizzato.
+   - Applicare una risorsa a una proprietà. Nella finestra **Proprietà** scegliere il marcatore della proprietà accanto al valore della proprietà, scegliere **risorsa locale** o **risorsa di sistema**, quindi scegliere una risorsa disponibile nell'elenco visualizzato.
 
       Se non viene visualizzata una risorsa prevista, è possibile che il tipo della risorsa non corrisponda al tipo della proprietà.
 
@@ -73,6 +73,6 @@ Quando si crea una nuova risorsa da una proprietà, una classe [Style](xref:Wind
 
 3. Modificare le opzioni per la risorsa.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Creazione di un'interfaccia utente tramite XAML Designer](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

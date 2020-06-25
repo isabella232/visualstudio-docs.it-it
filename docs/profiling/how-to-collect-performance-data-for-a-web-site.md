@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Raccogliere dati sulle prestazioni per un sito Web | Microsoft Docs'
+title: Come raccogliere i dati sulle prestazioni per un sito Web | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c2f8169716bda09e3c4d89ce06dc907c726adee2
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302903"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330956"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 
@@ -56,7 +56,7 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
     - Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .
 
-    - Per raccogliere dati dal codice JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Profilo JavaScript.**
+    - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **profilo JavaScript** .
 
 6. Fare clic su **Avanti**.
 
@@ -78,7 +78,7 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
 5. Nella terza pagina della procedura guidata digitare l'URL della home page dell'applicazione nella casella **Specificare l'URL o il percorso che esegue l'applicazione Web** e quindi fare clic su **Avanti**.
 
-   - Per un sito Web basato su server (IIS), digitare un URL, ad ** < `http://localhost/MySite/default.aspx` **esempio . In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente nel computer locale nella radice dell'applicazione di MySite e in Internet Explorer verrà aperta la pagina default.aspx del sito per avviare la sessione.
+   - Per un sito Web basato su server (IIS), digitare un URL, ad esempio **<`http://localhost/MySite/default.aspx`>** . In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente nel computer locale nella radice dell'applicazione di MySite e in Internet Explorer verrà aperta la pagina default.aspx del sito per avviare la sessione.
 
    - Per un sito Web basato su file, digitare un percorso, ad esempio file///**c:\WebSites\MySite\default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente in c:\webSites\MySite e in Internet Explorer verrà aperta la pagina `http://localhost:nnnn/MySite/default.aspx` per avviare la sessione.
 
@@ -100,9 +100,9 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
      Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-[Panoramiche](../profiling/overviews-performance-tools.md)
-[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-Informazioni sui valori dei dati di strumentazione Comprendere i valori dei[dati di campionamentoOverviews](../profiling/understanding-sampling-data-values.md) Configure performance sessions[Understand instrumentation values](../profiling/understanding-instrumentation-data-values.md)
-Understand sampling data values
+[Panoramica](../profiling/overviews-performance-tools.md) 
+ [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
+ di prestazioni [Informazioni sui valori](../profiling/understanding-instrumentation-data-values.md) 
+ dei dati di strumentazione [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)

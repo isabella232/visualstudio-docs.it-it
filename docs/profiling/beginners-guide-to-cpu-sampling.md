@@ -2,7 +2,7 @@
 title: Guida per principianti al campionamento CPU
 ms.custom: seodec18
 ms.date: 02/27/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a5a0eb84e4f06fd1b4dd248a1bce952b2c7197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a58803747e0da411012226325c390352edf4e919
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779805"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330597"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guida per principianti al campionamento CPU
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare i dati di **campionamento**.
@@ -99,7 +99,7 @@ ms.locfileid: "74779805"
 
      Per continuare l'analisi dell'esecuzione della profilatura, è possibile analizzare di nuovo un segmento di dati di profilatura usando la sequenza temporale nella visualizzazione **Riepilogo** per vedere il **Percorso critico** e le **Funzioni che svolgono più lavoro individuale** da un segmento selezionato. Ad esempio, con particolare attenzione ad un picco più piccolo nella sequenza temporale potrebbe rivelare costosi alberi delle chiamate e funzioni che non sono stati visualizzati durante l'analisi dell'intera esecuzione della profilatura.
 
-     Per analizzare nuovamente un segmento, selezionate un segmento all'interno della casella **Sequenza temporale** di riepilogo e fate clic su **Filtra per selezione**.
+     Per rianalizzare un segmento, selezionare un segmento nella casella **sequenza temporale di riepilogo** , quindi fare clic su **Filtra per selezione**.
 
      ![Sequenza temporale della visualizzazione Riepilogo prestazioni](../profiling/media/performancesummary.png "PerformanceSummary")
 
@@ -124,9 +124,9 @@ ms.locfileid: "74779805"
 
      Verrà visualizzata una nuova finestra del report, visualizzare i risultati del confronto. Per altre informazioni sull'uso della visualizzazione di confronto, vedere [Procedura: Confrontare i file di dati delle prestazioni](../profiling/how-to-compare-performance-data-files.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Esplora prestazioni](../profiling/performance-explorer.md)
 - [Introduzione](../profiling/getting-started-with-performance-tools.md)
-- [Panoramiche](../profiling/overviews-performance-tools.md)
+- [Cenni preliminari](../profiling/overviews-performance-tools.md)
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo | Microsoft Docs'
+title: 'Procedura: filtrare le visualizzazioni report dalla sequenza temporale di riepilogo | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 191e54189677abc7d89d5f50064ceda6f2669f03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7216f723e6aa955666e3e46a8329bb12e0d2f8e8
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778947"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329710"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Procedura: Filtrare le visualizzazioni dei report dalla sequenza temporale di riepilogo
 È possibile filtrare i dati visualizzati nei report sulle prestazioni specificando un intervallo di tempo nel grafico della sequenza temporale della visualizzazione Riepilogo. Quando si filtrano i report, il file dei dati di profilatura viene nuovamente analizzato in modo da includere solo l'intervallo di tempo specificato.

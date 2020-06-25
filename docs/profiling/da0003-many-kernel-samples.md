@@ -1,7 +1,7 @@
 ---
-title: 'DA0003: Numero elevato di campioni del kernel | Microsoft Docs'
+title: 'DA0003: molti esempi di kernel | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0003
 - vs.performance.DA0003
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cd81943641e4e0585a67127c70d35a601a5396
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4196b8bc107310353b71ce18f9cfc83a63cf6a5
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777738"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85332082"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Numero elevato di campioni del kernel
 
@@ -35,7 +35,7 @@ ms.locfileid: "74777738"
  Una parte significativa degli esempi di stack di chiamate raccolti per l'applicazione era in esecuzione in modalità kernel. Si consiglia di profilare l'applicazione usando un altro metodo di profilatura.
 
 ## <a name="rule-description"></a>Descrizione della regola
- In Windows è possibile eseguire il codice in modalità kernel oppure in modalità utente. La modalità kernel è detta anche modalità privilegiata. Solo il codice di sistema di basso livello, ad esempio un driver di periferica, viene eseguito in modalità kernel. Un'applicazione in modalità utente può passare alla modalità kernel per eseguire operazioni di I/O, per attendere primitive di sincronizzazione di thread o processi o per eseguire chiamate di sistema.
+ In Windows è possibile eseguire il codice in modalità kernel oppure in modalità utente. (La modalità kernel viene chiamata anche modalità con privilegi). Solo il codice di sistema di basso livello, ad esempio un driver di dispositivo, viene eseguito in modalità kernel. Un'applicazione in modalità utente può passare alla modalità kernel per eseguire operazioni di I/O, per attendere primitive di sincronizzazione di thread o processi o per eseguire chiamate di sistema.
 
  Il campionamento è più efficace quando si profilano applicazioni che per la maggior parte del tempo eseguono operazioni in modalità utente. Il numero di campioni raccolti durante l'esecuzione dell'applicazione in modalità kernel può indicare operazioni di I/O frequenti o può indicare che si stanno verificando cambi di contesto. Nessuna di queste operazioni può essere analizzata usando il metodo di campionamento. Se è stato acquisito un numero eccessivo di campioni in modalità kernel, è possibile che i dati di campionamento non contengano un numero sufficiente di campioni in modalità utente per essere statisticamente significativi.
 

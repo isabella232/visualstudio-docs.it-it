@@ -1,19 +1,19 @@
 ---
 title: Filtrare le visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code
 ms.date: 02/15/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: db43caeb00ef8348eb1a7dd584c1b0b52001bc3f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d6444eda5eada1941162bef07e88b430d314c0d1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778960"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329771"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Procedura: Filtrare le visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code
 
@@ -35,6 +35,6 @@ Visual Studio fornisce un filtro per i report di prestazioni in modo che venga v
 
 3. In **Impostazioni generali** deselezionare la casella di controllo **Abilita Just My Code**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-[Personalizzare le visualizzazioni dei report degli strumenti di prestazioni](../profiling/customizing-performance-tools-report-views.md)
+[Personalizzare le visualizzazioni report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)

@@ -1,7 +1,7 @@
 ---
 title: Attach | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
 ms.author: mikejo
@@ -9,14 +9,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 482b3e80bce796910860cb7eab1e5a0066854238
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773739"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329861"
 ---
-# <a name="attach"></a>Collegamento
+# <a name="attach"></a>Attach
 L'opzione *Attach di * **VSPerfCmd.exe** avvia una profilatura campione del processo in esecuzione specificato dall'ID processo (PID).
 
  Per usare l'opzione **Attach**, è necessario specificare il metodo **Sample** nell'opzione Start.
@@ -38,18 +38,18 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Crosssession** Consente la profilatura delle applicazioni in sessioni diverse da quella di accesso. Obbligatoria se l'opzione **Start** è stata specificata con l'opzione **Crosssession**.
 
- **Start:** `Method` inizializza la sessione del profiler della riga di comando e imposta il metodo di profilatura specificato.
+ **Inizio:** `Method` Inizializza la sessione del profiler da riga di comando e imposta il metodo di profilatura specificato.
 
  **TargetCLR** Specifica la versione di Common Language Runtime (CLR) di .NET Framework da sottoporre a profilatura quando in una sessione di profilatura è caricata più di una versione. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.
 
  **GlobalOn GlobalOff** Riprende (**GlobalOn**) o sospende (**GlobalOff**) la profilatura, ma non termina la sessione di profilatura.
 
- **ProcessOn:** `PID` **ProcessOff:** `PID` riprende (**ProcessOn**) o sospende la profilatura (**ProcessOff**) per il processo specificato.
+ **ProcessOn:** `PID` **ProcessOff:** `PID` Riprende **(processon) o**sospende (**ProcessOff**) la profilatura per il processo specificato.
 
 ## <a name="interval-options"></a>Opzioni di intervallo
  È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di Attach. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`] Sys`Reload``FriendlyName`<strong>[</strong>**]** Eventi]**Contatore**[**:**`Name`, ] Specifica il numero e il tipo dell'intervallo di campionamento.
+ **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**sys**[<strong>:</strong>Events]**Counter**[**:** `Name` , `Reload` , `FriendlyName` ] specifica il numero e il tipo dell'intervallo di campionamento.
 
 - **Timer**: esegue il campionamento ogni `Cycles` cicli di clock del processore. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
 
@@ -67,7 +67,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Attach:12345
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

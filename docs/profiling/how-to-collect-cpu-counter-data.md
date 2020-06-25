@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Raccogliere i dati dei contatori CPU | Microsoft Docs'
+title: 'Procedura: raccogliere i dati dei contatori CPU | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.cpucounters
 helpviewer_keywords:
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 98291051a135a95ab72b4c3bfa09743d9620b94e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c500316bd53ddce8bf731876e5963e6ef253bb27
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776371"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330923"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Procedura: Raccogliere i dati dei contatori CPU
 
@@ -44,7 +44,7 @@ Si verificano due tipi di eventi del contatore CPU:
 
 - Raccogliere i dati da uno o più contatori quando si esegue la profilatura tramite strumentazione.
 
-- Specificare un evento di contatore come intervallo di campionamento quando si esegue la profilatura mediante campionamento. Per ulteriori informazioni, vedere [Procedura: scegliere gli eventi](../profiling/how-to-choose-sampling-events.md)di campionamento .
+- Specificare un evento di contatore come intervallo di campionamento quando si esegue la profilatura mediante campionamento. Per altre informazioni, vedere [procedura: scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Per raccogliere i dati dei contatori di prestazioni CPU quando si esegue la profilatura tramite strumentazione
 
@@ -59,9 +59,9 @@ Si verificano due tipi di eventi del contatore CPU:
     > [!NOTE]
     > L'opzione **Contatori di prestazioni disponibili** è abilitata solo se si seleziona la casella di controllo **Raccogli contatori CPU**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-Proprietà sessione prestazioni CPU e contatori di Windows Procedura: Scegliere gli eventi di[campionamentoConfigure](../profiling/how-to-choose-sampling-events.md) performance sessions Performance session[properties](../profiling/performance-session-properties.md)
-CPU and Windows[counters](../profiling/cpu-and-windows-counters.md)
-Procedura: Scegliere gli eventi di campionamento
+[Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
+ di prestazioni Proprietà della sessione di [prestazioni](../profiling/performance-session-properties.md) 
+ Contatori CPU e [Windows](../profiling/cpu-and-windows-counters.md) 
+ [Procedura: scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)

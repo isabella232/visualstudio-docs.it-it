@@ -1,19 +1,19 @@
 ---
-title: "Procedura: Usare l'SDK del visualizzatore di concorrenza per creare marcatori | Microsoft Docs"
+title: "Procedura: utilizzare l'SDK dei marcatori del Visualizzatore di concorrenza | Microsoft Docs"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d97ea90963f70d3a06c669f08473bab27fa08bd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0782744236777fb84a6d87f93f59697275df1c11
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68870337"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331390"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Procedura: Usare l'SDK degli indicatori del visualizzatore di concorrenza
 Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per creare intervalli e scrivere flag, messaggi e avvisi.
@@ -48,7 +48,7 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
 
 4. Nella barra dei menu scegliere **Analizza**, **Visualizzatore di concorrenza**, **Avvio con progetto corrente** per eseguire l'app e visualizzare il visualizzatore di concorrenza. La figura seguente mostra i tre intervalli e i tre marcatori nel visualizzatore di concorrenza.
 
-     ![Visualizzatore di concorrenza con 3 marcatori e avvisi](../profiling/media/cvmarkersnative.png "CvMarkersNativo")
+     ![Visualizzatore di concorrenza con 3 marcatori e avvisi](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
 5. Aggiungere il codice per creare un'altra serie di marcatori personalizzati chiamando il costruttore per `marker_series` che accetta un nome di stringa per la serie di marcatori.
 
@@ -166,5 +166,5 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
 
      ![Visualizzatore di concorrenza con 3 serie di marcatori personalizzati](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)
