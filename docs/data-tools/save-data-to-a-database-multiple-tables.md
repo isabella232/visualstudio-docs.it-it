@@ -1,7 +1,7 @@
 ---
 title: Salvare dati in un database (a più tabelle)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586250"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281643"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 
@@ -79,7 +79,7 @@ Questo passaggio consente di creare un'origine dati dal database Northwind usand
 
     - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-         oppure
+         -oppure-
 
     - Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
@@ -95,7 +95,7 @@ Questo passaggio consente di creare un'origine dati dal database Northwind usand
 
 ## <a name="set-the-controls-to-be-created"></a>Impostare i controlli da creare
 
-Per questa procedura dettagliata, i dati nella tabella `Customers` si trova in un layout **Dettagli** in cui i dati vengono visualizzati nei singoli controlli. I dati della tabella `Orders` si trova in un layout di **griglia** visualizzato in un controllo <xref:System.Windows.Forms.DataGridView>.
+Per questa procedura dettagliata, i dati nella `Customers` tabella si trova in un layout **Dettagli** in cui i dati vengono visualizzati nei singoli controlli. I dati della `Orders` tabella si trova in un layout di **griglia** visualizzato in un <xref:System.Windows.Forms.DataGridView> controllo.
 
 ### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Per impostare il tipo di rilascio degli elementi della finestra Origini dati
 
@@ -105,45 +105,45 @@ Per questa procedura dettagliata, i dati nella tabella `Customers` si trova in u
 
 ## <a name="create-the-data-bound-form"></a>Creare il form con associazione a dati
 
-È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form.
+È possibile creare i controlli associati a dati trascinando gli elementi dalla finestra **origini dati** nel form.
 
 1. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.
 
-     Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
+     Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter` , <xref:System.Windows.Forms.BindingSource> e viene <xref:System.Windows.Forms.BindingNavigator> visualizzato nella barra dei componenti.
 
 2. Trascinare il nodo **Orders** correlato dalla finestra **Origini dati** in **Form1**.
 
     > [!NOTE]
     > Il nodo **Orders** correlato si trova sotto la colonna **Fax** ed è un nodo figlio del nodo **Customers**.
 
-     Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti viene visualizzata una `OrdersTableAdapter` e <xref:System.Windows.Forms.BindingSource>.
+     Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. `OrdersTableAdapter`E <xref:System.Windows.Forms.BindingSource> vengono visualizzati nella barra dei componenti.
 
 ## <a name="add-code-to-update-the-database"></a>Aggiungere il codice per aggiornare il database
 
-È possibile aggiornare il database chiamando i metodi `Update` degli oggetti TableAdapter **Customers** e **Orders**. Per impostazione predefinita, un gestore eventi per il pulsante **Salva** del<xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del form per inviare gli aggiornamenti al database. Questa procedura modifica il codice per inviare gli aggiornamenti nell'ordine corretto. In questo modo si elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.
+È possibile aggiornare il database chiamando i metodi `Update` degli oggetti TableAdapter **Customers** e **Orders**. Per impostazione predefinita, un gestore eventi per il pulsante **Salva** di <xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del form per inviare gli aggiornamenti al database. Questa procedura modifica il codice per inviare gli aggiornamenti nell'ordine corretto. In questo modo si elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.
 
 > [!NOTE]
 > Per maggiore chiarezza, in questa procedura dettagliata non viene utilizzata alcuna transazione. Tuttavia, se si stanno aggiornando due o più tabelle correlate, includere tutta la logica di aggiornamento all'interno di una transazione. Una transazione è un processo che garantisce che tutte le modifiche correlate a un database abbiano esito positivo prima del commit delle modifiche. Per ulteriori informazioni, vedere [transazioni e concorrenza](/dotnet/framework/data/adonet/transactions-and-concurrency).
 
 ### <a name="to-add-update-logic-to-the-application"></a>Per aggiungere la logica di aggiornamento all'applicazione
 
-1. Selezionare il pulsante **Salva** nella <xref:System.Windows.Forms.BindingNavigator>. Verrà aperto l'editor di codice per il gestore dell'evento `bindingNavigatorSaveItem_Click`.
+1. Selezionare il pulsante **Salva** in <xref:System.Windows.Forms.BindingNavigator> . Verrà aperto l'editor di codice per il `bindingNavigatorSaveItem_Click` gestore eventi.
 
 2. Sostituire il codice nel gestore eventi per chiamare i metodi `Update` degli oggetti TableAdapter correlati. Il codice seguente crea innanzitutto tre tabelle dati temporanee in cui inserire le informazioni aggiornate per ogni <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added> e <xref:System.Data.DataRowState.Modified>). Gli aggiornamenti vengono eseguiti nell'ordine corretto. Il codice dovrebbe essere simile al seguente:
 
      [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
      [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
 
-## <a name="test-the-application"></a>Testare l'applicazione
+## <a name="test-the-application"></a>Test dell'applicazione
 
 1. Premere **F5**.
 
 2. Apportare alcune modifiche ai dati di uno o più record di ogni tabella.
 
-3. Selezionare il pulsante **Salva**.
+3. Fare clic sul pulsante **Salva**.
 
 4. Controllare i valori presenti nel database per verificare che le modifiche siano state salvate.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

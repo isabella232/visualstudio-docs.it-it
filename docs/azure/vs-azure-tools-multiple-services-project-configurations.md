@@ -6,21 +6,21 @@ manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301699"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280544"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto Azure di Visual Studio per l'uso di più configurazioni del servizio
 
 Un progetto di servizio cloud di Azure in Visual Studio include tre file di configurazione: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` e `ServiceConfiguration.Cloud.cscfg`:
 
-- `ServiceDefinition.csdef` viene distribuito in Azure per descrivere i requisiti del servizio cloud e i relativi ruoli e per fornire le impostazioni applicabili a tutte le istanze. Le impostazioni possono essere lette in fase di esecuzione usando l'API del runtime di hosting del servizio di Azure.Settings can be read at run time using the Azure Service Hosting Runtime API. Questo file può essere aggiornato in Azure solo quando il servizio cloud viene arrestato.
+- `ServiceDefinition.csdef` viene distribuito in Azure per descrivere i requisiti del servizio cloud e i relativi ruoli e per fornire le impostazioni applicabili a tutte le istanze. Le impostazioni possono essere lette in fase di esecuzione usando l'API di runtime dell'hosting del servizio di Azure. Questo file può essere aggiornato in Azure solo quando il servizio cloud viene arrestato.
 - `ServiceConfiguration.Local.cscfg` e `ServiceConfiguration.Cloud.cscfg` forniscono i valori per le impostazioni del file di definizione e specificano il numero di istanze da eseguire per ogni ruolo. Il file "Local" contiene i valori usati nel debug locale, mentre il file "Cloud" viene distribuito in Azure come `ServiceConfiguration.cscfg` e fornisce le impostazioni per l'ambiente server. Questo file può essere aggiornato mentre il servizio cloud è in esecuzione in Azure.
 
 Le impostazioni di configurazione vengono gestite e modificate in Visual Studio attraverso le pagine delle proprietà relative al ruolo applicabile (fare clic con il pulsante destro del mouse sul ruolo e scegliere **Proprietà** oppure fare doppio clic sul ruolo). L'ambito delle modifiche può essere delimitato da qualsiasi configurazione scelta nell'elenco a discesa **Configurazione servizio**. Le proprietà dei ruoli Web e di lavoro sono simili, tranne per gli aspetti descritti nelle sezioni seguenti.
@@ -39,13 +39,13 @@ Consente di selezionare il file `ServiceConfiguration.*.cscfg` interessato dalle
 
 Impostare la proprietà **Conteggio istanze** sul numero di istanze che il servizio deve eseguire per questo ruolo.
 
-Impostare la proprietà delle **Dimensioni macchina virtuale** su **Molto piccola**, **Piccola**, **Media**, **Grande**o **Molto grande**.  Per ulteriori informazioni, vedere Dimensioni per i [servizi cloud](/azure/cloud-services/cloud-services-sizes-specs).
+Impostare la proprietà delle **Dimensioni macchina virtuale** su **Molto piccola**, **Piccola**, **Media**, **Grande**o **Molto grande**.  Per ulteriori informazioni, vedere [dimensioni dei servizi cloud](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Startup Action (Azione di avvio) (solo ruolo Web)
 
 Impostare questa proprietà per specificare che in Visual Studio deve essere avviato un Web browser per gli endpoint HTTP o HTTPS o entrambi quando si inizia il debug.
 
-L'opzione **Endpoint HTTPS** è disponibile solo se è già stato definito un endpoint HTTPS per il ruolo. È possibile definire un endpoint HTTPS nella pagina delle proprietà **Endpoint** .
+L'opzione **endpoint HTTPS** è disponibile solo se è già stato definito un endpoint HTTPS per il ruolo. È possibile definire un endpoint HTTPS nella pagina delle proprietà **Endpoint** .
 
 Se è già stato aggiunto un endpoint HTTPS, l'opzione Endpoint HTTPS è abilitata per impostazione predefinita e Visual Studio avvia un browser per questo endpoint all'inizio del debug in aggiunta a un browser per l'endpoint HTTP, presupponendo che entrambe le opzioni di avvio siano abilitate.
 
@@ -55,7 +55,7 @@ Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il p
 
 ## <a name="settings-page"></a>Pagina Impostazioni
 
-Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla [libreria gestita](/previous-versions/azure/dn602775(v=azure.11))di Azure, in particolare il metodo [GetConfigurationSettingValue.](/previous-versions/azure/reference/ee772857(v=azure.100))
+Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla [libreria gestita di Azure](/previous-versions/azure/dn602775(v=azure.11)), in particolare il metodo [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configurazione di una stringa di connessione per un account di archiviazione
 

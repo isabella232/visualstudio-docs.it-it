@@ -1,7 +1,7 @@
 ---
 title: Passare dati da un form all'altro
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586367"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281877"
 ---
 # <a name="pass-data-between-forms"></a>Passare dati da un form all'altro
 
@@ -69,7 +69,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
@@ -81,7 +81,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
 
-2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
 3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
@@ -152,13 +152,13 @@ Aggiungere una query TableAdapter a Form2 per caricare gli ordini per il cliente
     > [!NOTE]
     > Verificare che la sintassi dei parametri sia corretta per il database. In Microsoft Access, ad esempio, la clausola WHERE presenta la seguente sintassi: `WHERE CustomerID = ?`.
 
-6. Scegliere **Avanti**.
+6. Fare clic su **Avanti**.
 
-7. Per il immettere il **nome DataTableMethod**, digitare `FillByCustomerID`.
+7. Per il **riempimento di un nome DataTableMethod**, digitare `FillByCustomerID` .
 
 8. Deselezionare l'opzione **Restituisci una DataTable**, quindi scegliere **Avanti**.
 
-9. Scegliere **Fine**.
+9. Fare clic su **Fine**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Creare un metodo su Form2 per passare i dati a
 
@@ -198,6 +198,6 @@ A seconda dei requisiti dell'applicazione, si potranno eseguire diverse operazio
 
 - Aggiunta di funzionalità per il salvataggio dei dati nel database. Per altre informazioni, vedere [salvare i dati nel database](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

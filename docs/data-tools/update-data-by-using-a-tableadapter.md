@@ -1,7 +1,7 @@
 ---
 title: Aggiornare i dati mediante un TableAdapter
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,39 +18,39 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffb5139e148fba6facd1d437d4f7977d8d7e0b28
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f7ecca8c28ff355952907f1f0c49485117a25456
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586081"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281201"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aggiornare i dati mediante un TableAdapter
 
-Una volta che i dati nel set di dati sono stati modificati e convalidati, è possibile inviare di nuovo i dati aggiornati a un database chiamando il metodo `Update` di un [TableAdapter](../data-tools/create-and-configure-tableadapters.md). Il metodo `Update` aggiorna una singola tabella dati ed esegue il comando corretto (INSERT, UPDATE o DELETE) in base al <xref:System.Data.DataRow.RowState%2A> di ogni riga di dati nella tabella. Quando un set di dati include tabelle correlate, Visual Studio genera una classe TableAdapterManager da usare per eseguire gli aggiornamenti. La classe TableAdapterManager garantisce che gli aggiornamenti vengano eseguiti nell'ordine corretto in base ai vincoli FOREIGN KEY definiti nel database. Quando si utilizzano i controlli associati a dati, l'architettura DataBinding crea una variabile membro della classe TableAdapterManager denominata tableAdapterManager.
+Una volta che i dati nel set di dati sono stati modificati e convalidati, è possibile inviare di nuovo i dati aggiornati a un database chiamando il `Update` metodo di un [TableAdapter](../data-tools/create-and-configure-tableadapters.md). Il `Update` metodo aggiorna una singola tabella dati ed esegue il comando corretto (Insert, Update o DELETE) in base all'oggetto <xref:System.Data.DataRow.RowState%2A> di ogni riga di dati della tabella. Quando un set di dati include tabelle correlate, Visual Studio genera una classe TableAdapterManager da usare per eseguire gli aggiornamenti. La classe TableAdapterManager garantisce che gli aggiornamenti vengano eseguiti nell'ordine corretto in base ai vincoli FOREIGN KEY definiti nel database. Quando si utilizzano i controlli associati a dati, l'architettura DataBinding crea una variabile membro della classe TableAdapterManager denominata tableAdapterManager.
 
 > [!NOTE]
-> Quando si tenta di aggiornare un'origine dati con il contenuto di un set di dati, è possibile ottenere errori. Per evitare errori, è consigliabile inserire il codice che chiama il metodo di `Update` dell'adapter all'interno di un blocco `catch` /`try`.
+> Quando si tenta di aggiornare un'origine dati con il contenuto di un set di dati, è possibile ottenere errori. Per evitare errori, è consigliabile inserire il codice che chiama il metodo dell'adapter `Update` all'interno di un `try` / `catch` blocco.
 
 La procedura esatta per l'aggiornamento di un'origine dati può variare a seconda delle esigenze aziendali, ma prevede i passaggi seguenti:
 
-1. Chiamare il metodo `Update` dell'adapter in un blocco `catch` /`try`.
+1. Chiamare il metodo dell'adapter `Update` in un `try` / `catch` blocco.
 
 2. Se viene rilevata un'eccezione, individuare la riga di dati che ha causato l'errore.
 
-3. Riconciliare il problema nella riga di dati (a livello di codice, se è possibile, o presentando la riga non valida all'utente per la modifica), quindi riprovare a eseguire l'aggiornamento (<xref:System.Data.DataRow.HasErrors%2A><xref:System.Data.DataTable.GetErrors%2A>).
+3. Risolvere il problema nella riga di dati (a livello di codice, se è possibile o presentando la riga non valida all'utente per la modifica), quindi riprovare l'aggiornamento ( <xref:System.Data.DataRow.HasErrors%2A> , <xref:System.Data.DataTable.GetErrors%2A> ).
 
 ## <a name="save-data-to-a-database"></a>Salvare i dati in un database
 
-Chiamare il metodo `Update` di un TableAdapter. Passare il nome della tabella dati contenente i valori da scrivere nel database.
+Chiamare il `Update` metodo di un TableAdapter. Passare il nome della tabella dati contenente i valori da scrivere nel database.
 
 ### <a name="to-update-a-database-by-using-a-tableadapter"></a>Per aggiornare un database utilizzando un TableAdapter
 
-- Racchiudere il metodo`Update` del TableAdapter in un blocco di `catch` /`try`. Nell'esempio seguente viene illustrato come aggiornare il contenuto della tabella `Customers` in `NorthwindDataSet` all'interno di un blocco `try`/`catch`.
+- Racchiudere il metodo del TableAdapter `Update` in un `try` / `catch` blocco. Nell'esempio seguente viene illustrato come aggiornare il contenuto della `Customers` tabella in `NorthwindDataSet` dall'interno di un `try` / `catch` blocco.
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

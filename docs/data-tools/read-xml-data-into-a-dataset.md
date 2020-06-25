@@ -1,7 +1,7 @@
 ---
 title: Leggere dati XML in un set di dati
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586328"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281786"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 
-ADO.NET fornisce semplici metodi per l'utilizzo di dati XML. In questa procedura dettagliata viene creata un'applicazione Windows che carica i dati XML in un set di dati. Il set di dati viene quindi visualizzato in un controllo <xref:System.Windows.Forms.DataGridView>. Infine, un XML Schema in base al contenuto del file XML viene visualizzato in una casella di testo.
+ADO.NET fornisce semplici metodi per l'utilizzo di dati XML. In questa procedura dettagliata viene creata un'applicazione Windows che carica i dati XML in un set di dati. Il set di dati viene quindi visualizzato in un <xref:System.Windows.Forms.DataGridView> controllo. Infine, un XML Schema in base al contenuto del file XML viene visualizzato in una casella di testo.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
@@ -39,9 +39,9 @@ Creare un nuovo progetto di **App Windows Forms** per C# o Visual Basic. Denomin
 
 Poiché questa procedura dettagliata è incentrata sulla lettura dei dati XML in un set di dati, viene fornito il contenuto di un file XML.
 
-1. Scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.
+1. Nel menu **Progetto** selezionare **Aggiungi nuovo elemento**.
 
-2. Selezionare **file XML**, denominare il file **authors. XML**e quindi selezionare **Aggiungi**.
+2. Selezionare **file XML**, denominare il file **authors.xml**e quindi selezionare **Aggiungi**.
 
    Il file XML viene caricato nella finestra di progettazione ed è pronto per la modifica.
 
@@ -107,48 +107,48 @@ Poiché questa procedura dettagliata è incentrata sulla lettura dei dati XML in
    </Authors_Table>
    ```
 
-4. Nel menu **file** selezionare **Salva authors. XML**.
+4. Scegliere **salva authors.xml**dal menu **file** .
 
 ## <a name="create-the-user-interface"></a>Creare l'interfaccia utente
 
 L'interfaccia utente per questa applicazione è costituita dagli elementi seguenti:
 
-- Controllo <xref:System.Windows.Forms.DataGridView> che Visualizza il contenuto del file XML come dati.
+- <xref:System.Windows.Forms.DataGridView>Controllo che Visualizza il contenuto del file XML come dati.
 
-- Controllo <xref:System.Windows.Forms.TextBox> che visualizza la XML Schema per il file XML.
+- <xref:System.Windows.Forms.TextBox>Controllo che Visualizza il XML Schema per il file XML.
 
-- Due controlli <xref:System.Windows.Forms.Button>.
+- Due <xref:System.Windows.Forms.Button> controlli.
 
-  - Un pulsante legge il file XML nel set di dati e lo Visualizza nel controllo <xref:System.Windows.Forms.DataGridView>.
+  - Un pulsante legge il file XML nel set di dati e lo Visualizza nel <xref:System.Windows.Forms.DataGridView> controllo.
 
-  - Un secondo pulsante estrae lo schema dal set di dati e tramite un <xref:System.IO.StringWriter> lo Visualizza nel controllo <xref:System.Windows.Forms.TextBox>.
+  - Un secondo pulsante estrae lo schema dal set di dati e tramite un oggetto <xref:System.IO.StringWriter> lo Visualizza nel <xref:System.Windows.Forms.TextBox> controllo.
 
 ### <a name="to-add-controls-to-the-form"></a>Per aggiungere controlli al form
 
-1. Aprire `Form1` nella visualizzazione progettazione.
+1. Apri `Form1` in visualizzazione progettazione.
 
 2. Dalla **casella degli strumenti**trascinare i controlli seguenti nel form:
 
-    - Un controllo <xref:System.Windows.Forms.DataGridView>
+    - Un <xref:System.Windows.Forms.DataGridView> controllo
 
-    - Un controllo <xref:System.Windows.Forms.TextBox>
+    - Un <xref:System.Windows.Forms.TextBox> controllo
 
-    - Due controlli <xref:System.Windows.Forms.Button>
+    - Due <xref:System.Windows.Forms.Button> controlli
 
 3. Impostare le proprietà seguenti:
 
-    |Control|Gli|Impostazione di|
+    |Controllo|Proprietà|Impostazione|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||**ScrollBars**|**Verticale**|
-    |`Button1`|**Name**|`ReadXmlButton`|
-    ||**per**|`Read XML`|
-    |`Button2`|**Name**|`ShowSchemaButton`|
-    ||**per**|`Show Schema`|
+    ||**BarreScorrimento**|**Vertical**|
+    |`Button1`|**Nome**|`ReadXmlButton`|
+    ||**Testo**|`Read XML`|
+    |`Button2`|**Nome**|`ShowSchemaButton`|
+    ||**Testo**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Creare il set di dati che riceve i dati XML
 
-In questo passaggio viene creato un nuovo set di dati denominato `authors`. Per altre informazioni sui set di dati, vedere [DataSet Tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+In questo passaggio viene creato un nuovo set di dati denominato `authors` . Per altre informazioni sui set di dati, vedere [DataSet Tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 1. In **Esplora soluzioni**selezionare il file di origine per **Form1**, quindi selezionare il pulsante **Progettazione viste** sulla barra degli strumenti **Esplora soluzioni** .
 
@@ -158,34 +158,34 @@ In questo passaggio viene creato un nuovo set di dati denominato `authors`. Per 
 
      **DataSet1** viene aggiunto alla barra dei componenti.
 
-4. Nella finestra **Proprietà** impostare il **nome** e le proprietà di <xref:System.Data.DataSet.DataSetName%2A> per`AuthorsDataSet`.
+4. Nella finestra **Proprietà** impostare il **nome** e le <xref:System.Data.DataSet.DataSetName%2A> proprietà per `AuthorsDataSet` .
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Creare il gestore eventi per leggere il file XML nel set di dati
 
-Il pulsante **Read XML** legge il file XML nel set di dati. Imposta quindi le proprietà sul controllo <xref:System.Windows.Forms.DataGridView> che lo associano al set di dati.
+Il pulsante **Read XML** legge il file XML nel set di dati. Imposta quindi le proprietà del <xref:System.Windows.Forms.DataGridView> controllo che lo associano al set di dati.
 
 1. In **Esplora soluzioni**selezionare **Form1**, quindi selezionare il pulsante **Progettazione viste** sulla barra degli strumenti **Esplora soluzioni** .
 
 2. Selezionare il pulsante **lettura XML** .
 
-     Viene aperto l' **editor di codice** nel gestore dell'evento `ReadXmlButton_Click`.
+     Viene aperto l' **editor di codice** nel `ReadXmlButton_Click` gestore eventi.
 
-3. Digitare il codice seguente nel gestore dell'evento `ReadXmlButton_Click`:
+3. Digitare il codice seguente nel `ReadXmlButton_Click` gestore eventi:
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4. Nel codice del gestore eventi `ReadXMLButton_Click` modificare la voce `filepath =` nel percorso corretto.
+4. Nel `ReadXMLButton_Click` codice del gestore eventi modificare la `filepath =` voce nel percorso corretto.
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Creare il gestore eventi per visualizzare lo schema nella casella di testo
 
-Il pulsante **Mostra schema** consente di creare un <xref:System.IO.StringWriter> oggetto compilato con lo schema e visualizzato nel controllo <xref:System.Windows.Forms.TextBox>.
+Il pulsante **Mostra schema** consente di creare un <xref:System.IO.StringWriter> oggetto compilato con lo schema e visualizzato nel <xref:System.Windows.Forms.TextBox> controllo.
 
 1. In **Esplora soluzioni**selezionare **Form1**, quindi fare clic sul pulsante **Visualizza finestra di progettazione** .
 
 2. Selezionare il pulsante **Mostra schema** .
 
-     Viene aperto l' **editor di codice** nel gestore dell'evento `ShowSchemaButton_Click`.
+     Viene aperto l' **editor di codice** nel `ShowSchemaButton_Click` gestore eventi.
 
 3. Incollare il codice seguente nel gestore eventi `ShowSchemaButton_Click`.
 
@@ -210,11 +210,11 @@ Il pulsante **Mostra schema** consente di creare un <xref:System.IO.StringWriter
 
 In questa procedura dettagliata vengono illustrate le nozioni di base per la lettura di un file XML in un set di dati, nonché per la creazione di uno schema basato sul contenuto del file XML. Di seguito sono riportate alcune attività che è possibile eseguire successivamente:
 
-- Modificare i dati nel set di dati e scriverli di nuovo come XML. Per ulteriori informazioni, vedere <xref:System.Data.DataSet.WriteXml%2A>.
+- Modificare i dati nel set di dati e scriverli di nuovo come XML. Per altre informazioni, vedere <xref:System.Data.DataSet.WriteXml%2A>.
 
 - Modificare i dati nel set di dati e scriverli in un database.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accedere ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

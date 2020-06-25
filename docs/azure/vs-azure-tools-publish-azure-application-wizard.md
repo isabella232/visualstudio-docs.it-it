@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489649"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280531"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso della procedura guidata Pubblica l'applicazione Azure di Visual Studio
 
@@ -63,7 +63,7 @@ Un'applicazione Web sviluppata in Visual Studio può essere pubblicata in un ser
 
 **Abilita Desktop remoto per tutti i ruoli** - Selezionare questa opzione per consentire la connessione remota al servizio. Questa opzione viene usata principalmente per la risoluzione dei problemi. Per altre informazioni, vedere [Enable Remote Desktop Connection for a Role in Azure Cloud Services using Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio) (Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio).
 
-**Abilita Distribuzione Web per tutti i ruoli Web** - Selezionare questa opzione per abilitare la distribuzione Web per il servizio. È necessario selezionare anche l'opzione **Abilita Desktop remoto per tutti i ruoli** per usare questa funzionalità. Per ulteriori informazioni, vedere [Pubblicazione di un servizio cloud tramite Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
+**Abilita Distribuzione Web per tutti i ruoli Web** - Selezionare questa opzione per abilitare la distribuzione Web per il servizio. È necessario selezionare anche l'opzione **Abilita Desktop remoto per tutti i ruoli** per usare questa funzionalità. Per altre informazioni, vedere [pubblicazione di un servizio cloud con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 ## <a name="settings-page---advanced-settings-tab"></a>Pagina Impostazioni - Scheda Impostazioni avanzate
 
@@ -118,6 +118,6 @@ Dopo avere configurato tutte le impostazioni per la distribuzione del progetto, 
 
 - [Test delle prestazioni di un servizio cloud di Azure](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Configurazione della diagnostica per i servizi cloud di Azure e](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)le macchine virtuali .
+- [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
-- [Che cos'è Application Insights?](/azure/application-insights/app-insights-overview)
+- [Informazioni su Azure Application Insights](/azure/application-insights/app-insights-overview)

@@ -1,5 +1,5 @@
 ---
-title: Analizzare l'utilizzo della memoria per gli oggetti .NET . Documenti Microsoft
+title: Analizzare l'utilizzo della memoria per gli oggetti .NET | Microsoft Docs
 ms.date: 12/9/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,95 +9,134 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 9518ffd618a6d82505feca33b37b5151a3a9f961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a812ea3dcddc2fa6093b2b5b99684d1d5194654
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75898469"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280035"
 ---
-# <a name="analyze-memory-usage-using-the-net-object-allocation-tool"></a>Analizzare l'utilizzo della memoria utilizzando lo strumento di allocazione degli oggetti .NETAnalyze memory usage using the .NET Object Allocation tool
+# <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analizzare l'utilizzo della memoria mediante lo strumento di allocazione oggetti .NET
 
-Puoi vedere quanta memoria usa l'app e quali percorsi di codice allocano la maggior parte della memoria usando lo strumento di allocazione degli oggetti .NET.
+È possibile visualizzare la quantità di memoria usata dall'app e i percorsi del codice che allocano la maggior parte della memoria mediante lo strumento di allocazione oggetti .NET.
 
-Dopo aver eseguito lo strumento, è possibile visualizzare i percorsi di esecuzione della funzione in cui gli oggetti vengono allocati in modo da poter risalire alla radice della struttura ad albero delle chiamate che occupa la maggior quantità di memoria.
+Dopo aver eseguito lo strumento, è possibile visualizzare i percorsi di esecuzione della funzione in cui vengono allocati gli oggetti. È quindi possibile risalire alla radice dell'albero delle chiamate che sta occupando la maggior parte della memoria.
 
 ## <a name="setup"></a>Configurazione
 
-1. Aprire il Profiler prestazioni **(ALT e F2)** in Visual Studio.
-2.  Selezionare la casella di **controllo Tracciabilità allocazione oggetti .NET.**
+1. Selezionare **ALT + F2** per aprire il profiler delle prestazioni in Visual Studio.
 
-![Diag Hub](../profiling/media/diaghub.png "Diag Hub")
+1. Selezionare la casella di controllo **rilevamento allocazione oggetti .NET** .
 
-> [!NOTE]
-> Il progetto di avvio è selezionato come **Destinazione analisi** per impostazione predefinita, ma questo può essere modificato nel processo in esecuzione, negli eseguibili, nelle app in esecuzione e nelle app installate aprendo il menu a discesa **Cambia destinazione** e quindi selezionando le opzioni disponibili.
+   ![Strumento di rilevamento dell'allocazione di oggetti DotNet selezionato](../profiling/media/dotnetalloctoolselected.png "Strumento di rilevamento dell'allocazione di oggetti DotNet selezionato")
 
-   Lo strumento .NET Object Allocation attualmente non supporta gli eseguibili tramite il menu a discesa. Si dovrà passare attraverso il sistema di progetto exe per utilizzare lo strumento. A tale scopo, chiudere la soluzione corrente ( Soluzione di**chiusura****file** -> ) e quindi premere **File** -> **Aprire un progetto o una soluzione** > selezionare il file con estensione exe.
+1. Selezionare il pulsante **Avvia** per eseguire lo strumento.
 
-![Destinazione analisi](../profiling/media/analysistarget.png "Destinazione analisi")
+1. Dopo l'avvio dell'esecuzione dello strumento, esaminare lo scenario che si vuole profilare nell'app. Quindi selezionare **Arresta raccolta** o Chiudi l'app per visualizzare i dati.
 
-3. Fare clic sul pulsante **Start** per eseguire lo strumento.
+   ![Finestra che mostra la raccolta di arresti](../profiling/media/stopcollectionlighttheme.png "Finestra che mostra la raccolta di arresti")
 
-![Interrompi raccolta](../profiling/media/stopcollection.png "Arresta raccolta")
+1. Selezionare la scheda **allocazione** . contenuto della finestra simile alla schermata seguente.
 
-4. Quando l'esecuzione dello strumento viene avviata, passa attraverso lo scenario desiderato nell'app, quindi premi **Interrompi raccolta** o chiudi l'app per visualizzare i dati.
-5. Fare clic sulla scheda **Allocazione** e si dovrebbe vedere un'immagine simile a quella mostrata di seguito.
+   ![Scheda allocazione](../profiling/media/allocationview.png "Scheda allocazione")
 
-![Allocation (Allocazione)](../profiling/media/allocation.png "Allocation (Allocazione)")
+È ora possibile analizzare l'allocazione di memoria degli oggetti.
 
-Congratulazioni. È ora possibile analizzare l'allocazione di memoria degli oggetti.
+Durante la raccolta, lo strumento di rilevamento può rallentare l'applicazione profilata. Se le prestazioni dello strumento di rilevamento o dell'app sono lente e se non è necessario tenere traccia di ogni oggetto, è possibile regolare la frequenza di campionamento. A tale scopo, selezionare il simbolo dell'ingranaggio accanto allo strumento di rilevamento nella pagina di riepilogo del profiler.
 
-## <a name="understand-your-data"></a>Comprendere i dati
+![Impostazioni per lo strumento di allocazione DotNet](../profiling/media/dotnetallocsettings.png "Impostazioni per lo strumento di allocazione DotNet")
 
-### <a name="collection"></a>Raccolta
+Modificare la frequenza di campionamento in base alla velocità desiderata. Questa modifica consente di velocizzare le prestazioni dell'applicazione durante la raccolta e l'analisi.
 
-![Collezione](../profiling/media/collection.png "Raccolta")
+![Frequenza di campionamento regolata](../profiling/media/adjustedsamplingratedotnetalloctool.png "Frequenza di campionamento regolata")
 
-La visualizzazione di raccolta consente di visualizzare il numero di oggetti raccolti durante l'operazione di Garbage Collection e quanti sono stati conservati. Questa visualizzazione fornisce anche alcuni grafici a torta per visualizzare gli oggetti raccolti e sopravvissuti per tipo.
+Per ulteriori informazioni su come rendere più efficiente lo strumento, vedere [ottimizzazione delle impostazioni del profiler](../profiling/optimize-profiler-settings.md).
 
-- La colonna **Collected** mostra il numero di oggetti raccolti dal Garbage Collector.
-- La colonna **Sopravvissuto** mostra il numero di oggetti sopravvissuti dopo l'esecuzione del Garbage Collector.
+## <a name="understand-your-data"></a>Informazioni sui dati
+
+![Grafico per lo strumento di allocazione DotNet](../profiling/media/graphdotnetalloc.png "Grafico per lo strumento di allocazione DotNet")
+
+Nella visualizzazione grafica precedente il grafico superiore mostra il numero di oggetti attivi nell'app. Il grafico **Delta dell'oggetto** inferiore mostra la percentuale di modifica degli oggetti app. Le barre rosse indicano quando si è verificata Garbage Collection.
+
+![Grafico filtrato del tempo di allocazione DotNet](../profiling/media/graphdotnetalloctimefiltered.png "Grafico filtrato del tempo di allocazione DotNet")
+
+È possibile filtrare i dati tabulari per visualizzare l'attività solo per un intervallo di tempo specificato. È anche possibile ingrandire o ridurre il grafico.
 
 ### <a name="allocation"></a>Allocation (Allocazione)
 
-![Allocazione espansa](../profiling/media/allocationexpanded.png "Allocazione espansa")
+![Visualizzazione allocazione espansa](../profiling/media/allocationexpandedlight.png "Visualizzazione allocazione espansa")
 
-La visualizzazione di allocazione consente di visualizzare la posizione degli oggetti che allocano memoria e la quantità di memoria che tali oggetti stanno allocando.
+La visualizzazione **allocazione** Mostra la posizione degli oggetti che allocano memoria e la quantità di memoria allocata da tali oggetti.
 
-- La colonna **Nome** è un elenco di varie classi e strutture che occupano memoria. Ogni elemento all'interno della colonna è un nodo che può essere espanso se sono presenti elementi all'interno di tale categoria che occupano memoria. ( Solo visualizzazione**di allocazione)**
-- La colonna **Totale (allocazioni)** mostra il numero di oggetti all'interno di un particolare tipo di allocazione che occupano memoria. **(Allocazione**, **Struttura ad**albero delle chiamate e visualizzazione **Funzioni)**
-- La colonna **Self (allocazioni)** mostra il numero di oggetti all'interno di un singolo elemento che occupa memoria. **(Allocazione**, **Struttura ad**albero delle chiamate e visualizzazione **Funzioni)**
-- Tutte e tre queste colonne sono ordinabili. Nel caso della colonna **Nome,** gli elementi vengono ordinati alfabeticamente (in avanti o all'indietro). Per **Totale** e **Self (Allocazioni)**, è possibile eseguire l'ordinamento numerico (sempre più o in modo crescente).
-- Le colonne **Dimensione totale (byte)** e **Dimensione automatica (byte)** non sono attivate per impostazione predefinita. Per abilitarli, fare clic con il pulsante destro del mouse sulle colonne **Nome,** **Totale** o **Auto (Allocazioni)** e quindi scegliere **Dimensioni totali** e **Dimensioni personalizzate** per aggiungerle al grafico. Le due colonne sono simili a **Totale (allocazioni)** e **Self (allocazioni)** ad eccezione del fatto che invece di mostrare il numero di oggetti che occupano memoria, mostrano la quantità totale di memoria in byte che tali oggetti stanno occupando. [Solo visualizzazione di allocazione]
+- La colonna **tipo**   è un elenco di classi e strutture che utilizzano la memoria. Fare doppio clic su un tipo per visualizzarne il backtrace come albero delle chiamate invertito. Solo nella visualizzazione **allocazione** è possibile visualizzare gli elementi all'interno della categoria selezionata che interessano la memoria.
+
+- Nella colonna **allocazioni**   viene visualizzato il numero di oggetti che utilizzano la memoria all'interno di una particolare funzione o tipo di allocazione. Questa colonna viene visualizzata solo nelle visualizzazioni **allocazione**, **albero delle chiamate**e **funzioni**   .
+
+- Le colonne **bytes**   e **Average size (bytes)**   non vengono visualizzate per impostazione predefinita. Per visualizzarli, fare clic con il pulsante destro del mouse sulla colonna **tipo**   o **allocazioni**   , quindi selezionare le opzioni **byte**   e **dimensioni medie (byte)**   per aggiungerle al grafico. 
+
+   Le due colonne sono simili a **totale (allocazioni)** e **self (allocazioni)**, ad eccezione del fatto che mostrano la quantità di memoria occupata anziché il numero di oggetti che occupano memoria. Queste colonne vengono visualizzate solo nella visualizzazione **allocazione** .
+
+- Nella colonna **nome modulo**   viene visualizzato il modulo che contiene la funzione o il processo che sta chiamando.
+
+Tutte le colonne sono ordinabili. Per le colonne del **tipo** e del **nome del modulo** , è possibile ordinare alfabeticamente gli elementi in ordine crescente o decrescente. Per le **allocazioni**, i **byte**   e le **dimensioni medie (byte)**, è possibile ordinare gli elementi aumentando o diminuendo il valore numerico.
+
+#### <a name="symbols"></a>Simboli
+
+I simboli seguenti vengono visualizzati nelle schede **allocazione**, **albero delle chiamate**e **funzioni** :
+
+- ![Il tipo di valore symbol](../profiling/media/valuetypeicon.png "Simbolo del tipo di valore") , un tipo di valore come Integer
+
+- ![Simbolo della raccolta di tipi di valore](../profiling/media/valuetypecollectionicon.png "Simbolo di raccolta di tipo valore") , ovvero una raccolta di tipi di valore, ad esempio una matrice di numeri interi
+
+- ![Il simbolo del tipo di riferimento](../profiling/media/referencetypeicon.png "Simbolo del tipo di riferimento") , un tipo di riferimento come stringa
+
+- ![Il simbolo della raccolta dei tipi di riferimento](../profiling/media/referencetypecollectionicon.png "Simbolo di raccolta dei tipi di riferimento") , ovvero una raccolta di tipi di riferimento, ad esempio una matrice di stringhe
 
 ### <a name="call-tree"></a>Albero delle chiamate
 
-![Albero delle chiamate](../profiling/media/calltree.png "Albero delle chiamate")
+![Visualizzazione albero delle chiamate](../profiling/media/calltreelight.png "Visualizzazione albero delle chiamate")
 
-La visualizzazione Struttura ad albero **delle chiamate** consente di visualizzare i percorsi di esecuzione delle funzioni che contengono oggetti allocando molta memoria.
+La visualizzazione **albero delle chiamate**Mostra   i percorsi di esecuzione della funzione che contengono oggetti che allocano molta memoria.
 
-- La colonna **Nome funzione** mostra il processo o il nome della funzione contenente oggetti che allocano memoria in base al livello del nodo che si sta controllando.
-- Le colonne **Totale** e **Auto (allocazioni)** mostrano le stesse informazioni della visualizzazione **Allocazione.**
-- La colonna **Nome modulo** mostra il modulo che contiene la funzione o il processo che sta chiamando.
+- Nella colonna **nome funzione**   viene visualizzato il processo o il nome della funzione contenente oggetti che allocano memoria. La visualizzazione è basata sul livello del nodo che si sta controllando.
+- Le colonne **totale (allocazioni)** e **dimensioni totali (byte)**   mostrano il numero di oggetti allocati e la quantità di memoria utilizzata da una funzione e da tutte le altre funzioni da essa chiamate.
+- Le colonne **self (Allocations)** e **self-size (byte)** mostrano il numero di oggetti allocati e la quantità di memoria utilizzata da una singola funzione o tipo di allocazione selezionato.
+- Nella colonna **dimensioni medie (byte)** vengono visualizzate le stesse informazioni presenti nella visualizzazione **allocazioni** .
+- Nella colonna **nome modulo**   viene visualizzato il modulo che contiene la funzione o il processo che sta chiamando.
 
-![Percorso caldo](../profiling/media/hotpath.png "Percorso critico")
+   ![Un percorso critico espanso](../profiling/media/hotpathlight.png "Un percorso critico espanso")
 
-- Il pulsante **Espandi percorso critico** evidenzia un percorso di esecuzione della funzione che contiene molti oggetti che allocano memoria. L'algoritmo inizia in corrispondenza di un nodo di interesse selezionato dall'utente ed evidenzia il percorso della maggior parte delle allocazioni, guidando un utente nella propria indagine.
-- Il pulsante **Mostra percorso critico** attiva o disattiva le icone di fiamma che indicano quale nodo fa parte del percorso **critico.**
+- Il pulsante **Espandi percorso critico** evidenzia un percorso di esecuzione della funzione che contiene molti oggetti che allocano memoria. L'algoritmo inizia in corrispondenza di un nodo selezionato ed evidenzia il percorso della maggior parte delle allocazioni, guidando l'utente nell'analisi.
+- Il pulsante **Mostra percorso critico** Mostra o nasconde i simboli della fiamma che indicano i nodi che fanno parte del percorso critico.
 
 ### <a name="functions"></a>Funzioni
 
-![Funzioni](../profiling/media/functions.png "Funzioni")
+![Visualizzazione funzioni](../profiling/media/functionslight.png "Visualizzazione funzioni")
 
-La visualizzazione **Funzioni** mostra i processi, i moduli e le funzioni che allocano memoria.
+La visualizzazione **funzioni** Mostra i processi, i moduli e le funzioni che allocano memoria.
 
-- La colonna **Nome** mostra i processi come nodi di livello più alto. Sotto i processi ci sono i moduli, e sotto i moduli ci sono funzioni.
-- Le colonne **Totale** e **Auto (allocazioni)** mostrano le stesse informazioni della visualizzazione **Allocazione.**
+- Nella colonna **nome** vengono visualizzati i processi come nodi di livello più alto. I processi sotto sono moduli e sotto i moduli sono funzioni.
+- In queste colonne vengono visualizzate le stesse informazioni eseguite nelle visualizzazioni albero di **allocazione** e **chiamate** :
 
-Le **visualizzazioni Allocazioni**, **Struttura ad**albero delle chiamate e **Funzioni** contengono tutte le opzioni Mostra **codice**My , Mostra codice **nativo**e **Cerca:**
+   - **Totale (allocazioni)**
+   - **Self (allocazioni)**
+   - **Dimensione totale (byte)**
+   - **Dimensione automatica (byte)**
+   - **Dimensioni medie (byte)**
 
-![Barra dei filtri](../profiling/media/filterbar.png "Barra dei filtri")
+### <a name="collection"></a>Raccolta
 
-- **Mostra Just My Code** comprime sistemi, framework e altro codice non utente e in frame **[Codice esterno]** in modo che il codice utente possa essere focalizzato su. Per ulteriori informazioni, vedere [Eseguire il debug del codice utente con Just My Code](../debugger/just-my-code.md).
-- **Mostra codice nativo** mostra il codice nativo all'interno della destinazione di analisi, incluso il codice non utente, se selezionato.
-- La **casella Filtro** consente di filtrare la colonna **Nome** o Nome **funzione** in base al parametro fornito. È sufficiente digitare il campo e la tabella deve filtrare verso il basso per visualizzare solo i tipi che contengono la stringa fornita.
+![Visualizzazione raccolta](../profiling/media/collectionlight.png "Visualizzazione raccolta")
+
+La visualizzazione **raccolta** Mostra il numero di oggetti raccolti o conservati durante Garbage Collection. Questa vista mostra anche i grafici a torta per visualizzare gli oggetti raccolti e superstiti per tipo.
+
+- La colonna **raccolta** indica il numero di oggetti raccolti dal Garbage Collector.
+- La colonna **superstite** Mostra il numero di oggetti rimasti dopo l'esecuzione del Garbage Collector.
+
+### <a name="filtering-tools"></a>Strumenti di filtro
+
+Le visualizzazioni **allocazioni**, **albero delle chiamate**e **funzioni** contengono tutte le opzioni **Mostra Just My Code** e **Mostra codice nativo** e una casella filtro.
+
+- **Mostra Just My Code** comprime sistemi, Framework e altro codice non utente in frame **[codice esterno]** , in modo da potersi concentrare solo sul codice. Per altre informazioni, vedere [eseguire il debug del codice utente con Just My Code](../debugger/just-my-code.md).
+- **Mostra codice nativo** Mostra il codice nativo all'interno della destinazione di analisi e può includere codice non utente.
+- Con la casella filtro è possibile filtrare la colonna nome **o** **nome funzione** in base al valore fornito. Immettere un valore stringa nella casella. La tabella mostra quindi solo i tipi che contengono tale stringa.

@@ -1,7 +1,7 @@
 ---
 title: Disattivare i vincoli durante il riempimento di un set di dati
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - DataRow.BeginEdit
 - DataRow.EndEdit
@@ -20,21 +20,21 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13cde04c3a10833c25fdc351d730b866f876e8da
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7bdb225a5b310f6f602619b2afcee610c3e9258b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586133"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281266"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Disattivare i vincoli durante il riempimento di un set di dati
 
 Se un set di dati contiene vincoli, ad esempio vincoli di chiave esterna, può generare errori correlati all'ordine delle operazioni eseguite sul set di dati. Ad esempio, il caricamento di record figlio prima del caricamento dei record padre correlati può violare un vincolo e causare un errore. Non appena si carica un record figlio, il vincolo controlla il record padre correlato e genera un errore.
 
-Se non è disponibile alcun meccanismo per consentire la sospensione temporanea dei vincoli, viene generato un errore ogni volta che si tenta di caricare un record nella tabella figlio. Un altro modo per sospendere tutti i vincoli in un set di dati consiste nell'<xref:System.Data.DataRow.BeginEdit%2A>e <xref:System.Data.DataRow.EndEdit%2A> proprietà.
+Se non è disponibile alcun meccanismo per consentire la sospensione temporanea dei vincoli, viene generato un errore ogni volta che si tenta di caricare un record nella tabella figlio. Un altro modo per sospendere tutti i vincoli in un set di dati è con le <xref:System.Data.DataRow.BeginEdit%2A> proprietà, e <xref:System.Data.DataRow.EndEdit%2A> .
 
 > [!NOTE]
-> Gli eventi di convalida, ad esempio <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging>, non verranno generati quando i vincoli sono spenti.
+> Gli eventi di convalida, ad esempio <xref:System.Data.DataTable.ColumnChanging> e, <xref:System.Data.DataTable.RowChanging> non verranno generati quando i vincoli sono spenti.
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>Per sospendere i vincoli di aggiornamento a livello di codice
 
@@ -49,7 +49,7 @@ Se non è disponibile alcun meccanismo per consentire la sospensione temporanea 
 
 2. Nella finestra **Proprietà** impostare la proprietà <xref:System.Data.DataSet.EnforceConstraints%2A> su `false`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 - [Relazioni nei set di dati](../data-tools/relationships-in-datasets.md)

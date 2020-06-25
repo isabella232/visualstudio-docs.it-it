@@ -1,32 +1,32 @@
 ---
 title: Eseguire il mapping di classi LINQ to SQL a tabelle/viste (O-R Designer)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0e3103c1b4faa62ff82dafe8ba4aa0ef9193f06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586497"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282124"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Procedura: Creare classi LINQ to SQL con mapping a tabelle e viste (Object Relational Designer)
 
-Le classi [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] con mapping a tabelle e viste di database sono dette *classi di entità*. Per la classe di entità viene eseguito il mapping a un record, mentre per le singole proprietà di una classe di entità viene eseguito il mapping alle singole colonne che costituiscono un record. Creare classi di entità basate su viste o tabelle di database trascinando le tabelle o le viste da **Esplora server** o **Esplora database** sugli [strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). La **finestra di progettazione O/R** genera le classi e applica gli attributi [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] specifici per abilitare la funzionalità [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] (le funzionalità di comunicazione e modifica dei dati del <xref:System.Data.Linq.DataContext>). Per informazioni dettagliate sulle classi [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)], vedere [il modello a oggetti di LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
+Le classi [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] con mapping a tabelle e viste di database sono dette *classi di entità*. Per la classe di entità viene eseguito il mapping a un record, mentre per le singole proprietà di una classe di entità viene eseguito il mapping alle singole colonne che costituiscono un record. Creare classi di entità basate su viste o tabelle di database trascinando le tabelle o le viste da **Esplora server** o **Esplora database** sugli [strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). La **finestra di progettazione di O/R** genera le classi e applica gli [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] attributi specifici per abilitare la [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funzionalità (le funzionalità di comunicazione e modifica dei dati di <xref:System.Data.Linq.DataContext> ). Per informazioni dettagliate sulle [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] classi, vedere [il modello a oggetti LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
 
 > [!NOTE]
 > **O/R Designer** è un semplice mapper relazionale a oggetti perché supporta solo le relazioni di mapping 1:1. In altre parole, una classe di entità può presentare solo una relazione di mapping 1:1 con una tabella o visualizzazione di database. Il mapping complesso, quale il mapping di una classe di entità a più tabelle, non è supportato. Tuttavia, è possibile eseguire il mapping di una classe di entità a una visualizzazione che crea un join tra più tabelle correlate.
 
 ## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Creare classi LINQ to SQL con mapping a tabelle o visualizzazioni di database
 
-Il trascinamento di tabelle o viste da **Esplora server** o **Esplora database** a **Progettazione relazionale** classi crea classi di entità oltre ai metodi di <xref:System.Data.Linq.DataContext> usati per l'esecuzione degli aggiornamenti.
+Il trascinamento di tabelle o viste da **Esplora server** o **Esplora database** a **Progettazione relazionale** classi crea classi di entità oltre ai <xref:System.Data.Linq.DataContext> metodi utilizzati per l'esecuzione degli aggiornamenti.
 
-Per impostazione predefinita, il runtime [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] crea la logica per salvare le modifiche da una classe di entità aggiornabile nel database. Tale logica si basa sullo schema della tabella (definizioni di colonna e informazioni sulla chiave primaria). Se non si desidera questo comportamento, è possibile configurare una classe di entità in modo che utilizzi stored procedure per eseguire inserimenti, aggiornamenti ed eliminazioni anziché utilizzare il comportamento predefinito [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] Runtime. Per altre informazioni, vedere [procedura: assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Per impostazione predefinita, il runtime [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] crea la logica per salvare le modifiche da una classe di entità aggiornabile nel database. Tale logica si basa sullo schema della tabella (definizioni di colonna e informazioni sulla chiave primaria). Se non si desidera questo comportamento, è possibile configurare una classe di entità per l'utilizzo di stored procedure per l'esecuzione di inserimenti, aggiornamenti ed eliminazioni anziché utilizzare il comportamento predefinito della [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] fase di esecuzione. Per altre informazioni, vedere [procedura: assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -61,7 +61,7 @@ Dopo aver creato le classi di entità usando **Progettazione relazionale**oggett
 
 7. Trascinare gli elementi dalla finestra **Origini dati** in un form.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Procedura dettagliata: Creazione di classi LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

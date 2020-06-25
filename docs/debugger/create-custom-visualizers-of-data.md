@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c16b603f1c38eeb3e71718937e7c669ae8ebc9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184549"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280876"
 ---
 # <a name="create-custom-data-visualizers"></a>Creare visualizzatori dati personalizzati
+
  Un *Visualizzatore* fa parte dell' [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfaccia utente del debugger che consente di visualizzare una variabile o un oggetto in modo appropriato al relativo tipo di dati. Ad esempio, un visualizzatore HTML interpreta una stringa HTML e visualizza il risultato come verrebbe visualizzato in una finestra del browser. Un visualizzatore bitmap interpreta una struttura bitmap e visualizza l'elemento grafico che rappresenta. Alcuni visualizzatori consentono di modificare e visualizzare i dati.
 
  Il debugger di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] include sei visualizzatori standard. I visualizzatori di testo, HTML, XML e JSON funzionano su oggetti stringa. Il Visualizzatore dell'albero di WPF Visualizza le proprietà di una struttura ad albero visuale di un oggetto WPF. Il Visualizzatore DataSet funziona per gli oggetti DataSet, DataView e DataTable.
@@ -74,13 +75,25 @@ Per creare l'interfaccia utente del visualizzatore sul lato debugger, creare una
 
 ### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>Per creare l'origine dell'oggetto visualizzatore per il lato oggetto del debug
 
-È possibile specificare il tipo da visualizzare, ovvero l'origine dell'oggetto sottoposto a debug, usando <xref:System.Diagnostics.DebuggerVisualizerAttribute> nel codice del lato debugger.
+Nel codice del lato debugger, modificare <xref:System.Diagnostics.DebuggerVisualizerAttribute> , assegnando il tipo da visualizzare (origine oggetto del lato oggetto del debug) ( <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ). La `Target` proprietà imposta l'origine dell'oggetto. Se si omette l'origine oggetto, il Visualizzatore utilizzerà un'origine oggetto predefinita.
 
-1. Nel codice del lato debugger, modificare <xref:System.Diagnostics.DebuggerVisualizerAttribute> , assegnando l'oggetto origine ( <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ). La `Target` proprietà imposta l'origine dell'oggetto. Se si omette l'origine oggetto, il Visualizzatore utilizzerà un'origine oggetto predefinita.
+::: moniker range=">=vs-2019"
+Il codice del lato oggetto del debug contiene l'origine dell'oggetto che viene visualizzata. L'oggetto dati può eseguire l'override dei metodi di <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> . Una DLL del lato oggetto del debug è necessaria se si vuole creare un visualizzatore autonomo.
+::: moniker-end
 
-1. Per consentire al visualizzatore di modificare e visualizzare gli oggetti dati, eseguire l'override `TransferData` dei `CreateReplacementObject` metodi o da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+Nel codice del lato oggetto del debug:
 
-## <a name="see-also"></a>Vedere anche
+- Per consentire al visualizzatore di modificare gli oggetti dati, l'origine dell'oggetto deve ereditare da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ed eseguire l'override dei `TransferData` `CreateReplacementObject` metodi o.
+
+- Se è necessario supportare la funzionalità multitargeting nel Visualizzatore, è possibile usare i seguenti moniker del Framework di destinazione (TFM) nel file di progetto lato oggetto del debug.
+
+   ```xml
+   <TargetFrameworks>net20;netstandard2.0;netcoreapp2.0</TargetFrameworks>
+   ```
+
+   Questi sono gli unici TFM supportati.
+
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: Scrivere un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Procedura dettagliata: Scrivere un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)

@@ -1,19 +1,19 @@
 ---
 title: La stringa di connessione contiene credenziali con una password in testo non crittografato e non utilizza la sicurezza integrata
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9c807266182b419dc0967288715a187042f83b1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 201d01d5891b1d788245b2ce61b09f43a50731b1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586172"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281474"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>La stringa di connessione contiene credenziali con una password in testo non crittografato e non utilizza la sicurezza integrata
 
@@ -24,7 +24,7 @@ Quando si usano connessioni dati in cui sono contenute informazioni riservate, a
 > [!WARNING]
 > Se si imposta in modo esplicito la proprietà **Impostazioni applicazione** presente nelle proprietà **Connessione** su **False**, la password verrà aggiunta nel file DBML.
 
-## <a name="save-options"></a>Opzioni per il salvataggio
+## <a name="save-options"></a>Opzioni di salvataggio
 
 - Per salvare la stringa di connessione con le informazioni riservate, scegliere **Sì**.
 
@@ -34,6 +34,6 @@ Quando si usano connessioni dati in cui sono contenute informazioni riservate, a
 
    La stringa di connessione viene archiviata come impostazione dell'applicazione, ma non viene inclusa la password.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,7 +1,7 @@
 ---
 title: Salvare dati con i metodi DBDirect di TableAdapter
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,20 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586211"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281609"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare dati con i metodi DBDirect di TableAdapter
 
-In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuzione di istruzioni SQL direttamente in un database utilizzando i metodi DBDirect di un TableAdapter. I metodi DBDirect di un oggetto TableAdapter consentono un elevato livello di controllo degli aggiornamenti del database. È possibile usarli per eseguire istruzioni SQL e stored procedure specifiche chiamando i singoli metodi `Insert`, `Update`e `Delete` in base alle esigenze dell'applicazione, anziché il metodo di `Update` di overload che esegue le istruzioni UPDATE, INSERT e DELETE in un'unica chiamata.
+In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuzione di istruzioni SQL direttamente in un database utilizzando i metodi DBDirect di un TableAdapter. I metodi DBDirect di un oggetto TableAdapter consentono un elevato livello di controllo degli aggiornamenti del database. È possibile usarli per eseguire istruzioni SQL e stored procedure specifiche chiamando i singoli `Insert` metodi, `Update` e in base alle `Delete` esigenze dell'applicazione, anziché il metodo di overload `Update` che esegue le istruzioni Update, INSERT e DELETE in un'unica chiamata.
 
 Durante questa procedura dettagliata, si apprenderà come:
 
-- Creare una nuova applicazione **Windows Forms Application**.
+- Creare una nuova **applicazione Windows Forms**.
 
 - Creare e configurare un set di dati con la [Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
 
@@ -63,7 +63,7 @@ Il primo passaggio consiste nel creare un' **applicazione Windows Forms**.
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
@@ -89,7 +89,7 @@ Questo passaggio usa la **Configurazione guidata origine dati** per creare un'or
 
     - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-         oppure
+         -oppure-
 
     - Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
@@ -99,7 +99,7 @@ Questo passaggio usa la **Configurazione guidata origine dati** per creare un'or
 
 7. Nella schermata **Seleziona oggetti di database** espandere il nodo **tabelle** .
 
-8. Selezionare la tabella `Region`, quindi fare clic su **fine**.
+8. Selezionare la `Region` tabella, quindi fare clic su **fine**.
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella `Region` viene visualizzata nella finestra **Origini dati**.
 
@@ -109,7 +109,7 @@ Creare i controlli associati a dati trascinando elementi dalla finestra **Origin
 
 Per creare controlli associati a dati in Windows Form, trascinare il nodo **area** principale dalla finestra **origini dati** nel form.
 
-Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
+Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter` , <xref:System.Windows.Forms.BindingSource> e viene <xref:System.Windows.Forms.BindingNavigator> visualizzato nella barra dei componenti.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Per aggiungere pulsanti da usare per la chiamata ai singoli metodi DbDirect di TableAdapter
 
@@ -117,11 +117,11 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
 
 2. Impostare le proprietà **Name** e **Text** seguenti per ciascun pulsante.
 
-    |Name|Testo|
+    |Nome|Text|
     |----------|----------|
-    |`InsertButton`|**Inserisci**|
-    |`UpdateButton`|**Aggiornamento**|
-    |`DeleteButton`|**Eliminazione**|
+    |`InsertButton`|**Insert**|
+    |`UpdateButton`|**Update**|
+    |`DeleteButton`|**Elimina**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Per aggiungere il codice per l'inserimento dei nuovi record nel database
 
@@ -150,7 +150,7 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
      [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
      [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
 - Selezionare **F5** per eseguire l'applicazione.
 
@@ -168,6 +168,6 @@ A seconda dei requisiti dell'applicazione, è possibile eseguire diversi passagg
 
 - Aggiunta di altre tabelle al set di dati tramite selezione di **Configura il Dataset con la procedura guidata** nella finestra **Origini dati**. È possibile aggiungere controlli che consentono di visualizzare dati correlati mediante il trascinamento dei nodi correlati nel form. Per altre informazioni, vedere [relazioni nei DataSet](relationships-in-datasets.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

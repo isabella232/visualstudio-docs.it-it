@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: ca65086ce7ce09a1ca288c2f5cd04c31e00f8e95
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911901"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280683"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Aggiunta dell’archiviazione di Azure tramite Servizi connessi di Visual Studio
 
@@ -47,7 +47,7 @@ Dopo il completamento, la finestra di dialogo **Add Connected Services** (Aggiun
 
 1. Nella finestra di dialogo **Archiviazione di Azure** selezionare un account di archiviazione esistente, quindi **Aggiungi**.
 
-    Se è necessario creare un account di archiviazione, andare al passaggio successivo. In caso contrario, andare direttamente al passaggio 6.
+    Se è necessario creare un account di archiviazione, andare al passaggio successivo. In caso contrario, andare al passaggio 6.
 
     ![Aggiungere un account di archiviazione esistente al progetto l'elenco](./media/vs-azure-tools-connected-services-storage/select-azure-storage-account.png)
 
@@ -72,9 +72,9 @@ Una volta terminata la finestra di dialogo, Visual Studio aggiunge riferimenti e
 - Progetti del servizio cloud (ruoli Web e ruoli di lavoro) [Risultati - Progetti del servizio cloud](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs).
 - Progetti di tipo processo Web - [Risultati - Progetti di tipo processo Web](/azure/visual-studio/vs-storage-webjobs-what-happened).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Forum MSDN: archiviazione di Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Forum MSDN: Archiviazione di Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Blog del team di Archiviazione di Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/).
 - [Documentazione di Archiviazione di Azure](/azure/storage/)
 - [Servizi connessi (Visual Studio per Mac)](/visualstudio/mac/connected-services)

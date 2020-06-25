@@ -1,7 +1,7 @@
 ---
 title: Imposta il controllo da creare durante il trascinamento dalla finestra Origini dati
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Data Sources Window, select controls
 - Windows Forms, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f5a3cf2d1f34ca9a3d0c2918a8f3f0a3e05260f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586185"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281539"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati
 
@@ -37,7 +37,7 @@ In questo contesto, il termine *oggetto* fa riferimento a un oggetto business pe
 2. Nella finestra **origini dati** selezionare l'elemento che rappresenta la tabella o l'oggetto dati che si desidera impostare.
 
    > [!TIP]
-   > Se la finestra **origini dati** non è aperta, è possibile aprirla selezionando **Visualizza** > **altre** **origini dati** > di Windows.
+   > Se la finestra **origini dati** non è aperta, è possibile aprirla selezionando **Visualizza**  >  **altre**  >  **origini dati**di Windows.
 
 3. Fare clic sul menu a discesa per l'elemento, quindi fare clic su uno degli elementi seguenti nel menu:
 
@@ -69,6 +69,6 @@ Prima di trascinare un elemento che rappresenta una colonna o una proprietà di 
 
      Se non si desidera creare un controllo per la colonna o la proprietà, selezionare **nessuno** nel menu a discesa. Questa opzione è utile se si desidera trascinare la tabella o l'oggetto padre nella finestra di progettazione, ma non si desidera includere la colonna o la proprietà specifica.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
