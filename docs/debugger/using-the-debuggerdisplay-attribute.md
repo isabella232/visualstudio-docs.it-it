@@ -1,7 +1,7 @@
 ---
 title: Visualizzare informazioni personalizzate con DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - attributes, debugger
 - DebuggerDisplay attribute
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3511b52ab8c04d9018336b4d63b0659792835d99
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728669"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85347872"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicare al debugger cosa visualizzare usando l'attributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicare al debugger cosa visualizzare usando l'attributo DebuggerDisplay (C#, Visual Basic, F #, C++/CLI)
 
 <xref:System.Diagnostics.DebuggerDisplayAttribute> controlla la modalità di visualizzazione di un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly. Se applicato a un tipo di base, l'attributo si applica anche a una sottoclasse.
 
 L'attributo `DebuggerDisplay` presenta un solo argomento, costituito da una stringa da visualizzare nella colonna del valore per le istanze del tipo. Questa stringa può contenere parentesi graffe (`{` e `}`). Il testo racchiuso tra due parentesi graffe viene valutato come un campo, una proprietà o un metodo.
 
-Se una classe dispone di un metodo `ToString()` sottoposto a override, il debugger usa il metodo sottoposto a override anziché il valore `{<typeName>}`predefinito. Pertanto, se è stato eseguito l'override del metodo `ToString()` , il debugger usa il metodo sottoposto a override anziché il valore`{<typeName>}`predefinito e non è necessario usare `DebuggerDisplay`. Se si usano entrambi, l'attributo `DebuggerDisplay` avrà la precedenza sul metodo `ToString()` sottoposto a override. L'attributo `DebuggerDisplay` ha anche la precedenza rispetto al metodo di `ToString()` sottoposto a override in una sottoclasse.
+Se una classe dispone di un metodo `ToString()` sottoposto a override, il debugger usa il metodo sottoposto a override anziché il valore `{<typeName>}`predefinito. Pertanto, se è stato eseguito l'override del metodo `ToString()` , il debugger usa il metodo sottoposto a override anziché il valore`{<typeName>}`predefinito e non è necessario usare `DebuggerDisplay`. Se si usano entrambi, l'attributo `DebuggerDisplay` avrà la precedenza sul metodo `ToString()` sottoposto a override. L' `DebuggerDisplay` attributo ha anche la precedenza sul metodo sottoposto `ToString()` a override in una sottoclasse.
 
 La valutazione da parte del debugger di questa chiamata implicita a `ToString()` dipende da un'impostazione utente nella finestra di dialogo **Strumenti / Opzioni / Debug** . In Visual Basic questa valutazione implicita di `ToString()` non è implementata.
 
@@ -33,7 +33,7 @@ La valutazione da parte del debugger di questa chiamata implicita a `ToString()`
 > Se la casella di controllo **Mostra struttura non elaborata degli oggetti nelle finestre delle variabili** è selezionata nella finestra di dialogo **Strumenti / Opzioni / Debug** , l'attributo `DebuggerDisplay` viene ignorato.
 
 > [!NOTE]
-> Per il codice nativo, questo attributo è supportato solo C++nel codice/CLI.
+> Per il codice nativo, questo attributo è supportato solo nel codice C++/CLI.
 
 Nella tabella riportata di seguito vengono visualizzati alcuni utilizzi possibili dell'attributo `DebuggerDisplay` e alcuni output di esempio.
 
@@ -96,10 +96,10 @@ Il suffisso ", NQ" indica all'analizzatore di espressioni di rimuovere le virgol
 ## <a name="example"></a>Esempio
 Nell'esempio di codice seguente viene illustrato l'utilizzo di `DebuggerDisplay`, insieme a `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando è visualizzato in una finestra delle variabili del debugger, come la finestra **Espressioni di controllo** , produce un'espansione analoga alla seguente:
 
-|**Nome**|**Valore**|**Type**|
+|**Nome**|**Valore**|**Tipo**|
 |--------------|---------------|--------------|
 |Chiave|"three"|oggetto {string}|
-|Value|3\.|oggetto {int}|
+|Valore|3|oggetto {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
@@ -179,9 +179,9 @@ class MyHashtable
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Uso dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
-- [Creare viste personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md)
-- [Identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md)
+- [Utilizzo dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Creazione di visualizzazioni personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md)
+- [Identificatori di formato in C #](../debugger/format-specifiers-in-csharp.md)
 - [Miglioramento del debug tramite gli attributi di visualizzazione del debugger](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

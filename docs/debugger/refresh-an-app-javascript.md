@@ -1,7 +1,7 @@
 ---
 title: Aggiornare un'app UWP | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 0b1d19c0b607d2c5a09fddc9d4550230e478d57a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dd38a758a69b2e19079a2bc2511e7edf5cbfb0ab
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730303"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348158"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Aggiornare un'app UWP in Visual Studio
 
@@ -49,7 +49,7 @@ ms.locfileid: "72730303"
 
 1. Con il progetto UWP aperto in Visual Studio, selezionare **computer locale** come destinazione di debug.
 
-     ![Selezionare l'elenco destinazione di debug](../debugger/media/js_select_target.png "JS_Select_Target")
+     ![Selezionare l'elenco di destinazione del debug](../debugger/media/js_select_target.png "JS_Select_Target")
 
 3. Premi F5 per eseguire l'app in modalità debug.
 
@@ -61,5 +61,5 @@ ms.locfileid: "72730303"
 
 8. Torna all'app. L'app viene ricaricata e il codice HTML aggiornato viene usato per eseguire il rendering dell'app.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

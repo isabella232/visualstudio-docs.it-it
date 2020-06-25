@@ -1,8 +1,8 @@
 ---
-title: Visualizzare la memoria per le variabili nel debugger | Microsoft Docs
+title: Visualizzazione della memoria per le variabili nel debugger | Microsoft Docs
 ms.custom: ''
 ms.date: 10/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -24,98 +24,98 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794400a14cac5b85f813e7a384c650c581a719e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51070e06f684c2e873ded76ec8797ed7587745ff
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905578"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348320"
 ---
-# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usare le finestre di memoria nel debugger di Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usare le finestre di memoria nel debugger di Visual Studio (C#, C++, Visual Basic, F #)
 
-Durante il debug, il **memoria** finestra Mostra lo spazio di memoria, l'app sta usando.
+Durante il debug, la finestra **memoria** Mostra lo spazio di memoria usato dall'app.
 
-Il debugger di windows, ad esempio **Watch**, **Auto**, **variabili locali**e il **controllo immediato** finestra di dialogo Mostra le variabili, che vengono archiviate per specifici posizioni di memoria. Il **memoria** finestra viene visualizzato al quadro generale. La visualizzazione della memoria è utile per esaminare grandi porzioni di dati (buffer o stringhe di grandi dimensioni, ad esempio) che non vengono visualizzate anche in altre finestre.
+Le finestre del debugger come **espressioni di controllo**, **auto**, variabili **locali**e la finestra di dialogo controllo **immediato** mostrano le variabili, archiviate in posizioni specifiche in memoria. Nella finestra **memoria** viene visualizzata l'immagine complessiva. La visualizzazione della memoria è utile per l'analisi di grandi quantità di dati (ad esempio, buffer o stringhe di grandi dimensioni) che non vengono visualizzati correttamente nelle altre finestre.
 
-Il **memoria** finestra non è limitata alla visualizzazione dei dati. Visualizza tutti gli elementi nello spazio di memoria, inclusi i dati, codice e casualmente in memoria non assegnata.
+La finestra **memoria** non è limitata alla visualizzazione dei dati. Vengono visualizzati tutti gli elementi nello spazio di memoria, inclusi i dati, il codice e i bit casuali del Garbage Collector nella memoria non assegnata.
 
-Il **memoria** finestra non è disponibile per uno script o il debug SQL. Questi linguaggi non supportano il concetto di memoria.
+La finestra **memoria** non è disponibile per il debug di script o SQL. Tali lingue non riconoscono il concetto di memoria.
 
 ## <a name="open-a-memory-window"></a>Aprire una finestra memoria
 
-Quali altre finestre del debugger, il **memoria** windows sono disponibili solo durante una sessione di debug.
+Analogamente ad altre finestre del debugger, le finestre di **memoria** sono disponibili solo durante una sessione di debug.
 
 >[!IMPORTANT]
->Per abilitare il **memoria** windows **Abilita debug a livello di indirizzo** deve essere selezionato nella **strumenti** > **opzioni** (o **Debug** > **opzioni**) > **debug** > **generale**.
+>Per abilitare le finestre della **memoria** , è necessario selezionare **Abilita debug a livello di indirizzo** in **strumenti**  >  **Opzioni** (o opzioni di **debug**  >  **Options**) > **debug**  >  **generale**.
 
 **Per aprire una finestra Memoria**
 
-1. Assicurarsi che **abilitare il debug a livello di indirizzo** sia selezionato nel **Tools** > **opzioni** (o **Debug**  >  **Le opzioni**) > **debug** > **generali**.
+1. Assicurarsi che **Abilita debug a livello di indirizzo** sia selezionato **Tools**in  >  **Opzioni** strumenti (o opzioni di **debug**  >  **Options**) > **debug**  >  **generale**.
 
-1. Avviare il debug, selezionare la freccia verde, premendo **F5**, o selezionando **Debug** > **Avvia debug**.
+1. Avviare il debug selezionando la freccia verde, premendo **F5**o scegliendo **debug**  >  **Avvia debug**.
 
-2. Sotto **Debug** > **Windows** > **memoria**selezionare **1 memoria**, **memoria 2**, **Memoria 3**, o **memoria 4**. (Alcune edizioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrono sola **memoria** finestra.)
+2. In **debug**  >  **Windows**  >  **memoria**Windows selezionare **memoria 1**, **memoria 2**, **memoria 3**o **memoria 4**. (Alcune edizioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrono una sola finestra di **memoria** ).
 
 ## <a name="move-around-in-the-memory-window"></a>Spostarsi nella finestra memoria
 
-Lo spazio degli indirizzi di un computer è esteso ed è facilmente possibile perdere il posto giusto mediante lo scorrimento nel **memoria** finestra.
+Lo spazio degli indirizzi di un computer è grande ed è possibile perdere facilmente il posto scorrendo nella finestra **memoria** .
 
 Gli indirizzi di memoria superiori vengono visualizzati nella parte inferiore della finestra. Per visualizzare un indirizzo superiore, scorrere verso il basso. Per visualizzare un indirizzo inferiore, scorrere verso l'alto.
 
-È possibile passare immediatamente a un indirizzo specificato nella **memoria** finestra mediante trascinamento e rilascio o immettendo l'indirizzo nel **indirizzo** campo. Il **indirizzi** campo accetta alfanumerici indirizzi e le espressioni che restituiscono indirizzi, ad esempio `e.User.NonroamableId`.
+È possibile passare immediatamente a un indirizzo specificato nella finestra **memoria** tramite il trascinamento della selezione oppure immettendo l'indirizzo nel campo **Indirizzo** . Il campo **Address** accetta indirizzi alfanumerici ed espressioni che restituiscono indirizzi, ad esempio `e.User.NonroamableId` .
 
-Per forzare immediatamente rivalutazione di un'espressione nel **indirizzi** field, selezionare la freccia arrotondato **Rivaluta automaticamente** icona.
+Per forzare nuovamente la valutazione immediata di un'espressione nel campo **Indirizzo** , selezionare l'icona di rivalutazione **automatica** della freccia arrotondata.
 
-Per impostazione predefinita, il **memoria** trattata nella finestra **indirizzo** espressioni come espressioni in tempo reale, che vengono nuovamente valutate come l'esecuzione dell'app. Le espressioni attive possono essere utile, ad esempio, per visualizzare la memoria selezionata da una variabile puntatore.
+Per impostazione predefinita, la finestra di **memoria** considera le espressioni di **Indirizzo** come espressioni Live, che vengono rivalutate durante l'esecuzione dell'app. Le espressioni Live possono essere utili, ad esempio, per visualizzare la memoria interessata da una variabile del puntatore.
 
-**Per utilizzare il trascinamento della selezione per spostare in una posizione di memoria:**
+**Per usare il trascinamento della selezione per spostarsi in una posizione di memoria:**
 
-1. In qualsiasi finestra del debugger, selezionare un indirizzo di memoria o una variabile puntatore che contiene un indirizzo di memoria.
+1. In qualsiasi finestra del debugger selezionare un indirizzo di memoria o una variabile puntatore che contenga un indirizzo di memoria.
 
-2. Trascinare e rilasciare l'indirizzo o il puntatore nel **memoria** finestra. Tale indirizzo viene quindi visualizzata nel **indirizzi** campo e il **memoria** finestra viene modificata per visualizzare l'indirizzo nella parte superiore.
+2. Trascinare e rilasciare l'indirizzo o il puntatore nella finestra **memoria** . Tale indirizzo viene quindi visualizzato nel campo **Indirizzo** e la finestra **memoria** viene regolata in modo da visualizzare l'indirizzo nella parte superiore.
 
-**Per spostare in una posizione di memoria immettendola nel campo dell'indirizzo:**
+**Per spostarsi in una posizione di memoria inserendola nel campo Indirizzo:**
 
-- Digitare o incollare l'indirizzo o espressione nel **indirizzi** campo e premere **invio**, o sceglierlo dall'elenco a discesa nel **indirizzo** campo. Il **memoria** finestra viene modificata per visualizzare l'indirizzo nella parte superiore.
+- Digitare o incollare l'indirizzo o l'espressione nel campo **Indirizzo** e premere **invio**oppure selezionarlo nell'elenco a discesa nel campo **Indirizzo** . La finestra **memoria** viene modificata in modo da visualizzare l'indirizzo nella parte superiore.
 
 ## <a name="customize-the-memory-window"></a>Personalizzare la finestra memoria
 
-Per impostazione predefinita, il contenuto della memoria vengono visualizzati come numeri interi da 1 byte in formato esadecimale e la larghezza della finestra determina il numero di colonne visualizzate. È inoltre possibile personalizzare il modo in cui il contenuto della memoria viene visualizzato nella finestra **Memoria**.
+Per impostazione predefinita, il contenuto della memoria viene visualizzato come Integer a 1 byte in formato esadecimale e la larghezza della finestra determina il numero di colonne visualizzate. È inoltre possibile personalizzare il modo in cui il contenuto della memoria viene visualizzato nella finestra **Memoria**.
 
 **Per cambiare il formato del contenuto della memoria:**
 
-- Fare doppio clic nella **memoria** finestra e scegliere i formati desiderato dal menu di scelta rapida.
+- Fare clic con il pulsante destro del mouse nella finestra **memoria** e scegliere i formati desiderati dal menu di scelta rapida.
 
-**Per modificare il numero di colonne nella finestra Memoria:**
+**Per modificare il numero di colonne nella finestra memoria:**
 
-- Selezionare la freccia a discesa accanto al **colonne** campo e selezionare il numero di colonne da visualizzare oppure selezionare **automatico** regolazione automatica in base alla larghezza finestra.
+- Selezionare la freccia a discesa accanto al campo **colonne** e selezionare il numero di colonne da visualizzare oppure selezionare **auto** per la regolazione automatica in base alla larghezza della finestra.
 
-Se non si desidera il contenuto del **memoria** finestra per modificare l'App viene eseguita, è possibile disattivare la valutazione dell'espressione in tempo reale.
+Se non si vuole modificare il contenuto della finestra di **memoria** durante l'esecuzione dell'app, è possibile disattivare la valutazione dell'espressione Live.
 
 **Per attivare o disattivare la valutazione diretta:**
 
-- Fare doppio clic nella **memoria** finestra e selezionare **Rivaluta automaticamente** nel menu di scelta rapida.
+- Fare clic con il pulsante destro del mouse nella finestra **memoria** e scegliere **Rivaluta automaticamente** nel menu di scelta rapida.
 
   >[!NOTE]
-  >Live espressione di valutazione e viceversa è attivata per impostazione predefinita, quindi selezionando **Rivaluta automaticamente** lo disattiva. Selezionando **Rivaluta automaticamente** nuovamente riattivato successivamente.
+  >La valutazione dell'espressione dinamica è un elemento di alternanza ed è attivata per impostazione predefinita, quindi la selezione di **Rivaluta automaticamente** lo disattiva. Se si seleziona nuovamente **rivalutazione** , viene nuovamente attivata.
 
-È possibile nascondere o visualizzare la barra degli strumenti nella parte superiore della finestra **Memoria**. Non si avrà accesso per il **indirizzo** campo o altri strumenti quando la barra degli strumenti è nascosta.
+È possibile nascondere o visualizzare la barra degli strumenti nella parte superiore della finestra **Memoria**. Quando la barra degli strumenti è nascosta, non sarà possibile accedere al campo dell' **Indirizzo** o ad altri strumenti.
 
-**Per attivare o disattivare la visualizzazione della barra degli strumenti:**
+**Per abilitare o disabilitare la visualizzazione della barra degli strumenti:**
 
-- Fare doppio clic nella **memoria** finestra e selezionare **Mostra barra degli strumenti** nel menu di scelta rapida. La barra degli strumenti verrà visualizzata o nascosta, a seconda del precedente stato.
+- Fare clic con il pulsante destro del mouse nella finestra **memoria** e scegliere **Mostra barra degli strumenti** nel menu di scelta rapida. La barra degli strumenti verrà visualizzata o nascosta, a seconda del precedente stato.
 
-## <a name="follow-a-pointer-through-memory"></a>Seguire un puntatore in memoria
+## <a name="follow-a-pointer-through-memory"></a>Segui un puntatore tramite memoria
 
-Nelle app di codice nativo, è possibile usare i nomi di registro come espressioni attive. È possibile, ad esempio, utilizzare il puntatore dello stack per seguire lo stack.
+Nelle app in codice nativo, è possibile usare i nomi di registro come espressioni Live. È possibile, ad esempio, utilizzare il puntatore dello stack per seguire lo stack.
 
 **Per osservare il movimento di un puntatore in memoria:**
 
-1. Nel **memoria** finestra **indirizzo** immettere un'espressione puntatore che si trova nell'ambito corrente. A seconda del linguaggio, può essere necessario dereferenziarla.
+1. Nel campo **Indirizzo** della finestra **memoria** immettere un'espressione puntatore nell'ambito corrente. A seconda del linguaggio, può essere necessario dereferenziarla.
 
 2. Premere **INVIO**.
 
-   Quando si usa un comando di debug, ad esempio **passaggio**, l'indirizzo di memoria visualizzato nel **indirizzo** campo e in cima il **memoria** finestra cambia automaticamente quando il puntatore del mouse modifiche.
+   Quando si usa un comando di debug, ad esempio **Step**, l'indirizzo di memoria visualizzato nel campo **Address** e nella parte superiore della finestra **Memory** viene modificato automaticamente quando cambia il puntatore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzare i dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
