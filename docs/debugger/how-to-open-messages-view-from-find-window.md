@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Aprire la visualizzazione messaggi dalla finestra Trova | Microsoft Docs'
+title: 'Procedura: aprire la visualizzazione messaggi dalla finestra trova | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Messages View in Spy++, opening
 - opening Messages View in Spy++
@@ -11,44 +11,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5fef9288a662b6726c185b50a79c8007b586b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3258e45e47c263912957ff5066ea9d02ad03e57e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906580"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349484"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Procedura: Aprire la visualizzazione messaggi dalla finestra Trova
-Può risultare comodo usare la **Trova finestra** finestra di dialogo per selezionare una finestra di destinazione e quindi aprire una visualizzazione di messaggi di tale finestra.
+# <a name="how-to-open-messages-view-from-find-window"></a>Procedura: aprire la visualizzazione messaggi dalla finestra Trova
+Potrebbe risultare utile utilizzare la finestra di dialogo **Trova finestra** per selezionare una finestra di destinazione e quindi aprire una visualizzazione messaggi di tale finestra.
 
-### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Per aprire una finestra di visualizzazione dei messaggi tramite la finestra di dialogo Trova finestra
+### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Per aprire una finestra di visualizzazione messaggi utilizzando la finestra di dialogo Trova finestra
 
-1. Disporre le finestre in modo che sia Spy + + e la finestra di destinazione sono visibili.
+1. Disporre le finestre in modo che siano visibili sia Spy + + che la finestra di destinazione.
 
-2. Dal **Spy** menu, scegliere **Trova finestra**.
+2. Scegliere **Trova finestra**dal menu **Spy** .
 
-    Il [finestra di dialogo Trova](../debugger/find-window-dialog-box.md) apre.
+    Verrà visualizzata la [finestra di dialogo Trova finestra](../debugger/find-window-dialog-box.md) .
 
-3. Dal **Windows** scheda, trascinare le **strumento di ricerca** nell'intervallo di destinazione. Quando si trascina lo strumento, il **Trova finestra** nella finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.
+3. Dalla scheda **Windows** trascinare lo strumento di **ricerca** sulla finestra di destinazione. Quando si trascina lo strumento, nella finestra di dialogo **Trova finestra** vengono visualizzati i dettagli della finestra selezionata.
 
-   - oppure -
+   - - oppure -
 
-     Se hai l'handle della finestra di cui si vuole esaminare (ad esempio, copiato dal debugger), è possibile digitare nel **gestire** casella di testo.
+     Se si dispone dell'handle della finestra che si desidera esaminare (ad esempio, copiato dal debugger), è possibile digitarlo nella casella di testo **handle** .
 
-4. Sotto **mostrare**, selezionare **messaggi**.
+4. In **Mostra**selezionare **messaggi**.
 
 5. Fare clic su **OK**.
 
-    Uno spazio vuoto [visualizzazione messaggi](../debugger/messages-view.md) viene visualizzata una finestra e un **messaggi** menu viene aggiunto alla barra degli strumenti di Spy + +.
+    Viene visualizzata una finestra [visualizzazione messaggi](../debugger/messages-view.md) vuota e viene aggiunto un menu **messaggi** alla barra degli strumenti di Spy + +.
 
-6. Dal **messaggi** menu, scegliere **opzioni di registrazione**.
+6. Dal menu **messaggi** scegliere Opzioni di **registrazione**.
 
-    Il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md) apre.
+    Verrà visualizzata la finestra di [dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md) .
 
 7. Selezionare le opzioni per i messaggi che si desidera visualizzare.
 
-8. Premere **OK** per avviare la registrazione messaggi.
+8. Premere **OK** per avviare la registrazione dei messaggi.
 
-    A seconda delle opzioni selezionate, i messaggi di avviare lo streaming nella finestra di visualizzazione di messaggi attiva.
+    A seconda delle opzioni selezionate, i messaggi iniziano a trasmettere nella finestra Visualizzazione messaggi attivi.
 
-9. Quando si dispone di messaggi sufficiente, scegliere **Arresta registrazione** dalle **messaggi** menu.
+9. Quando si dispone di un numero sufficiente di messaggi, scegliere **Interrompi registrazione** dal menu **messaggi** .

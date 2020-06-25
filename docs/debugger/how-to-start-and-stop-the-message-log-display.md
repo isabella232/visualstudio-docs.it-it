@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Avviare e arrestare la visualizzazione del Log dei messaggi | Microsoft Docs'
+title: Come avviare e arrestare la visualizzazione del log dei messaggi | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - message log display, starting
 - logging, starting message log display
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1fd5a7b7951056f65604bdea67eddcc3e696da
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7165e9a9d3a4d935e01870b6049307b5a85bdce8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825010"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349042"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Procedura: Avviare e arrestare la visualizzazione del log dei messaggi
-Quando un [visualizzazione messaggi](../debugger/messages-view.md) finestra è attiva, una **Start Logging** o **Arresta registrazione** scelto verrà visualizzato in Spy + + **messaggi** menu e il corrispondente **Start Logging** oppure **Arresta registrazione** pulsante della barra degli strumenti diventa attivo.
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Procedura: avviare e arrestare la visualizzazione del log dei messaggi
+Quando una finestra [visualizzazione messaggi](../debugger/messages-view.md) è attiva, viene visualizzata un'opzione **Avvia registrazione** o **Interrompi registrazione** nel menu **messaggi** di Spy + +, mentre il pulsante della barra degli strumenti **Avvia registrazione** o **Interrompi registrazione** diventa attivo.
 
 ### <a name="to-start-the-message-log-display"></a>Per avviare la visualizzazione del log dei messaggi
 
-1. Dal **messaggi** menu, scegliere **Avvia registrazione**.
+1. Scegliere **Avvia registrazione**dal menu **messaggi** .
 
 ### <a name="to-stop-the-message-log-display"></a>Per arrestare la visualizzazione del log dei messaggi
 
-1. Dal **messaggi** menu, scegliere **Arresta registrazione**.
+1. Scegliere **Interrompi registrazione**dal menu **messaggi** .

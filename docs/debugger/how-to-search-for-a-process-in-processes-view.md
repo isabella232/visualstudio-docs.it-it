@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Cercare un processo nella visualizzazione processi | Microsoft Docs'
+title: 'Procedura: cercare un processo nella visualizzazione processi | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Processes view
 - processes, searching for
@@ -11,33 +11,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6b57226b14963759bb4d78afff3beb5559a63e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e823ecb1f7523c1a6f094d5669f4a37a72e84f60
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798985"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349289"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Procedura: Cercare un processo nella visualizzazione processi
-È possibile cercare un processo specifico nella visualizzazione processi usando la relativa stringa di ID o un modulo di processo come criterio di ricerca. È anche possibile specificare la direzione iniziale della ricerca. I campi nella finestra di dialogo mostrerà gli attributi del processo selezionato nell'albero del processo.
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Procedura: cercare un processo nella visualizzazione processi
+È possibile cercare un processo specifico nella visualizzazione processi usando la relativa ID processo o stringa del modulo come criterio di ricerca. È anche possibile specificare la direzione iniziale della ricerca. Nei campi della finestra di dialogo vengono visualizzati gli attributi del processo selezionato nell'albero dei processi.
 
 ### <a name="to-search-for-a-process-in-processes-view"></a>Per cercare un processo nella visualizzazione processi
 
-1. Disporre le finestre in modo tale Spy + + e un oggetto attivo [visualizzazione processi](../debugger/processes-view.md) finestra sono visibili.
+1. Disporre le finestre in modo che Spy + + e una finestra di [visualizzazione processi](../debugger/processes-view.md) attivi siano visibili.
 
-2. Dal **ricerca** menu, scegliere **Trova processo**
+2. Dal menu **Cerca** scegliere **trova processo**
 
-    Il [dialogo Ricerca processi](../debugger/process-search-dialog-box.md) apre.
+    Verrà visualizzata la finestra di [dialogo ricerca processi](../debugger/process-search-dialog-box.md) .
 
 3. Digitare l'ID del processo o una stringa del modulo come criterio di ricerca.
 
-4. Deselezionare tutti i campi per cui non si desidera specificare i valori.
+4. Cancellare i campi per cui non si desidera specificare i valori.
 
    > [!TIP]
-   > Per trovare tutti i processi appartenenti a un modulo, cancellare il **processo** e digitare il nome del modulo nel **modulo** casella. Quindi usare **Trova successivo** per continuare la ricerca dei processi.
+   > Per trovare tutti i processi di proprietà di un modulo, deselezionare la casella **processo** e digitare il nome del modulo nella casella **modulo** . Quindi usare **Trova successivo** per continuare la ricerca di processi.
 
-5. Scegli **iscrizione** oppure **verso il basso** per la direzione iniziale della ricerca.
+5. Scegliere **verso l'alto** o **verso il basso** la direzione iniziale della ricerca.
 
 6. Fare clic su **OK**.
 
-   Se viene trovato un processo di corrispondenza, è evidenziato nel **visualizzazione processo** finestra.
+   Se viene individuato un processo di corrispondenza, questo viene evidenziato nella finestra **visualizzazione processo** .

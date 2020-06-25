@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: visualizzazione di informazioni di traccia WPF | Microsoft Docs'
+title: 'Procedura: visualizzazione delle informazioni di traccia WPF | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 362376176cfb95c4e285f6837c53d277110e3439
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733473"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349783"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Procedura: visualizzare le informazioni di traccia WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] è in grado di ricevere informazioni di traccia di debug da applicazioni WPF e di visualizzare tali informazioni nella finestra **Output**. Per visualizzare le informazioni di traccia di debug, la tracciatura WPF deve essere abilitata.
@@ -30,7 +30,7 @@ ms.locfileid: "72733473"
 
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Per abilitare o personalizzare le informazioni di traccia WPF
 
-1. Scegliere **Opzioni** dal menu **Strumenti**.
+1. Nel menu **Strumenti** selezionare **Opzioni**.
 
 2. Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.
 
@@ -66,7 +66,7 @@ ms.locfileid: "72733473"
 
 ### <a name="to-disable-wpf-trace-information"></a>Per disabilitare le informazioni di traccia WPF
 
-1. Scegliere **Opzioni** dal menu **Strumenti**.
+1. Nel menu **Strumenti** selezionare **Opzioni**.
 
 2. Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.
 
@@ -84,5 +84,5 @@ ms.locfileid: "72733473"
 
 8. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di WPF](../debugger/debugging-wpf.md)

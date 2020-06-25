@@ -1,23 +1,23 @@
 ---
-title: Analizzare un'app con il debug cronologico | Microsoft Docs
+title: Esaminare l'app con il debug cronologico | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848194"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350446"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Analizzare un'app con IntelliTrace in Visual Studio di debug cronologico (C#, Visual Basic, C++)
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Esaminare l'app con il debug cronologico di IntelliTrace in Visual Studio (C#, Visual Basic, C++)
 
-È possibile usare [debug cronologico](../debugger/historical-debugging.md) per spostarsi all'indietro e avanti l'esecuzione dell'applicazione e controllare lo stato.
+È possibile utilizzare il [debug cronologico](../debugger/historical-debugging.md) per spostarsi avanti e indietro durante l'esecuzione dell'applicazione ed esaminarne lo stato.
 
 È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition (ma non le edizioni Professional o Community).
 
@@ -51,9 +51,9 @@ private static int AddInt(int add)
 }
 ```
 
-Si presuppone che il valore previsto di `resultInt` dopo la chiamata `AddAll()` è pari a 20 (il risultato di incremento `testInt` 20 volte). (Si presuppone inoltre che è possibile visualizzare i bug in `AddInt()`). Ma il risultato è effettivamente 44. Come è possibile individuare i bug senza scorrere `AddAll()` 10 volte? È possibile utilizzare il debug cronologico per individuare l'errore in modo più semplice e rapido. Ecco come:
+Si presuppone che il valore previsto di `resultInt` dopo la chiamata `AddAll()` è pari a 20 (il risultato di incremento `testInt` 20 volte). Si presuppone anche che il bug non sia visibile in `AddInt()` . Ma il risultato è effettivamente 44. Come è possibile individuare i bug senza scorrere `AddAll()` 10 volte? È possibile utilizzare il debug cronologico per individuare l'errore in modo più semplice e rapido. Ecco come:
 
-1. Nelle **strumenti > Opzioni > IntelliTrace > Generale**, verificare che IntelliTrace sia abilitato e selezionare **eventi IntelliTrace e informazioni sulle chiamate**. Se non si seleziona questa opzione, non sarà in grado di visualizzare la barra di navigazione (come illustrato di seguito).
+1. In **strumenti > opzioni > intellitrace > generale**, verificare che IntelliTrace sia abilitato e selezionare **eventi IntelliTrace e informazioni sulle chiamate**. Se non si seleziona questa opzione, non sarà in grado di visualizzare la barra di navigazione (come illustrato di seguito).
 
 2. Impostare un punto di interruzione nella riga `Console.WriteLine(resultInt);` .
 
@@ -61,7 +61,7 @@ Si presuppone che il valore previsto di `resultInt` dopo la chiamata `AddAll()` 
 
 4. Aprire la finestra **Strumenti di diagnostica** (**Debug > Mostra strumenti di diagnostica**). La finestra codici dovrebbe risultare simile alla seguente:
 
-    ![Finestra del codice nel punto di interruzione](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")
+    ![Finestra del codice al punto di interruzione](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")
 
 5. Verrà visualizzata una doppia freccia accanto al margine sinistro, appena sopra il punto di interruzione. Quest'area viene chiamata barra di navigazione e viene usata per il debug cronologico. Fare clic sulla freccia.
 
@@ -69,7 +69,7 @@ Si presuppone che il valore previsto di `resultInt` dopo la chiamata `AddAll()` 
 
     La finestra del codice è ora simile al seguente:
 
-    ![finestra del codice in modalità debug cronologico](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
+    ![finestra del codice in modalità Debug cronologico](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")
 
 6. Ora è possibile eseguire il metodo `AddAll()` (**F11** o il pulsante **Esegui istruzione** nella barra di navigazione. Andare avanti (**F10** o **Passa a chiamata successiva** nella barra di navigazione. La riga rosa contiene ora il `j = AddInt(j);` riga. **F10** in questo caso non passa alla riga di codice successiva. Al contrario, i passaggi per la successiva chiamata di funzione. Il debug cronologico consente di passare da una chiamata a altra e ignora le righe di codice che non includono una chiamata di funzione.
 
@@ -79,5 +79,5 @@ Si presuppone che il valore previsto di `resultInt` dopo la chiamata `AddAll()` 
 
 Questa procedura è solo un breve accenno delle operazioni che si possono eseguire con il debug cronologico.
 
-- Per visualizzare gli snapshot durante il debug, vedere [ispezionare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md).
+- Per visualizzare gli snapshot durante il debug, vedere [esaminare gli Stati delle app precedenti con IntelliTrace](../debugger/view-historical-application-state.md).
 - Per altre informazioni sulle diverse impostazioni e gli effetti dei diversi pulsanti nella barra di navigazione, vedere [Funzionalità IntelliTrace](../debugger/intellitrace-features.md).

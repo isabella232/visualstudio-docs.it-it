@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: ripristinare comandi nascosti del debugger | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a45791843abe3051bacb9655c773ac9dfc6b9045
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 13b4db03a75decd41430c282a67276caa60182d8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732903"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349380"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Procedura: ripristinare comandi nascosti del debugger
 Quando si installa Visual Studio, viene chiesto di scegliere una serie di impostazioni IDE predefinite per il linguaggio di programmazione principale. Le impostazioni IDE predefinite per alcuni linguaggi possono nascondere determinati comandi del debugger.
@@ -34,7 +34,7 @@ Quando si installa Visual Studio, viene chiesto di scegliere una serie di impost
 
 1. Dopo avere aperto un progetto, scegliere **Personalizza** dal menu **Strumenti**.
 
-2. Nella finestra di dialogo **Personalizza** fare clic sulla scheda **Comandi**.
+2. Nella finestra di dialogo **Personalizza** fare clic sulla scheda **Comandi** .
 
 3. Nell'elenco a discesa **Barra dei menu** selezionare il menu **Debug** in cui si vuole includere il comando ripristinato.
 
@@ -60,18 +60,18 @@ Quando si installa Visual Studio, viene chiesto di scegliere una serie di impost
 
 3. Nella pagina **Salvare le impostazioni correnti** specificare se si desidera salvare le impostazioni personali correnti e quindi fare clic su **Avanti**.
 
-4. Nella pagina **Scegliere una raccolta di impostazioni da importare** scegliere una raccolta di impostazioni di sviluppo contenente i comandi da usare nella cartella **Impostazioni predefinite**. In caso di dubbi sulla raccolta da scegliere, provare a selezionare **Impostazioni generali per lo sviluppo** o **Impostazioni di sviluppo di Visual C++** , che contengono la maggior parte dei comandi del debugger.
+4. Nella pagina **Scegliere una raccolta di impostazioni da importare** scegliere una raccolta di impostazioni di sviluppo contenente i comandi da usare nella cartella **Impostazioni predefinite**. In caso di dubbi sulla raccolta da scegliere, provare a selezionare **Impostazioni generali per lo sviluppo** o **Impostazioni di sviluppo di Visual C++**, che contengono la maggior parte dei comandi del debugger.
 
-5. Scegliere **Avanti**.
+5. Fare clic su **Avanti**.
 
 6. Nella pagina **Scegliere le impostazioni da importare** assicurarsi che sia selezionata l'opzione **Debug** in **Opzioni**. Deselezionare le altre caselle di controllo, a meno che non si desideri importare anche tali impostazioni.
 
-7. Scegliere **Fine**.
+7. Fare clic su **Fine**.
 
 8. Nella pagina **Importazione completa** esaminare gli eventuali errori associati alla riconfigurazione delle impostazioni in **Dettagli**.
 
-9. Fare clic su **Chiudi**.
+9. Fare clic su **Close**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

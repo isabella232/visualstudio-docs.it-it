@@ -3,7 +3,7 @@ title: Eseguire il debug di servizi Azure Kubernetes Azure ASP.NET attivi
 description: Informazioni su come impostare punti di acquisizione snapshot e visualizzare gli snapshot con Snapshot Debugger.
 ms.custom: ''
 ms.date: 02/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugger
 author: poppastring
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 6eb7af4ead7cd58a0ccf36cbeb2b9fc56e890315
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e0f062108f19b38c6bf6514eda78098f493b3f78
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415745"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350654"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Eseguire il debug di servizi Azure Kubernetes Azure ASP.NET attivi con Snapshot Debugger
 
@@ -26,7 +26,7 @@ Snapshot Debugger crea uno snapshot delle app in produzione quando viene eseguit
 
 I punti di acquisizione snapshot e i punti di inserimento istruzione di registrazione sono simili ai punti di interruzione, ma a differenza dei punti di interruzione, l'applicazione non viene interrotta al raggiungimento dei punti di acquisizione snapshot. L'acquisizione di uno snapshot in un punto di acquisizione snapshot richiede in genere 10-20 millisecondi.
 
-In questa esercitazione si eseguono le attività seguenti:
+In questa esercitazione si apprenderà come:
 
 > [!div class="checklist"]
 > * Avviare Snapshot Debugger
@@ -54,7 +54,7 @@ In questa esercitazione si eseguono le attività seguenti:
     > [!IMPORTANT]
     > Per eseguire il debug di snapshot, è necessario aprire la *stessa versione del codice sorgente* pubblicata nel servizio Azure Kubernetes.
 
-1. Scegliere **Debug > Collega Snapshot Debugger**. Selezionare la risorsa del servizio Azure Kubernetes in cui è distribuita l'app Web e un account di archiviazione di Azure, quindi fare clic su **Collega**. Snapshot Debugger supporta anche il [servizio app Azure](debug-live-azure-applications.md) e le [macchine virtuali di Azure & i set di scalabilità di macchine virtuali](debug-live-azure-virtual-machines.md).
+1. Scegliere **Debug > connetti snapshot debugger...**. Selezionare la risorsa AKS in cui è distribuita l'app Web e un account di archiviazione di Azure e quindi fare clic su **Connetti**. Snapshot Debugger supporta anche il [servizio app Azure](debug-live-azure-applications.md) e le [macchine virtuali di Azure & i set di scalabilità di macchine virtuali](debug-live-azure-virtual-machines.md).
 
     ![Avviare Snapshot Debugger dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -104,7 +104,7 @@ Una volta impostato un ancoraggio, è possibile generare manualmente uno snapsho
 
 È anche possibile aggiungere ulteriori punti di acquisizione snapshot all'app e attivarli con il pulsante **Aggiorna raccolta**.
 
-**Serve aiuto?** Vedere le pagine [Risoluzione dei problemi e problemi noti](../debugger/debug-live-azure-apps-troubleshooting.md) e [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md).
+**Richiesta di assistenza** Vedere le pagine [Risoluzione dei problemi e problemi noti](../debugger/debug-live-azure-apps-troubleshooting.md) e [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md).
 
 ## <a name="set-a-conditional-snappoint"></a>Impostare un punto di acquisizione snapshot condizionale
 

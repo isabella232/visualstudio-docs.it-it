@@ -2,7 +2,7 @@
 title: Visualizzare lo stack di chiamate nel debugger | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/29/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535984"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348743"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Visualizzare lo stack di chiamate e utilizzare la finestra stack di chiamate nel debugger
 
@@ -54,7 +54,7 @@ Quando i [simboli di debug](#bkmk_symbols) non sono disponibili per una parte di
 
 - Durante il debug, scegliere **Windows > stack di chiamate**dal menu **debug** .
 
-  ![Finestra stack di chiamate](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![Finestra Stack di chiamate](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 Lo stack frame in cui è attualmente posizionato il puntatore di esecuzione è contraddistinto da una freccia gialla. Per impostazione predefinita, le informazioni di questo stack frame vengono visualizzate nelle finestre origine, **variabili locali**, **auto**, **espressioni di controllo**e **Disassembly** . Per modificare il contesto del debugger in un altro frame dello stack, [passare a un altro stack frame](#bkmk_switch).
 
@@ -66,7 +66,7 @@ Il codice non utente è un codice non visualizzato quando [Just My Code](../debu
 
 `[<External Code>]`
 
-## <a name="bkmk_switch"></a>Passare a un'altra stack frame (modificare il contesto del debugger)
+## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a>Passare a un'altra stack frame (modificare il contesto del debugger)
 
 1. Nella finestra **stack di chiamate** fare clic con il pulsante destro del mouse sul stack frame di cui si desidera visualizzare il codice e i dati.
 
@@ -96,25 +96,25 @@ Il codice non utente è un codice non visualizzato quando [Just My Code](../debu
 
 In Visual Studio Enterprise (solo), è possibile visualizzare le mappe codice per lo stack di chiamate durante il debug.
 
-- Nella finestra **Stack di chiamate** aprire il menu di scelta rapida. Scegliere **Mostra stack di chiamate nella mappa codice** (**Ctrl**  + **MAIUSC**  +  **`** ).
+- Nella finestra **Stack di chiamate** aprire il menu di scelta rapida. Scegliere **Mostra stack di chiamate nella mappa codice** (**CTRL**  +  **MAIUSC**  +  **`** ).
 
     Per altre informazioni, vedere [eseguire il mapping dei metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
 ![Mostra stack di chiamate nella mappa codici](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Visualizzare il codice disassembly per una funzione nello stack di chiamate (C#, C++, Visual Basic,) F#
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Visualizzare il codice disassembly per una funzione nello stack di chiamate (C#, C++, Visual Basic, F #)
 
 - Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si desidera esaminare il codice del disassembly e selezionare **Vai a disassembly**.
 
 ## <a name="change-the-optional-information-displayed"></a>Modificare le informazioni facoltative visualizzate
 
-- Fare clic con il pulsante destro del mouse nella finestra **stack di chiamate** e impostare o deselezionare **Mostra \<** _le informazioni che si desidera_  **>** .
+- Fare clic con il pulsante destro del mouse nella finestra **stack di chiamate** e impostare o deselezionare **Mostra \<**_the information that you want_**> **.
 
-## <a name="bkmk_symbols"></a>Caricare i simboli per un moduloC#( C++,, Visual Basic F#,)
+## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a>Caricare i simboli per un modulo (C#, C++, Visual Basic, F #)
 
 Nella finestra **Stack di chiamate** è possibile caricare i simboli di debug per un codice che non ne dispone. Questi simboli possono essere simboli di sistema o .NET scaricati dai server dei simboli pubblici Microsoft o simboli in un percorso di simboli nel computer in cui si esegue il debug.
 
-Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ### <a name="to-load-symbols"></a>Per caricare i simboli
 
@@ -132,15 +132,15 @@ Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugg
 
 3. Nella finestra di dialogo **Opzioni** fare clic sull'icona della cartella.
 
-     Viene visualizzato un cursore nella casella **Percorsi dei file di simboli (pdb)** .
+     Viene visualizzato un cursore nella casella **Percorsi dei file di simboli (pdb)**.
 
 4. Immettere un percorso di directory per la posizione del simbolo nel computer in cui si esegue il debug. Per il debug locale e remoto, si tratta di un percorso nel computer locale.
 
 5. Selezionare **OK** per chiudere la finestra di dialogo **Opzioni** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Codice misto e informazioni mancanti nella finestra Stack di chiamate](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
+- [Codice misto e informazioni mancanti nella finestra stack di chiamate](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
-- [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-- [Uso di punti di interruzione](../debugger/using-breakpoints.md)
+- [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Utilizzo di punti di interruzione](../debugger/using-breakpoints.md)

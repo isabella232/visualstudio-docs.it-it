@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: eseguire il debug di codice ottimizzato | Microsoft Docs'
+title: Come eseguire il debug di codice ottimizzato | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e3c08ce9605560173d6f29817372dee4af8d622e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430670"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349978"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procedura: eseguire il debug di codice ottimizzato
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 > [!NOTE]
 > L'opzione del compilatore [/Zo (Ottimizzare il debug)](/cpp/build/reference/zo-enhance-optimized-debugging) (introdotta in Visual Studio Update 3) genera informazioni più complete sul debug per il codice ottimizzato (progetti non compilati con l'opzione del compilatore **/Od**). Vedere [Opzioni /O (Ottimizza codice)](/cpp/build/reference/o-options-optimize-code). Questo include un supporto migliorato per il debug delle variabili locali e delle funzioni inline.
@@ -52,7 +52,7 @@ ms.locfileid: "72430670"
 
   Le variabili globali e di tipo statico vengono visualizzate sempre correttamente, analogamente al layout delle strutture. Se si dispone di un puntatore a una struttura e il valore di questo puntatore è corretto, tutte le variabili membro della struttura conterranno il valore corretto.
 
-  A causa di queste limitazioni, è opportuno eseguire il debug usando, se possibile, una versione del programma non ottimizzata. Per impostazione predefinita, l'ottimizzazione è disattivata nella configurazione di C++ debug di un programma e attivata nella configurazione di rilascio.
+  A causa di queste limitazioni, è opportuno eseguire il debug usando, se possibile, una versione del programma non ottimizzata. Per impostazione predefinita, l'ottimizzazione è disattivata nella configurazione di debug di un programma C++ e attivata nella configurazione di rilascio.
 
   Può tuttavia accadere che un bug venga individuato solo nella versione ottimizzata di un programma. In tal caso è necessario effettuare il debug del codice ottimizzato.
 
@@ -62,19 +62,19 @@ ms.locfileid: "72430670"
 
 2. Selezionare il progetto in Esplora soluzioni.
 
-3. Scegliere **Pagine delle proprietà** dal menu **Visualizza**.
+3. Nel menu **Visualizza** fare clic su **Pagine delle proprietà**.
 
 4. Nella finestra di dialogo **Pagine delle proprietà** verificare che sia selezionata la voce `Debug` nell'elenco a discesa **Configurazione**.
 
-5. Nella struttura di cartelle visualizzata a sinistra selezionare la cartella **C/C++** .
+5. Nella struttura di cartelle visualizzata a sinistra selezionare la cartella **C/C++**.
 
 6. Nella cartella **C++** selezionare `Optimization`.
 
-7. Nell'elenco di proprietà situato a destra cercare `Optimization`. L'impostazione accanto a tale opzione sarà probabilmente `Disabled (`[/Od](/cpp/build/reference/od-disable-debug)`)`. Scegliere una delle altre opzioni (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(`[/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(`[/Ox](/cpp/build/reference/ox-full-optimization)`)` o `Custom`).
+7. Nell'elenco di proprietà situato a destra cercare `Optimization`. L'impostazione accanto a essa probabilmente indica `Disabled (` [/od](/cpp/build/reference/od-disable-debug) `)` . Scegliere una delle altre opzioni ( `Minimum Size``(` [/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` , `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed) `)` , `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)` o `Custom` ).
 
 8. Se si è scelto l'opzione `Custom` per `Optimization`, a questo punto è possibile impostare le opzioni per le altre proprietà presenti nell'elenco.
 
-9. Selezionare il nodo Proprietà di configurazione,C++C/, riga di comando della pagina delle proprietà del progetto e aggiungere `(`[/zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` alla casella di testo **Opzioni aggiuntive** .
+9. Selezionare il nodo Proprietà di configurazione, C/C++, riga di comando della pagina delle proprietà del progetto e aggiungere `(` [/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` alla casella di testo **Opzioni aggiuntive** .
 
     > [!WARNING]
     > `/Zo` richiede Visual Studio 2013 Update 3 o una versione successiva.
@@ -89,7 +89,7 @@ for (x=0; x<10; x++)
 
  Si supponga di impostare un punto di interruzione in questa riga. Ci si aspetterebbe che il punto di interruzione venga raggiunto 10 volte, ma se il codice è ottimizzato, il punto di interruzione verrà raggiunto solo una volta. Ciò è dovuto al fatto che la prima istruzione imposta il valore di `x` su 0. Il compilatore riconosce che questa operazione deve essere eseguita solo una volta ed esce dal ciclo. Il punto di interruzione si sposta con essa. Le istruzioni che confrontano e incrementano `x` rimangono all'interno del ciclo. Quando si visualizza la finestra **Disassembly**, l'[unità di esecuzione](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) viene impostata automaticamente su Istruzione per consentire un maggiore controllo, utile se si esegue il codice un'istruzione alla volta.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

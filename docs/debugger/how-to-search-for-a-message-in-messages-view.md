@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Cercare un thread nella visualizzazione messaggi | Microsoft Docs'
+title: 'Procedura: ricerca di un messaggio nella visualizzazione messaggi | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Message Search dialog box
 - Messages view
@@ -12,41 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f99c30c23461ada406bb0650f86d45d2a4a2e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7145732ef635d550aa883603b0f56090eb6d1278
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388410"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349315"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Procedura: Cercare un messaggio nella visualizzazione messaggi
-È possibile cercare un messaggio specifico nella visualizzazione dei messaggi tramite relativo handle, tipo o ID del messaggio come criterio di ricerca. Una di queste, o una combinazione, ovvero saranno i criteri di ricerca valida. La direzione iniziale della ricerca può anche essere specificata. I campi nella finestra di dialogo sono precaricati con gli attributi del messaggio attualmente selezionato.
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Procedura: cercare un thread nella visualizzazione messaggi
+È possibile cercare un messaggio specifico nella visualizzazione messaggi utilizzando il relativo handle, tipo o ID messaggio come criterio di ricerca. Uno qualsiasi di questi, o una combinazione, sarà un criterio di ricerca valido. È possibile specificare anche la direzione iniziale della ricerca. I campi della finestra di dialogo vengono precaricati con gli attributi del messaggio attualmente selezionato.
 
 ### <a name="to-search-for-a-message-in-messages-view"></a>Per cercare un messaggio nella visualizzazione messaggi
 
-1. Disporre le finestre in modo tale Spy + + e un oggetto attivo [visualizzazione messaggi](../debugger/messages-view.md) finestra sono visibili.
+1. Disporre le finestre in modo che Spy + + e una finestra di [visualizzazione dei messaggi](../debugger/messages-view.md) attivi siano visibili.
 
-2. Dal **ricerca** menu, scegliere **Trova messaggio**.
+2. Dal menu **Cerca** scegliere **Trova messaggio**.
 
-    Il [finestra di dialogo Ricerca messaggi](../debugger/message-search-dialog-box.md) apre.
+    Verrà visualizzata la finestra di [dialogo Ricerca messaggi](../debugger/message-search-dialog-box.md) .
 
-3. Trascinare il **strumento di ricerca** rispetto alla finestra desiderata. Quando si trascina lo strumento, il **ricerca messaggi** nella finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.
+3. Trascinare lo **strumento di ricerca** sulla finestra desiderata. Quando si trascina lo strumento, nella finestra di dialogo **Ricerca messaggi** vengono visualizzati i dettagli della finestra selezionata.
 
-   - oppure -
+   - - oppure -
 
-     Se hai l'handle della finestra di cui si desidera esaminare i messaggi, digitarla nella **gestire** casella di testo.
+     Se si dispone dell'handle della finestra di cui si desidera esaminare i messaggi, digitarlo nella casella di testo **handle** .
 
-   - oppure -
+   - - oppure -
 
-     Se si conosce il tipo di messaggio e/o ID del messaggio desiderati, selezionarli dal **tipo** e **messaggio** menu a discesa e deselezionare il **gestire** casella di testo.
+     Se si conosce il tipo di messaggio e/o l'ID del messaggio desiderato, selezionarli nei menu a discesa **tipo** e **messaggio** e deselezionare la casella di testo **handle** .
 
-4. Deselezionare tutti i campi per cui non si desidera specificare i valori.
+4. Cancellare i campi per cui non si desidera specificare i valori.
 
    > [!TIP]
-   > Per ridurre il disordine schermata, selezionare la **Nascondi Spy + +** opzione. Questa opzione consente di nascondere la finestra principale di Spy + + e di mantenere solo le **Trova finestra** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni. La finestra principale di Spy + + è ripristinata quando si fa clic **OK** oppure **Cancel**, o quando si cancella il **Nascondi Spy + +** opzione.
+   > Per ridurre il disordine dello schermo, selezionare l'opzione **Nascondi Spy** . Questa opzione consente di nascondere la finestra principale di Spy + +, lasciando visibile solo la finestra di dialogo **Trova finestra** nella parte superiore delle altre applicazioni. La finestra principale di Spy + + viene ripristinata quando si fa clic su **OK** o **Annulla**oppure quando si deseleziona l'opzione **Nascondi Spy + +** .
 
-5. Scegli **iscrizione** oppure **verso il basso** per la direzione iniziale della ricerca.
+5. Scegliere **verso l'alto** o **verso il basso** la direzione iniziale della ricerca.
 
 6. Fare clic su **OK**.
 
-   Se viene trovato un messaggio corrisponda, evidenziarlo nella finestra di visualizzazione dei messaggi. Visualizzare [la visualizzazione messaggi](../debugger/messages-view.md).
+   Se viene trovato un messaggio corrispondente, questo viene evidenziato nella finestra Visualizzazione messaggi. Vedere [visualizzazione messaggi](../debugger/messages-view.md).

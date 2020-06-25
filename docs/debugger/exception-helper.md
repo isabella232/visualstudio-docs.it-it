@@ -1,7 +1,7 @@
 ---
 title: Esaminare un'eccezione-Visual Studio | Microsoft Docs
 ms.date: 1/18/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dae1609486ec4f3462be89b0526467dd7414647
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76829789"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350498"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Esaminare un'eccezione usando l'helper eccezioni 
 
@@ -38,7 +38,7 @@ Quando il debugger interrompe un'eccezione, viene visualizzata un'icona di error
 È possibile leggere immediatamente il tipo di eccezione e il messaggio di eccezione nell'helper eccezioni e se l'eccezione è stata generata o non gestita. È possibile esaminare e visualizzare le proprietà dell'oggetto eccezione facendo clic sul collegamento **Visualizza dettagli** .
 
 ## <a name="analyze-null-references"></a>Analizza riferimenti null
-A partire da Visual Studio 2017, sia per .NET che perC++ C/code, quando si raggiunge un `NullReferenceException` o un `AccessViolation`, vengono visualizzate le informazioni di analisi null nell'helper eccezioni. L'analisi viene visualizzata come testo sotto il messaggio dell'eccezione. Nell'illustrazione seguente le informazioni sono visualizzate come "**s** is null".
+A partire da Visual Studio 2017, per il codice .NET e C/C++, quando si raggiunge un `NullReferenceException` oggetto o `AccessViolation` , vengono visualizzate le informazioni di analisi null nell'helper eccezioni. L'analisi viene visualizzata come testo sotto il messaggio dell'eccezione. Nell'illustrazione seguente le informazioni sono visualizzate come "**s** is null".
 
 ![Analisi null Helper eccezioni](media/debugger-exception-helper-default.png)
 
@@ -55,9 +55,9 @@ Se l'eccezione presenta eccezioni interne ([innerException](https://docs.microso
 ![Helper eccezione con eccezione interna](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="inspect-rethrown-exceptions"></a>Controllare le eccezioni rigenerate
-Nei casi in cui un'eccezione è stata `thrown` l'helper eccezioni Mostra lo stack di chiamate dalla prima volta che è stata generata l'eccezione. Se l'eccezione è stata generata più volte, viene visualizzato solo lo stack di chiamate dell'eccezione originale.
+Nei casi in cui è stata rilevata un'eccezione `thrown` , l'helper eccezioni Mostra lo stack di chiamate dalla prima volta che è stata generata l'eccezione. Se l'eccezione è stata generata più volte, viene visualizzato solo lo stack di chiamate dell'eccezione originale.
 
 ![Helper eccezioni con eccezioni rigenerate](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Condividere una sessione di debug con Live Share
-Dall'helper eccezioni è possibile avviare una sessione di [Live Share](https://docs.microsoft.com/visualstudio/liveshare/) usando il collegamento **avvia Live Share sessione...** . Tutti gli utenti che partecipano alla sessione Live Share possono visualizzare l'helper eccezioni insieme a qualsiasi altra informazione di debug.
+Dall'helper eccezioni è possibile avviare una sessione di [Live Share](https://docs.microsoft.com/visualstudio/liveshare/) usando il collegamento **avvia Live Share sessione...**. Tutti gli utenti che partecipano alla sessione Live Share possono visualizzare l'helper eccezioni insieme a qualsiasi altra informazione di debug.

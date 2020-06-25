@@ -2,7 +2,7 @@
 title: Eseguire il debug di un pacchetto dell'app UWP installato | Microsoft Docs
 ms.custom: ''
 ms.date: 11/07/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c2e94e9fa80145489bddfb005b7136bdff8a71
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211298"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350732"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Eseguire il debug di un pacchetto dell'app UWP installato in Visual Studio
 
@@ -38,7 +38,7 @@ Per altre informazioni sul debug di app UWP, vedere il post di Blog sul [debug d
 
 ## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Eseguire il debug di un'app UWP installata in un computer locale
 
-1. In Visual Studio selezionare **debug** > **altre destinazioni** > di debug**debug pacchetto app installato**.
+1. In Visual Studio selezionare **debug**  >  **altre destinazioni**di debug  >  **debug pacchetto app installato**.
 
 1. Nella finestra di dialogo **debug pacchetto app installato** in **tipo di connessione**Selezionare **computer locale**.
 
@@ -52,9 +52,9 @@ Per altre informazioni sul debug di app UWP, vedere il post di Blog sul [debug d
 1. Selezionare **Start**oppure, se l'app è in esecuzione, selezionare **Connetti**.
 
 > [!NOTE]
-> È anche possibile connettersi a qualsiasi UWP in esecuzione o a un altro processo dell'app selezionando **debug** > **Connetti a processo** in Visual Studio. Non è necessario il progetto di Visual Studio originale per connettersi a un processo in esecuzione, ma il caricamento dei simboli dell'app contribuirà in modo significativo durante il debug di un processo per cui non si ha il codice originale. Vedere [specificare i file di simboli e di origine nel debugger](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> È anche possibile connettersi a qualsiasi UWP in esecuzione o a un altro processo dell'app selezionando **debug**  >  **Connetti a processo** in Visual Studio. Non è necessario il progetto di Visual Studio originale per connettersi a un processo in esecuzione, ma il caricamento dei simboli dell'app contribuirà in modo significativo durante il debug di un processo per cui non si ha il codice originale. Vedere [specificare i file di simboli e di origine nel debugger](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="remote"></a>Eseguire il debug di un'app UWP installata in un computer o dispositivo remoto
+## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a>Eseguire il debug di un'app UWP installata in un computer o dispositivo remoto
 
 La prima volta che Visual Studio esegue il debug di un'app UWP installata in un dispositivo Windows 10 o in un computer Windows 10 con aggiornamento di un post-autore remoto, installa gli strumenti di debug remoto sul dispositivo di destinazione.
 
@@ -62,7 +62,7 @@ La prima volta che Visual Studio esegue il debug di un'app UWP installata in un 
 
 1. Se ci si connette a un computer remoto che esegue l'aggiornamento di Windows 10 di pre-autore, [installare e avviare manualmente il debugger remoto](../debugger/remote-debugging.md) nel computer remoto.
 
-1. Nel computer Visual Studio selezionare **debug** > **altre destinazioni** > di debug**debug pacchetto app installato**.
+1. Nel computer Visual Studio selezionare **debug**  >  **altre destinazioni**di debug  >  **debug pacchetto app installato**.
 
 1. Nella finestra di dialogo **debug pacchetto app installato** in **tipo di connessione**Selezionare **computer remoto** o **dispositivo**.
 
@@ -77,8 +77,8 @@ La prima volta che Visual Studio esegue il debug di un'app UWP installata in un 
       Se il debugger non è in grado di connettersi a un computer remoto utilizzando il nome del computer, utilizzare invece l'indirizzo IP. Usare l'indirizzo IP per i dispositivi Xbox, HoloLens o Internet.
    1. Selezionare un'opzione di autenticazione accanto alla **modalità di autenticazione**.
 
-      Per la maggior parte delle app, Mantieni il valore predefinito **universale (protocollo non crittografato)** .
-   1. Selezionare **Seleziona**.
+      Per la maggior parte delle app, Mantieni il valore predefinito **universale (protocollo non crittografato)**.
+   1. Scegliere **Seleziona**.
 
 1. In **pacchetti di app installate**selezionare l'app di cui si vuole eseguire il debug o digitarne il nome nella casella di ricerca. I pacchetti dell'app installata non in esecuzione vengono visualizzati in **non in esecuzione**e le applicazioni in esecuzione sono in **esecuzione**.
 
@@ -94,11 +94,11 @@ Quando si avvia il debug di un pacchetto dell'app installato in un dispositivo X
 
 Per altre informazioni sulla distribuzione remota di app UWP, vedere [distribuire ed eseguire il debug](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) di app UWP ed [eseguire il debug di app UWP in computer remoti](run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Debug remoto](../debugger/remote-debugging.md)
-- [Configurare Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Configurare la Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Assegnazioni delle porte del debugger remoto](../debugger/remote-debugger-port-assignments.md)
-- [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

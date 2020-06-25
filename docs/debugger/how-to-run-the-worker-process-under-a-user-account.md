@@ -2,7 +2,7 @@
 title: Eseguire un processo di lavoro con un account utente | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6ac5bee0ffa05aa275782c57fc9b7b1c369bf65d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732824"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349406"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.
@@ -33,7 +33,7 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
  > [!IMPORTANT]
  > A partire da Windows Server 2008 R2, è consigliabile usare [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
 
-## <a name="procedure"></a>Routine
+## <a name="procedure"></a>Procedura
 
 #### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Per eseguire aspnet_wp.exe con un account utente
 
@@ -61,7 +61,7 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
    iisreset
    ```
 
-   oppure
+   - o -
 
    ```cmd
    net stop iisadmin /y
@@ -72,7 +72,7 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 
 7. Nella finestra di dialogo **Proprietà file ASP.NET temporanei** scegliere la scheda **Sicurezza** .
 
-8. Scegliere **Avanzate**.
+8. Fare clic su **Avanzate**.
 
 9. Nella finestra di dialogo **Impostazioni avanzate di sicurezza per file ASP.Net temporanei** fare clic sul pulsante **Aggiungi**.
 
@@ -82,10 +82,10 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 
 11. Nella finestra di dialogo **Voce di autorizzazione per file ASP.NET temporanei** , assegnare all'utente **Controllo completo**, quindi scegliere **OK** per chiudere la finestra di dialogo **Voce di autorizzazione per file ASP.NET temporanei** .
 
-12. Verrà visualizzata la finestra di dialogo **Sicurezza** , in cui verrà chiesto di confermare la modifica delle autorizzazioni in una cartella di sistema. Scegliere **Sì**.
+12. Verrà visualizzata la finestra di dialogo **Sicurezza** , in cui verrà chiesto di confermare la modifica delle autorizzazioni in una cartella di sistema. Fare clic su **Sì**.
 
 13. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà file ASP.NET temporanei** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Requisiti di sistema per il debug di ASP.NET](../debugger/aspnet-debugging-system-requirements.md)
+- [Debug di ASP.NET: requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)

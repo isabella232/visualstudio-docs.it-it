@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di un controllo WebView (UWP) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 15c9a2b489aeb091224536bfb87398197f6e4f62
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188663"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350641"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Eseguire il debug di un controllo WebView in un'app UWP
 
- Per esaminare ed eseguire il debug dei controlli `WebView` in un'app di Windows Runtime, puoi configurare Visual Studio in modo da collegare Script Debugger all'avvio dell'app. Sono disponibili due modi per interagire con `WebView` controlli tramite il debugger:
+ Per esaminare ed eseguire il debug dei controlli `WebView` in un'app di Windows Runtime, puoi configurare Visual Studio in modo da collegare Script Debugger all'avvio dell'app. Sono disponibili due modi per interagire con `WebView` i controlli tramite il debugger:
 
 - Aprire [DOM Explorer`WebView` per un'istanza di ](../debugger/quickstart-debug-html-and-css.md) ed esaminare gli elementi DOM, controllare i problemi relativi allo stile CSS e sottoporre a test le modifiche apportate agli stili con rendering dinamico.
 
@@ -37,7 +37,7 @@ ms.locfileid: "73188663"
 
 3. Scegliere **Debug**. Nell'elenco **Processo applicativo** scegliere **Script**.
 
-     ![Connessione del debugger di script](../debugger/media/js_dom_webview_script_debugger.png "JS_DOM_WebView_Script_Debugger")
+     ![Collegamento del debugger di script](../debugger/media/js_dom_webview_script_debugger.png "JS_DOM_WebView_Script_Debugger")
 
 4. (Facoltativo) Per le versioni non Express di Visual Studio, disabilitare il debug just-in-time (JIT) scegliendo **Strumenti > Opzioni > Debug > Just-In-Time** e quindi disabilitando il debug JIT per Script.
 
@@ -56,7 +56,7 @@ ms.locfileid: "73188663"
 
 4. Aprire la finestra di DOM Explorer per il controllo `WebView` scegliendo **Debug**, **Finestre**, **DOM Explorer** e quindi scegliere l'URL del controllo `WebView` che si vuole esaminare.
 
-     ![Apertura del DOM Explorer](../debugger/media/js_dom_webview.png "JS_DOM_WebView")
+     ![Apertura di DOM Explorer](../debugger/media/js_dom_webview.png "JS_DOM_WebView")
 
      La finestra di DOM Explorer associata al controllo `WebView` viene visualizzata come nuova scheda in Visual Studio.
 
@@ -83,6 +83,6 @@ ms.locfileid: "73188663"
 
 6. Visualizzare e modificare le variabili nell'app o usare i comandi della console, come descritto in [Guida introduttiva: eseguire il debug](../debugger/quickstart-debug-javascript-using-the-console.md) dei [comandi della console](../debugger/javascript-console-commands.md?view=vs-2017)JavaScript e JavaScript.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

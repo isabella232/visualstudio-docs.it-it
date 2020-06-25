@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Visualizzare le proprietà della finestra | Microsoft Docs'
+title: 'Procedura: visualizzare le proprietà della finestra | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - window properties
 ms.assetid: 4c2f52de-bd91-42cf-9028-67aa75f8bd26
@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1be02b5adb486cf101dc9b021ea70bbd72674a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d90ecf7745c609bac6267eaa9abd75b5bfe755c7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906752"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349770"
 ---
-# <a name="how-to-display-window-properties"></a>Procedura: Visualizzare le proprietà della finestra
-Per altre informazioni su una finestra elencata nella [Windows Vista](../debugger/windows-view.md), utilizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md).
+# <a name="how-to-display-window-properties"></a>Procedura: visualizzare le proprietà della finestra
+Per ulteriori informazioni su una finestra elencata in [visualizzazione di Windows](../debugger/windows-view.md), utilizzare la [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md).
 
 ### <a name="to-open-the-window-properties-dialog-box"></a>Per aprire la finestra di dialogo Proprietà finestra
 
-1. Selezionare l'elemento, quindi scegliere **delle proprietà** dalle **visualizzazione** menu.
+1. Selezionare l'elemento, quindi scegliere **Proprietà** dal menu **Visualizza** .
 
-   Finestre di dialogo delle proprietà non sono modale. Come si fa clic da un elemento a altro in una finestra di visualizzazione, la finestra di dialogo viene aggiornata automaticamente con informazioni su ogni elemento selezionato.
+   Le finestre di dialogo delle proprietà non sono modali. Quando si fa clic da elemento a elemento in una finestra di visualizzazione, la finestra di dialogo viene aggiornata automaticamente con le informazioni su ogni elemento selezionato.

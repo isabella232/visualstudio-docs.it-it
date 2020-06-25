@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Verificare le impostazioni delle proprietà IIS | Microsoft Docs'
+title: 'Procedura: verificare le impostazioni delle proprietà di IIS | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,23 +19,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846428"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348470"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Procedura: Verificare le impostazioni delle proprietà IIS
+# <a name="how-to-verify-iis-property-settings"></a>Procedura: verificare le impostazioni delle proprietà di IIS
 
 È possibile impostare le proprietà di un'applicazione Web utilizzando lo strumento di amministrazione IIS. Per consentire l'esecuzione dell'applicazione, è necessario che tali proprietà siano impostate correttamente, pertanto la verifica di queste impostazioni è spesso un passaggio necessario nel processo di risoluzione dei problemi.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>Per controllare le impostazioni IIS dell'applicazione Web
 
-1. Aprire il **strumenti di amministrazione** finestra: Nel **avviare** dal menu **programmi**, quindi fare clic su **strumenti di amministrazione**. Se la voce **Strumenti di amministrazione** non è presente nel menu **Programmi**, cercarla nel **Pannello di controllo**.
+1. Aprire la finestra **Strumenti di amministrazione**. Fare clic sul pulsante **Start**, scegliere **Programmi** e quindi **Strumenti di amministrazione**. Se la voce **Strumenti di amministrazione** non è presente nel menu **Programmi**, cercarla nel **Pannello di controllo**.
 
    - In Windows 2000 selezionare **Gestione servizi Internet**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "62846428"
 
    3. Scegliere **OK** per chiudere la finestra di dialogo **Metodi di autenticazione**.
 
-5. Per un'applicazione ATL Server verificare che il verbo DEBUG sia associato all'estensione ISAPI. Per altre informazioni, vedere [Procedura: Associare il verbo DEBUG con estensione](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Per un'applicazione ATL Server verificare che il verbo DEBUG sia associato all'estensione ISAPI. Per altre informazioni, vedere [procedura: associare un verbo di debug con estensione](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Per un'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], accertarsi che per la cartella virtuale dell'applicazione sia impostato un Nome applicazione in **Gestione Internet Information Services (IIS)**, **Gestione servizi Internet** o **Internet Information Services**.
 
@@ -69,14 +69,14 @@ ms.locfileid: "62846428"
 
    3. In **Impostazioni applicazione** digitare il nome della directory radice che contiene l'applicazione.
 
-   4. Fare clic su **OK** per chiudere la finestra di dialogo **Proprietà**.
+   4. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà**.
 
 7. Per un'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], fare clic sulla scheda **ASP.NET** e verificare che sia specificata la versione corretta di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
-8. Fare clic su **OK** per chiudere la finestra di dialogo **Proprietà**.
+8. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà**.
 
 9. Fare clic su **OK** per chiudere le finestre di dialogo **Gestione Internet Information Services (IIS)**, **Gestione servizi Internet** o **Internet Information Services**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Risoluzione dei problemi](../debugger/debugging-web-applications-troubleshooting.md)

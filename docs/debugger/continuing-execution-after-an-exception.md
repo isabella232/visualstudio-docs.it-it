@@ -1,7 +1,7 @@
 ---
 title: Continuazione dell'esecuzione dopo un'eccezione | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7be214a950c8cc93d986f97834a848bd9ab824e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745656"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350680"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuazione dell'esecuzione dopo un'eccezione
-Quando il debugger interrompe l'esecuzione a causa di un'eccezione, per impostazione predefinita viene visualizzato l' **Helper eccezioni**. Se l' **Helper eccezioni** è stato disabilitato nella finestra di dialogo **Opzioni** , viene visualizzata la finestra di dialogo informazioniC# sulle **eccezioni** (o Visual Basic) o la finestraC++di dialogo **eccezione** ().
+Quando il debugger interrompe l'esecuzione a causa di un'eccezione, per impostazione predefinita viene visualizzato l' **Helper eccezioni**. Se l' **Helper eccezioni** è stato disabilitato nella finestra di dialogo **Opzioni** , sarà possibile visualizzare le informazioni sulle **eccezioni** (C# o Visual Basic) o la finestra di dialogo **eccezione** (C++).
 
  Quando viene visualizzato l' **Helper eccezioni** , è possibile tentare di risolvere il problema che ha causato l'eccezione.
 
@@ -43,6 +43,6 @@ Quando il debugger interrompe l'esecuzione a causa di un'eccezione, per impostaz
 ## <a name="mixed-code"></a>Codice misto
  Se si rileva un'eccezione non gestita durante il debug di codice misto nativo e gestito, i vincoli del sistema operativo impediscono la rimozione dello stack di chiamate. Se si tenta di rimuovere lo stack di chiamate utilizzando il menu di scelta rapida, un messaggio di errore indica che il debugger non può eseguire la rimozione da un'eccezione non gestita durante il debug di codice misto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md)

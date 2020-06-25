@@ -2,7 +2,7 @@
 title: Attivare eventi di sospensione/ripresa/background durante il debug di UWP
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: da634246bfa9f800779c761458028f55b9317f6f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187626"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348938"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare eventi di sospensione, ripresa e background durante il debug di app UWP in Visual Studio
 
@@ -30,7 +30,7 @@ Viene inoltre descritto come eseguire il debug di **attività in background**. L
 
 Per ulteriori informazioni sulla gestione della durata del processo e sulle attività in background, vedere [avvio, ripresa e multitasking](/windows/uwp/launch-resume/index).
 
-## <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Attivare gli eventi di Process Lifetime Management
+## <a name="trigger-process-lifetime-management-events"></a><a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Attivare gli eventi di Process Lifetime Management
  Windows può sospendere l'app quando l'utente passa da un dispositivo all'altra o quando Windows entra in uno stato di basso consumo. Puoi rispondere all'evento `Suspending` per salvare i dati utente e dell'app rilevanti in un archivio permanente e per liberare risorse. Quando un'app viene riattivata dallo stato **Sospeso** , passa allo stato **In esecuzione** e continua dal punto in cui si trovava al momento della sospensione. Puoi rispondere all'evento `Resuming` per ripristinare o aggiornare lo stato dell'app e recuperare le risorse.
 
  Anche se Windows tenta di mantenere in memoria quante più app sospese possibile, può terminare un'app se non sono disponibili risorse sufficienti per mantenerla in memoria. Un utente può anche chiudere in modo esplicito l'app. Non esiste un evento speciale per indicare che l'utente ha chiuso un'app.
@@ -47,7 +47,7 @@ Per ulteriori informazioni sulla gestione della durata del processo e sulle atti
 
      **Sospendi e termina** chiude l'app e termina la sessione di debug.
 
-## <a name="BKMK_Trigger_background_tasks"></a> Attivare attività in background
+## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> Attivare attività in background
  Qualsiasi app può registrare un'attività in background per rispondere a determinati eventi di sistema, anche quando l'app non è in esecuzione. Le attività in background non possono eseguire codice che aggiorna direttamente l'interfaccia utente. Visualizzano invece informazioni all'utente con aggiornamenti di riquadri, aggiornamenti di notifiche e notifiche di tipo avviso popup. Per altre informazioni, vedere [supporto dell'app con attività in background](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e).
 
  Puoi attivare eventi che avviano attività in background per l'app dal debugger.
@@ -57,7 +57,7 @@ Per ulteriori informazioni sulla gestione della durata del processo e sulle atti
 
  Il modo più realistico di generare un evento di attività in background si verifica quando l'app non è in esecuzione. È tuttavia supportata anche l'attivazione dell'evento in una sessione di debug standard.
 
-### <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Attivare un evento di attività in background da una sessione di debug standard
+### <a name="trigger-a-background-task-event-from-a-standard-debug-session"></a><a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a>Attivare un evento di attività in background da una sessione di debug standard
 
 1. Imposta un punto di interruzione nel codice dell'attività in background di cui desideri eseguire il debug.
 
@@ -67,38 +67,38 @@ Per ulteriori informazioni sulla gestione della durata del processo e sulle atti
 
      ![Sospensione, ripresa, fine e attività in background](../debugger/media/dbg_suspendresumebackground.png)
 
-### <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Attivare un'attività in background quando l'app non è in esecuzione
+### <a name="trigger-a-background-task-when-the-app-is-not-running"></a><a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Attivare un'attività in background quando l'app non è in esecuzione
 
 1. Imposta un punto di interruzione nel codice dell'attività in background di cui desideri eseguire il debug.
 
-2. Apri la pagina delle proprietà di debug per il progetto di avvio. Selezionare il progetto in Esplora soluzioni. Scegli **Proprietà** dal menu **Debug**.
+2. Apri la pagina delle proprietà di debug per il progetto di avvio. In Esplora soluzioni selezionare il progetto. Scegli **Proprietà** dal menu **Debug**.
 
-     Per C++ i progetti, espandere **proprietà di configurazione** , quindi scegliere **debug**.
+     Per i progetti C++, espandere **proprietà di configurazione** , quindi scegliere **debug**.
 
-3. Effettuare una delle operazioni riportate di seguito:
+3. Eseguire una delle operazioni seguenti:
 
     - Per i progetti Visual C# e Visual Basic, scegli **Non eseguire il codice utente, ma eseguine il debug all'avvio**.
 
-         ![Proprietà&#35;&#47;dell'applicazione di avvio del debug C VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![Proprietà dell'applicazione di avvio del debug di C&#35;&#47;VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - Per C++ i progetti, scegliere **No** dall'elenco **Avvia applicazione** .
+    - Per i progetti C++, scegliere **No** dall'elenco **Avvia applicazione** .
 
-         ![Proprietà&#43;&#43;&#47;di debug dell'applicazione di avvio C VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
+         ![Proprietà di debug dell'applicazione di avvio di C&#43;&#43;&#47;VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
 4. Premi **F5** per mettere l'app in modalità debug. Nota che nell'elenco **Processo** sulla barra degli strumenti **Posizione di debug** è visualizzato il nome del pacchetto dell'app per indicare che sei in modalità debug.
 
-     ![Elenco processi attività in background](../debugger/media/dbg_backgroundtask_processlist.png "DBG_BackgroundTask_ProcessList")
+     ![Elenco dei processi attività in background](../debugger/media/dbg_backgroundtask_processlist.png "DBG_BackgroundTask_ProcessList")
 
 5. Dall'elenco degli eventi sulla barra degli strumenti **Posizione di debug** scegli l'attività in background che vuoi avviare.
 
-     ![Sospendere, riprendere, terminare e attività in background](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![Sospensione, ripresa, fine e attività in background](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
 
-## <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Attivare gli eventi di Process Lifecycle Management e le attività in background da un'app installata
+## <a name="trigger-process-lifetime-management-events-and-background-tasks-from-an-installed-app"></a><a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a>Attivare gli eventi di gestione della durata del processo e le attività in background da un'app installata
  Usare la finestra di dialogo **debug pacchetto applicazione installato** per caricare un'app già installata nel debugger. Ad esempio, è possibile eseguire il debug di un'app installata da Microsoft Store o eseguire il debug di un'app quando si dispone dei file di origine per l'app, ma non di un progetto di Visual Studio per l'app. La finestra di dialogo **debug pacchetto app installato** consente di avviare un'app in modalità di debug nel computer Visual Studio o in un dispositivo remoto oppure di impostare l'app per l'esecuzione in modalità di debug, ma non per avviarla. Per altre informazioni, vedere [eseguire il debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).
 
  Una volta caricata l'app nel debugger, puoi utilizzare una qualsiasi tra le procedure descritte sopra.
 
-## <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnostica degli errori di attivazione di attività in background
+## <a name="diagnosing-background-task-activation-errors"></a><a name="BKMK_Diagnosing_background_task_activation_errors"></a>Diagnosi degli errori di attivazione dell'attività in background
  I log di diagnostica in Windows Visualizzatore eventi per l'infrastruttura in background contengono informazioni dettagliate che è possibile utilizzare per diagnosticare e risolvere i problemi relativi agli errori delle attività in background. Per visualizzare il log:
 
 1. Aprire l'applicazione Visualizzatore eventi.
@@ -109,7 +109,7 @@ Per ulteriori informazioni sulla gestione della durata del processo e sulle atti
 
 4. Scegli il log **Diagnostica** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Test delle app UWP con Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
 - [Eseguire il debug di app in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Ciclo di vita dell'applicazione](/windows/uwp/launch-resume/app-lifecycle)

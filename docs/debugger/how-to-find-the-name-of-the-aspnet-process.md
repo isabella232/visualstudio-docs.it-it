@@ -1,7 +1,7 @@
 ---
 title: Trovare il processo ASP.NET in esecuzione | Microsoft Docs
 ms.date: 11/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,31 +16,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 54aa98dd238d7a78e4ae89af05dceae0f9911478
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: c14067d58289dd0b41fa526937a0553c10934ea7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187651"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349607"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Trovare il nome del processo ASP.NET
 
-Per eseguire il debug di un'app [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] in esecuzione, il debugger di Visual Studio deve connettersi al processo di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] in base al nome.
+Per eseguire il debug di un'app in esecuzione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , il debugger di Visual Studio deve connettersi al [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processo in base al nome.
 
 **Per individuare il processo che esegue un'app ASP.NET:**
 
-1. Con l'app in esecuzione, in Visual Studio selezionare **Debug** > **Connetti a processo**.
+1. Con l'app in esecuzione, in Visual Studio selezionare **debug**  >  **Connetti a processo**.
 
 1. Nella finestra di dialogo **Connetti a processo** Digitare le prime lettere dei nomi di processo dall'elenco seguente oppure immetterle nella casella di ricerca. Quello che esegue è quello che esegue l'app ASP.NET. Connettersi a tale processo per eseguire il debug dell'app.
 
-    - *w3wp. exe* è IIS 6,0 e versioni successive.
-    - *Aspnet_wp. exe* è costituito da versioni precedenti di IIS.
+    - *w3wp.exe* è IIS 6,0 e versioni successive.
+    - *aspnet_wp.exe* è costituito da versioni precedenti di IIS.
     - *iisexpress.exe* is IISExpress.
-    - *dotnet. exe* è ASP.NET Core.
-    - *Inetinfo. exe* è un'applicazione ASP precedente eseguita in-process.
+    - *dotnet.exe* è ASP.NET Core.
+    - *inetinfo.exe* le applicazioni ASP precedenti sono in esecuzione in-process.
 
 >[!NOTE]
->Visual Studio 2012 e versioni precedenti [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] codice possono trovarsi sul file system ed eseguire nel server di prova *WebDev. webserver. exe* o *WebDev. WebServer40. exe*. In questo caso, per il debug locale, connettersi a *WebDev. webserver. exe* o *WebDev. WebServer40. exe* anziché il processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+>Visual Studio 2012 e il [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] codice precedente possono trovarsi sul file System ed essere eseguiti sul server di test *WebDev.WebServer.exe* o *WebDev.WebServer40.exe*. In questo caso, per il debug locale, connettersi a *WebDev.WebServer.exe* o *WebDev.WebServer40.exe* anziché al [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processo.
 
 **Vedere anche:**
 

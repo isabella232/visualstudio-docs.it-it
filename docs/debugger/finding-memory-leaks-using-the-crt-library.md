@@ -1,7 +1,7 @@
 ---
 title: Individuare le perdite di memoria con la libreria CRT | Microsoft Docs
 ms.date: 10/04/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae879d8ed03653959ae926cc372300db9b71b9f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182651"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350485"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Individuare le perdite di memoria con la libreria CRT
 
@@ -260,7 +260,7 @@ Una tecnica per individuare le perdite di memoria inizia inserendo le `_CrtMemCh
 
  `_CrtDumpMemoryLeaks`può fornire false indicazioni di perdite di memoria se una libreria contrassegna le allocazioni interne come blocchi normali anziché come blocchi CRT o client. In questo caso, `_CrtDumpMemoryLeaks` non è in grado di indicare la differenza tra allocazioni utente e allocazioni interne della libreria. Se i distruttori globali relativi alle allocazioni della libreria vengono eseguiti dopo il punto in cui viene chiamato `_CrtDumpMemoryLeaks`, ogni allocazione interna della libreria viene segnalata come perdita di memoria. Le versioni della libreria di modelli standard precedenti a Visual Studio .NET possono causare la `_CrtDumpMemoryLeaks` segnalazione di falsi positivi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Dettagli heap di debug CRT](../debugger/crt-debug-heap-details.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: modificare un valore di registro | Microsoft Docs'
+title: 'Procedura: modifica di un valore di registro | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f7a341fa3f8d41bf4788db5bb4b4957fd8cca81
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733410"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349822"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Procedura: modificare un valore di registro (C#, C++, Visual Basic, F#)
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Procedura: modificare un valore di registro (C#, C++, Visual Basic, F #)
 
 La finestra Registri è disponibile solo se il debug a livello di indirizzo è stato attivato nella finestra di dialogo **Opzioni**, nodo **Debug**.
 
@@ -42,5 +42,5 @@ La finestra Registri è disponibile solo se il debug a livello di indirizzo è s
     > [!CAUTION]
     > La modifica di valori a virgola mobile può causare lievi inesattezze dovute alla conversione dei componenti frazionari da decimali a binari. Anche una modifica apparentemente innocua può generare modifiche in alcuni dei bit meno significativi in un registro a virgola mobile.
 
-## <a name="see-also"></a>Vedere anche
-- [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)
+## <a name="see-also"></a>Vedi anche
+- [Procedura: utilizzare la finestra Registri](../debugger/how-to-use-the-registers-window.md)

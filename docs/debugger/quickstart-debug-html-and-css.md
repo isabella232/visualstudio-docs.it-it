@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di HTML e CSS nelle app UWP | Microsoft Docs
 ms.date: 07/17/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 331cb056132a2d90a932ff250c9bdbb7e22e38af
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568911"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348262"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Eseguire il debug di HTML e CSS nelle app UWP in Visual Studio
 
@@ -32,7 +32,7 @@ Usando il modello di debug interattivo fornito dagli strumenti di ispezione DOM,
 
 Per informazioni su altre funzionalità di debug JavaScript, ad esempio l'uso della finestra console JavaScript e l'impostazione di punti di interruzione, vedere [Guida introduttiva: eseguire il debug](../debugger/quickstart-debug-javascript-using-the-console.md) [di app JavaScript e debug in Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="InspectingDOM"></a> Controllo del DOM attivo
+## <a name="inspecting-the-live-dom"></a><a name="InspectingDOM"></a> Controllo del DOM attivo
 DOM Explorer presenta una visualizzazione della pagina sottoposta a rendering. È possibile usarlo per modificare i valori e vedere immediatamente i risultati. In questo modo è possibile testare le modifiche senza arrestare e riavviare il debugger. Il codice sorgente nel progetto non viene modificato quando si interagisce con la pagina usando questo metodo. Pertanto è possibile apportare le modifiche al codice sorgente quando si trovano le correzioni del codice desiderate.
 
 > [!TIP]
@@ -46,10 +46,10 @@ DOM Explorer presenta una visualizzazione della pagina sottoposta a rendering. �
 
 - Controllare l'applicazione degli stili CSS agli elementi della pagina e tenere traccia delle regole applicate.
 
-  Quando si esegue il debug delle app, è spesso necessario selezionare elementi in DOM Explorer. Quando si seleziona un elemento, i valori visualizzati nelle schede a destra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento selezionato in DOM Explorer. Si tratta delle schede **Stili**, **Calcolata** e **Layout**. Le app UWP supportano anche le schede **eventi** e **modifiche** . Per altre informazioni sulla selezione di elementi, vedere [Selecting elements](#SelectingElements).
+  Quando si esegue il debug delle app, è spesso necessario selezionare elementi in DOM Explorer. Quando si seleziona un elemento, i valori visualizzati nelle schede a destra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento selezionato in DOM Explorer. Si tratta delle schede **Stili**, **Calcolata**e **Layout**. Le app UWP supportano anche le schede **eventi** e **modifiche** . Per altre informazioni sulla selezione di elementi, vedere [Selecting elements](#SelectingElements).
 
 > [!TIP]
-> Se la finestra DOM Explorer è chiusa, scegliere **Debug**>**Finestre** > **DOM Explorer** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.
+> Se la finestra di Dom Explorer è chiusa, scegliere **debug** > **Windows**  >  **Dom Explorer** per aprirla nuovamente. La finestra viene visualizzata solo durante una sessione di debug di script.
 
 Nella routine seguente viene illustrato il processo di debug interattivo di un'app usando DOM Explorer. Verrà creata un'app che usa un controllo `FlipView` , quindi verrà eseguito il debug. L'app contiene diversi errori.
 
@@ -58,13 +58,13 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Per eseguire il debug controllando il DOM attivo
 
-1. Creare una nuova soluzione in Visual Studio scegliendo **File** > **Nuovo progetto**.
+1. Creare una nuova soluzione in Visual Studio scegliendo **file**  >  **nuovo progetto**.
 
-2. Scegliere **JavaScript** > **universale di Windows**e quindi scegliere **app WinJS**.
+2. Scegliere **JavaScript**  >  **universale di Windows**e quindi scegliere **app WinJS**.
 
-3. Digitare un nome per il progetto, ad esempio `FlipViewApp` e scegliere **OK** per creare l'app.
+3. Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.
 
-4. Nell'elemento BODY di index. html aggiungere il codice seguente:
+4. Nell'elemento BODY di index.html aggiungere il codice seguente:
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -143,13 +143,13 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
     La figura seguente mostra cosa si vuole vedere se si esegue l'app. Tuttavia, per ottenere questo stato dell'app occorre prima risolvere diversi bug.
 
-    ![App FlipView che mostra i risultati previsti](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
+    ![App FlipView con i risultati previsti](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
 
 7. Scegliere **computer locale** dall'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **debug** :
 
-    ![Selezionare l'elenco destinazione di debug](../debugger/media/js_select_target.png "JS_Select_Target")
+    ![Selezionare l'elenco di destinazione del debug](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. Scegliere **Debug** > **Avvia debug**o premere F5 per eseguire l'app in modalità debug.
+8. Scegliere **debug**  >  **Avvia debug**o premere F5 per eseguire l'app in modalità di debug.
 
     Viene eseguita l'app, ma verrà visualizzata una schermata per lo più vuota perché lo stile presenta alcuni bug. La prima immagine `FlipView` è contenuta in un piccolo quadrato in prossimità del centro dello schermo.
 
@@ -163,7 +163,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")
 
     > [!TIP]
-    > È anche possibile selezionare l'elemento DIV nell'angolo in basso a sinistra della finestra della console JavaScript digitando `select(fView)` al > > richiesta di input e quindi premendo INVIO.
+    > È anche possibile selezionare l'elemento DIV nell'angolo in basso a sinistra della finestra della console JavaScript digitando `select(fView)` alla richiesta di input >> e quindi premendo INVIO.
 
     I valori visualizzati nelle schede sul lato destro della finestra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento corrente in DOM Explorer.
 
@@ -175,11 +175,11 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
     La figura seguente illustra la scheda **Calcolata** .
 
-    ![DOM Explorer scheda calcolata](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")
+    ![Scheda Calcolato di DOM Explorer](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")
 
 13. Nella finestra principale di DOM Explorer fare doppio clic sullo stile inline per l'altezza e la larghezza dell'elemento DIV `fView` . Ora è possibile modificare i valori qui. In questo scenario si vuole rimuoverli completamente.
 
-14. Nella finestra principale, fare doppio clic su `width: 100px;height: 100px;`, premere il tasto **Canc** , quindi premere **invio**. Dopo aver premuto INVIO, i nuovi valori vengono immediatamente riflessi nell'app, anche se non è stata arrestata la sessione di debug.
+14. Nella finestra principale, fare doppio clic su `width: 100px;height: 100px;` , premere il tasto **Canc** , quindi premere **invio**. Dopo aver premuto INVIO, i nuovi valori vengono immediatamente riflessi nell'app, anche se non è stata arrestata la sessione di debug.
 
     > [!IMPORTANT]
     > Così come è possibile aggiornare gli attributi nella finestra DOM Explorer, è anche possibile aggiornare i valori visualizzati nelle schede **Stili**, **Calcolata**e **Layout** .
@@ -188,7 +188,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
     Il controllo `FlipView` sembra più grande delle dimensioni dello schermo del simulatore o dell'emulatore Windows Phone. Non si tratta del risultato desiderato. Per controllare, passare di nuovo a Visual Studio.
 
-16. In DOM Explorer selezionare di nuovo la scheda **Calcolata** e aprire la regola dell'altezza. L'elemento fView Mostra ancora un valore pari al 100%, come previsto dal CSS, ma il valore calcolato è uguale all'altezza dello schermo dell'app (ad esempio, 800px, 667 67px px o un altro valore), che non è quello che si vuole per questa app. Per esaminare, nei passaggi successivi vengono rimosse l'altezza e la larghezza per l'elemento DIV `fView`.
+16. In DOM Explorer selezionare di nuovo la scheda **Calcolata** e aprire la regola dell'altezza. L'elemento fView Mostra ancora un valore pari al 100%, come previsto dal CSS, ma il valore calcolato è uguale all'altezza dello schermo dell'app (ad esempio, 800px, 667 67px px o un altro valore), che non è quello che si vuole per questa app. Per esaminare, nei passaggi successivi vengono rimosse l'altezza e la larghezza per l' `fView` elemento div.
 
 17. Nella scheda **Stili** deselezionare le proprietà height e width per il selettore CSS `#fView` .
 
@@ -198,7 +198,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
     Le cose sono migliorate. C'è ancora un problema da risolvere. I margini sembrano troppo grandi.
 
-19. Per analizzare il problema, passare a Visual Studio e scegliere la scheda **Layout** per dare un'occhiata al modello di riquadro dell'elemento.
+19. Per esaminare, passare a Visual Studio e scegliere la scheda **layout** per esaminare il modello di riquadro dell'elemento.
 
     Nella scheda **layout** verrà visualizzato quanto segue:
 
@@ -206,9 +206,9 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
       La figura seguente mostra l'aspetto della scheda **layout** se si usa un emulatore con offset e margine 100px.
 
-      ![Scheda layout DOM Explorer](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")
+      ![Scheda Layout di DOM Explorer](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")
 
-      Ciò non sembra corretto. Anche la scheda **Calcolata** mostra gli stessi valori per i margini.
+      Qualcosa non funziona. Anche la scheda **Calcolata** mostra gli stessi valori per i margini.
 
 20. Scegliere la scheda **Stili** e trovare il selettore CSS `#fView` . Per la proprietà **margin** il valore è 25%.
 
@@ -230,16 +230,16 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
     Per altre informazioni sulla funzionalità di aggiornamento, vedere [aggiornare un'app (JavaScript)](../debugger/refresh-an-app-javascript.md).
 
-## <a name="SelectingElements"></a> Selecting elements
+## <a name="selecting-elements"></a><a name="SelectingElements"></a> Selecting elements
 È possibile selezionare gli elementi DOM in tre modi durante il debug di un'app:
 
 - Facendo clic sugli elementi direttamente nella finestra di DOM Explorer oppure usando i tasti di direzione.
 
-- Usando il pulsante **Seleziona elemento**  (CTRL+B).
+- Usando il pulsante **Seleziona elemento** (CTRL+B).
 
 - Usando il pulsante `select` , uno dei [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
 
-  Quando si usa la finestra DOM Explorer per selezionare elementi e si posiziona il puntatore del mouse su un elemento, l'elemento corrispondente viene evidenziato nell'app in esecuzione. Fare clic sull'elemento in DOM Explorer per selezionarlo oppure usare i tasti freccia per evidenziare e selezionare elementi. La selezione di elementi in DOM Explorer può essere fatta anche tramite il pulsante **Seleziona elemento** . Nella figura che segue è illustrato il pulsante **Seleziona elemento**.
+  Quando si usa la finestra DOM Explorer per selezionare elementi e si posiziona il puntatore del mouse su un elemento, l'elemento corrispondente viene evidenziato nell'app in esecuzione. Fare clic sull'elemento in DOM Explorer per selezionarlo oppure usare i tasti freccia per evidenziare e selezionare elementi. La selezione di elementi in DOM Explorer può essere fatta anche tramite il pulsante **Seleziona elemento** . La figura seguente illustra il pulsante **Seleziona elemento** .
 
   ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")
 
@@ -247,19 +247,19 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
   Prima di scegliere **Seleziona elemento**, è possibile specificare se evidenziare elementi nell'app in esecuzione attivando e disattivando il pulsante **Visualizza pagina Web in evidenza** . La figura seguente mostra questo pulsante. Le evidenziazioni vengono visualizzate per impostazione predefinita.
 
-  ![Pulsante Visualizza Highlights pagina Web](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
+  ![Visualizzare il pulsante delle evidenziazioni nella pagina Web](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
 
   Quando si sceglie di evidenziare elementi, gli elementi su cui si posiziona il puntatore del mouse nel Simulatore vengono evidenziati. I colori per gli elementi evidenziati corrispondono al modello di riquadro visualizzato nella scheda **Layout** di DOM Explorer.
 
 > [!NOTE]
 > L'evidenziazione degli elementi al passaggio del mouse è supportata solo in parte nell'emulatore Windows Phone.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire il debug di app in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Debug di un controllo WebView](../debugger/debug-a-webview-control.md)
-- [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
-- [Comandi della console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Scelte rapide da tastiera](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Supporto tecnico e accessibilità](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

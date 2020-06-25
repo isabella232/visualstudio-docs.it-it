@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76dcbbf8c5c5c5019c0b45fe97150838d996bfa1
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183353"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350836"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework e piattaforma di destinazione di MSBuild
 
@@ -95,10 +95,10 @@ Una *configurazione di destinazione* è un subset di una piattaforma di destinaz
 <PropertyGroup>
    <PlatformTarget>x86</PlatformTarget>
    <Configuration>Debug</Configuration>
-<PropertyGroup>
+</PropertyGroup>
 
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

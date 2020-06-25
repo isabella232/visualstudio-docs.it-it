@@ -2,7 +2,7 @@
 title: Applicare le modifiche in modalità di interruzioni con modifica e continuazione | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05340b4922262eb134aca8fef4bf215342e5a997
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734025"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350300"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procedura: applicare modifiche in modalità di interruzioni con modifica e continuazione (Visual Basic)
 È possibile usare Modifica e continuazione per modificare il codice in modalità di interruzione e continuare senza interrompere e riavviare l'esecuzione.
@@ -41,17 +41,17 @@ Per le limitazioni sull'uso di modifica e continuazione durante il debug, vedere
 
     - Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dal menu **Debug** e attendere che l'applicazione raggiunga il punto di interruzione.
 
-         oppure
+         -oppure-
 
     - Avviare il debug, quindi scegliere **Interrompi tutto** dal menu **Debug**.
 
-         oppure
+         -oppure-
 
     - Quando si verifica un'eccezione, scegliere **Attiva modifica** in informazioni sulle **eccezioni**.
 
 2. Apportare le modifiche al codice desiderate e supportate.
 
-     Per ulteriori informazioni, vedere [modifiche al codice supportateC# (e Visual Basic)](../debugger/supported-code-changes-csharp.md).
+     Per altre informazioni, vedere [modifiche al codice supportate (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
     > [!NOTE]
     > Se si tenta di apportare una modifica non consentita da Modifica e continuazione, la modifica verrà contrassegnata con una riga ondulata di colore viola e nell'Elenco attività verrà indicata un'attività da eseguire. Per poter proseguire l'esecuzione del codice, è necessario annullare la modifica non valida del codice.
@@ -60,6 +60,6 @@ Per le limitazioni sull'uso di modifica e continuazione durante il debug, vedere
 
      Il codice verrà eseguito con le modifiche incorporate nel progetto.
 
-## <a name="see-also"></a>Vedere anche
-- [Modifiche al codice supportateC# (e Visual Basic)](../debugger/supported-code-changes-csharp.md)
+## <a name="see-also"></a>Vedi anche
+- [Modifiche al codice supportate (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Modifica e continuazione (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

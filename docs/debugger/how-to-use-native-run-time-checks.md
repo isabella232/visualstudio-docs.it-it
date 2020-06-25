@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: utilizzare i controlli runtime nativi | Microsoft Docs'
+title: Come usare i controlli runtime nativi | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 954cf8436a9f0653685b41920cad84698ae50abb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5fccf510719aa5e960c12fdc807d6375ee31d3d0
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732150"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348847"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedura: utilizzare controlli runtime nativi
-In un progetto di C++ Visual Studio, è possibile usare [runtime_checks](/cpp/preprocessor/runtime-checks) nativi per rilevare errori di runtime comuni, ad esempio:
+In un progetto Visual Studio C++ è possibile usare [runtime_checks](/cpp/preprocessor/runtime-checks) nativi per rilevare errori di runtime comuni, ad esempio:
 
 - Errori del puntatore dello stack.
 
@@ -57,7 +57,7 @@ In un progetto di C++ Visual Studio, è possibile usare [runtime_checks](/cpp/pr
 
 - Perdita di dati a causa dell'assegnazione a una variabile di lunghezza inferiore.
 
-  Se si usa l'opzione **/RTC** con una build ottimizzata ( **/O**), verrà restituito un errore del compilatore. Se si usa un pragma `runtime_checks` in una build ottimizzata, il pragma non avrà effetto.
+  Se si usa l'opzione **/RTC** con una build ottimizzata (**/O**), verrà restituito un errore del compilatore. Se si usa un pragma `runtime_checks` in una build ottimizzata, il pragma non avrà effetto.
 
   Durante il debug di un programma in cui sono attivi i controlli runtime, l'azione predefinita quando si verifica un errore di runtime è l'arresto del programma e il passaggio al debugger. Tale comportamento predefinito può essere modificato per qualsiasi controllo runtime. Per ulteriori informazioni, vedere [gestione delle eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md).
 
@@ -77,8 +77,8 @@ In un progetto di C++ Visual Studio, è possibile usare [runtime_checks](/cpp/pr
 
 - Usare il pragma `runtime_checks` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
-- [Controllo degli errori di runtime](/cpp/c-runtime-library/run-time-error-checking)
+- [Controllo degli errori di run-time](/cpp/c-runtime-library/run-time-error-checking)

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: specificare le impostazioni del debugger | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e9d0fb5b7d63402c9add3ddf06b3997bc0d7d9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1e39ae29e94ff28ce10daf36e3970273d8e34e9e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732717"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349107"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedura: specificare le impostazioni del debugger
 In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile configurare varie impostazioni relative al funzionamento del debugger, che specificano ad esempio la modalità di visualizzazione delle variabili, se determinati messaggi di avviso vengono visualizzati, la modalità di impostazione dei punti di interruzione e gli effetti dell'interruzione sui programmi in esecuzione. Per specificare queste impostazioni, utilizzare la finestra di dialogo **Opzioni**.
@@ -41,7 +41,7 @@ In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile config
 
 4. Selezionare o deselezionare l'opzione o le opzioni desiderate. Per visualizzare le informazioni della Guida sulle opzioni, premere F1
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)
 - [Modifica e continuazione, Debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)

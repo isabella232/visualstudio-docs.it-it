@@ -1,7 +1,7 @@
 ---
 title: "Procedura: individuare la DLL in cui si è verificato l'arresto anomalo del programma | Microsoft Docs"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff4f164e16a65efe4ec3d1f057025168eab8cd2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 155fd74dc6e01f88bf04fe21b77ebdae6b04437f
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733275"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349536"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Procedura: individuare la dll in cui si è verificato l'arrestoC#anomalo del programma (, C++, Visual Basic, F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Procedura: individuare la DLL in cui si è verificato l'arresto anomalo del programma (C#, C++, Visual Basic, F #)
 
  Se l'applicazione si arresta in modo anomalo durante la chiamata a una DLL di sistema o al codice di un altro utente, è necessario identificare la DLL attiva al momento dell'arresto. Se si verifica un arresto anomalo in una DLL esterna al programma, è possibile identificarne la posizione utilizzando la finestra **Moduli**.
 
@@ -49,6 +49,6 @@ ms.locfileid: "72733275"
 
 6. Nelle colonne **Nome** e **Percorso** cercare il nome e il percorso della DLL.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di progetti di DLL](../debugger/debugging-dll-projects.md)
-- [Procedura: Usare la finestra Moduli](../debugger/how-to-use-the-modules-window.md)
+- [Procedura: utilizzare la finestra Moduli](../debugger/how-to-use-the-modules-window.md)

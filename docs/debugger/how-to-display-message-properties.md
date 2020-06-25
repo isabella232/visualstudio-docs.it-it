@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Visualizzare le proprietà del messaggio | Microsoft Docs'
+title: 'Procedura: visualizzare le proprietà del messaggio | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - message properties in SpyHelp
 ms.assetid: 8b72b071-691b-48b7-8852-f748c20fc787
@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66f65b6f998d4ec30f82ac4eef1adf72c01c4404
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894313"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349887"
 ---
-# <a name="how-to-display-message-properties"></a>Procedura: Visualizzare le proprietà del messaggio
-Per altre informazioni su un messaggio elencato nella [visualizzazione messaggi](../debugger/messages-view.md), utilizzare il [finestra di dialogo Proprietà messaggio](../debugger/message-properties-dialog-box.md).
+# <a name="how-to-display-message-properties"></a>Procedura: visualizzare le proprietà del messaggio
+Per ulteriori informazioni su un messaggio elencato nella [visualizzazione messaggi](../debugger/messages-view.md), utilizzare la finestra di [dialogo Proprietà messaggio](../debugger/message-properties-dialog-box.md).
 
-### <a name="to-open-a-message-properties-dialog-box"></a>Per aprire una finestra di dialogo proprietà del messaggio
+### <a name="to-open-a-message-properties-dialog-box"></a>Per aprire una finestra di dialogo Proprietà messaggio
 
-1. Selezionare un messaggio nell'albero nella visualizzazione di messaggi.
+1. Consente di selezionare un messaggio dall'albero visualizzato nella visualizzazione messaggi.
 
-2. Dal **View** menu, scegliere **proprietà**.
+2. Scegliere **Proprietà** dal menu **Visualizza**.
 
-   Finestre di dialogo delle proprietà non sono modale, in modo che è possibile fare clic su un altro elemento in una finestra di visualizzazione e la finestra di dialogo verrà visualizzate informazioni sull'elemento selezionato.
+   Le finestre di dialogo delle proprietà non sono modali, quindi è possibile fare clic su un altro elemento in una finestra di visualizzazione e nella finestra di dialogo verranno visualizzate le informazioni relative all'elemento selezionato.

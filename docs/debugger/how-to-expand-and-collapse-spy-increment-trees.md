@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: espandere e comprimere alberi di Spy + + | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6deedaf8b3d6ca9aee3029934dd87ae01b94f355
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f67a88c153e5bfef2644eb731d68229a54ffcbc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733317"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349588"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Procedura: espandere e comprimere strutture ad albero di Spy++
-È possibile espandere e comprimere le visualizzazioni finestre, processi e thread utilizzando due metodi: facendo clic sulle icone nella finestra o utilizzando il menu **albero** . Le icone + e-nell'albero agiscono come nella finestra del C++ progetto.
+È possibile espandere e comprimere le visualizzazioni finestre, processi e thread utilizzando due metodi: facendo clic sulle icone nella finestra o utilizzando il menu **albero** . Le icone + e-nell'albero agiscono come nella finestra del progetto C++.
 
  Il menu **albero** contiene quattro comandi:
 
@@ -38,7 +38,7 @@ ms.locfileid: "72733317"
 
 2. Scegliere uno dei comandi Espandi o Comprimi dal menu **albero** .
 
-## <a name="see-also"></a>Vedere anche
-- [Uso di Spy++](../debugger/using-spy-increment.md)
+## <a name="see-also"></a>Vedi anche
+- [Utilizzo di Spy++](../debugger/using-spy-increment.md)
 - [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)
-- [riferimenti per Spy++](../debugger/spy-increment-reference.md)
+- [Riferimenti per Spy++](../debugger/spy-increment-reference.md)
