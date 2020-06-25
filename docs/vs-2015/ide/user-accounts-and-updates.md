@@ -9,19 +9,19 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39fb09c24e0d8cca9d2dddbfe2259b50cd2972df
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: 92bbfc3612a34d354dee6288d66f2cf96c1e107c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672657"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289391"
 ---
 # <a name="user-accounts-and-updates"></a>Account utente e aggiornamenti
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!WARNING]
-> Visual Studio 2015 non è in grado di accedere alle risorse configurate per l'accesso condizionale. Per usare queste risorse, eseguire l'aggiornamento a Visual Studio 2017 o versione successiva.
+> Visual Studio 2015 non è in grado di accedere alle risorse configurate per l'accesso condizionale. Per lavorare con tali risorse, eseguire l'aggiornamento a Visual Studio 2019 versione 16,6 o successiva e seguire le istruzioni [su come usare Visual Studio con gli account che richiedono l'autenticazione](../../ide/work-with-multi-factor-authentication.md) a più fattori.
 
 Visual Studio è un ambiente connesso. Accedendovi è possibile accedere a tutti i servizi associati all'account utente e a tutti gli account che sono collegati a tale account. Le impostazioni dell’account viaggiano con l’utente in qualsiasi luogo utilizzi Visual Studio. È possibile configurare i livelli di autorizzazione su un'istanza specifica di Visual Studio per i singoli utenti. Visual Studio, inoltre, indica quando è disponibile un aggiornamento per un componente dell'installazione, ad esempio un SDK.
 
@@ -29,12 +29,12 @@ Visual Studio è un ambiente connesso. Accedendovi è possibile accedere a tutti
 
 |||
 |-|-|
-|[Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md) (Accesso a Visual Studio)|Viene descritto come e perché accedere a Visual Studio.|
-|[Usare più account utente](../ide/work-with-multiple-user-accounts.md)|Viene descritto come associare più account Microsoft e/o account di lavoro o di un istituto di istruzione per consentire l'accesso alle risorse e ai servizi da tutti gli account.|
+|[Accesso a Visual Studio](../ide/signing-in-to-visual-studio.md)|Viene descritto come e perché accedere a Visual Studio.|
+|[Gestire più account utente](../ide/work-with-multiple-user-accounts.md)|Viene descritto come associare più account Microsoft e/o account di lavoro o di un istituto di istruzione per consentire l'accesso alle risorse e ai servizi da tutti gli account.|
 |[Impostazioni sincronizzate](../ide/synchronized-settings-in-visual-studio.md)|Viene descritto il roaming delle impostazioni.|
 |[Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md)|Viene descritto come sbloccare Visual Studio in vari scenari.|
 |[Notifiche](../ide/visual-studio-notifications.md)|Viene descritto come Visual Studio invia una notifica quando è disponibile un aggiornamento per un componente, ad esempio SDK o Visual Studio.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [IDE di Visual Studio](../ide/visual-studio-ide.md)

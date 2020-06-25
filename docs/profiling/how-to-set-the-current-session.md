@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Impostare la sessione corrente | Microsoft Docs'
+title: Come impostare la sessione corrente | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - current performance sessions
 - Performance Explorer, selecting sessions
@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eb60a431ae1fd1f6d44b8aa1477d74705eb532d7
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778752"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328363"
 ---
 # <a name="how-to-set-the-current-session"></a>Procedura: Impostare la sessione corrente
 
@@ -35,9 +35,9 @@ Dopo avere impostato una sessione come sessione corrente, fare clic su **Avvio**
 
      Il nome della sessione verrà visualizzato in grassetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-Finestra Esplora prestazioni Proprietà sessione[prestazioni Panoramica della sessione](../profiling/performance-session-overview.md) di prestazioniConfigure[performance sessions Performance Explorer window](../profiling/performance-explorer-window.md)
-[Performance explorer Performance session Performance session Properties](../profiling/performance-session-properties.md)
-Performance session overview
+[Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
+ di prestazioni [Finestra Esplora prestazioni](../profiling/performance-explorer-window.md) 
+ Proprietà della sessione di [prestazioni](../profiling/performance-session-properties.md) 
+ [Panoramica della sessione di prestazioni](../profiling/performance-session-overview.md)

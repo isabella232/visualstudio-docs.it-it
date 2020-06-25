@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Specificare comandi pre- e post-strumentazione | Microsoft Docs'
+title: 'Procedura: specificare comandi pre-e post-strumentazione | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ba91e04342b9b78e3c6acae5296857a6f00f2aba
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778713"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328990"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedura: Specificare comandi pre e post-strumentazione
 
@@ -45,7 +45,7 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
 3. Digitare il comando nella casella di testo **Riga di comando** in **Eventi pre-strumentazione**.
 
     > [!NOTE]
-    > È possibile fare clic sul pulsante con i lipsia **(...)** adiacente alla casella Riga di **comando** per individuare e selezionare il file .exe, cmd o .bat appropriato.
+    > È possibile fare clic sul pulsante con i puntini di sospensione **(...)** adiacente alla casella **riga di comando** per individuare e selezionare il file con estensione exe, cmd o bat appropriato.
 
 4. Fare clic su **OK**.
 
@@ -64,12 +64,12 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
 3. Digitare il comando nella casella di testo **Riga di comando** in **Eventi post-strumentazione**.
 
     > [!NOTE]
-    > È possibile fare clic sul pulsante con i lipsia **(...)** adiacente alla casella Riga di **comando** per individuare e selezionare il file .exe, cmd o .bat appropriato.
+    > È possibile fare clic sul pulsante con i puntini di sospensione **(...)** adiacente alla casella **riga di comando** per individuare e selezionare il file con estensione exe, cmd o bat appropriato.
 
 4. Fare clic su **OK**.
 
      Per disabilitare l'esecuzione del comando senza rimuoverlo, selezionare la casella di controllo **Escludere dalla strumentazione**. Per modificare le impostazioni del compilatore o del linker, usare le pagine delle proprietà del progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Creare un report calltrace degli strumenti di profilatura | Microsoft Docs'
+title: 'Procedura: creazione di un report di traccia delle chiamate Strumenti di profilatura | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, viewing ETW data
 - ETW [Visual Studio ALM], viewing data
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b184310d837193679a1a5eacf2fbae4ecf29caa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c9f434df1a2956daf49dbb6a6c5c55f06c743d44
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778986"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328631"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedura: Creare un report calltrace degli strumenti di profilatura
 Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elenca le informazioni di intervallo per ogni punto di ingresso e di uscita delle funzioni dell'applicazione e ogni chiamata ad altre funzioni da parte di una determinata funzione. I report calltrace sono disponibili per i dati di profilatura solo se sono stati raccolti con il metodo di strumentazione.
@@ -27,7 +27,7 @@ Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../c
 
 ### <a name="to-create-a-call-trace-report"></a>Per creare un report calltrace
 
-1. Aprire una finestra **del prompt dei comandi.**
+1. Aprire una finestra del **prompt dei comandi** .
 
 2. Al prompt dei comandi digitare il comando seguente:
 
@@ -36,9 +36,9 @@ Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../c
     |||
     |-|-|
     |*ToolsPath*|Percorso degli strumenti da riga di comando disponibili negli strumenti di profilatura. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
-    |*File VSP*|Dati di profilatura (.* vsp* o . *vsps*) ﬁle. Sono accettati percorsi completi e parziali.|
+    |*VSPFile*|I dati di profilatura (.* VSP* o. *vsps*) file. Sono accettati percorsi completi e parziali.|
     |Xml|Genera un report in formato XML.|
 
-## <a name="see-also"></a>Vedere anche
-- [Procedura: raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+## <a name="see-also"></a>Vedi anche
+- [Procedura: raccogliere dati di Event Tracing for Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 - [API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)

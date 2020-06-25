@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Scegliere un metodo di raccolta | Microsoft Docs'
+title: 'Procedura: scegliere i metodi di raccolta | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, choosing collection method
 - profiling tools, choosing collection method
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dbc54fc394f75778f74d9b6b02e93882129cdb9
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776345"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329273"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedura: Scegliere i metodi di raccolta
 
@@ -31,7 +31,7 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 - Nella prima pagina della procedura guidata selezionare una delle opzioni seguenti:
 
-| Opzione | Descrizione |
+| Opzione | Description |
 |----------------------------| - |
 | **Campionamento CPU** | Consente di raccogliere le statistiche dell'applicazione utili per l'analisi iniziale e per l'analisi dei problemi relativi all'uso della CPU. |
 | **Strumentazione** | Consente di raccogliere i dati di intervallo dettagliati utili per l'analisi mirata e per l'analisi dei problemi relativi alle prestazioni di input/output. |
@@ -90,8 +90,8 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 3. Fare clic su **Concorrenza**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-[Configurare le sessioni](../profiling/configuring-performance-sessions.md)
-di prestazioni Comprendere i valori
-dei[dati di campionamento](../profiling/understanding-sampling-data-values.md)[Proprietà della sessione prestazioni](../profiling/performance-session-properties.md)
+[Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
+ di prestazioni [Informazioni sui valori](../profiling/understanding-sampling-data-values.md) 
+ dei dati di campionamento [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)

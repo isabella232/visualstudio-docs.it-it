@@ -1,7 +1,7 @@
 ---
-title: 'DA0007: Evitare di utilizzare eccezioni per il flusso di controllo | Microsoft Docs'
+title: DA0007-evitare di usare eccezioni per il flusso di controllo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExceptionsThrown
 - vs.performance.7
@@ -14,14 +14,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 26819be7cd001e87a6f94ac97d29c8a5e67f3932
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6dd7261b1cb3a39d792cd3129b18a4a271191be0
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777699"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328214"
 ---
-# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evitare di utilizzare eccezioni per il flusso di controllo
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evitare di usare eccezioni per il flusso di controllo
 
 |||
 |-|-|
@@ -42,6 +42,6 @@ ms.locfileid: "74777699"
  Per altre informazioni, vedere la sezione [Exception Management](/previous-versions/msp-n-p/ff647790(v=pandp.10)#exception-management) (Gestione delle eccezioni) in **Chapter 5 - Improving Managed Code Performance** (Capitolo 5 - Miglioramento delle prestazioni del codice gestito) nel volume **Improving .NET Application Performance and Scalability** (Miglioramento delle prestazioni e della scalabilità delle applicazioni .NET) della libreria **Microsoft Patterns and Practices** in MSDN.
 
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso
- Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla visualizzazione Contrassegni. Individuare la colonna che contiene le misure **Eccezioni CLR@ProcessInstance.NET( )\\delle misure di Excel generate/sec.** Determinare se sono presenti fasi specifiche di esecuzione del programma in cui la gestione delle eccezioni risulta più frequente rispetto alle altre fasi. Usando un profilo di campionamento, provare a identificare le istruzioni throw e i blocchi try/catch che generano eccezioni frequenti. Se necessario, aggiungere logica ai blocchi catch per individuare le eccezioni che vengono gestite più spesso. Dove possibile, sostituire le istruzioni throw o i blocchi catch eseguiti frequentemente con una logica di controllo di flusso o un codice di convalida a bassa complessità.
+ Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla visualizzazione Contrassegni. Trovare la colonna che contiene le misurazioni **.NET CLR Exceptions ( @ProcessInstance ) \\ numero di eccellenze generate/sec** . Determinare se sono presenti fasi specifiche di esecuzione del programma in cui la gestione delle eccezioni risulta più frequente rispetto alle altre fasi. Usando un profilo di campionamento, provare a identificare le istruzioni throw e i blocchi try/catch che generano eccezioni frequenti. Se necessario, aggiungere logica ai blocchi catch per individuare le eccezioni che vengono gestite più spesso. Dove possibile, sostituire le istruzioni throw o i blocchi catch eseguiti frequentemente con una logica di controllo di flusso o un codice di convalida a bassa complessità.
 
  Ad esempio, se si rileva che l'applicazione sta gestendo eccezioni DivideByZeroException frequenti, per migliorare le prestazioni dell'applicazione è possibile aggiungere logica al programma per verificare la presenza di denominatori con valori zero.

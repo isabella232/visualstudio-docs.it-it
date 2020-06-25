@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Impostare le autorizzazioni | Microsoft Docs'
+title: 'Procedura: impostazione delle autorizzazioni | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774589"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328942"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 
@@ -36,7 +36,7 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>Per creare un account utente con autorizzazioni utente
 
-1. Fare clic con il pulsante destro del mouse su **Risorse del computer,** quindi **scegliere Gestisci**.
+1. Fare clic con il pulsante destro del mouse su **computer locale** e quindi scegliere **Gestisci**.
 
      Verrà aperta la finestra **Gestione computer**.
 
@@ -64,13 +64,13 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 2. Fare clic con il pulsante destro del mouse sulla cartella e quindi fare clic su **Proprietà**.
 
-     Viene visualizzato il nome della cartella> finestra di dialogo ** \<Proprietà.**
+     Verrà visualizzata la finestra di dialogo ** \<folder name> Proprietà** .
 
 3. Fare clic sulla scheda **Sicurezza**.
 
 4. Fare clic sul nome dell'account utente nella casella **Utenti e gruppi**.
 
-5. Nella casella **Autorizzazioni per \<nome utente>** selezionare la casella di controllo **Controllo completo**.
+5. Nella casella **autorizzazioni per \<user name> ** Selezionare la casella di controllo **controllo completo**.
 
 6. Fare clic su **OK**.
 
@@ -104,7 +104,7 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
-     Tramite questo comando all'account \<nome utente> o \<nome gruppo> viene concesso l'accesso agli strumenti di profilatura. L'opzione \<right> determina la funzionalità di profilatura alla quale l'utente può accedere. L'opzione \<right> può corrispondere a uno o più valori tra quelli riportati di seguito:
+     Questo comando concede all' \<user name> account o l' \<group name> accesso agli strumenti di profilatura. L' \<right> opzione determina la funzionalità di profilatura a cui l'utente può accedere. L' \<right> opzione può essere costituita da uno o più dei valori seguenti:
 
     - FullAccess: consente l'accesso a tutti i metodi di profilatura, inclusa la raccolta dei dati sulle prestazioni della profilatura dei servizi, tra sessioni e mediante campionamento.
 
@@ -120,8 +120,8 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
    Dopo aver effettuato l'accesso, gli utenti specificati saranno in grado di usare gli strumenti di profilatura senza autorizzazioni di amministratore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-[Configurare le sessioni](../profiling/configuring-performance-sessions.md)
-di prestazioni[VSPerfCmd](../profiling/vsperfcmd.md)
-[Profiling e Windows Vista Security](../profiling/profiling-and-windows-vista-security.md)
+[Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
+ di prestazioni [VSPerfCmd](../profiling/vsperfcmd.md) 
+ [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Scegliere eventi di campionamento | Microsoft Docs'
+title: 'Procedura: scegliere eventi di campionamento | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8473ca1f5829faa2a76b5560132c7aada152dc3a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779051"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329277"
 ---
 # <a name="how-to-choose-sampling-events"></a>Procedura: Scegliere eventi di campionamento
 Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] raccolgono dati relativi alle prestazioni a un intervallo specificato come numero di cicli del processore usati dal processo profilato. Il numero predefinito di cicli in un intervallo è 10.000.000, pari a circa 0,01 secondi in un computer da 1 GHz. È possibile modificare il numero di cicli in un intervallo, nonché l'evento di campionamento. Sono disponibili gli eventi di campionamento seguenti:
@@ -59,9 +59,9 @@ Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](
 
 5. Quando si seleziona un evento di campionamento, nella casella di testo **Intervallo di campionamento** viene visualizzato un valore predefinito per l'intervallo di campionamento. Se necessario, è possibile immettere il valore desiderato nella casella di testo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-- [Procedura: scegliere i metodi di raccoltaHow to: Choose collection methods](../profiling/how-to-choose-collection-methods.md)
+- [Procedura: scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
 - [Contatori CPU e Windows](../profiling/cpu-and-windows-counters.md)
 - [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)
 - [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

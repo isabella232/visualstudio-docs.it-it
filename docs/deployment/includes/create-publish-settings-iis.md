@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b8002d9e911c8d8c07a5aaf5286168e49a374a7c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143527"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292126"
 ---
 
 1. Chiudere e riaprire la Console di gestione IIS per visualizzare le opzioni di configurazione aggiornate nell'interfaccia utente.
@@ -12,6 +12,8 @@ ms.locfileid: "68143527"
 2. In IIS fare clic con il pulsante destro del mouse su **Sito Web predefinito**, quindi scegliere **Distribuisci** > **Abilita pubblicazione Distribuzione Web**.
 
     ![Impostare la configurazione Distribuzione Web](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+
+   Se il menu **Distribuisci** non viene visualizzato, vedere la sezione precedente per verificare che distribuzione Web sia in esecuzione.
 
 3. Nella finestra di dialogo **Abilita pubblicazione Distribuzione Web** esaminare le impostazioni.
 

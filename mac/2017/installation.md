@@ -7,17 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 962ca0cf3960195ffabefb5a9bd2c6cc7e72590c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984919"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289417"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Installare Visual Studio 2017 per Mac
 
 > [!NOTE]
-> Visual Studio 2019 per Mac è [ora disponibile.](installation.md?view=vsmac-2019) Per le versioni precedenti di Visual Studio per Mac, vedere la [pagina dei download](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) di Visual Studio.
+> Visual Studio 2019 per Mac è [ora disponibile](installation.md?view=vsmac-2019). Per le versioni precedenti di Visual Studio per Mac, vedere la [pagina dei download](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) di Visual Studio.
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Downgrade da Visual Studio 2019 per Mac
 
@@ -29,11 +29,11 @@ Per iniziare a sviluppare app native multipiattaforma quando si scarica Visual S
 
 Per l'uso di iOS in Visual Studio è necessario quanto segue:
 
-- Mac con macOS Sierra 10.12 o versione successiva
+- Mac con macOS High Sierra 10.13 o versione successiva.
 - Xcode 9.3 o versione successiva. È in genere consigliabile usare la versione stabile più recente.
 - ID Apple. Se non si ha ancora un ID Apple, è possibile crearne uno nuovo all'indirizzo https://appleid.apple.com. L'ID Apple è necessario per installare Xcode e accedervi.
 
-## <a name="install"></a>Installazione
+## <a name="install"></a>Installazione di
 
 1. Scaricare Visual Studio per Mac da [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)
 
@@ -115,7 +115,7 @@ L'installazione di Visual Studio per Mac consente di iniziare a scrivere codice 
 
 1. [Using the Xamarin Android SDK Manager (Uso di Xamarin Android SDK Manager)](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
 2. [Emulatore di Android SDK](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [Configurare il dispositivo per lo sviluppo](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+4. [Set Up Device for Development (Configurare il dispositivo per lo sviluppo)](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>app .NET core, app Web ASP.NET Core, sviluppo di giochi Unity
 
@@ -125,6 +125,6 @@ Per altri carichi di lavoro, vedere la pagina [Carichi di lavoro](/visualstudio/
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installare Visual Studio 2017 (in Windows)](/visualstudio/install/install-visual-studio)

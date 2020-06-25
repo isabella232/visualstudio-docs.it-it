@@ -1,7 +1,7 @@
 ---
 title: Funzione CvEnterSpan | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvEnterSpanVA
 - cvmarkers/CvEnterSpanW
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d501f7c1e75f5b63c82c34f2dc0a4913d7a88c7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552632"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328967"
 ---
 # <a name="cventerspan-function"></a>Funzione CvEnterSpan
 Segna l'inizio di una nuova sezione.
@@ -124,5 +124,5 @@ HRESULT CvEnterSpanExVA(
 
  **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
 
-## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sulla libreria in C](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Vedi anche
+- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

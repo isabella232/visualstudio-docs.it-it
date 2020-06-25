@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Fare riferimento alle informazioni sui simboli di Windows | Microsoft Docs'
+title: 'Procedura: fare riferimento alle informazioni sui simboli di Windows | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, symbol servers
 - servers, symbol servers
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88df7c676e6dbd95704716eb8a361f2fce7f66d4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774913"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328822"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Procedura: Fare riferimento alle informazioni sui simboli di Windows
 Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensione *pdb*) per risolvere i nomi simbolici, ad esempio i nomi delle funzioni nei file binari del programma. È possibile seguire questa procedura per scaricare e aggiornare automaticamente i file *pdb* corretti per la versione di Windows nel computer locale.
@@ -27,7 +27,7 @@ Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensi
 > [!NOTE]
 > Questa impostazione non influisce sui rapporti esistenti. Le informazioni sui simboli saranno presenti solo nei rapporti creati dopo aver specificato il server di simboli.
 
- Per ulteriori informazioni, vedere [Specificare il simbolo (.* pdb*) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+ Per ulteriori informazioni, vedere [specificare il simbolo (.* PDB*) e file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ### <a name="to-use-the-microsoft-symbol-server"></a>Per usare il server dei simboli Microsoft
 
@@ -35,7 +35,7 @@ Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensi
 
 2. Scegliere **Opzioni** dal menu **Strumenti**.
 
-     Viene visualizzata la finestra di dialogo **Opzioni.**
+     Verrà visualizzata la finestra di dialogo **Opzioni** .
 
 3. Espandere l'albero **Debug** e quindi fare clic su **Simboli**.
 
@@ -47,6 +47,6 @@ Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensi
 
      È anche possibile fare clic sul pulsante con i puntini di sospensione (**... **) e quindi selezionare una directory dalla finestra di dialogo **Sfoglia per cartelle**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-- [Procedura: serializzare informazioni sui simboliHow to: Serialize symbol information](../profiling/how-to-serialize-symbol-information.md)
+- [Procedura: serializzare le informazioni sui simboli](../profiling/how-to-serialize-symbol-information.md)

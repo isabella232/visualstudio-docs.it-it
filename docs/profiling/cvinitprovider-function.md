@@ -1,7 +1,7 @@
 ---
 title: Funzione CvInitProvider | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvInitProvider
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a97be63cd782397e984fd8dbce7da844efa07540
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b06190568454977bfcb54d65db9011fc979f7591
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552667"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329572"
 ---
 # <a name="cvinitprovider-function"></a>Funzione CvInitProvider
 Inizializza il provider di marcatori. Deve essere chiamata prima di qualsiasi altra funzione SDK del visualizzatore di concorrenza.
@@ -42,5 +42,5 @@ HRESULT CvInitProvider(
 ## <a name="requirements"></a>Requisiti
  **Intestazione:** *cvmarkers.h*
 
-## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sulla libreria in C](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Vedi anche
+- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

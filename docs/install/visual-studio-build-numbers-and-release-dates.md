@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/27/2020
+ms.date: 06/23/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: f286262e77064f38e3ce09a32ec5dec82a22fe89
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fd2e26dcb026b25923b08c572aa203d06a076844
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183197"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292919"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -29,12 +29,17 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.0 | Preview 3 | 23 giugno 2020 | 16.7.30218.91 |
+| 16.0.15 | Versione | 9 giugno 2020 | 16.0.28803.753 |
+| 16.6.2 | Versione | 9 giugno 2020 | 16.6.30204.135 |
+| 16.7.0 | Preview 2 | 2 giugno 2020 | 16.7.30128.36 |
+| 16.6.1 | Versione | 1 giugno 2020 | 16.6.30128.74 |
 | 16.4.9 | Versione | 27 maggio 2020 | 16.4.30120.98 |
 | 16.7.0 | Preview 1 | 19 maggio 2020 | 16.7.30114.128 |
 | 16.6.0 | Versione | 19 maggio 2020 | 16.6.30114.105 |
-| 16.5.5 | Versione | 12 maggio, 2020 | 16.5.30104.148 |
-| 16.4.8 | Versione | 12 maggio, 2020 | 16.4.30107.140 |
-| 16.0.14 | Versione | 12 maggio, 2020 | 16.0.28803.735 |
+| 16.5.5 | Versione | 12 maggio 2020 | 16.5.30104.148 |
+| 16.4.8 | Versione | 12 maggio 2020 | 16.4.30107.140 |
+| 16.0.14 | Versione | 12 maggio 2020 | 16.0.28803.735 |
 | 16.6.0 | Preview 6 | 7 maggio 2020 | 16.6.30105.148 |
 | 16.6.0 | Preview 5 | 30 aprile 2020 | 16.6.30028.174 |
 | 16.6.0 | Preview 4 | 23 aprile 2020 | 16.6.30021.99 |
@@ -46,7 +51,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 16.6.0 | Preview 2.1 | 2 aprile 2020 | 16.6.30001.183 |
 | 16.5.2 | Versione | 31 marzo 2020 | 16.5.29926.136 |
 | 16.6.0 | Preview 2 | 26 marzo 2020 | 16.6.29924.181 |
-| 16.5.1 | Versione | 24 marzo, 2020 | 16.5.29920.165 |
+| 16.5.1 | Versione | 24 marzo 2020 | 16.5.29920.165 |
 | 16.6.0 | Preview 1 | 16 marzo 2020 | 16.6.29911.98 |
 | 16.5.0 | Versione | 16 marzo 2020 | 16.5.29911.84 |
 | 16.4.6 | Versione | 10 marzo 2020  | 16.4.29905.134 |
@@ -95,7 +100,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 16.2.0 | Versione | 24 luglio 2019 | 16.2.29123.88 |
 | 16.3.0 | Preview 1 | 24 luglio 2019 | 16.3.29123.89 |
 | 16.2.0 | Preview 4 | 16 luglio 2019 | 16.2.29111.141 |
-| 16.1.6 | Versione | 09 luglio 2019 | 16.1.29102.190 |
+| 16.1.6 | Versione | 9 luglio 2019 | 16.1.29102.190 |
 | 16.0.6 | Versione | 09 luglio 2019 | 16.0.28803.540 |
 | 16.1.5 | Versione | 2 luglio 2019 | 16.1.29025.244 |
 | 16.1.4 | Versione | 25 giugno 2019 | 16.1.29020.237 |
@@ -149,7 +154,8 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.9.23 | Versione | 12 maggio, 2020 | 15.9.28307.1146 |
+| 15.9.24 | Versione | 9 giugno 2020 | 15.9.28307.1177 |
+| 15.9.23 | Versione | 12 maggio 2020 | 15.9.28307.1146 |
 | 15.9.22 | Versione | 14 aprile 2020 | 15.9.28307.1093 |
 | 15.9.21 | Versione | 10 marzo 2020 | 15.9.28307.1064 |
 | 15.9.20 | Versione | 11 febbraio 2020 | 15.9.28307.1033 |
@@ -161,8 +167,8 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.0.27 | Versione | 10 settembre 2019 | 15.0.26228.98 |
 | 15.9.15 | Versione | 13 agosto 2019 | 15.9.28307.812 |
 | 15.0.26 | Versione | 13 agosto 2019 | 15.0.26228.96 |
-| 15.9.14 | Versione | 09 luglio 2019 | 15.9.28307.770 |
-| 15.0.25 | Versione | 09 luglio 2019 | 15.0.26228.92 |
+| 15.9.14 | Versione | 9 luglio 2019 | 15.9.28307.770 |
+| 15.0.25 | Versione | 9 luglio 2019 | 15.0.26228.92 |
 | 15.9.13 | Versione | 11 giugno 2019 | 15.9.28307.718 |
 | 15.0.24 | Versione | 11 giugno 2019 | 15.0.26228.88 |
 | 15.9.12 | Versione | 14 maggio 2019 | 15.9.28307.665 |

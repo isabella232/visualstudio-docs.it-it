@@ -74,6 +74,7 @@
 ### [Amministratori avanzati e amministratori](admin-roles.md)
 ### [Impostare le preferenze per i contratti](admin-prefs.md)
 ### [Panoramica](using-admin-portal.md)
+### [Aggiungere sottoscrizioni mensili](add-monthly-subs.md)
 ### Assegnare sottoscrizioni
 #### [Aggiungere utenti singoli](assign-license.md)
 #### [Aggiungere più utenti](assign-license-bulk.md)

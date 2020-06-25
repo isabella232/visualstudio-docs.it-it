@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Come aggiungere un'identità alternativa per la sottoscrizione di Visual Studio per usare Azure DevOps e Azure
-ms.openlocfilehash: ff5166da3cb782c0750b0ce61fdafec375811ff4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: f8b634bd2f59bf3de038e7200900ee9930d79fff
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232009"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289373"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identità per i sottoscrittori di Visual Studio
 Quando si attiva la sottoscrizione di Visual Studio, l'identità (o l'account di accesso) usata durante l'attivazione viene collegata alla sottoscrizione di Visual Studio. In questo modo, l'utente verrà riconosciuto nel [portale per i sottoscrittori di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), in Azure DevOps e in Azure.
@@ -20,7 +20,7 @@ Quando si attiva la sottoscrizione di Visual Studio, l'identità (o l'account di
 In Azure DevOps lo stato della sottoscrizione di Visual Studio viene controllato a ogni accesso e vengono concesse automaticamente le funzionalità incluse per ogni organizzazione di cui si è membri.
 Poiché queste funzionalità sono incluse come vantaggio per i sottoscrittori, un utente può essere aggiunto gratuitamente come membro di qualsiasi organizzazione di Azure DevOps quando viene usata un'identità collegata alla sottoscrizione di Visual Studio.
 
-In Azure viene controllato lo stato della sottoscrizione di Visual Studio quando si attiva il [credito individuale mensile DevTest](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) di Azure che è un vantaggio per i sottoscrittori.
+In Azure, lo stato della sottoscrizione di Visual Studio viene controllato quando si attiva il [credito individuale Azure DevTest mensile](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) che rappresenta un vantaggio per gli abbonati.
 
 All'interno del [portale per i sottoscrittori di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) potrebbe essere possibile aggiungere un'**identità alternativa** oltre a quella usata durante l'attivazione. L'aggiunta di un'identità alternativa è consentita se è stato usato un account Microsoft per attivare la sottoscrizione. In questo modo è possibile aggiungere anche un account aziendale o dell'istituto di istruzione (usato per l'accesso a Visual Studio, Office 365 o alla rete aziendale o dell'istituto di istruzione), in modo che sia possibile accedere ad Azure DevOps sia tramite l'account personale che tramite l'account aziendale o dell'istituto di istruzione.
 
@@ -34,14 +34,12 @@ Per tutte le sottoscrizioni, è possibile aggiungere un "account aziendale o del
 ### <a name="add-the-alternate-account"></a>Aggiungere l'account alternativo
 1. Accedere al portale per i sottoscrittori di Visual Studio con il proprio account Microsoft (https://my.visualstudio.com).
 2. Fare clic sulla scheda **Sottoscrizioni**.
-3. Scegliere **Aggiungi account alternativo**.
+3. Scegliere **Aggiungi un account alternativo**.
 4. Aggiungere l'account aziendale o dell'istituto di istruzione.
     > [!div class="mx-imgBorder"]
     > ![Aggiungere l'account aziendale o dell'istituto di istruzione](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
 5. Usare l'account aziendale o dell'istituto di istruzione per accedere ad Azure DevOps (https://{account}.visualstudio.com).
-    > [!div class="mx-imgBorder"]
-    > ![Usare l'account aziendale o dell'istituto di istruzione](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
 L'account alternativo viene aggiunto alla sottoscrizione di Visual Studio, consentendo a entrambe le identità di sfruttare i vantaggi della sottoscrizione che richiedono l'accesso con l'account alternativo (IDE, Azure DevOps e Azure).
 
@@ -51,7 +49,7 @@ L'account alternativo viene aggiunto alla sottoscrizione di Visual Studio, conse
 
 R: Azure DevOps dovrebbe riconoscere automaticamente la sottoscrizione quando si esegue l'accesso con l'identità primaria o alternativa. In caso contrario, è possibile:
 
-* Verificare di disporre di una sottoscrizione attiva di Visual Studio che include [DevOps](vs-azure-devops.md#eligibility) di Azure come vantaggio.
+* Verificare di avere una sottoscrizione di Visual Studio attiva che includa [Azure DevOps](vs-azure-devops.md#eligibility) come vantaggio.
 
 * Assicurarsi di usare un account di accesso o un'identità che rappresenta l'identità primaria o alternativa per la sottoscrizione di Visual Studio.
 
@@ -59,14 +57,14 @@ R: Azure DevOps dovrebbe riconoscere automaticamente la sottoscrizione quando si
 
 Se Azure DevOps non riconosce ancora la sottoscrizione, contattare il [supporto tecnico di Azure DevOps](https://azure.microsoft.com/support/devops/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi 
-Per altre informazioni sull'uso di Azure, DevOps di Azure o IDE di Visual Studio, vedere queste risorse:For more information about using Azure, Azure DevOps or Visual Studio IDE, check out these resources:
+Per altre informazioni sull'uso di Azure, Azure DevOps o l'IDE di Visual Studio, vedere le risorse seguenti:
 - [Azure](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Visual Studio](vs-ide-benefit.md)

@@ -9,15 +9,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d8653b2bcf06801c18e21d9a13b21843abc7d7
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706378"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328480"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Risoluzione dei problemi relativi al ricaricamento rapido XAML
 
@@ -35,26 +34,26 @@ La funzionalità è abilitata per impostazione predefinita. Quando si avvia il d
 
 ![Ricaricamento a caldo di XAML disponibile](../debugger/media/xaml-hot-reload-available.png)
 
-Se la barra degli strumenti in-app non è visualizzata, aprire **Debug** > **Opzioni** > **generale**. Assicurarsi che siano selezionate entrambe le opzioni, **Abilita strumenti di debug dell'interfaccia utente per XAML** e **Abilita ricaricamento a caldo XAML** .
+Se la barra degli strumenti in-app non è visibile, aprire Opzioni di **debug**  >  **Options**  >  **generale**. Assicurarsi che siano selezionate entrambe le opzioni, **Abilita strumenti di debug dell'interfaccia utente per XAML** e **Abilita ricaricamento a caldo XAML** .
 
 ![Abilita ricaricamento attivo XAML](../debugger/media/xaml-hot-reload-enable.png)
 
-Se queste opzioni sono selezionate, passare a struttura ad albero visuale attiva (**Debug** > **Windows** > **albero elementi visivi**attivi) e assicurarsi che **Mostra strumenti di runtime nel** pulsante della barra degli strumenti dell'applicazione (all'estrema sinistra) sia selezionata.
+Se queste opzioni sono selezionate, passare a albero elementi visivi attivi (**debug**  >  **Windows**  >  **albero elementi visivi**di Windows Live) e assicurarsi che **Mostra strumenti di runtime nel pulsante della** barra degli strumenti dell'applicazione (all'estrema sinistra) sia selezionata.
 
 ![Abilita ricaricamento attivo XAML](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Verificare di usare Avvia debug anziché Connetti a processo
 
-Il ricaricamento a caldo di XAML richiede che la variabile di ambiente `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` sia impostata su 1 al momento dell'avvio dell'applicazione. Visual Studio imposta questa impostazione automaticamente come parte del comando **debug** > **Avvia debug** (o **F5**). Se invece si vuole usare il ricaricamento a caldo di XAML con il comando **Debug** > **Connetti a processo** , impostare manualmente la variabile di ambiente.
+Il ricaricamento a caldo di XAML richiede che la variabile `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` di ambiente sia impostata su 1 al momento dell'avvio dell'applicazione. Visual Studio imposta questa impostazione automaticamente come parte del comando **debug**  >  **Avvia debug** (o **F5**). Se invece si vuole usare il ricaricamento a caldo di XAML con il comando **debug**  >  **Connetti a processo** , impostare manualmente la variabile di ambiente.
 
 > [!NOTE]
-> Per impostare una variabile di ambiente, usare il pulsante Start per cercare "variabile di ambiente" e scegliere **modifica le variabili di ambiente di sistema**. Nella finestra di dialogo visualizzata scegliere variabili di **ambiente**, quindi aggiungerla come variabile utente e impostare il valore su `1`. Per eseguire la pulizia, rimuovere la variabile al termine del debug.
+> Per impostare una variabile di ambiente, usare il pulsante Start per cercare "variabile di ambiente" e scegliere **modifica le variabili di ambiente di sistema**. Nella finestra di dialogo visualizzata scegliere variabili di **ambiente**, quindi aggiungerla come variabile utente e impostare il valore su `1` . Per eseguire la pulizia, rimuovere la variabile al termine del debug.
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Verificare che le proprietà di MSBuild siano corrette
 
-Per impostazione predefinita, le informazioni sull'origine sono incluse in una configurazione di debug. Viene controllata dalle proprietà di MSBuild nei file di progetto, ad esempio *. csproj. Per WPF, la proprietà è `XamlDebuggingInformation`, che deve essere impostata su `True`. Per UWP, la proprietà è `DisableXbfLineInfo`, che deve essere impostata su `False`. Ad esempio,
+Per impostazione predefinita, le informazioni sull'origine sono incluse in una configurazione di debug. Viene controllata dalle proprietà di MSBuild nei file di progetto, ad esempio *. csproj. Per WPF, la proprietà è `XamlDebuggingInformation` , che deve essere impostata su `True` . Per UWP, la proprietà è `DisableXbfLineInfo` , che deve essere impostata su `False` . Ad esempio:
 
-WPF
+WPF:
 
 `<XamlDebuggingInformation>True</XamlDebuggingInformation>`
 
@@ -70,6 +69,6 @@ UWP
 
 Se il file XAML Mostra errori nel **Elenco errori**, il ricaricamento a caldo di XAML potrebbe non funzionare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento attivo XAML](xaml-hot-reload.md)

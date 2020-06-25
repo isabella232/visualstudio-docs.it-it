@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Creare manualmente sessioni di prestazioni | Microsoft Docs'
+title: 'Procedura: creare manualmente sessioni di prestazioni | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.wizard.dllpage
 - vs.performance.wizard.exepage
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a1701322bec623c6bb2657f78ecdcc1dc16dde1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778830"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327668"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procedura: Creare manualmente sessioni di prestazioni
 Una sessione di prestazioni può essere creata manualmente. Per eseguire questa operazione, non è necessario aprire un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md).
@@ -37,6 +37,6 @@ Una sessione di prestazioni può essere creata manualmente. Per eseguire questa 
 
      Verrà aggiunto un nuovo file binario.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Esplora prestazioni](../profiling/performance-explorer.md)
 - [Introduzione](../profiling/getting-started-with-performance-tools.md)

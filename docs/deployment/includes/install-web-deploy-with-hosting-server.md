@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: 1e6c6714720d652fff266e3e852d01982c98e34a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a292b37a50bbf667fa5b23f18879cd79c3f76805
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173883"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292132"
 ---
 Distribuzione Web 3.6 per server di hosting offre funzionalità di configurazione aggiuntive che consentono la creazione del file di impostazioni di pubblicazione dall'interfaccia utente.
 
-1. Se si dispone di distribuzione Web 3,6 già installato in Windows Server, disinstallarlo utilizzando programmi del **Pannello di controllo**  >  **Programs**  >  **Disinstalla un programma**.
+1. Se distribuzione Web già installato in Windows Server, disinstallarlo utilizzando programmi del **Pannello di controllo**  >  **Programs**  >  **Disinstalla un programma**.
 
 2. Installare quindi Distribuzione Web 3.6 per server di hosting in Windows Server.
 
@@ -24,6 +24,12 @@ Distribuzione Web 3.6 per server di hosting offre funzionalità di configurazion
 
     Gli script e gli strumenti sono necessari per consentire la generazione del file delle impostazioni di pubblicazione.
 
-4. (Facoltativo) Verificare che Distribuzione Web sia correttamente in esecuzione. A tale scopo, aprire **Pannello di controllo > Sistema e sicurezza > Strumenti di amministrazione > Servizi** e assicurarsi che il **Servizio Agente distribuzione Web** sia in esecuzione (il nome del servizio è diverso nelle versioni precedenti).
+4. Opzionale Verificare che Distribuzione Web venga eseguito correttamente aprendo il **Pannello di controllo > sistema e sicurezza > strumenti di amministrazione > Servizi**, quindi verificare che:
 
-    Se il servizio agente non è in esecuzione, avviarlo. Se non è presente, passare a **Pannello di controllo > Programmi > Disinstalla un programma** e trovare **Distribuzione Web di Microsoft\<version>**. Scegliere di **modificare** l'installazione e assicurarsi di scegliere **Installazione su disco rigido locale** per i componenti di Distribuzione Web. Completare la procedura di modifica dell'installazione di modifica.
+    * Il **servizio Deployment Agent Web** è in esecuzione (il nome del servizio è diverso nelle versioni precedenti).
+
+    * Il **servizio gestione Web** è in esecuzione.
+
+    Se uno dei servizi dell'agente non è in esecuzione, riavviare il **servizio Web Deployment Agent**.
+
+    Se il servizio Web Deployment Agent non è disponibile, passare a pannello di **controllo > programmi > Disinstalla un programma**, trova **distribuzione Web \<version> Microsoft **. Scegliere di **modificare** l'installazione e assicurarsi di scegliere **Installazione su disco rigido locale** per i componenti di Distribuzione Web. Completare la procedura di modifica dell'installazione di modifica.
