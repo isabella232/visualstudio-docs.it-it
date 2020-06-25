@@ -1,7 +1,7 @@
 ---
 title: Installare gli analizzatori Roslyn
 ms.date: 08/03/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9a833cb46811bd97467fdb048272c9feb2bb7873
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ce30dd25c43f1ac8254dbdb6b04b747a976f3557
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587381"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371755"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Installare gli analizzatori di codice .NET Compiler Platform
 
@@ -33,7 +33,7 @@ Visual Studio include un core set di analizzatori di .NET Compiler Platform (*Ro
    > [!NOTE]
    > La pagina www.nuget.org per ogni pacchetto dell'analizzatore Mostra il comando da incollare nella **console di gestione pacchetti**. È anche disponibile un pulsante utile per copiare il testo negli Appunti.
 
-   Gli assembly dell'analizzatore vengono installati e visualizzati in **Esplora soluzioni** in **riferimenti** > **analizzatori**.
+   Gli assembly dell'analizzatore vengono installati e visualizzati in **Esplora soluzioni** in **riferimenti**  >  **analizzatori**.
 
 ## <a name="to-install-vsix-analyzers"></a>Per installare gli analizzatori VSIX
 
@@ -81,13 +81,13 @@ Visual Studio include un core set di analizzatori di .NET Compiler Platform (*Ro
 
 ::: moniker range="vs-2017"
 
-Se si vuole verificare se l'estensione è installata, selezionare **strumenti** > **estensioni e aggiornamenti**. Nella finestra di dialogo **estensioni e aggiornamenti** selezionare la categoria **installato** a sinistra e quindi cercare l'estensione in base al nome.
+Se si vuole verificare se l'estensione è installata, selezionare **strumenti**  >  **estensioni e aggiornamenti**. Nella finestra di dialogo **estensioni e aggiornamenti** selezionare la categoria **installato** a sinistra e quindi cercare l'estensione in base al nome.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se si vuole verificare se l'estensione è installata, selezionare **estensioni** > **Gestisci estensioni**. Nella finestra di dialogo **Gestisci estensioni** selezionare la categoria **installato** a sinistra e quindi cercare l'estensione in base al nome.
+Se si vuole verificare se l'estensione è installata, selezionare **estensioni**  >  **Gestisci estensioni**. Nella finestra di dialogo **Gestisci estensioni** selezionare la categoria **installato** a sinistra e quindi cercare l'estensione in base al nome.
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ Se si vuole verificare se l'estensione è installata, selezionare **estensioni**
 > [!div class="nextstepaction"]
 > [Usare gli analizzatori del codice in Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica degli analizzatori di codice in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Installare gli analizzatori FxCop](../code-quality/install-fxcop-analyzers.md)
+- [Installare gli analizzatori FXCop](../code-quality/install-fxcop-analyzers.md)

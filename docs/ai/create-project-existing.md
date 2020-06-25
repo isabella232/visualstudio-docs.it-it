@@ -5,15 +5,15 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 416a3358f6fab1fa106f54a360fc156abc16c6dc
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 8c0909259291bc5d2db2c4a9c8b87b1a0321d362
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638630"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371716"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Creare un progetto AI da codice esistente
 
@@ -36,11 +36,11 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile agg
 
 4. Per impostare un file di avvio, individuare il file in **Esplora soluzioni**, fare clic con il pulsante destro del mouse e scegliere **Imposta come file di avvio**.
 
-5. Eseguire il programma premendo **Ctrl**+**F5** o selezionando **Debug > Avvio senza eseguire debug**.
+5. Eseguire il programma premendo **CTRL** + **F5** o selezionando **debug > avvia senza eseguire debug**.
 
 > [!div class="nextstepaction"]
 > [Esercitazione: uso di Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Identificazione manuale di un ambiente Phyton esistente](../python/managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

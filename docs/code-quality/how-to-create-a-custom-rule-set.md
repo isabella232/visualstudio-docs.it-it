@@ -1,7 +1,7 @@
 ---
 title: Creare un set di regole di analisi del codice personalizzato
 ms.date: 11/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f23b2badb40effd4222e21ab9e67b2907513c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81462db07941c73b847c009ef8353b00d28fff4f
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587550"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371911"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
@@ -24,7 +24,7 @@ ms.locfileid: "75587550"
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Creare un set di regole personalizzato da un set di regole esistente
 
-Per creare un set di regole personalizzato, è possibile aprire un set di regole incorporato nell' **Editor del set di regole**. Da qui è possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando una regola viene violata&mdash;ad esempio, viene visualizzato un avviso o un errore.
+Per creare un set di regole personalizzato, è possibile aprire un set di regole incorporato nell' **Editor del set di regole**. Da qui è possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando viene violata una regola, &mdash; ad esempio, viene visualizzato un avviso o un errore.
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
@@ -44,9 +44,9 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
    - Selezionare il set di regole che si desidera personalizzare.
 
-     \- oppure -
+     \- - oppure -
 
-   - Selezionare **\<sfoglia >** per specificare un set di regole esistente non presente nell'elenco.
+   - Selezionare **\<Browse>** questa impostazione per specificare un set di regole esistente non presente nell'elenco.
 
 4. Selezionare **Apri** per visualizzare le regole nell'Editor set di regole.
 
@@ -57,11 +57,11 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 È possibile creare un nuovo file del set di regole dalla finestra di dialogo **nuovo file** :
 
-1. Selezionare **file** > **nuovo** > **file**oppure premere **CTRL**+**N**.
+1. Selezionare **file**  >  **nuovo**  >  **file**oppure premere **CTRL** + **N**.
 
 2. Nella finestra di dialogo **nuovo file** selezionare la categoria **generale** a sinistra e quindi selezionare **set di regole di analisi codice**.
 
-3. Selezionare **Apri**.
+3. Seleziona **Apri**.
 
    Il nuovo file con *estensione ruleset* verrà aperto nell'Editor set di regole.
 
@@ -76,13 +76,13 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 ::: moniker range="vs-2017"
 
-3. Selezionare **\<scegliere più set di regole >** da **Esegui questo set di regole**.
+3. Selezionare **\<Choose multiple rule sets>** da **Esegui questo set di regole**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Selezionare **\<scegliere più set di regole >** da **regole attive**.
+3. Selezionare **\<Choose multiple rule sets>** da **regole attive**.
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 6. Selezionare **Apri** per aprire il nuovo set di regole nell'Editor set di regole.
 
-## <a name="rule-precedence"></a>Precedenza della regola
+## <a name="rule-precedence"></a>Precedenza delle regole
 
 - Se la stessa regola è elencata due o più volte in un set di regole con diversi livelli di gravità, il compilatore genera un errore. Ad esempio:
 
@@ -111,7 +111,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 - Se la stessa regola è elencata due o più volte in un set di regole con lo *stesso* livello di gravità, è possibile che venga visualizzato il seguente avviso nel **Elenco errori**:
 
-   **CA0063: non è stato possibile caricare il file del set di regole '\[il file]. RuleSet ' o uno dei file del set di regole dipendenti. Il file non è conforme allo schema del set di regole.**
+   **CA0063: non è stato possibile caricare il file \[ del set di regole ' your]. RuleSet ' o uno dei file del set di regole dipendenti. Il file non è conforme allo schema del set di regole.**
 
 - Se il set di regole include un set di regole figlio utilizzando un tag di **inclusione** e i set di regole figlio e padre entrambi elencano la stessa regola ma con livelli di gravità diversi, la gravità nel set di regole padre avrà la precedenza. Ad esempio:
 
@@ -136,7 +136,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 ## <a name="name-and-description"></a>Nome e descrizione
 
-Per modificare il nome visualizzato di un set di regole aperto nell'editor, aprire la finestra **Proprietà** selezionando **Visualizza** > **finestra Proprietà** sulla barra dei menu. Immettere il nome visualizzato nella casella **nome** . È anche possibile immettere una descrizione per il set di regole.
+Per modificare il nome visualizzato di un set di regole aperto nell'editor, aprire la finestra **Proprietà** selezionando **Visualizza**  >  **finestra Proprietà** sulla barra dei menu. Immettere il nome visualizzato nella casella **nome** . È anche possibile immettere una descrizione per il set di regole.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -145,7 +145,7 @@ Ora che si dispone di un set di regole, il passaggio successivo consiste nel per
 > [!div class="nextstepaction"]
 > [Modificare le regole nell'Editor set di regole](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Configurare l'analisi codice per un progetto di codice gestito](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Tabella di riferimento del set di regole di analisi del codice](../code-quality/rule-set-reference.md)

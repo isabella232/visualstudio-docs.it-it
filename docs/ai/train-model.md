@@ -7,15 +7,15 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 083b2cb191d627ced936ead6a90b363970a9e7e0
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 4d705cbff1ce4e25892dfc5df896418e6d58b632
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638768"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371651"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Eseguire il training dei modelli di intelligenza artificiale in Azure Batch per intelligenza artificiale
 
@@ -31,7 +31,7 @@ Batch per intelligenza artificiale è un servizio gestito che consente ai data s
 
     ![Raccolta di esempi](media/train-model/batchai.png)
 
-3. Selezionare **Visualizza > Team Explorer...** per aprire la finestra **Team Explorer** in cui è possibile connettersi a GitHub o Azure DevOps oppure clonare un repository.
+3. Selezionare **visualizza > Team Explorer...** per aprire la finestra **Team Explorer** in cui è possibile connettersi a GitHub o Azure DevOps oppure clonare un repository.
 
     ![Finestra Team Explorer con Azure DevOps, GitHub e la clonazione di un repository](media/train-model/team-explorer-devops.png)
 

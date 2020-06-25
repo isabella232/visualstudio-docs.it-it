@@ -1,7 +1,7 @@
 ---
 title: Usare i criteri di archiviazione dell'analisi del codice
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de2322b42be2591fa0f6cdcfc49572322dcd140
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587485"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371859"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: applicare codice gestibile con criteri di archiviazione dell'analisi del codice
 
@@ -57,7 +57,7 @@ Gli amministratori del controllo della versione di Team Foundation possono aggiu
 
 3. Fare clic su **OK**. I nuovi criteri di archiviazione si applicano ora alle archiviazioni future.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Valori della metrica del codice](../code-quality/code-metrics-values.md)
 - [Creazione e utilizzo di criteri di archiviazione dell'analisi del codice](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
