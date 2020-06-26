@@ -1,7 +1,7 @@
 ---
-title: Risoluzione dei problemi di distribuzioni ClickOnce | Microsoft Docs
+title: Risoluzione dei problemi relativi alle distribuzioni ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - VB
 - CSharp
@@ -18,45 +18,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef5973eb7ec4b8779f89779fe1aad62d86f4850
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9e3c2ca89535578e8aefbde25223ade752a2aab
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898120"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381743"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Risoluzione dei problemi relativi alle distribuzioni ClickOnce
-Questo argomento illustra come diagnosticare e risolvere i problemi più comuni con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le distribuzioni.
+Questo argomento consente di diagnosticare e risolvere i problemi più comuni con le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzioni.
 
- Nella maggior parte dei casi, un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione verrà scaricati in un computer ed eseguite senza problemi. Esistono alcuni casi, tuttavia, in cui i problemi di configurazione di server o un'applicazione Web possono causare problemi imprevisti.
+ Nella maggior parte dei casi, un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene scaricata sul computer di un utente e viene eseguita senza problemi. In alcuni casi, tuttavia, i problemi di configurazione di applicazioni o server Web possono causare problemi imprevisti.
 
 ## <a name="deployment-considerations"></a>Considerazioni sulla distribuzione
 
- [Procedura: Impostare un percorso personalizzato per il file di log degli errori della distribuzione ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
+ [Procedura: impostare un percorso personalizzato per i file di log per gli errori di distribuzione ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
 
- Viene descritto come reindirizzare tutto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gli errori di attivazione in un computer per un singolo file di log.
+ Viene descritto come reindirizzare tutti gli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] errori di attivazione di un computer a un singolo file di log.
 
- [Procedura: Specificare i file di log dettagliati per le distribuzioni ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
+ [Procedura: specificare i file di log dettagliati per le distribuzioni ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
 
- Descrive come aumentare il livello di dettaglio che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scrive nei file di log.
+ Viene descritto come aumentare il dettaglio che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scrive nei file di log.
 
  [Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)
 
- Vengono descritti i vari problemi con la configurazione del server Web che potrebbero causare difficoltà nel download [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni.
+ Vengono descritti vari problemi relativi alla configurazione del server Web che potrebbero causare difficoltà nel download delle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni.
 
  [Problemi relativi alla sicurezza, al controllo delle versioni e ai manifesti nelle distribuzioni ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)
 
- Vengono descritti vari problemi da affrontare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le distribuzioni.
+ Vengono descritti i problemi vari che riguardano le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzioni.
 
  [Risoluzione di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 
- Vengono descritti scenari specifici in cui un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione potrebbe non riuscire e vengono fornite procedure per risolverli.
+ Vengono descritti scenari specifici in cui una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione non può avere esito positivo e viene descritta la procedura per risolverli.
 
- [Debug di applicazioni ClickOnce in cui si usa System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
+ [Eseguire il debug di applicazioni ClickOnce che usano System. Deployment. Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
 
- Descrive una tecnica per il debug di applicazioni ClickOnce in cui utilizzano System.
+ Viene descritta una tecnica per il debug di applicazioni ClickOnce che utilizzano System. Deployment. Application.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

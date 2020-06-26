@@ -1,7 +1,7 @@
 ---
-title: Personalizzare una pagina web predefinita per l'applicazione ClickOnce
+title: Personalizzare la pagina Web predefinita per l'applicazione ClickOnce
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,37 +17,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d304be4e2435b6ec1ecafe8aeb473b83fa1033
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 2ee4c1211840f17afe371961dea644372cd63efb
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263325"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382471"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Procedura: Personalizzare la pagina Web predefinita per un'applicazione ClickOnce
-Quando si pubblica un'applicazione ClickOnce per il Web, una pagina Web viene automaticamente generata e pubblicata insieme all'applicazione. La pagina predefinita contiene il nome dell'applicazione e i collegamenti per installare l'applicazione, installare i prerequisiti o accedere alla Guida in MSDN.
+Quando si pubblica un'applicazione ClickOnce sul Web, una pagina Web viene generata e pubblicata automaticamente insieme all'applicazione. La pagina predefinita contiene il nome dell'applicazione e i collegamenti per installare l'applicazione, installare i prerequisiti o accedere alla guida su MSDN.
 
 > [!NOTE]
-> I collegamenti effettivi che viene visualizzato nella pagina dipendono dal computer in cui viene visualizzata la pagina e ciò che sono inclusi i prerequisiti.
+> I collegamenti effettivi visualizzati nella pagina dipendono dal computer in cui viene visualizzata la pagina e dai prerequisiti inclusi.
 
- Il nome predefinito per la pagina Web viene *Publish. htm*; è possibile modificare il nome nel **creazione progetti**. Per altre informazioni, vedere [Procedura: Specificare una pagina di pubblicazione per un'applicazione ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
+ Il nome predefinito per la pagina Web è *Publish.htm*; è possibile modificare il nome in **Progettazione progetti**. Per altre informazioni, vedere [procedura: specificare una pagina di pubblicazione per un'applicazione ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
 
- Il *Publish. htm* pagina Web viene pubblicata solo se viene rilevata una versione più recente.
+ La pagina Web *Publish.htm* viene pubblicata solo se viene rilevata una versione più recente.
 
 > [!NOTE]
-> Le modifiche apportate al **pubblica** non influisce sulle impostazioni di *Publish. htm* pagina, con un'unica eccezione: se si aggiunge o rimuove i prerequisiti dopo la pubblicazione inizialmente, l'elenco dei prerequisiti verrà non è più possibile accurate. È necessario modificare il testo per il collegamento dei prerequisiti in modo da riflettere le modifiche.
+> Le modifiche apportate alle impostazioni di **pubblicazione** non influiscono sulla pagina *Publish.htm* , con un'unica eccezione: se si aggiungono o rimuovono prerequisiti dopo la pubblicazione iniziale, l'elenco dei prerequisiti non sarà più accurato. Per riflettere le modifiche, sarà necessario modificare il testo per il collegamento dei prerequisiti.
 
 ### <a name="to-customize-the-publish-web-page"></a>Per personalizzare la pagina Web pubblica
 
-1. Pubblicare l'applicazione ClickOnce in un percorso Web. Per altre informazioni, vedere [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+1. Pubblicare l'applicazione ClickOnce in un percorso Web. Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
-2. Nel server Web, aprire il *Publish. htm* file in Visual Web Designer o un altro editor di codice HTML.
+2. Nel server Web aprire il file di *Publish.htm* in Visual Web designer o in un altro editor HTML.
 
-3. Personalizzare la pagina in base alle esigenze e salvarlo.
+3. Personalizzare la pagina nel modo desiderato e salvarla.
 
-4. Facoltativo. Per impedire la sovrascrittura della pagina Web pubblica personalizzate di Visual Studio, deselezionare **genera automaticamente pagina Web di distribuzione dopo ogni pubblicazione** nel **Publish Options** nella finestra di dialogo.
+4. Facoltativa. Per impedire a Visual Studio di sovrascrivere la pagina Web di pubblicazione personalizzata, deselezionare **genera automaticamente pagina Web di distribuzione dopo ogni pubblicazione** nella finestra di dialogo **Opzioni di pubblicazione** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

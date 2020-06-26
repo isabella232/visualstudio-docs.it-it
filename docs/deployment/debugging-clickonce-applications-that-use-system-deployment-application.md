@@ -1,7 +1,7 @@
 ---
-title: Il debug di applicazioni ClickOnce che usano System
+title: Eseguire il debug di app ClickOnce che usano System. Deployment. Application
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,41 +17,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d70697e3523fcb12384cb51415f73ebd210f45c9
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 203f1edc2e29bbbc34fb39e6aa01c1b56bf20e91
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262006"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382653"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Debug di applicazioni ClickOnce in cui si usa System.Deployment.Application
-Nelle [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione consente di configurare la modalità di aggiornamento di un'applicazione. Tuttavia, se si desidera usare e personalizzare advanced [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] funzionalità di distribuzione, è necessario accedere al modello di oggetto di distribuzione fornito da <xref:System.Deployment.Application>. È possibile usare il <xref:System.Deployment.Application> API per attività avanzate, ad esempio:
+In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione consente di configurare la modalità di aggiornamento di un'applicazione. Tuttavia, se è necessario utilizzare e personalizzare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le funzionalità di distribuzione avanzate, sarà necessario accedere al modello a oggetti di distribuzione fornito da <xref:System.Deployment.Application> . È possibile usare le <xref:System.Deployment.Application> API per le attività avanzate, ad esempio:
 
-- Creazione di un'opzione "Aggiorna" nell'applicazione
+- Creazione di un'opzione "Aggiorna ora" nell'applicazione
 
-- Il download su richiesta condizionale, dei vari componenti dell'applicazione
+- Download condizionali su richiesta di diversi componenti dell'applicazione
 
 - Aggiornamenti integrati direttamente nell'applicazione
 
-- Garantendo che l'applicazione client sia sempre aggiornato
+- Garanzia che l'applicazione client sia sempre aggiornata
 
-  Poiché il <xref:System.Deployment.Application> API funzionano solo quando un'applicazione viene distribuita con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia, l'unico modo per eseguirne il debug consiste nel distribuire l'applicazione usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], connettersi a essa e quindi eseguirne il debug. Può essere difficile collegare il debugger in tempo, perché spesso questo codice viene eseguito quando l'applicazione si avvia e viene eseguito prima di collegare il debugger. Una soluzione consiste nell'inserire l'interruzione (o viene arrestato, per i progetti Visual Basic) prima di codice on demand o il codice di controllo di aggiornamento.
+  Poiché le <xref:System.Deployment.Application> API funzionano solo quando un'applicazione viene distribuita con la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia, l'unico modo per eseguirne il debug consiste nel distribuire l'applicazione usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , connettersi, quindi eseguirne il debug. Può essere difficile alporre il debugger abbastanza presto, perché questo codice viene spesso eseguito quando l'applicazione viene avviata ed eseguita prima di poter alleghiare il debugger. Una soluzione consiste nell'inserire interruzioni (o arrestare, per Visual Basic progetti) prima del codice di controllo dell'aggiornamento o del codice su richiesta.
 
-  La tecnica consigliata debug è il seguente:
+  La tecnica di debug consigliata è la seguente:
 
-1. Prima di iniziare, assicurarsi che i simboli (PDB) e vengono archiviati i file di origine.
+1. Prima di iniziare, assicurarsi che i file di simboli (con estensione pdb) e i file di origine vengano archiviati.
 
 2. Distribuire la versione 1 dell'applicazione.
 
-3. Creare una nuova soluzione vuota. Dal **File** menu, fare clic su **New**, quindi **progetto**. Nel **nuovo progetto** finestra di dialogo, aprire il **altri tipi di progetto** nodo, quindi selezionare il **soluzioni di Visual Studio** cartella. Nel **modelli** riquadro, selezionare **soluzione vuota**.
+3. Creare una nuova soluzione vuota. Scegliere **Nuovo** dal menu **File**, quindi **Progetto**. Nella finestra di dialogo **nuovo progetto** aprire il nodo **altri tipi di progetto** , quindi selezionare la cartella **soluzioni di Visual Studio** . Nel riquadro **modelli** selezionare **soluzione vuota**.
 
-4. Aggiungere il percorso di origine archiviati per le proprietà per questa nuova soluzione. Nelle **Esplora soluzioni**, fare doppio clic sul nodo della soluzione, quindi fare clic su **proprietà**. Nel **pagine delle proprietà** finestra di dialogo **Esegui Debug dei file di origine**, quindi aggiungere la directory del codice sorgente archiviato. In caso contrario, il debugger disponibili i file di origine non aggiornate, poiché i percorsi dei file di origine vengono registrate nel file con estensione pdb. Se il debugger utilizza file di origine non aggiornato, visualizzato un messaggio che informa che l'origine non corrisponde.
+4. Aggiungere il percorso di origine archiviato alle proprietà per la nuova soluzione. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo della soluzione, quindi scegliere **Proprietà**. Nella finestra di dialogo **pagine delle proprietà** selezionare **debug dei file di origine**, quindi aggiungere la directory del codice sorgente archiviato. In caso contrario, il debugger troverà i file di origine non aggiornati, perché i percorsi dei file di origine vengono registrati nel file con estensione pdb. Se il debugger usa file di origine obsoleti, viene visualizzato un messaggio che informa che l'origine non corrisponde.
 
-5. Assicurarsi che il debugger è possibile trovare il *PDB* file. Se questi sono stati distribuiti con l'applicazione, il debugger li trova automaticamente. Ha sempre l'aspetto accanto all'assembly in questione prima di tutto. In caso contrario, è necessario aggiungere il percorso di archiviazione per il **percorsi di file (con estensione pdb) di simboli** (per accedere a questa opzione, dal **Tools** dal menu fare clic su **opzioni**, quindi aprire il  **Debugging** nodo e fare clic su **simboli**).
+5. Verificare che il debugger possa trovare i file con *estensione PDB* . Se sono stati distribuiti con l'applicazione, il debugger li troverà automaticamente. Viene sempre visualizzato in primo luogo accanto all'assembly in questione. In caso contrario, sarà necessario aggiungere il percorso di archiviazione ai **percorsi dei file di simboli (con estensione pdb)** . per accedere a questa opzione, scegliere **Opzioni**dal menu **strumenti** , quindi aprire il nodo **debug** e fare clic su **simboli**.
 
-6. Eseguire il debug cosa succede tra i `CheckForUpdate` e `Download` / `Update` chiamate al metodo.
+6. Eseguire il debug di ciò che accade tra le `CheckForUpdate` `Download` / `Update` chiamate al metodo e.
 
-    Ad esempio, il codice di aggiornamento potrebbe essere come segue:
+    Il codice di aggiornamento, ad esempio, potrebbe essere il seguente:
 
    ```vb
        Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -70,11 +70,11 @@ Nelle [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.m
 
 7. Distribuire la versione 2.
 
-8. Tentativo di collegare il debugger per la versione 1 dell'applicazione durante il download di un aggiornamento per la versione 2. In alternativa è possibile usare la `System.Diagnostics.Debugger.Break` metodo o semplicemente `Stop` in Visual Basic. Naturalmente, non è consigliabile lasciare queste chiamate al metodo nel codice di produzione.
+8. Tentativo di connessione del debugger all'applicazione versione 1 durante il download di un aggiornamento per la versione 2. In alternativa, è possibile usare il `System.Diagnostics.Debugger.Break` metodo o semplicemente `Stop` in Visual Basic. Naturalmente, non è consigliabile lasciare queste chiamate al metodo nel codice di produzione.
 
-    Si supponga, ad esempio, si sta sviluppando un'applicazione Windows Forms e un gestore eventi per questo metodo con la logica di aggiornamento è già. Per risolvere il problema, è sufficiente collegare prima il pulsante è premuto, quindi impostare un punto di interruzione (assicurarsi di aprire il file archiviato appropriato e impostare il punto di interruzione presenti).
+    Si supponga, ad esempio, che si stia sviluppando una Windows Forms Application e che sia presente un gestore eventi per questo metodo con la logica di aggiornamento. Per eseguire il debug, è sufficiente connettersi prima di premere il pulsante, quindi impostare un punto di interruzione (assicurarsi di aprire il file archiviato appropriato e impostare il punto di interruzione).
 
-   Usare la <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> proprietà da richiamare il <xref:System.Deployment.Application> API solo quando l'applicazione viene distribuita; le API non devono essere richiamate durante il debug di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+   Utilizzare la <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> proprietà per richiamare le <xref:System.Deployment.Application> API solo quando viene distribuita l'applicazione; le API non devono essere richiamate durante il debug in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:System.Deployment.Application>

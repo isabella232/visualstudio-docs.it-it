@@ -1,7 +1,7 @@
 ---
-title: Utilizzare ClickOnce per distribuire le app multitarget
+title: Usare ClickOnce per distribuire app multitarget
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,79 +16,79 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747491"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381704"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedura: Usare ClickOnce per distribuire applicazioni eseguibili in più versioni di .NET Framework
-È possibile distribuire un'applicazione destinata a più versioni di .NET Framework tramite la tecnologia di distribuzione ClickOnce. Ciò richiede di generare e aggiornare i manifesti dell'applicazione e della distribuzione.
+È possibile distribuire un'applicazione destinata a più versioni del .NET Framework tramite la tecnologia di distribuzione ClickOnce. A tale scopo, è necessario generare e aggiornare i manifesti dell'applicazione e della distribuzione.
 
 > [!NOTE]
-> Prima di modificare l'applicazione a più versioni di .NET Framework di destinazione, è necessario assicurarsi che l'applicazione viene eseguita con più versioni di .NET Framework. Versione common language runtime è diverso tra .NET Framework 4 e .NET Framework 2.0, .NET Framework 3.0 e .NET Framework 3.5.
+> Prima di modificare l'applicazione in modo che sia destinata a più versioni del .NET Framework, è necessario assicurarsi che l'applicazione venga eseguita con più versioni del .NET Framework. La versione Common Language Runtime è diversa .NET Framework 4 rispetto a .NET Framework 2,0, .NET Framework 3,0 e .NET Framework 3,5.
 
- Questo processo sono necessari i passaggi seguenti:
+ Per questo processo sono richiesti i passaggi seguenti:
 
-1. Generare i manifesti dell'applicazione e distribuzione.
+1. Generare i manifesti dell'applicazione e della distribuzione.
 
-2. Modificare il manifesto di distribuzione per visualizzare un elenco di più versioni di .NET Framework.
+2. Modificare il manifesto di distribuzione per elencare le versioni di più .NET Framework.
 
-3. Modifica il *app. config* file per elencare le versioni di runtime di .NET Framework compatibili.
+3. Modificare il file di *app.config* per elencare le versioni di .NET Framework Runtime compatibili.
 
-4. Modificare il manifesto dell'applicazione per contrassegnare gli assembly dipendenti degli assembly di .NET Framework.
+4. Modificare il manifesto dell'applicazione per contrassegnare gli assembly dipendenti come assembly .NET Framework.
 
 5. Firmare il manifesto dell'applicazione.
 
 6. Aggiornare e firmare il manifesto della distribuzione.
 
-### <a name="to-generate-the-application-and-deployment-manifests"></a>Per generare i manifesti dell'applicazione e distribuzione
+### <a name="to-generate-the-application-and-deployment-manifests"></a>Per generare i manifesti dell'applicazione e della distribuzione
 
-- Usare la procedura guidata di pubblicazione o la pagina di pubblicazione di creazione progetti per pubblicare l'applicazione e generare l'applicazione e i file manifesto di distribuzione. Per altre informazioni, vedere [Procedura: Pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) oppure [pubblicare Page, Project Designer](../ide/reference/publish-page-project-designer.md).
+- Usare la pubblicazione guidata o la pagina pubblica di progettazione progetti per pubblicare l'applicazione e generare i file manifesto dell'applicazione e della distribuzione. Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) o la [pagina pubblica, Progettazione progetti](../ide/reference/publish-page-project-designer.md).
 
-### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Per modificare il manifesto di distribuzione per visualizzare un elenco di più versioni di .NET Framework
+### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Per modificare il manifesto di distribuzione per elencare le versioni di più .NET Framework
 
-1. Nella directory di pubblicazione, aprire il manifesto di distribuzione usando l'Editor XML in Visual Studio. Il manifesto di distribuzione con il *Application* estensione del nome file.
+1. Nella directory publish aprire il manifesto di distribuzione usando l'editor XML in Visual Studio. Il manifesto di distribuzione ha l'estensione del nome file *. Application* .
 
-2. Sostituire il codice XML tra i `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` e `</compatibleFrameworks>` elementi con il codice XML che elenca le versioni di .NET Framework supportate per l'applicazione.
+2. Sostituire il codice XML tra gli `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` `</compatibleFrameworks>` elementi e con XML che elenca le versioni di .NET Framework supportate per l'applicazione.
 
      Nella tabella seguente vengono illustrate alcune delle versioni di .NET Framework disponibili e il codice XML corrispondente che è possibile aggiungere al manifesto della distribuzione.
 
     |Versione di .NET Framework|XML|
     |----------------------------|---------|
-    |4 Client|\<Framework targetVersion = "4.0" profile = supportedRuntime "Client" = "4.0.30319" / >|
-    |4 Completo|\<Framework targetVersion = "4.0" profile = supportedRuntime "Completo" = "4.0.30319" / >|
+    |4 Client|\<framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />|
+    |4 Completo|\<framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />|
     |3.5 Client|\<framework targetVersion="3.5" profile="Client" supportedRuntime="2.0.50727" />|
     |3.5 Completo|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|
     |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|
 
-### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Per modificare il file app. config per elencare le versioni di runtime di .NET Framework compatibili
+### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Per modificare il file di app.config per elencare le versioni compatibili di .NET Framework Runtime
 
-1. In Esplora soluzioni aprire il *app. config* file usando l'Editor XML in Visual Studio.
+1. In Esplora soluzioni aprire il file di *app.config* utilizzando l'editor XML in Visual Studio.
 
-2. Sostituire (o aggiungere) il codice XML tra i `<startup>` e `</startup>` elementi con il codice XML che elenca i runtime di .NET Framework supportati per l'applicazione.
+2. Sostituire (o aggiungere) il codice XML tra gli `<startup>` `</startup>` elementi e con XML che elenca i runtime di .NET Framework supportati per l'applicazione.
 
      Nella tabella seguente vengono illustrate alcune delle versioni di .NET Framework disponibili e il codice XML corrispondente che è possibile aggiungere al manifesto della distribuzione.
 
-    |Versione di runtime di .NET framework|XML|
+    |.NET Framework versione runtime|XML|
     |------------------------------------|---------|
-    |4 Client|\<versione supportedRuntime = sku "v4.0.30319" = ". NETFramework, versione = v4.0, profilo = Client "/ >|
+    |4 Client|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0,Profile=Client" />|
     |4 Completo|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0" />|
     |3.5 Completo|\<supportedRuntime version="v2.0.50727"/>|
     |3.5 Client|\<supportedRuntime version="v2.0.50727" sku="Client"/>|
 
-### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Per modificare il manifesto dell'applicazione per contrassegnare gli assembly dipendenti degli assembly di .NET Framework
+### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Per modificare il manifesto dell'applicazione per contrassegnare gli assembly dipendenti come assembly .NET Framework
 
-1. Nella directory di pubblicazione, aprire il manifesto dell'applicazione utilizzando l'Editor XML in Visual Studio. Il manifesto di distribuzione con il *manifest* estensione del nome file.
+1. Nella directory publish (pubblica) aprire il manifesto dell'applicazione usando l'editor XML in Visual Studio. Il manifesto di distribuzione ha l'estensione del nome file *. manifest* .
 
-2. Aggiungere `group="framework"` per il XML della dipendenza per gli assembly di sentinel (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, e `System.Data.Entity`). Ad esempio, il codice XML dovrebbe essere simile al seguente:
+2. Aggiungere `group="framework"` al file XML di dipendenza per gli assembly Sentinel ( `System.Core` ,, `WindowsBase` `Sentinel.v3.5Client` e `System.Data.Entity` ). Ad esempio, il codice XML dovrebbe essere simile al seguente:
 
    ```xml
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. Aggiornare il numero di versione il `<assemblyIdentity>` elemento per Microsoft.Windows.CommonLanguageRuntime sul numero di versione di .NET Framework che è il minimo comune denominatore. Ad esempio, se l'applicazione è destinata a .NET Framework 3.5 e .NET Framework 4, utilizzare il 2.0.50727.0 numero di versione e il codice XML dovrebbe essere simile al seguente:
+3. Aggiornare il numero di versione dell' `<assemblyIdentity>` elemento per Microsoft. Windows. CommonLanguageRuntime al numero di versione per il .NET Framework che è il denominatore comune più basso. Ad esempio, se l'applicazione è destinata a .NET Framework 3,5 e .NET Framework 4, usare il numero di versione di 2.0.50727.0 e il codice XML dovrebbe essere simile al seguente:
 
    ```xml
    <dependency>
@@ -98,13 +98,13 @@ ms.locfileid: "66747491"
    </dependency>
    ```
 
-### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Per aggiornare e firmare nuovamente l'applicazione e distribuzione di manifesti
+### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Per aggiornare e firmare nuovamente i manifesti dell'applicazione e della distribuzione
 
-- Aggiornare e firmare nuovamente i manifesti dell'applicazione e distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+- Aggiornare e firmare nuovamente i manifesti dell'applicazione e della distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [\<compatibleFrameworks > elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md)
-- [\<dipendenza > elemento](../deployment/dependency-element-clickonce-application.md)
-- [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+- [\<compatibleFrameworks>elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<dependency>elemento](../deployment/dependency-element-clickonce-application.md)
+- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Schema dei file di configurazione](/dotnet/framework/configure-apps/file-schema/index)

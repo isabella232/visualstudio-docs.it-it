@@ -165,6 +165,7 @@ f1_keywords:
 - CA1827
 - CA1828
 - CA1829
+- CA1830
 - CA1831
 - CA1832
 - CA1833
@@ -278,6 +279,7 @@ f1_keywords:
 - CA2243
 - CA2245
 - CA2246
+- CA2247
 - CA5122
 - CA5374
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
@@ -286,18 +288,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b4bfee67e23c40d8ddf9dbfac42bc803d5576c43
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9d9c4834604d4f77d53dc0ff7bb725eae3312779
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283411"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382679"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
 Nella tabella seguente sono elencati gli avvisi di analisi del codice per il codice gestito ordinati per identificatore CheckId.
 
-| CheckId | Avviso | Description |
+| CheckId | Avviso | Descrizione |
 |---------| - | - |
 | CA1000 | [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000.md) | Quando viene chiamato un membro statico di un tipo generico, è necessario specificare l'argomento di tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. In questi due casi, la sintassi necessaria per specificare l'argomento di tipo è diversa e può generare confusione. |
 | CA1001 | [CA1001: I tipi proprietari di campi Disposable devono essere Disposable](../code-quality/ca1001.md) | Una classe dichiara e implementa un campo di istanza di tipo System.IDisposable e la classe non implementa IDisposable. Una classe che dichiara un campo IDisposable è indirettamente proprietaria di una risorsa non gestita e deve implementare l'interfaccia IDisposable. |
@@ -450,6 +452,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | Ca1827 |[CA1827: Non usare Count/LongCount se è possibile usare Any](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A><xref:System.Linq.Enumerable.LongCount%2A>è stato usato il metodo o dove il <xref:System.Linq.Enumerable.Any%2A> metodo risulta più efficiente. |
 | Ca1828 |[CA1828: Non usare CountAsync/LongCountAsync se è possibile usare AnyAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A><xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>è stato usato il metodo o dove il <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> metodo risulta più efficiente. |
 | Ca1829 |[CA1829: Usare la proprietà Length/Count invece del metodo Enumerable.Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Il metodo LINQ è stato usato in un tipo che supporta una proprietà equivalente, più efficiente `Length` o `Count` . |
+| Ca1830 |[CA1830: Preferire gli overload di metodi Append e Insert fortemente tipizzati su StringBuilder](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>e <xref:System.Text.StringBuilder.Insert%2A> forniscono overload per più tipi oltre <xref:System.String> .  Quando possibile, preferire gli overload fortemente tipizzati sull'utilizzo di ToString () e dell'overload basato su stringa. |
 | Ca1831 |[CA1831: Usare AsSpan invece di indicizzatori basati su Range per la stringa quando appropriato](../code-quality/ca1831.md) | Quando si usa un indicizzatore di intervallo in una stringa e si assegna in modo implicito il valore al &lt; tipo char ReadOnlySpan &gt; , <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della stringa. |
 | Ca1832 |[CA1832: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte ReadOnlySpan o ReadOnlyMemory di una matrice](../code-quality/ca1832.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
 | Ca1833 |[CA1833: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte Span o Memory di una matrice](../code-quality/ca1833.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.Span%601> <xref:System.Memory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
@@ -561,6 +564,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA2244 | [CA2244: Non duplicare inizializzazioni di elementi indicizzati](../code-quality/ca2244.md) | Un inizializzatore di oggetto ha più di un inizializzatore di elemento indicizzato con lo stesso indice costante. Tutti tranne l'ultimo inizializzatore sono ridondanti. |
 | CA2245 | [CA2245: Non assegnare una proprietà a se stessa](../code-quality/ca2245.md) | Una proprietà è stata assegnata per errore a se stessa. |
 | CA2246 | [CA2246: Non assegnare un simbolo e il relativo membro nella stessa istruzione](../code-quality/ca2246.md) | Non è consigliabile assegnare un simbolo e il relativo membro, ovvero un campo o una proprietà, nella stessa istruzione. Non è chiaro se l'accesso ai membri fosse destinato a usare il valore precedente del simbolo prima dell'assegnazione o del nuovo valore dall'assegnazione in questa istruzione. |
+| CA2247 | [CA2247: l'argomento passato al Costruttore TaskCompletionSource deve essere TaskCreationOptions enum anziché TaskContinuationOptions enum.](../code-quality/ca2247.md) | TaskCompletionSource dispone di costruttori che accettano TaskCreationOptions che controllano l'attività sottostante e i costruttori che accettano lo stato dell'oggetto archiviato nell'attività.  Se si passa accidentalmente un TaskContinuationOptions anziché un TaskCreationOptions, la chiamata tratta le opzioni come stato. |
 | CA5122 | [Le dichiarazioni P/Invoke CA5122 non devono essere critiche per la sicurezza](../code-quality/ca5122.md) | I metodi sono contrassegnati come SecuritySafeCritical quando viene eseguita un'operazione sensibile di sicurezza, ma possono anche essere usati in sicurezza dal codice trasparente. Il codice trasparente non può mai chiamare direttamente il codice nativo tramite P/Invoke. Di conseguenza, contrassegnare P/Invoke come critico per la sicurezza e richiamabile da codice trasparente non consentirà al codice trasparente di chiamarlo ed è fuorviante per l'analisi di sicurezza. |
 | CA5359 | [CA5359 non disabilitare la convalida del certificato](../code-quality/ca5359.md) | Un certificato può essere utile per autenticare l'identità del server. I client devono convalidare il certificato del server per garantire che le richieste vengano inviate al server desiderato. Se il ServerCertificateValidationCallback restituisce sempre `true` , qualsiasi certificato passerà la convalida. |
 | CA5360 | [CA5360 non chiamano metodi pericolosi nella deserializzazione](../code-quality/ca5360.md) | La deserializzazione non sicura è una vulnerabilità che si verifica quando i dati non attendibili vengono usati per abusare la logica di un'applicazione, infliggendo un attacco Denial of Service (DoS) o persino eseguendo codice arbitrario al momento della deserializzazione. Spesso gli utenti malintenzionati possono usare queste funzionalità di deserializzazione quando l'applicazione deserializza dati non attendibili sotto il proprio controllo. In particolare, richiamare metodi pericolosi nel processo di deserializzazione. Gli attacchi di deserializzazione non sicuri riusciti potrebbero consentire a un utente malintenzionato di eseguire attacchi come attacchi DoS, bypass di autenticazione ed esecuzione di codice in modalità remota. |

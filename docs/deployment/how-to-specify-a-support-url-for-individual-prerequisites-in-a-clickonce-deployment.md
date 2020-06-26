@@ -1,7 +1,7 @@
 ---
-title: URL del supporto per i prerequisiti di distribuzione ClickOnce
+title: URL di supporto per i prerequisiti nella distribuzione ClickOnce
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,25 +15,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745570"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381730"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procedura: Specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce
-Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] possibile testare la distribuzione per un numero di prerequisiti che devono essere disponibili nel computer client per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] esecuzione dell'applicazione. Queste dipendenze includono la versione minima richiesta di .NET Framework, la versione del sistema operativo e tutti gli assembly che devono essere preinstallati nella global assembly cache (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], tuttavia, non è possibile installare uno di questi prerequisiti stesso. Se un prerequisito non viene trovato, semplicemente arresta l'installazione e visualizza una finestra di dialogo che spiega il motivo per cui l'installazione non è riuscita.
+Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione può verificare la presenza di alcuni prerequisiti che devono essere disponibili nel computer client per l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] esecuzione dell'applicazione. Queste dipendenze includono la versione minima richiesta del .NET Framework, la versione del sistema operativo e tutti gli assembly che devono essere preinstallati nella Global Assembly Cache (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Tuttavia, non è in grado di installare alcuno di questi prerequisiti. Se un prerequisito non viene trovato, viene semplicemente interrotto l'installazione e viene visualizzata una finestra di dialogo che spiega il motivo per cui l'installazione non è riuscita.
 
- Esistono due metodi per l'installazione dei prerequisiti. È possibile installarli usando un'applicazione di avvio automatico. In alternativa, è possibile specificare un URL di supporto per i singoli prerequisiti, viene visualizzato agli utenti nella finestra di dialogo se il prerequisito non viene trovato. La pagina fa riferimento tale URL può contenere collegamenti a istruzioni per installare i prerequisiti richiesti. Se un'applicazione non specifica un URL di supporto per un prerequisito per singoli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] consente di visualizzare l'URL del supporto specificato nel manifesto di distribuzione per l'applicazione nel suo complesso, se è definito.
+ Sono disponibili due metodi per l'installazione dei prerequisiti. È possibile installarli usando un'applicazione del programma di avvio automatico. In alternativa, è possibile specificare un URL di supporto per i singoli prerequisiti, che viene visualizzato agli utenti nella finestra di dialogo se il prerequisito non viene trovato. La pagina a cui fa riferimento tale URL può contenere collegamenti alle istruzioni per l'installazione del prerequisito necessario. Se un'applicazione non specifica un URL di supporto per un singolo prerequisito, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Visualizza l'URL di supporto specificato nel manifesto di distribuzione per l'applicazione nel suo complesso, se definito.
 
- Sebbene [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *Mage.exe*, e *MageUI.exe* può essere utilizzato per generare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le distribuzioni, nessuno di questi strumenti supportano direttamente specificando un URL di supporto per i singoli prerequisiti. Questo documento viene descritto come modificare la distribuzione manifesto dell'applicazione e distribuzione per includere questi URL di supporto.
+ Sebbene [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sia possibile usare, *Mage.exe*e *MageUI.exe* per generare le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzioni, nessuno di questi strumenti supporta direttamente la specifica di un URL di supporto per i singoli prerequisiti. Questo documento descrive come modificare il manifesto dell'applicazione e la distribuzione del manifesto di distribuzione in modo da includere questi URL di supporto.
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Specificare un URL di supporto per un singolo prerequisito
 
-1. Aprire il manifesto dell'applicazione (il *manifest* file) per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione in un editor di testo.
+1. Aprire il manifesto dell'applicazione, ovvero il file con *estensione manifest* , per l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione in un editor di testo.
 
-2. Per un prerequisito necessario per sistema operativo, aggiungere il `supportUrl` dell'attributo di `dependentOS` elemento:
+2. Per un prerequisito del sistema operativo, aggiungere l' `supportUrl` attributo all' `dependentOS` elemento:
 
    ```xml
     <dependency>
@@ -45,7 +45,7 @@ Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] possib
      </dependency>
    ```
 
-3. Per un prerequisito per una determinata versione di common language runtime, aggiungere il `supportUrl` dell'attributo di `dependentAssembly` voce che indica la dipendenza di common language runtime:
+3. Per un prerequisito per una determinata versione del Common Language Runtime, aggiungere l' `supportUrl` attributo alla `dependentAssembly` voce che specifica la dipendenza Common Language Runtime:
 
    ```xml
      <dependency>
@@ -55,7 +55,7 @@ Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] possib
      </dependency>
    ```
 
-4. Per un prerequisito per un assembly che deve essere preinstallato nella global assembly cache, impostare il `supportUrl` per il `dependentAssembly` elemento che specifica l'assembly richiesto:
+4. Per un prerequisito per un assembly che deve essere preinstallato nella Global Assembly Cache, impostare `supportUrl` per l' `dependentAssembly` elemento che specifica l'assembly richiesto:
 
    ```xml
      <dependency>
@@ -65,9 +65,9 @@ Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] possib
      </dependency>
    ```
 
-5. Facoltativo. Per le applicazioni destinate a .NET Framework 4, aprire il manifesto di distribuzione (il *Application* file) per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione in un editor di testo.
+5. Facoltativa. Per le applicazioni destinate a .NET Framework 4, aprire il manifesto di distribuzione (il file dell' *applicazione* ) per l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione in un editor di testo.
 
-6. Per un prerequisito di .NET Framework 4, aggiungere il `supportUrl` dell'attributo di `compatibleFrameworks` elemento:
+6. Per un prerequisito di .NET Framework 4, aggiungere l' `supportUrl` attributo all' `compatibleFrameworks` elemento:
 
    ```xml
    <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">
@@ -76,14 +76,14 @@ Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] possib
    </compatibleFrameworks>
    ```
 
-7. Dopo aver modificato manualmente il manifesto dell'applicazione, è necessario firmare nuovamente il manifesto dell'applicazione utilizzando il certificato digitale, quindi aggiornare e firmare nuovamente il manifesto di distribuzione nonché. Usare la *Mage.exe* oppure *MageUI.exe* strumenti SDK per eseguire questa attività, come la rigenerazione di questi file tramite [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Cancella le modifiche manuali apportate. Per altre informazioni sull'uso di Mage.exe per firmare nuovamente i manifesti, vedere [come: Firmare nuovamente i manifesti dell'applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+7. Dopo aver modificato manualmente il manifesto dell'applicazione, è necessario firmare di nuovo il manifesto dell'applicazione usando il certificato digitale, quindi aggiornare e firmare nuovamente il manifesto della distribuzione. Usare gli strumenti di *Mage.exe* o *MageUI.exe* SDK per completare questa attività, perché la rigenerazione di questi file con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Cancella le modifiche manuali. Per altre informazioni sull'uso di Mage.exe per ripetere la firma dei manifesti, vedere [procedura: ripetere la firma dei manifesti dell'applicazione e della distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="net-framework-security"></a>.NET Framework (sicurezza)
- L'URL del supporto non viene visualizzata nella finestra di dialogo se l'applicazione viene contrassegnata per essere eseguita in attendibilità parziale.
+ L'URL di supporto non viene visualizzato nella finestra di dialogo se l'applicazione è contrassegnata per l'esecuzione con attendibilità parziale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Mage.exe (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks > elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks>elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)

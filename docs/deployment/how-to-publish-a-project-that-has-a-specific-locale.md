@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Pubblicare un progetto dotato di impostazioni locali specifiche | Microsoft Docs'
+title: 'Procedura: pubblicare un progetto con impostazioni locali specifiche | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aee8be6904452cc40ab68130f98cf63caf0fc7fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406996"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382224"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedura: Pubblicare un progetto dotato di impostazioni locali specifiche
 Accade spesso che un'applicazione contenga componenti con impostazioni locali diverse. In questi casi si crea una soluzione con più progetti, che vengono poi pubblicati con impostazioni locali differenti. Questa procedura illustra come usare una macro per pubblicare il primo progetto in una soluzione con le impostazioni locali 'en'. Se si vuole provare la procedura con impostazioni locali diverse da 'en', impostare `localeString` nella macro in modo che corrisponda alle impostazioni locali in uso (ad esempio, 'de' o 'de-DE').
@@ -147,22 +147,22 @@ Accade spesso che un'applicazione contenga componenti con impostazioni locali di
 
      Notare che i file DDL delle risorse localizzate non vengono creati finché non sono necessari. Vengono creati, ad esempio, quando si modifica il testo del form o uno dei relativi controlli dopo avere specificato le nuove impostazioni locali.
 
-4. Pubblicare il progetto *PublishLocales* usando l'IDE di Visual Studio.
+4. Pubblicare *PublishLocales* usando l'IDE di Visual Studio.
 
-     In **Esplora soluzioni** selezionare *PublishLocales*. Scegliere **Proprietà** dal menu **Progetto**. In Creazione progetti, nella **Publish** , specificare un percorso di pubblicazione **http://localhost/PublishLocales**e quindi fare clic su **pubblica**.
+     In **Esplora soluzioni** selezionare *PublishLocales*. Scegliere **Proprietà** dal menu **Progetto**. Nella pagina **pubblica** di creazione progetti specificare un percorso di pubblicazione di **http://localhost/PublishLocales** e quindi fare clic su **pubblica**.
 
      Chiudere la pagina Web di pubblicazione non appena viene visualizzata. In questa fase non è necessario installare il progetto, ma solo pubblicarlo
 
-5. Pubblicare di nuovo il progetto *PublishLocales* richiamando la macro nella finestra del prompt dei comandi di Visual Studio. Per visualizzare la finestra prompt dei comandi, scegliere il **vista** dal menu **Other Windows** e quindi fare clic su **finestra di comando**, oppure premere **Ctrl** + **Alt**+**oggetto**. Nella finestra del prompt dei comandi, digitare `macros`; completamento automatico fornirà un elenco delle macro disponibili. Selezionare la macro seguente e premere INVIO:
+5. Pubblicare di nuovo *PublishLocales* richiamando la macro nella finestra del prompt dei comandi di Visual Studio. Per visualizzare la finestra del prompt dei comandi, scegliere **altre finestre** dal menu **Visualizza** , quindi fare clic su **finestra di comando**oppure premere **CTRL** + **ALT** + **A**. Nella finestra del prompt dei comandi digitare. il `macros` completamento automatico fornirà un elenco delle macro disponibili. Selezionare la macro seguente e premere INVIO:
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
-6. Quando il processo di pubblicazione ha esito positivo, verrà generato un messaggio che indica che "è riuscita per la pubblicazione *Publishlocales\publishlocales.vbproj*. Publish language was 'en'." Fare clic su **OK** nella finestra di messaggio. Quando viene visualizzata la pagina Web di pubblicazione, fare clic su **Installa**.
+6. Dopo il completamento del processo di pubblicazione verrà generato il messaggio "Publish succeeded for *PublishLocales\PublishLocales.vbproj*. La lingua di pubblicazione è' en '. " Fare clic su **OK** nella finestra di messaggio. Quando viene visualizzata la pagina Web di pubblicazione, fare clic su **Installa**.
 
-7. Controllare il percorso *C:\Inetpub\wwwroot\PublishLocales\en*. Dovrebbero essere presenti i file installati, tra cui i manifesti, *setup.exe* e il file della pagina Web di pubblicazione, oltre alla DLL delle risorse localizzate. Per impostazione predefinita, ClickOnce aggiunge ai file EXE e DLL l'estensione *deploy*, che può essere rimossa dopo la distribuzione.
+7. Cercare in *C:\Inetpub\wwwroot\PublishLocales\en*. Verranno visualizzati i file installati, ad esempio i manifesti, *setup.exe*e il file della pagina Web di pubblicazione, oltre alla DLL della risorsa localizzata. Per impostazione predefinita, ClickOnce aggiunge ai file EXE e DLL l'estensione *deploy*, che può essere rimossa dopo la distribuzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Ambiente di sviluppo di macro](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [Finestra Esplora macro](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))
-- [Procedura: Modificare e creare a livello di codice delle macro](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))
+- [Procedura: modificare e creare macro a livello di codice](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

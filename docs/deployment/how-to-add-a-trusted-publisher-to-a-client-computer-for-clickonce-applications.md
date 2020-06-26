@@ -1,7 +1,7 @@
 ---
-title: Aggiungere un editore attendibile al computer client per le app ClickOnceAdd trusted publisher to client computer for ClickOnce apps
+title: Aggiungi autore attendibile al computer client per le app ClickOnce
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1423952405a31063ee88ce6fa1dfe0b75d80fe5d
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 594c012aaa49a5b62e9f254f924a71f4934d1ebe
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649208"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382614"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procedura: Aggiungere un autore attendibile a un computer client per applicazioni ClickOnce
 Con la distribuzione di applicazioni attendibili, è possibile configurare i computer client in modo che le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] siano eseguite con un livello di attendibilità superiore senza chiedere conferma all'utente. Le procedure seguenti illustrano come usare lo strumento da riga di comando CertMgr.exe per aggiungere un certificato dell'autore all'archivio editori attendibili in un computer client.
@@ -48,7 +48,7 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
 
 1. Ottenere un certificato digitale da un'autorità di certificazione.
 
-2. Esportare il certificato nel formato Base64 X.509(*.cer*). Per ulteriori informazioni sui formati dei certificati, vedere [Esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Esportare il certificato nel formato Base64 X.509(*.cer*). Per ulteriori informazioni sui formati di certificato, vedere [esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Dal prompt dei comandi nei computer client eseguire il comando seguente:
 
@@ -56,7 +56,7 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

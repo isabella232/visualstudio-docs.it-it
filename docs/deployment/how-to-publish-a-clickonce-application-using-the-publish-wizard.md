@@ -1,7 +1,7 @@
 ---
-title: Pubblicare l'applicazione ClickOnce mediante pubblicazione guidata
+title: Pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,29 +17,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3880fdc8d1d83fd36fdf09fea9e0c955b02236
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 518252ac24dc45036587de114f68cd0a77b8c5b8
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263272"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382302"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata
 Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pubblicarla in un una condivisione file, in un percorso, in un server FTP o su un supporto rimovibile. Per pubblicare l'applicazione, usare la Pubblicazione guidata. Altre proprietà relative alla pubblicazione sono disponibili nella pagina **Pubblica** di **Creazione progetti**. Per altre informazioni, vedere [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md).
 
-Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni di pubblicazione. Ad esempio, se si vuole designare una chiave per la firma dell'applicazione ClickOnce, accedere alla pagina **Firma** di **Creazione progetti**. Per altre informazioni, vedere [applicazioni ClickOnce Secure](../deployment/securing-clickonce-applications.md).
+Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni di pubblicazione. Ad esempio, se si vuole designare una chiave per la firma dell'applicazione ClickOnce, accedere alla pagina **Firma** di **Creazione progetti**. Per altre informazioni, vedere [proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
-> Quando si usa ClickOnce per installare più versioni di un'applicazione, l'installazione sposta le versioni precedenti dell'applicazione in una cartella denominata *Archivio* nel percorso di pubblicazione specificato. L'archiviazione delle versioni precedenti consente di mantenere pulita la directory di installazione.
+> Quando si installa più di una versione di un'applicazione tramite ClickOnce, l'installazione Sposta le versioni precedenti dell'applicazione in una cartella denominata *Archive*, nel percorso di pubblicazione specificato. L'archiviazione delle versioni precedenti consente di mantenere pulita la directory di installazione.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-publish-to-a-file-share-or-path"></a>Per pubblicare in una condivisione file o in un percorso
 
 1. In **Esplora soluzioni** selezionare il progetto di applicazione.
 
-2. Nel **compilare** menu, fare clic su **Publish** *NomeProgetto*.
+2. Scegliere **pubblica** *NomeProgetto*dal menu **Compila** .
 
     Verrà visualizzata la Pubblicazione guidata.
 
@@ -47,7 +47,7 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
 
 4. Nella pagina **Specificare la modalità di installazione dell'applicazione utilizzata dagli utenti** selezionare il percorso a cui accederanno gli utenti per installare l'applicazione:
 
-   - Se gli utenti eseguiranno l'installazione da un sito Web, fare clic su **Da un sito Web** e immettere un URL corrispondente al percorso file specificato nel passaggio precedente. Scegliere **Avanti**. In genere questa opzione viene usata quando si specifica un indirizzo FTP come percorso di pubblicazione. Il download diretto da FTP non è supportato, di conseguenza, è necessario specificare un URL.
+   - Se gli utenti eseguiranno l'installazione da un sito Web, fare clic su **Da un sito Web** e immettere un URL corrispondente al percorso file specificato nel passaggio precedente. Fare clic su **Avanti**. In genere questa opzione viene usata quando si specifica un indirizzo FTP come percorso di pubblicazione. Il download diretto da FTP non è supportato, di conseguenza, è necessario specificare un URL.
 
    - Se gli utenti installeranno l'applicazione direttamente dalla condivisione file, fare clic su **Da un percorso UNC o condivisione file** e quindi scegliere **Avanti**. Questo vale per i percorsi di pubblicazione nel formato *c:\deploy\myapp* o *\\\server\myapp*.
 
@@ -69,13 +69,13 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto di applicazione e scegliere **Proprietà**.
 
-    Viene visualizzata la finestra **Creazione progetti**.
+    Verrà visualizzato **Progettazione progetti** .
 
 2. Fare clic sulla scheda **Pubblica** per aprire la pagina **Pubblica** in **Creazione progetti** e quindi fare clic sul pulsante **Pubblicazione guidata**.
 
     Verrà visualizzata la Pubblicazione guidata.
 
-3. Nel **in cui si desidera pubblicare l'applicazione?** pagina, immettere il percorso del file o percorso FTP in cui verrà pubblicata l'applicazione, ad esempio *d:\deploy*. Per continuare, fare clic su **Avanti**.
+3. Nella pagina **Specificare la posizione in cui pubblicare l'applicazione** immettere il percorso del file o il percorso FTP in cui verrà pubblicata l'applicazione, ad esempio *d:\deploy*. Quindi, fare clic su **Avanti** per continuare.
 
 4. Nella pagina **Specificare la modalità di installazione dell'applicazione usata dagli utenti** fare clic su **Da CD-ROM o DVD-ROM** e quindi fare clic su **Avanti**.
 
@@ -97,8 +97,8 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
    > [!NOTE]
    > Al termine della pubblicazione, sarà necessario usare un masterizzatore CD o DVD per copiare i file dal percorso specificato nel passaggio 3 al CD-ROM o DVD-ROM.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
-- [Distribuzione di una soluzione Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+- [Distribuzione di una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)

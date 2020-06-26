@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Specificare un collegamento per il supporto tecnico | Microsoft Docs'
+title: 'Procedura: specificare un collegamento per il supporto tecnico | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a050ae24ddb5b796acf101e0432a5b64cd28031
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e64ef97b8b51f8a943e216bad67ec300026d5654
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898571"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382055"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Procedura: Specificare un collegamento per il supporto tecnico
-Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione, il **URL del supporto** proprietà identifica una pagina Web o una condivisione file in cui gli utenti possono accedere per ottenere informazioni sull'applicazione. Questa proprietà è facoltativa. Se specificato, verrà visualizzato l'URL in ingresso dell'applicazione **Aggiungi / Rimuovi programmi** nella finestra di dialogo.
+Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, la proprietà **URL di supporto** identifica una pagina Web o una condivisione file in cui gli utenti possono accedere per ottenere informazioni sull'applicazione. Questa proprietà è facoltativa. Se specificato, l'URL verrà visualizzato nella finestra di dialogo **Aggiungi o Rimuovi programmi** dell'applicazione.
 
- Il **URL del supporto** può impostare la proprietà il **Publish** pagina del **Progettazione progetti**.
+ La proprietà **URL di supporto** può essere impostata nella pagina **pubblica** di **Progettazione progetti**.
 
 ### <a name="to-specify-a-support-url"></a>Per specificare un URL di supporto
 
@@ -38,12 +38,12 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
 
 2. Fare clic sulla scheda **Pubblica**.
 
-3. Fare clic sui **le opzioni** pulsante per aprire il **Publish Options** nella finestra di dialogo.
+3. Fare clic sul pulsante **Opzioni** per aprire la finestra di dialogo **Opzioni di pubblicazione** .
 
-4. Fare clic su **descrizione**.
+4. Fare clic su **Descrizione**.
 
-5. Nel **URL del supporto** campo, immettere il percorso completo di una condivisione UNC, pagina Web o sito Web.
+5. Nel campo **support URL (URL supporto** ) immettere il percorso completo di un sito Web, di una pagina Web o di una condivisione UNC.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

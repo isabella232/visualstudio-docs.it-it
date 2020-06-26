@@ -1,7 +1,7 @@
 ---
-title: "Procedura: Installare i prerequisiti con un'applicazione ClickOnce | Microsoft Docs"
+title: "Procedura: installare i prerequisiti con un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,57 +16,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 047ac897931cbb93d8a06406e300d39cd83a9fe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ce4ad97439d330a6fc51e741e9ea05ef53a5798a
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406766"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382380"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedura: Installare i prerequisiti con un'applicazione ClickOnce
-Tutti i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni richiedono che la versione corretta di .NET Framework sia installata in un computer prima di poter essere eseguiti, molte applicazioni hanno anche altri prerequisiti. Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione, è possibile scegliere un set di componenti dei prerequisiti per essere incluso nel pacchetto insieme all'applicazione. Al momento dell'installazione, verrà eseguita la verifica per ogni prerequisito determinare se esiste già; Se non verrà installato prima di installare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.
+Per tutte le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni è necessario che la versione corretta del .NET Framework sia installata in un computer prima di poter essere eseguita. molte applicazioni hanno anche altri prerequisiti. Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, è possibile scegliere un set di componenti dei prerequisiti da assemblare insieme all'applicazione. Al momento dell'installazione, verrà eseguito un controllo per ogni prerequisito per determinare se esiste già. in caso contrario, verrà installato prima di installare l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.
 
- Invece di assemblare e pubblicare i prerequisiti, è anche possibile specificare un percorso di download per i componenti. Invece inclusi i prerequisiti con tutte le applicazioni pubblicate, ad esempio, si potrebbe usare una condivisione file centralizzato o percorso Web che contiene i programmi di installazione per tutti i prerequisiti, al momento dell'installazione, verranno scaricati i componenti e installato da quel percorso.
+ Anziché confezionare e pubblicare prerequisiti, è anche possibile specificare un percorso di download per i componenti. Ad esempio, invece di includere i prerequisiti per ogni applicazione pubblicata, è possibile usare una condivisione file o un percorso Web centralizzato contenente i programmi di installazione per tutti i prerequisiti, in fase di installazione, i componenti verranno scaricati e installati da tale percorso.
 
 > [!IMPORTANT]
-> È necessario aggiungere pacchetti di installazione dei prerequisiti nel computer di sviluppo prima di pubblicare la prima volta [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Per altre informazioni, vedere [Procedura: Includere i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
+> È necessario aggiungere i pacchetti del programma di installazione dei prerequisiti al computer di sviluppo prima di pubblicare la prima [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione. Per altre informazioni, vedere [procedura: includere i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
 
- Prerequisiti vengono gestiti nel **prerequisiti** finestra di dialogo, accessibile dal **Publish** riquadro del **Progettazione progetti**.
+ I prerequisiti vengono gestiti nella finestra di dialogo **prerequisiti** , accessibile dal riquadro **pubblica** di **Progettazione progetti**.
 
 > [!NOTE]
-> Oltre all'elenco predeterminato dei prerequisiti, è possibile aggiungere componenti personalizzati all'elenco. Per altre informazioni, vedere [creazione di pacchetti bootstrapper](../deployment/creating-bootstrapper-packages.md).
+> Oltre all'elenco predeterminato dei prerequisiti, è possibile aggiungere componenti personalizzati all'elenco. Per ulteriori informazioni, vedere [creazione di pacchetti del programma di avvio automatico](../deployment/creating-bootstrapper-packages.md).
 
-### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Per specificare i prerequisiti da installare con un'applicazione ClickOnce
+### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Per specificare i prerequisiti per l'installazione di con un'applicazione ClickOnce
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **proprietà**dal menu **progetto** .
 
-2. Selezionare il **pubblica** riquadro.
+2. Selezionare il riquadro **pubblica** .
 
-3. Fare clic sui **prerequisiti** per aprire il **prerequisiti** nella finestra di dialogo.
-
-4. Nella finestra di dialogo **Prerequisiti** verificare che la casella di controllo **Crea programma di installazione per installare componenti dei prerequisiti** sia selezionata.
-
-5. Nel **prerequisiti** elencare, controllare i componenti che si desiderano installare e quindi fare clic su **OK**.
-
-     I componenti selezionati verranno incluso nel pacchetto e pubblicati insieme all'applicazione.
-
-### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Per specificare un percorso di download diverse per i prerequisiti
-
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
-
-2. Selezionare il **pubblica** riquadro.
-
-3. Fare clic sui **prerequisiti** per aprire il **prerequisiti** nella finestra di dialogo.
+3. Fare clic sul pulsante **prerequisiti** per aprire la finestra di dialogo **prerequisiti** .
 
 4. Nella finestra di dialogo **Prerequisiti** verificare che la casella di controllo **Crea programma di installazione per installare componenti dei prerequisiti** sia selezionata.
 
-5. Nel **specificare il percorso di installazione dei prerequisiti** sezione, selezionare **Scarica prerequisiti dal seguente percorso**.
+5. Nell'elenco dei **prerequisiti** selezionare i componenti che si desidera installare, quindi fare clic su **OK**.
 
-6. Selezionare un percorso nell'elenco a discesa scegliere o immettere un URL, percorso del file o percorso FTP e quindi fare clic su **OK.**
+     I componenti selezionati verranno inclusi nel pacchetto e pubblicati insieme all'applicazione.
+
+### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Per specificare un percorso di download diverso per i prerequisiti
+
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **proprietà**dal menu **progetto** .
+
+2. Selezionare il riquadro **pubblica** .
+
+3. Fare clic sul pulsante **prerequisiti** per aprire la finestra di dialogo **prerequisiti** .
+
+4. Nella finestra di dialogo **Prerequisiti** verificare che la casella di controllo **Crea programma di installazione per installare componenti dei prerequisiti** sia selezionata.
+
+5. Nella sezione **specificare il percorso di installazione per i prerequisiti** selezionare **Scarica prerequisiti dal percorso seguente**.
+
+6. Selezionare un percorso dall'elenco a discesa oppure immettere un URL, un percorso di file o un percorso FTP, quindi fare clic su **OK.**
 
     > [!NOTE]
     > È necessario assicurarsi che i programmi di installazione per i componenti specificati esistano nel percorso specificato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

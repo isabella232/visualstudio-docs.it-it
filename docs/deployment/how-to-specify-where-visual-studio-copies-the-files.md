@@ -2,7 +2,7 @@
 title: Specificare dove copiare i file | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec54a2d3150b0e8e11b19d2ca739324d7388f1f0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f0618a6e0b74c16efaaf8a70b7b8745e0f3dd142
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407659"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85381717"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Procedura: Specificare il percorso in cui vengono copiati i file in Visual Studio
 Quando si pubblica un'applicazione tramite ClickOnce, la proprietà `Publish Location` specifica il percorso in cui vengono inseriti i file dell'applicazione e il manifesto. Può trattarsi di un percorso di file o del percorso di un server FTP.
 
- È possibile specificare la proprietà `Publish Location` nella pagina **Pubblica** di **Progettazione progetti** oppure mediante la Pubblicazione guidata. Per altre informazioni, vedere [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ È possibile specificare la proprietà `Publish Location` nella pagina **Pubblica** di **Progettazione progetti** oppure mediante la Pubblicazione guidata. Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!NOTE]
 > Quando si installa più di una versione di un'applicazione tramite ClickOnce, l'installazione sposta le versioni precedenti dell'applicazione in una cartella denominata Archivio, nel percorso di pubblicazione specificato. L'archiviazione delle versioni precedenti consente di mantenere pulita la directory di installazione.
@@ -39,12 +39,12 @@ Quando si pubblica un'applicazione tramite ClickOnce, la proprietà `Publish Loc
 
 3. Nel campo **Percorso pubblicazione** immettere il percorso di pubblicazione usando uno dei formati seguenti:
 
-   - Per pubblicare in una condivisione file o in un percorso su disco, immettere il percorso usando un percorso UNC (*\\\Server\NomeApplicazione*) o un percorso file (*C:\Deploy\NomeApplicazione*).
+   - Per pubblicare in una condivisione file o un percorso su disco, immettere il percorso usando un percorso UNC (* \\ \Server\ApplicationName*) o un percorso file (*c:\Deploy\NomeApplicazione*).
 
-   - Per pubblicare in un server FTP, immettere il percorso nel formato <em>ftp://ftp.microsoft.com/\<NomeApplicazione></em>.
+   - Per pubblicare in un server FTP, immettere il percorso usando il formato <em>FTP://FTP.Microsoft.com/ \<ApplicationName> </em>.
 
-     Si noti che il testo deve essere presente nella casella **Posizione di pubblicazione** perché il pulsante Sfoglia (**...**) funzioni.
+     Si noti che il testo deve essere presente nella casella **percorso di pubblicazione** affinché il pulsante Sfoglia (**..**.) funzioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

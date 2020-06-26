@@ -1,7 +1,7 @@
 ---
-title: Modifica lingua per l'applicazione ClickOnce di pubblicazione
+title: Modificare la lingua di pubblicazione per l'applicazione ClickOnce
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e80a65b65d75d925decdf60b633a7d51ea9bafce
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0252cf39f8f5ee268adbf625f03a9b5a305b903a
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263180"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382588"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procedura: Cambiare la lingua di pubblicazione di un'applicazione ClickOnce
 
-Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, l'interfaccia utente visualizzata durante l'installazione il valore predefinito è la lingua del computer di sviluppo. Se si pubblica un'applicazione localizzata, è necessario specificare una lingua e impostazioni cultura in base alla versione localizzata. Ciò è determinato dal `Publish language` proprietà per il progetto.
+Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, l'interfaccia utente visualizzata durante l'installazione viene impostata in modo predefinito sulla lingua e le impostazioni cultura del computer di sviluppo. Se si pubblica un'applicazione localizzata, sarà necessario specificare una lingua e le impostazioni cultura corrispondenti alla versione localizzata. Questa operazione è determinata dalla `Publish language` proprietà per il progetto.
 
-Il `Publish language` proprietà può essere impostata **Publish Options** finestra di dialogo, accessibile dal **pubblica** pagina della **Progettazione progetti**.
+La `Publish language` proprietà può essere impostata nella finestra di dialogo **Opzioni di pubblicazione** accessibile dalla pagina **pubblica** di **Progettazione progetti**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-change-the-publish-language"></a>Per modificare la lingua di pubblicazione
 
@@ -38,13 +38,13 @@ Il `Publish language` proprietà può essere impostata **Publish Options** fines
 
 2. Fare clic sulla scheda **Pubblica**.
 
-3. Fare clic sui **le opzioni** pulsante per aprire il **Publish Options** nella finestra di dialogo.
+3. Fare clic sul pulsante **Opzioni** per aprire la finestra di dialogo **Opzioni di pubblicazione** .
 
-4. Fare clic su **descrizione**.
+4. Fare clic su **Descrizione**.
 
-5. Nel **Publish Options** finestra di dialogo selezionare una lingua e le impostazioni cultura dal **lingua di pubblicazione** elenco a discesa e quindi fare clic su **OK**.
+5. Nella finestra di dialogo **Opzioni di pubblicazione** selezionare una lingua e le impostazioni cultura dall'elenco a discesa **lingua di pubblicazione** , quindi fare clic su **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

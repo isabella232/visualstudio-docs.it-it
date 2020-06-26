@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30acc1f38ea0d27a3a8245f586b3c41765330c50
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 24436a76841ae663f733e7c76eeb16065ed1f57b
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283398"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382666"
 ---
 # <a name="performance-warnings"></a>avvisi di prestazioni
 Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-| Regola | Description |
+| Regola | Descrizione |
 | - | - |
 | [CA1800: Non eseguire il cast inutilmente](../code-quality/ca1800.md) | I cast duplicati comportano una riduzione delle prestazioni, in particolare quando i cast vengono eseguiti in istruzioni di iterazione compatte. |
 | [CA1801: Controllare i parametri non usati](../code-quality/ca1801.md) | Una firma di metodo include un parametro non utilizzato nel corpo del metodo. |
@@ -53,6 +53,7 @@ Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni
 | [CA1827: Non usare Count/LongCount se è possibile usare Any](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A><xref:System.Linq.Enumerable.LongCount%2A>è stato usato il metodo o dove il <xref:System.Linq.Enumerable.Any%2A> metodo risulta più efficiente. |
 | [CA1828: Non usare CountAsync/LongCountAsync se è possibile usare AnyAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A><xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>è stato usato il metodo o dove il <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> metodo risulta più efficiente. |
 | [CA1829: Usare la proprietà Length/Count invece del metodo Enumerable.Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>Il metodo LINQ è stato usato in un tipo che supporta una proprietà equivalente, più efficiente `Length` o `Count` . |
+| [CA1830: Preferire gli overload di metodi Append e Insert fortemente tipizzati su StringBuilder](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>e <xref:System.Text.StringBuilder.Insert%2A> forniscono overload per più tipi oltre a System. String.  Quando possibile, preferire gli overload fortemente tipizzati sull'utilizzo di ToString () e dell'overload basato su stringa. |
 | [CA1831: Usare AsSpan invece di indicizzatori basati su Range per la stringa quando appropriato](../code-quality/ca1831.md) | Quando si usa un indicizzatore di intervallo in una stringa e si assegna in modo implicito il valore a un &lt; tipo char ReadOnlySpan &gt; , <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della stringa. |
 | [CA1832: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte ReadOnlySpan o ReadOnlyMemory di una matrice](../code-quality/ca1832.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
 | [CA1833: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte Span o Memory di una matrice](../code-quality/ca1833.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.Span%601> <xref:System.Memory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
