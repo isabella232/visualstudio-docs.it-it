@@ -1,7 +1,7 @@
 ---
 title: IDiaLineNumber | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 819fe28b9ba3fb95e749f0be53702dd7fdccf008
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c5b1bafd47f4888d9fa352553c4337d0c6c932bd
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743098"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466791"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Accede a informazioni che descrivono il processo di mapping da un blocco di byte di testo immagine a un numero di riga del file di origine.
@@ -29,7 +29,7 @@ IDiaLineNumber : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaLineNumber`.
+La tabella seguente illustra i metodi di `IDiaLineNumber` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -48,13 +48,13 @@ La tabella seguente illustra i metodi di `IDiaLineNumber`.
 |[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Recupera un flag che indica che le informazioni sulla riga descrivono l'inizio di un'istruzione nell'origine del programma.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Recupera l'identificatore univoco per il modulo che ha contribuito a questa riga.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Ottenere questa interfaccia chiamando il metodo [IDiaEnumLineNumbers:: Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) o [IDiaEnumLineNumbers:: Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) .
 
 ## <a name="example"></a>Esempio
-La funzione seguente consente di visualizzare i numeri di riga usati in una funzione, rappresentata da `pSymbol`.
+La funzione seguente Visualizza i numeri di riga usati in una funzione (rappresentata da `pSymbol` ).
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -139,9 +139,9 @@ Intestazione: dia2. h
 
 Libreria: diaguids. lib
 
-DLL: Msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)

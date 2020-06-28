@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSourceFiles::get__NewEnum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 676ba2e17ccbcab584fc0b2a559027ce35eaaad3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 04ebf4e1338d83a62fd6167cdba9d6f18a011c1c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744100"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467925"
 ---
 # <a name="idiaenumsourcefilesget__newenum"></a>IDiaEnumSourceFiles::get__NewEnum
-Recupera la versione <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> dell'enumeratore.
+Recupera la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione dell'enumeratore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,10 +33,10 @@ HRESULT get__NewEnum ( 
 #### <a name="parameters"></a>Parametri
  pRetVal
 
-out Restituisce l'interfaccia `IUnknown` che rappresenta la versione <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> dell'enumeratore.
+out Restituisce l' `IUnknown` interfaccia che rappresenta la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione dell'enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback2::RestrictReferencePathAccess | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3406052f4d5466b5b7f52a1da3490d35bbb0508f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 32cad25220cc2248039e4b64c158092ffee8431f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742985"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466630"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
 Determina se la ricerca di un file con estensione PDB è consentita nel percorso in cui si trova il file con estensione exe.
@@ -29,10 +29,10 @@ HRESULT RestrictReferencePathAccess();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Qualsiasi codice restituito diverso da `S_OK` per impedire la ricerca di un file con estensione pdb nel percorso in cui si trova il file con estensione exe.
+## <a name="remarks"></a>Commenti
+ Qualsiasi codice restituito diverso `S_OK` da per impedire la ricerca di un file con estensione pdb nel percorso in cui si trova il file con estensione exe.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

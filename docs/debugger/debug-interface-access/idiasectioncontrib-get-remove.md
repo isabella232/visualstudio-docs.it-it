@@ -1,7 +1,7 @@
 ---
 title: IDiaSectionContrib::get_remove | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b21423dc017a09b983ae157774aa4f0485df1a9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c7d98260678af245fbc5a17593670a2471e9a488
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742530"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466112"
 ---
 # <a name="idiasectioncontribget_remove"></a>IDiaSectionContrib::get_remove
 Recupera un flag che indica se la sezione viene rimossa prima che venga resa parte dell'immagine in memoria.
@@ -33,10 +33,10 @@ HRESULT get_remove ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se non è necessario aggiungere la sezione all'immagine in memoria; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se la sezione non deve essere aggiunta all'immagine in memoria; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

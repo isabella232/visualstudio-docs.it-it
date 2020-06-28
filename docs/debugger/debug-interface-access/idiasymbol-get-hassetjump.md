@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_hasSetJump | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac344c97c7e79ea0cd92cce743848f0ac6e7f99f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 353247c494b803871a9c64126545e11be39bfcae
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740445"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463638"
 ---
 # <a name="idiasymbolget_hassetjump"></a>IDiaSymbol::get_hasSetJump
 Recupera un flag che specifica se la funzione contiene un uso del comando [setjmp](/cpp/c-runtime-library/reference/setjmp) (abbinato al comando [longjmp](/cpp/c-runtime-library/reference/longjmp) , che formano il metodo di tipo C della gestione delle eccezioni).
@@ -33,22 +33,22 @@ HRESULT get_hasSetJump(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Restituisce `TRUE` se la funzione contiene un comando `setjmp`; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se la funzione contiene un `setjmp` comando; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisiti|Descrizione|
+|Requisito|Descrizione|
 |-----------------|-----------------|
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)
 - [longjmp](/cpp/c-runtime-library/reference/longjmp)

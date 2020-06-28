@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_hasAlloca | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d476d5b2ecf9edf29aea1bbbc68e7890b59b13
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 11ebf6a450aa9b2b5fdd05d6573fc9ee10c6f83e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740595"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463827"
 ---
 # <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 Recupera un flag che specifica se la funzione contiene una chiamata a `alloca` (utilizzata per allocare memoria nello stack).
@@ -31,20 +31,20 @@ HRESULT get_hasAlloca(   BOOL *pFlag);
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Restituisce `TRUE` se la funzione contiene una chiamata a `alloca`; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se la funzione contiene una chiamata a `alloca` ; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisiti|Descrizione|
+|Requisito|Descrizione|
 |-----------------|-----------------|
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

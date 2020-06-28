@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSectionContribs::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61d99b0c881abdb8974e94352911ae3234c440c1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 09622b1b152a8d1efd105b9b18a3c1fa74835378
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744266"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468114"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 Recupera un numero specificato di contributi di sezione nella sequenza di enumerazione.
@@ -48,6 +48,6 @@ out Restituisce il numero di contributi di sezione nell'enumeratore recuperato.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti ulteriori contributi alla sezione. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 95fd5e7a-c637-437e-b369-c864eef733c2
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da795770ad0f6f57697bc17a4ee8cf936cfc1183
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9a58795531d2537fc299e6e15554561129f0da0e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741967"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465503"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 Restituisce un'enumerazione di simboli per la variabile a cui corrisponde il valore del tag specificato nella funzione stub del tasto di scelta rapida padre.
@@ -41,11 +41,11 @@ in Valore del tag del puntatore.
 
  `ppResult`
 
-out Puntatore a un puntatore a interfaccia `IDiaEnumSymbols` inizializzato con il risultato.
+out Puntatore a un `IDiaEnumSymbols` puntatore a interfaccia inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

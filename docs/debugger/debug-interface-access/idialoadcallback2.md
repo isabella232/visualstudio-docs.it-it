@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db8b6a115acdafeca2e7e0adbe11be97834cd6d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 248e73d9a17ed8baab1bcaf583e71cf02f821bfe
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742953"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466616"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 Riceve i callback dalla procedura di individuazione dei simboli DIA, consentendo di imporre restrizioni al processo di individuazione.
@@ -38,7 +38,7 @@ IDiaLoadCallback2 : IDiaLoadCallback
 |[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|Determina se la ricerca di informazioni di debug è consentita dai file con estensione dbg.|
 |[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|Determina se la ricerca di file con estensione PDB è consentita nella directory radice di sistema.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  L'applicazione client implementa questa interfaccia e fornisce un riferimento a tale interfaccia nella chiamata al metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) . Ricordare di implementare anche tutti i metodi dell'interfaccia [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -46,9 +46,9 @@ IDiaLoadCallback2 : IDiaLoadCallback
 
  Libreria: diaguids. lib
 
- DLL: Msdia80. dll
+ DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

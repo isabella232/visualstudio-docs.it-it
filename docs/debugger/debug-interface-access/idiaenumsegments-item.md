@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumSegments:: Item | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 101821e3c00d3aeac9b131ee5a11ab9a01e090a9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e03c01efb9f2dca13009a7dc7eeb8282b5c9082c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744176"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468044"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 Recupera un segmento per mezzo di un indice.
@@ -34,15 +34,15 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parametri
  indice
 
-in Indice dell'oggetto [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) da recuperare. L'indice è compreso nell'intervallo da 0 a `count`-1, dove `count` viene restituito dal metodo [IDiaEnumSegments:: get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) .
+in Indice dell'oggetto [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) da recuperare. L'indice è compreso nell'intervallo tra 0 e `count` -1, dove `count` viene restituito dal metodo [IDiaEnumSegments:: get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) .
 
  segment
 
 out Restituisce un oggetto [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) che rappresenta il segmento desiderato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

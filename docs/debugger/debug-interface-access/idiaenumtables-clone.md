@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumTables:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 522ac4080331c869c32585dfed789378b1271542
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 68727c09b03ba8cf53f865c51698256b60742410
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743786"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467575"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
@@ -36,7 +36,7 @@ HRESULT Clone ( 
 out Restituisce un oggetto [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) che contiene un duplicato dell'enumeratore. Le tabelle non vengono duplicate, ma solo l'enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

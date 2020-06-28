@@ -1,7 +1,7 @@
 ---
 title: IDiaSourceFile | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08334c59ea061cee1618c76aa61ec6aa6fb8d7d4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c28559eb3b936505cf03c6499dd79178554645bf
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741781"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465164"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Rappresenta un file di origine.
@@ -29,7 +29,7 @@ IDiaSourceFile : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaSourceFile`.
+La tabella seguente illustra i metodi di `IDiaSourceFile` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -39,7 +39,7 @@ La tabella seguente illustra i metodi di `IDiaSourceFile`.
 |[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Recupera un enumeratore di moduli con i numeri di riga che fanno riferimento a questo file.|
 |[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Recupera i byte di checksum.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Ottenere questa interfaccia chiamando il metodo [IDiaEnumSourceFiles:: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) o [IDiaEnumSourceFiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) . Per informazioni dettagliate, vedere l'esempio.
@@ -77,9 +77,9 @@ Intestazione: dia2. h
 
 Libreria: diaguids. lib
 
-DLL: Msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)
 - [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)
