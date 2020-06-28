@@ -1,7 +1,7 @@
 ---
-title: 'Errore: Il processo di destinazione è stato terminato con codice di &#39;codice&#39; durante la valutazione della funzione &#39;funzione&#39; | Microsoft Docs'
+title: 'Errore: il processo di destinazione è stato terminato con codice &#39;codice&#39; durante la valutazione della funzione &#39;funzione&#39; | Microsoft Docs'
 ms.date: 4/06/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
@@ -9,39 +9,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d82b6011a0dfa7f2c388e7d5f39a9ebabcd663
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1721196becf1f746d81fa7e3d4ff5f0371e3f57
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850812"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460778"
 ---
-# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Errore: Il processo di destinazione è stato terminato con codice di &#39;codice&#39; durante la valutazione della funzione &#39;(funzione)&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Errore: il processo di destinazione è stato terminato con codice &#39;codice&#39; durante la valutazione della funzione &#39;funzione&#39;
 
-Testo completo del messaggio: Il processo di destinazione è stato terminato con codice 'codice' durante la valutazione della funzione 'function'.
+Testo completo del messaggio: il processo di destinazione è stato terminato con il codice ' code ' durante la valutazione della funzione ' Function '.
 
-Per renderne più semplice controllare lo stato degli oggetti .NET, il debugger automaticamente forzerà il proseguimento del processo per eseguire codice aggiuntivo (in genere i metodi di richiamo di proprietà e `ToString` funzioni). Nella maggior parte degli scenari, queste funzioni completata correttamente o generano le eccezioni che possono essere rilevate dal debugger. Tuttavia, esistono alcune circostanze in cui non possono essere rilevate eccezioni perché superano i limiti del kernel, richiedono la distribuzione dei messaggi di utente o non sono recuperabili. Come un risultato, un getter della proprietà o metodo ToString che esegue codice in cui termina in modo esplicito il processo (ad esempio, chiama `ExitProcess()`) oppure genera un'eccezione non gestita che non può essere intercettata (ad esempio, `StackOverflowException`) terminerà il processo sottoposto a debug e fine della sessione di debug. Se si verifica questo messaggio di errore, ciò è accaduto.
+Per semplificare l'analisi dello stato degli oggetti .NET, il debugger forza automaticamente il processo sottoposto a debug a eseguire codice aggiuntivo (in genere metodi e funzioni getter di proprietà `ToString` ). Nella maggior parte degli scenari queste funzioni vengono completate correttamente o generano eccezioni che possono essere rilevate dal debugger. In alcune circostanze, tuttavia, non è possibile intercettare le eccezioni perché superano i limiti del kernel, richiedono la distribuzione dei messaggi utente o sono irreversibili. Di conseguenza, un metodo Get o ToString della proprietà che esegue codice che termina in modo esplicito il processo (ad esempio, chiama `ExitProcess()` ) o genera un'eccezione non gestita che non può essere intercettata (ad esempio, `StackOverflowException` ) termina il processo sottoposto a debug e termina la sessione di debug. Se viene visualizzato questo messaggio di errore, si è verificato il problema.
 
-Uno dei motivi comune per questo problema è che quando il debugger valuta una proprietà che chiama se stessa, questo può comportare un'eccezione di overflow dello stack. Non è possibile recuperare l'eccezione di overflow dello stack e terminerà il processo di destinazione.
+Una causa comune di questo problema è che quando il debugger valuta una proprietà che chiama se stessa, è possibile che venga generata un'eccezione di overflow dello stack. Non è possibile recuperare l'eccezione di overflow dello stack e il processo di destinazione verrà terminato.
 
 ## <a name="to-correct-this-error"></a>Per correggere l'errore
 
-Esistono due possibili soluzioni al problema.
+Esistono due possibili soluzioni per questo problema.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Soluzione 1 #. Impedire il debugger di chiamare la proprietà getter o il metodo ToString 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1 soluzione: impedire al debugger di chiamare la proprietà Getter o il metodo ToString 
 
-Il messaggio di errore indicherà il nome della funzione che il debugger ha tentato di chiamare. Con il nome della funzione, è possibile provare a ripetere la valutazione di tale funzione dal **Immediate** finestra per eseguire il debug della versione di valutazione. Il debug è possibile durante la valutazione dal **controllo immediato** finestra perché, a differenza delle valutazioni implicite dalle **Auto/variabili locali/espressione di controllo** windows, il debugger si interrompe in corrispondenza di eccezioni non gestite.
+Il messaggio di errore indica il nome della funzione che il debugger ha tentato di chiamare. Con il nome della funzione, è possibile provare a rivalutare la funzione dalla finestra di **controllo immediato** per eseguire il debug della valutazione. È possibile eseguire il debug durante la valutazione dalla finestra di **controllo immediato** perché, a differenza delle valutazioni implicite dalle finestre **auto/variabili locali/espressioni di controllo** , il debugger si interrompe in caso di eccezioni non gestite.
 
-Se è possibile modificare questa funzione, è possibile impedire al debugger di chiamata il getter della proprietà o `ToString` (metodo). Provare una delle operazioni seguenti:
+Se è possibile modificare questa funzione, è possibile impedire al debugger di chiamare il metodo o il metodo Get della proprietà `ToString` . Provare una delle operazioni seguenti:
 
-* Modificare il metodo in un altro tipo di codice diverso da un getter della proprietà o metodo ToString e il problema non viene più visualizzato.
+* Modificare il metodo in un altro tipo di codice oltre a un metodo getter o ToString per la proprietà e il problema non è più possibile.
     -oppure-
-* (Per `ToString`) definire un `DebuggerDisplay` attributo sul tipo e si può avere il debugger valuta un elemento diverso da `ToString`.
+* (Per `ToString` ) Definire un `DebuggerDisplay` attributo per il tipo ed è possibile fare in modo che il debugger valuti un valore diverso da `ToString` .
     -oppure-
-* (Per un getter proprietà) Inserire il `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attributo della proprietà. Ciò può essere utile se si dispone di un metodo che deve rimanere una proprietà per motivi di compatibilità delle API, ma deve essere effettivamente un metodo.
+* (Per un getter di proprietà) Inserire l' `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attributo sulla proprietà. Questa operazione può essere utile se si dispone di un metodo che deve rimanere una proprietà per motivi di compatibilità con le API, ma deve essere effettivamente un metodo.
 
-Se non è possibile modificare questo metodo, è possibile interrompere il processo di destinazione in corrispondenza di un'istruzione alternativa e ripetere la valutazione.
+Se non è possibile modificare questo metodo, potrebbe essere possibile suddividere il processo di destinazione in un'istruzione alternativa e ripetere la valutazione.
 
-### <a name="solution-2-disable-all-implicit-evaluation"></a>Soluzione #2: Disabilitare tutte le valutazione implicita
+### <a name="solution-2-disable-all-implicit-evaluation"></a>#2 soluzione: disabilitare tutta la valutazione implicita
 
-Se le soluzioni precedenti non risolvono il problema, passare a **degli strumenti** > **opzioni**e deselezionare l'impostazione **debug**  >   **Generali** > **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**. Questo verrà disabilitata la maggior parte delle valutazioni di funzioni implicite e dovrebbe risolvere il problema.
+Se le soluzioni precedenti non consentono di risolvere il problema, passare a **strumenti**  >  **Opzioni**e deselezionare l'impostazione **debug**  >  **generale**  >  **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**. Questa operazione Disabilita la maggior parte delle valutazioni di funzioni implicite e dovrebbe risolvere il problema.

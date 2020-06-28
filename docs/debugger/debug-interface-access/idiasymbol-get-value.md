@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_value | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0a0a2df1687d965437a8977eea649f77ea1ce4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9a36da3feecfe1af664e35fa50d616d2a94fb0a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738923"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461511"
 ---
 # <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 Recupera il valore di una costante.
@@ -33,15 +33,15 @@ HRESULT get_value (
 #### <a name="parameters"></a>Parametri
 `pRetVal`
 
-[in, out] Oggetto `VARIANT` compilato con il valore di una costante.
+[in, out] `VARIANT`Oggetto compilato con il valore di una costante.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
 La variante fornita deve essere inizializzata prima di essere passata a questo metodo. Per ulteriori informazioni, vedere l'esempio.
 
 ## <a name="example"></a>Esempio

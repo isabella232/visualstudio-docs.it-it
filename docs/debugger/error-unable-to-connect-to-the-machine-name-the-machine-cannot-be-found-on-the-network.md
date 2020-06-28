@@ -1,7 +1,7 @@
 ---
-title: 'Errore: non è possibile connettersi al computer &lt;name &gt;. Impossibile trovare il computer sulla rete. | Microsoft Docs'
+title: 'Errore: Impossibile connettersi al nome del computer &lt; &gt; . Impossibile trovare il computer sulla rete. | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.remote.dcom_disabled
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0f820156714a726d506d8871d4e42a8dc12a23
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8618a15ab4dcd6c9bbc0d9d8ab9bf347552883b1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736832"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460143"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Errore: non è possibile connettersi al computer &lt;name &gt;. Impossibile trovare il computer sulla rete.
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Errore: non è possibile connettersi al nome del computer &lt; &gt; . Impossibile trovare il computer sulla rete.
 Questo messaggio di errore viene visualizzato quando si verifica una delle seguenti condizioni:
 
 - La connessione stabilita al computer remoto è stata interrotta.
@@ -36,14 +36,14 @@ Questo messaggio di errore viene visualizzato quando si verifica una delle segue
 
 - Assicurarsi che il computer locale e il computer remoto si trovino nella stessa rete. A tale scopo, utilizzare Esplora risorse o Esplora file per tentare di accedere al computer remoto.
 
-     \- e -
+     - e -
 
 - Assicurarsi che l'account utente utilizzato per la connessione al computer remoto sia attivato.
 
-     \- e -
+     - e -
 
 - Assicurarsi che la password utilizzata per la connessione al computer remoto sia valida e non scaduta.
 
-## <a name="see-also"></a>Vedere anche
-- [Remote Debugging](../debugger/remote-debugging.md)
+## <a name="see-also"></a>Vedi anche
+- [Debug remoto](../debugger/remote-debugging.md)
 - [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)

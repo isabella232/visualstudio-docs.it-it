@@ -1,7 +1,7 @@
 ---
-title: 'Errore: ASP.NET non installato | Microsoft Docs'
+title: Errore-ASP.NET non installato | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.http_not_supported
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7d754cc2bb7931cdcbdb42abeddd554390ba320c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3a768a1a3a0295190701cacc9bbf017baee507b7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737912"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460905"
 ---
 # <a name="error-aspnet-not-installed"></a>Errore: ASP.NET non è installato
 Questo errore si verifica quando [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non è installato correttamente nel computer di cui si sta tentando di eseguire il debug. Questo errore potrebbe essere dovuto al fatto che [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non è mai stato installato o che [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] è stato installato prima di IIS.
@@ -37,10 +37,10 @@ Questo errore si verifica quando [!INCLUDE[vstecasp](../code-quality/includes/vs
    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i
    ```
 
-    dove *Version* rappresenta il numero di versione del .NET Framework installato nel computer, ad esempio v 1.0.370. È possibile determinare la versione del Framework esaminando la directory `\WINDOWS\Microsoft.NET\Framework`.
+    dove *Version* rappresenta il numero di versione del .NET Framework installato nel computer, ad esempio v 1.0.370. È possibile determinare la versione del Framework eseguendo una ricerca nella `\WINDOWS\Microsoft.NET\Framework` Directory.
 
    > [!NOTE]
    > Con Windows Server 2003 è possibile installare [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dall'applicazione **Installazione applicazioni** del Pannello di controllo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

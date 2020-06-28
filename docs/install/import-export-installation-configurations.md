@@ -3,7 +3,7 @@ title: Importare o esportare configurazioni di installazione
 titleSuffix: ''
 description: Informazioni su come esportare la configurazione di installazione in un file con estensione vsconfig da condividere con altri utenti e su come eseguire l'importazione da clonare.
 ms.date: 05/18/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 12d22334094b848350d44d245685532fed196389
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dcad21ce0a77e18bed0b077f731a509916e9e63
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114846"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418821"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importare o esportare configurazioni di installazione
 
@@ -70,7 +70,7 @@ Quando si è pronti per importare un file di configurazione dell'installazione, 
 
 ## <a name="automatically-install-missing-components"></a>Installare automaticamente i componenti mancanti
 
-**Novità di Visual Studio 2019:** quando si salva un file con estensione vsconfig nella directory radice della soluzione e quindi si apre una soluzione, Visual Studio rileva automaticamente i componenti mancanti e richiede di installarli.
+**Novità di Visual studio 2019**: quando si salva un file con estensione vsconfig nella directory radice della soluzione e quindi si apre una soluzione, Visual Studio rileva automaticamente i componenti mancanti e richiede di installarli.
 
 ![Esplora soluzioni suggerisce componenti aggiuntivi](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -91,7 +91,7 @@ Quando si è pronti per importare un file di configurazione dell'installazione, 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Creare un'installazione di rete di Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Errore: Impossibile avviare la comunicazione DCOM | Microsoft Docs'
+title: Errore-Impossibile avviare la comunicazione DCOM | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unmarshal_server_failed
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a5e45df06d4b9490160c94902457ea630548966
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ccd8b30fcba11d89e11227861c4582ff67f3a7e7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736722"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460026"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>Errore: impossibile avviare la comunicazione DCOM
 Si è verificato un errore DCOM quando il computer locale ha tentato di comunicare con il computer remoto. Questo errore è causato dalla presenza di un firewall nel server remoto oppure dall'interruzione dell'autenticazione di Windows nel computer remoto.
@@ -30,5 +30,5 @@ Si è verificato un errore DCOM quando il computer locale ha tentato di comunica
 
 - Per ripristinare l'autenticazione di Windows, provare a riavviare entrambi i computer. Controllare se nel log eventi del computer locale e di quello remoto sono segnalati errori di Kerberos e contattare gli amministratori di dominio in caso di problemi noti.
 
-## <a name="see-also"></a>Vedere anche
-- [Remote Debugging](../debugger/remote-debugging.md)
+## <a name="see-also"></a>Vedi anche
+- [Debug remoto](../debugger/remote-debugging.md)

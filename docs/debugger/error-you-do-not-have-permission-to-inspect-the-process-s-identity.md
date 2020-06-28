@@ -1,7 +1,7 @@
 ---
-title: "Errore: non si dispone dell'autorizzazione per controllare l'identità&#39;del processo | Microsoft Docs"
+title: "Errore: non si dispone dell'autorizzazione per controllare l'identità del processo&#39;s | Microsoft Docs"
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 dev_langs:
 - CSharp
 - VB
@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad229f80676c3d1f7a7d23ad7a29729c834929b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bd1bc11d42d8aed0b816a667fe5adcc139a42c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736226"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85459922"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: non si dispone dell'autorizzazione per controllare l'identità&#39;del processo
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: non si dispone dell'autorizzazione per controllare l'identità del processo&#39;s
 Non si dispone dell'autorizzazione necessaria per controllare l'identità del processo. Probabilmente l'errore è causato dalla configurazione del sistema.
 
  Il debugger non è stato in grado di controllare l'identità del processo, un'informazione necessaria per l'esecuzione del debug. Probabilmente Servizi terminal è disabilitato. Per impostazione predefinita, questo servizio è attivato. Per riattivarlo, eseguire la procedura seguente.
 
 ### <a name="to-enable-terminal-services"></a>Per attivare Servizi terminal
 
-1. Fare clic su **Start**, quindi scegliere **Pannello di controllo**.
+1. Fare clic su **Start** , quindi scegliere **Pannello di controllo**.
 
-2. Nel Pannello di controllo scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.
+2. Nel pannello di controllo scegliere **passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **strumenti di amministrazione**.
 
 3. Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione computer**.
 
@@ -56,11 +56,11 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
 
      Verrà visualizzata la finestra **Proprietà del sistema**.
 
-3. Fare clic su **Connessione remota**.
+3. Fare clic su **Remoto**.
 
 4. In **Desktop remoto** selezionare **Consenti agli utenti di connettersi in remoto al computer**.
 
 5. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

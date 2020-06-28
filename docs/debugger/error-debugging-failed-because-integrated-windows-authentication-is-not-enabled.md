@@ -1,7 +1,7 @@
 ---
 title: "Errore: debug non riuscito perché l'autenticazione integrata di Windows non è abilitata | Microsoft Docs"
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c508951a3b54a7f84f142c5029b5305c8ef579ea
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911541"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460838"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Errore: debug non riuscito. Non è attivata l'autenticazione di Windows integrata
 L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a causa di un errore di autenticazione. Questo errore può verificarsi quando si tenta di eseguire un'applicazione Web o un servizio Web XML. Una causa di questo errore è la mancata attivazione dell'autenticazione di Windows integrata. Per attivarla, seguire i passaggi della procedura relativa all'attivazione dell'autenticazione integrata di Windows.
@@ -35,7 +35,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
 2. Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.
 
-3. Nel **Pannello di controllo** fare doppio clic sull'icona **Strumenti di amministrazione**.
+3. Nel **Pannello di controllo**fare doppio clic su **strumenti di amministrazione**.
 
 4. Fare doppio clic su **Internet Information Services**.
 
@@ -57,7 +57,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
 10. Scegliere **OK** per chiudere la finestra di dialogo **Metodi di autenticazione**.
 
-11. Fare clic su **OK** per chiudere la finestra di dialogo **Proprietà**.
+11. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà**.
 
 12. Chiudere la finestra **Internet Information Services**.
 
@@ -73,7 +73,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
          Verrà visualizzata la finestra di dialogo Controllo di accesso utente e verrà richiesto di immettere l'autorizzazione per continuare.
 
-    3. Scegliere **Continua**.
+    3. Fare clic su **Continue**.
 
          Verrà visualizzata la finestra di dialogo Funzionalità Windows.
 
@@ -93,11 +93,11 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
     11. Per rendere effettive queste modifiche, riavviare il computer.
 
-3. Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.
+3. Fare clic sul pulsante **Start** , quindi scegliere **Pannello di controllo**.
 
 4. Selezionare **Visualizzazione classica**, quindi fare doppio clic su **Strumenti di amministrazione**.
 
-5. Nella colonna **Nome** fare doppio clic su **Gestione Internet Information Services (IIS)** .
+5. Nella colonna **Nome** fare doppio clic su **Gestione Internet Information Services (IIS)**.
 
 6. Nella colonna **Connessioni** espandere il nodo del server.
 
@@ -111,9 +111,9 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
 9. Nella colonna **Nome** del riquadro **Autenticazione** fare clic con il pulsante destro del mouse su **Autenticazione di Windows**, quindi scegliere **Attiva**.
 
-10. Chiudere la finestra **Gestione Internet Information Services (IIS)** .
+10. Chiudere la finestra **Gestione Internet Information Services (IIS)**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-- [Autenticazione di Microsoft Digest](/windows/win32/secauthn/microsoft-digest-authentication)
+- [Autenticazione digest Microsoft](/windows/win32/secauthn/microsoft-digest-authentication)
 - [Esecuzione di applicazioni Web in Windows Vista con IIS 7,0 e Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

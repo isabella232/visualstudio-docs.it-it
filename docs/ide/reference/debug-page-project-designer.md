@@ -9,23 +9,23 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16be10dc69f203e52eb0dccc0e0738399d37ee3d
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649430"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418743"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
 
 Usare la pagina **Debug** di **Creazione progetti** per impostare le proprietà per il comportamento di debug in un progetto Visual Basic o C#.
 
-Per accedere alla pagina **Debug** selezionare un nodo del progetto in **Esplora soluzioni**. Nel menu **Progetto** scegliere **\<NomeProgetto> Proprietà**. Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Debug**.
+Per accedere alla pagina **Debug** selezionare un nodo del progetto in **Esplora soluzioni**. Scegliere ** \<ProjectName> Proprietà**dal menu **progetto** . Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Debug**.
 
 > [!NOTE]
 > Questo argomento non si applica alle app UWP. Per le app UWP, vedere [Avviare una sessione di debug (VB, C#, C++ e XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
@@ -34,11 +34,11 @@ Per accedere alla pagina **Debug** selezionare un nodo del progetto in **Esplora
 
 Le opzioni seguenti consentono di selezionare la configurazione e la piattaforma da visualizzare o modificare.
 
-**Configurazione**
+**Configuration**
 
 Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni possibili sono **Debug** (impostazione predefinita), **Rilascio** o **Tutte le configurazioni**.
 
-**Piattaforma**
+**Platform**
 
 Specifica le impostazioni della piattaforma da visualizzare o modificare. Le scelte possono includere **Qualsiasi CPU** (impostazione predefinita), **x64** e **x86**.
 
@@ -82,10 +82,10 @@ Questa opzione specifica se è supportato il debug del codice nativo. Selezionar
 
 Selezionare o deselezionare questa casella di controllo per abilitare o disabilitare il debug delle routine SQL dall'applicazione Visual Basic. Questa casella di controllo è deselezionata per impostazione predefinita.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Presentazione del debugger](../../debugger/debugger-feature-tour.md)
-- [Impostazioni di progetto per le configurazioni di debug di C](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Impostazioni di progetto per una configurazione di debug di Visual BasicProject Settings for a Visual Basic Debug Configuration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Proteggere le app ClickOnceSecure ClickOnce apps](../../deployment/securing-clickonce-applications.md)
+- [Impostazioni di progetto per le configurazioni di debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Impostazioni di progetto per una configurazione di debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Proteggere le app ClickOnce](../../deployment/securing-clickonce-applications.md)
 - [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md)

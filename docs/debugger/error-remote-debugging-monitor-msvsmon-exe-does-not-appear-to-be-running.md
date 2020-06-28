@@ -1,9 +1,9 @@
 ---
-title: 'Errore: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.'
+title: 'Errore: il Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione nel computer remoto.'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.server_machine_no_default
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9558ff4d470d30df19ea5982eb6acbcc708eea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6ba7fb30bcb5ac04a823b4ba654382ac23a966fe
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916248"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460611"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Errore: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.
 Questo messaggio di errore indica che Visual Studio non ha trovato l'istanza corretta di Visual Studio Remote Debugging Monitor nel computer remoto. Per il funzionamento del debug remoto, è necessario che Visual Studio Remote Debugging Monitor sia installato. Per informazioni sul download e sulla configurazione del debugger remoto, vedere [Remote Debugging](../debugger/remote-debugging.md).
@@ -51,7 +51,7 @@ Questo messaggio di errore indica che Visual Studio non ha trovato l'istanza cor
 
 - Arrestare il debugger remoto e riavviarlo con l'account in uso nel computer locale.
 
-- Avviare il debugger remoto dalla riga di comando con il parametro **/allow \<nomeutente>** : `msvsmon /allow <username@computer>`
+- È possibile avviare il debugger remoto dalla riga di comando con il **parametro \<username> /Allow** :`msvsmon /allow <username@computer>`
 
 - È possibile aggiungere l'utente alle autorizzazioni del debugger remoto, nella finestra del debugger remoto, **Strumenti > Autorizzazioni**.
 
@@ -70,9 +70,9 @@ Questo messaggio di errore indica che Visual Studio non ha trovato l'istanza cor
  Provare a eseguire il debug remoto in un altro momento oppure pianificare il lavoro sulla rete per un altro orario.
 
 ## <a name="more-help"></a>Altre informazioni
- Per ottenere ulteriori informazioni sulla guida del debugger remoto, incluse le opzioni della riga di comando, fare clic su **guida > utilizzo** nella finestra del debugger remoto. Se non è disponibile, è possibile visualizzare la pagina Web copiando la riga seguente in una finestra di **Esplora file** . È necessario sostituire \<directory di installazione di Visual Studio > con il percorso dell'installazione di Visual Studio.
+ Per ottenere ulteriori informazioni sulla guida del debugger remoto, incluse le opzioni della riga di comando, fare clic su **guida > utilizzo** nella finestra del debugger remoto. Se non è disponibile, è possibile visualizzare la pagina Web copiando la riga seguente in una finestra di **Esplora file** . È necessario sostituire \<Visual Studio installation directory> con il percorso dell'installazione di Visual Studio.
 
- res:// *\<directory di installazione di Visual Studio >* \ COMMON7 \ IDE \ Remote %2 0 debugger \ x64 \ msvsmon. exe/help. htm
+ res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote% 20Debugger\x64\msvsmon.exe/help.htm
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

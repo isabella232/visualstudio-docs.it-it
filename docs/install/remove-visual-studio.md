@@ -1,10 +1,10 @@
 ---
 title: Rimuovere Visual Studio
 titleSuffix: ''
-description: Informazioni su come rimuovere completamente Visual Studio dal computer, passo dopo passo.
+description: Informazioni dettagliate su come rimuovere completamente Visual Studio dal computer.
 ms.date: 12/19/2019
 ms.custom: seodec18
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
@@ -22,28 +22,28 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: b26e837ec2c4155c1be0b3639368c4315d2aecd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649199"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418925"
 ---
 # <a name="remove-visual-studio"></a>Rimuovere Visual Studio
 
-Se si verifica un errore irreversibile e non è possibile ripristinare o `InstallCleanup.exe` disinstallare Visual Studio, è possibile eseguire lo strumento per rimuovere i file di installazione e le informazioni sul prodotto per tutte le istanze installate di Visual Studio 2017 o Visual Studio 2019.
+Se si verifica un errore irreversibile e non è possibile ripristinare o disinstallare Visual Studio, è possibile eseguire lo `InstallCleanup.exe` strumento per rimuovere i file di installazione e le informazioni sul prodotto per tutte le istanze installate di Visual studio 2017 o Visual studio 2019.
 
 > [!WARNING]
-> Utilizzare lo strumento InstallCleanup **solo come ultima risorsa** se il ripristino o la disinstallazione non riescono. Questo strumento potrebbe disinstallare funzionalità da altre installazioni di Visual Studio o altri prodotti, che quindi potrebbe essere necessario ripristinare o reinstallare.
+> Usare lo strumento InstallCleanup **solo come ultima risorsa** se il ripristino o la disinstallazione ha esito negativo. Questo strumento potrebbe disinstallare le funzionalità di altre installazioni di Visual Studio o altri prodotti, che potrebbero anche dover essere ripristinati o reinstallati.
 
-## <a name="run-installcleanupexe"></a>Eseguire InstallCleanup.exe
+## <a name="run-installcleanupexe"></a>Esegui InstallCleanup.exe
 
-Con lo `InstallCleanup.exe` strumento è possibile utilizzare una delle seguenti opzioni della riga di comando:
+Con lo strumento è possibile usare una delle opzioni della riga di comando seguenti `InstallCleanup.exe` :
 
 | Opzione | Comportamento |
 | ------ | -------- |
-| `-i`   | Questa opzione è l'impostazione predefinita se non viene passata altre opzioni. Rimuove solo la directory di installazione principale e le informazioni sul prodotto. Utilizzare questa opzione se si intende reinstallare la stessa `InstallCleanup.exe` versione di Visual Studio dopo aver eseguito lo strumento. |
-| `-f`   | Questa opzione rimuove la directory di installazione principale, le informazioni sui prodotti e la maggior parte delle altre funzionalità installate all'esterno della directory di installazione, che potrebbero essere condivise anche con altre installazioni di Visual Studio o altri prodotti. Utilizzare questa opzione se si intende rimuovere Visual Studio senza reinstallarlo in un secondo momento. |
+| `-i`   | Questa opzione è l'impostazione predefinita se non viene passata nessun'altra opzione. Rimuove solo la directory di installazione principale e le informazioni sul prodotto. Usare questa opzione se si prevede di reinstallare la stessa versione di Visual Studio dopo aver eseguito lo `InstallCleanup.exe` strumento. |
+| `-f`   | Questa opzione rimuove la directory di installazione principale, le informazioni sul prodotto e la maggior parte delle altre funzionalità installate all'esterno della directory di installazione, che potrebbero anche essere condivise con altre installazioni di Visual Studio o altri prodotti. Usare questa opzione se si intende rimuovere Visual Studio senza reinstallarlo in un secondo momento. |
 
 Ecco come eseguire lo `InstallCleanup.exe` strumento:
 
@@ -51,18 +51,18 @@ Ecco come eseguire lo `InstallCleanup.exe` strumento:
 1. Aprire un prompt dei comandi dell'amministratore. Per aprire un prompt dei comandi dell'amministratore, seguire questa procedura:
    * Digitare **cmd** nella casella "Digitare qui il testo di ricerca".
    * Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e quindi scegliere **Esegui come amministratore**.
-1. Immettere il percorso `InstallCleanup.exe` completo dello strumento e aggiungere l'opzione della riga di comando preferita. Per impostazione predefinita, il percorso dello strumento è il seguente. Le virgolette doppie racchiudono un comando contenente gli spazi:
+1. Immettere il percorso completo dello `InstallCleanup.exe` strumento e aggiungere l'opzione della riga di comando che si preferisce. Per impostazione predefinita, il percorso dello strumento è il seguente. Le virgolette doppie racchiudono un comando contenente spazi:
 
    ```
    "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]
-   > Se non riesci `InstallCleanup.exe` a trovare nella directory del programma `%ProgramFiles(x86)%\Microsoft Visual Studio`di installazione di Visual Studio, che si trova sempre in , ecco cosa fare dopo. Seguire le istruzioni per [installare Visual Studio](install-visual-studio.md). Quindi, quando viene visualizzata la schermata di selezione del carico di lavoro, chiudere la finestra e seguire nuovamente i passaggi in questa pagina.
+   > Se non è possibile trovare `InstallCleanup.exe` nella directory programma di installazione di Visual Studio, che si trova sempre in `%ProgramFiles(x86)%\Microsoft Visual Studio` , ecco cosa fare successivamente. Seguire le istruzioni per [installare Visual Studio](install-visual-studio.md). Quindi, quando viene visualizzata la schermata di selezione del carico di lavoro, chiudere la finestra e seguire di nuovo la procedura riportata in questa pagina.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Installare Visual Studio](install-visual-studio.md)
 * [Aggiornare Visual Studio](update-visual-studio.md)

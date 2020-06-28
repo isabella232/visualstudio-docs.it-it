@@ -9,27 +9,27 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 272d37ef9e73aa5dd0d10ca0210b18a945f993fd
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 0839adcf0e6c61141d2a14ad8903c532af76804c
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649828"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418899"
 ---
 # <a name="security-page-project-designer"></a>Pagina Sicurezza, Progettazione progetti
 
-La pagina **Sicurezza** di **Creazione progetti** consente di configurare le impostazioni di sicurezza dall'accesso di codice per le applicazioni distribuite usando la distribuzione ClickOnce. Per ulteriori informazioni, vedere [Sicurezza dall'accesso](../../deployment/code-access-security-for-clickonce-applications.md)di codice per le applicazioni ClickOnce .
+La pagina **Sicurezza** di **Creazione progetti** consente di configurare le impostazioni di sicurezza dall'accesso di codice per le applicazioni distribuite usando la distribuzione ClickOnce. Per altre informazioni, vedere [sicurezza dall'accesso di codice per applicazioni ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
 Per accedere alla pagina **Sicurezza**, fare clic su un nodo di progetto in **Esplora soluzioni** e quindi scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Sicurezza**.
 
 ## <a name="security-settings"></a>Impostazioni di sicurezza
 
- **Abilitare le impostazioni di sicurezza ClickOnceEnable ClickOnce Security Settings**
+ **Abilita impostazioni di sicurezza ClickOnce**
 
 Determina se le impostazioni di sicurezza sono abilitate in fase di progettazione. Se questa opzione è deselezionata, tutte le altre opzioni della pagina **Sicurezza** non sono disponibili.
 
@@ -72,15 +72,15 @@ Apre il modello di manifesto dell'applicazione (app.manifest) per configurare le
 
 Apre la [finestra di dialogo Impostazioni di sicurezza avanzate](../../ide/reference/advanced-security-settings-dialog-box.md), che consente di configurare le impostazioni per il debug dell'applicazione con autorizzazioni con restrizioni. Queste impostazioni vengono controllate durante il debug e le eccezioni delle autorizzazioni indicano che l'applicazione può richiedere più autorizzazioni oltre a quelle definite in una zona.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>
-- [Sicurezza dall'accesso di codice per le applicazioni ClickOnceCode Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md)
-- [Procedura: abilitare le impostazioni di sicurezza ClickOnceHow to: Enable ClickOnce Security Settings](../../deployment/how-to-enable-clickonce-security-settings.md)
-- [Procedura: impostare un'area di sicurezza per un'applicazione ClickOnceHow to: Set a Security Zone for a ClickOnce Application](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Procedura: impostare autorizzazioni personalizzate per un'applicazione ClickOnceHow to: Set Custom Permissions for a ClickOnce Application](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Proteggere le app ClickOnceSecure ClickOnce apps](../../deployment/securing-clickonce-applications.md)
-- [Sicurezza e distribuzione ClickOnceClickOnce Security and Deployment](../../deployment/clickonce-security-and-deployment.md)
+- [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)
+- [Procedura: abilitare le impostazioni di sicurezza ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
+- [Procedura: impostare un'area di sicurezza per un'applicazione ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Procedura: impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Proteggere le app ClickOnce](../../deployment/securing-clickonce-applications.md)
+- [Sicurezza e distribuzione di ClickOnce](../../deployment/clickonce-security-and-deployment.md)
 - [Project Properties Reference](../../ide/reference/project-properties-reference.md) (Riferimenti alle proprietà di progetto)
 - [Finestra di dialogo Impostazioni di sicurezza avanzate](../../ide/reference/advanced-security-settings-dialog-box.md)

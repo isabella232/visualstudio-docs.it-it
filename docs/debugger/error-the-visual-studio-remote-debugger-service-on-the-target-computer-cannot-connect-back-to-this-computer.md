@@ -3,7 +3,7 @@ title: 'Errore: il servizio Visual Studio Remote Debugger nel computer di destin
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 975d2d1c1f66fe06f8fc3a9568f790fbe4c21e36
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737413"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460390"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
 Questo errore indica che il servizio debugger remoto è in esecuzione con un account utente che non è in grado di eseguire l'autenticazione quando tenta di connettersi al computer da cui si esegue il debug. Questo errore può verificarsi quando il debug remoto utilizza il motore di debug legacy e il debugger remoto viene eseguito come servizio.
@@ -31,10 +31,10 @@ Questo errore indica che il servizio debugger remoto è in esecuzione con un acc
 |||||
 |-|-|-|-|
 ||Account LocalSystem|Account di dominio|Account locali con lo stesso nome utente e la stessa password in entrambi i computer|
-|Entrambi i computer nello stesso dominio|Yes|Yes|Yes|
-|Entrambi i computer in domini con trust bidirezionale|No|No|Yes|
-|Uno o entrambi i computer in un gruppo di lavoro|No|No|Yes|
-|Computer in domini diversi|No|No|Yes|
+|Entrambi i computer nello stesso dominio|Sì|Sì|Sì|
+|Entrambi i computer in domini con trust bidirezionale|No|No|Sì|
+|Uno o entrambi i computer in un gruppo di lavoro|No|No|Sì|
+|Computer in domini diversi|No|No|Sì|
 
  Inoltre:
 
@@ -74,6 +74,6 @@ Questo errore indica che il servizio debugger remoto è in esecuzione con un acc
 
 - Eseguire Remote Debugging Monitor come applicazione anziché come servizio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Debug remoto](../debugger/remote-debugging.md)

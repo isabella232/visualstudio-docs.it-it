@@ -1,7 +1,7 @@
 ---
 title: ManagedType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf61dce9940279b490d9270420cc45baf0b82dc0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c53bcac98629d2dfbd1537ff4486b0a0162b4d9d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738662"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461189"
 ---
 # <a name="managedtype"></a>ManagedType
-Un tipo gestito (qualsiasi simbolo definito da metadati o nativo per la funzionalità di gestione della memoria e delle risorse di linguaggi C#come) viene identificato da un simbolo di `SymTagManagedType`.
+Un tipo gestito (qualsiasi simbolo definito da metadati o nativo per la funzionalità di gestione della memoria e delle risorse di linguaggi come C#) è identificato da un `SymTagManagedType` simbolo.
 
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente vengono illustrate proprietà valide aggiuntive per questo tipo di simbolo.
@@ -31,7 +31,7 @@ Un tipo gestito (qualsiasi simbolo definito da metadati o nativo per la funziona
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nome del simbolo gestito.|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID di indice del simbolo.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagManagedType` (uno dei valori di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagManagedType` uno dei valori di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

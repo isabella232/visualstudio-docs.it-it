@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_undecoratedNameEx | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48efbc249d076853e12bc54d2e8a8d438570e740
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 25942c76d8e568d6354c9a6a2b2c69c806cde352
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739000"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461602"
 ---
 # <a name="idiasymbolget_undecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
-Recupera parte o tutto un nome non decorato per un C++ nome decorato (collegamento).
+Recupera parte o tutto un nome non decorato per un nome in C++ decorato (collegamento).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,21 +38,21 @@ in Specifica una combinazione di flag che controllano ciò che viene restituito.
 
  `pRetVal`
 
-out Restituisce il nome non decorato per C++ un nome decorato.
+out Restituisce il nome non decorato per un nome decorato C++.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Note
- Il `undecorateOptions` può essere una combinazione dei flag seguenti.
+## <a name="remarks"></a>Commenti
+ `undecorateOptions`Può essere una combinazione dei flag seguenti.
 
 > [!NOTE]
 > I nomi dei flag non sono definiti nella DIA SDK, quindi è necessario aggiungere le dichiarazioni al codice o usare i valori non elaborati.
 
-|Flag|Value|Descrizione|
+|Flag|valore|Descrizione|
 |----------|-----------|-----------------|
 |UNDNAME_COMPLETE|0x0000|Abilita la dedecorazione completa.|
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Rimuove i caratteri di sottolineatura iniziali dalle parole chiave estese Microsoft.|
@@ -62,10 +62,10 @@ out Restituisce il nome non decorato per C++ un nome decorato.
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Disabilita l'espansione dell'identificatore del linguaggio di dichiarazione.|
 |UNDNAME_RESERVED1|0x0020|RISERVATO.|
 |UNDNAME_RESERVED2|0x0040|RISERVATO.|
-|UNDNAME_NO_THISTYPE|0x0060|Disabilita tutti i modificatori del tipo di `this`.|
+|UNDNAME_NO_THISTYPE|0x0060|Disabilita tutti i modificatori del `this` tipo.|
 |UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Disabilita l'espansione degli identificatori di accesso per i membri.|
 |UNDNAME_NO_THROW_SIGNATURES|0x0100|Disabilita l'espansione di "Throw-Signatures" per le funzioni e i puntatori alle funzioni.|
-|UNDNAME_NO_MEMBER_TYPE|0x0200|Disabilita l'espansione dei membri `static` o `virtual`.|
+|UNDNAME_NO_MEMBER_TYPE|0x0200|Disabilita l'espansione dei `static` membri o `virtual` .|
 |UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Disabilita l'espansione del modello Microsoft per i ritorni UDT.|
 |UNDNAME_32_BIT_DECODE|0x0800|Non decora i nomi decorati a 32 bit.|
 |UNDNAME_NAME_ONLY|0x1000|Ottiene solo il nome della dichiarazione primaria; restituisce solo il nome [Scope::].  Espande i parametri del modello.|
@@ -75,5 +75,5 @@ out Restituisce il nome non decorato per C++ un nome decorato.
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Disattiva il controllo della presenza di caratteri identificatore validi.|
 |UNDNAME_NO_PTR64|0x20000|Non include ptr64 nell'output.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

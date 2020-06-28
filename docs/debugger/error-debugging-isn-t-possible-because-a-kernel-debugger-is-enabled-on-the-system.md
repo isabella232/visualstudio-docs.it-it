@@ -1,7 +1,7 @@
 ---
-title: 'Errore: Impossibile eseguire&#39;il debug perché nel sistema è abilitato un debugger del kernel | Microsoft Docs'
+title: 'Errore: il debug non è&#39;possibile perché nel sistema è abilitato un debugger del kernel | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a966869ff1d200a51c6019a6ae937bea7c447bd
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 80c27ef642697a8514a0809095b980d8c38a47d8
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737750"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460865"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Errore: Impossibile eseguire&#39;il debug perché nel sistema è abilitato un debugger del kernel
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Errore: il debug di isn&#39;t è possibile perché nel sistema è abilitato un debugger del kernel
 Quando si esegue il debug del codice gestito, è possibile che venga visualizzato il seguente messaggio di errore:
 
 ```cmd
@@ -56,7 +56,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Per disabilitare il debug del kernel nella sessione corrente
 
-- Al prompt dei comandi, digitare:
+- Al prompt dei comandi digitare:
 
     ```cmd
     Kdbgctrl.exe -d
@@ -64,7 +64,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Per disabilitare il debug del kernel per tutte le sessioni (Windows Vista e Windows 7)
 
-1. Al prompt dei comandi, digitare:
+1. Al prompt dei comandi digitare:
 
     ```cmd
     bcdedit /debug off
@@ -98,6 +98,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
      `gn`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
-- [Debug di codice gestito](../debugger/debugging-managed-code.md)
+- [Debug del codice gestito](../debugger/debugging-managed-code.md)

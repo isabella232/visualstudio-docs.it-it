@@ -1,7 +1,7 @@
 ---
-title: 'Errore: Impossibile impostare il punto di interruzione dei dati | Microsoft Docs'
+title: Errore-Impossibile impostare il punto di interruzione dei dati | Microsoft Docs
 ms.date: 12/3/2019
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: dab5e146d510601c6e93582b6b128abcd964b4a7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404082"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85459935"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Risoluzione degli errori dei punti di interruzione dei dati
 In questa pagina viene illustrata la risoluzione degli errori comuni riscontrati durante l'utilizzo di "Interrompi in caso di modifica del valore"
@@ -44,7 +44,7 @@ Di seguito è riportato un elenco di errori che possono verificarsi quando si us
 
     - "Break when value changes" su una variabile non espansa da un elenco a discesa.
         - È necessario che il debugger conosca internamente l'oggetto contenente il campo di cui si vuole tenere traccia. Il Garbage Collector può spostare l'oggetto nell'heap, in modo che il debugger debba essere a conoscenza dell'oggetto che contiene la variabile di cui si vuole tenere traccia. 
-        - **Soluzione alternativa**: se ci si trova in un metodo all'interno dell'oggetto in cui si desidera impostare un punto di interruzione dei dati, passare a un frame e utilizzare la finestra `locals/autos/watch` per espandere l'oggetto e impostare un punto di interruzione dei dati nel campo desiderato.
+        - **Soluzione temporanea**: se ci si trova in un metodo all'interno dell'oggetto in cui si desidera impostare un punto di interruzione dei dati, passare a un frame e utilizzare la `locals/autos/watch` finestra per espandere l'oggetto e impostare un punto di interruzione dei dati nel campo desiderato.
 
 - *"I punti di interruzione dei dati non sono supportati per i campi statici o le proprietà statiche".*
     
@@ -56,17 +56,17 @@ Di seguito è riportato un elenco di errori che possono verificarsi quando si us
 
 - *"Il valore della proprietà è stato modificato e non può più essere rilevato".*
 
-    - Una proprietà può modificare il modo in cui viene calcolata in fase di esecuzione e, in tal caso, il numero di variabili da cui dipende la proprietà aumenta e può superare il limite dell'hardware. Vedere `"The property is dependent on more memory than can be tracked by the hardware."` riportato di seguito.
+    - Una proprietà può modificare il modo in cui viene calcolata in fase di esecuzione e, in tal caso, il numero di variabili da cui dipende la proprietà aumenta e può superare il limite dell'hardware. Vedere `"The property is dependent on more memory than can be tracked by the hardware."` di seguito.
 
 - *"La proprietà dipende da una quantità di memoria superiore a quella che può essere rilevata dall'hardware".*
     
     - Ogni architettura dispone di un numero impostato di byte e di punti di interruzione dei dati hardware che può supportare e la proprietà per cui si desidera impostare un punto di interruzione dei dati ha superato tale limite. Per informazioni sul numero di punti di interruzione dei dati supportati dall'hardware e dei byte disponibili per l'architettura in uso, vedere la tabella relativa alle limitazioni hardware per i punti di [interruzione dei dati](#data-breakpoint-hardware-limitations) . 
     - **Soluzione temporanea**: impostare un punto di interruzione dei dati su un valore che può essere modificato all'interno della proprietà.
 
-- *"I punti di interruzione dei dati non sono supportati quando C# si utilizza l'analizzatore di espressioni legacy."*
+- *"I punti di interruzione dei dati non sono supportati quando si utilizza l'analizzatore di espressioni C# legacy".*
 
-    - I punti di interruzione dei dati sono supportati solo nell'analizzatore di espressioni non legacy C# . 
-    - **Soluzione**: per disabilitare l'analizzatore di espressioni legacy C# , passare a `Debug -> Options` in `Debugging -> General` deselezionare `"Use the legacy C# and VB expression evaluators"`.
+    - I punti di interruzione dei dati sono supportati solo nell'analizzatore di espressioni C# non legacy. 
+    - **Soluzione**: per disabilitare l'analizzatore di espressioni C# legacy, `Debug -> Options` scegliere `Debugging -> General` deseleziona `"Use the legacy C# and VB expression evaluators"` .
 
 ## <a name="data-breakpoint-hardware-limitations"></a>Limitazioni hardware del punto di interruzione dei dati
 
@@ -79,9 +79,9 @@ L'architettura (configurazione della piattaforma) in cui viene eseguito il progr
 | ARM | 1 | 4 |
 | ARM64 | 2 | 8 |
 
-## <a name="provide-feedback"></a>Fornire il feedback
-Per eventuali problemi o suggerimenti relativi a questa funzionalità, inviare commenti tramite la Guida > inviare commenti e suggerimenti > [segnalare un problema](../ide/how-to-report-a-problem-with-visual-studio.md) nell'IDE o nella [community degli sviluppatori](https://developercommunity.visualstudio.com/).
+## <a name="provide-feedback"></a>Fornire commenti e suggerimenti
+Per eventuali problemi o suggerimenti relativi a questa funzionalità, inviare commenti tramite la guida > inviare commenti e suggerimenti > [segnalare un problema](../ide/how-to-report-a-problem-with-visual-studio.md) nell'IDE o nella [community degli sviluppatori](https://developercommunity.visualstudio.com/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Uso di "break when value changes" in .NET Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 - [DevBlog: Interrompi quando viene modificato il valore: punti di interruzione dei dati per .NET Core in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

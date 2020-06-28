@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_subType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 0b3cbf77-8f11-434a-ad60-ea9829fec6fa
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ebe1d7e01860b9d41c423a36c37f00203119b1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 57a7756d7764cbd4799bfe49eec7f06732bd0bee
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739274"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461949"
 ---
 # <a name="idiasymbolget_subtype"></a>IDiaSymbol::get_subType
 Recupera il sottotipo.
@@ -33,7 +33,7 @@ HRESULT get_subType(
 out Puntatore al sottotipo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

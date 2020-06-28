@@ -1,7 +1,7 @@
 ---
-title: 'Errore: il processo di lavoro del sito Web è stato terminato da IIS | Microsoft Docs'
+title: Errore-il processo di lavoro del sito Web è stato terminato da IIS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.web_server_process_terminated
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6d61f124d906137557b17b81122eba34e471a1a4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736360"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460000"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Errore: il processo di lavoro del sito Web è stato terminato da IIS
 L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseguenza, Internet Information Services (IIS) presuppone che il processo di lavoro non risponda e lo termina.
@@ -34,13 +34,13 @@ L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseg
 
    2. Nel **Pannello di controllo** scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.
 
-2. Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione Internet Information Services (IIS)** .
+2. Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione Internet Information Services (IIS)**.
 
     Gestione IIS verrà aperto.
 
-3. Nel riquadro **Connessioni** espandere il nodo \<nome computer>, se necessario.
+3. Nel riquadro **connessioni** espandere il nodo, \<computer name> se necessario.
 
-4. Nel nodo \<nome computer> fare clic su **Pool di applicazioni**.
+4. Nel \<computer name> nodo fare clic su **pool di applicazioni**.
 
 5. Nell'elenco **Pool di applicazioni** fare clic con il pulsante destro del mouse sul nome del pool nel quale viene eseguita l'applicazione e quindi fare clic su **Impostazioni avanzate**.
 
@@ -52,9 +52,9 @@ L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseg
 
      L'impostazione di **Ping abilitato** su **False** interrompe il controllo da parte di IIS se il processo di lavoro è in esecuzione e lo mantiene attivo fino a quando il processo sottoposto a debug non viene interrotto manualmente. L'impostazione di **Tempo massimo di risposta ping** su un valore elevato consente a IIS di continuare il monitoraggio del processo di lavoro.
 
-7. Scegliere **OK** per chiudere la finestra di dialogo **Impostazioni avanzate**.
+7. Fare clic su **OK** per chiudere la finestra di dialogo **Impostazioni avanzate** .
 
 8. Chiudere Gestione IIS e la finestra **Strumenti di amministrazione**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

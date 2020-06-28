@@ -29,17 +29,17 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 594d885228de68ecf34e0644cbbe6c6899397fad
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567918"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419198"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
 
@@ -95,9 +95,9 @@ Inserisce nella casella di modifica della riga di comando la macro selezionata n
 |`$(TargetFileName)`|Nome file del file di output principale per la build (definito come nome di base ed estensione di file).|
 |`$(TargetExt)`|Estensione di file del file di output principale per la compilazione. È incluso il punto '.' prima dell'estensione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Specifica di eventi di compilazione personalizzati in Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
-- [Pagina Eventi di compilazione, Progettazione progetti (c ')](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Procedura: specificare eventi di compilazione (Visual Basic)How to: Specify Build Events (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Procedura: specificare gli eventi di compilazione (C](../../ide/how-to-specify-build-events-csharp.md)
+- [Pagina Eventi di compilazione, Progettazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
+- [Procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Procedura: specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)

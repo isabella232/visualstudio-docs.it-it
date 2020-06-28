@@ -1,7 +1,7 @@
 ---
-title: 'Errore: esecuzione Transact-SQL terminata senza debug | Microsoft Docs'
+title: Errore-esecuzione Transact-SQL terminata senza debug | Microsoft Docs
 ms.date: 11/08/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e86e24f775d8470b54ed7b9c54d27a5d3c1ee8da
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: e141fac7fba1939811c722d8e08f49531111ff7e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916300"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460247"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: esecuzione Transact-SQL terminata senza debug
 
@@ -46,9 +46,9 @@ Questo problema riguarda due account:
 
   - Consultare l'amministratore della rete o del database.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Impostazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Procedura: impostare autorizzazioni di SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Procedura: impostare le autorizzazioni SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Debug remoto](../debugger/remote-debugging.md)

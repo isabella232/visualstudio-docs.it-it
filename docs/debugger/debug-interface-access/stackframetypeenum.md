@@ -1,7 +1,7 @@
 ---
 title: StackFrameTypeEnum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b0c9dd106e5744a369ddaa6cb870788f7464d3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3f83cdb163881366a1a0bede95a07e1dae1fc50a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738549"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461098"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Specifica il tipo di stack frame.
@@ -36,24 +36,24 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elementi
-puntatore del frame di `FrameTypeFPO` omesso; Informazioni sulla Polinesia disponibili.
+`FrameTypeFPO`Puntatore al frame omesso; Informazioni sulla Polinesia disponibili.
 
-frame trap del kernel `FrameTypeTrap`.
+`FrameTypeTrap`Frame trap del kernel.
 
-frame trap del kernel `FrameTypeTSS`.
+`FrameTypeTSS`Frame trap del kernel.
 
-`FrameTypeStandard` stack frame EBP standard.
+`FrameTypeStandard`Stack frame EBP standard.
 
-puntatore del frame di `FrameTypeFrameData` omesso; Informazioni sui dati dei frame disponibili.
+`FrameTypeFrameData`Puntatore al frame omesso; Informazioni sui dati dei frame disponibili.
 
-`FrameTypeUnknown` frame privo di informazioni di debug.
+`FrameTypeUnknown`Frame senza informazioni di debug.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
 I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaStackFrame:: get_Type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

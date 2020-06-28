@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 06/23/2020
+ms.date: 06/25/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: fd2e26dcb026b25923b08c572aa203d06a076844
-ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
+ms.openlocfilehash: 4d56417a29bc374e0ceaf3e9452cf5339d9ca02b
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85292919"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419237"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -29,6 +29,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.0 | Anteprima 3,1 | 25 giugno 2020 | 16.7.30223.230 |
 | 16.7.0 | Preview 3 | 23 giugno 2020 | 16.7.30218.91 |
 | 16.0.15 | Versione | 9 giugno 2020 | 16.0.28803.753 |
 | 16.6.2 | Versione | 9 giugno 2020 | 16.6.30204.135 |
@@ -100,7 +101,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 16.2.0 | Versione | 24 luglio 2019 | 16.2.29123.88 |
 | 16.3.0 | Preview 1 | 24 luglio 2019 | 16.3.29123.89 |
 | 16.2.0 | Preview 4 | 16 luglio 2019 | 16.2.29111.141 |
-| 16.1.6 | Versione | 9 luglio 2019 | 16.1.29102.190 |
+| 16.1.6 | Versione | 09 luglio 2019 | 16.1.29102.190 |
 | 16.0.6 | Versione | 09 luglio 2019 | 16.0.28803.540 |
 | 16.1.5 | Versione | 2 luglio 2019 | 16.1.29025.244 |
 | 16.1.4 | Versione | 25 giugno 2019 | 16.1.29020.237 |

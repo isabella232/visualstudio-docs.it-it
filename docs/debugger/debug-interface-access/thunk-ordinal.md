@@ -1,7 +1,7 @@
 ---
 title: THUNK_ORDINAL | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1de2d6c9700dcb7b1106c3693d855bb1d8ae2cfa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d2fe7c62ce04e61a8476731ed14ee14f60e2b044
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738504"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85461042"
 ---
 # <a name="thunk_ordinal"></a>THUNK_ORDINAL
 Designa i tipi di thunk.
@@ -39,26 +39,26 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Elementi
-Thunk standard THUNK_ORDINAL_NOTYPE.
+THUNK_ORDINAL_NOTYPE thunk standard.
 
-THUNK_ORDINAL_ADJUSTOR un thunk di regolazione `this`.
+THUNK_ORDINAL_ADJUSTOR un `this` thunk di regolazione.
 
-Thunk di chiamata virtuale THUNK_ORDINAL_VCALL.
+THUNK_ORDINAL_VCALL thunk di chiamata virtuale.
 
-THUNK_ORDINAL_PCODE P-thunk di codice.
+THUNK_ORDINAL_PCODE thunk del codice P.
 
-Thunk di caricamento ritardato THUNK_ORDINAL_LOAD.
+THUNK_ORDINAL_LOAD thunk di caricamento ritardato.
 
-Thunk THUNK_ORDINAL_TRAMP_INCREMENTAL incrementale per il trampolino (un thunk del trampolino viene usato per rimbalzare le chiamate da uno spazio di memoria a un altro).
+THUNK_ORDINAL_TRAMP_INCREMENTAL thunk del trampolino incrementale (un thunk del trampolino viene usato per rimbalzare le chiamate da uno spazio di memoria a un altro).
 
-Thunk del punto di THUNK_ORDINAL_TRAMP_BRANCHISLAND del ramo.
+Thunk del punto di THUNK_ORDINAL_TRAMP_BRANCHISLAND ramo.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
 I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

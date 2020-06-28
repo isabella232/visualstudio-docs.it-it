@@ -5,7 +5,7 @@ ms.custom: seodec18, get-started
 ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
-ms.topic: conceptual
+ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
@@ -14,26 +14,26 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77579945"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85419211"
 ---
-# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: Creare un'applicazione semplice con Visual BasicTutorial: Create a simple application with Visual Basic
+# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: creare un'applicazione semplice con Visual Basic
 
 Completando questa esercitazione, si acquisirà familiarità con molti strumenti, finestre di dialogo e finestre di progettazione che è possibile usare quando si sviluppano applicazioni con Visual Studio. Si creerà un' applicazione "Hello, World", si progetterà l'interfaccia utente, si aggiungerà il codice e si eseguirà il debug degli errori, apprendendo l'uso dell'ambiente di sviluppo integrato ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 ::: moniker range="vs-2017"
 
-1. Creare un nuovo progetto. Nella barra dei menu selezionare **File** > **Nuovo** > **progetto**.
+1. Creare un nuovo progetto. Nella barra dei menu selezionare **file**  >  **nuovo**  >  **progetto**.
 
      ![Nella barra dei menu scegliere File, Nuovo, Progetto](../media/exploreide-filenewproject.png)
 
@@ -100,23 +100,23 @@ Dopo aver creato il progetto, sarà possibile personalizzarlo. Nella finestra **
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
-Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su *MainWindow.xaml* e scegliere **Rinomina**. Rinominare il file *in Greetings.xaml*.
+Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su *MainWindow. XAML* e scegliere **Rinomina**. Rinominare il file in *Greetings. XAML*.
 
 ## <a name="design-the-user-interface-ui"></a>Progettare l'interfaccia utente
 
-Se la finestra di progettazione non è aperta, selezionare *Greetings.xaml* in **Esplora soluzioni**e premere **MAIUSC**+**F7** per aprire la finestra di progettazione.
+Se la finestra di progettazione non è aperta, selezionare *Greetings. XAML* in **Esplora soluzioni**e premere **MAIUSC** + **F7** per aprire la finestra di progettazione.
 
 Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:System.Windows.Controls.TextBlock>, due controlli <xref:System.Windows.Controls.RadioButton> e un controllo <xref:System.Windows.Controls.Button>.
 
 ### <a name="add-a-textblock-control"></a>Aggiungere un controllo TextBlock
 
-1. Premere **Ctrl**+**Q** per attivare la casella di ricerca e digitare Casella **degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
+1. Premere **CTRL** + **Q** per attivare la casella di ricerca e digitare **casella degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
 
 2. Nella **casella degli strumenti** espandere il nodo **Controlli WPF comuni** per visualizzare il controllo TextBlock.
 
      ![Casella degli strumenti con il controllo TextBlock evidenziato](../media/exploreide-textblocktoolbox.png)
 
-3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra. In Visual Studio 2019 e versioni successive, è possibile usare le linee guida rosse per centrare il controllo.
+3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra. In Visual Studio 2019 e versioni successive è possibile usare le linee guida rosse per centrare il controllo.
 
 La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
 
@@ -138,7 +138,7 @@ Il markup XAML sarà simile all'esempio seguente:
 
 2. Se necessario, riallineare al centro il controllo TextBlock e salvare le modifiche premendo CTRL+S o usando la voce di menu **File**.
 
-Successivamente, si aggiungeranno due [RadioButton](/dotnet/framework/wpf/controls/radiobutton) controlli al form.
+Successivamente, verranno aggiunti due controlli [RadioButton](/dotnet/framework/wpf/controls/radiobutton) al form.
 
 ### <a name="add-radio-buttons"></a>Aggiungere pulsanti di opzione
 
@@ -146,7 +146,7 @@ Successivamente, si aggiungeranno due [RadioButton](/dotnet/framework/wpf/contro
 
      ![Finestra Casella degli strumenti con il controllo RadioButton selezionato](../media/exploreide-radiobuttontoolbox.png)
 
-2. Aggiungere due controlli RadioButton all'area di progettazione scegliendo l'elemento **RadioButton** e trascinandolo nell'area di progettazione nella finestra. Selezionare i pulsanti e usare i tasti di direzione per spostare i pulsanti in modo che vengano visualizzati affiancati sotto il controllo TextBlock. Utilizzare le linee guida rosse per allineare i controlli.
+2. Aggiungere due controlli RadioButton all'area di progettazione scegliendo l'elemento **RadioButton** e trascinandolo nell'area di progettazione nella finestra. Selezionare i pulsanti e usare i tasti di direzione per spostare i pulsanti in modo che vengano visualizzati affiancati sotto il controllo TextBlock. Usare le linee guida rosse per allineare i controlli.
 
      La finestra dovrebbe risultare simile alla seguente:
 
@@ -162,7 +162,7 @@ Successivamente, si aggiungeranno due [RadioButton](/dotnet/framework/wpf/contro
 
 ### <a name="add-display-text-for-each-radio-button"></a>Aggiungere testo visualizzato per ogni pulsante di opzione
 
-Aggiornare l'attributo `GoodbyeButton` `"Hello"` **Content** per `HelloButton` e a e `"Goodbye"` nel codice XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
+Aggiornare l'attributo **Content** per `HelloButton` e `GoodbyeButton` a `"Hello"` e `"Goodbye"` in XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
 
    ```xaml
    <Grid>
@@ -182,7 +182,7 @@ Nella visualizzazione XAML individuare il markup per HelloButton e aggiungere un
 IsChecked="True"
 ```
 
-L'elemento finale dell'interfaccia utente che verrà aggiunto è un [controllo Button.The](/dotnet/framework/wpf/controls/button) final UI element that you'll add is a Button control.
+L'elemento finale dell'interfaccia utente da aggiungere è un controllo [Button](/dotnet/framework/wpf/controls/button) .
 
 ### <a name="add-the-button-control"></a>Aggiungere il controllo del pulsante
 
@@ -228,7 +228,7 @@ Verrà quindi eseguito il debug dell'applicazione per rilevare eventuali errori 
 
 ### <a name="find-and-fix-errors"></a>Trovare e correggere errori
 
-In questo passaggio, troverai l'errore che hai causato in precedenza modificando il nome del file *MainWindow.xaml.*
+In questo passaggio si noterà l'errore che è stato causato in precedenza cambiando il nome del file *MainWindow. XAML* .
 
 #### <a name="start-debugging-and-find-the-error"></a>Avviare il debug e trovare l'errore
 
@@ -238,7 +238,7 @@ In questo passaggio, troverai l'errore che hai causato in precedenza modificando
 
    ![Screenshot del messaggio IOException](../media/exploreide-ioexception.png)
 
-2. Arrestare il debugger scegliendo **Debug** > **Termina debug**.
+2. Arrestare il debugger scegliendo **debug**  >  **Interrompi debug**.
 
 Il file *MainWindow.xaml* è stato rinominato come *Greetings.xaml* all'inizio di questa esercitazione, ma il codice fa ancora riferimento a *MainWindow.xaml* come URI di avvio per l'applicazione. Di conseguenza il progetto non può essere avviato.
 
@@ -261,11 +261,11 @@ Avviare nuovamente il debugger premendo **F5**. Viene visualizzata la finestra *
 
 ### <a name="debug-with-breakpoints"></a>Eseguire il debug con punti di interruzione
 
-Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo **Debug** > **Toggle Breakpoint**, facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si desidera inserire l'interruzione oppure premendo **F9**.
+Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante il debug. È possibile aggiungere punti di interruzione scegliendo **debug**imposta  >  **/Rimuovi**punto di interruzione facendo clic sul margine sinistro dell'editor accanto alla riga di codice in cui si desidera che si verifichi l'interruzione oppure premendo **F9**.
 
 #### <a name="add-breakpoints"></a>Aggiungere punti di interruzione
 
-1. Aprire *Greetings.xaml.vb*e selezionare la riga seguente:`MessageBox.Show("Hello.")`
+1. Aprire *Greetings. XAML. vb*e selezionare la riga seguente:`MessageBox.Show("Hello.")`
 
 2. Aggiungere un punto di interruzione dal menu premendo **F9** o selezionando **Debug**, quindi **Attiva/disattiva punto di interruzione**.
 
@@ -281,7 +281,7 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
    ![Screenshot del punto di interruzione nel debugger](media/exploreide-debugbreakpoint.png)
 
-6. Nella barra dei menu scegliere Esegui istruzione **alla debug** > **.**
+6. Nella barra dei menu scegliere **debug**Esci  >  **da istruzione/uscita**.
 
      L'applicazione riprende l'esecuzione e verrà visualizzata una finestra di messaggio con la parola "Hello".
 
@@ -295,27 +295,27 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
 10. Chiudere la finestra dell'applicazione per arrestare il debug.
 
-11. Nella barra dei menu scegliere **Disabilita debug** > **tutti i punti di interruzione**.
+11. Sulla barra dei menu scegliere **debug**  >  **Disabilita tutti i**punti di interruzione.
 
-### <a name="view-a-representation-of-the-ui-elements"></a>Visualizzare una rappresentazione degli elementi dell'interfaccia utenteView a representation of the UI elements
+### <a name="view-a-representation-of-the-ui-elements"></a>Visualizzazione di una rappresentazione degli elementi dell'interfaccia utente
 
-Nell'app in esecuzione, dovresti vedere un widget che appare nella parte superiore della finestra. Si tratta di un helper di runtime che fornisce un accesso rapido ad alcune utili funzionalità di debug. Fare clic sul primo pulsante Vai alla struttura **ad albero visuale attiva**. Verrà visualizzata una finestra con una struttura ad albero che contiene tutti gli elementi visivi della pagina. Espandere i nodi per trovare i pulsanti aggiunti.
+Nell'app in esecuzione verrà visualizzato un widget visualizzato nella parte superiore della finestra. Si tratta di un helper di runtime che consente di accedere rapidamente ad alcune utili funzionalità di debug. Fare clic sul primo pulsante, **passare a albero elementi visivi attivi**. Verrà visualizzata una finestra con un albero che contiene tutti gli elementi visivi della pagina. Espandere i nodi per trovare i pulsanti aggiunti.
 
-![Schermata della finestra Albero visuale attivo](media/vs-2019/exploreide-live-visual-tree.png)
+![Screenshot della finestra albero elementi visivi attivi](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>Compilare una versione di rilascio dell'applicazione
 
 Dopo aver verificato che tutto funzioni, sarà possibile preparare una build di versione dell'applicazione.
 
-1. Nel menu principale selezionare **Compila** > **soluzione pulita** per eliminare i file intermedi e i file di output creati durante le compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
+1. Nel menu principale selezionare **Compila**  >  **soluzione pulita** per eliminare i file intermedi e i file di output creati durante le compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
 
-2. Modificare la configurazione di compilazione per HelloWPFApp da **Debug** a **Release** utilizzando il controllo elenco a discesa sulla barra degli strumenti (attualmente si dice "Debug").
+2. Modificare la configurazione di compilazione per HelloWPFApp da **debug** a **rilascio** usando il controllo a discesa sulla barra degli strumenti (viene visualizzato attualmente "debug").
 
-3. Compilare la soluzione scegliendo **Compila** > **soluzione**.
+3. Compilare la soluzione scegliendo **Compila**  >  **Compila soluzione**.
 
-L'esercitazione è stata completata. È possibile trovare il *file .exe* compilato nella directory della soluzione e del progetto (*...*
+L'esercitazione è stata completata. È possibile trovare il file con *estensione exe* compilato nella directory della soluzione e del progetto (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 ::: moniker range="vs-2017"
 

@@ -1,7 +1,7 @@
 ---
-title: 'Errore: accesso remoto al gruppo di lavoro non riuscito | Microsoft Docs'
+title: Errore-errore di accesso remoto del gruppo di lavoro | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.workgroup_remote_logon_failure
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 97045215098b1f59d5f76a928e9e0a1ab8362756
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736269"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460092"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Errore: accesso remoto al gruppo di lavoro non riuscito
 Il testo del messaggio di errore è il seguente:
@@ -32,7 +32,7 @@ Il testo del messaggio di errore è il seguente:
 
  **Causa**
 
- Questo errore può verificarsi quando si esegue il debug da un computer che fa parte di un gruppo di lavoro e si tenta di stabilire la connessione a un computer remoto. Fra le cause possibili vi sono le seguenti:
+ Questo errore può verificarsi quando si esegue il debug da un computer che fa parte di un gruppo di lavoro e si tenta di stabilire la connessione a un computer remoto. Le cause possibili includono:
 
 - Nel computer remoto non esiste un account con il nome e la password specificati.
 
@@ -71,8 +71,8 @@ Il testo del messaggio di errore è il seguente:
 
 5. Nella finestra di dialogo **Accesso di rete: modello di condivisione e sicurezza per gli account locali** modificare l'impostazione in **Classico: gli utenti locali effettuano l'autenticazione come se stessi**, quindi scegliere il pulsante **Applica**.
 
-     ![Opzioni di sicurezza dei criteri di sicurezza locali](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
+     ![Opzioni di sicurezza criteri di sicurezza locali](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Debug remoto](../debugger/remote-debugging.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Errore: il server Web non è configurato correttamente | Microsoft Docs'
 ms.date: 09/20/2017
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.remote.projnotconfigured
 dev_langs:
@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be5db0a08a287e2611c29396e96e72719b5106a7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 711297ef00c064c482ed3a86b896566b6e019534
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736921"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460325"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Errore: il server Web non è configurato in modo corretto
 
-Dopo aver eseguito i passaggi descritti qui per risolvere il problema e prima di riprovare a eseguire il debug, potrebbe essere necessario reimpostare IIS. A tale scopo, aprire un prompt dei comandi dell'amministratore e digitare `iisreset`.
+Dopo aver eseguito i passaggi descritti qui per risolvere il problema e prima di riprovare a eseguire il debug, potrebbe essere necessario reimpostare IIS. A tale scopo, aprire un prompt dei comandi dell'amministratore e digitare `iisreset` .
 
 Per risolvere il problema, seguire questa procedura:
 
-1. Se l'app Web ospitata nel server è configurata come build di rilascio, ripubblicarla come build di debug e verificare che il file Web. config contenga `debug=true` nell'elemento di compilazione. Ripristinare IIS e riprovare.
+1. Se l'app Web ospitata nel server è configurata come build di rilascio, viene ripubblicata come build di debug e verifica che il file web.config contenuto `debug=true` nell'elemento di compilazione. Ripristinare IIS e riprovare.
 
-    Se ad esempio si usa un profilo di pubblicazione per una build di rilascio, modificarlo in debug e ripubblicazione. In caso contrario, l'attributo debug verrà impostato su `false` durante la pubblicazione.
+    Se ad esempio si usa un profilo di pubblicazione per una build di rilascio, modificarlo in debug e ripubblicazione. In caso contrario, l'attributo debug verrà impostato su `false` quando si esegue la pubblicazione.
 
 2. IIS Verificare che il percorso fisico sia corretto. In IIS è possibile trovare questa impostazione in **impostazioni di base > percorso fisico** (o **Impostazioni avanzate** nelle versioni precedenti di IIS).
 
@@ -43,10 +43,10 @@ Per risolvere il problema, seguire questa procedura:
 
 4. IIS Verificare che nel server sia installata la versione corretta di ASP.NET.
 
-    La mancata corrispondenza delle versioni di ASP.NET in IIS e nel progetto di Visual Studio può causare questo problema. Potrebbe essere necessario impostare la versione del Framework in Web. config. Per installare ASP.NET in IIS, usare l' [installazione guidata piattaforma Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Vedere anche [iis 8,0 con ASP.NET 3,5 e ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) o, per ASP.NET Core, [host in Windows con IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    La mancata corrispondenza delle versioni di ASP.NET in IIS e nel progetto di Visual Studio può causare questo problema. Potrebbe essere necessario impostare la versione del Framework in web.config. Per installare ASP.NET in IIS, usare l' [installazione guidata piattaforma Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Vedere anche [iis 8,0 con ASP.NET 3,5 e ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) o, per ASP.NET Core, [host in Windows con IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
-4. Se il limite di `maxConnection` in IIS è troppo basso e si dispone di un numero eccessivo di connessioni, potrebbe essere necessario [aumentare il limite di connessione](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
+4. Se il `maxConnection` limite in IIS è troppo basso e si dispone di un numero eccessivo di connessioni, potrebbe essere necessario [aumentare il limite di connessione](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
 
-## <a name="see-also"></a>Vedere anche
-- [Debug remoto di ASP.NET in un computer remoto con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+## <a name="see-also"></a>Vedi anche
+- [Debug remoto di ASP.NET in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
