@@ -1,22 +1,22 @@
 ---
 title: IDiaSymbol::get_isSingleInheritance | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 46cde656-059b-4c20-9476-3ca68ccc9912
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 96a8ce072fc57dc236dd2025b8ea3c9c5a4b9b79
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 93b9557f23feb6052de97e905a19fccdd7015de3
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740062"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463183"
 ---
 # <a name="idiasymbolget_issingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
-Specifica se il puntatore `this` punta a un membro dati con ereditarietà singola.
+Specifica se il `this` puntatore punta a un membro dati con ereditarietà singola.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -28,10 +28,10 @@ HRESULT get_isSingleInheritance(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un `BOOL` che specifica se il puntatore `this` punta a un membro dati con ereditarietà singola.
+out Puntatore a un oggetto `BOOL` che specifica se il `this` puntatore punta a un membro dati con ereditarietà singola.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

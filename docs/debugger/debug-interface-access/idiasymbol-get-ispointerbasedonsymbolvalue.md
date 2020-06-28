@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isPointerBasedOnSymbolValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 577c8011-9269-4373-8577-b4822a983724
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7e7546454ddb60babff757f86aab023ce5bb7d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f0d6e653bbafc09a9182cac743bdc97a23a6c58e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740132"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463295"
 ---
 # <a name="idiasymbolget_ispointerbasedonsymbolvalue"></a>IDiaSymbol::get_isPointerBasedOnSymbolValue
-Specifica se il puntatore `this` è basato sul valore di un simbolo.
+Specifica se il `this` puntatore è basato sul valore di un simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,10 +30,10 @@ HRESULT get_isPointerBasedOnSymbolValue(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un `BOOL` che specifica se il puntatore `this` è basato sul valore di un simbolo.
+out Puntatore a un oggetto `BOOL` che specifica se il `this` puntatore è basato su un valore di simbolo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

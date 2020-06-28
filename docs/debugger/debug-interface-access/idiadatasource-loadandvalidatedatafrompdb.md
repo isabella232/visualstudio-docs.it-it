@@ -1,7 +1,7 @@
 ---
 title: IDiaDataSource::loadAndValidateDataFromPdb | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97afff946827c37ec2f84457016525377977dc8b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3e3a4b73cbbfe16cb87108c5f157dada135e71ee
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744996"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468539"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Apre e verifica che il file del database di programma (con estensione pdb) corrisponda alle informazioni di firma fornite e prepara il file con estensione PDB come origine dati di debug.
@@ -51,9 +51,9 @@ in Firma a 32 bit da verificare rispetto alla firma del file con estensione pdb.
 in Valore Age da verificare. L'età non corrisponde necessariamente a un valore di ora noto, viene utilizzata per determinare se un file con estensione PDB non è sincronizzato con un file con estensione exe corrispondente.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. La tabella seguente illustra i possibili valori restituiti per questo metodo.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. La tabella seguente illustra i possibili valori restituiti per questo metodo.
 
-|Value|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Non è stato possibile aprire il file o il formato del file non è valido.|
 |E_PDB_FORMAT|Tentativo di accedere a un file con un formato obsoleto.|
@@ -62,7 +62,7 @@ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codi
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|L'origine dati è già stata preparata.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
 Un file con estensione PDB contiene sia la firma che i valori di età. Questi valori vengono replicati nel file con estensione exe o dll che corrisponde al file con estensione pdb. Prima di preparare l'origine dati, questo metodo verifica che la firma del file con estensione PDB denominata e l'età corrispondano ai valori specificati.
 
 Per caricare un file con estensione pdb senza convalida, usare il metodo [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .

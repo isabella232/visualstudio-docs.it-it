@@ -1,7 +1,7 @@
 ---
 title: BasicType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fff76abdecdd8613a462225278053ef4f6d9694
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b7d9df59d5a3075bf63d619a03e8fe31da6991a1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745485"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462281"
 ---
 # <a name="basictype"></a>BasicType
 Specifica il tipo di base del simbolo.
@@ -52,47 +52,47 @@ enum BasicType {
 ## <a name="elements"></a>Elementi
 btNoType non è specificato alcun tipo di base.
 
-il tipo di base di btVoid è un `void`.
+il tipo di base di btVoid è `void` .
 
-il tipo di base di btChar è un `char`C++ (C/Type).
+il tipo di base di btChar è un `char` (tipo C/C++).
 
-il tipo di base di btWChar è un carattere wide (Unicode) (`WCHAR`).
+il tipo di base di btWChar è un carattere wide (Unicode) ( `WCHAR` ).
 
-il tipo di base di btInt è `signed int`C++ (C/Type).
+il tipo di base di btInt è `signed int` (tipo C/C++).
 
-il tipo di base di btUInt è `unsigned int`C++ (C/Type).
+il tipo di base di btUInt è `unsigned int` (tipo C/C++).
 
-il tipo di base di btFloat è un numero a virgola mobile (`FLOAT`).
+il tipo di base di btFloat è un numero a virgola mobile ( `FLOAT` ).
 
-il tipo di base di btBCD è un valore decimale con codifica binaria (`BCD`).
+il tipo di base di btBCD è un valore decimale con codifica binaria ( `BCD` ).
 
-il tipo di base di btBool è un valore booleano (`BOOL`).
+il tipo di base di btBool è un valore booleano ( `BOOL` ).
 
-il tipo di base di btLong è un `long int`C++ (C/Type).
+il tipo di base di btLong è un `long int` (tipo C/C++).
 
-il tipo di base di btULong è un `unsigned long int`C++ (C/Type).
+il tipo di base di btULong è un `unsigned long int` tipo (C/C++).
 
 il tipo di base di btCurrency è Currency.
 
-il tipo di base di btDate è data/ora (`DATE`).
+il tipo di base di btDate è date/time ( `DATE` ).
 
-il tipo di base di btVariant è una struttura di tipo variabile (`VARIANT`).
+il tipo di base di btVariant è una struttura di tipo variabile ( `VARIANT` ).
 
 il tipo di base di btComplex è un numero complesso.
 
 il tipo di base di btBit è bit.
 
-il tipo di base di btBSTR è una stringa di base o binaria (`BSTR`).
+il tipo di base di btBSTR è una stringa di base o binaria ( `BSTR` ).
 
-il tipo di base di btHresult è un `HRESULT`.
+il tipo di base di btHresult è `HRESULT` .
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
 I valori di questa enumerazione vengono restituiti dal metodo [IDiaSymbol:: get_BaseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
 - [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

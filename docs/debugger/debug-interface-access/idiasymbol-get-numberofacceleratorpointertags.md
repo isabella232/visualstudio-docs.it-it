@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_numberOfAcceleratorPointerTags | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 1886e3ec-b227-4187-8d93-c5144b4b77ae
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47c5827348c7b7cb450017a0e6176d71f555c841
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a4690afe754db2c5e82d200de780d28aae3c652e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739691"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462770"
 ---
 # <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Restituisce il numero di tag del puntatore dell'acceleratore in una C++ funzione dello stub amp.
+Restituisce il numero di tag del puntatore acceleratore in una funzione stub C++ AMP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,13 +30,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
 #### <a name="parameters"></a>Parametri
  `count`
 
-out Puntatore a un `DWORD` che include il numero di tag del puntatore dell'acceleratore C++ in una funzione dello stub amp.
+out Puntatore a un oggetto `DWORD` che include il numero di tag del puntatore dell'acceleratore in una funzione stub C++ amp.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="remarks"></a>Note
- Questo metodo viene chiamato su un'interfaccia `IDiaSymbol` che corrisponde a una C++ funzione dello stub amp Accelerator.
+## <a name="remarks"></a>Commenti
+ Questo metodo viene chiamato su un' `IDiaSymbol` interfaccia che corrisponde a una funzione dello stub di C++ amp Accelerator.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

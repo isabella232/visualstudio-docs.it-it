@@ -1,6 +1,6 @@
 ---
 title: Soluzioni e progetti
-ms.date: 10/05/2017
+ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285231"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468730"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -53,7 +53,7 @@ Un progetto è contenuto all'interno di una *soluzione*. Nonostante il nome, una
 
 Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di file, uno con estensione *sln* e uno con estensione *suo*.
 
-|Estensione|Nome|Description|
+|Estensione|Nome|Descrizione|
 |---------------|----------|-----------------|
 |sln|Soluzione Visual Studio|Organizza progetti, elementi del progetto ed elementi della soluzione nella soluzione.|
 |suo|Solution User Options|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
@@ -74,13 +74,16 @@ Dopo aver creato un nuovo progetto, è possibile usare **Esplora soluzioni** per
 
 Sono disponibili molti comandi di menu dal menu di scelta rapida per vari elementi in **Esplora soluzioni**. Questi comandi includono la compilazione di un progetto, la gestione dei pacchetti NuGet, l'aggiunta di un riferimento, la ridenominazione di un file e l'esecuzione di test, solo per citarne alcuni. La barra degli strumenti nella parte superiore di **Esplora soluzioni** include pulsanti per passare dalla visualizzazione della soluzione alla visualizzazione delle cartelle, visualizzare i file nascosti, comprimere tutti i nodi e altro ancora.
 
+> [!TIP]
+> Se è stato chiuso Esplora soluzioni e si desidera aprirlo nuovamente, scegliere **finestra**  >  **Reimposta layout finestra** dalla barra dei menu.
+
 Per i progetti ASP.NET Core, è possibile personalizzare la modalità di annidamento dei file in **Esplora soluzioni**. Per altre informazioni, vedere [Personalizzare l'annidamento file in Esplora soluzioni](file-nesting-solution-explorer.md).
 
-> [!TIP]
-> Per visualizzare un elenco di alcune delle icone visualizzate in Esplora soluzioni, vedere la pagina delle [icone visualizzazione classi e Visualizzatore oggetti](class-view-and-object-browser-icons.md) .
+Per visualizzare un elenco di alcune delle icone visualizzate in Esplora soluzioni, vedere [Visualizzazione classi e Visualizzatore oggetti icone](class-view-and-object-browser-icons.md).
 
 ## <a name="see-also"></a>Vedi anche
 
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)
+- [Portabilità, migrazione e aggiornamento dei progetti](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/projects-and-solutions)
 - [Aggiungere e rimuovere elementi del progetto (Visual Studio per Mac)](/visualstudio/mac/add-and-remove-project-items)

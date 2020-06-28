@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_language | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7a7fa688825ce341417f695766a37ddb00028b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3e7dc0a0a640a9d3921801a9077b32ade5921ff7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739995"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463120"
 ---
 # <a name="idiasymbolget_language"></a>IDiaSymbol::get_language
 Recupera la lingua dell'origine.
@@ -33,14 +33,14 @@ HRESULT get_language ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce un valore dall'enumerazione Enumerazione [CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md) che specifica la lingua dell'origine.
+out Restituisce un valore dall'enumerazione [CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md) enumerazione che specifica la lingua dell'origine.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)

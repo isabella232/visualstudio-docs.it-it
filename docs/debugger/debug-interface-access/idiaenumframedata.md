@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumFrameData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e20fa21d739c79dad94a8445f6d0fe811337fd40
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a5c99d9587de85941721ae404fefdcac7586fb08
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744557"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468301"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Enumera i vari elementi dati del frame contenuti nell'origine dati.
@@ -29,27 +29,27 @@ IDiaEnumFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaEnumFrameData`.
+La tabella seguente illustra i metodi di `IDiaEnumFrameData` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Recupera la versione `IEnumVARIANT Interface` dell'enumeratore.|
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Recupera la `IEnumVARIANT Interface` versione dell'enumeratore.|
 |[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Recupera il numero di elementi dati del frame.|
 |[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Recupera un elemento dati di frame per mezzo di un indice.|
 |[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Recupera un numero specificato di elementi dati del frame nella sequenza di enumerazione.|
 |[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Ignora un numero specificato di elementi dati del frame in una sequenza di enumerazione.|
-|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Reimposta l'inizio di una sequenza di enumerazione.|
+|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
 |[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 |[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Restituisce un frame in base all'indirizzo RVA (relative Virtual Address).|
 |[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Restituisce un frame in base all'indirizzo virtuale (VA).|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Ottenere questa interfaccia dal metodo [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Per informazioni dettagliate, vedere l'esempio.
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra come ottenere (la funzione `GetEnumFrameData`) e usare (la funzione `ShowFrameData`) l'interfaccia `IDiaEnumFrameData`. Per un esempio della funzione `PrintFrameData`, vedere l'interfaccia [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) .
+Questo esempio illustra come ottenere (la `GetEnumFrameData` funzione) e usare (la `ShowFrameData` funzione) l' `IDiaEnumFrameData` interfaccia. Per un esempio della funzione, vedere l'interfaccia [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) `PrintFrameData` .
 
 ```C++
 
@@ -105,9 +105,9 @@ void ShowFrameData(IDiaSession *pSession)
 
 **Libreria:** diaguids. lib
 
-**Dll:** Msdia80. dll
+**Dll:** msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

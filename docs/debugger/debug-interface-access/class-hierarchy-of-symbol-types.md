@@ -1,7 +1,7 @@
 ---
 title: Gerarchia di classi dei tipi di simboli | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c42ea4bb2d5c2ad91538bec8b31774a5a41aa4d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ed6817c5c01b66143739b2f81899f2b58886d8e8
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745450"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85462273"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Gerarchia di classi dei tipi di simboli
 Nella tabella seguente vengono descritti i tipi di simboli della gerarchia di classi.
@@ -40,12 +40,12 @@ Nella tabella seguente vengono descritti i tipi di simboli della gerarchia di cl
 |[VTable](../../debugger/debug-interface-access/vtable.md)|Simbolo per una tabella virtuale.|
 |[CustomType](../../debugger/debug-interface-access/customtype.md)|Simbolo per il tipo definito dal fornitore.|
 |[ManagedType](../../debugger/debug-interface-access/managedtype.md)|Simbolo per un tipo definito nei metadati.|
-|[Dimensione](../../debugger/debug-interface-access/dimension.md)|Simbolo per le dimensioni della matrice.|
+|[Dimension](../../debugger/debug-interface-access/dimension.md)|Simbolo per le dimensioni della matrice.|
 
 > [!NOTE]
 > Ogni simbolo può includere proprietà che contengono informazioni sul simbolo, nonché riferimenti ad altri simboli. Queste proprietà sono elencate nei singoli argomenti dei simboli.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

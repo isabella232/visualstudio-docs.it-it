@@ -1,7 +1,7 @@
 ---
 title: IDiaDataSource::get_lastError | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48595dda70560f555533a1857f73db4d7bd20a86
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 231c6b082f7a641ee78d10003d544c3fb9644c1c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72744979"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468525"
 ---
 # <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 Recupera il nome del file per l'ultimo errore di caricamento.
@@ -36,7 +36,7 @@ HRESULT get_lastError (
 out Restituisce una stringa che contiene il nome del file con estensione pdb associato all'ultimo errore di caricamento.
 
 ## <a name="return-value"></a>Valore restituito
- Restituisce l'ultimo codice di errore causato da un'operazione di caricamento. Restituisce `E_INVALIDARG` se il `pRetVal` parametro è `NULL`.
+ Restituisce l'ultimo codice di errore causato da un'operazione di caricamento. Restituisce `E_INVALIDARG` se il `pRetVal` parametro è `NULL` .
 
 ## <a name="example"></a>Esempio
 

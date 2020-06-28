@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_liveRangeLength | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b663ef54959544764016fe59e4b0fb41607854b1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dac0c302fa85533624f58eac1538f8c8ba076e5b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72739924"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463043"
 ---
 # <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
 Restituisce la lunghezza dell'intervallo di indirizzi in cui il simbolo locale è valido.
@@ -36,19 +36,19 @@ HRESULT get_liveRangeLength ( 
 out Restituisce la lunghezza dell'intervallo di indirizzi.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 > [!NOTE]
 > Un codice di errore restituito indica che il simbolo non contiene informazioni sull'intervallo Live.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: dia2. h
 
  Libreria: diaguids. lib
 
- DLL: msdia100. dll
+ DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
