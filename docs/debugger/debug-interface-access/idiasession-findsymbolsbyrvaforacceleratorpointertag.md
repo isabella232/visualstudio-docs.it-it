@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: a073cc45-0c7b-417e-b5fc-a3b08beccdbc
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1b24d24de35de30b24937a6cfbf59d12f69482
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cf05d60499da0317461d03d05579dce6124385f7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741997"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465531"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 Dato un valore di tag corrispondente, questo metodo restituisce un'enumerazione di simboli contenuti in una funzione stub dell'acceleratore padre specificata in corrispondenza di un indirizzo virtuale relativo specificato.
@@ -34,7 +34,7 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>Parametri
  `parent`
 
-in @No__t_0 che corrisponde alla funzione dello stub dell'acceleratore in cui eseguire la ricerca.
+in Oggetto `IDiaSymbol` che corrisponde alla funzione dello stub dell'acceleratore in cui eseguire la ricerca.
 
  `tagValue`
 
@@ -46,15 +46,15 @@ in Indirizzo virtuale relativo.
 
  `ppResult`
 
-out Puntatore a un puntatore a interfaccia `IDiaEnumSymbols` inizializzato con il risultato.
+out Puntatore a un `IDiaEnumSymbols` puntatore a interfaccia inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- Chiamare questo metodo solo su un'interfaccia `IDiaSymbol` che corrisponde a una funzione dello stub dell'acceleratore.
+## <a name="remarks"></a>Commenti
+ Chiamare questo metodo solo su un' `IDiaSymbol` interfaccia che corrisponde a una funzione dello stub di tasti di scelta rapida.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

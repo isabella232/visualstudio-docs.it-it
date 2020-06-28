@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_baseDataOffset | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: bb2ff5ed-9293-4c37-9741-654058b571c5
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 298903e4e76c34fe1013b0f26729fb900c7b3fea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9b9597388f34ce48fcded4930aebba2a3fa15a50
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740988"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464233"
 ---
 # <a name="idiasymbolget_basedataoffset"></a>IDiaSymbol::get_baseDataOffset
 Recupera l'offset dei dati di base.
@@ -30,10 +30,10 @@ HRESULT get_baseDataOffset(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un `DWORD` che include l'offset dei dati di base.
+out Puntatore a un oggetto `DWORD` che include l'offset dei dati di base.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

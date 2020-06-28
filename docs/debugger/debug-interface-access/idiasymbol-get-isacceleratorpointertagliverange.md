@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: d195aec4-6d3c-42e0-88a5-3d463539f0b8
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5a24a136bb9c04366449a91d825ddbecff2957
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e13ac37e96dc7c50b48e3dcfd91fa3379de18fca
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740316"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463512"
 ---
 # <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-Recupera un flag che indica se il simbolo corrisponde al *simbolo dell'intervallo di definizioni* per il componente tag di una variabile puntatore nel codice compilato per C++ un acceleratore amp. Il simbolo dell'intervallo di definizioni è il percorso di una variabile per un intervallo di indirizzi.
+Recupera un flag che indica se il simbolo corrisponde al *simbolo dell'intervallo di definizioni* per il componente tag di una variabile puntatore nel codice compilato per un acceleratore C++ amp. Il simbolo dell'intervallo di definizioni è il percorso di una variabile per un intervallo di indirizzi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,10 +30,10 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Puntatore a un `BOOL` che indica se il simbolo corrisponde al simbolo dell'intervallo di definizioni.
+out Puntatore a un valore `BOOL` che indica se il simbolo corrisponde al simbolo dell'intervallo di definizioni.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

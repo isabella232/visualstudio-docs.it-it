@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findAcceleratorInlineesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 386c87aa-f7b2-4d38-9dd6-fffba9ff01f0
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d08168a83b9bb635fd6a0e22dc22f91a454001f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ec927532ebc808fae0717e36439be356cb022b32
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742327"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465874"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 Restituisce un'enumerazione di simboli per i frame inline che corrispondono al percorso di origine specificato.
@@ -35,11 +35,11 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Parametri
  `parent`
 
-in @No__t_0 che corrisponde alla funzione dello stub dell'acceleratore in cui è necessario eseguire la ricerca.
+in Oggetto `IDiaSymbol` che corrisponde alla funzione dello stub dell'acceleratore in cui è necessario eseguire la ricerca.
 
  `file`
 
-in @No__t_0 del percorso di origine.
+in `IDiaSourceFile`Del percorso di origine.
 
  `linenum`
 
@@ -51,12 +51,12 @@ in Numero di colonna del percorso di origine.
 
  `ppResult`
 
-out Puntatore a un puntatore a interfaccia `IDiaEnumLineNumbers` inizializzato con il risultato.
+out Puntatore a un `IDiaEnumLineNumbers` puntatore a interfaccia inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 17a20542-5b45-478f-bb80-0d56031aadb5
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d6cf755121f851e652cce251ace2105e6773822
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1110f0882e8281955fa4efdf41a1355405bdd557
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740338"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463505"
 ---
 # <a name="idiasymbolget_isacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
-Recupera un flag che indica se il simbolo corrisponde a una variabile locale condivisa del gruppo nel codice compilato per C++ un acceleratore amp.
+Recupera un flag che indica se il simbolo corrisponde a una variabile locale condivisa del gruppo nel codice compilato per un acceleratore C++ AMP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,12 +30,12 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Puntatore a un `BOOL` che indica se il simbolo corrisponde a una variabile locale condivisa del gruppo nel codice compilato per un C++ acceleratore amp. Se `TRUE`, è possibile usare i metodi `get_baseDataSlot` e `get_baseDataOffset` per ottenere le informazioni sul percorso di archiviazione per la variabile.
+out Puntatore a un valore `BOOL` che indica se il simbolo corrisponde a una variabile locale condivisa del gruppo nel codice compilato per un acceleratore C++ amp. Se `TRUE` , i `get_baseDataSlot` `get_baseDataOffset` metodi e possono essere usati per ottenere le informazioni sul percorso di archiviazione per la variabile.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_baseDataSlot](../../debugger/debug-interface-access/idiasymbol-get-basedataslot.md)
 - [IDiaSymbol::get_baseDataOffset](../../debugger/debug-interface-access/idiasymbol-get-basedataoffset.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSymbolsByAddr::Prev | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70265976e5c6e7c2b3f536f2b8648aaba44df528
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8fe7ced486524c7409532e140f48f841b5e55078
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743851"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467645"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 Recupera i simboli precedenti nell'ordine in base all'indirizzo.
@@ -48,9 +48,9 @@ out Restituisce il numero di simboli nell'enumeratore recuperato.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti simboli precedenti. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  Questo metodo aggiorna la posizione dell'enumeratore in base al numero di elementi recuperati.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

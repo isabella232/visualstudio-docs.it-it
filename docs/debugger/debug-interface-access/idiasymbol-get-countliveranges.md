@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_countLiveRanges | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 990673afdb01b1471ad75d65036610c486e735c4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 89a6198a73adc5a9f4afec1f3b40302263660a29
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740751"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463974"
 ---
 # <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
 Recupera il numero di intervalli di indirizzi validi associati al simbolo locale.
@@ -36,14 +36,14 @@ HRESULT get_countLiveRanges ( 
 out Restituisce il numero di intervalli di indirizzi.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: dia2. h
 
  Libreria: diaguids. lib
 
- DLL: msdia100. dll
+ DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSession | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f983275974ed0ec3fb0e6091f5b9e73cdccd76ef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7fb8c5336a14180b3742fa02a91e6532b6e5831
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741852"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465349"
 ---
 # <a name="idiasession"></a>IDiaSession
 Fornisce un contesto di query per i simboli di debug.
@@ -29,12 +29,12 @@ IDiaSession : IUnknown
 ```
 
 ## <a name="methods"></a>Metodi
-La tabella seguente illustra i metodi di `IDiaSession`.
+La tabella seguente illustra i metodi di `IDiaSession` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Recupera l'indirizzo di caricamento per il file eseguibile che corrisponde ai simboli nell'archivio simboli. Si tratta dello stesso valore passato al metodo `put_loadAddress`.|
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Imposta l'indirizzo di caricamento per il file eseguibile che corrisponde ai simboli nell'archivio simboli. **Nota:**  È importante chiamare questo metodo quando si ottiene un oggetto `IDiaSession` e prima di iniziare a usare l'oggetto.|
+|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Recupera l'indirizzo di caricamento per il file eseguibile che corrisponde ai simboli nell'archivio simboli. Si tratta dello stesso valore passato al `put_loadAddress` metodo.|
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Imposta l'indirizzo di caricamento per il file eseguibile che corrisponde ai simboli nell'archivio simboli. **Nota:**  È importante chiamare questo metodo quando si ottiene un `IDiaSession` oggetto e prima di iniziare a usare l'oggetto.|
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Recupera un riferimento all'ambito globale.|
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Recupera un enumeratore per tutte le tabelle contenute nell'archivio dei simboli.|
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Recupera un enumeratore per tutti i simboli denominati in posizioni statiche.|
@@ -70,11 +70,11 @@ La tabella seguente illustra i metodi di `IDiaSession`.
 |[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Restituisce un'enumerazione di simboli per i frame inline che corrispondono al nome della funzione inline specificata.|
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Restituisce un'enumerazione di simboli per i frame inline che corrispondono al percorso di origine specificato.|
 
-## <a name="remarks"></a>Note
-È importante chiamare il metodo [IDiaSession::P ut_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) dopo la creazione dell'oggetto `IDiaSession`, e il valore passato al metodo `put_loadAddress` deve essere diverso da zero, per qualsiasi proprietà di indirizzo virtuale (va) di simboli accessibile. L'indirizzo di caricamento deriva da qualsiasi programma caricato il file eseguibile di cui è in corso il debug. Ad esempio, è possibile chiamare la funzione Win32 `GetModuleInformation` per recuperare l'indirizzo di caricamento per il file eseguibile, dato un handle al file eseguibile.
+## <a name="remarks"></a>Commenti
+È importante chiamare il metodo [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) dopo la creazione dell' `IDiaSession` oggetto, mentre il valore passato al `put_loadAddress` metodo deve essere diverso da zero, per poter accedere alle proprietà di un indirizzo virtuale (va) dei simboli. L'indirizzo di caricamento deriva da qualsiasi programma caricato il file eseguibile di cui è in corso il debug. Ad esempio, è possibile chiamare la funzione Win32 `GetModuleInformation` per recuperare l'indirizzo di caricamento per il file eseguibile, dato un handle al file eseguibile.
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra come ottenere l'interfaccia `IDiaSession` come parte di un'inizializzazione generale del DIA SDK.
+Questo esempio illustra come ottenere l' `IDiaSession` interfaccia come parte di un'inizializzazione generale del DIA SDK.
 
 ```C++
 CComPtr<IDiaDataSource> pSource;
@@ -114,9 +114,9 @@ Intestazione: dia2. h
 
 Libreria: diaguids. lib
 
-DLL: Msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [Panoramica](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [Exe](../../debugger/debug-interface-access/exe.md)
@@ -124,4 +124,4 @@ DLL: Msdia80. dll
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
-- [Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [Ricerche nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

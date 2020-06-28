@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_bitPosition | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 709bb7e57ee6260ffcd7d8b1421526d3dd41052a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 636f553d72dc73f463d7b9814230f4b80cdda535
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740899"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464170"
 ---
 # <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
-Recupera la posizione del bit della posizione. Utilizzato quando l' [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) viene `LocIsBitField`.
+Recupera la posizione del bit della posizione. Utilizzato quando l' [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsBitField` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,18 +36,18 @@ HRESULT get_bitPosition ( 
 out Restituisce la posizione del bit del percorso.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisiti|Descrizione|
+|Requisito|Descrizione|
 |-----------------|-----------------|
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)

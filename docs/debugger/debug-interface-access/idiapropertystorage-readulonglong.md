@@ -1,7 +1,7 @@
 ---
 title: 'IDiaPropertyStorage:: ReadULONGLONG | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dde2f111e468b8ccf6c1d91440f06d3e7048a0f6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b188ec5067efed410d934b98559505d48ab6585a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742858"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466490"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
-Legge `ULONGLONG` valori in un set di proprietà.
+Legge `ULONGLONG` i valori in un set di proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,17 +34,17 @@ HRESULT ReadULONGLONG ( 
 #### <a name="parameters"></a>Parametri
  `id`
 
-in Identificatore della proprietà da leggere (`PROPID` è definito in WTypes. h come `ULONG`).
+in Identificatore della proprietà da leggere ( `PROPID` è definito in Wtypes. h come `ULONG` ).
 
  `pValue`
 
 out Restituisce il valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `ULONGLONG`.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `ULONGLONG` .
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  Un `ULONGLONG` viene definito da Windows come Unsigned Integer a 64 bit.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalker::getEnumFrames2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6de78b5553719def2fd7ef9c6adb55e823aac34
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 28e2f0ec5f176ab32e6bfed1e959f68c04550f67
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741524"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464856"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 Recupera un enumeratore di stack frame per un tipo di piattaforma specifico.
@@ -36,7 +36,7 @@ Recupera un enumeratore di stack frame per un tipo di piattaforma specifico.
 #### <a name="parameters"></a>Parametri
  `cpuid`
 
-in Valore dell'enumerazione [CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) , che specifica il tipo di piattaforma.
+in Valore dell'enumerazione [CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) enumerazione, che specifica il tipo di piattaforma.
 
  `pHelper`
 
@@ -47,12 +47,12 @@ in Oggetto [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastack
 out Restituisce un oggetto [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) contenente un elenco di oggetti [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  Per ottenere un elenco di stack frame solo per la piattaforma x86, chiamare il metodo [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)
 - [Enumerazione CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

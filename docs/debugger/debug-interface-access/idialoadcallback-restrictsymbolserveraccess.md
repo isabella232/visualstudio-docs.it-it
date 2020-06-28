@@ -1,7 +1,7 @@
 ---
 title: 'IDiaLoadCallback:: RestrictSymbolServerAccess | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d590af5162d3efd2ef2c9702a3fe9f45250993
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 01bc4d1bd1109b3e481449dae164001257da3415
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743029"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466728"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
 Determina se è consentito l'accesso a un server di simboli per la risoluzione dei simboli.
@@ -29,10 +29,10 @@ HRESULT RestrictSymbolServerAccess();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  Qualsiasi codice restituito diverso da `S_OK` impedisce l'uso di un server di simboli per la risoluzione dei simboli.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

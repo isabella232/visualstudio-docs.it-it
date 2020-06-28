@@ -1,7 +1,7 @@
 ---
 title: IDiaInjectedSource::get_source | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b389df8220766ffbdbf865a2b8e70877fe91b3f1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8408145d83b3b78f8392603466980495ab32d24b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743341"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467029"
 ---
 # <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 Recupera i byte del codice sorgente.
@@ -39,7 +39,7 @@ in Numero di byte che rappresenta la dimensione del buffer di dati.
 
  `pcbData`
 
-out Restituisce il numero di byte che rappresenta i byte restituiti. Se `data` è `NULL`, `pcbData` è il numero totale di byte di dati disponibili.
+out Restituisce il numero di byte che rappresenta i byte restituiti. Se `data` è `NULL` , `pcbData` è il numero totale di byte dei dati disponibili.
 
  `data[]`
 
@@ -48,5 +48,5 @@ out Buffer da compilare con i byte di origine.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

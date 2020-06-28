@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame::get_lengthLocals | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e408f7a6341685394731ea65ceaa926351587a9e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a812b51f8f874baf0a954b33d8fe25cc382e2d83
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741706"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465094"
 ---
 # <a name="idiastackframeget_lengthlocals"></a>IDiaStackFrame::get_lengthLocals
 Recupera il numero di byte delle variabili locali di cui è stato effettuato il push nello stack.
@@ -38,5 +38,5 @@ out Restituisce il numero di byte delle variabili locali.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

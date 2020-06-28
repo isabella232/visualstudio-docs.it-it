@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca58a206fec15bb8a9ae7f68a278a4530be47d8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 435dc337ea3f1caad2ad99031d9be872d80337e2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743031"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466721"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 Riceve i callback dalla procedura di individuazione dei simboli DIA, consentendo in tal modo a un'interfaccia utente di segnalare lo stato di avanzamento del tentativo del percorso.
@@ -39,7 +39,7 @@ IDiaLoadCallback : IUnknown
 |[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Determina se è possibile utilizzare le query del registro di sistema per individuare i percorsi di ricerca dei simboli.|
 |[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Determina se è consentito l'accesso a un server di simboli per la risoluzione dei simboli.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  L'applicazione client implementa questa interfaccia e fornisce un riferimento a tale interfaccia nella chiamata al metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
  Per ulteriori restrizioni che possono essere imposte in un processo di caricamento, vedere l'interfaccia [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) .
@@ -49,9 +49,9 @@ IDiaLoadCallback : IUnknown
 
  Libreria: diaguids. lib
 
- DLL: Msdia80. dll
+ DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_arrayIndexType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a1ff47ce7ad6436f74f648edd27e02f98e54a6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7bbe3bd3525abd5ac7fccbae66b603ce8d2a6dbf
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741046"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464310"
 ---
 # <a name="idiasymbolget_arrayindextype"></a>IDiaSymbol::get_arrayIndexType
 Recupera l'interfaccia dei simboli del tipo di indice della matrice del simbolo.
@@ -36,12 +36,12 @@ HRESULT get_arrayIndexType ( 
 out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il tipo di indice della matrice del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  In alcuni linguaggi è possibile specificare il tipo utilizzato come indice di una matrice. Il simbolo restituito da questo metodo specifica quel tipo.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,5 +51,5 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame::get_allocatesBasePointer | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6710a20bb5a01d3d342c31b48f1f96e7e2a2062a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 60b6d132e177be9abb325782c1a43497462690f1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741759"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465136"
 ---
 # <a name="idiastackframeget_allocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
 Recupera un flag che indica se il puntatore di base è allocato per il codice in questo intervallo di indirizzi.
@@ -33,10 +33,10 @@ HRESULT get_allocatesBasePointer ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se viene allocato un puntatore di base per il codice in questo frame; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se un puntatore di base viene allocato per il codice nel frame; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

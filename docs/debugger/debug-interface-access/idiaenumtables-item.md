@@ -1,7 +1,7 @@
 ---
 title: 'IDiaEnumTables:: Item | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf2d6b14f17d42a128e59446e27bfc251de40d17
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c6a65bdca680bac7c3a5b2e6a5a671045cdef093
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743757"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467533"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 Recupera una tabella per mezzo di un indice o un nome.
@@ -34,16 +34,16 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parametri
  `index`
 
-in Indice o nome del [IDiaTable](../../debugger/debug-interface-access/idiatable.md) da recuperare. Se viene usata una variante Integer, deve essere compresa nell'intervallo da 0 a `count`-1, dove `count` è come restituito dal metodo [IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) .
+in Indice o nome del [IDiaTable](../../debugger/debug-interface-access/idiatable.md) da recuperare. Se viene usata una variante Integer, deve essere compresa nell'intervallo da 0 a `count` -1, dove `count` viene restituito dal metodo [IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) .
 
  `table`
 
 out Restituisce un oggetto [IDiaTable](../../debugger/debug-interface-access/idiatable.md) che rappresenta la tabella desiderata.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  Se viene specificata una stringa Variant, la stringa assegna un nome a una tabella specifica. Il nome deve essere uno dei nomi di tabella come definito in [costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).
 
 ## <a name="example"></a>Esempio

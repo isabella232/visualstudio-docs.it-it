@@ -1,7 +1,7 @@
 ---
 title: IDiaSectionContrib | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 807b9ada9b9424481a184e548e741131d66ab853
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 82d1a52616273a1cfe1d54580c91ec4ba6e1c09e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742468"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466070"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 Recupera i dati che descrivono il contributo di una sezione, ovvero un blocco di memoria contiguo fornito all'immagine da un modulo.
@@ -29,7 +29,7 @@ IDiaSectionContrib : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaSectionContrib`.
+La tabella seguente illustra i metodi di `IDiaSectionContrib` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -58,13 +58,13 @@ La tabella seguente illustra i metodi di `IDiaSectionContrib`.
 |[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Recupera il CRC delle informazioni di rilocazione per la sezione.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Recupera l'identificatore modulo per la sezione.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Questa interfaccia viene ottenuta chiamando i metodi [IDiaEnumSectionContribs:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) e [IDiaEnumSectionContribs:: Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) . Per un esempio di come ottenere l'interfaccia `IDiaSectionContrib`, vedere l'interfaccia [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) .
+Questa interfaccia viene ottenuta chiamando i metodi [IDiaEnumSectionContribs:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) e [IDiaEnumSectionContribs:: Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) . Per un esempio di come ottenere l'interfaccia, vedere l'interfaccia [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) `IDiaSectionContrib` .
 
 ## <a name="example"></a>Esempio
-Questa funzione Mostra l'indirizzo di ogni sezione insieme a tutti i simboli associati. Vedere l'interfaccia [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) per vedere come viene ottenuta l'interfaccia `IDiaSectionContrib`.
+Questa funzione Mostra l'indirizzo di ogni sezione insieme a tutti i simboli associati. Vedere l'interfaccia [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) per vedere come `IDiaSectionContrib` viene ottenuta l'interfaccia.
 
 ```C++
 void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
@@ -131,9 +131,9 @@ Intestazione: dia2. h
 
 Libreria: diaguids. lib
 
-DLL: Msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 - [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)

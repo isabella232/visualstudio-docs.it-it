@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 024ccd78-5867-4ca7-bc26-548758e9ac53
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d05946db816e6bd209e364e11d5091163941a4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: de63223afda4ce5d00358fe3c06cabe90f2689aa
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741146"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464436"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
 Dato un valore di tag corrispondente, questo metodo restituisce un'enumerazione di simboli contenuti in questa funzione stub in corrispondenza di un indirizzo virtuale relativo specificato.
@@ -40,14 +40,14 @@ in RVA usato per filtrare i simboli che corrispondono alla variabile puntata con
 
  `ppResult`
 
-out Puntatore a un puntatore a interfaccia `IDiaEnumSymbols` inizializzato con il risultato.
+out Puntatore a un `IDiaEnumSymbols` puntatore a interfaccia inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="remarks"></a>Note
- Chiamare questo metodo solo su un'interfaccia `IDiaSymbol` che corrisponde a una funzione dello stub dell'acceleratore.
+## <a name="remarks"></a>Commenti
+ Chiamare questo metodo solo su un' `IDiaSymbol` interfaccia che corrisponde a una funzione dello stub di tasti di scelta rapida.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

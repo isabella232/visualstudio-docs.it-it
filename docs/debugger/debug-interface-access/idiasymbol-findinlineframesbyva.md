@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findInlineFramesByVA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 54295d3e-bbb6-4c10-ab9d-adcfc22b1f71
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2ec0280f7eab6d5dd44c4577cfde2cd3846e5fd
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ffe73d910520966f49e7cc345cd5abbf18a9d32a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741135"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464457"
 ---
 # <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
 Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato (VA).
@@ -36,12 +36,12 @@ in Specifica l'indirizzo come VA.
 
  `ppResult`
 
-out Contiene un oggetto `IDiaEnumSymbols` contenente l'elenco dei frame recuperati.
+out Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco dei frame recuperati.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

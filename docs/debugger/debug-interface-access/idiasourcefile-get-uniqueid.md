@@ -1,7 +1,7 @@
 ---
 title: IDiaSourceFile::get_uniqueId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a210c12384cbde55dafe6f3410b8fc840e8507
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b3f159211854e5b408d34c253a77893caf763bf2
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741784"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465199"
 ---
 # <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 Recupera un valore di chiave Integer semplice univoco per questa immagine.
@@ -36,10 +36,10 @@ HRESULT get_uniqueId ( 
 out Restituisce un valore di chiave Integer semplice univoco per questa immagine.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  Il confronto tra chiavi anziché stringhe può accelerare l'elaborazione dei numeri di riga.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

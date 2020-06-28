@@ -1,7 +1,7 @@
 ---
 title: IDiaInjectedSource | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 994f454372883f2516d1eab03bf1152693969b16
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7ae7095d2be479c5e7789a478b8d27632a1d2faa
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743313"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467008"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 Accede al codice sorgente inserito archiviato nell'origine dati DIA.
@@ -29,7 +29,7 @@ IDiaInjectedSource : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaInjectedSource`.
+La tabella seguente illustra i metodi di `IDiaInjectedSource` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -41,14 +41,14 @@ La tabella seguente illustra i metodi di `IDiaInjectedSource`.
 |[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Recupera l'indicatore della compressione di origine utilizzata.|
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Recupera i byte del codice sorgente.|
 
-## <a name="remarks"></a>Note
-L'origine inserita è il testo inserito durante la compilazione. Ciò non significa che il preprocessore `#include` utilizzato in C++.
+## <a name="remarks"></a>Commenti
+L'origine inserita è il testo inserito durante la compilazione. Questo non significa che il preprocessore `#include` utilizzato in C++.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Ottenere questa interfaccia chiamando il metodo [IDiaEnumInjectedSources:: Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) o [IDiaEnumInjectedSources:: Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) . Per un esempio di come ottenere l'interfaccia `IDiaInjectedSource`, vedere l'interfaccia [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) .
+Ottenere questa interfaccia chiamando il metodo [IDiaEnumInjectedSources:: Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) o [IDiaEnumInjectedSources:: Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) . Per un esempio di come ottenere l'interfaccia, vedere l'interfaccia [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) `IDiaInjectedSource` .
 
 ## <a name="example"></a>Esempio
-In questo esempio vengono visualizzati i dati disponibili nell'interfaccia `IDiaInjectedSource`. Per un approccio alternativo usando l'interfaccia [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) , vedere l'esempio nell'interfaccia [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) .
+In questo esempio vengono visualizzati i dati disponibili nell' `IDiaInjectedSource` interfaccia. Per un approccio alternativo usando l'interfaccia [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) , vedere l'esempio nell'interfaccia [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) .
 
 ```C++
 void PrintInjectedSource(IDiaInjectedSource* pSource)
@@ -117,9 +117,9 @@ Intestazione: dia2. h
 
 Libreria: diaguids. lib
 
-DLL: Msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)
 - [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)

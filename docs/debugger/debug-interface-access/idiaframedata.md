@@ -1,7 +1,7 @@
 ---
 title: IDiaFrameData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d586cfe3e78a320ffed42e7181463eb79a6b313a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee2f68066de6a41e6fd6a1cf4143613a7597d6f1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743462"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85467183"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Espone i dettagli di un stack frame.
@@ -29,7 +29,7 @@ IDiaFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaFrameData`.
+La tabella seguente illustra i metodi di `IDiaFrameData` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -45,21 +45,21 @@ La tabella seguente illustra i metodi di `IDiaFrameData`.
 |[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Recupera il numero di byte dei registri salvati inseriti nello stack.|
 |[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Recupera la stringa di programma utilizzata per calcolare il set di registri prima della chiamata alla funzione corrente.|
 |[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Recupera un flag che indica che la gestione delle eccezioni di sistema è attiva.|
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Recupera un flag che indica che C++ la gestione delle eccezioni è attiva.|
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Recupera un flag che indica che la gestione delle eccezioni C++ è attiva.|
 |[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Recupera un flag che indica che il blocco contiene il punto di ingresso di una funzione.|
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Recupera un flag che indica che il puntatore di base è allocato per il codice in questo intervallo di indirizzi. Metodo deprecato.|
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Recupera un flag che indica che il puntatore di base è allocato per il codice in questo intervallo di indirizzi. Questo metodo è deprecato.|
 |[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Recupera il tipo di frame specifico del compilatore.|
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Recupera l'interfaccia dati del frame per la funzione di inclusione.|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Esegue la rimozione dello stack e restituisce lo stato corrente dei registri in un'interfaccia di frame di percorso stack.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  I dettagli disponibili per un frame sono per i punti di esecuzione nell'intervallo di indirizzi indicato dall'indirizzo e dalla lunghezza del blocco.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Ottenere questa interfaccia chiamando il metodo [IDiaEnumFrameData:: Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) o [IDiaEnumFrameData:: Item](../../debugger/debug-interface-access/idiaenumframedata-item.md) . Per informazioni dettagliate, vedere l'interfaccia [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) .
 
 ## <a name="example"></a>Esempio
- In questo esempio vengono stampate le proprietà di un oggetto `IDiaFrameData`. Per un esempio di come viene ottenuta l'interfaccia `IDiaFrameData`, vedere l'interfaccia [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) .
+ In questo esempio vengono stampate le proprietà di un `IDiaFrameData` oggetto. Vedere l'interfaccia [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) per un esempio di come `IDiaFrameData` viene ottenuta l'interfaccia.
 
 ```C++
 void PrintFrameData(IDiaFrameData* pFrameData){
@@ -117,9 +117,9 @@ Intestazione: dia2. h
 
 Libreria: diaguids. lib
 
-DLL: Msdia80. dll
+DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findChildrenEx | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26fdced012baada390cdd0a112856b592d3c923e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 191991ffb842657b7a7c4f439ca04a05670bca7d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741275"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464583"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 Recupera gli elementi figlio del simbolo. I simboli locali restituiti includono informazioni sull'intervallo Live, se il programma viene compilato con l'ottimizzazione in.
@@ -53,7 +53,7 @@ out Restituisce un oggetto [IDiaEnumSymbols](../../debugger/debug-interface-acce
 ## <a name="return-value"></a>Valore restituito
  Restituisce `S_OK` se è stato trovato almeno un elemento figlio del simbolo oppure restituisce `S_FALSE` se non sono stati trovati elementi figlio; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  Questo metodo è la versione estesa di [IDiaSymbol:: findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).
 
 ## <a name="requirements"></a>Requisiti
@@ -61,9 +61,9 @@ out Restituisce un oggetto [IDiaEnumSymbols](../../debugger/debug-interface-acce
 
  Libreria: diaguids. lib
 
- DLL: msdia100. dll
+ DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

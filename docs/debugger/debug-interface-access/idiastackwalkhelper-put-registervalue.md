@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkHelper::put_registerValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619ed78584a9fe897b19d6ac2ffd4c28838c61ab
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d6a2fd6c7fbca54593a547a1f014fbe7726c814c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741378"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464702"
 ---
 # <a name="idiastackwalkhelperput_registervalue"></a>IDiaStackWalkHelper::put_registerValue
 Imposta il valore di un registro.
@@ -34,18 +34,18 @@ HRESULT put_registerValue ( 
 #### <a name="parameters"></a>Parametri
  `index`
 
-in Valore dell'enumerazione di [enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) che specifica il registro in cui scrivere.
+in Valore della CV_HREG_e enumerazione di [enumerazione](../../debugger/debug-interface-access/cv-hreg-e.md) che specifica il registro in cui scrivere.
 
  `NewVal`
 
 in Nuovo valore del registro.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  Nonostante le dimensioni del valore, un'implementazione deve archiviare solo ciò che il registro include normalmente. Un registro a 8 bit, ad esempio, conterrà solo gli 8 bit più bassi del valore specificato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [Enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

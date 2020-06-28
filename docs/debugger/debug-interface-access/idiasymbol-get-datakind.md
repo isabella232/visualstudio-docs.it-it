@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_dataKind | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1291c57425b7250af46b3b02ba8f407fb4959a05
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dbeff220bdb0f3c97b8e6588ff42c31b31b97ceb
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740713"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463946"
 ---
 # <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
 Recupera la classificazione variabile di un simbolo di dati.
@@ -36,18 +36,18 @@ HRESULT get_dataKind ( 
 out Restituisce un valore dell'enumerazione di [enumerazione DataKind](../../debugger/debug-interface-access/datakind.md) che specifica il tipo di dati, ad esempio Global, static o Constant.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisiti|Descrizione|
+|Requisito|Descrizione|
 |-----------------|-----------------|
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione DataKind](../../debugger/debug-interface-access/datakind.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame::get_registerValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d270b9b177367c9a15c2b64f6f8bc5607c5a459d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 42bd724e4f25b5475f89af32f5793ede8d66594a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741616"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464968"
 ---
 # <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
 Recupera il valore di un registro specificato come archiviato nel stack frame.
@@ -41,8 +41,8 @@ in Uno dei valori di enumerazione dell' [enumerazione CV_HREG_e](../../debugger/
 out Valore archiviato nel registro.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 - [Enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

@@ -1,7 +1,7 @@
 ---
 title: 'IDiaStackWalkHelper:: Searchforreturnaddress (| Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548475f45c9f7b0ec90e305e146b9c5f7b4fb20d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6b5be71af46845f413264c24f29272cf167f20e9
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741349"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464688"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
 Cerca nell'stack frame specificato l'indirizzo restituito della funzione più vicino.
@@ -41,8 +41,8 @@ in Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.m
 out Restituisce l'indirizzo restituito della funzione più vicino.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

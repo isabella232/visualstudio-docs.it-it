@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_customCallingConvention | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01fb33108c9952b8543d36b64b7743f4c0531be5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1a3a76c0927efad18e667a786b1678262da6ac4d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740742"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463967"
 ---
 # <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 Recupera un flag che specifica se la funzione dispone di una convenzione di chiamata personalizzata.
@@ -33,20 +33,20 @@ HRESULT get_customCallingConvention(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Restituisce `TRUE` se la funzione dispone di una convenzione di chiamata personalizzata. in caso contrario, restituisce `FALSE`, la funzione dispone di una convenzione di chiamata nota.
+out Restituisce `TRUE` se la funzione dispone di una convenzione di chiamata personalizzata; in caso contrario, restituisce `FALSE` , la funzione dispone di una convenzione di chiamata nota.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisiti|Descrizione|
+|Requisito|Descrizione|
 |-----------------|-----------------|
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

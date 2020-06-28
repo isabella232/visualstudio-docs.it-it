@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isHLSLData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 4662058b-c505-4ccf-ae03-739a62c814ca
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f158264bbbb18e074788925534c6c9ba1a9d79a6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 39ea8fab6616cb64b7870cb9a1d5cd0c706fa105
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740247"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463421"
 ---
 # <a name="idiasymbolget_ishlsldata"></a>IDiaSymbol::get_isHLSLData
 Specifica se questo simbolo rappresenta dati HLSL (High Level Shader Language).
@@ -30,10 +30,10 @@ HRESULT get_isHLSLData(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un `BOOL` che specifica se questo simbolo rappresenta i dati HLSL.
+out Puntatore a un oggetto `BOOL` che specifica se questo simbolo rappresenta i dati HLSL.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

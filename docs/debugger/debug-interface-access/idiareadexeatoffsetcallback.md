@@ -1,7 +1,7 @@
 ---
 title: IDiaReadExeAtOffsetCallback | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8498b0189a1d5bfb876417d4719adb3487065d5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a8db3960aebe4edc1669f2e7fbe4d40b60618bd0
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742821"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466469"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 Consente a un'applicazione client di fornire byte di un file eseguibile come specificato dalla posizione del file.
@@ -29,13 +29,13 @@ IDiaReadExeAtOffsetCallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDiaReadExeAtOffsetCallback`.
+ La tabella seguente illustra i metodi di `IDiaReadExeAtOffsetCallback` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Legge il numero specificato di byte a partire dall'offset specificato da un file eseguibile.|
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  L'applicazione client implementa questa interfaccia per fornire i byte del file eseguibile usando un offset assoluto nel file dell'eseguibile. Per usare un indirizzo virtuale relativo, implementare l'interfaccia [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -46,9 +46,9 @@ IDiaReadExeAtOffsetCallback : IUnknown
 
  Libreria: diaguids. lib
 
- DLL: Msdia80. dll
+ DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)

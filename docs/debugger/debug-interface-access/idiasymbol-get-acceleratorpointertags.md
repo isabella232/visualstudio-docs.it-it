@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: get_acceleratorPointerTags | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 30e13cee-e511-49ec-affd-99b0097071b2
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36b4bf9fdd362f4941e33745d59d481a473c607
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e2da182992999a582ea30f570734b366178a9521
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741108"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464408"
 ---
 # <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Restituisce tutti i valori dei tag del puntatore dell'acceleratore che corrispondono a una C++ funzione dello stub amp Accelerator.
+Restituisce tutti i valori dei tag del puntatore dell'acceleratore che corrispondono a una funzione C++ AMP Stub dell'acceleratore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,21 +32,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>Parametri
  `cnt`
 
-in Dimensioni della matrice di output `pPointerTags`.
+in Dimensioni della matrice di output `pPointerTags` .
 
  `pcnt`
 
-out Numero di tag del puntatore dell'acceleratore C++ nella funzione dello stub amp Accelerator.
+out Il numero di tag del puntatore acceleratore nella funzione C++ AMP Stub dell'acceleratore.
 
  `pPointerTags`
 
-out Puntatore di matrice `DWORD` riempito con i valori dei tag del puntatore dell'acceleratore C++ nella funzione dello stub dell'acceleratore amp.
+out `DWORD`Puntatore di matrice riempito con i valori dei tag del puntatore dell'acceleratore nella funzione C++ amp Stub dell'acceleratore.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="remarks"></a>Note
- Questo metodo viene chiamato su un'interfaccia `IDiaSymbol` che corrisponde a una C++ funzione dello stub amp Accelerator.
+## <a name="remarks"></a>Commenti
+ Questo metodo viene chiamato su un' `IDiaSymbol` interfaccia che corrisponde a una funzione dello stub di C++ amp Accelerator.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

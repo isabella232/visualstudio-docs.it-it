@@ -1,7 +1,7 @@
 ---
 title: IDiaSourceFile::get_checksumType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c85c6ce8f03534c3ed810e530dbd12d8c6d115be
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 88a192c9328d37447f12226a3d564ecae58fe41f
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741823"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465321"
 ---
 # <a name="idiasourcefileget_checksumtype"></a>IDiaSourceFile::get_checksumType
 Recupera il tipo di checksum.
@@ -36,21 +36,21 @@ HRESULT get_checksumType ( 
 out Restituisce il tipo di checksum.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  Il tipo di checksum è un valore di cui è possibile eseguire il mapping a un algoritmo di checksum. Ad esempio, il formato di file PDB standard può in genere avere uno dei valori seguenti:
 
 |Tipo di checksum|Etichetta CryptoAPI|Descrizione|
 |-------------------|---------------------|-----------------|
-|0|\<nessuno>|Nessun checksum presente.|
+|0|\<none>|Nessun checksum presente.|
 |1|`CALG_MD5`|checksum generato con l'algoritmo hash MD5.|
 |2|`CALG_SHA1`|checksum generato con l'algoritmo hash SHA1.|
 
- Le etichette di `CryptoAPI` provengono dall'enumerazione `ALG_ID`. Per ulteriori informazioni sugli algoritmi di hashing, consultare la sezione `CryptoAPI` di Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].
+ Le `CryptoAPI` etichette sono dall' `ALG_ID` enumerazione. Per ulteriori informazioni sugli algoritmi di hashing, consultare la `CryptoAPI` sezione di Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)] .
 
  Per ottenere i byte di checksum effettivi per il file di origine, chiamare il metodo [IDiaSourceFile:: get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 - [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)
