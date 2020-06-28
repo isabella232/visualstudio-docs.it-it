@@ -1,7 +1,7 @@
 ---
 title: IDiaLineNumber::get_compilandId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab4776029f13a68746a6b4d6ca0343450f477a9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4989e8f5436b9da842e7a72173a73aced8591c25
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72743225"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466917"
 ---
 # <a name="idialinenumberget_compilandid"></a>IDiaLineNumber::get_compilandId
 Recupera un identificatore univoco per il modulo che ha contribuito a questa riga.
@@ -33,10 +33,10 @@ HRESULT get_compilandId ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `DWORD` che contiene l'identificatore univoco per il modulo che ha contribuito a questa riga.
+out Restituisce `DWORD` un oggetto che contiene l'identificatore univoco per modulo che ha contribuito a questa riga.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

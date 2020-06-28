@@ -1,7 +1,7 @@
 ---
 title: 'IDiaPropertyStorage:: ReadMultiple | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cd1e419e1d08120274fc627a672eb52331ca50f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8681032840f09bcc4a90df66b3a6f37d664739ab
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742878"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466574"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 Legge le proprietà specificate dal set di proprietà corrente.
@@ -35,21 +35,21 @@ HRESULT ReadMultiple( 
 #### <a name="parameters"></a>Parametri
  `cpspec`
 
-in Numero di proprietà specificate nella matrice `rgpspec`. Se è zero, il metodo non restituisce alcuna proprietà ma restituisce `S_OK` come codice di esito positivo.
+in Numero di proprietà specificate nella `rgpspec` matrice. Se è zero, il metodo non restituisce alcuna proprietà ma restituisce `S_OK` un codice di esito positivo.
 
  `rgpspec`
 
-in Matrice di proprietà da leggere. Le proprietà possono essere specificate da un ID di proprietà o da un nome di stringa facoltativo. Non è necessario specificare le proprietà in un ordine particolare nella matrice. La matrice può contenere proprietà duplicate, con la conseguente restituzione di valori di proprietà duplicati per le proprietà semplici. Le proprietà non semplici dovrebbero restituire accesso negato per un tentativo di aprirle una seconda volta. La matrice può contenere una combinazione di ID di proprietà e ID di stringa. Questa matrice deve contenere almeno `cpspec` numero di valori di proprietà.
+in Matrice di proprietà da leggere. Le proprietà possono essere specificate da un ID di proprietà o da un nome di stringa facoltativo. Non è necessario specificare le proprietà in un ordine particolare nella matrice. La matrice può contenere proprietà duplicate, con la conseguente restituzione di valori di proprietà duplicati per le proprietà semplici. Le proprietà non semplici dovrebbero restituire accesso negato per un tentativo di aprirle una seconda volta. La matrice può contenere una combinazione di ID di proprietà e ID di stringa. Questa matrice deve contenere almeno un `cpspec` numero di valori di proprietà.
 
  `rgvar`
 
-[in, out] Matrice di strutture di `PROPVARIANT`, nello spazio dei nomi Microsoft. VisualStudio. OLE. Interop, da compilare con i valori per ogni proprietà. La matrice deve contenere almeno `cpspec` elementi di dimensioni. Il chiamante non deve inizializzare i valori nella matrice.
+[in, out] Matrice di `PROPVARIANT` strutture (nello spazio dei nomi Microsoft. VisualStudio. OLE. Interop) da compilare con i valori per ogni proprietà. La matrice deve contenere almeno `cpspec` elementi di dimensioni. Il chiamante non deve inizializzare i valori nella matrice.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non è stata trovata una o più delle proprietà. In caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se una o più proprietà non sono state trovate. In caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- Se una proprietà non viene trovata, la voce corrispondente nella matrice di `rgvar` contiene una `VARIANT` con il tipo di `VT_EMPTY`.
+## <a name="remarks"></a>Commenti
+ Se una proprietà non viene trovata, la voce corrispondente nella `rgvar` matrice contiene un oggetto `VARIANT` con il tipo di `VT_EMPTY` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

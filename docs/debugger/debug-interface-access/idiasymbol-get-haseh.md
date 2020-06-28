@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_hasEH | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f08cd539d3042ff0715a5c84445e4cc40214a41
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 178bc2744e74867c1954474a20e8c3640ade49c5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740545"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463757"
 ---
 # <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
-Recupera un flag che specifica se la funzione contiene una gestione delle eccezioni C++di tipo non gestito, ad esempio un blocco try/catch.
+Recupera un flag che specifica se la funzione contiene una gestione delle eccezioni di tipo C++ non gestita, ad esempio un blocco try/catch.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,20 +33,20 @@ HRESULT get_hasEH(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Restituisce `TRUE` se la funzione ha una C++gestione delle eccezioni in stile. in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se la funzione ha una gestione delle eccezioni di tipo C++. in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisiti|Descrizione|
+|Requisito|Descrizione|
 |-----------------|-----------------|
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

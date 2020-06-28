@@ -1,7 +1,7 @@
 ---
 title: IDiaSectionContrib::get_read | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206415f45c4f4f087b99064f772a679f15eb1506
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d60224ef5726559f781c49562dad0e8d8d9960d4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742565"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466196"
 ---
 # <a name="idiasectioncontribget_read"></a>IDiaSectionContrib::get_read
 Recupera un flag che indica se è possibile leggere la sezione.
@@ -33,10 +33,10 @@ HRESULT get_read ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se è possibile leggere la sezione. in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se è possibile leggere la sezione; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

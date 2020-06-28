@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_hasEHa | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f010fee3243a9ce202451fc9cc5cff1ed908118
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6c565a8c13b31feb78c8d60bf0b18bbc923f14f5
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740523"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463750"
 ---
 # <a name="idiasymbolget_haseha"></a>IDiaSymbol::get_hasEHa
 Recupera un flag che specifica se la funzione contiene la gestione delle eccezioni asincrona (strutturata).
@@ -33,23 +33,23 @@ HRESULT get_hasEHa(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Restituisce `TRUE` se la funzione ha una gestione asincrona delle eccezioni. in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se la funzione presenta una gestione asincrona delle eccezioni; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Note
- È possibile combinare la gestione delle eccezioni asincrona o strutturata C++con la gestione delle eccezioni di tipo, ma è necessaria una specifica opzione del compilatore,/EHA, per abilitarla.
+## <a name="remarks"></a>Commenti
+ È possibile combinare la gestione delle eccezioni asincrona o strutturata con la gestione delle eccezioni in stile C++, ma è necessaria una specifica opzione del compilatore,/EHa, per abilitarla.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisiti|Descrizione|
+|Requisito|Descrizione|
 |-----------------|-----------------|
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

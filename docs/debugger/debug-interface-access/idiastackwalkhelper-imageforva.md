@@ -1,7 +1,7 @@
 ---
 title: 'IDiaStackWalkHelper:: imageForVA | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609a9370181937323f2bc3e8ca0a0765cd1f4a12
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f28af62a4e5eaa89e92db533bf461dbecaf039d
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741391"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464716"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 Restituisce l'inizio dell'immagine di un eseguibile in memoria, dato un indirizzo virtuale in un punto qualsiasi dello spazio di memoria dell'eseguibile.
@@ -41,7 +41,7 @@ in Indirizzo virtuale situato in un punto qualsiasi dello spazio dell'eseguibile
 out Restituisce l'indirizzo virtuale iniziale dell'immagine dell'eseguibile.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

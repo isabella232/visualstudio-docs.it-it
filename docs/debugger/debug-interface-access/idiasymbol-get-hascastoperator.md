@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_hasCastOperator | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a5d030e56a279615dd2f23785993a0386a7380d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 97242a8945270d81362066abbc52450b61c1997b
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72740572"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85463799"
 ---
 # <a name="idiasymbolget_hascastoperator"></a>IDiaSymbol::get_hasCastOperator
 Recupera un flag che specifica se per il tipo di dati definito dall'utente sono definiti operatori di cast.
@@ -33,20 +33,20 @@ HRESULT get_hasCastOperator ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce un `TRUE` se per il tipo di dati definito dall'utente sono definiti operatori cast; in caso contrario, restituisce `FALSE`.
+out Restituisce un oggetto `TRUE` se per il tipo di dati definito dall'utente sono definiti operatori cast. in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisiti|Descrizione|
+|Requisito|Descrizione|
 |-----------------|-----------------|
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findFileById | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aafdd2270606ba6e56713e9166dbae2b8c635b41
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1893a361ab4043ad5969a7fa899c07fe18253b9a
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742266"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85465832"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 Recupera un file di origine in base all'identificatore del file di origine.
@@ -41,12 +41,12 @@ in Specifica l'identificatore del file di origine.
 out Restituisce un oggetto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) che rappresenta il file di origine recuperato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Commenti
  L'identificatore del file di origine è un valore univoco usato internamente per la DIA SDK per rendere univoci tutti i file di origine. Questo metodo viene in genere usato internamente per la DIA SDK.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

@@ -1,7 +1,7 @@
 ---
 title: 'IDiaSymbol:: findSymbolsForAcceleratorPointerTag | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: fb66852c-c5f7-4140-b9fe-20cb4e51a9fe
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1544471bd4ff9166d4c8f4c10f48840db6f576f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3219312a96e5ad23c0eef519d077faedacb2b824
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72741122"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85464422"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Restituisce il numero di tag del puntatore dell'acceleratore in una C++ funzione dello stub amp.
+Restituisce il numero di tag del puntatore acceleratore in una funzione stub C++ AMP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +35,11 @@ in Valore del tag del puntatore per il quale vengono trovati i record dei simbol
 
  `ppResult`
 
-out Puntatore a un puntatore a interfaccia `IDiaEnumSymbols` inizializzato con il risultato.
+out Puntatore a un `IDiaEnumSymbols` puntatore a interfaccia inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaPropertyStorage::ReadBOOL | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d776e37bab189e61d0264f4cbda24f89cb4501ce
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7d94e38ade7b44d7458a0918080214d00e0000aa
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742932"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466609"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-Legge `BOOL` valori in un set di proprietà.
+Legge `BOOL` i valori in un set di proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,17 +34,17 @@ HRESULT ReadBOOL ( 
 #### <a name="parameters"></a>Parametri
  `id`
 
-in Identificatore della proprietà da leggere (`PROPID` è definito in WTypes. h come `ULONG`).
+in Identificatore della proprietà da leggere ( `PROPID` è definito in Wtypes. h come `ULONG` ).
 
  `pValue`
 
 out Restituisce il valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BOOL`.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BOOL` .
 
-## <a name="remarks"></a>Note
- Per ottenere risultati coerenti, interpretare il valore `BOOL` in modo che i valori diversi da zero siano `TRUE` e che venga `FALSE` zero.
+## <a name="remarks"></a>Commenti
+ Per risultati coerenti, interpretare il `BOOL` valore in modo che i valori diversi da zero siano `TRUE` e zero sia `FALSE` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

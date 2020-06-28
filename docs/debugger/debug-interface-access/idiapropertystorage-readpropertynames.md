@@ -1,7 +1,7 @@
 ---
 title: 'IDiaPropertyStorage:: ReadPropertyNames | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f554485ae56a9d5f190c749879545165d299531c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 257546e54cb04713f2f13892ec782aca1712cfba
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72742866"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85466518"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 Recupera i nomi di stringa corrispondenti per gli identificatori di proprietà specificati.
@@ -35,21 +35,21 @@ HRESULT ReadPropertyNames (
 #### <a name="parameters"></a>Parametri
  `cpropid`
 
-in Numero di ID di proprietà in `rgpropid`.
+in Numero di ID di proprietà in `rgpropid` .
 
  `rgpropid`
 
-in Matrice di ID di proprietà per cui ottenere i nomi (`PROPID` è definito in WTypes. h come `ULONG`).
+in Matrice di ID di proprietà per cui ottenere i nomi ( `PROPID` è definito in Wtypes. h come `ULONG` ).
 
  `rglpwstrName`
 
 [in, out] Matrice di nomi di proprietà per gli ID di proprietà specificati. La matrice deve essere pre-allocata per contenere il numero richiesto di nomi di proprietà e deve essere in grado di contenere almeno `cpropid``BSTR` stringhe.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Note
- I nomi di proprietà restituiti devono essere liberati (chiamando la funzione `SysFreeString`) quando non sono più necessari.
+## <a name="remarks"></a>Commenti
+ I nomi di proprietà restituiti devono essere liberati (chiamando la `SysFreeString` funzione) quando non sono più necessari.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
