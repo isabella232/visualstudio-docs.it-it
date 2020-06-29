@@ -7,13 +7,13 @@ ms.assetid: 1530ca0a-f23f-44f1-9bde-792ea1265085
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 2e9d864003447248b6669286a34be34bd37383c6
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 0b36155b46d4e2d161fdf7b70e861790a66c7c7e
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386210"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85503443"
 ---
-## <a name="how-do-my-end-users-activate-their-subscription"></a>In che modo gli utenti finali possono attivare la sottoscrizione?
+## <a name="how-do-my-end-users-activate-their-visual-studio-subscription"></a>In che modo gli utenti finali possono attivare la sottoscrizione di Visual Studio?
 
 La sottoscrizione è attiva e può essere usata non appena viene assegnata dall'interno del [portale di amministrazione di Visual Studio](https://manage.visualstudio.com/subscribers). Il sottoscrittore può accedere immediatamente al [portale per i sottoscrittori di Visual Studio](https://my.visualstudio.com/) o all'IDE di Visual Studio e riceverà un messaggio di posta elettronica di benvenuto che informa che la sottoscrizione è stata assegnata.
