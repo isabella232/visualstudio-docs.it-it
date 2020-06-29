@@ -156,7 +156,7 @@ Per impostazione predefinita, il programma di installazione corrisponde alla lin
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Elenco degli ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
 * [Aggiornare Visual Studio](update-visual-studio.md)

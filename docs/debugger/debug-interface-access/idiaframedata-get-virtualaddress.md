@@ -38,5 +38,5 @@ out Restituisce l'indirizzo virtuale del codice per il frame.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
