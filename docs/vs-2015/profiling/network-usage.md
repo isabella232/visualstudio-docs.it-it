@@ -9,14 +9,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850755"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548421"
 ---
-# <a name="network-usage"></a>Utilizzo della rete
+# <a name="network-usage"></a>Utilizzo rete
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere dati sulle operazioni di rete eseguite con l'[API Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). L'analisi dei dati può essere utile nella risoluzione di problemi di accesso e autenticazione, di uso errato della cache, nonché in caso di problemi di prestazioni relativi a visualizzazione e download.  
@@ -29,9 +29,9 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 ## <a name="collecting-network-tool-data"></a>Raccolta dei dati dello strumento di rete  
  È consigliabile eseguire lo strumento **Rete** con un progetto di Visual Studio aperto nel computer di Visual Studio.  
   
-1. Apri il progetto in Visual Studio.  
+1. Aprire il progetto in Visual Studio.  
   
-2. Nel menu fare clic su **debug/Profiler prestazioni...** . Scegliere **rete**, quindi scegliere **Avvia**.  
+2. Nel menu fare clic su **debug/Profiler prestazioni...**. Scegliere **rete**, quindi scegliere **Avvia**.  
   
 3. Lo strumento di rete inizia a raccogliere il traffico di rete HTTP dell'app.  
   
@@ -41,7 +41,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
   
    La finestra di report dovrebbe essere analoga alla seguente:  
   
-   ![Finestra di rete](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![Finestra Rete](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analisi dei dati  
  È possibile analizzare il traffico HTTP acquisito mentre l'applicazione è in esecuzione o anche dopo che l'applicazione è stata chiusa, selezionando una delle operazioni di rete visualizzate nella visualizzazione di riepilogo.  
@@ -54,17 +54,17 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
   
  ![Riquadro dei dettagli dello strumento di rete](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|||  
+|Nome|Descrizione|  
 |-|-|  
 |**Intestazioni**|Informazioni sulle intestazioni della richiesta dell'evento.|  
 |**Corpo**|Dati relativi ai payload di richiesta e risposta.|  
-|**Parametri**|Nomi e valori dei parametri delle stringhe di query.|  
+|**Parameters**|Nomi e valori dei parametri delle stringhe di query.|  
 |**Cookie**|Dati relativi ai cookie di richiesta e risposta.|  
-|**Intervalli**|Grafico delle fasi di acquisizione delle risorse selezionate.|  
+|**Timings**|Grafico delle fasi di acquisizione delle risorse selezionate.|  
   
  La barra di **riepilogo** dello strumento Rete indica il numero di operazioni di rete visualizzate in un determinato momento, la quantità di dati trasferita, il tempo impiegato per il download e il numero di errori (richieste con risposte 4xx o 5xx) visibili.  
   
-### <a name="analysis-tips"></a>Suggerimenti sull’analisi  
+### <a name="analysis-tips"></a>Suggerimenti sull’analisi   
  Questo strumento evidenzia determinate aree che possono essere utili quando si esegue l’analisi correlata alla rete:  
   
 1. Le richieste gestite completamente dalla cache vengono visualizzate come **(dalla cache)** nella colonna **Ricevute**. Ciò consente di determinare se si sta utilizzando la cache in modo efficace per risparmiare la larghezza di banda dell’utente o se si stanno erroneamente memorizzando nella cache risposte fornendo agli utenti finali dell'applicazione dati obsoleti.  

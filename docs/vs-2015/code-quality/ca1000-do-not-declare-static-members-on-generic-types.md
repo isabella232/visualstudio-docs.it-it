@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1ef6c98c2808e639570b51d485df90bbdab72c43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 66bca5b8b039de59509cecf4ecfae6bd6b4f0162
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646358"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548330"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: Non dichiarare membri statici su tipi generici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|
 |CheckId|CA1000|
@@ -33,10 +33,10 @@ ms.locfileid: "72646358"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo generico visibile esternamente contiene un membro `static` (`Shared` nel Visual Basic).
+ Un tipo generico visibile esternamente contiene un `static` `Shared` membro (in Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando viene chiamato un membro `static` di un tipo generico, è necessario specificare l'argomento di tipo per il tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. La sintassi per specificare l'argomento di tipo in questi due casi è diversa e facile da confondere, come illustrato nelle chiamate seguenti:
+ Quando `static` viene chiamato un membro di un tipo generico, è necessario specificare l'argomento di tipo per il tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. La sintassi per specificare l'argomento di tipo in questi due casi è diversa e facile da confondere, come illustrato nelle chiamate seguenti:
 
 ```vb
 ' Shared method in a generic type.

@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8fffbdc2cf9f4e09fe98c8e14b6692802ab3f275
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a63d6e788dd1722d0c593469b225a4f1aeb4738d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661949"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548445"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Evitare l'utilizzo di parametri predefiniti
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Evitare l'uso di parametri predefiniti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
@@ -38,7 +38,7 @@ ms.locfileid: "72661949"
 ## <a name="rule-description"></a>Descrizione della regola
  I metodi che utilizzano parametri predefiniti sono consentiti nel Common Language Specification (CLS); Tuttavia, la CLS consente ai compilatori di ignorare i valori assegnati a questi parametri. Il codice scritto per i compilatori che ignorano i valori dei parametri predefiniti deve fornire in modo esplicito gli argomenti per ogni parametro predefinito. Per mantenere il comportamento desiderato tra i linguaggi di programmazione, i metodi che utilizzano parametri predefiniti devono essere sostituiti con overload del metodo che forniscono i parametri predefiniti.
 
- Il compilatore ignora i valori dei parametri predefiniti per l'estensione gestita per C++ quando accede al codice gestito. Il compilatore Visual Basic supporta i metodi con parametri predefiniti che usano la parola chiave [Optional](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) .
+ Il compilatore ignora i valori dei parametri predefiniti per l'estensione gestita per C++ quando accede a codice gestito. Il compilatore Visual Basic supporta i metodi con parametri predefiniti che usano la parola chiave [Optional](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, sostituire il metodo che usa parametri predefiniti con overload del metodo che forniscono i parametri predefiniti.

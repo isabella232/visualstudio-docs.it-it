@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6109e0dc18f98d0b22dfb5c548bd12447b53e61d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f800a550717abfabdfb9296fc8f6de49d127d73
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662991"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548200"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Gli assembly devono avere nomi sicuri validi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AssembliesShouldHaveValidStrongNames|
 |CheckId|CA2210|
@@ -46,7 +46,7 @@ ms.locfileid: "72662991"
 
 - L'assembly è stato firmato in modo errato o la firma non è riuscita.
 
-- L'assembly richiede le impostazioni del registro di sistema per il superamento della verifica. Ad esempio, lo strumento nome sicuro (sn. exe) è stato usato per ignorare la verifica per l'assembly.
+- L'assembly richiede le impostazioni del registro di sistema per il superamento della verifica. Ad esempio, lo strumento nome sicuro (Sn.exe) è stato usato per ignorare la verifica per l'assembly.
 
   Il nome sicuro protegge i client dal caricamento involontario di un assembly alterato. Gli assembly con nomi sicuri non devono essere distribuiti al di fuori di scenari molto limitati. Se si condividono o distribuiscono assembly non firmati correttamente, l'assembly può essere alterato, non essere caricato in Common Language Runtime oppure l'utente potrebbe avere la necessità di disabilitare la verifica nel proprio computer. Un assembly privo di nome sicuro ha uno dei seguenti svantaggi:
 
@@ -63,11 +63,11 @@ ms.locfileid: "72662991"
 
  Usare una delle procedure seguenti:
 
-- Usare lo strumento Assembly Linker (al. exe) fornito da [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK.
+- Usare lo strumento Assembly Linker (Al.exe) fornito dall' [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK.
 
-- Per la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v 1.0 o v 1.1, usare l'attributo <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> o <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>.
+- Per la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione 1.0 o 1.1, usare l' <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> attributo o.
 
-- Per il [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], usare l'opzione del compilatore `/keyfile` o `/keycontainer` [/keyfile (specificare la chiave o la coppia di chiavi per firmare un assembly)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) o [/keycontainer (specificare un contenitore di chiavi per la firma di un assembly)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) in C++).
+- Per [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] , usare l'opzione del `/keyfile` `/keycontainer` compilatore o [/keyfile (specificare la chiave o la coppia di chiavi per firmare un assembly)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) o [/keycontainer (specificare un contenitore di chiavi per firmare un assembly)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) in C++).
 
   **Per firmare l'assembly con un nome sicuro in Visual Studio**
 
@@ -89,11 +89,11 @@ ms.locfileid: "72662991"
 
    **Per firmare l'assembly con un nome sicuro all'esterno di Visual Studio**
 
-- Usare lo strumento nome sicuro (sn. exe) fornito da [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Per altre informazioni, vedere [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
+- Usare lo strumento nome sicuro (Sn.exe) fornito dall' [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Per ulteriori informazioni, vedere [Sn.exe (strumento nome sicuro)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Eliminare un avviso da questa regola solo se l'assembly viene usato in un ambiente in cui la manomissione del contenuto non costituisce un problema.
 
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [Procedura: firmare un assembly con un nome sicuro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [sn. exe (strumento nome sicuro)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ [Procedura: firmare un assembly con un nome sicuro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (strumento nome sicuro)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

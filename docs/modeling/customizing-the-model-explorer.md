@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione di Esplora modelli
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c12ac2063e6b3ac04e3c0e9b0c20c69ea91a35
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 625ba0d592d0dbdaa8cb910c366852fe32c5f220
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589708"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548369"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizzazione di Esplora modelli
 È possibile modificare l'aspetto e il comportamento di Esplora risorse per la finestra di progettazione del linguaggio specifico di dominio come indicato di seguito:
@@ -33,14 +33,14 @@ ms.locfileid: "75589708"
  Per modificare il titolo della finestra di Esplora generato, selezionare **comportamento di Esplora risorse** in **Esplora DSL**, quindi nella finestra **proprietà** impostare la proprietà **title** sul titolo desiderato.
 
 ## <a name="changing-the-tab-icon"></a>Modifica dell'icona della scheda
- Per modificare l'icona della scheda per Esplora risorse, usare un'icona 16x16-pixel in un file con estensione bmp. Inserire il file dell'icona nella cartella \DslPackage\Resources\, quindi modificare il nome del file in **ModelExplorerToolWindowBitmaps. bmp**. Ad esempio, è possibile modificare il file dell'icona Setup. ico di Visual Studio in formato BMP e rinominarlo **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. La finestra di progettazione generata visualizzerà questa icona nella scheda della finestra di esplorazione quando viene ancorata insieme a **Esplora soluzioni**.
+ Per modificare l'icona della scheda per Esplora risorse, usare un'icona 16x16-pixel in un file con estensione bmp. Inserire il file dell'icona nella cartella \DslPackage\Resources\, quindi modificare il nome del file in **ModelExplorerToolWindowBitmaps.bmp**. Ad esempio, è possibile modificare il file dell'icona Setup. ico di Visual Studio in formato BMP e rinominarlo in **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. La finestra di progettazione generata visualizzerà questa icona nella scheda della finestra di esplorazione quando viene ancorata insieme a **Esplora soluzioni**.
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>Impostazione delle icone personalizzate nei nodi di esplorazione
  È possibile personalizzare i nodi in Esplora risorse usando le impostazioni del nodo di esplorazione. Nella procedura seguente viene illustrato come aggiungere un'icona a un nodo.
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Per aggiungere un'icona a un nodo di esplorazione
 
-1. Creare una soluzione [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usando il modello di soluzione flusso attività.
+1. Creare una [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] soluzione usando il modello di soluzione flusso attività.
 
 2. Inserire un file con estensione BMP contenente un'icona 16x16-pixel nella cartella **Dsl\Resources** della soluzione.
 

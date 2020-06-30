@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 368dfd4c67277305672a89be9e5ab811d341b009
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330020"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548122"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Procedura: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni
 
@@ -24,7 +24,7 @@ Per impostazione predefinita, un file dei dati di profilatura con estensione *vs
 
 È possibile modificare i parametri di denominazione nella pagina **Generale** della finestra di dialogo delle proprietà per la sessione di prestazioni.
 
-|||
+|Parametro|Descrizione|
 |-|-|
 |*Percorso*|Directory che contiene il rapporto. Il percorso predefinito è la cartella della soluzione o il percorso predefinito per i progetti e le soluzioni dell'utente.|
 |*File-VSP*|Nome del file di dati di profilatura. Il nome predefinito è il nome della soluzione o del file eseguibile che viene profilato.|
@@ -39,7 +39,7 @@ Per impostazione predefinita, un file dei dati di profilatura con estensione *vs
 
 3. In **Rapporto** modificare le impostazioni seguenti:
 
-    |||
+    |Nome|Descrizione|
     |-|-|
     |**Percorso report**|Specificare una directory per archiviare i file di dati di profilatura.|
     |**Nome report**|Specificare un nome di base per i file.|

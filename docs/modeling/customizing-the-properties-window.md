@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione della finestra Proprietà
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589695"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548278"
 ---
 # <a name="customize-the-properties-window"></a>Personalizzare il Finestra Proprietà
 
@@ -40,7 +40,7 @@ Alcune delle funzionalità dinamiche degli elementi grafici possono essere rappr
 
 Fare clic con il pulsante destro del mouse su una classe Shape nella definizione DSL, scegliere **Aggiungi esposto**, quindi scegliere una funzionalità.
 
-Nelle forme è possibile esporre le proprietà **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Sui connettori è possibile esporre il **colore**`,`proprietà **TextColor**, **DashStyle**e **Thickness** . Nei diagrammi è possibile esporre le proprietà **FillColor** e **TextColor** .
+Nelle forme è possibile esporre le proprietà **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Sui connettori è possibile esporre le proprietà **color** `,` **TextColor**, **DashStyle**e **Thickness** . Nei diagrammi è possibile esporre le proprietà **FillColor** e **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Inoltring: visualizzare le proprietà degli elementi correlati
 
@@ -52,7 +52,7 @@ Questo effetto è denominato *inoltring di proprietà*e si verifica automaticame
 
 Quando l'utente seleziona una forma o un connettore o un elemento nella finestra di esplorazione, nel Finestra Proprietà vengono visualizzate le proprietà seguenti:
 
-- Proprietà del dominio definite nella classe di dominio dell'elemento del modello, incluse quelle definite nelle classi di base. Un'eccezione è rappresentata dalle proprietà del dominio per le quali **è** possibile eseguire l'`False`.
+- Proprietà del dominio definite nella classe di dominio dell'elemento del modello, incluse quelle definite nelle classi di base. Un'eccezione è rappresentata dalle proprietà del dominio per le quali è stato impostato l'oggetto da **sfogliare** `False` .
 
 - Nomi degli elementi collegati tramite relazioni che hanno una molteplicità pari a 0.. 1. Questo fornisce un metodo pratico per visualizzare gli elementi collegati facoltativamente, anche se non è stato definito un mapping del connettore per la relazione.
 
@@ -71,7 +71,7 @@ Nella procedura seguente si presuppone che sia stato creato un linguaggio DSL. I
 
 #### <a name="forward-a-property-from-another-element"></a>Inoltri una proprietà da un altro elemento
 
-1. Creare una soluzione [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] che contenga almeno due classi, che in questo esempio sono denominate **libro** e **autore**. Deve essere presente una relazione di tipo tra **book** e **Author**.
+1. Creare una [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] soluzione che contenga almeno due classi, che in questo esempio sono denominate **libro** e **autore**. Deve essere presente una relazione di tipo tra **book** e **Author**.
 
     La molteplicità del ruolo di origine (il ruolo sul lato **libro** ) dovrebbe essere 0.. 1 o 1.. 1, in modo che ogni **libro** abbia un solo **autore**.
 
@@ -132,7 +132,7 @@ Tuttavia, è possibile specificare gli editor e i tipi seguenti:
 
     Nella Finestra Proprietà selezionare il tipo esterno dall'elenco a discesa nel campo **tipo** .
 
-   In questa fase, gli utenti possono visualizzare i valori della proprietà, ma non modificarli. I valori visualizzati vengono ottenuti dalla funzione `ToString()`. È possibile scrivere il codice programma che imposta il valore della proprietà, ad esempio in un comando o in una regola.
+   In questa fase, gli utenti possono visualizzare i valori della proprietà, ma non modificarli. I valori visualizzati vengono ottenuti dalla `ToString()` funzione. È possibile scrivere il codice programma che imposta il valore della proprietà, ad esempio in un comando o in una regola.
 
 ### <a name="set-a-property-editor"></a>Impostare un editor di proprietà
 
@@ -146,9 +146,9 @@ Aggiungere un attributo CLR alla proprietà di dominio, nel formato seguente:
 
 È possibile impostare l'attributo su una proprietà usando la voce di **attributo personalizzata** nel finestra Proprietà.
 
-Il tipo di `AnEditor` deve essere derivato dal tipo specificato nel secondo parametro. Il secondo parametro deve essere <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.ComponentEditor>. Per ulteriori informazioni, vedere <xref:System.ComponentModel.EditorAttribute>.
+Il tipo di `AnEditor` deve essere derivato dal tipo specificato nel secondo parametro. Il secondo parametro deve essere <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.ComponentEditor> . Per altre informazioni, vedere <xref:System.ComponentModel.EditorAttribute>.
 
-È possibile specificare un editor personalizzato o un editor .NET, ad esempio <xref:System.Windows.Forms.Design.FileNameEditor> o <xref:System.Drawing.Design.ImageEditor>. Ad esempio, usare la procedura seguente per avere una proprietà in cui l'utente può immettere un nome file.
+È possibile specificare un editor personalizzato o un editor .NET, ad esempio <xref:System.Windows.Forms.Design.FileNameEditor> o <xref:System.Drawing.Design.ImageEditor> . Ad esempio, usare la procedura seguente per avere una proprietà in cui l'utente può immettere un nome file.
 
 #### <a name="define-a-file-name-domain-property"></a>Definire una proprietà del dominio del nome file
 
@@ -169,7 +169,7 @@ Il tipo di `AnEditor` deve essere derivato dal tipo specificato nel secondo para
 
     1. Premere CTRL + F5 o F5. Nella soluzione di debug aprire un file di test. Creare un elemento della classe di dominio e selezionarlo.
 
-    2. Nella Finestra Proprietà selezionare la proprietà di dominio. Il campo del valore Mostra i puntini di sospensione **[...]** .
+    2. Nella Finestra Proprietà selezionare la proprietà di dominio. Il campo del valore Mostra i puntini di sospensione **[...]**.
 
     3. Fare clic sui puntini di sospensione. Verrà visualizzata una finestra di dialogo file. Selezionare un file e chiudere la finestra di dialogo. Il percorso del file è ora il valore della proprietà di dominio.
 
@@ -177,13 +177,13 @@ Il tipo di `AnEditor` deve essere derivato dal tipo specificato nel secondo para
 
 È possibile definire un editor personalizzato. Questa operazione può essere eseguita per consentire all'utente di modificare un tipo definito o di modificare un tipo standard in modo speciale. Ad esempio, è possibile consentire all'utente di immettere una stringa che rappresenta una formula.
 
-Per definire un editor, è necessario scrivere una classe derivata da <xref:System.Drawing.Design.UITypeEditor>. La classe deve eseguire l'override di:
+Per definire un editor, è necessario scrivere una classe derivata da <xref:System.Drawing.Design.UITypeEditor> . La classe deve eseguire l'override di:
 
 - <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, per interagire con l'utente e aggiornare il valore della proprietà.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, per specificare se l'editor apre una finestra di dialogo o fornisce un menu a discesa.
 
-È anche possibile fornire una rappresentazione grafica del valore della proprietà che verrà visualizzato nella griglia delle proprietà. A tale scopo, eseguire l'override di `GetPaintValueSupported`e `PaintValue`.  Per ulteriori informazioni, vedere <xref:System.Drawing.Design.UITypeEditor>.
+È anche possibile fornire una rappresentazione grafica del valore della proprietà che verrà visualizzato nella griglia delle proprietà. A tale scopo, eseguire l'override di `GetPaintValueSupported` e `PaintValue` .  Per altre informazioni, vedere <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Aggiungere il codice in un file di codice separato nel progetto **DSL** .
@@ -210,7 +210,7 @@ Per utilizzare questo editor, impostare l' **attributo personalizzato** di una p
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-Per ulteriori informazioni, vedere <xref:System.Drawing.Design.UITypeEditor>.
+Per altre informazioni, vedere <xref:System.Drawing.Design.UITypeEditor>.
 
 ## <a name="provide-a-drop-down-list-of-values"></a>Fornire un elenco a discesa di valori
 

@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 259e0d17ccf71518759ac192ee87a6ef5b921b23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dad2f90a51a4247a4c111ef51e85a28ba1a118ce
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668286"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548473"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Non passare i tipi per riferimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotPassTypesByReference|
 |CheckId|CA1045|
@@ -33,19 +33,19 @@ ms.locfileid: "72668286"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo pubblico o protetto in un tipo pubblico dispone di un parametro `ref` che accetta un tipo primitivo, un tipo di riferimento o un tipo di valore che non è uno dei tipi incorporati.
+ Un metodo pubblico o protetto in un tipo pubblico dispone di un `ref` parametro che accetta un tipo primitivo, un tipo di riferimento o un tipo di valore che non è uno dei tipi incorporati.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il passaggio di tipi per riferimento (con `out` o `ref`) richiede l'utilizzo di puntatori, la comprensione della differenza tra tipi di valore e tipi di riferimento e la gestione di metodi che hanno più valori restituiti. Inoltre, la differenza tra i parametri `out` e `ref` non è ampiamente riconosciuta.
+ Il passaggio di tipi per riferimento (tramite `out` o `ref` ) richiede l'utilizzo di puntatori, la comprensione della differenza tra tipi di valore e tipi di riferimento e la gestione di metodi che hanno più valori restituiti. Inoltre, la differenza tra `out` i `ref` parametri e non è ampiamente riconosciuta.
 
  Quando un tipo di riferimento viene passato "per riferimento", il metodo intende utilizzare il parametro per restituire un'istanza diversa dell'oggetto. Il passaggio di un tipo di riferimento per riferimento è noto anche come utilizzo di un puntatore doppio, puntatore a un puntatore o doppio riferimento indiretto. Utilizzando la convenzione di chiamata predefinita, che viene passata "per valore", un parametro che accetta un tipo di riferimento riceve già un puntatore all'oggetto. Il puntatore, non l'oggetto a cui fa riferimento, viene passato per valore. Il passaggio per valore significa che il metodo non può modificare il puntatore in modo che punti a una nuova istanza del tipo di riferimento, ma può modificare il contenuto dell'oggetto a cui punta. Per la maggior parte delle applicazioni questo è sufficiente e produce il comportamento desiderato.
 
- Se un metodo deve restituire un'istanza diversa, usare il valore restituito del metodo per eseguire questa operazione. Vedere la classe <xref:System.String?displayProperty=fullName> per un'ampia gamma di metodi che operano sulle stringhe e restituiscono una nuova istanza di una stringa. Utilizzando questo modello, viene lasciato al chiamante di decidere se l'oggetto originale viene conservato.
+ Se un metodo deve restituire un'istanza diversa, usare il valore restituito del metodo per eseguire questa operazione. Vedere la <xref:System.String?displayProperty=fullName> classe per un'ampia gamma di metodi che operano sulle stringhe e restituiscono una nuova istanza di una stringa. Utilizzando questo modello, viene lasciato al chiamante di decidere se l'oggetto originale viene conservato.
 
- Sebbene i valori restituiti siano comuni e utilizzati molto frequentemente, l'applicazione corretta dei parametri `out` e `ref` richiede competenze di progettazione e codifica intermedie. Gli architetti di librerie che progettano per i destinatari generali non dovrebbero aspettarsi che gli utenti lavorino con i parametri `out` o `ref`.
+ Sebbene i valori restituiti siano comuni e utilizzati molto spesso, l'applicazione corretta di `out` `ref` parametri e richiede competenze di progettazione e codifica intermedie. Gli architetti di librerie che progettano per i destinatari generali non dovrebbero prevedere agli utenti di usare i `out` `ref` parametri o.
 
 > [!NOTE]
-> Quando si utilizzano parametri di grandi dimensioni, le risorse aggiuntive necessarie per copiare queste strutture possono causare un effetto sulle prestazioni quando si passa per valore. In questi casi, è possibile prendere in considerazione l'uso di parametri `ref` o `out`.
+> Quando si utilizzano parametri di grandi dimensioni, le risorse aggiuntive necessarie per copiare queste strutture possono causare un effetto sulle prestazioni quando si passa per valore. In questi casi, è possibile prendere in considerazione l'uso di `ref` `out` parametri o.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola causata da un tipo di valore, fare in modo che il metodo restituisca l'oggetto come valore restituito. Se il metodo deve restituire più valori, riprogettarlo per restituire una singola istanza di un oggetto che include i valori.
@@ -56,17 +56,17 @@ ms.locfileid: "72668286"
  È possibile eliminare un avviso da questa regola in modo sicuro; Tuttavia, questo progetto potrebbe causare problemi di usabilità.
 
 ## <a name="example"></a>Esempio
- La libreria seguente mostra due implementazioni di una classe che genera risposte ai commenti e suggerimenti dell'utente. La prima implementazione (`BadRefAndOut`) impone l'utente della libreria per la gestione di tre valori restituiti. La seconda implementazione (`RedesignedRefAndOut`) semplifica l'esperienza utente restituendo un'istanza di una classe contenitore (`ReplyData`) che gestisce i dati come una singola unità.
+ La libreria seguente mostra due implementazioni di una classe che genera risposte ai commenti e suggerimenti dell'utente. La prima implementazione ( `BadRefAndOut` ) forza l'utente della libreria a gestire tre valori restituiti. La seconda implementazione ( `RedesignedRefAndOut` ) semplifica l'esperienza utente restituendo un'istanza di una classe contenitore ( `ReplyData` ) che gestisce i dati come una singola unità.
 
  [!code-csharp[FxCop.Design.NoRefOrOut#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NoRefOrOut/cs/FxCop.Design.NoRefOrOut.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nell'applicazione seguente viene illustrata l'esperienza dell'utente. La chiamata alla libreria riprogettata (metodo `UseTheSimplifiedClass`) è più semplice e le informazioni restituite dal metodo sono facilmente gestibili. L'output dei due metodi è identico.
+ Nell'applicazione seguente viene illustrata l'esperienza dell'utente. La chiamata alla libreria riprogettata ( `UseTheSimplifiedClass` metodo) è più semplice e le informazioni restituite dal metodo sono facilmente gestibili. L'output dei due metodi è identico.
 
  [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestNoRefOrOut/cs/FxCop.Design.TestNoRefOrOut.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nella libreria di esempio seguente viene illustrato come vengono utilizzati i parametri `ref` per i tipi di riferimento e viene illustrato un modo migliore per implementare questa funzionalità.
+ Nella libreria di esempio seguente viene illustrata la modalità `ref` di utilizzo dei parametri per i tipi di riferimento e viene illustrato un modo migliore per implementare questa funzionalità.
 
  [!code-csharp[FxCop.Design.RefByRefNo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.RefByRefNo/cs/FxCop.Design.RefByRefNo.cs#1)]
 
@@ -77,11 +77,13 @@ ms.locfileid: "72668286"
 
  Questo esempio produce il seguente output:
 
- **Modifica del puntatore-passato per valore:** 
-**12345** 
-**12345** 
-**modifica del puntatore-passato per riferimento:** 
-**12345** 
-**12345 ABCDE** 1**passaggio per valore restituito: **3**12345 ABCDE**
+ **Modifica del puntatore passato per valore:** 
+ **12345** 
+ **12345** 
+ **Modifica del puntatore-passato per riferimento:** 
+ **12345** 
+ **12345 ABCDE** 
+ **Passaggio per valore restituito:** 
+ **12345 ABCDE**
 ## <a name="related-rules"></a>Regole correlate
  [CA1021: Evitare parametri out](../code-quality/ca1021-avoid-out-parameters.md)

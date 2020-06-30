@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione di strumenti e della casella degli strumenti
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,18 +13,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8e9fc3a9ecbadc47c3390d2d4a9b504a316658
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589721"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548291"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizzazione di strumenti e della casella degli strumenti
 
 È necessario definire le voci della casella degli strumenti per gli elementi che gli utenti potranno aggiungere ai propri modelli. Esistono due tipi di strumenti: strumenti elemento e strumenti di connessione. Nella finestra di progettazione generata, un utente può selezionare uno strumento elemento per trascinare forme nel diagramma e uno strumento di connessione per tracciare i collegamenti tra le forme. In generale, gli strumenti elemento consentono agli utenti di aggiungere istanze di classi di dominio ai modelli e gli strumenti di connessione consentono di aggiungere istanze di relazioni di dominio.
 
-## <a name="ToolboxDef"></a>Modalità di definizione della casella degli strumenti
+## <a name="how-the-toolbox-is-defined"></a><a name="ToolboxDef"></a>Modalità di definizione della casella degli strumenti
  In DSL Explorer espandere il nodo Editor e tutti i sottonodi. Verrà visualizzata una gerarchia simile alla seguente:
 
 ```
@@ -69,7 +69,7 @@ La proprietà **Generatore** di connessione di uno strumento di connessione fa r
 
 3. Impostare la proprietà **icona della casella degli strumenti** in modo che faccia riferimento a una bitmap 16x16.
 
-     Se si vuole definire una nuova icona, creare un file bitmap in Esplora soluzioni nella cartella **Dsl\Resources** . Il file deve avere i valori di proprietà seguenti: **azione di compilazione** = **contenuto**; **Copiare nella directory di Output** = non **copiare**.
+     Se si vuole definire una nuova icona, creare un file bitmap in Esplora soluzioni nella cartella **Dsl\Resources** . Il file deve avere i valori di proprietà seguenti: contenuto dell' **azione di compilazione**  =  **Content**; **Copia nella directory**  =  di output Non **copiare**.
 
 4. **Per uno strumento elemento:** Impostare la proprietà **Class** dello strumento per fare riferimento a una classe di dominio concreta mappata a una forma.
 
@@ -79,7 +79,7 @@ La proprietà **Generatore** di connessione di uno strumento di connessione fa r
 
      Se lo strumento non viene visualizzato, arrestare l'esperimento sperimentale di Visual Studio. Nel menu **Start** di Windows eseguire **Reimposta l'istanza sperimentale di Microsoft Visual Studio 2010**. Nel menu **Compila** fare clic su **Ricompila soluzione**. Testare di nuovo il DSL.
 
-## <a name="customizing"></a>Personalizzazione degli strumenti degli elementi
+## <a name="customizing-element-tools"></a><a name="customizing"></a>Personalizzazione degli strumenti degli elementi
  Per impostazione predefinita, lo strumento creerà una singola istanza della classe specificata, ma è possibile scegliere tra due alternative:
 
 - Definire le direttive di merge degli elementi su altre classi, per consentire loro di accettare nuove istanze di questa classe e di creare collegamenti aggiuntivi quando viene creato il nuovo elemento. Ad esempio, è possibile consentire all'utente di rilasciare un commento su un altro elemento e quindi creare un collegamento di riferimento tra i due.
@@ -90,7 +90,7 @@ La proprietà **Generatore** di connessione di uno strumento di connessione fa r
 
 - Scrivere codice per personalizzare lo strumento in modo che possa creare gruppi di elementi. Lo strumento è inizializzato dai metodi in ToolboxHelper.cs che possono essere sostituiti. Per ulteriori informazioni, vedere [creazione di gruppi di elementi da uno strumento](#groups).
 
-## <a name="groups"></a>Creazione di gruppi di elementi da uno strumento
+## <a name="creating-groups-of-elements-from-a-tool"></a><a name="groups"></a>Creazione di gruppi di elementi da uno strumento
  Ogni strumento elemento contiene un prototipo degli elementi che deve creare. Per impostazione predefinita, ogni strumento elemento crea un singolo elemento, ma è anche possibile creare un gruppi di oggetti correlati con un solo strumento. A questo scopo, è necessario inizializzare lo strumento con un prototipo <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> che contiene gli elementi correlati.
 
  L'esempio seguente è estratto da un DSL in cui è presente un tipo Transistor. Ogni transistor dispone di tre terminali denominati. Nello strumento elemento per i transistor è archiviato un prototipo contenente quattro elementi modello e tre collegamenti di relazione. Quando l'utente trascina lo strumento nel diagramma, viene creata un'istanza del prototipo che viene quindi collegato alla radice del modello.
@@ -139,7 +139,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 }  }    }
 ```
 
-## <a name="connections"></a>Personalizzazione degli strumenti di connessione
+## <a name="customizing-connection-tools"></a><a name="connections"></a>Personalizzazione degli strumenti di connessione
  Generalmente uno strumento elemento viene creato quando si crea una nuova classe connettore. In alternativa, è possibile sottoporre uno strumento a overload consentendo ai tipi delle due entità finali di determinare il tipo di relazione. È ad esempio possibile definire uno strumento di connessione che può creare sia relazioni Persona-Persona sia relazioni Persona-Città.
 
  Gli strumenti di connessione richiamano i generatori di connessioni. Usare i generatori di connessioni per specificare il modo in cui gli utenti possono collegare gli elementi nella finestra di progettazione generata. I generatori di connessioni consentono di specificare gli elementi che si possono collegare e il tipo di collegamento che viene creato tra essi.
@@ -184,7 +184,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  Nell'esempio relativo al diagramma dei componenti, il generatore di connessioni per la relazione di dominio Connessione è personalizzato per limitare le connessioni che possono essere stabilite tra le porte. Nell'illustrazione seguente viene mostrato che è possibile stabilire connessioni solo da elementi `OutPort` a elementi `InPort`, ma è possibile annidare i componenti l'uno all'interno dell'altro.
 
- **Connessione in arrivo a un OutPort da un componente annidato**
+ **Connessione in ingresso a un elemento OutPort da un componente annidato**
 
  ![Generatore di connessioni](../modeling/media/connectionbuilder_3.png)
 
@@ -194,7 +194,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  ![Immagine del generatore di connessioni](../modeling/media/connectionbuilder_4a.png)
 
- **Direttiva di connessione a collegamento nella finestra Dettagli DSL**
+ **Direttiva di connessione di collegamento nella finestra Dettagli DSL**
 
  ![Direttiva di connessione a collegamento nella finestra Dettagli DSL](../modeling/media/connectionbuilder_4b.png)
 
