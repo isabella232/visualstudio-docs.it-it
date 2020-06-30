@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2062c7518545300074a0377b7a9cca7ddf1a8aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: babef652bbfa55d6549cf0e43ddae0920b3ff302
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603372"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539490"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: I parametri URI non devono essere stringhe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|UriParametersShouldNotBeStrings|
 |CheckId|CA1054|
@@ -33,19 +33,19 @@ ms.locfileid: "72603372"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo dichiara un metodo con un parametro di stringa il cui nome contiene "URI", "URI", "urn", "urn", "URL" o "URL" e il tipo non dichiara un overload corrispondente che accetta un parametro <xref:System.Uri?displayProperty=fullName>.
+ Un tipo dichiara un metodo con un parametro di stringa il cui nome contiene "URI", "URI", "urn", "urn", "URL" o "URL" e il tipo non dichiara un overload corrispondente che accetta un <xref:System.Uri?displayProperty=fullName> parametro.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola suddivide il nome del parametro in token in base alla convenzione dell'involucro Camel e controlla se ogni token è uguale a "URI", "URI", "urn", "urn", "URL" o "URL". Se esiste una corrispondenza, la regola presuppone che il parametro rappresenti un URI (Uniform Resource Identifier). Una rappresentazione in forma di stringa di un URI è soggetta a errori di analisi e codifica e può creare vulnerabilità nella sicurezza. Se un metodo accetta una rappresentazione di stringa di un URI, è necessario fornire un overload corrispondente che accetta un'istanza della classe <xref:System.Uri>, che fornisce questi servizi in modo sicuro e sicuro.
+ Questa regola suddivide il nome del parametro in token in base alla convenzione dell'involucro Camel e controlla se ogni token è uguale a "URI", "URI", "urn", "urn", "URL" o "URL". Se esiste una corrispondenza, la regola presuppone che il parametro rappresenti un URI (Uniform Resource Identifier). Una rappresentazione in forma di stringa di un URI è soggetta a errori di analisi e codifica e può creare vulnerabilità nella sicurezza. Se un metodo accetta una rappresentazione di stringa di un URI, è necessario fornire un overload corrispondente che accetta un'istanza della <xref:System.Uri> classe, che fornisce questi servizi in modo sicuro e sicuro.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, impostare il parametro su un tipo <xref:System.Uri>; si tratta di una modifica di rilievo. In alternativa, fornire un overload del metodo che accetta un parametro di <xref:System.Uri>; si tratta di una modifica senza interruzioni.
+ Per correggere una violazione di questa regola, modificare il parametro in un <xref:System.Uri> tipo. si tratta di una modifica di rilievo. In alternativa, fornire un overload del metodo che accetta un <xref:System.Uri> parametro. si tratta di una modifica che non si interrompe.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola se il parametro non rappresenta un URI.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo, `ErrorProne`, che viola questa regola e un tipo, `SaferWay`, che soddisfa la regola.
+ Nell'esempio seguente viene illustrato un tipo, `ErrorProne` , che viola la regola e un tipo, `SaferWay` , che soddisfa la regola.
 
  [!code-cpp[FxCop.Design.UriNotString#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/cpp/FxCop.Design.UriNotString.cpp#1)]
  [!code-csharp[FxCop.Design.UriNotString#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.UriNotString/cs/FxCop.Design.UriNotString.cs#1)]

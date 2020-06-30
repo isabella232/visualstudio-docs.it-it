@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bb7404d9add159f182ae44b22444dded1aafca20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bc0e88265245d795697d32a9e6a95909c0415259
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658646"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538658"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Verificare la sintassi di SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ReviewSuppressUnmanagedCodeSecurityUsage|
 |CheckId|CA2118|
@@ -33,14 +33,14 @@ ms.locfileid: "72658646"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un membro o un tipo pubblico o protetto ha l'attributo <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>.
+ Un membro o un tipo pubblico o protetto ha l' <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> modifica il comportamento predefinito del sistema di sicurezza per i membri che eseguono codice non gestito utilizzando l'interoperabilità COM o la chiamata della piattaforma. In genere, il sistema crea [dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) per l'autorizzazione per il codice non gestito. Questa richiesta si verifica in fase di esecuzione per ogni chiamata del membro e controlla ogni chiamante nello stack di chiamate per l'autorizzazione. Quando l'attributo è presente, il sistema esegue [richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) per l'autorizzazione: le autorizzazioni del chiamante immediato vengono controllate quando il chiamante viene compilato tramite JIT.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>modifica il comportamento predefinito del sistema di sicurezza per i membri che eseguono codice non gestito utilizzando l'interoperabilità COM o la chiamata della piattaforma. In genere, il sistema crea [dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) per l'autorizzazione per il codice non gestito. Questa richiesta si verifica in fase di esecuzione per ogni chiamata del membro e controlla ogni chiamante nello stack di chiamate per l'autorizzazione. Quando l'attributo è presente, il sistema esegue [richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) per l'autorizzazione: le autorizzazioni del chiamante immediato vengono controllate quando il chiamante viene compilato tramite JIT.
 
  Questo attributo viene principalmente usato per aumentare le prestazioni. L'aumento delle prestazioni, tuttavia, comporta notevoli rischi in termini di sicurezza. Se si inserisce l'attributo nei membri pubblici che chiamano metodi nativi, i chiamanti nello stack di chiamate (ad eccezione del chiamante immediato) non necessitano dell'autorizzazione per il codice non gestito per l'esecuzione di codice non gestito. A seconda delle azioni del membro pubblico e della gestione dell'input, potrebbe consentire ai chiamanti non attendibili di accedere alle funzionalità normalmente limitate al codice attendibile.
 
- Il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] si basa sui controlli di sicurezza per impedire ai chiamanti di accedere direttamente allo spazio degli indirizzi del processo corrente. Poiché questo attributo Ignora la normale sicurezza, il codice costituisce una minaccia grave se può essere usato per leggere o scrivere nella memoria del processo. Si noti che il rischio non è limitato ai metodi che forniscono intenzionalmente l'accesso alla memoria del processo. è presente anche in qualsiasi scenario in cui il codice dannoso può ottenere l'accesso con qualsiasi mezzo, ad esempio, fornendo un input sorprendente, non valido o non valido.
+ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]Si basa sui controlli di sicurezza per impedire ai chiamanti di accedere direttamente allo spazio degli indirizzi del processo corrente. Poiché questo attributo Ignora la normale sicurezza, il codice costituisce una minaccia grave se può essere usato per leggere o scrivere nella memoria del processo. Si noti che il rischio non è limitato ai metodi che forniscono intenzionalmente l'accesso alla memoria del processo. è presente anche in qualsiasi scenario in cui il codice dannoso può ottenere l'accesso con qualsiasi mezzo, ad esempio, fornendo un input sorprendente, non valido o non valido.
 
  Il criterio di sicurezza predefinito non concede l'autorizzazione per il codice non gestito a un assembly a meno che non sia in esecuzione dal computer locale o membro di uno dei seguenti gruppi:
 
@@ -62,14 +62,14 @@ ms.locfileid: "72658646"
  [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypesDoNotSuppress/cs/FxCop.Security.TypesDoNotSuppress.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente il metodo `DoWork` fornisce un percorso del codice accessibile pubblicamente al metodo di chiamata della piattaforma `FormatHardDisk`.
+ Nell'esempio seguente, il `DoWork` metodo fornisce un percorso del codice accessibile pubblicamente al metodo di chiamata della piattaforma `FormatHardDisk` .
 
  [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PInvokeAndSuppress/cs/FxCop.Security.PInvokeAndSuppress.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente, il metodo pubblico `DoDangerousThing` causa una violazione. Per risolvere la violazione, `DoDangerousThing` deve essere reso privato e l'accesso a tale violazione deve essere eseguito tramite un metodo pubblico protetto da una richiesta di sicurezza, come illustrato dal metodo `DoWork`.
+ Nell'esempio seguente il metodo pubblico `DoDangerousThing` genera una violazione. Per risolvere la violazione, `DoDangerousThing` deve essere reso privato e l'accesso a tale violazione deve essere eseguito tramite un metodo pubblico protetto da una richiesta di sicurezza, come illustrato nel `DoWork` metodo.
 
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [linee guida](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) per la codifica delle [ottimizzazioni della sicurezza](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) e delle [richieste dei collegamenti](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [di modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>[Linee guida per la codifica sicura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Security Optimizations](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [di dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) delle [richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

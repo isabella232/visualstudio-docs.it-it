@@ -2,7 +2,7 @@
 title: Debug del codice Python
 description: Visual Studio offre funzionalità di debug avanzate per il codice Python, tra cui l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'analisi delle eccezioni e il debug nella finestra interattiva.
 ms.date: 05/12/2020
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 293e431fb00f6817fdbba19186613345cb90275a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2fdbd2e7f47e75b4d80d07f6af3a6f998dfd72d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285647"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541154"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -161,7 +161,7 @@ La finestra **Debug interattivo Python** (**Debug** > **Finestre** > **Debug int
 
 La finestra **Debug interattivo** supporta speciali metacomandi in aggiunta ai [comandi REPL standard](python-interactive-repl-in-visual-studio.md#meta-commands):
 
-| Comando | Argomenti | Description |
+| Comando | Argomenti | Descrizione |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Avvia l'esecuzione del programma a partire dall'istruzione corrente. |
 | `$down`, `$d` | Sposta il frame corrente di un livello verso il basso nell'analisi dello stack. |
@@ -261,6 +261,6 @@ La procedura seguente abilita il debug nella sessione corrente di Visual Studio:
 
 1. Avviare il debug e riprodurre di nuovo il problema. I log del debugger sono disponibili in `%temp%\DebugAdapterHostLog.txt`.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 Per informazioni dettagliate sul debugger di Visual Studio, vedere [Debug in Visual Studio](../debugger/debugger-feature-tour.md).

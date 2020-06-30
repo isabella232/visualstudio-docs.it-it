@@ -15,17 +15,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dfe8495184bf4daadb3bf8899ee2857a9743c842
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c068fcda7d03ae91435c040d2110d632668d832a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661381"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538736"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizzare le stringhe in lettere maiuscole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
@@ -39,7 +39,7 @@ ms.locfileid: "72661381"
  Le stringhe devono essere normalizzate in maiuscolo. Un piccolo gruppo di caratteri, quando vengono convertiti in caratteri minuscoli, non può creare un round trip. Per creare un round trip significa convertire i caratteri da un'impostazione locale a un'altra locale che rappresenta i dati di tipo carattere in modo diverso e quindi recuperare accuratamente i caratteri originali dai caratteri convertiti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Modificare le operazioni che convertono le stringhe in lettere minuscole in modo che le stringhe vengano convertite in maiuscolo. Ad esempio, modificare `String.ToLower(CultureInfo.InvariantCulture)` in `String.ToUpper(CultureInfo.InvariantCulture)`.
+ Modificare le operazioni che convertono le stringhe in lettere minuscole in modo che le stringhe vengano convertite in maiuscolo. Ad esempio, sostituire `String.ToLower(CultureInfo.InvariantCulture)` con `String.ToUpper(CultureInfo.InvariantCulture)`.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile evitare di visualizzare un messaggio di avviso quando non si decide di prendere decisioni di sicurezza in base al risultato, ad esempio quando viene visualizzato nell'interfaccia utente.

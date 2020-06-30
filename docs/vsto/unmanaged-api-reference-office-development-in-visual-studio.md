@@ -1,7 +1,7 @@
 ---
 title: Riferimenti alle API non gestite (sviluppo per Office in Visual Studio)
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00db78359154dbda600fb4b58103bc04e89d16b2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 4c1616d24ae9b2c072df4e5708eb98e86611a83d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551319"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540985"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Riferimenti alle API non gestite (sviluppo per Office in Visual Studio)
 
-A partire dal sistema di Microsoft Office 2007, le applicazioni di Office usano l'interfaccia dell' [interfaccia IManagedAddin](../vsto/imanagedaddin-interface.md) per chiamare un componente del caricatore di componenti aggiuntivi VSTO incluso [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]in. Questo componente viene usato per consentire il caricamento di componenti aggiuntivi VSTO gestiti. Implementando questa interfaccia, è possibile creare il proprio componente di caricamento di componenti aggiuntivi VSTO.
+A partire dal sistema di Microsoft Office 2007, le applicazioni di Office usano l'interfaccia dell' [interfaccia IManagedAddin](../vsto/imanagedaddin-interface.md) per chiamare un componente del caricatore di componenti aggiuntivi VSTO incluso in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Questo componente viene usato per consentire il caricamento di componenti aggiuntivi VSTO gestiti. È possibile creare un componente del caricatore del componente aggiuntivo VSTO implementando questa interfaccia.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Creazione di nuovi documenti di Visio a livello di codice'
+title: 'Procedura: creare nuovi documenti di Visio a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61fb1302ffb0a068122c333e196178dfa2b30d86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 171ad93caf6b5c13d000073a0d7f7e82282b9b4a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574837"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541531"
 ---
-# <a name="how-to-programmatically-create-new-visio-documents"></a>Procedura: Creazione di nuovi documenti di Visio a livello di codice
+# <a name="how-to-programmatically-create-new-visio-documents"></a>Procedura: creare nuovi documenti di Visio a livello di codice
   Quando si crea un nuovo disegno di Microsoft Office Visio, viene aggiunto alla raccolta `Microsoft.Office.Interop.Visio.Documents` di documenti di Visio aperti. Il metodo `Microsoft.Office.Interop.Visio.Documents.Add` crea quindi un nuovo documento di disegno di Visio. Per altre informazioni, vedere la documentazione di riferimento di VBA relativa al metodo [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .
 
-## <a name="create-new-blank-documents"></a>Creare nuovi documenti vuoti
+## <a name="create-new-blank-documents"></a>Creazione di nuovi documenti vuoti
 
 ### <a name="to-create-a-new-document"></a>Per creare un nuovo documento
 
@@ -53,7 +53,7 @@ ms.locfileid: "62574837"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
 
 ## <a name="create-documents-based-on-existing-templates"></a>Creazione di documenti basati su modelli esistenti
- Il `Microsoft.Office.Interop.Visio.Documents.Add` metodo consente di creare un nuovo documento (un *vsd* file) che si basa su un modello di Visio esistente (un *VST* file). Questo metodo copia gli stencil, gli stili e le impostazioni che fanno parte dell'area di lavoro modello. È necessario specificare il nome file e il percorso completo del modello.
+ Il `Microsoft.Office.Interop.Visio.Documents.Add` metodo può creare un nuovo documento (un file con *estensione VSD* ) basato su un modello di Visio esistente (un file con *estensione vst* ). Questo metodo copia gli stencil, gli stili e le impostazioni che fanno parte dell'area di lavoro modello. È necessario specificare il nome file e il percorso completo del modello.
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>Per creare un nuovo documento basato su un modello esistente
 
@@ -65,16 +65,16 @@ ms.locfileid: "62574837"
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio di codice presenta i requisiti seguenti:
 
-- Un documento di Visio denominato `myDrawing.vsd` deve trovarsi in una directory denominata `Test` nel *documenti* cartella (per Windows XP e versioni precedenti) o nella *documenti* cartella (per Windows Vista).
+- Un documento di Visio denominato `myDrawing.vsd` deve trovarsi in una directory denominata `Test` nella cartella *documenti* (per Windows XP e versioni precedenti) oppure nella cartella *documenti* (per Windows Vista).
 
-- Un documento di Visio denominato `myStencil.vss` deve trovarsi in una directory denominata `Test` nel *documenti* cartella (per Windows XP e versioni precedenti) o nella *documenti* cartella (per Windows Vista).
+- Un documento di Visio denominato `myStencil.vss` deve trovarsi in una directory denominata `Test` nella cartella *documenti* (per Windows XP e versioni precedenti) oppure nella cartella *documenti* (per Windows Vista).
 
-- Un documento di Visio denominato `myTemplate.vst` deve trovarsi in una directory denominata `Test` nel *documenti* cartella (per Windows XP e versioni precedenti) o nella *documenti* cartella (per Windows Vista).
+- Un documento di Visio denominato `myTemplate.vst` deve trovarsi in una directory denominata `Test` nella cartella *documenti* (per Windows XP e versioni precedenti) oppure nella cartella *documenti* (per Windows Vista).
 
 ## <a name="see-also"></a>Vedere anche
 - [Soluzioni Visio](../vsto/visio-solutions.md)
-- [Panoramica del modello a oggetti Visio](../vsto/visio-object-model-overview.md)
-- [Procedura: A livello di codice aprire documenti di Visio](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Procedura: A livello di programmazione chiudere documenti di Visio](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Procedura: A livello di programmazione salvare documenti di Visio](../vsto/how-to-programmatically-save-visio-documents.md)
-- [Procedura: A livello di programmazione stampare documenti di Visio](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)
+- [Procedura: aprire documenti di Visio a livello di codice](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Procedura: chiudere documenti di Visio a livello di codice](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Procedura: salvare documenti di Visio a livello di codice](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Procedura: stampare documenti di Visio a livello di codice](../vsto/how-to-programmatically-print-visio-documents.md)

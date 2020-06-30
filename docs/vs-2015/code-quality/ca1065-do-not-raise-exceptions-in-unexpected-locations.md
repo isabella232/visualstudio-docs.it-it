@@ -15,21 +15,21 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2df740abf25344253627b614fdbd80dce86c7bfa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ddfc95d27179f48aef9444819cc0437a3143d5a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847476"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539256"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Non generare eccezioni in posizioni non previste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Categoria|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
@@ -65,24 +65,24 @@ ms.locfileid: "75847476"
 
  Le eccezioni seguenti possono essere generate da un metodo Get della proprietà:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> e tutti i derivati (incluso <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>e tutti i derivati (incluso <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName> e tutti i derivati
+- <xref:System.NotSupportedException?displayProperty=fullName>e tutti i derivati
 
-- <xref:System.ArgumentException?displayProperty=fullName> (solo da Get indicizzato)
+- <xref:System.ArgumentException?displayProperty=fullName>(solo da Get indicizzato)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (solo da Get indicizzato)
+- <xref:System.Collections.Generic.KeyNotFoundException>(solo da Get indicizzato)
 
 ### <a name="event-accessor-methods"></a>Metodi della funzione di accesso agli eventi
  Le funzioni di accesso agli eventi devono essere semplici operazioni che non generano eccezioni. Un evento non deve generare un'eccezione quando si tenta di aggiungere o rimuovere un gestore eventi.
 
  Le eccezioni seguenti possono essere generate da un accesore eventi:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> e tutti i derivati (incluso <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>e tutti i derivati (incluso <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName> e tutti i derivati
+- <xref:System.NotSupportedException?displayProperty=fullName>e tutti i derivati
 
-- <xref:System.ArgumentException> e derivati
+- <xref:System.ArgumentException>e derivati
 
 ### <a name="equals-methods"></a>Metodi Equals
  I seguenti metodi **Equals** non devono generare eccezioni:
@@ -91,21 +91,21 @@ ms.locfileid: "75847476"
 
 - [M:IEquatable.Equals](https://msdn2.microsoft.com/library/ms131190(VS.80).aspx)
 
-  Un metodo **Equals** deve restituire `true` o `false` anziché generare un'eccezione. Se, ad esempio, viene passato un valore uguale a due tipi non corrispondenti, deve restituire solo `false` anziché generare una <xref:System.ArgumentException>.
+  Un metodo **Equals** deve restituire `true` o `false` invece di generare un'eccezione. Se, ad esempio, vengono passati due tipi non corrispondenti, il metodo deve restituire solo `false` anziché generare un'eccezione <xref:System.ArgumentException> .
 
 ### <a name="gethashcode-methods"></a>Metodi GetHashCode
  I metodi **GetHashCode** seguenti non devono in genere generare eccezioni:
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode(T)](https://msdn2.microsoft.com/library/system.collections.iequalitycomparer.gethashcode.aspx)
+- [M:IEqualityComparer.GetHashCode (T)](https://msdn2.microsoft.com/library/system.collections.iequalitycomparer.gethashcode.aspx)
 
   **GetHashCode** deve sempre restituire un valore. In caso contrario, è possibile perdere gli elementi nella tabella hash.
 
-  Le versioni di **GetHashCode** che accettano un argomento possono generare un <xref:System.ArgumentException>. Tuttavia, **Object. GetHashCode** non deve mai generare un'eccezione.
+  Le versioni di **GetHashCode** che accettano un argomento possono generare un'eccezione <xref:System.ArgumentException> . Tuttavia, **Object. GetHashCode** non deve mai generare un'eccezione.
 
 ### <a name="tostring-methods"></a>Metodi ToString
- Il debugger utilizza <xref:System.Object.ToString%2A?displayProperty=fullName> per visualizzare informazioni sugli oggetti in formato stringa. Pertanto, **ToString** non deve modificare lo stato di un oggetto e non deve generare eccezioni.
+ Il debugger usa <xref:System.Object.ToString%2A?displayProperty=fullName> per visualizzare informazioni sugli oggetti in formato stringa. Pertanto, **ToString** non deve modificare lo stato di un oggetto e non deve generare eccezioni.
 
 ### <a name="static-constructors"></a>Costruttori statici
  Generando eccezioni da un costruttore statico, il tipo è inutilizzabile nel dominio applicazione corrente. È necessario avere un motivo molto valido, ad esempio un problema di sicurezza, per generare un'eccezione da un costruttore statico.
@@ -114,7 +114,7 @@ ms.locfileid: "75847476"
  La generazione di un'eccezione da parte di un finalizzatore causa un errore veloce di CLR, che consente di ridurre il processo. Pertanto, la generazione di eccezioni in un finalizzatore dovrebbe essere sempre evitata.
 
 ### <a name="dispose-methods"></a>Metodi Dispose
- Un metodo di <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> non deve generare un'eccezione. Dispose viene spesso chiamato come parte della logica di pulizia in una clausola `finally`. Pertanto, la generazione esplicita di un'eccezione da Dispose impone all'utente di aggiungere la gestione delle eccezioni all'interno della clausola `finally`.
+ Un <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metodo non deve generare un'eccezione. Dispose viene spesso chiamato come parte della logica di pulizia in una `finally` clausola. Pertanto, la generazione esplicita di un'eccezione da Dispose impone all'utente di aggiungere la gestione delle eccezioni all'interno della `finally` clausola.
 
  Il percorso del codice **Dispose (false)** non deve mai generare eccezioni perché questo viene quasi sempre chiamato da un finalizzatore.
 

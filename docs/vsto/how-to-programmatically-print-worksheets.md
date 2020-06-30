@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Stampa di fogli di codice a livello di codice'
+title: 'Procedura: stampa di fogli di codice a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 764723d0749cd82739d8e67ee71104f41a0f9065
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: b0affdd34ad1cb302beacdc1abc9d02275878afd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490590"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537891"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>Procedura: Stampa di fogli di codice a livello di codice
+# <a name="how-to-programmatically-print-worksheets"></a>Procedura: stampa di fogli di codice a livello di codice
 
 È possibile stampare qualsiasi foglio di lavoro da una cartella di lavoro.
 
@@ -66,7 +66,7 @@ ms.locfileid: "69490590"
 ## <a name="see-also"></a>Vedere anche
 
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: Controllare l'ortografia nei fogli di codice a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [Procedura: eseguire il controllo ortografico nei fogli di codice a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [Elemento host Worksheet](../vsto/worksheet-host-item.md)
 - [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

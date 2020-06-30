@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6996d210417a56dd83532c481aaa0dc80b9f23ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 436a8614c18c296c072d91116143306d898f0436
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655244"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538853"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Evitare i membri statici nei tipi visibili a COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
@@ -33,16 +33,16 @@ ms.locfileid: "72655244"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un tipo contrassegnato in modo specifico come visibile a Component Object Model (COM) contiene un metodo `public``static`.
+ Un tipo contrassegnato in modo specifico come visibile a Component Object Model (COM) contiene un `public``static` metodo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- COM non supporta i metodi `static`.
+ COM non supporta i `static` metodi.
 
- Questa regola ignora le funzioni di accesso a proprietà e eventi, i metodi di overload degli operatori o i metodi contrassegnati utilizzando l'attributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o l'attributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+ Questa regola ignora le funzioni di accesso a proprietà e eventi, i metodi di overload degli operatori o i metodi contrassegnati con l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attributo o l'attributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> .
 
  Per impostazione predefinita, i seguenti elementi sono visibili a COM: assembly, tipi pubblici, membri di istanze pubbliche nei tipi pubblici e tutti i membri dei tipi di valore pubblici.
 
- Per eseguire questa regola, è necessario che un <xref:System.Runtime.InteropServices.ComVisibleAttribute> a livello di assembly sia impostato su `false` e che la classe-<xref:System.Runtime.InteropServices.ComVisibleAttribute> sia impostata su `true`, come illustrato nel codice seguente.
+ Affinché questa regola si verifichi, è necessario impostare un livello di assembly <xref:System.Runtime.InteropServices.ComVisibleAttribute> su `false` e la classe- <xref:System.Runtime.InteropServices.ComVisibleAttribute> deve essere impostata su `true` , come illustrato nel codice seguente.
 
 ```csharp
 using System;
@@ -62,26 +62,26 @@ namespace Samples
 ```
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare la progettazione in modo da usare un metodo di istanza che fornisce la stessa funzionalità del metodo `static`.
+ Per correggere una violazione di questa regola, modificare la progettazione in modo da usare un metodo di istanza che fornisce la stessa funzionalità del `static` metodo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se un client COM non richiede l'accesso alla funzionalità fornita dal metodo `static`.
+ È possibile eliminare un avviso da questa regola se un client COM non richiede l'accesso alla funzionalità fornita dal `static` metodo.
 
 ## <a name="example-violation"></a>Violazione di esempio
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente viene illustrato un metodo `static` che viola questa regola.
+ Nell'esempio seguente viene illustrato un `static` metodo che viola questa regola.
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComVisibleStaticMembersViolation/cs/FxCop.Interoperability.ComVisibleStaticMembersViolation.cs#1)]
 
-### <a name="comments"></a>Comments
+### <a name="comments"></a>Commenti
  In questo esempio non è possibile chiamare il metodo **book. FromPages** da com.
 
 ## <a name="example-fix"></a>Correzione di esempio
 
 ### <a name="description"></a>Descrizione
- Per correggere la violazione nell'esempio precedente, è possibile modificare il metodo in un metodo di istanza, ma ciò non ha senso in questa istanza. Una soluzione migliore consiste nell'applicare in modo esplicito `ComVisible(false)` al metodo per rendere chiaro ad altri sviluppatori che il metodo non può essere visualizzato da COM.
+ Per correggere la violazione nell'esempio precedente, è possibile modificare il metodo in un metodo di istanza, ma ciò non ha senso in questa istanza. Una soluzione migliore consiste nell'applicare in modo esplicito `ComVisible(false)` al metodo per rendere chiaro ad altri sviluppatori che il metodo non può essere visualizzato da com.
 
  Nell'esempio seguente viene applicato <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> al metodo.
 

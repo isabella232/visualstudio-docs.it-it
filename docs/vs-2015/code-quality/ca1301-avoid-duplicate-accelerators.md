@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 647fef2968971cddb6a14cc19e53eed979b9c151
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 772c9bee3f43c42701bfa460c622f4a225ec59cb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661515"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539178"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Evitare tasti di scelta rapida duplicati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
@@ -47,9 +47,9 @@ ms.locfileid: "72661515"
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un form minimo contenente due controlli con chiavi di accesso identiche. Le chiavi vengono archiviate in un file di risorse, che non viene visualizzato; Tuttavia, i relativi valori vengono visualizzati nelle righe `checkBox.Text` impostati come commento. Il comportamento degli acceleratori duplicati può essere esaminato scambiando le righe `checkBox.Text` con le relative controparti commentate. Tuttavia, in questo caso, l'esempio non genererà un avviso dalla regola.
+ Nell'esempio seguente viene illustrato un form minimo contenente due controlli con chiavi di accesso identiche. Le chiavi vengono archiviate in un file di risorse, che non viene visualizzato; Tuttavia, i relativi valori vengono visualizzati nelle righe impostate come commento `checkBox.Text` . Il comportamento degli acceleratori duplicati può essere esaminato scambiando le `checkBox.Text` righe con le relative controparti commentate. Tuttavia, in questo caso, l'esempio non genererà un avviso dalla regola.
 
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.AvoidDuplicateAccels/cs/FxCop.Globalization.AvoidDuplicateAccels.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [risorse nelle applicazioni desktop](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+ <xref:System.Resources.ResourceManager?displayProperty=fullName>[Risorse nelle applicazioni desktop](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

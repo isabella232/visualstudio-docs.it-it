@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di codice aggiungere commenti al testo nei documenti'
+title: 'Procedura: aggiungere commenti al testo nei documenti a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5aba4c6446b2dbcfcb31c423a28eedd552799b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967670"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538113"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procedura: A livello di codice aggiungere commenti al testo nei documenti
-  La proprietà commenti della classe documento aggiunge un commento a un intervallo di testo in un documento di Microsoft Office Word.
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procedura: aggiungere commenti al testo nei documenti a livello di codice
+  La proprietà Comments della classe Document aggiunge un commento a un intervallo di testo in un Microsoft Office documento di Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -47,5 +47,5 @@ ms.locfileid: "62967670"
  Per modificare le iniziali dell'utente che Word aggiunge ai commenti, usare la proprietà <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: A livello di codice rimuovere tutti i commenti dai documenti](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
+- [Procedura: rimuovere tutti i commenti dai documenti a livello di codice](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Elemento host Document](../vsto/document-host-item.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Riabilitare un VSTO Add-in è stato disabilitato'
+title: 'Procedura: riabilitare un componente aggiuntivo VSTO disabilitato'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VST.Warning.DisabledAddIn
 dev_langs:
@@ -16,26 +16,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cdb05328d2a59eb61c57f8f028ade1af0f7ce2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418808"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541258"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procedura: Riabilitare un VSTO Add-in è stato disabilitato
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procedura: riabilitare un componente aggiuntivo VSTO disabilitato
   Le applicazioni di Microsoft Office possono disabilitare i componenti aggiuntivi VSTO che si comportano in modo imprevisto. Se un'applicazione non carica un componente aggiuntivo VSTO quando si tenta di eseguirne il debug, il componente aggiuntivo VSTO potrebbe essere stato disabilitato dall'applicazione in seguito alla chiusura dell'applicazione (disabilitazione di tipo "hard") o a un errore del componente (disabilitazione di tipo "soft").
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
-## <a name="hard-disabled-vsto-add-ins"></a>Componenti aggiuntivi VSTO con disabilitazione di disco rigido
- La disabilitazione hard può verificarsi quando un componente aggiuntivo VSTO causa la chiusura imprevista dell'applicazione. Si potrebbe verificare anche nel computer di sviluppo se si arresta il debugger durante l'esecuzione del gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> nel componente aggiuntivo VSTO.
+## <a name="hard-disabled-vsto-add-ins"></a>Componenti aggiuntivi VSTO con disabilitazione del disco rigido
+ La disabilitazione hardware può verificarsi quando un componente aggiuntivo VSTO causa la chiusura imprevista dell'applicazione. Si potrebbe verificare anche nel computer di sviluppo se si arresta il debugger durante l'esecuzione del gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> nel componente aggiuntivo VSTO.
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>Per riabilitare un componente aggiuntivo VSTO
 
 1. Nell'applicazione fare clic sulla scheda **File** .
 
-2. Scegliere il *NomeApplicazione* **opzioni** pulsante.
+2. Fare clic sul pulsante delle **Opzioni** *ApplicationName* .
 
 3. Nel riquadro delle categorie fare clic su **Componenti aggiuntivi**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "63418808"
 
 6. Selezionare il componente aggiuntivo VSTO e fare clic su **Attiva**.
 
-7. Fare clic su **Chiudi**.
+7. Fare clic su **Close**.
 
 ## <a name="soft-disabled-vsto-add-ins"></a>Componenti aggiuntivi VSTO con disabilitazione soft
  La disabilitazione di tipo "soft" può verificarsi quando un componente aggiuntivo VSTO genera un errore che non causa la chiusura imprevista dell'applicazione. Ad esempio, un'applicazione potrebbe eseguire la disabilitazione di tipo "soft" di un componente aggiuntivo VSTO se viene generata un'eccezione non gestita durante l'esecuzione del gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> .
@@ -59,7 +59,7 @@ ms.locfileid: "63418808"
 
 1. Nell'applicazione fare clic sulla scheda **File** .
 
-2. Scegliere il *NomeApplicazione* **opzioni** pulsante.
+2. Fare clic sul pulsante delle **Opzioni** *ApplicationName* .
 
 3. Nel riquadro delle categorie fare clic su **Componenti aggiuntivi**.
 
@@ -74,6 +74,6 @@ ms.locfileid: "63418808"
 7. Fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
-- [Creazione di soluzioni Office](../vsto/building-office-solutions.md)
-- [Eseguire il debug di progetti di Office](../vsto/debugging-office-projects.md)
-- [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Compilazione di soluzioni Office](../vsto/building-office-solutions.md)
+- [Debug di progetti di Office](../vsto/debugging-office-projects.md)
+- [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)

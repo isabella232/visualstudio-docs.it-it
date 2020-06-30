@@ -16,17 +16,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ce85a3a933d9453c63ef118d5dfd9e0b17cbf130
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3ad1f56215d002c03d346b38ce6155e8df7412b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661455"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539113"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Non passare valori letterali come parametri localizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
 |CheckId|CA1303|
@@ -34,11 +34,11 @@ ms.locfileid: "72661455"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un metodo passa un valore letterale stringa come parametro a un costruttore o a un metodo nella libreria di classi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e tale stringa deve essere localizzabile.
+ Un metodo passa un valore letterale stringa come parametro a un costruttore o a un metodo nella [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] libreria di classi e tale stringa deve essere localizzabile.
 
  Questo avviso viene generato quando una stringa letterale viene passata come valore a un parametro o a una proprietà e uno o più dei seguenti casi è true:
 
-- L'attributo <xref:System.ComponentModel.LocalizableAttribute> del parametro o della proprietà è impostato su true.
+- L' <xref:System.ComponentModel.LocalizableAttribute> attributo del parametro o della proprietà è impostato su true.
 
 - Il nome del parametro o della proprietà contiene "Text", "message" o "Caption".
 
@@ -48,7 +48,7 @@ ms.locfileid: "72661455"
  I valori letterali stringa incorporati nel codice sorgente sono difficili da localizzare.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, sostituire il valore letterale stringa con una stringa recuperata tramite un'istanza della classe <xref:System.Resources.ResourceManager>.
+ Per correggere una violazione di questa regola, sostituire il valore letterale stringa con una stringa recuperata tramite un'istanza della <xref:System.Resources.ResourceManager> classe.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola se la libreria di codice non verrà localizzata o se la stringa non è esposta all'utente finale o a uno sviluppatore che usa la libreria di codice.
@@ -56,7 +56,7 @@ ms.locfileid: "72661455"
  Gli utenti possono eliminare il rumore da metodi a cui non devono essere passate stringhe localizzate rinominando il parametro o la proprietà denominata oppure contrassegnando questi elementi come condizionale.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo che genera un'eccezione quando uno dei due argomenti non è compreso nell'intervallo. Per il primo argomento, al costruttore di eccezione viene passata una stringa letterale che viola questa regola. Per il secondo argomento, al costruttore viene passata correttamente una stringa recuperata tramite un <xref:System.Resources.ResourceManager>.
+ Nell'esempio seguente viene illustrato un metodo che genera un'eccezione quando uno dei due argomenti non è compreso nell'intervallo. Per il primo argomento, al costruttore di eccezione viene passata una stringa letterale che viola questa regola. Per il secondo argomento, al costruttore viene passata correttamente una stringa recuperata tramite <xref:System.Resources.ResourceManager> .
 
  [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cpp/FxCop.Globalization.DoNotPassLiterals.cpp#1)]
  [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cs/FxCop.Globalization.DoNotPassLiterals.cs#1)]

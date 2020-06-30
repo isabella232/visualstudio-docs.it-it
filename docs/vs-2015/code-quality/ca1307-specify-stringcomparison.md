@@ -15,17 +15,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 111f0b85a601d931ac17bde46f7170fa81e71815
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 033d8f0e22ec040ffb10821993a5a9c647ee401e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661404"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538918"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: Specificare StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|SpecifyStringComparison|
 |CheckId|CA1307|
@@ -33,15 +33,15 @@ ms.locfileid: "72661404"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un'operazione di confronto tra stringhe usa un overload del metodo che non imposta un parametro <xref:System.StringComparison>.
+ Un'operazione di confronto tra stringhe usa un overload del metodo che non imposta un <xref:System.StringComparison> parametro.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Molte operazioni di stringa, più importanti i metodi <xref:System.String.Compare%2A> e <xref:System.String.Equals%2A>, forniscono un overload che accetta un <xref:System.StringComparison> valore di enumerazione come parametro.
+ Molte operazioni di stringa, più importanti <xref:System.String.Compare%2A> dei <xref:System.String.Equals%2A> metodi e, forniscono un overload che accetta un <xref:System.StringComparison> valore di enumerazione come parametro.
 
- Quando esiste un overload che accetta un parametro <xref:System.StringComparison>, deve essere usato al posto di un overload che non accetta questo parametro. Impostando in modo esplicito questo parametro, il codice viene spesso reso più chiaro e facile da gestire.
+ Ogni volta che è presente un overload che accetta un <xref:System.StringComparison> parametro, deve essere usato anziché un overload che non accetta questo parametro. Impostando in modo esplicito questo parametro, il codice viene spesso reso più chiaro e facile da gestire.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare i metodi di confronto tra stringhe in overload che accettano l'enumerazione <xref:System.StringComparison> come parametro. Ad esempio: sostituire `String.Compare(str1, str2)` con `String.Compare(str1, str2, StringComparison.Ordinal)`.
+ Per correggere una violazione di questa regola, modificare i metodi di confronto tra stringhe in overload che accettano l' <xref:System.StringComparison> enumerazione come parametro. Ad esempio: modificare `String.Compare(str1, str2)` in `String.Compare(str1, str2, StringComparison.Ordinal)` .
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola quando la libreria o l'applicazione è destinata a un gruppo di destinatari locale limitato e pertanto non verrà localizzata.

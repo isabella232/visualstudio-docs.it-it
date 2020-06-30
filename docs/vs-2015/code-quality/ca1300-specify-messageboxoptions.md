@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3e21866fce69f768d927882d3ddd47ae3e431265
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af0017a7ee6918a80a93ca90c7cf3de78885d61f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663613"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539191"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: Specificare MessageBoxOptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
@@ -33,13 +33,13 @@ ms.locfileid: "72663613"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un metodo chiama un overload del metodo <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> che non accetta un argomento <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName>.
+ Un metodo chiama un overload del <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> metodo che non accetta un <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argomento.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per visualizzare correttamente una finestra di messaggio per le impostazioni cultura che utilizzano un ordine di lettura da destra a sinistra, è necessario passare i membri <xref:System.Windows.Forms.MessageBoxOptions> e <xref:System.Windows.Forms.MessageBoxOptions> dell'enumerazione <xref:System.Windows.Forms.MessageBoxOptions> al metodo <xref:System.Windows.Forms.MessageBox.Show%2A>. Esaminare la proprietà <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> del controllo che lo contiene per determinare se utilizzare un ordine di lettura da destra a sinistra.
+ Per visualizzare correttamente una finestra di messaggio per le impostazioni cultura che utilizzano un ordine di lettura da destra a sinistra, i <xref:System.Windows.Forms.MessageBoxOptions> <xref:System.Windows.Forms.MessageBoxOptions> membri e dell' <xref:System.Windows.Forms.MessageBoxOptions> enumerazione devono essere passati al <xref:System.Windows.Forms.MessageBox.Show%2A> metodo. Esaminare la <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> proprietà del controllo che lo contiene per determinare se utilizzare un ordine di lettura da destra a sinistra.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, chiamare un overload del metodo <xref:System.Windows.Forms.MessageBox.Show%2A> che accetta un argomento <xref:System.Windows.Forms.MessageBoxOptions>.
+ Per correggere una violazione di questa regola, chiamare un overload del <xref:System.Windows.Forms.MessageBox.Show%2A> metodo che accetta un <xref:System.Windows.Forms.MessageBoxOptions> argomento.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola quando la libreria di codice non verrà localizzata per le impostazioni cultura che utilizzano un ordine di lettura da destra a sinistra.
@@ -51,4 +51,4 @@ ms.locfileid: "72663613"
  [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/vb/FxCop.Globalization.SpecifyMBOptions.vb#1)]
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [risorse nelle applicazioni desktop](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+ <xref:System.Resources.ResourceManager?displayProperty=fullName>[Risorse nelle applicazioni desktop](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

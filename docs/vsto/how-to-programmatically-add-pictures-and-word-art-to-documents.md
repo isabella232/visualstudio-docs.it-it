@@ -1,7 +1,7 @@
 ---
 title: Aggiungere immagini e Word Art ai documenti a livello di codice
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253814"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538086"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedura: Aggiungere a livello di codice immagini e Word Art ai documenti
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedura: aggiungere immagini e WordArt ai documenti a livello di codice
   È possibile aggiungere immagini e oggetti disegno ai documenti in fase di progettazione o in fase di esecuzione. WordArt consente di aggiungere testo decorativo ai documenti di Microsoft Office Word. Questi effetti di testo speciali sono oggetti disegno che è possibile personalizzare e inserire nel documento.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -97,11 +97,11 @@ ms.locfileid: "71253814"
 
 ## <a name="compile-the-code"></a>Compilare il codice
 
-- Un'immagine denominata *SamplePicture. jpg* deve esistere nell'unità C.
+- Un'immagine denominata *SamplePicture.jpg* deve esistere nell'unità C.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Aprire documenti esistenti a livello di codice](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Procedura: Inserire testo in documenti di Word a livello di codice](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Procedura: Ripristinare le selezioni dopo le ricerche a livello di codice](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [Procedura: Salvare documenti a livello di codice](../vsto/how-to-programmatically-save-documents.md)
+- [Procedura: aprire documenti esistenti a livello di codice](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Procedura: inserire testo in documenti di Word a livello di codice](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Procedura: ripristinare le selezioni dopo le ricerche a livello di codice](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Procedura: salvare documenti a livello di codice](../vsto/how-to-programmatically-save-documents.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

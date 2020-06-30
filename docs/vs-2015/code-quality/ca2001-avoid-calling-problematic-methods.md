@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 318b7b8adddd674a9b8ecb93441d69a76ab574dd
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: ba64c27cde5f335f32cca362417078a5c9ed13e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586783"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538580"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Evitare le chiamate a metodi problematici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AvoidCallingProblematicMethods|
 |CheckId|CA2001|
@@ -43,8 +43,8 @@ ms.locfileid: "82586783"
 |Metodo|Descrizione|
 |------------|-----------------|
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|Chiamata a GC. Collect può influire in modo significativo sulle prestazioni dell'applicazione ed è raramente necessario. Per ulteriori informazioni, vedere la voce del Blog relativo alle [prestazioni di Rico Mariani](https://docs.microsoft.com/archive/blogs/ricom/when-to-call-gc-collect) in MSDN.|
-|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread. Suspend e thread. Resume sono stati deprecati a causa del comportamento imprevedibile.  Usare altre classi nello spazio <xref:System.Threading> dei nomi, ad <xref:System.Threading.Monitor>esempio <xref:System.Threading.Mutex>, e <xref:System.Threading.Semaphore> per sincronizzare i thread o proteggere le risorse.|
-|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|Il metodo DangerousGetHandle rappresenta un rischio per la sicurezza perché può restituire un handle non valido. Per ulteriori <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> informazioni su <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> come utilizzare il metodo DangerousGetHandle in modo sicuro, vedere i metodi e.|
+|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread. Suspend e thread. Resume sono stati deprecati a causa del comportamento imprevedibile.  Usare altre classi nello <xref:System.Threading> spazio dei nomi, ad esempio <xref:System.Threading.Monitor> , <xref:System.Threading.Mutex> e <xref:System.Threading.Semaphore> per sincronizzare i thread o proteggere le risorse.|
+|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|Il metodo DangerousGetHandle rappresenta un rischio per la sicurezza perché può restituire un handle non valido. <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> Per ulteriori informazioni su come utilizzare il metodo DangerousGetHandle in modo sicuro, vedere i metodi e.|
 |<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Questi metodi possono caricare assembly da posizioni impreviste. Per informazioni sui metodi che caricano gli assembly, vedere, ad esempio, i post di Blog relativi a .NET CLR Notes di Suzanne Cook [LoadFile vs. LoadFrom](https://docs.microsoft.com/archive/blogs/suzcook/loadfile-vs-loadfrom) e la [scelta di un contesto di associazione](https://docs.microsoft.com/archive/blogs/suzcook/choosing-a-binding-context) nel sito Web MSDN.|
 |[CoSetProxyBlanket](https://msdn.microsoft.com/library/ms692692.aspx) (Ole32)<br /><br /> [CoInitializeSecurity](https://msdn.microsoft.com/library/ms693736.aspx) (Ole32)|Quando il codice utente inizia l'esecuzione in un processo gestito, è troppo tardi per chiamare in modo affidabile CoSetProxyBlanket. Il Common Language Runtime (CLR) esegue le azioni di inizializzazione che potrebbero impedire la riuscita del P/Invoke degli utenti.<br /><br /> Se è necessario chiamare CoSetProxyBlanket per un'applicazione gestita, è consigliabile avviare il processo usando un eseguibile di codice nativo (C++), chiamare CoSetProxyBlanket nel codice nativo, quindi avviare l'applicazione di codice gestito in corso di elaborazione. Assicurarsi di specificare un numero di versione di Runtime.|
 
@@ -54,5 +54,5 @@ ms.locfileid: "82586783"
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È necessario eliminare i messaggi da questa regola solo quando non sono disponibili alternative al metodo problematico.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
  [Avvisi di affidabilità](../code-quality/reliability-warnings.md)
