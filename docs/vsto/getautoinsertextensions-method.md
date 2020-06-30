@@ -1,7 +1,7 @@
 ---
 title: Metodo GetAutoInsertExtensions
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb767ec7301a1d4e0f29003971b017339228fc9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5d88af6f24306b7b243359c9797a2cb7e7449bc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972278"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543507"
 ---
 # <a name="getautoinsertextensions-method"></a>Metodo GetAutoInsertExtensions
-  Ottiene informazioni sulle App per Office che devono essere inseriti automaticamente durante il debug.
+  Ottiene informazioni sulle app per Office che devono essere inserite automaticamente durante il debug.
 
  Questo metodo è riservato per utilizzi futuri.
 
@@ -34,10 +34,10 @@ HRESULT GetAutoInsertExtensions(
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|*psaExtensionNames*|I nomi di estensione delle App per Office.|
+|*psaExtensionNames*|Nomi di estensione delle app per Office.|
 
 ## <a name="return-value"></a>Valore restituito
  Valore HRESULT che indica se il metodo è stato completato correttamente.
 
-## <a name="remarks"></a>Note
- Ogni app per Office deve essere inserito viene restituito come un'estensione di applicazioni di Office, che corrisponde a un valore inferiore **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. L'host deve cercare questi valori nel Registro di sistema e quindi inserire automaticamente le estensioni.
+## <a name="remarks"></a>Osservazioni
+ Ogni app per Office da inserire viene restituita come nome dell'estensione dell'applicazione di Office, che corrisponde a un valore in **HKEY_CURRENT_USER \software\microsoft\office\wef\developer**. L'host deve cercare questi valori nel registro di sistema e quindi inserire automaticamente le estensioni.

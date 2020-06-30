@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 824a65e765f21748b97292beea64ea6c9bd64a1b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4bd57d76acd0c46e39bb2c01449146715abc0666
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671556"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543884"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804: rimuovere locali non utilizzati
+# <a name="ca1804-remove-unused-locals"></a>CA1804: Rimuovere variabili locali non usate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
@@ -39,7 +39,7 @@ ms.locfileid: "72671556"
  Le variabili locali inutilizzate e le assegnazioni non necessarie comportano un aumento delle dimensioni dell'assembly e una riduzione delle prestazioni.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere o usare la variabile locale. Si noti che C# il compilatore incluso in [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] rimuove le variabili locali non utilizzate quando è abilitata l'opzione `optimize`.
+ Per correggere una violazione di questa regola, rimuovere o usare la variabile locale. Si noti che il compilatore C# incluso in [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] rimuove le variabili locali non usate quando l' `optimize` opzione è abilitata.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Eliminare un avviso da questa regola se la variabile è stata emessa dal compilatore. È anche possibile eliminare un avviso da questa regola oppure disabilitare la regola se le prestazioni e la manutenzione del codice non rappresentano problemi principali.
@@ -57,4 +57,4 @@ ms.locfileid: "72671556"
 
  [CA1812: Evitare classi interne prive di istanze](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Rivedere i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Controllare i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)

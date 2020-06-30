@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2673b22bf502f019f0a10361c9d0cef9d5ac1b8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12f399b7a09c18c77482475575ca387a11955762
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816837"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542389"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile (elemento)
   Rappresenta l'output di un progetto separato da includere con l'elemento del progetto quando viene distribuito in SharePoint.
@@ -31,7 +31,7 @@ ms.locfileid: "62816837"
     Type = "Type of deployment for the project output" />
 ```
 
-## <a name="type"></a>Tipo
+## <a name="type"></a>Type
  **ProjectOutputFileType**
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
@@ -41,13 +41,13 @@ ms.locfileid: "62816837"
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|**ProjectId**|Obbligatorio **xs: String** attributo.<br /><br /> Il GUID del progetto dipendente che include l'output a cui si desidera includere. Ciò corrisponde alla **ProjectGuid** elemento nel file di progetto dipendente.|
-|**ProjectPath**|Obbligatorio **xs: String** attributo.<br /><br /> Il percorso relativo, incluso il nome di file di progetto, del progetto dipendente che include l'output da includere. Questo percorso è relativo alla cartella radice del progetto SharePoint che contiene l'elemento di progetto SharePoint.|
-|**Destinazione**|Facoltativo **xs: String** attributo.<br /><br /> Il percorso in cui l'output del progetto dipendente verrà distribuito nel server SharePoint, relativo alla cartella radice di distribuzione. Cartella radice di distribuzione è determinata dal tipo di distribuzione specificato per il **tipo** attributo.<br /><br /> Per altre informazioni, vedere le descrizioni per le **percorso di distribuzione** e **Deployment Root** le proprietà di SharePoint elementi nel progetto [SharePoint sviluppare soluzioni](../sharepoint/developing-sharepoint-solutions.md).|
-|**Type**|Obbligatorio **xs: String** attributo.<br /><br /> Il tipo di distribuzione da usare per l'output del progetto dipendente. Per altre informazioni sui possibili valori, vedere la descrizione per il **tipo di distribuzione** proprietà di elementi di progetto SharePoint in [soluzioni SharePoint sviluppare](../sharepoint/developing-sharepoint-solutions.md).|
+|**ProjectId**|Attributo **xs: String** obbligatorio.<br /><br /> GUID del progetto dipendente con l'output che si desidera includere. Corrisponde all'elemento **ProjectGuid** nel file di progetto dipendente.|
+|**ProjectPath**|Attributo **xs: String** obbligatorio.<br /><br /> Percorso relativo, incluso il nome del file di progetto, del progetto dipendente con l'output che si desidera includere. Questo percorso è relativo alla cartella radice del progetto SharePoint che contiene l'elemento del progetto SharePoint.|
+|**Destinazione**|Attributo **xs: String** facoltativo.<br /><br /> Percorso in cui deve essere distribuito l'output del progetto dipendente nel server SharePoint rispetto alla cartella radice di distribuzione. La cartella radice di distribuzione è determinata dal tipo di distribuzione specificato dall'attributo **Type** .<br /><br /> Per ulteriori informazioni, vedere le descrizioni del **percorso di distribuzione** e delle proprietà **radice di distribuzione** degli elementi del progetto SharePoint in [sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Tipo**|Attributo **xs: String** obbligatorio.<br /><br /> Tipo di distribuzione da utilizzare per l'output del progetto dipendente. Per ulteriori informazioni sui valori possibili, vedere la descrizione della proprietà **tipo di distribuzione** degli elementi del progetto SharePoint in [sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -55,19 +55,19 @@ ms.locfileid: "62816837"
 |-------------|-----------------|
 |[File](../sharepoint/files-element.md)|Specifica i file da includere con l'elemento del progetto SharePoint quando viene distribuito in SharePoint.|
 
-## <a name="remarks"></a>Note
- Usare la **ProjectOutputFile** elemento da includere nella distribuzione dell'elemento del progetto SharePoint, l'output di un progetto. È possibile specificare un altro progetto o il progetto stesso che contiene l'elemento del progetto. Per altre informazioni, vedere [fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
+## <a name="remarks"></a>Osservazioni
+ Utilizzare l'elemento **ProjectOutputFile** per includere l'output di un progetto nella distribuzione dell'elemento del progetto SharePoint. È possibile specificare un progetto diverso o lo stesso progetto che contiene l'elemento del progetto. Per altre informazioni, vedere [fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-|||
+|Proprietà|Valore|
 |-|-|
-|**Spazio dei nomi**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Nome dello schema**|Schema degli elementi di progetto SharePoint|
-|**File di convalida**|ProjectItemModelSchema.xsd|
+|**Namespace**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nome schema**|Schema dell'elemento del progetto SharePoint|
+|**File di convalida**|ProjectItemModelSchema. xsd|
 |**Può essere vuoto**|No|
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento dello schema elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Riferimento allo schema degli elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

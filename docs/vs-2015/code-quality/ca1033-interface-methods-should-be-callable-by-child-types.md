@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2ee44537ba4f7f7efd65de2c8a27d139d9750b77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18629f8d5c63b652d6539db10c6e6dba5d621c24
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661871"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542298"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: I metodi di interfaccia devono essere richiamabili dai tipi figlio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|
 |CheckId|CA1033|
@@ -36,9 +36,9 @@ ms.locfileid: "72661871"
  Un tipo visibile esternamente non sealed fornisce un'implementazione di metodo esplicita di un'interfaccia pubblica e non fornisce un metodo visibile esternamente alternativo con lo stesso nome.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Si consideri un tipo di base che implementa in modo esplicito un metodo di interfaccia pubblico. Un tipo che deriva dal tipo di base può accedere al metodo di interfaccia ereditato solo tramite un riferimento all'istanza corrente (`this` in C#) di cui viene eseguito il cast all'interfaccia. Se il tipo derivato implementa di nuovo (in modo esplicito) il metodo di interfaccia ereditato, non è più possibile accedere all'implementazione di base. La chiamata tramite il riferimento all'istanza corrente richiamerà l'implementazione derivata; Questa operazione causa la ricorsione e un eventuale overflow dello stack.
+ Si consideri un tipo di base che implementa in modo esplicito un metodo di interfaccia pubblico. Un tipo che deriva dal tipo di base può accedere al metodo di interfaccia ereditato solo tramite un riferimento all'istanza corrente ( `this` in C#) di cui viene eseguito il cast all'interfaccia. Se il tipo derivato implementa di nuovo (in modo esplicito) il metodo di interfaccia ereditato, non è più possibile accedere all'implementazione di base. La chiamata tramite il riferimento all'istanza corrente richiamerà l'implementazione derivata; Questa operazione causa la ricorsione e un eventuale overflow dello stack.
 
- Questa regola non segnala una violazione per un'implementazione esplicita di <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> quando viene fornito un `Close()` o `System.IDisposable.Dispose(Boolean)` metodo visibile esternamente.
+ Questa regola non segnala una violazione per un'implementazione esplicita di <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> quando `Close()` viene fornito un metodo o visibile esternamente `System.IDisposable.Dispose(Boolean)` .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, implementare un nuovo metodo che espone la stessa funzionalità ed è visibile ai tipi derivati o alla modifica di un'implementazione non esplicita. Se una modifica di rilievo è accettabile, un'alternativa consiste nel rendere il tipo sealed.
@@ -47,7 +47,7 @@ ms.locfileid: "72661871"
  È possibile eliminare un avviso da questa regola se viene fornito un metodo visibile esternamente con la stessa funzionalità ma con un nome diverso rispetto al metodo implementato in modo esplicito.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo, `ViolatingBase`, che viola la regola e un tipo, `FixedBase`, che mostra una correzione per la violazione.
+ Nell'esempio seguente viene illustrato un tipo, `ViolatingBase` , che viola la regola e un tipo, `FixedBase` , che mostra una correzione per la violazione.
 
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExplicitMethodImplementations/cs/FxCop.Design.ExplicitMethodImplementations.cs#1)]
 

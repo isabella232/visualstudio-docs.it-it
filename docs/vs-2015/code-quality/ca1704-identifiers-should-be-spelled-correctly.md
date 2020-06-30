@@ -15,17 +15,17 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56ac5e60964621859c77bf53dc4f6c14480b4a83
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5e078fc1bb7fe247d541e7695e98c2de76c2466
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669244"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544066"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Gli identificatori devono essere digitati correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
@@ -44,14 +44,14 @@ ms.locfileid: "72669244"
 
 - Gli apostrofi iniziali e finali vengono rimossi. Ad esempio, "sender" suddivide in token in "sender".
 
-- I caratteri di sottolineatura indicano la fine di un token e vengono rimossi. Ad esempio, hello_world suddivide in token su "Hello", "World".
+- I caratteri di sottolineatura indicano la fine di un token e vengono rimossi. Ad esempio, Hello_world suddivide in token su "Hello", "World".
 
-- Le e commerciali incorporate vengono rimosse. Ad esempio, per & Mat suddivide in token in "Format".
+- Le e commerciali incorporate vengono rimosse. Ad esempio, per&Mat suddivide in token in "Format".
 
   Per impostazione predefinita, viene utilizzata la versione inglese (en) del correttore ortografico. Non sono attualmente disponibili altri dizionari di linguaggio.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, correggere l'ortografia della parola o aggiungere la parola a un dizionario personalizzato denominato CustomDictionary. XML. Inserire il dizionario nella directory di installazione dello strumento, nella directory del progetto o nella directory associata allo strumento nel profilo dell'utente (%USERPROFILE%\Application Data \\...). Per informazioni su come aggiungere il dizionario personalizzato a un progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vedere [procedura: personalizzare il dizionario di analisi del codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Per correggere una violazione di questa regola, correggere l'ortografia della parola o aggiungere la parola a un dizionario personalizzato denominato CustomDictionary.xml. Inserire il dizionario nella directory di installazione dello strumento, nella directory del progetto o nella directory associata allo strumento sotto il profilo dell'utente (%USERPROFILE%\Application Data \\ ...). Per informazioni su come aggiungere il dizionario personalizzato a un progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , vedere [procedura: personalizzare il dizionario di analisi del codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 - Aggiungere parole che non devono causare una violazione nel percorso dizionario/parole/riconoscimento.
 
@@ -90,7 +90,7 @@ ms.locfileid: "72669244"
  Eliminare un avviso da questa regola solo se la parola è intenzionalmente digitata in modo errato e la parola viene applicata a un set limitato di librerie. Le parole con ortografia corretta riducono la curva di apprendimento necessaria per le nuove librerie software.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2204: I valori letterali devono essere digitati in modo corretto](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204: I valori letterali devono essere digitati correttamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
  [CA1703: Le stringhe di risorsa devono essere digitate correttamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 

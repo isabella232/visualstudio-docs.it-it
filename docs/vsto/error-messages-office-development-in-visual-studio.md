@@ -3,7 +3,7 @@ title: Messaggi di errore (sviluppo per Office in Visual Studio)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: error-reference
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f00597c7d0cd55deb3a8747f6d23c658d83c2e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eb12578f10847c9afc6cbcef67e9b3d3b678db5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951983"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543546"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Messaggi di errore (sviluppo per Office in Visual Studio)
   Ogni messaggio di errore fornisce informazioni sulle cause possibili per un errore e le soluzioni potenziali o le soluzioni alternative per risolvere un problema.
@@ -28,8 +28,8 @@ ms.locfileid: "62951983"
 
 |Metodo|Descrizione|
 |-|-|
-|F1|Se si riceve un errore, è possibile premere **F1**. Si aprirà l'argomento del messaggio di errore corrispondente nella documentazione online.|
-|Ricerca full-text|È possibile usare la ricerca full-text usando parole delle prima frase nel testo del messaggio di errore. Scegliere **Ricerca** dal menu **Guida**.|
+|F1|Se viene visualizzato un errore, è possibile premere **F1**. Si aprirà l'argomento del messaggio di errore corrispondente nella documentazione online.|
+|Ricerca full-text|È possibile usare la ricerca full-text usando parole delle prima frase nel testo del messaggio di errore. Scegliere **Cerca** dal menu **?**.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Sviluppo per Office e SharePoint in Visual Studio](../vsto/office-and-sharepoint-development-in-visual-studio.md)
+- [Sviluppo di Office e SharePoint in Visual Studio](../vsto/office-and-sharepoint-development-in-visual-studio.md)

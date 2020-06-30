@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67a3588a857a0eea7d338217f975ed593dfdad52
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669097"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543702"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Gli identificatori non devono corrispondere a parole chiave
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
@@ -46,10 +46,10 @@ ms.locfileid: "72669097"
 
 - C++/CLI
 
-  Il confronto senza distinzione tra maiuscole e minuscole viene usato per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] parole chiave e il confronto con distinzione tra maiuscole e minuscole viene usato per gli altri linguaggi
+  Il confronto senza distinzione tra maiuscole e minuscole viene usato per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] le parole chiave e il confronto con distinzione tra maiuscole e minuscole viene usato per gli altri
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Selezionare un nome che non sia presente nell'elenco delle parole chiave.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se si è certi che l'identificatore non consentirà di confondere gli utenti dell'API e che la libreria sia utilizzabile in tutte le lingue disponibili nell'[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ È possibile eliminare un avviso da questa regola se si è certi che l'identificatore non consentirà di confondere gli utenti dell'API e che la libreria sia utilizzabile in tutte le lingue disponibili nell' [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .

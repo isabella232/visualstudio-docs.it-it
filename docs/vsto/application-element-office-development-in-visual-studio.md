@@ -1,8 +1,8 @@
 ---
-title: '&lt;applicazione&gt; elemento (sviluppo per Office in Visual Studio)'
+title: '&lt;&gt;elemento Application (sviluppo per Office in Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80652f6752b87cf0413b0b3166b0cf3292231c25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3540df77b4498376dcde389730e17e7506647fb8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62942911"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543741"
 ---
-# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;applicazione&gt; elemento (sviluppo per Office in Visual Studio)
+# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento Application (sviluppo per Office in Visual Studio)
   L'elemento `application` dello spazio dei nomi `vstav3` esegue il wrapping della descrizione delle soluzioni Office. Gli elementi figlio sono diversi per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.
 
 ## <a name="syntax-for-document-level-customizations"></a>Sintassi per le personalizzazioni a livello di documento
@@ -61,7 +61,7 @@ ms.locfileid: "62942911"
  L'elemento `application` presenta l'elemento seguente.
 
 ### <a name="customization"></a>Personalizzazione
- Il ruolo del `customization` elemento il `vstov3` dello spazio dei nomi definito in [ &#60;personalizzazione&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Il ruolo dell' `customization` elemento nello `vstov3` spazio dei nomi è definito in [&#60;&#62; di personalizzazione elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Esempio di personalizzazione a livello di documento
 

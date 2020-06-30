@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a05b7098d75d368f893b2504f7663675611bc0ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03918353b66c36698b5d17b332da052b6d95c87a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658717"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544391"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Controllare la sicurezza dichiarativa sui tipi di valori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
@@ -45,7 +45,7 @@ ms.locfileid: "72658717"
  È possibile eliminare un avviso da questa regola se un chiamante può ottenere istanze del tipo di valore nello stato predefinito senza rappresentare una minaccia per la sicurezza.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrata una libreria contenente un tipo di valore che viola questa regola. Si noti che il tipo di `StructureManager` presuppone che un chiamante che passa un'istanza del tipo di valore disponga dell'autorizzazione per creare o accedere all'istanza.
+ Nell'esempio seguente viene illustrata una libreria contenente un tipo di valore che viola questa regola. Si noti che il `StructureManager` tipo presuppone che un chiamante che passa un'istanza del tipo di valore disponga dell'autorizzazione per creare o accedere all'istanza.
 
  [!code-csharp[FxCop.Security.DemandOnValueType#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.DemandOnValueType/cs/FxCop.Security.DemandOnValueType.cs#1)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "72658717"
  Questo esempio produce il seguente output:
 
  **Costruttore personalizzato della struttura: richiesta non riuscita.** 
-**nuovi valori SecuredTypeStructure 100 100** 
-**nuovi valori SecuredTypeStructure 200 200**
+ **Nuovi valori SecuredTypeStructure 100 100** 
+ **Nuovi valori SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>Vedere anche
  [Collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [di dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) delle richieste

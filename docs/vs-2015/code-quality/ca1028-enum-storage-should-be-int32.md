@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fc1039cb547a48c4f2dd3ea869b46d4706e9c3a2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0b2e8ebcc7720f5cd9dc6c700bcc08b68f89e275
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661910"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542493"
 ---
-# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: L'archivio di enum deve essere Int32
+# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Le risorse di archiviazione dell'enumerazione devono essere Int32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
@@ -33,13 +33,13 @@ ms.locfileid: "72661910"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Il tipo sottostante di un'enumerazione pubblica non è <xref:System.Int32?displayProperty=fullName>.
+ Il tipo sottostante di un'enumerazione pubblica non è <xref:System.Int32?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un'enumerazione è un tipo di valore che definisce un insieme di costanti denominate correlate. Per impostazione predefinita, viene usato il tipo di dati <xref:System.Int32?displayProperty=fullName> per archiviare il valore costante. Anche se è possibile modificare questo tipo sottostante, non è necessario o consigliato per la maggior parte degli scenari. Si noti che non è possibile ottenere un miglioramento significativo delle prestazioni utilizzando un tipo di dati inferiore a <xref:System.Int32>. Se non è possibile utilizzare il tipo di dati predefinito, è necessario utilizzare uno dei tipi integrali conformi a CLS (Common Language System), <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32> o <xref:System.Int64> per assicurarsi che tutti i valori dell'enumerazione possano essere rappresentati nella programmazione conforme a CLS Lingue.
+ Un'enumerazione è un tipo di valore che definisce un insieme di costanti denominate correlate. Per impostazione predefinita, il <xref:System.Int32?displayProperty=fullName> tipo di dati viene utilizzato per archiviare il valore costante. Anche se è possibile modificare questo tipo sottostante, non è necessario o consigliato per la maggior parte degli scenari. Si noti che non è possibile ottenere un miglioramento significativo delle prestazioni utilizzando un tipo di dati inferiore a <xref:System.Int32> . Se non è possibile utilizzare il tipo di dati predefinito, è necessario utilizzare uno dei tipi integrali conformi a CLS (Common Language System),,, <xref:System.Byte> <xref:System.Int16> <xref:System.Int32> o <xref:System.Int64> per assicurarsi che tutti i valori dell'enumerazione possano essere rappresentati in linguaggi di programmazione conformi a CLS.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, a meno che non esistano problemi di dimensione o compatibilità, usare <xref:System.Int32>. Per le situazioni in cui <xref:System.Int32> non è sufficiente per mantenere i valori, usare <xref:System.Int64>. Se la compatibilità con le versioni precedenti richiede un tipo di dati più piccolo, utilizzare <xref:System.Byte> o <xref:System.Int16>.
+ Per correggere una violazione di questa regola, a meno che non esistano problemi di dimensione o compatibilità, usare <xref:System.Int32> . Per le situazioni in cui <xref:System.Int32> non è sufficiente conservare i valori, usare <xref:System.Int64> . Se la compatibilità con le versioni precedenti richiede un tipo di dati più piccolo, utilizzare <xref:System.Byte> o <xref:System.Int16> .
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Eliminare un avviso da questa regola solo se i problemi di compatibilità con le versioni precedenti lo richiedono. Nelle applicazioni, la mancata conformità a questa regola in genere non provoca problemi. Nelle librerie, in cui è necessaria l'interoperabilità del linguaggio, la mancata conformità a questa regola potrebbe influire negativamente sugli utenti.
@@ -56,14 +56,14 @@ ms.locfileid: "72661910"
 ## <a name="example-of-how-to-fix"></a>Esempio di correzione
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente viene corretta la violazione precedente modificando il tipo di dati sottostante in <xref:System.Int32>.
+ Nell'esempio seguente viene corretta la violazione precedente modificando il tipo di dati sottostante in <xref:System.Int32> .
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumIntegralTypeFixed/cs/FxCop.Design.EnumIntegralTypeFixed.cs#1)]
  [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.EnumIntegralTypeFixed/vb/FxCop.Design.EnumIntegralTypeFixed.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1008: Gli enum devono avere valore zero](../code-quality/ca1008-enums-should-have-zero-value.md)
+ [CA1008: Le enumerazioni devono avere valore zero](../code-quality/ca1008-enums-should-have-zero-value.md)
 
  [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 

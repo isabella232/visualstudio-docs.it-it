@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: af41fc5576cbcd56589680d99c0cd5c0dfd6e6f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0afa6950a6ad876cdcfdcc1a56dd143422b9d44f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664764"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544352"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Impostare come sealed i metodi che soddisfano interfacce private
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|SealMethodsThatSatisfyPrivateInterfaces|
 |CheckId|CA2119|
@@ -33,21 +33,21 @@ ms.locfileid: "72664764"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico ereditabile fornisce un'implementazione di metodo sottoponibile a override di un'interfaccia `internal` (`Friend` in Visual Basic).
+ Un tipo pubblico ereditabile fornisce un'implementazione di metodo sottoponibile a override di un' `internal` `Friend` interfaccia (in Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
- I metodi di interfaccia hanno accessibilità pubblica, che non possono essere modificati dal tipo di implementazione. Un'interfaccia interna crea un contratto che non deve essere implementato all'esterno dell'assembly che definisce l'interfaccia. Un tipo pubblico che implementa un metodo di un'interfaccia interna usando il modificatore `virtual` (`Overridable` in Visual Basic) consente di eseguire l'override del metodo da un tipo derivato esterno all'assembly. Se un secondo tipo nell'assembly di definizione chiama il metodo e prevede un contratto solo interno, il comportamento potrebbe essere compromesso quando, invece, viene eseguito il metodo sottoposto a override nell'assembly esterno. Ciò consente di creare una vulnerabilità di sicurezza.
+ I metodi di interfaccia hanno accessibilità pubblica, che non possono essere modificati dal tipo di implementazione. Un'interfaccia interna crea un contratto che non deve essere implementato all'esterno dell'assembly che definisce l'interfaccia. Un tipo pubblico che implementa un metodo di un'interfaccia interna usando il `virtual` `Overridable` modificatore (in Visual Basic) consente di eseguire l'override del metodo da un tipo derivato esterno all'assembly. Se un secondo tipo nell'assembly di definizione chiama il metodo e prevede un contratto solo interno, il comportamento potrebbe essere compromesso quando, invece, viene eseguito il metodo sottoposto a override nell'assembly esterno. Ciò consente di creare una vulnerabilità di sicurezza.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, impedire che il metodo venga sottoposto a override all'esterno dell'assembly utilizzando uno dei seguenti elementi:
 
-- Creare il tipo dichiarante `sealed` (`NotInheritable` in Visual Basic).
+- Creare il tipo dichiarante `sealed` ( `NotInheritable` in Visual Basic).
 
-- Modificare l'accessibilità del tipo dichiarante in `internal` (`Friend` in Visual Basic).
+- Modificare l'accessibilità del tipo dichiarante in `internal` ( `Friend` in Visual Basic).
 
 - Rimuovere tutti i costruttori pubblici dal tipo dichiarante.
 
-- Implementare il metodo senza usare il modificatore `virtual`.
+- Implementare il metodo senza usare il `virtual` modificatore.
 
 - Implementare il metodo in modo esplicito.
 
@@ -55,7 +55,7 @@ ms.locfileid: "72664764"
  È possibile eliminare un avviso da questa regola se, dopo un'attenta revisione, non esistono problemi di sicurezza che potrebbero essere sfruttabili se il metodo viene sottoposto a override all'esterno dell'assembly.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo, `BaseImplementation`, che viola questa regola.
+ Nell'esempio seguente viene illustrato un tipo, `BaseImplementation` , che viola questa regola.
 
  [!code-cpp[FxCop.Security.SealMethods1#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/cpp/FxCop.Security.SealMethods1.cpp#1)]
  [!code-csharp[FxCop.Security.SealMethods1#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods1/cs/FxCop.Security.SealMethods1.cs#1)]
@@ -69,4 +69,4 @@ ms.locfileid: "72664764"
  [!code-vb[FxCop.Security.SealMethods2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/vb/FxCop.Security.SealMethods2.vb#1)]
 
 ## <a name="see-also"></a>Vedere anche
- [Interfacce](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [Interfacce](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
+ [Interfacce interfacce](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [Interfaces](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)

@@ -28,12 +28,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568204"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544092"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opzioni, Editor di testo, XAML, Varie
 
@@ -43,7 +43,7 @@ Usare la pagina delle proprietà **Varie** per specificare la formattazione di e
 
 Usare questa impostazione per controllare la generazione automatica di tag e virgolette.
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Tag di chiusura**|Specifica se il tag di chiusura di un elemento viene generato automaticamente quando si chiude il tag di apertura con il carattere maggiore di (>).|
 |**Virgolette per gli attributi**|Specifica se vengono generate le virgolette quando un valore di attributo viene selezionato dall'elenco a discesa Completamento istruzioni.|

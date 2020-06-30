@@ -1,9 +1,9 @@
 ---
-title: '&lt;punto di ingresso&gt; elemento (sviluppo per Office in Visual Studio)'
+title: '&lt;&gt;elemento entryPoint (sviluppo per Office in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd3da83a25a05690e56d229f61ee709473171dd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799781"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543598"
 ---
-# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;punto di ingresso&gt; elemento (sviluppo per Office in Visual Studio)
+# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento entryPoint (sviluppo per Office in Visual Studio)
   Ogni elemento `entryPoint` dello spazio dei nomi `vstav3` identifica un assembly di personalizzazione che deve essere eseguito quando l'applicazione [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] è installata.
 
 ## <a name="syntax"></a>Sintassi
@@ -50,12 +50,12 @@ ms.locfileid: "62799781"
 ### <a name="assemblyidentity"></a>assemblyIdentity
  Obbligatorio. L'elemento `assemblyIdentity` nello spazio dei nomi `vstav3` si riferisce a un elemento `assemblyIdentity` esistente nel manifesto dell'applicazione [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
 
- Il ruolo del `assemblyIdentity` e relativi attributi sono definiti [ &#60;assemblyIdentity&#62; elemento &#40;applicazione ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
+ Il ruolo di `assemblyIdentity` e i relativi attributi sono definiti in [&#60;elemento&#62; assemblyIdentity &#40;&#41;dell'applicazione ClickOnce ](../deployment/assemblyidentity-element-clickonce-application.md).
 
 ## <a name="document-level-customization-example"></a>Esempio di personalizzazione a livello di documento
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra elementi `entryPoint` in un manifesto dell'applicazione per una soluzione Office a livello di documento distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra elementi `entryPoint` in un manifesto dell'applicazione per una soluzione Office a livello di documento distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -97,7 +97,7 @@ ms.locfileid: "62799781"
 ## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra un elemento `entryPoint` in un manifesto dell'applicazione per una soluzione Office a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra un elemento `entryPoint` in un manifesto dell'applicazione per una soluzione Office a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 

@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0abc95811dc870abbfaa583fbaa7705302a70781
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 217f95b7d3658db107fc482040686eea9ee47604
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670160"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543663"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Implementare ISerializable in modo corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ImplementISerializableCorrectly|
 |CheckId|CA2240|
@@ -33,19 +33,19 @@ ms.locfileid: "72670160"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo visibile esternamente è assegnabile all'interfaccia <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> e viene soddisfatta una delle condizioni seguenti:
+ Un tipo visibile esternamente è assegnabile all' <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia e viene soddisfatta una delle condizioni seguenti:
 
-- Il tipo eredita ma non esegue l'override del metodo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> e il tipo dichiara i campi di istanza che non sono contrassegnati con l'attributo <xref:System.NonSerializedAttribute?displayProperty=fullName>.
+- Il tipo eredita ma non esegue l'override del <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metodo e il tipo dichiara i campi di istanza che non sono contrassegnati con l' <xref:System.NonSerializedAttribute?displayProperty=fullName> attributo.
 
-- Il tipo non è sealed e il tipo implementa un metodo di <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> non visibile esternamente e sottoponibile a override.
+- Il tipo non è sealed e il tipo implementa un <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodo non visibile esternamente e sottoponibile a override.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I campi di istanza dichiarati in un tipo che eredita l'interfaccia <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> non vengono inclusi automaticamente nel processo di serializzazione. Per includere i campi, il tipo deve implementare il metodo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> e il costruttore di serializzazione. Se i campi non devono essere serializzati, applicare l'attributo <xref:System.NonSerializedAttribute> ai campi per indicare in modo esplicito la decisione.
+ I campi di istanza dichiarati in un tipo che eredita l' <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia non vengono inclusi automaticamente nel processo di serializzazione. Per includere i campi, il tipo deve implementare il <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodo e il costruttore di serializzazione. Se i campi non devono essere serializzati, applicare l' <xref:System.NonSerializedAttribute> attributo ai campi per indicare in modo esplicito la decisione.
 
- Nei tipi non sealed, le implementazioni del metodo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> devono essere visibili esternamente. Pertanto, il metodo può essere chiamato da tipi derivati ed è sottoponibile a override.
+ Nei tipi non sealed, le implementazioni del <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodo devono essere visibili esternamente. Pertanto, il metodo può essere chiamato da tipi derivati ed è sottoponibile a override.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rendere visibile e sottoponibile a override il metodo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> e verificare che tutti i campi di istanza siano inclusi nel processo di serializzazione o contrassegnati in modo esplicito con l'attributo <xref:System.NonSerializedAttribute>.
+ Per correggere una violazione di questa regola, rendere <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> visibile e sottoponibile a override il metodo e verificare che tutti i campi di istanza siano inclusi nel processo di serializzazione o contrassegnati in modo esplicito con l' <xref:System.NonSerializedAttribute> attributo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.
@@ -65,7 +65,7 @@ ms.locfileid: "72670160"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/vb/FxCop.Usage.ImplementISerializableCorrectly2.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2236: Chiamare metodi della classe base su tipi ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Chiamare metodi della classe di base su tipi ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2229: Implementare costruttori di serializzazione](../code-quality/ca2229-implement-serialization-constructors.md)
 

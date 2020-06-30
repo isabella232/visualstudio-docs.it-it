@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ccc439e0d84d1fced4ba0359385a6964356d5df6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 223b2ff9aa25ddd94a3c62eb9e641127a1cace4e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668452"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543819"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitare il codice privato non chiamato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
@@ -41,7 +41,7 @@ ms.locfileid: "72668452"
 
 - Costruttori di serializzazione.
 
-- Metodi contrassegnati con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Metodi contrassegnati con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> .
 
 - Membri che sono sostituzioni.
 
@@ -57,6 +57,6 @@ ms.locfileid: "72668452"
 ## <a name="related-rules"></a>Regole correlate
  [CA1812: Evitare classi interne prive di istanze](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Rivedere i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Controllare i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Rimuovere variabili locali non usate](../code-quality/ca1804-remove-unused-locals.md)

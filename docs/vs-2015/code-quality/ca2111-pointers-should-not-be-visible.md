@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a0d5546c6f6a2f5dbd0c6063f4a1dfd40ce1d7bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7429251a66ce2fe22a825a153cb90248faabb9fd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658733"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544365"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: I puntatori non devono essere visibili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|PointersShouldNotBeVisible|
 |CheckId|CA2111|
@@ -36,7 +36,7 @@ ms.locfileid: "72658733"
  Un campo public o protected <xref:System.IntPtr?displayProperty=fullName> o <xref:System.UIntPtr?displayProperty=fullName> non è di sola lettura.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.IntPtr> e <xref:System.UIntPtr> sono tipi di puntatore usati per accedere alla memoria non gestita. Se un puntatore non è privato, interno o di sola lettura, il codice dannoso può modificare il valore del puntatore, consentendo potenzialmente l'accesso a percorsi arbitrari nella memoria o causando errori dell'applicazione o del sistema.
+ <xref:System.IntPtr>e <xref:System.UIntPtr> sono tipi di puntatore usati per accedere alla memoria non gestita. Se un puntatore non è privato, interno o di sola lettura, il codice dannoso può modificare il valore del puntatore, consentendo potenzialmente l'accesso a percorsi arbitrari nella memoria o causando errori dell'applicazione o del sistema.
 
  Se si prevede di proteggere l'accesso al tipo che contiene il campo puntatore, vedere [CA2112: i tipi protetti non devono esporre i campi](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 

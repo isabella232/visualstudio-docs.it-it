@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Nascondere il testo nei documenti a livello di codice'
+title: 'Procedura: nascondere il testo nei documenti a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1da471ff1911cdda4a62ef9c150236b3a225342f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dae19d196f830e5187fa395473c0a5482cb1d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812768"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543312"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>Procedura: Nascondere il testo nei documenti a livello di codice
+# <a name="how-to-programmatically-hide-text-in-documents"></a>Procedura: nascondere il testo nei documenti a livello di codice
   È possibile nascondere testo in un documento impostando la proprietà <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> di un controllo <xref:Microsoft.Office.Interop.Word.Range.Font%2A> per un intervallo di testo determinato.
 
  Ad esempio, è possibile nascondere temporaneamente il testo all'interno di un <xref:Microsoft.Office.Tools.Word.Bookmark> (in una personalizzazione a livello di documento) o un <xref:Microsoft.Office.Interop.Word.Bookmark> (in un componente aggiuntivo VSTO) prima di inviare un documento a una stampante.
@@ -52,11 +52,11 @@ ms.locfileid: "62812768"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]
 
 ## <a name="compile-the-code"></a>Compilare il codice
- Questo esempio di codice presuppone che il documento contiene un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo (in una personalizzazione a livello di documento) o <xref:Microsoft.Office.Interop.Word.Bookmark> controllo (in un componente aggiuntivo VSTO) denominato `bookmark1`.
+ Questo esempio di codice presuppone che il documento contenga un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo (in una personalizzazione a livello di documento) o un <xref:Microsoft.Office.Interop.Word.Bookmark> controllo (in un componente aggiuntivo VSTO) denominato `bookmark1` .
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: A livello di codice stampa documenti](../vsto/how-to-programmatically-print-documents.md)
-- [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Procedura: A livello di programmazione reimpostare gli intervalli nei documenti di Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [Procedura: A livello di codice aggiorna il testo di segnalibro](../vsto/how-to-programmatically-update-bookmark-text.md)
+- [Procedura: stampare documenti a livello di codice](../vsto/how-to-programmatically-print-documents.md)
+- [Procedura: definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Procedura: reimpostare gli intervalli nei documenti di Word a livello di codice](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Procedura: aggiornare il testo del segnalibro a livello di codice](../vsto/how-to-programmatically-update-bookmark-text.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

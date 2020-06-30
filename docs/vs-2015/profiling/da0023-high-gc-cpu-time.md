@@ -13,22 +13,22 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf5e841fdccbd6a41d0e7ee61c9f5278c6a882e3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 667dc76019259faa12d41b7e4b7bf383bcda2258
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586872"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542922"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Tempo di CPU GC elevato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||  
+|Elemento|valore|  
 |-|-|  
 |ID regola|DA0023|  
 |Category|Uso di .NET Framework|  
 |Metodo di profilatura|Tutti|  
-|Messaggio|% tempo in GC elevata. Indica un sovraccarico di Garbage Collection che potrebbe incidere sulla velocità di risposta dell'applicazione. Per altri dettagli, è possibile raccogliere dati sull'allocazione di memoria .NET e informazioni sulla durata degli oggetti per comprendere il criterio di allocazione della memoria usata dall'applicazione.|  
+|Message|% tempo in GC elevata. Indica un sovraccarico di Garbage Collection che potrebbe incidere sulla velocità di risposta dell'applicazione. Per altri dettagli, è possibile raccogliere dati sull'allocazione di memoria .NET e informazioni sulla durata degli oggetti per comprendere il criterio di allocazione della memoria usata dall'applicazione.|  
 |Tipo regola|Informativo|  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  

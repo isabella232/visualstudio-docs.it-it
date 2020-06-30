@@ -11,41 +11,40 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6220afc2bdf75cc22529c65d5514f5f9e0766555
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 907b71d82a3c630bedc48209e735d9cf817432ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919217"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543156"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La shell integrata di Visual Studio include l'ambiente di sviluppo integrato, il debugger, e l'integrazione per il controllo del codice sorgente. Non è incluso alcun linguaggio di programmazione. Tuttavia, la shell integrata fornisce un Framework che consente di aggiungere linguaggi di programmazione.  
+La shell integrata di Visual Studio include il Integrated Development Environment (IDE), il debugger e l'integrazione del controllo del codice sorgente. Non è incluso alcun linguaggio di programmazione. Tuttavia, la shell integrata fornisce un Framework che consente di aggiungere linguaggi di programmazione.  
   
  Visual Studio Integrated Shell è in realtà una combinazione di Visual Studio Isolated Shell, oltre a un'installazione aggiuntiva che include componenti specifici della shell integrata.  L'applicazione shell integrata deve includere sia il pacchetto ridistribuibile della shell isolata sia il pacchetto di Shell ridistribuibile integrato, sia da [Microsoft Visual Studio pacchetti ridistribuibili Shell](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).  
   
 > [!NOTE]
-> prima di accedere ai pacchetti ridistribuibili per la shell isolata e integrata, dovrai completare un breve sondaggio per i clienti.  Al termine del sondaggio, verrai reindirizzato a una pagina di Visual Studio Connect che include i collegamenti per il download dei pacchetti ridistribuibili.  È possibile trovare i collegamenti per il download nelle visite successive al sito di Visual Studio Connect nella scheda  **&#124; programmi Visual Studio 2015 Integrated and isolated shell** .  
+> Prima di poter accedere ai pacchetti ridistribuibili della shell isolata e integrata, verrà richiesto di compilare un breve sondaggio del cliente.  Dopo aver compilato il sondaggio, si verrà indirizzati a una pagina di Visual Studio Connect con i collegamenti di download dei pacchetti ridistribuibili.  È possibile trovare i collegamenti di download nelle visite successive al sito di Visual Studio Connect sotto la scheda **programmi &#124; Visual studio 2015 Integrated and isolated shell** .  
   
  Se si installa l'applicazione shell integrata nello stesso computer della versione completa di Visual Studio, i componenti dell'applicazione verranno integrati direttamente in Visual Studio.  
   
 ## <a name="features-in-the-integrated-shell"></a>Funzionalità della shell integrata  
   
-|||  
+|Area di funzionalità|Funzionalità|  
 |-|-|  
-|Area delle funzionalità|Caratteristica|  
-|Supporto linguistico|-Nessuno|  
+|Supporto delle lingue|-Nessuno|  
 |IDE|<ul><li>Impostazioni<br /><br /> <ul><li>Crea impostazioni</li><li>Importare ed esportare le impostazioni</li><li>Reimpostare le impostazioni</li></ul></li><li>Integrazione della **casella degli strumenti**</li><li>Integrazione di **elenco attività**</li><li>Integrazione della Guida</li><li>Finestra di dialogo **Opzioni**</li><li>Gestione di tipi di carattere e colori</li><li>Finestra di **output**</li><li>Finestra di **comando**</li><li>Gestione delle finestre</li><li>Comandi, menu e tasti di scelta rapida</li><li>Runtime del linguaggio specifico di dominio (DSL)</li></ul>|  
 |Tipi di progetto e di sistema del progetto|-Soluzioni e cartelle soluzione<br />-Gestione configurazione soluzioni<br />-Gestione degli elementi<br />-Soluzioni a progetto singolo e multiprogetto<br />-Progettazione applicazioni (proprietà del progetto semplificate)<br />-Aggiungi riferimento Web<br />-Aggiungi riferimento al servizio<br />-Singolo progetto<br />-Tipi di progetto di sito Web<br />-Progetti di applicazione Web|  
-|Compila|-Passaggi di compilazione personalizzati nell'IDE<br />-Pre-compilazione per la protezione della proprietà intellettuale (IP)<br />-Firma codice<br />     MSBuild|  
-|Editor|-Strumenti di esplorazione del codice (ricerca unificata, definizione di origine, ereditarietà)<br />-Navigazione del codice<br />-IntelliSense<br />-Degli smart tag<br />-Refactoring<br />-Bell'elenco<br />-Filtro IntelliSense<br />-   finestra **definizione codice**|  
-|Designer|-Windows Presentation Foundation Designer<br />-Progettazione Windows Form<br />-Finestra di progettazione Web e editor HTML|  
-|Data|-   **Esplora server** (semplificata: solo dati). Vedere la nota 1.<br />-   finestra **origini dati**<br />-Set completo di controlli dati<br />-Editor XML<br />-I dati vengono associati a un'origine dati locale (. MDF o. MDB<br />-Associazione dati a oggetto<br />-Associazione dati al servizio Web<br />-Data binding al server di database locale<br />-Data binding al server di database remoto<br />-Strumenti DDL per dati remoti<br />estendibilità di -   **Esplora server** (esempi di[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)])|  
-|Debugger|-Debug locale. Vedere la nota 2.<br />-Debug gestito<br />-Debug locale<br />-Connetti a processo locale<br />-Connetti a processo remoto<br />-Delegato anonimo<br />-Domini applicazione<br />-Debug ASPX<br />-Attributi<br />-Break durante Func-EVAL<br />-Punti di interruzione<br />-Vincoli del punto di interruzione<br />-Stack<br />finestra di **comando** -   <br />-Debug tra thread<br />-Suggerimenti dati<br />-Visualizzatore dati<br />-Supporto del debugger per gli assistenti al debug gestito (MDA)<br />-Supporto del debugger per il server d'avanzamento del tipo<br />-Supporto DTEEvents per OTB<br />-Stepper Stepper<br />-Test AppID del debugger (DBGCLR)<br />-Profilo debugger<br />-Strumenti e opzioni del debugger<br />-Iteratore di debug<br />-Valutazione delle espressioni in fase di progettazione<br />- C# Analizzatore di espressioni<br />-Disassembly<br />-Modifica e continuazione<br />-Finestre dell'analizzatore di espressioni (espressioni di controllo, variabili locali, auto)<br />-Helper eccezioni<br />-Eccezioni<br />-Esecuzione<br />- Generics<br />-Recupero origine destra<br />-Debug HPC/cluster<br />-Debug multilingua integrato<br />-Debug di interoperabilità<br />-Debug just-in-Time<br />-Debug locale<br />-Debug gestito<br />-Controllo manuale (finestra processi)<br />-Memoria<br />-Supporto MiniDump<br />-Moduli<br />-Debug a più processi<br />-Debug nativo<br />-Nuovo supporto del motore di debug<br />-Debug del codice ottimizzato<br />-Filtro di output di Windows<br />-Processo di hosting per il debug gestito<br />-Processi<br />-Controllo immediato<br />-Registri<br />-Registri nello stack<br />-Debug remoto<br />-Valori restituiti<br />-Debug di script<br />-Supporto per il servizio di origine<br />-Sicurezza<br />-Side-by-side<br />-SQL<br />-Server di simboli<br />-Punti di traccia<br />-Thread<br />-Visualizzazioni<br />-Extensible Stylesheet Language Transformations debugger (XSLT)|  
-|Supporto a 64-bit|-debug a 64 bit per codice gestito e nativo, tutti i linguaggi<br />-supporto nativo x64|  
+|Compilare|-Passaggi di compilazione personalizzati nell'IDE<br />-Pre-compilazione per la protezione della proprietà intellettuale (IP)<br />-Firma codice<br />     MSBuild|  
+|Editor|-Strumenti di esplorazione del codice (ricerca unificata, definizione di origine, ereditarietà)<br />-Navigazione del codice<br />-IntelliSense<br />-Degli smart tag<br />-Refactoring<br />-Bell'elenco<br />-Filtro IntelliSense<br />-   Finestra **definizione codice**|  
+|Finestra di progettazione|-Windows Presentation Foundation Designer<br />-Progettazione Windows Form<br />-Finestra di progettazione Web e editor HTML|  
+|Data|-   **Esplora server** (semplificata: solo dati). Vedere la nota 1.<br />-   Finestra **origini dati**<br />-Set completo di controlli dati<br />-Editor XML<br />-I dati vengono associati a un'origine dati locale (. MDF o. MDB<br />-Associazione dati a oggetto<br />-Associazione dati al servizio Web<br />-Data binding al server di database locale<br />-Data binding al server di database remoto<br />-Strumenti DDL per dati remoti<br />-   Estensibilità **Esplora server** ( [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] esempi)|  
+|Debugger|-Debug locale. Vedere la nota 2.<br />-Debug gestito<br />-Debug locale<br />-Connetti a processo locale<br />-Connetti a processo remoto<br />-Delegato anonimo<br />-Domini applicazione<br />-Debug ASPX<br />-Attributi<br />-Break durante Func-EVAL<br />-Punti di interruzione<br />-Vincoli del punto di interruzione<br />-Stack<br />-   Finestra di **comando**<br />-Debug tra thread<br />-Suggerimenti dati<br />-Visualizzatore dati<br />-Supporto del debugger per gli assistenti al debug gestito (MDA)<br />-Supporto del debugger per il server d'avanzamento del tipo<br />-Supporto DTEEvents per OTB<br />-Stepper Stepper<br />-Test AppID del debugger (DBGCLR)<br />-Profilo debugger<br />-Strumenti e opzioni del debugger<br />-Iteratore di debug<br />-Valutazione delle espressioni in fase di progettazione<br />-Analizzatore di espressioni C#<br />-Disassembly<br />-Modifica e continuazione<br />-Finestre dell'analizzatore di espressioni (espressioni di controllo, variabili locali, auto)<br />-Helper eccezioni<br />-Eccezioni<br />-Esecuzione<br />- Generics<br />-Recupero origine destra<br />-Debug HPC/cluster<br />-Debug multilingua integrato<br />-Debug di interoperabilità<br />-Debug just-in-Time<br />-Debug locale<br />-Debug gestito<br />-Controllo manuale (finestra processi)<br />-Memoria<br />-Supporto MiniDump<br />-Moduli<br />-Debug a più processi<br />-Debug nativo<br />-Nuovo supporto del motore di debug<br />-Debug del codice ottimizzato<br />-Filtro di output di Windows<br />-Processo di hosting per il debug gestito<br />-Processi<br />-Controllo immediato<br />-Registri<br />-Registri nello stack<br />-Debug remoto<br />-Valori restituiti<br />-Debug di script<br />-Supporto per il servizio di origine<br />-Sicurezza<br />-Side-by-side<br />-SQL<br />-Server di simboli<br />-Punti di traccia<br />-Thread<br />-Visualizzazioni<br />-Extensible Stylesheet Language Transformations debugger (XSLT)|  
+|Supporto a 64 bit|-debug a 64 bit per codice gestito e nativo, tutti i linguaggi<br />-supporto nativo x64|  
 |Controllo del codice sorgente (SCC)|-Integrazione SCC di base. Vedere la nota 3.<br />-Verifica strumenti e opzioni|  
-|Extensibility|-Utilizzare VSPackage e componenti MEF|  
+|Estendibilità|-Utilizzare VSPackage e componenti MEF|  
   
 ## <a name="notes"></a>Note  
   

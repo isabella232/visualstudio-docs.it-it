@@ -1,18 +1,18 @@
 ---
 title: Condivisione di classi tra DSL utilizzando una libreria DSL
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76111357"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542545"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Condivisione di classi tra DSL utilizzando una libreria DSL
 Nell'SDK di visualizzazione e modellazione di Visual Studio è possibile creare una definizione DSL incompleta che è possibile importare in un altro linguaggio DSL. In questo modo è possibile fattorizzare parti comuni di modelli simili.
@@ -31,17 +31,17 @@ Nell'SDK di visualizzazione e modellazione di Visual Studio è possibile creare 
 
      Per definire una relazione che può essere utilizzata dagli utilità di importazione, creare due classi di dominio e creare la relazione tra di esse.
 
-     Si consiglia di impostare il **modificatore di ereditarietà** delle classi di dominio su `Abstract`.
+     Si consiglia di impostare il **modificatore di ereditarietà** delle classi di dominio su `Abstract` .
 
 3. È possibile aggiungere elementi definiti in DSL Explorer, ad esempio i generatori di connessioni.
 
 4. È possibile aggiungere personalizzazioni che richiedono codice aggiuntivo, ad esempio i vincoli di convalida.
 
-5. Fare clic su **Trasforma tutti i modelli**.
+5. Fare clic su **trasforma tutti i modelli**.
 
-6. Compilazione del progetto.
+6. Compilare il progetto.
 
-7. Quando si distribuisce il linguaggio DSL per l'uso da parte di altri utenti, è necessario specificare sia l'assembly compilato (DLL) che il file `DslDefinition.dsl`. È possibile trovare l'assembly compilato in una cartella `Dsl\bin\*`
+7. Quando si distribuisce il linguaggio DSL per l'uso da parte di altri utenti, è necessario specificare sia l'assembly compilato (DLL) che il file `DslDefinition.dsl` . È possibile trovare l'assembly compilato in una cartella in`Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Per importare una libreria DSL
 
@@ -57,7 +57,7 @@ Nell'SDK di visualizzazione e modellazione di Visual Studio è possibile creare 
 
 5. Aggiungere al progetto DSL un riferimento all'assembly (DLL) compilato dal progetto libreria DSL.
 
-6. Compila la soluzione.
+6. Compilare la soluzione.
 
    Una libreria DSL può importare altre librerie. Quando si importa una libreria, anche le relative importazioni vengono visualizzate automaticamente in Esplora DSL.
 

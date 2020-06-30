@@ -2,7 +2,7 @@
 title: Configurare Python in Servizio app di Azure (Windows)
 description: Come installare un interprete e librerie di Python in Servizio app di Azure e configurazione delle applicazioni Web per fare riferimento correttamente a tale interprete.
 ms.date: 01/07/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34fd56b37113467b7cbb2dfb8ac6fdba01b79cc6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62535956"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543754"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Come configurare un ambiente Python in Servizio app di Azure (Windows)
 
@@ -94,7 +94,7 @@ Questa azione apre la pagina di descrizione dell'estensione contenente il percor
 
 In caso di difficoltà a visualizzare il percorso per l'estensione, è possibile trovarlo manualmente tramite la console:
 
-1. Nella pagina Servizio app selezionare la**console** **Strumenti** > di sviluppo .
+1. Nella pagina del servizio app selezionare la console **degli strumenti di sviluppo**  >  **Console**.
 1. Immettere il comando `ls ../home` o `dir ..\home` per visualizzare le cartelle delle estensioni di primo livello, ad esempio *Python361x64*.
 1. Immettere un comando come `ls ../home/python361x64` o `dir ..\home\python361x64` per verificare che contenga *python.exe* e altri file di interprete.
 
@@ -162,22 +162,22 @@ L'interprete Python installato tramite un'estensione del sito è solo una parte 
 
 Per installare i pacchetti direttamente nell'ambiente server, usare uno dei metodi seguenti:
 
-| Metodi | Uso |
+| Metodi | Utilizzo |
 | --- | --- |
 | [Console Kudu del Servizio app di Azure](#azure-app-service-kudu-console) | I pacchetti vengono installati in modo interattivo. I pacchetti devono essere puri Python o è necessario pubblicare wheel. |
 | [API REST Kudu](#kudu-rest-api) | Consente di automatizzare l'installazione dei pacchetti.  I pacchetti devono essere puri Python o è necessario pubblicare wheel. |
 | Bundle con app | Installare i pacchetti direttamente nel progetto e quindi distribuirli al servizio app come se facessero parte dell'app. A seconda di quante dipendenze sono presenti e della loro frequenza di aggiornamento, questo metodo può essere il modo più semplice per ottenere una distribuzione funzionante. Tenere presente che queste librerie devono corrispondere alla versione di Python nel server. In caso contrario vengono visualizzati errori sconosciuti dopo la distribuzione. Tuttavia, dato che le versioni di Python nelle estensioni del sito del servizio app sono esattamente le stesse rilasciate su python.org, è possibile ottenere facilmente una versione compatibile per la distribuzione locale. |
-| Ambienti virtuali | Non supportato. Ricorrere invece alla creazione di bundle e impostare la variabile di ambiente `PYTHONPATH` in modo che punti al percorso dei pacchetti. |
+| Ambienti virtuali | Non supportata. Ricorrere invece alla creazione di bundle e impostare la variabile di ambiente `PYTHONPATH` in modo che punti al percorso dei pacchetti. |
 
 ### <a name="azure-app-service-kudu-console"></a>Console Kudu del Servizio app di Azure
 
 La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) offre l'accesso diretto da riga di comando con privilegi elevati al server del servizio app e al relativo file system. Oltre a essere un utile strumento di debug, supporta operazioni CLI, come l'installazione dei pacchetti.
 
-1. Aprire Kudu dalla pagina Servizio app nel portale di Azure selezionando > **Strumenti avanzati di** **sviluppo,** quindi **Vai**. Questa azione consente di passare a un URL uguale all'URL del servizio app di base, con l'aggiunta di `.scm`. Ad esempio, se l'URL di base è `https://vspython-test.azurewebsites.net/` Kudu è su `https://vspython-test.scm.azurewebsites.net/` ed è possibile aggiungere un segnalibro:
+1. Aprire Kudu dalla pagina del servizio app nel portale di Azure selezionando **strumenti di sviluppo**strumenti  >  **avanzati**e quindi fare clic su **Vai**. Questa azione consente di passare a un URL uguale all'URL del servizio app di base, con l'aggiunta di `.scm`. Ad esempio, se l'URL di base è `https://vspython-test.azurewebsites.net/` Kudu è su `https://vspython-test.scm.azurewebsites.net/` ed è possibile aggiungere un segnalibro:
 
     ![Console Kudu per il servizio app di Azure](media/python-on-azure-console01.png)
 
-1. Selezionare **Debug console** > **CMD** per aprire la console, in cui è possibile passare all'installazione di Python e vedere quali librerie sono già presenti.
+1. Selezionare **debug console**  >  **cmd** per aprire la console, in cui è possibile passare all'installazione di Python e vedere quali librerie sono già presenti.
 
 1. Per installare un singolo pacchetto:
 
@@ -193,7 +193,7 @@ La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) offre l
 
     b. Eseguire il comando `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
 
-    L'utilizzo di *requirements.txt* è consigliato perché è facile riprodurre il set di pacchetti esatto sia localmente che sul server. Ricordarsi di visitare la console dopo la distribuzione di qualsiasi modifica apportata a *requirements.txt* e di eseguire nuovamente il comando.
+    È consigliabile usare *requirements.txt* perché è facile riprodurre l'esatto set di pacchetti sia in locale che nel server. Ricordarsi di visitare la console dopo la distribuzione di qualsiasi modifica apportata a *requirements.txt* e di eseguire nuovamente il comando.
 
 > [!Note]
 > Non è presente alcun compilatore C nel servizio app, pertanto è necessario installare il file wheel per tutti i pacchetti con moduli di estensione nativa. Molti pacchetti diffusi offrono i propri file wheel. Per i pacchetti che non li offrono, usare `pip wheel <package_name>` nel computer di sviluppo locale e quindi caricare il file wheel nel proprio sito. Per un esempio, vedere [Gestire i pacchetti necessari con requirements.txt](managing-required-packages-with-requirements-txt.md).

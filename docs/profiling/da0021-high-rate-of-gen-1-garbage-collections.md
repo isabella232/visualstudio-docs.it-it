@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ff757b0ccb1a6ac9a011a8afa7d9824959dafb
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: b22341f1e4944b91f86a16af19494a85a2abd013
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329496"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544690"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Frequenza elevata di Garbage Collection di generazione 1
 
-|||
+|Elemento|valore|
 |-|-|
 |ID regola|DA0021|
 |Category|Uso di .NET Framework|

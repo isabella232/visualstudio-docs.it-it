@@ -14,32 +14,32 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 33596c353f5b8f303fe061a75b6f4fb406912df3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: 5865059e60907397ae7d69b230676ac63a5c3386
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651493"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543117"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare la tastiera oltre al mouse per eseguire operazioni di spostamento in Progettazione classi e nella finestra **Dettagli classe**.
 
- **In questo argomento**
+ **Contenuto dell'argomento**
 
 - [Uso del mouse in Progettazione classi](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)
 
-- [Uso del mouse nella finestra Dettagli classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)
+- [Uso del mouse nella Finestra Dettagli classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)
 
 - [Uso della tastiera in Progettazione classi](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)
 
-- [Uso della tastiera nella finestra Dettagli classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)
+- [Uso della tastiera nella Finestra Dettagli classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)
 
-## <a name="MouseClassDesigner"></a> Uso del mouse in Progettazione classi
+## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a>Uso del mouse in Progettazione classi
  Nei diagrammi classi sono supportate le operazioni del mouse seguenti:
 
-|Combinazione del mouse|Context|DESCRIZIONE|
+|Combinazione del mouse|Context|Descrizione|
 |-----------------------|-------------|-----------------|
 |Doppio clic|Elementi forma|Apre l'editor del codice.|
 ||Connettore simbolo|Espande/comprime il simbolo.|
@@ -49,7 +49,7 @@ ms.locfileid: "72651493"
 |CTRL+rotellina del mouse|Diagramma classi|Ingrandisce.|
 |CTRL + MAIUSC + clic|Diagramma classi|Ingrandisce.|
 
-## <a name="MouseClassDetails"></a> Uso del mouse nella finestra Dettagli classe
+## <a name="using-the-mouse-in-the-class-details-window"></a><a name="MouseClassDetails"></a> Uso del mouse nella finestra Dettagli classe
  Usando il mouse è possibile modificare l'aspetto della finestra Dettagli classe e i dati che vengono visualizzati nei modi seguenti:
 
 - Facendo clic in qualsiasi cella modificabile è possibile modificarne il contenuto. Tutte le modifiche apportate si riflettono in tutte le posizioni in cui i dati sono archiviati o visualizzati, anche nella finestra Proprietà e nel codice sorgente.
@@ -60,12 +60,12 @@ ms.locfileid: "72651493"
 
 - Per espandere o comprimere nodi di raggruppamenti o proprietà, fare clic sui simboli freccia a sinistra della riga.
 
-- La finestra Dettagli classe contiene diversi pulsanti che consentono di creare nuovi membri nella classe corrente e di spostarsi tra i raggruppamenti dei membri nella griglia della finestra. Per altre informazioni, vedere la sezione relativa ai pulsanti della finestra Dettagli classe
+- La finestra Dettagli classe contiene diversi pulsanti che consentono di creare nuovi membri nella classe corrente e di spostarsi tra i raggruppamenti dei membri nella griglia della finestra.  Per altre informazioni, vedere la sezione relativa ai pulsanti della finestra Dettagli classe
 
-## <a name="KeyboardClassDesigner"></a> Uso della tastiera in Progettazione classi
+## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a>Uso della tastiera in Progettazione classi
  Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 
-|Chiave|Context|DESCRIZIONE|
+|Chiave|Context|Descrizione|
 |---------|-------------|-----------------|
 |Tasti di direzione|All'interno delle forme dei tipi|Navigazione nel contenuto della forma in un formato struttura ad albero (è supportato il wrapping per la forma). I tasti freccia sinistra e destra espandono/comprimono l'elemento corrente se è espandibile; in caso contrario permettono di passare all'elemento padre (vedere le informazioni sulla navigazione nella visualizzazione struttura ad albero per i informazioni dettagliate sul comportamento).|
 ||Forme di primo livello|Consentono di spostare forme nel diagramma.|
@@ -75,7 +75,7 @@ ms.locfileid: "72651493"
 |FINE|All'interno delle forme dei tipi|Passa all'ultimo elemento visibile all'interno della forma.|
 ||Forme di primo livello|Passa all'ultima forma del diagramma.|
 |MAIUSC+HOME|All'interno della forma del tipo|Seleziona gli elementi all'interno della forma a partire dall'elemento corrente e fino a quello in primo piano sulla stessa forma.|
-|MAIUSC+END|All'interno della forma del tipo|Uguale a MAIUSC+HOME ma dall'alto verso il basso.|
+|MAIUSC+FINE|All'interno della forma del tipo|Uguale a MAIUSC+HOME ma dall'alto verso il basso.|
 |INVIO|Tutti i contesti|Richiama l'operazione predefinita sulla forma, che è disponibile anche tramite doppio clic. Nella maggior parte dei casi si tratta di Visualizza codice, ma per alcuni elementi la definizione è differente (simboli, intestazioni di raggruppamenti, etichette di simboli).|
 |+/-|Tutti i contesti|Se l'elemento con lo stato attivo è espandibile, questi tasti espandono/comprimono l'elemento.|
 |>|Tutti i contesti|Per gli elementi con elementi figlio, espande l'elemento se è compresso e passa al primo figlio.|
@@ -87,22 +87,21 @@ ms.locfileid: "72651493"
 |CTRL+CANC|Tutti i contesti|Richiama il comando **Delete from Code** (Elimina dal codice) sulla selezione.|
 |TAB|Tutti i contesti|Passa all'elemento figlio successivo all'interno dello stesso elemento padre (supporta il wrapping).|
 |MAIUSC+TAB|Tutti i contesti|Passa all'elemento figlio precedente all'interno dello stesso elemento padre (supporta il wrapping).|
-|BARRA SPAZIATRICE|Tutti i contesti|Alterna la selezione sull'elemento corrente.|
+|SPACE|Tutti i contesti|Alterna la selezione sull'elemento corrente.|
 
-## <a name="KeyboardClassDetails"></a> Uso della tastiera nella finestra Dettagli classe
+## <a name="using-the-keyboard-in-the-class-details-window"></a><a name="KeyboardClassDetails"></a> Uso della tastiera nella finestra Dettagli classe
 
 > [!NOTE]
 > Le seguenti combinazioni di tasti sono state scelte specificamente per riprodurre l'operazione di digitazione di codice.
 
  Per spostarsi nella finestra Dettagli classe, usare i seguenti tasti:
 
-|||
-|-|-|
 |Chiave|Risultato|
-|, (virgola)|Se il cursore è posizionato in una riga di parametri, viene spostato nel campo Nome del parametro successivo. Se il cursore è posizionato nell'ultima riga di parametri di un metodo, viene spostato nel campo \<aggiungi parametro>, dove è possibile creare un nuovo parametro.<br /><br /> Se il cursore è posizionato in un altro punto della finestra Dettagli classe, viene effettivamente aggiunta una virgola nel campo corrente.|
+|-|-|
+|, (virgola)|Se il cursore è posizionato in una riga di parametri, viene spostato nel campo Nome del parametro successivo. Se il cursore si trova nell'ultima riga di parametri di un metodo, il cursore viene spostato nel \<add parameter> campo, che può essere usato per creare un nuovo parametro.<br /><br /> Se il cursore è posizionato in un altro punto della finestra Dettagli classe, viene effettivamente aggiunta una virgola nel campo corrente.|
 |; (punto e virgola)<br /><br /> oppure<br /><br /> ) (parentesi di chiusura)|Sposta il cursore nel campo Nome della riga di membri successiva nella griglia della finestra Dettagli classe.|
-|TAB|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore viene spostato da un campo in cui è stato digitato del testo, nella finestra Dettagli classe il testo viene elaborato e memorizzato se non genera un errore.<br /><br /> Se il cursore si trova in un campo vuoto, ad esempio \<aggiungi parametro>, con il tasto TAB viene spostato nel primo campo della riga successiva.|
-|\<spazio>|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore si trova in un campo vuoto, ad esempio \<aggiungi parametro>, viene spostato nel primo campo della riga successiva. Lo \<spazio> digitato immediatamente dopo una virgola viene ignorato.<br /><br /> Se il cursore si trova nel campo Riepilogo, viene aggiunto uno spazio.<br /><br /> Se il cursore si trova nella colonna Nascondi di una determinata riga, il valore della casella di controllo Nascondi viene attivato/disattivato.|
+|Scheda|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore viene spostato da un campo in cui è stato digitato del testo, nella finestra Dettagli classe il testo viene elaborato e memorizzato se non genera un errore.<br /><br /> Se il cursore si trova in un campo vuoto, ad esempio \<add parameter> , TAB lo sposta nel primo campo della riga successiva.|
+|\<space>|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore si trova in un campo vuoto, ad esempio \<add parameter> , viene spostato nel primo campo della riga successiva. Si noti che \<space> digitato immediatamente dopo la virgola viene ignorato.<br /><br /> Se il cursore si trova nel campo Riepilogo, viene aggiunto uno spazio.<br /><br /> Se il cursore si trova nella colonna Nascondi di una determinata riga, il valore della casella di controllo Nascondi viene attivato/disattivato.|
 |CTRL+TAB|Passa a un'altra finestra del documento, ad esempio dalla finestra Dettagli classe a un file di codice aperto.|
 |ESC (Escape)|Se è stata iniziata la digitazione di testo in un campo, il tasto ESC agisce da tasto di annullamento, ripristinando il valore precedente del contenuto del campo. Se la finestra Dettagli classe ha lo stato attivo generale, ma nessuna cella specifica è attiva, il tasto ESC sposta lo stato attivo dalla finestra Dettagli classe.|
 |Freccia su e freccia giù|Questi tasti spostano il cursore da riga a riga verticalmente nella griglia della finestra Dettagli classe.|

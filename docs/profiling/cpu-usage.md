@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b372e0f30c91a605be047e921bc2b7672a1cf468
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329435"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543390"
 ---
 # <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 
@@ -61,7 +61,7 @@ A partire da Visual Studio 2019, è possibile scegliere i pulsanti **Espandi per
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Colonne di dati Utilizzo CPU
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**CPU totale [unità, %]**|![Equazione % dati totali](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Millisecondi e percentuale dell'attività della CPU usata dalle chiamate alla funzione e dalle funzioni chiamate dalla funzione nell'intervallo di tempo selezionato. Il valore è diverso da quello del grafico della sequenza temporale di **Utilizzo CPU**, che confronta l'attività CPU totale dell'app in un intervallo di tempo con la capacità CPU disponibile totale.|
 |**CPU auto [unità, %]**|![Equazione % auto](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Millisecondi e percentuale dell'attività della CPU usata dalle chiamate alla funzione nell'intervallo di tempo selezionato, escluse le funzioni chiamate dalla funzione.|
@@ -80,7 +80,7 @@ Per visualizzare l'albero delle chiamate, selezionare il nodo padre nel report. 
 ![Struttura ad albero delle chiamate](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Struttura dell'albero delle chiamate")
 ::: moniker-end
 
-|||
+|Immagine|Descrizione|
 |-|-|
 |![Passaggio 1](../profiling/media/procguid_1.png "ProcGuid_1")|Il nodo di livello principale nell'albero delle chiamate di Utilizzo CPU è uno pseudo-nodo.|
 |![Passaggio 2](../profiling/media/procguid_2.png "ProcGuid_2")|Nella maggior parte delle app, quando l'opzione **Mostra codice esterno** opzione è disabilitata il nodo di secondo livello è un nodo **[Codice esterno]**. Il nodo contiene il codice di sistema e di framework che avvia e arresta l'app, disegna l'interfaccia utente, controlla la pianificazione dei thread e offre altri servizi di basso livello all'app.|

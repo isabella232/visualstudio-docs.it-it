@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a3a3e68874bb3295f6696bbdadb3c470a7f2a4ad
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586619"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543923"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,20 +46,20 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](/vi
   
 ## <a name="what-do-you-want-to-do"></a>Per saperne di più  
   
-|||  
+|Scenario|Articoli|  
 |-|-|  
-|**Eseguire il debug dell'applicazione con IntelliTrace:**<br /><br /> -Mostra gli eventi precedenti.<br />-Visualizza le informazioni sulle chiamate con gli eventi precedenti.<br />-Salvare la sessione di IntelliTrace.<br />: Controllare i dati raccolti da IntelliTrace.|-   [Procedura dettagliata: uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Configurare IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Debug cronologico](../debugger/historical-debugging.md)|  
+|**Eseguire il debug dell'applicazione con IntelliTrace:**<br /><br /> -Mostra gli eventi precedenti.<br />-Visualizza le informazioni sulle chiamate con gli eventi precedenti.<br />-Salvare la sessione di IntelliTrace.<br />: Controllare i dati raccolti da IntelliTrace.|-   [Procedura dettagliata: uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Funzionalità di IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Configurare IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Debug cronologico](../debugger/historical-debugging.md)|  
 |**Raccogliere i dati IntelliTrace durante una sessione di test in Test Manager**|-   [Raccogliere più dati di diagnostica nei test manuali](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
 |**Raccogliere dati IntelliTrace dalle applicazioni distribuite**|-   [Uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Avviare il debug da un file di log IntelliTrace (file .iTrace).**|-   [Utilizzo dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)|  
   
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a> Di quali app è possibile eseguire il debug con IntelliTrace?  
   
-|||  
+|Livello di supporto|Tipi di app|  
 |-|-|  
 |**Supportato**|-Applicazioni Visual Basic e Visual C# che usano .NET Framework 2,0 o versioni successive.<br />     È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br />     Per eseguire il debug di applicazioni SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Per eseguire il debug di app Microsoft Azure con IntelliTrace, vedere [debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Supporto limitato**|-App F # su base sperimentale<br />-App di Windows Store supportate solo per gli eventi|  
-|**Non supportate**|-C++, altri linguaggi e script<br />-Servizi Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)] app|  
+|**Non supportato**|-C++, altri linguaggi e script<br />-Servizi Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)] app|  
   
 > [!NOTE]
 > Se si desidera eseguire il debug di un processo già in esecuzione, non è possibile usare IntelliTrace. È necessario avviare IntelliTrace all'avvio del processo.  
@@ -175,7 +175,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](/vi
  La raccolta di informazioni sulle chiamate potrebbe rallentare significativamente l'applicazione. Potrebbe inoltre aumentare la dimensione di ogni file di log IntelliTrace (file .iTrace) salvato nel disco. Per ridurre al minimo questi effetti, raccogliere le informazioni sulle chiamate solo per i moduli desiderati.  Per modificare la dimensione massima dei file .iTrace, passare a **Strumenti**, **Opzioni**, **IntelliTrace**, **Avanzate**. Vedere [Configure IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
- [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)  
+ [Funzionalità di IntelliTrace](../debugger/intellitrace-features.md)  
   
  [Configurare IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   

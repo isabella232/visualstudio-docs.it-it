@@ -1,20 +1,20 @@
 ---
 title: 'Procedura: modificare lo spazio dei nomi di un linguaggio specifico di dominio'
 ms.date: 10/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, namespace
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b64a61c02f44db0ce70b758331d0d70f7bb8014d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653757"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542675"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Procedura: modificare lo spazio dei nomi di un linguaggio specifico di dominio
 
@@ -46,9 +46,9 @@ ms.locfileid: "72653757"
 
 10. Reimpostare l'istanza sperimentale di Visual Studio.
 
-    1. Eliminare **\Users \\** _{nome}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**.
+    1. Eliminare **\Users \\ **_{Your Name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**.
 
-    2. Dal menu **Start** di Windows scegliere **tutti i programmi**  > **Microsoft Visual Studio 2010 SDK**  > **Tools**  > **reimpostare l'istanza sperimentale**.
+    2. Dal menu **Start** di Windows scegliere **tutti i programmi**  >  **Microsoft Visual Studio 2010**  >  **strumenti**SDK  >  **Reimposta l'istanza sperimentale**.
 
 11. Scegliere **Ricompila soluzione**dal menu **Compila** .
 

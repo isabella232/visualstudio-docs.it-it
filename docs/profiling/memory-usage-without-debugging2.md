@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ac71a3aa707958bd0c7f107185d141e339b2b7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332147"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543351"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger
 
@@ -76,7 +76,7 @@ I numeri sono collegamenti che aprono visualizzazioni report dettagliate di **Ut
 
   ![Collegamenti della visualizzazione Snapshot](../profiling/media/memuse__snapshotview_numbered.png "Collegamenti della visualizzazione Snapshot")
 
-|||
+|Immagine|Descrizione|
 |-|-|
 |![Passaggio 1](../profiling/media/procguid_1.png "ProcGuid_1")|Il numero totale di byte in memoria quando è stato creato lo snapshot.<br /><br /> Selezionare questo collegamento per visualizzare un report dettagli dello snapshot, ordinato in base alla dimensione totale delle istanze di tipo.|
 |![Passaggio 2](../profiling/media/procguid_2.png "ProcGuid_2")|Il numero totale di oggetti in memoria quando è stato creato lo snapshot.<br /><br /> Selezionare questo collegamento per visualizzare un report dettagli dello snapshot, ordinato in base al numero di istanze dei tipi.|
@@ -130,7 +130,7 @@ Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo d
 
 L'albero **Heap gestito** di un report dettagli dello snapshot include le colonne seguenti:
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Tipo oggetto**|Nome dell'istanza di tipo o di oggetto.|
 |**Numero**|Numero di istanze di oggetto del tipo. Il valore di **Conteggio** è sempre 1 per un'istanza.|
@@ -152,7 +152,7 @@ L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** 
 
 Un albero **Tipi a cui si fa riferimento** di un report dettagli dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** non comprende la colonna **Conteggio riferimenti**.
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Tipo di oggetto** o **Istanza**|Il nome del tipo o dell'istanza.|
 |**Conteggio riferimenti**|Per i tipi, il numero di istanze di oggetto del tipo.|
@@ -176,7 +176,7 @@ Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo d
 
 L'albero **Heap gestito** di un report differenze dello snapshot include le colonne seguenti:
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Tipo oggetto**|Nome dell'istanza di tipo o di oggetto.|
 |**Numero**|Numero di istanze di un tipo nello snapshot principale. **Count** è sempre 1 per un'istanza.|
@@ -203,7 +203,7 @@ L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** 
 
 Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** comprende le colonne **Istanza**, **Dimensione (byte)**, **Dimensione inclusiva (byte)** e **Modulo**.
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Tipo di oggetto** o **Istanza**|Nome dell'istanza di tipo o di oggetto.|
 |**Conteggio riferimenti**|Numero di istanze di un tipo nello snapshot principale.|
@@ -214,7 +214,7 @@ Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapsho
 |**Differenza dimensioni inclusive (byte)**|Per un tipo, la differenza nella dimensione di tutte le istanze del tipo tra lo snapshot principale e quello precedente, inclusa la dimensione degli oggetti negli oggetti.|
 |**Modulo**|Il modulo che contiene il costruttore.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Memoria JavaScript](../profiling/javascript-memory.md)
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Applicare il colore a intervalli di Excel a livello di codice'
+title: 'Procedura: applicare il colore a intervalli di Excel a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56ecbfcdaf22132f63df1ecf5eadba97dee426af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d4a99e2e71e6a87b304ceea45a3cd595f911ff1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817273"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543455"
 ---
-# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Procedura: Applicare il colore a intervalli di Excel a livello di codice
-  Per applicare un colore di testo all'interno di un intervallo di celle, usare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o un oggetto intervallo di Excel nativo.
+# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Procedura: applicare il colore a intervalli di Excel a livello di codice
+  Per applicare un colore al testo all'interno di un intervallo di celle, utilizzare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o un oggetto intervallo di Excel nativo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -31,29 +31,29 @@ ms.locfileid: "62817273"
 
 ### <a name="to-apply-color-to-a-namedrange-control"></a>Per applicare il colore a un controllo NamedRange
 
-1. Creare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo nella cella A1.
+1. Creare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo nella cella a1.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#65)]
      [!code-vb[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#65)]
 
-2. Impostare il colore del testo di <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo.
+2. Imposta il colore del testo nel <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#66)]
      [!code-vb[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#66)]
 
-## <a name="use-native-excel-ranges"></a>Usare gli intervalli di Excel nativi
+## <a name="use-native-excel-ranges"></a>Usa intervalli di Excel nativi
 
-### <a name="to-apply-color-to-a-native-excel-range-object"></a>Per applicare colore in un oggetto intervallo di Excel nativo
+### <a name="to-apply-color-to-a-native-excel-range-object"></a>Per applicare il colore a un oggetto intervallo di Excel nativo
 
-1. Creare un intervallo nella cella A1 e quindi impostare il colore del testo.
+1. Creare un intervallo alla cella a1 e quindi impostare il colore del testo.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con intervalli](../vsto/working-with-ranges.md)
+- [Usare gli intervalli](../vsto/working-with-ranges.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)
-- [Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [Procedura: A livello di codice fare riferimento agli intervalli del foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
-- [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
+- [Procedura: applicare stili agli intervalli nelle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Procedura: fare riferimento a intervalli di fogli di fogli di codice a livello di codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 210606af0f200d49b639d323456f85e0a7becd06
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303057"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543676"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualizzare la struttura del codice usando diverse finestre degli strumenti
 
@@ -52,20 +52,20 @@ Se il progetto viene archiviato nel controllo del codice sorgente, ogni elemento
 
 ### <a name="class-view-toolbar"></a>Visualizzazione classi - Barra degli strumenti
 
-La barra degli strumenti **Visualizzazione classi** contiene i seguenti comandi:
+La barra degli strumenti **Visualizzazione classi** contiene i comandi seguenti:
 
-|||
+|Nome|Descrizione|
 |-|-|
-|**Nuova cartella**|Crea una cartella virtuale o una sottocartella in cui è possibile organizzare gli elementi usati di frequente. Vengono salvati nel file di soluzione attivo (*.suo*). Dopo che è possibile rinominare o eliminare un elemento nel codice, potrebbe essere visualizzato in una cartella virtuale come nodo di errore. Per correggere questo problema, eliminare il nodo di errore. Se è stato rinominato un elemento, è possibile spostarlo dalla gerarchia di progetto nella cartella nuovamente.|
+|**Nuova cartella**|Crea una cartella virtuale o una sottocartella in cui è possibile organizzare gli elementi usati di frequente. Vengono salvati nel file di soluzione (con*estensione suo*) attivo. Dopo che è possibile rinominare o eliminare un elemento nel codice, potrebbe essere visualizzato in una cartella virtuale come nodo di errore. Per correggere questo problema, eliminare il nodo di errore. Se è stato rinominato un elemento, è possibile spostarlo dalla gerarchia di progetto nella cartella nuovamente.|
 |**Back**|Consente di passare all’elemento selezionato in precedenza.|
 |**Inoltra**|Consente di passare al successivo elemento selezionato.|
 |**Visualizza diagramma classi** (solo progetti di codice gestito)|Diventa disponibile quando si seleziona uno spazio dei nomi o si digita in **Visualizzazione classi**. Quando viene selezionato uno spazio dei nomi, che contiene tutti i tipi visualizzati dal diagramma classi. Quando viene selezionato uno spazio dei nomi, viene visualizzato solo quel tipo dal diagramma classi.|
 
 ### <a name="class-view-settings"></a>Visualizzazione classi - Impostazioni
 
-Il pulsante **Impostazioni Visualizzazione classi** sulla barra degli strumenti ha le seguenti impostazioni:
+Il pulsante **impostazioni visualizzazione classi** sulla barra degli strumenti presenta le impostazioni seguenti:
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Mostra tipi base**|Vengono visualizzati i tipi di base.|
 |**Mostra riferimenti al progetto**|Vengono visualizzati i riferimenti al progetto.|
@@ -78,14 +78,14 @@ Il pulsante **Impostazioni Visualizzazione classi** sulla barra degli strumenti 
 
 ### <a name="class-view-shortcut-menu"></a>Menu di scelta rapida di Visualizzazione classi
 
-Il menu di scelta rapida (o clic con il pulsante destro del mouse) in **Visualizzazione classi** può contenere i seguenti comandi, a seconda del tipo di progetto selezionato:
+Il menu di scelta rapida (o clic con il pulsante destro del mouse) in **Visualizzazione classi** può contenere i comandi seguenti, a seconda del tipo di progetto selezionato:
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Vai a definizione**|Trova la definizione dell'elemento nel codice sorgente o nel **Visualizzatore oggetti**, se l'elemento non è definito nel progetto aperto.|
 |**Sfoglia definizione**|Visualizza l'elemento selezionato nel **Visualizzatore oggetti**.|
 |**Trova tutti i riferimenti**|Trova l'elemento oggetto attualmente selezionato e visualizza i risultati in una finestra **Risultati ricerca**.|
-|**Filtra per tipo** (solo codice gestito)|Visualizza solo il tipo selezionato o lo spazio dei nomi. È possibile rimuovere il filtro scegliendo il pulsante **Cancella Trova** (**X**) accanto alla casella **Trova.**|
+|**Filtra per tipo** (solo codice gestito)|Visualizza solo il tipo selezionato o lo spazio dei nomi. È possibile rimuovere il filtro scegliendo il pulsante **Cancella ricerca** (**X**) accanto alla casella **trova** .|
 |**Copia**|Copia il nome completo dell'elemento.|
 |**Ordina alfabeticamente**|Elenca tipi e membri in ordine alfabetico per nome.|
 |**Ordina per tipo di membro**|Elenca i tipi e membri nell'ordine in base al tipo (in cui le classi precedono le interfacce, le interfacce precedono i delegati e i metodi precedono le proprietà).|
@@ -110,26 +110,26 @@ Il riquadro principale visualizza le chiamate da e verso il metodo e il riquadro
 
 La finestra **Gerarchia di chiamata** non trova riferimenti per il gruppo di metodi, che includono i percorsi in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare questi riferimenti, usare il comando **Trova tutti i riferimenti**.
 
-Il menu di scelta rapida nella finestra **Gerarchia di chiamata** contiene i comandi seguenti:
+Il menu di scelta rapida nella finestra **gerarchia di chiamata** contiene i comandi seguenti:
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Aggiungi come nuova radice**|Aggiunge il nodo selezionato come un nuovo nodo radice.|
 |**Rimuovi radice**|Rimuove il nodo radice selezionato dal riquadro di visualizzazione albero.|
-|**Vai a Definizione**|Consente di passare alla definizione originale di un metodo.|
+|**Vai a definizione**|Consente di passare alla definizione originale di un metodo.|
 |**Trova tutti i riferimenti**|Trova nel progetto tutti i riferimenti al metodo selezionato.|
 |**Copia**|Copia il nodo selezionato (ma non i sottonodi).|
-|**Aggiorna**|Aggiorna le informazioni.|
+|**Refresh** (Aggiornamento)|Aggiorna le informazioni.|
 
 ## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Visualizzatore oggetti
 
 Nella finestra **Visualizzatore oggetti** vengono visualizzate le descrizioni del codice nei progetti.
 
-È possibile filtrare i componenti da visualizzare tramite l'elenco di riepilogo a discesa nella parte superiore della finestra. I componenti personalizzati possono includere file eseguibili di codice gestito, assembly di librerie, librerie dei tipi e file *ocx.* Non è possibile aggiungere componenti personalizzati di C++.
+È possibile filtrare i componenti da visualizzare tramite l'elenco di riepilogo a discesa nella parte superiore della finestra. I componenti personalizzati possono includere file eseguibili di codice gestito, assembly di librerie, librerie dei tipi e file *ocx* . Non è possibile aggiungere componenti personalizzati di C++.
 
 ::: moniker range="vs-2017"
 
-Le impostazioni personalizzate vengono salvate nella directory dell'applicazione utente di Visual Studio, *%APPDATA%*.
+Le impostazioni personalizzate vengono salvate nella directory dell'applicazione utente di Visual Studio, *%AppData%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 ::: moniker-end
 
@@ -141,7 +141,7 @@ Le impostazioni personalizzate vengono salvate nella directory dell'applicazione
 
 Il riquadro sinistro della finestra **Visualizzatore oggetti** mostra gli assembly. È possibile espandere gli assembly per visualizzare gli spazi dei nomi in essi contenuti e quindi espandere gli spazi dei nomi per visualizzare i tipi contenuti. Quando si seleziona un tipo, nel riquadro di destra sono elencati i relativi membri (ad esempio proprietà e metodi). Il riquadro inferiore destro visualizza informazioni dettagliate sull'elemento selezionato.
 
-È possibile cercare un elemento specifico usando la casella **Ricerca** nella parte superiore della finestra. Tutte le corrispondenze non applicano la distinzione tra maiuscole e minuscole. I risultati della ricerca vengono visualizzati nel riquadro sinistro. Per cancellare una ricerca, scegliere il pulsante **Cancella ricerca** (**X**) accanto alla casella **Cerca.**
+È possibile cercare un elemento specifico usando la casella **Ricerca** nella parte superiore della finestra. Tutte le corrispondenze non applicano la distinzione tra maiuscole e minuscole. I risultati della ricerca vengono visualizzati nel riquadro sinistro. Per cancellare una ricerca, scegliere il pulsante **Cancella ricerca** (**X**) accanto alla casella di **ricerca** .
 
 Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è possibile spostarsi tra le selezioni effettuate usando i pulsanti **Avanti** e **Indietro** sulla barra degli strumenti.
 
@@ -149,9 +149,9 @@ Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è pos
 
 ### <a name="object-browser-settings"></a>Impostazioni di Visualizzatore oggetti
 
-Utilizzando il pulsante **Impostazioni Visualizzatore oggetti** sulla barra degli strumenti, è possibile specificare una delle seguenti viste:
+Utilizzando il pulsante **impostazioni Visualizzatore oggetti** sulla barra degli strumenti, è possibile specificare una delle visualizzazioni seguenti:
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Visualizza spazio dei nomi**|Consente di visualizzare gli spazi dei nomi anziché i contenitori fisici nel riquadro sinistro. Gli spazi dei nomi archiviati in più contenitori fisici vengono uniti.|
 |**Contenitori di visualizzazione**|Consente di visualizzare i contenitori fisici anziché gli spazi dei nomi nel riquadro sinistro. **Visualizza spazio dei nomi** e **Visualizza contenitori** sono impostazioni che si escludono a vicenda.|
@@ -166,9 +166,9 @@ Utilizzando il pulsante **Impostazioni Visualizzatore oggetti** sulla barra degl
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandi del menu di scelta rapida di Visualizzatore oggetti
 
-Il menu di scelta rapida (o clic con il pulsante destro del mouse) nel **Visualizzatore oggetti** può contenere i seguenti comandi, a seconda del tipo di elemento selezionato:
+Il menu di scelta rapida (o clic con il pulsante destro del mouse) in **Visualizzatore oggetti** può contenere i comandi seguenti, a seconda del tipo di elemento selezionato:
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Sfoglia definizione**|Viene illustrato il nodo primario per l'elemento selezionato.|
 |**Trova tutti i riferimenti**|Trova l'elemento oggetto attualmente selezionato e visualizza i risultati in una finestra **Risultati ricerca**.|
@@ -195,27 +195,27 @@ Anche se questa finestra è di sola lettura, è possibile impostarvi punti di in
 
 ### <a name="code-definition-shortcut-menu"></a>Menu di scelta rapida di Definizione codice
 
-Il menu di scelta rapida (o clic con il pulsante destro del mouse) nella finestra **Definizione codice** può contenere i seguenti comandi:
+Il menu di scelta rapida (o clic con il pulsante destro del mouse) nella finestra **definizione codice** può contenere i comandi seguenti:
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Azioni rapide e refactoring**||
 |**Rinomina**||
 |**Genera grafico dei file di inclusione**||
-|**Definizione di sbircia**||
+|**Visualizza definizione**||
 |**Vai a definizione**|Trova la definizione (o le definizioni per le classi parziali) e le visualizza in una finestra **Risultati ricerca**.|
-|**Vai alla dichiarazione**||
+|**Vai a dichiarazione**||
 |**Trova tutti i riferimenti**|Consente di trovare i riferimenti al tipo o membro nella soluzione.|
 |**Visualizza gerarchia delle chiamate**|Visualizza il metodo nella finestra **Gerarchia di chiamata**.|
 |**Attiva/disattiva file di codice/intestazione**||
-|**Esecuzione di test**|Se vi sono unit test nel progetto, vengono eseguiti i test per il codice selezionato.|
+|**Esegui test**|Se vi sono unit test nel progetto, vengono eseguiti i test per il codice selezionato.|
 |**Test di debug**||
 |**Punto di interruzione**|Inserisce un punto di interruzione (o un punto di analisi).|
 |**Esegui fino al cursore**|Esegue il programma in modalità di debug per la posizione del cursore.|
-|**Frammento**||
+|**Frammento di codice**||
 |**Taglia**, **Copia**, **Incolla**||
 |**Annotazione**||
-|**Struttura**|Comandi di struttura standard.|
+|**struttura**|Comandi di struttura standard.|
 |**Ripeti analisi**||
 |**Modifica definizione**|Sposta il punto di inserimento alla definizione nella finestra del codice.|
 |**Scegli codifica**|Apre la finestra **Codifica** che consente di impostare una codifica per il file.|
@@ -226,4 +226,4 @@ Il menu di scelta rapida (o clic con il pulsante destro del mouse) nella finestr
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Icone Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md)
+- [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md)

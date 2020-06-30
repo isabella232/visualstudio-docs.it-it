@@ -1,18 +1,18 @@
 ---
 title: Più soluzioni DSL in una soluzione unica
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5d21d3954a402e7ce8eb26c34d6a6a5c237309a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658350"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542597"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Più soluzioni DSL in una soluzione unica
 
@@ -32,27 +32,27 @@ Esistono varie tecniche per integrare più linguaggi specifici di dominio. Per a
 
    - Modificare i nomi dei progetti **DSL** e **DslPackage** in modo che siano tutti diversi. Ad esempio: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-   - In ogni **DslPackage \* \ source.Extension.TT**aggiornare questa riga con il nome del progetto DSL corretto:
+   - In ogni **DslPackage \* \ source.Extension.TT**aggiornare questa riga al nome del progetto DSL corretto:
 
       `string dslProjectName = "Dsl2";`
 
-   - Nella soluzione VSIX aggiungere i progetti DSL * e DslPackage \*. Può essere utile inserire ogni coppia in una specifica cartella soluzione.
+   - Nella soluzione VSIX aggiungere i progetti DSL * e DslPackage \* . Può essere utile inserire ogni coppia in una specifica cartella soluzione.
 
 2. Combinare i manifesti VSIX dei linguaggi specifici di dominio:
 
-   1. Aprire _progettovsix_ **\Source.Extension.manifest**.
+   1. Aprire _progettovsix_**\Source.Extension.manifest**.
 
    2. Per ogni DSL, scegliere **Aggiungi contenuto** e aggiungere:
 
-       - `Dsl*` progetto come **componente MEF**
+       - `Dsl*`progetto come **componente MEF**
 
-       - `DslPackage*` progetto come **componente MEF**
+       - `DslPackage*`progetto come **componente MEF**
 
-       - `DslPackage*` progetto come **pacchetto di Visual** Studio
+       - `DslPackage*`progetto come **pacchetto di Visual** Studio
 
 3. Compilare la soluzione.
 
-   Il progetto VSIX risultante installerà entrambi i linguaggi specifici di dominio. È possibile testarli usando F5 oppure distribuire _progettovsix_ **\bin\Debug \\ \*. vsix**.
+   Il progetto VSIX risultante installerà entrambi i linguaggi specifici di dominio. È possibile testarli usando F5 oppure distribuire _progettovsix_**\bin\Debug \\ \* . vsix**.
 
 ## <a name="see-also"></a>Vedere anche
 

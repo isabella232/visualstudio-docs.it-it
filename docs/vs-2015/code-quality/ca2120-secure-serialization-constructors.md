@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2b734a5de257273312e5125c5f481ff889cd33e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10cfa03adb74871fb42a6e1c2ce4ab4ba6bcae75
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664759"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544339"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Proteggere i costruttori di serializzazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|SecureSerializationConstructors|
 |CheckId|CA2120|
@@ -33,10 +33,10 @@ ms.locfileid: "72664759"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Il tipo implementa l'interfaccia <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, non è un delegato o un'interfaccia e viene dichiarata in un assembly che consente chiamanti parzialmente attendibili. Il tipo dispone di un costruttore che accetta un oggetto <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> e un oggetto <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> (la firma del costruttore di serializzazione). Questo costruttore non è protetto da un controllo di sicurezza, ma uno o più costruttori regolari nel tipo sono protetti.
+ Il tipo implementa l' <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia, non è un delegato o un'interfaccia e viene dichiarata in un assembly che consente chiamanti parzialmente attendibili. Il tipo dispone di un costruttore che accetta un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> oggetto e un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> oggetto (la firma del costruttore di serializzazione). Questo costruttore non è protetto da un controllo di sicurezza, ma uno o più costruttori regolari nel tipo sono protetti.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola è pertinente per i tipi che supportano la serializzazione personalizzata. Un tipo supporta la serializzazione personalizzata se implementa l'interfaccia <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>. Il costruttore di serializzazione è obbligatorio e viene utilizzato per deserializzare o ricreare oggetti serializzati utilizzando il metodo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>. Poiché il costruttore di serializzazione alloca e inizializza oggetti, i controlli di sicurezza presenti nei costruttori regolari devono essere presenti anche nel costruttore di serializzazione. Se si viola questa regola, i chiamanti che non sono in grado di creare un'istanza potrebbero utilizzare il costruttore di serializzazione per eseguire questa operazione.
+ Questa regola è pertinente per i tipi che supportano la serializzazione personalizzata. Un tipo supporta la serializzazione personalizzata se implementa l' <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia. Il costruttore di serializzazione è obbligatorio e viene utilizzato per deserializzare o ricreare oggetti serializzati utilizzando il <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metodo. Poiché il costruttore di serializzazione alloca e inizializza oggetti, i controlli di sicurezza presenti nei costruttori regolari devono essere presenti anche nel costruttore di serializzazione. Se si viola questa regola, i chiamanti che non sono in grado di creare un'istanza potrebbero utilizzare il costruttore di serializzazione per eseguire questa operazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, proteggere il costruttore di serializzazione con richieste di sicurezza identiche a quelle che proteggono altri costruttori.

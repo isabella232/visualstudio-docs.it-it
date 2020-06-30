@@ -15,23 +15,23 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 854e9a492f422957e64e1a4b6a00bc7c39b81c46
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f9dc15cec4012d2b63eb5f21c25bd709961c95c8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919244"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544079"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Le parole composte devono essere digitate correttamente con distinzione tra maiuscole e minuscole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente di Visual Studio, vedere [CA1702: le parole composte devono essere configurate correttamente](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|Categoria|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica importante|Interruzioni durante l'attivazione degli assembly.<br /><br /> Senza interruzioni: quando viene attivato sui parametri di tipo.|
 
 ## <a name="cause"></a>Causa

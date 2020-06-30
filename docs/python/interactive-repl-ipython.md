@@ -2,7 +2,7 @@
 title: REPL IPython (finestra interattiva)
 description: Usare la finestra interattiva di Visual Studio in modalità IPython per un ambiente di sviluppo interattivo intuitivo e semplice da usare con funzionalità di elaborazione parallela interattiva.
 ms.date: 01/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957738"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542428"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Usare IPython nella finestra interattiva
 
@@ -51,7 +51,7 @@ Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaco
 
     ![Grafico inline nella finestra interattiva](media/ipython-repl-04.png)
 
-7. Invece di digitare in REPL, è possibile scrivere codice nell'editor, selezionarlo, fare clic con il pulsante destro del mouse e scegliere il comando **Invia a finestra interattiva** o premere **CTRL**+**INVIO**. Provare a incollare il codice riportato di seguito in un nuovo file nell'editor, selezionandolo con **Ctrl**+**A**, quindi inviandolo alla finestra **interattiva.** Visual Studio invia il codice alla finestra in un unico blocco per evitare che vengano visualizzati grafici intermedi o parziali. Se non è aperto un progetto Python con un altro ambiente selezionato, Visual Studio apre una finestra **interattiva** per qualsiasi ambiente sia selezionato come predefinito nella finestra **Ambienti Python**.
+7. Invece di digitare in REPL, è possibile scrivere codice nell'editor, selezionarlo, fare clic con il pulsante destro del mouse e scegliere il comando **Invia a finestra interattiva** o premere **CTRL**+**INVIO**. Provare a incollare il codice seguente in un nuovo file nell'editor, selezionandolo con **CTRL** + **a**, quindi inviando la finestra **interattiva** . Visual Studio invia il codice alla finestra in un unico blocco per evitare che vengano visualizzati grafici intermedi o parziali. Se non è aperto un progetto Python con un altro ambiente selezionato, Visual Studio apre una finestra **interattiva** per qualsiasi ambiente sia selezionato come predefinito nella finestra **Ambienti Python**.
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -78,7 +78,7 @@ Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaco
 
 8. Per visualizzare i grafici all'esterno della finestra **interattiva**, eseguire il codice invece di usare il comando **Debug** > **Avvia senza eseguire debug**.
 
-IPython ha molte altre caratteristiche utili come l'escloazione alla shell di sistema, la sostituzione delle variabili, l'acquisizione dell'output, ecc. Per ulteriori informazioni, fare riferimento alla [documentazione di IPython.](https://ipython.org/documentation.html)
+IPython dispone di molte altre funzionalità utili, ad esempio l'escape alla shell di sistema, la sostituzione delle variabili, l'acquisizione dell'output e così via. Per ulteriori informazioni, vedere la [documentazione di IPython](https://ipython.org/documentation.html) .
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dd1799f67036ab55de5b136d746ce938835de87f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d738cf15ebe734cb74e553f38f6eb26af17e8cfd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668318"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542311"
 ---
-# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Fornire una proprietà ObsoleteAttribute.Message
+# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Specificare una proprietà ObsoleteAttribute.Message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ProvideObsoleteAttributeMessage|
 |CheckId|CA1041|
@@ -33,19 +33,19 @@ ms.locfileid: "72668318"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un tipo o un membro è contrassegnato con un attributo <xref:System.ObsoleteAttribute?displayProperty=fullName> che non ha la relativa proprietà <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> specificata.
+ Un tipo o un membro è contrassegnato con un <xref:System.ObsoleteAttribute?displayProperty=fullName> attributo che non ha la relativa <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> proprietà specificata.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.ObsoleteAttribute> viene usato per contrassegnare i tipi e i membri della libreria deprecata. I consumer della libreria devono evitare l'uso di qualsiasi tipo o membro contrassegnato come obsoleto. Questo perché potrebbe non essere supportato e verrà rimosso da versioni successive della libreria. Quando un tipo o un membro contrassegnato con <xref:System.ObsoleteAttribute> viene compilato, viene visualizzata la proprietà <xref:System.ObsoleteAttribute.Message%2A> dell'attributo. In questo modo vengono fornite le informazioni utente sul tipo o sul membro obsoleto. Queste informazioni includono generalmente per quanto tempo il tipo o il membro obsoleto sarà supportato dalle finestre di progettazione della libreria e dalla sostituzione preferita da usare.
+ <xref:System.ObsoleteAttribute>viene utilizzato per contrassegnare i tipi e i membri della libreria deprecata. I consumer della libreria devono evitare l'uso di qualsiasi tipo o membro contrassegnato come obsoleto. Questo perché potrebbe non essere supportato e verrà rimosso da versioni successive della libreria. Quando un tipo o un membro contrassegnato mediante <xref:System.ObsoleteAttribute> viene compilato, <xref:System.ObsoleteAttribute.Message%2A> viene visualizzata la proprietà dell'attributo. In questo modo vengono fornite le informazioni utente sul tipo o sul membro obsoleto. Queste informazioni includono generalmente per quanto tempo il tipo o il membro obsoleto sarà supportato dalle finestre di progettazione della libreria e dalla sostituzione preferita da usare.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere il parametro `message` al costruttore <xref:System.ObsoleteAttribute>.
+ Per correggere una violazione di questa regola, aggiungere il `message` parametro al <xref:System.ObsoleteAttribute> costruttore.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non eliminare un avviso da questa regola perché la proprietà <xref:System.ObsoleteAttribute.Message%2A> fornisce informazioni critiche sul tipo o sul membro obsoleto.
+ Non eliminare un avviso da questa regola perché la <xref:System.ObsoleteAttribute.Message%2A> proprietà fornisce informazioni critiche sul tipo o sul membro obsoleto.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un membro obsoleto con una dichiarata correttamente <xref:System.ObsoleteAttribute>.
+ Nell'esempio seguente viene illustrato un membro obsoleto con una dichiarata correttamente <xref:System.ObsoleteAttribute> .
 
  [!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ObsoleteAttributeOnMember/cpp/FxCop.Design.ObsoleteAttributeOnMember.cpp#1)]
  [!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ObsoleteAttributeOnMember/cs/FxCop.Design.ObsoleteAttributeOnMember.cs#1)]

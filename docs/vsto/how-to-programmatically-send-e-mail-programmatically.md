@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Inviare messaggi di posta elettronica a livello di codice'
+title: 'Procedura: inviare messaggi di posta elettronica a livello di codice'
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72d033add2ba8320b14eebd5af700ab225d34410
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551762"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543260"
 ---
-# <a name="how-to-programmatically-send-email"></a>Procedura: Inviare messaggi di posta elettronica a livello di codice
+# <a name="how-to-programmatically-send-email"></a>Procedura: inviare messaggi di posta elettronica a livello di codice
   Questo esempio Invia un messaggio di posta elettronica ai contatti che hanno il nome di dominio **example.com** nei rispettivi indirizzi di posta elettronica.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -42,6 +42,6 @@ ms.locfileid: "69551762"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
-- [Procedura: Creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md)
-- [Procedura: Accedere ai contatti di Outlook a livello di codice](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [Procedura: Eseguire azioni a livello di codice quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Procedura: creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Procedura: accedere ai contatti di Outlook a livello di codice](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Procedura: eseguire azioni quando viene ricevuto un messaggio di posta elettronica a livello di codice](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

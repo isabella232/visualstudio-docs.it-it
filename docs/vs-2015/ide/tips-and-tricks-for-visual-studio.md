@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 432a0eddece867972e5c5159f734b4589c22e218
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299917"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542987"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Suggerimenti su Visual Studio
 
@@ -22,7 +22,7 @@ ms.locfileid: "74299917"
 
 È possibile spostarsi più facilmente in Visual Studio usando i tasti di scelta rapida descritti in questo argomento. Per informazioni più generali, vedere [Tasti di scelta rapida di Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Per informazioni su come ottimizzare Visual Studio per l'accessibilità, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md).
 
-- [Gestione delle finestre](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [Gestione finestre](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
 - [Tasti di scelta rapida della finestra](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
@@ -36,11 +36,11 @@ ms.locfileid: "74299917"
 
 - [Debug](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
-- [Gestione del ciclo di vita delle applicazioni](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [Application Lifecycle Management](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-## <a name="BKMK_WindowMgmt"></a> Gestione delle finestre
+## <a name="window-management"></a><a name="BKMK_WindowMgmt"></a> Gestione delle finestre
 
-|||
+|Comando|Tasto di scelta rapida|
 |-|-|
 |Trascinare le finestre scheda mobili|CTRL+clic per selezione multipla|
 |Ingrandire la finestra mobile|Doppio clic sulla barra del titolo|
@@ -49,9 +49,9 @@ ms.locfileid: "74299917"
 |Visualizzare l'elenco di file aperti|CTRL+ALT+freccia GIÙ|
 |Visualizzare tutte le finestre mobili|CTRL+MAIUSC+M|
 
-## <a name="BKMK_WindowShortcuts"></a> Tasti di scelta rapida della finestra
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>Collegamenti alla finestra
 
-|||
+|Comando|Tasto di scelta rapida|
 |-|-|
 |Spostare/Ancorare le finestre mobili|Win+freccia DESTRA / Win+freccia SINISTRA|
 |Ingrandire/Ridurre le finestre|Win+freccia SU / Win+freccia GIÙ|
@@ -59,9 +59,9 @@ ms.locfileid: "74299917"
 |Avviare una nuova istanza|Win+MAIUSC+n|
 |Spostarsi tra le finestre|Win+n|
 
-## <a name="BKMK_Search"></a> Ricerca in Visual Studio
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Ricerca in Visual Studio
 
-|||
+|Comando|Tasto di scelta rapida|
 |-|-|
 |Ricerca in Esplora soluzioni|CTRL+;|
 |Spostare lo stato attivo nella casella di ricerca in qualsiasi finestra degli strumenti|ALT+` quando la finestra degli strumenti è attiva|
@@ -69,12 +69,12 @@ ms.locfileid: "74299917"
 |Definire ambito risultati di Avvio veloce|-   @opt Opzioni<br />-   @cmd Comandi<br />-   @mru Usati più di recente<br />-   @doc Documenti aperti|
 |Opzioni di ricerca negli strumenti|CTRL+E|
 
-## <a name="BKMK_EditorFind"></a> Ricerca nell'editor
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>Ricerca nell'editor
 
-|||
+|Comando|Tasto di scelta rapida|
 |-|-|
 |Ricerca veloce|CTRL+F|
-|Risultato successivo di Ricerca veloce|INVIO|
+|Risultato successivo di Ricerca veloce|Immettere|
 |Risultato precedente di Ricerca veloce|MAIUSC+INVIO|
 |Espandere elenco a discesa di Ricerca veloce|ALT+FRECCIA GIÙ|
 |Chiudere ricerca|ESC|
@@ -84,9 +84,9 @@ ms.locfileid: "74299917"
 |Cerca nei file|CTRL+MAIUSC+F|
 |Sostituisci nei file|CTRL+MAIUSC+H|
 
-## <a name="BKMK_CodeEditor"></a> Editor di codice
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>Editor di codice
 
-|||
+|Comando|Tasto di scelta rapida|
 |-|-|
 |Modalità di suggerimento di IntelliSense|CTRL+ALT+BARRA SPAZIATRICE (Attiva/Disattiva)|
 |Forzare la visualizzazione di IntelliSense|CTRL+J|
@@ -109,21 +109,21 @@ ms.locfileid: "74299917"
 |Spostarsi tra più risultati|F8 e MAIUSC+F8|
 |Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|MAIUSC+ESC|
 
-## <a name="BKMK_Toolbars"></a> Barre degli strumenti
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>Barre degli strumenti
 
-|||
+|Comando|Tasto di scelta rapida|
 |-|-|
 |Aggiungere pulsanti|Fare clic sul pulsante di overflow della barra degli strumenti|
 |Casella combinata Trova nella barra degli strumenti standard|CTRL+D|
 |Modalità comando casella di testo Trova|Digitare “>”|
 |Creare nuovi alias|Comando >alias NewAlias|
 
-## <a name="BKMK_Debugging"></a> Debug
+## <a name="debugging"></a><a name="BKMK_Debugging"></a> Debug
 
-|||
+|Comando|Tasto di scelta rapida|
 |-|-|
 |Avvia debug|F5|
-|Abilita strumenti di diagnostica durante il debug|MAIUSC+F5|
+|Debug|MAIUSC+F5|
 |Riavviare il debug|Ctrl+Maiusc+F5|
 |Esegui istruzione/routine|F10|
 |Esegui istruzione|F11|
@@ -132,12 +132,12 @@ ms.locfileid: "74299917"
 |Imposta istruzione successiva|Ctrl+Maiusc+F10|
 |Imposta e Attiva/disattiva punto di interruzione|F9|
 |Disattiva punto di interruzione|Ctrl+F9|
-|Controllo immediato (finestra)|CTRL+ALT+I|
+|Finestra di controllo immediato|CTRL+ALT+I|
 |Modalità di comando Finestra di controllo immediato|Digitare “>”|
 |Cancellare il buffer della finestra di controllo immediato|>cls|
 |Valore di stampa della finestra di controllo immediato|?varname|
 
-## <a name="BKMK_ALM"></a> Gestione del ciclo di vita delle applicazioni
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>Application Lifecycle Management
 
 Vedere [Scelte rapide da tastiera: Visual Studio Online, portale Web TFS e Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

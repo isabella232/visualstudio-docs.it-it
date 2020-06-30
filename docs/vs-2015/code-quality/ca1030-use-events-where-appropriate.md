@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7ab3a576b5014799e470260567a4942b5c3ef9de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1313c5ee79a7a13d3eb937a3431b13ea393857d1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661918"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544521"
 ---
-# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Utilizzare eventi dove appropriato
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Usare eventi dove appropriato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|UseEventsWhereAppropriate|
 |CheckId|CA1030|
@@ -39,17 +39,17 @@ ms.locfileid: "72661918"
 
 - Privo RemoveOn
 
-- Fuoco
+- Fire
 
 - Sollevare
 
 ## <a name="rule-description"></a>Descrizione della regola
  Questa regola rileva i metodi che presentano nomi comunemente utilizzati per gli eventi. Gli eventi seguono il modello di progettazione Observer o Publish-Subscribe; vengono usati quando una modifica di stato in un oggetto deve essere comunicata ad altri oggetti. Se un metodo viene chiamato in risposta a una modifica di stato chiaramente definita, il metodo deve essere richiamato da un gestore eventi. Gli oggetti che chiamano il metodo devono generare eventi anziché chiamare direttamente il metodo.
 
- Alcuni esempi comuni di eventi sono disponibili nelle applicazioni dell'interfaccia utente, in cui un'azione dell'utente, ad esempio il clic su un pulsante, comporta l'esecuzione di un segmento di codice. Il modello di eventi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] non è limitato alle interfacce utente. deve essere usato ovunque sia necessario comunicare le modifiche di stato a uno o più oggetti.
+ Alcuni esempi comuni di eventi sono disponibili nelle applicazioni dell'interfaccia utente, in cui un'azione dell'utente, ad esempio il clic su un pulsante, comporta l'esecuzione di un segmento di codice. Il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modello di eventi non è limitato alle interfacce utente. deve essere usato ovunque sia necessario comunicare le modifiche di stato a uno o più oggetti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Se il metodo viene chiamato quando viene modificato lo stato di un oggetto, è consigliabile modificare la progettazione per utilizzare il modello di eventi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Se il metodo viene chiamato quando viene modificato lo stato di un oggetto, è consigliabile modificare la progettazione per utilizzare il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modello di eventi.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Eliminare un avviso da questa regola se il metodo non funziona con il modello di eventi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Eliminare un avviso da questa regola se il metodo non funziona con il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modello di eventi.

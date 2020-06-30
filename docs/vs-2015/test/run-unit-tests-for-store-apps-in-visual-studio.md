@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5bdcd9a5d3565bf4b7a92d658a5a270bbff6483c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b70e3a24cd4cb05dc1a28ff855498496f5665ddc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672240"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542857"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Eseguire unit test per le app dello Store in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 >
 >   Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md) in MSDN Library.
 
-## <a name="BKMK_In_this_topic"></a> In questo argomento
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a>Contenuto dell'argomento
  [Framework unit test e progetti di test](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [Esecuzione di test in Esplora test](#BKMK_Running_tests_in_Test_Explorer)
@@ -44,17 +44,17 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 
   [Organizzazione dell'elenco dei test](#BKMK_Organizing_the_test_list)
 
-- [Raggruppamento dei test](#BKMK_Grouping_tests)
+- [Raggruppamento di test](#BKMK_Grouping_tests)
 
 - [Ricerca e filtro nell'elenco dei test](#BKMK_Searching_and_filtering_the_test_list)
 
   [Debug di unit test](#BKMK_Debugging_unit_tests)
 
-## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Framework di unit test e progetti di test
+## <a name="unit-test-frameworks-and-test-projects"></a><a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Framework unit test e progetti di test
  Visual Studio Express per app di Windows Store include i framework di testing unità Microsoft per il codice C++ gestito e nativo. Esplora test può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono essere costituiti da una combinazione qualsiasi di framework di unit test in Visual C++ o Visual C# e Visual Basic. Quando il codice sottoposto a test è scritto per .NET Framework, il progetto di test può essere scritto in qualsiasi linguaggio .NET Framework, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++.
 
-## <a name="BKMK_Running_tests_in_Test_Explorer"></a> Esecuzione di test in Esplora test
- Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.
+## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Esecuzione di test in Esplora test
+ Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
 
  ![Esplora unit test](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
@@ -62,10 +62,10 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 
  È possibile eseguire molte delle operazioni di ricerca, organizzazione ed esecuzione dei test dalla barra degli strumenti di Esplora test.
 
- ![Eseguire i test dalla barra degli strumenti di Esplora test](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-### <a name="BKMK_Running_tests"></a> Esecuzione di test
- È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Effettuare una delle operazioni riportate di seguito:
+### <a name="running-tests"></a><a name="BKMK_Running_tests"></a>Esecuzione di test
+ È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
 
@@ -75,10 +75,10 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 
   Mentre il test viene eseguito, la barra Superato/Non superato nella parte superiore della finestra Esplora test mostra un'animazione. Al termine dell'esecuzione del test, la barra Superato/Non superato diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 
-## <a name="BKMK_Viewing_test_results"></a> Visualizzazione dei risultati dei test
+## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a>Visualizzazione dei risultati dei test
  Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. Il riquadro dei dettagli nella parte inferiore della finestra Esplora Test mostra un riepilogo dell'esecuzione dei test.
 
-### <a name="BKMK_Viewing_test_details"></a> Visualizzazione dei dettagli dei test
+### <a name="viewing-test-details"></a><a name="BKMK_Viewing_test_details"></a> Visualizzazione dei dettagli dei test
  Per visualizzare i dettagli di un singolo test, selezionare il test.
 
  Il riquadro dei dettagli del test mostra le informazioni seguenti:
@@ -95,24 +95,24 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 
 - Analisi dello stack al momento del mancato superamento del test.
 
-### <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Visualizzazione del codice sorgente di un metodo di test
+### <a name="viewing-the-source-code-of-a-test-method"></a><a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Visualizzazione del codice sorgente di un metodo di test
  Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e quindi scegliere **Apri test** dal menu di scelta rapida (tastiera: F12).
 
-## <a name="BKMK_Organizing_the_test_list"></a> Organizzazione dell'elenco dei test
+## <a name="organizing-the-test-list"></a><a name="BKMK_Organizing_the_test_list"></a> Organizzazione dell'elenco dei test
 
-### <a name="BKMK_Grouping_tests"></a> Raggruppamento dei test
+### <a name="grouping-tests"></a><a name="BKMK_Grouping_tests"></a> Raggruppamento dei test
  Per impostazione predefinita, Esplora test mostra i test come nodi figlio di **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**.
 
-|||
+|Immagine|Descrizione|
 |-|-|
-|![Pulsante gruppo Esplora test](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Per raggruppare i test in base al tempo impiegato per l'esecuzione, aprire l'elenco **Raggruppa** e scegliere **Durata**. Scegliere **Risultato test** per passare al raggruppamento originale.|
+|![Pulsante di raggruppamento di Team Explorer](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Per raggruppare i test in base al tempo impiegato per l'esecuzione, aprire l'elenco **Raggruppa** e scegliere **Durata**. Scegliere **Risultato test** per passare al raggruppamento originale.|
 
-### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Ricerca e filtro nell'elenco dei test
+### <a name="searching-and-filtering-the-test-list"></a><a name="BKMK_Searching_and_filtering_the_test_list"></a> Ricerca e filtro nell'elenco dei test
  Quando è presente un numero elevato di test, è possibile digitare nella casella di ricerca di Esplora test per filtrare l'elenco in base alla stringa specificata. È possibile limitare il filtro a tipi specifici di stringhe scegliendo dall'elenco di filtri prima di immettere la stringa di ricerca.
 
- ![Categorie filtro di ricerca](../test/media/ute-searchfilter.png "UTE_SearchFilter")
+ ![Categorie di filtri di ricerca](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
-## <a name="BKMK_Debugging_unit_tests"></a> Debug di unit test
+## <a name="debugging-unit-tests"></a><a name="BKMK_Debugging_unit_tests"></a> Debug di unit test
  È possibile usare Esplora test per avviare una sessione di debug per i test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:
 
 1. Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.
