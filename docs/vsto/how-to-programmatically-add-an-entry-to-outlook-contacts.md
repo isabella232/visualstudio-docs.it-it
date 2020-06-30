@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di codice aggiungere una voce ai contatti di Outlook'
+title: 'Procedura: aggiungere una voce ai contatti di Outlook a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0f8a873655180ef2464b5b31c631dbd7d2d4ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4d692833f7dba49a539bbaafec2156f7426170b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967709"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520106"
 ---
-# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Procedura: A livello di codice aggiungere una voce ai contatti di Outlook
-  In questo esempio crea un nuovo contatto e immette i dati nel nuovo contatto.
+# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Procedura: aggiungere una voce ai contatti di Outlook a livello di codice
+  Questo esempio crea un nuovo contatto e immette i dati nel nuovo contatto.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "62967709"
  [!code-csharp[Trin_OL_AddContact#1](../vsto/codesnippet/CSharp/Trin_OL_AddContact/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con gli elementi di contatto](../vsto/working-with-contact-items.md)
-- [Procedura: Creazione di appuntamenti a livello di codice](../vsto/how-to-programmatically-create-appointments.md)
-- [Procedura: Accedere a livello di codice ai contatti di Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [Procedura: Eseguire la ricerca a livello di codice per un indirizzo di posta elettronica nei contatti](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)
+- [Usare gli elementi di contatto](../vsto/working-with-contact-items.md)
+- [Procedura: creare appuntamenti a livello di codice](../vsto/how-to-programmatically-create-appointments.md)
+- [Procedura: accedere ai contatti di Outlook a livello di codice](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Procedura: eseguire la ricerca di un indirizzo di posta elettronica nei contatti a livello di codice](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)

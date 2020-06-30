@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 622015ecbc2730c5b0a8cdf7b2ba92c4f5963886
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5fe610ea87c492e0bf562fe00145c3abaf76b8ef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329812"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520627"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Procedura: Creare un report ETW degli strumenti di profilatura
 Il report ETW (Event Tracing for Windows) elenca gli eventi ETW registrati in una sessione di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I dati ETW vengono raccolti in un file binario (.* ETL*). Per ulteriori informazioni su questo report, vedere il [report Event Tracing for Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).
@@ -34,7 +34,7 @@ Il report ETW (Event Tracing for Windows) elenca gli eventi ETW registrati in un
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**
 
-    |||
+    |Elemento|Descrizione|
     |-|-|
     |*ToolsPath*|Percorso dell'utilità degli strumenti di profilatura. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
     |*VSPFile*|I dati di profilatura (.* VSP* o. *vsps*) file. Sono accettati percorsi completi e parziali.|

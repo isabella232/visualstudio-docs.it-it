@@ -1,7 +1,7 @@
 ---
-title: "Procedura: Impedire la visualizzazione di un'area del modulo di Outlook"
+title: "Procedura: impedire la visualizzazione di un'area del modulo in Outlook"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,35 +13,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad17041650324e597fb76925f521bb7fc2e9ce93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90da255beb0a85a302158feb1f9d5cc4981437eb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967657"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520134"
 ---
-# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Procedura: Impedire la visualizzazione di un'area del modulo di Outlook
-  Potrebbero esserci situazioni in cui si preferisce non Microsoft Office Outlook per visualizzare un'area del modulo per un particolare elemento. Ad esempio, se un elemento di contatto non contiene un indirizzo aziendale, è possibile impedire un'area del modulo che mostra la posizione dell'azienda in una mappa che venga visualizzato.
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Procedura: impedire la visualizzazione di un'area del modulo in Outlook
+  Potrebbero essere presenti situazioni in cui non si desidera che Microsoft Office Outlook visualizzi un'area del modulo per un particolare elemento. Se, ad esempio, un elemento di contatto non contiene un indirizzo aziendale, è possibile impedire la visualizzazione di un'area del modulo che mostra la posizione dell'azienda in una mappa.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Per impedire la visualizzazione di un'area del modulo di Outlook
+## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Per impedire a Outlook di visualizzare un'area del modulo
 
 1. Aprire il file di codice per l'area del modulo che si desidera modificare.
 
-2. Espandere la **Factory area del modulo** area di codice.
+2. Espandere l'area del codice **Factory dell'area del modulo** .
 
-3. Aggiungere codice per il `FormRegionInitializing` gestore eventi che imposta il <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> proprietà del <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe a **true**.
+3. Aggiungere il codice al `FormRegionInitializing` gestore eventi che imposta la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> proprietà della <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe su **true**.
 
-   In questo esempio, se il contatto non contiene un indirizzo, il <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> è impostata su **true**, e non viene visualizzata l'area del modulo.
+   In questo esempio, se l'elemento contatto non contiene un indirizzo, la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> proprietà viene impostata su **true**e l'area del modulo non viene visualizzata.
 
 ## <a name="example"></a>Esempio
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
  [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
-- [Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
-- [Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Procedura dettagliata: Importare un'area del modulo progettata in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
+- [Procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Procedura dettagliata: importare un'area del modulo progettata in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Accedere a livello di codice ai contatti di Outlook'
+title: 'Procedura: accedere ai contatti di Outlook a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967683"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520094"
 ---
-# <a name="how-to-programmatically-access-outlook-contacts"></a>Procedura: Accedere a livello di codice ai contatti di Outlook
-  Questo esempio vengono trovati tutti i contatti il cui cognome contengano una stringa di ricerca specificato.
+# <a name="how-to-programmatically-access-outlook-contacts"></a>Procedura: accedere ai contatti di Outlook a livello di codice
+  Questo esempio trova tutti i contatti il cui cognome contiene una stringa di ricerca specificata.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -32,11 +32,11 @@ ms.locfileid: "62967683"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
-- I contatti il cui cognome contengono la stringa "**Na"** , ad esempio, Tzipi Butnaru, nelle **contatti** cartella.
+- Contatti i cui ultimi nomi contengono la stringa "**na"** (ad esempio, Tzipi Butnaru) nella cartella **Contacts** .
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con gli elementi di contatto](../vsto/working-with-contact-items.md)
-- [Procedura: A livello di codice aggiungere una voce ai contatti di Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
-- [Procedura: Eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
-- [Procedura: Eseguire la ricerca a livello di codice per un indirizzo di posta elettronica nei contatti](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)
-- [Procedura: A livello di codice eliminare contatti di Outlook](../vsto/how-to-programmatically-delete-outlook-contacts.md)
+- [Usare gli elementi di contatto](../vsto/working-with-contact-items.md)
+- [Procedura: aggiungere una voce ai contatti di Outlook a livello di codice](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [Procedura: eseguire la ricerca di un contatto specifico a livello di codice](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Procedura: eseguire la ricerca di un indirizzo di posta elettronica nei contatti a livello di codice](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)
+- [Procedura: eliminare contatti di Outlook a livello di codice](../vsto/how-to-programmatically-delete-outlook-contacts.md)

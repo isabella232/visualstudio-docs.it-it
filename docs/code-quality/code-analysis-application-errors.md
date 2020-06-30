@@ -13,27 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587784"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521316"
 ---
 # <a name="code-analysis-application-errors"></a>Errori nell'applicazione dell'analisi del codice
 
 Questa sezione è un riferimento dei messaggi di errore generati dallo strumento di analisi del codice gestito.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
-|||
+|Codice|Descrizione|
 |-|-|
 |[CA0001](ca0001.md)|È stata generata un'eccezione all'interno dello strumento di analisi del codice gestito che non indica una condizione di errore prevista.|
 |[CA0051](ca0051.md)|Nessuna regola selezionata.|
 |[CA0052](ca0052.md)|Non sono state selezionate destinazioni da analizzare.|
 |[CA0053](ca0053.md)|Non è stato possibile caricare l'assembly delle regole.|
 |[CA0054](ca0054.md)|Un assembly di regole personalizzate contiene risorse XML non valide.|
-|[CA0055](ca0055.md)|Non è stato possibile caricare il file:\<percorso >|
+|[CA0055](ca0055.md)|Non è stato possibile caricare il file:\<path>|
 |[CA0056](ca0056.md)|Un file di progetto ha una versione non corretta dello strumento di analisi.|
 |[CA0057](ca0057.md)|Non è possibile eseguire il mapping delle violazioni al set corrente di destinazioni e regole.|
 |[CA0058](ca0058.md)|Impossibile caricare assembly a cui si fa riferimento.|
@@ -46,7 +46,7 @@ Questa sezione è un riferimento dei messaggi di errore generati dallo strumento
 |[CA0065](ca0065.md)|Costrutto di metadati non supportato: il tipo '*typeName*' contiene una proprietà e un campo con lo stesso nome '*NomeCampoProprietà*'|
 |[CA0066](ca0066.md)|Il valore '*VersionId*' specificato per **/TargetFrameworkVersion** non è una versione riconosciuta.|
 |[CA0067](ca0067.md)|Directory non trovata.|
-|[CA0068](ca0068.md)|Impossibile trovare le informazioni di debug per l'assembly di destinazione *' AssemblyName '* .|
+|[CA0068](ca0068.md)|Impossibile trovare le informazioni di debug per l'assembly di destinazione *' AssemblyName '*.|
 |[CA0069](ca0069.md)|Uso della piattaforma alternativa. *FrameworkVersion1* non è stato trovato. In alternativa, usare *FrameworkVersion2* . Per ottenere risultati di analisi ottimali, verificare che sia installata la versione corretta del Framework.|
 |[CA0070](ca0070.md)|Impossibile caricare l'assembly o il tipo a causa di autorizzazioni di sicurezza.|
 |[CA0501](ca0501.md)|Impossibile leggere il report di output.|
@@ -54,7 +54,7 @@ Questa sezione è un riferimento dei messaggi di errore generati dallo strumento
 |[CA0503](ca0503.md)|La proprietà è deprecata. Usa la proprietà sostitutiva|
 |[CA0504](ca0504.md)|La directory della regola è stata ignorata perché non esiste|
 |[CA0505](ca0505.md)|La proprietà è deprecata. Usa la proprietà sostitutiva|
-|[Errori di FxCopCmd](fxcopcmd-errors.md)|Errori di analisi del codice gestito.|
+|[Errori FxCopCmd](fxcopcmd-errors.md)|Errori di analisi del codice gestito.|
 
 ## <a name="related-sections"></a>Sezioni correlate
 

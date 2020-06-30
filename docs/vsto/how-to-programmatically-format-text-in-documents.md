@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di programmazione formattare il testo nei documenti'
+title: 'Procedura: formattare il testo nei documenti a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9f0f64f47317b5712c34d8aca4ea6f64191438e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76af290b0e32126689dbe7b60f27889d9742ea7f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971134"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519847"
 ---
-# <a name="how-to-programmatically-format-text-in-documents"></a>Procedura: A livello di programmazione formattare il testo nei documenti
+# <a name="how-to-programmatically-format-text-in-documents"></a>Procedura: formattare il testo nei documenti a livello di codice
   È possibile usare l'oggetto <xref:Microsoft.Office.Interop.Word.Range> per formattare il testo in un documento di Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- L'esempio seguente seleziona il primo paragrafo del documento e modifica le dimensioni del carattere, il nome del carattere e l'allineamento. Quindi, seleziona l'intervallo e visualizza una finestra messaggio per sospendere l'operazione prima di eseguire la successiva sezione di codice. Nella sezione successiva chiama il metodo Undo del <xref:Microsoft.Office.Tools.Word.Document> elemento host (per una personalizzazione a livello di documento) o <xref:Microsoft.Office.Interop.Word.Document> classe (per un componente aggiuntivo VSTO) tre volte. Applica lo stile del livello di rientro normale, mostrando una finestra di messaggio per sospendere il codice. Il codice chiama quindi il metodo <xref:Microsoft.Office.Tools.Word.Document.Undo%2A> una volta e visualizza una finestra di messaggio.
+ L'esempio seguente seleziona il primo paragrafo del documento e modifica le dimensioni del carattere, il nome del carattere e l'allineamento. Quindi, seleziona l'intervallo e visualizza una finestra messaggio per sospendere l'operazione prima di eseguire la successiva sezione di codice. La sezione successiva chiama tre volte il metodo Undo dell' <xref:Microsoft.Office.Tools.Word.Document> elemento host (per una personalizzazione a livello di documento) o la <xref:Microsoft.Office.Interop.Word.Document> classe (per un componente aggiuntivo VSTO). Applica lo stile del livello di rientro normale, mostrando una finestra di messaggio per sospendere il codice. Il codice chiama quindi il metodo <xref:Microsoft.Office.Tools.Word.Document.Undo%2A> una volta e visualizza una finestra di messaggio.
 
 ## <a name="document-level-customization-example"></a>Esempio di personalizzazione a livello di documento
 
@@ -47,6 +47,6 @@ ms.locfileid: "62971134"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#62)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Procedura: A livello di programmazione inserire testo nei documenti di Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Procedura: Cercare e sostituire testo nei documenti a livello di codice](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [Procedura: definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Procedura: inserire testo in documenti di Word a livello di codice](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Procedura: cercare e sostituire testo nei documenti a livello di codice](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
