@@ -1,7 +1,7 @@
 ---
 title: Informazioni generali sugli strumenti di linguaggio specifico di dominio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - Domain-Specific Language
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af9aa8ce8719fe08e16e244a2f7009ddf67f533
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591697"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532367"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Informazioni generali sugli strumenti di linguaggio specifico di dominio
 Strumenti Domain-Specific Language (strumenti DSL), ospitati in Visual Studio, consentono di progettare un linguaggio specifico di dominio e quindi di generare tutto ciò che gli utenti devono avere per creare modelli basati sul linguaggio.

@@ -1,18 +1,18 @@
 ---
 title: 'Procedura: aprire un modello da file nel codice del programma'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594617"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532483"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: aprire un modello da file nel codice del programma
 
@@ -39,9 +39,9 @@ Aggiungere i riferimenti seguenti al progetto di applicazione di Visual Studio:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - Se non viene visualizzato nella scheda **.NET** della finestra di dialogo **Aggiungi riferimenti** , fare clic sulla scheda **Sfoglia** e passare a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+  - Se non viene visualizzato nella scheda **.NET** della finestra di dialogo **Aggiungi riferimenti** , fare clic sulla scheda **Sfoglia** e passare a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` .
 
-- L'assembly DSL, disponibile nella cartella bin del progetto DSL. Il nome è in genere nel formato seguente: *impresa*.`.Dsl.dll`*progettoutente* .
+- L'assembly DSL, disponibile nella cartella bin del progetto DSL. Il nome è in genere nel formato seguente: *impresa*. *Progettoutente* `.Dsl.dll` .
 
 ## <a name="important-classes-in-the-dsl"></a>Classi importanti nel linguaggio DSL
 
@@ -49,11 +49,11 @@ Prima di poter scrivere il codice che legge il linguaggio DSL, è necessario ess
 
 Queste sono le classi che è necessario identificare:
 
-- *YourDslRootClass* : si tratta del nome della classe radice nell'`DslDefinition.dsl`.
+- *YourDslRootClass* : si tratta del nome della classe radice in `DslDefinition.dsl` .
 
-- *Proprionomedsl* `SerializationHelper`: questa classe è definita in `SerializationHelper.cs` nel progetto DSL.
+- *Proprionomedsl* `SerializationHelper` : Questa classe è definita in `SerializationHelper.cs` nel progetto DSL.
 
-- *Proprionomedsl* `DomainModel`: questa classe è definita in `DomainModel.cs` nel progetto DSL.
+- *Proprionomedsl* `DomainModel` : Questa classe è definita in `DomainModel.cs` nel progetto DSL.
 
 ## <a name="read-from-a-file"></a>Legge da un file
 

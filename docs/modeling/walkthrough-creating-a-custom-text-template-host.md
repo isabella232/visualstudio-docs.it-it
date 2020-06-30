@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: creazione di un host del modello di testo personalizzato'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3d578161d43de68d85f3b7704c9fd69fe4e268ea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593538"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532223"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Procedura dettagliata: Creare un host del modello di testo personalizzato
 
@@ -29,7 +29,7 @@ Un *host del modello di testo* fornisce un ambiente che consente l'esecuzione de
 > [!WARNING]
 > Se si sta scrivendo un'estensione o un pacchetto di Visual Studio, è consigliabile usare il servizio modello di testo anziché creare un host personalizzato. Per altre informazioni, vedere [richiamo della trasformazione del testo in un'estensione di Visual](../modeling/invoking-text-transformation-in-a-vs-extension.md)Studio.
 
-Questa procedura dettagliata illustra le attività seguenti:
+Vengono illustrate le attività seguenti:
 
 - Creazione di un host del modello di testo personalizzato
 
@@ -51,9 +51,9 @@ In questa procedura dettagliata, si crea un host personalizzato in un'applicazio
 
 2. Aggiungere riferimenti agli assembly riportati di seguito:
 
-   - **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft. VisualStudio. TextTemplating. \* . 0**
 
-   - **Microsoft. VisualStudio. TextTemplating. Interfaces. 10.0 e versioni successive**
+   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.dll e versioni successive**
 
 3. Sostituire il codice nel file Program.cs o Module1.vb con il codice seguente:
 
@@ -714,11 +714,11 @@ In questa procedura dettagliata, si crea un host personalizzato in un'applicazio
    End Namespace
    ```
 
-4. Solo per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], aprire il menu **progetto** e fare clic su **Proprietà CustomHost**. Nell'elenco **oggetto di avvio** fare clic su **CustomHost. Program**.
+4. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Solo per, aprire il menu **progetto** e fare clic su **Proprietà CustomHost**. Nell'elenco **oggetto di avvio** fare clic su **CustomHost. Program**.
 
-5. Nel menu **File** fare clic su **Salva tutto**.
+5. Scegliere **Salva tutti** dal menu **File**.
 
-6. Scegliere **Compila soluzione** dal menu **Compila**.
+6. Nel menu **Compila** scegliere **Compila soluzione**.
 
 ## <a name="test-the-custom-host"></a>Testare l'host personalizzato
 
@@ -726,11 +726,11 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Per creare un modello di testo per testare l'host personalizzato
 
-1. Creare un file di testo e denominarlo `TestTemplate.tt`.
+1. Creare un file di testo e denominarlo `TestTemplate.tt` .
 
      È possibile utilizzare qualsiasi editor di testo, ad esempio il Blocco note, per creare il file.
 
-2. Aggiungere al file quanto segue:
+2. Aggiungere il codice seguente al file:
 
     > [!NOTE]
     > Il linguaggio di programmazione non deve necessariamente essere uguale a quello dell'host personalizzato.
@@ -777,22 +777,22 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
 
 ### <a name="to-test-the-custom-host"></a>Per testare l'host personalizzato
 
-1. Aprire la finestra del prompt dei comandi.
+1. Aprire una finestra del prompt dei comandi.
 
 2. Digitare il percorso del file eseguibile per l'host personalizzato, ma non premere ancora INVIO.
 
-     Digitare ad esempio:
+     Ad esempio, digitare il comando seguente:
 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Anziché digitare l'indirizzo, è possibile individuare il file CustomHost. exe in **Esplora risorse** e quindi trascinare il file nella finestra del prompt dei comandi.
+    > Anziché digitare l'indirizzo, è possibile passare al file CustomHost.exe in **Esplora risorse** , quindi trascinare il file nella finestra del prompt dei comandi.
 
 3. Digitare uno spazio.
 
 4. Digitare il percorso del file modello di testo, quindi premere INVIO.
 
-     Digitare ad esempio:
+     Ad esempio, digitare il comando seguente:
 
      `C:\<YOUR PATH>TestTemplate.tt`
 

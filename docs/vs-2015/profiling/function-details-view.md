@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 107730fbb2dd78ddc9de8eaddc006bf01562af16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24e9d76e959c0c05abe3ac48f5c4d43afecec47a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68141891"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532730"
 ---
 # <a name="function-details-view"></a>Visualizzazione Dettagli funzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seg
  Nell'elenco a discesa **Metrica prestazioni** è possibile specificare i valori da visualizzare. I valori disponibili dipendono dal metodo di profilatura usato nel file dei dati di profilatura. I nomi tra parentesi sono i nomi delle righe nella tabella **Dettagli prestazioni funzione**.  
   
 ### <a name="bar-chart"></a>Grafico a barre  
- **Funzioni chiamanti**  
+ **Chiamata delle funzioni**  
   
  La barra **Funzioni chiamanti** visualizza le funzioni che hanno chiamato la funzione selezionata. Le dimensioni del blocco che contiene la funzione chiamante sono proporzionali al contributo della funzione chiamante rispetto al valore totale della metrica prestazioni per la funzione selezionata.  
   
@@ -75,7 +75,7 @@ La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seg
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|**Esclusivo**|-   Valore della metrica prestazioni relativo all'esecuzione del corpo della funzione.|  
+|**Exclusive**|-   Valore della metrica prestazioni relativo all'esecuzione del corpo della funzione.|  
 |**In chiamate**|-    Valore della metrica prestazioni relativo a funzioni chiamate dalla funzione selezionata.|  
 |**Totale inclusivo**|-   Totale dei valori **Esclusivo** e **In chiamate**.|  
   
@@ -84,17 +84,17 @@ La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seg
   
 ## <a name="cost-distribution-bar-chart-values"></a>Valori del grafico a barre Distribuzione costi  
   
-### <a name="sampling"></a>Campionamento  
+### <a name="sampling"></a>campionamento  
  La tabella seguente descrive i valori nell'elenco Metrica prestazioni per i dati di profilatura raccolti tramite il metodo di campionamento.  
   
-|||  
+|Metrica|Descrizione|
 |-|-|  
 |**Campioni inclusivi (campioni raccolti)**|-   Per una funzione chiamante, numero di campioni raccolti quando la funzione selezionata è stata chiamata da questa funzione chiamante.<br />-   Per il corpo della funzione, numero di campioni raccolti durante l'esecuzione del codice della funzione selezionata.<br />-   Per una funzione chiamata, numero di campioni raccolti durante l'esecuzione della funzione chiamata in seguito a una chiamata dalla funzione selezionata.|  
   
 ### <a name="instrumentation"></a>Strumentazione  
  La tabella seguente descrive i valori nell'elenco Metrica prestazioni per i dati di profilatura raccolti tramite il metodo di strumentazione.  
   
-|||  
+|Metrica|Descrizione|  
 |-|-|  
 |**Tempo inclusivo trascorso (tempo trascorso)**|Il tempo trascorso include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br /><br /> -   Per una **Funzione chiamante**, quantità di tempo trascorso durante l'esecuzione delle istanze della funzione selezionata chiamate dalla funzione. È incluso il tempo trascorso nelle funzioni chiamate dalla funzione selezionata.<br />-   Per il **Corpo della funzione**, quantità totale di tempo trascorso durante l'esecuzione del codice della funzione selezionata. Non è incluso il tempo trascorso nelle funzioni chiamate.<br />-   Per una funzione chiamata, quantità di tempo trascorso durante l'esecuzione delle istanze della funzione chiamate dalla funzione selezionata. È incluso il tempo trascorso nelle funzioni chiamate dalla funzione. È incluso il tempo trascorso nelle funzioni chiamate dalla funzione selezionata.|  
 |**Tempo inclusivo applicazione (tempo applicazione)**|Il tempo applicazione non include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br /><br /> -   Per una **Funzione chiamante**, quantità di tempo applicazione durante l'esecuzione delle istanze della funzione selezionata chiamate dalla funzione. È incluso il tempo trascorso nelle funzioni chiamate dalla funzione selezionata.<br />-   Per il **Corpo della funzione**, quantità totale di tempo applicazione durante l'esecuzione del codice della funzione selezionata. Non è incluso il tempo trascorso nelle funzioni chiamate.<br />-   Per una funzione chiamata, quantità di tempo applicazione trascorso durante l'esecuzione delle istanze della funzione chiamate dalla funzione selezionata. È incluso il tempo trascorso nelle funzioni chiamate dalla funzione.|  
@@ -102,7 +102,7 @@ La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seg
 ### <a name="net-memory"></a>Memoria .NET  
  La tabella seguente descrive i valori nell'elenco Metrica prestazioni per i dati di profilatura raccolti tramite il metodo di profilatura di memoria .NET.  
   
-|||  
+|Metrica|Descrizione|  
 |-|-|  
 |**Allocazioni inclusive (Allocazioni)**|-   Per una **Funzione chiamante**, numero di oggetti allocati dalle istanze della funzione selezionata chiamate dalla funzione. Sono inclusi gli oggetti allocati dalle funzioni chiamate dalla funzione selezionata.<br />-   Per il **Corpo della funzione**, numero di oggetti allocati dalla funzione selezionata durante l'esecuzione del codice relativo. Non sono inclusi gli oggetti allocati nelle funzioni chiamate dalla funzione selezionata.<br />-   Per una funzione chiamata, numero di oggetti allocati dalle istanze della funzione chiamate dalla funzione selezionata. Sono inclusi gli oggetti allocati da funzioni chiamate dalla funzione.|  
 |**Byte inclusivi (Byte)**|-   Per una **Funzione chiamante**, numero di byte allocati dalle istanze della funzione selezionata chiamate dalla funzione. Sono inclusi i byte allocati dalle funzioni chiamate dalla funzione selezionata.<br />-   Per il **Corpo della funzione**, numero totale di byte allocati dalla funzione selezionata durante l'esecuzione del codice relativo. Non sono inclusi i byte allocati nelle funzioni chiamate dalla funzione selezionata.<br />-   Per una funzione chiamata, numero di byte allocati dalle istanze della funzione chiamate dalla funzione selezionata. Sono inclusi i byte allocati da funzioni chiamate dalla funzione.|  
@@ -110,7 +110,7 @@ La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seg
 ### <a name="concurrency"></a>Concorrenza  
  La tabella seguente descrive i valori nell'elenco Metrica prestazioni per i dati di profilatura raccolti tramite il metodo di concorrenza.  
   
-|||  
+|Metrica|Descrizione|  
 |-|-|  
 |**Conflitti inclusivi (conflitti)**|-   Per una **Funzione chiamante**, numero di eventi di conflitto di risorse che si sono verificati nelle istanze della funzione selezionata chiamata dalla funzione. Sono inclusi gli eventi di conflitto nelle funzioni chiamate dalla funzione selezionata.<br />-   Per il **Corpo della funzione**, numero totale di eventi di conflitto che si sono verificati durante l'esecuzione del codice della funzione. Non sono inclusi i conflitti nelle funzioni chiamate dalla funzione selezionata.<br />-   Per una funzione chiamata, numero di eventi di conflitto che si sono verificati nelle istanze della funzione chiamate dalla funzione selezionata. Sono inclusi gli eventi di conflitto che si sono verificati nelle funzioni chiamate dalla funzione.|  
 |**Tempo blocco inclusivo (tempo blocco)**|-   Per una funzione chiamante, tempo trascorso in eventi di conflitto di risorse per le istanze della funzione selezionata chiamate dalla funzione. È incluso il tempo blocco trascorso nelle funzioni chiamate dalla funzione selezionata.<br />-   Per il **Corpo della funzione**, tempo totale trascorso in eventi di conflitto che si sono verificati durante l'esecuzione del codice della funzione. Non sono inclusi i conflitti che si verificano nelle funzioni chiamate dalla funzione selezionata.<br />-   Per una funzione chiamata, tempo trascorso in eventi di conflitto di risorse per le istanze della funzione selezionata chiamate dalla funzione selezionata. È incluso il tempo blocco trascorso nelle funzioni chiamate dalla funzione.|

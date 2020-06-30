@@ -14,25 +14,25 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a871f726dc13f91c1dfd57471c12ee5cbfeb245
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5e2e52b0688f69fd154425887077c40fc3e6c265
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918869"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531404"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Utilizzare StringBuilder per le concatenazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente su Visual Studio, vedere [DA0001: usare StringBuilder per le concatenazioni](/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
-|||  
+|Elemento|valore|  
 |-|-|  
 |ID regola|DA0001|  
-|Categoria|Uso di .NET Framework|  
-|Metodi di profilatura|Campionamento<br /><br /> Strumentazione|  
-|Messaggio|Si consiglia di utilizzare StringBuilder per le concatenazioni di stringa.|  
-|Tipo messaggio|Avviso|  
+|Category|Uso di .NET Framework|  
+|Metodi di profilatura|campionamento<br /><br /> Strumentazione|  
+|Message|Si consiglia di utilizzare StringBuilder per le concatenazioni di stringa.|  
+|Tipo di messaggio|Avviso|  
   
 ## <a name="cause"></a>Causa  
  Le chiamate a System.String.Concat sono una percentuale significativa dei dati di profilatura. Considerare la possibilità di usare la classe <xref:System.Text.StringBuilder> per costruire stringhe da più segmenti.  

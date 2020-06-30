@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: generazione di codice tramite modelli di testo'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff583874778a2f1affd589ef260c6b9eac6b5d06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593509"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532060"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procedura dettagliata: Generare codice tramite modelli di testo
 
@@ -28,7 +28,7 @@ Lo spazio dei nomi System. XML fornisce strumenti completi per il caricamento di
 In questo progetto di esempio un modello legge un file XML di esempio e genera classi che corrispondono a ogni tipo di nodo. Nel codice scritto a mano è possibile usare queste classi per passare al file XML. È anche possibile eseguire l'applicazione su qualsiasi altro file che usa gli stessi tipi di nodo. Lo scopo del file XML di esempio è fornire esempi di tutti i tipi di nodo con cui l'applicazione dovrà avere a che fare.
 
 > [!NOTE]
-> L'applicazione [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), inclusa in Visual Studio, può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
+> L'applicazione [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), inclusa in Visual Studio, può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
 
 Ecco il file di esempio:
 
@@ -83,7 +83,7 @@ In questo progetto viene usato un singolo file di modello per generare le classi
 
 È possibile applicare questa tecnica a qualsiasi progetto di codice. Questa procedura dettagliata usa un progetto C# e ai fini di test si userà un'applicazione console.
 
-1. Nel menu **File** fare clic su **Nuovo** e poi su **Progetto**.
+1. Scegliere **nuovo** dal menu **file** e quindi fare clic su **progetto**.
 
 2. Fare clic sul nodo **Visual C#** e poi, nel riquadro **Modelli** , su **Applicazione console**.
 
@@ -93,7 +93,7 @@ Lo scopo di questo file è fornire esempi dei tipi di nodo XML che l'applicazion
 
 Il file deve far parte del progetto in modo che il modello possa leggerlo, ma non sarà integrato nell'applicazione compilata.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** , quindi fare clic su **nuovo elemento**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli** .
 
@@ -270,7 +270,7 @@ public partial class Song {}
 
 ### <a name="access-the-visual-studio-api"></a>Accedere all'API di Visual Studio
 
-L'impostazione dell'attributo `hostspecific` della direttiva `<#@template#>` consente al modello di ottenere l'accesso all'API di Visual Studio. Il modello può usarla per ottenere il percorso del file di progetto, per evitare di usare un percorso di file assoluto nel codice del modello.
+L'impostazione dell' `hostspecific` attributo della `<#@template#>` direttiva consente al modello di ottenere l'accesso all'API di Visual Studio. Il modello può usarla per ottenere il percorso del file di progetto, per evitare di usare un percorso di file assoluto nel codice del modello.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -408,7 +408,7 @@ Quando lo schema XML cambia, è possibile generare facilmente nuove classi. Il c
 
 Per rigenerare le classi quando viene modificato il file XML di esempio, fare clic su **trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni** .
 
-## <a name="conclusion"></a>Conclusione
+## <a name="conclusion"></a>Conclusioni
 
 Questa procedura dettagliata illustra diverse tecniche e vantaggi della generazione del codice:
 

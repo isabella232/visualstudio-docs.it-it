@@ -12,51 +12,51 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cd455969c93d4ebdea3c2f1a36fadd1ca93f2758
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c04ef8f015b081e29891d7439b783e3851376210
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654848"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531548"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Tasti di scelta rapida (visualizzatore della Guida)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile spostarsi in Microsoft Help Viewer usando i tasti di scelta rapida elencati nella tabella seguente:
 
-|Area|Tasto o combinazione di tasti|Operazione|
+|Area|Combinazioni di tasti|Azione|
 |----------|---------------|------------|
-|Applicazione generale|Spazio|Da usare al posto di INVIO ovunque ad eccezione dei campi di modifica.|
+|Applicazione generale|Space|Da usare al posto di INVIO ovunque ad eccezione dei campi di modifica.|
 |Applicazione generale|F1|Aprire la Guida sull'elemento corrente dell'interfaccia utente.|
 |Applicazione generale|F11|Passare dalla visualizzazione a schermo intero alla visualizzazione normale e viceversa.|
-|ToolBar|Backspace<br /><br /> OPPURE<br /><br /> ALT+FRECCIA SINISTRA|Visualizzare la pagina precedente.|
-|ToolBar|ALT+FRECCIA DESTRA|Visualizzare la pagina successiva.|
-|ToolBar|ALT+HOME|Visualizzare la home page del revisore della guida.|
-|ToolBar|CTRL+S|Evidenziare l'argomento corrente nel sommario (nella scheda **Sommario**).|
-|ToolBar|CTRL+D|Aggiungere l'argomento corrente alla scheda **Preferiti**.|
-|ToolBar|CTRL+F|Visualizzare la barra di ricerca nell'area dell'argomento da usare per cercare un testo nell'argomento corrente.|
-|ToolBar|CTRL+P|Stampare la pagina corrente.|
-|ToolBar|CTRL+F2|Visualizzare un'anteprima di stampa della pagina corrente.|
-|ToolBar|CTRL+O|Visualizzare la finestra di dialogo **Opzioni Help Viewer**.|
-|ToolBar|CTRL+MAIUSC+M|Visualizzare la scheda **Gestisci contenuto**.|
-|Strumenti di spostamento|ALT+C<br /><br /> OPPURE<br /><br /> CTRL+MAIUSC+C|Visualizzare la scheda **Sommario**.|
-|Strumenti di spostamento|ALT+I<br /><br /> OPPURE<br /><br /> CTRL+MAIUSC+I|Visualizzare la scheda **Indice**.|
-|Strumenti di spostamento|ALT+F<br /><br /> OPPURE<br /><br /> CTRL+MAIUSC+F|Visualizzare la scheda **Preferiti**.|
-|Strumenti di spostamento|ALT+S<br /><br /> OPPURE<br /><br /> CTRL+E<br /><br /> OPPURE<br /><br /> CTRL+MAIUSC+S|Visualizzare la scheda **Cerca**.|
-|Strumenti di spostamento|ALT+M<br /><br /> OPPURE<br /><br /> CTRL+MAIUSC+M|Visualizzare la scheda **Gestisci contenuto**.|
+|Barra degli strumenti|Backspace<br /><br /> -OPPURE-<br /><br /> ALT+FRECCIA SINISTRA|Visualizzare la pagina precedente.|
+|Barra degli strumenti|ALT+FRECCIA DESTRA|Visualizzare la pagina successiva.|
+|Barra degli strumenti|ALT+HOME|Visualizzare la home page del revisore della guida.|
+|Barra degli strumenti|CTRL+S|Evidenziare l'argomento corrente nel sommario (nella scheda **Sommario**).|
+|Barra degli strumenti|Ctrl + D|Aggiungere l'argomento corrente alla scheda **Preferiti**.|
+|Barra degli strumenti|CTRL+F|Visualizzare la barra di ricerca nell'area dell'argomento da usare per cercare un testo nell'argomento corrente.|
+|Barra degli strumenti|CTRL+P|Stampare la pagina corrente.|
+|Barra degli strumenti|CTRL+F2|Visualizzare un'anteprima di stampa della pagina corrente.|
+|Barra degli strumenti|CTRL+O|Visualizzare la finestra di dialogo **Opzioni Help Viewer**.|
+|Barra degli strumenti|CTRL+MAIUSC+M|Visualizzare la scheda **Gestisci contenuto**.|
+|Strumenti di spostamento|ALT+C<br /><br /> -OPPURE-<br /><br /> CTRL+MAIUSC+C|Visualizzare la scheda **Sommario**.|
+|Strumenti di spostamento|ALT+I<br /><br /> -OPPURE-<br /><br /> CTRL+MAIUSC+I|Visualizzare la scheda **Indice**.|
+|Strumenti di spostamento|ALT+F<br /><br /> -OPPURE-<br /><br /> CTRL+MAIUSC+F|Visualizzare la scheda **Preferiti**.|
+|Strumenti di spostamento|ALT+S<br /><br /> -OPPURE-<br /><br /> CTRL+E<br /><br /> -OPPURE-<br /><br /> CTRL+MAIUSC+S|Visualizzare la scheda **Cerca**.|
+|Strumenti di spostamento|ALT+M<br /><br /> -OPPURE-<br /><br /> CTRL+MAIUSC+M|Visualizzare la scheda **Gestisci contenuto**.|
 |Argomento|Tasto del menu di scelta rapida<br /><br /> OR<br /><br /> MAIUSC+F10|Visualizzare il menu di scelta rapida per l'elemento corrente dell'interfaccia utente.|
 |Argomento|Freccia SU|Scorrere verso l'inizio del documento una riga alla volta.|
 |Argomento|Freccia GIÙ|Scorrere verso la fine del documento una riga alla volta.|
 |Argomento|PGSU|Scorrere verso l'inizio del documento una schermata alla volta.|
 |Argomento|PGGIÙ|Scorrere verso la fine del documento una schermata alla volta.|
-|Argomento|Home|Passare all'inizio del documento.|
+|Argomento|Home page|Passare all'inizio del documento.|
 |Argomento|Fine|Passare alla fine del documento.|
 |Argomento|CTRL+F|Trovare testo di ricerca nella pagina corrente.|
 |Argomento|F5|Aggiornare la pagina corrente.|
 |Argomento|CTRL+P|Stampare la pagina corrente.|
 |Argomento|CTRL+F2|Visualizzare un'anteprima di stampa della pagina corrente.|
 |Argomento|F4|Visualizzare la finestra di dialogo **Proprietà** per la pagina corrente.|
-|Argomento|CTRL+T|Aprire un'altra scheda contenuto in primo piano.|
+|Argomento|Ctrl + T|Aprire un'altra scheda contenuto in primo piano.|
 |Argomento|CTRL+clic|Aprire un collegamento in una nuova scheda in primo piano.|
 |Argomento|CTRL+TAB|Passare da una scheda all'altra da sinistra a destra.|
 |Argomento|CTRL+MAIUSC+TAB|Passare da una scheda all'altra da destra a sinistra.|
@@ -72,7 +72,7 @@ ms.locfileid: "72654848"
 |Preferiti|CANC|Eliminare l'elemento specificato.|
 |Preferiti|CTRL+N|Creare una cartella all'interno di Preferiti.|
 |Preferiti|F2|Rinominare la cartella o i preferiti specificati.|
-|Contenuto, Indice e Cerca|CTRL+D|Aggiungere l'argomento specificato alla scheda **Preferiti**.|
+|Contenuto, Indice e Cerca|Ctrl + D|Aggiungere l'argomento specificato alla scheda **Preferiti**.|
 |Contenuto, Indice, Cerca e Preferiti|CTRL+P|Stampare l'argomento specificato.|
 |Contenuto, Indice, Cerca e Preferiti|CTRL+F2|Visualizzare un'anteprima di stampa dell'argomento specificato.|
 |Contenuto, Indice, Cerca e Preferiti|CTRL+clic|Aprire l'argomento in una nuova scheda.|
@@ -82,37 +82,35 @@ ms.locfileid: "72654848"
 |Opzioni di visualizzazione|ALT+H|Passare lo stato attivo all'elenco **Numero massimo di voci della cronologia salvate**.|
 |Opzioni di visualizzazione|ALT+E|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1** se è abilitata.|
 |Opzioni di visualizzazione|ALT+O|Selezionare o deselezionare la casella di controllo **Connetti per recuperare il contenuto e verificare la disponibilità di aggiornamenti**.|
-|Trova|INVIO|Passare lo stato attivo all'elemento successivo.|
+|Trova|Immettere|Passare lo stato attivo all'elemento successivo.|
 |Trova|MAIUSC+INVIO|Passare lo stato attivo all'elemento precedente.|
 |Trova|ESC|Nascondere la casella di testo **Trova**.|
 |Barra di stato|ALT+E|Aprire la finestra di dialogo **Errore** se la barra di stato indica che si è verificato un errore.|
 |Barra di stato|ALT+U|Scaricare il contenuto se la barra di stato indica che sono disponibili aggiornamenti|
 
- **Gestione delle finestre**
+ **Gestione finestre**
 
-|||
+|**Combinazioni di tasti**|**Azione**|
 |-|-|
-|**Tasto o combinazione di tasti**|**Azione**|
-|CTRL+L|Reimpostare il layout predefinito di Help Viewer e chiudere tutte le schede degli argomenti.|
+|Ctrl + L|Reimpostare il layout predefinito di Help Viewer e chiudere tutte le schede degli argomenti.|
 |CTRL+TAB|La prima sequenza di tasti sposta lo stato attivo sul menu **Selezione schede**. La sequenza di tasti successiva sposta lo stato attivo alla prima voce di menu e le sequenze di tasti successive spostano lo stato attivo alle voci di menu dalla prima all'ultima. Quando una voce di menu ha lo stato attivo, il tasto INVIO rende tale elemento la scheda attiva.|
 |CTRL+MAIUSC+TAB|La prima sequenza di tasti sposta lo stato attivo sul menu **Selezione schede**. La sequenza di tasti successiva sposta lo stato attivo all'ultima voce di menu e le sequenze di tasti successive spostano lo stato attivo alle voci di menu dall'ultima alla prima. Quando una voce di menu ha lo stato attivo, il tasto INVIO rende tale elemento la scheda attiva.|
 |ALT+I, ALT+S, ALT+C, ALT+F, ALT+M|Questi tasti di scelta rapida non funzionano quando le schede di navigazione e di gestione dei contenuti non sono ancorate.|
 
  **Gestisci contenuto**
 
-|||
+|**Combinazioni di tasti**|**Azione**|
 |-|-|
-|**Tasto o combinazione di tasti**|**Azione**|
 |ALT+D|Impostare l'origine dell'installazione sul disco.|
 |ALT+O|Impostare l'origine dell'installazione su online.|
 |Scheda|Passare lo stato attivo alla casella di testo **Percorso archivio locale**.|
-|Scheda|Imposta lo stato attivo su **Sposta...** immagini (...).|
+|Scheda|Imposta lo stato attivo su **Sposta...** .|
 |ALT+V|Aprire la finestra di dialogo **Sposta contenuto**.|
 |CTRL+ALT+F|Passare lo stato attivo alla casella di testo **Filtra documentazione**.|
 |Scheda|Passare lo stato attivo all'elenco della documentazione.|
 |FRECCIA SU e FRECCIA GIÙ|Scorrere l'elenco della documentazione.|
-|Spazio|Aggiungere un elemento all'elenco **Modifiche in sospeso**.|
+|Space|Aggiungere un elemento all'elenco **Modifiche in sospeso**.|
 |Scheda|Passare lo stato attivo all'elenco **Modifiche in sospeso**.|
 |FRECCIA SU e FRECCIA GIÙ|Scorrere l'elenco **Modifiche in sospeso**.|
-|Spazio|Rimuovere un elemento dall'elenco **Modifiche in sospeso**.|
+|Space|Rimuovere un elemento dall'elenco **Modifiche in sospeso**.|
 |ALT+T|Applicare tutte le modifiche in sospeso.|

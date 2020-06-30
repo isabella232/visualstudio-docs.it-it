@@ -18,37 +18,37 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d05b8a492768dfe9163d7ede55c2bf4aef084c26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668020"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533146"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Procedura: creare tipi utilizzando Progettazione classi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per progettare nuovi tipi per progetti Visual C# .NET e Visual Basic .NET, crearli in un diagramma di classi. Per visualizzare i tipi esistenti, vedere [Procedura: Visualizzare i tipi esistenti (Progettazione classi)](../ide/how-to-view-existing-types-class-designer.md).
 
-- [Creare un nuovo tipo](#CreateType)
+- [Crea un nuovo tipo](#CreateType)
 
 - [Applicare un attributo personalizzato a un tipo](#CustAttributeType)
 
 - [Applicare un attributo personalizzato a un membro di un tipo](#CustAttributeMember)
 
-## <a name="CreateType"></a>Creare un nuovo tipo
+## <a name="create-a-new-type"></a><a name="CreateType"></a>Crea un nuovo tipo
 
 1. In Progettazione classi di Casella degli strumenti trascinare uno dei seguenti elementi in un diagramma di classi:
 
     - **Classe** o **Classe astratta**
 
-    - **Enum**
+    - **Enumerazione**
 
-    - **Interface**
+    - **Interfaccia**
 
     - **Struttura** (VB) o **Struct** (C#)
 
-    - **Delegate**
+    - **Delegato**
 
     - **Modulo** (solo VB)
 
@@ -64,18 +64,17 @@ Per progettare nuovi tipi per progetti Visual C# .NET e Visual Basic .NET, crear
 
 4. Aggiungere ora altri elementi per definire il tipo:
 
-    |||
+    |**Per**|**Aggiungere**|
     |-|-|
-    |**Per**|**Aggiungi**|
     |Classi, classi astratte, strutture o struct|Metodi, proprietà, campi, eventi, costruttori (metodo), distruttori (metodo) e costanti che definiscono il tipo|
     |Enumerazioni|Valori di campo che costituiscono l'enumerazione|
     |Interfacce|Metodi, proprietà ed eventi che costituiscono l'interfaccia|
-    |delegato|Parametri che definiscono il delegato|
+    |Delegato|Parametri che definiscono il delegato|
     |Modulo|Metodi, proprietà, campi, eventi, costruttori (metodo), distruttori (metodo) e costanti che definiscono il modulo|
 
      Vedere [Creazione di membri](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).
 
-## <a name="CustAttributeType"></a> Applicare un attributo personalizzato a un tipo
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Applicare un attributo personalizzato a un tipo
 
 1. Fare clic sulla forma del tipo in un diagramma classi.
 
@@ -85,7 +84,7 @@ Per progettare nuovi tipi per progetti Visual C# .NET e Visual Basic .NET, crear
 
      Al termine, gli attributi personalizzati verranno applicati al tipo.
 
-## <a name="CustAttributeMember"></a> Applicare un attributo personalizzato a un membro di un tipo
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Applicare un attributo personalizzato a un membro di tipo
 
 1. Fare clic sul nome del membro nella forma del relativo tipo in un diagramma classi oppure nella relativa riga nella finestra Dettagli classe.
 
@@ -96,4 +95,4 @@ Per progettare nuovi tipi per progetti Visual C# .NET e Visual Basic .NET, crear
      Al termine, gli attributi personalizzati verranno applicati al tipo.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: creare ereditarietà tra tipi (Progettazione classi)](../ide/how-to-create-inheritance-between-types-class-designer.md) [procedura: creare associazioni tra tipi (Progettazione classi)](../ide/how-to-create-associations-between-types-class-designer.md) [creazione e configurazione di membri di tipi (Progettazione classi)](../ide/creating-and-configuring-type-members-class-designer.md) [utilizzo di diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md) [Progettazione di classi e tipi (Progettazione classi)](../ide/designing-classes-and-types-class-designer.md)
+ [Procedura: creare ereditarietà tra tipi (Progettazione classi)](../ide/how-to-create-inheritance-between-types-class-designer.md) [procedura: creare associazioni tra tipi (Progettazione classi)](../ide/how-to-create-associations-between-types-class-designer.md) [creazione e configurazione di membri di tipi (Progettazione classi)](../ide/creating-and-configuring-type-members-class-designer.md) [utilizzo di diagrammi classi (Progettazione classi) progettazione di](../ide/working-with-class-diagrams-class-designer.md) [classi e tipi (Progettazione classi)](../ide/designing-classes-and-types-class-designer.md)
