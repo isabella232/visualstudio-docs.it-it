@@ -1,7 +1,7 @@
 ---
-title: "Procedura: Destinazione dell'interfaccia utente multilingue di Office"
+title: "Procedura: utilizzare l'interfaccia utente multilingue di Office"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,27 +17,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961139"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537501"
 ---
-# <a name="how-to-target-the-office-multilingual-user-interface"></a>Procedura: Destinazione dell'interfaccia utente multilingue di Office
-  Multilingual User Interface (MUI) è una funzionalità di Microsoft Office che offre la possibilità di modificare la lingua dell'interfaccia utente (UI) l'utente finale. Ad esempio, un utente finale, uso di un'interfaccia utente in inglese possono modificare la lingua dell'interfaccia utente per spagnolo.
+# <a name="how-to-target-the-office-multilingual-user-interface"></a>Procedura: utilizzare l'interfaccia utente multilingue di Office
+  L'interfaccia utente multilingue (MUI) è una funzionalità Microsoft Office che consente all'utente finale di modificare la lingua dell'interfaccia utente (UI). Ad esempio, un utente finale che lavora con un'interfaccia utente inglese può modificare la lingua dell'interfaccia utente in spagnolo.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Se l'applicazione verrà utilizzata da persone che utilizzano molte lingue di Office, è possibile aggiungere codice per modificare automaticamente la lingua delle stringhe dell'interfaccia utente in modo che corrisponda alla lingua utilizzata da Office nel computer dell'utente (se l'utente dispone di risorse corrette installate).
+ Se l'applicazione verrà utilizzata dagli utenti che utilizzano molte lingue di Office, è possibile aggiungere codice per modificare automaticamente la lingua delle stringhe dell'interfaccia utente in modo che corrisponda alla lingua utilizzata da Office nel computer dell'utente (se l'utente dispone delle risorse corrette installate).
 
-## <a name="to-check-the-current-office-ui-setting"></a>Per controllare l'impostazione corrente dell'interfaccia utente di Office
+## <a name="to-check-the-current-office-ui-setting"></a>Per verificare l'impostazione corrente dell'interfaccia utente di Office
 
-1. Usare il <xref:System.Threading.Thread.CurrentUICulture%2A> proprietà del thread corrente. Impostare la lingua delle stringhe dell'interfaccia utente in base alla lingua usata dalla versione di Office che attualmente viene eseguito nel computer dell'utente.
+1. Utilizzare la <xref:System.Threading.Thread.CurrentUICulture%2A> proprietà del thread corrente. Impostare la lingua delle stringhe dell'interfaccia utente in modo che corrisponda alla lingua utilizzata dalla versione di Office attualmente in esecuzione nel computer dell'utente.
 
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Procedura: destinare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Associazione tardiva nelle soluzioni Office](../vsto/late-binding-in-office-solutions.md)

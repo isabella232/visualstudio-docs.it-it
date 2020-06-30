@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144740"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537241"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizzare il consumo di energia nelle app UWP
 
@@ -124,13 +124,13 @@ if (performance && performance.mark) {
 
  ![Pagina del report del profiler energia](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|||
+|Immagine|Descrizione|
 |-|-|
 |![Passaggio 1](../profiling/media/procguid_1.png "ProcGuid_1")|Il file di rapporto è denominato Report*YYYYMMDD-HHMM*.diagsession. Puoi modificare il nome del file se decidi di salvarlo.|
 |![Passaggio 2](../profiling/media/procguid_2.png "ProcGuid_2")|La sequenza temporale mostra la durata della sessione di profilatura, gli eventi di attivazione del ciclo di vita dell'app e i contrassegni utente.|
 |![Passaggio 3](../profiling/media/procguid_3.png "ProcGuid_3")|Puoi limitare il rapporto a una parte della sequenza temporale trascinando le barre blu per selezionare un'area della stessa.|
-|![Fase 4](../profiling/media/procguid_4.png "ProcGuid_4")|**Utilizzo energia** è un grafico a più linee in cui viene visualizzata la modifica della potenza in uscita causata da una risorsa del dispositivo durante una sessione di profilatura. Il profiler Consumo di energia consente di tenere traccia della potenza utilizzata dalla CPU, dalle attività di rete e dallo schermo.|
-|![Fase 5](../profiling/media/procguid_6.png "ProcGuid_6")|Nel grafico **Risorse (On/Off)**  vengono fornite informazioni sui costi energetici della rete. La barra **Rete** rappresenta il tempo di apertura della connessione di rete. La barra figlio **Trasferimento dati** rappresenta il momento in cui l'app stava ricevendo o inviando dati sulla rete.|
+|![Passaggio 4](../profiling/media/procguid_4.png "ProcGuid_4")|**Utilizzo energia** è un grafico a più linee in cui viene visualizzata la modifica della potenza in uscita causata da una risorsa del dispositivo durante una sessione di profilatura. Il profiler Consumo di energia consente di tenere traccia della potenza utilizzata dalla CPU, dalle attività di rete e dallo schermo.|
+|![Passaggio 5](../profiling/media/procguid_6.png "ProcGuid_6")|Nel grafico **Risorse (On/Off)**  vengono fornite informazioni sui costi energetici della rete. La barra **Rete** rappresenta il tempo di apertura della connessione di rete. La barra figlio **Trasferimento dati** rappresenta il momento in cui l'app stava ricevendo o inviando dati sulla rete.|
 |![Passaggio 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|In **Riepilogo utilizzo energia** viene visualizzata la quantità proporzionale di energia totale utilizzata dalla CPU, dalle attività di rete e dallo schermo nella sequenza temporale selezionata.|
 
  **Per analizzare i dati relativi al profilo energetico**
@@ -140,7 +140,7 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>Ottimizzare l'utilizzo di energia
  Oltre alla trasmissione di dati, le connessioni di rete comportano un costo in termini di energia per l'inizializzazione, la gestione e la chiusura della connessione. Alcune reti mantengono aperta la connessione per un certo periodo successivo all'invio o alla ricezione dei dati per consentire la trasmissione di più dati tramite una singola connessione. Puoi utilizzare il riquadro **Risorse (On/Off)** per esaminare la modalità di interazione dell'app con la connessione.
 
- ![Riquadro&#41; &#40;&#47;&#47;di risorse](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![&#40;risorse nel riquadro&#41;&#47;disattivato](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  Se le barre **Rete** e **Trasferimento dati** indicano che la connessione rimane aperta per lunghi periodi di tempo per trasmettere in modo intermittente una serie di pacchetti di dati di piccole dimensioni, puoi suddividere i dati in batch per inviarli in un'unica trasmissione, riducendo il tempo in cui la rete rimane aperta e risparmiando costi energetici.
 
@@ -154,7 +154,7 @@ if (performance && performance.mark) {
 
    Il simulatore di Visual Studio per le app UWP consente di simulare le proprietà di connessione dati delle API delle informazioni di rete. Vedere [Eseguire app UWP nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- Gli strumenti **Utilizzo CPU** consentono di ridurre il carico della CPU quando è provocato da funzioni inefficienti. Consultate [Analizzare l'utilizzo della CPU.](../profiling/beginners-guide-to-performance-profiling.md)
+- Gli strumenti **Utilizzo CPU** consentono di ridurre il carico della CPU quando è provocato da funzioni inefficienti. Vedere [analizzare l'utilizzo della CPU](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Vedere anche
 

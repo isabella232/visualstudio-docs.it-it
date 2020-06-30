@@ -11,109 +11,107 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da8a90be59199abd569c37b43a61728c00695fa9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821966"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533732"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Tasti di scelta rapida in Help Viewer
 
 È possibile spostarsi in **Microsoft Help Viewer** usando le combinazioni di tasti elencate nella tabella seguente:
 
-|Area|Tasto o combinazione di tasti|Operazione|
+|Area|Combinazioni di tasti|Azione|
 |----------|---------------|------------|
-|Applicazione generale|**Barra spaziatrice**|Da usare al posto di **INVIO** ovunque ad eccezione dei campi di modifica.|
+|Applicazione generale|**Space**|Da usare al posto di **INVIO** ovunque ad eccezione dei campi di modifica.|
 |Applicazione generale|**F1**|Aprire la **Guida** sull'elemento corrente dell'interfaccia utente.|
 |Applicazione generale|**F11**|Passare dalla visualizzazione a schermo intero alla visualizzazione normale e viceversa.|
-|ToolBar|**Backspace**<br /><br /> OPPURE<br /><br /> **ALT**+**Freccia SINISTRA**|Visualizzare la pagina precedente.|
-|ToolBar|**ALT**+**Freccia DESTRA**|Visualizzare la pagina successiva.|
-|ToolBar|**ALT**+**Home**|Visualizzare la home page del **revisore della guida**.|
-|ToolBar|**CTRL**+**S**|Evidenziare l'argomento corrente nel sommario (nella scheda **Sommario**).|
-|ToolBar|**Ctrl**+**D**|Aggiungere l'argomento corrente alla scheda **Preferiti**.|
-|ToolBar|**CTRL**+**F**|Visualizzare la barra di **ricerca** nell'area dell'argomento da usare per cercare un testo nell'argomento corrente.|
-|ToolBar|**CTRL**+**P**|Stampare la pagina corrente.|
-|ToolBar|**CTRL**+**F2**|Visualizzare un'anteprima di stampa della pagina corrente.|
-|ToolBar|**CTRL**+**O**|Visualizzare la finestra di dialogo **Opzioni Help Viewer**.|
-|ToolBar|**CTRL**+**MAIUSC**+**M**|Visualizzare la scheda **Gestisci contenuto**.|
-|Strumenti di spostamento|**ALT**+**C**<br /><br /> OPPURE<br /><br /> **CTRL**+**MAIUSC**+**C**|Visualizzare la scheda **Sommario**.|
-|Strumenti di spostamento|**ALT**+**I**<br /><br /> OPPURE<br /><br /> **CTRL**+**MAIUSC**+**I**|Visualizzare la scheda **Indice**.|
-|Strumenti di spostamento|**ALT**+**F**<br /><br /> OPPURE<br /><br /> **CTRL**+**MAIUSC**+**F**|Visualizzare la scheda **Preferiti**.|
-|Strumenti di spostamento|**ALT**+**S**<br /><br /> OPPURE<br /><br /> **Ctrl** + E<br /><br /> OPPURE<br /><br /> **CTRL**+**MAIUSC**+**S**|Visualizzare la scheda **Cerca**.|
-|Strumenti di spostamento|**Alt**+**M**<br /><br /> OPPURE<br /><br /> **CTRL**+**MAIUSC**+**M**|Visualizzare la scheda **Gestisci contenuto**.|
-|Argomento|Tasto del **menu di scelta rapida**<br /><br /> OR<br /><br /> **MAIUSC**+**F10**|Visualizzare il menu di scelta rapida per l'elemento corrente dell'interfaccia utente.|
-|Argomento|**Freccia SU**|Scorrere verso l'inizio del documento una riga alla volta.|
-|Argomento|**Freccia GIÙ**|Scorrere verso la fine del documento una riga alla volta.|
+|Barra degli strumenti|**BACKSPACE**<br /><br /> -OPPURE-<br /><br /> **ALT** + **Freccia sinistra**|Visualizzare la pagina precedente.|
+|Barra degli strumenti|**ALT** + **Freccia destra**|Visualizzare la pagina successiva.|
+|Barra degli strumenti|**ALT** + **Pagina iniziale**|Visualizzare la home page del **revisore della guida**.|
+|Barra degli strumenti|**CTRL** + **S**|Evidenziare l'argomento corrente nel sommario (nella scheda **Sommario**).|
+|Barra degli strumenti|**CTRL** + **D**|Aggiungere l'argomento corrente alla scheda **Preferiti**.|
+|Barra degli strumenti|**CTRL** + **F**|Visualizzare la barra di **ricerca** nell'area dell'argomento da usare per cercare un testo nell'argomento corrente.|
+|Barra degli strumenti|**CTRL** + **P**|Stampare la pagina corrente.|
+|Barra degli strumenti|**CTRL** + **F2**|Visualizzare un'anteprima di stampa della pagina corrente.|
+|Barra degli strumenti|**CTRL** + **O**|Visualizzare la finestra di dialogo **Opzioni Help Viewer**.|
+|Barra degli strumenti|**CTRL** + **Sposta** + **M**|Visualizzare la scheda **Gestisci contenuto**.|
+|Strumenti di spostamento|**ALT** + **C**<br /><br /> -OPPURE-<br /><br /> **CTRL** + **Sposta** + **C**|Visualizzare la scheda **Sommario**.|
+|Strumenti di spostamento|**ALT** + **I**<br /><br /> -OPPURE-<br /><br /> **CTRL** + **Sposta** + **I**|Visualizzare la scheda **Indice**.|
+|Strumenti di spostamento|**ALT** + **F**<br /><br /> -OPPURE-<br /><br /> **CTRL** + **Sposta** + **F**|Visualizzare la scheda **Preferiti**.|
+|Strumenti di spostamento|**ALT** + **S**<br /><br /> -OPPURE-<br /><br /> **Ctrl** + E<br /><br /> -OPPURE-<br /><br /> **CTRL** + **Sposta** + **S**|Visualizzare la scheda **Cerca**.|
+|Strumenti di spostamento|**ALT** + **M**<br /><br /> -OPPURE-<br /><br /> **CTRL** + **Sposta** + **M**|Visualizzare la scheda **Gestisci contenuto**.|
+|Argomento|Tasto del **menu di scelta rapida**<br /><br /> OR<br /><br /> **Sposta** + **F10**|Visualizzare il menu di scelta rapida per l'elemento corrente dell'interfaccia utente.|
+|Argomento|**Freccia su**|Scorrere verso l'inizio del documento una riga alla volta.|
+|Argomento|**Freccia giù**|Scorrere verso la fine del documento una riga alla volta.|
 |Argomento|**PGSU**|Scorrere verso l'inizio del documento una schermata alla volta.|
 |Argomento|**PGGIÙ**|Scorrere verso la fine del documento una schermata alla volta.|
 |Argomento|**Home**|Passare all'inizio del documento.|
-|Argomento|**FINE**|Passare alla fine del documento.|
-|Argomento|**CTRL**+**F**|Trovare testo di ricerca nella pagina corrente.|
+|Argomento|**Fine**|Passare alla fine del documento.|
+|Argomento|**CTRL** + **F**|Trovare testo di ricerca nella pagina corrente.|
 |Argomento|**F5**|Aggiornare la pagina corrente.|
-|Argomento|**CTRL**+**P**|Stampare la pagina corrente.|
-|Argomento|**CTRL**+**F2**|Visualizzare un'anteprima di stampa della pagina corrente.|
+|Argomento|**CTRL** + **P**|Stampare la pagina corrente.|
+|Argomento|**CTRL** + **F2**|Visualizzare un'anteprima di stampa della pagina corrente.|
 |Argomento|**F4**|Visualizzare la finestra di dialogo **Proprietà** per la pagina corrente.|
-|Argomento|**CTRL**+**T**|Aprire un'altra scheda contenuto in primo piano.|
-|Argomento|**CTRL**+**clic**|Aprire un collegamento in una nuova scheda in primo piano.|
-|Argomento|**CTRL**+**TAB**|Passare da una scheda all'altra da sinistra a destra.|
-|Argomento|**CTRL**+**MAIUSC**+**TAB**|Passare da una scheda all'altra da destra a sinistra.|
-|Argomento|**CTRL**+**W**|Chiudere la scheda corrente.|
-|Argomento|**CTRL**+ **_numero_**|Passare a una scheda specifica in cui **_numero_** è compreso tra 1 e 9 e indica la scheda in sequenza.|
-|Argomento|**CTRL**+**ALT**+**F4**|Chiudere le altre schede del contenuto.|
-|Argomento|**CTRL**+**MAIUSC**+**segno più**|Aumentare lo zoom del 10%.|
-|Argomento|**CTRL**+**segno meno**|Ridurre lo zoom del 10%.|
-|Argomento|**CTRL**+**0** (zero)|Modificare lo zoom in 100%.|
-|Indice|**TAB**|Spostare lo stato attivo dalla voce della parola chiave all'elenco di parole chiave.|
-|Indice|**CTRL**+**K**|Passare tra le voci visualizzate che contengono la parola chiave specificata e le voci che iniziano con la parola chiave specificata.|
-|Preferiti|**CTRL**+**MAIUSC**+**CANC**|Cancellare la cronologia esplorazioni.|
+|Argomento|**CTRL** + **T**|Aprire un'altra scheda contenuto in primo piano.|
+|Argomento|**CTRL** + **Fare clic su**|Aprire un collegamento in una nuova scheda in primo piano.|
+|Argomento|**CTRL** + **Scheda**|Passare da una scheda all'altra da sinistra a destra.|
+|Argomento|**CTRL** + **Sposta** + **Scheda**|Passare da una scheda all'altra da destra a sinistra.|
+|Argomento|**CTRL** + **W**|Chiudere la scheda corrente.|
+|Argomento|**CTRL** + ** _Numero_ di**|Passare a una scheda specifica dove **_numero_** è compreso tra 1 e 9 e indica la scheda in sequenza.|
+|Argomento|**CTRL** + **ALT** + **F4**|Chiudere le altre schede del contenuto.|
+|Argomento|**CTRL** + **Sposta** + **Segno più**|Aumentare lo zoom del 10%.|
+|Argomento|**CTRL** + **Segno meno**|Ridurre lo zoom del 10%.|
+|Argomento|**CTRL** + **0** (zero)|Modificare lo zoom in 100%.|
+|Indice|**Scheda**|Spostare lo stato attivo dalla voce della parola chiave all'elenco di parole chiave.|
+|Indice|**CTRL** + **K**|Passare tra le voci visualizzate che contengono la parola chiave specificata e le voci che iniziano con la parola chiave specificata.|
+|Preferiti|**CTRL** + **Sposta** + **Del**|Cancellare la cronologia esplorazioni.|
 |Preferiti|**CANC**|Eliminare l'elemento specificato.|
-|Preferiti|**CTRL**+**N**|Creare una cartella all'interno di **Preferiti**.|
+|Preferiti|**CTRL** + **N**|Creare una cartella all'interno di **Preferiti**.|
 |Preferiti|**F2**|Rinominare la cartella o i preferiti specificati.|
-|Contenuto, Indice e Cerca|**Ctrl**+**D**|Aggiungere l'argomento specificato alla scheda **Preferiti**.|
-|Contenuto, Indice, Cerca e Preferiti|**CTRL**+**P**|Stampare l'argomento specificato.|
-|Contenuto, Indice, Cerca e Preferiti|**CTRL**+**F2**|Visualizzare un'anteprima di stampa dell'argomento specificato.|
-|Contenuto, Indice, Cerca e Preferiti|**CTRL**+**clic**|Aprire l'argomento in una nuova scheda.|
+|Contenuto, Indice e Cerca|**CTRL** + **D**|Aggiungere l'argomento specificato alla scheda **Preferiti**.|
+|Contenuto, Indice, Cerca e Preferiti|**CTRL** + **P**|Stampare l'argomento specificato.|
+|Contenuto, Indice, Cerca e Preferiti|**CTRL** + **F2**|Visualizzare un'anteprima di stampa dell'argomento specificato.|
+|Contenuto, Indice, Cerca e Preferiti|**CTRL** + **Fare clic su**|Aprire l'argomento in una nuova scheda.|
 |Cerca|**ESC**|Deselezionare la casella di testo di ricerca.|
-|Opzioni di visualizzazione|**ALT**+**T**|Passare lo stato attivo all'elenco **Dimensione testo**.|
-|Opzioni di visualizzazione|**ALT**+**S**|Passare lo stato attivo all'elenco **Numero massimo di risultati di ricerca**.|
-|Opzioni di visualizzazione|**ALT**+**H**|Passare lo stato attivo all'elenco **Numero massimo di voci della cronologia salvate**.|
-|Opzioni di visualizzazione|**ALT**+**E**|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1** se è abilitata.|
-|Opzioni di visualizzazione|**ALT**+**O**|Selezionare o deselezionare la casella di controllo **Connetti per recuperare il contenuto e verificare la disponibilità di aggiornamenti**.|
-|Find|**INVIO**|Passare lo stato attivo all'elemento successivo.|
-|Find|**MAIUSC**+**INVIO**|Passare lo stato attivo all'elemento precedente.|
-|Find|**ESC**|Nascondere la casella di testo **Trova**.|
-|Barra di stato|**ALT**+**E**|Aprire la finestra di dialogo **Errore** se la barra di stato indica che si è verificato un errore.|
-|Barra di stato|**ALT**+**U**|Scaricare il contenuto se la barra di stato indica che sono disponibili aggiornamenti|
+|Opzioni di visualizzazione|**ALT** + **T**|Passare lo stato attivo all'elenco **Dimensione testo**.|
+|Opzioni di visualizzazione|**ALT** + **S**|Passare lo stato attivo all'elenco **Numero massimo di risultati di ricerca**.|
+|Opzioni di visualizzazione|**ALT** + **H**|Passare lo stato attivo all'elenco **Numero massimo di voci della cronologia salvate**.|
+|Opzioni di visualizzazione|**ALT** + **E**|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1** se è abilitata.|
+|Opzioni di visualizzazione|**ALT** + **O**|Selezionare o deselezionare la casella di controllo **Connetti per recuperare il contenuto e verificare la disponibilità di aggiornamenti**.|
+|Trova|**Entrare**|Passare lo stato attivo all'elemento successivo.|
+|Trova|**Sposta** + **Immettere**|Passare lo stato attivo all'elemento precedente.|
+|Trova|**ESC**|Nascondere la casella di testo **Trova**.|
+|Barra di stato|**ALT** + **E**|Aprire la finestra di dialogo **Errore** se la barra di stato indica che si è verificato un errore.|
+|Barra di stato|**ALT** + **U**|Scaricare il contenuto se la barra di stato indica che sono disponibili aggiornamenti|
 
- **Gestione delle finestre**
+ **Gestione finestre**
 
-|||
+|**Combinazioni di tasti**|**Azione**|
 |-|-|
-|**Tasto o combinazione di tasti**|**Azione**|
-|**CTRL**+**L**|Reimpostare il layout predefinito di **Help Viewer** e chiudere tutte le schede degli argomenti.|
-|**CTRL**+**TAB**|La prima sequenza di tasti sposta lo stato attivo sul menu **Selezione schede**. La sequenza di tasti successiva sposta lo stato attivo alla prima voce di menu e le sequenze di tasti successive spostano lo stato attivo alle voci di menu dalla prima all'ultima. Quando una voce di menu ha lo stato attivo, il tasto **INVIO** rende tale elemento la scheda attiva.|
-|**CTRL**+**MAIUSC**+**TAB**|La prima sequenza di tasti sposta lo stato attivo sul menu **Selezione schede**. La sequenza di tasti successiva sposta lo stato attivo all'ultima voce di menu e le sequenze di tasti successive spostano lo stato attivo alle voci di menu dall'ultima alla prima. Quando una voce di menu ha lo stato attivo, il tasto **INVIO** rende tale elemento la scheda attiva.|
-|**ALT**+**I**, **ALT**+**S**, **ALT**+**C**, **ALT**+**F**, **ALT**+**M**|Questi tasti di scelta rapida non funzionano quando le schede di navigazione e di gestione dei contenuti non sono ancorate.|
+|**CTRL** + **L**|Reimpostare il layout predefinito di **Help Viewer** e chiudere tutte le schede degli argomenti.|
+|**CTRL** + **Scheda**|La prima sequenza di tasti sposta lo stato attivo sul menu **Selezione schede**. La sequenza di tasti successiva sposta lo stato attivo alla prima voce di menu e le sequenze di tasti successive spostano lo stato attivo alle voci di menu dalla prima all'ultima. Quando una voce di menu ha lo stato attivo, il tasto **INVIO** rende tale elemento la scheda attiva.|
+|**CTRL** + **Sposta** + **Scheda**|La prima sequenza di tasti sposta lo stato attivo sul menu **Selezione schede**. La sequenza di tasti successiva sposta lo stato attivo all'ultima voce di menu e le sequenze di tasti successive spostano lo stato attivo alle voci di menu dall'ultima alla prima. Quando una voce di menu ha lo stato attivo, il tasto **INVIO** rende tale elemento la scheda attiva.|
+|**ALT** + **I**, **ALT** + **S**, **ALT** + **C**, **ALT** + **F**, **ALT** + **M**|Questi tasti di scelta rapida non funzionano quando le schede di navigazione e di gestione dei contenuti non sono ancorate.|
 
- **Gestisci contenuto**
+ **Gestione del contenuto**
 
-|||
+|**Combinazioni di tasti**|**Azione**|
 |-|-|
-|**Tasto o combinazione di tasti**|**Azione**|
-|**ALT**+**D**|Impostare l'origine dell'installazione sul disco.|
-|**ALT**+**O**|Impostare l'origine dell'installazione su online.|
-|**TAB**|Passare lo stato attivo alla casella di testo **Percorso archivio locale**.|
-|**TAB**|Passare lo stato attivo al pulsante **Sposta**.|
-|**ALT**+**V**|Aprire la finestra di dialogo **Sposta contenuto**.|
-|**CTRL**+**ALT**+**F**|Passare lo stato attivo alla casella di testo **Filtra documentazione**.|
-|**TAB**|Passare lo stato attivo all'elenco della documentazione.|
+|**ALT** + **D**|Impostare l'origine dell'installazione sul disco.|
+|**ALT** + **O**|Impostare l'origine dell'installazione su online.|
+|**Scheda**|Passare lo stato attivo alla casella di testo **Percorso archivio locale**.|
+|**Scheda**|Passare lo stato attivo al pulsante **Sposta**.|
+|**ALT** + **V**|Aprire la finestra di dialogo **Sposta contenuto**.|
+|**CTRL** + **ALT** + **F**|Passare lo stato attivo alla casella di testo **Filtra documentazione**.|
+|**Scheda**|Passare lo stato attivo all'elenco della documentazione.|
 |**FRECCIA SU** e **FRECCIA GIÙ**|Scorrere l'elenco della documentazione.|
-|**Barra spaziatrice**|Aggiungere un elemento all'elenco **Modifiche in sospeso**.|
-|**TAB**|Passare lo stato attivo all'elenco **Modifiche in sospeso**.|
+|**Space**|Aggiungere un elemento all'elenco **Modifiche in sospeso**.|
+|**Scheda**|Passare lo stato attivo all'elenco **Modifiche in sospeso**.|
 |**FRECCIA SU** e **FRECCIA GIÙ**|Scorrere l'elenco **Modifiche in sospeso**.|
-|**Barra spaziatrice**|Rimuovere un elemento dall'elenco **Modifiche in sospeso**.|
-|**ALT**+**T**|Applicare tutte le modifiche in sospeso.|
+|**Space**|Rimuovere un elemento dall'elenco **Modifiche in sospeso**.|
+|**ALT** + **T**|Applicare tutte le modifiche in sospeso.|
 
 ## <a name="see-also"></a>Vedere anche
 

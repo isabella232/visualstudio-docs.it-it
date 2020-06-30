@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 13a6f80bb0500286dd44e9c5ca9378e95d4b891d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 779d3ec1ed520d5d48043f90e7cb6272553012a6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661313"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535044"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: I tipi di base del tipo visibile a COM devono essere visibili a COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
@@ -36,7 +36,7 @@ ms.locfileid: "72661313"
  Un tipo visibile di Component Object Model (COM) deriva da un tipo non visibile a COM.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando un tipo visibile a COM aggiunge membri in una nuova versione, deve attenersi alle linee guida rigorose per evitare di suddividere i client COM che si associano alla versione corrente. Un tipo invisibile a COM presume che non debba seguire queste regole di controllo delle versioni COM quando aggiunge nuovi membri. Tuttavia, se un tipo visibile a COM deriva dal tipo COM invisibile ed espone un'interfaccia di classe di <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ClassInterfaceType> (impostazione predefinita), tutti i membri pubblici del tipo di base (a meno che non siano contrassegnati in modo esplicito come COM invisibile, che sarebbe ridondante) vengono esposti a COM. Se il tipo di base aggiunge nuovi membri in una versione successiva, eventuali client COM che si associano all'interfaccia della classe del tipo derivato potrebbero interrompersi. I tipi visibili a COM dovrebbero derivare solo da tipi visibili a COM per ridurre la possibilità di suddividere i client COM.
+ Quando un tipo visibile a COM aggiunge membri in una nuova versione, deve attenersi alle linee guida rigorose per evitare di suddividere i client COM che si associano alla versione corrente. Un tipo invisibile a COM presume che non debba seguire queste regole di controllo delle versioni COM quando aggiunge nuovi membri. Tuttavia, se un tipo visibile a COM deriva dal tipo COM invisibile ed espone un'interfaccia di classe di <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ClassInterfaceType> (impostazione predefinita), tutti i membri pubblici del tipo di base (a meno che non siano contrassegnati in modo esplicito come com invisibile, che sarebbe ridondante) vengono esposti a com. Se il tipo di base aggiunge nuovi membri in una versione successiva, eventuali client COM che si associano all'interfaccia della classe del tipo derivato potrebbero interrompersi. I tipi visibili a COM dovrebbero derivare solo da tipi visibili a COM per ridurre la possibilità di suddividere i client COM.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, rendere visibili i tipi di base o il tipo derivato COM invisibile.
@@ -51,4 +51,4 @@ ms.locfileid: "72661313"
  [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/vb/FxCop.Interoperability.ComBaseTypes.vb#1)]
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [Introduzione all'interfaccia della classe](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) che [interoperano con codice non gestito](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>[Introduzione all'interfaccia della classe](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [interoperabilità con codice non gestito](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

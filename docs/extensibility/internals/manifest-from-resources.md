@@ -1,5 +1,5 @@
 ---
-title: Manifesto da Risorse . Documenti Microsoft
+title: Manifest from Resources | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
@@ -8,65 +8,64 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb853963cc5ca6fbe6080249daa8fcf9c08bf943
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 6ea5931c77e267bc6065693be1ae144c250ce6df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707283"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536228"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
-Lo strumento Manifesto da risorse è un'applicazione console che accetta un elenco di risorse immagine (file con estensione png o xaml) e genera un file con estensione imagemanifest che consente l'utilizzo di tali immagini con il servizio immagini di Visual Studio. Inoltre, questo strumento può essere utilizzato per aggiungere immagini a un .imagemanifest esistente. Questo strumento è utile per l'aggiunta di valori DPI ad alto valore DPI e il supporto dei temati per le immagini a un'estensione di Visual Studio.This tool is useful for adding high-DPI and theming support for images to a Visual Studio extension. Il file .imagemanifest generato deve essere incluso e distribuito come parte di un'estensione di Visual Studio (vsix).
+Lo strumento Manifest from Resources è un'applicazione console che accetta un elenco di risorse immagine (file con estensione png o XAML) e genera un file con estensione imagemanifest che consente di usare tali immagini con il servizio immagini di Visual Studio. Inoltre, questo strumento può essere utilizzato per aggiungere immagini a un. imagemanifest esistente. Questo strumento è utile per aggiungere il supporto di valori DPI e per le immagini a un'estensione di Visual Studio. Il file. imagemanifest generato deve essere incluso in e distribuito come parte di un'estensione di Visual Studio (VSIX).
 
 ## <a name="how-to-use-the-tool"></a>Procedura: utilizzare lo strumento
  **Sintassi**
 
- ManifestFromResources /resources:\<dir1>; \<Img1> /assembly:\< \<AssemblyName> il> facoltativa Args
+ ManifestFromResources/Resources: \<Dir1> ; \<Img1> /assembly: \<AssemblyName>\<Optional Args>
 
  **Argomenti**
 
-||||
+|**Nome dell'opzione**|**Note**|**Obbligatorio o facoltativo**|
 |-|-|-|
-|**Nome switch**|**Note**|**Obbligatorio o facoltativo**|
-|/resources|Elenco delimitato da punti e virgola di immagini o directory. Questo elenco deve sempre contenere l'elenco completo delle immagini che saranno nel manifesto. Se viene fornito solo un elenco parziale, le voci non incluse andranno perse.<br /><br /> Se un determinato file di risorse è una striscia di immagini, lo strumento lo dividerà in immagini separate prima di aggiungere ogni immagine secondaria al manifesto.<br /><br /> Se l'immagine è un file .png, ti consigliamo di formattare il nome in questo \<modo in modo che lo strumento possa inserire gli attributi corretti per l'immagine: Nome>. \<> larghezza. \<Altezza>.png.|Obbligatoria|
-|/assembly|Il nome dell'assembly gestito (esclusa l'estensione) o il percorso di runtime dell'assembly nativo che ospita le risorse (relativo al percorso di runtime del manifesto).|Obbligatoria|
-|/manifest (manifesto)|Nome da assegnare al file .imagemanifest generato. Può anche includere un percorso assoluto o relativo per creare il file in un percorso diverso. Il nome predefinito corrisponde al nome dell'assembly.<br /><br /> Impostazione \<predefinita: \\>\>directory corrente<Assembly .imagemanifest|Facoltativo|
-|/guidNome|Nome da assegnare al simbolo GUID per tutte le immagini nel manifesto generato.<br /><br /> Impostazione predefinita: AssetsGuid|Facoltativo|
-|/rootPercorso|Percorso radice che deve essere rimosso prima di creare gli URI delle risorse gestite. Questo flag consente di risolvere i casi in cui lo strumento ottiene il percorso URI relativo errato, causando il mancato caricamento delle risorse.<br /><br /> Impostazione \<predefinita:> directory corrente|Facoltativo|
-|/recorsiva|L'impostazione di questo flag indica allo strumento di eseguire ricerche ricorsive in tutte le directory nell'argomento /resources. Se si omette questo flag, si otterrà una ricerca di directory solo di primo livello.|Facoltativo|
-|/isNative (informazioni in lingua inglese)|Impostare questo flag quando l'argomento assembly è un percorso per un assembly nativo. Omettere questo flag quando l'argomento dell'assembly è il nome di un assembly gestito. Per ulteriori informazioni su questo flag, vedere la sezione Note.|Facoltativo|
-|/nuovaGuids|L'impostazione di questo flag indica allo strumento di creare un nuovo valore per il simbolo GUID delle immagini anziché unire quello dal manifesto esistente.|Facoltativo|
-|/nuoviIDs|L'impostazione di questo flag indica allo strumento di creare nuovi valori di simbolo ID per ogni immagine anziché unire i valori dal manifesto esistente.|Facoltativo|
-|/noLogo|L'impostazione di questo flag interrompe la stampa delle informazioni sul prodotto e sul copyright.|Facoltativo|
-|/?|Stampare le informazioni della Guida.|Facoltativo|
-|/help|Stampare le informazioni della Guida.|Facoltativo|
+|/resources|Elenco delimitato da punti e virgola di immagini o directory. Questo elenco deve sempre contenere l'elenco completo delle immagini che saranno presenti nel manifesto. Se viene fornito solo un elenco parziale, le voci non incluse andranno perse.<br /><br /> Se un file di risorse specificato è un elenco di immagini, lo strumento lo suddividerà in immagini separate prima di aggiungere ogni sottoimmagine al manifesto.<br /><br /> Se l'immagine è un file con estensione png, è consigliabile formattare il nome in modo che lo strumento possa inserire gli attributi corretti per l'immagine: \<Name> . \<Width> . \<Height> . png.|Obbligatoria|
+|/assembly|Nome dell'assembly gestito (esclusa l'estensione) o percorso di runtime dell'assembly nativo che ospita le risorse (relative al percorso di runtime del manifesto).|Obbligatoria|
+|/manifest|Nome da assegnare al file con estensione imagemanifest generato. Può inoltre includere un percorso assoluto o relativo per creare il file in un percorso diverso. Il nome predefinito corrisponde al nome dell'assembly.<br /><br /> Impostazione predefinita: \<Current Directory> \\<assembly \> . imagemanifest|Facoltativo|
+|/guidName|Nome da assegnare al simbolo GUID per tutte le immagini nel manifesto generato.<br /><br /> Impostazione predefinita: AssetsGuid|Facoltativo|
+|/rootPath|Percorso radice che deve essere rimosso prima di creare gli URI delle risorse gestite. Questo flag è utile nei casi in cui lo strumento ottiene il percorso URI relativo errato, causando il mancato caricamento delle risorse.<br /><br /> Valore predefinito: \<Current Directory>|Facoltativo|
+|/Recursive|L'impostazione di questo flag indica allo strumento di cercare in modo ricorsivo tutte le directory nell'argomento/resources. Se si omette questo flag, verrà ricercata solo la directory di primo livello.|Facoltativo|
+|/isNative|Impostare questo flag quando l'argomento dell'assembly è un percorso per un assembly nativo. Omettere questo flag quando l'argomento dell'assembly è il nome di un assembly gestito. Per ulteriori informazioni su questo flag, vedere la sezione Note.|Facoltativo|
+|/newGuids|L'impostazione di questo flag indica allo strumento di creare un nuovo valore per il simbolo GUID delle immagini anziché unire quello del manifesto esistente.|Facoltativo|
+|/newIds|L'impostazione di questo flag indica allo strumento di creare nuovi valori dei simboli ID per ogni immagine anziché unire i valori del manifesto esistente.|Facoltativo|
+|/noLogo|L'impostazione di questo flag interrompe le informazioni sul prodotto e sul copyright dalla stampa.|Facoltativo|
+|/?|Stampare le informazioni della guida.|Facoltativo|
+|/help|Stampare le informazioni della guida.|Facoltativo|
 
  **Esempi**
 
-- ManifestFromResources /resources:D:/Immagini /assembly:Assembly.Nome /isNative
+- ManifestFromResources/Resources: D:\Images/assembly: My. assembly. Name/isNative
 
-- ManifestFromResources /resources:D:'Immagini'Image1.png;D:'Immagini'Image1.xaml/assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest
+- ManifestFromResources/resources:D:\Images\Image1.png;D: \Images\Image1.xaml/assembly: My. assembly. Name/manifest: MyImageManifest. imagemanifest
 
-- ManifestFromResources /resources:D:/Immagini/Image1.png;D:/Immagini1.xaml/assembly:Nome.assembly/nome/guidNome:Immagini /newGuids /newIds
+- ManifestFromResources/resources:D:\Images\Image1.png;D: \Images\Image1.xaml/assembly: My. assembly. Name/guidName: immagini/newGuids/newIds
 
 ## <a name="notes"></a>Note
 
-- Lo strumento supporta solo i file con estensione png e xaml. Qualsiasi altro tipo di immagine o file verrà ignorato. Viene generato un avviso per tutti i tipi non supportati rilevati durante l'analisi delle risorse. Se non vengono trovate immagini supportate al termine dell'analisi delle risorse da parte dello strumento, verrà generato un errore
+- Lo strumento supporta solo file con estensione png e XAML. Eventuali altri tipi di file o immagini verranno ignorati. Viene generato un avviso per tutti i tipi non supportati rilevati durante l'analisi delle risorse. Se non vengono trovate immagini supportate al termine dell'analisi delle risorse da parte dello strumento, verrà generato un errore
 
-- Seguendo il formato suggerito per le immagini .png, lo strumento imposterà il valore di dimensione/dimensione per il file .png sulla dimensione specificata dal formato, anche se differisce dalle dimensioni effettive dell'immagine.
+- Seguendo il formato suggerito per le immagini PNG, lo strumento imposterà il valore Size/Dimension per il. png sulla dimensione specificata dal formato, anche se si differenzia dalle dimensioni effettive dell'immagine.
 
-- Il formato larghezza/altezza può essere omesso per le immagini .png, ma lo strumento leggerà la larghezza/altezza effettiva dell'immagine e utilizzerà quelle per il valore di dimensione/dimensione dell'immagine.
+- Il formato di larghezza/altezza può essere omesso per le immagini. png, ma lo strumento leggerà la larghezza e l'altezza effettive dell'immagine e le userà per il valore dimensione/dimensione dell'immagine.
 
-- L'esecuzione di questo strumento sulla stessa striscia di immagini più volte per lo stesso .imagemanifest comporterà voci di manifesto duplicate, perché lo strumento tenta di dividere la striscia di immagini in immagini autonome e aggiungerle al manifesto esistente.
+- L'esecuzione di questo strumento nello stesso elenco di immagini più volte per lo stesso. imagemanifest comporterà la creazione di voci manifesto duplicate, perché lo strumento tenta di suddividere l'elenco delle immagini in immagini autonome e di aggiungerle al manifesto esistente.
 
-- L'unione (omettendo /newGuids o /newIds) deve essere eseguita solo per i manifesti generati dallo strumento. I manifesti che sono stati personalizzati o generati con altri mezzi potrebbero non essere uniti correttamente.
+- L'Unione (omettendo/newGuids o/newIds) deve essere eseguita solo per i manifesti generati dallo strumento. I manifesti che sono stati personalizzati o generati attraverso altri mezzi potrebbero non essere uniti correttamente.
 
-- I manifesti generati per gli assembly nativi potrebbero dover essere modificati manualmente dopo la generazione per fare in modo che i simboli ID corrispondano agli ID di risorsa del file RC dell'assembly nativo.
+- È possibile che i manifesti generati per gli assembly nativi debbano essere modificati manualmente dopo la generazione per fare in modo che i simboli ID corrispondano agli ID di risorsa del file RC dell'assembly nativo.
 
 ## <a name="sample-output"></a>Output di esempio
- **Manifesto dell'immagine semplice**
+ **Manifesto immagine semplice**
 
- Un manifesto dell'immagine sarà simile a questo file XML:An image manifest will be similar to this .xml file:
+ Un manifesto dell'immagine sarà simile a questo file con estensione XML:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,9 +89,9 @@ Lo strumento Manifesto da risorse è un'applicazione console che accetta un elen
 </ImageManifest>
 ```
 
- **Manifesto dell'immagine per una striscia di immagini**
+ **Manifesto immagine per un elenco di immagini**
 
- Un manifesto dell'immagine per una striscia di immagini sarà simile a questo file XML:An image manifest for an image strip will be similar to this .xml file:
+ Un manifesto dell'immagine per un elenco di immagini sarà simile al file XML seguente:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -127,9 +126,9 @@ Lo strumento Manifesto da risorse è un'applicazione console che accetta un elen
 </ImageManifest>
 ```
 
- **Manifesto dell'immagine per le risorse immagine dell'assembly nativoImage manifest for native assembly image resources**
+ **Manifesto immagine per le risorse dell'immagine assembly native**
 
- Un manifesto di immagine per le immagini native sarà simile a questo file XML:An image manifest for native images will be similar to this .xml file:
+ Un manifesto dell'immagine per le immagini native sarà simile al file XML seguente:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

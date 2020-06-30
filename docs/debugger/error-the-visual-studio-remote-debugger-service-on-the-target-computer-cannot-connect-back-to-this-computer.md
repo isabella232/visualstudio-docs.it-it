@@ -16,21 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975d2d1c1f66fe06f8fc3a9568f790fbe4c21e36
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460390"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536669"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
 Questo errore indica che il servizio debugger remoto è in esecuzione con un account utente che non è in grado di eseguire l'autenticazione quando tenta di connettersi al computer da cui si esegue il debug. Questo errore può verificarsi quando il debug remoto utilizza il motore di debug legacy e il debugger remoto viene eseguito come servizio.
 
  Nella tabella riportata di seguito sono indicati gli account in grado di accedere al computer:
 
-|||||
+|Scenario|Account LocalSystem|Account di dominio|Account locali con lo stesso nome utente e la stessa password in entrambi i computer|
 |-|-|-|-|
-||Account LocalSystem|Account di dominio|Account locali con lo stesso nome utente e la stessa password in entrambi i computer|
 |Entrambi i computer nello stesso dominio|Sì|Sì|Sì|
 |Entrambi i computer in domini con trust bidirezionale|No|No|Sì|
 |Uno o entrambi i computer in un gruppo di lavoro|No|No|Sì|
@@ -74,6 +73,6 @@ Questo errore indica che il servizio debugger remoto è in esecuzione con un acc
 
 - Eseguire Remote Debugging Monitor come applicazione anziché come servizio.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debug remoto](../debugger/remote-debugging.md)

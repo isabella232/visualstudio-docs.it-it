@@ -17,30 +17,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7bdbc255320a2d17eb3c51191b3a425500dd345c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590176"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533692"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Procedura: Creare tipi usando Progettazione classi
 
 Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramma di classi. Per visualizzare i tipi esistenti, vedere [Procedura : Visualizzare i dati esistenti](how-to-view-existing-types.md).
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>Creare un nuovo tipo
+## <a name="create-a-new-type"></a><a name="CreateType"></a>Crea un nuovo tipo
 
-1. Nella **Casella degli strumenti**, in **Progettazione classi**, trascinare uno di questi in un diagramma classi:
+1. Nella **casella degli strumenti**, sotto **Progettazione classi**, trascinare uno di questi in un diagramma classi:
 
     - **Classe** o **Classe astratta**
 
-    - **Enum**
+    - **Enumerazione**
 
     - **Interfaccia**
 
     - **Struttura** (VB) o **Struct** (C#)
 
-    - **Delega**
+    - **Delegato**
 
     - **Modulo** (solo VB)
 
@@ -56,9 +56,8 @@ Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramm
 
 4. Aggiungere ora altri elementi per definire il tipo:
 
-    |||
-    |-|-|
     |**Per**|**Aggiungere**|
+    |-|-|
     |Classi, classi astratte, strutture o struct|Metodi, proprietà, campi, eventi, costruttori (metodo), distruttori (metodo) e costanti che definiscono il tipo|
     |Enumerazioni|Valori di campo che costituiscono l'enumerazione|
     |Interfacce|Metodi, proprietà ed eventi che costituiscono l'interfaccia|
@@ -77,7 +76,7 @@ Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramm
 
    Gli attributi personalizzati vengono applicati al tipo.
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Applicare un attributo personalizzato a un membro di tipoApply a custom attribute to a type member
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Applicare un attributo personalizzato a un membro di tipo
 
 1. Fare clic sul nome del membro nella forma del relativo tipo in un diagramma classi oppure nella relativa riga nella finestra Dettagli classe.
 

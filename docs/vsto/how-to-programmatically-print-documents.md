@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di codice stampa documenti'
+title: 'Procedura: stampare documenti a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3df7ad4a5569a0c123d8c0e284ff7ad57e900355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 413d0e4f56aeb897af4f16a0dc6c43b4f04eace7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956044"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537826"
 ---
-# <a name="how-to-programmatically-print-documents"></a>Procedura: A livello di codice stampa documenti
+# <a name="how-to-programmatically-print-documents"></a>Procedura: stampare documenti a livello di codice
   È possibile stampare un intero documento di Microsoft Office Word o parte di un documento sulla stampante predefinita.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]

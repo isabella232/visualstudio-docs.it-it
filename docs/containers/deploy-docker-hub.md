@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 18e2789af3a699dacee9a9e8c1f1846ee8622800
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283177"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536890"
 ---
 # <a name="deploy-to-docker-hub"></a>Distribuire in Docker Hub
 
@@ -29,17 +29,17 @@ Se non si dispone di un repository Docker Hub, crearne uno nell' [Hub Docker](ht
 
 1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **pubblica...**. Verrà visualizzata una schermata che mostra le opzioni di distribuzione.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Screenshot delle opzioni di distribuzione](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
 1. In **selezionare una destinazione di pubblicazione**scegliere **container Registry**, quindi scegliere **Hub Docker**. Verrà visualizzata la finestra di dialogo **Hub Docker** .
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
+   ![Screenshot della finestra di dialogo dell'hub Docker](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
 1. Se ci si connette al proprio repository (non appartenente a un'organizzazione), lasciare selezionata la casella di controllo per la **pubblicazione in un repository personale** . Se il repository è di proprietà di un'organizzazione, deselezionare la casella di controllo e immettere il nome dell'organizzazione. Immettere il nome utente e la password di Docker per l'account Docker con le autorizzazioni per accedere al repository a cui ci si connette e quindi selezionare **Save (Salva**).  
 
-   Visual Studio tenta di distribuire l'immagine nell'hub docker.  In caso di esito positivo, viene visualizzata la schermata di **pubblicazione** con l'URL dell'immagine del repository, il tag dell'immagine, il repository e la configurazione della build * * (ad esempio, **Release**).
+   Visual Studio tenta di distribuire l'immagine nell'hub docker.  In caso di esito positivo, viene visualizzata la schermata di **pubblicazione** con l'URL dell'immagine del repository, il tag dell'immagine, il repository e la configurazione della build, ad esempio **Release**.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
+   ![Screenshot della schermata di pubblicazione](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 
 1. È possibile aggiornare l'immagine in qualsiasi momento facendo clic sul pulsante **pubblica** in questa pagina.  In alternativa, è possibile modificare o rimuovere il profilo usando i collegamenti sotto l'URL.
 
@@ -49,7 +49,7 @@ Eseguire la pubblicazione in [azure container Registry](/azure/container-registr
 
 Configurare l'integrazione e il recapito continui con [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Distribuisci nel servizio app Azure](deploy-app-service.md) 
  [Strumenti contenitore di Visual Studio](/visualstudio/containers/).

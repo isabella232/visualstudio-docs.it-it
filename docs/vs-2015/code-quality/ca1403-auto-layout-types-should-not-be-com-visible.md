@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5f39540cb23d86dda4244604da8a9ff764594e11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1752efb5be1828f62703e1fe1a1130b37ff80503
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661330"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534927"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: I tipi layout automatici non devono essere visibili a COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AutoLayoutTypesShouldNotBeComVisible|
 |CheckId|CA1403|
@@ -33,15 +33,15 @@ ms.locfileid: "72661330"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo di valore visibile Component Object Model (COM) viene contrassegnato con l'attributo <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> impostato su <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.
+ Un tipo di valore visibile Component Object Model (COM) è contrassegnato con l' <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> attributo impostato su <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descrizione della regola
- i tipi di layout <xref:System.Runtime.InteropServices.LayoutKind> vengono gestiti dall'Common Language Runtime. Il layout di questi tipi può variare tra le versioni del .NET Framework, in modo da interrompere i client COM che prevedono un layout specifico. Si noti che se l'attributo <xref:System.Runtime.InteropServices.StructLayoutAttribute> non è specificato, C#i compilatori C++ , [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e specificano il layout <xref:System.Runtime.InteropServices.LayoutKind> per i tipi di valore.
+ <xref:System.Runtime.InteropServices.LayoutKind>i tipi di layout vengono gestiti dal Common Language Runtime. Il layout di questi tipi può variare tra le versioni del .NET Framework, in modo da interrompere i client COM che prevedono un layout specifico. Si noti che se l' <xref:System.Runtime.InteropServices.StructLayoutAttribute> attributo non è specificato, i [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilatori C#, e C++ specificano il <xref:System.Runtime.InteropServices.LayoutKind> layout per i tipi di valore.
 
- A meno che non sia contrassegnato diversamente, tutti i tipi non generici pubblici sono visibili a COM; tutti i tipi non pubblici e generici sono invisibili a COM. Tuttavia, per ridurre i falsi positivi, questa regola richiede che la visibilità COM del tipo venga dichiarata in modo esplicito; l'assembly contenitore deve essere contrassegnato con il set di <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> su `false` e il tipo deve essere contrassegnato con il <xref:System.Runtime.InteropServices.ComVisibleAttribute> impostato su `true`.
+ A meno che non sia contrassegnato diversamente, tutti i tipi non generici pubblici sono visibili a COM; tutti i tipi non pubblici e generici sono invisibili a COM. Tuttavia, per ridurre i falsi positivi, questa regola richiede che la visibilità COM del tipo venga dichiarata in modo esplicito; l'assembly contenitore deve essere contrassegnato con <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> impostato su `false` e il tipo deve essere contrassegnato con <xref:System.Runtime.InteropServices.ComVisibleAttribute> impostato su `true` .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare il valore dell'attributo <xref:System.Runtime.InteropServices.StructLayoutAttribute> in <xref:System.Runtime.InteropServices.LayoutKind> o <xref:System.Runtime.InteropServices.LayoutKind> oppure rendere il tipo invisibile a COM.
+ Per correggere una violazione di questa regola, modificare il valore dell' <xref:System.Runtime.InteropServices.StructLayoutAttribute> attributo in <xref:System.Runtime.InteropServices.LayoutKind> o oppure <xref:System.Runtime.InteropServices.LayoutKind> rendere il tipo invisibile a com.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.

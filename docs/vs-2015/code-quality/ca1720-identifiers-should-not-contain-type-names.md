@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 34ebe4848bbbe49b9a67449795f0aea7d104af8b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d228b0fbf5507ba135f9ddc35d6d8b161f0011
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671633"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534849"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Gli identificatori non devono contenere nomi di tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
@@ -35,12 +35,12 @@ ms.locfileid: "72671633"
 ## <a name="cause"></a>Causa
  Il nome di un parametro in un membro visibile esternamente contiene un nome di tipo di dati.
 
- oppure
+ -oppure-
 
  Il nome di un membro visibile esternamente contiene un nome di tipo di dati specifico del linguaggio.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I nomi di parametri e membri sono più utilizzati per comunicare il significato rispetto alla descrizione del tipo, che dovrebbe essere fornito dagli strumenti di sviluppo. Per i nomi dei membri, se è necessario usare un nome di tipo di dati, usare un nome indipendente dal linguaggio anziché un nome specifico della lingua. Ad esempio, anziché il C# nome del tipo ' int ', utilizzare il nome del tipo di dati indipendente dal linguaggio, Int32.
+ I nomi di parametri e membri sono più utilizzati per comunicare il significato rispetto alla descrizione del tipo, che dovrebbe essere fornito dagli strumenti di sviluppo. Per i nomi dei membri, se è necessario usare un nome di tipo di dati, usare un nome indipendente dal linguaggio anziché un nome specifico della lingua. Ad esempio, anziché il nome di tipo C#' int ', utilizzare il nome del tipo di dati indipendente dal linguaggio, Int32.
 
  Ogni token discreto nel nome del parametro o del membro viene verificato rispetto ai nomi dei tipi di dati specifici del linguaggio seguenti, senza distinzione tra maiuscole e minuscole:
 
@@ -64,7 +64,7 @@ ms.locfileid: "72671633"
 
 - UInteger
 
-- Long
+- long
 
 - ULong
 
@@ -84,11 +84,11 @@ ms.locfileid: "72671633"
 
 - Obj
 
-- Booleano
+- Boolean
 
 - Char
 
-- Stringa
+- string
 
 - SByte
 
@@ -124,9 +124,9 @@ ms.locfileid: "72671633"
 
 - Double
 
-- Decimale
+- Decimal
 
-- GUID
+- Guid
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  **Se generato in base a un parametro:**

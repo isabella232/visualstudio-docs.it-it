@@ -3,17 +3,17 @@ title: Avviso. Le modifiche apportate alla finestra di dialogo Configura comport
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20889a2fcaf9f44cc21f90ed9b164d4457981764
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4eba7fb1274b36a6a6f2454f4642c1c78505719e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281032"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535200"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avviso: le modifiche apportate alla finestra di dialogo Configura comportamento non sono state applicate
 
@@ -27,6 +27,6 @@ La finestra di dialogo **Configura comportamento** consente di configurare `Inse
 
 - Per annullare la modifica precedente e continuare, fare clic su **No**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

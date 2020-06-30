@@ -1,7 +1,7 @@
 ---
 title: Proteggere documenti e parti di documenti a livello di codice
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30cb3d0b9ad04a3a0195f3b58ba5856de94d09d4
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4654a2c218470e0d5e2a1ddd54a88de5c4546f7b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402178"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537839"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Procedura: A livello di programmazione per proteggere documenti e parti di documenti
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Procedura: proteggere documenti e parti di documenti a livello di codice
   È possibile aggiungere protezione ai documenti di Microsoft Office Word per impedire agli utenti di apportare modifiche al documento.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "66402178"
  È anche possibile contrassegnare determinate aree del documento come eccezioni in modo che gli utenti possano modificare solo quelle aree del documento. Ad esempio, si potrebbe voler proteggere un intero documento ad eccezione di un segnalibro particolare. È possibile aggiungere facoltativamente una password in modo che gli utenti non possano rimuovere la protezione del documento a meno che non si conosca la password.
 
 > [!NOTE]
-> Nell'esempio seguente non viene usata la protezione con password; tuttavia, si consiglia di usare una password quando si aggiunge la protezione di documenti. Per altre informazioni, vedere l'esempio di protezione di documenti all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).
+> Nell'esempio seguente non viene usata la protezione con password; tuttavia, si consiglia di usare una password quando si aggiunge la protezione di documenti. Per ulteriori informazioni, vedere l'esempio di protezione dei documenti in [esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md).
 
- È possibile anche usare i controlli contenuto per proteggere parti di un documento. Per altre informazioni, vedere [Procedura: Proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
+ È possibile anche usare i controlli contenuto per proteggere parti di un documento. Per altre informazioni, vedere [procedura: proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Proteggere un documento che fa parte di una personalizzazione a livello di documento
 
@@ -69,8 +69,8 @@ ms.locfileid: "66402178"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
-- [Password di protezione nei documenti di Office](../vsto/password-protection-on-office-documents.md)
-- [Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
-- [Procedura: Aggiungere controlli segnalibro ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
+- [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
+- [Protezione delle password nei documenti di Office](../vsto/password-protection-on-office-documents.md)
+- [Procedura: consentire l'esecuzione del codice dietro i documenti con autorizzazioni limitate](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [Procedura: aggiungere controlli Bookmark ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Salvare documenti a livello di codice'
+title: 'Procedura: salvare documenti a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4fbf8e4cb67d5216dc17c325911bb243fae6e1c
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490617"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537592"
 ---
-# <a name="how-to-programmatically-save-documents"></a>Procedura: Salvare documenti a livello di codice
+# <a name="how-to-programmatically-save-documents"></a>Procedura: salvare documenti a livello di codice
 
 Esistono diversi modi per salvare Microsoft Office documenti di Word. È possibile salvare un documento senza modificare il nome del documento oppure è possibile salvare un documento con un nuovo nome.
 
@@ -53,17 +53,17 @@ Esistono diversi modi per salvare Microsoft Office documenti di Word. È possibi
 
 ## <a name="save-a-document-with-a-new-name"></a>Salvare un documento con un nuovo nome
 
-Usare il `SaveAs` metodo per salvare un documento con un nuovo nome. È possibile utilizzare questo metodo dell' <xref:Microsoft.Office.Tools.Word.Document> elemento host in un progetto di Word a livello di documento o di un oggetto nativo <xref:Microsoft.Office.Interop.Word.Document> in qualsiasi progetto di Word. Per questo metodo è necessario specificare il nuovo nome di file, ma altri argomenti sono facoltativi.
+Usare il `SaveAs` metodo per salvare un documento con un nuovo nome. È possibile utilizzare questo metodo dell' <xref:Microsoft.Office.Tools.Word.Document> elemento host in un progetto di Word a livello di documento o di un <xref:Microsoft.Office.Interop.Word.Document> oggetto nativo in qualsiasi progetto di Word. Per questo metodo è necessario specificare il nuovo nome di file, ma altri argomenti sono facoltativi.
 
 > [!NOTE]
-> Se si visualizza la finestra di dialogo **SaveAs** all'interno <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> del gestore eventi `ThisDocument` di e si imposta il parametro *Cancel* su **false**, l'applicazione potrebbe uscire in modo imprevisto. Se si imposta il parametro *Cancel* su **true**, viene visualizzato un messaggio di errore che indica che il salvataggio automatico è stato disabilitato.
+> Se si visualizza la finestra di dialogo **SaveAs** all'interno del <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> gestore eventi di `ThisDocument` e si imposta il parametro *Cancel* su **false**, l'applicazione potrebbe uscire in modo imprevisto. Se si imposta il parametro *Cancel* su **true**, viene visualizzato un messaggio di errore che indica che il salvataggio automatico è stato disabilitato.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Per salvare il documento associato a una personalizzazione a livello di documento con un nuovo nome
 
-1. Chiamare il `SaveAs` metodo `ThisDocument` della classe nel progetto, usando un percorso completo e un nome file. Se un file con quel nome già esiste in quella cartella, viene sovrascritto senza avvisare. Per usare questo esempio di codice, eseguirlo dalla classe `ThisDocument` .
+1. Chiamare il `SaveAs` metodo della `ThisDocument` classe nel progetto, usando un percorso completo e un nome file. Se un file con quel nome già esiste in quella cartella, viene sovrascritto senza avvisare. Per usare questo esempio di codice, eseguirlo dalla classe `ThisDocument` .
 
     > [!NOTE]
-    > Il `SaveAs` metodo genera un'eccezione se non esiste una directory di destinazione o se si verificano altri problemi durante il salvataggio di un file. È consigliabile usare un`try...catch` blocco intorno al `SaveAs` metodo o all'interno di un metodo chiamante.
+    > Il `SaveAs` metodo genera un'eccezione se non esiste una directory di destinazione o se si verificano altri problemi durante il salvataggio di un file. È consigliabile usare un `try...catch` blocco intorno al `SaveAs` metodo o all'interno di un metodo chiamante.
 
      [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
@@ -84,13 +84,13 @@ Usare il `SaveAs` metodo per salvare un documento con un nuovo nome. È possibil
 
 Questo esempio di codice presenta i requisiti seguenti:
 
-- Per salvare un documento in base al nome, è necessario che esista un documento denominato *NewDocument. doc* in una directory denominata *test* sull'unità C.
+- Per salvare un documento in base al nome, è necessario che esista un documento denominato *NewDocument.doc* in una directory denominata *test* sull'unità C.
 
 - Per salvare un documento con un nuovo nome, è necessario che esista una directory denominata *test* nell'unità C.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Chiudere i documenti a livello di codice](../vsto/how-to-programmatically-close-documents.md)
-- [Procedura: Aprire documenti esistenti a livello di codice](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Procedura: chiudere documenti a livello di codice](../vsto/how-to-programmatically-close-documents.md)
+- [Procedura: aprire documenti esistenti a livello di codice](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Elemento host Document](../vsto/document-host-item.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

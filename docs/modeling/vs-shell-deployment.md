@@ -1,31 +1,31 @@
 ---
 title: Distribuzione della shell di Visual Studio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca497244a806324d9d2315fa1b1b89404838ff3
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: d8793312e0ed022fc7210508efdf20a81b293f0f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444999"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535850"
 ---
 # <a name="vs-shell-deployment"></a>Distribuzione della shell di Visual Studio
 
-Una shell isolata consente di determinare quale funzionalità di Visual Studio è necessario interagire con il linguaggio specifico di dominio e come deve essere visualizzata tale soluzione. Per ulteriori informazioni sulla shell isolata di Visual Studio, vedere [Personalizzazione della shell isolata](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).
+Una shell isolata consente di determinare le funzionalità di Visual Studio necessarie per interagire con il linguaggio specifico di dominio e la modalità di visualizzazione della soluzione. Per altre informazioni sulla shell isolata di Visual Studio, vedere [personalizzazione della shell isolata](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).
 
-Per impostare Visual Studio Shell come destinazione di distribuzione:
+Per impostare una shell di Visual Studio come destinazione della distribuzione:
 
-1. Nel progetto **DslPackage** aprire **source.extension.tt**.
+1. Nel progetto **DslPackage** aprire **source.Extension.TT**.
 
-2. Sotto `<SupportedProducts>` inserto:
+2. In `<SupportedProducts>` Inserisci:
 
    ```xml
    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
    ```
 
-   Sostituire *MyIsolatedShell* con il nome del pacchetto shell isolato.
+   Sostituire *MyIsolatedShell* con il nome del pacchetto della shell isolata.

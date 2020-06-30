@@ -13,25 +13,25 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d323a520ae6c516630cb98f4ab0cdb6a7ccf1a5c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 1ce6cbd2e777aea51b488c09d30606ba6db4f519
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917297"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534017"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Frequenza elevata di conflitti di blocco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente su Visual Studio, vedere [DA0038: frequenza elevata di conflitti di blocco](/visualstudio/profiling/da0038-high-rate-of-lock-contentions).  
   
-|||  
+|Elemento|valore|  
 |-|-|  
 |ID regola|DA0038|  
-|Categoria|Uso di .NET Framework|  
-|Metodo di profilatura|Campionamento<br /><br /> Strumentazione<br /><br /> Memoria .NET|  
-|Messaggio|È stata rilevata una frequenza elevata di conflitti di blocco .NET. Per determinare la causa, eseguire un profilo della concorrenza.|  
-|Tipo regola|Informazioni su|  
+|Category|Uso di .NET Framework|  
+|Metodo di profilatura|campionamento<br /><br /> Strumentazione<br /><br /> Memoria .NET|  
+|Message|È stata rilevata una frequenza elevata di conflitti di blocco .NET. Per determinare la causa, eseguire un profilo della concorrenza.|  
+|Tipo regola|Informazioni|  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 25 campioni per attivare questa regola.  
   
@@ -39,7 +39,7 @@ Per la documentazione più recente su Visual Studio, vedere [DA0038: frequenza e
  I dati sulle prestazioni di sistema raccolti con i dati di profilatura indicano che si è verificata una frequenza significativamente elevata di conflitti di blocco durante l'esecuzione dell'applicazione. È consigliabile eseguire di nuovo la profilatura usando il metodo di profilatura della concorrenza per individuare la causa dei conflitti.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
- I blocchi vengono usati per proteggere sezioni critiche di codice che devono essere eseguite in serie un thread alla volta in un'applicazione multithreading. Common Language Run-time (CLR) di Microsoft .NET offre un set completo di primitive di sincronizzazione e blocco. Ad esempio, il linguaggio C# supporta un'istruzione lock (SyncLock in Visual Basic). Un'applicazione gestita può chiamare i metodi `Monitor.Enter` e `Monitor.Exit` nello spazio dei nomi System. Threading per acquisire e rilasciare direttamente un blocco. .NET Framework supporta primitive di sincronizzazione e blocco aggiuntive, includendo classi che supportano mutex, blocchi ReaderWriter e semafori. Per altre informazioni, vedere [Panoramica delle primitive di sincronizzazione](https://msdn.microsoft.com/library/ms228964.aspx) nella Guida per gli sviluppatori di .NET Framework nel sito Web MSDN. Le classi .NET Framework sono sovrapposte ai servizi di sincronizzazione di livello inferiore incorporati nel sistema operativo Windows. Includono oggetti sezione critica e molte funzioni diverse di segnalazione eventi e attesa. Per altre informazioni, vedere la sezione [Synchronization](https://msdn.microsoft.com/library/ms686353.aspx) (Sincronizzazione) della documentazione relativa allo sviluppo Win32 e COM in MSDN Library  
+ I blocchi vengono usati per proteggere sezioni critiche di codice che devono essere eseguite in serie un thread alla volta in un'applicazione multithreading. Common Language Run-time (CLR) di Microsoft .NET offre un set completo di primitive di sincronizzazione e blocco. Ad esempio, il linguaggio C# supporta un'istruzione lock (SyncLock in Visual Basic). Un'applicazione gestita può chiamare i `Monitor.Enter` `Monitor.Exit` metodi e nello spazio dei nomi System. Threading per acquisire e rilasciare direttamente un blocco. .NET Framework supporta primitive di sincronizzazione e blocco aggiuntive, includendo classi che supportano mutex, blocchi ReaderWriter e semafori. Per altre informazioni, vedere [Panoramica delle primitive di sincronizzazione](https://msdn.microsoft.com/library/ms228964.aspx) nella Guida per gli sviluppatori di .NET Framework nel sito Web MSDN. Le classi .NET Framework sono sovrapposte ai servizi di sincronizzazione di livello inferiore incorporati nel sistema operativo Windows. Includono oggetti sezione critica e molte funzioni diverse di segnalazione eventi e attesa. Per altre informazioni, vedere la sezione [Synchronization](https://msdn.microsoft.com/library/ms686353.aspx) (Sincronizzazione) della documentazione relativa allo sviluppo Win32 e COM in MSDN Library  
   
  I percorsi di memoria condivisi sottostanti le classi .NET Framework e gli oggetti Windows nativi usati per la sincronizzazione e il blocco devono essere modificati tramite operazioni interlock. Le operazioni interlock usano istruzioni specifiche dell'hardware che agiscono sui percorsi di memoria condivisi per modificare il proprio stato tramite operazioni atomiche. La coerenza delle operazioni atomiche è garantita attraverso tutti i processori del computer. Blocchi e WaitHandle sono gli oggetti .NET che usano automaticamente operazioni interlock quando vengono impostati o reimpostati. Nell'applicazione possono essere presenti anche altre strutture dei dati della memoria condivisa che richiedono l'uso di operazioni interlock per essere aggiornate in modo thread-safe. Per altre informazioni, vedere [Operazioni interlock](https://msdn.microsoft.com/library/sbhbke0y.aspx) nella sezione relativa a .NET Framework della MSDN Library  
   

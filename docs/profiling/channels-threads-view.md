@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ac6e9e85a2d7dd504b2d2bd83bd1bbdb265ea0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62776777"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537085"
 ---
 # <a name="channels-threads-view"></a>Canali (visualizzazione Thread)
 Nel visualizzatore di concorrenza appaiono quattro tipi di canali: canali di thread, canali di disco, canali di indicatore e canali GPU.
@@ -25,7 +25,7 @@ Nel visualizzatore di concorrenza appaiono quattro tipi di canali: canali di thr
 ## <a name="thread-channels"></a>Canali di thread
  Un canale di thread indica lo stato del thread, in base al colore, per un solo thread. Quando si posiziona il mouse sul nome del canale, viene visualizzata la funzione di avvio per il thread specificato. Il visualizzatore di concorrenza rileva diversi tipi di thread. I tipi più comuni sono descritti nella tabella seguente.
 
-|||
+|Thread|Descrizione|
 |-|-|
 |Thread principale|Il thread che ha avviato l'applicazione.|
 |Thread di lavoro|Thread creato dal thread principale dell'applicazione.|
@@ -48,4 +48,4 @@ Nel visualizzatore di concorrenza appaiono quattro tipi di canali: canali di thr
  I canali GPU visualizzano informazioni sull'attività di DirectX 11 nel sistema.  Ogni motore DirectX associato alla scheda grafica ha un canale separato.  I singoli segmenti rappresentano il tempo trascorso per elaborare un pacchetto DMA.
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+- [Visualizzazione thread](../profiling/threads-view-parallel-performance.md)

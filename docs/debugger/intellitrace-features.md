@@ -20,41 +20,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1ac7ca0e59a479aff3386486d2ceaf061038db68
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911412"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536578"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funzionalità IntelliTrace (C#, Visual Basic, C++)
 
-È possibile utilizzare IntelliTrace per registrare gli eventi e il metodo chiama l'applicazione, che consente di esaminare il relativo stato (stack di chiamate e i valori delle variabili locali) in diversi momenti dell'esecuzione. È sufficiente avviare il debug come di consueto. IntelliTrace è attivato per impostazione predefinita ed è possibile visualizzare le informazioni che IntelliTrace sta registrando nella nuova finestra **strumenti di diagnostica** nella scheda **eventi** . Selezionare un evento e fare clic su **Attiva debug cronologico.** per visualizzare lo stack di chiamate e le variabili locali registrate per questo evento.
+È possibile utilizzare IntelliTrace per registrare gli eventi e il metodo chiama l'applicazione, che consente di esaminare il relativo stato (stack di chiamate e i valori delle variabili locali) in diversi momenti dell'esecuzione. È sufficiente avviare il debug come di consueto. IntelliTrace è attivato per impostazione predefinita ed è possibile visualizzare le informazioni che IntelliTrace sta registrando nella nuova finestra **strumenti di diagnostica** nella scheda **eventi** . Selezionare un evento e fare clic su **Attiva debug cronologico** per visualizzare lo stack di chiamate e le variabili locali registrate per questo evento.
 
 Per una descrizione dettagliata, vedere [procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
-È possibile utilizzare IntelliTrace in Visual Studio Enterprise Edition ma non le edizioni Professional o Community.
+È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition ma non le edizioni Professional o Community.
 
 Per verificare che IntelliTrace è abilitato, aprire la pagina delle opzioni **Strumenti > Opzioni > IntelliTrace**. **Abilita IntelliTrace** deve essere selezionata per impostazione predefinita.
 
 > [!NOTE]
 > L'ambito di tutte le impostazioni nella pagina delle opzioni di **IntelliTrace** è Visual Studio nel suo insieme, non i singoli progetti o le singole soluzioni. Una modifica di queste impostazioni si applica a tutte le istanze di Visual Studio, le sessioni di debug tutti e tutti i progetti o soluzioni.
 
-## <a name="ChooseEvents"></a>Scegliere gli eventi registrati da IntelliTrace (C#, Visual Basic)
+## <a name="choose-the-events-that-intellitrace-records-c-visual-basic"></a><a name="ChooseEvents"></a>Scegliere gli eventi registrati da IntelliTrace (C#, Visual Basic)
 
 È possibile attivare o disattivare la registrazione di eventi di IntelliTrace specifici.
 
 Se il debug è in corso, interromperlo. Passare a **strumenti > opzioni > intellitrace > eventi IntelliTrace**. Scegliere gli eventi di IntelliTrace per registrare.
 
-## <a name="Snapshots"></a>Raccogli snapshot (C#, Visual Basic, C++)
+## <a name="collect-snapshots-c-visual-basic-c"></a><a name="Snapshots"></a>Raccogliere snapshot (C#, Visual Basic, C++)
 
-Questa funzionalità non è abilitata per impostazione predefinita, ma IntelliTrace è in grado di acquisire snapshot dell'applicazione a ogni punto di interruzione e di evento del debugger ed è possibile visualizzare questi snapshot in una sessione di debug cronologica. Uno snapshot offre una visualizzazione dello stato completo dell'applicazione. Per abilitare l'acquisizione degli snapshot, passare a **strumenti > opzioni > intellitrace > generale**e selezionare **snapshot IntelliTrace (gestito e nativo)** . Per altre informazioni, vedere [Visualizzare lo stato precedente dell'applicazione con IntelliTrace](../debugger/view-historical-application-state.md).
+Questa funzionalità non è abilitata per impostazione predefinita, ma IntelliTrace è in grado di acquisire snapshot dell'applicazione a ogni punto di interruzione e di evento del debugger ed è possibile visualizzare questi snapshot in una sessione di debug cronologica. Uno snapshot offre una visualizzazione dello stato completo dell'applicazione. Per abilitare l'acquisizione degli snapshot, passare a **strumenti > opzioni > intellitrace > generale**e selezionare **snapshot IntelliTrace (gestito e nativo)**. Per altre informazioni, vedere [esaminare gli Stati delle app precedenti con IntelliTrace](../debugger/view-historical-application-state.md).
 
 Gli snapshot sono disponibili in Visual Studio Enterprise 2017 versione 15,5 e successive e richiedono l'aggiornamento dell'anniversario di Windows 10 o versione successiva.  Per le app .NET Core e ASP.NET Core, è necessario Visual Studio Enterprise 2017 versione 15,7. Per le app native destinate a Windows, è necessario Visual Studio Enterprise 2017 versione 15,9 Preview 2.
 
-## <a name="GoingFurther"></a>Raccogli eventi IntelliTrace e informazioni sulle chiamateC#(, Visual Basic)
+## <a name="collect-intellitrace-events-and-call-information-c-visual-basic"></a><a name="GoingFurther"></a>Raccogliere eventi IntelliTrace e informazioni sulle chiamate (C#, Visual Basic)
 
-Questo non è abilitato per impostazione predefinita, ma IntelliTrace è in grado di registrare le chiamate ai metodi insieme agli eventi. Per abilitare la raccolta di chiamate al metodo, passare a **strumenti > opzioni > intellitrace > generale**e selezionare **eventi IntelliTrace e informazioni sulle chiamate (solo gestito)** .
+Questo non è abilitato per impostazione predefinita, ma IntelliTrace è in grado di registrare le chiamate ai metodi insieme agli eventi. Per abilitare la raccolta di chiamate al metodo, passare a **strumenti > opzioni > intellitrace > generale**e selezionare **eventi IntelliTrace e informazioni sulle chiamate (solo gestito)**.
 
 Le informazioni sulle chiamate non sono attualmente disponibili per le app .NET Core e ASP.NET Core.
 
@@ -71,7 +71,7 @@ In tal modo è possibile visualizzare la cronologia dello stack di chiamate e sc
 
 La barra di navigazione consente di spostarsi avanti e indietro tra chiamate ai metodi e gli eventi in modalità di debug cronologico. Per altre informazioni sul debug cronologico, vedere [Debug cronologico](../debugger/historical-debugging.md). Dispone di una serie di comandi:
 
-|||
+|Comando|Descrizione|
 |-|-|
 |**Imposta contesto debugger**|Consente di impostare il contesto di debug sull'intervallo di tempo della chiamata dove viene visualizzato.<br /><br /> Questa icona compare solo sullo stack di chiamate corrente.|
 |**Torna al sito di chiamata**|Spostare il puntatore e il contesto di debug indietro nel momento in cui è stata chiamata la funzione corrente.<br /><br /> Se si è in modalità debug attivo, questo comando attiva il debug cronologico. Se si passa nuovamente all'interruzione dell'esecuzione originale, il debug cronologico è disattivato e Live debug è attivato.|
@@ -84,7 +84,7 @@ La barra di navigazione consente di spostarsi avanti e indietro tra chiamate ai 
 
 È possibile cercare i metodi solo quando è state abilitate informazioni sulla chiamata di metodo. È possibile cercare la cronologia di IntelliTrace per un metodo o una riga specifica. Durante l'esecuzione del debugger viene interrotto, fare clic con il pulsante destro del mouse all'interno del corpo della funzione per visualizzare il menu di scelta rapida e fare clic su **Cerca questa riga in IntelliTrace** o **Cerca questo metodo in IntelliTrace**.
 
-### <a name="ControlCallData"></a> Controllare quante informazioni di chiamata vengono registrate da IntelliTrace
+### <a name="control-how-much-call-information-intellitrace-records"></a><a name="ControlCallData"></a> Controllare quante informazioni di chiamata vengono registrate da IntelliTrace
 
 Per impostazione predefinita IntelliTrace registra le informazioni per tutti i moduli utilizzati nella soluzione. È possibile disporre delle registrazioni delle informazioni sulle chiamate di IntelliTrace solo per i moduli di interesse. In **Strumenti > Opzioni > IntelliTrace > Moduli** è possibile specificare i moduli da includere o escludere da IntelliTrace. IntelliTrace verrà raccolti solo gli eventi originati da moduli che è stato specificato e le chiamate al metodo che si sono verificati all'interno di moduli che si è interessati.
 
@@ -92,7 +92,7 @@ Per aggiungere più moduli, utilizzare il carattere jolly * all'inizio o alla fi
 
 Provare a ridurre al minimo il numero di moduli. È possibile ottenere prestazioni migliori perché non ci sono meno dati da raccogliere. Si ottiene anche meno rumore nell'interfaccia utente perché non ci sono meno dati passino attraverso.
 
-## <a name="SaveSession"></a>Salva dati IntelliTrace in un fileC#(, Visual Basic C++,)
+## <a name="save-intellitrace-data-to-file-c-visual-basic-c"></a><a name="SaveSession"></a>Salvare i dati IntelliTrace in un file (C#, Visual Basic, C++)
 
 È possibile salvare i dati raccolti da IntelliTrace passando a **Debug > IntelliTrace > Salva la sessione di IntelliTrace** mentre si esegue il debug e l'applicazione è in uno stato di interruzione. La voce di menu è disabilitata e non sarà in grado di salvare i dati che raccolti da IntelliTrace se l'applicazione è ancora in esecuzione o se si interrompe il debug.
 

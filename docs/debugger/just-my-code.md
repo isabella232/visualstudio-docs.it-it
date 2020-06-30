@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e233be301630b00031bb90cd95fc78c2697c4e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348431"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536565"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Esegui il debug solo del codice utente con Just My Code
 
@@ -196,7 +196,7 @@ Un file con *estensione natstepfilter* è un file XML con la sintassi seguente:
 
 <a name="BKMK_JS_User_and_non_user_code"></a>JavaScript Just My Code controlla lo stato di avanzamento e visualizzazione dello stack di chiamate categorizzando il codice in una delle classificazioni seguenti:
 
-|||
+|Classificazione|Descrizione|
 |-|-|
 |**MyCode**|Codice utente che si possiede e si controlla.|
 |**LibraryCode**|Codice non utente dalle librerie usate regolarmente e l'app si basa su per funzionare correttamente (ad esempio, WinJS o jQuery).|
@@ -279,7 +279,7 @@ Le specifiche in questo file sostituiscono le classificazioni predefinite e il *
 
 Le coppie chiave-valore **Eval**, **Function** e **ScriptBlock** determinano come viene classificato il codice generato dinamicamente:
 
-|||
+|Nome|Description|
 |-|-|
 |**Eval**|Script eseguito passando una stringa alla funzione `eval` fornita dall'host. Per impostazione predefinita, lo script Eval viene classificato come **MyCode**.|
 |**Funzione**|Script eseguito passando una stringa al costruttore `Function`. Per impostazione predefinita, lo script Function viene classificato come **LibraryCode**.|
@@ -295,7 +295,7 @@ Le coppie chiave-valore **Eval**, **Function** e **ScriptBlock** determinano com
 
 Le coppie chiave-valore **MyCode**, **Libraries** e **Unrelated** specificano gli URL o i file da includere in una classificazione:
 
-|||
+|Nome|Description|
 |-|-|
 |**MyCode**|Matrice di URL o di file classificati come **MyCode**.|
 |**Raccolte**|Matrice di URL o di file classificati come **LibraryCode**.|

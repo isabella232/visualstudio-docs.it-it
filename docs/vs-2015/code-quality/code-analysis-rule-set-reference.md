@@ -11,22 +11,22 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a3c0b347f186c5adee6cf86a0e1720ebfa80f253
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e480869d5b13ecc051deaa97b0bfd2532519d18f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670107"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535720"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Tabella di riferimento del set di regole di analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando si configura l'analisi del codice per i progetti di codice gestito in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] o [!INCLUDE[vsPro](../includes/vspro-md.md)]you viene visualizzato un elenco di *set di regole*predefiniti. È possibile utilizzare uno dei set di regole standard o personalizzare un set di regole per soddisfare i requisiti del progetto.
+Quando si configura l'analisi del codice per i progetti di codice gestito in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] , [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] o [!INCLUDE[vsPro](../includes/vspro-md.md)] viene visualizzato un elenco di set di *regole*predefiniti. È possibile utilizzare uno dei set di regole standard o personalizzare un set di regole per soddisfare i requisiti del progetto.
 
 ## <a name="available-rule-sets"></a>Set di regole disponibili
  Nella tabella seguente sono elencati i set di regole predefiniti:
 
-|||
+|Elemento|valore|
 |-|-|
 |[Set di regole Tutte le regole](../code-quality/all-rules-rule-set.md)|Questo set di regole contiene tutte le regole. L'esecuzione di questo set di regole può causare la segnalazione di un numero elevato di avvisi. Utilizzare questo set di regole per ottenere una panoramica completa di tutti i problemi del codice. Ciò può essere utile per decidere quale dei set di regole più mirati sono più appropriati per l'esecuzione per i progetti.|
 |[Set di regole base di correttezza per codice gestito](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)|Queste regole sono incentrate sugli errori logici e sugli errori comuni effettuati nell'utilizzo delle API del Framework. Includere questo set di regole per espandersi nell'elenco di avvisi segnalato dalle regole minime consigliate.|
@@ -36,8 +36,8 @@ Quando si configura l'analisi del codice per i progetti di codice gestito in [!I
 |[Set di regole delle Regole di globalizzazione per codice gestito](../code-quality/globalization-rules-rule-set-for-managed-code.md)|Queste regole sono incentrate sui problemi che impediscono la visualizzazione corretta dei dati dell'applicazione quando vengono usati in lingue, impostazioni locali e impostazioni cultura diverse. Includere questo set di regole se l'applicazione è localizzata o globalizzata.|
 |[Set di regole minime gestite per codice gestito](../code-quality/managed-minimun-rules-rule-set-for-managed-code.md)|Queste regole sono incentrate sui problemi più critici del codice per cui l'analisi del codice è la più accurata.  Queste regole sono di numero ridotto e sono progettate solo per l'esecuzione in versioni di Visual Studio limitate.  Usare MinimumRecommendedRules. RuleSet con altre edizioni di Visual Studio.|
 |[Set di regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)|Queste regole sono incentrate sui problemi più critici del codice, inclusi i potenziali problemi di sicurezza, gli arresti anomali dell'applicazione e altri importanti errori di logica e progettazione. È necessario includere questo set di regole in tutti i set di regole personalizzati creati per i progetti.|
-|[Set di regole minime miste](../code-quality/mixed-minimum-rules-rule-set.md)|Queste regole sono incentrate sui problemi più critici C++ nei progetti che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza e arresti anomali dell'applicazione. È necessario includere questo set di regole in qualsiasi set di regole personalizzato creato per C++ i progetti che supportano Common Language Runtime.|
-|[Set di regole consigliate miste](../code-quality/mixed-recommended-rules-rule-set.md)|Queste regole sono incentrate sui problemi più comuni e critici C++ nei progetti che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza, arresti anomali dell'applicazione e altri errori di logica e progettazione importanti. È necessario includere questo set di regole in qualsiasi set di regole personalizzato creato per C++ i progetti che supportano Common Language Runtime.  Questo set di regole è progettato per essere configurato con la Visual Studio Professional Edition e versioni successive.|
+|[Set di regole minime miste](../code-quality/mixed-minimum-rules-rule-set.md)|Queste regole sono incentrate sui problemi più critici nei progetti C++ che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza e arresti anomali dell'applicazione. È necessario includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti C++ che supportano Common Language Runtime.|
+|[Set di regole consigliate miste](../code-quality/mixed-recommended-rules-rule-set.md)|Queste regole sono incentrate sui problemi più comuni e critici nei progetti C++ che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza, arresti anomali dell'applicazione e altri importanti errori di logica e progettazione. È necessario includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti C++ che supportano Common Language Runtime.  Questo set di regole è progettato per essere configurato con la Visual Studio Professional Edition e versioni successive.|
 |[Set di regole minime native](../code-quality/native-minimum-rules-rule-set.md)|Queste regole sono incentrate sui problemi più critici del codice nativo, inclusi i potenziali problemi di sicurezza e gli arresti anomali dell'applicazione. È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.|
 |[Set di regole consigliate native](../code-quality/native-recommended-rules-rule-set.md)|Queste regole sono incentrate sui problemi più critici e comuni del codice nativo, inclusi i potenziali problemi di sicurezza e gli arresti anomali dell'applicazione.  È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.  Questo set di regole è progettato per funzionare con Visual Studio Professional Edition e versioni successive.|
 |[Set di regole di sicurezza per codice gestito](../code-quality/security-rules-rule-set-for-managed-code.md)|Questo set di regole contiene tutte le regole di sicurezza Microsoft. Includere questo set di regole per ottimizzare il numero di potenziali problemi di sicurezza segnalati.|

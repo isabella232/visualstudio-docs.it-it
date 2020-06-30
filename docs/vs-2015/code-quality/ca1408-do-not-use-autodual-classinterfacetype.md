@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3ccd8f9fa201e2cdfabfb7f6354d6df4718c572e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b953a97d557e28cce50f554acc03797d4be38220
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652761"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534875"
 ---
-# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Non utilizzare AutoDual ClassInterfaceType
+# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Non usare AutoDual ClassInterfaceType
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
@@ -33,15 +33,15 @@ ms.locfileid: "72652761"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo visibile Component Object Model (COM) è contrassegnato con l'attributo <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> impostato sul valore `AutoDual` di <xref:System.Runtime.InteropServices.ClassInterfaceType>.
+ Un tipo visibile Component Object Model (COM) è contrassegnato con l' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo impostato sul `AutoDual` valore di <xref:System.Runtime.InteropServices.ClassInterfaceType> .
 
 ## <a name="rule-description"></a>Descrizione della regola
- I tipi che utilizzano un'interfaccia duale consentono l'associazione dei client a uno specifico layout di interfaccia. Eventuali modifiche apportate in una versione futura al layout del tipo o ai tipi base interromperanno l'associazione dei client COM all'interfaccia. Per impostazione predefinita, se non si specifica l'attributo <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>, viene utilizzata un'interfaccia di solo invio.
+ I tipi che utilizzano un'interfaccia duale consentono l'associazione dei client a uno specifico layout di interfaccia. Eventuali modifiche apportate in una versione futura al layout del tipo o ai tipi base interromperanno l'associazione dei client COM all'interfaccia. Per impostazione predefinita, se l' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo non è specificato, viene utilizzata un'interfaccia di solo dispatch.
 
  A meno che non sia contrassegnato diversamente, tutti i tipi non generici pubblici sono visibili a COM; tutti i tipi non pubblici e generici sono invisibili a COM.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare il valore dell'attributo <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> sul valore `None` di <xref:System.Runtime.InteropServices.ClassInterfaceType> e definire in modo esplicito l'interfaccia.
+ Per correggere una violazione di questa regola, modificare il valore dell' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo con il `None` valore di <xref:System.Runtime.InteropServices.ClassInterfaceType> e definire in modo esplicito l'interfaccia.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non eliminare un avviso da questa regola a meno che non si sia certi che il layout del tipo e dei relativi tipi di base non verrà modificato in una versione futura.

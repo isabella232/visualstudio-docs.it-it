@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
-ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
+ms.openlocfilehash: 247567030d47a55b29a3fca901e12948ddd85916
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80892775"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533757"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Aggiungere il supporto di altri linguaggi all'editor di Visual Studio
 
@@ -35,14 +35,43 @@ Alcune funzionalità dell'editor di Visual Studio, ad esempio la colorazione del
 
 Attualmente Visual Studio supporta le funzioni di colorazione della sintassi e di completamento istruzioni per i linguaggi riportati di seguito tramite le [grammatiche TextMate](https://manual.macromates.com/en/language_grammars). Se nella tabella non è presente il linguaggio preferito, tuttavia, non è il caso di preoccuparsi perché è possibile aggiungerlo.
 
-|||||||
-|-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Casa automobilistica|Ruby|TypeScript|YAML|
+
+- Bat
+- F#
+- Java
+- Markdown
+- Rust
+- Visual Basic
+- Clojure
+- Go
+- JavaDoc
+- Objective-C
+- ShaderLab
+- C#
+- CMake
+- Groovy
+- JSON
+- Perl
+- ShellScript
+- Visual C++
+- CoffeeScript
+- HTML
+- LESS
+- Python
+- SQL
+- VBNet
+- CSS
+- INI
+- LUA
+- R
+- Swift
+- XML
+- Docker
+- Jade
+- Casa automobilistica
+- Ruby
+- TypeScript
+- YAML
 
 Oltre alla colorazione della sintassi e al completamento delle istruzioni di base, Visual Studio ha una funzionalità detta [Navigate To](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/) (Passa a). Questa funzionalità consente di cercare rapidamente file di codice, percorsi dei file e simboli di codice. Visual Studio supporta la funzione Navigate To (Passa a) per i linguaggi seguenti.
 
@@ -70,17 +99,17 @@ Visual Studio offre il supporto dei linguaggi nell'editor tramite le [grammatich
 
 Aggiungere le nuove grammatiche TextMate per Visual Studio nella cartella seguente:
 
-*%profiloutente%\\.vs*
+*% UserProfile% \\ . vs\Extensions*
 
 In questo percorso di base aggiungere le cartelle seguenti, se applicabili alla situazione specifica:
 
 |Nome cartella|Descrizione|
 |-----------------|-----------------|
-|\\*\<>del nome della lingua*|Cartella del linguaggio. Sostituire * \<il nome della lingua>* con il nome della lingua. ad esempio, *\Matlab*.|
-|*\Syntaxes*|Cartella della grammatica. Contiene i file *.json* di grammatica per la lingua, ad esempio *Matlab.json*.|
-|*- Frammenti di codice*|Cartella dei frammenti. Contiene frammenti di codice per il linguaggio.|
+|\\*\<language name>*|Cartella del linguaggio. Sostituire *\<language name>* con il nome della lingua. ad esempio, *\Matlab*.|
+|*\Syntaxes*|Cartella della grammatica. Contiene i file Grammar *. JSON* per il linguaggio, ad esempio *Matlab.json*.|
+|*\Snippets*|Cartella dei frammenti. Contiene frammenti di codice per il linguaggio.|
 
-In Windows, *%userprofile%* si risolve nel percorso: *c:\Users\\\<nome utente>*. Se nel sistema non esiste la cartella *Extensions*, sarà necessario crearla. Se la cartella esiste già, verrà nascosta.
+In Windows *% USERPROFILE%* si risolve nel percorso: * \\ \<user name> c:\Users*. Se nel sistema non esiste la cartella *Extensions*, sarà necessario crearla. Se la cartella esiste già, verrà nascosta.
 
 > [!TIP]
 > Se ci sono file aperti nell'editor, sarà necessario chiuderli e riaprirli per vedere l'evidenziazione della sintassi dopo aver aggiunto le grammatiche TextMate.
@@ -92,5 +121,5 @@ Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMa
 - [Aggiungere un'estensione del protocollo di server di linguaggio](../extensibility/adding-an-lsp-extension.md)
 - [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
 - [Procedura dettagliata: Visualizzare il completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)
-- [Codice di esempio: TextMate Grammar](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
-- [Codice di esempio: supporto linguistico personalizzatoExample code: Custom language support](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)
+- [Codice di esempio: grammatica TextMate](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
+- [Esempio di codice: supporto del linguaggio personalizzato](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)

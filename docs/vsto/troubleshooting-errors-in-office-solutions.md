@@ -1,7 +1,7 @@
 ---
 title: Risolvere gli errori nelle soluzioni Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: troubleshooting
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2aa971a79c0b0f5592c0da5c52a457c585bb0f15
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985577"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537319"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Risolvere gli errori nelle soluzioni Office
   Questi problemi possono verificarsi quando si eseguono le attività seguenti durante lo sviluppo di soluzioni Office in Visual Studio:
@@ -34,13 +34,13 @@ ms.locfileid: "72985577"
 
 - [Usare le finestre di progettazione](#designers)
 
-- [Scrivi codice](#code)
+- [Scrittura di codice](#code)
 
-- [Compilare i progetti](#building)
+- [Compila progetti](#building)
 
 - [Debug di progetti](#debugging)
 
-## <a name="creating"></a>Creazione, aggiornamento e apertura di progetti
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Creazione, aggiornamento e apertura di progetti
  Gli errori seguenti possono verificarsi quando si creano o si aprono progetti di Office.
 
 ### <a name="the-project-cannot-be-created"></a>Non è possibile creare il progetto
@@ -84,7 +84,7 @@ ms.locfileid: "72985577"
 
  Dopo aver completato l'aggiornamento del progetto, è possibile disinstallare Visual Studio 2005 Tools per Office Second Edition Runtime dal computer di sviluppo se non viene usato da altre soluzioni Office.
 
-## <a name="designers"></a>Usare le finestre di progettazione
+## <a name="use-the-designers"></a><a name="designers"></a>Usare le finestre di progettazione
  Gli errori seguenti possono verificarsi quando si lavora con la finestra di progettazione di documenti, cartelle di lavoro o fogli di lavoro nei progetti a livello di documento.
 
 ### <a name="designer-failed-to-load-correctly"></a>Impossibile caricare correttamente la finestra di progettazione
@@ -105,7 +105,7 @@ ms.locfileid: "72985577"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Il comando Inserisci clip art non esegue alcuna operazione nella finestra di progettazione di Visual Studio
  Quando Excel o Word è aperto nella finestra di progettazione di Visual Studio, facendo clic sul pulsante **clip art** nella scheda **illustrazioni** della barra multifunzione non viene aperto il riquadro attività **clip art** . Per aggiungere ClipArt, è necessario aprire la copia della cartella di lavoro o del documento che si trova nella cartella principale del progetto (non la copia presente nella cartella *\bin* ) al di fuori di Visual Studio, aggiungere la clip art e quindi salvare la cartella di lavoro o il documento.
 
-## <a name="code"></a>Scrivi codice
+## <a name="write-code"></a><a name="code"></a>Scrivi codice
  Gli errori seguenti possono verificarsi quando si scrive codice nei progetti di Office.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Alcuni eventi degli oggetti di Office non sono accessibili quando si usa C\#
@@ -115,7 +115,7 @@ ms.locfileid: "72985577"
 
  Questo errore indica che si sta tentando di accedere a un evento che ha lo stesso nome di un'altra proprietà o un altro metodo dell'oggetto. Per accedere all'evento, è necessario eseguire il cast dell'oggetto alla relativa *interfaccia eventi*.
 
- I tipi di assembly di interoperabilità primari di Office che dispongono di eventi implementano due interfacce: un'interfaccia principale con tutte le proprietà e i metodi e un'interfaccia eventi che contiene gli eventi esposti dall'oggetto. Queste interfacce di evento usano gli eventi *_Event di*denominazione *della convenzione di*denominazione, ad esempio <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> e <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event>. Se non è possibile accedere a un evento che si prevede di trovare in un oggetto, eseguire il cast dell'oggetto alla relativa interfaccia eventi.
+ I tipi di assembly di interoperabilità primari di Office che dispongono di eventi implementano due interfacce: un'interfaccia principale con tutte le proprietà e i metodi e un'interfaccia eventi che contiene gli eventi esposti dall'oggetto. Queste interfacce di evento usano gli eventi _Event di convenzione di denominazione *ObjectName**n*, ad esempio <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> e <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Se non è possibile accedere a un evento che si prevede di trovare in un oggetto, eseguire il cast dell'oggetto alla relativa interfaccia eventi.
 
  Ad esempio, gli oggetti <xref:Microsoft.Office.Interop.Excel.Application> dispongono di un evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> e una proprietà <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>. Per gestire l'evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>, eseguire il cast di <xref:Microsoft.Office.Interop.Excel.Application> all'interfaccia <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>. L'esempio di codice seguente illustra come eseguire questa operazione in un progetto a livello di documento per Excel.
 
@@ -123,8 +123,8 @@ ms.locfileid: "72985577"
 
  Per ulteriori informazioni sulle interfacce eventi negli [assembly di interoperabilità primari di Office, vedere Panoramica di classi e interfacce negli assembly di interoperabilità primari di Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenet_v40_shortsharepointincludesnet-v40-short-mdmd-or-the-includenet_v45vstoincludesnet-v45-mdmd"></a>Non è possibile fare riferimento alle classi di interoperabilità primario di Office nei progetti destinati al [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o al [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] il codice che fa riferimento a una classe definita in un assembly di interoperabilità primario di Office non verrà compilato per impostazione predefinita. Nelle classi degli assembly di interoperabilità primari viene utilizzata la convenzione di denominazione *ObjectName*Class, ad esempio <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Ad esempio, il codice seguente di un progetto di componente aggiuntivo VSTO di Word non verrà compilato.
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Non è possibile fare riferimento alle classi di interoperabilità primario di Office nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+ Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] il codice che fa riferimento a una classe definita in un assembly di interoperabilità primario di Office non verrà compilato per impostazione predefinita. Nelle classi degli assembly di interoperabilità primari viene utilizzata la convenzione di denominazione *ObjectName*Class, ad esempio <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Ad esempio, il codice seguente di un progetto di componente aggiuntivo VSTO di Word non verrà compilato.
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -138,7 +138,7 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
 
 - Visual Basic: "il riferimento alla classe ' DocumentClass ' non è consentito quando il relativo assembly è collegato con la modalità No-PIA".
 
-- Visual C#: "Impossibile incorporare il tipo di interoperabilità' Microsoft. Office. Interop. Word. DocumentClass '. Utilizzare l'interfaccia applicabile."
+- Visual C#: "Impossibile incorporare il tipo di interoperabilità' Microsoft.Office.Interop.Word.DocumentClass '. Utilizzare l'interfaccia applicabile."
 
   Per risolvere l'errore, modificare il codice in modo che faccia riferimento all'interfaccia corrispondente. Ad esempio, anziché fare riferimento a un oggetto <xref:Microsoft.Office.Interop.Word.DocumentClass>, fare riferimento a un'istanza dell'interfaccia <xref:Microsoft.Office.Interop.Word.Document>.
 
@@ -153,12 +153,12 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  I progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] incorporano automaticamente per impostazione predefinita tutti i tipi di interoperabilità dagli assembly di interoperabilità primari di Office. Questo errore di compilazione si verifica perché la funzionalità dei tipi di interoperabilità incorporati funziona solo con le interfacce e non con le classi. Per altre informazioni sulle interfacce e sulle classi negli [assembly di interoperabilità primari di Office, vedere Panoramica di classi e interfacce negli assembly di interoperabilità primari di Office](/previous-versions/office/office-12/ms247299(v=office.12)). Per ulteriori informazioni sulla funzionalità dei tipi di interoperabilità incorporati nei progetti di Office, vedere [progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="references-to-office-classes-are-not-recognized"></a>I riferimenti alle classi di Office non sono stati riconosciuti
- Alcuni nomi di classi, ad esempio Application, si trovano in più spazi dei nomi, ad esempio <xref:Microsoft.Office.Interop.Word> e <xref:System.Windows.Forms>. Per questo motivo, l'istruzione **Imports**/**using** nella parte superiore dei modelli di progetto include una costante di qualifica a sintassi abbreviata, ad esempio:
+ Alcuni nomi di classi, ad esempio applicazione, si trovano in più spazi dei nomi, ad esempio <xref:Microsoft.Office.Interop.Word> e <xref:System.Windows.Forms> . Per questo motivo, l'istruzione **Imports** / **using** nella parte superiore dei modelli di progetto include una costante di qualifica a sintassi abbreviata, ad esempio:
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
 
- Per questo utilizzo dell'istruzione **Imports**/**using** è necessario distinguere i riferimenti alle classi di Office con il qualificatore Word o Excel, ad esempio:
+ Per questo utilizzo dell'istruzione **Imports** / **using** è necessario distinguere i riferimenti alle classi di Office con il qualificatore Word o Excel, ad esempio:
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Anche se è stato importato lo spazio dei nomi Word o Excel e si ha accesso a tutte le classi al suo interno, è necessario qualificare completamente tutti i tipi con Word o Excel per rimuovere l'ambiguità dello spazio dei nomi.
 
-## <a name="building"></a> Compilare i progetti
+## <a name="build-projects"></a><a name="building"></a> Compilare i progetti
  Gli errori seguenti possono verificarsi quando si compilano progetti di Office.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Impossibile compilare un progetto a livello di documento basato su un documento con autorizzazioni limitate
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Gli errori del compilatore si verificano dopo l'eliminazione di un controllo NamedRange
  Se si elimina un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> da un foglio di lavoro che non è il foglio di lavoro attivo nella finestra di progettazione, il codice generato automaticamente potrebbe non venire rimosso dal progetto e potrebbero verificarsi errori del compilatore. Per assicurarsi che il codice venga rimosso, è consigliabile selezionare sempre il foglio di lavoro contenente il controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> per renderlo attivo prima di eliminare il controllo. Se il codice generato automaticamente non viene eliminato quando si elimina il controllo, è possibile fare in modo che venga eliminato dalla finestra di progettazione attivando il foglio di lavoro e apportando una modifica, in modo che il foglio di lavoro venga contrassegnato come modificato. Quando si ricompila il progetto, il codice viene rimosso.
 
-## <a name="debugging"></a>Debug di progetti
+## <a name="debug-projects"></a><a name="debugging"></a>Debug di progetti
  Gli errori seguenti possono verificarsi quando si esegue il debug di progetti di Office.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>La richiesta di disinstallazione viene visualizzata quando si pubblica e si installa una soluzione nel computer di sviluppo
@@ -197,7 +197,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Se si crea un progetto a livello di documento per Excel o Word in un percorso di rete UNC, è necessario aggiungere il percorso del documento all'elenco di percorsi attendibili in Excel o Word. In caso contrario, la personalizzazione non verrà caricata quando si tenta di eseguire il progetto o il relativo debug in Visual Studio. Per ulteriori informazioni sui percorsi attendibili, vedere [Grant trust to Documents](../vsto/granting-trust-to-documents.md).
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>I thread non vengono arrestati correttamente dopo il debug
- I progetti di Office in Visual Studio seguono una convenzione di denominazione dei thread che consente al debugger di chiudere correttamente il programma. Se si creano thread nella soluzione, è necessario denominare ogni thread con il prefisso VSTA_ per garantire che questi thread vengano gestiti correttamente quando si arresta il debug. Ad esempio, è possibile impostare la proprietà `Name` di un thread che attende un evento di rete per **VSTA_NetworkListener**.
+ I progetti di Office in Visual Studio seguono una convenzione di denominazione dei thread che consente al debugger di chiudere correttamente il programma. Se si creano thread nella soluzione, è necessario denominare ogni thread con il prefisso VSTA_ per garantire che questi thread vengano gestiti correttamente quando si arresta il debug. Ad esempio, è possibile impostare la `Name` proprietà di un thread che attende la **VSTA_NetworkListener**di un evento di rete.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>Non è possibile eseguire o eseguire il debug di alcuna soluzione Office nel computer di sviluppo
  Se non è possibile eseguire o sviluppare un progetto di Office nel computer di sviluppo, potrebbe venire visualizzato il messaggio di errore seguente.
