@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 22c9bac17a957438ee8d2a6f4b634f30604ed1ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4ee33305c1ae0f15e5d8f390a4b65d62c87b6904
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668951"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547940"
 ---
-# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Utilizzare generics dove appropriato
+# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Usare generics dove appropriato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|UseGenericsWhereAppropriate|
 |CheckId|CA1007|
@@ -33,13 +33,13 @@ ms.locfileid: "72668951"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo visibile esternamente contiene un parametro di riferimento di tipo <xref:System.Object?displayProperty=fullName> e l'assembly contenitore ha come destinazione [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+ Un metodo visibile esternamente contiene un parametro di riferimento di tipo <xref:System.Object?displayProperty=fullName> e le destinazioni dell'assembly contenitore [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] .
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un parametro di riferimento è un parametro modificato tramite la parola chiave `ref` (`ByRef` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]). Il tipo di argomento fornito per un parametro di riferimento deve corrispondere esattamente al tipo di parametro di riferimento. Per usare un tipo derivato dal tipo di parametro Reference, è necessario prima eseguire il cast del tipo e assegnarlo a una variabile del tipo di parametro Reference. L'uso di un metodo generico consente di passare al metodo tutti i tipi, soggetti a vincoli, senza prima eseguire il cast del tipo al tipo di parametro di riferimento.
+ Un parametro di riferimento è un parametro modificato tramite la `ref` `ByRef` parola chiave (in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ). Il tipo di argomento fornito per un parametro di riferimento deve corrispondere esattamente al tipo di parametro di riferimento. Per usare un tipo derivato dal tipo di parametro Reference, è necessario prima eseguire il cast del tipo e assegnarlo a una variabile del tipo di parametro Reference. L'uso di un metodo generico consente di passare al metodo tutti i tipi, soggetti a vincoli, senza prima eseguire il cast del tipo al tipo di parametro di riferimento.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rendere generico il metodo e sostituire il parametro <xref:System.Object> usando un parametro di tipo.
+ Per correggere una violazione di questa regola, rendere generico il metodo e sostituire il <xref:System.Object> parametro usando un parametro di tipo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.

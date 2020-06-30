@@ -1,18 +1,18 @@
 ---
 title: 'Procedura dettagliata: debug di un modello di testo che accede a un modello'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f592cfbd46e0f4fc3a64ecaabadf17a6754480c0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e33297bba899c1843b8601c031d7669531a1bd3f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593525"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546900"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: debug di un modello di testo che accede a un modello
 Quando si modificano o si aggiungono modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile che vengano generati errori quando il motore trasforma il modello nel codice sorgente o quando compila il codice generato. Nella procedura dettagliata riportata di seguito vengono illustrate alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.
@@ -42,10 +42,10 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 
 2. Aggiungere un file di testo denominato `DebugTest.tt` al progetto di debug.
 
-3. Verificare che la proprietà **strumento personalizzato** di DebugTest.tt sia impostata su `TextTemplatingFileGenerator`.
+3. Verificare che la proprietà **strumento personalizzato** di DebugTest.tt sia impostata su `TextTemplatingFileGenerator` .
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Direttive di debug che accedono a un modello da un modello di testo
- Prima di poter accedere a un modello dalle istruzioni e dalle espressioni in un modello di testo, è prima necessario chiamare un processore di direttiva generato. La chiamata del processore di direttiva generato rende le classi del modello disponibili per il codice del modello di testo come proprietà. Per altre informazioni, vedere [l'accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md).
+ Prima di poter accedere a un modello dalle istruzioni e dalle espressioni in un modello di testo, è prima necessario chiamare un processore di direttiva generato. La chiamata del processore di direttiva generato rende le classi del modello disponibili per il codice del modello di testo come proprietà. Per altre informazioni, vedere [accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md).
 
  Nelle procedure seguenti si eseguirà il debug di un nome di direttiva errato e di un nome di proprietà non corretto.
 
@@ -93,11 +93,11 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 
      **Il processore denominato ' DebuggingTestLanguageDirectiveProcessor ' non supporta la direttiva denominata ' modelRoot '. La trasformazione non verrà eseguita.**
 
-     In questo caso, la chiamata alla direttiva contiene un nome di direttiva errato. È stato specificato `modelRoot` come nome della direttiva, ma è `DebuggingTestLanguage`il nome della direttiva corretto.
+     In questo caso, la chiamata alla direttiva contiene un nome di direttiva errato. Il nome della direttiva è stato specificato `modelRoot` , ma il nome della direttiva è corretto `DebuggingTestLanguage` .
 
 3. Fare doppio clic sull'errore nella finestra **Elenco errori** per passare al codice.
 
-4. Per correggere il codice, modificare il nome della direttiva in `DebuggingTestLanguage`.
+4. Per correggere il codice, modificare il nome della direttiva in `DebuggingTestLanguage` .
 
      La modifica è evidenziata.
 
@@ -157,13 +157,13 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 
      (C#)
 
-     **Compilazione della trasformazione: Microsoft. VisualStudio. TextTemplating\<GUID >. GeneratedTextTransformation ' non contiene una definizione per ' ExampleModel '**
+     **Compilazione della trasformazione: Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation ' non contiene una definizione per ' ExampleModel '**
 
      (Visual Basic)
 
-     **Compilazione della trasformazione:' ExampleModel ' non è un membro di ' Microsoft. VisualStudio. TextTemplating\<GUID >. GeneratedTextTransformation ".**
+     **Compilazione della trasformazione:' ExampleModel ' non è un membro di ' Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation ".**
 
-     In questo caso, il codice del modello di testo contiene un nome di proprietà non corretto. È stato specificato `ExampleModel` come nome della proprietà, ma il nome della proprietà corretto è `LibraryModel`. È possibile trovare il nome di proprietà corretto nel parametro fornisce, come illustrato nel codice seguente:
+     In questo caso, il codice del modello di testo contiene un nome di proprietà non corretto. È stato specificato `ExampleModel` come nome della proprietà, ma il nome di proprietà corretto è `LibraryModel` . È possibile trovare il nome di proprietà corretto nel parametro fornisce, come illustrato nel codice seguente:
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -171,9 +171,9 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 
 3. Fare doppio clic sull'errore nella finestra Elenco errori per passare al codice.
 
-4. Per correggere il codice, modificare il nome della proprietà in `LibraryModel` nel codice del modello di testo.
+4. Per correggere il codice, impostare il nome della proprietà su `LibraryModel` nel codice del modello di testo.
 
-     Le modifiche vengono evidenziate.
+     Le modifiche sono evidenziate.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>

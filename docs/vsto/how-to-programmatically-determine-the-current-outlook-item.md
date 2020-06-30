@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Determinare a livello di codice elemento Outlook corrente'
+title: "Procedura: determinare l'elemento corrente di Outlook a livello di codice"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94d7e16b011b153a43e3d1666451a90b0e44c8b1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814819"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547160"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procedura: Determinare a livello di codice elemento Outlook corrente
-  Questo esempio viene usato il `Explorer.SelectionChange` evento per visualizzare il nome della cartella corrente e alcune informazioni sull'elemento selezionato. Il codice consente di visualizzare l'elemento selezionato.
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procedura: determinare l'elemento corrente di Outlook a livello di codice
+  In questo esempio viene usato l' `Explorer.SelectionChange` evento per visualizzare il nome della cartella corrente e alcune informazioni sull'elemento selezionato. Il codice Visualizza quindi l'elemento selezionato.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "62814819"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
-- Appuntamento, contatto e gli elementi di posta elettronica in Microsoft Office Outlook.
+- Gli elementi di appuntamento, di contatto e di posta elettronica in Microsoft Office Outlook.
 
 ## <a name="see-also"></a>Vedere anche
-- [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)
-- [Procedura: Recuperano una cartella in base al nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Procedura: Eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Panoramica del modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)
+- [Procedura: recuperare una cartella per nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Procedura: eseguire la ricerca di un contatto specifico a livello di codice](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

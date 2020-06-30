@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 92bbfc3612a34d354dee6288d66f2cf96c1e107c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289391"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547615"
 ---
 # <a name="user-accounts-and-updates"></a>Account utente e aggiornamenti
 
@@ -27,7 +27,7 @@ Visual Studio è un ambiente connesso. Accedendovi è possibile accedere a tutti
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-|||
+|Titolo|Descrizione|
 |-|-|
 |[Accesso a Visual Studio](../ide/signing-in-to-visual-studio.md)|Viene descritto come e perché accedere a Visual Studio.|
 |[Gestire più account utente](../ide/work-with-multiple-user-accounts.md)|Viene descritto come associare più account Microsoft e/o account di lavoro o di un istituto di istruzione per consentire l'accesso alle risorse e ai servizi da tutti gli account.|
@@ -35,6 +35,6 @@ Visual Studio è un ambiente connesso. Accedendovi è possibile accedere a tutti
 |[Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md)|Viene descritto come sbloccare Visual Studio in vari scenari.|
 |[Notifiche](../ide/visual-studio-notifications.md)|Viene descritto come Visual Studio invia una notifica quando è disponibile un aggiornamento per un componente, ad esempio SDK o Visual Studio.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [IDE di Visual Studio](../ide/visual-studio-ide.md)

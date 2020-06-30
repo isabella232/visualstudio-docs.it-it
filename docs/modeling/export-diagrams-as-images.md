@@ -1,7 +1,7 @@
 ---
 title: Esportare diagrammi come immagini
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
@@ -11,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b7839985871333bb120057efde92e58baebdec
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596619"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547602"
 ---
 # <a name="export-diagrams-as-images"></a>Esportare diagrammi come immagini
 
-In Visual Studio è possibile salvare i diagrammi di modellazione in formati di sola lettura, in modo che sia possibile condividerli con parti interessate, utenti o membri del team di progetto che non utilizzano la stessa versione di Visual Studio.
+In Visual Studio, è possibile salvare diagrammi di modellazione in formati di sola lettura, per poterli condividere con parti interessate, utenti o membri del team di progetto che non usano la stessa versione di Visual Studio.
 
 Per visualizzare le edizioni di Visual Studio che supportano questa funzionalità, vedere [supporto dell'edizione per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -38,7 +38,7 @@ Per visualizzare le edizioni di Visual Studio che supportano questa funzionalit�
 
 2. Nell'elenco **nome** selezionare **Microsoft XPS Document Writer**, quindi fare clic su **OK**.
 
-3. Nella finestra di dialogo **Salva file con nome** , salvare il file come file di **documento XPS (\*. Xps)** .
+3. Nella finestra di dialogo **Salva file con nome** , salvare il file come file di **documento XPS ( \* XPS)** .
 
 ## <a name="see-also"></a>Vedere anche
 

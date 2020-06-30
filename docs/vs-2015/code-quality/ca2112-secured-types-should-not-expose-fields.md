@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c91a7c9833d3d9d5ae283c28ae4d437bd07734
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4267b4f55f78106a4d1e8f3b2f9b296be9ddf618
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658753"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546536"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: I tipi protetti non devono esporre campi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|SecuredTypesShouldNotExposeFields|
 |CheckId|CA2112|
@@ -45,7 +45,7 @@ ms.locfileid: "72658753"
  Per motivi di sicurezza e per una progettazione corretta, è consigliabile correggere le violazioni rendendo i campi pubblici non pubblici. È possibile eliminare un avviso da questa regola se il campo non contiene informazioni che devono rimanere protette e non si basano sul contenuto del campo.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente è costituito da un tipo di libreria (`SecuredTypeWithFields`) con campi non protetti, un tipo (`Distributor`) che può creare istanze del tipo di libreria e le istanze passate erroneamente ai tipi non dispongono dell'autorizzazione per crearle e del codice dell'applicazione in grado di leggere un i campi dell'istanza, anche se non dispongono dell'autorizzazione che protegge il tipo.
+ L'esempio seguente è costituito da un tipo di libreria ( `SecuredTypeWithFields` ) con campi non protetti, un tipo ( `Distributor` ) in grado di creare istanze del tipo di libreria e le istanze passate erroneamente ai tipi non dispongono dell'autorizzazione per crearle e del codice dell'applicazione in grado di leggere i campi di un'istanza anche se non dispone dell'autorizzazione che protegge il tipo.
 
  Il codice della libreria seguente viola la regola.
 
@@ -64,9 +64,9 @@ ms.locfileid: "72658753"
  Questo esempio produce il seguente output:
 
  **Creazione di un'istanza di SecuredTypeWithFields.** 
-**campi di tipo protetto: 22, 33** 
-**il campo del tipo protetto...** 
-**campi oggetto memorizzati nella cache: 99, 33**
+ **Campi di tipo protetto: 22, 33** 
+ **Modifica del campo del tipo protetto in corso...** 
+ **Campi oggetto memorizzati nella cache: 99, 33**
 ## <a name="related-rules"></a>Regole correlate
  [CA1051: Non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 

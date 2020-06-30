@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: feb50f576fbff656acaa10b70bb4d8adbca1d6c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 180a8d6bbc7f035fa0ae2eeafaa4e2c884cddc8d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602386"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547329"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: I tipi visibili a COM devono essere creabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
@@ -38,12 +38,12 @@ ms.locfileid: "72602386"
 ## <a name="rule-description"></a>Descrizione della regola
  Non è possibile creare un tipo senza un costruttore predefinito pubblico da parte dei client COM. Tuttavia, il tipo è ancora accessibile ai client COM se è disponibile un altro metodo per creare il tipo e passarlo al client, ad esempio tramite il valore restituito di una chiamata al metodo.
 
- La regola ignora i tipi derivati da <xref:System.Delegate?displayProperty=fullName>.
+ La regola ignora i tipi derivati da <xref:System.Delegate?displayProperty=fullName> .
 
  Per impostazione predefinita, i seguenti elementi sono visibili a COM: assembly, tipi pubblici, membri di istanze pubbliche nei tipi pubblici e tutti i membri dei tipi di valore pubblici.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere un costruttore predefinito pubblico o rimuovere il <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> dal tipo.
+ Per correggere una violazione di questa regola, aggiungere un costruttore predefinito pubblico o rimuovere <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> dal tipo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola se vengono fornite altre modalità per creare e passare l'oggetto al client COM.

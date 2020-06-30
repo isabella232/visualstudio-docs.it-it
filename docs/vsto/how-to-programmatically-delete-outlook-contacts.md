@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di codice eliminare contatti di Outlook'
+title: 'Procedura: eliminare contatti di Outlook a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55ee5698ce1cb36a79a596124dedd681e6da4bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4412c86652d08fb1c415b4753bfb18a903a0b0d9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814625"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545938"
 ---
-# <a name="how-to-programmatically-delete-outlook-contacts"></a>Procedura: A livello di codice eliminare contatti di Outlook
+# <a name="how-to-programmatically-delete-outlook-contacts"></a>Procedura: eliminare contatti di Outlook a livello di codice
   In questo esempio viene eliminato un contatto. L'esempio presuppone che un contatto denominato "Armando Pinto" esista nella cartella **Contatti** .
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -30,6 +30,6 @@ ms.locfileid: "62814625"
  [!code-csharp[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con gli elementi di contatto](../vsto/working-with-contact-items.md)
-- [Procedura: Eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
-- [Procedura: Accedere a livello di codice ai contatti di Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Usare gli elementi di contatto](../vsto/working-with-contact-items.md)
+- [Procedura: eseguire la ricerca di un contatto specifico a livello di codice](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Procedura: accedere ai contatti di Outlook a livello di codice](../vsto/how-to-programmatically-access-outlook-contacts.md)

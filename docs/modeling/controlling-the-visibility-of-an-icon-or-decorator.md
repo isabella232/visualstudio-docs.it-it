@@ -1,18 +1,18 @@
 ---
 title: Controllo della visibilità di un'icona o di un elemento Decorator
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748493"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546644"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
 Un *elemento Decorator* è un'icona o una riga di testo visualizzata in una forma in un linguaggio specifico di dominio (DSL). È possibile far apparire l'elemento Decorator e scomparire a seconda dello stato delle proprietà nel modello. Ad esempio, in una forma che rappresenta una persona, è possibile che vengano visualizzate icone diverse in base al sesso, al numero di elementi figlio e così via.
@@ -58,13 +58,13 @@ Un *elemento Decorator* è un'icona o una riga di testo visualizzata in una form
 
 1. Aggiungere una proprietà di dominio calcolato alla classe di dominio. Nella finestra **Proprietà** impostare i valori seguenti:
 
-     **Navigable =** `False` **: nasconde la proprietà dall'utente**
+     **Esplorabile =** `False` **-la proprietà viene nascosta dall'utente**    
 
-     **Kind =** `Calculated` **: indica che verrà fornito codice per il calcolo del valore**
+     **Tipo =** `Calculated` **-questo significa che verrà fornito codice per il calcolo del valore**    
 
      **Nome** , ad esempio **DecoratorControl**
 
-     **Digitare**  =  `Boolean`
+     **Tipo** = `Boolean`
 
      Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -76,7 +76,7 @@ Un *elemento Decorator* è un'icona o una riga di testo visualizzata in una form
 
     3. In **Proprietà filtro**selezionare la proprietà del controllo **DecoratorControl**.
 
-    4. In **voci di visibilità**immettere `True`.
+    4. In **voci di visibilità**immettere `True` .
 
 3. Fare clic su **trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni** .
 
@@ -88,7 +88,7 @@ Un *elemento Decorator* è un'icona o una riga di testo visualizzata in una form
 
 6. Si noti lo spazio dei nomi, la classe e il metodo mancanti.  Ad esempio, Company. FamilyTree. Person. GetDecoratorControlValue ().
 
-7. In un file di codice separato scrivere una definizione di classe parziale che contiene il metodo mancante. Esempio:
+7. In un file di codice separato scrivere una definizione di classe parziale che contiene il metodo mancante. Ad esempio:
 
     ```
     namespace Company.FamilyTree

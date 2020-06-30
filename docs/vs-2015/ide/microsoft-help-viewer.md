@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 14bae318e052d0c1eb0e23638c0ad78b70e62f7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad2a26e36c83c4a3b3ad051504bc3944663ee2ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670417"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544976"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "72670417"
 > [!WARNING]
 > Quando si installa Visual Studio, è possibile ottenere Help Viewer. Per iniziare a leggere gli argomenti della Guida in Help Viewer anziché nel sito di download di MSDN, accedere al menu **Guida** di Visual Studio, selezionare **Imposta preferenza Guida** e selezionare **Avvia in Help Viewer**. Gli argomenti di aiuto della guida non in linea per una data versione di Visual Studio sono disponibili solo dopo il rilascio finale di tale versione.
 
- È possibile effettuare le seguenti operazioni:
+ È possibile eseguire le operazioni seguenti:
 
 - Cercare e scaricare set di contenuti, definiti anche libri.
 
@@ -50,7 +50,7 @@ ms.locfileid: "72670417"
 ## <a name="navigating-the-help-viewer"></a>Navigazione in Help Viewer
  È possibile trovare informazioni nel contenuto installato usando le schede di navigazione, visualizzare il contenuto installato nella scheda o nelle schede dell'argomento e gestire il contenuto usando la scheda **Gestisci contenuto** . È anche possibile eseguire ulteriori attività usando i pulsanti sulla barra degli strumenti e trovare altre informazioni nell'angolo inferiore destro della finestra.
 
-|||
+|Scenario|Descrizione|
 |-|-|
 |Navigazione|Usare la scheda **Sommario** per visualizzare il contenuto installato sotto forma di gerarchi e specificare i criteri per filtrare i titoli visualizzati.<br /><br /> Usare la scheda **Cerca** per cercare i termini in tutto il contenuto, inclusi il codice e i titoli degli argomenti.<br /><br /> Usare la scheda **Indice** per eseguire ricerche nell'indice, specificare i criteri per filtrare le voci e specificare che le voci di indice contengano o inizino con il testo desiderato.<br /><br /> Usare la scheda **Preferiti** per salvare collegamenti ad argomenti visualizzati frequentemente e visualizzare un elenco degli ultimi argomenti visitati.|
 |Visualizzazione degli argomenti|Ogni argomento viene visualizzato in una scheda ed è possibile aprire più argomenti contemporaneamente.|

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di programmazione creare cartelle personalizzate'
+title: 'Procedura: creare elementi di cartelle personalizzate a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ author: John-Hart
 ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: f10bb578d2d83c6e3a07477078245f281e4e3820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 652768fa23902722a9b071a4ad12de4cbf774ab6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575065"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546029"
 ---
-# <a name="how-to-programmatically-create-custom-folder-items"></a>Procedura: A livello di programmazione creare cartelle personalizzate
-  Questo esempio crea una nuova cartella in Microsoft Office Outlook. Il nome dell'utente che ha effettuato l'accesso viene usato per il nome della cartella.
+# <a name="how-to-programmatically-create-custom-folder-items"></a>Procedura: creare elementi di cartelle personalizzate a livello di codice
+  In questo esempio viene creata una nuova cartella in Microsoft Office Outlook. Il nome dell'utente che ha effettuato l'accesso viene usato per il nome della cartella.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -28,6 +28,6 @@ ms.locfileid: "62575065"
  [!code-csharp[Trin_OL_CustFolderItem#1](../vsto/codesnippet/CSharp/Trin_OL_CustFolderItem/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Con le cartelle di lavoro](../vsto/working-with-folders.md)
-- [Procedura: A livello di codice aggiungere una voce ai contatti di Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
-- [Procedura: Creazione di appuntamenti a livello di codice](../vsto/how-to-programmatically-create-appointments.md)
+- [Usare le cartelle](../vsto/working-with-folders.md)
+- [Procedura: aggiungere una voce ai contatti di Outlook a livello di codice](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [Procedura: creare appuntamenti a livello di codice](../vsto/how-to-programmatically-create-appointments.md)

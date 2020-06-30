@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Creare nuove cartelle di lavoro a livello di codice'
+title: 'Procedura: creare nuove cartelle di lavoro a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 030bc801399ddcc73f145c0b45ca065c9a9ecc7a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a23f4b089d580d482193d278f22e4990d343097
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251882"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545977"
 ---
-# <a name="how-to-programmatically-create-new-workbooks"></a>Procedura: Creare nuove cartelle di lavoro a livello di codice
+# <a name="how-to-programmatically-create-new-workbooks"></a>Procedura: creare nuove cartelle di lavoro a livello di codice
   Una cartella di lavoro creata a livello di codice costituisce un oggetto <xref:Microsoft.Office.Interop.Excel.Workbook> nativo e non un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook>.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -41,9 +41,9 @@ ms.locfileid: "71251882"
 - [Estendi i documenti di Word e le cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Utilizzare le cartelle di lavoro](../vsto/working-with-workbooks.md)
-- [Procedura: Aprire cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-open-workbooks.md)
-- [Procedura: Salvare le cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-save-workbooks.md)
-- [Procedura: Chiudere le cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-close-workbooks.md)
+- [Procedura: aprire cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-open-workbooks.md)
+- [Procedura: salvare cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-save-workbooks.md)
+- [Procedura: chiudere cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-close-workbooks.md)
 - [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)

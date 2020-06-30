@@ -15,17 +15,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d7ccfbe863e010b4dcf8a9d1b442c9bcdba6822e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01f2ef59ceb6d10cc33276fdd3e5388f39175f8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661132"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545301"
 ---
-# <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitare campi privati non utilizzati
+# <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitare campi privati non usati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
@@ -47,8 +47,8 @@ ms.locfileid: "72661132"
 ## <a name="related-rules"></a>Regole correlate
  [CA1812: Evitare classi interne prive di istanze](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Rivedere i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Controllare i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Rimuovere variabili locali non usate](../code-quality/ca1804-remove-unused-locals.md)
 
  [CA1811: Evitare il codice privato non chiamato](../code-quality/ca1811-avoid-uncalled-private-code.md)

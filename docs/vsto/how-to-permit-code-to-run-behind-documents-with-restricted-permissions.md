@@ -1,7 +1,7 @@
 ---
-title: Consentire l'esecuzione dietro docs con autorizzazioni limitate codice
+title: Consentire l'esecuzione del codice dietro i documenti con autorizzazioni limitate
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,39 +17,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32e42954958fda71d54c3c0ac2685928644e7461
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 15cfb7ebf2f4f71e892820206f0dd1d006639992
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402252"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547511"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice
-  È possibile usare la funzionalità Information Rights Management (IRM) di Microsoft Office per limitare le autorizzazioni a un documento o cartella di lavoro. Per impostazione predefinita, il codice dietro a un documento con limitazioni di Microsoft Office Word o una cartella di lavoro di Microsoft Office Excel non è consentito per l'esecuzione. È possibile modificare l'impostazione predefinita, in modo che le estensioni di codice gestito possono accedere il modello a oggetti e la soluzione funzionerà.
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedura: consentire l'esecuzione del codice dietro i documenti con autorizzazioni limitate
+  È possibile utilizzare la funzionalità Information Rights Management (IRM) di Microsoft Office per limitare le autorizzazioni a un documento o a una cartella di lavoro. Per impostazione predefinita, non è consentita l'esecuzione del codice sottostante a un documento Microsoft Office Word con restrizioni o Microsoft Office cartella di lavoro di Excel. È possibile modificare l'impostazione predefinita in modo che le estensioni del codice gestito possano accedere al modello a oggetti e la soluzione funzionerà.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- È necessario essere l'autore del documento o cartella di lavoro o avere accesso completo sia in grado di modificare le impostazioni di autorizzazione.
+ Per modificare le impostazioni delle autorizzazioni, è necessario essere l'autore del documento o della cartella di lavoro oppure disporre di un accesso controllo completo.
 
-## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Per consentire l'esecuzione dietro i documenti con autorizzazioni limitate del codice
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Per consentire l'esecuzione del codice dietro i documenti con autorizzazioni limitate
 
-1. Aprire il documento o cartella di lavoro in Word o Excel.
+1. Aprire il documento o la cartella di lavoro in Word o Excel.
 
-2. Fare clic sul **File** scheda, scegliere **Prepare**, scegliere **limita le autorizzazioni**, quindi fare clic su **accesso limitato**.
+2. Fare clic sulla scheda **file** , scegliere **prepara**, scegliere **limita autorizzazione**e quindi fare clic su **accesso limitato**.
 
    > [!NOTE]
-   > Al primo uso, viene chiesto di installare il client Windows Rights Management. Dopo aver installato il client, si potrebbe essere necessario ripetere questi passaggi.
+   > Al primo utilizzo, viene richiesto di installare il client Windows Rights Management. Dopo aver installato il client, potrebbe essere necessario ripetere i passaggi.
 
-3. Nel **l'autorizzazione** finestra di dialogo **Limita autorizzazioni per documento**e quindi fare clic su **altre opzioni**.
+3. Nella finestra di dialogo **autorizzazione** selezionare **limita autorizzazione al documento**e quindi fare clic su **altre opzioni**.
 
-4. Sotto **autorizzazioni aggiuntive per gli utenti**, selezionare **accedere al contenuto a livello di programmazione**.
+4. In **autorizzazioni aggiuntive per gli utenti**selezionare **accedi al contenuto a livello di codice**.
 
-   Word o Excel verrà consentono l'accesso a livello di codice per il modello a oggetti.
+   Word o Excel consentirà l'accesso programmatico al modello a oggetti.
 
 ## <a name="see-also"></a>Vedere anche
-- [Information rights management e panoramica sulle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [Protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
-- [Password di protezione nei documenti di Office](../vsto/password-protection-on-office-documents.md)
-- [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
-- [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)
+- [Panoramica di Information Rights Management e delle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
+- [Protezione delle password nei documenti di Office](../vsto/password-protection-on-office-documents.md)
+- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
+- [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)

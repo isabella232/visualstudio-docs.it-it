@@ -1,5 +1,5 @@
 ---
-title: 'CA1700: non assegnare un nome ai &#39;valori&#39; enum riservati | Microsoft Docs'
+title: 'CA1700: non denominare i valori enum &#39;&#39; riservata | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9b5ddeb77a255bcfab121746cd8748c6fcb1f113
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 57f2a2e5959860a99a921101ff5782f9bce9ace3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669310"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545652"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: non assegnare un nome ai &#39;valori enum riservati&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: non denominare i valori enum &#39;riservato&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
 |CheckId|CA1700|
@@ -40,11 +40,11 @@ ms.locfileid: "72669310"
 
  Anziché utilizzare un membro riservato, aggiungere un nuovo membro all'enumerazione nella versione futura. Nella maggior parte dei casi l'aggiunta del nuovo membro non è una modifica di rilievo, purché l'aggiunta non provochi la modifica dei valori dei membri originali.
 
- In un numero limitato di casi l'aggiunta di un membro è una modifica di rilievo anche quando i membri originali mantengono i valori originali. In primo luogo, il nuovo membro non può essere restituito da percorsi di codice esistenti senza che i chiamanti che usano un'istruzione `switch` (`Select` nell'[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) sul valore restituito che include l'intero elenco di membri e che generano un'eccezione nel caso predefinito. Un problema secondario è che il codice client potrebbe non gestire la modifica del comportamento dai metodi di reflection, ad esempio <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. Di conseguenza, se il nuovo membro deve essere restituito da metodi esistenti o se si verifica un'incompatibilità dell'applicazione nota a causa di un utilizzo ribasso della reflection, l'unica soluzione che non causa interruzioni è:
+ In un numero limitato di casi l'aggiunta di un membro è una modifica di rilievo anche quando i membri originali mantengono i valori originali. In primo luogo, il nuovo membro non può essere restituito da percorsi di codice esistenti senza i chiamanti che usano un' `switch` `Select` istruzione (in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) sul valore restituito che include l'intero elenco di membri e che generano un'eccezione nel caso predefinito. Un problema secondario è che il codice client potrebbe non gestire la modifica del comportamento da metodi di reflection quali <xref:System.Enum.IsDefined%2A?displayProperty=fullName> . Di conseguenza, se il nuovo membro deve essere restituito da metodi esistenti o se si verifica un'incompatibilità dell'applicazione nota a causa di un utilizzo ribasso della reflection, l'unica soluzione che non causa interruzioni è:
 
 1. Aggiungere una nuova enumerazione che contiene i membri originali e nuovi.
 
-2. Contrassegnare l'enumerazione originale con l'attributo <xref:System.ObsoleteAttribute?displayProperty=fullName>.
+2. Contrassegnare l'enumerazione originale con l' <xref:System.ObsoleteAttribute?displayProperty=fullName> attributo.
 
    Seguire la stessa procedura per qualsiasi tipo o membro visibile esternamente che espone l'enumerazione originale.
 
@@ -59,8 +59,8 @@ ms.locfileid: "72669310"
 
  [CA1712: Non usare nomi di tipo come prefisso nei valori di enumerazione](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
- [CA1028: L'archivio di enum deve essere Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+ [CA1028: Le risorse di archiviazione dell'enumerazione devono essere Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
- [CA1008: Gli enum devono avere valore zero](../code-quality/ca1008-enums-should-have-zero-value.md)
+ [CA1008: Le enumerazioni devono avere valore zero](../code-quality/ca1008-enums-should-have-zero-value.md)
 
  [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

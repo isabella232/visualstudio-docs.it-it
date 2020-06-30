@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 21d13611a3c4dd11eb691c746f8746347fb9a83b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84809341d7898aeb3defe0447f2a2f1142eb460a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661977"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546627"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>Ca1025: Sostituire gli argomenti ripetitivi con una matrice di parametri
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Sostituire gli argomenti ripetitivi con una matrice di parametri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
@@ -36,7 +36,7 @@ ms.locfileid: "72661977"
  Un metodo pubblico o protetto in un tipo pubblico ha più di tre parametri e gli ultimi tre parametri sono dello stesso tipo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Usare una matrice di parametri anziché gli argomenti ripetuti quando il numero esatto di argomenti è sconosciuto e gli argomenti della variabile sono dello stesso tipo oppure possono essere passati come lo stesso tipo. Ad esempio, il metodo <xref:System.Console.WriteLine%2A> fornisce un overload di utilizzo generico che utilizza una matrice di parametri per accettare un numero qualsiasi di argomenti di <xref:System.Object>.
+ Usare una matrice di parametri anziché gli argomenti ripetuti quando il numero esatto di argomenti è sconosciuto e gli argomenti della variabile sono dello stesso tipo oppure possono essere passati come lo stesso tipo. Ad esempio, il <xref:System.Console.WriteLine%2A> metodo fornisce un overload di utilizzo generico che usa una matrice di parametri per accettare un numero qualsiasi di <xref:System.Object> argomenti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, sostituire gli argomenti ripetuti con una matrice di parametri.

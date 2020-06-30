@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di programmazione salvare cartelle di lavoro'
+title: 'Procedura: salvare cartelle di lavoro a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419477"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547082"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>Procedura: A livello di programmazione salvare cartelle di lavoro
+# <a name="how-to-programmatically-save-workbooks"></a>Procedura: salvare cartelle di lavoro a livello di codice
   Una cartella di lavoro può essere salvata in più modi, ad esempio senza modificare il percorso. Se si tratta del primo salvataggio della cartella di lavoro, è necessario specificare un percorso. Se non viene specificato un percorso esplicito, Microsoft Office Excel salva il file nella cartella corrente con il nome assegnato al momento della creazione. È anche possibile salvare una copia della cartella di lavoro senza modificare la cartella di lavoro aperta in memoria.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63419477"
  È possibile salvare la cartella di lavoro specificata in un nuovo percorso o con un nuovo nome, specificando eventualmente un formato di file, una password, una modalità di accesso e altre opzioni.
 
 > [!NOTE]
-> È possibile impostare il <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> proprietà **False** prima di salvare la cartella di lavoro con un nuovo percorso poiché per il salvataggio in alcuni formati necessaria l'interazione. Impostando questa proprietà su **False** , in Excel usare tutti i valori predefiniti.
+> Potrebbe essere necessario impostare la <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> proprietà su **false** prima di salvare la cartella di lavoro con un nuovo percorso perché il salvataggio in alcuni formati richiede l'interazione. Se si imposta questa proprietà su **false** , Excel utilizzerà tutti i valori predefiniti.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Per salvare una cartella di lavoro associata a una personalizzazione a livello di documento
 
@@ -62,7 +62,7 @@ ms.locfileid: "63419477"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#4)]
 
-## <a name="save-a-copy-of-the-workbook"></a>Salvare una copia della cartella di lavoro
+## <a name="save-a-copy-of-the-workbook"></a>Salva una copia della cartella di lavoro
  È possibile salvare una copia della cartella di lavoro in un file senza modificare la cartella di lavoro aperta in memoria. Questa operazione è utile per creare una copia di backup senza modificare il percorso della cartella di lavoro.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Per salvare una cartella di lavoro associata a una personalizzazione a livello di documento
@@ -80,12 +80,12 @@ ms.locfileid: "63419477"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]
 
 ## <a name="robust-programming"></a>Programmazione efficiente
- Se si annulla in modo interattivo uno dei metodi usati per salvare o copiare la cartella di lavoro, viene generato un errore di run-time nel codice. Ad esempio, se la routine chiama il <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> metodo ma non non disabilitati i prompt da Excel, e l'utente fa clic su **annullare** quando richiesto, Excel genera un errore di run-time.
+ Se si annulla in modo interattivo uno dei metodi usati per salvare o copiare la cartella di lavoro, viene generato un errore di run-time nel codice. Se, ad esempio, la routine chiama il <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> Metodo ma non disattiva i prompt da Excel e l'utente fa clic su **Annulla** quando richiesto, Excel genera un errore di run-time.
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con le cartelle di lavoro](../vsto/working-with-workbooks.md)
+- [Utilizzare le cartelle di lavoro](../vsto/working-with-workbooks.md)
 - [Elemento host Workbook](../vsto/workbook-host-item.md)
-- [Procedura: A livello di programmazione chiudere cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md)
-- [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Procedura: chiudere cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-close-workbooks.md)
+- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)
+- [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)

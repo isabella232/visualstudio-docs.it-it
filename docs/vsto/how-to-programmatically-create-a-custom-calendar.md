@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Creare a livello di codice un calendario personalizzato'
+title: 'Procedura: creare un calendario personalizzato a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 653340d3a682664670998c874344bfc931105892
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575221"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546055"
 ---
-# <a name="how-to-programmatically-create-a-custom-calendar"></a>Procedura: Creare a livello di codice un calendario personalizzato
-  Questo esempio crea una nuova cartella Calendario denominata **PersonalCalendar**, quindi crea un nuovo elemento appuntamento e lo aggiunge alla cartella Calendario. Il codice viene quindi visualizzata la cartella Calendario.
+# <a name="how-to-programmatically-create-a-custom-calendar"></a>Procedura: creare un calendario personalizzato a livello di codice
+  In questo esempio viene creata una nuova cartella Calendar denominata **PersonalCalendar**, quindi viene creato un nuovo elemento appuntamento e viene aggiunto alla cartella Calendar. Il codice Visualizza quindi la cartella Calendar.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,6 +30,6 @@ ms.locfileid: "62575221"
  [!code-csharp[Trin_OL_CustomCalendar#1](../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con gli elementi del calendario](../vsto/working-with-calendar-items.md)
-- [Procedura: Creazione di appuntamenti a livello di codice](../vsto/how-to-programmatically-create-appointments.md)
-- [Procedura: Creazione di una convocazione riunione a livello di codice](../vsto/how-to-programmatically-create-a-meeting-request.md)
+- [Usare gli elementi del calendario](../vsto/working-with-calendar-items.md)
+- [Procedura: creare appuntamenti a livello di codice](../vsto/how-to-programmatically-create-appointments.md)
+- [Procedura: creare una richiesta di riunione a livello di codice](../vsto/how-to-programmatically-create-a-meeting-request.md)

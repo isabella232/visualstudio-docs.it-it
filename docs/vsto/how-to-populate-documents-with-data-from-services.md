@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: popolare documenti con dati da servizi'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f53000f7d6aa8bdd8261bbe5658607918b6b449
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985875"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547147"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Procedura: popolare documenti con dati da servizi
 
@@ -45,7 +45,7 @@ L'esempio seguente mostra come aggiungere controlli con associazione ai dati ai 
 
      I metodi usati dipendono dalle offerte del servizio Web.
 
-6. Assegnare la risposta ai dati dal servizio Web alla proprietà <xref:System.Windows.Forms.BindingSource.DataSource%2A> della <xref:System.Windows.Forms.BindingSource>.
+6. Assegnare la risposta ai dati dal servizio Web alla <xref:System.Windows.Forms.BindingSource.DataSource%2A> proprietà di <xref:System.Windows.Forms.BindingSource> .
 
 Quando si esegue il progetto, i controlli visualizzano il primo record nell'origine dati. È possibile abilitare lo scorrimento dei record gestendo gli eventi di valuta tramite gli oggetti in <xref:System.Windows.Forms.BindingSource>.
 

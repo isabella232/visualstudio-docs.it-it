@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Nascondere i fogli di lavoro a livello di codice'
+title: 'Procedura: nascondere i fogli di programmazione a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1fca54350900b2ed252efc324308d1168c6da53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83cf1f63a67525dca4cf9dbb5a4916da5d70b4ce
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812469"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547407"
 ---
-# <a name="how-to-programmatically-hide-worksheets"></a>Procedura: Nascondere i fogli di lavoro a livello di codice
+# <a name="how-to-programmatically-hide-worksheets"></a>Procedura: nascondere i fogli di programmazione a livello di codice
   È possibile mostrare o nascondere qualsiasi foglio di lavoro da una cartella di lavoro. Per nascondere un foglio di lavoro, usare l'elemento host Worksheet o accedere al foglio di lavoro usando la raccolta Sheets della cartella di lavoro.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="use-the-worksheet-host-item"></a>Usare l'elemento host foglio di lavoro
+## <a name="use-the-worksheet-host-item"></a>Usare l'elemento host Worksheet
  Se il foglio di lavoro è stato aggiunto in fase di progettazione in una personalizzazione a livello di documento, per nasconderlo usare la proprietà <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> .
 
 ### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>Per nascondere un foglio di lavoro usando un elemento host Worksheet
@@ -38,7 +38,7 @@ ms.locfileid: "62812469"
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Usare la raccolta Sheets della cartella di lavoro di Excel
  Accedere ai fogli di lavoro mediante la raccolta <xref:Microsoft.Office.Interop.Excel.Sheets> di Microsoft Office Excel nei casi seguenti:
 
-- Si desidera nascondere un foglio di lavoro in un componente aggiuntivo VSTO.
+- Si vuole nascondere un foglio di un foglio di un componente aggiuntivo VSTO.
 
 - Se il foglio di lavoro che si vuole nascondere è stato creato in fase di esecuzione in una personalizzazione a livello di documento
 
@@ -51,8 +51,8 @@ ms.locfileid: "62812469"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: A livello di codice eliminare fogli di lavoro dalle cartelle di lavoro](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
-- [Procedura: A livello di programmazione spostare fogli di lavoro all'interno di cartelle di lavoro](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
-- [Procedura: Proteggere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-protect-worksheets.md)
-- [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)
+- [Procedura: eliminare fogli di lavoro dalle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
+- [Procedura: spostare fogli di lavoro all'interno di cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
+- [Procedura: proteggere i fogli di fogli di un foglio di codice](../vsto/how-to-programmatically-protect-worksheets.md)
+- [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)

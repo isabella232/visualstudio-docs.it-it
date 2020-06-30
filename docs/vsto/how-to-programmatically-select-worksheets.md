@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Selezionare i fogli di foglio a livello di codice'
+title: 'Procedura: selezionare fogli di programmazione a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ebc8fea14b3dc52c802543f97318ec7fae7529
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6134b23e7b398794529ee43a428ee8b8962ccf38
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255625"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547004"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Procedura: Selezionare i fogli di foglio a livello di codice
+# <a name="how-to-programmatically-select-worksheets"></a>Procedura: selezionare fogli di programmazione a livello di codice
   Il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> seleziona l'oggetto specificato e questa operazione sposta la selezione dell'utente al nuovo oggetto. Usare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> se si vuole applicare lo stato attivo all'oggetto senza modificare la selezione dell'utente.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Se si vuole selezionare un foglio di lavoro esistente in un componente aggiuntivo VSTO o se il foglio di lavoro è stato creato in fase di esecuzione in una personalizzazione a livello di documento, è necessario accedervi usando la raccolta <xref:Microsoft.Office.Interop.Excel.Sheets> di Excel della cartella di lavoro di Excel, altrimenti è possibile accedere direttamente all'elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet>.
+ Se si vuole selezionare un foglio di lavoro esistente in un componente aggiuntivo VSTO o se il foglio di lavoro è stato creato in fase di esecuzione in una personalizzazione a livello di documento, è necessario accedervi tramite la <xref:Microsoft.Office.Interop.Excel.Sheets> raccolta Excel della cartella di lavoro di Excel. in caso contrario, è possibile accedere <xref:Microsoft.Office.Tools.Excel.Worksheet> direttamente all'elemento host.
 
 ## <a name="use-the-worksheet-host-item"></a>Usare l'elemento host Worksheet
  In una personalizzazione a livello di documento aggiungere il codice seguente a *Sheet1. vb* o *Sheet1.cs*.
@@ -49,10 +49,10 @@ ms.locfileid: "71255625"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: Stampa di fogli di codice a livello di codice](../vsto/how-to-programmatically-print-worksheets.md)
-- [Procedura: Eliminare i fogli di lavoro a livello di codice dalle cartelle di lavoro](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
-- [Procedura: Nascondi i fogli di foglio di programmazione a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)
-- [Procedura: Proteggi i fogli di foglio a livello di codice](../vsto/how-to-programmatically-protect-worksheets.md)
+- [Procedura: stampa di fogli di codice a livello di codice](../vsto/how-to-programmatically-print-worksheets.md)
+- [Procedura: eliminare fogli di lavoro dalle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
+- [Procedura: nascondere i fogli di programmazione a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Procedura: proteggere i fogli di fogli di un foglio di codice](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Elemento host Worksheet](../vsto/worksheet-host-item.md)
 - [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

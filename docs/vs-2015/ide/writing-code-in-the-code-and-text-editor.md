@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8793dd08a5ed4aaf83c1ddd52948db4c8b22034b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa647d8a8d52588481d18347cb3400141978bd20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662629"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548031"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Scrittura di codice nell'Editor di testo e del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 
  Il codice può essere visualizzato in diversi modi. Per visualizzare una visualizzazione classi della soluzione, è possibile aprire la finestra **Visualizzazione classi** o espandere i nodi in **Esplora soluzioni** nei file di classe.
 
- È possibile cercare e sostituire il testo per file singoli o per più file. Per altre informazioni, vedere [Finding and Replacing Text](../ide/finding-and-replacing-text.md). Se si usano le espressioni regolari, si noti che la funzionalità di ricerca e sostituzione adesso usa le espressioni regolari di .NET. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+ È possibile cercare e sostituire il testo per file singoli o per più file. Per ulteriori informazioni, vedere [ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md). Se si usano le espressioni regolari, si noti che la funzionalità di ricerca e sostituzione adesso usa le espressioni regolari di .NET. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
  I diversi linguaggi di Visual Studio offrono set di funzionalità diversi e, in alcuni casi, le funzionalità si comportano in modo diverso a seconda del linguaggio. Molte di queste differenze sono specificate nelle descrizioni delle funzionalità, ma per altre informazioni è possibile vedere le sezioni su linguaggi specifici di Visual Studio.
 
@@ -82,14 +82,14 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 
 ## <a name="editor-features"></a>Funzionalità dell'editor
 
-|||
+|Funzionalità|Descrizione|
 |-|-|
 |Colorazione della sintassi|Alcuni elementi della sintassi del codice e dei file di markup sono colorati in modo diverso per distinguerli. Ad esempio, le parole chiave (ad esempio `using` in C# e `Imports` in Visual Basic) sono di un colore, mentre i tipi (ad esempio `Console` e `Uri`) sono di un altro colore. Anche altri elementi della sintassi sono colorati, ad esempio i valori letterali stringa e i commenti. C++ usa i colori per distinguere i tipi, le enumerazioni e le macro dagli altri token.<br /><br /> È possibile visualizzare il colore predefinito per ogni tipo e modificare il colore per ogni specifico elemento della sintassi nella finestra di dialogo [Opzioni, Ambiente, Tipi di carattere](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), che può essere aperta dal menu **Strumenti**.|
 |Contrassegni di errore e di avviso|Quando si aggiunge codice e si compila la soluzione, vengono visualizzate (a) sottolineature ondulate con diversi colori (note come sottolineature a zigzag) o (b) lampadine nel codice. Le sottolineature rosse denotano errori di sintassi, quelle blu errori del compilatore, quelle verdi gli avvisi e quelle viola altri tipi di errore. Le [lampadine](../ide/perform-quick-actions-with-light-bulbs.md) suggeriscono correzioni dei problemi e ne semplificano l'applicazione.<br /><br /> I colori predefiniti per ogni sottolineatura di errore e di avviso possono essere visualizzati nella finestra di dialogo **Strumenti/Opzioni/Ambiente/Tipi di carattere e colori**. Cercare **Errore di sintassi**, **Errore del compilatore**, **Avviso**e **Altro errore**.|
-|Corrispondenza parentesi graffe|Quando il punto di inserimento viene inserito in una parentesi graffa di apertura in un file di codice, il punto e la parentesi graffa di chiusura vengono evidenziati. Questa funzionalità consente di ottenere un feedback immediato sulle parentesi graffe inserite non correttamente o mancanti. È possibile attivare o disattivare la corrispondenza tra parentesi graffe con l'impostazione **Evidenzia delimitatore automatico** (**Strumenti/Opzioni/Editor di testo**). È possibile modificare il colore di evidenziazione nell'impostazione **Tipi di carattere e colori** (**Strumenti/Opzioni/Ambiente**). Cercare **Corrispondenza parentesi (evidenziate)** o **Corrispondenza parentesi (rettangolo)** .|
-|Numeri di riga|I numeri di riga possono essere visualizzati nel margine sinistro della finestra del codice. Non vengono visualizzati per impostazione predefinita. È possibile attivare questa opzione nelle impostazioni **Tutti i linguaggi dell'Editor di testo** (**Strumenti/Opzioni/Editor di testo/Tutti i linguaggi**). È possibile visualizzare i numeri di riga per i singoli linguaggi di programmazione cambiando le impostazioni per i linguaggi (**Strumenti/Opzioni/Editor di testo/\<linguaggio>** ). Per stampare i numeri di riga, è necessario selezionare Includi numeri di riga nella finestra di dialogo **Stampa**.|
+|Corrispondenza parentesi graffe|Quando il punto di inserimento viene inserito in una parentesi graffa di apertura in un file di codice, il punto e la parentesi graffa di chiusura vengono evidenziati. Questa funzionalità consente di ottenere un feedback immediato sulle parentesi graffe inserite non correttamente o mancanti. È possibile attivare o disattivare la corrispondenza tra parentesi graffe con l'impostazione **Evidenzia delimitatore automatico** (**Strumenti/Opzioni/Editor di testo**). È possibile modificare il colore di evidenziazione nell'impostazione **Tipi di carattere e colori** (**Strumenti/Opzioni/Ambiente**). Cercare **Corrispondenza parentesi (evidenziate)** o **Corrispondenza parentesi (rettangolo)**.|
+|Numeri di riga|I numeri di riga possono essere visualizzati nel margine sinistro della finestra del codice. Non vengono visualizzati per impostazione predefinita. È possibile attivare questa opzione nelle impostazioni **Tutti i linguaggi dell'Editor di testo** (**Strumenti/Opzioni/Editor di testo/Tutti i linguaggi**). È possibile visualizzare i numeri di riga per i singoli linguaggi di programmazione modificando le impostazioni per tali lingue (**strumenti/opzioni \<language> /editor di testo/**). Per stampare i numeri di riga, è necessario selezionare Includi numeri di riga nella finestra di dialogo **Stampa**.|
 |Rilevamento modifiche|Il colore del margine sinistro consente di tenere traccia delle modifiche apportate al file. Le modifiche apportate dall'apertura del file ma non ancora salvate vengono contrassegnate con una barra gialla nel margine sinistro (noto come margine di selezione). Dopo aver salvato le modifiche, ma prima di chiudere il file, la barra diventa verde. Se si annulla una modifica dopo aver salvato il file, la barra diventa arancione. Per attivare e disattivare questa funzionalità, modificare l'opzione **Revisioni** nelle impostazioni **Editor di testo** (**Strumenti/Opzioni/Editor di testo**).|
-|Selezione di codice e testo|È possibile selezionare il testo con la modalità standard a flusso continuo oppure con la modalità riquadro, in cui non viene selezionato un set di righe, ma una porzione rettangolare di testo. Per effettuare una selezione in modalità riquadro, premere ALT mentre si trascina il mouse sulla selezione oppure premere ALT+MAIUSC+\<tasto di direzione>. La selezione include tutti i caratteri nel rettangolo definiti dal primo e dall'ultimo carattere nella selezione. Tutto ciò che viene digitato o incollato nell'area selezionata viene inserito nello stesso punto di ogni riga.|
+|Selezione di codice e testo|È possibile selezionare il testo con la modalità standard a flusso continuo oppure con la modalità riquadro, in cui non viene selezionato un set di righe, ma una porzione rettangolare di testo. Per effettuare una selezione in modalità riquadro, premere ALT mentre si trascina il mouse sulla selezione oppure premere ALT + MAIUSC + \<arrow key> . La selezione include tutti i caratteri nel rettangolo definiti dal primo e dall'ultimo carattere nella selezione. Tutto ciò che viene digitato o incollato nell'area selezionata viene inserito nello stesso punto di ogni riga.|
 |Zoom|È possibile ingrandire o ridurre qualsiasi finestra del codice tenendo premuto CTRL e spostando la rotellina del mouse (oppure CTRL+MAIUSC+. per ingrandire e CTRL+MAIUSC+, per ridurre). Per impostare una specifica percentuale di zoom, è anche possibile usare la casella Zoom nell'angolo in basso a sinistra della finestra del codice. La funzionalità di zoom non funziona nelle finestre degli strumenti.|
 |Spazio virtuale|Per impostazione predefinita, le righe nell'editor di Visual Studio terminano dopo l'ultimo carattere, quindi il tasto freccia DESTRA alla fine della riga sposta il cursore all'inizio della riga successiva. In altri editor, una riga non termina dopo l'ultimo carattere ed è possibile posizionare il cursore in qualsiasi punto della riga. È possibile abilitare lo spazio virtuale nell'editor nelle impostazioni **Strumenti/Opzioni/Editor di testo/Tutti i linguaggi**. È possibile abilitare **Spazio virtuale** o **A capo automatico**, ma non entrambi.|
 |Stampa|È possibile usare le opzioni nella finestra di dialogo **Stampa** per includere i numeri di riga o nascondere le aree di codice compresse quando si stampa un file. Nella finestra di dialogo **Imposta pagina** è possibile scegliere di stampare il percorso completo e il nome del file scegliendo **Intestazione pagina**.<br /><br /> È possibile impostare le opzioni di stampa a colori nella finestra di dialogo **Strumenti/Opzioni/Ambiente/Tipi di carattere e colori**. Scegliere **Stampante** nell'elenco **Mostra impostazioni per** per personalizzare la stampa a colori. Per la stampa di un file è possibile specificare colori diversi rispetto alla modifica di un file.|
@@ -98,7 +98,7 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 ## <a name="advanced-editing-features"></a>Funzionalità di modifica avanzate
  Diverse funzionalità avanzate sono disponibili nel sottomenu **Modifica/Avanzate**. Non tutte le funzionalità sono disponibili per tutti i tipi di file di codice.
 
-|||
+|Funzionalità|Descrizione|
 |-|-|
 |Formatta documento|Imposta il rientro corretto per le righe di codice e sposta le parentesi graffe in righe separate nel documento.|
 |Formatta selezione|Imposta il rientro corretto per le righe di codice e sposta le parentesi graffe in righe separate nella selezione.|
@@ -120,21 +120,21 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 ## <a name="navigate-in-the-code-window"></a>Spostarsi nella finestra del codice
  È possibile spostarsi in un documento in diversi modi. Oltre alle operazioni standard, è possibile usare i pulsanti **Posizione precedente** (o CTRL + MENO) e **Posizione successiva** (CTRL + MAIUSC + MENO) nella barra degli strumenti per spostare il punto di inserimento nelle posizioni precedenti o tornare alle posizioni più recenti nel documento attivo. Questi pulsanti conservano le ultime 20 posizioni del punto di inserimento.
 
- ![Pulsanti di spostamento in giù e indietro](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")
+ ![Pulsanti di spostamento per spostarsi avanti e indietro](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")
 
- Per una panoramica del codice, è anche possibile usare la barra di scorrimento avanzata in una finestra del codice. In modalità di mapping è possibile visualizzare l'anteprima del codice quando si sposta il cursore verso l'alto e verso il basso nella barra di scorrimento. Per altre informazioni, vedere [Procedura: Tenere traccia del codice personalizzando la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+ Per una panoramica del codice, è anche possibile usare la barra di scorrimento avanzata in una finestra del codice. In modalità di mapping è possibile visualizzare l'anteprima del codice quando si sposta il cursore verso l'alto e verso il basso nella barra di scorrimento. Per altre informazioni, vedere [How to: Track Your Code by Customizing the Scrollbar](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
- I comandi seguenti sono metodi di spostamento specifici per il codice:
+ I seguenti comandi sono metodi di navigazione specifici per il codice:
 
-|||
+|Comando|Descrizione|
 |-|-|
-|Vai a \<numero di riga>|(**Modifica/Vai a** o CTRL + G): spostarsi a uno specifico numero di riga nel documento attivo.|
+|Vai a\<line number>|(**Modifica/Vai a** o CTRL + G): spostarsi a uno specifico numero di riga nel documento attivo.|
 |Passa a|(**Modifica/Passa a** o CTRL + ,): trova un simbolo o un file nella soluzione attiva. Consente di ottenere un buon numero di risultati corrispondenti da una query. È possibile cercare parole chiave contenute in un simbolo usando la convenzione Camel e i caratteri di sottolineatura per dividere il simbolo in parole chiave.|
 |Trova tutti i riferimenti|(Menu di scelta rapida): trova tutti i riferimenti all'elemento selezionato nella soluzione|
 |Vai a definizione|(Menu di scelta rapida o F12): trova la definizione dell'elemento selezionato.|
-|Visualizza definizione|(Menu di scelta rapida o Alt+F12): trova la definizione dell'elemento selezionato e la visualizza in una finestra popup. Per altre informazioni, vedere [How to: View and Edit Code by Using Peek Definition (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) (Procedura: Visualizzare e modificare il codice usando la finestra Visualizza definizione (Alt+F12)).|
+|Visualizza definizione|(Menu di scelta rapida o Alt+F12): trova la definizione dell'elemento selezionato e la visualizza in una finestra popup. Per altre informazioni, vedere [procedura: visualizzare e modificare il codice usando Visualizza definizione (ALT + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|
 |Metodo successivo, Metodo precedente|(**Modifica/Metodo successivo, Metodo precedente**) Nei file di codice di Visual Basic, usare questi comandi per spostare il punto di inserimento in metodi diversi.|
-|Evidenziazione di riferimenti|Quando si fa clic su un simbolo nel codice sorgente, tutte le istanze del simbolo vengono evidenziate nel documento. I simboli evidenziati possono includere dichiarazioni e riferimenti e molti altri simboli restituiti da **Trova tutti i riferimenti**. Sono inclusi i nomi di classi, oggetti, variabili, metodi e proprietà. Nel codice Visual Basic vengono evidenziate anche le parole chiave per molte strutture di controlli. Per spostarsi al simbolo evidenziato successivo o precedente, premere CTRL+MAIUSC+ freccia GIÙ o CTRL+MAIUSC+freccia SU. È possibile modificare il colore di evidenziazione in **Strumenti/Opzioni/Ambiente/Tipi di carattere e colori/Riferimento evidenziato.**|
+|Evidenziazione di riferimenti|Quando si fa clic su un simbolo nel codice sorgente, tutte le istanze del simbolo vengono evidenziate nel documento. I simboli evidenziati possono includere dichiarazioni e riferimenti e molti altri simboli restituiti da **Trova tutti i riferimenti**. Sono inclusi i nomi di classi, oggetti, variabili, metodi e proprietà. Nel codice Visual Basic vengono evidenziate anche le parole chiave per molte strutture di controlli. Per spostarsi al simbolo evidenziato successivo o precedente, premere CTRL+MAIUSC+ freccia GIÙ o CTRL+MAIUSC+freccia SU. È possibile modificare il colore di evidenziazione in **strumenti/opzioni/ambiente/tipi di carattere e colori/riferimento evidenziato.**|
 |Trova informazioni relative al codice|È possibile trovare informazioni relative a codice specifico, ad esempio modifiche, autori delle modifiche, riferimenti, bug, elementi di lavoro, revisioni del codice e stato dello unit test quando si usa CodeLens nell'editor del codice. CodeLens funziona come una visualizzazione preliminare quando si usa Visual Studio Enterprise con Team Foundation Server. Vedere [Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md).|
 
  Per spostarsi in un file di codice, è anche possibile usare la **barra di navigazione**, ossia le due caselle a discesa visualizzate in alto nella finestra del codice. Questa barra consente di passare direttamente a un tipo specifico o a uno dei membri in un tipo. La barra di navigazione viene visualizzata con i file di codice Visual Basic, C# e C++.
@@ -161,23 +161,23 @@ Il comando Passa a di Visual Studio esegue una ricerca mirata del codice per con
 ### <a name="navigate-code-using-navigate-to"></a>Esplorare il codice con Passa a
 
 1. Aprire una soluzione o una cartella in Visual Studio.
-1. Nel menu principale scegliere **Modifica**, **Passa a** oppure premere **CTRL + ,** .
+1. Nel menu principale scegliere **Modifica**, **Passa a** oppure premere **CTRL + ,**.
 
-    Viene visualizzata una piccola casella di testo nell'angolo superiore dell'editor del codice.
+    Viene visualizzata una piccola casella di testo nell'angolo superiore dell'editor di codice.
 1. Immettere il nome dell'elemento di codice da cercare nella casella di testo.
 
-    ![Passa alla finestra](../ide/media/vside-navigatetowindow.png "Finestra Passa a")
+    ![Finestra Passa a](../ide/media/vside-navigatetowindow.png "Finestra Passa a")
 
     Durante la digitazione i risultati vengono visualizzati in un elenco a discesa sotto la casella di testo.
 1. Per passare a un elemento, selezionarlo nell'elenco.
 
 ### <a name="filter-your-search"></a>Filtrare la ricerca
 
-Per limitare la ricerca solo ai simboli del codice, anteporre alla query passa a un carattere "\@". Ad esempio, se si cerca `@application`, Passa a visualizza solo le classi che contengono la parola "application".
+Per limitare la ricerca solo ai simboli del codice, anteporre alla query passa a un \@ carattere "". Ad esempio, se si cerca `@application`, Passa a visualizza solo le classi che contengono la parola "application".
 
 Se si usa la convenzione camel per maiuscole e minuscole nel codice, è possibile trovare gli elementi di codice più rapidamente immettendo solo le lettere maiuscole dei nomi degli elementi di codice. Ad esempio, se il codice ha un componente denominato `ViewSwitcher`, è possibile trovarlo immettendo solo le lettere maiuscole del nome (`"VS"`) nella finestra Passa a.
 
-![Passa a finestra-ricerca con lettere maiuscole](../ide/media/vside-capitalsearch.png "Finestra Passa a - ricerca con lettere maiuscole")
+![Finestra Passa a - ricerca con lettere maiuscole](../ide/media/vside-capitalsearch.png "Finestra Passa a - ricerca con lettere maiuscole")
 
 Questa funzionalità è particolarmente utile se il codice contiene nomi lunghi.
 
@@ -192,33 +192,33 @@ Questa funzionalità è particolarmente utile se il codice contiene nomi lunghi.
 
 - [Uso dell'ambiente di sviluppo di Visual Studio per C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)
 
-- [Opzioni, Editor di testo, JavaScript, Formattazione](../ide/reference/options-text-editor-javascript-formatting.md)
+- [Options, Text Editor, JavaScript, Formatting](../ide/reference/options-text-editor-javascript-formatting.md)
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)
 
 - [Codifiche e interruzioni di riga](../ide/encodings-and-line-breaks.md)
 
-- [Struttura](../ide/outlining.md)
+- [struttura](../ide/outlining.md)
 
 - [Refactoring](../ide/refactoring-in-visual-studio.md)
 
 - [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md)
 
-- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Using IntelliSense](../ide/using-intellisense.md)
 
 - [Personalizzazione dell'editor](../ide/customizing-the-editor.md)
 
-- [Procedura: Tenere traccia del codice personalizzando la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Procedura: tenere traccia del codice personalizzando la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
 
-- [Procedura: Visualizzare e modificare il codice usando la finestra Visualizza definizione (ALT+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Procedura: visualizzare e modificare il codice usando Visualizza definizione (ALT + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
 - [Eseguire azioni rapide con le lampadine](../ide/perform-quick-actions-with-light-bulbs.md)
 
 - [Frammenti di codice](../ide/code-snippets.md)
 
-- [Uso della Casella degli strumenti](../ide/using-the-toolbox.md)
+- [Utilizzo della Casella degli strumenti](../ide/using-the-toolbox.md)
 
 - [Visualizzazione della struttura del codice](../ide/viewing-the-structure-of-code.md)
 

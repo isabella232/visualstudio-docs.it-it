@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 922cd713867e1e1017a0f13490a08c0950b2afbf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9931d29c818d95785146558637c32237e2c5276
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652679"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547849"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Dichiarare correttamente i P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
@@ -36,7 +36,7 @@ ms.locfileid: "72652679"
  Un metodo di platform invoke è dichiarato in modo errato.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un metodo di platform invoke accede a codice non gestito e viene definito tramite la parola chiave `Declare` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Attualmente questa regola cerca platform invoke dichiarazioni di metodo destinate a funzioni Win32 che hanno un puntatore a un parametro di struttura SOVRAPPOSTa e il parametro gestito corrispondente non è un puntatore a una struttura <xref:System.Threading.NativeOverlapped?displayProperty=fullName>.
+ Un metodo di platform invoke accede a codice non gestito e viene definito tramite la `Declare` parola chiave in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . Attualmente questa regola cerca platform invoke dichiarazioni di metodo destinate a funzioni Win32 che hanno un puntatore a un parametro di struttura SOVRAPPOSTa e il parametro gestito corrispondente non è un puntatore a una <xref:System.Threading.NativeOverlapped?displayProperty=fullName> struttura.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, dichiarare correttamente il metodo platform invoke.

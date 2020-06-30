@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di programmazione salvare documenti di Visio'
+title: 'Procedura: salvare documenti di Visio a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85a45da13594a6f204e91f93ddcee64acb29c493
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 891a5c44159d10aacbb767cbc5376ae1d62252b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419387"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547056"
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>Procedura: A livello di programmazione salvare documenti di Visio
+# <a name="how-to-programmatically-save-visio-documents"></a>Procedura: salvare documenti di Visio a livello di codice
   Esistono varie modalità per salvare documenti di Microsoft Office Visio:
 
 - Salvare le modifiche in un documento esistente.
@@ -31,7 +31,7 @@ ms.locfileid: "63419387"
 
   Per altre informazioni, vedere la documentazione di riferimento di VBA per i metodi [Microsoft.Office.Interop.Visio.Document.Save](/office/vba/api/Visio.Document.Save) , [Microsoft.Office.Interop.Visio.Document.SaveAs](/office/vba/api/Visio.Document.SaveAs) e [Microsoft.Office.Interop.Visio.Document.SaveAsEx](/office/vba/api/Visio.Document.SaveAsEx) .
 
-## <a name="save-an-existing-document"></a>Salvare un documento esistente
+## <a name="save-an-existing-document"></a>Salva un documento esistente
 
 ### <a name="to-save-a-document"></a>Per salvare un documento
 
@@ -57,7 +57,7 @@ ms.locfileid: "63419387"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#10)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#10)]
 
-## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>Salvare un documento con un nuovo nome e gli argomenti specificati
+## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>Salva un documento con un nuovo nome e gli argomenti specificati
  Usare il metodo `Microsoft.Office.Interop.Visio.Document.SaveAsEx` per salvare un documento con un nuovo nome e specificare qualsiasi argomento applicabile da applicare al documento.
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Per salvare un documento con un nuovo nome e argomenti specificati
@@ -72,12 +72,12 @@ ms.locfileid: "63419387"
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio di codice presenta i requisiti seguenti:
 
-- Per salvare un documento con un nuovo nome, una directory denominata `Test` deve avere sede nel *documenti* cartella (per Windows XP e versioni precedenti) oppure il *documenti* cartella (per Windows Vista).
+- Per salvare un documento con un nuovo nome, una directory denominata `Test` deve trovarsi nella cartella *documenti* (per Windows XP e versioni precedenti) oppure nella cartella *documenti* (per Windows Vista).
 
 ## <a name="see-also"></a>Vedere anche
 - [Soluzioni Visio](../vsto/visio-solutions.md)
-- [Panoramica del modello a oggetti Visio](../vsto/visio-object-model-overview.md)
-- [Procedura: Creazione di nuovi documenti di Visio a livello di codice](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Procedura: A livello di codice aprire documenti di Visio](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Procedura: A livello di programmazione chiudere documenti di Visio](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Procedura: A livello di programmazione stampare documenti di Visio](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)
+- [Procedura: creare nuovi documenti di Visio a livello di codice](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Procedura: aprire documenti di Visio a livello di codice](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Procedura: chiudere documenti di Visio a livello di codice](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Procedura: stampare documenti di Visio a livello di codice](../vsto/how-to-programmatically-print-visio-documents.md)

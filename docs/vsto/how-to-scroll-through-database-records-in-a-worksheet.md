@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Scorrere i record del database in un foglio di foglio'
+title: 'Procedura: scorrere i record di un database in un foglio di foglio'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f0b3c6a8a9292ceda03c9d0020b78d9518ca49d9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8127a5f61e292fb777be4854796535bbe01226aa
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252038"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545795"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procedura: Scorrere i record del database in un foglio di foglio
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procedura: scorrere i record di un database in un foglio di foglio
   Nella procedura riportata di seguito viene illustrato come utilizzare la finestra di progettazione per visualizzare un singolo campo da una tabella di database in un Microsoft Office foglio di lavoro di Excel, con controlli che consentono all'utente finale di scorrere tutti i record.
 
- È possibile utilizzare la finestra di progettazione solo nei progetti a livello di documento. Tuttavia, è anche possibile aggiungere controlli e associarli ai dati a livello di codice in fase di esecuzione. Per altre informazioni, vedere [Procedura dettagliata: Semplice data binding nel progetto](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)di componente aggiuntivo VSTO.
+ È possibile utilizzare la finestra di progettazione solo nei progetti a livello di documento. Tuttavia, è anche possibile aggiungere controlli e associarli ai dati a livello di codice in fase di esecuzione. Per altre informazioni, vedere [procedura dettagliata: data binding semplice in un progetto di componente aggiuntivo VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "71252038"
 
 5. Trascinare il <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo nella cella in cui si desidera visualizzare i dati.
 
-6. Dalla scheda **Windows Forms** della **casella degli strumenti**aggiungere un <xref:System.Windows.Forms.BindingNavigator> controllo al foglio di lavoro e impostare i controlli che si desidera utilizzare. Per ulteriori informazioni, vedere [Cenni preliminari &#40;sul&#41;controllo BindingNavigator Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+6. Dalla scheda **Windows Forms** della **casella degli strumenti**aggiungere un <xref:System.Windows.Forms.BindingNavigator> controllo al foglio di lavoro e impostare i controlli che si desidera utilizzare. Per ulteriori informazioni, vedere [Cenni preliminari sul controllo BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>Vedere anche
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

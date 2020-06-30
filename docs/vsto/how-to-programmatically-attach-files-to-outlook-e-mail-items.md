@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di programmazione allegare file agli elementi di posta elettronica di Outlook'
+title: 'Procedura: alleghi file a elementi di posta elettronica di Outlook a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 707c3bb2b6bec9f8db1744d1f28acd4e90a45a57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575624"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546133"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Procedura: A livello di programmazione allegare file agli elementi di posta elettronica di Outlook
-  In questo esempio un file allegato a un nuovo elemento di posta elettronica e lo invia a Armando Pinto. Nell'esempio si presuppone una persona denominata Armando Pinto esiste come destinatario.
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Procedura: alleghi file a elementi di posta elettronica di Outlook a livello di codice
+  Questo esempio collega un file a un nuovo elemento di posta elettronica e lo invia a Armando Pinto. Nell'esempio si presuppone che una persona denominata Armando Pinto esista come destinatario.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -33,6 +33,6 @@ ms.locfileid: "62575624"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
-- [Procedura: A livello di codice Invia messaggio di posta elettronica](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [Procedura: A livello di codice salva gli allegati da elementi di posta elettronica di Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
-- [Procedura: A livello di codice crea un elemento di posta elettronica](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Procedura: inviare messaggi di posta elettronica a livello di codice](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Procedura: salvare allegati da elementi di posta elettronica di Outlook a livello di codice](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
+- [Procedura: creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md)

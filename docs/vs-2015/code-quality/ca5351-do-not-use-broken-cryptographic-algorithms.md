@@ -8,17 +8,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7b4a15530a43937b4f73fba1779216391c862c11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669023"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545054"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: non usare algoritmi di crittografia interrotti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
@@ -47,7 +47,7 @@ ms.locfileid: "72669023"
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Usare opzioni di crittografia più avanzate:
 
-- Per MD5, usare gli hash della famiglia [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) , ad esempio <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>o <xref:System.Security.Cryptography.SHA256>.
+- Per MD5, usare gli hash della famiglia [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (ad esempio <xref:System.Security.Cryptography.SHA512> ,, <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256> ).
 
 - Per DES e RC2, usare la crittografia <xref:System.Security.Cryptography.Aes> .
 

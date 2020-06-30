@@ -1,7 +1,7 @@
 ---
-title: Le app di Office tramite assembly di interoperabilità primario di destinazione
+title: App di Office di destinazione tramite assembly di interoperabilità primari
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e92b3b4dd46885de7f30f5364d30f39b5c2bd7
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328886"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545769"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Procedura: destinare applicazioni di Office tramite assembly di interoperabilità primari
   Quando si crea un nuovo progetto di Office, in Visual Studio vengono aggiunti automaticamente riferimenti agli assembly di interoperabilità primari (PIA) di Microsoft Office necessari per la compilazione del progetto. È necessario aggiungere riferimenti agli altri assembly di interoperabilità primari (PIA) negli scenari seguenti:
 
 - Si vuole usare funzionalità di altre applicazioni di Microsoft Office nel progetto, ad esempio, funzionalità di Microsoft Office Excel in un progetto per Microsoft Office Word.
@@ -40,19 +40,19 @@ ms.locfileid: "67328886"
 
 2. Scegliere **Aggiungi riferimento** dal menu **Progetto**.
 
-3. Nel **Framework** scheda, selezionare l'assembly di interoperabilità primario in cui si desidera il **nome componente** elenco. Per altre informazioni sugli assembly di interoperabilità primari di Microsoft Office disponibili, vedere [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
+3. Nella scheda **Framework** selezionare l'assembly di interoperabilità primario desiderato nell'elenco **nome componente** . Per ulteriori informazioni sugli assembly di interoperabilità primari disponibili Microsoft Office, vedere [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
 
-     Se il progetto è destinato il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, il **incorpora tipi di interoperabilità** per il riferimento all'assembly è impostata su **True** per impostazione predefinita. Usando questa impostazione, la soluzione non richiede l'assembly di interoperabilità primario (PIA) sui computer degli utenti finali. Per altre informazioni, vedere [progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md).
+     Se il progetto è destinato [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a o versione successiva, la proprietà **Incorpora tipi di interoperabilità** per il riferimento all'assembly è impostata su **true** per impostazione predefinita. Usando questa impostazione, la soluzione non richiede l'assembly di interoperabilità primario (PIA) sui computer degli utenti finali. Per ulteriori informazioni, vedere [progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
-    > Nei progetti di Office, aggiungere sempre riferimenti agli assembly di interoperabilità primari Office utilizzando il **.NET** scheda della finestra di **Aggiungi riferimento** finestra di dialogo anziché il **COM** scheda. Per altre informazioni, vedere [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
+    > Nei progetti di Office aggiungere sempre i riferimenti agli assembly di interoperabilità primari di Office usando la scheda **.NET** della finestra di dialogo **Aggiungi riferimento** anziché la scheda **com** . Per altre informazioni, vedere [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
 
 4. Fare clic su **OK**.
 
-     Viene visualizzato il nome di assembly di **riferimenti** cartella di **Esplora soluzioni**.
+     Il nome dell'assembly viene visualizzato nella cartella **riferimenti** del **Esplora soluzioni**.
 
 ## <a name="see-also"></a>Vedere anche
-- [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
-- [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
+- [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
+- [Scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
-- [Procedura: Installare l'assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Procedura: installare assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Visualizzare i documenti a livello di codice in fase di anteprima di stampa'
+title: "Procedura: visualizzare documenti in un'anteprima di stampa a livello di codice"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8296d28e884c746e09b427914af02213bbbaa7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 036f8a45d5605b55b9743a22d598a13780641c97
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813036"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545912"
 ---
-# <a name="how-to-programmatically-display-documents-in-print-preview"></a>Procedura: Visualizzare i documenti a livello di codice in fase di anteprima di stampa
+# <a name="how-to-programmatically-display-documents-in-print-preview"></a>Procedura: visualizzare documenti in un'anteprima di stampa a livello di codice
   Se la soluzione genera un report, è possibile che si voglia far visualizzare il report all'utente in modalità Anteprima di stampa.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -58,6 +58,6 @@ ms.locfileid: "62813036"
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: A livello di codice stampa documenti](../vsto/how-to-programmatically-print-documents.md)
-- [Procedura: A livello di codice aprire documenti esistenti](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Procedura: Creazione di nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md)
+- [Procedura: stampare documenti a livello di codice](../vsto/how-to-programmatically-print-documents.md)
+- [Procedura: aprire documenti esistenti a livello di codice](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Procedura: creare nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md)

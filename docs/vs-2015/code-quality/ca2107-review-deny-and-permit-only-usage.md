@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 32339852d67d4f3f28fedd204a056440ad49e075
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7f273ea5f58babf7a0c04f6b0758732d43aab7db
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665957"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547771"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Controllare l'utilizzo di Deny e PermitOnly
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Controllare l'uso di Deny e PermitOnly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ReviewDenyAndPermitOnlyUsage|
 |CheckId|CA2107|
@@ -36,19 +36,19 @@ ms.locfileid: "72665957"
  Un metodo contiene un controllo di sicurezza che specifica l'azione PermitOnly o nega sicurezza.
 
 ## <a name="rule-description"></a>Descrizione della regola
- [Utilizzando il metodo PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e le azioni di sicurezza <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> devono essere utilizzate solo da coloro che hanno una conoscenza avanzata della sicurezza [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Il codice che usa queste azioni di sicurezza deve essere sottoposto a una revisione della sicurezza.
+ L' [utilizzo del metodo PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e delle <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> azioni di sicurezza deve essere utilizzato solo da coloro che hanno una conoscenza avanzata della [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sicurezza. Il codice che usa queste azioni di sicurezza deve essere sottoposto a una revisione della sicurezza.
 
  Deny modifica il comportamento predefinito del percorso stack che si verifica in risposta a una richiesta di sicurezza. Consente di specificare le autorizzazioni che non devono essere concesse per la durata del metodo di negazione, indipendentemente dalle autorizzazioni effettive dei chiamanti nello stack di chiamate. Se il percorso stack rileva un metodo protetto da Deny e se l'autorizzazione richiesta è inclusa nelle autorizzazioni negate, il percorso stack ha esito negativo. PermitOnly modifica anche il comportamento predefinito del percorso stack. Consente al codice di specificare solo le autorizzazioni che è possibile concedere, indipendentemente dalle autorizzazioni dei chiamanti. Se il percorso stack rileva un metodo protetto da PermitOnly e se l'autorizzazione richiesta non è inclusa nelle autorizzazioni specificate da PermitOnly, il percorso dello stack ha esito negativo.
 
- Il codice che si basa su queste azioni deve essere valutato attentamente per individuare le vulnerabilità di sicurezza a causa dell'utilità limitata e del comportamento sottile. Si consideri quanto segue.
+ Il codice che si basa su queste azioni deve essere valutato attentamente per individuare le vulnerabilità di sicurezza a causa dell'utilità limitata e del comportamento sottile. Considerare quanto segue:
 
 - Le [richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) non sono interessate da Deny o PermitOnly.
 
 - Se l'istruzione DENY o PermitOnly si verifica nello stesso stack frame della richiesta che causa il percorso dello stack, le azioni di sicurezza non hanno alcun effetto.
 
-- I valori utilizzati per costruire autorizzazioni basate sul percorso possono in genere essere specificati in diversi modi. Negando l'accesso a un modulo del percorso non viene negato l'accesso a tutti i moduli. Ad esempio, se una condivisione file \\ \Server\Share è mappata a un'unità di rete X:, per negare l'accesso a un file nella condivisione, è necessario negare \\ \Server\Share\File, X:\File e ogni altro percorso che accede al file.
+- I valori utilizzati per costruire autorizzazioni basate sul percorso possono in genere essere specificati in diversi modi. Negando l'accesso a un modulo del percorso non viene negato l'accesso a tutti i moduli. Se, ad esempio, \\ viene eseguito il mapping di una condivisione file \server\share a un'unità di rete X:, per negare l'accesso a un file nella condivisione, è necessario negare \\ \Server\Share\File, X:\File e ogni altro percorso che accede al file.
 
-- Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> può terminare un percorso stack prima che venga raggiunto il valore Deny o PermitOnly.
+- Un oggetto <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> può terminare un percorso stack prima che venga raggiunto il valore Deny o PermitOnly.
 
 - Se un'istruzione DENY ha un effetto, ovvero quando un chiamante dispone di un'autorizzazione bloccata dall'istruzione DENY, il chiamante può accedere direttamente alla risorsa protetta, ignorando la negazione. Analogamente, se il chiamante non dispone dell'autorizzazione negata, il percorso stack avrà esito negativo senza l'autorizzazione Deny.
 
@@ -73,9 +73,9 @@ ms.locfileid: "72665957"
  Questo esempio produce il seguente output:
 
  **Richiesta: la negazione del chiamante non ha effetto su richiesta con l'autorizzazione dichiarata.** 
-**LinkDemand: la negazione del chiamante non ha alcun effetto su LinkDemand con l'autorizzazione asserita.** 
-**LinkDemand: il rifiuto del chiamante non ha effetto con il codice protetto da LinkDemand.** 
-**LinkDemand: questa negazione non ha alcun effetto con Codice protetto da LinkDemand.**
+ **LinkDemand: la negazione del chiamante non ha alcun effetto su LinkDemand con l'autorizzazione asserita.** 
+ **LinkDemand: la negazione del chiamante non ha alcun effetto con il codice protetto da LinkDemand.** 
+ **LinkDemand: questa negazione non ha alcun effetto con il codice protetto da LinkDemand.**
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>

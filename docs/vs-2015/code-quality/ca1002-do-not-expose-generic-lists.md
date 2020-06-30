@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2a1d8ea70ca86cbb2f38afff48fe37b414b70e88
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6fcc4ae2a07eb7b1f155d6c65020e2c1a9ddc9f2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646307"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546848"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Non esporre elenchi generici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotExposeGenericLists|
 |CheckId|CA1002|
@@ -33,10 +33,10 @@ ms.locfileid: "72646307"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo contiene un membro visibile esternamente che è un tipo di <xref:System.Collections.Generic.List%601?displayProperty=fullName>, restituisce un tipo di <xref:System.Collections.Generic.List%601?displayProperty=fullName> o la cui firma include un parametro <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
+ Un tipo contiene un membro visibile esternamente che è un <xref:System.Collections.Generic.List%601?displayProperty=fullName> tipo, restituisce un <xref:System.Collections.Generic.List%601?displayProperty=fullName> tipo o la cui firma include un <xref:System.Collections.Generic.List%601?displayProperty=fullName> parametro.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> è una raccolta generica progettata per le prestazioni e non per l'ereditarietà. <xref:System.Collections.Generic.List%601?displayProperty=fullName> non contiene membri virtuali che semplificano la modifica del comportamento di una classe ereditata. Le raccolte generiche seguenti sono progettate per l'ereditarietà e devono essere esposte anziché <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName>è una raccolta generica progettata per le prestazioni e non per l'ereditarietà. <xref:System.Collections.Generic.List%601?displayProperty=fullName>non contiene membri virtuali che semplificano la modifica del comportamento di una classe ereditata. Le raccolte generiche seguenti sono progettate per l'ereditarietà e devono essere esposte anziché <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
@@ -45,7 +45,7 @@ ms.locfileid: "72646307"
 - <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare il tipo di <xref:System.Collections.Generic.List%601?displayProperty=fullName> in una delle raccolte generiche progettate per l'ereditarietà.
+ Per correggere una violazione di questa regola, modificare il <xref:System.Collections.Generic.List%601?displayProperty=fullName> tipo in una delle raccolte generiche progettate per l'ereditarietà.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non eliminare un avviso da questa regola a meno che l'assembly che genera questo avviso non sia destinato a essere una libreria riutilizzabile. È ad esempio possibile che l'avviso non venga eliminato in un'applicazione ottimizzata per le prestazioni, in cui è stato ottenuto un vantaggio in merito alle prestazioni dall'utilizzo di elenchi generici.

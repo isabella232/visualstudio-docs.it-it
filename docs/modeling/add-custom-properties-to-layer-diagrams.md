@@ -1,7 +1,7 @@
 ---
 title: Aggiungere proprietà personalizzate ai diagrammi delle dipendenze
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590592"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546915"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Aggiungere proprietà personalizzate ai diagrammi delle dipendenze
 
@@ -22,7 +22,7 @@ Quando si scrive il codice di estensione per i diagrammi di dipendenza, è possi
 
 ## <a name="non-visible-properties"></a>Proprietà non visibili
 
-Se si desidera che il codice alleghi valori a qualsiasi elemento in un diagramma delle dipendenze, non è necessario definire un componente MEF. In [ILayerElement](/previous-versions/ff644511(v=vs.140)) è presente un dizionario denominato `Properties`. Aggiungere semplicemente i valori marshalable al dizionario di qualsiasi elemento del livello. Verranno salvati come parte del diagramma delle dipendenze.
+Se si desidera che il codice alleghi valori a qualsiasi elemento in un diagramma delle dipendenze, non è necessario definire un componente MEF. In ILayerElement è presente un dizionario denominato `Properties` . [ILayerElement](/previous-versions/ff644511(v=vs.140)) Aggiungere semplicemente i valori marshalable al dizionario di qualsiasi elemento del livello. Verranno salvati come parte del diagramma delle dipendenze.
 
 ## <a name="editable-properties"></a>Proprietà modificabili
 
@@ -38,7 +38,7 @@ Se si desidera che il codice alleghi valori a qualsiasi elemento in un diagramma
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Nella sezione **strumenti di Visual Studio** del menu Start dell'applicazione di Visual Studio aprire **prompt dei comandi per gli sviluppatori**. Immettere
+> 3. Nella sezione **strumenti di Visual Studio** del menu Start dell'applicazione di Visual Studio aprire **prompt dei comandi per gli sviluppatori**. Immettere:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -63,11 +63,11 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 È possibile definire le proprietà in [ILayerElement](/previous-versions/ff644511(v=vs.140)) o in una delle classi derivate, incluse le seguenti:
 
-- `ILayerModel` - il modello
+- `ILayerModel`: modello
 
-- `ILayer` - ciascun livello
+- `ILayer`-ogni livello
 
-- `ILayerDependencyLink` - i collegamenti tra i livelli
+- `ILayerDependencyLink`-collegamenti tra livelli
 
 - `ILayerComment`
 

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Ordinare i dati nei fogli di lavoro a livello di codice'
+title: 'Procedura: ordinare i dati nei fogli di dati a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eeef19a04245d74d99050930cc3f66da627ffdd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08fa461dc55bf42857e21a5419cab6a0ff147173
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961784"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546978"
 ---
-# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Procedura: Ordinare i dati nei fogli di lavoro a livello di codice
+# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Procedura: ordinare i dati nei fogli di dati a livello di codice
   È possibile ordinare i dati contenuti negli elenchi e negli intervalli del foglio di lavoro in fase di esecuzione. Il codice seguente ordina un intervallo a più colonne denominato `Fruits` in base ai dati nella prima colonna e quindi ai dati nella seconda colonna.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "62961784"
     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]
 
-   Inserire il codice seguente nel *Sheet1.vb* oppure *Sheet1.cs* ordinare i dati in un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo. Il codice presuppone l'esistenza di un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> denominato `fruitList` in un foglio di lavoro denominato `Sheet1`.
+   Inserire il codice seguente in *Sheet1. vb* o *Sheet1.cs* per ordinare i dati in un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo. Il codice presuppone l'esistenza di un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> denominato `fruitList` in un foglio di lavoro denominato `Sheet1`.
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>Per ordinare i dati in un controllo ListObject
 
@@ -63,9 +63,9 @@ ms.locfileid: "62961784"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: Compilare a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
-- [Procedura: A livello di codice fare riferimento agli intervalli del foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
-- [Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Procedura: riempire automaticamente gli intervalli con dati modificati in modo incrementale a livello di codice](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
+- [Procedura: fare riferimento a intervalli di fogli di fogli di codice a livello di codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Procedura: applicare stili agli intervalli nelle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)
 - [ListObject (controllo)](../vsto/listobject-control.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

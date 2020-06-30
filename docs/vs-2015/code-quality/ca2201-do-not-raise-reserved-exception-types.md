@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a550226a5ea1edb3b30e317be6b5682f4c204d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9533a597a33deaed17ff2a73d56ef306ea7b5613
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667368"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546341"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Non generare tipi di eccezione riservati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
@@ -56,31 +56,31 @@ ms.locfileid: "72667368"
 
   **Non generare eccezioni generali**
 
-  Se si genera un tipo di eccezione generale, ad esempio <xref:System.Exception> o <xref:System.SystemException> in una libreria o in un Framework, impone agli utenti di intercettare tutte le eccezioni, incluse le eccezioni sconosciute che non sanno come gestire.
+  Se si genera un tipo di eccezione generale, ad esempio <xref:System.Exception> o <xref:System.SystemException> in una libreria o in un Framework, impone ai consumer di intercettare tutte le eccezioni, incluse le eccezioni sconosciute che non sanno come gestire.
 
-  In alternativa, è possibile generare un tipo più derivato già esistente nel Framework oppure creare un tipo personalizzato che derivi da <xref:System.Exception>.
+  In alternativa, è possibile generare un tipo più derivato già esistente nel Framework oppure creare un tipo personalizzato che derivi da <xref:System.Exception> .
 
   **Genera eccezioni specifiche**
 
   La tabella seguente illustra i parametri e le eccezioni da generare quando si convalida il parametro, incluso il parametro value nella funzione di accesso set di una proprietà:
 
-|Descrizione parametro|Eccezione|
+|Descrizione dei parametri|Eccezione|
 |---------------------------|---------------|
-|riferimento `null`|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|`null`riferimento|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |Al di fuori dell'intervallo consentito di valori (ad esempio un indice per una raccolta o un elenco)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
-|Valore di `enum` non valido|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|Contiene un formato che non soddisfa le specifiche dei parametri di un metodo (ad esempio la stringa di formato per `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
+|Valore non valido `enum`|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|Contiene un formato che non soddisfa le specifiche dei parametri di un metodo (ad esempio la stringa di formato per `ToString(String)` )|<xref:System.FormatException?displayProperty=fullName>|
 |Altrimenti non valido|<xref:System.ArgumentException?displayProperty=fullName>|
 
- Quando un'operazione non è valida per lo stato corrente di un oggetto Throw <xref:System.InvalidOperationException?displayProperty=fullName>
+ Quando un'operazione non è valida per lo stato corrente di un oggetto Throw<xref:System.InvalidOperationException?displayProperty=fullName>
 
- Quando viene eseguita un'operazione su un oggetto che è stato eliminato Throw <xref:System.ObjectDisposedException?displayProperty=fullName>
+ Quando viene eseguita un'operazione su un oggetto che è stato eliminato da Throw<xref:System.ObjectDisposedException?displayProperty=fullName>
 
- Quando un'operazione non è supportata (ad esempio in un flusso sottoposto a override **. Write** in un flusso aperto per la lettura) genera <xref:System.NotSupportedException?displayProperty=fullName>
+ Quando un'operazione non è supportata (ad esempio in un flusso sottoposto a override **. scrivere** in un flusso aperto per la lettura) throw<xref:System.NotSupportedException?displayProperty=fullName>
 
- Quando una conversione genera un overflow, ad esempio in un overload dell'operatore cast esplicito, genera <xref:System.OverflowException?displayProperty=fullName>
+ Quando una conversione genera un overflow (ad esempio in un overload dell'operatore cast esplicito)<xref:System.OverflowException?displayProperty=fullName>
 
- Per tutte le altre situazioni, provare a creare un tipo personalizzato che deriva da <xref:System.Exception> e generarlo.
+ Per tutte le altre situazioni, è consigliabile creare un tipo personalizzato che deriva da <xref:System.Exception> e generarlo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, modificare il tipo dell'eccezione generata in un tipo specifico che non è uno dei tipi riservati.

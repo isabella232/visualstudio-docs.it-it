@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di codice fare riferimento agli intervalli del foglio di lavoro nel codice'
+title: 'Procedura: fare riferimento a intervalli di fogli di fogli di codice a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,45 +15,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e82b884965c5c7362951c7d94199f90c93fbfc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93673fcc270ce2f1ac43804cb1d794281f28c702
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955959"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547394"
 ---
-# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Procedura: A livello di codice fare riferimento agli intervalli del foglio di lavoro nel codice
-  Un processo simile viene utilizzato per fare riferimento al contenuto di un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o un oggetto intervallo di Excel nativo.
+# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Procedura: fare riferimento a intervalli di fogli di fogli di codice a livello di codice
+  Si usa un processo simile per fare riferimento al contenuto di un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o di un oggetto intervallo di Excel nativo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="use-a-namedrange-control"></a>Usare un controllo NamedRange
- L'esempio seguente aggiunge un <xref:Microsoft.Office.Tools.Excel.NamedRange> a un foglio di lavoro e quindi aggiunge il testo alla cella nell'intervallo.
+ Nell'esempio seguente viene aggiunto un oggetto <xref:Microsoft.Office.Tools.Excel.NamedRange> a un foglio di testo, quindi viene aggiunto il testo alla cella nell'intervallo.
 
 ### <a name="to-refer-to-a-namedrange-control"></a>Per fare riferimento a un controllo NamedRange
 
-1. Assegnare una stringa per il <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> proprietà del <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo. Questo codice deve essere inserito in una classe foglio, non nella classe `ThisWorkbook` .
+1. Assegnare una stringa alla <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> proprietà del <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo. Questo codice deve essere inserito in una classe foglio, non nella classe `ThisWorkbook` .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]
      [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]
 
-## <a name="use-native-excel-ranges"></a>Usare gli intervalli di Excel nativi
- Nell'esempio seguente aggiunge un intervallo di Excel nativo a un foglio di lavoro e quindi aggiunge il testo alla cella nell'intervallo.
+## <a name="use-native-excel-ranges"></a>Usa intervalli di Excel nativi
+ Nell'esempio seguente viene aggiunto un intervallo di Excel nativo a un foglio di lavoro e quindi viene aggiunto il testo alla cella nell'intervallo.
 
 ### <a name="to-refer-to-a-native-range-object"></a>Per fare riferimento a un oggetto intervallo nativo
 
-1. Assegnare una stringa per il <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> proprietà dell'intervallo.
+1. Assegnare una stringa alla <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> proprietà dell'intervallo.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con intervalli](../vsto/working-with-ranges.md)
-- [Procedura: A livello di codice il controllo ortografico nei fogli di lavoro](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
-- [Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [Procedura: Compilare a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
-- [Procedura: A livello di codice cercare testo negli intervalli del foglio di lavoro](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)
+- [Usare gli intervalli](../vsto/working-with-ranges.md)
+- [Procedura: eseguire il controllo ortografico nei fogli di codice a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [Procedura: applicare stili agli intervalli nelle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Procedura: riempire automaticamente gli intervalli con dati modificati in modo incrementale a livello di codice](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)
+- [Procedura: ricerca di testo negli intervalli dei fogli di testo a livello di codice](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)
-- [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)
-- [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
+- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

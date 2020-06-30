@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a240a6eea86075bbf7f721f8620b6d135d594c20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661954"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546666"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Utilizzare proprietà dove appropriato
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Usare proprietà dove appropriato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
@@ -33,7 +33,7 @@ ms.locfileid: "72661954"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo pubblico o protetto ha un nome che inizia con `Get`, non accetta parametri e restituisce un valore che non è una matrice.
+ Un metodo pubblico o protetto ha un nome che inizia con `Get` , non accetta parametri e restituisce un valore che non è una matrice.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Nella maggior parte dei casi, le proprietà rappresentano i dati e i metodi che eseguono azioni. È possibile accedere alle proprietà, ad esempio i campi, in modo da semplificarne l'uso. Un metodo è un buon candidato per diventare una proprietà se è presente una di queste condizioni:
@@ -67,7 +67,7 @@ ms.locfileid: "72661954"
 ## <a name="controlling-property-expansion-in-the-debugger"></a>Controllo dell'espansione delle proprietà nel debugger
  Uno dei motivi per cui i programmatori evitano di utilizzare una proprietà è perché non desiderano che il debugger si espanda automaticamente. Ad esempio, la proprietà può implicare l'allocazione di un oggetto di grandi dimensioni o la chiamata di un P/Invoke, ma potrebbe non avere effetti collaterali osservabili.
 
- È possibile impedire al debugger di espandere automaticamente le proprietà applicando <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Nell'esempio seguente viene illustrato l'applicazione di questo attributo a una proprietà dell'istanza.
+ È possibile impedire al debugger di espandere automaticamente le proprietà applicando <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> . Nell'esempio seguente viene illustrato l'applicazione di questo attributo a una proprietà dell'istanza.
 
 ```vb
 Imports System

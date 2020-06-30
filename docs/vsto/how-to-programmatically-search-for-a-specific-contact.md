@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Eseguire la ricerca a livello di codice di un contatto specifico'
+title: 'Procedura: eseguire la ricerca di un contatto specifico a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: feff583d28bf53f4bffc9b425d52902688b80a4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d8b2302586fc09fcfec6420d97374197eae7e67
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000317"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547069"
 ---
-# <a name="how-to-programmatically-search-for-a-specific-contact"></a>Procedura: Eseguire la ricerca a livello di codice di un contatto specifico
+# <a name="how-to-programmatically-search-for-a-specific-contact"></a>Procedura: eseguire la ricerca di un contatto specifico a livello di codice
   Questo esempio cerca una cartella Contatti di Outlook per un contatto specifico in base al nome e al cognome. L'esempio presuppone che un contatto denominato **John Evans** esista nella cartella Contatti.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -30,5 +30,5 @@ ms.locfileid: "63000317"
  [!code-vb[Trin_Outlook_RL_SearchForContact#1](../vsto/codesnippet/VisualBasic/trin_outlook_rl_searchforcontact/thisaddin.vb#1)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con gli elementi di contatto](../vsto/working-with-contact-items.md)
-- [Introduzione a programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Usare gli elementi di contatto](../vsto/working-with-contact-items.md)
+- [Introduzione alla programmazione di componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

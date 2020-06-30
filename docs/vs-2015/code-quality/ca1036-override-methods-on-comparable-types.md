@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 779e6258f9c5be256a7973a5d917045507fc82e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 52247c9175b22d3d96aa91557ee133f37c55e789
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661834"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546601"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Eseguire l'override di metodi su tipi confrontabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
@@ -33,13 +33,13 @@ ms.locfileid: "72661834"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico o protetto implementa l'interfaccia <xref:System.IComparable?displayProperty=fullName> e non esegue l'override di <xref:System.Object.Equals%2A?displayProperty=fullName> o non esegue l'overload dell'operatore specifico della lingua per verificarne l'uguaglianza, la disuguaglianza, minore di o maggiore di. La regola non segnala una violazione se il tipo eredita solo un'implementazione dell'interfaccia.
+ Un tipo pubblico o protetto implementa l' <xref:System.IComparable?displayProperty=fullName> interfaccia e non esegue l'override di o non esegue <xref:System.Object.Equals%2A?displayProperty=fullName> l'overload dell'operatore specifico della lingua per verificarne l'uguaglianza, la disuguaglianza, minore di o maggiore di. La regola non segnala una violazione se il tipo eredita solo un'implementazione dell'interfaccia.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I tipi che definiscono un ordinamento personalizzato implementano l'interfaccia <xref:System.IComparable>. Il metodo <xref:System.IComparable.CompareTo%2A> restituisce un valore intero che indica l'ordinamento corretto per due istanze del tipo. Questa regola identifica i tipi che impostano un ordinamento. Ciò implica che il significato comune di uguaglianza, disuguaglianza, minore di e maggiore di non si applicano. Quando si fornisce un'implementazione di <xref:System.IComparable>, è in genere necessario eseguire l'override di <xref:System.Object.Equals%2A> in modo che restituisca valori coerenti con <xref:System.IComparable.CompareTo%2A>. Se si esegue l'override di <xref:System.Object.Equals%2A> e si codifica in un linguaggio che supporta gli overload degli operatori, è necessario fornire anche operatori coerenti con <xref:System.Object.Equals%2A>.
+ I tipi che definiscono un ordinamento personalizzato implementano l' <xref:System.IComparable> interfaccia. Il <xref:System.IComparable.CompareTo%2A> metodo restituisce un valore intero che indica l'ordinamento corretto per due istanze del tipo. Questa regola identifica i tipi che impostano un ordinamento. Ciò implica che il significato comune di uguaglianza, disuguaglianza, minore di e maggiore di non si applicano. Quando si fornisce un'implementazione di <xref:System.IComparable> , è necessario in genere eseguire l'override di <xref:System.Object.Equals%2A> in modo che restituisca valori coerenti con <xref:System.IComparable.CompareTo%2A> . Se si esegue l'override di <xref:System.Object.Equals%2A> e si codifica in un linguaggio che supporta gli overload degli operatori, è necessario fornire anche operatori coerenti con <xref:System.Object.Equals%2A> .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, eseguire l'override <xref:System.Object.Equals%2A>. Se il linguaggio di programmazione supporta l'overload degli operatori, fornire gli operatori seguenti:
+ Per correggere una violazione di questa regola, eseguire l'override di <xref:System.Object.Equals%2A> . Se il linguaggio di programmazione supporta l'overload degli operatori, fornire gli operatori seguenti:
 
 - op_Equality
 
@@ -49,18 +49,18 @@ ms.locfileid: "72661834"
 
 - op_GreaterThan
 
-  In C#i token utilizzati per rappresentare questi operatori sono i seguenti: = =,! =, \< e >.
+  In C#, i token usati per rappresentare questi operatori sono i seguenti: = =,! =, \<, and > .
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola quando la violazione è causata da operatori mancanti e il linguaggio di programmazione in uso non supporta l'overload degli operatori, come nel caso di Visual Basic .NET. È anche possibile eliminare un avviso per da questa regola quando viene attivato su operatori di uguaglianza diversi da op_Equality se si determina che l'implementazione degli operatori non è sensata nel contesto dell'applicazione. Tuttavia, se si esegue l'override di Object. Equals, è sempre necessario passare a op_Equality e all'operatore = =.
+ È possibile eliminare un avviso da questa regola quando la violazione è causata da operatori mancanti e il linguaggio di programmazione in uso non supporta l'overload degli operatori, come nel caso di Visual Basic .NET. È anche possibile eliminare un avviso per da questa regola quando viene attivato su operatori di uguaglianza diversi da op_Equality se si determina che l'implementazione degli operatori non è sensata nel contesto dell'applicazione. Tuttavia, se si esegue l'override di Object. Equals, è sempre necessario op_Equality e l'operatore = =.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente è contenuto un tipo che implementa correttamente <xref:System.IComparable>. I commenti del codice identificano i metodi che soddisfano diverse regole correlate a <xref:System.Object.Equals%2A> e l'interfaccia <xref:System.IComparable>.
+ Nell'esempio seguente è contenuto un tipo che implementa correttamente <xref:System.IComparable> . I commenti del codice identificano i metodi che soddisfano varie regole correlate a <xref:System.Object.Equals%2A> e all' <xref:System.IComparable> interfaccia.
 
  [!code-csharp[FxCop.Design.IComparable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IComparable/cs/FxCop.Design.IComparable.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nell'applicazione seguente viene testato il comportamento dell'implementazione di <xref:System.IComparable> illustrata in precedenza.
+ Nell'applicazione seguente viene testato il comportamento dell' <xref:System.IComparable> implementazione mostrata in precedenza.
 
  [!code-csharp[FxCop.Design.TestIComparable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestIComparable/cs/FxCop.Design.TestIComparable.cs#1)]
 

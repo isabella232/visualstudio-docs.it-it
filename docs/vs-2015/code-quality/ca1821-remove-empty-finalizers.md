@@ -14,17 +14,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3d340d69ee32de20142abf740f7fedc871c9733a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2e704202773447e353f041df66b05cb5f648c00
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657479"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545353"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: Rimuovere i finalizzatori vuoti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|RemoveEmptyFinalizers|
 |CheckId|CA1821|
@@ -38,12 +38,12 @@ ms.locfileid: "72657479"
  Quando possibile, evitare di utilizzare i finalizzatori per non sovraccaricare ulteriormente le prestazioni durante il rilevamento della durata dell'oggetto. Prima di raccogliere l'oggetto, il Garbage Collector eseguirà il finalizzatore. Ciò significa che saranno necessarie due raccolte per la raccolta dell'oggetto. Un finalizzatore vuoto comporta questo sovraccarico aggiuntivo senza alcun vantaggio.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Rimuovere il finalizzatore vuoto. Se è necessario un finalizzatore per il debug, racchiudere l'intero finalizzatore nelle direttive `#if DEBUG / #endif`.
+ Rimuovere il finalizzatore vuoto. Se è necessario un finalizzatore per il debug, racchiudere l'intero finalizzatore nelle `#if DEBUG / #endif` direttive.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non eliminare un messaggio da questa regola. La mancata eliminazione della finalizzazione comporta una riduzione delle prestazioni e non offre alcun vantaggio.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un finalizzatore vuoto da rimuovere, un finalizzatore che deve essere racchiuso in direttive `#if DEBUG / #endif` e un finalizzatore che utilizza correttamente le direttive `#if DEBUG / #endif`.
+ Nell'esempio seguente viene illustrato un finalizzatore vuoto da rimuovere, un finalizzatore che deve essere racchiuso tra `#if DEBUG / #endif` direttive e un finalizzatore che utilizza correttamente le `#if DEBUG / #endif` direttive.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RemoveEmptyFinalizers/cs/FxCop.Performance.RemoveEmptyFinalizers.cs#1)]

@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d45bab6b909fffa107158236d9050632f114c530
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772787"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546588"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 La funzione `CommentMarkProfile` inserisce un indicatore numerico e una stringa di testo nel file con estensione *vsp*. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione `CommentMarkProfile`.
@@ -55,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Osservazioni
  Lo stato della profilatura per il thread che contiene la funzione di contrassegno del profilo deve essere attivo quando vengono inseriti indicatori e commenti con il comando Contrassegno di VSInstr o con le funzioni CommentMarkAtProfile, CommentMarkProfile o MarkProfile.
 
- I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno di profilo inserito in un thread può essere utilizzato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread dell'oggetto . *vsp.*
+ I contrassegni del profilo hanno ambito globale. Ad esempio, è possibile usare un contrassegno del profilo inserito in un thread per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread in. file *VSP* .
 
 > [!IMPORTANT]
 > Il metodo CommentMarkProfile può essere usato solo con la strumentazione.
@@ -65,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 
 ## <a name="function-information"></a>Informazioni sulla funzione
 
-|||
+|Elemento|valore|
 |-|-|
 |**Intestazione**|Includere VSPerf.h|
 |**Libreria**|Usare VSPerf.lib|
@@ -111,4 +111,4 @@ void ExerciseCommentMarkProfile()
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)Visual Studio profiler API reference (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

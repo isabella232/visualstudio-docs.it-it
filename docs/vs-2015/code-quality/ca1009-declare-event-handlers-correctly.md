@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 261013ed844b6c5ba37c544c7745a77378c0c722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a4a4e2e6990772b50568043c4d18ff29248571d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668915"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547888"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Dichiarare correttamente i gestori eventi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
@@ -38,7 +38,7 @@ ms.locfileid: "72668915"
 ## <a name="rule-description"></a>Descrizione della regola
  I metodi di gestione eventi accettano due parametri. Il primo è di tipo <xref:System.Object?displayProperty=fullName> ed è denominato ' sender '. Corrisponde all'oggetto che ha generato l'evento. Il secondo parametro è di tipo <xref:System.EventArgs?displayProperty=fullName> ed è denominato ' è. Questi sono i dati associati all'evento. Se, ad esempio, l'evento viene generato ogni volta che un file viene aperto, i dati dell'evento contengono in genere il nome del file.
 
- I metodi del gestore eventi non devono restituire un valore. Nel linguaggio C# di programmazione, questo è indicato dal tipo restituito `void`. Un gestore eventi può richiamare più metodi in più oggetti. Se i metodi possono restituire un valore, si verificheranno più valori restituiti per ogni evento e sarà disponibile solo il valore dell'ultimo metodo richiamato.
+ I metodi del gestore eventi non devono restituire un valore. Nel linguaggio di programmazione C#, questo è indicato dal tipo restituito `void` . Un gestore eventi può richiamare più metodi in più oggetti. Se i metodi possono restituire un valore, si verificheranno più valori restituiti per ogni evento e sarà disponibile solo il valore dell'ultimo metodo richiamato.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, correggere la firma, il tipo restituito o i nomi dei parametri del delegato. Per informazioni dettagliate, vedere l'esempio seguente.
@@ -47,7 +47,7 @@ ms.locfileid: "72668915"
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un delegato adatto per la gestione di eventi. I metodi che possono essere richiamati da questo gestore eventi sono conformi alla firma specificata nelle linee guida di progettazione. `AlarmEventHandler` è il nome del tipo del delegato. `AlarmEventArgs` deriva dalla classe di base per i dati dell'evento, <xref:System.EventArgs> e include i dati degli eventi di avviso.
+ Nell'esempio seguente viene illustrato un delegato adatto per la gestione di eventi. I metodi che possono essere richiamati da questo gestore eventi sono conformi alla firma specificata nelle linee guida di progettazione. `AlarmEventHandler`nome del tipo del delegato. `AlarmEventArgs`deriva dalla classe di base per i dati dell'evento, <xref:System.EventArgs> e include i dati degli eventi di avviso.
 
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cpp/FxCop.Design.EventsTwoParams.cpp#1)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cs/FxCop.Design.EventsTwoParams.cs#1)]

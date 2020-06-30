@@ -1,7 +1,7 @@
 ---
 title: Generazione di codice in un processo di compilazione
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590553"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546718"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Richiama trasformazione testo nel processo di compilazione
 
@@ -26,7 +26,7 @@ La [trasformazione del testo](../modeling/code-generation-and-t4-text-templates.
 
 Esistono alcune differenze in ciò che le attività di compilazione possono fare, a seconda del motore di compilazione utilizzato. Quando si compila la soluzione in Visual Studio, un modello di testo può accedere all'API di Visual Studio (EnvDTE) se è impostato l'attributo [hostspecific = "true"](../modeling/t4-template-directive.md) . Ma ciò non è vero quando si compila la soluzione dalla riga di comando o quando si avvia una compilazione del server tramite Visual Studio. In questi casi, la compilazione viene eseguita da MSBuild e viene utilizzato un diverso host T4. Ciò significa che non è possibile accedere ad elementi come i nomi dei file di progetto nello stesso modo quando si compila un modello di testo tramite MSBuild. Tuttavia, è possibile [passare informazioni sull'ambiente in modelli di testo e processori di direttiva utilizzando parametri di compilazione](#parameters).
 
-## <a name="buildserver"></a>Configurare i computer
+## <a name="configure-your-machines"></a><a name="buildserver"></a>Configurare i computer
 
 Per abilitare le attività di compilazione nel computer di sviluppo, installare Modeling SDK per Visual Studio.
 
@@ -36,22 +36,22 @@ Se [il server di compilazione](/azure/devops/pipelines/agents/agents) è in esec
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TextTemplating
 
-  - Microsoft. VisualStudio. TextTemplating. Sdk. host. 15.0. dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.15.0.dll
   - Microsoft.TextTemplating.Build.Tasks.dll
   - Microsoft.TextTemplating.targets
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft. VisualStudio. TextTemplating. 15.0. dll
-  - Microsoft. VisualStudio. TextTemplating. Interfaces. 15.0. dll
-  - Microsoft. VisualStudio. TextTemplating. VSHost. 15.0. dll
+  - Microsoft.VisualStudio.TextTemplating.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.15.0.dll
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
-  - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.15.0.dll
 
 > [!TIP]
-> Se si ottiene un `MissingMethodException` per un metodo Microsoft. CodeAnalysis quando si eseguono destinazioni di compilazione TextTemplating in un server di compilazione, assicurarsi che gli assembly Roslyn si trovino in una directory denominata *Roslyn* che si trova nella stessa directory del file eseguibile di compilazione, ad esempio *MSBuild. exe*.
+> Se si ottiene un oggetto `MissingMethodException` per un metodo Microsoft. CodeAnalysis quando si eseguono destinazioni di compilazione TextTemplating in un server di compilazione, assicurarsi che gli assembly Roslyn si trovino in una directory denominata *Roslyn* che si trova nella stessa directory del file eseguibile di compilazione, ad esempio *msbuild.exe*.
 
 ## <a name="edit-the-project-file"></a>Modificare il file di progetto
 
@@ -65,7 +65,7 @@ Nel file con estensione csproj o vbproj, individuare una riga simile alla seguen
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\- oppure -
+\- - oppure -
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -184,7 +184,7 @@ Queste proprietà sono utilizzate solo da MSBuild. Non influiscono sulla generaz
 </ItemGroup>
 ```
 
-Una cartella utile per il reindirizzamento a è `$(IntermediateOutputPath)`.
+Una cartella utile per il reindirizzamento a è `$(IntermediateOutputPath)` .
 
 Se si specifica un nome di file di output, avrà la precedenza sull'estensione specificata nella direttiva output nei modelli.
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Passare i dati del contesto di compilazione nei modelli
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>Passare i dati del contesto di compilazione nei modelli
 
 È possibile impostare i valori dei parametri nel file di progetto. Ad esempio, è possibile passare le proprietà di [compilazione](../msbuild/msbuild-properties.md) e le [variabili di ambiente](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue` ottiene i dati da `T4ParameterValues` solo quando si utilizza MSBuild. Quando si trasforma il modello con Visual Studio, i parametri hanno valori predefiniti.
+> `ResolveParameterValue`Ottiene i dati da `T4ParameterValues` solo quando si utilizza MSBuild. Quando si trasforma il modello con Visual Studio, i parametri hanno valori predefiniti.
 
-## <a name="msbuild"></a>Usare le proprietà del progetto in un assembly e includere le direttive
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>Usare le proprietà del progetto in un assembly e includere le direttive
 
 Le macro di Visual Studio, ad esempio **$ (SolutionDir),** non funzionano in MSBuild. È possibile utilizzare le proprietà del progetto.
 
@@ -289,7 +289,7 @@ Queste direttive ottengono valori da T4parameterValues in MSBuild e negli host d
 
 Se si aggiorna un file incluso o un altro file letto dal modello, Visual Studio non trasforma automaticamente il file. La trasformazione dei modelli come parte della compilazione garantisce che tutti gli elementi siano aggiornati.
 
-**Quali altre opzioni sono disponibili per trasformare i modelli di testo?**
+**Quali altre opzioni ci sono per trasformare i modelli di testo?**
 
 - L' [utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) può essere usata negli script di comando. Nella maggior parte dei casi, è più facile utilizzare MSBuild.
 
@@ -303,13 +303,13 @@ Se si aggiorna un file incluso o un altro file letto dal modello, Visual Studio 
 
 ::: moniker range="vs-2017"
 
-- Nel modello MSbuild di T4 sono disponibili indicazioni valide in `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Nel modello MSbuild di T4 sono disponibili indicazioni valide`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Nel modello MSbuild di T4 sono disponibili indicazioni valide in `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Nel modello MSbuild di T4 sono disponibili indicazioni valide`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

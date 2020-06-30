@@ -1,7 +1,7 @@
 ---
 title: Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c3c37feb2f2d68817807f056ee470f0d0d05f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597230"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546925"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze
 
@@ -30,7 +30,7 @@ Quando l'utente seleziona il comando **convalida architettura** in un diagramma 
 > [!WARNING]
 > Dopo aver creato un progetto di convalida, copiare il [codice di esempio](#example) disponibile alla fine di questo argomento e quindi modificarlo in base alle esigenze.
 
-## <a name="requirements"></a>Requisiti di
+## <a name="requirements"></a>Requisiti
 
 Vedere [Requisiti](../modeling/extend-layer-diagrams.md#requirements).
 
@@ -87,11 +87,11 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
     2. Nella finestra di dialogo **Aggiungi nuovo asset** impostare:
 
-         **Tipo** = **Microsoft.VisualStudio.MefComponent**
+         **Tipo**  =  di **Microsoft. VisualStudio. MefComponent**
 
-         **Origine** = **Progetto nella soluzione corrente**
+         **Origine**  =  dati **Progetto nella soluzione corrente**
 
-         **Progetto** = *Progetto di convalida*
+         **Progetto**  =  di *il progetto validator*
 
 5. È anche necessario aggiungere il progetto come convalida dei livelli:
 
@@ -99,15 +99,15 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
     2. Nella finestra di dialogo **Aggiungi nuovo asset** impostare:
 
-         **Tipo** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Questa opzione non è inclusa nell'elenco a discesa. È necessario immetterla usando la tastiera.
+         **Tipo**  =  di **Microsoft. VisualStudio. ArchitectureTools. Layer. validator**. Questa opzione non è inclusa nell'elenco a discesa. È necessario immetterla usando la tastiera.
 
-         **Origine** = **Progetto nella soluzione corrente**
+         **Origine**  =  dati **Progetto nella soluzione corrente**
 
-         **Progetto** = *Progetto di convalida*
+         **Progetto**  =  di *il progetto validator*
 
 6. Tornare al progetto di convalida dei livelli e aggiungere i riferimenti al progetto seguenti:
 
-    |**Reference**|**Operazioni consentite**|
+    |**Riferimento**|**Operazioni consentite**|
     |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|Leggere il grafico dell'architettura|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Leggere il code DOM associato ai livelli|
@@ -125,7 +125,7 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
 9. Per installare VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare **il file VSIX** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse
 
-## <a name="programming"></a> Programmazione della convalida
+## <a name="programming-validation"></a><a name="programming"></a>Convalida della programmazione
 
 Per definire un'estensione di convalida dei livelli, è necessario definire una classe con le caratteristiche seguenti:
 
@@ -194,7 +194,7 @@ Ogni nodo e ogni collegamento hanno una o più categorie che specificano il tipo
 
 I collegamenti dai livelli agli elementi nel codice sono associati alla categoria "Rappresenta".
 
-## <a name="debugging"></a> Debug della convalida
+## <a name="debugging-validation"></a><a name="debugging"></a>Debug della convalida
 
 Per eseguire il debug dell'estensione di convalida dei livelli, premere CTRL+F5. Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza aprire o creare un modello di livello. Questo modello deve essere associato al codice e deve avere almeno una dipendenza.
 
@@ -226,7 +226,7 @@ Avviare sempre l'istanza sperimentale premendo CTRL+F5 (**Avvia senza eseguire d
 
 Per installare l'estensione di convalida in un computer in cui è installata una versione appropriata di Visual Studio, aprire il file VSIX nel computer di destinazione.
 
-## <a name="example"></a> Example code
+## <a name="example-code"></a><a name="example"></a>Codice di esempio
 
 ```csharp
 using System;

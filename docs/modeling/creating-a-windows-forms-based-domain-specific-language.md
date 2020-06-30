@@ -1,18 +1,18 @@
 ---
 title: Creazione di un linguaggio specifico di dominio basato su Windows Form
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f565184dcb9570ecc34b61f1f2d4d0e2ce2a4110
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 57507775a03bcfd0649f4efbf8a7771fefc8e20b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114889"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547316"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Creare un Domain-Specific Language basato su Windows Forms
 
@@ -33,15 +33,15 @@ Il modello DSL **WinForm designer minimo** crea un DSL minimo che è possibile m
    | | |
    |-|-|
    | Nome della soluzione e del DSL | FarmApp |
-   | Spazio dei nomi | Company.FarmApp |
+   | Spazio dei nomi | Company. FarmApp |
 
 2. Provare a usare l'esempio iniziale fornito dal modello:
 
    1. Trasforma tutti i modelli.
 
-   2. Compilare ed eseguire l'esempio (**Ctrl**+**F5**).
+   2. Compilare ed eseguire l'esempio (**CTRL** + **F5**).
 
-   3. Nell'istanza sperimentale di Visual Studio aprire il file di `Sample` nel progetto di debug.
+   3. Nell'istanza sperimentale di Visual Studio aprire il `Sample` file nel progetto di debug.
 
         Si noti che viene visualizzato in un controllo Windows Forms.
 
@@ -51,44 +51,44 @@ Il modello DSL **WinForm designer minimo** crea un DSL minimo che è possibile m
 
    Nell'istanza principale di Visual Studio si notino i punti seguenti sulla soluzione DSL:
 
-- `DslDefinition.dsl` non contiene elementi del diagramma. Ciò è dovuto al fatto che non si utilizzeranno diagrammi DSL per visualizzare i modelli di istanza di questo DSL. Al contrario, si eseguirà il binding di un Windows Form al modello e gli elementi nel form visualizzeranno il modello.
+- `DslDefinition.dsl`non contiene elementi del diagramma. Ciò è dovuto al fatto che non si utilizzeranno diagrammi DSL per visualizzare i modelli di istanza di questo DSL. Al contrario, si eseguirà il binding di un Windows Form al modello e gli elementi nel form visualizzeranno il modello.
 
-- Oltre ai progetti `Dsl` e `DslPackage`, la soluzione contiene un terzo progetto denominato `UI.`progetto dell' **interfaccia utente** contiene la definizione di un controllo Windows Forms. `DslPackage` dipende da `UI`e `UI` dipende da `Dsl`.
+- Oltre ai `Dsl` `DslPackage` progetti e, la soluzione contiene un terzo progetto denominato `UI.` **UI** Project contiene la definizione di un controllo Windows Forms. `DslPackage`dipende da `UI` e dipende da `UI` `Dsl` .
 
-- Nel progetto `DslPackage` `UI\DocView.cs` contiene il codice che consente di visualizzare il controllo Windows Forms definito nel progetto `UI`.
+- Nel `DslPackage` progetto, `UI\DocView.cs` contiene il codice che visualizza il Windows Forms controllo definito nel `UI` progetto.
 
-- Il progetto `UI` contiene un esempio funzionante di un controllo Form associato al linguaggio DSL. Tuttavia, non funzionerà dopo aver modificato la definizione DSL. Il progetto `UI` contiene:
+- Il `UI` progetto contiene un esempio funzionante di un controllo Form associato al linguaggio DSL. Tuttavia, non funzionerà dopo aver modificato la definizione DSL. Il `UI` progetto contiene:
 
-  - Classe Windows Forms denominata `ModelViewControl`.
+  - Classe Windows Forms denominata `ModelViewControl` .
 
-  - Un file denominato `DataBinding.cs` contenente una definizione parziale aggiuntiva di `ModelViewControl`. Per visualizzarne il contenuto, in **Esplora soluzioni**aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.
+  - File denominato `DataBinding.cs` che contiene una definizione parziale aggiuntiva di `ModelViewControl` . Per visualizzarne il contenuto, in **Esplora soluzioni**aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.
 
 ### <a name="about-the-ui-project"></a>Informazioni sul progetto dell'interfaccia utente
 
-Quando si aggiorna il file di definizione DSL per definire il proprio linguaggio DSL, sarà necessario aggiornare il controllo nel progetto `UI` per visualizzare il linguaggio DSL. A differenza dei progetti `Dsl` e `DslPackage`, il progetto `UI` di esempio non viene generato da `DslDefinitionl.dsl`. Se lo si desidera, è possibile aggiungere file con estensione tt per generare il codice, anche se questo non è trattato in questa procedura dettagliata.
+Quando si aggiorna il file di definizione DSL per definire il proprio linguaggio DSL, sarà necessario aggiornare il controllo nel `UI` progetto per visualizzare il linguaggio DSL. A differenza dei `Dsl` `DslPackage` progetti e, il `UI` progetto di esempio non viene generato da `DslDefinitionl.dsl` . Se lo si desidera, è possibile aggiungere file con estensione tt per generare il codice, anche se questo non è trattato in questa procedura dettagliata.
 
 ## <a name="update-the-dsl-definition"></a>Aggiornare la definizione DSL
 
 In questa procedura dettagliata viene usata la definizione DSL riportata di seguito.
 
-![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+![DSL&#45;WPF&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. Aprire DslDefinition. DSL nella finestra di progettazione DSL.
 
 2. Elimina **esempioelement**
 
-3. Rinominare la classe di dominio **ExampleModel** in `Farm`.
+3. Rinominare la classe di dominio **ExampleModel** in `Farm` .
 
      Assegnare a esso proprietà del dominio aggiuntive denominate `Size` di tipo **Int32**e `IsOrganic` di tipo **booleano**.
 
     > [!NOTE]
-    > Se si elimina la classe di dominio radice e quindi si crea una nuova radice, sarà necessario reimpostare la proprietà della classe radice dell'editor. In **DSL Explorer**selezionare **Editor**. Quindi, nella Finestra Proprietà impostare la **classe radice** su `Farm`.
+    > Se si elimina la classe di dominio radice e quindi si crea una nuova radice, sarà necessario reimpostare la proprietà della classe radice dell'editor. In **DSL Explorer**selezionare **Editor**. Quindi, nella Finestra Proprietà impostare la **classe radice** su `Farm` .
 
 4. Utilizzare lo strumento **classe di dominio denominato** per creare le classi di dominio seguenti:
 
-    - `Field`-assegnare a questa proprietà di dominio aggiuntiva denominata `Size`.
+    - `Field`-Assegnare a questa proprietà di dominio aggiuntiva denominata `Size` .
 
-    - `Animal`-nella Finestra Proprietà, impostare il **modificatore di ereditarietà** su **abstract**.
+    - `Animal`-Nella Finestra Proprietà impostare il **modificatore di ereditarietà** su **abstract**.
 
 5. Utilizzare lo strumento **classe di dominio** per creare le classi seguenti:
 
@@ -96,9 +96,9 @@ In questa procedura dettagliata viene usata la definizione DSL riportata di segu
 
     - `Goat`
 
-6. Utilizzare lo strumento **ereditarietà** per rendere `Goat` e `Sheep` ereditare da `Animal`.
+6. Utilizzare lo strumento **ereditarietà** per creare `Goat` ed `Sheep` ereditare da `Animal` .
 
-7. Usare lo strumento di **incorporamento** per incorporare `Field` e `Animal` in `Farm`.
+7. Usare lo strumento di **incorporamento** per incorporare `Field` e `Animal` in `Farm` .
 
 8. Potrebbe essere necessario ordinare il diagramma. Per ridurre il numero di elementi duplicati, usare il comando **Bring subtree qui** dal menu di scelta rapida degli elementi foglia.
 
@@ -119,7 +119,7 @@ A questo punto è possibile creare un nuovo controllo utente che visualizzerà l
 
      Verrà visualizzata la finestra **Origini dati**.
 
-     Scegliere **Aggiungi nuova origine dati**. Viene avviata la **Configurazione guidata origine dati**.
+     Scegliere **Aggiungi nuova origine dati**. Verrà avviata la **Configurazione guidata origine dati** .
 
 2. Scegliere **oggetto**, **Avanti**.
 
@@ -147,22 +147,22 @@ A questo punto è possibile creare un nuovo controllo utente che visualizzerà l
 
     Viene visualizzato un set di controlli, uno per ogni proprietà. Le proprietà della relazione non generano controlli.
 
-5. Elimina **farmBindingNavigator**. Viene anche generato automaticamente nella finestra di progettazione `FarmControl`, ma non è utile per questa applicazione.
+5. Elimina **farmBindingNavigator**. Viene anche generato automaticamente nella finestra di `FarmControl` progettazione, ma non è utile per questa applicazione.
 
-6. Utilizzando la casella degli strumenti, creare due istanze di **DataGridView**e denominarle `AnimalGridView` e `FieldGridView`.
+6. Utilizzando la casella degli strumenti, creare due istanze di **DataGridView**e denominarle `AnimalGridView` e `FieldGridView` .
 
    > [!NOTE]
    > Un passaggio alternativo consiste nel trascinare gli elementi Animals e Fields dalla finestra Origini dati nel controllo. Questa azione crea automaticamente le griglie di dati e le associazioni tra la visualizzazione griglia e l'origine dati. Tuttavia, questa associazione non funziona correttamente per DSLs. Pertanto, è preferibile creare manualmente le griglie di dati e le associazioni.
 
 7. Se la casella degli strumenti non contiene lo strumento **ModelingBindingSource** , aggiungerla. Nel menu di scelta rapida della scheda **dati** scegliere **Scegli elementi**. Nella finestra di dialogo **Scegli elementi della casella degli strumenti** selezionare **ModelingBindingSource** nella scheda **.NET Framework** .
 
-8. Utilizzando la casella degli strumenti, creare due istanze di **ModelingBindingSource**e denominarle `AnimalBinding` e `FieldBinding`.
+8. Utilizzando la casella degli strumenti, creare due istanze di **ModelingBindingSource**e denominarle `AnimalBinding` e `FieldBinding` .
 
 9. Impostare la proprietà **DataSource** di ogni **ModelingBindingSource** su **farmBindingSource**.
 
      Impostare la proprietà **DataMember** su **Animals** o **Fields**.
 
-10. Impostare le proprietà **DataSource** di `AnimalGridView` su `AnimalBinding`e di `FieldGridView` su `FieldBinding`.
+10. Impostare le proprietà **DataSource** di `AnimalGridView` su `AnimalBinding` e di `FieldGridView` su `FieldBinding` .
 
 11. Modificare il layout del controllo della farm a piacimento.
 
@@ -174,7 +174,7 @@ A questo punto è possibile creare un nuovo controllo utente che visualizzerà l
 
 - Garantisce che, quando l'utente seleziona una riga, il Finestra Proprietà Visualizza le proprietà dell'elemento del modello corrispondente, invece della riga della griglia dei dati.
 
-  ![DslWpf4](../modeling/media/dslwpf4.png) schema dei collegamenti tra le origini dati e le visualizzazioni.
+  ![](../modeling/media/dslwpf4.png)Schema DslWpf4 dei collegamenti tra le origini dati e le visualizzazioni.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Completare le associazioni al linguaggio DSL
 
@@ -220,7 +220,7 @@ La soluzione DSL ora può essere compilata ed eseguita, anche se è opportuno ag
 
 3. In **FarmApp Explorer**aprire il menu di scelta rapida nel nodo radice della **Farm** e scegliere **Aggiungi nuova capra**.
 
-     `Goat1` viene visualizzato nella visualizzazione **Animals** .
+     `Goat1`viene visualizzato nella visualizzazione **Animals** .
 
     > [!WARNING]
     > È necessario utilizzare il menu di scelta rapida del nodo della **Farm** , non il nodo **Animals** .
@@ -237,7 +237,7 @@ La soluzione DSL ora può essere compilata ed eseguita, anche se è opportuno ag
 
 1. Nella visualizzazione progettazione di FarmControl.cs selezionare un campo semplice, ad esempio nome, dimensioni o organico.
 
-2. Nella Finestra Proprietà espandere **DataBindings** e aprire **(avanzate)** .
+2. Nella Finestra Proprietà espandere **DataBindings** e aprire **(avanzate)**.
 
      Nella finestra di dialogo **formattazione e associazione avanzata** , in **modalità di aggiornamento origine dati**, scegliere **OnPropertyChanged**.
 
@@ -249,7 +249,7 @@ La soluzione DSL ora può essere compilata ed eseguita, anche se è opportuno ag
 
 1. Nella visualizzazione progettazione di FarmControl.cs utilizzare la casella degli strumenti per creare un pulsante nel form.
 
-    Modificare il nome e il testo del pulsante, ad esempio in `New Sheep`.
+    Modificare il nome e il testo del pulsante, ad esempio in `New Sheep` .
 
 2. Aprire il codice dietro il pulsante, ad esempio facendo doppio clic su di esso.
 
@@ -300,7 +300,7 @@ La soluzione DSL ora può essere compilata ed eseguita, anche se è opportuno ag
 
     Dovrebbe essere possibile modificare il nome dell'elemento nella visualizzazione griglia dei dati. È anche possibile eliminarlo da questa posizione.
 
-   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;WPF&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Informazioni sul codice per l'aggiunta di un elemento
 

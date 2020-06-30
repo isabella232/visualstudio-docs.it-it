@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Ridimensionare i controlli NamedRange'
+title: 'Procedura: ridimensionare i controlli NamedRange'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80a7fd251d525541b6894c757d7acd148900047c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7762e67b1676f72030cae8d958bef19c501660c3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252043"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545821"
 ---
-# <a name="how-to-resize-namedrange-controls"></a>Procedura: Ridimensionare i controlli NamedRange
+# <a name="how-to-resize-namedrange-controls"></a>Procedura: ridimensionare i controlli NamedRange
   È possibile impostare la dimensione di un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> quando lo si aggiunge a un documento di Microsoft Office Excel; tuttavia, potrebbe essere necessario ridimensionarlo in seguito.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "71252043"
 
 - [Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)
 
-## <a name="designtime"></a>Ridimensionare i controlli NamedRange in fase di progettazione
+## <a name="resize-namedrange-controls-at-design-time"></a><a name="designtime"></a>Ridimensionare i controlli NamedRange in fase di progettazione
  È possibile ridimensionare un intervallo denominato ridefinendone le dimensioni nella finestra di dialogo **Definisci nome** .
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>Per ridimensionare un intervallo denominato tramite la finestra di dialogo Definisci nome
@@ -55,7 +55,7 @@ ms.locfileid: "71252043"
 
 6. Fare clic su **OK**.
 
-## <a name="runtimedoclevel"></a>Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto a livello di documento
+## <a name="resize-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto a livello di documento
  Per ridimensionare a livello di codice un intervallo denominato, è possibile usare la proprietà <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> .
 
 > [!NOTE]
@@ -73,8 +73,8 @@ ms.locfileid: "71252043"
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-## <a name="runtimeaddin"></a>Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto di componente aggiuntivo VSTO
- È possibile ridimensionare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> in qualsiasi foglio di lavoro aperto in fase di esecuzione. Per altre informazioni su come aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo a un foglio di un foglio di comando usando un componente aggiuntivo VSTO, vedere [procedura: Aggiungere i controlli NamedRange ai fogli](../vsto/how-to-add-namedrange-controls-to-worksheets.md)di foglio.
+## <a name="resize-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Ridimensionare i controlli NamedRange in fase di esecuzione in un progetto di componente aggiuntivo VSTO
+ È possibile ridimensionare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> in qualsiasi foglio di lavoro aperto in fase di esecuzione. Per altre informazioni su come aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo a un foglio di dati usando un componente aggiuntivo VSTO, vedere [procedura: aggiungere controlli NamedRange a fogli di](../vsto/how-to-add-namedrange-controls-to-worksheets.md)dati.
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Per ridimensionare un intervallo denominato a livello di codice
 
@@ -95,6 +95,6 @@ ms.locfileid: "71252043"
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)
-- [Procedura: Aggiungere controlli NamedRange a fogli di foglio](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
-- [Procedura: Ridimensionare i controlli Bookmark](../vsto/how-to-resize-bookmark-controls.md)
-- [Procedura: Ridimensiona controlli ListObject](../vsto/how-to-resize-listobject-controls.md)
+- [Procedura: aggiungere controlli NamedRange a fogli di foglio](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [Procedura: ridimensionare i controlli Bookmark](../vsto/how-to-resize-bookmark-controls.md)
+- [Procedura: ridimensionare i controlli ListObject](../vsto/how-to-resize-listobject-controls.md)

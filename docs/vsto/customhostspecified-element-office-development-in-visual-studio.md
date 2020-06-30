@@ -1,9 +1,9 @@
 ---
-title: '&lt;customHostSpecified&gt; elemento (sviluppo per Office in Visual Studio)'
+title: '&lt;&gt;elemento customHostSpecified (sviluppo per Office in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26597796c99d3ab8740812819cf3aa5568e2985b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 689848f14b4540a54489b4ea5bbad67e493fe276
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956179"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544911"
 ---
-# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt; elemento (sviluppo per Office in Visual Studio)
-  Il `customHostSpecified` elemento indica che questa soluzione non è un'applicazione autonoma. Le soluzioni Office contengono componenti che sono ospitati all'interno delle applicazioni Microsoft Office.
+# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento customHostSpecified (sviluppo per Office in Visual Studio)
+  L' `customHostSpecified` elemento indica che questa soluzione non è un'applicazione autonoma. Le soluzioni Office contengono componenti ospitati all'interno di Microsoft Office applicazioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,14 +33,14 @@ ms.locfileid: "62956179"
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- Il `customHostSpecified` elemento è obbligatorio per le soluzioni Office. Questo elemento è presente il `co.v1` dello spazio dei nomi e specifica che la distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non è un'applicazione autonoma.
+ L' `customHostSpecified` elemento è obbligatorio per le soluzioni Office. Questo elemento si trova nello `co.v1` spazio dei nomi e specifica che questa distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non è un'applicazione autonoma.
 
- Questo elemento è figlio del primo `<entrypoint>` elemento nel manifesto dell'applicazione. Non può esistere alcun altri elementi figlio in quanto `<entrypoint>` elemento o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] genererà un errore di convalida durante l'installazione.
+ Questo elemento è un elemento figlio del primo `<entrypoint>` elemento nel manifesto dell'applicazione. Non possono essere presenti altri elementi figlio in tale `<entrypoint>` elemento o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] verrà generato un errore di convalida durante l'installazione.
 
- Questo elemento è non sono presenti attributi ed elementi figlio.
+ Questo elemento non ha attributi e nessun elemento figlio.
 
 ## <a name="example"></a>Esempio
- L'esempio di codice seguente illustra il `customHostSpecified` elemento in un manifesto dell'applicazione per una soluzione Office. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ Nell'esempio di codice seguente viene illustrato l' `customHostSpecified` elemento in un manifesto dell'applicazione per una soluzione Office. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
 
 ```xml
 <entryPoint>

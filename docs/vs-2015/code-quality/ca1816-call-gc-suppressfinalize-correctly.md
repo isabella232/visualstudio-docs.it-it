@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: acc86c278faa877897d294e72632762eff834a76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 532478a8d6ed6b88347d196b4a74b6f19a38ef85
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668391"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546770"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Chiamare GC.SuppressFinalize correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|CallGCSuppressFinalizeCorrectly|
 |CheckId|CA1816|
@@ -34,45 +34,45 @@ ms.locfileid: "72668391"
 
 ## <a name="cause"></a>Causa
 
-- Un metodo che rappresenta un'implementazione di <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> non chiama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Un metodo che rappresenta un'implementazione di non <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> chiama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 
-- Metodo che non è un'implementazione di <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> chiama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Metodo che non è un'implementazione delle <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> chiamate a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 
 - Un metodo chiama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> e passa un valore diverso da this (me in Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il metodo <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> consente agli utenti di rilasciare le risorse in qualsiasi momento prima che l'oggetto diventi disponibile per l'Garbage Collection. Se viene chiamato il metodo <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>, libera le risorse dell'oggetto. Questa operazione rende superflua la finalizzazione. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> deve chiamare <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> in modo che il Garbage Collector non chiami il finalizzatore dell'oggetto.
+ Il <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metodo consente agli utenti di rilasciare le risorse in qualsiasi momento prima che l'oggetto diventi disponibile per Garbage Collection. Se <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> viene chiamato il metodo, vengono liberate le risorse dell'oggetto. Questa operazione rende superflua la finalizzazione. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>deve chiamare in <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> modo che il Garbage Collector non chiami il finalizzatore dell'oggetto.
 
- Per impedire che i tipi derivati con finalizzatori debbano implementare nuovamente [System. IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) e per chiamarlo, i tipi non sealed senza finalizzatori devono comunque chiamare <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+ Per impedire che i tipi derivati con finalizzatori debbano implementare nuovamente [System. IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) e per chiamarlo, i tipi non sealed senza finalizzatori devono comunque chiamare <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola:
 
- Se il metodo è un'implementazione di <xref:System.IDisposable.Dispose%2A>, aggiungere una chiamata a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+ Se il metodo è un'implementazione di <xref:System.IDisposable.Dispose%2A> , aggiungere una chiamata a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 
- Se il metodo non è un'implementazione di <xref:System.IDisposable.Dispose%2A>, rimuovere la chiamata a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> o spostarla nell'implementazione del <xref:System.IDisposable.Dispose%2A> del tipo.
+ Se il metodo non è un'implementazione di <xref:System.IDisposable.Dispose%2A> , rimuovere la chiamata a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> o spostarla nell'implementazione del tipo <xref:System.IDisposable.Dispose%2A> .
 
  Modificare tutte le chiamate a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> per passare questo (me in Visual Basic).
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Eliminare un avviso da questa regola solo se si sta deliberando utilizzando <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> per controllare la durata di altri oggetti. Non eliminare un avviso da questa regola se un'implementazione di <xref:System.IDisposable.Dispose%2A> non chiama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>. In questa situazione, la mancata eliminazione della finalizzazione comporta un peggioramento delle prestazioni e non offre alcun vantaggio.
+ Eliminare un avviso da questa regola solo se si intende utilizzare <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> per controllare la durata di altri oggetti. Non eliminare un avviso da questa regola se un'implementazione di non <xref:System.IDisposable.Dispose%2A> chiama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> . In questa situazione, la mancata eliminazione della finalizzazione comporta un peggioramento delle prestazioni e non offre alcun vantaggio.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo che chiama erroneamente <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+ Nell'esempio seguente viene illustrato un metodo che chiama erroneamente <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 
  [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CallGCSuppressFinalizeCorrectly/CS/FxCop.Usage.CallGCSuppressFinalizeCorrectly.cs#1)]
  [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CallGCSuppressFinalizeCorrectly/VB/FxCop.Usage.CallGCSuppressFinalizeCorrectly.vb#1)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo che chiama correttamente <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+ Nell'esempio seguente viene illustrato un metodo che chiama correttamente <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 
  [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CallGCSuppressFinalizeCorrectly2/CS/FxCop.Usage.CallGCSuppressFinalizeCorrectly2.cs#1)]
  [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CallGCSuppressFinalizeCorrectly2/VB/FxCop.Usage.CallGCSuppressFinalizeCorrectly2.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2215: I metodi Dispose devono chiamare il metodo Dispose della classe base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+ [CA2215: I metodi Dispose devono chiamare Dispose della classe di base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
 
- [CA2216: I tipi Disposable devono dichiarare un finalizzatore](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+ [CA2216: I tipi eliminabili devono dichiarare un finalizzatore](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Criterio Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Modello Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

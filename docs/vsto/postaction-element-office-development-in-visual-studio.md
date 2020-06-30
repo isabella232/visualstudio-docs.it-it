@@ -1,7 +1,7 @@
 ---
-title: '&lt;postAction&gt; elemento (sviluppo per Office in Visual Studio)'
+title: '&lt;elemento postAction &gt; (sviluppo per Office in Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976525"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546939"
 ---
-# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; elemento (sviluppo per Office in Visual Studio)
+# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;elemento postAction &gt; (sviluppo per Office in Visual Studio)
   L'elemento `postAction` dello spazio dei nomi `vstav3` contiene gli elementi `entrypoint` e tutti gli elementi `postActionData` associati alle azioni post-distribuzione, che vengono eseguite dopo l'installazione delle soluzioni Office.
 
 ## <a name="syntax"></a>Sintassi
@@ -42,16 +42,16 @@ ms.locfileid: "62976525"
 
  `postAction` presenta gli elementi seguenti:
 
-### <a name="entrypoint"></a>entrypoint
- Facoltativo. Il ruolo del `entryPoint` elemento il `vstav3` dello spazio dei nomi definito in [ &#60;punti di ingresso&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+### <a name="entrypoint"></a>entryPoint
+ Facoltativa. Il ruolo dell' `entryPoint` elemento nello `vstav3` spazio dei nomi è definito in [&#60;elemento entryPoints&#62; &#40;sviluppo per Office in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="postactiondata"></a>postActionData
- Facoltativo. Il ruolo del `postActionData` elemento il `vstav3` dello spazio dei nomi definito in [ &#60;postActionData&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
+ Facoltativa. Il ruolo dell' `postActionData` elemento nello `vstav3` spazio dei nomi è definito in [&#60;elemento postActionData&#62; &#40;sviluppo per Office in Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Esempio di azione post-distribuzione
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra l'elemento `postAction` in un manifesto dell'applicazione per una soluzione Office distribuita tramite [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra l'elemento `postAction` in un manifesto dell'applicazione per una soluzione Office distribuita tramite [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di codice aggiorna il testo di segnalibro'
+title: 'Procedura: aggiornare il testo del segnalibro a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 436fefd425da46cea6a8cd1aba95fb9eb14362f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b76c239606a4bf0d6da203bd4eea45a11162706
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418957"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546952"
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>Procedura: A livello di codice aggiorna il testo di segnalibro
-  È possibile inserire testo in un segnalibro in un documento di Microsoft Office Word in modo da poter recuperare il testo in seguito o sostituire il testo in un segnalibro. Se si sviluppa una personalizzazione a livello di documento, è anche possibile aggiornare il testo in un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> associato a dati. Per altre informazioni, vedere [associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+# <a name="how-to-programmatically-update-bookmark-text"></a>Procedura: aggiornare il testo del segnalibro a livello di codice
+  È possibile inserire testo in un segnalibro in un documento di Microsoft Office Word in modo da poter recuperare il testo in seguito o sostituire il testo in un segnalibro. Se si sviluppa una personalizzazione a livello di documento, è anche possibile aggiornare il testo in un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> associato a dati. Per altre informazioni, vedere [associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -30,15 +30,15 @@ ms.locfileid: "63418957"
 
 - Controllo host <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
-   I controlli <xref:Microsoft.Office.Tools.Word.Bookmark> estendono gli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> nativi permettendo il data binding e l'esposizione di eventi. Per altre informazioni sui controlli host, vedere [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md).
+   I controlli <xref:Microsoft.Office.Tools.Word.Bookmark> estendono gli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> nativi permettendo il data binding e l'esposizione di eventi. Per ulteriori informazioni sui controlli host, vedere [Cenni preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md).
 
 - Oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> nativo.
 
    Gli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> non includono eventi né hanno funzionalità di data binding.
 
-  Quando si assegna testo a un segnalibro, il comportamento tra un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> e un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> è diverso. Per altre informazioni, vedere [Bookmark (controllo)](../vsto/bookmark-control.md).
+  Quando si assegna testo a un segnalibro, il comportamento tra un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> e un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> è diverso. Per altre informazioni, vedere [Bookmark Control](../vsto/bookmark-control.md).
 
-## <a name="use-host-controls"></a>Utilizzare i controlli host
+## <a name="use-host-controls"></a>Usare i controlli host
 
 ### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>Per aggiornare il contenuto dei segnalibri mediante un controllo Bookmark
 
@@ -50,7 +50,7 @@ ms.locfileid: "63418957"
      [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
      [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]
 
-2. Assegnare il *newText* da string al <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> proprietà del <xref:Microsoft.Office.Tools.Word.Bookmark>.
+2. Assegnare la stringa *newText* alla <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> proprietà di <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
      [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]
      [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]
@@ -67,7 +67,7 @@ ms.locfileid: "63418957"
      [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
      [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]
 
-2. Assegnare il *newText* da string al <xref:Microsoft.Office.Interop.Word.Range.Text%2A> proprietà del segnalibro, l'eliminazione automatica del segnalibro. Riaggiungere quindi il segnalibro alla raccolta <xref:Microsoft.Office.Interop.Word.Bookmarks>.
+2. Assegnare la stringa *newText* alla <xref:Microsoft.Office.Interop.Word.Range.Text%2A> proprietà del segnalibro, che elimina automaticamente il segnalibro. Riaggiungere quindi il segnalibro alla raccolta <xref:Microsoft.Office.Interop.Word.Bookmarks>.
 
      L'esempio di codice seguente può essere usato in una personalizzazione a livello di documento.
 
@@ -80,6 +80,6 @@ ms.locfileid: "63418957"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: A livello di programmazione inserire testo nei documenti di Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Procedura: inserire testo in documenti di Word a livello di codice](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)
-- [Bookmark (controllo)](../vsto/bookmark-control.md)
+- [Segnalibro (controllo)](../vsto/bookmark-control.md)

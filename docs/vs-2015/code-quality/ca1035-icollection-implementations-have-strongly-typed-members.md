@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d112e2dfb704a785db6bbc5becd2b369d90605b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2e679fb3cc62ba80cfb7b56dfd7fa6590375565e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661837"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546614"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Le implementazioni di ICollection hanno membri fortemente tipizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|
 |CheckId|CA1035|
@@ -33,23 +33,23 @@ ms.locfileid: "72661837"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico o protetto implementa <xref:System.Collections.ICollection?displayProperty=fullName> ma non fornisce un metodo fortemente tipizzato per <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. La versione fortemente tipizzata di <xref:System.Collections.ICollection.CopyTo%2A> deve accettare due parametri e non può avere una <xref:System.Array?displayProperty=fullName> o una matrice di <xref:System.Object?displayProperty=fullName> come primo parametro.
+ Un tipo pubblico o protetto implementa <xref:System.Collections.ICollection?displayProperty=fullName> ma non fornisce un metodo fortemente tipizzato per <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> . La versione fortemente tipizzata di <xref:System.Collections.ICollection.CopyTo%2A> deve accettare due parametri e non può avere un oggetto <xref:System.Array?displayProperty=fullName> o una matrice di <xref:System.Object?displayProperty=fullName> come primo parametro.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola richiede che le implementazioni <xref:System.Collections.ICollection> forniscano membri fortemente tipizzati in modo che agli utenti non venga richiesto di eseguire il cast di argomenti al tipo <xref:System.Object> quando utilizzano la funzionalità fornita dall'interfaccia. Questa regola presuppone che il tipo che implementa <xref:System.Collections.ICollection> esegue tale operazione per gestire una raccolta di istanze di un tipo più forte rispetto a <xref:System.Object>.
+ Questa regola richiede <xref:System.Collections.ICollection> che le implementazioni forniscano membri fortemente tipizzati in modo che agli utenti non venga richiesto di eseguire il cast di argomenti al <xref:System.Object> tipo quando usano la funzionalità fornita dall'interfaccia. Questa regola presuppone che il tipo che implementa <xref:System.Collections.ICollection> esegue tale operazione per gestire una raccolta di istanze di un tipo più forte rispetto a <xref:System.Object> .
 
- L'oggetto <xref:System.Collections.ICollection> implementa l'interfaccia <xref:System.Collections.IEnumerable?displayProperty=fullName>. Se gli oggetti nella raccolta si estendono <xref:System.ValueType?displayProperty=fullName>, è necessario fornire un membro fortemente tipizzato per <xref:System.Collections.IEnumerable.GetEnumerator%2A> per evitare la riduzione delle prestazioni causata dalla conversione boxing. Questa operazione non è necessaria se gli oggetti della raccolta sono un tipo di riferimento.
+ L'oggetto <xref:System.Collections.ICollection> implementa l'interfaccia <xref:System.Collections.IEnumerable?displayProperty=fullName>. Se gli oggetti nella raccolta si estendono <xref:System.ValueType?displayProperty=fullName> , è necessario fornire un membro fortemente tipizzato per <xref:System.Collections.IEnumerable.GetEnumerator%2A> per evitare la riduzione delle prestazioni causata dalla conversione boxing. Questa operazione non è necessaria se gli oggetti della raccolta sono un tipo di riferimento.
 
- Per implementare una versione fortemente tipizzata di un membro di interfaccia, implementare i membri di interfaccia in modo esplicito usando nomi nel formato `InterfaceName.InterfaceMemberName`, ad esempio <xref:System.Collections.ICollection.CopyTo%2A>. I membri di interfaccia espliciti usano i tipi di dati dichiarati dall'interfaccia. Implementare i membri fortemente tipizzati utilizzando il nome del membro di interfaccia, ad esempio <xref:System.Collections.ICollection.CopyTo%2A>. Dichiarare i membri fortemente tipizzati come Public e dichiarare i parametri e i valori restituiti in modo che siano del tipo sicuro gestito dalla raccolta. I tipi Strong sostituiscono i tipi più vulnerabili, ad esempio <xref:System.Object> e <xref:System.Array> dichiarati dall'interfaccia.
+ Per implementare una versione fortemente tipizzata di un membro di interfaccia, implementare i membri di interfaccia in modo esplicito usando nomi nel formato `InterfaceName.InterfaceMemberName` , ad esempio <xref:System.Collections.ICollection.CopyTo%2A> . I membri di interfaccia espliciti usano i tipi di dati dichiarati dall'interfaccia. Implementare i membri fortemente tipizzati utilizzando il nome del membro di interfaccia, ad esempio <xref:System.Collections.ICollection.CopyTo%2A> . Dichiarare i membri fortemente tipizzati come Public e dichiarare i parametri e i valori restituiti in modo che siano del tipo sicuro gestito dalla raccolta. I tipi Strong sostituiscono i tipi più vulnerabili, ad esempio <xref:System.Object> e, <xref:System.Array> dichiarati dall'interfaccia.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, implementare il membro di interfaccia in modo esplicito (dichiararlo come <xref:System.Collections.ICollection.CopyTo%2A>). Aggiungere il membro public fortemente tipizzato, dichiarato come `CopyTo` e richiedere una matrice fortemente tipizzata come primo parametro.
+ Per correggere una violazione di questa regola, implementare il membro di interfaccia in modo esplicito (dichiararlo come <xref:System.Collections.ICollection.CopyTo%2A> ). Aggiungere il membro pubblico fortemente tipizzato, dichiarato come `CopyTo` e richiedere una matrice fortemente tipizzata come primo parametro.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Eliminare un avviso da questa regola se si implementa una nuova raccolta basata su oggetti, ad esempio un albero binario, in cui i tipi che estendono la nuova raccolta determinano il tipo sicuro. Questi tipi devono essere conformi a questa regola ed esporre membri fortemente tipizzati.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato il modo corretto per implementare <xref:System.Collections.ICollection>.
+ Nell'esempio seguente viene illustrato il modo corretto per implementare <xref:System.Collections.ICollection> .
 
  [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ICollectionStrongTypes/cs/FxCop.Design.ICollectionStrongTypes.cs#1)]
 

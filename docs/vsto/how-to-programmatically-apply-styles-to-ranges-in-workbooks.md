@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro'
+title: 'Procedura: applicare stili agli intervalli nelle cartelle di lavoro a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f74b2d08a268bc79bcd7d2fd33513b5ccf5b1415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6f115468bccc2d805b019b9a0ef15cea3605f36
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817453"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546159"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Procedura: applicare stili agli intervalli nelle cartelle di lavoro a livello di codice
   È possibile applicare stili denominati alle aree nelle cartelle di lavoro. Excel fornisce alcuni stili predefiniti:
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "62817453"
      [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con intervalli](../vsto/working-with-ranges.md)
+- [Usare gli intervalli](../vsto/working-with-ranges.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)
 - [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

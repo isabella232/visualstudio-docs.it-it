@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 64ac9835a085908645713f95f1f07c283d807852
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657053"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547979"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
 - Accesso alle origini dati tramite la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per completare questa procedura dettagliata, è necessario disporre di:
 
 - Visual Studio Enterprise
@@ -47,7 +47,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>Per aggiungere un file app.config al progetto
 
-1. Se per il progetto di test esiste già un file app.config, passare a [Definire una sezione di configurazione personalizzata](#DefineCustomConfigurationSection).
+1. Se il progetto di test dispone già di un file di app.config, passare a [definire una sezione di configurazione personalizzata](#DefineCustomConfigurationSection).
 
 2. Fare clic con il pulsante destro del mouse sul progetto di test in **Esplora soluzioni**, scegliere **Aggiungi** e quindi fare clic su **Nuovo elemento**.
 
@@ -55,7 +55,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
 3. Selezionare il modello **File di configurazione dell'applicazione** e fare clic su **Aggiungi**.
 
-## <a name="DefineCustomConfigurationSection"></a> Definire una sezione di configurazione personalizzata
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>Definire una sezione di configurazione personalizzata
  Esaminare il file app.config. Il file contiene almeno la dichiarazione XML e un elemento radice.
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Per aggiungere la sezione di configurazione personalizzata nel file app. config
@@ -94,7 +94,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
  Nel secondo elemento `add`, creare i seguenti attributi e valori per una connessione a un foglio di calcolo di Microsoft Excel:
 
-|||
+|Attributo|Valori|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +102,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
  L'elemento `connectionStrings` dovrebbe essere simile al seguente:
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -132,7 +132,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
 4. Nel primo elemento `add`, creare i seguenti attributi e valori per un'origine dati di Microsoft Access:
 
-|Attributo|Valori|
+|Attributo|valore|
 |---------------|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
@@ -141,7 +141,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
  Nel secondo elemento `add`, creare i seguenti attributi e valori per un'origine dati di Microsoft Excel:
 
-|||
+|Attributo|valore|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -150,7 +150,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
  L'elemento `microsoft.visualstudio.testtools` dovrebbe essere simile al seguente:
 
-```
+```xml
 <microsoft.visualstudio.testtools>
     <dataSources>
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>
@@ -161,7 +161,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
  Il file app.config finale dovrebbe essere simile al seguente:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <configSections>
@@ -223,7 +223,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 
 2. Sostituire il contenuto generato automaticamente dello unit test con il codice seguente:
 
-    ```
+    ```csharp
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 

@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73f94c45568a55cc098dd223deca9dab404f44ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b584e355f5b64984f57dd17606dfb0a2f781c62d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651640"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547667"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Non contrassegnare le enumerazioni con FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotMarkEnumsWithFlags|
 |CheckId|CA2217|
@@ -36,7 +36,7 @@ ms.locfileid: "72651640"
  Un'enumerazione visibile esternamente è contrassegnata con <xref:System.FlagsAttribute> e contiene uno o più valori che non sono potenze di due o una combinazione degli altri valori definiti nell'enumerazione.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un'enumerazione deve avere <xref:System.FlagsAttribute> presente solo se ogni valore definito nell'enumerazione è una potenza di due o una combinazione di valori definiti.
+ Un'enumerazione deve essere <xref:System.FlagsAttribute> presente solo se ogni valore definito nell'enumerazione è una potenza di due o una combinazione di valori definiti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, rimuovere <xref:System.FlagsAttribute> dall'enumerazione.
@@ -45,7 +45,7 @@ ms.locfileid: "72651640"
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrata un'enumerazione, color, che contiene il valore 3, che non è una potenza di due, né una combinazione di nessuno dei valori definiti. L'enumerazione dei colori non deve essere contrassegnata con l'<xref:System.FlagsAttribute>.
+ Nell'esempio seguente viene illustrata un'enumerazione, color, che contiene il valore 3, che non è una potenza di due, né una combinazione di nessuno dei valori definiti. L'enumerazione dei colori non deve essere contrassegnata con <xref:System.FlagsAttribute> .
 
  [!code-cpp[FxCop.Usage.EnumNoFlags#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags/cpp/FxCop.Usage.EnumNoFlags.cpp#1)]
  [!code-csharp[FxCop.Usage.EnumNoFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags/cs/FxCop.Usage.EnumNoFlags.cs#1)]

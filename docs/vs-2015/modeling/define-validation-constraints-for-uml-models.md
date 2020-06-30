@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849732"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547589"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definire vincoli di convalida per i modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "75849732"
 
  Per individuare le versioni di Visual Studio che supportano i modelli UML, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="requirements"></a>Requisiti di
+## <a name="requirements"></a>Requisiti
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -42,9 +42,9 @@ ms.locfileid: "75849732"
 ## <a name="defining-a-validation-extension"></a>Definizione di un'estensione di convalida
  Per creare un'estensione di convalida per una finestra di progettazione UML, è necessario creare una classe che definisca i vincoli di convalida e incorporare la classe in un'estensione VSIX (Visual Studio Integration Extension). L'estensione VSIX è un contenitore che può installare il vincolo. Esistono due metodi alternativi per definire un'estensione di convalida:
 
-- **Creare un'estensione di convalida nella relativa estensione VSIX usando un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i vincoli di convalida con altri tipi di estensione, ad esempio comandi di menu, elementi della casella degli strumenti personalizzati o gestori di movimento. È possibile definire più vincoli in una classe.
+- **Creare un'estensione di convalida nella relativa estensione VSIX con un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i vincoli di convalida con altri tipi di estensione, ad esempio comandi di menu, elementi della casella degli strumenti personalizzati o gestori di movimento. È possibile definire più vincoli in una classe.
 
-- **Creare una classe di convalida separata e progetti VSIX.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.
+- **Creare la classe di convalida separata e progetti VSIX.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.
 
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Per creare un'estensione di convalida nella relativa estensione VSIX
 
@@ -63,7 +63,7 @@ ms.locfileid: "75849732"
 
 4. Testare i vincoli premendo F5. Per altre informazioni, vedere [Esecuzione di un vincolo di convalida](#Executing).
 
-5. Installare il comando di menu in un altro computer copiando il file **bin\\\*\\\*. vsix** compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).
+5. Installare il comando di menu in un altro computer copiando il file **bin \\ \* \\ \* . vsix** compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).
 
    Quando si aggiungono altri file **.cs** , in genere vengono richieste le istruzioni `using` seguenti:
 
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. Creare un progetto di libreria di classi, aggiungendolo a una soluzione VSIX esistente oppure creando una nuova soluzione.
 
-    1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+    1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
     2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.
 
@@ -105,11 +105,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     3. Nella scheda **Asset** scegliere **Nuovo**e nella finestra di dialogo impostare le opzioni seguenti:
 
-         **Tipo** = **Componente MEF**
+         **Tipo**  =  di **Componente MEF**
 
-         **Origine** = **Progetto nella soluzione corrente**
+         **Origine**  =  dati **Progetto nella soluzione corrente**
 
-         **Progetto** = *Progetto di libreria di classi*
+         **Progetto**  =  di *Progetto di libreria di classi*
 
 #### <a name="to-define-the-validation-class"></a>Per definire la classe di convalida
 
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="Executing"></a>Esecuzione di un vincolo di convalida
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>Esecuzione di un vincolo di convalida
  A scopo di test, eseguire i metodi di convalida in modalità debug.
 
 #### <a name="to-test-the-validation-constraint"></a>Per testare il vincolo di convalida
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.
 
-    - In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **debug** . Assicurarsi che la stringa nel campo **Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:
+    - In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **debug** . Assicurarsi che la stringa nel campo **Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , in genere:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Gli attributi `Export` e `ValidationMethod` corretti siano aggiunti ai metodi di convalida.
 
-    - `ValidationCategories.Menu` è incluso nell'argomento per l'attributo `ValidationMethod` e viene composto con altri valori utilizzando OR logico (&#124;).
+    - `ValidationCategories.Menu`è incluso nell'argomento per l' `ValidationMethod` attributo e viene composto con altri valori usando Logical OR (&#124;).
 
     - I parametri di tutti gli attributi `Import` e `Export` siano validi.
 
-## <a name="Implementing"></a>Valutazione del vincolo
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>Valutazione del vincolo
  Il metodo di convalida dovrebbe determinare se il vincolo di convalida che si vuole applicare sia true o false. Se è true, non dovrebbe fare nulla. Se è false, dovrebbe segnalare un errore usando i metodi forniti dal parametro `ValidationContext` .
 
 > [!NOTE]
@@ -256,10 +256,10 @@ public void ValidateSomething
 
  Gli attributi e i parametri di ogni metodo di convalida sono i seguenti:
 
-|||
+|Firma|Descrizione|
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|Definisce il metodo come vincolo di convalida usando Managed Extensibility Framework (MEF).|
-|`[ValidationMethod (ValidationCategories.Menu)]`|Specifica quando la convalida verrà eseguita. Utilizzare OR bit per&#124;bit () se si desidera combinare più di un'opzione.<br /><br /> `Menu` = richiamato dal menu Convalida.<br /><br /> `Save` = richiamato al salvataggio del modello.<br /><br /> `Open` = richiamato all'apertura del modello. `Load` = richiamato al salvataggio del modello, ma in caso di violazione avvisa l'utente che potrebbe non essere possibile riaprire il modello. Chiamato anche in fase di caricamento, prima che il modello venga analizzato.|
+|`[ValidationMethod (ValidationCategories.Menu)]`|Specifica quando la convalida verrà eseguita. Utilizzare OR bit per bit (&#124;) se si desidera combinare più di un'opzione.<br /><br /> `Menu` = richiamato dal menu Convalida.<br /><br /> `Save` = richiamato al salvataggio del modello.<br /><br /> `Open` = richiamato all'apertura del modello. `Load` = richiamato al salvataggio del modello, ma in caso di violazione avvisa l'utente che potrebbe non essere possibile riaprire il modello. Chiamato anche in fase di caricamento, prima che il modello venga analizzato.|
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|Sostituire il secondo parametro `IElement` con il tipo di elemento a cui si vuole applicare il vincolo. Il metodo del vincolo verrà richiamato su tutti gli elementi nel tipo specificato.<br /><br /> Il nome del metodo non è importante.|
 
  È possibile definire tutti i metodi di convalida che si vuole, con tipi diversi nel secondo parametro. Quando la convalida viene richiamata, ogni metodo di convalida verrà chiamato su ogni elemento del modello conforme al tipo di parametro.
@@ -275,7 +275,7 @@ public void ValidateSomething
 
 - `elementsWithError` identifica gli elementi del modello. Quando l'utente fa doppio clic sulla segnalazione errori, verrà selezionata la forma che rappresenta questo elemento.
 
-  `LogError(),` `LogWarning()` e `LogMessage()` inserire i messaggi in sezioni diverse dell'elenco errori.
+  `LogError(),``LogWarning()`e `LogMessage()` inserire i messaggi in sezioni diverse dell'elenco errori.
 
 ## <a name="how-validation-methods-are-applied"></a>Come vengono applicati i metodi di convalida
  La convalida viene applicata a ogni elemento del modello, incluse le relazioni e le parti di elementi più grandi, ad esempio gli attributi di una classe e i parametri di un'operazione.
@@ -349,21 +349,21 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="ContextCache"></a>Coordinamento di più convalide
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>Coordinamento di più convalide
  Quando la convalida viene richiamata, ad esempio dall'utente da un menu del diagramma, ogni metodo di convalida viene applicato a ogni elemento del modello, vale a dire che, in una singola chiamata del framework di convalida, lo stesso metodo può essere applicato più volte a elementi diversi.
 
  Questo comportamento è un problema per le convalide che coinvolgono le relazioni tra gli elementi. Ad esempio, si potrebbe scrivere una convalida che inizia da un caso d'uso e attraversa le relazioni **include** per verificare che non siano presenti cicli. Quando però il metodo viene applicato a ogni caso d'uso in un modello con molti collegamenti **include** , è probabile che le stesse aree del modello vengano elaborate più volte.
 
  Per evitare questa situazione, esiste una cache di contesto in cui le informazioni vengono conservate durante l'esecuzione di una convalida. È possibile usarla per passare le informazioni da un'esecuzione all'altra dei metodi di convalida. Ad esempio, si potrebbe archiviare un elenco degli elementi già coinvolti nell'esecuzione di questa convalida. La cache viene creata all'inizio dell'esecuzione di ogni convalida e non può essere usata per passare informazioni da un'esecuzione di convalida all'altra.
 
-|||
+|Sintassi|Descrizione|
 |-|-|
 |`context.SetCacheValue<T> (name, value)`|Archivia un valore|
 |`context.TryGetCacheValue<T> (name, out value)`|Ottiene un valore. Se riesce, restituisce true.|
 |`context.GetValue<T>(name)`|Ottiene un valore.|
 |`Context.GetValue<T>()`|Ottiene un valore del tipo specificato.|
 
-## <a name="Installing"></a>Installazione e disinstallazione di un'estensione
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installazione e disinstallazione di un'estensione
  È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri.
 
 #### <a name="to-install-an-extension"></a>Per installare un'estensione
@@ -372,7 +372,7 @@ context.LogError(... , usecase);
 
     1. In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto VSIX.
 
-    2. Individuare il file **bin\\\*\\** _progettoutente_ **. vsix**
+    2. Individuare il file **bin \\ \* \\ **_progettoutente_**. vsix**
 
 2. Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.
 
@@ -392,11 +392,11 @@ context.LogError(... , usecase);
 
 3. Selezionare l'estensione e quindi scegliere **Disinstalla**.
 
-   Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente, in cui *% LocalAppData%* è in genere *driveName*: \Users\\*username*\AppData\Local:
+   Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente, in cui *% LocalAppData%* è in genere *driveName*: \Users \\ *username*\AppData\Local:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio\\[versione] \Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio \\ [versione] \Extensions**
 
-## <a name="Example"></a> Esempio
+## <a name="example"></a><a name="Example"></a>Esempio
  In questo esempio vengono trovati i cicli nella relazione di dipendenza tra gli elementi.
 
  La convalida verrà eseguita sia durante il salvataggio che sul comando di menu Convalida.

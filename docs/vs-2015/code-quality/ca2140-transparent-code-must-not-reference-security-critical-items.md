@@ -17,17 +17,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c3e624e4210e59406fd1d5955cd37c2e83ed79a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6f11125f43fd06b0442d1c40cbd4da41e346fd1d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602872"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546458"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Il codice Transparent non deve far riferimento a elementi SecurityCritical
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
 |CheckId|CA2140|
@@ -54,16 +54,16 @@ ms.locfileid: "72602872"
 - Restituisce un tipo contrassegnato come critico per la sicurezza
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un elemento di codice contrassegnato con l'attributo <xref:System.Security.SecurityCriticalAttribute> è critico per la sicurezza. Un metodo trasparente non può usare un elemento critico per la sicurezza. Se un tipo trasparente tenta di usare un tipo critico per la sicurezza, viene generato un <xref:System.TypeAccessException>, <xref:System.MethodAccessException> o <xref:System.FieldAccessException>.
+ Un elemento di codice contrassegnato con l' <xref:System.Security.SecurityCriticalAttribute> attributo è critico per la sicurezza. Un metodo trasparente non può usare un elemento critico per la sicurezza. Se un tipo trasparente tenta di utilizzare un tipo critico per la sicurezza <xref:System.TypeAccessException> , viene generato un oggetto, <xref:System.MethodAccessException> o <xref:System.FieldAccessException> .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, effettuare una delle operazioni seguenti:
 
-- Contrassegnare l'elemento di codice che usa il codice critico per la sicurezza con l'attributo <xref:System.Security.SecurityCriticalAttribute>
+- Contrassegnare l'elemento di codice che utilizza il codice critico per la sicurezza con l' <xref:System.Security.SecurityCriticalAttribute> attributo
 
-     \- oppure -
+     \- - oppure -
 
-- Rimuovere l'attributo <xref:System.Security.SecurityCriticalAttribute> dagli elementi di codice contrassegnati come critici per la sicurezza e contrassegnarli invece con l'attributo <xref:System.Security.SecuritySafeCriticalAttribute> o <xref:System.Security.SecurityTransparentAttribute>.
+- Rimuovere l' <xref:System.Security.SecurityCriticalAttribute> attributo dagli elementi di codice contrassegnati come SecurityCritical e contrassegnarli invece con l' <xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> attributo o.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.

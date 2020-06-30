@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Recuperano una cartella in base al nome'
+title: 'Procedura: recuperare una cartella per nome a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 901de848b22f344ded2d71b11e9859917b8382d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955729"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547108"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Procedura: Recuperano una cartella in base al nome
-  Questo esempio Ottiene un riferimento a una cartella personalizzata denominata e quindi Visualizza il contenuto della cartella.
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Procedura: recuperare una cartella per nome a livello di codice
+  Questo esempio Mostra come ottenere un riferimento a una cartella personalizzata denominata e quindi visualizzare il contenuto della cartella.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,10 +30,10 @@ ms.locfileid: "62955729"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
-- Una cartella denominata TestFolder.
+- Cartella denominata TestFolder.
 
 ## <a name="see-also"></a>Vedere anche
-- [Con le cartelle di lavoro](../vsto/working-with-folders.md)
-- [Procedura: Eseguire la ricerca a livello di codice all'interno di una cartella specifica](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Procedura: Eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
-- [Procedura: A livello di programmazione creare cartelle personalizzate](../vsto/how-to-programmatically-create-custom-folder-items.md)
+- [Usare le cartelle](../vsto/working-with-folders.md)
+- [Procedura: eseguire una ricerca all'interno di una cartella specifica a livello di codice](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Procedura: eseguire la ricerca di un contatto specifico a livello di codice](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Procedura: creare elementi di cartelle personalizzate a livello di codice](../vsto/how-to-programmatically-create-custom-folder-items.md)

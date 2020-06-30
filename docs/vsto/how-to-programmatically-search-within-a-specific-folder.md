@@ -1,7 +1,7 @@
 ---
-title: "Procedura: Eseguire la ricerca a livello di codice all'interno di una cartella specifica"
+title: "Procedura: eseguire una ricerca all'interno di una cartella specifica a livello di codice"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ac3dbb169fee82a55cc41b773d3616c56f83534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f5e0f098edcffce07eb2c3f243b994d1a53cdf9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961901"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547017"
 ---
-# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Procedura: Eseguire la ricerca a livello di codice all'interno di una cartella specifica
-  Questo esempio di codice Usa il `Find` e `FindNext` metodi per eseguire la ricerca di testo nel campo oggetto dei messaggi di posta elettronica nel **posta in arrivo**. Questo metodo Usa un filtro di stringa da verificare per la lettera T come lettera iniziale del `Subject` testo.
+# <a name="how-to-programmatically-search-within-a-specific-folder"></a>Procedura: eseguire una ricerca all'interno di una cartella specifica a livello di codice
+  Questo esempio di codice usa `Find` i `FindNext` metodi e per cercare il testo nel campo oggetto dei messaggi di posta elettronica presenti nella **posta in arrivo**. Questo metodo utilizza un filtro di stringa per verificare la lettera T come lettera iniziale del `Subject` testo.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -28,6 +28,6 @@ ms.locfileid: "62961901"
  [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Con le cartelle di lavoro](../vsto/working-with-folders.md)
-- [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)
-- [Procedura: Recuperano una cartella in base al nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Usare le cartelle](../vsto/working-with-folders.md)
+- [Panoramica del modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)
+- [Procedura: recuperare una cartella per nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

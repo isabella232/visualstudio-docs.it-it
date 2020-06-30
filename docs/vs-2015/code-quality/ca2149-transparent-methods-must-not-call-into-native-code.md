@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1852e7a5cbaa2d25f93618b22d01d23e8a953dcb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5c1e254ae7912efbb6773155ed834e54a1db1832
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667439"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546328"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: I metodi Transparent non devono effettuare chiamate nel codice nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|TransparentMethodsMustNotCallNativeCode|
 |CheckId|CA2149|
@@ -32,10 +32,10 @@ ms.locfileid: "72667439"
  Un metodo chiama una funzione nativa tramite uno stub di metodo, ad esempio P/Invoke.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola funziona su qualsiasi metodo trasparente che chiama direttamente in codice nativo, ad esempio, tramite P/Invoke. Le violazioni di questa regola conducono a una <xref:System.MethodAccessException> nel modello di trasparenza di livello 2 e a una richiesta completa di <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> nel modello di trasparenza di livello 1.
+ Questa regola funziona su qualsiasi metodo trasparente che chiama direttamente in codice nativo, ad esempio, tramite P/Invoke. Le violazioni di questa regola conducono a <xref:System.MethodAccessException> nel modello di trasparenza di livello 2 e a una richiesta completa per <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> nel modello di trasparenza di livello 1.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, contrassegnare il metodo che chiama il codice nativo con l'attributo <xref:System.Security.SecurityCriticalAttribute> o <xref:System.Security.SecuritySafeCriticalAttribute>.
+ Per correggere una violazione di questa regola, contrassegnare il metodo che chiama il codice nativo con <xref:System.Security.SecurityCriticalAttribute> l' <xref:System.Security.SecuritySafeCriticalAttribute> attributo o.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.

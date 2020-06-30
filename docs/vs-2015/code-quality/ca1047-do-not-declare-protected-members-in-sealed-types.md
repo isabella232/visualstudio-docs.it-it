@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ebc6732e559b70e753a44b14cf45b7de9fc150d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e115b4d327f1ac45673de491ceaffc90941e1111
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668174"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546783"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Non dichiarare membri protetti nei tipi sealed
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Non dichiarare membri protected nei tipi sealed
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
@@ -33,12 +33,12 @@ ms.locfileid: "72668174"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico è `sealed` (`NotInheritable` in Visual Basic) e dichiara un membro protetto o un tipo annidato protetto. Questa regola non segnala le violazioni per <xref:System.Object.Finalize%2A> metodi, che devono seguire questo modello.
+ Un tipo pubblico è `sealed` ( `NotInheritable` in Visual Basic) e dichiara un membro protetto o un tipo annidato protetto. Questa regola non segnala le violazioni dei <xref:System.Object.Finalize%2A> metodi, che devono seguire questo modello.
 
 ## <a name="rule-description"></a>Descrizione della regola
  I tipi dichiarano membri protetti in modo che i tipi che ereditano possano accedere al membro o eseguirne l'override. Per definizione, non è possibile ereditare da un tipo sealed, il che significa che non è possibile chiamare metodi protetti su tipi sealed.
 
- Il C# compilatore genera un avviso per l'errore.
+ Il compilatore C# genera un avviso per l'errore.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, impostare il livello di accesso del membro su privato o rendere il tipo ereditabile.

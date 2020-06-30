@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d20407d7cc708ac785e4a792bf8e64768ea58540
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d63ef6ff3647742e931fd05f59c66b40059ad00
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667381"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546367"
 ---
-# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Eseguire il rethrow per conservare i dettagli dello stack
+# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Eseguire il rethrow per mantenere i dettagli dello stack
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|RethrowToPreserveStackDetails|
 |CheckId|CA2200|
@@ -33,10 +33,10 @@ ms.locfileid: "72667381"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Viene generata nuovamente un'eccezione e l'eccezione viene specificata in modo esplicito nell'istruzione `throw`.
+ Viene generata nuovamente un'eccezione e l'eccezione viene specificata in modo esplicito nell' `throw` istruzione.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Una volta generata un'eccezione, parte delle informazioni che contiene è la traccia dello stack. La traccia dello stack è un elenco della gerarchia di chiamata del metodo che inizia con il metodo che genera l'eccezione e termina con il metodo che rileva l'eccezione. Se un'eccezione viene generata di nuovo specificando l'eccezione nell'istruzione `throw`, l'analisi dello stack viene riavviata nel metodo corrente e l'elenco di chiamate al metodo tra il metodo originale che ha generato l'eccezione e il metodo corrente viene perso. Per memorizzare le informazioni originali della traccia dello stack con l'eccezione, utilizzare l'istruzione `throw` senza specificare l'eccezione.
+ Una volta generata un'eccezione, parte delle informazioni che contiene è la traccia dello stack. La traccia dello stack è un elenco della gerarchia di chiamata del metodo che inizia con il metodo che genera l'eccezione e termina con il metodo che rileva l'eccezione. Se un'eccezione viene generata di nuovo specificando l'eccezione nell' `throw` istruzione, l'analisi dello stack viene riavviata nel metodo corrente e l'elenco di chiamate al metodo tra il metodo originale che ha generato l'eccezione e il metodo corrente viene perso. Per memorizzare le informazioni originali della traccia dello stack con l'eccezione, utilizzare l' `throw` istruzione senza specificare l'eccezione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, generare nuovamente l'eccezione senza specificare in modo esplicito l'eccezione.
@@ -45,7 +45,7 @@ ms.locfileid: "72667381"
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo, `CatchAndRethrowExplicitly`, che viola la regola e un metodo, `CatchAndRethrowImplicitly`, che soddisfa la regola.
+ Nell'esempio seguente viene illustrato un metodo, `CatchAndRethrowExplicitly` , che viola la regola e un metodo, `CatchAndRethrowImplicitly` , che soddisfa la regola.
 
  [!code-csharp[FxCop.Usage.Rethrow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.Rethrow/cs/FxCop.Usage.Rethrow.cs#1)]
  [!code-vb[FxCop.Usage.Rethrow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.Rethrow/vb/FxCop.Usage.Rethrow.vb#1)]

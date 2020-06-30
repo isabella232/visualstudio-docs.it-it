@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: configurare un computer per sviluppare soluzioni Office'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb29dc4151bc457eb60ce836986817bc1b0137c9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 3b13aa65e4dd5868a36e0dd833351b1d1751d8b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985958"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546172"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Procedura: configurare un computer per sviluppare soluzioni Office
   Per configurare un computer di sviluppo in modo tale da poter utilizzare gli strumenti di sviluppo di Microsoft Office in Visual Studio, seguire le istruzioni in questo argomento. Per seguire la procedura, è necessario disporre dei privilegi amministrativi sul computer di sviluppo.
@@ -31,10 +31,10 @@ ms.locfileid: "72985958"
 
      Assicurarsi inoltre di installare gli assembly di interoperabilità primari per la versione di Office installata. Per impostazione predefinita, gli assembly di interoperabilità primari vengono installati con Office. Se si modifica il programma di installazione di Office, assicurarsi che sia selezionata la funzionalità **Supporto programmabilità .NET** per le applicazioni di destinazione.
 
-3. Se si dispone di una versione in lingua inglese di Visual Studio, ma si utilizzano le impostazioni non in lingua inglese per Windows, è possibile installare il Language Pack [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] per visualizzare i messaggi di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nella stessa lingua di Windows. Le versioni non in lingua inglese di Visual Studio installano automaticamente il language pack. Il Language Pack è disponibile nell' [area download Microsoft](https://www.microsoft.com/download/details.aspx?id=54246).
+3. Se si dispone di una versione in lingua inglese di Visual Studio, ma si utilizzano le impostazioni non in lingua inglese per Windows, è possibile installare il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Language Pack per visualizzare i [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] messaggi nella stessa lingua di Windows. Le versioni non in lingua inglese di Visual Studio installano automaticamente il language pack. Il Language Pack è disponibile nell' [area download Microsoft](https://www.microsoft.com/download/details.aspx?id=54246).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Introduzione &#40;allo sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Introduzione &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Procedura: installare la Strumenti di Visual Studio per Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [Procedura: installare assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

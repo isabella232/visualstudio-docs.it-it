@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di programmazione chiudere cartelle di lavoro'
+title: 'Procedura: chiudere cartelle di lavoro a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea2ec3162ae7ffdee20f65452f67b0ddf4cc2dd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d3fe0f929632bd7021def9f6597182aa8fea87b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575403"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547498"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>Procedura: A livello di programmazione chiudere cartelle di lavoro
+# <a name="how-to-programmatically-close-workbooks"></a>Procedura: chiudere cartelle di lavoro a livello di codice
   È possibile chiudere la cartella di lavoro attiva o specificare una cartella di lavoro da chiudere.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -53,9 +53,9 @@ ms.locfileid: "62575403"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con le cartelle di lavoro](../vsto/working-with-workbooks.md)
-- [Procedura: A livello di programmazione salvare cartelle di lavoro](../vsto/how-to-programmatically-save-workbooks.md)
-- [Procedura: A livello di codice aprire cartelle di lavoro](../vsto/how-to-programmatically-open-workbooks.md)
-- [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Utilizzare le cartelle di lavoro](../vsto/working-with-workbooks.md)
+- [Procedura: salvare cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-save-workbooks.md)
+- [Procedura: aprire cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-open-workbooks.md)
+- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)
+- [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)

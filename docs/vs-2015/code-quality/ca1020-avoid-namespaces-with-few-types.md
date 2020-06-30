@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 81eaf2735869668b86ca8879478e3d76d77a2811
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0ddd69c62eb4d6b818410a588967c1e23f164f9a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662307"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546731"
 ---
-# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Evitare l'utilizzo di spazi dei nomi con un numero ridotto di tipi
+# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Evitare l'uso di spazi dei nomi con un numero ridotto di tipi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AvoidNamespacesWithFewTypes|
 |CheckId|CA1020|
@@ -36,10 +36,10 @@ ms.locfileid: "72662307"
  Uno spazio dei nomi diverso dallo spazio dei nomi globale contiene meno di cinque tipi.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Verificare che ogni spazio dei nomi disponga di un'organizzazione logica e che esista un motivo valido per inserire i tipi in uno spazio dei nomi con popolamento sparse. Gli spazi dei nomi devono contenere i tipi utilizzati insieme nella maggior parte degli scenari. Quando le applicazioni si escludono a vicenda, i tipi devono trovarsi in spazi dei nomi distinti. Lo spazio dei nomi <xref:System.Web.UI>, ad esempio, contiene i tipi utilizzati nelle applicazioni Web e lo spazio dei nomi <xref:System.Windows.Forms> contiene i tipi utilizzati nelle applicazioni basate su [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)]. Anche se entrambi gli spazi dei nomi includono tipi che controllano aspetti dell'interfaccia utente, questi tipi non sono progettati per l'uso nella stessa applicazione. Si trovano quindi in spazi dei nomi distinti. Un'organizzazione dello spazio dei nomi attenta può essere utile anche perché aumenta l'individuabilità di una funzionalità. Esaminando la gerarchia dello spazio dei nomi, i consumer della libreria devono essere in grado di individuare i tipi che implementano una funzionalità.
+ Verificare che ogni spazio dei nomi disponga di un'organizzazione logica e che esista un motivo valido per inserire i tipi in uno spazio dei nomi con popolamento sparse. Gli spazi dei nomi devono contenere i tipi utilizzati insieme nella maggior parte degli scenari. Quando le applicazioni si escludono a vicenda, i tipi devono trovarsi in spazi dei nomi distinti. Ad esempio, lo <xref:System.Web.UI> spazio dei nomi contiene i tipi utilizzati nelle applicazioni Web e lo <xref:System.Windows.Forms> spazio dei nomi contiene i tipi utilizzati nelle [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] applicazioni basate su. Anche se entrambi gli spazi dei nomi includono tipi che controllano aspetti dell'interfaccia utente, questi tipi non sono progettati per l'uso nella stessa applicazione. Si trovano quindi in spazi dei nomi distinti. Un'organizzazione dello spazio dei nomi attenta può essere utile anche perché aumenta l'individuabilità di una funzionalità. Esaminando la gerarchia dello spazio dei nomi, i consumer della libreria devono essere in grado di individuare i tipi che implementano una funzionalità.
 
 > [!NOTE]
-> I tipi e le autorizzazioni della fase di progettazione non devono essere Uniti in altri spazi dei nomi per conformarsi a questa linea guida. Questi tipi appartengono ai rispettivi spazi dei nomi sotto lo spazio dei nomi principale e gli spazi dei nomi devono terminare rispettivamente con `.Design` e `.Permissions`.
+> I tipi e le autorizzazioni della fase di progettazione non devono essere Uniti in altri spazi dei nomi per conformarsi a questa linea guida. Questi tipi appartengono ai rispettivi spazi dei nomi sotto lo spazio dei nomi principale e gli spazi dei nomi devono `.Design` terminare `.Permissions` rispettivamente con e.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, provare a combinare gli spazi dei nomi che contengono solo pochi tipi in un singolo spazio dei nomi.

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: personalizzare una scheda incorporata'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3550c3bd48a02d5daf4ef7156960e8a8fab3b93a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5f73ec7a8555a5e5d569d4316ca619747550bf11
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985951"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547186"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Procedura: personalizzare una scheda incorporata
   È possibile aggiungere gruppi e controlli a una scheda incorporata. Una scheda incorporata è una scheda già presente sulla barra multifunzione di un'applicazione Microsoft Office. Ad esempio, la scheda **dati** è una scheda incorporata in Excel. Quando si crea un gruppo personalizzato, esso viene visualizzato per ultimo nella scheda, ma è possibile spostarlo in un punto qualsiasi della scheda.
@@ -69,7 +69,7 @@ ms.locfileid: "72985951"
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)
-- [XML della barra multifunzione](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Procedura dettagliata: creare una scheda personalizzata usando il codice XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)
