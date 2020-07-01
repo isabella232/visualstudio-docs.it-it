@@ -10,4 +10,4 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68147090"
 ---
-Deserializers non sicuri sono vulnerabili durante la deserializzazione di dati non attendibili. Un utente malintenzionato potrebbe modificare i dati serializzati per includere i tipi imprevisti per l'inserimento di oggetti con effetti collaterali dannosi. Un attacco contro un deserializzatore non sicuro può, ad esempio, eseguire i comandi nel sistema operativo sottostante, comunichi sulla rete o eliminare file.
+I deserializzatori non sicuri sono vulnerabili durante la deserializzazione di dati non attendibili. Un utente malintenzionato potrebbe modificare i dati serializzati per includere tipi imprevisti per inserire oggetti con effetti collaterali dannosi. Un attacco contro un deserializzatore non sicuro potrebbe, ad esempio, eseguire comandi sul sistema operativo sottostante, comunicare in rete o eliminare file.

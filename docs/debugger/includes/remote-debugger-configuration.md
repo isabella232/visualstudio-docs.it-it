@@ -20,29 +20,29 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68149210"
 ---
-1. Nel computer remoto, trovare e avviare il **Remote Debugger** dalle **avviare** menu. 
+1. Nel computer remoto individuare e avviare il **debugger remoto** dal menu **Start** . 
    
-   Se non hai le autorizzazioni amministrative nel computer remoto, fare doppio clic il **Remote Debugger** app e selezionare **Esegui come amministratore**. In caso contrario, semplicemente avviare normalmente.
+   Se non si dispone di autorizzazioni amministrative nel computer remoto, fare clic con il pulsante destro del mouse sull'app **remote debugger** e scegliere **Esegui come amministratore**. In caso contrario, è sufficiente avviarlo normalmente.
 
-   Se si prevede di collegare a un processo di cui è in esecuzione come amministratore o è in esecuzione in un altro utente dell'account (ad esempio IIS), fare doppio clic il **Remote Debugger** app e selezionare **Esegui come amministratore**. Per altre informazioni, vedere [eseguire il debugger remoto come amministratore](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
+   Se si prevede di connettersi a un processo in esecuzione come amministratore o se è in esecuzione con un account utente diverso (ad esempio IIS), fare clic con il pulsante destro del mouse sull'app **debugger remoto** e scegliere **Esegui come amministratore**. Per altre informazioni, vedere [eseguire il debugger remoto come amministratore](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
    
-1. La prima volta che si avvia il debugger remoto o in precedenza è stato configurato, il **configurazione debug remoto** verrà visualizzata la finestra di dialogo.  
+1. La prima volta che si avvia il debugger remoto (o prima di averlo configurato), viene visualizzata la finestra di dialogo **configurazione debug remoto** .  
   
-    ![Configurazione del Debugger remota](../media/remotedebuggerconfwizardpage.png "configurazione del Debugger remoto")  
+    Configurazione del(../media/remotedebuggerconfwizardpage.png "debugger") remoto ![configurazione del debugger remoto]  
   
-1. Se l'API di servizi Web di Windows non è installato, situazione che si verifica solo in Windows Server 2008 R2, selezionare la **installare** pulsante.  
+1. Se l'API per servizi Web Windows non è installata, che si verifica solo in Windows Server 2008 R2, selezionare il pulsante **Installa** .  
   
-1. Selezionare il tipo di almeno una rete che si desidera usare remote tools sul. Se i computer sono connessi tramite un dominio, è necessario scegliere il primo elemento. Se i computer sono connessi tramite un gruppo di lavoro o un gruppo home, scegliere il secondo o il terzo elemento come appropriato.  
+1. Selezionare almeno un tipo di rete in cui si vuole usare Remote Tools. Se i computer sono connessi tramite un dominio, è necessario scegliere il primo elemento. Se i computer sono connessi tramite un gruppo di lavoro o un gruppo Home, scegliere il secondo o il terzo elemento nel modo appropriato.  
   
 1. Selezionare **Configura debug remoto** per configurare il firewall e avviare il debugger remoto.  
   
-1. Quando la configurazione è completa, il **Remote Debugger** verrà visualizzata la finestra.
+1. Al termine della configurazione, viene visualizzata la finestra **debugger remoto** .
   
-    ![Finestra del Debugger remoto](../media/remotedebuggerwindow.png "finestra del Debugger remoto")
+    Finestra debugger remoto ![finestra](../media/remotedebuggerwindow.png "debugger remoto")
   
-    Il debugger remoto è in attesa di una connessione. Usare il nome del server e porta numero visualizzato per impostare la configurazione della connessione remota in Visual Studio.  
+    Il debugger remoto è ora in attesa di una connessione. Usare il nome del server e il numero di porta visualizzato per impostare la configurazione della connessione remota in Visual Studio.  
   
-Per arrestare il debugger remoto, selezionare **File** > **Exit**. È possibile riavviarlo dal **avviare** dal menu o dalla riga di comando:  
+Per arrestare il debugger remoto, selezionare **file**  >  **Esci**. È possibile riavviarlo dal menu **Start** o dalla riga di comando:  
   
 ```cmd
 <Remote debugger installation directory>\msvsmon.exe
