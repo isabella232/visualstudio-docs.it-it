@@ -1,21 +1,21 @@
 ---
 title: Aggiungere comandi e movimenti ai diagrammi delle dipendenze
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d54936c61606b67c298992cd003723327042eb0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747659"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531391"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Aggiungere comandi e movimenti ai diagrammi delle dipendenze
 
@@ -38,13 +38,13 @@ Il modo più rapido per creare un'estensione è usare il modello di progetto. In
 
    Il modello crea un progetto che contiene un piccolo esempio funzionante.
 
-2. Per testare l'estensione, premere **Ctrl** +**F5** o **F5**.
+2. Per testare l'estensione, premere **CTRL** + **F5** o **F5**.
 
     Viene avviata un'istanza sperimentale di Visual Studio. In questa istanza creare un diagramma delle dipendenze. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.
 
 3. Chiudere l'istanza sperimentale e modificare il codice di esempio.
 
-4. È possibile aggiungere più gestori comandi o movimenti allo stesso progetto. Per altre informazioni vedere una delle sezioni seguenti:
+4. È possibile aggiungere più gestori comandi o movimenti allo stesso progetto. Per altre informazioni, vedere una delle sezioni seguenti:
 
     [Definizione di un comando di menu](#command)
 
@@ -87,7 +87,7 @@ Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e 
 
 5. Tornare al progetto del gestore comandi o movimenti e aggiungere i riferimenti al progetto seguenti:
 
-   |**Reference**|**Operazioni consentite**|
+   |**Riferimento**|**Operazioni consentite**|
    |-|-|
    |Programmi\Microsoft Visual Studio [versione]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Creare e modificare livelli|
    |Microsoft.VisualStudio.Uml.Interfaces|Creare e modificare livelli|
@@ -96,19 +96,19 @@ Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e 
    |Microsoft.VisualStudio.Modeling.Sdk.[versione]|Definire le estensioni di modellazione|
    |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versione]|Aggiornare forme e diagrammi|
 
-6. Modificare il file di classe nel progetto di libreria di classi C# contenente il codice per l'estensione. Per altre informazioni vedere una delle sezioni seguenti:
+6. Modificare il file di classe nel progetto di libreria di classi C# contenente il codice per l'estensione. Per altre informazioni, vedere una delle sezioni seguenti:
 
      [Definizione di un comando di menu](#command)
 
      [Definizione di un gestore movimenti](#gesture)
 
-7. Per testare la funzionalità, premere **Ctrl** +**F5** o **F5**.
+7. Per testare la funzionalità, premere **CTRL** + **F5** o **F5**.
 
    Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza creare o aprire un diagramma delle dipendenze.
 
 8. Per installare VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare **il file VSIX** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora file.
 
-## <a name="command"></a> Definizione di un comando di menu
+## <a name="defining-a-menu-command"></a><a name="command"></a> Definizione di un comando di menu
 
 È possibile aggiungere altre definizioni dei comandi di menu a un progetto di comandi o movimenti esistente. Ogni comando viene definito da una classe che ha le caratteristiche seguenti:
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> Definizione di un gestore movimenti
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> Definizione di un gestore movimenti
 
 Un gestore movimenti risponde quando l'utente trascina gli elementi nel diagramma delle dipendenze e quando l'utente fa doppio clic su un punto qualsiasi del diagramma.
 
@@ -246,7 +246,7 @@ Per quanto riguarda i gestori movimenti tenere presente quanto segue:
 
      **OnDragDrop** : viene chiamato quando l'utente rilascia un elemento nel diagramma.
 
-- Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Esempio:
+- Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Ad esempio:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
