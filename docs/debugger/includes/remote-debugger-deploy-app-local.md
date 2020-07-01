@@ -15,36 +15,36 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68149212"
 ---
-1. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Publish** (per Web Form, **pubblicare App Web**).
+1. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **pubblica** (per Web Form, **pubblica app Web**).
 
     Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Fare clic su **nuovo profilo**.
 
-1. Nel **Publish** finestra di dialogo **cartella**, fare clic su **Sfoglia**e creare una nuova cartella denominata **C:\Publish**.
+1. Nella finestra di dialogo **pubblica** selezionare **cartella**, fare clic su **Sfoglia**e creare una nuova cartella, **C:\publish**.
 
     ![RemoteDBG_Publish_Local](../media/remotedbg_publish_local.png "RemoteDBG_Publish_Local")
 
-    Per un'app Web Form, scegli **Custom** nella finestra di dialogo di pubblicazione, immettere un nome di profilo e scegliere **OK**.
+    Per un'app Web Form, scegliere **personalizzata** nella finestra di dialogo pubblica, immettere un nome di profilo e scegliere **OK**.
 
-1. Fare clic su **Crea profilo** nell'elenco a discesa scegliere (**Publish** è il valore predefinito).
+1. Fare clic su **Crea profilo** nell'elenco a discesa (**Publish** è il valore predefinito).
 
-1. Nel **Publish** della finestra di dialogo fare clic sul **impostazioni** collegamento e quindi selezionare il **impostazioni** scheda.
+1. Nella finestra di dialogo **pubblica** fare clic sul collegamento **Impostazioni** , quindi selezionare la scheda **Impostazioni** .
 
-1. Impostare la configurazione su **Debug**, selezionare **Elimina tutti i file esistenti prima della pubblicazione**, quindi fare clic su **Salva**.
+1. Impostare la configurazione su **debug**, selezionare **Elimina tutti i file esistenti prima della pubblicazione**e quindi fare clic su **Salva**.
 
     > [!NOTE]
-    > Se si usa una build di rilascio, si disabilita il debug nel file Web. config quando si pubblica.
+    > Se si usa una build di rilascio, si disabilita il debug nel file di web.config durante la pubblicazione.
 
 1. Fare clic su **Pubblica**.
 
     ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
 
-    L'applicazione pubblica un **Debug** configurazione del progetto nella cartella locale. Viene illustrato lo stato di avanzamento nella finestra di Output.
+    L'applicazione pubblica una configurazione di **debug** del progetto nella cartella locale. Lo stato di avanzamento viene visualizzato nella finestra output.
 
-1. Copiare la directory del progetto ASP.NET dal computer di Visual Studio nella directory locale configurata per l'app ASP.NET (in questo esempio **C:\Publish**) nel computer Windows Server. In questa esercitazione si presuppone che si sta copiando manualmente, ma è possibile usare altri strumenti come PowerShell, Xcopy o Robocopy.
+1. Copiare la directory del progetto ASP.NET dal computer di Visual Studio alla directory locale configurata per l'app ASP.NET (in questo esempio, **C:\publish**) nel computer Windows Server. In questa esercitazione si presuppone che la copia venga eseguita manualmente, ma è possibile usare altri strumenti come PowerShell, XCOPY o Robocopy.
 
     > [!CAUTION]
-    > Se è necessario apportare modifiche al codice o ricompilazione, è necessario ripubblicare e ripetere questo passaggio. Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.    Se non si eseguire questa operazione si riceverà un `cannot find or open the PDB file` avviso in Visual Studio quando si prova a eseguire il debug del processo.
+    > Se è necessario apportare modifiche al codice o ricompilare, è necessario ripubblicarlo e ripetere questo passaggio. Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.    Se non si esegue questa operazione, verrà visualizzato un `cannot find or open the PDB file` avviso in Visual Studio quando si tenta di eseguire il debug del processo.
 
-1. Nel Server di Windows, verificare che sia possibile eseguire correttamente l'app aprendo l'app nel browser.
+1. Nel server Windows verificare che sia possibile eseguire l'app correttamente aprendo l'app nel browser.
 
-    Se l'app non viene eseguita correttamente, potrebbe esserci una mancata corrispondenza tra la versione di ASP.NET installati sul server e computer di Visual Studio oppure si potrebbe avere un problema con la configurazione di IIS o il sito Web. Controlla di nuovo i passaggi precedenti.
+    Se l'app non viene eseguita correttamente, potrebbe essersi verificata una mancata corrispondenza tra la versione di ASP.NET installata nel server e il computer che esegue Visual Studio oppure è possibile che si verifichi un problema con la configurazione di IIS o del sito Web. Controllare nuovamente i passaggi precedenti.
