@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Introduzione alla personalizzazione della barra multifunzione'
+title: 'Procedura: iniziare a personalizzare la barra multifunzione'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9b0f1ef704f5dd1426374e23806e5950ed5f6bb
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255866"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520068"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>Procedura: Introduzione alla personalizzazione della barra multifunzione
+# <a name="how-to-get-started-customizing-the-ribbon"></a>Procedura: iniziare a personalizzare la barra multifunzione
   Per personalizzare la barra multifunzione di un'applicazione Microsoft Office, aggiungere un elemento **barra multifunzione (finestra di progettazione visiva)** o **barra multifunzione (XML)** a un progetto di Office.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "71255866"
 
 1. Scegliere **Aggiungi nuovo elemento**dal menu **progetto** .
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **barra multifunzione (finestra di progettazione visiva)** o **barra multifunzione (XML)** . Per ulteriori informazioni su questi modelli, vedere [Cenni preliminari sulla barra multifunzione](../vsto/ribbon-overview.md).
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **barra multifunzione (finestra di progettazione visiva)** o **barra multifunzione (XML)**. Per ulteriori informazioni su questi modelli, vedere [Cenni preliminari sulla barra multifunzione](../vsto/ribbon-overview.md).
 
 3. Nella casella **nome** Digitare un nome per l'elemento della barra multifunzione.
 
-    I nomi non possono contenere i caratteri seguenti:
+    I nomi non possono includere i caratteri seguenti:
 
-   - Sterlina (#)
+   - Cancelletto (#)
 
    - Percentuale (%)
 
@@ -45,7 +45,7 @@ ms.locfileid: "71255866"
 
    - Asterisco (*)
 
-   - Barra verticale (|)
+   - Barra verticale {|}
 
    - Barra rovesciata (\\)
 
@@ -61,7 +61,7 @@ ms.locfileid: "71255866"
 
    - Barra (/)
 
-   - Spazi iniziali o finali ('')
+   - Spazi iniziali o finali (' ')
 
    - Nomi riservati per Windows o DOS, ad esempio ("NUL", "aux", "con", "COM1", "LPT1" e così via)
 
@@ -73,5 +73,5 @@ ms.locfileid: "71255866"
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Procedura dettagliata: Creare una scheda personalizzata usando il codice XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Procedura dettagliata: creare una scheda personalizzata usando il codice XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

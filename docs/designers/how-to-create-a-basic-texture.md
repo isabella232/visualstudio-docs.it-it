@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: Creare una trama di base'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b356d8596581b1c289d9b9aa13a3d5b362e39e58
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589455"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769096"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procedura: Creare una trama di base
 
@@ -49,7 +49,7 @@ Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**. 
 
 4. Impostare il colore di primo piano su un nero completamente trasparente. Nella finestra **Proprietà**, nel gruppo di proprietà **Colori**, selezionare **Primo piano**. Impostare i valori delle proprietà **R**, **G**, **B**e **A** accanto alla selezione colori su `0`.
 
-5. Sulla barra degli strumenti dell'editor di immagini scegliere lo strumento **Riempimento,** quindi tenere premuto **il tasto Maiusc** e scegliere un punto qualsiasi dell'immagine. L'uso del tasto **Maiusc** fa sì che il valore alfa del colore di riempimento sostituisca il colore nell'immagine; in caso contrario, il valore alfa viene utilizzato per fondere il colore di riempimento con il colore nell'immagine.
+5. Sulla barra degli strumenti dell'editor di immagini scegliere lo strumento **riempimento** , quindi tenere premuto il tasto **MAIUSC** e scegliere qualsiasi punto nell'immagine. L'utilizzo del tasto **MAIUSC** fa sì che il valore alfa del colore di riempimento sostituisca il colore nell'immagine; in caso contrario, il valore alfa viene utilizzato per sfumare il colore di riempimento insieme al colore nell'immagine.
 
     > [!IMPORTANT]
     > Questo passaggio, insieme alla selezione del colore nel passaggio precedente, assicura che l'immagine di base sia preparata per la trama di destinazione "bullseye" che si intende disegnare. Poiché l'immagine viene riempita con un nero trasparente e il bordo della destinazione è nero, non saranno presenti artefatti di aliasing intorno alla destinazione.
@@ -64,7 +64,7 @@ Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**. 
 
 10. Assicurarsi che l'antialiasing sia abilitato. Nella finestra **Proprietà**, nel gruppo di proprietà **Aspetto**, assicurarsi che la proprietà **Anti-alias** sia impostata.
 
-11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per disegnare il cerchio più facilmente, è possibile tenere premuto il **tasto Maiusc** mentre si disegna.
+11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per creare il cerchio in modo più semplice, è possibile premere e tenere premuto il tasto **MAIUSC** mentre si estrae.
 
     > [!NOTE]
     > Le coordinate in pixel della posizione corrente del puntatore sono visualizzate nella barra di stato di Visual Studio.
@@ -85,8 +85,8 @@ La trama di destinazione "bullseye" è completa. Di seguito è riportata l'immag
 
 ![Trama di destinazione "bullseye" completa](../designers/media/gfx_image_demo_bullseye.png)
 
-Come passaggio successivo è possibile generare i livelli MIP per la trama. Per informazioni, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Come passaggio successivo è possibile generare i livelli MIP per la trama. Per informazioni, vedere [procedura: creare e modificare i livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Image Editor](../designers/image-editor.md)
+- [Editor di immagini](../designers/image-editor.md)

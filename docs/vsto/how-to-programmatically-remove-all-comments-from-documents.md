@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di codice rimuovere tutti i commenti dai documenti'
+title: 'Procedura: rimuovere tutti i commenti dai documenti a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78b73cfe13d2374afad22dd322a80fe69acfb838
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b2b0e2be92ca5d4b548b297d01f8ec31b779510
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955832"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519886"
 ---
-# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Procedura: A livello di codice rimuovere tutti i commenti dai documenti
+# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Procedura: rimuovere tutti i commenti dai documenti a livello di codice
   Usare il metodo `DeleteAllComments` per rimuovere tutti i commenti da un documento di Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -42,5 +42,5 @@ ms.locfileid: "62955832"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: A livello di codice aggiungere commenti al testo nei documenti](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
+- [Procedura: aggiungere commenti al testo nei documenti a livello di codice](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
 - [Elemento host Document](../vsto/document-host-item.md)

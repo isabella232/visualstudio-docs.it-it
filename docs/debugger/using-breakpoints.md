@@ -1,7 +1,7 @@
 ---
 title: Usare i punti di interruzione nel debugger | Microsoft Docs
 ms.custom: ''
-ms.date: 10/28/2019
+ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab15d3390e73ad464a334ccbe64ff8d59db77f2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348015"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769411"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 
@@ -50,7 +50,7 @@ I punti di interruzione rappresentano una delle tecniche di debug più important
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Imposta punti di interruzione nel codice sorgente
 
-È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile. Nel codice C# seguente, ad esempio, è possibile impostare un punto di interruzione nella dichiarazione di variabile, nel `for` ciclo o in qualsiasi codice all'interno del `for` ciclo. Non è possibile impostare un punto di interruzione nello spazio dei nomi o nelle dichiarazioni di classe o nella firma del metodo.
+È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile. Nel codice C# seguente, ad esempio, è possibile impostare un punto di interruzione sulla riga di codice con l'assegnazione di variabile ( `int testInt = 1` ), il `for` ciclo o qualsiasi codice all'interno del `for` ciclo. Non è possibile impostare un punto di interruzione in firme di metodi, dichiarazioni per uno spazio dei nomi o una classe o dichiarazioni di variabili se non è presente alcuna assegnazione e nessun getter/setter.
 
 Per impostare un punto di interruzione nel codice sorgente, fare clic sul margine a sinistra accanto a una riga di codice. È anche possibile selezionare la riga e premere **F9**, selezionare **debug**  >  **Imposta/Rimuovi**punto di interruzione oppure fare clic con il pulsante destro del mouse e scegliere punto di interruzione Inserisci punto di **interruzione**  >  **Insert breakpoint**. Il punto di interruzione viene visualizzato come un punto rosso nel margine sinistro.
 
@@ -198,7 +198,7 @@ Racchiudere i valori String tra virgolette doppie. È possibile combinare clauso
 
 1. Nell'elenco a discesa **lingua** scegliere la lingua della funzione.
 
-1. Fare clic su **OK**.
+1. Selezionare **OK**.
 
 ### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>Impostare un punto di interruzione della funzione utilizzando un indirizzo di memoria (solo C++ nativo)
  È possibile utilizzare l'indirizzo di un oggetto per impostare un punto di interruzione della funzione in un metodo chiamato da un'istanza specifica di una classe.  Dato un oggetto indirizzabile di tipo, ad esempio `my_class` , è possibile impostare un punto di interruzione di funzione sul `my_method` metodo chiamato dall'istanza.
@@ -319,7 +319,7 @@ Per tracciare visivamente i punti di interruzione durante l'esecuzione del codic
 
 2. Nella finestra **Disassembly** fare clic sul margine sinistro dell'istruzione che si desidera interrompere. È anche possibile selezionarlo e premere **F9**oppure fare clic con il pulsante destro del mouse **e scegliere punto di interruzione**  >  **Inserisci**punto di interruzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Scrivi codice C# migliore con Visual Studio](../debugger/write-better-code-with-visual-studio.md)

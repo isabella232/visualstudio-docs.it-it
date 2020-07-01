@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: Creare uno shader con sfumatura basata sulla geometria'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96326910a04294e30c410cc96bf9c600bfb3f17c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1e10fd5266ba39febe6261f41437c10c19b5c82f
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589454"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769111"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con un gradiente basato sulla geometria
 
@@ -56,13 +56,13 @@ La figura seguente illustra lo shader descritto in questo documento applicato al
 
 ![Effetto sfumatura applicato a un modello di terreno 3D](../designers/media/digit-gradient-effect-result.png)
 
-Per ulteriori informazioni su come applicare uno shader a un modello 3D, consultate [Procedura: Applicare uno shader a un modello 3D.](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+Per altre informazioni su come applicare uno shader a un modello 3D, vedere [procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: applicare uno shader a un modello 3DHow to: Apply a shader to a 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Procedura: esportare uno shaderHow to: Export a shader](../designers/how-to-export-a-shader.md)
-- [Procedura: Modellare il terreno 3D](../designers/how-to-model-3-d-terrain.md)
-- [Procedura: creare uno shader di trama in scala di grigiHow to: Create a grayscale texture shader](../designers/how-to-create-a-grayscale-texture-shader.md)
+- [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedura: esportare uno shader](../designers/how-to-export-a-shader.md)
+- [Procedura: modellare il terreno 3D](../designers/how-to-model-3-d-terrain.md)
+- [Procedura: creare uno shader con trama in scala di grigi](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [Finestra di progettazione shader](../designers/shader-designer.md)
 - [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

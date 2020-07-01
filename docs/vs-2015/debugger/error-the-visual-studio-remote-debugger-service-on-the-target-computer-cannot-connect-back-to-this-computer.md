@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Il servizio di Visual Studio Remote Debugger nel computer di destinazione non può connettersi al computer | Microsoft Docs'
+title: 'Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di connettersi al computer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,27 +16,26 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f598d765e45b1f97d6a3e95d1ad57c325ea38fe
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 80a7de83f118b38d9a3c71f1c7e7febf48e0f5bc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697351"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520510"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: Il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il messaggio di errore viene visualizzato per segnalare che l'account utente utilizzato per l'esecuzione del servizio Debugger remoto di Visual Studio non è in grado di eseguire l'autenticazione per la connessione al computer dal quale viene eseguito il debug.  
   
  Nella tabella riportata di seguito sono indicati gli account in grado di accedere al computer:  
   
-|||||  
-|-|-|-|-|  
-||Account LocalSystem|Account di dominio|Account locali con lo stesso nome utente e la stessa password in entrambi i computer|  
-|Entrambi i computer nello stesso dominio|Yes|Yes|Yes|  
-|Entrambi i computer in domini con trust bidirezionale|No|No|Yes|  
-|Uno o entrambi i computer in un gruppo di lavoro|No|No|Yes|  
-|Computer in domini diversi|No|No|Yes|  
+|Scenario|Account LocalSystem|Account di dominio|Account locali con lo stesso nome utente e la stessa password in entrambi i computer|  
+|-|-|-|-|-|  
+|Entrambi i computer nello stesso dominio|Sì|Sì|Sì|  
+|Entrambi i computer in domini con trust bidirezionale|No|No|Sì|  
+|Uno o entrambi i computer in un gruppo di lavoro|No|No|Sì|  
+|Computer in domini diversi|No|No|Sì|  
   
  Inoltre:  
   
@@ -48,7 +47,7 @@ Il messaggio di errore viene visualizzato per segnalare che l'account utente uti
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1. Assicurarsi che il servizio Debugger remoto di Visual Studio sia configurato in modo corretto nel computer remoto. Per altre informazioni, vedere [Set Up the Remote Tools sul dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+1. Assicurarsi che il servizio Debugger remoto di Visual Studio sia configurato in modo corretto nel computer remoto. Per altre informazioni, vedere [configurare il strumenti remoti nel dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
 2. Eseguire il servizio Debugger remoto utilizzando un account in grado di accedere al computer host del debugger, come indicato nella tabella precedente.  
   
@@ -77,5 +76,5 @@ Il messaggio di errore viene visualizzato per segnalare che l'account utente uti
 - Eseguire Remote Debugging Monitor come applicazione anziché come servizio.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Debug remoto](../debugger/remote-debugging.md)

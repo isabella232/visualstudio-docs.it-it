@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 00f8543c2fdb204a165292844cb5bf5b925c63e8
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: c58033e89742650dc097a7469cbf62d7b6168509
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330490"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520367"
 ---
 # <a name="vsperf"></a>VSPerf
 Usare lo strumento della riga di comando **VsPerf** per:
@@ -28,7 +28,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
 ## <a name="uwp-apps-only"></a>Solo app UWP
  Queste opzioni si applicano solo alle app UWP.
 
-|||
+|Opzione|Descrizione|
 |-|-|
 |**/app:{AppName}**|Avvia il profiler e attende che l'app specificata venga avviata dal menu Start.<br /><br /> Eseguire `vsperf /listapps` per visualizzare i valori Name e PackageFullName delle app installate.|
 |**/package:{PackageFullName}**|Avvia il profiler e attende che l'app specificata venga avviata dal menu Start.<br /><br /> Eseguire `vsperf /listapps` per visualizzare i valori Name e PackageFullName delle app installate.|
@@ -39,7 +39,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
 ## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Solo applicazioni desktop Windows 8 e applicazioni Windows Server 2012
  Queste opzioni non funzionano per le app UWP.
 
-|||
+|Opzione|Descrizione|
 |-|-|
 |**/launch:{Executable}**|Avvia il file eseguibile specificato e ne esegue la profilatura.|
 |**/args:{ExecutableArguments}**|Specifica gli argomenti della riga di comando da passare alla destinazione **/launch**.|
@@ -48,7 +48,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
 ## <a name="all-applications"></a>Tutte le applicazioni
  Queste opzioni si applicano a tutte le applicazioni Windows 8 o Windows Server 2012.
 
-|||
+|Opzione|Descrizione|
 |-|-|
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Raccoglie dati dai processi specificati.<br /><br /> Usare Gestione attività per visualizzare l'ID processo (PID) e i nomi dei processi delle app in esecuzione.|
 |**/file:{ReportName}**|Facoltativa. Specifica il file di output (sovrascrive il file esistente).<br /><br /> Usare solo con /package o /attach.|
@@ -58,6 +58,6 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |**/Detach.**|Interrompere la raccolta dei dati, senza arrestare l'esecuzione dei processi di destinazione.|
 |**/status**|Visualizzare lo stato del profiler.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
 - [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

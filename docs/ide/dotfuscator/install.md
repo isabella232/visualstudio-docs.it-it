@@ -2,7 +2,7 @@
 title: Installare Dotfuscator Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
-ms.topic: conceptual
+ms.topic: how-to
 keywords: Dotfuscator, Dotfuscator Community, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protezione, edizione community, offuscamento, .NET, gratis, Visual Studio 2017, Visual Studio 2019, Visual Studio, installare
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
@@ -22,12 +22,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bb659976126713a11594ad1b4aeb536510744c38
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: befa47e5718d3d2f5d492c49e173b22fc63310e0
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596814"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769679"
 ---
 # <a name="install-dotfuscator-community"></a>Installare Dotfuscator Community
 
@@ -64,7 +64,7 @@ Queste istruzioni spiegano come installarlo.
 1. Nella barra di ricerca dell'**Avvio veloce** (CTRL + Q) digitare `dotfuscator`. <br/> <br/> ![Avvio veloce](media/install_from_vs_12.png) <br/> <br/>
 
 2. Nei risultati visualizzati nell'Avvio veloce, sotto l'intestazione *Installa*, selezionare **PreEmptive Protection - Dotfuscator (Individual Component)**.
-   * Se invece si vede, sotto l'intestazione *Menu,* **Strumenti - Protezione preventiva - Dotfuscator**, Dotfuscator CE è già installato. Selezionare tale opzione per [iniziare][get-started].
+   * Se invece si visualizza, sotto l' *Menus* intestazione dei menu **Tools-preemptive Protection-DOTFUSCATOR**, Dotfuscator CE è già installato. Selezionare tale opzione per [iniziare][get-started].
 
 3. Verrà visualizzata la finestra del programma di installazione di Visual Studio, preconfigurata per installare Dotfuscator CE.
    > [!NOTE]

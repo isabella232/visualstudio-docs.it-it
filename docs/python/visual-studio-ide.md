@@ -2,7 +2,7 @@
 title: Panoramica di Visual Studio per sviluppatori Python
 titleSuffix: ''
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73661923"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520588"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Benvenuti all'IDE di Visual Studio | Python
 
@@ -26,11 +26,11 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 Questa immagine presenta Visual Studio con un progetto Python aperto e varie finestre degli strumenti di base che probabilmente verranno usate:
 
-- [**Esplora soluzioni**](../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file di codice. **Esplora soluzioni** consente di organizzare il codice raggruppando i file in [soluzioni e progetti](../get-started/tutorial-projects-solutions.md).
+- [**Esplora soluzioni**](../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file di codice. **Esplora soluzioni** consentono di organizzare il codice raggruppando i file in [soluzioni e progetti](../get-started/tutorial-projects-solutions.md).
   - Oltre a **Esplora soluzioni** è disponibile [**Ambienti Python**](managing-python-environments-in-visual-studio.md), in cui è possibile gestire i diversi interpreti Python installati nel computer.
 
   ::: moniker range=">=vs-2019"
-  - È anche possibile aprire ed eseguire codice Python in una cartella senza creare file di progetto e soluzione di Visual Studio. Per ulteriori informazioni, consultate [Guida introduttiva: Aprire ed eseguire codice Python in una cartella.](quickstart-05-python-visual-studio-open-folder.md)
+  - È anche possibile aprire ed eseguire codice Python in una cartella senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Guida introduttiva: aprire ed eseguire codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md).
   ::: moniker-end
 
 - La [finestra dell'editor](../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più utilizzati, visualizza il contenuto dei file. In questa finestra è possibile [modificare il codice Python](editing-python-code-in-visual-studio.md), spostarsi nella struttura del codice e impostare punti di interruzione durante le sessioni di debug. Con Python è anche possibile selezionare codice e premere CTRL+INVIO per eseguire il codice selezionato in una [finestra REPL interattiva](python-interactive-repl-in-visual-studio.md).
@@ -44,13 +44,13 @@ Questa immagine presenta Visual Studio con un progetto Python aperto e varie fin
 
 Visual Studio è disponibile per Windows e Mac, ma il supporto di Python è disponibile solo in Visual Studio per Windows.
 
-Esistono tre edizioni di Visual Studio in Windows: Community, Professional ed Enterprise. Vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
+Sono disponibili tre edizioni di Visual Studio in Windows: community, Professional ed Enterprise. Vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
 
 ## <a name="popular-productivity-features"></a>Funzionalità di produttività più note
 
 Le funzionalità più note di Visual Studio che offrono una maggiore produttività nello sviluppo del software includono:
 
-- [Intellisense](editing-python-code-in-visual-studio.md#intellisense)
+- [IntelliSense](editing-python-code-in-visual-studio.md#intellisense)
 
    IntelliSense è un termine che indica diverse funzionalità che visualizzano le informazioni sul codice direttamente nell'editor e, in alcuni casi, scrivono automaticamente piccole parti di codice. È come se si avesse a disposizione la documentazione di base all'interno dell'editor senza dover cercare le informazioni sul tipo altrove. Le funzionalità IntelliSense variano in base al linguaggio; l'articolo [Modifica del codice Python](editing-python-code-in-visual-studio.md#intellisense) contiene informazioni dettagliate per Python. La figura seguente mostra come IntelliSense visualizza un elenco di membri per un tipo:
 
@@ -68,7 +68,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ![Comando PyLint nel menu di scelta rapida per i progetti Python](media/code-pylint-command.png)
 
-- Casella Cerca
+- Casella di ricerca
 
    La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La casella di ricerca è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. Quando si inizia a digitare il nome di un elemento da cercare, Visual Studio visualizza risultati che consentono di passare esattamente all'elemento desiderato. Se si vuole aggiungere una funzionalità a Visual Studio, ad esempio il supporto di un altro linguaggio di programmazione, la casella di ricerca fornisce risultati che consentono di aprire il programma di installazione di Visual Studio per installare un carico di lavoro o un singolo componente.
 
@@ -106,7 +106,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
 - [Debug](debugging-python-in-visual-studio.md)
 
-    Visual Studio offre un'esperienza di debug completa per Python, inclusa la connessione ai processi in esecuzione, la valutazione delle espressioni nelle finestre **Espressioni** di controllo e **Controllo immediato,** il controllo delle variabili locali, i punti di interruzione, l'istruzione step in/out/over, **l'istruzione Set Next**e altro ancora. È anche possibile eseguire il debug di codice Python remoto in esecuzione su computer Linux.
+    Visual Studio offre un'esperienza di debug completa per Python, tra cui la connessione a processi in esecuzione **, la valutazione** di espressioni nelle finestre espressioni di controllo e **immediate** , il controllo delle variabili locali, i punti di interruzione, le istruzioni step in/out/over, l' **istruzione Next**e altro ancora. È anche possibile eseguire il debug di codice Python remoto in esecuzione su computer Linux.
 
     ![Debug di Python in Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
@@ -122,7 +122,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
     ![Report di prestazioni del profiler](media/profiling-results.png)
 
-- [Unit test](unit-testing-python-in-visual-studio.md)
+- [Testing unità](unit-testing-python-in-visual-studio.md)
 
     Visual Studio offre supporto integrato per il rilevamento, l'esecuzione e il debug di unit test nel contesto dell'IDE.
 
@@ -133,7 +133,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 Per approfondire altri aspetti di Python in Visual Studio, eseguire una delle esercitazioni seguenti:
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: Creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Guida introduttiva: creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

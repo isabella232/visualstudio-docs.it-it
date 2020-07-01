@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Set Current Stack Frame command
 - Debug.SetCurrentStackFrame command
 ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 088fe9871b54e69b015ffdc9dcdaf23de3d98e0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f70f5ebfc80933f38f1543d5eb42f01fb470298f
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747752"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769722"
 ---
 # <a name="set-current-stack-frame-command"></a>Comando Imposta stack frame corrente
 Consente di impostare uno stack frame specifico.
@@ -42,7 +42,7 @@ Obbligatorio. Seleziona uno stack frame in base all'indice.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

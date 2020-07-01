@@ -1,8 +1,8 @@
 ---
-title: Elemento Folder (modelli di progetto Visual Studio) Documenti Microsoft
+title: Elemento Folder (modelli di progetto di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
@@ -13,17 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb256b8be0dd9ce68f193750bf3ff5a383d5f073
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80711459"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769587"
 ---
-# <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (modelli di progetto Visual Studio)
+# <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (modelli di progetto di Visual Studio)
 Specifica una cartella che verrà aggiunta al progetto.
 
- \<VSTemplate \<> TemplateContent \< \<> cartella>>
+ \<VSTemplate> \<TemplateContent>
+ \<Project>
+ \<Folder>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,27 +44,27 @@ Specifica una cartella che verrà aggiunta al progetto.
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`Name`|Attributo obbligatorio.<br /><br /> Nome della cartella del progetto.|
-|`TargetFolderName`|Attributo facoltativo.<br /><br /> Specifica il nome da assegnare alla cartella quando viene creato un progetto dal modello. Questo attributo è utile per utilizzare la sostituzione dei parametri per creare un nome di cartella o assegnare un nome a una cartella con una stringa internazionale che non può essere utilizzata direttamente nel file *con estensione zip.*|
+|`TargetFolderName`|Attributo facoltativo.<br /><br /> Specifica il nome da assegnare alla cartella quando viene creato un progetto dal modello. Questo attributo è utile per l'utilizzo della sostituzione dei parametri per creare un nome di cartella o per rinominare una cartella con una stringa internazionale che non può essere utilizzata direttamente nel file con *estensione zip* .|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|`Folder`|Specifica una cartella da aggiungere al progetto. `Folder`gli elementi `Folder` possono contenere elementi figlio.|
+|`Folder`|Specifica una cartella da aggiungere al progetto. `Folder`gli elementi possono contenere `Folder` elementi figlio.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Specifica un file da aggiungere al progetto.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Project](../extensibility/project-element-visual-studio-templates.md)|Elemento figlio facoltativo di [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
+|[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento figlio facoltativo di [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
 
 ## <a name="remarks"></a>Osservazioni
- `Folder`è un elemento `Project`figlio facoltativo di .
+ `Folder`è un elemento figlio facoltativo di `Project` .
 
- È possibile utilizzare uno dei seguenti metodi per organizzare gli elementi di progetto in cartelle in un modello:
+ È possibile utilizzare uno dei metodi seguenti per organizzare gli elementi di progetto in cartelle in un modello:
 
-- Includere le cartelle nel file *.zip* del modello e aggiungerle al progetto nel file *.vstemplate* specificando il percorso del file negli `ProjectItem` elementi, senza `Folder` elementi. Questo è il metodo consigliato. Ad esempio:
+- Includere le cartelle nel file con estensione *zip* del modello e aggiungerle al progetto nel file con *estensione vstemplate* specificando il percorso del file negli `ProjectItem` elementi, senza `Folder` elementi. Questo è il metodo consigliato. Ad esempio:
 
      `...`
 
@@ -72,7 +74,7 @@ Specifica una cartella che verrà aggiunta al progetto.
 
      `...`
 
-- Includere le cartelle nel file *.zip* del modello e aggiungerle al `Folder` progetto nel file *.vstemplate* con gli elementi. Ad esempio:
+- Includere le cartelle nel file con estensione *zip* del modello e aggiungerle al progetto nel file con estensione *vstemplate* con `Folder` gli elementi. Ad esempio:
 
      `...`
 
@@ -86,7 +88,7 @@ Specifica una cartella che verrà aggiunta al progetto.
 
      `...`
 
-- Non includere cartelle nel file *.zip* del modello, ma aggiungere cartelle utilizzando l'attributo `TargetFileName` dell'elemento. `ProjectItem` Ad esempio:
+- Non includere cartelle nel file con *estensione zip* del modello, ma aggiungere cartelle utilizzando l' `TargetFileName` attributo dell' `ProjectItem` elemento. Ad esempio:
 
      `...`
 
@@ -97,7 +99,7 @@ Specifica una cartella che verrà aggiunta al progetto.
      `...`
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un'applicazione Windows.The following example illustrates the metadata for a project template for a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows application.
+ Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un' [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -126,6 +128,6 @@ Specifica una cartella che verrà aggiunta al progetto.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
 - [Elemento ProjectItem (modelli di elemento di Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

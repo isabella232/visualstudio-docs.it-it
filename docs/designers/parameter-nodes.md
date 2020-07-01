@@ -3,17 +3,17 @@ title: Nodi Parameter
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f749d4ed6338919132e1c48d6da0572e3efe88
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 986b7bcc75dd39b0d41d8f614a68734a65afca0b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72635011"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768816"
 ---
 # <a name="parameter-nodes"></a>Nodi di parametro
 
@@ -31,4 +31,4 @@ Nella finestra di progettazione shader, i nodi dei parametri rappresentano gli i
 |**Materiale speculare**|Colore che descrive il modo in cui l'illuminazione diretta viene riflessa dal pixel corrente.<br /><br /> Il colore speculare di un pixel simula l'interazione dell'illuminazione con superfici lisce come gli specchi. È possibile usare il parametro Materiale speculare per modificare il modo in cui il pixel corrente riflette l'illuminazione diretta, ovvero la luce direzionale, la luce puntiforme e la luce spot.<br /><br /> **Output:**<br /><br /> `Output`: `float4`<br /> Colore che descrive il modo in cui l'illuminazione diretta viene riflessa dal pixel corrente.|**Accesso**<br /> **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**<br /> Colore che descrive il modo in cui l'illuminazione diretta viene riflessa dal pixel corrente.|
 |**Materiale potenza speculare**|Valore scalare che descrive l'intensità delle evidenziazioni speculari.<br /><br /> Maggiore è la potenza speculare, più intense e lunghe diventano le evidenziazioni speculari.<br /><br /> **Output:**<br /><br /> `Output`: `float`<br /> Termine esponenziale che descrive l'intensità delle evidenziazioni speculari nel pixel corrente.|**Accesso**<br /> **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**<br /> Esponente che definisce l'intensità delle evidenziazioni speculari nel pixel corrente.|
 |**Tempo normalizzato**|Tempo in secondi, normalizzato sull'intervallo [0, 1], in modo che quando il tempo raggiunge 1, viene automaticamente reimpostato su 0.<br /><br /> È possibile usare questo valore come parametro nei calcoli dello shader, ad esempio per animare coordinate di trama, valori di colore o altri attributi.<br /><br /> **Output:**<br /><br /> `Output`: `float`<br /> Tempo normalizzato, in secondi.|nessuno|
-|**Tempo**|Tempo espresso in secondi.<br /><br /> È possibile usare questo valore come parametro nei calcoli dello shader, ad esempio per animare coordinate di trama, valori di colore o altri attributi.<br /><br /> **Output:**<br /><br /> `Output`: `float`<br /> Tempo, in secondi.|nessuno|
+|**Time**|Tempo espresso in secondi.<br /><br /> È possibile usare questo valore come parametro nei calcoli dello shader, ad esempio per animare coordinate di trama, valori di colore o altri attributi.<br /><br /> **Output:**<br /><br /> `Output`: `float`<br /> Tempo, in secondi.|Nessuno|

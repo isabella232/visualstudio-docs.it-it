@@ -1,7 +1,7 @@
 ---
 title: Riferimenti gestiti (sviluppo per Office in Visual Studio)
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137031202075d1c646cc7415042dd8d6eab72b78
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985764"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519860"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Riferimenti gestiti (sviluppo per Office in Visual Studio)
-  Questa sezione include documentazione di riferimento alle API per gli spazi dei nomi e i tipi usati nei progetti di Office destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](includes/net-v45-md.md)]. Per la documentazione di riferimento delle API sugli spazi dei nomi e i tipi usati nei progetti di Office destinati a .NET Framework 3,5, vedere la sezione di riferimento seguente nella documentazione di Visual Studio: [riferimenti gestiti (sviluppo per Office in Visual Studio) )](managed-reference-office-development-in-visual-studio.md).
+  Questa sezione include documentazione di riferimento alle API per gli spazi dei nomi e i tipi usati nei progetti di Office destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](includes/net-v45-md.md)]. Per la documentazione di riferimento delle API sugli spazi dei nomi e i tipi usati nei progetti di Office destinati a .NET Framework 3,5, vedere la sezione di riferimento seguente nella documentazione di Visual Studio: [riferimenti gestiti (sviluppo per Office in Visual Studio)](managed-reference-office-development-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
  <xref:Microsoft.Office.Tools>
 
  Contiene classi comuni per la programmazione di soluzioni Office. Includono la classe base per i componenti aggiuntivi VSTO, classi per la creazione di riquadri attività personalizzati nei componenti aggiuntivi VSTO, classi per la creazione di smart tag nelle soluzioni Excel e Word e classi per la creazione di riquadri azioni nelle personalizzazioni a livello di documento.
@@ -72,6 +72,6 @@ ms.locfileid: "72985764"
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica di Visual Studio Tools per Office Runtime](visual-studio-tools-for-office-runtime-overview.md)
-- [Introduzione &#40;allo sviluppo per Office in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+- [Introduzione &#40;sviluppo per Office in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 - [Procedure dettagliate e esempi di sviluppo per Office](office-development-samples-and-walkthroughs.md)
 - [Progettazione e creazione di soluzioni Office](designing-and-creating-office-solutions.md)

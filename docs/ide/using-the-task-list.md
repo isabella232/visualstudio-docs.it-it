@@ -1,7 +1,7 @@
 ---
 title: Usare l'elenco attività
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594227"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768615"
 ---
 # <a name="use-the-task-list"></a>Usare l'elenco attività
 
@@ -104,11 +104,11 @@ Un *collegamento* è un segnalibro nel codice di cui viene tenuta traccia nell'*
 
 ### <a name="create-a-shortcut"></a>Creare un collegamento
 
-Per creare un collegamento, posizionare il puntatore nella parte del codice in cui si vuole aggiungere il collegamento. Scegliere **Modifica** > **segnalibri** > Aggiungi collegamento elenco**attività** o premere **Ctrl**+**K**, **Ctrl**+**H**.
+Per creare un collegamento, posizionare il puntatore nella parte del codice in cui si vuole aggiungere il collegamento. Scegliere **modifica**  >  **segnalibri**  >  **Aggiungi elenco attività collegamento** o premere **CTRL** + **K**, **CTRL** + **H**.
 
 Per spostarsi tra i collegamenti nel codice, scegliere un collegamento nell'elenco, quindi fare clic su **Attività successiva** o **Attività precedente** nel menu di scelta rapida.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Elenco attività, Ambiente, finestra di dialogo Opzioni](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Elenco attività, ambiente, finestra di dialogo Opzioni](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Commenti dell'attività (Visual Studio per Mac)](/visualstudio/mac/task-comments)

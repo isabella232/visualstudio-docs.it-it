@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: Modificare il punto pivot di un modello 3D'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 114beda700359eb5cdbfd4db12c18e442b8894f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c9f79f8f5a39a8721e433207f2fbb17fd85a1150
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589942"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768833"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Procedura: Modificare il punto pivot di un modello 3D
 
@@ -25,7 +25,7 @@ Questo articolo illustra come usare l'editor dei modelli per modificare il *punt
 
 Assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
-1. Iniziare con un modello 3D esistente, ad esempio quello descritto in [Procedura: Creare un modello 3D](../designers/how-to-create-a-basic-3-d-model.md)di base.
+1. Iniziare con un modello 3D esistente, ad esempio quello descritto in [procedura: creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md).
 
 2. Passare alla modalità perno. Nella barra degli strumenti disponibile in modalità **Editor dei modelli** scegliere il pulsante **Modalità perno** per attivare la modalità perno. Viene visualizzata una casella intorno al pulsante **Modalità perno** per indicare che l'editor dei modelli è ora in modalità perno. In modalità perno, operazioni come la traslazione agiscono sul punto di perno dell'oggetto anziché sulla struttura dell'oggetto nello spazio globale.
 
@@ -44,5 +44,5 @@ Di seguito è riportato un modello con un punto di perno modificato:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: creare un modello 3D di baseHow to: Create a basic 3D model](../designers/how-to-create-a-basic-3-d-model.md)
-- [Editor modelli](../designers/model-editor.md)
+- [Procedura: creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md)
+- [Editor dei modelli](../designers/model-editor.md)

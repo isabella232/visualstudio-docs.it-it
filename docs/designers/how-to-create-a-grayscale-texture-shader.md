@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: Creare uno shader con trama in scala di grigi'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b74e956a74ff4c04dbc5a1c990fab708937d8f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a311456fd3f8eab12c24e26c32349f208e0a723
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76112620"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769067"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Procedura: Creare uno shader con trama in scala di grigi
 
@@ -49,8 +49,8 @@ Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: applicare uno shader a un modello 3DHow to: Apply a shader to a 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Procedura: esportare uno shaderHow to: Export a shader](../designers/how-to-export-a-shader.md)
-- [Image Editor](../designers/image-editor.md)
+- [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedura: esportare uno shader](../designers/how-to-export-a-shader.md)
+- [Editor di immagini](../designers/image-editor.md)
 - [Finestra di progettazione shader](../designers/shader-designer.md)
 - [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

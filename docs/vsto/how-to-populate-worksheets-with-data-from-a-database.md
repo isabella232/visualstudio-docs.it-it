@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: popolare fogli di dati da un database'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985852"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520120"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Procedura: popolare fogli di dati da un database
 
@@ -41,9 +41,9 @@ Nell'esempio seguente viene mostrato come aggiungere controlli con associazione 
 
 Uno dei seguenti controlli viene creato nel foglio di controllo:
 
-- Se si trascina un campo, nel foglio di <xref:Microsoft.Office.Tools.Excel.NamedRange> viene creato un controllo. Per ulteriori informazioni, vedere [controllo NamedRange](../vsto/namedrange-control.md).
+- Se si trascina un campo, <xref:Microsoft.Office.Tools.Excel.NamedRange> nel foglio di comando viene creato un controllo. Per ulteriori informazioni, vedere [controllo NamedRange](../vsto/namedrange-control.md).
 
-- Se si trascina una tabella, nel foglio di <xref:Microsoft.Office.Tools.Excel.ListObject> viene creato un controllo. Per ulteriori informazioni, vedere [controllo ListObject](../vsto/listobject-control.md).
+- Se si trascina una tabella, <xref:Microsoft.Office.Tools.Excel.ListObject> nel foglio di controllo viene creato un controllo. Per ulteriori informazioni, vedere [controllo ListObject](../vsto/listobject-control.md).
 
 È possibile aggiungere un controllo diverso selezionando la tabella o il campo nella finestra **origini dati** e scegliendo un controllo diverso dall'elenco a discesa.
 

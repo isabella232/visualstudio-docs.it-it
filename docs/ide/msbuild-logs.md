@@ -2,7 +2,7 @@
 title: Risolvere i problemi e creare i log per problemi relativi a MSBuild
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - msbuild logs"
 author: corob-msft
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ae91f7b9c90f0b06c449d26f67fe4fcc3434518e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278804"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768703"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Risolvere i problemi e creare i log per problemi relativi a MSBuild
 
@@ -44,7 +44,7 @@ L'ultima definizione di una proprietà è quella utilizzata dalla compilazione. 
 - PropertyGroups e Imports
 - ItemDefinitionGroups
 - ItemGroups
-- Server di destinazione
+- Destinazioni
 
 Considerato l'ordine seguente, quindi:
 
@@ -106,7 +106,7 @@ Se si sta compilando nell'IDE di Visual Studio (con visualizzazione dettagliata 
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
     ```
 
-    o
+    oppure
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
@@ -116,15 +116,15 @@ Verrà creato un file Msbuild.binlog nella directory da cui è stato eseguito MS
 
 ## <a name="create-a-detailed-log"></a>Creare un log dettagliato
 
-1. Dal menu principale di Visual Studio passare a**Opzioni** >  **strumenti** > **progetti e soluzioni** >**compila ed esegui**.
-1. Impostare **Livello di dettaglio output in compilazione progetto MSBuild** su **Dettagliato** in entrambe le caselle combinate. La prima casella in alto controlla il livello di dettaglio della compilazione in **Finestra di output**, mentre la seconda controlla il livello di dettaglio della compilazione nel file \<nomeprogetto\>.log che viene creato in ogni directory intermedia del progetto durante la compilazione.
+1. Dal menu principale di Visual Studio passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  > **Compila ed Esegui**.
+1. Impostare **Livello di dettaglio output in compilazione progetto MSBuild** su **Dettagliato** in entrambe le caselle combinate. Il primo controlla il livello di dettaglio della compilazione nel **finestra di output** e il secondo controlla il livello di dettaglio della compilazione nel \<projectname\> file. log creato nella directory intermedia di ogni progetto durante la compilazione.
 2. Da un prompt dei comandi per gli sviluppatori di Visual Studio, immettere uno di questi comandi, sostituendo i valori effettivi per percorso e configurazione:
 
     ```cmd
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
-    o
+    oppure
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /fl MyProject.vcxproj

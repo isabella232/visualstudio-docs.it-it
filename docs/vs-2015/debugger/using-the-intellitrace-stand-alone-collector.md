@@ -13,12 +13,12 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46790d762369ade78af6c10272fc92e4d5b53fca
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 81eedeeb9a1b2470e87f0d865996ad3e456723fe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586792"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520549"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Uso dell'agente di raccolta autonomo IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 >
 > È possibile raccogliere gli eventi relativi alle prestazioni nei dati IntelliTrace eseguendo l'agente in modalità **Monitor** . La modalità**Monitor** ha un impatto minore sulle prestazioni rispetto alla modalità **Traccia** o all' **IntelliTraccia stand-alone collector**. Microsoft Monitoring Agent non modifica l'ambiente del sistema di destinazione quando viene installato. Vedere [utilizzo del Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
 
- **Requirements**
+ **Requisiti**
 
 - .NET Framework 3.5, 4 o 4.5
 
@@ -41,11 +41,11 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
   > [!NOTE]
   > Assicurarsi di salvare i file di simboli (PDB). Per eseguire il debug con IntelliTrace ed eseguire il codice seguendo un'istruzione alla volta sono necessari i file di origine corrispondenti e i file di simboli. Vedere [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
 
-  **DOMANDE FREQUENTI**
+  **Domande frequenti**
 
 - [Quali app funzionano con l'agente di raccolta?](#WhatApps)
 
-- [Come iniziare](#GetStarted)
+- [Come iniziare?](#GetStarted)
 
 - [Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?](#Minimizing)
 
@@ -120,7 +120,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 2. Usare il comando di Windows **icacls** per concedere all'amministratore del server le autorizzazioni complete per la directory dell'agente di raccolta. Ad esempio:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Dominio\IDAmministratore>* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3. Per raccogliere dati per un'app Web o un'applicazione SharePoint:
 
@@ -128,7 +128,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
          Ad esempio:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Dominio\IDUtente>* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. Concedere al pool di applicazioni per l'app Web o l'applicazione SharePoint le autorizzazioni di lettura ed esecuzione per la directory dell'agente di raccolta.
 
@@ -223,7 +223,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
      `Start-IntelliTraceCollection "SharePoint - 80" "C:\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogFiles"`
 
-    |||
+    |Elemento|Descrizione|
     |-|-|
     |*ApplicationPool*|Il nome del pool di applicazioni in cui viene eseguita l'applicazione|
     |*PathToCollectionPlan*|Il percorso di un piano di raccolta, un file XML che configura le impostazioni per l'agente di raccolta.<br /><br /> È possibile specificare un piano fornito insieme all'agente di raccolta. I seguenti piani si applicano alle app Web e alle applicazioni:<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Raccoglie solo gli eventi IntelliTrace e SharePoint, incluse le eccezioni, le chiamate al database e le richieste del server Web.<br />-   collection_plan.ASP.NET.trace.xml<br />     Raccoglie le chiamate di funzione e tutti i dati in collection_plan.ASP.NET.default.xml. Questo piano è utile per un'analisi dettagliata, ma può causare un rallentamento dell'app maggiore rispetto a collection_plan.ASP.NET.default.xml.<br /><br /> Per evitare il rallentamento dell'app, personalizzare i piani o creare proprio piano. Per garantire la sicurezza, inserire i piani personalizzati nello stesso percorso sicuro in cui si trovano i file dell'agente di raccolta. Vedere [Creazione e personalizzazione dei piani di raccolta IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) e [Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?](#Minimizing) **Nota:**  Per impostazione predefinita, le dimensioni massime del file con estensione iTrace sono pari a 100 MB. Quando il file .iTrace raggiunge il limite, l'agente di raccolta elimina le voci meno recenti del file per liberare spazio per le nuove voci. Per modificare questo limite, modificare l'attributo `MaximumLogFileSize` del piano di raccolta. <br /><br /> *Dove si possono trovare le versioni localizzate di questi piani di raccolta?*<br /><br /> I piani localizzati sono disponibili nelle sottocartelle dell'agente di raccolta.|
@@ -256,13 +256,13 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 1. Per avviare l'app e raccogliere i dati allo stesso tempo, usare questa sintassi:
 
-     `\IntelliTraceSC.exe launch /cp:` `/f:` *FullPathToIntelliTraceCollectorExecutable>\<PathToCollectionPlan>* *FullPathToITraceFileDirectoryAndFileName \<>* *PathToAppExecutableFileAndFileName \<>* * \<*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      Ad esempio, per raccogliere i dati da un'app denominata **MyApp**:
 
      `C:IntelliTraceCollectorIntelliTraceSC.exe launch /cp:"C:IntelliTraceCollectorcollection_plan.ASP.NET.default.xml" /f:"C:IntelliTraceLogFilesMyApp.itrace" "C:MyAppMyApp.exe"`
 
-    |||
+    |Elemento|Descrizione|
     |-|-|
     |*FullPathToIntelliTraceCollectorExecutable*|Il percorso completo al file eseguibile dell'agente di raccolta, IntelliTraceSC.exe|
     |*PathToCollectionPlan*|Il percorso di un piano di raccolta, un file XML che configura le impostazioni per l'agente di raccolta.<br /><br /> È possibile specificare un piano fornito insieme all'agente di raccolta. I seguenti piani si applicano alle app gestite:<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     Raccoglie solo gli eventi IntelliTrace, incluse le eccezioni, le chiamate al database e le richieste del server Web.<br />-   collection_plan.ASP.NET.trace.xml<br />     Raccoglie le chiamate di funzione e tutti i dati in collection_plan.ASP.NET.default.xml. Questo piano è utile per un'analisi dettagliata, ma può causare un rallentamento dell'app maggiore rispetto a collection_plan.ASP.NET.default.xml.<br /><br /> Per evitare il rallentamento dell'app, personalizzare i piani o creare proprio piano. Per garantire la sicurezza, inserire i piani personalizzati nello stesso percorso sicuro in cui si trovano i file dell'agente di raccolta. Vedere [Creazione e personalizzazione dei piani di raccolta IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) e [Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?](#Minimizing) **Nota:**  Per impostazione predefinita, le dimensioni massime del file con estensione iTrace sono pari a 100 MB. Quando il file .iTrace raggiunge il limite, l'agente di raccolta elimina le voci meno recenti del file per liberare spazio per le nuove voci. Per modificare questo limite, modificare l'attributo `MaximumLogFileSize` del piano di raccolta. <br /><br /> *Dove si possono trovare le versioni localizzate di questi piani di raccolta?*<br /><br /> I piani localizzati sono disponibili nelle sottocartelle dell'agente di raccolta.|

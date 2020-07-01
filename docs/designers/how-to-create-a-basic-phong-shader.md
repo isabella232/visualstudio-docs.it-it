@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: Creare uno shader con phong di base'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3059048f44524b9a838a8dfefc948ec4018dd05
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 718607d74be1a74a799f8de9f4883e1df9fb7ef5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589487"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769185"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
 
@@ -46,7 +46,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
 ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-lighting-graph.png)
 
-Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader in Progettazione shader, vedere la sezione Anteprima degli shader in [Progettazione shaderFor](../designers/shader-designer.md) more information about how to preview shaders in the Shader Designer, see the Previewing Shaders section in Shader Designer
+Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per ulteriori informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione anteprima degli shader nella [finestra di progettazione shader](../designers/shader-designer.md) .
 
 La figura seguente illustra lo shader descritto in questo documento applicato a un modello 3D. La proprietà **MaterialSpecular** è impostata su (1.00, 0.50, 0.20, 0.00) e la proprietà **MaterialSpecularPower** è impostata su 16.
 
@@ -57,12 +57,12 @@ La figura seguente illustra lo shader descritto in questo documento applicato a 
 
 ![Illuminazione Phong applicata a un modello](../designers/media/digit-lighting-model.png)
 
-Per ulteriori informazioni su come applicare uno shader a un modello 3D, consultate [Procedura: Applicare uno shader a un modello 3D.](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+Per altre informazioni su come applicare uno shader a un modello 3D, vedere [procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: applicare uno shader a un modello 3DHow to: Apply a shader to a 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Procedura: esportare uno shaderHow to: Export a shader](../designers/how-to-export-a-shader.md)
-- [Procedura: creare uno shader Lambert di baseHow to: Create a basic Lambert shader](../designers/how-to-create-a-basic-lambert-shader.md)
+- [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Procedura: esportare uno shader](../designers/how-to-export-a-shader.md)
+- [Procedura: creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md)
 - [Finestra di progettazione shader](../designers/shader-designer.md)
 - [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

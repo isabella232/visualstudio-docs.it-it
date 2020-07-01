@@ -2,7 +2,7 @@
 title: Effettuare il refactoring del codice Python
 description: Visual Studio semplifica il refactoring del codice Python grazie alla ridenominazione degli identificatori, l'estrazione dei metodi, l'aggiunta delle importazioni e la rimozione di quelle inutilizzate.
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea735dd5cc3da8d5509961dbc8b27eb6106fd2af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62429905"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520562"
 ---
 # <a name="refactor-python-code"></a>Effettuare il refactoring del codice Python
 
@@ -26,7 +26,7 @@ Visual Studio offre diversi comandi per la trasformazione e la pulizia automatic
 - [Aggiungi importazione](#add-import) fornisce uno smart tag per aggiungere un'importazione mancante
 - [Rimuovi importazioni](#remove-unused-imports) consente di rimuovere le importazioni inutilizzate
 
-## <a name="rename"></a>Rinominare
+## <a name="rename"></a>Rinomina
 
 1. Fare clic con il pulsante destro del mouse sull'identificatore che si vuole rinominare e scegliere **Rinomina** oppure posizionare il cursore su tale identificatore e selezionare il comando di menu **Modifica** > **Refactoring** > **Rinomina** (**F2**).
 2. Nella finestra di dialogo **Rinomina** visualizzata immettere il nuovo nome per l'identificatore e selezionare **OK**:
@@ -42,7 +42,7 @@ Visual Studio offre diversi comandi per la trasformazione e la pulizia automatic
 ## <a name="extract-method"></a>Estrai metodo
 
 1. Selezionare le righe di codice o l'espressione da estrarre in un metodo separato.
-2. Selezionare il comando di menu **Modifica** > **metodo estrazione** **refactoring** > o digitare **Ctrl**+**R** > **M**.
+2. Selezionare il comando di menu **modifica**  >  **Refactor**  >  **Metodo Estrai** Refactor o digitare **CTRL** + **R**  >  **M**.
 3. Nella finestra di dialogo visualizzata immettere un nuovo nome di metodo, indicare la posizione in cui estrarlo e selezionare eventuali variabili di chiusura. Le variabili non selezionate per la chiusura vengono trasformate in argomenti del metodo:
 
    ![Finestra di dialogo Estrai metodo](media/code-refactor-extract-method-1.png)

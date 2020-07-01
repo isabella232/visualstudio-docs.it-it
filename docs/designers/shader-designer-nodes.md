@@ -1,19 +1,19 @@
 ---
 title: Nodi della finestra di progettazione shader
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23877f9b94b498d87a89ae8e657aa2fe52984953
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75d13aaf5d5b4257ff6ec7c2efc52adbdca7df92
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72634918"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768781"
 ---
 # <a name="shader-designer-nodes"></a>Nodi della finestra di progettazione shader
 Gli articoli di questa sezione della documentazione contengono informazioni sui diversi nodi di progettazione shader che possono essere usati per creare vari effetti grafici.
@@ -43,9 +43,9 @@ Poiché la finestra di progettazione shader deve alla fine generare codice sorge
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Nodi costanti](../designers/constant-nodes.md)|Vengono descritti i nodi che è possibile usare per rappresentare i valori letterali e le informazioni di stato vertex interpolate nei calcoli dello shader. Poiché lo stato vertex è interpolato e quindi diverso per ogni pixel, a ogni istanza di pixel shader viene assegnata una versione diversa della costante.|
-|[Nodi parametro](../designers/parameter-nodes.md)|Descrive i nodi che è possibile usare per rappresentare posizione della fotocamera, proprietà del materiale, parametri di illuminazione, ora e altre informazioni sullo stato dell'app nei calcoli dello shader.|
+|[Nodi di costante](../designers/constant-nodes.md)|Vengono descritti i nodi che è possibile usare per rappresentare i valori letterali e le informazioni di stato vertex interpolate nei calcoli dello shader. Poiché lo stato vertex è interpolato e quindi diverso per ogni pixel, a ogni istanza di pixel shader viene assegnata una versione diversa della costante.|
+|[Nodi di parametro](../designers/parameter-nodes.md)|Descrive i nodi che è possibile usare per rappresentare posizione della fotocamera, proprietà del materiale, parametri di illuminazione, ora e altre informazioni sullo stato dell'app nei calcoli dello shader.|
 |[Nodi di trama](../designers/texture-nodes.md)|Descrive i nodi che è possibile usare per effettuare il campionamento di più geometrie e tipi di trama e i modi comuni per produrre o trasformare le coordinate di trama.|
 |[Nodi di matematica](../designers/math-nodes.md)|Descrive i nodi che è possibile usare per eseguire operazioni algebriche, logiche, trigonometriche e altre operazioni matematiche che eseguono il mapping direttamente alle istruzioni di HLSL.|
 |[Nodi di utilità](../designers/utility-nodes.md)|Descrive i nodi che è possibile usare per eseguire calcoli di illuminazione comuni e altre operazioni comuni che non eseguono il mapping direttamente alle istruzioni di HLSL.|
-|[Filtrare i nodi](../designers/filter-nodes.md)|Descrivei i nodi che è possibile usare per eseguire il filtraggio della trama e del colore.|
+|[Nodi del filtro](../designers/filter-nodes.md)|Descrivei i nodi che è possibile usare per eseguire il filtraggio della trama e del colore.|

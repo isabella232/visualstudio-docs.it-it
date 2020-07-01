@@ -1,7 +1,7 @@
 ---
-title: Funzione GetValidCompatibleFramework
+title: GetValidCompatibleFramework (funzione)
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b975a4b4b2c1b4ae3f6ef0f1d6d23769bb4c77c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2219417fe8ddae3d11d0e624ad12d3de80e290dd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788696"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520224"
 ---
-# <a name="getvalidcompatibleframework-function"></a>Funzione GetValidCompatibleFramework
-  Questa API supporta l'infrastruttura Office e non è destinata a essere utilizzato direttamente dal codice.
+# <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework (funzione)
+  Questa API supporta l'infrastruttura Office e non è destinata all'uso diretto dal codice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,4 +37,4 @@ HRESULT WINAPI GetValidCompatibleFramework(
 |*pbstrValidFrameworkTag*|Non usare.|
 
 ## <a name="return-value"></a>Valore restituito
- Se la funzione ha esito positivo, restituisce **S_OK**. Se la funzione ha esito negativo, restituisce un codice di errore.
+ Se la funzione ha esito positivo, restituisce **S_OK**. Se la funzione non viene completata, restituisce un codice di errore.

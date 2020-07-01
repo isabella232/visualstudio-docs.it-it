@@ -16,17 +16,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e7258ec98937e7ea84773e788234e5a34772e9d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 797c071cdc74c36afeece304bfa4c708d7bf7147
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652201"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521212"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Controllare la vulnerabilità della sicurezza nelle query SQL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
@@ -34,18 +34,18 @@ ms.locfileid: "72652201"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un metodo imposta la proprietà <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> usando una stringa compilata da un argomento stringa nel metodo.
+ Un metodo imposta la <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> proprietà utilizzando una stringa compilata da un argomento stringa nel metodo.
 
 ## <a name="rule-description"></a>Descrizione della regola
  La regola presuppone che l'argomento stringa contenga l'input dell'utente. Una stringa di comando SQL compilata da un input dell'utente è vulnerabile agli attacchi intrusivi nel codice SQL, In un attacco SQL injection, un utente malintenzionato fornisce un input che modifica la progettazione di una query in un tentativo di danneggiare o ottenere accesso non autorizzato al database sottostante. Le tecniche tipiche includono l'inserimento di una virgoletta singola o di un apostrofo, ovvero il delimitatore di stringa letterale SQL; due trattini, che indica un commento SQL; e un punto e virgola, che indica che segue un nuovo comando. Se l'input dell'utente deve far parte della query, usare uno dei seguenti elementi, elencati in ordine di efficacia, per ridurre il rischio di attacco.
 
-- Usare un stored procedure.
+- Utilizza una stored procedure.
 
 - Usare una stringa di comando con parametri.
 
 - Convalidare l'input dell'utente per il tipo e il contenuto prima di compilare la stringa di comando.
 
-  I tipi di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] seguenti implementano la proprietà <xref:System.Data.IDbCommand.CommandText%2A> o forniscono costruttori che impostano la proprietà tramite un argomento di stringa.
+  I [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] tipi seguenti implementano la <xref:System.Data.IDbCommand.CommandText%2A> proprietà o forniscono costruttori che impostano la proprietà tramite un argomento di stringa.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> e <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -80,7 +80,7 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  È possibile eliminare un avviso da questa regola se il testo del comando non contiene alcun input dell'utente.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo, `UnsafeQuery`, che viola la regola e un metodo, `SaferQuery`, che soddisfa la regola utilizzando una stringa di comando con parametri.
+ Nell'esempio seguente viene illustrato un metodo, `UnsafeQuery` , che viola la regola e un metodo, `SaferQuery` , che soddisfa la regola utilizzando una stringa di comando con parametri.
 
  [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cpp/FxCop.Security.ReviewSqlQueries.cpp#1)]
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cs/FxCop.Security.ReviewSqlQueries.cs#1)]

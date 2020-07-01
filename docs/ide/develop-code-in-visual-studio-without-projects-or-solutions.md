@@ -1,7 +1,7 @@
 ---
 title: Sviluppare codice senza progetti o soluzioni
 ms.date: 06/22/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75aeb721ea5625523d29e20193ac406037abedc2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 68665acfcc3ea00f118dc19cf155cb3e6f5d1b36
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284893"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769660"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
 
@@ -123,7 +123,7 @@ Il testo del pulsante **Avvia** cambia per indicare che il progetto è l'element
 
 ![Progetto sul pulsante Avvia](media/customize-start-button-project.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare le attività di compilazione e debug](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [Progetti Apri cartella per C++](/cpp/build/open-folder-projects-cpp)

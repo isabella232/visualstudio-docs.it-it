@@ -1,7 +1,7 @@
 ---
 title: Come usare frammenti di codice racchiusi | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 931ce20ee872a37b8ca7ccccc18714abc7a0e41f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bbbd283186ed31960b2f84bd862a762abae748de
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593759"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769780"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Procedura: Usare frammenti di codice racchiusi
 
@@ -27,7 +27,7 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 1. Nell'**Editor di codice** selezionare il testo da racchiudere.
 
-1. Digitare **Ctrl**+**K**, **Ctrl**+**S**.
+1. Digitare **CTRL** + **K**, **CTRL** + **S**.
 
 1. Selezionare un frammento di codice nell'elenco tramite il mouse oppure digitare il nome del frammento e premere **TAB** o **INVIO**.
 
@@ -49,7 +49,7 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 1. Nell'**Editor di codice** selezionare il testo da racchiudere.
 
-1. Fare clic con il pulsante destro del mouse sul testo selezionato, quindi selezionare il comando **Circonda con** dal menu di scelta rapida.
+1. Fare clic con il pulsante destro del mouse sul testo selezionato, quindi selezionare il comando **Racchiudi** tra dal menu di scelta rapida.
 
 1. Selezionare il frammento di codice dallo strumento per l'inserimento di frammenti di codice e quindi premere **TAB** o **INVIO**.
 
@@ -57,5 +57,5 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Frammenti di codice di C](../ide/visual-csharp-code-snippets.md)
+- [Frammenti di codice C#](../ide/visual-csharp-code-snippets.md)
 - [Selezione frammento di codice](../ide/reference/code-snippet-picker.md)

@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: Applicare uno shader a un modello 3D'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae04f4cc0afb1c24f391d140081040efe9db50e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1f1ae981704287a74bb4e37117190b8b6111d0a9
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76112763"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769244"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>Procedura: Applicare uno shader a un modello 3D
 
@@ -25,7 +25,7 @@ Questo articolo illustra come usare l'editor dei modelli per applicare uno shade
 
 Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**.
 
-1. Iniziare con una scena 3D contenente uno o più modelli. Se non si dispone di una scena 3D adatta, crearne una come descritto in [Procedura: Creare un modello 3D](../designers/how-to-create-a-basic-3-d-model.md)di base . È necessario avere anche uno shader DGSL da applicare al modello. Se non si ha uno shader adatto, crearne uno come descritto in [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md) e assicurarsi di salvarlo in un file prima di continuare.
+1. Iniziare con una scena 3D contenente uno o più modelli. Se non si ha una scena 3D adatta, crearne una come descritto in [procedura: creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md). È necessario avere anche uno shader DGSL da applicare al modello. Se non si ha uno shader adatto, crearne uno come descritto in [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md) e assicurarsi di salvarlo in un file prima di continuare.
 
 2. In modalità **Seleziona** selezionare il modello a cui si vuole applicare lo shader e nella finestra **Proprietà** specificare lo shader DGSL da applicare al modello nella proprietà **Nome file** del gruppo di proprietà **Effetto**.
 
@@ -37,7 +37,7 @@ Dopo aver applicato uno shader a un modello, è possibile aprirlo nella finestra
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: creare un modello 3D di baseHow to: Create a basic 3D model](../designers/how-to-create-a-basic-3-d-model.md)
-- [Procedura: creare uno shader di colore di baseHow to: Create a basic color shader](../designers/how-to-create-a-basic-color-shader.md)
-- [Editor modelli](../designers/model-editor.md)
-- [Progettista shader](../designers/shader-designer.md)
+- [Procedura: creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md)
+- [Procedura: creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md)
+- [Editor dei modelli](../designers/model-editor.md)
+- [Finestra di progettazione shader](../designers/shader-designer.md)
