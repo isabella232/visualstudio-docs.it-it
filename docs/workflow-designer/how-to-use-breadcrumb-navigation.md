@@ -1,19 +1,19 @@
 ---
 title: "Progettazione flussi di lavoro-procedura: usare l'esplorazione di navigazione"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 291badb04c791305f655e187ff7853fc8c5087a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584569"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817463"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Procedura: utilizzare l'esplorazione tramite la barra di navigazione
 
@@ -47,7 +47,7 @@ Esistono tre modi principali per modificare il set di attività visualizzate in 
 2. Dopo aver applicato uno stato Espandi tutto o Comprimi tutto, è possibile fare clic sul pulsante **Ripristina** che sembra tornare a esaminare lo stato applicato in precedenza a ogni attività.
 
     > [!WARNING]
-    > Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart>, ha rifiutato l'espansione sul posto, la funzionalità associata ai pulsanti **Espandi tutto** e **Comprimi tutto** è disabilitata nella finestra di progettazione **diagramma di flusso** . Per ulteriori informazioni sulla finestra di progettazione **diagramma di flusso** , vedere l'argomento [diagramma di flusso](../workflow-designer/flowchart-activity-designer.md) .
+    > Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart> , ha rifiutato l'espansione sul posto, la funzionalità associata ai pulsanti **Espandi tutto** e **Comprimi tutto** è disabilitata nella finestra di progettazione **diagramma di flusso** . Per ulteriori informazioni sulla finestra di progettazione **diagramma di flusso** , vedere l'argomento [diagramma di flusso](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > Expand all ha un effetto speciale anche negli ActivityDesigner **Switch** e **TryCatch** . Quando si fa clic su **Espandi tutto**, vengono visualizzati tutti i case switch e tutti i blocchi try/catch/finally. Se si fa clic su **Ripristina** o **Comprimi tutto** , le finestre di progettazione vengono restituite allo stato predefinito, da cui è possibile fare clic su un singolo case/blocco per visualizzarne il contenuto.

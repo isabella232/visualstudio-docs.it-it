@@ -1,7 +1,7 @@
 ---
 title: 'Progettazione flussi di lavoro-procedura: usare la finestra di progettazione importazioni'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f221efea08444a4dc3e31ade2a081753eb77242c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77da016b062d032965fcf7042cedba2004e3fdf5
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593187"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817424"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Procedura: utilizzare la finestra di progettazione importazioni
 
-La finestra di progettazione importazioni consente di immettere gli spazi dei nomi per i tipi usati nelle espressioni. In modo analogo alle **importazioni** o all' C# **uso** di parole chiave in Visual Basic e, specificando gli spazi dei nomi nella finestra di progettazione importazioni è possibile immettere semplicemente un nome di tipo nell'espressione anziché un nome di tipo di versione completo.
+La finestra di progettazione importazioni consente di immettere gli spazi dei nomi per i tipi usati nelle espressioni. Analogamente alle **importazioni** o all' **uso** delle parole chiave in Visual Basic e C#, specificando gli spazi dei nomi nella finestra di progettazione importazioni è possibile immettere semplicemente un nome di tipo nell'espressione anziché un nome di tipo di versione completo.
 
 Sulla finestra di progettazione importazioni influiscono sia le modifiche all'interfaccia utente che quelle eseguite quando viene salvato il flusso di lavoro. Quando viene salvato il flusso di lavoro, alla finestra di progettazione importazioni è possibile aggiungere automaticamente spazi dei nomi, tra cui:
 

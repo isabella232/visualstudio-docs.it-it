@@ -3,7 +3,7 @@ title: Argomento sostitutivo non valido | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 452af60c37e4a56996438cc2957e9b69ccee98ef
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573801"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816826"
 ---
 # <a name="invalid-replacer-argument"></a>Argomento Replacer non valido
-È stato effettuato un tentativo di richiamare `JSON.stringify` con un argomento non valido. L'argomento `replacer` deve essere una funzione o una matrice.  
+È stato effettuato un tentativo di richiamare `JSON.stringify` con un argomento non valido. L' `replacer` argomento deve essere una funzione o una matrice.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Modificare l'argomento `replacer` in una funzione o in una matrice.  
+- Modificare l' `replacer` argomento in una funzione o in una matrice.  
   
 ## <a name="example"></a>Esempio  
  Il codice in questo esempio causa un errore di runtime perché `memberfilter` è un oggetto anziché una funzione o una matrice.  
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
-   [oggetto JSON](../../javascript/reference/json-object-javascript.md)  
- [Funzione JSON. parse](../../javascript/reference/json-parse-function-javascript.md)   
+ [JSON (oggetto)](../../javascript/reference/json-object-javascript.md)   
+ [Funzione JSON. Parse](../../javascript/reference/json-parse-function-javascript.md)   
  [Errori di runtime JavaScript](../../javascript/reference/javascript-run-time-errors.md)

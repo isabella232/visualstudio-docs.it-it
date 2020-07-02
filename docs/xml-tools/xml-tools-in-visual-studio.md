@@ -1,7 +1,7 @@
 ---
 title: Editor XML e progettazione schema
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - vb.xmldesigner
 helpviewer_keywords:
@@ -32,22 +32,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a5f069d5255a744e256bc9f7d1b48a135e85d8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e763fa3475f26b9742ea5fb7061978e711eb22ea
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592308"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816423"
 ---
-# <a name="xml-tools-in-visual-studio"></a>Strumenti XML in Visual Studio
+# <a name="overview-of-xml-tools-in-visual-studio"></a>Panoramica degli strumenti XML in Visual Studio
 
-*Extensible Markup Language (XML)* è un linguaggio di markup che fornisce un formato per descrivere i dati. XML separa i dati e la relativa presentazione usando i fogli di stile associati, ad esempio Extensible Stylesheet Language (XSL) e fogli di stile CSS. Visual Studio comprende strumenti e funzionalità che semplificano l'uso del codice XML, XSLT e degli schemi XML.
+*Extensible Markup Language (XML)* è un linguaggio di markup che fornisce un formato per la descrizione dei dati. XML separa i dati e la relativa presentazione usando i fogli di stile associati, ad esempio Extensible Stylesheet Language (XSL) e fogli di stile CSS. Visual Studio comprende strumenti e funzionalità che semplificano l'uso del codice XML, XSLT e degli schemi XML.
 
 ## <a name="xml-editor"></a>Editor XML
 
 L' [editor XML](xml-editor.md) viene utilizzato per modificare i documenti XML. Fornisce il controllo completo della sintassi XML, la convalida dello schema durante la digitazione, la codifica a colori e IntelliSense. Se viene fornita una definizione dello schema o del tipo di documento, essa verrà usata da IntelliSense per elencare gli elementi e gli attributi disponibili.
 
-Le funzionalità aggiuntive comprendono:
+Le altre funzionalità includono:
 
 - Supporto per i frammenti di codice XML, inclusi i frammenti generati dallo schema
 
@@ -77,5 +77,5 @@ Visual Studio supporta il [debug di fogli di stile XSLT](../xml-tools/debugging-
 - <xref:System.Xml?displayProperty=fullName>
 - [Trasformazioni XSLT](/dotnet/standard/data/xml/xslt-transformations)
 - [Elaborare dati XML utilizzando il modello di dati XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
-- [Modello DOM (Document Object Mode) XML](/dotnet/standard/data/xml/xml-document-object-model-dom)
+- [XML DOM (Document Object Model)](/dotnet/standard/data/xml/xml-document-object-model-dom)
 - [SOM (Schema Object Model) XML](/dotnet/standard/data/xml/xml-schema-object-model-som)

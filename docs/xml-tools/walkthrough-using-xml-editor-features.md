@@ -1,19 +1,19 @@
 ---
 title: "Procedura dettagliata: utilizzo delle funzionalità dell'editor XML"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1cebf6f7621fb5fada37b8e4592efd429bdc85e6
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592464"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817398"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procedura dettagliata: usare le funzionalità dell'editor XML
 
@@ -30,11 +30,11 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia ( **...** ) nel campo **schemi** .
+3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel campo **schemi** .
 
      Verrà visualizzata la finestra di dialogo **schemi XSD** .
 
-4. Fare clic su **Aggiungi**.
+4. Scegliere **Aggiungi**.
 
      Verrà visualizzata la finestra di dialogo **Apri schema XSD** .
 
@@ -58,19 +58,19 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
     - **dipendente** per aggiungere l'elemento radice.
 
-2. Selezionare **&lt;!--** per aggiungere un nodo di commento e premere **invio**.
+2. Selezionare ** &lt; !--** per aggiungere un nodo di commento e premere **invio**.
 
      L'editor inserisce un tag di fine comment e colloca il cursore tra i tag comment di inizio e di fine.
 
 3. Digitare il **file XML di test**.
 
-4. In una nuova riga digitare `<`e selezionare **Employee** dall'elenco dei membri.
+4. In una nuova riga digitare `<` e selezionare **Employee** dall'elenco dei membri.
 
      L'editor aggiunge l'inizio di un elemento XML, `<employee`. A questo punto è possibile aggiungere attributi all'elemento o chiudere il tag di inizio digitando `>`.
 
 5. Digitare `>` per chiudere il tag.
 
-6. L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. La **Descrizione comando** Visualizza il messaggio: **l'elemento "Employee" contiene contenuto incompleto. Previsto ' ID '** .
+6. L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. La **Descrizione comando** Visualizza il messaggio: **l'elemento "Employee" contiene contenuto incompleto. Previsto ' ID '**.
 
 7. Digitare `<` e selezionare **ID** nell'elenco dei membri. Digitare quindi `>`.
 
@@ -86,9 +86,9 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 10. Tornare al file XML e sostituire il testo **ABC** con **123**.
 
-     La sottolineatura ondulata e la **Descrizione comando** vengono cancellate sotto il valore dell'elemento ID. La **Descrizione comando** per il tag di fine Employee ora Visualizza il messaggio: **l'elemento "Employee" contiene contenuto incompleto. Previsto ' hire-date '** .
+     La sottolineatura ondulata e la **Descrizione comando** vengono cancellate sotto il valore dell'elemento ID. La **Descrizione comando** per il tag di fine Employee ora Visualizza il messaggio: **l'elemento "Employee" contiene contenuto incompleto. Previsto ' hire-date '**.
 
-11. Posizionare il cursore dopo il tag di fine ID, digitare `<`, selezionare **hire-date** nell'elenco dei membri, quindi digitare `>`.
+11. Posizionare il cursore dopo il tag di fine ID, digitare `<` , selezionare **hire-date** nell'elenco dei membri, quindi digitare `>` .
 
      L'editor aggiunge l'elemento XML, `<hire-date></hire-date>`, e posiziona il cursore dopo il tag di inizio data assunzione.
 
@@ -96,7 +96,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 ## <a name="to-format-the-xml-document"></a>Per formattare il documento XML
 
-- Selezionare il pulsante **Formatta documento** sulla barra degli strumenti dell'editor XML oppure premere **CTRL**+**E**,**D**.
+- Selezionare il pulsante **Formatta documento** sulla barra degli strumenti dell'editor XML oppure premere **CTRL** + **E**,**D**.
 
    ![Pulsante Formatta documento XML in Visual Studio](media/format-xml-document.png)
 
@@ -106,7 +106,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 1. Dal menu **File** selezionare **Salva con nome**.
 
-     Viene visualizzata la finestra **di dialogo Salva file con nome** . Il nome file predefinito è *"XMLFile1"* .
+     Viene visualizzata la finestra **di dialogo Salva file con nome** . Il nome file predefinito è *"XMLFile1"*.
 
 2. Immettere il nome del file e il percorso del documento XML, quindi fare clic su **Salva**.
 

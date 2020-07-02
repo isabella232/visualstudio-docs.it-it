@@ -1,19 +1,19 @@
 ---
 title: 'Procedura dettagliata: utilizzo di XSLT IntelliSense'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adeab012e78d5f49ca94d1d8135aaf491839c767
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a085627d598bfcc969c2e76d717a2f49a31922b2
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592438"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817281"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Procedura dettagliata: utilizzo di XSLT IntelliSense
 
@@ -152,7 +152,7 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
     </xsl:stylesheet>
     ```
 
-2. Inserire il cursore dopo `<xsl:stylesheet version="1.0">` e premere **invio**. Quindi iniziare a digitare il seguente elemento `xsl:namespace-alias`:
+2. Inserire il cursore dopo `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` e premere **invio**. Quindi iniziare a digitare il seguente elemento `xsl:namespace-alias`:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

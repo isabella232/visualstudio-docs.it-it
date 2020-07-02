@@ -1,19 +1,19 @@
 ---
 title: Aggiunta di nodi all'area di lavoro da XML Schema Explorer
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2049b8da1caa4e0af0afc52aec6e75f499d85b8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 751e291188e6357343936d61d56f07bd86f97eaf
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592815"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816397"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procedura: aggiungere nodi all'area di lavoro da XML Schema Explorer
 
@@ -26,17 +26,17 @@ In questo argomento viene illustrato come aggiungere nodi all' [area di lavoro d
 
 1. Seguire i passaggi in [procedura: creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Fare clic con il pulsante destro del mouse sul nodo `PurchaseOrderType` in XSD Explorer. Selezionare **Mostra in visualizzazione grafico**.
+2. Fare clic con il pulsante destro del mouse sul `PurchaseOrderType` nodo in XSD Explorer. Selezionare **Mostra in visualizzazione grafico**.
 
      Il nodo `purchaseOrderType` viene visualizzato nell'area di progettazione della visualizzazione grafico.
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Per trascinare e rilasciare un nodo su una visualizzazione
 
-1. Fare clic con il pulsante destro del mouse sul nodo `PurchaseOrderType` nella visualizzazione grafico. Selezionare **Mostra in XML Schema Explorer**.
+1. Fare clic con il pulsante destro del mouse sul `PurchaseOrderType` nodo nella visualizzazione grafico. Selezionare **Mostra in XML Schema Explorer**.
 
      Il nodo viene evidenziato in **XML Schema Explorer**.
 
-2. Fare clic con il pulsante destro del mouse sul nodo `PurchaseOrderType` in **XML Schema Explorer** e scegliere **Mostra tutti i riferimenti**.
+2. Fare clic con il pulsante destro del mouse sul `PurchaseOrderType` nodo in **XML Schema Explorer** e scegliere **Mostra tutti i riferimenti**.
 
      Il nodo `purchaseOrder` viene evidenziato.
 
@@ -54,9 +54,9 @@ In questo argomento viene illustrato come aggiungere nodi all' [area di lavoro d
 
 2. Aggiungere i risultati della ricerca all'area di lavoro facendo clic sul pulsante **Aggiungi nodi evidenziati all'area di lavoro** nel riquadro dei risultati di riepilogo.
 
-     ![Risultato della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
+     ![Risultati della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     Il nodo `purchaseOrder` e il nodo `PurchaseOrderType` vengono visualizzati uno accanto all'altro nell'area di progettazione della [visualizzazione grafico](../xml-tools/graph-view.md). Poiché i due nodi sono correlati (l'elemento `purchaseOrder` è di tipo `PurchaseOrderType`), viene tracciata una freccia tra loro.
+     Il `purchaseOrder` nodo e il `PurchaseOrderType` nodo vengono visualizzati uno accanto all'altro nell'area di progettazione della [visualizzazione grafico](../xml-tools/graph-view.md). Poiché i due nodi sono correlati (l'elemento `purchaseOrder` è di tipo `PurchaseOrderType`), viene tracciata una freccia tra loro.
 
 ## <a name="see-also"></a>Vedere anche
 

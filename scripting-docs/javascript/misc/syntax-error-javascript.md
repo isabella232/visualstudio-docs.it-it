@@ -3,7 +3,7 @@ title: Errore di sintassi (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1002
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: e4a9d980-f3ef-4092-b192-bf4a45981d30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39a1d803229dd614d0022ca14eb79b39f27f88b8
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 5026e2a09d673ab18102db1079ca4ddf8c0da268
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72575641"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817528"
 ---
 # <a name="syntax-error-javascript"></a>Errore di sintassi (JavaScript)
-È stata creata un'istruzione che viola una o più regole grammaticali della [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+È stata creata un'istruzione che viola una o più regole grammaticali di [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
@@ -31,4 +31,4 @@ ms.locfileid: "72575641"
 - Cercare le parentesi o le parentesi graffe non reindirizzate.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Oggetto Error](../../javascript/reference/error-object-javascript.md)
+ [Error (oggetto)](../../javascript/reference/error-object-javascript.md)

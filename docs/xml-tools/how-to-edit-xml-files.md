@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: modificare i file XML'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216718627936ac7f519c1a6a28a30886e8ae9c27
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592737"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817203"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedura: modificare i file XML
 
@@ -56,9 +56,9 @@ Per modificare un file XML, fare doppio clic sul file che si desidera modificare
 
 ::: moniker range="vs-2017"
 
-1. Scegliere **nuovo** > **progetto**dal menu **file** .
+1. Scegliere **Nuovo** > **Progetto** dal menu **File**.
 
-   Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+   Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
 2. Selezionare il linguaggio del codice desiderato e quindi selezionare il modello di **progetto vuoto (.NET Framework)** .
 
@@ -68,11 +68,11 @@ Per modificare un file XML, fare doppio clic sul file che si desidera modificare
 
 ::: moniker range=">=vs-2019"
 
-1. Scegliere **nuovo** > **progetto**dal menu **file** .
+1. Scegliere **Nuovo** > **Progetto** dal menu **File**.
 
 2. Immettere **progetto vuoto** nella casella di ricerca del modello, selezionare il modello di **progetto vuoto (.NET Framework)** , quindi fare clic su **Avanti**.
 
-3. Scegliere **Crea**.
+3. Fare clic su **Crea**.
 
 ::: moniker-end
 

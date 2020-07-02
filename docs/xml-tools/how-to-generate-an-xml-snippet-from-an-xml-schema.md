@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: generare un frammento XML da XML Schema'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec320018cc64e774751c312ca4cdeb94a6d53a9c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592685"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817177"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: generare un frammento XML da un XML Schema
 
@@ -33,7 +33,7 @@ Questa funzionalità è disponibile solo per gli elementi. È inoltre necessario
 
 - Il cursore deve trovarsi immediatamente a destra del nome dell'elemento.
 
-Il frammento generato contiene tutti gli attributi e gli elementi obbligatori. Se `minOccurs` è maggiore di uno, il numero minimo richiesto di istanze di tale elemento è incluso nel frammento, fino a un massimo di 100 istanze. Qualsiasi valore fisso trovato nello schema comporta valori fissi nel frammento. Gli elementi `xsd:any` e `xsd:anyAttribute` vengono ignorati e non comportano costrutti di frammenti aggiuntivi.
+Il frammento generato contiene tutti gli attributi e gli elementi obbligatori. Se `minOccurs` è maggiore di uno, il numero minimo richiesto di istanze di tale elemento è incluso nel frammento, fino a un massimo di 100 istanze.  Qualsiasi valore fisso trovato nello schema comporta valori fissi nel frammento. Gli elementi `xsd:any` e `xsd:anyAttribute` vengono ignorati e non comportano costrutti di frammenti aggiuntivi.
 
 I valori predefiniti vengono generati e specificati come valori modificabili. Se nello schema viene specificato un valore predefinito, verrà usato tale valore. Tuttavia, se il valore predefinito dello schema è una striga vuota, l'editor genera i valori predefiniti nel modo seguente:
 
@@ -56,11 +56,11 @@ Nei passaggi di questa sezione viene illustrato come utilizzare la funzionalità
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia ( **...** ) nel campo **schemi** .
+3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel campo **schemi** .
 
      Verrà visualizzata la finestra di dialogo **schemi XSD** .
 
-4. Fare clic su **Aggiungi**.
+4. Scegliere **Aggiungi**.
 
      Verrà visualizzata la finestra di dialogo **Apri schema XSD** .
 
@@ -88,7 +88,7 @@ Nei passaggi di questa sezione viene illustrato come utilizzare la funzionalità
 
      L'editor aggiunge il tag di inizio `<Contact` e posiziona il cursore dopo il nome dell'elemento.
 
-4. Premere **Tab** per generare dati XML per l'elemento `Contact` in base alle informazioni sullo schema.
+4. Premere **Tab** per generare dati XML per l' `Contact` elemento in base alle informazioni sullo schema.
 
 ## <a name="input"></a>Input
 
@@ -141,7 +141,7 @@ nella procedura dettagliata viene usato il seguente file di schema.
 
 ### <a name="output"></a>Output
 
-Di seguito sono riportati i dati XML generati in base alle informazioni sullo schema associate all'elemento `Contact`. Gli elementi contrassegnati come `bold` designano campi modificabili nel frammento XML.
+Di seguito sono riportati i dati XML generati in base alle informazioni sullo schema associate all'elemento `Contact`. Gli elementi contrassegnati come `bold` designano i campi modificabili nel frammento XML.
 
 ```xml
 <Contact>

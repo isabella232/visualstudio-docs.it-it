@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: utilizzare la ricerca in Progettazione del flusso di lavoro'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 12bda4af085b8ab41d3e11841f24cd5dfd389738
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 63ad6f8b6d3afd1f30f2e9a02eaa4927fb3608d2
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650305"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817476"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procedura: utilizzare la ricerca in Progettazione del flusso di lavoro
 
@@ -25,15 +25,15 @@ La ricerca rapida trova quanto segue nella finestra di progettazione:
 
 - Proprietà degli oggetti <xref:System.Activities.Activity>, <xref:System.Activities.Statements.FlowNode>, <xref:System.Activities.Statements.State>, transizioni, nonché altri elementi di controllo del flusso personalizzati.
 
-- Variabili
+- variables
 
-- argomenti
+- Argomenti
 
 - Espressioni
 
 ### <a name="use-quick-find"></a>Usa ricerca veloce
 
-1. Con progettazione flussi di lavoro aperto, premere **CTRL + F**oppure selezionare **modifica**  > **trova e Sostituisci**  > **ricerca veloce**.
+1. Con progettazione flussi di lavoro aperto, premere **CTRL + F**oppure selezionare **modifica**  >  **trova e Sostituisci**  >  **ricerca veloce**.
 
 2. Immettere il termine di ricerca nella casella di testo **trova** e fare clic su **Trova successivo**.
 
@@ -47,7 +47,7 @@ Cerca nei file individua le stringhe nei file del flusso di lavoro, inclusi i fi
 
 ### <a name="use-find-in-files"></a>USA Cerca nei file
 
-1. In Visual Studio premere **Ctrl** +**MAIUSC** +**F**oppure selezionare **modifica**  > **trova e Sostituisci**  > **Cerca nei file**.
+1. In Visual Studio premere **CTRL** + **MAIUSC** + **F**oppure selezionare **Modifica**  >  **trova e Sostituisci**  >  **Cerca nei file**.
 
 2. Immettere l'elemento di ricerca nella casella di testo **trova** e fare clic su **Trova tutti**.
 

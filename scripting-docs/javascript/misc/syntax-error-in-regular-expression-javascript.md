@@ -3,7 +3,7 @@ title: Errore di sintassi nell'espressione regolare (JavaScript) | Microsoft Doc
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5017
 dev_langs:
@@ -14,21 +14,21 @@ ms.assetid: 7799ed69-c877-42a1-87cf-ad6739302c10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69970a810df7cf0ea186d74fc39ae23e6e44e7ab
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 192f9a5ca9928e4c325d67c340276ef12de14686
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573659"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816189"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>Errore di sintassi nell'espressione regolare (JavaScript)
-La struttura della stringa di ricerca viola una o più regole grammaticali di un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] espressione regolare.  
+La struttura della stringa di ricerca viola una o più regole grammaticali di un' [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] espressione regolare.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Verificare che la struttura della stringa di ricerca dell'espressione regolare sia conforme alla sintassi dell'espressione regolare [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+- Verificare che la struttura della stringa di ricerca di espressioni regolari sia conforme alla [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] sintassi delle espressioni regolari.  
   
 ## <a name="see-also"></a>Vedere anche  
-   [oggetto Regular Expression](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Oggetto Regular Expression](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintassi delle espressioni regolari (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [Metodo compile (Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

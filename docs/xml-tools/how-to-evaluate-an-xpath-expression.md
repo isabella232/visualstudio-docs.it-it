@@ -1,23 +1,23 @@
 ---
 title: Valutare un'espressione XPath durante il debug
 ms.date: 03/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e0b6c84fa9447dc38aa7976fa59bb5aa67d5c3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 64113461cd081eb97e2eb927119f1cd67f8a8d6e
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592724"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816254"
 ---
 # <a name="evaluate-xpath-expressions"></a>Valutare le espressioni XPath
 
-È possibile valutare le espressioni XPath usando la finestra controllo **immediato** durante il debug. L'espressione XPath deve essere valida in base alla raccomandazione W3C XPath 1.0 (informazioni in lingua inglese). Il contesto XSLT corrente, ovvero il nodo `self::node()` nella finestra **variabili locali** , fornisce il contesto di valutazione per l'espressione XPath.
+È possibile valutare le espressioni XPath usando la finestra controllo **immediato** durante il debug. L'espressione XPath deve essere valida in base alla raccomandazione W3C XPath 1.0 (informazioni in lingua inglese). Il contesto XSLT corrente, ovvero il `self::node()` nodo nella finestra **variabili locali** , fornisce il contesto di valutazione per l'espressione XPath.
 
 Quando si valuta un'espressione XPath:
 
@@ -30,11 +30,11 @@ Quando si valuta un'espressione XPath:
 
 ## <a name="evaluate-an-xpath-expression"></a>Valutare un'espressione XPath
 
-Nella procedura seguente vengono usati i file *below-average. xsl* e *books. XML* della pagina [procedura dettagliata: debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) .
+La procedura seguente usa i file *below-average. xsl* e *books.xml* della pagina [procedura dettagliata: eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) .
 
 1. Inserire un punto di interruzione in corrispondenza del tag di inizio `xsl:if`.
 
-2. Per avviare il debug, scegliere **XML** > **avviare il debug XSLT** sulla barra dei menu oppure premere **ALT**+**F5**.
+2. Per avviare il debug, scegliere **XML**  >  **Avvia debug XSLT** sulla barra dei menu (oppure premere **ALT** + **F5**).
 
    Il debugger viene avviato e interrotto sul tag `xsl:if`.
 
@@ -50,7 +50,7 @@ Nella procedura seguente vengono usati i file *below-average. xsl* e *books. XML
 
 5. Modificare l'espressione XPath in `./price/text() < $bookAverage` e fare clic su **Rivaluta**.
 
-   Nella casella **valore** viene indicato che l'espressione XPath restituisce `true`.
+   Nella casella **valore** viene indicato che l'espressione XPath restituisce `true` .
 
 ## <a name="see-also"></a>Vedere anche
 

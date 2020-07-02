@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280245"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816696"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Avvio rapido: Presentazione degli strumenti di profilatura
+# <a name="first-look-at-profiling-tools"></a>Presentazione degli strumenti di profilatura
 
 Visual Studio offre un'ampia gamma di strumenti di profilatura che consentono di diagnosticare diversi tipi di problemi di prestazioni in base al tipo di app. Questo articolo fornisce una rapida panoramica degli strumenti di profilatura più comuni.
 
@@ -131,7 +131,7 @@ Per le app .NET Core che usano ADO.NET o Entity Framework Core, lo [strumento di
 
 Lo strumento Mostra ogni query in una visualizzazione elenco. È possibile visualizzare informazioni quali l'ora di inizio e la durata della query.
 
-![Allocation (Allocazione)](./media/db-gotosource.png "Allocation (Allocazione)")
+![Allocazione](./media/db-gotosource.png "Allocation (Allocazione)")
 
 ::: moniker-end
 
@@ -204,9 +204,9 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 |[Allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md)|Sì (solo .NET)|sì|sì|
 |[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|no|
 |[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|no|
-|[Visualizzatore eventi](../profiling/perftips.md)|sì|sì|sì|
-|[.NET Async](../profiling/perftips.md)|Sì (solo .NET)|sì|sì|
-|[Database](../profiling/perftips.md)|Sì (solo .NET Core)|no|Sì (solo ASP.NET Core)|
+|[Visualizzatore eventi](../profiling/events-viewer.md)|sì|sì|sì|
+|[.NET Async](../profiling/analyze-async.md)|Sì (solo .NET)|sì|sì|
+|[Database](../profiling/analyze-database.md)|Sì (solo .NET Core)|no|Sì (solo ASP.NET Core)|
 |[Esplora prestazioni](../profiling/performance-explorer.md)|no|no|no|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
 ::: moniker-end
@@ -227,5 +227,5 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 ::: moniker-end
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug in Visual Studio](../debugger/debugger-feature-tour.md)
