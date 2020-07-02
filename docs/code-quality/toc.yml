@@ -511,6 +511,8 @@
                   href: ca1802.md
                 - name: 'CA1804: Rimuovere variabili locali non usate'
                   href: ca1804.md
+                - name: 'CA1805: Non eseguire inutilmente l''inizializzazione'
+                  href: ca1805.md
                 - name: 'CA1806: Non ignorare i risultati dei metodi'
                   href: ca1806.md
                 - name: 'CA1809: Evitare un numero eccessivo di variabili locali'
@@ -603,6 +605,8 @@
                   href: ca2014.md
                 - name: 'CA2015: Non definire finalizzatori per tipi derivati da MemoryManager<T>'
                   href: ca2015.md
+                - name: 'CA2016: Inoltrare il parametro CancellationToken ai metodi che ne accettano uno'
+                  href: ca2016.md
             - name: Avvisi di sicurezza
               items:
                 - name: Panoramica
