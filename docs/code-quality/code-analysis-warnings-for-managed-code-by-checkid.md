@@ -187,6 +187,7 @@ f1_keywords:
 - CA2013
 - CA2014
 - CA2015
+- CA2016
 - CA2100
 - CA2101
 - CA2102
@@ -289,18 +290,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f8188a83a11811cc73a3b38c45df8dd7d27d1c1
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814811"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835433"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
 Nella tabella seguente sono elencati gli avvisi di analisi del codice per il codice gestito ordinati per identificatore CheckId.
 
-| CheckId | Avviso | Descrizione |
+| CheckId | Avviso | Description |
 |---------| - | - |
 | CA1000 | [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000.md) | Quando viene chiamato un membro statico di un tipo generico, è necessario specificare l'argomento di tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. In questi due casi, la sintassi necessaria per specificare l'argomento di tipo è diversa e può generare confusione. |
 | CA1001 | [CA1001: I tipi proprietari di campi Disposable devono essere Disposable](../code-quality/ca1001.md) | Una classe dichiara e implementa un campo di istanza di tipo System.IDisposable e la classe non implementa IDisposable. Una classe che dichiara un campo IDisposable è indirettamente proprietaria di una risorsa non gestita e deve implementare l'interfaccia IDisposable. |
@@ -433,7 +434,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA1801 | [CA1801: Controllare i parametri non usati](../code-quality/ca1801.md) | Una firma di metodo include un parametro non utilizzato nel corpo del metodo. |
 | CA1802 |[CA1802: Utilizza valori letterali dove appropriato](../code-quality/ca1802.md) |Un campo viene dichiarato static e read-only (Shared e ReadOnly in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) e viene inizializzato utilizzando un valore calcolabile in fase di compilazione. Poiché il valore assegnato al campo di destinazione è calcolabile in fase di compilazione, modificare la dichiarazione in un campo const (const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) in modo che il valore venga calcolato in fase di compilazione anziché in fase di esecuzione. |
 | CA1804 | [CA1804: Rimuovere variabili locali non usate](../code-quality/ca1804.md) | Le variabili locali inutilizzate e le assegnazioni non necessarie comportano un aumento delle dimensioni dell'assembly e una riduzione delle prestazioni. |
-| CA1805 | [CA1805: non inizializzare inutilmente](../code-quality/ca1805.md) | Il Runtime .NET Inizializza tutti i campi dei tipi di riferimento sui rispettivi valori predefiniti prima di eseguire il costruttore. Nella maggior parte dei casi, l'inizializzazione esplicita di un campo sul valore predefinito è ridondante, che aumenta i costi di manutenzione e può influire negativamente sulle prestazioni, ad esempio con una maggiore dimensione dell'assembly. |
+| CA1805 | [CA1805: Non eseguire inutilmente l'inizializzazione](../code-quality/ca1805.md) | Il Runtime .NET Inizializza tutti i campi dei tipi di riferimento sui rispettivi valori predefiniti prima di eseguire il costruttore. Nella maggior parte dei casi, l'inizializzazione esplicita di un campo sul valore predefinito è ridondante, che aumenta i costi di manutenzione e può influire negativamente sulle prestazioni, ad esempio con una maggiore dimensione dell'assembly. |
 | CA1806 | [CA1806: Non ignorare i risultati dei metodi](../code-quality/ca1806.md) | Un nuovo oggetto viene creato, ma non viene mai utilizzato oppure viene chiamato un metodo che crea e restituisce una nuova stringa e la nuova stringa non viene mai utilizzata oppure un metodo COM o P/Invoke restituisce un HRESULT o un codice di errore che non viene mai utilizzato. |
 | CA1809 |[CA1809: Evitare un numero eccessivo di variabili locali](../code-quality/ca1809.md) | Un'ottimizzazione comune delle prestazioni consiste nell'archiviare un valore in un registro del processore anziché in memoria. Tale procedura è definita "registrazione del valore". Per aumentare la possibilità di registrazione di tutte le variabili locali, limitare il numero di tali variabili a 64. |
 | CA1810 | [CA1810: Inizializzare i campi statici del tipo di riferimento inline](../code-quality/ca1810.md) | Quando un tipo dichiara un costruttore statico esplicito, tramite il compilatore JIT (Just-In-Time) viene aggiunto un controllo a ogni metodo statico del tipo e a ogni costruttore di istanza del tipo per assicurare che il costruttore statico sia stato precedentemente chiamato. I controlli dei costruttori statici possono ridurre le prestazioni. |
@@ -475,6 +476,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | Ca2013 | [CA2013: Non usare ReferenceEquals con tipi valore](ca2013.md) | Quando si confrontano i valori usando <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> , se objA e objB sono tipi di valore, vengono sottoposte a Boxing prima di essere passati al <xref:System.Object.ReferenceEquals%2A> metodo. Ciò significa che, anche se objA e objB rappresentano la stessa istanza di un tipo di valore, il <xref:System.Object.ReferenceEquals%2A> metodo restituisce comunque false. |
 | Ca2014 | [Ca2014: non usare stackalloc nei cicli.](ca2014.md) | Lo spazio dello stack allocato da un stackalloc viene rilasciato solo alla fine della chiamata del metodo corrente.  L'uso in un ciclo può comportare una crescita non vincolata dello stack e le condizioni di overflow dello stack. |
 | Ca2015 | [Ca2015: non definire finalizzatori per i tipi derivati da MemoryManager &lt; T&gt;](ca2015.md) | L'aggiunta di un finalizzatore a un tipo derivato da <xref:System.Buffers.MemoryManager%601> può consentire la liberazione della memoria mentre è ancora in uso da un oggetto <xref:System.Span%601> . |
+| Ca2016 | [CA2016: Inoltrare il parametro CancellationToken ai metodi che ne accettano uno](ca2016.md) | Inoltrare il `CancellationToken` parametro ai metodi che ne accettano uno per assicurarsi che le notifiche di annullamento dell'operazione vengano propagate correttamente oppure passare in `CancellationToken.None` modo esplicito per indicare che il token non viene propagato intenzionalmente. |
 | CA2100 | [CA2100: Controllare la vulnerabilità della sicurezza nelle query SQL](../code-quality/ca2100.md) | Un metodo imposta la proprietà System.Data.IDbCommand.CommandText usando una stringa compilata da un argomento stringa nel metodo. La regola presuppone che l'argomento stringa contenga l'input dell'utente. Una stringa di comando SQL compilata da un input dell'utente è vulnerabile agli attacchi intrusivi nel codice SQL, |
 | CA2101 |[CA2101: specificare il marshalling per gli argomenti di stringa P/Invoke](../code-quality/ca2101.md) | Un membro di platform invoke consente i chiamanti parzialmente attendibili, presenta un parametro di stringa e non effettua il marshalling della stringa. Questo può comportare una potenziale vulnerabilità di sicurezza. |
 | CA2102 | [CA2102: Individuare le eccezioni non CLSCompliant nei gestori generali](../code-quality/ca2102.md) | In un membro di un assembly che non è contrassegnato utilizzando l'attributo RuntimeCompatibilityAttribute o che è contrassegnato con RuntimeCompatibility(WrapNonExceptionThrows = false) è incluso un blocco catch che gestisce System.Exception e che non contiene un blocco catch generale immediatamente successivo. |
