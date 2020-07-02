@@ -8,17 +8,17 @@ helpviewer_keywords:
 - list call stack command
 - Debug.ListCallStack command
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f62852550c161566832a7ab78d4058d1d14028f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34de768f41079311505ae7948502bb4356814ec7
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72748713"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770684"
 ---
 # <a name="list-call-stack-command"></a>Comando Elenca stack di chiamate
 Visualizza lo stack di chiamate corrente.
@@ -111,8 +111,8 @@ per impostare lo stack frame corrente sul secondo frame.
 ## <a name="see-also"></a>Vedere anche
 
 - [Comando Elenca disassembly](../../ide/reference/list-disassembly-command.md)
-- [Comando Elenca thread](../../ide/reference/list-threads-command.md)
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comando list Threads](../../ide/reference/list-threads-command.md)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Creare nuovi documenti a livello di codice'
+title: 'Procedura: creare nuovi documenti a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71610d0bd2e957d932e31d83d06aca914bf8b585
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8e82c5ca62c407481b73de9394c584c3039a8f57
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251957"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545990"
 ---
-# <a name="how-to-programmatically-create-new-documents"></a>Procedura: Creare nuovi documenti a livello di codice
+# <a name="how-to-programmatically-create-new-documents"></a>Procedura: creare nuovi documenti a livello di codice
   Quando si crea un documento a livello di programmazione, il nuovo documento è un oggetto <xref:Microsoft.Office.Interop.Word.Document> nativo. Questo oggetto non ha le funzionalità di data binding e gli eventi aggiuntivi di un elemento host <xref:Microsoft.Office.Tools.Word.Document>. Per ulteriori informazioni, vedere [limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "71251957"
      [!code-csharp[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#2)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Aprire documenti esistenti a livello di codice](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Procedura: aprire documenti esistenti a livello di codice](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

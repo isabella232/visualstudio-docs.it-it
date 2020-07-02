@@ -16,23 +16,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c87836f99684c7e16c022e3e9f15bf546ba82d62
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918177"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547784"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: Rivedere i parametri inutilizzati
+# <a name="ca1801-review-unused-parameters"></a>CA1801: Controllare i parametri non usati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente su Visual Studio, vedere [CA1801: rivedere i parametri inutilizzati](/visualstudio/code-quality/ca1801-review-unused-parameters).
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|Categoria|Microsoft.Usage|
+|Category|Microsoft. Usage|
 |Modifica importante|Senza interruzioni: se il membro non è visibile all'esterno dell'assembly, indipendentemente dalla modifica apportata.<br /><br /> Senza interruzioni: se si modifica il membro per usare il parametro all'interno del corpo.<br /><br /> Suddivisione: se si rimuove il parametro ed è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
@@ -42,13 +42,13 @@ Per la documentazione più recente su Visual Studio, vedere [CA1801: rivedere i 
 
 - Metodi utilizzati come gestori eventi.
 
-- Metodi dichiarati con il modificatore `abstract` (`MustOverride` nel Visual Basic).
+- Metodi dichiarati con il `abstract` `MustOverride` modificatore (in Visual Basic).
 
-- Metodi dichiarati con il modificatore `virtual` (`Overridable` nel Visual Basic).
+- Metodi dichiarati con il `virtual` `Overridable` modificatore (in Visual Basic).
 
-- Metodi dichiarati con il modificatore `override` (`Overrides` nel Visual Basic).
+- Metodi dichiarati con il `override` `Overrides` modificatore (in Visual Basic).
 
-- Metodi dichiarati con il modificatore `extern` (`Declare` istruzione nel Visual Basic).
+- Metodi dichiarati con il `extern` `Declare` modificatore (statement in Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
  Esaminare i parametri nei metodi non virtuali che non vengono utilizzati nel corpo del metodo per assicurarsi che non esista alcuna correttezza in caso di errore di accesso. I parametri inutilizzati comportano costi di manutenzione e di prestazioni.
@@ -71,4 +71,4 @@ Per la documentazione più recente su Visual Studio, vedere [CA1801: rivedere i 
 
  [CA1812: Evitare classi interne prive di istanze](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Rimuovere variabili locali non usate](../code-quality/ca1804-remove-unused-locals.md)

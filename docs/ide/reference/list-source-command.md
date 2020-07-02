@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list source command
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c211773f20ab4643b62c8c71fc6ae6581a91987
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 286cfa87de96b75e8b79d9ee3bc31e84d7761670
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747896"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770615"
 ---
 # <a name="list-source-command"></a>Comando Elenca origine
 Visualizza le righe del codice sorgente specificate.
@@ -61,5 +61,5 @@ Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNum
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

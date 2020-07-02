@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Creare ereditarietà tra tipi (Progettazione classi)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdesigner.inheritanceline
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbf540056318e092db13521dc80478cc7eb91948
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e1ffae72a3fe171b6bd16cfbc623a777f4d4d2e4
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590371"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770199"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Procedura: Creare ereditarietà tra tipi in Progettazione classi
 
@@ -28,7 +28,7 @@ Per creare una relazione di ereditarietà tra due tipi in un diagramma classi us
 
 1. Dal progetto in **Esplora soluzioni** aprire un file del diagramma classi (con estensione cd).
 
-     Se non è disponibile alcun diagramma classi, crearne uno. Vedere [Procedura: aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
+     Se non è disponibile alcun diagramma classi, crearne uno. Vedere [procedura: aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
 
 2. In **Progettazione classi** nella **Casella degli strumenti** fare clic su **Ereditarietà**.
 

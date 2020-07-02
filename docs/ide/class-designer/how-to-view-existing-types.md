@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: visualizzare i tipi esistenti (Progettazione classi)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b109bfa5741a5d4349f2d503bd1c821e19029d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fa27489844bc59bc0d4da32440cc1caa74ecbea6
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588707"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770007"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Procedura: Visualizzare i tipi esistenti in Progettazione classi
 
@@ -27,11 +27,11 @@ Per visualizzare un tipo esistente con i relativi membri, aggiungere la forma a 
 
 È possibile vedere tipi locali e tipi a cui viene fatto riferimento. Un tipo locale è presente nel progetto aperto ed è in lettura/scrittura. Un tipo a cui viene fatto riferimento esiste in un altro progetto o in un assembly a cui viene fatto riferimento ed è in sola lettura.
 
-Per progettare nuovi tipi nei diagrammi classi, vedere [Procedura: creare tipi tramite Progettazione classi](how-to-create-types.md).
+Per progettare nuovi tipi nei diagrammi classi, vedere [procedura: creare tipi usando Progettazione classi](how-to-create-types.md).
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Per vedere i tipi di un progetto in un diagramma di classi
 
-1. Da un progetto in **Esplora soluzioni**aprire un file di diagramma classi (con estensione cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [Procedura: aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
+1. Da un progetto in **Esplora soluzioni**aprire un file del diagramma classi (con estensione CD) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [procedura: aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
 
 2. Dal progetto in **Esplora soluzioni**trascinare un file di codice sorgente nel diagramma classi.
 
@@ -45,21 +45,21 @@ Per progettare nuovi tipi nei diagrammi classi, vedere [Procedura: creare tipi t
 
     Le forme che rappresentano i tipi definiti nel file di codice sorgente appariranno nel diagramma nella posizione in cui è stato trascinato il file.
 
-È inoltre possibile visualizzare i tipi nel progetto trascinando uno o più tipi dal nodo del progetto in **Visualizzazione classi** al diagramma classi.
+È anche possibile visualizzare i tipi del progetto trascinando uno o più tipi dal nodo del progetto in **Visualizzazione classi** al diagramma classi.
 
 > [!TIP]
-> Se **Visualizzazione classi** non è aperto, aprire Visualizzazione **classi** dal menu **Visualizza.**
+> Se **Visualizzazione classi** non è aperto, aprire **Visualizzazione classi** dal menu **Visualizza** .
 
-Per visualizzare i tipi nelle posizioni predefinite del diagramma, selezionare uno o più tipi in **Visualizzazione classi**, fare clic con il pulsante destro del mouse sui tipi selezionati e scegliere Visualizza **diagramma classi**.
+Per visualizzare i tipi nelle posizioni predefinite del diagramma, selezionare uno o più tipi in **Visualizzazione classi**, fare clic con il pulsante destro del mouse sui tipi selezionati e scegliere **Visualizza diagramma classi**.
 
 > [!NOTE]
-> Se nel progetto esiste già un diagramma classi chiuso contenente il tipo, tale diagramma verrà aperto per visualizzare la forma del tipo. Tuttavia, se nel progetto non esiste alcun diagramma classi contenente il tipo, **Progettazione classi** crea un nuovo diagramma classi nel progetto e lo apre per visualizzare il tipo.
+> Se nel progetto esiste già un diagramma classi chiuso contenente il tipo, tale diagramma verrà aperto per visualizzare la forma del tipo. Tuttavia, se nel progetto non è presente alcun diagramma classi contenente il tipo, **Progettazione classi** crea un nuovo diagramma classi nel progetto e lo apre per visualizzare il tipo.
 
 La prima volta che viene visualizzato un tipo nel diagramma, la relativa forma appare compressa per impostazione predefinita. È possibile espanderla per visualizzarne il contenuto.
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Per visualizzare il contenuto di un progetto in un diagramma classi
 
-In **Esplora soluzioni** o **Visualizzazione classi**fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizza**, quindi Visualizza **diagramma classi**. Verrà creato un diagramma classi compilato automaticamente.
+In **Esplora soluzioni** o **Visualizzazione classi**fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizza**, quindi scegliere **Visualizza diagramma classi**. Verrà creato un diagramma classi compilato automaticamente.
 
 ## <a name="see-also"></a>Vedere anche
 

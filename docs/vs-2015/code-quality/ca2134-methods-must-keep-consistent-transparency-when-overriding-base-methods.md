@@ -11,17 +11,17 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 96910ffc53e6c48f930232c83d87570f1bc71e00
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe9a84280b0124eed6bb0cfffae9c1ec2942bddf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608927"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547719"
 ---
-# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: I metodi devono conservare trasparenza consistente durante l'override dei metodi base
+# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: I metodi devono mantenere trasparenza consistente durante l'override dei metodi base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|MethodsMustOverrideWithConsistentTransparency|
 |CheckId|CA2134|
@@ -29,7 +29,7 @@ ms.locfileid: "72608927"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Questa regola viene attivata quando un metodo contrassegnato con <xref:System.Security.SecurityCriticalAttribute> esegue l'override di un metodo trasparente o contrassegnato con <xref:System.Security.SecuritySafeCriticalAttribute>. La regola viene attivata anche quando un metodo trasparente o contrassegnato con <xref:System.Security.SecuritySafeCriticalAttribute> esegue l'override di un metodo contrassegnato con un <xref:System.Security.SecurityCriticalAttribute>.
+ Questa regola viene attivata quando un metodo contrassegnato con l'oggetto <xref:System.Security.SecurityCriticalAttribute> esegue l'override di un metodo trasparente o contrassegnato con <xref:System.Security.SecuritySafeCriticalAttribute> . La regola viene attivata anche quando un metodo trasparente o contrassegnato con l'oggetto <xref:System.Security.SecuritySafeCriticalAttribute> esegue l'override di un metodo contrassegnato con un oggetto <xref:System.Security.SecurityCriticalAttribute> .
 
  La regola è applicata in caso di esecuzione dell'override di un metodo virtuale o di implementazione di un'interfaccia.
 
@@ -42,7 +42,7 @@ ms.locfileid: "72608927"
  Per correggere una violazione di questa regola, modificare la trasparenza del metodo che esegue l'override di un metodo virtuale o implementando un'interfaccia in modo che corrisponda alla trasparenza del metodo virtuale o dell'interfaccia.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non eliminare gli avvisi da questa regola. Le violazioni di questa regola comporteranno un <xref:System.TypeLoadException> di runtime per gli assembly che usano la trasparenza di livello 2.
+ Non eliminare gli avvisi da questa regola. Le violazioni di questa regola comporteranno un runtime <xref:System.TypeLoadException> per gli assembly che usano la trasparenza di livello 2.
 
 ## <a name="examples"></a>Esempi
 

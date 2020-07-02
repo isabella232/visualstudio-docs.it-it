@@ -1,7 +1,7 @@
 ---
 title: Salva gli allegati da elementi di posta elettronica di Outlook a livello di codice
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7e0cff4761b26bac8265592b681d4e56f2ad92f
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 9fbe6099a8928397a7d885ac72c4f34da2da6af0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328955"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545886"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procedura: A livello di codice salva gli allegati da elementi di posta elettronica di Outlook
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procedura: salvare allegati da elementi di posta elettronica di Outlook a livello di codice
 
 In questo esempio gli allegati di posta elettronica vengono salvati in una cartella specificata quando si riceve posta nella posta in arrivo.
 
 > [!IMPORTANT]
-> Questo esempio funziona solo se si aggiunge una cartella denominata **TestFileSave** alla radice dell'unità C.
+> Questo esempio funziona solo se si aggiunge una cartella denominata **TestFileSave** alla radice della directory C.
 
 [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -38,6 +38,6 @@ In questo esempio gli allegati di posta elettronica vengono salvati in una carte
 ## <a name="see-also"></a>Vedere anche
 
 - [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
-- [Procedura: Recuperano una cartella in base al nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Procedura: A livello di programmazione eseguire azioni quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
-- [Procedura: Eseguire la ricerca a livello di codice all'interno di una cartella specifica](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Procedura: recuperare una cartella per nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Procedura: eseguire azioni quando viene ricevuto un messaggio di posta elettronica a livello di codice](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Procedura: eseguire una ricerca all'interno di una cartella specifica a livello di codice](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

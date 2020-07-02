@@ -15,17 +15,17 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f7b830e9d3a045bb54394a91d94e036613af7d1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607866"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547836"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitare complessità eccessiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
@@ -50,14 +50,14 @@ ms.locfileid: "72607866"
  Per correggere una violazione di questa regola, effettuare il refactoring del metodo per ridurre la complessità del ciclomatica.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se la complessità non può essere facilmente ridotta e il metodo è facile da comprendere, testare e gestire. In particolare, un metodo che contiene un'istruzione large `switch` (`Select` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) è un candidato per l'esclusione. Il rischio di destabilizzare la base di codice in ritardo nel ciclo di sviluppo o di introdurre una modifica imprevista del comportamento in fase di esecuzione nel codice fornito in precedenza potrebbe superare i vantaggi della gestibilità del refactoring del codice.
+ È possibile eliminare un avviso da questa regola se la complessità non può essere facilmente ridotta e il metodo è facile da comprendere, testare e gestire. In particolare, un metodo che contiene un' `switch` istruzione Large ( `Select` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) è un candidato per l'esclusione. Il rischio di destabilizzare la base di codice in ritardo nel ciclo di sviluppo o di introdurre una modifica imprevista del comportamento in fase di esecuzione nel codice fornito in precedenza potrebbe superare i vantaggi della gestibilità del refactoring del codice.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Modalità di calcolo della complessità ciclomatica
  La complessità ciclomatica viene calcolata aggiungendo 1 ai seguenti elementi:
 
-- Numero di rami (ad esempio `if`, `while` e `do`)
+- Numero di rami (ad esempio `if` , `while` e `do` )
 
-- Numero di istruzioni `case` in un `switch`
+- Numero di `case` istruzioni in un oggetto`switch`
 
   Negli esempi seguenti vengono illustrati i metodi con complessità ciclomatica variabili.
 

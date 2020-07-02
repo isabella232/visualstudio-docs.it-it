@@ -1,8 +1,8 @@
 ---
-title: Elemento LocationField (modelli di progetto Visual Studio) Documenti Microsoft
+title: Elemento LocationField (modelli di progetto di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -13,17 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702878"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770020"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelli di progetto Visual Studio)
-Specifica se la casella di testo **Percorso** nella finestra di dialogo **Nuovo progetto** è attivata, disabilitata o nascosta per il modello di progetto.
+# <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelli di progetto di Visual Studio)
+Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo progetto** è abilitata, disabilitata o nascosta per il modello di progetto.
 
- \<> DiSAVSTemplate> \<TemplateData> \<LocationField>
+ \<VSTemplate> \<TemplateData>
+ \<LocationField>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,25 +45,25 @@ Specifica se la casella di testo **Percorso** nella finestra di dialogo **Nuovo 
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Categorizza il modello e definisce la modalità di visualizzazione nel file **Nuovo progetto.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Categorizza il modello e ne definisce la modalità di visualizzazione nel **nuovo progetto**.|
 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
  I valori di testo validi sono:
 
-- `Enabled`, che specifica che la casella **Percorso** della finestra di dialogo **Nuovo progetto** è abilitata.
+- `Enabled`, che specifica che la casella **percorso** della finestra di dialogo **nuovo progetto** è abilitata.
 
-- `Disabled`, che specifica che la casella **Percorso** della finestra di dialogo **Nuovo progetto** è disabilitata.
+- `Disabled`, che indica che la casella **percorso** della finestra di dialogo **nuovo progetto** è disabilitata.
 
-- `Hidden`, che specifica che la casella **Percorso** della finestra di dialogo **Nuovo progetto** è nascosta.
+- `Hidden`, che indica che la casella **percorso** della finestra di dialogo **nuovo progetto** è nascosta.
 
 ## <a name="remarks"></a>Osservazioni
  Il valore predefinito è `Enabled`.
 
- La casella di testo **Percorso** nella finestra di dialogo **Nuovo progetto** consente agli utenti di modificare la directory predefinita in cui vengono salvati i nuovi progetti.
+ La casella di testo **percorso** nella finestra di dialogo **nuovo progetto** consente agli utenti di modificare la directory predefinita in cui vengono salvati i nuovi progetti.
 
- Il valore specificato `Location` nell'elemento viene rispettato solo dalla finestra di dialogo se il sistema del progetto sottostante lo supporta.
+ Il valore specificato nell' `Location` elemento viene rispettato solo dalla finestra di dialogo se il sistema del progetto sottostante lo supporta.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente vengono illustrati i metadati per un modello [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
@@ -93,5 +94,5 @@ Specifica se la casella di testo **Percorso** nella finestra di dialogo **Nuovo 
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

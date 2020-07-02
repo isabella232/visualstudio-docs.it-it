@@ -1,7 +1,7 @@
 ---
-title: "Procedura: Mostra errori dell'interfaccia utente del componente aggiuntivo"
+title: "Procedura: visualizzare gli errori dell'interfaccia utente del componente aggiuntivo"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,21 +15,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78cc4d2e85e2f7a5347fe0c8927c855160fbb511
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441785"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545782"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Procedura: Mostra errori dell'interfaccia utente del componente aggiuntivo
-  Per impostazione predefinita, se un componente aggiuntivo VSTO tenta di modificare l'interfaccia utente Microsoft Office (UI) e ha esito negativo, non viene visualizzato alcun messaggio di errore. È però possibile configurare le applicazioni di Microsoft Office in modo da visualizzare messaggi per gli errori correlati all'interfaccia utente. È possibile usare questi messaggi per determinare perché non viene visualizzata una barra multifunzione personalizzata, oppure perché viene visualizzata una barra multifunzione ma senza controlli.
+# <a name="how-to-show-add-in-user-interface-errors"></a>Procedura: visualizzare gli errori dell'interfaccia utente del componente aggiuntivo
+  Per impostazione predefinita, se un componente aggiuntivo VSTO tenta di modificare l'interfaccia utente di Microsoft Office e non riesce, non viene visualizzato alcun messaggio di errore. È però possibile configurare le applicazioni di Microsoft Office in modo da visualizzare messaggi per gli errori correlati all'interfaccia utente. È possibile utilizzare questi messaggi per determinare il motivo per cui non viene visualizzata una barra multifunzione personalizzata o perché viene visualizzata una barra multifunzione, ma non viene visualizzato alcun controllo.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ## <a name="to-show-vsto-add-in-user-interface-errors"></a>Per visualizzare gli errori dell'interfaccia utente dei componenti aggiuntivi VSTO
 
-1. Avviare l'applicazione.
+1. Avviare l’applicazione.
 
 2. Scegliere la scheda **File** .
 
@@ -44,6 +44,6 @@ ms.locfileid: "63441785"
 
 ## <a name="see-also"></a>Vedere anche
 - [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
-- [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
+- [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)

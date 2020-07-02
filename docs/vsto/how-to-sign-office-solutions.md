@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Firmare soluzioni Office'
+title: 'Procedura: firmare soluzioni Office'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,39 +14,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971121"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545756"
 ---
-# <a name="how-to-sign-office-solutions"></a>Procedura: Firmare soluzioni Office
-  Se si accede a una soluzione, è possibile concedere l'attendibilità alla soluzione usando il certificato come evidenza. È possibile usare lo stesso certificato per più soluzioni, e tutte le soluzioni saranno attendibili senza aggiornamenti dei criteri di sicurezza aggiuntive.
+# <a name="how-to-sign-office-solutions"></a>Procedura: firmare soluzioni Office
+  Se si firma una soluzione, è possibile concedere l'attendibilità alla soluzione usando il certificato come evidenza. È possibile utilizzare lo stesso certificato per più soluzioni e tutte le soluzioni verranno considerate attendibili senza ulteriori aggiornamenti dei criteri di sicurezza.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Se si modifica manualmente l'applicazione e manifesti della distribuzione tramite il Manifest Generation and Editing Tool (*mage.exe* e *mageui.exe*), è necessario firmare nuovamente i manifesti prima di usarli. Per altre informazioni, vedere [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+ Se si modificano manualmente i manifesti dell'applicazione e della distribuzione usando il Strumento per la generazione e la modifica di manifesti (*mage.exe* e *mageui.exe*), è necessario firmare di nuovo i manifesti prima di poterli usare. Per altre informazioni, vedere [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
-## <a name="sign-by-using-a-certificate"></a>Accedere usando un certificato
- Un certificato è un file che contiene una chiave univoca e l'identità dell'autore di soluzioni. È possibile acquistare i certificati da un'autorità di certificazione, o creare un certificato e un'autorità di certificazione firmarlo.
+## <a name="sign-by-using-a-certificate"></a>Firma tramite un certificato
+ Un certificato è un file che contiene una chiave univoca e l'identità del server di pubblicazione della soluzione. È possibile acquistare certificati da un'autorità di certificazione o creare un certificato personalizzato e firmarlo da un'autorità di certificazione.
 
- Visual Studio esegue l'accesso con un certificato temporaneo per abilitare il debug di soluzioni Office. Non utilizzare il certificato temporaneo generato in soluzioni distribuite come evidenza.
+ Visual Studio firma le soluzioni Office con un certificato temporaneo per abilitare il debug. Non usare il certificato temporaneo nelle soluzioni distribuite come prova.
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Per firmare una soluzione Office usando un certificato
 
-1. Nel **progetto** menu, fare clic su _NomeSoluzione_**proprietà**.
+1. Scegliere**proprietà** _SolutionName_dal menu **progetto** .
 
-2. Fare clic sulla scheda **Firma**.
+2. Fare clic sulla scheda **Firma** .
 
-3. Selezionare **firmare i manifesti ClickOnce**.
+3. Selezionare **firma i manifesti ClickOnce**.
 
-4. Individuare il certificato facendo **Store, selezionarne** oppure **seleziona da File** e passare al certificato.
+4. Individuare il certificato facendo clic su **Seleziona dall'archivio** o **Seleziona da file** e passando al certificato.
 
-5. Per verificare che il certificato corretto sia in uso, fare clic su **altri dettagli sul** per visualizzare le informazioni del certificato.
+5. Per verificare che sia in uso il certificato corretto, fare clic su **altri dettagli** per visualizzare le informazioni sul certificato.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)
-- [Concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md)
-- [Pagina Firma, Creazione progetti](../ide/reference/signing-page-project-designer.md)
+- [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
+- [Concedi attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md)
+- [Pagina Firma, Progettazione progetti](../ide/reference/signing-page-project-designer.md)

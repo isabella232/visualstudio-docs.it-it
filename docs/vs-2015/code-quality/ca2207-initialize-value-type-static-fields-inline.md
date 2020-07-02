@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a2b3c1faf4ecf3ecf79a3c78d0ded106b88345ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 792fe18a4f472d0b8a4fd62c652f2ae34fcf6864
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609371"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546302"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Inizializzare i campi statici dei tipi di valore inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|InitializeValueTypeStaticFieldsInline|
 |CheckId|CA2207|
@@ -36,9 +36,9 @@ ms.locfileid: "72609371"
  Un tipo di valore dichiara un costruttore statico esplicito.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando un tipo di valore viene dichiarato, viene sottoposto a un'inizializzazione predefinita in cui tutti i campi di tipo valore sono impostati su zero e tutti i campi di tipo riferimento sono impostati su `null` (`Nothing` in Visual Basic). Un costruttore statico esplicito è garantito solo per l'esecuzione prima che venga chiamato un costruttore di istanza o un membro statico del tipo. Pertanto, se il tipo viene creato senza chiamare un costruttore di istanza, non è garantita l'esecuzione del costruttore statico.
+ Quando un tipo di valore viene dichiarato, viene sottoposto a un'inizializzazione predefinita in cui tutti i campi di tipo valore sono impostati su zero e tutti i campi di tipo riferimento sono impostati su `null` ( `Nothing` in Visual Basic). Un costruttore statico esplicito è garantito solo per l'esecuzione prima che venga chiamato un costruttore di istanza o un membro statico del tipo. Pertanto, se il tipo viene creato senza chiamare un costruttore di istanza, non è garantita l'esecuzione del costruttore statico.
 
- Se tutti i dati statici vengono inizializzati inline e non viene dichiarato alcun costruttore statico C# esplicito, i compilatori e Visual Basic aggiungono il flag `beforefieldinit` alla definizione della classe MSIL. I compilatori aggiungono anche un costruttore statico privato che contiene il codice di inizializzazione statico. È garantito che questo costruttore statico privato venga eseguito prima che venga eseguito l'accesso a qualsiasi campo statico del tipo.
+ Se tutti i dati statici vengono inizializzati inline e non viene dichiarato alcun costruttore statico esplicito, i compilatori C# e Visual Basic aggiungono il `beforefieldinit` flag alla definizione della classe MSIL. I compilatori aggiungono anche un costruttore statico privato che contiene il codice di inizializzazione statico. È garantito che questo costruttore statico privato venga eseguito prima che venga eseguito l'accesso a qualsiasi campo statico del tipo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, inizializzare tutti i dati statici quando viene dichiarata e rimuovere il costruttore statico.

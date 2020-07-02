@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9f843efe0aa17b6e87fdb047e1f98a3715ae11af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19ae3a4fdc620343f18aa0845c33e1d73529adfe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603320"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546796"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Non dichiarare membri virtuali nei tipi sealed
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
@@ -33,12 +33,12 @@ ms.locfileid: "72603320"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico è sealed e dichiara un metodo che è sia `virtual` (`Overridable` in Visual Basic) che non finale. Questa regola non segnala violazioni per i tipi delegati, che devono seguire questo modello.
+ Un tipo pubblico è sealed e dichiara un metodo che è sia `virtual` ( `Overridable` in Visual Basic) che non finale. Questa regola non segnala violazioni per i tipi delegati, che devono seguire questo modello.
 
 ## <a name="rule-description"></a>Descrizione della regola
  I tipi dichiarano metodi come virtuali in modo che l'ereditarietà di tipi possa eseguire l'override dell'implementazione del metodo virtuale. Per definizione, non è possibile ereditare da un tipo sealed, rendendo un metodo virtuale su un tipo sealed non significativo.
 
- Il Visual Basic .NET e C# i compilatori non consentono ai tipi di violare questa regola.
+ I compilatori Visual Basic .NET e C# non consentono ai tipi di violare questa regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, rendere il metodo non virtuale o rendere il tipo ereditabile.

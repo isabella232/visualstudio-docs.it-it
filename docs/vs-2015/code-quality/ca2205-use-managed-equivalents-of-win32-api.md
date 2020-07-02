@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 931b1e5099bf221fefc7a8f4a19524d2531a4418
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85e27ab04ca81f5513a0b09bc41548f4a7c2430d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609482"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547680"
 ---
-# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Utilizzare equivalenti gestiti dell'API Win32
+# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Usare equivalenti gestiti dell'API Win32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|UseManagedEquivalentsOfWin32Api|
 |CheckId|CA2205|
@@ -33,10 +33,10 @@ ms.locfileid: "72609482"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Viene definito un metodo di platform invoke e nella libreria di classi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] esiste un metodo con la funzionalità equivalente.
+ Viene definito un metodo di platform invoke e un metodo con la funzionalità equivalente è presente nella [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] libreria di classi.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un metodo di platform invoke viene usato per chiamare una funzione DLL non gestita e viene definito usando l'attributo <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> o la parola chiave `Declare` in Visual Basic. Un metodo di platform invoke definito in modo non corretto può causare eccezioni di runtime a causa di problemi quali una funzione senza nome, un mapping errato di tipi di dati di parametri e valori restituiti e specifiche di campo non corrette, ad esempio la convenzione di chiamata e il carattere set. Se disponibile, è in genere più semplice e meno soggetta a errori chiamare il metodo gestito equivalente rispetto alla definizione e alla chiamata diretta del metodo non gestito. La chiamata a un metodo di platform invoke può anche causare problemi di sicurezza aggiuntivi che devono essere risolti.
+ Un metodo di platform invoke viene usato per chiamare una funzione DLL non gestita e viene definito usando l' <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attributo o la `Declare` parola chiave in Visual Basic. Un metodo platform invoke definito in modo errato può causare eccezioni in fase di esecuzione a causa di problemi quali una funzione senza nome, un mapping errato di tipi di dati di parametri e valori restituiti e specifiche di campo non corrette, ad esempio la convenzione di chiamata e il set di caratteri. Se disponibile, è in genere più semplice e meno soggetta a errori chiamare il metodo gestito equivalente rispetto alla definizione e alla chiamata diretta del metodo non gestito. La chiamata a un metodo di platform invoke può anche causare problemi di sicurezza aggiuntivi che devono essere risolti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, sostituire la chiamata alla funzione non gestita con una chiamata al relativo equivalente gestito.
@@ -51,12 +51,12 @@ ms.locfileid: "72609482"
  [!code-vb[FxCop.Usage.ManagedEquivalents#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/vb/FxCop.Usage.ManagedEquivalents.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1404: Chiamare GetLastError immediatamente dopo P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+ [CA1404: chiamare GetLastError immediatamente dopo P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
 
- [CA1060: Spostare P/Invoke nella classe NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+ [CA1060: spostare i P/Invoke nella classe NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400: I punti di ingresso P/Invoke devono esistere](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+ [CA1400: i punti di ingresso P/Invoke devono esistere](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: I P/Invoke non devono essere visibili](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: i P/Invoke non devono essere visibili](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Specificare il marshalling per argomenti di stringa P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: specificare il marshalling per gli argomenti di stringa P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

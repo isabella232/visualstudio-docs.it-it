@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Definire e selezionare intervalli nei documenti a livello di codice'
+title: 'Procedura: definire e selezionare intervalli nei documenti a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574857"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545951"
 ---
-# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Procedura: Definire e selezionare intervalli nei documenti a livello di codice
-  È possibile definire un intervallo in un documento di Microsoft Office Word usando un oggetto <xref:Microsoft.Office.Interop.Word.Range>. È possibile selezionare l'intero documento in diversi modi, ad esempio, tramite il <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metodo del <xref:Microsoft.Office.Interop.Word.Range> dell'oggetto oppure usando la proprietà Content del <xref:Microsoft.Office.Tools.Word.Document> classe (in una personalizzazione a livello di documento) o <xref:Microsoft.Office.Interop.Word.Document> classe (in un Componente aggiuntivo VSTO).
+# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Procedura: definire e selezionare intervalli nei documenti a livello di codice
+  È possibile definire un intervallo in un documento di Microsoft Office Word usando un oggetto <xref:Microsoft.Office.Interop.Word.Range>. È possibile selezionare l'intero documento in diversi modi, ad esempio usando il <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metodo dell' <xref:Microsoft.Office.Interop.Word.Range> oggetto o usando la proprietà Content della <xref:Microsoft.Office.Tools.Word.Document> classe (in una personalizzazione a livello di documento) o la <xref:Microsoft.Office.Interop.Word.Document> classe (in un componente aggiuntivo VSTO).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -80,7 +80,7 @@ ms.locfileid: "62574857"
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2. Verificare se sono presenti almeno due frasi del documento, impostare il *avviare* e *End* argomenti dell'intervallo e quindi selezionare l'intervallo.
+2. Verificare che nel documento siano presenti almeno due frasi, impostare gli argomenti *iniziale* e *finale* dell'intervallo, quindi selezionare l'intervallo.
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
@@ -120,16 +120,16 @@ ms.locfileid: "62574857"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2. Verificare se sono presenti almeno due frasi del documento, impostare il *avviare* e *End* argomenti dell'intervallo e quindi selezionare l'intervallo.
+2. Verificare che nel documento siano presenti almeno due frasi, impostare gli argomenti *iniziale* e *finale* dell'intervallo, quindi selezionare l'intervallo.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)
-- [Procedura: A livello di programmazione estendere gli intervalli nei documenti](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Procedura: Recuperare i caratteri iniziale e finale negli intervalli a livello di codice](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [Procedura: A livello di programmazione estendere gli intervalli nei documenti](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Procedura: A livello di programmazione reimpostare gli intervalli nei documenti di Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [Procedura: A livello di programmazione comprimere intervalli o selezioni in documenti](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [Procedura: A livello di programmazione escludere i segni di paragrafo durante la creazione di intervalli](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [Procedura: estendere gli intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Procedura: recuperare i caratteri iniziale e finale negli intervalli a livello di codice](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Procedura: estendere gli intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Procedura: reimpostare gli intervalli nei documenti di Word a livello di codice](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Procedura: comprimere intervalli o selezioni in documenti a livello di codice](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [Procedura: escludere i segni di paragrafo a livello di codice durante la creazione di intervalli](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

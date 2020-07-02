@@ -1,7 +1,7 @@
 ---
 title: A capo automatico
 ms.date: 11/07/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - word wrap
 - editors, text viewing
@@ -12,19 +12,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f49925211247e346ac3203de20a97496c54295d
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: c4bf76643ce1ea6e2f449c54fbc31d441418becf
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444804"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770330"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: gestire il ritorno a capo automatico nell'editor
 
 È possibile selezionare e deselezionare l'opzione **A capo automatico**. Se questa opzione è selezionata, la parte di una riga che si estende oltre la larghezza corrente della finestra dell'Editor del codice viene visualizzata nella riga successiva. Se questa opzione è deselezionata, ad esempio per facilitare l'uso della numerazione delle righe, è possibile visualizzare la parte finale delle righe lunghe scorrendo la finestra verso destra.
 
 > [!NOTE]
-> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Editor di origine: a capo automatico](/visualstudio/mac/source-editor#word-wrap).
+> Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Editor origine: ritorno a capo automatico](/visualstudio/mac/source-editor#word-wrap).
 
 ## <a name="to-set-word-wrap-preferences"></a>Per impostare le preferenze del ritorno a capo automatico
 

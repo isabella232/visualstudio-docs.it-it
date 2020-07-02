@@ -4,7 +4,7 @@ description: Informazioni su come impostare le opzioni di accessibilità di Visu
 ms.date: 08/23/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bba4e8defcd727f05dbc209aa2f48f7d5f2c92
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac857d961b1ae736645ba2cfda3f1ef5755d0fa1
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70107774"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770287"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Procedura: Impostare le opzioni di accessibilità IDE
 
@@ -38,7 +38,7 @@ Visual Studio supporta anche i layout di tastiera Dvorak, che consentono di acce
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editor, finestre di dialogo e finestre degli strumenti
 
-Per impostazione predefinita, le finestre di dialogo e le finestre degli strumenti in Visual Studio usano le stesse dimensioni di carattere e gli stessi colori del sistema operativo. Le impostazioni relative ai colori per il frame dell'IDE, le finestre di dialogo, le barre degli strumenti e le finestre degli strumenti si basano su una combinazione di colori: chiara o scura. È possibile modificare il tema di colore corrente nella finestra di [dialogo Opzioni: Ambiente > Generale](../../ide/reference/general-environment-options-dialog-box.md).
+Per impostazione predefinita, le finestre di dialogo e le finestre degli strumenti in Visual Studio usano le stesse dimensioni di carattere e gli stessi colori del sistema operativo. Le impostazioni relative ai colori per il frame dell'IDE, le finestre di dialogo, le barre degli strumenti e le finestre degli strumenti si basano su una combinazione di colori: chiara o scura. È possibile modificare il tema colori corrente nella finestra di [dialogo Opzioni: ambiente > generale](../../ide/reference/general-environment-options-dialog-box.md).
 
 È anche possibile visualizzare finestre popup nella visualizzazione Codice dell'editor. Queste finestre possono indicare i membri disponibili per l'oggetto corrente e i parametri necessari per completare una funzione o un'istruzione e possono essere utili se l'utente ha difficoltà di digitazione, ma interferiscono con lo stato attivo nell'editor del codice, creando problemi per alcuni utenti.
 
@@ -46,7 +46,7 @@ Di seguito viene descritto come disattivare le finestre popup:
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-1. Scegliere **Editor di** > testo**Tutti i linguaggi** > **Generale**.
+1. Scegliere **editor di testo**  >  **tutti i linguaggi**  >  **generale**.
 
 1. Deselezionare le caselle di controllo **Elenco membri automatico** e **Informazioni parametri**.
 
@@ -62,7 +62,7 @@ Quando si seleziona **[Tutte le finestre degli strumenti di testo]** nell'elenco
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-1. Scegliere**Colori e colori** **ambiente** > .
+1. Scegliere **Environment**  >  **tipi di carattere e colori**dell'ambiente.
 
 1. Selezionare un'opzione nel menu a discesa **Mostra impostazioni per**.
 
@@ -102,7 +102,7 @@ Quando si seleziona **[Tutte le finestre degli strumenti di testo]** nell'elenco
 1. Scegliere **OK**.
 
 > [!TIP]
-> Per utilizzare colori a contrasto elevato per tutte le finestre dell'applicazione nel sistema operativo, premere **Alt**+sinistro**Maiusc**+**di Sinistra Di Stamp.** Se Visual Studio è aperto, chiuderlo e riaprirlo per implementare correttamente i colori a contrasto elevato.
+> Per usare i colori a contrasto elevato per tutte le finestre dell'applicazione nel sistema operativo, fare clic su **Left ALT** + **Left Shift** + **Stamp**. Se Visual Studio è aperto, chiuderlo e riaprirlo per implementare correttamente i colori a contrasto elevato.
 
 ## <a name="toolbars"></a>Barre degli strumenti
 

@@ -1,7 +1,7 @@
 ---
 title: "Procedura: visualizzare gli URL come collegamenti nell'editor"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - URLs, opening
 - Code Editor, displaying URLs
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 80ad0fcc7409bd91f24ef197ef12ed64610a2e0b
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569088"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770348"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: visualizzare gli URL come collegamenti nell'editor
 
@@ -27,7 +27,7 @@ ms.locfileid: "75569088"
 
 - Visualizzano una **descrizione comando** quando si passa il puntatore su di essi.
 
-- Tentare di aprire il sito Web indicato quando si **preme**+**CTRL fare clic** sul collegamento. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.
+- Provare ad aprire il sito Web indicato quando **si** + **fa clic** sul collegamento. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.
 
 ## <a name="display-urls-as-links"></a>Visualizzare gli URL come collegamenti
 

@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d3e94f308936f898e555b1ad38e6a9d50051a276
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ecf829251cbeab600cb95f8f0c0b0173cd7338d4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659543"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546276"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: I valori letterali devono essere digitati in modo corretto
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: I valori letterali devono essere digitati correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|
@@ -38,7 +38,7 @@ ms.locfileid: "72659543"
 ## <a name="rule-description"></a>Descrizione della regola
  Questa regola consente di controllare una stringa letterale passata come valore a un parametro o a una proprietà quando uno o più dei seguenti casi è true:
 
-- L'attributo <xref:System.ComponentModel.LocalizableAttribute> del parametro o della proprietà è impostato su true.
+- L' <xref:System.ComponentModel.LocalizableAttribute> attributo del parametro o della proprietà è impostato su true.
 
 - Il nome del parametro o della proprietà contiene "Text", "message" o "Caption".
 

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: personalizzare i diagrammi classi (Progettazione classi)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - class diagrams, customizing
 - shapes, removing type from class diagrams
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c55204983f9e7a546867621ec21070c8d69645
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590163"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770182"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Procedura: Personalizzare i diagrammi classi
 
@@ -37,7 +37,7 @@ Le sezioni contenenti membri di tipo, ad esempio la sezione **Proprietà** in un
 
 2. Nella barra degli strumenti di **Progettazione classi** fare clic sul pulsante **Zoom avanti** o **Zoom indietro** per modificare il livello di zoom dell'area di progettazione.
 
-     o
+     oppure
 
      Specificare un particolare valore di zoom. È possibile usare l'elenco a discesa **Zoom** o digitare un livello di zoom valido (l'intervallo valido è compreso tra 10% e 400%).
 
@@ -128,5 +128,5 @@ Le sezioni contenenti membri di tipo, ad esempio la sezione **Proprietà** in un
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Passare dalla notazione membro alla notazione associazione](how-to-change-between-member-notation-and-association-notation.md)
-- [Procedura: visualizzare i tipi esistentiHow to: View Existing Types](how-to-view-existing-types.md)
+- [Procedura: visualizzare i tipi esistenti](how-to-view-existing-types.md)
 - [Visualizzazione di tipi e relazioni](designing-and-viewing-classes-and-types.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: aggiungere comandi a menu di scelta rapida'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986021"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546198"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Procedura: aggiungere comandi a menu di scelta rapida
   Questo argomento illustra come aggiungere comandi a un menu di scelta rapida in un'applicazione di Office usando un componente aggiuntivo VSTO.
@@ -31,7 +31,7 @@ ms.locfileid: "72986021"
 
 2. **Esplora soluzioni**selezionare **ThisAddin.cs** o **ThisAddin.vb**.
 
-3. Sulla barra dei menu scegliere **Visualizza** > **Codice**.
+3. Nella barra dei menu scegliere **Visualizza**  >  **codice**.
 
      Il file di classe **ThisAddin** viene aperto nell'editor di codice.
 
@@ -40,9 +40,9 @@ ms.locfileid: "72986021"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. In **Esplora soluzioni**selezionare il file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione è denominato *Ribbon1. XML*.
+5. In **Esplora soluzioni**selezionare il file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione è denominato *Ribbon1.xml*.
 
-6. Sulla barra dei menu scegliere **Visualizza** > **Codice**.
+6. Nella barra dei menu scegliere **Visualizza**  >  **codice**.
 
      Il file XML della barra multifunzione viene aperto nell'editor di codice.
 
@@ -72,7 +72,7 @@ ms.locfileid: "72986021"
 
 8. In **Esplora soluzioni**scegliere **MyRibbon.cs** o **MyRibbon.vb**.
 
-9. Aggiungere un metodo di callback alla classe `Ribbon1` per ogni controllo che si desidera gestire.
+9. Aggiungere un metodo di callback alla `Ribbon1` classe per ogni controllo che si desidera gestire.
 
      Il metodo di callback seguente consente di gestire il pulsante **My Button** . Questo codice aggiunge una stringa al documento attivo in corrispondenza della posizione corrente del cursore.
 

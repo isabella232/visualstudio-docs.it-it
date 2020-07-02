@@ -1,7 +1,7 @@
 ---
 title: Framework .NET di destinazione
 ms.date: 03/31/2020
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - framework targeting [Visual Studio]
@@ -11,18 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: b7c3c2b6b81f8f7793bda35c6b220e43caee9b5f
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472729"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770456"
 ---
 # <a name="framework-targeting-overview"></a>Panoramica sull'impostazione dei framework di destinazione
 
 In Visual Studio è possibile specificare la versione di .NET da impostare come destinazione per il progetto. L'impostazione di framework di destinazione consente di garantire che l'applicazione usi solo le funzionalità disponibili nella versione del framework specificata. Per le app .NET Framework da eseguire in un altro computer, la versione del framework per cui viene sviluppata l'applicazione deve essere compatibile con quella installata nel computer.
 
-Una soluzione di Visual Studio può contenere progetti destinati a versioni diverse di .NET.  Si noti tuttavia che è possibile compilare solo in base a una singola versione di .NET usando le condizioni di riferimento per una singola compilazione o compilare in modo ricorsivo file binari diversi per ogni versione.  Per altre informazioni sui framework di destinazione, vedere [Framework di destinazione](/dotnet/standard/frameworks).
+Una soluzione di Visual Studio può contenere progetti destinati a versioni diverse di .NET.  Tuttavia, si noti che è possibile eseguire la compilazione solo su una singola versione di .NET utilizzando le condizioni di riferimento per una singola compilazione oppure creare in modo ricorsivo binari diversi per ogni versione.  Per altre informazioni sui framework di destinazione, vedere [Framework di destinazione](/dotnet/standard/frameworks).
 
 > [!TIP]
 > È anche possibile definire la destinazione delle applicazioni per piattaforme diverse. Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).
@@ -110,7 +110,7 @@ In un progetto Visual Basic, C# o F# esistente è possibile modificare la versio
 
 Prima di impostare una versione di .NET come destinazione, è necessario installare i riferimenti ad assembly appropriati. È possibile scaricare Developer Pack per versioni diverse di .NET dalla pagina dei [download di .NET](https://www.microsoft.com/net/download/windows).
 
-Per i progetti .NET Framework, la finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema che non pertinenti alla versione di .NET Framework di destinazione, per evitare che vengano aggiunti inavvertitamente a un progetto. Gli assembly di sistema sono file *DLL* inclusi in una versione di .NET Framework. I riferimenti che appartengono a una versione del framework superiore alla versione di destinazione non verranno risolti e non è possibile aggiungere controlli che dipendono da tale riferimento. Se si vuole abilitare questo riferimento, reimpostare la destinazione di .NET Framework del progetto su una che include il riferimento.
+Per i progetti .NET Framework, la finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema che non pertinenti alla versione di .NET Framework di destinazione, per evitare che vengano aggiunti inavvertitamente a un progetto. Gli assembly di sistema sono file con *estensione dll* inclusi in una versione .NET Framework. I riferimenti che appartengono a una versione del Framework superiore alla versione di destinazione non verranno risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di .NET Framework del progetto su una che include il riferimento.
 
 Per altre informazioni sui riferimenti ad assembly, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -120,6 +120,6 @@ Quando si usa .NET Framework 3.5 o versioni successive, vengono aggiunti automat
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Quadri di destinazione](/dotnet/standard/frameworks)
+- [Framework di destinazione](/dotnet/standard/frameworks)
 - [Multitargeting (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
 - [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

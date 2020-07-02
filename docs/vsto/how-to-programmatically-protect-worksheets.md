@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Proteggi i fogli di foglio a livello di codice'
+title: 'Procedura: proteggere i fogli di fogli di un foglio di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254593"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545899"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>Procedura: Proteggi i fogli di foglio a livello di codice
+# <a name="how-to-programmatically-protect-worksheets"></a>Procedura: proteggere i fogli di fogli di un foglio di codice
   La funzionalità di protezione di Microsoft Office Excel consente di impedire la modifica degli oggetti di un foglio di lavoro da parte degli utenti o mediante codice. Per impostazione predefinita, dopo l'attivazione della protezione tutte le celle risultano bloccate.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "71254593"
 
 1. Nel gruppo **modifiche** della scheda **Revisione** fare clic su **Consenti agli utenti di modificare gli intervalli**.
 
-     Viene visualizzata la finestra **di dialogo Consenti agli utenti di modificare gli intervalli** . È possibile specificare gli intervalli che possono essere sbloccati mediante l'inserimento di una password e gli utenti che possono modificarli senza immettere alcuna password.
+     Viene visualizzata la finestra **di dialogo Consenti agli utenti di modificare gli intervalli** .  È possibile specificare gli intervalli che possono essere sbloccati mediante l'inserimento di una password e gli utenti che possono modificarli senza immettere alcuna password.
 
 ## <a name="use-code-at-run-time"></a>Usare il codice in fase di esecuzione
  Il codice seguente imposta la password tramite la variabile getPasswordFromUser, che contiene la password ottenuta dall'utente, e consente solo l'ordinamento.
@@ -67,9 +67,9 @@ ms.locfileid: "71254593"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: Rimuovere la protezione dai fogli di dati a livello di codice](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
-- [Procedura: Proteggere le cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-protect-workbooks.md)
-- [Procedura: Nascondi i fogli di foglio di programmazione a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Procedura: rimuovere la protezione dai fogli di dati a livello di codice](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
+- [Procedura: proteggere cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-protect-workbooks.md)
+- [Procedura: nascondere i fogli di programmazione a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Elemento host Worksheet](../vsto/worksheet-host-item.md)
 - [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)

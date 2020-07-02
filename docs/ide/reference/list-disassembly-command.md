@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72747927"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770641"
 ---
 # <a name="list-disassembly-command"></a>Comando Elenca disassembly
 Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.
@@ -67,8 +67,8 @@ Facoltativa. Abilita la visualizzazione dei numeri di riga associati al codice s
 ## <a name="see-also"></a>Vedere anche
 
 - [Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)
-- [Comando Elenca thread](../../ide/reference/list-threads-command.md)
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comando list Threads](../../ide/reference/list-threads-command.md)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

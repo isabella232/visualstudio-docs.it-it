@@ -1,7 +1,7 @@
 ---
 title: Creare soluzioni e progetti
 ms.date: 02/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
 - VS.ToolsOptionsPages.Projects.General
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 19a836847aa01038bdbb015612c4fb4a3964d9a9
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301818"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770541"
 ---
 # <a name="create-solutions-and-projects"></a>Creare soluzioni e progetti
 
@@ -46,14 +46,14 @@ Per informazioni sulla creazione di un nuovo progetto da un modello, vedere [Cre
 
 Se è presente una raccolta di file di origine di codice è possibile aggiungerli facilmente a un progetto.
 
-1. Scegliere **File** > **nuovo** > **progetto da codice esistente**dal menu .
+1. Dal menu scegliere **file**  >  **nuovo**  >  **progetto da codice esistente**.
 
 1. In **Creazione guidata nuovo progetto da file di codice esistenti** scegliere il tipo di progetto desiderato nella casella di riepilogo a discesa **Specificare il tipo di progetto che si vuole creare** e quindi scegliere **Avanti**.
 
 1. Nella procedura guidata, passare al percorso dei file e immettere un nome per il nuovo progetto nella casella **Nome**. Al termine scegliere il pulsante **Fine**.
 
 > [!NOTE]
-> Questa opzione risulta più adatta per raccolte di file relativamente semplici. Attualmente, sono supportati solo i tipi di progetto c'è, Apache Cordova, Visual Basic e C .
+> Questa opzione risulta più adatta per raccolte di file relativamente semplici. Attualmente sono supportati solo i tipi di progetto C++, Apache Cordova, Visual Basic e C#.
 
 ## <a name="add-files-to-a-solution"></a>Aggiungere file a una soluzione
 
@@ -65,7 +65,7 @@ Quando si crea un progetto .NET Framework è possibile indicare la versione spec
 
 ::: moniker range="vs-2017"
 
-Per specificare una versione di .NET Framework, scegliere il menu a discesa **Framework** nella finestra di dialogo **Nuovo progetto.**
+Per specificare una versione di .NET Framework, scegliere il menu a discesa **Framework** nella finestra di dialogo **nuovo progetto** .
 
 ![Elenco a discesa Framework nella finestra di dialogo Nuovo progetto](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Per specificare una versione di .NET Framework, scegliere il menu a discesa **Fr
 
 ::: moniker range=">=vs-2019"
 
-Per specificare una versione di .NET Framework, scegliere il menu a discesa **Framework** nella pagina **Crea un nuovo progetto.**
+Per specificare una versione di .NET Framework, scegliere il menu a discesa **Framework** nella pagina **Crea un nuovo progetto** .
 
 ![Selettore Framework nella configurazione di un nuovo progetto](media/vs-2019/configure-new-project-framework.png)
 
@@ -88,7 +88,7 @@ Per specificare una versione di .NET Framework, scegliere il menu a discesa **Fr
 
 ### <a name="to-create-an-empty-solution"></a>Per creare una soluzione vuota
 
-1. Nella barra dei menu scegliere **File** > **Nuovo** > **progetto**.
+1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto**.
 
 ::: moniker range="vs-2017"
 
@@ -122,7 +122,7 @@ Come detto in precedenza, è anche possibile aprire file di codice senza usare u
 
 Se si crea un progetto basato su .NET senza specificare un percorso su disco, il progetto è temporaneo. I progetti temporanei consentono di acquisire familiarità con i progetti .NET. In qualsiasi momento mentre si lavora con il progetto temporaneo è possibile scegliere di salvarlo o rimuoverlo.
 
-Per creare un progetto temporaneo, passare innanzitutto a **Strumenti** > **Opzioni** > **progetti e soluzioni** > **generali**e deselezionare la casella di controllo Salva nuovi progetti al momento **della creazione.** Aprire la finestra di dialogo **Nuovo progetto** come di consueto.
+Per creare un progetto temporaneo, passare prima a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **generale**e deselezionare la casella di controllo **Salva nuovi progetti al momento della creazione** . Aprire la finestra di dialogo **Nuovo progetto** come di consueto.
 
 ::: moniker-end
 
@@ -145,5 +145,5 @@ Per creare un progetto temporaneo, passare innanzitutto a **Strumenti** > **Opzi
 
 - [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)
 - [Repository open source Microsoft su GitHub](https://github.com/Microsoft)
-- [Esempi di codice per sviluppatoriDeveloper code samples](https://code.msdn.microsoft.com/)
+- [Esempi di codice per sviluppatori](https://code.msdn.microsoft.com/)
 - [Creare progetti (Visual Studio per Mac)](/visualstudio/mac/create-new-projects)

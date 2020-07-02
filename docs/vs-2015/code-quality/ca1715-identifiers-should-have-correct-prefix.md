@@ -15,29 +15,29 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fe362a58a047c8594d09bc6985c48d16f21d3b76
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919195"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545600"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Gli identificatori devono contenere il prefisso corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente di Visual Studio, vedere [CA1715: gli identificatori devono avere il prefisso corretto](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Categoria|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica importante|Interruzioni quando vengono attivate sulle interfacce.<br /><br /> Senza interruzioni, quando viene generato su parametri di tipo generico.|
 
 ## <a name="cause"></a>Causa
  Il nome di un'interfaccia visibile esternamente non inizia con una "I" maiuscola.
 
- oppure
+ -oppure-
 
  Il nome di un parametro di tipo generico su un tipo o un metodo visibile esternamente non inizia con una "t" maiuscola.
 

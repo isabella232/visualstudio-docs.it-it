@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: stampare diagrammi classi (Progettazione classi)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - printing [Visual Studio], class diagrams
 - class diagrams, printing
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f259a36cb35b69954d99a2104903fb973930af42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2fb7b22c523216a41cddfc5c6cf8e87a915a9e38
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596697"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770071"
 ---
 # <a name="how-to-print-class-diagrams"></a>Procedura: Stampare diagrammi classi
 
@@ -32,5 +32,5 @@ Viene stampato l'intero diagramma classi. Può essere necessario regolare le imp
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: copiare elementi del diagramma classi in un documento di Microsoft OfficeHow to: Copy Class Diagram Elements to a Microsoft Office Document](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
+- [Procedura: copiare elementi del diagramma classi in un documento di Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
 - [Procedura: Esportare diagrammi classi come immagini](how-to-export-class-diagrams-as-images.md)

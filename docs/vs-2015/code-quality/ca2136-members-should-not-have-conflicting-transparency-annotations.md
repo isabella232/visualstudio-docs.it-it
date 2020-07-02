@@ -16,17 +16,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f2fbb856ff53552ab99dabd4f650e9fd7f62a088
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3a17a0db7dd4ad1c57d23104a313a78cd1289ed
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602973"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547693"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: I membri non devono avere annotazioni di trasparenza in conflitto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|TransparencyAnnotationsShouldNotConflict|
 |CheckId|CA2136|
@@ -34,10 +34,10 @@ ms.locfileid: "72602973"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Questa regola viene attivata quando un membro di un tipo è contrassegnato con un attributo di sicurezza <xref:System.Security> con una trasparenza diversa rispetto all'attributo di sicurezza di un contenitore del membro.
+ Questa regola viene attivata quando un membro di un tipo è contrassegnato con un <xref:System.Security> attributo di sicurezza con una trasparenza diversa rispetto all'attributo di sicurezza di un contenitore del membro.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Gli attributi di trasparenza vengono applicati da elementi di codice con un ambito più ampio a elementi con ambito più ridotto. Gli attributi di trasparenza di elementi di codice che presentano un ambito più ampio hanno la precedenza su quelli contenuti nel primo elemento. Una classe contrassegnata con l'attributo <xref:System.Security.SecurityCriticalAttribute>, ad esempio, non può contenere un metodo contrassegnato con l'attributo <xref:System.Security.SecuritySafeCriticalAttribute>.
+ Gli attributi di trasparenza vengono applicati da elementi di codice con un ambito più ampio a elementi con ambito più ridotto. Gli attributi di trasparenza di elementi di codice che presentano un ambito più ampio hanno la precedenza su quelli contenuti nel primo elemento. Una classe contrassegnata con l'attributo, ad esempio, <xref:System.Security.SecurityCriticalAttribute> non può contenere un metodo contrassegnato con l' <xref:System.Security.SecuritySafeCriticalAttribute> attributo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere questa violazione, rimuovere l'attributo di sicurezza dall'elemento di codice con ambito inferiore oppure modificare l'attributo in modo che corrisponda all'elemento di codice contenitore.
@@ -46,6 +46,6 @@ ms.locfileid: "72602973"
  Non eliminare gli avvisi da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente un metodo è contrassegnato con l'attributo <xref:System.Security.SecuritySafeCriticalAttribute> ed è un membro di una classe contrassegnata con l'attributo <xref:System.Security.SecurityCriticalAttribute>. È necessario rimuovere l'attributo security safe.
+ Nell'esempio seguente un metodo è contrassegnato con l' <xref:System.Security.SecuritySafeCriticalAttribute> attributo ed è un membro di una classe contrassegnata con l' <xref:System.Security.SecurityCriticalAttribute> attributo. È necessario rimuovere l'attributo security safe.
 
  [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2136.transparencyannotationsshouldnotconflict/cs/ca2136 - transparencyannotationsshouldnotconflict.cs#1)]

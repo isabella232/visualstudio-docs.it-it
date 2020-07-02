@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777842"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545613"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 Il metodo `CommentMarkAtProfile` inserisce un valore di timestamp, un indicatore numerico e una stringa di commento nel file con estensione *vsp*. Il valore di timestamp può essere usato per sincronizzare gli eventi esterni. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione CommentMarkAtProfile.
@@ -68,7 +68,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 
 ## <a name="function-information"></a>Informazioni sulla funzione
 
-|||
+|Elemento|valore|
 |-|-|
 |**Intestazione**|Includere *VSPerf.h*|
 |**Libreria**|Usare *VSPerf.lib*|
@@ -116,4 +116,4 @@ void ExerciseCommentMarkAtProfile(void)
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)Visual Studio Profiler API reference (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
