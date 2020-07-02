@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 082afacba1ccf4c982e5ddceec37d2a1567efd7a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5268cb90544088742c6fda7c751bab943503cacc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651655"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534472"
 ---
-# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: I tipi Disposable devono dichiarare un finalizzatore
+# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: I tipi eliminabili devono dichiarare un finalizzatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
@@ -33,7 +33,7 @@ ms.locfileid: "72651655"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> e dispone di campi che suggeriscono l'uso di risorse non gestite, non implementa un finalizzatore come descritto da <xref:System.Object.Finalize%2A?displayProperty=fullName>.
+ Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> e contiene campi che suggeriscono l'uso di risorse non gestite, non implementa un finalizzatore come descritto da <xref:System.Object.Finalize%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descrizione della regola
  Una violazione di questa regola viene segnalata se il tipo Disposable contiene campi dei tipi seguenti:
@@ -45,10 +45,10 @@ ms.locfileid: "72651655"
 - <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, implementare un finalizzatore che chiama il metodo <xref:System.IDisposable.Dispose%2A>.
+ Per correggere una violazione di questa regola, implementare un finalizzatore che chiama il <xref:System.IDisposable.Dispose%2A> metodo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se il tipo non implementa <xref:System.IDisposable> allo scopo di rilasciare le risorse non gestite.
+ È possibile eliminare un avviso da questa regola se il tipo non implementa al <xref:System.IDisposable> fine di rilasciare le risorse non gestite.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene illustrato un tipo che viola questa regola.
@@ -60,11 +60,11 @@ ms.locfileid: "72651655"
 
  [CA1816: Chiamare GC.SuppressFinalize correttamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA1049: I tipi delle risorse native devono essere Disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+ [CA1049: I tipi delle risorse native devono essere disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
 ## <a name="see-also"></a>Vedere anche
  <xref:System.IDisposable?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
- [Criterio Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Modello Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

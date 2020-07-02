@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1adc8f610644d736bc4546d8299457ba0234a1d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d7879d8b2aa9eb4ece1ce07f89681b6c0b0f5f31
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658664"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534706"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: La sicurezza del metodo deve essere un superset del tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|MethodSecurityShouldBeASupersetOfType|
 |CheckId|CA2114|
@@ -33,13 +33,13 @@ ms.locfileid: "72658664"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo dispone di sicurezza dichiarativa e uno dei relativi metodi dispone di sicurezza dichiarativa per la stessa azione di sicurezza e l'azione di sicurezza non è [richiesta di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) o [richieste di ereditarietà](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)e le autorizzazioni controllate dal tipo non sono un subset del autorizzazioni controllate dal metodo.
+ Un tipo dispone di sicurezza dichiarativa e uno dei relativi metodi dispone di sicurezza dichiarativa per la stessa azione di sicurezza e l'azione di sicurezza non è [richiesta di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) o [richieste di ereditarietà](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)e le autorizzazioni controllate dal tipo non sono un subset delle autorizzazioni controllate dal metodo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un metodo non deve avere una sicurezza dichiarativa a livello di metodo e a livello di tipo per la stessa azione. I due controlli non vengono combinati. viene applicata solo la richiesta a livello di metodo. Se, ad esempio, un tipo richiede l'autorizzazione `X` e uno dei relativi metodi richiede l'autorizzazione `Y`, non è necessario che il codice disponga delle autorizzazioni `X` per eseguire il metodo.
+ Un metodo non deve avere una sicurezza dichiarativa a livello di metodo e a livello di tipo per la stessa azione. I due controlli non vengono combinati. viene applicata solo la richiesta a livello di metodo. Se, ad esempio, un tipo richiede l'autorizzazione `X` e uno dei relativi metodi richiede `Y` l'autorizzazione, il codice non deve disporre `X` dell'autorizzazione per eseguire il metodo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Esaminare il codice per assicurarsi che siano necessarie entrambe le azioni. Se sono necessarie entrambe le azioni, assicurarsi che l'azione a livello di metodo includa la sicurezza specificata a livello di tipo. Se, ad esempio, il tipo richiede l'autorizzazione `X` e anche il metodo deve richiedere l'autorizzazione `Y`, il metodo deve richiedere in modo esplicito `X` e `Y`.
+ Esaminare il codice per assicurarsi che siano necessarie entrambe le azioni. Se sono necessarie entrambe le azioni, assicurarsi che l'azione a livello di metodo includa la sicurezza specificata a livello di tipo. Se, ad esempio, il tipo richiede l'autorizzazione `X` e anche il metodo deve richiedere `Y` l'autorizzazione, il metodo deve richiedere esplicitamente `X` e `Y` .
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola se il metodo non richiede la sicurezza specificata dal tipo. Tuttavia, non si tratta di uno scenario normale e potrebbe indicare la necessità di un'attenta revisione della progettazione.
@@ -59,7 +59,7 @@ ms.locfileid: "72658664"
  Questo esempio produce il seguente output:
 
  **[Tutte le autorizzazioni] informazioni personali: 6/16/1964 12:00:00 AM** 
- **[nessuna autorizzazione di scrittura (richiesta dal tipo)] informazioni personali: 6/16/1964 12:00:00 AM** 
- **[nessuna autorizzazione di lettura (richiesta dal metodo)] non è stato possibile accedere a personale informazioni: richiesta non riuscita.**
+ **[Nessuna autorizzazione di scrittura (richiesta dal tipo)] informazioni personali: 6/16/1964 12:00:00 AM** 
+ **[Nessuna autorizzazione di lettura (richiesta dal metodo)] non è in grado di accedere alle informazioni personali: richiesta non riuscita.**
 ## <a name="see-also"></a>Vedere anche
  [Linee guida per il codice sicuro](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [ereditarietà richieste](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [collegamento richieste](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [di dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

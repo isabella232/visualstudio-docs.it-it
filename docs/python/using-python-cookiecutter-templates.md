@@ -2,7 +2,7 @@
 title: Usare modelli CookieCutter con Python
 description: Visual Studio supporta l'estensione grafica Cookiecutter per individuare modelli per il codice Python e creare progetti da tali modelli.
 ms.date: 01/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,20 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62832170"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535148"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) offre un'interfaccia utente grafica per individuare modelli, opzioni del modello di input e creare progetti e file. Questa estensione è inclusa in Visual Studio 2017 e versioni successive e può essere installata separatamente nelle versioni precedenti di Visual Studio.
 
-Cookiecutter richiede Python 3.3 o versione successiva (a 32 bit o a 64 bit) o Anaconda 3 4.2 o versione successiva (a 32 bit o a 64 bit). Se non è disponibile un interprete Python appropriato, Visual Studio visualizza un avviso. Se si installa un interprete Python mentre Visual Studio è in esecuzione, fare clic sul pulsante **Home** sulla barra degli strumenti Cookiecutter per rilevare l'interprete appena installato. (Vedere [ambienti Python](managing-python-environments-in-visual-studio.md) per ulteriori informazioni sugli ambienti in generale.)
+Cookiecutter richiede Python 3.3 o versione successiva (a 32 bit o a 64 bit) o Anaconda 3 4.2 o versione successiva (a 32 bit o a 64 bit). Se non è disponibile un interprete Python appropriato, Visual Studio visualizza un avviso. Se si installa un interprete Python mentre Visual Studio è in esecuzione, fare clic sul pulsante **Home** sulla barra degli strumenti di tagliatore per rilevare l'interprete appena installato. (Vedere [ambienti Python](managing-python-environments-in-visual-studio.md) per altre informazioni sugli ambienti in generale).
 
-Una volta installato, selezionare **Visualizza** > **Cookiecutter Explorer** per aprire la sua finestra:
+Una volta installato, selezionare **Visualizza**  >  **tagliatore Explorer** per aprire la relativa finestra:
 
 ![Finestra principale di Cookiecutter](media/cookiecutter-overview.png)
 
@@ -48,7 +48,7 @@ Quando si seleziona un modello e si fa clic su **Next** (Avanti), Cookiecutter c
 
 Se si seleziona un modello dai gruppi **Recommended** (Consigliati) o **GitHub** oppure si immette un URL personalizzato nella casella di ricerca e si seleziona tale modello, questo viene clonato e installato nel computer locale. Se tale modello è stato installato in una sessione precedente di Visual Studio, questo verrà eliminato automaticamente e verrà clonata la versione più recente.
 
-Se si seleziona un modello dal gruppo **Installato** o si immette un percorso di cartella personalizzato nella casella di ricerca e si seleziona tale modello, Visual Studio carica tale modello senza clonazione.
+Se si seleziona un modello dal gruppo **installato** oppure si immette un percorso di cartella personalizzato nella casella di ricerca e si seleziona tale modello, Visual Studio carica il modello senza clonarlo.
 
 > [!Important]
 > I modelli di Cookiecutter vengono clonati in un'unica cartella *~/.cookiecutter*. Il nome di ogni sottocartella viene definito in base al nome del repository GIT, che non include il nome utente di GitHub. Possono verificarsi conflitti se si clonano modelli diversi con lo stesso nome provenienti da autori diversi. In questo caso, Cookiecutter impedisce di sovrascrivere il modello esistente con un modello diverso con lo stesso nome. Per installare il nuovo modello, è prima necessario eliminare quello esistente.
@@ -75,11 +75,11 @@ Dopo aver creato correttamente i file, Cookiecutter offre un'opzione per aprire 
 
 ## <a name="cookiecutter-options"></a>Opzioni di Cookiecutter
 
-Le opzioni di Cookiecutter sono disponibili tramite **Strumenti** > **Opzioni** > **Cookiecutter**:
+Le opzioni tagliatore sono disponibili tramite **strumenti**  >  **Opzioni**  >  **tagliatore**:
 
 ![Opzioni di Cookiecutter](media/cookiecutter-tools-options.png)
 
-| Opzione | Descrizione |
+| Opzione | Description |
 | --- | --- |
 | **URL feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | **Show Help (Mostra Guida)** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
@@ -97,10 +97,10 @@ Il rendering predefinito delle variabili di un modello dipende dal tipo di dati 
 
 | Proprietà | Descrizione |
 | --- | --- |
-| Etichetta | Specifica ciò che viene visualizzato sopra l'editor per la variabile, anziché il nome della variabile. |
+| Label | Specifica ciò che viene visualizzato sopra l'editor per la variabile, anziché il nome della variabile. |
 | Descrizione | Specifica che la descrizione comando compare per il controllo di modifica, anziché per il valore predefinito per la variabile. |
 | URL | Cambia l'etichetta in collegamento ipertestuale, con una descrizione comando che visualizza l'URL. Facendo clic sul collegamento ipertestuale, il browser predefinito dell'utente verrà aperto su tale URL. |
-| Selettore | Consente la personalizzazione dell'editor per una variabile. Sono attualmente supportati i selettori seguenti:<ul><li>`string`: casella di testo standard, impostazione predefinita per le stringhe.</li><li>`list`: casella combinata standard, impostazione predefinita per gli elenchi.</li><li>`yesno`: casella combinata per scegliere tra `y` e `n`, per le stringhe.</li><li>`odbcConnection`: casella di testo con un pulsante **...** che visualizza una finestra di dialogo di connessione al database.</li></ul> |
+| Selettore | Consente la personalizzazione dell'editor per una variabile. Sono attualmente supportati i selettori seguenti:<ul><li>`string`: casella di testo standard, impostazione predefinita per le stringhe.</li><li>`list`: casella combinata standard, impostazione predefinita per gli elenchi.</li><li>`yesno`: casella combinata per scegliere tra `y` e `n`, per le stringhe.</li><li>`odbcConnection`: Casella di testo con un pulsante **...** che visualizza una finestra di dialogo di connessione al database.</li></ul> |
 
 Esempio:
 
@@ -218,7 +218,7 @@ Errori di caricamento:
 Errori di esecuzione:
 
 - **iknite/cookiecutter-ansible-role** (lo script hook di post-generazione richiede input nella console)
-- **benregn/cookiecutter-django-ansible** (errore Jinja)
+- **benregn/tagliatore-Django-Ansible** (errore Jinja)
 
 Uso di Bash (non irreversibile):
 

@@ -15,17 +15,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 62a2adc6f01e5cb26a6af26d71a124f8b81e07fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09e932651576f9b6d595657ad024b8f2697ad016
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671971"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535746"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Valori letterali stringa di attributo devono essere analizzate correttamente
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: I valori letterali stringa di attributo devono essere analizzati correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
@@ -36,7 +36,7 @@ ms.locfileid: "72671971"
  Il parametro valore letterale stringa di un attributo non viene analizzato correttamente per un URL, un GUID o una versione.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Poiché gli attributi sono derivati da <xref:System.Attribute?displayProperty=fullName> e gli attributi vengono utilizzati in fase di compilazione, solo i valori costanti possono essere passati ai relativi costruttori. I parametri degli attributi che devono rappresentare URL, GUID e versioni non possono essere tipizzati come <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName> e <xref:System.Version?displayProperty=fullName>, perché questi tipi non possono essere rappresentati come costanti. Ma devono essere rappresentati da stringhe.
+ Poiché gli attributi sono derivati da <xref:System.Attribute?displayProperty=fullName> e gli attributi vengono utilizzati in fase di compilazione, solo i valori costanti possono essere passati ai relativi costruttori. I parametri di attributo che devono rappresentare URL, GUID e versioni non possono essere tipizzati come <xref:System.Uri?displayProperty=fullName> , <xref:System.Guid?displayProperty=fullName> e <xref:System.Version?displayProperty=fullName> , perché questi tipi non possono essere rappresentati come costanti. Ma devono essere rappresentati da stringhe.
 
  Poiché il parametro è tipizzato come stringa, è possibile che un parametro formattato in modo non corretto possa essere passato in fase di compilazione.
 

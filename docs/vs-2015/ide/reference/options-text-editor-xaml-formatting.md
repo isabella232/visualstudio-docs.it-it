@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 537223aab878aee2fb00e9417d0415f0a17d2dd5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662213"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534134"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opzioni, Editor di testo, XAML, Formattazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "72662213"
 Usare la pagina delle proprietà **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XAML. Per aprire la finestra di dialogo **Opzioni**, fare clic sul menu **Strumenti** e quindi su **Opzioni**. Per accedere alla finestra delle proprietà **Formattazione**, espandere **Editor di testo**, **XAML** e il nodo **Formattazione**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="auto-formatting-events"></a>Eventi di formattazione automatica
 La formattazione automatica può verificarsi quando vengono rilevati gli eventi seguenti.
@@ -59,18 +59,18 @@ La formattazione automatica può verificarsi quando vengono rilevati gli eventi 
 
   È possibile specificare gli eventi che causano la formattazione automatica.
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Al completamento del tag di fine o del tag semplice**|La formattazione automatica si verifica quando si finisce di digitare un tag di fine o un tag semplice. Un tag semplice non include attributi, ad esempio `<Button />`.|
 |**Al completamento del tag di inizio**|La formattazione automatica si verifica quando si finisce di digitare un tag di inizio.|
-|**All'inserimento degli Appunti**|La formattazione automatica si verifica quando si incolla XAML dagli Appunti nella visualizzazione XAML.|
+|**Quando si incolla dagli Appunti**|La formattazione automatica si verifica quando si incolla XAML dagli Appunti nella visualizzazione XAML.|
 
 ## <a name="quotation-mark-style"></a>Stile virgolette
 Questa impostazione indica se i valori di attributo sono racchiusi tra virgolette singole o doppie. Il formattatore automatico e il completamento automatico IntelliSense usano questa impostazione.
 
 Dopo l'impostazione, questa opzione viene applicata solo agli attributi aggiunti successivamente usando la finestra di progettazione o manualmente nella visualizzazione XAML.
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Virgolette doppie (")**|I valori di attributo sono racchiusi tra virgolette doppie.<br /><br /> `<Button Name="button1">Hello</Button>`|
 |**Virgolette singole (')**|I valori di attributo sono racchiusi tra virgolette singole.<br /><br /> `<Button Name='button1'>Hello</Button>`|
@@ -78,7 +78,7 @@ Dopo l'impostazione, questa opzione viene applicata solo agli attributi aggiunti
 ## <a name="tag-wrapping"></a>Ritorno a capo dei tag
 È possibile specificare una lunghezza di riga per il ritorno a capo dei tag. Quando il ritorno a capo dei tag è abilitato, verrà applicato il ritorno a capo appropriato a qualsiasi XAML aggiunto successivamente usando la finestra di progettazione.
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Testo a capo per i tag che eccedono la lunghezza specificata**|Specifica se il ritorno a capo viene applicato alle righe alla lunghezza di riga specificata da **Lunghezza**.|
 |**Lunghezza**|Il numero di caratteri che una riga può contenere. Se necessario, alcune righe XAML possono superare la lunghezza di riga specificata.|
@@ -86,7 +86,7 @@ Dopo l'impostazione, questa opzione viene applicata solo agli attributi aggiunti
 ## <a name="attribute-spacing"></a>Spaziatura attributi
 Usare questa impostazione per controllare la disposizione degli attributi nel documento XAML
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Conserva i caratteri di fine riga e gli spazi tra gli attributi**|La formattazione automatica non viene applicata ai caratteri di fine riga e agli spazi tra gli attributi.<br /><br /> `<Button Height="23" Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
 |**Inserisci uno spazio singolo tra gli attributi**|Gli attributi occupano una riga, con uno spazio che separa gli attributi adiacenti. Vengono applicate le impostazioni di ritorno a capo dei tag.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
@@ -105,7 +105,7 @@ Usare questa impostazione per controllare la disposizione degli elementi nel doc
 ## <a name="auto-insert"></a>Inserimento automatico
 Usare questa impostazione per controllare la generazione automatica di tag e virgolette.
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Tag di chiusura**|Specifica se il tag di chiusura di un elemento viene generato automaticamente quando si chiude il tag di apertura con il carattere maggiore di (>).|
 |**Virgolette per gli attributi**|Specifica se vengono generate le virgolette quando un valore di attributo viene selezionato dall'elenco a discesa Completamento istruzioni.|
@@ -115,18 +115,18 @@ Usare questa impostazione per controllare la generazione automatica di tag e vir
 ## <a name="default-view"></a>Visualizzazione predefinita
 Usare questa impostazione per verificare se la visualizzazione Progettazione appare quando vengono caricati documenti XAML.
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Apri sempre i documenti nella visualizzazione XAML completa**|Specifica se i documenti XAML vengono visualizzati solo nella visualizzazione XAML, senza visualizzazione progettazione. Utile per il caricamento di documenti di grandi dimensioni.|
 
 ## <a name="toolbox"></a>Casella degli strumenti
 Usare questa impostazione per specificare se i controlli utente e i controlli personalizzati vengono visualizzati nella casella degli strumenti.
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Inserisci automaticamente elementi della casella degli strumenti**|Specifica se i controlli utente e i controlli personalizzati della soluzione corrente vengono visualizzati automaticamente nella casella degli strumenti.|
 
 ## <a name="see-also"></a>Vedere anche
 [XAML in WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
-[procedura: modificare le impostazioni di visualizzazione XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
-[XAML e le procedure dettagliate del codice](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+ [Procedura: modificare le impostazioni](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
+ di visualizzazione XAML [Procedure dettagliate relative a XAML e codice](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b242bd0eec4f7faa3f7a27923de289c494ccf798
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6fb07e9bc6c308e27e3ad054c5aeb0b12c092054
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298204"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534004"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Esecuzione degli strumenti di profilatura con o senza il debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,20 +38,20 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
   
      Nelle compilazioni di debug mancano alcune funzionalità di ottimizzazione offerte dalle compilazioni di rilascio, ad esempio, le chiamate di funzioni allineate e l'archiviazione di variabili in modalità che non sono utilizzabili dal debugger. Il debbuger stesso modifica i tempi operativi poiché esegue alcune operazioni necessarie per il debug (ad esempio, l'individuazione di eccezione e di eventi di caricamento del modulo). Pertanto, i valori relativi alle prestazioni nello strumento di debugger integrato sono accurati soltanto se compresi in decine di millisecondi. I valori relativi alle prestazioni per le configurazioni di rilascio con strumenti privi di debugger non sono molto accurati.  
   
-## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Raccogliere dati di profilatura durante il debug  
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Raccogliere dati di profilatura durante il debug  
  La sezione seguente si occupa dell’esecuzione del debug in locale. È possibile trovare informazioni sul debug in un dispositivo o sul debug remoto nelle sezioni successive.  
   
 1. Aprire il progetto di cui si vuole eseguire il debug, quindi fare clic su **Debug/Avvia debug** (oppure usare **Avvia** sulla barra degli strumenti o **F5**).  
   
-2. La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug/Windows/Mostra strumenti di diagnostica**.  
+2. La finestra **strumenti di diagnostica** viene visualizzata automaticamente a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug/Windows/Mostra strumenti di diagnostica**.  
   
-3. Esegui gli scenari per cui desideri raccogliere dati.  
+3. Eseguire gli scenari per i quali si vuole raccogliere dati.  
   
     Quando si esegue la sessione, è possibile visualizzare informazioni su eventi, memoria di processo e utilizzo della CPU.  
   
-    Il grafico seguente mostra la finestra **Strumenti di diagnostica** in Visual Studio 2015 Update 1:  
+    Il grafico seguente mostra la finestra di **strumenti di diagnostica** in Visual Studio 2015 Update 1:  
   
-    ![Update1&#45;diagnostica](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![Diagnostica&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 4. È possibile scegliere se visualizzare **Utilizzo memoria** o **Utilizzo CPU** (o entrambi) tramite l'impostazione **Seleziona strumenti** nella barra degli strumenti. Se si usa Visual Studio Enterprise, è possibile abilitare o disabilitare IntelliTrace in **Strumenti/Opzioni/IntelliTrace**.  
   
@@ -72,7 +72,7 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
 ## <a name="collect-profiling-data-without-debugging"></a>Raccogliere dati di profilatura senza il debug  
  Per l'esecuzione di alcuni strumenti di profilatura, è necessario disporre di privilegi di amministratore. È possibile avviare Visual Studio come amministratore oppure è possibile scegliere di eseguire gli strumenti come amministratore quando si avvia la sessione di diagnostica.  
   
-1. Apri il progetto in Visual Studio.  
+1. Aprire il progetto in Visual Studio.  
   
 2. Scegliere **Profiler prestazioni** dal menu **debug** (tasto di scelta rapida: Alt + F2).  
   
@@ -86,7 +86,7 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
   
     Durante la sessione alcuni strumenti visualizzano grafici dei dati in tempo reale nella pagina di avvio degli strumenti di diagnostica.  
   
-    ![Raccogliere dati sulle prestazioni e la diagnostica pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Raccogliere dati sulla pagina Prestazioni e diagnostica](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. Per terminare la sessione di diagnostica, scegliere **Arrestare la raccolta**.  
   
@@ -94,28 +94,28 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
   
    È anche possibile aprire i file di sessione .diagnostic salvati dall'elenco dei file aperti di recente nella pagina di avvio degli strumenti di diagnostica.  
   
-   ![Aprire un file di sessione di diagnostica salvato](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Aprire una file delle sessioni di diagnostica salvato](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Rapporto di profilatura  
- ![Report degli strumenti di diagnostica](../profiling/media/diag-report.png "DIAG_Report")  
+ ![Report di strumenti di diagnostica](../profiling/media/diag-report.png "DIAG_Report")  
   
-|||  
+|Immagine|Descrizione|  
 |-|-|  
 |![Passaggio 1](../profiling/media/procguid-1.png "ProcGuid_1")|La sequenza temporale mostra la durata della sessione di profilatura, gli eventi di attivazione del ciclo di vita dell'app e i contrassegni utente.|  
-|![Passaggio 2](../profiling/media/procguid-2.png "ProcGuid_2")|Puoi limitare il report a una parte della sequenza temporale trascinando le barre blu per selezionare un'area della stessa.|  
-|![Passaggio 3](../profiling/media/procguid-3.png "ProcGuid_3")|Uno strumento visualizza uno o più grafici master. Se la sessione di diagnostica viene creata con più strumenti, tutti i grafici master vengono visualizzati.|  
-|![Passaggio 4](../profiling/media/procguid-4.png "ProcGuid_4")|Puoi comprimere ed espandere i singoli grafici.|  
-|![Passaggio 5](../profiling/media/procguid-6.png "ProcGuid_6")|Se i dati includono informazioni raccolte tramite più strumenti, i dettagli di ogni strumento vengono raccolti in schede.|  
-|![Passaggio 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|A uno strumento possono essere associate una o più visualizzazioni dettagli. La visualizzazione viene filtrata in base alla sezione selezionata della cronologia.|  
+|![Passaggio 2](../profiling/media/procguid-2.png "ProcGuid_2")|Puoi limitare il rapporto a una parte della sequenza temporale trascinando le barre blu per selezionare un'area della stessa.|  
+|![Passaggio 3](../profiling/media/procguid-3.png "ProcGuid_3")|Uno strumento visualizza uno o più grafici master. Se la sessione di diagnostica viene creata con più strumenti, vengono visualizzati tutti i grafici master.|  
+|![Passaggio 4](../profiling/media/procguid-4.png "ProcGuid_4")|È possibile comprimere ed espandere i singoli grafici.|  
+|![Passaggio 5](../profiling/media/procguid-6.png "ProcGuid_6")|Quando i dati includono informazioni da più strumenti, i dettagli per ogni strumento sono raccolti in schede.|  
+|![Passaggio 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Uno strumento può avere una o più visualizzazioni dettagli. La visualizzazione viene filtrata in base alla sezione selezionata della cronologia.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Impostazione della destinazione di analisi su un altro dispositivo  
- Oltre ad avviare l'app dal progetto di Visual Studio, puoi eseguire sessioni di diagnostica su destinazioni alternative. Ad esempio, potrebbe essere necessario diagnosticare problemi di prestazioni in una versione dell'app installata da Windows App Store.  
+ Prima di avviare l'app dal progetto di Visual Studio, è anche possibile eseguire sessioni di diagnostica su destinazioni alternative. Ad esempio, potrebbe essere necessario diagnosticare problemi di prestazioni in una versione dell'app installata da Windows App Store.  
   
- ![Scegliere la destinazione di analisi degli strumenti di diagnostica](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Scegliere la destinazione di analisi degli strumenti diagnostici](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  È possibile avviare app già installate in un dispositivo oppure collegare gli strumenti di diagnostica ad alcune app già in esecuzione. Quando si sceglie **Applicazione in esecuzione** o **Applicazione installata**, è possibile selezionare l'app da un elenco che individua le app nella destinazione di distribuzione specificata.  
   
- ![Scegliere un'app in esecuzione o installata per la diagnosi](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Scegliere un'app in esecuzione o installata per la diagnostica](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  Quando si sceglie **Internet Explorer**, specificare l'URL per poter modificare la destinazione di distribuzione del telefono.  
   
@@ -137,6 +137,6 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
   
  [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (Informazioni immediate sulle prestazioni durante il debug in Visual Studio)  
   
- [Diagnostic Tools debugger window in Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/) (Finestra del debugger degli strumenti di diagnostica in Visual Studio 2015)  
+ [Finestra del debugger degli strumenti di diagnostica in Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
  [IntelliTrace in Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 505e5780b8a50113aaf98ea7dbac767d280bebb6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 17f0a540a436316d3a4fb3b71a2a51b1c5a90a6d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662063"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535070"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Contrassegnare gli assembly con ComVisibleAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|MarkAssembliesWithComVisible|
 |CheckId|CA1017|
@@ -33,19 +33,19 @@ ms.locfileid: "72662063"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- A un assembly non è applicato l'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>.
+ A un assembly non è <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> applicato l'attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- L'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> determina il modo in cui i client COM accedono al codice gestito. In una buona progettazione gli assembly devono indicare in modo esplicito la visibilità COM. È possibile impostare la visibilità COM per un intero assembly e quindi eseguirne l'override per i singoli tipi e membri dei tipi. Se l'attributo non è presente, il contenuto dell'assembly è visibile ai client COM.
+ L' <xref:System.Runtime.InteropServices.ComVisibleAttribute> attributo determina il modo in cui i client COM accedono al codice gestito. In una buona progettazione gli assembly devono indicare in modo esplicito la visibilità COM. È possibile impostare la visibilità COM per un intero assembly e quindi eseguirne l'override per i singoli tipi e membri dei tipi. Se l'attributo non è presente, il contenuto dell'assembly è visibile ai client COM.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere l'attributo all'assembly. Se non si desidera che l'assembly sia visibile ai client COM, applicare l'attributo e impostarne il valore su `false`.
+ Per correggere una violazione di questa regola, aggiungere l'attributo all'assembly. Se non si desidera che l'assembly sia visibile ai client COM, applicare l'attributo e impostarne il valore su `false` .
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola. Se si desidera che l'assembly sia visibile, applicare l'attributo e impostarne il valore su `true`.
+ Non escludere un avviso da questa regola. Se si desidera che l'assembly sia visibile, applicare l'attributo e impostarne il valore su `true` .
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un assembly a cui è applicato l'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> per impedire che venga visualizzato ai client COM.
+ Nell'esempio seguente viene illustrato un assembly a cui è <xref:System.Runtime.InteropServices.ComVisibleAttribute> applicato l'attributo per impedire che venga visualizzato ai client com.
 
  [!code-cpp[FxCop.Design.AssembliesCom#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesCom/cpp/FxCop.Design.AssembliesCom.cpp#1)]
  [!code-csharp[FxCop.Design.AssembliesCom#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesCom/cs/FxCop.Design.AssembliesCom.cs#1)]

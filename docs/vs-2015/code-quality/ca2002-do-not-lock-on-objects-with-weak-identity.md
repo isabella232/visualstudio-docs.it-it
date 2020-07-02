@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 557f91d8b00274642accbbfc05b4a60789615bfc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79f97de740ace9ccb59b13b3e4e30b34f38eb2f4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667753"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534667"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Non bloccare oggetti con identità debole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|
 |CheckId|CA2002|
@@ -61,7 +61,7 @@ ms.locfileid: "72667753"
  Non escludere un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2213: I campi Disposable devono essere eliminati](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+ [CA2213: I campi eliminabili devono essere eliminati](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente vengono illustrati alcuni blocchi di oggetti che violano la regola.

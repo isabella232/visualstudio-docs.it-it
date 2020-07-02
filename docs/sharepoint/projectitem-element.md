@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2768a2e55b3e38158f2ef6b856a653a1a2c12dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 44fc1b918960f0268d916ccfa560f118cea47144
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562403"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536877"
 ---
 # <a name="projectitem-element"></a>ProjectItem (elemento)
-  Rappresenta un elemento del progetto SharePoint. Questo elemento l'elemento radice obbligatorio del *spdata* file.
+  Rappresenta un elemento del progetto SharePoint. Questo elemento è l'elemento radice obbligatorio del file con *estensione spdata* .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,34 +46,34 @@ ms.locfileid: "62562403"
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|**DefaultFile**|Facoltativo **xs: string** attributo.<br /><br /> Il percorso relativo, incluso il nome di file, del file che viene aperto nell'editor di Visual Studio quando si apre l'elemento del progetto SharePoint in **Esplora soluzioni**. Il percorso è relativo rispetto alla cartella che contiene il *spdata* file.|
-|**FeatureReceiverClass**|Facoltativo **xs: String** attributo.<br /><br /> Il nome completo di una classe del ricevitore di funzionalità per questo elemento di progetto SharePoint. Per altre informazioni sui ricevitori di funzionalità, vedere [fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
-|**FeatureReceiverAssembly**|Facoltativo **xs: String** attributo.<br /><br /> Specifica il nome completo di un assembly che definisce un ricevitore di funzionalità per questo elemento di progetto SharePoint. Per altre informazioni sui ricevitori di funzionalità, vedere [fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Per altre informazioni sui nomi di assembly completo, vedere [i nomi degli Assembly](/dotnet/framework/app-domains/assembly-names).|
-|**SupportedTrustLevels**|Facoltativo **xs: String** attributo.<br /><br /> Specifica i livelli di attendibilità che supporta questo elemento del progetto SharePoint. Questo valore può essere uno delle seguenti stringhe: In modalità sandbox, FullTrust, o tutti. Il valore All specifica sia Sandboxed e FullTrust.<br /><br /> In un tipo di elemento di progetto SharePoint personalizzato, il valore di questo attributo corrisponde al valore assegnato per il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> proprietà nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> (metodo). Se si specifica un valore diverso per questo attributo, Visual Studio sovrascrive il valore in modo che specifichi lo stesso livello di attendibilità specificato nella <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> proprietà.|
-|**SupportedDeploymentScopes**|Facoltativo **xs: String** attributo.<br /><br /> Specifica gli ambiti di distribuzione che supporta questo elemento del progetto SharePoint. Questo valore è una stringa delimitata da virgole costituita da uno o più delle seguenti stringhe: Farm, sito, Web, WebApplication o pacchetto. Ad esempio: `Web, Site`<br /><br /> In un tipo di elemento di progetto SharePoint personalizzato, il valore di questo attributo corrisponde al valore assegnato per il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> proprietà nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> (metodo). Se si specifica un valore diverso per questo attributo, Visual Studio sovrascrive il valore in modo che specifichi lo stesso livello di attendibilità specificato nella <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> proprietà.|
-|**Type**|Obbligatorio **xs: String** attributo.<br /><br /> L'identificatore per l'elemento del progetto SharePoint. In un tipo di elemento di progetto SharePoint personalizzato, l'identificatore corrisponde alla stringa che viene passato al <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Per altre informazioni, vedere [Procedura: Definire un tipo di elemento di progetto SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Per un elenco degli identificatori per gli elementi del progetto SharePoint predefiniti inclusi in Visual Studio, vedere [elementi di progetto SharePoint estendere](../sharepoint/extending-sharepoint-project-items.md).|
+|**DefaultFile**|Attributo **xs: String** facoltativo.<br /><br /> Percorso relativo, incluso il nome file, del file che viene aperto nell'editor di Visual Studio quando si apre l'elemento del progetto SharePoint in **Esplora soluzioni**. Il percorso è relativo rispetto alla cartella che contiene il file con *estensione spdata* .|
+|**FeatureReceiverClass**|Attributo **xs: String** facoltativo.<br /><br /> Nome completo di una classe del ricevitore di funzionalità per questo elemento del progetto SharePoint. Per ulteriori informazioni sui ricevitori di funzionalità, vedere la pagina relativa [alla creazione di pacchetti e informazioni sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
+|**FeatureReceiverAssembly**|Attributo **xs: String** facoltativo.<br /><br /> Specifica il nome completo di un assembly che definisce un ricevitore di funzionalità per questo elemento del progetto SharePoint. Per ulteriori informazioni sui ricevitori di funzionalità, vedere la pagina relativa [alla creazione di pacchetti e informazioni sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Per ulteriori informazioni sui nomi di assembly completi, vedere [nomi degli assembly](/dotnet/framework/app-domains/assembly-names).|
+|**SupportedTrustLevels**|Attributo **xs: String** facoltativo.<br /><br /> Specifica i livelli di attendibilità supportati da questo elemento del progetto SharePoint. Il valore può essere una delle seguenti stringhe: sandboxed, FullTrust o all. Il valore all specifica sia sandboxed che FullTrust.<br /><br /> In un tipo di elemento di progetto SharePoint personalizzato, il valore di questo attributo corrisponde al valore assegnato alla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> proprietà nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metodo. Se si specifica un valore diverso per questo attributo, Visual Studio sovrascrive il valore in modo che specifichi lo stesso livello di attendibilità specificato nella <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> Proprietà.|
+|**SupportedDeploymentScopes**|Attributo **xs: String** facoltativo.<br /><br /> Specifica gli ambiti di distribuzione supportati da questo elemento del progetto SharePoint. Questo valore è una stringa delimitata da virgole costituita da una o più delle seguenti stringhe: Farm, sito, Web, applicazione Web o pacchetto. Ad esempio: `Web, Site`<br /><br /> In un tipo di elemento di progetto SharePoint personalizzato, il valore di questo attributo corrisponde al valore assegnato alla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> proprietà nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> metodo. Se si specifica un valore diverso per questo attributo, Visual Studio sovrascrive il valore in modo che specifichi lo stesso livello di attendibilità specificato nella <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> Proprietà.|
+|**Tipo**|Attributo **xs: String** obbligatorio.<br /><br /> Identificatore per l'elemento del progetto SharePoint. In un tipo di elemento di progetto SharePoint personalizzato, l'identificatore è la stringa passata a <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> . Per altre informazioni, vedere [procedura: definire un tipo di elemento di progetto SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Per un elenco degli identificatori per gli elementi del progetto SharePoint incorporati inclusi in Visual Studio, vedere [estendere gli elementi del progetto SharePoint](../sharepoint/extending-sharepoint-project-items.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[ExtensionData](../sharepoint/extensiondata-element.md)|Elemento facoltativo.<br /><br /> Rappresenta una raccolta di elementi di dati personalizzati associati con l'elemento del progetto SharePoint.<br /><br /> È possibile includere una sola **ExtensionData** elemento.|
-|[FeatureProperties](../sharepoint/featureproperties-element.md)|Elemento facoltativo.<br /><br /> Rappresenta una raccolta di valori di proprietà che sono inclusi in una funzione quando viene distribuito in SharePoint.<br /><br /> È possibile includere una sola **FeatureProperties** elemento.|
-|[File](../sharepoint/files-element.md)|Facoltativo **FileCollectionType** elemento.<br /><br /> Specifica i file da distribuire con l'elemento del progetto SharePoint, ad esempio i file di elemento di funzionalità e l'output dei progetti di SharePoint non dipendente.<br /><br /> Includere un **file** o una **ProjectItemFolder** elemento, ma non entrambi.|
-|[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|Facoltativo **ProjectItemFolderType** elemento.<br /><br /> Rappresenta una cartella mappata.<br /><br /> Includere un **file** o una **ProjectItemFolder** elemento, ma non entrambi.|
-|[SafeControls](../sharepoint/safecontrols-element.md)|Elemento facoltativo.<br /><br /> Rappresenta una raccolta di controlli ASPX e Web part che sono definiti come sicuri per tutti gli utenti accedere in qualsiasi pagina ASPX nel sito di SharePoint.<br /><br /> È possibile includere una sola **SafeControls** elemento.|
+|[ExtensionData](../sharepoint/extensiondata-element.md)|Elemento facoltativo.<br /><br /> Rappresenta una raccolta di elementi di dati personalizzati associati all'elemento del progetto SharePoint.<br /><br /> È possibile includere un solo elemento **ExtensionData** .|
+|[FeatureProperties](../sharepoint/featureproperties-element.md)|Elemento facoltativo.<br /><br /> Rappresenta una raccolta di valori di proprietà inclusi in una funzionalità quando viene distribuita in SharePoint.<br /><br /> È possibile includere un solo elemento **FeatureProperties** .|
+|[File](../sharepoint/files-element.md)|Elemento **FileCollectionType** facoltativo.<br /><br /> Specifica i file da distribuire con l'elemento del progetto SharePoint, ad esempio i file degli elementi delle funzionalità e l'output dei progetti non SharePoint dipendenti.<br /><br /> Includere un elemento **file** o **ProjectItemFolder** , ma non entrambi.|
+|[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|Elemento **ProjectItemFolderType** facoltativo.<br /><br /> Rappresenta una cartella mappata.<br /><br /> Includere un elemento **file** o **ProjectItemFolder** , ma non entrambi.|
+|[SafeControls](../sharepoint/safecontrols-element.md)|Elemento facoltativo.<br /><br /> Rappresenta una raccolta di controlli ASPX e Web part designati come sicuri per qualsiasi utente per accedere a qualsiasi pagina ASPX nel sito di SharePoint.<br /><br /> È possibile includere un solo elemento **SafeControls** .|
 
 ### <a name="parent-elements"></a>Elementi padre
- Nessuno.
+ No.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-|||
+|Proprietà|Valore|
 |-|-|
-|**Spazio dei nomi**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Nome dello schema**|Schema degli elementi di progetto SharePoint|
-|**File di convalida**|ProjectItemModelSchema.xsd|
+|**Namespace**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nome schema**|Schema dell'elemento del progetto SharePoint|
+|**File di convalida**|ProjectItemModelSchema. xsd|
 |**Può essere vuoto**|No|
 
 ## <a name="see-also"></a>Vedere anche
-[SharePoint progetto elemento schema rseference](../sharepoint/sharepoint-project-item-schema-reference.md)
+[Schema dell'elemento del progetto SharePoint rseference](../sharepoint/sharepoint-project-item-schema-reference.md)

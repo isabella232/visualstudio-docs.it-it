@@ -11,15 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585977"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535265"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: creare classi di LINQ to SQL usando l'ereditarietà a tabella singola (O/R Designer)
-Gli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola poiché viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata illustra i passaggi generici forniti nell'argomento [How to: Configure ereditarietà by using the o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà nel [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+Gli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola poiché viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata illustra i passaggi generici forniti nell'argomento [How to: Configure ereditarietà by using the o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà in [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
 
 Durante questa procedura dettagliata si eseguono le attività seguenti:
 
@@ -38,7 +38,7 @@ Durante questa procedura dettagliata si eseguono le attività seguenti:
 - Visualizzazione dei dati in un Windows Form.
 
 ## <a name="create-a-table-to-inherit-from"></a>Creazione di una tabella da cui ereditare
-Per verificare il funzionamento dell'ereditarietà, creare una piccola tabella di `Person`, usarla come classe di base e quindi creare un `Employee` oggetto che eredita da esso.
+Per verificare il funzionamento dell'ereditarietà, è possibile creare una tabella di piccole dimensioni `Person` , usarla come classe di base e quindi creare un `Employee` oggetto che eredita da esso.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Per creare una tabella di base per l'illustrazione dell'ereditarietà
 
@@ -49,13 +49,13 @@ Per verificare il funzionamento dell'ereditarietà, creare una piccola tabella d
 
 2. In **Progettazione tabelle** aggiungere le colonne seguenti alla tabella:
 
-    |Nome colonna|Tipo di dati di|Ammetti Null|
+    |Nome colonna|Tipo di dati|Consenti valori NULL|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
-    |**Type**|**int**|**True**|
+    |**Tipo**|**int**|**True**|
     |**FirstName**|**nvarchar(200)**|**False**|
     |**LastName**|**nvarchar(200)**|**False**|
-    |**Manager**|**int**|**True**|
+    |**Responsabile**|**int**|**True**|
 
 3. Impostare la colonna ID come chiave primaria.
 
@@ -70,9 +70,8 @@ Allo scopo di verificare che l'ereditarietà sia configurata correttamente, è n
 
 2. Copiare i dati riportati di seguito nella tabella È possibile copiarlo e incollarlo nella tabella selezionando l'intera riga nel riquadro **risultati** .
 
-    ||||||
+    |**ID**|**Tipo**|**FirstName**|**LastName**|**Responsabile**|
     |-|-|-|-|-|
-    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -93,7 +92,7 @@ Una volta creata la tabella, creare un nuovo progetto per illustrare la configur
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
@@ -105,7 +104,7 @@ Una volta creata la tabella, creare un nuovo progetto per illustrare la configur
 
 ### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>Per aggiungere un file LINQ to SQL al progetto
 
-1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+1. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
 2. Fare clic sul modello **Classi LINQ to SQL** e quindi fare clic su **Aggiungi**.
 
@@ -138,7 +137,7 @@ Configurare l'ereditarietà trascinando un oggetto **Inheritance** dalla **Casel
 
 11. Impostare la proprietà **Inheritance Default** su **Person**.
 
-12. Compilazione del progetto.
+12. Compilare il progetto.
 
 ## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Eseguire una query sulla classe ereditata e visualizzare i dati nel form
 È ora possibile aggiungere codice al modulo che esegue una query per una classe specifica nel modello a oggetti.
@@ -174,16 +173,16 @@ Configurare l'ereditarietà trascinando un oggetto **Inheritance** dalla **Casel
     }
     ```
 
-## <a name="test-the-application"></a>Testare l'applicazione
-Eseguire l'applicazione e verificare che i record visualizzati nella casella di riepilogo rappresentino tutti i dipendenti (record che presentano il valore 2 nella rispettiva colonna **Type**).
+## <a name="test-the-application"></a>Test dell'applicazione
+Eseguire l'applicazione e verificare che i record visualizzati nella casella di riepilogo siano tutti dipendenti (record con valore 2 nella colonna di **tipo** ).
 
-### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione
+### <a name="to-test-the-application"></a>Per testare l'applicazione
 
 1. Premere **F5**.
 
-2. Verificare che siano visualizzati solo i record che presentano il valore 2 nella rispettiva colonna **Type**.
+2. Verificare che vengano visualizzati solo i record con valore 2 nella rispettiva colonna di **tipo** .
 
-3. Chiudere il form. Scegliere **Termina debug** dal menu **Debug**.
+3. Chiudere il form. Scegliere **Interrompi debug**dal menu **debug** .
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -191,4 +190,4 @@ Eseguire l'applicazione e verificare che i record visualizzati nella casella di 
 - [Procedura dettagliata: Creazione di classi LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Procedura: Generare il modello a oggetti in Visual Basic o C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Procedura: generare il modello a oggetti in Visual Basic o C #](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

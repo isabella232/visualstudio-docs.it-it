@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 6983d3ac191b8eb85d38e1d40afa3244e97dbb17
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184250"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536786"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core di debug remoto in IIS in Azure in Visual Studio
 
@@ -96,7 +96,7 @@ Da Visual Studio è possibile pubblicare rapidamente ed eseguire il debug dell'a
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
-    L'operazione è stata completata. Il resto dei passaggi descritti in questo argomento si applica al debug remoto in una macchina virtuale di Azure.
+    L'operazione è terminata. Il resto dei passaggi descritti in questo argomento si applica al debug remoto in una macchina virtuale di Azure.
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a>ASP.NET Core di debug remoto in una macchina virtuale di Azure
 
@@ -175,15 +175,15 @@ Se è necessario assistenza per la distribuzione dell'app in IIS, prendere in co
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-    > [!NOTE]
-    > If you restart an Azure VM, the IP address may change.
+> [!NOTE]
+> Se si riavvia una macchina virtuale di Azure, l'indirizzo IP potrebbe cambiare.
 
 Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l'app non viene avviata da Visual Studio, avviare l'app in IIS per verificare che venga eseguita correttamente. Per ASP.NET Core, è anche necessario assicurarsi che il campo pool di applicazioni per **DefaultAppPool** sia impostato su **nessun codice gestito**.
 
 1. Nella finestra di dialogo **Impostazioni** abilitare il debug facendo clic su **Avanti**, scegliere una configurazione di **debug** , quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto le opzioni di **pubblicazione file** .
 
     > [!IMPORTANT]
-    > Se si sceglie una configurazione di versione, si disabilita il debug nel file *Web. config* durante la pubblicazione.
+    > Se si sceglie una configurazione di versione, si disabilita il debug nel file di *web.config* durante la pubblicazione.
 
 1. Fare clic su **Save (Salva** ) e quindi pubblicare nuovamente l'app.
 
@@ -255,11 +255,11 @@ Scaricare la versione di Remote Tools corrispondente alla versione di Visual Stu
 
 6. Digitare la prima lettera del nome del processo per trovare rapidamente l'app.
 
-    * Se si usa il [modello di hosting in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) in IIS, selezionare il processo **w3wp. exe** corretto. A partire da .NET Core 3, si tratta dell'impostazione predefinita.
+    * Se si usa il [modello di hosting in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) in IIS, selezionare il processo di **w3wp.exe** corretto. A partire da .NET Core 3, si tratta dell'impostazione predefinita.
 
-    * In caso contrario, selezionare il processo **dotnet. exe** . Si tratta del modello di hosting out-of-process.
+    * In caso contrario, selezionare il processo **dotnet.exe** . Si tratta del modello di hosting out-of-process.
 
-    Se sono presenti più processi che mostrano *w3wp. exe* o *dotnet. exe*, controllare la colonna **nome utente** . In alcuni scenari, nella colonna **nome utente** viene visualizzato il nome del pool di applicazioni, ad esempio **IIS APPPOOL\DefaultAppPool**. Se viene visualizzato il pool di app, ma non è univoco, creare un nuovo pool di app denominato per l'istanza dell'app di cui si vuole eseguire il debug, quindi è possibile trovarlo facilmente nella colonna **nome utente** .
+    Se sono presenti più processi che mostrano *w3wp.exe* o *dotnet.exe*, controllare la colonna **nome utente** . In alcuni scenari, nella colonna **nome utente** viene visualizzato il nome del pool di applicazioni, ad esempio **IIS APPPOOL\DefaultAppPool**. Se viene visualizzato il pool di app, ma non è univoco, creare un nuovo pool di app denominato per l'istanza dell'app di cui si vuole eseguire il debug, quindi è possibile trovarlo facilmente nella colonna **nome utente** .
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")

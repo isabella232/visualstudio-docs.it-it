@@ -11,17 +11,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0d32ebc08866a14755ddb8b2c70e2dd0c4ce61f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ccd556a5929e56597de678ad4ad8ea6c101b7c7f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655502"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535889"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: I tipi SecurityCritical possono non partecipare all'equivalenza del tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|CriticalTypesMustNotParticipateInTypeEquivalence|
 |CheckId|CA2131|
@@ -29,10 +29,10 @@ ms.locfileid: "72655502"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo partecipa all'equivalenza del tipo e il tipo stesso o un membro o un campo del tipo è contrassegnato con l'attributo <xref:System.Security.SecurityCriticalAttribute>.
+ Un tipo partecipa all'equivalenza del tipo e il tipo stesso o un membro o un campo del tipo è contrassegnato con l' <xref:System.Security.SecurityCriticalAttribute> attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola viene attivata su qualsiasi tipo critico o a tipi che contengono metodi o campi critici che partecipano all'equivalenza del tipo. Quando CLR rileva tale tipo, non riesce a caricarlo con un <xref:System.TypeLoadException> in fase di esecuzione. In genere, questa regola funziona solo quando gli utenti implementano l'equivalenza del tipo manualmente piuttosto che basarsi su tlbimp e i compilatori per fare l'equivalenza del tipo.
+ Questa regola viene attivata su qualsiasi tipo critico o a tipi che contengono metodi o campi critici che partecipano all'equivalenza del tipo. Quando CLR rileva tale tipo, non riesce a caricarlo con un oggetto in fase di <xref:System.TypeLoadException> esecuzione. In genere, questa regola funziona solo quando gli utenti implementano l'equivalenza del tipo manualmente piuttosto che basarsi su tlbimp e i compilatori per fare l'equivalenza del tipo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, rimuovere l'attributo SecurityCritical.

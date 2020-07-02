@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 78702298bab484a95bb8108150415ec0b31ede7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad467e880b3281a75db2627108af0e0b2f90ea99
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662902"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534459"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Non chiamare metodi sottoponibili a override nei costruttori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
@@ -45,7 +45,7 @@ ms.locfileid: "72662902"
  Non escludere un avviso da questa regola. Il costruttore deve essere riprogettato per eliminare la chiamata al metodo virtuale.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato l'effetto della violazione di questa regola. L'applicazione di test crea un'istanza di `DerivedType`, che determina l'esecuzione del costruttore della relativa classe di base (`BadlyConstructedType`). il costruttore di `BadlyConstructedType` chiama erroneamente il metodo virtuale `DoSomething`. Come illustrato nell'output, `DerivedType.DoSomething()` viene eseguito ed esegue questa operazione prima che venga eseguito il costruttore di `DerivedType`.
+ Nell'esempio seguente viene illustrato l'effetto della violazione di questa regola. L'applicazione di test crea un'istanza di `DerivedType` , che determina l'esecuzione del costruttore della classe di base ( `BadlyConstructedType` ). `BadlyConstructedType`il costruttore di ' s chiama erroneamente il metodo virtuale `DoSomething` . Come mostra l'output, viene eseguito ed esegue questa operazione `DerivedType.DoSomething()` prima `DerivedType` dell'esecuzione del costruttore.
 
  [!code-csharp[FxCop.Usage.CtorVirtual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/cs/FxCop.Usage.CtorVirtual.cs#1)]
  [!code-vb[FxCop.Usage.CtorVirtual#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/vb/FxCop.Usage.CtorVirtual.vb#1)]
@@ -53,5 +53,5 @@ ms.locfileid: "72662902"
  Questo esempio produce il seguente output:
 
  **Chiamata a ctor di base.** 
-**DoSomething derivato viene chiamato inizializzato? Nessun** 
- la**chiamata a ctor derivato.**
+ Il **DoSomething derivato viene chiamato inizializzato? Nessun** 
+ **ctor derivato chiamante.**

@@ -2,7 +2,7 @@
 title: Codice Python negli unit test
 description: Configurazione di unit test per il codice Python in Visual Studio per usufruire delle funzionalità di Esplora test per l'individuazione, l'esecuzione e il debug dei test.
 ms.date: 09/18/2019
-ms.topic: include
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9843b47e38d5d33a25c455efe619dfcc033fb334
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 032732f19855b9ba5c97c2e5281e8385f9ace3be
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71933433"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535331"
 ---
 ## <a name="discover-and-view-tests"></a>Individuare e visualizzare i test
 
@@ -39,27 +39,27 @@ Per convenzione, Visual Studio identifica i test come metodi il cui nome inizia 
 
 1. Se necessario, salvare il file e aprire **Esplora test** con il comando di menu **Test** > **Windows** > **Esplora test**.
 
-1. **Esplora test** cerca i test nel progetto e li visualizza come illustrato di seguito. Fare doppio clic su un test per aprirne il file di origine.
+1. **Esplora test** Cerca i test nel progetto e li Visualizza come illustrato di seguito. Fare doppio clic su un test per aprirne il file di origine.
 
     ![Esplora test con test_A predefinito](../../media/unit-test-A.png)
 
-1. Quando si aggiungono altri test al progetto, è possibile organizzare la visualizzazione in **Esplora test** utilizzando il menu **Raggruppa per** sulla barra degli strumenti:
+1. Quando si aggiungono altri test al progetto, è possibile organizzare la visualizzazione in **Esplora test** usando il menu **Raggruppa per** sulla barra degli strumenti:
 
     ![Menu Raggruppa per della barra degli strumenti in Esplora test](../../media/unit-test-group-menu.png)
 
 1. È anche possibile immettere testo nel campo di **Cerca** per filtrare i test in base al nome.
 
-Per altre informazioni `unittest` sul modulo e sulla scrittura di test, vedere la documentazione di [Python 2.7](https://docs.python.org/2/library/unittest.html) o la documentazione di [Python 3.7](https://docs.python.org/3/library/unittest.html) (python.org).
+Per ulteriori informazioni sul `unittest` modulo e sulla scrittura di test, vedere la [documentazione di Python 2,7](https://docs.python.org/2/library/unittest.html) o la [documentazione di Python 3,7](https://docs.python.org/3/library/unittest.html) (Python.org).
 
 ## <a name="run-tests"></a>Esecuzione dei test
 
-In Esplora test è possibile eseguire test in diversi modi:In **Test Explorer** you can run tests in a variety of ways:
+In **Esplora test** è possibile eseguire test in diversi modi:
 
 - L'opzione **Esegui tutto** esegue chiaramente tutti i test visualizzati, tenendo conto degli eventuali filtri applicati.
-- Il menu **Esegui** consente di eseguire i comandi non riusciti, superati o non eseguiti test come gruppo.
+- Il menu **Run (Esegui** ) fornisce i comandi per eseguire i test non riusciti, superati o non eseguiti come gruppo.
 - È possibile selezionare uno o più test, fare clic con il pulsante destro del mouse e scegliere **Esegui test selezionati**.
 
-I test vengono eseguiti in background e Esplora test aggiorna lo stato di ogni test al completamento:Test run in the background and **Test Explorer** updates each test's status as it completes:
+I test vengono eseguiti in background e **Esplora test** aggiorna lo stato di ogni test dopo il completamento:
 
 - I test superati sono contraddistinti da un segno di spunta verde, nonché dall'indicazione del tempo necessario per eseguirli:
 
@@ -79,7 +79,7 @@ Per avviare il debug, impostare un punto di interruzione iniziale nel codice, fa
 
 ![Debug di un test](../../media/unit-test-debugging.png)
 
-È inoltre possibile utilizzare **Analizza code coverage per i test selezionati**. Per altre informazioni, vedere [Usare la funzionalità code coverage per determinare la quantità di codice testato](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+È anche possibile usare il **code coverage analizza per i test selezionati**. Per altre informazioni, vedere [Usare la funzionalità code coverage per determinare la quantità di codice testato](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ### <a name="known-issues"></a>Problemi noti
 

@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b11ea380f9012bc64f577d2da54a4a88b9f94daf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348236"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536552"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Avviare una sessione di debug per un'app UWP
 
@@ -76,7 +76,7 @@ Il debug continua fino a quando non viene raggiunto un punto di interruzione, So
 
 È possibile impostare la destinazione di debug nella barra degli strumenti di Visual Studio o nella pagina delle proprietà debug del progetto. Selezionare una delle opzioni seguenti:
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Computer locale**|Esegue il debug dell'app nella sessione corrente nel computer locale.|
 |**Simulatore**|Eseguire il debug dell'app nel simulatore di Visual Studio per le app UWP. Il simulatore è una finestra del desktop che simula le funzioni del dispositivo, ad esempio i movimenti tocco e la rotazione del dispositivo, che potrebbero non esistere nel computer locale. L'opzione simulatore è disponibile solo se la **versione minima della piattaforma di destinazione** dell'app è minore o uguale al sistema operativo nel computer locale. Per altre informazioni, vedere [eseguire app UWP nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md).|
@@ -114,7 +114,7 @@ Nelle app C++, Visual Studio esegue il debug del codice nativo per impostazione 
 
 - Per le app C++, selezionare uno dei debugger seguenti dall'elenco a discesa **tipo di debugger** nella pagina delle proprietà **debug** .
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Solo gestito**|Esegue il debug del codice gestito nell'app. Il codice JavaScript e il codice C/C++ nativo vengono ignorati.|
 |**Solo nativo**|Esegue il debug del codice C/C++ nativo nell'app. Il codice gestito e il codice JavaScript vengono ignorati.|
@@ -216,6 +216,6 @@ Per collegare il debugger a un'app in [!INCLUDE[win8_appname_long](../debugger/i
 > Il modo più semplice per connettersi all'app JavaScript consiste nel chiudere tutte le altre app JavaScript. In alternativa, è possibile notare i PID dell'esecuzione di *wwahost.exe* processi in Gestione attività di Windows prima di avviare l'app. Quando si avvia l'app, il relativo *wwahost.exe* PID sarà quello diverso da quelli annotati in precedenza.
 ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Eseguire il debug di app in Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md)

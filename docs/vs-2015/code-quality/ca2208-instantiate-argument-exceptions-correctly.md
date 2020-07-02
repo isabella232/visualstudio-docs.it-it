@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5b5e1525d1ee706f9cd46a58c022763d2ed234bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a63ebb7f3946926864c4dd882c281b5dcd7c6c5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662690"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535837"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Creare istanze di eccezioni di argomento correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|InstantiateArgumentExceptionsCorrectly|
 |CheckId|CA2208|
@@ -42,26 +42,26 @@ ms.locfileid: "72662690"
 ## <a name="rule-description"></a>Descrizione della regola
  Anziché chiamare il costruttore predefinito, chiamare uno degli overload del costruttore che consente di fornire un messaggio di eccezione più significativo. Il messaggio di eccezione deve avere come destinazione lo sviluppatore e spiegare chiaramente la condizione di errore e come correggere o evitare l'eccezione.
 
- Le firme di uno e due costruttori di stringa di <xref:System.ArgumentException> e dei relativi tipi derivati non sono coerenti rispetto ai parametri `message` e `paramName`. Assicurarsi che questi costruttori vengano chiamati con gli argomenti stringa corretti. Le firme sono le seguenti:
+ Le firme di uno e due costruttori di stringa di <xref:System.ArgumentException> e dei relativi tipi derivati non sono coerenti rispetto ai `message` `paramName` parametri e. Assicurarsi che questi costruttori vengano chiamati con gli argomenti stringa corretti. Le firme sono le seguenti:
 
- <xref:System.ArgumentException> (stringa `message`)
+ <xref:System.ArgumentException>(stringa `message` )
 
- <xref:System.ArgumentException> (stringa `message`, stringa `paramName`)
+ <xref:System.ArgumentException>(String `message` , String `paramName` )
 
- <xref:System.ArgumentNullException> (stringa `paramName`)
+ <xref:System.ArgumentNullException>(stringa `paramName` )
 
- <xref:System.ArgumentNullException> (stringa `paramName`, stringa `message`)
+ <xref:System.ArgumentNullException>(String `paramName` , String `message` )
 
- <xref:System.ArgumentOutOfRangeException> (stringa `paramName`)
+ <xref:System.ArgumentOutOfRangeException>(stringa `paramName` )
 
- <xref:System.ArgumentOutOfRangeException> (stringa `paramName`, stringa `message`)
+ <xref:System.ArgumentOutOfRangeException>(String `paramName` , String `message` )
 
- <xref:System.DuplicateWaitObjectException> (stringa `parameterName`)
+ <xref:System.DuplicateWaitObjectException>(stringa `parameterName` )
 
- <xref:System.DuplicateWaitObjectException> (stringa `parameterName`, stringa `message`)
+ <xref:System.DuplicateWaitObjectException>(String `parameterName` , String `message` )
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, chiamare un costruttore che accetta un messaggio, un nome di parametro o entrambi e verificare che gli argomenti siano appropriati per il tipo di <xref:System.ArgumentException> chiamato.
+ Per correggere una violazione di questa regola, chiamare un costruttore che accetta un messaggio, un nome di parametro o entrambi e verificare che gli argomenti siano appropriati per il tipo di <xref:System.ArgumentException> chiamata.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola solo se un costruttore con parametri viene chiamato con gli argomenti stringa corretti.

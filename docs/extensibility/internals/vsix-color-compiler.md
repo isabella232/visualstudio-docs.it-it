@@ -1,5 +1,5 @@
 ---
-title: Compilatore di colori VSIX Documenti Microsoft
+title: Compilatore di colori VSIX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
@@ -8,19 +8,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f414a56bb05a23b6efef19aa7c99292b8a40038a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 5059a15c483f648c2248321c7ba8271a634d0c69
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80703893"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536097"
 ---
 # <a name="vsix-color-compiler"></a>Compilatore dei colori VSIX
-Lo strumento Visual Studio Extension Color Compiler è un'applicazione console che accetta un file XML che rappresenta i colori per i temi di Visual Studio esistenti e lo converte in un file con estensione pkgdef in modo che tali colori possano essere utilizzati in Visual Studio. Poiché è facile confrontare le differenze tra i file XML, questo strumento è utile per la gestione di colori personalizzati nel controllo del codice sorgente. Può anche essere collegato in ambienti di compilazione in modo che l'output della compilazione sia un file con estensione pkgdef valido.
+Lo strumento compilatore colori estensione Visual Studio è un'applicazione console che accetta un file con estensione XML che rappresenta i colori dei temi di Visual Studio esistenti e lo converte in un file con estensione pkgdef in modo che tali colori possano essere utilizzati in Visual Studio. Poiché è facile confrontare le differenze tra i file con estensione XML, questo strumento è utile per la gestione dei colori personalizzati nel controllo del codice sorgente. Può anche essere collegato negli ambienti di compilazione in modo che l'output della compilazione sia un file con estensione pkgdef valido.
 
- **Schema XML del tema**
+ **XML Schema tema**
 
- Un file .xml a tema completo è simile al seguente:A complete theme .xml file looks like this:
+ Un file con estensione XML del tema completo è simile al seguente:
 
 ```xml
 <Themes>
@@ -42,7 +42,7 @@ Lo strumento Visual Studio Extension Color Compiler è un'applicazione console c
 
  **Tema**
 
- L'elemento \<Theme> definisce un intero tema. Un tema deve contenere \<almeno un elemento di> Category. Gli elementi del tema sono definiti in questo modo:
+ L' \<Theme> elemento definisce un intero tema. Un tema deve contenere almeno un \<Category> elemento. Gli elementi del tema sono definiti come segue:
 
 ```xml
 <Theme Name="name" GUID="guid">
@@ -50,25 +50,23 @@ Lo strumento Visual Studio Extension Color Compiler è un'applicazione console c
 </Theme>
 ```
 
-|||
-|-|-|
 |**Attributo**|**Definizione**|
-|Nome|[Obbligatorio] Il nome del tema|
-|GUID|[Obbligatorio] GUID del tema (deve corrispondere alla formattazione DEL GUID)|
-
- Quando si creano colori personalizzati per Visual Studio, tali colori devono essere definiti per i temi seguenti. Se non esistono colori per un tema specifico, Visual Studio tenta di caricare i colori mancanti dal tema Luce.
-
-|||
 |-|-|
+|Nome|Necessaria Nome del tema|
+|GUID|Necessaria Il GUID del tema (deve corrispondere alla formattazione del GUID)|
+
+ Quando si creano colori personalizzati per Visual Studio, è necessario definire questi colori per i temi seguenti. Se non esistono colori per un particolare tema, Visual Studio tenta di caricare i colori mancanti dal tema chiaro.
+
 |**Nome del tema**|**GUID tema**|
-|Light|-de3dbbcd-f642-433c-8353-8f1df4370aba|
-|Dark (Scuro)|1ded0138-47ce-435e-84ef-9ec1f439b749|
-|Blu|4d6a176-b948-4b29-8c66-53c97a1ed7d0|
-|Contrasto elevato|4d6a176-b948-4b29-8c66-53c97a1ed7d0|
+|-|-|
+|Chiaro|{de3dbbcd-f642-433c-8353-8f1df4370aba}|
+|Scuro|{1ded0138-47ce-435e-84ef-9ec1f439b749}|
+|Blu|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
+|Contrasto elevato|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
 
  **Categoria**
 
- L'elemento \<> categoria definisce una raccolta di colori in un tema. I nomi delle categorie forniscono raggruppamenti logici e devono essere definiti nel modo più ristretto possibile. Una categoria deve contenere almeno un \<elemento Color>. Gli elementi di categoria sono definiti in questo modo:
+ L' \<Category> elemento definisce una raccolta di colori in un tema. I nomi di categoria forniscono raggruppamenti logici e devono essere definiti nel modo più restrittivo possibile. Una categoria deve contenere almeno un \<Color> elemento. Gli elementi Category sono definiti come segue:
 
 ```xml
 <Category Name="name" GUID="guid">
@@ -76,15 +74,14 @@ Lo strumento Visual Studio Extension Color Compiler è un'applicazione console c
  </Category>
 ```
 
-|||
-|-|-|
 |**Attributo**|**Definizione**|
-|Nome|[Obbligatorio] Il nome della categoria|
-|GUID|[Obbligatorio] GUID della categoria (deve corrispondere alla formattazione GUID)|
+|-|-|
+|Nome|Necessaria Nome della categoria|
+|GUID|Necessaria Il GUID della categoria (deve corrispondere alla formattazione del GUID)|
 
- **Color**
+ **Colore**
 
- L'elemento \<Color> definisce un colore per un componente o uno stato dell'interfaccia utente. Lo schema di denominazione preferito per un colore è [tipo di interfaccia utente] [Stato]. Non utilizzare la parola "colore", in quanto è ridondante. Un colore deve indicare chiaramente il tipo di elemento e le situazioni, o "stato", per cui verrà applicato il colore. Un colore non deve essere vuoto e deve \<contenere \<uno o entrambi i> di sfondo e> elemento di primo piano. Gli elementi di colore sono definiti in questo modo:
+ L' \<Color> elemento definisce un colore per un componente o lo stato dell'interfaccia utente. Lo schema di denominazione preferito per un colore è [tipo interfaccia utente] [stato]. Non usare la parola "color", perché è ridondante. Un colore deve indicare chiaramente il tipo di elemento e le situazioni, o "stato", per cui verrà applicato il colore. Un colore non deve essere vuoto e deve contenere uno o entrambi gli \<Background> \<Foreground> elementi e. Gli elementi di colore sono definiti come segue:
 
 ```xml
 <Color Name="name">
@@ -93,31 +90,29 @@ Lo strumento Visual Studio Extension Color Compiler è un'applicazione console c
  </Color>
 ```
 
-|||
-|-|-|
 |**Attributo**|**Definizione**|
-|Nome|[Obbligatorio] Il nome del colore|
+|-|-|
+|Nome|Necessaria Nome del colore|
 
  **Sfondo e/o primo piano**
 
- Gli \<elementi \<> e> primo piano definiscono il valore e il tipo di un colore per lo sfondo o il primo piano di un elemento dell'interfaccia utente. Questi elementi non hanno figli.
+ Gli \<Background> \<Foreground> elementi e definiscono il valore e il tipo di un colore per lo sfondo o il primo piano di un elemento dell'interfaccia utente. Questi elementi non hanno elementi figlio.
 
 ```xml
 <Background Type="type" Source="int" />
 <Foreground Type="type" Source="int" />
 ```
 
-|||
-|-|-|
 |**Attributo**|**Definizione**|
-|Type|[Obbligatorio] Tipo del colore. I possibili valori sono i seguenti:<br /><br /> *CT_INVALID:* Il colore non è valido o non è impostato.<br /><br /> *CT_RAW:* Valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON UTILIZZARE.<br /><br /> *CT_SYSCOLOR:* Un colore di sistema di Windows da SysColor.<br /><br /> *CT_VSCOLOR:* Un colore di Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON UTILIZZARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON UTILIZZARE.|
-|Source (Sorgente)|[Obbligatorio] Il valore del colore rappresentato in formato esadecimale|
+|-|-|
+|Type|Necessaria Tipo di colore. I possibili valori sono i seguenti:<br /><br /> *CT_INVALID:* Il colore non è valido o non è impostato.<br /><br /> *CT_RAW:* Valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON USARE.<br /><br /> *CT_SYSCOLOR:* Colore di sistema Windows da SysColor.<br /><br /> *CT_VSCOLOR:* Colore di Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON USARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON USARE.|
+|Source (Sorgente)|Necessaria Valore del colore rappresentato in formato esadecimale|
 
- Tutti i valori supportati dall'enumerazione __VSCOLORTYPE sono supportati dallo schema nell'attributo Type. Tuttavia, si consiglia di utilizzare solo CT_RAW e CT_SYSCOLOR.
+ Tutti i valori supportati dall'enumerazione __VSCOLORTYPE sono supportati dallo schema nell'attributo Type. È tuttavia consigliabile utilizzare solo CT_RAW e CT_SYSCOLOR.
 
- **Tutti insieme**
+ **Tutto insieme**
 
- Questo è un semplice esempio di un file .xml a tema valido:
+ Questo è un semplice esempio di file con estensione XML del tema valido:
 
 ```xml
 <Themes>
@@ -134,33 +129,32 @@ Lo strumento Visual Studio Extension Color Compiler è un'applicazione console c
 ## <a name="how-to-use-the-tool"></a>Procedura: utilizzare lo strumento
  **Sintassi**
 
- Il file \<XML VsixColorCompiler \<> \<file PkgDef>> facoltativi Args
+ VsixColorCompiler \<XML file> \<PkgDef file>\<Optional Args>
 
  **Argomenti**
 
-||||
+|**Nome dell'opzione**|**Note**|**Obbligatorio o facoltativo**|
 |-|-|-|
-|**Nome switch**|**Note**|**Obbligatorio o facoltativo**|
-|Senza nome (file xml)|Questo è il primo parametro senza nome ed è il percorso del file XML da convertire.|Obbligatoria|
-|Senza nome (file .pkgdef)|Questo è il secondo parametro senza nome ed è il percorso di output per il file pkgdef generato.<br /><br /> Impostazione \<predefinita: Nome file XML>.pkgdef|Facoltativo|
-|/noLogo|L'impostazione di questo flag interrompe la stampa delle informazioni sul prodotto e sul copyright.|Facoltativo|
-|/?|Stampare le informazioni della Guida.|Facoltativo|
-|/help|Stampare le informazioni della Guida.|Facoltativo|
+|Senza nome (file con estensione XML)|Si tratta del primo parametro senza nome e è il percorso del file XML da convertire.|Obbligatoria|
+|Senza nome (file. pkgdef)|Si tratta del secondo parametro senza nome e è il percorso di output per il file con estensione pkgdef generato.<br /><br /> Impostazione predefinita: \<XML Filename> . pkgdef|Facoltativo|
+|/noLogo|L'impostazione di questo flag interrompe le informazioni sul prodotto e sul copyright dalla stampa.|Facoltativo|
+|/?|Stampare le informazioni della guida.|Facoltativo|
+|/help|Stampare le informazioni della guida.|Facoltativo|
 
  **Esempi**
 
-- VsixColorCompiler D:
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
-- VsixColorCompiler D:
+- VsixColorCompiler D:\xml\colors.xml/noLogo
 
 ## <a name="notes"></a>Note
 
-- Questo strumento richiede l'installazione della versione più recente del runtime di VC.
+- Per questo strumento è necessario che sia installata la versione più recente del runtime di VC + +.
 
-- Sono supportati solo i singoli file. La conversione in blocco tramite percorsi di cartelle non è supportata.
+- Sono supportati solo i singoli file. La conversione bulk tramite percorsi di cartella non è supportata.
 
 ## <a name="sample-output"></a>Output di esempio
- Il file .pkgdef generato dallo strumento sarà simile alle seguenti chiavi:
+ Il file con estensione pkgdef generato dallo strumento sarà simile a quello riportato di seguito:
 
 ```
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\Environment]
