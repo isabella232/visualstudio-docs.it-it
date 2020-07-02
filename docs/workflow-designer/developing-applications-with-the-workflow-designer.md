@@ -1,7 +1,7 @@
 ---
 title: Sviluppo di applicazioni con Progettazione flussi di lavoro
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -16,32 +16,32 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 9f1b7aa37794618cd051cfdaaacb9359087cc664
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301727"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814720"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Sviluppare app con Progettazione flussi di lavoro
 
-Progettazione flussi di lavoro è una finestra di progettazione visiva e un debugger per la costruzione grafica e il debug delle applicazioni [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF) in Visual Studio. Consente di comporre un'applicazione del flusso di lavoro composita, una libreria di attività o un servizio Windows Communication Foundation (WCF) tramite l'uso di modelli e ActivityDesigner.
+Il Progettazione flussi di lavoro è una finestra di progettazione visiva e un debugger per la costruzione grafica e il debug di applicazioni [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF) in Visual Studio. Consente di comporre un'applicazione flusso di lavoro composita, una libreria attività o un servizio Windows Communication Foundation (WCF) tramite l'utilizzo di modelli e ActivityDesigner.
 
-## <a name="install-windows-workflow-foundation"></a>Installare Windows Workflow Foundation
+## <a name="install-windows-workflow-foundation"></a>Installa Windows Workflow Foundation
 
-Per usare i modelli di progetto Flusso di lavoro in Visual Studio, installare innanzitutto il componente **Windows Workflow Foundation.To** use Workflow project templates in Visual Studio, first install the Windows Workflow Foundation component.
+Per usare i modelli di progetto del flusso di lavoro in Visual Studio, installare prima il componente **Windows Workflow Foundation** .
 
-1. Aprire il programma di installazione di Visual Studio.Open Visual Studio Installer. Un modo rapido per aprirlo è selezionando **Strumenti** > **Ottieni strumenti e funzionalità** in Visual Studio.
+1. Aprire Programma di installazione di Visual Studio. Per aprirlo, è possibile scegliere **strumenti**  >  **Ottieni strumenti e funzionalità** in Visual Studio.
 
-1. In Visual Studio Installer selezionare la scheda **Singoli componenti.**
+1. In Programma di installazione di Visual Studio selezionare la scheda **singoli componenti** .
 
-1. Scorrere verso il basso fino alla categoria **Attività** di sviluppo e quindi selezionare il componente **Windows Workflow Foundation.**
+1. Scorrere verso il basso fino alla categoria **attività di sviluppo** , quindi selezionare il componente **Windows Workflow Foundation** .
 
-   ![Componente Di Windows Workflow Foundation per Visual Studio](media/windows-workflow-foundation-component.png)
+   ![Componente Windows Workflow Foundation per Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Selezionare **Modifica**.
 
-   Visual Studio installa il componente **Windows Workflow Foundation.**
+   Visual Studio installa il componente **Windows Workflow Foundation** .
 
 ## <a name="see-also"></a>Vedere anche
 

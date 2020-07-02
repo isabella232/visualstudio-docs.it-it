@@ -1,19 +1,19 @@
 ---
 title: 'Progettazione flussi di lavoro-procedura: aggiungere attività alla casella degli strumenti'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cde4f3a41a1a07f982f85c0c19e9f16b047068
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593928"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815825"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: aggiungere attività nella Casella degli strumenti
 
@@ -25,7 +25,7 @@ Le attività possono essere aggiunte alla **casella degli strumenti** nella solu
 
 2. Aggiungere la logica personalizzata all'attività.
 
-3. Compilazione del progetto. Se la compilazione ha avuto esito positivo, viene visualizzata una nuova categoria nella **casella degli strumenti** denominata "\<*nome progetto*>" con l'attività personalizzata inclusa in tale categoria.
+3. Compilare il progetto. Se la compilazione ha avuto esito positivo, viene visualizzata una nuova categoria nella **casella degli strumenti** denominata " \<*project name*> " con l'attività personalizzata inclusa in tale categoria.
 
     > [!NOTE]
     > Se la casella degli strumenti viene reimpostata, le attività personalizzate verranno rimosse, anche se la soluzione viene compilata nuovamente. Per ripopolare la casella degli strumenti con attività personalizzate dopo che è stata reimpostata, riavviare Visual Studio.
@@ -40,7 +40,7 @@ Le attività possono essere aggiunte alla **casella degli strumenti** nella solu
 
 1. Aprire una soluzione che contiene almeno un progetto flusso di lavoro e un progetto libreria attività personalizzato oppure un altro progetto flusso di lavoro che definisce un'attività personalizzata.
 
-2. Compilare entrambi i progetti. Se le compilazioni sono state completate correttamente, viene visualizzata una nuova categoria nella **casella degli strumenti** denominata "\<*nome progetto*>" con l'attività personalizzata inclusa in tale categoria.
+2. Compilare entrambi i progetti. Se le compilazioni sono state completate correttamente, viene visualizzata una nuova categoria nella **casella degli strumenti** denominata " \<*project name*> " con l'attività personalizzata inclusa in tale categoria.
 
 ## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Per aggiungere un'attività alla Casella degli strumenti da un assembly
 

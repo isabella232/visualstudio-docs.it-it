@@ -3,19 +3,19 @@ title: Visual Studio Tools per Unity | Microsoft Docs
 ms.custom: ''
 ms.date: 10/25/2019
 ms.technology: vs-unity-tools
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
 author: therealjohn
 ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 967e0bfbaec19d3afa558957008ea14a5c37f359
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74797125"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814954"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools per Unity
 
@@ -48,11 +48,11 @@ Visual Studio Tools per Unity supporta tutte le solide funzionalità di [debug](
 * Controllo e modifica del valore di variabili e argomenti.
 * Drill down in strutture di dati e oggetti complessi.
 
-### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostica di Roslyn e correzioni rapide per Unity
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostica Roslyn e correzioni rapide per Unity
 
-Scrivere codice migliore che acquisisca le procedure consigliate con la conoscenza approfondita di Visual Studio dei progetti Unity.Write better code that captures the best practices with Visual Studio's deep understanding of Unity projects.
+Scrivi codice migliore che acquisisce le procedure consigliate con la comprensione approfondita dei progetti Unity di Visual Studio.
 
-![Confronto tra stringhe di refactoring di VS con CompareTag](media/unity-diagnostics.png)
+![Confronto tra stringhe di refactoring di Visual Studio con CompareTag](media/unity-diagnostics.png)
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio per Mac Tools per Unity
 

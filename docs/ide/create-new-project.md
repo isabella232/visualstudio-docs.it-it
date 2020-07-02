@@ -1,7 +1,7 @@
 ---
 title: Creare un nuovo progetto
 ms.date: 03/19/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.newproject
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f7cecf6a68296b3bffd07cca13fc3a3d0d5bc836
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585470"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770739"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Creare un nuovo progetto in Visual Studio
 
@@ -24,7 +24,7 @@ ms.locfileid: "75585470"
 
 ## <a name="open-the-new-project-dialog"></a>Aprire la finestra di dialogo Nuovo progetto
 
-Per creare un nuovo progetto in Visual Studio 2017 esistono più metodi. Nella pagina iniziale è possibile immettere il nome di un modello di progetto nella casella **Cerca modelli di progetto** o scegliere il collegamento **Crea nuovo progetto** per aprire la finestra di dialogo **Nuovo progetto**. Oltre alla pagina iniziale, è anche possibile scegliere **File** > **nuovo** > **progetto** sulla barra dei menu o fare clic sul pulsante Nuovo **progetto** sulla barra degli strumenti.
+Per creare un nuovo progetto in Visual Studio 2017 esistono più metodi. Nella pagina iniziale è possibile immettere il nome di un modello di progetto nella casella **Cerca modelli di progetto** o scegliere il collegamento **Crea nuovo progetto** per aprire la finestra di dialogo **Nuovo progetto**. A parte la pagina iniziale, è anche possibile scegliere **file**  >  **nuovo**  >  **progetto** dalla barra dei menu o fare clic sul pulsante **nuovo progetto** sulla barra degli strumenti.
 
 ![Pagina iniziale e File > Nuovo > Progetto](./media/vside-newproject1.png)
 

@@ -1,16 +1,16 @@
 ---
 title: 'Procedura dettagliata: utilizzo della gerarchia XSLT'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592451"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815032"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Procedura dettagliata: usare la gerarchia XSLT
 
@@ -103,11 +103,11 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
     </xsl:stylesheet>
     ```
 
-4. Aggiungere un punto di interruzione in corrispondenza dell'istruzione `<xsl:include href="xslincludefile.xsl" />`.
+4. Aggiungere un punto di interruzione in corrispondenza dell'istruzione `<xsl:include href="xslincludefile.xsl" />` .
 
 5. Avviare il debug.
 
-6. Quando il debugger si arresta in corrispondenza del `<xsl:include href="xslincludefile.xsl" />`di istruzioni, fare clic sul pulsante **Esegui** istruzione. Il debug può essere continuato nel foglio di stile a cui si fa riferimento. La gerarchia è visibile e nella finestra di progettazione viene visualizzato il percorso corretto.
+6. Quando il debugger si interrompe in corrispondenza dell'istruzione `<xsl:include href="xslincludefile.xsl" />` , fare clic sul pulsante **Esegui istruzione** . Il debug può essere continuato nel foglio di stile a cui si fa riferimento. La gerarchia è visibile e nella finestra di progettazione viene visualizzato il percorso corretto.
 
 ## <a name="see-also"></a>Vedere anche
 

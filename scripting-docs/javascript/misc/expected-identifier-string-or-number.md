@@ -3,7 +3,7 @@ title: Previsto identificatore, stringa o numero | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1028
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: adc34a0605561852885087151796cceb20aead5b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 5c0e1ee1cdb2c135d3a76316d56e279de963b156
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72577584"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814577"
 ---
 # <a name="expected-identifier-string-or-number"></a>Previsto identificatore, stringa o numero
-È stata usata una sintassi letterale non corretta per dichiarare un valore letterale dell'oggetto. Le proprietà di un valore letterale di oggetto devono essere un identificatore, una stringa o un numero. Un valore letterale dell'oggetto, detto anche "inizializzatore di oggetto", è costituito da un elenco delimitato da virgole di coppie proprietà: valore, tutte racchiuse tra parentesi quadre. Esempio:  
+È stata usata una sintassi letterale non corretta per dichiarare un valore letterale dell'oggetto. Le proprietà di un valore letterale di oggetto devono essere un identificatore, una stringa o un numero. Un valore letterale dell'oggetto, detto anche "inizializzatore di oggetto", è costituito da un elenco delimitato da virgole di coppie proprietà: valore, tutte racchiuse tra parentesi quadre. Ad esempio:  
   
 ```JavaScript  
 var point = {x:1.2, y:-3.4};  

@@ -1,19 +1,19 @@
 ---
 title: Creazione di uno schema XML
 ms.date: 03/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 857b75f22d45cbabc22062fd14b385e8f6ea5f14
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 10ce1c6dc5bd24b391a8cde184a32684270662ef
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592776"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815448"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedura: creare un XML Schema da un documento XML
 
@@ -33,7 +33,7 @@ Per ulteriori informazioni sul motore di inferenza dello schema, vedere [dedurre
 
 1. Aprire un file XML in Visual Studio.
 
-2. Nella barra dei menu scegliere **XML** > **Crea schema**.
+2. Nella barra dei menu scegliere **XML**  >  **Crea schema**.
 
    Un documento XML Schema viene creato e aperto per ogni spazio dei nomi trovato nel file XML. Ogni schema viene aperto come file esterno temporaneo. Gli schemi possono essere salvati su disco, aggiunti al progetto oppure eliminati.
 

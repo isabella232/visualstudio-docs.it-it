@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: Aggiungere un file app.config a un progetto'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe659979cadf4d9e5752f7bbe85150aae848de08
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593642"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770827"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedura: Aggiungere un file di configurazione dell'applicazione a un progetto C#
 
@@ -29,11 +29,11 @@ Quando si compila il progetto, l'ambiente di sviluppo copia automaticamente il f
 
 ## <a name="to-add-an-application-configuration-file-to-a-c-project"></a>Per aggiungere un file di configurazione dell'applicazione a un progetto C#
 
-1. Nella barra dei menu scegliere **Aggiungi** > **nuovo elemento**.
+1. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
-1. Espandere **Elementi installati** > di**Visual C,** quindi scegliere il modello File di **configurazione dell'applicazione.**
+1. Espandere **Installed**  >  **elementi di Visual C#** installati, quindi scegliere il modello **file di configurazione dell'applicazione** .
 
 1. Nella casella di testo **Nome** immettere un nome e quindi scegliere il pulsante **Aggiungi**.
 

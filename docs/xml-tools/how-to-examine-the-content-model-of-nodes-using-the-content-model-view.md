@@ -1,19 +1,19 @@
 ---
 title: Esaminare i nodi tramite la visualizzazione modello di contenuto in Progettazione XML Schema
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a7e6e311a4fbd02973edf94c6eb117f69d6cea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81bf6294aeac9a23168bf9cf9aaec26efbfc6c1f
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592711"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815981"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedura: esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto
 
@@ -27,9 +27,9 @@ In questo argomento viene descritto come esplorare i nodi utilizzando la [visual
 
 3. Copiare il codice di esempio XML Schema da [esempio XML Schema: schema di ordine di acquisto](../xml-tools/sample-xsd-file-purchase-order-schema.md) e incollarlo per sostituire il codice aggiunto al nuovo file XSD per impostazione predefinita.
 
-4. Per selezionare l'elemento `purchaseOrder` in Esplora schema, fare clic con il pulsante destro del mouse sull'elemento `purchaseOrder` nell'editor XML e scegliere **Mostra in Esplora XML**.
+4. Per selezionare l'elemento in Esplora schema, fare clic con il `purchaseOrder` pulsante destro del mouse sull' `purchaseOrder` elemento nell'editor XML e scegliere **Mostra in Esplora XML**.
 
-5. Fare clic con il pulsante destro del mouse sul `purchaseOrder` in XML Explorer e scegliere **Mostra in visualizzazione modello di contenuto**.
+5. Fare clic con il pulsante destro del mouse su `purchaseOrder` in XML Explorer e selezionare **Mostra nella visualizzazione modello di contenuto**.
 
      Nella visualizzazione modello di contenuto viene visualizzato l'elemento `purchaseOrder` sulla relativa area di progettazione.
 
@@ -41,4 +41,4 @@ In questo argomento viene descritto come esplorare i nodi utilizzando la [visual
 
 8. Fare clic sul pulsante **Mostra documentazione** sulla barra degli strumenti XSD per impostare la documentazione. È anche possibile fare clic con il pulsante destro del mouse sull'area di progettazione per attivare o disattivare la documentazione.
 
-9. Fare clic con il pulsante destro del mouse sul nodo `purchaseOrder` e selezionare **genera XML di esempio** per visualizzare il documento dell'istanza XML.
+9. Fare clic con il pulsante destro del mouse sul `purchaseOrder` nodo e selezionare **genera XML di esempio** per visualizzare il documento dell'istanza XML.

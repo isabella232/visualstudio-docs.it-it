@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8aa26144a7c0a2f7edad58ecfb26e3a7d402a994
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72666186"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770901"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opzioni, Editor di testo, HTML (Web Form), Varie
 
-Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere a questa pagina, sulla barra dei menu scegliere**Opzioni** **degli strumenti** > , quindi espandere Editor di **testo** > **HTML (Web Form)** > **Varie**.
+Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**e quindi espandere **editor di testo**  >  **HTML (Web Form)**  >  **varie**.
 
 ## <a name="miscellaneous-html-options"></a>Altre opzioni HTML
 
@@ -29,8 +29,8 @@ Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalit�
 
 - **Richiedi '<' per attivare finestra completamento tag**
 
-   Quando questa casella di controllo è selezionata, viene visualizzata la finestra completamento tag quando si digita il carattere maggiore di ("<").
+   Se questa casella di controllo è selezionata, viene visualizzata la finestra completamento tag quando si digita il carattere di minore di ("<").
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

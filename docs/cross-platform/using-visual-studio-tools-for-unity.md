@@ -3,19 +3,19 @@ title: Uso di Strumenti di Visual Studio Tools per Unity | Microsoft Docs
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 author: therealjohn
 ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d1bca9bed18de822de71ca441387adeaefc65ec3
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f65945f28a577201c1308694bb7196d464330dc1
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649388"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815162"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Usare Visual Studio Tools per Unity
 
@@ -33,7 +33,7 @@ In alternativa, Visual Studio può essere aperto senza aprire alcuno script nell
 
 È possibile accedere rapidamente alla documentazione di Unity da Visual Studio. Se Visual Studio Tools per Unity non trova la documentazione dell'API in locale, proverà a individuarla online.
 
-- In Visual Studio, evidenziare o posizionare il cursore sull'API Unity che si desidera conoscere, quindi premere **Ctrl**+**Alt**+**M**, **Ctrl**+**H**
+- In Visual Studio evidenziare o posizionare il cursore sull'API di Unity su cui si vuole ottenere informazioni, quindi premere **CTRL** + **ALT** + **M**, **CTRL** + **H**
 
 ## <a name="intellisense-for-unity-api-messages"></a>IntelliSense per messaggi dell'API Unity
 
@@ -71,7 +71,7 @@ Ciò semplifica l'implementazione di messaggi dell'API Unity negli script MonoBe
 
 Per creare definizioni vuote di metodi MonoBehaviour con la procedura guidata MonoBehaviour:
 
-1. In Visual Studio posizionare il cursore nel punto in cui si desidera inserire i metodi, quindi premere **CTRL**+**MAIUSC**+**M** per avviare la procedura guidata MonoBehavior.
+1. In Visual Studio posizionare il cursore nel punto in cui si desidera inserire i metodi, quindi premere **CTRL** + **MAIUSC** + **M** per avviare la procedura guidata monobehavior.
 
 2. Nella finestra **Create script methods** (Crea metodi script) selezionare la casella di controllo accanto al nome dei singoli metodi da aggiungere.
 
@@ -91,7 +91,7 @@ Per creare definizioni vuote di metodi MonoBehaviour con la procedura guidata Mo
 
 Esplora progetti Unity visualizza tutti i file di progetto Unity e tutte le directory nella stessa gerarchia usata dall'editor di Unity. Si differenzia dall'esplorazione degli script Unity con Esplora soluzioni Visual Studio standard, che li organizza in progetti e in una soluzione generata da Visual Studio.
 
-- Nel menu principale di Visual Studio scegliere **Visualizza > Esplora progetti Unity**. Scelta rapida da tastiera: **Alt**+**Shift**+**E**
+- Nel menu principale di Visual Studio scegliere **Visualizza > Esplora progetti Unity**. Scelta rapida da tastiera: **ALT** + **MAIUSC** + **E**
 
    ![Visualizzare la finestra Esplora progetti di Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -157,7 +157,7 @@ Fare clic sul pulsante **Interrompi** in Visual Studio o usare i tasti di scelta
 
    ![Scegliere un'istanza di Unity a cui connettersi.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
-   **Project**
+   **Progetto**
 
    Nome del progetto Unity in esecuzione in questa istanza di Unity.
 
@@ -194,7 +194,7 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 
    ![Impostare il framework di destinazione della DLL sul framework Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
-3. Copiare la DLL nella cartella Assets del progetto Unity. In Unity gli asset sono file che vengono inseriti nel pacchetto dell'app Unity e distribuiti con questa per consentirne il caricamento al runtime. Poiché le DLL sono collegate in fase di esecuzione, le DLL devono essere distribuite come risorse. Per distribuire le DLL come asset, l'editor di Unity richiede che vengano inserite nella cartella Assets del progetto Unity. Questa operazione può essere eseguita nei due modi seguenti:
+3. Copiare la DLL nella cartella Assets del progetto Unity. In Unity gli asset sono file che vengono inseriti nel pacchetto dell'app Unity e distribuiti con questa per consentirne il caricamento al runtime. Poiché le dll sono collegate in fase di esecuzione, le dll devono essere distribuite come asset. Per distribuire le DLL come asset, l'editor di Unity richiede che vengano inserite nella cartella Assets del progetto Unity. Questa operazione può essere eseguita nei due modi seguenti:
 
    - Modificare le impostazioni di compilazione del progetto di DLL in modo da includere un'attività di post-compilazione che copi la DLL di output e i file PDB dalla cartella di output alla cartella **Assets** (Asset) del progetto Unity.
 
@@ -212,9 +212,9 @@ Per accedere rapidamente alle funzionalità degli strumenti Unity per Visual Stu
 
 |Comando|Tasto di scelta rapida|Nome del comando associato al tasto di scelta rapida|
 |-------------|--------------|---------------------------|
-|Apri procedura guidata MonoBehaviour|**Ctrl**+**Maiusc**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Apri Esplora progetti Unity|**Alt**+**Maiusc**+**E**|**View.UnityProjectExplorer**|
-|Accedi alla documentazione di Unity|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
+|Apri procedura guidata MonoBehaviour|**CTRL** + **Sposta** + **M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Apri Esplora progetti Unity|**ALT** + **Sposta** + **E**|**View.UnityProjectExplorer**|
+|Accedi alla documentazione di Unity|**CTRL** + **ALT** + **M, CTRL** + **H**|**Help.UnityAPIReference**|
 |Connetti al debugger Unity (lettore o editor)|**_nessun valore predefinito_**|**Debug.AttachUnityDebugger**|
 
 Se si preferisce non usarle, è possibile modificare le combinazioni di tasti di scelta rapida predefinite. Per informazioni su come modificarle, vedere [Identificare e personalizzare i tasti di scelta rapida in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

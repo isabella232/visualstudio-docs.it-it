@@ -1,9 +1,9 @@
 ---
-title: L'utilizzo di una parola chiave per un identificatore è valido | Microsoft Docs
+title: L'uso di una parola chiave per un identificatore non è valido | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1048
 dev_langs:
@@ -14,16 +14,16 @@ ms.assetid: 04951b3b-a8b5-4d36-94f8-d2daee1ce0f8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4de3dd669dfb54fc01704b03989fa90d4412cfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5518c865ba1d0c7b1d1f4938983dd9b3278e6557
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006183"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816039"
 ---
 # <a name="the-use-of-a-keyword-for-an-identifier-is-invalid"></a>Uso di una parola chiave per un identificatore non valido
-1048: Uso di una parola chiave per un identificatore non valido  
+1048: l'uso di una parola chiave per un identificatore non è valido  
   
- È possibile usare una parola chiave come il nome di una variabile, funzione o altro identificatore definito dall'utente.  
+ Non è possibile usare una parola chiave come nome di una variabile, di una funzione o di un altro identificatore definito dall'utente.  
   
- Per altre informazioni sulle parole chiave, vedere [JavaScript termini riservati](../../javascript/reference/javascript-reserved-words.md) e [parole riservate Future JavaScript](../../javascript/reference/javascript-future-reserved-words.md).
+ Per altre informazioni sulle parole chiave, vedere [parole riservate di JavaScript](../../javascript/reference/javascript-reserved-words.md) e [parole riservate future di JavaScript](../../javascript/reference/javascript-future-reserved-words.md).

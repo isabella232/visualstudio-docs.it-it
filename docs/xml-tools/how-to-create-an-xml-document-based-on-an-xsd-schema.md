@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: creare un documento XML in base allo schema XSD'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 424b325b244499a18077cc1df0ff9164c41763d2
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592802"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815461"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: creare un documento XML in base a uno schema XSD
 
@@ -31,11 +31,11 @@ Questa funzionalità genera di norma documenti XML validi. Tuttavia, se lo schem
 
 - I vincoli di identità `xs:key`, `xs:keyref` e `xs:unique`.
 
-- `xs:pattern` facet.
+- `xs:pattern`facet.
 
 - Enumerazioni di tipo `xs:QName`.
 
-- tipi di `xs:ENTITY`, `xs:ENTITIES`e `xs:NOTATION`.
+- `xs:ENTITY``xs:ENTITIES`tipi, e `xs:NOTATION` .
 
 Si noti inoltre che il contenuto `xs:base64Binary` sarà generato solo se le enumerazioni si verificano nello schema per il tipo specificato.
 
@@ -43,7 +43,7 @@ Si noti inoltre che il contenuto `xs:base64Binary` sarà generato solo se le enu
 
 1. Seguire i passaggi in [procedura: creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. In [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)fare clic con il pulsante destro del mouse sull'elemento globale `PurchaseOrder`. Selezionare **genera XML di esempio**.
+2. In [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)fare clic con il pulsante destro del mouse sull' `PurchaseOrder` elemento globale. Selezionare **genera XML di esempio**.
 
      Quando si seleziona questa opzione, PurchaseOrder. il file *XML* con il contenuto XML di esempio seguente verrà generato e aperto nell'editor XML:
 

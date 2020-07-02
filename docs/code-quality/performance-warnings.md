@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24436a76841ae663f733e7c76eeb16065ed1f57b
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: a3fc631a2a99dd6090893393ee20ecec23945713
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85382666"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814928"
 ---
 # <a name="performance-warnings"></a>avvisi di prestazioni
 Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni.
@@ -33,6 +33,7 @@ Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni
 | [CA1801: Controllare i parametri non usati](../code-quality/ca1801.md) | Una firma di metodo include un parametro non utilizzato nel corpo del metodo. |
 | [CA1802: Utilizza valori letterali dove appropriato](../code-quality/ca1802.md) | Un campo viene dichiarato statico e di sola lettura (Shared e ReadOnly in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) e viene inizializzato con un valore calcolabile in fase di compilazione. Poiché il valore assegnato al campo di destinazione è calcolabile in fase di compilazione, modificare la dichiarazione in un campo const (const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) in modo che il valore venga calcolato in fase di compilazione anziché in fase di esecuzione. |
 | [CA1804: Rimuovere variabili locali non usate](../code-quality/ca1804.md) | Le variabili locali inutilizzate e le assegnazioni non necessarie comportano un aumento delle dimensioni dell'assembly e una riduzione delle prestazioni. |
+| [CA1805: non inizializzare inutilmente](../code-quality/ca1805.md) | Il Runtime .NET Inizializza tutti i campi dei tipi di riferimento sui rispettivi valori predefiniti prima di eseguire il costruttore. Nella maggior parte dei casi, l'inizializzazione esplicita di un campo sul valore predefinito è ridondante, che aumenta i costi di manutenzione e può influire negativamente sulle prestazioni, ad esempio con una maggiore dimensione dell'assembly. |
 | [CA1806: Non ignorare i risultati dei metodi](../code-quality/ca1806.md) | Un nuovo oggetto viene creato, ma non viene mai usato, oppure un metodo che crea e restituisce una nuova stringa viene chiamato e la nuova stringa non viene mai usata oppure un metodo Component Object Model (COM) o P/Invoke restituisce un codice HRESULT o errore che non viene mai usato. |
 | [CA1809: Evitare un numero eccessivo di variabili locali](../code-quality/ca1809.md) | Un'ottimizzazione comune delle prestazioni consiste nell'archiviare un valore in un registro del processore anziché in memoria. Tale procedura è definita "registrazione del valore".  Per aumentare la possibilità di registrazione di tutte le variabili locali, limitare il numero di tali variabili a 64. |
 | [CA1810: Inizializzare i campi statici del tipo di riferimento inline](../code-quality/ca1810.md) | Quando un tipo dichiara un costruttore statico esplicito, tramite il compilatore JIT (Just-In-Time) viene aggiunto un controllo a ogni metodo statico del tipo e a ogni costruttore di istanza del tipo per assicurare che il costruttore statico sia stato precedentemente chiamato. I controlli dei costruttori statici possono ridurre le prestazioni. |

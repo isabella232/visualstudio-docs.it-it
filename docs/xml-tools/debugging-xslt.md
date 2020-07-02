@@ -1,7 +1,7 @@
 ---
 title: Modi per eseguire il debug del codice XSLT
 ms.date: 03/05/2019
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f4a1ce60f04bcea6e21b52db9347a95292dab2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d8e3885aa895cec5ed080b7a8b4d22522d2e9edf
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592854"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815617"
 ---
 # <a name="debugging-xslt"></a>Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)
 
@@ -33,11 +33,11 @@ Una volta avviato il debug, nel debugger XSLT vengono aperte finestre di visuali
 
 1. Aprire il foglio di stile o il file XML in Visual Studio.
 
-1. Selezionare **Avvia debug XSLT** dal menu **XML** oppure premere **ALT**+**F5**.
+1. Selezionare **Avvia debug XSLT** dal menu **XML** oppure premere **ALT** + **F5**.
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>Eseguire il debug da un'app che usa XSLT
 
-È possibile eseguire l'istruzione XSLT durante il debug di un'applicazione. Quando si preme **F11** su una chiamata <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>, il debugger può eseguire un'istruzione nel codice XSLT.
+È possibile eseguire l'istruzione XSLT durante il debug di un'applicazione. Quando si preme **F11** su una <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> chiamata, il debugger può eseguire un'istruzione nel codice XSLT.
 
 > [!NOTE]
 > Non è supportata l'esecuzione di istruzioni XSLT dalla classe <xref:System.Xml.Xsl.XslTransform>. La classe <xref:System.Xml.Xsl.XslCompiledTransform> è l'unico processore XSLT in grado di supportare l'esecuzione di istruzioni XSLT durante il debug.

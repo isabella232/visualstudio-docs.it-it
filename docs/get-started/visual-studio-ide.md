@@ -3,7 +3,7 @@ title: Panoramica di Visual Studio
 titleSuffix: ''
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: overview
 ms.custom: vs-get-started
 author: TerryGLee
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3707e06aa41c4f232a5525ca4422f3941fbe2d1a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5790d652ad98c684786efaa39a1fd23948d3b36e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589357"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770884"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Benvenuti all'IDE di Visual Studio
 
@@ -42,7 +42,7 @@ Se l'utente è pronto per approfondire maggiormente le attività di codifica, il
 
 - [Usare Visual Studio per creare la prima app Node.js](../ide/quickstart-nodejs.md)
 
-- [Usare Visual Studio per creare la prima app per console di C](/cpp/get-started/tutorial-console-cpp)
+- [Usare Visual Studio per creare la prima app console C++](/cpp/get-started/tutorial-console-cpp)
 
 ## <a name="see-also"></a>Vedere anche
 

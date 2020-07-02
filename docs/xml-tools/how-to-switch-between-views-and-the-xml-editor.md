@@ -1,19 +1,19 @@
 ---
 title: "Procedura: spostarsi tra le visualizzazioni e l'editor XML"
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e43b00c877f5453d1dc28bbc9d5546fcef056f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e85dc8f69ce45f94f9f38973d76e14dee140d54b
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592627"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815097"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procedura: spostarsi tra le visualizzazioni e l'editor XML
 
@@ -27,12 +27,12 @@ In questo argomento viene illustrato come passare tra le visualizzazioni di prog
 
 3. Per passare alla visualizzazione grafico con la filigrana, fare clic su **Usa la visualizzazione grafico per visualizzare la relazione tra il collegamento nodi** nella visualizzazione iniziale.
 
-4. Trascinare il nodo `USAddress` da **XML Schema Explorer** nella visualizzazione grafico. Fare clic con il pulsante destro del mouse sul nodo `USAddress` nella visualizzazione grafico e scegliere **Mostra in visualizzazione modello di contenuto** nel menu di scelta rapida.
+4. Trascinare il `USAddress` nodo da **XML Schema Explorer** nella visualizzazione grafico. Fare clic con il pulsante destro del mouse sul `USAddress` nodo nella visualizzazione grafico e scegliere **Mostra in visualizzazione modello di contenuto** nel menu di scelta rapida.
 
      Viene aperta la visualizzazione modello di contenuto con i dettagli del nodo `USAddress`.
 
 5. Per passare alla visualizzazione iniziale dalla visualizzazione modello di contenuto tramite la barra degli strumenti, fare clic sul pulsante **Avvia visualizzazione** sulla barra degli strumenti XSD.
 
-6. Per spostarsi tra le visualizzazioni utilizzando i tasti di scelta rapida, premere **ctrl**+**1** per la visualizzazione iniziale, **CTRL**+**2** per la visualizzazione grafico e **CTRL**+**3** per la visualizzazione modello di contenuto.
+6. Per spostarsi tra le visualizzazioni utilizzando i tasti di scelta rapida, premere **CTRL** + **1** per la visualizzazione iniziale, **CTRL** + **2** per la visualizzazione grafico e **CTRL** + **3** per la visualizzazione modello di contenuto.
 
 7. Per passare all'editor XML dalla visualizzazione modello di contenuto, fare clic con il pulsante destro del mouse sul nodo e scegliere **Visualizza codice** nel menu di scelta rapida.

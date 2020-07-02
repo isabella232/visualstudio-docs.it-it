@@ -3,19 +3,19 @@ title: Risoluzione dei problemi e problemi noti (VS Tools per Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 author: therealjohn
 ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0173c076a04c4c725565e63c41396b7c4d235952
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "66261123"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815058"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Risoluzione dei problemi e problemi noti (Visual Studio Tools per Unity)
 
@@ -25,7 +25,7 @@ In questa sezione verranno illustrate le soluzioni a problemi comuni relativi a 
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>Verificare che Editor Attaching sia abilitato
 
-Nel menu Unity, selezionare **Modifica preferenze >,** quindi selezionare la scheda **Strumenti esterni.** **Editor Attaching** Per altre informazioni, vedere le preferenze nella [documentazione di Unity](https://docs.unity3d.com/Manual/Preferences.html).
+Scegliere **Modifica preferenze >** dal menu Unity, quindi selezionare la scheda **strumenti esterni** . Verificare che la casella di controllo **Connetti editor** sia abilitata. Per altre informazioni, vedere le preferenze nella [documentazione di Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ### <a name="unable-to-attach"></a>Non è possibile connettersi
 
@@ -168,4 +168,4 @@ Provare ad aggiornare Visual Studio 2015 all'Update 3.
     bt all
     ```
 
-Infine, inviare il [vstusp@microsoft.com](mailto:vstusp@microsoft.com)thread-dump a , insieme a una descrizione delle operazioni eseguite quando Visual Studio è stato bloccato.
+Infine, inviare il dump del thread a [vstusp@microsoft.com](mailto:vstusp@microsoft.com) , insieme a una descrizione delle operazioni eseguite quando Visual Studio è stato bloccato.

@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: creare frammenti XML'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3c2592036f085fcf89d80bcefb1a469b3c1e15
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2b86962221dcdeff59b1152baf7b7cddcc55293e
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592750"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815396"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedura: creare frammenti XML
 
@@ -33,7 +33,7 @@ Per creare un nuovo frammento di codice XML, creare un nuovo file XML e usare la
 
 5. Se necessario, apportare modifiche al nuovo frammento.
 
-6. Dal menu **file** selezionare **Salva XMLFile. XML**.
+6. Scegliere **salva XMLFile.xml**dal menu **file** .
 
      Viene visualizzata la finestra **di dialogo Salva file con nome** .
 
@@ -56,9 +56,9 @@ L'editor supporta due tipi di frammento di codice:
 </SnippetTypes>
 ```
 
-Il tipo di `Expansion` determina se il frammento viene visualizzato quando si richiama il comando **Inserisci frammento** . Il tipo di `SurroundsWith` determina se il frammento viene visualizzato quando si richiama il comando **Racchiudi tra** .
+Il `Expansion` tipo determina se il frammento viene visualizzato quando si richiama il comando **Inserisci frammento** . Il `SurroundsWith` tipo determina se il frammento viene visualizzato quando si richiama il comando **Racchiudi tra** .
 
-### <a name="code-element"></a>Code - elemento
+### <a name="code-element"></a>Elemento del codice
 
 L'elemento `Code` definisce il testo XML che verrà inserito quando viene richiamato il frammento di codice.
 
@@ -104,7 +104,7 @@ L'elemento `Literal` viene usato per identificare il testo di sostituzione che �
 </Literal
 ```
 
-I valori formali possono anche fare riferimento a funzioni. L'editor XML include una funzione denominata **LookupPrefix**. La funzione **LookupPrefix** cerca l'URI dello spazio dei nomi specificato dalla posizione nel documento XML da cui viene richiamato il frammento e restituisce il prefisso dello spazio dei nomi definito per lo spazio dei nomi, se presente, e include i due punti (:) con questo nome. Di seguito è riportato un esempio di un elemento `Literal` che utilizza la funzione **LookupPrefix** .
+I valori formali possono anche fare riferimento a funzioni. L'editor XML include una funzione denominata **LookupPrefix**. La funzione **LookupPrefix** cerca l'URI dello spazio dei nomi specificato dalla posizione nel documento XML da cui viene richiamato il frammento e restituisce il prefisso dello spazio dei nomi definito per lo spazio dei nomi, se presente, e include i due punti (:) con questo nome. Di seguito è riportato un esempio di `Literal` elemento che utilizza la funzione **LookupPrefix** .
 
 ```xml
 <Literal Editable="false">

@@ -3,7 +3,7 @@ title: Panoramica per sviluppatori C#
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301874"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771120"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>IDE di Visual Studio | C\#
 
@@ -26,7 +26,7 @@ ms.locfileid: "79301874"
 
 È possibile configurare Visual Studio per usare impostazioni di ambiente su misura per gli sviluppatori C#.
 
-1. Nella barra dei menu scegliere **Strumenti** > **Importa/Esporta impostazioni**.
+1. Sulla barra dei menu scegliere **strumenti**  >  **Importa/Esporta impostazioni**.
 
 2. Nell'**Importazione/Esportazione guidata delle impostazioni** selezionare **Reimposta tutte le impostazioni** nella prima pagina e quindi scegliere **Avanti**.
 

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238b963aceebd2bfdae38c2f4032955c1bd0c0c6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288949"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770864"
 ---
 # <a name="common-msbuild-project-properties"></a>Proprietà di progetto MSBuild comuni
 
@@ -33,7 +33,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 
 ## <a name="list-of-common-properties-and-parameters"></a>Elenco delle proprietà e dei parametri comuni
 
-| Nome della proprietà o del parametro | Tipi di progetto | Description |
+| Nome della proprietà o del parametro | Tipi di progetto | Descrizione |
 |------------------------------------| - | - |
 | AdditionalLibPaths | .NET | Specifica le cartelle aggiuntive nelle quali i compilatori devono cercare gli assembly di riferimento. |
 | AddModules | .NET | Fa sì che il compilatore renda disponibili per il progetto in compilazione tutte le informazioni sui tipi presenti nei file specificati. Questa proprietà è equivalente all'opzione del compilatore `/addModules`. |
@@ -51,7 +51,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | CleanFile | Tutti | Nome del file che verrà usato come "cache pulita". Per "cache pulita" si intende un elenco di file generati da eliminare durante l'operazione di pulizia. Il file è inserito nel percorso di output intermedio dal processo di compilazione.<br /><br /> Questa proprietà specifica solo i nomi di file privi delle informazioni sul percorso. |
 | CodePage | .NET | Specifica la tabella codici da usare per tutti i file del codice sorgente nella compilazione. Questa proprietà è equivalente all'opzione del compilatore `/codepage`. |
 | CompilerResponseFile | .NET | File di risposta facoltativo che può essere passato alle attività del compilatore. |
-| Configurazione | Tutti | Configurazione in corso di compilazione, "debug" o "rilascio". |
+| Configurazione | Tutti | La configurazione che si sta compilando, in genere `Debug` o `Release` , ma configurabile a livello di soluzione e di progetto. |
 | CscToolPath | C# | Il percorso di *csc.exe*, il compilatore C#. |
 | CustomBeforeMicrosoftCommonTargets | Tutti | Nome di un file di progetto o file delle destinazioni che deve essere importato automaticamente prima dell'importazione delle destinazioni comuni. |
 | DebugSymbols | Tutti | Valore booleano che indica se i simboli sono generati dalla compilazione.<br /><br /> Impostando **-p:DebugSymbols = false** nella riga di comando viene disabilitata la generazione di file di simboli del database di programma (con*estensione PDB*). |
@@ -134,6 +134,6 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | Win32Manifest | .NET | Nome del file manifesto che deve essere incorporato nell'assembly finale. Questo parametro è equivalente all'opzione del compilatore `/win32Manifest`. |
 | Win32Resource | .NET | Nome file della risorsa Win32 da incorporare nell'assembly finale. Questo parametro è equivalente all'opzione del compilatore `/win32resource`. |
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)

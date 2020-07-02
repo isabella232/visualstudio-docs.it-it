@@ -1,18 +1,18 @@
 ---
 title: 'Procedura: Scrivere unit test per DLL C/C++'
 ms.date: 06/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275433"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816007"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedura: Scrivere unit test per DLL C/C++
 
@@ -38,8 +38,8 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 1. Nel menu **File**, scegliere **Nuovo** > **Progetto**.
 
-     **Visual Studio 2017 e versioni precedenti**: espandere I**modelli** >  **installati** > **di Visual C** > **Test**
-     **Visual Studio 2019**: Impostare **la lingua** su C , quindi digitare "test" nella casella di ricerca.
+     **Visual Studio 2017 e versioni precedenti**: espandere modelli **installati**  >  **Templates**  >  **Visual C++**  >  **test**.
+     **Visual Studio 2019**: impostare la **lingua** su C++ e digitare "test" nella casella di ricerca.
 
      Scegliere il modello **Progetto unit test nativo** o scegliere un qualsiasi altro framework installato. Se si sceglie un altro modello, ad esempio Google Test o Boost.Test, i principi di base sono gli stessi, cambiano però alcuni dettagli.
 
@@ -82,13 +82,13 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
          ![Esplora unit test con un test superato](../test/media/utecpp04.png)
 
-## <a name="create-a-dll-project"></a><a name="create_dll_project"></a>Creare un progetto DLLCreate a DLL project
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a>Creazione di un progetto di DLL
 
 ::: moniker range="vs-2019"
 
 La procedura seguente illustra come creare un progetto DLL in Visual Studio 2019.
 
-1. Creare un progetto in C, utilizzando la **Creazione guidata desktop**di Windows : fare clic con il pulsante destro del mouse sul nome della soluzione in Esplora **soluzioni** e scegliere **Aggiungi** > **nuovo progetto**. Impostare **Linguaggio** su C++ e quindi digitare "windows" nella casella di ricerca. Scegliere **Creazione guidata applicazione desktop di Windows** dall'elenco risultati.
+1. Creare un progetto C++ usando la **creazione guidata desktop di Windows**: fare clic con il pulsante destro del mouse sul nome della soluzione in **Esplora soluzioni** e scegliere **Aggiungi**  >  **nuovo progetto**. Impostare **Linguaggio** su C++ e quindi digitare "windows" nella casella di ricerca. Scegliere **Creazione guidata applicazione desktop di Windows** dall'elenco risultati.
 
      In questa procedura dettagliata, il progetto viene denominato `RootFinder`.
 
@@ -188,13 +188,13 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 
     Il nuovo test viene visualizzato in **Esplora test**.
 
-5. In **Esplora test**scegliere Esegui **tutto**.
+5. In **Esplora test**scegliere **Esegui tutto**.
 
     ![Esplora unit test &#45; Test di base superato](../test/media/utecpp10.png)
 
    È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a>Aumentare in modo iterativo i test e farli passare
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a>Aumenta in modo iterativo i test e passali
 
 1. Aggiungere un nuovo test:
 
@@ -243,7 +243,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
     }
     ```
 
-4. Compilare la soluzione, quindi in **Esplora test**scegliere **Esegui tutto**.
+4. Compilare la soluzione e quindi in **Esplora test**scegliere **Esegui tutto**.
 
      Entrambi i test vengono superati.
 
@@ -252,7 +252,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
     > [!TIP]
     > Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.
 
-## <a name="debug-a-failing-test"></a><a name="debug"></a>Eseguire il debug di un test non superatoDebug a failing test
+## <a name="debug-a-failing-test"></a><a name="debug"></a>Eseguire il debug di un test non superato
 
 1. Aggiungere un altro test:
 
@@ -337,7 +337,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 
 ::: moniker-end
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a>Effettuare il refactoring del codice senza modificare i testRefactor the code without changing tests
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a>Effettuare il refactoring del codice senza modificare i test
 
 1. Semplificare il calcolo centrale nella funzione SquareRoot:
 
@@ -371,5 +371,5 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 - [Aggiungere unit test alle applicazioni C++ esistenti](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Utilizzo di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Eseguire il debug di codice nativo](../debugger/debugging-native-code.md)
-- [Procedura dettagliata: Creare e usare la propria libreria a collegamento dinamico (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Procedura dettagliata: Creazione e uso di una libreria di collegamento dinamico (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importare ed esportare](/cpp/build/importing-and-exporting)

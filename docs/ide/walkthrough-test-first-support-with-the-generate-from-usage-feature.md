@@ -4,7 +4,7 @@ ms.date: 10/09/2017
 dev_langs:
 - VB
 - CSharp
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ceed19ab052584ea47629244372af4402835beb5
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596892"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770806"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procedura dettagliata: Sviluppo di test preventivi con la funzionalità di generazione dall'utilizzo
 
@@ -83,7 +83,7 @@ La funzionalità di **generazione dall'uso** può essere usata con framework di 
 
 7. Fare clic su **OK** per chiudere la finestra di dialogo e creare il nuovo file.
 
-8. In **Esplora soluzioni**esaminare il nodo del progetto **GFUDemo_VB** o **GFUDemo_CS** per verificare che sia presente il nuovo file *Automobile.vb* o *Automobile.cs* . Nell'editor del codice lo stato attivo è ancora in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. È quindi possibile continuare a scrivere il test con un'interruzione minima.
+8. In **Esplora soluzioni**esaminare il nodo del progetto **GFUDemo_VB** o **GFUDemo_CS** per verificare che sia presente il nuovo file *automobile. vb* o *automobile.cs* . Nell'editor del codice lo stato attivo è ancora in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. È quindi possibile continuare a scrivere il test con un'interruzione minima.
 
 ### <a name="generate-a-property-stub"></a>Generare uno stub per una proprietà
 Si supponga che la specifica del prodotto indichi che la classe `Automobile` ha due proprietà pubbliche denominate `Model` e `TopSpeed`. Queste proprietà devono essere inizializzate con i valori predefiniti `"Not specified"` e `-1` dal costruttore predefinito. Lo unit test seguente verificherà che il costruttore predefinito imposti le proprietà sui valori predefiniti corretti.
@@ -131,7 +131,7 @@ Si supponga che la specifica indichi che un nuovo oggetto `Automobile` può esse
 
 1. Nel menu **Test** scegliere **Esegui** > **Tutti i test**.
 
-     Il comando **Esegui** > **tutti i test** esegue tutti i test in tutti i framework di test scritti per la soluzione corrente. In questo caso ci sono due test e hanno entrambi esito negativo, come previsto. Il test `DefaultAutomobileIsInitializedCorrectly` ha esito negativo perché la condizione `Assert.IsTrue` restituisce `False`. Il test `AutomobileWithModelNameCanStart` ha esito negativo perché il metodo `Start` nella classe `Automobile` genera un'eccezione.
+     Il comando **Esegui**  >  **tutti i test** esegue tutti i test in tutti i Framework di test scritti per la soluzione corrente. In questo caso ci sono due test e hanno entrambi esito negativo, come previsto. Il test `DefaultAutomobileIsInitializedCorrectly` ha esito negativo perché la condizione `Assert.IsTrue` restituisce `False`. Il test `AutomobileWithModelNameCanStart` ha esito negativo perché il metodo `Start` nella classe `Automobile` genera un'eccezione.
 
      La finestra **Risultati test** è illustrata nella figura seguente.
 
@@ -161,8 +161,8 @@ Si supponga che la specifica indichi che un nuovo oggetto `Automobile` può esse
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Genera dall'utilizzo](../ide/visual-csharp-intellisense.md#generate-from-usage)
+- [Generazione dall'utilizzo](../ide/visual-csharp-intellisense.md#generate-from-usage)
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Usare IntelliSense](../ide/using-intellisense.md)
-- [Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)
+- [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Azioni rapide](../ide/quick-actions.md)
