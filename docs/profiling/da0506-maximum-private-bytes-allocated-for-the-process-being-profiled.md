@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46215f44cad7b6125af4aa34cf42e58dbad3771f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 663de229aa9d7d3dee22425347a3464c200b9d53
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330273"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532093"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Byte privati massimi allocati per il processo sottoposto a profilatura
 
-|||
+|Elemento|valore|
 |-|-|
 |ID regola|DA0506|
 |Category|Monitoraggio risorse|

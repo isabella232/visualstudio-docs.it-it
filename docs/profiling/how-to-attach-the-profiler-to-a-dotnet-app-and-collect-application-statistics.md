@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 615c8c2229a3444b02148b8068964e0ed6def47d
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 68450129d9bb3e9e67793c0a4155e953abbccc3d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332300"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531807"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione .NET Framework autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione (client) autonoma .NET Framework in esecuzione e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.
@@ -53,7 +53,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
      È possibile usare una delle opzioni seguenti con l'opzione **/start:sample**.
 
-   | Opzione | Description |
+   | Opzione | Descrizione |
    | - | - |
    | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente facoltativi dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se l'applicazione profilata è stata avviata con un account utente diverso da quello connesso. |
    | [/CrossSession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni di accesso. È possibile specificare **/CS** come abbreviazione per **/crosssession**. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. |
@@ -73,9 +73,8 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
    - Per impostazione predefinita, i dati relativi alle prestazioni vengono campionati ogni 10.000.000 di cicli di clock del processore non interrotti, ovvero circa una volta ogni 10 secondi su un processore da 1 GHz. È possibile specificare una delle opzioni seguenti per modificare l'intervallo del ciclo di clock o per specificare un evento di campionamento diverso. [/TargetCLR](../profiling/targetclr.md)**:** `Version` specifica la versione di CLR da profilare quando più di una versione del runtime viene caricata in un'applicazione. Facoltativa.
 
-   |||
+   |Evento di esempio|Descrizione|
    |-|-|
-   |Evento di esempio|Description|
    |[/timer](../profiling/timer.md) **:**`Interval`|Imposta l'intervallo di campionamento sul numero di cicli di clock non interrotti specificato da `Interval`.|
    |[/PF](../profiling/pf.md) [**:** `Interval` ]|Imposta l'evento di campionamento sugli errori di pagina. Se si specifica `Interval`, imposta il numero di errori di pagina tra campioni. Il valore predefinito è 10.|
    |[/sys](../profiling/sys-vsperfcmd.md) [**:** `Interval` ]|Imposta l'evento di campionamento sulle chiamate di sistema dal processo al kernel del sistema operativo (syscall). Se si specifica `Interval`, imposta il numero di chiamate tra campioni. Il valore predefinito è 10.|
@@ -88,7 +87,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 - Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/GlobalOff/GlobalOn](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato da `PID`.|
@@ -115,6 +114,6 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
      **VSPerfClrEnv /off**
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)

@@ -15,25 +15,25 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 227838334067d33c8a50c81d3a3c013c6baee356
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918827"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533081"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] specializzata.
+Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione specializzata [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="prerequisites"></a>Prerequisiti
  Prima di iniziare questa procedura, è necessario installare innanzitutto i componenti seguenti:
 
-|||
+|Prodotto|Collegamento di download|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[SDK di Visual Studio](../extensibility/visual-studio-sdk.md)|
 |SDK di visualizzazione e modellazione di Visual Studio|[Download dell'SDK di modellazione](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione Domain-Specific Language
@@ -42,9 +42,9 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!
 
 1. Avviare la procedura guidata DSL.
 
-   1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
+   1. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
 
-   2. Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+   2. Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
    3. In **Tipi progetto**espandere il nodo **altri tipi di progetto** e fare clic su **estensibilità**.
 
@@ -55,9 +55,9 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!
        Verrà visualizzata la **procedura guidata finestra di progettazione Domain-Specific Language** .
 
       > [!NOTE]
-      > Preferibilmente, il nome digitato deve essere un identificatore visivo C# valido, perché potrebbe essere usato per generare il codice.
+      > Preferibilmente, il nome digitato deve essere un identificatore di Visual C# valido perché potrebbe essere usato per generare codice.
 
-      ![Crea finestra di dialogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+      ![Finestra di dialogo per la creazione di una soluzione DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
 2. Scegliere un modello DSL.
 
@@ -67,7 +67,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!
 
 3. Immettere un'estensione per il nome **file nella pagina estensione file** . Deve essere univoco nel computer in uso e in tutti i computer in cui si vuole installare il linguaggio DSL. Verrà visualizzato il messaggio **Nessuna applicazione o editor di Visual Studio utilizzerà questa estensione**.
 
-   - Se è stata usata l'estensione del nome file in DSLs sperimentali precedenti che non sono stati completamente installati, è possibile cancellarli usando lo strumento **Reimposta istanza sperimentale** , disponibile nel menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK.
+   - Se è stata usata l'estensione del nome file in DSLs sperimentali precedenti che non sono stati completamente installati, è possibile cancellarli usando lo strumento **Reimposta istanza sperimentale** , disponibile nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu SDK.
 
    - Se un'altra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione che usa questa estensione di file è stata completamente installata nel computer, è consigliabile disinstallarla. Scegliere **Gestione estensioni**dal menu **strumenti** .
 
@@ -78,7 +78,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!
    > [!NOTE]
    > Se viene visualizzato un messaggio che informa che non è possibile eseguire modelli di testo da origini non attendibili, fare clic su **OK**. È possibile impostare questo messaggio in modo che non venga visualizzato di nuovo.
 
-## <a name="settings"></a>Pagine della procedura guidata Finestra di progettazione DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Pagine della procedura guidata Finestra di progettazione DSL
  È possibile lasciare diversi campi senza modifiche rispetto ai valori predefiniti. Tuttavia, assicurarsi di impostare il campo estensione file.
 
 ### <a name="solution-settings-page"></a>Pagina Impostazioni soluzione
@@ -86,7 +86,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!
 Scegliere un modello simile al linguaggio DSL che si vuole creare. I diversi modelli forniscono punti di partenza pratici. Quando si seleziona un modello di soluzione, nella procedura guidata viene visualizzata una descrizione. Per ulteriori informazioni sui modelli di soluzione, vedere [scelta di un modello di soluzione Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Specificare il nome del linguaggio specifico di dominio.**
-Il valore predefinito è il nome della soluzione. Il codice viene generato da questo valore. Deve essere valido come nome di C# classe.
+Il valore predefinito è il nome della soluzione. Il codice viene generato da questo valore. Deve essere valido come nome di classe C#.
 
 ### <a name="file-extension-page"></a>Pagina estensione file
  **Specificare l'estensione da utilizzare per i file di modello**
@@ -100,13 +100,13 @@ Digitare una nuova estensione di file.
 
 - Digitare un'estensione di file diversa.
 
-     \- oppure -
+     \- - oppure -
 
-- Reimposta l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Verrà annullata la registrazione di tutti i DSLs compilati in precedenza. Dal menu **Start** fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare l'istanza sperimentale Microsoft Visual Studio 2010**. È possibile ricompilare qualsiasi altra DSLs che si vuole usare di nuovo.
+- Reimpostare l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] istanza sperimentale. Verrà annullata la registrazione di tutti i DSLs compilati in precedenza. Dal menu **Start** fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare l'istanza sperimentale Microsoft Visual Studio 2010**. È possibile ricompilare qualsiasi altra DSLs che si vuole usare di nuovo.
 
-     \- oppure -
+     \- - oppure -
 
-- Se un'estensione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che usa questa estensione di file è stata completamente installata nel computer, disinstallarla. Scegliere **Gestione estensioni**dal menu **strumenti** .
+- Se un' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione che usa questa estensione di file è stata completamente installata nel computer, disinstallarla. Scegliere **Gestione estensioni**dal menu **strumenti** .
 
 ### <a name="product-settings-page"></a>Pagina Impostazioni prodotto
  **Qual è il nome del prodotto a cui appartiene il nuovo linguaggio specifico di dominio?**

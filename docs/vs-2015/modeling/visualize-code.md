@@ -13,12 +13,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ffd105032cda050ab16132b6a4c2d54488028b8
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 665dc76126eac964f405be06605c40b5b30cc9a5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586758"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532938"
 ---
 # <a name="visualize-code"></a>Visualizzare il codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "82586758"
 
 ## <a name="what-do-you-want-to-do"></a>Per saperne di più
 
-|||
+|Scenario|Articoli|
 |-|-|
 |**Analizzare il codice e le relative relazioni:**<br /><br /> Eseguire il mapping delle relazioni tra parti di codice specifiche.<br /><br /> Ottenere una panoramica delle relazioni nel codice per l'intera soluzione.<br /><br /> **Nota**: in questa versione di Visual Studio, il termine *mappa codice* è usato al posto di *grafico dipendenze*.|-   [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Usare le mappe codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Trovare problemi potenziali usando gli analizzatori di mappe codice](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**Comprendere le strutture delle classi:**<br /><br /> Visualizzare la struttura delle classi in un progetto mediante la creazione di diagrammi classi dal codice.|[Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
@@ -54,5 +54,5 @@ ms.locfileid: "82586758"
 |**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Articoli e pubblicazioni tecniche**|[Forum sull'architettura MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
  [Scenario: modificare la progettazione usando la visualizzazione e la modellazione](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [architettura di analisi e modellazione](../modeling/analyze-and-model-your-architecture.md) [creare modelli per i](../modeling/create-models-for-your-app.md) [requisiti degli utenti del modello](../modeling/model-user-requirements.md) di app [modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md) [usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)

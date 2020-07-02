@@ -1,45 +1,45 @@
 ---
 title: 'Procedura: impostare gli attributi CLR in un elemento'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.EditAttributesDialog
 helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f943f9713e4432f0b06242a2f66acae6b390e5cc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ebda963bf1afa55fa8d7f98774c72a75d242ceef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748372"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532457"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Procedura: impostare gli attributi CLR in un elemento
-Gli attributi personalizzati sono attributi speciali che possono essere aggiunti a elementi di dominio, forme, connettori e diagrammi. È possibile aggiungere qualsiasi attributo che erediti dalla classe `System.Attribute`.
+Gli attributi personalizzati sono attributi speciali che possono essere aggiunti a elementi di dominio, forme, connettori e diagrammi. È possibile aggiungere qualsiasi attributo che erediti dalla `System.Attribute` classe.
 
 ### <a name="to-add-a-custom-attribute"></a>Per aggiungere un attributo personalizzato
 
 1. In **DSL Explorer**selezionare l'elemento a cui si desidera aggiungere un attributo personalizzato.
 
-2. Nella finestra **Proprietà** fare clic sull'icona Sfoglia ( **..** .) accanto alla proprietà **attributi personalizzati** .
+2. Nella finestra **Proprietà** fare clic sull'icona Sfoglia (**..**.) accanto alla proprietà **attributi personalizzati** .
 
      Verrà visualizzata la finestra di dialogo **modifica attributi** .
 
-3. Nella colonna **nome** fare clic su **\<add attributo >** e digitare il nome dell'attributo. Premere INVIO.
+3. Nella colonna **nome** fare clic **\<add attribute>** e digitare il nome dell'attributo. Premere INVIO.
 
-4. La riga sotto il nome dell'attributo Mostra le parentesi. In questa riga digitare un tipo di parametro per l'attributo, ad esempio `string`, quindi premere INVIO.
+4. La riga sotto il nome dell'attributo Mostra le parentesi. In questa riga digitare un tipo di parametro per l'attributo (ad esempio, `string` ) e quindi premere INVIO.
 
-5. Nella colonna **proprietà nome** Digitare un nome appropriato, ad esempio `MyString`.
+5. Nella colonna **proprietà nome** Digitare un nome appropriato, ad esempio `MyString` .
 
 6. Fare clic su **OK**.
 
      La proprietà **attributi personalizzati** ora Visualizza l'attributo nel formato seguente:
 
-     `[` *attributename* `(` *parametroname* `=` *tipo* `)]`
+     `[`*AttributeName* `(` *Parametroname* `=` *Tipo* di`)]`
 
 ## <a name="see-also"></a>Vedere anche
 

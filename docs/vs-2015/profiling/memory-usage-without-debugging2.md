@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64f739039d17af7fbee9718da93e8610e2619a85
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586956"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532041"
 ---
 # <a name="memory-usage-without-debugging"></a>Utilizzo memoria senza debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "82586956"
   
   Gli elementi numerati nell'immagine della vista dello snapshot sono link che aprono viste di report di Utilizzo memoria.  
   
-|||  
+|Immagine|Descrizione|  
 |-|-|  
 |![Passaggio 1](../profiling/media/procguid-1.png "ProcGuid_1")|Il testo del link indica il numero totale di byte in memoria quando è stato creato lo snapshot.<br /><br /> Scegli questo link per visualizzare un report dettagli dello snapshot, ordinato in base alla dimensione totale delle istanze di tipo.|  
 |![Passaggio 2](../profiling/media/procguid-2.png "ProcGuid_2")|Il testo del link indica il numero totale di oggetti in memoria quando è stato creato lo snapshot.<br /><br /> Scegli questo link per visualizzare un report dettagli dello snapshot, ordinato in base al numero di istanze dei tipi.|  
@@ -135,7 +135,7 @@ ms.locfileid: "82586956"
   
  ![Albero Heap gestito](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|||  
+|Nome|Descrizione|  
 |-|-|  
 |**Tipo oggetto**|Nome dell'istanza di tipo o di oggetto.|  
 |**Numero**|Numero di istanze di oggetto del tipo. Il numero è sempre 1 per un'istanza.|  
@@ -154,7 +154,7 @@ ms.locfileid: "82586956"
   
  ![Albero Oggetti a cui si fa riferimento per le istanze](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|Nome|Descrizione|  
 |-|-|  
 |**Tipo di oggetto / Istanza**|Nome dell'istanza di tipo o di oggetto.|  
 |**Dimensioni (byte)**|Per un tipo, dimensione di tutte le istanze del tipo, esclusa la dimensione degli oggetti contenuti nel tipo.<br /><br /> Per un'istanza, dimensione dell'oggetto, esclusa la dimensione degli oggetti contenuti nell'oggetto.|  
@@ -176,7 +176,7 @@ ms.locfileid: "82586956"
   
  Si noti che le colonne **Conteggio**, **Dimensione (byte)** e **Dimensione inclusiva (byte)** sono state compresse nell'immagine.  
   
-|||  
+|Nome|Descrizione|  
 |-|-|  
 |**Tipo oggetto**|Nome dell'istanza di tipo o di oggetto.|  
 |**Numero**|Numero di istanze di un tipo nello snapshot principale. **Count** è sempre 1 per un'istanza.|  
@@ -196,13 +196,13 @@ ms.locfileid: "82586956"
   
  ![Albero Oggetti a cui si fa riferimento per le istanze](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|Nome|Descrizione|  
 |-|-|  
 |**Tipo di oggetto / Istanza**|Nome dell'istanza di tipo o di oggetto.|  
 |**Dimensioni (byte)**|Per un'istanza, dimensione dell'oggetto nello snapshot principale, esclusa la dimensione degli oggetti contenuti nell'istanza.<br /><br /> Per un tipo, dimensione totale di tutte le istanze del tipo nello snapshot principale, esclusa la dimensione degli oggetti contenuti nell'istanza.|  
 |**Dimensione inclusiva (byte)**|Dimensione degli oggetti nello snapshot principale, inclusa la dimensione degli oggetti contenuti negli oggetti.|  
   
-## <a name="see-also"></a>Vedi anche  
+## <a name="see-also"></a>Vedere anche  
  [Memoria JavaScript](../profiling/javascript-memory.md)   
  [Analizzare le prestazioni dell'app](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [Eseguire strumenti di diagnostica e prestazioni](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   

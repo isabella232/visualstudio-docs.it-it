@@ -1,18 +1,18 @@
 ---
 title: 'Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa03e43276c7c995c5f494c5325dd79716dcf998
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605600"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532586"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
 
@@ -68,7 +68,7 @@ Per testare le estensioni in questo argomento, compilare ed eseguire la soluzion
 
 Per distribuire le estensioni in Visual Studio principale e in altri computer, seguire questa procedura:
 
-1. Trovare il file di installazione VSIX nel progetto VSIX in bin \\ * \\ \*. vsix
+1. Trovare il file di installazione VSIX nel progetto VSIX in bin \\ * \\ \* . vsix
 
 2. Copiare questo file nel computer di destinazione, quindi in Esplora risorse (o Esplora file) fare doppio clic su di esso.
 
@@ -84,7 +84,7 @@ Per disinstallare l'estensione, attenersi alla procedura seguente:
 
 Per visualizzare un comando di menu di scelta rapida nell'area Finestra di progettazione DSL o nella finestra DSL Explorer, scrivere una classe simile alla seguente.
 
-La classe deve implementare `ICommandExtension` e deve avere l'attributo `DslDefinitionModelCommandExtension`.
+La classe deve implementare `ICommandExtension` e deve avere l'attributo `DslDefinitionModelCommandExtension` .
 
 ```csharp
 using System.Collections.Generic;

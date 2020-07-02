@@ -1,23 +1,23 @@
 ---
 title: 'Procedura: eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747546"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532611"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
-È possibile eseguire la migrazione di progetti che definiscono e utilizzano il linguaggio specifico di dominio per [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dalla versione di [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] distribuita con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
+È possibile eseguire la migrazione di progetti che definiscono e utilizzano il linguaggio specifico di dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dalla versione di [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] distribuita con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .
 
- Uno strumento di migrazione viene fornito come parte di [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Lo strumento converte i progetti e le soluzioni di Visual Studio che usano o definiscono gli strumenti DSL.
+ Viene fornito uno strumento di migrazione come parte di [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] . Lo strumento converte i progetti e le soluzioni di Visual Studio che usano o definiscono gli strumenti DSL.
 
  È necessario eseguire lo strumento di migrazione in modo esplicito: non viene avviato automaticamente quando si apre una soluzione in Visual Studio. Lo strumento e il documento dettagliato delle linee guida sono disponibili in questo percorso:
 
@@ -59,9 +59,9 @@ ms.locfileid: "72747546"
 
    1. Fare clic su **Converti**.
 
-        Prima di convertire ogni file di progetto, una copia di _Project_ **. csproj** viene salvata come _Project_ **. VS2008. csproj**
+        Prima di convertire ogni file di progetto, una copia di _Project_**. csproj** viene salvata come _Project_**. VS2008. csproj**
 
-        Una copia di ogni _Solution_ **. sln** viene salvata come _Solution_ **. VS2008. sln**
+        Una copia di ogni _Solution_**. sln** viene salvata come _Solution_**. VS2008. sln**
 
    2. Esaminare le conversioni non riuscite segnalate.
 
@@ -86,4 +86,4 @@ ms.locfileid: "72747546"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Post di Blog correlati](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
+- [Post di blog correlati](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850484"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533068"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definire un gestore modelli in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
  Se esiste già un comportamento predefinito per il tipo di diagramma e il tipo di elemento che si vuole trascinare, potrebbe non essere possibile aggiungere o modificare questo comportamento.
 
-## <a name="requirements"></a>Requisiti di
+## <a name="requirements"></a>Requisiti
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -48,7 +48,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
 3. Testare il gestore movimenti premendo F5. Per altre informazioni, vedere [Esecuzione del gestore movimenti](#Executing).
 
-4. Installare il gestore movimenti in un altro computer copiando il file **bin\\\*\\\*. vsix** compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).
+4. Installare il gestore movimenti in un altro computer copiando il file **bin \\ \* \\ \* . vsix** compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).
 
    Ecco la procedura alternativa:
 
@@ -56,7 +56,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
 1. Creare un progetto Libreria di classi in una nuova soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o in una soluzione esistente.
 
-   1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+   1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
    2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.
 
@@ -208,7 +208,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
 2. Creare un progetto VSIX, a meno che la soluzione non ne contenga già uno.
 
-    1. In **Esplora soluzioni**scegliere **Aggiungi**dal menu di scelta rapida della soluzione e quindi fare clic su **Nuovo progetto**.
+    1. In **Esplora soluzioni**scegliere **Aggiungi**, **nuovo progetto**dal menu di scelta rapida della soluzione.
 
     2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**, quindi selezionare **Extensibility**. Nella colonna centrale scegliere **Progetto VSIX**.
 
@@ -224,13 +224,13 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
     3. Nella scheda **Asset** scegliere **Nuovo**e nella finestra di dialogo impostare le opzioni seguenti:
 
-         **Tipo** = **Componente MEF**
+         **Tipo**  =  di **Componente MEF**
 
-         **Origine** = **Progetto nella soluzione corrente**
+         **Origine**  =  dati **Progetto nella soluzione corrente**
 
-         **Progetto** = *Progetto di libreria di classi*
+         **Progetto**  =  di *Progetto di libreria di classi*
 
-## <a name="Executing"></a>Esecuzione del gestore movimenti
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>Esecuzione del gestore movimenti
  Per scopi di test, eseguire il gestore movimenti in modalità debug.
 
 #### <a name="to-test-the-gesture-handler"></a>Per testare il gestore movimenti
@@ -243,7 +243,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
    - Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.
 
-   - In Esplora soluzioni scegliere Proprietà dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto scegliere la scheda **debug** . Assicurarsi che la stringa nel campo **Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:
+   - In Esplora soluzioni scegliere Proprietà dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto scegliere la scheda **debug** . Assicurarsi che la stringa nel campo **Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , in genere:
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,12 +265,12 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
 - Per questo tipo di elemento rilasciato e di destinazione non sia già stata definita alcuna funzionalità incorporata.
 
-## <a name="Implementing"></a>Implementazione del gestore movimenti
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>Implementazione del gestore movimenti
 
 ### <a name="the-gesture-handler-methods"></a>Metodi del gestore movimenti
  La classe del gestore movimenti implementa ed esporta <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Ecco i metodi che è necessario definire:
 
-|||
+|Firma|Descrizione|
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Restituisce `true` per consentire il rilascio in questa destinazione dell'elemento di origine referenziato in `dragEvent` .<br /><br /> Questo metodo non dovrebbe modificare il modello e dovrebbe funzionare rapidamente, perché viene usato per determinare lo stato della freccia quando l'utente sposta il mouse.|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Aggiorna il modello in base all'oggetto di origine referenziato in `dragEvent`e la destinazione.<br /><br /> Viene chiamato quando l'utente rilascia il mouse dopo il trascinamento.|
@@ -282,7 +282,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
 - `ShapeElement target`. Forma o diagramma in cui l'utente ha trascinato un elemento.
 
-    `ShapeElement` è una classe nell'implementazione sottostante gli strumenti di modellazione UML. Per ridurre il rischio di porre il modello UML e i diagrammi in uno stato non coerente, evitare di usare i metodi di questa classe direttamente. Eseguire invece il wrapping dell'elemento in un `IShape`e quindi usare i metodi descritti in [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).
+    `ShapeElement` è una classe nell'implementazione sottostante gli strumenti di modellazione UML. Per ridurre il rischio di porre il modello UML e i diagrammi in uno stato non coerente, evitare di usare i metodi di questa classe direttamente. Eseguire invece il wrapping dell'elemento in un oggetto `IShape` e quindi usare i metodi descritti in [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).
 
   - Per ottenere un oggetto `IShape`:
 
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  Per altre informazioni, vedere [esplorare il modello UML](../modeling/navigate-the-uml-model.md).
 
-## <a name="Installing"></a>Installazione e disinstallazione di un'estensione
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installazione e disinstallazione di un'estensione
  È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri.
 
 #### <a name="to-install-an-extension"></a>Per installare un'estensione
@@ -357,7 +357,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto VSIX.
 
-    2. Individuare il file **bin\\\*\\** _progettoutente_ **. vsix**
+    2. Individuare il file **bin \\ \* \\ **_progettoutente_**. vsix**
 
 2. Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.
 
@@ -379,9 +379,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file da:
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[versione] \Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [versione] \Extensions**
 
-## <a name="DragExample"></a> Esempio
+## <a name="example"></a><a name="DragExample"></a>Esempio
  L'esempio seguente mostra come creare linee di vita in un diagramma di sequenza in base alle parti e alle porte di un componente, trascinate da un diagramma dei componenti.
 
  Per testarlo, premere F5. Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza aprire un modello UML e creare un componente in un diagramma dei componenti. Aggiungere a questo componente alcune interfacce e parti di componente interne. Selezionare le interfacce e le parti. Trascinare quindi le interfacce e le parti in un diagramma di sequenza. Trascinare dal diagramma componente fino alla scheda relativa al diagramma sequenza e quindi al diagramma sequenza. Verrà visualizzata una linea di vita per ogni interfaccia e parte.
@@ -517,7 +517,7 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
 ```
 
- Il codice di `GetModelElementsFromDragEvent()` è descritto in [ottenere gli elementi del modello UML da IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
+ Il codice di `GetModelElementsFromDragEvent()` viene descritto in [ottenere gli elementi del modello UML da IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
 ## <a name="see-also"></a>Vedere anche
  [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md) [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md) [programmazione con l'API UML](../modeling/programming-with-the-uml-api.md)

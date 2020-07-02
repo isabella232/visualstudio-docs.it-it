@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ae26dc54c8f57348ed00196d86629e3515a1835
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ee23e15e6cc389ea5a8bdcdd793648365d08c30d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748343"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532302"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Proprietà di una definizione DSL
 Le proprietà di DslDefinition definiscono le proprietà della definizione del *linguaggio specifico di dominio* , ad esempio la numerazione delle versioni. Le proprietà di DslDefinition vengono visualizzate nella finestra **Proprietà** quando si fa clic su un'area aperta del diagramma nel *finestra di progettazione Domain-Specific Language*.
@@ -23,24 +23,24 @@ Le proprietà di DslDefinition definiscono le proprietà della definizione del *
 
  DslDefinition presenta le proprietà riportate nella tabella seguente:
 
-|proprietà|Descrizione|Impostazione predefinita|
+|Proprietà|Descrizione|Predefinito|
 |-|-|-|
 |Modificatore di accesso|Determina se il modificatore di accesso per la classe di dominio è pubblico o interno.|public|
-|Attributi personalizzati|Attributi definiti personalizzati per la classe di dominio.<br /><br /> **Nota** Usare il pulsante Sfoglia per aggiungere un attributo.|\<nessuno>|
-|Nome società|Nome dell'attuale nome della società nel registro di sistema.|Nome società corrente|
-|Name|Nome di questa classe di dominio.|Nome corrente|
+|Attributi personalizzati|Attributi definiti personalizzati per la classe di dominio.<br /><br /> **Nota** Usare il pulsante Sfoglia per aggiungere un attributo.|\<none>|
+|Nome dell'azienda|Nome dell'attuale nome della società nel registro di sistema.|Nome società corrente|
+|Nome|Nome di questa classe di dominio.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi affiliato a questa classe di dominio.|Spazio dei nomi corrente|
-|GUID pacchetto|GUID per il pacchetto di Visual Studio generato per questo DSL.|\<nessuno>|
-|Spazio dei nomi del pacchetto|Spazio dei nomi per il pacchetto di Visual Studio generato per questo DSL.|\<nessuno>|
-|Nome prodotto|Nome del prodotto che verrà registrato per il pacchetto di Visual Studio generato per questo DSL.|\<nessuno>|
-|Note|Note associate a questa classe di dominio.|\<nessuno>|
-|Descrizione|Descrizione per questa classe di dominio.|\<nessuno>|
-|Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa classe di dominio.|\<nessuno>|
-|Parola chiave della Guida|Parola chiave della Guida associata a questa classe di dominio.|\<nessuno>|
-|Compilazione|Numero di build incrementale per la definizione del linguaggio specifico di dominio.|0|
+|GUID pacchetto|GUID del pacchetto Visual Studio generato per questo linguaggio DSL.|\<none>|
+|Spazio dei nomi del pacchetto|Spazio dei nomi per il pacchetto Visual Studio generato per questo linguaggio DSL.|\<none>|
+|Nome prodotto|Nome del prodotto che verrà registrato per il pacchetto Visual Studio generato per il linguaggio DSL.|\<none>|
+|Note|Note associate a questa classe di dominio.|\<none>|
+|Descrizione|Descrizione per questa classe di dominio.|\<none>|
+|Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa classe di dominio.|\<none>|
+|Parola chiave della Guida|Parola chiave della Guida associata a questa classe di dominio.|\<none>|
+|Compilare|Numero di build incrementale per la definizione del linguaggio specifico di dominio.|0|
 |Versione principale|Numero di build principale incrementale per la definizione del linguaggio specifico di dominio.|1|
 |Versione secondaria|Numero di build secondario incrementale per la definizione del linguaggio specifico di dominio.|0|
-|Revision|Numero di build di revisione incrementale per la definizione del linguaggio specifico di dominio.|0|
+|Revisione|Numero di build di revisione incrementale per la definizione del linguaggio specifico di dominio.|0|
 
 ## <a name="see-also"></a>Vedere anche
 
