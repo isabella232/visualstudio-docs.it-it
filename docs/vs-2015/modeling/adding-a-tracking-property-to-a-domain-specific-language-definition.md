@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60823c1fe17613f36e800a2cdf69dd19049ddb27
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 382d5dc5ee416d901e1b73b7b2fb346e83abbef6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919113"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545574"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiunta di una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 ## <a name="prerequisites"></a>Prerequisiti
  Prima di iniziare questa procedura dettagliata, è necessario installare prima i componenti seguenti:
 
-|||
+|Prodotto|Collegamento di download|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[SDK di Visual Studio](../extensibility/visual-studio-sdk.md)|
 |SDK di visualizzazione e modellazione di Visual Studio|[Download dell'SDK di modellazione](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-the-dsl-project"></a>Creazione del progetto DSL
@@ -59,23 +59,23 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 #### <a name="to-create-the-project"></a>Per creare il progetto
 
-1. Creare un progetto Finestra di progettazione Domain-Specific Language. Assegnargli il nome `TrackingPropertyDSL`.
+1. Creare un progetto Finestra di progettazione Domain-Specific Language. Denomina tale elemento `TrackingPropertyDSL`.
 
 2. Nella **procedura guidata finestra di progettazione Domain-Specific Language**impostare le opzioni seguenti:
 
     1. Selezionare il modello **MinimalLanguage** .
 
-    2. Utilizzare il nome predefinito per il linguaggio specifico di dominio `TrackingPropertyDSL`.
+    2. Utilizzare il nome predefinito per il linguaggio specifico di dominio, `TrackingPropertyDSL` .
 
-    3. Impostare l'estensione per i file di modello su `trackingPropertyDsl`.
+    3. Impostare l'estensione per i file di modello su `trackingPropertyDsl` .
 
     4. Utilizzare l'icona del modello predefinito per i file del modello.
 
-    5. Consente di impostare il nome del prodotto su `Product Name`.
+    5. Impostare il nome del prodotto su `Product Name` .
 
-    6. Impostare il nome della società su `Company Name`.
+    6. Impostare il nome della società su `Company Name` .
 
-    7. Usare il valore predefinito per lo spazio dei nomi radice per i progetti nella soluzione `CompanyName.ProductName.TrackingPropertyDSL`.
+    7. Usare il valore predefinito per lo spazio dei nomi radice per i progetti nella soluzione `CompanyName.ProductName.TrackingPropertyDSL` .
 
     8. Consentire alla procedura guidata di creare un file di chiave con nome sicuro per gli assembly.
 
@@ -96,27 +96,27 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 1. Nella finestra di progettazione DSL, fare clic con il pulsante destro del mouse sulla classe di dominio **ExampleModel** , scegliere **Aggiungi**, quindi fare clic su **DomainProperty**.
 
-    1. Assegnare un nome alla nuova proprietà `DefaultNamespace`.
+    1. Assegnare un nome alla nuova proprietà `DefaultNamespace` .
 
-    2. Nella finestra **Proprietà** per la nuova proprietà impostare **valore predefinito** su `DefaultNamespace`e impostare **tipo** su **stringa**.
+    2. Nella finestra **Proprietà** per la nuova proprietà impostare **valore predefinito** su `DefaultNamespace` e impostare **tipo** su **stringa**.
 
-2. Aggiungere una proprietà di dominio denominata `CustomElements`alla classe di dominio **ExampleModel** .
+2. Alla classe di dominio **ExampleModel** aggiungere una proprietà di dominio denominata `CustomElements` .
 
      Nella finestra **Proprietà** per la nuova proprietà impostare **Kind** su **calcolato**.
 
-3. Alla classe di dominio **ExampleElement** aggiungere una proprietà di dominio denominata `Namespace`.
+3. Alla classe di dominio **ExampleElement** aggiungere una proprietà di dominio denominata `Namespace` .
 
      Nella finestra **Proprietà** per la nuova proprietà impostare **è esplorabile** su **false**e impostare **tipo** su **CustomStorage**.
 
-4. Alla classe di dominio **ExampleElement** aggiungere una proprietà di dominio denominata `IsNamespaceTracking`.
+4. Alla classe di dominio **ExampleElement** aggiungere una proprietà di dominio denominata `IsNamespaceTracking` .
 
-     Nella finestra **Proprietà** per la nuova proprietà impostare **è esplorabile** su **false**, impostare il **valore predefinito** su `true`e impostare **tipo** su **booleano**.
+     Nella finestra **Proprietà** per la nuova proprietà impostare **è esplorabile** su **false**, impostare il **valore predefinito** su `true` e impostare **tipo** su **booleano**.
 
 #### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Per aggiornare gli elementi del diagramma e i dettagli DSL
 
 1. Nella finestra di progettazione DSL, fare clic con il pulsante destro del mouse sulla forma geometria **ExampleShape** , scegliere **Aggiungi**, quindi fare clic su **elemento Decorator testo**.
 
-    1. Denominare il nuovo elemento Decorator del testo `NamespaceDecorator`.
+    1. Assegnare un nome al nuovo elemento Decorator di testo `NamespaceDecorator` .
 
     2. Nella finestra **Proprietà** per l'elemento Decorator testo impostare **position** su **InnerBottomLeft**.
 
@@ -152,20 +152,20 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 #### <a name="to-create-the-code-files"></a>Per creare i file di codice
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **DSL** , scegliere **Aggiungi**, quindi fare clic su **nuova cartella**. Assegnare alla nuova cartella il nome `CustomCode`.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **DSL** , scegliere **Aggiungi**, quindi fare clic su **nuova cartella**. Assegnare un nome alla nuova cartella `CustomCode` .
 
 2. Fare clic con il pulsante destro del mouse sulla nuova cartella **CustomCoded** , scegliere **Aggiungi**, quindi fare clic su **nuovo elemento**.
 
-3. Selezionare il modello **file di codice** , impostare il **nome** su `NamespaceTrackingProperty.cs`e quindi fare clic su **OK**.
+3. Selezionare il modello **file di codice** , impostare il **nome** su `NamespaceTrackingProperty.cs` , quindi fare clic su **OK**.
 
      Il file NamespaceTrackingProperty.cs viene creato e aperto per la modifica.
 
-4. Nella cartella creare i file di codice seguenti: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`e `TypeDescriptor.cs`.
+4. Nella cartella creare i file di codice seguenti: `ExampleModel.cs,``HelperClasses.cs` , `Serialization.cs` e `TypeDescriptor.cs` .
 
-5. Nel progetto **DslPackage** creare inoltre una cartella `CustomCode` e aggiungervi un file di codice `Package.cs`.
+5. Nel progetto **DslPackage** creare inoltre una `CustomCode` cartella e aggiungervi un `Package.cs` file di codice.
 
 ## <a name="adding-helper-classes-to-support-tracking-properties"></a>Aggiunta di classi helper per supportare le proprietà di rilevamento
- Aggiungere al file HelperClasses.cs le classi `TrackingHelper` e `CriticalException`, come indicato di seguito. Si faranno riferimento a queste classi più avanti in questa procedura dettagliata.
+ Aggiungere le classi e al file HelperClasses.cs `TrackingHelper` `CriticalException` come indicato di seguito. Si faranno riferimento a queste classi più avanti in questa procedura dettagliata.
 
 #### <a name="to-add-the-helper-classes"></a>Per aggiungere le classi helper
 
@@ -245,10 +245,10 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
     ```
 
 ## <a name="adding-custom-code-for-the-custom-type-descriptor"></a>Aggiunta di codice personalizzato per il descrittore di tipo personalizzato
- Implementare il metodo `GetCustomProperties` per il descrittore di tipo per la classe di dominio `ExampleModel`.
+ Implementare il `GetCustomProperties` metodo per il descrittore di tipo per la `ExampleModel` classe di dominio.
 
 > [!NOTE]
-> Il codice generato dagli strumenti DSL per il descrittore di tipo personalizzato per `ExampleModel` chiama `GetCustomProperties`; Tuttavia, gli strumenti DSL non generano codice che implementi il metodo.
+> Il codice generato dagli strumenti DSL per il descrittore di tipo personalizzato per le `ExampleModel` chiamate. `GetCustomProperties` gli strumenti DSL, tuttavia, non generano il codice che implementa il metodo.
 
  Definendo questo metodo viene creato il descrittore della proprietà di rilevamento per la proprietà di rilevamento dello spazio dei nomi Inoltre, la creazione di attributi per la proprietà di rilevamento consente alla finestra **Proprietà** di visualizzare correttamente la proprietà.
 
@@ -341,16 +341,16 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
     ```
 
 ## <a name="adding-custom-code-for-the-model"></a>Aggiunta di codice personalizzato per il modello
- Implementare il metodo `GetCustomElementsValue` per la classe di dominio `ExampleModel`.
+ Implementare il `GetCustomElementsValue` metodo per la `ExampleModel` classe di dominio.
 
 > [!NOTE]
-> Il codice generato dagli strumenti DSL per `ExampleModel` chiama `GetCustomElementsValue`; Tuttavia, gli strumenti DSL non generano codice che implementi il metodo.
+> Il codice generato dagli strumenti DSL per le `ExampleModel` chiamate. `GetCustomElementsValue` tuttavia, gli strumenti DSL non generano il codice che implementa il metodo.
 
- La definizione del metodo `GetCustomElementsValue` fornisce la logica per la proprietà calcolata CustomElements di `ExampleModel`. Questo metodo conta il numero di `ExampleElement` classi di dominio che dispongono di una proprietà di rilevamento dello spazio dei nomi con un valore aggiornato dall'utente e restituisce una stringa che rappresenta il conteggio come una percentuale degli elementi totali del modello.
+ La definizione del `GetCustomElementsValue` metodo fornisce la logica per la proprietà calcolata CustomElements di `ExampleModel` . Questo metodo conta il numero di `ExampleElement` classi di dominio che dispongono di una proprietà di rilevamento dello spazio dei nomi con un valore aggiornato dall'utente e restituisce una stringa che rappresenta il conteggio come una proporzione degli elementi totali del modello.
 
- Aggiungere inoltre un metodo `OnDefaultNamespaceChanged` per `ExampleModel`ed eseguire l'override del metodo `OnValueChanged` della classe annidata `DefaultNamespacePropertyHandler` di `ExampleModel` per chiamare `OnDefaultNamespaceChanged`.
+ Aggiungere inoltre un `OnDefaultNamespaceChanged` metodo a `ExampleModel` ed eseguire l'override del `OnValueChanged` metodo della `DefaultNamespacePropertyHandler` classe annidata di `ExampleModel` per chiamare `OnDefaultNamespaceChanged` .
 
- Poiché la proprietà una proprietà DefaultNamespace viene utilizzata per calcolare la proprietà di rilevamento dello spazio dei nomi, `ExampleModel` necessario notificare a tutte `ExampleElement` classi di dominio che il valore di una proprietà DefaultNamespace è stato modificato.
+ Poiché la proprietà una proprietà DefaultNamespace viene utilizzata per calcolare la proprietà di rilevamento dello spazio dei nomi, `ExampleModel` deve notificare a tutte le `ExampleElement` classi di dominio che il valore di una proprietà DefaultNamespace è stato modificato.
 
 #### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>Per modificare il gestore della proprietà rilevata
 
@@ -418,14 +418,14 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
     ```
 
 ## <a name="adding-custom-code-for-the-tracking-property"></a>Aggiunta di codice personalizzato per la proprietà di rilevamento
- Aggiungere un metodo di `CalculateNamespace` alla classe di dominio `ExampleElement`.
+ Aggiungere un `CalculateNamespace` metodo alla `ExampleElement` classe di dominio.
 
- La definizione di questo metodo fornisce la logica per la proprietà calcolata CustomElements di `ExampleModel`. Questo metodo conta il numero di `ExampleElement` classi di dominio che dispongono di una proprietà di rilevamento dello spazio dei nomi che si trova nello stato aggiornato da utente e restituisce una stringa che rappresenta questo conteggio come una proporzione degli elementi totali del modello.
+ La definizione di questo metodo fornisce la logica per la proprietà calcolata CustomElements di `ExampleModel` . Questo metodo conta il numero di `ExampleElement` classi di dominio che dispongono di una proprietà di rilevamento dello spazio dei nomi che si trova nello stato aggiornato da utente e restituisce una stringa che rappresenta questo conteggio come una proporzione degli elementi totali del modello.
 
- Aggiungere inoltre archiviazione per i metodi e per ottenere e impostare la proprietà archiviazione personalizzata dello spazio dei nomi della classe di dominio `ExampleElement`.
+ Aggiungere inoltre archiviazione per i metodi e per ottenere e impostare la proprietà archiviazione personalizzata dello spazio dei nomi della `ExampleElement` classe di dominio.
 
 > [!NOTE]
-> Il codice generato dagli strumenti DSL per `ExampleModel` chiama i metodi get e set; Tuttavia, gli strumenti DSL non generano il codice che implementa i metodi.
+> Il codice generato dagli strumenti DSL per `ExampleModel` chiama i metodi get e set. gli strumenti DSL, tuttavia, non generano il codice che implementa i metodi.
 
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Per aggiungere il metodo per il descrittore di tipo personalizzato
 
@@ -591,7 +591,7 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
  Aggiungere il codice per supportare il comportamento di post-caricamento personalizzato per la serializzazione XML.
 
 > [!NOTE]
-> Il codice generato dagli strumenti DSL chiama il `OnPostLoadModel` e `OnPostLoadModelAndDiagram` metodi; Tuttavia, gli strumenti DSL non generano codice che implementi questi metodi.
+> Il codice generato dagli strumenti DSL chiama i `OnPostLoadModel` metodi e `OnPostLoadModelAndDiagram` . gli strumenti DSL, tuttavia, non generano codice che implementi questi metodi.
 
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Per aggiungere il codice per supportare il comportamento di post-caricamento personalizzato
 
@@ -718,13 +718,13 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
     ```
 
 ## <a name="testing-the-language"></a>Test della lingua
- Il passaggio successivo consiste nel compilare ed eseguire la finestra di progettazione DSL in una nuova istanza di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] in modo che sia possibile verificare il corretto funzionamento della proprietà di rilevamento.
+ Il passaggio successivo consiste nel compilare ed eseguire la finestra di progettazione DSL in una nuova istanza di in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] modo che sia possibile verificare che la proprietà di rilevamento funzioni correttamente.
 
 #### <a name="to-exercise-the-language"></a>Per esercitare la lingua
 
 1. Nel menu **Compila** fare clic su **Ricompila soluzione**.
 
-2. Scegliere **Avvia debug** dal menu **Debug**.
+2. Scegliere **Avvia debug**dal menu **debug** .
 
      La build sperimentale di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] apre la soluzione di **debug** , che contiene un file di test vuoto.
 

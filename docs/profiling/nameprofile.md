@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cc887c6bcef9f8b7307d9d6aa570d6458d87f377
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778492"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541700"
 ---
 # <a name="nameprofile"></a>NameProfile
 La funzione `NameProfile` assegna una stringa al processo o al thread specificato.
@@ -89,7 +89,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
 ## <a name="function-information"></a>Informazioni sulla funzione
 
-|||
+|Elemento|valore|
 |-|-|
 |**Intestazione**|Includere *VSPerf.h*|
 |**Libreria**|Usare *VSPerf.lib*|
@@ -134,4 +134,4 @@ void ExerciseNameProfile()
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)Visual Studio profiler API reference (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3968d81e8ee18b4b0a56bed50f7aa1f121e1c074
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f689dfd6c1d39bbd03d522a33ed8c5639a3da9f8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663248"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545483"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Considerare il passaggio di tipi di base come parametri
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Provare a passare tipi di base come parametri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
@@ -46,14 +46,14 @@ ms.locfileid: "72663248"
 
 - Se il metodo richiede la funzionalità specifica fornita dal tipo derivato
 
-   \- oppure -
+   \- - oppure -
 
 - per applicare che al metodo viene passato solo il tipo derivato o un tipo più derivato.
 
   In questi casi, il codice sarà più affidabile a causa del controllo del tipo sicuro fornito dal compilatore e dal runtime.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo, `ManipulateFileStream`, che può essere utilizzato solo con un oggetto <xref:System.IO.FileStream>, che viola questa regola. Un secondo metodo, `ManipulateAnyStream`, soddisfa la regola sostituendo il parametro <xref:System.IO.FileStream> usando un <xref:System.IO.Stream>.
+ Nell'esempio seguente viene illustrato un metodo, `ManipulateFileStream` , che può essere utilizzato solo con un <xref:System.IO.FileStream> oggetto che viola questa regola. Un secondo metodo, `ManipulateAnyStream` , soddisfa la regola sostituendo il <xref:System.IO.FileStream> parametro utilizzando un oggetto <xref:System.IO.Stream> .
 
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cpp/FxCop.Design.ConsiderPassingBaseTypes.cpp#1)]
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cs/FxCop.Design.ConsiderPassingBaseTypes.cs#1)]

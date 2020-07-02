@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: creare una soluzione per un linguaggio specifico di dominio'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175da19782927f8c84b9fae0e6d9820a22bd891a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594669"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541791"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
 Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione specializzata di Visual Studio.
@@ -38,7 +38,7 @@ Prima di iniziare questa procedura, installare i componenti seguenti:
 1. Avviare la procedura guidata DSL creando un nuovo progetto **finestra di progettazione Domain-Specific Language** .
 
    > [!NOTE]
-   > Preferibilmente, il nome scelto per il progetto deve essere un identificatore visivo C# valido perché potrebbe essere usato per generare il codice.
+   > Preferibilmente, il nome scelto per il progetto deve essere un identificatore di Visual C# valido perché potrebbe essere usato per generare il codice.
 
    ::: moniker range="vs-2017"
 
@@ -65,7 +65,7 @@ Prima di iniziare questa procedura, installare i componenti seguenti:
    > [!NOTE]
    > Se viene visualizzato un messaggio che informa che non è possibile eseguire modelli di testo da origini non attendibili, fare clic su **OK**. È possibile impostare questo messaggio in modo che non venga visualizzato di nuovo.
 
-## <a name="settings"></a>Pagine della procedura guidata Finestra di progettazione DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Pagine della procedura guidata Finestra di progettazione DSL
  È possibile lasciare diversi campi senza modifiche rispetto ai valori predefiniti. Tuttavia, assicurarsi di impostare il campo estensione file.
 
 ### <a name="solution-settings-page"></a>Pagina Impostazioni soluzione
@@ -73,7 +73,7 @@ Prima di iniziare questa procedura, installare i componenti seguenti:
 Scegliere un modello simile al linguaggio DSL che si vuole creare. I diversi modelli forniscono punti di partenza pratici. Quando si seleziona un modello di soluzione, nella procedura guidata viene visualizzata una descrizione. Per ulteriori informazioni sui modelli di soluzione, vedere [scelta di un modello di soluzione Domain-Specific Language](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Specificare il nome del linguaggio specifico di dominio.**
-Il valore predefinito è il nome della soluzione. Il codice viene generato da questo valore. Deve essere valido come nome di C# classe.
+Il valore predefinito è il nome della soluzione. Il codice viene generato da questo valore. Deve essere valido come nome di classe C#.
 
 ### <a name="file-extension-page"></a>Pagina estensione file
  **Specificare l'estensione da utilizzare per i file di modello**
@@ -87,11 +87,11 @@ Digitare una nuova estensione di file.
 
 - Digitare un'estensione di file diversa.
 
-     \- oppure -
+     \- - oppure -
 
 - Reimpostare l'istanza sperimentale di Visual Studio. Verrà annullata la registrazione di tutti i DSLs compilati in precedenza. Dal menu **Start** fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare l'istanza sperimentale Microsoft Visual Studio 2010**. È possibile ricompilare qualsiasi altra DSLs che si vuole usare di nuovo.
 
-     \- oppure -
+     \- - oppure -
 
 - Se un'estensione di Visual Studio che usa questa estensione di file è stata completamente installata nel computer, disinstallarla. Scegliere **Gestione estensioni**dal menu **strumenti** .
 

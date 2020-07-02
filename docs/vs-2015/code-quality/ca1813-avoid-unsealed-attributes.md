@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fe5967ef099794b6c71029e9d03d959dd83b01dc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d86f4a9ecbdfff451fed21f93c0fe6a7679d471
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647061"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543949"
 ---
-# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitare attributi non sealed
+# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitare attributi unsealed
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|AvoidUnsealedAttributes|
 |CheckId|CA1813|
@@ -33,10 +33,10 @@ ms.locfileid: "72647061"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico eredita da <xref:System.Attribute?displayProperty=fullName>, non è astratto e non è sealed (`NotInheritable` in Visual Basic).
+ Un tipo pubblico eredita da <xref:System.Attribute?displayProperty=fullName> , non è astratto e non è sealed ( `NotInheritable` in Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
- La libreria di classi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] fornisce metodi per recuperare attributi personalizzati. Per impostazione predefinita, questi metodi cercano la gerarchia di ereditarietà dell'attributo; ad esempio <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> Cerca il tipo di attributo specificato o qualsiasi tipo di attributo che estende il tipo di attributo specificato. La chiusura dell'attributo elimina la ricerca attraverso la gerarchia di ereditarietà e può migliorare le prestazioni.
+ La libreria di classi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] fornisce metodi per recuperare attributi personalizzati. Per impostazione predefinita, questi metodi cercano la gerarchia di ereditarietà dell'attributo; ad esempio <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> , Cerca il tipo di attributo specificato o qualsiasi tipo di attributo che estende il tipo di attributo specificato. La chiusura dell'attributo elimina la ricerca attraverso la gerarchia di ereditarietà e può migliorare le prestazioni.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, bloccare il tipo di attributo o renderlo astratto.
@@ -56,4 +56,4 @@ ms.locfileid: "72647061"
  [CA1018: Contrassegnare gli attributi con AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Attributi](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)
+ [Attributes (Attributi)](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

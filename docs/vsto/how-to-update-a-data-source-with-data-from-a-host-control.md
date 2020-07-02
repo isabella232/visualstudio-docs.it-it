@@ -1,7 +1,7 @@
 ---
-title: "Procedura: Aggiornare un'origine dati con i dati di un controllo host"
+title: "Procedura: aggiornare un'origine dati con i dati di un controllo host"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41ccdc77c58ef95a63e3e5273b7ea00d4f942681
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255667"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541245"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedura: Aggiornare un'origine dati con i dati di un controllo host
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedura: aggiornare un'origine dati con i dati di un controllo host
   È possibile associare un controllo host a un'origine dati e aggiornare l'origine dati con le modifiche apportate ai dati nel controllo. Questo processo prevede due passaggi principali:
 
 1. Aggiornare l'origine dati in memoria con i dati modificati nel controllo. In genere, l'origine dati in memoria è un oggetto <xref:System.Data.DataSet>, <xref:System.Data.DataTable>o un altro oggetto dati.
@@ -76,7 +76,7 @@ ms.locfileid: "71255667"
 
 3. Nella finestra **Proprietà** espandere la proprietà **(DataBindings)** .
 
-4. Accanto alla proprietà **(avanzate)** fare clic sul pulsante con i puntini di sospensione (![VisualStudioEllipsesButton screenshot](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton screenshot")).
+4. Accanto alla proprietà **(avanzate)** fare clic sul pulsante con i puntini di sospensione (![VisualStudioEllipsesButton screenshot](../vsto/media/vbellipsesbutton.png "Schermata VisualStudioEllipsesButton")).
 
 5. Nella finestra di dialogo **Formattazione e associazione avanzata** fare clic nell'elenco a discesa **Modalità aggiornamento origine dati** e selezionare uno dei valori seguenti:
 
@@ -107,7 +107,7 @@ ms.locfileid: "71255667"
 
      Il TableAdapter viene generato automaticamente quando si aggiunge un controllo con associazione a dati a un documento o a una cartella di lavoro in fase di progettazione. Il TableAdapter connette il set di dati tipizzato nel progetto al database. Per altre informazioni, vedere [Panoramica di TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
-     Nell'esempio di codice seguente si presuppone che si disponga di una connessione alla tabella Customers nel database Northwind e che il progetto contenga un `customersTableAdapter` TableAdapter denominato e un set `northwindDataSet`di dati tipizzato denominato.
+     Nell'esempio di codice seguente si presuppone che si disponga di una connessione alla tabella Customers nel database Northwind e che il progetto contenga un TableAdapter denominato `customersTableAdapter` e un set di dati tipizzato denominato `northwindDataSet` .
 
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
@@ -116,8 +116,8 @@ ms.locfileid: "71255667"
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
 - [Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
-- [Procedura: Scorrere i record del database in un foglio di foglio](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Procedura: Popolamento di fogli di dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Procedura: Compilare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Procedura: Compilare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Procedura: Popola i documenti con i dati dei servizi](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Procedura: scorrere i record di un database in un foglio di foglio](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Procedura: popolare fogli di dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Procedura: popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Procedura: popolare documenti con dati da servizi](../vsto/how-to-populate-documents-with-data-from-services.md)

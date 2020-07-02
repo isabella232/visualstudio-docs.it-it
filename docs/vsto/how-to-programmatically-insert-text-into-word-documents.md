@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Inserire testo in documenti di Word a livello di codice'
+title: 'Procedura: inserire testo in documenti di Word a livello di codice'
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ff5e0314e9834bd3d0f048bc82780d7e4af073d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: aef597099964333771fd488e0541b4ea4daf4553
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551812"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541505"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procedura: Inserire testo in documenti di Word a livello di codice
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procedura: inserire testo in documenti di Word a livello di codice
   Esistono tre modi principali per inserire il testo nei documenti di Microsoft Office Word:
 
 - Inserire il testo in un intervallo.
@@ -93,7 +93,7 @@ ms.locfileid: "69551812"
 
 ### <a name="to-insert-text-using-the-typetext-method"></a>Per inserire il testo usando il metodo TypeText
 
-1. Dichiarare una variabile dell'oggetto <xref:Microsoft.Office.Interop.Word.Selection> .
+1. Dichiarare una variabile oggetto <xref:Microsoft.Office.Interop.Word.Selection>.
 
     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]
@@ -120,7 +120,7 @@ ms.locfileid: "69551812"
     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]
 
-   È anche possibile usare il <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> metodo <xref:Microsoft.Office.Interop.Word.Selection> dell'oggetto, che simula la funzionalità del tasto BACKSPACE sulla tastiera. Tuttavia, per l'inserimento e la modifica del testo, l'oggetto <xref:Microsoft.Office.Interop.Word.Range> offre un maggiore controllo.
+   È anche possibile usare il <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> metodo dell' <xref:Microsoft.Office.Interop.Word.Selection> oggetto, che simula la funzionalità del tasto **BACKSPACE** sulla tastiera. Tuttavia, per l'inserimento e la modifica del testo, l'oggetto <xref:Microsoft.Office.Interop.Word.Range> offre un maggiore controllo.
 
    L'esempio seguente mostra il codice completo. Per usare questo esempio, eseguire il codice dalla classe `ThisDocument` o `ThisAddIn` nel progetto.
 
@@ -128,6 +128,6 @@ ms.locfileid: "69551812"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Formattare il testo nei documenti a livello di codice](../vsto/how-to-programmatically-format-text-in-documents.md)
-- [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Procedura: Estendere gli intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Procedura: formattare il testo nei documenti a livello di codice](../vsto/how-to-programmatically-format-text-in-documents.md)
+- [Procedura: definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Procedura: estendere gli intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

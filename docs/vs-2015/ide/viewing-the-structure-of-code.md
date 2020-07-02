@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 44036f519ae4d2b718c6eee40317e15fd4574077
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1a860fbb88bb15786fad5fdf277f8f65b245056b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663085"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545015"
 ---
 # <a name="viewing-the-structure-of-code"></a>Visualizzazione della struttura del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,14 +50,14 @@ ms.locfileid: "72663085"
 
  [Finestra Definizione codice (C#, C++)](#BKMK_CodeDefinition)
 
- È anche possibile usare **Esplora soluzioni** per esplorare i tipi e i membri nei progetti, cercare simboli, visualizzare la gerarchia di chiamata di un metodo, individuare i riferimenti dei simboli ed eseguire altre attività senza dover passare tra le varie finestre degli strumenti elencati in precedenza.
+ È anche possibile usare **Esplora soluzioni** per esplorare i tipi e i membri nei progetti, cercare i simboli, visualizzare la gerarchia di chiamata di un metodo, trovare i riferimenti dei simboli e altro ancora senza dover passare tra le finestre degli strumenti più elencate in precedenza.
 
  Se si dispone di Visual Studio Enterprise, è possibile usare mappe di codice per visualizzare la struttura del codice e le relative dipendenze attraverso l'intera soluzione ed eseguire il drill-down nelle parti del codice che interessano. Per altre informazioni, vedere [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md) (Eseguire il mapping delle dipendenze nelle soluzioni).
 
 > [!NOTE]
 > L'edizione di Visual Studio e le impostazioni in uso possono influire sulle funzionalità nell'IDE, che potrebbero essere diverse da quelle descritte in questo argomento.
 
-## <a name="BKMK_ClassView"></a> Visualizzazione classi (Visual Basic, C#, C++)
+## <a name="class-view-visual-basic-c-c"></a><a name="BKMK_ClassView"></a> Visualizzazione classi (Visual Basic, C#, C++)
  **Visualizzazione classi** viene visualizzato come parte di **Esplora soluzioni** nonché in una finestra separata. La finestra **Visualizzazione classi** visualizza gli elementi di un'applicazione. Nel riquadro superiore vengono visualizzati spazi dei nomi, tipi, enumerazioni, interfacce e classi e nel riquadro inferiore vengono visualizzati i membri che appartengono al tipo selezionato nel riquadro superiore. Tramite questa finestra è possibile passare alle definizioni dei membri nel codice sorgente (o il **Visualizzatore oggetti** se l'elemento è definito all'esterno della soluzione).
 
  Non è necessario compilare un progetto per visualizzarne gli elementi in **Visualizzazione classi**. La finestra viene aggiornata quando si modifica il codice nel progetto.
@@ -69,17 +69,17 @@ ms.locfileid: "72663085"
 ### <a name="class-view-toolbar"></a>Visualizzazione classi - Barra degli strumenti
  La barra degli strumenti di Visualizzazione classi contiene i comandi seguenti.
 
-|||
+|Comando|Descrizione|
 |-|-|
 |**Nuova cartella**|Crea una cartella virtuale o una sottocartella in cui è possibile organizzare gli elementi utilizzati di frequente. Vengono salvate nel file di soluzione attiva (file SUO). Dopo che è possibile rinominare o eliminare un elemento nel codice, potrebbe essere visualizzato in una cartella virtuale come nodo di errore. Per correggere questo problema, eliminare il nodo di errore. Se è stato rinominato un elemento, è possibile spostarlo dalla gerarchia di progetto nella cartella nuovamente.|
-|**Indietro**|Consente di passare all’elemento selezionato in precedenza.|
-|**Avanti**|Consente di passare al successivo elemento selezionato.|
+|**Back**|Consente di passare all’elemento selezionato in precedenza.|
+|**Inoltra**|Consente di passare al successivo elemento selezionato.|
 |**Visualizza diagramma classi** (solo progetti di codice gestito)|Diventa disponibile quando si seleziona uno spazio dei nomi o si digita in **Visualizzazione classi**. Quando viene selezionato uno spazio dei nomi, che contiene tutti i tipi visualizzati dal diagramma classi. Quando viene selezionato uno spazio dei nomi, viene visualizzato solo quel tipo dal diagramma classi.|
 
 ### <a name="class-view-settings"></a>Visualizzazione classi - Impostazioni
  Il pulsante **Visualizzazione classi - Impostazioni** sulla barra degli strumenti ha le impostazioni seguenti.
 
-|||
+|Name|Descrizione|
 |-|-|
 |**Mostra tipi base**|Vengono visualizzati i tipi di base.|
 |**Mostra tipi derivati**|Vengono visualizzati i tipi derivati.|
@@ -94,7 +94,7 @@ ms.locfileid: "72663085"
 ### <a name="class-view-shortcut-menu"></a>Menu di scelta rapida di visualizzazione classi
  Il menu di scelta rapida in **Visualizzazione classi** può contenere i seguenti comandi, a seconda del tipo di progetto selezionato.
 
-|||
+|Comando|Descrizione|
 |-|-|
 |**Vai a definizione**|Trova la definizione dell'elemento nel codice sorgente o nel **Visualizzatore oggetti**, se l'elemento non è definito nel progetto aperto.|
 |**Sfoglia definizione**|Visualizza l'elemento selezionato nel **Visualizzatore oggetti**.|
@@ -110,7 +110,7 @@ ms.locfileid: "72663085"
 |**Vai a riferimento**|Visualizza un riferimento al tipo o membro nel codice sorgente, se disponibile.|
 |**Visualizza gerarchia delle chiamate**|Visualizza il metodo selezionato nella finestra **Gerarchia di chiamata**.|
 
-## <a name="BKMK_CallHierarchy"></a> Gerarchia di chiamata (Visual Basic, C#, C++)
+## <a name="call-hierarchy-visual-basic-c-c"></a><a name="BKMK_CallHierarchy"></a> Gerarchia di chiamata (Visual Basic, C#, C++)
  La finestra **Gerarchia di chiamata** visualizza dove viene chiamato un determinato metodo (o proprietà o costruttore) ed elenca i metodi chiamati da quel metodo. È possibile visualizzare più livelli di grafico delle chiamate, che mostra le relazioni chiamante/chiamato tra i metodi di un ambito specificato.
 
  È possibile visualizzare la finestra **Gerarchia di chiamata** selezionando un metodo (o proprietà o costruttore) e quindi scegliendo **View Class Hierarchy** (Visualizza gerarchia di classi) nel menu di scelta rapida. La visualizzazione dovrebbe essere simile all’immagine seguente:
@@ -125,16 +125,16 @@ ms.locfileid: "72663085"
 
  Il menu di scelta rapida nella finestra **Gerarchia di chiamata** contiene i comandi seguenti.
 
-|||
+|Comando|Descrizione|
 |-|-|
 |**Aggiungi come nuova radice**|Aggiunge il nodo selezionato come un nuovo nodo radice.|
 |**Rimuovi radice**|Rimuove il nodo radice selezionato dal riquadro di visualizzazione albero.|
 |**Vai a definizione**|Consente di passare alla definizione originale di un metodo.|
 |**Trova tutti i riferimenti**|Trova nel progetto tutti i riferimenti al metodo selezionato.|
 |**Copia**|Copia il nodo selezionato (ma non i sottonodi).|
-|**Aggiorna**|Aggiorna le informazioni.|
+|**Refresh** (Aggiornamento)|Aggiorna le informazioni.|
 
-## <a name="BKMK_ObjectBrowser"></a> Visualizzatore oggetti
+## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Visualizzatore oggetti
  Il **Visualizzatore oggetti** visualizza le descrizioni del codice nei progetti.
 
  È possibile filtrare ciò che si vuole visualizzare nel **Visualizzatore oggetti**. Usando l'elenco a discesa nella parte superiore della finestra, è possibile scegliere una delle seguenti opzioni:
@@ -160,10 +160,10 @@ ms.locfileid: "72663085"
 ### <a name="object-browser-settings"></a>Visualizzatore oggetti - Impostazioni
  Con il pulsante **Visualizzatore oggetti - Impostazioni** sulla barra degli strumenti è possibile specificare una delle visualizzazioni seguenti.
 
-|||
+|Name|Descrizione|
 |-|-|
 |**Visualizza spazio dei nomi**|Consente di visualizzare gli spazi dei nomi anziché i contenitori fisici nel riquadro sinistro. Gli spazi dei nomi archiviati in più contenitori fisici vengono uniti.|
-|**Visualizza contenitori**|Consente di visualizzare i contenitori fisici anziché gli spazi dei nomi nel riquadro sinistro. **Visualizza spazio dei nomi** e **Visualizza contenitori** sono impostazioni che si escludono a vicenda.|
+|**Contenitori di visualizzazione**|Consente di visualizzare i contenitori fisici anziché gli spazi dei nomi nel riquadro sinistro. **Visualizza spazio dei nomi** e **Visualizza contenitori** sono impostazioni che si escludono a vicenda.|
 |**Mostra tipi base**|Visualizza tipi di base.|
 |**Mostra tipi derivati**|Visualizza tipi derivati.|
 |**Mostra tipi e membri nascosti**|Visualizza tipi e membri nascosti (non destinati ai client) in grigio chiaro.|
@@ -177,7 +177,7 @@ ms.locfileid: "72663085"
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandi del menu di scelta rapida Visualizzatore oggetti
  Il menu di scelta rapida nel **Visualizzatore oggetti** può contenere i comandi seguenti, a seconda del tipo di elemento selezionato.
 
-|||
+|Comando|Descrizione|
 |-|-|
 |**Sfoglia definizione**|Viene illustrato il nodo primario per l'elemento selezionato.|
 |**Trova tutti i riferimenti**|Trova l'elemento oggetto attualmente selezionato e visualizza i risultati in una finestra **Risultati ricerca**.|
@@ -193,7 +193,7 @@ ms.locfileid: "72663085"
 |**Vai a riferimento**|Visualizza un riferimento al tipo o membro nel codice sorgente, se disponibile.|
 |**Visualizza gerarchia delle chiamate**|Visualizza il metodo selezionato nella finestra **Gerarchia di chiamata**.|
 
-## <a name="BKMK_CodeDefinition"></a> Finestra Definizione codice (C#, C++)
+## <a name="code-definition-window-c-c"></a><a name="BKMK_CodeDefinition"></a> Finestra Definizione codice (C#, C++)
  La finestra **Definizione codice** visualizza la definizione di un membro o tipo selezionato nel progetto attivo. È possibile selezionare il tipo o il membro nell'editor di codice o in una finestra di visualizzazione del codice.
 
  Anche se questa finestra è di sola lettura, è possibile impostarvi punti di interruzione o segnalibri. Per modificare la definizione visualizzata scegliere **Modifica definizione** nel menu di scelta rapida. Verrà quindi aperto il file di origine nell'editor di codice e verrà spostato nel punto di inserimento sulla riga in cui inizia la definizione.
@@ -201,9 +201,9 @@ ms.locfileid: "72663085"
 ### <a name="code-definition-shortcut-menu"></a>Menu di scelta rapida di Definizione codice
  Il menu di scelta rapida nella finestra **Definizione codice** può contenere i comandi seguenti, a seconda del linguaggio di programmazione.
 
-|||
+|Comando|Descrizione|
 |-|-|
-|**Crea unit test**|Crea unit test per l'elemento selezionato.|
+|**Creazione di unit test**|Crea unit test per l'elemento selezionato.|
 |**Genera diagramma sequenza**|Quando si seleziona un metodo, genera un diagramma di sequenza.|
 |**Crea funzione di accesso privata**|Se un unit test è presente nella soluzione, genera un metodo usato dal test per accedere al codice.|
 |**Vai a definizione**|Trova la definizione (o le definizioni per le classi parziali) e le visualizza in una finestra **Risultati ricerca**.|
@@ -214,7 +214,7 @@ ms.locfileid: "72663085"
 |**Punto di interruzione**|Inserisce un punto di interruzione (o un punto di analisi).|
 |**Esegui fino al cursore**|Esegue il programma in modalità di debug per la posizione del cursore.|
 |**Copia**|Copia l'elemento selezionato.|
-|**Struttura**|Comandi di struttura standard.|
+|**struttura**|Comandi di struttura standard.|
 |**Modifica definizione**|Sposta il punto di inserimento alla definizione nella finestra del codice.|
 |**Scegli codifica**|Apre la finestra **Codifica** che consente di impostare una codifica per il file.|
 
@@ -222,4 +222,4 @@ ms.locfileid: "72663085"
  È possibile usare la finestra **Struttura documento** in combinazione con le visualizzazioni di progettazione, ad esempio la finestra di progettazione per una pagina XAML o una finestra di Progettazione Windows Form o con pagine HTML. Questa finestra visualizza gli elementi in una visualizzazione albero in modo che sia possibile visualizzare la struttura logica del form o della pagina e trovare i controlli sono incorporati o nascosti in profondità.
 
 ## <a name="see-also"></a>Vedere anche
- [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md)
+ [Icone Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md)

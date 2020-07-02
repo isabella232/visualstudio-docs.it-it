@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 099e5f3f9a09eef57ce1b888601f61e85ceb97c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 846ce010cddfd505bb967ec612a5c31dd8321977
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643398"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544326"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Non esporre in modo indiretto metodi con richieste di collegamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
@@ -36,7 +36,7 @@ ms.locfileid: "72643398"
  Un membro pubblico o protetto presenta [richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) e viene chiamato da un membro che non esegue alcun controllo di sicurezza.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Una richiesta di collegamento controlla esclusivamente le autorizzazioni del chiamante immediato. Se un membro `X` non esegue alcuna richiesta di sicurezza dei chiamanti e chiama il codice protetto da una richiesta di collegamento, un chiamante senza l'autorizzazione necessaria può utilizzare `X` per accedere al membro protetto.
+ Una richiesta di collegamento controlla esclusivamente le autorizzazioni del chiamante immediato. Se un membro `X` non esegue richieste di sicurezza dei chiamanti e chiama il codice protetto da una richiesta di collegamento, un chiamante senza l'autorizzazione necessaria può utilizzare `X` per accedere al membro protetto.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Aggiungere i dati di sicurezza [e la modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) o la richiesta di collegamento al membro in modo che non fornisca più l'accesso non sicuro al membro protetto da richiesta di collegamento.
@@ -45,7 +45,7 @@ ms.locfileid: "72643398"
  Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che il codice non conceda ai chiamanti l'accesso a operazioni o risorse che possono essere utilizzate in modo distruttivo.
 
 ## <a name="example"></a>Esempio
- Negli esempi seguenti viene illustrata una libreria che viola la regola e un'applicazione che dimostra la debolezza della libreria. La libreria di esempio fornisce due metodi che insieme violano la regola. Il metodo `EnvironmentSetting` è protetto da una richiesta di collegamento per l'accesso illimitato alle variabili di ambiente. Il metodo `DomainInformation` non esegue alcuna richiesta di sicurezza dei chiamanti prima di chiamare `EnvironmentSetting`.
+ Negli esempi seguenti viene illustrata una libreria che viola la regola e un'applicazione che dimostra la debolezza della libreria. La libreria di esempio fornisce due metodi che insieme violano la regola. Il `EnvironmentSetting` metodo è protetto da una richiesta di collegamento per l'accesso illimitato alle variabili di ambiente. Il `DomainInformation` metodo non esegue alcuna richiesta di sicurezza dei chiamanti prima di chiamare `EnvironmentSetting` .
 
  [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.UnsecuredDoNotCall/cs/FxCop.Security.UnsecuredDoNotCall.cs#1)]
 

@@ -15,33 +15,33 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 14c50ed94f05401cc5575af9f8b98472c35b261d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919225"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544001"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente su Visual Studio, vedere [CA1709: gli identificatori devono essere configurati correttamente](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Categoria|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica importante|Quando vengono generati gli assembly, gli spazi dei nomi, i tipi, i membri e i parametri.<br /><br /> Senza interruzioni: quando viene attivato su parametri di tipo generico.|
 
 ## <a name="cause"></a>Causa
  Il nome di un identificatore non viene inserito correttamente nel caso.
 
- \- oppure -
+ \- - oppure -
 
  Il nome di un identificatore contiene un acronimo di due lettere e la seconda lettera è minuscola.
 
- \- oppure -
+ \- - oppure -
 
  Il nome di un identificatore contiene un acronimo di tre o più lettere maiuscole.
 

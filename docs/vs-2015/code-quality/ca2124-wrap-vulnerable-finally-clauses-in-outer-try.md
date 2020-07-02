@@ -15,17 +15,17 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7a2a296f5dd3680209c14849b5bd863c01e6351d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e191ca10456f133e1213961ca2d1ed9cb8e040b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660240"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544300"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Eseguire il wrapping delle clausole finally vulnerabili in un try esterno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
@@ -33,16 +33,16 @@ ms.locfileid: "72660240"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Nelle versioni 1,0 e 1,1 del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], un metodo pubblico o protetto contiene un `try` / `catch` / blocco `finally`. Il blocco `finally` sembra ripristinare lo stato di sicurezza e non è racchiuso in un blocco `finally`.
+ Nelle versioni 1,0 e 1,1 di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , un metodo pubblico o protetto contiene un `try` / `catch` / `finally` blocco. Il `finally` blocco sembra reimpostare lo stato di sicurezza e non è racchiuso in un `finally` blocco.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola consente di individuare `try` / blocchi `finally` nel codice destinato alle versioni 1,0 e 1,1 del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] che potrebbero essere vulnerabili a filtri di eccezioni dannosi presenti nello stack di chiamate. Se si verificano operazioni sensibili come la rappresentazione nel blocco try e viene generata un'eccezione, il filtro può essere eseguito prima del blocco `finally`. Per l'esempio di rappresentazione, questo significa che il filtro verrebbe eseguito come utente rappresentato. I filtri sono attualmente implementabili solo in Visual Basic.
+ Questa regola individua `try` / `finally` i blocchi nel codice che ha come destinazione le versioni 1,0 e 1,1 del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] che potrebbero essere vulnerabili a filtri di eccezioni dannosi presenti nello stack di chiamate. Se si verificano operazioni sensibili come la rappresentazione nel blocco try e viene generata un'eccezione, il filtro può essere eseguito prima del `finally` blocco. Per l'esempio di rappresentazione, questo significa che il filtro verrebbe eseguito come utente rappresentato. I filtri sono attualmente implementabili solo in Visual Basic.
 
 > [!WARNING]
-> Nelle versioni 2,0 e successive del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], il Runtime protegge automaticamente un `try` / `catch` /  `finally` da filtri eccezioni dannosi, se la reimpostazione viene eseguita direttamente all'interno del metodo che contiene il blocco di eccezioni.
+> Nelle versioni 2,0 e successive di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , il Runtime protegge automaticamente un `try` / `catch` /  `finally` blocco da filtri eccezioni dannosi, se la reimpostazione viene eseguita direttamente all'interno del metodo che contiene il blocco di eccezioni.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Inserire il `try` di cui è stato eseguito il incapsulamento / `finally` in un blocco try esterno. Vedere il secondo esempio riportato di seguito. In questo modo si impone l'esecuzione di `finally` prima di filtrare il codice.
+ Posizionare l'oggetto di cui è stato eseguito il wrapper `try` / `finally` in un blocco try esterno. Vedere il secondo esempio riportato di seguito. In questo modo l'oggetto verrà forzato `finally` prima dell'esecuzione del codice del filtro.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.

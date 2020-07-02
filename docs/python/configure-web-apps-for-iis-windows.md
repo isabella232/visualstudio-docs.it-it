@@ -2,7 +2,7 @@
 title: Configurare app Web Python per IIS
 description: Come configurare app Web Python per l'esecuzione con Internet Information Services da una macchina virtuale Windows.
 ms.date: 12/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957373"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540933"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configurare app Web Python per IIS
 
@@ -86,7 +86,7 @@ Modificare quindi il file *web.config* dell'app per includere i percorsi complet
     </system.webServer>
     ```
 
-1. `<appSettings>` All'interno della sezione di *web.config*, aggiungere chiavi per `WSGI_HANDLER`, `WSGI_LOG` (facoltativo) e `PYTHONPATH`:
+1. All'interno della `<appSettings>` sezione di *web.config*aggiungere le chiavi per `WSGI_HANDLER` , `WSGI_LOG` (facoltativo) e `PYTHONPATH` :
 
     ```xml
     <appSettings>
@@ -139,7 +139,7 @@ Modificare quindi il file *web.config* dell'app per includere i percorsi complet
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    Se non si aggiunge l'URL all'array, viene generato l'errore **DisallowedHost at / Invalid HTTP_HOST header: '\<site URL\>'. Potrebbe essere necessario\<aggiungere\>l'URL del sito allALLOWED_HOSTS.**
+    Se non si aggiunge l'URL alla matrice, viene restituito l'errore **DisallowedHost all'intestazione/HTTP_HOST non valida:' \<site URL\> '. Potrebbe essere necessario aggiungere ' \<site URL\> ' a ALLOWED_HOSTS.**
 
     Si noti che, quando la matrice è vuota, Django autorizza automaticamente "localhost" e "127.0.0.1", ma se si aggiunge l'URL di produzione questa funzionalità viene rimossa. Per questo motivo è consigliabile mantenere copie separate di *settings.py* per sviluppo e produzione, oppure usare le variabili di ambiente per controllare i valori della fase di esecuzione.
 

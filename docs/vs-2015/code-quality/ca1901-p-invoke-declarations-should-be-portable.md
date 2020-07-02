@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e669d87ad5ecc53c1523db16ab77578c6a703a33
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661067"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545262"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Le dichiarazioni P/Invoke devono essere portabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
@@ -38,12 +38,12 @@ ms.locfileid: "72661067"
 ## <a name="rule-description"></a>Descrizione della regola
  Uno degli scenari seguenti viola questa regola:
 
-- Il valore restituito o il parametro viene tipizzato come Integer a dimensione fissa quando deve essere digitato come `IntPtr`.
+- Il valore restituito o il parametro viene tipizzato come intero a dimensione fissa quando deve essere digitato come `IntPtr` .
 
-- Il valore restituito o il parametro è tipizzato come `IntPtr` quando deve essere digitato come Integer a dimensione fissa.
+- Il valore restituito o il parametro viene tipizzato come un oggetto `IntPtr` quando deve essere digitato come Integer a dimensione fissa.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- È possibile correggere questa violazione usando `IntPtr` o `UIntPtr` per rappresentare gli handle invece di `Int32` o `UInt32`.
+ È possibile correggere questa violazione utilizzando `IntPtr` o `UIntPtr` per rappresentare gli handle anziché `Int32` o `UInt32` .
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non visualizzare questo avviso.
@@ -60,7 +60,7 @@ internal class NativeMethods
 }
 ```
 
- In questo esempio, il parametro `nIconIndex` viene dichiarato come un `IntPtr`, che ha una larghezza di 4 byte in una piattaforma a 32 bit e 8 byte in una piattaforma a 64 bit. Nella dichiarazione non gestita riportata di seguito, è possibile notare che `nIconIndex` è un Unsigned Integer a 4 byte in tutte le piattaforme.
+ In questo esempio, il `nIconIndex` parametro viene dichiarato come un `IntPtr` , che ha una larghezza di 4 byte in una piattaforma a 32 bit e 8 byte in una piattaforma a 64 bit. Nella dichiarazione non gestita riportata di seguito è possibile vedere che `nIconIndex` si tratta di un Unsigned Integer a 4 byte in tutte le piattaforme.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,

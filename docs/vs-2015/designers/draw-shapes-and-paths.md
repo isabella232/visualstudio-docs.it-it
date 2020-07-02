@@ -9,17 +9,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8eb2d4f5b025be6f68860c18d1c14da017aaf3fe
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e9eba4e5bfef052f7a82c3148f5628eff9413180
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294320"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542207"
 ---
 # <a name="draw-shapes-and-paths"></a>Disegnare forme e tracciati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nella finestra di progettazione XAML una *forma* indica esattamente una forma. Ad esempio: un rettangolo, un cerchio o un'ellissi. Un *tracciato* è una versione più flessibile di una forma. È possibile ad esempio modificarne la forma o combinarli per creare nuove forme.
+In finestra di progettazione XAML, una *forma* è esattamente ciò che ci si aspetta. Ad esempio: un rettangolo, un cerchio o un'ellissi. Un *tracciato* è una versione più flessibile di una forma. È possibile ad esempio modificarne la forma o combinarli per creare nuove forme.
 
  Le forme e i tracciati usano la grafica vettoriale per una scalabilità ottima negli schermi ad alta risoluzione. Per altre informazioni sulla grafica vettoriale, guardare il video [What are Vector Graphics?](https://www.youtube.com/watch?v=MoCSwF0n-io) (Che cos'è la grafica vettoriale?) o leggere la definizione di [grafica vettoriale](https://www.webopedia.com/TERM/V/vector_graphics.html).
 
@@ -27,26 +27,26 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
 
 - [Disegnare una forma](#Shape)
 
-- [Disegnare un tracciato](#Path)
+- [Tracciare un tracciato](#Path)
 
 - [Convertire una forma in un tracciato](#Convert)
 
-- [Combinare tracciati](#Combine)
+- [Combinare i percorsi](#Combine)
 
 - [Creare un tracciato composto](#Compound)
 
 - [Creare un tracciato di ritaglio](#Clipping)
 
-## <a name="Shape"></a> Disegnare una forma
+## <a name="draw-a-shape"></a><a name="Shape"></a>Disegnare una forma
  Le forme sono disponibili nel pannello **Asset** .
 
- ![Categoria forme nel pannello Asset](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
+ ![Categoria Forme nel pannello Asset](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
 
  Trascinare la forma da usare nella tavola da disegno. Usare quindi gli handle della forma per ridimensionarla, ruotarla, spostarla o inclinarla.
 
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")
 
-## <a name="Path"></a> Disegnare un tracciato
+## <a name="draw-a-path"></a><a name="Path"></a> Disegnare un tracciato
  Un tracciato è costituito da una serie di linee e curve collegate. Usare un tracciato per creare forme interessanti, non disponibili nel pannello **Asset** .
 
  È possibile disegnare un tracciato usando una riga, una penna o una matita. Questi strumenti sono disponibili nel pannello **Strumenti** .
@@ -54,7 +54,7 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
  ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")
 
 ### <a name="draw-a-straight-line"></a>Disegnare una linea retta
- Utilizzare lo strumento ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")penna oppure lo strumento ![ ](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "linea eb618397-5283-48be-8396-3449be7b6fbf")linea.
+ Usare lo strumento **Penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")oppure lo strumento **Linea**![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "linea eb618397-5283-48be-8396-3449be7b6fbf").
 
  **Uso dello strumento penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")
 
@@ -65,56 +65,56 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
  Nella tavola da disegno trascinare il puntatore dal punto in cui si vuole che abbia inizio la riga e quindi rilasciare il puntatore nel punto in cui si vuole che termini la linea.
 
 ### <a name="draw-a-curve"></a>Disegnare una curva
- Usare lo strumento ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")penna.
+ Usare lo strumento **Penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54").
 
  Nella tavola da disegno fare clic una volta per definire il punto di inizio di una linea, quindi fare clic e trascinare il puntatore per creare la curva desiderata.
 
  Per chiudere il tracciato, fare clic sul primo punto della linea.
 
 ### <a name="change-the-shape-of-a-curve"></a>Cambiare la forma di una curva
- Usare lo strumento ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362") **selezione diretta** .
+ Usare lo strumento **Selezione diretta**![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362").
 
  Fare clic sulla forma, quindi trascinare qualsiasi punto della forma per modificare le forme della curva.
 
 ### <a name="draw-a-free-form-path"></a>Disegnare un tracciato a mano libera
- Usare lo strumento ![ ](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd")matita.
+ Usare lo strumento **Matita**![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd").
 
  Nella tavola da disegno disegnare un tracciato a mano libera, proprio come se si usasse una vera matita.
 
 ### <a name="remove-part-of-a-path"></a>Eliminare una parte di un tracciato
- Usare lo strumento ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362") **selezione diretta** .
+ Usare lo strumento **Selezione diretta**![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362").
 
  Selezionare il tracciato contenente il segmento da eliminare, quindi fare clic su **Elimina** .
 
 ### <a name="remove-a-point-in-a-path"></a>Rimuovere un punto da un tracciato
- Usare lo strumento ![ ](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa")selezione e lo strumento ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")penna.
+ Usare lo strumento **Selezione**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa")e lo strumento **Penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54").
 
- Usare lo strumento ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") selezione per selezionare il percorso. Usare quindi lo ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") strumento **penna** per fare clic sul punto che si vuole rimuovere.
+ Usare lo **Selection** strumento selezione ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") per selezionare il percorso. Usare quindi lo strumento **penna** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") per fare clic sul punto che si vuole rimuovere.
 
 ### <a name="add-a-point-to-a-path"></a>Aggiungere un punto a un tracciato
- Usare lo strumento ![ ](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa")selezione e lo strumento ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")penna.
+ Usare lo strumento **Selezione**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa")e lo strumento **Penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54").
 
- Usare lo strumento ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") selezione per selezionare il percorso. Usare lo strumento ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") penna per fare clic in un punto qualsiasi del percorso in cui si vuole aggiungere il punto.
+ Usare lo **Selection** strumento selezione ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") per selezionare il percorso. Usare lo **Pen** strumento penna ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") per fare clic in un punto qualsiasi del percorso in cui si vuole aggiungere il punto.
 
-## <a name="Convert"></a> Convertire una forma in un tracciato
+## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a>Convertire una forma in un tracciato
  Per modificare una forma in modo analogo alla modifica di un tracciato, convertire la forma in tracciato.
 
  **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (Uso di tracciati: convertire una forma in un tracciato).
 
-## <a name="Combine"></a> Combinare tracciati
+## <a name="combine-paths"></a><a name="Combine"></a>Combinare i percorsi
  È possibile combinare forme e tracciati in un unico tracciato.
 
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")
 
-|||||
+|Immagine|Descrizione|Immagine|Descrizione|
 |-|-|-|-|
-|![](../designers/media/b1-1.png "B1_1")|Due forme prima della combinazione|![](../designers/media/b1-4.png "B1_4")|Interseca|
+|![](../designers/media/b1-1.png "B1_1")|Due forme prima della combinazione|![](../designers/media/b1-4.png "B1_4")|Intersect|
 |![](../designers/media/b1-2.png "B1_2")|Unisci|![](../designers/media/b1-5.png "B1_5")|Escludi sovrapposizione|
-|![](../designers/media/b1-3.png "B1_3")|Dividi|![](../designers/media/b1-6.png "B1_6")|Sottrai|
+|![](../designers/media/b1-3.png "B1_3")|Divisione|![](../designers/media/b1-6.png "B1_6")|Sottrazione|
 
  **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Combine paths](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) (Uso di tracciati: combinare tracciati).
 
-## <a name="Compound"></a> Creare un tracciato composto
+## <a name="create-a-compound-path"></a><a name="Compound"></a>Creare un tracciato composto
  Quando si crea un tracciato composto, eventuali parti del tracciato che si intersecano vengono sottratte dal risultato e il tracciato risultante assume le proprietà visive del percorso situato più in basso.
 
  È possibile separare un tracciato composto in qualsiasi momento dopo averlo creato.
@@ -123,7 +123,7 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
 
  **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Create a compound path](https://www.youtube.com/watch?v=Io5bC0-nH6Q) (Uso di tracciati: creare un tracciato composto).
 
-## <a name="Clipping"></a> Creare un tracciato di ritaglio
+## <a name="create-a-clipping-path"></a><a name="Clipping"></a>Creare un tracciato di ritaglio
  Un tracciato di ritaglio è un tracciato o una forma applicato a un altro oggetto, in modo da nascondere le parti dell'oggetto mascherato esterne al tracciato di ritaglio.
 
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")

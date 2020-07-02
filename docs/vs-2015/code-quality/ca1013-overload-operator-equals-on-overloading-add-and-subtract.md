@@ -19,17 +19,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dd1c144f04150e3965e2c0264b80147cbd9b8f19
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2304b78073b806dfc4aec9686f061d946b379ded
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663206"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545418"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
@@ -40,7 +40,7 @@ ms.locfileid: "72663206"
  Un membro pubblico o protetto implementa gli operatori di addizione o sottrazione senza implementare l'operatore di uguaglianza.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando le istanze di un tipo possono essere combinate usando operazioni quali l'addizione e la sottrazione, è consigliabile definire sempre l'uguaglianza per restituire `true` per due istanze con gli stessi valori costitutivi.
+ Quando le istanze di un tipo possono essere combinate usando operazioni quali l'addizione e la sottrazione, è necessario definire quasi sempre l'uguaglianza per restituire `true` per due istanze con gli stessi valori costitutivi.
 
  Non è possibile usare l'operatore di uguaglianza predefinito in un'implementazione di overload dell'operatore di uguaglianza. Questa operazione provocherà un overflow dello stack. Per implementare l'operatore di uguaglianza, usare il metodo Object. Equals nell'implementazione. Vedere l'esempio seguente.
 
@@ -65,7 +65,7 @@ return left.Equals(right);
  È possibile eliminare un avviso da questa regola quando l'implementazione predefinita dell'operatore di uguaglianza fornisce il comportamento corretto per il tipo.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene definito un tipo (`BadAddableType`) che viola questa regola. Questo tipo deve implementare l'operatore di uguaglianza per creare due istanze con lo stesso valore di campo test `true` per verificarne l'uguaglianza. Il tipo `GoodAddableType` indica l'implementazione corretta. Si noti che questo tipo implementa anche l'operatore di disuguaglianza ed esegue l'override di <xref:System.Object.Equals%2A> per soddisfare altre regole. Un'implementazione completa implementa anche <xref:System.Object.GetHashCode%2A>.
+ Nell'esempio seguente viene definito un tipo ( `BadAddableType` ) che viola questa regola. Questo tipo deve implementare l'operatore di uguaglianza per far verificare l'uguaglianza di due istanze con lo stesso valore `true` di campo. Il tipo `GoodAddableType` Mostra l'implementazione corretta. Si noti che questo tipo implementa anche l'operatore di disuguaglianza e le sostituzioni <xref:System.Object.Equals%2A> per soddisfare altre regole. Verrà inoltre implementata un'implementazione completa di <xref:System.Object.GetHashCode%2A> .
 
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AddAndSubtract/cs/FxCop.Design.AddAndSubtract.cs#1)]
 
@@ -76,8 +76,10 @@ return left.Equals(right);
 
  Questo esempio produce il seguente output:
 
- **Tipo non valido: {2,2} {2,2} sono uguali? Nessun** **tipo 
- valido: {3,3} {3,3} sono uguali? Sì** 
-**tipo corretto: {3,3} 0 è = =?   Sì** 1**tipo errato: 3 4 sono uguali? Nessun** **tipo 5 valido: 7 8 è = =?   No**
+ **Tipo non valido: {2,2} {2,2} sono uguali? Nessun** 
+ **tipo valido: {3,3} {3,3} è uguale? Sì** 
+ **, tipo valido: {3,3} {3,3} è = =?   Sì** 
+ **tipo non valido: {2,2} {9,9} sono uguali? Nessun** 
+ **tipo valido: {3,3} {9,9} è = =?   No**
 ## <a name="see-also"></a>Vedere anche
  [Operatori di uguaglianza](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

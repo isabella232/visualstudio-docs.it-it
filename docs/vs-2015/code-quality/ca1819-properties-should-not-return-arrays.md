@@ -15,17 +15,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c85efc3e601eb9e0d887043c50b30587e51321e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a96d2164cbd6c03cb0d191b2d0c3c4607468209c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668381"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545327"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Le proprietà non devono restituire matrici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
@@ -53,7 +53,7 @@ ms.locfileid: "72668381"
  [!code-csharp[FxCop.Performance.PropertyArrayViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayViolation/cs/FxCop.Performance.PropertyArrayViolation.cs#1)]
  [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayViolation/vb/FxCop.Performance.PropertyArrayViolation.vb#1)]
 
-### <a name="comments"></a>Comments
+### <a name="comments"></a>Commenti
  Per correggere una violazione di questa regola, impostare la proprietà su un metodo o modificare la proprietà in modo che restituisca una raccolta invece di una matrice.
 
 ## <a name="change-the-property-to-a-method-example"></a>Modificare la proprietà in un esempio di metodo
@@ -70,7 +70,7 @@ ms.locfileid: "72668381"
 ### <a name="description"></a>Descrizione
  Nell'esempio seguente viene corretta la violazione modificando la proprietà per restituire un
 
- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+ <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayFixedCollection/cs/FxCop.Performance.PropertyArrayFixedCollection.cs#1)]
@@ -85,8 +85,8 @@ ms.locfileid: "72668381"
  [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyViolation/cs/FxCop.Performance.PropertyModifyViolation.cs#1)]
  [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyViolation/vb/FxCop.Performance.PropertyModifyViolation.vb#1)]
 
-### <a name="comments"></a>Comments
- Nell'esempio seguente viene corretta la violazione modificando la proprietà in modo che restituisca un <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>.
+### <a name="comments"></a>Commenti
+ Nell'esempio seguente viene corretta la violazione modificando la proprietà per restituire un oggetto <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName> .
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/cs/FxCop.Performance.PropertyModifyFixed.cs#1)]

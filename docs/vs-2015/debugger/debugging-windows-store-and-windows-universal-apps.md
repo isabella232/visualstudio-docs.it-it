@@ -1,5 +1,5 @@
 ---
-title: Debug di App Windows Store e Windows Universal | Microsoft Docs
+title: Debug di app di Windows Store e Windows universali | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,25 +14,25 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 979808584c788d8b4b30f327a535ae2dfb7479e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8423884393be19149a06b7d30749649e1cf57ff
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205662"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545561"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Debug delle app di Windows Store e Windows Universal
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il debugger di Visual Studio fornisce supporto completo per il debug delle app di Windows Store.  
   
- Per informazioni sul debug di App Windows universali, vedere [distribuzione e debug delle App della piattaforma universale di Windows](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx).  
+ Per informazioni sul debug di app universali di Windows, vedere [Deploying and Debugging Windows Universal Platform Apps](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx).  
   
- Per eseguire il debug delle app di Windows Phone, vedere [debug delle App per Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx).  
+ Per eseguire il debug di app Windows Phone, vedere [debug di app per Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572\(v=vs.105\).aspx).  
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
   
-|||  
+|Titolo|Descrizione|  
 |-|-|  
 |[Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Esecuzione di app Windows Store in un computer locale, un emulatore o un simulatore di app o un dispositivo remoto.|  
 |[Eseguire il debug di app in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Individuare e correggere i bug nelle App Store utilizzando il debugger di Visual Studio.|  

@@ -16,17 +16,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 308c970eb21faa7e725559d0451706899b62fd19
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f01495e4238461d0b1dfe5a13a208b528df1581f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662823"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540296"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
 |CheckId|CA2231|
@@ -34,12 +34,12 @@ ms.locfileid: "72662823"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo di valore esegue l'override di <xref:System.Object.Equals%2A?displayProperty=fullName> ma non implementa l'operatore di uguaglianza.
+ Un tipo di valore esegue l'override di <xref:System.Object.Equals%2A?displayProperty=fullName> , ma non implementa l'operatore di uguaglianza.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Nella maggior parte dei linguaggi di programmazione non esiste alcuna implementazione predefinita dell'operatore di uguaglianza (= =) per i tipi di valore. Se il linguaggio di programmazione supporta gli overload degli operatori, è consigliabile implementare l'operatore di uguaglianza. Il comportamento deve essere identico a quello di <xref:System.Object.Equals%2A>.
+ Nella maggior parte dei linguaggi di programmazione non esiste alcuna implementazione predefinita dell'operatore di uguaglianza (= =) per i tipi di valore. Se il linguaggio di programmazione supporta gli overload degli operatori, è consigliabile implementare l'operatore di uguaglianza. Il comportamento deve essere identico a quello di <xref:System.Object.Equals%2A> .
 
- Non è possibile usare l'operatore di uguaglianza predefinito in un'implementazione di overload dell'operatore di uguaglianza. Questa operazione provocherà un overflow dello stack. Per implementare l'operatore di uguaglianza, usare il metodo Object. Equals nell'implementazione. Esempio:
+ Non è possibile usare l'operatore di uguaglianza predefinito in un'implementazione di overload dell'operatore di uguaglianza. Questa operazione provocherà un overflow dello stack. Per implementare l'operatore di uguaglianza, usare il metodo Object. Equals nell'implementazione. Ad esempio:
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -73,7 +73,7 @@ return left.Equals(right);
 
  [CA2226: Gli operatori devono avere overload simmetrici](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Eseguire l'override di Equals all'override dell'operatore](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Eseguire l'override di Equals all'overload dell'operatore "uguale a"](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
  [CA2218: Eseguire l'override di GetHashCode all'override di Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 

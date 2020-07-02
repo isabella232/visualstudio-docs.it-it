@@ -15,17 +15,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 20238a844b45221207ca952d90d172ac720136ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b141d755c717ad6650d2a49c98c2b26547066b7a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655245"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545522"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Le raccolte devono implementare un'interfaccia generica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|CollectionsShouldImplementGenericInterface|
 |CheckId|CA1010|
@@ -33,7 +33,7 @@ ms.locfileid: "72655245"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un tipo visibile esternamente implementa l'interfaccia <xref:System.Collections.IEnumerable?displayProperty=fullName> ma non implementa l'interfaccia <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> e l'assembly contenitore [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]. Questa regola ignora i tipi che implementano <xref:System.Collections.IDictionary?displayProperty=fullName>.
+ Un tipo visibile esternamente implementa l' <xref:System.Collections.IEnumerable?displayProperty=fullName> interfaccia ma non implementa l' <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interfaccia e le destinazioni dell'assembly contenitore [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] . Questa regola ignora i tipi che implementano <xref:System.Collections.IDictionary?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descrizione della regola
  Per ampliare la possibilità di utilizzo di una raccolta, implementare una delle interfacce di raccolta generiche. La raccolta può quindi essere usata per popolare i tipi di raccolta generici, come i seguenti:
@@ -59,29 +59,29 @@ ms.locfileid: "72655245"
 ## <a name="example-violation"></a>Violazione di esempio
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente viene illustrata una classe (tipo di riferimento) che deriva dalla classe non generica `CollectionBase`, che viola questa regola.
+ Nell'esempio seguente viene illustrata una classe (tipo di riferimento) che deriva dalla classe non generica `CollectionBase` , che viola questa regola.
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CollectionsGenericViolation/cs/FxCop.Design.CollectionsGenericViolation.cs#1)]
 
-### <a name="comments"></a>Comments
- Per correggere una violazione di questa violazione, è necessario implementare le interfacce generiche o modificare la classe di base in un tipo che implementa già le interfacce generiche e non generiche, ad esempio la classe `Collection<T>`.
+### <a name="comments"></a>Commenti
+ Per correggere una violazione di questa violazione, è necessario implementare le interfacce generiche o modificare la classe di base in un tipo che implementa già le interfacce generiche e non generiche, ad esempio la `Collection<T>` classe.
 
 ## <a name="fix-by-base-class-change"></a>Correzione per modifica della classe di base
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente viene corretta la violazione modificando la classe di base della raccolta dalla classe `CollectionBase` non generica alla classe generica `Collection<T>` (`Collection(Of T)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Nell'esempio seguente viene corretta la violazione modificando la classe di base della raccolta dalla classe non generica `CollectionBase` alla classe generica `Collection<T>` ( `Collection(Of T)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CollectionsGenericBase/cs/FxCop.Design.CollectionsGenericBase.cs#1)]
 
-### <a name="comments"></a>Comments
+### <a name="comments"></a>Commenti
  La modifica della classe di base di una classe già rilasciata viene considerata una modifica di rilievo per i consumer esistenti.
 
 ## <a name="fix-by-interface-implementation"></a>Correzione dall'implementazione dell'interfaccia
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente viene corretta la violazione implementando queste interfacce generiche: `IEnumerable<T>`, `ICollection<T>` e `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)` e `IList(Of T)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Nell'esempio seguente viene corretta la violazione implementando queste interfacce generiche: `IEnumerable<T>` , `ICollection<T>` e `IList<T>` ( `IEnumerable(Of T)` , `ICollection(Of T)` e `IList(Of T)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CollectionsGenericInterface/cs/FxCop.Design.CollectionsGenericInterface.cs#1)]

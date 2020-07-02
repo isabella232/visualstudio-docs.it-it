@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1d06d4acff24b724388e36de66038f563b1f5dc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a03192ac8a5b59558dc39a32f55e8177dc249365
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666701"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545184"
 ---
-# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Chiamare metodi della classe base su tipi ISerializable
+# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Chiamare metodi della classe di base su tipi ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|CallBaseClassMethodsOnISerializableTypes|
 |CheckId|CA2236|
@@ -33,23 +33,23 @@ ms.locfileid: "72666701"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo deriva da un tipo che implementa l'interfaccia <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> e viene soddisfatta una delle condizioni seguenti:
+ Un tipo deriva da un tipo che implementa l' <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia e viene soddisfatta una delle condizioni seguenti:
 
-- Il tipo implementa il costruttore di serializzazione, ovvero un costruttore con la firma del parametro <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, ma non chiama il costruttore di serializzazione del tipo di base.
+- Il tipo implementa il costruttore di serializzazione, ovvero un costruttore con la <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> firma del parametro, ma non chiama il costruttore di serializzazione del tipo di base.
 
-- Il tipo implementa il metodo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> ma non chiama il metodo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> del tipo di base.
+- Il tipo implementa il <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> metodo, ma non chiama il <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodo del tipo di base.
 
 ## <a name="rule-description"></a>Descrizione della regola
- In un processo di serializzazione personalizzato, un tipo implementa il metodo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> per serializzare i campi e il costruttore di serializzazione per deserializzare i campi. Se il tipo deriva da un tipo che implementa l'interfaccia <xref:System.Runtime.Serialization.ISerializable>, il tipo di base <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> il metodo e il costruttore di serializzazione devono essere chiamati per serializzare/deserializzare i campi del tipo di base. In caso contrario, il tipo non verrà serializzato e deserializzato correttamente. Si noti che se il tipo derivato non aggiunge nuovi campi, non è necessario che il tipo implementi il metodo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> né il costruttore di serializzazione né chiami gli equivalenti del tipo di base.
+ In un processo di serializzazione personalizzato, un tipo implementa il <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodo per serializzare i campi e il costruttore di serializzazione per deserializzare i campi. Se il tipo deriva da un tipo che implementa l' <xref:System.Runtime.Serialization.ISerializable> interfaccia, il metodo del tipo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> di base e il costruttore di serializzazione devono essere chiamati per serializzare/deserializzare i campi del tipo di base. In caso contrario, il tipo non verrà serializzato e deserializzato correttamente. Si noti che se il tipo derivato non aggiunge nuovi campi, non è necessario che il tipo implementi il <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodo o il costruttore di serializzazione né chiami gli equivalenti del tipo di base.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, chiamare il tipo di base <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodo o il costruttore di serializzazione dal costruttore o dal metodo di tipo derivato corrispondente.
+ Per correggere una violazione di questa regola, chiamare il metodo del tipo di base <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> o il costruttore di serializzazione dal metodo o dal costruttore del tipo derivato corrispondente.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo derivato che soddisfa la regola chiamando il costruttore di serializzazione e il metodo <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> della classe di base.
+ Nell'esempio seguente viene illustrato un tipo derivato che soddisfa la regola chiamando il costruttore di serializzazione e il <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> metodo della classe di base.
 
  [!code-csharp[FxCop.Usage.CallBaseISerializable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CallBaseISerializable/cs/FxCop.Usage.CallBaseISerializable.cs#1)]
  [!code-vb[FxCop.Usage.CallBaseISerializable#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CallBaseISerializable/vb/FxCop.Usage.CallBaseISerializable.vb#1)]

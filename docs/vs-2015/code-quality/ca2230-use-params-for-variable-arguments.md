@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a690544a7ed03094587a2aaf1c44b7ed68e8f2a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce66e04272618b9df2ab1957af305bb9bf40ee9c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662836"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540361"
 ---
-# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Utilizzare params per argomenti variabili
+# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Usare params per argomenti variabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|UseParamsForVariableArguments|
 |CheckId|CA2230|
@@ -33,15 +33,15 @@ ms.locfileid: "72662836"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico o protetto contiene un metodo pubblico o protetto che usa la convenzione di chiamata `VarArgs`.
+ Un tipo pubblico o protetto contiene un metodo pubblico o protetto che usa la `VarArgs` convenzione di chiamata.
 
 ## <a name="rule-description"></a>Descrizione della regola
- La convenzione di chiamata `VarArgs` viene utilizzata con determinate definizioni di metodo che accettano un numero variabile di parametri. Un metodo che usa la convenzione di chiamata `VarArgs` non è conforme a CLS (Common Language Specification) e potrebbe non essere accessibile nei linguaggi di programmazione.
+ La `VarArgs` convenzione di chiamata viene utilizzata con determinate definizioni di metodo che accettano un numero variabile di parametri. Un metodo che usa la `VarArgs` convenzione di chiamata non è conforme a CLS (Common Language Specification) e potrebbe non essere accessibile nei linguaggi di programmazione.
 
- In C#, la convenzione di chiamata `VarArgs` viene utilizzata quando l'elenco di parametri di un metodo termina con la parola chiave `__arglist`. Visual Basic non supporta la convenzione di chiamata `VarArgs` e l'oggetto C++ visivo ne consente l'utilizzo solo nel codice non gestito che utilizza la notazione `...` ellisse.
+ In C#, la `VarArgs` convenzione di chiamata viene usata quando l'elenco di parametri di un metodo termina con la `__arglist` parola chiave. Visual Basic non supporta la `VarArgs` convenzione di chiamata e Visual C++ ne consente l'utilizzo solo nel codice non gestito che utilizza la notazione ellisse `...` .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola in C#, utilizzare la parola chiave [params](https://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) anziché `__arglist`.
+ Per correggere una violazione di questa regola in C#, usare la parola chiave [params](https://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) invece di `__arglist` .
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.
@@ -52,4 +52,4 @@ ms.locfileid: "72662836"
  [!code-csharp[FxCop.Usage.UseParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.UseParams/cs/FxCop.Usage.UseParams.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
- [indipendenza dal linguaggio <xref:System.Reflection.CallingConventions?displayProperty=fullName> e componenti indipendenti dal linguaggio](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ <xref:System.Reflection.CallingConventions?displayProperty=fullName>[Indipendenza del linguaggio e componenti indipendenti dal linguaggio](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

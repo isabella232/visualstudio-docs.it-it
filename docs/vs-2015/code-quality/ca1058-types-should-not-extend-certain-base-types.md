@@ -15,17 +15,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8e267b1e6203759efc91936a3b13059368a3862
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603058"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545392"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: I tipi non devono estendere tipi di base specifici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
@@ -52,7 +52,7 @@ ms.locfileid: "72603058"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione 1, è consigliabile derivare nuove eccezioni da <xref:System.ApplicationException>. La raccomandazione è stata modificata e le nuove eccezioni dovrebbero derivare da <xref:System.Exception?displayProperty=fullName> o una delle relative sottoclassi nello spazio dei nomi <xref:System>.
+ Per la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione 1, è consigliabile derivare nuove eccezioni da <xref:System.ApplicationException> . La raccomandazione è stata modificata e le nuove eccezioni devono derivare da <xref:System.Exception?displayProperty=fullName> o da una delle relative sottoclassi nello <xref:System> spazio dei nomi.
 
  Non creare una sottoclasse di <xref:System.Xml.XmlDocument> se si desidera creare una vista XML di un modello a oggetti sottostante o di un'origine dati.
 
@@ -87,4 +87,4 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
  Per correggere una violazione di questa regola, derivare il tipo da un diverso tipo di base o da una raccolta generica.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non eliminare un avviso da questa regola per violazioni circa <xref:System.ApplicationException>. È possibile eliminare un avviso da questa regola per eventuali violazioni circa <xref:System.Xml.XmlDocument>. Se il codice è stato rilasciato in precedenza, è possibile evitare l'eliminazione di un avviso relativo a una raccolta non generica.
+ Non eliminare un avviso da questa regola per violazioni relative a <xref:System.ApplicationException> . È possibile eliminare un avviso da questa regola per le violazioni relative a <xref:System.Xml.XmlDocument> . Se il codice è stato rilasciato in precedenza, è possibile evitare l'eliminazione di un avviso relativo a una raccolta non generica.

@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: riempire controlli ListObject con dati'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48af9145ce069b426b86f05bf0aadfc5386a6271
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 2941022cb434198298e9d098ef562efeaba4893f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985927"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544820"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Procedura: riempire controlli ListObject con dati
   È possibile usare il data binding per aggiungere rapidamente dati al documento. Dopo aver associato i dati a un oggetto elenco, è possibile disconnetterlo in modo che visualizzi i dati senza tuttavia essere più associato all'origine dati.

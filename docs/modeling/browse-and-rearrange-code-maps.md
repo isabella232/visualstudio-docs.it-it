@@ -1,7 +1,7 @@
 ---
 title: Cercare e ridisporre le mappe codice
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.progression.dgmlgraph.layouthelp
 - vs.progression.graphdocument
@@ -22,12 +22,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e38308c5bb94028fa17e78740da2b0df2779447
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 2683ec839d8eae41d3f4ab59112a31ba6d893848
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302966"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541974"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Cercare e ridisporre le mappe codice
 
@@ -47,7 +47,7 @@ Creare una mappa del codice. per altri dettagli, vedere [eseguire il mapping del
 
 Dopo aver generato la mappa, iniziare la revisione del codice attenendosi ai suggerimenti seguenti:
 
-- Osservare i cluster di dipendenze naturali all'interno del codice. Sulla barra degli strumenti della mappa scegliere **layout**, **Quick**![Clusters Quick Clusters pulsante sulla barra](../modeling/media/quickclustersicon.gif)degli strumenti del grafico. Vedere [modificare il layout della mappa](#Selecting).
+- Osservare i cluster di dipendenze naturali all'interno del codice. Sulla barra degli strumenti della mappa scegliere **layout**, **Quick**Clusters ![ Quick Clusters pulsante sulla barra degli strumenti del grafico ](../modeling/media/quickclustersicon.gif) . Vedere [modificare il layout della mappa](#Selecting).
 
      ![Grafico dipendenze &#45; layout cluster rapido](../modeling/media/dependencygraph_quickclusters.png)
 
@@ -59,30 +59,30 @@ Dopo aver generato la mappa, iniziare la revisione del codice attenendosi ai sug
 
 ## <a name="change-the-map-layout"></a><a name="Selecting"></a>Modificare il layout della mappa
 
-|**A**|**Eseguire questi passaggi**|
+|**To**|**Eseguire questi passaggi**|
 |-|-|
-|Disporre il flusso delle dipendenze per l'intera mappa in una direzione specifica. In questo modo si potranno vedere i livelli di architettura nel codice.|Sulla barra degli strumenti della mappa scegliere **layout**, quindi:<br /><br /> -   Pulsante dalla parte superiore alla **parte inferiore del grafico** ![](../modeling/media/topbottomgraphbutton.gif)<br />-   Pulsante del grafico **dal basso verso l'alto** ![](../modeling/media/bottomtopgraphbutton.gif)<br />-   Pulsante layout da **sinistra a** ![destra](../modeling/media/leftrightgraphbutton.gif)<br />-   Pulsante da **destra a sinistra** ![da destra a sinistra del grafico](../modeling/media/rightleftgraphbutton.gif)|
-|Visualizzare cluster di dipendenze naturali all'interno del codice con i nodi che presentano un maggior numero di dipendenze al centro dei cluster e quelli con meno dipendenze all'esterno.|Sulla barra degli strumenti della mappa **scegliere layout** **e quindi fare**![clic sul pulsante cluster veloci cluster veloci sulla barra](../modeling/media/quickclustersicon.gif)degli strumenti del grafico.|
-|Selezionare uno o più nodi sulla mappa.|Fare clic su un nodo per selezionarlo. Per selezionare o deselezionare più di un nodo, tenere premuto **CTRL** mentre si fa clic su.<br /><br /> Tastiera: premere **Tab** o usare i tasti di direzione per spostare il rettangolo di attivazione punteggiata in un nodo e premere **lo spazio** per selezionarlo. Premere **CTRL +** + **barra spaziatrice** per selezionare o deselezionare i nodi.|
+|Disporre il flusso delle dipendenze per l'intera mappa in una direzione specifica. In questo modo si potranno vedere i livelli di architettura nel codice.|Sulla barra degli strumenti della mappa scegliere **layout**, quindi:<br /><br /> -   **Dall'alto verso il basso** ![ Pulsante grafico dall'alto in basso](../modeling/media/topbottomgraphbutton.gif)<br />-   **Dal basso verso l'alto** ![ Pulsante grafico dal basso in alto](../modeling/media/bottomtopgraphbutton.gif)<br />-   **Da sinistra a destra** ![ Pulsante layout da sinistra a destra](../modeling/media/leftrightgraphbutton.gif)<br />-   **Da destra a sinistra** ![ Pulsante grafico da destra a sinistra](../modeling/media/rightleftgraphbutton.gif)|
+|Visualizzare cluster di dipendenze naturali all'interno del codice con i nodi che presentano un maggior numero di dipendenze al centro dei cluster e quelli con meno dipendenze all'esterno.|Sulla barra degli strumenti della mappa scegliere **layout**e quindi fare clic sul pulsante cluster veloci **cluster veloci** ![ sulla barra degli strumenti del grafico ](../modeling/media/quickclustersicon.gif) .|
+|Selezionare uno o più nodi sulla mappa.|Fare clic su un nodo per selezionarlo. Per selezionare o deselezionare più di un nodo, tenere premuto **CTRL** mentre si fa clic su.<br /><br /> Tastiera: premere **Tab** o usare i tasti di direzione per spostare il rettangolo di attivazione punteggiata in un nodo e premere **lo spazio** per selezionarlo. Premere **CTRL +**  +  **barra spaziatrice** per selezionare o deselezionare i nodi.|
 |Spostare nodi specifici sulla mappa.|Trascinare i nodi per spostarli. Per spostare altri nodi e collegamenti fuori dalla modalità di trascinamento dei nodi, tenere premuto il tasto **MAIUSC** .<br /><br /> Tastiera: tenere premuto **CTRL** e premere i tasti di direzione.|
-|Modificare il layout all'interno di un gruppo indipendentemente dagli altri nodi e gruppi sulla mappa.|Selezionare un nodo e aprire il menu di scelta rapida. Scegliere **layout** e selezionare uno stile di layout.<br /><br /> - oppure -<br /><br /> Selezionare un nodo ed espanderlo per visualizzare i nodi figlio. Fare clic sul titolo del nodo per visualizzare la barra degli strumenti popup del gruppo e aprire la barra degli strumenti **modifica lo stile di layout della**![barra degli](../modeling/media/dependencygraph_grouptoolbar.gif) strumenti del gruppo di dipendenze del gruppo &#45; &#45; elenco. Selezionare uno dei layout di struttura ad albero, i **cluster rapidi**o la **visualizzazione elenco** (che consente di disporre il contenuto del gruppo in un elenco).<br /><br /> Per altri dettagli, vedere [nodi gruppo](#OrganizeGroups) .|
-|Annullare un'azione nella mappa.|Premere **CTRL** + **Z** o usare il comando **Annulla** di Visual Studio.|
+|Modificare il layout all'interno di un gruppo indipendentemente dagli altri nodi e gruppi sulla mappa.|Selezionare un nodo e aprire il menu di scelta rapida. Scegliere **layout** e selezionare uno stile di layout.<br /><br /> - oppure -<br /><br /> Selezionare un nodo ed espanderlo per visualizzare i nodi figlio. Fare clic sul titolo del nodo per visualizzare la barra degli strumenti popup del gruppo e aprire la barra degli strumenti **modifica lo stile di layout della** ![ barra degli strumenti del gruppo di dipendenze del gruppo &#45; &#45; ](../modeling/media/dependencygraph_grouptoolbar.gif) elenco. Selezionare uno dei layout di struttura ad albero, i **cluster rapidi**o la **visualizzazione elenco** (che consente di disporre il contenuto del gruppo in un elenco).<br /><br /> Per altri dettagli, vedere [nodi gruppo](#OrganizeGroups) .|
+|Annullare un'azione nella mappa.|Premere **CTRL**  +  **Z** o usare il comando **Annulla** di Visual Studio.|
 
 ## <a name="browse-the-map"></a><a name="Explore"></a>Esplorare la mappa
 
-|**A**|**Eseguire questi passaggi**|
+|**To**|**Eseguire questi passaggi**|
 |-|-|
-|Analizzare la mappa.|Trascinare la mappa in qualsiasi direzione usando il mouse.<br /><br /> - oppure -<br /><br /> Tenere premuto **MAIUSC** e ruotare la rotellina del mouse per scorrere orizzontalmente. Tenere premuto **MAIUSC** + **CTRL** e ruotare la rotellina del mouse per scorrere orizzontalmente.|
+|Analizzare la mappa.|Trascinare la mappa in qualsiasi direzione usando il mouse.<br /><br /> - oppure -<br /><br /> Tenere premuto **MAIUSC** e ruotare la rotellina del mouse per scorrere orizzontalmente. Tenere premuto **MAIUSC**  +  **CTRL** e ruotare la rotellina del mouse per scorrere orizzontalmente.|
 |Ingrandire o ridurre la mappa.|Ruotare la rotellina del mouse.<br /><br /> - oppure -<br /><br /> Usare l'elenco a discesa **Zoom** sulla barra degli strumenti della mappa codice.<br /><br /> - oppure -<br /><br /> Usare i tasti di scelta rapida. Per eseguire lo zoom avanti, premere **CTRL + MAIUSC +.** (punto). Per eseguire lo zoom indietro, premere **CTRL + MAIUSC +,** (virgola).|
 |Ingrandire un'area specifica usando il mouse.|Tenere premuto il pulsante destro del mouse mentre si disegna un rettangolo intorno all'area di interesse.|
-|Ridimensionare e adattare la mappa alla relativa finestra.|Scegliere **zoom per adattarlo** dall'elenco **Zoom** sulla barra degli strumenti della mappa codice.<br /><br /> - oppure -<br /><br /> Fare clic sull'icona Zoom **per adatta** icona ![zoom sulla barra](../modeling/media/almcodemapzoomicon.png) degli strumenti della mappa sulla barra degli strumenti della mappa codice. Tastiera: premere **CTRL + 0** (zero).|
-|Trovare un nodo sulla mappa in base al nome. **Suggerimento:**  Funziona solo per gli elementi della mappa. Per trovare gli elementi nella soluzione, ma non nella mappa, individuarli in **Esplora soluzioni**, quindi trascinarli nella mappa. Trascinare la selezione oppure fare clic su **Mostra in mappa codice**sulla barra degli strumenti **Esplora soluzioni** .|1. **scegliere l'icona trova icona** ![trova sulla barra degli](../modeling/media/almcodemapfindicon.png) strumenti della mappa sulla barra degli strumenti della mappa codice (tastiera: premere **CTRL + F**) per visualizzare la casella di ricerca nell'angolo superiore destro della mappa.<br />2. digitare il nome dell'elemento e premere **invio** oppure fare clic sull'icona "Magnifier". Il primo elemento che corrisponde alla ricerca appare selezionato nella mappa.<br />3. per personalizzare la ricerca, aprire l'elenco a discesa e scegliere un'opzione di ricerca. Le opzioni disponibili sono **Trova successivo**, **Trova precedente**e **Seleziona tutto**. Fare quindi clic sul pulsante corrispondente accanto alla casella di testo di ricerca.<br />     ![Elenco di opzioni di ricerca a discesa&#45;](../modeling/media/almcodemapssearchdropdown.png)<br />     In alternativa, usare la tastiera: premere **F3** per selezionare il nodo corrispondente successivo o **MAIUSC + F3** per selezionare il nodo corrispondente precedente.<br />4. Selezionare una delle opzioni che specificano la modalità di gestione dei termini di ricerca facendo clic sulle icone sotto la casella di testo di ricerca.<br />     ![Opzioni di corrispondenza della ricerca](../modeling/media/almcodemapssearchmatchicons.png)<br />     Da sinistra a destra, le opzioni sono, corrispondenza con distinzione tra maiuscole e minuscole, corrispondenza solo con parole intere, uso della sintassi per le espressioni regolari .NET, espansione automatica dei gruppi per mostrare le corrispondenze per gli elementi inclusi. **Importante:**  È possibile usare la casella di ricerca per trovare le corrispondenze nei gruppi compressi solo se tali gruppi sono stati espansi in precedenza. Per trovare queste corrispondenze ed espandere automaticamente i relativi gruppi padre, scegliere questa opzione sotto la casella di ricerca.|
+|Ridimensionare e adattare la mappa alla relativa finestra.|Scegliere **zoom per adattarlo** dall'elenco **Zoom** sulla barra degli strumenti della mappa codice.<br /><br /> - oppure -<br /><br /> Fare clic sull'icona Zoom **per adatta** icona ![ Zoom sulla barra degli strumenti ](../modeling/media/almcodemapzoomicon.png) della mappa sulla barra degli strumenti della mappa codice. Tastiera: premere **CTRL + 0** (zero).|
+|Trovare un nodo sulla mappa in base al nome. **Suggerimento:**  Funziona solo per gli elementi della mappa. Per trovare gli elementi nella soluzione, ma non nella mappa, individuarli in **Esplora soluzioni**, quindi trascinarli nella mappa. Trascinare la selezione oppure fare clic su **Mostra in mappa codice**sulla barra degli strumenti **Esplora soluzioni** .|1. **scegliere l'icona trova icona** ![ trova sulla barra degli strumenti della mappa ](../modeling/media/almcodemapfindicon.png) sulla barra degli strumenti della mappa codice (tastiera: premere **CTRL + F**) per visualizzare la casella di ricerca nell'angolo superiore destro della mappa.<br />2. digitare il nome dell'elemento e premere **invio** oppure fare clic sull'icona "Magnifier". Il primo elemento che corrisponde alla ricerca appare selezionato nella mappa.<br />3. per personalizzare la ricerca, aprire l'elenco a discesa e scegliere un'opzione di ricerca. Le opzioni disponibili sono **Trova successivo**, **Trova precedente**e **Seleziona tutto**. Fare quindi clic sul pulsante corrispondente accanto alla casella di testo di ricerca.<br />     ![Elenco di opzioni di ricerca a discesa&#45;](../modeling/media/almcodemapssearchdropdown.png)<br />     In alternativa, usare la tastiera: premere **F3** per selezionare il nodo corrispondente successivo o **MAIUSC + F3** per selezionare il nodo corrispondente precedente.<br />4. Selezionare una delle opzioni che specificano la modalità di gestione dei termini di ricerca facendo clic sulle icone sotto la casella di testo di ricerca.<br />     ![Opzioni di corrispondenza della ricerca](../modeling/media/almcodemapssearchmatchicons.png)<br />     Da sinistra a destra, le opzioni sono, corrispondenza con distinzione tra maiuscole e minuscole, corrispondenza solo con parole intere, uso della sintassi per le espressioni regolari .NET, espansione automatica dei gruppi per mostrare le corrispondenze per gli elementi inclusi. **Importante:**  È possibile usare la casella di ricerca per trovare le corrispondenze nei gruppi compressi solo se tali gruppi sono stati espansi in precedenza. Per trovare queste corrispondenze ed espandere automaticamente i relativi gruppi padre, scegliere questa opzione sotto la casella di ricerca.|
 |Selezionare tutti i nodi non selezionati.|Aprire il menu di scelta rapida per i nodi selezionati. Scegliere **Seleziona**, **Inverti selezione**.|
 |Selezionare altri nodi che si collegano a quelli selezionati.|Aprire il menu di scelta rapida per i nodi selezionati. Scegliere **Seleziona** e uno dei seguenti:<br /><br /> -Per selezionare nodi aggiuntivi collegati direttamente al nodo selezionato, scegliere **dipendenze in ingresso**.<br />-Per selezionare nodi aggiuntivi che si collegano direttamente dal nodo selezionato, scegliere **dipendenze in uscita**.<br />-Per selezionare nodi aggiuntivi che si collegano direttamente al e dal nodo selezionato, scegliere **entrambi**.<br />-Per selezionare tutti i nodi che si collegano al e dal nodo selezionato, scegliere **Sottografico connesso**.<br />-Per selezionare tutti gli elementi figlio del nodo selezionato, scegliere **figli**.|
 
 ## <a name="filter-nodes-and-links"></a><a name="FilterNodes"></a>Filtrare nodi e collegamenti
 
-|**A**|**Eseguire questi passaggi**|
+|**To**|**Eseguire questi passaggi**|
 |-|-|
 |Visualizzare o nascondere il riquadro Filtri.|Scegliere il pulsante **filtri** sulla barra degli strumenti della mappa codice. Per impostazione predefinita, il riquadro **filtri** viene visualizzato come pagina a schede in **Esplora soluzioni**.|
 |Filtrare i tipi di nodi visualizzati sulla mappa.|Impostare o deselezionare le caselle di controllo nell'elenco **elementi di codice** nel riquadro filtri.|
@@ -104,13 +104,13 @@ Le mappe codice mostrano i tipi di collegamenti seguenti:
 > [!TIP]
 > Per impostazione predefinita, la mappa mostra i collegamenti tra gruppi solo per i nodi selezionati. Per modificare questo comportamento per mostrare o nascondere i collegamenti aggregati tra gruppi, fare clic su **layout** sulla barra degli strumenti della mappa codice e scegliere **Avanzate**, quindi **Mostra tutti i** collegamenti tra gruppi o **Nascondi tutti i collegamenti**tra gruppi. Per altri dettagli, vedere [nascondere o visualizzare nodi e collegamenti](#HidingShowing) .
 
-|**A**|**Eseguire questi passaggi**|
+|**To**|**Eseguire questi passaggi**|
 |-|-|
 |Visualizzare altre informazioni su un nodo o un collegamento.|Spostare il puntatore del mouse sopra un nodo o un collegamento finché non viene visualizzata una descrizione comando.<br /><br /> La descrizione comando per un collegamento di aggregazione elenca le singole dipendenze che rappresenta.<br /><br /> - oppure -<br /><br /> Aprire il menu di scelta rapida per il nodo o il collegamento. Scegliere **modifica**, **Proprietà**.|
-|Mostrare o nascondere il contenuto di un gruppo.|-Per espandere un gruppo, aprire il menu di scelta rapida per il nodo e scegliere **gruppo**, **Espandi**.<br />     - oppure -<br />     Spostare il puntatore del mouse sopra il nodo finché non viene visualizzato il pulsante con la freccia di espansione (freccia giù). Fare clic su questo pulsante per espandere il gruppo. Tastiera: per espandere o comprimere il gruppo selezionato, **PLUS** premere il tasto**+** più () o il tasto**-** **meno** ().<br />-Per comprimere un gruppo, aprire il menu di scelta rapida per il nodo e scegliere **gruppo**, **Comprimi**.<br />     - oppure -<br />     Spostare il puntatore del mouse sopra un gruppo finché non viene visualizzato il pulsante con la freccia di espansione (freccia su). Fare clic su questo pulsante per comprimere il gruppo.<br />-Per espandere tutti i gruppi, premere **CTRL** + **a** per selezionare tutti i nodi. Aprire il menu di scelta rapida per la mappa e scegliere **gruppo**, **Espandi**. **Nota:**      Questo comando non è disponibile se l'espansione di tutti i gruppi genera una mappa inutilizzabile o problemi di memoria. È consigliabile espandere la mappa solo fino al livello di dettaglio che interessa.<br />-Per comprimere tutti i gruppi, aprire il menu di scelta rapida per un nodo o per la mappa. Scegliere **gruppo**, **Comprimi tutto**.|
+|Mostrare o nascondere il contenuto di un gruppo.|-Per espandere un gruppo, aprire il menu di scelta rapida per il nodo e scegliere **gruppo**, **Espandi**.<br />     - oppure -<br />     Spostare il puntatore del mouse sopra il nodo finché non viene visualizzato il pulsante con la freccia di espansione (freccia giù). Fare clic su questo pulsante per espandere il gruppo. Tastiera: per espandere o comprimere il gruppo selezionato, premere il tasto **più** ( **+** ) o il tasto **meno** ( **-** ).<br />-Per comprimere un gruppo, aprire il menu di scelta rapida per il nodo e scegliere **gruppo**, **Comprimi**.<br />     - oppure -<br />     Spostare il puntatore del mouse sopra un gruppo finché non viene visualizzato il pulsante con la freccia di espansione (freccia su). Fare clic su questo pulsante per comprimere il gruppo.<br />-Per espandere tutti i gruppi, premere **CTRL**  +  **a** per selezionare tutti i nodi. Aprire il menu di scelta rapida per la mappa e scegliere **gruppo**, **Espandi**. **Nota:**      Questo comando non è disponibile se l'espansione di tutti i gruppi genera una mappa inutilizzabile o problemi di memoria. È consigliabile espandere la mappa solo fino al livello di dettaglio che interessa.<br />-Per comprimere tutti i gruppi, aprire il menu di scelta rapida per un nodo o per la mappa. Scegliere **gruppo**, **Comprimi tutto**.|
 |Visualizzare la definizione di codice per uno spazio dei nomi, un tipo o un membro.|Aprire il menu di scelta rapida per il nodo e scegliere **Vai a definizione**.<br /><br /> -oppure-<br /><br /> Fare doppio clic sul nodo. Per espandere i gruppi, fare doppio clic sull'intestazione del gruppo.<br /><br /> -oppure-<br /><br /> Selezionare il nodo e premere **F12**.<br /><br /> Ad esempio:<br /><br /> -Per uno spazio dei nomi contenente una classe, viene aperto il file di codice per la classe per visualizzare la definizione di tale classe. In altri casi, la finestra **Risultati ricerca simbolo** Visualizza un elenco di file di codice. **Nota:**      Quando si esegue questa attività in uno spazio dei nomi Visual Basic, il file di codice dietro lo spazio dei nomi non viene aperto. Questo problema si verifica anche quando si esegue questa attività su un gruppo di nodi selezionati che includono uno spazio dei nomi Visual Basic. Per risolvere il problema, individuare manualmente il file di codice associato allo spazio dei nomi oppure omettere dalla selezione il nodo per lo spazio dei nomi.<br />-Per una classe o una classe parziale, viene aperto il file di codice per tale classe per visualizzare la definizione della classe.<br />-Per un metodo, viene aperto il file di codice per la classe padre per visualizzare la definizione del metodo.|
-|Esaminare le dipendenze e gli elementi che fanno parte di un collegamento di aggregazione.|Selezionare i collegamenti a cui si è interessati e aprire il menu di scelta rapida per la selezione. Scegliere **Mostra collegamenti partecipanti** o **Mostra collegamenti che contribuiscono alla nuova mappa del codice**.<br /><br /> In Visual Studio i gruppi vengono espansi a entrambe le estremità del collegamento e vengono mostrati solo gli elementi e le dipendenze che partecipano al collegamento. **Nota:**  Quando si esaminano le dipendenze tra elementi in gruppi parziali, è possibile che venga visualizzato questo comportamento: <ul><li>I collegamenti a elementi che non partecipano all'esame scompaiono dalla mappa, anche se tali collegamenti esistono ancora.</li><li>Si supponga di esaminare un collegamento a un elemento in un gruppo parziale e successivamente di esaminare un collegamento diverso allo stesso elemento. Durante la seconda analisi, il gruppo parziale di destinazione mostra solo gli elementi della prima analisi. I collegamenti e gli elementi di destinazione che non hanno partecipato al primo esame ma che partecipano al secondo esame non vengono visualizzati.</li></ul> Per visualizzare gli elementi mancanti da un gruppo, scegliere **Recupera nuovamente Children**![icona](../modeling/media/dependencygraph_deletednodesicon.png) rifetch Children (che indica che non tutti i membri di un gruppo vengono visualizzati nella mappa). È anche possibile provare a eseguire le azioni (tastiera: premere **CTRL + Z**) ed esaminare le dipendenze su una nuova mappa.|
-|Esaminare le dipendenze tra più nodi in gruppi diversi.|Espandere i gruppi per visualizzare tutti i relativi elementi figlio. Selezionare tutti i nodi che interessano, inclusi i relativi elementi figlio. La mappa mostra i collegamenti tra gruppi tra i nodi selezionati.<br /><br /> Per selezionare tutti i nodi in un gruppo, tenere premuto **MAIUSC** e il pulsante sinistro del mouse mentre si estrae un rettangolo attorno a tale gruppo. Per selezionare tutti i nodi di una mappa, premere **CTRL**+**a**. **Suggerimento:**  Per visualizzare sempre i collegamenti tra gruppi, scegliere **layout** sulla barra degli strumenti della mappa, **Avanzate**, **Mostra tutti i collegamenti tra gruppi**.|
+|Esaminare le dipendenze e gli elementi che fanno parte di un collegamento di aggregazione.|Selezionare i collegamenti a cui si è interessati e aprire il menu di scelta rapida per la selezione. Scegliere **Mostra collegamenti partecipanti** o **Mostra collegamenti che contribuiscono alla nuova mappa del codice**.<br /><br /> In Visual Studio i gruppi vengono espansi a entrambe le estremità del collegamento e vengono mostrati solo gli elementi e le dipendenze che partecipano al collegamento. **Nota:**  Quando si esaminano le dipendenze tra elementi in gruppi parziali, è possibile che venga visualizzato questo comportamento: <ul><li>I collegamenti a elementi che non partecipano all'esame scompaiono dalla mappa, anche se tali collegamenti esistono ancora.</li><li>Si supponga di esaminare un collegamento a un elemento in un gruppo parziale e successivamente di esaminare un collegamento diverso allo stesso elemento. Durante la seconda analisi, il gruppo parziale di destinazione mostra solo gli elementi della prima analisi. I collegamenti e gli elementi di destinazione che non hanno partecipato al primo esame ma che partecipano al secondo esame non vengono visualizzati.</li></ul> Per visualizzare gli elementi mancanti da un gruppo, scegliere **Recupera nuovamente Children** ![ icona rifetch Children ](../modeling/media/dependencygraph_deletednodesicon.png) (che indica che non tutti i membri di un gruppo vengono visualizzati nella mappa). È anche possibile provare a eseguire le azioni (tastiera: premere **CTRL + Z**) ed esaminare le dipendenze su una nuova mappa.|
+|Esaminare le dipendenze tra più nodi in gruppi diversi.|Espandere i gruppi per visualizzare tutti i relativi elementi figlio. Selezionare tutti i nodi che interessano, inclusi i relativi elementi figlio. La mappa mostra i collegamenti tra gruppi tra i nodi selezionati.<br /><br /> Per selezionare tutti i nodi in un gruppo, tenere premuto **MAIUSC** e il pulsante sinistro del mouse mentre si estrae un rettangolo attorno a tale gruppo. Per selezionare tutti i nodi di una mappa, premere **CTRL** + **a**. **Suggerimento:**  Per visualizzare sempre i collegamenti tra gruppi, scegliere **layout** sulla barra degli strumenti della mappa, **Avanzate**, **Mostra tutti i collegamenti tra gruppi**.|
 |Visualizzare gli elementi a cui fa riferimento un nodo o un collegamento.|Aprire il menu di scelta rapida per il nodo e scegliere **Trova tutti i riferimenti**. **Nota:**  Questo vale solo quando l' `Reference` attributo è impostato per il nodo o il collegamento nel file con estensione dgml della mappa. Per aggiungere riferimenti a elementi da nodi o collegamenti, vedere [personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|
 
 ## <a name="hide-or-show-nodes-and-links"></a><a name="HidingShowing"></a>Nascondere o visualizzare nodi e collegamenti
@@ -122,15 +122,15 @@ Se vengono nascosti, i nodi non possono partecipare ad algoritmi di layout. Per 
 
 ### <a name="to-hide-or-show-nodes"></a>Per nascondere o mostrare nodi
 
-|**A**|**Eseguire questi passaggi**|
+|**To**|**Eseguire questi passaggi**|
 |-|-|
 |Nascondere nodi selezionati.|1. Selezionare i nodi che si desidera nascondere.<br />2. Aprire il menu di scelta rapida per i nodi selezionati o per la mappa. Scegliere **Seleziona**, **Nascondi selezionato**.|
 |Nascondere i nodi non selezionati.|1. Selezionare i nodi che si desidera mantenere visibili.<br />2. Aprire il menu di scelta rapida per i nodi selezionati o per la mappa. Scegliere **Seleziona**, **Nascondi non selezionato**.|
-|Mostrare i nodi nascosti.|-Per visualizzare tutti i nodi nascosti all'interno di un gruppo, verificare innanzitutto che il gruppo sia espanso. Aprire il menu di scelta rapida e scegliere **Seleziona**, **Scopri elementi figlio**.<br />     - oppure -<br />     Fare clic sull'icona **Unhide**![Children Unhide](../modeling/media/dependencygraph_filtericon_hiddennodes.gif) Children icona nell'angolo superiore sinistro del gruppo. questa operazione è visibile solo quando sono presenti nodi figlio nascosti.<br />-Per visualizzare tutti i nodi nascosti, aprire il menu di scelta rapida per la mappa o un nodo e scegliere **Seleziona**, **Scopri tutto**.|
+|Mostrare i nodi nascosti.|-Per visualizzare tutti i nodi nascosti all'interno di un gruppo, verificare innanzitutto che il gruppo sia espanso. Aprire il menu di scelta rapida e scegliere **Seleziona**, **Scopri elementi figlio**.<br />     - oppure -<br />     Fare clic sull'icona **Unhide**Children ![ Unhide Children icona ](../modeling/media/dependencygraph_filtericon_hiddennodes.gif) nell'angolo superiore sinistro del gruppo. questa operazione è visibile solo quando sono presenti nodi figlio nascosti.<br />-Per visualizzare tutti i nodi nascosti, aprire il menu di scelta rapida per la mappa o un nodo e scegliere **Seleziona**, **Scopri tutto**.|
 
 ### <a name="to-hide-or-show-links"></a>Per nascondere o mostrare collegamenti
 
-|**A**|**Sulla barra degli strumenti della mappa scegliere Layout, Avanzate e quindi scegliere**|
+|**To**|**Sulla barra degli strumenti della mappa scegliere Layout, Avanzate e quindi scegliere**|
 |-|-|
 |Mostrare sempre tutti i collegamenti tra gruppi.|**Mostra tutti i collegamenti tra gruppi**. In questo modo i collegamenti aggregati tra gruppi vengono nascosti.|
 |Nascondere sempre i collegamenti tra gruppi.|**Nascondi tutti i collegamenti tra gruppi**|
@@ -139,10 +139,10 @@ Se vengono nascosti, i nodi non possono partecipare ad algoritmi di layout. Per 
 
 ## <a name="group-nodes"></a><a name="OrganizeGroups"></a>Nodi gruppo
 
-|**A**|**Eseguire questi passaggi**|
+|**To**|**Eseguire questi passaggi**|
 |-|-|
 |Mostrare nodi contenitore come nodi gruppo o nodi foglia.|Per visualizzare i nodi del contenitore come nodi foglia: selezionare i nodi, aprire il menu di scelta rapida per la selezione e scegliere **gruppo**, **Converti in foglia**.<br /><br /> Per visualizzare i nodi del contenitore come nodi Gruppo: selezionare i nodi, aprire il menu di scelta rapida per la selezione e scegliere **gruppo**, **Converti in gruppo**.|
-|Modificare il layout all'interno di un gruppo.|Selezionare il gruppo, aprire il menu di scelta rapida, scegliere **layout**e selezionare lo stile di layout desiderato.<br /><br /> - oppure -<br /><br /> 1. Selezionare il gruppo e verificare che sia espanso.<br />2. fare di nuovo clic sull'intestazione di gruppo per visualizzare la barra degli strumenti del gruppo.<br />     ![Barra degli strumenti del gruppo di &#45; del grafico dipendenze](../modeling/media/dependencygraph_group.png)<br />3. Aprire lo **stile modificare lo stile di layout del** grafico ![dipendenze elenco gruppo &#45; barra degli](../modeling/media/dependencygraph_grouptoolbar.gif) strumenti gruppo &#45; layout e scegliere lo stile di layout desiderato.<br /><br /> **Visualizzazione elenco** riorganizza i membri del gruppo nell'elenco. **Grafico predefinito** Reimposta il layout del gruppo sul layout predefinito della mappa. Per altre opzioni, vedere [modificare il layout della mappa](#Selecting).|
+|Modificare il layout all'interno di un gruppo.|Selezionare il gruppo, aprire il menu di scelta rapida, scegliere **layout**e selezionare lo stile di layout desiderato.<br /><br /> - oppure -<br /><br /> 1. Selezionare il gruppo e verificare che sia espanso.<br />2. fare di nuovo clic sull'intestazione di gruppo per visualizzare la barra degli strumenti del gruppo.<br />     ![Barra degli strumenti del gruppo di &#45; del grafico dipendenze](../modeling/media/dependencygraph_group.png)<br />3. Aprire lo **stile modificare lo stile di layout del** ![ grafico dipendenze elenco gruppo &#45; barra degli strumenti gruppo &#45; layout ](../modeling/media/dependencygraph_grouptoolbar.gif) e scegliere lo stile di layout desiderato.<br /><br /> **Visualizzazione elenco** riorganizza i membri del gruppo nell'elenco. **Grafico predefinito** Reimposta il layout del gruppo sul layout predefinito della mappa. Per altre opzioni, vedere [modificare il layout della mappa](#Selecting).|
 |Aggiungere un nodo a un gruppo.|Trascinare il nodo nel gruppo.<br /><br /> Mentre si trascina il nodo, Visual Studio visualizza un indicatore per mostrare che si sta spostando il nodo.<br /><br /> È inoltre possibile trascinare i nodi da un gruppo.|
 |Aggiungere un nodo a un nodo non di gruppo.|Trascinare il nodo nel nodo di destinazione. È possibile convertire qualsiasi nodo di destinazione in un gruppo aggiungendovi nodi.|
 |Raggruppare nodi selezionati.|1. Selezionare i nodi che si desidera raggruppare. Sopra l'ultimo nodo selezionato viene visualizzata una barra degli strumenti popup.<br />     ![Barra degli strumenti del grafico delle dipendenze](../modeling/media/depedencygraph_toolbar.png)<br />2. sulla barra degli strumenti scegliere la quarta icona **raggruppa i nodi selezionati** . se il nodo è espanso, avrà cinque anziché quattro icone. Digitare il nome del nuovo gruppo e premere **invio**.<br />     - oppure -<br />     Selezionare i nodi da raggruppare e aprire il menu di scelta rapida per la selezione. Scegliere **gruppo**, **Aggiungi gruppo padre**, digitare il nome del nuovo gruppo e premere **invio**.<br /><br /> Il gruppo può essere rinominato. Aprire il menu di scelta rapida per il gruppo e scegliere **modifica**, **Proprietà** per aprire Visual Studio finestra Proprietà. Nella proprietà **Label** rinominare il gruppo in modo che sia necessario.|
@@ -158,18 +158,18 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
 ### <a name="add-a-node-for-a-code-element"></a>Aggiungere un nodo per un elemento di codice
 
-|**A**|**Eseguire questi passaggi**|
+|**To**|**Eseguire questi passaggi**|
 |-|-|
 |Aggiungere un nuovo nodo generico nella posizione corrente del puntatore del mouse.|1. spostare il puntatore del mouse nella posizione sulla mappa in cui si vuole inserire il nuovo elemento di codice e premere **ins**.<br />     - oppure -<br />     Aprire il menu di scelta rapida per la mappa e scegliere **modifica**, **Aggiungi**, **nodo generico**.<br />2. digitare il nome del nuovo nodo e premere **invio**.|
 |Aggiungere un tipo specifico di nodo elemento di codice nella posizione corrente del puntatore del mouse.|1. spostare il puntatore del mouse nella posizione sulla mappa in cui si vuole inserire il nuovo elemento di codice e aprire il menu di scelta rapida per la mappa.<br />2. scegliere **modifica**, **Aggiungi**e selezionare il tipo di nodo desiderato.<br />3. digitare il nome del nuovo nodo e premere **invio**.|
 |Aggiungere un tipo specifico o generico di nodo elemento di codice a un gruppo.|1. Selezionare il nodo gruppo e aprire il menu di scelta rapida.<br />2. scegliere **modifica**, **Aggiungi**e selezionare il tipo di nodo desiderato.<br />3. digitare il nome del nuovo nodo e premere **invio**.|
 |Aggiungere un nuovo nodo dello stesso tipo e collegato da un nodo esistente.|1. Selezionare l'elemento di codice. Sopra di esso verrà visualizzata una barra degli strumenti popup.<br />     ![Barra degli strumenti del grafico delle dipendenze](../modeling/media/depedencygraph_toolbar.png)<br />2. sulla barra degli strumenti scegliere la seconda icona **Crea un nodo con la stessa categoria di questo nodo e Aggiungi un nuovo collegamento**.<br />3. scegliere una posizione sulla mappa in cui inserire il nuovo elemento di codice e fare clic sul pulsante sinistro del mouse.<br />4. digitare il nome del nuovo nodo e premere **invio**.|
-|Aggiungere un nuovo nodo generico collegato da un elemento di codice esistente con lo stato attivo.|1. utilizzando la tastiera, premere **Tab** fino a quando l'elemento di codice per il collegamento non ha lo stato attivo (rettangolo tratteggiato).<br />2. Premere **ALT**+**ins**.<br />3. digitare il nome del nuovo nodo e premere **invio**.|
-|Aggiungere un nuovo nodo generico che si collega a un elemento di codice esistente con lo stato attivo.|1. utilizzando la tastiera, premere **Tab** fino a quando l'elemento di codice a cui collegarsi ha lo stato attivo (rettangolo tratteggiato).<br />2. Premere **ALT**+**MAIUSC**+**ins**.<br />3. digitare il nome del nuovo nodo e premere **invio**.|
+|Aggiungere un nuovo nodo generico collegato da un elemento di codice esistente con lo stato attivo.|1. utilizzando la tastiera, premere **Tab** fino a quando l'elemento di codice per il collegamento non ha lo stato attivo (rettangolo tratteggiato).<br />2. Premere **ALT** + **ins**.<br />3. digitare il nome del nuovo nodo e premere **invio**.|
+|Aggiungere un nuovo nodo generico che si collega a un elemento di codice esistente con lo stato attivo.|1. utilizzando la tastiera, premere **Tab** fino a quando l'elemento di codice a cui collegarsi ha lo stato attivo (rettangolo tratteggiato).<br />2. Premere **ALT** + **MAIUSC** + **ins**.<br />3. digitare il nome del nuovo nodo e premere **invio**.|
 
 |**Per aggiungere elementi di codice per**|**Eseguire questi passaggi**|
 |-|-|
-|Elementi di codice nella soluzione.|1. trovare l'elemento di codice in **Esplora soluzioni**. Utilizzare la casella di ricerca **Esplora soluzioni** o esplorare la soluzione. **Suggerimento:**      Per trovare gli elementi di codice con dipendenze da un tipo o un membro, aprire il menu di scelta rapida per il tipo o il membro in **Esplora soluzioni**. Scegliere la relazione che interessa. **Esplora soluzioni** Mostra solo gli elementi di codice con le dipendenze specificate.<br />2. trascinare gli elementi di codice che interessano la superficie della mappa. È anche possibile trascinare elementi di codice da Visualizzazione classi o da Visualizzatore oggetti.<br />     - oppure -<br />     In **Esplora soluzioni**selezionare gli elementi di codice di cui si desidera eseguire il mapping. Quindi, sulla barra degli strumenti **Esplora soluzioni** fare clic su **Mostra in mappa codici**.<br /><br /> Per impostazione predefinita, sulla mappa viene visualizzata la gerarchia del contenitore padre per i nuovi elementi di codice. Utilizzare il pulsante **Includi padri** nella barra degli strumenti della mappa codice per modificare questo comportamento. Quando è disattivato, solo lo stesso elemento di codice viene aggiunto alla mappa. Per invertire questo comportamento per una sola azione di trascinamento, tenere premuto il tasto **CTRL** mentre si trascinano gli elementi di codice nella mappa.<br /><br /> Visual Studio aggiunge elementi di codice per gli elementi di codice di primo livello nella selezione. Per vedere se un elemento di codice contiene altri elementi di codice, spostare il puntatore del mouse sopra l'elemento di codice in modo da visualizzare la freccia di espansione (freccia giù). Fare clic sulla freccia di espansione per espandere l'elemento di codice. Per espandere tutti gli elementi di codice, premere **CTRL**+**a** per selezionare tutti gli elementi, aprire il menu di scelta rapida per la mappa e scegliere **gruppo**, **Espandi**. Questo comando non è disponibile se l'espansione di tutti i gruppi genera una mappa inutilizzabile o problemi di memoria insufficiente.|
+|Elementi di codice nella soluzione.|1. trovare l'elemento di codice in **Esplora soluzioni**. Utilizzare la casella di ricerca **Esplora soluzioni** o esplorare la soluzione. **Suggerimento:**      Per trovare gli elementi di codice con dipendenze da un tipo o un membro, aprire il menu di scelta rapida per il tipo o il membro in **Esplora soluzioni**. Scegliere la relazione che interessa. **Esplora soluzioni** Mostra solo gli elementi di codice con le dipendenze specificate.<br />2. trascinare gli elementi di codice che interessano la superficie della mappa. È anche possibile trascinare elementi di codice da Visualizzazione classi o da Visualizzatore oggetti.<br />     - oppure -<br />     In **Esplora soluzioni**selezionare gli elementi di codice di cui si desidera eseguire il mapping. Quindi, sulla barra degli strumenti **Esplora soluzioni** fare clic su **Mostra in mappa codici**.<br /><br /> Per impostazione predefinita, sulla mappa viene visualizzata la gerarchia del contenitore padre per i nuovi elementi di codice. Utilizzare il pulsante **Includi padri** nella barra degli strumenti della mappa codice per modificare questo comportamento. Quando è disattivato, solo lo stesso elemento di codice viene aggiunto alla mappa. Per invertire questo comportamento per una sola azione di trascinamento, tenere premuto il tasto **CTRL** mentre si trascinano gli elementi di codice nella mappa.<br /><br /> Visual Studio aggiunge elementi di codice per gli elementi di codice di primo livello nella selezione. Per vedere se un elemento di codice contiene altri elementi di codice, spostare il puntatore del mouse sopra l'elemento di codice in modo da visualizzare la freccia di espansione (freccia giù). Fare clic sulla freccia di espansione per espandere l'elemento di codice. Per espandere tutti gli elementi di codice, premere **CTRL** + **a** per selezionare tutti gli elementi, aprire il menu di scelta rapida per la mappa e scegliere **gruppo**, **Espandi**. Questo comando non è disponibile se l'espansione di tutti i gruppi genera una mappa inutilizzabile o problemi di memoria insufficiente.|
 |Elementi di codice correlati a elementi di codice sulla mappa.|Fare clic sul pulsante **Mostra Related** sulla barra degli strumenti della mappa codice e scegliere il tipo di elementi correlati a cui si è interessati.<br /><br /> - oppure -<br /><br /> Aprire il menu di scelta rapida per l'elemento di codice. Scegliere uno degli elementi **Mostra...** nel menu a seconda del tipo di relazione che interessa. Ad esempio, è possibile visualizzare gli elementi a cui fa riferimento l'elemento corrente, gli elementi che fanno riferimento all'elemento corrente, i tipi di base e derivati per classi, i chiamanti del metodo e le classi, gli spazi dei nomi e gli assembly che li contengono.<br /><br /> Per altri dettagli, vedere [questo argomento](../modeling/map-dependencies-across-your-solutions.md).|
 |Assembly .NET (con estensione dll o exe) o file binari compilati.|Trascinare gli assembly o i file binari dall'esterno di Visual Studio su una mappa.<br /><br /> È possibile trascinare da Esplora risorse o Esplora file solo se questo componente e Visual Studio vengono eseguiti allo stesso livello di autorizzazione del controllo di accesso utente. Se, ad esempio, il controllo di accesso utente è attivato e si esegue Visual Studio come amministratore, Esplora risorse o Esplora file blocca l'operazione di trascinamento.|
 
@@ -191,7 +191,7 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
 2. Se è installato un mouse, spostare il puntatore del mouse fuori dai limiti della mappa.
 
-3. Aprire il menu di scelta rapida dell'elemento di codice e scegliere **modifica** > **Aggiungi** > **collegamento generico**.
+3. Aprire il menu di scelta rapida dell'elemento di codice e scegliere **modifica**  >  **Aggiungi**  >  **collegamento generico**.
 
 4. Premere TAB fino a selezionare l'elemento di codice di destinazione per il collegamento.
 
@@ -209,15 +209,15 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
      \- - oppure -
 
-     Aprire il menu di scelta rapida per l'elemento di codice e scegliere **modifica** > **nuovo commento**.
+     Aprire il menu di scelta rapida per l'elemento di codice e scegliere **modifica**  >  **nuovo commento**.
 
-3. Digitare i commenti. Per digitare una nuova riga, premere **MAIUSC** + **invio**.
+3. Digitare i commenti. Per digitare una nuova riga, premere **MAIUSC**  +  **invio**.
 
 #### <a name="add-a-comment-to-the-map-itself"></a>Aggiungere un commento alla mappa
 
-1. Aprire il menu di scelta rapida per la mappa e scegliere **modifica** > **nuovo commento**.
+1. Aprire il menu di scelta rapida per la mappa e scegliere **modifica**  >  **nuovo commento**.
 
-2. Digitare i commenti. Per digitare una nuova riga, premere **MAIUSC** + **invio**.
+2. Digitare i commenti. Per digitare una nuova riga, premere **MAIUSC**  +  **invio**.
 
 ### <a name="RenameNodes"></a>
 
@@ -225,13 +225,13 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
 1. Selezionare l'elemento di codice o il collegamento da rinominare.
 
-2. Premere **F2**oppure aprire il menu di scelta rapida e scegliere **modifica** > **Rinomina**.
+2. Premere **F2**oppure aprire il menu di scelta rapida e scegliere **modifica**  >  **Rinomina**.
 
 3. Quando viene visualizzata la casella di modifica nella mappa, rinominare l'elemento di codice o il collegamento.
 
 **OR**
 
-1. Aprire il menu di scelta rapida e scegliere **modifica** > **proprietà**.
+1. Aprire il menu di scelta rapida e scegliere **modifica**  >  **proprietà**.
 
 2. Modificare la proprietà **Label** nel finestra proprietà di Visual Studio.
 
@@ -241,9 +241,9 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
      \- - oppure -
 
-     Aprire il menu di scelta rapida per l'elemento di codice o il collegamento e scegliere **modifica** > **Rimuovi**.
+     Aprire il menu di scelta rapida per l'elemento di codice o il collegamento e scegliere **modifica**  >  **Rimuovi**.
 
-2. Se l'elemento o il collegamento fa parte di un gruppo, all'interno del gruppo ![viene visualizzata l'icona](../modeling/media/dependencygraph_deletednodesicon.png) **rirecupera figlio pulsante** rirecupera figlio. Fare clic su questo pulsante per recuperare elementi e collegamenti mancanti.
+2. Se l'elemento o il collegamento fa parte di un gruppo, **Refetch Children** all' ![ ](../modeling/media/dependencygraph_deletednodesicon.png) interno del gruppo viene visualizzata l'icona rirecupera figlio pulsante rirecupera figlio. Fare clic su questo pulsante per recuperare elementi e collegamenti mancanti.
 
 - È possibile rimuovere gli elementi di codice e i collegamenti da una mappa senza influire sul codice sottostante. Se vengono eliminati, le relative definizioni vengono rimosse dal file DGML (con estensione dgml).
 
@@ -253,11 +253,11 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
 1. Selezionare l'elemento di codice o il collegamento da contrassegnare per il completamento.
 
-2. Aprire il menu di scelta rapida e scegliere **modifica** > **flag per completamento**.
+2. Aprire il menu di scelta rapida e scegliere **modifica**  >  **flag per completamento**.
 
 - Per impostazione predefinita, all'elemento di codice viene applicato uno sfondo rosso. Prendere in considerazione l' [aggiunta di un commento](#AddComments) con le informazioni di completamento appropriate.
 
-- Modificare il colore di sfondo dell'elemento o cancellare il flag di completamento scegliendo **modifica** > **altri colori flag**.
+- Modificare il colore di sfondo dell'elemento o cancellare il flag di completamento scegliendo **modifica**  >  **altri colori flag**.
 
 ## <a name="change-the-style-of-a-code-element-or-link"></a><a name="ChangeStyleCodeOrLink"></a>Modificare lo stile di un elemento di codice o un collegamento
 
@@ -281,7 +281,7 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
     |**Per modificare il**|**Scegliere**|
     |-|-|
     |Colore di sfondo|**Background**|
-    |Colore del contorno|**Stroke**|
+    |Outline color|**Stroke**|
     |Colore del testo (viene visualizzata la lettera "f" per visualizzare il risultato)|**Foreground**|
     |Icona|**Icone**|
 
@@ -305,10 +305,10 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
 2. Effettuare una delle attività seguenti:
 
-    |**A**|**Scegliere**|
+    |**To**|**Scegliere**|
     |-|-|
-    |Disattivare l'elemento di codice|**Disabilitazione**|
-    |Eliminare l'elemento di codice|**Elimina**|
+    |Disattivare l'elemento di codice|**Disable**|
+    |Eliminare l'elemento di codice|**Eliminazione**|
     |Spostare lo stile in alto|**Sposta su**|
     |Spostare l'elemento di codice in basso|**Sposta giù**|
 
@@ -326,7 +326,7 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
 In alternativa, è possibile trascinare gli assembly o file binari da tale cartella nella stessa mappa.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)
 - [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)

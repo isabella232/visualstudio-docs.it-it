@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 709bc3dea92752d9e18c3163fe43864f5896471c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fab79fd4daab98c6cade9271b32c45b5ae4b4332
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666770"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545197"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Contrassegnare tutti i campi non serializzabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|MarkAllNonSerializableFields|
 |CheckId|CA2235|
@@ -36,13 +36,13 @@ ms.locfileid: "72666770"
  Un campo di istanza di un tipo non serializzabile viene dichiarato in un tipo serializzabile.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un tipo serializzabile è un tipo contrassegnato con l'attributo <xref:System.SerializableAttribute?displayProperty=fullName>. Quando il tipo viene serializzato, viene generata un'eccezione <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> se un tipo contiene un campo di istanza di un tipo che non è serializzabile.
+ Un tipo serializzabile è un tipo contrassegnato con l' <xref:System.SerializableAttribute?displayProperty=fullName> attributo. Quando il tipo viene serializzato, <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> viene generata un'eccezione se un tipo contiene un campo di istanza di un tipo che non è serializzabile.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, applicare l'attributo <xref:System.NonSerializedAttribute?displayProperty=fullName> al campo che non è serializzabile.
+ Per correggere una violazione di questa regola, applicare l' <xref:System.NonSerializedAttribute?displayProperty=fullName> attributo al campo non serializzabile.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Eliminare un avviso da questa regola solo se viene dichiarato un tipo <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> che consente la serializzazione e la deserializzazione delle istanze del campo.
+ Eliminare un avviso da questa regola solo se <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> viene dichiarato un tipo che consente la serializzazione e la deserializzazione delle istanze del campo.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene illustrato un tipo che viola la regola e un tipo che soddisfa la regola.
@@ -51,7 +51,7 @@ ms.locfileid: "72666770"
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.MarkNonSerializable/vb/FxCop.Usage.MarkNonSerializable.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2236: Chiamare metodi della classe base su tipi ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Chiamare metodi della classe di base su tipi ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2240: Implementare ISerializable in modo corretto](../code-quality/ca2240-implement-iserializable-correctly.md)
 

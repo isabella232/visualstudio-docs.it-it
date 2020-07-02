@@ -2,7 +2,7 @@
 title: Definire comandi di menu personalizzati per i progetti Python
 description: Modificando i file di progetto e delle destinazioni è possibile aggiungere comandi personalizzati al menu di scelta rapida del progetto Python in Visual Studio per richiamare programmi eseguibili, script, moduli, frammenti di codice inline e pip.
 ms.date: 11/12/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aee42648eb4a2de3611d20fc0ca83ff898ad1fa9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183080"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540868"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definire comandi personalizzati per i progetti Python
 
@@ -131,9 +131,9 @@ Per fare riferimento alle proprietà o alle variabili di ambiente del progetto n
 
 ### <a name="target-attributes"></a>Attributi Target
 
-| Attributo | Obbligatorio | Descrizione |
+| Attributo | Obbligatoria | Descrizione |
 | --- | --- | --- |
-| Nome | Sì | Identificatore per il comando all'interno del progetto di Visual Studio. Questo nome deve essere aggiunto al gruppo di proprietà `<PythonCommands>` per visualizzare il comando nel sottomenu Python. |
+| Name | Sì | Identificatore per il comando all'interno del progetto di Visual Studio. Questo nome deve essere aggiunto al gruppo di proprietà `<PythonCommands>` per visualizzare il comando nel sottomenu Python. |
 | Label | Sì | Nome visualizzato dell'interfaccia utente visualizzato nel sottomenu Python. |
 | Restituisce | Sì | Deve contenere `@(Commands)`, che identifica la destinazione come comando. |
 
@@ -141,7 +141,7 @@ Per fare riferimento alle proprietà o alle variabili di ambiente del progetto n
 
 Per tutti i valori di attributo non viene fatta distinzione tra maiuscole e minuscole.
 
-| Attributo | Obbligatorio | Descrizione |
+| Attributo | Obbligatoria | Descrizione |
 | --- | --- | --- |
 | TargetType | Sì | Specifica il contenuto dell'attributo Target e come viene usato insieme all'attributo Arguments:<ul><li>**executable**: eseguire il file eseguibile denominato in Target, aggiungendo il valore in Arguments, come in caso di immissione diretta nella riga di comando. Il valore deve contenere solo un nome di programma senza argomenti.</li><li>**script**: eseguire *python.exe* con il nome di file in Target seguito dal valore in Arguments.</li><li>**module**: eseguire `python -m` seguito dal nome del modulo in Target seguito dal valore in Arguments.</li><li>**code**: eseguire il codice inline contenuto in Target. Il valore di Arguments viene ignorato.</li><li>**pip**: eseguire `pip` con il comando in Target seguito da Arguments. Se ExecuteIn è impostato su "output", tuttavia, pip presuppone il comando `install` e usa Target come nome del pacchetto.</li></ul> |
 | Destinazione | Sì | Nome del file, nome del modulo, codice o comando pip da usare, a seconda di TargetType. |
@@ -150,7 +150,7 @@ Per tutti i valori di attributo non viene fatta distinzione tra maiuscole e minu
 | WorkingDirectory | Facoltativo | Cartella in cui eseguire il comando. |
 | ErrorRegex<br>WarningRegEx | Facoltativo | Usato solo quando è ExecuteIn è `output`. Entrambi i valori specificano un'espressione regolare con cui Visual Studio analizza l'output del comando per visualizzare errori e avvisi nella relativa finestra **Elenco errori**. Se non specificato, il comando non influisce sulla finestra **Elenco errori**. Per altre informazioni su cosa prevede Visual Studio , vedere [Gruppi Capture denominati](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Facoltativo | Elenco di requisiti del pacchetto per il comando con lo stesso formato di [*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (pip.readthedocs.io). Il comando **Esegui PyLint**, ad esempio, specifica `pylint>=1.0.0`. Prima di eseguire il comando, Visual Studio verifica che siano installati tutti i pacchetti nell'elenco. Visual Studio usa pip per installare tutti i pacchetti mancanti. |
-| Ambiente | Facoltativo | Stringa di variabili di ambiente da definire prima di eseguire il comando. Ogni variabile utilizza il form \<NAME> = \<VALUE> con più variabili separate da punti e virgola. Una variabile con più valori deve essere racchiusa tra virgolette singole o doppie, come in 'NOME=VALORE1;VALORE2'. |
+| Environment | Facoltativo | Stringa di variabili di ambiente da definire prima di eseguire il comando. Ogni variabile utilizza il form \<NAME> = \<VALUE> con più variabili separate da punti e virgola. Una variabile con più valori deve essere racchiusa tra virgolette singole o doppie, come in 'NOME=VALORE1;VALORE2'. |
 
 #### <a name="named-capture-groups-for-regular-expressions"></a>Gruppi Capture denominati per le espressioni regolari
 
@@ -306,7 +306,7 @@ Per esaminare la definizione dei comandi **Avvia il server** e **Avvia il server
   </Target>
 ```
 
-*Da [fxthomas/example. pyproj. XML](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione.*
+*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione.*
 
 ### <a name="generate-windows-installer"></a>Generare un programma di installazione Windows
 
@@ -325,7 +325,7 @@ Per esaminare la definizione dei comandi **Avvia il server** e **Avvia il server
   </Target>
 ```
 
-*Da [fxthomas/example. pyproj. XML](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione.*
+*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione.*
 
 ### <a name="generate-wheel-package"></a>Generare un pacchetto wheel
 
@@ -345,7 +345,7 @@ Per esaminare la definizione dei comandi **Avvia il server** e **Avvia il server
 </Target>
 ```
 
-*Da [fxthomas/example. pyproj. XML](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione.*
+*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione.*
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 

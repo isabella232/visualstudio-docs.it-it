@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4c105a1224c405d0be9d74ac6500c875df28604d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 792426615dd78241ade1d38a24ec1f4d5702cede
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604037"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545379"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: I membri non devono esporre tipi concreti specifici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
@@ -35,7 +35,7 @@ ms.locfileid: "72604037"
 ## <a name="cause"></a>Causa
  Un membro visibile esternamente è un determinato tipo concreto o espone determinati tipi concreti tramite uno dei relativi parametri o valori restituiti. Attualmente questa regola segnala l'esposizione dei tipi concreti seguenti:
 
-- Tipo derivato da <xref:System.Xml.XmlNode?displayProperty=fullName>.
+- Tipo derivato dall'oggetto <xref:System.Xml.XmlNode?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Un tipo concreto è un tipo con implementazione completa, pertanto è possibile crearne un'istanza. Per consentire un uso generalizzato del membro, sostituire il tipo concreto con l'interfaccia suggerita. In questo modo il membro può accettare qualsiasi tipo che implementa l'interfaccia o essere utilizzato quando è previsto un tipo che implementa l'interfaccia.
@@ -44,7 +44,7 @@ ms.locfileid: "72604037"
 
 |Tipo concreto|Sostituzione|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName><br /><br /> L'utilizzo dell'interfaccia separa il membro da un'implementazione specifica di un'origine dati XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> L'utilizzo dell'interfaccia separa il membro da un'implementazione specifica di un'origine dati XML.|
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, modificare il tipo concreto nell'interfaccia consigliata.
@@ -53,4 +53,4 @@ ms.locfileid: "72604037"
  È possibile eliminare un messaggio da questa regola in modo sicuro se è necessaria la funzionalità specifica fornita dal tipo concreto.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1011: Considerare il passaggio di tipi di base come parametri](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+ [CA1011: Provare a passare tipi di base come parametri](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

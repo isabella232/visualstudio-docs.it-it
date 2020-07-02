@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di codice, creare tabelle di Word'
+title: 'Procedura: creare tabelle di Word a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24a365ba239e4d87e179bfecd664aa31aef0f359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1bc20b277df90ae963d257137373457a0196e72
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574911"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544755"
 ---
-# <a name="how-to-programmatically-create-word-tables"></a>Procedura: A livello di codice, creare tabelle di Word
+# <a name="how-to-programmatically-create-word-tables"></a>Procedura: creare tabelle di Word a livello di codice
   La raccolta <xref:Microsoft.Office.Interop.Word.Tables> è un membro delle classi <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection> e <xref:Microsoft.Office.Interop.Word.Range>, pertanto è possibile creare una tabella in ognuno di questi contenuti. Usare il metodo <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> della raccolta <xref:Microsoft.Office.Interop.Word.Tables> per aggiungere una tabella nell'intervallo specificato.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="create-tables-in-document-level-customizations"></a>Creare le tabelle nelle personalizzazioni a livello di documento
+## <a name="create-tables-in-document-level-customizations"></a>Creare tabelle nelle personalizzazioni a livello di documento
 
 ### <a name="to-add-a-table-to-a-document"></a>Per aggiungere una tabella a un documento
 
@@ -58,7 +58,7 @@ ms.locfileid: "62574911"
      [!code-vb[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#88)]
      [!code-csharp[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#88)]
 
-## <a name="create-tables-in-vsto-add-ins"></a>Creare tabelle nei componenti aggiuntivi VSTO
+## <a name="create-tables-in-vsto-add-ins"></a>Creare tabelle in componenti aggiuntivi VSTO
 
 ### <a name="to-add-a-table-to-a-document"></a>Per aggiungere una tabella a un documento
 
@@ -92,7 +92,7 @@ ms.locfileid: "62574911"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#88)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: A livello di codice aggiungere il testo e formattazione alle celle delle tabelle di Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [Procedura: A livello di codice aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [Procedura: A livello di codice compilare tabelle di Word con le proprietà documento](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [Procedura: aggiungere testo e formattazione alle celle delle tabelle di Word a livello di codice](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [Procedura: aggiungere righe e colonne alle tabelle di Word a livello di codice](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Procedura: popolare tabelle di Word con proprietà dei documenti a livello di codice](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

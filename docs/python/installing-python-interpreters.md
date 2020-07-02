@@ -2,7 +2,7 @@
 title: Selezionare e installare interpreti Python
 description: Elenco completo degli interpreti Python supportati in Visual Studio con brevi istruzioni su dove trovare i relativi programmi di installazione.
 ms.date: 06/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 13290aef7acfe599c7693af4be771c625e713596
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb1c657789e232307672d494710f330758780a67
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75735818"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540725"
 ---
 # <a name="install-python-interpreters"></a>Installare interpreti Python
 
@@ -71,4 +71,4 @@ Seguendo questa procedura si assicura il corretto aggiornamento delle voci del R
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)
 - [Usare requirements.txt per le dipendenze](managing-required-packages-with-requirements-txt.md)
 - [Percorsi di ricerca](search-paths.md)
-- [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md)
+- [Informazioni di riferimento sulla finestra ambienti Python](python-environments-window-tab-reference.md)

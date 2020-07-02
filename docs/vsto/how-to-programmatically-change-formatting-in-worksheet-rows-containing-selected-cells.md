@@ -1,7 +1,7 @@
 ---
-title: Modificare i formati di righe che contengono celle selezionate tramite il codice
+title: Modificare i formati nelle righe contenenti le celle selezionate tramite codice
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,51 +14,51 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e77f555728ee89d7d202a35a91c9dbddba6224f3
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 23217b2107be4406cd193418e7d1ee2bfa631a9d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401376"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541557"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Procedura: A livello di codice modificare la formattazione nelle righe del foglio di lavoro contenenti celle selezionate
-  È possibile modificare il tipo di carattere di un'intera riga che contiene una cella selezionata in modo che il testo è in grassetto.
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Procedura: modificare la formattazione nelle righe di un foglio di un foglio di codice contenente celle selezionate
+  È possibile modificare il tipo di carattere di un'intera riga che contiene una cella selezionata in modo che il testo sia in grassetto.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Per visualizzare la riga corrente in grassetto e normale in precedenza in grassetto riga
+## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Per rendere la riga corrente in grassetto e la riga in grassetto precedente normale
 
 1. Dichiarare una variabile statica per tenere traccia della riga selezionata in precedenza.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]
     [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]
 
-2. Recuperare un riferimento alla cella corrente usando il <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> proprietà.
+2. Recuperare un riferimento alla cella corrente utilizzando la <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> Proprietà.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]
     [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]
 
-3. Stile di visualizzazione corrente riga in grassetto, usando il <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> proprietà della cella attiva.
+3. Applicare uno stile alla riga corrente in grassetto utilizzando la <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> proprietà della cella attiva.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]
     [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]
 
-4. Assicurarsi che il valore corrente di `previousRow` è non da 0. 0 (zero) indica che questa è la prima volta tramite questo codice.
+4. Verificare che il valore corrente di `previousRow` non sia 0. 0 (zero) indica che questa è la prima volta che il codice viene passato.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]
     [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]
 
-5. Assicurarsi che la riga corrente è diversa dalla riga precedente.
+5. Verificare che la riga corrente sia diversa dalla riga precedente.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]
     [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]
 
-6. Recuperare un riferimento a un intervallo che rappresenta la riga selezionata in precedenza e set che non sia di riga in grassetto.
+6. Recuperare un riferimento a un intervallo che rappresenta la riga selezionata in precedenza e impostare la riga in modo che non sia in grassetto.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]
     [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]
 
-7. Store la riga corrente in modo che possa diventare la riga precedente al passaggio successivo.
+7. Consente di archiviare la riga corrente in modo che diventi la riga precedente al passaggio successivo.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]
     [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]
@@ -71,6 +71,6 @@ ms.locfileid: "66401376"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: A livello di programmazione applicare stili agli intervalli in cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
-- [Procedura: Copiare a livello di programmazione dei dati e formattazione nei fogli di lavoro](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)
+- [Procedura: applicare stili agli intervalli nelle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Procedura: copiare dati e formattazione nei fogli di dati a livello di codice](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

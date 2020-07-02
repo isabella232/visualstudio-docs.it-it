@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 084e7a093f92aa8eda9d9edc11865ac319adfad0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 42bb554f8e57c036d41a89fdc2657a25ecc74e20
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662786"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540283"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Contrassegnare i punti di ingresso del Windows Form con STAThread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|MarkWindowsFormsEntryPointsWithStaThread|
 |CheckId|CA2232|
@@ -33,22 +33,22 @@ ms.locfileid: "72662786"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un assembly fa riferimento allo spazio dei nomi <xref:System.Windows.Forms> e il punto di ingresso non è contrassegnato con l'attributo <xref:System.STAThreadAttribute?displayProperty=fullName>.
+ Un assembly fa riferimento allo <xref:System.Windows.Forms> spazio dei nomi e il punto di ingresso non è contrassegnato con l' <xref:System.STAThreadAttribute?displayProperty=fullName> attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.STAThreadAttribute> indica che il modello di threading COM per l'applicazione è un Apartment a thread singolo. Questo attributo deve essere presente sul punto di ingresso di qualsiasi applicazione che utilizza Windows Form; se omesso è possibile che il componente Windows non funzioni correttamente. Se l'attributo non è presente, l'applicazione utilizza il modello di Apartment a thread multipli, che non è supportato per Windows Forms.
+ <xref:System.STAThreadAttribute>indica che il modello di threading COM per l'applicazione è un Apartment a thread singolo. Questo attributo deve essere presente sul punto di ingresso di qualsiasi applicazione che utilizza Windows Form; se omesso è possibile che il componente Windows non funzioni correttamente. Se l'attributo non è presente, l'applicazione utilizza il modello di Apartment a thread multipli, che non è supportato per Windows Forms.
 
 > [!NOTE]
-> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] progetti che usano il Framework dell'applicazione non devono contrassegnare il metodo **Main** con STAThread. Il compilatore [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] lo esegue automaticamente.
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]i progetti che usano il Framework dell'applicazione non devono contrassegnare il metodo **Main** con STAThread. Il [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilatore lo esegue automaticamente.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere l'attributo <xref:System.STAThreadAttribute> al punto di ingresso. Se è presente l'attributo <xref:System.MTAThreadAttribute?displayProperty=fullName>, rimuoverlo.
+ Per correggere una violazione di questa regola, aggiungere l' <xref:System.STAThreadAttribute> attributo al punto di ingresso. Se l' <xref:System.MTAThreadAttribute?displayProperty=fullName> attributo è presente, rimuoverlo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se si sta sviluppando per il .NET Compact Framework, per cui l'attributo <xref:System.STAThreadAttribute> non è necessario e non è supportato.
+ È possibile eliminare un avviso da questa regola se si sta sviluppando per il .NET Compact Framework, per il quale l' <xref:System.STAThreadAttribute> attributo non è necessario e non è supportato.
 
 ## <a name="example"></a>Esempio
- Negli esempi seguenti viene illustrato l'utilizzo corretto di <xref:System.STAThreadAttribute>.
+ Negli esempi seguenti viene illustrato l'utilizzo corretto di <xref:System.STAThreadAttribute> .
 
  [!code-csharp[FxCop.Usage.StaThread#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.StaThread/cs/FxCop.Usage.StaThread.cs#1)]
  [!code-vb[FxCop.Usage.StaThread#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.StaThread/vb/FxCop.Usage.StaThread.vb#1)]

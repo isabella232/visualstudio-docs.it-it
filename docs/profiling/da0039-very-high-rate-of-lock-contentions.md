@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a84810778beb11a9b3022f4633a6a7e1b3390164
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 4cc2380402fd4c71756cf0a424853546a8f3e439
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332339"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544586"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Frequenza molto elevata di conflitti di blocco
 
-|||
+|Elemento|valore|
 |-|-|
 |ID regola|DA0039|
 |Category|Uso di .NET Framework|

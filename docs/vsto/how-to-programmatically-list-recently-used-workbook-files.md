@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di codice vengono usati i file della cartella di lavoro di elenco'
+title: 'Procedura: elencare i file della cartella di lavoro usati di recente a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 954a106b87d0ee941aa9c3a6c9c35579d1cb3d54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f4f34a8ed848d548b2e23d3f9a3cf3c603c7cad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812534"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541362"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Procedura: A livello di codice vengono usati i file della cartella di lavoro di elenco
-  Il <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> proprietà restituisce una raccolta che contiene i nomi di tutti i file che vengono visualizzati nell'elenco dei file usati di recente di Microsoft Office Excel. La lunghezza dell'elenco varia a seconda del numero di file selezionato dall'utente da conservare. È possibile visualizzare i risultati in un intervallo.
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Procedura: elencare i file della cartella di lavoro usati di recente a livello di codice
+  La <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> proprietà restituisce una raccolta che contiene i nomi di tutti i file visualizzati nell'elenco Microsoft Office Excel dei file usati di recente. La lunghezza dell'elenco varia a seconda del numero di file che l'utente ha selezionato per mantenere. È possibile visualizzare i risultati in un intervallo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Per le cartelle di lavoro elenco usato di recente in un oggetto range
+## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Per elencare le cartelle di lavoro utilizzate di recente in un oggetto intervallo
 
-1. Scorrere l'elenco dei file recenti e i nomi visualizzati nelle celle relative a un <xref:Microsoft.Office.Interop.Excel.Range> oggetto.
+1. Scorrere l'elenco dei file recenti e visualizzare i nomi nelle celle relative a un <xref:Microsoft.Office.Interop.Excel.Range> oggetto.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Lavorare con le cartelle di lavoro](../vsto/working-with-workbooks.md)
+- [Utilizzare le cartelle di lavoro](../vsto/working-with-workbooks.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

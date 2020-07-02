@@ -1,7 +1,7 @@
 ---
-title: '&lt;postActionData&gt; elemento (sviluppo per Office in Visual Studio)'
+title: '&lt;&gt;elemento postActionData (sviluppo per Office in Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cda7829fc615c64be75f295a0cbc26b2ebbc7eea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561486"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541869"
 ---
-# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postActionData&gt; elemento (sviluppo per Office in Visual Studio)
+# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento postActionData (sviluppo per Office in Visual Studio)
   L'elemento `postActionData` dello spazio dei nomi `vstav3` specifica i dati associati a qualsiasi azione post-distribuzione che viene eseguita dopo l'installazione di soluzioni Office.
 
 ## <a name="syntax"></a>Sintassi
@@ -41,7 +41,7 @@ ms.locfileid: "62561486"
 ## <a name="post-deployment-action-example"></a>Esempio di azione post-distribuzione
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra l'elemento `postAction` in un manifesto dell'applicazione per una soluzione Office distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra l'elemento `postAction` in un manifesto dell'applicazione per una soluzione Office distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 

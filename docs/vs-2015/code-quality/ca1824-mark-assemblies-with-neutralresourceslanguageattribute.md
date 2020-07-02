@@ -15,17 +15,17 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19077a63d5aa22bda3f968943703a82488e2745d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661108"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545288"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
@@ -33,7 +33,7 @@ ms.locfileid: "72661108"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un assembly contiene una risorsa basata su **resx**a cui non è applicato il <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>.
+ Un assembly contiene una risorsa basata su **resx** <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> a cui non è applicato l'oggetto.
 
 ## <a name="rule-description"></a>Descrizione della regola
  L'attributo **NeutralResourcesLanguage** informa l'oggetto **ResourceManager** del linguaggio usato per visualizzare le risorse delle impostazioni cultura non associate ad alcun paese per un assembly. Quando cerca le risorse nelle stesse impostazioni cultura della lingua delle risorse neutre, **ResourceManager** usa automaticamente le risorse che si trovano nell'assembly principale. Esegue questa operazione anziché cercare un assembly satellite con le impostazioni cultura dell'interfaccia utente correnti per il thread corrente. Tale approccio migliora le prestazioni delle ricerche per la prima risorsa caricata e riduce il working set.

@@ -1,7 +1,7 @@
 ---
 title: Convalida dati quando viene aggiunta una nuova riga al controllo ListObject
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f65bbc374c1d0ec2a940ff98fcc6f04e5391b2db
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2b9ed8428f9dd0325678cb91a847609aed76f9b5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255673"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541167"
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Procedura: Convalida dati quando viene aggiunta una nuova riga a un controllo ListObject
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Procedura: convalidare i dati quando viene aggiunta una nuova riga a un controllo ListObject
   Gli utenti possono aggiungere nuove righe a un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associato ai dati. È possibile convalidare i dati dell'utente prima del commit delle modifiche all'origine dati.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "71255673"
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]
 
-2. Creare un nuovo <xref:System.Data.DataTable> e aggiungere le `Startup` colonne e i dati di esempio nel gestore eventi `Sheet1` della classe (in un progetto a livello di documento `ThisAddIn` ) o nella classe (in un progetto di componente aggiuntivo VSTO).
+2. Creare un nuovo <xref:System.Data.DataTable> e aggiungere le colonne e i dati di esempio nel `Startup` gestore eventi della `Sheet1` classe (in un progetto a livello di documento) o nella `ThisAddIn` classe (in un progetto di componente aggiuntivo VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]
@@ -58,4 +58,4 @@ ms.locfileid: "71255673"
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [ListObject (controllo)](../vsto/listobject-control.md)
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
-- [Procedura: Eseguire il mapping delle colonne ListObject ai dati](../vsto/how-to-map-listobject-columns-to-data.md)
+- [Procedura: eseguire il mapping delle colonne ListObject ai dati](../vsto/how-to-map-listobject-columns-to-data.md)

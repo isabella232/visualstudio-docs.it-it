@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c1071617572af44a73f98953fd435623190e0e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658885"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540842"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: La differenza tra membri non deve limitarsi al tipo restituito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
@@ -45,7 +45,7 @@ ms.locfileid: "72658885"
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente, in Microsoft Intermediate Language (MSIL), viene illustrato un tipo che viola questa regola. Si noti che questa regola non può essere violata C# tramite o Visual Basic .NET.
+ Nell'esempio seguente, in Microsoft Intermediate Language (MSIL), viene illustrato un tipo che viola questa regola. Si noti che questa regola non può essere violata con C# o Visual Basic .NET.
 
 ```
 

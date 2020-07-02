@@ -15,17 +15,17 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9032ac105477370477b13554afe4ee65bd7cd733
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c4ad2f4db9290430bb8a378bd264078370ca7b66
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609011"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543832"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inizializzare i campi statici del tipo di riferimento inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|InitializeReferenceTypeStaticFieldsInline|
 |CheckId|CA1810|
@@ -38,9 +38,9 @@ ms.locfileid: "72609011"
 ## <a name="rule-description"></a>Descrizione della regola
  Quando un tipo dichiara un costruttore statico esplicito, tramite il compilatore JIT (Just-In-Time) viene aggiunto un controllo a ogni metodo statico del tipo e a ogni costruttore di istanza del tipo per assicurare che il costruttore statico sia stato precedentemente chiamato. L'inizializzazione statica viene attivata quando viene eseguito l'accesso a qualsiasi membro statico o quando viene creata un'istanza del tipo. Tuttavia, l'inizializzazione statica non viene attivata se si dichiara una variabile del tipo, ma non la si utilizza, che può essere importante se l'inizializzazione cambia lo stato globale.
 
- Quando tutti i dati statici vengono inizializzati inline e un costruttore statico esplicito non è dichiarato, i compilatori Microsoft Intermediate Language (MSIL) aggiungono il flag `beforefieldinit` e un costruttore statico implicito, che Inizializza i dati statici, al tipo MSIL definizione. Quando il compilatore JIT rileva il flag `beforefieldinit`, nella maggior parte dei casi i controlli del costruttore statico non vengono aggiunti. Si garantisce che l'inizializzazione statica venga eseguita in un determinato momento prima di accedere a qualsiasi campo statico, ma non prima che venga richiamato un metodo statico o un costruttore di istanza. Si noti che l'inizializzazione statica può verificarsi in qualsiasi momento dopo la dichiarazione di una variabile di tipo.
+ Quando tutti i dati statici vengono inizializzati inline e un costruttore statico esplicito non è dichiarato, i compilatori Microsoft Intermediate Language (MSIL) aggiungono il `beforefieldinit` flag e un costruttore statico implicito, che Inizializza i dati statici, alla definizione del tipo MSIL. Quando il compilatore JIT rileva il `beforefieldinit` flag, la maggior parte del tempo i controlli del costruttore statico non vengono aggiunti. Si garantisce che l'inizializzazione statica venga eseguita in un determinato momento prima di accedere a qualsiasi campo statico, ma non prima che venga richiamato un metodo statico o un costruttore di istanza. Si noti che l'inizializzazione statica può verificarsi in qualsiasi momento dopo la dichiarazione di una variabile di tipo.
 
- I controlli dei costruttori statici possono ridurre le prestazioni. Spesso un costruttore statico viene usato solo per inizializzare i campi statici, nel qual caso è necessario assicurarsi che l'inizializzazione statica avvenga prima del primo accesso di un campo statico. Il comportamento `beforefieldinit` è appropriato per questi e per la maggior parte degli altri tipi. È inappropriato solo quando l'inizializzazione statica influiscono sullo stato globale e viene soddisfatta una delle condizioni seguenti:
+ I controlli dei costruttori statici possono ridurre le prestazioni. Spesso un costruttore statico viene usato solo per inizializzare i campi statici, nel qual caso è necessario assicurarsi che l'inizializzazione statica avvenga prima del primo accesso di un campo statico. Il `beforefieldinit` comportamento è appropriato per questi e per la maggior parte degli altri tipi. È inappropriato solo quando l'inizializzazione statica influiscono sullo stato globale e viene soddisfatta una delle condizioni seguenti:
 
 - L'effetto sullo stato globale è dispendioso e non è obbligatorio se il tipo non viene utilizzato.
 
@@ -53,17 +53,18 @@ ms.locfileid: "72609011"
  È possibile eliminare un avviso da questa regola se le prestazioni non sono un problema; in alternativa, se le modifiche dello stato globale causate dall'inizializzazione statica sono costose, è necessario garantirne l'esecuzione prima che venga chiamato un metodo statico del tipo o venga creata un'istanza del tipo.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo, `StaticConstructor`, che viola la regola e un tipo, `NoStaticConstructor`, che sostituisce il costruttore statico con l'inizializzazione inline per soddisfare la regola.
+ Nell'esempio seguente viene illustrato un tipo, `StaticConstructor` , che viola la regola e un tipo, `NoStaticConstructor` , che sostituisce il costruttore statico con l'inizializzazione inline per soddisfare la regola.
 
  [!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor/cs/FxCop.Performance.RefTypeStaticCtor.cs#1)]
  [!code-vb[FxCop.Performance.RefTypeStaticCtor#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor/vb/FxCop.Performance.RefTypeStaticCtor.vb#1)]
 
- Si noti l'aggiunta del flag `beforefieldinit` nella definizione MSIL per la classe `NoStaticConstructor`.
+ Si noti l'aggiunta del `beforefieldinit` flag nella definizione MSIL per la `NoStaticConstructor` classe.
 
  **. class public auto ansi StaticConstructor** **estende [mscorlib] System. Object** 
  **{** 
- **}//End of Class StaticConstructor** 
- **. class public auto ansi beforefieldinit NoStaticConstructor** ** estende [mscorlib] System. Object** 
- **{** 1 **}//end della classe NoStaticConstructor**
+ **}//end della classe StaticConstructor** 
+ **. class public auto ansi beforefieldinit NoStaticConstructor** **extends [mscorlib] System. Object** 
+ **{** 
+ **}//End of Class NoStaticConstructor**
 ## <a name="related-rules"></a>Regole correlate
  [CA2207: Inizializzare i campi statici dei tipi di valore inline](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

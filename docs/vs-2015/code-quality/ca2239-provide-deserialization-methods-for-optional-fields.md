@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5604b697af1716e918f3a0f6d9a26ddbe70fc0b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfbb9082d557c8e67ddebf0237293364d54a65cf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672966"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545132"
 ---
-# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Fornire metodi di deserializzazione per i campi facoltativi
+# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Specificare metodi di deserializzazione per i campi facoltativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
@@ -33,10 +33,10 @@ ms.locfileid: "72672966"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo dispone di un campo contrassegnato con l'attributo <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> e il tipo non fornisce metodi di gestione degli eventi di deserializzazione.
+ Un tipo ha un campo contrassegnato con l' <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> attributo e il tipo non fornisce metodi di gestione degli eventi di deserializzazione.
 
 ## <a name="rule-description"></a>Descrizione della regola
- L'attributo <xref:System.Runtime.Serialization.OptionalFieldAttribute> non ha alcun effetto sulla serializzazione; un campo contrassegnato con l'attributo viene serializzato. Tuttavia, il campo viene ignorato in caso di deserializzazione e mantiene il valore predefinito associato al relativo tipo. I gestori eventi di deserializzazione devono essere dichiarati per impostare il campo durante il processo di deserializzazione.
+ L' <xref:System.Runtime.Serialization.OptionalFieldAttribute> attributo non ha alcun effetto sulla serializzazione; un campo contrassegnato con l'attributo viene serializzato. Tuttavia, il campo viene ignorato in caso di deserializzazione e mantiene il valore predefinito associato al relativo tipo. I gestori eventi di deserializzazione devono essere dichiarati per impostare il campo durante il processo di deserializzazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, aggiungere metodi di gestione degli eventi di deserializzazione al tipo.
@@ -51,7 +51,7 @@ ms.locfileid: "72672966"
  [!code-vb[FxCop.Usage.OptionalFields#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OptionalFields/vb/FxCop.Usage.OptionalFields.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2236: Chiamare metodi della classe base su tipi ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Chiamare metodi della classe di base su tipi ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2240: Implementare ISerializable in modo corretto](../code-quality/ca2240-implement-iserializable-correctly.md)
 

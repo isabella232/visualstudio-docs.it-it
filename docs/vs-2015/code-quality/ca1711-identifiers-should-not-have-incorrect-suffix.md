@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f59a1c88701cf132a46c66eb6550f03eb870d63d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669171"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544014"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Gli identificatori non devono contenere un suffisso non corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
@@ -48,16 +48,16 @@ ms.locfileid: "72669171"
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |EventHandler|Delegato del gestore eventi|
 |Eccezione|<xref:System.Exception?displayProperty=fullName>|
-|Autorizzazioni|<xref:System.Security.IPermission?displayProperty=fullName>|
+|Autorizzazione|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Coda|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
-|Flusso|<xref:System.IO.Stream?displayProperty=fullName>|
+|STREAM|<xref:System.IO.Stream?displayProperty=fullName>|
 
  Inoltre, **non** usare i suffissi seguenti:
 
-- delegato
+- Delegato
 
-- Enum
+- Enumerazione
 
 - Impl-USA ' core '
 

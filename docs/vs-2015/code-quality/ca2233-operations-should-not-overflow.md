@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 70a0bab8cfb3bf14a763f759e0e44a754ad878d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662772"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545236"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Evitare l'overflow delle operazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
@@ -36,7 +36,7 @@ ms.locfileid: "72662772"
  Un metodo esegue un'operazione aritmetica e non convalida gli operandi in anticipo per evitare l'overflow.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Le operazioni aritmetiche non devono essere eseguite senza prima convalidare gli operandi per assicurarsi che il risultato dell'operazione non sia compreso nell'intervallo dei valori possibili per i tipi di dati implicati. A seconda del contesto di esecuzione e dei tipi di dati necessari, l'overflow aritmetico può comportare l'eliminazione di un <xref:System.OverflowException?displayProperty=fullName> o dei bit più significativi del risultato.
+ Le operazioni aritmetiche non devono essere eseguite senza prima convalidare gli operandi per assicurarsi che il risultato dell'operazione non sia compreso nell'intervallo dei valori possibili per i tipi di dati implicati. A seconda del contesto di esecuzione e dei tipi di dati necessari, l'overflow aritmetico può comportare l' <xref:System.OverflowException?displayProperty=fullName> eliminazione di un oggetto o dei bit più significativi del risultato.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, convalidare gli operandi prima di eseguire l'operazione.
@@ -47,14 +47,14 @@ ms.locfileid: "72662772"
 ## <a name="example-of-a-violation"></a>Esempio di violazione
 
 ### <a name="description"></a>Descrizione
- Un metodo nell'esempio seguente modifica un intero che viola questa regola. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] richiede la disabilitazione dell'opzione **Rimuovi** intero overflow perché questo venga attivato.
+ Un metodo nell'esempio seguente modifica un intero che viola questa regola. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]per attivare questa opzione, è necessario disabilitare l'opzione **Rimuovi** intero overflow.
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
  [!code-vb[FxCop.Usage.OperationOverflow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/vb/FxCop.Usage.OperationOverflow.vb#1)]
 
-### <a name="comments"></a>Comments
- Se il metodo in questo esempio viene passato <xref:System.Int32.MinValue?displayProperty=fullName>, l'operazione risulterebbe underflow. In questo modo il bit più significativo del risultato viene eliminato. Il codice seguente illustra come si verifica questa situazione.
+### <a name="comments"></a>Commenti
+ Se viene passato il metodo in questo esempio <xref:System.Int32.MinValue?displayProperty=fullName> , l'operazione risulterebbe underflow. In questo modo il bit più significativo del risultato viene eliminato. Il codice seguente illustra come si verifica questa situazione.
 
  [C#]
 
@@ -95,17 +95,17 @@ End Sub
 ## <a name="fix-with-a-checked-block"></a>Correzione con un blocco checked
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente viene corretta la violazione precedente eseguendo il wrapping dell'operazione in un blocco checked. Se l'operazione causa un overflow, verrà generata un'<xref:System.OverflowException?displayProperty=fullName>.
+ Nell'esempio seguente viene corretta la violazione precedente eseguendo il wrapping dell'operazione in un blocco checked. Se l'operazione causa un overflow, <xref:System.OverflowException?displayProperty=fullName> verrà generata un'eccezione.
 
- Si noti che i blocchi controllati non sono supportati in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
+ Si noti che i blocchi controllati non sono supportati in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Attiva overflow/underflow aritmetico selezionato
- Se si attiva l'overflow/underflow aritmetico controllato C#in, è equivalente al wrapping di ogni operazione Integer in un blocco checked.
+ Se si attiva l'overflow/underflow aritmetico controllato in C#, è equivalente al wrapping di ogni operazione Integer in un blocco checked.
 
- **Per attivare l'overflow/underflow aritmetico controllato inC#**
+ **Per attivare l'overflow/underflow aritmetico controllato in C #**
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto e scegliere **Proprietà**.
 
@@ -114,4 +114,4 @@ End Sub
 3. Selezionare **Controlla overflow/underflow aritmetico** e fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
- [ C# operatori](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [di <xref:System.OverflowException?displayProperty=fullName> controllati e deselezionati](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
+ <xref:System.OverflowException?displayProperty=fullName>[Operatori C#](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [selezionati e deselezionati](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
