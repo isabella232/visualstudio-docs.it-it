@@ -1,9 +1,9 @@
 ---
-title: '&lt;formRegions&gt; elemento (sviluppo per Office in Visual Studio)'
+title: '&lt;&gt;elemento formRegions (sviluppo per Office in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a24560df1da153702cfca2a206ea38cc8fac94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f98c74c2df998f0e79f5b95a316a7917304e029
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972330"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538359"
 ---
-# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; elemento (sviluppo per Office in Visual Studio)
-  Il `formRegions` elemento di `vstov4` dello spazio dei nomi contiene aree del modulo di Microsoft Office Outlook associate a un componente aggiuntivo VSTO.
+# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento formRegions (sviluppo per Office in Visual Studio)
+  L' `formRegions` elemento dello `vstov4` spazio dei nomi contiene le aree del modulo di Microsoft Office Outlook associate a un componente aggiuntivo VSTO.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,12 +45,12 @@ ms.locfileid: "62972330"
  L'elemento `formRegions` presenta l'elemento seguente.
 
 ### <a name="formregion"></a>formRegion
- Obbligatorio per i componenti aggiuntivi VSTO di Outlook che includono aree del modulo. Il `formRegion` è definito nell'elemento [ &#60;formRegion&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).
+ Obbligatorio per i componenti aggiuntivi VSTO di Outlook che includono aree del modulo. L' `formRegion` elemento è definito in [&#60;elemento&#62; FormRegion &#40;sviluppo per Office in Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).
 
 ## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra un elemento `formRegions` in un manifesto dell'applicazione per una soluzione Office a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra un elemento `formRegions` in un manifesto dell'applicazione per una soluzione Office a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 

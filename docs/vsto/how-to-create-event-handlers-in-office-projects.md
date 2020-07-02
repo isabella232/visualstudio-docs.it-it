@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Creare i gestori eventi nei progetti di Office'
+title: 'Procedura: creare gestori eventi nei progetti di Office'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 537bae766b71744a61e5158b1a859cade4cdcda7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419647"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538307"
 ---
-# <a name="how-to-create-event-handlers-in-office-projects"></a>Procedura: Creare i gestori eventi nei progetti di Office
-  Esistono diversi modi per creare gestori eventi in Visual Basic e c#. Nella visualizzazione progettazione, è possibile creare il valore predefinito di gestori di eventi per i controlli facendo doppio clic sul controllo o utilizzare il riquadro eventi della **proprietà** finestra per creare gestori per qualsiasi evento del controllo. Se si è nella visualizzazione codice, tuttavia, non è necessario passare alla visualizzazione di progettazione per creare un gestore eventi.
+# <a name="how-to-create-event-handlers-in-office-projects"></a>Procedura: creare gestori eventi nei progetti di Office
+  Esistono diversi modi per creare i gestori eventi in Visual Basic e C#. Nella visualizzazione della struttura è possibile creare i gestori eventi predefiniti per i controlli facendo doppio clic sul controllo o utilizzando il riquadro eventi della finestra **Proprietà** per creare gestori per qualsiasi evento nel controllo. Tuttavia, se ci si trova nella visualizzazione codice, è possibile che non si desideri passare alla visualizzazione progettazione per creare un gestore eventi.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -31,26 +31,26 @@ ms.locfileid: "63419647"
 
 ### <a name="to-create-an-event-handler-in-visual-basic"></a>Per creare un gestore eventi in Visual Basic
 
-1. Dal **nome della classe** elenco a discesa nella parte superiore dell'Editor di codice, selezionare l'oggetto che si desidera creare un gestore eventi per.
+1. Dall'elenco a discesa **nome classe** nella parte superiore dell'editor di codice, selezionare l'oggetto per il quale si vuole creare un gestore eventi.
 
     > [!NOTE]
-    > Se si desidera creare gestori eventi per `ThisDocument` o `ThisWorkbook`, è necessario selezionare **(ThisDocument eventi)** oppure **(ThisWorkbook eventi)** nel **nome classe**elenco a discesa
+    > Se si desidera creare gestori eventi per `ThisDocument` o `ThisWorkbook` , è necessario selezionare **(eventi ThisDocument)** o **(eventi ThisWorkbook)** nell'elenco a discesa **nome classe** .
 
-2. Dal **nome del metodo** elenco a discesa nella parte superiore dell'Editor di codice, selezionare l'evento.
+2. Dall'elenco a discesa **nome metodo** nella parte superiore dell'editor di codice, selezionare l'evento.
 
-     Visual Studio crea il gestore dell'evento e sposta il punto di inserimento al gestore eventi appena creato. Se il gestore eventi esiste già, il punto di inserimento si sposta al gestore dell'evento esistente.
+     Visual Studio crea il gestore eventi e sposta il punto di inserimento nel gestore eventi appena creato. Se il gestore eventi esiste già, il punto di inserimento viene spostato nel gestore eventi esistente.
 
 ### <a name="to-create-an-event-handler-in-c"></a>Per creare un gestore eventi in C\#
 
-1. Creare il delegato dell'evento nel **avvio** evento della classe digitando il nome completo dell'evento seguita da uno spazio e quindi digitando **+=** senza spazi finali. Ad esempio:
+1. Creare il delegato dell'evento nell'evento di **avvio** della classe digitando il nome completo dell'evento seguito da uno spazio, quindi digitando senza spazio in un secondo momento **+=** . Ad esempio:
 
      `this.<object name>.<event name> +=`
 
 2. Alla fine della riga di codice, premere il tasto TAB due volte.
 
-     Visual Studio automaticamente viene completata la riga di codice, crea il gestore dell'evento e sposta il punto di inserimento al gestore eventi appena creato.
+     Visual Studio completa automaticamente la riga di codice, crea il gestore eventi e sposta il punto di inserimento nel gestore eventi appena creato.
 
 ## <a name="see-also"></a>Vedere anche
-- [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
-- [Procedura dettagliata: Programmazione per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
-- [Creazione di soluzioni Office](../vsto/building-office-solutions.md)
+- [Scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
+- [Procedura dettagliata: programma per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+- [Compilazione di soluzioni Office](../vsto/building-office-solutions.md)

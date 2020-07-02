@@ -8,12 +8,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 34d1918522711f3070cf6988a83ebdbd1e80b2f4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 68bff8dbe2d0e5d85c8b18eeafaeaad06ba3982e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659574"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540075"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Testing unità delle applicazioni C++ esistenti con Esplora test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "72659574"
 
 ## <a name="creating-the-tests"></a>Creazione dei test
 
-### <a name="staticLink"></a> Per modificare il codice sottoposto a test in una libreria statica
+### <a name="to-change-the-code-under-test-to-a-static-library"></a><a name="staticLink"></a> Per modificare il codice sottoposto a test in una libreria statica
 
 - Se i test devono usare membri che non vengono esportati da un progetto incluso nel test e il progetto incluso nel test viene compilato come una libreria dinamica, considerare la possibilità di convertirlo in una libreria statica.
 
@@ -57,17 +57,17 @@ ms.locfileid: "72659574"
 
   2. Scegliere **Proprietà di configurazione**, **Generale**.
 
-  3. Impostare **Tipo di configurazione** su **Libreria statica (.lib)** .
+  3. Impostare **Tipo di configurazione** su **Libreria statica (.lib)**.
 
   Continuare con la procedura [Per collegare i test all'oggetto o ai file di libreria](#objectRef).
 
-### <a name="projectRef"></a> Per fare riferimento a funzioni esportate dal progetto di test
+### <a name="to-reference-exported-functions-from-the-test-project"></a><a name="projectRef"></a> Per fare riferimento a funzioni esportate dal progetto di test
 
 - Se un progetto incluso nel test esporta le funzioni che si vogliono testare, è possibile aggiungere un riferimento al progetto di codice dal progetto di test.
 
   1. Creare un progetto di test C++.
 
-      1. Nel menu **File** scegliere **Nuovo**, **Progetto**, **Progetto di test Visual C++** , **Progetto unit test C++** .
+      1. Nel menu **File** scegliere **Nuovo**, **Progetto**, **Progetto di test Visual C++**, **Progetto unit test C++**.
 
   2. In Esplora soluzioni scegliere **Riferimenti** dal menu di scelta rapida del progetto di test. Verrà visualizzata la finestra delle proprietà del progetto.
 
@@ -75,23 +75,23 @@ ms.locfileid: "72659574"
 
   4. Selezionare **Progetti** e quindi il progetto da testare.
 
-       Scegliere il pulsante **Aggiungi** .
+       Fare clic sul pulsante **Aggiungi**.
 
   5. Nelle proprietà del progetto di test, aggiungere il percorso del progetto incluso nel test a Directory di inclusione.
 
-       Scegliere **Proprietà di configurazione**, **Cartelle VC++** , **Directory di inclusione**.
+       Scegliere **Proprietà di configurazione**, **Cartelle VC++**, **Directory di inclusione**.
 
        Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
   Passare a [Scrittura di unit test](#addTests).
 
-### <a name="objectRef"></a> Per collegare i test all'oggetto o a file di libreria
+### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> Per collegare i test all'oggetto o a file di libreria
 
 - Se il codice sottoposto a test non esporta le funzioni che si intende testare, è possibile aggiungere il file con estensione **.obj** o **.lib** di output alle dipendenze del progetto di test.
 
   1. Creare un progetto di test C++.
 
-      1. Nel menu **File** scegliere **Nuovo**, **Progetto**, **Progetto di test Visual C++** , **Progetto unit test C++** .
+      1. Nel menu **File** scegliere **Nuovo**, **Progetto**, **Progetto di test Visual C++**, **Progetto unit test C++**.
 
   2. In Esplora soluzioni scegliere **Proprietà** dal menu di scelta rapida del progetto di test. Verrà visualizzata la finestra delle proprietà del progetto.
 
@@ -103,38 +103,38 @@ ms.locfileid: "72659574"
 
        Scegliere **Modifica** e aggiungere il percorso della directory dei file con estensione **obj** o **lib**. Il percorso è in genere contenuto nella cartella di compilazione del progetto sottoposto a test.
 
-  5. Scegliere **Proprietà di configurazione**, **Cartelle VC++** , **Directory di inclusione**.
+  5. Scegliere **Proprietà di configurazione**, **Cartelle VC++**, **Directory di inclusione**.
 
        Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
   Passare a [Scrittura di unit test](#addTests).
 
-### <a name="sameProject"></a> Per aggiungere unit test nello stesso progetto
+### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a> Per aggiungere unit test nello stesso progetto
 
 1. Modificare il codice prodotto delle proprietà del progetto per includere le intestazioni e i file di libreria necessari per gli unit test.
 
    1. In Esplora soluzioni, dal menu di scelta rapida del progetto incluso nel test, scegliere Proprietà. Verrà visualizzata la finestra delle proprietà del progetto.
 
-   2. Scegliere **Proprietà di configurazione**, **Directory di VC++** .
+   2. Scegliere **Proprietà di configurazione**, **Directory di VC++**.
 
    3. Modificare le directory di inclusione e di libreria:
 
-       |||
+       |Proprietà|Valore|
        |-|-|
        |**Directory di inclusione**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
        |**Directory delle librerie**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
 2. Aggiungere un file di unit test C++:
 
-   - In Esplora soluzioni scegliere **Aggiungi**, **Nuovo elemento** dal menu di scelta rapida del progetto e quindi **Unit test di C++** .
+   - In Esplora soluzioni scegliere **Aggiungi**, **Nuovo elemento** dal menu di scelta rapida del progetto e quindi **Unit test di C++**.
 
    Passare a [Scrittura di unit test](#addTests).
 
-## <a name="addTests"></a> Scrittura di unit test
+## <a name="writing-the-unit-tests"></a><a name="addTests"></a> Scrittura di unit test
 
 1. In ogni file di codice dello unit test, aggiungere un'istruzione `#include` per le intestazioni del progetto sottoposto a test.
 
-2. Aggiungere le classi e i metodi di test ai file di codice dello unit test. Esempio:
+2. Aggiungere le classi e i metodi di test ai file di codice dello unit test. Ad esempio:
 
    ```cpp
    #include "stdafx.h"

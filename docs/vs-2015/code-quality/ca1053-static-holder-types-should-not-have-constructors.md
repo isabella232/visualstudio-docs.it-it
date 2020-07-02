@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7de098d264dbdd6d7d9daea385de2e03d4e1ba35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29cc322dd59dc0de66af8f92a46524d15b0022c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653817"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539581"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: I tipi che contengono membri statici non devono avere costruttori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
@@ -48,6 +48,6 @@ ms.locfileid: "72653817"
  Non escludere un avviso da questa regola. La presenza del costruttore suggerisce che il tipo non è un tipo statico.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo che viola questa regola. Si noti che nel codice sorgente non è presente alcun costruttore predefinito. Quando questo codice viene compilato in un assembly, il C# compilatore inserirà un costruttore predefinito, che violerà questa regola. Per risolvere il problema, dichiarare un costruttore privato.
+ Nell'esempio seguente viene illustrato un tipo che viola questa regola. Si noti che nel codice sorgente non è presente alcun costruttore predefinito. Quando questo codice viene compilato in un assembly, il compilatore C# inserisce un costruttore predefinito che viola questa regola. Per risolvere il problema, dichiarare un costruttore privato.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]

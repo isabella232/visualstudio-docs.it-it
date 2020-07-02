@@ -1,7 +1,7 @@
 ---
 title: Risolvere i problemi relativi alla sicurezza delle soluzioni Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 289ffc3b5260260c9da8d0ec61e5c79890394802
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 76cd454cd66e31db8c521d71183aa479da1fe2a5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985557"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537410"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Risolvere i problemi relativi alla sicurezza delle soluzioni Office
   Questo argomento contiene suggerimenti per la risoluzione di problemi comuni che possono verificarsi quando si lavora con la protezione delle soluzioni Office.
@@ -29,7 +29,7 @@ ms.locfileid: "72985557"
 
  L'URL del manifesto di distribuzione può essere categorizzato in una delle cinque zone seguenti:
 
-- Computer locale
+- Risorse del computer
 
 - Internet
 
@@ -39,10 +39,10 @@ ms.locfileid: "72985557"
 
 - Siti con restrizioni
 
-  Se il percorso del manifesto di distribuzione è stato assegnato all'area siti con restrizioni, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] non installa la soluzione. Se il percorso è noto e può essere considerato attendibile, l'utente può rimuovere il percorso dall'area siti con restrizioni e installare la soluzione. Per informazioni su come gestire le zone, vedere [configurazione di editori attendibili ClickOnce](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
+  Se il percorso del manifesto di distribuzione è stato assegnato all'area siti con restrizioni, non [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installa la soluzione. Se il percorso è noto e può essere considerato attendibile, l'utente può rimuovere il percorso dall'area siti con restrizioni e installare la soluzione. Per informazioni su come gestire le zone, vedere [configurazione di editori attendibili ClickOnce](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Non è possibile installare le soluzioni da condivisioni file di rete o da percorsi Web quando è installata la configurazione sicurezza avanzata di Internet Explorer o Internet Explorer 7
- Sicurezza avanzata di Internet Explorer (IEESC) in Windows Server 2003 e versioni successive e Internet Explorer 7 e versioni successive, limita in modo significativo la possibilità degli utenti di esplorare Internet. Quando gli utenti tentano di installare soluzioni Office da una condivisione file di rete o da un percorso Web, è possibile che venga ricevuto il seguente messaggio di errore: "la funzionalità personalizzata in questa applicazione non funzionerà perché il certificato usato per firmare il manifesto di distribuzione per  *SolutionName* non è attendibile. Per ulteriore assistenza, contattare l'amministratore. "
+ Sicurezza avanzata di Internet Explorer (IEESC) in Windows Server 2003 e versioni successive e Internet Explorer 7 e versioni successive, limita in modo significativo la possibilità degli utenti di esplorare Internet. Quando gli utenti tentano di installare soluzioni Office da una condivisione file di rete o da un percorso Web, potrebbero ricevere il messaggio di errore seguente: "la funzionalità personalizzata in questa applicazione non funzionerà perché il certificato usato per firmare il manifesto di distribuzione per *SolutionName* non è attendibile. Per ulteriore assistenza, contattare l'amministratore. "
 
  Con IEESC e Internet Explorer 7 e versioni successive, se l'URL del manifesto di distribuzione è categorizzato nell'area Internet, è necessario che il manifesto disponga di un certificato di un autore attendibile oppure che la soluzione non sia installata. Senza IEESC, il comportamento predefinito è quello di richiedere all'utente finale di prendere una decisione di attendibilità.
 

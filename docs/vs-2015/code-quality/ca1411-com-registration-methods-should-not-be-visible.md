@@ -15,17 +15,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f3ddd2c90d23884bd08a90560dcc5ed0fe700aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f001a2bb4920ebfb3f5cff3745639bd346a0a920
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652718"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540141"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: I metodi di registrazione COM non devono essere visibili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
@@ -33,13 +33,13 @@ ms.locfileid: "72652718"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo contrassegnato con l'attributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> è visibile esternamente.
+ Un metodo contrassegnato con l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attributo o è visibile esternamente.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando un assembly viene registrato con Component Object Model (COM), le voci vengono aggiunte al registro di sistema per ogni tipo visibile a COM nell'assembly. I metodi contrassegnati con gli attributi <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> e <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> vengono chiamati rispettivamente durante i processi di registrazione e annullamento della registrazione per eseguire codice utente specifico per la registrazione e l'annullamento della registrazione di questi tipi. Questo codice non deve essere chiamato al di fuori di questi processi.
+ Quando un assembly viene registrato con Component Object Model (COM), le voci vengono aggiunte al registro di sistema per ogni tipo visibile a COM nell'assembly. I metodi contrassegnati con gli <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> attributi e <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> vengono chiamati rispettivamente durante i processi di registrazione e annullamento della registrazione per eseguire codice utente specifico per la registrazione e l'annullamento della registrazione di questi tipi. Questo codice non deve essere chiamato al di fuori di questi processi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare l'accessibilità del metodo in `private` o `internal` (`Friend` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Per correggere una violazione di questa regola, modificare l'accessibilità del metodo in `private` o `internal` ( `Friend` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.
@@ -54,4 +54,4 @@ ms.locfileid: "72652718"
  [CA1410: I metodi di registrazione COM devono corrispondere](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [la registrazione degli assembly con com](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [regasm. exe (strumento di registrazione degli assembly)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
+ <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>[Registrazione di assembly conRegasm.exe com](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [(strumento di registrazione di assembly)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)

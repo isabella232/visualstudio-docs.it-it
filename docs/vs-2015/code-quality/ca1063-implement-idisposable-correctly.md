@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fe2982ab9e1b3951583b268eadb44c97c8e4805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04691d2344b232906676180122ad67fff5405891
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663642"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539360"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementare IDisposable correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
@@ -33,7 +33,7 @@ ms.locfileid: "72663642"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- `IDisposable` non è implementato correttamente. Di seguito sono elencati alcuni motivi per questo problema:
+ `IDisposable`non è implementato correttamente. Di seguito sono elencati alcuni motivi per questo problema:
 
 - IDisposable viene nuovamente implementato nella classe.
 
@@ -61,19 +61,19 @@ ms.locfileid: "72663642"
 
 - Rimuovere IDisposable dall'elenco di interfacce implementate da {0} ed eseguire l'override dell'implementazione Dispose della classe di base.
 
-- Rimuovere il finalizzatore dal tipo {0}, eseguire l'override di Dispose (bool disposing) e inserire la logica di finalizzazione nel percorso del codice dove ' disposing ' è false.
+- Rimuovere il finalizzatore dal tipo {0} , eseguire l'override di Dispose (bool disposing) e inserire la logica di finalizzazione nel percorso del codice dove ' disposing ' è false.
 
-- Rimuovere {0}, eseguire l'override di Dispose (bool disposing) e inserire la logica di Dispose nel percorso del codice dove ' disposing ' è true.
+- Rimuovere {0} , eseguire l'override di Dispose (bool disposing) e inserire la logica di Dispose nel percorso del codice dove ' disposing ' è true.
 
-- Assicurarsi che {0} sia dichiarato public e sealed.
+- Verificare che {0} sia dichiarato public e sealed.
 
 - Rinominare {0} in ' Dispose ' e verificare che sia dichiarato public e sealed.
 
-- Assicurarsi che {0} sia dichiarato come protected, Virtual e unsealed.
+- Verificare che {0} sia dichiarato come protected, Virtual e unsealed.
 
-- Modificare {0} in modo che chiami Dispose (true), quindi chiama GC. SuppressFinalize sull'istanza dell'oggetto corrente (' This ' o ' me ' in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), quindi restituisce.
+- Modificare in {0} modo che chiami Dispose (true), quindi chiama GC. SuppressFinalize sull'istanza dell'oggetto corrente (' This ' o ' me ' in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), quindi restituisce.
 
-- Modificare {0} in modo che chiami Dispose (false) e quindi restituisca.
+- Modificare in {0} modo che chiami Dispose (false) e quindi restituisca.
 
 - Se si scrive una classe IDisposable radice non sealed, assicurarsi che l'implementazione di IDisposable segua il modello descritto in precedenza in questa sezione.
 

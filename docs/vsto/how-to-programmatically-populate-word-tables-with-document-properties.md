@@ -1,7 +1,7 @@
 ---
-title: Compilare tabelle di Word con le proprietà documento a livello di codice
+title: Popola le tabelle di Word con le proprietà del documento a livello di codice
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e296a63c208bc1c3316f89b7b4003f16daf3c93e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 92d9b38c6a1e770749849966deec7f503f9eeb5d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177790"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537813"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Procedura: A livello di codice compilare tabelle di Word con le proprietà documento
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Procedura: popolare tabelle di Word con proprietà dei documenti a livello di codice
   L'esempio seguente crea una tabella di Microsoft Office Word nella parte superiore del documento e la popola con le proprietà del documento host.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="populate-tables-in-a-document-level-customization"></a>Popolare le tabelle in una personalizzazione a livello di documento
+## <a name="populate-tables-in-a-document-level-customization"></a>Popolamento delle tabelle in una personalizzazione a livello di documento
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Per creare una tabella e popolarla con le proprietà del documento
 
@@ -59,7 +59,7 @@ ms.locfileid: "66177790"
    [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
    [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]
 
-## <a name="populate-tables-in-a-vsto-add-in"></a>Popolare le tabelle in un componente aggiuntivo VSTO
+## <a name="populate-tables-in-a-vsto-add-in"></a>Popola le tabelle in un componente aggiuntivo VSTO
 
 ### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Per creare una tabella e popolarla con le proprietà del documento
 
@@ -94,7 +94,7 @@ ms.locfileid: "66177790"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: A livello di codice, creare tabelle di Word](../vsto/how-to-programmatically-create-word-tables.md)
-- [Procedura: A livello di codice aggiungere il testo e formattazione alle celle delle tabelle di Word](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [Procedura: A livello di codice aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Procedura: creare tabelle di Word a livello di codice](../vsto/how-to-programmatically-create-word-tables.md)
+- [Procedura: aggiungere testo e formattazione alle celle delle tabelle di Word a livello di codice](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [Procedura: aggiungere righe e colonne alle tabelle di Word a livello di codice](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

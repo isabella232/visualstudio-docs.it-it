@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: A livello di codice aggiungere forme a un documento di Visio'
+title: 'Procedura: aggiungere forme a un documento di Visio a livello di codice'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e172ff57fb784d6ae768dde1e705ef645b3f9a9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adde20bff07b54a7fb5777bd9e03a995b4fbd7df
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967520"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538060"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Procedura: A livello di codice aggiungere forme a un documento di Visio
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Procedura: aggiungere forme a un documento di Visio a livello di codice
   È possibile aggiungere forme a un documento di Microsoft Office Visio recuperando i master da uno stencil e rilasciando le forme nella pagina attiva.
 
  Per altre informazioni, vedere la documentazione di riferimento di VBA per il metodo [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) , la proprietà [Microsoft.Office.Interop.Visio.Application.ActivePage](/office/vba/api/Visio.Application.ActivePage) e il metodo [Microsoft.Office.Interop.Visio.Page.Drop](/office/vba/api/Visio.Page.Drop) .
@@ -38,6 +38,6 @@ ms.locfileid: "62967520"
 
 ## <a name="see-also"></a>Vedere anche
 - [Soluzioni Visio](../vsto/visio-solutions.md)
-- [Panoramica del modello a oggetti Visio](../vsto/visio-object-model-overview.md)
-- [Lavorare con le forme di Visio](../vsto/working-with-visio-shapes.md)
-- [Procedura: Copiare e incollare forme in un documento di Visio a livello di codice](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)
+- [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)
+- [Usare le forme di Visio](../vsto/working-with-visio-shapes.md)
+- [Procedura: copiare e incollare forme in un documento di Visio a livello di codice](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)

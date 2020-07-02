@@ -15,17 +15,17 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 34318d3fb01f3f8dee50da2bc534908cecbdaf32
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ee0571e85a1d4ec9960e0235814fcb9d7adbd483
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646294"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539906"
 ---
-# <a name="ca1003-use-generic-event-handler-instances"></a>Ca1003: Utilizzare istanze di gestori eventi generici
+# <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Usare istanze di gestori eventi generici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
 |CheckId|CA1003|
@@ -33,25 +33,25 @@ ms.locfileid: "72646294"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo contiene un delegato che restituisce void, la cui firma contiene due parametri (il primo oggetto e il secondo un tipo assegnabile a EventArgs) e l'assembly contenitore ha come destinazione [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+ Un tipo contiene un delegato che restituisce void, la cui firma contiene due parametri (il primo oggetto e il secondo un tipo assegnabile a EventArgs) e le destinazioni dell'assembly contenitore [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] .
 
 ## <a name="rule-description"></a>Descrizione della regola
- Prima di [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], per passare informazioni personalizzate al gestore eventi, era necessario dichiarare un nuovo delegato che specificava una classe derivata dalla classe <xref:System.EventArgs?displayProperty=fullName>. Questo non è più vero in [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], che ha introdotto il delegato di <xref:System.EventHandler%601?displayProperty=fullName>. Questo delegato generico consente di usare tutte le classi derivate da <xref:System.EventArgs> insieme al gestore dell'evento.
+ Prima [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] , per passare informazioni personalizzate al gestore eventi, era necessario dichiarare un nuovo delegato che specificava una classe derivata dalla <xref:System.EventArgs?displayProperty=fullName> classe. Questo non è più vero in [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] , che ha introdotto il <xref:System.EventHandler%601?displayProperty=fullName> delegato. Questo delegato generico consente di usare tutte le classi derivate da <xref:System.EventArgs> in combinazione con il gestore eventi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere il delegato e sostituirne l'utilizzo usando il delegato <xref:System.EventHandler%601?displayProperty=fullName>. Se il delegato viene generato automaticamente dal compilatore [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], modificare la sintassi della dichiarazione di evento in modo da usare il delegato di <xref:System.EventHandler%601?displayProperty=fullName>.
+ Per correggere una violazione di questa regola, rimuovere il delegato e sostituirne l'utilizzo usando il <xref:System.EventHandler%601?displayProperty=fullName> delegato. Se il delegato viene generato automaticamente dal [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilatore, modificare la sintassi della dichiarazione di evento in modo da usare il <xref:System.EventHandler%601?displayProperty=fullName> delegato.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un delegato che viola la regola. Nell'esempio [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], i commenti descrivono come modificare l'esempio per soddisfare la regola. Per l' C# esempio, di seguito viene illustrato un esempio di codice modificato.
+ Nell'esempio seguente viene illustrato un delegato che viola la regola. Nell' [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] esempio i commenti descrivono come modificare l'esempio per soddisfare la regola. Per l'esempio in C#, viene illustrato un esempio che mostra il codice modificato.
 
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/cs/FxCop.Design.CustomEventHandler.cs#1)]
  [!code-vb[FxCop.Design.CustomEventHandler#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/vb/FxCop.Design.CustomEventHandler.vb#1)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene rimossa la dichiarazione del delegato dall'esempio precedente, che soddisfa la regola e ne sostituisce l'uso nei metodi `ClassThatRaisesEvent` e `ClassThatHandlesEvent` utilizzando il delegato <xref:System.EventHandler%601?displayProperty=fullName>.
+ Nell'esempio seguente viene rimossa la dichiarazione del delegato dall'esempio precedente, che soddisfa la regola e ne sostituisce l'uso nei `ClassThatRaisesEvent` `ClassThatHandlesEvent` metodi e usando il <xref:System.EventHandler%601?displayProperty=fullName> delegato.
 
  [!code-csharp[FxCop.Design.GenericEventHandler#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.GenericEventHandler/cs/FxCop.Design.GenericEventHandler.cs#1)]
 

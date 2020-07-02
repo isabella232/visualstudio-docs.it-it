@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285980"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537280"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
 
@@ -100,7 +100,7 @@ La visualizzazione Dettagli è quella in cui viene impiegata la maggior parte de
 
 Sono supportati i seguenti eventi:
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Analisi**|Tempo impiegato per l'analisi dei file XAML e la creazione di oggetti.<br /><br /> Espandendo un nodo **Analisi** in **Dettagli sequenza temporale**, viene visualizzata la catena di dipendenze di tutti i file XAML analizzati a causa dell'evento radice. Questo suggerimento consente di identificare attività di analisi di file e creazione di oggetti non necessarie in scenari in cui le prestazioni sono un fattore importante e di ottimizzarle.|
 |**Layout**|Nelle applicazioni di grandi dimensioni, migliaia di elementi potrebbero apparire sullo schermo contemporaneamente. Questa visualizzazione può comportare una bassa frequenza dei fotogrammi dell'interfaccia utente e una velocità di risposta dell’applicazione conseguentemente scarsa. L'evento Layout determina in modo accurato il costo del layout di ogni elemento, ovvero il tempo impiegato in Arrange, Measure, ApplyTemplate, ArrangeOverride e MeasureOverride. Crea anche le strutture ad albero visuali che hanno preso parte a un passaggio di Layout. È possibile usare questa visualizzazione per determinare quali alberi logici eliminare o per valutare altri meccanismi di rinvio per ottimizzare il passaggio di layout.|
@@ -116,14 +116,14 @@ Sono supportati i seguenti eventi:
 
 Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, filtrare e specificare le annotazioni delle voci della visualizzazione **Dettagli sequenza temporale** .
 
-|||
+|Nome|Descrizione|
 |-|-|
 |**Ordina per**|Ordina in base a ora di inizio o lunghezza degli eventi.|
 |![Raggruppare gli eventi per frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Aggiunge o rimuove una categoria **Frame** di primo livello che raggruppa gli eventi per frame.|
 |![Elenco dettagli filtro sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|
 |![Personalizzare le informazioni sui dettagli della cronologia](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Blog del team WPF: nuovo strumento di analisi delle prestazioni dell'interfaccia utente per applicazioni WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))

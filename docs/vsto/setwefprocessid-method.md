@@ -1,7 +1,7 @@
 ---
 title: Metodo SetWefProcessId
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1352ccc9318061be4a2f9ad2da7d63715acd6721
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978355"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537332"
 ---
 # <a name="setwefprocessid-method"></a>Metodo SetWefProcessId
-  Fornisce l'identificatore di processo che eseguirà il contenuto Web estensioni Framework (WCF).
+  Fornisce l'identificatore del processo che eseguirà il contenuto del framework Web Extensions (WEF).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,12 +32,12 @@ HRESULT SetWefProcessId(
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|*dwProcessId*|L'identificatore di processo che verrà usato per eseguire il contenuto di WCF.|
+|*dwProcessId*|Identificatore del processo che verrà usato per eseguire il contenuto di WEF.|
 
 ## <a name="return-value"></a>Valore restituito
  Valore HRESULT che indica se il metodo è stato completato correttamente.
 
-## <a name="remarks"></a>Note
- Questo metodo deve essere chiamato dopo aver creato il processo contenuto WEF ma prima dell'esecuzione di qualsiasi contenuto WEF.
+## <a name="remarks"></a>Osservazioni
+ Questo metodo deve essere chiamato dopo la creazione del processo di contenuto WEF, ma prima dell'esecuzione di qualsiasi contenuto di WEF.
 
- Se si desidera che l'ambiente di sviluppo per collegare un debugger al processo contenuto WEF, l'ambiente è necessario eseguire questa operazione nell'implementazione di questo metodo.
+ Se si vuole che l'ambiente di sviluppo alleghi un debugger al processo di contenuto WEF, l'ambiente deve eseguire questa operazione nell'implementazione di questo metodo.

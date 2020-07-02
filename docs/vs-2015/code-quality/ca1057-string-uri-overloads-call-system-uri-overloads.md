@@ -15,17 +15,17 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ba7e7de4f3ef6336ed3d82dc1e1da03ec0bf2575
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bcdb4d8333b0a4d2d06580d882cf736d4527eca4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603069"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539529"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Gli overload URI dei valori di stringa chiamano gli overload System.Uri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|valore|
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|
 |CheckId|CA1057|
@@ -33,13 +33,13 @@ ms.locfileid: "72603069"
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un tipo dichiara gli overload del metodo che differiscono solo per la sostituzione di un parametro di stringa con un parametro <xref:System.Uri?displayProperty=fullName> e l'overload che accetta il parametro String non chiama l'overload che accetta il parametro <xref:System.Uri>.
+ Un tipo dichiara gli overload del metodo che differiscono solo per la sostituzione di un parametro di stringa con un <xref:System.Uri?displayProperty=fullName> parametro e l'overload che accetta il parametro di stringa non chiama l'overload che accetta il <xref:System.Uri> parametro.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Poiché gli overload differiscono solo per il parametro String/<xref:System.Uri>, si presuppone che la stringa rappresenti un URI (Uniform Resource Identifier). Una rappresentazione in forma di stringa di un URI è soggetta a errori di analisi e codifica e può creare vulnerabilità nella sicurezza. La classe <xref:System.Uri> fornisce questi servizi in modo sicuro e protetto. Per sfruttare i vantaggi della classe <xref:System.Uri>, l'overload di stringa deve chiamare l'overload di <xref:System.Uri> usando l'argomento stringa.
+ Poiché gli overload differiscono solo per la stringa o il <xref:System.Uri> parametro, si presuppone che la stringa rappresenti un URI (Uniform Resource Identifier). Una rappresentazione in forma di stringa di un URI è soggetta a errori di analisi e codifica e può creare vulnerabilità nella sicurezza. La <xref:System.Uri> classe fornisce questi servizi in modo sicuro e protetto. Per sfruttare i vantaggi della <xref:System.Uri> classe, l'overload di stringa deve chiamare l' <xref:System.Uri> Overload usando l'argomento di stringa.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Implementare nuovamente il metodo che usa la rappresentazione di stringa dell'URI in modo che crei un'istanza della classe <xref:System.Uri> usando l'argomento stringa e quindi passa l'oggetto <xref:System.Uri> all'overload con il parametro <xref:System.Uri>.
+ Implementare nuovamente il metodo che utilizza la rappresentazione di stringa dell'URI in modo da creare un'istanza della <xref:System.Uri> classe utilizzando l'argomento stringa, quindi passa l' <xref:System.Uri> oggetto all'overload con il <xref:System.Uri> parametro.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola se il parametro di stringa non rappresenta un URI.
