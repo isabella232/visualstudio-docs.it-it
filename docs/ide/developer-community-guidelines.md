@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b29cc0b6af8fed9ee64a92b2d43e29062b498a
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 5189278f8efe42e6e7916562e7ce4f5d6a964061
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85837751"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938255"
 ---
 # <a name="developer-community-guidelines"></a>Linee guida per Developer Community
 
@@ -91,7 +91,7 @@ Tenere traccia dello stato di avanzamento del suggerimento per le funzionalità 
 
 Per rendere chiara e trasparente la conversazione, limitare la discussione all'inglese e tener presente le informazioni rilevanti per il problema. Sii attento ad altri e prova sempre a essere cortese e professionale.
 
-Per ulteriori informazioni, vedere la pagina relativa al [codice di comportamento della community Microsoft](https://answers.microsoft.com/page/codeofconduct).
+Per ulteriori informazioni, vedere la pagina relativa al [codice di comportamento della community Microsoft](https://answers.microsoft.com/en-us/page/codeofconduct).
 
 Eventuali violazioni al galateo di discussione possono causare la rimozione del commento e la fine del divieto dell'utente.
 

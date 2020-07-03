@@ -6,12 +6,13 @@ ms.author: johmil
 ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: a81eb9bbae905599cc5d953f27ac3a8d06441f8b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.topic: overview
+ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183983"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939081"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Debug con Visual Studio per Mac
 
@@ -89,7 +90,7 @@ Ecco i quattro pulsanti:
 
 ## <a name="change-which-statement-is-executed-next"></a>Modificare l'istruzione da eseguire successivamente
 
-Mentre il debugger viene sospeso, una freccia nel margine indica quale riga di codice verrà eseguita successivamente. È possibile fare clic e trascinare la freccia su una riga di codice diversa per modificare l'istruzione che verrà eseguita. È possibile ottenere lo stesso risultato facendo clic con il pulsante destro del mouse su una riga di codice e scegliendo **Imposta istruzione successiva** dal menu di scelta rapida.
+Mentre il debugger è sospeso, una freccia nel margine indica la riga di codice successiva che verrà eseguita. È possibile fare clic e trascinare la freccia su una riga di codice diversa per modificare l'istruzione che verrà eseguita. È possibile ottenere lo stesso risultato facendo clic con il pulsante destro del mouse su una riga di codice e scegliendo **Imposta istruzione successiva** dal menu di scelta rapida.
 
 ![Trascinare la freccia per impostare l'istruzione successiva](media/debugger-drag-setnextstatement.gif)
 

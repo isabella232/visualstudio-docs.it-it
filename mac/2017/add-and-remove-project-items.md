@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: 94bb56fba0b90f29c291bc2c4b95976810dd21c6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 14f1b08464f1bc0f9e1db8a4e7ddbad23a84573e
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983622"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938877"
 ---
 # <a name="adding-and-removing-project-items"></a>Aggiunta e rimozione di elementi di progetto
 
@@ -24,7 +25,7 @@ Verrà visualizzata la finestra di dialogo Nuovo file, in cui sono disponibili m
 
 ## <a name="adding-existing-files"></a>Aggiunta di file esistenti
 
-È possibile aggiungere file esistenti al progetto facendo clic con il pulsante destro del mouse sul nodo Progetto e selezionando **Aggiungi > Aggiungi file...**. In alternativa, per aggiungere un'intera cartella, selezionare **Aggiungi > Aggiungi cartella esistente...**. Viene visualizzato il browser dei file, che consente di cercare nell'oggetto richiesto l'elemento richiesto da aggiungere.
+È possibile aggiungere file esistenti al progetto facendo clic con il pulsante destro del mouse sul nodo del progetto e scegliendo **aggiungi > Aggiungi file.** In alternativa, per aggiungere un'intera cartella, selezionare **aggiungi > Aggiungi cartella esistente...**. Viene visualizzato il Visualizzatore file, che consente di cercare l'elemento obbligatorio da aggiungere nel sistema.
 
 ## <a name="removing-items"></a>Rimozione di elementi
 

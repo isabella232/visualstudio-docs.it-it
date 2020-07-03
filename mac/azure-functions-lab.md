@@ -6,12 +6,13 @@ ms.author: sayedha
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: tutorial
+ms.openlocfilehash: 99373d7da8c7f83c8703b237ff83c63f9d1b6a53
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75398168"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939086"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione alle funzioni di Azure
 
@@ -27,7 +28,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 ## <a name="requirements"></a>Requisiti
 
 - Visual Studio per Mac 7.5 o versione successiva.
-- Una sottoscrizione di Azure [https://azure.com/free](https://azure.com/free?ref=visualstudio)(disponibile gratuitamente da ).
+- Una sottoscrizione di Azure (disponibile gratuitamente da [https://azure.com/free](https://azure.com/free?ref=visualstudio) ).
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>Esercizio 1: Creazione di un progetto di Funzioni di Azure
 
@@ -54,7 +55,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Esercizio 2: Creazione di un account di archiviazione di Azure
 
-1. Accedere all'account Azure [https://portal.azure.com](https://portal.azure.com)all'indirizzo .
+1. Accedere al proprio account Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
 
 1. Nella sezione **Preferiti** sul lato sinistro dello schermo, selezionare **Account di archiviazione**:
 
@@ -88,7 +89,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Esempio 3: Creazione e debug di una funzione di Azure
 
-1. Ora è possibile iniziare ad aggiungere codice. Quando si usa una libreria di classi .NET le funzioni di Azure vengono aggiunte come metodi statici. In **Riquadro della soluzione**fare clic con il pulsante destro del mouse sul nodo del progetto **AzureFunctions** e scegliere **Aggiungi > Aggiungi funzione:**
+1. Ora è possibile iniziare ad aggiungere codice. Quando si usa una libreria di classi .NET le funzioni di Azure vengono aggiunte come metodi statici. Da **riquadro della soluzione**, fare clic con il pulsante destro del mouse sul nodo del progetto **AzureFunctions** e selezionare **Aggiungi > Aggiungi funzione**:
 
     ![Opzione Aggiungi funzione](media/azure-functions-lab-image11.png)
 
@@ -126,7 +127,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![Nuovo metodo run con l'attributo FunctionName evidenziato](media/azure-functions-lab-image13.png)
 
-1. Successivamente, il metodo è contrassegnato come metodo **public static**, impostazione necessaria. Si noterà inoltre che il valore restituito è un **int**. Se non diversamente specificato usando gli attributi del metodo, qualsiasi valore restituito non void di una funzione di Azure viene restituito al client come testo. Per impostazione predefinita viene restituito come **XML**, ma può essere modificato in **JSON**. Si eseguirà questa operazione più avanti nell'esercitazione.
+1. Successivamente, il metodo è contrassegnato come metodo **public static**, impostazione necessaria. Si noterà anche che il valore restituito è di **tipo int**. Se non diversamente specificato mediante gli attributi del metodo, il valore restituito non void di una funzione di Azure viene restituito al client come testo. Per impostazione predefinita viene restituito come **XML**, ma può essere modificato in **JSON**. Si eseguirà questa operazione più avanti nell'esercitazione.
 
     ![Nuovo metodo run con l'inizializzazione del metodo evidenziata](media/azure-functions-lab-image14.png)
 
@@ -298,7 +299,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![URL per le funzioni Http](media/azure-functions-lab-image31.png)
 
-1. Tornare alla finestra del **http://localhost:7071/api/Adder/3/5**browser e passare a .
+1. Restituire la finestra del browser e passare a **http://localhost:7071/api/Adder/3/5** .
 
 1. Ora il metodo funziona di nuovo ed estrae parametri dal percorso, quindi produce una somma.
 
@@ -347,7 +348,7 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
 
 1. Premere **F5** per compilare ed eseguire il progetto.
 
-1. Nella scheda del browser, passare a **http://localhost:7071/api/Process/4/6**. Questa operazione inserisce un altro messaggio nella coda, che a sua volta aggiungerà un'altra riga alla tabella in un secondo momento.
+1. Nella scheda Esplorazione passare a **http://localhost:7071/api/Process/4/6** . Questa operazione inserisce un altro messaggio nella coda, che a sua volta aggiungerà un'altra riga alla tabella in un secondo momento.
 
 1. Tornare a **Terminal** e verificare la richiesta in ingresso per **4 + 6**.
 
@@ -380,11 +381,11 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
 
 1. Premere **F5** per compilare ed eseguire il progetto.
 
-1. Nella scheda del browser, **http://localhost:7071/api/Process/4/6**aggiornare l'URL in formato . Dato che la riga della tabella per questo record esiste, viene restituita immediatamente e senza errori. Poiché non esiste alcun output HTTP, è possibile visualizzare l'output nel Terminale.
+1. Nella scheda Esplorazione aggiornare l'URL in **http://localhost:7071/api/Process/4/6** . Dato che la riga della tabella per questo record esiste, viene restituita immediatamente e senza errori. Poiché non esiste alcun output HTTP, è possibile visualizzare l'output nel Terminale.
 
     ![Output nel Terminale indicante che la riga della tabella esiste già](media/azure-functions-lab-image33.png)
 
-1. Aggiornare l'URL in modo che rifletta una combinazione non ancora testata, ad **http://localhost:7071/api/Process/5/7**esempio . Si noti il messaggio nel Terminale, indicante che la riga della tabella non è stata trovata (come previsto).
+1. Aggiornare l'URL in modo che corrisponda a una combinazione non ancora testata, ad esempio **http://localhost:7071/api/Process/5/7** . Si noti il messaggio nel Terminale, indicante che la riga della tabella non è stata trovata (come previsto).
 
     ![Output nel Terminale che visualizza il nuovo processo](media/azure-functions-lab-image34.png)
 

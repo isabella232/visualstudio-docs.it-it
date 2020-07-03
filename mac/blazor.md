@@ -6,12 +6,13 @@ ms.author: jogallow
 ms.date: 12/17/2019
 ms.technology: vs-ide-general
 ms.assetid: D2717D3A-9225-40A8-8155-7D0143B2CA60
-ms.openlocfilehash: 978e3676d587bcd54a8e9d0b8b81f5d6c52a92bc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.topic: how-to
+ms.openlocfilehash: ac7fcd9044aa6367f140ac4aa96e6aaf4a9f5885
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180279"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939142"
 ---
 # <a name="create-blazor-web-apps"></a>Crea app Web Blazer
 
@@ -76,9 +77,9 @@ Questa cartella contiene le pagine Web di un progetto che usano l'estensione di 
 
 Questa cartella include i componenti condivisi, usando anche l'estensione *Razor* . Si noterà che questo include *MainLayout. Razor*, che viene usato per definire il layout comune nell'applicazione. Include anche il componente Shared *NavMenu. Razor* , che viene usato in tutte le pagine. Se si stanno creando componenti riutilizzabili, questi verranno inseriti nella cartella **condivisa** .
 
-### <a name="app-settings"></a>Impostazioni dell'app
+### <a name="app-settings"></a>Impostazioni app
 
-Il file *appSettings. JSON* contiene i dati di configurazione, ad esempio le stringhe di connessione.
+Il *appSettings.jsnel* file contiene i dati di configurazione, ad esempio le stringhe di connessione.
 
 Per ulteriori informazioni sulla configurazione, vedere la pagina relativa alla [configurazione nella Guida di ASP.NET](/aspnet/core/fundamentals/configuration/index).
 

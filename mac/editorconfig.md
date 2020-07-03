@@ -6,12 +6,13 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 6f6241c114d636cc8cb01cf5c4bf9ba2b5106701
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73716896"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938516"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Creazione e modifica di un file EditorConfig personalizzato
 
@@ -79,13 +80,13 @@ Se si sta lavorando a un progetto o a una soluzione contenente già un file `.ed
 
 Nel progetto è consigliabile riusare un file `.editorconfig` esistente. Per aggiungere un file esistente, eseguire le operazioni seguenti:
 
-1. Fare clic con il pulsante destro del mouse sulla cartella a cui si desidera aggiungerla e selezionare **Aggiungi > Aggiungi file**.
+1. Fare clic con il pulsante destro del mouse sulla cartella a cui si desidera aggiungerla e scegliere **aggiungi > Aggiungi file**.
 
 2. Passare alla directory del file richiesto.
 
 3. I file che iniziano con `.` (ad esempio `.editorconfig`) sono file nascosti in macOS, quindi premere **Comando + Maiuscole +.** per rendere il file `.editorconfig` visibile.
 
-4. Selezionare `.editorconfig` il file e fare clic su **Apri**:
+4. Selezionare il `.editorconfig` file e fare clic su **Apri**:
 
     ![Finestra per l'aggiunta di un nuovo file](media/editorconfig-image3b.png)
 
@@ -126,7 +127,7 @@ Ogni sezione, identificata da parentesi quadre (**[ ]**), specifica le informazi
 
 Nell'esempio precedente, alcune impostazioni vengono applicate a tutti i file del progetto e altre vengono aggiunte solo ai file C#. Gli screenshot riportati di seguito illustrano la situazione prima e dopo l'applicazione delle impostazioni di `.editorconfig`:
 
-**Prima di**:
+**Prima**:
 
 ![Prima dell'applicazione delle impostazioni del file editorconfig](media/editorconfig-image4.png)
 

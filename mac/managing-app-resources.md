@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 987a337941ba2a180045e64c5ba26dfd54284bec
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67692846"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938371"
 ---
 # <a name="managing-app-resources"></a>Gestione delle risorse delle app
 
@@ -20,13 +21,13 @@ I file di risorse delle app, ad esempio immagini, file di testo e file audio, so
 
 Il codice Xamarin.Forms viene eseguito su più piattaforme, ognuna con un file system proprio ed è il file system a determinare la modalità di lettura e scrittura dei file. In Xamarin.Forms è possibile gestire le risorse delle app usando le API native per i file in ogni piattaforma oppure aggiungendo file come risorse incorporate.
 
-* [Utilizzo delle immagini](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
+* [Working with Images (Uso delle immagini)](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
 * [Uso dei file]( https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/)
 
 ## <a name="xamarinios"></a>Xamarin.iOS
 
 * [Uso delle risorse](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_resources/)
-* [Utilizzo delle immagini](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/)
+* [Working with Images (Uso delle immagini)](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/)
 * [Uso del file system](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_the_file_system/)
 
 ## <a name="xamarinandroid"></a>Xamarin.Android
@@ -35,7 +36,7 @@ Il codice Xamarin.Forms viene eseguito su più piattaforme, ognuna con un file s
 
 ## <a name="xamarinmac"></a>Xamarin.Mac
 
-* [Utilizzo delle immagini](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
+* [Working with Images (Uso delle immagini)](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
 ## <a name="see-also"></a>Vedere anche
 

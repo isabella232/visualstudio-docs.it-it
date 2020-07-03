@@ -1,19 +1,20 @@
 ---
-title: Introduzione alle funzioni di Azure
+title: Introduzione a Funzioni di Azure
 description: Uso delle funzioni di Azure in Visual Studio per Mac.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 85e66711c8bfe65319bf6af90ce0452478c4b7f8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983477"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938853"
 ---
-# <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
+# <a name="introduction-to-azure-functions"></a>Introduzione a Funzioni di Azure
 
 Le funzioni di Azure sono un metodo per la creazione e l'esecuzione di frammenti di codice gestiti dagli eventi (funzioni) nel cloud, senza richiedere l'aggiunta o la gestione esplicita di elementi di infrastruttura. Per altre informazioni sulle funzioni di Azure, vedere la [documentazione di Funzioni di Azure](/azure/azure-functions/).
 
@@ -21,7 +22,7 @@ Le funzioni di Azure sono un metodo per la creazione e l'esecuzione di frammenti
 
 Gli strumenti Funzioni di Azure sono inclusi in **Visual Studio per Mac 7.5**.
 
-Per creare e distribuire funzioni è necessaria anche una [https://azure.com/free](https://azure.com/free)sottoscrizione di Azure, disponibile gratuitamente da .
+Per creare e distribuire funzioni è necessaria anche una sottoscrizione di Azure, disponibile gratuitamente da [https://azure.com/free](https://azure.com/free) .
 
 ## <a name="creating-your-first-azure-functions-project"></a>Creazione del primo progetto di Funzioni di Azure
 
@@ -86,18 +87,18 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 
     Nella sezione [Modelli di funzione disponibili](#available-function-templates) è disponibile un elenco dei modelli di Funzioni di Azure.
 
-È possibile usare la procedura descritta in precedenza per aggiungere altre funzioni al progetto di app per le funzioni. Ogni funzione nel progetto può avere un trigger diverso, ma una funzione deve avere esattamente un trigger. Per altre informazioni, vedere Concetti relativi ai trigger e alle associazioni di Funzioni di Azure.For more information, see [Azure Functions triggers and bindings concepts](/azure/azure-functions/functions-triggers-bindings).
+È possibile usare la procedura descritta in precedenza per aggiungere altre funzioni al progetto di app per le funzioni. Ogni funzione nel progetto può avere un trigger diverso, ma una funzione deve avere esattamente un trigger. Per altre informazioni, vedere [concetti relativi a trigger e associazioni di funzioni di Azure](/azure/azure-functions/functions-triggers-bindings).
 
 ## <a name="publish-to-azure"></a>Pubblicazione in Azure
 
-1. Fare clic con il pulsante destro del mouse sul nome del progetto e selezionare **pubblica > l'opzione**di menu Pubblica in Azure: ![Pubblica in Azure](media/azure-functions-image5.png)
+1. Fare clic con il pulsante destro del mouse sul nome del progetto e selezionare **pubblica > pubblica in Azure**: ![ opzione di menu pubblica in Azure](media/azure-functions-image5.png)
 2. Se l'account di Azure è già stato connesso a Visual Studio per Mac, viene visualizzato un elenco dei servizi app disponibili. Se non è stato ancora effettuato l'accesso, verrà richiesto di farlo.
 3. Nella finestra di dialogo **Pubblica in Servizi app di Azure** è possibile selezionare un servizio app esistente o crearne uno nuovo facendo clic **Nuovo**.
 4. Nella finestra di dialogo **Crea nuovo servizio app** immettere le impostazioni: ![Opzione di menu Pubblica in Azure](media/azure-functions-image7.png)
 
     |Impostazione  |Descrizione  |
     |---------|---------|
-    |**Nome servizio app**|Nome globalmente univoco che identifica la nuova app per le funzioni.|
+    |**Nome del servizio app**|Nome globalmente univoco che identifica la nuova app per le funzioni.|
     |**Sottoscrizione**|Sottoscrizione di Azure da usare.|
     |**[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)**|Nome del gruppo di risorse in cui creare l'app per le funzioni. Scegliere **+** di creare un nuovo gruppo di risorse.|
     |**[Piano di servizio](/azure/azure-functions/functions-scale)**|Scegliere un piano esistente o creare un piano personalizzato. Scegliere una località in un'area nelle vicinanze o vicino ad altri servizi a cui accedono le funzioni.|
@@ -122,7 +123,7 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 
 Le impostazioni aggiunte nel file local.settings.json devono essere aggiunte anche all'app per le funzioni in Azure. Queste impostazioni non vengono caricate automaticamente quando si pubblica il progetto.
 
-Per accedere alle impostazioni dell'app, [https://ms.portal.azure.com/](https://ms.portal.azure.com/)passare al portale di Azure all'indirizzo . In **App per le funzioni** selezionare **App per le funzioni** ed evidenziare il nome della funzione:
+Per accedere alle impostazioni dell'app, passare al portale di Azure all'indirizzo [https://ms.portal.azure.com/](https://ms.portal.azure.com/) . In **App per le funzioni** selezionare **App per le funzioni** ed evidenziare il nome della funzione:
 
 ![Menu di Funzioni di Azure](media/azure-functions-image9.png)
 

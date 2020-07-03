@@ -6,16 +6,17 @@ ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 5f1a617c5562c4f95fec94ae449f48b681fcb7ef
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.topic: how-to
+ms.openlocfilehash: 2e921ac1e9c85216bebf1626e1454b9fb764f129
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543753"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938939"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
- Visual Studio per Mac semplifica lo sviluppo del servizio dell'app con il supporto per la piattaforma di sviluppo Web ASP.NET Core più recente. Il funzionamento di ASP.NET Core si basa su .NET Core, l'evoluzione più recente di .NET Framework e del runtime. E 'stato sintonizzato per prestazioni veloci, fattorizzato per le piccole dimensioni di installazione, e re-immaginato per funzionare su Linux e macOS, così come Windows.
+ Visual Studio per Mac semplifica lo sviluppo del servizio dell'app con il supporto per la più recente piattaforma di sviluppo Web ASP.NET Core. Il funzionamento di ASP.NET Core si basa su .NET Core, l'evoluzione più recente di .NET Framework e del runtime. È stato ottimizzato per ottenere prestazioni rapide, fattorizzato per piccole dimensioni di installazione e riimmaginato per l'esecuzione in Linux e macOS, oltre che in Windows.
 
 ## <a name="installing-net-core"></a>Installazione di .NET Core
 
@@ -42,7 +43,7 @@ Selezionare **Progetto ASP.NET Core vuoto** e premere **Avanti**. Assegnare un n
 
 ![Vista del nuovo progetto ASP.NET Core vuoto](media/asp-net-core-image4.png)
 
-Progetto ASP.NET Core vuoto crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs**, spiegati di seguito. Crea inoltre una cartella Dependencies, che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il framework .NET Core e le destinazioni MSBuild che compilano il progetto:It also creates a Dependencies folder, which contains your project's NuGet package dependencies such as ASP.NET Core, the .NET Core framework, and the MSBuild targets that build the project:
+Progetto ASP.NET Core vuoto crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs**, spiegati di seguito. Viene anche creata una cartella dipendenze che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il Framework .NET Core e le destinazioni MSBuild che compilano il progetto:
 
 ![Riquadro della soluzione che visualizza le dipendenze](media/asp-net-core-image12.png)
 
@@ -64,7 +65,7 @@ public static void Main(string[] args)
 }
 ```
 
-Un'app ASP.NET Core crea un server Web nel relativo metodo [`WebHostBuilder`](/aspnet/core/fundamentals/hosting)principale configurando e avviando un host tramite un'istanza di . Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
+Un'app ASP.NET Core crea un server Web nel metodo principale mediante la configurazione e l'avvio di un host tramite un'istanza di [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) . Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
 
 * `UseKestrel`: specifica il server Kestrel che verrà usato dall'app
 * `UseContentRoot(Directory.GetCurrentDirectory())`: usa la cartella radice del progetto Web come radice del contenuto dell'app quando quest'ultima viene avviata da questa cartella
@@ -230,11 +231,11 @@ Se è necessario installare manualmente .NET Core in Mac OS 10.11 (El Capitan) e
 
 Per installare correttamente .NET Core, assicurarsi che tutti i quattro passaggi vengano completati in modo appropriato.
 
-## <a name="summary"></a>Riepilogo
+## <a name="summary"></a>Summary
 
 Questa guida offre un'introduzione ad ASP.NET Core. Descrive che cos'è e quando usarlo e fornisce informazioni per l'uso in Visual Studio per Mac.
 Per altre informazioni sui passaggi successivi, fare riferimento alle guide seguenti:
-- ASP.NET documenti [principali.](/aspnet/core/)
+- [ASP.NET Core](/aspnet/core/) docs.
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Creazione di servizi back-end per applicazioni per dispositivi mobili native), che illustra come creare un servizio REST tramite ASP.NET Core per un'app Xamarin.Forms.
 - [ASP.NET Core hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) (Esercitazione pratica su ASP.NET Core).
 
