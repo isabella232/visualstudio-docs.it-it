@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: cabuschl
 ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Informazioni su come installare Microsoft 365 app per Enterprise
-ms.openlocfilehash: 95eaece45d6d261605a653efbb80bc03d6199dbf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 341598e323b004463d9af2f1b18d5096dea9f3b2
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85364112"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902988"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 app per Enterprise nelle sottoscrizioni di Visual Studio
 Microsoft 365 Apps for Enterprise (in precedenza Office 365 Pro Plus) è disponibile nelle sottoscrizioni di Visual Studio selezionate. 
@@ -77,7 +77,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
 - Per domande sull'IDE di Visual Studio, su Azure DevOps o su altri prodotti o servizi di Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)

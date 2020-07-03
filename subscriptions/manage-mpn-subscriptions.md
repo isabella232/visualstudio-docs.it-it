@@ -5,19 +5,19 @@ ms.author: lank
 manager: lank
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Come assegnare le sottoscrizioni di Visual Studio agli utenti finali per i partner MPN.
-ms.openlocfilehash: aecc9892b60951f869c6a6bc721b746d2c013db5
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: fc35178a0d66a048a41ee04d27ae2993949972c8
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232418"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902864"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestire le sottoscrizioni di Visual Studio offerte tramite Microsoft Partner Network (MPN)
 I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono idonei per usare le sottoscrizioni di Visual Studio. Queste sottoscrizioni sono concesse in licenza per singolo utente e sono valide solo quando vengono assegnate a un utente denominato specifico che lavora per la società partner.
 
-Per informazioni dettagliate, vedere Sottoscrizioni di Visual Studio offerte ai partner nel [Microsoft Partner Network (MPN).](program-mpn.md)
+Per informazioni dettagliate, vedere la pagina relativa alle sottoscrizioni di Visual Studio offerte ai partner del [Microsoft Partner Network (MPN)](program-mpn.md) .
 
 ## <a name="microsoft-action-pack-subscribers"></a>Sottoscrittori di Microsoft Action Pack
 Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
@@ -29,9 +29,9 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 6. Selezionare **Privileges** (Privilegi)
 7. Selezionare **Sottoscrizioni di Visual Studio** (Nota: aggiornamento della sottoscrizione di Visual Studio in sospeso)
 8. Selezionare il **singolo** desiderato
-9. Fare clic su **Invia**
+9. Fare clic su **Submit** (Invia)
 10. L'utente riceverà un messaggio di posta elettronica
-11. La persona assegnata [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) avrà accesso per accedere
+11. L'utente assegnato accederà [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per accedere
 12. Potrebbe essere visualizzata una pagina del profilo di Visual Studio che include:
     - Nome
     - Cognome
@@ -43,9 +43,9 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 2. Selezionare **Privileges** (Privilegi)
 3. Selezionare **MSDN Subscriptions** (Abbonamenti MSDN). Si noti che questa opzione verrà presto ridenominata "Sottoscrizioni di Visual Studio".
 4. Individuare il **singolo** desiderato
-5. Fare clic su **Invia**
+5. Fare clic su **Submit** (Invia)
 6. L'utente riceverà un messaggio di posta elettronica
-7. La persona assegnata [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) avrà accesso per accedere
+7. L'utente assegnato accederà [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per accedere
 8. Potrebbe essere visualizzata una pagina del profilo di Visual Studio
     - Nome
     - Cognome
@@ -62,7 +62,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

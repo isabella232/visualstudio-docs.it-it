@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2036588fe04825b0fe1a1aa2db7ae8f7e0b5ad4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7533c205b95b016c43bd2eef614b4c2825596e74
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734763"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835654"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: cattura programmatica delle informazioni grafica
 La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente di acquisire a livello di codice informazioni grafiche da un'app Direct3D.
@@ -23,9 +23,9 @@ L'acquisizione a livello di codice è utile in scenari quali ad esempio:
 
 - Iniziare l'acquisizione a livello di codice quando l'app non esegue il rendering, ad esempio quando usa DirectCompute per eseguire calcoli.
 
-- Call `CaptureCurrentFrame`when un problema di rendering è difficile da prevedere e acquisire nei test manuali, ma può essere previsto a livello di codice usando le informazioni sullo stato dell'app in fase di esecuzione.
+- Chiamare `CaptureCurrentFrame` quando un problema di rendering è difficile da prevedere e acquisire nei test manuali, ma può essere previsto a livello di codice usando le informazioni sullo stato dell'app in fase di esecuzione.
 
-## <a name="CaptureDX11_2"></a> Acquisizione a livello di codice in Windows 10
+## <a name="programmatic-capture-in-windows-10"></a><a name="CaptureDX11_2"></a> Acquisizione a livello di codice in Windows 10
 Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice nelle app che usano l'API DirectX 11.2 su Windows 10, che usa il metodo di acquisizione affidabile.
 
 Questa sezione illustra l'esecuzione delle attività seguenti:
@@ -37,7 +37,7 @@ Questa sezione illustra l'esecuzione delle attività seguenti:
 - Acquisizione di informazioni grafiche
 
 > [!NOTE]
-> Le implementazioni precedenti di acquisizione a livello di codice si basavano su Remote Tools per Visual Studio per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornire funzionalità di acquisizione.
+> Le implementazioni precedenti di acquisizione a livello di codice si basavano su Remote Tools per Visual Studio per fornire funzionalità di acquisizione.
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Preparazione dell'app per usare l'acquisizione a livello di codice
 Per usare l'acquisizione a livello di codice nell'app, deve includere le intestazioni necessarie. Queste intestazioni fanno parte di Windows 10 SDK.
@@ -54,7 +54,7 @@ Per usare l'acquisizione a livello di codice nell'app, deve includere le intesta
     ```
 
     > [!IMPORTANT]
-    > Non includere il file di intestazione vsgcapture.h, che supporta l'acquisizione a livello di codice in Windows 8.0 e versioni precedenti, per eseguire l'acquisizione a livello di codice nelle app Windows 10. Questa intestazione non è compatibile con DirectX 11.2. Se questo file è incluso dopo l'inclusione dell'intestazione d3d11_2. h, il compilatore genera un avviso. Se vsgcapture. h è incluso prima di d3d11_2. h, l'app non verrà avviata.
+    > Non includere il file di intestazione vsgcapture.h, che supporta l'acquisizione a livello di codice in Windows 8.0 e versioni precedenti, per eseguire l'acquisizione a livello di codice nelle app Windows 10. Questa intestazione non è compatibile con DirectX 11.2. Se questo file è incluso dopo che è stata inclusa l'intestazione d3d11_2. h, il compilatore genera un avviso. Se vsgcapture. h è incluso prima di d3d11_2. h, l'app non verrà avviata.
 
     > [!NOTE]
     > Se nel computer è installata la versione di DirectX SDK del giugno 2010 e il percorso di inclusione del progetto contiene `%DXSDK_DIR%includex86`, spostarlo alla fine del percorso di inclusione. Eseguire la stessa operazione per il percorso della libreria.
@@ -63,7 +63,7 @@ Per usare l'acquisizione a livello di codice nell'app, deve includere le intesta
 Prima di poter acquisire informazioni grafiche da DirectX 11.2, è necessario ottenere l'interfaccia di debug DXGI.
 
 > [!IMPORTANT]
-> Quando si usa l'acquisizione a livello di codice, è comunque necessario eseguire l'app in diagnostica grafica (ALT + F5 in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) o nello [strumento di acquisizione da riga di comando](command-line-capture-tool.md).
+> Quando si usa l'acquisizione a livello di codice, è comunque necessario eseguire l'app in diagnostica grafica (ALT + F5 in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ) o nello [strumento di acquisizione da riga di comando](command-line-capture-tool.md).
 
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Per ottenere l'interfaccia IDXGraphicsAnalysis
 
@@ -74,7 +74,7 @@ Prima di poter acquisire informazioni grafiche da DirectX 11.2, è necessario ot
   HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));
   ```
 
-  Assicurarsi di controllare la `HRESULT` restituita da [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) per assicurarsi di ottenere un'interfaccia valida prima di usarla:
+  Assicurarsi di controllare l'oggetto `HRESULT` restituito da [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) per assicurarsi di ottenere un'interfaccia valida prima di usarla:
 
   ```cpp
   if (FAILED(getAnalysis))
@@ -107,7 +107,7 @@ Ora che si dispone di un'interfaccia `IDXGraphicsAnalysis` valida, è possibile 
     ...
     ```
 
-- Dopo la chiamata a `EndCapture`, rilasciare l'oggetto Graphics.
+- Dopo la chiamata a `EndCapture` , rilasciare l'oggetto Graphics.
 
 ## <a name="next-steps"></a>Passaggi successivi
 In questa procedura dettagliata è stato illustrato come acquisire informazioni grafiche a livello di codice. Come passaggio successivo, prendere in considerare questa opzione:
@@ -116,5 +116,5 @@ In questa procedura dettagliata è stato illustrato come acquisire informazioni 
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura dettagliata: cattura delle informazioni grafica](walkthrough-capturing-graphics-information.md)
-- [Capturing Graphics Information](capturing-graphics-information.md)
+- [Acquisizione di informazioni grafiche](capturing-graphics-information.md)
 - [Strumento di acquisizione da riga di comando](command-line-capture-tool.md)

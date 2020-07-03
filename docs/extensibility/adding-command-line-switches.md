@@ -1,7 +1,7 @@
 ---
 title: Aggiunta di opzioni della riga di comando | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c692787a63a7ab06fb3f0e0e94e2839190f58c9d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536279"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903481"
 ---
 # <a name="add-command-line-switches"></a>Aggiungi opzioni della riga di comando
 È possibile aggiungere opzioni della riga di comando che si applicano al pacchetto VSPackage quando *devenv.exe* viene eseguito. Usare <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> per dichiarare il nome dell'opzione e le relative proprietà. In questo esempio viene aggiunta l'opzione di commutazione a pagina per una sottoclasse di VSPackage denominata **AddCommandSwitchPackage** senza argomenti e con il pacchetto VSPackage caricato automaticamente.
@@ -29,9 +29,9 @@ ms.locfileid: "85536279"
 
  I parametri denominati sono indicati nelle descrizioni seguenti.
 
-|Nome|Descrizione|
+|Nome|Description|
 |-|-|
-| Argomenti | Numero di argomenti per l'opzione. Può essere "*" o un elenco di argomenti. |
+| Arguments | Numero di argomenti per l'opzione. Può essere "*" o un elenco di argomenti. |
 | DemandLoad – viene | Caricare il pacchetto VSPackage automaticamente se è impostato su 1, in caso contrario è impostato su 0. |
 | HelpString | Stringa della guida o ID della risorsa della stringa da visualizzare con **devenv/?**. |
 | Nome | Opzione. |

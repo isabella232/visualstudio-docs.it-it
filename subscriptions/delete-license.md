@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Informazioni su come gli amministratori possono eliminare le assegnazioni di sottoscrizione
-ms.openlocfilehash: f630eef2d06e008966165e898cd40d123cb5c590
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e6ce84aa84e25bcdeb44b93954289a65a3454010
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289079"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902899"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminare assegnazioni nelle sottoscrizioni di Visual Studio
 Quando un sottoscrittore non ha più necessità di usare una sottoscrizione di Visual Studio, ad esempio quando lascia l'azienda, completa un progetto o passa a un nuovo incarico, è possibile rimuovere la sua sottoscrizione e assegnarla a un altro utente. Si noti che quando si riassegna una sottoscrizione, non tutti i vantaggi del Sottoscrittore verranno reimpostati.  Il nuovo utente sarà in grado di richiedere le chiavi non richieste e di visualizzare le chiavi richieste in precedenza, ma i limiti di attestazione **non** vengono reimpostati.  Per le organizzazioni che hanno in essere contratti Enterprise, gli eventuali vantaggi usati dall'utente originale, ad esempio corsi Pluralsight, verranno reimpostati. 
@@ -29,7 +29,7 @@ Quando un sottoscrittore non ha più necessità di usare una sottoscrizione di V
    > [!NOTE]
    > L'eliminazione bulk tramite un modello non è disponibile. Per le organizzazioni che gestiscono le assegnazioni delle sottoscrizioni tramite Azure Active Directory gruppi di sicurezza, vedere [l'articolo](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) per altre informazioni sul modo in cui si verificano le eliminazioni.  
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)

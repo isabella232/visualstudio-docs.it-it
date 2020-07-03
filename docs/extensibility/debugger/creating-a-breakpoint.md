@@ -1,7 +1,7 @@
 ---
-title: Creazione di un punto di interruzione . Documenti Microsoft
+title: Creazione di un punto di interruzione | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - breakpoints, creating
 - debugging [Debugging SDK], creating breakpoints
@@ -11,18 +11,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d252f1310c3e251c44525cd94c4d9a2943d8171d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 3f89b99f15374ef7e0bbc6964ee1ff521eeb469f
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739047"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903615"
 ---
-# <a name="create-a-breakpoint"></a>Creare un punto di interruzioneCreate a breakpoint
+# <a name="create-a-breakpoint"></a>Creazione di un punto di interruzione
 Di seguito viene descritto il processo di creazione di un punto di interruzione.
 
-## <a name="methods-in-breakpoint-creation"></a>Metodi nella creazione di punti di interruzioneMethods in breakpoint creation
- Quando viene caricato il modulo necessario per associare un punto di interruzione, il gestore di sessione di debug (SDM) chiama i metodi seguenti:When the module that is needed to bind a breakpoint is loaded, the session debug manager (SDM) calls the following methods:
+## <a name="methods-in-breakpoint-creation"></a>Metodi nella creazione di punti di interruzione
+ Quando viene caricato il modulo necessario per associare un punto di interruzione, il gestore di debug della sessione (SDM) chiama i metodi seguenti:
 
 1. [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)
 
@@ -31,11 +31,11 @@ Di seguito viene descritto il processo di creazione di un punto di interruzione.
 3. [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 
     > [!NOTE]
-    > **CanBind** viene chiamato solo quando un utente crea un punto di interruzione dal **punti di interruzione** finestra.
+    > **CanBind** viene chiamato solo quando un utente crea un punto di interruzione dalla finestra punti di **interruzione** .
 
 4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 
 5. [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
 
 ## <a name="see-also"></a>Vedere anche
-- [Chiamare eventi del debuggerCall debugger events](../../extensibility/debugger/calling-debugger-events.md)
+- [Chiama eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)

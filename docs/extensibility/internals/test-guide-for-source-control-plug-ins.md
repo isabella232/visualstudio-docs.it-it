@@ -1,7 +1,7 @@
 ---
-title: Guida di test per i plug-in del controllo del codice sorgente Documenti Microsoft
+title: Guida ai test per i plug-in del controllo del codice sorgente | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - plug-ins, source control
 - source control [Visual Studio SDK], testing plug-ins
@@ -14,50 +14,50 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6b3f8e76e977472a3459697a650b32dae657c22
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80704381"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905151"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guida per il test dei plug-in del controllo del codice sorgente
-In questa sezione vengono fornite indicazioni per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]testare il plug-in del controllo del codice sorgente con . Viene fornita una panoramica completa delle aree di test più comuni, nonché di alcune delle aree più complesse che possono essere problematiche. Questa panoramica non deve essere un elenco esaustivo di test case.
+In questa sezione vengono fornite indicazioni per testare il plug-in del controllo del codice sorgente con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Viene fornita una panoramica completa delle aree di test più comuni, oltre ad alcune delle aree più complesse che potrebbero essere problematiche. Questa panoramica non è pensata per essere un elenco completo dei test case.
 
 > [!NOTE]
-> Alcune correzioni di bug e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] miglioramenti all'IDE più recente possono individuare i problemi con i plug-in del controllo del codice sorgente esistenti che non sono stati rilevati in precedenza durante l'utilizzo di versioni precedenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È consigliabile testare il plug-in del controllo del codice sorgente esistente per le aree enumerate in questa sezione, anche se non sono state apportate modifiche al plug-in dalla versione precedente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+> Alcune correzioni di bug e miglioramenti apportati all'IDE più recente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possono individuare problemi con i plug-in del controllo del codice sorgente esistenti che non sono stati rilevati in precedenza durante l'utilizzo di versioni precedenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Si consiglia vivamente di testare il plug-in del controllo del codice sorgente esistente per le aree enumerate in questa sezione, anche se non sono state apportate modifiche al plug-in dalla versione precedente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="common-preparation"></a>Preparazione comune
- È necessario [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] un computer in cui sia installato il plug-in del controllo del codice sorgente di destinazione. Un secondo computer configurato in modo simile può essere utilizzato per alcuni dei test Apri dal controllo del codice sorgente.
+ È necessario un computer con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e il plug-in del controllo del codice sorgente di destinazione. Un secondo computer configurato in modo analogo può essere usato per alcuni dei test aperti da quelli del controllo del codice sorgente.
 
 ## <a name="definition-of-terms"></a>Definizione dei termini
- Ai fini di questa guida al test, utilizzare le seguenti definizioni di termini:
+ Ai fini di questa guida di test, utilizzare le definizioni dei termini seguenti:
 
- Progetto client Qualsiasi tipo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di progetto disponibile in che [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]supporta [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]l'integrazione del controllo del codice sorgente, ad esempio , o .
+ Progetto client qualsiasi tipo di progetto disponibile in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che supporta l'integrazione del controllo del codice sorgente (ad esempio,, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] ).
 
- Progetto Web Esistono quattro tipi di progetti Web: File System, IIS locale, Siti remoti e FTP.
+ Progetto Web sono disponibili quattro tipi di progetti web: file System, IIS locale, siti remoti e FTP.
 
-- I progetti di file system vengono creati in un percorso locale, ma non richiedono l'installazione di Internet Information Services (IIS) in quanto vi si accede internamente tramite un percorso UNC e possono essere inseriti nel controllo del codice sorgente dall'interno dell'IDE, in modo analogo ai progetti client.
+- I progetti di file System vengono creati in un percorso locale, ma non richiedono l'installazione del Internet Information Services (IIS) perché sono accessibili internamente tramite un percorso UNC e possono essere inseriti nel controllo del codice sorgente dall'interno dell'IDE, in modo analogo ai progetti client.
 
-- I progetti IIS locali funzionano con IIS installato nello stesso computer e vi si accede con un URL che punta al computer locale.
+- I progetti IIS locali funzionano con IIS installato nello stesso computer e a cui si accede con un URL che punta al computer locale.
 
-- I progetti di siti remoti vengono creati anche in un servizio IIS, ma vengono [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] inseriti nel controllo del codice sorgente nel computer server IIS e non dall'interno dell'IDE.
+- I progetti di siti remoti vengono inoltre creati in un servizio IIS, ma vengono inseriti nel controllo del codice sorgente sul computer server IIS e non dall'interno dell' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
 
 - I progetti FTP sono accessibili tramite un server FTP remoto, ma non possono essere inseriti nel controllo del codice sorgente.
 
-  Enlistment Un altro termine per la soluzione o il progetto nel controllo del codice sorgente.
+  Integrazione di un altro termine per la soluzione o il progetto nel controllo del codice sorgente.
 
-  Archivio versioni Il database del controllo del codice sorgente a cui si accede tramite l'API del plug-in del controllo del codice sorgente.
+  Versione archivia il database del controllo del codice sorgente a cui si accede tramite l'API del plug-in del controllo del codice sorgente.
 
-## <a name="test-areas-covered-in-this-section"></a>Aree di prova trattate in questa sezione
+## <a name="test-areas-covered-in-this-section"></a>Aree di test descritte in questa sezione
 
-- [Area di test 1: Aggiungi a/Apri dal controllo del codice sorgente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Area di test 1: aggiunta/apertura dal controllo del codice sorgente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-  - Caso 1a: aggiungere una soluzione al controllo del codice sorgenteCase 1a: Add Solution to Source Control
+  - Caso 1a: aggiungere una soluzione al controllo del codice sorgente
 
-  - Caso 1b: Apri soluzione dal controllo del codice sorgenteCase 1b: Open Solution from Source Control
+  - Caso 1B: aprire una soluzione dal controllo del codice sorgente
 
-  - Caso 1c: aggiungere una soluzione dal controllo del codice sorgenteCase 1c: Add Solution from Source Control
+  - Caso 1C: aggiungere una soluzione dal controllo del codice sorgente
 
 - [Area di test 2: Recuperare elementi dal controllo del codice sorgente](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
@@ -65,31 +65,31 @@ In questa sezione vengono fornite indicazioni per [!INCLUDE[vsprvs](../../code-q
 
   - Caso 3: Estrai/Annulla estrazione
 
-  - Caso 3a: Check-Out
+  - Caso 3A: estrazione
 
-  - Caso 3b: estrazione disconnessa
+  - Caso 3B: estrazione disconnessa
 
-  - Caso 3c: Modifica query/Salvataggio query (QEQS)
+  - Caso 3C: modifica query/Salva query (QEQS)
 
-  - Caso 3d: Estrazione invisibile all'utente
+  - Caso 3D: estrazione invisibile all'utente
 
   - Caso 3e: Annulla estrazione
 
 - [Area di test 4: Archiviare](../../extensibility/internals/test-area-4-check-in.md)
 
-  - Caso 4a: Elementi modificati
+  - Caso 4a: elementi modificati
 
-  - Caso 4b: Aggiunta di file
+  - Caso 4B: aggiunta di file
 
-  - Caso 4c: Aggiunta di progetti
+  - Caso 4C: aggiunta di progetti
 
 - [Area di test 5: Modificare il controllo del codice sorgente](../../extensibility/internals/test-area-5-change-source-control.md)
 
-  - Caso 5a: Lega
+  - Caso 5a: binding
 
-  - Caso 5b: Disassociazione
+  - Caso 5b: annullamento dell'associazione
 
-  - Caso 5c: Riassociare
+  - Caso 5C: riassociazione
 
 - [Area di test 6: Eliminare](../../extensibility/internals/test-area-6-delete.md)
 
@@ -97,9 +97,9 @@ In questa sezione vengono fornite indicazioni per [!INCLUDE[vsprvs](../../code-q
 
 - [Area di test 8: Cambio di plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-  - Caso 8a: Cambio automatico
+  - Caso 8a: modifica automatica
 
-  - Caso 8b: Modifica basata su soluzione
+  - Caso 8b: modifica basata sulla soluzione
 
 ## <a name="see-also"></a>Vedere anche
 - [Plug-in del controllo del codice sorgente](../../extensibility/source-control-plug-ins.md)

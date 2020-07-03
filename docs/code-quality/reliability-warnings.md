@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3449723394f603b4b726fa8ebf2258e2c8f4c46c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 095631abc5678a27a4e79611433ff446337b956c
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283385"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835615"
 ---
 # <a name="reliability-warnings"></a>Avvisi di affidabilità
 
@@ -40,3 +40,4 @@ Gli avvisi di affidabilità supportano la libreria e l'affidabilità delle appli
 |[CA2013: Non usare ReferenceEquals con tipi valore](../code-quality/ca2013.md) | Quando si confrontano i valori usando <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> , se objA e objB sono tipi di valore, vengono sottoposte a Boxing prima di essere passati al <xref:System.Object.ReferenceEquals%2A> metodo. Ciò significa che, anche se objA e objB rappresentano la stessa istanza di un tipo di valore, il <xref:System.Object.ReferenceEquals%2A> metodo restituisce comunque false. |
 |[Ca2014: non usare stackalloc nei cicli.](../code-quality/ca2014.md) | Lo spazio dello stack allocato da un stackalloc viene rilasciato solo alla fine della chiamata del metodo corrente.  L'uso in un ciclo può comportare una crescita non vincolata dello stack e le condizioni di overflow dello stack. |
 |[Ca2015: non definire finalizzatori per i tipi derivati da MemoryManager &lt; T&gt;](../code-quality/ca2015.md) | L'aggiunta di un finalizzatore a un tipo derivato da <xref:System.Buffers.MemoryManager%601> può consentire la liberazione della memoria mentre è ancora in uso da un oggetto <xref:System.Span%601> . |
+|[CA2016: Inoltrare il parametro CancellationToken ai metodi che ne accettano uno](ca2016.md) | Inoltrare il `CancellationToken` parametro ai metodi che ne accettano uno per assicurarsi che le notifiche di annullamento dell'operazione vengano propagate correttamente oppure passare in `CancellationToken.None` modo esplicito per indicare che il token non viene propagato intenzionalmente. |

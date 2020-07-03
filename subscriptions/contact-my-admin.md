@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Informazioni su come contattare l'amministratore della sottoscrizione per richiedere assistenza in caso di domande o problemi.
-ms.openlocfilehash: 117bdb82c878e498862dd967615fde9d6ba632eb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2bf4857ebb794baef8098194d90cff7fee1ecc8f
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289105"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904564"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
 Se la sottoscrizione di Visual Studio viene fornita dall'azienda o dall'istituto di istruzione di appartenenza, è probabile che sia stata assegnata da un amministratore delle sottoscrizioni.  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
@@ -35,7 +35,7 @@ Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe 
 ## <a name="resources"></a>Risorse
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)

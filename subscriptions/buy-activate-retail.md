@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Informazioni su come acquistare le sottoscrizioni di Visual Studio nella Microsoft Store e attivarle nel portale delle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: f8102a10f049c04695ba1d5415febd9cee3d7130
-ms.sourcegitcommit: 960bab34e126c9ca449560a76a839a8f8c3263fb
+ms.openlocfilehash: 217c19ea0f8c4a793fc11a84eaa8f276960af3da
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82072501"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903106"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Le sottoscrizioni di Visual Studio sono disponibili tramite il Microsoft Store
 Le sottoscrizioni di Visual Studio sono disponibili tramite diversi canali, tra cui [contratti multilicenza](https://www.microsoft.com/licensing/default), provider di soluzioni Cloud, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)e Microsoft Store.  In questo articolo verrà illustrato come acquistare e attivare le sottoscrizioni tramite il [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
@@ -34,7 +34,7 @@ Ognuna di queste sottoscrizioni offre la possibilità di effettuare un acquisto 
 Dopo aver acquistato una sottoscrizione di Visual Studio tramite il Microsoft Store, è possibile avviare il processo di attivazione dalla pagina di conferma del pagamento o dal messaggio di posta elettronica di conferma ricevuto dopo l'acquisto.
 
 1. Fare clic su **Fai clic qui per accedere** nel messaggio di posta elettronica di conferma o nella pagina di conferma dell'acquisto.
-2. Si verrà reindirizzati [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)a.
+2. Si verrà reindirizzati a [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs) .
 3. Immettere l'indirizzo di posta elettronica per cui è necessario l'accesso alla sottoscrizione di Visual Studio e fare clic su **Continua**.
 4. Si verrà reindirizzati a una di due diverse pagine di accesso a seconda del tipo di account in uso:
     - I sottoscrittori che usano un account Microsoft (MSA) personale visualizzeranno la pagina della password per l'account Microsoft.

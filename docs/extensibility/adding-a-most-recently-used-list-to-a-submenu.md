@@ -1,7 +1,7 @@
 ---
 title: Aggiunta di un elenco usato più di recente a un sottomenu | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5624fe4a4f3c9ba774313e862f9e84a6f6d70862
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183275"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904211"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Aggiungere un elenco usato più di recente a un sottomenu
 Questa procedura dettagliata si basa sulle dimostrazioni in [aggiungere un sottomenu a un menu](../extensibility/adding-a-submenu-to-a-menu.md)e Mostra come aggiungere un elenco dinamico a un sottomenu. L'elenco dinamico costituisce la base per la creazione di un elenco degli ultimi elementi usati (MRU).

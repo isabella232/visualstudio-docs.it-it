@@ -1,7 +1,7 @@
 ---
-title: Creazione di una finestra degli strumenti a più istanze Documenti Microsoft
+title: Creazione di una finestra degli strumenti a istanze diverse | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - multi
 - tool windows
@@ -11,28 +11,28 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33585f623f846e16200d430ad2c886fe0874b537
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 1bb84ed9961cac5159e15bc0c45fada5426d2f2c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739618"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904067"
 ---
-# <a name="create-a-multi-instance-tool-window"></a>Creare una finestra degli strumenti a più istanzeCreate a multi-instance tool window
-È possibile programmare una finestra degli strumenti in modo che più istanze di essa possano essere aperte contemporaneamente. Per impostazione predefinita, le finestre degli strumenti possono avere una sola istanza aperta.
+# <a name="create-a-multi-instance-tool-window"></a>Creazione di una finestra degli strumenti a più istanze
+È possibile programmare una finestra degli strumenti in modo che più istanze possano essere aperte contemporaneamente. Per impostazione predefinita, le finestre degli strumenti possono avere una sola istanza aperta.
 
-Quando si utilizza una finestra degli strumenti a più istanze, è possibile visualizzare più origini di informazioni correlate contemporaneamente. Ad esempio, è possibile inserire <xref:System.Windows.Forms.TextBox> un controllo multilinea in una finestra degli strumenti a più istanze in modo che diversi frammenti di codice siano disponibili contemporaneamente durante una sessione di programmazione. Inoltre, ad esempio, è <xref:System.Windows.Forms.DataGrid> possibile inserire un controllo e una casella di riepilogo a discesa in una finestra degli strumenti a più istanze in modo che diverse origini dati in tempo reale possono essere registrate contemporaneamente.
+Quando si utilizza una finestra degli strumenti a più istanze, è possibile visualizzare contemporaneamente diverse origini correlate di informazioni. Ad esempio, è possibile inserire un <xref:System.Windows.Forms.TextBox> controllo a più righe in una finestra degli strumenti a più istanze in modo che diversi frammenti di codice siano disponibili simultaneamente durante una sessione di programmazione. È possibile, ad esempio, inserire un <xref:System.Windows.Forms.DataGrid> controllo e una casella di riepilogo a discesa in una finestra degli strumenti a più istanze, in modo che sia possibile tenere traccia simultaneamente di diverse origini dati in tempo reale.
 
-## <a name="create-a-basic-single-instance-tool-window"></a>Creare una finestra degli strumenti di base (istanza singola)Create a basic (single-instance) tool window
+## <a name="create-a-basic-single-instance-tool-window"></a>Creare una finestra degli strumenti di base (a istanza singola)
 
-1. Creare un progetto denominato **MultiInstanceToolWindow** utilizzando il modello VSIX e aggiungere un modello di elemento della finestra degli strumenti personalizzato denominato **MIToolWindow**.
+1. Creare un progetto denominato **MultiInstanceToolWindow** usando il modello VSIX e aggiungere un modello di elemento della finestra degli strumenti personalizzato denominato **MIToolWindow**.
 
     > [!NOTE]
-    > Per ulteriori informazioni sulla creazione di un'estensione con una finestra degli strumenti, consultate [Creare un'estensione con una finestra degli strumenti.](../extensibility/creating-an-extension-with-a-tool-window.md)
+    > Per ulteriori informazioni sulla creazione di un'estensione con una finestra degli strumenti, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-## <a name="make-a-tool-window-multi-instance"></a>Rendere multiistanza una finestra degli strumenti
+## <a name="make-a-tool-window-multi-instance"></a>Creare una finestra degli strumenti a istanze diverse
 
-1. Aprire *MIToolWindowPackage.cs* il file MIToolWindowPackage.cs `ProvideToolWindow` e trovare l'attributo. e `MultiInstances=true` il parametro, come illustrato nell'esempio seguente:
+1. Aprire il file *MIToolWindowPackage.cs* e trovare l' `ProvideToolWindow` attributo. e il `MultiInstances=true` parametro, come illustrato nell'esempio seguente:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -44,15 +44,15 @@ Quando si utilizza una finestra degli strumenti a più istanze, è possibile vis
     {. . .}
     ```
 
-2. Nel file *MIToolWindowCommand.cs* individuare `ShowToolWindos()` il metodo. In questo metodo, <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> chiamare il `create` metodo `false` e impostarne il flag su in `id` modo che scorrerà le istanze della finestra degli strumenti esistenti fino a quando non viene trovato un oggetto disponibile.
+2. Nel file *MIToolWindowCommand.cs* trovare il `ShowToolWindos()` metodo. In questo metodo chiamare il <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodo e impostare il relativo `create` flag su in `false` modo da scorrere le istanze della finestra degli strumenti esistenti fino a quando non viene trovato un oggetto disponibile `id` .
 
-3. Per creare un'istanza della <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> finestra degli `id` strumenti, chiamare `create` il `true`metodo e impostarne un valore disponibile e il relativo flag su .
+3. Per creare un'istanza della finestra degli strumenti, chiamare il <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodo e impostare la proprietà `id` su un valore disponibile e il relativo `create` flag su `true` .
 
-    Per impostazione predefinita, `id` il <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> valore `0`del parametro del metodo è . Questo valore crea una finestra degli strumenti a istanza singola. Affinché più di un'istanza sia ospitata, `id`ogni istanza deve avere un proprio oggetto .
+    Per impostazione predefinita, il valore del `id` parametro del <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metodo è `0` . Questo valore rende una finestra degli strumenti a istanza singola. Per ospitare più istanze, ogni istanza deve disporre di un proprio oggetto univoco `id` .
 
-4. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> sull'oggetto restituito <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> dalla proprietà dell'istanza della finestra degli strumenti.
+4. Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metodo sull' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> oggetto restituito dalla <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> proprietà dell'istanza della finestra degli strumenti.
 
-5. Per impostazione `ShowToolWindow` predefinita, il metodo creato dal modello di elemento della finestra degli strumenti crea una finestra degli strumenti a istanza singola. Nell'esempio seguente viene `ShowToolWindow` illustrato come modificare il metodo per creare più istanze.
+5. Per impostazione predefinita, il `ShowToolWindow` metodo creato dal modello di elemento della finestra degli strumenti crea una finestra degli strumenti a istanza singola. Nell'esempio seguente viene illustrato come modificare il `ShowToolWindow` metodo per creare più istanze.
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

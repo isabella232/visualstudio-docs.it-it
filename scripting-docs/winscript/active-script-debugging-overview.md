@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0181ee305c99a1d0af1d3e1e965c6ac8fe16f375
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572278"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835667"
 ---
 # <a name="active-script-debugging-overview"></a>Panoramica di debug script ActiveX
 Le interfacce di debug di script ActiveX consentono un debug indipendente dal linguaggio e dall'host e supportano un'ampia gamma di ambienti di sviluppo.  
   
- ![Processo host script](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![Processo di Script Host](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 Figura 1  
   
  Un ambiente di debug indipendente dal linguaggio può supportare qualsiasi linguaggio di programmazione o combinazione di linguaggi, senza informazioni specifiche per questi linguaggi. L'ambiente di debug supporta anche l'esecuzione e i punti di interruzione per linguaggi diversi. Questa panoramica è incentrata principalmente sui linguaggi di scripting per il supporto, ad esempio VBScript e [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
@@ -32,30 +32,30 @@ Figura 1
   
  Nelle sottosezioni riportate di seguito vengono descritti i singoli componenti chiave del debug ActiveX e le interfacce associate. Prima di procedere è tuttavia necessario definire alcuni concetti chiave del debug ActiveX:  
   
- **Applicazione host**  
+ **applicazione host**  
  Applicazione che ospita i motori script e offre un set di oggetti per la generazione di script (o "modello a oggetti").  
   
- **Modulo di gestione del linguaggio**  
+ **modulo di gestione del linguaggio**  
  Componente che offre astrazioni di analisi, esecuzione e debug per un determinato linguaggio.  
   
- **IDE del debugger**  
+ **ambiente di sviluppo integrato (IDE) debugger**  
  Applicazione che rende disponibile l'interfaccia utente di debug comunicando con l'applicazione host e i moduli del linguaggio.  
   
  **Gestione debug del computer** Componente che gestisce un registro dei processi dell'applicazione dei quali è possibile eseguire il debug.  
   
- **Gestione del debug dei processi**  
+ **gestione debug processo**  
  Componente che gestisce l'albero dei documenti di cui è possibile eseguire il debug per una particolare applicazione, tiene traccia dei thread in esecuzione e così via.  
   
- **Contesto del documento**  
+ **contesto del documento**  
  Un contesto del documento è un'astrazione che rappresenta un intervallo specifico del codice sorgente di un documento host.  
   
- **Contesto del codice**  
+ **contesto del codice**  
  Un contesto del codice rappresenta una determinata posizione nel codice in esecuzione di un modulo di gestione del linguaggio (un "puntatore di istruzione virtuale").  
   
- **Contesto dell'espressione**  
+ **contesto dell'espressione**  
  Contesto specifico (ad esempio uno stack frame) nel quale le espressioni possono essere valutate da un modulo di gestione del linguaggio.  
   
- **Esplorazione di oggetti**  
+ **esplorazione di oggetti**  
  Rappresentazione strutturata indipendente dal linguaggio del nome, tipo, valore e degli oggetti secondari di un oggetto, adatta per implementare un'interfaccia utente di tipo "finestra espressioni di controllo".  
   
  Di seguito viene inclusa una panoramica dei componenti principali del debug Active X e delle interfacce associate corrispondenti, seguita dai dettagli relativi a tali interfacce.  
@@ -125,7 +125,7 @@ Figura 1
   [Interfaccia IDebugStackFrameSnifferEx](../winscript/reference/idebugstackframesnifferex-interface.md)  
   Enumera gli stack frame logici per PDM.  
   
-## <a name="hosts"></a>Host  
+## <a name="hosts"></a>Hosts  
  L'host:  
   
 - Ospita i moduli di gestione del linguaggio.  
@@ -292,4 +292,4 @@ Figura 1
   Specifica una soluzione semplice per la descrizione e l'enumerazione agli eventi generati in un punto di connessione specifico per i motori di script.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfacce del debugger di script ActiveX](../winscript/reference/active-script-debugger-interfaces.md)
+ [Interfacce del debugger dello script ActiveX](../winscript/reference/active-script-debugger-interfaces.md)

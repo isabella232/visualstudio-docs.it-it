@@ -1,7 +1,7 @@
 ---
-title: Aggiunta del controllo utente alla pagina iniziale Documenti Microsoft
+title: Aggiunta del controllo utente alla pagina iniziale | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - start page dll
 - custom start page
@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: b426cfbbfca2e301797644a1fc73f188054d0cfa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8000c6cc067f61a64c71b8c8ac4f5c0176504cd4
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740124"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903384"
 ---
-# <a name="add-user-control-to-the-start-page"></a>Aggiungere il controllo utente alla pagina inizialeAdd user control to the Start Page
+# <a name="add-user-control-to-the-start-page"></a>Aggiungere il controllo utente alla pagina iniziale
 
-In questa procedura dettagliata viene illustrato come aggiungere un riferimento DLL a una pagina iniziale personalizzata. L'esempio aggiunge un controllo utente alla soluzione, compila il controllo utente e quindi fa riferimento all'assembly compilato dal file *XAML* della pagina iniziale. Una nuova scheda ospita il controllo utente, che funziona come un browser Web di base.
+In questa procedura dettagliata viene illustrato come aggiungere un riferimento a una DLL a una pagina iniziale personalizzata. Nell'esempio viene aggiunto un controllo utente alla soluzione, viene compilato il controllo utente e quindi viene fatto riferimento all'assembly compilato dal file della pagina iniziale *. XAML* . Una nuova scheda ospita il controllo utente, che funge da Web browser di base.
 
-È possibile usare lo stesso processo per aggiungere qualsiasi assembly che può essere chiamato da un file *XAML.*
+È possibile usare lo stesso processo per aggiungere qualsiasi assembly che può essere chiamato da un file *XAML* .
 
-## <a name="add-a-wpf-user-control-to-the-solution"></a>Aggiungere un controllo utente WPF alla soluzioneAdd a WPF user control to the solution
+## <a name="add-a-wpf-user-control-to-the-solution"></a>Aggiungere un controllo utente WPF alla soluzione
 
-Aggiungere innanzitutto un controllo utente Windows Presentation Foundation (WPF) alla soluzione della pagina iniziale.
+Aggiungere prima di tutto un controllo utente Windows Presentation Foundation (WPF) alla soluzione pagina iniziale.
 
-1. Creare una pagina iniziale utilizzando creata in [Creare una pagina iniziale personalizzata.](../extensibility/creating-a-custom-start-page.md)
+1. Creare una pagina iniziale usando creato in [creare una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md).
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, **scegliere Aggiungi**, quindi Nuovo **progetto**.
+2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**.
 
-3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere il nodo **Visual Basic** o **Visual C,** quindi fare clic su **Windows**. Nel riquadro centrale selezionare **Libreria di controlli utente WPF**.
+3. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **Visual C#** , quindi fare clic su **Windows**. Nel riquadro centrale selezionare libreria di **controlli utente WPF**.
 
-4. Assegnare `WebUserControl` un nome al controllo, quindi scegliere **OK**.
+4. Assegnare un nome al controllo `WebUserControl` , quindi fare clic su **OK**.
 
 ## <a name="implement-the-user-control"></a>Implementare il controllo utente
 
-Per implementare un controllo utente WPFWPF, compilare l'interfaccia utente (UI) in XAML e quindi scrivere gli eventi code-behind in C 'NET o in un altro linguaggio .NET.
+Per implementare un controllo utente WPF, compilare l'interfaccia utente in XAML e quindi scrivere gli eventi code-behind in C# o in un altro linguaggio .NET.
 
-### <a name="to-write-the-xaml-for-the-user-control"></a>Per scrivere il codice XAML per il controllo utenteTo write the XAML for the user control
+### <a name="to-write-the-xaml-for-the-user-control"></a>Per scrivere il codice XAML per il controllo utente
 
-1. Aprire il file XAML per il controllo utente. Nell'elemento `<Grid>` aggiungere le definizioni di riga seguenti al controllo.
+1. Aprire il file XAML per il controllo utente. Nell' `<Grid>` elemento aggiungere le seguenti definizioni di riga al controllo.
 
     ```vb
     <Grid.RowDefinitions>
@@ -54,7 +54,7 @@ Per implementare un controllo utente WPFWPF, compilare l'interfaccia utente (UI)
 
     ```
 
-2. Nell'elemento `<Grid>` principale aggiungere il `<Grid>` nuovo elemento seguente, che contiene una casella di testo per digitare gli indirizzi Web e un pulsante per l'impostazione del nuovo indirizzo.
+2. Nell'elemento principale `<Grid>` aggiungere il nuovo `<Grid>` elemento seguente, che contiene una casella di testo per la digitazione di indirizzi Web e un pulsante per l'impostazione del nuovo indirizzo.
 
     ```xml
     <Grid Grid.Row="0">
@@ -67,7 +67,7 @@ Per implementare un controllo utente WPFWPF, compilare l'interfaccia utente (UI)
     </Grid>
     ```
 
-3. Aggiungere la cornice seguente all'elemento di primo livello `<Grid>` subito dopo l'elemento `<Grid>` che contiene il pulsante e la casella di testo.
+3. Aggiungere il frame seguente all'elemento di primo livello `<Grid>` subito dopo l' `<Grid>` elemento contenente il pulsante e la casella di testo.
 
     ```vb
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />
@@ -102,13 +102,13 @@ Per implementare un controllo utente WPFWPF, compilare l'interfaccia utente (UI)
 
     ```
 
-### <a name="to-write-the-code-behind-events-for-the-user-control"></a>Per scrivere gli eventi code-behind per il controllo utenteTo write the code-behind events for the user control
+### <a name="to-write-the-code-behind-events-for-the-user-control"></a>Per scrivere gli eventi code-behind per il controllo utente
 
 1. Nella finestra di progettazione XAML fare doppio clic sul pulsante **Imposta indirizzo** aggiunto al controllo.
 
     Il file *UserControl1.cs* verrà aperto nell'editor di codice.
 
-2. Compilare il SetButton_Click gestore eventi come indicato di seguito.
+2. Compilare il gestore dell'evento SetButton_Click come indicato di seguito.
 
     ```csharp
     private void SetButton_Click(object sender, RoutedEventArgs e)
@@ -124,7 +124,7 @@ Per implementare un controllo utente WPFWPF, compilare l'interfaccia utente (UI)
     }
     ```
 
-    Questo codice imposta l'indirizzo Web digitato nella casella di testo come destinazione per il browser Web. Se l'indirizzo non è valido, il codice genera un errore.
+    Questo codice imposta l'indirizzo Web digitato nella casella di testo come destinazione per la Web browser. Se l'indirizzo non è valido, il codice genera un errore.
 
 3. È inoltre necessario gestire l'evento WebFrame_Navigated:
 
@@ -137,33 +137,33 @@ Per implementare un controllo utente WPFWPF, compilare l'interfaccia utente (UI)
 
 ## <a name="add-the-user-control-to-the-start-page"></a>Aggiungere il controllo utente alla pagina iniziale
 
-Per rendere questo controllo disponibile per il progetto di pagina iniziale, nel file di progetto di pagina iniziale, aggiungere un riferimento alla nuova libreria di controlli. È quindi possibile aggiungere il controllo al markup XAML della pagina iniziale.
+Per rendere questo controllo disponibile per il progetto di pagina iniziale, nel file di progetto della pagina iniziale aggiungere un riferimento alla nuova libreria di controlli. È quindi possibile aggiungere il controllo al markup XAML della pagina iniziale.
 
-1. In **Esplora soluzioni**, nel progetto di pagina iniziale fare clic con il pulsante destro del mouse su **Riferimenti,** quindi **scegliere Aggiungi riferimento**.
+1. In **Esplora soluzioni**, nel progetto pagina iniziale, fare clic con il pulsante destro del mouse su **riferimenti** , quindi scegliere **Aggiungi riferimento**.
 
-2. Nella scheda **Progetti** selezionare **WebUserControl** e quindi fare clic su **OK**.
+2. Nella scheda **progetti** selezionare **webusercontrol** , quindi fare clic su **OK**.
 
 3. Nel menu **Compila** scegliere **Compila soluzione**.
 
-    La compilazione della soluzione rende il controllo utente disponibile per IntelliSense per altri file nella soluzione.
+    La compilazione della soluzione rende disponibile il controllo utente per IntelliSense per altri file nella soluzione.
 
-    Per aggiungere il controllo al markup XAML della pagina iniziale, aggiungi un riferimento allo spazio dei nomi all'assembly, quindi inserisci il controllo nella pagina.
+    Per aggiungere il controllo al markup XAML della pagina iniziale, aggiungere un riferimento allo spazio dei nomi all'assembly, quindi inserire il controllo nella pagina.
 
 ### <a name="to-add-the-control-to-the-markup"></a>Per aggiungere il controllo al markup
 
-1. In **Esplora soluzioni**aprire il file *XAML* della pagina iniziale.
+1. In **Esplora soluzioni**aprire il file con estensione *XAML* della pagina iniziale.
 
-2. Nel riquadro **XAML** aggiungere la dichiarazione dello <xref:System.Windows.Controls.Grid> spazio dei nomi seguente all'elemento di primo livello.
+2. Nel riquadro **XAML** aggiungere la dichiarazione dello spazio dei nomi seguente all'elemento di livello principale <xref:System.Windows.Controls.Grid> .
 
    ```xml
    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
    ```
 
-3. Nel riquadro **XAML** scorrere \<fino alla sezione Griglia>.
+3. Nel riquadro **XAML** scorrere fino alla \<Grid> sezione.
 
-    La sezione <xref:System.Windows.Controls.TabControl> contiene un <xref:System.Windows.Controls.Grid> elemento in un elemento.
+    La sezione contiene un <xref:System.Windows.Controls.TabControl> elemento in un <xref:System.Windows.Controls.Grid> elemento.
 
-4. Aggiungere \<un elemento tabControl \<> contenente un oggetto TabItem> che contiene un riferimento al controllo utente.
+4. Aggiungere un \<TabControl> elemento contenente un oggetto \<TabItem> che contiene un riferimento al controllo utente.
 
     ```xml
 
@@ -177,13 +177,13 @@ Per rendere questo controllo disponibile per il progetto di pagina iniziale, nel
 
 ## <a name="test-a-manually-created-custom-start-page"></a>Testare una pagina iniziale personalizzata creata manualmente
 
-1. Copiare il file XAML e tutti i file di testo o di markup di supporto nella cartella *%USERPROFILE%.\\ *
+1. Copiare il file XAML e tutti i file di testo o i file di markup di supporto nella cartella *%USERPROFILE%\My Documenti\Visual Studio 2015 \\ \ StartPages* .
 
-2. Se la pagina iniziale fa riferimento a controlli o tipi in assembly non installati da Visual Studio, copiare gli assembly e quindi incollarli nella cartella di installazione di _Visual Studio,_**ovvero Common7, IDE, PrivateAssemblies\\**.
+2. Se la pagina iniziale fa riferimento a tutti i controlli o tipi negli assembly che non sono installati da Visual Studio, copiare gli assembly e incollarli nella _cartella di installazione di Visual Studio_** \\ \Common7\IDE\PrivateAssemblies**.
 
-3. Al prompt dei comandi di Visual Studio digitare **devenv /rootsuffix Exp** per aprire un'istanza sperimentale di Visual Studio.
+3. Al prompt dei comandi di Visual Studio digitare **devenv/rootsuffix exp** per aprire un'istanza sperimentale di Visual Studio.
 
-4. Nell'istanza sperimentale, **vai alla** > pagina Strumenti**Opzioni** > di**avvio** dell'ambiente**Environment** > e seleziona il file XAML dall'elenco a discesa Personalizza **pagina iniziale.**
+4. Nell'istanza sperimentale, passare alla **Tools**  >  pagina di avvio dell'ambiente strumenti**Opzioni**  >  **Environment**  >  **Startup** e selezionare il file XAML dall'elenco a discesa **Personalizza pagina iniziale** .
 
 5. Scegliere **Pagina iniziale** dal menu **Visualizza**.
 
@@ -191,5 +191,5 @@ Per rendere questo controllo disponibile per il progetto di pagina iniziale, nel
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Controlli contenitore WPFWPF container controls](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
-- [Procedura dettagliata: Aggiungere codice XAML personalizzato alla pagina inizialeWalkthrough: Add custom XAML to the Start Page](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+- [Controlli contenitore WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Procedura dettagliata: aggiungere XAML personalizzato alla pagina iniziale](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

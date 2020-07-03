@@ -1,7 +1,7 @@
 ---
 title: Aggiunta di un menu alla barra dei menu di Visual Studio | Microsoft Docs
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - menus, creating top level
 - top-level menus
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b87fc73c1ed4b24ccfbd604e3bb08c9b02b62524
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 39dee051991efe05b9a661ce1d213e71b456590b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285387"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904259"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Aggiungere un menu alla barra dei menu di Visual Studio
 
@@ -157,6 +157,6 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
      Verrà visualizzata una finestra di messaggio in cui viene visualizzato il messaggio "pacchetto TestCommand all'interno di TopLevelMenu. TestCommand. MenuItemCallback ()".
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
