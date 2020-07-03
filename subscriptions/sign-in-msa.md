@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 03/11/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Informazioni su come accedere alla sottoscrizione di Visual Studio con l'account Microsoft (MSA)
-ms.openlocfilehash: 6bc71eac42ac582b7d714706567be69e78dfa383
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 566829318404b4231b37e53ae7ec34500a3a7838
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233210"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906140"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Accesso alle sottoscrizioni di Visual Studio con l'account Microsoft (MSA)
 
@@ -21,7 +21,7 @@ La procedura per accedere alla sottoscrizione di Visual Studio dipende dal tipo 
 Questo articolo illustra la procedura per l'accesso con l'account Microsoft (MSA).
 
 ## <a name="signing-in-with-your-microsoft-account-msa"></a>Accesso con l'account Microsoft
-1. Si [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)prega di visitare .
+1. Visitare [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) .
 2. Immettere l'indirizzo di posta elettronica fornito al momento della configurazione o dell'acquisto della sottoscrizione di Visual Studio.
 
    > [!NOTE]
@@ -32,11 +32,11 @@ Questo articolo illustra la procedura per l'accesso con l'account Microsoft (MSA
 5. A questo punto, dovrebbe essere visualizzata la pagina "Vantaggi".
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q--im-unable-to-sign-in-using-my-msa"></a>D: Non riesco ad accedere utilizzando il mio MSA.  
-R: La causa più comune dei problemi di accesso è il tentativo di accesso con un MSA diverso da quello associato alla sottoscrizione.  Se si usano diversi indirizzi di posta elettronica, è possibile che si stia tentando di accedere con l'indirizzo errato.  Provare ad accedere con un altro indirizzo.  In caso di esito negativo, è possibile contattare il team di [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ricevere assistenza.  
+### <a name="q--im-unable-to-sign-in-using-my-msa"></a>D: non è possibile accedere con il servizio MSA.  
+R: la ragione più comune dei problemi di accesso è il tentativo di accedere con un account del servizio gestito diverso da quello associato alla sottoscrizione.  Se si usano diversi indirizzi di posta elettronica, è possibile che si stia tentando di accedere con l'indirizzo errato.  Provare ad accedere con un altro indirizzo.  In caso di esito negativo, è possibile contattare il team di [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ricevere assistenza.  
 
-### <a name="q--i-cant-see-my-subscription-where-is-it"></a>D: Non riesco a vedere il mio abbonamento. Dove sono?
-R: Molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al portale delle sottoscrizioni all'indirizzo https://my.visualstudio.com ma non è possibile visualizzare la propria sottoscrizione, il problema può essere dovuto a due cause comuni:
+### <a name="q--i-cant-see-my-subscription-where-is-it"></a>D: non è possibile visualizzare la sottoscrizione. Dove sono?
+R: molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al portale delle sottoscrizioni all'indirizzo https://my.visualstudio.com ma non è possibile visualizzare la propria sottoscrizione, il problema può essere dovuto a due cause comuni:
 - L'accesso è stato eseguito con un account Microsoft diverso.  È possibile che si abbiano più sottoscrizioni, ad esempio una sottoscrizione Professional o Enterprise e si sia membri di Visual Studio Dev Essentials, e che le sottoscrizioni siano associate a indirizzi di posta elettronica diversi. Per visualizzare le altre sottoscrizioni, disconnettersi ed eseguire di nuovo l'accesso usando un altro account Microsoft (MSA).
 - Si hanno più sottoscrizioni associate allo stesso account Microsoft (MSA).  Per visualizzare tutte le sottoscrizioni associate al proprio account Microsoft (MSA), visitare https://my.visualstudio.com/subscriptions e scegliere la sottoscrizione che si vuole usare. 
 
@@ -44,9 +44,9 @@ Se i problemi persistono, è possibile contattare il team di [supporto per le so
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Dopo aver eseguito correttamente l'accesso al portale di https://my.visualstudio.com/benefits sottoscrizioni, è consigliabile visitare la pagina Vantaggi e esplorare gli strumenti, i servizi e le offerte disponibili.  
+Dopo aver eseguito l'accesso al portale delle sottoscrizioni, è consigliabile visitare la pagina relativa ai vantaggi https://my.visualstudio.com/benefits ed esplorare gli eccezionali strumenti, servizi e offerte disponibili.  

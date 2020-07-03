@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: cad820977df6351f665944a878b6dcebd1c12a38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f195c0f2a165dae1d17697fb351ee6f576864a37
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289430"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906088"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di risolvere problemi in garanzia in **ambienti non di produzione** per i prodotti che sono ancora nella fase di supporto "Mainstream" del [ciclo di vita del supporto](https://support.microsoft.com/lifecycle/search). Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due, per un massimo di 1 anno dall'attivazione del vantaggio. L'attivazione del vantaggio deve avvenire mentre la sottoscrizione è corrente.
@@ -127,7 +127,7 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 
 Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)

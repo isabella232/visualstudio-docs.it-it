@@ -1,7 +1,7 @@
 ---
-title: Persistenza della proprietà di un elemento di progetto Documenti Microsoft
+title: Salvataggio permanente della proprietà di un elemento di progetto | Microsoft Docs
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
@@ -11,23 +11,23 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15c280f15436a5e27bcc0dcc4d2fb9e9bdd82933
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702214"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906199"
 ---
-# <a name="persist-the-property-of-a-project-item"></a>Rendere persistente la proprietà di un elemento di progettoPersist the property of a project item
-È possibile rendere persistente una proprietà aggiunta a un elemento di progetto, ad esempio l'autore di un file di origine. A tale scopo, è possibile archiviare la proprietà nel file di progetto.
+# <a name="persist-the-property-of-a-project-item"></a>Rende permanente la proprietà di un elemento di progetto
+È possibile che si desideri salvare in modo permanente una proprietà aggiunta a un elemento del progetto, ad esempio l'autore di un file di origine. Questa operazione può essere eseguita archiviando la proprietà nel file di progetto.
 
- Il primo passaggio per rendere persistente una proprietà in un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> file di progetto consiste nell'ottenere la gerarchia del progetto come interfaccia. È possibile ottenere questa interfaccia utilizzando <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>l'automazione o utilizzando . Una volta ottenuta l'interfaccia, è possibile utilizzarla per determinare quale elemento di progetto è attualmente selezionato. Una volta che si dispone dell'ID dell'elemento di progetto, è possibile utilizzare <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> per aggiungere la proprietà.
+ Il primo passaggio per salvare in modo permanente una proprietà in un file di progetto consiste nell'ottenere la gerarchia del progetto come <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaccia. È possibile ottenere questa interfaccia tramite l'automazione o tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . Una volta ottenuta l'interfaccia, è possibile utilizzarla per determinare l'elemento del progetto attualmente selezionato. Una volta ottenuto l'ID dell'elemento del progetto, è possibile usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> per aggiungere la proprietà.
 
- Nelle procedure seguenti, la *VsPkg.cs* proprietà `Author` VsPkg.cs `Tom` viene mantenuta con il valore nel file di progetto.
+ Nelle procedure seguenti viene resa permanente la proprietà *vspkg.cs* `Author` con il valore `Tom` nel file di progetto.
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Per ottenere la gerarchia del progetto con l'oggetto DTE
 
-1. Aggiungere il codice seguente al pacchetto VSPackage:Add the following code to your VSPackage:
+1. Aggiungere il codice seguente al pacchetto VSPackage:
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -39,9 +39,9 @@ ms.locfileid: "80702214"
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);
     ```
 
-## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Per rendere persistente la proprietà dell'elemento di progetto con l'oggetto DTETo persist the project item property with the DTE object
+## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Per salvare in modo permanente la proprietà dell'elemento di progetto con l'oggetto DTE
 
-1. Aggiungere il codice seguente al codice specificato nel metodo della procedura precedente:
+1. Aggiungere il codice seguente al codice specificato nel metodo nella procedura precedente:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -56,9 +56,9 @@ ms.locfileid: "80702214"
     }
     ```
 
-## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Per ottenere la gerarchia del progetto utilizzando IVsMonitorSelectionTo obtain the project hierarchy using IVsMonitorSelection
+## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Per ottenere la gerarchia del progetto utilizzando IVsMonitorSelection
 
-1. Aggiungere il codice seguente al pacchetto VSPackage:Add the following code to your VSPackage:
+1. Aggiungere il codice seguente al pacchetto VSPackage:
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -100,9 +100,9 @@ ms.locfileid: "80702214"
     }
     ```
 
-## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Per rendere persistente la proprietà dell'elemento di progetto selezionato, data la gerarchia del progettoTo persist the selected project item property, given the project hierarchy
+## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Per salvare in modo permanente la proprietà dell'elemento di progetto selezionata, data la gerarchia del progetto
 
-1. Aggiungere il codice seguente al codice specificato nel metodo della procedura precedente:
+1. Aggiungere il codice seguente al codice specificato nel metodo nella procedura precedente:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -113,18 +113,18 @@ ms.locfileid: "80702214"
     }
     ```
 
-## <a name="to-verify-that-the-property-is-persisted"></a>Per verificare che la proprietà sia persistente
+## <a name="to-verify-that-the-property-is-persisted"></a>Per verificare che la proprietà sia permanente
 
 1. Avviare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e quindi aprire o creare una soluzione.
 
-2. Selezionare l'elemento di progetto VsPkg.cs in **Esplora soluzioni**.
+2. Selezionare l'elemento del progetto VsPkg.cs in **Esplora soluzioni**.
 
-3. Utilizzare un punto di interruzione o determinare in altro modo che il pacchetto VSPackage viene caricato e che SetItemAttribute viene eseguito.
+3. Usare un punto di interruzione o determinare in altro modo che il pacchetto VSPackage sia caricato e che SetItemAttribute sia in esecuzione.
 
    > [!NOTE]
-   > È possibile caricare automaticamente un pacchetto <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>VSPackage nel contesto dell'interfaccia utente. Per ulteriori informazioni, vedere [Caricare VSPackage](../extensibility/loading-vspackages.md).
+   > È possibile autocaricare un pacchetto VSPackage nel contesto dell'interfaccia utente <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid> . Per altre informazioni, vedere [caricare i pacchetti VSPackage](../extensibility/loading-vspackages.md).
 
-4. Chiudere [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e aprire il file di progetto nel Blocco note. Verrà visualizzato \<il tag Author> con il valore Tom, come indicato di seguito:You should see the Author> tag with the value Tom, as follows:
+4. Chiudere [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e aprire il file di progetto nel blocco note. Il \<Author> tag dovrebbe essere visualizzato con il valore Tom, come indicato di seguito:
 
    ```xml
    <Compile Include="VsPkg.cs">

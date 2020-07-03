@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
-ms.topic: conceptual
+ms.topic: overview
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
-ms.openlocfilehash: b2a80fce75f710d508f0d32df37bbcde73ee20e3
-ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
+ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85292932"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906030"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
@@ -120,7 +120,7 @@ R: anche se non saranno in grado di acquistare un'altra sottoscrizione annuale c
 - [Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio](vscloud-billing-faq.md)
 - [Acquisto di sottoscrizioni cloud di Visual Studio per i CSP](vscloud-csp.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)

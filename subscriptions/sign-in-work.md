@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 03/11/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Informazioni su come accedere alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione.
-ms.openlocfilehash: e1f80f88cf3a377cc6fcc8f8bef266ee59b90067
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233199"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906131"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Accesso alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione 
 
@@ -22,16 +22,16 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>Accesso con l'account aziendale o dell'istituto di istruzione
 
-1. Si [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)prega di visitare .
+1. Visitare [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) .
 2. Immettere l'indirizzo di posta elettronica al quale è stata assegnata la nuova sottoscrizione di Visual Studio.
 
    > [!NOTE]
    > Questo indirizzo viene anche indicato nel messaggio di posta elettronica di benvenuto al sottoscrittore ricevuto. In caso di problemi a individuare il messaggio di benvenuto, controllare le cartelle della posta indesiderata.
 
-3. Fare clic su **Continua**.
+3. Fare clic su **Continue**.
 4. Si verrà reindirizzati alla pagina di accesso aziendale.
 5. Immettere la password.
-6. Fai clic su **Accedi**
+6. Fare clic su **Accedi**
 7. A questo punto, dovrebbe essere visualizzata la pagina "Vantaggi".
 
 È ora possibile visualizzare il tipo di sottoscrizione in uso, indicato nella barra blu nella parte superiore del portale.
@@ -40,16 +40,16 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
 
 ## <a name="using-your-microsoft-account-msa-to-sign-in-to-a-work-or-school-account"></a>Uso dell'account Microsoft (MSA) per accedere a un account aziendale o dell'istituto di istruzione
 
-1. Andare [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)a .
+1. Passare a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Immettere l'indirizzo di posta elettronica al quale è stata assegnata la nuova sottoscrizione di Visual Studio.
 
    > [!NOTE]
    > Questo indirizzo è anche indicato nella Lettera di benvenuto al sottoscrittore. Se la Lettera di benvenuto non è stata ricevuta, controllare nelle cartelle di posta indesiderata.
 
-3. Fare clic su **Continua**.
+3. Fare clic su **Continue**.
 4. Si verrà reindirizzati a una pagina di decisione.
     - Selezionare **Account aziendale o dell'istituto di istruzione** se la sottoscrizione è associata a un account aziendale o dell'istituto di istruzione associato a un tenant di Azure Active Directory (AAD).
-    - Selezionare **Personale** se la sottoscrizione è associata a un indirizzo di posta elettronica "Aziendale", ma è stata convertita anche in un account Microsoft "personale".
+    - Selezionare **personale** se la sottoscrizione è associata a un indirizzo di posta elettronica "aziendale", ma è stata anche convertita in un account Microsoft "personale" (MSA).
 
         > [!NOTE]
         > Ciò sarà vero per molti sottoscrittori che hanno usato sottoscrizioni di Visual Studio (in precedenza MSDN) in passato.
@@ -61,11 +61,11 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
 7. A questo punto, dovrebbe essere visualizzata la pagina "Vantaggi".
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q--im-unable-to-sign-in-using-my-work-or-school-email-address"></a>D: Non riesco ad accedere utilizzando l'indirizzo email aziendale o dell'istituto di istruzione.  
-R: La causa più comune dei problemi di accesso è il tentativo di accedere con un account diverso da quello associato alla sottoscrizione.  Se si usano diversi indirizzi di posta elettronica, è possibile che si stia tentando di accedere con l'indirizzo errato.  Provare ad accedere con un altro indirizzo.  In caso di esito negativo, è possibile contattare il team di [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ricevere assistenza.  
+### <a name="q--im-unable-to-sign-in-using-my-work-or-school-email-address"></a>D: non è possibile accedere con l'indirizzo di posta elettronica dell'azienda o dell'Istituto di istruzione.  
+R: la causa più comune dei problemi di accesso è il tentativo di accedere con un account diverso da quello associato alla sottoscrizione.  Se si usano diversi indirizzi di posta elettronica, è possibile che si stia tentando di accedere con l'indirizzo errato.  Provare ad accedere con un altro indirizzo.  In caso di esito negativo, è possibile contattare il team di [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ricevere assistenza.  
 
-### <a name="q--i-cant-see-my-subscription-where-is-it"></a>D: Non riesco a vedere il mio abbonamento. Dove sono?
-R: Molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al portale delle sottoscrizioni all'indirizzo https://my.visualstudio.com ma non è possibile visualizzare la propria sottoscrizione, il problema può essere dovuto a due cause comuni:
+### <a name="q--i-cant-see-my-subscription-where-is-it"></a>D: non è possibile visualizzare la sottoscrizione. Dove sono?
+R: molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al portale delle sottoscrizioni all'indirizzo https://my.visualstudio.com ma non è possibile visualizzare la propria sottoscrizione, il problema può essere dovuto a due cause comuni:
 1. L'accesso è stato eseguito con un account Microsoft diverso.  È possibile che si abbiano più sottoscrizioni, ad esempio una sottoscrizione Professional o Enterprise e si sia membri di Visual Studio Dev Essentials, e che le sottoscrizioni siano associate a indirizzi di posta elettronica diversi. Per visualizzare le altre sottoscrizioni, disconnettersi ed eseguire di nuovo l'accesso usando un altro account Microsoft (MSA).
 2. Si hanno più sottoscrizioni associate allo stesso indirizzo di posta elettronica.  Per visualizzare tutte le sottoscrizioni associate al proprio indirizzo di posta elettronica, visitare https://my.visualstudio.com/subscriptions e scegliere la sottoscrizione che si vuole usare. 
 
@@ -73,9 +73,9 @@ Se i problemi persistono, è possibile contattare il team di [supporto per le so
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Dopo aver eseguito correttamente l'accesso al portale di https://my.visualstudio.com/benefits sottoscrizioni, è consigliabile visitare la pagina Vantaggi e esplorare gli strumenti, i servizi e le offerte disponibili.  
+Dopo aver eseguito l'accesso al portale delle sottoscrizioni, è consigliabile visitare la pagina relativa ai vantaggi https://my.visualstudio.com/benefits ed esplorare gli eccezionali strumenti, servizi e offerte disponibili.  

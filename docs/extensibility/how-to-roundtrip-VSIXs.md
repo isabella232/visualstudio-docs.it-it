@@ -1,19 +1,19 @@
 ---
 title: Come eseguire il round trip delle estensioni
 ms.date: 06/25/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
 ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269055"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905773"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Procedura: rendere compatibili le estensioni con Visual Studio 2019/2017 e Visual Studio 2015
 
@@ -49,16 +49,16 @@ In questo documento si presuppone che nel computer siano installati gli elementi
 
 È consigliabile avviare questo aggiornamento con Visual Studio 2015, anziché Visual Studio 2019 o 2017. Il vantaggio principale dello sviluppo in Visual Studio 2015 consiste nel garantire che non si faccia riferimento ad assembly non disponibili in Visual Studio 2015. Se si esegue lo sviluppo in Visual Studio 2019 o 2017, esiste il rischio che si possa introdurre una dipendenza da un assembly presente solo in Visual Studio 2019 o 2017.
 
-## <a name="ensure-there-is-no-reference-to-projectjson"></a>Assicurarsi che non vi sia alcun riferimento a Project. JSON
+## <a name="ensure-there-is-no-reference-to-projectjson"></a>Verificare che non sia presente alcun riferimento a project.jsin
 
-Più avanti in questo documento, le istruzioni di importazione condizionale vengono inserite nel file * *. csproj* . Questa operazione non funzionerà se i riferimenti NuGet sono archiviati in *Project. JSON*. Di conseguenza, è consigliabile spostare tutti i riferimenti NuGet al file *packages. config* .
-Se il progetto contiene un file *Project. JSON* :
+Più avanti in questo documento, le istruzioni di importazione condizionale vengono inserite nel file **. csproj* . Questa operazione non funzionerà se i riferimenti NuGet vengono archiviati in *project.js*. Di conseguenza, è consigliabile spostare tutti i riferimenti NuGet al file *packages.config* .
+Se il progetto contiene un *project.jssu* file:
 
-* Prendere nota dei riferimenti in *Project. JSON*.
-* Dal **Esplora soluzioni**eliminare il file *Project. JSON* dal progetto. In questo modo, il file *Project. JSON* viene eliminato e rimosso dal progetto.
+* Prendere nota dei riferimenti in *project.js*.
+* Dal **Esplora soluzioni**eliminare il *project.jssul* file dal progetto. Questa operazione consente di eliminare il *project.jsnel* file e di rimuoverlo dal progetto.
 * Aggiungere di nuovo i riferimenti NuGet al progetto:
   * Fare clic con il pulsante destro del mouse sulla **soluzione** e scegliere **Gestisci pacchetti NuGet per la soluzione**.
-  * Visual Studio crea automaticamente il file *packages. config* .
+  * Visual Studio crea automaticamente il file di *packages.config* .
 
 > [!NOTE]
 > Se il progetto contiene pacchetti EnvDTE, potrebbe essere necessario aggiungerli facendo clic con il pulsante destro del mouse su **riferimenti** selezionando **Aggiungi riferimento** e aggiungendo il riferimento appropriato. L'uso di pacchetti NuGet può creare errori durante il tentativo di compilare il progetto.
@@ -69,12 +69,12 @@ Se il progetto contiene un file *Project. JSON* :
 
 Per compilare e distribuire un VSIXv3 in Visual Studio 2015 e 2019/2017, sono necessari i pacchetti NuGet seguenti:
 
-Versione | Strumenti compilati
+Version | Strumenti compilati
 --- | ---
-Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2019 o 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2015 | Microsoft. VisualStudio. Sdk. BuildTasks. 14.0
+Visual Studio 2019 o 2017 | Microsoft. VSSDK. BuildTool
 
-A tale scopo:
+A tale scopo, procedere come indicato di seguito:
 
 * Aggiungere il pacchetto NuGet Microsoft. VisualStudio. Sdk. BuildTasks. 14.0 al progetto.
 * Se il progetto non contiene Microsoft. VSSDK. BuildTools, aggiungerlo.
@@ -127,7 +127,7 @@ Quando si esegue questo passaggio, è consigliabile avere un riferimento a un. c
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. aggiornare MinimumVisualStudioVersion
 
-* Impostare la versione minima di Visual Studio su `$(VisualStudioVersion)` e aggiungere un'istruzione condizionale. Aggiungere questi tag se non esistono. Verificare che i tag siano impostati nel modo seguente:
+* Impostare la versione minima di Visual Studio su `$(VisualStudioVersion)` e aggiungervi un'istruzione condizionale. Aggiungere questi tag se non esistono. Verificare che i tag siano impostati nel modo seguente:
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
@@ -136,10 +136,10 @@ Quando si esegue questo passaggio, è consigliabile avere un riferimento a un. c
 
 ### <a name="2-add-the-vsixtype-property"></a>2. aggiungere la proprietà VsixType.
 
-* Aggiungere il tag seguente `<VsixType>v3</VsixType>` a un gruppo di proprietà.
+* Aggiungere il seguente tag `<VsixType>v3</VsixType>` a un gruppo di proprietà.
 
 > [!NOTE]
-> È consigliabile aggiungerlo sotto il tag `<OutputType></OutputType>`.
+> È consigliabile aggiungerlo sotto il `<OutputType></OutputType>` tag.
 
 ### <a name="3-add-the-debugging-properties"></a>3. aggiungere le proprietà di debug
 
@@ -163,7 +163,7 @@ Quando si esegue questo passaggio, è consigliabile avere un riferimento a un. c
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. aggiungere condizioni alle importazioni degli strumenti di compilazione
 
-* Aggiungere altre istruzioni condizionali ai tag di `<import>` con un riferimento Microsoft. VSSDK. BuildTools. Inserire `'$(VisualStudioVersion)' != '14.0' And` all'inizio dell'istruzione Condition. Queste istruzioni verranno visualizzate nell'intestazione e nel piè di pagina del file csproj.
+* Aggiungere altre istruzioni condizionali ai `<import>` tag con un riferimento Microsoft. VSSDK. BuildTools. Inserire `'$(VisualStudioVersion)' != '14.0' And` all'inizio dell'istruzione Condition. Queste istruzioni verranno visualizzate nell'intestazione e nel piè di pagina del file csproj.
 
 Ad esempio:
 
@@ -171,7 +171,7 @@ Ad esempio:
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
-* Aggiungere altre istruzioni condizionali ai tag `<import>` con Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Inserire `'$(VisualStudioVersion)' == '14.0' And` all'inizio dell'istruzione Condition. Queste istruzioni verranno visualizzate nell'intestazione e nel piè di pagina del file csproj.
+* Aggiungere altre istruzioni condizionali ai `<import>` tag con Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Inserire `'$(VisualStudioVersion)' == '14.0' And` all'inizio dell'istruzione Condition. Queste istruzioni verranno visualizzate nell'intestazione e nel piè di pagina del file csproj.
 
 Ad esempio:
 
@@ -179,7 +179,7 @@ Ad esempio:
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Aggiungere altre istruzioni condizionali ai tag di `<Error>` con un riferimento Microsoft. VSSDK. BuildTools. A tale scopo, inserire `'$(VisualStudioVersion)' != '14.0' And` all'inizio dell'istruzione Condition. Queste istruzioni verranno visualizzate nel piè di pagina del file csproj.
+* Aggiungere altre istruzioni condizionali ai `<Error>` tag con un riferimento Microsoft. VSSDK. BuildTools. Eseguire questa operazione inserendo `'$(VisualStudioVersion)' != '14.0' And` all'inizio dell'istruzione Condition. Queste istruzioni verranno visualizzate nel piè di pagina del file csproj.
 
 Ad esempio:
 
@@ -187,7 +187,7 @@ Ad esempio:
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Aggiungere altre istruzioni condizionali ai tag `<Error>` con Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Inserire `'$(VisualStudioVersion)' == '14.0' And` all'inizio dell'istruzione Condition. Queste istruzioni verranno visualizzate nel piè di pagina del file csproj.
+* Aggiungere altre istruzioni condizionali ai `<Error>` tag con Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Inserire `'$(VisualStudioVersion)' == '14.0' And` all'inizio dell'istruzione Condition. Queste istruzioni verranno visualizzate nel piè di pagina del file csproj.
 
 Ad esempio:
 
@@ -207,7 +207,7 @@ A questo punto, il progetto dovrebbe essere pronto per compilare un VSIXv3 che p
 * Passare alla directory del progetto.
 * Aprire la cartella *\bin\Debug* .
 * Fare doppio clic sul file VSIX e installare l'estensione in Visual Studio 2015 e Visual Studio 2019/2017.
-* Verificare che l'estensione sia visibile in **strumenti** > **estensioni e aggiornamenti** nella sezione **installato** .
+* Verificare che l'estensione sia visibile in **strumenti**  >  **estensioni e aggiornamenti** nella sezione **installazione** .
 * Provare a eseguire/utilizzare l'estensione per verificarne il funzionamento.
 
 ![Trovare un progetto VSIX](media/finding-a-VSIX-example.png)

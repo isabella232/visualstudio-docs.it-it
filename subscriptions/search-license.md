@@ -5,14 +5,14 @@ ms.author: lank
 manager: lank
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 03/03/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Informazioni su come gli amministratori possono individuare singoli sottoscrittori o gruppi nel portale di amministrazione.
-ms.openlocfilehash: e2ca2683d1c14180fb70a5f80a781f774ed65e71
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: c7ef5cd61a689be1757793b223ebc1a9295bf8bd
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233265"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906170"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Cercare e filtrare i sottoscrittori nelle sottoscrizioni di Visual Studio
 Portale di amministrazione delle sottoscrizioni di Visual Studio consente di trovare un sottoinsieme specifico di sottoscrittori in base a diversi criteri. È possibile applicare un filtro all'elenco di sottoscrittori per nome, indirizzo di posta elettronica, livello di sottoscrizione e altre informazioni.
@@ -30,7 +30,7 @@ Portale di amministrazione delle sottoscrizioni di Visual Studio consente di tro
    > [!NOTE]
    > Il campo **Nome** viene ordinato in base al nome.
 
-   Si noti che l'icona **Filtro** è evidenziata, a indicare che è stato applicato un filtro.  Viene visualizzata anche l'opzione **Cancella filtro.** 
+   Si noti che l'icona del **filtro** è evidenziata, a indicare che è applicato un filtro.  Viene visualizzata anche una scelta di **filtro chiara** . 
 
 3. Per cancellare il filtro e ripristinare l'elenco non filtrato, fare clic sulla scheda **Cancella filtro** in alto a destra. 
    > [!div class="mx-imgBorder"]
@@ -39,7 +39,7 @@ Portale di amministrazione delle sottoscrizioni di Visual Studio consente di tro
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

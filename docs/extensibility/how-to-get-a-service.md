@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Ottenere un servizio Documenti Microsoft'
+title: 'Procedura: ottenere un servizio | Microsoft Docs'
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
@@ -10,28 +10,28 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e8e6f20eaa08d6bb7aaa0cc9e560856daa5959e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710962"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905831"
 ---
-# <a name="how-to-get-a-service"></a>Procedura: Ottenere un servizioHow to: Get a service
+# <a name="how-to-get-a-service"></a>Procedura: ottenere un servizio
 
-Spesso è necessario ottenere i servizi di Visual Studio per accedere a funzionalità diverse. In generale, un servizio di Visual Studio fornisce una o più interfacce che è possibile usare. È possibile ottenere la maggior parte dei servizi da un pacchetto VSPackage.You can get most services from a VSPackage.
+Spesso è necessario ottenere i servizi di Visual Studio per accedere a diverse funzionalità. In generale, un servizio di Visual Studio fornisce una o più interfacce che è possibile usare. È possibile ottenere la maggior parte dei servizi da un pacchetto VSPackage.
 
-Qualsiasi VSPackage che <xref:Microsoft.VisualStudio.Shell.Package> deriva da e che è stato individuato correttamente può richiedere qualsiasi servizio globale. Poiché `Package` la <xref:System.IServiceProvider>classe implementa , qualsiasi `Package` VSPackage che deriva da è anche un provider di servizi.
+Tutti i pacchetti VSPackage che derivano da <xref:Microsoft.VisualStudio.Shell.Package> e che sono stati correttamente inseriti in un sito possono richiedere un servizio globale. Poiché la `Package` classe implementa <xref:System.IServiceProvider> , anche tutti i pacchetti VSPackage che deriva da `Package` sono un provider di servizi.
 
-Quando Visual Studio <xref:Microsoft.VisualStudio.Shell.Package>carica un <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> oggetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> , passa un oggetto al metodo durante l'inizializzazione. Questo è chiamato *sipario* del pacchetto VSPackage. La `Package` classe esegue il wrapping <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> di questo provider di servizi e fornisce il metodo per ottenere i servizi.
+Quando Visual Studio carica un <xref:Microsoft.VisualStudio.Shell.Package> oggetto, passa un <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> oggetto al <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metodo durante l'inizializzazione. Questa operazione viene chiamata *Ubicazione* del pacchetto VSPackage. La `Package` classe esegue il wrapping del provider di servizi e fornisce il <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> metodo per ottenere i servizi.
 
-## <a name="getting-a-service-from-an-initialized-vspackage"></a>Recupero di un servizio da un pacchetto VSPackage inizializzatoGetting a service from an initialized VSPackage
+## <a name="getting-a-service-from-an-initialized-vspackage"></a>Recupero di un servizio da un VSPackage inizializzato
 
-1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] un progetto `GetServiceExtension`VSIX denominato . È possibile trovare il modello di progetto VSIX nella finestra di dialogo **Nuovo progetto** cercando "vsix".
+1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `GetServiceExtension` . È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
-2. Aggiungere ora un modello di elemento di comando personalizzato denominato **GetServiceCommand**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a**Estensibilità** **di Visual C,** > quindi selezionare **Comando personalizzato**. Nel campo **Nome** nella parte inferiore della finestra modificare il nome del file di comando in *GetServiceCommand.cs*. Per altre informazioni su come creare un comando personalizzato, [creare un'estensione con un comando](../extensibility/creating-an-extension-with-a-menu-command.md) di menuFor more information about how to create a custom command, Create an extension with a menu command
+2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **GetServiceCommand**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#**  >  **estensibilità** di Visual C# e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *GetServiceCommand.cs*. Per ulteriori informazioni su come creare un comando personalizzato, [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-3. In *GetServiceCommand.cs*, rimuovere `MenuItemCommand` il corpo del metodo e aggiungere il codice seguente:
+3. In *GetServiceCommand.cs*rimuovere il corpo del `MenuItemCommand` metodo e aggiungere il codice seguente:
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -40,21 +40,21 @@ Quando Visual Studio <xref:Microsoft.VisualStudio.Shell.Package>carica un <xref:
 
    ```
 
-    Questo codice ottiene un servizio SVsActivityLog <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> e ne esegue il cast a un'interfaccia, che può essere usata per scrivere nel log attività. Per un esempio, vedere [Procedura: Utilizzare il registro attività](../extensibility/how-to-use-the-activity-log.md).
+    Questo codice ottiene un servizio SVsActivityLog e ne esegue il cast a un' <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaccia, che può essere usata per scrivere nel log attività. Per un esempio, vedere [procedura: usare il log attività](../extensibility/how-to-use-the-activity-log.md).
 
 4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.
 
-5. Nel menu **Strumenti** dell'istanza sperimentale individuare il pulsante **Invoke GetServiceCommand.** Quando si fa clic su questo pulsante, verrà visualizzata una finestra di messaggio che indica **Trovato il servizio registro attività.**
+5. Nel menu **strumenti** dell'istanza sperimentale, trovare il pulsante **richiama GetServiceCommand** . Quando si fa clic su questo pulsante, viene visualizzata una finestra di messaggio che indica che **il servizio log attività è stato trovato.**
 
-## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Recupero di un servizio da una finestra degli strumenti o da un contenitore di controlliGetting a service from a tool window or control container
+## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Recupero di un servizio da una finestra degli strumenti o da un contenitore di controlli
 
-In alcuni stati potrebbe essere necessario ottenere un servizio da una finestra degli strumenti o da un contenitore di controlli che non è stato individuato oppure è stato individuato con un provider di servizi che non conosce il servizio desiderato. Ad esempio, è possibile scrivere nel log attività dall'interno di un controllo.
+In alcuni casi potrebbe essere necessario ottenere un servizio da una finestra degli strumenti o da un contenitore di controlli che non è stato individuato, altrimenti è stato individuato con un provider di servizi che non è in grado di conoscere il servizio desiderato. Ad esempio, potrebbe essere necessario scrivere nel log attività dall'interno di un controllo.
 
-Il <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metodo statico si basa su un provider di servizi memorizzati <xref:Microsoft.VisualStudio.Shell.Package> nella cache che viene inizializzato la prima volta che viene individuato qualsiasi VSPackage derivato da.
+Il metodo statico si <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> basa su un provider di servizi memorizzato nella cache che viene inizializzato alla prima esecuzione di un VSPackage derivato da <xref:Microsoft.VisualStudio.Shell.Package> .
 
-Poiché il costruttore VSPackage viene chiamato prima che il pacchetto VSPackage viene individuato, i servizi globali sono in genere non disponibili all'interno del costruttore VSPackage. Per una soluzione alternativa, vedere [Procedura: Risolvere i problemi relativi ai servizi.](../extensibility/how-to-troubleshoot-services.md)
+Poiché il costruttore VSPackage viene chiamato prima che il pacchetto VSPackage sia situato, i servizi globali non sono in genere disponibili all'interno del costruttore VSPackage. Vedere [procedura: risolvere i problemi relativi ai servizi](../extensibility/how-to-troubleshoot-services.md) per una soluzione alternativa.
 
-Ecco un esempio del modo per ottenere un servizio in una finestra degli strumenti o un altro elemento non VSPackage.Here's an example of the way to get a service in a tool window or other non-VSPackage element.
+Di seguito è riportato un esempio di come ottenere un servizio in una finestra degli strumenti o in un altro elemento non VSPackage.
 
 ```csharp
 IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -63,9 +63,9 @@ if (log == null) return;
 
 ## <a name="getting-a-service-from-the-dte-object"></a>Recupero di un servizio dall'oggetto DTE
 
-È inoltre possibile <xref:EnvDTE.DTEClass> ottenere servizi dall'oggetto. Tuttavia, è necessario ottenere l'oggetto DTE come servizio <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> da un VSPackage o chiamando il metodo statico.
+È anche possibile ottenere i servizi da un <xref:EnvDTE.DTEClass> oggetto. Tuttavia, è necessario ottenere l'oggetto DTE come servizio da un VSPackage o chiamando il <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metodo statico.
 
-L'oggetto <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>DTE implementa , che è possibile <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>utilizzare per eseguire una query per un servizio utilizzando .
+L'oggetto DTE implementa <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> , che è possibile utilizzare per eseguire una query per un servizio utilizzando <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> .
 
 Ecco come ottenere un servizio dall'oggetto DTE.
 
@@ -87,6 +87,6 @@ if (sp != null)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: fornire un servizioHow to: Provide a service](../extensibility/how-to-provide-a-service.md)
-- [Utilizzare e fornire servizi](../extensibility/using-and-providing-services.md)
-- [Essenziali di servizio](../extensibility/internals/service-essentials.md)
+- [Procedura: fornire un servizio](../extensibility/how-to-provide-a-service.md)
+- [Usare e fornire servizi](../extensibility/using-and-providing-services.md)
+- [Essentials servizio](../extensibility/internals/service-essentials.md)

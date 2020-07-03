@@ -5,28 +5,28 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Informazioni sul vantaggio Account per sviluppatore di Windows incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: c3764330b5ace58f976f726770fa7a3e9ed2a4ed
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: a39b52f98cb476858e02ae34a4a9422e55dee888
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649722"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906002"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 L'account per sviluppatore di Windows, incluso in una sottoscrizione selezionata di Visual Studio, consente di inviare app di Windows gratuite e a pagamento a Windows Store.
 
-## <a name="activation-steps"></a>Procedura di attivazione
+## <a name="activation-steps"></a>Passaggi di attivazione
 Per usare l'account per sviluppatore di Windows, è necessario configurare un account o accedere con un account esistente.
 
-È consigliabile creare una finestra del browser "privata" per questo processo.  Ad esempio, in Google Chrome, crea una nuova finestra "incognito".  In Internet Explorer è possibile creare una nuova finestra di "InPrivate Browsing".
+È consigliabile creare una finestra del browser "privata" per questo processo.  Ad esempio, in Google Chrome creare una nuova finestra "in incognito".  In Internet Explorer è possibile creare una nuova finestra di "InPrivate Browsing".
 
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Individuare il riquadro Account per sviluppatore di Windows nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.  Copiare il codice negli Appunti, quindi fare clic su **Attiva**.
+2. Individuare il riquadro Account per sviluppatore di Windows nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.  Copiare il codice negli Appunti e quindi fare clic su **Activate (attiva**).
    > [!div class="mx-imgBorder"]
    > ![Riquadro del vantaggio per sviluppatori di Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
-3. Sul [https://developer.microsoft.com](https://developer.microsoft.com) sito è possibile iniziare il processo di registrazione.  Fare clic su **Iscriviti** per continuare.
+3. Nel [https://developer.microsoft.com](https://developer.microsoft.com) sito è possibile iniziare il processo di registrazione.  Fare clic su **Iscriviti** per continuare.
    > [!div class="mx-imgBorder"]
    > ![Registrazione al vantaggio per sviluppatori di Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 4. Accedere alla sottoscrizione.  Se si hanno più account, scegliere quello associato alla sottoscrizione Enterprise.
@@ -43,31 +43,31 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, vendita al dettaglio, NFR<sup>1</sup> selezionato | Incluso       |  Sì|
-| Visual Studio Enterprise con GitHub Enterprise   | Vl  | Incluso       |  Sì|
+| Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | Incluso       |  Sì|
+| Visual Studio Enterprise con GitHub Enterprise   | VL  | Incluso       |  Sì|
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Incluso                                                            |Sì|
-| Visual Studio Professional con GitHub Enterprise | Vl                                        | Incluso                                                            |Sì|
+| Visual Studio Professional con GitHub Enterprise | VL                                        | Incluso                                                            |Sì|
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  ND|
 | MSDN Platforms (Standard)                                          | VL, Retail                                              |  Non disponibile                                            |  ND|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
 ||
 
-<sup>1</sup>  *Include: Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Esclude: Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
+<sup>1</sup>  *include: not for Resale (NFR), ETP, Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer. Escludi: Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD), MCT software & Services.*
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) invitati a passare a esplorare diverse opzioni per l'acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto per l'uso dell'account per sviluppatore di Windows?  Vedere le risorse di [supporto](https://developer.microsoft.com/windows/support) in [Windows Dev Center](https://developer.microsoft.com/windows).
 - [Sviluppo per Windows](/windows/)
-- Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [il supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

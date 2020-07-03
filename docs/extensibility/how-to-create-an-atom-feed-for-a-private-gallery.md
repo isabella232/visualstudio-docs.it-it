@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Creare un feed atomo per una galleria privata Documenti Microsoft'
+title: 'Procedura: creare un feed Atom per una raccolta privata | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
@@ -11,28 +11,28 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72fbf2d3973ffd84de1cf6f33788c43511c3ce4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80711004"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905859"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: Creare un feed Atom per una raccolta privataHow to: Create an Atom feed for a private gallery
-È possibile creare un feed Atom (RSS) in un percorso Intranet contenente estensioni e aggiungere il feed a **Estensioni e aggiornamenti** come raccolta privata. Per altre informazioni, vedere [Private Galleries](../extensibility/private-galleries.md) (Raccolte private).
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: creare un feed Atom per una raccolta privata
+È possibile creare un feed Atom (RSS) in un percorso Intranet che contiene le estensioni e aggiungere il feed ad **estensioni e aggiornamenti** come raccolta privata. Per altre informazioni, vedere [Private Galleries](../extensibility/private-galleries.md) (Raccolte private).
 
 ## <a name="create-an-atom-feed"></a>Creare un feed Atom
- Per creare un feed Atom come raccolta privata, è innanzitutto necessario raccogliere le estensioni (file*VSIX)* in una cartella. Se lo si desidera, è possibile organizzarli in sottocartelle. Sono inoltre necessarie le seguenti risorse:
+ Per creare un feed Atom come raccolta privata, è necessario innanzitutto raccogliere le estensioni (file*VSIX* ) in una cartella. Se lo si desidera, è possibile organizzarle in sottocartelle. Sono necessarie anche le risorse seguenti:
 
-- Un file *atom.xml* che rende le estensioni disponibili come raccolta privata. Per informazioni su come connettere il file *atom.xml* a **Estensioni e aggiornamenti**, vedere [Raccolte private](../extensibility/private-galleries.md).
+- Un file *atom.xml* che rende le estensioni disponibili come raccolta privata. Per informazioni su come connettere il file di *atom.xml* a **estensioni e aggiornamenti**, vedere [raccolte private](../extensibility/private-galleries.md).
 
-- Una cartella che contiene tutti i file di immagine estratti dalle estensioni (ad esempio, schermate). Il file *atom.xml* contiene collegamenti relativi a queste immagini in modo che siano disponibili in **Estensioni e aggiornamenti**.
+- Cartella che contiene i file di immagine estratti dalle estensioni (ad esempio, schermate). Il file di *atom.xml* contiene collegamenti relativi a queste immagini in modo che siano disponibili in **estensioni e aggiornamenti**.
 
   Si supponga, ad esempio, di aver raccolto le due estensioni seguenti in una cartella:
 
-- *Template_Wizard_239.vsix*, che è un modello di progetto VSIX vuoto.
+- *Template_Wizard_239. vsix*, ovvero un modello di progetto VSIX vuoto.
 
-- *SelectionHighlight.vsix*, che è uno strumento per evidenziare tutte le istanze di una parola selezionata.
+- *SelectionHighlight. vsix*, uno strumento che consente di evidenziare tutte le istanze di una parola selezionata.
 
   Il contenuto del file *atom.xml* sarà simile all'esempio seguente:
 
@@ -70,7 +70,7 @@ ms.locfileid: "80711004"
 </feed>
 ```
 
- Si noti che i due tag di collegamento fanno riferimento alle schermate nella cartella delle immagini generate.
+ Si noti che i due tag di collegamento fanno riferimento a schermate nella cartella generata di immagini.
 
 ## <a name="see-also"></a>Vedere anche
-- [Gallerie private](../extensibility/private-galleries.md)
+- [Raccolte private](../extensibility/private-galleries.md)
