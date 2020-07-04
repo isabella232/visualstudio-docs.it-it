@@ -7,12 +7,13 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 962ca0cf3960195ffabefb5a9bd2c6cc7e72590c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.topic: how-to
+ms.openlocfilehash: decbdc244a7947b715b8ba5b27bda5aaf50d2266
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289417"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950613"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Installare Visual Studio 2017 per Mac
 
@@ -33,7 +34,7 @@ Per l'uso di iOS in Visual Studio è necessario quanto segue:
 - Xcode 9.3 o versione successiva. È in genere consigliabile usare la versione stabile più recente.
 - ID Apple. Se non si ha ancora un ID Apple, è possibile crearne uno nuovo all'indirizzo https://appleid.apple.com. L'ID Apple è necessario per installare Xcode e accedervi.
 
-## <a name="install"></a>Installazione di
+## <a name="install"></a>Installazione
 
 1. Scaricare Visual Studio per Mac da [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)
 
@@ -125,6 +126,6 @@ Per altri carichi di lavoro, vedere la pagina [Carichi di lavoro](/visualstudio/
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Installare Visual Studio 2017 (in Windows)](/visualstudio/install/install-visual-studio)

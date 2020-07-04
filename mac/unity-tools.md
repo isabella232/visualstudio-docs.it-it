@@ -5,12 +5,13 @@ author: therealjohn
 ms.author: johmil
 ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: c411ae1730c2bd9b4f92729a8480d7fa399d0894
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 03cae287f3b7094e61504d3baef7bfbd6a3575cd
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74797236"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950684"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio per Mac Tools per Unity
 
@@ -48,9 +49,9 @@ Visual Studio per Mac Tools per Unity supporta tutte le funzionalità di [debug]
 
 Scrittura di codice più facile da utilizzare con menu rapidi e tasti di scelta rapida per [azioni di contesto, ridenominazione e refactoring](refactoring.md).
 
-### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostica di Roslyn e correzioni rapide per Unity
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostica Roslyn e correzioni rapide per Unity
 
-Scrivere codice migliore che acquisisca le procedure consigliate con la profonda conoscenza dei progetti Unity di Visual Studio per Mac. 
+Scrivere codice migliore che acquisisca le procedure consigliate con Visual Studio per Mac la conoscenza approfondita dei progetti di Unity. 
 
 ![Confronto tra stringa di refactoring di VS per Mac e CompareTag](media/using-vsmac-tools-unity-image9.png)
 

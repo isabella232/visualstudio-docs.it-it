@@ -5,18 +5,19 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: f9925954083c7fe64ad29c7cfed618a84d7a6386
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 50aa6077bafb2d4791555d449f06f6c81595a2f5
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984856"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950564"
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 
 Visual Studio per Mac offre due modi per aggiungere ulteriori riferimenti al progetto:
 
-![Riferimenti del progetto](media/projects-and-solutions-image10.png)
+![Riferimenti al progetto](media/projects-and-solutions-image10.png)
 
 Si tratta di:
 

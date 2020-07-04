@@ -8,25 +8,26 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.topic: how-to
+ms.openlocfilehash: ab461327a0af5d072689e4a5cb357525b42018ba
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224498"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950489"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Pubblicare in una cartella usando Visual Studio per Mac
 
-È possibile usare lo strumento pubblica per pubblicare .NET Core Console o ASP.NET app Core in una cartella.
+È possibile usare lo strumento di pubblicazione per pubblicare la console di .NET Core o ASP.NET Core le app in una cartella.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 - [Visual Studio 2019 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installato con .NET Core abilitato.
-- Una console .NET Core o un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- Una console di .NET Core o un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Pubblicare in una cartella
 
-Con Visual Studio per Mac è possibile pubblicare i progetti .NET Core in una cartella usando lo strumento pubblica. Dopo la pubblicazione in una cartella è possibile trasferire i file in un ambiente diverso. Per eseguire la pubblicazione in una cartella attenersi alla procedura seguente.
+Con Visual Studio per Mac è possibile pubblicare i progetti .NET Core in una cartella usando lo strumento di pubblicazione. Dopo la pubblicazione in una cartella è possibile trasferire i file in un altro ambiente. Per eseguire la pubblicazione in una cartella attenersi alla procedura seguente.
 
  1. Nel riquadro della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
 

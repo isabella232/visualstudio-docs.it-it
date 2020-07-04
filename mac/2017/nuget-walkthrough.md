@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 728a225f4a1d14af986039cae7cb2fc8a493ecc9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983300"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950402"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inserimento di un pacchetto NuGet nel progetto
 
@@ -39,7 +40,7 @@ Verrà visualizzata la finestra **Aggiungi pacchetti**. Verificare che l'elenco 
 
 ![Elenco a discesa Origine](media/nuget-walkthrough-Source.png)
 
-Quando si apre la finestra viene caricato un elenco di pacchetti dall'origine del pacchetto predefinito: nuget.org. I risultati iniziali sono simili ai seguente:The initial results look like this:
+Quando viene visualizzata la finestra, viene caricato un elenco di pacchetti dall'origine del pacchetto predefinita: nuget.org. I risultati iniziali hanno un aspetto simile al seguente:
 
 ![Elenco di pacchetti NuGet](media/nuget-walkthrough-AddPackages1.png)
 
@@ -93,7 +94,7 @@ Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e
 
 ## <a name="adding-package-sources"></a>Aggiunta di origini dei pacchetti
 
-I pacchetti disponibili per l'installazione vengono inizialmente recuperati da nuget.org. Tuttavia, è possibile aggiungere altri percorsi del pacchetto a Visual Studio per Mac.However, you can add other package locations to Visual Studio for Mac. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
+I pacchetti disponibili per l'installazione vengono inizialmente recuperati da nuget.org. Tuttavia, è possibile aggiungere altri percorsi di pacchetti a Visual Studio per Mac. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
 
 In Visual Studio per Mac passare a **Visual Studio > Preferenze > NuGet > Origini** per visualizzare e modificare l'elenco di origini dei pacchetti. Si noti che le origini possono essere un server remoto (specificato da un URL) o una directory locale.
 

@@ -5,12 +5,13 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: e40d9640ca2e62148e4ad166845d8f59854367ff
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73714473"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950669"
 ---
 # <a name="xamarin-mobile-app-development"></a>Sviluppo di app per dispositivi mobili Xamarin
 
@@ -18,11 +19,11 @@ Grazie a un eccellente supporto per [Xamarin](/xamarin) è possibile sviluppare 
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
-XAML Hot Reload for Xamarin.Forms è integrato in Visual Studio per Mac nella versione 8.3 e successive. Con questa funzionalità abilitata le modifiche si riflettono immediatamente nella tua app in esecuzione ogni volta che salvi il file.
+Il ricaricamento a caldo di XAML per Novell. Forms è integrato in Visual Studio per Mac nella versione 8,3 e successive. Con questa funzionalità le modifiche abilitate vengono immediatamente riflesse nell'app in esecuzione ogni volta che si salva il file.
 
-XAML Hot Reload può essere abilitato selezionando la casella di controllo **Abilita Xamarin Hot Reload** in **Preferenze > > Progetti > di Visual Studio > Xamarin Hot Reload**.
+È possibile abilitare il ricaricamento a caldo di XAML selezionando la casella di controllo **Abilita ricaricamento a caldo di Novell** in **Visual Studio > preferenze > progetti > ricaricamento a caldo di Novell**.
 
-Per ulteriori informazioni su Hot Reload, vedere la [guida XAML Hot Reload for Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload) all'interno della documentazione.
+Per ulteriori informazioni sul ricaricamento a caldo, vedere la guida relativa al [ricaricamento a caldo di XAML per Novell. Forms](/xamarin/xamarin-forms/xaml/hot-reload) nella documentazione di.
 
 ## <a name="android"></a>Android
 

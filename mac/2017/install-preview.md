@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 8bf139a6eab3c25bf28e787f9af12135813436e3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 6640a03523994b845d90f45ff6323126f462068a
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984932"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950636"
 ---
 # <a name="install-a-preview-release"></a>Installare una versione di anteprima
 
@@ -28,7 +29,7 @@ La maggior parte delle versioni di anteprima sono disponibili attraverso i canal
 
 Per installare l'anteprima di Visual Studio per Mac, usare la procedura seguente:
 
-1. Passare a **Visual Studio > Verifica disponibilità aggiornamenti**.
+1. Passare a **Visual Studio > verificare la disponibilità di aggiornamenti**.
 2. Nella casella combinata Canale di aggiornamento selezionare **Beta**.
 3. Selezionare il pulsante **Switch channel** (Cambia canale) per attivare il canale selezionato e avviare il download dei nuovi aggiornamenti.
 4. Per avviare l'installazione degli aggiornamenti, selezionare il pulsante **Riavvia e installa aggiornamenti**.

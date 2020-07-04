@@ -6,12 +6,13 @@ ms.author: jomatthi
 ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: e56aec03aabe818731c65acb30eafcc18f170ac3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: troubleshooting
+ms.openlocfilehash: c51f3cd50598cd0c33b019c09f95554cc5f9058b
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73714521"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950502"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio per Mac supporta il controllo della versione di Team Foundation?
 
@@ -21,7 +22,7 @@ ms.locfileid: "73714521"
 
 ## <a name="alternative-version-control-options-in-visual-studio-for-mac"></a>Opzioni di controllo della versione alternative in Visual Studio per Mac
 
-Per un'esperienza ottimale nel controllo della versione in macOS, ti consigliamo di usare **Git** anziché Il controllo della versione di Team Foundation (TFVC). 
+Per la migliore esperienza di controllo della versione in macOS, è consigliabile usare **git** invece di controllo della versione di Team Foundation (TFVC). 
 
 Git è supportato in Visual Studio per Mac e rappresenta l'opzione predefinita per i repository ospitati in Team Foundation Server (TFS) o Azure DevOps. Per altre informazioni sull'uso di Git con TFS/Azure DevOps, vedere la guida [Impostazione di un repository Git](/visualstudio/mac/set-up-git-repository).
 
@@ -29,14 +30,14 @@ Git è supportato in Visual Studio per Mac e rappresenta l'opzione predefinita p
 
 Sebbene Visual Studio per Mac non supporti ufficialmente il controllo della versione di Team Foundation, la parte restante di questa guida illustra alcune soluzioni alternative per l'uso di tale controllo in macOS. Se attualmente si usa il controllo della versione di Team Foundation, ecco alcune soluzioni che è possibile adottare per accedere al codice sorgente ospitato nel controllo della versione di Team Foundation:
 
-* Opzione 1. [Usare Visual Studio Code e l'estensione Azure Repos per un'interfaccia utente graficaUse Visual Studio Code and the Azure Repos extension, for a graphical UI](#use-visual-studio-code-and-the-azure-repos-extension)
+* Opzione 1. [Usare Visual Studio Code e l'estensione Azure Repos per un'interfaccia utente grafica](#use-visual-studio-code-and-the-azure-repos-extension)
 * Opzione 2. [Connettersi al repository usando il client della riga di comando Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
-### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>Opzione 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a>Usare Visual Studio Code e l'estensione Azure ReposUse Visual Studio Code and the Azure Repos extension
+### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>Opzione 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a>Usare Visual Studio Code e l'estensione Azure Repos
 
 Se si preferisce lavorare con un'interfaccia grafica per gestire i file nel controllo della versione, l'estensione Azure Repos per Visual Studio Code offre una soluzione supportata da Microsoft. Per iniziare, scaricare [Visual Studio Code](https://code.visualstudio.com) e quindi scoprire come [configurare l'estensione Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
 
-### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>Opzione 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Connessione tramite il client della riga di comando di Team Explorer Everywhere
+### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>Opzione 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Connessione tramite il client della riga di comando Team Explorer Everywhere
 
 > [!IMPORTANT]
 > In base al file LEGGIMI di Team Explorer Everywhere, questo progetto [non viene più mantenuto](https://github.com/microsoft/team-explorer-everywhere).

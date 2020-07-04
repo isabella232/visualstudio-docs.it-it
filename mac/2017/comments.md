@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 038c2bf7205ccc642d613893635b9323afe613b9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 44eee75b4803b4317bb7d3cd02cb19b55f41a067
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74982642"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85949985"
 ---
 # <a name="comments"></a>Commenti
 
@@ -20,7 +21,7 @@ Per impostare un intero blocco di codice come commento:
 
 * Selezionare il codice e selezionare **Attiva/Disattiva commento per riga** dal menu di scelta rapida
 
-o
+OR
 
 * Usare il tasto di scelta rapida `cmd + /` sul codice selezionato.
 
@@ -30,7 +31,7 @@ Questi metodi possono essere usati per impostare come commenti una o più sezion
 
 I commenti sono utili anche per la documentazione di codice per gli sviluppatori che potranno interagire con esso in futuro. Tali commenti vengono in genere creati sotto forma di commenti su più righe e per ogni lingua vengono aggiunti nel modo seguente:
 
-**C #**
+**C#**
 
 ```csharp
 /*
@@ -39,7 +40,7 @@ I commenti sono utili anche per la documentazione di codice per gli sviluppatori
 */
 ```
 
-**F #**
+**F#**
 
 ```fsharp
 (*
