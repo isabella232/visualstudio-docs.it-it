@@ -1,7 +1,7 @@
 ---
 title: "Procedura: creare un'associazione tra entità | Microsoft Docs"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
@@ -21,12 +21,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981839"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016937"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Procedura: creare un'associazione tra entità
   È possibile definire le relazioni tra entità nel modello di integrazione applicativa dei dati (Business Data Connectivity) creando associazioni. Visual Studio genera metodi che forniscono agli utenti del modello informazioni sulle singole associazioni. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.
@@ -45,11 +44,11 @@ ms.locfileid: "72981839"
 
     1. Nella colonna **ID origine** della tabella **mapping identificatore** scegliere l'identificatore accanto a ogni descrittore di tipo corrispondente visualizzato nella colonna **campo** .
 
-         Ad esempio, nella colonna **ID origine** selezionare `ContactID` accanto al descrittore di tipo `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` e il descrittore del tipo di `ReadItem.salesOrder.SalesOrder.ContactID`.
+         Ad esempio, nella colonna **ID origine** selezionare `ContactID` accanto al `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` descrittore di tipo e al `ReadItem.salesOrder.SalesOrder.ContactID` descrittore di tipo.
 
 4. Se si desidera creare un'associazione di chiavi esterne, deselezionare la casella di controllo **è associazione chiave esterna** .
 
-5. Fare clic sul pulsante **OK**.
+5. Fare clic su **OK** .
 
 6. Nella finestra di progettazione dell'integrazione applicativa dei dati, viene visualizzata una riga che rappresenta l'associazione tra l'entità di origine e l'entità di destinazione.
 

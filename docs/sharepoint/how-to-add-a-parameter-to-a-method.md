@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: aggiungere un parametro a un metodo | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb1a1c1e8f11ac6daa46f9fe1468a1ff3509e135
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986229"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016718"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Procedura: aggiungere un parametro a un metodo
   Usare un parametro per passare informazioni al metodo o per restituire informazioni da un metodo. Tutti i metodi devono avere almeno un parametro. Per ulteriori informazioni sulla progettazione di un parametro per supportare il tipo di metodo che si desidera creare, vedere Progettazione di [un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986229"
 
 1. Aggiungere un metodo a un'entità.
 
-2. Sulla barra dei menu scegliere **visualizza** > **altre finestre** > **Dettagli metodo di integrazione applicativa dei dati**.
+2. Sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa dei dati**di Windows.
 
      Verrà visualizzata la finestra **Dettagli metodo BDC** . Per altre informazioni, vedere [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -43,7 +42,7 @@ ms.locfileid: "72986229"
 
      Un nuovo parametro viene visualizzato sotto il nodo **parametri** .
 
-5. Nella barra dei menu scegliere **visualizza** > **finestra Proprietà**.
+5. Nella barra dei menu scegliere **Visualizza**  >  **finestra Proprietà**.
 
 6. Nella finestra **Proprietà** impostare la proprietà **Name** su qualsiasi nome che abbia senso. Se, ad esempio, il metodo restituirà Customers, è possibile assegnare il nome **GetCustomers**al metodo.
 

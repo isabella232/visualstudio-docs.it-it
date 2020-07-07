@@ -1,7 +1,7 @@
 ---
-title: "Procedura: Aggiungere un riferimento all'Output del progetto | Microsoft Docs"
+title: "Procedura: aggiungere un riferimento all'output del progetto | Microsoft Docs"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,33 +14,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ae3965647416d7a8e11cf0ea5e24cef1e54a09b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: bea0f39ae161d8b695f872cb634c35d0cb205c91
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967253"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016756"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>Procedura: Aggiungere un riferimento all'output del progetto
-  Per distribuire gli assembly di progetto non SharePoint (o file con estensione xap nei progetti Silverlight) in SharePoint, aggiungerli come un riferimento all'output del progetto.
+# <a name="how-to-add-a-project-output-reference"></a>Procedura: aggiungere un riferimento all'output del progetto
+  Per distribuire gli assembly di progetto non SharePoint (o i file con estensione xap nei progetti Silverlight) in SharePoint, aggiungerli come riferimento all'output del progetto.
 
- Questo processo crea una dipendenza di compilazione di soluzioni tra i due progetti. I progetti associati riferimenti all'output del progetto vengono compilati prima della compilazione e distribuzione del progetto SharePoint.
+ Questo processo crea una dipendenza di compilazione della soluzione tra i due progetti. I progetti associati ai riferimenti di output del progetto vengono compilati prima della compilazione e della distribuzione del progetto SharePoint.
 
 ### <a name="to-add-a-project-output-reference"></a>Per aggiungere un riferimento all'output del progetto
 
-1. Caricare una soluzione che contiene almeno un progetto di SharePoint e un progetto non SharePoint.
+1. Caricare una soluzione che contenga almeno un progetto SharePoint e un progetto non SharePoint.
 
-2. Nelle **Esplora soluzioni**, scegliere un elemento nel nodo del progetto SharePoint.
+2. In **Esplora soluzioni**scegliere un elemento nel nodo del progetto SharePoint.
 
-3. Nel **delle proprietà** finestra, scegliere il **riferimenti all'Output del progetto** proprietà e quindi scegliere i puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ASP. Ellisse NET Mobile Designer")) accanto al pulsante.
+3. Nella finestra **Proprietà** scegliere la proprietà **riferimenti output progetto** , quindi scegliere il pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")) accanto a esso.
 
-4. Nel **riferimenti all'Output del progetto** finestra di dialogo scegliere la **Add** pulsante.
+4. Nella finestra di dialogo **riferimenti output progetto** scegliere il pulsante **Aggiungi** .
 
-5. Nel riquadro proprietà, scegliere la freccia accanto al **tipo di distribuzione** proprietà, quindi scegliere un valore appropriato per l'elemento di SharePoint non viene fatto riferimento, ad esempio **ElementFile**.
+5. Nel riquadro Proprietà scegliere la freccia accanto alla proprietà tipo di **distribuzione** , quindi scegliere un valore appropriato per l'elemento non SharePoint a cui si fa riferimento, ad esempio **ElementFile**.
 
-6. Scegliere la freccia accanto a **nome progetto**, scegliere il nome dell'elemento del progetto non SharePoint e quindi scegliere il **OK** pulsante.
+6. Scegliere la freccia accanto a **nome progetto**, scegliere il nome dell'elemento di progetto non SharePoint, quindi scegliere il pulsante **OK** .
 
 ## <a name="see-also"></a>Vedere anche
-- [Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
-- [Procedura: Contrassegnare i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md)
-- [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Procedura: contrassegnare i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md)
+- [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

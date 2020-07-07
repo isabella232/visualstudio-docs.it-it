@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Aggiungere una funzionalità alle soluzioni SharePoint | Microsoft Docs'
+title: 'Procedura: aggiungere una funzionalità alle soluzioni SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,19 +12,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 143ab857af7c48f711e47910df07b6c58d07bc31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 07d939a12e47f4ba63f51310efb36cc0a59d20e4
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967507"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017000"
 ---
-# <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Procedura: Aggiungere una funzionalità alle soluzioni SharePoint
-  Quando si crea una soluzione di SharePoint, una funzionalità e un pacchetto vengono aggiunti alla soluzione. È possibile aggiungere più elementi di funzionalità per organizzare i diversi tipi di file di SharePoint.
+# <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Procedura: aggiungere una funzionalità alle soluzioni SharePoint
+  Quando si crea una soluzione di SharePoint, una funzionalità e un pacchetto vengono aggiunti alla soluzione. È possibile aggiungere altri elementi funzionalità per organizzare tipi diversi di file di SharePoint.
 
 ### <a name="to-add-a-feature-through-solution-explorer"></a>Per aggiungere una funzionalità tramite Esplora soluzioni
 
-1. In **Esplora soluzioni**, aprire il menu di scelta rapida **funzionalità**, quindi scegliere **Aggiungi funzionalità**.
+1. In **Esplora soluzioni**aprire il menu di scelta rapida per **funzionalità**, quindi scegliere **Aggiungi funzionalità**.
 
 ## <a name="see-also"></a>Vedere anche
-- [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

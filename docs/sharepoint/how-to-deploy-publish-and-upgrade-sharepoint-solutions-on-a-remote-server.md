@@ -1,7 +1,7 @@
 ---
-title: Distribuire, pubblicare e aggiornare soluzioni SharePoint in modalità remota
+title: Distribuire, pubblicare & aggiornare le soluzioni SharePoint in modalità remota
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,67 +15,66 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401424"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016801"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedura: Distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto
-  Oltre a distribuire soluzioni di SharePoint al sistema locale, è possibile pubblicare soluzioni create mediante sandbox di SharePoint a siti remoti o i siti SharePoint locali. Le copie di processo di pubblicazione remoto il *wsp* file nel server SharePoint, installa la soluzione e quindi consente di attivare la soluzione. È inoltre possibile aggiornare un'installazione di soluzioni di SharePoint remota dopo aver apportato modifiche a esso.
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto
+  Oltre a distribuire le soluzioni SharePoint al sistema locale, è possibile pubblicare soluzioni di SharePoint in modalità sandbox in siti remoti o in siti di SharePoint locali. Il processo di pubblicazione remota copia il file con *estensione wsp* nel server SharePoint, installa la soluzione e quindi consente di attivare la soluzione. È inoltre possibile aggiornare un'installazione remota di una soluzione SharePoint dopo che sono state apportate modifiche.
 
-## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Per pubblicare una soluzione creata mediante sandbox di SharePoint in un server SharePoint remoto
+## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Per pubblicare una soluzione SharePoint in modalità sandbox in un server SharePoint remoto
 
-1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto in modalità sandbox di SharePoint che si desidera pubblicare e quindi scegliere **Publish**.
+1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto SharePoint creato mediante sandbox che si desidera pubblicare, quindi scegliere **pubblica**.
 
-2. Nel **Publish** finestra di dialogo scegliere la **pubblica sul sito di SharePoint** pulsante di opzione e quindi immettere un URL per un sito di pubblicazione online, ad esempio: `https://mytestsite.sharepoint.microsoftonline.com`.
+2. Nella finestra di dialogo **pubblica** scegliere il pulsante **di opzione pubblica nel sito di SharePoint** , quindi immettere un URL per un sito di pubblicazione online, ad esempio: `https://mytestsite.sharepoint.microsoftonline.com` .
 
-3. Scegliere il **aprire la pagina Raccolta soluzioni nel browser dopo la pubblicazione** pulsante di opzione per visualizzare l'elenco delle soluzioni nel **raccolta soluzioni** pagina dopo la pubblicazione.
+3. Scegliere il pulsante di opzione **Apri la raccolta soluzioni nel browser dopo la pubblicazione** per visualizzare l'elenco delle soluzioni nella pagina **raccolta** soluzioni dopo la pubblicazione.
 
-4. Scegliere il **pubblica** pulsante.
+4. Fare clic sul pulsante **Pubblica**.
 
-5. Accedere al server remoto se è necessaria l'autenticazione utente.
+5. Accedere al server remoto se è necessaria l'autenticazione dell'utente.
 
-     Viene visualizzato lo stato della pubblicazione in Visual Studio **Output** finestra. Quando il processo viene completato, la soluzione (*wsp*) file viene installato nel server SharePoint remoto. Tuttavia, deve ancora essere attivato prima di poter essere utilizzato in SharePoint.
+     Lo stato di avanzamento della pubblicazione viene visualizzato nella finestra di **output** di Visual Studio. Al termine del processo, il file di soluzione (con*estensione wsp*) viene installato nel server SharePoint remoto. Tuttavia, deve essere comunque attivato prima di poter essere utilizzato in SharePoint.
 
-6. Nel **raccolta soluzioni** pagina, selezionare l'applicazione di SharePoint e quindi sulla barra multifunzione scegliere la **Activate** pulsante.
+6. Nella pagina **raccolta soluzioni** selezionare l'applicazione SharePoint, quindi sulla barra multifunzione scegliere il pulsante **attiva** .
 
-7. Nel **soluzione attiva** finestra di dialogo, nella barra multifunzione, scegliere il **Activate** nuovamente clic sul pulsante.
+7. Nella finestra di dialogo **attiva soluzione** , sulla barra multifunzione, scegliere di nuovo il pulsante **attiva** .
 
-     Il **lo stato** colonna il **raccolta soluzioni** pagina indica che l'applicazione è attiva.
+     La colonna **stato** nella pagina **raccolta soluzioni** indica che l'applicazione è attiva.
 
-## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>Per eseguire l'aggiornamento di una soluzione creata mediante sandbox di SharePoint in un server SharePoint remoto
- Se una soluzione creata mediante sandbox di SharePoint è già pubblicata in un server remoto, il processo seguente consente di eseguire l'aggiornamento dopo aver apportato modifiche all'applicazione nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>Per aggiornare una soluzione di SharePoint in modalità sandbox in un server SharePoint remoto
+ Se una soluzione di SharePoint creata mediante sandbox è già pubblicata su un server remoto, il processo seguente consente di aggiornarlo dopo aver apportato modifiche all'applicazione in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-1. Rinominare il pacchetto di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. A questo scopo, nella **Esplora soluzioni** aprire il pacchetto. Viene visualizzato nei **Esplora pacchetti**.
+1. Rinominare il pacchetto di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . A tale scopo, in **Esplora soluzioni** aprire il pacchetto. Viene visualizzato in **Package Explorer**.
 
-2. Nelle **Package Explorer**, nella **nome** , modificare il nome del pacchetto con un nome univoco.
+2. In **Package Explorer**, nella casella **nome** , modificare il nome del pacchetto in un nome univoco.
 
 3. Salvare il progetto.
 
-4. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto e quindi scegliere **Publish**.
+4. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto, quindi scegliere **pubblica**.
 
-5. Nel **Publish** finestra di dialogo scegliere la **pubblica sul sito di SharePoint** pulsante di opzione e quindi, se l'URL per il server remoto in cui la soluzione viene salvata non è presente, l'immissione.
+5. Nella finestra di dialogo **pubblica** scegliere il pulsante **di opzione pubblica nel sito di SharePoint** e quindi, se l'URL del server remoto in cui è salvata la soluzione non è presente, immetterlo.
 
-6. Scegliere il **aprire la pagina Raccolta soluzioni nel browser dopo la pubblicazione** pulsante di opzione per visualizzare l'elenco delle soluzioni nel **raccolta soluzioni** pagina dopo la pubblicazione.
+6. Scegliere il pulsante di opzione **Apri la raccolta soluzioni nel browser dopo la pubblicazione** per visualizzare l'elenco delle soluzioni nella pagina **raccolta** soluzioni dopo la pubblicazione.
 
-7. Scegliere il **pubblica** pulsante.
+7. Fare clic sul pulsante **Pubblica**.
 
-8. Accedere al server remoto se è necessaria l'autenticazione utente.
+8. Accedere al server remoto se è necessaria l'autenticazione dell'utente.
 
-     Se connesso al server remoto di recente, potrebbe non essere necessaria l'autenticazione.
+     Se è stato eseguito di recente l'accesso al server remoto, è possibile che l'autenticazione non sia obbligatoria.
 
-     Se la versione precedente dell'applicazione che ha lo stesso nome esiste ancora nel server SharePoint, si otterrà un errore che un pacchetto con lo stesso nome esiste già nel server SharePoint. È necessario rinominare il pacchetto con un nome univoco prima della pubblicazione.
+     Se nel server SharePoint esiste ancora la versione precedente dell'applicazione con lo stesso nome, verrà ricevuto un errore per il fatto che nel server SharePoint esiste già un pacchetto con lo stesso nome. Prima della pubblicazione è necessario rinominare il pacchetto con un nome univoco.
 
-9. Scegliere la nuova applicazione in SharePoint e quindi sulla barra multifunzione scegliere la **aggiornare** pulsante.
+9. Scegliere la nuova applicazione in SharePoint, quindi sulla barra multifunzione scegliere il pulsante **Aggiorna** .
 
-10. Nel **aggiornare la soluzione** finestra di dialogo, nella barra multifunzione, scegliere il **aggiornare** nuovamente clic sul pulsante. Il **lo stato** colonna il **raccolta soluzioni** pagina dovrebbe ora indicare che l'applicazione è attiva.
+10. Nella finestra di dialogo **Aggiorna soluzione** , sulla barra multifunzione, scegliere di nuovo il pulsante **Aggiorna** . La colonna **stato** nella pagina **raccolta soluzioni** indicherà ora che l'applicazione è attiva.
 
-     La versione precedente della soluzione è disattivata, la nuova versione della soluzione viene aggiornata con dati gestiti dalla soluzione precedente e la nuova soluzione viene attivata in SharePoint.
+     La versione precedente della soluzione è disattivata, la nuova versione della soluzione viene aggiornata con i dati conservati dalla soluzione precedente e la nuova soluzione viene attivata in SharePoint.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
-- [Creare pacchetti delle soluzioni SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
-- [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
+- [Procedura: distribuire e pubblicare una soluzione SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
+- [Creare pacchetti della soluzione SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
+- [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
+- [Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)

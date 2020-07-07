@@ -1,7 +1,7 @@
 ---
 title: Creazione di Web part Silverlight visualizzazione di OData per SharePoint
 ms.date: 02/22/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
 dev_langs:
@@ -12,24 +12,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984829"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017172"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procedura dettagliata: creare una Web part Silverlight che visualizza OData per SharePoint
   SharePoint 2010 espone i dati dell'elenco per mezzo di OData. In SharePoint il servizio OData viene implementato dal servizio RESTful ListData. svc. In questa procedura dettagliata viene illustrato come creare una Web part di SharePoint che ospita un'applicazione Silverlight. L'applicazione Silverlight Visualizza le informazioni sull'elenco degli annunci di SharePoint utilizzando ListData. svc. Per ulteriori informazioni, vedere [interfaccia REST di SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) e [Open Data Protocol](https://www.odata.org/).
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+## <a name="prerequisites"></a>Prerequisiti
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Edizioni supportate di Microsoft Windows e SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Creare un'applicazione Silverlight e una Web part Silverlight
  Per prima cosa, creare un'applicazione Silverlight in Visual Studio. L'applicazione Silverlight recupera i dati dall'elenco degli annunci di SharePoint usando il servizio ListData. svc.
@@ -39,9 +38,9 @@ ms.locfileid: "72984829"
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Per creare un'applicazione Silverlight e una Web part Silverlight
 
-1. Nella barra dei menu scegliere **File**  > **nuovo** **progetto**  >  per visualizzare la finestra di dialogo **nuovo progetto** .
+1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto** per visualizzare la finestra di dialogo **nuovo progetto** .
 
-2. Espandere il nodo **SharePoint** sotto **Visual C#**  o **Visual Basic**, quindi scegliere il nodo **2010** .
+2. Espandere il nodo **SharePoint** sotto **Visual C#** o **Visual Basic**, quindi scegliere il nodo **2010** .
 
 3. Nel riquadro Modelli scegliere il modello di **Web part Silverlight per SharePoint 2010** .
 
@@ -57,9 +56,9 @@ ms.locfileid: "72984829"
 
 7. Nella sezione stabilire **come si desidera associare la Web part Silverlight** della pagina specificare le **informazioni di configurazione Silverlight** scegliere il pulsante di opzione **Crea un nuovo progetto Silverlight e associalo al Web part** .
 
-8. Modificare il **nome** in **SLApplication**, impostare **lingua** su **Visual Basic** o oggetto **visivo C#** , quindi impostare la **versione di Silverlight** su **Silverlight 4,0**.
+8. Modificare il **nome** in **SLApplication**, impostare la **lingua** su **Visual Basic** o **Visual C#**, quindi impostare la **versione di Silverlight** su **Silverlight 4,0**.
 
-9. Scegliere il pulsante **fine** . I progetti vengono visualizzati in **Esplora soluzioni**.
+9. Fare clic sul pulsante **Fine**. I progetti vengono visualizzati in **Esplora soluzioni**.
 
      La soluzione contiene due progetti: un'applicazione Silverlight e una Web part Silverlight. L'applicazione Silverlight recupera e Visualizza i dati dell'elenco da SharePoint e la Web part Silverlight ospita l'applicazione Silverlight, consentendo di visualizzarla in SharePoint.
 
@@ -77,13 +76,13 @@ ms.locfileid: "72984829"
 
 3. Nella casella indirizzo della finestra di dialogo **Aggiungi riferimento al servizio** immettere l'URL del sito di SharePoint, ad esempio **http://MySPSite** , quindi scegliere il pulsante **Vai** .
 
-     Quando Silverlight individua il servizio OData di SharePoint ListData. svc, sostituisce l'indirizzo con l'URL completo del servizio. Per questo esempio, http://myserver diventa http://myserver/_vti_bin/ListData.svc.
+     Quando Silverlight individua il servizio OData di SharePoint ListData. svc, sostituisce l'indirizzo con l'URL completo del servizio. Per questo esempio, http://myserver diventa http://myserver/_vti_bin/ListData.svc .
 
 4. Scegliere il pulsante **OK** per aggiungere il riferimento al progetto e usare il nome del servizio predefinito, ServiceReference1.
 
-5. Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
+5. Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**.
 
-6. Consente di aggiungere una nuova origine dati al progetto in base al servizio SharePoint. A tale scopo, sulla barra dei menu scegliere **visualizza**  >  altre**origini dati** >  di**Windows** .
+6. Consente di aggiungere una nuova origine dati al progetto in base al servizio SharePoint. A tale scopo, sulla barra dei menu scegliere **Visualizza**  >  **altre**  >  **origini dati**di Windows.
 
      Nella finestra **origini dati** vengono visualizzati tutti i dati dell'elenco SharePoint disponibili, ad esempio attività, annunci e calendario.
 
@@ -123,7 +122,7 @@ ms.locfileid: "72984829"
     DataServiceCollection<AnnouncementsItem> announcements = new DataServiceCollection<AnnouncementsItem>();
     ```
 
-11. Sostituire la procedura `UserControl_Loaded` con il codice seguente.
+11. Sostituire la `UserControl_Loaded` procedura con la seguente.
 
     ```vb
     Private Sub UserControl_Loaded_1(sender As Object, e As RoutedEventArgs)

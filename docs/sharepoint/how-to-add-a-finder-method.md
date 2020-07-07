@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Aggiungere un metodo Finder | Microsoft Docs'
+title: 'Procedura: aggiungere un metodo Finder | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,44 +17,43 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1fa8f8eb34943cc17bc6cabca8e93ea7569a7ba6
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428720"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016732"
 ---
-# <a name="how-to-add-a-finder-method"></a>Procedura: Aggiungere un metodo Finder
-  Per abilitare il servizio di integrazione applicativa dei dati (BDC) visualizzare un elenco di entità in una web part o elenco, è necessario creare un *Finder* (metodo). Un metodo Finder è un metodo speciale che restituisce una raccolta di istanze di entità. Per altre informazioni, vedere [progettare un Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-finder-method"></a>Procedura: aggiungere un metodo Finder
+  Per abilitare il servizio di integrazione applicativa dei dati per visualizzare un elenco di entità in una Web part o in un elenco, è necessario creare un metodo *Finder* . Un metodo di ricerca è un metodo speciale che restituisce una raccolta di istanze di entità. Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-finder-method"></a>Per creare un metodo Finder
 
-1. Nel **finestra di progettazione integrazione applicativa dei dati**, scegliere un'entità.
+1. Nella **finestra di progettazione dell'integrazione applicativa**dei dati scegliere un'entità.
 
-    Per altre informazioni, vedere [Procedura: Aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md).
+    Per altre informazioni, vedere [procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Nella barra dei menu, scegliere **View** > **Other Windows** > **Dettagli metodo BDC**.
+2. Sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa dei dati**di Windows.
 
-    Il **Dettagli metodo BDC** verrà visualizzata la finestra. Per altre informazioni sul **Dettagli metodo BDC** finestra, vedere [Cenni preliminari sugli strumenti di progettazione di modelli di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md).
+    Verrà visualizzata la finestra **Dettagli metodo BDC** . Per ulteriori informazioni sulla finestra **Dettagli metodo di integrazione applicativa dei dati** , vedere [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. Nel **aggiungere un metodo** casella di riepilogo **Crea metodo Finder**.
+3. Nell'elenco **Aggiungi metodo** scegliere **Crea metodo Finder**.
 
     Visual Studio aggiunge un metodo, un parametro restituito e un descrittore di tipo.
 
-4. Configurare il descrittore di tipo come un descrittore di tipo raccolta di entità. Per altre informazioni su come creare un descrittore di tipo raccolta di entità, vedere [come: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+4. Configurare il descrittore di tipo come descrittore di tipo di raccolta di entità. Per ulteriori informazioni sulla creazione di un descrittore di tipo di raccolta di entità, vedere [procedura: definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   > Non è necessario eseguire questo passaggio se è stato aggiunto un metodo Finder specifico per l'entità. Visual Studio Usa il descrittore di tipo definito nel metodo Finder specifico.
+   > Non è necessario eseguire questo passaggio se è stato aggiunto un metodo di ricerca specifico all'entità. Visual Studio usa il descrittore di tipo definito nel metodo di ricerca specifico.
 
-5. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida del servizio file di codice che è stato generato per l'entità e quindi scegliere **Visualizza codice**. Per altre informazioni sui file di codice del servizio, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).
+5. In **Esplora soluzioni**aprire il menu di scelta rapida del file di codice del servizio generato per l'entità, quindi scegliere **Visualizza codice**. Per ulteriori informazioni sul file di codice del servizio, vedere la pagina relativa alla [creazione di un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-6. Aggiungere codice al metodo Finder. Mediante il codice vengono effettuate le seguenti attività:
+6. Aggiungere il codice al metodo Finder. Il codice esegue queste operazioni:
 
    - Recupera i dati da un'origine dati.
 
-   - Restituisce un elenco di entità per il servizio di integrazione applicativa dei dati.
+   - Restituisce un elenco di entità al servizio di integrazione applicativa dei dati.
 
-     L'esempio seguente restituisce una raccolta di `Contact` entità usando i dati dal database di esempio AdventureWorks per SQL Server.
+     Nell'esempio seguente viene restituita una raccolta di `Contact` entità utilizzando i dati del database di esempio AdventureWorks per SQL Server.
 
    > [!NOTE]
    > Sostituire il valore del `ServerName` campo con il nome del server.
@@ -63,11 +62,11 @@ ms.locfileid: "63428720"
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)
-- [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)
-- [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Procedura: Definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)
+- [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)
+- [Procedura: aggiungere un metodo di aggiornamento](../sharepoint/how-to-add-an-updater-method.md)
+- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Procedura: definire un'istanza di metodo](../sharepoint/how-to-define-a-method-instance.md)

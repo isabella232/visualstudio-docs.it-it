@@ -1,7 +1,7 @@
 ---
-title: Distribuire e pubblicare soluzioni di SharePoint al sito di SharePoint locale
+title: Distribuire & la soluzione di pubblicazione SharePoint nel sito di SharePoint locale
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,36 +13,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e68fc4e49311535169ab37a2332b443ba632fb5
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: 59d4fe41565d0aaf0c52cae9434d4a576dc26baa
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401457"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016820"
 ---
-# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Procedura: Distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale
-  È possibile distribuire o pubblicare soluzioni SharePoint in un server SharePoint locale nel computer di sviluppo. Le copie di processo di distribuzione di *wsp* file nel server SharePoint, installa la soluzione e quindi attiva le funzionalità. La pubblicazione di elaborare solo copie il *wsp* file nel server SharePoint e lo installa. È necessario attivare manualmente per abilitarlo in SharePoint.
+# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Procedura: distribuire e pubblicare una soluzione SharePoint in un sito di SharePoint locale
+  È possibile distribuire o pubblicare soluzioni SharePoint in un server SharePoint locale nel computer di sviluppo. Il processo di distribuzione copia il file con *estensione wsp* nel server SharePoint, installa la soluzione e quindi attiva le funzionalità. Il processo di pubblicazione copia il file con estensione *WSP* nel server SharePoint e lo installa. È necessario attivarla manualmente per abilitarla in SharePoint.
 
-## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Per distribuire una soluzione di SharePoint al server SharePoint locale
+## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Per distribuire una soluzione SharePoint nel server SharePoint locale
 
-1. Nelle **Esplora soluzioni**, scegliere il progetto che si desidera distribuire.
+1. In **Esplora soluzioni**scegliere il progetto che si desidera distribuire.
 
-2. Nella barra dei menu, scegliere **compilare**, **Distribuisci soluzione**.
+2. Sulla barra dei menu scegliere **Compila**, **Distribuisci soluzione**.
 
-     Il *wsp* file viene creato e installato nel server SharePoint locale. Inoltre, vengono attivate le funzionalità.
+     Il file con *estensione wsp* viene creato e installato nel server SharePoint locale. Inoltre, le funzionalità sono attivate.
 
-## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Per pubblicare una soluzione di SharePoint in un server SharePoint locale
+## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Per pubblicare una soluzione SharePoint in un server SharePoint locale
 
-1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto di SharePoint che si desidera pubblicare e quindi scegliere **Publish**.
+1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto SharePoint che si desidera pubblicare, quindi scegliere **pubblica**.
 
-2. Nel **Publish** finestra di dialogo scegliere la **pubblicare nel File System** pulsante di opzione.
+2. Nella finestra di dialogo **pubblica** scegliere il pulsante **di opzione pubblica sul file System** .
 
-3. Nel **percorso di destinazione** casella di testo, immettere un percorso locale e quindi scegliere il **Publish** pulsante.
+3. Nella casella di testo percorso di **destinazione** immettere un percorso locale, quindi scegliere il pulsante **pubblica** .
 
-     Viene visualizzato lo stato della pubblicazione in Visual Studio **Output** finestra. Quando il processo viene completato, la soluzione (*wsp*) file viene installato nel server SharePoint locale. Tuttavia, deve ancora essere attivato da utilizzare in SharePoint. Se il file della soluzione esiste già, un errore si verifica e chiede se si desidera sovrascrivere il file esistente. Per informazioni sull'aggiornamento del pacchetto, vedere la sezione sull'aggiornamento di pacchetti remoti in [come: Distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
+     Lo stato di avanzamento della pubblicazione viene visualizzato nella finestra di **output** di Visual Studio. Al termine del processo, il file di soluzione (con*estensione wsp*) viene installato nel server SharePoint locale. Tuttavia, deve essere comunque attivato per essere utilizzato in SharePoint. Se il file della soluzione esiste già, si verifica un errore e viene chiesto se si desidera sovrascrivere il file esistente. Per informazioni sull'aggiornamento del pacchetto, vedere la sezione sull'aggiornamento di pacchetti remoti in [procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
-- [Creare pacchetti delle soluzioni SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
-- [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
+- [Procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
+- [Creare pacchetti della soluzione SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
+- [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
+- [Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)

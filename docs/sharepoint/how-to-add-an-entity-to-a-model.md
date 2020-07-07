@@ -1,7 +1,7 @@
 ---
 title: "Procedura: aggiungere un'entità a un modello | Microsoft Docs"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - EntityTool
 dev_langs:
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a7ec1eab5cdcf2e415a4803c51c9da91be29c9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: b80f39494b98014a75d4265f228906be2ff45188
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985249"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016676"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Procedura: aggiungere un'entità a un modello
   Per creare un'entità, aggiungere un controllo entità dalla **casella degli strumenti** di Visual Studio nella finestra di progettazione di integrazione applicativa dei dati.
@@ -33,7 +32,7 @@ ms.locfileid: "72985249"
 
 2. Nella **casella degli strumenti**, dal gruppo **BusinessDataCatalog** , aggiungere un controllo **entità** nella finestra di progettazione.
 
-     La nuova entità verrà visualizzata nella finestra di progettazione. Visual Studio aggiunge un elemento `<Entity>` al codice XML del file del modello di integrazione applicativa dei dati nel progetto. Per ulteriori informazioni sugli attributi di un elemento entità, vedere [Entity](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14)).
+     La nuova entità verrà visualizzata nella finestra di progettazione. Visual Studio aggiunge un `<Entity>` elemento all'XML del file del modello di integrazione applicativa dei dati nel progetto. Per ulteriori informazioni sugli attributi di un elemento entità, vedere [Entity](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14)).
 
 3. Nella finestra di progettazione aprire il menu di scelta rapida per l'entità, scegliere **Aggiungi**, quindi scegliere **identificatore**.
 

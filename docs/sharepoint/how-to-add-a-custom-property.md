@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Aggiungere una proprietà personalizzata | Microsoft Docs'
+title: 'Procedura: aggiungere una proprietà personalizzata | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
@@ -17,34 +17,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: caf2d0e63db724c8eb3c1e72c79a109548af8f9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556849"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017078"
 ---
-# <a name="how-to-add-a-custom-property"></a>Procedura: Aggiungere una proprietà personalizzata
-  È possibile aggiungere proprietà personalizzate per il modello usando il **Editor di proprietà**. È possibile accedere a queste proprietà nel codice per recuperare informazioni quali le stringhe di connessione e altri dati in fase di esecuzione.
+# <a name="how-to-add-a-custom-property"></a>Procedura: aggiungere una proprietà personalizzata
+  È possibile aggiungere proprietà personalizzate al modello usando l' **Editor proprietà**. È possibile accedere a queste proprietà nel codice per recuperare informazioni quali le stringhe di connessione e altri dati in fase di esecuzione.
 
 ### <a name="to-add-a-custom-property"></a>Per aggiungere una proprietà personalizzata
 
-1. Nel **Esplora integrazione applicativa dei dati**, scegliere il nodo che rappresenta l'elemento del modello a cui si desidera applicare una proprietà personalizzata.
+1. In **Esplora integrazione**applicativa dei dati scegliere il nodo che rappresenta l'elemento del modello a cui si desidera applicare una proprietà personalizzata.
 
-2. Nella barra dei menu, scegliere **View** > **finestra proprietà**.
+2. Nella barra dei menu scegliere **Visualizza**  >  **finestra Proprietà**.
 
-3. Nel **le proprietà** finestra, scegliere il **Custom Properties** proprietà e quindi scegliere il pulsante con puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ASP. Ellisse NET Mobile Designer")).
+3. Nella finestra **Proprietà** scegliere la proprietà **proprietà personalizzate** , quindi fare clic sul pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")).
 
-     Il **Editor di proprietà** verrà visualizzata la finestra di dialogo.
+     Verrà visualizzata la finestra di dialogo **Editor proprietà** .
 
-4. Nella casella di testo nel **nome** colonna, specificare il nome della proprietà.
+4. Nella casella di testo della colonna **nome** specificare il nome della proprietà.
 
-5. Per il **tipo** campo della proprietà personalizzata, scegliere il tipo di dati appropriato.
+5. Per il campo **tipo** della proprietà personalizzata, scegliere il tipo di dati appropriato.
 
-6. Per il **valore** campo della proprietà personalizzata, specificare un valore e quindi scegliere il **OK** pulsante.
+6. Per il campo **valore** della proprietà personalizzata, specificare un valore, quindi scegliere il pulsante **OK** .
 
 ## <a name="see-also"></a>Vedere anche
-- [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

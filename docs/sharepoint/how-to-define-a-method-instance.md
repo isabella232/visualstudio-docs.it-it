@@ -1,7 +1,7 @@
 ---
 title: "Procedura: definire un'istanza di metodo | Microsoft Docs"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e21900e87278ad500ee8497d1dd0c49350695d1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981805"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016835"
 ---
 # <a name="how-to-define-a-method-instance"></a>Procedura: definire un'istanza di metodo
   È necessario definire almeno un'istanza del metodo per ogni metodo nel modello.
 
- Aggiungere un'istanza del metodo utilizzando la finestra **Dettagli metodo di integrazione applicativa dei dati** . Quando si aggiunge l'istanza del metodo, Visual Studio aggiunge un elemento `<MethodInstance>` al codice XML del file del modello nel progetto. Per ulteriori informazioni sugli attributi di un elemento `<MethodInstance>`, vedere [oggetto MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
+ Aggiungere un'istanza del metodo utilizzando la finestra **Dettagli metodo di integrazione applicativa dei dati** . Quando si aggiunge l'istanza del metodo, Visual Studio aggiunge un `<MethodInstance>` elemento al codice XML del file del modello nel progetto. Per ulteriori informazioni sugli attributi di un `<MethodInstance>` elemento, vedere [oggetto MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
 ### <a name="to-define-a-method-instance"></a>Per definire un'istanza di metodo
 
@@ -35,7 +34,7 @@ ms.locfileid: "72981805"
 
      Una nuova istanza del metodo viene visualizzata sotto il nodo **istanze** .
 
-3. Nella barra dei menu scegliere **visualizza** > **finestra Proprietà**.
+3. Nella barra dei menu scegliere **Visualizza**  >  **finestra Proprietà**.
 
 4. Nella finestra **Proprietà** impostare le proprietà dell'istanza del metodo. Per ulteriori informazioni su ogni proprietà, vedere [oggetto MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 

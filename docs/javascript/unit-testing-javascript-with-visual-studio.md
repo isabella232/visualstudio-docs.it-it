@@ -1,7 +1,7 @@
 ---
 title: Testing unità di codice JavaScript e TypeScript
 description: Visual Studio offre supporto per il testing unità di codice JavaScript e TypeScript tramite Node.js Tools for Visual Studio
-ms.date: 06/06/2018
+ms.date: 07/06/2020
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
-ms.translationtype: MT
+ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
+ms.sourcegitcommit: bcddb4647815e9ce2e175d9258e8df1b795e3e85
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289001"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033351"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testing unità di codice JavaScript e TypeScript in Visual Studio
 
@@ -72,25 +71,32 @@ Dopo l'apertura di Esplora test (scegliere **test**  >  **Windows**  >  **Esplor
 ![Esplora test](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> Non usare l'opzione `outdir` o `outfile` in *tsconfig.json* perché Esplora test non riuscirebbe a trovare gli unit test nei file TypeScript.
+> Per TypeScript, non usare l' `outdir` opzione o `outfile` in *tsconfig.json*, perché Esplora test non sarà in grado di trovare gli unit test.
 
 ## <a name="run-tests"></a>Esecuzione dei test
 
-È possibile eseguire i test in Visual Studio 2017 o dalla riga di comando.
+È possibile eseguire test in Visual Studio o dalla riga di comando.
 
-### <a name="run-tests-in-visual-studio-2017"></a>Eseguire test in Visual Studio 2017
+### <a name="run-tests-in-visual-studio"></a>Eseguire test in Visual Studio
 
+::: moniker range=">=vs-2019"
+È possibile eseguire i test facendo clic sul collegamento **Esegui tutti** in Esplora test. In alternativa, è possibile eseguire i test selezionando uno o più test o gruppi, facendo clic con il pulsante destro del mouse e scegliendo **Esegui** dal menu di scelta rapida. I test vengono eseguiti in background ed Esplora test aggiorna e visualizza automaticamente i risultati. Inoltre, è possibile eseguire il debug dei test selezionati facendo clic con il pulsante destro del mouse e selezionando **debug**.
+::: moniker-end
+::: moniker range="vs-2017"
 È possibile eseguire i test facendo clic sul collegamento **Esegui tutti** in Esplora test. Oppure è possibile eseguire i test selezionando uno o più test o gruppi, facendo clic con il pulsante destro del mouse e selezionando **Esegui test selezionati** dal menu di scelta rapida. I test vengono eseguiti in background ed Esplora test aggiorna e visualizza automaticamente i risultati. È inoltre possibile eseguire il debug di test selezionati scegliendo **Esegui debug test selezionati**.
+::: moniker-end
 
-> [!Warning]
-> Il debug di unit test con Node 8+ attualmente funziona solo per i file di test JavaScript. I file di test TypeScript non raggiungono i punti di interruzione. Come soluzione alternativa usare la parola chiave `debugger`.
+Per TypeScript, gli unit test vengono eseguiti sul codice JavaScript generato.
+
+> [!NOTE]
+> Nella maggior parte degli scenari TypeScript è possibile eseguire il debug di un unit test impostando un punto di interruzione nel codice TypeScript, facendo clic con il pulsante destro del mouse su un test in Esplora test e scegliendo **debug**. Negli scenari più complessi, ad esempio in scenari in cui vengono usate le mappe di origine, è possibile che si verifichino problemi nel codice TypeScript. Come soluzione alternativa, provare a usare la `debugger` parola chiave.
 
 > [!NOTE]
 > Test di profilatura o code coverage non sono attualmente supportati.
 
 ### <a name="run-tests-from-the-command-line"></a>Eseguire test dalla riga di comando
 
-È possibile eseguire i test dal [prompt dei comandi per gli sviluppatori](/dotnet/framework/tools/developer-command-prompt-for-vs) per Visual Studio 2017 usando il comando seguente:
+È possibile eseguire i test dal [prompt dei comandi per gli sviluppatori](/dotnet/framework/tools/developer-command-prompt-for-vs) per Visual Studio usando il comando seguente:
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter

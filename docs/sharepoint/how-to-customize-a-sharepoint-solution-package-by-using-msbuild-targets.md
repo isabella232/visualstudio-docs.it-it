@@ -1,7 +1,7 @@
 ---
-title: Personalizzare il pacchetto di soluzione SharePoint tramite le destinazioni di MSBuild
+title: Personalizzare il pacchetto della soluzione SharePoint tramite destinazioni MSBuild
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,20 +12,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401504"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016886"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Procedura: Personalizzare un pacchetto della soluzione SharePoint tramite le destinazioni di MSBuild
-  Tramite le destinazioni di MSBuild al prompt, è possibile personalizzare come Visual Studio crea il file di pacchetto di SharePoint (*wsp*). Ad esempio è possibile personalizzare le proprietà di MSBuild per modificare la directory intermedia dei pacchetti e i gruppi di elementi di MSBuild con cui si specificano i file enumerati.
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Procedura: personalizzare un pacchetto della soluzione SharePoint tramite destinazioni MSBuild
+  Utilizzando le destinazioni di MSBuild a un prompt dei comandi, è possibile personalizzare la modalità di creazione dei file del pacchetto SharePoint (con*estensione wsp*) in Visual Studio. Ad esempio è possibile personalizzare le proprietà di MSBuild per modificare la directory intermedia dei pacchetti e i gruppi di elementi di MSBuild con cui si specificano i file enumerati.
 
-## <a name="customize-and-run-msbuild-targets"></a>Personalizzare ed eseguire le destinazioni di MSBuild
+## <a name="customize-and-run-msbuild-targets"></a>Personalizzare ed eseguire destinazioni MSBuild
  Se si personalizzano le destinazioni di BeforeLayout e AfterLayout, è possibile eseguire le attività prima del layout del pacchetto, ad esempio aggiungendo, rimuovendo o modificando i file che verranno inclusi nel pacchetto.
 
-#### <a name="to-customize-the-beforelayout-target"></a>Per personalizzare la destinazione di BeforeLayout
+#### <a name="to-customize-the-beforelayout-target"></a>Per personalizzare la destinazione BeforeLayout
 
 1. Aprire un editor, ad esempio Blocco note, quindi aggiungere il codice riportato di seguito.
 
@@ -39,11 +38,11 @@ ms.locfileid: "66401504"
 
     In questo esempio viene visualizzato un messaggio prima della creazione del pacchetto di questa destinazione.
 
-2. Denominare il file **CustomLayout**e quindi salvare il file nella cartella del progetto SharePoint.
+2. Denominare il file **CustomLayout. SharePoint. targets**, quindi salvarlo nella cartella del progetto SharePoint.
 
-3. Aprire il progetto, aprire il menu di scelta rapida e quindi scegliere **Scarica progetto**.
+3. Aprire il progetto, aprire il menu di scelta rapida e scegliere **Scarica progetto**.
 
-4. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto e quindi scegliere **Edit** *\<ProjectName > vbproj* o **modifica** *\<NomeProgetto > csproj*.
+4. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto, quindi scegliere **Edit** * \<ProjectName> . vbproj* o **Edit** * \<ProjectName> . csproj*.
 
 5. Dopo la riga `Import` verso la fine del file di progetto, aggiungere la seguente riga.
 
@@ -53,15 +52,15 @@ ms.locfileid: "66401504"
 
 6. Salva e chiudi il file di progetto.
 
-7. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto e quindi scegliere **Ricarica progetto**.
+7. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto, quindi scegliere **Ricarica progetto**.
 
    Quando si pubblica il progetto, il messaggio viene visualizzato nell'output prima che inizi la creazione del pacchetto.
 
-#### <a name="to-customize-the-afterlayout-target"></a>Per personalizzare la destinazione di AfterLayout
+#### <a name="to-customize-the-afterlayout-target"></a>Per personalizzare la destinazione AfterLayout
 
-1. Nella barra dei menu, scegliere **File** > **Open** > **File**.
+1. Nella barra dei menu scegliere **file**  >  **Apri**  >  **file**.
 
-2. Nel **Apri File** della finestra di dialogo passare alla cartella del progetto, scegliere il file CustomLayout e quindi scegliere il **Open** pulsante.
+2. Nella finestra di dialogo **Apri file** passare alla cartella del progetto, scegliere il file customlayout. target, quindi scegliere il pulsante **Apri** .
 
 3. Prima del tag `</Project>` aggiungere il codice seguente:
 
@@ -80,4 +79,4 @@ ms.locfileid: "66401504"
    Quando si pubblica il progetto, il messaggio di BeforeLayout viene visualizzato prima che inizi la creazione del pacchetto e il messaggio di AfterLayout viene visualizzato al termine della creazione del pacchetto.
 
 ## <a name="see-also"></a>Vedere anche
-- [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

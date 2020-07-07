@@ -1,7 +1,7 @@
 ---
-title: "Procedura dettagliata: Creare un'attività flusso di lavoro del sito personalizzato | Microsoft Docs"
+title: "Procedura dettagliata: creare un'attività del flusso di lavoro del sito personalizzato | Microsoft Docs"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,112 +16,111 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f717345689de9be640e03e9c7d81726a57d494b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008341"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016530"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procedura dettagliata: Creare un'attività flusso di lavoro del sito personalizzata
-  Questa procedura dettagliata viene illustrato come creare un'attività personalizzata per un flusso di lavoro a livello di sito utilizzando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (I flussi di lavoro a livello di sito si applicano all'intero sito, non solo un elenco nel sito). L'attività personalizzata consente di creare un elenco di annunci di backup e quindi copia il contenuto dell'elenco di annunci al suo interno.
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procedura dettagliata: creare un'attività personalizzata del flusso di lavoro del sito
+  In questa procedura dettagliata viene illustrato come creare un'attività personalizzata per un flusso di lavoro a livello di sito tramite [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . I flussi di lavoro a livello di sito si applicano all'intero sito, non solo a un elenco sul sito. L'attività personalizzata crea un elenco di annunci di backup e quindi copia il contenuto dell'elenco degli annunci al suo interno.
 
  In questa procedura dettagliata vengono descritte le attività seguenti:
 
 - Creazione di un flusso di lavoro a livello di sito.
 
-- Creazione di un'attività flusso di lavoro personalizzato.
+- Creazione di un'attività personalizzata del flusso di lavoro.
 
-- Creazione ed eliminazione di un elenco di SharePoint.
+- Creazione ed eliminazione di un elenco SharePoint.
 
-- Copia gli elementi da un unico elenco a altro.
+- Copia di elementi da un elenco a un altro.
 
-- Visualizzazione di un elenco nella barra Avvio veloce.
+- Visualizzazione di un elenco sulla barra QuickLaunch.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint.
 
 - Visual Studio.
 
-## <a name="create-a-site-workflow-custom-activity-project"></a>Creare un progetto di attività personalizzata flusso di lavoro sito
- In primo luogo, creare un progetto per gestire e testare l'attività flusso di lavoro personalizzato.
+## <a name="create-a-site-workflow-custom-activity-project"></a>Creare un progetto di attività personalizzata del flusso di lavoro del sito
+ Per prima cosa, creare un progetto per mantenere e testare l'attività personalizzata del flusso di lavoro.
 
-#### <a name="to-create-a-site-workflow-custom-activity-project"></a>Per creare un progetto di attività personalizzata flusso di lavoro sito
+#### <a name="to-create-a-site-workflow-custom-activity-project"></a>Per creare un progetto di attività personalizzata del flusso di lavoro del sito
 
-1. Nella barra dei menu, scegliere **File** > **New** > **progetto** per visualizzare il **nuovo progetto** nella finestra di dialogo.
+1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto** per visualizzare la finestra di dialogo **nuovo progetto** .
 
-2. Espandere la **SharePoint** nodo sotto **Visual c#** o **Visual Basic**, quindi scegliere il **2010** nodo.
+2. Espandere il nodo **SharePoint** sotto **Visual C#** o **Visual Basic**, quindi scegliere il nodo **2010** .
 
-3. Nel **modelli** riquadro, scegliere il **progetto SharePoint 2010** modello.
+3. Nel riquadro **modelli** scegliere il modello di **progetto SharePoint 2010** .
 
-4. Nel **Name** casella, immettere **AnnouncementBackup**e quindi scegliere il **OK** pulsante.
+4. Nella casella **nome** immettere **AnnouncementBackup**, quindi scegliere il pulsante **OK** .
 
-     Il **Personalizzazione guidata SharePoint** viene visualizzata.
+     Viene visualizzata la **personalizzazione guidata SharePoint** .
 
-5. Nel **specificare il livello di sito e la sicurezza per il debug** pagina, scegliere il **Distribuisci come soluzione farm** pulsante di opzione e quindi scegliere il **fine** pulsante per accettare il sito di livello e predefinito trust.
+5. Nella pagina **specificare il sito e il livello di sicurezza per il debug** scegliere il pulsante di opzione **Distribuisci come soluzione farm** , quindi scegliere il pulsante **fine** per accettare il livello di attendibilità e il sito predefinito.
 
-     Questo passaggio consente di impostare il livello di attendibilità per la soluzione come soluzione farm, l'unica opzione disponibile per i progetti di flusso di lavoro.
+     Questo passaggio consente di impostare il livello di attendibilità della soluzione come soluzione farm, l'unica opzione disponibile per i progetti di flusso di lavoro.
 
-6. Nelle **Esplora soluzioni**, scegliere il nodo del progetto e quindi nella barra dei menu, scegliere **Project** > **Aggiungi nuovo elemento**.
+6. In **Esplora soluzioni**scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
-7. In presenza di una **Visual c#** o **Visual Basic**, espandere il **SharePoint** nodo, quindi scegliere il **2010** nodo.
+7. In **Visual C#** o **Visual Basic**espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
-8. Nel **modelli** riquadro, scegliere il **flusso di lavoro sequenziale (solo soluzione Farm)** modello e quindi scegliere il **Add** pulsante.
+8. Nel riquadro **modelli** scegliere il modello **flusso di lavoro sequenziale (solo soluzione farm)** , quindi scegliere il pulsante **Aggiungi** .
 
-     Il **Personalizzazione guidata SharePoint** viene visualizzata.
+     Viene visualizzata la **personalizzazione guidata SharePoint** .
 
-9. Nel **specificare il nome del flusso di lavoro per il debug** pagina, accettare il nome predefinito (AnnouncementBackup - Workflow1). Modificare il tipo di modello del flusso di lavoro in **sito flusso di lavoro**, quindi scegliere il **successivo** pulsante.
+9. Nella pagina **specificare il nome del flusso di lavoro per il debug** accettare il nome predefinito (AnnouncementBackup-Workflow1). Modificare il tipo di modello di flusso di lavoro nel **flusso di lavoro del sito**, quindi scegliere il pulsante **Avanti** .
 
-10. Scegliere il **fine** pulsante per accettare le impostazioni predefinite rimanenti.
+10. Scegliere il pulsante **fine** per accettare le impostazioni predefinite rimanenti.
 
-## <a name="add-a-custom-workflow-activity-class"></a>Aggiungere una classe di attività flusso di lavoro personalizzato
- Successivamente, aggiungere una classe al progetto per contenere il codice per l'attività flusso di lavoro personalizzato.
+## <a name="add-a-custom-workflow-activity-class"></a>Aggiungere una classe di attività del flusso di lavoro personalizzata
+ Aggiungere quindi una classe al progetto in modo che contenga il codice per l'attività personalizzata del flusso di lavoro.
 
-#### <a name="to-add-a-custom-workflow-activity-class"></a>Per aggiungere una classe di attività flusso di lavoro personalizzato
+#### <a name="to-add-a-custom-workflow-activity-class"></a>Per aggiungere una classe di attività del flusso di lavoro personalizzata
 
-1. Nella barra dei menu, scegliere **Project** > **Aggiungi nuovo elemento** per visualizzare la **Aggiungi nuovo elemento** nella finestra di dialogo.
+1. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento** per visualizzare la finestra di dialogo **Aggiungi nuovo elemento** .
 
-2. Nel **modelli installati** visualizzazione ad albero, scegliere il **codice** nodo e quindi scegliere il **classe** modello nell'elenco dei modelli di elemento di progetto. Usare il nome predefinito Class1. Scegliere il pulsante **Aggiungi**.
+2. Nella visualizzazione albero **modelli installati** scegliere il nodo **codice** , quindi scegliere il modello **classe** nell'elenco dei modelli di elemento di progetto. Usare il nome predefinito Class1. Fare clic sul pulsante **Aggiungi**.
 
-3. Sostituire tutto il codice in Class1 con gli elementi seguenti:
+3. Sostituire tutto il codice in Class1 con quanto segue:
 
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
 
-4. Salvare il progetto e quindi nella barra dei menu scegliere **compilare** > **Compila soluzione**.
+4. Salvare il progetto, quindi nella barra dei menu scegliere **Compila**  >  **Compila soluzione**.
 
-     Class1 viene visualizzato come un'azione personalizzata nel **casella degli strumenti** nel **AnnouncementBackup componenti** scheda.
+     Class1 viene visualizzato come azione personalizzata nella **casella degli strumenti** nella scheda **componenti di AnnouncementBackup** .
 
-## <a name="add-the-custom-activity-to-the-site-workflow"></a>Aggiungere l'attività personalizzata al flusso di lavoro sito
- Successivamente, aggiungere un'attività al flusso di lavoro per contenere il codice personalizzato.
+## <a name="add-the-custom-activity-to-the-site-workflow"></a>Aggiungere l'attività personalizzata al flusso di lavoro del sito
+ Aggiungere quindi un'attività al flusso di lavoro per contenere il codice personalizzato.
 
-#### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>Per aggiungere un'attività personalizzata al flusso di lavoro sito
+#### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>Per aggiungere un'attività personalizzata al flusso di lavoro del sito
 
-1. Aprire Workflow1 in Progettazione flussi di lavoro nella visualizzazione progettazione.
+1. Aprire Workflow1 in Progettazione flussi di lavoro in visualizzazione progettazione.
 
-2. Trascinare Class1 dal **casella degli strumenti** in modo che venga visualizzata sotto il `onWorkflowActivated1` attività o aprire il menu di scelta rapida per Class1, scegliere **copia**, aprire il menu di scelta rapida per la riga sotto il `onWorkflowActivated1` attività, quindi scegliere **Incolla**.
+2. Trascinare Class1 dalla **casella degli strumenti** in modo che venga visualizzato sotto l' `onWorkflowActivated1` attività oppure aprire il menu di scelta rapida per Class1, scegliere **copia**, aprire il menu di scelta rapida per la riga sotto l' `onWorkflowActivated1` attività, quindi scegliere **Incolla**.
 
 3. Salvare il progetto.
 
-## <a name="test-the-site-workflow-custom-activity"></a>Testare l'attività personalizzata flusso di lavoro sito
- Successivamente, eseguire il progetto e avviare il flusso di lavoro del sito. L'attività personalizzata consente di creare un elenco di annunci di backup e copia il contenuto dall'elenco di annunci corrente al suo interno. Il codice di verifica anche se un elenco di backup esiste già prima di crearne una. Se esiste già un elenco di backup, viene eliminato. Il codice aggiunge anche un collegamento per il nuovo elenco sulla barra Avvio veloce del sito di SharePoint.
+## <a name="test-the-site-workflow-custom-activity"></a>Testare l'attività personalizzata del flusso di lavoro del sito
+ Eseguire quindi il progetto e avviare il flusso di lavoro del sito. L'attività personalizzata consente di creare un elenco di annunci di backup e di copiarvi il contenuto dall'elenco degli annunci corrente. Il codice controlla anche se un elenco di backup esiste già prima di crearne uno. Se un elenco di backup esiste già, viene eliminato. Il codice aggiunge anche un collegamento al nuovo elenco nella barra QuickLaunch del sito di SharePoint.
 
-#### <a name="to-test-the-site-workflow-custom-activity"></a>Per testare l'attività personalizzata flusso di lavoro sito
+#### <a name="to-test-the-site-workflow-custom-activity"></a>Per testare l'attività personalizzata del flusso di lavoro del sito
 
-1. Scegliere il **F5** tasto per eseguire il progetto e distribuirlo in SharePoint.
+1. Premere il tasto **F5** per eseguire il progetto e distribuirlo in SharePoint.
 
-2. Nella barra Avvio veloce scegliere il **Elenca** link per visualizzare tutti gli elenchi che sono disponibili nel sito di SharePoint. Si noti che è disponibile solo un elenco degli annunci denominata **annunci**.
+2. Sulla barra QuickLaunch scegliere il collegamento **elenchi** per visualizzare tutti gli elenchi disponibili nel sito di SharePoint. Si noti che è presente un solo elenco per gli **annunci denominati**.
 
-3. Nella parte superiore della pagina Web di SharePoint, scegliere il **flussi di lavoro sito** collegamento.
+3. Nella parte superiore della pagina Web di SharePoint scegliere il collegamento **flussi di lavoro del sito** .
 
-4. Sotto l'inizio di una sezione del flusso di lavoro nuove, scegliere il **AnnouncementBackup - Workflow1** collegamento. Verrà avviato il flusso di lavoro del sito e viene eseguito il codice dell'azione personalizzata.
+4. Nella sezione avviare un nuovo flusso di lavoro scegliere il collegamento **AnnouncementBackup-Workflow1** . Viene avviato il flusso di lavoro del sito ed eseguito il codice nell'azione personalizzata.
 
-5. Nella barra Avvio veloce scegliere il **annunci Backup** collegamento. Si noti che tutti gli annunci che sono contenuti nel **annunci** elenco sono stati copiati in questo nuovo elenco.
+5. Sulla barra QuickLaunch scegliere il collegamento **backup annunci** . Si noti che tutti gli annunci contenuti nell'elenco degli **annunci** sono stati copiati in questo nuovo elenco.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
+- [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

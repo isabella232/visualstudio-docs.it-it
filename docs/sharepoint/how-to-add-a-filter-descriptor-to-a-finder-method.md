@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: aggiungere un descrittore di filtro a un metodo Finder | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986241"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016746"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procedura: aggiungere un descrittore di filtro a un metodo Finder
   I descrittori di filtro consentono agli utenti del modello di passare i valori ai metodi prima dell'esecuzione. Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986241"
 
 2. Nella finestra **Dettagli metodo** scegliere il descrittore di tipo del parametro.
 
-3. Nella barra dei menu scegliere **visualizza** > **finestra Proprietà**.
+3. Nella barra dei menu scegliere **Visualizza**  >  **finestra Proprietà**.
 
 4. Nella finestra **Proprietà** impostare la proprietà **nome tipo** su un tipo di dati appropriato per il filtro.
 
@@ -45,7 +44,7 @@ ms.locfileid: "72986241"
 
      Un nuovo descrittore di filtro viene visualizzato sotto il nodo **descrittori di filtro** .
 
-7. Nella barra dei menu scegliere **visualizza** > **finestra Proprietà**.
+7. Nella barra dei menu scegliere **Visualizza**  >  **finestra Proprietà**.
 
 8. Nella finestra **Proprietà** scegliere la proprietà **tipo** .
 
@@ -62,7 +61,7 @@ ms.locfileid: "72986241"
      Nell'esempio seguente vengono restituiti gli ordini di vendita con la data dell'ordine specificata.
 
     > [!NOTE]
-    > Sostituire il valore del campo `ServerName` con il nome del server.
+    > Sostituire il valore del `ServerName` campo con il nome del server.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
